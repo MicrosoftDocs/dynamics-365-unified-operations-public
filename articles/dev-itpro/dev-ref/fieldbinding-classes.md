@@ -5,7 +5,7 @@ title: F Classes - FieldBinding to FormBuildAnimateControl
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -337,7 +337,7 @@ The Form class represents an instance of a design-time form.
 | public int formTemplate(\[int value\])                                                                                           |                                                                                                                           |
 | public str interactionClass(\[str value\])                                                                                       |                                                                                                                           |
 | public boolean isLoadedForInference()                                                                                            |                                                                                                                           |
-| public str name(\[str value\])                                                                                                   | Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                                                                                                   | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public Guid origin(\[Guid value\])                                                                                               |                                                                                                                           |
 | ::public static boolean formKernelObjectHasMethod(Object kernelObject, str methodName)                                           |                                                                                                                           |
 | ::public static boolean formObjectSetHasMethod(FormObjectSet formObjectSet, str methodName)                                      |                                                                                                                           |
@@ -594,7 +594,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -1509,7 +1509,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -1596,7 +1596,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method hideIfEmpty
 
@@ -5610,7 +5610,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -5697,7 +5697,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -6482,7 +6482,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -7324,7 +7324,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -7411,7 +7411,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -8200,7 +8200,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -9185,7 +9185,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method hideIfEmpty
 
@@ -9607,7 +9607,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
