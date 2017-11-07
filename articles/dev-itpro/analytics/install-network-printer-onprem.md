@@ -1,32 +1,38 @@
 ---
 # required metadata
 
-title: Install a network printer device in an on-premises environment
+title: Install network printer devices in on-premises environments
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
-author: TJVass 
+author: TJVass
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: 
+# ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.search.validFrom: 2017/12/31
-ms.dyn365.ops.version: 7.3
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3.0
 
-# Install a network printer device in an on-premises environment
+---
+
+# Install network printer devices in on-premises environments
+
+[!include[banner](../includes/banner.md)]
+
 
 Provisioning Administrator:
 
