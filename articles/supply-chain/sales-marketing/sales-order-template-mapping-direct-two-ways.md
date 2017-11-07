@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Run two-way synchronization of sales order headers and lines between Sales and Finance and Operations
+title: Synchronization of sales orders directly between Sales and Finance and Operations
 description: The topic discusses the templates and underlying tasks that are used to run two-way synchronization of sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ChristianRytt
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Run two-way synchronization of sales order headers and lines between Sales and Finance and Operations
+# Synchronization of sales orders directly between Sales and Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -67,13 +67,13 @@ The following synchronization tasks are required before synchronization of sales
 
 ## Entity flow
 
-Sales orders are created in Sales and synchronized to Finance and Operations when the **Sales Orders (Sales to Fin and Ops) - Direct** template is activated. You can activate and synchronize orders from Sales only if the orders consist of products that are externally maintained. Therefore, there can be no write-in products. After the synchronization is activated, the sales order becomes read-only in the user interface (UI). At that point, the updates are made from Finance and Operations. After the sales order has a status of **Confirmed**, the **Sales Orders (Fin and Ops to Sales) - Direct** template is used to synchronize any updates or fulfillment status from Finance and Operations to Sales.
+Sales orders are created in Sales and synchronized to Finance and Operations when **Run project** is triggered for a project based on the **Sales Orders (Sales to Fin and Ops) - Direct** template. You can only activate and synchronize orders from Sales if all **Order Products** consist of products that are externally maintained. Therefore, there can be no write-in products. After the order is activated, the sales order becomes read-only in the user interface (UI). At that point, the updates are made from Finance and Operations. After the sales order has a status of **Confirmed**, the a project based on the **Sales Orders (Fin and Ops to Sales) - Direct** template can be used to synchronize updates or fulfillment status from Finance and Operations to Sales.
 
 You don't have to create orders in Sales. You can create new sales orders in Finance and Operations instead. After a sales order has a status of **Confirmed**, it's synchronized to Sales as described in the previous paragraph.
 
 In Finance and operations, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
 
-- On the sales order, both the ordering customer and the invoicing customer that originate from Sales will be included in the synchronization. In Finance and Operations, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** fields are used to track the synchronization in the data entities.
+- On the sales order, both the ordering customer and the invoicing customer have to originate from Sales to be included in the synchronization. In Finance and Operations, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** fields are used to filter sales orders from the data entities.
 - The sales order in Finance and Operations must be confirmed. Only confirmed sales orders or sales orders that have a higher processing status, such as **Shipped** or **Invoiced**, are synchronized to Sales.
 - After a sales order is created or modified, the **Calculate sales totals** batch job in Finance and Operations must be run. Only sales orders where sales totals are calculated will be synchronized to Sales.
 
@@ -83,7 +83,7 @@ Sales doesn't support tax at the header level, because tax is stored at the line
 
 ## Discount calculation and rounding
 
-The discount calculation model in Sales differs from the discount calculation model in Finance and Operations. In Finance and Operations, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synchronized to Sales. To help guarantee that the full discount amount from a sales line in Finance and Operations is correctly synchronized to Sales, the full amount must be synchronized without being divided by the line quantity. Therefore, you must define the line discount per line item in Sales.
+The discount calculation model in Sales differs from the discount calculation model in Finance and Operations. In Finance and Operations, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synchronized to Sales. To help guarantee that the full discount amount from a sales line in Finance and Operations is correctly synchronized to Sales, the full amount must be synchronized without being divided by the line quantity. Therefore, you must define the **Discount calculation method** as **Line item** in Sales.
 
 When a sales order line is synchronized from Sales to Finance and Operations, the full line discount amount is used. Because Finance and Operations has no field that can store the full discount amount for a line, the amount is divided by the quantity and stored in the **Line discount** field. Any rounding that occurs in this division is stored in the **Sales charges** field on the sales line.
 
@@ -92,7 +92,7 @@ When a sales order line is synchronized from Sales to Finance and Operations, th
 **Synchronization from Sales to Finance and Operations**
 
 - **Sales:** Quantity = 3, per-line discount = $10.00
-- **Finance and Operations:** Quantity = 3, line discount amount = $3.33, sales charge = -$0.01
+- **Finance and Operations:** Quantity = 3, line discount amount = $3.33, sales charge = -$0.01 
 
 **Synchronization from Finance and Operations to Sales**
 
@@ -106,7 +106,7 @@ New fields have been added to the **Order** entity and appear on the page:
 - **Is Maintained Externally** – Set this option to **Yes** when the order is coming from Finance and Operations.
 - **Processing status** – This field shows the processing status of the order in Finance and Operations. The following values are available:
 
-    - **Draft** – The initial status when an order is created in Sales. In Sales, only the processing status can be edited.
+    - **Draft** – The initial status when an order is created in Sales. In Sales, only orders with this processing status can be edited.
     - **Active** – The status after the order is activated in Sales by using the **Activate** button.
     - **Confirmed**
     - **Packing Slip**
@@ -121,7 +121,7 @@ New fields have been added to the **Order** entity and appear on the page:
 
 The **Has Externally Maintained Products Only** setting is used during order activation to consistently track whether a sales order consists entirely of externally maintained products. If a sales order consists entirely of externally maintained products, the products are maintained in Finance and Operations. This setting helps guarantee that you don't activate and try to synchronize sales order lines that have products that are unknown to Finance and Operations.
 
-The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products**, and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, because invoices will be created in Finance and Operations and synchronized to Sales. The order page can't be edited, because sales order information will be synchronized from Finance and Operations.
+The **Create Invoice**, **Cancel Order**, **Recalculate**, **Get Products**, and **Lookup Address** buttons on the **Sales order** page are hidden for externally maintained orders, because invoices will be created in Finance and Operations and synchronized to Sales. These orders can't be edited, because sales order information will be synchronized from Finance and Operations after activation.
 
 The sales order status will remain **Active** to help guarantee that changes from Finance and Operations can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active** in the Data integration project.
 
@@ -146,9 +146,9 @@ Before you synchronize sales orders, it's important that you update the followin
 
 ### Setup in the Sales Orders (Sales to Fin and Ops) - Direct Data integration project
 
-- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. You can make **Blank** a default value in the value map. Set the left side to **Blank**, and set the right side to the desired country or region.
+- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. You can make blank a default value in the value map to avoid having to type country for national orders. Set the left side to 'Blank', and set the right side to the desired country or region.
 
-    The template value is a value map where several countries or regions are mapped, and where **Bank** = **US**.
+    The template value is a value map where several countries or regions are mapped, and where 'Blank' = US.
 
 ### Setup in the Sales Orders (Fin and Ops to Sales) - Direct Data integration project
 
