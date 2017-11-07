@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use delegates for startup customizations
+title: Use delegates to customize Application startup
 description: This topic explains how you can add new data sources to existing forms by using extensions.
 author: robadawy
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Use delegates for startup customizations
+# Use delegates to customize Application startup
 
 In Dynamics AX 2012, there were customization points that allowed you to subscribe to events (Application.Startup delegates) that were raised when the client was initializing. In Dynamics 365 for Finance and Operations, Enterprise edition, these events were deprecated because there is no concept of a rich client. On the server, only server sessions are considered, however because you can migrate logic from previous releases, new events have been added to the **ApplicationStartupEventManager** class. 
 
