@@ -5,7 +5,7 @@ title: P Classes
 description: System API classes that start with the letter P.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -1985,7 +1985,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type.For example, an instance of the class returns the method name and type of the method, such as instance or static.
+The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type. For example, an instance of the class returns the method name and type of the method, such as instance or static.
 
 ### Method unpackPageSettings
 
@@ -2265,7 +2265,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type.For example, an instance of the class returns the method name and type of the method, such as instance or static.
+The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type. For example, an instance of the class returns the method name and type of the method, such as instance or static.
 
 ### Method profilerAlreadyOn
 
