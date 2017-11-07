@@ -2,8 +2,7 @@
 # required metadata
 
 title: Integration patterns and practices
-description: This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for
-Finance and Operations.
+description: This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
@@ -47,9 +46,10 @@ The topic describes:
 It does not include technical details on how to use or set up each Finance and Operations integration pattern, or sample integration code.
 
 
-## Integration Patterns Overview**
+## Integration Patterns Overview
 
 The following table lists the integration patterns available for Finance and Operations.
+
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
   **Pattern**                     **Reference**
   ------------------------------- -------------------------------------------------------------------------------------------------------------------------
@@ -86,12 +86,12 @@ and Operations can be invoked either synchronously or asynchronously.
 
 The following examples illustrate this point.
 
-  []{#_Hlk495961317 .anchor}**Pattern**   **Synchronous (Programming paradigm)**   **Asynchronous (Programming paradigm)**
+**Pattern**   **Synchronous (Programming paradigm)**   **Asynchronous (Programming paradigm)**
   --------------------------------------- ---------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
   OData                                   DbResourceContext.SaveChanges            DbResourceContext. SaveChangesAsync
   Custom Service                          httpRequest.GetResponse                  httpRequest.BeginGetResponse
   SOAP                                    UserSessionService.GetUserSessionInfo    UserSessionService.GetUserSessionInfoAsync
-  Batch data API                          ImportFromPackage                        [BeginInvoke](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)
+  Batch data API                          ImportFromPackage                        [BeginInvoke](../../dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)
 
 As shown above, one can’t draw the conclusion that when OData is used
 for integration, the caller will be blocked. That is not true, because
@@ -117,12 +117,12 @@ data package. The scheduling job quickly returns, and the heavy lifting
 is done later in a batch job. Therefore, we categorize batch data APIs
 as asynchronous.
 
-When to use batch data API
+When to use the batch data APIs
 --------------------------
 
-Batch data APIs are designed to deal with large data import\\export.
+Batch data APIs are designed to deal with large data import and export.
 Depending on what entity is used and how much business logic is being
-executed during import\\export, it is very hard to define a generic
+executed during import or export, it is very hard to define a generic
 number for what large volume is. A rule of thumb is if volume is more
 than a few hundred thousand, batch data API is more than likely the
 right choice for integration.
@@ -130,7 +130,7 @@ right choice for integration.
 Error handling 
 ---------------
 
-When using synchronous pattern, success\\failure response will be given
+When using synchronous pattern, success or failure response will be given
 to the caller. For example, if OData call is used to insert sales
 orders, if a sales order line has a bad reference to a product that does
 not exist, caller will get a response containing error indicating the
@@ -140,9 +140,9 @@ response.
 When using asynchronous pattern, caller will get an immediate response
 for whether the scheduling call was successful. It is caller’s
 responsibility to handle potential errors in the response. After
-scheduling is done, data import\\export status won’t be pushed to the
+scheduling is done, data import or export status won’t be pushed to the
 caller. Caller need to poll for the result of the corresponding
-import\\export process and handle errors accordingly.
+import or export process and handle errors accordingly.
 
 **Integration Patterns**
 ========================
