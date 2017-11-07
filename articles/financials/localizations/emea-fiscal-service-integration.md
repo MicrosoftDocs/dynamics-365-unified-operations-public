@@ -177,8 +177,10 @@ The following configurations are available:
 | Setup  | Details | More information |
 |---------|----------|-----------------|
 | Download Electronic reporting configurations| Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt (**Cash Receipt Model** > **Cash Receipt Format**), Response (**Cash Receipt Model** > **ESR Response example**), Request (**Cash Receipt Model** > **ESR Request example**).   | For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).| 
-|Key Vault name|||
+|Cash register URL| Enter the URL for the Fiscal service.  |WARNING: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://). |
+|Key Vault name| Choose the name of the Key Vault where the certificate is stored ||
 |Configurations| When you set up each cash register, be sure to choose the electronic reporting formats that are appropriate for the legal entitie's primary address. | Examples: For the receipt format,  select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.   |
+|Cash register certificate settings |If Fiscal service is accessible at https:// secure connection, you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party Fiscal service.  | |
 ### Set up cash registers
 
 #### Set up cash register locations
