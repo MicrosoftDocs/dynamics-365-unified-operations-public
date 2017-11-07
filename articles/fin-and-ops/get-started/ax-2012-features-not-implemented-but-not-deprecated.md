@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Dynamics AX 2012 features that were postponed
+# Dynamics AX 2012 features that have been postponed
 
 [!include[banner](../includes/banner.md)]
 
