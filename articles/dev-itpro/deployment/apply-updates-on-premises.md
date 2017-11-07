@@ -60,7 +60,7 @@ To apply customizations at the same time that you deploy a new on-premises envir
 
 ## Find and apply application hotfixes
 There are two ways to find available application hotfixes: 
-- Issue Search in Lifecycle Services - To learn more about issue search, see [Issue search](../lifecycle-services/issue-search-lcs.md.  
+- **Issue Search** in Lifecycle Services - To learn more about issue search, see [Issue search](../lifecycle-services/issue-search-lcs.md).  
 - **Application hotfix** tiles - For cloud-hosted environments, the **Environment details** page shows all of the hotfixes that are applicable to that environment based on the version that is currently deployed. The tile functionality is not available for on-premises environments, so if a customer wants to see the list of applicable hotfixes, a cloud-hosted development environment should be maintained on the same version as the on-premises sandbox or production environment. Note that this is only recommended for X++ hotfixes and not for any other kind of updates.
 
 Complete the following steps to apply the hotfix.
