@@ -173,11 +173,17 @@ The following configurations are available:
 
 ## Example integration
 
+### Cash register setup 
+| Setup  | Details | More information |
+|---------|----------|-----------------|
+| Download Electronic reporting configurations| Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt (**Cash Receipt Model** > **Cash Receipt Format**), Response (**Cash Receipt Model** > **ESR Response example**), Request (**Cash Receipt Model** > **ESR Request example**).   | For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).| 
+|Key Vault name|||
+|Configurations| When you set up each cash register, be sure to choose the electronic reporting formats that are appropriate for the legal entitie's primary address. | Examples: For the receipt format,  select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.   |
 ### Set up cash registers
 
-### Set up cash register locations
+#### Set up cash register locations
 
-### Create cash register terminals
+#### Create cash register terminals
 
 ### Assign the user to a person
 
