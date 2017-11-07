@@ -6,7 +6,20 @@ In the **Minimum** field, enter the safety stock level, that you want to maintai
 
 You must define all other coverage planned dimensions before you can define this field. This rule prevents an invalid record from being used during master scheduling. This situation can occur if, for example, a dimension group is extended with an additional coverage planned dimension for which the minimum and maximum inventory quantities are not yet defined.
 
-For items with demand patterns that follow a certain periodicity, you need to maintain different safety stock limits, following the item’s demand periodicity. To do that, you need to define **Minimum keys** (**Master planning – Setup – Coverage – Minimum/maximum keys**) and fill in the **Minimum key** field on the **Item coverage** form. You can view the information about the safety stock levels defined via minimum keys on the **Min./Max.** tab of the **Item coverage** form.
+You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level of an item in the off season, and then gradually increase the level in the following months. You create a minimum key by going to **Master planning - Setup - Coverage - Minimum/maximum keys**. You specify the minimum key that adjusts the safety stock level by seasonality in the **Minimum key** field on the **Item coverage** form.
+
+### Example: Minimum key
+If, for example, you want to set up a minimum key that accounts for increased seasonal demand during the spring and summer months, go to **Master planning - Setup - Coverage - Minimum/maximum keys** and follow these steps.
+1. Create 12 lines, and number the lines from 1 to 12 in the **Change field**.
+2. In the **Unit** field, select **Months**.
+3. In the **Factor** field, enter the values that are described in the following table.
+
+|Line|Enter this value|Result|
+|---|---|---|
+|1-3|1|Minimum inventory is based on the setting for January through March in the **Item coverage** form.|
+|4-5|2|Minimum inventory is multiplied by a factor of 2 for April and May.|
+|6-8|2.5|Minimum inventory is multiplied by a factor of 2.5 for June through August.|
+|9-12|1|Minimum inventory reverts to the setting for September through December in the Item coverage form.|
 
 If coverage code is **Min./Max.**, you can also specify the **Maximum** inventory quantity that you want to maintain for the item. The value is also expressed in inventory units. If the projected available inventory falls below the minimum quantity, master planning generates a planned order to fulfill all open requirements and also bring the available inventory up to the specified maximum quantity.
 
@@ -35,3 +48,8 @@ purchase or production lead time. This time includes any safety margins. If the 
 - **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
 
 If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
+
+
+
+# Safety stock constraint during master planning
+
