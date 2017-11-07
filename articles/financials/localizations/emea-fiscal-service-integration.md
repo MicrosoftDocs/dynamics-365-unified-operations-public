@@ -180,18 +180,28 @@ The following configurations are available:
 |Cash register URL| Enter the URL for the Fiscal service.  |WARNING: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://). |
 |Key Vault name| Choose the name of the Key Vault where the certificate is stored ||
 |Configurations| When you set up each cash register, be sure to choose the electronic reporting formats that are appropriate for the legal entitie's primary address. | Examples: For the receipt format,  select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.   |
-|Cash register certificate settings |If Fiscal service is accessible at https:// secure connection, you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party Fiscal service.  | |
-### Set up cash registers
+|Cash register certificate settings |If Fiscal service is accessible at https:// secure connection, you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party Fiscal service.  | Use a self-signed certificate - Activate the parameter in case you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates. Cash register certificate thumbprint - Enter thumbprint of the self-signed certificate stored in Fiscal service which will be used for validation of Fiscal service certificate validness. |
 
 #### Set up cash register locations
+You can set up locations of cash registers at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register locations**. 
+
+Create a tax registration type (Czech Republic) |Create Tax registration type for Business Premises ID in **Organization administration** > **Global address book** > **Registration types** > **Registration types**. Associate created tax registration type with legislative type "Business Premise Id" in Organization administration > Global address book > Registration types > Registration categories. Open Operating unit associated with Cash register location. (Go to Cash register locations, place cursor on a field Organization number, right click > View details or go directly to Organization administration > Common > Organizations > Internal organizations.) Click More options > Advanced on address line in Addresses tab. Click Add on Registration Id fast tab and add info about Business premise Id number.
 
 #### Create cash register terminals
+Create cash register terminals at Accounts receivable > Setup > Cash registers > Cash register terminals.
 
 ### Assign the user to a person
+Assign a User who is acting as cash operator and is allowed to log a cash transaction which will be registered in cash register, to a Person in System administration > Users. 
 
 ### Set up cash register operators
+Set up cash register operators and assign them to the cash register location in Accounts receivable > Setup > Cash register > Cash register operators. 
 
 ### Set up methods of payment that require fiscal registration
+Set up methods of payment, which needs to be registered in cash register at Accounts receivable > Setup > Cash registers > Cash register methods of payment. 
+|Field |Description |
+|--|-------|
+|Method of payment|Choose a method of payment which needs to be registered in cash register and sent to Fiscal service.|
+|Register tax amount|Activate the check box if the tax amounts related to the cash payment amount need to be registered in Fiscal service.|
 
 ### Create terms of payment for cash on delivery scenario
 
