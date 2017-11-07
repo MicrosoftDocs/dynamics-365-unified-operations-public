@@ -39,7 +39,7 @@ This topic explains how to open entity data in Microsoft Excel, and then view, u
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016.
 
 > [!NOTE]
-> If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update has been applied, so that the Excel add-in can correctly sign you in.
+> If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
 
 ## Open entity data in Excel when you start from Finance and Operations
 1. On a page in Finance and Operations, select **Open in Microsoft Office**.
