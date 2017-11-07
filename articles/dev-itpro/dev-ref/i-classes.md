@@ -5,7 +5,7 @@ title: I Classes
 description: System API classes that start with the letter I.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -3812,7 +3812,7 @@ The InteropPermission class is designed to check permissions for specific APIs. 
 
 ### Examples
 
-The following code example shows a new instance of the InteropPermission class. The assert method is called to declare that the code can then instantiate the DLL class that provides the ability to communicate with a MicrosoftWindows dynamic-link library (DLL).
+The following code example shows a new instance of the InteropPermission class. The assert method is called to declare that the code can then instantiate the DLL class that provides the ability to communicate with a Microsoft Windows dynamic-link library (DLL).
 
     server static void main(Args args) 
     { 
@@ -3832,7 +3832,7 @@ The following code example shows a new instance of the InteropPermission class. 
 |--------------------------------------------------------|------------------------------------------------------------------------------------|
 | public CodeAccessPermission copy()                     | Creates and returns a copy of the current permission class object.                 |
 | public boolean isSubsetOf(CodeAccessPermission target) | Determines whether the current permission is a subset of the specified permission. |
-| public void new(InteropKind kind)                      | Creates an new instance of the InteropPermission class.                            |
+| public void new(InteropKind kind)                      | Creates a new instance of the InteropPermission class.                            |
 
 ### Method copy
 
@@ -3869,7 +3869,7 @@ You override this method when you derive a class from the CodeAccessPermission c
 
 ### Method new
 
-Creates an new instance of the InteropPermission class.
+Creates a new instance of the InteropPermission class.
 
     public void new(InteropKind kind)
 
@@ -3895,7 +3895,7 @@ The Io class serves as the base class for the format-specific Io classes, which 
 
 ### Remarks
 
-The basic Io class features no actual data I/O but works as base class for the format-specific Io classes. The methods that are common to all Io classes are described here. For format-specific features and behavior of the member functions, refer to the documentation for each of the I/O classes. To support reading and writing of different formats of external files, MorphX features a range of different Io classesfor comma-separated files, for comma-separated 7 bit files, for binary files, and for plain-text files.
+The basic Io class features no actual data I/O but works as base class for the format-specific Io classes. The methods that are common to all Io classes are described here. For format-specific features and behavior of the member functions, refer to the documentation for each of the I/O classes. To support reading and writing of different formats of external files, MorphX features a range of different Io classes for comma-separated files, for comma-separated 7 bit files, for binary files, and for plain-text files.
 
 ### Examples
 
