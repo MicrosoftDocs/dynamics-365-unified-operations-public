@@ -91,11 +91,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
 <td><p>External questionnaire functionality hasn't been implemented.</p><p>Recruiting functionality is available in the Attract app for Talent.</p></td></tr>
-<tr class="odd">
-<td>Main account allocations for accounting distributions</td>
-<td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update, main allocation rules will be applied during journalization.</td>
-<td></td></tr>
-<tr class="even">
+
 <td>Client right-to-left (RTL) layout</td>
 <td>RTL layout is now supported.</td>
 <td>Implemented in Microsoft Dynamics AX platform update 2</td></tr>
