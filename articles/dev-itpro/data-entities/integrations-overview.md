@@ -34,19 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for
-Finance and Operations, Enterprise edition.
+This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-The topic describes:
+The topic describes Finance and Operations integration patterns, integration scenarios, and integration solutions and best practices. It does not include technical details on how to use or set up each Finance and Operations integration pattern, nor sample integration code.
 
--   Finance and Operations integration patterns
--   Integration scenarios
--   Integration solutions and best practices
-
-It does not include technical details on how to use or set up each Finance and Operations integration pattern, or sample integration code.
-
-
-## Integration Patterns Overview
+## Integration patterns overview
 
 The following table lists the integration patterns available for Finance and Operations.
 
@@ -84,7 +76,7 @@ Inbound patterns
 Before comparing synchronous vs asynchronous, you should be aware that all REST and SOAP integration APIs provided by Finance
 and Operations can be invoked either synchronously or asynchronously.
 
-The following examples illustrate this point.
+The following examples illustrate this point. One can’t draw the conclusion that when OData is used for integration, the caller will be blocked. That is not true, because it really depends on how a call is made.
 
 **Pattern**   **Synchronous (Programming paradigm)**   **Asynchronous (Programming paradigm)**
   --------------------------------------- ---------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -93,42 +85,18 @@ The following examples illustrate this point.
   SOAP                                    UserSessionService.GetUserSessionInfo    UserSessionService.GetUserSessionInfoAsync
   Batch data API                          ImportFromPackage                        [BeginInvoke](../../dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)
 
-As shown above, one can’t draw the conclusion that when OData is used
-for integration, the caller will be blocked. That is not true, because
-it really depends on how the call is made.
 
-Now that we understand the timing nature of calling these APIs, let’s
-define what synchronous and asynchronous means in the context of this
-integration pattern document.
+OData and custom service are both synchronous integration patterns because calling these APIs results in the immediate execution of business logic in Finance and Operations. For example: 
+- If OData is used to insert product records, the records are inserted immediately as part of the OData call. 
+- If a custom service is used to look up on-hand inventory, then business logic is executed immediately as part of the JSON\\SOAP call and an inventory sum number is immediately returned.
 
-OData and custom service are synchronous integration patterns because
-calling these APIs results in immediate execution of business logic in
-Finance and Operations. If OData is used to insert product records, the
-records gets inserted immediately as part of the OData call. If custom
-service is used to look up on-hand inventory, business logic is executed
-immediately as part of the JSON\\SOAP call and an inventory sum number
-is immediately returned.
+Batch data APIs are considered asynchronous integration patterns because calling these APIs results in data being imported or exported in batch mode. Consider the ImportFromPackage API: calls to ImportFromPackage can be synchronous, however, the API only schedules a batch job to import a specific data package. The scheduling job quickly returns, and the work is done later in a batch job. Therefore, we categorize batch data APIs as asynchronous.
 
-Batch data APIs are asynchronous integration pattern because calling
-these APIs results in data being imported or exported in batch mode.
-Let’s take ImportFromPackage for example. Calls to ImportFromPackage can
-be synchronous, however, it only schedules a batch job to import a given
-data package. The scheduling job quickly returns, and the heavy lifting
-is done later in a batch job. Therefore, we categorize batch data APIs
-as asynchronous.
+#### When to use the batch data APIs
 
-When to use the batch data APIs
---------------------------
+Batch data APIs are designed to deal with large voluem data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
 
-Batch data APIs are designed to deal with large data import and export.
-Depending on what entity is used and how much business logic is being
-executed during import or export, it is very hard to define a generic
-number for what large volume is. A rule of thumb is if volume is more
-than a few hundred thousand, batch data API is more than likely the
-right choice for integration.
-
-Error handling 
----------------
+##### Error handling 
 
 When using synchronous pattern, success or failure response will be given
 to the caller. For example, if OData call is used to insert sales
