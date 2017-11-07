@@ -5,7 +5,7 @@ title: W Classes
 description: System API classes that start with the letter W.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -585,7 +585,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialogue box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. dialog box. The The help text must not exceed 250 characters.
 
 ### Method label
 
@@ -1773,7 +1773,7 @@ The current value of the neededAccessLevel property.
 
 #### Remarks
 
-The possible values for the AccessType system enumuration value are as follows:
+The possible values for the AccessType system enumeration value are as follows:
 
 -   AccessType::NoAccess
 -   AccessType::View
@@ -1992,7 +1992,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method label
 
@@ -2079,7 +2079,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public str menuItemName(\[str value\])                         |                                                                                                                                           |
 | public WebMenuItemType menuItemType(\[WebMenuItemType value\]) |                                                                                                                                           |
 | public str name(\[str value\])                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
-| public str parameters(\[str value\])                           | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                    |
+| public str parameters(\[str value\])                           | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                    |
 | public boolean showParentModule(\[boolean value\])             |                                                                                                                                           |
 
 ### Method label
@@ -2134,7 +2134,7 @@ The name property value of an object must meet the following criteria to avoid c
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -2693,7 +2693,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method imageResource
 
@@ -2999,7 +2999,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method name
 
