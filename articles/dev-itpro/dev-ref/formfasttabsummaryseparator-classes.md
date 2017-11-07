@@ -5,7 +5,7 @@ title: F Classes - FormFastTabSummarySeparator to FormGridControl
 description: API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,7 +55,7 @@ Class FormFastTabSummarySeparator
 | public boolean allowSysSetup()                                                                              | Retrieves a value that indicates whether the control is shown in the SysSetup form.                                                                                     |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public container calcControlSize(int chars, int lines)                                                      | Retrieves the size of the control.                                                                                                                                      |
@@ -237,7 +237,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -358,7 +358,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -472,7 +472,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -1827,7 +1827,7 @@ Raises the dragLeave event to indicate that a mouse drag operation has left the 
 | public FieldId countryRegionContextField(\[FieldId value\])                                                 |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                    | Gets or sets a data source to be used by the control or the form.                                                                                                       |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise Portal, Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -2304,7 +2304,7 @@ The identifier of the data source to be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise Portal, Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -3794,7 +3794,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public boolean autoRefreshData(\[boolean value\])                                                           |                                                                                                                                                                         |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public boolean big(\[boolean value\])                                                                       |                                                                                                                                                                         |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
@@ -3815,7 +3815,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public str disabledImage(\[str value\])                                                                     | Gets or sets the disabled image of the button.                                                                                                                          |
 | public int disabledImageLocation(\[int value\])                                                             |                                                                                                                                                                         |
 | public int disabledResource(\[int value\])                                                                  | Gets or sets the resource ID of the image to use as the disabled button image.                                                                                          |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -3861,7 +3861,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public int normalResource(\[int value\])                                                                    |                                                                                                                                                                         |
 | public int openMode(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
-| public str parameters(\[str value\])                                                                        | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                                                  |
+| public str parameters(\[str value\])                                                                        | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                                                  |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
 | public boolean primary(\[boolean value\])                                                                   |                                                                                                                                                                         |
 | public boolean saveRecord(\[boolean value\])                                                                |                                                                                                                                                                         |
@@ -4039,7 +4039,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -4156,7 +4156,7 @@ An integer between zero and five, inclusive.
 
 #### Remarks
 
-The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed.The integer value that is returned contains the appearace of the button control as follows:
+The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed. The integer value that is returned contains the appearance of the button control as follows:
 
 | Value. | Description.                                                     |
 |--------|------------------------------------------------------------------|
@@ -4441,7 +4441,7 @@ The resource ID of the image to use as the disabled button image. Both icon and 
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise Portal, Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
@@ -5226,7 +5226,7 @@ value
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -6092,7 +6092,7 @@ overrideObject
 | public boolean autoDataGroup(\[boolean value\])                                                                     |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                                   | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                           | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                                 | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                                 | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                                  | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int border(\[int value\])                                                                                    | Gets or sets the style of the borderline of the control.                                                                                                                |
 | public int bottomMargin(\[int value\])                                                                              |                                                                                                                                                                         |
@@ -6112,7 +6112,7 @@ overrideObject
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source to be used by the control or the form.                                                                                                       |
 | public str defaultAction(\[str value\])                                                                             |                                                                                                                                                                         |
 | public str defaultActionLabel(\[str value\])                                                                        |                                                                                                                                                                         |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise Portal, Finance and Operations, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -6420,7 +6420,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -6561,7 +6561,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -6713,7 +6713,7 @@ value
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise PortaFinance and Operationssoft Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the  client, in Enterprise Portal, Finance and Operations, or in both.
 
     public int displayTarget([int value])
 
