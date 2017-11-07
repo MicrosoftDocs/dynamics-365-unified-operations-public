@@ -32,3 +32,5 @@ purchase or production lead time. This time includes any safety margins. If the 
 The difference between these three fulfill minimum modes is related to the available inventory on the date master planning is run. If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction.
 
 - **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
+
+If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
