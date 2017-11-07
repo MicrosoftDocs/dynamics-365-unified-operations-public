@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 7.3
 
 # Install a network printer device in an on-premises environment
 
-
 Provisioning Administrator:
 
 1.  Follow [this
