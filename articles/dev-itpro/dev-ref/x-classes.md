@@ -5,7 +5,7 @@ title: X Classes
 description: System API classes that start with the letter X.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -932,7 +932,7 @@ The xArgs class is used to pass arguments such as a name, a caller, and paramete
 
 ### Remarks
 
-Forms, reports and queries all use this class as their first argument in the constructor. The preferred way to use this class is to construct an xArgs object, supply a name-string, and then pass the xArgs object to the forms constructor or a ClassFactory method.If you want to refer to the xArgs object passed to one of these classes, it can be reached using args method of that class.There are four methods that can be used to pass extra information to the new class:
+Forms, reports and queries all use this class as their first argument in the constructor. The preferred way to use this class is to construct an xArgs object, supply a name-string, and then pass the xArgs object to the forms constructor or a ClassFactory method. If you want to refer to the xArgs object passed to one of these classes, it can be reached using args method of that class. There are four methods that can be used to pass extra information to the new class:
 
 -   The parm - to pass strings
 -   The parmEnum and parmEnumType methods - to pass enumeration values
