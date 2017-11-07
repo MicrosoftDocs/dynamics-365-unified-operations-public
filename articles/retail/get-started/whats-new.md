@@ -35,8 +35,8 @@ This page points you to resources that can help you learn about the new features
 
 |Release | Build number | Availability | Learn more |
 |--------|--------------|--------------|------------|
-|Application update 5 | 7.2.X | November 2017 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application udpate 5**. |
-|Application update 4 | 7.2.21792.64070 | October 2017 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application udpate 4**. |
+|Application update 5 | 7.2.X | November 2017 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application update 5**. |
+|Application update 4 | 7.2.21792.64070 | October 2017 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application update 4**. |
 |Application update 3 | 7.2.21792.64062 | September 2017 |[KB 4045959: Update 3*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045959&bugId=3857200&qc=a4c0715ff69d491d63c424f56b124f458ac3ca422e4a74c67d23a58b16050ad1)|
 |Application update 2 | 7.2.21792.64041 | September 2017 | [KB 4042241: Update 2*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4042241&bugId=3850819&qc=578d82fcfe02befb2a2ee4af467bda26af88742548e1bd8291a359ebdb360410)|
 |Application update 1 |7.2.21792.64032   | July 2017|[KB 4037180: Update 1*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037180&bugId=3848337&qc=578d82fcfe02befb2a2ee4af467bda26af88742548e1bd8291a359ebdb360410)|
