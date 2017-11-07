@@ -58,7 +58,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 2. In the Office Store, search on the keyword **Dynamics**, and then select **Add** next to **Microsoft Dynamics Office Add-in** (the Excel add-in).
 3. If you're running the Excel add-in for the first time, select **Trust this Add-in** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. Select **Add server information** to open the **Options** pane.
-5. Copy the browser URL from your target Finance and Operations instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
+5. In your browser, copy the URL of your target Finance and Operations instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
 
     For example, if the URL is `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, delete everything except `https://xxx.dynamics.com`.
 
