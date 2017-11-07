@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
-description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
+title: Dynamics AX 2012 features that were postponed
+description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,12 +30,11 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Dynamics AX 2012 features that haven't been implemented but aren't deprecated
+# Dynamics AX 2012 features that were postponed
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
+This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
 <table>
 <colgroup>
@@ -44,88 +43,74 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </colgroup>
 <thead>
 <tr class="header">
-<th>Feature</th>
+<th>AX 2012 feature that was postponed</th>
 <th>Description</th>
+<th>Current status (as of November 2017)
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Intelligent Data Management Framework (IDMF)</td>
-<td>IDMF is an add-on tool that lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+<td>IDMF is an add-on tool that lets system administrators optimize performance. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+<td>Not implemented</td>
 </tr><tr class="odd">
 <td>Alerts</td>
-<td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
+<td>Alerts help users keep track of data changes in the system.</td>
+<td>Not implemented</td>
 </tr>
 <tr class="even">
 <td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
 <td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
-</tr>
-<tr class="odd">
-<td>Generate an electronic file to communicate payment advice information. The file can be sent to a vendor.</td>
-<td>From the vendor payment journal, you can generate payment advice as either a report or a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
-</tr>
-<tr class="odd">
-<td>Vendor portal</td>
-<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.
-<p>The ability for the vendor to view and respond to purchase orders, and to create draft invoices has been included in Dynamics 365 for Financials and Operations in recent releases. So has the ability to initiate a Vendor user request workflow, to onboard new external (AAD account) users defined as contact persons for the vendor. </p>
-</td>
+<td>Not implemented</td>
 </tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
-<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and the functionality for confirming receipts that are associated with requisitions that lead to purchases aren't currently available.</td>
+<td><p>ESS shows employees several tiles that show task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</p><p>In previous versions, ESS let you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also let you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and the functionality for confirming receipts that are associated with requisitions that lead to purchases aren't currently available.</p></td>
+<td>Implemented in Microsoft Dynamics 365 for Operations version 1611</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
-<td>CSS lets you create approved customer records, and lets users view selected product catalogs, order items, and view the status of invoices. It also provides the ability to create and follow return orders.</td>
+<td>CSS lets you create approved customer records. It also lets users can view selected product catalogs, order items, and view the status of invoices. Additionally, CSS provides the ability to create and follow return orders.</td>
+<td>Not implemented</td>
 </tr>
 <tr class="even">
 <td>Cost accounting</td>
-<td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitability reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
+<td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitability reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget. It also lets you compare realized costs and budgeted costs.</td>
+<td>Implemented in Dynamics 365 for Operations version 1611</td>
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions through both ESS and the client isn't included. Additionally, functionality for approving those absence transactions as a manager isn't included. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Implemented in Microsoft Dynamics 365 for Talent</td>
 </tr>
 <tr class="odd">
 <td>US Payroll</td>
-<td>US Payroll isn't included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
-</tr>
+<td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
+<td>Implemented in Dynamics 365 for Operations version 1611</td></tr>
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
-<td>Functionality for externally posting questionnaires and open jobs will be added in a future update.</td>
-</tr>
-<tr class="odd">
-<td>Main account allocations for accounting distributions</td>
-<td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update, main allocation rules will be applied during journalization.</td>
-</tr>
-<tr class="even">
+<td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
+<td><p>External questionnaire functionality hasn't been implemented.</p><p>Recruiting functionality is available in the Attract app for Talent.</p></td></tr>
+
 <td>Client right-to-left (RTL) layout</td>
-<td>The web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update.</td>
-</tr>
+<td>RTL layout is now supported.</td>
+<td>Implemented in Microsoft Dynamics AX platform update 2</td></tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
-<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
-</tr>
-<tr class="even">
-<td>Vendor catalog import</td>
-<td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update.</td>
-</tr>
+<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
+<td>Not implemented</td></tr>
 <tr class="odd">
 <td>General budget reservations</td>
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
-</tr>
-<tr class="even">
-<td>Electronic data exchange</td>
-<td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents, isn't supported. This functionality will be added in a future update.</td>
-
-<tr class="even">
+<td>Not implemented</td></tr>
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
-</tr>
+<td>Implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 (July 2017)</td></tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.
-<p><strong>Note:</strong> Values for these supported payment specifications are used as payment specification parameters in the <strong>Payment specification</strong> form for a selected method of payment.</p>
+<td><p>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.</p>
+<blockquote>[!NOTE]<br>
+Values for these supported payment specifications are used as payment specification parameters in the <strong>Payment specification</strong> form for a selected method of payment.</blockquote>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
@@ -302,23 +287,22 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table></td>
-</tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Fiscal printers for Poland</td>
-<td>Integration with Polish fiscal printers, such as the Posnet Thermal and Elzab Omega printer types, enables the required information to be sent to the fiscal printer in the correct format during invoice posting. This feature will be available in a future update.</td>
-</tr>
+<td>Integration with Polish fiscal printers enables the required information to be sent to the fiscal printer in the correct format during invoice posting. Examples of Polish fiscal printers include the Posnet Thermal and Elzab Omega printer types. This feature will be available in a future update.</td>
+<td>Not implemented</td></tr>
 <tr class="odd">
 <td>Bank payment order for Latvia and Lithuania</td>
 <td>You can print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
-</tr>
+<td>Not implemented</td></tr>
 <tr class="even">
 <td>Bankgirot AP return format for Sweden</td>
 <td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
-</tr>
+<td>Not implemented</td></tr>
 <tr class="odd">
 <td>Secure global address book</td>
-<td>The ability to secure the global address book by legal entity and address book has not yet been implemented. This feature will be available in a future update.</td>
-</tr>
+<td>The ability to help secure the global address book by legal entity and address book hasn't yet been implemented. This feature will be available in a future update.</td>
+<td>Not implemented</td></tr>
 </tbody>
 </table>
-
