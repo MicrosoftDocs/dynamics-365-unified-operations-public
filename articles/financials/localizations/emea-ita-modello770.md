@@ -67,11 +67,11 @@ The fiscal code is included in the Model 770 report to allow the Italian governm
 ## Set up a number sequence for the Model 770 report
 Use the **General ledger parameters** to set up a number sequence for the Model 770 report.
 
- 1. Click **General ledger ** > **Ledger setup** > **General ledger parameters** 
+ 1. Click **General ledger** > **Ledger setup** > **General ledger parameters** 
  2. Click the **Number sequences** link, and then in the **Number sequence code** field, select a number sequence for the **Model ID** reference.
 
 ## Set up related information for vendors
- 1. Click **Accounts payable ** > **Vendors** > **All vendors** and select a required vendor.
+ 1. Click **Accounts payable** > **Vendors** > **All vendors** and select a required vendor.
  2. Click the **Invoice and delivery** FastTab, and then in the **Fiscal code** field, enter the fiscal code of the vendor.
   > [!NOTE]
   > For self-employed vendors who are not required to pay VAT, enter the personal fiscal code of the individual. If the vendor is required to pay VAT, enter the VAT registration number (partita IVA) provided by the Italian tax authority as the fiscal code of the vendor. 
