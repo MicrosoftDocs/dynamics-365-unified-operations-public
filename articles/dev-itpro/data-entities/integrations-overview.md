@@ -82,8 +82,6 @@ OData and custom service are both synchronous integration patterns because calli
 
 Batch data APIs are considered asynchronous integration patterns because calling these APIs results in data being imported or exported in batch mode. Consider the ImportFromPackage API: calls to ImportFromPackage can be synchronous, however, the API only schedules a batch job to import a specific data package. The scheduling job quickly returns, and the work is done later in a batch job. Therefore, we categorize batch data APIs as asynchronous.
 
-#### When to use the batch data APIs
-
 Batch data APIs are designed to deal with large volume data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
 
 #### Error handling 
@@ -92,7 +90,7 @@ When using a synchronous pattern, success or failure responses are returned to t
 
 When using an asynchronous pattern, the caller will get an immediate response about whether the scheduling call was successful. It is the caller’s responsibility to handle potential errors in the response. After scheduling is done, the data import or export status won’t be pushed to the caller. The caller must poll for the result of the corresponding import or export process and handle errors accordingly.
 
-## Integration Patterns
+## Integration patterns
 In general, when selecting an integration pattern, we recommend that you consider the following: 
 
 -   Is there a business requirement for the integration to be real time?
@@ -106,265 +104,156 @@ The following are common scenarios that use OData integrations.
 
 A manufacturer runs Finance and Operations but defines and configures their product with a third-party application hosted on-premise. They want to move their production information from their on-premise application into Finance and Operations. When a product is defined, or changed in the on-premise application, the end user would like to see the same change made in Finance and Operations, and they want it real time.
 
--   Is there a business requirement for the integration to be real time?
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | Yes       |
+| Peak data volume         | 1000/hour\* |
+| Frequency                | ad hoc    |
 
-    -   Yes
+\*Occasionally, there will be many new or modified production configurations made in a short period of time.
 
--   What is the peak data volume requirement?
-
-    -   1000/hr, most of the time the volume is small. Occasionally,
-        there would be bunch of new or modified production
-        configurations made in a short period of time.
-
--   What is the frequency?
-
-    -   Ad hoc
-
-### Solution
+**Recommended solution**
 
 This scenario is best implemented using the OData service endpoints to create and update product information in Finance and Operations.
 
 In Finance and Operations:
--   Discover all of the entities needed for the integration
--   Make sure the OData service endpoints are available for the same set of entities
+-   Determine all of the entities needed for the integration.
+-   Make sure the OData service endpoints are available for the same set of entities.
 
-On-premise:
+In the third-party application:
+- When product information is created or modified in the third-party application, a corresponding OData call is made to Finance and
+Operations to make the same change.
 
--   When product information is created, or modified in the third-party
-    application, corresponding OData CRUD call is made to Finance and
-    Operations to integrate the same change.
+#### Read order status
 
-### **Scenario – OData Read (Order Status)**
+A company runs Finance and Operations but has a self-hosted customer portal where customers can check status of their orders. Order status is maintained in Finance and Operations.
 
-A company runs Dynamics 365 for Finance and Operations but have a
-self-hosted customer portal where customers can check status of their
-orders. Order status is maintained in Finance and Operations.
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | Yes       |
+| Peak data volume         | 5000/hour |
+| Frequency                | ad hoc    |
 
-### Selection thought process
+**Recommended solution**
 
--   Is there a business requirement for the integration to be real time?
-
-    -   Yes
-
--   What is the peek data volume requirement?
-
-    -   5000/hr
-
--   What is the frequency?
-
-    -   Ad hoc
-
-### Solution
-
-This scenario is best implemented using the OData service endpoints to
-read order status from Finance and Operations.
+This scenario is best implemented using the OData service endpoints to read order status from Finance and Operations.
 
 In Finance and Operations:
-
--   Discover entity needed for checking order status
-
--   Make sure OData service endpoint is available for the same entity
+-   Determine the entity needed for checking order status.
+-   Make sure the OData service endpoint is available for the entity.
 
 From the customer portal site:
+-   When the customer checks the order status, make a real-time OData call into Finance and Operations to read the corresponding order and retrieve status for that order.
 
--   When customer check order status, make a real-time OData call into
-    Finance and Operations to read the corresponding order and retrieve
-    status from that order.
+#### BOM approval
 
-### **Scenario – OData Action (BOM Approval)**
+A company runs Finance and Operations but hosts a product lifecycle management (PLM) system on-premises. The PLM system has a workflow that sends the finished BOM information to Finance and Operations for approval.
 
-Company runs Finance and Operations but hosts a PLM system on-premise.
-The on-premise PLM system has a workflow that sends the finished BOM
-information to Finance and Operations for approval.
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | Yes       |
+| Peak data volume         | 1000/hour |
+| Frequency                | ad hoc    |
 
-### Selection thought process
+**Recommended solution**
 
--   Is there a business requirement for the integration to be real time?
-
-    -   Yes
-
--   What is the peek data volume requirement?
-
-    -   1000/hr
-
--   What is the frequency?
-
-    -   Ad hoc
-
-### Solution
-
-This scenario could be implemented with OData action.
+This scenario could be implemented with an OData action.
 
 In Finance and Operations:
+-   Determine the entity needed for the integration.
+-   Make sure the OData service endpoints are available for the entity.
+-   Create an action on the entity to execute the required business logic. 
 
--   Discover entity needed for the integration
+In the PLM solution:
+-   Have the PLM system invoke the OData action to approve the BOM.
 
--   Make sure OData service endpoints are available for entity
+> [!NOTE]
+> An example of this type of OData action can be found in the BOMBillOfMaterialsHeaderEntity::approve.
 
--   Create an action on the entity to execute needed business logic
+### Custom service scenarios
+The following are common scenarios that use a custom service. 
 
-On-premise:
+#### On-hand inventory lookup
 
--   PLM system invokes OData action to approve BOM.
-
-Note
-
--   An example of such OData action can be found in,
-    BOMBillOfMaterialsHeaderEntity::approve.
-
-**Custom service**
-------------------
-
-### **Scenario – Custom Service (On-hand Inventory Lookup)**
-
-[]{#_Hlk478998323 .anchor}An energy company has field workers scheduling
-installation jobs for heaters. This company uses Finance and Operations
-for back office and a third-party SaaS for scheduling appointments. When
-scheduling appointments, they need to look up inventory availability to
+An energy company has field workers scheduling installation jobs for heaters. This company uses Finance and Operations for back office and a third-party SaaS for scheduling appointments. When scheduling appointments, they need to look up inventory availability to
 make sure installation parts are available for the job.
 
-### Selection thought process
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | Yes       |
+| Peak data volume         | 1000/hour |
+| Frequency                | ad hoc    |
 
--   Is there a business requirement for the integration to be real time?
-
-    -   Yes
-
--   What is the peek data volume requirement?
-
-    -   1000/hr
-
--   What is the frequency?
-
-    -   Ad hoc
-
-### Solution
+**Recommended solution**
 
 This scenario could be implemented using a custom service.
 
 In Finance and Operations:
+-   Create a custom service to calculate the physical inventory on hand for a given item.
 
--   Create a custom service to calculate physical on hand inventory for
-    a given item.
+In the scheduling application:
+-   Make a real time call to a custom service endpoint, either thru SOAP or REST to retrieve inventory information for the selected item.
 
-From scheduling application:
+> [!NOTE]
+> An example of this type of custom service can be seen in the Retail Real Time Services implementation:  RetailTransactionServiceInventory::inventoryLookup
 
--   Make a real time call to custom service endpoint, either thru SOAP
-    or REST, to retrieve inventory information for a given item.
+You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, there is more than one possible way to expose the same data and business logic inside of Finance and Operations, and there is no "better" way. In this case, the decision comes down to which way works best for a given scenario and which method a developer is most comfortable with.
 
-### Note
+### Batch data integration scenarios
+The following are common scenarios that use the batch data APIs.
 
--   You can see an example in Retail Real Time Services implementation
-    of the same, RetailTransactionServiceInventory::inventoryLookup
+#### Import sales orders in large volumes
 
--   There is also an entity available to achieve the same,
-    inventorySiteOnHand. Sometimes, there are more than one possible
-    ways to expose the same data\\business logic inside of Finance and
-    Operations, and there is really no preference on which way is
-    better. In this case, it all comes down to which way works best for
-    a given scenario and which way is a developer most comfortable with.
-
-**Batch data integration**
---------------------------
-
-### **Scenario – Import (Sales Orders in large volume)**
-
-A company receives large volume of sales orders from a front-end system
-that runs on-premise. These orders need to be sent to Finance and
+A company receives large volume of sales orders from a front-end system that runs on-premise. These orders need to be sent to Finance and
 Operations periodically for processing and management.
 
-### Selection thought process
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | No       |
+| Peak data volume         | 200,000/hour |
+| Frequency                | Once every 5 minutes    |
 
--   Is there a business requirement for the integration to be real time?
-
-    -   No
-
--   What is the peek data volume requirement?
-
-    -   200K/hr
-
--   What is the frequency?
-
-    -   Once every 5 minutes
-
-### Solution
+**Recommended solution**
 
 This scenario is best implemented with batch data APIs.
 
 In Finance and Operations:
+-   Determine the entities needed for the integration.
+-   Make sure that data management is enabled for the entities.
 
--   Discover entities needed for the integration
+In the on-premises system:
+-   Use the REST batch data API to import files into Finance and Operations.
 
--   Make sure data management is enabled on the same set of entities
+#### Export large volumes of purchase orders
 
-On-premise:
+A company generates large amounts of purchase orders in Finance and Operations and uses an on-premise inventory management system to receive products. Purchase orders need to be moved from Finance and Operations to the on-premise inventory system.
 
--   Use REST batch data API to import file into Finance and Operations.
+| Decision  | Information       |
+|--------------------------|-----------|
+| Real-time data required? | No       |
+| Peak data volume         | 300,000/hour |
+| Frequency                | Once an hour    |
 
-### **Scenario – Export (Purchase Order in large volume)**
 
-A company generates large amounts of purchase orders in Finance and
-Operations and use an on-premise inventory management system to receive
-products. Purchase orders need to be moved from Finance and Operations
-to on-premise inventory system.
-
-### Selection thought process
-
--   Is there a business requirement for the integration to be real time?
-
-    -   No
-
--   What is the peek data volume requirement?
-
-    -   300K/hr
-
--   What is the frequency?
-
-    -   Once every hour
-
-### Solution
+**Recommended solution**
 
 This scenario is best implemented with batch data APIs.
 
 In Finance and Operations:
+-   Determine the entities needed for the integration.
+-   Make sure that data management is enabled for the entities.
+-   If incremental push is required, make sure that change tracking can be enabled on the entities.
 
--   Discover entities needed for the integration
+In the on-premises inventory system:
 
--   Make sure data management is enabled on the same set of entities
+-   Use the REST batch data API to export the file out of Finance and Operations, and import it into the inventory system.
 
--   If incremental push is required, make sure change tracking can be
-    enabled on the entities.
+### Call external web services
 
-On-premise:
+It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. 
 
--   Use REST batch data API to export file out of Finance and
-    Operations.
 
-**Call out to external web services**
--------------------------------------
-
-### **Scenario**
-
-It’s quite common for Finance and Operations to call out to an external
-web service, hosted on-premise or by another SaaS provider. In this case
-Operation acts as the integration client, which is no different than
-writing an integration client in any other applications. The same set of
-best practices and guidelines applies here. We are not going into this
-area in detail here.
-
-You can find a simple example of how to do this
-[here](https://ax.help.dynamics.com/en/wiki/dynamics-ax-7-services-technical-concepts-guide/).
-
-### Importance Note
-
--   Due to security requirements, Finance and Operations production and
-    sandbox environments support only secured communication using TLS
-    1.2 or above. This means the target web service endpoint Finance and
-    Operations is making a call out to has to support TLS1.2 or above.
-    If the target service endpoint doesn’t fulfill this requirement,
-    calls from Finance and Operations will fail with an exception error
-    message similar to this one, “Unable to read data from the transport
-    connection: An existing connection was forcibly closed by the remote
-    host.” If there is no way to modify the target service to be TLS 1.2
-    or above, one can work around this by introducing a broker service
-    and making a two-hop call, as illustrated by the activity diagram
-    below.
+> [!IMPORTANT]
+> Due to security requirements, Finance and Operations production and sandbox environments support only secured communication using TLS 1.2 or above. This means the target web service endpoint Finance and Operations is making a call out to has to support TLS1.2 or above. If the target service endpoint doesn’t fulfill this requirement, calls from Finance and Operations will fail with an exception error message similar to the following:
+> “Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.” 
+> If there is no way to modify the target service to be TLS 1.2  or above, one can work around this by introducing a broker service and making a two-hop call, as illustrated by the following diagram.
