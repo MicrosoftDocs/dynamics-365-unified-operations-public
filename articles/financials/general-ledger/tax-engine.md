@@ -49,23 +49,23 @@ The Tax Engine is an essential part of the configurable business application exp
 
 Measures are the computation blocks for tax calculation. Measures can be of different types (Measure types) which have different behavior and are used for different computational purposes. 
 
-The below Measure Types are available:
+The below Measure types are available:
 
-|Measure type               |Additional information                                                                                 |
+|Measure type               |Description                                                                                |
 |---------------------------|-------------------------------------------------------------------------------------------------------|
-|**Base Amount**            |This should be used for holding the amount which is the basis for tax calculation. Typically, Base Amount*Rate should give yield the Tax Amount.|
-|**Rate**                   |is a special measure type which is used to provide the applicable tax rate. This is a compound measure type and can also be used for holding threshold amount values if necessary.|
-|**Factor**:                | is a special measure type as subset measure type of ‘Rate’. This can be used for holding threshold amount values if necessary.|
-|**Tax Amount**             | is Base Amount*Rate. This amount should then be distributed for accounting purposes if necessary.|
+|**Base Amount**            |This should be used for holding the amount which is the basis for tax calculation. Typically, Base Amount\*Rate should give yield the Tax Amount.|
+|**Rate**                   |This is a special measure type which is used to provide the applicable tax rate. This is a compound measure type and can also be used for holding threshold amount values if necessary.|
+|**Factor**:                |This is a special measure type as subset measure type of ‘Rate’. This can be used for holding threshold amount values if necessary.|
+|**Tax Amount**             |This is Base Amount\*Rate. This amount should then be distributed for accounting purposes if necessary.|
 |**Amount**                 |This should be used for distributed tax amounts. For example, tax recoverable amount, load on inventory amount etc.|
-|**Percentage**             |This is a simple measure type to hold any percentage values. Normally this should be used for cases like Load on Inventory percentage, or expense percentage etc.|
+|**Percentage**             |This is a simple measure type to hold any percentage values. Normally, this should be used for cases like Load on Inventory percentage, or expense percentage etc.|
 
 #### Formulas
 
 Once the measures have been defined, you can use them to write the tax calculation formula. You can write the formula in two notations:
 
--	Simple Assignment Notation: for normal scenarios.
--	Advanced Linear Equations: specifically, for price inclusive tax calculation scenarios, like M.R.P.
+-	**Simple Assignment Notation**: for normal scenarios.
+-	**Advanced Linear Equations**: specifically, for price inclusive tax calculation scenarios, like M.R.P.
 
 Additionally, formulas may need to be used conditionally in which case the user should add appropriate business conditions.
 
@@ -82,16 +82,14 @@ The following table lists keywords that are reserved for attributes. When you cr
 
 These attributes are available in the Taxable Document (India) model provided by Microsoft.
 
-- Base Amount: This attribute is an output attribute, and it is used as base amount for tax calculation.
-- Price includes tax: This attribute is more like a flag which tell the engine that the tax amount is included in the line amount.
-- Tax amount included in price: The tax amount that should be considered as included in price as per the business practice or statutory laws. The engine uses this value to determine the invoice line amount and the amount that should be considered during accounting.
-- Line tax amount: The tax amount computed for the line. This value would remain the same across the price exclusive and price inclusive scenarios. Withholding tax amounts should not be considered while initializing this attribute, normally.
+- **Base Amount**: This attribute is an output attribute, and it is used as base amount for tax calculation.
+- **Price includes tax**: This attribute is more like a flag which tell the engine that the tax amount is included in the line amount.
+- **Tax amount included in price**: The tax amount that should be considered as included in price as per the business practice or statutory laws. The engine uses this value to determine the invoice line amount and the amount that should be considered during accounting.
+- **Line tax amount**: The tax amount computed for the line. This value would remain the same across the price exclusive and price inclusive scenarios. Withholding tax amounts should not be considered while initializing this attribute, normally.
 
 These should be initialized and used in the below manner in the tax document configuration:
 
-##### Price inclusive scenario:
-
-EXAMPLE:
+##### EXAMPLE: Price inclusive scenario
 
 >'Base Amount' = 'Assessable Value' - CGST.'Tax Amount' - 'SGST'.'Tax Amount' - 'IGST'.'Tax Amount' - CESS.'Tax Amount' - CGST_TDS.'Tax Amount' - SGST_TDS.'Tax Amount' - IGST_TDS.'Tax Amount' - CESS_TDS.'Tax Amount'
 >
@@ -101,7 +99,7 @@ EXAMPLE:
 >
 >'Tax amount included in price' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'
 
-##### Price exclusive scenario:
+##### EXAMPLE: Price exclusive scenario
 
 >'Base Amount'='Assessable Value'
 >
@@ -115,7 +113,7 @@ The ‘Tax amount included in price’ is initialized to zero implicitly by the 
 
 #### Tax accounting provider
 
-It is the sub-ledger which will be impacted for the tax accounting scenario. For example, in the purchase flow if tax must be paid to the vendor as part of the vendor invoice the tax accounting provider will be Party/Vendor. This list will depend on the underlying ERP system. From an AX perspective, these are the providers which are currently supported:
+It is the sub-ledger which will be impacted for the tax accounting scenario. For example, in the purchase flow, if tax must be paid to the vendor as part of the vendor invoice, then the tax accounting provider will be Party/Vendor. This list depends on the underlying ERP system. For Finance and Operations, the following providers are available:
 
 -	Party
 -	Inventory
@@ -124,7 +122,7 @@ It is the sub-ledger which will be impacted for the tax accounting scenario. For
 
 #### Posting types
 
-When the Tax sub-ledger is impacted as part of the tax accounting process, the tax amount needs to be distrusted further for settlement, reporting, costing and similar purposes. This list could also vary based on the country specific regulations based on tax types. For India, below is a list of posting types that is supported:
+When the Tax sub-ledger is impacted as part of the tax accounting process, the tax amount needs to be distrusted further for settlement, reporting, costing and similar purposes. This list can vary based on country/region-specific regulations regarding tax types. For India, the following posting types are available:
 
 -	Tax Recoverable
 -	Tax Payable
