@@ -250,10 +250,15 @@ In the on-premises inventory system:
 
 ### Call external web services
 
-It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. 
+It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Services home: Consuming external web services](services-home-page.md#consuming-external-web-services).
 
 
 > [!IMPORTANT]
 > Due to security requirements, Finance and Operations production and sandbox environments support only secured communication using TLS 1.2 or above. This means the target web service endpoint Finance and Operations is making a call out to has to support TLS1.2 or above. If the target service endpoint doesn’t fulfill this requirement, calls from Finance and Operations will fail with an exception error message similar to the following:
 > “Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.” 
 > If there is no way to modify the target service to be TLS 1.2  or above, one can work around this by introducing a broker service and making a two-hop call, as illustrated by the following diagram.
+
+![TLS requirements](./media/integrations-overview.png)
+
+
+
