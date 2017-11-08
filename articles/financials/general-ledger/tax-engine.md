@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides an overview of the tax engine functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: RichardLuan
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,17 +14,16 @@ ms.technology:
 # optional metadata
 
 #ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: riluan
-#ms.search.validFrom:
-#ms.dyn365.ops.version: 
+ms.search.validFrom:
+ms.dyn365.ops.version: 
 
 ---
 
@@ -32,35 +31,18 @@ ms.author: riluan
 
 [!include[banner](../includes/banner.md)]
 
-# Tax engine overview
+The Tax Engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It is highly customizable and lets the business user, a functional consultant, or a power user to configure tax rules that determine tax applicability,tax calculation, posting, and settlement, based on legal and business requirements.
+
+## Key concepts
 
 
-
-[!include[banner](../includes/banner.md)]
-
-
-
-<!--- Start writing topic here -->
-
-The new Tax Engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Operations. 
-
-The new Tax Engine is highly customizable and lets the business user, a functional consultant, or a power user to configure tax rules that determine tax applicability, 
-
-tax calculation, posting, and settlement, based on legal and business requirements.
-
-
-
-# Key concepts
-
-
-
-## Taxable document
+### Taxable document
 
 A taxable document is an abstract representation of document which allows tax calculation in ERP system.
 
 
 
-## Tax document
+### Tax document
 
 A transaction with tax details (lines, amounts) and the tax amount distributed in a manner which is ready for consumption 
 
@@ -68,11 +50,11 @@ by any accounting system/framework.
 
 
 
-## Tax Applicability
+### Tax Applicability
 
 
 
-### Tax Type: 
+#### Tax Type: 
 
 Tax type is analogous to a Tax Regime. Sales Tax and Value Added Tax (VAT) are some of the most common example of sales tax types. 
 
@@ -80,7 +62,7 @@ Tax types are applicable only when certain conditions (applicability rules) are 
 
 
 
-### Tax Components
+#### Tax Components
 
 Tax components are like sub-tax types which could be levied by a tax authority within the same or a different jurisdiction. 
 
@@ -90,43 +72,26 @@ Different tax components may have different treatment from an accounting, tax re
 
 
 
-## Tax Calculation
+### Tax Calculation
 
 
 
-### Measures
+#### Measures
 
 Measures are the computation blocks for tax calculation. Measures can be of different types (Measure types) which have different behavior and are used for different computational purposes. 
 
 The below Measure Types are available:
 
+|Measure type               |Additional information                                                                                 |
+|---------------------------|-------------------------------------------------------------------------------------------------------|
+|**Base Amount**            |This should be used for holding the amount which is the basis for tax calculation. Typically, Base Amount*Rate should give yield the Tax Amount.|
+|**Rate**                   |is a special measure type which is used to provide the applicable tax rate. This is a compound measure type and can also be used for holding threshold amount values if necessary.|
+|**Factor**:                | is a special measure type as subset measure type of ‘Rate’. This can be used for holding threshold amount values if necessary.|
+|**Tax Amount**             | is Base Amount*Rate. This amount should then be distributed for accounting purposes if necessary.|
+|**Amount**                 |This should be used for distributed tax amounts. For example, tax recoverable amount, load on inventory amount etc.|
+|**Percentage**             |This is a simple measure type to hold any percentage values. Normally this should be used for cases like Load on Inventory percentage, or expense percentage etc.|
 
-
-**Base Amount**: should be used for holding the amount which is the basis for tax calculation. Typically, Base Amount*Rate should give yield the Tax Amount.
-
-
-
-**Rate**: is a special measure type which is used to provide the applicable tax rate. This is a compound measure type and can also be used for holding threshold amount values if necessary.
-
-
-
-**Factor**: is a special measure type as subset measure type of ‘Rate’. This can be used for holding threshold amount values if necessary.
-
-
-
-**Tax Amount**: is Base Amount*Rate. This amount should then be distributed for accounting purposes if necessary.
-
-
-
-**Amount**: should be used for distributed tax amounts. For example, tax recoverable amount, load on inventory amount etc.
-
-
-
-**Percentage**: is a simple measure type to hold any percentage values. Normally this should be used for cases like Load on Inventory percentage, or expense percentage etc.
-
-
-
-### Formulas
+#### Formulas
 
 Once the measures, (computation building blocks for tax calculation) have been defined these can be used to author the tax calculation formulae. The formulae can be authored in two notations:
 
@@ -142,7 +107,7 @@ Additionally, formulas may need to be used conditionally in which case the user 
 
 
 
-## Key Model Attributes that should be assigned for Calculation
+### Key Model Attributes that should be assigned for Calculation
 
 The following table lists reserved keywords for attributes. When you create a new taxable document model, 
 
@@ -176,9 +141,9 @@ These attributes are available in the Taxable Document (India) model provided by
 
 These should be initialized and used in the below manner in the tax document configuration:
 
-### Price Inclusive Scenario:
+#### Price Inclusive Scenario:
 
-E.g.:
+EXAMPLE:
 
 `'Base Amount' = 'Assessable Value' - CGST.'Tax Amount' - 'SGST'.'Tax Amount' - 'IGST'.'Tax Amount' - CESS.'Tax Amount' - CGST_TDS.'Tax Amount' - SGST_TDS.'Tax Amount' - IGST_TDS.'Tax Amount' - CESS_TDS.'Tax Amount'
 
@@ -188,86 +153,55 @@ E.g.:
 
 'Tax amount included in price' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'`
 
-### Price Exclusive Scenario:
+#### Price Exclusive Scenario:
 
-`'Base Amount'='Assessable Value'
-
-'Price includes tax' = 0.0
-
-'Line tax amount'=CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount'+BCD.'Tax Amount' + 'ECESS C'.'Tax Amount' + 'SHECESS C'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'`
-
-
+>`'Base Amount'='Assessable Value'
+>
+>'Price includes tax' = 0.0
+>
+>'Line tax amount'=CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount'+BCD.'Tax Amount' + 'ECESS C'.'Tax Amount' + 'SHECESS >C'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'`
 
 The ‘Tax amount included in price’ is initialized to zero implicitly by the engine for the price exclusive scenario and therefore the equation need not be written explicitly.
 
 
 
-## Tax Accounting
+### Tax Accounting
 
-
-
-### Tax Accounting Provider
+#### Tax Accounting Provider
 
 It is the sub-ledger which will be impacted for the tax accounting scenario. For example, in the purchase flow if tax must be paid to the vendor as part of the vendor invoice the tax accounting provider will be Party/Vendor. This list will depend on the underlying ERP system. From an AX perspective, these are the providers which are currently supported:
 
-+	Party
+-	Party
+-	Inventory
+-	Tax
+-	Ledger
 
-+	Inventory
-
-+	Tax
-
-+	Ledger
-
-
-
-### Posting Types
+#### Posting Types
 
 When the Tax sub-ledger is impacted as part of the tax accounting process, the tax amount needs to be distrusted further for settlement, reporting, costing and similar purposes. This list could also vary based on the country specific regulations based on tax types. For India, below is a list of posting types that is supported:
 
+-	Tax Recoverable
+-	Tax Payable
+-	Tax Expense
+-	Deferred Tax Recoverable
+-	Interim Tax Payable
+-	Interim Tax Recoverable
 
-
-+	Tax Recoverable
-
-+	Tax Payable
-
-+	Tax Expense
-
-+	Deferred Tax Recoverable
-
-+	Interim Tax Payable
-
-+	Interim Tax Recoverable
-
-
-
-## Tax credit pool
-
-
+#### Tax credit pool
 
 When configured as above, the tax recoverable and payable amount will be accumulated on each of the Tax credit pool. 
 
-
-
-## Set off rule
+### Set off rule
 
 Set-off rule indicates how the tax recoverable should be utilized to set-off tax payable. Details setup are as below for Indian GST: 
 
 | Recoverable side | Payable side             |
-
 |------------------|--------------------------|
-
 |    IGST          |    IGST   CGST   SGST    |
-
 |    CGST          |    CGST   IGST           |
-
 |    SGST          |    SGST   IGST           |
-
 |    CESS          |    CESS                  |
-
 |    CGST_TDS      |    CGST                  |
-
 |    SGST_TDS      |    SGST                  |
-
 |    IGST_TDS      |    IGST                  |
-
 |    CESS_TDS      |    CESS_TDS              |
