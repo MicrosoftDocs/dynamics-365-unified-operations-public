@@ -1013,7 +1013,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public boolean autoRefreshData(\[boolean value\])                                                           |                                                                                                                                           |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                            |
 | public boolean big(\[boolean value\])                                                                       |                                                                                                                                           |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                  |
@@ -1190,7 +1190,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -1344,20 +1344,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -1386,7 +1386,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -2300,7 +2300,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean autoDataGroup(\[boolean value\])                                                             |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                |
 | public int bottomMargin(\[int value\])                                                                      |                                                                                                                                         |
 | public int colorScheme(\[int value\])                                                                       | Gets or sets the color scheme of the control.                                                                                           |
@@ -2489,7 +2489,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -2558,7 +2558,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -3404,7 +3404,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean autoDataGroup(\[boolean value\])                                                             |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                             |
 | public int bottomMargin(\[int value\], \[AutoMode mode\])                                                   |                                                                                                                                         |
 | public AutoMode bottomMarginMode(\[AutoMode mode\])                                                         |                                                                                                                                         |
@@ -3638,7 +3638,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -4781,7 +4781,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                             |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                |
 | public int cacheDataMethod(\[int value\])                                                                   |                                                                                                                                         |
@@ -4973,7 +4973,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -6887,7 +6887,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                             |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                |
 | public int cacheDataMethod(\[int value\])                                                                   |                                                                                                                                         |
@@ -7095,7 +7095,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -8400,7 +8400,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                             |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                |
 | public int cacheDataMethod(\[int value\])                                                                   |                                                                                                                                         |
@@ -8572,7 +8572,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -8685,20 +8685,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -8727,7 +8727,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -11791,20 +11791,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -11833,7 +11833,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -13761,20 +13761,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -13803,7 +13803,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method columns
