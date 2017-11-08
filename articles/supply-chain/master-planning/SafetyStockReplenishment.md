@@ -40,10 +40,11 @@ The following options are available:
 - **Today's date**: The specified minimum quantity is met on the date that master planning is run.
 - **Today's date + procurement time**: The specified minimum quantity is met on the date that master planning is run, plus the
 purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected in the **Master planning parameters** form, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
-- **First issue**: The specified minimum quantity is met on the date the available inventory goes below minimum. 
+- **First issue**: The specified minimum quantity is met on the date the available inventory goes below minimum, as you can see in the image below. 
+
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqFirstIssue.png)
 
-> [!NOTE] The difference between these three fulfill minimum modes is related to the available inventory on the date master planning is run. If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction.
+> [!NOTE] The difference between these three fulfill minimum modes is related to the available inventory on the date master planning is run. If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. So, for the case described in the image above, all three fulfillment modes would provide the same results.
 
 - **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
 
