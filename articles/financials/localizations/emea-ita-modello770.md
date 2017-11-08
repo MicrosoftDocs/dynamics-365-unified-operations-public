@@ -5,7 +5,7 @@ title: Modello 770 report
 description: This topic provides information about the Modello 770 report for Italy.
 author: ilkond
 manager: AnnBe
-ms.date: 11/07/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,7 +51,7 @@ Use the **Address setup** page to set up the country/region code, state and regi
 3. Select **State/province**, and then enter the identification code of the state and the two-digit IT region code for the contractors or self-employed vendors.
 
     > [!NOTE]
-    > Use the numeric state code, not the state acronym.
+    > Use the numeric state code, not the state abbreviation.
 
 4. Select **County**, and then, in the **IT county code** field, enter the two-letter ISO county code for the contractors or self-employed vendors.
 5. Select **City**, and then, in the **IT municipality code** field, enter the four-character Italian municipality code for the contractors or self-employed vendors. The municipality code consists of a letter and three numbers.
