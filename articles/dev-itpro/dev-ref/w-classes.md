@@ -308,7 +308,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method readPermissions
 
@@ -454,7 +454,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public EnumId enumTypeParameter(\[EnumId value\]) | Gets or sets the enumTypeParameter property for the MenuFunction class.                                                                   |
 | public str helpText(\[str value\])                | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                     |
-| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str object(\[str value\])                  | Gets or sets the object that the MenuFunction class runs.                                                                                 |
 | public int objectType(\[int value\])              |                                                                                                                                           |
 | public Guid origin(\[Guid value\])                |                                                                                                                                           |
@@ -607,7 +607,7 @@ The label determines which text is displayed in the control or adjacent to it.Th
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -689,7 +689,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method reportDesign
 
@@ -1238,7 +1238,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method reportDesign
 
@@ -2148,7 +2148,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method showParentModule
 
@@ -3319,7 +3319,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. CTS will ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects will ignore passed, unrecognized parameters.
 
 ### Method readPermissions
 

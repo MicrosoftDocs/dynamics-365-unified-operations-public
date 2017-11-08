@@ -1458,7 +1458,7 @@ The name of the remote computer on which to instantiate the COM object; optional
 <!-- -->
 
 computerName  
-The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of MicrosoftWindows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
+The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of Microsoft Windows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
 
 #### Remarks
 

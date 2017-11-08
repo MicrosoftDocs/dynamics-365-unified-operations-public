@@ -10089,7 +10089,7 @@ The table ID to use to create the class instance.
 ## Class DLL
     class DLL extends Object
 
-The DLL class enables communication with a MicrosoftWindows dynamic-link library (DLL).
+The DLL class enables communication with a Microsoft Windows dynamic-link library (DLL).
 
 ### Remarks
 
