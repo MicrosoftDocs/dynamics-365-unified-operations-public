@@ -40,19 +40,14 @@ The topic describes Finance and Operations integration patterns, integration sce
 
 The following table lists the integration patterns available for Finance and Operations.
 
-| Pattern                                                                                                     | Documentation                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| OData                                                                                                       | [Odata](odata.md)                                                         |
-|                                                                                                             |                                                                                                                       |
-| Batch data API                                                                                              | [Recurring integrations](recurring-integrations.md)                                                         |
-|                                                                                                             |                                                                                                                       |
-| [Data management API](data-management-api.md)|                                                                                                                       |
-|                                                                                                             |                                                                                                                       |
-| Custom service                                                                                              | [Services home page, Custom services](services-home-page.md#custom-services)               |
-|                                                                                                             |                                                                                                                       |
-| Consume external web services                                                                               | [Services home page, Consuming external web services](services-home-page.md#consuming-external-web-services) |
-|                                                                                                             |                                                                                                                       |
-|                                                                                                             |                                                                                                                       |
+| Pattern                       | Documentation                                       |
+|-------------------------------|-----------------------------------------------------|
+| OData                         | [Odata](odata.md)                                               |
+| Batch data API                | [Recurring integrations](recurring-integrations.md)                              |
+|                               | [Data management API](data-management-api.md)                                 |
+| Custom service                | [Services home page, Custom services](services-home-page.md#custom-services)                 |
+| Consume external web services | [Services home page, Consuming external web services](services-home-page.md#consuming-external-web-services) |
+
 
 ### Synchronous vs asynchronous integration patterns
 
@@ -73,9 +68,9 @@ and Operations can be invoked either synchronously or asynchronously.
 
 The following examples illustrate this point. One can’t draw the conclusion that when OData is used for integration, the caller will be blocked. That is not true, because it really depends on how a call is made.
 
-| Pattern        | Synchronous (Programming paradigm)    | Asynchronous (Programming paradigm)        |
+| Pattern        | Synchronous programming paradigm    | Asynchronous programming paradigm        |
 |----------------|---------------------------------------|--------------------------------------------|
-| OData          | DbResourceContext.SaveChanges         | DbResourceContext. SaveChangesAsync        |
+| OData          | DbResourceContext.SaveChanges         | DbResourceContext.SaveChangesAsync        |
 | Custom Service | httpRequest.GetResponse               | httpRequest.BeginGetResponse               |
 | SOAP           | UserSessionService.GetUserSessionInfo | UserSessionService.GetUserSessionInfoAsync |
 | Batch data API | ImportFromPackage                     | BeginInvoke                                |
