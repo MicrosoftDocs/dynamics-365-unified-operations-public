@@ -258,7 +258,7 @@ It’s quite common for Finance and Operations to call out to an external web se
 > “Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.” 
 > If there is no way to modify the target service to be TLS 1.2  or above, one can work around this by introducing a broker service and making a two-hop call, as illustrated by the following diagram.
 
-![TLS requirements](./media/integrations-overview.png)
+![TLS requirements](./media/integration-tls.png)
 
 
 
