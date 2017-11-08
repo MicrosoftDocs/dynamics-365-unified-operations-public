@@ -38,52 +38,47 @@ This topic is intended to help architects and developers make sound design decis
 
 The topic describes Finance and Operations integration patterns, integration scenarios, and integration solutions and best practices. It does not include technical details on how to use or set up each Finance and Operations integration pattern, nor sample integration code.
 
-## Integration patterns overview
-
 The following table lists the integration patterns available for Finance and Operations.
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pattern**                     **Reference**
-  ------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  OData                           [Odata](odata.md)
+| Pattern                                                                                                     | Documentation                                                                                                             |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| OData                                                                                                       | [Odata](odata.md)                                                         |
+|                                                                                                             |                                                                                                                       |
+| Batch data API                                                                                              | [Recurring integrations](recurring-integrations.md)                                                         |
+|                                                                                                             |                                                                                                                       |
+| [Data management API](data-management-api.md)|                                                                                                                       |
+|                                                                                                             |                                                                                                                       |
+| Custom service                                                                                              | [Services home page, Custom services](services-home-page.md#custom-services)               |
+|                                                                                                             |                                                                                                                       |
+| Consume external web services                                                                               | [Services home page, Consuming external web services](services-home-page.md#consuming-external-web-services) |
+|                                                                                                             |                                                                                                                       |
+|                                                                                                             |                                                                                                                       |
 
-  Batch data API                  [Recurring integrations](recurring-integrations.md)
-                                  
-                                  [Data management API](data-management-api.md)
-
-  Custom services                 [Services home page, Custom services](services-home-page.md#custom-services)
-
-  Consume external web services   [Services home page, Consuming external web services](services-home-page.md#consuming-external-web-services)
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### Synchronous vs asynchronous integrations
+### Synchronous vs asynchronous integration patterns
 
 Deciding which integration pattern to use is often based on whether you need to use synchronous or asynchronous processing. 
   
-  **Term**       **Definition**
-  -------------- -----------------------------------------------------------------------------------------------------------------------
-  Synchronous    A blocking request and response pattern, where caller is blocked until callee is done executing and gives a response.
-  Asynchronous   A non-blocking pattern, where caller submits the request and continues without waiting for a response.
+A *synchronous* pattern is a blocking request and response pattern, in which the caller is blocked until the callee is done executing and gives a response.
+An *asynchronous* pattern is a non-blocking pattern, in which the caller submits the request and continues without waiting for a response.
 
-Inbound patterns
+The following table lists the inbound integration patterns that are available. 
 
-  **Pattern**      **Timing**     **Batch**
-  ---------------- -------------- -----------
-  OData            Synchronous    No
-  Batch data API   Asynchronous   Yes
-  Custom service   Synchronous    No
+| Pattern        | Timing       | Batch |
+|----------------|--------------|-------|
+| OData          | Synchronous  | No    |
+| Batch data API | Asynchronous | Yes   |
 
 Before comparing synchronous vs asynchronous, you should be aware that all REST and SOAP integration APIs provided by Finance
 and Operations can be invoked either synchronously or asynchronously.
 
 The following examples illustrate this point. One can’t draw the conclusion that when OData is used for integration, the caller will be blocked. That is not true, because it really depends on how a call is made.
 
-**Pattern**   **Synchronous (Programming paradigm)**   **Asynchronous (Programming paradigm)**
-  --------------------------------------- ---------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
-  OData                                   DbResourceContext.SaveChanges            DbResourceContext. SaveChangesAsync
-  Custom Service                          httpRequest.GetResponse                  httpRequest.BeginGetResponse
-  SOAP                                    UserSessionService.GetUserSessionInfo    UserSessionService.GetUserSessionInfoAsync
-  Batch data API                          ImportFromPackage                        [BeginInvoke](../../dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)
+| Pattern        | Synchronous (Programming paradigm)    | Asynchronous (Programming paradigm)        |
+|----------------|---------------------------------------|--------------------------------------------|
+| OData          | DbResourceContext.SaveChanges         | DbResourceContext. SaveChangesAsync        |
+| Custom Service | httpRequest.GetResponse               | httpRequest.BeginGetResponse               |
+| SOAP           | UserSessionService.GetUserSessionInfo | UserSessionService.GetUserSessionInfoAsync |
+| Batch data API | ImportFromPackage                     | BeginInvoke                                |
 
 
 OData and custom service are both synchronous integration patterns because calling these APIs results in the immediate execution of business logic in Finance and Operations. For example: 
@@ -94,46 +89,33 @@ Batch data APIs are considered asynchronous integration patterns because calling
 
 #### When to use the batch data APIs
 
-Batch data APIs are designed to deal with large voluem data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
+Batch data APIs are designed to deal with large volume data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
 
-##### Error handling 
+#### Error handling 
 
-When using synchronous pattern, success or failure response will be given
-to the caller. For example, if OData call is used to insert sales
-orders, if a sales order line has a bad reference to a product that does
-not exist, caller will get a response containing error indicating the
-same. It is caller’s responsibility to handle potential errors in the
-response.
+When using a synchronous pattern, success or failure responses are returned to the caller. For example, if an OData call is used to insert sales orders, if a sales order line has a bad reference to a product that does not exist, the caller will get a response containing an error. It is caller’s responsibility to handle potential errors in the response.
 
-When using asynchronous pattern, caller will get an immediate response
-for whether the scheduling call was successful. It is caller’s
-responsibility to handle potential errors in the response. After
-scheduling is done, data import or export status won’t be pushed to the
-caller. Caller need to poll for the result of the corresponding
-import or export process and handle errors accordingly.
+When using an asynchronous pattern, the caller will get an immediate response about whether the scheduling call was successful. It is the caller’s responsibility to handle potential errors in the response. After scheduling is done, the data import or export status won’t be pushed to the caller. The caller must poll for the result of the corresponding import or export process and handle errors accordingly.
 
-**Integration Patterns**
-========================
+## Integration Patterns
+In general, when selecting an integration pattern, we recommend that you consider the following: 
 
-**OData**
----------
+-   Is there a business requirement for the integration to be real time?
+-   What is the peak data volume requirement?
+-   What is the frequency?
 
-### **Scenario – OData Create and Update (Product Information)**
+### OData scenarios
+The following are common scenarios that use OData integrations. 
 
-A manufacturer runs Finance and Operations but define and configure
-their product with a third-party application hosted on-premise. They
-want to move production information from their on-premise application
-into Finance and Operations. When a product is defined, or changed in
-the on-premise application, the end user would like to see the same
-change made in Finance and Operations, and they want it real time.
+#### Create and update product information
 
-### Selection thought process
+A manufacturer runs Finance and Operations but defines and configures their product with a third-party application hosted on-premise. They want to move their production information from their on-premise application into Finance and Operations. When a product is defined, or changed in the on-premise application, the end user would like to see the same change made in Finance and Operations, and they want it real time.
 
 -   Is there a business requirement for the integration to be real time?
 
     -   Yes
 
--   What is the peek data volume requirement?
+-   What is the peak data volume requirement?
 
     -   1000/hr, most of the time the volume is small. Occasionally,
         there would be bunch of new or modified production
@@ -145,15 +127,11 @@ change made in Finance and Operations, and they want it real time.
 
 ### Solution
 
-This scenario is best implemented using the OData service endpoints to
-create and update product information in Finance and Operations.
+This scenario is best implemented using the OData service endpoints to create and update product information in Finance and Operations.
 
 In Finance and Operations:
-
--   Discover all the entities needed for the integration
-
--   Make sure OData service endpoints are available for the same set of
-    entities
+-   Discover all of the entities needed for the integration
+-   Make sure the OData service endpoints are available for the same set of entities
 
 On-premise:
 
