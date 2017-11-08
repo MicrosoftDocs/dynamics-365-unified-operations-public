@@ -5,7 +5,7 @@ title: Create and use deep links
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -70,7 +70,7 @@ The URL Generator is a .NET library that is accessible from X++, under the follo
 
 #### Requirements
 
-The URL Generator must used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
+The URL Generator must be used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
 
 -   **Host URL**
     -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
