@@ -57,34 +57,32 @@ Once the package is loaded, you will have the following legal entities:
 | PICH | A process industries company focused on chemicals. |
 | PIFB | A process industries company focused on food and beverage. |
 
-You can expect approximately 30 minutes to load this package. However, the time required to import this package will vary based on the speed of your instance.   
-
 ### Financials
 The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
 
-At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. (CHECK THIS). (TEST THIS). The CONS company is required if you want to do consolidations. 
+At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. The CONS company is required if you want to do consolidations. 
 
 The financial data packages also have five inventory products to support the creation of invoices that will move through the accounts receivables and accounts payables processes. These items use a minimum of inventory and product functionality to support those process while eliminating complexity of setting up products when you want to demonstrate only financials functionality. More complete products will be added when you import the supply chain packages.  
 
-You can expect approximately 15 minutes to load each package. However, the time required to import this package will vary based on the speed of your instance.
-
 ### Supply chain
-There are several packages that contain the supply data for a company.
+The **Supply chain** data packages contain data for      abc       for a single company. These data packages are entitled "300 - Supply Chain 1 of 2" followed by the legal entity for which they were intended. For examples, the supply chain data packages for HQUS are entitled "300 - Supply Chain 1 of 2- HQUS.zip".
 
-You can expect approximately 30 minutes to load each package. The time required to import this package will vary based on the speed of your instance.
+Due to the large number of entities, the supply chain packages have been split up into two packages. Both packages must be loaded to complete the supply chain scenarios. 
 
+## Demo data package releases
+The demo data packages will be released via LCS and matched to the release for which they were intended. Please note that the contents of the packages are subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released when we add additional module areas and industry specific scenarios. These packages are not yet a full replacement for the demo database that is supplied today.
 
 ## Steps to take before loading packages
 
 There are some steps that you will need to do manually before you load the data. 
 1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the User information data entity spreadsheet or, after loading data, in the System administration, Users form.
 2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
-3) The ready to post scheduler must be started. This batch will post transactions automatically. Use Demo Data, ??? to open the form. Select Create scheduler and set up the batch to be recurring.
+3) The Ready to post scheduler must be started. This batch will post transactions automatically. Follow the steps described for Ready to Post below.
 4) You need to set up policy precedence rules. Use Procurement and sourcing, Setup, Policies, Purchasing policies and select the Parameters menu item. Click on Companies and move it to the right hand column.
 
 ## Loading the packages
 
-The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain - HQUS.zip"
+The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain - HQUS.zip". The name of the package will also include the release for which it was intended.
 
 Follow these steps to load the packages:
 1) Start with an empty instance where no data is loaded
@@ -98,30 +96,27 @@ Follow these steps to load the packages:
 9) Repeat the process for additional packages. Be sure to change to the company for which the data package was intended. For example, switch to the HQUS company before importing the data package
 
 ### Loading package combinations
-We recommend the following combinations:
+The following packages are available to load:
 
-| Description | ABC |  
+| Description | Notes |  
 |------|--------|
-
-In some cases, there may be different data packages that have the same entities in them. If you load multiple packages in the same data project and those packages have data for the same entity, the data for entities that are loaded last will be the data that is used.
+| 2017 Fall release - 100 - SystemAndShared | This must be loaded before any package.|  
+| 2017 Fall release - 200 - Financials - HQUS | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - HQEU | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - CONS | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - PICH | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - PIFB | This can be loaded alone or with another financials package. |  
 
 ### Steps to take after loading packages
+In some cases, there may be data that you want to add due to a special scenario or missing entity. Add that data at this time. You may also want to manually post additional transactions or add your own data packages to enhance the demo experience.
 
-
-
+### Scenario scripts
+Scripts have been provided for many of the scenarios supported by the demo data. You can find those scripts here: [Demo data scripts for Dynamics 365 Finance and Operations, Enterprise Edition](https://go.microsoft.com/fwlink/?linkid=861599).
 
 ## Transactions and automatic posting
-Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions using the Ready to post feature, which includes both a form that allows you to define which transactions should be posted and an entity that allows you to import the definitions and automatically execute them.
+Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions using the Ready to post feature, which includes both a form that allows you to define which transactions should be posted and an entity that allows you to import the definitions and automatically execute them. 
 
-Follow these steps to use the Ready to post form:
-
-
-Follow these steps to use the Ready to post entity:
-
-###Filters for the batch
-
-You can filter the transactions so that only the filtered transactions will be processed. Provide the following information when you add a line to the 
-
+The following transaction types are supported for posting demo data:
 | Document | Date filter | ID filters | Other filters |  
 |------|--------|--------|--------|
 | Budget registry update | Default Date | Budget entry number | Not in use, Status = Draft |
@@ -138,4 +133,27 @@ You can filter the transactions so that only the filtered transactions will be p
 | Trade agreement | n/a | Price/discount journal number | |
 | Vendor invoice | Posting date | Invoice number | Approved, not in use, not yet posted |
 | Vendor payment journal | n/a | Journal number | Not posted, not workflow, not system blocked |
+
+### The Ready to post process
+The Ready to post feature uses a batch to monitor the list of transaction types that you want to post. Once the monitor detects a transaction that you want to post, it uses the transaction type to generate a batch that posts those transactions. The batch is the same batch that is used when you click on the button in the user interface for that transaction that initiates an action such as Post or Invoice. Once the transaction batch is complete, the Ready to post monitor updates the list with the results of the processing and with links to the batch and the original transaction.
+
+### Use the Ready to post form to process transactions
+You can access the Ready to post form using System administration, Periodic tasks, Batch job ready to post. 
+
+To create a Ready to post job, follow these steps:
+1) Select the Create posting monitor menu and set up the batch parameters so that you have a recurring batch running. You only have to do this step once to initiate the posting batch process.
+2) Select New and enter a name for the demo data job
+3) Use Add line to add a transaction type. 
+4) Select the transaction target. For journals, it is Post. For other transactions, it may change depending on the transaction type.
+4) Specify a start and end date range to limit the transactions that will be processed (when available)
+5) Specify a from and to document range to limit the transactions that will be processed (when available)
+6) Use Add line to add additional transaction types. You can use the same type on multiple lines.
+7) Click on the menu Mark ready to post. It will change the status from Open to Ready and the posting monitor will start processing each line.
+8) If you want to process the document immediately, click on the Process documents menu. The batch status will change to Submitted and a batch will be started without using the posting monitor.
+9) When the batch is complete, the status will change to Complete. The posting results will be displayed at the bottom of the form.
+
+### Using the Ready to post entity to process transactions
+An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form and you can follow the steps above to process the transactions. If you update the value for PROCESSONIMPORT to be Yes in your data package spreadsheet, the demo data job will be set to Ready and the process monitor will pick it up without any action required.
+
+
 
