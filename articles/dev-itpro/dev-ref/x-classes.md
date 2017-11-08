@@ -6983,7 +6983,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method query
 
