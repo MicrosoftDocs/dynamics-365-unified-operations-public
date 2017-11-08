@@ -80,6 +80,7 @@ There are some steps that you will need to do manually before you load the data.
 1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the User information data entity spreadsheet or, after loading data, in the System administration, Users form.
 2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
 3) The ready to post scheduler must be started. This batch will post transactions automatically. Use Demo Data, ??? to open the form. Select Create scheduler and set up the batch to be recurring.
+4) You need to set up policy precedence rules. Use Procurement and sourcing, Setup, Policies, Purchasing policies and select the Parameters menu item. Click on Companies and move it to the right hand column.
 
 ## Loading the packages
 
@@ -116,3 +117,25 @@ Follow these steps to use the Ready to post form:
 
 
 Follow these steps to use the Ready to post entity:
+
+###Filters for the batch
+
+You can filter the transactions so that only the filtered transactions will be processed. Provide the following information when you add a line to the 
+
+| Document | Date filter | ID filters | Other filters |  
+|------|--------|--------|--------|
+| Budget registry update | Default Date | Budget entry number | Not in use, Status = Draft |
+| Costing version | n/a | Version Id | Version Activation blocked = No | 
+| Customer payment journal | n/a | Journal number | Not posted, not workflow, not system blocked | 
+| Daily journal | n/a | Journal number | Not posted, not workflow, not system blocked |
+| Fixed assets journal | n/a | Journal number | Not posted, not workflow, not system blocked |
+| Free text invoice | Invoice Date | n/a | |
+| Inventory adjustment journal | n/a | Journal number | Not posted |
+| Invoice journal | n/a | Journal number | Not posted, not workflow, not system blocked |
+| Price calculation| n/a | Version Id | Version Activation blocked = No |
+| Purchase order | Delivery date | Purchase order id | Able to confirm/PR/Vendor confirm/invoice |
+| Sales Order | Delivery date | Sales order id | Able to confirm/PS/invoice |
+| Trade agreement | n/a | Price/discount journal number | |
+| Vendor invoice | Posting date | Invoice number | Approved, not in use, not yet posted |
+| Vendor payment journal | n/a | Journal number | Not posted, not workflow, not system blocked |
+
