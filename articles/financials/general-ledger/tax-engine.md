@@ -35,48 +35,17 @@ The Tax Engine is an essential part of the configurable business application exp
 
 ## Key concepts
 
+|Concept| Description |
+|-------|-----|
+|**Taxable document**|A taxable document is an abstract representation of document which allows tax calculation in ERP system.
+|**Tax document**|A transaction with tax details (lines, amounts) and the tax amount distributed in a manner which is ready for consumption by any accounting system/framework.|
+|**Tax applicability**|**Tax type**: Tax type is analogous to a Tax Regime. Sales Tax and Value Added Tax (VAT) are some of the most common example of sales tax types. Tax types are applicable only when certain conditions (applicability rules) are met. **Tax components**: Tax components are like sub-tax types which could be levied by a tax authority within the same or a different jurisdiction. For example, in US, Sales Tax is levied at different levels of jurisdiction: State, Country or City for example. Different tax components may have different treatment from an accounting, tax reporting, tax settlement and other perspectives. |
+|**Tax calculation**| See [Tax calulation](#tax-calculation).|
+|**Tax accounting**| See [Tax accounting](#tax-accounting).|
 
-### Taxable document
+## Tax calculation
 
-A taxable document is an abstract representation of document which allows tax calculation in ERP system.
-
-
-
-### Tax document
-
-A transaction with tax details (lines, amounts) and the tax amount distributed in a manner which is ready for consumption 
-
-by any accounting system/framework.
-
-
-
-### Tax Applicability
-
-
-
-#### Tax Type: 
-
-Tax type is analogous to a Tax Regime. Sales Tax and Value Added Tax (VAT) are some of the most common example of sales tax types. 
-
-Tax types are applicable only when certain conditions (applicability rules) are met.
-
-
-
-#### Tax Components
-
-Tax components are like sub-tax types which could be levied by a tax authority within the same or a different jurisdiction. 
-
-For example, in US, Sales Tax is levied at different levels of jurisdiction: State, Country or City for example. 
-
-Different tax components may have different treatment from an accounting, tax reporting, tax settlement and other perspectives.
-
-
-
-### Tax Calculation
-
-
-
-#### Measures
+### Measures
 
 Measures are the computation blocks for tax calculation. Measures can be of different types (Measure types) which have different behavior and are used for different computational purposes. 
 
@@ -93,81 +62,58 @@ The below Measure Types are available:
 
 #### Formulas
 
-Once the measures, (computation building blocks for tax calculation) have been defined these can be used to author the tax calculation formulae. The formulae can be authored in two notations:
+Once the measures have been defined, you can use them to write the tax calculation formula. You can write the formula in two notations:
 
-
-
-+	Simple Assignment Notation: for normal scenarios.
-
-+	Advanced Linear Equations: specifically, for price inclusive tax calculation scenarios, like M.R.P.
-
-
+-	Simple Assignment Notation: for normal scenarios.
+-	Advanced Linear Equations: specifically, for price inclusive tax calculation scenarios, like M.R.P.
 
 Additionally, formulas may need to be used conditionally in which case the user should add appropriate business conditions.
 
+#### Key Model Attributes that should be assigned for Calculation
 
-
-### Key Model Attributes that should be assigned for Calculation
-
-The following table lists reserved keywords for attributes. When you create a new taxable document model, 
-
-ensure that the model’s attributes are defined as specified in the following table.
+The following table lists keywords that are reserved for attributes. When you create a new taxable document model, ensure that the model’s attributes are defined as specified in the following table.
 
 | Attribute Name               | Data Type |
-
 |------------------------------|-----------|
-
 | Base Amount                  | Real      |
-
 | Price includes tax           | Real      |
-
 | Tax amount included in price | Real      |
-
 | Line tax amount              | Real      |
-
-
 
 These attributes are available in the Taxable Document (India) model provided by Microsoft.
 
-+ Base Amount: This attribute is an output attribute, and it is used as base amount for tax calculation.
-
-+ Price includes tax: This attribute is more like a flag which tell the engine that the tax amount is included in the line amount.
-
-+ Tax amount included in price: The tax amount that should be considered as included in price as per the business practice or statutory laws. The engine uses this value to determine the invoice line amount and the amount that should be considered during accounting.
-
-+ Line tax amount: The tax amount computed for the line. This value would remain the same across the price exclusive and price inclusive scenarios. Withholding tax amounts should not be considered while initializing this attribute, normally.
-
-
+- Base Amount: This attribute is an output attribute, and it is used as base amount for tax calculation.
+- Price includes tax: This attribute is more like a flag which tell the engine that the tax amount is included in the line amount.
+- Tax amount included in price: The tax amount that should be considered as included in price as per the business practice or statutory laws. The engine uses this value to determine the invoice line amount and the amount that should be considered during accounting.
+- Line tax amount: The tax amount computed for the line. This value would remain the same across the price exclusive and price inclusive scenarios. Withholding tax amounts should not be considered while initializing this attribute, normally.
 
 These should be initialized and used in the below manner in the tax document configuration:
 
-#### Price Inclusive Scenario:
+##### Price inclusive scenario:
 
 EXAMPLE:
 
-`'Base Amount' = 'Assessable Value' - CGST.'Tax Amount' - 'SGST'.'Tax Amount' - 'IGST'.'Tax Amount' - CESS.'Tax Amount' - CGST_TDS.'Tax Amount' - SGST_TDS.'Tax Amount' - IGST_TDS.'Tax Amount' - CESS_TDS.'Tax Amount'
+>'Base Amount' = 'Assessable Value' - CGST.'Tax Amount' - 'SGST'.'Tax Amount' - 'IGST'.'Tax Amount' - CESS.'Tax Amount' - CGST_TDS.'Tax Amount' - SGST_TDS.'Tax Amount' - IGST_TDS.'Tax Amount' - CESS_TDS.'Tax Amount'
+>
+>'Price includes tax' = 1.0
+>
+>'Line tax amount' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'
+>
+>'Tax amount included in price' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'
 
-'Price includes tax' = 1.0
+##### Price exclusive scenario:
 
-'Line tax amount' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'
-
-'Tax amount included in price' = CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'`
-
-#### Price Exclusive Scenario:
-
->`'Base Amount'='Assessable Value'
+>'Base Amount'='Assessable Value'
 >
 >'Price includes tax' = 0.0
 >
->'Line tax amount'=CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount'+BCD.'Tax Amount' + 'ECESS C'.'Tax Amount' + 'SHECESS >C'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'`
+>'Line tax amount'=CGST.'Tax Amount' + 'SGST'.'Tax Amount' + 'IGST'.'Tax Amount'+BCD.'Tax Amount' + 'ECESS C'.'Tax Amount' + 'SHECESS C'.'Tax Amount' + 'CESS'.'Tax Amount' + CGST_TDS.'Tax Amount' + SGST_TDS.'Tax Amount' + IGST_TDS.'Tax Amount' + CESS_TDS.'Tax Amount'
 
 The ‘Tax amount included in price’ is initialized to zero implicitly by the engine for the price exclusive scenario and therefore the equation need not be written explicitly.
 
+### Tax accounting
 
-
-### Tax Accounting
-
-#### Tax Accounting Provider
+#### Tax accounting provider
 
 It is the sub-ledger which will be impacted for the tax accounting scenario. For example, in the purchase flow if tax must be paid to the vendor as part of the vendor invoice the tax accounting provider will be Party/Vendor. This list will depend on the underlying ERP system. From an AX perspective, these are the providers which are currently supported:
 
@@ -176,7 +122,7 @@ It is the sub-ledger which will be impacted for the tax accounting scenario. For
 -	Tax
 -	Ledger
 
-#### Posting Types
+#### Posting types
 
 When the Tax sub-ledger is impacted as part of the tax accounting process, the tax amount needs to be distrusted further for settlement, reporting, costing and similar purposes. This list could also vary based on the country specific regulations based on tax types. For India, below is a list of posting types that is supported:
 
@@ -191,7 +137,7 @@ When the Tax sub-ledger is impacted as part of the tax accounting process, the t
 
 When configured as above, the tax recoverable and payable amount will be accumulated on each of the Tax credit pool. 
 
-### Set off rule
+#### Set off rule
 
 Set-off rule indicates how the tax recoverable should be utilized to set-off tax payable. Details setup are as below for Indian GST: 
 
