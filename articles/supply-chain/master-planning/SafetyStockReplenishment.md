@@ -54,7 +54,7 @@ If **Minimum keys** are used, select **Minimum periods** check box to fulfill th
 
 
 
-# How master planning is handling the safety stock constraint
+# The way master planning is handling the safety stock constraint
 
 Safety stock is tracked in the system as a requirement type. You can see it in the **Net requirements** form, if you remove the default filter on the **Requirement type** column.
 
