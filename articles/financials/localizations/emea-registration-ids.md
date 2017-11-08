@@ -102,11 +102,11 @@ The following table lists the supported registration types in Finance and Opera
 | OGRN                                                          | Russian Federation| OGRN (Legislative type OGRN in AX 2012 R3) |
 | SNILS                                                         | Russian Federation| SNILS (Legislative type SNILS in AX 2012 R3)|
 | CIFTS                                                         | Russian Federation| CIFTS (Legislative type CIFTS in AX 2012 R3)|
-| Passport                                                      | Spain             | Legislative type|
-| Official identification document                              | Spain             | Legislative type|
-| Residence certificate                                         | Spain             | Legislative type|
-| Other identification document                                 | Spain             | Legislative type|
-| Not censused                                                  | Spain             | Legislative type|
+| Passport                                                      | Spain             | Passport|
+| Official identification document                              | Spain             | Official identification document|
+| Residence certificate                                         | Spain             | Residence certificate|
+| Other identification document                                 | Spain             | Other identification document|
+| Not censused                                                  | Spain             | Not available in AX 2012 R3|
 
 
 For more information about registration IDs processing, including required prerequisites, see the following task recordings for VAT ID in Lifecycle Services (LCS):
