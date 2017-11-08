@@ -6480,7 +6480,7 @@ Note: This system class represents MenuItem nodes in the AOT. This class enables
 | public int objectType(\[int value\])                                                                    |                                                                                                                                           |
 | public int openMode(\[int value\])                                                                      |                                                                                                                                           |
 | public Guid origin(\[Guid value\])                                                                      |                                                                                                                                           |
-| public str parameters(\[str value\])                                                                    | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                    |
+| public str parameters(\[str value\])                                                                    | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                    |
 | public str query(\[str value\])                                                                         |                                                                                                                                           |
 | public int readPermissions(\[int value\])                                                               |                                                                                                                                           |
 | public str reportDesign(\[str value\])                                                                  |                                                                                                                                           |
@@ -6757,7 +6757,7 @@ An xArgs class object as would be passed to the run() method; optional.
 
 #### Return Value
 
-true if neccessary permissions exist to successfully call run().
+true if necessary permissions exist to successfully call run().
 
 #### Remarks
 
@@ -6779,7 +6779,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method imageLocation
 
@@ -6807,7 +6807,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method linkedPermissionObject
 
@@ -6969,7 +6969,7 @@ value
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -8388,7 +8388,7 @@ The value of a field.
 
 #### Remarks
 
-The arrayIndex parameter only applies to array fields. Either omit this parameter or specify 0 (zero) for fields that are not arrays.This method throws an ArgumentOutOfRange exception if the specified field is unknown.
+The arrayIndex parameter only applies to array fields. Either omit this parameter or specify 0 (zero) for fields that are not arrays. This method throws an ArgumentOutOfRange exception if the specified field is unknown.
 
 ### Method getInstanceRelationType
 
@@ -8543,7 +8543,7 @@ fieldId
 
 #### Return Value
 
-true if field is has a Set or Defaulted state; otherwise, false.
+true if field has a Set or Defaulted state; otherwise, false.
 
 ### Method isFormDataSource
 
@@ -9387,7 +9387,7 @@ The array index of the field; optional.
 
 #### Remarks
 
-The arrayIndex parameter applies only to array fields. Either omit this parameter or specify0 (zero) for fields that are not arrays.This method throws an ArgumentOutOfRange exception if the specified field is unknown or a TypeMismatch exception if the value parameter is incompatible with the specified field..
+The arrayIndex parameter applies only to array fields. Either omit this parameter or specify0 (zero) for fields that are not arrays. This method throws an ArgumentOutOfRange exception if the specified field is unknown or a TypeMismatch exception if the value parameter is incompatible with the specified field..
 
 ### Method doInsert
 
