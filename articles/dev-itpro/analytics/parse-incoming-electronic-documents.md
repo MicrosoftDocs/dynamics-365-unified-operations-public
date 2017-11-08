@@ -3,7 +3,7 @@
 
 title: Parse incoming documents to update application data
 description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents and then apply selected content to update application data. 
-author: nselin
+author: nickselin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
