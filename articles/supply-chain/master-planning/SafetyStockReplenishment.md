@@ -37,6 +37,7 @@ For items with demand patterns that follow a certain periodicity, you may need t
 The **Fulfill minimum** parameter allows you to select the date or the period during which the inventory level must meet the quantity that you specified in the **Minimum** field. This field is available when you select **Period**, **Requirement**, or **Min./Max.** in the **Coverage code** list.
 
 The following options are available:
+- **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
 - **Today's date**: The specified minimum quantity is met on the date that master planning is run.
 - **Today's date + procurement time**: The specified minimum quantity is met on the date that master planning is run, plus the
 purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected in the **Master planning parameters** form, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
@@ -44,9 +45,9 @@ purchase or production lead time. This time includes any safety margins. If the 
 
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqFirstIssue.png)
 
-> [!NOTE] The difference between these three fulfill minimum modes is related to the available inventory on the date master planning is run. If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. So, for the case described in the image above, all three fulfillment modes would provide the same results.
+> [!NOTE] If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. So, for the case described in the image above, **Today's date** and **First issue** will provide exactly the same result. **Today's date + procurement time** will provide the following results:
 
-- **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
+
 
 If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
