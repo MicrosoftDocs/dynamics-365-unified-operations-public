@@ -8,7 +8,7 @@ You must define all other coverage planned dimensions before you can define this
 
 You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level of an item in the off season, and then gradually increase the level in the following months. You create a minimum key by going to **Master planning - Setup - Coverage - Minimum/maximum keys**. You specify the minimum key that adjusts the safety stock level by seasonality in the **Minimum key** field on the **Item coverage** form.
 
-### Example: Minimum key
+#### Example: Minimum key
 If, for example, you want to set up a minimum key that accounts for increased seasonal demand during the spring and summer months, go to **Master planning - Setup - Coverage - Minimum/maximum keys** and follow these steps.
 1. Create 12 lines, and number the lines from 1 to 12 in the **Change field**.
 2. In the **Unit** field, select **Months**.
@@ -23,7 +23,7 @@ If, for example, you want to set up a minimum key that accounts for increased se
 
 If coverage code is **Min./Max.**, you can also specify the **Maximum** inventory quantity that you want to maintain for the item. The value is also expressed in inventory units. If the projected available inventory falls below the minimum quantity, master planning generates a planned order to fulfill all open requirements and also bring the available inventory up to the specified maximum quantity.
 
-### Min./Max. coverage code example
+#### Example: Min./Max. coverage code
 The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11.
 
 Just like for **Minimum**, you must define all other coverage planned dimensions before you can define the **Maximum** field.
