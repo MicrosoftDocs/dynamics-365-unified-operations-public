@@ -60,11 +60,14 @@ The specified minimum quantity is met on the date the available inventory goes b
 ![Planning an item with **Period** coverage code and **First issue** fulfillment](./media/FirstIssuePeriod.png)
 ![Planning an item with **MinMax** coverage code and **First issue** fulfillment](./media/FirstIssueMinMax.png)
 
-> [!NOTE] If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. 
-If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result. **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time:
+If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. 
 
+If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result.
+![NotUnderLimit](./media/ReqFirstIssue.png)
+**Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time:
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqTodayLT.png)
-- **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
+
+### **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
 
 If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
