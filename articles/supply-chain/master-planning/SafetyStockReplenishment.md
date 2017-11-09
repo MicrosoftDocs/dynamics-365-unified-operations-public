@@ -70,7 +70,7 @@ If on the date master planning is run the available inventory is not under the s
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqTodayLT.png)
 
 ### **Coverage time fence**
-The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
+The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field. This option used to be useful when master planning would not allow available inventory to be used for real orders (sales, transfers, etc), in the attempt to maintain the safety level at all times. However, with the new way that master planning is working, this mode of replenishment is not needed any longer and it will be deprecated in the future.
 
 
 
