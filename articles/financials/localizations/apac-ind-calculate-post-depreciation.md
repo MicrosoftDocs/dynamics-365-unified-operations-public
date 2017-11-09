@@ -1,12 +1,39 @@
-*gls\_topic-not-updated-for-ax62*
+---
+# required metadata
+
+title: Calculate post depreciation | Microsoft Docs
+description: 
+author: ShylaThompson
+manager: AnnBe
+ms.date: 11/09/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: shylaw
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom:
+ms.search.region: India
+# ms.search.scope: 
+# ms.search.industry: 
+ms.author: shylaw
+# ms.dyn365.ops.version: 
+# ms.search.validFrom:
+---
 
 You can calculate depreciation for a fixed asset group based on the number of
 days defined in the **Asset group depreciation threshold** field in the
 **General ledger parameters** form. The following table shows the various
 formulas that are used to calculate asset group depreciation.
 
-| Type of proposal   | Number of days the asset is used                                                                     | Formula                                                                                                                                                                      |
-|--------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type of proposal   | Number of days the asset is used   | Formula    |
+|--------------------|-----------|----------------------------|
 | Depreciation       | Equal to or more than the number of days defined in the **Asset group depreciation threshold** field | (Net book value of the fixed asset group on the date of depreciation) \* (Rate of depreciation defined for the depreciation profile)                                         |
 | Depreciation       | Fewer than the number of days defined in the **Asset group depreciation threshold** field            | (Net book value of the fixed asset) \* (Depreciation threshold percentage defined in parameters) \* (Rate of depreciation defined for the depreciation profile)              |
 | Bonus depreciation | Equal to or more than the number of days defined in the **Asset group depreciation threshold** field | (Cost of acquisition) \* (Rate of depreciation defined in the depreciation profile)                                                                                          |
