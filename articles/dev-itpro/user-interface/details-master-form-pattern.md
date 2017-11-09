@@ -2,7 +2,7 @@
 # required metadata
 
 title: Details Master form pattern
-description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
+description: This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
+This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 
 Usage
 -----
 
-A details form is the primary method for entering data. These forms lets the user view, edit, and act upon data. All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time. The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar. Two patterns are described in this document:
+A details form is the primary method for entering data. These forms let the user view, edit, and act upon data. All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time. The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar. Two patterns are described in this document:
 
 -   **Detail Master** – This is the basic Detail Master pattern. This is the pattern that you should use by default.
 -   **Detail Master w/ Tabs** – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.
@@ -194,7 +194,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"
     -   A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.
     -   The page title should be in a plural form.
--   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md)document.
+-   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 -   **Navigation list grid:**
     -   The list style grid should not have fields within a grid row that cause the row to span more than three lines.
         -   Typically, just the ID and Description are sufficient.
