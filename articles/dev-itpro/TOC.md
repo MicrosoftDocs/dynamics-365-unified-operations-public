@@ -470,6 +470,7 @@
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
 ## [Maintenance mode](sysadmin/maintenance-mode.md)
+## [Pre-configured system accounts](sysadmin/pre-configured-system-accounts.md)
 ## [Role-based security](sysadmin/role-based-security.md)
 ### [Security architecture](sysadmin/security-architecture.md)
 ### [Security reports](sysadmin/security-reports.md)
