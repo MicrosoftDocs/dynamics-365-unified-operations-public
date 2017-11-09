@@ -34,12 +34,21 @@ For items with demand patterns that follow a certain seasonality, you may need t
 
 The **Fulfill minimum** parameter allows you to select the date or the period during which the inventory level must meet the quantity that you specified in the **Minimum** field. This field is available when you select **Period**, **Requirement**, or **Min./Max.** in the **Coverage code** list.
 
-The following scenario will be used in order to exemplify how this parameter works and what are the differences in between its values:
+The following scenario will be used in order to exemplify how this parameter works and what are the differences between its values:
 ![Common scenario](./media/Scenario1.png)
 
 The following options are available:
 ### **Today's date** 
 The specified minimum quantity is met on the date that master planning is run.
+
+![Requirement. Today's date](./media/TodayReq.png)
+
+Planned order P1 is created for today's date, to bring the available inventory above safety stock already on this date. The other planned orders respond to safety stock fulfillment due to the sales orders that are taking the available inventory lower and lower.
+
+With **Requirement** coverage code a lot of planned orders are created. It is always a good idea to either use **Period** or **Min./Max.** coverage for materials, in order to bundle the replenishment, as you can see in the following examples.
+
+![Period. Today's date](./media/TodayPeriod.png)
+
 ### **Today's date + procurement time** 
 The specified minimum quantity is met on the date that master planning is run, plus the purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected in the **Master planning parameters** form, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
 ### **First issue** 
