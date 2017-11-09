@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-audience: IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 # ms.suite: 
