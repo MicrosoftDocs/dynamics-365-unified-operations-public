@@ -35,9 +35,11 @@ ms.dyn365.ops.version: AX 7.3.0
 You can set up Electronic reporting (ER) formats that can parse incoming electronic .csv documents and then use the content for application data updates.
 
 When you configure a new ER format to parse incoming .csv files, you can use the new format to:
+
 - Add a new sequence element that specifies each line in the file must be considered as a separated record.
-  - 
+  
 - Add sequence elements as nested items that split the incoming file by lines to specify that each line in the file must be considered as a set of fields.
+  - In the **Custom delimiter** field, specify the character that will be recognized as the field separator in the parsing line. You can define multiple field separators for different sequence elements in order to parse specific lines. Note that you can leave the **Custom delimiter** field blank for a certain sequence element. This would mean that any line that is parsed using this sequence will be parsed like a .txt file line. 
 
 - Add sequence elements as nested items that parse each line of the incoming file. To these nested items, add the required elements of TEXT ER data type (String, DateTime, Numeric) to describe the structure of the parsing line as the set of individual fields of different data types
 
