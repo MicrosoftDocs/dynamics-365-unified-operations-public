@@ -77,7 +77,7 @@ An AOT deployable package is a package that contains customizations and extensio
 
     - To specify the VM name, follow these steps:
 
-        1. In Windows Explorer, right-click **This PC**, and then select **Properties**.
+        1. In File Explorer, right-click **This PC**, and then select **Properties**.
         2. In the system properties, find and make a note of the computer name (for example, **AOS-950ed2c3e7b**).
         3. In the DefaultTopologyData.xml file, replace the machine name with the computer name that you found in the previous step.
 
@@ -198,12 +198,13 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
     [![Example of completed steps in a runbook](./media/image013-1024x978.png)](./media/image013.png)
 
-## Troubleshooting
+## Backup the runbook file
 - After all the steps in the runbook are completed and you've exported the runbook, save the file outside the computer for future reference. For example, you might have to use the runbook file in these situations:
 
     - You must analyze the downtime requirements for production, and so on.
     - You must send the file to Microsoft because a deployable package can't be installed.
 
+## Troubleshooting
 - If any step in the runbook fails, you can rerun it by running the following command.
 
     ```
