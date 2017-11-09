@@ -303,6 +303,6 @@ Values for these supported payment specifications are used as payment specificat
 <tr class="odd">
 <td>Secure global address book</td>
 <td>The ability to help secure the global address book by legal entity and address book hasn't yet been implemented. This feature will be available in a future update.</td>
-<td>Not implemented</td></tr>
+<td>Implemented in Microsoft Dynamics 365 for Finance and Operations, 7.3 (December 2017)</td></tr>
 </tbody>
 </table>
