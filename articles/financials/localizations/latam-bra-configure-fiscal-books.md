@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: 
+ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 

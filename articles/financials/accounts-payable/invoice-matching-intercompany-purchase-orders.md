@@ -5,7 +5,7 @@ title: Invoice matching and intercompany purchase orders
 description: The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
@@ -56,7 +56,7 @@ The net amounts for the intercompany vendor invoice and the intercompany custome
 2.  In Fabrikam Sales, register that the items have been received, and post a packing slip. The status of ICSO888 changes to Delivered. The status of ICPO222 changes to Received.
 3.  In Fabrikam Sales, perform an invoice update for ICSO888. The unit price is 0.45, and 100 items are updated.
 4.  In Fabrikam Purchase, create an invoice for ICPO222. You accidentally change the net price from 45.00 to 54.00. An icon is displayed to indicate that the price exceeds the allowable price tolerance of 2 percent.
-5.  On the Invoice matching details page, select the option to approve posting with matching discrepancies. On the Vendor invoice page, click OK.If the vendor invoice was not an intercompany vendor invoice, posting would be successful. However, because you are working with an intercompany vendor invoice, posting is unsuccessful. For intercompany trade, the invoice totals on the intercompany sales order must equal the invoice totals on the corresponding intercompany purchase order. To resolve this issue, you must correct the net price on the invoice by changing the net price back to the default amount, 45.00.
+5.  On the Invoice matching details page, select the option to approve posting with matching discrepancies. On the Vendor invoice page, click OK. If the vendor invoice was not an intercompany vendor invoice, posting would be successful. However, because you are working with an intercompany vendor invoice, posting is unsuccessful. For intercompany trade, the invoice totals on the intercompany sales order must equal the invoice totals on the corresponding intercompany purchase order. To resolve this issue, you must correct the net price on the invoice by changing the net price back to the default amount, 45.00.
 
 ## Example: Quantity matching with intercompany trade
 The quantities on the intercompany purchase order and the intercompany sales order must be equal. This requirement overrides any invoice matching approvals that apply. This example uses the following additional setup for intercompany trade:

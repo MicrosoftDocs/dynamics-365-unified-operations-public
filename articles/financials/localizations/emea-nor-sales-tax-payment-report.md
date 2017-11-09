@@ -18,7 +18,7 @@ manager: annbe
 audience: Application User
 # ms.devlang: [Development language for the topic]
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: [Target platform (for example, ios or android).]
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Norway

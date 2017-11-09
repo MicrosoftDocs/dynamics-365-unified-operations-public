@@ -5,7 +5,7 @@ title: F Classes - FormChangeTracker to FormControlEventArgs
 description: API reference for classes from FormChangeTracker to FormControlEventArgs.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63793
 ms.assetid: 9e05d1b3-530a-4f87-a8f0-197ad35616ef
@@ -81,7 +81,7 @@ propertyName
 | public boolean allowSysSetup()                                                                              | Retrieves a value that indicates whether the control is shown in the SysSetup form.                                                                                     |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int cacheDataMethod(\[int value\])                                                                   |                                                                                                                                                                         |
 | public container calcControlSize(int chars, int lines)                                                      | Retrieves the size of the control.                                                                                                                                      |
@@ -311,7 +311,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -417,7 +417,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -810,7 +810,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -914,7 +914,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -2849,7 +2849,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -3857,7 +3857,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines the text that is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines the text that is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 #### Examples
 
@@ -5874,7 +5874,7 @@ lines
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public boolean autoRefreshData(\[boolean value\])                                                           |                                                                                                                                                                         |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public boolean big(\[boolean value\])                                                                       |                                                                                                                                                                         |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
@@ -6110,7 +6110,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -6227,7 +6227,7 @@ An integer between zero and five, inclusive.
 
 #### Remarks
 
-The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed.The integer value that is returned contains the appearace of the button control as follows:
+The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed. The integer value that is returned contains the appearance of the button control as follows:
 
 | Value. | Description.                                                     |
 |--------|------------------------------------------------------------------|
@@ -6308,7 +6308,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -6805,7 +6805,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -6834,7 +6834,7 @@ The handle for the control.
 
 #### Remarks
 
-The handle can be used with the WindowsAPI.
+The handle can be used with the Windows API.
 
 ### Method imageLocation
 

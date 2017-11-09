@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21861
 ms.assetid: 45699dd5-5e95-484b-8eb9-7bf32a4cf487
@@ -54,6 +54,7 @@ You can find known issues in Finance and Operations by using the Issue search to
 
 | Release                                                               | Version           | Build number    | Availability  | Search for this text |
 |-----------------------------------------------------------------------|-------------------|-----------------|---------------|----------------------|
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Platform update 11 |  7.0.4679.35176 | October 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (September 2017) |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Platform update 10 |  7.0.4641.16233 | August 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10 (August 2017) |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Platform update 9 |  7.0.4612.35162 | July 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017) |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | Platform update 8 |  7.0.4565.16212 | June 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017) |

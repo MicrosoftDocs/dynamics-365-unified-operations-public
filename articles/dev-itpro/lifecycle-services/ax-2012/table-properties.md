@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18141
 ms.assetid: 1ad8b7e9-80b3-44a3-b57d-7e9fc88db038
@@ -186,12 +186,12 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="even">
 <td><strong><span class="ui">ModifiedDateTime</span></strong></td>
-<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDate</span></strong> field for the records in a table. This field records the date of the last modification of a record.</td>
+<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDateTime</span></strong> field for the records in a table. This field records the date of the last modification of a record.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">ModifiedTime</span></strong></td>
-<td>Indicates whether the system maintains the <strong><span class="code">ModifiedDateTime</span></strong> field for the records in a table. This field records the date and time when a record was last modified.</td>
+<td>Indicates whether the system maintains the <strong><span class="code">ModifiedTime</span></strong> field for the records in a table. This field records the time when a record was last modified.</td>
 <td></td>
 </tr>
 <tr class="even">

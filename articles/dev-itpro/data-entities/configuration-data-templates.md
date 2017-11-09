@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Platform update 7
 
 ---
 # Configuration data templates
+
+[!include[banner](../includes/banner.md)]
+
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 > [!IMPORTANT]

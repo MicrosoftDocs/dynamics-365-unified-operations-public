@@ -17,7 +17,7 @@ ms.search.form: TaxGroup, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1696023
 ms.search.region: Czech Republic

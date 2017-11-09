@@ -5,7 +5,7 @@ title: Balanced journals for interunit accounting
 description: This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 
-If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal. These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account. For example, Branch, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.
+If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal. These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account. For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.
 
 |                      |           |
 |----------------------|-----------|
@@ -47,8 +47,8 @@ If account entries don't balance at the level of the financial dimension values,
 
 In this case, the following balances are determined:
 
--   For Branch MSP = 100.00 CR
--   For Branch NY = 100.00 DR
+-   For Business Unit MSP = 100.00 CR
+-   For Business Unit NY = 100.00 DR
 
 Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.
 

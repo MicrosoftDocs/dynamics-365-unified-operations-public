@@ -73,7 +73,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 <h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Inventory management</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Master planning</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Product information management</a></p>
@@ -101,8 +101,9 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="get-started/demo-data.md">Demo data</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="../dev-itpro/deployment/deploy-demo-environment.md">Deployment and servicing</a></p>
+<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
 <p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></p>

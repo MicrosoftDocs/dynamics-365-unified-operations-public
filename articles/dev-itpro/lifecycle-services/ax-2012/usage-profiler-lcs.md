@@ -2,10 +2,10 @@
 # required metadata
 
 title: Usage profiler 
-description: 
+description: This topic provides information about the data that is collected by the Usage profiler. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18751
 ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5

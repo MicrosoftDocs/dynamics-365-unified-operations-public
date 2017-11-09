@@ -3,7 +3,7 @@
 
 title: Import postal codes for Japan
 description: This topic explains how to import postal codes for Japan.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 05/29/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Japan

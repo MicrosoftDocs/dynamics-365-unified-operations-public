@@ -2,10 +2,10 @@
 # required metadata
 
 title: Analytics, aggregate measurements, and KPI modeling
-description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+description: This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24491
 ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 
 Embedded business intelligence
 ------------------------------
@@ -71,16 +71,16 @@ An aggregate measurement is a model that contains a collection of measures toget
 By using the model-driven approach, you can create data entities by directly referencing aggregate measurements and aggregate dimensions. These are known as aggregate data entities. Aggregate data entities are read-only data entities that are used for reporting purposes. To consume aggregate data when you build charts and other client controls, add the aggregate data to a form as a data source. You can also consume aggregate data entities programmatically in C\# or X++ code.
 
 ## Aggregate programming model
-The Aggregate programming model lets a developer consume aggregate data programmatically by using either X++ or C\# code. Data that you retrieve by using the Aggregate programming model can be used as a data source in forms and reports. A developer can add aggregate data that is modeled in perspectives to an **AXQuery** object. The developer can also use an existing aggregate data entity to create an query that can be extended by adding filters and additional columns that aren't present in the aggregate data entity. Bulk Move is a capability that is associated with the Aggregate programming model. When a query is run by the kernel, the developer can move all the records to a temporary or regular table without iterating row by row. Bulk Move provides a very efficient way to move data from aggregate models to temporary tables.
+The Aggregate programming model lets a developer consume aggregate data programmatically by using either X++ or C\# code. Data that you retrieve by using the Aggregate programming model can be used as a data source in forms and reports. A developer can add aggregate data that is modeled in perspectives to an **AXQuery** object. The developer can also use an existing aggregate data entity to create a query that can be extended by adding filters and additional columns that aren't present in the aggregate data entity. Bulk Move is a capability that is associated with the Aggregate programming model. When a query is run by the kernel, the developer can move all the records to a temporary or regular table without iterating row by row. Bulk Move provides a very efficient way to move data from aggregate models to temporary tables.
 
 ## Method expressions
 Method expressions are a programming model for constructing rich calculations that are used to define fields in a data entity. Method expressions enhance the computed column capability that was introduced in AX 2012 views. Method expressions let you build expressions by using the C\# or X++ programming language. You can also create calculations on aggregate data that was previously coded by using MDX. Method expressions can be shared across the program.
 
-## Inmemory, nearrealtime aggregate measurements
+## In-memory, near-real-time aggregate measurements
 In Finance and Operations, aggregate measurements are deployed to Microsoft SQL Server non-clustered column store indexes (NCCI). Therefore, they can take advantage of the in-memory computing (IMC) engine that is built into Microsoft SQL Server 2016 as Azure DB. Aggregate measurements that have the IMC engine as their destination are referred to as in-memory, near-real-time (IM-NRT) aggregate measurements. These aggregate measurements don't require that a Microsoft SQL Server Analysis Services (SSAS) server be used. Because these models don't involve data updates, the queries that are sent to them reflect the latest state of data in the operational database. That is why it's referred to as near-real-time.
 
 ## KPI modeling and customization
-In AX 2012 and earlier versions, KPIs and business indicators had to be modeled by using native SQL Server development tools. Although users could pin a KPI or business indicator to a Role Center by using the **Business Overview** Web Part, they could not modify a KPI definition, such as the goal. In Dynamics AX, users can use a rich client form to modify a KPI definition that was built and shipped by a developer. Users can also define new KPIs by using the aggregate data that is contained in aggregate measurements. A developer can model a KPI definition in Microsoft Visual Studio and ship it to a customer, either as a project or together with an independent software vendor (ISV) solution. After a KPI is defined, users can customize it at run time.
+In AX 2012 and earlier versions, KPIs and business indicators had to be modeled by using native SQL Server development tools. Although users could pin a KPI or business indicator to a Role Center by using the **Business Overview** Web Part, they could not modify a KPI definition, such as the goal. In Finance and Operations, users can use a rich client form to modify a KPI definition that was built and shipped by a developer. Users can also define new KPIs by using the aggregate data that is contained in aggregate measurements. A developer can model a KPI definition in Microsoft Visual Studio and ship it to a customer, either as a project or together with an independent software vendor (ISV) solution. After a KPI is defined, users can customize it at run time.
 
 
 

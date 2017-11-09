@@ -5,7 +5,7 @@ title: F Classes - FormBuildButtonControl to FormBuildFastTabSummarySeparator
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58741
 ms.assetid: 9af62525-aa36-4d6f-b138-c9002a4b21e2
@@ -1257,7 +1257,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrangeWhen(\[int value\])                                                                       |                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                     |
 | public int bottomMargin(\[int value\], \[AutoMode mode\])                                                   |                                                                                                                                         |
 | public AutoMode bottomMarginMode(\[AutoMode mode\])                                                         |                                                                                                                                         |
@@ -1472,7 +1472,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -2435,7 +2435,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -3063,7 +3063,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -3344,7 +3344,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -3535,7 +3535,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -4206,7 +4206,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                               |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                            |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                             |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                                   |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                      |
 | public int cacheDataMethod(\[int value\])                                                                   |                                                                                                                                               |
@@ -4390,7 +4390,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -4503,20 +4503,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -4545,7 +4545,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method comboType
@@ -4986,7 +4986,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -5543,7 +5543,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                      |
 | public boolean autoRefreshData(\[boolean value\])                                                           |                                                                                                                                         |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                          |
 | public boolean big(\[boolean value\])                                                                       |                                                                                                                                         |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                     |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                |
@@ -5715,7 +5715,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -5808,12 +5808,12 @@ An integer between zero and five, inclusive.
 
 #### Remarks
 
-The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed.The integer value that is returned contains the appearace of the button control as follows:
+The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed. The integer value that is returned contains the appearance of the button control as follows.
 
 | Value. | Description.                                                     |
 |--------|------------------------------------------------------------------|
 | 0      | Text only.                                                       |
-| 1      | Image Only.                                                      |
+| 1      | Image only.                                                      |
 | 2      | Text and image; the image is displayed below the text.           |
 | 3      | Text and image; the image is displayed above the text.           |
 | 4      | Text and image; the image is displayed to the left of the text.  |
@@ -7924,7 +7924,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public FormBuildDataSource masterDataSource()                                     |                                                                                                                           |
 | public int maxAccessRight(\[int value\])                                          |                                                                                                                           |
 | public int maxRecordsToLoad(\[int value\])                                        |                                                                                                                           |
-| public str name(\[str value\])                                                    | Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                                                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public boolean onlyFetchActive(\[boolean value\])                                 |                                                                                                                           |
 | public int optionalRecordMode(\[int value\])                                      |                                                                                                                           |
 | public int startPosition(\[int value\])                                           |                                                                                                                           |
@@ -8205,7 +8205,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -10146,20 +10146,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -10188,7 +10188,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -11647,20 +11647,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -11689,7 +11689,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method columns
@@ -12456,7 +12456,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -13074,7 +13074,7 @@ The full name of an image file. The system supports all of the GDI-supported ima
 
 #### Remarks
 
-This property has precedence over the disabledResourceproperty . It is used if both of these properties are set.
+This property has precedence over the disabledResourceproperty. It is used if both of these properties are set.
 
 ### Method disabledImageLocation
 
@@ -13851,7 +13851,7 @@ overrideObject
 | public int arrangeWhen(\[int value\])                                                                       |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                       |
 | public int bottomMargin(\[int value\], \[AutoMode mode\])                                                   |                                                                                                                                           |
 | public AutoMode bottomMarginMode(\[AutoMode mode\])                                                         |                                                                                                                                           |
@@ -14060,7 +14060,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -14530,7 +14530,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hideIfEmpty
 
@@ -15037,7 +15037,7 @@ overrideObject
 | public boolean allowEdit(\[boolean value\])                                                                 | Determines whether the user can change the contents of the control.                                                                       |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int characterSet(\[int value\])                                                                      | Gets or sets the character set of the font.                                                                                               |
 | public int colorScheme(\[int value\])                                                                       | Gets or sets the color scheme of the control.                                                                                             |
@@ -15162,7 +15162,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -15239,20 +15239,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -15422,7 +15422,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -15492,7 +15492,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -15770,7 +15770,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|

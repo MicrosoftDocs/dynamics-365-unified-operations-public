@@ -3,7 +3,7 @@
 
 title: BOM calculations groups
 description: This article provides information about calculation groups for bills of materials (BOMs) and how to set them up. To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group. The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
@@ -75,13 +75,21 @@ The **Stop explosion** check box is used to indicate when a manufactured item sh
 
 ### Warnings
 
-On the **Warnings** FastTab, you select the options for any warning messages that users should receive when they do BOM calculations. For example, if you select the **No BOM** check box, the user receives a warning if no active BOM version is found for one of the components or the parent item that the BOM calculation is run for. If you select the **No route** check box, the user receives a warning if no active route version is found. If you're using resources on your routes and operations, you can instruct the system to check for those resources. Then, if a resource isn't found on every line in the active route, the user receives a warning. You can also verify and check for consumption. Consumption is the quantity in a particular route. Typically, it represents the amount of time that is required in order to perform a specific operation for a production process. You can check whether an item has no cost price. If there is no active cost price for an item, no cost is added into the BOM calculation. You can also check and verify the age of the cost price. For example, enter **60** to indicate that the unit cost price must be reevaluated after 60 days. If this limit is reached, the system generates a warning. For example, a cost price was entered for an item in January of this year. If it's now August, which is more than 60 days after the cost price was entered, the user receives a warning when the BOM calculation is run. You can enter in a percentage in the **Minimum contribution margin** field. This value indicates the point at which the minimum contribution margin isn't being met. If the contribution margin for a particular component isn't met, the user receives a warning. Therefore, this field helps guarantee that you don't undercut the costs and the additional carrying costs that might be required for your items.
-Default setup in Inventory and warehouse management parameters
---------------------------------------------------------------
+On the **Warnings** FastTab, you select the options for any warning messages that users should receive when they do BOM calculations. 
 
-Because calculation groups are required in order to run calculations, you must set up a default calculation group in the Inventory management parameters. This setup enables companies to have a standard cost group and profit setting for all items. Then, if a particular item has special calculation requirements, the user can assign a different calculation group to that item. Typically, you can set calculation groups on BOM component items instead of BOM items. However, when warning messages are shown, calculation groups can be applied. A calculation group that is assigned to items overrides the default value that is set up in the Inventory management parameters. You can set up the default parameter at **Cost management** &gt; **Inventory accounting policies setup** &gt; **Parameters** &gt; **Inventory accounting** &gt; **Calculation group**. By setting up a default configuration group, you can also configure the warning conditions that prompt users during the BOM calculation process, if the selected components might cause calculation errors.
-View warning messages on the Complete page
-------------------------------------------
+For example, if you select the **No BOM** check box, the user receives a warning if no active BOM version is found for one of the components or the parent item that the BOM calculation is run for. If you select the **No route** check box, the user receives a warning if no active route version is found. If you're using resources on your routes and operations, you can instruct the system to check for those resources. Then, if a resource isn't found on every line in the active route, the user receives a warning. 
+
+You can also verify and check for consumption. Consumption is the quantity in a particular route. Typically, it represents the amount of time that is required in order to perform a specific operation for a production process. You can check whether an item has no cost price. If there is no active cost price for an item, no cost is added into the BOM calculation. 
+
+You can also check and verify the age of the cost price. For example, enter **60** to indicate that the unit cost price must be reevaluated after 60 days. If this limit is reached, the system generates a warning. For example, a cost price was entered for an item in January of this year. If it's now August, which is more than 60 days after the cost price was entered, the user receives a warning when the BOM calculation is run. You can enter in a percentage in the **Minimum contribution margin** field. This value indicates the point at which the minimum contribution margin isn't being met. If the contribution margin for a particular component isn't met, the user receives a warning. Therefore, this field helps guarantee that you don't undercut the costs and the additional carrying costs that might be required for your items.
+
+### Default setup in Inventory and warehouse management parameters
+
+Because calculation groups are required in order to run calculations, you must set up a default calculation group in the Inventory management parameters. This setup enables companies to have a standard cost group and profit setting for all items. Then, if a particular item has special calculation requirements, the user can assign a different calculation group to that item. Typically, you can set calculation groups on BOM component items instead of BOM items. However, when warning messages are shown, calculation groups can be applied. A calculation group that is assigned to items overrides the default value that is set up in the Inventory management parameters. 
+
+You can set up the default parameter at **Cost management** &gt; **Inventory accounting policies setup** &gt; **Parameters** &gt; **Inventory accounting** &gt; **Calculation group**. By setting up a default configuration group, you can also configure the warning conditions that prompt users during the BOM calculation process, if the selected components might cause calculation errors.
+
+### View warning messages on the Complete page
 
 A BOM calculation generates warning messages. You can view the warnings about a selected item. For example, in Sales and marketing, create a new sales order for item D0001. Then, on the sales order line, on the **Update line** menu, click **Calculate Based on BOM/Formula** to view the calculation details and warnings. You can also view BOM calculation results on the **Complete** page. For the warning messages, only two warning conditions apply to manufactured items, whereas four warning conditions apply to any item:
 -   Identify when a manufactured item doesn't have an active BOM.

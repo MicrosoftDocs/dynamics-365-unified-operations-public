@@ -54,57 +54,54 @@
 #### [X++ attribute classes](dev-ref/xpp-attribute-classes.md)
 #### [X++ and C\# comparison](dev-ref/xpp-cs-comparison.md)
 #### [X++ syntax](dev-ref/xpp-syntax.md)
-## Compile-time functions
+## [API, class, and table reference](dev-ref/api-reference.md)
 ### [X++ compile-time functions](dev-ref/xpp-compile-time-functions.md)
-## Run-time functions
-### [X++ business run-time functions](dev-ref/xpp-business-run-time-functions.md)
-### [X++ container run-time functions](dev-ref/xpp-container-run-time-functions.md)
-### [X++ conversion run-time functions](dev-ref/xpp-conversion-run-time-functions.md)
-### [X++ date run-time functions](dev-ref/xpp-date-run-time-functions.md)
-### [X++ math run-time functions](dev-ref/xpp-math-run-time-functions.md)
-### [X++ reflection run-time functions](dev-ref/xpp-reflection-run-time-functions.md)
 ### [X++ run-time functions](dev-ref/xpp-run-time-functions.md)
-### [X++ session run-time functions](dev-ref/xpp-session-run-time-functions.md)
-### [X++ string run-time functions](dev-ref/xpp-string-run-time-functions.md)
-## System tables
+#### [X++ business run-time functions](dev-ref/xpp-business-run-time-functions.md)
+#### [X++ container run-time functions](dev-ref/xpp-container-run-time-functions.md)
+#### [X++ conversion run-time functions](dev-ref/xpp-conversion-run-time-functions.md)
+#### [X++ date run-time functions](dev-ref/xpp-date-run-time-functions.md)
+#### [X++ math run-time functions](dev-ref/xpp-math-run-time-functions.md)
+#### [X++ reflection run-time functions](dev-ref/xpp-reflection-run-time-functions.md)
+#### [X++ session run-time functions](dev-ref/xpp-session-run-time-functions.md)
+#### [X++ string run-time functions](dev-ref/xpp-string-run-time-functions.md)
 ### [System tables](dev-ref/system-tables.md)
-## System classes
-### [API, class, and table reference](dev-ref/api-reference.md)
-### [A Classes](dev-ref/a-classes.md)
-### [B Classes](dev-ref/b-classes.md)
-### [C Classes](dev-ref/c-classes.md)
-### [D Classes](dev-ref/d-classes.md)
-### [E Classes](dev-ref/e-classes.md)
-### [F Classes: FieldBinding to FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F Classes: FormChangeTracker to FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F Classes: FormDataObject to FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F Classes: FormFastTabSummarySeparator to FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F Classes: FormGroupControl to FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F Classes: FormListBoxControl to FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F Classes: FormObject to FormRealControl](dev-ref/formobject-classes.md)
-### [F Classes: FormReferenceControl to FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F Classes: FormTabControl to FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [G Classes](dev-ref/g-classes.md)
-### [H Classes](dev-ref/h-classes.md)
-### [I Classes](dev-ref/i-classes.md)
-### [J Classes](dev-ref/j-classes.md)
-### [K Classes](dev-ref/k-classes.md)
-### [L Classes](dev-ref/l-classes.md)
-### [M Classes](dev-ref/m-classes.md)
-### [N Classes](dev-ref/n-classes.md)
-### [O Classes](dev-ref/o-classes.md)
-### [P Classes](dev-ref/p-classes.md)
-### [Q Classes](dev-ref/q-classes.md)
-### [R Classes](dev-ref/r-classes.md)
-### [S Classes](dev-ref/s-classes.md)
-### [T Classes](dev-ref/t-classes.md)
-### [U Classes](dev-ref/u-classes.md)
-### [V Classes](dev-ref/v-classes.md)
-### [W Classes](dev-ref/w-classes.md)
-### [X Classes](dev-ref/x-classes.md)
+### System classes
+#### [A Classes](dev-ref/a-classes.md)
+#### [B Classes](dev-ref/b-classes.md)
+#### [C Classes](dev-ref/c-classes.md)
+#### [D Classes](dev-ref/d-classes.md)
+#### [E Classes](dev-ref/e-classes.md)
+#### [F Classes: FieldBinding to FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F Classes: FormChangeTracker to FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F Classes: FormDataObject to FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F Classes: FormFastTabSummarySeparator to FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F Classes: FormGroupControl to FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F Classes: FormListBoxControl to FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F Classes: FormObject to FormRealControl](dev-ref/formobject-classes.md)
+#### [F Classes: FormReferenceControl to FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F Classes: FormTabControl to FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [G Classes](dev-ref/g-classes.md)
+#### [H Classes](dev-ref/h-classes.md)
+#### [I Classes](dev-ref/i-classes.md)
+#### [J Classes](dev-ref/j-classes.md)
+#### [K Classes](dev-ref/k-classes.md)
+#### [L Classes](dev-ref/l-classes.md)
+#### [M Classes](dev-ref/m-classes.md)
+#### [N Classes](dev-ref/n-classes.md)
+#### [O Classes](dev-ref/o-classes.md)
+#### [P Classes](dev-ref/p-classes.md)
+#### [Q Classes](dev-ref/q-classes.md)
+#### [R Classes](dev-ref/r-classes.md)
+#### [S Classes](dev-ref/s-classes.md)
+#### [T Classes](dev-ref/t-classes.md)
+#### [U Classes](dev-ref/u-classes.md)
+#### [V Classes](dev-ref/v-classes.md)
+#### [W Classes](dev-ref/w-classes.md)
+#### [X Classes](dev-ref/x-classes.md)
 
 ## [Extensibility home page](extensibility/extensibility-home-page.md)
 ### Introduction and getting started
@@ -140,13 +137,7 @@
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
 
-## [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
-### [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
-### [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
-### [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
-### [Version models in the automated build](dev-tools/version-models-build.md)
-
-## Performance home page
+## Performance
 ### [Take a trace using Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK and multiuser testing with Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnose problems and analyze performance issues using Trace parser](perf-test/trace-parser.md)
@@ -155,10 +146,8 @@
 ### [Testing and validations](perf-test/testing-validation.md)
 ### [Test projects in Visual Studio](perf-test/testing-support.md)
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
-## Dates
-### [Date effectivity](dev-tools/date-effectivity.md)
-## Licensing
-### [ISV licensing](dev-tools/isv-licensing.md)
+## [Date effectivity](dev-tools/date-effectivity.md)
+## [ISV licensing](dev-tools/isv-licensing.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -359,6 +348,13 @@
 #### [ValueDesign Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
+## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
+## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
+## [Version models in the automated build](dev-tools/version-models-build.md)
+
+
 # Release solutions using Lifecycle Services
 ## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
 ## [Stage and publish](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +373,7 @@
 ### [Separate localization models](lcs-solutions/separate-localization-models.md)
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Financials development
+# [Financials development](financial/financial-dev-home-page.md)
 ## [Dimensions](financial/dimensions.md)
 ## [Add dimensions to an Excel template](financial/dimensions-overview.md)
 ## [Dimension Entry control dialog support](financial/dimension-entry-control-dialog-support.md)
@@ -427,7 +421,7 @@
 ## [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [Analyze - Use the Upgrade analyzer tool to plan upgrade](migration-upgrade/upgrade-analyzer-tool.md)
 ### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](migration-upgrade/analyze-code-upgrade.md)
-### [Analyze - Deploy a sandbox enviroment](migration-upgrade/analysis-sandbox.md)
+### [Analyze - Deploy a sandbox environment](migration-upgrade/analysis-sandbox.md)
 ### [Upgrade - Data upgrade in a development environment](migration-upgrade/data-upgrade-2012.md)
 ### [Upgrade - AX 2012 data upgrade tasks](migration-upgrade/prepare-data-upgrade.md)
 ### [Upgrade - Data upgrade in a sandbox environment](migration-upgrade/upgrade-data-sandbox.md)
@@ -445,11 +439,12 @@
 #### [Migrate an upgraded sales cube to the entity store](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Upgrade budget planning](migration-upgrade/upgrade-budget-planning.md)
 
-## Code migration and upgrade
+## [Code migration and upgrade](migration-upgrade/code-migration-home-page.md)
 ### [Prepare to migrate code](migration-upgrade/prepare-migration.md)
 ### [Configure Visual Studio Team Services mapping during code migration](migration-upgrade/configure-vso-solution.md)
 ### [Split models](dev-tools/model-split.md)
 ### [Use delegates to solve dependencies between models](migration-upgrade/delegates-migration.md)
+
 
 ## Upgrade to a recent update
 ### [Process for moving to the latest update](migration-upgrade/upgrade-latest-update.md)
@@ -506,11 +501,13 @@
 ## [Create, edit, or browse a BPM library](lifecycle-services/creating-editing-browsing.md)
 ## [Complete tasks in a BPM library](lifecycle-services/complete-tasks-bpm.md)
 ## [Use activity diagrams](lifecycle-services/using-activity-diagrams.md)
-## [Synchronize a BPM libary with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Synchronize a BPM library with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
 ## [Asset library](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services features
 ### Deployment
@@ -591,6 +588,7 @@
 ## [Copy a database from SQL Server to a production Azure SQL Database environment](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Restore a database on a non-production environment](database/request-point-in-time-restore.md)
 ## [Export a copy of a database to restore later](database/copy-operations-database.md)
+## [Request a sandbox database refresh](database/database-refresh.md)
 
 # Support
 ## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)

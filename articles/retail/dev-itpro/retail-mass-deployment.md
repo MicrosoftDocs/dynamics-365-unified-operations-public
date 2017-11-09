@@ -5,7 +5,7 @@ title: Mass deployment of Retail self-service components
 description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 author: jashanno
 manager: AnnBe
-ms.date: 09/13/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,14 +29,11 @@ ms.dyn365.ops.version: Application update 3
 
 # Mass deployment of Retail self-service components
 
-[!include[banner](../includes/banner.md)]
-
-'This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
+This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
 
 ## Silent servicing
 ### Before you begin
-> [!IMPORTANT]
-> This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed.
+This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed.
 
 ### Delimiters for mass deployment
 The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to App update 3 and later.
@@ -54,7 +51,8 @@ The following table shows the delimiters that can currently be used in execution
 ### Examples of commands for silent servicing
 This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
 
-The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **/S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
+#### Silently update the current installation of Modern POS
+The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
 ```
 ModernPOSSetup_V72.exe -S
@@ -63,6 +61,7 @@ ModernPOSSetup_V72.exe -S
 > [!NOTE]
 > A configuration file is still required for Retail Store Scale Unit. However, the installer still keeps all possible values that are currently installed.
 
+#### Silently update the current installation of Retail Store Scale Unit
 The following command silently updates the current installation of Retail Store Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and installation steps. We recommend that you use this command only for testing and development purposes.
 
 ```

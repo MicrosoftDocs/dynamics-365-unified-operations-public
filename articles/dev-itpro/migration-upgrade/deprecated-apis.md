@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
@@ -730,12 +730,6 @@ Remove usage from your code.</td>
 <td>FormDataSource</td>
 <td>Method</td>
 <td>defaultMark</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>FormDataSource</td>
-<td>Method</td>
-<td>displayOption</td>
 <td></td>
 </tr>
 <tr class="odd">

@@ -5,7 +5,7 @@ title: Migrate from overlayering to extensions
 description: This topic provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
 manager: AnnBe
-ms.date: 07/17/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -121,6 +121,6 @@ Be sure to start planning the migration of your solutions early. This planning i
 
 We plan to release CTP drops regularly as VHD downloads. Those downloads will include up-to-date application code. The general idea is that you will be able to work concurrently with Microsoft toward the next release. This approach helps minimize the time lag between the date when the new release is made publicly available and the date when your solution is ready for deployment.
 
-You solution might contain intrusive customizations that aren't easily accommodated through extensions. You should consider whether the business value of these customizations outweighs the effort of building them through extensions. In some cases, partners have decided to discontinue parts of their solutions, because they found that it was impractical to rebuild those parts through extensions, and those parts weren't critical to the solutions.
+Your solution might contain intrusive customizations that aren't easily accommodated through extensions. You should consider whether the business value of these customizations outweighs the effort of building them through extensions. In some cases, partners have decided to discontinue parts of their solutions, because they found that it was impractical to rebuild those parts through extensions, and those parts weren't critical to the solutions.
 
 Some smaller fixes that you're customizing across the application might not be core for your solution, but they are important for the customers that you engage with. In these cases, you must decide whether you prefer to ask Microsoft to implement similar capabilities in the standard application. You can enter an extensibility requests for this purpose. For example, if customers want to simplify standard business processes in the system, you might suggest that we add options for disabling steps of the process in the standard application.

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Acquire assets through procurement
-description: This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
+description: This topic describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
+This topic describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 
  The following methods are available for integrating Fixed assets and Accounts payable, and you must use the same method for all fixed assets:
 -   You manually create a fixed asset before you add the fixed asset number to the line on the purchase order or vendor invoice. An acquisition transaction automatically is posted for the asset when you post the vendor invoice. This is the default method.
@@ -111,7 +111,7 @@ The following are variations for this scenario:
 -   If only a partial quantity is received, no asset acquisition is created for the first vendor invoice because of user group restrictions. The only way that an acquisition can be posted for the second vendor invoice that finishes the quantity ordered is if an acquisition transaction has already been entered for the first vendor invoice, and you are a member of the user group that can post acquisitions.
 
 
-For more informations, see [Fixed assets integration](fixed-asset-integration.md).
+For more information, see [Fixed assets integration](fixed-asset-integration.md).
 
 
 

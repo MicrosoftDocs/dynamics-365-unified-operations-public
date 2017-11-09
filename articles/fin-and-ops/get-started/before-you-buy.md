@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
