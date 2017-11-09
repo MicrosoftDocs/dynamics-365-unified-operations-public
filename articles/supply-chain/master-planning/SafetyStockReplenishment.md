@@ -67,7 +67,8 @@ If on the date master planning is run the available inventory is not under the s
 **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time:
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqTodayLT.png)
 
-### **Coverage time fence**: The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
+### **Coverage time fence**
+The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field.
 
 If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
