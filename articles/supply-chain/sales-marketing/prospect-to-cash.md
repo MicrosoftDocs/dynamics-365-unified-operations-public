@@ -59,7 +59,7 @@ To use the Prospect to cash solution, you must install the following:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with Platform update 8 (App 7.2.11792.56024 w/ Platform 7.0.4565.16212)
 
-- Two hotfixes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+- Hotfixes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
         
     -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) - This hotfix enabels support for sales order synchronization with the Data Integration feature from Sales to Finance and Operations, along with a number of other enhancements.
 
