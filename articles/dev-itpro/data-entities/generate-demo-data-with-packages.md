@@ -79,6 +79,7 @@ There are some steps that you will need to do manually before you load the data.
 2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
 3) The Ready to post scheduler must be started. This batch will post transactions automatically. Follow the steps described for Ready to Post below.
 4) You need to set up policy precedence rules. Use Procurement and sourcing, Setup, Policies, Purchasing policies and select the Parameters menu item. Click on Companies and move it to the right hand column.
+5) Prior to loading the Project Management and Accounting package, the resource capacity roll-up batch job should be run. The batch can be run from Project management and accounting, Periodic, Capacity synchronization, Synchronize resource capacity roll-ups form. Use an end date that will allow you to schedule resources well into the future. After the batch is run, then the project work breakdown structure auto generation of team functionality will be enabled.
 
 ## Loading the packages
 
