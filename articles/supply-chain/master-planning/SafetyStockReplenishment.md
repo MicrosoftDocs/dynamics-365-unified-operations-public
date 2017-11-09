@@ -39,12 +39,12 @@ The following scenario will be used in order to exemplify how this parameter wor
 
 The following options are available:
 ### **Today's date** 
-The specified minimum quantity is met on the date that master planning is run.
+The specified minimum quantity is met on the date that master planning is run. The system tries to fulfill to the safety stock limit as soon as possible, even though though it may be unrealistic, due to the lead time.
 ![Requirement. Today's date](./media/TodayReq.png)
 
 Planned order P1 is created for today's date, to bring the available inventory above safety stock already on this date. The other planned orders respond to safety stock fulfillment due to the sales orders that are taking the available inventory lower and lower.
 
-With **Requirement** coverage code a lot of planned orders are created. It is always a good idea to either use **Period** or **Min./Max.** coverage for materials, in order to bundle the replenishment, as you can see in the following examples.
+When **Requirement** coverage code is used, a lot of planned orders are created. It is always a good idea to either use **Period** or **Min./Max.** coverage for materials, in order to bundle the replenishment, as you can see in the following examples.
 ![Period. Today's date](./media/TodayPeriod.png)
 ![MinMax. Today's date](./media/TodayMinMax.png)
 
@@ -55,9 +55,10 @@ This fulfillment mode has the benefit that it will create plans with less delays
 ![MinMax. Today's date and lead time](./media/TodayPLTMinMax.png)
 
 ### **First issue** 
-The specified minimum quantity is met on the date the available inventory goes below minimum, as you can see in the image below. 
-
+The specified minimum quantity is met on the date the available inventory goes below minimum, as you can see in the image below. Even if available inventroy is below minimum on the date master planning is run, **First issue** will not attempt to cover it until the next requirement comes in.
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/FirstIssueReq.png)
+![Planning an item with **Period** coverage code and **First issue** fulfillment](./media/FirstIssuePeriod.png)
+![Planning an item with **MinMax** coverage code and **First issue** fulfillment](./media/FirstIssueMinMax.png)
 
 > [!NOTE] If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. 
 If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result. **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time:
