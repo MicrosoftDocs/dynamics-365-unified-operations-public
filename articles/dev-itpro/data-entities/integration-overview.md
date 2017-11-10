@@ -46,7 +46,7 @@ The following table lists the integration patterns available for Finance and Ope
 | Batch data API                | [Recurring integrations](recurring-integrations.md)                              |
 |                               | [Data management API](data-management-api.md)                                 |
 | Custom service                | [Services home page, Custom services](custom-services.md)                 |
-| Consume external web services | [Services home page, Consuming external web services](consume-external-web-services.md) |
+| Consume external web services | [Services home page, Consuming external web services](consume-external-web-service.md) |
 
 
 ### Synchronous vs asynchronous integration patterns
@@ -250,7 +250,7 @@ In the on-premises inventory system:
 
 ### Call external web services
 
-It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Services home: Consuming external web services](services-home-page.md#consuming-external-web-services).
+It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
 
 > [!IMPORTANT]
