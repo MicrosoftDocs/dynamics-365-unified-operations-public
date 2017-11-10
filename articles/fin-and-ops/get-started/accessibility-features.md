@@ -29,21 +29,15 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-Microsoft Dynamics 365 for Operations and Finance, Enterprise edition a
-significant set of functionality specifically designed to assist users with
-various disabilities, including those who utilize sight assist technologies such
-as Windows Narrator.
+Microsoft Dynamics 365 for Operations and Finance, Enterprise edition has a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
 
 **Windows Narrator and Keyboard only access**
 
-Each field and control has a label and description of applicable shortcuts, read
-by a screen reader.
+Each field and control has a label and description of applicable shortcuts, read by a screen reader.
 
 **A wealth of shortcuts provided for the most common actions:**
 
-Data entry and keyboard interaction is at the heart of most users daily
-interactions. To enhance your user experience, we’ve authored shortcuts to help
-you “jump” around the screen and shortcuts for specialized actions.
+Data entry and keyboard interaction is at the heart of most users daily interactions. To enhance your user experience, we’ve authored shortcuts to help you “jump” around the screen and shortcuts for specialized actions.
 
 <https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys>
 
@@ -117,20 +111,11 @@ part of the tab sequence.
 
 **Form Patterns:**
 
-Nearly 90% of Microsoft Dynamics forms are based on a small set of “form
-patterns” Each form pattern is used to convey the most common actions taken on
-that form. A form pattern ensures familiarity and ease of understanding when
-common actions, and common data are always presented in the same location on
-different forms. With a small number of form patterns, regardless of the number
-of forms in the system, the user can easily learn and use the system with
-confidence once the form pattern is recognized.
+Nearly 90% of Microsoft Dynamics forms are based on a small set of “form patterns” Each form pattern is used to convey the most common actions taken on that form. A form pattern ensures familiarity and ease of understanding when common actions, and common data are always presented in the same location on different forms. With a small number of form patterns, regardless of the number of forms in the system, the user can easily learn and use the system with confidence once the form pattern is recognized.
 
 **Responsive Layout:**
 
-Microsoft Dynamics is designed to work on different devices and form factors
-from the smallest screens with large screens with the highest resolutions. Our
-responsive layout engine allows the user to zoom in to magnification levels of
-200% (in some scenarios, greater than 200%)
+Microsoft Dynamics is designed to work on different devices and form factors from the smallest screens with large screens with the highest resolutions. Our responsive layout engine allows the user to zoom in to magnification levels of 200% (in some scenarios, greater than 200%)
 
 | [./media/image8.jpeg](./media/image8.jpeg) | [./media/image9.png](./media/image9.png) |
 |--------------------------------------------|------------------------------------------|
@@ -140,7 +125,6 @@ responsive layout engine allows the user to zoom in to magnification levels of
 
 ~   cid:image009.png\@01D35891.76984830
 
-**We provide guidance to our developers and customers on how to incorporate
-accessible thinking in their customizations**
+**We provide guidance to our developers and customers on how to incorporate accessible thinking in their customizations**
 
 <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility>
