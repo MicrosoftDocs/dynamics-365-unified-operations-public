@@ -46,8 +46,13 @@ When you configure a new ER format to parse incoming .csv files, you can use the
 To become more familiar with the details of this feature, play the task guide,  ER Create a format configuration to import data from an external csv file task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process) which shows how the incoming file in .csv format can be parsed by using ER format to update application data.
 Download the following files that are required to complete the task guide.
 
-TABLE
+| Title                                  | File name          |
+|----------------------------------------|--------------------|
+| ER format configuration                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
+| Sample of incoming file in .csv format | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
 
 If you have not yet completed the task guide, ER Create required configurations to implrt data from an external file for electronic reporting, download the following file to complete that task guide first.
 
-TABLE
+| Title                                  | File name          |
+|----------------------------------------|--------------------|
+| ER model configuration               | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
