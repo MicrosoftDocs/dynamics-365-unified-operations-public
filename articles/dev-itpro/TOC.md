@@ -410,6 +410,7 @@
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
+### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -470,6 +471,7 @@
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
 ## [Maintenance mode](sysadmin/maintenance-mode.md)
+## [Pre-configured system accounts](sysadmin/pre-configured-system-accounts.md)
 ## [Role-based security](sysadmin/role-based-security.md)
 ### [Security architecture](sysadmin/security-architecture.md)
 ### [Security reports](sysadmin/security-reports.md)
@@ -490,6 +492,7 @@
 ### [What's new](lifecycle-services/whats-new-lcs.md)
 ### [Known issues](lifecycle-services/known-issues.md)
 ## [Dynamics Lifecycle Services user guide](lifecycle-services/lcs-user-guide.md)
+## [Subscription estimator](lifecycle-services/subscription-estimator.md)
 ## [Configure security](lifecycle-services/configure-lcs-security.md)
 ## [Issue search](lifecycle-services/issue-search-lcs.md)
 ## [Configuration manager](lifecycle-services/configuration-manager-lcs.md)
@@ -505,6 +508,7 @@
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
+## [Track user log-ins](lifecycle-services/user-logins.md)
 ## [Asset library](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)

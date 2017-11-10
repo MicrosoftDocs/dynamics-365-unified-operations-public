@@ -5,7 +5,7 @@ title: Message center, message bar, and message details FAQ
 description: This topic describes the rich, powerful messaging system replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,7 +82,7 @@ The message can then be cleared when a new record is shown on the page.
 
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Message Center.
 
-## The messaging API and batch jobs(asynchronous/longrunning background tasks)
+## The messaging API and batch jobs(asynchronous/long-running background tasks)
 If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch job that uses SysOp), there is no page context to consider. Therefore, the message is routed to the Message Center. 
 
 ![Messaging\_EmptyMessageCenter](./media/messaging_emptymessagecenter.jpg)
@@ -161,7 +161,7 @@ The deterministic messaging system tries to send messages to the current page. H
 
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
-## Detailed, multiresult messaging that uses SetPrefix() and the Message details pane
+## Detailed, multi-result messaging that uses SetPrefix() and the Message details pane
 The results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. 
 
 ![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 

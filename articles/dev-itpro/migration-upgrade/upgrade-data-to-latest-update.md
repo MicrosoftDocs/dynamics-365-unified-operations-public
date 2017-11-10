@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ This topic describes how to upgrade an older source database to the latest Finan
     Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
 
-5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
+5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occurring during the data upgrade:
 
     - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This hotfix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
     - KB 4045801 - "Scheduler job has failed" error encountered when upgrading from Fall 2016 update to July 2017 update.
@@ -448,7 +448,7 @@ You can add that code to a new runnable class in Visual Studio, and directly obs
 ### Skip failed scripts
 
 > [!IMPORTANT]
-> This process is instended to be used only in a development scenario. 
+> This process is intended to be used only in a development scenario. 
 
 You can skip all scripts that have failed a specific number of times and move to the next viable scripts. This functionality helps with troubleshooting process. By design, the process is very manual, so that you're less likely to unintentionally skip scripts. 
 
