@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-Microsoft Dynamics 365 for Operations and Finance, Enterprise edition has a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
@@ -37,7 +37,7 @@ Each field and control has a label and description of applicable shortcuts, read
 
 ## Shortcuts provided for the most common actions
 
-Data entry and keyboard interaction is at the heart of most users daily interactions. To enhance your user experience, we’ve authored shortcuts to help you “jump” around the screen and shortcuts for specialized actions. For more inforamtion, see [Keyboard shortcuts](shortcut-keys.md).
+Data entry and keyboard interaction is at the heart of most users' daily interactions. To enhance your user experience, we’ve authored shortcuts to help you “jump” around the screen and shortcuts for specialized actions. For more inforamtion, see [Keyboard shortcuts](shortcut-keys.md).
 
 ## Navigate to pages using Search
 
@@ -48,39 +48,30 @@ Any page that is available in the Navigation Pane menu, is also available by typ
 For more information, see [Navigation search](navigation-search.md).
 
 > [!Note]
-> Only top-level pages can be directly navigated to. Secondary pages rely on information or context from their parent.
+> Only top-level pages can be directly navigated to. Secondary pages rely on information or context from their parent page.
 
 ## Action search for keyboard-only users or for heads-down data entry
 
-Each action offered on a page is keyboard accessible, via the tab sequence. Wwe also offer the ability to execute actions more directly using the action search functionality.
+Each action offered on a page is keyboard accessible, via the tab sequence. We also offer the ability to execute actions more directly using the action search functionality.
 
 ### Example:
 
-Assume that **Email notification log** in the **Email Notification** section is an action we’d like to execute. (right most section)
+Assume that the **Email notification log** option in the **Email Notification** section is the action you'd like to execute. (As shown in the right-most section.)
 
-The user can execute that action by gaining focus into the Action pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the action **Email notification log** has focus.
+A user can execute that action by gaining focus into the Action pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the **Email notification log** action has focus.
 
 ![cid:image002.jpg\@01D35891.76984830](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
 
-Or, the user can execute the action more directly. From anywhere on the page, the user uses a shortcut to expose the search action: Ctrl + ‘
+The user can also execute the action more directly. From anywhere on the page, the user can use a shortcut to expose the search box for actions. The shortcut is: Ctrl + ‘
 
 ![cid:image003.jpg\@01D35891.76984830](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
 
-The user then types words that describe the action, and the action is made available, and can be directly executed. (in this example we’ve typed any of the words in the actions label… even partial words are accepted)
-
-Typing “email”, “notific” and “log” all allowed the user to “jump” to the Email notification log functionality.
+The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* and “log” all allowed the user to “jump” to the **Email notification log** functionality.
 
 | [./media/image4.jpeg](./media/image4.jpeg) | [./media/image5.jpeg](./media/image5.jpeg) | [./media/image6.jpeg](./media/image6.jpeg) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
 
-
-~   cid:image004.jpg\@01D35891.76984830
-
-~   cid:image005.jpg\@01D35891.76984830
-
-~   cid:image006.jpg\@01D35891.76984830
-
-When complete, the user once again uses the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
+When complete, the user can once again use the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
 
 For more information, see [Action search](action-search.md).
 
