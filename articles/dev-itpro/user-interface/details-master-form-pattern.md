@@ -188,8 +188,8 @@ The verification checklist shows the steps for manually verifying that the form 
 -   There should not be any duplicate **New** and **Delete** buttons.
 -   Should use FastTabs to group the fields instead of traditional tabs. The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.
     -   In its **default** state, the content of the first FastTab should be fully visible without scrolling.
-    -   **FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document.
--   **ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document, in the ActionPane guidelines section.
+    -   **FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document.
+-   **ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the ActionPane guidelines section.
 -   **Page title area:**
     -   The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"
     -   A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.
