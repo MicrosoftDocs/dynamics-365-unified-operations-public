@@ -52,7 +52,7 @@ The following table provides details about the metrics that are found on each re
 
 | Report page       | Metrics |
 |-------------------|---------|
-| Projects overview | <ul><li>Created projects</li><li>Estimated projects</li><li>In-process projects</li><li>Number of projects by stage</li><li>Number of projects by city</li><li>Actual revenue by customer</li><li>Budget gross margin by project</li><li>Earned value management overview</li></ul> |
+| Projects overview | <ul><li>Created projects</li><li>Estimated projects</li><li>In-process projects</li><li>Actual revenue by customer</li><li>Budget gross margin by project</li><li>Earned value management overview</li></ul> |
 | Cost              | <ul><li>Actual vs. budget cost by month</li><li>Actual vs. budget cost by year</li><li>Actual vs. budget cost by category</li><li>Actual cost by transaction type</li></ul> |
 | Revenue           | <ul><li>Actual revenue by month</li><li>Actual revenue by postal code</li><li>Actual vs. budget revenue by category</li><li>Actual revenue by customer industry</li></ul> |
 | EVM               | Cost and schedule performance index by project |
