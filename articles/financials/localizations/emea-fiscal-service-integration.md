@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: 
 audience: Application user
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -23,8 +23,9 @@ ms.search.scope: Core, Operations
 ms.search.region: Austria, Czech Republic 
 # ms.search.industry: 
 ms.author: Anasyash
-# ms.search.validFrom: 
-# ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.3
+
 ---
 
 # Fiscal service (ESR) integration
@@ -33,7 +34,7 @@ ms.author: Anasyash
 
 In Austria, all cash payments should be signed by an external device or service and securely stored. In Czech Republic, all cash payments should be sent to the government portal for a fiscal signature. In both countries, a cash receipt should be issued where the signature is printed.
 
-To support these requirements for these two countries, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition allows you to integrate with fiscal service that is compliant with specific requirements for cash payment control in different countries. 
+To support these requirements for these two countries, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition allows you to integrate with a fiscal service that is compliant with specific requirements for cash payment control in different countries. 
 
 > [!NOTE]
 > It's assumed that all other specific country legal requirements concerning the registered transactions are fulfilled on the side of fiscal service and it is the user's responsibility to properly set up and administer the third-party fiscal service.
@@ -168,7 +169,9 @@ The following configurations are available:
 
 ## Setup
 
-### Cash register setup 
+### Cash registers 
+Each cash register must be set up to communicate with the fiscal service. Refer to the following table for more information.
+
 | Setup  | Details | More information |
 |---------|----------|-----------------|
 | Download Electronic reporting configurations| Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt (**Cash Receipt Model** > **Cash Receipt Format**), Response (**Cash Receipt Model** > **ESR Response example**), Request (**Cash Receipt Model** > **ESR Request example**).   | For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).| 
@@ -177,16 +180,16 @@ The following configurations are available:
 |Configurations| When you set up each cash register, be sure to choose the electronic reporting formats that are appropriate for the legal entitie's primary address. | Examples: For the receipt format,  select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic. |
 |Cash register certificate settings |If Fiscal service is accessible at https:// secure connection, you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party Fiscal service.  | Use a self-signed certificate - Activate the parameter in case you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates. Cash register certificate thumbprint - Enter thumbprint of the self-signed certificate stored in Fiscal service which will be used for validation of Fiscal service certificate validness. |
 
-#### Set up cash register locations
+#### Cash register locations
 You can set up locations of cash registers at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register locations**. 
 
-Create a tax registration type (Czech Republic) |Create Tax registration type for Business Premises ID in **Organization administration** > **Global address book** > **Registration types** > **Registration types**. Associate created tax registration type with legislative type "Business Premise Id" in Organization administration > Global address book > Registration types > Registration categories. Open Operating unit associated with Cash register location. (Go to Cash register locations, place cursor on a field Organization number, right click > View details or go directly to Organization administration > Common > Organizations > Internal organizations.) Click More options > Advanced on address line in Addresses tab. Click Add on Registration Id fast tab and add info about Business premise Id number.
+Create a tax registration type (Czech Republic) |Create Tax registration type for Business Premises ID in **Organization administration** > **Global address book** > **Registration types** > **Registration types**. Associate created tax registration type with legislative type "Business Premise Id" in **Organization administration** > **Global address book** > **Registration types** > **Registration categories**. Open the Operating unit that is associated with the Cash register location. (Go to **Cash register locations**, place cursor on a field **Organization number**, right click > **View details** or go directly to **Organization administration** > **Common** > **Organizations** > **Internal organizations**.) Click **More options** > **Advanced** on the address line in the **Addresses** tab. Click **Add** on **Registration Id** fast tab and add info about Business premise Id number.
 
 #### Create cash register terminals
-Create cash register terminals at Accounts receivable > Setup > Cash registers > Cash register terminals.
+Create cash register terminals at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register terminals**.
 
 ### Assign the user to a person
-Assign a User who is acting as cash operator and is allowed to log a cash transaction which will be registered in cash register, to a Person in System administration > Users. 
+Assign a User who is acting as cash operator and is allowed to log a cash transaction which will be registered in cash register, to a Person in **System administration** > **Users**. 
 
 ### Set up cash register operators
 Set up cash register operators and assign them to the cash register location in **Accounts receivable** > **Setup** > **Cash register** > **Cash register operators**. 
@@ -229,21 +232,21 @@ This section walks you through the following business processes using the [EFR](
 
 ### Register automatically posted COD payment for the Free text invoice and print cash receipt
 1. Go to **Accounts receivable** > **Free text invoices** > **All free text invoices**.
-2. Create free text invoice in standard way.
-3. On fast tab Payment, choose Method of payment which is set up as cash a register method of payment. 
-4. Choose Terms of payment with cash on delivery settings. 
-5. Click Post.
-6. In the Post free text invoice dialog, do the following:
-	1. Activate the check-box Print receipt in the fast tab Parameters for printing the cash receipt after the invoice is posted.
-	2. On fast tab Cash register review Location, Terminal, Cash register and Operator code. Terminal code is pre-defaulted from the "Default cash register terminal" field in Cash register operators form. Change Terminal code if the cash payment is received in a different cash register terminal available for the current operator.
-	3. Click OK.
-7. Review the generated cash receipt for the posted invoice. By default, the generated cash receipt is available as a file. You can set up additional and other destinations for cash receipt output: see Electronic Reporting Destinations for more details.
+2. Create a free text invoice. For more information, see [Create a free text invoice](../accounts-receivable/tasks/create-free-text-invoice.md).
+3. On the **Payment** FastTab, select the method of payment that is set up as cash a register method of payment. 
+4. Select a terms of payment that is set up for cash on delivery. 
+5. Click **Post**.
+6. In the **Post free text invoice** dialog, do the following:
+	1. Activate the check-box **Print receipt** in the fast tab **Parameters** for printing the cash receipt after the invoice is posted.
+	2. On fast tab **Cash register** review the location, terminal, cash register and operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator.
+	3. Click **OK**.
+7. Review the generated cash receipt for the posted invoice. By default, the generated cash receipt is available as a file. For information about how to set up other destinations that you could use for cash receipt output, see [Electronic Reporting Destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
 ### Register automatically posted COD payment for the Sales order invoice and print cash receipt
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-2. Create sales order in standard way.
-3. On fast tab Price and discount, choose Method of payment which is set up as a cash register method of payment. Choose Terms of payment with cash on delivery settings in the Payment field.
+2. Create a sales order. For more information, see [Create a sales order](../../supply-chain/sales-marketing/tasks/create-sales-orders.md)
+3. On fast tab Price and discount, choose Method of payment which is set up as a cash register method of payment. Choose Terms of payment with cash on delivery settings in the **Payment field**.
 4. Click **Invoice** > **Invoice**.
 5. In the dialog Posting invoice, in the fast tab Parameters, activate the check-box Print receipt for printing a cash receipt after the invoice is posted.
 6. On the fast tab Cash register, review Location, Terminal, Cash register and Operator code. Terminal code is pre-defaulted from the "Default cash register terminal" field in the Cash register operators form. Change Terminal code if the cash payment is received in a different cash register terminal.
