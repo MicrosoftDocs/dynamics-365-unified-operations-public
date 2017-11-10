@@ -5,7 +5,7 @@ title: Accessibility features
 description: This topic describes a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
