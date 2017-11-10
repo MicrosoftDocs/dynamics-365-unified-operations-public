@@ -5,7 +5,7 @@ title: Service endpoints
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
