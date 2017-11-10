@@ -247,7 +247,7 @@ In the on-premises inventory system:
 
 -   Use the REST batch data API to export the file out of Finance and Operations, and import it into the inventory system.
 
-## Common scenarios and patterns that use call external web services
+## Common scenarios and patterns that call external web services
 
 It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
