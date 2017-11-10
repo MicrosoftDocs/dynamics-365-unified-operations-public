@@ -383,7 +383,8 @@
 ##### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
-#### [Consuming external web services](data-entities/consume-external-web-service.md)
+### [Consuming external web services](data-entities/consume-external-web-service.md)
+
 # [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
