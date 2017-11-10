@@ -42,7 +42,7 @@ Solution overview
 
 When an issue that requires X++ debugging occurs in a production environment, the system administrator and developer work together to configure debugging and then debug the issue. The following illustration shows an overview of the process. [![Debug X+=](./media/debugxpp.jpg)](./media/debugxpp.jpg)
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), the system administrator requests that a copy of the database be added to the sandbox environment.
+1.  In Microsoft Dynamics Lifecycle Services (LCS), the system administrator requests that a copy of the database be connected to the sandbox UAT environment (Perform a database refresh).
 2.  In Microsoft Visual Studio Team Services (VSTS), the developer synchronizes the local code to the same build that is running in the production environment.
 3.  In the sandbox Azure SQL Database instance, the system administrator creates a temporary SQL sign-in for the developer. The developer then configures the environment to connect to the sandbox database.
 4.  A firewall exception is added so that the developer environment can connect to the sandbox database.
@@ -54,8 +54,10 @@ When an issue that requires X++ debugging occurs in a production environment, th
 Before you begin to configure X++ debugging in a production environment, note the following points:
 
 -   You can't debug directly against the production environment, because debugging might cause data corruption. However, developers can manipulate values at run time. Alternatively, in their own instance, developers can make a code change that changes data.
--   The developer environment that is used for debugging must exist in the same Microsoft Azure subscription as the sandbox environment. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production Azure SQL Database instances. This restriction allows only servers that are in those environments to connect to the databases. To enable debugging, a firewall exception is added to allow a developer environment to connect to the sandbox database.
--   A one-time manual change to the developer environment is required, to allow the IP address of the environment to connect to the sandbox database. Submit a request to the Microsoft Support Team to allow the IP address.
+
+[!NOTE] The developer environment that is used for debugging must exist in the same Lifecycle Services project as the sandbox environment. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production Azure SQL Database instances. This restriction allows only servers that are in those environments to connect to the databases. To enable debugging, a firewall exception is added to allow a developer environment to connect to the sandbox database.
+
+-   A one-time manual change to the developer environment is required, to allow the IP address of the environment to connect to the sandbox database. Submit a request to the Microsoft Service Engineering Team (DSE) to allow the IP address.
 -   We recommend that you not use a build environment for debugging. Otherwise, there is a risk that the developer’s activities on the computer might break the automated build process.
 
 ## Solution details
