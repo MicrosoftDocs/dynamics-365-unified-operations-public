@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This procedure walks you through generating Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
+This procedure walks you through generating the Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
 
-Before you can generate an FEC file, you must import the latest version of the Electronic reporting configuration **Import configuration "FEC Accounting data XML (FR)**. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+Before you can generate an FEC file, you must import the latest version of the Electronic reporting configuration **Import configuration FEC Accounting data XML (FR)**. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 ## Generate the Standard Audit File for France
 1.	Go to **General Ledger** > **Inquires and reports** > **Ledger reports** > **FEC Accounting data export** to open the **Electronic report parameters** page.
