@@ -187,39 +187,6 @@
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
 
-## Data integration framework
-
-### Data integration APIs
-#### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
-#### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
-##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro/data-entities/odata.md)
-#### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
-
-### Development for integration
-#### [Data integration using data entities](../dev-itpro/data-entities/data-management-integration-data-entity.md)
-##### [Develop an entity for data migration](../dev-itpro/data-entities/develop-entity-for-data-migration.md)
-##### [Develop composite data entities](../dev-itpro/data-entities/develop-composite-data-entities.md)
-##### [Configure financial cross-company data sharing](../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md)
-##### [Create a record template to facilitate data entry](../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md)
-##### [Use a record template to create a new record](../dev-itpro/data-entities/tasks/use-record-template-new-record.md)
-
-#### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
-##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-
-
-
 ## [Financial management](../financials/index.md)
 
 ### [General ledger](../financials/general-ledger/general-ledger.md)
