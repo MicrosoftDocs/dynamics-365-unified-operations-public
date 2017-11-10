@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: 
 manager: ralin
-ms.date: 11/09/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,6 +25,7 @@ ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-01-15
 ms.dyn365.ops.version: App update 7.3.1
+
 ---
 # Deployment guidelines for cash registers for India
 
@@ -79,7 +80,7 @@ The CRT extension components are included to CommerceRuntime samples. To complet
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > Do **not** edit the *commerceruntime.config* and *CommerceRuntime.MPOSOffline.config* files. These files are not intended for any customizations.
 
 ## Production environment
@@ -95,7 +96,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
         ```
 
 2. Make the following changes in the package customization configuration file **Customization.settings**
-    1. Add following lines to **ItemGroup** section to include CRT extensions to deployable packages
+    1. Add following lines to **ItemGroup** section to include CRT extensions to deployable packages:
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
