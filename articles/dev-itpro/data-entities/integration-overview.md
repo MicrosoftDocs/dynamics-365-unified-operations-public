@@ -45,8 +45,8 @@ The following table lists the integration patterns available for Finance and Ope
 | OData                         | [Odata](odata.md)                                               |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)                              |
 |                               | [Data management API](data-management-api.md)                                 |
-| Custom service                | [Services home page, Custom services](custom-services.md)                 |
-| Consume external web services | [Services home page, Consuming external web services](consume-external-web-service.md) |
+| Custom service                | [Custom services](custom-services.md)                 |
+| Consume external web services | [Consuming external web services](consume-external-web-service.md) |
 
 
 ## Synchronous vs asynchronous integration patterns
@@ -123,7 +123,7 @@ In the third-party application:
 - When product information is created or modified in the third-party application, a corresponding OData call is made to Finance and
 Operations to make the same change.
 
-### Read order status
+### Check read order status
 
 A company runs Finance and Operations but has a self-hosted customer portal where customers can check status of their orders. Order status is maintained in Finance and Operations.
 
@@ -144,7 +144,7 @@ In Finance and Operations:
 From the customer portal site:
 -   When the customer checks the order status, make a real-time OData call into Finance and Operations to read the corresponding order and retrieve status for that order.
 
-### BOM approval
+### Approve BOMs
 
 A company runs Finance and Operations but hosts a product lifecycle management (PLM) system on-premises. The PLM system has a workflow that sends the finished BOM information to Finance and Operations for approval.
 
@@ -172,7 +172,7 @@ In the PLM solution:
 ## Common scenarios and patterns that use a custom service
 The following are common scenarios that use a custom service. 
 
-### On-hand inventory lookup
+### Look up on-hand inventory
 
 An energy company has field workers scheduling installation jobs for heaters. This company uses Finance and Operations for back office and a third-party SaaS for scheduling appointments. When scheduling appointments, they need to look up inventory availability to
 make sure installation parts are available for the job.
@@ -198,7 +198,7 @@ In the scheduling application:
 
 You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, there is more than one possible way to expose the same data and business logic inside of Finance and Operations, and there is no "better" way. In this case, the decision comes down to which way works best for a given scenario and which method a developer is most comfortable with.
 
-## Batch data integration scenarios
+## Common scenarios and patterns that use batch data integration
 The following are common scenarios that use the batch data APIs.
 
 ### Import sales orders in large volumes
