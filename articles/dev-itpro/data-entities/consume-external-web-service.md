@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consuming external web services
-description: This topic describes the service endpoints that are available.
+description: This topic describes how to consume external web services in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
