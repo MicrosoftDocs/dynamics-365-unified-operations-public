@@ -26,6 +26,8 @@ ms.author: shylaw
 # ms.dyn365.ops.version: 
 # ms.search.validFrom:
 ---
+# Create and post depreciation for a fixed asset group using depreciation books
+[!include[banner](../includes/banner.md)]
 
 You can calculate depreciation for a fixed asset group based on the number of
 days defined in the **Asset group depreciation threshold** field in the
