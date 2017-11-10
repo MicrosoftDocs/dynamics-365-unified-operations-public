@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project forecasts and budgets
-description: Microsoft Dynamics 365 for Finance and Operations provides two ways to manage and control your projects: project forecasts and project budgets. 
+description: Microsoft Dynamics 365 for Finance and Operations provides project forecasts and project budgets to manage and control your projects. 
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
