@@ -73,7 +73,7 @@ The following examples illustrate this point. One can’t draw the conclusion th
 | OData          | DbResourceContext.SaveChanges         | DbResourceContext.SaveChangesAsync        |
 | Custom Service | httpRequest.GetResponse               | httpRequest.BeginGetResponse               |
 | SOAP           | UserSessionService.GetUserSessionInfo | UserSessionService.GetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                     | [BeginInvoke](../dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)                                |
+| Batch data API | ImportFromPackage                     | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)                                |
 
 
 OData and custom service are both synchronous integration patterns because calling these APIs results in the immediate execution of business logic in Finance and Operations. For example: 
