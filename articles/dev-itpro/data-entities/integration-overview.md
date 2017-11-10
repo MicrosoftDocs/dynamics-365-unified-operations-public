@@ -49,7 +49,7 @@ The following table lists the integration patterns available for Finance and Ope
 | Consume external web services | [Services home page, Consuming external web services](consume-external-web-service.md) |
 
 
-### Synchronous vs asynchronous integration patterns
+## Synchronous vs asynchronous integration patterns
 
 Deciding which integration pattern to use is often based on whether you need to use synchronous or asynchronous processing. 
   
@@ -84,23 +84,22 @@ Batch data APIs are considered asynchronous integration patterns because calling
 
 Batch data APIs are designed to deal with large volume data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
 
-#### Error handling 
-
-When using a synchronous pattern, success or failure responses are returned to the caller. For example, if an OData call is used to insert sales orders, if a sales order line has a bad reference to a product that does not exist, the caller will get a response containing an error. It is caller’s responsibility to handle potential errors in the response.
-
-When using an asynchronous pattern, the caller will get an immediate response about whether the scheduling call was successful. It is the caller’s responsibility to handle potential errors in the response. After scheduling is done, the data import or export status won’t be pushed to the caller. The caller must poll for the result of the corresponding import or export process and handle errors accordingly.
-
-## Integration patterns
 In general, when selecting an integration pattern, we recommend that you consider the following: 
 
 -   Is there a business requirement for the integration to be real time?
 -   What is the peak data volume requirement?
 -   What is the frequency?
 
-### OData scenarios
+### Error handling 
+
+When using a synchronous pattern, success or failure responses are returned to the caller. For example, if an OData call is used to insert sales orders, if a sales order line has a bad reference to a product that does not exist, the caller will get a response containing an error. It is caller’s responsibility to handle potential errors in the response.
+
+When using an asynchronous pattern, the caller will get an immediate response about whether the scheduling call was successful. It is the caller’s responsibility to handle potential errors in the response. After scheduling is done, the data import or export status won’t be pushed to the caller. The caller must poll for the result of the corresponding import or export process and handle errors accordingly.
+
+## Common scenarios and patterns that use OData integrations
 The following are common scenarios that use OData integrations. 
 
-#### Create and update product information
+### Create and update product information
 
 A manufacturer runs Finance and Operations but defines and configures their product with a third-party application hosted on-premise. They want to move their production information from their on-premise application into Finance and Operations. When a product is defined, or changed in the on-premise application, the end user would like to see the same change made in Finance and Operations, and they want it real time.
 
@@ -124,7 +123,7 @@ In the third-party application:
 - When product information is created or modified in the third-party application, a corresponding OData call is made to Finance and
 Operations to make the same change.
 
-#### Read order status
+### Read order status
 
 A company runs Finance and Operations but has a self-hosted customer portal where customers can check status of their orders. Order status is maintained in Finance and Operations.
 
@@ -145,7 +144,7 @@ In Finance and Operations:
 From the customer portal site:
 -   When the customer checks the order status, make a real-time OData call into Finance and Operations to read the corresponding order and retrieve status for that order.
 
-#### BOM approval
+### BOM approval
 
 A company runs Finance and Operations but hosts a product lifecycle management (PLM) system on-premises. The PLM system has a workflow that sends the finished BOM information to Finance and Operations for approval.
 
@@ -170,10 +169,10 @@ In the PLM solution:
 > [!NOTE]
 > An example of this type of OData action can be found in the BOMBillOfMaterialsHeaderEntity::approve.
 
-### Custom service scenarios
+## Common scenarios and patterns that use a custom service
 The following are common scenarios that use a custom service. 
 
-#### On-hand inventory lookup
+### On-hand inventory lookup
 
 An energy company has field workers scheduling installation jobs for heaters. This company uses Finance and Operations for back office and a third-party SaaS for scheduling appointments. When scheduling appointments, they need to look up inventory availability to
 make sure installation parts are available for the job.
@@ -199,10 +198,10 @@ In the scheduling application:
 
 You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, there is more than one possible way to expose the same data and business logic inside of Finance and Operations, and there is no "better" way. In this case, the decision comes down to which way works best for a given scenario and which method a developer is most comfortable with.
 
-### Batch data integration scenarios
+## Batch data integration scenarios
 The following are common scenarios that use the batch data APIs.
 
-#### Import sales orders in large volumes
+### Import sales orders in large volumes
 
 A company receives large volume of sales orders from a front-end system that runs on-premise. These orders need to be sent to Finance and
 Operations periodically for processing and management.
@@ -224,7 +223,7 @@ In Finance and Operations:
 In the on-premises system:
 -   Use the REST batch data API to import files into Finance and Operations.
 
-#### Export large volumes of purchase orders
+### Export large volumes of purchase orders
 
 A company generates large amounts of purchase orders in Finance and Operations and uses an on-premise inventory management system to receive products. Purchase orders need to be moved from Finance and Operations to the on-premise inventory system.
 
@@ -248,7 +247,7 @@ In the on-premises inventory system:
 
 -   Use the REST batch data API to export the file out of Finance and Operations, and import it into the inventory system.
 
-### Call external web services
+## Common scenarios and patterns that use call external web services
 
 It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
