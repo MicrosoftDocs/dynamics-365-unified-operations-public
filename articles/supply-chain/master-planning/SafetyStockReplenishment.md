@@ -78,6 +78,17 @@ The specified minimum quantity is met during the period that is specified in the
 
 At any point in time, the inventory receipt with the latest expiry date will be used for safety stock to allow real demand, such as sale lines or BOM lines, to be fulfilled in the FEFO (First Expired, First Out) order.
 
+To exemplify how this works, consider the following scenario.
+![FEFOScenario](./media/FEFOScenario.png)
+When planning is run, it will cover the first sales order from the existing on hand and an additional purchase order, for the remaining quantity.
+![FEFO1](./media/FEFO1.png)
+A planned order is created to make sure available inventory is brought back to the safety limit.
+![FEFO2](./media/FEFO2.png)
+When the second sales order is planned, the previosly created planned order that was covering safety stock is used to cover this quantity. Hence, the safety stock is constantly rolling.
+![FEFO3](./media/FEFO3.png)
+Finally, another planned order is created to cover safety stock.
+![FEFO4](./media/FEFO4.png)
+All the batches are expired accordingly and planned orders are created to refill safety stock once it has expired.
 
 
 # The way master planning is handling the safety stock constraint
