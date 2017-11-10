@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -543,7 +543,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
    > 2. If a database with the same name exists, the database will be reused.
 
-6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
+6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a Powershell window with elevate privileges.
 
 #### Configure the OrchestratorData database
 
