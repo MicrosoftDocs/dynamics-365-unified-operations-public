@@ -5,7 +5,7 @@ title: Prepare to migrate code to Finance and Operations
 description: In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -176,7 +176,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 4.  Press **Ctrl+S to** save the form.
     -   Next, we will focus on the EditCmdButton that duplicates the system Edit button, handing the two TODOs associated with this button as well as removing this button.
 
-5.  In Visual Studio, find the TODO shown below, and then double-clickthe TODO.[![m](./media/m1.png)](./media/m1.png)
+5.  In Visual Studio, find the TODO shown below, and then double-click the TODO.[![m](./media/m1.png)](./media/m1.png)
 6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
 
         /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
@@ -294,7 +294,7 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based a
 
 [![a](./media/a-1024x576.png)](./media/a.png)
 
-## Migrating context menus and mouse doubleclick code
+## Migrating context menus and mouse double-click code
 Refer to these topics to migrate code Dynamics AX 2012 that deals with context menus and mouse double-click actions.
 
 -   [Context menus](code-migration-context-menus.md)
