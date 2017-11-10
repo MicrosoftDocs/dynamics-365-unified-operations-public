@@ -5,7 +5,7 @@ title: Customize with extensions and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: robadawy
 manager: AnnBe
-ms.date: 05/18/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -179,19 +179,19 @@ In Microsoft Dynamics AX 2012, you could override the virtual methods of a table
 Validation events capture and return results by using the **DataEventArgs** parameter. The display and edit method modifiers are supported on table extensions.
 
 ## View and Data entity extensions
-You can extend a View or Data entity to achieveÂ much of theÂ functionalityÂ available withÂ table extensions.
+You can extend a View or Data entity to achieve much of the functionality available with table extensions.
 
 ## Enum extensions
-You can extend any Enum that is marked extensble (IsExtensible=True). 
+You can extend any Enum that is marked extensible (IsExtensible=True). 
 
 [![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) 
 
 By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
 1.  You cannot have X++ logic that depends on the integer value of Enum values (For example. *If (Enum1.v1 &gt; Enum1.v2) ...* is not supported for extensible enums)
-2.  WhenÂ Enum values of extensible Enums are synchronized into the database:
-    -   IntegerÂ values thatÂ belong to theÂ baseline enum are deterministic, they come from the metadata.
-    -   IntegerÂ values that are an extension are generated during the synchronization process and are not deterministic.
+2.  When Enum values of extensible Enums are synchronized into the database:
+    -   Integer values that belong to the baseline enum are deterministic, they come from the metadata.
+    -   Integer values that are an extension are generated during the synchronization process and are not deterministic.
 
 ## EDT extensions
 You can extend an EDT element in order to modify any of the following properties:

@@ -5,7 +5,7 @@ title: R Classes
 description: System API classes that start with the letter R.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -1499,7 +1499,7 @@ You must have access to the development security key (SysDevelopment) before thi
 | public int alignment(\[int value\])                                      |                                                                                                                                           |
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
 | public str bottomMarginStr(\[str value\])                                |                                                                                                                                           |
@@ -1571,7 +1571,7 @@ You must have access to the development security key (SysDevelopment) before thi
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -1665,7 +1665,7 @@ Controls cannot have identical names.
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -1754,7 +1754,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -2049,7 +2049,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -2393,7 +2393,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -2921,7 +2921,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -2975,7 +2975,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -3346,7 +3346,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
@@ -3543,7 +3543,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -3676,7 +3676,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -4091,7 +4091,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -4939,7 +4939,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -4969,7 +4969,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -5022,7 +5022,7 @@ unit
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                            |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                         |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                          |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                             |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                             |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                                |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                            |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                            |
@@ -5219,7 +5219,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -5352,20 +5352,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -5394,7 +5394,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -5767,7 +5767,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -6555,7 +6555,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -6661,7 +6661,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -7118,7 +7118,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -8242,7 +8242,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
@@ -8319,7 +8319,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -8435,7 +8435,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -8578,7 +8578,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -8943,7 +8943,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -9287,7 +9287,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -9755,7 +9755,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -9821,7 +9821,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -9947,7 +9947,7 @@ The ReportGuidControl class enables you to create, read, update, and delete X++ 
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                               |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                            |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                             |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                                |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                                |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                                   |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                               |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                               |
@@ -10139,7 +10139,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -10272,20 +10272,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -10314,7 +10314,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -10637,7 +10637,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -11425,7 +11425,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -11543,7 +11543,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -11573,7 +11573,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that was used to output text in the control.                                                              |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
@@ -11656,7 +11656,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -11789,7 +11789,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -11922,7 +11922,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -12361,7 +12361,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -12705,7 +12705,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -13225,7 +13225,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -13339,7 +13339,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -13367,7 +13367,7 @@ The height and height calculation mode can be set separately.
 | public Date creationDate(\[Date value\])     | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])       |                                                                                                                                           |
 | public str designs(\[str value\])            |                                                                                                                                           |
-| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public Guid origin(\[Guid value\])           |                                                                                                                                           |
 | public str projectGuid(\[str value\])        |                                                                                                                                           |
 | public str referencedProjects(\[str value\]) |                                                                                                                                           |
@@ -13464,7 +13464,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -14284,7 +14284,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
@@ -14463,7 +14463,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -14606,7 +14606,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -14961,7 +14961,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelCssClass
 
@@ -15731,7 +15731,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -15764,7 +15764,7 @@ The ReportRealControl class enables you to create, read, update, and delete X++ 
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                            |
 | public int autoInsSeparator(\[int value\])                               |                                                                                                                                               |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                             |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                                |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                                |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                                   |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                               |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                               |
@@ -15999,7 +15999,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -16132,20 +16132,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -16174,7 +16174,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -16591,7 +16591,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -17664,7 +17664,7 @@ The ReportRun class generates and prints a report or previews a report on the sc
 
 ### Remarks
 
-As opposed to the , which defines the structure of a report, a ReportRun object contains the runtime characteristics of the report.A ReportRun object can be created by using one of the following arguments:
+As opposed to the , which defines the structure of a report, a ReportRun object contains the runtime characteristics of the report. A ReportRun object can be created by using one of the following arguments:
 
 -   An Args object where the name and optionally designName parameters are specified.
 -   A created container, by using the for example.
@@ -17887,7 +17887,7 @@ A string that contains "DesignLabel - ReportSpelling" if the DesignLabel is not 
 
 #### Remarks
 
-The call to the super method in this method creates a string that is used as a caption when previewing a report and as the document name when printing a report.It is recommended that you always fill out the Caption property of the report design so that the caption that is used during the preview of the report is in the actual language.
+The call to the super method in this method creates a string that is used as a caption when previewing a report and as the document name when printing a report. It is recommended that you always fill out the Caption property of the report design so that the caption that is used during the preview of the report is in the actual language.
 
 ### Method collate
 
@@ -17984,7 +17984,7 @@ The form to use to display the progress information.
 
 #### Remarks
 
-You can overload this method. The method is called when the first page is created. The default implementation will open the SysPrintProgress form.If you implement your own progress form, you must implement the setNames and setPagePercent methods because these methods are called within the kernel.This form is shown when the pages are created, not when the pages are printed.
+You can overload this method. The method is called when the first page is created. The default implementation will open the SysPrintProgress form. If you implement your own progress form, you must implement the setNames and setPagePercent methods because these methods are called within the kernel. This form is shown when the pages are created, not when the pages are printed.
 
 ### Method currentYmm100
 
@@ -18043,7 +18043,7 @@ The printer driver name.
 
 #### Remarks
 
-The method often returns the string "winspool". This is the printer driver name that is used when the printer device context is created.If no printers have been set up on the computer, the string "Screen" is returned.
+The method often returns the string "winspool". This is the printer driver name that is used when the printer device context is created. If no printers have been set up on the computer, the string "Screen" is returned.
 
 ### Method enableAllBodies
 
@@ -18121,7 +18121,7 @@ true if any sections were printed; otherwise, false.
 
 #### Remarks
 
-This method is useful if you want to add columnHeading objects to a programmable section.If a programmable section causes a page break, the columnHeadings objects of the section are repeated. Under these circumstances this method not have to be called.
+This method is useful if you want to add columnHeading objects to a programmable section. If a programmable section causes a page break, the columnHeadings objects of the section are repeated. Under these circumstances this method not have to be called.
 
 ### Method executeFooter
 
@@ -18436,7 +18436,7 @@ Sends the generated report to a print medium, such as a printer or the screen.
 
 #### Remarks
 
-The call to the super method in this method directs the generated report to a printMedium object, such as printer or screen.If the target is a screen, the call to the super method will create a reportViewer object on the client and call the showPage method.If the target is a printer, the call to the super method will create a reportOutput object and call the print method on this object. If the outputToClient method of the PrintJobSettings class has been called with a parameter of true, a reportViewer object will be created and the print method of that object will be called. In in this manner, a report that is generated on the server can be output to a printer that is set up on the client.
+The call to the super method in this method directs the generated report to a printMedium object, such as printer or screen. If the target is a screen, the call to the super method will create a reportViewer object on the client and call the showPage method. If the target is a printer, the call to the super method will create a reportOutput object and call the print method on this object. If the outputToClient method of the PrintJobSettings class has been called with a parameter of true, a reportViewer object will be created and the print method of that object will be called. In in this manner, a report that is generated on the server can be output to a printer that is set up on the client.
 
 ### Method printerAttributes
 
@@ -18577,7 +18577,7 @@ true if execution of the report should continue; otherwise, false.
 
 #### Remarks
 
-The call to the super method in this method runs the sysPrintForm form. The prompt method is called from the super method call in the prompt method. The PrintFormName property on the reportDesign object determines which form the call to the super method in the printerSettiings object will run.
+The call to the super method in this method runs the sysPrintForm form. The prompt method is called from the super method call in the prompt method. The PrintFormName property on the reportDesign object determines which form the call to the super method in the printerSettings object will run.
 
 ### Method printerShareName
 
@@ -18686,7 +18686,7 @@ true if execution of report should continue; otherwise, false.
 
 #### Remarks
 
-The call to the super method in the prompt method runs the sysPrintForm form.This method is called from the run method.
+The call to the super method in the prompt method runs the sysPrintForm form. This method is called from the run method.
 
 ### Method query
 
@@ -18786,7 +18786,7 @@ false if the toPage object has been generated; otherwise true.
 
 #### Remarks
 
-The executeSection method of the ReportSection class is called on each triggered section.By default in a master-detail report, the records from the master table have level of one, and the records from the details table have level of two.
+The executeSection method of the ReportSection class is called on each triggered section. By default in a master-detail report, the records from the master table have level of one, and the records from the details table have level of two.
 
 ### Method setTarget
 
@@ -18981,7 +18981,7 @@ A string that contains the job description.
 
 #### Remarks
 
-If reports are written to the printArchive object, the print job description is stored in the jobDescription field of the printJobHeader table. If the report is previewed, the print job description is used as the caption.This method is not called by the kernel during the execution of a report. Therefore overriding the method will have no effect.
+If reports are written to the printArchive object, the print job description is stored in the jobDescription field of the printJobHeader table. If the report is previewed, the print job description is used as the caption. This method is not called by the kernel during the execution of a report. Therefore, overriding the method will have no effect.
 
 ### Method to
 
@@ -19179,7 +19179,7 @@ The ID of the field that contains the changed value.
 
 #### Remarks
 
-This method is called when a field is sorted after it changes value, even if the user has chosen not to print headers or footers.One call of the send method can trigger the printing of multiple footer sections and header sections before the body sections. The header and footer methods allow the user to execute code before or after printing the header or footer.
+This method is called when a field is sorted after it changes value, even if the user has chosen not to print headers or footers. One call of the send method can trigger the printing of multiple footer sections and header sections before the body sections. The header and footer methods allow the user to execute code before or after printing the header or footer.
 
 ### Method reset
 
@@ -20133,7 +20133,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows:
+The value in the following table is for the Korean language edition of Microsoft Windows:
 
 | Value. | Description.   |
 |--------|----------------|
@@ -21315,7 +21315,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -21343,7 +21343,7 @@ A report section group can contain header sections, body sections, and footer se
 | public ReportSection addSection(ReportBlockType sectionType) |                                                                                                                           |
 | public FieldId dataField(\[FieldId value\])                  |                                                                                                                           |
 | public int delete()                                          |                                                                                                                           |
-| public str name(\[str value\])                               | Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public ReportSection section(ReportBlockType sectionType)    |                                                                                                                           |
 | public TableId table(\[TableId value\])                      | Gets or sets the table ID associated with the object.                                                                     |
 
@@ -21375,7 +21375,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -21503,7 +21503,7 @@ The ReportShapeControl class enables you to create, read, update, and delete X++
 | public str menuItemName(\[str value\])                                   |                                                                                                                   |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                   |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                   |
-| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                   |
 | public int position(\[int value\])                                       |                                                                                                                   |
 | public str previewInfo(str string)                                       |                                                                                                                   |
@@ -21904,7 +21904,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -22258,7 +22258,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -22736,7 +22736,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -22806,7 +22806,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -22914,7 +22914,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -23173,7 +23173,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -23554,7 +23554,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -23898,7 +23898,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -24342,7 +24342,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -24424,7 +24424,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -24491,7 +24491,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                |
 | public int autoInsSeparator(\[int value\])                               |                                                                                                                                   |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                 |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                    |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                    |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font used to output text in the control.                                                               |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                   |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                   |
@@ -24579,7 +24579,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                   |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                   |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                   |
-| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                   |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                   |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                   |
@@ -24724,7 +24724,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -24857,7 +24857,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -25316,7 +25316,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -25694,7 +25694,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -26298,7 +26298,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -26352,7 +26352,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -26708,7 +26708,7 @@ The Integer values that are retrieved indicate the character set according to th
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -27059,7 +27059,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -28012,7 +28012,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int arrayIndex(\[int value\])                                     |                                                                                                                                           |
 | public boolean autoDeclaration(\[boolean value\])                        | Determines whether the system can declare a member variable that has the same name as the control.                                        |
 | public int backgroundColor(\[int value\])                                | Gets or sets the background color of the control.                                                                                         |
-| public int backStyle(\[int value\])                                      | Determiness whether the control background can be transparent.                                                                            |
+| public int backStyle(\[int value\])                                      | Determines whether the control background can be transparent.                                                                            |
 | public int bold(\[int value\])                                           | Gets or sets the weight of font that is used to output text in the control.                                                               |
 | public int bottomMarginAndFrame()                                        |                                                                                                                                           |
 | public int bottomMarginMode(\[int value\])                               |                                                                                                                                           |
@@ -28209,7 +28209,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -28342,7 +28342,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -28707,7 +28707,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelBold
 
@@ -29581,7 +29581,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -29619,7 +29619,7 @@ unit
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -29809,7 +29809,7 @@ The ResultSet class provides access to a table of data generated by executing a 
 
 ### Remarks
 
-For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing a instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, Finance and Operations attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
+For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing an instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, Finance and Operations attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
 
 ### Examples
 

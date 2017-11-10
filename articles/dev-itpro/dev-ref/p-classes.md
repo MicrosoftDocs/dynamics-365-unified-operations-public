@@ -5,7 +5,7 @@ title: P Classes
 description: System API classes that start with the letter P.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -235,7 +235,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method new
 
@@ -1985,7 +1985,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type.For example, an instance of the class returns the method name and type of the method, such as instance or static.
+The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type. For example, an instance of the class returns the method name and type of the method, such as instance or static.
 
 ### Method unpackPageSettings
 
@@ -2265,7 +2265,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type.For example, an instance of the class returns the method name and type of the method, such as instance or static.
+The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type. For example, an instance of the class returns the method name and type of the method, such as instance or static.
 
 ### Method profilerAlreadyOn
 

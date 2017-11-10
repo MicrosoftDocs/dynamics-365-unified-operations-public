@@ -2,10 +2,10 @@
 # required metadata
 
 title: ISV licensing
-description: This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
-author: maertenm
+description: This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
+author: robadawy
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: robinr
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
+This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
 The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and therefore monetize vertical industry solutions that can be repackaged. The ISV licensing feature provides the following benefits:
 
@@ -137,12 +137,12 @@ Follow these steps to enable licensing for your solution.
     ![Button is no longer visible](./media/isv14.png)
 
 
-## Create a package and generate a customerspecific license
+## Create a package and generate a customer-specific license
 1.  Collect the tenant name and ID for the customer to issue the license to. (You can find this information at **Settings** &gt; **About**.) 
 
     ![Customer's tenant name and ID](./media/isv15.png)
 
-2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key.You must pass the following parameters to the **axutil genlicense** command to create the license file.
+2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
     | Parameter name  | Description                                                                  |
     |-----------------|------------------------------------------------------------------------------|
@@ -207,7 +207,7 @@ To install ISV licenses in production systems, you must use a deployable package
 
 More than one license can be installed at a time. If one of the licenses depends on another, make sure that it's named accordingly. (Licenses are installed in alphabetical order.)
 
-## Appendix: Create selfsigned certificates for test purposes
+## Appendix: Create self-signed certificates for test purposes
 **Note:** Self-signed certificates can be used only during development. They aren't supported in production environments.
 
 1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.

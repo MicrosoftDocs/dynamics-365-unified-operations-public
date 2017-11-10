@@ -5,7 +5,7 @@ title: M Classes
 description: System API classes that start with the letter M.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -2395,7 +2395,7 @@ Name
 
 #### Return Value
 
-The name that is used in thte code to identify an application object.
+The name that is used in the code to identify an application object.
 
 #### Remarks
 
@@ -2942,13 +2942,13 @@ The TreeNode system class serves as a more general approach to the menus in the 
 | public str menuItemName(\[str value\])                                   |                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                           |
 | public str menuName()                                                    |                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public int neededAccessLevel(\[int value\])                              | Gets or sets the neededAccessLevel property for the MenuFunction class.                                                   |
 | public str normalImage(\[str value\])                                    |                                                                                                                           |
 | public int normalResource(\[int value\])                                 |                                                                                                                           |
 | public Guid origin(\[Guid value\])                                       |                                                                                                                           |
 | public str parameter(\[str parameter\])                                  |                                                                                                                           |
-| public str parameters(\[str value\])                                     | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                    |
+| public str parameters(\[str value\])                                     | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                    |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                |                                                                                                                           |
 | public boolean setCompany(\[boolean value\])                             |                                                                                                                           |
 | public str shortCut(\[str value\])                                       |                                                                                                                           |
@@ -3140,7 +3140,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method menuFunctionName
 
@@ -3180,7 +3180,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -3218,7 +3218,7 @@ The current value of the neededAccessLevel property.
 
 #### Remarks
 
-The possible values for the AccessType system enumuration value are as follows:
+The possible values for the AccessType system enumeration value are as follows:
 
 -   AccessType::NoAccess.
 -   AccessType::View.
@@ -3268,7 +3268,7 @@ parameter
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -3282,7 +3282,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method securityKey
 
@@ -3433,7 +3433,7 @@ A menu item represents the user interface of a menu function. Menu items are lin
 | public MenuItemType menuItemType(\[MenuItemType value\])   |                                                                                                                                               |
 | public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str parameter(\[str parameter\])                    |                                                                                                                                               |
-| public str parameters(\[str value\])                       | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                        |
+| public str parameters(\[str value\])                       | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                        |
 | public str shortCut(\[str value\])                         |                                                                                                                                               |
 | public boolean showParentModule(\[boolean value\])         |                                                                                                                                               |
 | public boolean visible(\[boolean value\])                  |                                                                                                                                               |
@@ -3535,7 +3535,7 @@ parameter
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -3549,7 +3549,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method shortCut
 
@@ -3734,7 +3734,7 @@ Specifies whether the method is public, protected, or private.
 
 #### Return Value
 
-An AccessSpecifier enum value that specifies whether the method is public, proctected, or private.
+An AccessSpecifier enum value that specifies whether the method is public, protected, or private.
 
 ### Method compiledOk
 
