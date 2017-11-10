@@ -5,7 +5,7 @@ title: Upgrade Finance and Operations to the latest platform update
 description: This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
 author: tariqbell
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,7 +47,7 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on a platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
