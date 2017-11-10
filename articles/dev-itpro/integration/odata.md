@@ -5,7 +5,7 @@ title: OData
 description: This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -232,7 +232,3 @@ The OData protocol supports many similar filtering and querying options on entit
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
-
-
-
-
