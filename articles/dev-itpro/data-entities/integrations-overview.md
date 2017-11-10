@@ -45,8 +45,8 @@ The following table lists the integration patterns available for Finance and Ope
 | OData                         | [Odata](odata.md)                                               |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)                              |
 |                               | [Data management API](data-management-api.md)                                 |
-| Custom service                | [Services home page, Custom services](services-home-page.md#custom-services)                 |
-| Consume external web services | [Services home page, Consuming external web services](services-home-page.md#consuming-external-web-services) |
+| Custom service                | [Services home page, Custom services](custom-services.md)                 |
+| Consume external web services | [Services home page, Consuming external web services](consume-external-web-services.md) |
 
 
 ### Synchronous vs asynchronous integration patterns
