@@ -37,6 +37,6 @@ This procedure walks you through generating Standard Audit File (FEC) for France
 Before you can generate an FEC file, you must import the latest version of the Electronic reporting configuration **Import configuration "FEC Accounting data XML (FR)**. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 ## Generate the Standard Audit File for France
-1.	Go to **General Ledger** > **Inquires and reports** > **Ledger reports**** > **FEC Accounting data export** to open the **Electronic report parameters page**.
+1.	Go to **General Ledger** > **Inquires and reports** > **Ledger reports** > **FEC Accounting data export** to open the **Electronic report parameters** page.
 2.	Enter the date range for the file.
 3.	Click **OK**.
