@@ -77,7 +77,7 @@ The demo data packages will be released via LCS and matched to the release for w
 There are some steps that you will need to do manually before you load the data. 
 1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the User information data entity spreadsheet or, after loading data, in the System administration, Users form.
 2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
-3) The Ready to post scheduler must be started. This batch will post transactions automatically. Follow the steps described for Ready to Post below.
+3) The Ready to post batch scheduler must be started. This batch will post transactions automatically. Follow the steps described for Ready to Post below. You must start the schedule in every legal entity in which you want data to be processed.
 4) You need to set up policy precedence rules. Use Procurement and sourcing, Setup, Policies, Purchasing policies and select the Parameters menu item. Click on Companies and move it to the right hand column.
 5) Prior to loading the Project Management and Accounting package, the resource capacity roll-up batch job should be run. The batch can be run from Project management and accounting, Periodic, Capacity synchronization, Synchronize resource capacity roll-ups form. Use an end date that will allow you to schedule resources well into the future. After the batch is run, then the project work breakdown structure auto generation of team functionality will be enabled.
 
@@ -144,7 +144,7 @@ You can access the Ready to post form using System administration, Periodic task
 
 To create a Ready to post job, follow these steps:
 1) Select the Create posting monitor menu and set up the batch parameters so that you have a recurring batch running. You only have to do this step once to initiate the posting batch process.
-2) Select New and enter a name for the demo data job
+2) Select New and enter a name for the demo data job. This job name must be unique and it must be unique across all companies.
 3) Use Add line to add a transaction type. 
 4) Select the transaction target. For journals, it is Post. For other transactions, it may change depending on the transaction type.
 4) Specify a start and end date range to limit the transactions that will be processed (when available)
@@ -162,17 +162,17 @@ The following columns appear in the Ready to post entity:
 
 | Column | Purpose | 
 |------|--------|
-| RUNID | A unique demo data job id that you want to execute. Use the same ID for every line that belongs to a single job.|
-| LINENUM | The order in which the tasks will be executed. |
-| DATAPROJECTID | A link to the data project that contained the Ready to post entity. This is for export only.|
-| DOCUMENT | The document type that you want to process. |
-| DOCUMENTTARGET | The process that you want to run. For journals, it can only be Post. For transactions like sales order, it will match the options shows in the form when you add that task. |
-| FROMDOCUMENTDATE | An optional from date that limits the transactions that you want to process. |
-| FROMDOCUMENTID | An optional from document that limits the transactions that you want to process. |
-| PROCESSONIMPORT | If you update this value to Yes, the demo data job will be set to Ready and the process monitor will pick it up without any action required. |
-| RUNSTATUS | The status of your demo data project. This is for export only. |
-| TODOCUMENTDATE | An optional to date that limits the transactions that you want to process. |
-| TODOCUMENTID | An optional to document that limits the transactions that you want to process. |
+| DemoDataJob | A unique demo data job id that you want to execute. Use the same ID for every line that belongs to a single job.|
+| LineNum | The order in which the tasks will be executed. |
+| DataProjectId | A link to the data project that contained the Ready to post entity. This is for export only.|
+| DemoDataJobStatus | The status of your demo data project. This is for export only. |
+| Document | The document type that you want to process. |
+| DocumentTarget | The process that you want to run. For journals, it can only be Post. For transactions like sales order, it will match the options shows in the form when you add that task. |
+| EndDate | An optional end date that limits the transactions that you want to process. |
+| FromDocument | An optional from document that limits the transactions that you want to process. |
+| ProcessOnImport | If you update this value to Yes, the demo data job will be set to Ready and the process monitor will pick it up without any action required. |
+| StartDate | An optional start date that limits the transactions that you want to process. |
+| ToDocument | An optional to document that limits the transactions that you want to process. |
 
 Insert the Ready to post entity at the end of your data project after all of the transaction entities by using a sequence number in the data project that is higher than the ones used by the transactions entities. If you have a mix of transactions where some of them should be processed and others should not be processed, you must use the date and document ranges to limit which transactions are processed. If you can't use the ranges, you will need a separate data package for the unposted transactions.
 
