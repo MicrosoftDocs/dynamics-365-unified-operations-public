@@ -131,7 +131,7 @@
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
-## [Data management platform](../dev-itpro/data-entities/data-entities-data-packages.md)
+## [Data management framework](../dev-itpro/data-entities/data-entities-data-packages.md)
 
 ### [Data entities](../dev-itpro/data-entities/data-entities.md)
 
