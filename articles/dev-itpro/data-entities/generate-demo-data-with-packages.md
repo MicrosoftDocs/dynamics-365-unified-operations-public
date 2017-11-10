@@ -119,22 +119,22 @@ Many scenarios for demo data require that transactions be processed after they a
 
 The following transaction types are supported for posting demo data:
 
-| Document | Date filter | ID filters | Other filters |  
-|------|--------|--------|--------|
-| Budget registry update | Default Date | Budget entry number | Not in use, Status = Draft. |
-| Costing version | n/a | Version Id | Version Activation blocked = No. | 
-| Customer payment journal | n/a | Journal number | Not posted, not workflow, not system blocked. | 
-| Daily journal | n/a | Journal number | Not posted, not workflow, not system blocked. |
-| Fixed assets journal | n/a | Journal number | Not posted, not workflow, not system blocked. |
-| Free text invoice | Invoice Date | n/a |  |
-| Inventory adjustment journal | n/a | Journal number | Not posted. |
-| Invoice journal | n/a | Journal number | Not posted, not workflow, not system blocked. |
-| Price calculation| n/a | Version Id | Version Activation blocked = No. |
-| Purchase order | Delivery date | Purchase order id | Able to confirm/PR/Vendor confirm/invoice. |
-| Sales Order | Delivery date | Sales order id | Able to confirm/packing slip/invoice. |
-| Trade agreement | n/a | Price/discount journal number. |  |
-| Vendor invoice | Posting date | Invoice number | Approved, not in use, not yet . |
-| Vendor payment journal | n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Document | Entity document ID | Date filter | ID filters | Other filters |  
+|------|--------|--------|--------|--------|
+| Budget registry update | BudgetRegistryUpdate |Default Date | Budget entry number | Not in use, Status = Draft. |
+| Costing version | CostingVersion |n/a | Version Id | Version Activation blocked = No. | 
+| Customer payment journal | CustomerPaymentJournal |n/a | Journal number | Not posted, not workflow, not system blocked. | 
+| Daily journal | GeneralJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Fixed assets journal | FixedAssetsJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Free text invoice | FreeTextInvoice |Invoice Date | n/a |  |
+| Inventory adjustment journal | InventoryAdjustmentJournal |n/a | Journal number | Not posted. |
+| Invoice journal | InvoiceJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Price calculation | PriceCalculation |n/a | Version Id | Version Activation blocked = No. |
+| Purchase order | PurchaseOrder |Delivery date | Purchase order id | Able to confirm/PR/Vendor confirm/invoice. |
+| Sales order | SalesOrder |Delivery date | Sales order id | Able to confirm/packing slip/invoice. |
+| Trade agreement | TradeAgreement |n/a | Price/discount journal number. |  |
+| Vendor invoice | VendorInvoice |Posting date | Invoice number | Approved, not in use, not yet . |
+| Vendor payment journal | VendorPaymentJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
 
 ### The Ready to post process
 The Ready to post feature uses a batch to monitor the list of transaction types that you want to post. Once the monitor detects a transaction that you want to post, it uses the transaction type to generate a batch that posts those transactions. The batch is the same batch that is used when you click on the button in the user interface for that transaction that initiates an action such as Post or Invoice. Once the transaction batch is complete, the Ready to post monitor updates the list with the results of the processing and with links to the batch and the original transaction.
@@ -151,11 +151,28 @@ To create a Ready to post job, follow these steps:
 5) Specify a from and to document range to limit the transactions that will be processed (when available)
 6) Use Add line to add additional transaction types. You can use the same type on multiple lines.
 7) Click on the menu Mark ready to post. It will change the status from Open to Ready and the posting monitor will start processing each line.
-8) If you want to process the document immediately, click on the Process documents menu. The batch status will change to Submitted and a batch will be started without using the posting monitor.
-9) When the batch is complete, the status will change to Complete. The posting results will be displayed at the bottom of the form.
+8) If you want to process the document immediately, click on the Process documents menu. The batch status will change to Scheduled and a batch will be started without using the posting monitor.
+9) When the batch is running, the status will be changed to In Progress
+10) When the batch is complete, the status will change to Successful or Error depending on the results. The posting results will be displayed at the bottom of the form.
 
 ### Using the Ready to post entity to process transactions
-An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form and you can follow the steps above to process the transactions. If you update the value for PROCESSONIMPORT to be Yes in your data package spreadsheet, the demo data job will be set to Ready and the process monitor will pick it up without any action required.
+An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form and you can follow the steps above to process the transactions. 
 
+The following columns appear in the Ready to post entity:
 
+| Column | Purpose | 
+|------|--------|
+| RUNID | A unique demo data job id that you want to execute. Use the same ID for every line that belongs to a single job.|
+| LINENUM | The order in which the tasks will be executed. |
+| DATAPROJECTID | A link to the data project that contained the Ready to post entity. This is for export only.|
+| DOCUMENT | The document type that you want to process. |
+| DOCUMENTTARGET | The process that you want to run. For journals, it can only be Post. For transactions like sales order, it will match the options shows in the form when you add that task. |
+| FROMDOCUMENTDATE | An optional from date that limits the transactions that you want to process. |
+| FROMDOCUMENTID | An optional from document that limits the transactions that you want to process. |
+| PROCESSONIMPORT | If you update this value to Yes, the demo data job will be set to Ready and the process monitor will pick it up without any action required. |
+| RUNSTATUS | The status of your demo data project. This is for export only. |
+| TODOCUMENTDATE | An optional to date that limits the transactions that you want to process. |
+| TODOCUMENTID | An optional to document that limits the transactions that you want to process. |
+
+Insert the Ready to post entity at the end of your data project after all of the transaction entities by using a sequence number in the data project that is higher than the ones used by the transactions entities. If you have a mix of transactions where some of them should be processed and others should not be processed, you must use the date and document ranges to limit which transactions are processed. If you can't use the ranges, you will need a separate data package for the unposted transactions.
 
