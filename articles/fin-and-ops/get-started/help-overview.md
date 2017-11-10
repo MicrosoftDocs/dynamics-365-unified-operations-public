@@ -87,7 +87,7 @@ All products share a single table of contents on the docs site, which enables cu
 We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
 
 ##### Leave us a comment 
-If you have feedback or questions about a topic, leave us a comment at the bottom of the page. 
+If you have feedback or questions about a topic, leave us a comment at the bottom of the page. You can also follow a comment thread by clicking the +Follow button below the comment box.  
 
 1 Click **Comments** to get to the comments at the bottom of the page.
 
@@ -105,6 +105,7 @@ Or
 On the right, enter an email address, and a new password to create a new account for the site. 
 
 ![Sign in options](./media/signin-options.png)
+
 
 ##### Suggest a change or contribute content through GitHub
 To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
