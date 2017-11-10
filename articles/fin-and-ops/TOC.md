@@ -133,7 +133,7 @@
 
 ## [Data management platform](../dev-itpro/data-entities/data-entities-data-packages.md)
 
-### [Data entities overview](../dev-itpro/data-entities/data-entities.md)
+### [Data entities](../dev-itpro/data-entities/data-entities.md)
 
 #### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
 #### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
