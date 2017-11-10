@@ -37,6 +37,8 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 
+[!NOTE] This topic applies to Microsoft Azure SQL databases connected to sandbox UAT environments.
+
 You might want to retain a copy of a Finance and Operations database process in several situations:
 
 -   To take strategic backups to restore to in the future. For example, before or after a major code update you might want copies to use for reference later.
