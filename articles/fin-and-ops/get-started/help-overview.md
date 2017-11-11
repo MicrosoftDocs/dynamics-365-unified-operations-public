@@ -76,18 +76,17 @@ We get a lot of questions about how to search for our content. On our site, if y
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
 site:docs.microsoft.com dynamics 365 "search term".  
 
-![Site search](./media/site-search-1.png)
-
-![Site search results](./media/site-search-results-2.png)
-
 ### The docs.microsoft.com table of contents
-All products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
+Finance and Operations, Retail, and Talent all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for.
+
+### Follow a topic
+To follow a topic, click the +Follow button below the comment box. You will need to log in to follow the topic. See [Leave us a comment](#leave-us-a-comment) for details.  
 
 ### Give feedback 
 We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
 
 ##### Leave us a comment 
-If you have feedback or questions about a topic, leave us a comment at the bottom of the page. You can also follow a comment thread by clicking the +Follow button below the comment box.  
+If you have feedback or questions about a topic, leave us a comment at the bottom of the page.  
 
 1 Click **Comments** to get to the comments at the bottom of the page.
 
