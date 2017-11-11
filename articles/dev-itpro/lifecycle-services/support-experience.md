@@ -139,6 +139,16 @@ Based on the duties assigned to you, you will see either the **Download view** o
 **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
 - **Request view:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
+### Search for VSTS work items
+
+VSTS Project admin can publish work items to your organization users by tagging the VSTS work items with **#SearchableFinanceAndOperation**. The tagged work itmes will be searchable to users from the client and display in the search result pane in addition to Microsoft publisehd updates and fiexes. 
+
+The published VSTS work items are **view** only when access from the client.  
+
+**Note:** The publisehd VSTS work items are only visible to your organization's users.
+
+
+
 ### Create and submit a new issue
 
 If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
