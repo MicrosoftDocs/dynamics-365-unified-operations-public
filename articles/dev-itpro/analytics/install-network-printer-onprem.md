@@ -51,7 +51,7 @@ The following section is used by the Environment Administrator to enable network
 1.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services
 2.  Now, use the [instructions here](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to Configure Print and Document Services
 
-Now, perform the following actions for each server used to host the application "AXService"
+<b>Important:</b> Perform the following actions for each server used to host the application "AXService"
 1.  Start the <b>Local Users and Groups</b> manager on the local server
 2.  Select the <b>Groups</b> node
 3.  Select <b>Print Operators</b>, then <b>right + click</b> and select <b>Add to Group</b>
