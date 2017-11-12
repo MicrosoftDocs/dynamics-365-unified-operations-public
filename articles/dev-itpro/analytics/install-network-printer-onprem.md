@@ -48,12 +48,9 @@ Before the Organization Administrator can begin adding Network Printers to Dynam
 <h3>Installing and Configuring Print and Document Services</h3>
 The following section is used by the Environment Administrator to enable network printing services.
 
-1.  Follow [this
-    link](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to
-    install Print and Document Services.
-2.  Follow [this
-    link](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to
-    configure Print and Document Services.
+1.  Use the instructions [here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services.
+2.  Next, you'll need to [Configure Print and Document Services](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx)
+
 <b>Note:</b> Do the following tasks for each server used to host the application "AXService"
 3.  Start the <b>Local Users and Groups</b> manager on the local server
 4.  Select the <b>Groups</b> node
