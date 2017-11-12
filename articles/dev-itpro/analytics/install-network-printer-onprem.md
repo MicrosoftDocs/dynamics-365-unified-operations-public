@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 <h2>INTRODUCTION</h2>
 
-This articles describes the process for connecting a Dynamics 365 for Operations and Finance On-Premise deployment to existing network printer devices. Network printing in the on-premise application is supported by the Print and Document Services in Windows Server 2016 which allows you to centralize printer management tasks.  Installing and Configuring the Print and Document Services requires administrative access to server hosting the primary AOS instance.
+This articles describes the process for connecting a Dynamics 365 for Operations and Finance On-Premise deployment to existing network printer devices. Network printing in the on-premise application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) in Windows Server 2016 which allows you to centralize printer management tasks.  Installing and Configuring the Print and Document Services requires administrative access to server hosting the primary AOS instance.
 
 There are two roles associated with configuring the network printing services:
 -  <b>Service Administrator</b> - this person is responsible for installing and configuring the platform infrastructure components.  Traditionally, an AD account with elevated domain privileges, this role has sufficient privileges to install Windows Server components.
@@ -48,18 +48,18 @@ Before the Organization Administrator can begin adding Network Printers to Dynam
 <h3>Installing and Configuring Print and Document Services</h3>
 The following section is used by the Environment Administrator to enable network printing services.
 
-1.  Use the instructions [here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services.
-2.  Next, you'll need to [Configure Print and Document Services](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx)
+1.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services
+2.  Now, use the [instructions here](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to Configure Print and Document Services
 
-<b>Note:</b> Do the following tasks for each server used to host the application "AXService"
-3.  Start the <b>Local Users and Groups</b> manager on the local server
-4.  Select the <b>Groups</b> node
-5.  Select <b>Print Operators</b>, then <b>right + click</b> and select <b>Add to Group</b>
+Now, perform the following actions for each server used to host the application "AXService"
+1.  Start the <b>Local Users and Groups</b> manager on the local server
+2.  Select the <b>Groups</b> node
+3.  Select <b>Print Operators</b>, then <b>right + click</b> and select <b>Add to Group</b>
         ![](media/3048eae34e89e7f3c1a26119a9f7b103.png)
-6.  Now add the network AD account used to run the AXService to the group
-7.  Install network printers by using AXService user account. This step ensures the printer driver is available to AXService user account.
-8.  Print a test page with installed printers to make sure all the connections are configured correctly.
-9.  Restart AXService application to ensure the user’s profile is loaded correctly to look up printer driver.
+4.  Now add the network AD account used to run the AXService to the group
+5.  Install network printers by using AXService user account. This step ensures the printer driver is available to AXService user account.
+6.  Print a test page with installed printers to make sure all the connections are configured correctly.
+7.  Restart AXService application to ensure the user’s profile is loaded correctly to look up printer driver.
 
 <h3>Managing Network Printers for the Dynamics 365 for Operations Applications</h3>
 The following section is used by the System Administrator to define network printers for the application
