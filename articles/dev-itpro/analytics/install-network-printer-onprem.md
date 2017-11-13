@@ -2,10 +2,10 @@
 # required metadata
 
 title: Install network printer devices in on-premises environments
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This articles describes the process for connecting a Dynamics 365 for Finance and Operations on-premises deployment to existing network printer devices. 
 author: TJVass
 manager: AnnBe
-ms.date: 11/07/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,20 +33,17 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-<h2>INTRODUCTION</h2>
-
-This articles describes the process for connecting a Dynamics 365 for Operations and Finance On-Premise deployment to existing network printer devices. Network printing in the on-premise application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) in Windows Server 2016 which allows you to centralize printer management tasks.  Installing and Configuring the Print and Document Services requires administrative access to server hosting the primary AOS instance.
+This articles describes the process for connecting a Dynamics 365 for Finance and Operations on-premises deployment to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) feature in Windows Server 2016, which allows you to centralize printer management tasks.  Installing and configuring  Print and Document Services requires administrative access to the server hosting the primary AOS instance.
 
 There are two roles associated with configuring the network printing services:
--  <b>Service Administrator</b> - this person is responsible for installing and configuring the platform infrastructure components.  Traditionally, an AD account with elevated domain privileges, this role has sufficient privileges to install Windows Server components.
+-  <b>Service Administrator</b> - This person is responsible for installing and configuring the platform infrastructure components.  Traditionally, an active directory account with elevated domain privileges, this role has sufficient privileges to install Windows Server components.
 
--  <b>Organization Administrator</b> - this person manages application security privileges.  This AD account belongs to the System
-     Administrator Role in Dynamics 365 for Operations & Finance.
+-  <b>Organization Administrator</b> - This person manages application security privileges.  This active directory account belongs to the System Administrator role in Finance and Operations.
 
-Before the Organization Administrator can begin adding Network Printers to Dynamics 365 for Operations & Finance, the Service Administrator must install and configure Print and Document Services on the server hosting the primary AOS instance.  Once that is complete, the Organization Administrator can begin using built-in tools to configure network printer devices.
+Before the Organization Administrator can begin adding network printers, the Service Administrator must install and configure Print and Document Services on the server hosting the primary AOS instance.  Once that is complete, the Organization Administrator can begin using built-in tools to configure network printer devices.
 
-<h3>Installing and Configuring Print and Document Services</h3>
-The following section is used by the Environment Administrator to enable network printing services.
+<h3>Install and configure Print and Document Services</h3>
+The following section is used by the environment administrator to enable network printing services.
 
 1.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services
 2.  Now, use the [instructions here](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to Configure Print and Document Services
