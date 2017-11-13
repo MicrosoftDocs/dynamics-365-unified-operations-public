@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition Doc
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
