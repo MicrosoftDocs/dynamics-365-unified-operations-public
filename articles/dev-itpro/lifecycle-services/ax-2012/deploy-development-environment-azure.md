@@ -40,7 +40,7 @@ ms.dyn365.ops.version: 2012
 Prerequisites
 -------------
 
-Before you complete the procedures in this article, make sure that the following prerequisites are in place.
+Before you complete the procedures in this topic, make sure that the following prerequisites are in place.
 
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -127,7 +127,9 @@ An Active Directory is required in the Azure virtual network. An Active Director
 </tr>
 <tr class="odd">
 <td>&lt;DomainName&gt;DynamicsInstallUser</td>
-<td>AX 2012 R3 installation accountNote: This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
+<td>AX 2012 R3 installation account 
+    
+    Note: This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
 <ol>
 <li>Click <strong>Start</strong>, click <strong>Run</strong>, type dsa.msc, and then click <strong>OK</strong>.</li>
 <li>In the task pane, expand the domain node.</li>
