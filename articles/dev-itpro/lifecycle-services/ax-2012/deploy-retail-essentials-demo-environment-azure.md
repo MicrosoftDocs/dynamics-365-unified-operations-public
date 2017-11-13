@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a Retail essentials demo environment on Azure (AX 2012)
-description: This article explains how to deploy a Retail essentials demo environment on Microsoft Azure.
+description: This topic explains how to deploy a Retail essentials demo environment on Microsoft Azure.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 2012
 
 
 
-This article explains how to deploy a Retail essentials demo environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+This topic explains how to deploy a Retail essentials demo environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 
 ## Prerequisites
 Before you complete the procedures in this article, make sure that the following prerequisites are in place.
@@ -84,7 +84,7 @@ Complete the following procedure to deploy a Retail essentials demo environment 
 3.  Click **Retail essentials demo.**
 4.  In the **Environment name** field, enter a name for the environment that will be deployed.
 5.  Click **Advanced settings**.
-6.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed.Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99. When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8.If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
+6.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99. When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8.If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
 7.  To customize virtual network settings, click **Customize virtual network** settings. Then use the following table to enter information.
 
     <table>
