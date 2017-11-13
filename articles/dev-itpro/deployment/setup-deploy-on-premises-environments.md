@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -543,7 +543,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
    > 2. If a database with the same name exists, the database will be reused.
 
-6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a Powershell window with elevate privileges.
+6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a powershell window with elevate privileges.
 
 #### Configure the OrchestratorData database
 
@@ -745,11 +745,121 @@ You've now complete the setup of the infrastructure. The following sections desc
 
     ![Validate the agent](./media/ValidateAgent.PNG)
 
-## Deploy your Finance and Operations (on-premises) environment
-
+### <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
+ 
 1. In LCS, navigate to your on-premises project, go to **Environment** \> **Sandbox**, and then select **Configure**.
-2. Select your environment topology, and then complete the wizard to initiate your deployment.
-3. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
+2. For new deployments, select your environment topology, and then complete the wizard to initiate your deployment.
+3. If you have an existing deployment, see [Re-Deploy your Finance and Operations (on-premises) environment](#ReDeployFO)
+4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
+
+In case the deployment fails, you will see a **Reconfigure** button against your environment in LCS. Fix the underlying issue, click on **Reconfigure** and update any configuration changes to retry the deployment.   
+
+## <a name="ReDeployFO"></a> Re-Deploy your Finance and Operations (on-premises) environment
+
+Follow the below steps in case you need to add any new customizations or take a new platform update. 
+
+**Save your configuration**
+Before you delete the environment to update your environment, save your configuration. 
+1. In LCS navigate to **Project Settings** -> **On-prem Connectors**
+2. Select the connector to your environment and click **Edit**
+3. In the **Edit connector** tab navigate to **Configure Agent** -> **Enter Configuration**
+4. Copy the value of **Download Fileshare location** in the **Configuration Settings** section for later use.
+5. Log in to the on-premise environment file share machine and copy the **<fileshare>\agent\wp\<environment name>\StandaloneSetup\config.json**. You can use the configuration settings in this json file to redeploy your environment.
+
+**Re-deploy your environment**
+1. In LCS navigate to the **Environments** blade in your on-premises project
+2. Click on the **Delete** button to delete your environment. 
+3. Wait for a few minutes to ensure the deployment is deleted.
+4. To confirm the deployment is deleted, log in to the on-premise environment and navigate to the service fabric explorer.
+5. You should see the below applications deleted
+    1. AXBootstapperAppType
+    2. AXSFType
+    3. FinancialReportingType
+    4. RTGatewayAppType
+    5. ReportingService
+6. The below applications will **not** be deleted
+    1. LocalAgentType
+    2. MonitoringAgentAppType
+7. Once all applications in step 5 are deleted, go back to LCS and click on the **Configure** button
+8. You can now use the relevant configurations (see below) saved in the **Save your Configuration** step to **Configure** your environment.
+
+#### Active Directory Federation Services Settings
+ 
+**The Email address of the user who will be the initial administrator (E.g. adminuser@yourdomain.com)**
+components. (where item's name is AOS).parameters.provisioning.adminPrincipleName.value
+ 
+**ADFS OpenID metadata endpoint for the Dynamics 365 Application group. (E.g. https://[federation-service-name]/adfs/.well-known/openid-configuration)**
+components. (where item's name is AOS).parameters.activeDirectory.adfsMetadata.value
+ 
+**ADFS OpenID Connect client ID for the AOS application group**
+components. (where item's name is AOS).parameters.activeDirectory.adfsClientId.value
+ 
+**ADFS OpenID Connect client ID for the Financial Reporting application group**
+components. (where item's name is FinancialReporting).parameters.aad.nativeClientAuthentication.clientId.value
+ 
+#### SQL Database Configuration
+ 
+**SQL SERVER**
+components. (where item's name is AOS).parameters.database.dbServer.value
+ 
+**AX DATABASE**
+components. (where item's name is AOS).parameters.database.dbName.value
+ 
+**FINANCIAL REPORTING DATABASE**
+components. (where item's name is FinancialReporting).parameters.mrdb.dbName.value
+ 
+#### File Share Settings
+ 
+**FILE SHARE SETTINGS**
+**The file share path for the Microsoft Dynamics 365 Instance. This share is used as the document store for files uploaded by users.**
+components. (where item's name is AOS).parameters.storage.fileSharePath.value *
+ 
+**The File Share Certificate Thumbprint for the Microsoft Dynamics 365 Instance**
+components. (where item's name is AOS).parameters.storage.sharedAccessThumbprint.value
+ 
+#### SSRS Configuration Settings
+
+**The IP Address of the SSRS instance**
+components. (where item's name is AOS).parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value
+ 
+**The thumbprint used by the SSRS application to communicate with AX Service**
+components. (where item's name is ReportingServices).parameters.reportingClientCertificateThumbprint.value
+ 
+#### Configure Service Settings
+
+**DYNAMICS 365 DNS INFORMATION**
+components. (where item's name is AOS).parameters.infrastructure.hostName
+ 
+**AOS SERVICE PRINCIPAL USER SETTINGS**
+components. (where item's name is AOS).parameters.infrastructure.principalUserAccountName *
+ 
+**MR SERVICE PRINCIPAL USER SETTINGS**
+**The group managed service account (gMSA) to run the MR application service, e.g. yourdomain\Svc-FRAS$**
+components. (where item's name is FinancialReporting).parameters.ApplicationServicePrincipalUser.accountName.value *
+ 
+**The group managed service account (gMSA) to run the MR process service, e.g. yourdomain\Svc-FRPS$**
+components. (where item's name is FinancialReporting).parameters.ProcessServicePrincipalUser.accountName.value *
+ 
+**The group managed service account (gMSA) to run the MR click-once service, e.g. yourdomain\Svc-FRCO$**
+components. (where item's name is FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *
+ 
+#### Application Certificate Settings
+
+**The Thumbprint of the Data Encryption Certificate**
+components. (where item's name is AOS).parameters.database.dataEncryptionCertificateThumbprint.value
+ 
+**The Thumbprint of the Data Signing Certificate**
+components. (where item's name is AOS).parameters.database.dataSigningCertificateThumbprint.value
+ 
+**The Thumbprint of the Session Authentication Certificate**
+components. (where item's name is FinancialReporting).parameters.sessionAuthenticationCertificateThumbprint.value
+ 
+**The Thumbprint of the SSL Certificate used for WCF/SOAP support**
+components. (where item's name is AOS).parameters.infrastructure.sslCertificateThumbprint.value
+ 
+**The Thumbprint used by the Management Reporter to communicate with AX Service**
+components. (where item's name is FinancialReporting).parameters.tokenSpec.certThumbprint.value
+
 
 ## Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
