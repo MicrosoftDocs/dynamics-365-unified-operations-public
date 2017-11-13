@@ -33,12 +33,12 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-This articles describes the process for connecting a Dynamics 365 for Finance and Operations on-premises deployment to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) feature in Windows Server 2016, which allows you to centralize printer management tasks.  Installing and configuring  Print and Document Services requires administrative access to the server hosting the primary AOS instance.
+This articles describes the process for connecting a Dynamics 365 for Finance and Operations on-premises deployment to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) feature in Windows Server 2016, which allows you to centralize printer management tasks.  Installing and configuring Print and Document Services requires administrative access to the server hosting the primary AOS instance.
 
 There are two roles associated with configuring the network printing services:
 -  <b>Service Administrator</b> - This person is responsible for installing and configuring the platform infrastructure components.  Traditionally, an active directory account with elevated domain privileges, this role has sufficient privileges to install Windows Server components.
 
--  <b>Organization Administrator</b> - This person manages application security privileges.  This active directory account belongs to the System Administrator role in Finance and Operations.
+-  <b>Organization Administrator</b> - This person manages application security privileges.  This active directory account is assigned to the System Administrator role in Finance and Operations.
 
 Before the Organization Administrator can begin adding network printers, the Service Administrator must install and configure Print and Document Services on the server hosting the primary AOS instance.  Once that is complete, the Organization Administrator can begin using built-in tools to configure network printer devices.
 
