@@ -137,6 +137,9 @@
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
 
+
+
+
 ## Performance
 ### [Take a trace using Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK and multiuser testing with Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
@@ -347,6 +350,97 @@
 #### [Value Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md)
 #### [ValueDesign Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
+
+# Data integration
+## [Integration patterns](data-entities/integration-overview.md)
+
+## Data integration APIs
+### [Data management package API](data-entities/data-management-api.md)
+### [Service endpoints](data-entities/services-home-page.md)
+#### [Service authentication troubleshooting](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Custom services](data-entities/custom-services.md)
+### [Recurring integrations](data-entities/recurring-integrations.md)
+
+## Development for integration
+### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
+#### [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
+#### [Develop composite data entities](data-entities/develop-composite-data-entities.md)
+#### [Configure financial cross-company data sharing](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Create a record template to facilitate data entry](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Use a record template to create a new record](data-entities/tasks/use-record-template-new-record.md)
+
+### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
+#### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Consuming external web services](data-entities/consume-external-web-service.md)
+
+
+# [Data management](data-entities/data-entities-data-packages.md)
+
+## [Data entities](data-entities/data-entities.md)
+
+### [Configuration data projects](data-entities/configuration-data-projects.md)
+### [Configuration data packages](data-entities/configuration-data-packages.md)
+### [Copy configuration data between companies](data-entities/copy-configuration.md)
+### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Track changes to an entity](data-entities/entity-change-track.md)
+
+## Standard data entities
+### [Data entities report](data-entities/data-entities-report.md)
+### [Data entities: Accounts payable and taxes](data-entities/data-entities-accounts-payable-taxes.md)
+### [Data entities: Accounts receivable](data-entities/data-entities-accounts-receivable.md)
+### [Data entities: Bank](data-entities/data-entities-bank.md)
+### [Data entities: Beginning balances](data-entities/data-entities-beginning-balances.md)
+### [Data entities: Budget planning](data-entities/data-entities-budget-plan.md)
+### [Data entities: Budgeting](data-entities/data-entities-budgeting.md)
+### [Data entities: Costing](data-entities/data-entities-costing.md)
+### [Data entities: Expense management](data-entities/data-entities-expense-management.md)
+### [Data entities: Fixed assets](data-entities/data-entities-fixed-assets.md)
+### [Data entities: General ledger](data-entities/data-entities-general-ledger.md)
+### [Data entities: Global address book](data-entities/data-entities-global-address-book.md)
+### [Data entities: Human resources](data-entities/data-entities-human-resources.md)
+### [Data entities: Inventory management](data-entities/data-entities-inventory-management.md)
+### [Data entities: Master planning](data-entities/data-entities-master-plan.md)
+### [Data entities: Procurement and sourcing](data-entities/data-entities-procurement-sourcing.md)
+### [Data entities: Product information management](data-entities/data-entities-product-information-management.md)
+### [Data entities: Production control](data-entities/data-entities-production-control.md)
+### [Data entities: Project accounting](data-entities/data-entities-project-accounting.md)
+### [Data entities: Public sector](data-entities/data-entities-public-sector.md)
+### [Data entities: Retail](data-entities/data-entities-retail.md)
+### [Data entities: Sales and marketing execution](data-entities/data-entities-sales-marketing.md)
+### [Data entities: Sales and marketing pre-sales](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Data entities: System administration](data-entities/data-entities-system-administration.md)
+### [Data entities: Workflow](data-entities/data-entities-workflow.md)
+
+## [Data import and export jobs](data-entities/data-import-export-job.md)
+
+### [Best practices for importing vouchers using the General journal entity](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Development for data entities
+### [Create new data entities](data-entities/build-consuming-data-entities.md)
+### [Data entity properties](data-entities/behavioral-properties-data-entities.md)
+### [Create compute columns and virtual fields](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Cross-company behavior](data-entities/cross-company-behavior.md)
+### [Handling country/region codes](data-entities/countryregion-codes-configuration-keys.md)
+### [Inheritance patterns](data-entities/support-super-type-sub-type.md)
+### [Data entity wizard rules](data-entities/data-entity-wizard-rules.md)
+### [Metadata properties](data-entities/behavioral-properties-data-entities.md)
+### [Validations, defaults, and unmapped fields](data-entities/validations-defaults-unmapped-fields.md)
+### [Security and data entities](data-entities/security-data-entities.md)
+
+## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
 # [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)

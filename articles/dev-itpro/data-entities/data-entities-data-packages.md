@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Data entities and packages framework
-description: This topic provides information about using data entities and data entity packages. 
+title: Data management
+description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities and packages framework
+# Data management
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about using data entities and data entity packages. 
+This topic provides information data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, using data entities and data entity packages. 
 
 Data entities
 -------------
@@ -222,8 +222,5 @@ See also
 --------
 
 [Data entities](data-entities.md)
-
-[Data entities](data-entities.md)
-
 
 

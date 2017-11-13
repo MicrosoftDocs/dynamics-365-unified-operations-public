@@ -108,7 +108,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     -   PrimaryAddress \_ZipCode &gt; ZipCode
     -   PrimaryAddress \_Country &gt; Country
 
-    [ ](./media/data-entity-wizard-3.png)
+    ![Data entity wizard](./media/data-entity-wizard-3.png)
     
 11. Click **Finish**. A data entity item and staging table are added to the project.
 

@@ -131,69 +131,15 @@
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
-
-## Data management platform
-
-### [Data entities, projects, and packages](../dev-itpro/data-entities/data-entities.md)
-#### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
-##### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
-##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
-##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
-##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-##### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
-
-#### Standard data entities
-##### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
-##### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
-##### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
-##### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
-##### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
-##### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
-##### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
-##### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
-##### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
-##### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
-##### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
-##### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
-##### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
-##### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
-##### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
-##### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
-##### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
-##### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
-##### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
-##### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
-##### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
-##### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
-##### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
-##### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
-##### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
-
-#### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
-
-##### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
-
-#### Development for data entities
-##### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
-##### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
-##### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
-##### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
-##### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
-##### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
-##### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
-##### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
-
-### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-
-## Data integration framework
+## Data integration
+### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
 
 ### Data integration APIs
 #### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
 #### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
 ##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro/data-entities/odata.md)
+#### [OData](../dev-itpro//data-entities/odata.md)
+#### [Custom services](../dev-itpro/data-entities/custom-services.md)
 #### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
 ### Development for integration
@@ -218,7 +164,63 @@
 ###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
+#### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
 
+
+## [Data management](../dev-itpro/data-entities/data-entities-data-packages.md)
+
+### [Data entities](../dev-itpro/data-entities/data-entities.md)
+
+#### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
+#### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
+#### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+#### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+#### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
+
+### Standard data entities
+#### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
+#### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
+#### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
+#### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
+#### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
+#### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
+#### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
+#### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
+#### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
+#### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
+#### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
+#### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
+#### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
+#### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
+#### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
+#### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
+#### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
+#### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
+#### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
+#### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
+#### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
+#### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
+#### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
+#### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
+#### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
+
+### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
+
+#### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
+
+### Development for data entities
+#### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
+#### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
+#### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
+#### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
+#### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
+#### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
+#### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
+#### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
+
+### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
 
 ## [Financial management](../financials/index.md)
 

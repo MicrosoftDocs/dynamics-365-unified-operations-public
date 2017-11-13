@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition Doc
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -94,7 +94,9 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Data integration</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data management</a></p>
 
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
@@ -105,7 +107,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Data management</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></p>
 </td>
