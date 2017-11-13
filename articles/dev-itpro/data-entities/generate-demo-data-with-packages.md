@@ -123,18 +123,20 @@ The following transaction types are supported for posting demo data:
 |------|--------|--------|--------|--------|
 | Budget registry update | BudgetRegistryUpdate |Default Date | Budget entry number | Not in use, Status = Draft. |
 | Costing version | CostingVersion |n/a | Version Id | Version Activation blocked = No. | 
-| Customer payment journal | CustomerPaymentJournal |n/a | Journal number | Not posted, not workflow, not system blocked. | 
-| Daily journal | GeneralJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
-| Fixed assets journal | FixedAssetsJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Customer payment journal | CustomerPaymentJournal |Transaction date | Journal number | Not posted, not workflow, not system blocked. | 
+| Daily journal | GeneralJournal |Transaction date | Journal number | Not posted, not workflow, not system blocked. |
+| Fixed assets journal | FixedAssetsJournal |Transaction date | Journal number | Not posted, not workflow, not system blocked. |
 | Free text invoice | FreeTextInvoice |Invoice Date | n/a |  |
-| Inventory adjustment journal | InventoryAdjustmentJournal |n/a | Journal number | Not posted. |
-| Invoice journal | InvoiceJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Inventory adjustment journal | InventoryAdjustmentJournal |Transaction date | Journal number | Not posted. |
+| Invoice journal | InvoiceJournal |Transaction date | Journal number | Not posted, not workflow, not system blocked. |
 | Price calculation | PriceCalculation |n/a | Version Id | Version Activation blocked = No. |
 | Purchase order | PurchaseOrder |Delivery date | Purchase order id | Able to confirm/PR/Vendor confirm/invoice. |
 | Sales order | SalesOrder |Delivery date | Sales order id | Able to confirm/packing slip/invoice. |
 | Trade agreement | TradeAgreement |n/a | Price/discount journal number. |  |
 | Vendor invoice | VendorInvoice |Posting date | Invoice number | Approved, not in use, not yet . |
-| Vendor payment journal | VendorPaymentJournal |n/a | Journal number | Not posted, not workflow, not system blocked. |
+| Vendor payment journal | VendorPaymentJournal |Transaction date | Journal number | Not posted, not workflow, not system blocked. |
+
+For journals that support date ranges, the ready to post process looks at the journal lines to test for a date that falls in the specified range. If any line in the journal fall in the date range, the entire batch will be posted.
 
 ### The Ready to post process
 The Ready to post feature uses a batch to monitor the list of transaction types that you want to post. Once the monitor detects a transaction that you want to post, it uses the transaction type to generate a batch that posts those transactions. The batch is the same batch that is used when you click on the button in the user interface for that transaction that initiates an action such as Post or Invoice. Once the transaction batch is complete, the Ready to post monitor updates the list with the results of the processing and with links to the batch and the original transaction.
