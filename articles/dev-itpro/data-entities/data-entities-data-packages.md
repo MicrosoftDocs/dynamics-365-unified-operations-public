@@ -1,9 +1,10 @@
 ---
 # required metadata
 
-title: Data management framework
-description: This describes the data management framework in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+title: Data management
+description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: Sunil-Garg
+
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,8 +18,9 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margocs
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: margoc
+ms.search.scope: Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 96283
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
@@ -30,12 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data management framework
+# Data management
+
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This topic describes how you can use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 The data management framework consists of the following concepts: 
 
@@ -50,6 +53,41 @@ The data management framework supports using data entities in the following core
 - Data migration
 - Set up and copy configurations
 - Integration
+
+
+## Data entities
+
+Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Data Migration</strong></td>
+<td><ul>
+<li>Migrate reference, master, and document data from legacy or external systems.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Setup and copy configuration</strong></td>
+<td><ul>
+<li>Copy configuration between company/environments.</li>
+<li>Configure processes or modules using the Lifecycle Services (LCS) environment.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Integration</strong></td>
+<td><ul>
+<li>Real-time service based integration.</li>
+<li>Asynchronous integration.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
 
 ## Data migration
 Using the data management framework, you can quickly migrate reference, master, and document data from legacy or external systems. The framework is intended to help you quickly migrate data by using the following features: 
@@ -169,6 +207,10 @@ Export is the process of retrieving data from a system using data entities. The 
 
 After the project is created and saved you can export the project to create a job. During the export process, you can see a graphical view of the status of the job and the record count. This view shows multiple records so you can review the status of each record prior to downloading the actual files. 
 
+-   While importing the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
+-   If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
+
+
 [![Execution summary](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png) 
 
 [![Record counts](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png) 
@@ -177,6 +219,7 @@ After the job is completed you can choose how to download the files: each data e
 
 ## Import
 Import is the process of pulling data into a system using data entities. The import process is done through the **Import** tile in the **Data Management** workspace. Data can be imported either for individual entities or for a group of logically related entities that are sequenced in the correct order. The file formats vary depending on the type of import. For an entity, it can be an Excel file that is comma-separated, tab-separated, or text. For a data package, it is a .zip file. In both cases, the files are exported using the above mentioned export process. 
+
 
 ### Import a data package: 
 1.  Log into the environment using a login with sufficient privileges (typically this is the Administrator role).

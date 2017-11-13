@@ -18,7 +18,7 @@ ms.search.form: EFDocContingencyMode_BR, EFDocContingencyModeHistory_BR, EFDocCo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269114
 ms.assetid: 7cb522a4-2f84-4399-a60d-8692df6e08f3

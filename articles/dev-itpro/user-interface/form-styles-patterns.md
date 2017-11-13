@@ -5,7 +5,7 @@ title: Form styles and patterns
 description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
 author: jasongre
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28891
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
@@ -59,7 +59,7 @@ First, you must identify a target form and add it to your project. The **Form Pa
 
 ### Determine the pattern
 
-Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Finance and Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md)article. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
+Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Finance and Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md) topic. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
 
 ### Apply the pattern
 You can apply a pattern in three ways:
@@ -99,7 +99,7 @@ If you make a mistake, there are several actions that you can take:
 
 ### Why are some properties hidden when the pattern has been applied?
 
-Patterns enforce properties after the pattern structure has been successfully met. A property that is controlled by the pattern is hidden from developers because developers don't have to worry about that detail. This makes the development experience cleaner by reducing the "noise" in the Property Pane from properties whose values have been set by the patter and thus cannot bee modified by a developer while the pattern is applied. Developers who are interested in the properties that a pattern is setting can remove the pattern. All the property values will then be visible on all the controls that are covered by the pattern.
+Patterns enforce properties after the pattern structure has been successfully met. A property that is controlled by the pattern is hidden from developers because developers don't have to worry about that detail. This makes the development experience cleaner by reducing the "noise" in the Property Pane from properties whose values have been set by the patter and thus cannot be modified by a developer while the pattern is applied. Developers who are interested in the properties that a pattern is setting can remove the pattern. All the property values will then be visible on all the controls that are covered by the pattern.
 
 ### How do I identify the set of forms that I should be doing more pattern work on?
 
@@ -108,7 +108,7 @@ To identify the set of forms that still have remaining patterns work, you should
 -   **Filter the "Pattern" column to only show "(Blanks)"** -  This will show all the forms with no form pattern applied (no pattern specified on Form.Design).
 -   **Filter the "Unspecific count" column to only those values "greater than 0"** - This will show all forms where a pattern is expected on either Form.Design or a container control somewhere on the form.  You can combine this filter with the previously mentioned filter on the "Pattern" column to show only forms with subpattern work remaining.
 
-Note that there is no remaining patterns work left in your model(s) if there are no rows after the filters described previously are applied. If you want to make sure that all your forms are fully covered by patterns (meaning no unspecified nodes and no Custom nodes), filter the report down to those rows that have "Percent covered controls" less than 100 percent.
+Note that there are no remaining patterns work left in your models if there are no rows after the filters described previously are applied. If you want to make sure that all your forms are fully covered by patterns (meaning no unspecified nodes and no Custom nodes), filter the report down to those rows that have "Percent covered controls" less than 100 percent.
 
 ### How do I find places in a form where a pattern can be applied?
 

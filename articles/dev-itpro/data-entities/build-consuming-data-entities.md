@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
@@ -108,7 +108,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     -   PrimaryAddress \_ZipCode &gt; ZipCode
     -   PrimaryAddress \_Country &gt; Country
 
-    [ ](./media/data-entity-wizard-3.png)
+    ![Data entity wizard](./media/data-entity-wizard-3.png)
     
 11. Click **Finish**. A data entity item and staging table are added to the project.
 

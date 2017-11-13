@@ -54,57 +54,54 @@
 #### [X++ attribute classes](dev-ref/xpp-attribute-classes.md)
 #### [X++ and C\# comparison](dev-ref/xpp-cs-comparison.md)
 #### [X++ syntax](dev-ref/xpp-syntax.md)
-## Compile-time functions
+## [API, class, and table reference](dev-ref/api-reference.md)
 ### [X++ compile-time functions](dev-ref/xpp-compile-time-functions.md)
-## Run-time functions
-### [X++ business run-time functions](dev-ref/xpp-business-run-time-functions.md)
-### [X++ container run-time functions](dev-ref/xpp-container-run-time-functions.md)
-### [X++ conversion run-time functions](dev-ref/xpp-conversion-run-time-functions.md)
-### [X++ date run-time functions](dev-ref/xpp-date-run-time-functions.md)
-### [X++ math run-time functions](dev-ref/xpp-math-run-time-functions.md)
-### [X++ reflection run-time functions](dev-ref/xpp-reflection-run-time-functions.md)
 ### [X++ run-time functions](dev-ref/xpp-run-time-functions.md)
-### [X++ session run-time functions](dev-ref/xpp-session-run-time-functions.md)
-### [X++ string run-time functions](dev-ref/xpp-string-run-time-functions.md)
-## System tables
+#### [X++ business run-time functions](dev-ref/xpp-business-run-time-functions.md)
+#### [X++ container run-time functions](dev-ref/xpp-container-run-time-functions.md)
+#### [X++ conversion run-time functions](dev-ref/xpp-conversion-run-time-functions.md)
+#### [X++ date run-time functions](dev-ref/xpp-date-run-time-functions.md)
+#### [X++ math run-time functions](dev-ref/xpp-math-run-time-functions.md)
+#### [X++ reflection run-time functions](dev-ref/xpp-reflection-run-time-functions.md)
+#### [X++ session run-time functions](dev-ref/xpp-session-run-time-functions.md)
+#### [X++ string run-time functions](dev-ref/xpp-string-run-time-functions.md)
 ### [System tables](dev-ref/system-tables.md)
-## System classes
-### [API, class, and table reference](dev-ref/api-reference.md)
-### [A Classes](dev-ref/a-classes.md)
-### [B Classes](dev-ref/b-classes.md)
-### [C Classes](dev-ref/c-classes.md)
-### [D Classes](dev-ref/d-classes.md)
-### [E Classes](dev-ref/e-classes.md)
-### [F Classes: FieldBinding to FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F Classes: FormChangeTracker to FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F Classes: FormDataObject to FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F Classes: FormFastTabSummarySeparator to FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F Classes: FormGroupControl to FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F Classes: FormListBoxControl to FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F Classes: FormObject to FormRealControl](dev-ref/formobject-classes.md)
-### [F Classes: FormReferenceControl to FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F Classes: FormTabControl to FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [G Classes](dev-ref/g-classes.md)
-### [H Classes](dev-ref/h-classes.md)
-### [I Classes](dev-ref/i-classes.md)
-### [J Classes](dev-ref/j-classes.md)
-### [K Classes](dev-ref/k-classes.md)
-### [L Classes](dev-ref/l-classes.md)
-### [M Classes](dev-ref/m-classes.md)
-### [N Classes](dev-ref/n-classes.md)
-### [O Classes](dev-ref/o-classes.md)
-### [P Classes](dev-ref/p-classes.md)
-### [Q Classes](dev-ref/q-classes.md)
-### [R Classes](dev-ref/r-classes.md)
-### [S Classes](dev-ref/s-classes.md)
-### [T Classes](dev-ref/t-classes.md)
-### [U Classes](dev-ref/u-classes.md)
-### [V Classes](dev-ref/v-classes.md)
-### [W Classes](dev-ref/w-classes.md)
-### [X Classes](dev-ref/x-classes.md)
+### System classes
+#### [A Classes](dev-ref/a-classes.md)
+#### [B Classes](dev-ref/b-classes.md)
+#### [C Classes](dev-ref/c-classes.md)
+#### [D Classes](dev-ref/d-classes.md)
+#### [E Classes](dev-ref/e-classes.md)
+#### [F Classes: FieldBinding to FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F Classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F Classes: FormBuildFilterPaneControl to FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F Classes: FormBuildReferenceControl to FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F Classes: FormChangeTracker to FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F Classes: FormDataObject to FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F Classes: FormFastTabSummarySeparator to FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F Classes: FormGroupControl to FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F Classes: FormListBoxControl to FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F Classes: FormObject to FormRealControl](dev-ref/formobject-classes.md)
+#### [F Classes: FormReferenceControl to FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F Classes: FormTabControl to FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [G Classes](dev-ref/g-classes.md)
+#### [H Classes](dev-ref/h-classes.md)
+#### [I Classes](dev-ref/i-classes.md)
+#### [J Classes](dev-ref/j-classes.md)
+#### [K Classes](dev-ref/k-classes.md)
+#### [L Classes](dev-ref/l-classes.md)
+#### [M Classes](dev-ref/m-classes.md)
+#### [N Classes](dev-ref/n-classes.md)
+#### [O Classes](dev-ref/o-classes.md)
+#### [P Classes](dev-ref/p-classes.md)
+#### [Q Classes](dev-ref/q-classes.md)
+#### [R Classes](dev-ref/r-classes.md)
+#### [S Classes](dev-ref/s-classes.md)
+#### [T Classes](dev-ref/t-classes.md)
+#### [U Classes](dev-ref/u-classes.md)
+#### [V Classes](dev-ref/v-classes.md)
+#### [W Classes](dev-ref/w-classes.md)
+#### [X Classes](dev-ref/x-classes.md)
 
 ## [Extensibility home page](extensibility/extensibility-home-page.md)
 ### Introduction and getting started
@@ -140,13 +137,10 @@
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
 
-## [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
-### [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
-### [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
-### [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
-### [Version models in the automated build](dev-tools/version-models-build.md)
 
-## Performance home page
+
+
+## Performance
 ### [Take a trace using Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK and multiuser testing with Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
 ### [Diagnose problems and analyze performance issues using Trace parser](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [Testing and validations](perf-test/testing-validation.md)
 ### [Test projects in Visual Studio](perf-test/testing-support.md)
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
-## Dates
-### [Date effectivity](dev-tools/date-effectivity.md)
-## Licensing
-### [ISV licensing](dev-tools/isv-licensing.md)
+## [Date effectivity](dev-tools/date-effectivity.md)
+## [ISV licensing](dev-tools/isv-licensing.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -359,6 +351,104 @@
 #### [ValueDesign Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# Data integration
+## [Integration patterns](data-entities/integration-overview.md)
+
+## Data integration APIs
+### [Data management package API](data-entities/data-management-api.md)
+### [Service endpoints](data-entities/services-home-page.md)
+#### [Service authentication troubleshooting](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Custom services](data-entities/custom-services.md)
+### [Recurring integrations](data-entities/recurring-integrations.md)
+
+## Development for integration
+### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
+#### [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
+#### [Develop composite data entities](data-entities/develop-composite-data-entities.md)
+#### [Configure financial cross-company data sharing](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Create a record template to facilitate data entry](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Use a record template to create a new record](data-entities/tasks/use-record-template-new-record.md)
+
+### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
+#### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Consuming external web services](data-entities/consume-external-web-service.md)
+
+
+# [Data management](data-entities/data-entities-data-packages.md)
+
+## [Data entities](data-entities/data-entities.md)
+
+### [Configuration data projects](data-entities/configuration-data-projects.md)
+### [Configuration data packages](data-entities/configuration-data-packages.md)
+### [Copy configuration data between companies](data-entities/copy-configuration.md)
+### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Track changes to an entity](data-entities/entity-change-track.md)
+
+## Standard data entities
+### [Data entities report](data-entities/data-entities-report.md)
+### [Data entities: Accounts payable and taxes](data-entities/data-entities-accounts-payable-taxes.md)
+### [Data entities: Accounts receivable](data-entities/data-entities-accounts-receivable.md)
+### [Data entities: Bank](data-entities/data-entities-bank.md)
+### [Data entities: Beginning balances](data-entities/data-entities-beginning-balances.md)
+### [Data entities: Budget planning](data-entities/data-entities-budget-plan.md)
+### [Data entities: Budgeting](data-entities/data-entities-budgeting.md)
+### [Data entities: Costing](data-entities/data-entities-costing.md)
+### [Data entities: Expense management](data-entities/data-entities-expense-management.md)
+### [Data entities: Fixed assets](data-entities/data-entities-fixed-assets.md)
+### [Data entities: General ledger](data-entities/data-entities-general-ledger.md)
+### [Data entities: Global address book](data-entities/data-entities-global-address-book.md)
+### [Data entities: Human resources](data-entities/data-entities-human-resources.md)
+### [Data entities: Inventory management](data-entities/data-entities-inventory-management.md)
+### [Data entities: Master planning](data-entities/data-entities-master-plan.md)
+### [Data entities: Procurement and sourcing](data-entities/data-entities-procurement-sourcing.md)
+### [Data entities: Product information management](data-entities/data-entities-product-information-management.md)
+### [Data entities: Production control](data-entities/data-entities-production-control.md)
+### [Data entities: Project accounting](data-entities/data-entities-project-accounting.md)
+### [Data entities: Public sector](data-entities/data-entities-public-sector.md)
+### [Data entities: Retail](data-entities/data-entities-retail.md)
+### [Data entities: Sales and marketing execution](data-entities/data-entities-sales-marketing.md)
+### [Data entities: Sales and marketing pre-sales](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Data entities: System administration](data-entities/data-entities-system-administration.md)
+### [Data entities: Workflow](data-entities/data-entities-workflow.md)
+
+## [Data import and export jobs](data-entities/data-import-export-job.md)
+
+### [Best practices for importing vouchers using the General journal entity](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Development for data entities
+### [Create new data entities](data-entities/build-consuming-data-entities.md)
+### [Data entity properties](data-entities/behavioral-properties-data-entities.md)
+### [Create compute columns and virtual fields](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Cross-company behavior](data-entities/cross-company-behavior.md)
+### [Handling country/region codes](data-entities/countryregion-codes-configuration-keys.md)
+### [Inheritance patterns](data-entities/support-super-type-sub-type.md)
+### [Data entity wizard rules](data-entities/data-entity-wizard-rules.md)
+### [Metadata properties](data-entities/behavioral-properties-data-entities.md)
+### [Validations, defaults, and unmapped fields](data-entities/validations-defaults-unmapped-fields.md)
+### [Security and data entities](data-entities/security-data-entities.md)
+
+## [Bring your own database](analytics/export-entities-to-your-own-database.md)
+
+# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
+## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
+## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
+## [Version models in the automated build](dev-tools/version-models-build.md)
+
+
 # Release solutions using Lifecycle Services
 ## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
 ## [Stage and publish](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [Separate localization models](lcs-solutions/separate-localization-models.md)
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Financials development
+# [Financials development](financial/financial-dev-home-page.md)
 ## [Dimensions](financial/dimensions.md)
 ## [Add dimensions to an Excel template](financial/dimensions-overview.md)
 ## [Dimension Entry control dialog support](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
+### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -427,7 +516,7 @@
 ## [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [Analyze - Use the Upgrade analyzer tool to plan upgrade](migration-upgrade/upgrade-analyzer-tool.md)
 ### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](migration-upgrade/analyze-code-upgrade.md)
-### [Analyze - Deploy a sandbox enviroment](migration-upgrade/analysis-sandbox.md)
+### [Analyze - Deploy a sandbox environment](migration-upgrade/analysis-sandbox.md)
 ### [Upgrade - Data upgrade in a development environment](migration-upgrade/data-upgrade-2012.md)
 ### [Upgrade - AX 2012 data upgrade tasks](migration-upgrade/prepare-data-upgrade.md)
 ### [Upgrade - Data upgrade in a sandbox environment](migration-upgrade/upgrade-data-sandbox.md)
@@ -445,7 +534,7 @@
 #### [Migrate an upgraded sales cube to the entity store](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Upgrade budget planning](migration-upgrade/upgrade-budget-planning.md)
 
-## Code migration and upgrade
+## [Code migration and upgrade](migration-upgrade/code-migration-home-page.md)
 ### [Prepare to migrate code](migration-upgrade/prepare-migration.md)
 ### [Configure Visual Studio Team Services mapping during code migration](migration-upgrade/configure-vso-solution.md)
 ### [Split models](dev-tools/model-split.md)
@@ -476,6 +565,7 @@
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
 ## [Maintenance mode](sysadmin/maintenance-mode.md)
+## [Pre-configured system accounts](sysadmin/pre-configured-system-accounts.md)
 ## [Role-based security](sysadmin/role-based-security.md)
 ### [Security architecture](sysadmin/security-architecture.md)
 ### [Security reports](sysadmin/security-reports.md)
@@ -496,6 +586,7 @@
 ### [What's new](lifecycle-services/whats-new-lcs.md)
 ### [Known issues](lifecycle-services/known-issues.md)
 ## [Dynamics Lifecycle Services user guide](lifecycle-services/lcs-user-guide.md)
+## [Subscription estimator](lifecycle-services/subscription-estimator.md)
 ## [Configure security](lifecycle-services/configure-lcs-security.md)
 ## [Issue search](lifecycle-services/issue-search-lcs.md)
 ## [Configuration manager](lifecycle-services/configuration-manager-lcs.md)
@@ -507,12 +598,13 @@
 ## [Create, edit, or browse a BPM library](lifecycle-services/creating-editing-browsing.md)
 ## [Complete tasks in a BPM library](lifecycle-services/complete-tasks-bpm.md)
 ## [Use activity diagrams](lifecycle-services/using-activity-diagrams.md)
-## [Synchronize a BPM libary with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Synchronize a BPM library with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
+## [Track user log-ins](lifecycle-services/user-logins.md)
 ## [Asset library](lifecycle-services/asset-library.md)
-## [Microsoft Dynmaics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
+## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services features
@@ -594,6 +686,7 @@
 ## [Copy a database from SQL Server to a production Azure SQL Database environment](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Restore a database on a non-production environment](database/request-point-in-time-restore.md)
 ## [Export a copy of a database to restore later](database/copy-operations-database.md)
+## [Request a sandbox database refresh](database/database-refresh.md)
 
 # Support
 ## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)

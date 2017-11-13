@@ -5,7 +5,7 @@ title: Set up I-9 document types
 description: This procedure shows how to view and set up document types that are used for I-9 verification. 
 author: ShielaSogge
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -37,7 +37,7 @@ This procedure shows how to view and set up document types that are used for I-9
 3. In the I-9 document type field, type a value.
     * Example: School ID.  
 4. Select the identification type.  Example:  School ID
-    * Examples of identification types include a Social Security number (SSN), visa number, passport ID, or driver's licence.  
+    * Examples of identification types include a Social Security number (SSN), visa number, passport ID, or driver's license.  
 5. Select the I-9 document list that is used for the document type.
     * As part of the I-9 process, employees must present documentation that shows the employer their identity and employment authorization. The US Citizenship and Immigration Services website contains information about which documents are acceptable, and which list they belong to.  http://www.uscis.gov  
 6. In the Form field, Enter the official form number for the document type. Example: School ID.

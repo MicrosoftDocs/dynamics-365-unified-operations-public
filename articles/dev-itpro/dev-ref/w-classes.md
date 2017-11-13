@@ -5,7 +5,7 @@ title: W Classes
 description: System API classes that start with the letter W.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55901
 ms.assetid: ca08dc94-1481-4ac0-80f4-d092da5c1c90
@@ -308,7 +308,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method readPermissions
 
@@ -454,7 +454,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public EnumId enumTypeParameter(\[EnumId value\]) | Gets or sets the enumTypeParameter property for the MenuFunction class.                                                                   |
 | public str helpText(\[str value\])                | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                     |
-| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
 | public str object(\[str value\])                  | Gets or sets the object that the MenuFunction class runs.                                                                                 |
 | public int objectType(\[int value\])              |                                                                                                                                           |
 | public Guid origin(\[Guid value\])                |                                                                                                                                           |
@@ -585,7 +585,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialogue box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. dialog box. The The help text must not exceed 250 characters.
 
 ### Method label
 
@@ -607,7 +607,7 @@ The label determines which text is displayed in the control or adjacent to it.Th
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
 
     public str name([str value])
 
@@ -689,7 +689,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method reportDesign
 
@@ -1238,7 +1238,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method reportDesign
 
@@ -1773,7 +1773,7 @@ The current value of the neededAccessLevel property.
 
 #### Remarks
 
-The possible values for the AccessType system enumuration value are as follows:
+The possible values for the AccessType system enumeration value are as follows:
 
 -   AccessType::NoAccess
 -   AccessType::View
@@ -1992,7 +1992,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method label
 
@@ -2079,7 +2079,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public str menuItemName(\[str value\])                         |                                                                                                                                           |
 | public WebMenuItemType menuItemType(\[WebMenuItemType value\]) |                                                                                                                                           |
 | public str name(\[str value\])                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
-| public str parameters(\[str value\])                           | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                    |
+| public str parameters(\[str value\])                           | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                    |
 | public boolean showParentModule(\[boolean value\])             |                                                                                                                                           |
 
 ### Method label
@@ -2134,7 +2134,7 @@ The name property value of an object must meet the following criteria to avoid c
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -2148,7 +2148,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method showParentModule
 
@@ -2693,7 +2693,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method imageResource
 
@@ -2999,7 +2999,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method name
 
@@ -3319,7 +3319,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. CTS will ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects will ignore passed, unrecognized parameters.
 
 ### Method readPermissions
 

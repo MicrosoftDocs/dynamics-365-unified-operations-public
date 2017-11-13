@@ -2,10 +2,10 @@
 # required metadata
 
 title: Moving average
-description: 
+description: Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed. 
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
@@ -34,8 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed. 
+
+When you use moving average, inventory settlements and inventory marking are not supported. Inventory close does not affect products that have moving average as the inventory model group, and it does not generate any settlements between the transactions.
 
 The following are prerequisites when you use moving average cost as a costing method.
+
 1.  In the **Item model groups** page, set up an item model group that has Moving average selected in the **Inventory model** field. **Note:** By default, when Moving average is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected. 
 
 2.  In the **Posting** page, assign accounts to the **Price difference for moving average** and the **Cost revaluation for moving average** accounts on the **Inventory** tab. You use the **Price difference for moving average** account when cost has to be proportionally expensed. This occurs because of a difference in cost between a purchase receipt and the purchase invoice, and because of a difference between the original inventory quantity and the current on-hand quantity. Use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.
@@ -86,7 +90,7 @@ In this example, the moving average cost is adjusted for a product.
 In the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.
 
 ## Moving average with production
-Moving average supports produced items. If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selcted. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
+Moving average supports produced items. If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selected. This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.
 
 ## Moving average with a backdated transaction
 Backdated transactions are assigned the current moving average cost, and the product’s physical quantity is updated, but the product’s moving average cost is not affected. In this moving average example, a backdated transaction for a moving average product is posted.

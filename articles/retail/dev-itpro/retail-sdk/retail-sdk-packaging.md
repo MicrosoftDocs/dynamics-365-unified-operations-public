@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -66,8 +66,8 @@ Below are the list fo configurations available in Customization.Settings file:
 -   **CustomVersion** – Specify the custom file version for all assemblies that are built by using the Retail SDK.
 -   **CustomName** – Specify the custom name for the assembly.
 -   **CustomDescription** – Specify the description for the assembly.
--   **CustomDescription** – Specify the publisher for the assembly.
--   **CustomDescription** – Specify the copyright for the assembly.
+-   **CustomPublisher** – Specify the publisher for the assembly.
+-   **CustomPublisherDisplayName** – Specify the copyright for the assembly.
 -   **SignAssembly** – Specify **True** if you want to sign the assembly during the build.
 -   **DelaySign** – Specify **True** if you want to delay signing of the assets during the build.
 -   **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.

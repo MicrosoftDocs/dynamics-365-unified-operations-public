@@ -5,7 +5,7 @@ title: Budget planning integration with other modules
 description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
@@ -63,7 +63,7 @@ For each generation process, three actions are available:
 
 ### Source
 
-For all processes, the **Source** tab lets you filter data by using the **Filter** button. By default, specific fields are added to the filter for each process. For example, for the **Generate budget plan from general ledger** process, the **Ledger account** and **Main account** categories are available, and appear on the generation page. Any fields that you add to the filter are also added to the page, together with with any criteria that you add.
+For all processes, the **Source** tab lets you filter data by using the **Filter** button. By default, specific fields are added to the filter for each process. For example, for the **Generate budget plan from general ledger** process, the **Ledger account** and **Main account** categories are available, and appear on the generation page. Any fields that you add to the filter are also added to the page, together with any criteria that you add.
 
 ### Target
 

@@ -5,7 +5,7 @@ title: Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10254
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
@@ -120,7 +120,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
     [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
     
-    In the **Vehicle Maintenance** form, the **Stauts** field shows that your rental is awaiting examination by the service department. **Note**: You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
+    In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department. **Note**: You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
 9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. **Note**: You may need to refresh the page to get the full set of options under Workflow.
 10. Enter a comment, and then click **Examination complete**.
 11. You might again need to wait up to two minutes for the batch framework to process the change. On the Action Pane, click **Refresh** periodically, until you see the **Status** field change. Notice that the vehicle now has a status of **Awaiting Service**.
@@ -193,7 +193,7 @@ In this tutorial, you’ll launch an operational report that contains a list of 
     
 3.  Click **OK** to close the dialog box. The report will be rendered and show the list of customers. The report may take a minute to render.
 
-## Secure access using the rolebased security system
+## Secure access using the role-based security system
 In this tutorial, you’ll access the system as a user that has been assigned a different security role. This tutorial requires that you have created at least one additional end user.
 
 1.  On the dashboard, in the **System administration** section, click **Users**.
@@ -216,7 +216,7 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 5.  Select **Fleet management branch manager**, and then click **OK**.
 6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page
 7.  Sign in using the credentials for the user who you assigned the security role to in the steps above.
-8.  Notice that in the dshboard, this user can see only items that are related to his security role. Items that system administrators can see are now hidden.
+8.  Notice that in the dashboard, this user can see only items that are related to his security role. Items that system administrators can see are now hidden.
 9.  Click **Sign out** to sign out of the session.
 
 

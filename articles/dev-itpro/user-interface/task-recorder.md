@@ -2,10 +2,10 @@
 # required metadata
 
 title: Task Recorder
-description: This article describes the how to use Task Recorder to record client functions.
+description: This topic describes how to use Task Recorder to record client functions.
 author: jasongre
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the how to use Task Recorder to record client functions.
+This topic describes how to use Task Recorder to record client functions.
 
 Overview
 ========
 
 ### The new Task Recorder
 
-In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
+In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
 
 ### Architecture
 
@@ -77,7 +77,7 @@ The following steps show the process for creating a new recording using Task Rec
 7.  The **Task Recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
 [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
 
-Now you're ready to record a business process using Task Recorder. If you're following this guide as a first time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
+Now you're ready to record a business process using Task Recorder. If you're following this guide as a first-time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
 ## Record a Fleet Management scenario
 1.  In the **Task Recorder Pane**, click **Start task**.
@@ -305,7 +305,7 @@ The **Rollback changes to business data** option will revert any business data t
 A Task guide is an end-user focused experience that allows the user to follow a guided step-by-step set of instructions for how to complete a business scenario that is contained in a Task recording. The user is instructed to complete each step by way of a pop-up prompt, which will animate across the form and point to the UI element that the user should interact with, and also inform the user about how to interact with the element, such as by saying "Click here" or "In this field, enter data". Each step that the user is instructed to complete is based on the step that was originally recorded in the Task recording file that the Task guide is based off of. Since the Task recording file contains the data that describes the step that was originally recorded, the Task guide is able to automatically detect when the user has completed the step as expected. When the Task guide recognizes that the user has completed the step, the Task guide automatically progresses to the next step. **Note:** One of the ways the Task guide recognizes that a user has completed a step is by detecting when the value in a field has changed. While the Task guide does not require that specific values be set, it does require that the field value is changed in order to detect that the step was completed. In order to detect that the field value was changed, the user much first change the value and then press the Tab key or click in an area outside of the UI element. Only after pressing Tab or clicking outside of the UI element does the client recognize that the field value has been changed, and proceed to run any necessary application validation or business logic. The Task guide relies on the client to recognize that the field value has been changed before it can detect that the step was completed by the user.
 ### What can a Task guide allow a user to do?
 
-When a user is completing a Task guide, the client behaves in the same manner,with the same data, security, and validation rules as it does when the user is not completing a Task guide. There is no difference of behavior in the client that would allow a user to take an action that they cannot otherwise take when they are not completing a Task guide. When a user is completing a Task guide:
+When a user is completing a Task guide, the client behaves in the same manner, with the same data, security, and validation rules as it does when the user is not completing a Task guide. There is no difference of behavior in the client that would allow a user to take an action that they cannot otherwise take when they are not completing a Task guide. When a user is completing a Task guide:
 -   Any data the user enters is subject to the same data validation rules as when not playing the Task guide.
 -   Any data the user enters may be saved, and the user may modify data according to the same restrictions and rules as when not playing the Task guide.
 -   Any security mechanisms the user encounters behave the same as when the user is not playing the Task guide.
@@ -315,21 +315,21 @@ When a user is completing a Task guide, the client behaves in the same manner,wi
 
 By default, when a user begins a Task guide, they are placed "on-rails". These "rails" prevent the user from *clicking* on elements other than the element the Task guide is pointing to. When the user tries to click on something outside of the UI element that the Task guide is pointing to, the Task guide pop-up will animate to let the user know that they cannot progress until they complete the current step of the Task guide. While a user is prohibited from *clicking* on other elements, the user is not prevented from tabbing through the other controls on the form, and the user is not prevented from using keyboard shortcuts. This is by design, as the "on-rails" feature is designed for and targeted at first-time users, who are expected to primarily use the mouse as they become familiar with the application. More advanced/experienced users are able to turn off the "on-rails" feature when they complete a Task guide. At any time during the Task guide, the "rails" can be taken off by clicking the "Unlock" button that appears in the Task recorder toolbar at the top of the page. You can also use this button to restore the "rails" at any point during the Task guide. The "on-rails" feature may be turned off automatically by the Task guide under certain circumstances. When the rails are off, the user is able to click on UI elements in the same manner as when the Task guide is not running. The "on-rails" feature may be turned off automatically in the following cases:
 -   The user is being directed to navigate to form using the Navigation Menu or the Search bar
-    -   Becaue the user is free to use either entry point, the Task guide does not point to a specific entry point, and does not prevent the user from use either entry point.
+    -   Because the user is free to use either entry point, the Task guide does not point to a specific entry point, and does not prevent the user from use either entry point.
 -   The Task guide enters an Error state (see below for a list of error states).
 -   The Task guide is displaying an Informational Step.
 
 ### Error detection
 
-An *error state* occurs when the Task guide is not able to point to the UI element that is associated with the current step because the UI element is not visible on the screen. When the Task guide detects that the current step requires the user to interact with a UI element that is not visible, then the Task guide pop-up will move the to upper-right side of the screen. These causes of an error state can be simplified into two categories.
+An *error state* occurs when the Task guide is not able to point to the UI element that is associated with the current step because the UI element is not visible on the screen. When the Task guide detects that the current step requires the user to interact with a UI element that is not visible, then the Task guide pop-up will move to the upper-right side of the screen. These causes of an error state can be simplified into two categories.
 
 #### The control is not visible on the form
 
-*This error state usually occurs when the user has opened or closed  the incorrect tab page, FastTab, collapse-able section, FactBox, or pop-out menu.*
+*This error state usually occurs when the user has opened or closed  the incorrect tab page, FastTab, collapsible section, FactBox, or pop-out menu.*
 
-Because the UI element that is needed for the current step is somewhere on the current form, but it is not visible on the screen, the Task guide pop-up will simply move to the upper-right  side of the screen while displaying the same instruction that informs the user of the action they need to take.
+Because the UI element that is needed for the current step is somewhere on the current form, but it is not visible on the screen, the Task guide pop-up will simply move to the upper-right side of the screen while displaying the same instruction that informs the user of the action they need to take.
 
-Because the Task guide cannot locate the UI element on the screen, the user will need to manually identify what is hiding from the UI element. After the user has made the UI element visible on the screen, the Task guide pop-up will automatically recognize that the element is visible and it will re-locate so that it is again pointing at the now-visible UI element.
+Because the Task guide cannot locate the UI element on the screen, the user will need to manually identify what is hiding from the UI element. After the user has made the UI element visible on the screen, the Task guide pop-up will automatically recognize that the element is visible, and it will re-locate so that it is again pointing at the now-visible UI element.
 
 #### The control is not on the form
 
@@ -363,9 +363,9 @@ Using a pre-release Chrome extension, Task Recorder is able to take screenshots 
 
 ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-3.  Select the **Developer mode** box
+3.  Select the **Developer mode** box.
 4.  Click **Load unpacked extension**.
-5.  Browse to the folder containing the Task Recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on.With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot.Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
+5.  Browse to the folder containing the Task Recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
 
 [![This image shows what the Extensions settings page looks like once the screenshot extension has been loaded.](./media/taskrecorderguide-googlechromeextensionsmenu1.png)](./media/taskrecorderguide-googlechromeextensionsmenu1.png)
 
@@ -375,7 +375,7 @@ Task Recorder will now take screenshots of the tab that has the client running.
 
 ## Test generation
 
-After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures Validations or Tasks into the appropriate test code. <!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
+After completing a business process recording using Task Recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures, Validations, or Tasks into the appropriate test code. <!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
 
 ### Import a recorded test
 
@@ -421,8 +421,3 @@ After completing a business process recording using Task Recorder, a developer m
     -   Does not support displaying a "generic value" during the Task guide. Currently displays the value that was used during recording.
 -   Filter pane, which is the filter that pops out from the left side
     -   The Task guide does not point to the individual elements within the Filter pane that need to be clicked on.
-
-
-
-
-

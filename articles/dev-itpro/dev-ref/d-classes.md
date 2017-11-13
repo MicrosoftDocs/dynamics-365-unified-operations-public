@@ -5,7 +5,7 @@ title: D Classes
 description: System API classes that start with the letter D.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52531
 ms.assetid: 97f18d4d-1704-40fd-a0a2-2624a5798d66
@@ -9126,7 +9126,7 @@ Determines whether the table is visible.
 
 #### Return Value
 
-true if the table is is visible; otherwise, false.
+true if the table is visible; otherwise, false.
 
 ### Method construct
 
@@ -9911,7 +9911,7 @@ cnt
 
 #### Return Value
 
-The SQL name that is used in the view definition to identify the legal entity of the data source; a empty string if an error occurs.
+The SQL name that is used in the view definition to identify the legal entity of the data source; an empty string if an error occurs.
 
 ### Method datasourceID2TableId
 
@@ -10089,7 +10089,7 @@ The table ID to use to create the class instance.
 ## Class DLL
     class DLL extends Object
 
-The DLL class enables communication with a MicrosoftWindows dynamic-link library (DLL).
+The DLL class enables communication with a Microsoft Windows dynamic-link library (DLL).
 
 ### Remarks
 

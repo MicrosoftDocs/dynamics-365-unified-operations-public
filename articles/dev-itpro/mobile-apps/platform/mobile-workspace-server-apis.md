@@ -5,7 +5,7 @@ title: Server-side APIs
 description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.search.region: Global
@@ -304,7 +304,7 @@ Creates a new instance of the control metadata
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMetadata | Microsoft.Dynamics.Client.ServerForm.App.ControlMetadata | False | The controlMetadata object
-| _baseLanguageId | str | True | THe base language
+| _baseLanguageId | str | True | The base language
 
 
 ### Method getBaseLanguageId 
@@ -355,7 +355,7 @@ Gets and sets whether the control is hidden
 
 
 #### Return Value 
-True if the control is hidden;otherwise false
+True if the control is hidden; otherwise false
 
 ### Method controlOrder 
 Gets or sets the control order
@@ -452,7 +452,7 @@ Sets the control property referenced by the key
 
 
 ## Class SysAppEntityAttribute 
-SysAppEntityAttribute used for decorating data contract entitites
+SysAppEntityAttribute used for decorating data contract entitities
 
 ### Methods
 
@@ -663,7 +663,7 @@ A setter to set the multi select control value
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _value | str | False | A colon seperated value that will be used by SysAppFieldMultiSelectHelper
+| _value | str | False | A colon separated value that will be used by SysAppFieldMultiSelectHelper
 
 
 ## Class SysAppFilterContext 
@@ -676,7 +676,7 @@ SysAppFilterContext class which holds context values
 | entityName | str | Entity name on which filter applies |
 | filterFieldName | str | Field name on which filter applies |
 | filterFieldValueList | List | Gets the list of filter field values based on which filter happens |
-| operator | str | Opertor like eq, contains, etc based on which result will be fetched |
+| operator | str | Operator based on which result will be fetched |
 | addFilterFieldValue | void | Adds filter field value |
 
 
@@ -722,7 +722,7 @@ Gets the list of filter field values based on which filter happens
 List of filter field values based on which filter happens
 
 ### Method operator 
-Opertor like eq, contains, etc based on which result will be fetched
+Operator based on which result will be fetched
 
 	 public str operator ([str _operator]) 
 
@@ -731,11 +731,11 @@ Opertor like eq, contains, etc based on which result will be fetched
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _operator | str | True | Opertor like eq, contains, etc based on which result will be fetched
+| _operator | str | True | Operator based on which result will be fetched
 
 
 #### Return Value 
-Opertor like eq, contains, etc based on which result will be fetched
+Operator based on which result will be fetched
 
 ### Method addFilterFieldValue 
 Adds filter field value
@@ -988,7 +988,7 @@ Returns the control on the current page having the provided control name
 
 
 #### Return Value 
-An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page;otherwise null
+An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page; otherwise null
 
 ### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata
@@ -1193,7 +1193,7 @@ Adds commits
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is commited
+| _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is committed
 
 
 ## Class SysAppResponseMessage 
@@ -1291,7 +1291,7 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 
 | Method name | Returns | Description |
 | -- | -- | -- |
-| getEnumValues | List | Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile |
+| getEnumValues | List | Called during workspace initialization. Can be used to modify the enum values that are returned to AX mobile |
 | getWorkspaceMetadata | SysAppWorkspaceMetadata | Called during workspace initialization. Can be used to modify the workspace metadata |
 | onBeginAppJob | void | Called before the start of execution of AX mobile job |
 | onEndAppJob | void | Called after the end of execution of AX mobile job |
@@ -1299,7 +1299,7 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 
 
 ### Method getEnumValues 
-Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile
+Called during workspace initialization. Can be used to modify the enum values that are returned to AX mobile
 
 	 public List getEnumValues (EnumName _enumName) 
 
@@ -1346,7 +1346,7 @@ Called after the end of execution of AX mobile job
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _sysAppJobResponse | SysAppJobResponse | False | A class containg job response parameters
+| _sysAppJobResponse | SysAppJobResponse | False | A class containing job response parameters
 
 
 ### Method workspaceHidden 
@@ -1545,7 +1545,7 @@ Returns a pageName if the provided recordingId is used by a workspace page
 
 
 #### Return Value 
-A page name if the supplied recordingId is used by a workspace page;otherwise empty string
+A page name if the supplied recordingId is used by a workspace page; otherwise empty string
 
 ### Method getActionNameForRecordingId 
 Returns a actionName if the provided recordingId is used by a workspace action
@@ -1596,7 +1596,7 @@ Gets and sets the workspace description
 The workspace description
 
 ## Class SysAppWorkspaceSecurityAttribute 
-Controls the visiblity based of workspace based on the menu item tied to this attribute
+Controls the visibility based of workspace based on the menu item tied to this attribute
 
 ### Methods
 
@@ -1927,7 +1927,7 @@ Creates a new instance of the control metadata
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
 | _controlMetadata | Microsoft.Dynamics.Client.ServerForm.App.ControlMetadata | False | The controlMetadata object
-| _baseLanguageId | str | True | THe base language
+| _baseLanguageId | str | True | The base language
 
 
 ### Method getBaseLanguageId 
@@ -1978,7 +1978,7 @@ Gets and sets whether the control is hidden
 
 
 #### Return Value 
-True if the control is hidden;otherwise false
+True if the control is hidden; otherwise false
 
 ### Method controlOrder 
 Gets or sets the control order
@@ -2075,7 +2075,7 @@ Sets the control property referenced by the key
 
 
 ## Class SysAppEntityAttribute 
-SysAppEntityAttribute used for decorating data contract entitites
+SysAppEntityAttribute used for decorating data contract entities
 
 ### Methods
 
@@ -2286,7 +2286,7 @@ A setter to set the multi select control value
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _value | str | False | A colon seperated value that will be used by SysAppFieldMultiSelectHelper
+| _value | str | False | A colon separated value that will be used by SysAppFieldMultiSelectHelper
 
 
 ## Class SysAppFilterContext 
@@ -2299,7 +2299,7 @@ SysAppFilterContext class which holds context values
 | entityName | str | Entity name on which filter applies |
 | filterFieldName | str | Field name on which filter applies |
 | filterFieldValueList | List | Gets the list of filter field values based on which filter happens |
-| operator | str | Opertor like eq, contains, etc based on which result will be fetched |
+| operator | str | Operator based on which result will be fetched |
 | addFilterFieldValue | void | Adds filter field value |
 
 
@@ -2345,7 +2345,7 @@ Gets the list of filter field values based on which filter happens
 List of filter field values based on which filter happens
 
 ### Method operator 
-Opertor like eq, contains, etc based on which result will be fetched
+Operator based on which result will be fetched
 
 	 public str operator ([str _operator]) 
 
@@ -2354,11 +2354,11 @@ Opertor like eq, contains, etc based on which result will be fetched
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _operator | str | True | Opertor like eq, contains, etc based on which result will be fetched
+| _operator | str | True | Operator based on which result will be fetched
 
 
 #### Return Value 
-Opertor like eq, contains, etc based on which result will be fetched
+Operator based on which result will be fetched
 
 ### Method addFilterFieldValue 
 Adds filter field value
@@ -2611,7 +2611,7 @@ Returns the control on the current page having the provided control name
 
 
 #### Return Value 
-An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page;otherwise null
+An object of SysAppControlMetadata is returned if a control with the provided control name exist on the page; otherwise null
 
 ### Method getControlEnumerator 
 Returns a map enumerator that can be used to enumerate page controls.  Where Key is control name and value is of type SysAppControlMetadata
@@ -2816,7 +2816,7 @@ Adds commits
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is commited
+| _entityContext | SysAppEntityContext | False | Entity context containing entity name and entity id of the entity that is committed
 
 
 ## Class SysAppResponseMessage 
@@ -2914,7 +2914,7 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 
 | Method name | Returns | Description |
 | -- | -- | -- |
-| getEnumValues | List | Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile |
+| getEnumValues | List | Called during workspace initialization. Can be used to modify the enum values that are returned to AX mobile |
 | getWorkspaceMetadata | SysAppWorkspaceMetadata | Called during workspace initialization. Can be used to modify the workspace metadata |
 | onBeginAppJob | void | Called before the start of execution of AX mobile job |
 | onEndAppJob | void | Called after the end of execution of AX mobile job |
@@ -2922,7 +2922,7 @@ This is the base class of AX mobile workspace. AX mobile workspace classes needs
 
 
 ### Method getEnumValues 
-Called during workspace initilization. Can be used to modify the enum values that are returned to AX mobile
+Called during workspace initialization. Can be used to modify the enum values that are returned to AX mobile
 
 	 public List getEnumValues (EnumName _enumName) 
 
@@ -2969,7 +2969,7 @@ Called after the end of execution of AX mobile job
 
 | Parameter name |  Parameter type | Optional | Description |
 | -- | -- | -- | -- |
-| _sysAppJobResponse | SysAppJobResponse | False | A class containg job response parameters
+| _sysAppJobResponse | SysAppJobResponse | False | A class containing job response parameters
 
 
 ### Method workspaceHidden 
@@ -3118,7 +3118,7 @@ Returns the page with the pageName provided
 
 
 #### Return Value 
-Returns the pageMetadata if a page with the provided name exist;otherwise null
+Returns the pageMetadata if a page with the provided name exist; otherwise null
 
 ### Method getPageEnumerator 
 Returns a map enumerator that can be used to enumerate workspace pages.  Where key is page name and value is of type SysAppPageMetadata
@@ -3143,7 +3143,7 @@ Returns the action with the actionName provided
 
 
 #### Return Value 
-Returns the ActionMetadata if an action with the provided name exist;otherwise null
+Returns the ActionMetadata if an action with the provided name exist; otherwise null
 
 ### Method getActionEnumerator 
 Returns a map enumerator that can be used to enumerate workspace actions.  Where key is action name and value is of type SysAppActionMetadata
@@ -3168,7 +3168,7 @@ Returns a pageName if the provided recordingId is used by a workspace page
 
 
 #### Return Value 
-A page name if the supplied recordingId is used by a workspace page;otherwise empty string
+A page name if the supplied recordingId is used by a workspace page; otherwise empty string
 
 ### Method getActionNameForRecordingId 
 Returns a actionName if the provided recordingId is used by a workspace action
@@ -3219,7 +3219,7 @@ Gets and sets the workspace description
 The workspace description
 
 ## Class SysAppWorkspaceSecurityAttribute 
-Controls the visiblity based of workspace based on the menu item tied to this attribute
+Controls the visibility based of workspace based on the menu item tied to this attribute
 
 ### Methods
 

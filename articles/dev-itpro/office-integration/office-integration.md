@@ -5,7 +5,7 @@ title: Office integration
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25511
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
@@ -43,8 +43,8 @@ This topic reviews Microsoft Office integration concepts and features. The integ
 
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products.
 
-## Excel Data Connector Addin
-Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web Add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
+## Excel Data Connector add-in
+Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
 
 [![1\_Office](./media/1_office.png)](./media/1_office.png)
 
@@ -85,7 +85,7 @@ OData sits on the same authentication stack as the server. The add-in uses OAuth
 
 ### Lookups and drop-down lists
 
-When you clicking in a table cell, any lookup, enumeration drop-down list, or date picker that is associated with that cell be shown inside the add-in, underneath the source and field information. Any value that you select inside the add-in is put into the currently selected table cell.
+When you click in a table cell, any lookup, enumeration drop-down list, or date picker that is associated with that cell be shown inside the add-in, underneath the source and field information. Any value that you select inside the add-in is put into the currently selected table cell.
 
 ### Adding and deleting records
 

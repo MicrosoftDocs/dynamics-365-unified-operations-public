@@ -5,7 +5,7 @@ title: Set up ledger posting groups for sales tax
 description: Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -40,8 +40,8 @@ Sales tax is calculated and posted to main accounts that are specified in the Le
     * Sales taxes are collected on behalf of the tax authority when you sell taxable goods and services.  
 6. In the Sales tax receivable filed, select the main account for incoming taxes that are received from the tax authority.
     * Vendors collect taxes on behalf of the tax authority when you buy taxable goods and services. This field is not available if the Apply sales tax taxation rules option is selected in the General ledger parameters page. Instead, sales taxes that are paid to vendors are debited to the same account as the purchase.   
-7. In the Use tax expense field, select  the main account for posting deductible Use taxes that are not claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST.
-    * The Use tax option needs to be selected for the Sales tax code in the Sales tax group that is used in the transaction.  This field is not be available if the Apply sales tax taxation rules option is selected in the General ledger parameters page.   
+7. In the Use tax expense field, select the main account for posting deductible Use taxes that are not claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST.
+    * The Use tax option needs to be selected for the Sales tax code in the Sales tax group that is used in the transaction.  This field is not available if the Apply sales tax taxation rules option is selected in the General ledger parameters page.   
 8. In the Use tax payable field, select the main account for posting incoming Use taxes that are payable to tax authorities.
     * The Use tax option needs to be selected in the Sales tax code in the Sales tax group to post Use tax. If Apply sales tax taxation rules option is selected in General ledger parameters, the offset is posted to the transaction’s expense account.   
 9. In the Settlement account field, select the main account  that the net balance of the ledger accounts specified in the Use tax payable and Sales tax receivable fields will be posted.

@@ -3,10 +3,10 @@
 
 title: Help overview
 
-description: This article provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Help overview
+# Help system overview
 
 [!include[banner](../includes/banner.md)]
 
-This article provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
 > [!NOTE] 
 > The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
@@ -76,16 +76,17 @@ We get a lot of questions about how to search for our content. On our site, if y
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
 site:docs.microsoft.com dynamics 365 "search term".  
 
-![Site search](./media/site-search-1.png)
-
-![Site search results](./media/site-search-results-2.png)
-
 ### The docs.microsoft.com table of contents
-All products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
+Finance and Operations, Retail, and Talent all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for.
 
-### How can I contribute? 
+### Follow a topic
+To follow a topic, click the +Follow button below the comment box. You will need to log in to follow the topic. See [Leave us a comment](#leave-us-a-comment) for details.  
 
-Leave us a comment! 
+### Give feedback 
+We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
+
+##### Leave us a comment 
+If you have feedback or questions about a topic, leave us a comment at the bottom of the page.  
 
 1 Click **Comments** to get to the comments at the bottom of the page.
 
@@ -103,6 +104,19 @@ Or
 On the right, enter an email address, and a new password to create a new account for the site. 
 
 ![Sign in options](./media/signin-options.png)
+
+
+##### Suggest a change or contribute content through GitHub
+To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
+
+To get started, click the **Edit** (pencil) button on a topic, or go to our repo at https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+For more information, please refer to our contributor's guide: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> We will only be accepting contributions to our English repositories at this time.  
+> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/. 
 
 
 ## Task guides
@@ -171,7 +185,7 @@ After a System administrator has completed these steps, you can open the Help pa
 
 ### Where are the translated Task guides?
 
-Translated Task guides are released in libraries with "All languages" in the title. In Finance and Operations, to see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
+Translated Task guides are released in libraries with "All languages" in the title. In Finance and Operations, to see localized Task guide help, make sure that you are connected to an appropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
@@ -203,8 +217,3 @@ See also
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-

@@ -4,14 +4,15 @@ When copying a database between environments, you will need to run the environme
 > We recommend that you run this procedure whether you are using Retail components or not, because Retail functionality is included in all environments. 
 
 Before you continue, you must make sure that the following prerequisites are met:
+1. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occuring during the data upgrade:
 
-1. If your target enviornment is running the July 2017 release or later, apply KB 4035399. 
-2. If your target environment is running the November release (version 1611), apply the following hotfixes:
-  -   KB 4025631
-  -   KB 4035355
-  -   KB 4035492
-  -   KB 4010947
-3. The default channel database and the default channel data group must be named **Default**. If you've renamed them, you must change the names back.
+    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This fix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
+    
+2. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ fixes in the destination environment before you run the data upgrade:
+    - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
+    - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
+    - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
+
 
 Follow these steps to run the Environment reprovisioning tool.
 
