@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Data management framework
-description: This topic provides information about using the data management framework. 
+title: Data management
+description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
