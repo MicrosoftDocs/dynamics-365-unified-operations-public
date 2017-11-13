@@ -78,7 +78,7 @@ Both OData and custom services are synchronous integration patterns, because whe
 
 Batch data APIs are considered asynchronous integration patterns, because when these APIs are called, data is imported or exported in batch mode. For example, calls to the ImportFromPackage API can be synchronous. However, the API schedules a batch job to import only a specific data package. The scheduling job is quickly returned, and the work is done later in a batch job. Therefore, batch data APIs are categorized as asynchronous.
 
-Batch data APIs are designed to handle large-volume data imports and exports. It's difficult to define what exactly qualifies as a large volume. The answer depends on the entity, and on the amount of business logic that is run during import or export. However, here is a rule of thumb: If the volume is more than a few hundred thousand, you should use the batch data API for integrations.
+Batch data APIs are designed to handle large-volume data imports and exports. It's difficult to define what exactly qualifies as a large volume. The answer depends on the entity, and on the amount of business logic that is run during import or export. However, here is a rule of thumb: If the volume is more than a few hundred thousand records, you should use the batch data API for integrations.
 
 In general, when you're trying to choose an integration pattern, we recommend that you consider the following questions:
 
@@ -103,7 +103,7 @@ A manufacturer runs Finance and Operations, but defines and configures its produ
 | Decision                    | Information      |
 |-----------------------------|------------------|
 | Is real-time data required? | Yes              |
-| Peak data volume            | 1,000 per hour\* |
+| Peak data volume            | 1,000 records per hour\* |
 | Frequency                   | Ad hoc           |
 
 \* Occasionally, many new or modified production configurations will occur in a short time.
@@ -128,7 +128,7 @@ A company runs Finance and Operations but has a self-hosted customer portal wher
 | Decision                    | Information    |
 |-----------------------------|----------------|
 | Is real-time data required? | Yes            |
-| Peak data volume            | 5,000 per hour |
+| Peak data volume            | 5,000 records per hour |
 | Frequency                   | Ad hoc         |
 
 #### Recommended solution
@@ -151,7 +151,7 @@ A company runs Finance and Operations but uses a product lifecycle management (P
 | Decision                    | Information    |
 |-----------------------------|----------------|
 | Is real-time data required? | Yes            |
-| Peak data volume            | 1,000 per hour |
+| Peak data volume            | 1,000 records per hour |
 | Frequency                   | Ad hoc         |
 
 #### Recommended solution
@@ -182,7 +182,7 @@ An energy company has field workers who schedule installation jobs for heaters. 
 | Decision                    | Information    |
 |-----------------------------|----------------|
 | Is real-time data required? | Yes            |
-| Peak data volume            | 1,000 per hour |
+| Peak data volume            | 1,000 records per hour |
 | Frequency                   | Ad hoc         |
 
 #### Recommended solution
@@ -213,7 +213,7 @@ A company receives a large volume of sales orders from a front-end system that r
 | Decision                    | Information                 |
 |-----------------------------|-----------------------------|
 | Is real-time data required? | No                          |
-| Peak data volume            | 200,000 per hour            |
+| Peak data volume            | 200,000 records per hour            |
 | Frequency                   | One time every five minutes |
 
 #### Recommended solution
@@ -236,7 +236,7 @@ A company generates a large volume of purchase orders in Finance and Operations 
 | Decision                    | Information       |
 |-----------------------------|-------------------|
 | Is real-time data required? | No                |
-| Peak data volume            | 300,000 per hour  |
+| Peak data volume            | 300,000 records per hour  |
 | Frequency                   | One time per hour |
 
 #### Recommended solution
