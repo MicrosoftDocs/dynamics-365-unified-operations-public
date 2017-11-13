@@ -131,7 +131,43 @@
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
-## [Data management framework](../dev-itpro/data-entities/data-entities-data-packages.md)
+## Data integration
+### [Integration patterns](data-entities/integration-overview.md)
+
+### Data integration APIs
+#### [Data management package API](data-entities/data-management-api.md)
+#### [Service endpoints](data-entities/services-home-page.md)
+##### [Service authentication troubleshooting](data-entities/troubleshoot-service-authentication.md)
+#### [OData](/data-entities/odata.md)
+#### [Custom services](data-entities/custom-services.md)
+#### [Recurring integrations](data-entities/recurring-integrations.md)
+
+### Development for integration
+#### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
+##### [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
+##### [Develop composite data entities](data-entities/develop-composite-data-entities.md)
+##### [Configure financial cross-company data sharing](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+##### [Create a record template to facilitate data entry](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+##### [Use a record template to create a new record](data-entities/tasks/use-record-template-new-record.md)
+
+#### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
+##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
+###### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+#### [Consuming external web services](data-entities/consume-external-web-service.md)
+
+
+## [Data management](../dev-itpro/data-entities/data-entities-data-packages.md)
 
 ### [Data entities](../dev-itpro/data-entities/data-entities.md)
 
