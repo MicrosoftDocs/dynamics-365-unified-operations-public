@@ -366,47 +366,45 @@ For alignment with the existing logic, the existing **taxTotal** parameter is us
 
 A purchase invoice is a source document transaction. Therefore, the calculated tax result from GTE should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the GTE integration framework. However, for each source document transaction, the distribution and journalization rule should still be defined for accounting purposes.
 
-![](media/51aff7eece30d027ac72ba6eef7a8249.png)
+![](media/gte-distribution-journalization-rule.png)
 
 Two classes are created for a purchase invoice: **AcctDistRuleProdcutTaxMeasure** and **AccJourRuleVendPaymReqTaxMeasure**.
 
-![](media/4e45f2e508da9cc8e8d9bf60da3cee2f.png)
+![](media/gte-class1.png)
 
-![](media/936b4ec1789cba9d651769f2b253c6eb.png)
+![](media/gte-class2.png)
 
 When the source document classes are created correctly, calculated tax, together with the component label, tax amount, and ledger account, should be shown in the distribution form.
-
-![](media/42b386505127442b44b6bb199c518a85.png)
 
 ### Deletion – Delete a transaction
 
 When a purchase invoice is deleted, the associated tax document should also be deleted. To delete an associated tax document, call TaxBusinessService in the **delete** method of VendInvoiceInfoTable.
 
-![](media/33dba83977e4865a18cccd148a801bee.png)
+![](media/gte-delete-trx.png)
 
 ### Deletion – Delete a transaction line
 
 When a transaction line is deleted, the tax document should be recalculated. For performance reasons, GTE doesn’t recalculate tax immediately after a transaction line is deleted. Instead, it updates the tax document’s status to **Dirty**. When a tax document is retrieved so that it can be viewed or posted, GTE checks whether the status is **Dirty**. Depending on the status, recalculation occurs.
 
-![](media/339e98d90c2238ecbfca7d28f26ca107.png)
+![](media/gte-tax-doc-status1.png)
 
-![](media/761d41623deae4a862de79106c3c8baf.png)
+![](media/gte-tax-doc-status2.png)
 
 ### Update – Update transaction header information
 
 Some transaction header information can affect tax calculation. Examples include the transaction date and currency. Therefore, when this type of information is updated to a different value, the tax document should be marked as **Dirty**, so that it can be recalculated later.
 
-![](media/2bc0449a83414f40bf00fba95211fb41.png)
+![](media/gte-trx-header-info.png)
 
 The following method lists fields that might affect tax calculation for a purchase invoice.
 
-![](media/96045152c2da27d81685daebd823dd18.png)
+![](media/gte-tax-calc-purchase.png)
 
 ## Update – Update transaction line information
 
 Similarly, the update of some transaction line fields also affects tax calculation.
 
-![](media/0e91ec4ab4969ae9480ae0f5a6b94d4f.png)
+![](media/gte-update-trx-line-info.png)
 
 ### Update – Update tax information
 
