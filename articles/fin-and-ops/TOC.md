@@ -849,6 +849,7 @@
 ###### [Vendor invoice payment holds](../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 ##### [Approve and post draw bill of exchange](../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md)
 ##### [Chronological invoices vouchers](../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+##### [Create Standard Audit File for France (FEC)](../financials/localizations/emea-fra-fec-audit-file.md)
 ##### [Customer and vendor account statements](../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md)
 ##### [Daily interest calculation for late payment and lump sum in the invoice and collection letter](../financials/localizations/tasks/fr-00018-daily-interest.md)
 ##### [Derogatory depreciation](../financials/localizations/emea-fra-derogatory-depreciation.md)
