@@ -5,7 +5,9 @@ title: Plan your Dynamics AX 2012 R3 deployment on Azure
 description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 author: kfend
 manager: AnnBe
-ms.date: 10/19/2017
+
+ms.date: 11/13/2017
+
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -18,7 +20,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18591
 ms.assetid: 84e597d7-6ad3-4322-8ac3-6b6151dd24f6
@@ -127,7 +129,7 @@ When a topology is deployed, the deployment system will inspect the virtual mach
 | DS      | Standard DS’s \[all DS series\] |
 | G       | Standard G’s \[all G series\]   |
 
-A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID Please consider the Cloud Services resource requirements for you deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
+A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID Please consider the Cloud Services resource requirements for your deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
 
 ## Plan for storage accounts
 For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](http://azure.microsoft.com/en-us/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](https://azure.microsoft.com/en-us/documentation/articles/azure-subscription-service-limits/#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. 
@@ -229,7 +231,7 @@ Some resources to help you get started are linked to below. Most of the resource
 <li><strong>Microsoft Product Use Rights and Product List</strong> Learn more about Microsoft Volume Licensing product licensing models, programs, scenarios, and terms and conditions to help you make effective business decisions and maximize the value of your IT purchases on <a href="https://www.microsoft.com/licensing/about-licensing/product-licensing.aspx">this page</a>.</li>
 </ul>
 <ul>
-<li><strong>License Mobility through Software Assurance on Azure program</strong> License Mobility through Software Assurance gives Microsoft volume licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees. This enables you to easily deploy existing licenses on the Azure cloud platform. For more information, see <a href="http://www.windowsazure.com/en-us/pricing/license-mobility/">this page</a>. For Development, Test, and High Availability topologies trial versions of Sharepoint, Visual Studio, SQL Server, and Office are provided. The trials range from 30-180 days. Please apply licenses accordingly.</li>
+<li><strong>License Mobility through Software Assurance on Azure program</strong> License Mobility through Software Assurance gives Microsoft volume licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees. This enables you to easily deploy existing licenses on the Azure cloud platform. For more information, see <a href="http://www.windowsazure.com/en-us/pricing/license-mobility/">this page</a>. For Development, Test, and High Availability topologies trial versions of SharePoint, Visual Studio, SQL Server, and Office are provided. The trials range from 30-180 days. Please apply licenses accordingly.</li>
 <li><strong>Microsoft Dynamics AX volume licensing buyer’s guide</strong> For an overview of key licensing options with Microsoft Dynamics AX, see <a href="https://www.microsoft.com/licensing/about-licensing/dynamicsax.aspx#tab=1">this page</a>.</li>
 <li><strong>Shared computer activation for Office 365 ProPlus</strong> Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For more information, see <a href="https://technet.microsoft.com/en-us/library/dn782860(v=office.15).aspx">this page</a>.</li>
 </ul></td>

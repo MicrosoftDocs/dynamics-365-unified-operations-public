@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: 
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 

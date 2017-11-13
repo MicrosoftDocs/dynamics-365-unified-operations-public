@@ -5,7 +5,7 @@ title: PerfSDK and multiuser testing with Visual Studio Online
 description: Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -78,7 +78,7 @@ A video about how to create a single user test can be found here: [https://mix.o
 -   -n “CN=TestAuthCert” is giving a human-readable name to the cert, feel free to tweak for your scenario.
 -   -eku 1.3.6.1.5.5.7.3.2 is certificate purpose. This is a client authentication cert, as opposed to code signing, encryption or something else. Next, install \*.pfx file (make sure to select Local Machine when you install it)  and copy this certificate file to PerfSDK folder.
 
-Open powershell window as Administator and run the following command to get a thumbprint of installed certificate: 
+Open Powershell window as Administrator and run the following command to get a thumbprint of installed certificate: 
 
 [![get-thumbprint](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
 
@@ -98,7 +98,7 @@ And restart IIS. Open Sample project in Visual Studio and edit the file Purchase
 
 [![perf103e](./media/perf103e.png)](./media/perf103e.png) 
 
-Modify your CloudEnvironment.Config file by entering your admin username. The following code is a example. **Note:** The ConfigName must be DEVFABRIC. 
+Modify your CloudEnvironment.Config file by entering your admin username. The following code is an example. **Note:** The ConfigName must be DEVFABRIC. 
 
 [![perf103f](./media/perf103f.png)](./media/perf103f.png) 
 
@@ -113,8 +113,8 @@ You would need to enter both endpoints in CloudEnvironment.Config:
 
 Go to **Test** &gt; **Test settings** &gt; **Default processor architecture** and set it to x64. Build the solution. Go to **Test** &gt; **Windows** &gt; **Test Explorer** **Note:** Sometimes Visual Studio may not update the list of tests. In this case, restart Visual Studio and re-open the test Explorer. **Note:** Your newly created test will be named TestMethod. If you change the method name of TestMethod your test will get an individual name. Now you can run the test. You should see Internet Explorer starting and replaying the scenario that you've recorded.
 
-## Steps to create a multiuser test from a singleuser test
-To convert a single-user test generated in the previous section to multi-user test, add MS.Dynamics.TestTools.UIHelpers.Core; to your test script and replace the following line in TestSetup method.
+## Steps to create a multiuser test from a single-user test
+To convert a single-user test generated in the previous section to multiuser test, add MS.Dynamics.TestTools.UIHelpers.Core; to your test script and replace the following line in TestSetup method.
 
     Client = DispatchedClient.DefaultInstance;
     With
@@ -128,7 +128,7 @@ For this example ProcureToPay.cs will be used. You need to go to log in to [Visu
 
 [![vsonline-5](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg) 
 
-Open PerfSDK sample project. Make sure to update UserFormat entry in CloudEnvironment.Config file to reflect admin user url. Example: for [admin@example.com]() use [TST\_{0}@example.com]() as user format. Also make sure to change the UserCount to the amount of users you want to have in your performance test. 
+Open PerfSDK sample project. Make sure to update UserFormat entry in CloudEnvironment.Config file to reflect the admin user URL. Example: for [admin@example.com]() use [TST\_{0}@example.com]() as user format. Also make sure to change the UserCount to the amount of users you want to have in your performance test. 
 
 [![vsonline-12](./media/vsonline-12.jpg)](./media/vsonline-12.jpg) 
 
@@ -199,7 +199,7 @@ If you see an error message like this:
 
 
 ### Solution
-You would need to run the following powershell script on your **development machine**:
+You would need to run the following Powershell script on your **development machine**:
 
     Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
     if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 

@@ -18,7 +18,7 @@ ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, Inv
 audience: Application User
 # ms.devlang:
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522

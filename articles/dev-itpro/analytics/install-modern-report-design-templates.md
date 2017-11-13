@@ -2,10 +2,10 @@
 # required metadata
 
 title: Install report design templates
-description: This articles describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
+description: This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This articles describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
+This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
 
 Introduction
 ------------
 
-This article introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+This topic introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
 ## Why aren't these designs the default designs for the application suite reports?
 There are two primary reasons why we are maintaining the legacy solutions for Finance and Operations:

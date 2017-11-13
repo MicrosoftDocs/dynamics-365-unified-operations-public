@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure
-description: 
+description: This topic provides information about how to deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Microsoft Azure.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15561
 ms.assetid: b7f2e7b9-2627-4e8f-beab-a3cea8d79dc4

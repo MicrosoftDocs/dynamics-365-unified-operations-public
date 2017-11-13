@@ -5,7 +5,7 @@ title: Customize model elements using extensions
 description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.
 author: robadawy
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
@@ -106,7 +106,7 @@ If you've already installed the demo data, you can skip to the next section.
 8.  Select **FMAggregateMeasurements**, and on the Action Pane, click **Refresh now**.
 9.  Wait until the processing completes. The ongoing processing is indicated at the top of the page by a series of moving dots. The processing is completed when the indicator disappears and the **Time Last Processed** field is updated.
 
-## Open the FMRental form on the onebox environment
+## Open the FMRental form on the one-box environment
 1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 2.  Sign in, if prompted.
 3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. 
@@ -197,7 +197,7 @@ In **Solution Explorer**, in the FleetManagement Discounts project, double-click
 
 [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
     
-This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [X++ debugger features](..\dev-tools\new-x-debugger-features.md)article.
+This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of the [X++ debugger features](..\dev-tools\new-x-debugger-features.md) article.
 
 ### View the plug-in classes
 
@@ -245,9 +245,9 @@ This section shows how you can use the Visual Studio tools to create and interac
     
 5.  Close the XML editor.
 6.  In **Solution Explorer**, double-click **FMVehicle.Extension** to open the designer.
-7.  Right-click **Fields** and add a new integer field. Change the name of the field to **NumberOfCyclinders**.
+7.  Right-click **Fields** and add a new integer field. Change the name of the field to **NumberOfCylinders**.
 8.  In the **Properties** window, set the **Label** property of the new field to **NumberofCylinders**.
-9.  Drag-and-drop the **NumberOfCylinders** field into the **AutoReport** field group to entend the field group of the base table. 
+9.  Drag-and-drop the **NumberOfCylinders** field into the **AutoReport** field group to extend the field group of the base table. 
 
     [![NumberOfCylinders\_CustomizeModel](./media/numberofcylinders_customizemodel.png)](./media/numberofcylinders_customizemodel.png)
     

@@ -3,22 +3,22 @@
 
 title: Configure the Electronic reporting framework
 description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: AX 7.1.0, Operations
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a

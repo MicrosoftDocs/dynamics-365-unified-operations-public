@@ -5,7 +5,7 @@ title: Build an extensible control
 description: This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
@@ -282,7 +282,7 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
 2.  In the form designer, expand **Design** &gt; **PickingUpTodayGrid**.
 3.  If there is an existing contact control, delete it. You must remove and then re-add the control, so that the form designer picks up the X++ changes that you made. Right-click the existing control, and then click **Delete**.
 4.  Right-click **PickingUpTodayGrid**, point to **New**, and then click **FMT Contact Control**.
-5.  Click the **FMTContactControl1** node that you just added, and set the **Data Souce** property to **FMTCustomer**.
+5.  Click the **FMTContactControl1** node that you just added, and set the **Data Source** property to **FMTCustomer**.
 6.  Expand the **FMTContactControl1** node, click **Image**, and then, in the **Properties** pane, set the following properties.
 
     | Property    | Value       |
@@ -381,7 +381,7 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
     |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Name                  | RatePerDay                                                                                                                                                                       |
     | Data Source           | FMTModelRate                                                                                                                                                                     |
-    | Data Field            | RaterPerDay**Note:** The **Data Field** value must match the table field name. If you correct the spelling error, the values won't match, and you will receive a run-time error. |
+    | Data Field            | RaterPerDay **Note:** The **Data Field** value must match the table field name. If you correct the spelling error, the values won't match, and you will receive a run-time error. |
     | Formatting Expression | ${0} per day                                                                                                                                                                     |
 
 24. Right-click **Subtitle Fields**, and then click **New Subtitle Field**.
@@ -406,7 +406,7 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
 
 In this tutorial, you've seen how you can use X++ when you define the design-time and server-side behaviors for a control, and how you can consume a powerful HTML-based and JavaScript-based framework when you design the UI and user interaction patterns. The Control Extensibility Framework helps provide a separation between the modeled behavior of a control and its physical manifestation. As a best practice, you should try to maintain this loose coupling between data, metadata, and UI when you build extensible controls.
 
-## Bidirectional or righttoleft support
+## Bidirectional or right-to-left support
 To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document. When this attribute is changed, the browser will automatically change the layout direction of your control. You should make sure that your control doesn’t implement any styling which interferes with this layout. Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language. Selecting a RTL language will cause the client to also update the **dir** attribute appropriately. For more information, see [dir attribute](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.
 
 

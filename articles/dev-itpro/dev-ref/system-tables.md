@@ -5,7 +5,7 @@ title: System tables
 description: This topic describes the system tables.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: reference
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104503
 ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
@@ -1584,7 +1584,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityUserRole Table](#securityuserrole)
 
 ## []()SecurityUserRoleCondition
-The SecurityUserRoleCondition table contains the list of companies that constrain a user to role mappings.?If there are no entries for a particular user to role mapping then the user is granted the permissions of that role for all companies.
+The SecurityUserRoleCondition table contains the list of companies that constrain a user to role mappings. If there are no entries for a particular user to role mapping then the user is granted the permissions of that role for all companies.
 
 ### Fields
 

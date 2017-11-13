@@ -2,10 +2,10 @@
 # required metadata
 
 title: Automatic settlement and prioritization
-description: This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
+description: This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
+This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 
 You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics 365 for Finance and Operations can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
 
@@ -54,7 +54,7 @@ The examples of settlements later in this article are based on the following tra
 | Invoice 3     | October 15  | 500.00 | 2% 14/Net 30        | October 29         |                                                                                                                                                                                               |
 | Interest note | October 15  | 7.00   |                     |                    | This interest note is for invoice 1 and invoice 2. The amount is calculated as 2-percent interest on amounts that are 30 or more days past due. For example, 0.02 × (100.00 + 250.00) = 7.00. |
 
-## Userdefined settlement priority
+## User-defined settlement priority
 If you set **Use priority for automatic settlements** to **Yes** on the **Accounts receivable parameters** page, the settlement priority that you define on the **Settlement priority** page is used when transactions are selected for automatic settlement. For this example, the following settlement priority is defined:
 
 1.  Transaction type

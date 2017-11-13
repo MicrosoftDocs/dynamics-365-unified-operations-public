@@ -2,10 +2,10 @@
 # required metadata
 
 title: View purge or archive jobs (AX 2012)
-description: 
+description: This topic provides information about how to use the Intelligent Data Management Framework (IDMF) to view purge and archive jobs. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18771
 ms.assetid: fd4f59b6-280e-4091-b563-44315a1bb893

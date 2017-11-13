@@ -5,7 +5,7 @@ title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Ente
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/29/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope:  Operations, UnifiedOperations, Platform
+ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -97,7 +97,7 @@ Demo environments are default environments that contain demonstration data (not 
 
 The output of this step represents the workstream in the upgrade project plan for your functional users or business users.
 
-For more information, see [Analysis: Deploy a sandbox enviroment](analysis-sandbox.md)
+For more information, see [Analysis: Deploy a sandbox environment](analysis-sandbox.md)
 
 ### Create a project plan
 A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing, the functional test pass iterations, and details about the various resource assignments for those tasks.

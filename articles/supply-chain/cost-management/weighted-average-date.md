@@ -2,10 +2,10 @@
 # required metadata
 
 title: Weighted average date
-description: 
+description: Weighted average date is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory for each separate day in the inventory closing period. 
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 28991
@@ -37,8 +37,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[retail name](../includes/retail-name.md)]
 
+Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. 
 
-Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. 
+When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. 
 
 If only one receipt has occurred on or before the date, you don't have to value the average. Because all issues are settled from that receipt, the virtual transfer won't be created. Likewise, if only issues occur on the date, there are no receipts to value the average from, and the virtual transfer won't be created. When you use weighted average date, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. In this case, you don't use the weighted average date rule. We recommend a monthly inventory closing when you use the weighted average date inventory model. 
 

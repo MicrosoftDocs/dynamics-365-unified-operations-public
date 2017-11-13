@@ -5,7 +5,7 @@ title: Register and post a postdated check for a vendor
 description: You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. 
 author: kweekley
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -38,7 +38,7 @@ Set up postdated checks in the Cash and bank management page.
 
 The role of this task guides is Treasurer. This task uses the USMF demo company.
 
-1. Go to Acounts payable > Payments > Payment journal
+1. Go to Accounts payable > Payments > Payment journal
 2. Click New.
 3. In the Name field, type 'VendPay'.
 4. Click Lines.

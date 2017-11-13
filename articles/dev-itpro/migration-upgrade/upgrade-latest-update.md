@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations. 
 author: tariqbell
 manager: AnnBe
-ms.date: 07/28/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, AX Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 102343
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
@@ -97,7 +97,7 @@ Regardless of whether you're a live customer or you're still in the implementati
  > [!IMPORTANT]
  > There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
 
-2.  You will need to deploy a new development environment, which is running the new version that you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
+2.  You will need to deploy a new development environment, which is running the **new version** that you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
     -   Depending on your project type, these are the other options to deploy a developer VM:
         -   Download a Dev VHD.
@@ -117,15 +117,15 @@ Regardless of whether you're a live customer or you're still in the implementati
 For more details on code migration steps, see [Code Migration](../dev-tools/developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
 ## Scenario 3: Upgrade to the most current application update
-These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to upgrade your platform to the latest bits, use Scenario 4 below, especially if you have no customizations of the platform models.
+These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to only upgrade your platform to the latest bits, use Scenario 4 below.
 
 ### Upgrade your code
 
-First, upgrade your code as described in Scenario 2. This is a developer task and will happen on a developer environment.
+First, upgrade your code as described in Scenario 2. This is a developer task and will happen on a developer environment running the new release you are upgrading to.
 
-### Upgrade your data
+### Upgrade your data on a development environment
 
-Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. This is a validation process performed by a developer (on a development or test environment) to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. Execute this process on the development environment running the release you are upgrading to. This is a validation process performed by a developer to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox UAT and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 
@@ -135,7 +135,7 @@ You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Te
 - DSE will perform the data upgrade in one Tier 2 or higher sandbox environment. This is used as a control - to perform the identical upgrade process in this sandbox as will be performed in production.
 - DSE will perform the data upgrade in the production environment
 
-To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
+To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
 For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). You can deploy these with the new version and just sync to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database following [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md)
 
 
@@ -144,7 +144,7 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 2. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
 
-   If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
+   If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to choose from. The more advanced notice you give, the more likely you will get your first choice.
 
 3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
 4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
