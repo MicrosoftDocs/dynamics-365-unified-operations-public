@@ -15,7 +15,7 @@ ms.technology:
 
 #ms.search.form: 
 # ROBOTS: 
-audience: IT-Pro
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -170,13 +170,13 @@ The transaction information in Finance and Operations should be sent to GTE. At 
 
 A taxable document encapsulates transaction information by utilizing a set of data providers. Transaction information is wrapped by a TaxableDocument object. A TaxableDocumentDescriptor object in this object should describe what the transaction is and should list a set of data providers that bind tax model attributes with transaction data.
 
-![](media/2cfae932acb230e87761cabd8657e754.png)
+![](media/gte-taxable-doc.png)
 
 **TaxableDocumentDescriptor** is the class that implements a set of TaxableDocumentTypeDefinition interfaces and describes what the transaction is. Technically, TaxableDocumentDescriptors are the Finance and Operations table bases, whereas TaxableDocumentTypeDefinitions are more business-driven and are mainly used for tax configuration conditions.
 
 In the following example, TaxableDocDescirptorPurchOrderParm implements three interfaces that share the same Finance and Operations PurchParmTable table.
 
-![](media/eae55ba578819beeedf6ad56c7acaee7.png)
+![](media/gte-example-shared-table.png)
 
 **Integration uptake point**
 
@@ -188,12 +188,10 @@ If additional transactions should support GTE, related TaxableDocumentTypeDefini
 
 A transit document is an existing framework in Finance and Operations that is used to achieve two goals:
 
-Maintain the relationship between a transaction and a transit document.
+- Maintain the relationship between a transaction and a transit document.
+- Transfer the document from one transaction to another.
 
-Transfer the document from one transaction to another.
-
-This framework lets you easily find a transaction’s document and also track the
-transit history.
+This framework lets you easily find a transaction’s document and also track the transit history.
 
 For example, a tax document is created from VendInvoiceInfoTable, and then the transit document maintains the relationship between VendInvoiceInfoTable and TaxDocument. When a purchase order is invoiced, the tax document from VendInvoiceInfoTable is transferred to VendInvoiceJour.
 
@@ -225,15 +223,17 @@ Currently, GTE tax posting generates TaxTrans, TaxTrans\_IN (if you’re running
 
 The following illustration shows how TaxTrans and the voucher are created.
 
+![](media/gte-create-taxtrans-voucher.png)
+
+
 **Integration uptake point**
 
 If the taxTrans fields should be filled with additional fields from the tax document, either the **TaxAcctTaxTransTaxDocAttrMapping** or **TaxAcctTxTransTaxDocMeasureMapping** class, or its extended classes, should be updated in the appropriate manner for data binding.
 
+
 ## Finance and Operations integration example – Purchase order invoice
 
-
-This section provides an example of Finance and Operations GTE uptake for a purchase order invoice. Related transaction tables include VendInvoiceInfoTable,
-VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
+This section provides an example of Finance and Operations GTE uptake for a purchase order invoice. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
 
 ## Integration checklist
 
@@ -264,32 +264,32 @@ The following table summarizes all relevant changes that are related to the upta
 
 **TaxableDocTypeDefPurchaseInvoice** and **TaxableDocDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for GTE.
 
-![](media/4066c0b007a5e5af58f6e5747e182d8f.png)
+![](media/gte-classes-taxable-document.png)
 
 TaxableDocTypeDefPurchaseInvoice is the interface that defines a purchase invoice as a taxable document.
 
-![](media/a32dd40adba9b68d8fba578a36cf61e4.png)
+![](media/gte-purch-invoice-taxable-doc.png)
 
 **TaxableDocDescriptorPurchaseInvoice.getDataProvider()** specifies which data provider class is used for a purchase invoice.
 
-![](media/837db390e0df8dd3bb54649d05c93fd2.png)
+![](media/gte-data-provider-class-purch.png)
 
 ### Definition – Define data providers
 
 
 The following data providers are used to send transaction data to GTE for any tax-related operation.
 
-![](media/5f9a4db7fb027d468b238180df11d09f.png)
+![](media/gte-data-providers.png)
 
 **TaxableDocPurchaseInvoiceDataProvider.buildQuery()** provides a query for all related transactions, such as VendInvoiceInfoTable and VendInvoiceInfoLine. It also registers each data source with a row data provider. For example, the VendInvoiceInfoTable data source is registered with TableDocVendInvoiceInfoTableRowDP.
 
-![](media/91586aa891b3a52ea2ea5fdef0bdf328.png)
+![](media/gte-example-vend-invoice.png)
 
 TaxableDocVendInvoiceInfoTableRowDP extends the **TaxableDocPurchTableRowDataProvider** class to set up transaction header–related information, whereas TaxableDocVendInvoiceInfoLineRowDP extends **TaxableDocPurchLineRowDataProvider** to set up invoice line–related information.
 
 Here lists the taxable document fields that are mapped in Finance and Operations:
 
-| **Taxable document fields that are mapped in AX** | **Logic in AOT Object**                                  | **Required**              | **Default Value**    |
+| **Taxable document fields that are mapped in Finance and Operations** | **Logic in AOT Object**                                  | **Required**              | **Default Value**    |
 |---------------------------------------------------|----------------------------------------------------------|---------------------------|----------------------|
 | SubLines                                          | TaxableDocumentLineObject.getSubLines                    | Yes                       |                      |
 | Fields                                            | TaxableDocumentLineObject.getFields                      | Yes                       |                      |
@@ -348,9 +348,6 @@ Here lists the taxable document fields that are mapped in Finance and Operations
 
 One way to trigger tax calculation in GTE is to add a **Tax document** button on the transaction. When this button is clicked, transactional data is sent to GTE as a predefined taxable document object, and tax calculation is triggered in GTE. The button is usually added to a transaction form, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface.
 
-![](media/48df75facd021c34804b637985d972d7.png)
-
-![](media/8689037611560b7a30ea21a6b5b46622.png)
 
 ### Creation – Integrate with transaction totals
 
@@ -358,7 +355,7 @@ The **Totals** button is used to show a transaction’s financial information, s
 
 For an existing implementation of Finance and Operations, a set of **PurchTotals** classes is created to handle this functionality. Therefore, GTE-related code is inserted into the class’s **calcTax** method to help guarantee that the expected tax total amount is initiated.
 
-![](media/db6cae7400a198cc8091d70dabc26d7c.png)
+![](media/gte-trx-totals.png)
 
 For alignment with the existing logic, the existing **taxTotal** parameter is used to show the tax amount for the entire transaction. A new parameter that is named **taxTotalGTE** is used to show the tax that is posted to the vendor. In some cases, such as a reverse charge, the **taxTotal** value doesn’t equal the **taxTotalGTE** value. Therefore, **taxTotal** will be used for journal posting whereas **taxTotalGTE** will be used in **Totals** forms to show the total tax amount.
 
