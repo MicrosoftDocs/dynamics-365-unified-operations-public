@@ -51,7 +51,7 @@ Download the following files that are required to complete the task guide.
 | ER format configuration                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | Sample of incoming file in .csv format | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
 
-If you have not yet completed the task guide, ER Create required configurations to implrt data from an external file for electronic reporting, download the following file to complete that task guide first.
+If you have not yet completed the task guide, ER Create required configurations to import data from an external file for electronic reporting, download the following file to complete that task guide first.
 
 | Title                                  | File name          |
 |----------------------------------------|--------------------|
