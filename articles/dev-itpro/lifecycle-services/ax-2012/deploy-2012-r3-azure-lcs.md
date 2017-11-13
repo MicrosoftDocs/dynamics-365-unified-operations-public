@@ -5,7 +5,7 @@ title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
 description: This topic provides information about how use Lifecycle Services (LCS) to deploy Microsoft Dynamics AX 2012 R3.  
 author: kfend
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -74,11 +74,11 @@ You can deploy the following types of AX 2012 R3 environments on Azure with the 
 | Environment                        | Description                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Development                        | Deploy this environment to develop features for AX 2012 R3.This environment includes 2 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.                                                                                                                       |
-| Development with shared SQL Server | Deploy this environment to develop features for AX 2012 R3. The database for each development VM instance will be deployed to a shared SQL Server instance.This environment includes 3 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.                       |
+| Development with shared SQL Server | Deploy this environment to develop features for AX 2012 R3. The database for each development VM instance will be deployed to a shared SQL Server instance. This environment includes 3 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.                       |
 | Test                               | Deploy this environment to test features for AX 2012 R3.This environment includes 4 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them.                                                                                                                              |
 | Retail essentials dev/test         | Deploy this environment to develop or test features for Retail essentials for AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it.                                                                            |
 | Retail e-commerce dev/test         | Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it.                                                                                          |
-| Retail mobility dev/test           | Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it. |
+| Retail mobility dev/test           | Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store. This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it. |
 
 **High availability environment**
 
@@ -108,11 +108,11 @@ To deploy AX 2012 R3 on Azure, see the articles that are listed in the following
 </tr>
 <tr class="even">
 <td>Plan your deployment</td>
-<td>Before you can deploy AX 2012 R3 on Azure, there are several things you must consider and decisions you must make. For example, you must consider licensing requirements, purchase an Azure subscription, and select the type of AX 2012 R3 environment that you will deploy on Azure.For more information, see <a href="plan-2012-r3-deployment-azure.md">Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
+<td>Before you can deploy AX 2012 R3 on Azure, there are several things you must consider and decisions you must make. For example, you must consider licensing requirements, purchase an Azure subscription, and select the type of AX 2012 R3 environment that you will deploy on Azure. For more information, see <a href="plan-2012-r3-deployment-azure.md">Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
 </tr>
 <tr class="odd">
 <td>Deploy AX 2012 R3 on Azure</td>
-<td>Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy AX 2012 R3 on Azure.To deploy a demo environment, see:
+<td>Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy AX 2012 R3 on Azure. To deploy a demo environment, see:
 <ul>
 <li><a href="deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md">Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure</a></li>
 <li><a href="deploy-retail-essentials-demo-environment-azure.md">Deploy a Retail essentials demo environment on Azure</a></li>
