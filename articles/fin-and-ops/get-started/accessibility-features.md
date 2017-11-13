@@ -58,7 +58,7 @@ Each action offered on a page is keyboard accessible, via the tab sequence. We a
 
 Assume that the **Email notification log** option in the **Email Notification** section is the action you'd like to execute. (As shown in the right-most section.)
 
-A user can execute that action by gaining focus into the Action pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the **Email notification log** action has focus.
+A user can execute that action by gaining focus into the Action Pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the **Email notification log** action has focus.
 
 ![cid:image002.jpg\@01D35891.76984830](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
 
@@ -66,7 +66,7 @@ The user can also execute the action more directly. From anywhere on the page, t
 
 ![cid:image003.jpg\@01D35891.76984830](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
 
-The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* and “log” all allowed the user to “jump” to the **Email notification log** functionality.
+The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* (a partial word) and *log* all allow the user to “jump” to the **Email notification log** functionality.
 
 | [./media/image4.jpeg](./media/image4.jpeg) | [./media/image5.jpeg](./media/image5.jpeg) | [./media/image6.jpeg](./media/image6.jpeg) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
@@ -77,7 +77,9 @@ For more information, see [Action search](action-search.md).
 
 ## Tab sequence
 
-In daily use, it is understood that not *every* field is used to perform common tasks. Therefore, by default, Finance and Operations offers an “optimized” tab sequence with tab stops on only those fields that are key to common scenarios.  If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option which makes all editable and read-only fields part of the tab sequence. The user can then choose to use form personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
+In daily use, it is understood that not *every* field is used to perform common tasks. Therefore, by default, Finance and Operations offers an “optimized” tab sequence with tab stops on only those fields that are key to common scenarios.  
+
+If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option which makes all editable and read-only fields part of the tab sequence. The user can then choose to use form personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
 
 ![cid:image005.png\@01D357AF.09B33870](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
 
