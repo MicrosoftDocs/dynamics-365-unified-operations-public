@@ -5,7 +5,7 @@ title: Copy data between Dynamics AX companies (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -70,9 +70,9 @@ To complete this walkthrough you will need:
     4.  Close the **Select entities for processing group** form.
 
 ## Process data from source to staging
-1.  In the **Processing group** form, select the Export-Cust group that you created, and click **Get staging data**.The **Create a job ID for the staging data job** form opens.
-2.  By default, an ID for the job is generated. If needed, you can modify the ID and add a description. Click **OK**.The **Staging data execution form** opens.
-3.  In the **Get data from source to staging** form, click **OK** to run immediately.The source data is copied to the staging tables.
+1.  In the **Processing group** form, select the Export-Cust group that you created, and click **Get staging data**. The **Create a job ID for the staging data job** form opens.
+2.  By default, an ID for the job is generated. If needed, you can modify the ID and add a description. Click **OK**. The **Staging data execution form** opens.
+3.  In the **Get data from source to staging** form, click **OK** to run immediately. The source data is copied to the staging tables.
 
 ## Validate the data in staging
 1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history**, and then select the job that ran.
