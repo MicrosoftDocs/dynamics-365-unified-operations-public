@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration patterns and practices
-description: This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for Finance and Operations.
+description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
@@ -34,230 +34,231 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended to help architects and developers make sound design decisions when implementing integration scenarios with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-The topic describes Finance and Operations integration patterns, integration scenarios, and integration solutions and best practices. It does not include technical details on how to use or set up each Finance and Operations integration pattern, nor sample integration code.
+The topic describes integration patterns, integration scenarios, and integration solutions and best practices for Finance and Operations. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
-The following table lists the integration patterns available for Finance and Operations.
+The following table lists the integration patterns that are available for Finance and Operations.
 
-| Pattern                       | Documentation                                       |
-|-------------------------------|-----------------------------------------------------|
-| OData                         | [Odata](odata.md)                                               |
-| Batch data API                | [Recurring integrations](recurring-integrations.md)                              |
-|                               | [Data management API](data-management-api.md)                                 |
-| Custom service                | [Custom services](custom-services.md)                 |
+| Pattern                       | Documentation |
+|-------------------------------|---------------|
+| OData                         | [OData](odata.md) |
+| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management API](data-management-api.md) |
+| Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
 
+## Synchronous vs. asynchronous integration patterns
 
-## Synchronous vs asynchronous integration patterns
+Processing can be either synchronous or asynchronous. Often, the type of processing that you must use determines the integration pattern that you choose.
 
-Deciding which integration pattern to use is often based on whether you need to use synchronous or asynchronous processing. 
-  
-A *synchronous* pattern is a blocking request and response pattern, in which the caller is blocked until the callee is done executing and gives a response.
-An *asynchronous* pattern is a non-blocking pattern, in which the caller submits the request and continues without waiting for a response.
+A *synchronous* pattern is a blocking request and response pattern, where the caller is blocked until the callee has finished running and gives a response. An *asynchronous* pattern is a non-blocking pattern, where the caller submits the request and then continues without waiting for a response.
 
-The following table lists the inbound integration patterns that are available. 
+The following table lists the inbound integration patterns that are available.
 
 | Pattern        | Timing       | Batch |
 |----------------|--------------|-------|
 | OData          | Synchronous  | No    |
 | Batch data API | Asynchronous | Yes   |
 
-Before comparing synchronous vs asynchronous, you should be aware that all REST and SOAP integration APIs provided by Finance
-and Operations can be invoked either synchronously or asynchronously.
+Before you compare synchronous and asynchronous patterns, you should be aware that all the REST and SOAP integration application programming interfaces (APIs) that Finance and Operations provides can be invoked either synchronously or asynchronously.
 
-The following examples illustrate this point. One can’t draw the conclusion that when OData is used for integration, the caller will be blocked. That is not true, because it really depends on how a call is made.
+The following examples illustrate this point. You can't assume that the caller will be blocked when the Open Data Protocol (OData) is used for integration. The caller might not be blocked, depending on how a call is made.
 
-| Pattern        | Synchronous programming paradigm    | Asynchronous programming paradigm        |
-|----------------|---------------------------------------|--------------------------------------------|
-| OData          | DbResourceContext.SaveChanges         | DbResourceContext.SaveChangesAsync        |
-| Custom Service | httpRequest.GetResponse               | httpRequest.BeginGetResponse               |
+| Pattern        | Synchronous programming paradigm      | Asynchronous programming paradigm |
+|----------------|---------------------------------------|-----------------------------------|
+| OData          | DbResourceContext.SaveChanges         | DbResourceContext.SaveChangesAsync |
+| Custom service | httpRequest.GetResponse               | httpRequest.BeginGetResponse |
 | SOAP           | UserSessionService.GetUserSessionInfo | UserSessionService.GetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                     | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously)                                |
+| Batch data API | ImportFromPackage                     | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
+Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run in Finance and Operations. Here are some examples:
 
-OData and custom service are both synchronous integration patterns because calling these APIs results in the immediate execution of business logic in Finance and Operations. For example: 
-- If OData is used to insert product records, the records are inserted immediately as part of the OData call. 
-- If a custom service is used to look up on-hand inventory, then business logic is executed immediately as part of the JSON\\SOAP call and an inventory sum number is immediately returned.
+- If OData is used to insert product records, the records are immediately inserted as part of the OData call.
+- If a custom service is used to look up on-hand inventory, business logic is immediately run as part of the JSON/SOAP call, and an inventory sum number is immediately returned.
 
-Batch data APIs are considered asynchronous integration patterns because calling these APIs results in data being imported or exported in batch mode. Consider the ImportFromPackage API: calls to ImportFromPackage can be synchronous, however, the API only schedules a batch job to import a specific data package. The scheduling job quickly returns, and the work is done later in a batch job. Therefore, we categorize batch data APIs as asynchronous.
+Batch data APIs are considered asynchronous integration patterns, because when these APIs are called, data is imported or exported in batch mode. For example, calls to the ImportFromPackage API can be synchronous. However, the API schedules a batch job to import only a specific data package. The scheduling job is quickly returned, and the work is done later in a batch job. Therefore, batch data APIs are categorized as asynchronous.
 
-Batch data APIs are designed to deal with large volume data import and export. Depending on the entity, and how much business logic is being executed during import or export, it is very hard to define a generic amount to determine what a large volume is. A rule of thumb is that if volume is more than a few hundred thousand, you should use the batch data API for integrations.
+Batch data APIs are designed to handle large-volume data imports and exports. It's difficult to define what exactly qualifies as a large volume. The answer depends on the entity, and on the amount of business logic that is run during import or export. However, here is a rule of thumb: If the volume is more than a few hundred thousand, you should use the batch data API for integrations.
 
-In general, when selecting an integration pattern, we recommend that you consider the following: 
+In general, when you're trying to choose an integration pattern, we recommend that you consider the following questions:
 
--   Is there a business requirement for the integration to be real time?
--   What is the peak data volume requirement?
--   What is the frequency?
+- Is there a business requirement that the integration should be in real time?
+- What is the requirement for the peak data volume?
+- What is the frequency?
 
 ### Error handling 
 
-When using a synchronous pattern, success or failure responses are returned to the caller. For example, if an OData call is used to insert sales orders, if a sales order line has a bad reference to a product that does not exist, the caller will get a response containing an error. It is caller’s responsibility to handle potential errors in the response.
+When you use a synchronous pattern, success or failure responses are returned to the caller. For example, when an OData call is used to insert sales orders, if a sales order line has a bad reference to a product that doesn't exist, the response that the caller receives contains an error message. The caller is responsible for handling any errors in the response.
 
-When using an asynchronous pattern, the caller will get an immediate response about whether the scheduling call was successful. It is the caller’s responsibility to handle potential errors in the response. After scheduling is done, the data import or export status won’t be pushed to the caller. The caller must poll for the result of the corresponding import or export process and handle errors accordingly.
+When you use an asynchronous pattern, the caller receives an immediate response that indicates whether the scheduling call was successful. The caller is responsible for handling any errors in the response. After scheduling is done, the status of the data import or export isn't pushed to the caller. The caller must poll for the result of the corresponding import or export process, and must handle any errors accordingly.
 
-## Common scenarios and patterns that use OData integrations
-The following are common scenarios that use OData integrations. 
+## Typical scenarios and patterns that use OData integrations
+
+Here are some typical scenarios that use OData integrations.
 
 ### Create and update product information
 
-A manufacturer runs Finance and Operations but defines and configures their product with a third-party application hosted on-premise. They want to move their production information from their on-premise application into Finance and Operations. When a product is defined, or changed in the on-premise application, the end user would like to see the same change made in Finance and Operations, and they want it real time.
+A manufacturer runs Finance and Operations, but defines and configures its product by using a third-party application that is hosted on-premises. This manufacturer wants to move its production information from the on-premises application to Finance and Operations. When a product is defined, or when it's changed in the on-premises application, the user should see the same change, in real time, in Finance and Operations.
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | Yes       |
-| Peak data volume         | 1000/hour\* |
-| Frequency                | ad hoc    |
+| Decision                    | Information      |
+|-----------------------------|------------------|
+| Is real-time data required? | Yes              |
+| Peak data volume            | 1,000 per hour\* |
+| Frequency                   | Ad hoc           |
 
-\*Occasionally, there will be many new or modified production configurations made in a short period of time.
+\* Occasionally, many new or modified production configurations will occur in a short time.
 
-**Recommended solution**
+#### Recommended solution
 
-This scenario is best implemented using the OData service endpoints to create and update product information in Finance and Operations.
+This scenario is best implemented by using the OData service endpoints to create and update product information in Finance and Operations.
 
 In Finance and Operations:
--   Determine all of the entities needed for the integration.
--   Make sure the OData service endpoints are available for the same set of entities.
+
+- Determine all the entities that are required for the integration.
+- Make sure that the OData service endpoints are available for the same set of entities.
 
 In the third-party application:
-- When product information is created or modified in the third-party application, a corresponding OData call is made to Finance and
-Operations to make the same change.
 
-### Check read order status
+- When product information is created or modified in the third-party application, an OData call is made to Finance and Operations to make the same change.
 
-A company runs Finance and Operations but has a self-hosted customer portal where customers can check status of their orders. Order status is maintained in Finance and Operations.
+### Read the status of customer orders
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | Yes       |
-| Peak data volume         | 5000/hour |
-| Frequency                | ad hoc    |
+A company runs Finance and Operations but has a self-hosted customer portal where customers can check the status of their orders. Order status information is maintained in Finance and Operations.
 
-**Recommended solution**
+| Decision                    | Information    |
+|-----------------------------|----------------|
+| Is real-time data required? | Yes            |
+| Peak data volume            | 5,000 per hour |
+| Frequency                   | Ad hoc         |
 
-This scenario is best implemented using the OData service endpoints to read order status from Finance and Operations.
+#### Recommended solution
+
+This scenario is best implemented by using the OData service endpoints to read order status information from Finance and Operations.
 
 In Finance and Operations:
--   Determine the entity needed for checking order status.
--   Make sure the OData service endpoint is available for the entity.
 
-From the customer portal site:
--   When the customer checks the order status, make a real-time OData call into Finance and Operations to read the corresponding order and retrieve status for that order.
+- Determine the entity that is required in order to read order status information.
+- Make sure that the OData service endpoint is available for the entity.
+
+On the customer portal site:
+
+- When a customer checks the status of an order, make a real-time OData call to Finance and Operations to read the corresponding order and retrieve its status.
 
 ### Approve BOMs
 
-A company runs Finance and Operations but hosts a product lifecycle management (PLM) system on-premises. The PLM system has a workflow that sends the finished BOM information to Finance and Operations for approval.
+A company runs Finance and Operations but uses a product lifecycle management (PLM) system that is hosted on-premises. The PLM system has a workflow that sends the finished bill of materials (BOM) information to Finance and Operations for approval.
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | Yes       |
-| Peak data volume         | 1000/hour |
-| Frequency                | ad hoc    |
+| Decision                    | Information    |
+|-----------------------------|----------------|
+| Is real-time data required? | Yes            |
+| Peak data volume            | 1,000 per hour |
+| Frequency                   | Ad hoc         |
 
-**Recommended solution**
+#### Recommended solution
 
-This scenario could be implemented with an OData action.
+This scenario can be implemented by using an OData action.
 
 In Finance and Operations:
--   Determine the entity needed for the integration.
--   Make sure the OData service endpoints are available for the entity.
--   Create an action on the entity to execute the required business logic. 
+
+- Determine the entity that is required for the integration.
+- Make sure that the OData service endpoints are available for the entity.
+- On the entity, create an action to run the required business logic.
 
 In the PLM solution:
--   Have the PLM system invoke the OData action to approve the BOM.
+
+- Make the PLM system invoke the OData action to approve the BOM.
 
 > [!NOTE]
-> An example of this type of OData action can be found in the BOMBillOfMaterialsHeaderEntity::approve.
+> You can find an example of this type of OData action in **BOMBillOfMaterialsHeaderEntity::approve**.
 
-## Common scenarios and patterns that use a custom service
-The following are common scenarios that use a custom service. 
+## Typical scenarios and patterns that use a custom service
+
+Here are some typical scenarios that use a custom service.
 
 ### Look up on-hand inventory
 
-An energy company has field workers scheduling installation jobs for heaters. This company uses Finance and Operations for back office and a third-party SaaS for scheduling appointments. When scheduling appointments, they need to look up inventory availability to
-make sure installation parts are available for the job.
+An energy company has field workers who schedule installation jobs for heaters. This company uses Finance and Operations for the back office and third-party software as a service (SaaS) to schedule appointments. When field workers schedule appointments, they must look up inventory availability to make sure that installation parts are available for the job.
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | Yes       |
-| Peak data volume         | 1000/hour |
-| Frequency                | ad hoc    |
+| Decision                    | Information    |
+|-----------------------------|----------------|
+| Is real-time data required? | Yes            |
+| Peak data volume            | 1,000 per hour |
+| Frequency                   | Ad hoc         |
 
-**Recommended solution**
+#### Recommended solution
 
-This scenario could be implemented using a custom service.
+This scenario can be implemented by using a custom service.
 
 In Finance and Operations:
--   Create a custom service to calculate the physical inventory on hand for a given item.
+
+- Create a custom service to calculate the physical on-hand inventory for a given item.
 
 In the scheduling application:
--   Make a real time call to a custom service endpoint, either thru SOAP or REST to retrieve inventory information for the selected item.
+
+- Make a real-time call to a custom service endpoint, through either SOAP or REST, to retrieve inventory information for the selected item.
 
 > [!NOTE]
-> An example of this type of custom service can be seen in the Retail Real Time Services implementation:  RetailTransactionServiceInventory::inventoryLookup
+> You can find an example of this type of custom service in the Retail Real Time Services implementation: **RetailTransactionServiceInventory::inventoryLookup**.
 
-You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, there is more than one possible way to expose the same data and business logic inside of Finance and Operations, and there is no "better" way. In this case, the decision comes down to which way works best for a given scenario and which method a developer is most comfortable with.
+You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, you can use multiple methods to expose the same data and business logic in Finance and Operations, and all the methods are equally valid and effective. In this case, choose the method that works best for a given scenario and that a developer is most comfortable with.
 
-## Common scenarios and patterns that use batch data integration
-The following are common scenarios that use the batch data APIs.
+## Typical scenarios and patterns that use batch data integrations
 
-### Import sales orders in large volumes
+Here are some typical scenarios that use batch data APIs.
 
-A company receives large volume of sales orders from a front-end system that runs on-premise. These orders need to be sent to Finance and
-Operations periodically for processing and management.
+### Import large volumes of sales orders
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | No       |
-| Peak data volume         | 200,000/hour |
-| Frequency                | Once every 5 minutes    |
+A company receives a large volume of sales orders from a front-end system that runs on-premises. These orders must periodically be sent to Finance and Operations for processing and management.
 
-**Recommended solution**
+| Decision                    | Information                 |
+|-----------------------------|-----------------------------|
+| Is real-time data required? | No                          |
+| Peak data volume            | 200,000 per hour            |
+| Frequency                   | One time every five minutes |
 
-This scenario is best implemented with batch data APIs.
+#### Recommended solution
+
+This scenario is best implemented by using batch data APIs.
 
 In Finance and Operations:
--   Determine the entities needed for the integration.
--   Make sure that data management is enabled for the entities.
+
+- Determine all the entities that are required for the integration.
+- Make sure that data management is enabled for the entities.
 
 In the on-premises system:
--   Use the REST batch data API to import files into Finance and Operations.
+
+- Use the REST batch data API to import files into Finance and Operations.
 
 ### Export large volumes of purchase orders
 
-A company generates large amounts of purchase orders in Finance and Operations and uses an on-premise inventory management system to receive products. Purchase orders need to be moved from Finance and Operations to the on-premise inventory system.
+A company generates a large volume of purchase orders in Finance and Operations and uses an on-premises inventory management system to receive products. Purchase orders must be moved from Finance and Operations to the on-premises inventory system.
 
-| Decision  | Information       |
-|--------------------------|-----------|
-| Real-time data required? | No       |
-| Peak data volume         | 300,000/hour |
-| Frequency                | Once an hour    |
+| Decision                    | Information       |
+|-----------------------------|-------------------|
+| Is real-time data required? | No                |
+| Peak data volume            | 300,000 per hour  |
+| Frequency                   | One time per hour |
 
+#### Recommended solution
 
-**Recommended solution**
-
-This scenario is best implemented with batch data APIs.
+This scenario is best implemented by using batch data APIs.
 
 In Finance and Operations:
--   Determine the entities needed for the integration.
--   Make sure that data management is enabled for the entities.
--   If incremental push is required, make sure that change tracking can be enabled on the entities.
+
+- Determine all the entities that are required for the integration.
+- Make sure that data management is enabled for the entities.
+- If incremental push is required, make sure that change tracking can be enabled on the entities.
 
 In the on-premises inventory system:
 
--   Use the REST batch data API to export the file out of Finance and Operations, and import it into the inventory system.
+- Use the REST batch data API to export the file from Finance and Operations and import it into the inventory system.
 
-## Common scenarios and patterns that call external web services
+## Typical scenarios and patterns that call external web services
 
-It’s quite common for Finance and Operations to call out to an external web service, hosted on-premises or by another SaaS provider. In this case Finance and Operations acts as the integration client, which is similar to writing an integration client for any other applications. The same set of best practices and guidelines applies. For a simple example, see [Consuming external web services](consume-external-web-service.md).
-
+It's typical that Finance and Operations calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, Finance and Operations acts as the integration client. When you write an integration client for Finance and Operations, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
 > [!IMPORTANT]
-> Due to security requirements, Finance and Operations production and sandbox environments support only secured communication using TLS 1.2 or above. This means the target web service endpoint Finance and Operations is making a call out to has to support TLS1.2 or above. If the target service endpoint doesn’t fulfill this requirement, calls from Finance and Operations will fail with an exception error message similar to the following:
-> “Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.” 
-> If there is no way to modify the target service to be TLS 1.2  or above, one can work around this by introducing a broker service and making a two-hop call, as illustrated by the following diagram.
-
-![TLS requirements](./media/integration-tls.png)
-
-
-
+> Because of security requirements, Finance and Operations production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that Finance and Operations calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls from Finance and Operations fail. The exception error message resembles the following message:  
+> "Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host."  
+> If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.  
+> ![TLS requirements](./media/integration-tls.png)
