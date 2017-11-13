@@ -77,7 +77,7 @@ For more information, see [Action search](action-search.md).
 
 ## Tab sequence
 
-In daily use, it is understood that not EVERY field is used to perform common tasks. Therefore, by default an optimized tab sequence with tab stops on only those fields that are key to common scenarios is available.  If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option which makes all editable and read-only fields part of the tab sequence. The user can then choose to use personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
+In daily use, it is understood that not *every* field is used to perform common tasks. Therefore, by default, Finance and Operations offers an “optimized” tab sequence with tab stops on only those fields that are key to common scenarios.  If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option which makes all editable and read-only fields part of the tab sequence. The user can then choose to use form personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
 
 ![cid:image005.png\@01D357AF.09B33870](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
 
