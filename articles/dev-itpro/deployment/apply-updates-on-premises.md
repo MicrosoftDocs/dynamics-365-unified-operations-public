@@ -70,9 +70,3 @@ Follow these steps to apply a hotfix.
 1. Download the required hotfix to your development environment, and then follow the steps in [Create a deployable package](create-apply-deployable-package.md).
 2. In the Asset library in LCS, upload the deployable package to the **Software deployable packages** tab.
 3. As when you apply code customizations, you can include the above deployable package as an asset when you deploy an environment. To apply the package to a new environment or an environment that was previously deployed, follow the steps in the "Apply code customizations" section of this topic.
-
-## Apply the latest platform update
-There are two ways to apply the latest platform update:
-
-- Deploy a new environment, and select the latest platform update topology during deployment. Then follow the usual steps for deploying an environment.
-- To update an existing environment with the latest update, select **Delete** to delete the application, and then select **Configure** to deploy a new version of the platform to the on-premises environment.
