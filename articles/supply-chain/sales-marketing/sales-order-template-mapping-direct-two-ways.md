@@ -194,5 +194,3 @@ The following illustrations show an example of a template mapping in Data integr
 ## Related topics
 
 [Prospect to cash](prospect-to-cash.md)
-
-[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct.md)
