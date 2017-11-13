@@ -5,7 +5,7 @@ title: Import data from a CSV data source (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -81,15 +81,15 @@ To work through this example, use any of the delimited demo files that are shipp
 3.  Click **Entities** to select the entities to include in the processing group, and enter the following information.
     1.  In the **Select entities for processing group** form, click **New**, and then, for **Entity name**, enter a name.
     2.  Set the **Source data format** to CSV.
-    3.  In the **Sample file path field**, locate the file to import from the demo files at the following location: Program Files/Microsoft Dynamics AX 2012/Data Import/Export Framework Client Component&lt;version&gt;DemoFilesDelimited .
+    3.  In the **Sample file path field**, locate the file to import from the demo files at the following location: Program Files/Microsoft Dynamics AX 2012/Data Import/Export Framework Client Component&lt;version&gt;DemoFilesDelimited.
     4.  Click **Generate source mapping**.
     5.  To view the source mapping, click **Modify source mapping**. Close the **Map source to staging** form.
     6.  Click **Validate**.
     7.  Click **Preview source file**, and then close the **Select entities for processing group** form.
 
 ## Process data from source to staging
-1.  In the **Processing group** form, select the group that you created, and click **Get staging data**.The **Create a job ID for the staging data job** form opens.
-2.  By default, an ID for the job is generated. You can optionally modify the ID and add a description. Click **OK**.The **Staging data execution** form opens.
+1.  In the **Processing group** form, select the group that you created, and click **Get staging data**. The **Create a job ID for the staging data job** form opens.
+2.  By default, an ID for the job is generated. You can optionally modify the ID and add a description. Click **OK**. The **Staging data execution** form opens.
 3.  Under **Entity details**, enter the path of the file that contains all of your source data, and then click **Run**. **Note:** If your sample file and full source file are different from each other, you would change to your full source file at this point.
 4.  In the **Get data from source to staging** form, click **OK** to run immediately. The source data is copied to the staging tables.
 
@@ -101,9 +101,9 @@ To work through this example, use any of the delimited demo files that are shipp
 
 ## Process data from staging to target
 1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group**, and then select the processing group to work with.
-2.  Click **Copy data to target**.The **Select a job ID to run** dialog box opens.
+2.  Click **Copy data to target**. The **Select a job ID to run** dialog box opens.
 3.  Select the job that you created in the previous procedure, and click **OK**. The **Target data execution** dialog box opens.
-4.  Click **Run**, and then click **OK**.The data is copied to the target entities.
+4.  Click **Run**, and then click **OK**. The data is copied to the target entities.
 
 ## Validate the data in target
 View staging data:
