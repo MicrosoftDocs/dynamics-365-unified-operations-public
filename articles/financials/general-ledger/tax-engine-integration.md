@@ -70,44 +70,44 @@ This model is part of the Finance and Operations integration framework. Almost n
 The tax business service model is the façade for Finance and Operations application interactions with GTE for basic operations. This façade uses both the interface model and the application model for tax calculation, accounting, and posting. The façade provides the following methods:
 
 -	**CalculateTax** – Delete a tax document if it’s marked as **Dirty**, and then calculate tax.
-  -	**Input**: Taxable document identifier
-  -	**Output**: Tax Document object
+    -	**Input**: Taxable document identifier
+    -	**Output**: Tax Document object
 -	**RecalculateTax** – Explicitly recalculate a tax document,
-  -	**Input**: Taxable document identifier
-  -	**Output**: Tax Document object
+    -	**Input**: Taxable document identifier
+    -	**Output**: Tax Document object
 -	**SaveTaxDocument** – Persist a tax document to the Finance and Operations database.
-  -	**Input**: Tax Document object
-  -	**Output**: Not applicable
+    -	**Input**: Tax Document object
+    -	**Output**: Not applicable
 -	**GetTaxDocumentBySource** – Read a tax document, based on the source transaction identifier.
-  -	**Input**: Transaction identifier
-  -	**Output**: Tax document object
+    -	**Input**: Transaction identifier
+    -	**Output**: Tax document object
 -	**GetTaxDocumentLineBySource** – Read a tax document line, based on the source transaction line identifier.
-  -	**Input**: Transaction line identifier
-  -	**Output**: Tax document line object
+    -	**Input**: Transaction line identifier
+    -	**Output**: Tax document line object
 -	**GetTaxDocumentTaxStatus** – Read the status of a tax document for the associated transaction.
-  -	**Input**: Taxable document identifier
-  -	**Output**: Tax document status
+    -	**Input**: Taxable document identifier
+    -	**Output**: Tax document status
 -	**MarkTaxDocumentTaxStatus** – Mark a tax document as **Dirty** when the underlining transaction has been updated.
-  - **Input**: 
-    - Taxable document identifier
-    - Tax document status
-  - **Output**: Not applicable
+    - **Input**: 
+      - Taxable document identifier
+      - Tax document status
+    - **Output**: Not applicable
 - **DeleteTaxDocument** – Delete a tax document when the transaction is deleted.
-  - **Input**: Taxable document identifier
-  - **Output**: Not applicable
+    - **Input**: Taxable document identifier
+    - **Output**: Not applicable
 - **PostTax** – Post tax for the transaction.
-  - **Input**:
-    - Ledger voucher for the tax that must be posted
-    - Taxable document identifier
-  - **Output**: Not applicable
+    - **Input**:
+      - Ledger voucher for the tax that must be posted
+      - Taxable document identifier
+    - **Output**: Not applicable
 - **TransferTaxDocument** – Transfer a tax document from one transaction that is supported by the source to another.
-  - **Input**:
-    - Source transaction
-    - Target transaction
-  - **Output**: Not applicable
+    - **Input**:
+      - Source transaction
+      - Target transaction
+    - **Output**: Not applicable
 **PostTaxDocument** – Just change the status of the tax document status to **Posted**.
-  - **Input**: Taxable document identifier
-  - **Output**: Not applicable
+    - **Input**: Taxable document identifier
+    - **Output**: Not applicable
   
 **Integration uptake point**
 This model is part of the Finance and Operations integration framework. Almost no uptake is required for partners or customers.
