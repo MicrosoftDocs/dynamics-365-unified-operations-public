@@ -132,25 +132,25 @@
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
 ## Data integration
-### [Integration patterns](data-entities/integration-overview.md)
+### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
 
 ### Data integration APIs
-#### [Data management package API](data-entities/data-management-api.md)
-#### [Service endpoints](data-entities/services-home-page.md)
-##### [Service authentication troubleshooting](data-entities/troubleshoot-service-authentication.md)
-#### [OData](/data-entities/odata.md)
-#### [Custom services](data-entities/custom-services.md)
-#### [Recurring integrations](data-entities/recurring-integrations.md)
+#### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
+#### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
+##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
+#### [OData](../dev-itpro//data-entities/odata.md)
+#### [Custom services](../dev-itpro/data-entities/custom-services.md)
+#### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
 ### Development for integration
-#### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
-##### [Develop an entity for data migration](data-entities/develop-entity-for-data-migration.md)
-##### [Develop composite data entities](data-entities/develop-composite-data-entities.md)
-##### [Configure financial cross-company data sharing](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
-##### [Create a record template to facilitate data entry](data-entities/tasks/create-record-template-facilitate-data-entry.md)
-##### [Use a record template to create a new record](data-entities/tasks/use-record-template-new-record.md)
+#### [Data integration using data entities](../dev-itpro/data-entities/data-management-integration-data-entity.md)
+##### [Develop an entity for data migration](../dev-itpro/data-entities/develop-entity-for-data-migration.md)
+##### [Develop composite data entities](../dev-itpro/data-entities/develop-composite-data-entities.md)
+##### [Configure financial cross-company data sharing](../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+##### [Create a record template to facilitate data entry](../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md)
+##### [Use a record template to create a new record](../dev-itpro/data-entities/tasks/use-record-template-new-record.md)
 
-#### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
+#### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
 ###### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
 ###### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
@@ -164,7 +164,7 @@
 ###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
-#### [Consuming external web services](data-entities/consume-external-web-service.md)
+#### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
 
 
 ## [Data management](../dev-itpro/data-entities/data-entities-data-packages.md)
