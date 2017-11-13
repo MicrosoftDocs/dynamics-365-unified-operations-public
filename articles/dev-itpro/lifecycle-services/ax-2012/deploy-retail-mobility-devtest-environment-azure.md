@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a Retail mobility dev/test environment on Azure (AX 2012)
-description: This article explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+description: This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 2012
 [!include[banner](../../includes/banner.md)]
 
 
-This article explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 
 Prerequisites
 -------------
@@ -57,14 +57,14 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 
 1.  Click **Cloud-hosted environments**. The **Cloud-hosted environments** page is displayed.
 2.  The **Microsoft Azure setup** panel is displayed on the side of the screen. If it is not displayed, click **Microsoft Azure settings**.
-3.  Enter your **Azure subscription ID**.If you need to find your subscription ID, complete the following steps:
+3.  Enter your **Azure subscription ID**. If you need to find your subscription ID, complete the following steps:
     1.  Open another instance of your browser.
     2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
     3.  In the navigation pane on the left, click **Settings**. (You may have to scroll to the bottom of the navigation pane to see the Settings link.) The **Settings** page is displayed.
     4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
 
 4.  Click **Next**.
-5.  Click **Download** to download a management certificate.This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the Downloads folder on your computer and is named LifecycleServicesDeployment.cer.
+5.  Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the Downloads folder on your computer and is named LifecycleServicesDeployment.cer.
 6.  Upload the management certificate to Azure. To do so, complete the following steps:
     1.  Open another instance of your browser. (Or, go to the browser instance that you may have opened in step 3.)
     2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
@@ -179,7 +179,7 @@ Before you complete the following procedures, make sure that the following prere
 | Prerequisite                                                                                                                                                     | More information                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
-| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AXenvironment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md). |
+| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md). |
 | Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
 | Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
 | Sync metadata for Commerce Data Exchange.                                                                                                                        | [Enter parameters for Retail Scheduler](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |
