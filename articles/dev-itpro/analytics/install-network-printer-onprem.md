@@ -58,11 +58,11 @@ The following section is used by the environment administrator to enable network
 6.  Print a test page with installed printers to make sure all the connections are configured correctly.
 7.  Restart AXService application to ensure the user’s profile is loaded correctly to look up printer driver.
 
-<h3>Managing Network Printers for the Dynamics 365 for Operations Applications</h3>
-The following section is used by the System Administrator to define network printers for the application
+<h3>Manage network printers</h3>
+System administrators in Finance and Operations can use the following information to define network printers.
 
-1.  Open the Manage network printers page (<b>Organization administration > Setup> Network printers</b>).
-2.  Add new printers by providing printer <b>Name, Description, Path and Status</b>. Make sure the printer path matches the network path of the installed printer.
+1.  Open the **Network printers** page (**Organization administration > Setup > Network printers**).
+2.  Add new printers by providing the **Name**, **Description**, **Path**, and **Status**. Make sure the printer path matches the network path of the installed printer.
 
 
-Items marked <b>Active</b> will immediately become available for application users to begin printing Document style reports on network printer devices.
+Items marked <b>Active</b> will immediately become available for application users to begin printing document-style reports on network printer devices.
