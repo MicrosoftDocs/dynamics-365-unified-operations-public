@@ -133,11 +133,13 @@ When the Tax sub-ledger is impacted as part of the tax accounting process, the t
 
 #### Tax credit pool
 
+![India GST Example](../localizations/media/ind-gst.png "Example showing India GST tax credit pool")
+
 When configured as above, the tax recoverable and payable amount will be accumulated on each of the Tax credit pool. 
 
 #### Set off rule
 
-Set-off rule indicates how the tax recoverable should be utilized to set-off tax payable. Details setup are as below for Indian GST: 
+The set off rule determines how the tax recoverable should be utilized to set off the tax payable. The following table is an example of how this might be set up for India Goods and Services Taxes (GST): 
 
 | Recoverable side | Payable side             |
 |------------------|--------------------------|
