@@ -42,24 +42,28 @@ There are two roles associated with configuring the network printing services:
 
 Before the Organization Administrator can begin adding network printers, the Service Administrator must install and configure Print and Document Services on the server hosting the primary AOS instance.  Once that is complete, the Organization Administrator can begin using built-in tools to configure network printer devices.
 
-<h3>Install and configure Print and Document Services</h3>
+## Install and configure Print and Document Services
+
 The following section is used by the environment administrator to enable network printing services.
 
-1.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services
-2.  Now, use the [instructions here](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to Configure Print and Document Services
+1.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134159(v=ws.11).aspx) to install Print and Document Services.
+2.  Use the [instructions here](https://technet.microsoft.com/en-us/library/jj134163(v=ws.11).aspx) to configure Print and Document Services.
 
-<b>Important:</b> Perform the following actions for each server used to host the application "AXService"
+
+> [!Important]
+> Perform the following actions for each server used to host the application "AXService".
+
 1.  Start the <b>Local Users and Groups</b> manager on the local server.
 2.  Select the <b>Groups</b> node.
-3.  Select <b>Print Operators</b>, then <b>right + click</b> and select <b>Add to Group</b>
+3.  Select <b>Print Operators</b>, then right + click and select <b>Add to Group</b>
         ![](media/3048eae34e89e7f3c1a26119a9f7b103.png)
-4.  Now add the network AD account used to run the AXService to the group
-5.  Install network printers by using AXService user account. This step ensures the printer driver is available to AXService user account.
+4.  Add the network active directory account used to run the AXService to the group.
+5.  Install network printers by using the AXService user account. This step ensures the printer driver is available to the AXService user account.
 6.  Print a test page with installed printers to make sure all the connections are configured correctly.
-7.  Restart AXService application to ensure the user’s profile is loaded correctly to look up printer driver.
+7.  Restart the AXService application to ensure the user’s profile is loaded correctly to look up printer driver.
 
 ## Manage network printers
-System administrators in Finance and Operations can use the following information to define network printers.
+The following section is used by the system administrator of Finance and Operations to define network printers.
 
 1.  Open the **Network printers** page (**Organization administration > Setup > Network printers**).
 2.  Add new printers by providing the **Name**, **Description**, **Path**, and **Status**. Make sure the printer path matches the network path of the installed printer.
