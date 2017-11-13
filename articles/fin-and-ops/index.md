@@ -95,8 +95,8 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
 
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Integration patterns and practices</a></p>
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Data integration</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data management</a></p>
 
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
