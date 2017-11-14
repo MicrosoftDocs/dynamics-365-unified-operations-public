@@ -87,7 +87,7 @@ If the user finds that some key fields should be included in their use of the pr
 
 Nearly 90% of our pages are based on a small set of patterns. Developers refer to these as *form patterns*. Each form pattern is used to convey the most common actions taken on that form. A form pattern ensures familiarity and ease of understanding when common actions, and common data are always presented in the same location on different forms. With a small number of form patterns, regardless of the number of forms in the system, the user can easily learn and use the system with confidence once the form pattern is recognized.
 
-To learn more about form patterns, see [Form styles and patterns](../dev-itpro/user-interface/form-styles-patterns.md).
+To learn more about form patterns, see [Form styles and patterns](unified-operations/dev-itpro/user-interface/form-styles-patterns.md).
 
 ## Responsive layout
 
