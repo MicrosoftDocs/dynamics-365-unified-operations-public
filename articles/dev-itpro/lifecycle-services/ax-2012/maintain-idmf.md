@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Maintainance in the Intelligent Data Management Framework (AX 2012)
+title: Maintenance in the Intelligent Data Management Framework (AX 2012)
 description: This topic provides information about the database settings in the Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Maintainance in the Intelligent Data Management Framework (AX 2012)
+# Maintenance in the Intelligent Data Management Framework (AX 2012)
 
 [!include[banner](../../includes/banner.md)]
 
@@ -177,11 +177,11 @@ The following tables provide descriptions for the controls in the **Configure th
 
 | Field                               | Description                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Filter criteria**                 | This list consists of types and categories of tables.You can select a value based on types of tables, such as top 50 tables, top 100 tables, or all tables. You can also select a value based on the category of the table, such as log tables or parameters tables.The data grid is filtered based on the value you select in this list.By default, the **Filter criteria** field is set to **Top 10 tables**. |
+| **Filter criteria**                 | This list consists of types and categories of tables. You can select a value based on types of tables, such as top 50 tables, top 100 tables, or all tables. You can also select a value based on the category of the table, such as log tables or parameters tables. The data grid is filtered based on the value you select in this list. By default, the **Filter criteria** field is set to **Top 10 tables**. |
 | **Table name**                      | The name of the table.                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Index fragmentation growth (%)**  | A threshold value for the index fragmentation growth percentage between snapshots for the selected table. For example, a threshold value of 10 generates an alert if the index fragmentation percentages grow by 10 between now and the next snapshot.This value is only available for tables.                                                                                                                  |
-| **Index to data ratio growth (%)**  | A threshold value for the index-to-data ratio growth percentage between two snapshots for the selected table.This value is only available for tables.                                                                                                                                                                                                                                                           |
-| **Snapshot-to-snapshot growth (%)** | A threshold value for the snapshot-to-snapshot growth ratio as a percentage for the selected table.You can enter this value for tables or measures.                                                                                                                                                                                                                                                             |
+| **Index fragmentation growth (%)**  | A threshold value for the index fragmentation growth percentage between snapshots for the selected table. For example, a threshold value of 10 generates an alert if the index fragmentation percentages grow by 10 between now and the next snapshot. This value is only available for tables.                                                                                                                  |
+| **Index to data ratio growth (%)**  | A threshold value for the index-to-data ratio growth percentage between two snapshots for the selected table. This value is only available for tables.                                                                                                                                                                                                                                                           |
+| **Snapshot-to-snapshot growth (%)** | A threshold value for the snapshot-to-snapshot growth ratio as a percentage for the selected table. You can enter this value for tables or measures.                                                                                                                                                                                                                                                             |
 | **Measure name**                    | The name of the measure.                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Data size (MB)**                  | A threshold value for the purge tables. When a purge table reaches the specified size, an alert is generated.                                                                                                                                                                                                                                                                                                   |
 
@@ -270,7 +270,7 @@ The following tables provide descriptions for the controls in the **Exception pa
 
 | Pane                                    | Description                                                                                                                                                                                                    |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Exception parameters**                | Select the exception parameter type to filter the data grid based on your selection.You cannot delete or modify the default exceptions in IDMF. You can add, modify, and delete your own exception parameters. |
+| **Exception parameters**                | Select the exception parameter type to filter the data grid based on your selection. You cannot delete or modify the default exceptions in IDMF. You can add, modify, and delete your own exception parameters. |
 | **Save or update exception parameters** | Create or modify your custom exception parameters.                                                                                                                                                             |
 | **Search**                              | Search for a specific exception parameter.                                                                                                                                                                     |
 
@@ -297,9 +297,9 @@ The following tables provide descriptions for the controls in the **Exception pa
 | **Parameter type**    | The exception parameter type: **Table name**, **Configuration key**, or **Table group**.                                                                                                                                                                                                                                                                                   |
 | **Rules**             | When this field is selected, you cannot use this parameter to create a rule in a Purge Object or an Archive Object.                                                                                                                                                                                                                                                        |
 | **Relations**         | When this field is selected, you cannot use this parameter to create a relation in a Purge Object or an Archive Object.                                                                                                                                                                                                                                                    |
-| **Purge discovery**   | When this field is selected, you cannot include any table from this parameter as a related, or child, table in a new Purge Object. The discovery process ignores all tables that are part of the exception parameter when generating the hierarchical relationship tree.Existing Purge Objects that use this parameter as a child table continue to function normally.     |
+| **Purge discovery**   | When this field is selected, you cannot include any table from this parameter as a related, or child, table in a new Purge Object. The discovery process ignores all tables that are part of the exception parameter when generating the hierarchical relationship tree. Existing Purge Objects that use this parameter as a child table continue to function normally.     |
 | **Driver table**      | When this field is selected, you cannot use any tables from this parameter as a driver table in a Purge Object or Archive Object.                                                                                                                                                                                                                                          |
-| **Archive discovery** | When this field is selected, you cannot include any table from this parameter as a related, or child, table in a new Archive Object. The discovery process ignores all tables that are part of the exception parameter when generating the hierarchical relationship tree.Existing Archive Objects that use this parameter as a child table continue to function normally. |
+| **Archive discovery** | When this field is selected, you cannot include any table from this parameter as a related, or child, table in a new Archive Object. The discovery process ignores all tables that are part of the exception parameter when generating the hierarchical relationship tree. Existing Archive Objects that use this parameter as a child table continue to function normally. |
 
 #### 
 
@@ -382,7 +382,7 @@ The following tables provide descriptions for the controls in the **Framework op
 <tbody>
 <tr class="odd">
 <td><strong><span class="ui">Trace level</span></strong></td>
-<td>Select a trace level from the list. Select <strong><span class="ui">Minimal</span></strong> to log only critical errors. Select <strong><span class="ui">Verbose</span></strong> to log all events, including informational events. Select <strong><span class="ui">None</span></strong> to stop logging of events.If you select <strong><span class="ui">Verbose</span></strong>, the master data synchronization and analysis snapshot tasks provide a hyperlink in the <span class="ui">SSIS trace</span> field in the <strong><span class="ui">Job status</span></strong> pane. Use the <strong><span class="ui">Status</span></strong> menu, and locate the task in the <strong><span class="ui">Job status</span></strong> pane. Click the hyperlink in the <strong><span class="ui">SSIS trace</span></strong> field to view the trace output.
+<td>Select a trace level from the list. Select <strong><span class="ui">Minimal</span></strong> to log only critical errors. Select <strong><span class="ui">Verbose</span></strong> to log all events, including informational events. Select <strong><span class="ui">None</span></strong> to stop logging of events. If you select <strong><span class="ui">Verbose</span></strong>, the master data synchronization and analysis snapshot tasks provide a hyperlink in the <span class="ui">SSIS trace</span> field in the <strong><span class="ui">Job status</span></strong> pane. Use the <strong><span class="ui">Status</span></strong> menu, and locate the task in the <strong><span class="ui">Job status</span></strong> pane. Click the hyperlink in the <strong><span class="ui">SSIS trace</span></strong> field to view the trace output.
 <div class="alert">
 <table>
 <thead>
@@ -411,7 +411,7 @@ The following tables provide descriptions for the controls in the **Framework op
 
 | Field                                    | Description                                                                                                                                                                                                                                                                  |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Enable threading for scheduled tasks** | Select **Yes** to enable the use of multiple threads when processing tasks.Threading in IDMF is not fully parallel because of dependencies. For example, if a table is listed twice in a level, each instance is processed in serial to avoid conflicts and race conditions. |
+| **Enable threading for scheduled tasks** | Select **Yes** to enable the use of multiple threads when processing tasks. Threading in IDMF is not fully parallel because of dependencies. For example, if a table is listed twice in a level, each instance is processed in serial to avoid conflicts and race conditions. |
 | **Maximum number of threads**            | Set a maximum number of threads no greater than the number of processors on the computer running IDMF.                                                                                                                                                                       |
 | **Disable lock escalation**              | To speed processing, if you are running during a maintenance window, we recommend that you disable lock escalation when you are archiving in production environments, and set a small number for the archive batch size (4000 or less).                                      |
 | **Batch size for purge**                 | Number of rows to include in a batch.                                                                                                                                                                                                                                        |
@@ -462,7 +462,7 @@ The following tables provide descriptions for the controls in the **Application 
 </tr>
 <tr class="even">
 <td><strong><span class="ui">Search</span></strong></td>
-<td>Open the <strong>Health check query search</strong> window.In the <strong>Health check query search</strong> window, follow these steps:
+<td>Open the <strong>Health check query search</strong> window. In the <strong>Health check query search</strong> window, follow these steps:
 <ol>
 <li>From the <strong><span class="ui">Search</span></strong> list, select <strong><span class="ui">Query name</span></strong> or <strong><span class="ui">Table name</span></strong>.</li>
 <li>In the <strong><span class="ui">Containing</span></strong> text box, enter the search text. You can use an asterisk (*) as a wildcard character before and after the text. For example, you can search for <span class="ui">*sales</span>, <span class="ui">sales*</span>, or <span class="ui">*sales*</span>.</li>
