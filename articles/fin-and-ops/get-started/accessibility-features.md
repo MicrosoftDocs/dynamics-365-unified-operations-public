@@ -68,14 +68,8 @@ The user can also execute the action more directly. From anywhere on the page, t
 
 The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* (a partial word) and *log* all allow the user to “jump” to the **Email notification log** functionality.
 
-| ![image 1](media/image4.png)  | ![image 2](media/image5.png) | ![image 3](media/image6.png)) |
+| ![A user has typed "email" in the search box.](media/image4.png)  | ![A user has typed "notific" in the search box. ](media/image5.png) | ![A user has typed "log" in the search box.](media/image6.png)) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
-
- ![image 1](media/image4.png) 
- 
- ![image 2](media/image5.png) 
- 
- ![image 3](media/image6.png)
 
 When complete, the user can once again use the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
 
@@ -87,7 +81,7 @@ In daily use, it is understood that not *every* field is used to perform common 
 
 If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option on the **Options** page which makes all editable and read-only fields part of the tab sequence. The user can then choose to use form personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
 
-![cid:image005.png\@01D357AF.09B33870](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
+![The Enhanced tab sequence option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
 
 ## Form patterns
 
