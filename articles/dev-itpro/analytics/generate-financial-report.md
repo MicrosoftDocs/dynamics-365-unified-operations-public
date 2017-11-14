@@ -39,7 +39,7 @@ This topic provides information about generating a financial report.
 
 To generate a report, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
-> ![NOTE]
+> [!NOTE]
 > You can generate reports only to folders and locations to which you have permission to access.
 
 The following table explains the options that are available for generating reports.
@@ -56,7 +56,7 @@ Many companies have a core set of reports that are run at scheduled intervals to
 
 As report schedules are created and saved, they are displayed in the navigation pane under Report Schedules. You can create folders to organize the reports. If a single report in a schedule does not run, all other reports will continue to run.
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > To create, modify, and delete report schedules, you must have the role of designer or administrator. When a report is run, the credentials of the user who created the schedule are used to generate the report.
 
 
@@ -106,12 +106,12 @@ You can search for financial accounts and dimensions that might be missing acros
 
 Missing accounts are determined by using the lowest and highest values from the row definition or reporting tree definition, and then displays a list of accounts that are not in the row definition or reporting tree definition, but that are in the financial data. If a missing account is greater than or less than the values in the row definition, that account is not included in the list of missing accounts.
 
-> ![TIP]
+> [!TIP]
 > For validation purposes, this process should be run before you generate monthly reports and when you create new building blocks.
 
 Reports that have ranges of values are less likely to have missing accounts. When possible, use ranges in the building block to include new accounts when they are created. If any report definition is set to @ANY company, then you can log on to a specific company and run a missing account analysis for that company.
 
-> ![NOTE]
+> [!NOTE]
 > If a new company has been added, you must add the new company to the reporting trees in any existing reports or the company will not be included in the missing account analysis.
 
 
@@ -126,7 +126,7 @@ Reports that have ranges of values are less likely to have missing accounts. Whe
 7.  If any values, building blocks, or reports are returned that should not be included in the analysis, right-click the item and select Exclude, or select the Exclude check box next to the item to remove the item from the list. Excluded items are not included when the list is refreshed. To select multiple items, hold down the Ctrl key while you select the items in the lower pane. To view all items, including any results that you previously selected to exclude from the analysis, select the Show excluded building blocks and values check box, and then click Refresh.
 8.  Click Refresh to refresh exceptions that you have addressed. Click Yes to perform a full refresh of all of the results, or click No to perform a partial refresh of addressed items.
 
-    > ![NOTE]
+    > [!NOTE]
     > The form is automatically refreshed when it opens, unless the form has been opened in the last 15 minutes.
 
 9.  When the issues are resolved, click OK to close the dialog box.

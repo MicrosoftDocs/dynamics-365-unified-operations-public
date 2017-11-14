@@ -5,7 +5,7 @@ title: Configure authentication providers
 description: This topic provides an overview of the process for configuring a new OpenID authentication provider.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
