@@ -304,5 +304,20 @@ Values for these supported payment specifications are used as payment specificat
 <td>Secure global address book</td>
 <td>The ability to help secure the global address book by legal entity and address book hasn't yet been implemented. This feature will be available in a future update.</td>
 <td>Not implemented</td></tr>
+<tr class="even">
+<td>Vendor collaboration (Vendor Portal)</td>
+<td>AX2012 provided vendor portal capabilities via EP, these capabilites are stepwise ported to Dynamics 365 for Financial and Operations. In Version 7.1 A vendor could view and repond to purchase orders in Dynamics 365 For Financial and Operations.
+</p><p>In 7.3 The vendor can view and respond to RFQ's.Vendors can also view and edit selected information from the vendor record suck as  addresses, contact information, contact persons, upload documents in relation to their certifications.<p/>
+</td>
+<td>Implemented in version 7.3</td></tr>
+<tr class="odd">
+<td>Vendor requests - external request to become a new vendor</td>
+<td>AX2012 provided the ability for an anonymous user to signup to be a vendor in the system which could lead to a vendor request for adding a new vendor to the vendor master. In 7.3 this process has been enabled in a slightly different way: The anonymous request from a prospective vendor can be imported via an entity (Data Management / Odata) which can lead to inviting the vendor - or the contat person - into register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Dynamics 365 For Financial and Operations.
+</td>
+<td>Implemented in version 7.3</td></tr>
+<td>Vendor requests in general</td>
+<td>AX2012 had a concept of vendor requests" that served various purposes related to update vendor related information: requesting new procurement categories for the vendor, internal employees requested new vendors, request to add vendor to another company etc. Only Vendors request of being added as a vendor has been implemented in 7.3.
+</td>
+<td>Not implemented</td></tr>
 </tbody>
 </table>
