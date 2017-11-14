@@ -312,7 +312,7 @@ Values for these supported payment specifications are used as payment specificat
 <td>Implemented in version 7.3</td></tr>
 <tr class="odd">
 <td>Vendor requests - external request to become a new vendor</td>
-<td>AX2012 provided the ability for an anonymous user to signup to be a vendor in the system which could lead to a vendor request for adding a new vendor to the vendor master. In 7.3 this process has been enabled in a slightly different way: The anonymous request from a prospective vendor can be imported via an entity (Data Management / Odata) which can lead to inviting the vendor - or the contat person - into register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Dynamics 365 For Financial and Operations.
+<td>AX2012 provided the ability for an anonymous user to signup to be a vendor in the system which could lead to a vendor request for adding a new vendor to the vendor master. In 7.3 this process has been enabled in a slightly different way: The anonymous request from a prospective vendor can be imported via an entity (Data Management / Odata) which can lead to inviting the vendor - or the vendors contact person - to register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Dynamics 365 For Financial and Operations.
 </td>
 <td>Implemented in version 7.3</td></tr>
 <td>Vendor requests in general</td>
