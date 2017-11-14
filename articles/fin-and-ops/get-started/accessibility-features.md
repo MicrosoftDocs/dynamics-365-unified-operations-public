@@ -93,9 +93,6 @@ To learn more about form patterns, see [Form styles and patterns](unified-operat
 
 Our product is designed to work on different devices and form factors from the smallest screens to large screens with the highest resolutions. Our responsive layout engine allows the user to zoom in to magnification levels of 200% (in some scenarios, greater than 200%)
 
-| [./media/image8.jpeg](./media/image8.jpeg) | [./media/image9.png](./media/image9.png) |
-|--------------------------------------------|------------------------------------------|
-
 ## Guidance to our developers and customers on how to incorporate accessible thinking in their customizations
 
-To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility).
+To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](./dev-itpro/user-interface/enable-accessibility).
