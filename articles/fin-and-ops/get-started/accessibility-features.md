@@ -71,11 +71,11 @@ The user then types words that describe the action, and the action is made avail
 | [./media/image4.jpeg](./media/image4.jpeg) | [./media/image5.jpeg](./media/image5.jpeg) | [./media/image6.jpeg](./media/image6.jpeg) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
 
- [./media/image4.jpeg](./media/image4.jpeg) 
+ [./media/image4.jpeg](./media/image4.png) 
  
- [./media/image5.jpeg](./media/image5.jpeg) 
+ [./media/image5.jpeg](./media/image5.png) 
  
- [./media/image6.jpeg](./media/image6.jpeg)
+ [./media/image6.jpeg](./media/image6.png)
 
 When complete, the user can once again use the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
 
