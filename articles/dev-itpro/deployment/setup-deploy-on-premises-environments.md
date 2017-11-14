@@ -554,9 +554,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    ```
 
   The script will do the following:
-    1. Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-    2. Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
-
+  
+  - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
+  - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissionson the database.
 
 #### Configure the Finance and Operations database
 
