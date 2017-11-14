@@ -87,7 +87,7 @@ If the user finds that some key fields should be included in their use of the pr
 
 Nearly 90% of our pages are based on a small set of patterns. Developers refer to these as *form patterns*. Each form pattern is used to convey the most common actions taken on that form. A form pattern ensures familiarity and ease of understanding when common actions, and common data are always presented in the same location on different forms. With a small number of form patterns, regardless of the number of forms in the system, the user can easily learn and use the system with confidence once the form pattern is recognized.
 
-To learn more about form patterns, see [Form styles and patterns](../dev-itpro/user-interface/form-styles-patterns.md).
+To learn more about form patterns, see [Form styles and patterns](../../dev-itpro/user-interface/form-styles-patterns.md).
 
 ## Responsive layout
 
@@ -95,4 +95,4 @@ Our product is designed to work on different devices and form factors from the s
 
 ## Guidance to our developers and customers on how to incorporate accessible thinking in their customizations
 
-To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](./dev-itpro/user-interface/enable-accessibility).
+To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
