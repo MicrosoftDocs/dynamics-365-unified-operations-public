@@ -190,7 +190,7 @@ If you want sample data installed in your environment, complete the following st
 
 1.  Go to the following location:F:TestTransferTool
 2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
-3.  Open a command prompt and navigate to the following location:C:Program Files (x86)Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
+3.  Open a command prompt and navigate to the following location:C:\Program Files (x86)\Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  Run the following command:dp.exe import F:DemoData MicrosoftDynamicsAx
 
 **Note:** The sample data includes trial license keys for Dynamics AX. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
@@ -221,8 +221,8 @@ Open the Dynamics AX client and complete the following steps.
 
 8.  Click **Data synchronization &gt; Setup &gt; Channel integration &gt; Working folders.**
 9.  In the **Working folders** form, complete the following steps.
-    1.  Note the location in the **Download path** field. It is typically C:DemoFilesRetailCDXDownload.Create these folders on the C drive.
-    2.  Note the location in the **Upload path** field. It is typically C:DemoFilesRetailCDXUpload.Create these folders on the C drive.
+    1.  Note the location in the **Download path** field. It is typically C:\DemoFiles\Retail\CDXDownload.Create these folders on the C drive.
+    2.  Note the location in the **Upload path** field. It is typically C:\DemoFiles\Retail\CDXUpload.Create these folders on the C drive.
     3.  Close the form.
 
 10. Click **Data synchronization &gt; Setup &gt; Channel integration &gt; Channel database.**

@@ -55,10 +55,10 @@ Key concepts
 
 ## Setup
 1.  If this is the first tutorial you’re working on, you must complete the steps in "Installing demo data" in the [Appendix](#appendix).
-2.  Import the project **Adding BI to workspaces.axpp** in the **C:FMLabLab 10-1** folder.
-    -   Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+2.  Import the project **Adding BI to workspaces.axpp** in the **C:\FMLab\Lab 10-1** folder.
+    -   Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
     -   In Visual Studio, from the **Dynamics 365** menu, select **Import project**.
-    -   Go to the **C:\\FMLab\\Lab 10-1** folder and select the **Adding BI to workspaces.axpp** project.
+    -   Go to the **C:\FMLab\Lab 10-1** folder and select the **Adding BI to workspaces.axpp** project.
     -   Select the overwrite option.
     -   Select new solution.
     -   Click **OK**.

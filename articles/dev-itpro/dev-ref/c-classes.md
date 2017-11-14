@@ -1078,7 +1078,7 @@ The following code example calls the CodeAccessPermission::assertMultple method.
         static public void RunOnServerPermissionTest()
     {
         Set permissionSet;
-        str fileName = @"C:TestFile75a.txt";
+        str fileName = @"C:\TestFile75a.txt";
         boolean boolFileDeleted;
      
         permissionSet =  new Set(Types::Class);
@@ -1150,7 +1150,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close code access permission scope. 
@@ -1492,7 +1492,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close the code access permission scope. 
@@ -1963,7 +1963,7 @@ This example uses a CommaIO object to read from the example file.
         CommaIo myfile; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:myfile.txt") 
+        #define.ExampleFile(@"c:\myfile.txt") 
         #define.ExampleOpenMode("w") 
       
         // Set code access permission to help protect the use 
@@ -2012,7 +2012,7 @@ The following example uses a CommaIO object to read from the ExampleFile file.
         container       con; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:test.txt") 
+        #define.ExampleFile(@"c:\test.txt") 
         #define.ExampleOpenMode("r") 
       
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
