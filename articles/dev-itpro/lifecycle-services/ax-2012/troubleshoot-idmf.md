@@ -5,7 +5,7 @@ title: Troubleshoot
 description: This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -50,10 +50,10 @@ Known issues
 -   **Issue** Unable to discover archive objects if the drive table is **AccountingEvent**. The system returns the following message: "Error executing code: Insufficient memory to run script." **Workaround** Update the following registry entries.\[HKEY\_CURRENT\_USERSoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESYSTEMCurrentControlSetServicesDynamics Server6.0AOS instance configuration name\]Value name: maxbuffersizeValue type: REG\_SZValue: Maximum amount of memory in MB or 0 for no limit
 
 ## View log files
-IDMF logs error events in a log file in a folder named**,**under the installation folder. The default installation path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework. IDMF creates the log file when the first error message is generated. The file is named trace\_mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year. The IDMF scheduler service creates an error log file called servicetrace\_mm-dd-yyyy.log. The error log files are created for each day. When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file. All subsequent error messages are appended to the existing error log file for the day.
+IDMF logs error events in a log file in a folder named, under the installation folder. The default installation path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework. IDMF creates the log file when the first error message is generated. The file is named trace\_mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year. The IDMF scheduler service creates an error log file called servicetrace\_mm-dd-yyyy.log. The error log files are created for each day. When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file. All subsequent error messages are appended to the existing error log file for the day.
 
 ## Database rights are not set correctly
-The AOS service account must have **datareader**, **datawriter** and **ddladmin** rights on the IDMF management database.
+The AOS service account must have **datareader**, **datawriter**, and **ddladmin** rights on the IDMF management database.
 
 ## IDMF fails to start
 When starting IDMF, you may encounter the following error: "An unhandled exception occurred and has been logged. Please contact support." The preceding error message is a generic message that IDMF displays when the error condition is caused by an environmental issue such as permissions. This particular error condition typically occurs when the user does not have read and write permissions on the installation folder of IDMF. To fix the error condition, provide read and write permissions to the installation folder of IDMF. The default path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.
