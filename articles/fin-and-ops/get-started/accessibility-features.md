@@ -68,7 +68,7 @@ The user can also execute the action more directly. From anywhere on the page, t
 
 The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* (a partial word) and *log* all allow the user to “jump” to the **Email notification log** functionality.
 
-| [./media/image4.jpeg](./media/image4.jpeg) | [./media/image5.jpeg](./media/image5.jpeg) | [./media/image6.jpeg](./media/image6.jpeg) |
+| [../media/image4.jpeg](./media/image4.jpeg) | [../media/image5.jpeg](./media/image5.jpeg) | [../media/image6.jpeg](./media/image6.jpeg) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
 
 When complete, the user can once again use the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
