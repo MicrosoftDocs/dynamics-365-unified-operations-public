@@ -765,25 +765,31 @@ Before you delete the environment you plan to update, use the follwoing steps to
 4. Copy the value of the **Download Fileshare location** in the **Configuration Settings** section. You will need this later.
 5. Log in to the on-premises environment file share machine and copy the **<fileshare>\agent\wp\<environment name>\StandaloneSetup\config.json**. You can use the configuration settings in this json file to redeploy your environment.
 
-### Re-deploy your environment
+### Update your environment
+The following instructions provide information about how to update or redeploy your environment with a new platform or topology.
 1. In LCS, navigate to the **Environments** blade in your on-premises project.
 2. Click **Delete** to delete your environment. 
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
+
 The following applications should be deleted:
-    - AXBootstapperAppType
-    - AXSFType
-    - FinancialReportingType
-    - RTGatewayAppType
-    - ReportingService
-    
-The following applications will **not** be deleted:
-    - LocalAgentType
-    - MonitoringAgentAppType
+- AXBootstapperAppType
+- AXSFType
+- FinancialReportingType
+- RTGatewayAppType
+- ReportingService
+
+The following on-premises service fabric agent applications will not be deleted:
+- LocalAgentType
+- MonitoringAgentAppType
+
 4. After all of the applications in step 3 are deleted, go back to LCS and click **Configure**.
-5. You can now use the relevant configurations from the .json file that you previously saved to configure your environment.
+5. Select the new topology for your platform.
+6. Enter the environment name. You can use the same name or enter a new one.
+7. Click **Advanced Settings**.
+   You can now use the relevant configurations from the .json file that you saved to configure your environment.
 
 ### Configuration settings
-The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file you save in the previous step for each **Field** in LCS.
+The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file you saved in step 5 of the previous procedure, **Update your environment**.
 
 **Active Directory Federation Services Settings**
 
