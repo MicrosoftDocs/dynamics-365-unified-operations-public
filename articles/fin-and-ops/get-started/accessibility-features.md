@@ -96,4 +96,4 @@ Our product is designed to work on different devices and form factors from the s
 
 ## Guidance to our developers and customers on how to incorporate accessible thinking in their customizations
 
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility>
+To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility).
