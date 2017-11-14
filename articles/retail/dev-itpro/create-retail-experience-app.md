@@ -62,13 +62,13 @@ If you're developing on Windows and using the Mac just for building the iOS app 
 ## Loading the solution in Visual Studio
 You must modify the Retail Experience app solution before it can be loaded correctly in Visual Studio. Follow these steps.
 
-1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:RetailSdk.
-2.  Open C:RetailSdkSampleExtensionsShoppingAppSample.ShoppingApp.sln, and remove the following line.
+1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
+2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
            
         Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
 
-3.  Open C:RetailSdkSampleExtensionsShoppingAppiOSShoppingApp.iOS.csproj, and remove following lines.
+3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
         <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
         <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />

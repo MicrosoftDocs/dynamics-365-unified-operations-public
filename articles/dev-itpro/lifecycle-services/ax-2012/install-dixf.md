@@ -82,11 +82,11 @@ To install the version of the framework available in Microsoft Dynamics AX 2012 
 
         Windows PowerShell
 
-            Install-AXModel -File "C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Client Component<version number>modelDataImportExportFramework.axmodel"
+            Install-AXModel -File "C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component<version number>modelDataImportExportFramework.axmodel"
 
         AXUtil
 
-            axutil import /file: "C:Program Files Microsoft Dynamics AX 2012 Data Import Export Framework Client Component <version number>modelDataImportExportFramework.axmodel"
+            axutil import /file: "C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component <version number>modelDataImportExportFramework.axmodel"
 
 2.  Restart the AOS service.
 3.  Start the client.
@@ -113,14 +113,14 @@ This section describes how to troubleshoot issues with a Data Import/Export Fram
 After you install the Data Import/Export Framework, if you cannot compile, validate that the Data Import/Export Framework was installed correctly.
 
 1.  Verify that the Microsoft Dynamics AX Data Import/Export Framework service is running.
-2.  Verify that the Data Import/Export Framework DLLs are present in C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder:
+2.  Verify that the Data Import/Export Framework DLLs are present in C:\Program Files (x86)\Microsoft Dynamics AX60\Client\Bin folder:
     -   Microsoft.Dynamics.AX.DMF.Mapper.dll
     -   Microsoft.Dynamics.AX.DMF.PreviewGrid.
     -   Microsoft.Dynamics.AX.DMF.ServiceProxy.dll
     -   DMFConfig.xml
     -   Microsoft.Dynamics.AX.DMF.DriverHelper.dll
 
-**Resolution** Copy the DLLs from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Client Component) to the C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder.
+**Resolution** Copy the DLLs from the installation location (C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component) to the C:\Program Files (x86)\Microsoft Dynamics AX60\Client\Bin folder.
 
 ### Exception message while you use Data Import/Export Framework
 
@@ -128,17 +128,17 @@ While you use the Data Import/Export Framework, you might receive the following 
 
 > System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.InvalidOperationException
 
-Verify that the following files are present in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance:
+Verify that the following files are present in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance:
 
 -   DMFConfig.xml
 -   DMFClientConfig.xml
 -   Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config
 
-**Resolution** Copy the .xml and the config files from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Server Component) to the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.
+**Resolution** Copy the .xml and the config files from the installation location (C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Server Component) to the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
 
 ### Changes to the location of the Data Import/Export Framework service
 
-If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.
+If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
 
 
 

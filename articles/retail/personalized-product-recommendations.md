@@ -72,6 +72,7 @@ To set up product recommendations, you need to do the following.
 1.  Make sure that you have selected the correct **Legal entity**.
 2.  Navigate to **Entity store**, select **Retail sales**, and then click **Refresh**. This will use the demo data (or your data) from your operational database and move it to Entity store.
 3.  Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**, and then drop the **recommendations** control where needed.
+
 4.  Go to **Retail parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
 5.  To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 
