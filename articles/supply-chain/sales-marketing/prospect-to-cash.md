@@ -50,9 +50,12 @@ This solution provides direct synchronization in the following areas:
 -   [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
 -   [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
 -   [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
+-   [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
 -   [Create sales orders in Finance and Operations and sync them directly to Sales](sales-order-template-mapping-direct.md)
+-  [Synchronize sales order headers and lines directly between Sales and Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
 -   [Synchronize sales orders directly between Sales and Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 -   [Create sales invoices in Finance and Operations and sync them directly to Sales](sales-invoice-template-mapping-direct.md)
+
 
 ## System requirements for Dynamics 365 for Finance and Operations, Enterprise edition
 

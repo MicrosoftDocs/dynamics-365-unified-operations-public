@@ -5,7 +5,7 @@ title: OData
 description: This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,7 +62,120 @@ The following table describes the resources and the corresponding URLs in the Fl
 
 | Resource            | URL                                                                   | Description                                                    |
 |---------------------|-----------------------------------------------------------------------|----------------------------------------------------------------|
-| Service endpoint    | \[Your Organization Root URL\]/data/                                  | The root service endpoint for OData entities                   |
+## OData services
+We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. 
+
+For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).
+
+Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
+
+### Supported features from the OData specification
+
+The following are the high-level features that are enabled for the OData service, per the [OData specification](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
+
+- CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE. 
+- Available query options are
+ -   $filter
+ -   $count
+ -   $orderby
+ -   $skip
+ -   $top
+ -   $expand
+ -   $select
+- The OData service supports serving driven paging with a maximum page size of 1,000.
+
+For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
+
+#### Filter details
+
+There are built-in operators for $filter
+-   Equals
+-   Not equals
+-   Greater than
+-   Greater than or equal
+-   Less than
+-   Less than or equal
+-   And
+-   Or
+-   Not
+-   Addition
+-   Subtraction
+-   Multiplication
+-   Division
+
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+
+For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
+
+#### Batch requests
+Batch requests are supported in the OData service. For more information, see [OData batch requests](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359).
+
+#### Metadata annotations
+
+/data/$metadata provides annotations. EnumType is support in $metadata.
+
+![EnumType metadata](./media/metadata.png)
+
+
+### Cross-company behavior
+
+By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. 
+
+**Example:** `http://[baseURI\]/data/FleetCustomers?cross-company=true`
+
+To filter by a particular company that isn't your default company, use the following syntax: 
+`http://[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true`
+
+### Validate methods
+
+The following table summarizes the validate methods that the OData stack calls implicitly on the corresponding data entity.
+
+<table>
+<thead>
+<tr class="header">
+<th>OData</th>
+<th>Methods (listed in the order in which they are called)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Create</td>
+<td><ol>
+<li><strong>Clear()</strong></li>
+<li><strong>Initvalue()</strong></li>
+<li><strong>PropertyInfo.SetValue()</strong> for all specified fields in the request</li>
+<li><strong>Validatefield()</strong></li>
+<li><strong>Defaultrow</strong></li>
+<li><strong>Validatewrite()</strong></li>
+<li><strong>Write()</strong></li>
+</ol></td>
+</tr>
+<tr class="even">
+<td>Update</td>
+<td><ol>
+<li><strong>Forupdate()</strong></li>
+<li><strong>Reread()</strong></li>
+<li><strong>Clear()</strong></li>
+<li><strong>Initvalue()</strong></li>
+<li><strong>PropertyInfo.SetValue()</strong> for all specified fields in the request</li>
+<li><strong>Validatefield()</strong></li>
+<li><strong>Defaultrow()</strong></li>
+<li><strong>Validatewrite()</strong></li>
+<li><strong>Write()</strong></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>Delete</td>
+<td><ol>
+<li><strong>Forupdate()</strong></li>
+<li><strong>Reread()</strong></li>
+<li><strong>checkRestrictedDeleteActions()</strong></li>
+<li><strong>Validatedelete()</strong></li>
+<li><strong>Delete()</strong></li>
+</ol></td>
+</tr>
+</tbody>
+</table>| Service endpoint    | \[Your Organization Root URL\]/data/                                  | The root service endpoint for OData entities                   |
 | Entity collection   | \[Your Organization Root URL\]/data/Customers                         | The collection of all customers                                |
 | Entity              | \[Your Organization Root URL\]/data/Customers(“\[key\]”)              | A single entity from the entity collection                     |
 | Navigation property | \[Your Organization Root URL\]/data/Customers(“\[key\]”)/Reservations | The navigation from a customer to that customer's reservations |
@@ -119,7 +232,3 @@ The OData protocol supports many similar filtering and querying options on entit
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
-
-
-
-

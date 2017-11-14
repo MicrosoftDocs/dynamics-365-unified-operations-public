@@ -2,10 +2,10 @@
 # required metadata
 
 title: Personalized product recommendations overview
-description: In Dynamics 365 for Retail, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Retail, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
+description: This topic has information about the Dynamics 365 for Retail product recommendations that can be displayed on the point of sale (POS) device.
 author: ashishmsft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -70,8 +70,8 @@ Product recommendations are enabled for the following POS scenarios. They are a
 To set up product recommendations, you need to do the following.
 
 1.  Make sure that you have selected the correct **Legal entity**.
-2.  Navigate to **Entity store**, select **Retail sales**, and then click **Refresh**.This will use the demo data (or your data) from your operational database and move it to Entity store.
-3.  Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**,and then drop the **recommendations** control where needed.
+2.  Navigate to **Entity store**, select **Retail sales**, and then click **Refresh**. This will use the demo data (or your data) from your operational database and move it to Entity store.
+3.  Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**, and then drop the **recommendations** control where needed.
 4.  Go to **Retail parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
 5.  To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 

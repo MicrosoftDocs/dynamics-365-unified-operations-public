@@ -5,7 +5,7 @@ title: View purge or archive jobs (AX 2012)
 description: This topic provides information about how to use the Intelligent Data Management Framework (IDMF) to view purge and archive jobs. 
 author: kfend
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 2012
 
 
 
-You can use the options on the Microsoft Dynamics AX IDMF **Status **menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
+You can use the options on the Microsoft Dynamics AX IDMF **Status** menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
 
 ## Navigation of the Status workspace
 The following tables provide descriptions for the controls in the **Status** workspace.
@@ -46,7 +46,7 @@ The following tables provide descriptions for the controls in the **Status** wor
 
 | Pane               | Description                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Job status**     | Provides a list of all currently running, canceled, failed, or completed tasks. Each currently running or completed task is referred to as a job. This workspace uses the terms job, task, and schedule interchangeably.Use the **Show status details** **for previous** option in the **Administer** &gt; **Framework options** window to configure the number of jobs shown in this pane. |
+| **Job status**     | Provides a list of all currently running, canceled, failed, or completed tasks. Each currently running or completed task is referred to as a job. This workspace uses the terms job, task, and schedule interchangeably. Use the **Show status details** **for previous** option in the **Administer** &gt; **Framework options** window to configure the number of jobs shown in this pane. |
 | **Status details** | Provides status details of the selected task.                                                                                                                                                                                                                                                                                                                                               |
 | **Trace**          | Lists the multiple steps and queries for the selected task, if there are any.                                                                                                                                                                                                                                                                                                               |
 
@@ -114,7 +114,7 @@ With the modified configuration file, when you create or update an archive or pu
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">SSIS trace</span></strong></td>
-<td>This field provides a hyperlink to view the Microsoft SQL Server Integration Services (SSIS) trace output for this task.The hyperlink is only available when you set the trace level to <span class="ui">Verbose</span>. Use the <span class="ui">Framework options</span> menu to set the SSIS trace level.</td>
+<td>This field provides a hyperlink to view the Microsoft SQL Server Integration Services (SSIS) trace output for this task. The hyperlink is only available when you set the trace level to <span class="ui">Verbose</span>. Use the <span class="ui">Framework options</span> menu to set the SSIS trace level.</td>
 </tr>
 </tbody>
 </table>
