@@ -307,7 +307,7 @@ Values for these supported payment specifications are used as payment specificat
 <tr class="even">
 <td>Vendor collaboration (Vendor Portal)</td>
 <td>AX2012 provided vendor portal capabilities via EP, these capabilites are stepwise ported to Dynamics 365 for Financial and Operations. In Version 7.1 A vendor could view and repond to purchase orders in Dynamics 365 For Financial and Operations.
-</p><p>In 7.3 The vendor can view and respond to RFQ's.Vendors can also view and edit selected information from the vendor record suck as  addresses, contact information, contact persons, upload documents in relation to their certifications.<p/>
+</p><p>In 7.3 The vendor can view and respond to RFQ's.Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, contact persons, upload documents in relation to their certifications.<p/>
 </td>
 <td>Implemented in version 7.3</td></tr>
 <tr class="odd">
