@@ -43,7 +43,7 @@ Data entry and keyboard interaction is at the heart of most users' daily interac
 
 Any page that is available in the Navigation Pane menu, is also available by typing the page name or description in the **Search** box. Go to the **Search** box by pressing Alt+G, and type the name of the page.
 
-![cid:image001.png\@01D35891.76984830](media/6d08b0be32808221023e2aa92d69fd70.png)
+![The words "bank account" entered in the Search box.](media/6d08b0be32808221023e2aa92d69fd70.png)
 
 For more information, see [Navigation search](navigation-search.md).
 
@@ -56,19 +56,19 @@ Each action offered on a page is keyboard accessible, via the tab sequence. We a
 
 ### Example:
 
-Assume that the **Email notification log** option in the **Email Notification** section is the action you'd like to execute. (As shown in the right-most section.)
+Assume that the **Email notification log** option in the **Email Notification** section, in the Action Pane of the page shown below, is the action you'd like to execute.
 
 A user can execute that action by gaining focus into the Action Pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the **Email notification log** action has focus.
 
-![cid:image002.jpg\@01D35891.76984830](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
+![The Email notification log option in the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
 
 The user can also execute the action more directly. From anywhere on the page, the user can use a shortcut to expose the search box for actions. The shortcut is: Ctrl + ‘
 
-![cid:image003.jpg\@01D35891.76984830](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
+![Search box for actions](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
 
 The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* (a partial word) and *log* all allow the user to “jump” to the **Email notification log** functionality.
 
-| [./media/image4.jpeg](./media/image4.jpeg) | [./media/image5.jpeg](./media/image5.jpeg) | [./media/image6.jpeg](./media/image6.jpeg) |
+| ![image 1](media/image4.png)  | ![image 2](media/image5.png) | ![image 3](media/image6.png)) |
 |--------------------------------------------|--------------------------------------------|--------------------------------------------|
 
  ![image 1](media/image4.png) 
