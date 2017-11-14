@@ -39,7 +39,7 @@ Each field and control has a label and description of applicable shortcuts, read
 
 Data entry and keyboard interaction is at the heart of most users' daily interactions. To enhance your user experience, we’ve authored shortcuts to help you “jump” around the screen and shortcuts for specialized actions. For more inforamtion, see [Keyboard shortcuts](shortcut-keys.md).
 
-## Navigate to pages using Search
+## Navigation search
 
 Any page that is available in the Navigation Pane menu, is also available by typing the page name or description in the **Search** box. Go to the **Search** box by pressing Alt+G, and type the name of the page.
 
@@ -87,7 +87,7 @@ If the user finds that some key fields should be included in their use of the pr
 
 Nearly 90% of our forms are based on a small set of “form patterns”. Each form pattern is used to convey the most common actions taken on that form. A form pattern ensures familiarity and ease of understanding when common actions, and common data are always presented in the same location on different forms. With a small number of form patterns, regardless of the number of forms in the system, the user can easily learn and use the system with confidence once the form pattern is recognized.
 
-## Responsive layout:
+## Responsive layout
 
 Our product is designed to work on different devices and form factors from the smallest screens to large screens with the highest resolutions. Our responsive layout engine allows the user to zoom in to magnification levels of 200% (in some scenarios, greater than 200%)
 
