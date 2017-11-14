@@ -739,7 +739,7 @@ You've now complete the setup of the infrastructure. The following sections desc
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
 
-12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
+ 12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
 13. On the **Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, the page will resemble the following illustration.
 
     ![Validate the agent](./media/ValidateAgent.PNG)
@@ -751,11 +751,11 @@ You've now complete the setup of the infrastructure. The following sections desc
 3. If you have an existing deployment, see the section in this topic, [Re-Deploy your Finance and Operations (on-premises) environment](#ReDeployFO).
 4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. To fix the underlying issue, click **Reconfigure**, update any configuration changes, and retry the deployment.   
+If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   
 
 ## <a name="ReDeployFO"></a> Re-Deploy your Finance and Operations (on-premises) environment
 
-Complete the following steps if you are takinga new platform updated or need to add new customizations to your current deployment. 
+Complete the following steps if you are taking a new platform update or need to add new customizations to your current deployment. 
 
 ### Save your configuration
 Before you delete the environment you plan to update, use the follwoing steps to save your configuration. 
@@ -775,14 +775,15 @@ The following applications should be deleted:
     - FinancialReportingType
     - RTGatewayAppType
     - ReportingService
-The following applications will not be deleted:
+    
+The following applications will **not** be deleted:
     - LocalAgentType
     - MonitoringAgentAppType
 4. After all of the applications in step 3 are deleted, go back to LCS and click **Configure**.
-8. You can now use the relevant configurations that you previously saved to configure your environment.
+5. You can now use the relevant configurations from the .json file that you previously saved to configure your environment.
 
 ### Configuration settings
-The following tables provide information about configuration settings.
+The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file you save in the previous step for each **Field** in LCS.
 
 **Active Directory Federation Services Settings**
 
