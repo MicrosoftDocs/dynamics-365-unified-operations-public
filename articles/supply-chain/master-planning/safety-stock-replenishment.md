@@ -1,3 +1,37 @@
+---
+# required metadata
+
+title: Set up safety stock levels for items
+description: This topic discusses how to set up safety stock levels for items. 
+author: roxanadiaconu
+manager: AnnBe
+ms.date: 11/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core (Operations, Core)
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: roxanadiaconu
+ms.dyn365.ops.intro: 7.3 
+ms.search.validFrom: 2017-12-31
+
+---
+
+
+
 # Setting up safety stock levels for items
 
 Safety stock is set up part of item coverage (**Released products – Plan – Coverage – Item coverage** form).
