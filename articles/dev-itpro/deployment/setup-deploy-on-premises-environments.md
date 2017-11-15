@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 11/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -72,7 +72,7 @@ Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (Azure AD). In order to complete the deployment and configure the LCS Local agent you will need AAD.
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD.
 
 ## Standalone Service Fabric
 
@@ -205,7 +205,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
 
-Below is an example Service Fabric Server certificate combined with AOS SSL Certificate.
+The following is an example of a Service Fabric Server certificate combined with an AOS SSL Certificate.
 
 **Subject name**
 ```
@@ -359,7 +359,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
 >[!WARNING]
->Cert manager should not be used to copy out thumbprints due to a leading non-printable special character that is difficult to determine if present. If non-printable special character is present you will get X509 certificate not valid error. Use results from PowerShell commands or run the following commands in powershell to get retrieve the thumbprints.
+>Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in powershell.
 ```
 dir cert:\CurrentUser\My
 dir cert:\LocalMachine\My
@@ -552,12 +552,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 2. On the dashboard, select the **Shared asset library** tile.
 
-3. On the **Model** tab, in the grid, download the zip file by selecting the demo data corresponding to the release per the below table.
+3. On the **Model** tab, select the demo data for the release you want and download the zip file.
 
 | Release | Demo Data |
 |-------|------|
-| On-premises GA release | Dynamics 365 for Operations on-premises, Enterprise edition - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
+| On-premises General Availability (GA) release | Dynamics 365 for Operations, Enterprise Edition (on-premises) - Demo data |
+| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-prmises) - Update 11 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -798,7 +798,7 @@ The following instructions provide information about how to update or redeploy y
 2. Click **Delete** to delete your environment. 
 
     > [!NOTE]
-    > Deleting the environment will **not** delete the database, infrastructure or Local agent. It only deletes the Service Fabric applications.
+    > Deleting the environment will not delete the database, infrastructure or Local agent. Only the Service Fabric applications are deleted.
 
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
 
@@ -809,7 +809,7 @@ The following instructions provide information about how to update or redeploy y
     - RTGatewayAppType
     - ReportingService
     
-    The following on-premises service fabric agent applications should **not** be deleted:
+    The following on-premises service fabric agent applications should not be deleted:
     - LocalAgentType
     - MonitoringAgentAppType
 
@@ -847,7 +847,7 @@ The following tables provide information about configuration settings. Use the *
 | The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components.(AOS).parameters.storage.sharedAccessThumbprint.value |
 
    > [!NOTE]
-   > Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
+   > When you copy the file path configuration value from .json file to LCS UI, make sure to remove the extra backslashes. For example, configuration value **\\\\DC1\\D365FFOStorage** from the .json file should be **\\DC1\D365FFOStorage** in the LCS UI.
     
 **SSRS configuration settings**
 
