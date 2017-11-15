@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ReqSafetyKey
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -29,9 +29,11 @@ ms.dyn365.ops.intro: 7.3
 ms.search.validFrom: 2017-12-31
 
 ---
+# Introduction
 
+sssssssssss
 
-# Set up safety stock levels for items
+## Set up safety stock levels for items
 
 [!include[banner](../includes/banner.md)]
 
@@ -62,23 +64,23 @@ If, for example, you want to set up a minimum key that accounts for increased se
 If the coverage code is **Min./Max.**, you can also specify the **Maximum** inventory quantity that you want to maintain for the item. The value is also expressed in inventory units. If the projected available inventory falls below the minimum quantity, master planning generates a planned order to fulfill all open requirements and also brings the available inventory up to the specified maximum quantity. Just like you set up **Minimum**, you must define all other planned coverage dimensions before you can define the **Maximum** field.
 
 ## Example: Min./Max. coverage code
-The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11.
+The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11 items.
 
-For items with demand patterns that follow a certain seasonality, you may need to maintain different maximum levels, following the item's seasonality. To do that, you need to define **Maximum keys** (**Master planning – Setup – Coverage – Minimum/maximum keys**) and fill in the **Maximum key** field on the **Item coverage** form. You can view the information about the safety stock levels defined via minimum keys on the **Min./Max.** tab of the **Item coverage** form. You need to make sure that, for a certain period, the minimum and the maximum values are kept in sync.
+For items that follow seasonal demands, you may need to maintain different maximum levels. To do that, you need to define **Maximum keys** by going to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels defined via minimum keys on the **Min./Max.** tab on the **Item coverage** page. You need to make sure that, for a certain period, the minimum and the maximum values are kept in sync.
 
-
-
-# Safety stock fulfillment 
+## Safety stock fulfillment 
 
 The **Fulfill minimum** parameter allows you to select the date or the period during which the inventory level must meet the quantity that you specified in the **Minimum** field. This field is available when you select **Period**, **Requirement**, or **Min./Max.** in the **Coverage code** list.
 
-If **Minimum keys** are used, select **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
+If **Minimum keys** are used, select the **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
-The following scenario will be used in order to exemplify how this parameter works and what are the differences between its values:
-![Common scenario](./media/Scenario1.png)
+The following scenario shows how this parameter works and what are the differences between its values:
+
+[![Common scenario for safety stock fulfillment](./media/Scenario1.png)](./media/Scenario1.png)
 
 The following options are available:
-### **Today's date** 
+
+### Today's date 
 The specified minimum quantity is met on the date that master planning is run. The system tries to fulfill to the safety stock limit as soon as possible, even though though it may be unrealistic, due to the lead time.
 ![Requirement. Today's date](./media/TodayReq.png)
 
