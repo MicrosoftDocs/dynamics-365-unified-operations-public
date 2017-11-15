@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor onboarding
+title: Onboarding vendors
 description: The process to onboard new vendors and actions required by different roles.
 author: mkirknel
 manager: AnnBe
@@ -27,6 +27,6 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.3
 ---
 
-# Vendor onboarding
+# Onboarding vendors
 [!include[banner](../includes/banner.md)]
 
