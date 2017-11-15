@@ -206,16 +206,18 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
 
 Below is an example Service Fabric Server certificate combined with AOS SSL Certificate.
-```
-Subject name
-CN = *.d365ffo.onprem.contoso.com
 
-Subject Alternative Names
+**Subject name**
+```
+CN = *.d365ffo.onprem.contoso.com
+```
+
+**Subject Alternative Names**
+```
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
-
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
@@ -552,7 +554,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 3. On the **Model** tab, in the grid, download the zip file by selecting the demo data corresponding to the release per the below table.
 
-| Release | data |
+| Release | Demo Data |
 |-------|------|
 | On-premises GA release | Dynamics 365 for Operations on-premises, Enterprise edition - Demo data |
 | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
@@ -796,8 +798,8 @@ The following instructions provide information about how to update or redeploy y
 1. In LCS, navigate to the **Environments** blade in your on-premises project.
 2. Click **Delete** to delete your environment. 
 
-> [!NOTE]
-> Deleting the environment will **not** delete the database, infrastructure or Local agent. It only deletes the Service Fabric applications.
+    > [!NOTE]
+    > Deleting the environment will **not** delete the database, infrastructure or Local agent. It only deletes the Service Fabric applications.
 
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
 
@@ -845,8 +847,8 @@ The following tables provide information about configuration settings. Use the *
 | The file share path for the Microsoft Dynamics 365 instance. This share is used as the document store for files uploaded by users. | components.(AOS).parameters.storage.fileSharePath.value          |
 | The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components.(AOS).parameters.storage.sharedAccessThumbprint.value |
 
-> [!NOTE]
-> Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
+    > [!NOTE]
+    > Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
  
 **SSRS configuration settings**
 
