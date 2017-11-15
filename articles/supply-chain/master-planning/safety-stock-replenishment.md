@@ -75,43 +75,29 @@ The **Fulfill minimum** parameter allows you to select the date or the period du
 If **Minimum keys** are used, select the **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
 The following scenario shows how this parameter works and what are the differences between its values:
-
 [![Common scenario for safety stock fulfillment](./media/Scenario1.png)](./media/Scenario1.png)
-
 The following options are available:
 
 ### Today's date 
 The specified minimum quantity is met on the date when master planning is run. The system tries to fulfill the safety stock limit as soon as possible, even though it can be a bit unrealistic due to the lead time.
-
 [![Requirement on today's date](./media/TodayReq.png)](./media/TodayReq.png)
-
 Planned order P1 is created for today's date to bring the available inventory above the safety stock level on this date. The other planned orders respond to safety stock fulfillment due to the sales orders that are taking the available inventory lower and lower.
 
 When the **Requirement** coverage code is used, a lot of planned orders are created. It is always a good idea to use either **Period** or **Min./Max.** coverage for items and materials to bundle the replenishment. The following illustration shows an example. 
-
 [![Period. Today's date](./media/TodayPeriod.png)](./media/TodayPeriod.png)
-
 [![MinMax. Today's date](./media/TodayMinMax.png)](./media/TodayMinMax.png)
-
 ### Today's date + procurement time 
 The specified minimum quantity is met on the date when master planning is run, plus the purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected on the **Master planning parameters** page, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
 
 This fulfillment mode benefits from the setting where plans will be created with less delay, as shown in the following illustration. 
-
 [![Requirement. Period. Today's date and lead time](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
-
 [![MinMax. Today's date and lead time](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
-
 ### First issue 
 The specified minimum quantity is met on the date when the available inventory goes below the minimum level, as shown in the following illustration. Even if the available inventroy is below the minimum level on the date when master planning is run, **First issue** will not attempt to cover it until the next requirement comes in.
-
 [![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
-
 [![Planning an item with **Period** coverage code and **First issue** fulfillment](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
-
 [![Planning an item with **MinMax** coverage code and **First issue** fulfillment](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
-
-If on the date master planning is run the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction (sales order, BOM line requirement, etc) for the item and it will trigger the replenishment on the date of this transaction. 
+On the date when master planning is run, if the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction, such as sales order and BOM line requirement, for the item, and then it will trigger the replenishment on the date of this transaction. 
 
 If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result, described in the image below.
 ![NotUnderLimit](./media/ReqFirstIssue.png)
