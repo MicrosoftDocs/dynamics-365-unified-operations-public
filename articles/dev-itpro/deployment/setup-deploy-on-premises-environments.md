@@ -551,7 +551,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 2. On the dashboard, select the **Shared asset library** tile.
 
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Demo data** row to download the zip file.
+3. On the **Model** tab, in the grid, download the zip file by selecting the demo data corresponding to the release per the below table.
+
+| Release | data |
+|-------|------|
+| On-premises GA release | Dynamics 365 for Operations on-premises, Enterprise edition - Demo data |
+| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -562,6 +567,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    > [!WARNING]
    > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
+   
    > 2. If a database with the same name exists, the database will be reused.
 
 6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a Powershell window with elevate privileges.
@@ -791,6 +797,9 @@ The following instructions provide information about how to update or redeploy y
 1. In LCS, navigate to the **Environments** blade in your on-premises project.
 2. Click **Delete** to delete your environment. 
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
+
+[!NOTE]
+Deleting the environment will **not** delete the database, infrastructure or Local agent. It only deletes the Service Fabric applications.
 
 The following applications should be deleted:
 - AXBootstapperAppType
