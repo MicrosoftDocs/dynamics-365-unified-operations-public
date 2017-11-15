@@ -781,7 +781,7 @@ You've now completed the setup of the infrastructure. The following sections des
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   
 
 ## <a name="ReDeployFO"></a> Re-deploy your Finance and Operations (on-premises) environment
-
+    
 Complete the following steps if you are taking a new platform update or need to add new customizations to your current deployment. 
 
 ### Save your configuration
@@ -802,16 +802,16 @@ The following instructions provide information about how to update or redeploy y
 
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
 
-The following applications should be deleted:
-- AXBootstapperAppType
-- AXSFType
-- FinancialReportingType
-- RTGatewayAppType
-- ReportingService
+    The following applications should be deleted:
+    - AXBootstapperAppType
+    - AXSFType
+    - FinancialReportingType
+    - RTGatewayAppType
+    - ReportingService
 
-The following on-premises service fabric agent applications will not be deleted:
-- LocalAgentType
-- MonitoringAgentAppType
+    The following on-premises service fabric agent applications will not be deleted:
+    - LocalAgentType
+    - MonitoringAgentAppType
 
 4. After all of the applications in step 3 are deleted, go back to LCS and click **Configure**.
 5. Select the new topology for your platform.
