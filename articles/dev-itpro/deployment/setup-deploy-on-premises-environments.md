@@ -358,10 +358,12 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 [!WARNING]
 
-Cert manager should not be used to copy out thumbprints due to a leading non-printable special character that is difficult to determine if present. If non-printable special character is present you will get X509 certificate not valid error. Use results from PowerShell commands or run following 
+Cert manager should not be used to copy out thumbprints due to a leading non-printable special character that is difficult to determine if present. If non-printable special character is present you will get X509 certificate not valid error. Use results from PowerShell commands or run the following commands in powershell to get retrieve the thumbprints.
+```
 dir cert:\CurrentUser\My
 dir cert:\LocalMachine\My
 dir cert:\LocalMachine\Root
+```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
@@ -782,7 +784,7 @@ Before you delete the environment you plan to update, use the following steps to
 2. Select the connector to your environment, and then click **Edit**.
 3. On the **Edit connector** tab, navigate to **Configure Agent** > **Enter Configuration**.
 4. Copy the value of the **Download Fileshare location** in the **Configuration Settings** section. You will need this later.
-5. Log in to the on-premises environment file share machine and copy the **<fileshare>\agent\wp\<environment name>\StandaloneSetup\config.json**. You can use the configuration settings in this json file to redeploy your environment.
+5. Log in to the on-premises environment file share machine and copy the **<fileshare>\agent\wp\<environment name>\StandaloneSetup<version>\config.json**. You can use the configuration settings in this json file to redeploy your environment.
 
 ### Update your environment
 The following instructions provide information about how to update or redeploy your environment with a new platform or topology.
@@ -814,52 +816,60 @@ The following tables provide information about configuration settings. Use the *
 
 | **Field**                                                                                                                                                | **Configuration setting**                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| The email address of the user who will be the initial administrator (such as, adminuser@yourdomain.com)                                                  | components. (where item's name is AOS).parameters.provisioning.adminPrincipleName.value                        |
-| ADFS OpenID metadata endpoint for the Dynamics 365 Application group. (such as, https://[federation-service-name]/adfs/.well-known/openid-configuration) | components. (where item's name is AOS).parameters.activeDirectory.adfsMetadata.value                           |
-| ADFS OpenID Connect client ID for the AOS application group                                                                                          | components. (where item's name is AOS).parameters.activeDirectory.adfsClientId.value                           |
-| ADFS OpenID Connect client ID for the Financial Reporting application group                                                                          | components. (where item's name is FinancialReporting).parameters.aad.nativeClientAuthentication.clientId.value |
+| The email address of the user who will be the initial administrator (such as, adminuser@yourdomain.com)                                                  | components.(AOS).parameters.provisioning.adminPrincipleName.value                        |
+| ADFS OpenID metadata endpoint for the Dynamics 365 Application group. (such as, https://[federation-service-name]/adfs/.well-known/openid-configuration) | components.(AOS).parameters.activeDirectory.adfsMetadata.value                           |
+| ADFS OpenID Connect client ID for the AOS application group                                                                                          | components.(AOS).parameters.activeDirectory.adfsClientId.value                           |
+| ADFS OpenID Connect client ID for the Financial Reporting application group                                                                          | components.(FinancialReporting).parameters.aad.nativeClientAuthentication.clientId.value |
 
 **SQL database configuration**
 
 | **Field**                        | **Configuration setting**                                                              |
 |------------------------------|------------------------------------------------------------------------------------|
-| SQL SERVER                   | components. (where item's name is AOS).parameters.database.dbServer.value          |
-| AX DATABASE                  | components. (where item's name is AOS).parameters.database.dbName.value            |
-| FINANCIAL REPORTING DATABASE | components. (where item's name is FinancialReporting).parameters.mrdb.dbName.value |
+| SQL SERVER                   | components.(AOS).parameters.database.dbServer.value          |
+| AX DATABASE                  | components.(AOS).parameters.database.dbName.value            |
+| FINANCIAL REPORTING DATABASE | components.(FinancialReporting).parameters.mrdb.dbName.value |
  
 **File share settings**
 
 | **Field**                                                                                                                              | **Configuration setting**                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| The file share path for the Microsoft Dynamics 365 instance. This share is used as the document store for files uploaded by users. | components. (where item's name is AOS).parameters.storage.fileSharePath.value          |
-| The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components. (where item's name is AOS).parameters.storage.sharedAccessThumbprint.value |
+| The file share path for the Microsoft Dynamics 365 instance. This share is used as the document store for files uploaded by users. | components.(AOS).parameters.storage.fileSharePath.value          |
+| The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components.(AOS).parameters.storage.sharedAccessThumbprint.value |
+
+[!NOTE]
+
+Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
  
 **SSRS configuration settings**
 
 | **Field**                                                                      | **Configuration setting**                                                                                      |
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| The IP Address of the SSRS instance.                                        | components. (where item's name is AOS).parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value  |
-| The thumbprint used by the SSRS application to communicate with AX Service. | components. (where item's name is ReportingServices).parameters.reportingClientCertificateThumbprint.value |
+| The IP Address of the SSRS instance.                                        | components.(AOS).parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value  |
+| The thumbprint used by the SSRS application to communicate with AX Service. | components.(ReportingServices).parameters.reportingClientCertificateThumbprint.value |
  
 **Configure service settings**
 
 | **Field**                                                                                                                                      | **Configuration setting**                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| DYNAMICS 365 DNS INFORMATION - The DNS host name of the Microsoft Dynamics 365 instance, such as contosoinstance.onprem.contoso.com.           | components. (where item's name is AOS).parameters.infrastructure.hostName                                            |
-| AOS SERVICE PRINCIPAL USER SETTINGS - The domain user account to run the AX service, such as yourdomain\axserviceuser.                         | components. (where item's name is AOS).parameters.infrastructure.principalUserAccountName *                          |
-| MR SERVICE PRINCIPAL USER SETTINGS - The group managed service account (gMSA) to run the MR application service, such as yourdomain\Svc-FRAS$. | components. (where item's name is FinancialReporting).parameters.ApplicationServicePrincipalUser.accountName.value * |
-| The group managed service account (gMSA) to run the MR process service, such as yourdomain\Svc-FRPS$.                                          | components. (where item's name is FinancialReporting).parameters.ProcessServicePrincipalUser.accountName.value *     |
-| The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components. (where item's name is FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
+| DYNAMICS 365 DNS INFORMATION - The DNS host name of the Microsoft Dynamics 365 instance, such as ax.d365ffo.onprem.contoso.com.           | components.(AOS).parameters.infrastructure.hostName                                            |
+| AOS SERVICE PRINCIPAL USER SETTINGS - The domain user account to run the AX service, such as yourdomain\axserviceuser.                         | components.(AOS).parameters.infrastructure.principalUserAccountName *                          |
+| MR SERVICE PRINCIPAL USER SETTINGS - The group managed service account (gMSA) to run the MR application service, such as yourdomain\Svc-FRAS$. | components.(FinancialReporting).parameters.ApplicationServicePrincipalUser.accountName.value * |
+| The group managed service account (gMSA) to run the MR process service, such as yourdomain\Svc-FRPS$.                                          | components.(FinancialReporting).parameters.ProcessServicePrincipalUser.accountName.value *     |
+| The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components.(FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
+ 
+[!NOTE]
+
+Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
  
 **Application certificate settings**
 
 | **Field**                                                                         | **Configuration setting**                                                                                             |
 |-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| The thumbprint of the Data Encryption certificate.                             | components. (where item's name is AOS).parameters.database.dataEncryptionCertificateThumbprint.value              |
-| The thumbprint of the Data Signing certificate.                                | components. (where item's name is AOS).parameters.database.dataSigningCertificateThumbprint.value                 |
-| The thumbprint of the Session Authentication certificate.                      | components. (where item's name is FinancialReporting).parameters.sessionAuthenticationCertificateThumbprint.value |
-| The thumbprint of the SSL vertificate used for WCF/SOAP support.               | components. (where item's name is AOS).parameters.infrastructure.sslCertificateThumbprint.value                   |
-| The thumbprint used by the Management Reporter to communicate with AX service. | components. (where item's name is FinancialReporting).parameters.tokenSpec.certThumbprint.value                   |
+| The thumbprint of the Data Encryption certificate.                             | components.(AOS).parameters.database.dataEncryptionCertificateThumbprint.value              |
+| The thumbprint of the Data Signing certificate.                                | components.(AOS).parameters.database.dataSigningCertificateThumbprint.value                 |
+| The thumbprint of the Session Authentication certificate.                      | components.(FinancialReporting).parameters.sessionAuthenticationCertificateThumbprint.value |
+| The thumbprint of the SSL vertificate used for WCF/SOAP support.               | components.(AOS).parameters.infrastructure.sslCertificateThumbprint.value                   |
+| The thumbprint used by the Management Reporter to communicate with AX service. | components.(FinancialReporting).parameters.tokenSpec.certThumbprint.value                   |
 
 
 ## Connect to your Finance and Operations (on-premises) environment
