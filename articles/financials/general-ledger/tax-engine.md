@@ -65,7 +65,7 @@ The following measure types are available.
 After the measures have been defined, you can use them to write the tax calculation formula. You can write the formula in two notations:
 
 - **Simple Assignment Notation** – Use this notation for normal scenarios.
-- **Advanced Linear Equations** – Use this notation specifically for price-inclusive tax calculation scenarios, such as MRP.
+- **Advanced Linear Equations** – Use this notation specifically for price-inclusive tax calculation scenarios, such as maximum retail price (MRP).
 
 Formulas might have to be used conditionally. In this case, the user should add appropriate business conditions.
 
