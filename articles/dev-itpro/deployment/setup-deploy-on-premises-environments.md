@@ -808,7 +808,6 @@ The following instructions provide information about how to update or redeploy y
     - FinancialReportingType
     - RTGatewayAppType
     - ReportingService
-
     The following on-premises service fabric agent applications will not be deleted:
     - LocalAgentType
     - MonitoringAgentAppType
@@ -846,9 +845,9 @@ The following tables provide information about configuration settings. Use the *
 | The file share path for the Microsoft Dynamics 365 instance. This share is used as the document store for files uploaded by users. | components.(AOS).parameters.storage.fileSharePath.value          |
 | The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components.(AOS).parameters.storage.sharedAccessThumbprint.value |
 
-    > [!NOTE]
-    > Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
- 
+   > [!NOTE]
+   > Ensure you remove the exta backslashes when you copy the file path configuration value from .json file to LCS UI. For example, configuration value \\\\DC1\\D365FFOStorage from .json file should be \\DC1\D365FFOStorage in LCS UI.
+    
 **SSRS configuration settings**
 
 | **Field**                                                                      | **Configuration setting**                                                                                      |
