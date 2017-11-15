@@ -808,7 +808,8 @@ The following instructions provide information about how to update or redeploy y
     - FinancialReportingType
     - RTGatewayAppType
     - ReportingService
-    The following on-premises service fabric agent applications will not be deleted:
+    
+    The following on-premises service fabric agent applications should **not** be deleted:
     - LocalAgentType
     - MonitoringAgentAppType
 
