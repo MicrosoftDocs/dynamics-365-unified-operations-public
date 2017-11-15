@@ -170,6 +170,7 @@ Here is an explanation of the parameters:
 - **sf** (source file) – The path and file name to import from.
 - **tu** (target user) – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp** (target password) – The password for the target Azure SQL database user.
+- **DatabaseServiceObjective** - The pricing tier of the database. Default sandbox UAT environments for Dyanmics 365 for Finance and Operations use P2.
 
 You will receive the following warning message. You can safely ignore it.
 
