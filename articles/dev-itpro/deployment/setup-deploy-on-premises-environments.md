@@ -72,7 +72,7 @@ Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (Azure AD).
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (Azure AD). In order to complete the deployment and configure the LCS Local agent you will need AAD.
 
 ## Standalone Service Fabric
 
@@ -132,7 +132,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
 - SQL Server 2016 SP1 must be installed on the Power BI machines.
-- SQL Server Reporting Services 2016 must be installed in **Native** mode on the Power BI machines.
+- SQL Server Reporting Services 2016 must be installed in **Native** mode on the BI machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
 
@@ -196,14 +196,26 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | The domain name of the certificate should match the fully-qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.onprem.contoso.com. |
 | Service Fabric Server certificate            | <p>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</p> <p> This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</p> | You can use the SSL wild card certificate of your domain. For example, \*.contoso.com. **Note:** The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.<p>In this example, because your service fabric domain is sf.d365ffo.onprem.contoso.com, you must include this as a Subject Alternative Name (SAN) in the certificate. You will need to work with your certificate authority to acquire the additional SANs.</p> |
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
-| Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. | <p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> |
+| Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords.  | <p> The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. </p><p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> |
 | AOS SSL Certificate                          | <p>This certificate is used as the Server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p><p>You can use the same wild card certificate that you used as the Service Fabric Server certificate.</p> | <p>In this example, the domain name ax.d365ffo.onprem.contoso.com must be added to the Subject Alternative Name (SAN) as in the Service  Fabric Server certificate.</p> |
 | Session Authentication certificate           | This certificate is used by AOS to help secure a user's session information. | This certificate is also the File Share certificate that will used at the time of deployment from LCS. |
 | Data Encryption certificate | This certificate is used by the AOS to encrypt sensitive information.  | This must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Data Signing certificate | This certificate is used by AOS to encrypt sensitive information.  | This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. |  |
-| Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| This certificate must be different from the Financial Reporting Client certificate. |
+| Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
+
+Below is an example Service Fabric Server certificate combined with AOS SSL Certificate.
+```
+Subject name
+CN = *.d365ffo.onprem.contoso.com
+
+Subject Alternative Names
+DNS Name=ax.d365ffo.onprem.contoso.com
+DNS Name=sf.d365ffo.onprem.contoso.com
+DNS Name=*.d365ffo.onprem.contoso.com
+```
+
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
@@ -343,6 +355,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateSelfSignedCert** tag to **false**.
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
+
+[!WARNING]
+
+Cert manager should not be used to copy out thumbprints due to a leading non-printable special character that is difficult to determine if present. If non-printable special character is present you will get X509 certificate not valid error. Use results from PowerShell commands or run following 
+dir cert:\CurrentUser\My
+dir cert:\LocalMachine\My
+dir cert:\LocalMachine\Root
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
