@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accessibility features
-description: This topic describes a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
+description: This topic describes the functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Windows Narrator.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/14/2017
@@ -29,70 +29,69 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has a significant set of functionality specifically designed to assist users with various disabilities, including those who utilize sight assist technologies such as Windows Narrator.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, has a significant set of functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
-Each field and control has a label and description of applicable shortcuts, read by a screen reader.
+Every field and control has a label and a description of applicable shortcuts. A screen reader can read the label and description.
 
-## Shortcuts provided for the most common actions
+## Shortcuts for the most frequently performed actions
 
-Data entry and keyboard interaction is at the heart of most users' daily interactions. To enhance your user experience, we’ve authored shortcuts to help you “jump” around the screen and shortcuts for specialized actions. For more inforamtion, see [Keyboard shortcuts](shortcut-keys.md).
+For most users, everyday system use involves lots of data entry and keyboard interaction. To enhance the user experience, we have created shortcuts to help you "jump" around the screen and shortcuts for specialized actions. For more information, see [Keyboard shortcuts](shortcut-keys.md).
 
 ## Navigation search
 
-Any page that is available in the Navigation Pane menu, is also available by typing the page name or description in the **Search** box. Go to the **Search** box by pressing Alt+G, and type the name of the page.
+Any page that is available on the Navigation Pane menu is also available from the **Search** box. Just press Alt+G to move focus to the **Search** box, and then type the name or description of the page.
 
-![The words "bank account" entered in the Search box.](media/6d08b0be32808221023e2aa92d69fd70.png)
+!["Bank account" entered in the Search box](media/6d08b0be32808221023e2aa92d69fd70.png)
 
 For more information, see [Navigation search](navigation-search.md).
 
-> [!Note]
-> Only top-level pages can be directly navigated to. Secondary pages rely on information or context from their parent page.
+> [!NOTE]
+> You can navigate directly to top-level pages only. Secondary pages rely on information or context from their parent page.
 
 ## Action search for keyboard-only users or for heads-down data entry
 
-Each action offered on a page is keyboard accessible, via the tab sequence. We also offer the ability to execute actions more directly using the action search functionality.
+Every action that is provided on a page can be accessed from a keyboard, via the tab sequence. Information about the tab sequence is provided later in this topic. To run actions more directly, you can use the action search functionality.
 
-### Example:
+### Example
 
-Assume that the **Email notification log** option in the **Email Notification** section, in the Action Pane of the page shown below, is the action you'd like to execute.
+You want to run the **Email notification log** action that appears in the **Email notification** group on the **Sales order** tab on the Action Pane.
 
-A user can execute that action by gaining focus into the Action Pane via the shortcut Ctrl+F6, and then tabbing through all of the tabs/actions until the **Email notification log** action has focus.
+![Email notification log action on the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
 
-![The Email notification log option in the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
+One option is to use your keyboard. Press Ctrl+F6 to move focus to the Action Pane, and then press Tab repeatedly to move through all the tabs and actions, until the **Email notification log** action has focus.
 
-The user can also execute the action more directly. From anywhere on the page, the user can use a shortcut to expose the search box for actions. The shortcut is: Ctrl + ‘
+However, you can also run the action more directly. From anywhere on the page, press Ctrl+Apostrophe (') to show the search box for actions.
 
 ![Search box for actions](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
 
-The user then types words that describe the action, and the action is made available, and can be directly executed. For example, typing *email*, *notific* (a partial word) and *log* all allow the user to “jump” to the **Email notification log** functionality.
+In the search box, type words that describe the action. The action is made available to you, and you can run it directly. For example, by typing **email**, **notific** (a partial word), or **log**, you can "jump" to the Email notification log functionality.
 
-| ![A user has typed "email" in the search box.](media/image4.png)  | ![A user has typed "notific" in the search box. ](media/image5.png) | ![A user has typed "log" in the search box.](media/image6.png)) |
-|--------------------------------------------|--------------------------------------------|--------------------------------------------|
+!["Email" entered in the search box](media/image4.png) !["Notific" entered in the search box](media/image5.png) !["Log" entered in the search box](media/image6.png)
 
-When complete, the user can once again use the shortcut Ctrl+’ and is returned to the field they were positioned when they executed the action search.
+When you've finished, you can press Ctrl+Apostrophe again to return focus to the field that you were working with before you ran the action search.
 
 For more information, see [Action search](action-search.md).
 
 ## Tab sequence
 
-In daily use, it is understood that not *every* field is used to perform common tasks. Therefore, by default, we offer an “optimized” tab sequence with tab stops on only those fields that are key to common scenarios.  
+In everyday system use, not every field is required in order to perform typical tasks. Therefore, by default, the tab sequence is "optimized." Tab stops are set only on those fields that are essential for typical scenarios.
 
-If the user finds that some key fields should be included in their use of the product, the user who is utilizing Windows Narrator may use Narrator’s keyboard actions to gain access to those fields to inspect their content, or the user may enable the **Enhanced tab sequence** option on the **Options** page which makes all editable and read-only fields part of the tab sequence. The user can then choose to use form personalization to create a custom tab sequence, choosing which fields they don’t need to be part of the tab sequence.
+However, you might find that some fields that you often use to perform tasks aren't included in the default tab sequence. In this case, if you use Windows Narrator, you can use Windows Narrator's keyboard actions to access those fields and inspect their content. Alternatively, you can turn on the **Enhanced tab sequence** option on the **Options** page. This option makes all editable and read-only fields part of the tab sequence. You can then use page personalization to create a custom tab sequence and omit fields that don't have to be part of the tab sequence.
 
-![The Enhanced tab sequence option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
+![Enhanced tab sequence option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
 
 ## Form patterns
 
-Nearly 90% of our pages are based on a small set of patterns. Developers refer to these as *form patterns*. Each form pattern is used to convey the most common actions taken on that form. A form pattern ensures familiarity and ease of understanding when common actions, and common data are always presented in the same location on different forms. With a small number of form patterns, regardless of the number of forms in the system, the user can easily learn and use the system with confidence once the form pattern is recognized.
+Almost 90 percent of the pages in the product are based on a small set of patterns. Developers refer to these patterns as *form patterns*. Each form pattern is used to provide the actions that are most often performed on the page. A form pattern helps guarantee familiarity and ease of understanding, because frequently used actions and data are always presented in the same location on different pages. Because of the small number of form patterns, users can easily learn the system, regardless of the number of pages in it, and can confidently use it after they recognize the form patterns.
 
 To learn more about form patterns, see [Form styles and patterns](../../dev-itpro/user-interface/form-styles-patterns.md).
 
 ## Responsive layout
 
-Our product is designed to work on different devices and form factors from the smallest screens to large screens with the highest resolutions. Our responsive layout engine allows the user to zoom in to magnification levels of 200% (in some scenarios, greater than 200%)
+The product is designed to work on various devices and form factors, from the smallest screens to large screens that have the highest resolution. Our responsive layout engine lets users zoom in to a magnification level of 200 percent (or, in some scenarios, more than 200 percent).
 
-## Guidance to our developers and customers on how to incorporate accessible thinking in their customizations
+## Guidance to help developers and customers incorporate accessible thinking in their customizations
 
-To learn more about our best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
+To learn more about Microsoft best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
