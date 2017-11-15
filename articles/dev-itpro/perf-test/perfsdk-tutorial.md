@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: PerfSDK and multiuser testing with Visual Studio Online
-description: Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
+title: Performance SDK and multiuser testing via Visual Studio Online
+description: This tutorial introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. It also shows how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 author: RobinARH
 manager: AnnBe
 ms.date: 11/08/2017
@@ -30,246 +30,349 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# PerfSDK and multiuser testing with Visual Studio Online
+# Performance SDK and multiuser testing via Visual Studio Online
 
 [!include[banner](../includes/banner.md)]
 
+This tutorial introduces the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also shows how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 
-Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
+**Time to complete this tutorial:** 30 minutes
 
-*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Instances](..\dev-tools\access-instances.md). **Prerequisites**
+> [!NOTE]
+> This tutorial requires that you access the environment as an administrator. For more information, see [Access instances](..\dev-tools\access-instances.md).
 
--   Visual Studio 2015 Enterprise
--   Deployment with Volume Data
--   PerfSDK (look for a folder with that name in the C: or F: drive, depending on your environment)
+## Prerequisites
 
-## Steps to create a single user C\# test from an XML recording
-A video about how to create a single user test can be found here: [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3)
+- Microsoft Visual Studio 2015 Enterprise
+- A deployment that has volume data
+- Performance SDK (Look for a folder that is named **PerfSDK** on drive C or F, depending on your environment.)
 
-1.  Create a recording of a scenario that you want to test with Task Recorder.
-2.  Run Visual Studio as Administrator. Build the PerfSDKSample project, which is in the PerfSDK folder. If you have already done this, skip this step.
-3.  Open **Dynamics 365** &gt; **Addins** &gt; **C\#** perf test generator add-in from Visual Studio. Go to **Dynamics 365 **&gt; **Addins** &gt; **Create C\# perf test from recording**.
-4.  You should see the following dialog. Fill in the required details and click **Import**.
+## Create a single-user C\# test from an XML recording
 
-    [![perf103a](./media/perf103a.png)](./media/perf103a.png)
-    
-5.  You should see generated C\# test in Generated folder in the project that you’ve selected.
+To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
 
-## Steps to run single user performance test with Perf SDK:
--   Check that testroot environment variable is set to Perf SDK folder. Go to **Control Panel** &gt; **System and Security** &gt; **System** &gt; **Advanced System Settings**. 
+1. Use Task recorder to create a recording of the scenario that you want to test.
+2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.
+3. Select **Dynamics 365** &gt; **Addins** &gt; **C\#** perf test generator add-in from Visual Studio. Select **Dynamics 365** &gt; **Addins** &gt; **Create C\# perf test from recording**.
+4. In the **Import Task Recording** dialog box, enter the required details, and then select **Import**.
 
-    [![testroot](./media/testroot.jpg)](./media/testroot.jpg)[](./media/perf103c.png)
-    
--   Download *selenium-dotnet-strongnamed-2.42.0.zip* and *IEDriverServer\_Win32\_2.42.0.zip* from [*http://selenium-release.storage.googleapis.com/index.html?path=2.42/*](http://selenium-release.storage.googleapis.com/index.html?path=2.42/).
+    [![Import Task Recording dialog box](./media/perf103a.png)](./media/perf103a.png)
 
-<!-- -->
+    A C\# test is generated in the **Generated** folder for the project that you selected.
 
--   Make sure to copy download dll's to the following folder and add a reference to WebDriver.dll to your project
+## Run a single-user performance test by using the Performance SDK
 
-    [![perf103d](./media/perf103d.png)](./media/perf103d.png)
-    
--   Generate certificate and install it. To generate a certificate file, run the following commands: 
+1. In Control Panel, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
-    [![generatecert](./media/generatecert.jpg)](./media/generatecert.jpg)
-    
-    When prompted for private key password, select **None.** You should see the following files: 
-    
-    [![tempcert](./media/tempcert.jpg)](./media/tempcert.jpg)**Notable pieces:**
--   -n “CN=TestAuthCert” is giving a human-readable name to the cert, feel free to tweak for your scenario.
--   -eku 1.3.6.1.5.5.7.3.2 is certificate purpose. This is a client authentication cert, as opposed to code signing, encryption or something else. Next, install \*.pfx file (make sure to select Local Machine when you install it)  and copy this certificate file to PerfSDK folder.
+    [![TestRoot environment variable set to the PerfSDK folder](./media/testroot.jpg)](./media/testroot.jpg)[](./media/perf103c.png)
 
-Open Powershell window as Administrator and run the following command to get a thumbprint of installed certificate: 
+2. Download **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** from [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/).
+3. Extract the files, and copy the dynamic-link libraries (DLLs) to the **PerfSDK\\Common\\External\\Selenium** folder. Add a reference to **WebDriver.dll** to your project.
 
-[![get-thumbprint](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
+    [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
 
-Put this thumbprint value in **CloudEnvironment.Config** file: 
+4. Generate and install a certificate. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands.
 
-[![config-thumbprint](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg) 
+    ```
+    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>makecert -n "CN=TestAuthCert" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.2 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
-The next step is to update **wif.config** to make AOS trust this certificate. To do that, open IIS and find Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the list of sites. Click **Explore** to open and find a file **wif.config**. 
+    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>pvk2pfx -pvk c:\temp\authcert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
+    ```
 
-[![wifconfig](./media/wifconfig.jpg)](./media/wifconfig.jpg) 
+    Note the following elements in these commands:
 
-Update this file by putting your certificate and authority name: 
+    - **-n "CN=TestAuthCert"** gives a human-readable name to the certificate. You can adjust the name to suit your scenario.
+    - **-eku 1.3.6.1.5.5.7.3.2** gives the purpose of the certificate. This certificate is a client authentication certificate instead of a code signing certificate, an encryption certificate, or some other type of certificate.
 
-[![wif-updated](./media/wif-updated.jpg)](./media/wif-updated.jpg) 
+    When you're prompted for a private key password, select **None**.
 
-And restart IIS. Open Sample project in Visual Studio and edit the file PurchaseReq.cs, which is a sample single user test. Comment the following lines in this file: 
+    You should see the following files:
 
-[![perf103e](./media/perf103e.png)](./media/perf103e.png) 
+    - authcert.pfx
+    - authcert.cer 
+    - authcert.pvk
 
-Modify your CloudEnvironment.Config file by entering your admin username. The following code is an example. **Note:** The ConfigName must be DEVFABRIC. 
+5. Install the **\*.pfx** certificate file. When you install it, make sure that you select **Local Machine**. Then copy the file to the **PerfSDK** folder.
+6. Open a Microsoft Windows PowerShell window as an administrator, and run the following command to get the thumbprint of the installed certificate.
 
-[![perf103f](./media/perf103f.png)](./media/perf103f.png) 
+    ```
+    PS Cert:\LocalMachine\My> cd Cert:\LocalMachine\My
+    PS Cert:\LocalMachine\My> Get-ChildItem | Where-Object { $_.Subject -like "CN=TestAuthCert" }
+    ```
 
-Enter your endpoint in CloudEnvironment.Config. **Note**: If you have an ARR-enabled environment, i.e. you have 2 endpoints like this:
+    [![Thumbprint of the installed certificate](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
 
--   apr-arr8aos**soap**.axcloud.test.dynamics.com
--   apr-arr8aos.axcloud.test.dynamics.com
+7. In the **CloudEnvironment.Config** file, enter the thumbprint as the value for the **SelfSigningCertificateThumbprint** key.
 
-You would need to enter both endpoints in CloudEnvironment.Config: 
+    [![Updated CloudEnvironment.Config file](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg)
 
-[![perf103upd](./media/perf103upd.png)](./media/perf103upd.png) 
+8. Follow these steps to update the **wif.config** file so that Application Object Server (AOS) trusts the certificate:
 
-Go to **Test** &gt; **Test settings** &gt; **Default processor architecture** and set it to x64. Build the solution. Go to **Test** &gt; **Windows** &gt; **Test Explorer** **Note:** Sometimes Visual Studio may not update the list of tests. In this case, restart Visual Studio and re-open the test Explorer. **Note:** Your newly created test will be named TestMethod. If you change the method name of TestMethod your test will get an individual name. Now you can run the test. You should see Internet Explorer starting and replaying the scenario that you've recorded.
+    1. Start Internet Information Services (IIS), and find **Microsoft Dynamics 365 for Finance and Operations, Enterprise edition** in the list of sites.
+    2. Select **Explore**, and find the **wif.config** file.
 
-## Steps to create a multiuser test from a single-user test
-To convert a single-user test generated in the previous section to multiuser test, add MS.Dynamics.TestTools.UIHelpers.Core; to your test script and replace the following line in TestSetup method.
+        [![wif.config file](./media/wifconfig.jpg)](./media/wifconfig.jpg)
 
-    Client = DispatchedClient.DefaultInstance;
-    With
-    DispatchedClientHelper helper = new DispatchedClientHelper();
-    Client = helper.GetClient();
+    3. Update this file by entering the certificate and authority name.
 
-Make sure the values that you have entered during task recording are randomized. You may need to use the Data Expansion Tool first to generate test data.
+        [![Updated wif.config file](./media/wif-updated.jpg)](./media/wif-updated.jpg)
 
-## Setup Visual Studio Online for multiuser testing
-For this example ProcureToPay.cs will be used. You need to go to log in to [Visual Studio Online portal](https://app.vssps.visualstudio.com/profile/view) and launch Visual Studio from there. Note: you need to do this only once. Once you have logged in in VSO, those settings are saved. 
+    4. Restart IIS.
 
-[![vsonline-5](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg) 
+9. In Visual Studio, open the **Sample** project, and find the **PurchaseReq.cs** file. This file is a sample single-user test. In the file, comment out the following lines.
 
-Open PerfSDK sample project. Make sure to update UserFormat entry in CloudEnvironment.Config file to reflect the admin user URL. Example: for [admin@example.com]() use [TST\_{0}@example.com]() as user format. Also make sure to change the UserCount to the amount of users you want to have in your performance test. 
+    ```
+    if (this.TestContext !=null)
+    {
+        timerProvider = new TimerProvider(this.TestContext);
+    }
+    ```
 
-[![vsonline-12](./media/vsonline-12.jpg)](./media/vsonline-12.jpg) 
+    [![Lines commented out in PurchaseReq.cs](./media/perf103e.png)](./media/perf103e.png)
 
-Run this command in PerfSDK folder: **MS.Dynamics.Performance.CreateUsers.exe** to create test users for your environment. You may create as many users as you want to, for this example 150 is used. *Example: **MS.Dynamics.Performance.CreateUsers.exe 150 USMF** will create 150 test users for company USMF.* Make sure that users were created in the system. Login to your endpoint as admin user and check.
+10. Modify the **CloudEnvironment.Config** file by entering your admin user name. Here is an example.
 
-### Testing sandbox
+    > [!NOTE]
+    > **ConfigName** must be set to **DEVFABRIC**. 
 
-This step assumes you have a developer topology. Please follow the instructions from previous paragraph. There is one additional step you need to do in order to establish trust between your developer topology and/or Visual Studio Online test agent to communicate to sandbox machines: You would need to remote desktop to your AOS machine, copy over .cer file, install it by double-clicking on the file. When prompted for certificate store select **Personal:**
+    [![Updated CloudEnvironment.Config file](./media/perf103f.png)](./media/perf103f.png) 
 
-[![personalstore](./media/personalstore.jpg)](./media/personalstore.jpg) 
+11. In the **CloudEnvironment.Config** file, enter your endpoint.
 
-And update file **wif.config**. To update file **wif.config**, open IIS, find AOSService among websites and click Explore 
+    > [!NOTE]
+    > If the environment is enabled for Application Request Routing (ARR), you have two endpoints. Here is an example:
+    >
+    > - apr-arr8aos**soap**.axcloud.test.dynamics.com
+    > - apr-arr8aos.axcloud.test.dynamics.com
+    >
+    > In this case, you must enter both endpoints in the CloudEnvironment.Config file.
+    >
+    > [![Endpoints in CloudEnvironment.Config](./media/perf103upd.png)](./media/perf103upd.png)
 
-[![vsonline-23](./media/vsonline-231.jpg)](./media/vsonline-231.jpg) 
+12. Select **Test** &gt; **Test settings**, set **Default processor architecture** to **x64**, and then build the solution.
+13. Select **Test** &gt; **Windows** &gt; **Test Explorer** to view the list of tests.
 
-This action would open Explorer, you should be able to find **wif.config** in the opened folder. Update this file by putting certificate thumbprint and CN values (use the values from certificate you've generated on previous steps): 
+    > [!NOTE]
+    > Sometimes, Visual Studio might not update the list of tests. In this case, restart Visual Studio, and then reopen Test Explorer.
 
-[![wif-updated](./media/wif-updated.jpg)](./media/wif-updated.jpg) 
+    Your new test will be named **TestMethod**. If you change the method name of **TestMethod**, your test will get an individual name. 
 
-And restart IIS. Now you can run performance tests against this topology. **Note:** if your topology has multiple AOS machines, you need to install certificate and update wif.config on each of those machines.
+You can now run the test. When you run the test, Internet Explorer should be started, and it should replay the scenario that you recorded.
 
-## Run performance test
-Open ProcureToPay.cs in Visual Studio editor and append the following lines in TestSetup method:
+## Create a multiuser test from a single-user test
 
+After you create a single-user test by using the information in the previous section, you can convert it to a multiuser test. Add **MS.Dynamics.TestTools.UIHelpers.Core;** to your test script, and replace the following line in the **TestSetup** method.
+
+```
+Client = DispatchedClient.DefaultInstance;
+With
+DispatchedClientHelper helper = new DispatchedClientHelper();
+Client = helper.GetClient();
+```
+
+Make sure that the values that you entered when you made the task recording are randomized. You might have to use the Data Expansion Tool first to generate test data.
+
+## Set up Visual Studio Online for multiuser testing
+
+For this example, you will use the ProcureToPay.cs file. To start Visual Studio, you must sign in to the [Visual Studio Online portal](https://app.vssps.visualstudio.com/profile/view), and then select **Open in Visual Studio**.
+
+> [!NOTE]
+> You must complete this step only one time. After you've signed in to Visual Studio Online, the settings are saved.
+
+[![Open in Visual Studio](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
+
+1. Open the **PerfSDK** sample project.
+2. In the **CloudEnvironment.Config** file, update the **UserFormat** entry so that it reflects the admin user URL. For example, for `admin@example.com`, use **TST\_{0}@example.com** as the user format. Additionally, change the **UserCount** value to the number of users that you want to have in your performance test.
+
+    [![Updated CloudEnvironment.Config file](./media/vsonline-12.jpg)](./media/vsonline-12.jpg)
+
+3. In the **PerfSDK** folder, run the following command to create test users for your environment.
+
+    ```
+    MS.Dynamics.Performance.CreateUsers.exe
+    ```
+
+    You can create as many users as you want. For example, the following command creates 150 test users for the USMF company.
+
+    ```
+    MS.Dynamics.Performance.CreateUsers.exe 150 USMF
+    ```
+
+4. Sign in to your endpoint as the admin user, and verify that users were created in the system.
+
+### Test the sandbox environment
+
+For this step, you must have a developer topology. Follow the instructions in the previous section. To enable communication with sandbox machines, you must follow these additional steps to establish trust between your developer topology and/or the Visual Studio Online test agent.
+
+1. Establish a Remote Desktop connection to your AOS machine, and copy over the .cer file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
+2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
+
+    [![Updated wif.config file](./media/wif-updated.jpg)](./media/wif-updated.jpg)
+
+3. Restart IIS.
+
+You can now run performance tests against the topology.
+
+> [!NOTE]
+> If your topology has multiple AOS machines, you must install certificate and update the wif.config file on each of them.
+
+## Run the performance test
+
+1. In the Visual Studio editor, open the **ProcureToPay.cs** file, and append the following lines in the **TestSetup** method.
+
+    ```
     var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir"); 
     if (string.IsNullOrEmpty(testroot)) 
     {
         testroot = System.IO.Directory.GetCurrentDirectory(); 
     } 
     Environment.SetEnvironmentVariable("testroot", testroot);
+    ```
 
-Double click on file vsonline.testsettings in your solution files, use the following settings (your PerfSDK folder may be different): 
+2. In your solution files, double-click the **vsonline.testsettings** file. In the **Test Settings** dialog box, on the **Deployment** tab, use the following settings:
 
-[![vsonline-29](./media/vsonline-29.jpg)](./media/vsonline-29.jpg) 
+    - Select the **Enable deployment** check box.
+    - In the **Additional files and directories to deploy** field, make sure that the following files are listed:
 
-In **Setup and Cleanup Scripts** select setup.cmd located in %testroot%Visual Studio Onlinesetup.cmd. **Notable pieces:** you may need to update your deployment configuration to reflect your certificate name (for this demo **CsuClient.pfx **is used) and password. Make sure add \*.pfx file you've generated previously and update the following files:
+        - &lt;Solution Directory&gt;\\FinancialBenchmark\\bin\\Debug\\
+        - &lt;Solution Directory&gt;\\packages\\Newtonsoft.Json.6.0.5\\lib\\net45\\Newtonsoft.Json.dll
+        - C:\\PerfSDK\\CloudEnvironment.Config
+        - C:\\PerfSDK\\CsuClient.pfx
+        - C:\\PerfSDK\\Microsoft.Dynamics.Xml.dll
+        - C:\\PerfSDK\\Microsoft.IdentityModel.dll
+        - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
+        - C:\\PerfSDK\\SampleProject\\packages\\Newtonsoft.Json.6.0.5\\lib\\net45\\Newtonsoft.Json.dll
+        - C:\\PerfSDK\\Visual Studio Online\\CloudCtuFakeACSInstall.cmd
+        - C:\\PerfSDK\\Visual Studio Online\\install-wif.ps1
 
--   **setup.cmd** with %DeploymentDirectory%CloudCtuFakeACSInstall.cmd %DeploymentDirectory%**YourCertificate.pfx**
--   **CloudCtuFakeACSInstall.cmd** with the password of your cert (that should be an empty string)
+        > [!NOTE]
+        > Your PerfSDK folder might differ.
 
-In **Additional Settings** select **Run tests in 64 bit process on 64 bit machine.** To run the test, open the **SampleLoadTest.loadtest** file and select **Run Load Test**. 
+3. On the **Setup and Cleanup Scripts** tab, select **setup.cmd**, which is located in **%testroot%Visual Studio Onlinesetup.cmd**.
 
-[![perf103u](./media/perf103u.png)](./media/perf103u.png) 
+    You might have to update your deployment configuration to reflect the certificate name (**CsuClient.pfx** in this tutorial) and password. Make sure that you add the \*.pfx file that you generated earlier, and update the following files:
 
-When the test finishes, you should see a summary with transaction results. 
+    - **setup.cmd** – Update this file with **%DeploymentDirectory%CloudCtuFakeACSInstall.cmd %DeploymentDirectory%YourCertificate.pfx**.
+    - **CloudCtuFakeACSInstall.cmd** – Update this file with the password of your certificate. (The password should be an empty string.)
 
-[![perf103v](./media/perf103v.png)](./media/perf103v.png) 
+4. On the **Additional Settings** tab, select **Run tests in 64 bit process on 64 bit machine**.
+5. To run the test, open the **SampleLoadTest.loadtest** file, and select **Run Load Test**.
 
-You can switch to **Graphs view** to view different indicators for the test controller and test scenario. **Note:** Information about your System under Test is not available in this view. To access this information you would have to use LCS to monitor your AOS CPU and memory usage, or set up perfmon directly on the AOS and set up the SQL/Windows Azure portal to monitor SQL DTU usage. 
+    [![Run Load Test](./media/perf103u.png)](./media/perf103u.png)
 
-[![perf103w](./media/perf103w.png)](./media/perf103w.png)
+    When the test has finished running, you should see a summary that shows transaction results. Here is an example.
+
+    [![Transaction results](./media/perf103v.png)](./media/perf103v.png)
+
+6. To view different indicators for the test controller and test scenario, you can switch to the **Graphs** view.
+
+    [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
+
+    > [!NOTE]
+    > Information about your system under Test isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine, and set up the SQL/Windows Azure portal to monitor SQL usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
 
 ### System.TypeInitializationException
-If you see an error message like this: 
 
+You might receive an error message that resembles the following example.
 
-    System.TypeInitializationException: System.TypeInitializationException: The type initializer for
-    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
-    System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
-    https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
-    that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
-    by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
-    The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
-    Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
-    System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
+#### Error example
 
+```
+System.TypeInitializationException: System.TypeInitializationException: The type initializer for
+'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
+System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
+https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
+that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
+by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
+The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
+Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
+System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
+```
 
-### Solution
-You would need to run the following Powershell script on your **development machine**:
+#### Solution
 
-    Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
-    if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
-    { 
-        Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
-    }
+Run the following Windows PowerShell script on your development machine.
 
-## Certificate thumbprint errors
+```
+Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
+if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
+{ 
+    Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
+}
+```
 
-### Error example
+### Certificate thumbprint errors
 
-    Result StackTrace:          
+#### Error example
 
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.MintToken(String email, 
+```
+Result StackTrace: 
+
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.MintToken(String email, 
     String nameId, String identityProvider, String audience, String certThumbprint)
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.SignIn()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_Service()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.PopulateAxUsers()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement..cctor()
-    --- End of inner exception stack trace ---
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_AdminUser()
-        at MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup() in 
-            J:PerfSDKPerfSDKLocalDirectorySampleProjectPerfSDKSampleGeneratedTestRecord1Base.cs:line 45
-    Result Message:             
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.SignIn()
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_Service()
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.PopulateAxUsers()
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement..cctor()
+--- End of inner exception stack trace ---
+at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_AdminUser()
+    at MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup() in 
+        J:PerfSDKPerfSDKLocalDirectorySampleProjectPerfSDKSampleGeneratedTestRecord1Base.cs:line 45
 
-    Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
-    System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
-    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
-    MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
-    Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
+Result Message: 
 
-### Solution:
+Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
+System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
+'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
+MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
+Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
+```
 
-Make sure the thumbprint in CloudEnvironment.Config doesn't have invisible Unicode characters. To do that paste your error message into a tool that would show invisible Unicode characters. An example is [Unicode code converter](https://r12a.github.io/apps/conversion/).
+#### Solution
+
+Verify that the thumbprint in the CloudEnvironment.Config file doesn't have invisible Unicode characters. Paste your error message into a tool that shows invisible Unicode characters. An example of this type of tool is [Unicode code converter](https://r12a.github.io/apps/conversion/).
 
 ![Unicode code converter](media/unicode-extra.jpg)
 
+### Zoom factor
 
-## Zoom factor
-Sometimes you get the error related to IE zoom factor. 
+Sometimes, you might receive the following the error message that is related to the zoom factor in Internet Explorer.
 
-## Error example
+#### Error example
 
 ```
-Result StackTrace:          
+Result StackTrace:
 at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1108
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 862
-   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 830
-   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
-   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options) in c:\Projects\webdriver\dotnet\src\webdriver\IE\InternetExplorerDriver.cs:line 127
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.InternetExplorerBrowser.GetWebDriver(Uri initialUri)
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.SeleniumBrowser.LaunchWithAuthentication(Uri targetUri)
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.AuthenticatedBrowser.CreateSession(SupportedBrowser browser, IAuthenticator authenticator, Uri launchUri)
-   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenPipeline()
-   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
-   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
-   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
-   at MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup() in C:\PerfSDK\Scripts\SampleProject\PerfSDKSample\Generated\Free_Text_InvoiceBase.cs:line 50
+    at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 862
+    at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 830
+    at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
+    at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options) in c:\Projects\webdriver\dotnet\src\webdriver\IE\InternetExplorerDriver.cs:line 127
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.InternetExplorerBrowser.GetWebDriver(Uri initialUri)
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.SeleniumBrowser.LaunchWithAuthentication(Uri targetUri)
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.AuthenticatedBrowser.CreateSession(SupportedBrowser browser, IAuthenticator authenticator, Uri launchUri)
+    at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenPipeline()
+    at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
+    at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
+    at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
+    at MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup() in C:\PerfSDK\Scripts\SampleProject\PerfSDKSample\Generated\Free_Text_InvoiceBase.cs:line 50
 Result Message:              Initialization method MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
 ```
 
-### Solution
-The IE zoom factor can be set to 100% by changing the following keys:
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
+#### Solution
 
-Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to “Change the size of text, apps and other items”. This field is available by right-clicking on your display and selecting Display settings. 
+You can change the zoom factor in Internet Explorer to 100 percent by changing the following keys:
 
-## Missing configuration file
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup = 0
+- Computer\\HKEY_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup2 = 0
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\Zoomfactor = 80000
+
+Depending on the version of the local machine that is used, you might have to change the size of text, apps, and other items before you start the RDP session. To access the **Change the size of text, apps, and other items** field, right-click in a blank area your desktop, and then select **Display settings**.
+
+### Missing configuration file
+
+#### Error example
 
 ```
 Result Stack Trace:
@@ -292,8 +395,5 @@ Default: DateTime="09/20/2016 23:53:43" "Opening ISDispatcher client."
 Default: DateTime="09/20/2016 23:53:43" "Reliable communication manager proxy pointing to URL: https://<BaseURL>/Services/ReliableCommunicationManager.svc"
 ```
 
-### Solution
-This error message indicates that you’re missing **MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config**. Check that this file has been added to vsonline.testsettings, note there are two files with similar names except one is a __\*.dll__ and the other is __\*dll.config__. 
-
-
-
+#### Solution
+This error message indicates that you're missing the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file. Verify that this file has been added to the vsonline.testsettings file. Note that there are two files that have similar names. However, the name of one file is **\*.dll**, and the name of the other file is **\*dll.config**.
