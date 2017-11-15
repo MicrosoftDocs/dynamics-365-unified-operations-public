@@ -45,7 +45,7 @@ In Microsoft Dynamics Lifecycle Services, you can use Business process modeler t
 ## Prerequisites
 To use the Business process modeler, the following products are required:
 
--   The Task recorder that is included in AX 2012 R3 and cumulative update 7 for Microsoft Dynamics AX 2012 R2 supports generating custom processes in Business process modeler.For earlier releases, an updated Task recorder is available as a hotfix. The hotfix includes a client update and a model file. You must install the client update on all Microsoft Dynamics AX 2012 clients. There are two hotfixes available:
+-   The Task recorder that is included in AX 2012 R3 and cumulative update 7 for Microsoft Dynamics AX 2012 R2 supports generating custom processes in Business process modeler. For earlier releases, an updated Task recorder is available as a hotfix. The hotfix includes a client update and a model file. You must install the client update on all Microsoft Dynamics AX 2012 clients. There are two hotfixes available:
     -   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309911)
     -   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Office 2010 or later versions supports generating documents.

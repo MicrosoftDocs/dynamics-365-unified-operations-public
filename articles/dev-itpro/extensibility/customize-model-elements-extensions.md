@@ -441,7 +441,7 @@ To deploy your extension to another environment, for example, a test, pre-produc
     ![Create deployment package](./media/createdeploymentpackage_customizemodel.png)
     
 2.  Select the **Fleet Management Extension** check box.
-3.  In the **Package file location** text box, enter "c:FMLab".
+3.  In the **Package file location** text box, enter "c:\FMLab".
 4.  Click **Create**. This will create a deployment package that contains the Fleet management Extension package.
 
 

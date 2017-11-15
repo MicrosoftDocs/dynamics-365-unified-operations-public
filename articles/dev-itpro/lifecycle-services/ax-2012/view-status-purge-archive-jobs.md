@@ -105,7 +105,7 @@ Use the following steps to revert a failed or canceled archive task:
 <td><strong><span class="ui">Description</span></strong></td>
 <td>The task description. By default, IDMF provides a brief description for the task, such as purge data for the selected Purge Object. The description does not provide any information about the rules in the Archive Object or Purge Object. You can modify IDMF configuration file to provide the rules and their values in the description. Use the following steps to modify the configuration file:
 <ol>
-<li>Using an editing tool such as Notepad, open <strong>AXDataManagementTool.exe.Config</strong> from the installation folder of the Data Management Framework. The default path of the installation folder is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.</li>
+<li>Using an editing tool such as Notepad, open <strong>AXDataManagementTool.exe.Config</strong> from the installation folder of the Data Management Framework. The default path of the installation folder is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.</li>
 <li><p>Locate the configuration key <strong>IncludeRulesInDescription</strong>, and change the value to <strong>true</strong> as shown in the following code.</p>
 <pre><code>&lt;add key=&quot;IncludeRulesInDescription&quot; value=&quot;true&quot; /&gt;</code></pre></li>
 <li>Save the configuration file, and restart IDMF.</li>
