@@ -88,7 +88,6 @@ When the **Requirement** coverage code is used, a lot of planned orders are crea
 [![MinMax. Today's date](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### Today's date + procurement time 
 The specified minimum quantity is met on the date when master planning is run, plus the purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected on the **Master planning parameters** page, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
-
 This fulfillment mode benefits from the setting where plans will be created with less delay, as shown in the following illustration. 
 [![Requirement. Period. Today's date and lead time](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
 [![MinMax. Today's date and lead time](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
@@ -98,40 +97,32 @@ The specified minimum quantity is met on the date when the available inventory g
 [![Planning an item with **Period** coverage code and **First issue** fulfillment](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
 [![Planning an item with **MinMax** coverage code and **First issue** fulfillment](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
 On the date when master planning is run, if the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction, such as sales order and BOM line requirement, for the item, and then it will trigger the replenishment on the date of this transaction. 
-
-If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result, described in the image below.
-![NotUnderLimit](./media/ReqFirstIssue.png)
-If on the date master planning is run the available inventory is not under the safety stock limit, **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time.
+On the date when master planning is run, if the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result, as shown in the illustration below. 
+[![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+On the date when master planning is run,if the available inventory is not under the safety stock limit, **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time.
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqTodayLT.png)
+### Coverage time fence
+The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field. This option used to be useful when master planning would not allow available inventory to be used for real orders, for example, sales, transfers, etc., in the attempt to maintain the safety level at all times. However, with the new way that master planning is working, this mode of replenishment is not needed any longer and it will be deprecated in the future.
 
-### **Coverage time fence**
-The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field. This option used to be useful when master planning would not allow available inventory to be used for real orders (sales, transfers, etc), in the attempt to maintain the safety level at all times. However, with the new way that master planning is working, this mode of replenishment is not needed any longer and it will be deprecated in the future.
-
-
-
-# Planning safety stock replenishment for First Expired, First Out (FEFO) items
-
+## Plan safety stock replenishment for First Expired, First Out (FEFO) items
 At any point in time, the inventory receipt with the latest expiry date will be used for safety stock to allow real demand, such as sale lines or BOM lines, to be fulfilled in the FEFO (First Expired, First Out) order.
+To show how this works, consider the following scenario.
+[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+When planning is run, it will cover the first sales order from the existing on-hand inventory and an additional purchase order, for the remaining quantity.
+[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png)
+A planned order is created to make sure that the available inventory is brought back to the safety limit.
+[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png)
+When the second sales order is planned, the previosly created planned order that covers the safety stock is used to cover this quantity. Hence, the safety stock is constantly rolling.
+[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png)
+Finally, another planned order is created to cover the safety stock.
+[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png)
+All the batches are expired accordingly and planned orders are created to refill the safety stock once it has expired.
 
-To exemplify how this works, consider the following scenario.
-![FEFOScenario](./media/FEFOScenario.png)
-When planning is run, it will cover the first sales order from the existing on hand and an additional purchase order, for the remaining quantity.
-![FEFO1](./media/FEFO1.png)
-A planned order is created to make sure available inventory is brought back to the safety limit.
-![FEFO2](./media/FEFO2.png)
-When the second sales order is planned, the previosly created planned order that was covering safety stock is used to cover this quantity. Hence, the safety stock is constantly rolling.
-![FEFO3](./media/FEFO3.png)
-Finally, another planned order is created to cover safety stock.
-![FEFO4](./media/FEFO4.png)
-All the batches are expired accordingly and planned orders are created to refill safety stock once it has expired.
-
-
-# The way master planning is handling the safety stock constraint
-
-Safety stock is tracked in the system as a requirement type, just like sales lines, BOM requirements, etc. You can see the safety stock requirement line in the **Net requirements** form, if you remove the default filter on the **Requirement type** column.
+## How master planning handles the safety stock constraint
+Safety stock is tracked in the system as a requirement type, just like sales lines, BOM requirements, etc. You can see the safety stock requirement line on the **Net requirements** page, if you remove the default filter on the **Requirement type** column.
 
 Fulfilling the safety stock requirement transaction is deprioritized if the system determines that this causes delays in the fulfilment of real demand: sales lines, BOM lines, transfer requirements, demand forecast lines, and so on. Otherwise, making sure that the available inventory is above the safety stock quantity has the same priority as any other demand types. This ensures no delays for real transactions and helps to prevent over-replenishment and early-replenishment of safety stock.
 
-During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
+During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided that the safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
 
-If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there be a reserve of on-hand and other available inventory before any other demand types.
+If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before any other demand types.
