@@ -29,14 +29,15 @@ ms.dyn365.ops.intro: 7.3
 ms.search.validFrom: 2017-12-31
 
 ---
-# Introduction
 
-sssssssssss
-
-## Set up safety stock levels for items
+# Safety stock calculation or replenishment or fulfillment ?  
 
 [!include[banner](../includes/banner.md)]
 
+
+Roxana: Provide a brief introduction of what this new feature does and how safety stock is calculated or replenished. Can you do manual/automatic calculations? Is forecast included in the calculation?  
+
+## Set up safety stock levels for items
 
 Safety stock is set up as part of item coverage on the **Item coverage** page under **Released products** > **Plan** > **Coverage**.
 
@@ -76,12 +77,13 @@ If **Minimum keys** are used, select the **Minimum periods** check box to fulfil
 
 The following scenario shows how this parameter works and what are the differences between its values:
 [![Common scenario for safety stock fulfillment](./media/Scenario1.png)](./media/Scenario1.png)
-The following options are available:
+
+The following options are available:  xxx Roxana: what do you mean by options? Calculation dates? Date options?
 
 ### Today's date 
-The specified minimum quantity is met on the date when master planning is run. The system tries to fulfill the safety stock limit as soon as possible, even though it can be a bit unrealistic due to the lead time.
+The specified minimum quantity is met on the date when master planning is run. xxx Roxana: ? The system tries to fulfill the safety stock limit as soon as possible, even though it can be a bit unrealistic due to the lead time. xxx Roxana: 
 [![Requirement on today's date](./media/TodayReq.png)](./media/TodayReq.png)
-Planned order P1 is created for today's date to bring the available inventory above the safety stock level on this date. The other planned orders respond to safety stock fulfillment due to the sales orders that are taking the available inventory lower and lower.
+Planned order P1 is created for today's date to bring the available inventory above the safety stock level on this date. The other planned orders respond to safety stock fulfillment due to the sales orders that are taking the available inventory lower and lower. xxx Roxana: I don't understand the last sentence. 
 
 When the **Requirement** coverage code is used, a lot of planned orders are created. It is always a good idea to use either **Period** or **Min./Max.** coverage for items and materials to bundle the replenishment. The following illustration shows an example. 
 [![Period. Today's date](./media/TodayPeriod.png)](./media/TodayPeriod.png)
