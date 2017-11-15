@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: [Vendor onboarding]
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
-author: [author's GitHub alias]
+title: Vendor onboarding
+description: The process to onboard new vendors and actions required by different roles.
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: bis
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
