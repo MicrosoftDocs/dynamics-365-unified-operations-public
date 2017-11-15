@@ -200,8 +200,8 @@ The following tables describe the data manipulation functions that you can use t
 | SESSIONNOW ()                              | Returns the current Dynamics 365 for Finance and Operations session date and time as datetime value.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (date, format)                  | Returns string representation of date using specified format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Dynamics 365 for Finance and Operations session date 12/24/2015 as “**24-12-2015**” according to specified custom format.                                                                                                                      |
 | DATEFORMAT (date, format, culture)         | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date 12/24/2015 as **“24.12.2015”** according to selected German culture.                                                                                                                       |
-| DAYOFYEAR (date)              | Returns integer representation of the number of days between January 1st and the specified date.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. 
-                                                                                                                      |
+| DAYOFYEAR (date)              | Returns integer representation of the number of days between January 1st and the specified date.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. |
+| DAYS (date 1, date 2)         |  Returns the number of days between the first date and the second date. Returns a positive value when the first date is greater than the second date; returns zero when first date is equal to second date; returns a negative value otherwise.   | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |                                                                                                       
 
 **Data conversion functions**
 
@@ -360,11 +360,26 @@ This is the result of the designed format execution.
 Note:</strong> Translated text for labels and descriptions is populated to ER format output in accordance with the language settings configured for parent FILE and FOLDER format elements.</td>
 </tr>
 <tr class="odd">
+  <td>LISTOFFIELDS (path, language)</td>  
+<td>Returns a records list that is created from an argument, for example a model enumeration, a format enumeration, or a container. The created list will consist of records with the following fields, **Name**, **Label**, **Description**, and **Is translated**. The **Label** and **Description** fields will return run-time values based on the format's language settings and specified language. The **Is translated** field indicates that the **Label** field has been translated into specified language. </td>
+<td>When you use the **Calculated field** data source type to configure the **enumType_de** and **enumType_deCH** data sources for the data model enumeration **enumType**,
+
+enumType_de = **LISTOFFIELDS** (enumType, "de")
+enumType_deCH = **LISTOFFIELDS** (enumType, "de-CH")
+
+you can use the following expression,
+
+**IF (NOT** (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label) 
+
+to get the enumeration value’s label in Swiss German when this translation is available and in German otherwise.
+</td>
+</tr>
+<tr class="even">
 <td>STRINGJOIN (list, field name, delimiter)</td>
 <td>Returns the string of concatenated values of a field from a list separated with a selected delimiter.</td>
 <td>If you entered SPLIT(“abc” , 1) as a data source DS, expression STRINGJOIN (DS, DS.Value, “:”) returns “a:b:c”</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SPLITLISTBYLIMIT (list, limit value, limit source)</td>
 <td>Splits the given list into a new list of sub-lists and returns the result in record list content. The limit value parameter specifies the value of the limit to split the origin list. The limit source parameter specifies the step which the total sum is increased on. The limit is not applied to a single item of the given list when the limit source exceeds the defined limit.</td>
 <td>The following example shows the sample format using data sources. 
@@ -380,10 +395,13 @@ This is the result of the adjusted format execution. <a href="./media/ger-splitl
 
 <strong>Note:</strong> The limit is not applied to the last item of the origin list as the value (11) of its limit’s source (weight) exceeds the defined limit (9). Use either the function <strong>WHERE</strong> or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during the report generation (if needed).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>FILTER (list, condition)</td>
-<td>Returns the given list filtered for the specified condition by modifying the query. Unlike the <strong>WHERE</strong> function, the specified condition is applied at the database level to any ER data source of the Table records type.</td>
-<td>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;) returns the list of only vendors belonging to the vendors’ group “40” when <strong>Vendor</strong> is configured as ER data source referring to the <strong>VendTable</strong> table</td>
+<td>Returns the given list filtered for the specified condition by modifying the query. Unlike the <strong>WHERE</strong> function, the specified condition is applied at the database level to any ER data source of the Table records type.
+ The list and condition can be defined by using tables and relations.</td>
+<td>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;) returns the list of only vendors belonging to the vendors’ group “40” when <strong>Vendor</strong> is configured as ER data source referring to the <strong>VendTable</strong> table. 
+
+FILTER (Vendor.'<Relations'.VendBankAccount, Vendor.'<Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup) returns the list of only vendor accounts that belong to a particular bank group when a vendor is configured as the ER data source that refers to the VendTable table and parmVendorBankGroup that is configured as ER data source returning the value in String data type.</td>
 </tr>
 </tbody>
 </table>
