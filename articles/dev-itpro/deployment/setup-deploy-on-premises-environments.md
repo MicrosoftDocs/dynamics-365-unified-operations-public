@@ -782,3 +782,6 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 ## Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
+
+## See also
+[Apply updates to an on-premises deployment](apply-updates-on-premises.md)
