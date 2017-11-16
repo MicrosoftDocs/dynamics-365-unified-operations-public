@@ -785,3 +785,4 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 
 ## See also
 [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+[Redeploy an on-premises deployment](redeploy-on-prem.md)
