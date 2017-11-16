@@ -5,7 +5,7 @@ title: Accessibility features
 description: This topic describes the functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Windows Narrator.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ For most users, everyday system use involves lots of data entry and keyboard int
 
 ## Navigation search
 
-Any page that is available on the Navigation Pane menu is also available from the **Search** box. Just press Alt+G to move focus to the **Search** box, and then type the name or description of the page.
+Any page that is accessed by using the Navigation pane menu, the left-most pane, is also available from the **Search** box. Press Alt+G to move focus to the **Search** box, and then type the name or description of the page.
 
 !["Bank account" entered in the Search box](media/6d08b0be32808221023e2aa92d69fd70.png)
 
