@@ -170,23 +170,55 @@ The following configurations are available:
 ## Setup
 
 ### Cash registers 
-Each cash register must be set up to communicate with the fiscal service. Refer to the following table for more information.
+Each cash register must be set up to communicate with the fiscal service. You can set up cash registers on the **Cash registers** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash registers**). Refer to the following table for more information.
 
-| Setup  | Details | More information |
-|---------|----------|-----------------|
-| Download Electronic reporting configurations| Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt, Response, and Request formats. | For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). You can find the formats in the following locations in the model tree: Receipt (**Cash Receipt Model** > **Cash Receipt Format**), Response (**Cash Receipt Model** > **ESR Response example**), Request (**Cash Receipt Model** > **ESR Request example**).| 
-|Cash register URL| Enter the URL for the Fiscal service.  |WARNING: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://). |
-|Key Vault name| Choose the name of the Key Vault where the certificate is stored ||
-|Configurations| When you set up each cash register, be sure to choose the electronic reporting formats that are appropriate for the legal entity's primary address. | Examples: For the receipt format,  select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic. |
-|Cash register certificate settings |If Fiscal service is accessible at https:// secure connection, you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party Fiscal service.  | Use a self-signed certificate - Activate the parameter in case you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates. Cash register certificate thumbprint - Enter thumbprint of the self-signed certificate stored in Fiscal service which will be used for validation of Fiscal service certificate validness. |
+<table> 
+<tr>
+<td>Setup</td>
+<td>Details</td>
+<td>More information</td></tr>
+<tr>
+<td>Download Electronic reporting configurations</td>
+<td>Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt, Response, and Request formats.</td>
+<td>For more information, see Download Electronic reporting configurations from Lifecycle Services. You can find the formats in the following locations in the model tree: Receipt (Cash Receipt Model > Cash Receipt Format), Response (Cash Receipt Model > ESR Response example), Request (Cash Receipt Model > ESR Request example).</td>
+</tr>
+<tr>
+<td>Cash register URL</td>
+<td>Enter the URL for the Fiscal service.</td>
+<td><strong>WARNING</strong>: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://).</td>
+</tr>
+<tr>
+<td>Key Vault name</td>
+<td>Choose the name of the Key Vault where the certificate is stored.</td>
+<td></td>
+</tr>
+<tr>
+<td>Configurations</td>
+<td>For each cash register, select the electronic reporting formats that are appropriate for the legal entity's primary address.	</td>
+<td><strong>Examples</strong>: For the receipt format, select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.</td>
+</tr>
+<tr>
+<td>Cash register certificate settings</td>
+<td>If the fiscal service is accessible at a secure connection (https://), you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party fiscal service.</td>
+<td><p><strong>Use a self-signed certificate</strong> - Activate the parameter in case you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates.</p><p><strong>Cash register certificate thumbprint</strong> - Enter thumbprint of the self-signed certificate stored in Fiscal service which will be used for validation of Fiscal service certificate validness.</p></td>
+</tr>
+</table>
 
 ### Cash register locations
-You can set up locations of cash registers at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register locations**. 
+You can set up locations of cash registers on the **Cash register locations** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash register locations**). 
 
-Create a tax registration type (Czech Republic) |Create Tax registration type for Business Premises ID in **Organization administration** > **Global address book** > **Registration types** > **Registration types**. Associate created tax registration type with legislative type "Business Premise Id" in **Organization administration** > **Global address book** > **Registration types** > **Registration categories**. Open the Operating unit that is associated with the Cash register location. (Go to **Cash register locations**, place cursor on a field **Organization number**, right click > **View details** or go directly to **Organization administration** > **Common** > **Organizations** > **Internal organizations**.) Click **More options** > **Advanced** on the address line in the **Addresses** tab. Click **Add** on **Registration Id** fast tab and add info about Business premise Id number.
+#### Czech Republic prerequisites
+Before you set up cash register locations for a legal entity with a primary address in the Czech Republic, you must do the following:
+
+1. Create a tax registration type for Business Premises ID (**Organization administration** > **Global address book** > **Registration types** > **Registration types**). 
+2. Associate created tax registration type with legislative type "Business Premise Id" in (**Organization administration** > **Global address book** > **Registration types** > **Registration categories**). 
+3. Associate the Business Premises ID number with the operating unit address for the operating unit that you will use for the cash register loation. 
+	1. Go to **Organization administration** > **Common** > **Organizations** > **Internal organizations**.
+	2. Click **More options** > **Advanced** on the address line in the **Addresses** tab. 
+	3. Click **Add** on **Registration Id** FastTab and add info about Business premise Id number.
 
 ### Create cash register terminals
-Create cash register terminals at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register terminals**.
+Create cash register terminals on the **Cash register terminals** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash register terminals**).
 
 ### Assign the user to a person
 Assign a User who is acting as cash operator and is allowed to log a cash transaction which will be registered in cash register, to a Person in **System administration** > **Users**. 
