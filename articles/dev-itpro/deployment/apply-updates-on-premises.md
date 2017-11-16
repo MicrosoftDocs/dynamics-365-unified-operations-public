@@ -74,7 +74,5 @@ Follow these steps to apply a hotfix.
 ## Apply the latest platform update
 There are two ways to apply the latest platform update:
 - Deploy a new environment, and select the latest platform update topology during deployment. Then follow the usual steps for deploying an environment.
-- To update an existing environment with the latest update, select **Delete** to delete the application, and then select **Configure** to deploy a new version of the platform to the on-premises environment.
-
-For detailed information about applying the latest platform update, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+- To update an existing environment with the latest update, you must redeploy the environment. For detailed information about redeploying, see [Redeploy an on-premises environment](redeploy-on-prem.md).
 
