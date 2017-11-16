@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Upgrade Finance and Operations to the latest platform update
-description: This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
+title: Update Dynamics 365 Finance and Operations environment to the latest platform update
+description: This topic explains how to update your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
 author: tariqbell
 manager: AnnBe
 ms.date: 11/10/2017
@@ -65,7 +65,7 @@ There are two ways to get the latest platform update package.
 - Click the **Platform binary updates** tile of your environment's page in LCS to get the latest platform update or a platform hotfix. 
 - Click the **All Binary Updates** tile of your environment's page in LCS to get a combined package of application and platform binary updates.(As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
-> [!IMPORTANT] 
+> [!NOTE]
 > Tiles on an environments page in LCS show the updates that are applicable to your environment based on the version of the environment you have deployed. 
 
 ### Import the platform update package
