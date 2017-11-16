@@ -57,7 +57,9 @@ The steps for applying updates and upgrading differ between cloud and on-premise
 
 ### On-premises
 If you are applying updates to a cloud version of Finance and Operations, review the following topic:
-- [Apply updates on-premises](../deployment/apply-updates-on-premises.md)
+
+- [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)
 
 ### Cloud
 If you are upgrading a cloud version of Finance and Operations, review the following topics:
