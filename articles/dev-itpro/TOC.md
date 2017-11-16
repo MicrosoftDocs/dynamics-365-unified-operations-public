@@ -505,6 +505,7 @@
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
+### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -549,7 +550,8 @@
 ### [Upgrade a sandbox environment](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade data in development or demo environments](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Update development tools](dev-tools/update-development-tools.md)
-### [Apply updates on-premises](deployment/apply-updates-on-premises.md)
+### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
+### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 
 ## Hotfixes and servicing
 ### [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
