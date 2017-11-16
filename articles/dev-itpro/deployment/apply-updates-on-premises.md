@@ -43,11 +43,10 @@ Three types of updates can be applied to an on-premises deployment of Finance an
 - Platform updates
 
 > [!NOTE] 
-> Application binary updates can't be applied.
+> At this time, application binary updates can't be applied to an on-premises environment.
 
 ## Save your configuration
 Before you delete the environment you plan to update, use the following steps to save your configuration. 
-
 1. In LCS, navigate to **Project Settings** > **On-prem Connectors**.
 2. Select the connector to your environment, and then click **Edit**.
 3. On the **Edit connector** tab, navigate to **Configure Agent** > **Enter Configuration**.
@@ -77,7 +76,7 @@ Follow these steps to apply a hotfix.
 2. In the Asset library in LCS, upload the deployable package to the **Software deployable packages** tab.
 3. As when you apply code customizations, you can include the above deployable package as an asset when you deploy an environment. To apply the package to a new environment or an environment that was previously deployed, follow the steps in the "Apply code customizations" section of this topic.
 
-### Re-deploy your environment
+## Re-deploy your environment
 The following instructions provide information about how to update or redeploy your environment with a new platform or topology.
 1. In LCS, navigate to the **Environments** blade in your on-premises project.
 2. Click **Delete** to delete your environment. 
@@ -104,7 +103,7 @@ The following instructions provide information about how to update or redeploy y
 7. Click **Advanced Settings**.
    You can now use the relevant configurations from the .json file that you saved to configure your environment.
 
-### Configuration settings
+## Configuration settings
 The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file that you saved in the previous procedure.
 
 **Active Directory Federation Services settings**
