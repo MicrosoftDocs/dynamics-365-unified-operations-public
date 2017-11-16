@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, has a significant set of functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
+This topic describes the functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
