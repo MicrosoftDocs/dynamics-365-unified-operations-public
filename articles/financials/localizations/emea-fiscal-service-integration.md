@@ -206,11 +206,17 @@ You can set up locations of cash registers on the **Cash register locations** pa
 Before you set up cash register locations for a legal entity with a primary address in the Czech Republic, you must do the following:
 
 1. Create a tax registration type for Business Premises ID (**Organization administration** > **Global address book** > **Registration types** > **Registration types**). 
-2. Associate created tax registration type with legislative type "Business Premise Id" in (**Organization administration** > **Global address book** > **Registration types** > **Registration categories**). 
+	1. This registration type should be restricted to **Organization**.
+2. Associate the registration type that you created in step one with the registration category **Business Premise ID**.
+	1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**. 
+	2. Select the registration type that you created earlier, and then select **Business Premise ID** for the **Registration category**.
 3. Associate the Business Premises ID number with the operating unit address for the operating unit that you will use for the cash register loation. 
 	1. Go to **Organization administration** > **Common** > **Organizations** > **Internal organizations**.
-	2. Click **More options** > **Advanced** on the address line in the **Addresses** tab. 
-	3. Click **Add** on **Registration Id** FastTab and add info about Business premise Id number.
+	2. Select the organization to associate with the Business Premise ID number.
+	3. Expand the **Addresses** FastTab and click **More options** > **Advanced**. 
+	4. On the **Registration Id** FastTab, click **Add**. 
+	5. Select the registration type that you created in step one earlier.
+	6. Enter the registration number.
 
 ### Create cash register terminals
 Create cash register terminals on the **Cash register terminals** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash register terminals**).
