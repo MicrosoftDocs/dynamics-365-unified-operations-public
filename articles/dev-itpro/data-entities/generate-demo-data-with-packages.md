@@ -44,10 +44,12 @@ The demo data packages are designed to be layered on top of each other as shown 
 
 ![Demo data packages](./media/DemoData.png)
 
+However, the global information for one demo scenario may have completely different requirements than another demo scenario. For example, dimensions for one scenario would interfere with another scenario. In those cases, a separate global information package will be created and only packages related to that information can be layered on top of it.
+
 ### System and shared
 The base package, **System and Shared**, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is entitled "100 - System and Shared.zip"
 
-Once the package is loaded, you will have the following legal entities:
+Once the package is loaded, you will one or more of the following legal entities:
 
 | Legal entity | Description |  
 |------|--------|
@@ -97,16 +99,21 @@ Follow these steps to load the packages:
 9) Repeat the process for additional packages. Be sure to change to the company for which the data package was intended. For example, switch to the HQUS company before importing the data package
 
 ### Loading package combinations
-The following packages are available to load:
+The following packages are available to load. You must be in the legal entity listed in the package when you import it, except for System and Shared, which can be loaded from any legal entity but normally in DAT, the default company.
 
 | Description | Notes |  
 |------|--------|
-| 2017 Fall release - 100 - SystemAndShared | This must be loaded before any package.|  
+| 2017 Fall release - 100 - System and Shared | This must be loaded before any package.|  
 | 2017 Fall release - 200 - Financials - HQUS | This can be loaded alone or with another financials package. |  
 | 2017 Fall release - 200 - Financials - HQEU | This can be loaded alone or with another financials package. |  
 | 2017 Fall release - 200 - Financials - CONS | This can be loaded alone or with another financials package. |  
 | 2017 Fall release - 200 - Financials - PICH | This can be loaded alone or with another financials package. |  
 | 2017 Fall release - 200 - Financials - PIFB | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - PIFB | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 200 - Financials - PIFB | This can be loaded alone or with another financials package. |  
+| 2017 Fall release - 300 - Project management - HQUS | This must be loaded after the HQUS financials package. |  
+| 2017 Fall release - 900 - Financial transactions - HQUS | This must be loaded after the HQUS financials package. |  
+| 2017 Fall release - 900 - Financial transactions - HQEU | This can be loaded alone or with another financials package. |  
 
 ### Steps to take after loading packages
 In some cases, there may be data that you want to add due to a special scenario or missing entity. Add that data at this time. You may also want to manually post additional transactions or add your own data packages to enhance the demo experience.
@@ -158,7 +165,7 @@ To create a Ready to post job, follow these steps:
 10) When the batch is complete, the status will change to Successful or Error depending on the results. The posting results will be displayed at the bottom of the form.
 
 ### Using the Ready to post entity to process transactions
-An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form and you can follow the steps above to process the transactions. 
+An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form. If you have started the posting monitor, the transactions will post automatically after you import the data with the entity. 
 
 The following columns appear in the Ready to post entity:
 
