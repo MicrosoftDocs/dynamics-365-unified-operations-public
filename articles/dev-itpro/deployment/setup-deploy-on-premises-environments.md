@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/15/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -780,105 +780,9 @@ You've now completed the setup of the infrastructure. The following sections des
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   
 
-## <a name="ReDeployFO"></a> Re-deploy your Finance and Operations (on-premises) environment
-    
-Complete the following steps if you are taking a new platform update or need to add new customizations to your current deployment. 
-
-### Save your configuration
-Before you delete the environment you plan to update, use the following steps to save your configuration. 
-1. In LCS, navigate to **Project Settings** > **On-prem Connectors**.
-2. Select the connector to your environment, and then click **Edit**.
-3. On the **Edit connector** tab, navigate to **Configure Agent** > **Enter Configuration**.
-4. Copy the value of the **Download Fileshare location** in the **Configuration Settings** section. You will need this later.
-5. Log in to the on-premises environment file share machine and copy the **<fileshare>\agent\wp\<environment name>\StandaloneSetup<version>\config.json**. You can use the configuration settings in this json file to redeploy your environment.
-
-### Update your environment
-The following instructions provide information about how to update or redeploy your environment with a new platform or topology.
-1. In LCS, navigate to the **Environments** blade in your on-premises project.
-2. Click **Delete** to delete your environment. 
-
-    > [!NOTE]
-    > Deleting the environment will not delete the database, infrastructure or Local agent. Only the Service Fabric applications are deleted.
-
-3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
-
-    The following applications should be deleted:
-    - AXBootstapperAppType
-    - AXSFType
-    - FinancialReportingType
-    - RTGatewayAppType
-    - ReportingService
-    
-    The following on-premises service fabric agent applications should not be deleted:
-    - LocalAgentType
-    - MonitoringAgentAppType
-
-4. After all of the applications in step 3 are deleted, go back to LCS and click **Configure**.
-5. Select the new topology for your platform.
-6. Enter the environment name. You can use the same name or enter a new one.
-7. Click **Advanced Settings**.
-   You can now use the relevant configurations from the .json file that you saved to configure your environment.
-
-### Configuration settings
-The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file that you saved in step 5 of the previous procedure, **Update your environment**.
-
-**Active Directory Federation Services settings**
-
-| **Field**                                                                                                                                                | **Configuration setting**                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| The email address of the user who will be the initial administrator (such as, adminuser@yourdomain.com)                                                  | components.(AOS).parameters.provisioning.adminPrincipleName.value                        |
-| ADFS OpenID metadata endpoint for the Dynamics 365 Application group. (such as, https://[federation-service-name]/adfs/.well-known/openid-configuration) | components.(AOS).parameters.activeDirectory.adfsMetadata.value                           |
-| ADFS OpenID Connect client ID for the AOS application group                                                                                          | components.(AOS).parameters.activeDirectory.adfsClientId.value                           |
-| ADFS OpenID Connect client ID for the Financial Reporting application group                                                                          | components.(FinancialReporting).parameters.aad.nativeClientAuthentication.clientId.value |
-
-**SQL database configuration**
-
-| **Field**                        | **Configuration setting**                                                              |
-|------------------------------|------------------------------------------------------------------------------------|
-| SQL SERVER                   | components.(AOS).parameters.database.dbServer.value          |
-| AX DATABASE                  | components.(AOS).parameters.database.dbName.value            |
-| FINANCIAL REPORTING DATABASE | components.(FinancialReporting).parameters.mrdb.dbName.value |
- 
-**File share settings**
-
-| **Field**                                                                                                                              | **Configuration setting**                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| The file share path for the Microsoft Dynamics 365 instance. This share is used as the document store for files uploaded by users. | components.(AOS).parameters.storage.fileSharePath.value          |
-| The File share certificate thumbprint for the Microsoft Dynamics 365 instance.                                                      | components.(AOS).parameters.storage.sharedAccessThumbprint.value |
-
-   > [!NOTE]
-   > When you copy the file path configuration value from .json file to LCS UI, make sure to remove the extra backslashes. For example, configuration value **\\\\DC1\\D365FFOStorage** from the .json file should be **\\DC1\D365FFOStorage** in the LCS UI.
-    
-**SSRS configuration settings**
-
-| **Field**                                                                      | **Configuration setting**                                                                                      |
-|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| The IP Address of the SSRS instance.                                        | components.(AOS).parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value  |
-| The thumbprint used by the SSRS application to communicate with AX Service. | components.(ReportingServices).parameters.reportingClientCertificateThumbprint.value |
- 
-**Configure service settings**
-
-| **Field**                                                                                                                                      | **Configuration setting**                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| DYNAMICS 365 DNS INFORMATION - The DNS host name of the Microsoft Dynamics 365 instance, such as ax.d365ffo.onprem.contoso.com.           | components.(AOS).parameters.infrastructure.hostName                                            |
-| AOS SERVICE PRINCIPAL USER SETTINGS - The domain user account to run the AX service, such as yourdomain\axserviceuser.                         | components.(AOS).parameters.infrastructure.principalUserAccountName *                          |
-| MR SERVICE PRINCIPAL USER SETTINGS - The group managed service account (gMSA) to run the MR application service, such as yourdomain\Svc-FRAS$. | components.(FinancialReporting).parameters.ApplicationServicePrincipalUser.accountName.value * |
-| The group managed service account (gMSA) to run the MR process service, such as yourdomain\Svc-FRPS$.                                          | components.(FinancialReporting).parameters.ProcessServicePrincipalUser.accountName.value *     |
-| The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components.(FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
- 
-> [!NOTE]
-> Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
- 
-**Application certificate settings**
-
-| **Field**                                                                         | **Configuration setting**                                                                                             |
-|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| The thumbprint of the Data Encryption certificate.                             | components.(AOS).parameters.database.dataEncryptionCertificateThumbprint.value              |
-| The thumbprint of the Data Signing certificate.                                | components.(AOS).parameters.database.dataSigningCertificateThumbprint.value                 |
-| The thumbprint of the Session Authentication certificate.                      | components.(FinancialReporting).parameters.sessionAuthenticationCertificateThumbprint.value |
-| The thumbprint of the SSL vertificate used for WCF/SOAP support.               | components.(AOS).parameters.infrastructure.sslCertificateThumbprint.value                   |
-| The thumbprint used by the Management Reporter to communicate with AX service. | components.(FinancialReporting).parameters.tokenSpec.certThumbprint.value                   |
-
-
 ## Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
+
+## See also
+[Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+[Redeploy an on-premises deployment](redeploy-on-prem.md)

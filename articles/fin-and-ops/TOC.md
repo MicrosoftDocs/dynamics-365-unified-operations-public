@@ -42,6 +42,7 @@
 ##### [February 2016 task guides](get-started/new-task-guides-available-february-2016.md)
 
 ### Explore the user interface
+#### [Accessibility features](get-started/accessibility-features.md)
 #### [Client UI FAQ](get-started/client-faq.md)
 #### [Action search](get-started/action-search.md)
 #### [Advanced filtering and query syntax](get-started/advanced-filtering-query-options.md)

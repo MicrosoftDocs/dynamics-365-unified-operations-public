@@ -53,7 +53,16 @@ This Tech Talk video provides an introduction to migration from AX 2009 to Finan
 
 ## Upgrade from a previous version of Finance and Operations
 
-To get started, review the following topics:
+The steps for applying updates and upgrading differ between cloud and on-premises implementations. 
+
+### On-premises
+If you are applying updates to a cloud version of Finance and Operations, review the following topic:
+
+- [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)
+
+### Cloud
+If you are upgrading a cloud version of Finance and Operations, review the following topics:
 
 - [Overview of moving to the latest Finance and Operations update](upgrade-latest-update.md)
 
