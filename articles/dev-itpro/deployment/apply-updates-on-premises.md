@@ -46,7 +46,7 @@ Three types of updates can be applied to an on-premises deployment of Finance an
 > At this time, application binary updates can't be applied to an on-premises environment.
 
 > [!IMPORTANT]
-> Before you apply any updates to an on-premises environment, save the configuration settings that were used to deploy that environment. When you apply updates, you must re-enter the configuration settings. For more information, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+> Before you apply any updates to an on-premises environment, save the configuration settings that were used to deploy that environment. When you apply updates, you must re-enter the configuration settings. For more information, see [Redeploy an on-premises environment](redeploy-on-prem.md#save-your-configuration).
 
 ## Apply code customizations
 To apply customizations at the same time that you deploy a new on-premises environment, follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md). To apply new customizations to an on-premises environment that has already been deployed, follow these steps.
