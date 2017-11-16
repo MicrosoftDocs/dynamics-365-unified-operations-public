@@ -174,33 +174,28 @@ Each cash register must be set up to communicate with the fiscal service. You ca
 
 <table> 
 <tr>
-<td>Setup</td>
-<td>Details</td>
-<td>More information</td></tr>
+	<td><strong>Setup</strong></td>
+<td><strong>Details</strong></td>
+<td><strong>More information</strong></td></tr>
 <tr>
-<td>Download Electronic reporting configurations</td>
-<td>Before you can set up cash registers, you must download the following formats from Lifecycle Services: Receipt, Response, and Request formats.</td>
-<td>For more information, see Download Electronic reporting configurations from Lifecycle Services. You can find the formats in the following locations in the model tree: Receipt (Cash Receipt Model > Cash Receipt Format), Response (Cash Receipt Model > ESR Response example), Request (Cash Receipt Model > ESR Request example).</td>
-</tr>
-<tr>
-<td>Cash register URL</td>
-<td>Enter the URL for the Fiscal service.</td>
-<td><strong>WARNING</strong>: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://).</td>
-</tr>
-<tr>
-<td>Key Vault name</td>
-<td>Choose the name of the Key Vault where the certificate is stored.</td>
-<td></td>
-</tr>
+	<td>Cash Register settings</td>
+	<td>Enter the <strong>Cash register URL</strong>, the <strong>Certificate</strong> and the <strong>Class name</strong>.</td>
+	<td><p><strong>Cash register URL</strong> - Enter the URL for the Fiscal service. <strong>WARNING</strong>: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://).</p>
+		<p><strong>Certificate</strong> - </p>
+		<p><strong>Class name</strong> - </p>
+	</td>
+	</tr>
 <tr>
 <td>Configurations</td>
 <td>For each cash register, select the electronic reporting formats that are appropriate for the legal entity's primary address.	</td>
-<td><strong>Examples</strong>: For the receipt format, select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.</td>
+<td><p><strong>Example</strong>: For the receipt format, select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.</p> 
+	<p>If you can't find a format in the list, you can download recent electronic formats from Lifecycle Services. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs"> Download Electronic reporting configurations</a>.</p>
+	</td>
 </tr>
 <tr>
 <td>Cash register certificate settings</td>
 <td>If the fiscal service is accessible at a secure connection (https://), you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party fiscal service.</td>
-<td><p><strong>Use a self-signed certificate</strong> - Activate the parameter in case you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates.</p><p><strong>Cash register certificate thumbprint</strong> - Enter thumbprint of the self-signed certificate stored in Fiscal service which will be used for validation of Fiscal service certificate validness.</p></td>
+	<td><p><strong>Use a self-signed certificate</strong> - Select <strong>yes</strong> if you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates.</p><p><strong>Cash register certificate thumbprint</strong> - Enter the thumbprint of the self-signed certificate that is stored in a fiscal service which will be used for validating the fiscal service certificate.</p></td>
 </tr>
 </table>
 
