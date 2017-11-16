@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqSafetyKey
+ms.search.form: ReqSafetyKey, 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Safety stock calculation or replenishment or fulfillment ?  
+# Safety stock fulfillment ?  
 
 [!include[banner](../includes/banner.md)]
 
