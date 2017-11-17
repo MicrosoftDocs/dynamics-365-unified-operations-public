@@ -318,218 +318,184 @@ If the payment to be cancelled has been registered in the cash register with a c
 
 ### Review Cash register fiscal transactions. Resend transaction to cash register.
 
-You can review the registered cash payments, and you can also reprint the original copy of the Cash receipt original and copy at **Accounts receivable** > **Inquires** > **Cash register fiscal transactions**.
+You can review the registered cash payments, and you can also reprint the original cash receipt or a copy of the cash receipt from the  original and copy at **Accounts receivable** > **Inquires** > **Cash register fiscal transactions**.
 
-If cash payment wasn't successfully registered for any infrastructural reason (not related with exception scenarios described in the law which should be correctly handled on Fiscal service side), a user will get respective an error message after a posting of cash payment. The cash register transaction in status "Created" will be available in the Cash register fiscal transactions form. User must fix infrastructural issues and manually resend the created cash transactions to the cash register. Otherwise, user is not able to print the cash receipt with fiscal codes. Correctly, the registered transaction gets status "Registered".
-Fields description in the form Cash register payment transactions:
+If the cash payment wasn't successfully registered for a reason that is not related to the exception scenarios described in the law which should be correctly handled on fiscal service side, you will get an error message after a posting a cash payment. The cash register transaction with a status of **Created** will be available on the **Cash register fiscal transactions** page. You must fix issues and manually resend the created cash transactions to the cash register. Otherwise, you cannot print the cash receipt with fiscal codes. When a cash payment is correctly registered, it will have a status of **Registered**.
 
-<table class="table ng-scope">
-	<tbody>
+Fields description for the Cash register payment transactions:
+
+<table >
 		<tr>
-			<td width="189">
-			<p class="x-hidden-focus"><strong><span><span><span class="x-hidden-focus">Field </span></span></span></strong></p>
+			<td >
+			<p><strong>Field</strong></p>
 			</td>
-			<td width="444">
-			<p><strong><span><span><span>Description </span></span></span></strong></p>
+			<td >
+			<p><strong>Description</strong></p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p class="align-right"><span><span><span lang="EN-US"><strong>Tab Overview</strong></span></span></span></p>
+			<td>
+			<p>Cash register</p>
 			</td>
-			<td width="444" class="x-hidden-focus">
-			<p><span><span><span lang="EN-US"> </span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Cash register</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Id of cash register</span></span></span></p>
+			<td>
+			<p>ID of cash register</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Transaction Id</span></span></span></p>
+			<td>
+			<p>Transaction ID</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Id of transaction in cash register</span></span></span></p>
-			<p><span><span><span lang="EN-US">This value is received from Fiscal service.</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Cash register URL</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">URL of the place where Fiscal service is located.</span></span></span></p>
+			<td>
+			<p>ID of transaction in cash register</p>
+			<p>This value is received from Fiscal service.</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Status</span></span></span></p>
+			<td>
+			<p>Cash register URL</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Status of transaction. </span></span></span><span><span><span lang="EN-US">Possible values:</span></span></span></p>
-			<p><span><span><strong><u><span lang="EN-US">Created</span></u></strong><span lang="EN-US">. The&nbsp;payment transaction is posted, but not registered.</span></span></span></p>
-			<p><span><span><strong><u><span lang="EN-US">Registered</span></u></strong><span lang="EN-US">. The&nbsp;payment transaction is posted and registered (sent to&nbsp;Fiscal service&nbsp;and received response with fiscal codes).</span></span></span></p>
+			<td>
+			<p>URL of the place where Fiscal service is located.</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">CZ/Czech republic: Offline</span></span></span></p>
+			<td>
+			<p>Status</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Indication that the cash transaction is registered in Offline regime (allowed exception) and PKP code is received.</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Terminal</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Code of cash register terminal</span></span></span></p>
+			<td>
+			<p>Status of transaction. Possible values:</p>
+				<ul><li>Created. The payment transaction is posted, but not registered.</li>
+			<li>Registered The payment transaction is posted and registered (sent to Fiscal service and received response with fiscal codes). </li></ul>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Operator</span></span></span></p>
+			<td>
+			<p>CZ/Czech republic: Offline </p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Code of cash register operator</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p align="right"><strong><span><span><span lang="EN-US">Tab General</span></span></span></strong></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US"> </span></span></span></p>
+			<td>
+			<p>Indication that the cash transaction is registered in Offline regime (allowed exception) and PKP code is received. </p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Voucher</span></span></span></p>
+			<td>
+			<p>Terminal</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Voucher number of posted cash transaction</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Date</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Date of transaction</span></span></span></p>
+			<td>
+			<p>Code of cash register terminal</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Receipt number</span></span></span></p>
+			<td>
+			<p>Operator</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Number of cash receipt</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Transaction date and time</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Date and time of registered transaction</span></span></span></p>
-			<p><span><span><span lang="EN-US">This value is received from Fiscal service.</span></span></span></p>
+			<td>
+			<p>Code of cash register operator</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Receipt amount</span></span></span></p>
+			<td>
+			<p>Voucher</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Payment amount</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Currency</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Currency of payment</span></span></span></p>
+			<td>
+			<p>Voucher number of posted cash transaction</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p align="right"><span><span><span lang="EN-US"><strong>Tab</strong> <strong>Fiscal codes</strong></span></span></span></p>
+			<td>
+			<p>Date</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US"> </span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Name</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Name of fiscal code received from the fiscal service. Possible values:</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; <strong>Info</strong> – additional information</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; AT/Austria: <strong>Code</strong> - signature</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; AT/Austria: <strong>Link </strong>– signature dependent link</span></span></span></p>
+			<td>
+			<p>Date of transaction</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Label</span></span></span></p>
+			<td>
+			<p>Receipt number</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Label of the fiscal code received from the fiscal service</span></span></span></p>
-			<p><span><span><span lang="EN-US">Possible values:</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; CZ/Czech Republic: <strong>FIK</strong> – Fiscal Identification Code</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; CZ/Czech Republic: <strong>BKP</strong> – Security Code</span></span></span></p>
-			<p><span><span><span lang="EN-US">&nbsp;&nbsp; CZ/Czech Republic: <strong>PKP</strong> – Signature Code (returned in case of offline registration)</span></span></span></p>
-			<p><span><span><span lang="EN-US"> </span></span></span></p>
+			<td>
+			<p>Number of cash receipt</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Value</span></span></span></p>
+			<td>
+			<p>Transaction date and time</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Value of fiscal code received from fiscal service</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p align="right"><span><span><span lang="EN-US"><strong>Tab Registered tax amounts</strong></span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US"> </span></span></span></p>
+			<td>
+			<p>Date and time of registered transaction</p>
+			<p>This value is received from Fiscal service.</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Value</span></span></span></p>
+			<td>
+			<p>Receipt amount</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">% of registered tax</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Sales tax amount</span></span></span></p>
-			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Amount of registered tax</span></span></span></p>
+			<td>
+			<p>Payment amount</p>
 			</td>
 		</tr>
 		<tr>
-			<td width="189">
-			<p><span><span><span lang="EN-US">Gross amount</span></span></span></p>
+			<td>
+			<p>Currency</p>
 			</td>
-			<td width="444">
-			<p><span><span><span lang="EN-US">Amount of registered payment</span></span></span></p>
+			<td>
+			<p>Currency of payment</p>
 			</td>
 		</tr>
-	</tbody>
+		<tr>
+			<td>Name</td>
+			<td>
+			<p>Name of fiscal code received from the fiscal service. Possible values:
+				<ul>
+			<li>Info – additional information</li>
+			<li>AT/Austria: Code - signature</li>
+			<li>AT/Austria: Link – signature dependent link</li>
+				</ul>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td> Label </td>
+			<td> <p>Label of the fiscal code received from the fiscal service</p>
+			<p>Possible values:
+				<ul>
+					<li> CZ/Czech Republic: <strong>FIK</strong> – Fiscal Identification Code</li>
+			<li> CZ/Czech Republic: <strong>BKP</strong> – Security Code</li>
+			<li> CZ/Czech Republic: <strong>PKP</strong> – Signature Code (returned in case of offline registration)</li>
+				</ul></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Value</p>
+			</td>
+			<td>
+			<p>Value of fiscal code received from fiscal service</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Value</p>
+			</td>
+			<td>
+			<p>% of registered tax</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Sales tax amount</p>
+			</td>
+			<td>
+			<p>Amount of registered tax</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Gross amount</p>
+			</td>
+			<td>
+			<p>Amount of registered payment</p>
+			</td>
+		</tr>
 </table>
 
 
