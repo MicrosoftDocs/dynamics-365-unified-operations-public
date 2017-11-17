@@ -44,9 +44,11 @@ typically comes from a source such as a customer-hosted website that allows
 anonymous access. Vendors can sign up by providing basic information such as: vendor name, justification, organization number, contact person name and email. The requests are imported via the data management interface.
 
 Step 2
+
 Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
 
 Step 3
+
 Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page Prospective vendor registration requests in Microsoft Dynamics 365.
 
 Step 4  
@@ -68,7 +70,7 @@ process.
 | Role and ”process”       | Step – 1 Data Management Odata - Entities import | Step -2 Prospective vendor registration request List page | Step – 3 User provisioning workflow | Step - 4 Registration wizard | Step – 5 Vendor request: Request submitted to workflow | Step - 6 Creation of Vendor master & User role modification |
 |--------------------------|--------------------------------------------------|-----------------------------------------------------------|-------------------------------------|------------------------------|--------------------------------------------------------|-------------------------------------------------------------|
 | System                   | Request for new vendor imported                  |                                                           |                                     |                              |                                                        | Vendor is created on acceptance of vendor request           |
-| Procurement professional |                                                  | Onboarding process is started                             |                                     |                              | Reviews and accepts/rejects the vendor                    |                                                             |
+| Procurement professional |                                                  | Starts the onboarding process                             |                                     |                              | Reviews and accepts/rejects the vendor                    |                                                             |
 | Administrator            |                                                  |                                                           | Creates user in Dynamics 365 and Azure       |                              |                                                        |                                                             |
 | Vendor contact person    |                                                  |                                                           | Sends mail to the contact person    | Registers vendor information |                                                        |                                                             |
 
