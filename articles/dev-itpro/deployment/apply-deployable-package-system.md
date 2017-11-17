@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply a deployable package to an environment
-description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to an environment.
+title: Apply updates to a cloud environment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package to an environment
+# Apply updates to a cloud environment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
 [!include[banner](../includes/banner.md)]
 
