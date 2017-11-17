@@ -218,8 +218,7 @@ account requires that the workflow to inactivate a user request is set up.
 Note that to create a vendor account on approval, the number sequence for
 creating vendors from vendor requests must be set to auto.
 
-For an overview of the access permissions of a vendor collaboration user, see
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration.
+For an overview of the access permissions of a vendor collaboration user, see [Set up and maintain vendor collaboraton](set-up-maintain-vendor-collaboration).
 
 Rejecting a vendor request
 --------------------------
@@ -229,8 +228,7 @@ be selected in the vendor request.
 
 Rejection of a vendor request will submit a request for inactivating the user.
 Inactivating a user requires that the workflow to inactivate a user request
-workflow is set up. For more information, see
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration>.
+workflow is set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration).
 
 When a vendor request is rejected, the status **Rejected** will be visible on
 the initial prospective vendor registration request as well as on the vendor
