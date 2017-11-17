@@ -60,12 +60,12 @@ Use this scenario when one or more small hotfixes are required to address a spec
 
 This process is required before embarking on Scenario 3 and is to be completed by a developer before other activities can begin.
 
-### Scenario 3: Upgrade to the most current application update
-Use this scenario when business factors, such as time or cost limitations, prohibit the complete latest application update. Some examples of application updates are Release 1611 (also known as 7.1) and the July 2017 release (also known as 7.2). When installing a platform-only update, use scenario 4 below. Some examples of platform updates are the August 2016 release, or Platform update 6 or Platform update 7. If you have any questions about what your update contains, contact Microsoft Support for confirmation.
+### Scenario 3: Upgrade to the most current application release
+Use this scenario when business factors, such as time or cost limitations, prohibit the complete latest application release. Some examples of application updates are Release 1611 (also known as 7.1) and the July 2017 release (also known as 7.2). If installing a platform-only update, refer to scenario 4 below instead. Some examples of platform updates are the August 2016 release, Platform update 6 or Platform update 7. If you have any questions about your update contains, contact Microsoft Support for confirmation.
 
 ### Scenario 4: Upgrade to the most current platform only
 
-Use this scenario to update to the latest release of the platform, when no application updates are required at that time. Note that platform updates are always cumulative. Some examples of platform updates are the August 2016 release, Platform update 6, and Platform update 7. 
+Use this scenario to update to the latest release of the platform, when no application updates are required at that time. Note that platform updates are always cumulative. Some examples of platform updates are the August 2016 release, Platform update 9, and Platform update 11. 
 
 > [!IMPORTANT]
 > Platform update 1 and Platform update 2 allowed overlayering of platform X++ code. Later platform updates had the platform-level X++ locked for overlayering. If you are upgrading from Platform update 1 or Platform update 2, your developers will need to refactor the overlayering as extensions before you can upgrade. If you are upgrading from Platform update 3 or higher to a later platform update, you can do so without refactoring your X++ code.
@@ -94,9 +94,6 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 1.  Use the Code upgrade service on Lifecycle Services to upgrade your code, see [Configure the code upgrade service in Lifecycle services](../lifecycle-services/configure-execute-code-upgrade.md). We recommend running the code upgrade service even if you do not have custom code, because the service will still help you by removing any old Microsoft X++ hotfixes you have installed, which is a required step.
 
- > [!IMPORTANT]
- > There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
-
 2.  You will need to deploy a new development environment, which is running the **new version** that you are upgrading to. You will use this environment to complete code merging and refactoring of your custom code. Submit a request for a new Dev/Test environment that is running the latest update.
     -   You might have to delete your existing Dev/Test environment if your subscription doesn't allow for a new one.
     -   Depending on your project type, these are the other options to deploy a developer VM:
@@ -116,8 +113,8 @@ Regardless of whether you're a live customer or you're still in the implementati
 5.  Upload deployable packages to the LCS Asset library of your project.
 For more details on code migration steps, see [Code Migration](../dev-tools/developer-home-page.md#code-migration). After code migration is complete, continue to Scenario 3.
 
-## Scenario 3: Upgrade to the most current application update
-These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to only upgrade your platform to the latest bits, use Scenario 4 below.
+## Scenario 3: Upgrade to the most current application release
+These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application releases. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to only upgrade your platform to the latest bits, use Scenario 4 below.
 
 ### Upgrade your code
 
@@ -125,8 +122,14 @@ First, upgrade your code as described in Scenario 2. This is a developer task a
 
 ### Upgrade your data on a development environment
 
-Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. Execute this process on the development environment running the release you are upgrading to. This is a validation process performed by a developer to ensure that the data upgrade completes successfully with the specific set of customizations within this environment – completion of this step helps ensure success in the sandbox UAT and production environments later. To copy your database back to a developer environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md). To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if your environment is already live in production then the target database is a copy of production; if your environment is not yet live, it will be your most current database. Execute this process on the development environment running the release you are upgrading to. This is a validation process performed by a developer to ensure that the data upgrade completes successfully with the specific set of customizations within this environment.
+Follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
+To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
+> [!IMPORTANT]
+> Upgrading data on a development environment is a required step, completion of this step helps reduce the risk of extended downtime and upgrade errors during the upgrade process of sandbox UAT and production environments later
+> There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
+ 
 ### Upgrade your sandbox environment
 
 You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
