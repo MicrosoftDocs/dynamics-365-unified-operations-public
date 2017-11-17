@@ -41,8 +41,7 @@ Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there ar
 
 Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following scenarios: 
 - The deployment has been performed through Microsoft Dynamics Lifecycle Services (LCS). 
-- Deployments have been performed through supported Azure Resource Manager scripts (link to ARM scripts)
-- Other deployments that have been performed using the following guidance: 
+- Customer or partner-driven deployments that have been performed strictly adhering to the following guidance: 
    - SQL is deployed in a High Availability topology (using SQL Clustering/Always On).
    - SQL best practices have been followed for deployment in Azure, using the [Performance best practices for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance). 
    - Best practices for SQL Server configuration for AX 2012 have been followed, as specified in [Configure SQL Server and storage settings (TechNet)](https://technet.microsoft.com/en-us/library/dd309734.aspx). 
