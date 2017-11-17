@@ -38,21 +38,27 @@ representing the vendor.
 The process is described in steps where different roles take actions in the
 system.
 
-Step -1  
+Step 1  
 The initial request is the prospective vendor registration request and it
 typically comes from a source such as a customer-hosted website that allows
-anonymous access. Vendors can sign up by .
+anonymous access. Vendors can sign up by providing basic information such as: vendor name, justification, organization number, contact person name and email. The requests are imported via the data management interface.
 
-Step – 4  
+Step 2
+Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
+
+Step 3
+Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page Prospective vendor registration requests in Microsoft Dynamics 365.
+
+Step 4  
 The vendors contact person logs into Microsoft Dynamics 365 with the new user
 account and uses a registration wizard to provide information such as addresses,
 business information, procurement categories, and questionnaire responses.
 
-Step – 5  
+Step 5  
 A **vendor request** is created with the registration information and the vendor
 request is submitted to workflow and routed for review and approval.
 
-Step – 6  
+Step 6  
 On approval, a vendor record is created, and the user account of the vendor’s
 contact person is granted permission to vendor collaboration or is inactivated.
 
