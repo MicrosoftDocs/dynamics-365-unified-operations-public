@@ -2,10 +2,10 @@
 # required metadata
 
 title: Provisioning Microsoft Dynamics 365 for Talent
-description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
+description: This topic walks through the steps for provisioning a new Microsoft Dynamics 365 for Talent environment. 
 author: rschloma
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,14 +18,14 @@ ms.search.form: Talent
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Talent
+ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
