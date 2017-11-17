@@ -161,7 +161,7 @@ it can be submitted to workflow automatically when the vendor registration
 wizard is finalized. A request can, for example, be submitted manually if a
 procurement professional wants to assess if the request should be routed through
 an approval process before it is submitted to the workflow.  
-Click **Procurement and sourcing parameters/Vendor collaboration** and select
+- Click **Procurement and sourcing parameters/Vendor collaboration** and select
 **Auto submit prospective vendor registration to workflow** to configure the
 vendor request to be submitted automatically to workflow when the vendor
 registration wizard finalizes.
@@ -237,7 +237,7 @@ the initial prospective vendor registration request as well as on the vendor
 request.
 
 Deleting a prospective vendor registration request in different statuses
-========================================================================
+------------------------------------------------------------------------
 
 The prospective vendor registration request has different statuses that provide
 an overview of how it is progressing.
