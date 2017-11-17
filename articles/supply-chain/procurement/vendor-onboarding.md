@@ -154,6 +154,7 @@ When the prospective vendor user finalizes the wizard, a vendor request is
 created.
 
 Submit a vendor request manually or automatically
+-------------------------------------------------
 
 A vendor request can be created as a draft and manually submitted to workflow or
 it can be submitted to workflow automatically when the vendor registration
@@ -165,8 +166,8 @@ Click **Procurement and sourcing parameters/Vendor collaboration** and select
 vendor request to be submitted automatically to workflow when the vendor
 registration wizard finalizes.
 
-Vendor request
---------------
+Vendor requests
+---------------
 
 Vendor requests are available on the **Vendor request** page.
 
