@@ -95,11 +95,11 @@ The entity contains the following information for import:
 | Contact person’s email       | The email that will be used to create a new user in Microsoft Dynamics 365 and which will be registered in the tenant’s Azure active directory account.                                                                                                                    |
 | Submitted date               | The date that the request was created in an external system.                                                                                                                                                                                                               |
 | Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Microsoft Dynamics 365. If no value is received though the import, a value from the Procurement and sourcing parameters is applied. |
-| *Vendor type*                | *This can be an organization or a person and will determine how the vendor is finally created.*                                                                                                                                                                            |
+| Vendor type                | This can be an organization or a person and will determine how the vendor is finally created.                                                                                                                                                                            |
 
 When the prospective vendor registration request is imported, it will be visible
 in the list page **Prospective vendor registration request**. From the list
-page, a procurement professional can invite the user**.** A user request for
+page, a procurement professional can invite the user. A user request for
 provisioning the user is sent to a workflow.
 
 Submitting a prospective vendor user request
@@ -123,8 +123,7 @@ The new user will receive an email generated from the user request workflow to
 invite the user to log on to the system.
 
 For information about the configuration of the email and the workflow in
-general, see the description of a user request workflow in
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration.
+general, see the description of a user request workflow in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 Vendor registration
 -------------------
@@ -136,8 +135,7 @@ The wizard reflects the vendor request configuration and the country/region
 where the vendor is doing business determines what information is requested in
 the wizard and what information is mandatory.
 
-For more information about the vendor request configuration, see
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-request-configuration.
+For more information about the vendor request configuration, see [Vendor request configurations](vendor-request-configuration.md).
 
 Below is an overview of the pages in the wizard and their purpose, the
 description provides some examples of contents.
@@ -146,30 +144,12 @@ description provides some examples of contents.
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Country/region             | The country/region determines the vendor request configuration that is applied on the remaining wizard pages. This also determines values in the Tax state look up.                                                                                                                           |
 | Terms and conditions       | This page will be available depending on the configuration. It may request an acknowledgement from the user to proceed.                                                                                                                                                                       |
-| Vendor information         | Contains the vendor name that is defaulted from the original prospective vendor registration request.                                                                                                                                                                                         |
-| Contact person information | Contains                                                                                                                                                                                                                                                                                      |
-| Business information       | Contains                                                                                                                                                                                                                                                                                      |
+| Vendor information         | Contains the vendor name that is defaulted from the original prospective vendor registration request, the organization number, the vendor's phone number, fax, and email, and the vendor's adresses for different purposes.                                                                                                                                                                                         |
+| Contact person information | Contains the contact person’s name, defaulted from the original prospect vendor
+    registration request, the contact person’s phone number and email address, and the contact person's adresses for different purposes.                                                                                                                                                                                                                                                                             |
+| Business information       | Contains tax registration numbers (for different countries), minority owned, and numbers of employees.                                                                                                                                                                                                                                                                                     |
 | Procurement categories     | The procurement categories that the vendor is requesting to be approved for. The procurement category hierarchy is available to select from. The number of levels of the hierarchy that is displayed can be configured in the **Procurement and sourcing parameters / Vendor collaboration.** |
 | Questionnaires             | Depending on the configuration, the prospective vendor user may have to respond to a set of questionnaires.                                                                                                                                                                                   |
-
--   Organization number
-
--   The vendor’s phone, fax, email
-
--   The vendor’s addresses with different purposes
-
--   The contact person’s name, defaulted from the original prospect vendor
-    registration request
-
--   The contact person’s phone number and email address
-
--   The contact person’s addresses with different purposes
-
--   Tax registration numbers (for different countries)
-
--   Minority owned
-
--   Number of employees
 
 -   The vendor request configuration can be configured to add a questionnaire to
     the page.
@@ -208,10 +188,7 @@ vendor is to become a registered vendor in Microsoft Dynamics 365.
 
 The vendor request should be submitted to workflow, and be routed to the
 relevant reviewers and approvers. Basic information about setting up workflows
-can be found in
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows>
-
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system>
+can be found in [Procurement and sourcing workflows](procurement-sourcing-workflows.md) and [Workflow overview](overview-workflow-system.md)
 
 The vendor request can have the following statuses:
 
