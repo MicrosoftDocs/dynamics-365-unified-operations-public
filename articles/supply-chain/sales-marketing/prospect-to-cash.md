@@ -5,7 +5,7 @@ title: Prospect to cash
 description: The topic provides an overview of the Prospect to cash solution between Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,21 +34,10 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The Prospect to cash solution uses [Data Integration](/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Sales instances via the Common Data Service (CDS). The Prospect to cash templates available with the Data Integration feature enable the flow of accounts, contacts, products, sales quotes, sales orders, and sales invoices data between Finance and Operations and Sales. While the data is flowing between Finance and Operations and Sales, you can carry out sales and marketing activities in Sales and handle the order fulfillment with inventory management in Finance and Operations. 
-
-This solution provides integration in the following areas: 
-
--   [Maintain accounts in Sales and sync them to Finance and Operations](accounts-template-mapping.md)
--   [Maintain contacts in Sales and sync them to Finance and Operations](contacts-template-mapping.md)
--   [Maintain products in Finance and Operations and sync them to Sales](products-template-mapping.md)
-- 	[Create sales quotes in Sales and sync them to Finance and Operations](sales-quotation-template-mapping.md)
--   [Create sales orders in Finance and Operations and sync them to Sales](sales-order-template-mapping.md)
--   [Create sales invoices in Finance and Operations and sync them to Sales](sales-invoice-template-mapping.md)
-
-This solution provides direct synchronization in the following areas:
+The Prospect to cash solution provides direct synchronization across Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) and Dynamics 365 for Sales (Sales). The Prospect to cash templates available with the Data Integration feature enable the flow of accounts, contacts, products, sales quotes, sales orders, and sales invoices data between Finance and Operations and Sales. While the data is flowing between Finance and Operations and Sales, you can carry out sales and marketing activities in Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides direct synchronization in the following areas:
 
 -   [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
--   [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
+-   [Maintain products in Finance and Operations and syIn the earlier versions, the Prospect to cash solution provides the non-direct synchronization via the Common data service (CDS) in the following areas:nc them directly to Sales](products-template-mapping-direct.md)
 -   [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 -   [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
 -   [Create sales orders in Finance and Operations and sync them directly to Sales](sales-order-template-mapping-direct.md)
@@ -56,6 +45,14 @@ This solution provides direct synchronization in the following areas:
 -   [Synchronize sales orders directly between Sales and Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 -   [Create sales invoices in Finance and Operations and sync them directly to Sales](sales-invoice-template-mapping-direct.md)
 
+In the earlier versions, the Prospect to cash solution provides the non-direct synchronization in the following areas:
+
+-   [Maintain accounts in Sales and sync them to Finance and Operations](accounts-template-mapping.md)
+-   [Maintain contacts in Sales and sync them to Finance and Operations](contacts-template-mapping.md)
+-   [Maintain products in Finance and Operations and sync them to Sales](products-template-mapping.md)
+-   [Create sales quotes in Sales and sync them to Finance and Operations](sales-quotation-template-mapping.md)
+-   [Create sales orders in Finance and Operations and sync them to Sales](sales-order-template-mapping.md)
+-   [Create sales invoices in Finance and Operations and sync them to Sales](sales-invoice-template-mapping.md)
 
 ## System requirements for Dynamics 365 for Finance and Operations, Enterprise edition
 
