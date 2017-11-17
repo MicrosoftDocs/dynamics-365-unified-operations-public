@@ -509,7 +509,7 @@
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
-### [Apply a deployable package](deployment/apply-deployable-package-system.md)
+### [Apply updates to a cloud environment](deployment/apply-deployable-package-system.md)
 ### [Install a deployable package](deployment/install-deployable-package.md)
 ### [Troubleshoot package application issues](deployment/deployable-package-troubleshooting.md)
 
