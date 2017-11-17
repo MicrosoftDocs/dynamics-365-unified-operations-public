@@ -5,7 +5,7 @@ title: Software lifecycle policy and list of releases
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: ryanCcarlson 
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -122,6 +122,9 @@ The initial release of the  Dynamics 365 for Finance and Operations (on-premises
 ### Dates for Dynamics 365 for Finance and Operations (on-premises) releases
 
 The initial release of the Dynamics 365 for Finance and Operations (on-premises) software was based on the July 2017 update of the application, with Platform update 8.
+
+> [!NOTE]
+> Platform update 11 is now available for on-premises deployments. 
 
 Microsoft is committed to supporting the deployments of the Dynamics 365 for Finance and Operations (on-premises) software through calendar year 2027, at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy.
 
