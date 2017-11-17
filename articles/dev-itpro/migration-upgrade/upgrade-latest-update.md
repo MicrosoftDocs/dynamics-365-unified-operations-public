@@ -132,12 +132,12 @@ To execute the data upgrade process, follow the steps in [Process for data upgra
 
 > There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
-### Upgrade your sandbox environment
+### Upgrade your sandbox UAT environment
 
 You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
 
 - You are live in production or have already deployed your production environment
-- DSE will perform the data upgrade in one Tier 2 or higher sandbox environment. This is used as a control - to perform the identical upgrade process in this sandbox as will be performed in production.
+- DSE will perform the data upgrade in one Tier 2 or higher sandbox UAT environment. This is used as a control - to perform the identical upgrade process in this sandbox as will be performed in production.
 - DSE will perform the data upgrade in the production environment
 
 To upgrade any additional Tier 2 or higher sandbox environments: you do not need to upgrade these. Instead, delete them, redeploy, and then make a database refresh request to copy a database from a Tier 2 or higher environment that hase already been upgraded. Alternatively you can upgrade them manually by following [Process for Upgrading a Sandbox Environment](upgrade-sandbox-environment.md)
@@ -147,19 +147,24 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 #### Use LCS to submit an upgrade request to DSE
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
-2. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
+
+![Upgrade request2](./media/scheduleenvironmentupgrade.PNG)
+
+2. Select the taget version you are upgrading to, and the preferred downtime window.
+3. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
 
    If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
 
-3. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
-4. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process. 
+4. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
+5. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process.
+
+  Use the Customize solution assets tab to select the required Application deployable packages (These are deployable package containing your custom code and any required X++ hotfixes).
+![Upgrade request2](./media/selectsolutionassets.PNG)
 
  > [!IMPORTANT]
  > - If you do not select your application deployable packages in the service request, your service request may be rejected by DSE.
  > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. The issue that caused the failure can then be resolved, and the upgrade can be rescheduled at a new time.
  > - A minimum 16 hour downtime is required if you are using Retail features, because additional upgrade steps are needed.
-
- ![Upgrade request](./media/Upgrade-Request-2.png)
 
 #### Validate your sandbox environment
 - The updated environment will have the same URL, same environment name, and same machine names as the former environment.
