@@ -40,10 +40,10 @@ The Prospect to cash solution provides direct synchronization across Microsoft D
 -   [Maintain products in Finance and Operations and syIn the earlier versions, the Prospect to cash solution provides the non-direct synchronization via the Common data service (CDS) in the following areas:nc them directly to Sales](products-template-mapping-direct.md)
 -   [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 -   [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
--   [Create sales orders in Finance and Operations and sync them directly to Sales](sales-order-template-mapping-direct.md)
--  [Synchronize sales order headers and lines directly between Sales and Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
+-   [Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct.md)
+-   [Synchronize sales order headers and lines directly between Sales and Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
 -   [Synchronize sales orders directly between Sales and Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
--   [Create sales invoices in Finance and Operations and sync them directly to Sales](sales-invoice-template-mapping-direct.md)
+-   [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
 
 In the earlier versions, the Prospect to cash solution provides the non-direct synchronization in the following areas:
 
