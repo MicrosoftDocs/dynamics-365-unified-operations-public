@@ -50,6 +50,7 @@
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
+      "titleSuffix": "Fin & Ops EE", 
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
