@@ -281,15 +281,17 @@ This section walks you through the following business processes using the [EFR](
 2. Create a sales order. For more information, see [Create a sales order](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
 3. On fast tab Price and discount, choose Method of payment which is set up as a cash register method of payment. Choose Terms of payment with cash on delivery settings in the **Payment field**.
 4. Click **Invoice** > **Invoice**.
-5. In the dialog Posting invoice, in the fast tab Parameters, activate the check-box Print receipt for printing a cash receipt after the invoice is posted.
-6. On the fast tab Cash register, review Location, Terminal, Cash register and Operator code. Terminal code is pre-defaulted from the "Default cash register terminal" field in the Cash register operators form. Change Terminal code if the cash payment is received in a different cash register terminal.
+5. Expand the **Parameters** FastTab and select the **Print receipt** check box to print a cash receipt after the invoice is posted.
+6. On the **Cash register** FastTab, review and modify the following information if necessary: Location, Terminal, Cash register and Operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator.
 
 ### Register customer payment from Customer payment journal and print cash receipt
 
 1. Go to Customer payment journal at **Accounts receivables** > **Journals** > **Payments** > **Payment journal** (or General journal at **General ledger** > **Journals** > **General journal**).
-2. Create the journal lines with a customer cash payment in the standard way. 
-3. On tab Payment, choose Method of payment which is set up as a cash register method of payment. Activate the check box **Prepayment journal voucher** if this is a prepayment. 
-4. On tab **Payment**, review Location, Terminal, Cash register and Operator code. Terminal code is pre-defaulted from the **Default cash register terminal** field in the Cash register operators form. Change Terminal code if the cash payment is received in a different cash register terminal. Click **Post** > **Post**. Click **Print** > **Cash receipt** to print a receipt with fiscal codes.
+2. Create the journal lines with a customer cash payment. 
+3. On the **Payment** tab, select a method of payment that is set up as a cash register method of payment. Select the **Prepayment journal voucher** check box if this is a prepayment. 
+4. On tab **Payment**, review and modify the following information if necessary: Location, Terminal, Cash register and Operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator. 
+5. Click **Post** > **Post**. 
+6. Click **Print** > **Cash receipt** to print a receipt with fiscal codes.
 
 ### Register customer payment from Slip journal and print cash order with cash receipt information (Czech Republic only)
 
@@ -301,16 +303,22 @@ This section walks you through the following business processes using the [EFR](
 6. Click **Post** > **Post**.  
 7. Click **Print** > **Cash order** to print a cash order that includes fiscal codes.
 
-### Cancel payment
+### Cancel a payment
 
-If a payment which is being cancelled, has been registered in the cash register with a cash receipt number, the cancel payment will create a new cash receipt number with a negative amount which will also be registered in the same cash register. The payment cancellation cash receipt is presenting fully the same amounts as in an initial receipt but a negative sign.
-Go to Customer transactions form. Place cursor on a payment transaction and click **Reverse** > **Cancel payment**.
-In the dialog Cancel payment, fill necessary information and review values in group of fields Cash register. Click **OK**.
-Place cursor on the new payment cancellation transaction. Click button **Print** > **Cash receipt** to print a cash receipt with fiscal codes.
+If the payment to be cancelled has been registered in the cash register with a cash receipt number, then a new cash receipt number with a negative amount will be registered in the same cash register when you cancel the payment. The payment cancellation cash receipt will include the same amounts as the initial receipt except with a negative sign.
+
+1. Go to the **Customer transactions** page.
+	1. Go to **Accounts receivable** > **Customers** > **All Customers**. 
+	2. Select a customer.
+	3. On the Action Pane, click **Customer** > **Transactions**. 
+2. Select the payment transaction to reverse.
+3. Click **Reverse** > **Cancel payment**.
+3. Enter the necessary information and then click **OK** to create the payment cancellation transaction and return to the **Customer transactions** page. 
+4. Select the newly created payment cancellation transaction and then click **Print** > **Cash receipt** to print a cash receipt that includes fiscal codes.
 
 ### Review Cash register fiscal transactions. Resend transaction to cash register.
 
-You can review the registered cash payments, and also reprint Cash receipt original and copy at Accounts receivable > Inquires > Cash register fiscal transactions.
+You can review the registered cash payments, and you can also reprint the original copy of the Cash receipt original and copy at **Accounts receivable** > **Inquires** > **Cash register fiscal transactions**.
 
 If cash payment wasn't successfully registered for any infrastructural reason (not related with exception scenarios described in the law which should be correctly handled on Fiscal service side), a user will get respective an error message after a posting of cash payment. The cash register transaction in status "Created" will be available in the Cash register fiscal transactions form. User must fix infrastructural issues and manually resend the created cash transactions to the cash register. Otherwise, user is not able to print the cash receipt with fiscal codes. Correctly, the registered transaction gets status "Registered".
 Fields description in the form Cash register payment transactions:
