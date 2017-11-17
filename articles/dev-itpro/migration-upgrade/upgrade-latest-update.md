@@ -127,7 +127,9 @@ Follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations da
 To execute the data upgrade process, follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 > [!IMPORTANT]
-> Upgrading data on a development environment is a required step, completion of this step helps reduce the risk of extended downtime and upgrade errors during the upgrade process of sandbox UAT and production environments later
+
+> Upgrading data on a development environment is a required step, completion of this step helps reduce the risk of extended downtime and upgrade errors during the upgrade process of sandbox UAT and production environments later.
+
 > There are several application hotfixes which may be required before you can upgrade data. Before you redeploy your existing  development environment, check whether these hotfixes are needed, and install and check them into VSTS. This step can only be performed on the old version of your development environment. Hotfixes required in different situations are listed here: [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
 ### Upgrade your sandbox environment
