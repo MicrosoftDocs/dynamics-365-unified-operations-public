@@ -62,7 +62,7 @@ To view available updates:
    
 ## Download Binary updates
 
-1. Click **All X++ update** tile to view the combined list of application and platform binary updates, or **Platform binary updates** tile for platform only binary updates. 
+1. Click **All binary update** tile to view the combined list of application and platform binary updates, or **Platform binary updates** tile for platform only binary updates. 
 
    ![Binary tiles](./media/Binarytiles.png)
 
@@ -74,7 +74,7 @@ To view available updates:
 
 ![Review and Save updates](./media/ReviewBinaryPackage.png)
 
-4. From the **Save Package to Asset Library**, enter **Name** and **Description**, and clikc **Save Package**.
+4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save Package**.
 
    ![Save package to asset library](./media/SaveBinarytoAssetLibrary.png)
 
