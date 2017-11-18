@@ -99,7 +99,7 @@ Regardless of whether you're a live customer or you're still in the implementati
     -   Depending on your project type, these are the other options to deploy a developer VM:
         -   Download a Dev VHD.
         -   If you're running in your own Microsoft Azure subscription, deploy a new developer topology.
-    -   If you want to keep your development data from your old development environment then create a database backup and retain the BAK file. When you have completed code upgrade, you can then restore the retained database backup to your new development environment and perform a data upgrade by following the steps in [Upgrade data in develop, demo or sandbox environments](upgrade-data-to-latest-update.md)
+    -   If you want to keep your development data from your old development environment then create a database backup and retain the BAK file. When you have completed code upgrade, you can then restore the retained database backup to your new development environment and perform a data upgrade by following the steps in [Upgrade data in development, demo or sandbox environments](upgrade-data-to-latest-update.md)
 
 3.  Complete the code migration steps.
     1.  Connect your development virtual machine (VM) to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
@@ -134,8 +134,9 @@ To execute the data upgrade process, follow the steps in [Process for data upgra
  
 ### Upgrade your sandbox UAT environment
 
-You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you, when the following conditions are met:
+You must make a request via LCS for the Microsoft Servicing Engineering (DSE) Team to run this process for you when the following conditions are met:
 
+- You have completed the code upgrade process and tested the data upgrade on your development environment.
 - You are live in production or have already deployed your production environment
 - DSE will perform the data upgrade in one Tier 2 or higher sandbox UAT environment. This is used as a control - to perform the identical upgrade process in this sandbox as will be performed in production.
 - DSE will perform the data upgrade in the production environment
@@ -156,9 +157,7 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
    If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
 
 4. You must allow at least 8 hours between the downtime start and downtime end times. This time is required to perform the swap in of the new environment and the data upgrade process.
-5. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application deployable packages during your upgrade request. Select the deployable packages that contain your upgraded custom code and the X++ hotfixes that were created on your development or build environment during the code upgrade process.
-
-  Use the Customize solution assets tab to select the required Application deployable packages (These are deployable package containing your custom code and any required X++ hotfixes).
+5. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select Application (AOT) deployable packages during your upgrade request. Select the AOT deployable packages that contain your upgraded custom code and the required X++ hotfixes that were created on your development or build environment. Use the Customize solution assets tab as shown in the image below.
 ![Upgrade request2](./media/selectsolutionassets.PNG)
 
  > [!IMPORTANT]
