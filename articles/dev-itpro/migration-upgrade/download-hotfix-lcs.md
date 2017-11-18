@@ -74,7 +74,7 @@ To view available updates:
 
 ![Review and Save updates](./media/ReviewBinaryPackage.png)
 
-4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save Package**.
+4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.
 
    ![Save package to asset library](./media/SaveBinarytoAssetLibrary.png)
 
