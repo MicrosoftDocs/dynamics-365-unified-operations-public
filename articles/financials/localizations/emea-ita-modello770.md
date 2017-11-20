@@ -44,7 +44,7 @@ Complete the following tasks before you create a Model 770 report:
 - Set up Italian sales tax books. For more information, see [Italian sales tax books](emea-ita-fiscal-books.md).
 
 ## Set up address information
-Use the **Address setup** page to set up the country/region code, state and region codes, and county and municipality codes for a contractor or self-employed vendor who should be included on a Model 770 report. You must set up address information for all contractors and self-employed vendors for whom you withhold taxes from payments. For information about the address codes, see the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](www.agenziaentrate.gov.it) website.
+Use the **Address setup** page to set up the country/region code, state and region codes, and county and municipality codes for a contractor or self-employed vendor who should be included on a Model 770 report. You must set up address information for all contractors and self-employed vendors for whom you withhold taxes from payments. For information about the address codes, see the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](http://www.agenziaentrate.gov.it) website.
 
 1. Select **Organization administration** > **Addresses** > **Address setup**.
 2. Select **Country/region**, and then, in the **Country/region** field, enter the two-letter International Organization for Standardization (ISO) country/region code for Italy.
@@ -89,7 +89,7 @@ Download the *actual versions* of the following Electronic reporting (ER) config
 For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
 
 ## Create and export the Model 770 report
-The Model 770 report exports the information to an ASCII file that will be submitted to the tax authorities. The name of the ASCII file must be \[company fiscal code\] 77S\[*YY*\].77s, where **YY** is the last two digits of the filing year. For more information about how to complete and file the Model 770 report, see the [Italian Revenue Agency](www.agenziaentrate.gov.it) website.
+The Model 770 report exports the information to an ASCII file that will be submitted to the tax authorities. The name of the ASCII file must be \[company fiscal code\] 77S\[*YY*\].77s, where **YY** is the last two digits of the filing year. For more information about how to complete and file the Model 770 report, see the [Italian Revenue Agency](http://www.agenziaentrate.gov.it) website.
 
 1. Select **Tax** > **Inquiries and reports** > **Withholding tax reports** > **Withholding tax - Model 770**.
 2. Create a new report. The report is numbered according to the number sequence that you set up for the **Model ID** reference on the **General ledger parameters** page.
@@ -121,7 +121,7 @@ The Model 770 report exports the information to an ASCII file that will be submi
 10. In the **Editorial comments** field, select the section that the company must file the withheld tax for.
 
     > [!NOTE] 
-    > The default section is Section II. Select a section according to the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](www.agenziaentrate.gov.it) website.
+    > The default section is Section II. Select a section according to the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](http://www.agenziaentrate.gov.it) website.
 
 11. In the **Type of declarer** field, specify the type of declarer who sends the tax declaration to the tax authority:
 
@@ -145,5 +145,5 @@ The Model 770 report exports the information to an ASCII file that will be submi
 21. Select **Validate** to validate the data that you set up for vendors and the company.
 22. You can use the **Reset** button to reset the values on all the tabs.
 23. Select **Export**, and then, on the **Export** page, in the **File name** field, specify the name of the compressed file to download. This compressed file contains the Model 770 report as an ASCII file.
-24. Select the **Final export** check box to start the import process by bypassing the validation logic in the government import tool. You can also select this check box if you're working with a report that was previously submitted and rejected, but that you consider correct and complete per the available information that is published on the [Italian Revenue Agency](www.agenziaentrate.gov.it) website.
+24. Select the **Final export** check box to start the import process by bypassing the validation logic in the government import tool. You can also select this check box if you're working with a report that was previously submitted and rejected, but that you consider correct and complete per the available information that is published on the [Italian Revenue Agency](http://www.agenziaentrate.gov.it) website.
 25. Select **OK** to export the Model 770 report.
