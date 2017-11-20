@@ -64,9 +64,6 @@ Master scheduling plans typically involve the short term, which can be anywhere 
 ### What's new and in development
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
-### Inventory accounting 
-To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
-
 ### Manufacturing and supply chain management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the
 [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
