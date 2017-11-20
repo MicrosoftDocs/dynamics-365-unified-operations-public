@@ -3,9 +3,9 @@
 
 title: Process for upgrading a sandbox environment
 description: This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. 
-author: MargoC
+author: tariqbell
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
