@@ -34,93 +34,45 @@ ms.author: riluan
 
 The new Tax Engine (GTE) is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Operations. GTE is highly customizable and lets business users, functional consultants, or power users configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
 
-In this document, you will learn how to extend the configuration of Goods and Services Tax (GST) to cover your future business extension scenarios. Following two scenarios are used to explain the detailed extension process.
+In this topic, you will learn the GTE configuration extension process using the following example scenarios.
 
-Extend the GTE configuration for UTGST
-
-Apply tax rate of BCD for import order of goods from different countries/regions (Usage of Reference Model)
+-	Extend the GTE configuration for UTGST
+-	Apply tax rate of BCD for import order of goods from different countries/regions (Usage of Reference Model)
 
 ## Prerequisites
 
-
--	Make sure that Microsoft Dynamics 365 for Operations version 1611 has been deployed, and that the GST hotfix is installed. 
 -	Switch to the **INMF** company context.
 
 ## Copy the GST configuration
 
-
 1. On the computer that is running Dynamics 365 for Operations, create a folder for the GST configuration, such as **C:\\India GST Configurations**. 
-
 2. Save the GST configuration in the folder that you just created.
 
 ## Activate the tax configuration
 
-
-1. Go to **Organization administration** \> **Electronic reporting**.
-
-	![](media/24cc6ec2799c285acb79f9e5228a4a0b.png)
-
-2. Click **Electronic reporting parameters**.
-
-	![](media/4172aafcc859e3204d6487783345ea3e.png)
-
-3. On the **Attachments** tab, set the **Configurations** field to **File**.
-
-	![](media/a16f544dd975c14d108879de86bf52f6.png)
-
-4. Close the page.
-
-5. Click **Enable India GST**.
-
-	![](media/7f483a5559bd0ce555d664762af39c64.png)
-
-6. Set the **Enable GST** option to **Yes**, and then click **OK** in the message box.
-
-	![](media/3d9bf1e01410a555e27e05d69184a72b.png)
-
+1. Go to **Organization administration** > **Electronic reporting**.
+2. In the **Related links** list, click **Electronic reporting parameters**.
+3. Click **Attachments**
+4. In the **Configurations** field, select **File** and then close the page.
+5. In the **Related links** list, click **Enable India GST**.
+6. Select **Yes** on the **Enable GST** option, and then click **OK** in the message box.
 7. In the **Work directory** field, specify the folder where you saved the India GST configuration.
-
-	![](media/f99474d8d09dd8a36fd7f271ccf833d3.png)
-
 8. Click **OK**.
-
 9. Click **Import GST configurations** to import the configuration.
-
-	![](media/bb051139a01fac1cbd4adb82871eb9f0.png)
-
 10. Click **Import**.
-
-	![](media/d8ab60826d1e723aac53aa530fee1a07.png)
-
 11. Click **Yes**.
-
-	![](media/bccddac3a52bf7bec2e2a8be4bab9032.png)
-
 12. Click **Solutions**.
-
-	![](media/d7df57cff0cf106ec6eb14fc12fdfcef.png)
-
 13. Create a new solution, and enter the required information.
-
-	![](media/85eba6431cbd76f76f09c6f092f1723e.png)
-
 14. Click **Set active** to activate the new solution.
 
-	![](media/f51054065e9de4bda82ba0c47e557f91.png)
-
 ## Scenario 1: Extend the GTE configuration for UTGST
-
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
 
 -	Chandigarh
-
 -	Lakshadweep
-
 -	Daman and Diu
-
 -	Dadra and Nagar Haveli
-
 -	Andaman and Nicobar Islands
 
 However, SGST can also be applied in union territories such as New Delhi and Puducherry, which have their own legislatures and can be considered “states” per the GST process.
@@ -128,88 +80,58 @@ However, SGST can also be applied in union territories such as New Delhi and Pud
 For UTGST, the following combinations of taxes can be applied for any transaction:
 
 -	Supply of goods and services within a state (intrastate): CGST + SGST
-
 -	Supply of goods and services within union territories (intra-UT): CGST + UTGST
-
 -	Supply of goods and services across states or union territories (interstate/inter-UT): Integrated GST (IGST)
 
-The order of utilization for Input Tax Credit of UTGST is the same as it is for Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
+The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
-Following is the summary of the changes of the extension:
+To support the scenario, the following must be done:
 
-1.  Extend the taxable document so that it includes the     **IntraStateInUnionTerritory** flag.
-
+1.  Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
 2.  Change the applicability of State GST (SGST).
-
 3.  Add and configure UTGST.
-
 4.  Import the extended configuration, and deploy it to a specific company.
-
 5.  Change the **TaxableDocRowDataProviderExtensionLine** class in the Application Object Tree (AOT) of Microsoft Dynamics AX 2012 so that it sends the **IntraStateInUnionTerritory** flag to GTE.
 
 ### Task 1: Create extension configurations
 
-
 #### Task 1.1: Create a new taxable document that is derived from Taxable Document (India)
 
-1. Open the **Localization configurations** workspace.
-
-2. Click **Tax configurations**.
-
-3. Navigate to the **Taxable Document (India)** configuration, and then click **Create configuration**.
-
-	![](media/361306c4ceb367a3513a170a9db66e31.png)
-
-4. Select the **Derive from Taxable document model** option, and then enter a name and description for the derived taxable document.
-
-	![](media/458888b4088259f03a17aa20f4acf7a9.png)
+1. On the **Localization configurations** workspace (**Organization administration** > **Workspaces** > **Electronic reporting**), click **Tax configurations**.
+2. In the tree, find the **Taxable Document (India)** configuration, and then click **Create configuration**.
+3. Select the **Derive from Taxable document model** option, and then enter a name and description for the derived taxable document. For this example, enter the name **Taxable Document (India Contoso)**.
+4. Click **Create configuration**.
 
 #### Task 1.2: Create a new tax document that is derived from Tax (India GST)
 
-Navigate to the **Tax (India GST)** configuration, and then click **Create configuration**.
-
-![](media/59e381657dde6c6c406190ccc5fbcbea.png)
-
-Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document.
-
-![](media/48d518dbba407be1b90e7db0ca13af36.png)
+1. Navigate to the **Tax (India GST)** configuration, and then click **Create configuration**.
+2. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document.
+3. Click **Create configuration**.
 
 ### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
 
+1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
+2. Navigate to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
+3. Enter a name for the node, and select the item type:
+	-	**Name:** IntraStateInUnionTerritory
+	-	**Item type:** Enum
 
-Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+	![](media/4dbae44d81445d74cf3478a7b978c9f3.png)
 
-![](media/4f4b968b23228fcc6e60c8cdadd4f942.png)
+4. Click **Add**.
+5. Click **Switch item reference**.
 
-Navigate to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
+	![](media/990cd87a21bc3c3f6424a1d68b484f66.png)
 
-Enter a name for the node, and select the item type:
+6. Select **NoYes**, and then click **OK**.
+7. Save the configuration, and close the designer.
+8. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
 
-**Name:** IntraStateInUnionTerritory
+	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
 
-**Item type:** Enum
-
-![](media/4dbae44d81445d74cf3478a7b978c9f3.png)
-
-Click **Add**.
-
-Click **Switch item reference**.
-
-![](media/990cd87a21bc3c3f6424a1d68b484f66.png)
-
-Select **NoYes**, and then click **OK**.
-
-Save the configuration, and close the designer.
-
-In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-
-![](media/e6938db9fe6cd010cab8093177fa01f9.png)
-
-Enter a description such as **UTGST**, and then click **OK**.
-
-If there are any errors, open the designer, click **Validate**, and fix the errors.
-
-After the status is updated to **Complete**, the configuration is ready for deployment.
+9. Enter a description such as **UTGST**, and then click **OK**.
+10. If there are any errors, open the designer, click **Validate**, and fix the errors.
+11. After the status is updated to **Complete**, the configuration is ready for deployment.
 
 ### Task 3: Change the data model of Tax (India GST Contoso)
 
