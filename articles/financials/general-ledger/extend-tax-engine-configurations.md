@@ -14,11 +14,10 @@ ms.technology:
 # optional metadata
 
 #ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -116,18 +115,15 @@ To support the scenario, the following must be done:
 	-	**Name:** IntraStateInUnionTerritory
 	-	**Item type:** Enum
 
-	![](media/4dbae44d81445d74cf3478a7b978c9f3.png)
+	![](media/gte-create-node-tax-document.png)
 
 4. Click **Add**.
 5. On the **Node** FastTab, click **Switch item reference**.
-
-	![](media/990cd87a21bc3c3f6424a1d68b484f66.png)
-
 6. Select **NoYes** in the tree, and then click **OK**.
 7. Save the configuration, and close the designer.
 8. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
+	![](media/gte-change-configuration-status.png)
 
 9. Enter a description such as **UTGST**, and then click **OK**.
 10. If there are any errors, open the designer, click **Validate**, and fix the errors.
@@ -138,7 +134,7 @@ To support the scenario, the following must be done:
 1. Navigate to the **Tax (India GST Contoso)** configuration that you created in task 1.2, and then click **Designer**.
 2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
 
-![](media/f48cdba98904d5eca6e9456caa29a5fd.png)
+	![](media/gte-tax-document-designer.png)
 
 3. Click **Save** to save the configuration.
 
