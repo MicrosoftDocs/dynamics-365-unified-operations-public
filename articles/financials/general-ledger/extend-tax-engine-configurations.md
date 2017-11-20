@@ -105,13 +105,13 @@ To support the scenario, the following must be done:
 #### Task 1.2: Create a new tax document that is derived from Tax (India GST)
 
 1. Navigate to the **Tax (India GST)** configuration, and then click **Create configuration**.
-2. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document.
+2. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document. For this example, enter the name **Tax (India GST Contoso)**.
 3. Click **Create configuration**.
 
 ### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
 
 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
-2. Navigate to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
+2. In the tree, go to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
 3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
 	-	**Item type:** Enum
@@ -119,13 +119,13 @@ To support the scenario, the following must be done:
 	![](media/4dbae44d81445d74cf3478a7b978c9f3.png)
 
 4. Click **Add**.
-5. Click **Switch item reference**.
+5. On the **Node** FastTab, click **Switch item reference**.
 
 	![](media/990cd87a21bc3c3f6424a1d68b484f66.png)
 
-6. Select **NoYes**, and then click **OK**.
+6. Select **NoYes** in the tree, and then click **OK**.
 7. Save the configuration, and close the designer.
-8. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
+8. In the **Configurations** workspace, click **Change status** > **Complete**.
 
 	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
 
@@ -135,211 +135,168 @@ To support the scenario, the following must be done:
 
 ### Task 3: Change the data model of Tax (India GST Contoso)
 
-
-Navigate to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
-
-![](media/c3fcf88a39b927857071c8e7deaf78e2.png)
-
-Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
+1. Navigate to the **Tax (India GST Contoso)** configuration that you created in task 1.2, and then click **Designer**.
+2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
 
 ![](media/f48cdba98904d5eca6e9456caa29a5fd.png)
 
-Click **Save** to save the configuration.
+3. Click **Save** to save the configuration.
 
 ### Task 4: Change the applicability of SGST
 
-
-Navigate to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
-
-![](media/169e717e970e6247a6f6c04577855162.png)
-
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **SGST**, and then click the **Lookup** tab.
-
-Click **Columns**.
-
-Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
+1. Navigate to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
+2. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **SGST**, and then click the **Lookup** tab.
+3. Click **Columns**.
+4. Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
 
 ![](media/5c066d2fd6d41e91dd80c36bcff59de9.png)
 
-For the **IntraStateInUnionTerritory** column, select **No**.
+5. For the **IntraStateInUnionTerritory** column, select **No**.
 
 ![](media/d76a95b661005ae734b8de4924ae7c94.png)
 
-Click **Save** to save the configuration.
+6. Click **Save** to save the configuration.
 
 ### Task 5: Configure the UTGST tax component
 
-
 #### Task 5.1: Add the UTGST tax component
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST**, click **Add**, and then select **Tax component**.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST**, click **Add**, and then select **Tax component**.
 
-![](media/385ad35f9f554728e9f144fa1af53ef2.png)
+	![](media/385ad35f9f554728e9f144fa1af53ef2.png)
 
-Enter a name and description for the UTGST tax component, and then click **OK**.
+2. Enter a name and description for the UTGST tax component, and then click **OK**.
 
 #### Task 5.2: Configure tax measures for the UTGST tax component
 
-Expand the tax document tree, and click the UTGST tax component to create a measure for.
+3. Expand the tax document tree, and click the UTGST tax component to create a measure for.
+4.Click **Add**, and then select **Tax measure**.
 
-Click **Add**, and then select **Tax measure**.
+	![](media/331577a480dccf48b8734e8cb82745d1.png)
 
-![](media/331577a480dccf48b8734e8cb82745d1.png)
+	All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
 
-All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
-
-![](media/fbe4c4aae43db743817c6ac337690944.png)
+	![](media/fbe4c4aae43db743817c6ac337690944.png)
 
 #### Task 5.3 Configure rate/percentage lookups
 
-Expand the **UTGST** tax component node.
+1. Expand the **UTGST** tax component node.
+2. Select the measure of the **Rate/Percentage** type to create a rate/percentage lookup.
+3. Click **Columns** to see a list of the attributes that are relevant to the tax rate/percentage value.
+4. Select the same attributes that SGST uses.
 
-Select the measure of the **Rate/Percentage** type to create a rate/percentage lookup.
+	> [!Note]
+	> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
 
-Click **Columns** to see a list of the attributes that are relevant to the tax rate/percentage value.
-
-Select the same attributes that SGST uses.
-
-> [!Note]
-> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
-
-Save the tax document.
+5. Save the tax document.
 
 #### Task 5.4: Configure properties
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Properties** tab.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Properties** tab.
+2. Click **Edit** (the pencil symbol) next to **Condition**.
+3. Enter the same condition that SGST uses.
 
-Click **Edit** (the pencil symbol) next to **Condition**.
+	![](media/da55b376d88489eec725d5c83d7e702e.png)
 
-Enter the same condition that SGST uses.
-
-![](media/da55b376d88489eec725d5c83d7e702e.png)
-
-Save the tax document.
+4. Save the tax document.
 
 #### Task 5.5: Configure tax applicability lookups
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Lookup** tab.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Lookup** tab.
+2. Click **Columns**.
+3. Select **Import Order** and **IntraStateInUnionTerritory** as lookup columns.
+4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.
 
-Click **Columns**.
-
-Select **Import Order** and **IntraStateInUnionTerritory** as lookup columns.
-
-Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.
-
-![](media/e6a2d52f43c9b19ee27451d209e26daa.png)
-
-Save the tax document.
+	![](media/e6a2d52f43c9b19ee27451d209e26daa.png)
+	
+5. Save the tax document.
 
 #### Task 5.6 Configure formulas
 
 Formulas can be configured at either the group node level (line, tax component, or tax type) or the measure node level. However, we recommend that you always configure tax calculation formulas at the group node level. Tax amount distribution formulas can be configured at either the group node level or the measure node level.
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Formula** tab.
-
-Click **Add Tax formula**.
-
-On the **Details** FastTab, select **Formula** as the category, and then click **Edit** (the pencil symbol) to enter the formula and condition.
-
-Repeat steps 2 through 3 until the UTGST tax component has all the same formulas as SGST.
-
-Save the tax document.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Formula** tab.
+2. Click **Add Tax formula**.
+3. On the **Details** FastTab, select **Formula** as the category, and then click **Edit** (the pencil symbol) to enter the formula and condition.
+4. Repeat steps 2 through 3 until the UTGST tax component has all the same formulas as SGST.
+5. Save the tax document.
 
 ### Task 5.7 Configure a posting profile
 
 Only nodes of the **Tax Component** type support a posting profile definition.
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Postings** tab.
-
-Click **Add Posting Profile** to create a new posting profile definition.
-
-On the **Details** FastTab, enter the accounting treatment for the various tax measures that you defined in the previous task, and provide the names of the Debit and Credit accounting subledgers.
-
-Click **Edit** (the pencil symbol) to enter a condition.
-
-Optional: Enter a description for the posting profile.
-
-Repeat steps 2 through 5 until the UTGST tax component has all the same posting profiles as SGST.
-
-Save the tax document.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Postings** tab.
+2. Click **Add Posting Profile** to create a new posting profile definition.
+3. On the **Details** FastTab, enter the accounting treatment for the various tax measures that you defined in the previous task, and provide the names of the Debit and Credit accounting subledgers.
+4. Click **Edit** (the pencil symbol) to enter a condition.
+5. Optional: Enter a description for the posting profile.
+6. Repeat steps 2 through 5 until the UTGST tax component has all the same posting profiles as SGST.
+7. Save the tax document.
 
 #### Task 5.8 Configure accounting lookups
 
 Only nodes of the **Tax Type** and **Tax Component** types support an accounting lookup definition.
 
-Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Accounting** tab.
+1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Accounting** tab.
+2. Click **Columns** to see a list of the attributes that can be used to determine the main accounts that will be used for accounting taxes.
+3. Select the same attributes that SGST uses.
 
-Click **Columns** to see a list of the attributes that can be used to determine the main accounts that will be used for accounting taxes.
+	> [!NOTE]
+	> Don’t click **Add**. Values that you enter have no effect on the actual tax main accounts decision table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
 
-Select the same attributes that SGST uses.
-
-> [!NOTE]
-> Don’t click **Add**. Values that you enter have no effect on the actual tax main accounts decision table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
-
-Save the tax document.
+4. Save the tax document.
 
 #### Task 5.9 Configure credit pools
 
 Only nodes of the **Tax Component** type support a credit pool definition.
 
-Expand the **UTGST** tax component node, and then click the **Credit Pool** tab.
+1. Expand the **UTGST** tax component node, and then click the **Credit Pool** tab.
+2. Click **Columns** to see a list of the attributes that are relevant to the tax settlement of this component. Typically, the selected column is the appropriate tax registration number, like **GST Registration Number**.
+3. Select the same attributes that SGST uses.
 
-Click **Columns** to see a list of the attributes that are relevant to the tax settlement of this component. Typically, the selected column is the appropriate tax registration number, like **GST Registration Number**.
+	> [!NOTE]
+	> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
 
-Select the same attributes that SGST uses.
-
-> [!NOTE]
-> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** \> **Tax configuration** \> **Tax setup**.
-
-Save the tax document.
+4. Save the tax document.
 
 ### Task 6: Modify the formulas of lines so that they reflect UTGST
 
-
-Navigate to **Tax document** \> **Header** \> **Lines**, and then click the **Formulas** tab.
-
-Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST.
+1. Navigate to **Tax document** \> **Header** \> **Lines**, and then click the **Formulas** tab.
+2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST.
 
 >   For example, change the **Tax amount Inclusive** formula as shown here.
 
-![](media/a097874b0d1404abe674d50470e89e73.png)
+	![](media/a097874b0d1404abe674d50470e89e73.png)
 
-Save the tax document.
-
-Close the designer.
+3. Save the tax document.
+4. Close the designer.
 
 ### Task 7: Complete the tax document configuration
 
+1. Save the configuration, and close the designer.
+2. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
 
-Save the configuration, and close the designer.
+	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
 
-In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-
-![](media/e6938db9fe6cd010cab8093177fa01f9.png)
-
-Enter a description such as **UTGST**, and then click **OK**.
-
-If there are any errors, open the designer, click **Validate**, and fix the errors.
-
-After the status is updated to **Complete**, the configuration is ready for deployment.
+3. Enter a description such as **UTGST**, and then click **OK**.
+4. If there are any errors, open the designer, click **Validate**, and fix the errors.
+5. After the status is updated to **Complete**, the configuration is ready for deployment.
 
 ### Task 8: Download the tax document configurations
 
+1. In the **Versions** grid, select the **Tax (India GST Contoso)** configuration.
+2. Click **Change status**, and then select **Share**.
 
-In the **Versions** grid, select the **Tax (India GST Contoso)** configuration.
+	![](media/f5ab08e0945f4bbe88896979ad394955.png)
 
-Click **Change status**, and then select **Share**.
-
-![](media/f5ab08e0945f4bbe88896979ad394955.png)
-
-Click **Yes**.
+3. Click **Yes**.
 
 ![](media/bb6db0ffabaacbae2afb1f76708377ea.png)
 
-Repeat steps 1 through step 3 for the **Taxable Document (India Contoso)** configuration.
+4. Repeat steps 1 through step 3 for the **Taxable Document (India Contoso)** configuration.
 
-> [!NOTE]
-> The configuration will be saved in the C:\\India GST Configurations folder that you created earlier. Currently, all configurations are in that folder. You must then copy the folder to the Microsoft Dynamics AX environment where the configuration must be applied.
+	> [!NOTE]
+	> The configuration will be saved in the C:\\India GST Configurations folder that you created earlier. Currently, all configurations are in that folder. You must then copy the folder to the Microsoft Dynamics AX environment where the configuration must be applied.
 
 ### Task 9: Import the configuration and deploy it to a specific company
 
@@ -523,87 +480,72 @@ partyAddress.State);
 \_lineObj.setFieldValue(\#IsIntraStateInUnionTerritory,
 TaxEngineEnumToEREnumUtil::noYes(this.IsIntraStateWithUnionTerritory(\_lineObj)));
 
-Scenario 2: Usage of Reference Model
-====================================
+## Scenario 2: Usage of Reference Model
 
-Per the Microsoft provided configuration, the tax rate of BCD is determined by
-Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export
-Custom Tariff Code. We will use this scenario to explain how to use reference
-model to support the scenario below:
+Per the Microsoft provided configuration, the tax rate of BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use reference model to support the scenario below:
 
-Apply the different tax rate of BCD for import order of goods from difference
-countries/regions.
+Apply the different tax rate of BCD for import order of goods from difference countries/regions.
 
-Task 1: Create extension configuration
---------------------------------------
+### Task 1: Create extension configuration
 
-Do Scenario 1-\>Task 1.
+1. Do Scenario 1-\>Task 1.
 
-Task 2: Add Reference model for Country/Region of Origin
---------------------------------------------------------
+### Task 2: Add Reference model for Country/Region of Origin
 
 1.  Navigate to the **Taxable Document (India Contoso)** configuration, and then
     click **Designer**.
 
-![](media/4f4b968b23228fcc6e60c8cdadd4f942.png)
+	![](media/4f4b968b23228fcc6e60c8cdadd4f942.png)
 
-1.  Click the **three dots** button, then click **Reference model** to change
+2. Click the **three dots** button, then click **Reference model** to change
     the view to Reference model, so you can view all the available reference
     models.
 
     ![](media/123185bb08446e4b98283003e4115ebd.png)
 
-2.  Click **New** to add a new reference model.
+3.  Click **New** to add a new reference model.
 
-    **Name:** Country of Origin
+    -	**Name:** Country of Origin
+    -	**Node type:** Model root
 
-    **Node type:** Model root
+	![](media/7d36ec1c370b69d7d7e9d40f7a4e34be.png)
 
-![](media/7d36ec1c370b69d7d7e9d40f7a4e34be.png)
-
-1.  Click **Add**.
-
-2.  Highlight **Country of Origin**, click **New** to add new reference model.
+4.  Click **Add**.
+5.  Highlight **Country of Origin**, click **New** to add new reference model.
 
     -   **Name:** Countries of Origin
-
     -   **Node type:** Child of an active node
-
     -   **Item type:** Record list
 
-![](media/f28397d3358acb669f1694a3823389fa.png)
+	![](media/f28397d3358acb669f1694a3823389fa.png)
 
-1.  Click **Add**.
+6.  Click **Add**.
 
-2.  Highlight **Countries of Origin**, click **New** to add new reference model.
+7.  Highlight **Countries of Origin**, click **New** to add new reference model.
 
     -   **Name:** Country of Origin
-
     -   **Node type:** Child of an active node
-
     -   **Item type:** String
 
         ![](media/c16b0a4c1987f51baef302d6d5fe47d8.png)
 
-3.  Click **Add**.
+8.  Click **Add**.
+9.  Highlight **Country of Origin**, click **Natural key**.
 
-4.  Highlight **Country of Origin**, click **Natural key**.
+	![](media/091afd9b2ee1ca4f4f2695f53dd4775c.png)
 
-![](media/091afd9b2ee1ca4f4f2695f53dd4775c.png)
-
-1.  Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the
+10.  Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the
     **Natural key**.
 
     ![](media/535f2d380d45557c6ef2b5a34d9cd6b0.png)
 
-2.  If there are any errors, open the designer, click **Validate**, and fix the
+11.  If there are any errors, open the designer, click **Validate**, and fix the
     errors.
 
 After the status is updated to **Complete**, the configuration is ready for
 deployment.
 
-Task 3: Link the reference model to field in taxable document
--------------------------------------------------------------
+### Task 3: Link the reference model to field in taxable document
 
 1.  Click the **three dots** button, then click **Taxable document** to change
     the view to Taxable document.
@@ -616,77 +558,64 @@ Task 3: Link the reference model to field in taxable document
 
 3.  Click **OK** button.
 
-![](media/baac5f34304f728a09e5641222721cab.png)
+	![](media/baac5f34304f728a09e5641222721cab.png)
 
-1.  Save the configuration, and close the designer.
-
-2.  In the **Configurations** workspace, click **Change status**, and then
+4.  Save the configuration, and close the designer.
+5.  In the **Configurations** workspace, click **Change status**, and then
     select **Complete**.
 
-![](media/e6938db9fe6cd010cab8093177fa01f9.png)
+	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
 
-1.  Enter a description such as **Add reference model for Country of Origin**,
+6.  Enter a description such as **Add reference model for Country of Origin**,
     and then click **OK**.
-
-2.  If there are any errors, open the designer, click **Validate**, and fix the
+7.  If there are any errors, open the designer, click **Validate**, and fix the
     errors.
 
 After the status is updated to **Complete**, the configuration is ready for
 deployment.
 
-Task 4: Change the lookup of BCD tax rate
------------------------------------------
+### Task 4: Change the lookup of BCD tax rate
 
 1.  Navigate to the **Tax (India GST Contoso)** configuration, and then click
     **Designer**.
 
-![](media/c3fcf88a39b927857071c8e7deaf78e2.png)
+	![](media/c3fcf88a39b927857071c8e7deaf78e2.png)
 
-1.  Change the data model of **Tax (India GST Contoso)** to the updated version
+2.  Change the data model of **Tax (India GST Contoso)** to the updated version
     of the extended taxable document follow the steps described in **Scenario
     1-\>Task 3**.
-
-2.  Navigate to **Tax document** \> **Header** \> **Lines** \> **Custom Duty**
+3.  Navigate to **Tax document** \> **Header** \> **Lines** \> **Custom Duty**
     \> **BCD** \> **Rate**, and then click the **Lookup** tab.
-
-3.  Click **Columns**.
-
-4.  Select **Country/Region of Origin** as the lookup column, and then click the
+4.  Click **Columns**.
+5.  Select **Country/Region of Origin** as the lookup column, and then click the
     right arrow button.
 
-![](media/c9f578f35ad27e70ef0c050f8b989fa8.png)
+	![](media/c9f578f35ad27e70ef0c050f8b989fa8.png)
 
-1.  Click **Save** to save the configuration.
+6.  Click **Save** to save the configuration.
 
-Task 5: Complete the tax document configuration
------------------------------------------------
-
+### Task 5: Complete the tax document configuration
 Please follow the same steps described in **Scenario 1-\>Task 7**.
 
-Task 6: Download the tax document configurations
-------------------------------------------------
-
+### Task 6: Download the tax document configurations
 Please follow the same steps described in **Scenario 1-\>Task 8**.
 
-Task 7: Import the configuration and deploy it to a specific Company
---------------------------------------------------------------------
-
+### Task 7: Import the configuration and deploy it to a specific Company
 Please follow the same steps described in **Scenario 1-\>Task 9**.
 
-Task 8: Add tax runtime reference model mapping in AOT 
--------------------------------------------------------
+### Task 8: Add tax runtime reference model mapping in AOT 
 
 1.  Go to **Organization administration** \> **Addresses** \> **Address setup**
     \> **Country/Region**. Right-click the **Country/Region** column, and then
     click **Personalize**. You will see that the system name for the column is
     **LogisticsAddressCountryRegion.CountryRegionId**.
 
-![](media/c7abea53c4278bb0e5a96ca9462565e2.png)
+	![](media/c7abea53c4278bb0e5a96ca9462565e2.png)
 
-1.  Add Reference model name and Reference field name to
+2.  Add Reference model name and Reference field name to
     **TaxRuntimeReferenceModel**
 
-In the AOT, open **Macros** \> **TaxRuntimeReferenceModel**. Add two new macros
+3. In the AOT, open **Macros** \> **TaxRuntimeReferenceModel**. Add two new macros
 for Reference model name and Reference field name.
 
 // Reference model name
@@ -733,7 +662,7 @@ for Reference model name and Reference field name.
 
 \#define.CountryOfRegion('Country of Origin')
 
-1.  Add a TaxRuntimeReferenceModelMapping class for Country of Origin.
+4.  Add a TaxRuntimeReferenceModelMapping class for Country of Origin.
 
 /// \<summary\>
 
