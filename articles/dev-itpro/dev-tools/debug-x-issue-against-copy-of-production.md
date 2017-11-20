@@ -55,10 +55,10 @@ Before you begin to configure X++ debugging in a production environment, note th
 
 -   You can't debug directly against the production environment, because debugging might cause data corruption. However, developers can manipulate values at run time. Alternatively, in their own instance, developers can make a code change that changes data.
 
-[!NOTE] The developer environment that is used for debugging must exist in the same Lifecycle Services project as the sandbox environment. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production Azure SQL Database instances. This restriction allows only servers that are in those environments to connect to the databases. To enable debugging, a firewall exception is added to allow a developer environment to connect to the sandbox database.
-
--   A one-time manual change to the developer environment is required, to allow the IP address of the environment to connect to the sandbox database. Submit a request to the Microsoft Service Engineering Team (DSE) to allow the IP address.
--   We recommend that you not use a build environment for debugging. Otherwise, there is a risk that the developer’s activities on the computer might break the automated build process.
+> [!NOTE] 
+> The developer environment that is used for debugging must exist in the same Lifecycle Services project as the sandbox environment. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production Azure SQL Database instances. This restriction allows only servers that are in those environments to connect to the databases. To enable debugging, a firewall exception is added to allow a developer environment to connect to the sandbox database.
+> -   A one-time manual change to the developer environment is required, to allow the IP address of the environment to connect to the sandbox database. Submit a request to the Microsoft Service Engineering Team (DSE) to allow the IP address.
+> -   We recommend that you not use a build environment for debugging. Otherwise, there is a risk that the developer’s activities on the computer might break the automated build process.
 
 ## Solution details
 When an issue occurs in the production environment, the system administrator can sign in to LCS and request that a database copy be added to a sandbox environment. While the database copy is running, the system administrator can notify the developer of the issue. The developer can then sync to the correct build of the code to match the production environment.
