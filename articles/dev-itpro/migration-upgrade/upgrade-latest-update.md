@@ -149,9 +149,10 @@ For upgrading any Tier 1 environments (also known as dev boxes or one-boxes). Yo
 1. Go to the **Environment details** page for the environment that you want to upgrade, click **Maintain**, and then select **Upgrade**. A window will display where you can enter the upgrade request.
 ![Upgrade request](./media/UpgradeMaintainButton.PNG)
 
-![Upgrade request2](./media/scheduleenvironmentupgrade.PNG)
+2. Select the target version you are upgrading to, and the preferred downtime window.
 
-2. Select the taget version you are upgrading to, and the preferred downtime window.
+![Target version](./media/scheduleenvironmentupgrade.PNG)
+
 3. You must submit your upgrade request a minimum of 5 working days before you expect to upgrade, to help ensure that the upgrade can be performed within your expected timeframe. The advanced notice is required to prepare a new environment before your downtime window.
 
    If, due to high demand, your chosen time slot is not available, the Microsoft Team will respond with the closest available time slots for you to chose from. The more advanced notice you give, the more likely you will get your first choice.
