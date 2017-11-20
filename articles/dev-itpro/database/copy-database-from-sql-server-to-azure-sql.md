@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy a Finance and Operations database – SQL Server to production Azure SQL
-description: This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
+description: This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Development, build or demo environment, aka Tier-1 or one-box) to an environment that runs on an Azure SQL database (Sandbox UAT Tier 2 or higher).
 author: tariqbell
 manager: AnnBe
 ms.date: 08/21/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database from an environment that runs on Microsoft SQL Server (that is, a Tier 1 or one-box environment) to an environment that runs on a Microsoft Azure SQL database (a Tier 2 or higher environment). 
+This topic describes how to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that runs on Microsoft SQL Server (Development, build or demo environment, aka Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Sandbox UAT Tier 2 or higher).
 
 This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](../data-entities/data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment.
 
