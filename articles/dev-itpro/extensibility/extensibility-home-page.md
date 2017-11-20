@@ -91,6 +91,7 @@ Here is where you find "How do I?" topics on customizing specific object types o
 + [Register a subclass for factory methods](register-subclass-factory-methods.md)
 + [Respond with EventHandlerResult](respond-event-handler-result.md)
 + [Extend the RunBase class](extend-runbase-class.md)
++ [Use delegates to customize Application startup](startup-customizations.md)
 
 ### Tables
 + [Modify an existing field in a table](modify-existing-field.md)

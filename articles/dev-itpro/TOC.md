@@ -124,6 +124,7 @@
 #### [Register a subclass for factory methods](extensibility/register-subclass-factory-methods.md)
 #### [Respond with EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Extend the RunBase class](extensibility/extend-runbase-class.md)
+#### [Use delegates to customize Application startup](extensibility/startup-customizations.md)
 #### [Modify an existing field in a table](extensibility/modify-existing-field.md)
 #### [Add a new field to an existing table](extensibility/add-field-extension.md)
 #### [Add an index to an existing table](extensibility/add-index.md)
