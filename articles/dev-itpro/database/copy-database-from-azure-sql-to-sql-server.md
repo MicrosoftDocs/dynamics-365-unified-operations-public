@@ -51,6 +51,7 @@ Moving a database involves using the sqlpackage.exe command line tool to export
 ## Prerequisites
 The following prerequisites are required before you can move a database.
 
+-   The source environment (the environment connected to the source database) must be running a version of the Finance and Operations platform that is older or the same as the version of the platform of the destination environment.
 -   Only a database to which the customer has SQL access to can be copied. If you must copy the production environment, then first copy the production environment to the sandbox environment, and work from the sandbox environment.
 -   The destination SQL Server environment must be running SQL Server 2016 RTM (13.00.1601.5) or higher. The CTP versions of SQL Server 2016 may cause errors during the import process.
 -   To export a database from a sandbox environment, you must install the [latest SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) to the AOS machine in that environment and perform the bacpac export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can't complete the tasks required.
