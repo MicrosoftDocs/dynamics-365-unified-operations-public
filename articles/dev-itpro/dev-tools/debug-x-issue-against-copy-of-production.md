@@ -3,9 +3,9 @@
 
 title: Debug X++ against a copy of a production database
 description: This topic explains how to configure X++ debugging so that you can investigate issues in the production environment. For this procedure, you make a copy of the production database and then configure a developer environment to connect to the copied database.
-author: MargoC
+author: TariqBell
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
