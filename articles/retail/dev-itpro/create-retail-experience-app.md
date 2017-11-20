@@ -5,7 +5,7 @@ title: Create a Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -62,13 +62,13 @@ If you're developing on Windows and using the Mac just for building the iOS app 
 ## Loading the solution in Visual Studio
 You must modify the Retail Experience app solution before it can be loaded correctly in Visual Studio. Follow these steps.
 
-1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:RetailSdk.
-2.  Open C:RetailSdkSampleExtensionsShoppingAppSample.ShoppingApp.sln, and remove the following line.
+1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
+2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
            
         Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
 
-3.  Open C:RetailSdkSampleExtensionsShoppingAppiOSShoppingApp.iOS.csproj, and remove following lines.
+3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
         <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
         <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
@@ -193,7 +193,7 @@ To test the Android app on an emulator follow the below steps on Visual Studio
 2.  Build Release | Any CPU.
 3.  Run in Marshmallow emulator.
 
-The below link from Xamarin explains how to use the Archive manager on Visual studio to **create an .apk file** that can be signed by a signing certificate. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_1\_-\_preparing\_an\_application\_for\_release/\#\_Archive\_for\_Publishing\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_1_-_preparing_an_application_for_release/#_Archive_for_Publishing_) The below link from Xamarin explains how to create a signing certificate and **sign the .apk file** for adhoc and GooglePlay store distribution. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_2\_-\_signing\_the\_android\_application\_package/\#\_Signing\_the\_APK\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_2_-_signing_the_android_application_package/#_Signing_the_APK_) The below link explains the steps involved with the **public distribution of an application** created with Xamarin.Android via channels such as e-mail, a private web server, Google Play, or the Amazon App Store for Android. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/)
+The below link from Xamarin explains how to use the Archive manager on Visual studio to **create an .apk file** that can be signed by a signing certificate. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_1\_-\_preparing\_an\_application\_for\_release/\#\_Archive\_for\_Publishing\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_1_-_preparing_an_application_for_release/#_Archive_for_Publishing_) The below link from Xamarin explains how to create a signing certificate and **sign the .apk file** for ad hoc and Google Play store distribution. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_2\_-\_signing\_the\_android\_application\_package/\#\_Signing\_the\_APK\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_2_-_signing_the_android_application_package/#_Signing_the_APK_) The below link explains the steps involved with the **public distribution of an application** created with Xamarin.Android via channels such as email, a private web server, Google Play, or the Amazon App Store for Android. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/)
 
 ### iOS:
 

@@ -6,6 +6,7 @@ description: This topic describes how to move a Finance and Operations database 
 author: tariqbell
 manager: AnnBe
 ms.date: 11/20/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -152,7 +153,7 @@ Here is an explanation of the parameters:
 
 ## Import the database into an Azure SQL database
 
-Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/), and then download it to the target AOS computer.
+Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/), and then download it to the target AOS computer.
 
 > [!NOTE]
 > Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the "Known issues and limitations" section.)

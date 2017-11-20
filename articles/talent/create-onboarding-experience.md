@@ -5,7 +5,7 @@ title: Create an engaging onboarding experience
 description: When onboarding is done well, it helps new employees realize a sense of belonging in their new organization.
 author: tbisaacs
 manager:
-ms.date: 05/04/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: Dynamics365Talent
@@ -75,7 +75,7 @@ Relationships are key to getting new hires get up to speed. More importantly, th
 
 ## Provide training
 
-Give your new hire the confidence and tools that they need to be successful. This starts with clearly defining their responsibilities and setting your expectations for how they will achieved. Next, create a training plan that focuses on the skills they need to meet your expectations. Don't just focus on compliance-based training.
+Give your new hire the confidence and tools that they need to be successful. This starts with clearly defining their responsibilities and setting your expectations for how they will be achieved. Next, create a training plan that focuses on the skills they need to meet your expectations. Don't just focus on compliance-based training.
 
 ## Set clear milestones
 

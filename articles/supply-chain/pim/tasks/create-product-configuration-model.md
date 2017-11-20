@@ -3,7 +3,7 @@
  
 title: Create a product configuration model
 description: This procedure shows how to create a product configuration model and enter basic information such as attributes and subcomponents. 
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a copy of a Finance and Operations database to restore later
-description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
+description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
 ms.date: 11/20/2017
@@ -75,7 +75,13 @@ The parameters include:
 -   **sp** (source password) - The SQL password for the source SQL Server.
 -   **su** (source user) - The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user, which the deployment will have created on every Dynamics SQL instance. You can retrieve the password for this user from your Lifecycle Services (LCS) project.
 
-Running this command creates a .bacpac file on the D:\\Exportedbacpac folder. You can take this file and copy or upload it to secure location so that it can be imported into a different environment at another time. You can use the AzCopy command line utility to upload the file to an Azure storage account[,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](/azure/storage/storage-use-azcopy). **Note:** Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. **Important:** Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported database files here permanently unless you are prepared to lose them. For details, see [Understanding the temporary drive on Windows Azure virtual machines (blog post)](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Running this command creates a .bacpac file on the D:\\Exportedbacpac folder. You can take this file and copy or upload it to secure location so that it can be imported into a different environment at another time. You can use the AzCopy command line utility to upload the file to an Azure storage account[,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](/azure/storage/storage-use-azcopy). 
+
+> [!NOTE]
+> Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. 
+
+> [!IMPORTANT]
+> Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported database files here permanently unless you are prepared to lose them. For details, see [Understanding the temporary drive on Windows Azure virtual machines (blog post)](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ### Start services
 

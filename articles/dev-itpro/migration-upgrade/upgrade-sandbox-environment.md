@@ -5,7 +5,9 @@ title: Process for upgrading a sandbox environment
 description: This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. 
 author: tariqbell
 manager: AnnBe
+
 ms.date: 11/20/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -73,7 +75,9 @@ There may be additional components in use in your environment which require furt
 Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
 
 ## Limitations
+
 Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process (When a sandbox database is imported, the documents are not brought over). If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost. 
+
 
 
 

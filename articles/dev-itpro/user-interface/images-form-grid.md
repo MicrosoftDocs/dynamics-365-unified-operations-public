@@ -2,10 +2,10 @@
 # required metadata
 
 title: Images
-description: This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
+description: This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
+This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
 
@@ -102,7 +102,7 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
     }
 
 
-## Image type: AOTResource
+## Image type: AOT Resource
 
 | Pros | Cons |
 |---|---|
@@ -293,7 +293,7 @@ Model a page that has an image control and a **FileUpload** button.
         }
     }
 
-## Example of inmemory bitmap manipulation
+## Example of in-memory bitmap manipulation
 In this example, an image is created from scratch. However, developers can also load a bitmap from an alternative source and then manipulate the image as desired (for example, by cropping, stretching, or resizing, or by changing the opacity). After any manipulation is completed, the developers can display the image by using the image control, or they can assign it to a data source field.
 
     public void clicked()

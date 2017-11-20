@@ -662,7 +662,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -1532,7 +1532,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -2472,7 +2472,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -3454,7 +3454,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -4681,7 +4681,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -5240,7 +5240,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method parentControl
 
@@ -5759,7 +5759,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -6947,7 +6947,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
