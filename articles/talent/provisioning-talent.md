@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provision Microsoft Dynamics 365 for Talent
-description: This topic walks through the steps for provisioning a new Microsoft Dynamics 365 for Talent environment. 
+description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. 
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
@@ -30,55 +30,57 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 # Provision Microsoft Dynamics 365 for Talent
-This topic walks through the steps for provisioning a new Microsoft Dynamics 365 for Talent environment. This procedure assumes that you’ve purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you own an existing Dynamics 365 license that already includes the Dynamics 365 for Talent service plan and you can’t proceed with the steps below, contact support.
+This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
-To begin, the global administrator should log into [Lifecycle services](http://lcs.dynamics.com) (LCS) and create a new Dynamics 365 for Talent project. Unless a licensing issue prevents you from doing so, provisioning Dynamics 365 for Talent does not require assistance from support or DSE representatives.
+To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) and create a new Talent project. Unless a licensing issue prevents you from provisioning Talent, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
 ## Create an LCS project
-To use LCS to manage your Talent environments, you must first create an LCS project. Complete the following steps to create a project.
+To use LCS to manage your Talent environments, you must first create an LCS project.
 
-> 1.	Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) using the account you used to subscribe to Dynamics 365 for Talent.
-> 2.	Select the plus sign (**+**) to create a new project.
-> 3.	When choosing the Product name and Product version, select **Microsoft Dynamics 365 for Talent**.
-> 4.	Select the **Dynamics 365 for Talent** methodology.
-> 5.	When finished, click **Create**.
+1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Talent.
+2. Select the plus sign (**+**) to create a project.
+3. Select **Microsoft Dynamics 365 for Talent** as the product name and product version.
+4. Select the **Dynamics 365 for Talent** methodology.
+5. Select **Create**.
 
-Refer to the Talent Methodology created within your new project for information on getting started with Dynamics 365 for Talent. After creating the project, complete the following steps to provision your Talent environment.
+For information about how to get started with Talent, see the **Talent** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Talent environment.
 
-## Provision a Talent project 
-After an LCS project has been created, you can provision Talent into an environment. 
+## Provision a Talent project
+After you've created an LCS project, you can provision Talent into an environment.
 
-1.	Select Talent App Management tile from your LCS project.
-2.	Talent is always provisioned into a PowerApps Environment to enable PowerApps integration and extensibility. If you don’t already have a PowerApps Environment, follow the steps outlined in the following section, “Creatie a new PowerApps Environment,” before proceeding with the next step.
+1. In your LCS project, select the **Talent App Management** tile.
+2. Talent is always provisioned into a Microsoft PowerApps environment, to enable PowerApps integration and extensibility. If you don't already have a PowerApps environment, follow the steps in the "Create a new PowerApps environment (if required)" section of this topic before you continue.
 
->	[!Note]
->The tenant admin provisioning Talent must be assigned to the PowerApps P2 license to view existing environments or create new ones. If your organization does not have a PowerApps P2 license you can acquire one from your CSP or this link: [PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
+    > [!NOTE]
+    > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/en-us/pricing/).
 
-3.	Click **Add** and select the Environment where you would like to provision Talent.
-4.	Click **Yes** to confirm deployment if you agree to the terms stated.
-5.	Your new environment will now appear in the list of environments in the navigation pane on the left, but it is not yet ready to use until the **Deployment status** changes to **Deployed**.  This generally takes just a few minutes.  If the provision fails, you will need to contact support.
-6.	Click **Log on to Talent** to use your new environment.
- > [!Note]
- > You can deploy a test instance of Talent into this project to use for testing your solution until you’ve signed off on the final requirements. If you use this environment for testing, you will need to repeat this procedure to create a production environment. 
+3. Select **Add**, and then select the environment to provision Talent into.
+4. Select **Yes** to agree to the terms and begin deployment.
 
-## Create a new PowerApps Environment (if required)
-> 1.	When clicking Manage Environments from LCS, you are taken to the [PowerApps Admin Center](https://preview.admin.powerapps.com/environments). This lets you view existing environments and create new ones.
-> 2.	Click the (**+**) New environment button.
-> 3.	Enter a unique environment name and choose the location to deploy to. 
+    Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes just a few minutes. If provisioning fails, you must contact Support.
 
- > [!Note]
- > Talent is not available in all regions, so be sure to check for availability before choosing the location of your environment.
+6. Select **Log on to Talent** to use your new environment.
 
-> 4.	The message Do you want to create a database will display. Select **Create database** to create the Common Data Service (CDS) database that is required to host a portion of your Talent data. Creating a dabase also lets you integrate PowerApps applications with Talent.
-> 5.	You will be asked about the access level you would like to use for this database. **Restrict access** is the recommended option to prevent Talent users from directly accessing sensitive data using a PowerApps application.
-> 6.	Note that the CDS database contains demo data. While you can use the demo data company for testing, or creating task recordings or task guides, the demo data will add inactive employees and fictitious addresses, among other things, to your production environment. Complete the following steps to remove the demo data. 
+> [!NOTE]
+> If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
- >> [!Important]
- >> If you created a CDS database previously and have entered any your company’s production data into that database, be aware that the following steps remove all of the data in the selected database, including your company’s production data.
- 
->> -	After you’ve created the CDS database, log into [PowerApps](https://preview.web.powerapps.com/home) and go to the environment that you created in step 3.
->> -	Click Entities. On the right side of the page click the ellipse (**…**) button and select **Clear all data**. 
->> -	Click **Delete data** to confirm your intention to remove the data. This action removes the demo data that’s included in the CDS by default, as well as any other data that’s been entered in the selected database.
+## Create a new PowerApps environment (if required)
+1. Select **Manage Environments** in LCS. You're taken to the [PowerApps Admin Center](https://preview.admin.powerapps.com/environments), where you can view existing environments and create new environments.
+2. Select the (**+**) **New environment** button.
+3. Enter a unique name for the environment, and select the location to deploy to.
 
-> Your new  environment is now ready to use.
+    > [!NOTE]
+    > Talent isn't available in all regions. Therefore, be sure to check for availability before you select the location for your environment.
 
+4. When you're asked whether you want to create a database, select **Create database** to create the Common Data Service (CDS) database that must host part of your Talent data. By creating a database, you can also integrate PowerApps applications with Talent.
+5. You're asked about the access level that you want to use for the database. We recommend that you select **Restrict access**, because this option prevents Talent users from directly accessing sensitive data by using a PowerApps application.
+6. The CDS database that is created contains demo data. This demo data is useful, because you can use the demo data company for testing, or to create task recordings or task guides. However, the demo data adds inactive employees and fictitious addresses, among other information, to your production environment. To remove the demo data, follow these steps after you've finished creating the CDS database:
+
+    > [!IMPORTANT]
+    > If you previously created a CDS database and entered any of your company's production data into it, be aware that these steps remove **all** the data in the selected database, even your company's production data.
+
+    1. Sign in to [PowerApps](https://preview.web.powerapps.com/home), and go to the environment that you created in step 2.
+    2. Select **Entities**. On the right side of the page, select the ellipse (**…**) button, and then select **Clear all data**.
+    3. Select **Delete data** to confirm that you want to remove the data. This action removes all the demo data that is included in the CDS by default. It also removes any other data that has been entered in the selected database.
+
+You can now use your new environment.
