@@ -58,10 +58,12 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 ## Prerequisites
 
+- The source environment (the environment where the source database was created) must be running a version of the Finance and Operations platform that is older or the same as the version of the platform of the destination environment.
+
 - To import a database into an Azure SQL Database environment, you must install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the Application Object Server (AOS) computer in **that** environment. You then do the bacpac import on the AOS computer. There are two reasons for this requirement:
 
-    - Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
-    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
+   - Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
+   - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
 
 > [!IMPORTANT]
 > If your environment includes Microsoft Dynamics 365 for Retail components, you must manually store some environment-specific values before you begin. For more information, see the "Additional steps for Retail environments" section.
