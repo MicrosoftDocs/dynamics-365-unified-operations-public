@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Provisioning Microsoft Dynamics 365 for Talent
+title: Provision Microsoft Dynamics 365 for Talent
 description: This topic walks through the steps for provisioning a new Microsoft Dynamics 365 for Talent environment. 
 author: rschloma
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Provisioning Microsoft Dynamics 365 for Talent
+# Provision Microsoft Dynamics 365 for Talent
 This topic walks through the steps for provisioning a new Microsoft Dynamics 365 for Talent environment. This procedure assumes that you’ve purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you own an existing Dynamics 365 license that already includes the Dynamics 365 for Talent service plan and you can’t proceed with the steps below, contact support.
 
 To begin, the global administrator should log into [Lifecycle services](http://lcs.dynamics.com) (LCS) and create a new Dynamics 365 for Talent project. Unless a licensing issue prevents you from doing so, provisioning Dynamics 365 for Talent does not require assistance from support or DSE representatives.
@@ -61,7 +61,7 @@ After an LCS project has been created, you can provision Talent into an environm
  > [!Note]
  > You can deploy a test instance of Talent into this project to use for testing your solution until you’ve signed off on the final requirements. If you use this environment for testing, you will need to repeat this procedure to create a production environment. 
 
-## Creating a new PowerApps Environment (if required)
+## Create a new PowerApps Environment (if required)
 > 1.	When clicking Manage Environments from LCS, you are taken to the [PowerApps Admin Center](https://preview.admin.powerapps.com/environments). This lets you view existing environments and create new ones.
 > 2.	Click the (**+**) New environment button.
 > 3.	Enter a unique environment name and choose the location to deploy to. 
@@ -80,5 +80,5 @@ After an LCS project has been created, you can provision Talent into an environm
 >> -	Click Entities. On the right side of the page click the ellipse (**…**) button and select **Clear all data**. 
 >> -	Click **Delete data** to confirm your intention to remove the data. This action removes the demo data that’s included in the CDS by default, as well as any other data that’s been entered in the selected database.
 
-> 7.	Your new  environment is now ready for use.
+> Your new  environment is now ready to use.
 
