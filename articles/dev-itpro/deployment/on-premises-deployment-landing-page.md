@@ -56,6 +56,8 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
+- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](redeploy-on-prem.md)
 
 ## Other resources
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)

@@ -5,7 +5,7 @@ title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations, Unified Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24551
 ms.assetid: 78a85e0a-e002-41b5-85b7-e2772317d56e
@@ -55,10 +55,10 @@ Key concepts
 
 ## Setup
 1.  If this is the first tutorial you’re working on, you must complete the steps in "Installing demo data" in the [Appendix](#appendix).
-2.  Import the project **Adding BI to workspaces.axpp** in the **C:FMLabLab 10-1** folder.
-    -   Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+2.  Import the project **Adding BI to workspaces.axpp** in the **C:\FMLab\Lab 10-1** folder.
+    -   Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
     -   In Visual Studio, from the **Dynamics 365** menu, select **Import project**.
-    -   Go to the **C:\\FMLab\\Lab 10-1** folder and select the **Adding BI to workspaces.axpp** project.
+    -   Go to the **C:\FMLab\Lab 10-1** folder and select the **Adding BI to workspaces.axpp** project.
     -   Select the overwrite option.
     -   Select new solution.
     -   Click **OK**.
@@ -158,7 +158,7 @@ Trend analysis is vital to the KPI experience and the KPI details page provides
 -   **Top contributors:** Who or what are biggest contributors?
 -   **Bottom contributors:** Who or what are contributing least?
 
-When you define a new KPI, you get the these trends by default – the system tries to guess which trends may be relevant. This happens, even if the developer does not specify these trends when defining the KPI. As a developer who is aware of the business context, you may wish to identify specific trends that need to be shown to the user – not the default trends shown. In the following example, let’s build specific trend charts to the KPI so that users can quickly diagnose the problem.
+When you define a new KPI, you get these trends by default – the system tries to guess which trends may be relevant. This happens, even if the developer does not specify these trends when defining the KPI. As a developer who is aware of the business context, you may wish to identify specific trends that need to be shown to the user – not the default trends shown. In the following example, let’s build specific trend charts to the KPI so that users can quickly diagnose the problem.
 
 ### Modify the default time trend chart
 
@@ -360,7 +360,7 @@ Now that you defined a KPI tile, you can put it in the interface so the user can
 8.  Click **Ctrl+F5** to run the form.
 9.  You’ll see the modified workspace with the tile definition.
 
-## Add a drillthru link from a KPI tile to a different form
+## Add a drill-thru link from a KPI tile to a different form
 KPI tiles drill-down to the **KPIDetails** form by default. So, unless you change the drill-thru destination within the KPI definition, KPI tiles will always take the user to the details page for that KPI. In this exercise, you’ll modify the default drill-thru destination.
 
 1.  Select the KPI **FMRevenuePerRentalMargin** in Solution Explorer and double-click. KPI designer will be displayed with the KPI **FMRevenuePerRentalMargin.**
@@ -398,7 +398,7 @@ To work with the sample, you must install the provided demo data.
     
     [![BI10](./media/bi10.png)](./media/bi10.png)
 
-8.  Click on **App links**. 
+8.  Click **App links**. 
     
     [![BI11](./media/bi11.png)](./media/bi11.png)
     

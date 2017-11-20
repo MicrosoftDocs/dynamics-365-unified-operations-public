@@ -2,10 +2,10 @@
 # required metadata
 
 title: Application Explorer properties
-description: This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+description: This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: reference
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85213
 ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 
 Many nodes in Application Explorer represent elements that have properties associated with them. You can read or modify these properties in the **Properties** window of Microsoft Visual Studio.
 
@@ -1983,7 +1983,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>Query</td>
-<td>Select the query that is passed to the target form for the <strong>IntialQuery</strong> method.</td>
+<td>Select the query that is passed to the target form for the <strong>InitialQuery</strong> method.</td>
 </tr>
 <tr class="odd">
 <td>ReadPermissions</td>
@@ -2000,7 +2000,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>RunOn</td>
-<td>Select whether to run the menu item on the client, the server, or the the location that it's called from. This property is mainly used for menu items that open reports. This property determines where the application object is run from only if the <strong>RunOn</strong> property of the object is set to <strong>Called from</strong>.
+<td>Select whether to run the menu item on the client, the server, or the location that it's called from. This property is mainly used for menu items that open reports. This property determines where the application object is run from only if the <strong>RunOn</strong> property of the object is set to <strong>Called from</strong>.
 <ul>
 <li>A form is instantiated and run on the client, because the <strong>FormRun</strong> class always runs on the client.</li>
 <li>A report is instantiated and run as specified by the menu item's <strong>RunOn</strong> property, because the <strong>ReportRun</strong> class always runs where it was called from. You should set the property to <strong>Called from</strong>. If you set the report to run on the client, and the report is run in a batch, the report will fail. If you set the report to run on the server, and the report is shown on the screen, the report will fail.</li>

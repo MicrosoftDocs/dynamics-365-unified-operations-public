@@ -18,7 +18,7 @@ ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273043
 ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27

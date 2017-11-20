@@ -18,7 +18,7 @@ ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgin
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
@@ -40,9 +40,8 @@ Configure Accounts receivable and Credit and Collections to track invoices and i
 You can set up customer groups, customers, posting profiles, various payment options, interest notes, collection letters, commissions, parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable and Credit and collections information.
 The following table lists the pages that support the configuration and maintenance of Accounts receivable and Credit and collections. The table entries are organized by task and then alphabetically by page name.
 
-| ![Note](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Note")**Note**          |
-|--------------------------------------------------------------------------------------------------|
-| Some pages in the following table require information or parameter settings to navigate to them. |
+> [!NOTE]
+> You cannot navigate to some pages in the following table unless data or parameter settings have been entered in other pages.
 
 | Task                                                 | Page name                            | Usage                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

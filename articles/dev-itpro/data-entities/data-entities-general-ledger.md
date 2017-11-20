@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - General ledger
-description: This article provides a list of the data entities that are available for General ledger.
+description: This topic provides a list of the data entities that are available for General ledger.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95893
 ms.assetid: 882b1a83-4773-49a0-8dbb-3ac3380d344c
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for General ledger.
+This topic provides a list of the data entities that are available for General ledger.
 
 Available data entities
 -----------------------
@@ -44,7 +44,7 @@ Available data entities
 
 | Suggested sequence | Entity name                            | Area           | Entity type | Dependency                       | Comments                                                                                                                                                                                                          |
 |--------------------|----------------------------------------|----------------|-------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1                  | Finacial dimensions                    | General ledger | Setup       | None                             | Define financial dimensions that you can use as account segments for shared charts of accounts.                                                                                                                   |
+| 1                  | Financial dimensions                    | General ledger | Setup       | None                             | Define financial dimensions that you can use as account segments for shared charts of accounts.                                                                                                                   |
 | 2                  | Dimension attribute activations        | General ledger | Setup       | None                             | Activate the dimensions that will be used in the system. Note: There is a known issue that involves this entity. To work around the issue, set the DoActivate field to Yes for the one record in the source file. |
 | 3                  | Financial dimension values             | General ledger | Setup       | Financial dimensions             | Define details for financial dimension values.                                                                                                                                                                    |
 | 4                  | Chart of accounts                      | General ledger | Setup       | None                             | Define the organization’s charts of accounts.                                                                                                                                                                     |
@@ -57,7 +57,7 @@ Available data entities
 
 **03.1.002 GL - Account structures - Shared**
 
-**Recommended setup:** All status fields in source files should have a status of **Draft**, and the two activation files should have **DoActivate** set to **Yes**. This setup will enable the account structures to be imported and activated at import run time. User may also want to include **"Main account categories**" data entitiy for this data package.
+**Recommended setup:** All status fields in source files should have a status of **Draft**, and the two activation files should have **DoActivate** set to **Yes**. This setup will enable the account structures to be imported and activated at import run time. User may also want to include **"Main account categories**" data entity for this data package.
 
 | Suggested sequence | Entity name                            | Area           | Entity type | Dependency               | Comments                                                                                                                                                      |
 |--------------------|----------------------------------------|----------------|-------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Available data entities
 | 22                 | Ledger fiscal calendar year                      | General ledger | Setup       | Ledger                             | Define the fiscal calendar to use for the ledger in the legal entity.                                                                                                                                                                                       |
 | 23                 | Ledger fiscal calendar period                    | General ledger | Setup       | Ledger fiscal calendar year        | Define the fiscal calendar periods to use for the ledger in the legal entity.                                                                                                                                                                               |
 | 24                 | Main account legal entity                        | General ledger | Setup       | Main accounts                      |                                                                                                                                                                                                                                                             |
-| 25                 | Financial dimension value legal entity ovrerides | General ledger | Setup       | Main accounts                      |                                                                                                                                                                                                                                                             |
+| 25                 | Financial dimension value legal entity overrides | General ledger | Setup       | Main accounts                      |                                                                                                                                                                                                                                                             |
 | 26                 | Accounts for automatic transactions              | General ledger | Setup       | Main accounts                      | Define accounts for automatic transactions.                                                                                                                                                                                                                 |
 | 27                 | Ledger parameters                                | General ledger | Setup       | None                               | Define parameters for General ledger.                                                                                                                                                                                                                       |
 

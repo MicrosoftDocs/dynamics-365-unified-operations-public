@@ -5,7 +5,7 @@ title: Install and configure Microsoft Dynamics 365 for Finance and Operations &
 description: This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority,
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
@@ -46,7 +46,7 @@ The app is available on Android and Windows operating systems. To use this app, 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations version 1611 <br>-or- <br>Microsoft Dynamics Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Finance and Operations | Microsoft Finance and Operations version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
 -   Windows (UWP): [Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
@@ -55,7 +55,7 @@ The app is available on Android and Windows operating systems. To use this app, 
     - [Finance and Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
 ## Create a web service application in Active Directory
-To enable the app to interact with a specific Finance and Operations server, you must register a web service application in a Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
+To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
 
 1.  In a web browser, go to <https://manage.windowsazure.com>.
 2.  Enter the name and password for the user who has access to the Azure subscription.

@@ -3,7 +3,7 @@
 
 title: Update standard costs for a new manufactured item
 description: This article provides guidance for updating standard costs for a new manufactured item. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79693
 ms.assetid: ba64b70f-3f4c-4373-9a7d-8fd07c45a8cf

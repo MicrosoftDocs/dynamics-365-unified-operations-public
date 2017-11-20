@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -366,7 +366,7 @@ Before calling the new retail server API please make sure you have performed the
 
 1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 2.  Add the new retail server extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
-3.  Drop both the CRT and Retail server extension dlls into the retail server bin folder. If you have any CRT extension releated to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.
+3.  Drop both the CRT and Retail server extension dlls into the retail server bin folder. If you have any CRT extension that is related to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 5.  Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.
 6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:

@@ -5,7 +5,7 @@ title: Vendor collaboration with external vendors
 description: This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
@@ -38,6 +38,10 @@ ms.dyn365.ops.version: Version 1611
 This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 
 The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+The information in this topic about vendor collaboration applies only to the current version of Dynamics 365 for Finance and Operations. 
+In the February 2016 and May 2016 versions of Microsoft Dynamics AX, you collaborate with vendors by using the Vendor portal module. 
+For information about the Vendor portal module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
@@ -153,7 +157,7 @@ In the **Purchase order preparation workspace**, in In external review requires 
 
 The vendor can also add a note or attachment
 
-On the lines, the vendor can change the quantity and the delivery dates, add notes and attachments, reject a line, substitute a line with an other product that is keyed in as text, and split a line into multiple deliveries. Depending on which changes that are suggested by the vendor, the line status will have different line statuses:
+On the lines, the vendor can change the quantity and the delivery dates, add notes and attachments, reject a line, substitute a line with another product that is keyed in as text, and split a line into multiple deliveries. Depending on which changes that are suggested by the vendor, the line status will have different line statuses:
 	
 -   **Accepted with changes**
 -   **Rejected**
@@ -166,7 +170,7 @@ On the response, you can see the previously mentioned line statuses that indicat
 
 You can update a PO by clicking the **Process PO update** action on the response or on one line at a time. An indicator, **Is PO update processed?**, on the header and the lines lets you see whether the system has processed the header or lines to update the PO with any potential changes that originate from the response. You can run the **Process PO update** process only one time per header or line.
 
-Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines can automatically be updated on the PO. For other changes, you must manually update the PO. In this case, the **Is PO update processed?** indicator shows **Manual update**. An example of a change that has to be handled manually would be when a vendor suggests to split a line into a schedule.
+Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines can automatically be updated on the PO. For other changes, you must manually update the PO. In this case, the **Is PO update processed?** indicator shows **Manual update**. An example of a change that has to be handled manually would be when a vendor suggests splitting a line into a schedule.
 
 A line that has a status of **Accepted** will have a confirmed delivery date that will be updated on the PO when you execute the **Process PO update**. Notes and attachments won’t automatically be transferred to the current PO. Note that when you update the current PO via the **Process PO update** action, trade agreements will not be reassessed on the PO lines.
 

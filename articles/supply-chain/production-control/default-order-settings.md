@@ -5,7 +5,7 @@ title: Default order settings for dimensions and product variants
 description: Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
 
-ms.search.scope: Core, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 223084
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[retail name](../includes/retail-name.md)]
 
 
-Default order settings in Microsoft Dynamics 365 for Finance and Operations, Enterpise edition define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
+Default order settings in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
 You can define the default order settings on the **Default order settings** page. To open this page, go to **Product information management** &gt; **Products** &gt; **Released products** &gt; **Select a released product** &gt; on the **Plan** or **Manage inventory** Action Pane &gt; **Order settings** &gt; **Default order settings**.
 
@@ -85,16 +85,16 @@ When creating a transaction, you need to specify the full definition of a rele
 
 Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. Obviously no quantity defaulting or checks on multiple and minimums are performed when creating the line or posting the journal. 
 
-The system always attempts to find a default site and warehouse when a order or journal line is created. The site is not always displayed by default from the order settings. For example, when creating a sales order or a purchase order, the site from the order header is automatically used on the order lines. When creating a BOM line, the site from the BOM header is used. After the site is determined, it will be used to find any site specific order settings that can then be used as the default for the warehouse. 
+The system always attempts to find a default site and warehouse when an order or journal line is created. The site is not always displayed by default from the order settings. For example, when creating a sales order or a purchase order, the site from the order header is automatically used on the order lines. When creating a BOM line, the site from the BOM header is used. After the site is determined, it will be used to find any site specific order settings that can then be used as the default for the warehouse. 
 
-The default order type, the purchase, and the inventory lead times can be overriden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
+The default order type, the purchase, and the inventory lead times can be overridden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
 
 ## Default order settings rules
 You can define general default order settings and any number of default order setting rules that apply only in certain conditions, such as site or a specific product dimension or product dimensions combination. You can't define warehouse specific order settings.
 
 ### Rank in default order settings
 
-The default order settings rules have ranks. The higher the rank, the more important the rule is, meaning that it will have a higher priority and be used before the rules with lower ranks. The general default order settings have rank zero, which can't be modified. There can only be one rule with rank zero. Rules can have the same rank, provided that the dimensions they apply to differ. This is useful for modelling site specific order settings. When a new default order settings rule is created, the values for order values, stop flag, etc. are inherited from the rule with rank zero, but can be overriden.
+The default order settings rules have ranks. The higher the rank, the more important the rule is, meaning that it will have a higher priority and be used before the rules with lower ranks. The general default order settings have rank zero, which can't be modified. There can only be one rule with rank zero. Rules can have the same rank, provided that the dimensions they apply to differ. This is useful for modelling site specific order settings. When a new default order settings rule is created, the values for order values, stop flag, etc. are inherited from the rule with rank zero, but can be overridden.
 
 ### Default order settings for released products
 

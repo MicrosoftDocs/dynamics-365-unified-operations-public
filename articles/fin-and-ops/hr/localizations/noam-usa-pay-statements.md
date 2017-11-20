@@ -18,7 +18,7 @@ ms.search.form: PayrollPayStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 233834
 ms.assetid: b20b94d2-6d5e-45a8-88c3-f8657caaee13

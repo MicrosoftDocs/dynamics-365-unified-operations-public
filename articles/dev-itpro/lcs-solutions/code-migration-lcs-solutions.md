@@ -37,13 +37,13 @@ The first step in completing your solution package is to upgrade your code using
 
 To generate the Customization Analysis report (CAR), run the following command on a Microsoft Dynamics 365 for Finance and Operations development environment.
 
-    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 
 Here's an example of how this command might look.
 
-    xppbp.exe -metadata=C:Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:tempBPCheckLogcd.xml -module=ApplicationSuite -car=c:tempCAReport.xlsx
+    xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
 
-The xppbp.exe file is located in *c:packagesbin* or *I:AosServicePackagesLocalDirectorybin)*. Any warnings or errors that appear on the **Issues** tab of the report must be resolved. A copy of the CAR report must be submitted to Microsoft prior to your validation meeting. For more information, see the Finance and Operations Help topic, [Customization Analysis Report](../dev-tools/customization-analysis-report.md) or refer to the [Dynamics Community blog](http://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) for issues and exceptions.
+The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\LocalDirectory\bin)*. Any warnings or errors that appear on the **Issues** tab of the report must be resolved. A copy of the CAR report must be submitted to Microsoft prior to your validation meeting. For more information, see the Finance and Operations Help topic, [Customization Analysis Report](../dev-tools/customization-analysis-report.md) or refer to the [Dynamics Community blog](http://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) for issues and exceptions.
 
 See also
 --------

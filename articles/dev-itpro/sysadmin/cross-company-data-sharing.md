@@ -2,10 +2,10 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. T
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
 What is this feature and how does it work?
 ------------------------------------------
@@ -75,7 +75,7 @@ Several entities in the Microsoft data packages have references that you must co
 -   If you want to enable entities that use number sequences, the number sequence types must be the same across all companies in a sharing policy for those entities.
 -   Setup options must be the same across the companies that are involved in the sharing policy. Examples of setup options include the setting that specifies whether tax is included by default.
 
-## When should I use crosscompany data sharing?
+## When should I use cross-company data sharing?
 Use cross-company data sharing for the following business scenarios:
 
 -   Sharing of simple reference and group data in a single deployment
@@ -90,7 +90,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 -   Complex scenarios, such as replication of subtype/supertype tables or tables that have date effectivity rules
 -   Master data management
 
-## Download a crosscompany data sharing template from LCS
+## Download a cross-company data sharing template from LCS
 1.  Sign in to LCS.
 2.  On the home page, click **Shared asset library**.
 3.  In the **Asset type** list, click **Data package**.
@@ -98,7 +98,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 
 For details about how to configure Finance and Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
-## Currently supported crosscompany data sharing templates
+## Currently supported cross-company data sharing templates
 <table>
 <thead>
 <tr class="header">

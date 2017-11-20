@@ -2,6 +2,11 @@
 
 # Get started
 ## [What's new or changed](get-started/whats-new.md)
+## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Deployment options](dev-itpro/choose-deployment.md)
+
 
 # Payments
 ## [Payment methods](payment-methods.md)
@@ -39,6 +44,8 @@
 ## [Retail time and attendance](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) and Cloud POS
+## [POS operations](POS-operations.md)
+## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +67,7 @@
 ### [Hybrid customer orders](hybrid-customer-orders.md)
 ## Sales associates
 ### [Track commissions in POS using sales groups](pos-sales-groups-track-commissions.md)
+## [Ship an order from a different store](charge-send.md)
 ## Device activation
 ### [Configure and install MPOS](retail-modern-pos-device-activation.md)
 ### [Set up extended logon for Cloud POS and MPOS](extended-logon.md)
@@ -171,13 +179,14 @@
 ### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment and hotfixes
-### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Retail store system, before you begin](dev-itpro/retail-store-system-begin.md)
+### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
+#### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
 #### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS device activation](dev-itpro/retail-device-activation.md)
 #### [Secure retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
+### [Mass deployment of Retail self-service components](dev-itpro/retail-mass-deployment.md)
 ### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
 
@@ -186,6 +195,7 @@
 ### [Install N-1 components](dev-itpro/n-1-installation-configuration.md)
 
 ## Environment configuration
+### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
 ## Extensibility
@@ -196,6 +206,7 @@
 #### [MPOS and Cloud POS trigger extensibility](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [Add a custom control to a POS view](dev-itpro/pos-custom-control.md)
 #### [POS payment extension](dev-itpro/pos-payment-extension.md)
+#### [External gift card support](dev-itpro/gift-card.md)
 ### [Create a Retail Experience app](dev-itpro/create-retail-experience-app.md)
 ### [Hardware Station overview and extensibility](dev-itpro/hardware-station-extensibility.md)
 
@@ -229,10 +240,16 @@
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 ### [Sample for Retail POS integration with control units for Sweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
+### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)
 ### [CDX extensibility](dev-itpro/cdx-extensibility.md)
+### [Order attributes](dev-itpro/order-attributes.md)
+### [Customer attributes](dev-itpro/customer-attributes.md)
+### [Retail Typescript and C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce runtime
 ### [Loyalty extension](dev-itpro/retail-sdk/loyalty-extension-sample.md)

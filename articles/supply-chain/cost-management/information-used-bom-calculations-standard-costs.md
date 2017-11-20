@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BOM calculations with standard costs
-description: 
-author: YuyuScheller
+title: Information used in BOM calculations with standard costs
+description: Bills of material (BOM) calculations use data from several sources to calculate the standard costs of a manufactured item. The sources include information about items, bills routings, indirect cost calculation formulas, and the costing version.
+author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# BOM calculations with standard costs
+# Information used in BOM calculations with standard costs
 
 [!include[banner](../includes/banner.md)]
 
 
-
+Bills of material (BOM) calculations use data from several sources to calculate the standard costs of a manufactured item. The sources include information about items, bills routings, indirect cost calculation formulas, and the costing version.
 
 The purchased item information that is used in a standard cost BOM calculation includes the following:
 -   Cost − A purchased item’s costs are maintained as site-specific cost records in a costing version for standard costs. Each cost record has an effective date, and the BOM calculation date determines which cost record will be used. For example, a BOM calculation with a future calculation date might use a cost record with a pending status and a future effective date.

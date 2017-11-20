@@ -2,10 +2,10 @@
 # required metadata
 
 title: Supply chain management home page
-description: This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
+description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/02/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](includes/banner.md)]
 
-This page points to resources that will help you use the Microsoft Dynamics 365 for Finance and Operations - Supply Chain management more effectively. 
+This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
@@ -45,7 +45,7 @@ Select a feature area to learn more about it.
 
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/costing-sheets.md)  
-- [Inventory management](inventory/consignment.md)
+- [Inventory management](inventory/inventory-home-page.md)
 - [Master planning](master-planning/introduction-demand-forecasting.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)

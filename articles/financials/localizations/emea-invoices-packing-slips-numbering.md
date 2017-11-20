@@ -18,7 +18,7 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268484
 ms.search.region: Latvia, Lithuania
@@ -93,7 +93,7 @@ You can set up unique document number sequences for master data records and tran
 </tbody>
 </table>
 
-## Set up document selfnumbering ranges
+## Set up document self-numbering ranges
 You can assign specific number sequences to invoices and packing slips that are generated in the **Accounts receivable**, **Accounts payable**, **Inventory management**, and **Project management and accounting** modules. You can also specify individual number sequences for different users and user groups, customer groups and vendor groups, or warehouses. To set up number sequences for customer invoices and vendor invoices, use the **Counters management** page. (Click **Organization administration** &gt; **Number sequences** &gt; **Counters management**.) You can define the number sequence by user or user group, or for specific customer groups and vendor groups. Use the information in the following table to complete the fields on the **Counters management** page.
 
 | Field          | Description                                                                                                                                     |

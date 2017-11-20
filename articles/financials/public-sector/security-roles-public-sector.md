@@ -18,7 +18,7 @@ ms.search.form: UserRequestListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350

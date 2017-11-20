@@ -5,7 +5,7 @@ title: Half year depreciation on fixed asset disposal for the Czech Republic
 description: This topic explains how to set up half-yearly depreciation, so that you can apply half the yearly depreciation for fixed assets that are sold or otherwise disposed of.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264554
 ms.search.region: Czech Republic
@@ -47,7 +47,7 @@ Use the Regular CZ and Accelerated CZ depreciation methods to apply half-yearly 
 4.  In the **Depreciation year** field, select **Calendar** as the basis for the calculation of depreciation.
 5.  In the **Period frequency** field, select **Yearly**.
 
-## Apply the halfyearly depreciation method
+## Apply the half yearly depreciation method
 After you set up the depreciation methods, you can apply half the yearly depreciation for assets that were disposed of.
 
 1.  Click **Fixed assets** &gt; **Journals** &gt; **Fixed assets**.

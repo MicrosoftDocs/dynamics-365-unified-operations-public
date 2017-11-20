@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20401
 ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
@@ -60,12 +60,12 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 
 Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 3.  On the **Finance and Operations** menu, click **Import Project**.
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
-5.  In the **Select the file to import** window, browse to **C: \\FMLab**, click FMTutorialDataModel.axpp, and then click **Open**.
-6.  In the **Project file location** text box, enter **C:\\FMLab**.
+5.  In the **Select the file to import** window, browse to **C:\FMLab**, click FMTutorialDataModel.axpp, and then click **Open**.
+6.  In the **Project file location** text box, enter **C:\FMLab**.
 7.  Select the **Overwrite Elements** option and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
     [![CustForm2](./media/custform2.png)](./media/custform2.png)
@@ -80,14 +80,14 @@ Use Visual Studio to open the FMTutorial project. If you have Visual Studio open
 
 1.  If the development environment is not already open, on the Desktop, double-click the Visual Studio shortcut to open the development environment.
 2.  On the **File** menu, click **Open** &gt; **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to C:FmLabFMTutorial, select the **FMTutorial** solution, and then click **Open**.
+3.  In the **Open Project** dialog box, browse to C:\FmLab\FMTutorial, select the **FMTutorial** solution, and then click **Open**.
 4.  The FMTutorial project appears in **Solution Explorer**.
 
 ## Use a template to create the form
 Use Visual Studio to create the **FmtCustomer** form. You’ll use a template to create a new master details form. The data source for this tutorial is provided by the starter form. However, you’ll add fields to the grid and details view and apply the Master Details form pattern.
 
 1.  In **Solution Explorer**, right-click the **FMTutorial** project, point to **Add**, and then click **Existing Item**.
-2.  In the **Add Existing Item** window, browse to C:FmLab, select **AxForm\_FmtCustomer**, and then click **Add**. The **FmtCustomer** form appears at the bottom of the **FMTutorial** project in Solution Explorer.
+2.  In the **Add Existing Item** window, browse to C:\FmLab, select **AxForm\_FmtCustomer**, and then click **Add**. The **FmtCustomer** form appears at the bottom of the **FMTutorial** project in Solution Explorer.
 3.  In Solution Explorer, double-click **FmtCustomer**. The form opens in the form designer.
 4.  In the Form designer, click **Design**. In the **Properties** window, specify the following values.
 

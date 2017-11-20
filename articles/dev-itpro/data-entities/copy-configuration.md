@@ -6,7 +6,7 @@ description: This topic describes how to use a configuration data project and co
 
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
@@ -285,12 +285,12 @@ The following entities require special handling when they are used to copy into 
 |------|--------|--------|
 | System setup | Number sequences | If you use a number sequence for vendors and customers on the parameters forms and then you copy customers and vendors, you need to make sure that the "Allow user to change to a lower number" settings on the number sequences to Yes. The "No" settings will cause the import to reject vendor and customer numbers since they were created before using numbers lower than the next available number sequence. If you use the Reset to smallest feature, you need to change the  "Allow user to change to a higher number" since the vendor and customer numbers are higher than the next available number sequence. |
 | System setup | Workflow | Workflow requires additional changes before it can be copied. Workflow copies are not supported at this time. |
-| Acccounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three way matching but you have vendors set for two way matching, the vendor will fail validatation. If you use auto sequencing for new vendor, you will need to unmap the vendor account before you do the copy into legal entity. In addition, if an auto-sequenced vendor has an invoice account, that vendor account is not transformed and may fail. You may see similar issues in other areas such as vendors in posting accounts and approved vendor list by products. |
-| Acccounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validatation. The collections contact will also fail if the contact is not available in the new company. If you use auto sequencing for new customers, you will need to unmap the customer account before you do the copy into legal entity. In addition, if an auto-sequenced customer has an invoice account, that invoice account is not transformed and may fail. You may see similar issues in other areas such as customers in posting accounts.|
+| Accounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three-way matching but you have vendors set for two-way matching, the vendor will fail validation. If you use auto sequencing for new vendor, you will need to unmap the vendor account before you do the copy into legal entity. In addition, if an auto-sequenced vendor has an invoice account, that vendor account is not transformed and may fail. You may see similar issues in other areas such as vendors in posting accounts and approved vendor list by products. |
+| Accounts receivable | Customers | Customers have many settings that are dependent on the values that come from other entities. For example, if you have a default warehouse and site for a customer, you must add sites and warehouses first or the customer will fail validation. The collections contact will also fail if the contact is not available in the new company. If you use auto sequencing for new customers, you will need to unmap the customer account before you do the copy into legal entity. In addition, if an auto-sequenced customer has an invoice account, that invoice account is not transformed and may fail. You may see similar issues in other areas such as customers in posting accounts.|
 | Budget | Budget cost elements| There is an issue when importing budget cost elements when using an annual amount and there are budget cost elements in the Earnings basis tab. The issue will be addressed in a future release.|
 | Fixed assets | Fixed assets depreciation profile manual schedule| The fixed asset depreciation profile must be processed first. Change the sequence on your data project for fixed asset depreciation profile to 15 (instead of 10). We will update the default templates in the monthly application release 4 to this value.|
 | General ledger | Intercompany accounting | The copy into legal entity feature does not support intercompany accounting at this time. The issue will be addressed in a future release.|
-| General ledger | Journal names| Only the journal names for the source legal entity will be copied to the destination companies. If you select the lookup in the journal names form, you will only see the number sequences that are available for that legal entity. However, if you choose to enter an number sequence manually that is not on that list, it will not be included in the copy process.|
+| General ledger | Journal names| Only the journal names for the source legal entity will be copied to the destination companies. If you select the lookup in the journal names form, you will only see the number sequences that are available for that legal entity. However, if you choose to enter a number sequence manually that is not on that list, it will not be included in the copy process.|
 | General ledger | Ledger allocation rules destination| If you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue will be addressed in a future release.|
 | General ledger | Ledger fiscal calendar year/period| The process is currently exporting all of the legal entities instead of just the source legal entity. The copy process works correctly. The issue will be addressed in a future release.|
 | General ledger | Ledger parameters | If you check for continuous number sequences but you have number sequences that are used on journal names and are not continuous, the imports will fail. You should temporarily turn off that setting in the ledger parameters. In addition, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |

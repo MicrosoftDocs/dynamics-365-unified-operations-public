@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Sales and marketing (Pre-sales)
-description: This article provides a list of the data entities that are available for Sales and marketing pre-sales.
+description: This topic provides a list of the data entities that are available for Sales and marketing pre-sales.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95743
 ms.assetid: 771b3e2b-36e1-4a83-a087-0f2bf1960ef5
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for Sales and marketing pre-sales.
+This topic provides a list of the data entities that are available for Sales and marketing pre-sales.
 
 Available data entities
 -----------------------
@@ -104,8 +104,8 @@ Available data entities
 | Suggested sequence | Entity name              | Area      | Entity type | Dependency                | Comments                                                                                                                     |
 |--------------------|--------------------------|-----------|-------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 30                 | Business classifications | Prospects | Setup       |                           | Register the business classifications that the prospect or customer belongs to.                                              |
-| 31                 | Company chains           | Prospects | Setup       |                           | A list of company chains. In this contect, a company chain is a parent company that consists of many smaller business units. |
-| 32                 | Prospect relation types  | Prospects | Setup       |                           | Set up propect types.                                                                                                        |
+| 31                 | Company chains           | Prospects | Setup       |                           | A list of company chains. In this context, a company chain is a parent company that consists of many smaller business units. |
+| 32                 | Prospect relation types  | Prospects | Setup       |                           | Set up prospect types.                                                                                                        |
 | 33                 | Sales districts          | Prospects | Setup       |                           | A list of geographical areas that can be used for sales and sales statistics.                                                |
 | 34                 | Business segments        | Prospects | Setup       |                           | General business segments that are used to categorize prospects.                                                             |
 | 35                 | Prospect statuses        | Prospects | Setup       | Direct mailing categories | A list of phrases that describe the performance of a prospect.                                                               |

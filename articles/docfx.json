@@ -14,6 +14,8 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
+          "PULL_REQUEST_TEMPLATE.md",
+          "ISSUE_TEMPLATE.md",
           "**/_themes/**", 
           "**/_themes.pdf/**"
 
@@ -48,6 +50,7 @@
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
+      "titleSuffix": "Fin & Ops EE", 
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
@@ -55,7 +58,7 @@
         },
         "financials/": {
           "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365OpsFiancials"
+          "depot_name": "MSDN.d365OpsFinancials"
         },
         "fin-and-ops/": {
           "folder_relative_path_in_docset": ".",

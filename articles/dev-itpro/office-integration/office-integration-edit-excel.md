@@ -5,7 +5,7 @@ title: Create Open in Excel experiences
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79223
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
@@ -85,7 +85,7 @@ Currently no filter is added to these options, hence the term “(unfiltered)�
 ## How can an entity be added as an Open in Excel option on a form that doesn’t share the same root datasource?
 A generated Open in Excel option can be added on any form by implementing the ExportToExcelIGeneratedCustomExport interface. When adding a generated option programmatically, the set of fields can be explicitly specified.
 
-## What are the regionspecific considerations for defining entities?
+## What are the region-specific considerations for defining entities?
 The Open in Excel generated experiences can be made region-specific by adding region-specific fields into the AutoLookup group. Those region-specific fields will then be included in the generated workbook.
 
 ## How can I create a custom lookup for an entity field in Excel?
@@ -169,7 +169,7 @@ Don’t create a template if:
 
 -   You can just specify a set of fields to show in a table binding.
 
-## What are the regionspecific considerations for templates?
+## What are the region-specific considerations for templates?
 When creating a template for an entity that has region-specific fields, you should leave those region-specific fields out of the template since otherwise all users will see the region-specific fields. Templates should cater to the majority of users by default and region-specific users can add those fields using the easy-to-use design experience of the Excel Data Connector App.  The region-specific fields and columns can be added by users as needed and then that template can be either saved to local computer for reuse by a single user or uploaded via the Document Templates form for reuse by any user of that instance. A couple of other considerations:
 
 -   If a region has a region-specific entity, then a region-specific template could be created.
@@ -382,7 +382,7 @@ The reference to entities changed from using the Private Entity Name (DataEntity
 
 To resolve this, change the binding information in the affected template so that it points to DataEntity.PublicEntityName instead of DataEntity.Name.
 
-1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for exmaple replace FMCustomerEntity with FleetCustomer.
+1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for example replace FMCustomerEntity with FleetCustomer.
 2.  Find the affected template.
 3.  Change file extension on template from .xlsx to .zip.
     [![off101m](./media/off101m.png)](./media/off101m.png)

@@ -5,7 +5,7 @@ title: Segmented entry control migration
 description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
@@ -1212,7 +1212,7 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
             CustPaymJournalFee_CustAccount, currentPaymentFeeMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method can that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
 
 #### Step 5
 

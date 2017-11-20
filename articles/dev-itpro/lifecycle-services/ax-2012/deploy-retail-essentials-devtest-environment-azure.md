@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13261
 ms.assetid: 00e58780-7373-4c53-b3af-1e9d3d4eebff
@@ -120,7 +120,7 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
     -   A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\]You can’t use common passwords, such as: pass@word1
 
 8.  To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
-9.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99. When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8.If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
+9.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99. When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
 10. To customize virtual network settings, click **Customize virtual network**. Then use the following table to enter information.
     <table>
     <colgroup>
@@ -190,7 +190,7 @@ If you want sample data installed in your environment, complete the following st
 
 1.  Go to the following location:F:TestTransferTool
 2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
-3.  Open a command prompt and navigate to the following location:C:Program Files (x86)Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
+3.  Open a command prompt and navigate to the following location:C:\Program Files (x86)\Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  Run the following command:dp.exe import F:DemoData MicrosoftDynamicsAx
 
 **Note:** The sample data includes trial license keys for Dynamics AX. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
@@ -221,8 +221,8 @@ Open the Dynamics AX client and complete the following steps.
 
 8.  Click **Data synchronization &gt; Setup &gt; Channel integration &gt; Working folders.**
 9.  In the **Working folders** form, complete the following steps.
-    1.  Note the location in the **Download path** field. It is typically C:DemoFilesRetailCDXDownload.Create these folders on the C drive.
-    2.  Note the location in the **Upload path** field. It is typically C:DemoFilesRetailCDXUpload.Create these folders on the C drive.
+    1.  Note the location in the **Download path** field. It is typically C:\DemoFiles\Retail\CDXDownload.Create these folders on the C drive.
+    2.  Note the location in the **Upload path** field. It is typically C:\DemoFiles\Retail\CDXUpload.Create these folders on the C drive.
     3.  Close the form.
 
 10. Click **Data synchronization &gt; Setup &gt; Channel integration &gt; Channel database.**

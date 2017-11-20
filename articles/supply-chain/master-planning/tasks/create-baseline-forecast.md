@@ -5,7 +5,7 @@ title: Create a baseline forecast
 description: A production planner can create a baseline forecast either by using time series forecast models or by copying the historical demand. 
 author: YuyuScheller
 manager: AnnBe 
-ms.date: 10/27/2016
+ms.date: 111/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -46,7 +46,7 @@ A production planner can create a baseline forecast either by using time series 
 7. Close the page.
 8. Close the page.
 
-## Set up the demand forecasting paramters
+## Set up the demand forecasting parameters
 1. Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.
 2. Expand the Forecast algorithm parameters section.
 3. In the Forecast generation strategy field, select 'Copy over historical demand'.
@@ -83,5 +83,5 @@ A production planner can create a baseline forecast either by using time series 
     * In the cell, enter a different number than the one that was forecasted, for example, 400.  
 4. You have made a manual adjustment to the forecast. Notice the graphical indication in the next step.
 5. Click Forecast line details.
-    * In this page, you can see the accuracy values, historical demand, and forecast. You can make changes to the forecast as well.  
+    * On this page, you can see the accuracy values, historical demand, and forecast. You can make changes to the forecast as well.  
 

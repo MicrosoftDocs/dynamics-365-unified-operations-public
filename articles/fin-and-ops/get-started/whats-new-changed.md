@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
@@ -114,6 +114,13 @@ For information about how to upgrade to the latest version, see [Process for upg
 <th>Learn more</th>
 </tr>
 </thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 11</td>
+<td>7.0.4679.35176</td>
+<td>October 2017</td>
+<td><a href="whats-new-platform-update-11.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)</a></td>
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
