@@ -86,7 +86,7 @@ Download the *actual versions* of the following Electronic reporting (ER) config
 - **Data model:** Italian tax reports model
 - **Format:** Modello770 report (IT)
  
-For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json).
+For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Create and export the Model 770 report
 The Model 770 report exports the information to an ASCII file that will be submitted to the tax authorities. The name of the ASCII file must be \[company fiscal code\] 77S\[*YY*\].77s, where **YY** is the last two digits of the filing year. For more information about how to complete and file the Model 770 report, see the [Italian Revenue Agency](http://www.agenziaentrate.gov.it) website.
