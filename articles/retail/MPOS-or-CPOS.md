@@ -33,12 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](includes/banner.md)]
 
-This topic is intended to provide an implementer with additional background, tips, and guidance for things to consider when deploying a Microsoft Dynamics 365 for Retail feature. Implementer's should review and follow guidance in this topic as part of the deployment process, with the goal of utilizing this information to avoid unnecessary issues that could impact user satisfaction or performance.
+This topic is provides an implementer with additional background, tips, and guidance for things to consider when deploying Microsoft Dynamics 365 for Retail. Implementer's should review and follow this guidance as part of the deployment process, with the goal of utilizing this information to avoid unnecessary issues that could impact user satisfaction or performance.
 
 ## Insights
-Dynamics 365 for Retail provides a wide variety of deployment and topology options, which allows retailers to choose the components and configuration that best meets their business and technology needs.  One of the most important implementation aspects that requires careful consideration is choosing most appropriate platform and formfactor for the point of sale (POS) component.
+Dynamics 365 for Retail provides a wide variety of deployment and topology options, which allows retailers to choose the components and configuration that best meets their business and technology needs.  One of the most important implementation aspects that requires careful consideration is choosing most appropriate platform and form factor for the point of sale (POS) component.
 
-### POS platform and formfactor considerations
+### POS platform and form factor considerations
 The following POS options are supported in Dynamics 365 for Retail:
 * Retail Modern POS (MPOS) for Windows
 * Retail Modern POS (MPOS) for Windows Phone
@@ -46,10 +46,10 @@ The following POS options are supported in Dynamics 365 for Retail:
 * Cloud POS (CPOS) with Edge, IE, and Chrome support
 
 In all cases, the POS (MPOS and CPOS) share the same core application code. This is important because:
-*	The user interface is consistent regardless of platform or formfactor.
-*	Most of the functional capabilities are identical, regardless of platform or formfactor. There are some key differences, noted in this topic.
+*	The user interface is consistent regardless of platform or form factor.
+*	Most of the functional capabilities are identical, regardless of platform or form factor. There are some key differences, noted in this topic.
 *	These variations of POS can be mixed and coincide within a given store. A retailer could utilize MPOS on a Windows PC for their main registers, but easily supplement them with browser-based terminals or mobile devices.
-*	Customizations and extensions can easily be leveraged across platforms and formfactors. Because the core application code is shared, most customizations can be implemented once rather than individually.
+*	Customizations and extensions can easily be leveraged across platforms and form factors. Because the core application code is shared, most customizations can be implemented once rather than individually.
 
 ### Retail Modern POS applications vs Cloud POS
 As much as MPOS and CPOS are the same, there are some key differences that must be understood.
@@ -63,7 +63,7 @@ As much as MPOS and CPOS are the same, there are some key differences that must 
 **Cloud POS** - Because Cloud POS runs in a browser, the application is not installed on the device. The browser accesses the application code from the Cloud POS server. As a result, Cloud POS cannot directly access POS hardware or work in an offline state.
 
 ### Store deployment considerations
-In addition to the choice of platform and formfactor, the retailer also needs to choose from multiple deployment choices at the store.  The following table shows the available configurations for each POS option.
+In addition to the choice of platform and form factor, the retailer also needs to choose from multiple deployment choices at the store.  The following table shows the available configurations for each POS option.
 
 |POS application         |Retail server        |Available offline|
 |:------------------------|:---------------------|:-----------------|
@@ -81,16 +81,16 @@ Another area to consider is how the POS will access devices and peripherals such
 ## Implementation considerations
 Consider the following information as you plan your POS implementation at your retail stores.
 
-- **Functional requirements** – The core business processes and capabilities are the same regardless of platform, formfactor, or deployment topology.  This means that most part retailers do not need to include this in their considerations when planning their implementation.  
+- **Functional requirements** – The core business processes and capabilities are the same regardless of platform, form factor, or deployment topology.  This means that most part retailers do not need to include this in their considerations when planning their implementation.  
 
 -	**Connectivity** - Network availability (WAN and LAN) is a major factor that needs careful consideration. The cost and simplicity benefits of a zero footprint, cloud-hosted solution, are completely lost if the system is not available for business-critical processes. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unless the connectivity for a given device is extremely dependable and resilient, or the retailer can accept a certain amount of down time, it is recommended to either:
+    Unless the connectivity for a given device is extremely dependable and resilient, or the retailer can accept a certain amount of down time, it is recommended to either:
 
 * Utilize Retail Modern POS on Windows with offline enabled
 * Deploy a Retail Store Scale Unit on-premises 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It should also be noted that these options are not mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU reducing the dependency on internet connectivity or Azure availability and offline enabled POS registers, if there is an issue with the local server or network.
+    It should also be noted that these options are not mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU reducing the dependency on internet connectivity or Azure availability and offline enabled POS registers, if there is an issue with the local server or network.
 
 -	**Hardware devices/peripherals** – A key aspect of a Retail POS system is its ability to utilize POS peripherals such as printers, cash drawers, and payment terminals. While any of the POS options available can utilize peripheral devices, only Retail Modern POS for Windows can support them directly. For all other applications, one or more Hardware stations are required. This adds flexibility, but it also means that additional components need to be deployed, configured, and serviced.
 
