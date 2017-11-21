@@ -36,29 +36,30 @@ A channels overall product mix is determined by all published assortments that a
 ### Basic assortment setup
 In the example below (Figure 1) a unique assortment is configured for each store.  In this case only “Product 1” is available in “Store 1” and only “Product 2” is available at “Store 2”.
 
-Image place holder Figure 1
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Figure 1")
 
 In order to make “Product 2” available in “Store 1” the user can either add the product to “Assortment 1” (Figure 3) or add “Store 1” to “Assortment 2” (Figure 4).
 
-Image place holder Figure 2
-Image place holder Figure 3
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Figure 2")
+
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Figure 3")
 
 ### Organization hierarchies
 In situations where multiple channels share the same product assortments, users can configure the assortments using the “Retail assortment” organization hierarchy.  Adding nodes from this hierarchy will include all channels in that node and its child nodes (Figure 4).
 
-Image place holder Figure 4
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Figure 4")
 
 ### Product categories
 Similarly, on the product side, groups of products can be included by using product category hierarchies.  Users can configure assortments by including one or more category hierarchy nodes (Figure 5).  In this case, the assortment will include all products in that category node and its child nodes.
 
-Image place holder Figure 5
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Figure 5")
 
 ### Excluded products or categories
 In addition to including products and categories in assortments, users can also use the exclude option to more easily specify definition.  In the example below, the user intends to have all products in a specified category included, except for “Product 2”.  Rather than defining the assortment product by product or creating additional category nodes, the user can simply include the category, but exclude the product.
 
 *Important:* In a situation where a product is both included and excluded by definition in one or more assortments, the product will always be considered excluded.
 
-Image place holder Figure 6
+![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Figure 6")
 
 ### Global and released products
 Assortments are defined at a global level and can contain channels from multiple legal entities.  The products and categories that are included in assortments are also shared across legal entities.  However, in order to actually sell, order, count, or receive a product, within the channel (for example within POS), the product must first be released.  This means two stores in different legal entities can share an assortment containing the same product, but the products are only available if they have been released to the legal entities.
