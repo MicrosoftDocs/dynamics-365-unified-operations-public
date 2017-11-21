@@ -50,6 +50,7 @@ previous releases mentioned in this topic supported cloud deployments only.
 
 These two reports are no longer supported in Finance and Operations. Instead, the **Inventory aging** report can be used to improve the user experience.
 
+|   |  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reason for deprecation**       | Duplicate functionality                                                                                                                                                                               |
 | **Replaced by another feature?** | Yes. The two reports have been replaced by the **Inventory aging** report.                                                                                                                            |
