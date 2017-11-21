@@ -38,9 +38,11 @@ In the example below (Figure 1) a unique assortment is configured for each store
 
 ![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Figure 1")
 
-In order to make “Product 2” available in “Store 1” the user can either add the product to “Assortment 1” (Figure 3) or add “Store 1” to “Assortment 2” (Figure 4).
+In order to make “Product 2” available in “Store 1” the user can add the product to “Assortment 1” (Figure 2) 
 
 ![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Figure 2")
+
+Or, they can add “Store 1” to “Assortment 2” (Figure 3).
 
 ![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Figure 3")
 
