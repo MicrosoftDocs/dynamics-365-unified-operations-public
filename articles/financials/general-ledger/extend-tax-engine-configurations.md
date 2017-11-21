@@ -144,9 +144,6 @@ To support the scenario, the following must be done:
 2. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **SGST**, and then click the **Lookup** tab.
 3. Click **Columns**.
 4. Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
-
-![](media/gte-column-selection.png)
-
 5. For the **IntraStateInUnionTerritory** column, select **No**.
 6. Click **Save** to save the configuration.
 
@@ -250,7 +247,7 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 >   For example, change the **Tax amount Inclusive** formula as shown here.
 
-	![](media/gte-tax-amount-inclusive.png)
+![](media/gte-tax-amount-inclusive.png)
 
 3. Save the tax document.
 4. Close the designer.
@@ -329,8 +326,6 @@ Before you start this scenario, be sure to read the **Tax Engine Integration** d
 #### Task 10.1: Check the system name of the Union Territory of State master
 
 Go to **Organization administration** \> **Addresses** \> **Address setup**. Although a check box indicates whether a state is a union territory, the value isn’t provided to GTE. Right-click the **Union territory** column, and then click **Personalize**. You will see that the system name for the column is **LogisticsAddressState\_IN.UnionTerritory**.
-
-![](media/f7c464ac22eadb35058072914e5ba91d.png)
 
 #### Task 10.2: Add a tax engine model field for intrastate transactions in a union territory
 
@@ -466,23 +461,18 @@ Apply the different tax rate of BCD for import order of goods from difference co
 
 ### Task 2: Add Reference model for Country/Region of Origin
 
-1.  Navigate to the **Taxable Document (India Contoso)** configuration, and then
+1. Navigate to the **Taxable Document (India Contoso)** configuration, and then
     click **Designer**.
-
-	![](media/4f4b968b23228fcc6e60c8cdadd4f942.png)
-
-2. Click the **three dots** button, then click **Reference model** to change
+2. Click the elipses button, then click **Reference model** to change
     the view to Reference model, so you can view all the available reference
     models.
 
-    ![](media/123185bb08446e4b98283003e4115ebd.png)
+    ![](media/gte-reference-model.png)
 
 3.  Click **New** to add a new reference model.
 
     -	**Name:** Country of Origin
     -	**Node type:** Model root
-
-	![](media/7d36ec1c370b69d7d7e9d40f7a4e34be.png)
 
 4.  Click **Add**.
 5.  Highlight **Country of Origin**, click **New** to add new reference model.
@@ -490,8 +480,6 @@ Apply the different tax rate of BCD for import order of goods from difference co
     -   **Name:** Countries of Origin
     -   **Node type:** Child of an active node
     -   **Item type:** Record list
-
-	![](media/f28397d3358acb669f1694a3823389fa.png)
 
 6.  Click **Add**.
 
@@ -501,17 +489,11 @@ Apply the different tax rate of BCD for import order of goods from difference co
     -   **Node type:** Child of an active node
     -   **Item type:** String
 
-        ![](media/c16b0a4c1987f51baef302d6d5fe47d8.png)
-
 8.  Click **Add**.
 9.  Highlight **Country of Origin**, click **Natural key**.
 
-	![](media/091afd9b2ee1ca4f4f2695f53dd4775c.png)
-
 10.  Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the
     **Natural key**.
-
-    ![](media/535f2d380d45557c6ef2b5a34d9cd6b0.png)
 
 11.  If there are any errors, open the designer, click **Validate**, and fix the
     errors.
@@ -521,51 +503,28 @@ deployment.
 
 ### Task 3: Link the reference model to field in taxable document
 
-1.  Click the **three dots** button, then click **Taxable document** to change
-    the view to Taxable document.
-
-    ![](media/e73e5e4d125e414a3922d3b8dddef00f.png)
-
-2.  Navigate to **Taxable document** \> **Header** \> **Lines** \> **GST** \>
-    **Country/Region of Origin**, and then click **Select reference model**,
-    choose **Country of Origin**.
-
-3.  Click **OK** button.
-
-	![](media/baac5f34304f728a09e5641222721cab.png)
-
-4.  Save the configuration, and close the designer.
-5.  In the **Configurations** workspace, click **Change status**, and then
+1. Click the elipses button, then click **Taxable document** to change the view to Taxable document.
+2. Navigate to **Taxable document** \> **Header** \> **Lines** \> **GST** \> **Country/Region of Origin**.
+3. On the **Node** FastTab, click **Select reference model**. 
+4. Choose **Country of Origin** for the reference model.
+5. Click **OK**.
+6. Save the configuration, and close the designer.
+7. In the **Configurations** workspace, click **Change status**, and then
     select **Complete**.
-
-	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
-
-6.  Enter a description such as **Add reference model for Country of Origin**,
+8. Enter a description such as **Add reference model for Country of Origin**,
     and then click **OK**.
-7.  If there are any errors, open the designer, click **Validate**, and fix the
+9. If there are any errors, open the designer, click **Validate**, and fix the
     errors.
 
-After the status is updated to **Complete**, the configuration is ready for
-deployment.
+After the status is updated to **Complete**, the configuration is ready for deployment.
 
 ### Task 4: Change the lookup of BCD tax rate
 
-1.  Navigate to the **Tax (India GST Contoso)** configuration, and then click
-    **Designer**.
-
-	![](media/c3fcf88a39b927857071c8e7deaf78e2.png)
-
-2.  Change the data model of **Tax (India GST Contoso)** to the updated version
-    of the extended taxable document follow the steps described in **Scenario
-    1-\>Task 3**.
-3.  Navigate to **Tax document** \> **Header** \> **Lines** \> **Custom Duty**
-    \> **BCD** \> **Rate**, and then click the **Lookup** tab.
+1.  Navigate to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
+2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document follow the steps described in **Scenario 1-\>Task 3**.
+3.  Navigate to **Tax document** \> **Header** \> **Lines** \> **Custom Duty** \> **BCD** \> **Rate**, and then click the **Lookup** tab.
 4.  Click **Columns**.
-5.  Select **Country/Region of Origin** as the lookup column, and then click the
-    right arrow button.
-
-	![](media/c9f578f35ad27e70ef0c050f8b989fa8.png)
-
+5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save** to save the configuration.
 
 ### Task 5: Complete the tax document configuration
@@ -579,18 +538,12 @@ Please follow the same steps described in **Scenario 1-\>Task 9**.
 
 ### Task 8: Add tax runtime reference model mapping in AOT 
 
-1.  Go to **Organization administration** \> **Addresses** \> **Address setup**
-    \> **Country/Region**. Right-click the **Country/Region** column, and then
-    click **Personalize**. You will see that the system name for the column is
-    **LogisticsAddressCountryRegion.CountryRegionId**.
+1. Go to **Organization administration** \> **Addresses** \> **Address setup** \> **Country/Region**. 
+2. Right-click the **Country/Region** column, and then click **Personalize**. You will see that the system name for the column is  **LogisticsAddressCountryRegion.CountryRegionId**.
 
-	![](media/c7abea53c4278bb0e5a96ca9462565e2.png)
+3.  Add Reference model name and Reference field name to **TaxRuntimeReferenceModel**
 
-2.  Add Reference model name and Reference field name to
-    **TaxRuntimeReferenceModel**
-
-3. In the AOT, open **Macros** \> **TaxRuntimeReferenceModel**. Add two new macros
-for Reference model name and Reference field name.
+4. In the AOT, open **Macros** \> **TaxRuntimeReferenceModel**. Add two new macros for Reference model name and Reference field name.
 
 // Reference model name
 
@@ -714,11 +667,5 @@ TaxRuntimeReferenceModelMapping
 }
 
 1.  Restart AOS.
-
-    ![](media/138847562184c990cffc0e9de7dfe397.png)
-
 2.  Refresh elements by clicking **AOT** \> **Tools** \> **Caches** \>**Refresh
     elements**.
-
-    ![](media/f792b57e643f93597343cfb8f6e736d4.png)
-
