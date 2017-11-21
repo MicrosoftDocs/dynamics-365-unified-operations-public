@@ -59,8 +59,7 @@ Throughout this table, under the <br/>**Reason for Deprecation** heading, "the c
 | DataSet DataSetNode DataSetRun |Class | |**Overview**<br/>Used in Dynamics AX 2012 with Enterprise Portal.<br/>**Reason for deprecation**<br/>Not applicable in the client.<h4 ><br/><br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | DataSourceMethodInfo <br>DataSourceMethodInfoList |Class | | |
 | DDEClient DDEServer DLL DLLFunction HDC HWnd Thread WinAPINative WinGDI |Class | |**Overview**<br/>N/A<br/>**Reason for deprecation**<br/>Specific to Dynamics AX 2012 Windows client and not compatible with the client.<br/>**Migration notes**<br/>Remove usage of these APIs from your code. |
-| DocumentManagement-
-Helper |Class | | |
+| DocumentManagement- <br>Helper |Class | | |
 | Form |Method | addhistory <br>currentHistoryName <br>currentHistoryState <br>updateHistory |**Overview**<br/>Used in Dynamics AX 2012 with address bar.<br/>**Reason for deprecation**<br/>Navigation model in the client has changed.<br/><br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | Form |Method |arrange | |
 | Form |Method |controlCallingMethod | |
