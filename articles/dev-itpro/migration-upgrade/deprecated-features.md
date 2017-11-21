@@ -48,16 +48,14 @@ previous releases mentioned in this topic supported cloud deployments only.
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
-The two reports are no longer supported in Microsoft Dynamics 365 for Finance
-and Operations, Enterprise edition. Instead, the **Inventory aging** report can
-be used to improve the user experience.
+These two reports are no longer supported in Finance and Operations. Instead, the **Inventory aging** report can be used to improve the user experience.
 
-| Reason for deprecation       | Duplicate functionality                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Replaced by another feature? | Yes. The two reports have been replaced by the **Inventory aging** report.                                                                                                                            |
-| Product areas affected       | Inventory management, Cost management                                                                                                                                                                 |
+| **Reason for deprecation**       | Duplicate functionality                                                                                                                                                                               |
+| **Replaced by another feature?** | Yes. The two reports have been replaced by the **Inventory aging** report.                                                                                                                            |
+| **Product areas affected**       | Inventory management, Cost management                                                                                                                                                                 |
 | **Deployment option**        | All                                                                                                                                                                                                   |
-| Status                       | Deprecated - The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
+| **Status**                       | Deprecated - The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
 
 **Standard UI in data management workspace**
 
