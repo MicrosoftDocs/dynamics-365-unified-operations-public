@@ -87,8 +87,8 @@ Consider the following information as you plan your POS implementation at your r
 
     Unless the connectivity for a given device is extremely dependable and resilient, or the retailer can accept a certain amount of down time, it is recommended to either:
 
-* Utilize Retail Modern POS on Windows with offline enabled
-* Deploy a Retail Store Scale Unit on-premises 
+    - Utilize Retail Modern POS on Windows with offline enabled
+    - Deploy a Retail Store Scale Unit on-premises 
 
     It should also be noted that these options are not mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU reducing the dependency on internet connectivity or Azure availability and offline enabled POS registers, if there is an issue with the local server or network.
 
