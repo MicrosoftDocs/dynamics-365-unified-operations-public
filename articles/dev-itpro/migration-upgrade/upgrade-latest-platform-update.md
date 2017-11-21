@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Update Dynamics 365 Finance and Operations environment to the latest platform update
-description: This topic explains how to update your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
+title: Apply the latest platform update to your Dynamics 365 Finance and Operations environment
+description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
 ms.date: 11/10/2017
@@ -29,14 +29,13 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
 
-# Upgrade Finance and Operations to the latest platform update
+# Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
+This topic explains how to apply the latest platform release to your Microsoft Dynamics 365 for Finance and Operations environment.
 
-Overview
---------
+## Overview
 
 The Microsoft Dynamics 365 for Finance and Operations platform consists of the following components:
 
