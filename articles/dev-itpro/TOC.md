@@ -545,7 +545,7 @@
 ## Upgrade to a recent update
 ### [Process for moving to the latest update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle policy](migration-upgrade/versions-update-policy.md)
-### [Upgrade to the latest platform update](migration-upgrade/upgrade-latest-platform-update.md)
+### [Apply the latest platform update to your environment](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Upgrade the Dynamics platform to the August 2016 release](migration-upgrade/update-platform-each-release.md)
 ### [Upgrade a sandbox environment](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade data in development or demo environments](migration-upgrade/upgrade-data-to-latest-update.md)
