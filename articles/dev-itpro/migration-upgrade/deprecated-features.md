@@ -44,7 +44,7 @@ edition version 7.2 (July 2017) with platform update 8 release, the type of
 deployments are noted for each removed or deprecated feature. All of the
 previous releases mentioned in this topic supported cloud deployments only.
 
-## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition version 7.3 with platform update 12**
+## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition version 7.3 with platform update 12
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
