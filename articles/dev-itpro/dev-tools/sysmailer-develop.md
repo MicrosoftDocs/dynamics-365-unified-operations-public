@@ -33,69 +33,48 @@ ms.dyn365.ops.version: Platform update 4
 
 ## Sending emails
 
-An application developer consumes the SysMailer framework primarily via two classes: **SysMailerFactory** and **SysMailerMessageBuilder**. The email provider factory is used to retrieve interactive or non-interactive email providers to send multiple messages at a time, or to directly send a message. The email providers expect the messages they send to be encapsulated within .NET System.Net.Mail.MailMessage objects. To facilitate ease of interacting with those objects, the message builder class may be used to build the .NET object to pass to the email provider.
+An application developer consumes the SysMailer framework primarily by using the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers to send multiple messages at a time, or to directly send a message. The email providers expect the messages they send to be encapsulated within .NET **System.Net.Mail.MailMessage** objects. The message builder class is used to build the .NET object to pass to the email provider.
 
 ### Scenarios
 
-Below are some scenarios that illustrate how to use the SysMailer framework to send emails.
+Three scenarios are described:
+- Sending an interative message.
+- Sending a non-interactive (batch) message.
+- Sending multiple non-interactive (batch) messages
 
-#### Scenario 1: Sending an interactive message
+#### Sending an interactive message
 
-The following example is taken from the CustCollectionsEmail class. It demonstrates multiple features of the framework such as chaining message builder calls, conditionally setting the sender (from) address, and adding attachments.
+The following example is taken from the **CustCollectionsEmail** class. It demonstrates multiple features of the framework, including chaining message builder calls, conditionally setting the sender (from) address, and adding attachments.
 
+```
 using (System.IO.Stream attachmentStream = this.generateAttachment())
-
 {
-
-var messageBuilder = new SysMailerMessageBuilder();
-
-messageBuilder.addTo(context.parmEmailAddress())
-
-.setSubject(emailSubject)
-
-.setBody(SysEmailMessage::stringExpand(emailBody,
-
-SysEmailTable::htmlEncodeParameters(templateTokens)));
-
-if (emailSenderAddr)
-
-{
-
-messageBuilder.setFrom(emailSenderAddr, emailSenderName);
-
+    var messageBuilder = new SysMailerMessageBuilder();
+    messageBuilder.addTo(context.parmEmailAddress())
+    .setSubject(emailSubject)
+    .setBody(SysEmailMessage::stringExpand(emailBody,
+    SysEmailTable::htmlEncodeParameters(templateTokens)));
+    if (emailSenderAddr)
+    {
+        messageBuilder.setFrom(emailSenderAddr, emailSenderName);
+    }
+    else if (custParameters.CollectionsOMTeam)
+    {
+        var collectionsEmail = OMTeam::find(custParameters.CollectionsOMTeam).primaryEmail();
+        if (strLen(collectionsEmail) &gt; 0)
+        {
+            messageBuilder.setFrom(collectionsEmail);
+        }
+    }
+    if (attachmentStream != null)
+    {
+        messageBuilder.addAttachment(
+            attachmentStream,
+            strFmt('%1%2', strReplace(DateTimeUtil::toStr(DateTimeUtil::utcNow()), ':', ''), '.xlsx'));
+    }
+    SysMailerFactory::sendInteractive(messageBuilder.getMessage());
 }
-
-else if (custParameters.CollectionsOMTeam)
-
-{
-
-var collectionsEmail = OMTeam::find(custParameters.CollectionsOMTeam).primaryEmail();
-
-if (strLen(collectionsEmail) &gt; 0)
-
-{
-
-messageBuilder.setFrom(collectionsEmail);
-
-}
-
-}
-
-if (attachmentStream != null)
-
-{
-
-messageBuilder.addAttachment(
-
-attachmentStream,
-
-strFmt('%1%2', strReplace(DateTimeUtil::toStr(DateTimeUtil::utcNow()), ':', ''), '.xlsx'));
-
-}
-
-SysMailerFactory::sendInteractive(messageBuilder.getMessage());
-
-}
+```
 
 #### Scenario 2: Sending a non-interactive (batch) message
 
