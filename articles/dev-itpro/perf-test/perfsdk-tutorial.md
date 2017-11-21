@@ -269,7 +269,7 @@ You can now run performance tests against the topology.
     [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
 
     > [!NOTE]
-    > Information about your system while testing isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine, and set up the SQL/Windows Azure portal to monitor SQL usage of Database Transaction Units (DTUs).
+    > Information about your system while testing isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine, and set up the Windows Azure portal to monitor SQL Server usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
 
