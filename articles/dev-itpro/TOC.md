@@ -570,6 +570,7 @@
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
 ## [Maintenance mode](sysadmin/maintenance-mode.md)
 ## [Pre-configured system accounts](sysadmin/pre-configured-system-accounts.md)
+## [Export B2B users to Azure AD](sysadmin/implement-b2b.md)
 ## [Role-based security](sysadmin/role-based-security.md)
 ### [Security architecture](sysadmin/security-architecture.md)
 ### [Security reports](sysadmin/security-reports.md)
