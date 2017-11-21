@@ -508,7 +508,7 @@ The setup of business statistics inquiries that can help you analyze the perform
 | **Product areas affected**         | Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                               |
 
-### *hange document date function in Invoice approval journal
+### Change document date function in Invoice approval journal
 
 |   |  |
 |------------|--------------------|
