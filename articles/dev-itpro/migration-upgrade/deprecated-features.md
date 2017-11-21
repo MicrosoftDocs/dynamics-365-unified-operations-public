@@ -82,7 +82,7 @@ The Cost management content pack for Power BI was intended for inventory account
 | **Deployment option**              | All                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.                                      |
 
-## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8**
+## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8
 
 ### Warehouse mobile devices portal
 
@@ -94,7 +94,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 | **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
-| **Status**                         | Deprecated - A removal date has not been set for this feature.   |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
 
 ### Advanced bank reconciliation matching rule for manual matching
 
@@ -131,7 +131,7 @@ The Consejo Superior Bancario payment formats are used to send remittance files 
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                  |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain |
 | **Product areas affected**         | Accounts payable, Accounts receivable                                    |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.           |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.           |
 
 ### Bank payments transfer for Lithuania
 
@@ -142,7 +142,7 @@ Bank payment transfers are generated and printed by using the Payment transfer (
 | **Reason for deprecation/removal** | The payment formats are no longer used.                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Lithuania     |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### BBS Direkte Remittering payment formats for Norway
 
@@ -153,7 +153,7 @@ BBS Direkte Remittering payment formats include customer payment collection expo
 | **Reason for deprecation/removal** | The payment formats are no longer used.  |
 | **Replaced by another feature?**   | The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages. Return message import will be implemented in future releases. |
 | **Product areas affected**         | Accounts payable, Accounts receivable   |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                                 |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                                                                                                 |
 
 ### Chart of Accounts tool for Spain
 
@@ -164,7 +164,7 @@ This tool is used when a chart of accounts in Spain requires major changes. User
 | **Reason for deprecation/removal** | Limited usage                                                  |
 | **Replaced by another feature?**   | No                                                             |
 | **Product areas affected**         | General ledger                                                 |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Dom80 payment format for Belgium
 
@@ -175,7 +175,7 @@ Legacy Belgian payment format for payment collection (direct debit).
 | **Reason for deprecation/removal** | The payment format is no longer used.                          |
 | **Replaced by another feature?**   | Yes, ISO 20022 Direct debit payment format for Belgium         |
 | **Product areas affected**         | Accounts receivable                                            |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### DTA/EZAG payment formats for Switzerland
 
@@ -186,7 +186,7 @@ DTA/EZAG formats are integrated into the ESR system, because they can carry on t
 | **Reason for deprecation/removal** | The payment formats are no longer used.                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Switzerland   |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### EDIFACT-DIRDEB payment format for Austria
 
@@ -197,7 +197,7 @@ EDIFACT-DIRDEB payment format for payment collection (direct debit).
 | **Reason for deprecation/removal** | The payment format is no longer used.                          |
 | **Replaced by another feature?**   | Yes, ISO 20022 Direct debit payment format for Austria         |
 | **Product areas affected**         | Accounts receivable                                            |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### EDIVAT for Belgium
 
@@ -208,7 +208,7 @@ EDIVAT is an obsolete Belgian standard for electronic declaration via secure mai
 | **Reason for deprecation/removal** | The functionality is no longer used.                           |
 | **Replaced by another feature?**   | No                                                             |
 | **Product areas affected**         | General ledger                                                 |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### eGiro EDIFACT CREMUL payment import format for Norway
 
@@ -219,7 +219,7 @@ eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Me
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
 | **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
 | **Product areas affected**         | Accounts receivable                                                                       |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
 ### External inventory for Poland
 
@@ -230,7 +230,7 @@ Evidence of goods that are taken from a vendor for sales without purchase. Goods
 | **Reason for deprecation/removal** | Replaced by another feature                                    |
 | **Replaced by another feature?**   | Yes, the core Inbound consignment functionality                |
 | **Product areas affected**         | Accounts payable, Inventory management                         |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Financial reports generator for Eastern Europe
 
@@ -241,7 +241,7 @@ A tool is used to set up data collection for accounting and tax reports, and to 
 | **Reason for deprecation/removal** | Limited usage                                                                            |
 | **Replaced by another feature?**   | No. The tool will be replaced by Electronic reporting configurations in future releases. |
 | **Product areas affected**         | General Ledger                                                                           |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                           |
 
 ### Import of customer payment transactions for Finland
 
@@ -252,7 +252,7 @@ You can select an import format for Finnish payments to import customer payment 
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
 | **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
 | **Product areas affected**         | Accounts receivable                                                                       |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
 ### Import of payment transactions into a general ledger journal for Finland
 
@@ -263,7 +263,7 @@ A format that is specific to Finland is used to import accounting transactions i
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
 | **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
 | **Product areas affected**         | Accounts receivable                                                                       |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
 ### Integration with Isabel synchronized (CIS) for Belgium
 
@@ -274,7 +274,7 @@ Isabel is the framework for electronic banking in Europe and is a de-facto stand
 | **Reason for deprecation/removal** | Integration with Isabel client has been discontinued.   |
 | **Replaced by another feature?**   | No. The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium. |
 | **Product areas affected**         | Accounts payable     |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.    |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.    |
 
 ### Modifications in the chart of accounts and accounting rules for Spain
 
@@ -285,7 +285,7 @@ This feature is used for changes in the chart of accounts and accounting rules i
 | **Reason for deprecation/removal** | Limited usage                                                  |
 | **Replaced by another feature?**   | No                                                             |
 | **Product areas affected**         | General ledger                                                 |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Pagamento Fornittori vendor payment format
 
@@ -296,7 +296,7 @@ Legacy Italian payment format for credit transfers.
 | **Reason for deprecation/removal** | The payment format is no longer used.                          |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Italy         |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Payment export formats for Estonia
 
@@ -307,7 +307,7 @@ The Telehansa and Teleservice formats are used for bank payment export.
 | **Reason for deprecation/removal** | The payment formats are no longer used.                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Estonia       |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Payment file archive for Norway
 
@@ -318,7 +318,7 @@ When payment files are generated, the file archive automatically archives all fi
 | **Reason for deprecation/removal** | Replaced by another feature                                        |
 | **Replaced by another feature?**   | Yes, Electronic reporting archived jobs                            |
 | **Product areas affected**         | Accounts payable, Accounts receivable, Organization administration |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.     |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.     |
 
 ### Payment import formats for Estonia
 
@@ -329,7 +329,7 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                    |
 | **Replaced by another feature?**   | No. The formats will be replaced by ISO 20022 statement import formats in future releases. |
 | **Product areas affected**         | Accounts receivable                                                                        |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                             |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                             |
 
 ### Performance management goal workflow
 
@@ -351,7 +351,7 @@ Postgirot and Postgirot Utland payment formats for Sweden.
 | **Reason for deprecation/removal** | The payment formats are no longer used.                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Sweden        |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Radio frequency identifier
 
@@ -373,7 +373,7 @@ Latvian legislation provides specific rules about the numbering of sales invoice
 | **Reason for deprecation/removal** | The state invoice numbering no longer has to be maintained. The report about used invoice numbers is no longer required. |
 | **Replaced by another feature?**   | No       |
 | **Product areas affected**         | Accounts receivable    |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.  |
 
 ### Set up the names of the manager and general accountant of a company for Lithuania
 
@@ -384,7 +384,7 @@ The names of the manager and the general accountant of a company can be specifie
 | **Reason for deprecation/removal** | Replaced by another feature                                     |
 | **Replaced by another feature?**   | Yes, the setup of officials can be used for the same purpose.   |
 | **Product areas affected**         | Accounts payable, Accounts receivable, Cash and bank management |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.  |
 
 ### Telepay payment formats for Norway
 
@@ -395,7 +395,7 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
 | **Product areas affected**         | Accounts payable, Accounts receivable                                                          |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                                 |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                                 |
 
 ### Vendor payment export formats for Finland
 
@@ -406,7 +406,7 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 | **Reason for deprecation/removal** | The payment formats are no longer used.                        |
 | **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format for Finland       |
 | **Product areas affected**         | Accounts payable                                               |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Workflow for creating goals
 
@@ -419,7 +419,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 | **Product areas affected**         | Human capital management                 |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
 
-## Features that have been deprecated in Dynamics AX 7.0 releases**
+## Features that have been deprecated in Dynamics AX 7.0 releases
 
 
 ### Ability to cancel changes to a vendor invoice
@@ -462,7 +462,7 @@ Specific method of payment for Brazilian companies
 | **Reason for deprecation/removal** | Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization |
 | **Replaced by another feature?**   | No   |
 | **Product areas affected**         | Accounts payable   |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Brazilian Sintegra statement
 
@@ -473,7 +473,7 @@ Federal tax statement for ICMS tax
 | **Reason for deprecation/removal** | This statement is not longer applicable in some Brazilian states. |
 | **Replaced by another feature?**   | No. Users can use Generic Electronic reporting tool to configure the statement if required under specific situations. |
 | **Product areas affected**         | Fiscal books    |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.   |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
 
 ### Brazilian SCAN contingency mode for NF-e
 
@@ -484,7 +484,7 @@ Federal tax statement for ICMS tax
 | **Reason for deprecation/removal** | This method of contingency is not longer applicable in all Brazilian states |
 | **Replaced by another feature?**   | No                                                                          |
 | **Product areas affected**         | Accounts receivable                                                         |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.              |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.              |
 
 ### Business Analyzer
 
@@ -495,7 +495,7 @@ This mobile application let users review key business metrics.
 | **Reason for deprecation/removal** | This functionality has been replaced by another feature.   |
 | **Replaced by another feature?**   | The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer. |
 | **Product areas affected**         | General ledger      |
-| **Status**                         | Deprecated – The use of Business Analyzer has been deprecated.    |
+| **Status**                         | Deprecated: The use of Business Analyzer has been deprecated.    |
 
 ### Business statistics
 
@@ -524,7 +524,7 @@ The setup of business statistics inquiries that can help you analyze the perform
 | **Reason for deprecation/removal** | The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality. |
 | **Replaced by another feature?**   | SEPA payments export  |
 | **Product areas affected**         | All modules     |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.   |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
 
 ### Compliance Center
 
@@ -582,7 +582,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Reason for deprecation/removal** | Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization. |
 | **Replaced by another feature?**   | No    |
 | **Product areas affected**         | All modules    |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.  |
 
 ### Data partitions
 
@@ -642,7 +642,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 | **Reason for deprecation/removal** | Generic functionality is now used instead of localized functionality.                    |
 | **Replaced by another feature?**   | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
 | **Product areas affected**         | All modules                                                                              |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                           |
 
 ### eBilanz (XBRL for Germany)
 
@@ -653,7 +653,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Reason for deprecation/removal** | Lack of customer usage  |
 | **Replaced by another feature?**   | This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market. |
 | **Product areas affected**         | Management Reporter      |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.  |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.  |
 
 ### Enterprise Portal client
 
@@ -700,7 +700,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.                    |
 | **Replaced by another feature?**   | Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements. |
 | **Product areas affected**         | All modules  |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### German DTAZV payment format
 
@@ -709,7 +709,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
 | **Replaced by another feature?**   | SEPA payments export    |
 | **Product areas affected**         | All modules   |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.    |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.    |
 
 ### German MT940 import
 
@@ -718,7 +718,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Reason for deprecation/removal** | Generic functionality is now used instead of localized functionality.                    |
 | **Replaced by another feature?**   | Yes, this functionality has been replaced by Advanced bank reconciliation functionality. |
 | **Product areas affected**         | All modules                                                                              |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.                           |
 
 ### German XML EU Sales list
 
@@ -727,7 +727,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Reason for deprecation/removal** | The XML format for German EU Sales List reporting is no longer supported. Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office. |
 | **Replaced by another feature?**   | No         |
 | **Product areas affected**         | Tax        |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.   |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
 
 ### GL SSRS reports
 
@@ -769,7 +769,7 @@ This feature let the user print a cash flow report that shows transactions and d
 | **Reason for deprecation/removal** | The same information can be obtained from the Inquiry bank transaction. |
 | **Replaced by another feature?**   | The Inquiry bank transaction                                            |
 | **Product areas affected**         | Cash and bank management                                                |
-| **Status**                         | Deprecated – A removal date has not been set for this feature.          |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.          |
 
 ### Mexican CFD electronic invoice
 
@@ -780,7 +780,7 @@ This feature enabled the generation of Mexican electronic invoices by using the 
 | **Reason for deprecation/removal** | The method is no longer applicable. The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC). The monthly report has been removed, and an inquiry option lets users inquire about historical transactions. |
 | **Replaced by another feature?**   | No    |
 | **Product areas affected**         | Account receivables, Project   |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Mexico realized and unrealized VAT
 
@@ -791,7 +791,7 @@ Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mex
 | **Reason for deprecation/removal** | Duplicate functionality  |
 | **Replaced by another feature?**   | Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core. |
 | **Product areas affected**         | Tax   |
-| **Status**                         | Deprecated – A removal date has not been set for this feature. |
+| **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
 ### Microsoft Outlook integration
 
