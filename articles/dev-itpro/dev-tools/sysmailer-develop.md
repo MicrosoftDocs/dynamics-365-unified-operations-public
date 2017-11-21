@@ -1,4 +1,4 @@
-    ---
+---
 # required metadata
 
 title: Develop email experiences
@@ -118,21 +118,14 @@ for (i = 1; i &lt;= conLen(\_notifyCon); i++)
 
 ### Important considerations
 
-
--   A sender (from) address is always required when sending a message to an email provider. A receiver (to) address is always required when sending messages non-interactively. If these conditions are not met the framework will throw an exception. If getMessage() is called on the message builder before any call to setFrom() is made, the builder will attempt to default the sender address to the current user’s email address or network alias.
-
--   When sending a message, the way the sender (from) address is used depends on the provider:
-
-    -   EML provider - The sender address is removed from the message before opening it in the user’s email client. This allows the email client to default the sender address to its default account configured for sending mail.
-
-    -   SMTP provider - The SMTP server must be configured to allow sending using that (from) address i.e. the SMTP server permits the impersonation of emails sent from it. If not then the SMTP server may deny the sending of the message, flag it as spam, etc.
-
--   When sending messages, the framework will return a Boolean value indicating the success of the operation to send the message, but will not report any messages to the Infolog upon success. It is left up to each individual application team to decide if they wish to place any messages in the Infolog upon success.
-
--   All messages by default are sent with rich-text (HTML) bodies. If an application scenario requires the use of plain text to maintain newline spacing, this can be achieved by passing false to the optional \_isHtml parameter of the setBody() method on the message builder.
+- A sender address (from) is required when sending a message to an email provider. A receiver address (to) is required when sending messages non-interactively. If these conditions are not met the framework throws an exception. If **getMessage** is called on the message builder before any call to **setFrom** is made, the builder will attempt to default the sender address to the current user’s email address or network alias.
+- When sending a message, the way the sender address (from) is used depends on the provider:
+    - EML provider: The sender address is removed from the message before opening it in the user’s email client. This allows the email client to default the sender address to its default account configured for sending mail.
+    - SMTP provider: The SMTP server must be configured to allow sending using that (from) address i.e. the SMTP server permits the impersonation of emails sent from it. If not then the SMTP server may deny the sending of the message, flag it as spam, etc.
+- When sending messages, the framework will return a Boolean value indicating the success of the operation to send the message, but will not report any messages to the Infolog upon success. It is left up to you to decide if you wish want to display any messages in the Infolog.
+- All messages by default are sent with rich-text (HTML) bodies. If an application scenario requires the use of plain text to maintain newline spacing, this can be achieved by passing false to the optional **\_isHtml** parameter of the **setBody** method on the message builder.
 
 ## Adding a new email provider
-
 
 As a pluggable framework, it is possible to add email providers as there becomes need or desire to have them. As the application teams interact with the framework via the factory class and interfaces, these new email providers will become instantly available for use across all relevant application scenarios.
 
