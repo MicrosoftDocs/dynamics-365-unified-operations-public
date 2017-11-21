@@ -5,7 +5,7 @@ title: Generate demo data by using data packages
 description: This topic describes how to use demo data packages to generate data for your system. 
 author: mikefalkner
 manager: AnnBe
-ms.date: 10/29/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,13 +24,13 @@ ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Platform update 11
+ms.search.validFrom: 2017-11-30
+ms.dyn365.ops.version: Platform update 12
 
 ---
 # Generate demo data by using data packages
 
-Demo data has been delivered as a database in prior releases. Starting in the Fall 2017 release, a subset of the demo data with changes will also be released in LCS as data packages in the shared asset library. These packages are designed to be loaded onto an empty environment and you can choose which packages that you need to load for your demonstration. 
+Demo data for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has been delivered as a database in prior releases. Starting in the Fall 2017 release, a subset of the demo data with changes will also be released in Microsoft Dynamics Lifecycle Services (LCS) as data packages in the shared asset library. These packages are designed to be loaded onto an empty environment and you are able to choose only the packages you need to load for your demonstration. 
 
 Using data packages to deliver demo data provides some benefits over using the current database:
 1. The download times are signficantly faster.
@@ -38,56 +38,59 @@ Using data packages to deliver demo data provides some benefits over using the c
 3. You can edit the spreadsheets to customize the data for your customers. 
 4. Updated demo data can be provided through LCS very quickly.
 
+> [!NOTE]
+> The demo data packages are not yet a full replacement for the demo database that is supplied today.
+
 ## How the packages are organized
 
 The demo data packages are designed to be layered on top of each other as shown in this diagram:
 
 ![Demo data packages](./media/DemoData.png)
 
-However, the global information for one demo scenario may have completely different requirements than another demo scenario. For example, dimensions for one scenario would interfere with another scenario. In those cases, a separate global information package will be created and only packages related to that information can be layered on top of it.
+However, the global information for one demo scenario may have completely different requirements than another demo scenario. For example, dimensions for one scenario will interfere with those for another scenario. In those cases, a separate global information package will be created and only packages related to that information can be layered on top of it.
 
-### System and shared
-The base package, **System and Shared**, is the foundation for all other packages. This package creates the legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is entitled "100 - System and Shared.zip"
+### System and shared package
+The base package, **System and Shared**, is the foundation for all other packages. This package creates legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is named **100 - System and Shared.zip**.
 
-Once the package is loaded, you will one or more of the following legal entities:
+After the package is loaded, you will see one or more of the following legal entities:
 
 | Legal entity | Description |  
 |------|--------|
-| HQUS | The US based headquarters for your demo company. This company was based on the original USMF data but changed to remove the manufacturing focus in the name. It includes setup information intended for US companies.|
-| HQEU | The non-US based headquarters for your demo company. This company was based on the original DEMF data but changed to remove the manufacturing focus in the name. It includes setup information intended for non-US companies.|
+| HQUS | The US based headquarters for your demo company. This company was based on the original USMF data but has been changed to remove the manufacturing focus in the name. It includes setup information intended for US companies.|
+| HQEU | The non-US based headquarters for your demo company. This company was based on the original DEMF data but has been changed to remove the manufacturing focus in the name. It includes setup information intended for non-US companies.|
 | CONS | A small consolidations company. |
 | PICH | A process industries company focused on chemicals. |
 | PIFB | A process industries company focused on food and beverage. |
 
 ### Financials
-The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. These data packages are entitled "200 - Financials" followed by the legal entity for which they were intended. For examples, the financial data packages for HQUS are entitled "200 - Financials - HQUS.zip".
+The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. The names of these data packages start with **200 - Financials** followed by the legal entity for which they were intended. For example, the financial data packages for HQUS are called **200 - Financials - HQUS.zip**.
 
-At least two financials companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. The CONS company is required if you want to do consolidations. 
+At least two financial companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. The CONS company is required if you want to do consolidations. 
 
-The financial data packages also have five inventory products to support the creation of invoices that will move through the accounts receivables and accounts payables processes. These items use a minimum of inventory and product functionality to support those process while eliminating complexity of setting up products when you want to demonstrate only financials functionality. More complete products will be added when you import the supply chain packages.  
+The financial data packages also have five inventory products to support creating invoices to move through the accounts receivables and accounts payables processes. These items use a minimum of inventory and product functionality to support those process while eliminating the need to set up products when you want to demonstrate only financials functionality. More complete products will be added when you import the supply chain packages.
 
 ### Supply chain
-The **Supply chain** data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Due to the large number of entities, the supply chain packages for some companies have been split up into two packages. Both packages must be loaded to complete the supply chain scenarios but they can be loaded as two separate projects. 
+The **Supply chain** data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Due to the large number of entities, the supply chain packages for some companies have been split  into two packages. Both packages must be loaded to complete the supply chain scenarios but they can be loaded as two separate projects. 
 
-These data packages are entitled "300 - Supply chain" followed by the legal entity for which they were intended. For examples, the supply chain data packages for PICH are entitled "300 - Supply chain - PICH.zip". The HQUS supply chain packages were split into two package called "300 - Supply chain 1 of 2 - HQUS.zip" and "310 - Supply chain 2 of 2 - HQUS.zip"
+These names of these data packages start with **300 - Supply chain** followed by the legal entity for which they were intended. For example, the supply chain data packages for PICH are called **300 - Supply chain - PICH.zip**. The HQUS supply chain packages were split into packages called **300 - Supply chain 1 of 2 - HQUS.zip** and **310 - Supply chain 2 of 2 - HQUS.zip**.
 
 ### Project management and accounting
-The **Project management and accounting** data packages contain data for project accounting and expense management. These data packages are entitled "400 - Project management and accounting" followed by the legal entity for which they were intended. For examples, the supply chain data packages for HQUS are entitled "400 - Project management and accounting - HQUS.zip"   
+The **Project management and accounting** data packages contain data for project accounting and expense management. These data packages are named **400 - Project management and accounting** followed by the legal entity for which they were intended. For example, the supply chain data packages for HQUS are called **400 - Project management and accounting - HQUS.zip**.   
 
 ## Demo data package releases
-The demo data packages will be released via LCS and matched to the release for which they were intended. Please note that the contents of the packages are subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released when we add additional module areas and industry specific scenarios. These packages are not yet a full replacement for the demo database that is supplied today.
+The demo data packages will be released through LCS and will be specific to a release. Note that the contents of any package is subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released when we add additional module areas and industry specific scenarios. 
 
-### Release information inthe data package name
-The name of the packages will also include the release that it will work with. Using the naming conventions described above, the name of the files for the Fall 2017 release will be "Demo data - 2017 Fall release - " plus the name described above. For example, the full name for the Financials package for the Fall 2017 release will be "Demo data - 2017 Fall release - 200 - Financials - HQUS.zip"
+Package names will include a release identifier. Using the naming conventions described above, the name of the files for the 7.3 release will be **Demo data - 7.3 -** plus the name described above. For example, the full name for the Financials package will be **Demo data - 7.3 - 200 - Financials - HQUS.zip**.
 
 ## Steps to take before loading packages
 
-There are some steps that you will need to do manually before you load the data. 
-1) If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the User information data entity spreadsheet or, after loading data, in the System administration, Users form.
-2) You will need to start the Workflow jobs. Use System administration, Workflow infrastructure configuration and click on Ok. The workflow jobs will be started.
-3) The Ready to post batch scheduler must be started. This batch will post transactions automatically. Follow the steps described for Ready to Post below. You must start the scheduler in every legal entity in which you want data to be processed.
-4) You need to set up policy precedence rules. Use Procurement and sourcing, Setup, Policies, Purchasing policies and select the Parameters menu item. Click on Companies and move it to the right hand column.
-5) Prior to loading the Project Management and Accounting package, the resource capacity roll-up batch job should be run. The batch can be run from Project management and accounting, Periodic, Capacity synchronization, Synchronize resource capacity roll-ups form. Use an end date that will allow you to schedule resources well into the future. After the batch is run, then the project work breakdown structure auto generation of team functionality will be enabled.
+There are some steps that you must perform manually before you load the data packages. 
+
+1. If you want to login as a specific user, you will need to change the user's email address to the login address that you want to use. You can make that change in the **User information** data entity spreadsheet or, after loading data, in the **System administration** > **Users** form.
+2. Start the workflow jobs. Go to **System administration** > **Workflow infrastructure configuration** and click **OK**. 
+3. Start the **Ready to post** batch scheduler. This batch job posts transactions automatically. You must start the scheduler in every legal entity in which you want data to be processed. Follow the steps described for Ready to Post below. 
+4. Set up policy precedence rules. Go to **Procurement and sourcing** > **Setup** > **Policies** > **Purchasing policies** and select **Parameters**. Click **Companies** and move it to the right column.
+5. Before you load the Project Management and Accounting package, you must run the **Resource capacity roll-up** batch job. The batch can be run from the **Project management and accounting** > **Periodic** > **Capacity synchronization** > **Synchronize resource capacity roll-ups** form. Use an end date that will allow you to schedule resources well into the future. After the batch is run, then the project work breakdown structure auto generation of team functionality will be enabled.
 
 ## Loading the packages
 
