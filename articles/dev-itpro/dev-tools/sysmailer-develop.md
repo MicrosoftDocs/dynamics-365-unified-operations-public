@@ -1,4 +1,4 @@
----
+    ---
 # required metadata
 
 title: Develop email experiences
@@ -76,65 +76,45 @@ using (System.IO.Stream attachmentStream = this.generateAttachment())
 }
 ```
 
-#### Scenario 2: Sending a non-interactive (batch) message
+#### Sending a non-interactive (batch) message
 
-The following example is taken from the VendRequestCompanyWorkflowManager class. It demonstrates how to send a single message in non-interactively.
+The following example is taken from the **VendRequestCompanyWorkflowManager** class. It demonstrates how to send a single message in non-interactively.
 
-*// The vendor &lt;vendor name&gt; has been approved and has been added to the vendor master.*
-
+```
+// The vendor <vendor name> has been approved and has been added to the vendor master.
 messageText = strFmt("@SYS134393", DirPartyTable::findRec(vendRequestCompany.VendParty).Name);
-
-*// Request *
-
+// Request
 var messageBuilder = new SysMailerMessageBuilder();
-
 messageBuilder.setFrom(senderEmail)
-
-.addTo(recipientEmail)
-
-.setSubject("@SYS130372")
-
-.setBody(messageText);
-
+    .addTo(recipientEmail)
+    .setSubject("@SYS130372")
+    .setBody(messageText);
 SysMailerFactory::sendNonInteractive(messageBuilder.getMessage());
+```
 
-#### Scenario 3: Sending multiple non-interactive (batch) messages
+#### Sending multiple non-interactive (batch) messages
 
-The following example is taken from the UserAdAddManager class. It demonstrates how to get an instance of a batch email provider before iterating over a list of emails to send.
+The following example is taken from the **UserAdAddManager** class. It demonstrates how to get an instance of a batch email provider before iterating over a list of emails to send.
 
+```
 var mail = SysMailerFactory::getNonInteractiveMailer();
-
 var messageBuilder = new SysMailerMessageBuilder();
-
 for (i = 1; i &lt;= conLen(\_notifyCon); i++)
-
 {
-
-notifyEmailsStr = conPeek(\_notifyCon, i);
-
-select firstonly RecId, Email from sysUser where sysUser.Id == notifyEmailsStr;
-
-if (sysUser.RecId && sysUser.Email != '')
-
-{
-
-messageBuilder.reset()
-
-.setFrom(\_emailFrom)
-
-.addTo(sysUser.Email)
-
-.setSubject("@SYS129183")
-
-.setBody(errorStr);
-
-mail.sendNonInteractive(messageBuilder.getMessage());
-
-delete\_from tmpUserErrorNotification;
-
+    notifyEmailsStr = conPeek(\_notifyCon, i);
+    select firstonly RecId, Email from sysUser where sysUser.Id == notifyEmailsStr;
+    if (sysUser.RecId && sysUser.Email != '')
+    {
+        messageBuilder.reset()
+            .setFrom(\_emailFrom)
+            .addTo(sysUser.Email)
+            .setSubject("@SYS129183")
+            .setBody(errorStr);
+        mail.sendNonInteractive(messageBuilder.getMessage());
+        delete_from tmpUserErrorNotification;
+    }
 }
-
-}
+```
 
 ### Important considerations
 
