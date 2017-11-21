@@ -34,20 +34,17 @@ ms.dyn365.ops.version: AX 7.0.0 
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are not in active
-development and may be removed (deprecated) in future releases of Dynamics 365
-for Finance and Operations, Enterprise edition.
+This topic describes features that have been removed, or that are not in active development and may be removed (deprecated) in future releases of Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This list is intended to help you consider these removals and deprecations for
-your own planning. 
+This list is intended to help you consider these removals and deprecations for your own planning. 
 
-**Note:** Starting with the Dynamics 365 for Finance and Operations, Enterprise
+> [!Note]
+> Starting with the Dynamics 365 for Finance and Operations, Enterprise
 edition version 7.2 (July 2017) with platform update 8 release, the type of
 deployments are noted for each removed or deprecated feature. All of the
 previous releases mentioned in this topic supported cloud deployments only.
 
-**Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition version 7.3 with platform update 12**
---------------------------------------------------------------------------------------------------------------------------------------------
+## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition version 7.3 with platform update 12**
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
