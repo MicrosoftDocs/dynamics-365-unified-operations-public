@@ -164,17 +164,17 @@ The **Ready to post** feature uses a batch to monitor the list of transaction ty
 ### Use the Ready to post form to process transactions
 
 1. Open the the Ready to post form from **System administration** > **Periodic tasks** > **Batch job ready to post**. 
-1) Select **Create posting monitor** and set up the batch parameters so that you have a recurring batch running. You only have to do this step once for each legal entity to initiate the posting batch process.
-2) Select **New** and enter a name for the demo data job. This job name must be unique across all companies.
-3) Click **Add line** to add a transaction type. 
-4) Select the transaction target. For journals, it is **Post**. For other transactions, it may change depending on the transaction type.
-4) Specify a start and end date range to limit the transactions that will be processed (when available)
-5) Specify a from and to document range to limit the transactions that will be processed (when available)
-6) Clic **Add line** to add additional transaction types. You can use the same type on multiple lines.
-7) Click **Mark ready to post**. It will change the batch status from **Open** to **Ready**. The posting monitor will start processing each line.
-8) If you want to process a document immediately, click **Process documents**. The batch status will change to **Scheduled** and a batch will be started without using the posting monitor.
-9) When the batch is running, the status will be changed to **In Progress**.
-10) When the batch is complete, the status will change to **Successful** or **Error** depending on the results. The posting results will be displayed at the bottom of the form.
+2. Select **Create posting monitor** and set up the batch parameters so that you have a recurring batch running. You only have to do this step once for each legal entity to initiate the posting batch process.
+3. Select **New** and enter a name for the demo data job. This job name must be unique across all companies.
+4. Click **Add line** to add a transaction type. 
+5. Select the transaction target. For journals, it is **Post**. For other transactions, it may change depending on the transaction type.
+6. Specify a start and end date range to limit the transactions that will be processed (when available)
+7. Specify a from and to document range to limit the transactions that will be processed (when available)
+8. Click **Add line** to add additional transaction types. You can use the same type on multiple lines.
+9. Click **Mark ready to post**. It will change the batch status from **Open** to **Ready**. The posting monitor will start processing each line.
+10. If you want to process a document immediately, click **Process documents**. The batch status will change to **Scheduled** and a batch will be started without using the posting monitor.
+11. When the batch is running, the status will be changed to **In Progress**.
+12. When the batch is complete, the status will change to **Successful** or **Error** depending on the results. The posting results will be displayed at the bottom of the form.
 
 ### Using the Ready to post entity to process transactions
 An entity called **Demo data posting** entity lets you import a list of document types that you want to post. The entity will create a demo data job in the **Ready to post** form. If you have started the posting monitor, the transactions will post automatically after you import the data with the entity. 
@@ -195,5 +195,5 @@ The following columns appear in the Ready to post entity:
 | StartDate | An optional start date that limits the transactions that you want to process. |
 | ToDocument | An optional to document that limits the transactions that you want to process. |
 
-Insert the Ready to post entity at the end of your data project after all of the transaction entities by using a sequence number in the data project that is higher than the ones used by the transactions entities. If you have a mix of transactions where some of them should be processed and others should not be processed, you must use the date and document ranges to limit which transactions are processed. If you can't use the ranges, you will need a separate data package for the unposted transactions.
+Insert the **Ready to post** entity at the end of your data project after all of the transaction entities by using a sequence number in the data project that is larger than the ones used by the transactions entities. If you have a mix of transactions where some of them should be processed and others should not be processed, you must use date and document ranges to limit which transactions are processed. If you can't use the ranges, you will need a separate data package for the unposted transactions.
 
