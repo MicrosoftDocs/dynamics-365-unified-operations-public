@@ -43,6 +43,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## Onboard
 - [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -62,4 +63,5 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 ## Other resources
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features.md)
+- [Software lifecycle policy and list of releases](../migration-upgrade/versions-update-policy.md)
  
