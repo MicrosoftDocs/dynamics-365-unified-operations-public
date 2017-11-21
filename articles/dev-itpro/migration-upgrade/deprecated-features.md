@@ -53,12 +53,12 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 |   |  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reason for deprecation**       | Duplicate functionality                                                                                                                                                                               |
-| **Replaced by another feature?** | Yes. The two reports have been replaced by the **Inventory aging** report.                                                                                                                            |
-| **Product areas affected**       | Inventory management, Cost management                                                                                                                                                                 |
-| **Deployment option**        | All                                                                                                                                                                                                   |
+| **Replaced by another feature?** | Yes. The two reports have been replaced by the **Inventory aging** report.     |
+| **Product areas affected**       | Inventory management, Cost management        |
+| **Deployment option**        | All|
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
 
-**Standard UI in data management workspace**
+### Standard UI in data management workspace
 
 The standard UI in data management is the legacy UI which is the default UI presented to the users when they visit the data management workspace.
 
@@ -70,7 +70,7 @@ The standard UI in data management is the legacy UI which is the default UI pres
 | **Deployment option**              | All                                                                           |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
 
-### **Cost management content pack**
+### Cost management content pack
 
 The Cost management content pack for Power BI was intended for inventory accountants or individuals in the organization who are responsible for inventory.
 
@@ -85,7 +85,7 @@ The Cost management content pack for Power BI was intended for inventory account
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8**
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-### **Warehouse mobile devices portal**
+### Warehouse mobile devices portal
 
 Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A native app that improves the user experience has replaced the functionality of WMDP.
 
@@ -96,7 +96,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.                                                                                                                                                                                                                                      |
 | **Status**                         | Deprecated - A removal date has not been set for this feature.                                                                                                                                                                                                                                                                                            |
 
-### **Advanced bank reconciliation matching rule for manual matching**
+### Advanced bank reconciliation matching rule for manual matching
 
 A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.
 
@@ -107,7 +107,7 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Deployment option**              | All                                                                                    |
 | **Status**                         | Removed as of July 2017.                                                               |
 
-### **Windows 8 tablet app**
+### Windows 8 tablet app
 
 The Windows 8 tablet app provided functionality for expense entry and approval.
 
@@ -118,9 +118,9 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Deployment option**              | [All, Cloud only, or On-premises only]                                                                                                                              |
 | **Status**                         | [Deprecated – Target timeframe for the functionality to be removed is \<month/year\> or \<quarter/year\> or \<release name\>. -OR- Removed as of \<release name\>.] |
 
-## Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3**
+## Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 
-### **AEB payment formats for Spain**
+### AEB payment formats for Spain
 
 The Consejo Superior Bancario payment formats are used to send remittance files to the bank for customer payments and vendor payments. The content of these formats is determined by the Asociación Española de Banca. It covers Cuaderno 19, 32, 58, 34.
 
@@ -130,7 +130,7 @@ The Consejo Superior Bancario payment formats are used to send remittance files 
 | **Product areas affected**         | Accounts payable, Accounts receivable                                    |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.           |
 
-### **Bank payments transfer for Lithuania**
+### Bank payments transfer for Lithuania
 
 Bank payment transfers are generated and printed by using the Payment transfer (LT) export format for Lithuania. The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.
 
@@ -140,7 +140,7 @@ Bank payment transfers are generated and printed by using the Payment transfer (
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **BBS Direkte Remittering payment formats for Norway**
+### BBS Direkte Remittering payment formats for Norway
 
 BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.
 
@@ -150,7 +150,7 @@ BBS Direkte Remittering payment formats include customer payment collection expo
 | **Product areas affected**         | Accounts payable, Accounts receivable                                                                                                                          |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                                 |
 
-### **Chart of Accounts tool for Spain**
+### Chart of Accounts tool for Spain
 
 This tool is used when a chart of accounts in Spain requires major changes. Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.
 
@@ -160,7 +160,7 @@ This tool is used when a chart of accounts in Spain requires major changes. User
 | **Product areas affected**         | General ledger                                                 |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Dom80 payment format for Belgium**
+### Dom80 payment format for Belgium
 
 Legacy Belgian payment format for payment collection (direct debit).
 
@@ -170,7 +170,7 @@ Legacy Belgian payment format for payment collection (direct debit).
 | **Product areas affected**         | Accounts receivable                                            |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **DTA/EZAG payment formats for Switzerland**
+### DTA/EZAG payment formats for Switzerland
 
 DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number. Because the reference number isn’t mandatory, these formats can be used to process any vendor payments. These formats are used by companies that have a bank account in a location other than “Postfinance.”
 
@@ -180,7 +180,7 @@ DTA/EZAG formats are integrated into the ESR system, because they can carry on t
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **EDIFACT-DIRDEB payment format for Austria**
+### EDIFACT-DIRDEB payment format for Austria
 
 EDIFACT-DIRDEB payment format for payment collection (direct debit).
 
@@ -190,7 +190,7 @@ EDIFACT-DIRDEB payment format for payment collection (direct debit).
 | **Product areas affected**         | Accounts receivable                                            |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **EDIVAT for Belgium**
+### EDIVAT for Belgium
 
 EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail. Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.
 
@@ -200,7 +200,7 @@ EDIVAT is an obsolete Belgian standard for electronic declaration via secure mai
 | **Product areas affected**         | General ledger                                                 |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **eGiro EDIFACT CREMUL payment import format for Norway**
+### eGiro EDIFACT CREMUL payment import format for Norway
 
 eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments. In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.
 
@@ -210,7 +210,7 @@ eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Me
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
 
-### **External inventory for Poland**
+### External inventory for Poland
 
 Evidence of goods that are taken from a vendor for sales without purchase. Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically. This process creates real inventory movements.
 
@@ -220,7 +220,7 @@ Evidence of goods that are taken from a vendor for sales without purchase. Goods
 | **Product areas affected**         | Accounts payable, Inventory management                         |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Financial reports generator for Eastern Europe**
+### Financial reports generator for Eastern Europe
 
 A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.
 
@@ -230,7 +230,7 @@ A tool is used to set up data collection for accounting and tax reports, and to 
 | **Product areas affected**         | General Ledger                                                                           |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
 
-### **Import of customer payment transactions for Finland**
+### Import of customer payment transactions for Finland
 
 You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.
 
@@ -240,7 +240,7 @@ You can select an import format for Finnish payments to import customer payment 
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
 
-### **Import of payment transactions into a general ledger journal for Finland**
+### Import of payment transactions into a general ledger journal for Finland
 
 A format that is specific to Finland is used to import accounting transactions into the general ledger.
 
@@ -250,7 +250,7 @@ A format that is specific to Finland is used to import accounting transactions i
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                            |
 
-### **Integration with Isabel synchronized (CIS) for Belgium**
+### Integration with Isabel synchronized (CIS) for Belgium
 
 Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.
 
@@ -260,7 +260,7 @@ Isabel is the framework for electronic banking in Europe and is a de-facto stand
 | **Product areas affected**         | Accounts payable                                                                                                     |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                       |
 
-### **Modifications in the chart of accounts and accounting rules for Spain**
+### Modifications in the chart of accounts and accounting rules for Spain
 
 This feature is used for changes in the chart of accounts and accounting rules in Spain. It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.
 
@@ -270,7 +270,7 @@ This feature is used for changes in the chart of accounts and accounting rules i
 | **Product areas affected**         | General ledger                                                 |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Pagamento Fornittori vendor payment format**
+### Pagamento Fornittori vendor payment format
 
 Legacy Italian payment format for credit transfers.
 
@@ -280,7 +280,7 @@ Legacy Italian payment format for credit transfers.
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Payment export formats for Estonia**
+### Payment export formats for Estonia
 
 The Telehansa and Teleservice formats are used for bank payment export.
 
@@ -290,7 +290,7 @@ The Telehansa and Teleservice formats are used for bank payment export.
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Payment file archive for Norway**
+### Payment file archive for Norway
 
 When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.
 
@@ -300,7 +300,7 @@ When payment files are generated, the file archive automatically archives all fi
 | **Product areas affected**         | Accounts payable, Accounts receivable, Organization administration |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.     |
 
-### **Payment import formats for Estonia**
+### Payment import formats for Estonia
 
 The Telehansa and TeleTeenus formats are used for bank payment import.
 
@@ -310,7 +310,7 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 | **Product areas affected**         | Accounts receivable                                                                        |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                             |
 
-### **Performance management goal workflow**
+### Performance management goal workflow
 
 Performance management includes goal management and integration with performance reviews.
 
@@ -320,7 +320,7 @@ Performance management includes goal management and integration with performance
 | **Product areas affected**         | Human capital management                                                                                                 |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611                                                      |
 
-### **Postgirot and Postgirot Utland payment formats for Sweden**
+### Postgirot and Postgirot Utland payment formats for Sweden
 
 Postgirot and Postgirot Utland payment formats for Sweden.
 
@@ -330,7 +330,7 @@ Postgirot and Postgirot Utland payment formats for Sweden.
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Radio frequency identifier**
+### Radio frequency identifier
 
 Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.
 
@@ -340,7 +340,7 @@ Radio Frequency Identification (RFID) is a data-collection technology that uses 
 | **Product areas affected**         | Inventory management                            |
 | **Status**                         | Removed as of Dynamics 365 for Operations 1611. |
 
-### **Report about state invoices numbering for Latvia**
+### Report about state invoices numbering for Latvia
 
 Latvian legislation provides specific rules about the numbering of sales invoices. The functionality lets you assign specific numbers to sales invoices, based on the user or user group. You can then generate a report or an XML file. You can also print a report about invoice numbers that are used.
 
@@ -350,7 +350,7 @@ Latvian legislation provides specific rules about the numbering of sales invoice
 | **Product areas affected**         | Accounts receivable                                                                                                      |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                           |
 
-### **Set up the names of the manager and general accountant of a company for Lithuania**
+### Set up the names of the manager and general accountant of a company for Lithuania
 
 The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.
 
@@ -360,7 +360,7 @@ The names of the manager and the general accountant of a company can be specifie
 | **Product areas affected**         | Accounts payable, Accounts receivable, Cash and bank management |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.  |
 
-### **Telepay payment formats for Norway**
+### Telepay payment formats for Norway
 
 Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).
 
@@ -370,7 +370,7 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 | **Product areas affected**         | Accounts payable, Accounts receivable                                                          |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                 |
 
-### **Vendor payment export formats for Finland**
+### Vendor payment export formats for Finland
 
 Two formats for exporting payments are available for Finland. LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.
 
@@ -380,7 +380,7 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated – A removal date has not been set for this feature. |
 
-### **Workflow for creating goals**
+### Workflow for creating goals
 
 A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.
 
@@ -393,7 +393,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 ## Features that have been deprecated in Dynamics AX 7.0 releases**
 
 
-### **Ability to cancel changes to a vendor invoice**
+### Ability to cancel changes to a vendor invoice
 
 | **Reason for deprecation/removal** | Performance enhancement        |
 |------------------------------------|--------------------------------|
@@ -401,7 +401,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 | **Product areas affected**         | Accounts payable               |
 | **Status**                         | Removed as of Dynamics AX 7.0. |
 
-### **AIF, AxD, and AxBC integrations**
+### AIF, AxD, and AxBC integrations
 
 In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services. Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC). A document is created by using XML. The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX. Examples of documents include sales orders and purchase orders. However, almost any entity, such as a customer, can be represented by a document. Services that are based on documents use the **Axd \<Document\>** classes.
 
@@ -411,7 +411,7 @@ In Application Integration Framework (AIF), data can be exchanged with external 
 | **Product areas affected**         | AxDs, AxBCs, and AIF                                                                                                                                              |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                    |
 
-### **BOMs without BOM versions**
+### BOMs without BOM versions
 
 When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs. In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.
 
@@ -421,7 +421,7 @@ When the **BOM versions** configuration key was disabled, bill of materials (B
 | **Product areas affected**         | Product information management, Inventory management                                    |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                          |
 
-### **Brazilian Bordero**
+### Brazilian Bordero
 
 Specific method of payment for Brazilian companies
 
@@ -431,7 +431,7 @@ Specific method of payment for Brazilian companies
 | **Product areas affected**         | Accounts payable                                                                                      |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                        |
 
-### **Brazilian Sintegra statement**
+### Brazilian Sintegra statement
 
 Federal tax statement for ICMS tax
 
@@ -441,7 +441,7 @@ Federal tax statement for ICMS tax
 | **Product areas affected**         | Fiscal books                                                                                                          |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                        |
 
-### **Brazilian SCAN contingency mode for NF-e**
+### Brazilian SCAN contingency mode for NF-e
 
 (SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.
 
@@ -451,7 +451,7 @@ Federal tax statement for ICMS tax
 | **Product areas affected**         | Accounts receivable                                                         |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.              |
 
-### **Business Analyzer**
+### Business Analyzer
 
 This mobile application let users review key business metrics.
 
@@ -461,7 +461,7 @@ This mobile application let users review key business metrics.
 | **Product areas affected**         | General ledger                                                                                                                                                |
 | **Status**                         | Deprecated – The use of Business Analyzer has been deprecated.                                                                                                |
 
-### **Business statistics**
+### Business statistics
 
 The setup of business statistics inquiries that can help you analyze the performance of the organization
 
@@ -471,7 +471,7 @@ The setup of business statistics inquiries that can help you analyze the perform
 | **Product areas affected**         | Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                               |
 
-### **Change document date function in Invoice approval journal**
+### *hange document date function in Invoice approval journal
 
 | **Reason for deprecation/removal** | Low usage                                                               |
 |------------------------------------|-------------------------------------------------------------------------|
@@ -479,7 +479,7 @@ The setup of business statistics inquiries that can help you analyze the perform
 | **Product areas affected**         | Accounts payable                                                        |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                          |
 
-### **ClieOp03 payment format for the Netherlands**
+### ClieOp03 payment format for the Netherlands
 
 | **Reason for deprecation/removal** | The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality. |
 |------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -487,7 +487,7 @@ The setup of business statistics inquiries that can help you analyze the perform
 | **Product areas affected**         | All modules                                                                                                |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                             |
 
-### **Compliance Center**
+### Compliance Center
 
 The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.
 
@@ -497,7 +497,7 @@ The Compliance Center was an Enterprise Portal site for managing the documentati
 | **Product areas affected**         | Compliance and internal controls                                                                                       |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                         |
 
-### **Connector for Microsoft Dynamics**
+### Connector for Microsoft Dynamics
 
 This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.
 
@@ -507,7 +507,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Product areas affected**         | Connector for Microsoft Dynamics                         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                           |
 
-### **Container unit and multi dimension on-hand**
+### Container unit and multi dimension on-hand
 
 | **Reason for deprecation/removal** | Duplicate functionality                                                                                                                                         |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -515,7 +515,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Product areas affected**         | Product information management, Production control, Inventory management, Sales and marketing                                                                   |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                  |
 
-### **Cue group metadata**
+### Cue group metadata
 
 | **Reason for deprecation/removal** | Cue groups were used to display one or more Cues in the FactBox area. There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group. |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -523,7 +523,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Product areas affected**         | All modules                                                                                                                                                                                                                   |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                |
 
-### **Cue metadata**
+### Cue metadata
 
 | **Reason for deprecation/removal** | Cue metadata was limited to count or sum information.                                                                                                                                                                                   |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -531,7 +531,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Product areas affected**         | All modules                                                                                                                                                                                                                             |
 | **Status**                         | Removed as of Dynamics AX 7.0                                                                                                                                                                                                           |
 
-### **Danish check format**
+### Danish check format
 
 | **Reason for deprecation/removal** | Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization. |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -539,7 +539,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 | **Product areas affected**         | All modules                                                                                                             |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                          |
 
-### **Data partitions**
+### Data partitions
 
 Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.
 
@@ -549,7 +549,7 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 | **Product areas affected**         | All modules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-### **Database and file share storage for attachments**
+### Database and file share storage for attachments
 
 Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.
 
@@ -559,7 +559,7 @@ Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in
 | **Product areas affected**         | All modules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-### **Delimitation**
+### Delimitation
 
 | **Reason for deprecation/removal** | No use of the functionality was found. |
 |------------------------------------|----------------------------------------|
@@ -567,7 +567,7 @@ Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in
 | **Product areas affected**         | Time and attendance                    |
 | **Status**                         | Removed as of Dynamics AX 7.0.         |
 
-### **Desktop client**
+### Desktop client
 
 | **Reason for deprecation/removal** | The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.                      |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -575,7 +575,7 @@ Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in
 | **Product areas affected**         | All modules                                                                                                                            |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                         |
 
-### **Direct database connection**
+### Direct database connection
 
 In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS. This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.
 
@@ -585,7 +585,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 | **Product areas affected**         | Channel DB/Retail Modern POS                                                                                                                                                                                                                                                                 |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                                                                               |
 
-### **Dutch SWIFT MT940**
+### Dutch SWIFT MT940
 
 | **Reason for deprecation/removal** | Generic functionality is now used instead of localized functionality.                    |
 |------------------------------------|------------------------------------------------------------------------------------------|
@@ -593,7 +593,7 @@ In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel 
 | **Product areas affected**         | All modules                                                                              |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
 
-### **eBilanz (XBRL for Germany)**
+### eBilanz (XBRL for Germany)
 
 This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.
 
@@ -603,7 +603,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Product areas affected**         | Management Reporter                                                                                                                                                    |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                                         |
 
-### **Enterprise Portal client**
+### Enterprise Portal client
 
 | **Reason for deprecation/removal** | A single client platform has been provided.                                                                                            |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -611,7 +611,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Product areas affected**         | All modules                                                                                                                            |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                         |
 
-### **Environmental sustainability**
+### Environmental sustainability
 
 | **Reason for deprecation/removal** | Low customer usage and a limited feature set                                                                                                                        |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -619,7 +619,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Product areas affected**         | Compliance and internal controls, Accounts payable                                                                                                                  |
 | **Status**                         | [Deprecated – Target timeframe for the functionality to be removed is \<month/year\> or \<quarter/year\> or \<release name\>. -OR- Removed as of \<release name\>.] |
 
-### **Form ActiveX and Managed Host controls**
+### Form ActiveX and Managed Host controls
 
 | **Reason for deprecation/removal** | The ActiveX and Managed Host controls are based on the deprecated desktop client.                                                                                                             |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -627,7 +627,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Product areas affected**         | All modules                                                                                                                                                                                   |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                |
 
-### **Generate prenotes by using a batch**
+### Generate prenotes by using a batch
 
 Prenote generation can't be done by using a batch, but it can still be done by a user.
 
@@ -637,7 +637,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | Accounts payable, Accounts receivable, Cash and bank management                                        |
 | **Status**                         | Removed as of AX 7.0.                                                                                  |
 
-### **German DTAUS payment export and account statement import (totals and transactions)**
+### German DTAUS payment export and account statement import (totals and transactions)
 
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.                    |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -645,7 +645,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | All modules                                                                                                                                       |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                    |
 
-### **German DTAZV payment format**
+### German DTAZV payment format
 
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
 |------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -653,7 +653,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | All modules                                                                                        |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                     |
 
-### **German MT940 import**
+### German MT940 import
 
 | **Reason for deprecation/removal** | Generic functionality is now used instead of localized functionality.                    |
 |------------------------------------|------------------------------------------------------------------------------------------|
@@ -661,7 +661,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | All modules                                                                              |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                           |
 
-### **German XML EU Sales list**
+### German XML EU Sales list
 
 | **Reason for deprecation/removal** | The XML format for German EU Sales List reporting is no longer supported. Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office. |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -669,7 +669,7 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | Tax                                                                                                                                                                                |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                                                     |
 
-### **GL SSRS reports**
+### GL SSRS reports
 
 Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.
 
@@ -679,7 +679,7 @@ Reports that include the following menu items have been removed: **Summary tria
 | **Product areas affected**         | General ledger                                                                                                                               |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                               |
 
-### **InfoPart and FormPart metadata**
+### InfoPart and FormPart metadata
 
 | **Reason for deprecation/removal** | InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.                                                                                                                                    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -687,7 +687,7 @@ Reports that include the following menu items have been removed: **Summary tria
 | **Product areas affected**         | All modules                                                                                                                                                                                                                    |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                 |
 
-### **Main account list page**
+### Main account list page
 
 A list of accounts for the legal entity and related balance information
 
@@ -697,7 +697,7 @@ A list of accounts for the legal entity and related balance information
 | **Product areas affected**         | General ledger                                                                                                                                                                     |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                     |
 
-### **Malaysia and Singapore bank cash flow report**
+### Malaysia and Singapore bank cash flow report
 
 This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.
 
@@ -707,7 +707,7 @@ This feature let the user print a cash flow report that shows transactions and d
 | **Product areas affected**         | Cash and bank management                                                |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.          |
 
-### **Mexican CFD electronic invoice**
+### Mexican CFD electronic invoice
 
 This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government. This feature also provides a monthly report that includes all electronics invoices that were issued in the period.
 
@@ -717,7 +717,7 @@ This feature enabled the generation of Mexican electronic invoices by using the 
 | **Product areas affected**         | Account receivables, Project                                                                                                                                                                                                                                                                                                                                                                              |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                                                                                                                                                                                                                                                                                                            |
 
-### **Mexico realized and unrealized VAT**
+### Mexico realized and unrealized VAT
 
 Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for “unrealized tax.”
 
@@ -727,7 +727,7 @@ Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mex
 | **Product areas affected**         | Tax                                                                                                                 |
 | **Status**                         | Deprecated – A removal date has not been set for this feature.                                                      |
 
-### **Microsoft Outlook integration**
+### Microsoft Outlook integration
 
 | **Reason for deprecation/removal** | This functionality has been replaced by Microsoft Exchange Server integration. |
 |------------------------------------|--------------------------------------------------------------------------------|
@@ -735,7 +735,7 @@ Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mex
 | **Product areas affected**         | Sales and marketing                                                            |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                 |
 
-### **Payroll information in Human Resources**
+### Payroll information in Human Resources
 
 Human Resources Payroll information
 
@@ -745,7 +745,7 @@ Human Resources Payroll information
 | **Product areas affected**         | Human Resources, Payroll                                                                                                                                                                                                                                                                                                  |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611                                                                                                                                                                                                                                                       |
 
-### **Private blocking of inventory and warehouse management journals**
+### Private blocking of inventory and warehouse management journals
 
 The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user. Only the process of blocking journals as private for user groups and blocking during editing is supported.
 
@@ -755,7 +755,7 @@ The inventory and warehouse journals no longer support the ability to mark a jou
 | **Product areas affected**         | Inventory management                   |
 | **Status**                         | Removed as of Dynamics AX 7.0.         |
 
-### **Product builder**
+### Product builder
 
 Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement. Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.
 
@@ -765,7 +765,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 | **Product areas affected**         | Product information management, Sales and marketing                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-### **Rename product dimension**
+### Rename product dimension
 
 This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements. Renaming included all the labels where the product dimension name was used.
 
@@ -775,7 +775,7 @@ This feature let you change the name of one of the three standard product dimens
 | **Product areas affected**         | Product information management                                                |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                |
 
-### **Retail Server connectivity using HTTP**
+### Retail Server connectivity using HTTP
 
 In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured). This was in addition to the standard communication using HTTPS.
 
@@ -785,7 +785,7 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 | **Product areas affected**         | Retail Server                                                                                                                                                                                                      |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                                                                                                     |
 
-### **Role Center pages**
+### Role Center pages
 
 | **Reason for deprecation/removal** | Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX. |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -793,7 +793,7 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 | **Product areas affected**         | All modules                                                                                                                                                              |
 | **Status**                         | Removed as of Dynamics AX 7.0                                                                                                                                            |
 
-### **Sales tax jurisdictions**
+### Sales tax jurisdictions
 
 | **Reason for deprecation/removal** | Low customer usage and a limited feature set |
 |------------------------------------|----------------------------------------------|
@@ -801,7 +801,7 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 | **Product areas affected**         | US sales tax                                 |
 | **Status**                         | Removed as of Dynamics AX 7.0.               |
 
-### **Shipping carrier interface**
+### Shipping carrier interface
 
 | **Reason for deprecation/removal** | Duplicate functionality                                                                                                                         |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -809,7 +809,7 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 | **Product areas affected**         | Sales and marketing, Inventory management                                                                                                       |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.                                                                                         |
 
-### **Sites Services**
+### Sites Services
 
 Sites Services let you build websites that extend your business processes to the Internet without IT support.
 
@@ -819,7 +819,7 @@ Sites Services let you build websites that extend your business processes to the
 | **Product areas affected**         | HR recruiting, Case management, Request for quotes, Vendor registration                                                                  |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                                                           |
 
-### **SSAS demand forecasting strategy**
+### SSAS demand forecasting strategy
 
 | **Reason for deprecation/removal** | The design of the feature cannot be supported in the new cloud architecture. |
 |------------------------------------|------------------------------------------------------------------------------|
@@ -827,7 +827,7 @@ Sites Services let you build websites that extend your business processes to the
 | **Product areas affected**         | Master planning                                                              |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                               |
 
-### **Vendor invoice pool excluding posting details**
+### Vendor invoice pool excluding posting details
 
 | **Reason for deprecation/removal** | Low usage. This functionality has been replaced by the Invoice journal that has workflow functionality. |
 |------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -835,7 +835,7 @@ Sites Services let you build websites that extend your business processes to the
 | **Product areas affected**         | Accounts payable                                                                                        |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                                          |
 
-### **Virtual company accounts**
+### Virtual company accounts
 
 The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
@@ -859,7 +859,7 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 | **Product areas affected**       | All modules                                                                                                 |   |   |
 | **Status**                       | Removed as of Dynamics AX 7.0.                                                                              |   |   |
 
-### **Warehouse management II**
+### Warehouse management II
 
 | **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -867,7 +867,7 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 | **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing                                                                                                                                                                                                                                         |
 | **Status**                         | Removed as of 7.1                                                                                                                                                                                                                                                                                           |
 
-### **Worker reminders in Human Resources**
+### Worker reminders in Human Resources
 
 Human Resources Payroll information
 
@@ -877,7 +877,7 @@ Human Resources Payroll information
 | **Product areas affected**         | Human resources                                                     |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
 
-### **Workplanner**
+### Workplanner
 
 | **Reason for deprecation/removal** | Low usage                                                                                                                                                            |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -885,7 +885,7 @@ Human Resources Payroll information
 | **Product areas affected**         | Time and attendance                                                                                                                                                  |
 | **Status**                         | The code has not been removed. However, the form, JmgWorkPlanner, was not migrated.                                                                                  |
 
-### **X++ financial statements**
+### X++ financial statements
 
 | **Reason for deprecation/removal** | This functionality has been replaced by another feature.                                    |
 |------------------------------------|---------------------------------------------------------------------------------------------|
