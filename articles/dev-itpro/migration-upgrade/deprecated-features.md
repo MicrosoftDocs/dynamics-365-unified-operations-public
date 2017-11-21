@@ -918,26 +918,12 @@ Sites Services let you build websites that extend your business processes to the
 
 The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
-|   |  |  |   |
-|------------|--------------------|------------------|------------------|
-| **Reason for deprecation/removal** | Virtual companies must be set up before data is stored in the tables. Retrofitting virtual companies onto an existing implementation is very difficult. |
-
-
--   Because there has been so much data normalization in the current version of
-    Dynamics AX, it has become difficult to know what to add to the table
-    collections. For example, it's difficult to know which tables to share. All
-    the tables referenced from tables that are in a virtual company must also
-    added. Because of table normalization, even simple master data that is
-    spread across multiple tables must be part of the virtual company. Any
-    mistake that is made here will cause functional issues.
-
-    -   When a table is part of a virtual company, it loses information about
-        the origin of the data, and only the virtual company is recorded.
-
-| **Replaced by another feature?** | Global tables can be used to make tables accessible from all companies. Currently, there is no replacement. |   |   |
-
-| **Product areas affected**       | All modules                                                                                                 |   |   |
-| **Status**                       | Removed as of Dynamics AX 7.0.                                                                              |   |   |
+|   |  | 
+|------------|--------------------|
+| **Reason for deprecation/removal** | - Virtual companies must be set up before data is stored in the tables. Retrofitting virtual companies onto an existing implementation is very difficult.<br><br>- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections. For example, it's difficult to know which tables to share. All the tables referenced from tables that are in a virtual company must also added. Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company. Any mistake that is made here will cause functional issues.<br><br>- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.   |
+| **Replaced by another feature?** | Global tables can be used to make tables accessible from all companies. Currently, there is no replacement. |   
+| **Product areas affected**       | All modules |   
+| **Status**                       | Removed as of Dynamics AX 7.0.   |   
 
 ### Warehouse management II
 
