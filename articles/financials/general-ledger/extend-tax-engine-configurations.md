@@ -145,12 +145,9 @@ To support the scenario, the following must be done:
 3. Click **Columns**.
 4. Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
 
-![](media/5c066d2fd6d41e91dd80c36bcff59de9.png)
+![](media/gte-column-selection.png)
 
 5. For the **IntraStateInUnionTerritory** column, select **No**.
-
-![](media/d76a95b661005ae734b8de4924ae7c94.png)
-
 6. Click **Save** to save the configuration.
 
 ### Task 5: Configure the UTGST tax component
@@ -158,21 +155,15 @@ To support the scenario, the following must be done:
 #### Task 5.1: Add the UTGST tax component
 
 1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST**, click **Add**, and then select **Tax component**.
-
-	![](media/385ad35f9f554728e9f144fa1af53ef2.png)
-
 2. Enter a name and description for the UTGST tax component, and then click **OK**.
 
 #### Task 5.2: Configure tax measures for the UTGST tax component
 
-3. Expand the tax document tree, and click the UTGST tax component to create a measure for.
-4.Click **Add**, and then select **Tax measure**.
+1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
+2. Click **Add**, and then select **Tax measure**.
+3. All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
 
-	![](media/331577a480dccf48b8734e8cb82745d1.png)
-
-	All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
-
-	![](media/fbe4c4aae43db743817c6ac337690944.png)
+	![](media/gte-utgst-list.png)
 
 #### Task 5.3 Configure rate/percentage lookups
 
@@ -192,7 +183,7 @@ To support the scenario, the following must be done:
 2. Click **Edit** (the pencil symbol) next to **Condition**.
 3. Enter the same condition that SGST uses.
 
-	![](media/da55b376d88489eec725d5c83d7e702e.png)
+	![](media/gte-sgst-condition.png)
 
 4. Save the tax document.
 
@@ -201,10 +192,7 @@ To support the scenario, the following must be done:
 1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Lookup** tab.
 2. Click **Columns**.
 3. Select **Import Order** and **IntraStateInUnionTerritory** as lookup columns.
-4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.
-
-	![](media/e6a2d52f43c9b19ee27451d209e26daa.png)
-	
+4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.	
 5. Save the tax document.
 
 #### Task 5.6 Configure formulas
@@ -262,7 +250,7 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 >   For example, change the **Tax amount Inclusive** formula as shown here.
 
-	![](media/a097874b0d1404abe674d50470e89e73.png)
+	![](media/gte-tax-amount-inclusive.png)
 
 3. Save the tax document.
 4. Close the designer.
@@ -271,9 +259,6 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 1. Save the configuration, and close the designer.
 2. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-
-	![](media/e6938db9fe6cd010cab8093177fa01f9.png)
-
 3. Enter a description such as **UTGST**, and then click **OK**.
 4. If there are any errors, open the designer, click **Validate**, and fix the errors.
 5. After the status is updated to **Complete**, the configuration is ready for deployment.
@@ -282,20 +267,13 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 1. In the **Versions** grid, select the **Tax (India GST Contoso)** configuration.
 2. Click **Change status**, and then select **Share**.
-
-	![](media/f5ab08e0945f4bbe88896979ad394955.png)
-
 3. Click **Yes**.
-
-![](media/bb6db0ffabaacbae2afb1f76708377ea.png)
-
 4. Repeat steps 1 through step 3 for the **Taxable Document (India Contoso)** configuration.
 
 	> [!NOTE]
 	> The configuration will be saved in the C:\\India GST Configurations folder that you created earlier. Currently, all configurations are in that folder. You must then copy the folder to the Microsoft Dynamics AX environment where the configuration must be applied.
 
 ### Task 9: Import the configuration and deploy it to a specific company
-
 
 Save all the configuration files in one folder that Microsoft Dynamics AX Application Object Server (AOS) can access.
 
