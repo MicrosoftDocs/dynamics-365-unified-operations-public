@@ -47,22 +47,22 @@ This tutorial introduces the Performance software development kit (SDK) and show
 - A deployment that has volume data
 - Performance SDK (Look for a folder that is named **PerfSDK** on drive C or F, depending on your environment.)
 
-## Create a single-user C\# test from an XML recording
+## Create a single-user C# test from an XML recording
 
 To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
 
 1. Use Task recorder to create a recording of the scenario that you want to test.
 2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.
-3. Select **Dynamics 365** &gt; **Addins** &gt; **C\#** perf test generator add-in from Visual Studio. Select **Dynamics 365** &gt; **Addins** &gt; **Create C\# perf test from recording**.
+3. Select **Dynamics 365** > **Addins** > **Create C# perf test from recording**.
 4. In the **Import Task Recording** dialog box, enter the required details, and then select **Import**.
 
     [![Import Task Recording dialog box](./media/perf103a.png)](./media/perf103a.png)
 
-    A C\# test is generated in the **Generated** folder for the project that you selected.
+    A C# test is generated in the **Generated** folder for the project that you selected.
 
 ## Run a single-user performance test by using the Performance SDK
 
-1. In Control Panel, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
+1. In Control Panel, select **System and Security** > **System** > **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
     [![TestRoot environment variable set to the PerfSDK folder](./media/testroot.jpg)](./media/testroot.jpg)[](./media/perf103c.png)
 
@@ -119,7 +119,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
     4. Restart IIS.
 
-9. In Visual Studio, open the **Sample** project, and find the **PurchaseReq.cs** file. This file is a sample single-user test. In the file, comment out the following lines.
+9. In Visual Studio, open the **PerfSDKSample** project, and find the **PurchaseReq.cs** file. This file is a sample single-user test. In the file, comment out the following lines.
 
     ```
     if (this.TestContext !=null)
@@ -181,7 +181,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 [![Open in Visual Studio](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
-1. Open the **PerfSDK** sample project.
+1. Open the **PerfSDKSample** project.
 2. In the **CloudEnvironment.Config** file, update the **UserFormat** entry so that it reflects the admin user URL. For example, for `admin@example.com`, use **TST\_{0}@example.com** as the user format. Additionally, change the **UserCount** value to the number of users that you want to have in your performance test.
 
     [![Updated CloudEnvironment.Config file](./media/vsonline-12.jpg)](./media/vsonline-12.jpg)
@@ -202,7 +202,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-For this step, you must have a developer topology. Follow the instructions in the previous section. To enable communication with sandbox machines, you must follow these additional steps to establish trust between your developer topology and/or the Visual Studio Online test agent.
+For this step, you must have a developer topology. Follow the instructions in the previous section. You must follow these additional steps to establish trust between your developer topology and/or the Visual Studio Online test agent.
 
 1. Establish a Remote Desktop connection to your AOS machine, and copy over the .cer file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
@@ -269,7 +269,7 @@ You can now run performance tests against the topology.
     [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
 
     > [!NOTE]
-    > Information about your system under Test isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine, and set up the SQL/Windows Azure portal to monitor SQL usage of Database Transaction Units (DTUs).
+    > Information about your system while testing isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine, and set up the SQL/Windows Azure portal to monitor SQL usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
 
