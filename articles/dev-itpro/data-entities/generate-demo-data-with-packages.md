@@ -94,7 +94,7 @@ There are some steps that you must perform manually before you load the data pac
 
 ## Loading the packages
 
-The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the HQUS financials, you must import "100 - System and shared.zip" first, followed by "200 - Financials - HQUS.zip". If you want to add supply chain data to the HQUS company, add "300 - Supply chain 1 of 2 - HQUS.zip". The name of the package will also include the release for which it was intended.
+The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the HQUS financials, you must import **100 - System and shared.zip** first, followed by **200 - Financials - HQUS.zip**. If you want to add supply chain data to the HQUS company, add **300 - Supply chain 1 of 2 - HQUS.zip**. 
 
 Follow these steps to load the packages:
 1) Start with an empty instance where no data is loaded
@@ -112,30 +112,32 @@ The following packages are available to load. You must be in the legal entity li
 
 | Description | Notes |  
 |------|--------|
-| 100 - System and Shared | This must be loaded before any package.|  
-| 200 - Financials - HQUS | This can be loaded alone or with another financials package. |  
-| 200 - Financials - HQEU | This can be loaded alone or with another financials package. |  
-| 200 - Financials - CONS | This can be loaded alone or with another financials package. |  
-| 200 - Financials - PICH | This can be loaded alone or with another financials package. |  
-| 200 - Financials - PIFB | This can be loaded alone or with another financials package. |  
-| 300 - Supply chain 1 of 2 - HQUS | This must be loaded after the HQUS financials package. |  
-| 310 - Supply chain 2 of 2 - HQUS | This must be loaded after the HQUS Supply chain 1 of 2 package. |  
-| 300 - Supply chain - PIFB | This must be loaded after the PIFB Supply chain package. |  
-| 300 - Supply chain - PICH | This must be loaded after the PICH Supply chain package. |  
-| 400 - Project management - HQUS | This must be loaded after the HQUS financials package. |  
-| 900 - Financial transactions - HQUS | This must be loaded after the HQUS financials package. |  
-| 900 - Financial transactions - HQEU | This can be loaded alone or with another financials package. |  
+| 100 - System and Shared | Load this package before any others.|  
+| 200 - Financials - HQUS | Can be loaded alone or with another financials package. |  
+| 200 - Financials - HQEU | Can be loaded alone or with another financials package. |  
+| 200 - Financials - CONS | Can be loaded alone or with another financials package. |  
+| 200 - Financials - PICH | Can be loaded alone or with another financials package. |  
+| 200 - Financials - PIFB | Can be loaded alone or with another financials package. |  
+| 300 - Supply chain 1 of 2 - HQUS | Load after the HQUS financials package. |  
+| 310 - Supply chain 2 of 2 - HQUS | Load after the HQUS Supply chain 1 of 2 package. |  
+| 300 - Supply chain - PIFB | Load after the PIFB Supply chain package. |  
+| 300 - Supply chain - PICH | Load after the PICH Supply chain package. |  
+| 400 - Project management - HQUS | Load after the HQUS financials package. |  
+| 900 - Financial transactions - HQUS | Load after the HQUS financials package. |  
+| 900 - Financial transactions - HQEU | Load alone or with another financials package. |  
 
 ### Steps to take after loading packages
 In some cases, there may be data that you want to add due to a special scenario or missing entity. Add that data at this time. You may also want to manually post additional transactions or add your own data packages to enhance the demo experience.
 
 ### Scenario scripts
-Scripts have been provided for many of the scenarios supported by the demo data. You can find those scripts here: [Demo data scripts for Dynamics 365 Finance and Operations, Enterprise Edition](https://go.microsoft.com/fwlink/?linkid=861599). Please note that we will be continually adding additional scripts as they are completed.
+Scripts have been provided for many of the scenarios supported by the demo data. You can find those scripts here: [Demo data scripts for Dynamics 365 Finance and Operations, Enterprise Edition](https://go.microsoft.com/fwlink/?linkid=861599). 
+> [!NOTE]
+> We will be continually adding additional scripts as they are completed.
 
 ## Transactions and automatic posting
-Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions using the Ready to post feature, which includes both a form that allows you to define which transactions should be posted and an entity that allows you to import the definitions and automatically execute them. 
+Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions using the **Ready to post** feature, which includes both a form that allows you to define which transactions should be posted and an entity that allows you to import the definitions and automatically execute them. 
 
-The following transaction types are supported for posting demo data:
+The following transaction types are supported for posting demo data. 
 
 | Document | Entity document ID | Date filter | ID filters | Other filters |  
 |------|--------|--------|--------|--------|
@@ -157,32 +159,31 @@ The following transaction types are supported for posting demo data:
 For journals that support date ranges, the ready to post process looks at all of the journal lines to test for a date that falls in the specified range. If any line in the journal fall in the date range, the search stops and the entire batch will be posted.
 
 ### The Ready to post process
-The Ready to post feature uses a batch to monitor the list of transaction types that you want to post. Once the monitor detects a transaction that you want to post, it uses the transaction type to generate a batch that posts those transactions. The batch that is created is the same kind of batch that is created when you use the user interface for that transaction type. Once the transaction batch is complete, the Ready to post monitor updates the list with the results of the processing and with links to the batch and the original transaction.
+The **Ready to post** feature uses a batch to monitor the list of transaction types that you want to post. When the monitor detects a transaction of the type that you want to post, it uses the transaction type to generate a batch that posts those transactions. The batch that is created is the same kind of batch that is created when you use the user interface for that transaction type. When the transaction batch is complete, the **Ready to post monitor** updates the list with the results of the processing and with links to the batch and the original transaction.
 
 ### Use the Ready to post form to process transactions
-You can access the Ready to post form using System administration, Periodic tasks, Batch job ready to post. 
 
-To create a Ready to post job, follow these steps:
-1) Select the Create posting monitor menu and set up the batch parameters so that you have a recurring batch running. You only have to do this step once for each legal entity to initiate the posting batch process.
-2) Select New and enter a name for the demo data job. This job name must be unique and it must be unique across all companies.
-3) Use Add line to add a transaction type. 
-4) Select the transaction target. For journals, it is Post. For other transactions, it may change depending on the transaction type.
+1. Open the the Ready to post form from **System administration** > **Periodic tasks** > **Batch job ready to post**. 
+1) Select **Create posting monitor** and set up the batch parameters so that you have a recurring batch running. You only have to do this step once for each legal entity to initiate the posting batch process.
+2) Select **New** and enter a name for the demo data job. This job name must be unique across all companies.
+3) Click **Add line** to add a transaction type. 
+4) Select the transaction target. For journals, it is **Post**. For other transactions, it may change depending on the transaction type.
 4) Specify a start and end date range to limit the transactions that will be processed (when available)
 5) Specify a from and to document range to limit the transactions that will be processed (when available)
-6) Use Add line to add additional transaction types. You can use the same type on multiple lines.
-7) Click on the menu Mark ready to post. It will change the status from Open to Ready and the posting monitor will start processing each line.
-8) If you want to process the document immediately, click on the Process documents menu. The batch status will change to Scheduled and a batch will be started without using the posting monitor.
-9) When the batch is running, the status will be changed to In Progress
-10) When the batch is complete, the status will change to Successful or Error depending on the results. The posting results will be displayed at the bottom of the form.
+6) Clic **Add line** to add additional transaction types. You can use the same type on multiple lines.
+7) Click **Mark ready to post**. It will change the batch status from **Open** to **Ready**. The posting monitor will start processing each line.
+8) If you want to process a document immediately, click **Process documents**. The batch status will change to **Scheduled** and a batch will be started without using the posting monitor.
+9) When the batch is running, the status will be changed to **In Progress**.
+10) When the batch is complete, the status will change to **Successful** or **Error** depending on the results. The posting results will be displayed at the bottom of the form.
 
 ### Using the Ready to post entity to process transactions
-An entity called Demo data posting entity allows you to import a list of document types that you want to post. The entity will create a demo data job in the Ready to post form. If you have started the posting monitor, the transactions will post automatically after you import the data with the entity. 
+An entity called **Demo data posting** entity lets you import a list of document types that you want to post. The entity will create a demo data job in the **Ready to post** form. If you have started the posting monitor, the transactions will post automatically after you import the data with the entity. 
 
 The following columns appear in the Ready to post entity:
 
 | Column | Purpose | 
 |------|--------|
-| DemoDataJob | A unique demo data job id that you want to execute. Use the same ID for every line that belongs to a single job.|
+| DemoDataJob | A unique demo data job ID that you want to execute. Use the same ID for every line that belongs to a single job.|
 | LineNum | The order in which the tasks will be executed. |
 | DataProjectId | A link to the data project that contained the Ready to post entity. This is for export only.|
 | DemoDataJobStatus | The status of your demo data project. This is for export only. |
