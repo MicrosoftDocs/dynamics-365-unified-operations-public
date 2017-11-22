@@ -135,69 +135,47 @@ In order to implement an email provider, you must create the implementation clas
 - The class must implement the base **SysIMailer** methods, **getId** and **getDescription**.
 - The class must implement either the **SysImailerInteractive** or **SysIMailerNonInteractive** interfaces, or both.
 
-### Step 1: Attribute the implementation class
-
+### Attribute the implementation class
 
 The first step is to attribute the implementation class. Two attributes must be specified:
+- ExportAttribute – The framework uses this attribute to discover the plugin. The attribute specifies that the plugin is an implementation of **SysIMailer** and therefore part of the **SysMailer** framework.
+- ExportMetadataAttribute – The framework uses this attribute to find specific instances of a plugin with specific metadata. It specifies the ID of the email provider so that a single provider may be discovered quickly. **No two email providers should ever share the same ID.**
 
--   ExportAttribute – This attribute is used by the SysPlugin framework to discover the plugin. It specifies that the plugin is an implementation of SysIMailer and therefore part of the SysMailer framework.
-
--   ExportMetadataAttribute – This attribute is used by the SysPlugin framework to find specific instances of a plugin with specific metadata. It specifies the ID of the email provider so that a single provider may be discovered quickly. **No two email providers should ever share the same ID.**
-
+```
 using System.IO;
-
 using System.Net.Mail;
-
 using System.Text.RegularExpressions;
-
 \#define.SysMailerEML\_ID('EML')
-
-*/// &lt;summary&gt;*
-
-*/// The &lt;c&gt;SysMailerEML&lt;/c&gt; class is an interactive email provider implementation that sends messages by generating*
-
-*/// an EML file, uploading it to Azure temporary blob storage, and then redirecting the user's browser to*
-
-*/// the file to save or open for sending using their default email client.*
-
-*/// &lt;/summary&gt;*
-
-*// This is a framework class. Customizing this class may cause problems with future upgrades to the software.*
-
+/// &lt;summary&gt;
+/// The &lt;c&gt;SysMailerEML&lt;/c&gt; class is an interactive email provider implementation that sends messages by generating
+/// an EML file, uploading it to Azure temporary blob storage, and then redirecting the user's browser to
+/// the file to save or open for sending using their default email client.
+/// &lt;/summary&gt;*
+// This is a framework class. Customizing this class may cause problems with future upgrades to the software.
 \[System.ComponentModel.Composition.ExportAttribute(identifierStr(Dynamics.AX.Application.SysIMailer)),
-
 System.ComponentModel.Composition.ExportMetadataAttribute(extendedTypeStr(SysMailerId), \#SysMailerEML\_ID)\]
-
 public class SysMailerEML implements SysIMailerInteractive
-
 {
+```
 
-### Step 2: Implement the SysIMailer interface
+### Implement the SysIMailer interface
 
+The **SysIMailer** interface includes identifiable information about an email provider regardless of the capabilities of the email provider itself. Implementing it involves creating two methods:
+- getId: This method returns the same ID as specified in the **ExportMetadataAttribute**.
+- getDescription: This method returns a non-technical description of how the email will be sent.
 
-The SysIMailer interface includes identifiable information about an email provider regardless of the capabilities of the email provider itself. Implementing it involves creating two methods:
-
--   getId() – This should return the same ID as specified in the ExportMetadataAttribute.
-
--   getDescription() – This should return a non-technical description of how the email will be sent.
-
+```
 public SysMailerId getId()
-
 {
-
-return \#SysMailerEML\_ID;
-
+    return \#SysMailerEML\_ID;
 }
 
 public SysMailerDescription getDescription()
-
 {
-
-*// Use an email app, such as Outlook*
-
-return "@ApplicationFoundation:EmailProviderEMLDescription";
-
+    // Use an email app, such as Outlook
+    return "@ApplicationFoundation:EmailProviderEMLDescription";
 }
+```
 
 ### Step 3: Implement a combination of the SysIMailerInteractive and SysIMailerNonInteractive interfaces
 
