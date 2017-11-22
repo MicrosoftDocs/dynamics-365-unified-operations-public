@@ -55,9 +55,7 @@ Companies can change the output of the plan. They can run regenerative or net ch
 
 Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies this is extended to include the longest cumulative lead time among the products to be received.
 
-
-
-
+[![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## Additional resources
 
