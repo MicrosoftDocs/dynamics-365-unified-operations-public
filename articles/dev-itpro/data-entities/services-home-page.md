@@ -118,30 +118,6 @@ Before any clients can communicate with the services, they must be registered i
 
 You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 
-> [!NOTE]
-> Only one Azure Service Administrator user should add the application and share the client ID with the developers. You must have an Azure subscription and administrator access to Active Directory to perform this procedure.
-
-1.  In a web browser, go to <http://manage.windowsazure.com/>.
-2.  Enter the user name and password of the user who has access to the Azure subscription. After the credentials are authenticated, Azure Portal opens.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**. 
-4.  In the grid, select the Active Directory instance that is being used.
-5.  On the top toolbar, click **Applications**. 
-6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
-7.  Add a new native client application: 
- - Click **Add an application my organization is developing**. 
- - Give it a name, and then click **Native client application**.
- - Click the check mark button to complete the wizard. 
-  After you complete the wizard, the new application page opens. 
-   ![Native client app](./media/native-client-app.png)
-9.  On the top toolbar, click **Configure**.
-10. Scroll down until you see the **Permissions to other applications** section. Click **Add Application** in this section. ![Add application](./media/7_services.png)
-11. Select **Microsoft Dynamics ERP** in the list.
-12. Click the **Complete check** button in the right corner of the page.
-13. In the **Delegate Permissions** list, select all check boxes.
-14. Make a note of the following two pieces of information:
-    -   **Client ID**
-    -   **Redirect URI**
-
 
 ### Client sample code
 
