@@ -17,7 +17,7 @@
 
 ### [What's new or changed](get-started/whats-new-changed.md)
 #### [Deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md)
-#### [AX 2012 features not yet implemented](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
+#### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
@@ -42,6 +42,7 @@
 ##### [February 2016 task guides](get-started/new-task-guides-available-february-2016.md)
 
 ### Explore the user interface
+#### [Accessibility features](get-started/accessibility-features.md)
 #### [Client UI FAQ](get-started/client-faq.md)
 #### [Action search](get-started/action-search.md)
 #### [Advanced filtering and query syntax](get-started/advanced-filtering-query-options.md)
@@ -131,69 +132,15 @@
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
-
-## Data management platform
-
-### [Data entities, projects, and packages](../dev-itpro/data-entities/data-entities.md)
-#### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
-##### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
-##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
-##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
-##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-##### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
-
-#### Standard data entities
-##### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
-##### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
-##### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
-##### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
-##### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
-##### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
-##### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
-##### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
-##### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
-##### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
-##### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
-##### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
-##### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
-##### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
-##### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
-##### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
-##### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
-##### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
-##### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
-##### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
-##### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
-##### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
-##### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
-##### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
-##### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
-
-#### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
-
-##### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
-
-#### Development for data entities
-##### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
-##### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
-##### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
-##### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
-##### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
-##### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
-##### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
-##### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
-
-### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-
-## Data integration framework
+## Data integration
+### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
 
 ### Data integration APIs
 #### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
 #### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
 ##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro/data-entities/odata.md)
+#### [OData](../dev-itpro//data-entities/odata.md)
+#### [Custom services](../dev-itpro/data-entities/custom-services.md)
 #### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
 ### Development for integration
@@ -212,6 +159,69 @@
 ###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
 ###### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
 ###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+#### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
+
+
+## [Data management](../dev-itpro/data-entities/data-entities-data-packages.md)
+
+### [Data entities](../dev-itpro/data-entities/data-entities.md)
+
+#### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
+#### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
+#### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+#### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+#### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
+
+### Standard data entities
+#### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
+#### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
+#### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
+#### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
+#### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
+#### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
+#### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
+#### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
+#### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
+#### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
+#### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
+#### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
+#### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
+#### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
+#### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
+#### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
+#### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
+#### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
+#### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
+#### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
+#### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
+#### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
+#### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
+#### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
+#### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
+
+### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
+
+#### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
+
+### Development for data entities
+#### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
+#### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
+#### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
+#### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
+#### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
+#### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
+#### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
+#### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
+
+### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
 
 ## [Financial management](../financials/index.md)
 
@@ -842,6 +852,7 @@
 ###### [Vendor invoice payment holds](../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 ##### [Approve and post draw bill of exchange](../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md)
 ##### [Chronological invoices vouchers](../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+##### [Create Standard Audit File for France (FEC)](../financials/localizations/emea-fra-fec-audit-file.md)
 ##### [Customer and vendor account statements](../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md)
 ##### [Daily interest calculation for late payment and lump sum in the invoice and collection letter](../financials/localizations/tasks/fr-00018-daily-interest.md)
 ##### [Derogatory depreciation](../financials/localizations/emea-fra-derogatory-depreciation.md)
@@ -1206,8 +1217,10 @@
 #### [List of SQL Server Reporting Services reports](../dev-itpro/analytics/SSRS-report.md)
 #### [Create reporting solutions](../dev-itpro/analytics/create-nextgen-reporting-solutions.md)
 #### [Install report design templates](../dev-itpro/analytics/install-modern-report-design-templates.md)
-#### [Extend report menu items ](../dev-itpro/analytics/extend-report-menu-items.md)
-#### [Custom design business docs ](../dev-itpro/analytics/custom-designs-business-docs.md)
+#### [Customize App Suite reports using extensions](../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md)
+#### [Expand Application Suite report data sets](../dev-itpro/analytics/expand-app-suite-report-data-sets.md)
+#### [Extend report menu items](../dev-itpro/analytics/extend-report-menu-items.md)
+#### [Custom design business docs](../dev-itpro/analytics/custom-designs-business-docs.md)
 
 
 ### [Electronic reporting](../dev-itpro/analytics/general-electronic-reporting.md)
@@ -1425,6 +1438,40 @@
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
 
+### Procurement and sourcing tasks
+#### [Approve vendors for specific procurement categories](../supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories.md)
+#### [Approve vendors for specific products](../supply-chain/procurement/tasks/approve-vendors-specific-products.md)
+#### [Create a procurement catalog](../supply-chain/procurement/tasks/create-procurement-catalog.md)
+#### [Create project purchase order](../supply-chain/procurement/tasks/create-project-purchase-order.md)
+#### [Create a purchase agreement](../supply-chain/procurement/tasks/create-purchase-agreement.md)
+#### [Create a purchase order](../supply-chain/procurement/tasks/create-purchase-order.md)
+#### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
+#### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
+#### [Create a purchase release order when creating the purchase order](../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md)
+#### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
+#### [Create a purchase return order](../supply-chain/procurement/tasks/create-purchase-return-order.md)
+#### [Create purchasing policies](../supply-chain/procurement/tasks/create-purchasing-policies.md)
+#### [Create a repeat purchase order](../supply-chain/procurement/tasks/create-repeat-purchase-order.md)
+#### [Create a request for quotation](../supply-chain/procurement/tasks/create-request-quotation.md)
+#### [Create a requisition for consumption](../supply-chain/procurement/tasks/create-requisition-consumption.md)
+#### [Create a requisition that uses an RFQ](../supply-chain/procurement/tasks/create-requisition-uses-rfq.md)
+#### [Create a scoring method for RFQs](../supply-chain/procurement/tasks/create-scoring-method-rfqs.md)
+#### [Create solicitation types and scoring criteria for RFQs](../supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md)
+#### [Create a vendor account](../supply-chain/procurement/tasks/create-vendor-account.md)
+#### [Create a vendor bank account](../supply-chain/procurement/tasks/create-vendor-bank-account.md)
+#### [Enter and compare RFQ bids and award contracts](../supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts.md)
+#### [Record the receipt of goods on the purchase order](../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md)
+#### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
+#### [Search for vendors](../supply-chain/procurement/tasks/search-vendors.md)
+#### [Set up permissions for ordering products on behalf of someone else](../supply-chain/procurement/tasks/set-up-permissions-ordering-products.md)
+#### [Set up policies for procurement category hierarchies](../supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies.md)
+#### [Set up a procurement category hierarchy](../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md)
+#### [Set up project resource information](../supply-chain/procurement/tasks/set-up-project-resource-information.md)
+#### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
+#### [Submit and approve project budget revisions](../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md)
+
+
+
 ## [Organization administration](organization-administration/organization-administration-home-page.md)
 ### [Number sequences](organization-administration/number-sequence-overview.md)
 #### [Set up number sequences on an individual basis](organization-administration/tasks/set-up-number-sequences-individual-basis.md)
@@ -1472,37 +1519,7 @@
 ### [Configure and send email](organization-administration/configure-email.md)
 ### [Date/time data and time zones](organization-administration/date-time-zones.md)
 
-### Procurement and sourcing tasks
-#### [Approve vendors for specific procurement categories](../supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories.md)
-#### [Approve vendors for specific products](../supply-chain/procurement/tasks/approve-vendors-specific-products.md)
-#### [Create a procurement catalog](../supply-chain/procurement/tasks/create-procurement-catalog.md)
-#### [Create project purchase order](../supply-chain/procurement/tasks/create-project-purchase-order.md)
-#### [Create a purchase agreement](../supply-chain/procurement/tasks/create-purchase-agreement.md)
-#### [Create a purchase order](../supply-chain/procurement/tasks/create-purchase-order.md)
-#### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
-#### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
-#### [Create a purchase release order when creating the purchase order](../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md)
-#### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
-#### [Create a purchase return order](../supply-chain/procurement/tasks/create-purchase-return-order.md)
-#### [Create purchasing policies](../supply-chain/procurement/tasks/create-purchasing-policies.md)
-#### [Create a repeat purchase order](../supply-chain/procurement/tasks/create-repeat-purchase-order.md)
-#### [Create a request for quotation](../supply-chain/procurement/tasks/create-request-quotation.md)
-#### [Create a requisition for consumption](../supply-chain/procurement/tasks/create-requisition-consumption.md)
-#### [Create a requisition that uses an RFQ](../supply-chain/procurement/tasks/create-requisition-uses-rfq.md)
-#### [Create a scoring method for RFQs](../supply-chain/procurement/tasks/create-scoring-method-rfqs.md)
-#### [Create solicitation types and scoring criteria for RFQs](../supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md)
-#### [Create a vendor account](../supply-chain/procurement/tasks/create-vendor-account.md)
-#### [Create a vendor bank account](../supply-chain/procurement/tasks/create-vendor-bank-account.md)
-#### [Enter and compare RFQ bids and award contracts](../supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts.md)
-#### [Record the receipt of goods on the purchase order](../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md)
-#### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
-#### [Search for vendors](../supply-chain/procurement/tasks/search-vendors.md)
-#### [Set up permissions for ordering products on behalf of someone else](../supply-chain/procurement/tasks/set-up-permissions-ordering-products.md)
-#### [Set up policies for procurement category hierarchies](../supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies.md)
-#### [Set up a procurement category hierarchy](../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md)
-#### [Set up project resource information](../supply-chain/procurement/tasks/set-up-project-resource-information.md)
-#### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
-#### [Submit and approve project budget revisions](../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md)
+
 
 ## [Production](../supply-chain/production-control/production-process-overview.md)
 ### [Production process overview](../supply-chain/production-control/production-process-overview.md)

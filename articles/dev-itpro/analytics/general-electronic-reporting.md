@@ -2,10 +2,10 @@
 # required metadata
 
 title: Electronic reporting overview
-description: This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
-author: kfend
+description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
+author: NickSelin
 manager: AnnBe
-ms.date: 06/15/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.search.form: ERWorkspace
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -202,7 +202,7 @@ The following illustration shows an example where data model content is translat
 
 ### Configuring data model mappings for outgoing documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific Finance and Operations data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an exampel of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model). 
+ER provides a model mapping designer that lets users map data models that they have designed to specific Finance and Operations data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model). 
 
 [![Example of data model mapping](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 

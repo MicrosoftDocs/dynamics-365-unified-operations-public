@@ -5,7 +5,7 @@ title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
@@ -50,7 +50,7 @@ You can translate the product-related information into any language that is avai
 ## Where can I view the translated information?
 You can view translations of product-related information in any external source document, such as an invoice, that uses a language where translations are available.
 
-## How do I create translations for productrelated information?
+## How do I create translations for product-related information?
 To create translations for a product, follow these steps:
 1.  Click **Product information management** &gt; **Common** &gt; **Released products**.
 2.  Select a product, and on the Action Pane, in the **Languages** group, click **Translations**.
@@ -127,7 +127,7 @@ To manage translations for values in a dimension value group, follow these steps
 1.  Follow the steps in the previous procedure for creating a dimension value group to open the **Size group lines**, **Color group lines**, or **Style group lines** page.
 2.  Click **Text translation**. In the **Text translation** page, in the **Translated text** group, enter translations in the **Name** and **Description** fields.
 
-## When can translations of productrelated information be managed?
+## When can translations of product-related information be managed?
 Translations of product-related information can be managed at any time. When translations are updated for a dimension value that is associated with a product, the product information is updated, regardless of whether the product has transactions.
 
 

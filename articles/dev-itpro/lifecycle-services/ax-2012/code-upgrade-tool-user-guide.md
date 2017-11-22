@@ -2,10 +2,10 @@
 # required metadata
 
 title: Code Upgrade Tool User Guide
-description: 
+description: The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15101
 ms.assetid: 76a3bf45-51bd-4027-80b1-50b5fea4da1e

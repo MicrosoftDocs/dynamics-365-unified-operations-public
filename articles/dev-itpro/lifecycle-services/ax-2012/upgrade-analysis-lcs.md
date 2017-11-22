@@ -2,10 +2,10 @@
 # required metadata
 
 title: Upgrade analysis 
-description: This article explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
+description: This topic explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 11394
 ms.assetid: 86375ca9-6c2a-47a8-badc-b713b186b4e8
@@ -35,11 +35,11 @@ ms.dyn365.ops.version: 2012
 [!include[banner](../../includes/banner.md)]
 
 
-This article explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
+This topic explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
 
 In Microsoft Dynamics Lifecycle Services (LCS), Upgrade analysis helps users plan a full-version upgrade to Microsoft Dynamics AX 2012 from Microsoft Dynamics AX 4.0 or Microsoft Dynamics AX 2009, or a minor-version or in-place upgrade from one version of AX 2012 to another. The following chart shows how the service works for both full-version upgrades and in-place upgrades. ![Upgrade analysis service options](./media/lcsupgradeanalysisservice.png) Upgrade analysis uses a Rapid Data Collector (RDC) tool to analyze information about the existing environment. This information can help you estimate the scale of the upgrade project. For more information about full-version upgrade, see [Scenario: Upgrade AX 4.0 or AX 2009 to AX 2012 (all versions)](http://technet.microsoft.com/library/ccf303bb-5d58-4e22-b802-986e61720488(AX.60).aspx).
 
-## Collect and upload files for analysis (Fullversion upgrade: AX 4.0 or AX 2009)
+## Collect and upload files for analysis (Full-version upgrade: AX 4.0 or AX 2009)
 To use Upgrade analysis, you must install the RDC tool, and then upload the RDC files and AOD files. The RDC tool collects metadata about the production environment, such as the number of records in tables. **Important:** The RDC tool should be run in a copy of the production environment where no upgrade scripts have been loaded.
 
 ### Install the RDC tool
@@ -61,7 +61,7 @@ You can upload the RDC files and AOD files in any order.
 4.  After you upload all the files to analyze, click **Analyze**. When the analysis process is completed, the status appears as **Complete**.
 5.  For information about the reports that are available, see the "Download the report" section.
 
-## Collect and upload files for analysis (Inplace upgrade: AX 2012)
+## Collect and upload files for analysis (In-place upgrade: AX 2012)
 For in-place upgrades, you must upload a model store that you have exported as a zip file. Before you begin, follow the steps in the [Before you begin](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx#Prerequisites) section of the [Scenario: Perform in-place upgrade to AX 2012 R2 or AX 2012 R3](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx) topic.
 
 ### Export and zip your model store
@@ -77,7 +77,7 @@ For in-place upgrades, you must upload a model store that you have exported as a
 4.  On the **Upgrade analysis file upload** page, click **+ (Add files)**.
 5.  Browse to the zipped model store, and then click **Upload**. After the file is uploaded, the site lists the file name and size.
 6.  Click **Analyze Code** to start the analysis process. If no virtual machine is available when you start the process, the status appears as **Process pending**. **Note:** The analysis process takes 2 to 5 hours, depending on the size of the model store. You can close the website and sign in again later to check on the progress of the analysis. The progress is updated every 15 minutes.
-7.  When the analysis process is completes, the status appears as **Complete**.
+7.  When the analysis process is complete, the status appears as **Complete**.
 8.  For information about the reports that are available, see the "Download the report" section.
 
 ## Download the report

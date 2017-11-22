@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: CompleteEventArgs
-description: 
+description: CompleteEventArgs type
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017

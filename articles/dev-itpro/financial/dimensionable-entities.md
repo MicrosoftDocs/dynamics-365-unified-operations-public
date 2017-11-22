@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
 ms.assetid: 
@@ -82,7 +82,7 @@ At this point you should be able to run the following query in SQL Server Manage
       select * from DIMATTRIBUTECUSTTABLE
     
 
-| KEY\_   | VALUE    | DATAAREAID | PARTITION | RECID   | NAME           | PARTITION\#2 |
+| KEY_   | VALUE    | DATA AREA ID | PARTITION | RECID   | NAME           | PARTITION #2 |
 |-------------|--------------|----------------|---------------|-------------|--------------------|------------------|
 | 22565425322 | US\_SI\_0129 | ussi           | 5637144576    | 22565425322 | Adventure Services | 5637144576       |
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | Alpine Electronics | 5637144576       |

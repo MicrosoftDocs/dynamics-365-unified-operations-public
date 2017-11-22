@@ -5,7 +5,7 @@ title: Distribute questionnaires using scheduling
 description: Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/15/2016
+ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -47,7 +47,7 @@ Questionnaire scheduling allows you to plan and distribute questionnaires to mul
 9. Expand the Email for employee self service section.
 10. In the Subject field, type a value.
     * Example: Questionnaire available  
-11. In the Text field, type the body of your email message. Note, the variable can be used to substitue values in the system.
+11. In the Text field, type the body of your email message. Note, the variable can be used to substitute values in the system.
     * Example:   Dear %P%,  Please log in to Employee Self Service to complete the Workforce Health questionnaire.  Contoso  
 12. Click Save.
 

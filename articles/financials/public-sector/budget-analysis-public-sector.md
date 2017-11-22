@@ -5,7 +5,7 @@ title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
@@ -39,7 +39,7 @@ This topic describes how to use the Budget analysis page to view revenues and ex
 
 This topic describes the budget analysis functionality available for the public sector. 
 
-Before you read this topic, you should also read [Budgeting in the public sector.](budgeting-public-sector.md). 
+Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md). 
 
 You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. 
 

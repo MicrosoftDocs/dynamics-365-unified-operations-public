@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
@@ -62,17 +62,17 @@ One important difference between filtering in Microsoft Dynamics 365 for Finan
 
 | Filter operator                      | Finance and Operations query syntax |
 |--------------------------------------|------------------------------------------|
-| Is “foo” /  Is equal to “foo”        | “foo”                                    |
-| Is not “foo” / Is not equal to “foo” | “!foo”                                   |
-| Is one of “foo”, “bar”, “foobar”     | “foo,bar,foobar”                         |
-| Contains “foo”                       | “\*foo\*”                                |
-| Does not contain “foo”               | “!\*foo\*”                               |
-| Begins with “foo”                    | “foo\*”                                  |
-| After “foo” / Greater than “foo”     | “&gt;foo”                                |
-| Greater than or equal “foo”          | “foo..”                                  |
-| Before “foo” / Less than “foo”       | “&lt;foo”                                |
-| Less than or equal “foo”             | “..foo”                                  |
-| Between “bar” and “foo”              | “bar..foo”                               |
+| Is “circle” /  Is equal to “circle”        | “circle”                                    |
+| Is not “circle” / Is not equal to “circle” | “!circle”                                   |
+| Is one of “circle”, “square”, “circlesquare”     | “circle,square,circlesquare”                         |
+| Contains “circle”                       | “\*circle\*”                                |
+| Does not contain “circle”               | “!\*circle\*”                               |
+| Begins with “circle”                    | “circle\*”                                  |
+| After “circle” / Greater than “circle”     | “&gt;circle”                                |
+| Greater than or equal “circle”          | “circle..”                                  |
+| Before “circle” / Less than “circle”       | “&lt;circle”                                |
+| Less than or equal “circle”             | “..circle”                                  |
+| Between “square” and “circle”              | “square..circle”                               |
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 

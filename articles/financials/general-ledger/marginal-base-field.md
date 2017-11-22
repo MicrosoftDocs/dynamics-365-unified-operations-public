@@ -2,10 +2,10 @@
 # required metadata
 
 title: Sales tax rates based on the Marginal base and Calculation methods
-description: This article explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
+description: This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
+This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 
 The Marginal base on the Calculation FastTab on the Sales tax codes page determines which amount is used to pick the appropriate tax rate(s) from the rates in the Sales tax code values page. The amount type in the Marginal base field in combination with the method in the Calculation method field determines the logic to find the correct tax rate(s) for a transaction. 
 
@@ -154,7 +154,7 @@ The sales tax rates are set up in the following intervals.
 
 Marginal base: **Gross amount per line** 
 Calculation method: **Interval** 
-Additionally there is an other tax code calculated for a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation. 
+Additionally there is another tax code calculated for a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation. 
 You buy 8 lamps that cost 25.00 each. The net amount for the invoice line is 200.00. 
 The gross amount for the invoice line is 8 x 25.00 + 8 x 5.00 = 240.00. 
 The tax is calculated as follows: 

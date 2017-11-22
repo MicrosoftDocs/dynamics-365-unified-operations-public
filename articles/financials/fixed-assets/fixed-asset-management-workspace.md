@@ -5,7 +5,7 @@ title: Fixed asset management workspace
 description: This topic provides information about the Fixed asset management workspace. This workspace shows information that is related to the fixed assets that are entered in the system. It includes a summary view and an analytics view.
 author: saraschi
 manager: AnnBe
-ms.date: 06/06/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -63,7 +63,7 @@ You can navigate directly to the **Books setup** page, **Fixed asset transaction
 
 ### Analytics – all companies
 
-The **Analytics** page provides important metrics about fixed assets in all legal entities in the system. Access to this tab is controlled by the View fixed asset analytics for all companies security privilege.
+The **Analytics** page provides important metrics about fixed assets in all legal entities in the system. Access to this tab is controlled by the View fixed asset analytics for all company's security privileges.
 
 The following table shows the visualizations that are available on each report page.
 

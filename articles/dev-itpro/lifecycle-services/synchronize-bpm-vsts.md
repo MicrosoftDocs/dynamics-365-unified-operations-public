@@ -1,9 +1,9 @@
 ---
 title: Synchronize a BPM library with Visual Studio Team Services
-description:
+description: This topic provides information about how to synchronize a BPM library in LCS wtih Visual Studio Team Services (VSTS).
 author: kfend
 manager: AnnBe
-ms.date: 10/18/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, Operations, UnifiedOperations
+ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13301
 ms.assetid: 
@@ -95,7 +95,7 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ## Turn off synchronization of BPM with VSTS
 
-To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **VSTS sync**..
+To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **VSTS sync**.
 
 ## Review processes and add requirements
 
@@ -106,7 +106,7 @@ To mark a process or one of its child processes as reviewed, select the process 
 When a business process is marked as reviewed, the **Reviewed** column is updated. This column shows the following information:
 
 - A fraction indicates how many direct child processes have been reviewed.
-- An symbol indicates how completely the process and its child processes have been reviewed:
+- A symbol indicates how completely the process and its child processes have been reviewed:
 
    - **Green check mark** – The process and all its child processes have been fully reviewed.
    - **Yellow circle** – The process and its child processes have been partially reviewed.

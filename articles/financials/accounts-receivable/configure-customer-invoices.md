@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create a customer invoice
-description: 
+description: A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
@@ -45,7 +45,7 @@ For more information see:
 
 [Create a free text template](tasks/create-free-text-invoice-template.md)
 
-[Assign a free text invoice tempate to a customer](tasks/assign-free-text-invoice-template-customer.md)
+[Assign a free text invoice template to a customer](tasks/assign-free-text-invoice-template-customer.md)
 
 [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 

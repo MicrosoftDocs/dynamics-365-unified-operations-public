@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96343
 ms.assetid: d8a43ba6-f045-4318-85b0-3a6c14c418c7
@@ -145,7 +145,7 @@ Before you proceed with additional data import, you must setup the Project manag
 
 **26.1.013 PA - Projects master**
 
-Forecasts models aren’t part of the Dynamics AX 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project record will fail, because some of the inclusive projects dates are wrong.
+Forecasts models aren’t part of the Dynamics AX 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project records will fail, because some of the inclusive projects dates are wrong.
 
 | Suggested sequence | Entity name | Area     | Entity type | Dependency | Comments                                |
 |--------------------|-------------|----------|-------------|------------|-----------------------------------------|

@@ -5,7 +5,7 @@ title: Security Upgrade Advisor Tool user guide (AX 2012)
 description: The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012 R3 CU8, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 30061
 ms.assetid: fda4d8e9-79a2-4ee2-831e-a90a9df2d980
@@ -94,7 +94,7 @@ The outputs of the wizard are custom roles in the AOT, named with a prefix that 
 7.  Click **Next** to open the **Step 2 Find Privilege Matches** page. This step iterates through the existing security settings, and finds matching entry points and permissions in Microsoft Dynamics AX 2012.
 8.  Click **Next** to open the **Step 3 Map User Groups to Custom Roles** page. This step generates new custom role mappings for the privileges that were found.
 9.  Click **Next** to open the **Step 4 Export Security Upgrade Suggestions** page. This step exports all the mappings to a temporary table.
-10. Click **Next** to open the **Step 5 Security Upgrade Suggestions** page. This page of the wizard displays the suggested security mappings. **Important: ** We strongly recommend that you export the upgrade suggestions for additional analysis.You can copy and paste the data into Microsoft Excel for additional analysis by pressing Ctrl+T. For more information about how to analyze the suggested settings, see the next section.
+10. Click **Next** to open the **Step 5 Security Upgrade Suggestions** page. This page of the wizard displays the suggested security mappings. **Important: ** We strongly recommend that you export the upgrade suggestions for additional analysis. You can copy and paste the data into Microsoft Excel for additional analysis by pressing Ctrl+T. For more information about how to analyze the suggested settings, see the next section.
 11. If, during your analysis of the security upgrade suggestions, you notice multiple items that have the **NoMatchingPrivilege** status, you may want to run the Privilege Generation Tool. Click **Generate Privileges**.
 12. Click **Next** to open the **Step 6 Specify Custom Role Generation Options** page. In this step, you can specify options for generating roles in the AOT:
     -   Select Include similar matches in the custom role to use privileges that match with **Similar** status, and to add them to the custom role.

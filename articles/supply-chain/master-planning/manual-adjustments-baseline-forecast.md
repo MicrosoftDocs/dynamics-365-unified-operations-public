@@ -2,10 +2,10 @@
 # required metadata
 
 title: Make manual adjustments to the baseline forecast
-description: This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
+description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
+This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 
 Before you make manual adjustments, it's important that you understand a few concepts on various pages.
 
@@ -46,7 +46,7 @@ The **Adjusted demand forecast** page includes a grid that has the following str
 -   Subsequent columns represent the forecast buckets that the forecast has been generated for. Each column header is the first date of the forecast bucket that the column shows.
 -   The values in the cells represent the forecast for one item, item allocation key, and so on, for that specific forecast bucket.
 
-## Forecast aggregation and deaggregation
+## Forecast aggregation and de-aggregation
 The subtitle of the page shows the level of forecast aggregation. 
 
 For example, if the subtitle of the page is **Company / Site / Allocation key / Item number / Color / Size / Configuration / Style**, there is no forecast aggregation, and the forecast is shown at the level of the item and its dimensions. To change the aggregation, use the **Change forecast dimensions** page, which you can open from the application menu. 

@@ -46,7 +46,7 @@ This procedure shows how to find the price and/or discount for a product which i
     * If the Show related product variants option is selected, it means that there are additional trade agreements for product's variants.  
 7. Click the Show related product variants checkbox.
     * A list of the product variants is shown, with information about their dimensions.  
-8. In the list, mark the line representing colour White.
+8. In the list, mark the line representing color White.
     * Notice, that the product price is now different from the one displayed previously when it was not specified per dimension.  
 9. Click View sales prices.
     * The Price (sales) page displays all the trade agreements applicable to the product, including its variants.  

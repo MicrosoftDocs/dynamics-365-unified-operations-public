@@ -2,10 +2,10 @@
 # required metadata
 
 title: Production process overview
-description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
+description: This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
+This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 
 The production of products, a process that is also known as the production life cycle, follows specific steps that are required to complete the manufacture of an item. The life cycle begins with the creation of the production order, batch order, or kanban. It ends with a finished, manufactured item that is ready for either a customer or another phase of production. Each step in the life cycle requires different kinds of information to complete the process. As each step is completed, the production order, batch order, or kanban shows a change in the production status. Different types of products require different manufacturing processes.  
 
@@ -59,7 +59,7 @@ To select the manufacturing principle that best applies to a particular product 
 -   **Make to stock** – This is the classic manufacturing principle, where products are produced for stock, based on forecast or minimum stock refill (the latter is typically calculated based on forecast or historic consumption).
 -   **Make to order** – Standard products are made to order or finished to order. Although pre-production might be done by using the Make to stock principle, expensive steps of the value chain, or steps that create variants, are triggered by a sales order or transfer order.
 -   **Configure to order** – As for the Make to order principle, the final operations of the value chain are made to order. The actual product variant that is produced isn't predefined but is created at the time of order entry, based on the configuration model of the sales product. The Configure to order principle requires a certain level of process unification for a given product line.
--   **Engineer to order** – Engineer to order processes are typically adressed by a project and usually start with the engineering phase. During the engineering phase, the actual products that are required fulfill the order are designed and described. Production orders, batch orders, or kanbans can then be created to produce the products.
+-   **Engineer to order** – Engineer to order processes are typically addressed by a project and usually start with the engineering phase. During the engineering phase, the actual products that are required fulfill the order are designed and described. Production orders, batch orders, or kanbans can then be created to produce the products.
 
 ## Overview of the production life cycle
 The following steps in the production life cycle can occur for all order types of mixed mode manufacturing. However, not all of them are represented as an explicit order status.
@@ -71,7 +71,7 @@ The following steps in the production life cycle can occur for all order types o
     -   **Job scheduling** – This scheduling method provides a detailed plan. Each operation is broken down into individual jobs that have specific dates, times, and assigned operations resources. If finite capacity is used, jobs are assigned to operations resources based on availability. You can view and change the schedule in a Gantt chart.
     -   **Kanban schedule** – Kanban jobs are scheduled on the kanban schedule board or automatically scheduled based on the automatic planning configuration of the kanban rules.
 
-4.  **Released** – You can release the production order or batch order when the schedule is finished and the material is available to be picked or prepared. The material availability check helps the shop floor supervisor assess the availabilty of material for the production orders or batch orders. You can also print the production order documents, such as the pick lists, job card, route card, and route job. When the production order is released, the status of the order changes to indicate that the production can begin. When warehouse management is used, release of the production order or batch order releases the production BOM lines to warehouse management. Warehouse waves and warehouse work are then generated according to the setup of the warehouse.
+4.  **Released** – You can release the production order or batch order when the schedule is finished and the material is available to be picked or prepared. The material availability check helps the shop floor supervisor assess the availability of material for the production orders or batch orders. You can also print the production order documents, such as the pick lists, job card, route card, and route job. When the production order is released, the status of the order changes to indicate that the production can begin. When warehouse management is used, release of the production order or batch order releases the production BOM lines to warehouse management. Warehouse waves and warehouse work are then generated according to the setup of the warehouse.
 5.  **Prepared**/**Picked** – When all materials and resources have been staged at the production location, the production BOM lines or kanban lines are updated to a status of **Picked**. Pegged supply orders and related warehouse work are typically completed at this stage. The kanban cards or job cards that are required to report production progress should be assigned and printed.
 6.  **Started** – When a production order, batch order, or kanban is started, you can report material and resource consumption against the order. The system can be configured to automatically post the material and resource consumption that are allocated to the order when the order is started. This allocation is known as preflushing, forward flushing, or autoconsumption. You can manually allocate materials to production orders or batch orders by creating additional picking list journals. You can also manually allocate labor and other route costs to the order. If you're using operations scheduling, you can allocate these costs by creating a route card journal. If you're using job scheduling, you can allocate the costs by creating a job card journal. Production orders or batch orders can be started in batches of the requested final quantity. Within a production order, batch order, or kanban, the jobs that are created can be started and reported separately through journals, the manufacturing execution terminal (MES Terminal), or the kanban boards.
 7.  Report progress/**Complete** jobs – Use the MES Terminal, production journals, kanban boards, or mobile scanning capabilities to report the production progress by job or resource. Material and resource consumption will be posted, and the status of the related kanbans, production orders, and batch orders might be updated to **Received** or **Reported as finished**. Put-away work for the warehouse might be created, depending on the warehouse configuration.

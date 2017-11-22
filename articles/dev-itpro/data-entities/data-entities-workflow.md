@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - Workflow
-description: This article provides a list of the data entities that are available for Workflow.
+description: This topic provides a list of the data entities that are available for Workflow.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: reference
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95833
 ms.assetid: 67e86163-e609-4dc7-b1e0-7a7c4796a95d
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for Workflow.
+This topic provides a list of the data entities that are available for Workflow.
 
 Available data entities
 -----------------------
@@ -56,7 +56,7 @@ These entities should be used as a mechanism to move existing and tested workflo
 | 8                  | Workflow element                       | Workflow | Setup       | Expression, Workflow version  | A workflow consists of elements of various types.                                                                                                                                                                                                                                           |
 | 9                  | Workflow element action                | Workflow | Setup       | Workflow element              | The action that must be taken for each element.                                                                                                                                                                                                                                             |
 | 10                 | Workflow element notification          | Workflow | Setup       | Workflow element              | The notification about action that is required for each element.                                                                                                                                                                                                                            |
-| 11                 | Workflow element notification nmessage | Workflow | Setup       | Workflow element notification | The message that is associated with each notification.                                                                                                                                                                                                                                      |
+| 11                 | Workflow element notification message | Workflow | Setup       | Workflow element notification | The message that is associated with each notification.                                                                                                                                                                                                                                      |
 | 12                 | Workflow element link                  | Workflow | Setup       | Workflow element              | The connector between elements in a workflow.                                                                                                                                                                                                                                               |
 | 13                 | Workflow element outcome message       | Workflow | Setup       | Workflow element              | The message about the status of the workflow.                                                                                                                                                                                                                                               |
 | 14                 | Workflow step                          | Workflow | Setup       | Workflow element              | Each step of the workflow.                                                                                                                                                                                                                                                                  |

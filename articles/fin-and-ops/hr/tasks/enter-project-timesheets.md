@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure lets you create a timesheet by using an empty timesheet form. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favourites page. By default, the All timesheets list page displays all your timesheets for the current period. You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI. To begin this procedure, go to Project management and accounting > Timesheets >My timesheets
+This procedure lets you create a timesheet by using an empty timesheet form. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page. By default, the All timesheets list page displays all your timesheets for the current period. You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI. To begin this procedure, go to Project management and accounting > Timesheets >My timesheets
 
 1. To enter a new timesheet, click New.
     * The Resource drop-down list shows the worker assigned to the current user, by default.  
     * If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.  
 2. In the Date field, enter a date.
-    * If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favourites.  
+    * If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favorites.  
 3. Click OK.
 4. Click New line.
 5. In the list, mark the selected row.

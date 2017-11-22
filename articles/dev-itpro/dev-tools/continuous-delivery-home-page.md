@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
@@ -57,4 +57,8 @@ FAQ and guidelines
 - [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
-- [Servicing environments](..\dev-tools\developer-home-page.md#service-environments)
+- [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
+- [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
+- [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
+- [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
+- [Updating the Visual Studio development tools](update-development-tools.md)

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task focuses on creating the production routes for a finished product and and a semi-finished product. It is the fifth task in the BOM calculation series. The demo data company used to create this task is USMF.
+This task focuses on creating the production routes for a finished product and a semi-finished product. It is the fifth task in the BOM calculation series. The demo data company used to create this task is USMF.
 
 
 ## Create a route for a semi-finished product

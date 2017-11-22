@@ -18,7 +18,7 @@ ms.search.form: BudgetControlConfiguration, PurchAgreement, PurchCommitment_PSN,
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19531
 ms.search.region: France
