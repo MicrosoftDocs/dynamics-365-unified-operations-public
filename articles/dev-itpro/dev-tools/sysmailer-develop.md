@@ -61,7 +61,7 @@ using (System.IO.Stream attachmentStream = this.generateAttachment())
     else if (custParameters.CollectionsOMTeam)
     {
         var collectionsEmail = OMTeam::find(custParameters.CollectionsOMTeam).primaryEmail();
-        if (strLen(collectionsEmail) &gt; 0)
+        if (strLen(collectionsEmail) > 0)
         {
             messageBuilder.setFrom(collectionsEmail);
         }
@@ -146,14 +146,14 @@ using System.IO;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
 \#define.SysMailerEML\_ID('EML')
-/// &lt;summary&gt;
-/// The &lt;c&gt;SysMailerEML&lt;/c&gt; class is an interactive email provider implementation that sends messages by generating
+/// <summary>
+/// The <c>SysMailerEML</c> class is an interactive email provider implementation that sends messages by generating
 /// an EML file, uploading it to Azure temporary blob storage, and then redirecting the user's browser to
 /// the file to save or open for sending using their default email client.
-/// &lt;/summary&gt;*
+/// </summary>
 // This is a framework class. Customizing this class may cause problems with future upgrades to the software.
-\[System.ComponentModel.Composition.ExportAttribute(identifierStr(Dynamics.AX.Application.SysIMailer)),
-System.ComponentModel.Composition.ExportMetadataAttribute(extendedTypeStr(SysMailerId), \#SysMailerEML\_ID)\]
+[System.ComponentModel.Composition.ExportAttribute(identifierStr(Dynamics.AX.Application.SysIMailer)),
+System.ComponentModel.Composition.ExportMetadataAttribute(extendedTypeStr(SysMailerId), \#SysMailerEML\_ID)]
 public class SysMailerEML implements SysIMailerInteractive
 {
 ```
