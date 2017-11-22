@@ -226,28 +226,51 @@ OData Services, JSON-based Custom Service, and REST Metadata Service support sta
 
 [![1\_Services](./media/1_services.png)](./media/1_services.png)
 
-### Register a native application with AAD
+### Register an application with AAD
 
-Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. **Note:** These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers. **Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
+Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. 
 
-1.  In a web browser, go to <http://manage.windowsazure.com/>.
-2.  Enter the user name and password of the user who has access to the Azure subscription. After the credentials are authenticated, Azure Portal opens.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**. [![2\_Services](./media/2_services.png)](./media/2_services.png)
-4.  In the grid, select the Active Directory instance that is being used.
-5.  On the top toolbar, click **Applications**. [![3\_Services](./media/3_services.png)](./media/3_services.png)
-6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
-7.  Add a new native client application. Enter information in the wizard as shown in the following screen shots. [![4\_Services](./media/4_services.png)](./media/4_services.png) [![5\_Services](./media/5_services.png)](./media/5_services.png) [![6\_Services](./media/6_services.png)](./media/6_services.png)
-8.  Click the check mark button to complete the wizard. After you complete the wizard, the new application page opens. [![native client app](./media/native-client-app.png)](./media/native-client-app.png)
-9.  On the top toolbar, click **Configure**.
-10. Scroll down until you see the **Permissions to other applications** section. Click **Add Application** in this section. [![7\_Services](./media/7_services.png)](./media/7_services.png)
-11. Select **Microsoft Dynamics ERP** in the list.
-12. Click the **Complete check** button in the right corner of the page.
-13. In the **Delegate Permissions** list, select all the check boxes. **Note:** We are working on cleaning up this list. [![8\_Services](./media/8_services.png)](./media/8_services.png)
-14. Make a note of the following two pieces of information:
-    -   **Client ID** – As you scroll toward the top of this page, you will see **Client ID** displayed.
-    -   **Redirect URI**
+> [!NOTE]
+> These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers. **Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
 
-After you have these two pieces of information, you're ready to write your client code.
+1. From the appropriate project in Microsoft Dynamics Lifecycle Services (LCS), open Azure portal.
+
+    ![Open Azure portal](./media/odata_azure1.png)
+
+2. In Azure portal, on the **Azure Active Directory** tab, select **Properties**, and make a note of the tenant ID in the **Directory ID** field. You will require the tenant ID later to retrieve an Azure Active Directory (Azure AD) authentication token.
+3. On the **Azure Active Directory** tab, select **App registrations**, and then select **New application registration**.
+4. Enter a name that identifies the external application that you're registering. For an application that will authenticate by using a shared secret, select **Web app / API**. In this context, the sign-on URL doesn't matter. Therefore, use **localhost**.
+5. Select the new application, and copy the application ID. You will require the application ID later to request an Azure AD authentication token. Select **Required permissions**.
+6. Select **Add**, and then select **Select an API**.
+7. Select **Microsoft Dynamics ERP**.
+8. Under **Delegated permissions**, you must select, at a minimum, the following options:
+
+    - Access Dynamics AX Custom Service
+    - Access Dynamics AX data
+    - Access Dynamics AX online as organization users
+
+9. Select **Done**.
+10. Select **Keys**. In the dialog box that appears, enter a description, set the **Expires** value to **Never expires**, and then select **Save**.
+
+    After you've saved the new key, a value appears in the **Value** column.
+
+    > [!IMPORTANT]
+    > Make sure that you copy this value, because you won't see it again, and you will require this secret key to complete your OAuth authentication and receive an Azure AD token.
+
+### Register your external application in Finance and Operations
+
+1. In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
+2. Select **New**.
+3. Fill in the fields for the new record:
+
+    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
+    - In the **Name** field, enter a name for the application.
+    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
+    
+    When you've finished, select **Save**.
+
+You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
+
 
 ### Client sample code
 
