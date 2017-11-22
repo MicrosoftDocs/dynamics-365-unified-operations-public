@@ -35,25 +35,31 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-
 Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
 
 Master planning assesses the following information.
 
--  What is required to complete production(s)?
+-  What is required to complete production?
 -  What is currently available?
--  What is needed (such as what must be manufactured, purchased, transferred, or set aside as safety stock)?
+-  What is needed to complete production? For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production?
 
 Planning calculates requirements and results in the generation of planned orders. 
 
 The three main planning processes are:
+
 -  Master planning: The Master plan calculates net requirements. It is based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the "Net requirements plan."
+
 -  Forecast planning: The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
+
 -  Intercompany master planning: The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply.
 
 Companies can change the output of the plan. They can run regenerative or net change or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
 
 Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies this is extended to include the longest cumulative lead time among the products to be received.
+
+## Learning map
+
+The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. 
 
 [![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
