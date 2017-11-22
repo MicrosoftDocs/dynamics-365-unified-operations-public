@@ -127,17 +127,13 @@ for (i = 1; i &lt;= conLen(\_notifyCon); i++)
 
 ## Adding a new email provider
 
-As a pluggable framework, it is possible to add email providers as there becomes need or desire to have them. As the application teams interact with the framework via the factory class and interfaces, these new email providers will become instantly available for use across all relevant application scenarios.
+You can add email providers using the pluggable framework. By using the factory class and interfaces, new email providers become instantly available for use across all relevant application scenarios. Examples of email providers can be found in the existing provider implementations, SysMailerEML and SysMailerSMTP, as well as an existing tutorial implementation, Tutorial\_SysMailerMailTo. The examples below are excerpts from the SysMailerEML email provider implementation.
 
-Examples of email providers can be found in the existing provider implementations, SysMailerEML and SysMailerSMTP, as well as an existing tutorial implementation, Tutorial\_SysMailerMailTo. The examples below are excerpts from the SysMailerEML email provider implementation.
+In order to implement an email provider, you must create the implementation class with the following properties:
 
-In order to implement an email provider, the developer must create the implementation class with the following properties:
-
--   The class must be attributed with the appropriate Export attributes.
-
--   The class must implement the base SysIMailer methods, getId() and getDescription().
-
--   The class must implement either the SysImailerInteractive or SysIMailerNonInteractive interfaces, or both.
+- The class must be attributed with the appropriate **Export** attributes.
+- The class must implement the base **SysIMailer** methods, **getId** and **getDescription**.
+- The class must implement either the **SysImailerInteractive** or **SysIMailerNonInteractive** interfaces, or both.
 
 ### Step 1: Attribute the implementation class
 
