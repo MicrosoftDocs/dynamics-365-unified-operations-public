@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: NavigationArgs
-description: 
+description: NavigationArgs type
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
