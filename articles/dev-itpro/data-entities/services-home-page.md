@@ -121,7 +121,7 @@ You've now finished setting up the prerequisites. After the external application
 
 ### Client sample code
 
-The following is the sample code for getting a token from AAD. In this flow, the user will be presented with the consent form (for cross-tenant application) and a sign-in form.
+The following is C# sample code for getting a token from AAD. In this flow, the user will be presented with a consent form (for cross-tenant application) and a sign-in form.
 
 ```
  UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
