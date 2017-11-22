@@ -126,7 +126,7 @@ A taxable document encapsulates transaction information by utilizing a set of da
 
 **TaxableDocumentDescriptor** is the class that implements a set of TaxableDocumentTypeDefinition interfaces and describes what the transaction is. Technically, TaxableDocumentDescriptors are the Finance and Operations table bases, whereas TaxableDocumentTypeDefinitions are more business-driven and are mainly used for tax configuration conditions.
 
-In the following example, TaxableDocDescirptorPurchOrderParm implements three interfaces that share the same Finance and Operations PurchParmTable table.
+In the following example, TaxableDocumentDescirptorPurchaseOrderParm implements three interfaces that share the same Finance and Operations PurchParmTable table.
 
 ![](media/gte-example-shared-table.png)
 
@@ -187,42 +187,111 @@ This section provides an example of Finance and Operations GTE uptake for a purc
 
 The following table summarizes all relevant changes that are related to the uptake of a purchase order invoice.
 
-| Transaction uptake checklist |                                               | Description                                                                                                                                                             | AX 2012 AOT objects                                                         | AX 2009 AOT objects                                                         |
-|------------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Definition                   | Define a taxable document.                    | Create the taxable document type and description to describe what the transaction is.                                                                                   | TaxableDocTypeDefPurchaseInvoice                                            | TaxableDocTypeDefPurchaseInvoice                                            |
-|                              |                                               |                                                                                                                                                                         | TaxableDocDescriptorPurchaseInvoice                                         | TaxableDocDescriptorPurchaseInvoice                                         |
-|                              | Define data providers.                        | Create data providers to provide transaction data to GTE.                                                                                                               | TaxableDocTypeDefPurchaseInvoice                                            | TaxableDocTypeDefPurchaseInvoice                                            |
-|                              |                                               |                                                                                                                                                                         | TaxableDocDescriptorPurchaseInvoice                                         | TaxableDocDescriptorPurchaseInvoice                                         |
-| Creation                     | Add the Tax document button on a transaction. | Add the Tax document button to the transaction forms.                                                                                                                   | VendEditInvoice                                                             | PurchEditLines                                                              |
-|                              |                                               |                                                                                                                                                                         | VendInvoiceInfoListPage                                                     |                                                                             |
-|                              | Integrate with transaction totals.            | Create the tax document when the Totals button is clicked.                                                                                                              | PurchTotals_ParmTrans.calcTax()                                             | PurchTotals_ParmTrans.calcTax()                                             |
-|                              |                                               |                                                                                                                                                                         | PurchTotals_ParmTransEdit.calcTax()                                         | PurchTotals_ParmTransEdit.calcTax()                                         |
-|                              |                                               |                                                                                                                                                                         | PurchTotals_ParmTransEditInvoice.calcTax()                                  |                                                                             |
-|                              | Integrate with a source document.             | Because purchase invoice is a source document transaction, create a source document when tax is calculated.                                                             | AccDistRuleProductTaxMeasure                                                | This change isn’t required for AX 2009.                                     |
-|                              |                                               |                                                                                                                                                                         | AccJourRuleVendPaymReqTaxMeasure                                            |                                                                             |
-| Deletion                     | Delete a transaction.                         | Delete the tax document when a transaction is deleted.                                                                                                                  | VendInvoiceInfoTable.delete()                                               | PurchParmTable.delete()                                                     |
-|                              | Delete a transaction line.                    | Recalculate tax when a transaction line is deleted.                                                                                                                     | VendInvoiceInfoLine.delete()                                                | PurchParmLine.delete()                                                      |
-| Update                       | Update transaction header information.        | Recalculate tax when fields that affect tax are updated at the transaction header level.                                                                                | VendInvoiceInfoTable.update()                                               | PurchParmTable.update()                                                     |
-|                              | Update transaction line information.          | Recalculate tax when fields that affect tax are updated on a transaction line.                                                                                          | VendInvoiceInfoLine.update()                                                | PurchParmLine.update()                                                      |
-|                              | Update tax information.                       | Recalculate tax when tax information fields are updated.                                                                                                                | VendInvoiceInfoLineTaxExtension_IN.update()                                 | PurchParmLine.update()                                                      |
-| Posting                      | Define a tax document transition rule.        | Define a rule for the transfer of a tax document from one transaction to another.                                                                                       | TaxDocumentTransitRuleEventHandler.initTransitDocumentTransactionRuleList() | TaxDocumentTransitRuleEventHandler.initTransitDocumentTransactionRuleList() |
-|                              | Transfer a tax document.                      | Transfer the tax document from one transaction to another during posting.                                                                                               | PurchaseInvoiceJournalCreate.endCreate()                                    | PurchFormLetter_Invoice.createJournal()                                     |
-|                              | Post tax.                                     | Post tax during transaction posting.                                                                                                                                    | PurchaseInvoiceJournalPost.PostTax()                                        | PurchFormLetter_Invoice.postTax()                                           |
-|                              | Add inventory tax.                            | Add tax to inventory if a tax load on inventory is available.                                                                                                           | PurchaseInvoiceJournalPost.PostInventory()                                  | PurchFormLetter_Invoice.updateNow()                                         |
-|                              | Post a tax document.                          | Post the tax document after the transaction voucher is posted. As a result, the tax document status is updated to Posted, and records are generated in relation tables. | PurchaseInvoiceJournalPost.endUpdate()                                      | PurchFormLetter_Invoice.endUpdate()                                         |
-| Inquiry                      | Add the Tax document button on a journal.     | Add the Tax document button to the journal form for inquiry purposes.                                                                                                   | VendInvoiceJournal                                                          | VendInvoiceJournal                                                          |
+<table border="1">
+    <tr>
+        <th colspan="2">Transaction uptake checklist</th>
+        <th>Description</th>
+        <th>Rainier AOT Object</th>
+    </tr>
+    <tr>
+        <td  rowspan="2">Definition</td>
+        <td>Define a taxable document.</td>
+        <td>Create the taxable document type and description to describe what the transaction is.</td>
+		<td>TaxableDocumentTypeDefinitionPurchaseInvoice<br>TaxableDocumentDescriptorPurchaseInvoice</td>
+    </tr>
+	<tr>
+        <td>Define data providers.</td>
+        <td>Create data providers to provide transaction data to GTE.</td>
+		<td>TaxableDocumentTypeDefinitionPurchaseInvoice<br>TaxableDocumentDescriptorPurchaseInvoice</td>
+    </tr>
+	<tr>
+        <td  rowspan="3">Creation</td>
+        <td>Add the Tax document button on a transaction.</td>
+        <td>Add the Tax document button to the transaction forms.</td>
+		<td>VendEditInvoice<br>VendInvoiceInfoListPage</td>
+    </tr>
+	<tr>
+        <td>Integrate with transaction totals.</td>
+        <td>Create the tax document when the Totals button is clicked.</td>
+        <td>PurchTotals_ParmTrans.calcTax()<br>PurchTotals_ParmTransEdit.calcTax()<br>PurchTotals_ParmTransEditInvoice.calcTax()</td>
+    </tr>
+	<tr>
+        <td>Integrate with a source document.</td>
+        <td>Because purchase invoice is a source document transaction, create a source document when tax is calculated.</td>
+        <td>AccDistRuleProductTaxMeasure<br>AccJourRuleVendPaymReqTaxMeasure</td>
+    </tr>
+	<tr>
+        <td  rowspan="2">Deletion</td>
+        <td>Delete a transaction.</td>
+        <td>Delete the tax document when a transaction is deleted.</td>
+		<td>VendInvoiceInfoTable.delete()</td>
+    </tr>
+	<tr>
+        <td>Delete a transaction line.</td>
+        <td>Recalculate tax when a transaction line is deleted.</td>
+		<td>VendInvoiceInfoLine.delete()</td>
+    </tr>
+	<tr>
+        <td  rowspan="3">Update</td>
+        <td>Update transaction header information.</td>
+        <td>Recalculate tax when fields that affect tax are updated at the transaction header level.</td>
+		<td>VendInvoiceInfoTable.update()</td>
+    </tr>
+	<tr>
+        <td>Update transaction line information.</td>
+        <td>Recalculate tax when fields that affect tax are updated on a transaction line.</td>
+        <td>VendInvoiceInfoLine.update()</td>
+    </tr>
+	<tr>
+        <td>Update tax information.</td>
+        <td>Recalculate tax when tax information fields are updated.</td>
+        <td>TransTaxinformation.Write() (form datasource)</td>
+    </tr>
+	<tr>
+        <td  rowspan="5">Posting</td>
+        <td>Define a tax document transition rule.</td>
+        <td>Define a rule for the transfer of a tax document from one transaction to another.</td>
+		<td>TaxDocumentTransitRuleEventHandler.initTransitDocumentTransactionRuleList()</td>
+    </tr>
+	<tr>
+        <td>Transfer a tax document.</td>
+        <td>Transfer the tax document from one transaction to another during posting.</td>
+        <td>PurchaseInvoiceJournalCreate.endCreate()</td>
+    </tr>
+	<tr>
+        <td>Post tax.</td>
+        <td>Post tax during transaction posting.</td>
+        <td>PurchaseInvoiceJournalPost.PostTax()</td>
+    </tr>
+	<tr>
+        <td>Add inventory tax.</td>
+        <td>Add tax to inventory if a tax load on inventory is available.</td>
+        <td>PurchaseInvoiceJournalPost.PostInventory()</td>
+    </tr>
+	<tr>
+        <td>Post a tax document.</td>
+        <td>Post the tax document after the transaction voucher is posted. As a result, the tax document status is updated to Posted, and records are generated in relation tables.</td>
+        <td>PurchaseInvoiceJournalPost.endUpdate()</td>
+    </tr>
+	<tr>
+		<td>Inquiry</td>
+        <td>Add the Tax document button on a journal.</td>
+        <td>Add the Tax document button to the journal form for inquiry purposes.</td>
+        <td>VendInvoiceJournal</td>
+    </tr>
+</table>
 
 ### Definition – Define a taxable document
 
-**TaxableDocTypeDefPurchaseInvoice** and **TaxableDocDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for GTE.
+**TaxableDocumentTypeDefintionPurchaseInvoice ** and **TaxableDocumentDescriptorPurchaseInvoice ** are the classes that define a purchase invoice as a taxable document for GTE.
 
 ![](media/gte-classes-taxable-document.png)
 
-TaxableDocTypeDefPurchaseInvoice is the interface that defines a purchase invoice as a taxable document.
+TaxableDocumentTypeDefinitionPurchaseInvoice is the interface that defines a purchase invoice as a taxable document.
 
 ![](media/gte-purch-invoice-taxable-doc.png)
 
-**TaxableDocDescriptorPurchaseInvoice.getDataProvider()** specifies which data provider class is used for a purchase invoice.
+**TaxableDocumentDescriptorPurchaseInvoice.getDataProvider() ** specifies which data provider class is used for a purchase invoice.
 
 ![](media/gte-data-provider-class-purch.png)
 
@@ -240,64 +309,70 @@ TaxableDocVendInvoiceInfoTableRowDP extends the **TaxableDocPurchTableRowDataPro
 
 Here lists the taxable document fields that are mapped in Finance and Operations:
 
-| **Taxable document fields that are mapped in Finance and Operations** | **Logic in AOT Object**                                  | **Required**              | **Default Value**    |
-|---------------------------------------------------|----------------------------------------------------------|---------------------------|----------------------|
-| SubLines                                          | TaxableDocumentLineObject.getSubLines                    | Yes                       |                      |
-| Fields                                            | TaxableDocumentLineObject.getFields                      | Yes                       |                      |
-| ModelFieldName                                    | TaxableDocumentLineObject.parmModelFieldName             | Yes                       |                      |
-| RelationLines                                     | TaxableDocumentLineObject.getRelationLines               | No                        |                      |
-| TaxAdjustment                                     | TaxableDocumentLineObject.getLineAdjustment              | No                        |                      |
-| TableId                                           | TaxableDocumentLineObject.getTransactionLineTableId      | Yes                       |                      |
-| RecId                                             | TaxableDocumentLineObject.getTransactionLineRecordId     | Yes                       |                      |
-| Taxable Document Type                             | TaxableDocumentDescriptor.createRow                      | Yes                       |                      |
-| Skipped (Document level)                          | TaxableDocumentDescriptor.createRow                      | Yes                       | No                   |
-| DistributionSide                                  | TaxableDocumentObject.getDistributionSide                | Yes                       | Auto                 |
-| ExchangeRates                                     | TaxableDocumentLineObject.parmExchangeRates              | Yes                       |                      |
-| ReportingCurrencyExchangeRates                    | TaxableDocumentLineObject.parmReportingCurExchangeRates  | Yes                       |                      |
-| Tax Document Purpose                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | Transaction          |
-|                                                   |                                                          |                           |                      |
-|                                                   |                                                          |                           |                      |
-| Transaction Currency                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       |                      |
-| Transaction Date                                  | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       |                      |
-| Skipped (Line level)                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | No                   |
-| Tax Direction                                     | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | Sales tax receivable |
-| Post To Ledger                                    | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | Yes                  |
-| Enable Accounting                                 | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | Yes                  |
-| Line Type                                         | TaxableDocumentRowDataProviderLine.fillInFrameworkFields | Yes                       | Line                 |
-| Import Order                                      | TaxableDocumentRowDataProviderHeader.fillInFields        | Yes                       | No                   |
-| Export Order                                      | TaxableDocumentRowDataProviderHeader.fillInFields        | Yes                       | No                   |
-| GST Composition Scheme                            | TaxableDocumentRowDataProviderHeader.fillInFields        | Yes                       | No                   |
-| Composition Scheme                                | TaxableDocumentRowDataProviderHeader.fillInFields        | No                        | No                   |
-| Customer Type                                     | TaxableDocumentRowDataProviderHeader.fillInFields        | Yes                       | None                 |
-| Provisional Assessment                            | TaxableDocumentRowDataProviderHeader.fillInFields        | No                        | No                   |
-| Ledger Currency                                   | TaxableDocumentRowDataProviderHeader.fillInFields        | Yes                       |                      |
-| Exempt                                            | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | No                   |
-| Purpose                                           | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | Transaction          |
-| Prices include sales tax                          | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | No                   |
-| Delivery Date                                     | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| DiscountAmount                                    | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Net Amount                                        | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Quantity                                          | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Consumption State                                 | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Return                                            | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | No                   |
-| Disposition Action                                | TaxableDocumentRowDataProviderLine.fillInFields          | No (Yes for Return)       | Credit               |
-| Assessable Value                                  | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       |                      |
-| Inter-State                                       | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | No                   |
-| Import Custom Tariff Code                         | TaxableDocumentRowDataProviderLine.fillInFields          | No (Yes for import order) |                      |
-| Export Custom Tariff Code                         | TaxableDocumentRowDataProviderLine.fillInFields          | No (Yes for export order) |                      |
-| IEC Number                                        | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Maximum Retail Price                              | TaxableDocumentRowDataProviderLine.fillInFields          | No                        |                      |
-| Party GST Registration Number                     | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       |                      |
-| GST Registration Number                           | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       |                      |
-| HSN Code                                          | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       |                      |
-| SAC                                               | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       |                      |
-| Service Category                                  | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | Inward               |
-| ITC Category                                      | TaxableDocumentRowDataProviderLine.fillInFields          | Yes                       | Input                |
-| Is Scrap                                          | TaxableDocumentRowDataProviderLine.fillInFields          | No (Yes for SO)           | No                   |
+| ﻿Taxable document fields that are mapped in Finance and Operations | **Logic in AOT Object**                                                         | **Required**                  | **Default Value**        |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------------|---------------------------|----------------------|
+| SubLines                                                          | TaxableDocumentLineObject.getSubLines                                       | Yes                       |                      |
+| Fields                                                            | TaxableDocumentLineObject.getFields                                         | Yes                       |                      |
+| ModelFieldName                                                    | TaxableDocumentLineObject.parmModelFieldName                                | Yes                       |                      |
+| TaxAdjustment                                                     | TaxEngineIntegrationAXContractEventHandler.getLineAdjustment                | No                        |                      |
+| TableId                                                           | TaxableDocumentLineObject.getTransactionLineTableId                         | Yes                       |                      |
+| RecId                                                             | TaxableDocumentLineObject.getTransactionLineRecordId                        | Yes                       |                      |
+| Taxable Document Type                                             | TaxableDocumentDescriptor.createRow                                         | Yes                       |                      |
+| Skipped (Document level)                                          | TaxableDocumentDescriptor.createRow                                         | Yes                       | No                   |
+| DistributionSide                                                  | TaxableDocumentObject.getDistributionSide                                   | Yes                       | Auto                 |
+| ExchangeRates                                                     | TaxEngineIntegrationAXContractEventHandler.getExchangeRate                  | Yes                       |                      |
+| ReportingCurrencyExchangeRates                                    | TaxEngineIntegrationAXContractEventHandler.getReportingCurrencyExchangeRate | Yes                       |                      |
+| Tax Document Purpose                                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | Transaction          |
+| Transaction Currency                                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       |                      |
+| Transaction Date                                                  | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       |                      |
+| Skipped (Line level)                                              | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | No                   |
+| Tax Direction                                                     | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | Sales tax receivable |
+| Post To Ledger                                                    | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | Yes                  |
+| Enable Accounting                                                 | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | Yes                  |
+| Line Type                                                         | TaxableDocumentRowDataProviderLine.fillInFrameworkFields                    | Yes                       | Line                 |
+| Import Order                                                      | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                       | No                   |
+| Export Order                                                      | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                       | No                   |
+| GST Composition Scheme                                            | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                       | No                   |
+| Composition Scheme                                                | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | No                   |
+| Customer Type                                                     | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                       | None                 |
+| Provisional Assessment                                            | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | No                   |
+| Foreign party                                                     | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | No                   |
+| Nature of Assesse                                                 | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | Company              |
+| Preferrential Party                                               | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | No                   |
+| GTA-Commercial vendor                                             | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        | No                   |
+| Ledger Currency                                                   | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                       |                      |
+| Total Discount Percentage                                         | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                        |                      |
+| Exempt                                                            | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | No                   |
+| Purpose                                                           | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | Transaction          |
+| Prices include sales tax                                          | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | No                   |
+| Delivery Date                                                     | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| DiscountAmount                                                    | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Net Amount                                                        | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Quantity                                                          | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Consumption State                                                 | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Return                                                            | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | No                   |
+| Disposition Action                                                | TaxableDocumentRowDataProviderLine.fillInFields                             | No (Yes for Return)       | Credit               |
+| Assessable Value                                                  | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       |                      |
+| Inter-State                                                       | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | No                   |
+| Import Custom Tariff Code                                         | TaxableDocumentRowDataProviderLine.fillInFields                             | No (Yes for import order) |                      |
+| Export Custom Tariff Code                                         | TaxableDocumentRowDataProviderLine.fillInFields                             | No (Yes for export order) |                      |
+| IEC Number                                                        | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Maximum Retail Price                                              | TaxableDocumentRowDataProviderLine.fillInFields                             | No                        |                      |
+| Party GST Registration Number                                     | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       |                      |
+| GST Registration Number                                           | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       |                      |
+| HSN Code                                                          | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       |                      |
+| SAC                                                               | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       |                      |
+| Service Category                                                  | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | Inward               |
+| ITC Category                                                      | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                       | Input                |
+| Is Scrap                                                          | TaxableDocumentRowDataProviderLine.fillInFields                             | No (Yes for SO)           | No                   |
 
 ### Creation – Add the Tax document button on a transaction
 
 One way to trigger tax calculation in GTE is to add a **Tax document** button on the transaction. When this button is clicked, transactional data is sent to GTE as a predefined taxable document object, and tax calculation is triggered in GTE. The button is usually added to a transaction form, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface.
+
+![](media/gte-vend-taxdocument.png)
+
+![](media/gte-vend-taxdocumentlauncher.png)
 
 ### Creation – Integrate with transaction totals
 
@@ -322,6 +397,8 @@ Two classes are created for a purchase invoice: **AcctDistRuleProdcutTaxMeasure*
 ![](media/gte-class2.png)
 
 When the source document classes are created correctly, calculated tax, together with the component label, tax amount, and ledger account, should be shown in the distribution form.
+
+![](media/gte-accounting-distribution.png)
 
 ### Deletion – Delete a transaction
 
@@ -359,9 +436,13 @@ The tax information of a transaction line has a major effect on tax calculation.
 
 ### Posting – Define a tax document transit rule
 
-A rule should be defined to associate a purchase invoice and journal with the tax document This rule should include a transit action from the transaction to the journal. In **TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleList()**, rules are defined for VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
+A rule should be defined to associate a purchase invoice and journal with the tax document. In **TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleList()**, rules are defined for VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans, that tax document or tax document row should be associated with transaction table.
 
 ![](media/gte-tax-doc-transit-rule.png)
+
+**TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleExtList()**, includes extended rule definitions of a transit action from the transaction to the journal.
+
+![](media/gte-tax-doc-transit-rule-ext.png)
 
 ### Posting – Transfer a tax document
 
@@ -377,7 +458,8 @@ Tax posting occurs when the purchase invoice journal is posted. Therefore, **Tax
 
 ### Posting – Add inventory tax
 
-Tax that must be posted to inventory should be added to an inventory transaction. The following logic sends a tax document to the inventory framework, so that the expected tax transaction amount and accounting amount will be added to the inventory cost.
+Tax that must be posted to inventory should be added to an inventory transaction.
+The following logic is an example in inventory module that we post tax for inventory by using a class method **taxEngineInventMovement().updateTaxFinancial()**:
 
 ![](media/gte-purchinvoicejournalpost.png)
 
@@ -405,7 +487,9 @@ JsonStr contains all the transaction data information that is prepared by data p
 
 ### Debugging on the tax document result
 
-If GTE returns any error for a calculation, all the results will be set to the **‘RET’** attribute in the preceding method. By using a quick watch on the attribute, you can easily understand the full error from GTE. If GTE returns no issues, the tax document result will be persisted into the following three tables:
+If GTE returns any error for a calculation, all the results will be set to the **‘RET’** attribute in the preceding method. By using a quick watch on the attribute, you can easily understand the full error from GTE.
+If GTE returns no issues, the tax document result will be persisted into the following three tables:
+
 
 -	TaxDocument
 
@@ -414,4 +498,3 @@ If GTE returns any error for a calculation, all the results will be set to the *
 -	TaxDocumentJason
 
 By querying these tables to obtain the JSON string, you can easily check the result details via any online JSON viewer.
-
