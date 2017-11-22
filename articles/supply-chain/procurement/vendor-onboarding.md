@@ -44,12 +44,10 @@ typically comes from a source such as a customer-hosted website that allows
 anonymous access. Vendors can sign up by providing basic information such as: vendor name, justification, organization number, contact person name and email. The requests are imported via the data management interface.
 
 Step 2
-
 Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
 
 Step 3
-
-Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page Prospective vendor registration requests in Microsoft Dynamics 365.
+Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
 
 Step 4  
 The vendors contact person logs into Microsoft Dynamics 365 with the new user
@@ -67,7 +65,7 @@ contact person is granted permission to vendor collaboration or is inactivated.
 The schema below illustrates the steps and the acting role involved in the
 process.
 
-| Role and ”process”       | Step – 1 Data Management Odata - Entities import | Step -2 Prospective vendor registration request List page | Step – 3 User provisioning workflow | Step - 4 Registration wizard | Step – 5 Vendor request: Request submitted to workflow | Step - 6 Creation of Vendor master & User role modification |
+| Role and ”process”       | Step 1 Data Management Odata - Entities import | Step 2 Prospective vendor registration request List page | Step 3 User provisioning workflow | Step 4 Registration wizard | Step 5 Vendor request: Request submitted to workflow | Step 6 Creation of Vendor master & User role modification |
 |--------------------------|--------------------------------------------------|-----------------------------------------------------------|-------------------------------------|------------------------------|--------------------------------------------------------|-------------------------------------------------------------|
 | System                   | Request for new vendor imported                  |                                                           |                                     |                              |                                                        | Vendor is created on acceptance of vendor request           |
 | Procurement professional |                                                  | Starts the onboarding process                             |                                     |                              | Reviews and accepts/rejects the vendor                    |                                                             |
@@ -78,14 +76,13 @@ Importing the prospective vendor registration request
 -----------------------------------------------------
 
 The **prospective vendor registration request** is an entity in Microsoft
-Dynamics 365. You can set up the system to import data via this entity. *(TODO:
-Refer to the Blog post that Gaurav is creating)*
+Dynamics 365. You can set up the system to import data via this entity. 
 
 The entity contains the following information for import:
 
 | **Field**                    | **Description**                                                                                                                                                                                                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vendor name                  | Name of the vendor                                                                                                                                                                                                                                                         |
+| Vendor name                  | Name of the vendor.                                                                                                                                                                                                                                                         |
 | Business justification       | Reason or reasons for the vendor request.                                                                                                                                                                                                                                  |
 | Organization number          | An officially known registration number.                                                                                                                                                                                                                                   |
 | Line of business             | The line of business that the vendor is in.                                                                                                                                                                                                                                |
@@ -148,7 +145,7 @@ description provides some examples of contents.
 | Contact person information | Contains the contact person’s name, defaulted from the original prospect vendor registration request, the contact person’s phone number and email address, and the contact person's adresses for different purposes.                                                                                                                                                                                                                                                                                                            |      
 | Business information       | Contains tax registration numbers (for different countries), minority owned, and numbers of employees.                                                                                                                                                                                                                                                                                     |
 | Procurement categories     | The procurement categories that the vendor is requesting to be approved for. The procurement category hierarchy is available to select from. The number of levels of the hierarchy that is displayed can be configured in the **Procurement and sourcing parameters / Vendor collaboration.** |
-| Questionnaires             | Depending on the configuration, the prospective vendor user may have to respond to a set of questionnaires. The vendor request configuration can be configured to add a questionnaire to the page. Questionnaires can also be configured per procurement category as required in the wizard. So, questionnaires will appear depending on which procurement categories that were selected on the previous pages. You can add a questionnaire in the **Procurement categories** page under the relevant category and set the activity type to **Vendor onboarding**.                                                                                                                                                                                  |
+| Questionnaires             | The wizard may include a set of questionnaires for the vendor. Questionnaires that appear in the wizard are either configured on the vendor request or per procurement category. If questionnaires are configured per procurement category, the procurement category that the vendor requests approval for will control the questionnaires that appear in the wizard. You can add a questionnaire in the **Procurement categories** page under the relevant category and set the activity type to **Vendor onboarding**.                                                                                                                                                                                  |
 
 When the prospective vendor user finalizes the wizard, a vendor request is
 created.
