@@ -168,6 +168,7 @@
 ###### [Create sales invoices in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
 
 
+
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
 
 
