@@ -153,11 +153,9 @@
 
 #### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-
-
-###### [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
-###### [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
-###### [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
+###### [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Maintain products in Finance and Operations and sync them directly to Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
 ###### [Synchronize sales quotation directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synchronize sales orders directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ###### [Synchronize sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
