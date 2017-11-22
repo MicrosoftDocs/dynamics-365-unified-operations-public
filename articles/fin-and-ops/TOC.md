@@ -153,17 +153,22 @@
 
 #### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+
+###### [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
+###### [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
+###### [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
+###### [Synchronize sales quotation directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synchronize sales orders directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronize sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synchronize sales invoice directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Maintain accounts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Maintain contacts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Maintain products in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Create sales quotes in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Create sales orders in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Create sales invoices in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
 
