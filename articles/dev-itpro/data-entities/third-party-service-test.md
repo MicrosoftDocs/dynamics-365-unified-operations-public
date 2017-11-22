@@ -46,45 +46,9 @@ Many frequently used tools that will help you perform these actions are availabl
 
 Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
 
-### Register the external application in Azure
-
-1. From the appropriate project in Microsoft Dynamics Lifecycle Services (LCS), open Azure portal.
-
-    ![Open Azure portal](./media/odata_azure1.png)
-
-2. In Azure portal, on the **Azure Active Directory** tab, select **Properties**, and make a note of the tenant ID in the **Directory ID** field. You will require the tenant ID later to retrieve an Azure Active Directory (Azure AD) authentication token.
-3. On the **Azure Active Directory** tab, select **App registrations**, and then select **New application registration**.
-4. Enter a name that identifies the external application that you're registering. For an application that will authenticate by using a shared secret, select **Web app / API**. In this context, the sign-on URL doesn't matter. Therefore, use **localhost**.
-5. Select the new application, and copy the application ID. You will require the application ID later to request an Azure AD authentication token. Select **Required permissions**.
-6. Select **Add**, and then select **Select an API**.
-7. Select **Microsoft Dynamics ERP**.
-8. Under **Delegated permissions**, you must select, at a minimum, the following options:
-
-    - Access Dynamics AX Custom Service
-    - Access Dynamics AX data
-    - Access Dynamics AX online as organization users
-
-9. Select **Done**.
-10. Select **Keys**. In the dialog box that appears, enter a description, set the **Expires** value to **Never expires**, and then select **Save**.
-
-    After you've saved the new key, a value appears in the **Value** column.
-
-    > [!IMPORTANT]
-    > Make sure that you copy this value, because you won't see it again, and you will require this secret key to complete your OAuth authentication and receive an Azure AD token.
-
-### Register your external application in Finance and Operations
-
-1. In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
-2. Select **New**.
-3. Fill in the fields for the new record:
-
-    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
-    - In the **Name** field, enter a name for the application.
-    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
-    
-    When you've finished, select **Save**.
-
-You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
+For details, see:
+- [Register an application with AAD](services-home-page.md#register-an-application-with-aad)
+- [Register your external application in Finance and Operations]((services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## Query Finance and Operations OData by using Postman
 
