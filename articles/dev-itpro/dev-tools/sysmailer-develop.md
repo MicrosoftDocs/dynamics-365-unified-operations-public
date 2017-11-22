@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ## Sending emails
 
-An application developer consumes the SysMailer framework primarily by using the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers to send multiple messages at a time, or to directly send a message. The email providers expect the messages they send to be encapsulated within .NET **System.Net.Mail.MailMessage** objects. The message builder class is used to build the .NET object to pass to the email provider.
+The SysMailer framework is a new, extensible way to send email in Microsoft Dynamics AX7.  It is a replacement for all previous mail APIs such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). The older mail APIs will not work correctly in Dynamics 365 Finance and Operations, Enterprise edition, because they all used client-side. SysMailer leverages the SysPlugin framework as well as several .NET technologies to provide a configurable experience for the user while allowing the application consumers to remain agnostic to the email option that the user chooses to send their email.
+
+The SysMailer framework consists of a factory class (used to retrieve an email provider), a set of email providers (that send messages), a message builder (that builds the messages), and the forms related to configuring and interacting with the email providers. An application developer consumes the SysMailer framework primarily by using the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers to send multiple messages at a time, or to directly send a message. The email providers expect the messages they send to be encapsulated within .NET **System.Net.Mail.MailMessage** objects. The message builder class is used to build the .NET object to pass to the email provider.
 
 ### Scenarios
 
