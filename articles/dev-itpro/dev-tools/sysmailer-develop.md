@@ -99,14 +99,14 @@ The following example is taken from the **UserAdAddManager** class. It demonstra
 ```
 var mail = SysMailerFactory::getNonInteractiveMailer();
 var messageBuilder = new SysMailerMessageBuilder();
-for (i = 1; i &lt;= conLen(\_notifyCon); i++)
+for (i = 1; i <= conLen(_notifyCon); i++)
 {
-    notifyEmailsStr = conPeek(\_notifyCon, i);
+    notifyEmailsStr = conPeek(_notifyCon, i);
     select firstonly RecId, Email from sysUser where sysUser.Id == notifyEmailsStr;
     if (sysUser.RecId && sysUser.Email != '')
     {
         messageBuilder.reset()
-            .setFrom(\_emailFrom)
+            .setFrom(_emailFrom)
             .addTo(sysUser.Email)
             .setSubject("@SYS129183")
             .setBody(errorStr);
@@ -145,7 +145,7 @@ The first step is to attribute the implementation class. Two attributes must be 
 using System.IO;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
-\#define.SysMailerEML\_ID('EML')
+#define.SysMailerEML_ID('EML')
 /// <summary>
 /// The <c>SysMailerEML</c> class is an interactive email provider implementation that sends messages by generating
 /// an EML file, uploading it to Azure temporary blob storage, and then redirecting the user's browser to
@@ -153,7 +153,7 @@ using System.Text.RegularExpressions;
 /// </summary>
 // This is a framework class. Customizing this class may cause problems with future upgrades to the software.
 [System.ComponentModel.Composition.ExportAttribute(identifierStr(Dynamics.AX.Application.SysIMailer)),
-System.ComponentModel.Composition.ExportMetadataAttribute(extendedTypeStr(SysMailerId), \#SysMailerEML\_ID)]
+System.ComponentModel.Composition.ExportMetadataAttribute(extendedTypeStr(SysMailerId), #SysMailerEML_ID)]
 public class SysMailerEML implements SysIMailerInteractive
 {
 ```
@@ -167,7 +167,7 @@ The **SysIMailer** interface includes identifiable information about an email pr
 ```
 public SysMailerId getId()
 {
-    return \#SysMailerEML\_ID;
+    return #SysMailerEML_ID;
 }
 
 public SysMailerDescription getDescription()
@@ -177,29 +177,24 @@ public SysMailerDescription getDescription()
 }
 ```
 
-### Step 3: Implement a combination of the SysIMailerInteractive and SysIMailerNonInteractive interfaces
+### Implement a combination of the SysIMailerInteractive and SysIMailerNonInteractive interfaces
 
+The **SysIMailerInteractive** and **SysIMailerNonInteractive** interfaces are extremely simple. They implement the **sendInteractive** and **sendNonInteractive** methods respectively. An email provider might implement one or both based on its capabilities. Each of the implemented methods take a .NET **System.Net.Mail.MailMessage** object which you use to construct and send the email.
 
-The SysIMailerInteractive and SysIMailerNonInteractive interfaces are extremely simple. They implement either a sendInteractive() or sendNonInteractive() method respectively. An email provider may implement one or both based on its capabilities. Each of the implemented methods take a .NET System.Net.Mail.MailMessage object which should be used to construct and send the email.
-
+```
 public boolean sendInteractive(System.Net.Mail.MailMessage \_message)
-
 {
-
-using (var emlStream = this.generateEmlFile(\_message))
-
+    using (var emlStream = this.generateEmlFile(\_message))
 {
 
 Dynamics.AX.Application.File::SendFileToUser(emlStream, 'message.eml');
-
 }
-
-return true;
-
+    return true;
 }
+```
 
-Note that the System.Net.Mail.MailMessage object is fully featured and contains a large amount of advanced functionality related to MIME messages. It is possible for an application team to build a relatively complex message object and pass it to an email provider. If there are certain functionalities that an email provider does not support, it is expected that the email provider will handle it either actively by modifying the message, passively by calling to another email provider internally, or not at all by throwing an error.
+The **System.Net.Mail.MailMessage** object contains a large amount of advanced functionality related to MIME messages. You can build a relatively complex message object and pass it to an email provider. If there are certain functionalities that an email provider does not support, it is expected that the email provider will handle it either actively by modifying the message, passively by calling to another email provider internally, or not at all by throwing an error.
 
-## Migration from AX2012 to AX7
+## Migration from AX2012 to Dynamics 365 for Finance and Operations, Enterprise edition
 
-Migration from AX2012 to AX7 involves using the SysMailerMessageBuilder object to build a message and then use the SysMailerFactory to send it, as outlined in the examples in this document. Where extensions were made to the old mail system functionality, those extensions should be evaluated to determine whether that functionality needs to be built into the new framework as well.
+Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this document. Where extensions were made to the old mail system functionality, those extensions should be evaluated to determine whether that functionality needs to be built into the new framework as well.
