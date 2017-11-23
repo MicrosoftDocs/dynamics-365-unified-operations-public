@@ -1,4 +1,4 @@
-**Add custom control to POS transaction grid:**
+ **Add custom control to POS transaction grid:**
 
 This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
 
@@ -26,9 +26,7 @@ Lab actions
 
 6.  After installing it will ask for AAD credentials, provide the details to launch the designer.
 
-7.  In the designer drag the custom control to the transaction page as shown in the picture.
-
-    
+7.  In the designer drag and drop the custom control from the left bar to the transaction page and adjust or resize or reposition the         custom control accordingly.
 
 8.  Right click on the custom control in the transaction page and click customize
 
