@@ -132,8 +132,7 @@ The wizard reflects the vendor request configuration and the country/region
 where the vendor is doing business determines what information is requested in
 the wizard and what information is mandatory.
 
-For more information about the vendor request configuration, see [Vendor request configurations](vendor-request-configuration.md).
-
+For more information about the vendor request configuration, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 Below is an overview of the pages in the wizard and their purpose, the
 description provides some examples of contents.
 
@@ -176,7 +175,7 @@ vendor is to become a registered vendor in Microsoft Dynamics 365.
 
 The vendor request should be submitted to workflow, and be routed to the
 relevant reviewers and approvers. Basic information about setting up workflows
-can be found in [Procurement and sourcing workflows](procurement-sourcing-workflows.md) and [Workflow overview](overview-workflow-system.md)
+can be found in [Procurement and sourcing workflows](procurement-sourcing-workflows.md).
 
 The vendor request can have the following statuses:
 
@@ -215,7 +214,7 @@ account requires that the workflow to inactivate a user request is set up.
 Note that to create a vendor account on approval, the number sequence for
 creating vendors from vendor requests must be set to auto.
 
-For an overview of the access permissions of a vendor collaboration user, see [Set up and maintain vendor collaboraton](set-up-maintain-vendor-collaboration).
+For an overview of the access permissions of a vendor collaboration user, see [Set up and maintain vendor collaboraton](set-up-maintain-vendor-collaboration.md).
 
 Rejecting a vendor request
 --------------------------
@@ -225,7 +224,7 @@ be selected in the vendor request.
 
 Rejection of a vendor request will submit a request for inactivating the user.
 Inactivating a user requires that the workflow to inactivate a user request
-workflow is set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration).
+workflow is set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 When a vendor request is rejected, the status **Rejected** will be visible on
 the initial prospective vendor registration request as well as on the vendor
