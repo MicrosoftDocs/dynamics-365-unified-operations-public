@@ -144,7 +144,7 @@ description provides some examples of contents.
 | Vendor information         | Contains the vendor name that is defaulted from the original prospective vendor registration request, the organization number, the vendor's phone number, fax, and email, and the vendor's adresses for different purposes.                                                                                                                                                                                         |
 | Contact person information | Contains the contact person’s name, defaulted from the original prospect vendor registration request, the contact person’s phone number and email address, and the contact person's adresses for different purposes.                                                                                                                                                                                                                                                                                                            |      
 | Business information       | Contains tax registration numbers (for different countries), minority owned, and numbers of employees.                                                                                                                                                                                                                                                                                     |
-| Procurement categories     | The procurement categories that the vendor is requesting to be approved for. The procurement category hierarchy is available to select from. The number of levels of the hierarchy that is displayed can be configured in the **Procurement and sourcing parameters / Vendor collaboration.** |
+| Procurement categories     | The procurement categories that the vendor is requesting to be approved for. The procurement category hierarchy is available to select from. The number of levels of the hierarchy that is displayed can be configured in **Procurement and sourcing parameters** > **Vendor collaboration** under **Procurement and sourcing** > **Setup**.|
 | Questionnaires             | The wizard may include a set of questionnaires for the vendor. Questionnaires that appear in the wizard are either configured on the vendor request or per procurement category. If questionnaires are configured per procurement category, the procurement category that the vendor requests approval for will control the questionnaires that appear in the wizard. You can add a questionnaire in the **Procurement categories** page under the relevant category and set the activity type to **Vendor onboarding**.                                                                                                                                                                                  |
 
 When the prospective vendor user finalizes the wizard, a vendor request is
@@ -166,7 +166,7 @@ registration wizard finalizes.
 Vendor requests
 ---------------
 
-Vendor requests are available on the **Vendor request** page.
+Vendor requests are available on the **Vendor collaboration user requests** page.
 
 A vendor request contains the information that was provided by the prospective
 vendor user in the registration wizard.
