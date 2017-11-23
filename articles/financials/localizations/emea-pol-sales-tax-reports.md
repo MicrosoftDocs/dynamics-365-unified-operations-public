@@ -308,8 +308,7 @@ General ledger (GL) accounts for VAT correction posting and periods for bad debt
 
 To use that functionality, you need to configure system. These are the main configuration areas:
  
-Complete Overdue debt journal calculation setup in **General ledger > Journal setup > Overdue debt journal calculation**. The available journal type options are following:
-
+1.	Complete Overdue debt journal calculation setup in **General ledger > Journal setup > Overdue debt journal calculation**. The available journal type options are following:
  - Customer VAT journal
  - Vendor VAT journal
 
@@ -318,13 +317,13 @@ You have to set up for each journal following information:
 -	**Maximum number of days**: Maximum period that invoice will not be considered as overdue, it is usually 2 years – 720 days.
 -	**Calculation type** field: Defines date for each overdue to be calculated. Available values are Due date and Invoice date.
 -	**Validate** option. If the check box is selected, it validates that transactions do not change balance on date of last posted journal.
-**Note**: The Condition and the Payment term dates should remain empty.
+**Note**: The **Condition** and the **Payment term days** should remain empty.
 
-In the parameters for the Accounts Receivable module and the Accounts Payable module, on the **Number sequences** tab, two number sequence references must be set up:
-Journal number for overdue debt VAT
-Overdue debt VAT journal
+2.	In the parameters for the Accounts Receivable module and the Accounts Payable module, on the **Number sequences** tab, two number sequence references must be set up:
+ - Journal number for overdue debt VAT
+ - Overdue debt VAT journal
 
-Specify the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax** in Tax > Setup > Sales tax > Ledger posting group
+3.	Specify the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax** in Tax > Setup > Sales tax > Ledger posting group
 
 
 Once you have system configured to working with overdue debts you use the **Overdue debt VAT** periodic function in the accounts receivable and the accounts payable modules to manage your overdue debts. 
@@ -344,5 +343,55 @@ You can click on a journal number to open journal details and review tabs:
  - Open **counting** – View the summary information for customer or vendors, and their invoices included in the journal.
 
 The Fact boxes pane displays amounts for all invoices that contain bad debts and are not paid until the end of reporting period. There are overdue amount and overdue tax amount there as well.
+
+
+## Poland - Remove costs from overdue invoices 
+Polish taxation rules force companies not to overdue payments to contractors and introduced a penalty for not paying on time. The penalty is that you cannot treat costs from overdue invoices as PIT/CIT tax deductible costs any longer.
+The invoices cannot be treated as tax deductible in one of the following conditions:
+-	The original due date term is shorter than 60 days, and the invoice is not paid within 30 days from the original due date.
+-	The original due date term is longer than 60 days, and the invoice is not paid within 90 days from the date that is included in tax costs (for example, the posting date/period).
+
+For PIT/CIT purposes, the correction of costs should be done in the month that they were excluded from tax costs, and the correction can be reverted in the month that invoice was finally paid. If the invoice was partly paid, the correction/reverse of the correction can also be done partly.
+The correction of cost is used in the situation when the invoice is a direct cost (for example, office rent), or when the invoice is not posted directly into cost accounts. Examples: the invoice is related to the purchase of a fixed asset, the depreciation of the fixed asset is not tax-deductible cost or if the invoice is related to the purchase of goods for resale, the cost of the goods sold is not tax-deductible cost.
+
+**Note**: The described functionality only lets user identify, if there are any invoices which should be considered for correction and it is fully user responsibility to apply required adjustments in postings.
+To use that functionality, you need to configure system. These are the main configuration areas:
+
+1.	Debts overdue intervals setup in General ledger > Journal setup > Overdue debt journal calculation. 
+Example of a typical setup of interval:
+- Period 1: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
+	 - **Minimum number of days**: Minimum number of days from, it is usually 30 days.
+	 - **Maximum number of days**: Maximum number for days to, it is usually 360 days.
+	 - **Calculation type** field: Defines date for each overdue to be calculated. Select Due date.
+	 - **Condition**: “<”
+	 - **Payment term days**: Overdue days, typically 60
+	 - **Validate** option set to True. If validation is required when entering and settling invoices. 
+ - Period 2: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
+	 - **Minimum number of days**: Minimum number of days from, it is usually 90 days.
+	 - **Maximum number of days**: Maximum number for days to, it is usually 360 days.
+	 - **Calculation type** field: Defines date for each overdue to be calculated. Select Invoice date (shipment date is considered).
+	 - **Condition**: “>=”
+	 - **Payment term days**: Overdue days, typically 60
+	 - **Validate** option set to True. It indicates that invoice transactions have to be validated so that the total overdue debt amount remains the same as the amount on the date of the last overdue debt journal.
+2.	In the parameters for the Accounts Payable module, set:
+ - **Dimension to calculate the CIT and PIT correction** located in the Ledger and sales tax > Corporate Income Tax (CIT) and Personal Income Tax (PIT) tab. The dimension that is defined in this field will be used for "bad" debts allocation.
+ - **Number sequence** for the Overdue debt CIT and PIT journal reference
+
+Once you have system configured to work with non-deductible costs, you open the **Overdue vendor debt CIT and PIT journals** page in the accounts payable module, where you can perform following actions:
+
+ - **Create** a journal. Specify the reporting date to the last date of the journal reporting period in the Date field. The condition for the documents selection will be calculated based the two conditions according to the settings illustrated above. With the journal creation, the sum of debts is allocated proportionally between the financial dimensions that are assigned in the invoice lines.
+**Note**: The **New** button is available when the form is empty or the last journal is approved. 
+You can click on a journal number to open journal details and review tabs:
+	 - **Overdue debt CIT and PIT journal header** (you can change the view between Lines and Header)
+	 - **Overdue debt CIT and PIT journal lines** including information about vendor invoices selected according to configured criteria for the period. The Exclude check box allows you to exclude any invoice from journal that you don’t want to process. 
+	 - **Line details** 
+	 
+
+ - **Approve** a journal. 
+ - **Cancel** journal approval. The Cancel function is available only for the last approved journal. 
+ - **View distributions**. The system shows the view of the debt sum distributed by financial dimensions.
+ - **Print report** to print the report.
+
+The Fact boxes pane displays totals in the journal and the total overdue amount.
 
 
