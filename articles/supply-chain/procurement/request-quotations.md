@@ -49,9 +49,11 @@ The following illustration provides an overview of the RFQ process.
 
 You can create an RFQ from planned orders, from a purchase requisition, or from a manual entry. The RFQ that you create is called an RFQ case, and this is the base document that you use to issue an RFQ to each vendor. After you prepare the RFQ case and add vendors, click **Send** on the RFQ case, and an RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the print management settings for the Send action to either print a report for each vendor to an archive or send a report to each vendor's email address. In addition, the RFQ journal for each vendor can be used to generate a report that you can send or resend to a vendor later. You can also configure the Send action to generate a reply sheet that the vendor can fill out.  
 
-If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished.  
+The current article addresses RFQ handling without vendor collaboration. If your system is setup to allow vendor collaboration, then vendors can enter their bids directly in Microsoft Dynamics 365. For more information, see [Request for quotations](vendor-collaboration-work-customers-dynamics-365-operations.md). 
+ 
+If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished, by using the amendment actions: **Create** and **Finalize**.  
 
-When you receive bids, you must enter them on the **Request for quotation replies** page. If you select the **Copy data to reply** option, data such as the quantity and dates from the RFQ case is copied into the reply. You can change this data to reflect the vendor's bid.  
+When you receive bids by email, you must enter them on the **Request for quotation replies** page. If you select the **Copy data to reply** option, data such as the quantity and dates from the RFQ case is copied into the reply. You can change this data to reflect the vendor's bid.  
 
 If a second iteration of a reply is required for a particular vendor, click **Return** on the **Request for quotation reply** page. The Return action generates a new journal and a report that will be printed, archived, and sent according to your print management settings.  
 
@@ -82,12 +84,27 @@ Before you can create an RFQ case, you must set up RFQ information on the **Pro
 
 You can override these values for a specific RFQ case. You should also configure the amendment process. As part of this configuration, you can turn on field locking. When field locking is turned on, a procurement professional who wants to amend an RFQ must first click **Create** in the **Amendment** section of the **Quotation** tab. After the RFQ has been updated with the amendment, the procurement professional must complete the process by clicking **Finalize**. The **Finalize** action generates an email message that notifies the vendors about the amended RFQ. You select the template for the email notification that is sent to vendors on the **Procurement and sourcing parameters** page. When a template is created, it can contain the following replacement tokens:
 
+-   %RFQ case%
 -   %Reason for bid return%
 -   %Reason for amendment%
 -   %Amendment prepared by%
 -   %Company%
+-   %RFQ case name%
+-   %ExpiryDateTime%
+-   %Date%  (todays’ date)
 
 The %Reason for bid return% and %Reason for amendment% tokens are replaced by text that the procurement professional can enter when he or she completes the amendment in the **Amendment** wizard. The values for the %Amendment prepared by% and %Company% tokens are automatically taken from the RFQ.  
+
+Cancelling an RFQ when it has been sent also requires an email template for sending the cancellation mail to the vendor’s contact persons. The template must be selected in Procurement and sourcing parameters page. When the template is created it can contain the following replacements tokens:
+
+-	 %Reason for cancellation%
+-	 %RFQ case% 
+-	 %RFQ cancelled by%
+-	 %Company%
+-	 %RFQ case name%
+-	 %Date%    -    (”today's date”)
+
+The %Reason for cancellation% is a text that can be entered by the procurement professional in the cancellation wizard.
 
 If you want to use reason codes on a RFQ reply to indicate why a bid was rejected or accepted, you must set up reason codes on the **Vendor reasons** page.  
 
@@ -149,7 +166,15 @@ Occasionally, you must change an RFQ after you send it. For example, this can oc
 
 If you use the more restrictive amendment process, you must click **Create** on the RFQ case to start an amendment before you can modify the fields on the RFQ case. After you've finished making your changes, you must click **Finalize**. You will then be guided through the process of adding information for the email message that is sent to notify vendors about the amendment. The updated RFQ report, which includes an amendment note, is automatically attached to the message.  
 
-If you use the less restrictive amendment process, you don't have to create an amendment before you can modify the fields on an RFQ case that has already been sent. However, you must manually add an amendment note on the RFQ.
+If you use the less restrictive amendment process, you don't need to click **Create** before you can modify the fields on an RFQ case that has already been sent. However, you must manually add an amendment note on the RFQ and send the case again.
+
+Be aware that this is only possible when none of the replies have been edited. If you have entered a reply and it is in a **Received** state, the **Send** button is inactive, and you will have to follow the Amendment procedure by clicking **Create** and **Finalize**. The reply will then be reset to reflect the changes in the RFQ case. 
+
+
+
+If you allow vendors to use the vendor collaboration interface to enter bids, you must always use the amendment procedure to update vendors with changes in the RFQ case. This is to avoid that while having a bid in progress, they bid on an outdated RFQ case. For more information about vendor collaboration, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md). 
+
+If you want to invite an additional vendor to bid and no changes were done on the RFQ case, you can use the **Send** button. The vendors that were added will appear in the **Send** form and they will receive the email invitation.
 
 ## Receiving and registering RFQ replies
 When you send an RFQ, a reply sheet is automatically generated. As you receive replies (bids) to an RFQ, you must enter the information from each vendor on a vendor-specific RFQ reply sheet. If you have added scoring criteria, you can score the replies. You then compare the vendor bids and rank them according to your scoring criteria, such as best total price or best total delivery time.  
