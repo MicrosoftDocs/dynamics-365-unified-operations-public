@@ -35,19 +35,13 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
-
-The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It allows vendors to work with purchase order, invoice, consignment inventory informationand RFQs and to access parts of their vendor master data. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 The information in this topic about vendor collaboration applies only to the current version of Dynamics 365 for Finance and Operations. 
 In the February 2016 and May 2016 versions of Microsoft Dynamics AX, you collaborate with vendors by using the Vendor portal module. 
 For information about the Vendor portal module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
-
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). 
-
-For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
 ## Define the information that is shown to vendors when they respond to POs
 When vendors respond to a PO that you send them, they see a message box where they must confirm that they want to accept the PO, reject it, or accept it with changes. Because the information that must be shown to the vendor at that point might be specific to your business, you can specify the text that appears in each of the three confirmation messages. For example, the text can inform the vendor about the next steps in the process, or about terms and conditions.  
@@ -75,7 +69,7 @@ Before user accounts can be created for an external vendor, you must configure t
 
 ### Decide whether you want the vendor to see price information
 
-If you want to share price information such as unit price, discounts, and charges via the collaboration interface, you need to set the **Purchase order prices/amount** option to **Yes** on the vendor account. This option is available on the **Purchase order defaults** tab.
+If you want to share price information such as unit price, discounts, and charges via the collaboration interface in the context of a purchase order, you need to set the **Purchase order prices/amount** option to **Yes** on the vendor account. This option is available on the **Purchase order defaults** tab.
 
 ## Work with POs when using vendor collaboration
 ### Sending a PO to the vendor
@@ -223,6 +217,39 @@ If you’re using consignment inventory, vendors can use the vendor collaborati
 -   **Products received from consignment inventory** - This page lists all the transactions where the ownership of products has been transferred from the vendor to your company. Vendors can use this information to invoice the customer.
 -   **On-hand consignment inventory** - This page shows the vendor owned on-hand consignment inventory that has been received at your warehouse.
 
+## Work with RFQs when using vendor collaboration
+The following sections describe interactions between customers and vendors during the RFQ process and how information is surfaced to the vendors. 
+Please read the topic: REFERENCE (Request for quotations (RFQ’s) ) to gain a basic understanding of how the RFQ process is supported.
+
+### Alternates, attachments, amendments and returns
+Alternates – On the header of an RFQ case, you can specify that alternates are allowed for non-catalog item lines. When alternates are enabled, vendors are given the ability to add an alternate line per requested line.  
+
+Attachments – On the header and the line level of an RFQ case, attachments may be added. Attachments can be classified as internal which means that they can be viewed  on the customer side only or as external which means that they can be viewed by vendors when sent. Vendors can also add attachments on their bid reply which will be surfaced on the customer side when a vendor submits the bid reply. Attachment added by vendors will always be classified as external. 
+•	To access an attachment that a vendor has submitted with a bid, use the actions Bid attachments and Bid line attachments The document handling paper clip on the reply will open the attachments that was sent when the RFQ case was sent.
+
+Amendments –  Amendment processing is enforced when the Lock RFQs when they are sent parameter on the Request for quotations FastTab in the Procurement and sourcing parameters page is set to Yes (set and required for Public sector).. When an amendment is finalized, the existing bid replies are removed to be replaced by the updated values. Information like line price and quantity from previous bid replies can be viewed via the journals on the RFQ case.
+
+Returning a bid to the vendor  – When a vendor has submitted a bid and more or altered information is required for the RFQ case, the customer can return the bid to the vendor. The data of the submitted bid is retained and the vendor can make requested modifications without restarting the bid process. 
+  
+## Public sector extensions
+For Public sector, there’s extended functionality which allows the RFQ case to not only be sent to vendors, but also to be published. When you publish an RFQ, anyone who requests the information can view the work which adheres to most public-sector regulations. All available work is reflected in the Open published requests for quotations list page and the canceled, pending, or awarded RFQs can be viewed in the Closed published requests for quotations list page. These documents can also be surfaced on a site external from Dynamics 365 for Financial and Operations with integrations to the following data entities:
+•	Published requests for quotations
+•	Published requests for quotations line
+•	Published requests for quotations header attachments
+These entities allow for those who are not provisioned users in Microsoft Dynamics 365 for Finance and Operations but have anonymous access to the external site to view the available and closed work. In addition, there is extended functionality in Send and publish which allows the user who sets up parameters for the RFQ process to define an e-mail template. When the procurement professional creates the RFQ case, the email template must be selected to send the necessary information to the vendors on the RFQ case. 
+The user who sets up parameters for the RFQ process can create multiple email templates. An email template used for this purpose may contain static text together with the following replacement tokens, which will be replaced by  the contextual values at the time when an email is created:
+•	%RFQCase%
+•	%RFQCaseName%
+•	%bidType%
+•	%inviteOnly%
+•	%expiryDateTime%
+•	%requester%
+•	%requestingDepartment%
+•	%accountnum%
+•	%todaysdate%
+•	%createddate%
+
+If an amendment is required and sent after the RFQ is sent, the RFQ will be resent to all invited vendors, and the published document will be updated in the Open published requests for quotations.
 
 
 
