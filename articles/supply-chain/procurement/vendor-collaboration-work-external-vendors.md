@@ -233,14 +233,15 @@ For a basic overview of how the RFQ process is supported, see [Request for quota
 **Returning a bid to the vendor**  – When a vendor has submitted a bid and more or altered information is required for the RFQ case, the customer can return the bid to the vendor. The data of the submitted bid is retained and the vendor can make requested modifications without restarting the bid process. 
   
 ## Public sector extensions
-For Public sector, there’s extended functionality which allows the RFQ case to not only be sent to vendors, but also to be published. When you publish an RFQ, anyone who requests the information can view the work which adheres to most public-sector regulations. All available work is reflected in the Open published requests for quotations list page and the canceled, pending, or awarded RFQs can be viewed in the Closed published requests for quotations list page. These documents can also be surfaced on a site external from Dynamics 365 for Financial and Operations with integrations to the following data entities:
+For Public sector, the extended functionality allows the RFQ case to be sent to vendors and to be published. When you publish an RFQ, anyone who requests the information can view the work which adheres to most public-sector regulations. All available work is reflected in the **Open published requests for quotations** list page and the canceled, pending, or awarded RFQs can be viewed in the **Closed published requests for quotations** list page. These documents can also be surfaced on a site external from Microsoft Dynamics 365 with integrations to the following data entities:
 
 - Published requests for quotations
 - Published requests for quotations line
 - Published requests for quotations header attachments
 
-These entities allow for those who are not provisioned users in Microsoft Dynamics 365 for Finance and Operations but have anonymous access to the external site to view the available and closed work. In addition, there is extended functionality in Send and publish which allows the user who sets up parameters for the RFQ process to define an e-mail template. When the procurement professional creates the RFQ case, the email template must be selected to send the necessary information to the vendors on the RFQ case. 
-The user who sets up parameters for the RFQ process can create multiple email templates. An email template used for this purpose may contain static text together with the following replacement tokens, which will be replaced by  the contextual values at the time when an email is created:
+These entities allow for those who are not provisioned users in Microsoft Dynamics 365 but who have anonymous access to the external site to view the available and closed work. In addition, there is extended functionality in **Send and publish** which allows the user who sets up parameters for the RFQ process to define an e-mail template. When the procurement professional creates the RFQ case, the email template must be selected to send the necessary information to the vendors on the RFQ case. 
+
+A user who sets up parameters for the RFQ process can create multiple email templates. An email template to be used for this purpose may contain static text together with the following replacement tokens. The tokens will be replaced by the contextual values at the time when an email is created:
 
 - %RFQCase%
 - %RFQCaseName%
@@ -253,7 +254,7 @@ The user who sets up parameters for the RFQ process can create multiple email te
 - %todaysdate%
 - %createddate%
 
-If an amendment is required and sent after the RFQ is sent, the RFQ will be resent to all invited vendors, and the published document will be updated in the Open published requests for quotations.
+If an amendment is required and sent after the RFQ is sent, the RFQ will be resent to all invited vendors, and the published document will be updated in the **Open published requests for quotations** page.
 
 
 
