@@ -209,7 +209,6 @@ The following table shows an example of the changes in status and version that a
 |The PO is submitted to the approval process again.                                                |  The status is changed from **Draft** to **In Review** to **Approval** if the PO isn’t rejected during the approval process. Alternatively, the system can be configured so that specific field changes don’t require re-approval. In this case, the status is first changed to **Draft** and is then automatically updated to **Approved**. The approved PO is registered as a new version.                                         |
 |You send the new version of the PO to the vendor.                                                |  The new version is registered in the vendor collaboration interface, and the status is changed to **In External Review**.                                         |
 |The vendor approves the new version of the PO.                                                |  The status is changed to **Confirmed**, either automatically, or when you receive the response from the vendor and then confirm the PO. |
-
 ## Share information about consignment inventory
 If you’re using consignment inventory, vendors can use the vendor collaboration interface to view information on the following pages:
 
@@ -219,35 +218,40 @@ If you’re using consignment inventory, vendors can use the vendor collaborati
 
 ## Work with RFQs when using vendor collaboration
 The following sections describe interactions between customers and vendors during the RFQ process and how information is surfaced to the vendors. 
-Please read the topic: REFERENCE (Request for quotations (RFQ’s) ) to gain a basic understanding of how the RFQ process is supported.
+For a basic overview of how the RFQ process is supported, see [Request for quotations (RFQs)](request-quotations.md).
 
 ### Alternates, attachments, amendments and returns
-Alternates – On the header of an RFQ case, you can specify that alternates are allowed for non-catalog item lines. When alternates are enabled, vendors are given the ability to add an alternate line per requested line.  
+**Alternates** – On the header of an RFQ case, you can specify that alternates are allowed for non-catalog item lines. When alternates are enabled, vendors are given the ability to add an alternate line per requested line.  
 
-Attachments – On the header and the line level of an RFQ case, attachments may be added. Attachments can be classified as internal which means that they can be viewed  on the customer side only or as external which means that they can be viewed by vendors when sent. Vendors can also add attachments on their bid reply which will be surfaced on the customer side when a vendor submits the bid reply. Attachment added by vendors will always be classified as external. 
-•	To access an attachment that a vendor has submitted with a bid, use the actions Bid attachments and Bid line attachments The document handling paper clip on the reply will open the attachments that was sent when the RFQ case was sent.
+**Attachments** – On the header and the line level of an RFQ case, attachments may be added. Attachments can be classified as internal which means that they can be viewed  on the customer side only or as external which means that they can be viewed by vendors when sent. Vendors can also add attachments on their bid reply which will be surfaced on the customer side when a vendor submits the bid reply. Attachment added by vendors will always be classified as external. 
+- To access an attachment that a vendor has submitted with a bid, use the actions **Bid attachments** and **Bid line attachments**. The document handling paper clip on the reply will open the attachments that was sent when the RFQ case was sent.
 
-Amendments –  Amendment processing is enforced when the Lock RFQs when they are sent parameter on the Request for quotations FastTab in the Procurement and sourcing parameters page is set to Yes (set and required for Public sector).. When an amendment is finalized, the existing bid replies are removed to be replaced by the updated values. Information like line price and quantity from previous bid replies can be viewed via the journals on the RFQ case.
+**Amendments** –  When an amendment is finalized, the existing bid replies are removed to be replaced by the updated values. Information like line price and quantity from previous bid replies can be viewed via the journals on the RFQ case.
 
-Returning a bid to the vendor  – When a vendor has submitted a bid and more or altered information is required for the RFQ case, the customer can return the bid to the vendor. The data of the submitted bid is retained and the vendor can make requested modifications without restarting the bid process. 
+-  To enforce amendment processing, set the **Lock RFQs when they are sent** parameter on the **Request for quotations** FastTab in the **Procurement and sourcing parameters** page to **Yes** (set and required for Public sector).
+
+**Returning a bid to the vendor**  – When a vendor has submitted a bid and more or altered information is required for the RFQ case, the customer can return the bid to the vendor. The data of the submitted bid is retained and the vendor can make requested modifications without restarting the bid process. 
   
 ## Public sector extensions
 For Public sector, there’s extended functionality which allows the RFQ case to not only be sent to vendors, but also to be published. When you publish an RFQ, anyone who requests the information can view the work which adheres to most public-sector regulations. All available work is reflected in the Open published requests for quotations list page and the canceled, pending, or awarded RFQs can be viewed in the Closed published requests for quotations list page. These documents can also be surfaced on a site external from Dynamics 365 for Financial and Operations with integrations to the following data entities:
-•	Published requests for quotations
-•	Published requests for quotations line
-•	Published requests for quotations header attachments
+
+- Published requests for quotations
+- Published requests for quotations line
+- Published requests for quotations header attachments
+
 These entities allow for those who are not provisioned users in Microsoft Dynamics 365 for Finance and Operations but have anonymous access to the external site to view the available and closed work. In addition, there is extended functionality in Send and publish which allows the user who sets up parameters for the RFQ process to define an e-mail template. When the procurement professional creates the RFQ case, the email template must be selected to send the necessary information to the vendors on the RFQ case. 
 The user who sets up parameters for the RFQ process can create multiple email templates. An email template used for this purpose may contain static text together with the following replacement tokens, which will be replaced by  the contextual values at the time when an email is created:
-•	%RFQCase%
-•	%RFQCaseName%
-•	%bidType%
-•	%inviteOnly%
-•	%expiryDateTime%
-•	%requester%
-•	%requestingDepartment%
-•	%accountnum%
-•	%todaysdate%
-•	%createddate%
+
+- %RFQCase%
+- %RFQCaseName%
+- %bidType%
+- %inviteOnly%
+- %expiryDateTime%
+- %requester%
+- %requestingDepartment%
+- %accountnum%
+- %todaysdate%
+- %createddate%
 
 If an amendment is required and sent after the RFQ is sent, the RFQ will be resent to all invited vendors, and the published document will be updated in the Open published requests for quotations.
 
