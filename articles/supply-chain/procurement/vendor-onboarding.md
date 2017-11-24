@@ -203,11 +203,11 @@ vendor collaboration user representing the vendor, set the vendor collaboration
 access permission to **Yes**. To inactivate the user account that was used by
 the prospective vendor to register, set the permission to **No**.
 
-When the vendor collaboration access is set to YES, approval of the vendor
+When the vendor collaboration access is set to **Yes**, approval of the vendor
 request will submit a request to modify the user’s roles so that the user gets
 the roles defined in **External roles** for the type=vendor.
 
-When the vendor collaboration access is set to NO, approval of the vendor
+When the vendor collaboration access is set to **No**, approval of the vendor
 request will submit a request to inactivate the user. Inactivating the vendor
 account requires that the workflow to inactivate a user request is set up.
 
