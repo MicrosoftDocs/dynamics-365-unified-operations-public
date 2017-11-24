@@ -50,7 +50,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
 
-        - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
     - In the **Reference\\TaxEngine** folder:
 
@@ -79,7 +79,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 3. Copy the 13 assembly files to the CRT extensions folder:
 
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail server site location.
-    - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext folder** under the local CRT client broker location.
+    - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
 
 4. Find the extensions configuration file for CRT:
 
@@ -89,7 +89,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 5. Register the CRT change in the extensions configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
     > [!WARNING]
@@ -102,10 +102,10 @@ Follow these steps to create deployable packages that contain Retail components,
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
-2. In the **Customization.settings** package customization configuration file, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
+2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
