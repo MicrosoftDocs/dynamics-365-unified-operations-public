@@ -109,8 +109,10 @@ The following illustration shows an example for coverage code **Min/Max**.
 [![Planning an item with **MinMax** coverage code and **First issue** fulfillment](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
 On the date when master planning is run, if the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment imediately. **First issue** will wait until there is another issue transaction, such as sales order and BOM line requirement, for the item, and then it will trigger the replenishment on the date of this transaction. 
 On the date when master planning is run, if the available inventory is not under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result, as shown in the illustration below. 
+
 [![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
 On the date when master planning is run,if the available inventory is not under the safety stock limit, **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time.
+
 ![Planning an item with **Requirement** coverage code and **First issue** fulfillment](./media/ReqTodayLT.png)
 ### Coverage time fence
 The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field. This option used to be useful when master planning would not allow available inventory to be used for real orders, for example, sales, transfers, etc., in the attempt to maintain the safety level at all times. However, with the new way that master planning is working, this mode of replenishment is not needed any longer and it will be deprecated in the future.
