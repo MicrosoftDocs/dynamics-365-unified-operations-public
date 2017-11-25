@@ -93,8 +93,10 @@ When the **Requirement** coverage code is used, a lot of planned orders are crea
 ### Today's date + procurement time 
 The specified minimum quantity is met on the date when master planning is run, plus the purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected on the **Master planning parameters** page, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
 
-This fulfillment mode has the benefit that it will create plans with less delays, xxx Roxana: Not sure I understand, as shown in the following illustration. 
+This fulfillment mode has the benefit that it will create plans with less delays and fewer planned orders regardless of the coverage group setup on the item. 
+The following illustration shows the outcome of the plan in case of coverage code **Requirement** or **Period**.  
 [![Requirement. Period. Today's date and lead time](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+The following illustration shows the outcome of the plan in case of coverage code **Min/Max**.  
 [![MinMax. Today's date and lead time](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### First issue 
 The specified minimum quantity is met on the date when the available inventory goes below the minimum level, as shown in the following illustration. Even if the available inventroy is below the minimum level on the date when master planning is run, **First issue** will not attempt to cover it until the next requirement comes in.
