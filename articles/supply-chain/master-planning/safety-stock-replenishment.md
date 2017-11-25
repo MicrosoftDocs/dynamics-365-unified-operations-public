@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqSafetyKey, 
+ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Safety stock fulfillment 
+# Item safety stock fulfillment 
 
 [!include[banner](../includes/banner.md)]
 
