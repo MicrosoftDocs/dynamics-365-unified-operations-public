@@ -30,12 +30,12 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Safety stock fulfillment ?  
+# Safety stock fulfillment 
 
 [!include[banner](../includes/banner.md)]
 
 
-Roxana: Provide a brief introduction of what this new feature does and how safety stock is calculated or replenished. Can you do manual/automatic calculations? Is forecast included in the calculation?  
+Safety stock is inventory held by a company in order to prevent stockouts. When demand orders come in, if there isn't enough time to source the articles requested and meet the customer's requested ship date, safety stock will be deducted. Master planning can be used to automatically order inventory back to the safety level.   
 
 ## Set up safety stock levels for items
 
