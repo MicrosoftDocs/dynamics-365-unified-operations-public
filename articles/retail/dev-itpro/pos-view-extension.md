@@ -1,4 +1,4 @@
-       ---
+---
 # required metadata
 
 title: POS view extension
@@ -119,108 +119,73 @@ Let’s add custom column and App bar in POS customer search screen.
 10. Inside the **Resources** folder add a new folder named **Strings** and inside that create one more folder named **en-US**.
 11. Create a new file inside named **resources.resjson** file and add the following code:
     ```Typescript
-    //======================================================================================================
-    //======================================= Sample comment. ==============================================
-    //======================================================================================================
     {
-    //======================== Sample View extensions strings. ========================
-    "string_0" : "Quick compare products",
-    "_string_0.comment" : "Product search page app bar command label.",
-    "string_1" : "View customer summary",
-    "_string_1.comment" : "Customer search page app bar command label.",
-    //======================== Column names. ========================
-    "string_2" : "ACCOUNT NUMBER_CUSTOMIZED",
-    "_string_2.comment" : "Customer search column name.",
-    "string_3" : "NAME",
-    "_string_3.comment" : "Customer search column name.",
-    "string_4" : "ADDRESS",
-    "_string_4.comment" : "Customer search column name.",
-    "string_5" : "CONTACT EMAIL",
-    "_string_5.comment" : "Customer search column name.",
-    "string_7" : "PHONE NUMBER",
-    "_string_7.comment" : "Customer search column name."
+        //======================== Sample View extensions strings. ========================
+        "string_0" : "Quick compare products",
+        "_string_0.comment" : "Product search page app bar command label.",
+        "string_1" : "View customer summary",
+        "_string_1.comment" : "Customer search page app bar command label.",
+        //======================== Column names. ========================
+        "string_2" : "ACCOUNT NUMBER_CUSTOMIZED",
+        "_string_2.comment" : "Customer search column name.",
+        "string_3" : "NAME",
+        "_string_3.comment" : "Customer search column name.",
+        "string_4" : "ADDRESS",
+        "_string_4.comment" : "Customer search column name.",
+        "string_5" : "CONTACT EMAIL",
+        "_string_5.comment" : "Customer search column name.",
+        "string_7" : "PHONE NUMBER",
+        "_string_7.comment" : "Customer search column name."
     }
-```
+    ```
 12. In the SearchExtension folder add a new folder called DialogSample
-
 13. In the DialogSample folder, add a new ts (typescript) file and name it has MessageDialog.ts
-
 14. Add the below import statement to import the relevant entities and context.
 ```Typescript
  import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
-
  import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
-
  import { ClientEntities } from "PosApi/Entities";
 ```
 15. Create a new class called MessageDialog
-```Typescript
+    ```Typescript
     export default class MessageDialog {}
-```
+    ```
 16. Inside the class add a new show method like below:
-```Typescript
- public static show(context: IExtensionContext, message: string): Promise<void> {
-
- let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => {
-
- let messageDialogOptions: IMessageDialogOptions = {
-
- title: "Extension Message Dialog",
-
- message: message,
-
- showCloseX: true, // this property will return "Close" as result when "X" is clicked to close dialog.
-
- button1: {
-
- id: "Button1Close",
-
- label: "OK",
-
- result: "OKResult"
-
- },
-
- button2: {
-
- id: "Button2Cancel",
-
- label: "Cancel",
-
- result: "CancelResult"
-
- }
-
- };
-
- let dialogRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
-
- new ShowMessageDialogClientRequest<ShowMessageDialogClientResponse>(messageDialogOptions);
-
- context.runtime.executeAsync(dialogRequest).then((result: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>) => {
-
- if (!result.canceled) {
-
- context.logger.logInformational("MessageDialog result: " + result.data.result.dialogResult);
-
- resolve();
-
- }
-
- }).catch((reason: any) => {
-
- context.logger.logError(JSON.stringify(reason));
-
- reject(reason);
-
- });
-
- });
-
- return promise;
-
-}
-```
+    ```Typescript
+    public static show(context: IExtensionContext, message: string): Promise<void> {
+        let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
+        {
+            let messageDialogOptions: IMessageDialogOptions = {
+                title: "Extension Message Dialog",
+                message: message,
+                showCloseX: true, // this property will return "Close" as result when "X" is clicked to close dialog.
+                button1: {
+                    id: "Button1Close",
+                    label: "OK",
+                    result: "OKResult"
+                },
+                button2: {
+                    id: "Button2Cancel",
+                    label: "Cancel",
+                    result: "CancelResult"
+                }
+            };
+            let dialogRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
+                new ShowMessageDialogClientRequest<ShowMessageDialogClientResponse>(messageDialogOptions);
+                context.runtime.executeAsync(dialogRequest).then((
+                    result: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>) => {
+                if (!result.canceled) {
+                    context.logger.logInformational("MessageDialog result: " + result.data.result.dialogResult);
+                    resolve();
+                }
+            }).catch((reason: any) => {
+            context.logger.logError(JSON.stringify(reason));
+            reject(reason);
+            });
+        });
+        return promise;
+    }
+    ```
 Let’s add custom app bar button in search view to show a dialog with selected customer info:
 
 17. In the ViewExtensions folder, add a new ts (typescript) file and name it has ViewCustomerSummaryCommand.ts
