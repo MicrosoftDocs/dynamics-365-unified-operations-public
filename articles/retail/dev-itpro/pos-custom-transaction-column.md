@@ -28,3 +28,5 @@ ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
+
+# Add a column to a transaction page
