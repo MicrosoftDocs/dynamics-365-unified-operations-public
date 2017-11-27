@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up safety stock levels for items
-description: This topic discusses how to set up safety stock levels for items. 
+title: Safety stock fulfillment for items
+description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,12 +30,12 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Item safety stock fulfillment 
+# Safety stock fulfillment for items
 
 [!include[banner](../includes/banner.md)]
 
 
-Safety stock is inventory held by a company in order to prevent stockouts. When demand orders come in, if there isn't enough time to source the articles requested and meet the customer's requested ship date, safety stock will be deducted. Master planning can be used to automatically order inventory back to the safety level.   
+Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock. Safte stock is used as a buffer stock, in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date. When safety stock is used to fulfill a sales order, the safety stock will be reduced. You can use Master planning to automatically bring the inventory back to the safety level.    
 
 ## Set up safety stock levels for items
 
@@ -75,7 +75,9 @@ The **Fulfill minimum** parameter allows you to select the date or the period du
 
 If **Minimum keys** are used, select the **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
 
-The following scenario shows how this parameter works and what are the differences between its values:
+The following scenario shows how this parameter works and what are the differences between its values.
+> [!NOTE]
+> For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions (sales order lines, purchase order lines, planned orders, etc).
 [![Common scenario for safety stock fulfillment](./media/Scenario1.png)](./media/Scenario1.png)
 > [!NOTE]
 > For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions (sales order lines, purchase order lines, planned orders, etc).
