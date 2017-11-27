@@ -1,22 +1,51 @@
-**How to extend existing POS views to add Custom column and App bar button:**
+---
+# required metadata
 
-This topic explains how you can extend existing POS views like Customer Add edit screen etc. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
+title: POS view extension
+description: This topic explains how you can extend existing POS views such as the Customer Add edit screen.
+author: mugunthanm
+manager: AnnBe
+ms.date: 11/22/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
 
-Few POS views (Transaction screen and Welcome) can be extended using the screen layout designer and all the other views can be extended using the Retail SDK. In this document we will focus on how to extend existing POS views using Retail SDK.
+# optional metadata
 
-In general, below are the extension points/patterns supported by POS views:
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 24411
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mumani
+ms.search.validFrom: 2017-11-22
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
-1.  **Custom App Bar Buttons** - Adding custom buttons to the App Bar on select pages
+---
 
-2.  **Custom Column Sets** – The ability to replace the grid columns with a custom column set on select pages
+# How to extend existing POS views to add Custom column and App bar button
 
-3.  **Custom control** – Add new control to the selected pages.
+This topic explains how you can extend existing POS views such as the Customer Add edit screen. This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
-**List of POS views supported currently for extensions:**
+The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using Retail SDK.
 
-**Note:** We are adding support for more extension points in others views in the upcoming releases and hotfix.
+The extension points and patterns supported by POS views are:
 
-| **POS Views**                   | Custom control | Custom columns | Custom App bar buttons |
+- Custom app bar buttons: Add custom buttons to the App Bar on select pages
+- Custom column sets: Replace the grid columns with a custom column set on select pages
+- Custom controls: Add new control to selected pages
+
+## POS views supported currently for extensions
+
+We are adding support for more extension points in others views in the upcoming releases and hotfix.
+
+| POS Views                      | Custom control | Custom columns | Custom App bar buttons |
 |---------------------------------|----------------|----------------|------------------------|
 | Cart view (Screen layout based) | Yes            | Yes            | No                     |
 | CustomerAddEditView             | Yes            |                | Yes                    |
@@ -30,33 +59,24 @@ In general, below are the extension points/patterns supported by POS views:
 | PriceCheckView                  | Yes            |                |                        |
 | SearchOrdersView                |                | Yes            |                        |
 
-Scenario/business problem
--------------------------
+## Scenario
 
-<span id="_Toc446093285" class="anchor"></span>Let’s add custom column and App bar in POS customer search screen.
+Let’s add custom column and App bar in POS customer search screen.
 
 **Add new custom column and App bar button:**
 
-1.  Open visual studio 2015 in administrator mode.
-
-2.  Open ModernPOS solution from …\\RetailSDK\\POS
-
-3.  Under the POS.Extensions project create a new folder called SearchExtension.
-
-4.  Under SearchExtension, create new folder called ViewExtensions.
-
-5.  Under ViewExtensions, create new folder called Search.
-
-6.  In the Search folder, add a new ts (typescript) file and name it has CustomCustomerSearchColumns.ts
-
-7.  Add the below import statement to import the relevant entities and context.
-```Typescript
+1.  Open Visual Studio 2015 in administrator mode.
+2.  Open the **ModernPOS** solution from …\\RetailSDK\\POS
+3.  Under the POS.Extensions project create a new folder called **SearchExtension**.
+4.  Under **SearchExtension**, create new folder called **ViewExtensions**.
+5.  Under **ViewExtensions**, create new folder called **Search**.
+6.  In the **Search** folder, add a new Typescript file and name it **CustomCustomerSearchColumns.ts**.
+7.  Add the following import statements to import the relevant entities and context.
+    ```Typescript
     import { ICustomerSearchColumn } from "PosApi/Extend/Views/SearchView";
-
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
-
     import { ProxyEntities } from "PosApi/Entities";
-```
+    ```
 8.  Next step we will add the existing column plus the custom column to ts file.
 ```Typescript
  export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
@@ -541,36 +561,5 @@ The overall code should look like below:
 32. Click the new app bar button added after selecting a customer. It should open up a dialog with the selected customer details.
 
 
----
-# required metadata
 
-title: POS view extension
-description: 
-author: mugunthanm
-manager: AnnBe
-ms.date: 11/22/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-retail
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-# ms.tgt_pltfrm: 
-ms.custom: 24411
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
-ms.search.validFrom: 2017-11-22
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
----
-
-# POS view extension
 
