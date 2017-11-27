@@ -5,7 +5,7 @@ title: Formula designer in Electronic reporting
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -420,7 +420,7 @@ The limit isn't applied to the last item of the original list, because the value
 <tr class="even">
 <td>FILTER (list, condition)</td>
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
-<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If a vendor is configured as an ER data source that refers to the VendTable table and <strong>parmVendorBankGroup</strong> that is configured as ER data source returning the value in the string data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
+  <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table and the <strong>parmVendorBankGroup</strong> that is configured as ER data source returns the value in the string data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
 </tbody>
 </table>
