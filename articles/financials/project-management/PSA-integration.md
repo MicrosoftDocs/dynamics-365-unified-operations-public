@@ -58,6 +58,9 @@ Operations.
 > [!NOTE]
 > Not all templates are currently available. Templates will be released as they are completed.
 
+
+[![Project service automation integration](./media/PSA-integration.png)](./media/PSA-integration.png) 
+
 ## System requirements for Dynamics 365 for Finance and Operations, Enterprise edition
 To use the Project Service Automation to Finance and Operations integration solution, you must install the following:
 
