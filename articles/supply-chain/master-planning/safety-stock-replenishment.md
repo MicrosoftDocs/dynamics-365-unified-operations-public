@@ -79,6 +79,7 @@ The following scenario shows how this parameter works and what are the differenc
 
 > [!NOTE]
 > For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions (sales order lines, purchase order lines, planned orders, etc).
+
 [![Common scenario for safety stock fulfillment](./media/Scenario1.png)](./media/Scenario1.png)
 The **Fulfill minimum** parameter can have the following values:
 ### Today's date 
