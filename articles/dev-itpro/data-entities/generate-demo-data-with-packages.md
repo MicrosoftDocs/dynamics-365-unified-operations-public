@@ -50,7 +50,7 @@ The demo data packages are designed to be layered on top of each other as shown 
 However, the global information for one demo scenario may have completely different requirements than another demo scenario. For example, dimensions for one scenario will interfere with those for another scenario. In those cases, a separate global information package will be created and only packages related to that information can be layered on top of it.
 
 ### System and shared package
-The base package, **System and Shared**, is the foundation for all other packages. This package creates legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is named **100 - System and Shared.zip**.
+The base package, **System and Shared**, is the foundation for all other packages. This package creates legal entities, loads the global address book, and adds additional shared information. It must be loaded first to support all of the remaining packages. The package is named **100-System and Shared.zip**.
 
 After the package is loaded, you will see one or more of the following legal entities:
 
@@ -63,7 +63,7 @@ After the package is loaded, you will see one or more of the following legal ent
 | PIFB | A process industries company focused on food and beverage. |
 
 ### Financials
-The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. The names of these data packages start with **200 - Financials** followed by the legal entity for which they were intended. For example, the financial data packages for HQUS are called **200 - Financials - HQUS.zip**.
+The **Financial** data packages contain data for general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting for a single company. The names of these data packages start with **200-Financials** followed by the legal entity for which they were intended. For example, the financial data packages for HQUS are called **200-Financials-HQUS.zip**.
 
 At least two financial companies are required for cross company tasks such as centralized payments. All customers and vendors have been added to each legal entity to facilitate the cross company tasks. The CONS company is required if you want to do consolidations. 
 
@@ -72,15 +72,15 @@ The financial data packages also have five inventory products to support creatin
 ### Supply chain
 The **Supply chain** data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Due to the large number of entities, the supply chain packages for some companies have been split  into two packages. Both packages must be loaded to complete the supply chain scenarios but they can be loaded as two separate projects. 
 
-These names of these data packages start with **300 - Supply chain** followed by the legal entity for which they were intended. For example, the supply chain data packages for PICH are called **300 - Supply chain - PICH.zip**. The HQUS supply chain packages were split into packages called **300 - Supply chain 1 of 2 - HQUS.zip** and **310 - Supply chain 2 of 2 - HQUS.zip**.
+These names of these data packages start with **300-Supply chain** followed by the legal entity for which they were intended. For example, the supply chain data packages for PICH are called **300-Supply chain-PICH.zip**. The HQUS supply chain packages were split into packages called **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
 
 ### Project management and accounting
-The **Project management and accounting** data packages contain data for project accounting and expense management. These data packages are named **400 - Project management and accounting** followed by the legal entity for which they were intended. For example, the supply chain data packages for HQUS are called **400 - Project management and accounting - HQUS.zip**.   
+The **Project management and accounting** data packages contain data for project accounting and expense management. These data packages are named **400-Project management and accounting** followed by the legal entity for which they were intended. For example, the supply chain data packages for HQUS are called **400-Project management and accounting-HQUS.zip**.   
 
 ## Demo data package releases
 The demo data packages will be released through LCS and will be specific to a release. Note that the contents of any package is subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released when we add additional module areas and industry specific scenarios. 
 
-Package names will include a release identifier. Using the naming conventions described above, the name of the files for the 7.3 release will be **Demo data - 7.3 -** plus the name described above. For example, the full name for the Financials package will be **Demo data - 7.3 - 200 - Financials - HQUS.zip**.
+Package names will include a release identifier. Using the naming conventions described above, the name of the files for the 7.3 release will be **Demo data-7.3-** plus the name described above. For example, the full name for the Financials package will be **Demo data-7.3-200-Financials-HQUS.zip**.
 
 ## Steps to take before loading packages
 
@@ -91,10 +91,11 @@ There are some steps that you must perform manually before you load the data pac
 3. Start the **Ready to post** batch scheduler. This batch job posts transactions automatically. You must start the scheduler in every legal entity in which you want data to be processed. Follow the steps described for Ready to Post below. 
 4. Set up policy precedence rules. Go to **Procurement and sourcing** > **Setup** > **Policies** > **Purchasing policies** and select **Parameters**. Click **Companies** and move it to the right column.
 5. Before you load the Project Management and Accounting package, you must run the **Resource capacity roll-up** batch job. The batch can be run from the **Project management and accounting** > **Periodic** > **Capacity synchronization** > **Synchronize resource capacity roll-ups** form. Use an end date that will allow you to schedule resources well into the future. After the batch is run, then the project work breakdown structure auto generation of team functionality will be enabled.
+6. Print management settings must be added for each module. 
 
 ## Loading the packages
 
-The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the HQUS financials, you must import **100 - System and shared.zip** first, followed by **200 - Financials - HQUS.zip**. If you want to add supply chain data to the HQUS company, add **300 - Supply chain 1 of 2 - HQUS.zip**. 
+The data packages must be loaded in a specific order into a specific legal entity. The number preceding the name of the package provides guidance to the order that the data must be loaded. For example, to load the HQUS financials, you must import **100-System and shared.zip** first, followed by **200-Financials-HQUS.zip**. If you want to add supply chain data to the HQUS company, add **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**. 
 
 Follow these steps to load the packages:
 1) Start with an empty instance where no data is loaded
@@ -105,7 +106,7 @@ Follow these steps to load the packages:
 6) Select "Upload and add" and browse to the data package that you want to import. You will need to start with the System and Shared data package.
 7) Select the data package and wait for the data to load
 8) Once the data is loaded, close the dialogue and click on Import 
-9) Repeat the process for additional packages. Be sure to change to the company for which the data package was intended. For example, switch to the HQUS company before importing the data package
+9) Repeat the process for additional packages. Be sure to change to the company for which the data package was intended. For example, switch to the HQUS company before importing the data package.
 
 ### Loading package combinations
 The following packages are available to load. You must be in the legal entity listed in the package when you import it, except for System and Shared, which can be loaded from any legal entity but normally in DAT, the default company.
