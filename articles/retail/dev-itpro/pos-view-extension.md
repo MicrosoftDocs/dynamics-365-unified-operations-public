@@ -1,4 +1,4 @@
----
+       ---
 # required metadata
 
 title: POS view extension
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# How to extend existing POS views to add Custom column and App bar button
+# How to extend existing POS views to add custom columns and app bar buttons
 
 This topic explains how you can extend existing POS views such as the Customer Add edit screen. This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
@@ -77,124 +77,68 @@ Let’s add custom column and App bar in POS customer search screen.
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
     import { ProxyEntities } from "PosApi/Entities";
     ```
-8.  Next step we will add the existing column plus the custom column to ts file.
-```Typescript
- export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
-
- return [
-
- {
-
- title: context.resources.getString("string_2"),
-
- computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.AccountNumber; },
-
- ratio: 15,
-
- collapseOrder: 5,
-
- minWidth: 120
-
- }, {
-
- title: context.resources.getString("string_3"),
-
- computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullName; },
-
- ratio: 20,
-
- collapseOrder: 4,
-
- minWidth: 200
-
- }, {
-
- title: context.resources.getString("string_4"),
-
- computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullAddress; },
-
- ratio: 25,
-
- collapseOrder: 1,
-
- minWidth: 200
-
- }, {
-
- title: context.resources.getString("string_5"),
-
- computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Email; },
-
- ratio: 20,
-
- collapseOrder: 2,
-
- minWidth: 200
-
- }, {
-
- title: context.resources.getString("string_7"),
-
- computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Phone; },
-
- ratio: 20,
-
- collapseOrder: 3,
-
- minWidth: 120
-
- }
-
- ];
-
-};
-```
-9. Let’s add the resource file for the column name localization: Create a new folder called Resources under SearchExtension.
-
-10. Inside Resources folder add new folder called Strings and inside that create one more folder called en-US
-
-11. Create a new file inside called resources.resjson file and copy paste the below code:
-```Typescript
-    //======================================================================================================
-
-    //======================================= Sample comment. ==============================================
-
-    //======================================================================================================
-
+8.  Add the existing column plus the custom column to ts file.
+    ```Typescript
+    export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
+        return [
     {
-
+        title: context.resources.getString("string_2"),
+        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.AccountNumber; },
+        ratio: 15,
+        collapseOrder: 5,
+        minWidth: 120
+     }, {
+        title: context.resources.getString("string_3"),
+        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullName; },
+        ratio: 20,
+        collapseOrder: 4,
+        minWidth: 200
+    }, {
+        title: context.resources.getString("string_4"),
+        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullAddress; },
+        ratio: 25,
+        collapseOrder: 1,
+        minWidth: 200
+    }, {
+        title: context.resources.getString("string_5"),
+        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Email; },
+        ratio: 20,
+        collapseOrder: 2,
+        minWidth: 200
+    }, {
+        title: context.resources.getString("string_7"),
+        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Phone; },
+        ratio: 20,
+        collapseOrder: 3,
+        minWidth: 120
+    }
+    ];
+    };
+    ```
+9. To add the resource file for the column name **localization**, create a new folder named **Resources** under **SearchExtension**.
+10. Inside the **Resources** folder add a new folder named **Strings** and inside that create one more folder named **en-US**.
+11. Create a new file inside named **resources.resjson** file and add the following code:
+    ```Typescript
+    //======================================================================================================
+    //======================================= Sample comment. ==============================================
+    //======================================================================================================
+    {
     //======================== Sample View extensions strings. ========================
-
     "string_0" : "Quick compare products",
-
     "_string_0.comment" : "Product search page app bar command label.",
-
     "string_1" : "View customer summary",
-
     "_string_1.comment" : "Customer search page app bar command label.",
-
     //======================== Column names. ========================
-
     "string_2" : "ACCOUNT NUMBER_CUSTOMIZED",
-
     "_string_2.comment" : "Customer search column name.",
-
     "string_3" : "NAME",
-
     "_string_3.comment" : "Customer search column name.",
-
     "string_4" : "ADDRESS",
-
     "_string_4.comment" : "Customer search column name.",
-
     "string_5" : "CONTACT EMAIL",
-
     "_string_5.comment" : "Customer search column name.",
-
     "string_7" : "PHONE NUMBER",
-
     "_string_7.comment" : "Customer search column name."
-
     }
 ```
 12. In the SearchExtension folder add a new folder called DialogSample
