@@ -198,3 +198,6 @@ The following columns appear in the Ready to post entity:
 
 Insert the **Ready to post** entity at the end of your data project after all of the transaction entities by using a sequence number in the data project that is larger than the ones used by the transactions entities. If you have a mix of transactions where some of them should be processed and others should not be processed, you must use date and document ranges to limit which transactions are processed. If you can't use the ranges, you will need a separate data package for the unposted transactions.
 
+## Task guides
+
+The current task guides were designed for use with the original demo data that has been shipped for several releases. The demo data in the data packages is similar but not identical to the original demo data so exising task guides may not work at this time if you use the data package for your demo data. 
