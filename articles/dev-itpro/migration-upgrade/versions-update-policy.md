@@ -91,7 +91,8 @@ For information about the new features included in each release, click the links
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018   |
+| [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)| 7.0.4709 | November 2017   | November 2018   |
+| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018  |
 | [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
 | [Platform update 9](../../fin-and-ops/get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
 | [Platform update 8](../../fin-and-ops/get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |

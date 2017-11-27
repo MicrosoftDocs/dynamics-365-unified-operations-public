@@ -20,6 +20,7 @@
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (August 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition (July 2017)](get-started/whats-new-application-July-2017-update.md)
