@@ -46,16 +46,6 @@ previous releases mentioned in this topic supported cloud deployments only.
 
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
-### Control-based KPIs 
-Currently, applications rely on modeled controls to support key performance indicators (KPIs) used to track business metrics such as total revenue and gross profit margin.  The existing configuration forms in Finance and Operations used to define custom KPIs are being deprecated.
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Improved tooling for managing user defined KPIs will be provided by the embedded analytical services. |
-| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on analytical applications.  |
-| **Product areas affected**         | All  modules    |
-| **Deployment option**              | ?      |
-| **Status**                         | Deprecated: A removal date has not been set for this feature.            |
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
@@ -91,6 +81,53 @@ The standard UI in data management is the legacy UI which is the default UI pres
 | **Product areas affected**         | Data management workspace                                                     |
 | **Deployment option**              | All                                                                           |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
+
+### (IND) Excise, Sales Tax, Service Tax
+
+These taxes have been subsumed into Indian GST.
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| **Reason for removal or deprecation**       | These taxes have been subsumed into Indian GST.                          |
+| **Replaced by another feature?**            | Indian GST                                                              |
+| **Product areas affected**                  | Tax                                                                     |
+| **Deployment option**                       | All modules                                                   |
+| **Status**                                  | Deprecated: A removal date has not been set for this feature. |    
+
+### (IND) File Validation Utility (FVU) 
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| **Reason for removal or deprecation**       | Lack of customer usage                                                  |
+| **Replaced by another feature?**            | No                                                                      |
+| **Product areas affected**                  | Indian withholding tax                                                  |
+| **Deployment option**                       | All modules                                                                    |
+| **Status**                                  | Deprecated: A removal date has not been set for this feature.   |        
+
+### (IND) TDS/TCS certificate 
+
+Users can download this from goverment portal.
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| **Reason for removal or deprecation**       | Lack of customer usage                                                  |
+| **Replaced by another feature?**            | No                                                                      |
+| **Product areas affected**                  | Indian withholding tax                                                  |
+| **Deployment option**                       | All modules                                                                   |
+| **Status**                                  | Deprecated: A removal date has not been set for this feature.     |    
+
+### (IND) EXIM
+
+Lack of customer usage
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| **Reason for removal or deprecation**       | Lack of customer usage                                                  |
+| **Replaced by another feature?**            | No                                                                      |
+| **Product areas affected**                  | Import and export                                                       |
+| **Deployment option**                       | All modules                                                                    |
+| **Status**                                  | Deprecated: A removal date has not been set for this feature.  |    
+
 
 
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8
