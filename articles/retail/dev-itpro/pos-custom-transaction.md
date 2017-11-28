@@ -1,4 +1,4 @@
-    ---
+---
 # required metadata
 
 title: POS custom columns and controls on transaction pages
@@ -264,166 +264,147 @@ Let’s add custom control in POS transaction to show the selected line item det
     }
     ```
 
-The overall class should look like below:
+    The overall class should look like below:
 
-```typescript
- import {
- CartViewCustomControlBase,
- ICartViewCustomControlState,
- ICartViewCustomControlContext,
- CartLineSelectedData
- } from "PosApi/Extend/Views/CartView";
- import {
- ObjectExtensions,
- StringExtensions,
- ArrayExtensions
- } from "PosApi/TypeExtensions";
- import { ProxyEntities } from "PosApi/Entities";
- export default class LineDetailsCustomControl extends CartViewCustomControlBase {
- private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
- public readonly cartLineItemId: Computed&lt;string&gt;;
- public readonly cartLineDescription: Computed&lt;string&gt;;
- public readonly isCartLineSelected: Computed&lt;boolean&gt;;
- private readonly_cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
- private _state: ICartViewCustomControlState;
- constructor(id: string, context: ICartViewCustomControlContext) {
- super(id, context);
- this._cartLine = ko.observable(null);
- this.cartLineItemId = ko.computed(() =&gt; {
- let cartLine: ProxyEntities.CartLine = this._cartLine();
- if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
- return cartLine.ItemId;
- }
- return StringExtensions.EMPTY;
- });
- this.cartLineDescription = ko.computed(() =&gt; {
- let cartLine: ProxyEntities.CartLine = this._cartLine();
- if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
- return cartLine.Description;
- }
- return StringExtensions.EMPTY;
- });
- this.isCartLineSelected = ko.computed(() =&gt; !ObjectExtensions.isNullOrUndefined(this._cartLine()));
- this.cartLineSelectedHandler = (data: CartLineSelectedData) =&gt; {
- if (ArrayExtensions.hasElements(data.cartLines)) {
- this._cartLine(data.cartLines\[0\]);
- }
- };
- this.cartLineSelectionClearedHandler = () =&gt; {
- this._cartLine(null);
- };
- }
- /**
- * Binds the control to the specified element.
- * @param {HTMLElement} element The element to which the control should be bound.
- */
- public onReady(element: HTMLElement): void {
- ko.applyBindingsToNode(element, {
- template: {
- name: LineDetailsCustomControl.TEMPLATE_ID,
- data: this
- }
- });
- }
- /**
- * Initializes the control.
- * @param {ICartViewCustomControlState} state The initial state of the page used to initialize the control.
- */
- public init(state: ICartViewCustomControlState): void {
- this._state = state;
- }
- }
-```
-33. Create a new json file and under the CustomControlExtensions folder and name it as manifest.json.
+    ```typescript
+    import {
+        CartViewCustomControlBase,
+        ICartViewCustomControlState,
+        ICartViewCustomControlContext,
+        CartLineSelectedData
+        } from "PosApi/Extend/Views/CartView";
 
-34. In the manifest.json file, copy and paste the below code:
+    import {
+        ObjectExtensions,
+        StringExtensions,
+        ArrayExtensions
+    } from "PosApi/TypeExtensions";
+    
+    import { ProxyEntities } from "PosApi/Entities";
 
-```typescript
-{
+    export default class LineDetailsCustomControl extends CartViewCustomControlBase {
+        private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
+        public readonly cartLineItemId: Computed&lt;string&gt;;
+        public readonly cartLineDescription: Computed&lt;string&gt;;
+        public readonly isCartLineSelected: Computed&lt;boolean&gt;;
+        private readonly_cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
+        private _state: ICartViewCustomControlState;
 
- "$schema": "../manifestSchema.json",
+        constructor(id: string, context: ICartViewCustomControlContext) {
+            super(id, context);
+            this._cartLine = ko.observable(null);
 
- "name": "Pos_Extensibility_Samples",
+            this.cartLineItemId = ko.computed(() =&gt; {
+                let cartLine: ProxyEntities.CartLine = this._cartLine();
+                if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
+                    return cartLine.ItemId;
+                }
+                return StringExtensions.EMPTY;
+            });
 
- "publisher": "Contoso",
+            this.cartLineDescription = ko.computed(() =&gt; {
+                let cartLine: ProxyEntities.CartLine = this._cartLine();
+                if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
+                    return cartLine.Description;
+                }
+                return StringExtensions.EMPTY;
+            });
 
- "version": "7.2.0",
+            this.isCartLineSelected = ko.computed(() =&gt; !ObjectExtensions.isNullOrUndefined(this._cartLine()));
+            this.cartLineSelectedHandler = (data: CartLineSelectedData) =&gt; {
+                if (ArrayExtensions.hasElements(data.cartLines)) {
+                    this._cartLine(data.cartLines\[0\]);
+                }
+            };
 
- "minimumPosVersion": "7.2.0.0",
+            this.cartLineSelectionClearedHandler = () =&gt; {
+                this._cartLine(null);
+            };
+        }
 
- "components": {
+        /**
+        * Binds the control to the specified element.
+        * @param {HTMLElement} element The element to which the control should be bound.
+        */
+        public onReady(element: HTMLElement): void {
+            ko.applyBindingsToNode(element, {
+                template: {
+                    name: LineDetailsCustomControl.TEMPLATE_ID,
+                    data: this
+                }
+            });
+        }
 
- "extend": {
+        /**
+        * Initializes the control.
+        * @param {ICartViewCustomControlState} state The initial state of the page used to initialize the control.
+        */
+        public init(state: ICartViewCustomControlState): void {
+            this._state = state;
+        }
+    }
+    ```
+1. Create a new json file and under the CustomControlExtensions folder and name it as manifest.json.
+1. In the manifest.json file, copy and paste the below code:
 
- "views": {
+    ```typescript
+    {
+        "$schema": "../manifestSchema.json",
+        "name": "Pos_Extensibility_Samples",
+        "publisher": "Contoso",
+        "version": "7.2.0",
+        "minimumPosVersion": "7.2.0.0",
+        "components": {
+            "extend": {
+                "views": {
+                    "CartView": {
+                        "viewController": { "modulePath": "Cart/CartViewController" },
+                        "controlsConfig": {
+                            "customControls": [
+                            {
+                                "controlName": "lineDetails",
+                                "htmlPath": "Cart/LineDetailsCustomControl.html",
+                                "modulePath": "Cart/LineDetailsCustomControl"
+                            }
+                            ]  
+                        }  
+                    }  
+                }  
+            }  
+        } 
+    }
+    ```
 
- "CartView": {
-
- "viewController": { "modulePath": "Cart/CartViewController" },
-
- "controlsConfig": {
-
- "customControls": [
-
- {
-
- "controlName": "lineDetails",
-
- "htmlPath": "Cart/LineDetailsCustomControl.html",
-
- "modulePath": "Cart/LineDetailsCustomControl"
-
- }
-
- ]  }  }  }  }  } }
- ```
-
-35. Open the extensions.json file under POS.Extensions project and update it with CustomControlExtensions samples, so that POS during runtime will include this extension.
-```typescript
- {
-
- "extensionPackages": [
-
- {
-
- "baseUrl": "SampleExtensions2"
-
- },
-
- {
-
- "baseUrl": "CustomControlExtensions"
-
- }
-
- ]
-
-}
-```
+1. Open the extensions.json file under POS.Extensions project and update it with CustomControlExtensions samples, so that POS during runtime will include this extension.
+    ```typescript
+    {
+        "extensionPackages": [
+        {
+            "baseUrl": "SampleExtensions2"
+        },
+        {
+            "baseUrl": "CustomControlExtensions"
+        }
+        ]
+    }
+    ```
 36. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
 
-```typescript
-"exclude": [
+    ```typescript
+    "exclude": [
+        "SampleExtensions"
+        //"SampleExtensions2",
+        //"CustomControlExtensions"
+    ],
+    ```
 
-"SampleExtensions"
+1. Compile and rebuild the project.
 
-//"SampleExtensions2",
-
-//"CustomControlExtensions"
-
-],
-```
-
-37. Compile and rebuild the project.
-
- **Validate the customization:**
+## Validate the customization
 
 1.  Login to MPOS using 000160 as operator id and 123 as password.
-
 2.  Click the current transaction button on the welcome screen
-
 3.  Add any item (0005) to transaction and select the line item added.
-
 4.  The custom should display the selected line item id and description.
 
 
