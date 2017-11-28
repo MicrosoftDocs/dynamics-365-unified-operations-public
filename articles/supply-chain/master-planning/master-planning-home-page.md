@@ -46,9 +46,9 @@ Master planning uses the information to calculate the requirements and generate 
 
 The three main planning processes are:
 
--  Master planning - The Master plan calculates net requirements. It is based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the "Net requirements plan."
+-  [Master planning](master-plans.md) - The Master plan calculates net requirements. It is based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the "Net requirements plan."
 
--  Forecast planning - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
+-  [Forecast planning](introduction-demand-forecasting) - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
 
 -  Intercompany master planning - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply.
 
@@ -58,10 +58,18 @@ Master scheduling plans typically involve the short term, which can be anywhere 
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Click the links in the Quick links section to learn how to use the module.
+The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
 
 [![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
+## Quick links
+|      |   |
+|------|---|
+|  [Master plans)](master-plans.md)  |  [Master planning and multisite functionality](master-plan-multisite-functionality.md)  |
+|  [Master planning essentials](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (requires CustomerSource account)  |  [Master Planning for Process Manufacturing](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (requires CustomerSource account) |  
+| [Intercompany Master Planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account) | [Demand forecasting overview](introduction-demand-forecasting.md)  | 
+|[Reduction keys](reduction-keys.md)|    |
+                                  
 ## Additional resources
 
 ### What's new and in development
