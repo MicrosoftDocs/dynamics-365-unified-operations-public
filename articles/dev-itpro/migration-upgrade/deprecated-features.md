@@ -893,7 +893,7 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality   |
-| **Replaced by another feature?**   | Yes, this feature has been partially replaced by Transportation management, but hasn't yet been replaced by basic Warehouse management (WMS I). |
+| **Replaced by another feature?**   | Partially replaced by Transportation management |
 | **Product areas affected**         | Sales and marketing, Inventory management  |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.  |
 
