@@ -80,7 +80,7 @@ Released products can be “stopped” for the sales process by enabling the opt
 In addition to stopping the sales of a product, users can also temporarily block the sales of a product.  This can be configured on the Retail tab of a released product.  Blocked products will still be assorted, but the user will receive a message in POS that the product cannot be sold.
 
 ### Date effectivity
-In order to allow retailers to configure when products should or should not be available per channel, assortments are date effective.  Users can define and publish their assortments ahead of time and specify the start and end dates.   
+In order to allow retailers to configure when products should or should not be available per channel, assortments are date effective.  Users can define and publish their assortments ahead of time and specify the start and end dates.  The products will automatically become available or unavailable when the specified dates occur. 
 
 ### Process assortments batch job
 Assortments that are defined in Dynamics 365 need to be processed before taking effect for two main reasons.  The main reason is that assortment definitions need to be de-normalized to make them more easily consumed by the channels.   A given channels product mix can be defined by multiple assortments spanning different date ranges.  Pre-calculating some of this information ahead of time on the server, will help to improve performance at the channel.
@@ -94,9 +94,6 @@ Below are some things to consider as you plan and manage your assortments for yo
 
 2.	**Date effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments.  Leaving open ended (non-expiring) assortments for seasonal or products that are end of life will cause these databases to grow indefinitely.  One approach to help manage this is to keep separate assortments for seasonal products versus products that are always available.  
 
-3.	**Sales and returns outside of assortments** – Initially retailers were unable to effectively manage their assortments since POS was unable to sell or return products outside of the assortment.  The data did not exist in the channel database, so the record could not be found.  Retailers would artificially extend their assortments to account for scenarios where:
+3.	**Sales and returns outside of assortments** – This capability allows retailers to effectively manage their assortments to reduce the number of available products to those that are actually within the core product mix for the store.  It also helps to account for situations where a product was mistakenly not included in an assortent or if the product is being returned outside of the assortment effective dates.
 
-    - A product was mistakenly not included in an assortment
-    - A product was returned by the customer outside of the assortment effective dates
-
-Now that POS allows users to sell and return outside of the assortments by making a real-time call to headquarters for the data, retailers can manage the assortments for the primary product availability requirements. 
+If product data does not exist in the channel database POS will make real time call to headquarters to retrive the necessary information, allowing the product to be sold, returned, or placed on a cusotmer order.  Product information retrived in this fashion is only availble during the scope of that transaction.  The product is not added to the assortment definition, therefore subsequent real time calls will be made as needed.
