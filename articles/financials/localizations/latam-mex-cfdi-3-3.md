@@ -5,7 +5,7 @@ title: CFDI Version 3.3
 description: This topic provides information about the CFDI layout version 3.3 for Mexico.
 author: sndray
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -166,63 +166,81 @@ The following changes are introduced as part of changes in layout version 3.3:
 </table>
 
 ## CFDI Reference
-As per legal requirement, user must be able to reference one or more CFDI invoices related under specific scenarios. For example, a customer might return items if the incorrect item was received, or if an item is defective. You must create a return order and also identify the original sales invoice that was submitted before and identify the type of relation (cTipoRelacion) defined by the government, in this case 03: Goods return.
-Before to post a Sales invoice, the user will be able to reference the related CFDI invoice under the following path: Post > Setup > CFDI reference button
-User can select the available list of CFDI invoice approved or can enter manually the following information:
-UUID
-Type of relation
-This functionality is also available in Payment journals > CFDI reference when CFDI payment complement is generated as well. 
+As per legal requirement, user must be able to reference one or more CFDI invoices related under specific scenarios. For example, a customer might return items if the incorrect item was received, or if an item is defective. You must create a return order and also identify the original sales invoice that was submitted before and identify the type of relation (**cTipoRelacion**) defined by the government, in this case **03: Goods return**.
+
+Before to post a Sales invoice, the user will be able to reference the related CFDI invoice under the following path: **Post** > **Setup** > **CFDI reference**.
+
+You can select the available list of CFDI invoices approved or you can enter the following information:
+-	UUID
+-	Type of relation
+
+This functionality is also available in **Payment journals** > **CFDI reference** when the CFDI payment complement is generated as well. 
 
 This process describes the processing of CFDI payment complement generation when a payment is collected from customer and applied to an existing CFDI invoice document.
+
 CFDI payment complement are generated from the payment journal and settlement process under the following criterias:
-Journal payment settled with one or more invoices;
-Journal settlement, settled with one or more invoices;
-Journal name must be defined with journal type = Customer payment.
+
+-	Journal payment settled with one or more invoices
+-	Journal settlement, settled with one or more invoices
+-	Journal name must be defined with journal type = Customer payment
+
 Once the journal payment or journal settlement is posted, and then Export/Import batch process is executed to get the related approval from PAC (third party software).
+
 Some addition information will be required for journal payment depending on the method of payment selected:
-Offset main account;
-Third party customer bank account;
-RFC customer bank account. We introduced a new field into the Customer bank account form to fulfill the legal requirements established by the tax authorities.
-Use the CFDI electronic invoice inquire to view, email, export, or print an already-generated CFDI payment complement based on a customer’s request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices) > Payment tab.
+
+-	Offset main account
+-	Third party customer bank account
+-	RFC customer bank account. We introduced a new field into the Customer bank account form to fulfill the legal requirements established by the tax authorities.
+
+Use the CFDI electronic invoice inquire to view, email, export, or print an already-generated CFDI payment complement based on a customer’s request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. Go to **Accounts receivable** > **Inquiries and reports** > **CFDI (electronic invoices)** > **Payment**.
 
 
 ## Customer advance payments
-This process describes the processing and setup of advanced customer payment to generate and issue a CFDI electronic invoice.
-As per government definition, there is an specific process to follow when advance payments are collected from customers.
-CFDI advance payment. Issuance of an electronic invoice to the customer for the amount of the advance received
-CFDI Invoice. Once the operation is realized and advance payment is applied, the company must issue the CFDI invoice of operation, and details the CFDI advance payment UUID issued in the step one.
-CFDI Invoice reverse. Issuance of an electronic invoice to reverse the Advance payment applied.
+This process describes the processing and setup of advanced customer payment to generate and issue a CFDI electronic invoice. As per government definition, there is an specific process to follow when advance payments are collected from customers. 
+
+1. CFDI advance payment. Issuance of an electronic invoice to the customer for the amount of the advance received 
+2. CFDI Invoice. Once the operation is realized and advance payment is applied, the company must issue the CFDI invoice of operation, and details the CFDI advance payment UUID issued in the step one.
+3. CFDI Invoice reverse. Issuance of an electronic invoice to reverse the Advance payment applied.
+
+![Advanced payment process](./media/mex-advance-payments-cfdi.png "Diagram showing advanced payment process")
 
 ## Prerequisites
-Use prepayment journal vouchers functionality to issue CFDI advance payment. Before to submit, the CFDI additional configuration is required to fulfill the step 1 detailed in previous section.
-Accounts receivable > Setup > Customer posting profiles, create and Advance payment profile.
-Accounts receivable > Setup > Accounts receivable parameters > Ledger and sales tax > Payment
-Select the posting profile created before.
-If sales tax is calculated and posted when you post a prepayment journal voucher, select the Sales tax on prepayment journal voucher check box.
-Issuing CFDI for Advance payment - Step 1
-Click Accounts receivable > Journals > Payments > Payment journal to create the advance payment.
-Introduce the lines and the related information. Include the Method of payment and Sales tax codes is applicable.
-On the Payment tab, select the Prepayment journal voucher check box.
-Post the Advance payment.
-Click Accounts receivable >Periodic > CFDI electronic invoices > Export/Import electronic invoice process, to request the digital stamp of CFDI advance payment.
-Click Accounts receivable > Inquire > Journals > CFDI electronic invoice > Payment tab, to inquire the status of CFDI advance payment. This transaction is classified in Document type information as Prepayment.
-Note
-CFDI Advance payment transactions are identified in the system by the following criterias, Journal name type = Customer payment and Prepayment journal voucher marked. Otherwise, the payment transaction is considered as regular payment
+Use prepayment journal vouchers functionality to issue CFDI advance payment. Before you can submit, you must complete the following prerequisites:
+
+1. Create and Advance payment profile (**Accounts receivable** > **Setup** > **Customer posting profiles**) 
+2. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Ledger and sales tax** > **Payment**
+	1. Select the posting profile created before.
+	2. If sales tax is calculated and posted when you post a prepayment journal voucher, select the Sales tax on prepayment journal voucher check box.
+	
+	
+## Step 1: Issuing CFDI for advance payment
+
+1. Click Accounts receivable > Journals > Payments > Payment journal to create the advance payment.
+2. Introduce the lines and the related information. Include the Method of payment and Sales tax codes is applicable.
+3. On the Payment tab, select the Prepayment journal voucher check box.
+4. Post the Advance payment.
+5. Click Accounts receivable >Periodic > CFDI electronic invoices > Export/Import electronic invoice process, to request the digital stamp of CFDI advance payment.
+6. Click Accounts receivable > Inquire > Journals > CFDI electronic invoice > Payment tab, to inquire the status of CFDI advance payment. This transaction is classified in Document type information as Prepayment.
+	> [!NOTE]
+	> CFDI Advance payment transactions are identified in the system by the following criterias, Journal name type = Customer payment and Prepayment journal voucher marked. Otherwise, the payment transaction is considered as regular payment
  
-Issuing CFDI invoice with Advance application - Step 2
-Create a sales invoice transaction.
-Before to post the invoice, you can settle the advance payment created in the step 1, by using the Open Transaction settle option.
-In the Post form, you can check the referenced CFDI invoice. It has been created automatically with cTipoRelacion = 07.
-Post the Sales invoice and proceed with the regular process.
-Note
-At the time we released this KB, the government has not updated the schema to allow cTipoRelacion = 07. In case of getting error schema validation, you can select manually the option 01: Credit note to solve the issue.
+## Step 2: Issuing CFDI invoice with advance application
+
+1. Create a sales invoice transaction.
+2. Before you post the invoice, you can settle the advance payment created in the [Step 1: Issueing CFDI for advance payment](##step-1-issuing-cfdi-for-advance-payment), by using the Open Transaction settle option.
+3. On the **Post** page, you can check the referenced CFDI invoice. It has been created automatically with cTipoRelacion = 07.
+4. Post the Sales invoice and proceed with the regular process.
+	> [!NOTE]
+	> At the time we released this KB, the government has not updated the schema to allow cTipoRelacion = 07. In case of getting error schema validation, you can select manually the option 01: Credit note to solve the issue.
  
-Issuing CFDI Advance reverse - Step 3
-After the company issue a CFDI for the total amount of operation, the company needs to submit another CFDI Advance reverse ( Egreso) for the advance payment settled.
-This CFDI advance reverse is generated automatically when we get the approval of CFDI generated in step 2. No additional actions are required from the user point of view.
-Use the CFDI electronic invoice inquire to view, email, export, or print an already-generated CFDI advance payment based on a customer's request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices) > Payment tab.
-CFDI Advance payment are identified with the document type = Prepayment.
-Confirmation number
+## Step 3: Issuing CFDI Advance reverse
+
+After the company issues a CFDI for the total amount of the operation, the company needs to submit another CFDI Advance reverse ( Egreso) for the advance payment settled. This CFDI advance reverse is generated automatically when you get the approval of CFDI generated in [Step 2: Issuing CFDI invoice with advance application](##step-2-issuing-cfdi-invoice-with-advance-application). 
+
+Use the CFDI electronic invoice inquire to view, email, export, or print an already-generated CFDI advance payment based on a customer's request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. Go to **Accounts receivable** > **Inquiries and reports** > **CFDI (electronic invoices)** > **Payment** tab.
+CFDI Advance payment are identified with the document type = **Prepayment**.
+
+## Confirmation number
 The confirmation number in a CFDI invoice is required when the total amount of invoice or exchange rate vairaiton is out of range of limits established by the government. Under this scenario, it is required a specific confirmation code that could be included in two ways.
-If the company knows that exceed the limits, you can include the confirmation code in the header of sales invoice transaction.
-If you receive a Rejection from PAC because the limits, you can set the confirmation code in CFDI electronic invoice inquire > Functions > Set authorization code and Resend again for the approval process.
+1. If the company knows that exceed the limits, you can include the confirmation code in the header of sales invoice transaction.
+2. If you receive a Rejection from PAC because the limits, you can set the confirmation code in **CFDI electronic invoice inquire** > **Functions** > **Set authorization code and Resend again** for the approval process.
