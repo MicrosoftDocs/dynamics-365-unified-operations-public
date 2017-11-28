@@ -48,7 +48,7 @@ The three main planning processes are:
 
 -  [Master planning](master-plans.md) - The Master plan calculates net requirements. It is based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the "Net requirements plan."
 
--  [Forecast planning](introduction-demand-forecasting) - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
+-  [Forecast planning](introduction-demand-forecasting.md) - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
 
 -  [Intercompany Master Planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account) - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply.
 
