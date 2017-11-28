@@ -65,7 +65,7 @@ The following learning map shows the major concepts and tasks that make up the f
 ## Quick links
 |      |   |
 |------|---|
-|  [Master plans)](master-plans.md)  |  [Master planning and multisite functionality](master-plan-multisite-functionality.md)  |
+|  [Master plans](master-plans.md)  |  [Master planning and multisite functionality](master-plan-multisite-functionality.md)  |
 |  [Master planning essentials](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (requires CustomerSource account)  |  [Master Planning for Process Manufacturing](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (requires CustomerSource account) |  
 | [Intercompany Master Planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account) | [Demand forecasting overview](introduction-demand-forecasting.md)  | 
 |[Reduction keys](reduction-keys.md)|    |
