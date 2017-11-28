@@ -66,7 +66,7 @@ If you are upgrading a cloud version of Finance and Operations, review the follo
 
 - [Overview of moving to the latest Finance and Operations update](upgrade-latest-update.md)
 
-- [Upgrade Finance and Operations to the latest platform update](upgrade-latest-platform-update.md)
+- [Apply the latest platform update to your Finance and Operations environment](upgrade-latest-platform-update.md)
 
 - [Download Finance and Operations hotfixes from Lifecycle Services](download-hotfix-lcs.md)
 

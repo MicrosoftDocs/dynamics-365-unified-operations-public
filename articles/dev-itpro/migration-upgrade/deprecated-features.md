@@ -606,6 +606,7 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 | **Product areas affected**         | All modules  |
 | **Status**                         | Removed as of Dynamics AX 7.0.  |
 
+
 ### Database and file share storage for attachments
 
 Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.

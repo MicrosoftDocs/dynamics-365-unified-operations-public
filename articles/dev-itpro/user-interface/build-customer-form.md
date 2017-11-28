@@ -68,7 +68,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 6.  In the **Project file location** text box, enter **C:\FMLab**.
 7.  Select the **Overwrite Elements** option and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
-    [![CustForm2](./media/custform2.png)](./media/custform2.png)
+    ![CustForm2](./media/custform2.png)
     
 8.  Click **OK**.
 9.  In **Solution Explorer**, expand **Classes**, and under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -100,14 +100,14 @@ Use Visual Studio to create the **FmtCustomer** form. You’ll use a template to
 6.  In the **Properties** window, click **Data Source**, and then select **FmtCustomer** to bind the **FmtCustomer** table to the grid. You can now use the fields from the data source to add columns to the grid.
 7.  Click **Data sources** &gt; **FmtCustomer** &gt; **Fields** to add fields to the grid.
     1.  Click **FirstName**, press and hold the **Ctrl** key, and then select the following additional fields in the order shown:
-        -   LastName
-        -   CellPhone
-        -   DriverLicense
-        -   Email
+        - LastName
+        - CellPhone
+        - DriverLicense
+        - Email
 
     2.  Drag the highlighted fields to **Design** &gt; **GridDetailsTab**&gt; **TabPageGrid** &gt; **MainGrid**. The following illustration shows the grid after expanding the grid node and adding the fields. 
     
-        [![CustForm3](./media/custform3.png)](./media/custform3.png)     
+        ![CustForm3](./media/custform3.png)     
 
 8.  Click **Save**.
 9.  Click **Design** &gt; **GridDetailsTab** &gt; **TabPageDetails** &gt; **TitleGroup** to add the record header to the details view.
@@ -149,9 +149,9 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 1.  Right-click **Design**, point to **Apply pattern,** and then click **Details Master**.
 
-    |                                                                                                                                                          |                                                                                                                                                          |
-    |----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm6](./media/custform6.png)](./media/custform6.png) | [![CustForm7](./media/custform7.png)](./media/custform7.png) |
+    [![CustForm6](./media/custform6.png)](./media/custform6.png)
+    
+    [![CustForm7](./media/custform7.png)](./media/custform7.png)
 
 2.  Add the missing Navigation List group. The red highlighting in the Patterns Information Panel indicates that this control is missing.
     1.  Right-click **Design**, point to **New**, and then click **Group**.
@@ -160,24 +160,23 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 3.  Click **Design** again. The yellow highlighting around the **Navigation List** and the **Panel Tab** indicate that there are problems that need to be resolved under each of these nodes before the pattern can be successfully applied.
 
-    | | |
-    |---|---|
-    | [![CustForm8](./media/custform8.png)](./media/custform8.png) | [![CustForm9](./media/custform9.png)](./media/custform9.png) |
+    [![CustForm8](./media/custform8.png)](./media/custform8.png)
+    
+    [![CustForm9](./media/custform9.png)](./media/custform9.png)
 
 4.  In the Patterns Information Panel, click **SidePanel**.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm10](./media/custform10.png)](./media/custform10.png) | [![CustForm11](./media/custform11.png)](./media/custform11.png) |
+    [![CustForm10](./media/custform10.png)](./media/custform10.png)
+    
+    [![CustForm11](./media/custform11.png)](./media/custform11.png)
 
 5.  Add the missing controls.
     1.  Right-click **SidePanel**, point to **New**, and then click **QuickFilter**.
     2.  In the **Properties** window, specify the following values.
     
-        |                |                                                                                                               |
-        |----------------|---------------------------------------------------------------------------------------------------------------|
-        | **Property**   | **Value**                                                                                                     |
-        | Name           | SidePanelQuickFilter                                                                                          |
+        | **Property** | **Value**      |
+        |--------------|----------------|
+        | Name           | SidePanelQuickFilter                            |
         | Target Control | MainGrid *This QuickFilter should have the same columns available for filtering as the main grid on the form* |
 
     3.  Right-click **SidePanel**, point to **New**, and then click **Grid.**
@@ -201,28 +200,28 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 7.  Click **SidePanel**. Notice the **Patterns Information Panel** is now indicating that the controls in this subtree are in full compliance with the pattern.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm12](./media/custform12.png)](./media/custform12.png) | [![CustForm13](./media/custform13.png)](./media/custform13.png) |
+    ![CustForm12](./media/custform12.png)
+    
+    ![CustForm13](./media/custform13.png)
 
 8.  Click **Design** &gt; **GridDetailsTab**. The yellow highlighting around the subnodes indicates that there are problems that need to be resolved under both nodes before the form pattern can be successfully applied.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm14](./media/custform14.png)](./media/custform14.png) | [![CustForm15](./media/custform15.png)](./media/custform15.png) |
+    [![CustForm14](./media/custform14.png)](./media/custform14.png)
+    
+    [![CustForm15](./media/custform15.png)](./media/custform15.png)
 
 9.  Notice that the pattern expects the **Grid Panel** to be after the **Details Panel.** Click **TabPageGrid** and press **Alt+Down** to move that tab below the **Details Panel**.
 10. Click **GridDetailsTab**. The **TabPageDetails** tab page now adheres to the pattern. However, the **TabPageGrid** tab page needs additional attention.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm16](./media/custform16.png)](./media/custform16.png) | [![CustForm17](./media/custform17.png)](./media/custform17.png) |
+    [![CustForm16](./media/custform16.png)](./media/custform16.png)
+    
+    [![CustForm17](./media/custform17.png)](./media/custform17.png)
 
 11. Click **TabPageGrid**. Focus in the designer is now on **TabPageGrid**, and the **Patterns Information Panel** has been updated.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm18](./media/custform18.png)](./media/custform18.png) | [![CustForm19](./media/custform19.png)](./media/custform19.png) |
+    [![CustForm18](./media/custform18.png)](./media/custform18.png)
+
+    [![CustForm19](./media/custform19.png)](./media/custform19.png)
 
 12. The **Patterns Information Panel** now indicates a missing Group control at the top of the **TabPageGrid** container.
     1.  Right-click **TabPageGrid**, point to **New**, and then click **Group**.
@@ -231,9 +230,9 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 13. The pattern is looking for a subpattern to be applied to **GridCustomFilterGroup**. Right-click **GridCustomFilterGroup,** point to **Apply pattern**, and then click **Custom and Quick Filters**.
 
-    |                                                                                                                                                             |                                                                                                                                                             |
-    |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![CustForm21](./media/custform21.png)](./media/custform21.png) | [![CustForm22](./media/custform22.png)](./media/custform22.png) |
+    [![CustForm21](./media/custform21.png)](./media/custform21.png)
+    
+    [![CustForm22](./media/custform22.png)](./media/custform22.png)
 
 14. The **Custom and Quick Filters** subpattern requires a QuickFilter control.
     1.  Right-click **GridCustomFilterGroup**, point to **New**, and then click **QuickFilter**.
