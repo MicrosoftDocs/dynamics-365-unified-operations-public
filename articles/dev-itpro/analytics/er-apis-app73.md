@@ -35,7 +35,7 @@ There are to types of changes to the ER APIs:
 - Several X++ classes were moved from X++ to an external assembly
 - The rest of X++ classes were marked as internal
 
-## How to access classes that were moved from X++ to external assembly
+## How to access classes that were moved from X++ to an external assembly
 
 To refer external classes, you need to add **using** directive at the beginning of your file:
 
