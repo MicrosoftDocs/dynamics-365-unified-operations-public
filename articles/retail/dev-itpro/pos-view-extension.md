@@ -290,60 +290,63 @@ The overall code should look like below:
  }
  }
 ```
-24. Create a new json file and under the SearchExtension folder and name it as manifest.json.
-
-25. In the manifest.json file, copy and paste the below code:
-```Typescript
- {
- "$schema": "../manifestSchema.json",
- "name": "Pos_Extensibility_Samples",
- "publisher": "Microsoft",
- "version": "7.2.0",
- "minimumPosVersion": "7.2.0.0",
- "components": {
- "resources": {
- "supportedUICultures": [ "en-US" ],
- "fallbackUICulture": "en-US",
- "culturesDirectoryPath": "Resources/Strings ",
- "stringResourcesFileName": "resources.resjson",
- "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
- },
- "extend": {
- "views": {
- "SearchView": {
- "customerAppBarCommands": [ { "modulePath": "ViewExtensions/Search/ViewCustomerSummaryCommand" } ],
- "customerListConfiguration": { "modulePath": "ViewExtensions/Search/CustomCustomerSearchColumns" }
- }  }   }   }  }
-```
-26. Open the extensions.json file under POS.Extensions project and update it with SearchExtension samples, so that POS during runtime will include this extension.
-```Typescript
- {
- "extensionPackages": [
-  {
-     "baseUrl": "SampleExtensions2"
-    },
+24. Create a new JSON file and under the **SearchExtension** folder and name it as manifest.json.
+25. In the **manifest.json** file, add the following code:
+    ```Typescript
     {
-      "baseUrl": "SearchExtension"
+        "$schema": "../manifestSchema.json",
+        "name": "Pos_Extensibility_Samples",
+        "publisher": "Microsoft",
+        "version": "7.2.0",
+        "minimumPosVersion": "7.2.0.0",
+        "components": {
+            "resources": {
+                "supportedUICultures": [ "en-US" ],
+                "fallbackUICulture": "en-US",
+                "culturesDirectoryPath": "Resources/Strings ",
+                "stringResourcesFileName": "resources.resjson",
+                "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
+            },
+            "extend": {
+                "views": {
+                    "SearchView": {
+                        "customerAppBarCommands": [ { "modulePath": "ViewExtensions/Search/ViewCustomerSummaryCommand" } ],
+                        "customerListConfiguration": { "modulePath": "ViewExtensions/Search/CustomCustomerSearchColumns" }
+                    }  
+                }   
+            }   
+        }  
     }
- ]
-}
-```
+    ```
+26. Open the extensions.json file under POS.Extensions project and update it with SearchExtension samples, so that POS during runtime will include this extension.
+    ```Typescript
+    {
+        "extensionPackages": [
+        {
+            "baseUrl": "SampleExtensions2"
+        },
+        {
+            "baseUrl": "SearchExtension"
+        }
+        ]
+    }
+    ```
 27. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
-```Typescript
- "exclude": [
- "SampleExtensions"
-//"SampleExtensions2",
-//"SearchExtension"
-],
-```
+    ```Typescript
+    "exclude": [
+    "SampleExtensions"
+    //"SampleExtensions2",
+    //"SearchExtension"
+    ],
+    ```
 28. Compile and rebuild the project.
 
- **Validate the customization:**
-
-29. Login to MPOS using 000160 as operator id and 123 as password.
-30. Search for customer 2001 using the search bar on the top.
-31. You should see the custom columns added.
-32. Click the new app bar button added after selecting a customer. It should open up a dialog with the selected customer details.
+ ## Validate the customization
+To validate the customization:
+1. Login to MPOS using **000160** as operator id and **123** as password.
+1. Search for customer **2001** using the search bar on the top.
+1. You should see the custom columns that you added.
+1. Select a customer and then click the new app bar button. It should open up a dialog with the selected customer's details.
 
 
 
