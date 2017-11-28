@@ -73,7 +73,7 @@ The following learning map shows the major concepts and tasks that make up the f
                                   
 ## Additional resources
 
-### What's new and in development
+### Roadmaps
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
 ### Manufacturing and supply chain management blogs
@@ -82,6 +82,9 @@ You can find opinions, news, and other information about Master planning and oth
 
 ### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the **Help** button on any page.
+
+### Webinars
+[Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 
 
