@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
