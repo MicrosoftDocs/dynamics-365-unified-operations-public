@@ -1,109 +1,117 @@
+---
+# required metadata
 
+title: Electronic reporting framework API changes for Application release 7.3
+description: This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application release 7.3.
+author: robinarh
+manager: AnnBe
+ms.date: 11/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
 
-This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations 2017 Fall release.
+# optional metadata
 
-Two major types of changes can be highlighted:
+# ms.search.form:  
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope:  Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global 
+# ms.search.industry: 
+ms.author: leok
+ms.search.validFrom: 2017-11-28
+ms.dyn365.ops.version: Platform update 8
+---
 
-1.  Several X++ classes were moved from X++ to an external assembly;
+# Electronic reporting framework API changes for Application release 7.3
 
-2.  Rest of X++ classes were marked as internal.
+This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application release 7.3.
 
-Find below the samples of new API usage.
+There are to types of changes to the ER APIs:
+- Several X++ classes were moved from X++ to an external assembly
+- The rest of X++ classes were marked as internal
 
-How to access classes that were moved from X++ to external assembly
--------------------------------------------------------------------
+## How to access classes that were moved from X++ to external assembly
 
 To refer external classes, you need to add **using** directive at the beginning of your file:
 
-using Microsoft.Dynamics365.LocalizationFramework;
+    using Microsoft.Dynamics365.LocalizationFramework;
 
-After that, you can refer an external class without any additional changes, e.g.:
+You can then refer an external class without any additional changes, for example:
 
-var destination = new ERFileDestinationMemory();
+    var destination = new ERFileDestinationMemory();
 
-You can also create an alias for your namespace and refer it:
+You can also create an alias for your namespace:
 
-Adding an alias:
+    using LF = Microsoft.Dynamics365.LocalizationFramework;
 
-using LF = Microsoft.Dynamics365.LocalizationFramework;
+You can then refer to an external class by using the namespace alias that you created:
 
-Referring an external class by using its namespace alias:
+    var destination = new LF.ERFileDestinationMemory();
 
-var destination = new LF.ERFileDestinationMemory();
+## How to access internal X++ objects by using ERObjectsFactory
 
-How to access internal X++ objects via ERObjectsFactory
--------------------------------------------------------
+From Application release 7.3 onward, the calling code must access the ER objects by using the methods of the **ERObjectsFactory** class. Several examples of the changes are shown.
 
-From now on, the calling code should access the ER objects via the methods of the **ERObjectsFactory** class. The tables below illustrate how the existing calling code should be changed: code that was changed shown as black, unchanged parts are shown gray.
+### Display format mapping lookup task
 
-### ‘Display format mapping lookup’ task
+Before Application release 7.3:
 
-Old code pattern and example:
+    ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
+    ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMiscChargeReportERModelName);
 
-ERFormatMappingTableLookup::lookupFormatMapping(&lt;form control&gt;, &lt;model name&gt;\[, &lt;data container name&gt;\]);
+Application release 7.3 and later:
 
-ERFormatMappingTableLookup::lookupFormatMapping(\_referenceGroupControl, bankLCMiscChargeReportERModelName);
+    ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
 
-New code pattern and example:
+    ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
 
-ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(&lt;form control&gt;, &lt;model name&gt;\[, &lt;data container name&gt;\]).performFormLookup();
+### Run format mapping for data export task
 
-ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(\_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
+Before Application release 7.3:
 
-### 
+    ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+    ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
 
-### ‘Run format mapping for data export’ task
+Application release 7.3 and later:
 
-Old code pattern and example:
+    ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+    ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
 
-ERFormatMappingRun::constructByFormatMappingId(&lt;format mapping id&gt;, &lt;file name&gt;, &lt;show prompt dialog&gt;).run();
+### Run format mapping for data import task
 
-ERFormatMappingRun::constructByFormatMappingId(erBinding, '', **true**).run();
+Before Application release 7.3:
 
-New code pattern and example:
+    ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
+    ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 
-ERObjectsFactory::createFormatMappingRunByFormatMappingId(&lt;format mapping id&gt;, &lt;file name&gt;, &lt;show prompt dialog&gt;).run();
+Application release 7.3 and later:
 
-ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', **true**).run();
+    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
+    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 
-### ‘Run format mapping for data import’ task
+### Create browser file destination task
 
-Old code pattern and example:
+Before Application release 7.3:
 
-ERModelMappingDestinationRun::constructByImportFormatMappingId(&lt;mapping id&gt;, &lt;integration point&gt;).run();
+    new ERFileDestinationBrowser();
 
-ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+Application release 7.3 and later:
 
-New code pattern and example:
+    ERObjectsFactory::createFileDestinationBrowser();
 
-ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(&lt;mapping id&gt;, &lt;integration point&gt;).run();
+### Create an attachment file destination task
 
-ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+Before Application release 7.3:
 
-### 
+    ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
+    ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagement::instance().otherDocuType());
 
-### ‘Create browser file destination’ task
+Application release 7.3 and later:
 
-Old code pattern and example:
-
-**new** ERFileDestinationBrowser();
-
-New code pattern and example:
-
-ERObjectsFactory::createFileDestinationBrowser();
-
-### 
-
-### ‘Create an attachment file destination’ task
-
-Old code pattern and example:
-
-ERFileDestinationAttachment::construct(&lt;record&gt;, ERDocuManagement::instance().otherDocuType());
-
-ERFileDestinationAttachment::construct(\_cashRegisterFiscalTrans\_W, ERDocuManagement::instance().otherDocuType());
-
-New code pattern and example:
-
-ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(&lt;record&gt;);
-
-ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(\_cashRegisterFiscalTrans\_W);
+    ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
+    ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
