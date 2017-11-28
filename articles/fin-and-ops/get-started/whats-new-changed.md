@@ -68,7 +68,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>7.3</td>
 <td>xxx</td>
-<td>June 2017</td>
+<td>November 2017</td>
 <td><a href="xxx">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3</a></td>
 </tr></tr>
 <tr class="even">
