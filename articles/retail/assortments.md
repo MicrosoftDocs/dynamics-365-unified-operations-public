@@ -90,7 +90,7 @@ Second, the products and channels within the assortment can change outside of th
 ## Implementation Considerations
 Below are some things to consider as you plan and manage your assortments for your retail implementation.
 
-1.	**Data replication and database size** – While assortments help to serve to serve business need to manage product availability, they are also an important tool for managing channel and offline database size.  Well managed assortments help to reduce the amount of data that needs to processed and replicated to channel and offline database, and reduce the number of records that need to be persisted.  Fewer records in these databases will increase performance for adding items to a transaction, search, and product browsing scenarios.  
+1.	**Data replication and database size** – While assortments help to serve to serve the business need to manage product availability, they are also an important tool for managing channel and offline database size.  Well managed assortments help to reduce the amount of data that needs to processed and replicated to channel and offline databases, and reduce the number of records that need to be persisted.  Fewer records in these databases will increase performance when adding items to a transaction, searching, and product browsing scenarios.  
 
 2.	**Date effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments.  Leaving open ended (non-expiring) assortments for seasonal or products that are end of life will cause these databases to grow indefinitely.  One approach to help manage this is to keep separate assortments for seasonal products versus products that are always available.  
 
