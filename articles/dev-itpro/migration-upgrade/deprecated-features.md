@@ -152,18 +152,6 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Deployment option**              | All                                                                                    |
 | **Status**                         | Removed as of July 2017.                                                               |
 
-### Windows 8 tablet app
-
-The Windows 8 tablet app provided functionality for expense entry and approval.
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Finance and Operations is compatible with tablets. The tablet app is no longer required.    |
-| **Replaced by another feature?**   | No.          |
-| **Product areas affected**         | Expense management   |
-| **Deployment option**              | [All, Cloud only, or On-premises only]    |
-| **Status**                         | [Deprecated – Target timeframe for the functionality to be removed is \<month/year\> or \<quarter/year\> or \<release name\>. -OR- Removed as of \<release name\>.] |
-
 ## Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 
 ### AEB payment formats for Spain
@@ -959,6 +947,7 @@ Sites Services let you build websites that extend your business processes to the
 | **Product areas affected**         | Accounts payable |
 | **Status**                         | Removed as of Dynamics AX 7.0.    |
 
+
 ### Virtual company accounts
 
 The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
@@ -978,6 +967,17 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 | **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
 | **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing   |
 | **Status**                         | Removed as of 7.1     |
+
+### Windows 8 tablet app
+
+The Windows 8 tablet app provided functionality for expense entry and approval.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Finance and Operations is compatible with tablets. The tablet app is no longer required.    |
+| **Replaced by another feature?**   | No.          |
+| **Product areas affected**         | Expense management   |
+| **Status**                         | Removed: This functionality is only available for Dynamics AX 2012 R3. |
 
 ### Worker reminders in Human Resources
 
