@@ -46,6 +46,17 @@ previous releases mentioned in this topic supported cloud deployments only.
 
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
+### Control-based KPIs 
+Currently, applications rely on modeled controls to support key performance indicators (KPIs) used to track business metrics such as total revenue and gross profit margin.  The existing configuration forms in Finance and Operations used to define custom KPIs are being deprecated.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improved tooling for managing user defined KPIs will be provided by the embedded analytical services. |
+| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on analytical applications.  |
+| **Product areas affected**         | All  modules    |
+| **Deployment option**              | ?      |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.            |
+
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
 These two reports are no longer supported in Finance and Operations. Instead, the **Inventory aging** report can be used to improve the user experience.
@@ -59,12 +70,12 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
 
 ### Power BI content packs published to PowerBI.com
-The **Cost management**, **Financial performance**, and **Retail channel perforamnce** content packs, which were published to the PowerBI.com site, will be deprecated as a consequence of product updates in Microsoft Power BI.
+The **Cost management**, **Financial performance**, and **Retail channel perforamnce** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Product updates in Microsoft Power BI and Finance and Operations. |
-| **Replaced by another feature?**   | Power BI content packs, published to PowerBI.com, are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on Analytical Applications.  |
+| **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
+| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on analytical applications.  |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.    |
