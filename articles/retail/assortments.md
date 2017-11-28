@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 5
 # Managing Assortments
 ## Insights:
 Microsoft Dynamics 365 for Retail provides assortments to allow users to manage product availability across channels.  Assortments determine which products are available at which stores and during which time period.   
-In Dynamics 365 an assortment is a mapping of one or channels (or groups of channels, using org hierarchies) to one or more products (or groups of products, using category hierarchies).
+In Dynamics 365 an assortment is a mapping of one or more channels (or groups of channels, using org hierarchies) to one or more products (or groups of products, using category hierarchies).
 A channels overall product mix is determined by all published assortments that are assigned to the channel.  This means that users can configure multiple active assortments per channel.
 
 ### Basic assortment setup
@@ -96,4 +96,4 @@ Below are some things to consider as you plan and manage your assortments for yo
 
 3.	**Sales and returns outside of assortments** – This capability allows retailers to effectively manage their assortments to reduce the number of available products to those that are actually within the core product mix for the store.  It also helps to account for situations where a product was mistakenly not included in an assortent or if the product is being returned outside of the assortment effective dates.
 
-If product data does not exist in the channel database POS will make real time call to headquarters to retrive the necessary information, allowing the product to be sold, returned, or placed on a cusotmer order.  Product information retrived in this fashion is only availble during the scope of that transaction.  The product is not added to the assortment definition, therefore subsequent real time calls will be made as needed.
+If product data does not exist in the channel database POS will make real time call to headquarters to retrive the necessary information, allowing the product to be sold, returned, or placed on a cusotmer order.  Product information retrived in this fashion is only available during the scope of that transaction.  The product is not added to the assortment definition, therefore subsequent real time calls will be made as needed.
