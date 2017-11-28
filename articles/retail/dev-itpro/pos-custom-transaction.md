@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS custom columns and controls on transaction pages
-description: 
+description: This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2017
@@ -32,34 +32,32 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # POS custom columns and controls on transaction pages 
  
-## Add custom control to POS transaction grid
+This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer. You can add more information to the Retail POS transaction page by using custom controls. A custom control can be added to the transaction page by using the screen layout designer, by dragging and dropping the custom control and setting the location, height and width in the designer. Business logic for the custom control can be implemented in your own extensions using the POS extension framework.  
 
-This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
-You can add more information to the Retail POS transaction page by using custom controls. Custom control can be added to the transaction page by using the screen layout designer, from the screen layout designer you can drag and drop the custom control and define your own location, height and width by adjusting the custom control in the designer. Business logic for the custom control can be implemented in your own extensions using the POS extension framework.  
-
-## Add new custom control
-Let’s add custom control in POS transaction to show the selected line item details item id and description.
+## Add a new custom control
+The custom control in the POS transaction page will show the selected line item details, item id, and description.
 
 1.  Login to Dynamics 365 for Retail.
-2.  Navigate to Retail &gt; Channel setup &gt; POS setup &gt; POS &gt; Screen layouts
-3.  Select the F3MGR screen layout ID and click the Designer button in the action bar.
-4.  Select the 1440x960 – Full layout from the layout sizes and click the Layout designer button.
-5.  If prompted click Open and follow the instruction to install the designer tool.
-6.  After installing it will ask for AAD credentials, provide the details to launch the designer.
+2.  Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+3.  Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
+4.  Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
+5.  If prompted click **Open** and follow the instruction to install the designer tool.
+6.  When prompted for your AAD credentials, provide the details to launch the designer.
 7.  In the designer drag and drop the custom control from the left bar to the transaction page and adjust or resize or reposition the custom control accordingly.
-8.  Right click on the custom control in the transaction page and click customize
-9.  In the custom control window set the Control Name, Package name and Publisher name
-    - Control Name: lineDetails
-    - Package Name: Pos_Extensibility_Samples
-    - Publisher Name: Contoso
+8.  Right-click on the custom control in the transaction page and click **Customize**.
+9.  In the custom control window set these properties:
+    - **Control Name**: lineDetails
+    - **Package Name**: Pos_Extensibility_Samples
+    - **Publisher Name**: Contoso
 
     **Note:** These names should match the names in the extension manifest.
 
-10.  Click the X button in the designer to close the designer.
-11.  When prompted to Save changes, click Yes. If you click No the changes will not be saved.
-12.  Navigate to Retail &gt; Retail IT &gt; Distribution schedule
-13.  Select the Registers (1090) job and click Run now.
+10.  Click the **X** button in the designer to close the designer.
+11.  When prompted to **Save changes**, click **Yes**. If you click **No** the changes will not be saved.
+12.  Navigate to **Retail** > **Retail IT** > **Distribution schedule**.
+13.  Select the **Registers (1090)** job and click **Run now**.
 
 ## Add business logic to custom control
 
