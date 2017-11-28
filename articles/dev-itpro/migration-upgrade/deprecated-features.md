@@ -115,7 +115,6 @@ Users can download this from goverment portal.
 
 ### (IND) EXIM
 
-Lack of customer usage
 
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
