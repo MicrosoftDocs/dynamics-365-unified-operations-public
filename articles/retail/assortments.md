@@ -34,7 +34,7 @@ In Dynamics 365 an assortment is a mapping of one or channels (or groups of chan
 A channels overall product mix is determined by all published assortments that are assigned to the channel.  This means that users can configure multiple active assortments per channel.
 
 ### Basic assortment setup
-In the example below (Figure 1) a unique assortment is configured for each store.  In this case only “Product 1” is available in “Store 1” and only “Product 2” is available at “Store 2”.
+In the example below, (Figure 1) a unique assortment is configured for each store.  In this case only “Product 1” is available in “Store 1” and only “Product 2” is available at “Store 2”.
 
 ![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Figure 1")
 
