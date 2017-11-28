@@ -1,241 +1,180 @@
- **Add custom control to POS transaction grid:**
+---
+# required metadata
+
+title: POS custom columns and controls on transaction pages
+description: 
+author: mugunthanm
+manager: AnnBe
+ms.date: 11/22/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 24411
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mumani
+ms.search.validFrom: 2017-11-22
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
+---
+
+
+# POS custom columns and controls on transaction pages 
+ 
+## Add custom control to POS transaction grid
 
 This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
 
 You can add more information to the Retail POS transaction page by using custom controls. Custom control can be added to the transaction page by using the screen layout designer, from the screen layout designer you can drag and drop the custom control and define your own location, height and width by adjusting the custom control in the designer. Business logic for the custom control can be implemented in your own extensions using the POS extension framework.  
 
-Scenario/business problem
--------------------------
-
-<span id="_Toc446093285" class="anchor"></span>Let’s add custom control in POS transaction to show the selected line item details item id and description.
-
-Lab actions
------------
-
-**Add new custom control:**
+## Add new custom control
+Let’s add custom control in POS transaction to show the selected line item details item id and description.
 
 1.  Login to Dynamics 365 for Retail.
-
 2.  Navigate to Retail &gt; Channel setup &gt; POS setup &gt; POS &gt; Screen layouts
-
 3.  Select the F3MGR screen layout ID and click the Designer button in the action bar.
-
 4.  Select the 1440x960 – Full layout from the layout sizes and click the Layout designer button.
-
 5.  If prompted click Open and follow the instruction to install the designer tool.
-
 6.  After installing it will ask for AAD credentials, provide the details to launch the designer.
-
-7.  In the designer drag and drop the custom control from the left bar to the transaction page and adjust or resize or reposition the         custom control accordingly.
-
+7.  In the designer drag and drop the custom control from the left bar to the transaction page and adjust or resize or reposition the custom control accordingly.
 8.  Right click on the custom control in the transaction page and click customize
-
 9.  In the custom control window set the Control Name, Package name and Publisher name
+    - Control Name: lineDetails
+    - Package Name: Pos_Extensibility_Samples
+    - Publisher Name: Contoso
 
-    Control Name: lineDetails
-
-    Package Name: Pos_Extensibility_Samples
-
-    Publisher Name: Contoso
-
-**Note:** These names should match the names in the extension manifest.
+    **Note:** These names should match the names in the extension manifest.
 
 10.  Click the X button in the designer to close the designer.
-
 11.  When prompted to Save changes, click Yes. If you click No the changes will not be saved.
-
 12.  Navigate to Retail &gt; Retail IT &gt; Distribution schedule
-
 13.  Select the Registers (1090) job and click Run now.
 
- **Add business logic to custom control:**
-
-14.  Open visual studio 2015 in administrator mode.
-
-15.  Open ModernPOS solution from …\\RetailSDK\\POS
-
-16.  Under the POS.Extensions project create a new folder called CustomControlExtensions.
-
-17.  Under CustomControlExtensions, create new folder called Cart.
-
-18.  In the Cart folder, add a new ts (typescript) and name it has CartViewController.ts
-
-19.  Add the below import statement to import the relevant entities and context.
-
-```typescript
-import { ProxyEntities } from "PosApi/Entities";
-
-import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
-
-import * as CartView from "PosApi/Extend/Views/CartView";
-```
-20. Create a new class called CartViewController and extend it from CartExtensionViewControllerBase. We are extending from CartExtensionViewControllerBase class to get the cart tender lines or cart line selected or cleared handlers, so that we can show the selected line in our custom control.
-
- ```typescript
- export default class CartViewController extends CartView.CartExtensionViewControllerBase {
-
- }
- ```
-
-21.Inside the class add two private variables to get the selected cart line and tender lines.
-
-```typescript
-private _selectedCartLines: ProxyEntities.CartLine[];
-
-private _selectedTenderLines: ProxyEntities.TenderLine[];
-```
-
-22. Create a class constructor method to set the cart and tender selection information.
-
- ```typescript
- constructor(context: IExtensionCartViewControllerContext) {
-
- super(context);
-
- this.cartLineSelectedHandler = (data: CartView.CartLineSelectedData): void =&gt; {
-
- this._selectedCartLines = data.cartLines;
-
- };
-
- this.cartLineSelectionClearedHandler = (): void =&gt; {
-
- this._selectedCartLines = undefined;
-
- };
-
- this.tenderLineSelectedHandler = (data: CartView.TenderLineSelectedData): void =&gt; {
-
- this._selectedTenderLines = data.tenderLines;
-
- };
-
- this.tenderLineSelectionClearedHandler = (): void =&gt; {
-
- this._selectedCartLines = undefined;
-
- };
-
-}
-```typescript
-
-The overall class should look like below:
-
-```typescript
- /**
-
- * SAMPLE CODE NOTICE
-
- *
-
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
- */
-
- import { ProxyEntities } from "PosApi/Entities";
-
- import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
-
- import * as CartView from "PosApi/Extend/Views/CartView";
-
- export default class CartViewController extends CartView.CartExtensionViewControllerBase {
-
- private _selectedCartLines: ProxyEntities.CartLine[];
-
- private _selectedTenderLines: ProxyEntities.TenderLine[];
-
- /**
-
- * Creates a new instance of the CartViewController class.
-
- * @param {IExtensionCartViewControllerContext} context The events Handler context.
-
- * @remarks The events handler context contains APIs through which a handler can communicate with POS.
-
- */
-
- constructor(context: IExtensionCartViewControllerContext) {
-
- super(context);
-
- this.cartLineSelectedHandler = (data: CartView.CartLineSelectedData): void =&gt; {
-
- this._selectedCartLines = data.cartLines;
-
- };
-
- this.cartLineSelectionClearedHandler = (): void =&gt; {
-
- this._selectedCartLines = undefined;
-
- };
-
- this.tenderLineSelectedHandler = (data: CartView.TenderLineSelectedData): void =&gt; {
-
- this._selectedTenderLines = data.tenderLines;
-
- };
-
- this.tenderLineSelectionClearedHandler = (): void =&gt; {
-
- this._selectedCartLines = undefined;
-
- };
-
- }
-
- }
- ```
-
-23. Inside the Cart folder, create a new html file and name it as LineDetailsCustomControl.html
-
-24. In the html file we will add two text fields tow show the selected line item and description.
+## Add business logic to custom control
+
+1.  Open visual studio 2015 in administrator mode.
+1.  Open ModernPOS solution from …\\RetailSDK\\POS
+1.  Under the POS.Extensions project create a new folder called CustomControlExtensions.
+1.  Under CustomControlExtensions, create new folder called Cart.
+1.  In the Cart folder, add a new ts (typescript) and name it has CartViewController.ts
+1.  Add the below import statement to import the relevant entities and context.
+
+    ```typescript
+    import { ProxyEntities } from "PosApi/Entities";
+    import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
+    import * as CartView from "PosApi/Extend/Views/CartView";
+    ```
+1. Create a new class called CartViewController and extend it from CartExtensionViewControllerBase. We are extending from CartExtensionViewControllerBase class to get the cart tender lines or cart line selected or cleared handlers, so that we can show the selected line in our custom control.
+
+     ```typescript
+     export default class CartViewController extends CartView.CartExtensionViewControllerBase {
+    
+     }
+     ```
+
+1.Inside the class add two private variables to get the selected cart line and tender lines.
+
+    ```typescript
+    private _selectedCartLines: ProxyEntities.CartLine[];
+    
+    private _selectedTenderLines: ProxyEntities.TenderLine[];
+    ```
+
+1. Create a class constructor method to set the cart and tender selection information.
+
+    ```typescript
+    constructor(context: IExtensionCartViewControllerContext) {
+        super(context);
+        this.cartLineSelectedHandler = (data: CartView.CartLineSelectedData): void => {
+            this._selectedCartLines = data.cartLines;
+        };
+
+        this.cartLineSelectionClearedHandler = (): void => {
+            this._selectedCartLines = undefined;
+        };
+
+        this.tenderLineSelectedHandler = (data: CartView.TenderLineSelectedData): void => {
+            this._selectedTenderLines = data.tenderLines;
+        };
+
+        this.tenderLineSelectionClearedHandler = (): void => {
+            this._selectedCartLines = undefined;
+        };
+    }
+    ```typescript
+
+    The overall class should look like below:
+
+    ```typescript
+    import { ProxyEntities } from "PosApi/Entities";
+    import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
+    import * as CartView from "PosApi/Extend/Views/CartView";
+    
+    export default class CartViewController extends CartView.CartExtensionViewControllerBase {
+        private _selectedCartLines: ProxyEntities.CartLine[];
+        private _selectedTenderLines: ProxyEntities.TenderLine[];
+
+        /**
+        * Creates a new instance of the CartViewController class.
+        * @param {IExtensionCartViewControllerContext} context The events Handler context.
+        * @remarks The events handler context contains APIs through which a handler can communicate with POS.
+        */
+        constructor(context: IExtensionCartViewControllerContext) {
+            super(context);
+            this.cartLineSelectedHandler = (data: CartView.CartLineSelectedData): void => {
+                this._selectedCartLines = data.cartLines;
+            };
+
+            this.cartLineSelectionClearedHandler = (): void => {
+                this._selectedCartLines = undefined;
+            };
+
+            this.tenderLineSelectedHandler = (data: CartView.TenderLineSelectedData): void => {
+                this._selectedTenderLines = data.tenderLines;
+            };
+
+            this.tenderLineSelectionClearedHandler = (): void => {
+                this._selectedCartLines = undefined;
+            };
+        }
+    }
+    ```
+
+1. Inside the Cart folder, create a new html file and name it as LineDetailsCustomControl.html
+1. In the html file we will add two text fields tow show the selected line item and description.
 
     Delete the default code and copy paste the below sample code:
 
  ```typescript
  <!DOCTYPE html>
-
  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
  <head>
-
  <meta charset="utf-8" />
-
  <title></title>
-
  </head>
-
  <body>
-
  <!-- Note: The element id is different than the id generated by the POS extensibility framework. This 'template' id is not used by the POS extensibility framework. -->
-
  <script id="Microsot_Pos_Extensibility_Samples_LineDetails" type="text/html">
-
  <!-- ko ifnot: isCartLineSelected -->
-
  <h4>No cart lines selected</h4>
-
  <!-- /ko -->
-
  <!-- ko if: isCartLineSelected -->
-
   <h4 data-bind="text: cartLineItemId">Item ID</h4>
-
  <h4 data-bind="text: cartLineDescription">Item ID</h4>
-
 <!-- /ko -->;
-
 </script>
-
 </body>
-
 </html>
 ```
 
@@ -613,37 +552,5 @@ The overall class should look like below:
 4.  The custom should display the selected line item id and description.
 
 
----
-# required metadata
 
-title: POS custom columns and controls on transaction pages
-description: 
-author: mugunthanm
-manager: AnnBe
-ms.date: 11/22/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-retail
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-# ms.tgt_pltfrm: 
-ms.custom: 24411
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
-ms.search.validFrom: 2017-11-22
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
----
-
-
-# POS custom columns and controls on transaction pages
 
