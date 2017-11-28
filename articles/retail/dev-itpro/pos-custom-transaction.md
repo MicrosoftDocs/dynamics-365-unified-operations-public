@@ -69,30 +69,24 @@ Let’s add custom control in POS transaction to show the selected line item det
 1.  Under CustomControlExtensions, create new folder called Cart.
 1.  In the Cart folder, add a new ts (typescript) and name it has CartViewController.ts
 1.  Add the below import statement to import the relevant entities and context.
-
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
     import * as CartView from "PosApi/Extend/Views/CartView";
     ```
 1. Create a new class called CartViewController and extend it from CartExtensionViewControllerBase. We are extending from CartExtensionViewControllerBase class to get the cart tender lines or cart line selected or cleared handlers, so that we can show the selected line in our custom control.
-
      ```typescript
      export default class CartViewController extends CartView.CartExtensionViewControllerBase {
     
      }
      ```
-
-1.Inside the class add two private variables to get the selected cart line and tender lines.
-
+1. Inside the class add two private variables to get the selected cart line and tender lines.
     ```typescript
     private _selectedCartLines: ProxyEntities.CartLine[];
     
     private _selectedTenderLines: ProxyEntities.TenderLine[];
     ```
-
 1. Create a class constructor method to set the cart and tender selection information.
-
     ```typescript
     constructor(context: IExtensionCartViewControllerContext) {
         super(context);
@@ -112,10 +106,8 @@ Let’s add custom control in POS transaction to show the selected line item det
             this._selectedCartLines = undefined;
         };
     }
-    ```typescript
-
+    ```
     The overall class should look like below:
-
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
@@ -181,7 +173,6 @@ Let’s add custom control in POS transaction to show the selected line item det
 1. Inside the Cart folder, create a new ts file and name it as LineDetailsCustomControl.ts
 1. In the ts file we will add the logic to bind the line details information.
 1. Import the POS entities and Type extensions to use the reference type in the constructor and other events.
-
     ```typescript
     import {
         ObjectExtensions,
@@ -190,15 +181,11 @@ Let’s add custom control in POS transaction to show the selected line item det
     } from "PosApi/TypeExtensions";
     import { ProxyEntities } from "PosApi/Entities";
 ```
-
 1. Create a new class and extend it from CartViewCustomControlBase.
-
     ```typescript
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {}
     ```
-
 1. Declare the below private variables to set the cart item id and description.
-
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
     public readonly cartLineItemId: Computed&lt;string&gt;;
@@ -207,9 +194,7 @@ Let’s add custom control in POS transaction to show the selected line item det
     private readonly _cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
     private _state: ICartViewCustomControlState;
     ```
-
 1. Create the constructor method to initialize the and get the selected handler.
-
     ```typescript
     constructor(id: string, context: ICartViewCustomControlContext) {
         super(id, context);
@@ -242,9 +227,7 @@ Let’s add custom control in POS transaction to show the selected line item det
         };
     }
     ```
-
 1. Add the onReady method to bind the control to the specified html element.
-
     ```typescript
     public onReady(element: HTMLElement): void {
         ko.applyBindingsToNode(element, {
@@ -255,17 +238,13 @@ Let’s add custom control in POS transaction to show the selected line item det
         });
     }
     ```
-
 1. Add the init method to set the state.
-
     ```typescript
     public init(state: ICartViewCustomControlState): void {
         this._state = state;
     }
     ```
-
     The overall class should look like below:
-
     ```typescript
     import {
         CartViewCustomControlBase,
@@ -346,7 +325,6 @@ Let’s add custom control in POS transaction to show the selected line item det
     ```
 1. Create a new json file and under the CustomControlExtensions folder and name it as manifest.json.
 1. In the manifest.json file, copy and paste the below code:
-
     ```typescript
     {
         "$schema": "../manifestSchema.json",
@@ -374,7 +352,6 @@ Let’s add custom control in POS transaction to show the selected line item det
         } 
     }
     ```
-
 1. Open the extensions.json file under POS.Extensions project and update it with CustomControlExtensions samples, so that POS during runtime will include this extension.
     ```typescript
     {
@@ -388,8 +365,7 @@ Let’s add custom control in POS transaction to show the selected line item det
         ]
     }
     ```
-36. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
-
+1. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
     ```typescript
     "exclude": [
         "SampleExtensions"
@@ -397,7 +373,6 @@ Let’s add custom control in POS transaction to show the selected line item det
         //"CustomControlExtensions"
     ],
     ```
-
 1. Compile and rebuild the project.
 
 ## Validate the customization
