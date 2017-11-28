@@ -156,7 +156,7 @@ A matching rule was used to select and mark a bank document when documents were 
 
 ### AEB payment formats for Spain
 
-The Consejo Superior Bancario payment formats are used to send remittance files to the bank for customer payments and vendor payments. The content of these formats is determined by the Asociación Española de Banca. It covers Cuaderno 19, 32, 58, 34.
+The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments. The content of these formats was determined by the Asociación Española de Banca. It covers Cuaderno 19, 32, 58, 34.
 
 |   |  |
 |------------|--------------------|
@@ -167,7 +167,7 @@ The Consejo Superior Bancario payment formats are used to send remittance files 
 
 ### Bank payments transfer for Lithuania
 
-Bank payment transfers are generated and printed by using the Payment transfer (LT) export format for Lithuania. The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.
+Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania. The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.
 
 |   |  |
 |------------|--------------------|
