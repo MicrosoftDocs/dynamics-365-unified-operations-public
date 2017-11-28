@@ -69,9 +69,7 @@ Assortments are defined at a global level and can contain channels from multiple
 ### Dynamic and static assortments
 Assortments can be defined with specific channels and products or by including organization units and categories.  Assortments including references to these groups are considered dynamic assortments.  If the definition or contents of those groups change while the assortment is active, the definition of the assortment also changes.
 
-For example, an assortment is initially defined and published by referencing a category of products.  If additional products are subsequently added to the category, they are automatically included in the existing assortment.  The user does not need to manually these products to the assortment.
-
-Similarly, if a channels organizational unit is added to different node, its assortment would automatically be adjusted based on that definition.
+For example, an assortment is initially defined and published by referencing a category of products.  If additional products are subsequently added to the category, they are automatically included in the definition of the existing assortment.  The user does not need to manually add these products to the assortment.  Similarly, if a channels organizational unit is added to different node, its assortment would automatically be adjusted based on that definition.
 
 ### Stopped products 
 Released products can be “stopped” for the sales process by enabling the option in the “Default order settings”.  This setting is most used when a product is end of life and should not be sold at any channel.  Assortments will respect this setting and stopped products will not be assorted, regardless of the assortment configuration.
