@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # How to extend existing POS views to add custom columns and app bar buttons
 
-This topic explains how you can extend existing POS views such as the Customer Add/Edit screen. The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using Retail SDK.
+This topic explains how you can extend existing POS views such as the Customer Add/Edit screen. The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using the Retail SDK.
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
@@ -217,7 +217,7 @@ We are adding support for more extension points in others views in the upcoming 
         };
     }
     ```
-22. Add the init method to initialize the visible property:
+22. Add the **init** method to initialize the visible property:
     ```Typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
         this.isVisible = true;
