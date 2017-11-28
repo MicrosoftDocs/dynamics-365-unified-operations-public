@@ -58,6 +58,17 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Deployment option**        | All|
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
 
+### Power BI content packs published to PowerBI.com
+The **Cost management**, **Financial performance**, and **Retail channel perforamnce** content packs, which were published to the PowerBI.com site, will be deprecated as a consequence of product updates in Microsoft Power BI.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Product updates in Microsoft Power BI and Finance and Operations. |
+| **Replaced by another feature?**   | Power BI content packs, published to PowerBI.com, are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on Analytical Applications.  |
+| **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
+| **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
+| **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.    |
+
 ### Standard UI in data management workspace
 
 The standard UI in data management is the legacy UI which is the default UI presented to the users when they visit the data management workspace.
@@ -70,17 +81,6 @@ The standard UI in data management is the legacy UI which is the default UI pres
 | **Deployment option**              | All                                                                           |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
 
-### Cost management content pack
-
-The Cost management content pack for Power BI was intended for inventory accountants or individuals in the organization who are responsible for inventory.
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | The Cost management content pack will be deprecated as a consequence of product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | A mitigation is being investigated. Please see the official announcement for the feature on the roadmap site.  |
-| **Product areas affected**         | Cost management                                                                                                |
-| **Deployment option**              | All                                                                                                            |
-| **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.                                      |
 
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8
 
