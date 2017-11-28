@@ -50,7 +50,7 @@ The three main planning processes are:
 
 -  [Forecast planning](introduction-demand-forecasting) - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity.
 
--  Intercompany master planning - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply.
+-  [Intercompany Master Planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account) - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply.
 
 Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
 
@@ -67,7 +67,7 @@ The following learning map shows the major concepts and tasks that make up the f
 |------|---|
 |        [Master plans](master-plans.md)       |     [Generate a constrained plan](./tasks/constrained-plan.md)  |
 | [Create a material plan for co-products](./tasks/create-material-plan-co-products.md)   |  [Master planning and multisite functionality](master-plan-multisite-functionality.md)  |
-| [Create an intercompany plan](create-intercompany-plan.md) | [Demand forecasting overview](introduction-demand-forecasting.md)  | 
+| [Create an intercompany plan](./tasks/create-intercompany-plan.md) | [Demand forecasting overview](introduction-demand-forecasting.md)  | 
 |[Reduction keys](reduction-keys.md)| [Master planning essentials](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (requires CustomerSource account)     |
 |  [Master Planning for Process Manufacturing](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (requires CustomerSource account) | [Intercompany Master Planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account)|
                                   
