@@ -59,20 +59,20 @@ The custom control in the POS transaction page will show the selected line item 
 12.  Navigate to **Retail** > **Retail IT** > **Distribution schedule**.
 13.  Select the **Registers (1090)** job and click **Run now**.
 
-## Add business logic to custom control
+## Add business logic to the custom control
 
-1.  Open visual studio 2015 in administrator mode.
-1.  Open ModernPOS solution from …\\RetailSDK\\POS
-1.  Under the POS.Extensions project create a new folder called CustomControlExtensions.
-1.  Under CustomControlExtensions, create new folder called Cart.
-1.  In the Cart folder, add a new ts (typescript) and name it has CartViewController.ts
-1.  Add the below import statement to import the relevant entities and context.
+1.  Open Visual Studio 2015 in administrator mode.
+1.  Open **ModernPOS** solution from **…\\RetailSDK\\POS**.
+1.  Under the **POS.Extensions** project create a new folder named **CustomControlExtensions**.
+1.  Under **CustomControlExtensions**, create a new folder named **Cart**.
+1.  In the **Cart** folder, add a new Typescript) and name it **CartViewController.ts**.
+1.  Add the following **import** statement to import the relevant entities and context.
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
     import * as CartView from "PosApi/Extend/Views/CartView";
     ```
-1. Create a new class called CartViewController and extend it from CartExtensionViewControllerBase. We are extending from CartExtensionViewControllerBase class to get the cart tender lines or cart line selected or cleared handlers, so that we can show the selected line in our custom control.
+1. Create a new class named **CartViewController**f and extend it from **CartExtensionViewControllerBase**. The  **CartExtensionViewControllerBase** class contains the cart tender lines, the cart line selected handler, and the cart line cleared handler. With these, you can show the selected line in our custom control.
      ```typescript
      export default class CartViewController extends CartView.CartExtensionViewControllerBase {
     
@@ -141,10 +141,8 @@ The custom control in the POS transaction page will show the selected line item 
     }
     ```
 
-1. Inside the Cart folder, create a new html file and name it as LineDetailsCustomControl.html
-1. In the html file we will add two text fields tow show the selected line item and description.
-
-    Delete the default code and copy paste the below sample code:
+1. Inside the **Cart** folder, create a new html file and name it **LineDetailsCustomControl.html**.
+1. In the html file, add two text fields to display the selected line item and description. Delete the default code and add the following code:
 
     ```typescript
     <!DOCTYPE html>
@@ -168,8 +166,8 @@ The custom control in the POS transaction page will show the selected line item 
         </html>
         ```
 
-1. Inside the Cart folder, create a new ts file and name it as LineDetailsCustomControl.ts
-1. In the ts file we will add the logic to bind the line details information.
+1. Inside the **Cart** folder, create a new Typescript file and name it **LineDetailsCustomControl.ts**.
+1. In the Typescript file, add the logic to bind the line details information.
 1. Import the POS entities and Type extensions to use the reference type in the constructor and other events.
     ```typescript
     import {
@@ -179,11 +177,11 @@ The custom control in the POS transaction page will show the selected line item 
     } from "PosApi/TypeExtensions";
     import { ProxyEntities } from "PosApi/Entities";
     ```
-1. Create a new class and extend it from CartViewCustomControlBase.
+1. Create a new class and extend it from **CartViewCustomControlBase**.
     ```typescript
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {}
     ```
-1. Declare the below private variables to set the cart item id and description.
+1. Declare the following private variables to set the cart item id and description.
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
     public readonly cartLineItemId: Computed&lt;string&gt;;
@@ -192,7 +190,7 @@ The custom control in the POS transaction page will show the selected line item 
     private readonly _cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
     private _state: ICartViewCustomControlState;
     ```
-1. Create the constructor method to initialize the and get the selected handler.
+1. Create the constructor method to initialize and get the selected handler.
     ```typescript
     constructor(id: string, context: ICartViewCustomControlContext) {
         super(id, context);
@@ -225,7 +223,7 @@ The custom control in the POS transaction page will show the selected line item 
         };
     }
     ```
-1. Add the onReady method to bind the control to the specified html element.
+1. Add the **onReady** method to bind the control to the specified html element.
     ```typescript
     public onReady(element: HTMLElement): void {
         ko.applyBindingsToNode(element, {
@@ -236,7 +234,7 @@ The custom control in the POS transaction page will show the selected line item 
         });
     }
     ```
-1. Add the init method to set the state.
+1. Add the **init** method to set the state.
     ```typescript
     public init(state: ICartViewCustomControlState): void {
         this._state = state;
@@ -321,8 +319,8 @@ The custom control in the POS transaction page will show the selected line item 
         }
     }
     ```
-1. Create a new json file and under the CustomControlExtensions folder and name it as manifest.json.
-1. In the manifest.json file, copy and paste the below code:
+1. Create a new JSON file and under the **CustomControlExtensions** folder and name it **manifest.json**.
+1. In the **manifest.json** file, add the following code:
     ```typescript
     {
         "$schema": "../manifestSchema.json",
@@ -350,7 +348,7 @@ The custom control in the POS transaction page will show the selected line item 
         } 
     }
     ```
-1. Open the extensions.json file under POS.Extensions project and update it with CustomControlExtensions samples, so that POS during runtime will include this extension.
+1. Open the **extensions.json** file under the **POS.Extensions** project and update it with the following **CustomControlExtensions** samples, so that POS during runtime will include this extension.
     ```typescript
     {
         "extensionPackages": [
@@ -363,7 +361,7 @@ The custom control in the POS transaction page will show the selected line item 
         ]
     }
     ```
-1. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+1. In **tsconfig.json**, comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
     ```typescript
     "exclude": [
         "SampleExtensions"
@@ -375,11 +373,7 @@ The custom control in the POS transaction page will show the selected line item 
 
 ## Validate the customization
 
-1.  Login to MPOS using 000160 as operator id and 123 as password.
-2.  Click the current transaction button on the welcome screen
-3.  Add any item (0005) to transaction and select the line item added.
+1.  Login to MPOS using **000160** as the operator id and **123** as the password.
+2.  Click the current transaction button on the welcome screen.
+3.  Add any item to the transaction and select the line item added.
 4.  The custom should display the selected line item id and description.
-
-
-
-
