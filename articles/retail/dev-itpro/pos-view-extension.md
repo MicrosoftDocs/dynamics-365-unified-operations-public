@@ -138,19 +138,19 @@ Let’s add custom column and App bar in POS customer search screen.
         "_string_7.comment" : "Customer search column name."
     }
     ```
-12. In the SearchExtension folder add a new folder called DialogSample
-13. In the DialogSample folder, add a new ts (typescript) file and name it has MessageDialog.ts
-14. Add the below import statement to import the relevant entities and context.
-```Typescript
- import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
- import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
- import { ClientEntities } from "PosApi/Entities";
-```
-15. Create a new class called MessageDialog
+12. In the **SearchExtension** folder add a new folder called **DialogSample**.
+13. In the **DialogSample** folder, add a new Typescript file and name it **MessageDialog.ts**.
+14. Add the following import statements to import the relevant entities and context.
+    ```Typescript
+    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
+    import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
+    import { ClientEntities } from "PosApi/Entities";
+    ```
+15. Create a new class called **MessageDialog**
     ```Typescript
     export default class MessageDialog {}
     ```
-16. Inside the class add a new show method like below:
+16. Inside the class, add the follow **show** method.
     ```Typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
         let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
@@ -186,202 +186,108 @@ Let’s add custom column and App bar in POS customer search screen.
         return promise;
     }
     ```
-Let’s add custom app bar button in search view to show a dialog with selected customer info:
-
-17. In the ViewExtensions folder, add a new ts (typescript) file and name it has ViewCustomerSummaryCommand.ts
-
-18. Add the below import statement to import the relevant entities and context.
-```Typescript
- import { ProxyEntities } from "PosApi/Entities";
-
- import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
-
- import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
-
- import * as SearchView from "PosApi/Extend/Views/SearchView";
-
-import MessageDialog from "../DialogSample/MessageDialog";
-```
-19. Create a new class called ViewCustomerSummaryCommand and extend it from CustomerSearchExtensionCommandBase
-
- export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
-
-20. Inside the class declare private variable to capture the selected customer search results
-```Typescript
+17. Add custom app bar button in search view to show a dialog with selected customer info. In the **ViewExtensions** folder, add a new Typescript file and name it **ViewCustomerSummaryCommand.ts**.
+18. Add the following import statements to import the relevant entities and context.
+    ```Typescript
+    import { ProxyEntities } from "PosApi/Entities";
+    import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
+    import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
+    import * as SearchView from "PosApi/Extend/Views/SearchView";
+    import MessageDialog from "../DialogSample/MessageDialog";
+    ```
+19. Create a new class named **ViewCustomerSummaryCommand** and extend it from **CustomerSearchExtensionCommandBase**.
+    ```Typescript
+    export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
+    ```
+20. Inside the class declare a private variable to capture the selected customer search results.
+    ```Typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
-```
-21. Add the class constructor method to initialize and clear the search handler:
-```Typescript
- constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
-
- super(context);
-
- this.id = "viewCustomerSummaryCommand";
-
- this.label = context.resources.getString("string_1");
-
- this.extraClass = "iconLightningBolt";
-
- this._customerSearchResults = [];
-
- this.searchResultsSelectedHandler = (data: SearchView.CustomerSearchSearchResultSelectedData): void => {
-
- this._customerSearchResults = data.customers;
-
- this.canExecute = true;
-
- };
-
- this.searchResultSelectionClearedHandler = (): void => {
-
- this._customerSearchResults = [];
-
- this.canExecute = false;
-
- };
-
-}
-```
-22. Add the init method to initialize the visible property:
-```Typescript
-    protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
-
-    this.isVisible = true;
-
+    ```
+21. Add the class constructor method to initialize and clear the search handler.
+    ```Typescript
+    constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
+        super(context);
+        this.id = "viewCustomerSummaryCommand";
+        this.label = context.resources.getString("string_1");
+        this.extraClass = "iconLightningBolt";
+        this._customerSearchResults = [];
+        this.searchResultsSelectedHandler = (data: SearchView.CustomerSearchSearchResultSelectedData): void => {
+            this._customerSearchResults = data.customers;
+            this.canExecute = true;
+        };
+        this.searchResultSelectionClearedHandler = (): void => {
+            this._customerSearchResults = [];
+            this.canExecute = false;
+        };
     }
-```
+    ```
+22. Add the init method to initialize the visible property:
+    ```Typescript
+    protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
+        this.isVisible = true;
+    }
+    ```
 23. Add the execute method to handle the app button click handler, we will read the selected customer data from the handler and show it       in a simple dialog.
 ```Typescript
 protected execute(): void {
-
- let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
-
+let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
 if (!ObjectExtensions.isNullOrUndefined(customer)) {
-
- let message: string = "Customer Account: " + (customer.AccountNumber || "") + " | ";
-
+let message: string = "Customer Account: " + (customer.AccountNumber || "") + " | ";
 message += "Name: " + customer.FullName + " | ";
-
 message += "Phone Number: " + customer.Phone + " | ";
-
 message += "Email Address: " + customer.Email;
-
 MessageDialog.show(this.context, message);
-
 } }
 ```
 The overall code should look like below:
 ```Typescript
- /**
-
- * SAMPLE CODE NOTICE
-
- *
-
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
- */
-
  import { ProxyEntities } from "PosApi/Entities";
-
  import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
-
  import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
-
  import * as SearchView from "PosApi/Extend/Views/SearchView";
-
  import MessageDialog from "../../DialogSample/MessageDialog";
-
  export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {
-
  private _customerSearchResults: ProxyEntities.GlobalCustomer[];
-
  /**
-
  * Creates a new instance of the ViewCustomerSummaryCommand class.
-
  * @param {IExtensionCommandContext<CustomerDetailsView.ICustomerSearchToExtensionCommandMessageTypeMap>} context The command context.
-
  * @remarks The command context contains APIs through which a command can communicate with POS.
-
  */
-
  constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
-
  super(context);
-
  this.id = "viewCustomerSummaryCommand";
-
  this.label = context.resources.getString("string_1");
-
  this.extraClass = "iconLightningBolt";
-
  this._customerSearchResults = [];
-
  this.searchResultsSelectedHandler = (data: SearchView.CustomerSearchSearchResultSelectedData): void => {
-
  this._customerSearchResults = data.customers;
-
  this.canExecute = true;
-
  };
-
  this.searchResultSelectionClearedHandler = (): void => {
-
  this._customerSearchResults = [];
-
  this.canExecute = false;
-
  };
-
  }
-
  /**
-
 * Initializes the command.
-
  * @param {CustomerDetailsView.ICustomerDetailsExtensionCommandState} state The state used to initialize the command.
-
  */
-
  protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
-
  this.isVisible = true;
-
  }
-
  /**
-
  * Executes the command.
-
  */
-
  protected execute(): void {
-
  let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
-
  if (!ObjectExtensions.isNullOrUndefined(customer)) {
-
  let message: string = "Customer Account: " + (customer.AccountNumber || "") + " | ";
-
  message += "Name: " + customer.FullName + " | ";
-
  message += "Phone Number: " + customer.Phone + " | ";
-
  message += "Email Address: " + customer.Email;
-
  MessageDialog.show(this.context, message);
-
  }
-
  }
-
  }
 ```
 24. Create a new json file and under the SearchExtension folder and name it as manifest.json.
@@ -389,72 +295,45 @@ The overall code should look like below:
 25. In the manifest.json file, copy and paste the below code:
 ```Typescript
  {
-
  "$schema": "../manifestSchema.json",
-
  "name": "Pos_Extensibility_Samples",
-
  "publisher": "Microsoft",
-
  "version": "7.2.0",
-
  "minimumPosVersion": "7.2.0.0",
-
  "components": {
-
  "resources": {
-
  "supportedUICultures": [ "en-US" ],
-
  "fallbackUICulture": "en-US",
-
  "culturesDirectoryPath": "Resources/Strings ",
-
  "stringResourcesFileName": "resources.resjson",
-
  "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
-
  },
-
  "extend": {
-
  "views": {
-
  "SearchView": {
-
  "customerAppBarCommands": [ { "modulePath": "ViewExtensions/Search/ViewCustomerSummaryCommand" } ],
-
  "customerListConfiguration": { "modulePath": "ViewExtensions/Search/CustomCustomerSearchColumns" }
-
  }  }   }   }  }
 ```
 26. Open the extensions.json file under POS.Extensions project and update it with SearchExtension samples, so that POS during runtime will include this extension.
 ```Typescript
  {
-
  "extensionPackages": [
-
   {
-      "baseUrl": "SampleExtensions2"
+     "baseUrl": "SampleExtensions2"
     },
     {
       "baseUrl": "SearchExtension"
     }
  ]
-
 }
 ```
 27. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
 ```Typescript
  "exclude": [
-
  "SampleExtensions"
-
 //"SampleExtensions2",
-
 //"SearchExtension"
-
-
 ],
 ```
 28. Compile and rebuild the project.
@@ -462,11 +341,8 @@ The overall code should look like below:
  **Validate the customization:**
 
 29. Login to MPOS using 000160 as operator id and 123 as password.
-
 30. Search for customer 2001 using the search bar on the top.
-
 31. You should see the custom columns added.
-
 32. Click the new app bar button added after selecting a customer. It should open up a dialog with the selected customer details.
 
 
