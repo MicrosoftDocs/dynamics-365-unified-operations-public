@@ -57,7 +57,7 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
 
 ### Power BI content packs published to PowerBI.com
-The **Cost management**, **Financial performance**, and **Retail channel perforamnce** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
+The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
 
 |   |  |
 |------------|--------------------|
