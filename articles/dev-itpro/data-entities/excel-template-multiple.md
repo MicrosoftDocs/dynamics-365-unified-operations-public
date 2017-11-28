@@ -39,6 +39,6 @@ Let’s take an example where there is one excel file with two worksheets called
 
 Now, if the second entity ‘Warehouses’ is also added without exiting the ‘add file’ form, the worksheet look-up will allow to select the ‘Warehouses’ worksheet without having to upload the file again. The only reason to upload a new file will be if the ‘Warehouses’ data was in a different file.
 
-![Multiple workseets](../media/AddFileMultipleWorkSheets.png) 
+![Multiple workseets](./media/AddFileMultipleWorkSheets.png) 
 
 [!include[banner](../includes/banner.md)]
