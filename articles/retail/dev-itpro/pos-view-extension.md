@@ -240,7 +240,8 @@ Let’s add custom column and App bar in POS customer search screen.
         } 
     }
     ```
-The overall code should look like below:
+The whole code sample is:
+
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
