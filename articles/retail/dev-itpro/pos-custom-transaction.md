@@ -180,7 +180,7 @@ Let’s add custom control in POS transaction to show the selected line item det
         ArrayExtensions
     } from "PosApi/TypeExtensions";
     import { ProxyEntities } from "PosApi/Entities";
-```
+    ```
 1. Create a new class and extend it from CartViewCustomControlBase.
     ```typescript
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {}
