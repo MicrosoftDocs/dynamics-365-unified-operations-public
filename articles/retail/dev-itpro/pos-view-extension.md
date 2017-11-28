@@ -31,21 +31,21 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # How to extend existing POS views to add custom columns and app bar buttons
 
-This topic explains how you can extend existing POS views such as the Customer Add edit screen. This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+This topic explains how you can extend existing POS views such as the Customer Add/Edit screen. The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using Retail SDK.
 
-The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using Retail SDK.
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
 The extension points and patterns supported by POS views are:
 
-- Custom app bar buttons: Add custom buttons to the App Bar on select pages
-- Custom column sets: Replace the grid columns with a custom column set on select pages
-- Custom controls: Add new control to selected pages
+- Custom app bar buttons: Add custom buttons to the app bar on selected pages
+- Custom column sets: Replace the grid columns with custom columns on selected pages
+- Custom controls: Add new controls to selected pages
 
 ## POS views supported currently for extensions
 
 We are adding support for more extension points in others views in the upcoming releases and hotfix.
 
-| POS Views                      | Custom control | Custom columns | Custom App bar buttons |
+| POS Views                      | Custom control | Custom columns | Custom app bar buttons |
 |---------------------------------|----------------|----------------|------------------------|
 | Cart view (Screen layout based) | Yes            | Yes            | No                     |
 | CustomerAddEditView             | Yes            |                | Yes                    |
@@ -59,15 +59,11 @@ We are adding support for more extension points in others views in the upcoming 
 | PriceCheckView                  | Yes            |                |                        |
 | SearchOrdersView                |                | Yes            |                        |
 
-## Scenario
-
-Let’s add custom column and App bar in POS customer search screen.
-
-**Add new custom column and App bar button:**
+## Add a custom column and an app bar button
 
 1.  Open Visual Studio 2015 in administrator mode.
-2.  Open the **ModernPOS** solution from …\\RetailSDK\\POS
-3.  Under the POS.Extensions project create a new folder called **SearchExtension**.
+2.  Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3.  Under the **POS.Extensions** project create a new folder called **SearchExtension**.
 4.  Under **SearchExtension**, create new folder called **ViewExtensions**.
 5.  Under **ViewExtensions**, create new folder called **Search**.
 6.  In the **Search** folder, add a new Typescript file and name it **CustomCustomerSearchColumns.ts**.
@@ -77,47 +73,47 @@ Let’s add custom column and App bar in POS customer search screen.
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
     import { ProxyEntities } from "PosApi/Entities";
     ```
-8.  Add the existing column plus the custom column to ts file.
+8.  Add the existing column plus the custom column to Typescript file.
     ```Typescript
     export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
         return [
-    {
-        title: context.resources.getString("string_2"),
-        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.AccountNumber; },
-        ratio: 15,
-        collapseOrder: 5,
-        minWidth: 120
-     }, {
-        title: context.resources.getString("string_3"),
-        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullName; },
-        ratio: 20,
-        collapseOrder: 4,
-        minWidth: 200
-    }, {
-        title: context.resources.getString("string_4"),
-        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullAddress; },
-        ratio: 25,
-        collapseOrder: 1,
-        minWidth: 200
-    }, {
-        title: context.resources.getString("string_5"),
-        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Email; },
-        ratio: 20,
-        collapseOrder: 2,
-        minWidth: 200
-    }, {
-        title: context.resources.getString("string_7"),
-        computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Phone; },
-        ratio: 20,
-        collapseOrder: 3,
-        minWidth: 120
-    }
-    ];
+            {
+                title: context.resources.getString("string_2"),
+                computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.AccountNumber; },
+                ratio: 15,
+                collapseOrder: 5,
+                minWidth: 120
+             }, {
+                title: context.resources.getString("string_3"),
+                computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullName; },
+                ratio: 20,
+                collapseOrder: 4,
+                minWidth: 200
+            }, {
+                title: context.resources.getString("string_4"),
+                computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.FullAddress; },
+                ratio: 25,
+                collapseOrder: 1,
+                minWidth: 200
+            }, {
+                title: context.resources.getString("string_5"),
+                computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Email; },
+                ratio: 20,
+                collapseOrder: 2,
+                minWidth: 200
+            }, {
+                title: context.resources.getString("string_7"),
+                computeValue: (row: ProxyEntities.GlobalCustomer): string => { return row.Phone; },
+                ratio: 20,
+                collapseOrder: 3,
+                minWidth: 120
+            }
+        ];
     };
     ```
 9. To add the resource file for the column name **localization**, create a new folder named **Resources** under **SearchExtension**.
-10. Inside the **Resources** folder add a new folder named **Strings** and inside that create one more folder named **en-US**.
-11. Create a new file inside named **resources.resjson** file and add the following code:
+10. Inside the **Resources** folder add a new folder named **Strings**. Inside the **Strings** folder add a folder named **en-US**.
+11. In the **en-us** folder, create a new file named **resources.resjson** file. Add the following code:
     ```Typescript
     {
         //======================== Sample View extensions strings. ========================
@@ -138,19 +134,19 @@ Let’s add custom column and App bar in POS customer search screen.
         "_string_7.comment" : "Customer search column name."
     }
     ```
-12. In the **SearchExtension** folder add a new folder called **DialogSample**.
-13. In the **DialogSample** folder, add a new Typescript file and name it **MessageDialog.ts**.
+12. In the **SearchExtension** folder add a new folder named **DialogSample**.
+13. In the **DialogSample** folder, add a new Typescript file named **MessageDialog.ts**.
 14. Add the following import statements to import the relevant entities and context.
     ```Typescript
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
     import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
     import { ClientEntities } from "PosApi/Entities";
     ```
-15. Create a new class called **MessageDialog**
+15. Create a new class called **MessageDialog**.
     ```Typescript
     export default class MessageDialog {}
     ```
-16. Inside the class, add the follow **show** method.
+16. Inside the class, add the following **show** method.
     ```Typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
         let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
@@ -186,7 +182,7 @@ Let’s add custom column and App bar in POS customer search screen.
         return promise;
     }
     ```
-17. Add custom app bar button in search view to show a dialog with selected customer info. In the **ViewExtensions** folder, add a new Typescript file and name it **ViewCustomerSummaryCommand.ts**.
+17. The next set of steps add a custom app bar button in search view to show a dialog with selected customer info. In the **ViewExtensions** folder, add a new Typescript file and name it **ViewCustomerSummaryCommand.ts**.
 18. Add the following import statements to import the relevant entities and context.
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
@@ -227,7 +223,7 @@ Let’s add custom column and App bar in POS customer search screen.
         this.isVisible = true;
     }
     ```
-23. Add the execute method to handle the app button click handler, we will read the selected customer data from the handler and show it       in a simple dialog.
+23. Add the **execute** method to handle the app button click handler. The **execute** method reads the selected customer data from the handler and displays it in a simple dialog.
     ```Typescript
     protected execute(): void {
         let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
@@ -297,7 +293,7 @@ Let’s add custom column and App bar in POS customer search screen.
         }
     }
     ```
-24. Create a new JSON file and under the **SearchExtension** folder and name it as manifest.json.
+24. Create a new JSON file and under the **SearchExtension** folder and name it **manifest.json**.
 25. In the **manifest.json** file, add the following code:
     ```Typescript
     {
@@ -325,7 +321,7 @@ Let’s add custom column and App bar in POS customer search screen.
         }  
     }
     ```
-26. Open the extensions.json file under POS.Extensions project and update it with SearchExtension samples, so that POS during runtime will include this extension.
+26. Open the **extensions.json** file under **POS.Extensions** project and update it with **SearchExtension** samples, so that POS during runtime will include this extension.
     ```Typescript
     {
         "extensionPackages": [
@@ -338,7 +334,7 @@ Let’s add custom column and App bar in POS customer search screen.
         ]
     }
     ```
-27. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+27. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
     ```Typescript
     "exclude": [
     "SampleExtensions"
@@ -350,7 +346,7 @@ Let’s add custom column and App bar in POS customer search screen.
 
  ## Validate the customization
 To validate the customization:
-1. Login to MPOS using **000160** as operator id and **123** as password.
+1. Login to MPOS using **000160** as the operator id and **123** as the password.
 1. Search for customer **2001** using the search bar on the top.
 1. You should see the custom columns that you added.
 1. Select a customer and then click the new app bar button. It should open up a dialog with the selected customer's details.
