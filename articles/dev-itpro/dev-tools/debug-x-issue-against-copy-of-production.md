@@ -42,7 +42,7 @@ When an issue that requires X++ debugging occurs in a production environment, th
 
 [![Debugging process](./media/debugxpp.jpg)](./media/debugxpp.jpg)
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), the system administrator requests that a copy of the database be connected to the sandbox user acceptance testing (UAT) environment. (Do a database refresh.)
+1. In Microsoft Dynamics Lifecycle Services (LCS), the system administrator requests that a copy of the database be connected to the sandbox user acceptance testing (UAT) environment. (In other words, request a database refresh.)
 2. In Microsoft Visual Studio Team Services (VSTS), the developer synchronizes the local code to the same build that is running in the production environment.
 3. In the sandbox instance of Microsoft Azure SQL Database, the system administrator creates a temporary SQL sign-in for the developer. The developer then configures the environment to connect to the sandbox database.
 4. A firewall exception is added so that the developer environment can connect to the sandbox database.
