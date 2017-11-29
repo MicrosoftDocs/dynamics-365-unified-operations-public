@@ -199,7 +199,7 @@ Here is an explanation of the parameters:
 - **sdn (source database name)** – The name of the database to export.
 - **tf (target file)** – The path and name of the file to export to.
 - **sp (source password)** – The SQL password for the source SQL Server.
-- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Dynamics SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
+- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Finance and Operations SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
 
 After the export is completed, run the following command to delete the database copy.
 
@@ -307,7 +307,7 @@ In the Finance and Operations client, enter the values that you documented for t
 
 ### I can't drop users in source database
 
-When you drop users in the source database, the axdbadmin or axdeployuser user might not be deleted, because that user is the current owner of the full-text catalog. This issue occurs if the database was originally created in CTP7 or CTP8. To resolve the issue, run the following Transact-SQL (T-SQL) command to change the owner to the **dbo** user.
+When you drop users in the source database, the axdbadmin or axdeployuser user might not be deleted, because that user is the current owner of the full-text catalog. This issue occurs if the database was originally created for CTP7 or CTP8 of Dynamics AX 7 (Finance and Operations). To resolve the issue, run the following Transact-SQL (T-SQL) command to change the owner to the **dbo** user.
 
 ```
 ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
