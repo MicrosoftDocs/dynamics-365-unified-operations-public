@@ -35,11 +35,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-At its essence, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
+At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
 
--  What raw materials and capacities are required to complete the production? 
 -  What raw materials and capacities are currently available? 
--  What raw materials and capacities are needed and what can we produce in the amount of time that we have. For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production.
+-  What raw materials and capacities are required to complete production? For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production.
 
 Master planning uses the information to calculate the requirements and generate planned orders.
 
@@ -49,7 +48,7 @@ The three main planning processes are:
 
 -  **Forecast planning** - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. For more information, see [Forecast planning](introduction-demand-forecasting.md). 
 
--  **Intercompany master planning** - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply. For more information, see [Intercompany master planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (requires CustomerSource account). 
+-  **Intercompany master planning** - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply. For more information, see [Intercompany master planning](https://mbspartner.microsoft.com/AX/CourseOverview/1276)  (eLearning) (requires CustomerSource account). 
 
 Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
 
@@ -75,9 +74,9 @@ The following learning map shows the major concepts and tasks that make up the f
 ### Roadmaps
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
-### Manufacturing and supply chain management blogs
+### Blogs
 You can find opinions, news, and other information about Master planning and other solutions on the
-[Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+[Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the **Help** button on any page.
