@@ -1859,7 +1859,7 @@
 #### [Set up a work template for purchase orders](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Plan loads and shipments using the Load planning workbench](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Development & administration](../dev-itpro/toc.md)
+# [Development & administration for Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
