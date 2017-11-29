@@ -42,6 +42,8 @@ Introduction
 
 This topic introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
+After completing this installation, you'll be able to use the built-in Brand Management tools **[Organization administration > Setup > Document branding > Branding details]** to define brand settings that can applied to the modern designs for application business documents. 
+
 ## Why aren't these designs the default designs for the application suite reports?
 There are two primary reasons why we are maintaining the legacy solutions for Finance and Operations:
 
@@ -73,7 +75,7 @@ The Application Suite Modern Designs model is an extension of the Application Su
 1.  Open Visual Studio 2015 or use the existing instance
 2.  Open the **Dynamics 365** menu and select **Build models…**
 3.  Select the **ApplicationSuite** package from the list
-[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
+[![Model Build dialog provided in Visual Studio 2015](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
     **Note:**  you'll notice that the Application Suite Modern Designs is included in the package definition
 4.  Click on the **Build** button to perform a Full build of the Application Suite
 
@@ -83,8 +85,8 @@ This process may take up to 20 minutes depending on the size of your machine.  C
 Once you have successfully compiled the Application Suite that includes the Modern Design templates you'll want to verify the changes locally.  To do this, you'll need to deploy the new Modern report design solutions to the SQL Report Services (SSRS) instance running locally.
 
 Follow these steps to incorporate the modern report design into an existing application suite report: 
-1. Create a project that contains the application suite report.  Expand the **Reports/Reports** collection in the Application Explorer under the **Application Suite Modern Designs** model, **select the items** in the folder, **right + click**, and select **Add to new project**
-[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/DeployModernDesigns.png)](./media/DeployModernDesigns.png)
+1. Create a project that contains the application suite report.  Expand the **Reports/Reports** collection in the Application Explorer under the **Application Suite Modern Designs** model, **select the items** in the folder, **right + click**, and select **Add to new project**.  Here's a screen shot of the project creation gesture in Visual Studio 2015
+[![User gesture for creating Visual Studio Project](./media/DeployModernDesigns.png)](./media/DeployModernDesigns.png)
 2. Complete the **New Project** wizard accepting all default values
 3. Select the project in the **Solution Explorer**, **right + click**, and select **Deploy reports** to deploy the build and deploy the reports locally
 	
@@ -101,7 +103,7 @@ Use the following steps to update the Print Management settings for **Customer S
 4.  Select **Original <Default>** to begin modifying the default document routing 
 5.  Expand the drop-down under the **Report format**
 6.  Select **SalesConfirmModern.Report** to enable the modern solution
-[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
+[![Print Management settings form used to select the modern design](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
 7.  Navigate to another form (this forces a “save” operation)
 8.  Now, go and post a **Sales Order** to view the modern design in the application
 
