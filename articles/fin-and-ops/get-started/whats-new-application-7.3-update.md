@@ -35,6 +35,8 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
+To learn more about the new features and changes in all of the latest product releases, see [What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) and [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new).
+
 Batch balancing for items enabled for advanced warehouse processes 
 -------------------------------------------------------------------
 
