@@ -39,7 +39,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
 1. Open the **ModernPos.Sln** from the **Retail SDK\\POS** folder.
 2. Select the **POS.Extensions** project in the solution and click **Show All Files**.
 3. Right-click the **SampleExtensions** folder and select **Include in Project**.
-4. Open the **extensions.json file** and add the extension folder for **StoreHoursSample**, so that POS during runtime will include this extension. The baseUrl value must exactly match the relative path and extension folder name.
+4. Open the **extensions.json file** and add the extension folder for **StoreHoursSample**, so that POS during runtime will include this extension. The **baseUrl** value must exactly match the relative path and extension folder name.
     ```Typescript
     {
         "extensionPackages": [
@@ -55,8 +55,8 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         ] 
     }
     ```
-**Note:** In the extension.json you must include at least two extension folders. If you add only one extension folder then POS will not load the extension.
-1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to decide whether to compile or not compile the extension. By default, the list may contain the sample extensions list, if you want to compile any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below. To include the sample extension comment it out from the exclude list like below:
+    **Note:** In the extension.json file you must include at least two extension folders. If you add only one extension folder then POS will not load the extension.
+1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to decide whether or not to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS then you need add the extension folder name and comment the extension from the extension as shown. 
     ```Typescript
     {
         "extends": "../tsconfigs/tsmodulesconfig",
@@ -87,7 +87,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         }
     }
     ```
-    If you want to enable other extension, comment them out from the exclude list. For example, if you want to include the **B2BSample**, the code would be as follows: 
+    If you want to enable other extensions, comment them out from the exclude list. For example, if you want to include the **B2BSample**, the code would be as follows: 
     ```Typescript
     "exclude": [
         "AuditEventExtensionSample"
