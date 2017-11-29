@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application release 7.3.
 
-There are to types of changes to the ER APIs:
+There are two types of changes to the ER APIs:
 - Several X++ classes were moved from X++ to an external assembly
 - The rest of X++ classes were marked as internal
 
@@ -57,24 +57,29 @@ You can then refer to an external class by using the namespace alias that you cr
 
 From Application release 7.3 onward, the calling code must access the ER objects by using the methods of the **ERObjectsFactory** class. Several examples of the changes are shown.
 
-### Display format mapping lookup task
+### Code to display a format mapping lookup
 
 Before Application release 7.3:
 
+    // pattern
     ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
+    // sample code
     ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMiscChargeReportERModelName);
 
 Application release 7.3 and later:
 
+    // pattern
     ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
-
+    // sample code
     ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
 
-### Run format mapping for data export task
+### Code to run a format mapping for data export
 
 Before Application release 7.3:
 
+    // pattern
     ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+    // sample code
     ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
 
 Application release 7.3 and later:
@@ -82,36 +87,46 @@ Application release 7.3 and later:
     ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
     ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
 
-### Run format mapping for data import task
+### Code to run a format mapping for data import
 
 Before Application release 7.3:
 
+    // pattern
     ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
+    // sample code
     ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 
 Application release 7.3 and later:
 
+    // pattern
     ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
+    // sample code
     ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
 
-### Create browser file destination task
+### Code to create a browser file destination
 
 Before Application release 7.3:
 
+    // sample code
     new ERFileDestinationBrowser();
 
 Application release 7.3 and later:
 
+    // sample code
     ERObjectsFactory::createFileDestinationBrowser();
 
-### Create an attachment file destination task
+### Code to create an attachment file destination
 
 Before Application release 7.3:
 
+    // pattern
     ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
+    // sample code
     ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagement::instance().otherDocuType());
 
 Application release 7.3 and later:
 
+    // pattern
     ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
+    // sample code
     ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
