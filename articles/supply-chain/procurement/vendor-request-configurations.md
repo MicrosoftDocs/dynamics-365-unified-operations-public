@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 7.3
 [!include[banner](../includes/banner.md)]
 
 To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.
-In the Vendor request configurations form, you can create profiles that specify required fields and visible fields in the prospective vendor registration wizard.
+
+In the **Vendor request configurations** form, you can create profiles that specify required fields and visible fields in the prospective vendor registration wizard.
+
 The vendor registration wizard will start out by asking the prospective vendor user which country/region the vendor is doing business in and this information determines the applicable configuration. If no specific configuration is defined for a country/region, a default configuration will be used.
 
 ### Set up a vendor request configuration
