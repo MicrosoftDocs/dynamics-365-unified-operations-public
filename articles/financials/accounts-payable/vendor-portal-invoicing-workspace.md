@@ -66,7 +66,7 @@ You can create a new vendor invoice by selecting the **New** action on the **Ven
 
 
 
-For more information, see [Collaborating with vendors by using the Vendor portal](../../supply-chain/procurement/collaborate-vendors-vendor-portal.md)
+For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 
 
 

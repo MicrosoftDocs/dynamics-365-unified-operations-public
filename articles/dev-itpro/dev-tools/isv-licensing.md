@@ -3,7 +3,7 @@
 
 title: ISV licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
-author: maertenm
+author: robadawy
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: robinr
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -157,7 +157,7 @@ Follow these steps to enable licensing for your solution.
 
     Here is an example.
 
-        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:templicense.txt /certificatepath:c:tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
+        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
 
      
 
@@ -175,7 +175,7 @@ Follow these steps to enable licensing for your solution.
 
     Here is an example.
 
-        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:packages --bindir c:packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:templicense.txt
+        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screen shot. 
 
@@ -212,25 +212,25 @@ More than one license can be installed at a time. If one of the licenses depends
 
 1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
 
-        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:tempCA.pvk c:tempCA.cer
+        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
 
     For more information, see <https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx>.
 
 2.  Create a certificate by using the CA.
 
-        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:tempca.cer -iv c:tempca.pvk -b **/**/**** -sv c:tempisvcert.pvk c:tempisvcert.cer
+        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
 
 3.  Convert the ISV certificate to PFX format.
 
-        pvk2pfx -pvk c:tempisvcert.pvk -spc c:tempisvcert.cer -pfx c:tempisvcert.pfx -po ********
+        pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
 
 4.  For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
 
-        certutil -addstore root c:tempca.cer
+        certutil -addstore root c:\temp\ca.cer
 
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
-        certutil -addstore root c:tempisvcert.cer
+        certutil -addstore root c:\temp\isvcert.cer
 
 
 

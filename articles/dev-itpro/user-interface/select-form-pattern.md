@@ -2,10 +2,10 @@
 # required metadata
 
 title: Select a form pattern
-description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
+description: This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information that will help you select the best form pattern for the forms that you migrate. 
+This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 
 Introduction
 ------------
@@ -203,15 +203,15 @@ Form: CustCollectionsNewActivityAction
 
 No example currently exists in the product.
 
-#### Factbox
+#### FactBox
 
-[Factbox Grid](factbox-form-patterns.md) Use this Factbox variant to show a child collection of related information.
+[FacbBox Grid](factbox-form-patterns.md) Use this FactBox variant to show a child collection of related information.
 
 Form: ContactsInfoPart
 
 ![HowToSelectAFormPattern (40)](./media/howtoselectaformpattern-40.jpg)
 
-[Factbox Card](factbox-form-patterns.md) Use this Factbox variant to show a set of related fields.
+[FactBox Card](factbox-form-patterns.md) Use this FactBox variant to show a set of related fields.
 
 Form: CustStatisticsStatistics
 
@@ -233,7 +233,7 @@ Form: SysLanguageLookup
 
 [![HowToSelectAFormPattern (43)](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)
 
-[Lookup w/Preview](lookup-form-pattern.md) Use this Lookup variant when, in addition to the basic pattern,a preview of the current record is also shown.
+[Lookup w/Preview](lookup-form-pattern.md) Use this Lookup variant when, in addition to the basic pattern, a preview of the current record is also shown.
 
 Form: HcmWorkerLookup
 
@@ -263,7 +263,7 @@ Form: VendInvoiceJourCountChart
 
 #### Simple Details
 
-[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md) Use this form pattern tp show fields for a single base record.
+[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md) Use this form pattern to show fields for a single base record.
 
 Form: AgreementLine
 
@@ -477,7 +477,7 @@ Form: SalesOrderProcessingWorkspace
 
 [Section Stacked Chart](section-stacked-chart-subpattern.md) Use this variant when you must include up to two charts in an Operational Workspace.
 
-[Section PowerBI](section-powerbi-subpattern.md) Use this variant when a PowerBI section must be included.
+[Section PowerBI](section-powerbi-subpattern.md) Use this variant when a Power BI section must be included.
 
 [Workspace Page Filter Group](workspace-filter-group-subpattern.md) Use this form pattern to add a single filter to your workspace.
 

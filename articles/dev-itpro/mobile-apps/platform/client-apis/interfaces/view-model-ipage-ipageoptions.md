@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: PageOptions
-description: 
+description: PageOptions type
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017

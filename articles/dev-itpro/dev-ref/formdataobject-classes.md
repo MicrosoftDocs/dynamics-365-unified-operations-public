@@ -3761,7 +3761,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -3975,7 +3975,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -5139,7 +5139,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -6539,7 +6539,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -6746,7 +6746,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -7911,7 +7911,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -8808,7 +8808,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -9046,7 +9046,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -9666,7 +9666,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -10785,7 +10785,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -11881,7 +11881,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -13223,7 +13223,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -14249,7 +14249,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|

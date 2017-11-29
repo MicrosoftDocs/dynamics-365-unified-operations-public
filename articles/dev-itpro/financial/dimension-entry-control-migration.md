@@ -5,7 +5,7 @@ title: Dimension entry control migration
 description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -99,7 +99,7 @@ Simple migration scenario - PurchTable form
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate();**Note:** This is the reactivate method call in the create() method on the data source.       | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## Data field AssetGroup
-(**Form &gt; Data sources &gt; PurhcLine &gt; Fields &gt; AssetGroup &gt; Methods**)
+(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetGroup &gt; Methods**)
 
 |                                                                                                                                               |                                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
