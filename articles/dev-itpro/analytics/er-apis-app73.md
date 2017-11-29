@@ -84,7 +84,9 @@ Before Application release 7.3:
 
 Application release 7.3 and later:
 
+    // pattern
     ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+    // sample code
     ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
 
 ### Code to run a format mapping for data import
