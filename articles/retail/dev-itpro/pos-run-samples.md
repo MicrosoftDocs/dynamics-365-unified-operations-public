@@ -36,26 +36,10 @@ There are several samples in the Retails SDK that demonstrate retail extensions.
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Run a Retail POS sample
-1.  Open the ModernPos.Sln from Retail SDK\\POS.
-2.  Select POS.Extensions project in the ModernPos solution and click Show All Files.
-3.  Right click the SampleExtensions folder and select Include in Project.
-4.  Open the extensions.json file and update it with Store samples, so that POS during runtime will include this extension.
-    ```Typescript
-    {
-        "extensionPackages": [
-            {
-                "baseUrl": " SampleExtensions"
-            },
-            {
-                "baseUrl": " SampleExtensions2"
-            }
-        ]
-    }
-    ```
-**Note:** In the extension.json you should have minimum two extension folder names like above, this known issue for now. If you add only one extension folder in the file then POS will not load the extension.
-
-1.  If you want to include multiple samples, update the extension.json file with all the sample information.
-    Ex:
+1. Open the **ModernPos.Sln** from the **Retail SDK\\POS** folder.
+2. Select the **POS.Extensions** project in the solution and click **Show All Files**.
+3. Right-click the **SampleExtensions** folder and select **Include in Project**.
+4. Open the **extensions.json file** and add the extension folder for **StoreHoursSample**, so that POS during runtime will include this extension. The baseUrl value must exactly match the relative path and extension folder name.
     ```Typescript
     {
         "extensionPackages": [
@@ -71,11 +55,8 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         ] 
     }
     ```
-**Note:** The baseUrl value should exactly match the relative path and extension folder name.
-
-1.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to decdei whether to compile or not compile the extension. By default, the list may contain the sample extensions list, if you want to compile any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
-
-    To include the sample exteniosn comment it from the exclude list like below:
+**Note:** In the extension.json you must include at least two extension folders. If you add only one extension folder then POS will not load the extension.
+1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to decide whether to compile or not compile the extension. By default, the list may contain the sample extensions list, if you want to compile any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below. To include the sample extension comment it out from the exclude list like below:
     ```Typescript
     {
         "extends": "../tsconfigs/tsmodulesconfig",
@@ -106,9 +87,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         }
     }
     ```
-If you want to enable other extension, comment it from the exclude list like below:
-
-Ex: If you want also include B2BSample, follow the steps previously mentioned plus comment it from the exclude steps:
+    If you want to enable other extension, comment them out from the exclude list. For example, if you want to include the **B2BSample**, the code would be as follows: 
     ```Typescript
     "exclude": [
         "AuditEventExtensionSample"
@@ -124,11 +103,9 @@ Ex: If you want also include B2BSample, follow the steps previously mentioned pl
         ,"SuspendTransactionReceiptSample"
     ],
     ```
- **Note:** Other extension package folders even though not included in the Visual Studio project should be kept in the exclude list if they are not meant to be included.
-
-1.  Click Save all and hit F5 to validate the extensions.
-
-    **Note:** Set the solution platform to x86 and deploy option as Local Machine or Simulator.
+    **Note:** Other extension package folders even though not included in the Visual Studio project should be kept in the exclude list if they are not meant to be included.
+1. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine** or **Simulator**.
+1. Click **Save all** and press **F5** to validate the extensions.
 
 
 
