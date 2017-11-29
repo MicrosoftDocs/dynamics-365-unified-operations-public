@@ -231,7 +231,7 @@ purpose of this extension is to provide a scalable solution that can exclude
 obsolete products and product variants, including configurations, from master
 planning and BOM-level calculation.
 
-**Impact on master planning **- The product lifecycle state has only one control
+**Impact on master planning** - The product lifecycle state has only one control
 flag: **Is active for planning**. By default, this is set to **Yes** for all
 product lifecycle states. When the field is set to **No**, the associated
 released products or product variants are: 
@@ -245,7 +245,7 @@ obsolete released products or product variants to a product lifecycle state that
 is deactivated for master planning, especially when you work with non-reusable
 product configuration variants.  
 
-**Find obsolete released products and products variants **- You can run an
+**Find obsolete released products and products variants** - You can run an
 analysis to find and update obsolete released products or product variants.
 
 If you run the analysis in a simulation mode, the released products and product
@@ -259,7 +259,7 @@ When the analysis simulation returns the expected result, you can run the
 analysis by assigning a new product lifecycle state to all the products that are
 identified as obsolete.  
 
-**Default value during migration, import, and export **
+**Default value during migration, import, and export**
 
 -   When migrating from previous releases, the lifecycle state for all released
     products and product variants will be blank.  
