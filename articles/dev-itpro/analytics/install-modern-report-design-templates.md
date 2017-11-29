@@ -96,7 +96,7 @@ The Application Suite Modern Designs model is an extension of the Application Su
 
 This process may take up to 20 minutes depending on the size of your machine. 
 
-## Deploy the modern designs (1 Box Environments)
+## Deploy the modern designs (1-box environments)
 Once you have successfully compiled the Application Suite that includes the Modern Design templates, you'll want to verify the changes locally.  To do this, you'll need to deploy the new Modern report design solutions to the SQL Server Reporting Services (SSRS) instance that is running locally.
 
 Follow these steps to incorporate the modern report design into an existing application suite report: 
@@ -110,7 +110,7 @@ Follow these steps to incorporate the modern report design into an existing appl
 By adding the modern report design to the existing report, you can reuse both the parameter handling and the data provider that the out-of-box solution uses.
 
 ## Update Print Management settings
-At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.  To do this, you'll need to **Activate the Modern Designs for the Application Business Process**.  
+At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.  To do this, you'll need to activate the Modern Designs for the application business process.  
 
 Use the following steps to update the Print Management settings for **Customer Sales Orders** by selecting the modern solution as the default report design.  
  
