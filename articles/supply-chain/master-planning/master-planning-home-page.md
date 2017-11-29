@@ -35,12 +35,11 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
+At its essence, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
 
-Master planning assesses the following information.
-
--  What is currently available?
--  What is needed to complete production? For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production.
+-  What raw materials and capacities are required to complete the production? 
+-  What raw materials and capacities are currently available? 
+-  What raw materials and capacities are needed and what can we produce in the amount of time that we have. For example, what must be manufactured, purchased, transferred, or set aside as safety stock before you can complete production.
 
 Master planning uses the information to calculate the requirements and generate planned orders.
 
