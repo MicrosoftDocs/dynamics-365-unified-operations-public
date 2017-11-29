@@ -35,7 +35,7 @@ There are several samples in the Retails SDK that demonstrate retail extensions.
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
-## Run a Retail POS sample
+## Run the StoreHoursSample sample
 1. Open the **ModernPos.Sln** from the **Retail SDK\\POS** folder.
 2. Select the **POS.Extensions** project in the solution and click **Show All Files**.
 3. Right-click the **SampleExtensions** folder and select **Include in Project**.
