@@ -83,7 +83,7 @@ Here is an explanation of the parameters:
 - **sdn (source database name)** – The name of the database to export.
 - **tf (target file)** – The path and name of the file to export to.
 - **sp (source password)** – The SQL password for the source SQL Server.
-- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Dynamics SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
+- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
 
 The command creates a .bacpac file in the D:\\Exportedbacpac folder. By copying or uploading this file to secure location, you can import it into another environment later. You can use the AzCopy command-line utility to upload the file to an Azure storage account and then download it to the target AOS computer. For more information, see [Copy or upload the file to an Azure storage account](/azure/storage/storage-use-azcopy).
 
