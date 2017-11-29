@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install report design templates
-description: This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
+description: This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically-rich business documents that have flexible header and footer branding.
 author: tjvass
 manager: AnnBe
 ms.date: 11/29/2017
@@ -36,14 +36,16 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
+This topic describes how to install the modern report design templates in the application suite. You can use these samples to create graphically-rich business documents that have flexible header and footer branding.
 
 Introduction
 ------------
 
-This topic introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. [![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+This topic introduces a new set of developer tools that take the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding in the header and footer is rendered for publicly facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how a legacy design for a sales invoice differs from a modern sales invoice. 
 
-After completing this installation, you'll be able to use the built-in Brand Management tools **[Organization administration > Setup > Document branding > Branding details]** to define brand settings that can applied to the modern designs for application business documents. 
+[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+
+After completing this installation, you'll be able to use the built-in brand management tools **[Organization administration > Setup > Document branding > Branding details]** to define brand settings that can applied to the modern designs for application business documents. 
 
 ## Why aren't these designs the default designs for the application suite reports?
 There are two primary reasons why we are maintaining the legacy solutions for Finance and Operations:
@@ -51,7 +53,8 @@ There are two primary reasons why we are maintaining the legacy solutions for Fi
 -   **Modern designs don't include code.** Although the legacy solutions use embedded Microsoft Visual Basic (VB) code to recognize configuration keys and honor regulatory requirements that vary by region, the modern designs offer much less flexibility. The benefit of a simple design that has minimal code behind it comes at the expense of reusability across regions.
 -   **Modern designs aren't available for all business documents.** There is a gap between supported business documents and the availability of a modern design. Although the legacy designs aren't as aesthetically pleasing, they provide a sense of consistency.
 
-**Important:** These simple modern designs are **not** recommended for all types of deployments. They are intended for cases where the customer doesn't require run-time control over the layout of the document through existing application configuration settings.
+> [!Important]
+> These simple modern designs are **not** recommended for all types of deployments. They are intended for cases where the customer doesn't require run-time control over the layout of the document through existing application configuration settings.
 
 ## Apply the modern designs
 The report designs have been bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS), so that you can easily access them from your existing subscription. Use the following procedure to obtain the report design solutions and install them in your local development environment. After you've installed them, you must apply some customizations to incorporate the new report designs for the appropriate scenarios. Follow these steps to install the modern report designs for the application suite.
