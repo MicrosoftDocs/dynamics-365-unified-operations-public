@@ -52,6 +52,47 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is deploye
 -   A cloud environment that is provisioned through Microsoft Dynamics Lifecycle Services (LCS), and that supports various topologies (developer, demo, and high availability)
 -   A local (on-premises) development virtual machine (VM) that is downloaded from LCS
 
+## Deploying cloud environments
+
+The process of deploying cloud hosted environments differs for partners and customers.
+
+If you are a  **Partner** :
+
+1. Begin by creating a connection between a LCS project and Azure subscription. (Note: In order to do this you will need your Azure         subscription ID and authorize the use of the subscription).
+
+2. To deploy, select + under Environments
+
+![beginpic](5.jpg)
+
+3. Select an application and platform version
+
+4. Then, select an environment topology. You can either choose to use a cloud hosted environment or download a VHD. For more information     on these options see [Sign up for a preview subscription](sign-up-preview-subscription.md).
+
+![topologypic2](media/2.jpg)
+
+5. If you choose a cloud hosted environment, select which Azure connector you would like to use. Then, select Deploy.
+
+![deploypic](media/3.jpg)
+
+6. Otherwise, you will be asked to select a VHD to download
+
+
+If you are a  **Customer** :
+
+1. Log on to your LCS Implementation project
+
+2. To deploy, select Configure
+
+![configurepic](6.jpg)
+
+3. Select an application and platform version
+
+4. Go through the settings pane and select Save
+
+![deploypic](7.jpg)
+
+Note: Customers are provided with 1 free &quot;develop and build&quot; environment hosted in Microsoft&#39;s Azure subscription. Any additional develop and build environments or demo environments will need to be hosted in their own subscription. To deploy an environment in your own environment use Partner steps above.
+
 ## Cloud environment that is provisioned through LCS
 When a cloud environment is provisioned through LCS, the following events occur:
 
