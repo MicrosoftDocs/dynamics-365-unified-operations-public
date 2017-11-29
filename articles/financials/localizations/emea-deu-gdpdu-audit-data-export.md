@@ -3,9 +3,9 @@
 
 title: German audit file (GDPdU/GoBD)
 description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
-author: ShylaThompson
+author: mrolecki
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,7 +54,7 @@ Companies in Germany and some other countries/regions are legally required to e
 In the current version of Finance and Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
 
 ## Table groups and table definitions
-The following sections list the tables that are set up as examples in the <b>German audit file</b> electronic reporting data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the <b>German audit file</b> electronic reporting data model.
+The following sections list the tables that are set up as examples in the **German audit file** electronic reporting data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the **German audit file** electronic reporting data model.
 
 ### General ledger
 
@@ -222,12 +222,9 @@ The following tables show the Accounts payable data structure definitions.
 | 13  | STATUS                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
 
 
-
-
-## See also
+## Additional information
 
 - [Electronic Reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Import the audit file configuration](./tasks/import-german-audit-file-configuration.md)
 - [Customize the audit file configuration](./tasks/customize-german-audit-file-configuration.md)
 - [Generate the audit file](./tasks/german-audit-file.md)
-
