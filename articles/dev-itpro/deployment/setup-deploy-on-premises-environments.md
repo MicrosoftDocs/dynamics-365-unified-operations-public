@@ -775,7 +775,7 @@ You've now completed the setup of the infrastructure. The following sections des
  
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**.
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
-3. If you have an existing deployment, see the section in this topic, [Re-Deploy your Finance and Operations (on-premises) environment](#ReDeployFO).
+3. If you have an existing deployment, see the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
 4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   

@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -495,8 +495,8 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 
 |   |   |
 |---|---|
-| **Reason for deprecation**       | Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple databases or multiple Dynamics AX instances. |
-| **Replaced by another feature?** | Data partitions will be replaced through support for multiple databases or Dynamics AX instances in a future release.    |
+| **Reason for deprecation**       | Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations. |
+| **Replaced by another feature?** | Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.    |
 | **Modules affected**             | All  |
 
 ### Database and file share storage for attachments

@@ -5,7 +5,7 @@ title: Software lifecycle policy and list of releases
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: ryanCcarlson 
 manager: AnnBe
-ms.date: 11/17/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,9 +36,6 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic outlines the lifecycle and support policies for both the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition online service and for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 
-> [!NOTE]
-> Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
-
 ## Modern Lifecycle Policy
 
 The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881).
@@ -46,7 +43,7 @@ The Modern Lifecycle Policy covers products and services that are serviced and s
 The Dynamics 365 Finance and Operations online service and the Dynamics 365 for Finance and Operations (on-premises) software are covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see Modern Lifecycle Policy. Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations online service or the on-premises software in accordance with the following servicing and system requirements:
 
 - Starting with the release of Microsoft Dynamics 365 for Operations version 1611, application versions are supported for three years from the initial date of a major release, as specified in [Table 1](#table-1-application-releases) later in this topic.
-- Customers can stay on a platform update for up to 12 months after its availability date, as specified in [Table 3](#table-3-platform-releases) later in this topic.  Customers must update to the latest version  of the platform update if they either run into a situation where they need a critical fix or non-critical update, or upon reaching 12 months from the availability date of the update in use. Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the 3 year application support lifecycle.  
+- Customers can stay on a platform update for up to 12 months after its availability date, as specified in [Table 3](#table-3-platform-releases) later in this topic.  Customers must update to the latest version  of the platform update if they either run into a situation where they need a critical fix or non-critical update, or upon reaching 12 months from the availability date of the update in use. Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the 3 year application support lifecycle. For more information about platform versions, see [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
 - Critical fixes and non-critical updates are handled in the following way:
 
     - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to adhere to the availability service level agreement (SLA) that the service supports. Critical fixes will be made available in the latest platform update version. In addition, to help protect the customer and the online service, Microsoft might apply critical fixes directly to a customer's Dynamics 365 for Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. The critical fix will update the system to the latest platform update version.
@@ -56,7 +53,7 @@ The Dynamics 365 Finance and Operations online service and the Dynamics 365 for 
 > [!NOTE]
 > Application and Platform releases expire at the end of the month of their software lifecycle.
 
-    For more information about platform versions, see [Finance and Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
+   
 
 
 
@@ -81,6 +78,7 @@ For information about the new features included in each update, click the links 
 
 | Release          | Version          | Build number | Availability  |  
 |------------------|------------------|--------------|---------------|
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 5: [KB 4053277Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053277&bugId=3893141&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5), [KB 4053278Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053278&bugId=3893143&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5) | 7.2.11792.62725 | November 2017     |
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 4: [KB 4047325Application Update 4 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047325&bugId=3866272&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838), [KB 4047321Application Update 4 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047321&bugId=3866273&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838) | 7.2.11792.62509 | October 2017     |
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 3: [KB 4043284Application Update 3 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=e6921e68e9b9037bf91c26b3b553e479890731b4b4dd5e6dcb45b0ca13895d8d), [KB 4043285Application Update 3 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043285&bugId=3857199&qc=54ee2e988aace65d26834ced54cc11326f5d5e435520ccaf951d41bd1276f672) | 7.2.11792.62370 | September 2017     | 
 |  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 2: [KB 4039142Application Update 2 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4039487Application Update 2 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039487&bugId=3850591&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62192 | September 2017     | 
@@ -94,7 +92,8 @@ For information about the new features included in each release, click the links
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
-| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018   |
+| [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)| 7.0.4709 | November 2017   | November 2018   |
+| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018  |
 | [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
 | [Platform update 9](../../fin-and-ops/get-started/whats-new-platform-update-9.md) | 7.0.4612.35162 | July 2017     | July 2018     |
 | [Platform update 8](../../fin-and-ops/get-started/whats-new-platform-update-8.md) | 7.0.4565.16212 | June 2017     | June 2018     |
@@ -117,7 +116,7 @@ The customer is in full control of its on-premises deployments and must follow t
 
 The Finance and Operations (on-premises) software is licensed and supported under the [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy). This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, it will be eligible only for the perpetual license rights to AX 2012 R3 and must uninstall the Finance and Operations (on-premises) software.
 
-The initial release of the  Dynamics 365 for Finance and Operations (on-premises) software was based on platform update 8 and the July 2017 update of the application.
+The initial release of the  Dynamics 365 for Finance and Operations (on-premises) software was based on Platform update 8 and the July 2017 update of the application.
 
 ### Dates for Dynamics 365 for Finance and Operations (on-premises) releases
 
