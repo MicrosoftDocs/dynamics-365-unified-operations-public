@@ -23,7 +23,6 @@ ms.search.scope: Operations
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
 ms.search.region: Global
-
 # ms.search.industry: 
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
@@ -59,8 +58,12 @@ There are two primary reasons why we are maintaining the legacy solutions for Fi
 ## Apply the modern designs
 The report designs have been bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS), so that you can easily access them from your existing subscription. Use the following procedure to obtain the report design solutions and install them in your local development environment. After you've installed them, you must apply some customizations to incorporate the new report designs for the appropriate scenarios. Follow these steps to install the modern report designs for the application suite.
 
-1.  Download the ApplicationSuiteModernDesigns model file from the **Shared asset library** page on LCS. Sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to access the deployment dashboard, and then save the model file to a location that is accessible from the development environment. [![ApplicationSuiteModernDesigns model file](./media/lcs-shared-asset-library-1024x489.png)](./media/lcs-shared-asset-library.png)
-**Note:** be sure to select the Model file appropriate for the version of the Application you're using.
+1.  Download the ApplicationSuiteModernDesigns model file from the **Shared asset library** page on LCS. Sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to access the deployment dashboard, and then save the model file to a location that is accessible from the development environment. 
+
+	[![ApplicationSuiteModernDesigns model file](./media/lcs-shared-asset-library-1024x489.png)](./media/lcs-shared-asset-library.png)
+
+	> [!Note]
+	> Be sure to select the Model file appropriate for the version of the Application you're using.
 
 2.  Import the model file into your local development environment. To install a model file in a Finance and Operations development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
 
