@@ -104,7 +104,8 @@ This section describes how to manually create a custom entity.
 
     | Index name                              | Properties                             | Fields                                                 |
     |-----------------------------------------|----------------------------------------|--------------------------------------------------------|
-    | &lt;&lt;any name&gt;&gt;. Example – Idx | AllowDuplicates – No AlternateKey - Yes | **DefinitionGroup**                                    |
+    | &lt;&lt;any name&gt;&gt;. Example – Idx | AllowDuplicates – No  | **DefinitionGroup**                                    |
+    |   | AlternateKey - Yes | **DefinitionGroup**                                    |
     |                                         |                                        | **ExecutionId**                                        |
     |                                         |                                        | **Fields from the staging table to define uniqueness** |
     |                                         |                                        | ..                                                     |
