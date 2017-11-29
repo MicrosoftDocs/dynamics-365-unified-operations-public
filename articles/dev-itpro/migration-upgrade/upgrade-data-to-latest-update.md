@@ -42,7 +42,7 @@ This topic explains how to upgrade an older source database to the latest Financ
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
-> - This process doesn't apply to the upgrade of data in the Financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - This process doesn't apply to the upgrade of data in the financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 
@@ -66,9 +66,9 @@ This topic explains how to upgrade an older source database to the latest Financ
 5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
-    cd J:\\AosService\\WebRoot\\bin>
+    cd J:\AosService\WebRoot\bin>
 
-    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
 
 5. If you're upgrading to the July 2017 release (also known as 7.2) (build 7.2.11792.56024), apply the following application X++ hotfixes in the destination environment before you run the data upgrade in that environment. These hotfixes will prevent various errors from occurring during the data upgrade.
