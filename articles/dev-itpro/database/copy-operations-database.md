@@ -5,7 +5,7 @@ title: Create a copy of a Finance and Operations database to restore later
 description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,6 +44,9 @@ You might want to retain a copy of a Finance and Operations database process in 
 -   When upgrading to a new major release of Microsoft Dynamics 365 for Finance and Operations, this process can be used to export your old test database and bring it forward to the new version.
 
 Be aware that Microsoft also provides a standard feature which provides the ability to restore an Azure SQL database environment to a point-in-time within the last 35 days via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
+
+> [!IMPORTANT]
+> This topic documents the only supported method of retaining a copy of a Finance and Operations database. In a Finance and Operations environment, no copies of Azure SQL database may be kept running. Therefore, use of the CREATE DATABASE AS COPY OF statement is disallowed. Any unsupported copies of Azure SQL databases may be deleted without warning. 
 
 ## Prerequisites
 To export a database from a sandbox environment you must install the latest SQL Server 2016 Management Studio to the AOS machine in that environment and perform the export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can’t complete the tasks required.
