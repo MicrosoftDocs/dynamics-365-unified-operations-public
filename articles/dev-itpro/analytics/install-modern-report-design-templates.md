@@ -73,7 +73,7 @@ The Application Suite Modern Designs model is an extension of the Application Su
 1.  Open Visual Studio 2015 or use the existing instance
 2.  Open the **Dynamics 365** menu and select **Build models…**
 3.  Select the **ApplicationSuite** package from the list
-
+[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
     **Note:**  you'll notice that the Application Suite Modern Designs is included in the package definition
 4.  Click on the **Build** button to perform a Full build of the Application Suite
 
@@ -84,6 +84,7 @@ Once you have successfully compiled the Application Suite that includes the Mode
 
 Follow these steps to incorporate the modern report design into an existing application suite report: 
 1. Create a project that contains the application suite report.  Expand the **Reports/Reports** collection in the Application Explorer under the **Application Suite Modern Designs** model, **select the items** in the folder, **right + click**, and select **Add to new project**
+[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/DeployModernDesigns.png)](./media/DeployModernDesigns.png)
 2. Complete the **New Project** wizard accepting all default values
 3. Select the project in the **Solution Explorer**, **right + click**, and select **Deploy reports** to deploy the build and deploy the reports locally
 	
@@ -100,7 +101,7 @@ Use the following steps to update the Print Management settings for **Customer S
 4.  Select **Original <Default>** to begin modifying the default document routing 
 5.  Expand the drop-down under the **Report format**
 6.  Select **SalesConfirmModern.Report** to enable the modern solution
-        
+[![Examples of a legacy design for a sales invoice and a modern sales invoice](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
 7.  Navigate to another form (this forces a “save” operation)
 8.  Now, go and post a **Sales Order** to view the modern design in the application
 
