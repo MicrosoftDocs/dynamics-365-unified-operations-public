@@ -112,9 +112,9 @@ This scenario describes the process for upgrading code from an earlier release t
 | February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | July 2017 release (application 7.2.0) | Yes |
 | February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
 | Microsoft Dynamics AX 2012                                     | Not applicable | July 2017 release (application 7.2.0) | Yes |
-| July 2017 release (Platform update 8, application 7.2)         | | Newer version of the platform | No |
-| Version 1611 (Platform update 3, application 7.1.0)            | | Newer version of the platform | No |
-| May 2016 release (Platform update 1, application 7.0.1)        | | August 2016 release (Platform update 2, application 7.0.1) | No |
+| July 2017 release (Platform update 8, application 7.2)         | Not applicable | Newer version of the platform | No |
+| Version 1611 (Platform update 3, application 7.1.0)            | Not applicable | Newer version of the platform | No |
+| May 2016 release (Platform update 1, application 7.0.1)        | Not applicable | August 2016 release (Platform update 2, application 7.0.1) | No |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 
@@ -172,8 +172,8 @@ When the following conditions are met, you must request that the Microsoft Servi
 
 - You've completed the code upgrade process and have tested the data upgrade in your development environment.
 - You're live in production, or you've already deployed your production environment.
-- DSE will do the data upgrade in one Tier 2 or higher sandbox UAT environment. This upgrade process is used as a control. The same upgrade process that will be used in production is used in this sandbox environment.
-- DSE will do the data upgrade in the production environment.
+
+DSE will do the data upgrade in one Tier 2 or higher sandbox UAT environment. This upgrade process is used as a control. The same upgrade process that will be used in production is used in this sandbox environment.
 
 **Upgrading any additional Tier 2 or higher sandbox environments**
 
@@ -212,7 +212,6 @@ Complete your validation and testing. If you discover an issue and want to roll 
 ### Upgrade your production environment
 
 1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-2. Validate.
 3. Complete your validation and testing. If you discover an issue and want to roll back to the old environment, notify DSE by submitting an LCS ticket. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
