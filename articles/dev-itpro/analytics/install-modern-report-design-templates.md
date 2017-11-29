@@ -114,15 +114,17 @@ At this point, you should be able to access the modern report designs from the 
 
 Use the following steps to update the Print Management settings for **Customer Sales Orders** by selecting the modern solution as the default report design.  
  
-1.  Access the Form setup form for the module **[AR > Setup > Forms > Form Setup]**
-2.  Click on **Print management** button to access the Print Management Settings form 
-3.  Expand the tree and locate the settings for the **Sales order confirmation** document
-4.  Select **Original <Default>** to begin modifying the default document routing 
-5.  Expand the drop-down under the **Report format**
-6.  Select **SalesConfirmModern.Report** to enable the modern solution
-[![Print Management settings form used to select the modern design](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
-7.  Navigate to another form (this forces a “save” operation)
-8.  Now, go and post a **Sales Order** to view the modern design in the application
+1.  Access the **Form setup** page for the module. For example, **Accounts receivable > Setup > Forms > Form Setup**.
+2.  Click the **Print management** button to access the **Print management setup** page. 
+3.  Expand the tree and locate the settings for the **Sales order confirmation** document.
+4.  Select **Original <Default>** to begin modifying the default document routing. 
+5.  Expand the **Report format** list.
+6.  Select **SalesConfirmModern.Report** to enable the modern solution.
+	
+	[![Print Management settings form used to select the modern design](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
+
+7.  Navigate to another form (this forces a “save” operation).
+8.  Go and post a **Sales Order** to view the modern design in the application.
 
 
 
