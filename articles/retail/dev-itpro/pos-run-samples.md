@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run Retail POS samples
-description: 
+description: This topic explains how to run the Retail POS samples.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/27/2017
