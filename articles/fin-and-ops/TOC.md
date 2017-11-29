@@ -58,7 +58,7 @@
 #### [Set a user's preferred time zone](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Understand Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Get help and support
+### Read and run the documentation
 #### [Help overview](get-started/help-overview.md)
 #### [Connect Help](get-started/help-connect.md)
 #### [View and export field descriptions](get-started/view-export-field-descriptions.md)
