@@ -358,29 +358,28 @@ The correction of cost is used in the situation when the invoice is a direct cos
 **Note**: The described functionality only lets user identify, if there are any invoices which should be considered for correction and it is fully user responsibility to apply required adjustments in postings.
 To use that functionality, you need to configure system. These are the main configuration areas:
 
-1.	Debts overdue intervals setup in General ledger > Journal setup > Overdue debt journal calculation. 
-Example of a typical setup of interval:
-- Period 1: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
-	 - **Minimum number of days**: Minimum number of days from, it is usually 30 days.
-	 - **Maximum number of days**: Maximum number for days to, it is usually 360 days.
-	 - **Calculation type** field: Defines date for each overdue to be calculated. Select Due date.
-	 - **Condition**: “<”
-	 - **Payment term days**: Overdue days, typically 60
-	 - **Validate** option set to True. If validation is required when entering and settling invoices. 
- - Period 2: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
-	 - **Minimum number of days**: Minimum number of days from, it is usually 90 days.
-	 - **Maximum number of days**: Maximum number for days to, it is usually 360 days.
-	 - **Calculation type** field: Defines date for each overdue to be calculated. Select Invoice date (shipment date is considered).
-	 - **Condition**: “>=”
-	 - **Payment term days**: Overdue days, typically 60
-	 - **Validate** option set to True. It indicates that invoice transactions have to be validated so that the total overdue debt amount remains the same as the amount on the date of the last overdue debt journal.
-2.	In the parameters for the Accounts Payable module, set:
- - **Dimension to calculate the CIT and PIT correction** located in the Ledger and sales tax > Corporate Income Tax (CIT) and Personal Income Tax (PIT) tab. The dimension that is defined in this field will be used for "bad" debts allocation.
- - **Number sequence** for the Overdue debt CIT and PIT journal reference
+1. Go to **General ledger** > **Journal setup** > **Overdue debt journal calculation** to set up debts overdue intervals. The following is an example of a typical interval setup:
+	- Period 1: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
+	 	- **Minimum number of days**: Minimum number of days from, it is usually 30 days.
+	 	- **Maximum number of days**: Maximum number for days to, it is usually 360 days.
+	 	- **Calculation type** field: Defines date for each overdue to be calculated. Select Due date.
+	 	- **Condition**: “<”
+	 	- **Payment term days**: Overdue days, typically 60
+	 	- **Validate** option set to True. If validation is required when entering and settling invoices. 
+ 	- Period 2: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
+	 	- **Minimum number of days**: Minimum number of days from, it is usually 90 days.
+	 	- **Maximum number of days**: Maximum number for days to, it is usually 360 days.
+	 	- **Calculation type** field: Defines date for each overdue to be calculated. Select Invoice date (shipment date is considered).
+	 	- **Condition**: “>=”
+	 	- **Payment term days**: Overdue days, typically 60
+	 	- **Validate** option set to True. It indicates that invoice transactions have to be validated so that the total overdue debt amount remains the same as the amount on the date of the last overdue debt journal.
+2. On the **Accounts payable parameters** page, complete the following fields:
+ 	- **Dimension to calculate the CIT and PIT correction** (**Ledger and sales tax** > **Corporate Income Tax (CIT) and Personal Income Tax (PIT)** tab): The dimension that is defined in this field will be used for "bad" debts allocation.
+ 	- **Number sequence**: Set up the **Overdue debt CIT and PIT journal** reference
 
-Once you have system configured to work with non-deductible costs, you open the **Overdue vendor debt CIT and PIT journals** page in the accounts payable module, where you can perform following actions:
+Once you have system configured to work with non-deductible costs, you can perform the following tasks from the **Overdue vendor debt CIT and PIT journals** page.
 
- - **Create** a journal. Specify the reporting date to the last date of the journal reporting period in the Date field. The condition for the documents selection will be calculated based the two conditions according to the settings illustrated above. With the journal creation, the sum of debts is allocated proportionally between the financial dimensions that are assigned in the invoice lines.
+ -	**Create a journal**: Specify the reporting date to the last date of the journal reporting period in the Date field. The condition for the documents selection will be calculated based the two conditions according to the settings illustrated above. With the journal creation, the sum of debts is allocated proportionally between the financial dimensions that are assigned in the invoice lines.
 **Note**: The **New** button is available when the form is empty or the last journal is approved. 
 You can click on a journal number to open journal details and review tabs:
 	 - **Overdue debt CIT and PIT journal header** (you can change the view between Lines and Header)
