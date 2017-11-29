@@ -58,27 +58,51 @@ The report designs have been bundled into a model file and posted to Microsoft D
 
         ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
 
-    1.  Navigate to the **C:\AOSService\PackagesLocalDirectory\bin** folder.
-    2.  Run the following command.
+3.  Navigate to the **J:\AOSService\PackagesLocalDirectory\bin** folder.
+4.  Run the following command.
 
-            ModelUtil.exe -import -metadatastorepath=C:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
+        ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
 
     For more information about how to import model files, see [Distribution of models: How to export and import a model](..\dev-tools\models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015 to verify that the new collection appears under the **AOT** node in Application Explorer. [![New collection under the AOT node](./media/imported-model-file-1024x488.png)](./media/imported-model-file.png)
 
-3.  Follow these steps to incorporate the modern report design into an existing application suite report:
-    1.  Create a project that contains the application suite report.
-    2.  Copy the **DocuBrandDetailsDS** data set, and paste it into the collection of data sets.
-    3.  Copy the **Modern** design, and paste it into the collection of existing report designs.
-    4.  Build and deploy the updated application suite report, which now includes the modern report design.
+Now that you have successfully imported the Application Suite Modern Designs model, you'll need to rebuild the Application Suite to refresh the meta data elements.
 
-    [![Incorporating the modern report design into an existing application suite report](./media/copying-modern-designs1-1024x569.png)](./media/copying-modern-designs1.png)By adding the modern report design to the existing report, you can reuse both the parameter handling and the data provider that the out-of-box solution uses.
-4.  Update the **Controller** object to add references to the new report design. Search for code that resembles the following code. This code is often nested in the **preModify** method of the **Controller** object.
+## Build the Application Suite 
+The Application Suite Modern Designs model is an extension of the Application Suite model.  To ensure that all application references are updated to target the model extensions, you'll need to build the Application Suite model using Visual Studio.
 
-        // select the report design
-        this.parmReportName(ssrsReportStr(CustAccountStatementExt, DesignName));
+1.  Open Visual Studio 2015 or use the existing instance
+2.  Open the Dynamics 365 menu and select Build models…
+3.  Select the ApplicationSuite package from the list
 
-    At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.
+**Note:**  you'll notice that the Application Suite Modern Designs is included in the package definition
+4.  Click on the Build button to perform a Full build of the Application Suite
 
+This process may take up to 20 minutes depending on the size of your machine.  Consider grabbing a cup of coffee and some air before returning to complete the process.
+
+## Deploy the modern designs (1Box Environments)
+Once you have successfully compiled the Application Suite that includes the Modern Design templates you'll want to verify the changes locally.  To do this, you'll need to deploy the new Modern report design solutions to the SQL Report Services (SSRS) instance running locally.
+
+Follow these steps to incorporate the modern report design into an existing application suite report: 
+1. Create a project that contains the application suite report.  Expand the Reports/Reports collection in the Application Explorer under the Application Suite Modern Designs model, select all of the reports in the folder, right + click, and select Add to new project
+2. Complete the New Project wizard accepting all default values
+3. Select the project in the Solution Explorer, right + click, and select Deploy reports to deploy the build and deploy the reports locally
+	
+By adding the modern report design to the existing report, you can reuse both the parameter handling and the data provider that the out-of-box solution uses.
+
+## Update Print Management settings
+At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.  To do this, you'll need to Activate the Modern Designs for the Application Business Process.  
+
+Use the following steps to update the Print Management settings for Customer Sales Orders by selecting the Modern solution as the default report design.  
+ 
+1.  Access the Form setup form for the module [AR > Setup > Forms > Form Setup]
+2.  Click on Print management button to access the Print Management Settings form 
+3.  Expand the tree and locate the settings for the Sales order confirmation document
+4.  Select Original <Default> to begin modifying the default document routing 
+5.  Expand the drop-down under the Report format
+6.  Select SalesConfirmModern.Report to enable the modern solution
+        
+7.  Navigate to another form (this forces a “save” operation)
+8.  Now, go and post a Sales Order to view the modern design in the application
 
 
 
