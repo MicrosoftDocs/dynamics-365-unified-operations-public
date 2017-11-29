@@ -71,11 +71,11 @@ Now that you have successfully imported the Application Suite Modern Designs mod
 The Application Suite Modern Designs model is an extension of the Application Suite model.  To ensure that all application references are updated to target the model extensions, you'll need to build the Application Suite model using Visual Studio.
 
 1.  Open Visual Studio 2015 or use the existing instance
-2.  Open the Dynamics 365 menu and select Build models…
-3.  Select the ApplicationSuite package from the list
+2.  Open the **Dynamics 365** menu and select **Build models…**
+3.  Select the **ApplicationSuite** package from the list
 
-**Note:**  you'll notice that the Application Suite Modern Designs is included in the package definition
-4.  Click on the Build button to perform a Full build of the Application Suite
+    **Note:**  you'll notice that the Application Suite Modern Designs is included in the package definition
+4.  Click on the **Build** button to perform a Full build of the Application Suite
 
 This process may take up to 20 minutes depending on the size of your machine.  Consider grabbing a cup of coffee and some air before returning to complete the process.
 
@@ -83,26 +83,26 @@ This process may take up to 20 minutes depending on the size of your machine.  C
 Once you have successfully compiled the Application Suite that includes the Modern Design templates you'll want to verify the changes locally.  To do this, you'll need to deploy the new Modern report design solutions to the SQL Report Services (SSRS) instance running locally.
 
 Follow these steps to incorporate the modern report design into an existing application suite report: 
-1. Create a project that contains the application suite report.  Expand the Reports/Reports collection in the Application Explorer under the Application Suite Modern Designs model, select all of the reports in the folder, right + click, and select Add to new project
-2. Complete the New Project wizard accepting all default values
-3. Select the project in the Solution Explorer, right + click, and select Deploy reports to deploy the build and deploy the reports locally
+1. Create a project that contains the application suite report.  Expand the **Reports/Reports** collection in the Application Explorer under the **Application Suite Modern Designs** model, **select the items** in the folder, **right + click**, and select **Add to new project**
+2. Complete the **New Project** wizard accepting all default values
+3. Select the project in the **Solution Explorer**, **right + click**, and select **Deploy reports** to deploy the build and deploy the reports locally
 	
 By adding the modern report design to the existing report, you can reuse both the parameter handling and the data provider that the out-of-box solution uses.
 
 ## Update Print Management settings
-At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.  To do this, you'll need to Activate the Modern Designs for the Application Business Process.  
+At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.  To do this, you'll need to **Activate the Modern Designs for the Application Business Process**.  
 
-Use the following steps to update the Print Management settings for Customer Sales Orders by selecting the Modern solution as the default report design.  
+Use the following steps to update the Print Management settings for **Customer Sales Orders** by selecting the Modern solution as the default report design.  
  
-1.  Access the Form setup form for the module [AR > Setup > Forms > Form Setup]
-2.  Click on Print management button to access the Print Management Settings form 
-3.  Expand the tree and locate the settings for the Sales order confirmation document
-4.  Select Original <Default> to begin modifying the default document routing 
-5.  Expand the drop-down under the Report format
-6.  Select SalesConfirmModern.Report to enable the modern solution
+1.  Access the Form setup form for the module **[AR > Setup > Forms > Form Setup]**
+2.  Click on **Print management** button to access the Print Management Settings form 
+3.  Expand the tree and locate the settings for the **Sales order confirmation** document
+4.  Select **Original <Default>** to begin modifying the default document routing 
+5.  Expand the drop-down under the **Report format**
+6.  Select **SalesConfirmModern.Report** to enable the modern solution
         
 7.  Navigate to another form (this forces a “save” operation)
-8.  Now, go and post a Sales Order to view the modern design in the application
+8.  Now, go and post a **Sales Order** to view the modern design in the application
 
 
 
