@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 7.3 update
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
-
 To learn more about the new features and changes in all of the latest product releases, see [What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) and [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new).
+
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
 Batch balancing for items enabled for advanced warehouse processes 
 -------------------------------------------------------------------
@@ -185,8 +185,6 @@ With the current release, the advisor presents opportunities to optimize:
     settings to reflect the actual business processes. 
 
 -   Master data quality across BOMs, routes, and inventory management.
-
-This list of features will continue to grow in the next release.
 
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------
