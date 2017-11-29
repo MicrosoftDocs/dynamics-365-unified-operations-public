@@ -3,9 +3,9 @@
 
 title: Sales tax reports for Poland (setting up tax information and other features)
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
-author: ShylaThompson
+author: mrolecki
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274063
 ms.search.region: Poland
@@ -308,22 +308,23 @@ General ledger (GL) accounts for VAT correction posting and periods for bad debt
 
 To use that functionality, you need to configure system. These are the main configuration areas:
  
-1.	Complete Overdue debt journal calculation setup in **General ledger > Journal setup > Overdue debt journal calculation**. The available journal type options are following:
- - Customer VAT journal
- - Vendor VAT journal
+1. Go to **General ledger > Journal setup > Overdue debt journal calculation** to set up the overdue debt journal calculation.
+2. Select a journal type.
+	 - **Customer VAT journal**
+	 - **Vendor VAT journal**
+3. Set up each journal with the following information:
+	-	**Minimum number of days**: Enter the minimum period of time that would indicate the invoice is overdue, it is usually 150 days.
+	-	**Maximum number of days**: Enter the maximum period of time that the invoice will not be considered as overdue, it is usually 2 years – 720 days.
+	-	**Calculation type** field: Select the date type for each overdue invoice to be calculated. The available values are Due date and Invoice date.
+	-	**Validate** option. If the check box is selected, it validates that transactions do not change balance on date of last posted journal.
+	> [!NOTE]
+	> The **Condition** and the **Payment term days** should remain empty.
 
-You have to set up for each journal following information:
--	**Minimum number of days**: Minimum period that invoice is overdue, it is usually 150 days.
--	**Maximum number of days**: Maximum period that invoice will not be considered as overdue, it is usually 2 years – 720 days.
--	**Calculation type** field: Defines date for each overdue to be calculated. Available values are Due date and Invoice date.
--	**Validate** option. If the check box is selected, it validates that transactions do not change balance on date of last posted journal.
-**Note**: The **Condition** and the **Payment term days** should remain empty.
+2. On the **Accounts receivable parameters** page and the **Accounts payable parameters** page, set up the following number sequence references:
+ 	- **Journal number for overdue debt VAT**
+ 	- **Overdue debt VAT journal**
 
-2.	In the parameters for the Accounts Receivable module and the Accounts Payable module, on the **Number sequences** tab, two number sequence references must be set up:
- - Journal number for overdue debt VAT
- - Overdue debt VAT journal
-
-3.	Specify the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax** in Tax > Setup > Sales tax > Ledger posting group
+3. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting group** and select the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax**.
 
 
 Once you have system configured to working with overdue debts you use the **Overdue debt VAT** periodic function in the accounts receivable and the accounts payable modules to manage your overdue debts. 
