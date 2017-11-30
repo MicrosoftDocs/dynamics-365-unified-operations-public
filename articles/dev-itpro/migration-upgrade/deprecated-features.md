@@ -65,7 +65,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.  Click here for more details on analytical applications.  |
+| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.    |
@@ -77,7 +77,7 @@ The standard UI in data management is the legacy UI which is the default UI pres
 |   |  |
 |------------------|-------------------------|
 | **Reason for deprecation/removal** | We are investing in providing new user experiences in the new UI.             |
-| **Replaced by another feature?**   | The new UI called as the *Enhanced views* is replacing the old UI.            |
+| **Replaced by another feature?**   | The new UI called *Enhanced views* is replacing the old UI.            |
 | **Product areas affected**         | Data management workspace                                                     |
 | **Deployment option**              | All                                                                           |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
