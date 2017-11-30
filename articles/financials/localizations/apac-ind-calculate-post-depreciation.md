@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and post depreciation for a fixed asset group using depreciation books for India
-description:  This topic for India in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description:  This topic walks you through creating and posting depreciation for a fixed asset group using depreciation books for India in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: AdamTrukawka
 manager: AnnBe
 ms.date: 12/01/2017
