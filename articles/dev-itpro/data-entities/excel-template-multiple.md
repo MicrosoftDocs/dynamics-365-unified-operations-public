@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Excel data entity templates
-description: This topic describes Excel data entity templates. 
+title: Import data from Excel data entity templates with multiple worksheets
+description: This topic describes how to import data using Excel data entity templates into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
