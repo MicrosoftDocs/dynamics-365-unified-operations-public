@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax reports for Poland (setting up tax information and other features)
+title: Sales tax reports for Poland
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
 author: mrolecki
 manager: AnnBe
@@ -375,21 +375,17 @@ To use the above-mentioned functionality, you need to configure system. These ar
  	- **Dimension to calculate the CIT and PIT correction** (**Ledger and sales tax** > **Corporate Income Tax (CIT) and Personal Income Tax (PIT)** tab): The dimension that is defined in this field will be used for "bad" debts allocation.
  	- **Number sequence**: Set up the **Overdue debt CIT and PIT journal** reference
 
-Once you have system configured to work with non-deductible costs, you can perform the following tasks from the **Overdue vendor debt CIT and PIT journals** page.
+Once you have set up non-deductible costs, you can perform the following tasks from the **Overdue vendor debt CIT and PIT journals** page.
 
  -	**Create a journal**: Specify the reporting date to the last date of the journal reporting period in the Date field. The condition for the documents selection will be calculated based the two conditions according to the settings illustrated above. With the journal creation, the sum of debts is allocated proportionally between the financial dimensions that are assigned in the invoice lines.
 **Note**: The **New** button is available when the form is empty or the last journal is approved. 
 You can click on a journal number to open journal details and review tabs:
-	 - **Overdue debt CIT and PIT journal header** (you can change the view between Lines and Header)
-	 - **Overdue debt CIT and PIT journal lines** including information about vendor invoices selected according to configured criteria for the period. The Exclude check box allows you to exclude any invoice from journal that you don’t want to process. 
+	 - **Overdue debt CIT and PIT journal header**: you can change the view between Lines and Header.
+	 - **Overdue debt CIT and PIT journal lines**: You can include information about vendor invoices that are selected according to configured criteria for the period. The **Exclude** option allows you to exclude any invoice from a journal. 
 	 - **Line details** 
-	 
+ - **Approve a journal** 
+ - **Cancel a journal approval**: The Cancel function is available only for the last approved journal. 
+ - **View distributions**: The system shows the view of the debt sum distributed by financial dimensions.
+ - **Print report**
 
- - **Approve** a journal. 
- - **Cancel** journal approval. The Cancel function is available only for the last approved journal. 
- - **View distributions**. The system shows the view of the debt sum distributed by financial dimensions.
- - **Print report** to print the report.
-
-The Fact boxes pane displays totals in the journal and the total overdue amount.
-
-
+The FactBoxes pane displays the totals in the journal and the total overdue amount.
