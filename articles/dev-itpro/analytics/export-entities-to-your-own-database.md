@@ -159,11 +159,7 @@ You can create a data project that has multiple entities. You can schedule this 
 
 ### Known limitations
 
-In Platform update 8, the BYOD feature has several known limitations.
-
-#### Incremental push doesn't propagate records that have been deleted in the source
-
-If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database. If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.
+The BYOD feature has the following limitations.
 
 #### Export data projects are specific to a single legal entity
 
