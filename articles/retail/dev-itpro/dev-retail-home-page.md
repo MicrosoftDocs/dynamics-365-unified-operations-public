@@ -75,6 +75,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add extension properties to a Customer entity](add-extension-properties.md)
 - [Add a custom control to a POS view](pos-custom-control.md)
 - [POS payment extension](pos-payment-extension.md)
+- [Run Retail POS samples](pos-run-samples.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
