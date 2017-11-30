@@ -5,7 +5,7 @@ title: Create and assign a trading partner code in the public sector
 description: Create a trading partner code and assign it to a government agency that your organization does business with. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 02/12/2016
+ms.date: 10/30/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -38,7 +38,7 @@ Create a trading partner code and assign it to a government agency that your org
 2. Click New.
 3. In the Trading partner code field, type a value.
     * The trading partner codes for government agencies are defined by the United States Department of the Treasury.  
-4. In the Description field, type the name of the agency that uses this code..
+4. In the Description field, type the name of the agency that uses this code.
 5. Click Save.
 
 ## Assign a trading partner code
@@ -47,6 +47,6 @@ Create a trading partner code and assign it to a government agency that your org
 3. Click to follow the link in the Name field.
 4. Click Edit.
 5. Expand the Miscellaneous details section.
-6. In the Trading partner code field, select the trading partner code for this agency..
+6. In the Trading partner code field, select the trading partner code for this agency.
 7. Click Save.
 

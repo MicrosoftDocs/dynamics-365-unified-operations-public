@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
@@ -62,25 +62,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 </thead>
 <tbody>
 <tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
-<td>Application update 3</td>
-<td>7.2.11792.62370</td>
-<td>September 2017</td>
-<td><a href="https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=a454835bf86493b0a878eed878045540ba632d897fabdc0b13c60f58292c7a84">KB 4043284 Application Update 3 for Dynamics 365 for Operations (Binary part)</a></td>
-</tr>
-<tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
-<td>Application update 2</td>
-<td>7.2.11792.62192</td>
-<td>September 2017</td>
-<td><a href="https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8">KB 4039142 Application Update 2 (Binary)</a></td>
-</tr>
-<tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
-<td>Application update 1</td>
-<td>7.2.11792.62089</td>
-<td>July 2017</td>
-<td><a href="https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=204b1f37a96118e0538a6cad6c91a398019308d0a6b558b86e1ebe35d8fb73c8">KB 4035749 Dynamics 365 for Finance and Operations, Enterprise edition application update 1 (binary)</a></td>
+
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
@@ -132,6 +114,19 @@ For information about how to upgrade to the latest version, see [Process for upg
 <th>Learn more</th>
 </tr>
 </thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 12</td>
+<td>7.0.4709</td>
+<td>November 2017</td>
+<td><a href="whats-new-platform-update-12.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)</a></td>
+<tbody><tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 11</td>
+<td>7.0.4679.35176</td>
+<td>October 2017</td>
+<td><a href="whats-new-platform-update-11.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)</a></td>
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>

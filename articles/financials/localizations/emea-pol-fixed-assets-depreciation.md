@@ -5,7 +5,7 @@ title: Fixed assets depreciation for Poland
 description: This topic provides information about fixed assets depreciation for legal entities in Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosti
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264274
 ms.search.region: Poland
@@ -43,7 +43,7 @@ The Fixed assets depreciation features that are based on legal requirements in
 -   Depreciation groups
 -   The same date, which is an option in the depreciation proposal to fill in the **Date** field value in all journal lines with a **To date** value that is defined in the Depreciation proposal.
 
-## Polandspecific depreciation methods
+## Poland-specific depreciation methods
 For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md). The following depreciation methods are available for legal entities in Poland:
 
 -   **Reducing balance (Poland)** – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition. The base for this depreciation method includes the following transaction types:

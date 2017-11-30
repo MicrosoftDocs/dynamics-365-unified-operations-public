@@ -5,7 +5,7 @@ title: Write business logic using C# and X++ source code
 description: The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 author: pvillads
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26821
 ms.assetid: 78f3c89c-2035-486d-9fba-35dd3c121d7d
@@ -81,7 +81,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
     -   Microsoft.Dynamics.AX.Data.Core.dll
 
-5.  Click**Add**, and then click **OK**. The assemblies now appear under the references node in the project.
+5.  Click **Add**, and then click **OK**. The assemblies now appear under the references node in the project.
 6.  Repeat the **Add Reference** process, except this time, add the following DLL file from the indicated path:
     -   Dynamics.Ax.FleetManagement.dll, in C:\\Packages\\FleetManagement\\bin
 
@@ -166,7 +166,7 @@ The following subsections provide the following:
 
 ### Preparatory overview
 
-When an attempt is made to add a record to a table, the OnValidateWrite event is raised by Dynamics AX before the record is written to the database. You want your CheckDriversLicense method to be called each time on the OnValidtaedWrite event is raised for the FMREntal table. To do this, you now need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of the type, DataEventArgs. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or additing it, to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. This assignment to a delegate might seem odd. After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer. This assignment step is temporary. We'll eventually have the same story in C\# as we do in X++, where an attribute is applied to the C\# event handler as the mechanism that ties the delegate to the handler. **Note**: The data source init method is called when the form is opened. Technically, the init method is inherited from the FormDataSource class.
+When an attempt is made to add a record to a table, the OnValidateWrite event is raised by Dynamics AX before the record is written to the database. You want your CheckDriversLicense method to be called each time on the OnValidateWrite event is raised for the FMRental table. To do this, you now need to write a C\# method that is invoked by the event, and which calls your checkDriversLicense method. In other words, you need to write an event handler that calls your CheckDriversLicense method. The event handler method receives a parameter of the type, DataEventArgs. The event handler can set a value in the DataEventArgs structure to accept or reject the record. After you write your event handler method, you connect it to the event by assigning, or adding it to the OnValidatedWrite delegate that is a member of the FMRental table. You write this assignment in the init method of the data source of the FMRental form. This assignment to a delegate might seem odd. After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer. This assignment step is temporary. We'll eventually have the same story in C\# as we do in X++, where an attribute is applied to the C\# event handler as the mechanism that ties the delegate to the handler. **Note**: The data source init method is called when the form is opened. Technically, the init method is inherited from the FormDataSource class.
 
 ### Write an event handler method
 

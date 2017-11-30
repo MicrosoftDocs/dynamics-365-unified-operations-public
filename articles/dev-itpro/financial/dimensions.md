@@ -5,7 +5,7 @@ title: Dimensions
 description: To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
@@ -75,7 +75,7 @@ This section describes how to create a data entity by using a wizard. We recomm
     
     [![Setting the project properties](./media/dim2.png)](./media/dim2.png)
 
-4.  Create a new entity that is named **DimensionTestEntity**, and add it to the project. When you click the **Add** button, the **Data Entity View** wizard starts. Under **Installed**, then select **Dynamics 365 Artifacts**, then select select **Data Model**. Select **Data Entity** from the list. **Note:** A naming convention document is evolving that covers data entities and other items.
+4.  Create a new entity that is named **DimensionTestEntity**, and add it to the project. When you click the **Add** button, the **Data Entity View** wizard starts. Under **Installed**, then select **Dynamics 365 Artifacts**, then selec **Data Model**. Select **Data Entity** from the list. **Note:** A naming convention document is evolving that covers data entities and other items.
 5.  Specify the property values for the data entity that you're creating, as shown in the following screen shot. **Note:** The most important field is **Primary data source**, where you select **DimensionEntityTestTable**.
 
     [![Setting the entity properties](./media/dim4.png)](./media/dim4.png) Click **Next**.

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities - System administration
-description: This article provides a list of the data entities that are available for System administration.
+description: This topic provides a list of the data entities that are available for System administration.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96433
 ms.assetid: 8ee91948-bb1d-409d-80f4-75f32f0a7c5b
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for System administration.
+This topic provides a list of the data entities that are available for System administration.
 
 
 **01.1.001 SYS - Currencies**
@@ -55,10 +55,10 @@ This article provides a list of the data entities that are available for System 
 
 | Suggested sequence | Entity name                             | Area                        | Entity type | Dependency | Comments                                                                                                                                                                                                                                                                                                                                        |
 |--------------------|-----------------------------------------|-----------------------------|-------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 4                  | Global address bok parameters           | Organization administration | Setup       | None       | Default values and security policies for address books, and privacy settings for address and contact information records.                                                                                                                                                                                                                       |
-| 5                  | Address books                           | Organization administration | Setup       | None       | Stores address book values that are used as a groupign mechanism for different types fo parties. A party is a person or organization that is either internal or external ot your organization. Each party has its own record.                                                                                                                   |
+| 4                  | Global address book parameters           | Organization administration | Setup       | None       | Default values and security policies for address books, and privacy settings for address and contact information records.                                                                                                                                                                                                                       |
+| 5                  | Address books                           | Organization administration | Setup       | None       | Stores address book values that are used as a grouping mechanism for different types for parties. A party is a person or organization that is either internal or external to your organization. Each party has its own record.                                                                                                                   |
 | 6                  | Name affixes                            | Organization administration | Setup       | None       | The name titles and suffixes that are defined in the system.                                                                                                                                                                                                                                                                                    |
-| 7                  | Name sequences                          | Organization administration | Setup       | Language   | Create name sequence patterns that can be used when you enter a perosn's party record information.                                                                                                                                                                                                                                              |
+| 7                  | Name sequences                          | Organization administration | Setup       | Language   | Create name sequence patterns that can be used when you enter a person's party record information.                                                                                                                                                                                                                                              |
 | 8                  | Relationship types                      | Organization administration | Setup       | None       | Define relationship types that can be used in the address book.                                                                                                                                                                                                                                                                                 |
 | 9                  | Address and contact information purpose | Organization administration | Setup       | Language   | Assign one or more purposes to a postal address record or a contact information record. A purpose describes how a particular address record or contact information record is used. It shows the list of addresses for a customer and the purposes that are assigned to each postal address.                                                     |
 | 10                 | Address parameters                      | Organization administration | Setup       | None       | Enables validation when you add address information. For example, if you enter the ZIP/postal code 12345 for a customer address, it is validated that the ZIP/postal code matches information that was previously entered for the country/region, county, and city that are included in the customer’s address. |

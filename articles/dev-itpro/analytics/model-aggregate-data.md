@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10234
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
@@ -63,16 +63,16 @@ If this is the first tutorial you are working on, make sure you have configured 
 
 If you have already imported the Fleet management tutorial project, skip to the next section. In Visual Studio, on the **Dynamics 365** menu, click **Import Project**.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **c:\\**, and unzip it.
 2.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 3.  In the **Select the file to import** window, browse to the location of the **FMLab** folder, click **FMTutorialDataModel.axpp**, and then click **Open**.
-4.  In the **Project file location** text box, enter **C:\\FMLab**.
+4.  In the **Project file location** text box, enter **C:\FMLab**.
 5.  Select the **Overwrite Elements** check box, and then click **OK**.
 
 ### Open the tutorial project
 
 1.  In Visual Studio, open the **FMTutorial** project. On the **File** menu, point to **Open**, and then click **Project/Solution**.
-2.  In the **Open Project** dialog box, browse to C:FMLabFMTutorial, and then click FMTutorial. Click **Open**. The **FMTutorial** project appears in **Solution Explorer**.
+2.  In the **Open Project** dialog box, browse to C:\FMLab\FMTutorial, and then click FMTutorial. Click **Open**. The **FMTutorial** project appears in **Solution Explorer**.
 3.  Use the FMTDataHelper class to load data for the Fleet Management tutorial. In **Solution Explorer**, in the FMTutorial project, expand **Classes**. Right-click **FMTDataHelper**, and then click **Set as Startup Object**.
 4.  On the **Build** menu, click **Rebuild Solution**. You use the rebuild to update the timestamps of the imported artifacts. You can view the build progress in the **Output** window.
 5.  Press **Ctrl+F5** to run the project and load the data.

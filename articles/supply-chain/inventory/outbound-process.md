@@ -18,7 +18,7 @@ ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistrati
 audience: Application User
 # ms.devlang:
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -66,7 +66,7 @@ Go to **Inventory management** \> **Setup** \> **Inventory and warehouse managem
 
 [![End output inventory order option](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Sometimes, some items in inventory can't be picked as part of the picking list process. For example, this situation might occur if a warehouse worker reduces the quantities on picking lines and processes the picking list. If the **End output inventory order** option is set to **Yes**, the remaining unpicked quantities are reported back to the order level. If the option is set to **No**, the remaining unpicked quantities are kept as an open output order quantity. In this case, the quantities remain released to the warehouse and must be added to a new picking list as part of the **Open output orders** functionality.
+When the warehouse worker reduces the picking list quantities, then the corresponding inventory order quantities will be removed from the shipment. When the picking list is updated at a point in time, the remaining quantities get reported back to the order if the **End output inventory order** option is set to **Yes**. If the **End output inventory order** option is set to **No**, the remaining quantities are kept as an open output order quantity and must be added to a new picking list as part of the **Open output orders** functionality. 
 
 [![Open output orders command on the Functions menu](./media/open-output-order.png)](./media/open-output-order.png)
 

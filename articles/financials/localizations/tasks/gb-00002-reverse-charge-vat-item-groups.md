@@ -5,7 +5,7 @@ title: Set up reverse charge VAT item groups, rules, and parameters (UK)
 description: This task walks you through setting up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom. 
 author: epodkolz
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -78,7 +78,7 @@ This walkthrough was created using the demo company GBSI.
 28. In the Category field, click the drop-down button to open the lookup.
 29. In the tree, expand 'Expand the category tree and select a category.'.
     * For this example, select Cleaning.  
-30. In the tree, select 'Select the caterory from the list'.
+30. In the tree, select 'Select the category from the list'.
     * For this example, select category Cleaning.  
 31. Click OK.
 32. Click Save.

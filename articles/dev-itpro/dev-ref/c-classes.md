@@ -5,7 +5,7 @@ title: C Classes
 description: System API classes that start with the letter C.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50962
 ms.assetid: 53eb660c-9a11-4f59-9870-a24502588ebf
@@ -1078,7 +1078,7 @@ The following code example calls the CodeAccessPermission::assertMultple method.
         static public void RunOnServerPermissionTest()
     {
         Set permissionSet;
-        str fileName = @"C:TestFile75a.txt";
+        str fileName = @"C:\TestFile75a.txt";
         boolean boolFileDeleted;
      
         permissionSet =  new Set(Types::Class);
@@ -1103,7 +1103,7 @@ The following code example calls the CodeAccessPermission::assertMultple method.
 ## Class COM
     class COM
 
-The COM class is use to create Component Object Model (COM) objects.
+The COM class is used to create Component Object Model (COM) objects.
 
 ### Remarks
 
@@ -1150,7 +1150,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close code access permission scope. 
@@ -1453,12 +1453,12 @@ Creates an instance of the COM class that can be attached to the COM class and o
 #### Parameters
 
 className  
-The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of MicrosoftWindows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
+The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of Microsoft Windows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
 
 <!-- -->
 
 computerName  
-The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of MicrosoftWindows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
+The name of the remote computer on which to instantiate the COM object; optional. If this parameter is omitted, the COM object is instantiated on the local computer. If the computer name is specified, the DCOM system component must be installed on both the local computer and the remote computer. The specific COM object must support DCOM, and it must be correctly configured on both the local computer and the remote computer. The system component is a standard component of Microsoft Windows 98, Windows NT, and later versions. In Windows 95, the DCOM system component must be installed.
 
 #### Remarks
 
@@ -1492,7 +1492,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close the code access permission scope. 
@@ -1842,7 +1842,7 @@ The number of characters to read for each record in the file.
 
 #### Remarks
 
-For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record.If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To ensure that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
+For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record. If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To ensure that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
 
 ### Method outFieldDelimiter
 
@@ -1963,7 +1963,7 @@ This example uses a CommaIO object to read from the example file.
         CommaIo myfile; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:myfile.txt") 
+        #define.ExampleFile(@"c:\myfile.txt") 
         #define.ExampleOpenMode("w") 
       
         // Set code access permission to help protect the use 
@@ -2012,7 +2012,7 @@ The following example uses a CommaIO object to read from the ExampleFile file.
         container       con; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:test.txt") 
+        #define.ExampleFile(@"c:\test.txt") 
         #define.ExampleOpenMode("r") 
       
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
@@ -2122,7 +2122,7 @@ The number of characters to read for each record in the file.
 
 #### Remarks
 
-For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record.If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
+For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record. If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
 
 ### Method outFieldDelimiter
 
@@ -2510,7 +2510,7 @@ If you pass in a value that has a different data type than the object, the data 
 
 #### Examples
 
-The following example creates a new COMVariant object of type VT\_I1 and sets the value tothe numeric value of A, which is 65.
+The following example creates a new COMVariant object of type VT\_I1 and sets the value to the numeric value of A, which is 65.
 
     { 
         COMVariant var = new COMVariant( 
@@ -4130,7 +4130,7 @@ In the following example, the createStatement method initializes the Statement o
         } 
         catch (exception::Error) 
         { 
-            print "An error occured in the query."; 
+            print "An error occurred in the query."; 
             pause; 
         } 
         // Code access permission scope ends here. 

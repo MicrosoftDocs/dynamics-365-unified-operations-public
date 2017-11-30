@@ -5,7 +5,7 @@ title: Establish customer method of payment
 description: Create a method of payment for customer payments. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 11/15/2016
+ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -55,6 +55,6 @@ Create a method of payment for customer payments. This task uses the USMF demo c
 13. Use the File format tab to define setting for electronic payments.
 14. Use the Payment control tab to define fields that are mandatory.
     * For example, if you require all payments with this method of payment to be deposited, you can choose that option on this tab.  
-15. Use the Payment atrributes tab to define which payment attributes you want to use for this method of payment.
+15. Use the Payment attributes tab to define which payment attributes you want to use for this method of payment.
 16. Click Save.
 

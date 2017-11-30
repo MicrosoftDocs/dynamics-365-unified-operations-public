@@ -5,7 +5,7 @@ title: Intrusive customizations
 description: This topic defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 07/11/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -40,7 +40,7 @@ Types are referenced by their definition. A change to a type’s definition is a
 
 + Don't change a method signature. The method signature includes the return type, the name (which includes casing), and the parameters (which include optional parameters).
 + Don't change requirements for implementers of interfaces and table maps. For example, don't add a new method to an interface or a new field to a table map.
-+ Don't change requirements for classes that are derived from abstract classes. For example, don'tadd a new abstract method to a class.
++ Don't change requirements for classes that are derived from abstract classes. For example, don't add a new abstract method to a class.
 + Don't reduce access modifiers for types or members. For example, don't change classes, tables, or methods from public to private.
 + Don't change constraints that are defined on a table or a data entity. Restraints include allowing editing, mandatory constraints, uniqueness constraints, and referential constraints.
 

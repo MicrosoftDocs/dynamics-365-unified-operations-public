@@ -5,7 +5,7 @@ title: Add contextual BI to forms
 description: In this tutorial you'll model a form part that displays the previous rental history of vehicles. You'll add the form part to the Vehicles form using a DynaLink. When the user views a vehicle record, the part displays relevant rental history. 
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24571
 ms.assetid: 7c878bad-028d-4134-a83f-10386cf7c72e
@@ -58,10 +58,10 @@ If this is the first tutorial you’re working on, follow the steps in the **App
 
 This tutorial works on Fleet Management model.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **c:\\*, and unzip it.
 2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
-4.  In the Select the file to import window, browse to **C:\\FmLab\\Lab 10-2** folder, click **Add contextual BI to forms –Before Lab.axpp**, and then click **Open**.
+4.  In the Select the file to import window, browse to **C:\FmLab\Lab 10-2** folder, click **Add contextual BI to forms –Before Lab.axpp**, and then click **Open**.
 5.  Select the **Overwrite Elements** option, and then click **Ok**.
 6.  Open the project **BIR102 Adding contextual BI - Before Lab.** Double-click the **FMVehicle** form in Solution Explorer.
 
@@ -87,7 +87,7 @@ This tutorial works on Fleet Management model.
 Next, we will review the form part.
 
 1.  In Solution Explorer, select and double-click the form part **FMBIVehicleRentalsAndRevenue\_Part**.
-2.  The form part will be appear in the Form designer as shown below. 
+2.  The form part will appear in the Form designer as shown below. 
     
     [![BIforms2](./media/biforms2.png)](./media/biforms2.png)
 

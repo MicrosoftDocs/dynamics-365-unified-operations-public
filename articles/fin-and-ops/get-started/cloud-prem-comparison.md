@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -90,7 +90,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Transportation management| | Yes | Yes |
 | Vendor collaboration| | Yes | Yes|
 | Warehouse management| | Yes | Yes |
-| | Mobile warehouse app| Yes | No |
+| | Mobile warehouse app| Yes | Yes |
 | | Warehousing Power BI reports| Yes | No |
 | Web client | | Yes | Yes |
 | | Task recorder - Save or load task recordings from the BPM library| Yes | No |

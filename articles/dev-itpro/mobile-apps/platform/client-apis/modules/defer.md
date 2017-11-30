@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Defer
-description: 
+description: Defer type
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
@@ -36,7 +36,7 @@ ms.dyn365.ops.version:
 ### Functions
 
 * [all](defer.md#all)
-* [defer](defer.md#defer)
+* [defer](defer.md)
 * [reject](defer.md#reject)
 * [resolve](defer.md#resolve)
 

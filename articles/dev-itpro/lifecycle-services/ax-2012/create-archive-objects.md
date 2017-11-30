@@ -5,7 +5,7 @@ title: Create an archive object for the Intelligent Data Management Framework
 description: This topic describes how to use archive objects.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17931
 ms.assetid: 4d3e61d1-48aa-4e39-8112-6d211a1d0209
@@ -258,7 +258,7 @@ The relationship tree of an Archive Object can be very complex. In order to arch
     </tr>
     <tr class="even">
     <td><strong><span class="ui">Properties</span></strong></td>
-    <td>Shows properties for the selected table and provides commands that you can use for the selected table.When a table in the Archive Object contains multiple relations, you can use the <span class="ui">Relations</span> node in the tree view to disable one or more relations, as detailed later in this section.</td>
+    <td>Shows properties for the selected table and provides commands that you can use for the selected table. When a table in the Archive Object contains multiple relations, you can use the <span class="ui">Relations</span> node in the tree view to disable one or more relations, as detailed later in this section.</td>
     </tr>
     <tr class="odd">
     <td><strong><span class="ui">Remove table</span></strong></td>
