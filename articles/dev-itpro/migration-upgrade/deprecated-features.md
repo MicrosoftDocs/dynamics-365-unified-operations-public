@@ -65,7 +65,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
