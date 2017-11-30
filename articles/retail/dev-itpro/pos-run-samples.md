@@ -56,7 +56,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
     }
     ```
     **Note:** In the extension.json file you must include at least two extension folders. If you add only one extension folder, then POS will not load the extension.
-1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to determine whether to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS, then you need add the extension folder name and comment the extension from the extension as shown. 
+1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to determine whether to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS, then you need add the extension folder name and comment out the extension from the extension as shown. 
     ```Typescript
     {
         "extends": "../tsconfigs/tsmodulesconfig",
