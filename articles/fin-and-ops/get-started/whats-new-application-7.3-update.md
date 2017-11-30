@@ -37,21 +37,6 @@ To learn more about the new features and changes in all of the latest product re
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
-Batch balancing for items enabled for advanced warehouse processes 
--------------------------------------------------------------------
-
-Batch balancing is the process where materials for a batch order are calculated
-and prepared based on selected batches with a registered amount of an active
-ingredient.
-
-The batch balancing scenario was introduced in Dynamics AX 2012 R2, but the
-scenario was not part of the scenarios enabled for the advanced warehouse
-processes introduced in Dynamics AX 2012 R3.
-
-This feature makes it possible to use products, enabled for the advanced
-warehouse processes, for the batch balancing scenario. You can also release
-materials to warehouse after the batch balancing process has been completed.
-
 Demand forecast entries data entity enabled for Data management framework
 -------------------------------------------------------------------------
 
@@ -112,11 +97,6 @@ Highlights of these integration enhancements include:
 
 -   Sync support for country/region ISO codes on invoice address, exposed on
     data entities.
-
-Enhanced material overview for production and batch orders   
--------------------------------------------------------------
-
-A new page provides an overview of material status for BOM and formula lines for production and batch orders. This page can be opened from the production and batch orders details and list page, the job list in the Production floor management workspace, and the current operations list. This page is helpful when preparing materials for the coming period or for acting in case of material stock out.
 
 ## Expense management mobile workspace enhancements
 This feature provides support for functionality that is available in expense management that was not available in the mobile solution for expense management. This list includes (but is not limited to):
