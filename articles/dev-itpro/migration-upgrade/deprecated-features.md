@@ -34,12 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0 
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are not in active development and may be removed (deprecated) in future releases of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations, Enterprise edition.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!Note]
-> Starting with the Dynamics 365 for Finance and Operations, Enterprise edition version 7.2 (July 2017) with platform update 8 release, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+> Starting with the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
 ## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
@@ -126,7 +129,7 @@ Users can download this from goverment portal.
 
 
 
-## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8
+## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8
 
 ### Warehouse mobile devices portal
 
@@ -451,7 +454,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 | **Product areas affected**         | Human capital management                 |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
 
-## Features that have been deprecated in Dynamics AX 7.0 releases
+## Features that have been deprecated in Dynamics AX 7.0 release
 
 
 ### Ability to cancel changes to a vendor invoice
