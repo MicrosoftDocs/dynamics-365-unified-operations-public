@@ -37,8 +37,8 @@ Fixed assets are items of value, such as buildings, vehicles, land, and equipmen
 
 The topics in this section provide information about fixed assets for India.
 
-- [](apac-ind-calculate-post-depreciation.md)
-- [](apac-ind-calculation-shift-depreciation.md)
-- [](apac-ind-reverse-fixed-assets-transactions.md)
+- [Create and post depreciation for a fixed asset group using depreciation books](apac-ind-calculate-post-depreciation.md)
+- [Shift depreciation calculation](apac-ind-calculation-shift-depreciation.md)
+- [Reversing fixed asset transactions](apac-ind-reverse-fixed-assets-transactions.md)
 
 
