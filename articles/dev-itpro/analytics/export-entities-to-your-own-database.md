@@ -38,7 +38,7 @@ The BYOD feature lets administrators configure their own database, and then expo
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
 - Export either all the records (*full push*) or only the records that have changed (*incremental push*).
-- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable recurring exports.
+- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
 ## Entity store or BYOD?
@@ -155,7 +155,7 @@ If you select to do an incremental push, whenever a new record is inserted, or a
 
 Full push truncates the table and inserts all the records from the selected entity.
 
-You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a recurring basis by selecting the **Create recurring data job** option.
+You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
 ### Known limitations
 
