@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -306,17 +306,17 @@ Values for these supported payment specifications are used as payment specificat
 <td>Not implemented</td></tr>
 <tr class="even">
 <td>Vendor collaboration (Vendor Portal)</td>
-<td>AX2012 provided vendor portal capabilities via EP, these capabilites are stepwise ported to Dynamics 365 for Financial and Operations. In Version 7.1 A vendor could view and repond to purchase orders in Dynamics 365 For Financial and Operations.
-</p><p>In 7.3 The vendor can view and respond to RFQ's.Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, contact persons, upload documents in relation to their certifications.<p/>
+<td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. These capabilites have been ported to Financial and Operations. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and repond to purchase orders.
+</p><p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.<p/>
 </td>
 <td>Implemented in version 7.3</td></tr>
 <tr class="odd">
 <td>Vendor requests - external request to become a new vendor</td>
-<td>AX2012 provided the ability for an anonymous user to signup to be a vendor in the system which could lead to a vendor request for adding a new vendor to the vendor master. In 7.3 this process has been enabled in a slightly different way: The anonymous request from a prospective vendor can be imported via an entity (Data Management / Odata) which can lead to inviting the vendor - or the vendors contact person - to register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Dynamics 365 For Financial and Operations.
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, this process has been enabled in a slightly different way: The anonymous request from a prospective vendor can be imported via an entity (Data Management/Odata) which can lead to inviting the vendor - or the vendor's contact person - to register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.
 </td>
 <td>Implemented in version 7.3</td></tr>
 <td>Vendor requests in general</td>
-<td>AX2012 had a concept of vendor requests" that served various purposes related to update vendor related information: requesting new procurement categories for the vendor, internal employees requested new vendors, request to add vendor to another company etc. Only Vendors request of being added as a vendor has been implemented in 7.3.
+<td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to update vendor related information: requesting new procurement categories for the vendor, internal employees requested new vendors, request to add vendor to another company etc. Only Vendors request of being added as a vendor has been implemented in 7.3.
 </td>
 <td>Not implemented</td></tr>
 </tbody>
