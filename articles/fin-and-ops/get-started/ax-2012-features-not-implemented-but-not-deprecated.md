@@ -319,6 +319,7 @@ Values for these supported payment specifications are used as payment specificat
 <td>Vendor requests in general</td>
 <td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to update vendor related information, such as requesting new procurement categories for the vendor, internal employees requested new vendors or request to add vendor to another company. Only vendor's request of being added as a vendor has been implemented in 7.3.</td>
 </td>
+<tr class="odd">
 <td>Customizable help topics</td>
 <td>The ability to create customized help topics has not yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update. </td>
 <td>Not implemented</td></tr>
