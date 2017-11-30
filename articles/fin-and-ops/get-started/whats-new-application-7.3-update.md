@@ -63,6 +63,11 @@ In addition, each demand forecast entry is uniquely identified by a sequence
 number (entity field ForecastEntryNumber). For all integrations consider this
 unique identifier, even if it doesn’t exist in the source or third-party system.
 
+## Demo data in data packages 
+Demo data has been delivered in prior releases as a database with a large number of companies. In addition to that database, we also create data packages using the demo data companies so that you can load your demo data on an empty environment using the data management framework. These data packages will be delivered, for a specific release, as assets in the global shared assets library in Lifecycle Services (LCS). Instructions for loading the data packages will also be provided. 
+
+The data packages are similar but not identical to existing demo companies and may change over time. The packages are very small and provide a quick way to download the demo data and modify it before you import it into an environment. We will continue to add additional demo data for more companies and module functionality in the future.
+
 Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations
 -------------------------------------------------------------------------------------------------------------------
 
