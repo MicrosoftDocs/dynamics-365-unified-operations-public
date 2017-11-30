@@ -357,6 +357,10 @@ We have extended the current Vendor collaboration interface by enabling:
 
 -   Notifications sent to vendors when certain criteria are fulfilled.
 
+## Warehouse - Fulfillment policy added to full or partial batch release of transfer orders
+
+The release to warehouse batch job is enriched by a fulfilment policy that is equivalent to the functionality for sales order, but now also includes transfer orders. You can batch release transfer orders according to a fulfilment rate policy. The policy can also be applied for the **Manual release to warehouse** form, as well as from the load release. It is also possible to override the default policy at a line level when releasing manually.
+
 Warehouse - Tare weight used in containerization is included in the load’s gross weight
 ---------------------------------------------------------------------------------------
 
