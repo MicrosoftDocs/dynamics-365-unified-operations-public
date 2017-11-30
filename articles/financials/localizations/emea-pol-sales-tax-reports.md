@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -277,34 +276,32 @@ Here are the results of the posting:
 -   Line 3 has a tax transaction that has a sales tax direction of **Sales tax receivable**.
 -   Line 4 has a tax transaction that has a sales tax direction of **Sales tax payable**.
 
-## Poland - SSRS VAT register report
+## SSRS VAT register report
 The **VAT register** report is considered the main tax summary document. The VAT statement is prepared based on this report. It's the main tax reporting audit document in every Polish company. The VAT for sales, purchases, and imported products must be processed separately. The legislation also defines several official reports for VAT and conditions for transactions that must be included on the reports. The **VAT register** report is a basic document that is used in Polish accounting as the basis for reporting taxes to the tax authorities. The VAT registers are printed regularly for reporting periods. (They are usually printed every month.) The reports must be printed on paper, and they must be signed by one or more authorities, such as a chief accountant or a CFO. They are used as the basis for the monthly VAT 7 tax declaration. You can access **VAT register** reports from several places:
 
--   Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; EU summary VAT register
--   Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; Purchase VAT register
--   Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; Sales VAT register
+-   **Tax** > **Inquiries and reports** > **Sales tax reports** > **EU summary VAT register**
+-   **Tax** > **Inquiries and reports** > **Sales tax reports** > **Purchase VAT register**
+-   **Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales VAT register**
 
-## Poland - Allowance for Bad Debts
-Polish value-added tax (VAT) law regulations among others apply to situations where unpaid invoices occur and VAT adjustments are required. The regulations are following:
+## Allowance for bad debts
+Polish value-added tax (VAT) law regulations affect situations where unpaid invoices occur and VAT adjustments are required. Consider the following: 
 
 -	On the creditor side, it is possible to correct output VAT on unpaid invoices (receivables) under following conditions:
-	- Delivery of goods or services was provided to an active VAT taxpayer.
-	- Debtor, on the day before submission VAT statement in which bad debt allowance will be used is an active VAT taxpayer, has not been the subject of bankruptcy or liquidation.
-	- Receivable is not overdue more than 2 years.
-
+	-	Delivery of goods or services was provided to an active VAT taxpayer.
+	-	Debtor, on the day before submission VAT statement in which bad debt allowance will be used is an active VAT taxpayer, has not been the subject of bankruptcy or liquidation.
+	-	Receivable is not overdue more than 2 years.
 -	Correction of output VAT can be done for period, in which receivable is proofed to be irrecoverable, which is meant as not paid within 150 days from original due date (It was neither sold nor paid).
 -	On the debtor side, debtor is obliged to correct input VAT in period, in which passed 150 days from purchase invoice original due date for payables, which are not paid. This is unconditional requirement. It means that debtor is obliged to do correction, even if debtor did not used possibilities of allowance for bad debt. 
-If an invoice was paid (or receivable was sold by creditor) after allowance for bad debts was used, allowance should be reversed in VAT statement for the period in which the invoice was paid (or receivable was sold by creditor). If the payment was partial, reversal should be done partly (proportionally to original invoice amount).
-The accountant working with Account Payable or Account Receivable must identify periodically bad debts. The debts get bad when the invoices are not paid more than 150 days but less than 2 years later than the planned due date. 
-The incoming and outgoing VAT may and should be corrected (reversed) for the identified debts but the final decision is up to the accountant. It means that the accountant can manually exclude some invoices identified automatically.
-If the debts are paid in the next accounting period, the VAT will have to be be reversed back proportionally to the payment sum.
-
-Periodical procedure identifies the bad debts based on the vendor's or customer's open transactions and settlements from one side and on the payment schedule from the other side. 
-The VAT in identified debt sum is allocated between the VAT codes in invoice lines to be reversed.
-The sums of settled payments are also allocated in the same manner to the VAT codes in invoice lines to be reversed back. 
-The journals may be cancelled starting from the last one if there is a mistake. The transactions will be reversed.
-The allocation of VAT sums happened by posting.
-General ledger (GL) accounts for VAT correction posting and periods for bad debts must be set up.
+-	If an invoice was paid (or receivable was sold by creditor) after allowance for bad debts was used, allowance should be reversed in VAT statement for the period in which the invoice was paid (or receivable was sold by creditor). If the payment was partial, reversal should be done partly (proportionally to original invoice amount).
+-	The accountant working with Account Payable or Account Receivable must identify periodically bad debts. The debts get bad when the invoices are not paid more than 150 days but less than 2 years later than the planned due date. 
+-	The incoming and outgoing VAT may and should be corrected (reversed) for the identified debts but the final decision is up to the accountant. It means that the accountant can manually exclude some invoices identified automatically.
+-	If the debts are paid in the next accounting period, the VAT will have to be be reversed back proportionally to the payment sum.
+-	Periodical procedure identifies the bad debts based on the vendor's or customer's open transactions and settlements from one side and on the payment schedule from the other side. 
+-	The VAT in identified debt sum is allocated between the VAT codes in invoice lines to be reversed.
+-	The sums of settled payments are also allocated in the same manner to the VAT codes in invoice lines to be reversed back. 
+-	The journals may be cancelled starting from the last one if there is a mistake. The transactions will be reversed.
+-	The allocation of VAT sums happens by posting.
+-	General ledger (GL) accounts for VAT correction posting and periods for bad debts must be set up.
 
 To use that functionality, you need to configure system. These are the main configuration areas:
  
@@ -313,41 +310,40 @@ To use that functionality, you need to configure system. These are the main conf
 	 - **Customer VAT journal**
 	 - **Vendor VAT journal**
 3. Set up each journal with the following information:
-	-	**Minimum number of days**: Enter the minimum period of time that would indicate the invoice is overdue, it is usually 150 days.
-	-	**Maximum number of days**: Enter the maximum period of time that the invoice will not be considered as overdue, it is usually 2 years – 720 days.
-	-	**Calculation type** field: Select the date type for each overdue invoice to be calculated. The available values are Due date and Invoice date.
-	-	**Validate** option. If the check box is selected, it validates that transactions do not change balance on date of last posted journal.
+	- **Minimum number of days**: Enter the minimum period of time that would indicate the invoice is overdue, it is usually 150 days.
+	- **Maximum number of days**: Enter the maximum period of time that the invoice will not be considered as overdue, it is usually 2 years – 720 days.
+	- **Calculation type** field: Select the date type for each overdue invoice to be calculated. The available values are Due date and Invoice date.
+	- **Validate** option. If the check box is selected, it validates that transactions do not change balance on date of last posted journal.
 	> [!NOTE]
 	> The **Condition** and the **Payment term days** should remain empty.
 
-2. On the **Accounts receivable parameters** page and the **Accounts payable parameters** page, set up the following number sequence references:
+4. On the **Accounts receivable parameters** page and the **Accounts payable parameters** page, set up the following number sequence references:
  	- **Journal number for overdue debt VAT**
  	- **Overdue debt VAT journal**
-
-3. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting group** and select the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax**.
+5. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting group** and select the general ledger accounts for the **Offset Reversed Incoming Tax** and the **Offset Reversed Outgoing Tax**.
 
 
 Once you have system configured to working with overdue debts you use the **Overdue debt VAT** periodic function in the accounts receivable and the accounts payable modules to manage your overdue debts. 
 
 You can perform following actions in the form:
 
- - **Create** a journal. You set up the date on which debt amount will be calculated. Interval of dates will be calculated automatically based on setup in the Overdue journal calculation settings.
-**Note**: When you create a journal, all overdue unpaid invoices for journal periods are automatically included. It also includes invoices for which payments were processed in that period. Information will be available in the **Paid amount** and the **Paid tax amount** fields.
-You can click on a journal number to open journal details and review tabs:
+ - **Create a journal**: You set up the date on which debt amount will be calculated. Interval of dates will be calculated automatically based on setup in the Overdue journal calculation settings.
+	> [!NOTE]
+	> When you create a journal, all overdue unpaid invoices for journal periods are automatically included. It also includes invoices for which payments were processed in that period. Information will be available in the **Paid amount** and the **Paid tax amount** fields.
+	You can click on a journal number to open journal details and review tabs:
 	 - **Overdue debt VAT journal header** (you can change the view between Lines and Header)
 	 - **Overdue debt VAT journal lines** including information about customer's or vendor's invoices that contain bad debts classified in reporting period. The **Exclude** check box allows you to exclude any invoice from journal that you don’t want to process. If any part of that invoice is already processed (VAT refund is finished), such an invoice cannot be excluded. Totals amounts that are presented in the columns are reflected on the header of the form. The amounts are recalculated when filtering the lines. 
 	 - **Line details** – showing customer or vendor account, transaction and overdue debt amount details.
- - **Post** a journal. It allows you to create VAT reverse transaction for invoices that are included in the journal. Posted journal can be cancelled.
- - **Cancel** posted journal. The Cancel function is available only for the last journal. During cancelation you can select the type of correction transaction, either correction or reverse. There is a Correction check box in the dialog to indicate your choice.
- - Review **vouchers** – View voucher transactions that are created during post or cancelation.
- - Review **Posted sales tax** – View posted sales tax transactions that are allocated into tax codes from invoices.
- - Open **counting** – View the summary information for customer or vendors, and their invoices included in the journal.
+ - **Post a journal**: It allows you to create VAT reverse transaction for invoices that are included in the journal. Posted journal can be cancelled.
+ - **Cancel posted journal**: The Cancel function is available only for the last journal. During cancelation you can select the type of correction transaction, either correction or reverse. There is a Correction check box in the dialog to indicate your choice.
+ - **Review vouchers**: View voucher transactions that are created during post or cancelation.
+ - **Review Posted sales tax**: View posted sales tax transactions that are allocated into tax codes from invoices.
+ - **Open counting**: View the summary information for customer or vendors, and their invoices included in the journal.
 
-The Fact boxes pane displays amounts for all invoices that contain bad debts and are not paid until the end of reporting period. There are overdue amount and overdue tax amount there as well.
+The FactBoxes pane displays amounts for all invoices that contain bad debts and are not paid until the end of reporting period. There are overdue amount and overdue tax amount there as well.
 
-
-## Poland - Remove costs from overdue invoices 
-Polish taxation rules force companies not to overdue payments to contractors and introduced a penalty for not paying on time. The penalty is that you cannot treat costs from overdue invoices as PIT/CIT tax deductible costs any longer.
+## Remove costs from overdue invoices 
+Polish taxation rules require companies to not have overdue payments to contractors and the rules also introduced a penalty for not paying on time. The penalty is that you cannot treat costs from overdue invoices as PIT/CIT tax deductible costs.
 The invoices cannot be treated as tax deductible in one of the following conditions:
 -	The original due date term is shorter than 60 days, and the invoice is not paid within 30 days from the original due date.
 -	The original due date term is longer than 60 days, and the invoice is not paid within 90 days from the date that is included in tax costs (for example, the posting date/period).
@@ -355,8 +351,10 @@ The invoices cannot be treated as tax deductible in one of the following conditi
 For PIT/CIT purposes, the correction of costs should be done in the month that they were excluded from tax costs, and the correction can be reverted in the month that invoice was finally paid. If the invoice was partly paid, the correction/reverse of the correction can also be done partly.
 The correction of cost is used in the situation when the invoice is a direct cost (for example, office rent), or when the invoice is not posted directly into cost accounts. Examples: the invoice is related to the purchase of a fixed asset, the depreciation of the fixed asset is not tax-deductible cost or if the invoice is related to the purchase of goods for resale, the cost of the goods sold is not tax-deductible cost.
 
-**Note**: The described functionality only lets user identify, if there are any invoices which should be considered for correction and it is fully user responsibility to apply required adjustments in postings.
-To use that functionality, you need to configure system. These are the main configuration areas:
+> [!NOTE] 
+> The described functionality only lets you identify if there are any invoices which should be considered for correction. It is your  responsibility to apply the required adjustments when you post.
+
+To use the above-mentioned functionality, you need to configure system. These are the main configuration areas:
 
 1. Go to **General ledger** > **Journal setup** > **Overdue debt journal calculation** to set up debts overdue intervals. The following is an example of a typical interval setup:
 	- Period 1: Create a new entry, select the Vendor CIT and PIT journal type and set up the following:
