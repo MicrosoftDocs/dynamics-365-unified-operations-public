@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Excel data entity templates
@@ -32,25 +32,26 @@ ms.dyn365.ops.version: Platform update 13
 
 # Excel templates with multiple worksheets
 
-Data management supports excel based templates for data entities. These templates can also have multiple worksheets. This often comes into play when data is logically grouped into a single excel file but in different worksheets, an example of which would be, sites and warehouses or journals of various kind. In such cases, it is convenient to manage the data in a single file and import across multiple data entities.
+Data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports Microsoft Excel-based templates for data entities. These templates can contain one or more worksheets. Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities. An example would be sites and warehouses.
 
-### Upload the file once and map it to all entities
-Let’s take an example where there is one excel file with two worksheets called, Sites and Warehouses. When setting up the data import project, one would add the first data entity, say, Sites and then upload the excel file. You will be able to select ‘Sites’ as the worksheets to be used for this entity.
+## Upload a file once and map it to all entities
+Let’s take an example where there is one Excel file with worksheets called **Sites** and **Warehouses**. To set up the data import project, you would add the first data entity, **Sites** and then upload the file. You will be able to select **Sites** as the worksheet to be used for this entity.
 
-Now, if the second entity ‘Warehouses’ is also added without exiting the ‘add file’ form, the worksheet look-up will allow to select the ‘Warehouses’ worksheet without having to upload the file again. The only reason to upload a new file will be if the ‘Warehouses’ data was in a different file.
+If you add the second entity **Warehouses** without leaving the **Add file** form, the worksheet lookup will let you select the **Warehouses** worksheet without having to upload the file again. The only reason to upload a new file would be if the **Warehouses** data was in a different file.
 
 ![Multiple worksheets](./media/AddFileMultipleWorkSheets.png) 
 
-### Fixing the worksheet to entity mapping
-The mapping of the worksheet to a data entity in the import job can be fixed from the grid. The ‘Worksheet’ column in the grid shows the worksheets from the file that was mapped. A different worksheet can be chosen from the dropdown. If the chosen worksheet is already mapped to an entity in the data project, the system seeks a confirmation before proceeding. It is recommended to fix the mapping in the grid itself if the file being used is the same file that was used initially.
+## Fix worksheet to entity mapping
+
+The mapping of the worksheet to a data entity in the import job can be fixed from the grid. The **Worksheet** column in the grid shows the worksheets from the file that was mapped. You can choose a different worksheet from the dropdown. If the chosen worksheet is already mapped to an entity in the data project, the system asks you to confirm the change. We recommend that you fix all mappings in the grid.
 
 ![Update worksheet mapping](./media/UpdateMappings.png)
 
-### Re-mapping to a new file
+## Re-map to a new file
 
-In cases where a new file (new version of the same file or a completely new file) must be uploaded for existing entities in a data project, the ‘add file’ experience must be used, and the entities must be added again as if they were being added for the first time. The system will seek confirmation to override the existing entities in the data project before proceeding. Entities that are not added again (or overwritten) will continue to hold the previous mappings from the previous file.
+In cases where a new version of the same file or a completely new file must be uploaded for existing entities in a data project, you must use the **Add file** experience, and add the entities again as if they were being added for the first time. The system will confirm that you want to overwrite the existing entities in the data project before proceeding. Entities that are not added again (or overwritten) will continue to hold the previous mappings from the previous file.
 
-### Uploading a file in the ‘Run project’ experience
+## Upload a file using Run project
 
-When using the ‘Run project’ option to execute an import project, the excel file can be uploaded. However, care must be taken to upload the file that has the same worksheet(s) as per exiting mappings on the data entities in the data project. If a worksheet is not found in the newly uploaded file, the system would throw an error and will prevent from proceeding. If the mapping to the worksheet must be changed for an entity, then the mapping(s) in the data project must be first updated from within the data project before using the file in the ‘Run project’ experience.
+You can upload an Excel file while using the **Run project** option to execute an import project. You must be careful to upload only files that have the same worksheets as the existing mappings on the data entities in the data project. If a worksheet is not found in the newly uploaded file, the system throws an error and will stop the import. If the mapping to the worksheet must be changed for an entity, then the mappings in the data project must be first updated from within the data project before using the file in the **Run project** experience.
 
