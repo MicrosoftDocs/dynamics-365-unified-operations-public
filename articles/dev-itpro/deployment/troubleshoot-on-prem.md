@@ -362,6 +362,102 @@ Redirect login questions/issues
 
 In ADFS machine go to **Event Viewer** > **Applications and Services Logs** > **AD FS** > **Admin note any errors**.
 
+### Login issues / Reset user 
+Verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If so then on    
+           - SQL primary box run .\Reset-DatabaseUsers.ps1 
+On each AOS, open Task Manager and end task on AXService.exe 
+Can verify user has been set via running following select in SQL AXDB  
+
+            - select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'admin' 
+            
+Note on SIDs 
+
+- SID in AAD environment (online) is a hash of network alias, network domain 
+- SID in AD environment (on-premises) is a hash of network alias, identify provider 
+
+If still can't log in due to "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds" then see ADFS section 
+
+### System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
+
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)  
+
+System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted 
+
+
+The certificates have not been installed or given access to the correct users 
+Add the public key SQL server certificate on all the service fabric nodes 
+
+### Keyset does not exist 
+Didn’t run scripts on all machines as per instructions. Go back and review Install Certificates section. Copy the scripts in each folder to the VMs that correspond to the folder name. 
+
+Also check csv file for correct domain being used 
+
+### RunAsync failed due to an unhandled FabricException causing replica to fault
+RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0: 
+
+Change ClusterConfig.json diagnosticsStore from network share to local path, ex \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore 
+
+### Dbsync (DB sync) issues 
+Look at AOS working directory, ex C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log 
+Also review on all AOS machines  
+
+- Event Viewer > Custom Views > Administrative Events 
+- Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-DatabaseSynchronize 
+
+### Invalid algorithm specified / Cryptography  
+‘Invalid algorithm specified’ error. Need to use Provider of Microsoft Enhanced RSA and AES Cryptographic Provider. Review requirements of certificates  
+Also verify Credentials.json file structure is correct 
+
+### Partition is below target replica or instance count 
+Not a root error. Means status of each node is not ready. For AXSF/AOS status could still be inBuild 
+Proceed to go to Event Viewer to get root error as well as c:\ProgramData\SF… 
+
+### "Unable to find certificate" error when running Test-D365FOConfiguration.ps1 
+Check to see if combining certs/thumbprints for multiple purposes. Example if combining client and SessionAuthentication will receive this error. Advised not to combine certificates. See certificate requirements 
+Check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure) 
+
+### The client and server cannot communicate, because they do not possess a common algorithm 
+Verify star certificate requirements, example provider being used 
+ 
+### How to find gMSA / group managed service accounts 
+Way to list all groups and/or hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
+PrincipalsAllowedToRetrieveManagedPassword 
+
+### AddCertToServicePrincipal script failing on Import-Module 
+AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.  
+
+Run the following command in PowerShell 
+        
+        Uninstall-Module -Name AzureRM  
+        Install-Module AzureRM 
+Close the PowerShell window and try again.
+
+### ReportingServicesSetup.exe Error
+
+ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes 
+Application: ReportingServicesBootstrapper.exe 
+Framework Version: v4.0.30319 
+Description: The process was terminated due to an unhandled exception. 
+
+Strong name validation needs to be disabled in the Reporting server 
+Run the config-PreReq script in Reporting server machine to disable strong name validation. 
+
+### The requested operation requires elevation 
+AOS users are not in local administrator group and the UAC has not been disabled correctly. Complete the following steps to resolve the issue. 
+1. Add AOS users as local admins as described in the section Join VMs to the domain 
+2. Run the Config-PreReq script on all the AOS machines 
+3. Make sure Test-Configuration script passes 
+4. If UAC was changed, need to restart machine to take effect 
+
+### Files in use errors
+Set up exclusion rules advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 
 
+ 
+
+
+
+
+
+ 
