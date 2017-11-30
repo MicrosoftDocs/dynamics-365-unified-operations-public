@@ -366,6 +366,17 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 | **Product areas affected**         | Accounts receivable                                                                        |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                             |
 
+### Payroll information in Human Resources
+
+Human Resources Payroll information
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | This functionality has been replaced by core Payroll and Human Resources pages.  |
+| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll**configuration key. |
+| **Product areas affected**         | Human Resources, Payroll   |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
+
 ### Performance management goal workflow
 
 Performance management includes goal management and integration with performance reviews.
@@ -375,7 +386,7 @@ Performance management includes goal management and integration with performance
 | **Reason for deprecation/removal** | Performance management was redesigned, and the number of goal pages was reduced to simplify the process.                 |
 | **Replaced by another feature?**   | No. Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager. |
 | **Product areas affected**         | Human capital management       |
-| **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611    |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
 
 ### Postgirot and Postgirot Utland payment formats for Sweden
 
@@ -421,6 +432,15 @@ The names of the manager and the general accountant of a company can be specifie
 | **Product areas affected**         | Accounts payable, Accounts receivable, Cash and bank management |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.  |
 
+### Shipping carrier interface
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Duplicate functionality   |
+| **Replaced by another feature?**   | Partially replaced by Transportation management |
+| **Product areas affected**         | Sales and marketing, Inventory management  |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611.  |
+
 ### Telepay payment formats for Norway
 
 Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).
@@ -443,6 +463,26 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 | **Product areas affected**         | Accounts payable                                               |
 | **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
+### Warehouse management II
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
+| **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing   |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
+
+### Worker reminders in Human Resources
+
+Human Resources Payroll information
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Low usage                                                           |
+| **Replaced by another feature?**   | No                                                                  |
+| **Product areas affected**         | Human resources                                                     |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611 |
+
 ### Workflow for creating goals
 
 A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.
@@ -452,7 +492,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 | **Reason for deprecation/removal** | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.     |
 | **Replaced by another feature?**   | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
 | **Product areas affected**         | Human capital management                 |
-| **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
+| **Status**                         | Removed as of Dynamics 365 for Operations version 1611. |
 
 ## Dynamics AX 7.0 
 
@@ -707,7 +747,7 @@ This functionality provided eXtensible Business Reporting Language (XBRL) output
 | **Reason for deprecation/removal** | Low customer usage and a limited feature set  |
 | **Replaced by another feature?**   | No              |
 | **Product areas affected**         | Compliance and internal controls, Accounts payable  |
-| **Status**                         | [Deprecated – Target timeframe for the functionality to be removed is \<month/year\> or \<quarter/year\> or \<release name\>. -OR- Removed as of \<release name\>.] |
+| **Status**                         | Removed as of Dynamics AX 7.0. |
 
 ### Form ActiveX and Managed Host controls
 
@@ -839,17 +879,6 @@ Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mex
 | **Product areas affected**         | Sales and marketing                                                            |
 | **Status**                         | Removed as of Dynamics AX 7.0.                                                 |
 
-### Payroll information in Human Resources
-
-Human Resources Payroll information
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | This functionality has been replaced by core Payroll and Human Resources pages.  |
-| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll**configuration key. |
-| **Product areas affected**         | Human Resources, Payroll   |
-| **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611    |
-
 ### Private blocking of inventory and warehouse management journals
 
 The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user. Only the process of blocking journals as private for user groups and blocking during editing is supported.
@@ -912,15 +941,6 @@ In Dynamics AX 2012 R3, the Retail Server could function using HTTP communicatio
 | **Product areas affected**         | US sales tax                                 |
 | **Status**                         | Removed as of Dynamics AX 7.0.               |
 
-### Shipping carrier interface
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Duplicate functionality   |
-| **Replaced by another feature?**   | Partially replaced by Transportation management |
-| **Product areas affected**         | Sales and marketing, Inventory management  |
-| **Status**                         | Removed as of Dynamics 365 for Operations version 1611.  |
-
 ### Sites Services
 
 Sites Services let you build websites that extend your business processes to the Internet without IT support.
@@ -962,15 +982,6 @@ The virtual companies feature is no longer supported in Dynamics AX. The virtual
 | **Product areas affected**       | All modules |   
 | **Status**                       | Removed as of Dynamics AX 7.0.   |   
 
-### Warehouse management II
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
-| **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing   |
-| **Status**                         | Removed as of 7.1     |
-
 ### Windows 8 tablet app
 
 The Windows 8 tablet app provided functionality for expense entry and approval.
@@ -981,17 +992,6 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 | **Replaced by another feature?**   | No.          |
 | **Product areas affected**         | Expense management   |
 | **Status**                         | Removed: This functionality is only available for Dynamics AX 2012 R3. |
-
-### Worker reminders in Human Resources
-
-Human Resources Payroll information
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Low usage                                                           |
-| **Replaced by another feature?**   | No                                                                  |
-| **Product areas affected**         | Human resources                                                     |
-| **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
 
 ### Workplanner
 
