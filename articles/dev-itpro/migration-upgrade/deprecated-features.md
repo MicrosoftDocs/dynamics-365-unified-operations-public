@@ -68,7 +68,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 | **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solutions integrations at the database level.    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
-| **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 CY2018.    |
+| **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
 
 ### Standard UI in data management workspace
 
