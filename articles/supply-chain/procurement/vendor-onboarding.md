@@ -35,16 +35,16 @@ New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365
 
 The process consists of the following steps, where various roles perform actions in the system.
 
-1. The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
-2. Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
-3. Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
-4. The vendor's contact person signs in to Finance and Operations by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
-5. A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
-6. When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or inactivated.
+1. **Data management OData** – Entity import - The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
+2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
+3. **User provisioning workflow** Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
+4. **Vendor registration wizard** The vendor's contact person signs in to Finance and Operations by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
+5. **Approval workflow** A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
+6. **Creation of a vendor master and user role modification** When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or inactivated.
 
 The following table shows the steps and roles that are involved in the process.
 
-| Role and "process"       | Step 1. Data management OData – Entity import | Step 2. Prospective vendor registration request list page | Step 3. User provisioning workflow | Step 4. Vendor registration wizard | Step 5. Approval workflow | Step 6. Creation of a vendor master and user role modification |
+| Role and "process"       | Data management OData – Entity import | Prospective vendor registration request list page | User provisioning workflow | Vendor registration wizard | Approval workflow | Creation of a vendor master and user role modification |
 |--------------------------|---|---|---|---|---|---|
 | System                   | The request for a new vendor is imported. | | | | | After the vendor request is accepted, the vendor record is created. |
 | Procurement professional | | Start the onboarding process. | | | Review and either accept or reject the vendor request. | |
