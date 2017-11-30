@@ -118,6 +118,22 @@ Enhanced material overview for production and batch orders  
 
 A new page provides an overview of material status for BOM and formula lines for production and batch orders. This page can be opened from the production and batch orders details and list page, the job list in the Production floor management workspace, and the current operations list. This page is helpful when preparing materials for the coming period or for acting in case of material stock out.
 
+## Expense management mobile workspace enhancements
+This feature provides support for functionality that is available in expense management that was not available in the mobile solution for expense management. This list includes (but is not limited to):
+
+-  Support for mileage expenses.
+-  Support for intercompany expenses.
+-  Support for per diem expenses.
+
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace). 
+
+## Financial reporting using Power BI
+A set of default reports built using a new visualization using Power BI is available for financial reporting. The new financial reporting experience will be embedded within Finance and Operations, giving you a seamless experience of report generation and allowing you to drill into supporting documents. Limited subledger data will be available to provide better ledger to subledger analysis. Default reports, such as a trial balance, balance sheet, and profit and loss, will be shipped out of the box, however, initially no edits will be allowed using Finance and Operations. Edits need to be made using the Power BI desktop. The existing financial reporting using Report Designer is still available and fully supported.
+
+To view additional information about Financial reporting using Power BI, watch the following video: [Reporting for Dynamics 365 for Finance and Operations](https://youtu.be/9m5ys9UmaVg).
+
+## Fixed asset roll forward report
+The new **Fixed assets roll** forward report provides you with the detailed fixed asset data needed for period closing, financial statements, and tax reporting in an easy-to-read Excel format. The report, which utilizes the GER framework, shows fixed asset financial details for a specific period. Comprehensive data includes individual asset starting and ending balances along with valuation movements for the period, in addition to any new asset acquisitions and disposals that occurred in the specified timeframe. Totals are provided for the fixed asset group and legal entity.  
 
 Inventory transactions logging (InventSumLogTTS) optimization  
 ---------------------------------------------------------------
