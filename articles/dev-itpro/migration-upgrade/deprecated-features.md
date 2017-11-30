@@ -79,7 +79,7 @@ The standard UI in data management is the legacy UI which is the default UI pres
 | **Deployment option**              | All                                                                           |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
 
-### (IND) Excise, Sales Tax, Service Tax
+### Excise, Sales Tax, Service Tax for India
 
 These taxes have been subsumed into Indian GST.
 
@@ -91,7 +91,7 @@ These taxes have been subsumed into Indian GST.
 | **Deployment option**                       | All modules                                                   |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature. |    
 
-### (IND) File Validation Utility (FVU) 
+### File Validation Utility (FVU) for India
 
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ These taxes have been subsumed into Indian GST.
 | **Deployment option**                       | All modules                                                                    |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature.   |        
 
-### (IND) TDS/TCS certificate 
+### TDS/TCS certificate for India
 
 Users can download this from goverment portal.
 
@@ -113,7 +113,7 @@ Users can download this from goverment portal.
 | **Deployment option**                       | All modules                                                                   |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature.     |    
 
-### (IND) EXIM
+### Export/import (EXIM) incentive scheme for India
 
 
 |                                             |                                                                         |
