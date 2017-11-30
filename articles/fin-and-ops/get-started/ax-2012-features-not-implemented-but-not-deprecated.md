@@ -305,6 +305,7 @@ Values for these supported payment specifications are used as payment specificat
 <td>The ability to help secure the global address book by legal entity and address book hasn't yet been implemented. This feature will be available in a future update.</td>
 <td>Not implemented</td></tr>
 <tr class="even">
+
 <td>Vendor collaboration (Vendor Portal)</td>
 <td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. These capabilites have been ported to Financial and Operations. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and repond to purchase orders.
 </p><p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.<p/>
@@ -318,6 +319,10 @@ Values for these supported payment specifications are used as payment specificat
 <td>Vendor requests in general</td>
 <td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to update vendor related information: requesting new procurement categories for the vendor, internal employees requested new vendors, request to add vendor to another company etc. Only Vendors request of being added as a vendor has been implemented in 7.3.
 </td>
+
+<td>Customizable help topics</td>
+<td>The ability to create customized help topics has not yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update. </td>
+
 <td>Not implemented</td></tr>
 </tbody>
 </table>

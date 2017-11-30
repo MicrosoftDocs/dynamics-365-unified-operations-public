@@ -58,10 +58,10 @@ If this is the first tutorial you’re working on, follow the steps in the **App
 
 This tutorial works on Fleet Management model.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **c:\\*, and unzip it.
 2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
-4.  In the Select the file to import window, browse to **C:\\FmLab\\Lab 10-2** folder, click **Add contextual BI to forms –Before Lab.axpp**, and then click **Open**.
+4.  In the Select the file to import window, browse to **C:\FmLab\Lab 10-2** folder, click **Add contextual BI to forms –Before Lab.axpp**, and then click **Open**.
 5.  Select the **Overwrite Elements** option, and then click **Ok**.
 6.  Open the project **BIR102 Adding contextual BI - Before Lab.** Double-click the **FMVehicle** form in Solution Explorer.
 

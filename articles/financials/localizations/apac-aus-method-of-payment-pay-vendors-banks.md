@@ -5,7 +5,7 @@ title: Bank file formats for Australian banks
 description: You can pay vendors electronically through banks. The names of the banks and the file formats that they accept for the electronic payments are listed in this topic. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,10 @@ You can pay vendors electronically through banks. The names of the banks and the
 | St. George Bank                | Business Banking Online               | STG Direct Credit Service (AU) |
 | National Australia Bank        | Internet BankingNAB ConnectNAB Online | NAB Direct Credit Service (AU) |
 
+## Additional resources
 
+- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 

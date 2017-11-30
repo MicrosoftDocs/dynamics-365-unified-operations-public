@@ -5,7 +5,7 @@ title: Troubleshoot
 description: This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -50,13 +50,13 @@ Known issues
 -   **Issue** Unable to discover archive objects if the drive table is **AccountingEvent**. The system returns the following message: "Error executing code: Insufficient memory to run script." **Workaround** Update the following registry entries.\[HKEY\_CURRENT\_USERSoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESYSTEMCurrentControlSetServicesDynamics Server6.0AOS instance configuration name\]Value name: maxbuffersizeValue type: REG\_SZValue: Maximum amount of memory in MB or 0 for no limit
 
 ## View log files
-IDMF logs error events in a log file in a folder named**,**under the installation folder. The default installation path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework. IDMF creates the log file when the first error message is generated. The file is named trace\_mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year. The IDMF scheduler service creates an error log file called servicetrace\_mm-dd-yyyy.log. The error log files are created for each day. When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file. All subsequent error messages are appended to the existing error log file for the day.
+IDMF logs error events in a log file in a folder under the installation folder. The default installation path is C:\Program File\Microsoft Dynamics AX Intelligent Data Management Framework. IDMF creates the log file when the first error message is generated. The file is named trace\_mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year. The IDMF scheduler service creates an error log file called servicetrace\_mm-dd-yyyy.log. The error log files are created for each day. When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file. All subsequent error messages are appended to the existing error log file for the day.
 
 ## Database rights are not set correctly
-The AOS service account must have **datareader**, **datawriter** and **ddladmin** rights on the IDMF management database.
+The AOS service account must have **datareader**, **datawriter**, and **ddladmin** rights on the IDMF management database.
 
 ## IDMF fails to start
-When starting IDMF, you may encounter the following error: "An unhandled exception occurred and has been logged. Please contact support." The preceding error message is a generic message that IDMF displays when the error condition is caused by an environmental issue such as permissions. This particular error condition typically occurs when the user does not have read and write permissions on the installation folder of IDMF. To fix the error condition, provide read and write permissions to the installation folder of IDMF. The default path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.
+When starting IDMF, you may encounter the following error: "An unhandled exception occurred and has been logged. Please contact support." The preceding error message is a generic message that IDMF displays when the error condition is caused by an environmental issue such as permissions. This particular error condition typically occurs when the user does not have read and write permissions on the installation folder of IDMF. To fix the error condition, provide read and write permissions to the installation folder of IDMF. The default path is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
 
 ## Index defragmentation does not reduce the fragmentation percentage to zero
 The index defragmentation schedules do not always achieve a complete defragmentation, or in other words, 0 (zero) percent fragmentation. Some of the indexes may still have a small percentage of fragmentation. The defragmentation process tries to defragment selected indexes to the maximum possible level. However, Microsoft Dynamics AX uses a fill factor of 0 (zero). The fill factor of 0 breaks records out to extra pages without completely filling an index page. As a result, the fragmentation level for some of the indexes remains at a non-zero level, even after the defragmentation schedule is completed successfully.
@@ -89,7 +89,7 @@ In some environments, you may receive an error when Application Object Server (A
 The analysis snapshot schedule may fail with an error message: "An OLE DB error has occurred. Error code: 0x80040E14.An OLE DB record is available. Source: "Microsoft SQL Native Client" Hresult: 0x80040E14 Description: "The user does not have permission to perform this action"." This error message appears because of insufficient database permissions. Be sure that the database permissions are assigned by following the instructions in the "Rights required for installation" section in the [Data Management Framework Installation Guide](http://go.microsoft.com/fwlink/?LinkId=143616&clcid=0x409).
 
 ## The analysis snapshot schedule fails because of a SQL Server Integration Services error
-The analysis snapshot schedule may fail with an error: "Message: Package Error: The file exists. The buffer manager could not get a temporary file name. The call to GetTempFileName failed. The buffer manager could not create a temporary file on the path C:DOCUME~1ADMINI~1.SAMLOCALS~1Temp. The path will not be considered for temporary storage again." To resolve this error, you must install SQL Server 2008 or a later version. For more information, see Microsoft Knowledge Base article [972365](http://support.microsoft.com/kb/972365).
+The analysis snapshot schedule may fail with an error: "Message: Package Error: The file exists. The buffer manager could not get a temporary file name. The call to GetTempFileName failed. The buffer manager could not create a temporary file on the path C:\DOCUME~1\ADMINI~1.SAMLOCALS~1Temp. The path will not be considered for temporary storage again." To resolve this error, you must install SQL Server 2008 or a later version. For more information, see Microsoft Knowledge Base article [972365](http://support.microsoft.com/kb/972365).
 
 ## Unable to create an archive schedule or restore schedule
 If an archive schedule fails or is aborted, you must try to restart or revert it before you can create another schedule with the same object. This restriction applies to all Archive Objects.
@@ -103,7 +103,7 @@ The archive schedule that you want to restore may be disabled, so that you canno
 
 ## A schedule fails because of insufficient space
 Archive and purge schedules fail if the database or log files become full. These schedules require a significant amount of free database and log space, depending on the volume of data you archive or purge. By default, the purge and archive schedules process 100,000 records in a batch. Reduce the batch size to decrease the database and log space required when a schedule processes a batch. Follow these steps to configure the batch size:
-1.  Using Notepad, open **AXDataManagementSchedulerService.exe.config** from the installation folder of IDMF. The default path of the installation folder is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.
+1.  Using Notepad, open **AXDataManagementSchedulerService.exe.config** from the installation folder of IDMF. The default path of the installation folder is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
 2.  To decrease the batch size for an archive task, locate the configuration key BatchSizeForPurge &lt;add key="BatchSizeForArchive" value="4000" /&gt;, and change the key value to a smaller number.
 3.  To decrease the batch size for a purge schedule, locate the configuration key BatchSizeForPurge &lt;add key="BatchSizeForPurge" value="4000" /&gt;, and change the key value to a smaller number.
 
