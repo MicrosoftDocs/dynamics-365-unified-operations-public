@@ -3,9 +3,9 @@
 
 title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
-author: MilindaV2
+author: SunilGarg
 manager: AnnBe
-ms.date: 10/16/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,17 +13,17 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope:  Operations 
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: milindav
+# ms.search.industry:
+ms.author: sunilg
 ms.search.validFrom: 2016-08-30 
 ms.dyn365.ops.version: Platform update 2 
 ---
