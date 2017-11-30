@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Calculate post depreciation | Microsoft Docs
-description: 
-author: ShylaThompson
+title: Create and post depreciation for a fixed asset group using depreciation books for India
+description:  This topic for India in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+author: AdamTrukawka
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,26 +13,25 @@ ms.technology:
 
 # optional metadata
 
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-# ms.suite: 
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom:
+# ms.custom: 
 ms.search.region: India
-# ms.search.scope: 
 # ms.search.industry: 
-ms.author: shylaw
-# ms.dyn365.ops.version: 
-# ms.search.validFrom:
+ms.author: atrukawk
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.3
+
 ---
+
 # Create and post depreciation for a fixed asset group using depreciation books
 [!include[banner](../includes/banner.md)]
 
-You can calculate depreciation for a fixed asset group based on the number of
-days defined in the **Asset group depreciation threshold** field in the
-**General ledger parameters** form. The following table shows the various
-formulas that are used to calculate asset group depreciation.
+You can calculate depreciation for a fixed asset group based on the number of days defined in the **Asset group depreciation threshold** field in the **General ledger parameters** page. The following table shows the various formulas that are used to calculate asset group depreciation.
 
 | Type of proposal   | Number of days the asset is used   | Formula    |
 |--------------------|-----------|----------------------------|
@@ -71,11 +70,11 @@ If the positive or negative amount is entered in the **Debit** field of a journa
 9.   Click **Proposals** to generate different types of proposals for fixed asset groups for which the **Asset group depreciation** check box has been selected, and then click **OK**. You can create an acquisition, depreciation, revaluation, or bonus depreciation proposal.
 10.   Click **Post** to post the journal, or post lines with no errors and transfer the lines with errors to a new journal. 
 
-The totals of the amounts that are entered for the fixed asset numbers with the same fixed asset group and transaction type are updated in the **Fixed asset balances** page (Fixed assets Select a fixed asset. On the **Action Pane**, click **Depreciation books**. Select a depreciation book and then click **Inquiry** > **Balance**.).
+The totals of the amounts that are entered for the fixed asset numbers with the same fixed asset group and transaction type are updated in the **Fixed asset balances** page (**Fixed assets** > Select a fixed asset. On the **Action Pane**, click **Depreciation books**. Select a depreciation book and then click **Inquiry** > **Balance**).
 
-For example, you post an acquisition type of journal voucher for fixed asset numbers Book 1 and Book 2 in a fixed asset group. You enter INR 20,000.00 for Book 1 and INR 30,000.00 for Book 2. The total amount of INR 50,000.00 is displayed in the **Acquisition** field of the **Fixed asset balances** form.
+For example, if you post an acquisition type of journal voucher for fixed asset numbers Book 1 and Book 2 in a fixed asset group. You enter INR 20,000.00 for Book 1 and INR 30,000.00 for Book 2. The total amount of INR 50,000.00 is displayed in the **Acquisition** field of the **Fixed asset balances** form.
 
-A new journal line is created for the proposal type, and the amount that is entered in the **Debit** field or the **Credit** field is updated in the **Fixed asset balances** form (Fixed assets Select a fixed asset. On the **Action Pane**, click Depreciation books. Select a depreciation book and then click Inquiry \> Balance.).
+A new journal line is created for the proposal type, and the amount that is entered in the **Debit** field or the **Credit** field is updated in the **Fixed asset balances** form (**Fixed assets** > Select a fixed asset. On the **Action Pane**, click **Depreciation books**. Select a depreciation book and then click **Inquiry** > **Balance**).
 
 > [!NOTE]
 > Asset group depreciation is not applicable for **Consumption depreciation**, **Revenue recognition of reserves**, and **Extraordinary depreciation** types of proposals.
