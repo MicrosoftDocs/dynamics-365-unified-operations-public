@@ -57,7 +57,7 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Replaced by another feature?** | Yes. The two reports have been replaced by the **Inventory aging** report.     |
 | **Product areas affected**       | Inventory management, Cost management        |
 | **Deployment option**        | All|
-| **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports still remains in the product. The plan is to remove the code in a future release. |
+| **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports remains in the product. The plan is to remove the code in a future release. |
 
 ### Power BI content packs published to PowerBI.com
 The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
@@ -72,7 +72,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 
 ### Standard UI in data management workspace
 
-The standard UI in data management is the legacy UI which is the default UI presented to the users when they visit the data management workspace.
+The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.
 
 |   |  |
 |------------------|-------------------------|
@@ -106,7 +106,7 @@ These taxes have been subsumed into Indian GST.
 
 ### TDS/TCS certificate for India
 
-Users can download this from goverment portal.
+Users can download this from the government portal.
 
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
@@ -373,7 +373,7 @@ Human Resources Payroll information
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This functionality has been replaced by core Payroll and Human Resources pages.  |
-| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll**configuration key. |
+| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key. |
 | **Product areas affected**         | Human Resources, Payroll   |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
 
@@ -545,7 +545,7 @@ Federal tax statement for ICMS tax
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | This statement is not longer applicable in some Brazilian states. |
+| **Reason for deprecation/removal** | This statement is no longer applicable in some Brazilian states. |
 | **Replaced by another feature?**   | No. Users can use Generic Electronic reporting tool to configure the statement if required under specific situations. |
 | **Product areas affected**         | Fiscal books    |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.   |
@@ -556,7 +556,7 @@ Federal tax statement for ICMS tax
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | This method of contingency is not longer applicable in all Brazilian states |
+| **Reason for deprecation/removal** | This method of contingency is no longer applicable in all Brazilian states |
 | **Replaced by another feature?**   | No                                                                          |
 | **Product areas affected**         | Accounts receivable                                                         |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.              |
@@ -860,7 +860,7 @@ This feature enabled the generation of Mexican electronic invoices by using the 
 
 ### Mexico realized and unrealized VAT
 
-Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for “unrealized tax.”
+Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.
 
 |   |  |
 |------------|--------------------|
@@ -897,7 +897,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.  |
-| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see the Constraint-based configuration technology (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 
