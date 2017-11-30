@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!Note]
 > Starting with the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
+## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
@@ -129,7 +129,7 @@ Users can download this from goverment portal.
 
 
 
-## Features that have been removed or deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8
+## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
 
 ### Warehouse mobile devices portal
 
@@ -155,7 +155,7 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Deployment option**              | All                                                                                    |
 | **Status**                         | Removed as of July 2017.                                                               |
 
-## Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
+## Dynamics 365 for Operations 1611 with platform update 3
 
 ### AEB payment formats for Spain
 
@@ -454,7 +454,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 | **Product areas affected**         | Human capital management                 |
 | **Status**                         | Deprecated – Removed as of Dynamics 365 for Operations version 1611 |
 
-## Features that have been deprecated in Dynamics AX 7.0 release
+## Dynamics AX 7.0 
 
 
 ### Ability to cancel changes to a vendor invoice
