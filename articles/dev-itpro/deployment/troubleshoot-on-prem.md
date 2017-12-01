@@ -35,66 +35,66 @@ ms.dyn365.ops.version: Platform Update 8
 
 
 ## Service Fabric 
-Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by Orchestrator, AOS, SSRS and MR nodes.
+Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by the Orchestrator, AOS, SSRS and MR nodes.
 
-### How to access Service Fabric Explore
-Service Fabric Explorer can be accessed via browser (default address of) https://sf.d365ffo.onprem.contoso.com:19080. To verify address note what was used in 4. Create DNS zones and add A records 
-To access site, the client certificate needs to be in cert:\CurrentUser\My (Certificates - Current User > Personal > Certificates) of the machine accessing this site 
-When accessing site, select the client certificate when prompted
+### Access Service Fabric Explorer
+Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080. To verify the address, note what was used in the topic section, [Create DNS zones and add A records](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns). 
+To access the site, the client certificate needs to be located in cert:\CurrentUser\My (Certificates - Current User > Personal > Certificates) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ### Stateful and Stateless Services, how to identify nodes for log review 
-For Stateful Services (ex. Local Agent), to find out what machine is the primary instance, go to Service Fabric Explorer, expand Cluster > Applications > (intended application ex) LocalAgentType > fabric:/LocalAgent > Fabric:/LocalAgent/ArtifactsManager > (guid). Note primary node 
-For Stateless Services (rest of applications), need to check all nodes 
+To find out what machine is the primar instance for Stateful Services, like a Local Agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**. Note the primary node. 
+For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
-### Receiving timeout error when creating Service Fabric cluster 
-Run Test-D365FOConfiguration.ps1 as noted in Set up a standalone Service Fabric cluster and note any errors 
-Ensure the Service fabric Server certificate, client certificate exists in LocalMachine store on ALL service fabric nodes 
-Ensure the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes 
+### Timeout error received when creating a Service Fabric cluster 
+Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](../setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
+Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
+Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
 
-### Time out waiting for Installer Service to complete for machine x.x.x.x
-Can only have 1 node type for each IP address (machine). Check to see if nodes are being reused on same machine (ex AOS and ORCH on same machine) and ConfigTemplate.xml is incorrectly defined. 
+### Time out while waiting for Installer Service to complete for machine x.x.x.x
+You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on same machine, for example AOS and ORCH on same machine, and that the ConfigTemplate.xml is correctly defined. 
 
-### How to remove a specific application 
-Advised to use LCS to remove or cleanup deployments but if additional steps are needed can use Service Fabric Explorer to remove an application having issues.  
-In Service Fabric Explorer, go to Application node, ex. Cluster > Applications > MonitoringAgentAppType-Agent. Click ellipse by fabric:/Agent-Monitoring and Delete Application. Enter in full name to confirm. 
-Can also remove MonitoringAgentAppType-Agent by clicking on ellipse and Unprovision Type. Enter in full name to confirm. 
+### Remove a specific application 
+We recommend that you use LCS to remove or cleanup deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.  
+In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm. 
+You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm. 
 
-### How to remove Service Fabric completely 
-RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath "<path to working directory>\ClusterConfig.json" 
-If results in error removing a specific node of cluster from following on that cluster 
+### Remove Service Fabric completely 
+To remove the Service Fabric completely remove ServiceFabricCluster.ps1 -ClusterConfigFilePath "<path to working directory>\ClusterConfig.json". If this results in error, remove a specific node on that cluster from the
 powershell.exe -File "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1" 
 
-Remove c:\ProgramData\SF folder (if using default, otherwise manually specified folder) 
-If receive access denied error, restart PowerShell and try otherwise restart machine 
+Next, remove c:\ProgramData\SF folder, if using the default. Otherwise, remove the specified folder. 
+If you receive an access denied error, restart PowerShell or restart the machine. 
 
 ## LocalAgent 
-LocalAgent is the framework that is responsible for communicating with LCS, downloading components to install, installing, maintaining and removing Dynamics. 
+LocalAgent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics. 
 
-### How to find LocalAgent values used 
-Values can be found in Service Fabric Explorer > Cluster > Applications > LocalAgentType > fabric:/LocalAgent, Details section
+### How to find the LocalAgent values that are used 
+Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
-### Install, Upgrade, Uninstall Local agent 
-Local agent install is discussed in deployment guide. Additionally can use upgrade and uninstall commands. 
+### Install, upgrade, or uninstall Local agent 
+Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](../setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
+
     LocalAgentCLI.exe Install <path of localagent-config.json> 
     LocalAgentCLI.exe Upgrade <path of localagent-config.json> 
-    LocalAgentCLI.exe Cleanup <path of localagent-config.json> 
-Note cleanup command does not remove any of the files that were placed in the file share. File share can be reused 
+    LocalAgentCLI.exe Cleanup <path of localagent-config.json>
+    
+> [!NOTE]
+    > The cleanup command doesn't remove any of the files that were placed in the file share. The file share can be reused.
 
-### On startup of Local agent services and error  
-Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies 
-Strong name verification needs to be disabled. This is done via Configure-PreReqs.ps1 
-Run Test-D365FOConfiguration.ps1 to validate 
+### Error occurs when starting up Local agent services  
+If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification should no longer be enabled. This is done by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
-### LCS is showing Validation in progress for a period of time (ex. several minutes) 
-General steps to troubleshoot issues with local agent validation.
+### "Validation in progress" In LCS, "Validation in progress" is showing for a period of several minutes
+Complete the following steps to troubleshoot general issues with local agent validation.
 1. Run the Configure-PreReqs.ps1 on all the orchestrator machines to configure the machines correctly. 
-2. Ensure that the script Test-D365FOConfiguration.ps1 passes on all the orchestrator machines  
-3. Ensure that the LocalAgentCLI.exe install completed successfully 
-4. Go to Service Fabric Explorer and make sure that the applications are all Healthy 
-5. If the applications are not healthy, Locate the primary node for the failing service. 
-   Look for events in:  
-   Event Viewer > Custom Views > Administrative Events 
-   Event Viewer -> Applications and Services Log -> Microsoft -> Dynamics -> AX-LocalAgent 
+2. Verify that the script Test-D365FOConfiguration.ps1 passes on all of the orchestrator machines.  
+3. Verify that the installation of LocalAgentCLI.exe completed successfully. 
+4. Go to Service Fabric Explorer and verify that the applications are all healthy. 
+5. If the applications are not healthy, locate the primary node for the failing service. 
+   Look for events in:
+   
+   - **Event Viewer > **Custom Views** > **Administrative Events** 
+   - **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-LocalAgent 
 
 **Common errors**
 Receiving 'Unable to process commands' and/or 'Unable to get the channel information' messages 
@@ -443,7 +443,7 @@ Strong name validation needs to be disabled in the Reporting server
 Run the config-PreReq script in Reporting server machine to disable strong name validation. 
 
 ### The requested operation requires elevation 
-AOS users are not in local administrator group and the UAC has not been disabled correctly. Complete the following steps to resolve the issue. 
+AOS users are not in the local administrator group and the UAC has not been disabled correctly. To resolve the issue, complete the following steps. 
 1. Add AOS users as local admins as described in the section Join VMs to the domain 
 2. Run the Config-PreReq script on all the AOS machines 
 3. Make sure Test-Configuration script passes 
