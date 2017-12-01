@@ -304,5 +304,9 @@ Values for these supported payment specifications are used as payment specificat
 <td>Secure global address book</td>
 <td>The ability to help secure the global address book by legal entity and address book hasn't yet been implemented. This feature will be available in a future update.</td>
 <td>Not implemented</td></tr>
+<tr class="even">
+<td>Customizable help topics</td>
+<td>The ability to create customized help topics has not yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update. </td>
+<td>Not implemented</td></tr>
 </tbody>
 </table>

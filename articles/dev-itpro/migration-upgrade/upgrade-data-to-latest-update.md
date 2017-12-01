@@ -34,46 +34,53 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development box, one-box, or demo environment. 
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development box, one-box, or demo environment.
 
-In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update).
+In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
 
-This topic describes how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). 
+This topic explains how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
 
 > [!IMPORTANT]
-> - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from release 1611 (November 2016) to the July 2017 release.
-> - This process doesn't apply to the upgrade of data in the Financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+> - This process doesn't apply to the upgrade of data in the financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
-1. Back up your current database. 
-2. You must have a functional one-box demo or development environment that is already successfully running with the latest Finance and Operations update.
-3. If you're upgrading from the Microsoft Dynamics AX February 2016 release (also known as RTW) to the May 2016 release, the following hotfixes must be installed in the destination environment:
+
+1. Back up your current database.
+2. You must have a functional one-box demo or development environment that is already successfully running the latest Finance and Operations update.
+3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) (which is also known as RTW) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
 
     - KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync."
-    - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys." This hotfix is a binary hotfix that will cause the database synchronization process to fail.
+    - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys."
+    
+        This hotfix is a binary hotfix that will cause database synchronization process to fail.
 
     If you're upgrading to a version that is newer than the May 2016 release, you do **not** have to install these hotfixes. They are already included.
 
-4. In your source environment, you must install one of the following hotfix, based on the version that you're upgrading from. These hotfixes correct a bug in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
+4. In the source environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
 
-    - If you're upgrading from the February 2016 release (also known as RTW or 7.0) 7.0.1265.3015: KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release"
-    - If you're upgrading from the November 2016 release (also known as 1611 or 7.1) 7.1.1541.3036: KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release"
-    - If you're upgrading from the July 2017 release (also known as 7.2) 7.2.11792.56024: No hotfix is required for this version.
+    - **If you're upgrading from the February 2016 release (also known as RTW or 7.0) (build 7.0.1265.3015):** KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release."
+    - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1) (build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
+    - **If you're upgrading from the July 2017 release (also known as 7.2) (build 7.2.11792.56024):** No hotfix is required for this version.
 
-5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization is required, because this step fills a table (SysSetupLog) that is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
+5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
-    cd J:\\AosService\\WebRoot\\bin>
+    cd J:\AosService\WebRoot\bin>
+
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
+    ```
+
+5. If you're upgrading to the July 2017 release (also known as 7.2) (build 7.2.11792.56024), apply the following application X++ hotfixes in the destination environment before you run the data upgrade in that environment. These hotfixes will prevent various errors from occurring during the data upgrade.
+
+    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.'
     
-    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\\AosService\\PackagesLocalDirectory" -metadatadir        J:\\AosService\\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
-    ```
+        This hotfix package also includes KB 4035399 and KB 4035751. To use this package, you must have, at a minimum, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 9 (July 2017). If you're unsure, install the latest binaries.
 
-5. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occurring during the data upgrade:
-
-    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.' This hotfix package also includes KB 4035399 and KB 4035751. Note that you must have a minimum of Platform Update 9 to use this package. If you are unsure, install the latest binaries.
     - KB 4045801 - "Scheduler job has failed" error encountered when upgrading from Fall 2016 update to July 2017 update.
-    
-6. If you are upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
+
+6. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
+
     - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
@@ -84,12 +91,12 @@ This topic describes how to upgrade an older source database to the latest Finan
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that you have no unsynchronized transactional data in the cloud version of the channel database.
-9.  Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. Delete the primary cloud-hosted channel database by running the following script. 
+8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
+9. Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. To delete the primary cloud-hosted channel database, run the following script.
 
     > [!NOTE]
-    > If you have customizations that rely on the retail channel database schema, you might encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations, and then rerun the script.
-    
+    > If you have customizations that rely on the retail channel database schema, you might encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations and then rerun the script.
+
     ```
     /* Drop all non-system stored procs under schema crt and ax */
     DECLARE @schemaCrt INT
@@ -110,8 +117,8 @@ This topic describes how to upgrade an older source database to the latest Finan
     BEGIN
         SELECT @SQL = 'DROP PROCEDURE [' + OBJECT_SCHEMA_NAME(@objId) + '].[' + RTRIM(@name) +']'
         EXEC (@SQL)
-        PRINT @SQL  
-        SELECT @name = NULL, @objId = 0  
+        PRINT @SQL
+        SELECT @name = NULL, @objId = 0
         SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.procedures WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
     END
     GO
@@ -271,7 +278,7 @@ This topic describes how to upgrade an older source database to the latest Finan
     AS BEGIN
         IF  EXISTS (SELECT * FROM dbo.sysusers WHERE name = @RoleName AND issqlrole = 1)
         BEGIN 
-            DECLARE @RoleMemberName sysname	  
+            DECLARE @RoleMemberName sysname
             /* Cursor to Loop in for Each Member have the Role Privilege and Drop RoleMember */
             DECLARE Member_Cursor CURSOR FOR
             SELECT [name]
@@ -340,23 +347,23 @@ This topic describes how to upgrade an older source database to the latest Finan
     ```
 
 ## Download the latest data upgrade deployable packages
-To obtain the latest data upgrade deployable packages for your target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 
-1. In LCS, in the **Environments** section, select your target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile (or **Platform updates** tile).
-2. On the **Binary updates** page, select **Download binaries**. On the next page, select **Save package** to save it to the LCS Asset library.
-3. Go to the **Asset library** > **Software deployable package** tab and download the package. Extract it and then go to the following directory to find the appropriate data upgrade deployable package file: ..\\CustomDeployablePackage
+To obtain the latest data upgrade deployable packages for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 
-    The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
+1. In LCS, in the **Environments** section, select the target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile or the **Platform updates** tile.
+2. On the **Binary updates** page, select **Download binaries**. On the next page, select **Save package** to save the package to the LCS Asset library.
+3. On the **Asset library** page, on the **Software deployable package** tab, download the package. Extract it, and then go to the **..\\CustomDeployablePackage** directory to find the appropriate deployable package file for the data upgrade. The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
 
-    - If you're upgrading from Microsoft Dynamics AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates.
-    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade_Retail.zip**. Both packages need to be run one after the other. To find these packages, download the latest binary updates (In versions before Platform update 4, there was one package named **DataUpgrade.zip**).
+    - If you're upgrading from AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates.
+    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates. (In versions before Microsoft Dynamics 365 for Operations with platform update 4 \[February 2017\], there was one package that was named **DataUpgrade.zip**.)
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have a local data upgrade package. However, that file is out of date and includes issues that have been resolved in later hotfixes. Always download the latest version of the file from LCS.
 
 ## Remove encryption certification rotation
-1. Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
-2. In a text editor, open the C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This issue is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed won't be affected. For information about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
+
+1. Extract the **MinorVersionDataUpgrade.zip** deployable package to **C:\\Temp** or a location of your choice.
+2. In a text editor, open the **C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json** file. Modify the file as shown here, and then save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This issue is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed won't be affected. For information about the fields that are affected, see the [Encrypted fields in demo data](#encrypted-fields-in-demo-data) section later in this topic.
 
     ```
     {
@@ -373,15 +380,15 @@ To obtain the latest data upgrade deployable packages for your target environmen
     }
     ```
 
-3. Run the Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
-4. Open C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1.
+3. Run the Microsoft Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
+4. Open **C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1**.
 5. Press F5 to run the script.
 
 ### Fix the duplicate key issue (February 2016 release only)
 
-This step is required if you're upgrading a database from the February 2016 release (also known as RTW).
+This step is required if you're upgrading a database from the February 2016 release (also known as RTW or 7.0).
 
-1. In a text editor, open the C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1 file.
+1. In a text editor, open the **C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1** file.
 2. Comment out or remove the following line.
 
     ```
@@ -391,27 +398,29 @@ This step is required if you're upgrading a database from the February 2016 rele
 3. Save the file.
 
 ## Upgrade the database
-1. Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-2. Import or restore a backup of the source database to your one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place and name your new database **imported_new**.
+
+1. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
+2. Import or restore a backup of the source database to the one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
-    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
+    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
 3. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
-4. Rename the existing database suffixing it with "_orig", and rename the newly restored database with the original database name, so they switch places:
+4. Rename the existing database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
     ```
-    ALTER DATABASE <original D365 database> MODIFY NAME = <original D365 database>_ORIG
-    ALTER DATABASE imported_new MODIFY NAME = <original D365 database>
+    ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
+    ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-5. Create a backup of the source database, in case you need to revert to it, because the following steps will modify the source database.
-6. Mark Step 4 of the runbook as completed, and continue to run the runbook until it's completed. 
+5. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
+6. Mark Step 4 of the runbook completed, and continue to run the runbook until it's completed. 
 
 > [!NOTE]
-> When upgrading to Platform update 8 or later or when upgrading from AX 2012 - you need to repeat the steps above in the **Upgrade the database section** for the related _Retail package after running the first package.
+> When you upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8 (June 2017) or later, or when you upgrade from AX 2012, you must repeat these steps for the related \_Retail package after you run the first package.
 
 ## Re-enable SQL change tracking
+
 Run the following SQL against the upgraded database to make sure that change tracking is enabled at the database level. You must specify the name of your database in the **alter database** command.
 
 ```
@@ -423,7 +432,8 @@ ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENT
 Reset the financial reporting data mart by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). Then reimport the building block groups that you exported in an earlier step.
 
 ## Troubleshoot upgrade script errors
-The following sections provide information that can help you troubleshoot.
+
+This section provides information that can help you troubleshoot various issues.
 
 ### Rerun the runbook after a data upgrade script failure
 
@@ -433,26 +443,26 @@ A data upgrade deployable package enables the runbook to be rerun in a more gran
 AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 ```
 
-When you're debugging, you can keep rerunning a script that fails without having to rerun the whole data upgrade piece and database synchronization.
+When you're debugging, you don't have to rerun the whole data upgrade piece and database synchronization. You can keep rerunning just the script that fails.
 
 ### View more details about a script error
 
-Upgrade scripts run in X++ by using a batch process that the runbook installer starts. In Application Explorer in Visual Studio, there are classes that you can view that are prefixed with **ReleaseUpdate**. If an upgrade script fails during the runbook process, you can learn more details about the reason for the error by opening Management Studio and querying ReleaseUpdateScriptsErrorLog as follows.
+Upgrade scripts run in X++ by using a batch process that the runbook installer starts. In Application Explorer in Visual Studio, some classes that you can view are prefixed with **ReleaseUpdate**. If an upgrade script fails during the runbook process, you can learn more about the reason for the error by opening Microsoft SQL Server Management Studio and running the following code to query ReleaseUpdateScriptsErrorLog.
 
 ```
 select \* from RELEASEUPDATESCRIPTSERRORLOG
 ```
 
-You can add that code to a new runnable class in Visual Studio, and directly observe, debug, and rework its behavior.
+You can add this code to a new runnable class in Visual Studio, and directly observe, debug, and rework its behavior.
 
 ### Skip failed scripts
 
 > [!IMPORTANT]
-> This process is intended to be used only in a development scenario. 
+> This process is intended to be used only in a development scenario.
 
-You can skip all scripts that have failed a specific number of times and move to the next viable scripts. This functionality helps with troubleshooting process. By design, the process is very manual, so that you're less likely to unintentionally skip scripts. 
+You can skip all scripts that have failed a specific number of times, and move to the next viable scripts. This functionality helps with the troubleshooting process. By design, the process is very manual, so that you're less likely to unintentionally skip scripts.
 
-In the ReleaseUpdateConfiguration table, there is a new field that is named **ScriptRetryCount**. The value in this field controls how many times the runbook process will rerun scripts before it ignores them. When the runbook is run, the system updates the **ReleaseUpdateScriptsErrorLog.ErrorCount** field every time that a specific script fails. A new row is created for each script. 
+In the ReleaseUpdateConfiguration table, there is a new field that is named **ScriptRetryCount**. The value in this field controls how many times the runbook process will rerun scripts before it ignores them. When the runbook is run, the system updates the **ReleaseUpdateScriptsErrorLog.ErrorCount** field every time that a specific script fails. A new row is created for each script.
 
 In the DataUpgrade package folder, under ..\\AosServices\\Scripts\\, there is a script that is named IgnoreBlockingScripts.ps1. Run this script from an Administrator Windows PowerShell window to skip all scripts where **ScriptRetryCount**=**ErrorCount**. Then rerun the runbook step that failed, so that scripts will be ignored. The **ReleaseUpdateScriptsErrorLog.Ignored** field will also be set for each script that is skipped. Therefore, you can easily identify skipped scripts later.
 
@@ -462,9 +472,10 @@ Every script that is successfully run records the number of minutes that it took
 
 ## Known issues
 ### A duplicate key was found for the object that is named dbo.RESOURCESETUP
+
 When you upgrade a database, you might receive the following error message during the database synchronization phase of the runbook process:
 
-> Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.RESOURCESETUP' and the index name 'I_6716AK'
+> Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.RESOURCESETUP' and the index name 'I\_6716AK'
 
 This issue is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from the table by running the following SQL script against the database from Management Studio.
 
@@ -477,9 +488,10 @@ where DPT.DataArea != '' and RS.LegalEntity != DPT.RecId
 ```
 
 ### A record can't be selected in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode)
+
 When you upgrade a database, you might receive the following error message during the database synchronization phase of the runbook process:
 
->  Cannot select a record in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode). Dimension hierarchy: 0. The SQL database has issued an error. Object Server DynamicsAXBatchManagement:  [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Invalid column name 'RELATIONTYPE'. 
+> Cannot select a record in Dimension hierarchy nodes (CAMDataDimensionHierarchyNode). Dimension hierarchy: 0. The SQL database has issued an error. Object Server DynamicsAXBatchManagement:  \[Microsoft\]\[ODBC Driver 13 for SQL Server\]\[SQL Server\]Invalid column name 'RELATIONTYPE'. 
 
 This issue is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by running the following SQL script against the database from Management Studio.
 
@@ -559,6 +571,7 @@ exec PatchRelationType  'CAMDataImportedDimensionMember'
 ```
 
 ### An index can't be created on InventDistinctProduct
+
 When you upgrade a database, you might receive the following error message during the database synchronization phase of the runbook process:
 
 > Cannot create index on InventDistinctProduct a duplicate key exists on column Product.
@@ -583,7 +596,7 @@ axupdateinstaller execute -runbookid=dataupgrade -rerunstep=5.4
 
 ### An exchange rate can't be found when demo data is upgraded
 
-When you upgrade a demo database, you might receive the following error message when you deploy the DataUpgrade package:
+When you upgrade a demo database, you might receive the following error message when you deploy the data upgrade package:
 
 > An exchange rate cannot be found for exchange rate type Default between currencies INR and BRL on exchange date 12/1/2014.
 
@@ -595,7 +608,7 @@ set transactioncurrencycode = 'USD'
 where transactioncurrencycode = 'INR'
 ```
 
-Alternatively, go to the original environment that the data came from (such as the old version), and add the missing exchange rate at **General Ledger** &gt; **Currencies** &gt; **Currency exchange rates**. You must add a record for INR and BRL that covers 2014. Then bring that database into your new environment, and start the upgrade against that database.
+Alternatively, go to the original environment that the data came from (such as the old version), and add the missing exchange rate at **General Ledger** &gt; **Currencies** &gt; **Currency exchange rates**. You must add records for Indian rupee (INR) and Brazilian real (BRL) that cover 2014. Then bring that database into your new environment, and start the upgrade against that database.
 
 ### The interpreter evaluation stack has grown during a call to the kernel
 
@@ -611,7 +624,7 @@ To resolve this issue, review the database log setup at **System administration*
 
 ### The batch process fails to start
 
-The batch process can fail if the environment has been left in [maintenance mode](../sysadmin/maintenance-mode.md) after a change to the configuration keys. To resolve this issue, turn maintenance mode off, and then resume the runbook process.
+The batch process can fail if the environment was left in [maintenance mode](../sysadmin/maintenance-mode.md) after the configuration keys were changed. To resolve this issue, turn maintenance mode off, and then resume the runbook process.
 
 ### The system fails to locate or generate a user GUID
 
@@ -631,7 +644,7 @@ You might receive one of the following error messages on the **preSyncLedgerPeri
 
 > Cannot execute the required database operation. The SQL database has issued an error. Object Server DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Invalid column name 'TEMPLATE'. INSERT INTO LedgerPeriodCloseTemplateTask ( TEMPLATE, AREA, NAME, MENUITEM, MENUITEMTYPE, TARGETDAYSFROMPROJECTCOMPLETE, DUETIME, LEGALENTITYSELECTION, RECVERSION, PARTITION, RECID, CLOSINGROLE, LINENUM) SELECT T1.TEMPLATE, T1.AREA, T1.NAME, T1.MENUITEM, T1.MENUITEMTYPE, T1.TARGETDAYSFROMPROJECTCOMPLETE, T1.DUETIME, T1.LEGALENTITYSELECTION, T1.RECVERSION, T1.PARTITION, T1.RECID, T1.CLOSINGROLE, T1.LINENUM FROM LedgerPeriodCloseTemplateTaskTmp T1 session 1013 (Admin)
 
-To resolve this issue, manually drop the LedgerPeriodCloseTemplateTaskTmp table from the database by using Management Studio. Then rerun the runbook step. This issue will be fixed in a future hotfix.
+To resolve this issue, use Management Studio to manually drop the LedgerPeriodCloseTemplateTaskTmp table from the database. Then rerun the runbook step. This issue will be fixed in a future hotfix.
 
 ### KB number 3170386
 
@@ -639,12 +652,12 @@ If KB number 3170386 isn't installed, you will receive the following error messa
 
 > GlobalUpdate script for service model: AOSService on machine …. Etc …. UpgradeServiceHelper::WaitForDataUpgradeToComplete(Object\[\]… The step failed
 
-This error is caused by a failure in the pre-sync or the post-sync substep of the data upgrade. Follow these steps to determine which substep failed and the details of the failure. 
+This error is caused by a failure in the pre-sync or the post-sync substep of the data upgrade. Follow these steps to determine which substep failed and the details of the failure.
 
 > [!NOTE]
 > You can't rerun the failed runbook step until the pre-sync or post-sync substep has been manually completed, and the AutoDataUpgrade.config file has been updated to skip the substeps that have already been run.
 
-1. In File Explorer, in the **DataUpgradeAosServiceScripts** folder, sort by descending order of date modified, and then look at the file at the top of the list to determine which substep failed.
+1. In File Explorer, in the **DataUpgradeAosServiceScripts** folder, sort by descending order of the date when files were last modified, and then look at the file at the top of the list to determine which substep failed.
 
     - If the top file is named **dbUpgrade*PreSync*Monitor.error.log**, the pre-sync substep failed.
     - If the top file is named **dbUpgrade*PostSync*Monitor.error.log**, the post-sync substep failed.
@@ -670,6 +683,7 @@ If you receive either of the following Data Migration Framework (DMF) errors, do
 > Batch error: initial.DAT.ReleaseUpdateDB70\_DMF.updateIntegrationActivityExecutionMessageIdPostSync (Batch:AOS-F01B9F0CCC8, 9, Info, Error, ):\[\[1\]\[3,Cannot execute the required database operation. The SQL database has issued an error.\]\[3,Object Server DynamicsAXBatchManagement: \]\[3,\[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\]Incorrect syntax near 'GO'.\]\[3,
 
 ## Encrypted fields in demo data
+
 After upgrade, values in encrypted fields in the database will be unreadable. However, new values that are entered in these fields after upgrade will be readable. This behavior occurs because of a technical limitation that is related to the certificate that is used for data encryption. The following table shows the fields that are affected.
 
 | Table.Field                                                      | Data exists in demo data |

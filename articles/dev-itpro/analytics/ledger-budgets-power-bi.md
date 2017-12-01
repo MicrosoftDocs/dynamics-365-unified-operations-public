@@ -5,7 +5,7 @@ title: Actual vs budget Power BI content
 description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content. 
 author: ryansandness
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ This topic describes the **Actual vs budget** Microsoft Power BI content. It exp
 The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization. The **Actual vs budget** Power BI content provides visibility into your budget variances. You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances. 
 
 # Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.
+Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.
 
 # Reports that are included in the Power BI content
 The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.

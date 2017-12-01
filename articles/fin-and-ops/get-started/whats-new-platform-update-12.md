@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/11/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,6 +48,11 @@ shortcuts**. This will open a dialog box listing the shortcuts that you can use
 based on where you are on the page. 
 
 For more information, see [Keyboard shortcuts](shortcut-keys.md).
+
+## Enabling SQL triggers in ‘bring your own database’ (BYOD)
+The ‘bring your own database’ feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 for Finance and Operations into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.
+
+You can now use SQL database triggers in your own database, for data that is exported or BYOD. This allows for downstream processes to easily integrate with the BYOD processes.
 
 Export B2B users to Azure AD 
 -----------------------------

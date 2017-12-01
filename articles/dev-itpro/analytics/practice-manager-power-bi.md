@@ -5,7 +5,7 @@ title: Practice manager Power BI content
 description: This topic describes what is included in the Practice manager Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,7 +44,7 @@ The **Practice manager** Power BI content contains five report pages: one overvi
 All the amounts in the content are shown in the system currency. You can set the system currency on the **System parameters** page.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Practice manager** Power BI content is shown in the **Project management** workspace.
+The **Practice manager** Power BI content is shown in the **Project management** workspace.
 
 ## Reports that are included in the Power BI content
 
