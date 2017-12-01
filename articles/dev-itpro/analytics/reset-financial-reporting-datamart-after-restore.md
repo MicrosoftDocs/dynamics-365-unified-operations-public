@@ -46,7 +46,7 @@ To get Financial reporting, version 7.2.6.0, you can download KB 4052514 from ht
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.2.6.0 and later
 
-###Resetting the Financial reporting data mart from Report designer
+### Resetting the Financial reporting data mart from Report designer
 
 >[!NOTE] 
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
@@ -61,7 +61,7 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 
 The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
 
-####Reset the data mart
+#### Reset the data mart
 To reset the data mart, in Report designer, on the Tools menu, select Reset Data Mart. The dialog box that appears has two sections: Statistics and Reset.
 
 [![Statistics](./media/Statistics.png)](./media/Statistics.png)
@@ -77,7 +77,6 @@ The Data status grid provides a snapshot of the transactions, exchange rates, an
 
 #### Misaligned main account categories
 If the Financial reporting version is earlier than 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The Misaligned main account categories field shows whether you're experiencing that issue.
-
 
 
 ###**Reset in Financial reporting version 7.2.6.0**
