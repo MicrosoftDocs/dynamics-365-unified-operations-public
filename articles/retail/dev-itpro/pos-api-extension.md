@@ -59,7 +59,7 @@ We exposed lot of APIs to be consumed in extensions. Ex: You have scenario where
 
 **How to consume our APIs in your extension:** 
 
-To consume our APIs in your extension, follow the below steps: 
+**To consume our APIs in your extension, follow the below steps:** 
 
 1.  Open visual studio 2015 in administrator mode.
 
