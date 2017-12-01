@@ -170,7 +170,6 @@ F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail “<my reason for resetting>”
-
 ```
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
 
@@ -211,6 +210,7 @@ Import your report designs from the Report Designer, using the file created duri
 
 2.	Run the following script against the Financial reporting database (MRDB).
 
+```
 DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
 INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
 FROM [Scheduling].[Task] t with(nolock)
@@ -219,9 +219,9 @@ JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
 LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
 JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
 WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-
 PRINT 'Disable integration tasks'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
+```
 
 3.	Truncate or delete all records from the FINANCIALREPORTS table in the Finance and Operations database (AXDB).
 
