@@ -149,7 +149,7 @@ When access the published VSTS work items from the support search box, it will d
 
 [![vststag](./media/VSTS%20TAg.png)](./media/VSTS%20TAg.png)
 
-- Search VSTS work item 
+- Search VSTS work item from client
 
 [![vstsSearch](./media/ClientSerachVSTS.png)](./media/ClientSerachVSTS.png)
 
