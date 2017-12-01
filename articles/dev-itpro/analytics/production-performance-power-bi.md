@@ -5,7 +5,7 @@ title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ This Power BI content also lets you analyze production variances. Production var
 The **Production performance** Power BI content includes data that originates from production orders and batch orders. The reports don't include data that is related to kanban productions.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Production performance** Power BI content is shown on the **Production performance** page (**Production control** > **Inquiries and reports** > **Production performance analysis** > **Production performance**). 
+The **Production performance** Power BI content is shown on the **Production performance** page (**Production control** > **Inquiries and reports** > **Production performance analysis** > **Production performance**). 
 
 ## Metrics that are included in the Power BI content
 
