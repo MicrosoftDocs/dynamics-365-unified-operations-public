@@ -123,7 +123,7 @@ No. Client installations of the Document Routing Agent can be shared by individu
 
 ###### If the Document Routing Agent belongs on a network Print Server, why doesn't the client run as a service?
 
-We agree. Our research and development (R&D) team is actively working to enhance the agent so that it runs as a Microsoft Windows service that can be managed by using Windows PowerShell commands.
+The Document Routing Agent now supports running in the background as a service.  Just ensure, that you have downloaded the latest version of the client. 
 
 ###### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
