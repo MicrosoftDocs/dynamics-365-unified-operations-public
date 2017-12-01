@@ -50,6 +50,6 @@ The following information is entered or set on this page:
 You can also specify which legal entities an application will be available for, or you can make it available to all your legal entities. By default, your PowerApps applications are available to all legal entities.
 
 ## Opening an application
-When you’ve configured embedded PowerApps applications, llinks to the applications that you specified will be added to the pages within Talent. Click a link to open an application. 
+When you’ve configured embedded PowerApps applications, links to the applications that you specified will be added to the pages within Talent. Click a link to open an application. 
 
 
