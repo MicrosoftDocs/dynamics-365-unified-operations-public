@@ -58,7 +58,7 @@ To consume an APIs in an extension, follow these steps:
 4.  Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
 5.  In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
 6.  Add the following **import** statements to import the relevant entities and context.
-```Typescript
+    ```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
     import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -72,13 +72,13 @@ To consume an APIs in an extension, follow these steps:
     } from "PosApi/Consume/Customer";
 
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
-```
-7. Create a new class called PreEndTransactionTrigger and extend it from PreEndTransactionTrigger.
-```Typescript
+    ```
+7. Create a new class called **PreEndTransactionTrigger** and extend it from **PreEndTransactionTrigger**.
+    ```Typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
-```
-8. Inside the class declare the below variables to declare the attributes names and sample values:
-```Typescript
+    ```
+8. Inside the class declare the following variables for the attributes names and sample values.
+    ```Typescript
     private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
     private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
     private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
@@ -86,11 +86,8 @@ To consume an APIs in an extension, follow these steps:
     private static DIALOG_RESULT_NO: string = "no";
     private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
-```
-9. Implement the trigger execute method and call the existing POS APIs. In the execute method we will be calling the below APIS:
-    1.  Get current cart
-    2.  Get Current customer
-    3.  Save attribute on cart
+    ```
+9. Implement the trigger **execute** method and call the existing POS APIs. In the **execute** method calls APIs to get the current cart, get the current customer, and save the attributes on the cart.
     ```Typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
@@ -179,7 +176,7 @@ To consume an APIs in an extension, follow these steps:
                 });
         }
     ```
-    The overall code should look like this:
+    The overall code is:
     ```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
@@ -326,7 +323,7 @@ To consume an APIs in an extension, follow these steps:
         }
     }
     ```
-12. Open the extensions.json file under POS.Extensions project and update it with POSAPIExtension samples, so that POS during runtime will include this extension.
+12. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **POSAPIExtension** samples, so that POS during runtime will include this extension.
     ```Typescript
     {
         "extensionPackages": [
@@ -339,11 +336,11 @@ To consume an APIs in an extension, follow these steps:
         ]
     }
     ```
- **Note:** The extension.json file should always contain two extensions folder names so don’t remove the SampleExtensions folder name.
+ **Note:** The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
 
-13. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+13. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment out the extension from the extension list as shown.
 
-Note: Please comment both SampleExtensions2 and POSAPIExtension.
+    Note: Comment out both SampleExtensions2 and POSAPIExtension.
     ```Typescript
     "exclude": [
 
@@ -363,20 +360,14 @@ Note: Please comment both SampleExtensions2 and POSAPIExtension.
 
     ],
     ```
-14. Select the POS.Extensions project and click Show all Files in the solution explorer tab
+14. Select the **POS.Extensions** project and click **Show all Files** in Solution Explorer.
+15. Right-click and include the **SampleExtensions2** folder in the project.
+16. Compile and rebuild the prothe.
 
-15. Right click and include the SampleExtensions2 folder in the project.
-
-16. Compile and rebuild the project.
-
-**How to test your extension:**
+## Test the extension
 
 1.  Press F5 and deploy the POS to test your customization.
-
 2.  Once the POS is launched, login to POS and add any item to transaction.
-
 3.  Add any customer to a transaction.
-
 4.  Click the pay button and commit the transaction.
-
 5.  POS should show a dialog box asking whether to save the attribute or not.
