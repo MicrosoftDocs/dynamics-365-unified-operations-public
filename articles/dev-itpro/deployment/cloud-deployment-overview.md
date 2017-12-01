@@ -114,6 +114,10 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
+## How do I access a development instance
+
+See [Access instances](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
+
 ### How do I deploy a demo environment
 A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
 

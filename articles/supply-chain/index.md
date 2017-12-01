@@ -46,7 +46,7 @@ Select a feature area to learn more about it.
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/costing-sheets.md)  
 - [Inventory management](inventory/inventory-home-page.md)
-- [Master planning](master-planning/introduction-demand-forecasting.md)
+- [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
 - [Production control](production-control/production-process-overview.md)

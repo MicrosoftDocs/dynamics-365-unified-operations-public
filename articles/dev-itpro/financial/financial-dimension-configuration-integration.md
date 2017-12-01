@@ -5,7 +5,7 @@ title: Financial dimension configuration for integrating applications
 description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,12 +35,19 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+This topic describes the Financial dimension configuration. There are two important areas for setup: 
+- the order of financial dimensions for financial reporting. This is configured on the **Financial reporting setup** page. 
+- the data entity integration formats. This is configured on the **Integrating applications** page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 
 Financial reporting
 -------------------
 
-The **Financial reporting** tab has a list of all financial dimensions in the system. Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This tab lets you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. The Financial reporting tab is not available the current release. Instead, please see the Financial reporting setup page to select your Financial dimensions and Attributes.
+The **Financial reporting setup** page has a list of all financial dimensions in the system. **General ledger** > **Ledger setup** > **Financial reporting setup**.  
+
+The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:
+ - **Dimensions** tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. 
+
+ - **Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.  
 
 ## Data entities
 The **Data entities** tab is where you define the order of financial dimensions for importing data. There is no rule about how you should set the order of your dimension formats. They are designed to be flexible enough that you can take your source files from an external system and import the data without spending time to make the source files match your account structures. Dimension validation still occurs during the import process, to verify that you aren't importing financial dimension values that don't exist for a particular segment. However, outside validation, account structures and dimension formats are independent of each other. There are four dimension format types:

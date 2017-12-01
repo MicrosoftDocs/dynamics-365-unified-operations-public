@@ -1354,7 +1354,7 @@
 ### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Master planning
+## [Master planning](../supply-chain/master-planning/master-planning-home-page.md)
 ### [Master plan](../supply-chain/master-planning/master-plans.md)
 #### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
 #### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)

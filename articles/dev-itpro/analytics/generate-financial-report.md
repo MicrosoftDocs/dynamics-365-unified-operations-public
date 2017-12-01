@@ -3,9 +3,9 @@
 
 title: Generate a financial report
 description: This topic provides information about generating a financial report. 
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68843
@@ -44,12 +44,28 @@ To generate a report, open the report definition and then click the Generate but
 
 The following table explains the options that are available for generating reports.
 
-| Option                                                                                | For more information |
-|---------------------------------------------------------------------------------------|----------------------|
-| Set up a schedule to generate a report or group of reports automatically              |                      |
-| Check for missing accounts or data in a report, and validate the accuracy of a report |                      |
+| Option                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Set up a schedule to generate a report or group of reports automatically              |   
+| Check for missing accounts or data in a report, and validate the accuracy of a report |   
 
 When you generate a report, the options that you have specified on the Report definition tabs are used. The Output and Distribution tab lets you specify a report library location, which provides an easy way to share the report.
+
+## Generate a financial report
+
+To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**. 
+ - Select a report to generate and click **Generate**. 
+ - Fill in the **Report date** field and click **OK**.
+ 
+ After the report has been generated, the report will be available to view in the **Reports** section.
+ You can select to **View** or **Delete** the report.
+ 
+ 
+To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+
+> [!NOTE]
+> You can generate reports only to folders and locations to which you have permission to access.
+
 
 ## Schedule report generation
 Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.

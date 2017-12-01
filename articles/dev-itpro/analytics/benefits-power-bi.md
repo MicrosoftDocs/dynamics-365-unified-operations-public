@@ -5,7 +5,7 @@ title: Benefits Power BI content
 description: This topic describes the Benefits Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic describes the **Benefits** Microsoft Power BI content. It explains ho
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content
