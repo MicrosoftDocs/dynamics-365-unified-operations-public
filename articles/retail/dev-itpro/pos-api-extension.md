@@ -72,11 +72,11 @@ To consume an APIs in an extension, follow these steps:
     } from "PosApi/Consume/Customer";
 
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
-    ```
+```
 7. Create a new class called PreEndTransactionTrigger and extend it from PreEndTransactionTrigger.
     ```Typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
-    ```
+```
 8. Inside the class declare the below variables to declare the attributes names and sample values:
     ```Typescript
     private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
@@ -171,7 +171,7 @@ To consume an APIs in an extension, follow these steps:
             return result;
         });
     }
-    ```
+```
     The overall code should look like this:
     ```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
@@ -287,7 +287,7 @@ To consume an APIs in an extension, follow these steps:
                 });
             }
         }
-    ```
+```
 10. Create a new json file and under the POSAPIExtension folder and name it as manifest.json.
 
 11. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
