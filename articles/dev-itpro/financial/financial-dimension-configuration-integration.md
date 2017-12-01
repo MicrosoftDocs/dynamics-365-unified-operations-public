@@ -40,7 +40,7 @@ This topic describes the Financial dimension configuration for integrating appli
 Financial reporting
 -------------------
 
-The **Financial reporting setup** page has a list of all financial dimensions in the system. You can find the Financial reporting set up page, here: **General ledger** > **Ledger setup** > **Financial reporting setup**.  
+The **Financial reporting setup** page has a list of all financial dimensions in the system. **General ledger** > **Ledger setup** > **Financial reporting setup**.  
 
 The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:
  - **Dimensions** tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. 
