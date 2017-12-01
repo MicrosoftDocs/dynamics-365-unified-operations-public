@@ -3,9 +3,9 @@
 
 title: Tax engine
 description: This topic provides information about extending tax engine configurations.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.author: riluan
 
 [!include[banner](../includes/banner.md)]
 
-The new Tax Engine (GTE) is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Operations. GTE is highly customizable and lets business users, functional consultants, or power users configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
+The Tax Engine (GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
 
 In this topic, you will learn the GTE configuration extension process using the following example scenarios.
 
