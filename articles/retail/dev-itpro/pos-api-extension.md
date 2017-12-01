@@ -29,33 +29,25 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Call an POS API or OPeration from a POS extension
+# Call a POS API or operation from a POS extension
 
-**Consume POS APIs in extensions:**
+## Consume POS APIs in extensions
 
-Retail POS API helps you to build extensions or new features to the POS app easily. Ex: If you are extending Retail POS application to add new feature in which to want to get product details or change price or add item to cart in many such scenarios you can consume our APIs which will do the work for you, simply call our APIs to do the work. The POS API simplifies the extension pattern and provide continuous support to build the extensions. 
+The Retail POS APIs help you to build extensions or new features to POS. For example, if you wanted to add a new features that would get product details, changes prices, or add an item to a cart, you can call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, Hardware Station (HWS) now all use the request/response pattern. 
 
- 
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.  
 
-We unified our extension patterns across commerce runtime (CRT), POS and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with application update 4 hotfix.  
+## Scenarios
+The POS APIs are categorized into three different scenarios.
 
-**The POS APIs are categorized into three different scenarios:** 
+- **Consume**: Consume the public APIs in your extension. 
+- **Extend**: Extend the public APIs to do some additional logic. 
+- **Create**: Create new APIs using the POS interface which can then be used across your extensions. 
 
-1.  **Consume** – Consume our public APIs in your extension. 
+## Consume an API
+Because the APIs are exposed using a request/response pattern, you can make an external web serivce call to implement your business logic. For example, is you wanted to change the price of an item, you would call **PriceOverrideOperationRequest**. The APIs are subcategorized by modules such as CRT, peripherals, abnd store operations. 
 
-<!-- -->
-
-2.  **Extend** – Extend our public APIs to do some additional logic. 
-
-<!-- -->
-
-3.  **Create** – Create your new APIs using the POS interface exposed which can be used across your extensions. 
-
-**Consume:** 
-
-We exposed lot of APIs to be consumed in extensions. Ex: You have scenario where you want to change the price of the item based on an external web service call, in that case you can call our PriceOverrideOperationRequest API to change the price of the item. Within the consume, the APIs are sub categorized by module like Crat, peripherals, store operations etc. 
-
-**Note:** You can get all the API list from the **Pos.Api.d.ts** which is part of the Retail SDK (…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts) 
+Many new APIs have been added. You can find a list of all the APIs in the file **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts**. 
 
 **How to consume our APIs in your extension:** 
 
