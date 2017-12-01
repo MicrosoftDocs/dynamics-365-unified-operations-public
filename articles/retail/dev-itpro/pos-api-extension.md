@@ -348,7 +348,7 @@ return result;
  "triggers": [
  {
  "triggerType": "PreEndTransaction",
- "modulePath": "TriggersHandlers/PreEndTransactionTrigger"
+  "modulePath": "TriggersHandlers/PreEndTransactionTrigger"
  }  ]
  }  } }
 ```
@@ -389,9 +389,9 @@ Note: Please comment both SampleExtensions2 and POSAPIExtension.
 
 ],
 ```
-14.Select the POS.Extensions project and click Show all Files in the solution explorer tab
+14. Select the POS.Extensions project and click Show all Files in the solution explorer tab
 
-15.Right click and include the SampleExtensions2 folder in the project.
+15. Right click and include the SampleExtensions2 folder in the project.
 
 16. Compile and rebuild the project.
 
