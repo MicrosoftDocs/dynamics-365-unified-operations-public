@@ -110,7 +110,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Platform compatibility  || Yes | Yes |
 | Servicing | | Yes | Yes |
 | | Servicing environments | Yes | No |
-| Trace Parser and PerfTimer | Yes | No |
+| Trace Parser and PerfTimer | | Yes | No |
 | Upgrade | | Yes | Yes |
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
