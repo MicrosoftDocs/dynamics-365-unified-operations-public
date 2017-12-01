@@ -249,7 +249,7 @@
 ### [Order attributes](dev-itpro/order-attributes.md)
 ### [Customer attributes](dev-itpro/customer-attributes.md)
 ### [Retail Typescript and C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
-### [Run Retail POS samples](pos-run-samples.md)
+### [Run Retail POS samples](dev-itpro/pos-run-samples.md)
 
 ## Commerce runtime
 ### [Loyalty extension](dev-itpro/retail-sdk/loyalty-extension-sample.md)
