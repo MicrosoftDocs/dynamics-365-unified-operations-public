@@ -42,27 +42,6 @@ In this topic, you will learn the GTE configuration extension process using the 
 
 -	Switch to the **INMF** company context.
 
-## Copy the GST configuration
-
-1. On the computer that is running Dynamics 365 for Operations, create a folder for the GST configuration, such as **C:\\India GST Configurations**. 
-2. Save the GST configuration in the folder that you just created.
-
-## Activate the tax configuration
-
-1. Go to **Organization administration** > **Electronic reporting**.
-2. In the **Related links** list, click **Electronic reporting parameters**.
-3. Click **Attachments**
-4. In the **Configurations** field, select **File** and then close the page.
-5. In the **Related links** list, click **Enable India GST**.
-6. Select **Yes** on the **Enable GST** option, and then click **OK** in the message box.
-7. In the **Work directory** field, specify the folder where you saved the India GST configuration.
-8. Click **OK**.
-9. Click **Import GST configurations** to import the configuration.
-10. Click **Import**.
-11. Click **Yes**.
-12. Click **Solutions**.
-13. Create a new solution, and enter the required information.
-14. Click **Set active** to activate the new solution.
 
 ## Scenario 1: Extend the GTE configuration for UTGST
 
