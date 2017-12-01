@@ -336,6 +336,9 @@ in time, the inventory receipt with the latest expiry date will be used for
 safety stock to allow real demand, such as sale lines or BOM lines, to be
 fulfilled in the FEFO (First Expired, First Out) order.
 
+## Tax Engine (GTE) – India GST only
+The Tax Engine (GTE) is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
+
 Vendor collaboration 
 ---------------------
 
