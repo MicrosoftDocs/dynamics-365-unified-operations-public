@@ -206,9 +206,9 @@ Import your report designs from the Report Designer, using the file created duri
 
 ## Reset the Financial reporting data mart for Finance and Operations (on-premises)
 
-1.	Instruct all users to exit Report designer and the Financial reporting area of Finance and Operations.
+1. Instruct all users to exit Report designer and the Financial reporting area of Finance and Operations.
 
-2.	Run the following script against the Financial reporting database (MRDB).
+2. Run the following script against the Financial reporting database (MRDB).
 
 ```
 DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
@@ -223,11 +223,11 @@ PRINT 'Disable integration tasks'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
 ```
 
-3.	Truncate or delete all records from the FINANCIALREPORTS table in the Finance and Operations database (AXDB).
+3. Truncate or delete all records from the FINANCIALREPORTS table in the Finance and Operations database (AXDB).
 
-4.	Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the Finance and Operations database. If the table doesn't exist, skip this step.
+4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the Finance and Operations database. If the table doesn't exist, skip this step.
 
-5.	Run the ResetDatamart.sql script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then enables the data integration again.
+5. Run the ResetDatamart.sql script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then enables the data integration again.
 
 ```
   DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
@@ -537,7 +537,7 @@ UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBounda
 ------------------------------------------
 ```
 
-6.	After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
+6. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
 select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
 
