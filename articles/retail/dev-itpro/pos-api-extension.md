@@ -58,7 +58,7 @@ To consume an APIs in an extension, follow these steps:
 4.  Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
 5.  In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
 6.  Add the following **import** statements to import the relevant entities and context.
-    ```Typescript
+```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
     import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -74,11 +74,11 @@ To consume an APIs in an extension, follow these steps:
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
 ```
 7. Create a new class called PreEndTransactionTrigger and extend it from PreEndTransactionTrigger.
-    ```Typescript
+```Typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
 ```
 8. Inside the class declare the below variables to declare the attributes names and sample values:
-    ```Typescript
+```Typescript
     private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
     private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
     private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
@@ -86,7 +86,7 @@ To consume an APIs in an extension, follow these steps:
     private static DIALOG_RESULT_NO: string = "no";
     private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
-    ```
+```
 9. Implement the trigger execute method and call the existing POS APIs. In the execute method we will be calling the below APIS:
     1.  Get current cart
     2.  Get Current customer
@@ -173,7 +173,7 @@ To consume an APIs in an extension, follow these steps:
     }
 ```
     The overall code should look like this:
-    ```Typescript
+```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
     import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
