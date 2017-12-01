@@ -38,7 +38,7 @@ This topic explains how to reset the Financial reporting data mart for the follo
 
 - Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.6.0 and later
 
-- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.0.10000.4 and earlier
+- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.0.10000.4 and later
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
 
@@ -46,7 +46,7 @@ To get Financial reporting, version 7.2.6.0, you can download KB 4052514 from ht
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.2.6.0 and later
 
-### **Resetting the Financial reporting data mart from Report designer**
+###Resetting the Financial reporting data mart from Report designer
 
 >[!NOTE] 
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
@@ -61,21 +61,21 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 
 The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
 
-#### **Reset the data mart**
+####Reset the data mart
 To reset the data mart, in Report designer, on the Tools menu, select Reset Data Mart. The dialog box that appears has two sections: Statistics and Reset.
 
-[![Statistics](./media/Statistics.JPG)](./media/Statistics.JPG)
+[![Statistics](./media/Statistics.png)](./media/Statistics.png)
 
-##### **Integration attempts**
+#####Integration attempts
 
 The **Integration attempts** grid shows how many times the system has tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You will know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
 
-#### **Data status**
+#### Data status
 
 The Data status grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might cause slower report generation times.
 
 
-#### **Misaligned main account categories**
+#### Misaligned main account categories
 If the Financial reporting version is earlier than 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The Misaligned main account categories field shows whether you're experiencing that issue.
 
 
@@ -100,16 +100,17 @@ If you determine that a data mart reset is required, you can select the Reset da
 > Verify that all existing tasks have finished integrating before completing the steps. You can view the status by clicking Tools > Integration status.
 
 **Clear users and companies**
+
 Select the **Clear users and companies** check box if you restored your database and have made changes to users or companies. You should rarely have to select this check box.
 
 When you're ready to start the reset process, select OK. You're prompted to confirm that you're ready to begin the process. Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.
 
 If you want to review the status of the integration, select Tools > Integration status to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/integration.JPG)](./media/integration.JPG)
+[![View the status of the integration](./media/integration.png)](./media/integration.png)
 
 
-##Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
+## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
 
 If you ever restore your Finance and Operations database from a backup or copy the database from another environment, you must follow the steps in this topic to ensure that the financial reporting data mart is correctly using the restored Finance and Operations database. 
 > [!Note] 
@@ -133,8 +134,10 @@ First, export the report designs located in the Report Designer, using the follo
 6.  Click **Save**.
 
 You can copy or uploade the file to a secure location. In this way, the file can be imported into a different environment later. Information about how to use a Microsoft Azure storage account, see [Transfer data with the AzCopy Command-Line Utility](/azure/storage/storage-use-azcopy). 
+
 > [!NOTE]
 > Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. 
+
 > [!WARNING]
 > Be aware of the behavior of the D drive on Azure Virtual Machines(VM's). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
