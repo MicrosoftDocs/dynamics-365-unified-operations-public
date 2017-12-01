@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 #ms.search.form: 
-audience: Application User
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -22,8 +22,8 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: riluan
-#ms.search.validFrom:
-#ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.3
 
 ---
 
@@ -101,7 +101,7 @@ To support the scenario, the following must be done:
 ### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
 
  1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
- 2. In the tree, go to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
+ 2. In the tree, go to **Taxable document** > **Header** > **Lines**, and then click **New** to create a new node.
  3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
 	-	**Item type:** Enum
@@ -119,21 +119,24 @@ To support the scenario, the following must be done:
  9. Enter a description such as **UTGST**, and then click **OK**.
  10. If there are any errors, open the designer, click **Validate**, and fix the errors.
  11. After the status is updated to **Complete**, the configuration is ready for deployment.
+ 
 ### Task 3: Do data mapping for the extended taxable document
 There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
 For convenience, there is a special data source called Taxable document source which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are following two approaches to fetch and map the value of the additional field to your extended taxable document.
 
- 1. Enable the additional field into the existing Taxable document
-     source
- 2. Use pure ER (Electronic Reporting) data mapping which you can map any Finance and Operations field by using table records, class,
-     etc.
+ 1. Enable the additional field into the existing Taxable document source.
+ 2. Use pure ER (Electronic Reporting) data mapping which you can map any Finance and Operations field by using table records, class,   etc.
+ 
 #### Task 3.1: Data mapping by Taxable document source
 Before you start this task, be sure to read the **Tax Engine Integration** document where you can find all the details. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to GTE.
+
 ##### Task 3.1.1: Check the system name of the Union Territory of State master
-Go to **Organization administration >Global address book> Addresses > Address setup**. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
-![](media/gte-extension-union-territory-form-info.png)
+Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
+
+![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
+
 ##### Task 3.1.2: Add a tax engine model field for intrastate transactions in a union territory
-In the AOT, open **Classes > TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
+In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
 ```
 public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
 {
