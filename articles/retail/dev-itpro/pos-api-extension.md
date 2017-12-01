@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ## Consume POS APIs in extensions
 
-The Retail POS APIs help you to build extensions or new features to POS. For example, if you wanted to add a new features that would get product details, changes prices, or add an item to a cart, you can call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, Hardware Station (HWS) now all use the request/response pattern. 
+The Retail POS APIs help you to build extensions or add new features to POS. For example, if you wanted to add new features that would retrieve product details, change a price, or add an item to a cart, you would call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, Hardware Station (HWS) now all use the request/response pattern. 
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.  
 
@@ -49,146 +49,130 @@ Because the APIs are exposed using a request/response pattern, you can make an e
 
 Many new APIs have been added. You can find a list of all the APIs in the file **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts**. 
 
-**How to consume our APIs in your extension:** 
+### How to consume an API in an extension
+To consume an APIs in an extension, follow these steps:
 
-**To consume our APIs in your extension, follow the below steps:** 
+1.  Open Visual Studio 2015 in administrator mode.
+2.  Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3.  Under the **POS.Extensions** project create a new folder named **POSAPIExtension**.
+4.  Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
+5.  In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
+6.  Add the following **import** statements to import the relevant entities and context.
+    ```Typescript
+    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
+    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+    import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
+    import {
+        GetCurrentCartClientRequest, GetCurrentCartClientResponse,
+        SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
+    } from "PosApi/Consume/Cart";
 
-1.  Open visual studio 2015 in administrator mode.
+    import {
+        GetCustomerClientRequest, GetCustomerClientResponse,
+    } from "PosApi/Consume/Customer";
 
-2.  Open ModernPOS solution from …\\RetailSDK\\POS
-
-3.  Under the POS.Extensions project create a new folder called POSAPIExtension.
-
-4.  Under POSAPIExtension, create new folder called TriggersHandlers.
-
-5.  In the TriggersHandlers folder, add a new ts (typescript) file and name it has PreEndTransactionTrigger.ts
-
-6.  Add the below import statement to import the relevant entities and context.
-```Typescript
-
- import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
- import { ClientEntities, ProxyEntities } from "PosApi/Entities";
- import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
- import {
-    GetCurrentCartClientRequest, GetCurrentCartClientResponse,
-    SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
- } from "PosApi/Consume/Cart";
-
-import {
-GetCustomerClientRequest, GetCustomerClientResponse,
-} from "PosApi/Consume/Customer";
-
-import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
-```
+    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
+    ```
 7. Create a new class called PreEndTransactionTrigger and extend it from PreEndTransactionTrigger.
-```Typescript
-    export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
-```
+    ```Typescript
+        export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
+    ```
 8. Inside the class declare the below variables to declare the attributes names and sample values:
-```Typescript
- private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
- private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
- private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
- private static DIALOG_RESULT_YES: string = "yes";
- private static DIALOG_RESULT_NO: string = "no";
- private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
- private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
-```
-9. Implement the trigger execute method and call the existing POS APIs:
-
-    In the execute method we will be calling the below APIS:
-
+    ```Typescript
+    private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
+    private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
+    private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
+    private static DIALOG_RESULT_YES: string = "yes";
+    private static DIALOG_RESULT_NO: string = "no";
+    private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
+    private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
+    ```
+9. Implement the trigger execute method and call the existing POS APIs. In the execute method we will be calling the below APIS:
     1.  Get current cart
-
     2.  Get Current customer
-
     3.  Save attribute on cart
-```Typescript
-public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
-console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
-let currentCart: ProxyEntities.Cart;
-return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
-.then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
-Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
-currentCart = getCurrentCartClientResponse.data.result;
+        ```Typescript
+        public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
+            console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
+            let currentCart: ProxyEntities.Cart;
+            return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
+            .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
+            Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
+            currentCart = getCurrentCartClientResponse.data.result;
 
-// Gets the current customer.
+            // Gets the current customer.
 
- let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
- if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
- let getCurrentCustomerClientRequest: GetCustomerClientRequest<GetCustomerClientResponse> =
- new GetCustomerClientRequest(currentCart.CustomerId);
- result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
- } else {
+            let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
+            if (!ObjectExtensions.isNullOrUndefined(currentCart) 
+                && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
+                let getCurrentCustomerClientRequest: GetCustomerClientRequest<GetCustomerClientResponse> =
+                    new GetCustomerClientRequest(currentCart.CustomerId);
+                result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
+            } else {
+                result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
+            }
+            return result;
+        })
 
- result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
- }
- return result;
- })
+        .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
+        Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
+            let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
+            let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
 
-.then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
-Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
-let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
-let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
+            if (!ObjectExtensions.isNullOrUndefined(currentCart)
+                && !ObjectExtensions.isNullOrUndefined(currentCustomer)) {
+                let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
+                    id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
+                    label: "Yes", // "Yes"
+                    result: PreEndTransactionTrigger.DIALOG_RESULT_YES
+                };
 
-if (!ObjectExtensions.isNullOrUndefined(currentCart)
-&& !ObjectExtensions.isNullOrUndefined(currentCustomer)) {
-let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
-id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
-label: "Yes", // "Yes"
-result: PreEndTransactionTrigger.DIALOG_RESULT_YES
-};
+                let noButton: ClientEntities.Dialogs.IDialogResultButton = {
+                    id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
+                    label: "No", // "No"
+                    result: PreEndTransactionTrigger.DIALOG_RESULT_NO
+                };
 
-let noButton: ClientEntities.Dialogs.IDialogResultButton = {
-id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
-label: "No", // "No"
-result: PreEndTransactionTrigger.DIALOG_RESULT_NO
+                let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
+                    title: "Save attribute - Sample",
+                    subTitle: StringExtensions.EMPTY,
+                    message: "Save attribute ?",
+                    button1: yesButton,
+                    button2: noButton
+                };
 
-};
+                let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
+                    new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
+                result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
+            } else {
+                result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
+            }
+            return result;
+        })
 
-let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
-title: "Save attribute - Sample",
-subTitle: StringExtensions.EMPTY,
-message: "Save attribute ?",
-button1: yesButton,
-button2: noButton
-};
-
-let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
-new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
-result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
-} else {
-result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
- }
-return result;
- })
-
-.then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>):
- Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
-
-// Save the attribute value depending on the dialog result.
- let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
- let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
- if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
- let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
- attributeValue.Name = PreEndTransactionTrigger.CART_ATTRIBUTE_NAME;
- attributeValue.TextValue = messageDialogResult.dialogResult === PreEndTransactionTrigger.DIALOG_RESULT_YES ?
- PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_FALSE;
- let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
- new SaveAttributesOnCartClientRequest(attributeValues);
- result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
- } else {
- result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
- }
-
- return result;
-
- });
-
- }
-```
-The overall code should look like this:
+        .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>):
+         Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
+            // Save the attribute value depending on the dialog result.
+            let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult =
+                showMessageDialogClientResponse.data.result;
+            let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
+            if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
+                let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
+                attributeValue.Name = PreEndTransactionTrigger.CART_ATTRIBUTE_NAME;
+                attributeValue.TextValue = messageDialogResult.dialogResult === PreEndTransactionTrigger.DIALOG_RESULT_YES ?
+                PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_FALSE;
+                let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
+                let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
+                    new SaveAttributesOnCartClientRequest(attributeValues);
+                result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+            } else {
+                result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
+            }
+            return result;
+        });
+    }
+    ```
+    The overall code should look like this:
 ```Typescript
  /**
 
