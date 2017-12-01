@@ -133,27 +133,31 @@ There are data mappings for each taxable document (purchase order, sales order, 
 For convenience, there is a special data source called **Taxable document source** which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
 **Method 1**: You can enable the additional field for the existing Taxable document source.
+
  -or-
+ 
 **Method 2**: You can use Electronic Reporting (ER) data mapping, which lets you map a Finance and Operations field by using table records, classes, etc.
  
 #### Method 1: Data mapping by Taxable document source
 Before you start this task, be sure to read the **Tax Engine Integration** document where you can find all the details. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to GTE.
 
-1. Check the system name of the Union Territory of State master.
+1. Find the system name of the Union Territory of State master.
 	1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
-	2. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
+	2. Right-click the **Union territory** column, and then click **Form information** > **Form Name: LogisticsAddressSetup**. For this example, notice that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
 
 ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
 2. Add a tax engine model field for intrastate transactions in a union territory. 
 	1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
+	
 ```
 public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
 {
     public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 ```
-3. Implement logic to determine whether a transaction is an intrastate transaction in a union territory.
-	1. Add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
+
+3. Implement logic to determine if a transaction is an intrastate transaction in a union territory. For example, add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
+	
 ```
 private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
 {
@@ -203,14 +207,14 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 
 		![Data mapping](media/gte-extension-data-mapping.png)
 
-	4. With tasks 3.1.1 through 3.1.5 completed, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration value** in the Taxable Document.
+	4. After completing steps 1-5, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration value** in the Taxable Document.
 
 	![Data binding](media/gte-extension-data-binding.png)
 
 	5. Save the configuration, and close the designer.
 	6. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![](media/gte-change-configuration-status.png)
+	![Chang configuration status](media/gte-change-configuration-status.png)
 
 	7. Enter a description such as **UTGST**, and then click **OK**.
 	8. If there are any errors, open the designer, click **Validate**, and fix the errors.
@@ -223,35 +227,44 @@ You should be familiar with the table relation, class, method, etc. so you can u
 ![](media/gte-extension-add-enumerations.png)
 3. Add a calculated field **$PurchLine** in **purchase order** to build the connection between existing taxable document **purchase order** and the table records **PurchLine**, click **Edit formula**.
 ![](media/gte-extension-edit-formula.png)
-4.	Input formula which describe the relation between **PurchLine** and **purchase order**
+4. Input formula which describe the relation between **PurchLine** and **purchase order**
 ![](media/gte-extension-add-formula.png)
-5.	Click **Save**, and close the page
-6.	Add calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, the formula is 
+5. Click **Save**, and close the page
+6. Add calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, the formula is 
 ```
 AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
 ```
-7.	Do the data mapping in designer, select **$IntraStateInUnionTerritory** in DATA SOURCES and **IntraStateInUnionTerritory** in DATA MODEL, click **Edit**.
-![](media/gte-extension-data-binding2.png)
-8.	Input formula below to convert Boolean value to the enumeration value which is used by the extended taxable document field IntraStateInUnionTerritory.
-```
-CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
-```
-9.	Click Save and close the page.
-10. Do Task 2 (7~10) to complete the change
+7. In the **Model mapping designer** complete the mapping:
+	1. In the **DATA SOURCES** tree, select **$IntraStateInUnionTerritory**.
+	2. In the **DATA MODEL**, select **IntraStateInUnionTerritory**.
+	3. Click **Edit**.
+![Edit data mapping](media/gte-extension-data-binding2.png)
+	4. Input the following formula to convert the Boolean value to the enumeration value which is used by the extended taxable document field IntraStateInUnionTerritory.
+	```
+	CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
+	```
+	5. Click Save and close the page.
+8. Save the configuration, and close the designer.
+9. In the **Configurations** workspace, click **Change status** > **Complete**.
+
+	![Chang configuration status](media/gte-change-configuration-status.png)
+
+10. Enter a description such as **UTGST**, and then click **OK**.
+11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 ### Task 4: Change the data model of Tax (India GST Contoso)
 
-1. Navigate to the **Tax (India GST Contoso)** configuration that you created in task 1.2, and then click **Designer**.
+1. Go to the **Tax (India GST Contoso)** configuration that you created in [Scenario 1: Task 1.2](#task-12-create-a-new-tax-document-that-is-derived-from-tax-india-gst), and then click **Designer**.
 2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
 
-	![](media/gte-tax-document-designer.png)
+	![Tax document](media/gte-tax-document-designer.png)
 
 3. Click **Save** to save the configuration.
 
 ### Task 5: Change the applicability of SGST
 
-1. Navigate to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
-2. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **SGST**, and then click the **Lookup** tab.
+1. Go to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
+2. Go to **Tax document** > **Header** > **Lines** > **GST** > **SGST**, and then click the **Lookup** tab.
 3. Click **Columns**.
 4. Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
 5. For the **IntraStateInUnionTerritory** column, select **No**.
