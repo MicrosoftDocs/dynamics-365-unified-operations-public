@@ -35,7 +35,9 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+This topic describes the Financial dimension configuration. There are two important areas for setup: 
+- the order of financial dimensions for financial reporting. This is configured on the **Financial reporting setup** page. 
+- the data entity integration formats. This is configured on the **Integrating applications** page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 
 Financial reporting
 -------------------
