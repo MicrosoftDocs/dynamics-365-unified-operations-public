@@ -81,7 +81,7 @@ If the Financial reporting version is earlier than 7.2.1, you might have to rese
 
 ###**Reset in Financial reporting version 7.2.6.0**
 
-[![Reset Data Mart](./media/Reset-7.2.JPG)](./media/Reset-7.2.JPG)
+[![Reset Data Mart](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 To reset the data mart in version 7.2.6.0 and earlier, select the Reset data mart checkbox and click OK. This should only be selected during scheduled downtime. 
 
