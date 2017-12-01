@@ -238,10 +238,8 @@ JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
 LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
 JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
 WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-
 PRINT 'Disable integration tasks'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-
 ------------------------------
 PRINT 'Drop archive tables'
 ------------------------------
@@ -260,10 +258,8 @@ BEGIN
 END
 CLOSE dropCursor
 DEALLOCATE dropCursor
-
 IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME = 'DimensionCombinationProcessing' and t.TABLE_SCHEMA = 'Datamart')
 		  EXEC('DROP TABLE [Datamart].DimensionCombinationProcessing')
-
 ------------------------------
 PRINT 'Begin Truncating tables'
 ------------------------------
@@ -283,7 +279,6 @@ BEGIN
   FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
 END
 CLOSE clear_tables
-
 ------------------------------
 PRINT 'delete data from tables and rebuild indexes'
 ------------------------------
@@ -313,7 +308,6 @@ BEGIN
   FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
 END
 CLOSE clear_tables
-
 ------------------------------
 PRINT 'reenable check constraints'
 ------------------------------
@@ -332,7 +326,6 @@ DEALLOCATE clear_tables
 ------------------------------
 PRINT 'Complete Truncating tables'
 ------------------------------
-
 ------------------------------
 PRINT 'Remove indexes from DimensionCombination'
 ------------------------------
@@ -348,7 +341,6 @@ BEGIN
 END
 CLOSE drop_indexes
 DEALLOCATE drop_indexes
-
 ------------------------------
 PRINT 'Drop Columns on DimensionCombination'
 ------------------------------
@@ -367,7 +359,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Drop Columns on DimensionCombinationResolving'
 ------------------------------
@@ -385,7 +376,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Drop Columns on DimensionCombinationStaging'
 ------------------------------
@@ -403,7 +393,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Drop Columns on DimensionCombinationUnreferenced'
 ------------------------------
@@ -421,7 +410,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Drop Columns on DimensionValueAttributeValue'
 ------------------------------
@@ -439,7 +427,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Drop Columns on FactAttributeValue'
 ------------------------------
@@ -457,7 +444,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Remove constraints from TranslatedPeriodBalance'
 ------------------------------
@@ -473,7 +459,6 @@ BEGIN
 END
 CLOSE drop_constraints
 DEALLOCATE drop_constraints
-
 ------------------------------
 PRINT 'Drop Columns on TranslatedPeriodBalance'
 ------------------------------
@@ -491,7 +476,6 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 ------------------------------
 PRINT 'Remove constraints from TranslatedPeriodBalanceChanges'
 ------------------------------
@@ -506,7 +490,6 @@ BEGIN
 END
 CLOSE drop_constraints
 DEALLOCATE drop_constraints
-
 ------------------------------
 PRINT 'Drop Columns on TranslatedPeriodBalanceChanges'
 ------------------------------
@@ -524,10 +507,8 @@ BEGIN
 END
 CLOSE drop_objects
 DEALLOCATE drop_objects
-
 -- Rebuild dropped indexes that are dynamic
 EXEC [Datamart].ConfigureIndexesAndConstraints
-
 ------------------------------------------
 ------------------------------------------
 PRINT 'Reset the map tokens'
@@ -538,7 +519,6 @@ JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
 LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
 JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
 WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
-
 PRINT 'Reset the tasks'
 UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
 FROM [Scheduling].[Task] t with(nolock)
@@ -547,11 +527,9 @@ JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
 LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
 JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
 WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
-
 PRINT 'Enable integration tasks, RunImmediately'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
 WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
-
 PRINT 'Enable the Maintenance Task'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
 (SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
