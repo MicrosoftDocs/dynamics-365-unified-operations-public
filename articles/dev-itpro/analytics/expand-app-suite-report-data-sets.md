@@ -97,18 +97,19 @@ The following walkthrough shows the process of expanding an existing application
 
             class FERentalsByCustomerHandler
             {
-                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, getTmpFMRentalsByCust))]
+                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, processReport))]
                 public static void TmpTablePostHandler(XppPrePostArgs arguments)
                 {
-                    TmpFMRentalsByCust tmpTable = arguments.getReturnValue();
+                    FMRentalsByCustDP dpInstance = arguments.getThis() as FMRentalsByCustDP;
+                    TmpFMRentalsByCust tmpTable = dpInstance.getTmpFMRentalsByCust();
                     FMRentalCharge chargeTable;
                     ttsbegin;
-                        while select forUpdate tmpTable
-                        {
-                            select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
-                            tmpTable.ChargeDesc = chargeTable.Description;
-                            tmpTable.update();
-                        }
+                    while select forUpdate tmpTable
+                    {
+                        select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
+                        tmpTable.ChargeDesc = chargeTable.Description;
+                        tmpTable.update();
+                    }
                     ttscommit;
                 }
             }
