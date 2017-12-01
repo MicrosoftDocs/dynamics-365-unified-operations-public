@@ -44,18 +44,26 @@ In this topic, you will learn the GTE configuration extension process using the 
 
 1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting** > **Tax configurations**.
 2.	Click **Exchange** > **Load from XML files**.
-![](media/gte-extension-load-configuration.png)
+
+![Load configuration](media/gte-extension-load-configuration.png)
+
 3. Select the configuration file and click **OK** to load the configuration. Repeat step 2 and 3 for Taxable document, Taxable document (India) and Tax (India GST) in sequence.
-![](media/gte-extension-load-configuration2.png)
+
+![Load from XML](media/gte-extension-load-configuration2.png)
+
 4.	Click **Solutions**.
-![](media/gte-extensions-solution.png)
+
+![Solutions link](media/gte-extensions-solution.png)
+
 5.	Create a new solution and enter the required information.
-![](media/gte-extensions-solution2.png)
+
+![Solution information](media/gte-extensions-solution2.png)
+
 6. Click **Set active** to activate the new solution.
-![](media/gte-extension-active-solution.png)
+
+![Active solution](media/gte-extension-active-solution.png)
 
 ## Scenario 1: Extend the GTE configuration for UTGST
-
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
 
@@ -100,13 +108,13 @@ To support the scenario, the following must be done:
 
 ### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
 
- 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
+ 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Scenario 1: Task 1.1](#task-11-create-a-new-taxable-document-that-is-derived-from-taxable-document-india), and then click **Designer**.
  2. In the tree, go to **Taxable document** > **Header** > **Lines**, and then click **New** to create a new node.
  3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
 	-	**Item type:** Enum
 
-	![](media/gte-create-node-tax-document.png)
+	![Create a new node](media/gte-create-node-tax-document.png)
 
  4. Click **Add**.
  5. On the **Node** FastTab, click **Switch item reference**.
@@ -114,36 +122,38 @@ To support the scenario, the following must be done:
  7. Save the configuration, and close the designer.
  8. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![](media/gte-change-configuration-status.png)
+	![Update the configuration status](media/gte-change-configuration-status.png)
 
  9. Enter a description such as **UTGST**, and then click **OK**.
  10. If there are any errors, open the designer, click **Validate**, and fix the errors.
  11. After the status is updated to **Complete**, the configuration is ready for deployment.
  
-### Task 3: Do data mapping for the extended taxable document
-There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
-For convenience, there is a special data source called Taxable document source which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are following two approaches to fetch and map the value of the additional field to your extended taxable document.
+### Task 3: Complete data mapping for the extended taxable document
+There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in the taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
+For convenience, there is a special data source called **Taxable document source** which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
- 1. Enable the additional field into the existing Taxable document source.
- 2. Use pure ER (Electronic Reporting) data mapping which you can map any Finance and Operations field by using table records, class,   etc.
+**Method 1**: You can enable the additional field for the existing Taxable document source.
+ -or-
+**Method 2**: You can use Electronic Reporting (ER) data mapping, which lets you map a Finance and Operations field by using table records, classes, etc.
  
-#### Task 3.1: Data mapping by Taxable document source
+#### Method 1: Data mapping by Taxable document source
 Before you start this task, be sure to read the **Tax Engine Integration** document where you can find all the details. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to GTE.
 
-##### Task 3.1.1: Check the system name of the Union Territory of State master
-Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
+1. Check the system name of the Union Territory of State master.
+	1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
+	2. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
 
 ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
-##### Task 3.1.2: Add a tax engine model field for intrastate transactions in a union territory
-In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
+2. Add a tax engine model field for intrastate transactions in a union territory. 
+	1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
 ```
 public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
 {
     public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 ```
-##### Task 3.1.3: Implement logic to determine whether a transaction is an intrastate transaction in a union territory
-Add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
+3. Implement logic to determine whether a transaction is an intrastate transaction in a union territory.
+	1. Add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
 ```
 private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
 {
@@ -169,41 +179,41 @@ private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
     return  isIntraStateWithUnionTerritory;
 }
 ```
-##### Task 3.1.4: Pass the flag to GTE in TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()
+4. Pass the flag to GTE in TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()
 
 ```
 _lineObj.setFieldValue(IsIntraStateInUnionTerritory, this.IsIntraStateWithUnionTerritory(_lineObj));
 ```
 
-##### Task 3.1.5: Add the new field in TaxableDocumentRowDataProviderLine. initValidFields ()
+5. Add the new field in TaxableDocumentRowDataProviderLine. initValidFields ()
 
 ```
 validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
 ```
 
-##### Task 3.1.6: Do the data binding in the Designer
-1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+6. Complete the data binding in the Designer.
+	1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 
 	![Tax configuration designer](media/gte-extension-tax-configuration-designer.png)
 	
-2. Click **Map model to datasource**
-3. You will find there are lots of data mapping per each taxable document and reference model, like purchase order, sales order, etc. You need to do your data mapping per your business requirement. For example:
-	1. Select a sales order document line.
-	2. Click **Designer**.
+	2. Click **Map model to datasource**
+	3. You will find there are lots of data mapping per each taxable document and reference model, like purchase order, sales order, etc. You need to do your data mapping per your business requirement. For example:
+		1. Select a sales order document line.
+		2. Click **Designer**.
 
-	![Data mapping](media/gte-extension-data-mapping.png)
+		![Data mapping](media/gte-extension-data-mapping.png)
 
-4. With tasks 3.1.1 through 3.1.5 completed, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration value** in the Taxable Document.
+	4. With tasks 3.1.1 through 3.1.5 completed, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration value** in the Taxable Document.
 
-![Data binding](media/gte-extension-data-binding.png)
+	![Data binding](media/gte-extension-data-binding.png)
 
-5. Save the configuration, and close the designer.
-6. In the **Configurations** workspace, click **Change status** > **Complete**.
+	5. Save the configuration, and close the designer.
+	6. In the **Configurations** workspace, click **Change status** > **Complete**.
 
 	![](media/gte-change-configuration-status.png)
 
-7. Enter a description such as **UTGST**, and then click **OK**.
-8. If there are any errors, open the designer, click **Validate**, and fix the errors.
+	7. Enter a description such as **UTGST**, and then click **OK**.
+	8. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 #### Task 3.2: Data mapping using the ER model mapping designer
 You should be familiar with the table relation, class, method, etc. so you can use the ER model mapping designer efficiently.
