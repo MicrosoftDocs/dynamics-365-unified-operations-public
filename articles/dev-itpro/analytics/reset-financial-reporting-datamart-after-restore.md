@@ -107,7 +107,7 @@ When you're ready to start the reset process, select OK. You're prompted to conf
 
 If you want to review the status of the integration, select Tools > Integration status to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/integration.png)](./media/integration.png)
+[![View the status of the integration](./media/Integration.png)](./media/Integration.png)
 
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
