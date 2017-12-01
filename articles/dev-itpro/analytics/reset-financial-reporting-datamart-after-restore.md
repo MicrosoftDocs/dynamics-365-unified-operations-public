@@ -229,7 +229,7 @@ UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @t
 
 5.	Run the ResetDatamart.sql script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then enables the data integration again.
 
-  ```
+```
   DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
 INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
 FROM [Scheduling].[Task] t with(nolock)
