@@ -173,141 +173,121 @@ To consume an APIs in an extension, follow these steps:
     }
     ```
     The overall code should look like this:
-```Typescript
- /**
+    ```Typescript
+    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
+    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+    import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
+    import {
+        GetCurrentCartClientRequest, GetCurrentCartClientResponse,
+        SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
+    } from "PosApi/Consume/Cart";
+    import {
+        GetCustomerClientRequest, GetCustomerClientResponse,
+    } from "PosApi/Consume/Customer";
+    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
 
- * SAMPLE CODE NOTICE
- *
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU   TO DO SO.
- */
+    /**
+    * Example implementation of an PreEndTransactionTrigger trigger that logs to the console.
+    */
 
- import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
- import { ClientEntities, ProxyEntities } from "PosApi/Entities";
- import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
- import {
+    export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger {
+    private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
+    private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
+    private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
+    private static DIALOG_RESULT_YES: string = "yes";
+    private static DIALOG_RESULT_NO: string = "no";
+    private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
+    private static DIALOG_NO_BUTTON_ID: string = " CART_PreEndTransactionTrigger_MessageDialog_No";
 
- GetCurrentCartClientRequest, GetCurrentCartClientResponse,
- SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
+    /**
+    * Executes the trigger functionality.
+    * @param {Triggers.IPreEndTransactionTriggerOptions} options The options provided to the trigger.
+    */
 
- } from "PosApi/Consume/Cart";
+    public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
+        console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
 
- import {
+        let currentCart: ProxyEntities.Cart;
+        return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
+        .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
+            Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
+            currentCart = getCurrentCartClientResponse.data.result;
 
- GetCustomerClientRequest, GetCustomerClientResponse,
- } from "PosApi/Consume/Customer";
+            // Gets the current customer.
+            let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
+            if (!ObjectExtensions.isNullOrUndefined(currentCart) 
+                && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
+                let getCurrentCustomerClientRequest: GetCustomerClientRequest<GetCustomerClientResponse> =
+                    new GetCustomerClientRequest(currentCart.CustomerId);
+                result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
+            } else {
+                result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
+            }
 
- import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
+            return result;
+        })
 
- /**
- * Example implementation of an PreEndTransactionTrigger trigger that logs to the console.
- */
+        .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
+            Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
+                let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
+                let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
 
- export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger {
- private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
- private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
- private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
- private static DIALOG_RESULT_YES: string = "yes";
- private static DIALOG_RESULT_NO: string = "no";
- private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
- private static DIALOG_NO_BUTTON_ID: string = " CART_PreEndTransactionTrigger_MessageDialog_No";
+                if (!ObjectExtensions.isNullOrUndefined(currentCart)
+                    && !ObjectExtensions.isNullOrUndefined(currentCustomer)) {
+                        let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
+                            id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
+                            label: "Yes", // "Yes"
+                            result: PreEndTransactionTrigger.DIALOG_RESULT_YES
+                        };
 
- /**
- * Executes the trigger functionality.
- * @param {Triggers.IPreEndTransactionTriggerOptions} options The options provided to the trigger.
- */
+                        let noButton: ClientEntities.Dialogs.IDialogResultButton = {
+                            id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
+                                label: "No", // "No"
+                                result: PreEndTransactionTrigger.DIALOG_RESULT_NO
+                        };
 
- public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
- console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
+                        let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
+                            title: "Save attribute - Sample",
+                            subTitle: StringExtensions.EMPTY,
+                            message: "Save attribute ?",
+                            button1: yesButton,
+                            button2: noButton
+                        };
 
- let currentCart: ProxyEntities.Cart;
- return this.context.runtime.executeAsync<GetCurrentCartClientResponse>(new GetCurrentCartClientRequest())
- .then((getCurrentCartClientResponse: ClientEntities.ICancelableDataResult<GetCurrentCartClientResponse>):
- Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>> => {
- currentCart = getCurrentCartClientResponse.data.result;
+                        let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
+                            new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
+                        result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
+                    } else {
+                        result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
+                    }
+                    return result;
+                })
 
- // Gets the current customer.
+                .then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>):
+                Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
+                    // Save the attribute value depending on the dialog result.
+                    let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
+                    let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
 
- let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
- if (!ObjectExtensions.isNullOrUndefined(currentCart) && !ObjectExtensions.isNullOrUndefined(currentCart.CustomerId)) {
- let getCurrentCustomerClientRequest: GetCustomerClientRequest<GetCustomerClientResponse> =
- new GetCustomerClientRequest(currentCart.CustomerId);
- result = this.context.runtime.executeAsync<GetCustomerClientResponse>(getCurrentCustomerClientRequest);
- } else {
- result = Promise.resolve({ canceled: false, data: new GetCustomerClientResponse(null) });
- }
+                    if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
+                        let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
+                        attributeValue.Name = PreEndTransactionTrigger.CART_ATTRIBUTE_NAME;
+                        attributeValue.TextValue = messageDialogResult.dialogResult === 
+                            PreEndTransactionTrigger.DIALOG_RESULT_YES ?
+                            PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_FALSE;
 
- return result;
- })
- .then((getCurrentCustomerClientResponse: ClientEntities.ICancelableDataResult<GetCustomerClientResponse>):
- Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>> => {
- let currentCustomer: ProxyEntities.Customer = getCurrentCustomerClientResponse.data.result;
- let result: Promise<ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>>;
-
- if (!ObjectExtensions.isNullOrUndefined(currentCart)
-
- && !ObjectExtensions.isNullOrUndefined(currentCustomer)) {
-
- let yesButton: ClientEntities.Dialogs.IDialogResultButton = {
-
- id: PreEndTransactionTrigger.DIALOG_YES_BUTTON_ID,
- label: "Yes", // "Yes"
-
- result: PreEndTransactionTrigger.DIALOG_RESULT_YES
- };
-
- let noButton: ClientEntities.Dialogs.IDialogResultButton = {
- id: PreEndTransactionTrigger.DIALOG_NO_BUTTON_ID,
- label: "No", // "No"
- result: PreEndTransactionTrigger.DIALOG_RESULT_NO
-};
-
-let showMessageDialogClientRequestOptions: ClientEntities.Dialogs.IMessageDialogOptions = {
-title: "Save attribute - Sample",
-subTitle: StringExtensions.EMPTY,
-message: "Save attribute ?",
-button1: yesButton,
-button2: noButton
-
-};
-
-let showMessageDialogClientRequest: ShowMessageDialogClientRequest<ShowMessageDialogClientResponse> =
-new ShowMessageDialogClientRequest(showMessageDialogClientRequestOptions);
-result = this.context.runtime.executeAsync<ShowMessageDialogClientResponse>(showMessageDialogClientRequest);
-} else {
-result = Promise.resolve({ canceled: false, data: new ShowMessageDialogClientResponse(null) });
-}
-return result;
- })
-
-.then((showMessageDialogClientResponse: ClientEntities.ICancelableDataResult<ShowMessageDialogClientResponse>):
- Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>> => {
-
-// Save the attribute value depending on the dialog result.
- let messageDialogResult: ClientEntities.Dialogs.IMessageDialogResult = showMessageDialogClientResponse.data.result;
- let result: Promise<ClientEntities.ICancelableDataResult<SaveAttributesOnCartClientResponse>>;
-
- if (!ObjectExtensions.isNullOrUndefined(messageDialogResult)) {
- let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
- attributeValue.Name = PreEndTransactionTrigger.CART_ATTRIBUTE_NAME;
- attributeValue.TextValue = messageDialogResult.dialogResult === PreEndTransactionTrigger.DIALOG_RESULT_YES ?
- PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_TRUE : PreEndTransactionTrigger.CART_ATTRIBUTE_VALUE_FALSE;
-
- let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
- new SaveAttributesOnCartClientRequest(attributeValues);
- result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
- } else {
- result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
- }
- return result;
- });
-}
-
-}
-```
+                        let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
+                        let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
+                            new SaveAttributesOnCartClientRequest(attributeValues);
+                        result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+                    } else {
+                        result = Promise.resolve({ canceled: false, data: new SaveAttributesOnCartClientResponse(null) });
+                    }
+                    return result;
+                });
+            }
+        }
+    ```
 10. Create a new json file and under the POSAPIExtension folder and name it as manifest.json.
 
 11. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
