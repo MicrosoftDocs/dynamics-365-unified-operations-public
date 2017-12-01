@@ -5,7 +5,7 @@ title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ The **Cash overview** Power BI content was created for individuals who are respo
 
 ## Accessing the Power BI content
 
-If you're using Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), reports from the **Cash overview** Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
+Reports from the **Cash overview** Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
 
 To view the Cash flow forecasting reports with data, you must first run the forecast calculation process using the **Calculate cash flow forecasts** function from the Cash and bank management area.  This needs to be completed for each company included in the forecast.  You then need to refresh the LedgerCovLiquidityMeasurement aggregate measurement on the **Entity Store** page.  
 
