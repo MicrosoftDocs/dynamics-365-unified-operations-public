@@ -3,9 +3,9 @@
 
 title: Tax engine
 description: This topic provides information about extending tax engine configurations.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
-ms.date: 10/02/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,12 +31,14 @@ ms.author: riluan
 
 [!include[banner](../includes/banner.md)]
 
-The new Tax Engine (GTE) is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Operations. GTE is highly customizable and lets business users, functional consultants, or power users configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
+
+The Tax Engine (GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
 
 In this topic, you will learn the GTE configuration extension process using the following example scenarios.
 
 -	Extend the GTE configuration for UTGST
 -	Apply tax rate of BCD for import order of goods from different countries/regions (Usage of Reference Model)
+
 
 ## Activate the tax configuration
 
@@ -52,7 +54,8 @@ In this topic, you will learn the GTE configuration extension process using the 
 6. Click **Set active** to activate the new solution.
 ![](media/gte-extension-active-solution.png)
 
-## Scenario 1: Extend the GTE configuration for fUTGST
+## Scenario 1: Extend the GTE configuration for UTGST
+
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
 
