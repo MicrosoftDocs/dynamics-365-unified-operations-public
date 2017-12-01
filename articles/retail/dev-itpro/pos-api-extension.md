@@ -91,7 +91,7 @@ To consume an APIs in an extension, follow these steps:
     1.  Get current cart
     2.  Get Current customer
     3.  Save attribute on cart
-        ```Typescript
+```Typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
             let currentCart: ProxyEntities.Cart;
