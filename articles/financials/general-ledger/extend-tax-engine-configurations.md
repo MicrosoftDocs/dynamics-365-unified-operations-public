@@ -31,6 +31,7 @@ ms.author: riluan
 
 [!include[banner](../includes/banner.md)]
 
+
 The Tax Engine (GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
 
 In this topic, you will learn the GTE configuration extension process using the following example scenarios.
@@ -38,12 +39,23 @@ In this topic, you will learn the GTE configuration extension process using the 
 -	Extend the GTE configuration for UTGST
 -	Apply tax rate of BCD for import order of goods from different countries/regions (Usage of Reference Model)
 
-## Prerequisites
 
--	Switch to the **INMF** company context.
+## Activate the tax configuration
 
+1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting** > **Tax configurations**.
+2.	Click **Exchange** > **Load from XML files**.
+![](media/gte-extension-load-configuration.png)
+3. Select the configuration file and click **OK** to load the configuration. Repeat step 2 and 3 for Taxable document, Taxable document (India) and Tax (India GST) in sequence.
+![](media/gte-extension-load-configuration2.png)
+4.	Click **Solutions**.
+![](media/gte-extensions-solution.png)
+5.	Create a new solution and enter the required information.
+![](media/gte-extensions-solution2.png)
+6. Click **Set active** to activate the new solution.
+![](media/gte-extension-active-solution.png)
 
 ## Scenario 1: Extend the GTE configuration for UTGST
+
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
 
@@ -64,12 +76,12 @@ For UTGST, the following combinations of taxes can be applied for any transactio
 The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
 To support the scenario, the following must be done:
+1.	Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
+2.	Do data mapping for the extended taxable document to get the value from transaction to GTE
+3.	Change the applicability of State GST (SGST).
+4.	Add and configure UTGST.
+5.	Import the extended configuration and deploy it to a specific company. 
 
-1.  Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
-2.  Change the applicability of State GST (SGST).
-3.  Add and configure UTGST.
-4.  Import the extended configuration, and deploy it to a specific company.
-5.  Change the **TaxableDocRowDataProviderExtensionLine** class in the Application Object Tree (AOT) of Microsoft Dynamics AX 2012 so that it sends the **IntraStateInUnionTerritory** flag to GTE.
 
 ### Task 1: Create extension configurations
 
@@ -88,27 +100,115 @@ To support the scenario, the following must be done:
 
 ### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
 
-1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
-2. In the tree, go to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
-3. Enter a name for the node, and select the item type:
+ 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in task 1.1, and then click **Designer**.
+ 2. In the tree, go to **Taxable document** \> **Header** \> **Lines**, and then click **New** to create a new node.
+ 3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
 	-	**Item type:** Enum
 
 	![](media/gte-create-node-tax-document.png)
 
-4. Click **Add**.
-5. On the **Node** FastTab, click **Switch item reference**.
-6. Select **NoYes** in the tree, and then click **OK**.
-7. Save the configuration, and close the designer.
-8. In the **Configurations** workspace, click **Change status** > **Complete**.
+ 4. Click **Add**.
+ 5. On the **Node** FastTab, click **Switch item reference**.
+ 6. Select **NoYes** in the tree, and then click **OK**.
+ 7. Save the configuration, and close the designer.
+ 8. In the **Configurations** workspace, click **Change status** > **Complete**.
 
 	![](media/gte-change-configuration-status.png)
 
-9. Enter a description such as **UTGST**, and then click **OK**.
-10. If there are any errors, open the designer, click **Validate**, and fix the errors.
-11. After the status is updated to **Complete**, the configuration is ready for deployment.
+ 9. Enter a description such as **UTGST**, and then click **OK**.
+ 10. If there are any errors, open the designer, click **Validate**, and fix the errors.
+ 11. After the status is updated to **Complete**, the configuration is ready for deployment.
+### Task 3: Do data mapping for the extended taxable document
+There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
+For convenience, there is a special data source called Taxable document source which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are following two approaches to fetch and map the value of the additional field to your extended taxable document.
 
-### Task 3: Change the data model of Tax (India GST Contoso)
+ 1. Enable the additional field into the existing Taxable document
+     source
+ 2. Use pure ER (Electronic Reporting) data mapping which you can map any Finance and Operations field by using table records, class,
+     etc.
+#### Task 3.1: Data mapping by Taxable document source
+Before you start this task, be sure to read the **Tax Engine Integration** document where you can find all the details. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to GTE.
+##### Task 3.1.1: Check the system name of the Union Territory of State master
+Go to **Organization administration >Global address book> Addresses > Address setup**. Right-click the **Union territory** column, and then click **Form information>Form Name: LogisticsAddressSetup**. You will see that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
+![](media/gte-extension-union-territory-form-info.png)
+##### Task 3.1.2: Add a tax engine model field for intrastate transactions in a union territory
+In the AOT, open **Classes > TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
+```
+public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
+{
+    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
+```
+##### Task 3.1.3: Implement logic to determine whether a transaction is an intrastate transaction in a union territory
+Add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
+```
+private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
+{
+    boolean                     isIntraStateWithUnionTerritory = NoYes::No;
+    LogisticsPostalAddress      partyAddress;
+    LogisticsPostalAddress      taxAddress;
+    LogisticsAddressState       partyState;
+    SalesPurchJournalLine       documentLineMap;
+    TaxModelTaxable_IN          taxModelTaxable;
+    documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
+    taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
+    partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
+    taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
+    if (partyAddress && taxAddress
+        && partyAddress.CountryRegionId == taxAddress.CountryRegionId
+        && partyAddress.State != ''
+        && taxAddress.State != ''
+        && partyAddress.State == taxAddress.State)
+    {
+        partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+        isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+    }
+    return  isIntraStateWithUnionTerritory;
+}
+```
+##### Task 3.1.4: Pass the flag to GTE in TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()
+```
+_lineObj.setFieldValue(IsIntraStateInUnionTerritory, this.IsIntraStateWithUnionTerritory(_lineObj));
+```
+##### Task 3.1.5: Add the new field in TaxableDocumentRowDataProviderLine. initValidFields ()
+```
+validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
+```
+##### Task 3.1.6: Do the data binding in the Designer
+1.	Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+![](media/gte-extension-tax-configuration-designer.png)
+2.	Click **Map model to datasource**
+3.	You will find there are lots of data mapping per each taxable document and reference model, like purchase order, sales order, etc. You need to do your data mapping per your business requirement. Let’s take sales order as an example. Select Sales Order line and click 
+**Designer**.
+![](media/gte-extension-data-mapping.png)
+4.	With Task 3.1.1~ 3.1.5, now you should be able to see field IntraStateInUnionTerritory in data source of Sales order\Header\Lines, following the steps in the screen shot below to do the data binding.
+![](media/gte-extension-data-binding.png)
+5.	Do Task 2 (7~10) to complete the change
+#### Task 3.2: Data mapping by pure ER model mapping designer
+You should be familiar with the table relation, class, method, etc. so you can use ER model mapping designer efficiently.
+1.	Open the model mapping design of purchase order, add table records **PurchLine** as a root data source
+![](media/gte-extension-purchline.png)
+2.	Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**
+![](media/gte-extension-add-enumerations.png)
+3.	Add a calculated field **$PurchLine** in **purchase order** to build the connection between existing taxable document **purchase order** and the table records **PurchLine**, click **Edit formula**.
+![](media/gte-extension-edit-formula.png)
+4.	Input formula which describe the relation between **PurchLine** and **purchase order**
+![](media/gte-extension-add-formula.png)
+5.	Click **Save**, and close the page
+6.	Add calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, the formula is 
+```
+AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
+```
+7.	Do the data mapping in designer, select **$IntraStateInUnionTerritory** in DATA SOURCES and **IntraStateInUnionTerritory** in DATA MODEL, click **Edit**.
+![](media/gte-extension-data-binding2.png)
+8.	Input formula below to convert Boolean value to the enumeration value which is used by the extended taxable document field IntraStateInUnionTerritory.
+```
+CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
+```
+9.	Click Save and close the page.
+10. Do Task 2 (7~10) to complete the change
+
+### Task 4: Change the data model of Tax (India GST Contoso)
 
 1. Navigate to the **Tax (India GST Contoso)** configuration that you created in task 1.2, and then click **Designer**.
 2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
@@ -117,7 +217,7 @@ To support the scenario, the following must be done:
 
 3. Click **Save** to save the configuration.
 
-### Task 4: Change the applicability of SGST
+### Task 5: Change the applicability of SGST
 
 1. Navigate to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
 2. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **SGST**, and then click the **Lookup** tab.
@@ -126,14 +226,14 @@ To support the scenario, the following must be done:
 5. For the **IntraStateInUnionTerritory** column, select **No**.
 6. Click **Save** to save the configuration.
 
-### Task 5: Configure the UTGST tax component
+### Task 6: Configure the UTGST tax component
 
-#### Task 5.1: Add the UTGST tax component
+#### Task 6.1: Add the UTGST tax component
 
 1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST**, click **Add**, and then select **Tax component**.
 2. Enter a name and description for the UTGST tax component, and then click **OK**.
 
-#### Task 5.2: Configure tax measures for the UTGST tax component
+#### Task 6.2: Configure tax measures for the UTGST tax component
 
 1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
 2. Click **Add**, and then select **Tax measure**.
@@ -141,7 +241,7 @@ To support the scenario, the following must be done:
 
 	![](media/gte-utgst-list.png)
 
-#### Task 5.3 Configure rate/percentage lookups
+#### Task 6.3 Configure rate/percentage lookups
 
 1. Expand the **UTGST** tax component node.
 2. Select the measure of the **Rate/Percentage** type to create a rate/percentage lookup.
@@ -153,7 +253,7 @@ To support the scenario, the following must be done:
 
 5. Save the tax document.
 
-#### Task 5.4: Configure properties
+#### Task 6.4: Configure properties
 
 1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Properties** tab.
 2. Click **Edit** (the pencil symbol) next to **Condition**.
@@ -163,7 +263,7 @@ To support the scenario, the following must be done:
 
 4. Save the tax document.
 
-#### Task 5.5: Configure tax applicability lookups
+#### Task 6.5: Configure tax applicability lookups
 
 1. Navigate to **Tax document** \> **Header** \> **Lines** \> **GST** \> **UTGST**, and then click the **Lookup** tab.
 2. Click **Columns**.
@@ -171,7 +271,7 @@ To support the scenario, the following must be done:
 4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.	
 5. Save the tax document.
 
-#### Task 5.6 Configure formulas
+#### Task 6.6 Configure formulas
 
 Formulas can be configured at either the group node level (line, tax component, or tax type) or the measure node level. However, we recommend that you always configure tax calculation formulas at the group node level. Tax amount distribution formulas can be configured at either the group node level or the measure node level.
 
@@ -181,7 +281,7 @@ Formulas can be configured at either the group node level (line, tax component, 
 4. Repeat steps 2 through 3 until the UTGST tax component has all the same formulas as SGST.
 5. Save the tax document.
 
-### Task 5.7 Configure a posting profile
+### Task 6.7 Configure a posting profile
 
 Only nodes of the **Tax Component** type support a posting profile definition.
 
@@ -193,7 +293,7 @@ Only nodes of the **Tax Component** type support a posting profile definition.
 6. Repeat steps 2 through 5 until the UTGST tax component has all the same posting profiles as SGST.
 7. Save the tax document.
 
-#### Task 5.8 Configure accounting lookups
+#### Task 6.8 Configure accounting lookups
 
 Only nodes of the **Tax Type** and **Tax Component** types support an accounting lookup definition.
 
@@ -206,7 +306,7 @@ Only nodes of the **Tax Type** and **Tax Component** types support an accounting
 
 4. Save the tax document.
 
-#### Task 5.9 Configure credit pools
+#### Task 6.9 Configure credit pools
 
 Only nodes of the **Tax Component** type support a credit pool definition.
 
@@ -219,19 +319,16 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 4. Save the tax document.
 
-### Task 6: Modify the formulas of lines so that they reflect UTGST
+### Task 7: Modify the formulas of lines so that they reflect UTGST
 
 1. Navigate to **Tax document** \> **Header** \> **Lines**, and then click the **Formulas** tab.
 2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST.
-
->   For example, change the **Tax amount Inclusive** formula as shown here.
-
+	For example, change the **Tax amount Inclusive** formula as shown here.
 ![](media/gte-tax-amount-inclusive.png)
-
 3. Save the tax document.
 4. Close the designer.
 
-### Task 7: Complete the tax document configuration
+### Task 8: Complete the tax document configuration
 
 1. Save the configuration, and close the designer.
 2. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
@@ -239,194 +336,37 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 4. If there are any errors, open the designer, click **Validate**, and fix the errors.
 5. After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 8: Download the tax document configurations
-
-1. In the **Versions** grid, select the **Tax (India GST Contoso)** configuration.
-2. Click **Change status**, and then select **Share**.
-3. Click **Yes**.
-4. Repeat steps 1 through step 3 for the **Taxable Document (India Contoso)** configuration.
-
-	> [!NOTE]
-	> The configuration will be saved in the C:\\India GST Configurations folder that you created earlier. Currently, all configurations are in that folder. You must then copy the folder to the Microsoft Dynamics AX environment where the configuration must be applied.
-
 ### Task 9: Import the configuration and deploy it to a specific company
-
-Save all the configuration files in one folder that Microsoft Dynamics AX Application Object Server (AOS) can access.
-
-![](media/04f998ef1ccf94676526b6f593464ba3.png)
-
-Go to **General ledger** \> **Setup** \> **Sales tax** \> **India** \> **Load configurations**.
-
-Set the directory to the folder where you saved the configuration files.
-
-![](media/854b24262d911d33fb603ad6fccb33d1.png)
-
-Click **OK**.
-
-![](media/d760b4f226057fa4b74207d6c388ce55.png)
-
-Click **Close**.
-
-Go to **General ledger** \> **Setup** \> **Sales tax** \> **India** \> **Tax setup**.
-
-Select the current working tax setup.
-
-Click **Configurations**.
-
-![](media/a10fb9220447f7ba936547ad4e167c32.png)
-
-Click the **Tax configuration** tab, and then, under **Available configurations**, click **New** to create a tax configuration.
-
+1.	Navigate to Tax > Setup > Tax configuration > Tax setup
+2.	Create new record and define Tax setup
+![](media/gte-extension-new-tax-setup.png)
+3.	Click on **Configuration**
+![](media/gte-extension-new-configuration.png)
+4.	Click on **Tax configuration** tab, switch to **Available configurations** and click **New** to create a tax configuration.
 > [!NOTE]
-> Any tax configurations that you add are listed in the **Available configurations** grid.
+> The configuration added to tax gets listed in the Available configuration tab
+![](media/gte-extension-new-configuration2.png)
 
-![](media/6917f0980f7338174f88bff7b051497b.png)
+5.	Select the required configuration, Ex: **Tax (India GST)** and Click Save.
+![](media/gte-extension-select-configuration.png)
+6.	Click on **Synchronize**
+![](media/gte-extension-synchronize-configuration.png)
+7. Click **Activate**.
+![](media/gte-extension-activate-configuration.png)
 
-Select the required configuration (for example, **Tax (India GST Contoso**) and version (for example, **1**), and then click **Synchronize**.
+![](media/gte-extension-active-configuration.png)
+8.	Click on **Close**
+9.	Click **Companies** fast tab
+10.	Create new record
+11.	Select Companies = INMF
+![](media/gte-extension-deploy-to-company.png)
+12.	Save the record
+13.	Click ‘**Activate**’ to activate the configuration to the company.
+![](media/gte-extension-activate-configuration-to-company.png)
 
-![](media/a96a042c4bf72301a6df753352ea460e.png)
-
-Click **Activate**.
-
-![](media/d5382114a914e221d892090022bc5ea1.png)
-
-![](media/6905ba3ea1f2285f7e618a6cce675c36.png)
-
-Click **Setup** to set up data for the new version.
-
-![](media/b37f77a3cda491cdf0fc60b9a27313ee.png)
-
-![](media/1b70500c6f1a29bf9c1ec740f7513e10.png)
-
-### Task 10: Modify the data provider in Microsoft Dynamics AX
-
-Before you start this scenario, be sure to read the **Tax Engine Integration** document where you can find all the details about how GTE is integrated with Microsoft Dynamics AX. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider in Microsoft Dynamics AX 2012 R3 so that it provides this information to GTE.
-
-#### Task 10.1: Check the system name of the Union Territory of State master
-
-Go to **Organization administration** \> **Addresses** \> **Address setup**. Although a check box indicates whether a state is a union territory, the value isn’t provided to GTE. Right-click the **Union territory** column, and then click **Personalize**. You will see that the system name for the column is **LogisticsAddressState\_IN.UnionTerritory**.
-
-#### Task 10.2: Add a tax engine model field for intrastate transactions in a union territory
-
-In the AOT, open **Classes** \> **TaxableDocRowDataProviderExtensionLine**. In **classDeclaration**, add a new macro for intrastate transactions in a union
-territory.
-
-\#define.IsIntraStateInUnionTerritory('IntraStateInUnionTerritory')
-
-### Task 10.3: Implement logic to determine whether a transaction is an intrastate transaction in a union territory
-
-Add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the determination logic in the method.
-
-/// \<summary\>  
-/// To determine if it is the inter state transaction within union territory.  
-/// \</summary\>  
-/// \<returns\>  
-/// True if it is not inter state transaction within union territory; otherwise,
-false.  
-/// \</returns\>  
-private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject
-\_lineObj)  
-{  
-boolean isIntraStateWithUnionTerritory = NoYes::No;  
-LogisticsPostalAddress partyAddress;  
-LogisticsPostalAddress taxAddress;  
-LogisticsAddressState\_IN partyState\_IN;  
-SalesPurchJournalLine\_IN documentLineMap;  
-TaxModelTaxable\_IN taxModelTaxable;  
-documentLineMap =
-SalesPurchJournalLine\_IN::findRecId(\_lineObj.getTransactionLineTableId(),
-\_lineObj.getTransactionLineRecordId());  
-taxModelTaxable =
-TaxModelDocLineFactory\_IN::newTaxModelDocLine(documentLineMap);  
-partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();  
-taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();  
-if (partyAddress && taxAddress  
-&& partyAddress.CountryRegionId == taxAddress.CountryRegionId  
-&& partyAddress.State != ''  
-&& taxAddress.State != ''  
-&& partyAddress.State == taxAddress.State)  
-{  
-partyState\_IN =
-LogisticsAddressState\_IN::findByLogisticsAddressState(LogisticsAddressState::find(partyAddress.CountryRegionId,
-partyAddress.State).RecId);  
-isIntraStateWithUnionTerritory = partyState\_IN.UnionTerritory;  
-}  
-return isIntraStateWithUnionTerritory;  
-}
-
-In case you are working on Dynamics AX 2009, since its table structures are
-different from Dynamics AX 2012 R3, you should follow the same approach above to
-write your code. Here we provide the corresponding implementation of
-IsIntraStateWithUnionTerritory in Dynamics AX 2009 for your convenience.
-
-/// \<summary\>
-
-/// To determine if it is the inter state transaction within union territory.
-
-/// \</summary\>
-
-/// \<returns\>
-
-/// True if it is not inter state transaction within union territory; otherwise,
-false.
-
-/// \</returns\>
-
-private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject
-\_lineObj)
-
-{
-
-    boolean                     isIntraStateWithUnionTerritory = NoYes::No;
-
-    Address                     partyAddress;
-
-    Address                     taxAddress;
-
-    AddressState                partyState\_IN;
-
-    SalesPurchJournalLine\_IN    documentLineMap;
-
-    TaxModelTaxable\_IN          taxModelTaxable;
-
-    documentLineMap =
-SalesPurchJournalLine\_IN::findRecId(\_lineObj.getTransactionLineTableId(),
-\_lineObj.getTransactionLineRecordId());
-
-    taxModelTaxable =
-TaxModelDocLineFactory\_IN::newTaxModelDocLine(documentLineMap);
-
-    partyAddress = taxModelTaxable.getPartyAddress();
-
-    taxAddress = taxModelTaxable.getCompanyAddress();
-
-    if (partyAddress && taxAddress
-
-        && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-
-        && partyAddress.State != ''
-
-        && taxAddress.State != ''
-
-        && partyAddress.State == taxAddress.State)
-
-    {
-
-        partyState\_IN = AddressState::find(partyAddress.CountryRegionId,
-partyAddress.State);
-
-        isIntraStateWithUnionTerritory = partyState\_IN.UnionTerritory\_IN;
-
-    }
-
-    return  isIntraStateWithUnionTerritory;
-
-}
-
-### Task 10.4: Pass the flag to GTE in TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()
-
-\_lineObj.setFieldValue(\#IsIntraStateInUnionTerritory,
-TaxEngineEnumToEREnumUtil::noYes(this.IsIntraStateWithUnionTerritory(\_lineObj)));
+![](media/gte-extension-activate-configuration-to-company2.png)
+14.	Click **Setup** to set up data for the new version.
+![](media/gte-extension-tax-setup.png)
 
 ## Scenario 2: Usage of Reference Model
 
@@ -443,8 +383,7 @@ Apply the different tax rate of BCD for import order of goods from difference co
 1. Navigate to the **Taxable Document (India Contoso)** configuration, and then
     click **Designer**.
 2. Click the elipses button, then click **Reference model** to change
-    the view to Reference model, so you can view all the available reference
-    models.
+    the view to Reference model, so you can view all the available    reference models.
 
     ![](media/gte-reference-model.png)
 
@@ -480,7 +419,21 @@ Apply the different tax rate of BCD for import order of goods from difference co
 After the status is updated to **Complete**, the configuration is ready for
 deployment.
 
-### Task 3: Link the reference model to field in taxable document
+### Task 3: Do data mapping for the reference model
+1.	In the designer of **Taxable Document (India Contoso)**, and then click **Map model to datasource**.
+2.	Add a new model mapping for the reference model Country of Origin
+![](media/gte-extension-map-reference-model.png)
+3.	Open the designer of the model mapping
+![](media/gte-extension-designer-mapping-reference-model.png)
+4.	Add table records **LogisticsAddressCountryRegion** as a root **DATA SOURCES**
+![](media/gte-extension-add-table-records.png)
+5.	Bind the table
+![](media/gte-extension-bind-table.png)
+6.	Bind the field
+![](media/gte-extension-bind-field.png)
+7.	Click **Save** and close the page
+
+### Task 4: Link the reference model to field in taxable document
 
 1. Click the elipses button, then click **Taxable document** to change the view to Taxable document.
 2. Navigate to **Taxable document** \> **Header** \> **Lines** \> **GST** \> **Country/Region of Origin**.
@@ -497,7 +450,7 @@ deployment.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 4: Change the lookup of BCD tax rate
+### Task 5: Change the lookup of BCD tax rate
 
 1.  Navigate to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
 2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document follow the steps described in **Scenario 1-\>Task 3**.
@@ -506,145 +459,8 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save** to save the configuration.
 
-### Task 5: Complete the tax document configuration
-Please follow the same steps described in **Scenario 1-\>Task 7**.
-
-### Task 6: Download the tax document configurations
+### Task 6: Complete the tax document configuration
 Please follow the same steps described in **Scenario 1-\>Task 8**.
 
 ### Task 7: Import the configuration and deploy it to a specific Company
 Please follow the same steps described in **Scenario 1-\>Task 9**.
-
-### Task 8: Add tax runtime reference model mapping in AOT 
-
-1. Go to **Organization administration** \> **Addresses** \> **Address setup** \> **Country/Region**. 
-2. Right-click the **Country/Region** column, and then click **Personalize**. You will see that the system name for the column is  **LogisticsAddressCountryRegion.CountryRegionId**.
-
-3.  Add Reference model name and Reference field name to **TaxRuntimeReferenceModel**
-
-4. In the AOT, open **Macros** \> **TaxRuntimeReferenceModel**. Add two new macros for Reference model name and Reference field name.
-
-// Reference model name
-
-\#define.GSTRegistrationNumbers('GST Registration Numbers')
-
-\#define.CustomTariffCodes('Custom Tariff Codes')
-
-\#define.ImportCustomTariffCodes('Import Custom Tariff Codes')
-
-\#define.ExportCustomTariffCodes('Export Custom Tariff Codes')
-
-\#define.TDSTCSRegistrationNumbers('TDS TCS Registration Numbers')
-
-\#define.CustomDutyRegistrationNumbers('Custom Duty Registration Numbers')
-
-\#define.TaxableDocumentTypes('Taxable Document Types')
-
-\#define.TaxRegistrationProfiles('Tax Registration Profiles')
-
-\#define.HSNCodes('HSN Codes')
-
-\#define.SACodes('SA Codes')
-
-\#define.CountriesOfRegion('Countries of Origin')
-
-// Reference field name
-
-\#define.GSTRegistrationNumber('GSTIN/GDI/UID')
-
-\#define.CustomTariffCode('Custom Tariff Code')
-
-\#define.TANNumber('TAN Number')
-
-\#define.IECNumber('IEC Number')
-
-\#define.TaxableDocumentName('Taxable Document Name')
-
-\#define.PAN('PAN')
-
-\#define.HSNCode('HSN Code')
-
-\#define.SACode('SAC')
-
-\#define.CountryOfRegion('Country of Origin')
-
-4.  Add a TaxRuntimeReferenceModelMapping class for Country of Origin.
-
-/// \<summary\>
-
-/// Data model mapping for Country of Region reference data model.
-
-/// \</summary\>
-
-\#TaxRuntimeReferenceModel
-
-[TaxRuntimeReferenceModelMappingAttribute(\#CountriesOfRegion)]
-
-**class** TaxRuntimeRefModelMappingCountryOfRegion **extends**
-TaxRuntimeReferenceModelMapping
-
-{
-
-}
-
-/// \<summary\>
-
-/// Gets table field name per reference field name.
-
-/// \</summary\>
-
-/// \<param name="\_referenceFieldName"\>
-
-/// The reference field name
-
-/// \</param\>
-
-/// \<returns\>
-
-/// The table field name
-
-/// \</returns\>
-
-**public** FieldName getTableFieldName(**str** \_referenceFieldName)
-
-{
-
-**switch**(\_referenceFieldName)
-
-{
-
-**case** \#CountryOfRegion:
-
-**return fieldStr**(LogisticsAddressCountryRegion, CountryRegionId);
-
-**default**:
-
-**return** '';
-
-}
-
-}
-
-/// \<summary\>
-
-/// Gets table name for HSN Code.
-
-/// \</summary\>
-
-/// \<returns\>
-
-/// The table name.
-
-/// \</returns\>
-
-**public** TableName getTableName()
-
-{
-
-**return tableStr**(LogisticsAddressCountryRegion);
-
-}
-
-1.  Restart AOS.
-2.  Refresh elements by clicking **AOT** \> **Tools** \> **Caches** \>**Refresh
-    elements**.
