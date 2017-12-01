@@ -83,13 +83,13 @@ If you are a **Customer** :
 
 2. To deploy, select Configure
 
-    ![configurepic](access-instances-6.jpeg)
+    ![configurepic](media/access-instances-6.jpeg)
 
 3. Select an application and platform version
 
 4. Go through the settings pane and select Save
 
-    ![deploypic](access-instances-7.jpeg)
+    ![deploypic](media/access-instances-7.jpeg)
 
 Note: Customers are provided with 1 free &quot;develop and build&quot; environment hosted in Microsoft&#39;s Azure subscription. Any additional develop and build environments or demo environments will need to be hosted in their own subscription. To deploy an environment in your own environment use Partner steps above.
 
