@@ -62,17 +62,17 @@ If you are a  **Partner** :
 
 2. To deploy, select + under Environments
 
-    ![beginpic](media/access-instances-5.jpg)
+    ![beginpic](media/access-instances-5.jpeg)
 
 3. Select an application and platform version
 
 4. Then, select an environment topology. You can either choose to use a cloud hosted environment or download a VHD. For more information     on these options see [Sign up for a preview subscription](sign-up-preview-subscription.md).
 
-    ![topologypic2](media/access-instances-2.jpg)
+    ![topologypic2](media/access-instances-2.jpeg)
 
 5. If you choose a cloud hosted environment, select which Azure connector you would like to use. Then, select Deploy.
 
-    ![deploypic](media/access-instances-3.jpg)
+    ![deploypic](media/access-instances-3.jpeg)
 
 6. Otherwise, you will be asked to select a VHD to download
 
@@ -83,13 +83,13 @@ If you are a **Customer** :
 
 2. To deploy, select Configure
 
-    ![configurepic](access-instances-6.jpg)
+    ![configurepic](access-instances-6.jpeg)
 
 3. Select an application and platform version
 
 4. Go through the settings pane and select Save
 
-    ![deploypic](access-instances-7.jpg)
+    ![deploypic](access-instances-7.jpeg)
 
 Note: Customers are provided with 1 free &quot;develop and build&quot; environment hosted in Microsoft&#39;s Azure subscription. Any additional develop and build environments or demo environments will need to be hosted in their own subscription. To deploy an environment in your own environment use Partner steps above.
 
