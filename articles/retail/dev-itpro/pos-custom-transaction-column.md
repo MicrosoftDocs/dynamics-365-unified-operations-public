@@ -183,11 +183,11 @@ This topic applies to Dyna
     ```
 17. Compile and rebuild the project.
 
- **Validate the custom:**
+## Validate the customization
 
 1. Login to MPOS using **000160** as the operator id and **123** as the password.
 2. Click the **Current transaction** button on the Welcome screen.
-3. Add any item **(0005)** to the thetransaction.
+3. Add any item **(0005)** to the transaction.
 4. The custom column should display the line number.
 
 
