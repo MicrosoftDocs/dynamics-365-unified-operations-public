@@ -145,15 +145,15 @@ Visual Studio Team Services administrator can publish project work items to your
 
 When access the published VSTS work items from the support search box, it will display the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permission can edit the work item in Visual Studio Team Services. 
 
-- Tag a VSTS work item
+- **Tag a VSTS work item to be published**
 
 [![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
 
-- Search VSTS work item from client
+- **Search VSTS work item from client**
 
 [![vstsSearch](./media/ClientSerachVSTS.png)](./media/ClientSerachVSTS.png)
 
-- View a VSTS work itme from client
+- **View a published VSTS work itme from client**
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
