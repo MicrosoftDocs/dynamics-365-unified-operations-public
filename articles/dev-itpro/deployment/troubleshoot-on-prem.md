@@ -46,7 +46,7 @@ To find out what machine is the primar instance for Stateful Services, like a Lo
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
 ### Timeout error received when creating a Service Fabric cluster 
-Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](../deployment/setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
+Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
 Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
 Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
 
@@ -72,7 +72,7 @@ LocalAgent is the framework that is responsible for communicating with LCS, down
 Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
 ### Install, upgrade, or uninstall Local agent 
-Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
+Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
 
     LocalAgentCLI.exe Install <path of localagent-config.json> 
     LocalAgentCLI.exe Upgrade <path of localagent-config.json> 
@@ -118,7 +118,7 @@ To resolve these errors, complete the followign steps.
           <Thumbprint></Thumbprint> 
           <ProtectTo></ProtectTo> 
         </Certificate> 
-3. Ensure that the steps in [Configure LCS connectivity for the tenant](../deployment/setup-deploy-on-premises-environments#configurelcs.md) section were completed using the same certificate that is specified in local agent configuration in LCS. 
+3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments#configurelcs.md) section were completed using the same certificate that is specified in local agent configuration in LCS. 
 4. Uninstall the local agent.  
 5. Specify the correct certificate in the local agent configuration and download the configuration file again. 
 6. Install the local agent again with the new configuration file. 
