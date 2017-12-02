@@ -1,8 +1,7 @@
-
 ---
 # required metadata
 
-title: Add a column to a transaction page
+title: Add custom columns to POS transaction grid
 description: 
 author: mugunthanm
 manager: AnnBe
@@ -30,67 +29,38 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Add a column to a transaction page
-**Add custom columns to POS transaction grid:**
+# Add custom columns to POS transaction grid
 
-This topic explains how to add new custom column in the POS transaction page using the screen layout designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
+This topic explains how to add a new custom column to the POS transaction page using the screen layout designer. You can add more information to the Retail POS transaction page by using the custom column feature. A custom column can be added to the transaction page receipt grid by using the screen layout designer. You can adjust width and position of the columns by using the designer. We added 10 custom columns in the layout for extensions scenarios. You can use all 10 in out layout. The custom columns are already added to the designer metadata. After adding the column to the layout, you run the distribution job so that the column shows up on the transaction page.
 
-You can add more information to the Retail POS transaction page by using custom column feature. Custom column can be added to the transaction page by using the screen layout designer, from the screen layout designer you can add the custom column to the POS transaction (receipt grid). You can adjust width and position of the columns by using the designer. We added 10 custom columns in the layout for extensions scenarios, from the designer you drag up to ten custom columns, these custom columns are already added part of the designer metadata, you need to add the column to your layout and the run the distribution job and POS will show the column in the transaction grid.  
-
-Scenario/business problem
--------------------------
-
-<span id="_Toc446093285" class="anchor"></span>Let’s add custom column in POS transaction to show the cart line number.
-
-**Add new custom control:**
-
-1.  Login to Dynamics 365 for Retail.
-
-2.  Navigate to Retail > Channel setup > POS setup > POS > Screen layouts (Search for Screen layout in the search bar)
-
-3.  Select the F3MGR screen layout ID and click the Designer button in the action bar.
-
-4.  Follow the instructions if prompted to install and enter the AAD credentials to launch the designer.
-
-5.  Select the 1440x960 – Full layout from the layout sizes and click the Layout designer button.
-
-6.  If prompted click Open and follow the instruction to install the designer tool.
-
-7.  After installing it will ask for AAD credentials, provide the details to launch the designer.
-
-8.  In the designer right click the transaction grid (receipt grid) and select customize.
-
-9.  In the customization – Receipt windows, select the Lines in the pivot panel drop down.
-
-10. In the Available columns window select the CUSTOM COLUMN 1 and click the **> (arrow)** button to move the column to the Selected columns.
-
+This topic applies to Dyna
+**
+**1s. Login to Dynamics 365 for Retail.
+2. Navigate to **Retail > Channel setup > POS setup > POS > Screen layouts**. Or, search for **Screen layout** in the search bar.
+3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
+4. Follow the instructions if prompted to install and enter the AAD credentials to launch the designer.
+5. Select the **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
+6. If prompted click **Open** and follow the instruction to install the designer tool.
+7. After installing it will ask for AAD credentials. Provide your credentials to launch the designer.
+8. In the designer right-click the transaction grid (receipt grid) and select customize.
+9. In the **customization – Receipt** window, select the Lines in the pivot panel drop down.
+10. In the **Available columns** window select the **CUSTOM COLUMN 1** and click the **> (arrow)** button to move the column to the **Selected** columns.
 11. Click OK to save and close the window.
+12. Adjust the column width in the transaction grid using the **screen layout** designer to make sure the column is visible.
+13. Click the **X** button in the designer to close the designer.
+14. When prompted to **Save changes**, click **Yes**. If you click No the changes will not be saved.
+15. Navigate to **Retail > Retail IT > Distribution schedule**.
+16. Select the **Registers (1090)** job and click **Run now**.
 
-12. Please adjust the column width in the transaction grid using the screen layout designer to make sure the column is visible.
+ ## Add business logic to custom column
 
-13. Click the X button in the designer to close the designer.
-
-14. When prompted to Save changes, click Yes. If you click No the changes will not be saved.
-
-15. Navigate to Retail > Retail IT > Distribution schedule
-
-16. Select the Registers (1090) job and click Run now.
-
- **Add business logic to custom control:**
-
-17. Open visual studio 2015 in administrator mode.
-
-18. Open ModernPOS solution from …\\RetailSDK\\POS
-
-19. Under the POS.Extensions project create a new folder called CustomColumnExtensions.
-
-20. Under CustomColumnExtensions, create new folder called Cart.
-
-21. Under Cart, create new folder called LinesGrid.
-
-22. In the LinesGrid folder, add a new ts (typescript) file and name it has CustomColumn1Configuration.ts
-
-23. Add the below import statement to import the relevant entities and context.
+1. Open Visual Studio 2015 in administrator mode.
+2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3. Under the **POS.Extensions** project create a new folder named **CustomColumnExtensions**.
+4. Under **CustomColumnExtensions**, create a new folder named **Cart**.
+5. Under **Cart**, create a new folder named **LinesGrid**.
+6. In the **LinesGrid** folder, add a new Typescript file and name it **CustomColumn1Configuration.ts**.
+7. Add the following **import** statements to import the relevant entities and context.
 ```typescript
 import {
 
