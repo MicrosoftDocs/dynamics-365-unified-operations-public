@@ -147,7 +147,7 @@ When access the published VSTS work items from the support search box, it will d
 
 - Tag a VSTS work item
 
-[![vststag](./media/VSTS%20TAg.png)](./media/VSTS%20TAg.png)
+[![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
 
 - Search VSTS work item from client
 
