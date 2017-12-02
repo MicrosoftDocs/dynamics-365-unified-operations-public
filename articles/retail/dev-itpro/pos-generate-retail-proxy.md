@@ -87,9 +87,9 @@ Use the CommerceProxyGenerator.exe from Retail SDK\\Reference folder to generate
 2. Copy the customized RS/CRT libraries to Retail SDK\\reference folder.
 
 3. Open the command prompt in admin and navigate to the ...\\Retail SDK\\Reference folder and run the below command to generate the proxy, the proxy files will be generated in the same folder.
-
+```typescript
  CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-
+```
  **Ex:** CommerceProxyGenerator.exe C:\\RetailSDK\\Refernce\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\Refernce\\**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** /application:typescriptextensions
 
  Replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with your custom retail server extension library name.
@@ -169,7 +169,7 @@ Note: Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll is the custom libra
 ```typescript
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
 ```
-    **Note:** In the value field you will add your proxy library name, in the example we used Contoso.Commerce.RetailProxy.StoreHoursSample
+Note: In the value field you will add your proxy library name, in the example we used Contoso.Commerce.RetailProxy.StoreHoursSample
 
 19. For manual testing, update the RetailProxy.MPOSOffline.ext.config under the C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext with the custom proxy library name under the composition section.
 
