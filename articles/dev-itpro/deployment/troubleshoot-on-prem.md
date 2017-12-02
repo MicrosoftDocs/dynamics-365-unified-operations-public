@@ -46,7 +46,7 @@ To find out what machine is the primar instance for Stateful Services, like a Lo
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
 ### Timeout error received when creating a Service Fabric cluster 
-Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](../setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
+Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](../deployment/setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
 Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
 Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
 
@@ -72,7 +72,7 @@ LocalAgent is the framework that is responsible for communicating with LCS, down
 Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
 ### Install, upgrade, or uninstall Local agent 
-Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](../setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
+Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
 
     LocalAgentCLI.exe Install <path of localagent-config.json> 
     LocalAgentCLI.exe Upgrade <path of localagent-config.json> 
@@ -97,120 +97,136 @@ Complete the following steps to troubleshoot general issues with local agent val
    - **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-LocalAgent 
 
 **Common errors**
-Receiving 'Unable to process commands' and/or 'Unable to get the channel information' messages 
- 
-"RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate 
+The following are common errors that you may see:
+
+- Receiving 'Unable to process commands' and/or 'Unable to get the channel information' messages 
+- "RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate 
 
 **Reason**
-The certificate specified for OnPremLocalAgent certificate is invalid or not configured correctly for the tenant. 
+These errors might occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant. 
 
 **Steps** 
-1. Run Test-D365FOConfiguration.ps1 on all Orchestrator nodes to ensure all checks pass 
-2. Verify that the certificate specified  in local agent configuration is correct.  
-Make sure there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml 
-The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for  
-    <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="true"> 
-      <Name>OnPremLocalAgent</Name> 
-      <Thumbprint></Thumbprint> 
-      <ProtectTo></ProtectTo> 
-    </Certificate> 
-3. Ensure that the steps in Configure LCS connectivity for the tenant section were completed using the same certificate specified in local agent configuration in LCS. 
-4. Uninstall the local agent  
-5. Specify the correct certificate in local agent configuration and download the configuration file again 
-6. Install local agent again with the new configuration file. 
+To resolve these errors, complete the followign steps.
+1. Run Test-D365FOConfiguration.ps1 on all Orchestrator nodes to ensure all checks pass. 
+2. Verify that the certificate specified in local agent configuration is correct.  
 
-**Error event:** 
-Access to the path '\\...\agent\assets\StandAloneSetup-76308-1.zip' is denied 
+- Make sure there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml. 
+- The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for  
+    
+        <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="true"> 
+          <Name>OnPremLocalAgent</Name> 
+          <Thumbprint></Thumbprint> 
+          <ProtectTo></ProtectTo> 
+        </Certificate> 
+3. Ensure that the steps in [Configure LCS connectivity for the tenant](../deployment/setup-deploy-on-premises-environments#configurelcs.md) section were completed using the same certificate that is specified in local agent configuration in LCS. 
+4. Uninstall the local agent.  
+5. Specify the correct certificate in the local agent configuration and download the configuration file again. 
+6. Install the local agent again with the new configuration file. 
+
+**Error** 
+Access to the path '\\...\agent\assets\StandAloneSetup-76308-1.zip' is denied. 
 
 **Reason**
-The file share specified in local agent configuration is invalid. 
+The file share specified in local agent configuration is not valid. 
 
 **Steps** 
-1. Ensure that the share specified exists 
-2. Ensure that the local agent user has Full permission on the specified share. The local agent user is the DNS name specified in ConfigTemplate.xml in the section, 
-  <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent"> 
-      <DNSHostName>svc-LocalAgent.d365ffo.onprem.contoso.com</DNSHostName> 
-  </ADServiceAccount> 
+1. Verify that the specified share exists. 
+2. Verify that the local agent user has full permission on the share. The local agent user is the DNS name specified in ConfigTemplate.xml in the section, 
+  
+          <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent"> 
+              <DNSHostName>svc-LocalAgent.d365ffo.onprem.contoso.com</DNSHostName> 
+          </ADServiceAccount> 
+          
 3. Ensure that the Setup file share section in setup document is completed. 
-4. Uninstall the local agent  
-5. Specify the correct file share in local agent configuration and download the configuration file again 
+4. Uninstall the local agent.  
+5. Specify the correct file share in local agent configuration and download the configuration file again. 
 6. Install local agent again with the new configuration file. 
 
-**Error event:** 
+**Error** 
 Login failed for user 'D365\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. [CLIENT: 10.0.2.23]  
 
 **Reason**
-The local agent user is unable to connect to the orchestration database. Possibly users may have been deleted and recreated in the AD. The SID of hte user has changed. Any access given to the user for the SQL Server or database will no longer work. 
+The local agent user is not able to connect to the orchestration database. This could happen because users may have been deleted and then recreated in the AD which means the SID of the user has changed. Any access given to the user for the SQL Server or database will no longer work. 
 
 **Steps**
-1. Run the script on the SQL server 
-   .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
-  This creates an empty orchestrator database if it does not exist and adds the local agent user to the database with db_owner permission 
-2. The application should automatically go to healthy state once the right permissions are provided. 
-3. If any of the settings such as the SQL FQDN, Database name and local agent user was provided incorrectly in LCS, change the settings and reinstall local agent. 
-4. If step 1,2 does not solve the issue, manually remove the local agent user from the SQL server and the database and re-run the Initialize-Database script. 
-5. If recreating users in AD, SID changing. Need to remove old user/SID and add new user/SID 
+To resolve this error, complete the followign steps.
+1. Run the script on the SQL server:
+
+        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
+        
+This creates an empty orchestrator database, if one does not already exist, and adds the local agent user to the database with db_owner permission 
+2. The application should automatically go to healthy state after the correct permissions are provided. 
+3. If any of the settings, such as the SQL FQDN, Database name, and local agent user was provided incorrectly in LCS, change the settings and reinstall local agent. 
+4. If the first three steps do not resolve the issue, manually remove the local agent user from the SQL server and the database and then re-run the Initialize-Database script. 
+5. If you recreate a user in AD, remember that the SID will change. Remove the previous SID for the user and add a new SID. 
 
 **Additional scenario**
-Local agent user is unable to connect to the SQL server or database. 
+The local agent user can't connect to the SQL server or database. 
 
 **Steps** 
-1. Deleted the svc-LocalAgent user from the sql server primary node databases and then removed the login from both servers.  
-2. Run the following scripts in  
-    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
-    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
-  These scripts does not work with always-on setup. The database needs to created first in the primary node and then replicated.  
+1. Delete the svc-LocalAgent user from the sql server primary node databases and then remove the login from both servers.  
+2. Run the following scripts: 
 
-**Error event:** 
+        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
+        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
+        
+  These scripts do not work with **always-on** setup. The database needs to be created first in the primary node and then replicated.  
+
+**Error** 
 RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com' 
 
 **Reason** 
-The local agent machines are unable to connect to lcsapi.lcs.dynamics.com. Review AX-BridgeService eventlog for possible "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'".  
+The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService eventlog for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'".  
 
 **Steps** 
+Complete the following steps to resolve the error.
 1. Run [psping lcsapi.lcs.dynamics.com:80].  
-2. If unable to receive reply then contact the IT department at your organization as the firewall is blocking access to lcsapi or proxy issues 
-    Lcsapi.lcs.dynamics.com 
-    <lcs azure blob storage domain> 
-    <lcs azure queue domain> 
+2. If you don't receive a reply, contact the IT department at your organization as the firewall is blocking access to lcsapi or proxy issues:
 
-**Error event:**
-Access to the path '\\...\agent\assets\StandAloneSetup-76308-1.zip' is denied 
+        Lcsapi.lcs.dynamics.com 
+        <lcs azure blob storage domain> 
+        <lcs azure queue domain> 
+
+**Error**
+Access to the path '\\...\agent\assets\StandAloneSetup-76308-1.zip' is denied.
 
 **Reason** 
-The local agent user is unable to access the file share specified in local agent configuration 
+The local agent user can't access the file share specified in local agent configuration. 
 
 **Steps**  
-1. Make sure that the file share is valid and it exists. 
-2. Download PsExec https://docs.microsoft.com/en-us/sysinternals/downloads/psexec 
-3. Open command prompt and  run PsExec.exe -u contoso\svc-LocalAgent$ cmd.exe 
-4. Access the file share in the resulting window. Make sure that this completes without errors 
-5. Add the local agent user to the file share and give full permissions 
+Complete the following steps to resolve the error.
+1. Make sure that the file share exists and is valid. 
+2. Download PsExec from https://docs.microsoft.com/en-us/sysinternals/downloads/psexec.
+3. Open a command prompt and run PsExec.exe -u contoso\svc-LocalAgent$ cmd.exe. 
+4. Access the file share and verify that there are no errors. 
+5. Add the local agent user to the file share and give them full permissions. 
+6. Check for svc-LocalAgent$ rights to path (NTFS and share permissions). 
 
-Check for svc-LocalAgent$ rights to path (NTFS and share permissions) 
-
-### "Unable to load DLL 'FabricClient.dll':" error 
-Close PowerShell and reopen. If still receive error, restart machine. 
+### Error: "Unable to load DLL 'FabricClient.dll':"
+If you receive this error, close and reopen PowerShell. If the error still occurrs, restart the machine. 
 
 ### What Cluster ID in Agent config should be used 
-Cluster ID can be any GUID. It is for tracking purposes 
+The Cluster ID can be any GUID. This GUID is used for tracking purposes. 
 
-### After changing the tenant for the project from LCS, Local Agent stops working 
-Configure Local Agent with updated tenant.  
-1. Remove all the environment(s) already installed with connector by deleting from LCS 
-2. Uninstall the local agent  
-   .\LocalAgentCLI.exe Cleanup <path of localagent-config.json> 
-3. Go through 11. Configure LCS connectivity for the tenant step in documentation again 
-4. Create a new LCS connector in the new tenant 
-5. Download the local-agent.config file 
-6. Install local agent 
-   .\LocalAgentCLI.exe Install <path of localagent-config.json>
+### Local Agent stops working after the tenant for the project from LCS is changed 
+Complete the following steps to configure Local Agent with updated tenant.  
+1. Remove all of the environments from LCS that already have the connector installed. 
+2. Uninstall the local agent 
+
+        .\LocalAgentCLI.exe Cleanup <path of localagent-config.json> 
+        
+3. Complete the steps in section [11. Configure LCS connectivity for the tenant](../deployment/setup-deploy-on-premises-environments#configurelcs.md). 
+4. Create a new LCS connector in the new tenant. 
+5. Download the local-agent.config file. 
+6. Install local agent. 
+   
+        .\LocalAgentCLI.exe Install <path of localagent-config.json>
 
 ## Log files to monitor deployment
 
-### How to monitor deployment locally 
-Review the Event Viewer logs for the primary orchestrator machine and artifacts manager, bridge service 
-AX-LocalAgent (overall installation process) 
+### Monitor deployment locally 
+Review the Event Viewer logs for the primary orchestrator machine and artifacts manager, and the bridge service 
+AX-LocalAgent (overall installation process). 
 
 - Modules  
     - Common 
@@ -228,11 +244,11 @@ AX-SetupInfrastructureEvents (additional details when interactions with Service 
 **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** 
 **Event Viewer** > **Custom Views** > **Administrative Events** 
 
-### How to find full error
-Click on the details tab to get full message 
+### Find a full error
+Click on the **Details** tab to view the full error message. 
 
-### Service Fabric
-Note service that is failing, go to that application directory ex C:\ProgramData\SF\ORCH1\Fabric\work\Applications\LocalAgentType_App5\log 
+### Service Fabric failing
+Note the service that is failing and open the corresponding application directory. For example, C:\ProgramData\SF\ORCH1\Fabric\work\Applications\LocalAgentType_App5\log.
 
 ## Example errors
 
