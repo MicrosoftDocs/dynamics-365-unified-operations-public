@@ -102,7 +102,7 @@ This topic applies to Dyna
         return cartLine.LineNumber.toString();
     }
     ```
-    The overall class should look like below:
+    The code for the entire class is:
     ```typescript
     import {
         ICustomLinesGridColumnContext,
@@ -129,98 +129,65 @@ This topic applies to Dyna
         }
     }
     ```
-13. Create a new json file and under the CustomColumnExtensions folder and name it as manifest.json.
-14. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
-```typescript
- {
-
- "$schema": "../manifestSchema.json",
-
- "name": "Pos_Extensibility_Samples",
-
- "publisher": "Microsoft",
-
- "version": "7.2.0",
-
- "minimumPosVersion": "7.2.0.0",
-
- "components": {
-
- "extend": {
-
- "views": {
-
- "CartView": {
-
- "linesGrid": {
-
- "customColumn1": { "modulePath": "Cart/LinesGrid/CustomColumn1Configuration" }
-
- }  }  }  }  }
-
- }
- ```
-
-15. Open the extensions.json file under POS.Extensions project and update it with CustomColumnExtensions samples, so that POS during runtime will include this extension.
-```typescript
- {
-
- "extensionPackages": [
-
- {
-
- "baseUrl": "SampleExtensions2"
-
- },
-
- {
-
- "baseUrl": "CustomColumnExtensions"
-
- }
-
- ]
-
-}
-```
-
-16. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
-```typescript
- "exclude": [
-
- "AuditEventExtensionSample",
-
- "B2BSample",
-
- "CustomerSearchWithAttributesSample",
-
- "FiscalRegisterSample",
-
- "PaymentSample",
-
- "PromotionsSample",
-
- "SalesTransactionSignatureSample",
-
- //"SampleExtensions2",
-
- "SampleExtensions",
-
- "StoreHoursSample",
-
- "SuspendTransactionReceiptSample"
-
- //"CustomColumnExtensions"
-
-],
-```
+13. Create a new json file under the **CustomColumnExtensions** folder and name it **manifest.json**.
+14. In the **manifest.json** file, replace the generated code with the following code:
+    ```typescript
+    {
+        "$schema": "../manifestSchema.json",
+            "name": "Pos_Extensibility_Samples",
+                "publisher": "Microsoft",
+                    "version": "7.2.0",
+                        "minimumPosVersion": "7.2.0.0",
+                            "components": {
+            "extend": {
+                "views": {
+                    "CartView": {
+                        "linesGrid": {
+                            "customColumn1": { "modulePath": "Cart/LinesGrid/CustomColumn1Configuration" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ```
+15. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **CustomColumnExtensions** sample, so that POS during runtime will include this extension.
+    ```typescript
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "SampleExtensions2"
+            },
+            {
+                "baseUrl": "CustomColumnExtensions"
+            }
+        ]
+    }
+    ```
+16. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list. If you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list as shown.
+    ```typescript
+    "exclude": [
+        "AuditEventExtensionSample",
+        "B2BSample",
+        "CustomerSearchWithAttributesSample",
+        "FiscalRegisterSample",
+        "PaymentSample",
+        "PromotionsSample",
+        "SalesTransactionSignatureSample",
+        //"SampleExtensions2",
+        "SampleExtensions",
+        "StoreHoursSample",
+        "SuspendTransactionReceiptSample"
+        //"CustomColumnExtensions"
+    ],
+    ```
 17. Compile and rebuild the project.
 
- **Validate the customization:**
+ **Validate the custom:**
 
-1. Login to MPOS using 000160 as operator id and 123 as password.
-2. Click the current transaction button on the welcome screen
-3. Add any item (0005) to transaction.
+1. Login to MPOS using **000160** as the operator id and **123** as the password.
+2. Click the **Current transaction** button on the Welcome screen.
+3. Add any item **(0005)** to the thetransaction.
 4. The custom column should display the line number.
 
 
