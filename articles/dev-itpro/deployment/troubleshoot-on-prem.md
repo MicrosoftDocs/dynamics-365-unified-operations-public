@@ -252,22 +252,21 @@ Note the service that is failing and open the corresponding application director
 
 ## Example errors
 
-### Encryption error occurred
-Ex. AXBootStrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, Microsoft.D365.Gateways.ClusterGateway.exe 
+### Encryption errors
+Some encryption error examples include, AXBootStrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
 
-Data encipherment cert used to encrypt AOS AccountPassword was not installed on the box. This cert would be in the Certificates (Local Computer) or Provider type is wrong. 
+You might receive one of these errors if the data encipherment cert is used to encrypt AOS AccountPassword was not installed on the machine. This cert could be in the Certificates (Local Computer) or it could be that the Provider type is wrong. 
 
-Validate credentials.json file. Check if the texts there decrypts correctly by typing the message (on AOS1) 
+To resolve the error, validate  the credentials.json file. Check if the texts there are decrypting correctly by typing in the following message (on AOS1). 
 
-- Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip 
+        Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip 
 
-
-Parameter '' is not defined in the ApplicationManifest file 
+This error might have also occurred if the parameter **''** is not defined in the ApplicationManifest file. To verify this, 
 
 - Check for proper layout/structure of credentails.json file Encrypt credentials  
 - Check to see if end quote is at end of line or on next line 
 
-Note Event Viewer > Custom Views > Administrative Events 
+Go to **Event Viewer** > **Custom Views** > **Administrative Events** 
     Error on Microsoft-Service Fabric source 
     
 ### Can't find the certificate and private key to use for decryption (0x8009200C) 
