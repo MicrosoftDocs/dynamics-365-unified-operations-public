@@ -61,110 +61,76 @@ This topic applies to Dyna
 5. Under **Cart**, create a new folder named **LinesGrid**.
 6. In the **LinesGrid** folder, add a new Typescript file and name it **CustomColumn1Configuration.ts**.
 7. Add the following **import** statements to import the relevant entities and context.
-```typescript
-import {
+    ```Typescript
+    import {
 
-ICustomLinesGridColumnContext,
-CustomLinesGridColumnBase
+        ICustomLinesGridColumnContext,
+        CustomLinesGridColumnBase
 
- } from "PosApi/Extend/Views/CartView";
+    } from "PosApi/Extend/Views/CartView";
 
-import { CustomGridColumnAlignment } from "PosApi/Extend/Views/CustomGridColumns";
-import { ProxyEntities } from "PosApi/Entities";
-```
-24. Create a new class called LinesCustomGridColumn1 and extend it from CustomLinesGridColumnBase.
-```typescript
- export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {}
-```
-25. Inside the class declare private variable to capture the selected tender lines
-```typescript
+    import { CustomGridColumnAlignment } from "PosApi/Extend/Views/CustomGridColumns";
+    import { ProxyEntities } from "PosApi/Entities";
+    ```
+8. Create a new class named **LinesCustomGridColumn1** and extend it from **CustomLinesGridColumnBase**.
+    ```typescript
+    export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {}
+    ```
+9. Inside the class declare a private variable to capture the selected tender lines.
+    ```typescript
     private _selectedTenderLines: ProxyEntities.TenderLine[ ];
-```
-26. Create a class constructor method to initialize the context.
-```typescript
- constructor(context: ICustomLinesGridColumnContext) {
-   super(context);
-}
-```
-27. Add the below methods for the columns title and alignment
-```typescript
- public title(): string {
-   return "Line number";
-
- }
-
-public alignment(): CustomGridColumnAlignment {
-  return CustomGridColumnAlignment.Right;
-}
-```
-28. Add the column compute value method, which returns the line number
-```typescript
-   public computeValue(cartLine: ProxyEntities.CartLine): string {
-      return cartLine.LineNumber.toString();
-
+    ```
+10. Create a class constructor method to initialize the context.
+    ```typescript
+    constructor(context: ICustomLinesGridColumnContext) {
+        super(context);
     }
-```
-The overall class should look like below:
-```typescript
- /**
+    ```
+11. Add the following methods for the columns title and alignment
+    ```typescript
+    public title(): string {
+        return "Line number";
+    } 
 
- * SAMPLE CODE NOTICE
+    public alignment(): CustomGridColumnAlignment {
+        return CustomGridColumnAlignment.Right;
+    }
+    ```
+12. Add the column compute value method, which returns the line number
+    ```typescript
+    public computeValue(cartLine: ProxyEntities.CartLine): string {
+        return cartLine.LineNumber.toString();
+    }
+    ```
+    The overall class should look like below:
+    ```typescript
+    import {
+        ICustomLinesGridColumnContext,
+        CustomLinesGridColumnBase
+    } from "PosApi/Extend/Views/CartView";
+    import { CustomGridColumnAlignment } from "PosApi/Extend/Views/CustomGridColumns";
+    import { ProxyEntities } from "PosApi/Entities";
 
- *
+    export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {
+        constructor(context: ICustomLinesGridColumnContext) {
+            super(context);
+        }
 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+        public title(): string {
+            return "Line number";
+        }
 
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+        public computeValue(cartLine: ProxyEntities.CartLine): string {
+            return cartLine.LineNumber.toString();
+        }
 
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
- */
-
- import {
-
- ICustomLinesGridColumnContext,
-
- CustomLinesGridColumnBase
-
- } from "PosApi/Extend/Views/CartView";
-
- import { CustomGridColumnAlignment } from "PosApi/Extend/Views/CustomGridColumns";
-
- import { ProxyEntities } from "PosApi/Entities";
-
- export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {
-
- constructor(context: ICustomLinesGridColumnContext) {
-
- super(context);
-
- }
-
- public title(): string {
-
- return "Line number";
-
- }
-
- public computeValue(cartLine: ProxyEntities.CartLine): string {
-
- return cartLine.LineNumber.toString();
-
- }
-
- public alignment(): CustomGridColumnAlignment {
-
- return CustomGridColumnAlignment.Right;
-
- }
-
-}
-```
-29. Create a new json file and under the CustomColumnExtensions folder and name it as manifest.json.
-
-30. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
+        public alignment(): CustomGridColumnAlignment {
+            return CustomGridColumnAlignment.Right;
+        }
+    }
+    ```
+13. Create a new json file and under the CustomColumnExtensions folder and name it as manifest.json.
+14. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
 ```typescript
  {
 
@@ -195,7 +161,7 @@ The overall class should look like below:
  }
  ```
 
-31. Open the extensions.json file under POS.Extensions project and update it with CustomColumnExtensions samples, so that POS during runtime will include this extension.
+15. Open the extensions.json file under POS.Extensions project and update it with CustomColumnExtensions samples, so that POS during runtime will include this extension.
 ```typescript
  {
 
@@ -218,7 +184,7 @@ The overall class should look like below:
 }
 ```
 
-32. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+16. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
 ```typescript
  "exclude": [
 
@@ -248,16 +214,13 @@ The overall class should look like below:
 
 ],
 ```
-33. Compile and rebuild the project.
+17. Compile and rebuild the project.
 
  **Validate the customization:**
 
-34. Login to MPOS using 000160 as operator id and 123 as password.
-
-35. Click the current transaction button on the welcome screen
-
-36. Add any item (0005) to transaction.
-
-37. The custom column should display the line number.
+1. Login to MPOS using 000160 as operator id and 123 as password.
+2. Click the current transaction button on the welcome screen
+3. Add any item (0005) to transaction.
+4. The custom column should display the line number.
 
 
