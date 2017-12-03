@@ -39,6 +39,16 @@ This topic shows how Microsoft Premier customers can submit a support incident f
 
 ![Support menu](media/Premier1.png)
 
+[!Note]
+If this is the first time you log a premier support ticket, you will need to add your premier support plan to LCS Support. Once the support plan is added, you won't have to do it again the next time you need to log a premier ticket. 
+   - To do so, from the **Submitted to Microsoft** tab, click the **Manage support plans** button. 
+
+   ![Manage support plans](media/SupportManagePlans.png)
+
+   - In the **Manage support plans** slide, click **Add contract** to enter the **Access ID** and **Password/Contract ID** to add - contract. 
+
+   ![Add contracts](media/SupportAddPlans.png)
+
 2. From the **Submitted to Microsoft** tab, click the **Submit an incident** button.
 
 ![Submitted an incident](media/Premier2.png)
@@ -61,9 +71,9 @@ This topic shows how Microsoft Premier customers can submit a support incident f
 
 7. In the **Describe your issue** window -  
  - Toggle **Yes** if the issue occure in an environment and select the environment name.  
- - Enter a short description of your issue in the **Title**
- - In the **Tell us more about your problem** textbox, provide issue detail of result that you’re getting, and what result you expect to get
- - Enter **steps to reproduce the issue** and **error message** if applicable
+ - Enter a short description of your issue in **Title**
+ - Provide issue detail and repo steps
+ - If applicable, enter **error message**. 
  - It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.
  
 ![Issue detail](media/Premier7.png)
