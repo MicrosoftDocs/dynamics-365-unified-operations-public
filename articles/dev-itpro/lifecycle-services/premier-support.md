@@ -7,7 +7,6 @@ author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 
@@ -17,7 +16,6 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29531
@@ -38,39 +36,43 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition by using Microsoft Dynamics Lifecycle Services (LCS).
 
 1.  In LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
-![Support menu](media/support1.png)
+![Support menu](media/Premier1.png)
 
-2. On the **Support issues** tab, select **Submitted to Microsoft**.
-![Submitted to Microsoft](media/submitted-microsoft.png)
+2. From the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+![Submitted an incident](media/Premier2.png)
 
-3. To create a new incident, click the **Submit an incident** button.
-![Submit an incident](media/submit-incident.png)
+3. Before you submit an incident, use the Issue Search tool to search for the existing solutions. Enter a description of the issue and click **Search**.
+![Submit an incident](media/Premier3.png)
 
-4. Select the contract type. If you select Premier, this will require an access code and password, which is provided by your contact on the Premier support team.
-![Contract type](media/premier.png)
+4. If you cannot find an existing solution to your issue from the Issue search tool, click **Create incident** to create a new incident.
+![Create incident](media/Premier4.png)
 
-5. Before you submit an incident, use the Issue Search tool to search for the issue and ensure that it is not reported yet. Enter a description of the issue and click **Search**.
-![Issue search](media/search-issue.png)
+5. Select issue category 
+![Issue category](media/Premier5.png)
 
-6. If the issue that you experience is not listed in the Issue search tool, click **Create incident** to create a new incident.
-![Create incident](media/create-button.png)
+6. Select issue area
+![Issue area](media/Premier6.png)
 
-7. In the **Select support contract** window, select your support contract. Click **Continue**.
-![Support contract](media/continue.png)
+7.In the **Describe your issue** window -  
+ - Toggle **Yes** if the issue occure in an environment and select the environment name.  
+ - Enter a short description of your issue in the **Title**
+ - In the **Tell us more about your problem** textbox, provide issue detail of result that you’re getting, and what result you expect to get
+ - Enter **steps to reproduce the issue** and **error message** 
+ - It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.
+![Issue detail](media/Premier7.png)
 
-8. In the **Select severity** window, select the issue severity level. Selecting **Severity level A** will redirect you to a page that has the Premier support phone number, which you will need to call to report the issue. Severity issues B and C can be reported by continuing with this wizard.
-![Severity C issue](media/sev-c.png)
+8. Enter the **primary contact information**. These contact details will be used by the customer support to contact you about the case.
+![Enter contact details](media/Premier8.png)
 
-9. In the **Enter issue details** window, describe the issue in detail. In the **Tell us more** field provide detailed repro steps of the issue, the result that you’re getting, and what result you expect to get. It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.
-![Attach a file](media/attach-picture.png)
+9. Select **support contract** and **severity level**.  
+![Support contract and severity](media/Premier9.png)
 
-10. In the **Share diagnostic data** window, select the environment where the issue is occurring. 
-![Share diagnostic data](media/share-diag.png)
+  [!Note]
+  Selecting **Severity level A** will redirect you to a page that has the Premier support phone number, which you will need to call to report the issue. Severity issues B and C can be reported by continuing with this wizard.
+  
+10. Click **Submit** to complete 
 
-11. In the **Enter contact details** window, enter your contact details. These contact details will be used by Support to contact you about the case.
-![Enter contact details](media/enter-contact.png)
+![Completed](media/Premier10.png)
 
-12.	Review the incident details, and then click **Submit** to create an incident. 
-![Submit the case](media/submit-button.png)
 
 
