@@ -36,16 +36,53 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To use the Support tool, you must have previously created a project in Lifecycle Services and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
-## Prerequisites
 
 ## Open a new incident
-1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
-2.  Open a project, and then click the **Support** tile.
-3. On the **Submitted to Microsoft** tab, click **Submit an incident**.
-4.  Search for an existing solution by keyword or by object path in the Application Object Tree (AOT).
-5.  If you don’t find an existing solution, click **Create incident**.
-6.  On the **Share diagnostic data** page, select the appropriate environment. If you have not previously run System diagnostics in your environment, you are prompted to install and run it. After you run System diagnostics, you must update the **Share diagnostic data** page.
-7.  On the **Describe the issue** pages, enter details about the issue and then click **Submit**.
+1.  From LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
+
+![Support menu](media/CPS1.png)
+
+2.  From the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+
+![Support button](media/CPS2.png)
+
+3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. Enter a description or by object path in the Application object Tree (AOT) of the issue and click the search icon.
+
+![Issue search](media/CPS3.png)
+
+4.  If you cannot find an existing solution to your issue from the Issue search tool, click **Create incident** to create a new incident.
+
+![Create incident](media/CPS4.png)
+
+5.  Select issue category page.
+
+![Category](media/CPS5.png)
+
+6.  Select issue area.
+
+![Area](media/CPS6.png)
+
+7. In the **Describe your issue** window -  
+ - Toggle **Yes** if the issue occure in an environment and select the environment name.  
+ - Enter a short description of your issue in **Title**
+ - Provide issue detail and repo steps
+ - If applicable, enter **error message**. 
+ - It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.
+ 
+ ![Detail](media/CPS7.png)
+ 
+8. Enter the **primary contact information**. These contact details will be used by the customer support to contact you about the case.
+
+![Contact info](media/CPS8.png)
+
+9. Select **support contract** and **severity level**. 
+
+![Contract and severity](media/CPS9.png)
+
+10. Click **Submit** to complete. 
+
+![Completed](media/CPS10.png)
+
     After you click **Submit**, the following steps occur:
     -   An incident is created and added to the **Incidents** list.
     -   You receive an email message from the Microsoft Support Engineer who is working on your case. 
