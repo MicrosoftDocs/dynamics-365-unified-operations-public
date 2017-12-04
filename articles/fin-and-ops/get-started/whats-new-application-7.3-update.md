@@ -157,6 +157,9 @@ the default configuration templates. The default configuration templates provide
 the entities and sequencing that are required to copy configuration data from
 one instance to another instance in a single step.
 
+## Notifications in Point of Sale
+In today's modern retail environment, the store associates are assigned various tasks such as helping customers, running transactions, performing stock counts, or receiving orders in the store. Point of Sale (POS) client empowers the associates to do these and much more, all in one application. With various tasks to be performed in a day, there is a need to notify the associates when a task requires their attention. To address this requirement, we have created a notification framework that utilizes the notification capability in POS. For this release, the notifications can be enabled for POS operations only, and out of the box, the notifications can only be enabled for the order fulfillment operation. However, the notification framework is extensible and enables developers to easily plug in custom code for any operation. We have also provided the ability to configure role-based notifications that empower the retailers to easily define who should receive what notifications.
+
 Optimization advisor   
 -----------------------
 
