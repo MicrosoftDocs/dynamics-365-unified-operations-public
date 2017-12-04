@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title: Warehousing for on premise deployments
-description: This topic describes how to configure Microsoft Dynamics 365 for Finance and
-Operations - Warehousing for on-premise deployments.
+title: Warehousing for on-premises deployment
+description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/08/2017
@@ -30,12 +29,11 @@ ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: AX 7.3.0
 
 ---
-**Configure Microsoft Dynamics 365 for Finance and Operations - Warehousing for
-on-premise deployments**
+# Warehousing for on-premises deployments
 This topic describes how to configure Microsoft Dynamics 365 for Finance and
-Operations - Warehousing for on-premise deployments.
+Operations - Warehousing for on-premises deployments.
 
-**Prerequisites**
+## Prerequisites
 The warehousing app is available on Android and Windows operating systems. To
 use the app for on-premise deployments, it must as a minimum be version 1.1.1.0.
 You must also have one of the following supported versions of Microsoft Dynamics
@@ -65,9 +63,7 @@ account must have enough permissions to administer AD FS.
     application entry  
     Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing'
     -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret
-    -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>'
-
->    
+    -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>'  
 
 >   The \<Resource URL\> can, for example, be
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
@@ -77,16 +73,12 @@ account must have enough permissions to administer AD FS.
 
 >   The \<Admin user\> can be any user with admin access to the AD FS machine.
 
->    
+2.  Save the values received.
 
-1.  Save the values received.
-
-2.  Run the following command to grant permission to the application  
+3.  Run the following command to grant permission to the application  
     Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received
     in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames
     'openid'
-
- 
 
 **Create and configure a user account**
 
@@ -115,7 +107,6 @@ user of the warehousing app:
 
     ![Azure Active Drectory applications ](media/azure-active-directory.png)
 
->    
 
 **Certificates on device**
 
@@ -129,8 +120,6 @@ certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx)
 
 You must configure the warehousing app on the device to connect to the Microsoft
 Dynamics 365 server through the AD FS application.
-
- 
 
 1.  In the app, open **Connection settings**.
 2.  Enter the following information:
