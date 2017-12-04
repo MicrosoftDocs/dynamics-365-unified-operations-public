@@ -100,7 +100,7 @@ user of the warehousing app:
         entry in AD FS (step 2 in Create an application entry in AD FS), give it
         a name, and select the warehousing app user.
 
-![Machine generated alternative text: Dynamics 365 Save 4- New Operations System administration \> Setup \> Azure Active Directory applications Delete OPTIONS p Azure Active Drectory applications P Filter Client Id aaaaaaaa- 1234 -bbbb-5678-ccccccccccc Name Device 1 User ID WMAPP ](media/a00265eb31c9f20bb629a7528c012208.png)
+    ![Azure Active Drectory applications ](media/azure-active-directory.png)
 
 >    
 
