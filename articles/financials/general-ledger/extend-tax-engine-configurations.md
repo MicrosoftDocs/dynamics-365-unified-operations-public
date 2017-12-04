@@ -388,7 +388,7 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 ![New tax setup](media/gte-extension-new-tax-setup.png)
 
-3.	Click **Configuration**.
+3.	Click **Configurations**.
 
 ![Configuration](media/gte-extension-new-configuration.png)
 
@@ -398,15 +398,15 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 	
 ![New configuration](media/gte-extension-new-configuration2.png)
 
-5.	Select the required configuration, Ex: **Tax (India GST)** and Click Save.
+5.	Select the required configuration, Ex: **Tax (India GST)** and Click **Save**.
 
 ![Select configuration](media/gte-extension-select-configuration.png)
 
-6.	Click **Synchronize**.
+6.	In the elipses menu, click **Synchronize**.
 
 ![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
 
-7. Click **Activate**.
+7. In the elipses menu, click **Activate**.
 
 ![Activate configuration](media/gte-extension-activate-configuration.png)
 
@@ -414,19 +414,18 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 8.	Click **Close**.
 9.	Click the **Companies** FastTab.
-10.	Create a new record.
-11.	Select INMF in the **Companies** field.
+10.	Click **New**(1) and then select **INMF** in the **Companies** field (2).
 
 ![Select company](media/gte-extension-deploy-to-company.png)
 
-12.	Click **Save**.
-13.	Click **Activate** to activate the configuration for the company.
+11.	Click **Save**.
+12.	Click **Activate** to activate the configuration for the company.
 
 ![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
 
 ![Active configuration for the company](media/gte-extension-activate-configuration-to-company2.png)
 
-14.	Click **Setup** to set up data for the new version.
+13.	Click **Setup** to set up data for the new version.
 
 ![Set up data for new version](media/gte-extension-tax-setup.png)
 
@@ -444,26 +443,23 @@ Complete the steps in [Scenario 1: Task 1](#task-1-create-extension-configuratio
 
 1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 2. Click the elipses button, then click **Reference model** to change the view to Reference model, so you can view all the available reference models.
-
-    ![GTE reference model](media/gte-reference-model.png)
-
-3.  Click **New** to add a new reference model.
+3. Click **New** to add a new reference model.
     -	**Name:** Country of Origin
     -	**Node type:** Model root
-4.  Click **Add**.
-5.  Highlight **Country of Origin**, click **New** to add new reference model.
+4. Click **Add**.
+5. Highlight **Country of Origin**, click **New** to add new reference model.
     -   **Name:** Countries of Origin
     -   **Node type:** Child of an active node
     -   **Item type:** Record list
-6.  Click **Add**.
-7.  Highlight **Countries of Origin**, click **New** to add new reference model.
+6. Click **Add**.
+7. Highlight **Countries of Origin**, click **New** to add new reference model.
     -   **Name:** Country of Origin
     -   **Node type:** Child of an active node
     -   **Item type:** String
-8.  Click **Add**.
-9.  Highlight **Country of Origin**, click **Natural key**.
-10.  Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the **Natural key**.
-11.  If there are any errors, open the designer, click **Validate**, and fix the errors.
+8. Click **Add**.
+9. Highlight **Country of Origin**, click **Natural key**.
+10. Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the **Natural key**.
+11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
@@ -497,15 +493,15 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 ### Task 5: Change the lookup of BCD tax rate
 
-1.  Navigate to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
-2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps described in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
-3.  Navigate to **Tax document** > **Header** > **Lines** > **Custom Duty** > **BCD** > **Rate**, and then click the **Lookup** tab.
+1.  Go to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
+2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
+3.  Go to **Tax document** > **Header** > **Lines** > **Custom Duty** > **BCD** > **Rate**, and then click the **Lookup** tab.
 4.  Click **Columns**.
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
 ### Task 6: Complete the tax document configuration
-Complete the steps described in [Scenario 1: Task 8](task-8-complete-the-tax-document-configuration).
+Complete the steps in [Scenario 1: Task 8](task-8-complete-the-tax-document-configuration).
 
 ### Task 7: Import the configuration and deploy it to a specific Company
-Complete the steps described in [Scenario 1: Task 9](#task-9-import-the-configuration-and-deploy-it-to-a-specific-company).
+Complete the steps in [Scenario 1: Task 9](#task-9-import-the-configuration-and-deploy-it-to-a-specific-company).
