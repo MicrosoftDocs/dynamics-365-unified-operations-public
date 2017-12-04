@@ -53,7 +53,7 @@ The following table shows the POS views that currently support extensions. It al
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
 | CustomerAddEditView             | Yes                           | No                           | Yes                                  |
-| CustomerDetailsView             | Yes                           | Not applicable               | Yes                                  |
+| CustomerDetailsView             | Yes                           | No                           | Yes                                  |
 | SearchView                      | No                            | Yes                          | Yes                                  |
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
