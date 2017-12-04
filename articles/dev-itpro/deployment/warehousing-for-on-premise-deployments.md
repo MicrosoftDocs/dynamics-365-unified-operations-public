@@ -106,8 +106,7 @@ user of the warehousing app:
 
     ![Azure Active Drectory applications ](media/azure-active-directory.png)
 
-
-## Certificates on device
+## Certificates 
 
 Make sure that the devices with the app installed have the right
 certificates to access the resources. If you are using self-signed certificates,
