@@ -120,13 +120,13 @@ Use client pages to manage access to the network printers that have been registe
 The network printers can now be used in the Finance and Operations application.
 
 ## Frequently asked questions
-###### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
+### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
 
 No. Client installations of the Document Routing Agent can be shared by individuals who access the provisioned Finance and Operations environment. We recommend that you install agents on one or more Print Servers or other domain-hosted clients that have access to network printers.
 
 ###### If the Document Routing Agent belongs on a network Print Server, why doesn't the client run as a service?
 
-The Document Routing Agent now supports running in the background as a service.  Just ensure, that you have downloaded the latest version of the client. 
+The Document Routing Agent now supports running in the background as a service.  Just ensure, that you have downloaded the latest version of the client. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
 ###### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
