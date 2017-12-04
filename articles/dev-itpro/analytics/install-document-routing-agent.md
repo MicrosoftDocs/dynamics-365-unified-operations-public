@@ -5,7 +5,7 @@ title: Install the Document Routing Agent to enable network printer devices
 description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ What's important to know?
 -   The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
 -   The application requires Adobe Acrobat Viewer.
 -   The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
--   RTM & Platform Update 1 deployments require .NET 4 on the client
+-   Dynamics AX 7.0 & Platform Update 1 deployments require .NET 4 on the client
 -   Platform Update 2 or later require .NET 4.62 on the client machine
 
 Network printers that are registered for Finance and Operations applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
@@ -87,7 +87,10 @@ Use the following procedure to configure the client application so that it can c
     -   **Azure AD tenant** – The domain name of the Azure AD.
 
 5.  Click **OK**.
-6.  Click **Sign In** to sign in to your account. **Note:** The account must share the same domain as the Azure AD that is associated with the Finance and Operations application. The Document Routing Agent is now ready to process documents.
+6.  Click **Sign In** to sign in to your account. 
+
+    > [!Note]
+    > The account must share the same domain as the Azure AD that is associated with the Finance and Operations application. The Document Routing Agent is now ready to process documents.
 
 After you've successfully signed in, the **Printers** button becomes available on the toolbar.
 
@@ -114,7 +117,7 @@ Use client pages to manage access to the network printers that have been registe
 2.  Edit the existing entries that are mapped to each network printer. As part of your changes, edit the connection path.
 3.  To include a printer as an option in the **Print Destinations** field, set the **Active** field to **Yes**.
 
-Congratulations, you're done. The network printers can now be used in the Finance and Operations application.
+The network printers can now be used in the Finance and Operations application.
 
 ## Frequently asked questions
 ###### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
