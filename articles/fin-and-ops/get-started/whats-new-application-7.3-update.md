@@ -337,28 +337,16 @@ safety stock to allow real demand, such as sale lines or BOM lines, to be
 fulfilled in the FEFO (First Expired, First Out) order.
 
 ## Tax Engine (GTE) – India GST only
-The Tax Engine (GTE) is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
+The Tax Engine (GTE) is an essential part of the configurable business application experience in Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
 
 Vendor collaboration 
 ---------------------
+Vendor collaboration has been extended to enable vendors to view and selectively maintain their own company information, such as contact information, business identification data, procurement categories, and certifications. 
 
-Dynamics 365 for Finance and Operations, Enterprise edition is now in parity
-with the Vendor portal functionality that was available in Dynamics AX 2012 R3.
-We have extended the current Vendor collaboration interface by enabling:
-
--   Vendor profile visibility/maintenance.
-
--   RFQ, view, and respond to RFQ’s.
-
--   Vendor onboarding, workflow-supported process where the vendor is invited to
-    register based on either an unsolicited signup or an employee’s request.
-
--   Vendor request, possibility for vendors to request to sell within an
-    additional procurement category.
-
--   Questionnaire, possibility for vendors to answer questionnaires.
-
--   Notifications sent to vendors when certain criteria are fulfilled.
+- The vendor can view and respond to RFQs, which includes the ability to receive and upload attachments. The collaborative interface allows the vendor to receive information about the awarded or lost bids.
+- In public sector configurations, RFQs can now be published and exported as entities via data management. This enables the data to be consumed and exposed in a customer-hosted public website.
+- A new workflow-supported process, Vendor onboarding, can facilitate the addition of new vendors to Dynamics 365 for Financial and Operations. The vendor is invited to register based on a signup request imported via entities or based on a request entered directly in Financial and Operations.
+- The registration process provisions the person representing the vendor with a user account that has restrictive security roles and then invites the user to register by completing a wizard-guided process. The guided registration process prompts for data ,such as contact information, business identification data, procurement categories, and questionnaire answers. The information entered by the vendor contact person is populated in a vendor request and after the information has been approved via a workflow process, a new vendor account is created.
 
 ## Warehouse - Fulfillment policy added to full or partial batch release of transfer orders
 
