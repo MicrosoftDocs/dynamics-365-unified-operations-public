@@ -217,7 +217,7 @@ The following table shows the POS views that currently support extensions. It al
     export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
     ```
 
-22. In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the selected customer search results.
+22. In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the results when searching for the selected customer.
 
     ```Typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
