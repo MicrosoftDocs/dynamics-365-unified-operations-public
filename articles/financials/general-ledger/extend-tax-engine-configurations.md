@@ -283,7 +283,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 2. Click **Add**, and then select **Tax measure**.
 3. All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
 
-	![](media/gte-utgst-list.png)
+	![Listed measures](media/gte-utgst-list.png)
 
 #### Task 6.3 Configure rate/percentage lookups
 
@@ -303,7 +303,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 2. Click **Edit** (the pencil symbol) next to **Condition**.
 3. Enter the same condition that SGST uses.
 
-	![](media/gte-sgst-condition.png)
+	![SGST condition](media/gte-sgst-condition.png)
 
 4. Save the tax document.
 
@@ -368,8 +368,8 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 1. Navigate to **Tax document** > **Header** > **Lines**, and then click the **Formulas** tab.
 2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST.
 
-	For example, change the **Tax amount Inclusive** formula as shown here.
-	![](media/gte-tax-amount-inclusive.png)
+	For example, change the **Tax amount inclusive** formula as shown here.
+	![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
 	
 3. Save the tax document.
 4. Close the designer.
@@ -386,66 +386,66 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 1.	Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2.	Create a new record and define Tax setup.
 
-![](media/gte-extension-new-tax-setup.png)
+![New tax setup](media/gte-extension-new-tax-setup.png)
 
 3.	Click **Configuration**.
 
-![](media/gte-extension-new-configuration.png)
+![Configuration](media/gte-extension-new-configuration.png)
 
 4.	Click on **Tax configuration** tab, switch to **Available configurations** and click **New** to create a tax configuration.
 	> [!NOTE]
 	> The configuration that is added to tax gets listed on the **Available configuration** tab
 	
-![](media/gte-extension-new-configuration2.png)
+![New configuration](media/gte-extension-new-configuration2.png)
 
 5.	Select the required configuration, Ex: **Tax (India GST)** and Click Save.
 
-![](media/gte-extension-select-configuration.png)
+![Select configuration](media/gte-extension-select-configuration.png)
 
 6.	Click **Synchronize**.
 
-![](media/gte-extension-synchronize-configuration.png)
+![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
 
 7. Click **Activate**.
 
-![](media/gte-extension-activate-configuration.png)
+![Activate configuration](media/gte-extension-activate-configuration.png)
 
-![](media/gte-extension-active-configuration.png)
+![Active configuration](media/gte-extension-active-configuration.png)
 
 8.	Click **Close**.
 9.	Click the **Companies** FastTab.
 10.	Create a new record.
 11.	Select INMF in the **Companies** field.
 
-![](media/gte-extension-deploy-to-company.png)
+![Select company](media/gte-extension-deploy-to-company.png)
 
 12.	Click **Save**.
 13.	Click **Activate** to activate the configuration for the company.
 
-![](media/gte-extension-activate-configuration-to-company.png)
+![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
 
-![](media/gte-extension-activate-configuration-to-company2.png)
+![Active configuration for the company](media/gte-extension-activate-configuration-to-company2.png)
 
 14.	Click **Setup** to set up data for the new version.
 
-![](media/gte-extension-tax-setup.png)
+![Set up data for new version](media/gte-extension-tax-setup.png)
 
 ## Scenario 2: Usage of Reference Model
 
-Per the Microsoft-provided configuration, the tax rate of BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use reference model to support the scenario below:
+Per the Microsoft-provided configuration, the tax rate of BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use a reference model to support the following scenario:
 
-Apply the different tax rate of BCD for import order of goods from difference countries/regions.
+- Apply the different tax rate of BCD for import order of goods from difference countries/regions.
 
 ### Task 1: Create extension configuration
 
-Complete the steps described in [Scenario 1: Task 1](#task-1-create-extension-configurations).
+Complete the steps in [Scenario 1: Task 1](#task-1-create-extension-configurations).
 
 ### Task 2: Add Reference model for Country/Region of Origin
 
 1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 2. Click the elipses button, then click **Reference model** to change the view to Reference model, so you can view all the available reference models.
 
-    ![](media/gte-reference-model.png)
+    ![GTE reference model](media/gte-reference-model.png)
 
 3.  Click **New** to add a new reference model.
     -	**Name:** Country of Origin
@@ -470,16 +470,16 @@ After the status is updated to **Complete**, the configuration is ready for depl
 ### Task 3: Do data mapping for the reference model
 1. In the designer of **Taxable Document (India Contoso)**, and then click **Map model to datasource**.
 2. Add a new model mapping for the reference model Country of Origin
-![](media/gte-extension-map-reference-model.png)
+![Add model mapping](media/gte-extension-map-reference-model.png)
 3. Open the designer of the model mapping
-![](media/gte-extension-designer-mapping-reference-model.png)
+![Model mapping designer](media/gte-extension-designer-mapping-reference-model.png)
 4. Add table records **LogisticsAddressCountryRegion** as a root **DATA SOURCES**
-![](media/gte-extension-add-table-records.png)
-5.	Bind the table
-![](media/gte-extension-bind-table.png)
-6.	Bind the field
-![](media/gte-extension-bind-field.png)
-7.	Click **Save** and close the page
+![Add table records](media/gte-extension-add-table-records.png)
+5.Bind the table
+![Bind table](media/gte-extension-bind-table.png)
+6.Bind the field
+![Bind field](media/gte-extension-bind-field.png)
+7.Click **Save** and close the page
 
 ### Task 4: Link the reference model to field in taxable document
 
