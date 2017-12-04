@@ -52,7 +52,7 @@ create DNS records for your AOS and for AD FS. For guidance, see [Create DNS
 zones, and add a
 record](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns).
 
-**Create an application entry in AD FS**
+## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Dynamics 365 for
 Finance and Operations, an application entry must be registered in AD FS under
 an AD FS application group. To create this application entry, run the following
@@ -80,7 +80,7 @@ account must have enough permissions to administer AD FS.
     in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames
     'openid'
 
-**Create and configure a user account**
+## Create and configure a user account
 
 To enable Microsoft Dynamics 365 to use your AD FS application, you must create
 a user account in Microsoft Dynamics 365 with the same user credentials as the
@@ -108,7 +108,7 @@ user of the warehousing app:
     ![Azure Active Drectory applications ](media/azure-active-directory.png)
 
 
-**Certificates on device**
+## Certificates on device
 
 You need to make sure that the device with the app installed have the right
 certificates to access the resources. If you are using self-signed certificates,
@@ -116,7 +116,7 @@ these will need to be installed on each device. For more information, see
 [Create and export a self-signed
 certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx).
 
-**Configure the application**
+## Configure the application
 
 You must configure the warehousing app on the device to connect to the Microsoft
 Dynamics 365 server through the AD FS application.
