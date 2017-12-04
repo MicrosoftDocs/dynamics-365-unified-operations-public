@@ -91,7 +91,7 @@ user of the warehousing app:
     3.  Assign the warehouse mobile device user role, as shown in the example
         screenshot.
 
-![Machine generated alternative text: USERS WMApp . User details User ID WMAPP User name WMApp Provider WVIApp Email WMAPP\@contoso.net Telemetry ID {00000000-0000-0000-0000-00... Company Assign organizations Person Enabled https://sts.w•ndows-ppe.net/ User's roles + Assign roles Roles System user Remove role Warehouse mobile device user ](media/8affa74cc79f27b5d766745bca575afb.png)
+![Create and configure a user](./media/wmapp-users.jpg)](./media/wmapp-users.jpg)
 
 1.  Associate your AD FS application with the warehousing app user.
 
