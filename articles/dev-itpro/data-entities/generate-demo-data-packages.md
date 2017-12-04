@@ -93,11 +93,7 @@ Package names will include a release identifier. For example, for Finance and Op
 Before you load the data packages, you must manually follow these steps.
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
-2. Start the workflow jobs. Select **System administration** &gt; **Workflow infrastructure configuration**, and then select **OK**.
-3. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
-4. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
-5. Before you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
-6. Add Print management settings for each module.
+2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
 
 ## Load the packages
 
@@ -138,6 +134,14 @@ The following packages can be loaded. When you import any package except the Sys
 ### After you load the packages
 
 In some cases, there might be data that you want to add because of a special scenario or a missing entity. Add that data after you've finished loading the data packages. You might also want to manually post additional transactions or add your own data packages to enhance the demo experience.
+
+After you load the data packages, you must also manually follow these steps.
+
+1. Start the workflow jobs. Select **System administration** &gt; **Workflow infrastructure configuration**, and then select **OK**.
+2. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
+3. Before you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
+4. Add Print management settings for each module.
+
 
 ### Scenario scripts
 
