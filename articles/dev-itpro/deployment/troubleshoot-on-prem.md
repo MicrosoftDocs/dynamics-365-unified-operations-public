@@ -46,7 +46,7 @@ To find out what machine is the primar instance for Stateful Services, like a Lo
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
 ### Timeout error received when creating a Service Fabric cluster 
-Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments#setupsfcluster.md) and note any errors. 
+Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setup-sf-cluster) and note any errors. 
 Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
 Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
 
@@ -118,7 +118,7 @@ To resolve these errors, complete the followign steps.
           <Thumbprint></Thumbprint> 
           <ProtectTo></ProtectTo> 
         </Certificate> 
-3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments#configurelcs.md) section were completed using the same certificate that is specified in local agent configuration in LCS. 
+3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configure-lcs) section were completed using the same certificate that is specified in local agent configuration in LCS. 
 4. Uninstall the local agent.  
 5. Specify the correct certificate in the local agent configuration and download the configuration file again. 
 6. Install the local agent again with the new configuration file. 
@@ -419,43 +419,40 @@ Also review on all AOS machines
 - Event Viewer > Custom Views > Administrative Events 
 - Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-DatabaseSynchronize 
 
-### Invalid algorithm specified / Cryptography  
-‘Invalid algorithm specified’ error. Need to use Provider of Microsoft Enhanced RSA and AES Cryptographic Provider. Review requirements of certificates  
-Also verify Credentials.json file structure is correct 
+### Error: "Invalid algorithm specified / Cryptography"  
+If you receive this error, you need to be using the Provider of Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, review the certificates requirements. Additionally, verify that the structure of the Credentials.json file is correct. 
 
-### Partition is below target replica or instance count 
-Not a root error. Means status of each node is not ready. For AXSF/AOS status could still be inBuild 
-Proceed to go to Event Viewer to get root error as well as c:\ProgramData\SF… 
+### Error: "Partition is below target replica or instance count" 
+This is not a root error. This error means that the status of each node is not ready. For AXSF/AOS, the status could still be inBuild. 
+Navigate to the Event Viewer to get root error. You can also find it here, c:\ProgramData\SF… 
 
-### "Unable to find certificate" error when running Test-D365FOConfiguration.ps1 
-Check to see if combining certs/thumbprints for multiple purposes. Example if combining client and SessionAuthentication will receive this error. Advised not to combine certificates. See certificate requirements 
-Check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure) 
+### Error, "Unable to find certificate" when running Test-D365FOConfiguration.ps1 
+If you receive this error, check to see if certs/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure). 
 
-### The client and server cannot communicate, because they do not possess a common algorithm 
-Verify star certificate requirements, example provider being used 
+### The client and server can't communicate because they do not possess a common algorithm 
+Verify the star certificate requirements, example provider being used 
  
-### How to find gMSA / group managed service accounts 
-Way to list all groups and/or hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
+### Find a list of group managed service accounts (gMSA)
+To find a list of all groups and hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
 PrincipalsAllowedToRetrieveManagedPassword 
 
 ### AddCertToServicePrincipal script failing on Import-Module 
 AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.  
 
-Run the following command in PowerShell 
+To resolve this issue, run the following command in PowerShell 
         
         Uninstall-Module -Name AzureRM  
         Install-Module AzureRM 
-Close the PowerShell window and try again.
+
+Then, close the PowerShell window and try again.
 
 ### ReportingServicesSetup.exe Error
-
 ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes 
 Application: ReportingServicesBootstrapper.exe 
 Framework Version: v4.0.30319 
 Description: The process was terminated due to an unhandled exception. 
 
-Strong name validation needs to be disabled in the Reporting server 
-Run the config-PreReq script in Reporting server machine to disable strong name validation. 
+If you receive this error, the strong name validation is enabled in the Reporting server and should not be. To resolve this, run the config-PreReq script in Reporting server machine. 
 
 ### The requested operation requires elevation 
 AOS users are not in the local administrator group and the UAC has not been disabled correctly. To resolve the issue, complete the following steps. 
