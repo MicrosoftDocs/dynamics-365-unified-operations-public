@@ -111,8 +111,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Customer attributes](customer-attributes.md)
 - [Retail Typescript and C# proxy](typescript-proxy-retail-pos.md)
 - [Run Retail POS samples](pos-run-samples.md)
-
-
+- [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)
