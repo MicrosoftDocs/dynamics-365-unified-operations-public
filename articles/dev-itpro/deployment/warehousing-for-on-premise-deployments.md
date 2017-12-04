@@ -35,9 +35,9 @@ Operations - Warehousing for on-premises deployments.
 
 ## Prerequisites
 The warehousing app is available on Android and Windows operating systems. To
-use the app for on-premise deployments, it must as a minimum be version 1.1.1.0.
+use the app for on-premises deployments, at a minimum, it must be version 1.1.1.0.
 You must also have one of the following supported versions of Microsoft Dynamics
-365. Use the information in the table below to evaluate if your hardware and
+365 for Finance and Operations, Enterprise edition. Use the information in the following table to evaluate if your hardware and
 software environment supports the configuration.
 
 | Platform               | Version                                                                            |
@@ -47,13 +47,13 @@ software environment supports the configuration.
 | App version            | 1.1.1.0 and above                                                                  |
 | Microsoft Dynamics 365 | Microsoft Dynamics 365 for Finance and Operations platform update 11 (on-premises) |
 
-To be able to reach your on-premise resources with the app, you will need to
-create DNS records for your AOS and for AD FS. For guidance, see [Create DNS
+To be able to reach your on-premises resources with the app, you will need to
+create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS
 zones, and add a
 record](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns).
 
 ## Create an application entry in AD FS
-For a successful authentication exchange between AD FS and Dynamics 365 for
+For a successful authentication exchange between AD FS and 
 Finance and Operations, an application entry must be registered in AD FS under
 an AD FS application group. To create this application entry, run the following
 Windows PowerShell commands on a machine where the AD FS is installed. The user
@@ -68,13 +68,13 @@ account must have enough permissions to administer AD FS.
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
 >   (where
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
->   is the URL to access Microsoft Dynamics 365)
+>   is the URL to access Microsoft Dynamics 365).
 
 >   The \<Admin user\> can be any user with admin access to the AD FS machine.
 
-2.  Save the values received.
+2.  Save the values that you received.
 
-3.  Run the following command to grant permission to the application  
+3.  Run the following command to grant permission to the application.  
     
         Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
 ## Create and configure a user account
@@ -97,9 +97,11 @@ user of the warehousing app:
 
     a.  In Microsoft Dynamics 365, click **System administration** \> **Setup**
         \> **Azure Active Directory applications**.
+        
     b.  Create a new line.
+    
     c.  Enter the client ID that you obtained when you created an application
-        entry in AD FS (step 2 in Create an application entry in AD FS), give it
+        entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter
         a name, and select the warehousing app user.
 
     ![Azure Active Drectory applications ](media/azure-active-directory.png)
@@ -107,7 +109,7 @@ user of the warehousing app:
 
 ## Certificates on device
 
-You need to make sure that the device with the app installed have the right
+Make sure that the devices with the app installed have the right
 certificates to access the resources. If you are using self-signed certificates,
 these will need to be installed on each device. For more information, see
 [Create and export a self-signed
@@ -121,9 +123,9 @@ Dynamics 365 server through the AD FS application.
 1.  In the app, open **Connection settings**.
 2.  Enter the following information:
 
-    a.  A**ctive Directory Client ID** - The client ID that you obtained when
-        you created an application entry in AD FS (step 2 in Create an
-        application entry in AD FS).
+    a.  **Active Directory Client ID** - The client ID that you obtained when
+        you created an application entry in AD FS (step 2 in "Create an
+        application entry in AD FS").
 
     b.  **Active Directory Client Secret** - The client secret obtained when you
         created an application entry in AD FS.
