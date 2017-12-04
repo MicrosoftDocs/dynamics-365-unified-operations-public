@@ -61,9 +61,8 @@ account must have enough permissions to administer AD FS.
 
 1.  Enter the following command in the Windows PowerShell console to create the
     application entry  
-    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing'
-    -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret
-    -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>'  
+    
+        Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
 
 >   The \<Resource URL\> can, for example, be
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
@@ -76,10 +75,8 @@ account must have enough permissions to administer AD FS.
 2.  Save the values received.
 
 3.  Run the following command to grant permission to the application  
-    Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received
-    in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames
-    'openid'
-
+    
+        Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
 ## Create and configure a user account
 
 To enable Microsoft Dynamics 365 to use your AD FS application, you must create
