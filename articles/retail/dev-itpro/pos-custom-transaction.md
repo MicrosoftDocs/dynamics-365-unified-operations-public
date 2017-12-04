@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS custom columns and controls on transaction pages
-description: This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer.
+description: This topic explains how to add a new POS custom control on the POS transaction page by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2017
@@ -29,62 +29,70 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
+# POS custom columns and controls on transaction pages
 
-# POS custom columns and controls on transaction pages 
- 
-This topic explains how to add new POS custom control in the POS transaction page using the screen layout designer. You can add more information to the Retail POS transaction page by using custom controls. A custom control can be added to the transaction page by using the screen layout designer, by dragging and dropping the custom control and setting the location, height and width in the designer. Business logic for the custom control can be implemented in your own extensions using the POS extension framework.  
+You can add more information to the Retail POS transaction page by using custom controls. You can add a custom control to the POS transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This topic explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
-This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+> [!NOTE]
+> This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Add a new custom control
-The custom control in the POS transaction page will show the selected line item details, item id, and description.
 
-1.  Login to Dynamics 365 for Retail.
-2.  Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
-3.  Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
-4.  Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
-5.  If prompted click **Open** and follow the instruction to install the designer tool.
-6.  When prompted for your AAD credentials, provide the details to launch the designer.
-7.  In the designer drag and drop the custom control from the left bar to the transaction page and adjust or resize or reposition the custom control accordingly.
-8.  Right-click on the custom control in the transaction page and click **Customize**.
-9.  In the custom control window set these properties:
-    - **Control Name**: lineDetails
-    - **Package Name**: Pos_Extensibility_Samples
-    - **Publisher Name**: Contoso
+1. Sign in to Retail.
+2. Select **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
+3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
+4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
+5. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
+6. When you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials, enter the information to start the designer.
+7. In the designer, drag the custom control from the left pane to the transaction page, and then adjust, resize, or reposition the custom control as you require.
+8. On the transaction page, right-click the custom control, and then select **Customize**.
+9. In the custom control dialog box, set these properties:
 
-    **Note:** These names should match the names in the extension manifest.
+    - **Control Name:** lineDetails
+    - **Package Name:** Pos\_Extensibility\_Samples
+    - **Publisher Name:** Contoso
 
-10.  Click the **X** button in the designer to close the designer.
-11.  When prompted to **Save changes**, click **Yes**. If you click **No** the changes will not be saved.
-12.  Navigate to **Retail** > **Retail IT** > **Distribution schedule**.
-13.  Select the **Registers (1090)** job and click **Run now**.
+    > [!NOTE]
+    > These names should match the names in the extension manifest.
+
+10. Close the designer by selecting the **Close** button (**X**).
+11. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes won't be saved.
+12. Select **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+13. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Add business logic to the custom control
 
-1.  Open Visual Studio 2015 in administrator mode.
-1.  Open **ModernPOS** solution from **…\\RetailSDK\\POS**.
-1.  Under the **POS.Extensions** project create a new folder named **CustomControlExtensions**.
-1.  Under **CustomControlExtensions**, create a new folder named **Cart**.
-1.  In the **Cart** folder, add a new Typescript) and name it **CartViewController.ts**.
-1.  Add the following **import** statement to import the relevant entities and context.
+1. Start Microsoft Visual Studio 2015 as an administrator.
+2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3. In the **POS.Extensions** project, create a folder that is named **CustomControlExtensions**.
+4. In the **CustomControlExtensions** folder, create a folder that is named **Cart**.
+5. In the **Cart** folder, create a Typescript file that is named **CartViewController.ts**.
+6. In the **CartViewController.ts** file, add the following **import** statement to import the relevant entities and context.
+
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
     import * as CartView from "PosApi/Extend/Views/CartView";
     ```
-1. Create a new class named **CartViewController**f and extend it from **CartExtensionViewControllerBase**. The  **CartExtensionViewControllerBase** class contains the cart tender lines, the cart line selected handler, and the cart line cleared handler. With these, you can show the selected line in our custom control.
-     ```typescript
-     export default class CartViewController extends CartView.CartExtensionViewControllerBase {
-    
-     }
-     ```
-1. Inside the class add two private variables to get the selected cart line and tender lines.
+
+7. Create a class that is named **CartViewController**, and extend it from **CartExtensionViewControllerBase**. The **CartExtensionViewControllerBase** class contains the cart and tender lines, the cart line selected handler, and the cart line cleared handler. These elements will be used to show the selected line in the custom control.
+
+    ```typescript
+    export default class CartViewController extends CartView.CartExtensionViewControllerBase {
+
+    }
+    ```
+
+8. In the **CartViewController** class, add two private variables to get the selected cart lines and tender lines.
+
     ```typescript
     private _selectedCartLines: ProxyEntities.CartLine[];
-    
+
     private _selectedTenderLines: ProxyEntities.TenderLine[];
     ```
-1. Create a class constructor method to set the cart and tender selection information.
+
+9. Create a class **constructor** method to set the cart and tender selection information.
+
     ```typescript
     constructor(context: IExtensionCartViewControllerContext) {
         super(context);
@@ -105,12 +113,14 @@ The custom control in the POS transaction page will show the selected line item 
         };
     }
     ```
-    The overall class should look like below:
+
+    The overall class should look like this.
+
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
     import * as CartView from "PosApi/Extend/Views/CartView";
-    
+
     export default class CartViewController extends CartView.CartExtensionViewControllerBase {
         private _selectedCartLines: ProxyEntities.CartLine[];
         private _selectedTenderLines: ProxyEntities.TenderLine[];
@@ -141,8 +151,8 @@ The custom control in the POS transaction page will show the selected line item 
     }
     ```
 
-1. Inside the **Cart** folder, create a new html file and name it **LineDetailsCustomControl.html**.
-1. In the html file, add two text fields to display the selected line item and description. Delete the default code and add the following code:
+10. In the **Cart** folder, create an HTML file that is named **LineDetailsCustomControl.html**.
+11. In the **LineDetailsCustomControl.html** file, add two text fields to show the ID and description for the selected line item. Delete the default code, and add the following code.
 
     ```typescript
     <!DOCTYPE html>
@@ -152,8 +162,8 @@ The custom control in the POS transaction page will show the selected line item 
                 <title></title>
             </head>
             <body>
-                <!-- Note: The element id is different than the id generated by the POS extensibility framework. This 'template' id is not used by the POS extensibility framework. -->
-                <script id="Microsot_Pos_Extensibility_Samples_LineDetails" type="text/html">
+                <!-- Note: The element ID differs from the ID generated by the POS extensibility framework. This 'template' ID is not used by the POS extensibility framework. -->
+                <script id="Microsoft_Pos_Extensibility_Samples_LineDetails" type="text/html">
                     <!-- ko ifnot: isCartLineSelected -->
                     <h4>No cart lines selected</h4>
                     <!-- /ko -->
@@ -166,9 +176,10 @@ The custom control in the POS transaction page will show the selected line item 
         </html>
         ```
 
-1. Inside the **Cart** folder, create a new Typescript file and name it **LineDetailsCustomControl.ts**.
-1. In the Typescript file, add the logic to bind the line details information.
-1. Import the POS entities and Type extensions to use the reference type in the constructor and other events.
+12. In the **Cart** folder, create a Typescript file that is named **LineDetailsCustomControl.ts**.
+13. In the **LineDetailsCustomControl.ts** file, add the logic to bind the line details information.
+14. Import the POS entities and type extensions to use the reference type in the constructor and other events.
+
     ```typescript
     import {
         ObjectExtensions,
@@ -177,20 +188,26 @@ The custom control in the POS transaction page will show the selected line item 
     } from "PosApi/TypeExtensions";
     import { ProxyEntities } from "PosApi/Entities";
     ```
-1. Create a new class and extend it from **CartViewCustomControlBase**.
+
+15. Create a class, and extend it from **CartViewCustomControlBase**.
+
     ```typescript
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {}
     ```
-1. Declare the following private variables to set the cart item id and description.
+
+16. Declare the following private variables to set the cart item ID and description.
+
     ```typescript
-    private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
+    private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_LineDetails";
     public readonly cartLineItemId: Computed&lt;string&gt;;
     public readonly cartLineDescription: Computed&lt;string&gt;;
     public readonly isCartLineSelected: Computed&lt;boolean&gt;;
     private readonly _cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
     private _state: ICartViewCustomControlState;
     ```
-1. Create the constructor method to initialize and get the selected handler.
+
+17. Create the **constructor** method to initialize and get the selected handler.
+
     ```typescript
     constructor(id: string, context: ICartViewCustomControlContext) {
         super(id, context);
@@ -223,7 +240,9 @@ The custom control in the POS transaction page will show the selected line item 
         };
     }
     ```
-1. Add the **onReady** method to bind the control to the specified html element.
+
+18. Add the **onReady** method to bind the control to the specified HTML element.
+
     ```typescript
     public onReady(element: HTMLElement): void {
         ko.applyBindingsToNode(element, {
@@ -234,13 +253,17 @@ The custom control in the POS transaction page will show the selected line item 
         });
     }
     ```
-1. Add the **init** method to set the state.
+
+19. Add the **init** method to set the state.
+
     ```typescript
     public init(state: ICartViewCustomControlState): void {
         this._state = state;
     }
     ```
-    The overall class should look like below:
+
+    The overall class should look like this.
+
     ```typescript
     import {
         CartViewCustomControlBase,
@@ -254,11 +277,11 @@ The custom control in the POS transaction page will show the selected line item 
         StringExtensions,
         ArrayExtensions
     } from "PosApi/TypeExtensions";
-    
+
     import { ProxyEntities } from "PosApi/Entities";
 
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {
-        private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_LineDetails";
+        private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_LineDetails";
         public readonly cartLineItemId: Computed&lt;string&gt;;
         public readonly cartLineDescription: Computed&lt;string&gt;;
         public readonly isCartLineSelected: Computed&lt;boolean&gt;;
@@ -319,8 +342,10 @@ The custom control in the POS transaction page will show the selected line item 
         }
     }
     ```
-1. Create a new JSON file and under the **CustomControlExtensions** folder and name it **manifest.json**.
-1. In the **manifest.json** file, add the following code:
+
+20. In the **CustomControlExtensions** folder, create a JSON file that is named **manifest.json**.
+21. In the **manifest.json** file, add the following code.
+
     ```typescript
     {
         "$schema": "../manifestSchema.json",
@@ -340,15 +365,17 @@ The custom control in the POS transaction page will show the selected line item 
                                 "htmlPath": "Cart/LineDetailsCustomControl.html",
                                 "modulePath": "Cart/LineDetailsCustomControl"
                             }
-                            ]  
-                        }  
-                    }  
-                }  
-            }  
+                            ]
+                        }
+                    }
+                }
+            }
         } 
     }
     ```
-1. Open the **extensions.json** file under the **POS.Extensions** project and update it with the following **CustomControlExtensions** samples, so that POS during runtime will include this extension.
+
+22. In the **POS.Extensions** project, open the **extensions.json** file, and update it with the following **CustomControlExtensions** samples, so that the POS includes this extension at runtime.
+
     ```typescript
     {
         "extensionPackages": [
@@ -361,7 +388,9 @@ The custom control in the POS transaction page will show the selected line item 
         ]
     }
     ```
-1. In **tsconfig.json**, comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+
+23. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.
+
     ```typescript
     "exclude": [
         "SampleExtensions"
@@ -369,11 +398,13 @@ The custom control in the POS transaction page will show the selected line item 
         //"CustomControlExtensions"
     ],
     ```
-1. Compile and rebuild the project.
+
+24. Compile and rebuild the project.
 
 ## Validate the customization
 
-1.  Login to MPOS using **000160** as the operator id and **123** as the password.
-2.  Click the current transaction button on the welcome screen.
-3.  Add any item to the transaction and select the line item added.
-4.  The custom should display the selected line item id and description.
+1. Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.
+2. On the **Welcome** screen, select the current transaction button.
+3. Add any item to the transaction, and then select the line item that you added.
+
+    The custom control should show the ID and description for the selected line item.
