@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS view extension
-description: This topic explains how you can extend existing POS views such as the Customer Add edit screen.
+description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2017
@@ -29,51 +29,58 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# How to extend existing POS views to add custom columns and app bar buttons
+# Extend existing POS views to add custom columns and app bar buttons
 
-This topic explains how you can extend existing POS views such as the Customer Add/Edit screen. The Transaction screen and Welcome POS views can be extended using the screen layout designer. All the other views are extended using the Retail SDK. In this topic we will focus on how to extend existing POS views using the Retail SDK.
+This topic explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This topic focuses on the extension of existing POS views via the Retail SDK.
 
-This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+> [!NOTE]
+> This topic applies to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
-The extension points and patterns supported by POS views are:
+POS views support the following extension points and patterns:
 
-- Custom app bar buttons: Add custom buttons to the app bar on selected pages
-- Custom column sets: Replace the grid columns with custom columns on selected pages
-- Custom controls: Add new controls to selected pages
+- **Custom app bar buttons** – Add custom buttons to the app bar on selected pages.
+- **Custom column sets** – Replace the grid columns with custom columns on selected pages.
+- **Custom controls** – Add new controls to selected pages.
 
-## POS views supported currently for extensions
+## POS views that currently support extensions
 
-We are adding support for more extension points in others views in the upcoming releases and hotfix.
+The following table shows the POS views that currently support extensions. It also indicates the types of extension points that each POS view supports.
 
-| POS Views                      | Custom control | Custom columns | Custom app bar buttons |
-|---------------------------------|----------------|----------------|------------------------|
-| Cart view (Screen layout based) | Yes            | Yes            | No                     |
-| CustomerAddEditView             | Yes            |                | Yes                    |
-| CustomerDetailsView             | Yes            |                | Yes                    |
-| SearchView                      |                | Yes            | Yes                    |
-| InventoryLookupView             |                | Yes            | Yes                    |
-| ShowJournalView                 |                | Yes            | Yes                    |
-| SimpleProductDetailsView        |                | Yes            | Yes                    |
-| AddressAddEditView              | Yes            |                |                        |
-| PaymentView                     |                |                | Yes                    |
-| PriceCheckView                  | Yes            |                |                        |
-| SearchOrdersView                |                | Yes            |                        |
+> [!NOTE]
+> The upcoming releases and hotfix will add support for more extension points in other views.
+
+| POS view                        | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
+| CustomerAddEditView             | Yes                           |                              | Yes                                  |
+| CustomerDetailsView             | Yes                           |                              | Yes                                  |
+| SearchView                      |                               | Yes                          | Yes                                  |
+| InventoryLookupView             |                               | Yes                          | Yes                                  |
+| ShowJournalView                 |                               | Yes                          | Yes                                  |
+| SimpleProductDetailsView        |                               | Yes                          | Yes                                  |
+| AddressAddEditView              | Yes                           |                              |                                      |
+| PaymentView                     |                               |                              | Yes                                  |
+| PriceCheckView                  | Yes                           |                              |                                      |
+| SearchOrdersView                |                               | Yes                          |                                      |
 
 ## Add a custom column and an app bar button
 
-1.  Open Visual Studio 2015 in administrator mode.
-2.  Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
-3.  Under the **POS.Extensions** project create a new folder called **SearchExtension**.
-4.  Under **SearchExtension**, create new folder called **ViewExtensions**.
-5.  Under **ViewExtensions**, create new folder called **Search**.
-6.  In the **Search** folder, add a new Typescript file and name it **CustomCustomerSearchColumns.ts**.
-7.  Add the following import statements to import the relevant entities and context.
+1. Start Microsoft Visual Studio 2015 as an administrator.
+2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3. In the **POS.Extensions** project, create a folder that is named **SearchExtension**.
+4. In the **SearchExtension** folder, create a folder that is named **ViewExtensions**.
+5. In the **ViewExtensions** folder, create a folder that is named **Search**.
+6. In the **Search** folder, create a Typescript file that is named **CustomCustomerSearchColumns.ts**.
+7. In the **CustomCustomerSearchColumns.ts** file, add the following **import** statements to import the relevant entities and context.
+
     ```Typescript
     import { ICustomerSearchColumn } from "PosApi/Extend/Views/SearchView";
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
     import { ProxyEntities } from "PosApi/Entities";
     ```
-8.  Add the existing column plus the custom column to Typescript file.
+
+8. Add the existing column and the custom column to the file.
+
     ```Typescript
     export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
         return [
@@ -111,9 +118,13 @@ We are adding support for more extension points in others views in the upcoming 
         ];
     };
     ```
-9. To add the resource file for the column name **localization**, create a new folder named **Resources** under **SearchExtension**.
-10. Inside the **Resources** folder add a new folder named **Strings**. Inside the **Strings** folder add a folder named **en-US**.
-11. In the **en-us** folder, create a new file named **resources.resjson** file. Add the following code:
+
+9. You will now add the resource file for localization of the column name. In the **SearchExtension** folder, create a folder that is named **Resources**.
+10. In the **Resources** folder, create a folder that is named **Strings**.
+11. In the **Strings** folder, create a folder that is named **en-US**.
+12. In the **en-us** folder, create a file that is named **resources.resjson**.
+13. In the **resources.resjson** file, add the following code.
+
     ```Typescript
     {
         //======================== Sample View extensions strings. ========================
@@ -134,19 +145,25 @@ We are adding support for more extension points in others views in the upcoming 
         "_string_7.comment" : "Customer search column name."
     }
     ```
-12. In the **SearchExtension** folder add a new folder named **DialogSample**.
-13. In the **DialogSample** folder, add a new Typescript file named **MessageDialog.ts**.
-14. Add the following import statements to import the relevant entities and context.
+
+14. In the **SearchExtension** folder, create a folder that is named **DialogSample**.
+15. In the **DialogSample** folder, create a Typescript file that is named **MessageDialog.ts**.
+16. In the **MessageDialog.ts** file, add the following **import** statements to import the relevant entities and context.
+
     ```Typescript
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
     import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
     import { ClientEntities } from "PosApi/Entities";
     ```
-15. Create a new class called **MessageDialog**.
+
+17. Create a class that is named **MessageDialog**.
+
     ```Typescript
     export default class MessageDialog {}
     ```
-16. Inside the class, add the following **show** method.
+
+18. In the **MessageDialog** class, add the following **show** method.
+
     ```Typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
         let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
@@ -182,8 +199,10 @@ We are adding support for more extension points in others views in the upcoming 
         return promise;
     }
     ```
-17. The next set of steps add a custom app bar button in search view to show a dialog with selected customer info. In the **ViewExtensions** folder, add a new Typescript file and name it **ViewCustomerSummaryCommand.ts**.
-18. Add the following import statements to import the relevant entities and context.
+
+19. You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer. In the **ViewExtensions** folder, create a Typescript file that is named **ViewCustomerSummaryCommand.ts**.
+20. In the **ViewCustomerSummaryCommand.ts** file, add the following **import** statements to import the relevant entities and context.
+
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
@@ -191,15 +210,21 @@ We are adding support for more extension points in others views in the upcoming 
     import * as SearchView from "PosApi/Extend/Views/SearchView";
     import MessageDialog from "../DialogSample/MessageDialog";
     ```
-19. Create a new class named **ViewCustomerSummaryCommand** and extend it from **CustomerSearchExtensionCommandBase**.
+
+21. Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.
+
     ```Typescript
     export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
     ```
-20. Inside the class declare a private variable to capture the selected customer search results.
+
+22. In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the selected customer search results.
+
     ```Typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
     ```
-21. Add the class constructor method to initialize and clear the search handler.
+
+23. Add the class **constructor** method to initialize and clear the search handler.
+
     ```Typescript
     constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
         super(context);
@@ -217,13 +242,17 @@ We are adding support for more extension points in others views in the upcoming 
         };
     }
     ```
-22. Add the **init** method to initialize the visible property:
+
+24. Add the **init** method to initialize the **visible** property.
+
     ```Typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
         this.isVisible = true;
     }
     ```
-23. Add the **execute** method to handle the app button click handler. The **execute** method reads the selected customer data from the handler and displays it in a simple dialog.
+
+25. Add the **execute** method to handle the app button click handler. The **execute** method reads the data for the selected customer from the handler and shows it in a simple dialog box.
+
     ```Typescript
     protected execute(): void {
         let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
@@ -236,7 +265,8 @@ We are adding support for more extension points in others views in the upcoming 
         } 
     }
     ```
-    The whole code sample is:
+
+    The whole code sample should look like this.
 
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
@@ -258,12 +288,12 @@ We are adding support for more extension points in others views in the upcoming 
             this.label = context.resources.getString("string_1");
             this.extraClass = "iconLightningBolt";
             this._customerSearchResults = [];
-            
+
             this.searchResultsSelectedHandler = (data: SearchView.CustomerSearchSearchResultSelectedData): void => {
                 this._customerSearchResults = data.customers;
                 this.canExecute = true;
             };
-            
+
             this.searchResultSelectionClearedHandler = (): void => {
                 this._customerSearchResults = [];
                 this.canExecute = false;
@@ -293,8 +323,10 @@ We are adding support for more extension points in others views in the upcoming 
         }
     }
     ```
-24. Create a new JSON file and under the **SearchExtension** folder and name it **manifest.json**.
-25. In the **manifest.json** file, add the following code:
+
+26. In the **SearchExtension** folder, create a JSON file that is named **manifest.json**.
+27. In the **manifest.json** file, add the following code.
+
     ```Typescript
     {
         "$schema": "../manifestSchema.json",
@@ -315,13 +347,15 @@ We are adding support for more extension points in others views in the upcoming 
                     "SearchView": {
                         "customerAppBarCommands": [ { "modulePath": "ViewExtensions/Search/ViewCustomerSummaryCommand" } ],
                         "customerListConfiguration": { "modulePath": "ViewExtensions/Search/CustomCustomerSearchColumns" }
-                    }  
-                }   
-            }   
-        }  
+                    }
+                }
+            }
+        }
     }
     ```
-26. Open the **extensions.json** file under **POS.Extensions** project and update it with **SearchExtension** samples, so that POS during runtime will include this extension.
+
+28. In the **POS.Extensions** project, open the **extensions.json** file, and update it with **SearchExtension** samples, so that the POS includes this extension at runtime.
+
     ```Typescript
     {
         "extensionPackages": [
@@ -334,7 +368,9 @@ We are adding support for more extension points in others views in the upcoming 
         ]
     }
     ```
-27. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+
+29. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.
+
     ```Typescript
     "exclude": [
     "SampleExtensions"
@@ -342,15 +378,16 @@ We are adding support for more extension points in others views in the upcoming 
     //"SearchExtension"
     ],
     ```
-28. Compile and rebuild the project.
 
- ## Validate the customization
-To validate the customization:
-1. Login to MPOS using **000160** as the operator id and **123** as the password.
-1. Search for customer **2001** using the search bar on the top.
-1. You should see the custom columns that you added.
-1. Select a customer and then click the new app bar button. It should open up a dialog with the selected customer's details.
+30. Compile and rebuild the project.
 
+## Validate the customization
 
+Follow these steps to validate the customization.
 
+1. Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.
+2. Search for customer **2001** by using the search bar on the top.
 
+    You should see the custom columns that you added.
+
+3. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
