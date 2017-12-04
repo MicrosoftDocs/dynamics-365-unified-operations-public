@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Date effectivity
+description: This topic provides information about .
+author: MarkusFogelberg
+manager: AnnBe
+ms.date: 11/08/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 24861
+ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mafoge
+ms.search.validFrom: 2017-12-04
+ms.dyn365.ops.version: AX 7.3.0
+
+---
 **Configure Microsoft Dynamics 365 for Finance and Operations - Warehousing for
 on-premise deployments**
 
