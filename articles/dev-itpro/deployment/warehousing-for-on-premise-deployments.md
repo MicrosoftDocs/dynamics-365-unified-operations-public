@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Date effectivity
-description: This topic provides information about .
+title: Warehousing for on premise deployments
+description: This topic describes how to configure Microsoft Dynamics 365 for Finance and
+Operations - Warehousing for on-premise deployments.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/08/2017
@@ -31,25 +32,15 @@ ms.dyn365.ops.version: AX 7.3.0
 ---
 **Configure Microsoft Dynamics 365 for Finance and Operations - Warehousing for
 on-premise deployments**
-
- 
-
 This topic describes how to configure Microsoft Dynamics 365 for Finance and
 Operations - Warehousing for on-premise deployments.
 
- 
-
 **Prerequisites**
-
- 
-
 The warehousing app is available on Android and Windows operating systems. To
 use the app for on-premise deployments, it must as a minimum be version 1.1.1.0.
 You must also have one of the following supported versions of Microsoft Dynamics
 365. Use the information in the table below to evaluate if your hardware and
 software environment supports the configuration.
-
- 
 
 | Platform               | Version                                                                            |
 |------------------------|------------------------------------------------------------------------------------|
@@ -58,26 +49,17 @@ software environment supports the configuration.
 | App version            | 1.1.1.0 and above                                                                  |
 | Microsoft Dynamics 365 | Microsoft Dynamics 365 for Finance and Operations platform update 11 (on-premises) |
 
- 
-
 To be able to reach your on-premise resources with the app, you will need to
 create DNS records for your AOS and for AD FS. For guidance, see [Create DNS
 zones, and add a
 record](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns).
 
- 
-
 **Create an application entry in AD FS**
-
- 
-
 For a successful authentication exchange between AD FS and Dynamics 365 for
 Finance and Operations, an application entry must be registered in AD FS under
 an AD FS application group. To create this application entry, run the following
 Windows PowerShell commands on a machine where the AD FS is installed. The user
 account must have enough permissions to administer AD FS.
-
- 
 
 1.  Enter the following command in the Windows PowerShell console to create the
     application entry  
@@ -115,19 +97,19 @@ user of the warehousing app:
 1.  Create a user in Microsoft Dynamics 365 and assign the warehousing mobile
     device user role to the user.
 
-    1.  Go to **System administration** \> **Common** \> **Users**.
-    2.  Create a new user.
-    3.  Assign the warehouse mobile device user role, as shown in the example
+    a.  Go to **System administration** \> **Common** \> **Users**.
+    b.  Create a new user.
+    c.  Assign the warehouse mobile device user role, as shown in the example
         screenshot.
 
     ![Create and configure a user](media/wmapp-users.png)
 
-1.  Associate your AD FS application with the warehousing app user.
+2.  Associate your AD FS application with the warehousing app user.
 
-    1.  In Microsoft Dynamics 365, click **System administration** \> **Setup**
+    a.  In Microsoft Dynamics 365, click **System administration** \> **Setup**
         \> **Azure Active Directory applications**.
-    2.  Create a new line.
-    3.  Enter the client ID that you obtained when you created an application
+    b.  Create a new line.
+    c.  Enter the client ID that you obtained when you created an application
         entry in AD FS (step 2 in Create an application entry in AD FS), give it
         a name, and select the warehousing app user.
 
@@ -151,21 +133,20 @@ Dynamics 365 server through the AD FS application.
  
 
 1.  In the app, open **Connection settings**.
-
 2.  Enter the following information:
 
-    1.  A**ctive Directory Client ID** - The client ID that you obtained when
+    a.  A**ctive Directory Client ID** - The client ID that you obtained when
         you created an application entry in AD FS (step 2 in Create an
         application entry in AD FS).
 
-    2.  **Active Directory Client Secret** - The client secret obtained when you
+    b.  **Active Directory Client Secret** - The client secret obtained when you
         created an application entry in AD FS.
 
-    3.  **Active Directory Resource** - The DNS URL for the Microsoft Dynamics
+    c.  **Active Directory Resource** - The DNS URL for the Microsoft Dynamics
         365 AOS. Append the URL with '/namespaces/AXSF'. For example:
         [https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
 
-    4.  **Active Directory Tenant** - The DNS URL for the Microsoft Dynamics 365
+    d.  **Active Directory Tenant** - The DNS URL for the Microsoft Dynamics 365
         AD FS machine. Append the URL with '/adfs/oauth2'. For example:  
         <https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2>
 
@@ -174,7 +155,6 @@ Dynamics 365 server through the AD FS application.
 
 1.  **Company** - Enter the legal entity in Microsoft Dynamics 365 to which you
     want the application to connect.
-
 2.  Select the **Back** button in the top-left corner of the application.
 
 >   The application will now connect to your Microsoft Dynamics 365 server and
