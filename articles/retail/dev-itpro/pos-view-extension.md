@@ -52,16 +52,16 @@ The following table shows the POS views that currently support extensions. It al
 | POS view                        | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
-| CustomerAddEditView             | Yes                           |                              | Yes                                  |
-| CustomerDetailsView             | Yes                           |                              | Yes                                  |
-| SearchView                      |                               | Yes                          | Yes                                  |
-| InventoryLookupView             |                               | Yes                          | Yes                                  |
-| ShowJournalView                 |                               | Yes                          | Yes                                  |
-| SimpleProductDetailsView        |                               | Yes                          | Yes                                  |
-| AddressAddEditView              | Yes                           |                              |                                      |
-| PaymentView                     |                               |                              | Yes                                  |
-| PriceCheckView                  | Yes                           |                              |                                      |
-| SearchOrdersView                |                               | Yes                          |                                      |
+| CustomerAddEditView             | Yes                           | No                           | Yes                                  |
+| CustomerDetailsView             | Yes                           | No                           | Yes                                  |
+| SearchView                      | No                            | Yes                          | Yes                                  |
+| InventoryLookupView             | No                            | Yes                          | Yes                                  |
+| ShowJournalView                 | No                            | Yes                          | Yes                                  |
+| SimpleProductDetailsView        | No                            | Yes                          | Yes                                  |
+| AddressAddEditView              | Yes                           | No                           |  No                                    |
+| PaymentView                     | No                            | No                           | Yes                                  |
+| PriceCheckView                  | Yes                           | No                           | No                                   |
+| SearchOrdersView                | No                            | Yes                          | No                                     |
 
 ## Add a custom column and an app bar button
 
