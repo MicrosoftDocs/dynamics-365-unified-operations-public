@@ -110,17 +110,16 @@ When the bid fields on the headers and lines of an RFQ are enabled for editing, 
 - Click **Reset from RFQ** to reset the data that you entered for a bid and revert to the original RFQ. You can reset the header or the line.
 When you start working on a bid, it will appear in the Bids in progress section.
 Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.   - - Click **Add alternate** and **Remove alternate**on the line grid to work with alternates.
-
-There may be attachments added to an RFQ by the customer. Click RFQ attachment or RFQ lines attachment to open an attachment. If you need to upload attachments as part of the bidding, click Bid attachments or Bid line attachments.
+- Click RFQ attachment or RFQ lines attachment to open any attachment that has been added to an RFQ by the customer, and click Bid attachments or Bid line attachments to upload attachments with the bid.
 There might be questionnaires that needs to be answered before you are allowed to submit a bid.
 At any time before the expiration date, you can save a bid and return later to finish and submit the bid. After you have submitted a  bid,  and if it is still before the expiration date, you can recall and update the bid.
-If you do not want to bid, you can decline the bid. Once you click Decline, you will not be able to recall the action and enter a bid.
-If an RFQ is amended, you will have to enter a new bid. You can find information about the amendment in the Amendments tab on the RFQ page. The Amended RFQ will appear on the New bid invitations page. 
+Click **Decline**, if you do not want to bid. Once you click **Decline**, you will not be able to recall the action and enter a bid.
+If an RFQ is amended, you will have to enter a new bid. You can find information about the amendment in the **Amendments** tab on the RFQ page. The Amended RFQ will appear on the **New bid invitations** page. 
 
 ## Accessing vendor master data in the Vendor information workspace
 
 As a vendor, you can access part of the information that the customer maintains in the vendor master record. This allows you to keep the information up to date. You must have a vendor admin (external) role to be allowed to update the information.
-The accessible information is vendor name, addresses, contact information, contact persons and their contact information, Identification numbers tax registration numbers  , Procurement categories in which the vendor is approved to sell to the customer and information about certifications.
+The accessible information is vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories in which the vendor is approved to sell to the customer, and information about certifications.
 
 
 See also
