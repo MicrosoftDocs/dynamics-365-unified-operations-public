@@ -53,7 +53,7 @@ Demo data has been delivered in prior releases as a database with a large number
 
 The data packages are similar but not identical to existing demo companies and may change over time. The packages are very small and provide a quick way to download the demo data and modify it before you import it into an environment. We will continue to add additional demo data for more companies and module functionality in the future.
 
-## Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations integration – Phase 1 (Private Preview)
+## Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations integration – Phase 1 (private preview)
 The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
 
 The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the [Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations.
