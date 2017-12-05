@@ -106,10 +106,11 @@ Any attachments that are included in the bid will also be available.
 ## Bidding
 - Click Bid to start bidding on an RFQ. 
 
-When the bid fields on the headers and lines of the RFQ are enabled for editing you can enter your bid directly on the line grid. You must also consider any additional bid information to be added on the line details.  
-If you want to reset the data you entered for a bid and revert to the original RFQ then click  Reset from RFQ on the line or on the header depending on what you want to reset.
+When the bid fields on the headers and lines of an RFQ are enabled for editing, you can enter your bid directly on the line grid. You must also consider any additional bid information to be added on the line details.  
+- Click **Reset from RFQ** to reset the data that you entered for a bid and revert to the original RFQ. You can reset the header or the line.
 When you start working on a bid, it will appear in the Bids in progress section.
-Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.   Click Add alternate and Remove alternate on the line grid to work with alternates.
+Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.   - - Click **Add alternate** and **Remove alternate**on the line grid to work with alternates.
+
 There may be attachments added to an RFQ by the customer. Click RFQ attachment or RFQ lines attachment to open an attachment. If you need to upload attachments as part of the bidding, click Bid attachments or Bid line attachments.
 There might be questionnaires that needs to be answered before you are allowed to submit a bid.
 At any time before the expiration date, you can save a bid and return later to finish and submit the bid. After you have submitted a  bid,  and if it is still before the expiration date, you can recall and update the bid.
