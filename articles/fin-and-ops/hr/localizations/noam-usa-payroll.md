@@ -58,7 +58,8 @@ Payroll taxes are set up in two parts. One part covers the settings that are use
 -   [Tax information tasks](noam-usa-tax-information-tasks.md)
 -   [Tax codes, tax groups, and posting definitions](noam-usa-tax-codes-tax-groups-definitions.md)
 
-For information about tax updates, refer to the [Microsoft Dynamics 365 HCM](https://community.dynamics.com/ax/b/axhcmnewslearningshighlights) blog. The blog includes posts that announce the availability of tax updates for Dynamics 365 Human Resources, as well as tax updates for previous versions. 
+### Find and install tax updates
+For information about tax updates, refer to the [Microsoft Dynamics 365 HCM](https://community.dynamics.com/ax/b/axhcmnewslearningshighlights) blog. The blog includes posts that announce the availability of tax updates for Dynamics 365 Human Resources, as well as tax updates for other versions. 
 
 ## Benefits
 Topics related to benefits describe how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. 
