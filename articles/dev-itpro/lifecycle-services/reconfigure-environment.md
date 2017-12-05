@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconfigure your environment
-description: This topic provides information about how to reconfigure your environment. 
+description: This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/05/2017
@@ -33,22 +33,15 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 
+## Prerequisites
+Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, . The procedure in this topic will only work with local agents that are on or above version 1.1.1.0. 
 
-## Prerequisites: 
-Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, . The procedures in this topic will only with with local agents on or above version 1.1.1.0. 
+## Reconfigure your environment
 
-
- 
-## Reconfigure your enviornment
-
-1. In LCS, navigate to your on-premises project and open the **Environments** blade. 
+1. In Lifecycle Services (LCS), navigate to your on-premises project and open the **Environments** blade. 
 2. Click **Reconfigure**.
 3. Select the new topology for your platform. 
 4. Enter the environment name. You can use the same name or enter a new one. 
 5. Click **Advanced Settings** to update your configuration. The configuration from your previous deployment will be saved. 
-
-
-
