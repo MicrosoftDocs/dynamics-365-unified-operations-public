@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call an API from a POS extension
-description: 
+description: The Retail POS APIs help you to build extensions or add new features to POS. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 12/01/2017
@@ -31,26 +31,24 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Call a POS API or operation from a POS extension
 
-## Consume POS APIs in extensions
-
-The Retail POS APIs help you to build extensions or add new features to POS. For example, if you wanted to add new features that would retrieve product details, change a price, or add an item to a cart, you would call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, Hardware Station (HWS) now all use the request/response pattern. 
+The Retail POS APIs help you to build extensions or add new features to POS. For example, if you wanted to add new features that would retrieve product details, change a price, or add an item to a cart, you would call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, and Hardware Station now all use the request/response pattern. 
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.  
 
 ## Scenarios
 The POS APIs are categorized into three different scenarios.
 
-- **Consume**: Consume the public APIs in your extension. 
-- **Extend**: Extend the public APIs to do some additional logic. 
-- **Create**: Create new APIs using the POS interface which can then be used across your extensions. 
+- **Consume** - Consume the public APIs in your extension. 
+- **Extend** - Extend the public APIs to do some additional logic. 
+- **Create** - Create new APIs using the POS interface, which can then be used across your extensions. 
 
-## Consume an API
-Because the APIs are exposed using a request/response pattern, you can make an external web serivce call to implement your business logic. For example, is you wanted to change the price of an item, you would call **PriceOverrideOperationRequest**. The APIs are subcategorized by modules such as CRT, peripherals, abnd store operations. 
+## Consume POS APIs in extensions
+Because the APIs are exposed using a request/response pattern, you can make an external web service call to implement your business logic. For example, is you wanted to change the price of an item, you would call **PriceOverrideOperationRequest**. The APIs are subcategorized by modules such as CRT, peripherals, and store operations. 
 
 Many new APIs have been added. You can find a list of all the APIs in the file **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts**. 
 
 ### How to consume an API in an extension
-To consume an APIs in an extension, follow these steps:
+To consume APIs in an extension, follow these steps:
 
 1.  Open Visual Studio 2015 in administrator mode.
 2.  Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
@@ -87,7 +85,7 @@ To consume an APIs in an extension, follow these steps:
     private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
     ```
-9. Implement the trigger **execute** method and call the existing POS APIs. In the **execute** method calls APIs to get the current cart, get the current customer, and save the attributes on the cart.
+9. Implement the trigger **execute** method and call the existing POS APIs. The **execute** method calls APIs to get the current cart and customer, and then saves the attributes on the cart.
     ```Typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
@@ -176,7 +174,7 @@ To consume an APIs in an extension, follow these steps:
                 });
         }
     ```
-    The overall code is:
+    The overall code should look like the following example. 
     ```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
@@ -301,9 +299,9 @@ To consume an APIs in an extension, follow these steps:
         }
     }
     ```
-10. Create a new json file and under the POSAPIExtension folder and name it as manifest.json.
+10. Create a new json file under the POSAPIExtension folder and name it manifest.json.
 
-11. In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
+11. In the manifest.json file, copy and paste the following code. Delete the default generated code before copying this code.
     ```Typescript
     {
 
@@ -338,9 +336,9 @@ To consume an APIs in an extension, follow these steps:
     ```
  **Note:** The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
 
-13. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment out the extension from the extension list as shown.
+13. Open **tsconfig.json** and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions, if you want to include any extensions that are part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.
 
-    Note: Comment out both SampleExtensions2 and POSAPIExtension.
+    **Note** Comment out both SampleExtensions2 and POSAPIExtension.
     ```Typescript
     "exclude": [
 
@@ -362,12 +360,11 @@ To consume an APIs in an extension, follow these steps:
     ```
 14. Select the **POS.Extensions** project and click **Show all Files** in Solution Explorer.
 15. Right-click and include the **SampleExtensions2** folder in the project.
-16. Compile and rebuild the prothe.
+16. Compile and rebuild the project.
 
 ## Test the extension
 
 1.  Press F5 and deploy the POS to test your customization.
-2.  Once the POS is launched, login to POS and add any item to transaction.
+2.  Sign in to POS and add any item to a transaction.
 3.  Add any customer to a transaction.
-4.  Click the pay button and commit the transaction.
-5.  POS should show a dialog box asking whether to save the attribute or not.
+4.  Click the **Pay** button and commit the transaction. A dialog box should display asking if you want to save the attribute.
