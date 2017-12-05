@@ -104,13 +104,14 @@ A closed RFQ will show all vendor bids down to a line level. As bids get awarded
 Any attachments that are included in the bid will also be available.
 
 ## Bidding
-- Click Bid to start bidding on an RFQ. 
+- Click **Bid** to start bidding on an RFQ. 
 
 When the bid fields on the headers and lines of an RFQ are enabled for editing, you can enter your bid directly on the line grid. You must also consider any additional bid information to be added on the line details.  
 - Click **Reset from RFQ** to reset the data that you entered for a bid and revert to the original RFQ. You can reset the header or the line.
 When you start working on a bid, it will appear in the Bids in progress section.
-Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.   - - Click **Add alternate** and **Remove alternate**on the line grid to work with alternates.
-- Click RFQ attachment or RFQ lines attachment to open any attachment that has been added to an RFQ by the customer, and click Bid attachments or Bid line attachments to upload attachments with the bid.
+Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.    
+- Click **Add alternate** and **Remove alternate** on the line grid to work with alternates.
+- Click **RFQ attachment** or **RFQ lines attachment** to open any attachment that has been added to an RFQ by the customer, and click **Bid attachments** or **Bid line attachments** to upload attachments with the bid.
 There might be questionnaires that needs to be answered before you are allowed to submit a bid.
 At any time before the expiration date, you can save a bid and return later to finish and submit the bid. After you have submitted a  bid,  and if it is still before the expiration date, you can recall and update the bid.
 Click **Decline**, if you do not want to bid. Once you click **Decline**, you will not be able to recall the action and enter a bid.
