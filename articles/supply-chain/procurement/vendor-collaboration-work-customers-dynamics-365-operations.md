@@ -87,16 +87,20 @@ Open the Vendor bidding workspace to access the following sections:
 - Click **Bids in progress** to see the RFQs that you or a contact person representing your company has been working on but has not submitted yet.
 - Click **Awarded bids** to see when the customer has awarded at least one line item in your bid.
 - Click **Lost bids** to see bids where all lines have been rejected.
-- Click the link to **Request for quotations** to see a list of all the vendor’s RFQ invitations as well as any submitted bids. The **Request for quotations** page lists all the RFQs that a vendor has been involved in and you can search across statuses. 
-Click the link to **Declined bids** to see a list of all the RFQs where a vendor’s contact person has declined to bid. 
+- Click the link **Request for quotations** to see a list of all the vendor’s RFQ invitations as well as any submitted bids. The **Request for quotations** page lists all the RFQs that a vendor has been involved in and you can search across statuses. 
+- Click the link **Declined bids** to see a list of all the RFQs where a vendor’s contact person has declined to bid. 
 
-### Working with RFQs from the Public sector
+### Work with RFQs that are available for the public
 
-From the link Open published requests for quotations you can access a list of RFQs that are available for the public. An open RFQ is an RFQ that has not yet expired. You can find the expiration date and time on the header of the RFQ.
-If you have been invited to bid, you can find the same RFQ on the New bid invitations page. If you want to bid on an open RFQ without an invitation, you may be able to invite yourself to bid. This is possible if he RFQ case has been enabled for self-invitation by the customer.
+People working in the Public sector have possibility to see open and expired RFQs that have been made available for the public.
 
-From the link Closed published requests for quotations you can access a list of RFQs that are available for the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
-A closed RFQ will show all vendor bids down to a line level. As bids get awarded or rejected this will be reflected in the closed RFQ. 
+- Click the link **Open published requests for quotations** to access a list of open RFQs that are available to the public. An open RFQ is an RFQ that has not yet expired. You can find the expiration date and time on the header of the RFQ.
+
+If you have been invited to bid, you can find the same RFQ on the **New bid invitations** page. If you want to bid on an open RFQ without an invitation, you may be able to invite yourself to bid. This is possible if he RFQ case has been enabled for self-invitation by the customer.
+
+- Click the link **Closed published requests for quotations** to access a list of closed RFQs that are available to the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
+
+A closed RFQ will show all vendor bids down to a line level. As bids get awarded or rejected, this will be reflected in the closed RFQ. 
 Any attachments that are included in the bid will also be available.
 
 ## Bidding
