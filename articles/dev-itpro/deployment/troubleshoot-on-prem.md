@@ -254,22 +254,18 @@ Some encryption error examples include, AXBootStrapperAppType, Bootstrapper, AXD
 
 You might receive one of these errors if the data encipherment cert is used to encrypt AOS AccountPassword was not installed on the machine. This cert could be in the Certificates (Local Computer) or it could be that the Provider type is wrong. 
 
-To resolve the error, validate  the credentials.json file. Check if the texts there are decrypting correctly by typing in the following message (on AOS1). 
+To resolve the error, validate  the credentials.json file. Verify that the texts are decrypting correctly by typing in the following message (on AOS1). 
 
         Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip 
 
-This error might have also occurred if the parameter **''** is not defined in the ApplicationManifest file. To verify this, 
+This error might have also occurred if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to Go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for:
 
-- Check for proper layout/structure of credentails.json file Encrypt credentials  
-- Check to see if end quote is at end of line or on next line 
-
-Go to **Event Viewer** > **Custom Views** > **Administrative Events** 
-    Error on Microsoft-Service Fabric source 
+- Proper layout/structure of credentails.json file Encrypt credentials  
+- An end quote at the end of the line or on the next line 
+- Error on Microsoft-Service Fabric source.
     
 ## Can't find the certificate and private key to use for decryption (0x8009200C) 
-Missing cert and/or ACL or wrong thumbprint entry (ex axdataenciphermentcert and AXSF$ AXServiceUser) 
-
-Check for special characters 
+If you are missing a cert and ACL, or you have the wrong thumbprint entry (ex axdataenciphermentcert and AXSF$ AXServiceUser),  check for special characters. Also,  
 
 - Also may be able to see in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt 
 Note any ? For thumprints  
@@ -424,7 +420,7 @@ Navigate to the Event Viewer to get root error. You can also find it here, c:\Pr
 If you receive this error, check to see if certs/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure). 
 
 ## The client and server can't communicate because they do not possess a common algorithm 
-Verify the star certificate requirements, example provider being used 
+If this occurs, verify that the certificates created are using the specified provider as explained [2. Plan and acquire your certificates](setup-deploy-on-premises-environments.md#plancert).
  
 ## Find a list of group managed service accounts (gMSA)
 To find a list of all groups and hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
