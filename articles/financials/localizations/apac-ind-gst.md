@@ -2,7 +2,7 @@
 # required metadata
 
 title: India GST | Microsoft Docs
-description: This article describes how Microsoft Dynamics 365 for Operations (1611) can be used to create India GST configurations for some Microsoft Dynamics AX versions. 
+description: This article provides information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2017
@@ -14,22 +14,25 @@ ms.technology:
 # optional metadata
 
 # keywords: 
-# ROBOTS: 
-audience: IT Pro
+audience: IT Pro, Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1587884
 ms.search.region: India
-ms.search.scope: AX 2012
+ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 2012
 # ms.search.validFrom:
 ---
 
-# Create configurations for India GST
+# India Goods and Services Tax (GST)
+
+This topic provides a walkthrough of the features that are related to the Goods and Services Tax (GST). Each documented scenario walks you through basic business transactions that typically occur across various business segments in industries of all types. This document also highlights the effect of GST on various type of business transactions, and shows the accounting and posting of transactions of various types.
+
+## Resources for other Microsoft Dynamics products
 
 If you are using one of the following Microsoft Dynamics AX versions, you can use the India GST release to help you be compliant with India GST regulations.
 
