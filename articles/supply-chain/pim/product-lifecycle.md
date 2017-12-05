@@ -119,7 +119,7 @@ Use the following criteria to select and update the released products and produc
 -  No active or future sales or purchase agreement lines for the product or product variant. 
 -  The product or product variant is not used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
 
-Related topics:
+## Related topics:
 
 -  Create a new product lifecycle state
 -  Create a default new product lifecycle state
