@@ -37,28 +37,28 @@ ms.dyn365.ops.version: Platform Update 8
 ## Service Fabric 
 Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by the Orchestrator, AOS, SSRS and MR nodes.
 
-### Access Service Fabric Explorer
-Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080. To verify the address, note what was used in the topic section, [Create DNS zones and add A records](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns). 
+## Access Service Fabric Explorer
+Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080. To verify the address, note what was used in the topic section, [Create DNS zones and add A records](setup-deploy-on-premises-environments.md#createdns). 
 To access the site, the client certificate needs to be located in cert:\CurrentUser\My (Certificates - Current User > Personal > Certificates) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
-### Stateful and Stateless Services, how to identify nodes for log review 
+## Stateful and Stateless Services, how to identify nodes for log review 
 To find out what machine is the primar instance for Stateful Services, like a Local Agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**. Note the primary node. 
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
-### Timeout error received when creating a Service Fabric cluster 
-Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setup-sf-cluster) and note any errors. 
+## Timeout error received when creating a Service Fabric cluster 
+Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setupsfcluster) and note any errors. 
 Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
 Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
 
-### Time out while waiting for Installer Service to complete for machine x.x.x.x
+## Time out while waiting for Installer Service to complete for machine x.x.x.x
 You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on same machine, for example AOS and ORCH on same machine, and that the ConfigTemplate.xml is correctly defined. 
 
-### Remove a specific application 
+## Remove a specific application 
 We recommend that you use LCS to remove or cleanup deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.  
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm. 
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm. 
 
-### Remove Service Fabric completely 
+## Remove Service Fabric completely 
 To remove the Service Fabric completely remove ServiceFabricCluster.ps1 -ClusterConfigFilePath "<path to working directory>\ClusterConfig.json". If this results in error, remove a specific node on that cluster from the
 powershell.exe -File "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1" 
 
@@ -68,10 +68,10 @@ If you receive an access denied error, restart PowerShell or restart the machine
 ## LocalAgent 
 LocalAgent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics. 
 
-### How to find the LocalAgent values that are used 
+## How to find the LocalAgent values that are used 
 Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
-### Install, upgrade, or uninstall Local agent 
+## Install, upgrade, or uninstall Local agent 
 Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
 
     LocalAgentCLI.exe Install <path of localagent-config.json> 
@@ -81,10 +81,10 @@ Local agent installation is discussed in the topic, [Set up and deploy on-premis
 > [!NOTE]
     > The cleanup command doesn't remove any of the files that were placed in the file share. The file share can be reused.
 
-### Error occurs when starting up Local agent services  
+## Error occurs when starting up Local agent services  
 If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification should no longer be enabled. This is done by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
-### "Validation in progress" In LCS, "Validation in progress" is showing for a period of several minutes
+## In LCS, "Validation in progress" is showing for a period of several minutes
 Complete the following steps to troubleshoot general issues with local agent validation.
 1. Run the Configure-PreReqs.ps1 on all the orchestrator machines to configure the machines correctly. 
 2. Verify that the script Test-D365FOConfiguration.ps1 passes on all of the orchestrator machines.  
@@ -118,7 +118,7 @@ To resolve these errors, complete the followign steps.
           <Thumbprint></Thumbprint> 
           <ProtectTo></ProtectTo> 
         </Certificate> 
-3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configure-lcs) section were completed using the same certificate that is specified in local agent configuration in LCS. 
+3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configurelcs) section were completed using the same certificate that is specified in local agent configuration in LCS. 
 4. Uninstall the local agent.  
 5. Specify the correct certificate in the local agent configuration and download the configuration file again. 
 6. Install the local agent again with the new configuration file. 
@@ -202,29 +202,28 @@ Complete the following steps to resolve the error.
 5. Add the local agent user to the file share and give them full permissions. 
 6. Check for svc-LocalAgent$ rights to path (NTFS and share permissions). 
 
-### Error: "Unable to load DLL 'FabricClient.dll':"
+## Error: "Unable to load DLL 'FabricClient.dll':"
 If you receive this error, close and reopen PowerShell. If the error still occurrs, restart the machine. 
 
-### What Cluster ID in Agent config should be used 
+## What Cluster ID in Agent config should be used 
 The Cluster ID can be any GUID. This GUID is used for tracking purposes. 
 
-### Local Agent stops working after the tenant for the project from LCS is changed 
+## Local Agent stops working after the tenant for the project from LCS is changed 
 Complete the following steps to configure Local Agent with updated tenant.  
 1. Remove all of the environments from LCS that already have the connector installed. 
 2. Uninstall the local agent 
 
         .\LocalAgentCLI.exe Cleanup <path of localagent-config.json> 
         
-3. Complete the steps in section [11. Configure LCS connectivity for the tenant](../deployment/setup-deploy-on-premises-environments#configurelcs.md). 
+3. Complete the steps in section [11. Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configurelcs). 
 4. Create a new LCS connector in the new tenant. 
 5. Download the local-agent.config file. 
 6. Install local agent. 
    
         .\LocalAgentCLI.exe Install <path of localagent-config.json>
+        
 
-## Log files to monitor deployment
-
-### Monitor deployment locally 
+## Monitor deployment locally 
 Review the Event Viewer logs for the primary orchestrator machine and artifacts manager, and the bridge service 
 AX-LocalAgent (overall installation process). 
 
@@ -240,19 +239,17 @@ AX-LocalAgent (overall installation process).
 AX-SetupModuleEvents (additional details for Module details) 
 AX-SetupInfrastructureEvents (additional details when interactions with Service Fabric) 
 
-### AOS machines
+## AOS machines
 **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** 
 **Event Viewer** > **Custom Views** > **Administrative Events** 
 
-### Find a full error
+## Find a full error
 Click on the **Details** tab to view the full error message. 
 
-### Service Fabric failing
+## Service Fabric failing
 Note the service that is failing and open the corresponding application directory. For example, C:\ProgramData\SF\ORCH1\Fabric\work\Applications\LocalAgentType_App5\log.
 
-## Example errors
-
-### Encryption errors
+## Encryption errors
 Some encryption error examples include, AXBootStrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
 
 You might receive one of these errors if the data encipherment cert is used to encrypt AOS AccountPassword was not installed on the machine. This cert could be in the Certificates (Local Computer) or it could be that the Provider type is wrong. 
@@ -269,7 +266,7 @@ This error might have also occurred if the parameter **''** is not defined in th
 Go to **Event Viewer** > **Custom Views** > **Administrative Events** 
     Error on Microsoft-Service Fabric source 
     
-### Can't find the certificate and private key to use for decryption (0x8009200C) 
+## Can't find the certificate and private key to use for decryption (0x8009200C) 
 Missing cert and/or ACL or wrong thumbprint entry (ex axdataenciphermentcert and AXSF$ AXServiceUser) 
 
 Check for special characters 
@@ -283,7 +280,7 @@ Test via Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation
 
 If changed credentials.json then delete and redeploy from LCS 
 
-### MR
+## MR
 Additional logging can be done by registering providers. Attached ETWManifest.zip can be downloaded to primary orchestrator machine and following commands ran 
 
 - Copy ETWManifest to primary orch machine and run following  
@@ -321,13 +318,11 @@ use task manager (ex details tab), locate AxService.exe, right-click and select 
     3. SessionAuthentication Thumbprint 
   If invalid then need to redeploy from LCS with proper Thumbprints. 
 
-### Unable to resolve the xPath value 
-Unable to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue. 
+## Unable to resolve the xPath value 
+Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value looking for AOS runtime user information however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.  
 
-This is expected behavior and is not an issue. is looking for AOS runtime user information. Since using integrated security, do not need that info. Outputting unresolvable xpaths to be verbose just in case failure needs to be investigated.  
-
-### ADFS
-Login page not redirecting and still prompting for credentials. Example was going to URL and getting "An error occurred. Contact your administrator for more information." 
+## ADFS
+Login page is not redirecting and is still prompting for credentials. For example, if you havExample was going to URL and getting "An error occurred. Contact your administrator for more information." 
 
 - Add ADFS link to trusted sites 
 - Add D365 link to trusted sites as well as likely will be next issue 
@@ -407,36 +402,35 @@ Didn’t run scripts on all machines as per instructions. Go back and review Ins
 
 Also check csv file for correct domain being used 
 
-### RunAsync failed due to an unhandled FabricException causing replica to fault
-RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0: 
+## Error: RunAsync failed due to an unhandled FabricException causing replica to fault
+"RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0: 
 
 Change ClusterConfig.json diagnosticsStore from network share to local path, ex \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore 
 
-### Dbsync (DB sync) issues 
-Look at AOS working directory, ex C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log 
-Also review on all AOS machines  
+## Error: Dbsync (DB sync) issues 
+If you are having database sync issues, look at AOS working directory, ex C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log and complete a review of the following on all AOS machines:  
 
-- Event Viewer > Custom Views > Administrative Events 
-- Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-DatabaseSynchronize 
+- **Event Viewer** > **Custom Views** > **Administrative Events** 
+- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** 
 
-### Error: "Invalid algorithm specified / Cryptography"  
+## Error: "Invalid algorithm specified / Cryptography"  
 If you receive this error, you need to be using the Provider of Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, review the certificates requirements. Additionally, verify that the structure of the Credentials.json file is correct. 
 
 ### Error: "Partition is below target replica or instance count" 
 This is not a root error. This error means that the status of each node is not ready. For AXSF/AOS, the status could still be inBuild. 
 Navigate to the Event Viewer to get root error. You can also find it here, c:\ProgramData\SF… 
 
-### Error, "Unable to find certificate" when running Test-D365FOConfiguration.ps1 
+## Error, "Unable to find certificate" when running Test-D365FOConfiguration.ps1 
 If you receive this error, check to see if certs/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure). 
 
-### The client and server can't communicate because they do not possess a common algorithm 
+## The client and server can't communicate because they do not possess a common algorithm 
 Verify the star certificate requirements, example provider being used 
  
-### Find a list of group managed service accounts (gMSA)
+## Find a list of group managed service accounts (gMSA)
 To find a list of all groups and hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
 PrincipalsAllowedToRetrieveManagedPassword 
 
-### AddCertToServicePrincipal script failing on Import-Module 
+## AddCertToServicePrincipal script failing on Import-Module 
 AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.  
 
 To resolve this issue, run the following command in PowerShell 
@@ -446,7 +440,7 @@ To resolve this issue, run the following command in PowerShell
 
 Then, close the PowerShell window and try again.
 
-### ReportingServicesSetup.exe Error
+## ReportingServicesSetup.exe Error
 ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes 
 Application: ReportingServicesBootstrapper.exe 
 Framework Version: v4.0.30319 
@@ -454,14 +448,14 @@ Description: The process was terminated due to an unhandled exception.
 
 If you receive this error, the strong name validation is enabled in the Reporting server and should not be. To resolve this, run the config-PreReq script in Reporting server machine. 
 
-### The requested operation requires elevation 
+## The requested operation requires elevation 
 AOS users are not in the local administrator group and the UAC has not been disabled correctly. To resolve the issue, complete the following steps. 
 1. Add AOS users as local admins as described in the section Join VMs to the domain 
 2. Run the Config-PreReq script on all the AOS machines 
 3. Make sure Test-Configuration script passes 
 4. If UAC was changed, need to restart machine to take effect 
 
-### Files in use errors
+## Files in use errors
 Set up exclusion rules advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 
