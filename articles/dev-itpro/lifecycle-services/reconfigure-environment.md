@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.3.0
 This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 
 ## Prerequisites
-Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, [Update the Local Agent](update-local-agent.md). The procedure in this topic will only work with local agents that are on or above version 1.1.1.0. 
+Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, [Update the local agent](update-local-agent.md). The procedure in this topic will only work with local agents that are on or above version 1.1.1.0. 
 
 ## Reconfigure your environment
 
