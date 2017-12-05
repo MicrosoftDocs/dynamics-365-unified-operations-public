@@ -42,7 +42,9 @@ Vendors can complete a series of business processes from the following workspace
 -	Vendor information; Allows vendors to view and update vendor master data.
 -	Invoicing: Allows vendors to work with invoices. For more information, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
-## Working with purchase orders
+As a vendor, you can also monitor consignment inventory information.
+
+## Working with purchase orders in the purchase order confirmation workspace
 The **Purchase order confirmation** workspace enables you to respond to the PO’s that have been sent to you for review. It also enables you to view information about POs that are awaiting action from the customer, and POs that have been confirmed, but are still open. There are three lists in the **Purchase order confirmation** workspace:
 
 -   **Purchase orders for review** -This list shows POs that have been sent to you and are awaiting a response from you. After you respond, the PO disappears from the list. If the customer sends you a new version of the PO before you’ve responded to the previous one, only the latest version is shown.
@@ -72,6 +74,44 @@ If you’re using consignment inventory, you can use the vendor collaboration 
 -   **Purchase orders consuming consignment inventory** - Purchase orders for consignment inventory are generated when the customer takes ownership of the inventory. These consignment purchase orders are only displayed on the **Purchase orders consuming consignment inventory** page. They are not included on the **All confirmed purchase orders** page.
 -   **Products received from consignment inventory** - This page lists all the transactions where the ownership of products has been transferred to the company that’s consuming the inventory. You can use this information to invoice the customer.
 -   **On-hand consignment inventory** - This page shows the on-hand consignment inventory owned by your company that is on-hand at the customers warehouse.
+
+## Working with RFQs in the Vendor bidding workspace
+The Vendor bidding workspace enables you to view the RFQs you have been invited to and respond. It also shows which RFQs that you lost or won. 
+When the system is configured for public sector, it will also show all the RFQs that are publicly available (as they are published).
+In the section New bid invitations, you will find the RFQs that your company have been invited to respond to. From here, you can view an RFQ and start the bidding process. You will also find amended RFQs which require submission of a new bid.
+In the section Returned bids, you will find the RFQs that the customer has returned to get more information or updates on the bid.
+In the section Bids in progress, you will find the RFQ’s that you or a contact person representing your company have been working on but have not submitted yet.
+In the section Awarded bids, you can see when the customer has awarded at least one line item in your bid.
+In the section Lost bids, you will find bids where all lines have been rejected.
+From the link to Request for quotations you can see  a list of all the vendor’s RFQ invitations as well as any submitted bids.. The Request for quotations page lists all the RFQs that a vendor has been involved in and you can search across statuses. 
+From the link to Declined bids you can see a list of all the RFQs where a vendor’s contact person has declined to bid. 
+
+### Working with RFQs from the Public sector only
+
+From the link Open published requests for quotations you can access a list of RFQs that are available for the public. An open RFQ is an RFQ that has not yet expired. You can find the expiration date and time on the header of the RFQ.
+If you have been invited to bid, you can find the same RFQ on the New bid invitations page. If you want to bid on an open RFQ without an invitation, you may be able to invite yourself to bid. This is possible if he RFQ case has been enabled for self-invitation by the customer.
+
+From the link Closed published requests for quotations you can access a list of RFQs that are available for the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
+A closed RFQ will show all vendor bids down to a line level. As bids get awarded or rejected this will be reflected in the closed RFQ. 
+Any attachments that are included in the bid will also be available.
+
+## Bidding
+- Click Bid to start bidding on an RFQ. 
+
+When the bid fields on the headers and lines of the RFQ are enabled for editing you can enter your bid directly on the line grid. You must also consider any additional bid information to be added on the line details.  
+If you want to reset the data you entered for a bid and revert to the original RFQ then click  Reset from RFQ on the line or on the header depending on what you want to reset.
+When you start working on a bid, it will appear in the Bids in progress section.
+Some RFQs allow alternate bids. This only applies to lines of the type Category since specific items cannot be added as alternates.   Click Add alternate and Remove alternate on the line grid to work with alternates.
+There may be attachments added to an RFQ by the customer. Click RFQ attachment or RFQ lines attachment to open an attachment. If you need to upload attachments as part of the bidding, click Bid attachments or Bid line attachments.
+There might be questionnaires that needs to be answered before you are allowed to submit a bid.
+At any time before the expiration date, you can save a bid and return later to finish and submit the bid. After you have submitted a  bid,  and if it is still before the expiration date, you can recall and update the bid.
+If you do not want to bid, you can decline the bid. Once you click Decline, you will not be able to recall the action and enter a bid.
+If an RFQ is amended, you will have to enter a new bid. You can find information about the amendment in the Amendments tab on the RFQ page. The Amended RFQ will appear on the New bid invitations page. 
+
+## Accessing vendor master data in the Vendor information workspace
+
+As a vendor, you can access part of the information that the customer maintains in the vendor master record. This allows you to keep the information up to date. You must have a vendor admin (external) role to be allowed to update the information.
+The accessible information is vendor name, addresses, contact information, contact persons and their contact information, Identification numbers tax registration numbers  , Procurement categories in which the vendor is approved to sell to the customer and information about certifications.
 
 
 See also
