@@ -35,115 +35,111 @@ This topic provides a walkthrough of the features that are related to the Goods 
 ## Setup
 
 ### Create a business vertical
-1	Click General ledger > Setup > Sales tax > India > Business verticals.
-2	Click New to create a record.
-3	Enter a name, description, and entity code for the new business vertical.
-4	Click Close.
+Create business verticals on the Business verticals page (**General ledger** > **Setup** > **Sales tax** > **India** > **Business verticals**).
 
 ### Update the state code and union territory
-1	Click Organization administration > Setup > Addresses > Address setup.
-2	On the State/province tab, select a state.
-3	In the State code field, enter a value.
-4	Select the Union territory check box to identify the state as a union territory.
-5	Click Close.
+1.	Click **Organization administration** > **Setup** > **Addresses** > **Address setup**.
+2.	On the State/province tab, select a state.
+3.	In the State code field, enter a value.
+4.	Select the Union territory check box to identify the state as a union territory.
+5.	Click Close.
 
 ### Create a GSTIN master
-1	Click General ledger > Setup > Enterprise tax registration numbers.
-2	Create a record.
-3	In the Tax type field, select GST.
-4	In the Registration number type field, select Company to create state-wide company registration numbers.
-5	In the Type field, verify that GSTIN, GDI, and UID appear in the list. Select a value.
-6	In the Registration number field, enter a value.
-7	In the Description field, enter a value.
-8	In the Business vertical field, select a value.
-9	On the Casual registration FastTab, click Add.
-10	In the From date and To date fields, define the valid period for the casual registration number.
-11	In the Description field, enter a value.
-12	On the Number sequences FastTab, define number sequences for the GST invoice and Bill of supply references.
+1.	Click **General ledger** > **Setup** > **Enterprise tax registration numbers**.
+2.	Create a record.
+3.	In the Tax type field, select GST.
+4.	In the Registration number type field, select Company to create state-wide company registration numbers.
+5.	In the Type field, verify that GSTIN, GDI, and UID appear in the list. Select a value.
+6.	In the Registration number field, enter a value.
+7.	In the Description field, enter a value.
+8.	In the Business vertical field, select a value.
+9.	On the Casual registration FastTab, click Add.
+10.	In the From date and To date fields, define the valid period for the casual registration number.
+11.	In the Description field, enter a value.
+12.	On the Number sequences FastTab, define number sequences for the GST invoice and Bill of supply references.
   -	The GST invoice number sequence will be used when customer sales that have GST transactions are posted
   -	The Bill of supply number sequence will be used when customer sales that have non-GST transactions are posted.
 
 ### Define vendor registration numbers for the GST tax type
-13	Create a record.
-14	In the Registration number type field, select Vendors to create state-wide vendor registration numbers.
-15	In the Registration number field, enter value.
-16	In the Description field, enter a value.
-17	In the Business vertical field, select a value.
+13.	Create a record.
+14.	In the Registration number type field, select Vendors to create state-wide vendor registration numbers.
+15.	In the Registration number field, enter value.
+16.	In the Description field, enter a value.
+17.	In the Business vertical field, select a value.
 
-Define customer registration numbers for the GST tax type
-18	Create a record.
-19	In the Registration number type field, select Customers to create state-wide customer registration numbers.
-20	In the Registration number enter a value.
-21	In the Description field, enter a value.
-22	In the Business vertical select a value.
+### Define customer registration numbers for the GST tax type
+18.	Create a record.
+19.	In the Registration number type field, select Customers to create state-wide customer registration numbers.
+20.	In the Registration number enter a value.
+21.	In the Description field, enter a value.
+22.	In the Business vertical select a value.
 
-Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-Legal entity
-1	Click Organization administration > Setup > Organizations > Legal entities > Addresses > Edit > Tax information.
-2	Click New.
-3	In the Name or description field, enter a value.
-4	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-5	Select the Primary check box.
-6	Click Yes to acknowledge the message.
+### Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
+#### Legal entity
+1.	Click **Organization administration** > **Setup** > **Organizations** > **Legal entities** > **Addresses** > **Edit** > **Tax information**.
+2.	Click New.
+3.	In the Name or description field, enter a value.
+4.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
+5.	Select the Primary check box.
+6.	Click Yes to acknowledge the message.
+7.	Click Close.
+8.	Repeat steps 2 through 7, for all the other required legal entity addresses.
+#### Warehouses
+9.	Click **Inventory management** > **Setup** > **Inventor**y > **Inventory breakdown** > **Warehouse** > **Addresses** > **Edit** > **Tax information**.
+10.	Click Add.
+11.	In the Name or description field, enter a value.
+12.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
+13.	Select the Primary check box.
+14.	Click Yes to acknowledge the message.
+15.	Save the record.
+16.	Click Close.
+#### Vendors
+17.	Click **Accounts payable** > **Vendors** > **All vendors** > **Addresses** > **Edit** > **Tax information**.
+18.	Click Add.
+19.	In the Name or description field, enter a value.
+20.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
+21.	Select the Primary check box.
+22.	Click Yes to acknowledge the message.
+23.	Save the record.
+24.	Click Close.
+25.	On the Tax information FastTab, select the Composition scheme check box if a composition scheme is used to purchase from the dealer.
 
-7	Click Close.
-8	Repeat steps 2 through 7, for all the other required legal entity addresses.
-Warehouses
-9	Click Inventory management > Setup > Inventory > Inventory breakdown > Warehouse > Addresses > Edit > Tax information.
-10	Click Add.
-11	In the Name or description field, enter a value.
-12	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-13	Select the Primary check box.
-14	Click Yes to acknowledge the message.
-15	Save the record.
-16	Click Close.
-Vendors
-17	Click Accounts payable > Vendors > All vendors > Addresses > Edit > Tax information.
-18	Click Add.
-19	In the Name or description field, enter a value.
-20	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-21	Select the Primary check box.
-22	Click Yes to acknowledge the message.
-23	Save the record.
-24	Click Close.
-25	On the Tax information FastTab, select the Composition scheme check box if a composition scheme is used to purchase from the dealer.
+#### Customers
+26.	Click **Accounts receivable** > **Customers** > **All customers** > **Addresses** > **Edit** > **Tax information**.
+27.	Click Add.
+28.	In the Name or description field, enter a value.
+29.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
+30.	Select the Primary check box.
+31.	Click Yes to acknowledge the message.
+32.	Save the record.
+33.	Click Close.
+34.	On the Tax information FastTab, select the Consumer check box to identify the customer as a consumer.
+35.	For customer sales through an e-commerce operator, enter a value in the Merchant ID field, and select a value in the Default E- Commerce operator field.
+36.	In the Customer type field, select Govt company or other agencies for sales with government companies or other agencies.
 
-Customers
-26	Click Accounts receivable > Customers > All customers > Addresses > Edit > Tax information.
-27	Click Add.
-28	In the Name or description field, enter a value.
-29	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-30	Select the Primary check box.
-31	Click Yes to acknowledge the message.
-32	Save the record.
-33	Click Close.
-34	On the Tax information FastTab, select the Consumer check box to identify the customer as a consumer.
-35	For customer sales through an e-commerce operator, enter a value in the Merchant ID field, and select a value in the Default E-Commerce operator field.
-36	In the Customer type field, select Govt company or other agencies for sales with government companies or other agencies.
-
-HSN codes and Service accounting codes
+#### HSN codes and Service accounting codes
 HSN codes
-1	Click General ledger > Setup > Sales tax > India > HSN code.
-2	Create a record.
-3	In the Chapter field, enter a value.
-4	In the Heading field, enter a value.
-5	In the Subheading field, enter a value.
-6	In the Country/region extension field, enter a value.
-7	In the Statistical suffix field, enter a value.
-8	Save the record.
-9	Verify that the HSN code field is updated.
-10	In the Description field, enter a value.
+1.	Click **General ledger** > **Setup** > **Sales tax** > **India** > **HSN code**.
+2.	Create a record.
+3.	In the Chapter field, enter a value.
+4.	In the Heading field, enter a value.
+5.	In the Subheading field, enter a value.
+6.	In the Country/region extension field, enter a value.
+7.	In the Statistical suffix field, enter a value.
+8.	Save the record.
+9.	Verify that the HSN code field is updated.
+10.	In the Description field, enter a value.
 
 11	Click Close.
 Service accounting codes
-1	Click General ledger > Setup > Sales tax > India > Service accounting codes.
+1	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Service accounting codes**.
 2	Create a record.
 3	In the SAC field, enter a value.
 4	In the Description field, enter a value.
 
 5	Click Close.
 Assign HSN codes and Service accounting codes to products
-1	Click Product information management > Common > Released products.
+1	Click **Product information management** > **Common** > **Released products**.
 2	Select an item.
 3	On the Action Pane, on the Product tab, in the Maintain group, click Edit.
 4	In the HSN code field, select a value.
@@ -153,7 +149,7 @@ Note: The following setup is required for the calculation of GST:
 ●	Item sales tax group should be removed.
 Assign a Service accounting code to miscellaneous charges
 Accounts payable
-1	Click Accounts payable > Setup > Charges > Charges code.
+1	Click **Accounts payable** > **Setup** > **Charges** > **Charges code**.
 2	Select a charges code.
 3	On the Tax information FastTab, enter a value in the SAC or HSN code field.
 4	Enter a value in the Service category or ITC Category field.
@@ -162,7 +158,7 @@ Accounts payable
 When this charges code is selected for a transaction, the defined tax information automatically entered, and GST is calculated accordingly.
 
 Accounts receivable
-7	Click Accounts receivable > Setup > Charges > Charges code.
+7	Click **Accounts receivable** > **Setup** > **Charges** > **Charges code**.
 8	Select a charges code.
 9	On the Tax information FastTab, enter a value in the SAC or HSN code field.
 10	Select the Exempt check box to exempt this charges from the calculation of GST.
@@ -170,17 +166,17 @@ Accounts receivable
 When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 Update number sequences
 Accounts payable parameters
-1	Click Accounts payable > Setup > Accounts payable parameters.
+1	Click **Accounts payable** > **Setup** > **Accounts payable parameters**.
 2	On the Number sequences tab, define a number sequence for Debit note references. This number sequence will be used for purchase debit note transactions.
 3	Define a number sequence for GST transaction ID references. This number sequence will be used for vendor advance payment transactions.
 
 Accounts receivable parameters
-1	Click Accounts receivable > Setup > Accounts receivable parameters.
+1	Click **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 2	On the Number sequences tab, define a number sequence for Debit note references. This number sequence will be used for sales debit note transactions.
 3	Define a number sequence for GST transaction ID references. This number sequence will be used for customer advance payment transactions.
 
 Create main accounts for the GST posting type
-1	Click General ledger > Common > Main accounts.
+1	Click **General ledger** > **Common** > **Main accounts**.
 2	Create a record.
 3	In the Main account field, enter a value.
 4	In the Name field, enter a value.
@@ -189,196 +185,189 @@ Create main accounts for the GST posting type
 
 7	Repeat steps 2 through 6 to create all the other required state-wide ledger accounts.
 8	Click Close.
+
 Create a tax settlement period
-1	Click Accounts payable > Vendors > All vendors, and create a GST authority.
 
-2	Click General ledger > Setup > Sales tax > Sales tax authorities.
+1	Click **Accounts payable** > **Vendors** > **All vendors**, and create a GST authority.
 
-3	Click General ledger > Setup > Sales tax > Sales tax settlement periods, and create a tax period for GST.
+2	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax authorities**.
 
-Attach the GSTIN to a tax registration group
-●	Click General ledger > Setup > Sales tax > India > Tax registration group, create a group, and define the required GSTIN.
+3	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax settlement periods**, and create a tax period for GST.
 
-Import the configuration and deploy it to a specific company
+### Attach the GSTIN to a tax registration group
+Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax registration group**, create a group, and define the required GSTIN.
+
+### Import the configuration and deploy it to a specific company
 Save all the configuration files in one folder that the instance of Microsoft Dynamics AX Application Object Server (AOS) can access.
-1	Click General ledger > Setup > Sales tax > India > Load configuration.
-2	In the Directory field, enter a value.
+1	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Load configuration**.
+2	In the **Directory** field, enter a value.
 
-Note: Both the tax configuration and the report configuration are saved in the same folder.
-3	Click OK.
+> [!NOTE]
+> Both the tax configuration and the report configuration are saved in the same folder.
 
-4	Click Close.
-5	Click General ledger > Setup > Sales tax > India > Tax setup.
+3	Click **OK**.
+4	Click **Close**.
+5	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax setup**.
 6	Create a record.
-7	In the Tax setup field, enter a value.
-8	In the Description field, enter a value.
+7	In the **Tax setup** field, enter a value.
+8	In the **Description** field, enter a value.
+9	Click **Configurations**.
+10	On the **Tax configuration** tab, under **Available configurations**, click **New**.
+11	In the **Configurations** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
+12	Click **OK**.
+13	Click **Synchronize**.
+14	Click **Activate**.
 
-9	Click Configurations.
-10	On the Tax configuration tab, under Available configurations, click New.
-11	In the Configurations field, select a value.
-The new tax configuration is listed in the Available configurations grid.
-
-12	Click OK.
-13	Click Synchronize.
-
-14	Click Activate.
-
-Note: The activated configuration is updated as the current configuration.
-15	Click the Report configurations tab.
-The Available configurations grid lists the configurations that are related to the report.
-16	Select the Select check box.
-17	In the Report data provider field, select a value.
-
-18	Click Close.
-19	On the Companies FastTab, create a record.
-20	In the Companies field, select a value.
+  > [!NOTE]
+  > The activated configuration is updated as the current configuration.
+15	Click the **Report configurations** tab. The **Available configurations** grid lists the configurations that are related to the report.
+16	Select the **Select** check box.
+17	In the **Report data provider** field, select a value.
+18	Click **Close**.
+19	On the **Companies** FastTab, create a record.
+20	In the **Companies** field, select a value.
 21	Save the record.
-
-22	Click Activate to activate the configuration for the company.
+22	Click **Activate** to activate the configuration for the company.
 
 Update the configuration version
-23	Click Deactivate.
+23	Click **Deactivate**.
 24	Repeat steps 2 through 5 to load the latest configuration.
 
-25	Click Configurations.
-26	On the Tax configuration tab, under Available configurations, click New.
-27	In the Configurations field, select a value.
+25	Click **Configurations**.
+26	On the **Tax configuration** tab, under **Available configurations**, click **New**.
+27	In the **Configurations** field, select a value.
 The new tax configuration is listed in the Available configurations grid.
 
-28	Click OK.
-29	Select the record, and then click Synchronize.
-30	Click Activate.
+28	Click **OK**.
+29	Select the record, and then click **Synchronize**.
+30	Click **Activate**.
 
 Note: The activated configuration is updated as the current configuration.
-31	Click Close.
-
-32	Click Activate.
+31	Click **Close**.
+32	Click **Activate.
 
 Tax setup
 Map configuration tax types to ERP tax types
 Tax type - Customs
-1	Click General ledger > Setup > Sales tax > India > Tax setup.
+1	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax setup**.
 2	Select a company.
-3	Click Setup.
-4	Select the Customs node.
+3	Click **Setup**.
+4	Select the **Customs** node.
 5	On the Tax type mapping tab, in the Tax type field, select Customs.
 
 Define a tax period
 1	Select the node for the tax component.
-On the Tax period mapping tab, in the Period field, select a value
+2. On the **Tax period mapping** tab, in the **Period** field, select a value.
 
 
 Define main accounts
-1	On the Accounting tab, on the Conditions FastTab, click Add.
-2	In the Import Order field, select a value.
-3	In the Export order field, select a value
+1	On the **Accounting** tab, on the **Conditions** FastTab, click **Add**.
+2	In the **Import Order** field, select a value.
+3	In the **Export order** field, select a value.
 4	Save the record.
-5	On the Values FastTab, in the Main account field, select a value.
-Note: The list of accounts is generated dynamically, based on the posting profile from the configuration. Selected Main account should be of posting type ‘Customs’.
+5	On the **Values** FastTab, in the **Main account** field, select a value.
+> [!NOTE]
+> The list of accounts is generated dynamically, based on the posting profile from the configuration. Selected Main account should be of posting type ‘Customs’.
 
+6	Select **IGST CUS** node
+7	On the **Values** FastTab, in the **Main account** field, select a value.
 
-6	Select IGST CUS node
-7	On the Values FastTab, in the Main account field, select a value.
-
-Note: Main account selected for Customs duty accrual should be the same account selected for the Customs duty accrual account of the GST > IGST node
+> [!NOTE]
+> Main account selected for Customs duty accrual should be the same account selected for the Customs duty accrual account of the GST > IGST node
 
 
 Tax type - GST
-6	Click General ledger > Setup > Sales tax > India > Tax setup.
-7	Select a company.
-8	Click Setup.
-9	Select the GST node.
-10	On the Tax type mapping tab, in the Tax type field, select GST.
+6.	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax setup**.
+7.	Select a company.
+8.	Click Setup.
+9.	Select the GST node.
+10.	On the Tax type mapping tab, in the Tax type field, select GST.
 
 Define a tax period
-2	Select the node for the tax component.
-3	On the Tax period mapping tab, in the Period field, select a value.
+2.	Select the node for the tax component.
+3.	On the Tax period mapping tab, in the Period field, select a value.
 
 Define main accounts
-8	On the Accounting tab, on the Conditions FastTab, click Add.
-9	In the GST Registration Number field, select a value.
-10	Save the record.
-11	On the Values FastTab, in the Main account field, select a value.
-Note: The list of accounts is generated dynamically, based on the posting profile from the configuration.
+8.	On the **Accounting** tab, on the **Conditions** FastTab, click **Add**.
+9.	In the **GST Registration Number** field, select a value.
+10.	Save the record.
+11.	On the **Values** FastTab, in the **Main account** field, select a value.
+> [!NOTE]
+> The list of accounts is generated dynamically, based on the posting profile from the configuration.
+> Tax main accounts can be defined at level of the tax type or the tax component. The value at the tax component level will override the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level will be used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
 
-Note: Tax main accounts can be defined at level of the tax type or the tax component. The value at the tax component level will override the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level will be used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
 Set up rate and percentage tables
-1	Expand the node for the tax Component.
-2	Select the Rate node, and then, in the Value field, define the tax rates.
-3	Select the Reverse Charge Percentage node, and then, in the Value field, define the reverse charge percentage.
-4	Select the Load on Inventory Percentage node, and then, in the Value field, define the load on inventory percentage.
+1.	Expand the node for the tax Component.
+2.	Select the **Rate** node, and then, in the Value field, define the tax rates.
+3.	Select the **Reverse Charge Percentage** node, and then, in the **Value** field, define the reverse charge percentage.
+4.	Select the **Load on Inventory Percentage** node, and then, in the **Value** field, define the load on inventory percentage.
+5.	Click **Close**.
+6.	Click **Parameters**.
+7.	Click **OK**.
 
-5	Click Close.
-6	Click Parameters.
-7	Click OK.
 Set up and activate a tax hierarchy tree
 Set up the General ledger parameter
-1	Click General ledger > Setup > General ledger parameters.
-2	On the Sales tax tab, select the Use the sales tax hierarchy framework check box.
-
-3	Click Close.
+1.	Click **General ledger** > **Setup** > **General ledger parameters**.
+2.	On the **Sales tax** tab, select the Use the sales tax hierarchy framework check box.
+3.	Click **Close**.
 Set up a sales tax hierarchy and setoff rules
-1	Click General ledger > Setup > Sales tax > India > Sales tax hierarchies.
-2	Click New.
-3	In the Name field, enter a value.
-4	In the Structure field, select GTE hierarchy.
-5	Click OK.
-6	On the Versions FastTab, click Synchronize.
-7	Close the message.
-8	Click View.
-
-The Sales tax hierarchy designer form shows the tax type and tax components per the configuration.
-
-9	Click Setoff rules for sales tax hierarchy.
-10	Click New.
-11	In the Name field, enter a value.
-12	Save the record.
-13	On the Recoverable FastTab, select the tax components, and adjust the Priority values.
-14	On the Payable FastTab, select the tax components, and adjust the Priority values.
-15	Define the setoff rules per the legal requirement.
-16	Click Close.
-17	Close the Sales tax hierarchy designer form.
-18	Click Activate.
-19	Click Close.
-20	Click General ledger > Setup > Maintain setoff hierarchy profiles.
-21	Click New.
-22	In the Effective date field, enter a value.
-23	In the Hierarchy field, select a value.
-24	Click OK.
-25	Click Activate.
-26	Click Yes.
-27	Close the message.
-28	Close the form.
+1.	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Sales tax hierarchies**.
+2.	Click **New**.
+3.	In the **Name** field, enter a value.
+4.	In the **Structure** field, select **GTE hierarchy**.
+5.	Click **OK**.
+6.	On the **Versions** FastTab, click **Synchronize**.
+7.	Close the message.
+8	Click **View**. The Sales tax hierarchy designer form shows the tax type and tax components per the configuration.
+9.	Click Setoff rules for sales tax hierarchy.
+10.	Click New.
+11.	In the Name field, enter a value.
+12.	Save the record.
+13.	On the Recoverable FastTab, select the tax components, and adjust the Priority values.
+14.	On the Payable FastTab, select the tax components, and adjust the Priority values.
+15.	Define the setoff rules per the legal requirement.
+16.	Click Close.
+17.	Close the Sales tax hierarchy designer form.
+18.	Click Activate.
+19.	Click Close.
+20.	Click General ledger > Setup > Maintain setoff hierarchy profiles.
+21.	Click New.
+22.	In the Effective date field, enter a value.
+23.	In the Hierarchy field, select a value.
+24.	Click OK.
+25.	Click Activate.
+26.	Click Yes.
+27.	Close the message.
+28.	Close the form.
 
 GST minor codes
 
-1	Click General ledger > Setup > Sales tax > India > GST minor codes.
-2	Create a record.
-3	In the Tax component field, select a value.
-4	In the Minor code field, enter a value.
-5	In the Description field, enter a value.
-6	Click Close.
+1.	Click General ledger > Setup > Sales tax > India > GST minor codes.
+2.	Create a record.
+3.	In the Tax component field, select a value.
+4.	In the Minor code field, enter a value.
+5.	In the Description field, enter a value.
+6.	Click Close.
 Purchase transactions
 Purchases from an unregistered vendor
 Purchase requisition
-1	Click Procurement and sourcing > Common > Purchase requisitions > All purchase requisitions.
-2	Create a purchase requisition for a taxable item.
-3	Save the record. The Tax information button becomes available.
-4	Click Tax information.
+1.	Click Procurement and sourcing > Common > Purchase requisitions > All purchase requisitions.
+2.	Create a purchase requisition for a taxable item.
+3.	Save the record. The Tax information button becomes available.
+4.	Click Tax information.
+5.	On the GST tab, validate the default values for the following fields.
+    -	GSTIN/GDI/UID
+    -	HSN code
+    -	ITC category: Input
+    -	Service category: Inward
 
-5	On the GST tab, validate the default values for the following fields.
-●	GSTIN/GDI/UID
-●	HSN code
-●	ITC category: Input
-●	Service category: Inward
+6.	Click the Vendor tax information tab.
 
-6	Click the Vendor tax information tab.
-
-Notes:
-●	The company address and the vendor address are in different states. Therefore, this transaction is an interstate transaction.
-●	The Tax information field is blank for the vendor. Therefore, the dealer is an unregistered dealer.
-7	Click OK.
-8	On the Action Pane, on the Purchase tab, in the Tax group, click Tax document to review the calculated taxes.
+  > [!NOTE]
+  >  -	The company address and the vendor address are in different states. Therefore, this transaction is an interstate transaction.
+  >  -	The Tax information field is blank for the vendor. Therefore, the dealer is an unregistered dealer.
+7.	Click OK.
+8.	On the Action Pane, on the Purchase tab, in the Tax group, click Tax document to review the calculated taxes.
 Example:
 ●	Taxable value: 10,000.00
 ●	IGST: 20 percent
