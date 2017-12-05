@@ -44,7 +44,7 @@ Before you complete the steps in this topic, you must update your local agent. F
  
 ## Reconfigure your enviornment
 
-1. In LCS, navigate to the **Environments** blade in your on-premises project. 
+1. In LCS, navigate to your on-premises project and open the **Environments** blade. 
 2. Click **Reconfigure**.
 3. Select the new topology for your platform. 
 4. Enter the environment name. You can use the same name or enter a new one. 
