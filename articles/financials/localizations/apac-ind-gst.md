@@ -75,47 +75,27 @@ Create business verticals on the Business verticals page (**General ledger** > *
 22.	In the Business vertical select a value.
 
 ### Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-#### Legal entity
-1.	Click **Organization administration** > **Setup** > **Organizations** > **Legal entities** > **Addresses** > **Edit** > **Tax information**.
-2.	Click New.
-3.	In the Name or description field, enter a value.
-4.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-5.	Select the Primary check box.
-6.	Click Yes to acknowledge the message.
-7.	Click Close.
-8.	Repeat steps 2 through 7, for all the other required legal entity addresses.
-#### Warehouses
-9.	Click **Inventory management** > **Setup** > **Inventor**y > **Inventory breakdown** > **Warehouse** > **Addresses** > **Edit** > **Tax information**.
-10.	Click Add.
-11.	In the Name or description field, enter a value.
-12.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-13.	Select the Primary check box.
-14.	Click Yes to acknowledge the message.
-15.	Save the record.
-16.	Click Close.
-#### Vendors
-17.	Click **Accounts payable** > **Vendors** > **All vendors** > **Addresses** > **Edit** > **Tax information**.
-18.	Click Add.
-19.	In the Name or description field, enter a value.
-20.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-21.	Select the Primary check box.
-22.	Click Yes to acknowledge the message.
-23.	Save the record.
-24.	Click Close.
-25.	On the Tax information FastTab, select the Composition scheme check box if a composition scheme is used to purchase from the dealer.
 
-#### Customers
-26.	Click **Accounts receivable** > **Customers** > **All customers** > **Addresses** > **Edit** > **Tax information**.
-27.	Click Add.
-28.	In the Name or description field, enter a value.
-29.	On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
-30.	Select the Primary check box.
-31.	Click Yes to acknowledge the message.
-32.	Save the record.
-33.	Click Close.
-34.	On the Tax information FastTab, select the Consumer check box to identify the customer as a consumer.
-35.	For customer sales through an e-commerce operator, enter a value in the Merchant ID field, and select a value in the Default E- Commerce operator field.
-36.	In the Customer type field, select Govt company or other agencies for sales with government companies or other agencies.
+1.	Go to the Addresses tab for customers, vendors, legal entities and warehouses
+  - **Organization administration** > **Setup** > **Organizations** > **Legal entities** > **Addresses** > **Edit** > **Tax information**.
+  - **Inventory management** > **Setup** > **Inventor**y > **Inventory breakdown** > **Warehouse** > **Addresses** > **Edit** > **Tax information**
+  - **Accounts receivable** > **Customers** > **All customers** > **Addresses** > **Edit** > **Tax information**
+  - **Accounts receivable** > **Customers** > **All customers** > **Addresses** > **Edit** > **Tax information**
+2. Click **Edit**.
+3. On the **Tax information** tab, click **New**.
+4. In the Name or description field, enter a value.
+5. On the GST FastTab, in the GSTIN/GDI/UID field, select a value.
+6. Select the Primary check box.
+7. Click Yes to acknowledge the message.
+8. Click Close.
+9. For a legal entity, repeat steps 2 through 7 for all the other required legal entity addresses.
+10. For a vendor, On the Tax information FastTab, select the Composition scheme check box if a composition scheme is used to purchase from the dealer.
+11.	For a customer, select the Consumer check box to identify the customer as a consumer.
+12.	For a customer sales through an e-commerce operator, enter a value in the Merchant ID field, and select a value in the Default E- Commerce operator field.
+13.	For a customer, in the Customer type field, select Govt company or other agencies for sales with government companies or other agencies.
+
+
+
 
 #### HSN codes and Service accounting codes
 HSN codes
