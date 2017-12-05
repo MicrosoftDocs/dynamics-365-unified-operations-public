@@ -67,7 +67,9 @@ As you may notice, on the attribute form there's a dedicated section for the Att
 Of the mentioned properties, the actual property that affects the treatment of the attribute values by the system on Retail Point of Sale is "Can be refined". Upon setting the value to be "Yes" for "Can be refined" only those attributes show up for refinement on Point of sale. 
 
 Actual purpose of the remaining properties in attribute metadata - 
-  - Searchable,
+
+
+- Searchable,
   - Retrievable,
   - Can be queried,
   - Sortable,
@@ -116,4 +118,76 @@ One or more attribute groups that can be associated with category nodes in the f
   [Note: The aforementioned approach can be used to assign attribute groups to categories in Channel navigation category hierarchy, and Supplemental product category hierarchy as well:
 - Retail and commerce > Category and product management > Channel navigation categories
 - Retail and commerce > Category and product management > Supplemental product categories]
+
+
+## Assign attribute groups to Retail stores
+
+One or more attribute groups that can be associated with one or more Retail stores in the retail stores hierarchy. Products will inherit the attributes, which are included in the attribute groups, when they are enriched for specific retail stores.
+
+
+## How-to Steps – Assign attribute groups to Retail stores
+- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
+- Go to Retail and commerce  Channel setup  Channel categories and product attributes
+- Assign the following attribute groups to the “Houston” channel:
+- Select channel "Houston"
+- Click on button "Add" under the Attribute group fast tab and then select " SharePointProvisionedProductAttributeGroup" in the Name drop down.
+- Click on button "Add" under the Attribute group fast tab and then select "Men’s belt" in the Name drop down.
+- Click on button "Add" under the Attribute group fast tab and then select "Fashion Sunglasses" in the Name drop down.
+	[*Note: There is an option to inherit attribute groups from parent channel in the hierarchy. If enabled, the child channel node will inherit all the attribute groups (and all the attributes contained in the attribute groups).]*
+- Enable the attributes to be available in the “Houston” channel
+- Click on Set attribute metadata on the action pane.
+	- In the Metadata form:
+	- Select category node “Fashion” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
+	- Select category node “Fashion Accessories  Fashion Sunglasses” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
+	- Select category node “Menswear  Pants” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
+	
+---- Add screenshot for Channel categories and product attributes ----
+
+## Override attribute values
+The default values of the attributes can be overridden at the product level, that is, for individual products.
+
+## How-to Steps – Override attribute values of product
+- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
+- Go to Retail and commerce > Category and product management  Released products by category
+- Select category node “Fashion > Fashion Accessories > Fashion Sunglasses”.
+- Select the required product from the list in the right pane and then in the action pane, select “Setup Product attributes” under the Product tab.
+- Select any of the attributes from the left pane and then change / update its value in the right pane.
+
+---- Add screenshot for product attributes value on product details page ---
+
+## Override attribute values of product in Catalog
+
+The default values of the attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+
+## How-to Steps – Override attribute values of product in Catalog
+- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
+- Go to Retail and commerce  Catalog management  All catalogs
+- Select catalog “Fabrikam Base Catalog”.
+- Select category node “Fashion  Fashion Accessories  Fashion Sunglasses”.
+- Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
+- Change / update the values of the required attributes under the following fast tabs:
+	- Shared product media
+	- Shared product attributes
+	- Channel media
+	- Channel product attributes
+	*[Note: If created in Dynamics 365, Shared product media and Shared product attributes are applicable to all the Retail products.]*
+
+---- Add image for product attributes in catalog ---
+
+## Override attribute values of product in Channel
+The default values of the attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+
+## How-to Steps – Override attribute values of product in Channel
+- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
+- Go to Retail and commerce  Channel setup  Channel categories and product attributes
+- Select the “Houston” channel.
+- Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
+	*[Note: If there are no products available, then add products by clicking on the “Add” button under the “Products” fast tab and then selecting the required products from the “Add products” dialog.]*
+- Change / update the values of the required attributes under the following fast tabs:
+	- Shared product media
+	- Shared product attributes
+	- Channel media
+	- Channel product attributes
+	*[Note: If created in Dynamics 365, Shared product media and Shared product attributes are applicable to all the Retail products.]*
+
 
