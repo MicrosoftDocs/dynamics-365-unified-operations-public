@@ -75,18 +75,22 @@ If you’re using consignment inventory, you can use the vendor collaboration 
 -   **Products received from consignment inventory** - This page lists all the transactions where the ownership of products has been transferred to the company that’s consuming the inventory. You can use this information to invoice the customer.
 -   **On-hand consignment inventory** - This page shows the on-hand consignment inventory owned by your company that is on-hand at the customers warehouse.
 
-## Working with RFQs in the Vendor bidding workspace
-The Vendor bidding workspace enables you to view the RFQs you have been invited to and respond. It also shows which RFQs that you lost or won. 
-When the system is configured for public sector, it will also show all the RFQs that are publicly available (as they are published).
-In the section New bid invitations, you will find the RFQs that your company have been invited to respond to. From here, you can view an RFQ and start the bidding process. You will also find amended RFQs which require submission of a new bid.
-In the section Returned bids, you will find the RFQs that the customer has returned to get more information or updates on the bid.
-In the section Bids in progress, you will find the RFQ’s that you or a contact person representing your company have been working on but have not submitted yet.
-In the section Awarded bids, you can see when the customer has awarded at least one line item in your bid.
-In the section Lost bids, you will find bids where all lines have been rejected.
-From the link to Request for quotations you can see  a list of all the vendor’s RFQ invitations as well as any submitted bids.. The Request for quotations page lists all the RFQs that a vendor has been involved in and you can search across statuses. 
-From the link to Declined bids you can see a list of all the RFQs where a vendor’s contact person has declined to bid. 
+## Working with RFQs from the Vendor bidding workspace
+The Vendor bidding workspace enables you to view the RFQs that you have been invited to and to respond. It also shows which RFQs that you lost or won. 
 
-### Working with RFQs from the Public sector only
+If the system is configured for the public sector, you will also be able to see the RFQs that are publicly available.
+
+### View RFQs from Vendor bidding
+Open the Vendor bidding workspace to access the following sections:  
+- Click **New bid invitations** to see the RFQs that your company has been invited to respond to. From here, you can view an RFQ and start the bidding process. You will also find amended RFQs which require submission of a new bid.
+- Click **Returned bids** to see the RFQs that the customer has returned to get more information or updates on the bid.
+- Click **Bids in progress** to see the RFQs that you or a contact person representing your company has been working on but has not submitted yet.
+- Click **Awarded bids** to see when the customer has awarded at least one line item in your bid.
+- Click **Lost bids** to see bids where all lines have been rejected.
+- Click the link to **Request for quotations** to see a list of all the vendor’s RFQ invitations as well as any submitted bids. The **Request for quotations** page lists all the RFQs that a vendor has been involved in and you can search across statuses. 
+Click the link to **Declined bids** to see a list of all the RFQs where a vendor’s contact person has declined to bid. 
+
+### Working with RFQs from the Public sector
 
 From the link Open published requests for quotations you can access a list of RFQs that are available for the public. An open RFQ is an RFQ that has not yet expired. You can find the expiration date and time on the header of the RFQ.
 If you have been invited to bid, you can find the same RFQ on the New bid invitations page. If you want to bid on an open RFQ without an invitation, you may be able to invite yourself to bid. This is possible if he RFQ case has been enabled for self-invitation by the customer.
