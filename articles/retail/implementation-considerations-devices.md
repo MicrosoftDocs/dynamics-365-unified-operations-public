@@ -5,7 +5,7 @@ title: Device management implementation guidance
 description: This topic is intended for people who implement functionality that is related to device management in a retail environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
 manager: AnnBe
-ms.date: 10/16/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -47,10 +47,6 @@ Finance and Operations and Retail already provide the basic requirements for dev
 
 ## Implementation considerations
 This section describes some things that you should consider as you plan to implement features that are related to inventory management in your retail store and distribution locations.
-
-If you're still discussing whether Retail Modern POS or Retail Cloud POS will be better for your business, review the implementation considerations document, Modern POS and Cloud POS **ADD LINK HERE**.
-
-If you're still discussing whether you should use Retail Store Scale Unit, review the implementation considerations document, Retail Store Scale Unit **ADD LINK HERE**.
 
 ### Generate the physical topology
 Planning is the most critical requirement for successful implementation of an enterprise resource planning (ERP) solution. One of the main deliverables of this planning should be a *physical topology*. The physical topology is a visualization of many details about a company, from the lowest POS device to the highest network connections at the headquarters. At a minimum, the following deliverables should be completed:
