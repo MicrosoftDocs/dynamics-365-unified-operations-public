@@ -39,40 +39,41 @@ Service Fabric is one of the initial components to install and configure for you
 
 ## Access Service Fabric Explorer
 Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080. To verify the address, note what was used in the topic section, [Create DNS zones and add A records](setup-deploy-on-premises-environments.md#createdns). 
-To access the site, the client certificate needs to be located in cert:\CurrentUser\My (Certificates - Current User > Personal > Certificates) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
+To access the site, the client certificate needs to be in cert:\CurrentUser\My (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ## Stateful and Stateless Services, how to identify nodes for log review 
 To find out what machine is the primar instance for Stateful Services, like a Local Agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**. Note the primary node. 
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
 ## Timeout error received when creating a Service Fabric cluster 
-Run the Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setupsfcluster) and note any errors. 
-Verify that the Service fabric Server certificate, client certificate exists in the LocalMachine store on ALL service fabric nodes. 
-Verify that the Service fabric Server certificate has the ACL for Network Service on ALL service fabric nodes.
+Run Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setupsfcluster) and note any errors. 
+Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all service fabric nodes. 
+Verify that the Service Fabric Server certificate has the ACL for Network Service on all service fabric nodes.
 
 ## Time out while waiting for Installer Service to complete for machine x.x.x.x
-You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on same machine, for example AOS and ORCH on same machine, and that the ConfigTemplate.xml is correctly defined. 
+You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must be on the same machine and ConfigTemplate.xml is correctly defined. 
 
 ## Remove a specific application 
-We recommend that you use LCS to remove or cleanup deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.  
+We recommend that you use Lifecycle Services (LCS) to remove or cleanup deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.  
+
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm. 
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm. 
 
 ## Remove Service Fabric completely 
-To remove the Service Fabric completely remove ServiceFabricCluster.ps1 -ClusterConfigFilePath "<path to working directory>\ClusterConfig.json". If this results in error, remove a specific node on that cluster from the
-powershell.exe -File "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1" 
+To remove the Service Fabric completely, remove ServiceFabricCluster.ps1 -ClusterConfigFilePath "<path to working directory>\ClusterConfig.json". If this results in an error, remove a specific node on that cluster from the
+powershell.exe -File "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1. 
 
-Next, remove c:\ProgramData\SF folder, if using the default. Otherwise, remove the specified folder. 
+Next, remove the folder c:\ProgramData\SF, if using the default. Otherwise, remove the specified folder. 
 If you receive an access denied error, restart PowerShell or restart the machine. 
 
 ## LocalAgent 
-LocalAgent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics. 
+LocalAgent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 ## How to find the LocalAgent values that are used 
 Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
 ## Install, upgrade, or uninstall Local agent 
-Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the follwoing upgrade and uninstall commands: 
+Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the following upgrade and uninstall commands: 
 
     LocalAgentCLI.exe Install <path of localagent-config.json> 
     LocalAgentCLI.exe Upgrade <path of localagent-config.json> 
@@ -84,10 +85,10 @@ Local agent installation is discussed in the topic, [Set up and deploy on-premis
 ## Error occurs when starting up Local agent services  
 If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification should no longer be enabled. This is done by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
-## In LCS, "Validation in progress" is showing for a period of several minutes
+## In LCS, "Validation in progress" is showing for several minutes
 Complete the following steps to troubleshoot general issues with local agent validation.
-1. Run the Configure-PreReqs.ps1 on all the orchestrator machines to configure the machines correctly. 
-2. Verify that the script Test-D365FOConfiguration.ps1 passes on all of the orchestrator machines.  
+1. Run Configure-PreReqs.ps1 on all the Orchestrator machines to configure the machines correctly. 
+2. Verify that the script Test-D365FOConfiguration.ps1 passes on all of the Orchestrator machines.  
 3. Verify that the installation of LocalAgentCLI.exe completed successfully. 
 4. Go to Service Fabric Explorer and verify that the applications are all healthy. 
 5. If the applications are not healthy, locate the primary node for the failing service. 
@@ -97,21 +98,21 @@ Complete the following steps to troubleshoot general issues with local agent val
    - **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-LocalAgent 
 
 **Common errors**
-The following are common errors that you may see:
+The following are common errors that you may encounter:
 
-- Receiving 'Unable to process commands' and/or 'Unable to get the channel information' messages 
-- "RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate 
+- 'Unable to process commands' and/or 'Unable to get the channel information' messages. 
+- "RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate. 
 
 **Reason**
-These errors might occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant. 
+These errors may occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant. 
 
 **Steps** 
-To resolve these errors, complete the followign steps.
+To resolve these errors, complete the following steps.
 1. Run Test-D365FOConfiguration.ps1 on all Orchestrator nodes to ensure all checks pass. 
 2. Verify that the certificate specified in local agent configuration is correct.  
 
 - Make sure there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml. 
-- The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for  
+- The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for the following:
     
         <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="true"> 
           <Name>OnPremLocalAgent</Name> 
@@ -131,13 +132,13 @@ The file share specified in local agent configuration is not valid.
 
 **Steps** 
 1. Verify that the specified share exists. 
-2. Verify that the local agent user has full permission on the share. The local agent user is the DNS name specified in ConfigTemplate.xml in the section, 
+2. Verify that the local agent user has full permission on the share. The local agent user is the DNS name specified in ConfigTemplate.xml in the following section: 
   
           <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent"> 
               <DNSHostName>svc-LocalAgent.d365ffo.onprem.contoso.com</DNSHostName> 
           </ADServiceAccount> 
           
-3. Ensure that the Setup file share section in setup document is completed. 
+3. Ensure that the Setup file share section in the setup document is completed. 
 4. Uninstall the local agent.  
 5. Specify the correct file share in local agent configuration and download the configuration file again. 
 6. Install local agent again with the new configuration file. 
@@ -146,15 +147,15 @@ The file share specified in local agent configuration is not valid.
 Login failed for user 'D365\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. [CLIENT: 10.0.2.23]  
 
 **Reason**
-The local agent user is not able to connect to the orchestration database. This could happen because users may have been deleted and then recreated in the AD which means the SID of the user has changed. Any access given to the user for the SQL Server or database will no longer work. 
+The local agent user is not able to connect to the orchestration database. This could happen because users may have been deleted and then recreated in the AD, which means the SID of the user has changed. Any access given to the user for the SQL Server or database will no longer work. 
 
 **Steps**
-To resolve this error, complete the followign steps.
+To resolve this error, complete the following steps.
 1. Run the script on the SQL server:
 
         .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
         
-This creates an empty orchestrator database, if one does not already exist, and adds the local agent user to the database with db_owner permission 
+This creates an empty Orchestrator database, if one does not already exist, and adds the local agent user to the database with db_owner permission 
 2. The application should automatically go to healthy state after the correct permissions are provided. 
 3. If any of the settings, such as the SQL FQDN, Database name, and local agent user was provided incorrectly in LCS, change the settings and reinstall local agent. 
 4. If the first three steps do not resolve the issue, manually remove the local agent user from the SQL server and the database and then re-run the Initialize-Database script. 
@@ -164,7 +165,7 @@ This creates an empty orchestrator database, if one does not already exist, and 
 The local agent user can't connect to the SQL server or database. 
 
 **Steps** 
-1. Delete the svc-LocalAgent user from the sql server primary node databases and then remove the login from both servers.  
+1. Delete the svc-LocalAgent user from the SQL server primary node databases and then remove the login from both servers.  
 2. Run the following scripts: 
 
         .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator 
@@ -181,7 +182,7 @@ The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX
 **Steps** 
 Complete the following steps to resolve the error.
 1. Run [psping lcsapi.lcs.dynamics.com:80].  
-2. If you don't receive a reply, contact the IT department at your organization as the firewall is blocking access to lcsapi or proxy issues:
+2. If you don't receive a reply, contact the IT department at your organization. The firewall is blocking access to lcsapi or proxy issues.
 
         Lcsapi.lcs.dynamics.com 
         <lcs azure blob storage domain> 
@@ -203,7 +204,7 @@ Complete the following steps to resolve the error.
 6. Check for svc-LocalAgent$ rights to path (NTFS and share permissions). 
 
 ## Error: "Unable to load DLL 'FabricClient.dll':"
-If you receive this error, close and reopen PowerShell. If the error still occurrs, restart the machine. 
+If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine. 
 
 ## What Cluster ID in Agent config should be used 
 The Cluster ID can be any GUID. This GUID is used for tracking purposes. 
