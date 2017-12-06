@@ -180,11 +180,11 @@
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
-#### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Retail Store Scale Unit configuration and installation](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
-#### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
-#### [Retail POS device activation](dev-itpro/retail-device-activation.md)
-#### [Secure retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
+### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail POS device activation](dev-itpro/retail-device-activation.md)
+### [Secure retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 ### [Mass deployment of Retail self-service components](dev-itpro/retail-mass-deployment.md)
 ### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,48 +194,52 @@
 ### [Overview of upgrade and N-1 support](dev-itpro/overview-upgrade-n-minus1.md)
 ### [Install N-1 components](dev-itpro/n-1-installation-configuration.md)
 
+## Implementation guidance
+### [Device management implementation guidance](implementation-considerations-devices.md)
+
 ## Environment configuration
 ### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
-## Extensibility
-### Point of sale
-#### [Retail POS screen layouts](pos-screen-layouts.md)
-##### [Install the POS Layout designer](install-pos-layout-designer.md)
-#### [Configure MPOS for offline mode](dev-itpro/retail-modern-pos-offline.md)
-#### [MPOS and Cloud POS trigger extensibility](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Add a custom control to a POS view](dev-itpro/pos-custom-control.md)
-#### [POS payment extension](dev-itpro/pos-payment-extension.md)
-#### [External gift card support](dev-itpro/gift-card.md)
+## Point of sale extensibility
+### [Retail POS screen layouts](pos-screen-layouts.md)
+### [Install the POS Layout designer](install-pos-layout-designer.md)
+### [Configure MPOS for offline mode](dev-itpro/retail-modern-pos-offline.md)
+### [MPOS and Cloud POS trigger extensibility](dev-itpro/modern-pos-trigger-extensibility.md)
+### [Add a custom control to a POS view](dev-itpro/pos-custom-control.md)
+### [POS payment extension](dev-itpro/pos-payment-extension.md)
+### [External gift card support](dev-itpro/gift-card.md)
 ### [Create a Retail Experience app](dev-itpro/create-retail-experience-app.md)
 ### [Hardware Station overview and extensibility](dev-itpro/hardware-station-extensibility.md)
 
-### Retail Server
-#### [Extend a Retail Server OData controller](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Web API and OData controllers](dev-itpro/odata-controllers-api.md)
-#### [Retail Server customer and consumer APIs](dev-itpro/retail-server-customer-consumer-api.md)
-#### [Extend the metadata](dev-itpro/extend-metadata.md)
-#### [Extend commerce runtime to support POS offline mode](dev-itpro/call-crt-service-offline.md)
-### Commerce runtime
-#### [Commerce runtime overview](dev-itpro/commerce-runtime-overview.md)
-#### [Commerce runtime and Retail Server extensibility ](dev-itpro/commerce-runtime-extensibility.md)
-#### [Add customer preference data to a channel database](dev-itpro/add-customer-preference-channel.md)
-#### [Add properties to a sales order](dev-itpro/add-properties-sales-order.md)
-#### [Commerce runtime extensibility and triggers](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [Trigger example: Blocking transaction](dev-itpro/trigger-example-blocking-transaction.md)
-#### [Trigger example: Return policy](dev-itpro/trigger-example-return-policy.md)
-### e-Commerce
-#### [Configure an online store](dev-itpro/configure-online-store.md)
-#### [Configure authentication providers](dev-itpro/configure-authentication-providers.md)
-#### [e-Commerce platform](dev-itpro/ecommerce-platform.md)
-#### [e-commerce platform SDK](dev-itpro/ecommerce-platform-sdk.md)
-### Payment connector
-#### [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [Deploy a payment connector](dev-itpro/deploy-payment-connector.md)
-#### [Create a Windows installer for a payment connector](dev-itpro/create-windows-installer-payment-connector.md)
+## Retail Server extensibility
+### [Extend a Retail Server OData controller](dev-itpro/extend-retail-server-odata-controller.md)
+### [Web API and OData controllers](dev-itpro/odata-controllers-api.md)
+### [Retail Server customer and consumer APIs](dev-itpro/retail-server-customer-consumer-api.md)
+### [Extend the metadata](dev-itpro/extend-metadata.md)
+### [Extend commerce runtime to support POS offline mode](dev-itpro/call-crt-service-offline.md)
 
-## Retail SDK
-### [Retail SDK overview](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## Commerce runtime extensibility
+### [Commerce runtime overview](dev-itpro/commerce-runtime-overview.md)
+### [Commerce runtime and Retail Server extensibility ](dev-itpro/commerce-runtime-extensibility.md)
+### [Add customer preference data to a channel database](dev-itpro/add-customer-preference-channel.md)
+### [Add properties to a sales order](dev-itpro/add-properties-sales-order.md)
+### [Commerce runtime extensibility and triggers](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [Trigger example: Blocking transaction](dev-itpro/trigger-example-blocking-transaction.md)
+### [Trigger example: Return policy](dev-itpro/trigger-example-return-policy.md)
+
+## e-Commerce extensibility
+### [Configure an online store](dev-itpro/configure-online-store.md)
+### [Configure authentication providers](dev-itpro/configure-authentication-providers.md)
+### [e-Commerce platform](dev-itpro/ecommerce-platform.md)
+### [e-commerce platform SDK](dev-itpro/ecommerce-platform-sdk.md)
+
+## Payment connector extensibility
+### [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [Deploy a payment connector](dev-itpro/deploy-payment-connector.md)
+### [Create a Windows installer for a payment connector](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK overview](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
@@ -250,6 +254,9 @@
 ### [Customer attributes](dev-itpro/customer-attributes.md)
 ### [Retail Typescript and C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
 ### [Run Retail POS samples](dev-itpro/pos-run-samples.md)
+### [Extend existing POS views to add custom columns and app bar buttons](dev-itpro/pos-view-extension.md)
+### [Add custom columns and controls to Retail Modern POS transaction pages](dev-itpro/pos-custom-transaction.md)
+### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
 
 ## Commerce runtime
 ### [Loyalty extension](dev-itpro/retail-sdk/loyalty-extension-sample.md)
