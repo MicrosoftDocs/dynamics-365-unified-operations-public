@@ -1033,6 +1033,7 @@
 #### Mexico
 ##### [Adjustment inflation declaration report](../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 ##### [Cancel an electronic invoice](../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md)
+##### [CFDI Version 3.3](../financials/localizations/latam-mex-cfdi-3-3.md)
 ##### [Customer registration IDs and other information](../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md)
 ##### [DIOT declaration statement](../financials/localizations/latam-mex-diot-declaration-statement.md)
 ##### [E-invoicing CFDI](../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md)
