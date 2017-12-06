@@ -114,7 +114,7 @@ The following steps describe the process for translating custom fields in other 
 In some rare cases, you may decide that a custom field is no longer needed. When this occurs, you can choose to delete the field from the **Custom fields** page. Note, however, this action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
 
 ## Appendix 
-### [Advanced] Tables that support custom fields
+### Tables that support custom fields
 For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.
 
 1.   The table must be tagged as one of these groups: 
