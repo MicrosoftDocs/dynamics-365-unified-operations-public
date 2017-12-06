@@ -6,7 +6,7 @@ title: Price and discounts changes in the Fall Release 2017
 description: This topic describes the changes in the price and discount area in the Fall Release 2017.
 author: smithanataraj
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,7 +50,6 @@ Typically, adding a new type of price discount search would start with adding a 
 PriceTypeTradeAgreementMapping would also be where the mapping of fields on the Customer/Vendor tables or InventTable table corresponding to the price types, is defined. 
 
 NOTE: In the diagram below, the methods are only shown on one of the sub-classes (only for the purpose of illustration), though the implementation needs to be on each. 
-
 
 ![PriceGroupTypeTradeAgreementMapping](media/PricingFall20171.png)
 
