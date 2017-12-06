@@ -75,7 +75,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 The following topics provide an overview of the extensibility changes proposed for the fall 2017 release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-+ [Enabling extensibility on pricing](pricing-fall-2017.md)
++ [Enabling extensibility on pricing](Pricing-Fall-2017.md)
 + [Map extensions](MapExtensions.md)
   + [Extending table maps used as interfaces](MapsAsInterfaces.md)
   + [Extending table maps used for versioning](MapsWithVersioning.md)
