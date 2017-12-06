@@ -5,7 +5,7 @@ title: Sales tax reports for Poland
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland.
 author: mrolecki
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
