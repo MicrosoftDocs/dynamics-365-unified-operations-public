@@ -54,7 +54,7 @@ record](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpr
 
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and 
-Finance and Operations, an application entry must be registered in AD FS under
+Microsoft Dynamics for Finance and Operations, an application entry must be registered in AD FS under
 an AD FS application group. To create this application entry, run the following
 Windows PowerShell commands on a machine where the AD FS is installed. The user
 account must have enough permissions to administer AD FS.
@@ -68,7 +68,7 @@ account must have enough permissions to administer AD FS.
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
 >   (where
 >   [https://ax.d365ffo.onprem.contoso.com](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
->   is the URL to access Microsoft Dynamics 365).
+>   is the URL to access Microsoft Dynamics 365 for Finance and Operations).
 
 >   The \<Admin user\> can be any user with admin access to the AD FS machine.
 
@@ -79,11 +79,11 @@ account must have enough permissions to administer AD FS.
         Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
 ## Create and configure a user account
 
-To enable Microsoft Dynamics 365 to use your AD FS application, you must create
+To enable Microsoft Dynamics 365 for Finance and Operations to use your AD FS application, you must create
 a user account in Microsoft Dynamics 365 with the same user credentials as the
 user of the warehousing app:
 
-1.  Create a user in Microsoft Dynamics 365 and assign the warehousing mobile
+1.  Create a user in Microsoft Dynamics 365 for Finance and Operations and assign the warehousing mobile
     device user role to the user.
 
     a.  Go to **System administration** \> **Common** \> **Users**.
@@ -95,7 +95,7 @@ user of the warehousing app:
 
 2.  Associate your AD FS application with the warehousing app user.
 
-    a.  In Microsoft Dynamics 365, click **System administration** \> **Setup**
+    a.  In Microsoft Dynamics 365 for Finance and Operations, click **System administration** \> **Setup**
         \> **Azure Active Directory applications**.
         
     b.  Create a new line.
@@ -117,7 +117,7 @@ certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx)
 ## Configure the application
 
 You must configure the warehousing app on the device to connect to the Microsoft
-Dynamics 365 server through the AD FS application.
+Dynamics 365 for Finance and Operations server through the AD FS application.
 
 1.  In the app, open **Connection settings**.
 2.  Enter the following information:
@@ -130,19 +130,19 @@ Dynamics 365 server through the AD FS application.
         created an application entry in AD FS.
 
     c.  **Active Directory Resource** - The DNS URL for the Microsoft Dynamics
-        365 AOS. Append the URL with '/namespaces/AXSF'. For example:
+        365 for Finance and Operations AOS. Append the URL with '/namespaces/AXSF'. For example:
         [https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF](https://mobiletestax.trial.operations.dev.dynamics.com/namespaces/AXSF)
 
     d.  **Active Directory Tenant** - The DNS URL for the Microsoft Dynamics 365
-        AD FS machine. Append the URL with '/adfs/oauth2'. For example:  
+        for Finance and Operations AD FS machine. Append the URL with '/adfs/oauth2'. For example:  
         <https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2>
 
 >   Make sure to use the CNAME of the ADFS machine (in the example the CNAME is
 >   <https://adfs.d365ffo.onprem.contoso.com>)
 
-1.  **Company** - Enter the legal entity in Microsoft Dynamics 365 to which you
+1.  **Company** - Enter the legal entity in Microsoft Dynamics 365 for Finance and Operations to which you
     want the application to connect.
 2.  Select the **Back** button in the top-left corner of the application.
 
->   The application will now connect to your Microsoft Dynamics 365 server and
+>   The application will now connect to your Microsoft Dynamics 365 for Finance and Operations server and
 >   the log-in screen for the warehouse worker will display.
