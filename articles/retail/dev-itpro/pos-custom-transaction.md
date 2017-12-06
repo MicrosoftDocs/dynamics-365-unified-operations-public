@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: POS custom columns and controls on transaction pages
-description: This topic explains how to add a new POS custom control on the POS transaction page by using the screen layout designer.
+title: Retail Modern POS custom columns and controls on a transaction page
+description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2017
@@ -29,27 +29,27 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# POS custom columns and controls on transaction pages
+# Retail Modern POS custom columns and controls on transaction pages
 
-You can add more information to the Retail POS transaction page by using custom controls. You can add a custom control to the POS transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This topic explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
+You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This topic explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
 > [!NOTE]
 > This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Add a new custom control
 
-1. Sign in to Retail.
-2. Select **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
+1. Sign in to Retail Modern POS.
+2. Select **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
 3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
 5. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
 6. When you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials, enter the information to start the designer.
-7. In the designer, drag the custom control from the left pane to the transaction page, and then adjust, resize, or reposition the custom control as you require.
-8. On the transaction page, right-click the custom control, and then select **Customize**.
-9. In the custom control dialog box, set these properties:
+7. In the designer, drag the custom control from the left pane to the page, and then adjust, resize, or reposition the custom control as you require.
+8. On the page, right-click the custom control, and then select **Customize**.
+9. In the dialog box, set these properties:
 
     - **Control Name:** lineDetails
-    - **Package Name:** Pos\_Extensibility\_Samples
+    - **Package Name:** Pos_Extensibility_Samples
     - **Publisher Name:** Contoso
 
     > [!NOTE]
@@ -57,13 +57,13 @@ You can add more information to the Retail POS transaction page by using custom 
 
 10. Close the designer by selecting the **Close** button (**X**).
 11. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes won't be saved.
-12. Select **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+12. Select **Retail** > **Retail IT** > **Distribution schedule**.
 13. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Add business logic to the custom control
 
 1. Start Microsoft Visual Studio 2015 as an administrator.
-2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
 3. In the **POS.Extensions** project, create a folder that is named **CustomControlExtensions**.
 4. In the **CustomControlExtensions** folder, create a folder that is named **Cart**.
 5. In the **Cart** folder, create a Typescript file that is named **CartViewController.ts**.
@@ -199,10 +199,10 @@ You can add more information to the Retail POS transaction page by using custom 
 
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_LineDetails";
-    public readonly cartLineItemId: Computed&lt;string&gt;;
-    public readonly cartLineDescription: Computed&lt;string&gt;;
-    public readonly isCartLineSelected: Computed&lt;boolean&gt;;
-    private readonly _cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
+    public readonly cartLineItemId: Computed<string>;
+    public readonly cartLineDescription: Computed<string>;
+    public readonly isCartLineSelected: Computed<boolean>;
+    private readonly _cartLine: Observable<ProxyEntities.CartLine>;
     private _state: ICartViewCustomControlState;
     ```
 
@@ -212,7 +212,7 @@ You can add more information to the Retail POS transaction page by using custom 
     constructor(id: string, context: ICartViewCustomControlContext) {
         super(id, context);
         this._cartLine = ko.observable(null);
-        this.cartLineItemId = ko.computed(() =&gt; {
+        this.cartLineItemId = ko.computed(() => {
             let cartLine: ProxyEntities.CartLine = this._cartLine();
             if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
                 return cartLine.ItemId;
@@ -220,7 +220,7 @@ You can add more information to the Retail POS transaction page by using custom 
             return StringExtensions.EMPTY;
         });
 
-        this.cartLineDescription = ko.computed(() =&gt; {
+        this.cartLineDescription = ko.computed(() => {
             let cartLine: ProxyEntities.CartLine = this._cartLine();
             if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
                 return cartLine.Description;
@@ -228,14 +228,14 @@ You can add more information to the Retail POS transaction page by using custom 
             return StringExtensions.EMPTY;
         });
 
-        this.isCartLineSelected = ko.computed(() =&gt; !ObjectExtensions.isNullOrUndefined(this._cartLine()));
-        this.cartLineSelectedHandler = (data: CartLineSelectedData) =&gt; {
+        this.isCartLineSelected = ko.computed(() =>; !ObjectExtensions.isNullOrUndefined(this._cartLine()));
+        this.cartLineSelectedHandler = (data: CartLineSelectedData) => {
             if (ArrayExtensions.hasElements(data.cartLines)) {
-                this._cartLine(data.cartLines\[0\]);
+                this._cartLine(data.cartLines[0]);
             }
         };
 
-        this.cartLineSelectionClearedHandler = () =&gt; {
+        this.cartLineSelectionClearedHandler = () => {
             this._cartLine(null);
         };
     }
@@ -247,7 +247,7 @@ You can add more information to the Retail POS transaction page by using custom 
     public onReady(element: HTMLElement): void {
         ko.applyBindingsToNode(element, {
             template: {
-                name: LineDetailsCustomControl.TEMPLATE\_ID,
+                name: LineDetailsCustomControl.TEMPLATE_ID,
                 data: this
             }
         });
@@ -282,17 +282,17 @@ You can add more information to the Retail POS transaction page by using custom 
 
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {
         private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_LineDetails";
-        public readonly cartLineItemId: Computed&lt;string&gt;;
-        public readonly cartLineDescription: Computed&lt;string&gt;;
-        public readonly isCartLineSelected: Computed&lt;boolean&gt;;
-        private readonly_cartLine: Observable&lt;ProxyEntities.CartLine&gt;;
+        public readonly cartLineItemId: Computed<string>;
+        public readonly cartLineDescription: Computed<string>;
+        public readonly isCartLineSelected: Computed<boolean>;
+        private readonly_cartLine: Observable<ProxyEntities.CartLine>;
         private _state: ICartViewCustomControlState;
 
         constructor(id: string, context: ICartViewCustomControlContext) {
             super(id, context);
             this._cartLine = ko.observable(null);
 
-            this.cartLineItemId = ko.computed(() =&gt; {
+            this.cartLineItemId = ko.computed(() => {
                 let cartLine: ProxyEntities.CartLine = this._cartLine();
                 if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
                     return cartLine.ItemId;
@@ -300,7 +300,7 @@ You can add more information to the Retail POS transaction page by using custom 
                 return StringExtensions.EMPTY;
             });
 
-            this.cartLineDescription = ko.computed(() =&gt; {
+            this.cartLineDescription = ko.computed(() => {
                 let cartLine: ProxyEntities.CartLine = this._cartLine();
                 if (!ObjectExtensions.isNullOrUndefined(cartLine)) {
                     return cartLine.Description;
@@ -308,14 +308,14 @@ You can add more information to the Retail POS transaction page by using custom 
                 return StringExtensions.EMPTY;
             });
 
-            this.isCartLineSelected = ko.computed(() =&gt; !ObjectExtensions.isNullOrUndefined(this._cartLine()));
-            this.cartLineSelectedHandler = (data: CartLineSelectedData) =&gt; {
+            this.isCartLineSelected = ko.computed(() => !ObjectExtensions.isNullOrUndefined(this._cartLine()));
+            this.cartLineSelectedHandler = (data: CartLineSelectedData) => {
                 if (ArrayExtensions.hasElements(data.cartLines)) {
-                    this._cartLine(data.cartLines\[0\]);
+                    this._cartLine(data.cartLines[0]);
                 }
             };
 
-            this.cartLineSelectionClearedHandler = () =&gt; {
+            this.cartLineSelectionClearedHandler = () => {
                 this._cartLine(null);
             };
         }
@@ -404,7 +404,7 @@ You can add more information to the Retail POS transaction page by using custom 
 ## Validate the customization
 
 1. Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.
-2. On the **Welcome** screen, select the current transaction button.
+2. On the **Welcome** screen, select the **Current transaction** button.
 3. Add any item to the transaction, and then select the line item that you added.
 
     The custom control should show the ID and description for the selected line item.
