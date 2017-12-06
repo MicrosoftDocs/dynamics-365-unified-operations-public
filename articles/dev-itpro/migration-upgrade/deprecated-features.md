@@ -133,8 +133,7 @@ The possibility to introduce custom functions to be used in the ER expression bu
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Code sealing initiative  |
-| **Replaced by another feature?**   | None. Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.  |
-|                                    |As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class. This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class. |
+| **Replaced by another feature?**   | None. Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.<br><br>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class. This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.  |
 | **Product areas affected**         | Electronic reporting framework                                                      |
 | **Deployment option**              | All                                                                                      |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
