@@ -265,143 +265,131 @@ This error might have also occurred if the parameter **''** is not defined in th
 - Error on Microsoft-Service Fabric source.
     
 ## Can't find the certificate and private key to use for decryption (0x8009200C) 
-If you are missing a cert and ACL, or you have the wrong thumbprint entry (ex axdataenciphermentcert and AXSF$ AXServiceUser),  check for special characters. Also,  
+If you are missing a cert and ACL, or you have the wrong thumbprint entry, check for special characters and check in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt for thumbprints.  
 
-- Also may be able to see in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt 
-Note any ? For thumprints  
-
-Test via Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip 
-
-- If receive "Cannot find the certificate and private key to use for decryption" then verify  axdataenciphermentcert and svc-AXSF$ AXServiceUser ACL 
-
-If changed credentials.json then delete and redeploy from LCS 
+You can also test by using the Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip. If you receive the message, "Cannot find the certificate and private key to use for decryption", verify axdataenciphermentcert and svc-AXSF$ AXServiceUser ACL. 
+If the credentials.json have changed, delete and redeploy from LCS. 
 
 ## MR
-Additional logging can be done by registering providers. Attached ETWManifest.zip can be downloaded to primary orchestrator machine and following commands ran 
+Additional logging can be done by registering providers. Download the [ETWManifest.zip](need fwlink) to the primary orchestrator machine and run the following commands:  
 
-- Copy ETWManifest to primary orch machine and run following  
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" =    "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} 
-- Note if needed to unregister, use following command 
+
+If you need tounregister, use following command:
+
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister  
 
-After providers are registered, additional details will be logged on new deployment that can be reviewed in Event Viewer > Applications and Services Logs > Microsoft > Dynamics 
+After providers are registered, additional details will be logged on new deployment that can be reviewed in **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics**, 
 
 - MR-Logger 
 - MR-Sql 
     
-Error encountered while executing AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet) at  
-- Make sure full path is correct, ex ax.d365ffo.onprem.contoso.com 
+### Error while executing AddAXDatabaseChangeTracking
+If you encounter an error while executing AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. For example, ax.d365ffo.onprem.contoso.com.
+The error may have also occurred because of an issue with the star/* cert. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that is not valid or does not match the host ax.d365ffo.onprem.contoso.com.  
 
-Issue could also be with star/* cert 
-
-- Example, The remote certificate CN=*.d365ffo.onprem.contoso.com has and invalid name or does not match the host ax.d365ffo.onprem.contoso.com  
-
-The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. 
-
-- Verify address is reachable by manually browsing in browser 
-    
-Run initialize database script and validate DBs have correct users 
-
-If only receive AddAXDatabaseChangeTracking event, try to reach the Metadataservice of AX: 
-https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService 
-Also check Certificates of the service in file wif.config. You find this file by log on to one of the AOS boxes 
-use task manager (ex details tab), locate AxService.exe, right-click and select open file location. In wif.config file, should see 3 thumbprints. Note that: 
+### Remove name can't be resolved
+The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details. 
+  
+### Run initialize database script and validate DBs have correct users 
+If you only receive the AddAXDatabaseChangeTracking event, try to reach the Metadataservice of Dynamics 365 by going to 
+https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService. 
+Next, check the Certificates of the service in the file wif.config. To find the file, log on to one of the AOS boxes and, using Task manager, locate **AxService.exe**, right-click and select **Open file location**. In the wif.config file, you should see 3 thumbprints. Note that: 
 
 - They have to be different. 
-- They need to be in this order 
+- They need to be in this order: 
     1. Finacialreporting Thumbprint 
     2. ReportingService Thumbprint 
     3. SessionAuthentication Thumbprint 
-  If invalid then need to redeploy from LCS with proper Thumbprints. 
+If the thumbprints to not follow the list of requirements, you must redeploy from LCS with proper Thumbprints. 
 
 ## Unable to resolve the xPath value 
 Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value looking for AOS runtime user information however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.  
 
 ## ADFS
-Login page is not redirecting and is still prompting for credentials. For example, if you havExample was going to URL and getting "An error occurred. Contact your administrator for more information." 
+### Login page not redirecting
+If the Login page is not redirecting and is still prompting for credentials, or you are being redirected but receive the message, "An error occurred. Contact your administrator for more information.", you can do the following to try and resolve the issue:
 
-- Add ADFS link to trusted sites 
-- Add D365 link to trusted sites as well as likely will be next issue 
-- Try adding trailing slash '/' to see if behavior changes.  
-Verify AD FS Manager > AD FS > Application Groups. Double click on Microsoft Dynamics 365 for Operations On-premises. Under Native application, double click on Microsoft Dynamics 365 for Operations On-premises - Native application 
+- Add ADFS link to trusted sites.
+- Add Dynamics 365 link to trusted sites.
+- Try adding trailing slash '/' to see if behavior changes.
 
-- Note Redirect URI. This should match what DNS forward lookup zone is for AX 
+Verify the AD FS Manager by going to **ADFS** > **Application groups**. Double-click **Microsoft Dynamics 365 for Operations on-premises**. Under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.
+- Note the Redirect URI as it should match the DNS forward lookup zone for Dynamics 365. 
 
-Could not establish trust relationship for the SSL/TLS secure channel 
+### Error: Could not establish trust relationship for the SSL/TLS secure channel
+If you receive the error, "Could not establish trust relationship for the SSL/TLS secure channel", do the following: 
 
-- Look in Service Fabric > Cluster > Applications > AXSFType > fabric:/AXSF > details tab and Aad_AADMetadataLocationFormat /     - Aad_FederationMetadataLocation. Browse to that URL from AOS.  
-- Look in AOS Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-SystemRuntime for details 
-- Check to see if ADFS cert is trusted 
-    - Verify ADFS cert by going to ADFS machine > Server Manager > Tools > AD FS Management 
-    - Expand AD FS > Service > Certificates and note certs (ex. dc1.contoso.com) 
-    - On AOS machine go to cert manager > Certificates (Local Computer) > Trusted Root Certification Authorities > Certificates  and verify that the ADFS cert is listed (ex. dc1.contoso.com) 
+1. Go to **Service Fabric** > **Cluster** > **Applications** > **AXSFType** > **fabric:/AXSF** > **Details** tab and Aad_AADMetadataLocationFormat / - Aad_FederationMetadataLocation. Next, browse to that URL from AOS.  
+2. Go to **AOS Event Viewer** > **Applications and Services Log**s > **Microsoft** > **Dynamics** > **AX-SystemRuntime** for details. 
+3. Check to see if ADFS cert is trusted:
+    1. Verify ADFS cert by going to **ADFS machine** > **Server Manager** > **Tools** > **AD FS Management**. 
+    2. Expand **AD FS** > **Service** > **Certificates** and note the certs. For example, ex. dc1.contoso.com. 
+    3. On AOS machine, go to the Cert manager, **Certificates** (Local Computer) > **Trusted Root Certification Authorities** > **Certificates**  and verify that the ADFS cert is listed.
+If you receive a message that the site isn't secure, this is because you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. 
 
-If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store 
+### Can't connect to remove server in some locations
+If you are unable to connect to the remote server at the following places:
 
-Unable to connect to the remote server 
+- System.Net.HttpWebRequest.GetResponse() 
+- System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) 
+- System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn) 
+Go to the C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log folder where you get the err and out files. 
+The out file contains the following information: 
 
-- at System.Net.HttpWebRequest.GetResponse() 
-- at System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) 
-- at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn) go to C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log folder you get the err and out files. 
+- System.Net.WebException: Unable to connect to the remote server ---> 
+- System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443 
 
-The out file contains the info: 
+Psping, IP and see if it is reachable.  
 
-- System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443 
-- Psping, IP and see if reachable  
+### Redirect login questions and issues 
+If you are having issues with login, verify in Service Fabric Explorer that the **Provisioning_AdminPrincipalName** and **Provisioning_AdminIdentityProvider** are valid. For example,
 
-Redirect login questions/issues 
+- **Provisioning_AdminPrincipalName** would be AXServiceUser@contoso.com 
+- **Provisioning_AdminIdentityProvider** would be https://DC1.contoso.com/adfs 
+   
+If they are not valid, you will not be able to proceed and you will need to redeploy from LCS. 
 
-- Verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If not then cannot proceed and will need to redeploy from LCS. 
+If you used **Reset-DatabaseUsers.ps1**, you will need to restart the Dynamics Service for your changes to take effect. If you are still having login issues, in the **USERINFO** table, note the **NETWORKDOMAIN** and **NETWORKALIAS**. For example, 
 
-    - Following example will reference https://DC1.contoso.com/adfs	and AXServiceUser@contoso.com 
-    - Provisioning_AdminIdentityProvider would be https://DC1.contoso.com/adfs 
-    - Provisioning_AdminPrincipalName would be AXServiceUser@contoso.com 
+-  NETWORKDOMAIN example https://DC1.contoso.com/adfs 
+- NETWORKALIAS example AXServiceUser@contoso.com 
 
-- If used Reset-DatabaseUsers.ps1 note need to restart AX Service to take effect 
-- If still not working, then  
-    - Note USERINFO table, specifically NETWORKDOMAIN, NETWORKALIAS 
-    - NETWORKDOMAIN example https://DC1.contoso.com/adfs 
-    - NETWORKALIAS example AXServiceUser@contoso.com 
-    - In ADFS machine > Server Manager > Tools > AD FS Management > Service, right click on Service and Edit Federation Service Properties 
-    - Note Federation Service identifier. This should match to USERINFO.NETWORKDOMAIN (https://DC1.contoso.com/adfs) 
-    - Make sure both are https (ex. not http in ADFS but https in USERINFO) 
+In the ADFS machine, go to **Server Manager** > **Tools** > **AD FS Management** > **Service**. Right-click **Service and Edit Federation Service Properties**. Note the Federation Service identifier which should match the **USERINFO.NETWORKDOMAIN (https://DC1.contoso.com/adfs)**. Verify that both are https in **USERINFO**. 
 
-In ADFS machine go to **Event Viewer** > **Applications and Services Logs** > **AD FS** > **Admin note any errors**.
+In the ADFS machine, go to **Event Viewer** > **Applications and Services Logs** > **AD FS** > **Admin** and note any errors.
 
-### Login issues / Reset user 
-Verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If so then on    
-           - SQL primary box run .\Reset-DatabaseUsers.ps1 
-On each AOS, open Task Manager and end task on AXService.exe 
-Can verify user has been set via running following select in SQL AXDB  
+## Login issues 
+IF you or others are experiencing login issues, verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If it is valid, then on the primary SQL Server machine, run the following:    
+
+            - .\Reset-DatabaseUsers.ps1 
+On each AOS, open Task Manager, select AXService.exe, and then click **End task**. 
+To verify that a user has been reset, run the following select query in the SQL AXDB: 
 
             - select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'admin' 
             
-Note on SIDs 
+Note on SIDs
+  > [!NOTE]
+    > SID in AAD environment (online) is a hash of network alias and network domain 
+    > SID in AD environment (on-premises) is a hash of network alias and identify provider
 
-- SID in AAD environment (online) is a hash of network alias, network domain 
-- SID in AD environment (on-premises) is a hash of network alias, identify provider 
+If you still can't log in and you are receiving the error, "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds",  see the section, [ADFS](#ADFS) in this topic. 
 
-If still can't log in due to "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds" then see ADFS section 
+## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
+If you receive one of the following errors: 
 
-### System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
+- System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)  
+- System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted 
 
-System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)  
+The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes. 
 
-System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted 
-
-
-The certificates have not been installed or given access to the correct users 
-Add the public key SQL server certificate on all the service fabric nodes 
-
-### Keyset does not exist 
-Didn’t run scripts on all machines as per instructions. Go back and review Install Certificates section. Copy the scripts in each folder to the VMs that correspond to the folder name. 
+## Keyset doesn't exist 
+If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Go back and review  the section, Install Certificates section. Copy the scripts in each folder to the VMs that correspond to the folder name. 
 
 Also check csv file for correct domain being used 
 
 ## Error: RunAsync failed due to an unhandled FabricException causing replica to fault
-"RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0: 
-
-Change ClusterConfig.json diagnosticsStore from network share to local path, ex \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore 
+If you receive this error, "RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0:", change the ClusterConfig.json diagnosticsStore from network share to local path such as, \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore. 
 
 ## Error: Dbsync (DB sync) issues 
 If you are having database sync issues, look at AOS working directory, ex C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log and complete a review of the following on all AOS machines:  
