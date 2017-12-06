@@ -186,6 +186,9 @@
 ### [Overview of upgrade and N-1 support](dev-itpro/overview-upgrade-n-minus1.md)
 ### [Install N-1 components](dev-itpro/n-1-installation-configuration.md)
 
+## Implementation guidance
+### [Device management implementation guidance](implementation-considerations-devices.md)
+
 ## Environment configuration
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
