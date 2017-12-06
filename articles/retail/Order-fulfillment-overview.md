@@ -122,7 +122,7 @@ If an order line is picked in error, the unpick process must be performed on the
 
 Orders lines from different orders may selected and marked as ‘Picking’, printed on the same pick list or marked as ‘Picked’. 
 
-## Pack
+### Pack
 
 Order lines may be packed at any point after the order line has been accepted. 
 
@@ -147,7 +147,7 @@ As of AppUpdate 5, the option to mark store pickup lines as "Packed" is disabled
 
 Also after release of AppUpdate 5, the packing slip creation process will be enhanced to support injection of 3rd party shipping information into the packing slip process. 
 
-## Pick up
+### Pick up
 
 Orders for store pickup may be directly picked up once they are retrieved in the point of sale. Store pick up orders are not subject to
 acceptance. 
@@ -167,7 +167,7 @@ If a line is picked up in error, a return must be performed to correct the error
 
 Only lines on the same order and with the same mode of delivery can be picked up at the same time. 
 
-## Shipping
+### Shipping
 
 Order lines to be shipped from the store can be processed through unified order fulfillment using the ‘Ship’ action. If manual order line acceptance is configured at the channel level, orders must be accepted prior to shipping. Once an order line has been accepted and has a ‘Pending’ or other status, lines may be shipped. 
 
@@ -180,6 +180,16 @@ Lines shipped from unified order fulfillment are invoiced from the back office s
 Order lines that have been fully shipped no longer appear in unified order fulfillment. Partially shipped lines will continue to appear in unified order fulfillment until they have been shipped in full. 
 
 Only lines from the same order may be shipped at the same time. If the lines from the same order have different modes of deliver, they may still be selected for shipping at the same time. 
+
+### Reject
+
+Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. 
+
+**Action: Reject**
+  Resulting status: Rejected
+  Resulting back office status: No change 
+
+The rejected order lines can be viewed from the "Sales order processing and inquiry" workspace. Clear the person filter on the workspace to view all the rejected order lines across the stores. The "Rejected order lines" tab under the "Orders and favorites" section display the order line details. Additionally, the users can click on the "Rejected order lines" button under the "Summary" section to navigate to a sales order view. This shows all the orders which have one or more rejected order lines. If Distributed Order Management (DOM) is enabled, then these rejected orders will be automatically reassigned to the appropriate stores for fulfillment, however, these order lines can be manually reassigned as well. To do so, select the line which shows the "Fulfillment status" as "Rejected" and change the site/warehouse as desired. Then click on the "Update line" drop down and click "Reset fulfillment status" to change the fulfillment status from "Rejected" to "Accepted" or "Pending" depending on the Order fulfillment set up. Once the fulfillment status is reset, then the store workers will be able to see such order lines in the POS again.
 
 ## Line quantity tracking
 
