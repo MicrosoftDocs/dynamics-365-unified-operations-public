@@ -108,9 +108,7 @@ After a product is reported as finished at the production line it is transferred
 8.  Create a production order. Go to the **Production order** list page, and create a production order for product L0101. Quantity = 20. Estimate and start the production order. Note that the **Post picking list now** field remains set to **No**.
 9.  Report as finished from the mobile device. Go to the mobile device portal and select menu item **Report as finished and put away**. Now report as finished L0101 from the handheld device. Quantity = 10. Note that the put location is **BAYDOOR**. This location is found from the **Transfer issue** location directive for the **Put** work order type. Also notice that work of the type **Transfer issue** has been created and completed. Go to the transfer order work details to verify the work.
 10. Now report addtional 10 pieces from the mobile device. Note that the put location again is **BAYDOOR**. Also notice that a new work of type **Transfer issue** has been created for the 10 pieces.
-11. Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device. This time, location **LP-001** is suggested as the put location. This location is found from the location directive for **Finished goods put away**. This location directive is being used, because no opportunity for cross-docking exists. The transfer order for LP-001 was completely fulfilled by the two cross-docking activities in step 9 and 10.
-
-Work of the type **Finished goods put away** was created and processed.
+11. Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device. This time, location **LP-001** is suggested as the put location. This location is found from the location directive for **Finished goods put away**. This location directive is being used, because no opportunity for cross-docking exists. The transfer order for LP-001 was completely fulfilled by the two cross-docking activities in step 9 and 10. Notice that work of the type **Finished goods put away** was created and processed.
 
 #### Scenario 2 - Cross-docking from production to transfer orders with an appointment schedule
 
@@ -128,6 +126,6 @@ After a product is reported as finished at the production line it is transferred
 
 ### Additional information
 
--   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.
+-   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
 
 
