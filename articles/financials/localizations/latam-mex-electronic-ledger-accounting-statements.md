@@ -5,7 +5,7 @@ title: Electronic ledger accounting statements
 description: This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 author: sndray
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,11 +14,10 @@ ms.technology:
 # optional metadata
 
 ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTable, LedgerJournalTransVendInvoice, LedgerParameters, MainAccount, MainAccountConsolidateAccount, VendEditInvoice, VendPaymMode, VendTransInvoicePool
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265314
 ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf
@@ -186,6 +185,8 @@ Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &g
 </table>
 
 
+## Additional resources
 
+- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
 
 
