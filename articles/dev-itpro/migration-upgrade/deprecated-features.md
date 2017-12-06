@@ -46,6 +46,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
+### Extension of the list of Electronic reporting (ER) functions
+The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Code sealing initiative  |
+| **Replaced by another feature?**   | None. Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.<br><br>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class. This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.  |
+| **Product areas affected**         | Electronic reporting framework                                                      |
+| **Deployment option**              | All                                                                                      |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
@@ -127,16 +137,6 @@ Users can download this from the government portal.
 | **Deployment option**                       | All modules                                                                    |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature.  |    
 
-### Extension of the list of Electronic reporting (ER) functions
-The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Code sealing initiative  |
-| **Replaced by another feature?**   | None. Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.<br><br>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class. This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.  |
-| **Product areas affected**         | Electronic reporting framework                                                      |
-| **Deployment option**              | All                                                                                      |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
 
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
