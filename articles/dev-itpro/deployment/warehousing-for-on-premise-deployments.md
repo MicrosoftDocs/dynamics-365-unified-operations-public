@@ -34,7 +34,7 @@ This topic describes how to configure Microsoft Dynamics 365 for Finance and
 Operations - Warehousing for on-premises deployments.
 
 ## Prerequisites
-The warehousing app is available on Android and Windows operating systems. To
+The Warehousing app is available on Android and Windows operating systems. To
 use the app for on-premises deployments, at a minimum, it must be version 1.1.1.0.
 You must also have one of the following supported versions of Microsoft Dynamics
 365 for Finance and Operations, Enterprise edition. Use the information in the following table to evaluate if your hardware and
@@ -81,9 +81,9 @@ account must have enough permissions to administer AD FS.
 
 To enable Microsoft Dynamics 365 for Finance and Operations to use your AD FS application, you must create
 a user account in Microsoft Dynamics 365 with the same user credentials as the
-user of the warehousing app:
+user of the Warehousing app:
 
-1.  Create a user in Microsoft Dynamics 365 for Finance and Operations and assign the warehousing mobile
+1.  Create a user in Microsoft Dynamics 365 for Finance and Operations and assign the Warehousing mobile
     device user role to the user.
 
     a.  Go to **System administration** \> **Common** \> **Users**.
@@ -93,7 +93,7 @@ user of the warehousing app:
 
     ![Create and configure a user](media/wmapp-users.png)
 
-2.  Associate your AD FS application with the warehousing app user.
+2.  Associate your AD FS application with the Warehousing app user.
 
     a.  In Microsoft Dynamics 365 for Finance and Operations, click **System administration** \> **Setup**
         \> **Azure Active Directory applications**.
@@ -102,7 +102,7 @@ user of the warehousing app:
     
     c.  Enter the client ID that you obtained when you created an application
         entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter
-        a name, and select the warehousing app user.
+        a name, and select the Warehousing app user.
 
     ![Azure Active Drectory applications ](media/azure-active-directory.png)
 
@@ -116,7 +116,7 @@ certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx)
 
 ## Configure the application
 
-You must configure the warehousing app on the device to connect to the Microsoft
+You must configure the Warehousing app on the device to connect to the Microsoft
 Dynamics 365 for Finance and Operations server through the AD FS application.
 
 1.  In the app, open **Connection settings**.
