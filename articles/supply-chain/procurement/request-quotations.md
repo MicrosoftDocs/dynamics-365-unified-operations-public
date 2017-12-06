@@ -155,7 +155,7 @@ There are three ways to select the vendors to add to an RFQ case:
 
 When the RFQ case is ready, select **Send**. The Send action generates journals and reports that will be printed, archived, and sent according to your Print management settings.
 
-If you selected the **Use vendor for recalculating prices** and **Use vendor specific item information** check boxes on the **Sending request for quotation** page when you sent the RFQ to vendors, some vendor-specific information is automatically entered. You can modify this information on the **Request for quotation reply** page.
+If you set **Use vendor for recalculating prices** and **Use vendor specific item information** to **Yes** on the **Sending request for quotation** page when you sent the RFQ to vendors, some vendor-specific information is automatically entered. You can modify this information on the **Request for quotation reply** page.
 
 The following table shows how the RFQ status changes when you create an RFQ and send it to vendors.
 
