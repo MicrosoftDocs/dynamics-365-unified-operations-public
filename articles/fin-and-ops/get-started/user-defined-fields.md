@@ -90,7 +90,7 @@ You *cannot* edit the following attributes:
 Additionally, for Picklist fields, the set of valid values for the custom field can be reordered, and new values can be added; however, existing values for the picklist field cannot be removed.   
 
 ### Exposing custom fields on data entities
-It may also be important to allow custom fields to be visible on data entities.  Data entities are utilized in the [Open in Office](../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.  
+It may also be important to allow custom fields to be visible on data entities.  Data entities are utilized in the [Open in Office](../../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.  
 
 Follow these steps to expose a custom field on a data entity: 
 1.   Select the custom field of interest on the **Custom fields** form. 
