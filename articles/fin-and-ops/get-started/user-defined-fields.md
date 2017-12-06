@@ -100,22 +100,23 @@ Follow these steps to expose a custom field on a data entity:
 5.   Click **Apply changes** to save your selections.  
 
 ### Allowing custom fields to be displayed in other languages
-Because custom fields may need to be accessed by users in a variety of languages, the Custom fields form provides a mechanism to allow the label and help text for a custom field to be translated into other languages.  
+Because custom fields may need to be accessed by users in a variety of languages, the **Custom fields** page provides a mechanism to allow the label and help text for a custom field to be translated into other languages.  
 
 The following steps describe the process for translating custom fields in other languages: 
-1.   Select the custom field of interest on the Custom fields form. 
-2.   Select the Translations button in the action pane.  This will open a drop dialog with existing translations for this field.
-3.   The Language dropdown shows the set of languages for which translations have already been provided. 
-     1.   If you want to edit an existing translation, simply select the desired language from the dropdown and modify the values for the label and help text.  
-     2.   Otherwise, click the Add language button, select the desired language from the dropdown, and then provide translated values for the label and help text.  
-4.   Click OK when you are finished.  
+1.   Select the custom field of interest on the **Custom fields** page. 
+2.   Select the **Translations** button in the action pane.  This will open a drop-down dialog with existing translations for this field.
+3.   The **Language** drop-down shows the set of languages for which translations have already been provided. 
+     1.   If you want to edit an existing translation, simply select the desired language from the drop-down and modify the values for the label and help text.  
+     2.   Otherwise, click the **Add language** button, select the desired language from the dropdown, and then provide translated values for the label and help text.  
+4.   Click **OK** when you are finished.  
 
 ### Deleting custom fields
-In some rare cases, you may decide that a custom field is no longer needed. When this occurs, you can choose to delete the field from the Custom fields form. Note, however, this action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
+In some rare cases, you may decide that a custom field is no longer needed. When this occurs, you can choose to delete the field from the **Custom fields** page. Note, however, this action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
 
 ## Appendix 
 ### [Advanced] Tables that support custom fields
-For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added. 
+For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.
+
 1.   The table must be tagged as one of these groups: 
      -   Group
      -   WorksheetHeader
