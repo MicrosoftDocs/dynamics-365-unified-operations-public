@@ -5,7 +5,7 @@ title: CFDI Version 3.3
 description: This topic provides information about the CFDI layout version 3.3 for Mexico.
 author: sndray
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
