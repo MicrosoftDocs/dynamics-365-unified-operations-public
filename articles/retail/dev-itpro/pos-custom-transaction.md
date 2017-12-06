@@ -38,7 +38,7 @@ You can add more information to a transaction page by using custom controls. You
 
 ## Add a new custom control
 
-1. Sign in to Retail Modern POS.
+1. Sign in to Dynamics 365 for Retail.
 2. Select **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
 3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
