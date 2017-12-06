@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: TBD: User-defiend fields
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+title: Custom fields
+description: While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.
 author: jasongre
 manager: AnnBe
 ms.date: 10/20/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 13
 [!include[banner](../includes/banner.md)] 
 
 ## Overview 
-While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.  As an example, suppose…
+While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.
 
 ## Creating custom fields
 Once you’ve identified additional information you would like to track in the application, you will then need to create the custom field on the appropriate table and expose that new field on a page.   
@@ -50,7 +50,7 @@ The following steps describe the process for creating a custom field and placing
           - If you choose the Text data type, you may also specify the max length of the text that can be entered in this field. 
           - If you choose the Picklist data type, you may also select the set of valid values for the field.  
      3.   Provide a name, label, and help text for the field.  The name corresponds to the physical field name in the database, whereas the label and help text are the text used to represent this field in the user interface.  
-8.   If this is the only field you need to create for this form, then click **Save**.  If you need to create additional fields, then click **Save and new** and go back to step 7.  
+8.   If this is the only field you need to create for this form, then click **Save**.  If you need to create additional fields, then click **Save and new** and go back to step 7. Note that there is currently a limit of 20 custom fields per table!
 9.   Leaving the Create new field dialog will return the user to the Insert fields dialog.  Any custom fields that were just added will be automatically marked in the field list to be inserted into the form.  
 10.   Click **Insert** to insert the marked fields into the selected region of the form. 
 11.   [Optional] Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See the Personalization topic for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
@@ -58,7 +58,7 @@ The following steps describe the process for creating a custom field and placing
 ### Sharing custom fields with other users
 After you have created a custom field and exposed it on a form, you want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
--   The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users.  See the Personalization topic for more details. 
+-   The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users.  See the [Personalization](personalize-user-experience.md) article for more details. 
 
 -   Alternatively, you can export your changes (called “personalizations”) of the page, send them to one or more users, and have each of those users import your changes.  The Export and Import features are available in the personalization toolbar under the Manage menu.  
 
