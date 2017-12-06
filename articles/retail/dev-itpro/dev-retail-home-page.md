@@ -79,6 +79,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
 - [Add custom columns and controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
 - [Call a POS API or operation from a POS extension](pos-api-extension.md)
+- [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -115,7 +116,8 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail Typescript and C# proxy](typescript-proxy-retail-pos.md)
 - [Run Retail POS samples](pos-run-samples.md)
 - [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
-- [Add custom columns and controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
+- [Add custom controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
+- [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
 - [Call a POS API or operation from a POS extension](pos-api-extension.md)
 
 ## eCommerce

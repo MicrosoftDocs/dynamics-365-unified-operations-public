@@ -255,7 +255,8 @@
 ### [Retail Typescript and C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
 ### [Run Retail POS samples](dev-itpro/pos-run-samples.md)
 ### [Extend existing POS views to add custom columns and app bar buttons](dev-itpro/pos-view-extension.md)
-### [Add custom columns and controls to Retail Modern POS transaction pages](dev-itpro/pos-custom-transaction.md)
+### [Add custom controls to Retail Modern POS transaction pages](dev-itpro/pos-custom-transaction.md)
+### [Add custom columns to a POS transaction grid](dev-itpro/pos-custom-transaction-column.md)
 ### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
 
 ## Commerce runtime
