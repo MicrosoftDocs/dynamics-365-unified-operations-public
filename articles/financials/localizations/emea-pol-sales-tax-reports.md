@@ -33,7 +33,7 @@ ms.search.validFrom: 2016-05-31
 
 This topic provides information about Polish value-added tax (VAT) reporting and the information that is legally required in VAT registers for Poland.
 
-## Poland – VAT report date codes
+## VAT report date codes
 
 Per the Polish Accountancy Act, which took effect on September 29, 1994, VAT for sales, purchases, and imported products must be processed separately. For every posted sales transaction or purchase transaction where the **Date of VAT register** or **VAT report date code** field is set, the tax is accounted in relevant VAT registers. The **VAT report date code** field appears on several transaction pages. When you update or post transactions, information about the VAT report date code is posted to the tax tables. It will then be printed on the Polish VAT register.
 
@@ -211,7 +211,7 @@ Select <strong>Accounts receivable</strong> &gt; <strong>Customer details</stron
 </tbody>
 </table>
 
-## Poland – Name of services for VAT reporting
+## Name of services for VAT reporting
 
 Service tariff numbers are required when you report information about VAT that involves a transaction with a party that isn't in Poland. You set up service tariff numbers on the **Service tariff numbers** page. To set up service tariff numbers, select **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Service tariff number**, and then set the following fields.
 
@@ -233,7 +233,7 @@ The following shared functionality works on all the preceding pages:
 - When you post an invoice, sales tax transactions are split by service tariff number. The sales tax group and item sales tax group are the same.
 - When you create a credit note for any posted invoice where the lines have a value in the **Service tariff number** field, the service tariff number is copied to the credit note lines from the original document, not from the credit note header. The service tariff number can be edited on the correction line.
 
-## Poland – Base amount for VAT
+## Base amount for VAT
 
 The **Base amount for VAT** field is enabled when you enter a tax transaction in the following journals. (Tax transactions are transactions where the **Tax code** field on journal lines has a value.)
 
@@ -243,7 +243,7 @@ The **Base amount for VAT** field is enabled when you enter a tax transaction in
 
 In the **Base amount for VAT** field, you manually enter the tax base amount. After you post a journal, the value from the **Base amount for VAT** field is transferred to the **Amount origin** field in tax transactions.
 
-## Poland – Sales tax (VAT) reporting
+## Sales tax (VAT) reporting
 
 The sales tax (VAT reporting) feature is used in ledger journals where multiple lines have the same voucher. When the following fields are changed on one line, a message box appears that lets you update the fields on other lines that have the same voucher:
 
@@ -261,7 +261,7 @@ The sales tax (VAT reporting) feature is used in ledger journals where multiple 
 > - General journal (Select **General ledger** &gt; **Journals** &gt; **General journal**, and then select **Lines**.)
 > - Invoice journal (Select **Accounts payable** &gt; **Journals** &gt; **Invoices** &gt; **Invoice journal**, and then select **Lines**.)
 
-## Poland – Tax direction for the line
+## Tax direction for the line
 
 The sales tax direction feature is related to postings that are done through the general journal that involves sales tax transactions. Based on the account type that was used for the posting, the system automatically determines the sales tax direction that should be assigned to tax transactions that are created. This feature helps guarantee that main accounts are determined correctly and that the sales tax direction is assigned correctly for general journal lines in the same voucher. Lines must meet one of the following conditions:
 
