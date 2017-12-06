@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  SysCustomFieldManageFields
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: sericks
@@ -51,21 +51,21 @@ The following steps describe the process for creating a custom field and placing
           - If you choose the Text data type, you may also specify the maximum length of the text that can be entered in this field. 
           - If you choose the Picklist data type, you may also select the set of valid values for the field.  
      3.   Provide a name, label, and help text for the field.  The name corresponds to the physical field name in the database, whereas the label and help text are the text used to represent this field in the user interface.  
-8.   If this is the only field you need to create for this form, then click **Save**.  If you need to create additional fields, then click **Save and new** and go back to step 7. Note that there is currently a limit of 20 custom fields per table!
+8.   If this is the only field you need to create for this form, click **Save**.  If you need to create additional fields, click **Save and new** and go back to step 7. Note that there is currently a limit of 20 custom fields per table.
 9.   Leaving the Create new field dialog will return the user to the Insert fields dialog.  Any custom fields that were just added will be automatically marked in the field list to be inserted into the form.  
 10.   Click **Insert** to insert the marked fields into the selected region of the form. 
-11.   [Optional] Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See the Personalization topic for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
+11.   **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
 
 ### Sharing custom fields with other users
-After you have created a custom field and exposed it on a form, you want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
+After you have created a custom field and exposed it on a form, you may want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
--   The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users.  See the [Personalization](personalize-user-experience.md) article for more details. 
+-   The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details. 
 
--   Alternatively, you can export your changes (called “personalizations”) of the page, send them to one or more users, and have each of those users import your changes.  The Export and Import features are available in the personalization toolbar under the Manage menu.  
+-   Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes.  The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
 
-Management of all the custom fields in the system can be accomplished through the Custom fields page inside the System administration module.  This page allows users with access to a number of capabilities including: 
+Management of all the custom fields in the system can be accomplished through the **Custom fields** page in the System administration module.  This page allows users with access to a number of capabilities including: 
 -   Seeing a list of all custom fields in the system
 -   Limited editing of existing custom fields
 -   Deleting custom fields
@@ -73,26 +73,26 @@ Management of all the custom fields in the system can be accomplished through th
 -   Providing translations of custom field labels and help text
 
 ### Viewing all custom fields
-The Custom fields form provides visibility to all the custom fields that have been defined in the system.  Simply select the table you are interested in, and the page will update to show a list of the custom fields associated with that table.  Choosing a custom field from the list will allow you to view all the details about the field.
+The **Custom fields** page provides visibility to all the custom fields that have been defined in the system.  Simply select the table you are interested in, and the page will update to show a list of the custom fields associated with that table.  Choosing a custom field from the list will allow you to view all the details about the field.
 
 ### Editing custom fields
-Once a custom field has been created, only certain pieces of information about the custom field can be modified from the Custom fields page.   
+Once a custom field has been created, only certain pieces of information about the custom field can be modified from the **Custom fields** page.   
+
+You *can* modify these attributes: 
+-   Label 
+-   Help text
+-   Length, for Text fields
 
 You *cannot* edit the following attributes: 
 -   Field name
 -   Data type
 
-You *may* modify these attributes: 
--   Label 
--   Help text
--   Length, for Text fields
-
 Additionally, for Picklist fields, the set of valid values for the custom field can be reordered, and new values can be added; however, existing values for the picklist field cannot be removed.   
 
 ### Exposing custom fields on data entities
-It may also be important to allow custom fields to be visible on data entities.  Data entities are utilized for the Open in Office feature as well as for data import/export scenarios.  
+It may also be important to allow custom fields to be visible on data entities.  Data entities are utilized in the [Open in Office](../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.  
 
-Following these steps to expose a custom field on a data entity: 
+Follow these steps to expose a custom field on a data entity: 
 1.   Select the custom field of interest on the **Custom fields** form. 
 2.   Expand the **Entities** section to see the set of relevant entities.  
 3.   Click the **Edit** button.
