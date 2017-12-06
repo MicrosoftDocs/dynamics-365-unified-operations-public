@@ -5,7 +5,7 @@ title: Custom fields
 description: While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.
 author: jasongre
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Operations Platform
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
-ms.search.validFrom: 2017-11-30
+ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Platform update 13
 ---
 
@@ -32,22 +32,23 @@ ms.dyn365.ops.version: Platform update 13
 [!include[banner](../includes/banner.md)] 
 
 ## Overview 
-While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.
+While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business.
 
 ## Creating custom fields
-Once you’ve identified additional information you would like to track in the application, you will then need to create the custom field on the appropriate table and expose that new field on a page.   
+Once you’ve identified additional information you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.   
 
 The following steps describe the process for creating a custom field and placing that field on a form.  
+
 1.   Navigate to the form where the new field is needed. 
-2.   As the end goal is exposing this custom field on a form, the entry point for creating custom fields exists inside the personalization experience.  Open the personalization toolbar by selecting **OPTIONS**, and then **Personalize this form**. 
-3.   Enable Insert fields mode by selecting **Insert** and then **Field**.  
+2.   As the end goal is exposing the custom field on a form, the entry point for creating custom fields exists inside the personalization experience.  Open the personalization toolbar by selecting **OPTIONS**, and then **Personalize this form**. 
+3.   Click **Insert** and then **Field**.  
 4.   Select the region of the form where you want to expose the new field.  After selection, the **Insert fields** dialog will be opened showing a list of available existing fields that can be inserted into the selected region of the form.  
-5.   Double check to ensure the field you are interested in does not already exist in the list. If it does, you can simply mark that field in the list and select Insert.   
+5.   Double check to ensure that the field you are interested in does not already exist in the list. If it does, you can simply mark that field in the list and select **Insert**.   
 6.   Click the **Create new field** button above the list to initiate the process of creating a custom field. This will open the Create new field dialog.  
 7.   In the Create new field dialog, enter the appropriate information.
-     1.   Select the appropriate database table where this field should be added.  Note that only tables that support custom fields will appear in the dropdown list. See the section below for technical details on supported tables.  
+     1.   Select the appropriate database table where this field should be added.  Note that only tables that support custom fields will appear in the drop-down list. See the section below for technical details on supported tables.  
      2.   Select the data type for the new field.  The available data types are checkbox, date, date time, decimal, number, picklist, and text.   
-          - If you choose the Text data type, you may also specify the max length of the text that can be entered in this field. 
+          - If you choose the Text data type, you may also specify the maximum length of the text that can be entered in this field. 
           - If you choose the Picklist data type, you may also select the set of valid values for the field.  
      3.   Provide a name, label, and help text for the field.  The name corresponds to the physical field name in the database, whereas the label and help text are the text used to represent this field in the user interface.  
 8.   If this is the only field you need to create for this form, then click **Save**.  If you need to create additional fields, then click **Save and new** and go back to step 7. Note that there is currently a limit of 20 custom fields per table!
