@@ -4,7 +4,7 @@
 
 title: Price and discounts changes in the Fall Release 2017
 description: This topic describes the changes in the price and discount area in the Fall Release 2017.
-author: smithanataraj
+author: Lars Blaaberg
 manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
