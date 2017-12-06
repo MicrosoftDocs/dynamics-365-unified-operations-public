@@ -46,7 +46,7 @@ their product lifecycle state from their released product master on creation. Wh
 
 ## Create a new product lifecycle state 
  
-- To create a new product lifecycle state, see the task guide **Create a new product lifecycle state**. The **Product lifecycle states** are defined by the user, typically a product manager, or a product master data manager. Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.
+- To create a new product lifecycle state, see the task guide **Create a new product lifecycle state**. The **Product lifecycle states** are defined by the user, typically a product manager, or a product master data manager. Specific business processes, for example, master planning, can be affected by a specific lifecycle state.
 
 -  To create a default product lifecycle state, see the task guide **Create a default product lifecycle state**.   
 
@@ -59,10 +59,10 @@ There are multiple ways to associate a product lifecycle state to a released pro
 -  On release of a product variant to a legal entity, the **Product lifecycle state** associated to the released product master in this 
 legal entity is automatically assigned to the new variant. 
 
-You can manually update the Product lifecycle state by using: 
+You can manually update the product lifecycle state by using: 
 
--	 The **Released products** listpage or **Details view**. 
--  The **Released product variants** listpage or **Details view**. 
+-	 The **Released products** list page or **Details view**. 
+-  The **Released product variants** list page or **Details view**. 
 -  Find the obsolete products or product variants based on demand and associate a lifecycle state.  
 
 For detailed information about how to create product lifecycle states, play or read the following two task guides.
@@ -71,21 +71,21 @@ For detailed information about how to create product lifecycle states, play or r
 
 -  To associate a product lifecycle state to a release product, see the task guide **Assign a product lifecycle state to a released product**. 
 
-## Impact on Master planning 
+## Impact on master planning 
 
 The product lifecycle state has only one control flag: **Is active for planning**. By default, this is set to **Yes** for all created 
 product lifecycle states, but it can be changed to **No**. When set to **No**, the associated released products or released product variants are: 
 
--  excluded from Master planning 
--  excluded from BOM-level calculation 
+-  Excluded from master planning. 
+-  Excluded from BOM-level calculation. 
 
-For detailed information about how to use product lifecycle state to exclude products from Master planning and BOM-level calculation, play or read the task guide **Create a product lifecycle state to exclude products from Master planning**.
+For detailed information about how to use product lifecycle state to exclude products from master planning and BOM-level calculation, play or read the task guide **Create a product lifecycle state to exclude products from Master planning**.
 
 > [!NOTE]
 > For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when 
 working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.  
  
-## Default, migration, import and export 
+## Default migration, import, and export 
 
 The product lifecycle states are not supported by data entities, and the lifecycle state cannot be set to a variable state through the 
 released product data entities.
@@ -96,7 +96,7 @@ released product data entities.
  
 ## Find obsolete products and products variants 
  
-You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, play and read the task guide. **Find obsolete product variants and assign a product lifecycle state**. This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows hot to view the simulation results and make an assessment of how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
+You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, play and read the task guide, **Find obsolete product variants and assign a product lifecycle state**. This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
  
 By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed. The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand. New released products within a variable period can be excluded from the analysis. When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.  
  
@@ -108,18 +108,18 @@ By running the analysis in a simulation mode, the products and product variants 
 Use the following criteria to select and update the released products and product variants: 
 
 -	 The product lifecycle state of the product or product variant must be different from the new desired state. 
--  The product or product variant was created some days ago based on the number of days that you enter in the selection dialog. 
+-  The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box. 
 -  There are no open production orders (= status < ended) for the product or product variant. 
 -  There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registrered to QuotationReceipt) for the product or product variant. 
--  There are no inventory transactions at all within the last number of days for the product or product variant. 
+-  There are no inventory transactions within the last number of days for the product or product variant. 
 -  There is no future demand or supply forecast for the product or product variant.  
 -  No minimum stock level has been set in item coverage for the product or product variant. 
--  No active fixed quantity Kanban rule for the product or product variant.  
--  No service order line for the for the product or product variant. 
+-  No active fixed quantity kanban rule for the product or product variant.  
+-  No service order line for the product or product variant. 
 -  No active or future sales or purchase agreement lines for the product or product variant. 
 -  The product or product variant is not used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
 
-## Related topics:
+## Related topics
 
 -  Create a new product lifecycle state
 -  Create a default new product lifecycle state
@@ -127,9 +127,3 @@ Use the following criteria to select and update the released products and produc
 -  Assign a product lifecycle state to a released product
 -  Find obsolete product variants and assign a product lifecycle state
 -  Create a product lifecycle state to exclude products from Master planning
-
-
-
-
-
-
