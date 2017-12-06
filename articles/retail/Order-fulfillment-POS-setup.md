@@ -29,6 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 
+
 # Order fulfillment point of sale setup
 
 ## Overview
@@ -53,7 +54,6 @@ The order fulfillment operation does not have its own permission out of the box,
 
 At the store level, a configuration setting is available that determines whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to have the 'Allow accept order' permission to accept orders from within the point of sale. 
 
-Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the 'Allow order reject' permission. The capability to reject order lines will be released as a hotfix shortly after AppUpdate 5 ships.
 
 ### Enabling manual order acceptance
 
@@ -63,9 +63,16 @@ Order lines for store pickup are marked as always marked as 'Pending' and are no
 
 To turn on manual acceptance or order lines, navigate to **Retail**>**Channels**>**Retail stores**>**All retail stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. Then in the general fasttab, locate the **ORDER FULFILLMENT** subheader and change **Manual accept** from 'No' to 'Yes'. 
 
+### Enable reject order line capability
+
+Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the 'Allow reject order' permission in the POS permission group associated with the worker. Moreover, while rejecting a line, the retailers can mandate their workers to provide a reason for rejection. This can be achieved by using info codes of 'Info code activity' type "Order fulfillment" and assigning the info code to "Reject order line" action in the functionality profile associated with the channel. 
+
+>[!Note]
+>Only the info codes of 'Info code activity' type "Order fulfillment" can be assigned to the "Reject order line" action.
+
 ### Synchronizing changes to the channel database
 
-Once the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail**>**Retail IT**>**Distribution schedule**. Select schedule "1090-Registers" to synch button grid changes and then click **Run now**. Next, synch permission changes by selecting "1060-Staff" and then click **Run now**. Finally, synch channel changes by selecting "1070-Channel configuration" and click **Run now**.
+Once the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail**>**Retail IT**>**Distribution schedule**. Select schedule "1090-Registers" to sync button grid changes and then click **Run now**. Next, sync permission changes by selecting "1060-Staff" and then click **Run now**. Next, sync channel changes by selecting "1070-Channel configuration" and click **Run now** and finally, sync the newly created info code for reject reason by selecting the "1110-Global configuration" and click **Run now**.
 
 ## Using order fulfillment at the point of sale
 
@@ -113,7 +120,7 @@ By default, orders will have a status of 'Accepted'. Order status can be viewed 
 
 **Pick**: The pick option supports several actions. First is "Picking" which updates the status of the order line so others in the store do not attempt to pick the same line. Next is "Print picking list" which will print a picking list for the selected line or lines and also update their status to "Picking". Picking list formats are controlled as part of receipt formats. For more information on setting up receipt formats see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing). Finally is "Mark as picked" which indicates the line has been picked. "Mark as picked" initiates corresponding inventory transactions in the back office. Picking actions can be performed at the same time for multiple order lines across orders and for all modes of delivery.
 
-**Reject**: Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. The capability to reject order lines will be released as a hotfix shortly after AppUpdate 5 ships.
+**Reject**: Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. 
 
 **Pack**: The pack option supports two actions. "Print packing slip" will print a packing slip for the selected lines and "Mark as packed" will and mark the lines as packed and mark the lines as delivered in the back office.  Only order lines that belong to the same order and have the same mode of delivery may be packed at the same time.Packing slip formats are controlled as part of receipt formats. For more information on setting up receipt formats see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
@@ -137,11 +144,6 @@ Order fulfillment at the point of sale includes filtering to help the user easil
   - Created date
   - Delivery date
   - Receipt date
-
-
-
-
-
 
 
 
