@@ -46,7 +46,7 @@ their product lifecycle state from their released product master on creation. Wh
 
 ## Create a new product lifecycle state 
  
-- To create a new product lifecycle state, see the task guide **Create a new product lifecycle state**. The **Product lifecycle states** are defined by the user, typically a product manager, or a product master data manager. Specific business processes, for example, master planning, can be affected by a specific lifecycle state.
+- To create a new product lifecycle state, see the task guide **Create a new product lifecycle state**. 
 
 -  To create a default product lifecycle state, see the task guide **Create a default product lifecycle state**.   
 
