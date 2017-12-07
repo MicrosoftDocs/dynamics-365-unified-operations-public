@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inform about country/region regulatory features
-description: This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
+description: This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/07/2017
@@ -34,35 +34,35 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
+This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
 
 Accessing the regulatory alert submission service
 -------------------------------------------------
 
-In Microsoft Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
+In Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
 
 The **Dynamics regulatory alert submission** page appears. You can use this page to view any alerts that have previously been submitted by you or your organization.
 
 ## Submitting a regulatory alert
 To enter a new regulatory alert, click the plus sign (**+**) at the top of the **Dynamics regulatory alert submission** page, above the filter. The **Alert submission** wizard starts. You can complete the following tasks in this wizard:
 
-1.  Search for existing regulatory items.
-2.  Attach business processes.
-3.  Describe an alert.
-4.  Confirm submissions.
+- Search for existing regulatory items.
+- Attach business processes.
+- Describe an alert.
+- Confirm submissions.
 
 ### Search for existing regulatory items
 
-Use Issue search to identify whether a regulatory feature that is related to the alert already exists.
+Use Issue search to identify whether a regulatory feature, that is related to the alert, already exists.
 
-1.  Enter a search term, such as a keyword, country/region, Microsoft Knowledge Base (KB) number, or Application Object Tree (AOT) object. Then click the search button. Any items that include the search term, in either product issues or regulatory features, appear in the search results. You can narrow the search by using the filters that are available.
+1.  Enter a search term, such as a keyword, country/region, Microsoft Knowledge Base (KB) number, or Application Object Tree (AOT) object. Click the search button. Any items that include the search term, in either product issues or regulatory features, appear in the search results. You can narrow the search by using the filters that are available.
 2.  If you don't find the regulatory feature that you're looking for, you can submit a regulatory alert by clicking **Submit regulatory alert** at the bottom of the browser window. 
 
 ### Attach business processes
 
 1.  In the **Global business process libraries** list, select business process libraries.
 2.  Enter search criteria to find business processes that are related to the search term. These business processes are highlighted in yellow.
-3.  In the list on the right side of the page, select one or more related business processes, and drag them into the field on the left side. After you've finished, you can edit them further by clearing the selection of business processes.
+3.  In the list on the right side of the page, select one or more related business processes, and drag them into the field on the left . After you've finished, you can edit them further by clearing the selection of business processes.
 4.  Add the selected business processes to the alert. 
 
 ### Describe the alert
@@ -115,7 +115,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 			<p>Feature reference</p>
 			</td>
 			<td>
-			<p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in Localization portal https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC </p>
+			<p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC. </p>
 			</td>
 		</tr>
 		<tr>
@@ -171,7 +171,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 			<p>Contact email</p>
 			</td>
 			<td>
-			<p>Has the value of the email address of the person who is submitting the alert.   </p>
+			<p>The email address of the person who is submitting the alert.   </p>
 			</td>
 		</tr>
 		<tr>
@@ -185,12 +185,12 @@ Use Issue search to identify whether a regulatory feature that is related to the
 		<tr>
 			<td>Comments</td>
 			<td>
-			<p>Enter any additional information that might be help users understand or implement the requirement. Click **Submit** to save your comment. Multiple comments can be added and should be submitted separately. Comments are saved in the order that they are added. </p>
+			<p>Enter any additional information that might be help users understand or implement the requirement. Click <strong>Submit</strong> to save your comment. Multiple comments can be added and should be submitted separately. Comments are saved in the order that they are added. </p>
 			</td>
 		</tr>
 		<tr>
 			<td> Attachments </td>
-			<td> <p>Click the <strong>Upload</strong> button, and then browse to select a file to add as an attachment. After you select the file, it's uploaded and appears as a linked file. You can add up to three files that have a size 5 MB each. To delete files that have been attached, click <strong>Remove</strong> under the title of the file. <strong>Note</strong> Attachments must be publicly available materials. They can't be propriety or customer-specific/partner-specific.</p>
+			<td> <p>Click the <strong>Upload</strong> button, and then browse to select a file to add as an attachment. After you select the file, it's uploaded and appears as a linked file. You can add up to three files that have a size of 5 MB each. To delete files that have been attached, click <strong>Remove</strong> under the title of the file. <strong>Note</strong> Attachments must be publicly available materials. They can't be propriety or customer-specific/partner-specific.</p>
 			</td>
 		</tr>
 </table>
@@ -203,16 +203,16 @@ If you don't have all of the required information, or if you're not yet ready to
 ### Confirm your submission
 
 -   When the alert is successfully submitted, you receive a confirmation message. Click **Done** to exit the wizard.
--   If you save the alert before you submit it, an alert ID is generated, and you receive confirmation that the alert has been saved. !
+-   If you save the alert before you submit it, an alert ID is generated, and you receive confirmation that the alert has been saved.
 
 ## Track the status of regulatory features in Issue search
-You can use Issue search in LCS to find planned and released regulatory features, and also any associated localization documentation, certifications, and reports. To narrow your search to regulatory features, use the following filters:
+You can use Issue search in LCS to find planned and released regulatory features, and any associated localization documentation, certifications, and reports. To narrow your search to regulatory features, use the following filters:
 
--   **Category:** Select **Regulatory feature** only.
--   **Country/region:** Click **&gt;** to select the country/region that you're interested in.
+-   **Category** - Select **Regulatory feature** only.
+-   **Country/region** - Click **&gt;** to select the country/region that you're interested in.
 
 To narrow the search even more, you can apply the following additional filters
 
--   **Product:** Select the products and product versions that you're interested in.
--   **Status:** Select specific statuses.
+-   **Product** - Select the products and product versions that you're interested in.
+-   **Status** - Select specific statuses.
 
