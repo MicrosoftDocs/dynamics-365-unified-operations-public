@@ -41,7 +41,10 @@ Before you complete the steps in this topic, you must update your local agent. F
 ## Reconfigure your environment
 
 1. In Lifecycle Services (LCS), navigate to your on-premises project and open the **Environments** blade. 
+
 2. If you need to reconfigure your environment, click **Reconfigure**.
+
 -or-
-3. If you need to take a new deployment or topology, select the new topology for your platform and enter the environment name. You can use the same name or enter a new one. 
-4. Click **Advanced Settings** to update your configuration. The configuration from your previous deployment will be saved. 
+
+2. If you need to take a new deployment or topology, select the new topology for your platform and enter the environment name. You can use the same name or enter a new one. 
+3. Click **Advanced Settings** to update your configuration. The configuration from your previous deployment will be saved. 
