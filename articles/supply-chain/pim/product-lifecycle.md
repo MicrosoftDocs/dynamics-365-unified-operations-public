@@ -46,9 +46,9 @@ their product lifecycle state from their released product master on creation. Wh
 
 ## Create a new product lifecycle state 
  
-- To create a new product lifecycle state, see the task guide **Create a new product lifecycle state**. 
+- To create a new product lifecycle state, play or read the task guide **Create a new product lifecycle state**. 
 
--  To create a default product lifecycle state, see the task guide **Create a default product lifecycle state**.   
+-  To create a default product lifecycle state, play or read the task guide **Create a default product lifecycle state**.   
 
 ## Associate product lifecycle states to released products  
 
@@ -65,11 +65,11 @@ You can manually update the product lifecycle state by using:
 -  The **Released product variants** list page or **Details view**. 
 -  Find the obsolete products or product variants based on demand and associate a lifecycle state.  
 
-For detailed information about how to create product lifecycle states, play or read the following two task guides.
+For detailed information about how to associate product lifecycle states, play or read the following two task guides.
 
--  To associate a product lifecycle state to a released product master, see the task guide **Assign a product lifecycle state to a released product master**. 
+-  To associate a product lifecycle state to a released product master, play or read the task guide **Assign a product lifecycle state to a released product master**. 
 
--  To associate a product lifecycle state to a release product, see the task guide **Assign a product lifecycle state to a released product**. 
+-  To associate a product lifecycle state to a release product, play or read the task guide **Assign a product lifecycle state to a released product**. 
 
 ## Impact on master planning 
 
@@ -96,7 +96,7 @@ released product data entities.
  
 ## Find obsolete products and products variants 
  
-You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, play and read the task guide, **Find obsolete product variants and assign a product lifecycle state**. This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
+You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, play and read the task guide **Find obsolete product variants and assign a product lifecycle state**. This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
  
 By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed. The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand. New released products within a variable period can be excluded from the analysis. When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.  
  
