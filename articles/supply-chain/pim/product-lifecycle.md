@@ -52,7 +52,7 @@ their product lifecycle state from their released product master on creation. Wh
 
 ## Associate product lifecycle states to released products  
 
-There are multiple ways to associate a product lifecycle state to a released products or product variants.
+There are multiple ways to associate a product lifecycle state to released products or product variants.
 
 -  On creation of a new released product, the default **Product lifecycle state** is automatically assigned. 
 -  On release of a product to a legal entity, the default **Product lifecycle state** is automatically assigned. 
