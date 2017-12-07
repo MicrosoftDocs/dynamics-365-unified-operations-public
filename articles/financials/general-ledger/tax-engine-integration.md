@@ -31,9 +31,12 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-To integrate the Tax engine (GTE) with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must implement X++ code that interacts with GTE for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) The following illustration shows an overview of the three models for GTE integration in the Finance and Operations application:
+To integrate the Tax engine (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
 
-- GTE interfaces to GTE service
+## Tax engine integration models
+There are three models for Tax engine integration in the Finance and Operations application:
+
+- Tax engine interfaces with the Tax engine service
 - Tax business service
 - Finance and Operations application integration:
 
@@ -42,98 +45,125 @@ To integrate the Tax engine (GTE) with Microsoft Dynamics 365 for Finance and Op
 
 ![GTE integration models](./media/gte-3-models.PNG)
 
-## GTE interfaces to GTE service
+###  Tax engine interfaces with the Tax engine service model
 
-The GTE interfaces to GTE service model is the major part of the GTE integration framework. It contains all the interfaces that interact with GTE operations:
+This model is part of the Finance and Operations integration framework. Therefore, almost no uptake is required for partners or customers.
 
-- The ITaxEngine interface and its implementation contain the basic operations with GTE. These operations include calculating tax through GTE, persisting the calculated result to Finance and Operations tables, retrieving the tax document for the transaction, and deleting the tax document from both the GTE cache and Finance and Operations tables.
-- The set of ITaxDocument interfaces and implementations enables information to be read from a tax document that GTE calculates and returns. This set includes ITaxDocument, ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
+The ITaxEngine interface and its implementation contain the basic operations of the Tax engine. These operations include calculating tax through the tax engine, persisting the calculated result to Finance and Operations tables, retrieving the tax document for the transaction, and deleting the tax document from both the Tax engine cache and Finance and Operations tables.
+
+The set of ITaxDocument interfaces and implementations enables information to be read from a tax document that the Tax engine calculates and returns. This set includes ITaxDocument, ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
 
     ![GTE interfaces](./media/gte-itaxdocument_interfaces.jpg)
 
-    These interfaces also provide methods for retrieving a specified field value (**ITaxDocumentField**) from ITaxDocumentLine and an expected measure value (**ITaxDocumentMeasure**) from ITaxDocumentComponentLine.
+These interfaces also provide methods for retrieving a specified field value (**ITaxDocumentField**) from ITaxDocumentLine and an expected measure value (**ITaxDocumentMeasure**) from ITaxDocumentComponentLine.
 
 - The set of ITaxDocumentMetaData interfaces enables model information to be read from a tax document. This set includes ITaxDocumentMetaData, ITaxDocumentLineMetaData, ITaxDocumentComponentLineMetaData, and ITaxDocumentMeasureMetaData.
 - The set of ITaxDocumentEnumerator and ITaxDocumentMeataDataEnumerator interfaces provides an enumerator to read a list of tax document–related objects, such as ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
 
-### Integration uptake
+## Tax business service model
 
-The GTE interfaces to GTE service model is part of the Finance and Operations integration framework. Therefore, almost no uptake is required for partners or customers.
+The Tax business service model is part of the Finance and Operations integration framework and almost no uptake is required for partners or customers. 
+This model serves as the façade for interactions that the Finance and Operations application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
 
-## Tax business service
-
-The Tax business service model is the façade for interactions that the Finance and Operations application has with GTE for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
-
-- **CalculateTax** – Delete a tax document if it's marked as **Dirty**, and then calculate tax.
-
-    - **Input:** Taxable document identifier
-    - **Output:** Tax document object
-
-- **RecalculateTax** – Explicitly recalculate a tax document.
-
-    - **Input:** Taxable document identifier
-    - **Output:** Tax document object
-
-- **SaveTaxDocument** – Persist a tax document to the Finance and Operations database.
-
-    - **Input:** Tax Document object
-    - **Output:** Not applicable
-
-- **GetTaxDocumentBySource** – Read a tax document, based on the source transaction identifier.
-
-    - **Input:** Transaction identifier
-    - **Output:** Tax document object
-
-- **GetTaxDocumentLineBySource** – Read a tax document line, based on the source transaction line identifier.
-
-    - **Input:** Transaction line identifier
-    - **Output:** Tax document line object
-
-- **GetTaxDocumentTaxStatus** – Read the status of a tax document for the associated transaction.
-
-    - **Input:** Taxable document identifier
-    - **Output:** Tax document status
-
-- **MarkTaxDocumentTaxStatus** – Mark a tax document as **Dirty** when the underlining transaction has been updated.
-
-    - **Input:**
-
-        - Taxable document identifier
-        - Tax document status
-
-    - **Output:** Not applicable
-
-- **DeleteTaxDocument** – Delete a tax document when the transaction is deleted.
-
-    - **Input:** Taxable document identifier
-    - **Output:** Not applicable
-
-- **PostTax** – Post tax for the transaction.
-
-    - **Input:**
-
-        - Ledger voucher for the tax that must be posted
-        - Taxable document identifier
-
-    - **Output:** Not applicable
-
-- **TransferTaxDocument** – Transfer a tax document from one transaction that the source supports to another transaction.
-
-    - **Input:**
-
-        - Source transaction
-        - Target transaction
-
-    - **Output:** Not applicable
-
-- **PostTaxDocument** – Just change the status of the tax document to **Posted**.
-
-    - **Input:** Taxable document identifier
-    - **Output:** Not applicable
-
-### Integration uptake
-
-The Tax business service model is part of the Finance and Operations integration framework. Therefore, almost no uptake is required for partners or customers.
+<table>
+<tr>
+<td><strong>Method</strong></td>
+<td><strong>Additional information</strong>
+</td>
+</tr>
+<tr>
+<td>CalculateTax</td>
+<td> Delete a tax document if it's marked as **Dirty**, and then calculate tax.<ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Tax document object</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>RecalculateTax</td>
+<td>Explicitly recalculate a tax document.
+<ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Tax document object</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>SaveTaxDocument</td>
+<td>Persist a tax document to the Finance and Operations database.
+ <ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>GetTaxDocumentBySource</td>
+<td>Read a tax document, based on the source transaction identifier. <ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Tax document object</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>GetTaxDocumentLineBySource</td>
+<td>Read a tax document line, based on the source transaction line identifier. <ul>
+<li><strong>Input</strong>: Transaction line identifier</li>
+<li><strong>Output</strong>: Tax document line object</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>GetTaxDocumentTaxStatus</td>
+<td>Read the status of a tax document for the associated transaction.
+ <ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Tax document object</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>MarkTaxDocumentTaxStatus</td>
+<td>Mark a tax document as <strong>Dirty</strong> when the underlining transaction has been updated. <ul>
+<li><strong>Input</strong>: Taxable document identifier, Tax document status</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>DeleteTaxDocument</td>
+<td>Delete a tax document when the transaction is deleted. <ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>PostTax</td>
+<td>Post tax for the transaction. <ul>
+<li><strong>Input</strong>: Ledger voucher for the tax that must be posted, Taxable document identifier</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>TransferTaxDocument</td>
+<td>Transfer a tax document from one transaction that the source supports to another transaction.
+<ul>
+<li><strong>Input</strong>: Source transaction, Target transaction</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>PostTaxDocument</td>
+<td>Just change the status of the tax document to <strong>Posted</strong>. <ul>
+<li><strong>Input</strong>: Taxable document identifier</li>
+<li><strong>Output</strong>: Not applicable</li>
+</ul>
+</td>
+</tr>
+</table>
 
 ## Finance and Operations application integration
 
