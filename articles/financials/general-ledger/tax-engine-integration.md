@@ -59,7 +59,7 @@ These interfaces also provide methods for retrieving a specified field value (**
 - The set of ITaxDocumentMetaData interfaces enables model information to be read from a tax document. This set includes ITaxDocumentMetaData, ITaxDocumentLineMetaData, ITaxDocumentComponentLineMetaData, and ITaxDocumentMeasureMetaData.
 - The set of ITaxDocumentEnumerator and ITaxDocumentMeataDataEnumerator interfaces provides an enumerator to read a list of tax document–related objects, such as ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
 
-## Tax business service model
+### Tax business service model
 
 The Tax business service model is part of the Finance and Operations integration framework and almost no uptake is required for partners or customers. 
 This model serves as the façade for interactions that the Finance and Operations application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
@@ -164,19 +164,19 @@ This model serves as the façade for interactions that the Finance and Operation
 </tr>
 </table>
 
-## Finance and Operations application integration
+### Finance and Operations application integration
 
 Transaction information from Finance and Operations should be sent to the Tax engine. At the same time, the accounting and posting of tax should be aligned with the Finance and Operations implementation. Therefore, three parts are created in the Finance and Operations application:
 
 - Taxable document
-- GTE tax accounting
-- GTE tax posting
+- Tax accounting
+- Tax posting
 
 Meanwhile, the integration uses the transit document framework to maintain the relationship between the Finance and Operations transaction and the tax document.
 
-### Application integration
+#### Application integration
 
-#### Taxable document
+##### Taxable document
 
 A taxable document encapsulates transaction information by using a set of data providers. Transaction information is wrapped by a TaxableDocument object. A TaxableDocumentDescriptor object in this object should describe what the transaction is, and it should list a set of data providers that bind tax model attributes with transaction data.
 
@@ -193,7 +193,7 @@ If additional attributes are added to a tax configuration, and they are used for
 > [!NOTE]
 > If additional transactions should support GTE, you should create related TaxableDocumentTypeDefinitions, TaxableDocumentDescriptors, and TaxableDocumentDataProviders.
 
-#### Transit document
+##### Transit document
 
 A transit document is an existing framework in Finance and Operations that is used for the following two purposes:
 
@@ -211,7 +211,7 @@ Transaction integration occurs only on a case-by-case basis. For each transactio
 
 ### Accounting integration
 
-#### Tax engine tax accounting
+#### Tax accounting
 
 The accounting of Finance and Operations transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance and Operations implementation on both sides:
 
@@ -340,7 +340,7 @@ AccJourRuleVendPaymReqTaxMeasure</td>
 </tr>
 </table>
 
-### Definition – Define a taxable document
+### Define a taxable document
 
 **TaxableDocumentTypeDefintionPurchaseInvoice** and **TaxableDocumentDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for GTE.
 
@@ -354,7 +354,7 @@ TaxableDocumentTypeDefinitionPurchaseInvoice is the interface that defines a pur
 
 ![Data provider for a purchase invoice](media/gte-data-provider-class-purch.png)
 
-### Definition – Define data providers
+### Define data providers
 
 The following illustration shows the data providers that are used to send transaction data to GTE for any tax-related operation.
 
@@ -425,7 +425,7 @@ The following table lists the taxable document fields that are mapped in Finance
 | ITC Category                   | TaxableDocumentRowDataProviderLine.fillInFields                             | Yes                          | Input |
 | Is Scrap                       | TaxableDocumentRowDataProviderLine.fillInFields                             | No (Yes for a sales order)   | No |
 
-### Creation – Add the Tax document button on a transaction
+### Add the Tax document button on a transaction
 
 One way to trigger tax calculation in GTE is through a **Tax document** button that you add on the transaction. When this button is clicked, transactional data is sent to GTE as a predefined taxable document object, and tax calculation is triggered in GTE. The button is usually added to a transaction page, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface (UI).
 
@@ -433,7 +433,7 @@ One way to trigger tax calculation in GTE is through a **Tax document** button t
 
 ![taxdocumentlauncher properties](media/gte-vend-taxdocumentlauncher.png)
 
-### Creation – Integrate with transaction totals
+### Integrate with transaction totals
 
 The **Totals** button is used to show a transaction's financial information, such as the tax amount, discount amount, and total amounts. The tax amount that appears on the total page will also be added to the invoiced amount of the journal.
 
@@ -443,7 +443,7 @@ For an existing implementation of Finance and Operations, a set of **PurchTotals
 
 For alignment with the existing logic, the existing **taxTotal** parameter is used to show the tax amount for the whole transaction. A new parameter that is named **taxTotalGTE** is used to show the tax that is posted to the vendor. In some cases, such as a reverse charge, the **taxTotal** value doesn't equal the **taxTotalGTE** value. Therefore, **taxTotal** will be used for journal posting, whereas **taxTotalGTE** will be used on **Totals** pages to show the total tax amount.
 
-### Creation – Integrate with a source document
+### Integrate with a source document
 
 A purchase invoice is a source document transaction. Therefore, the calculated tax result from GTE should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the GTE integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
 
@@ -459,13 +459,13 @@ When the source document classes are created correctly, the distribution page sh
 
 ![Accounting distributions](media/gte-accounting-distribution.png)
 
-### Deletion – Delete a transaction
+### Delete a transaction
 
 When a purchase invoice is deleted, the associated tax document should also be deleted. To delete an associated tax document, call TaxBusinessService in the **delete** method of VendInvoiceInfoTable.
 
 ![Transaction deletion method](media/gte-delete-trx.png)
 
-### Deletion – Delete a transaction line
+### Delete a transaction line
 
 When a transaction line is deleted, the tax document should be recalculated. For performance reasons, GTE doesn't recalculate tax immediately after a transaction line is deleted. Instead, it updates the tax document's status to **Dirty**. When a tax document is retrieved so that it can be viewed or posted, GTE checks whether the status is **Dirty**. Depending on the status, recalculation occurs.
 
@@ -473,7 +473,7 @@ When a transaction line is deleted, the tax document should be recalculated. For
 
 ![Tax document status change](media/gte-tax-doc-status2.png)
 
-### Update – Update transaction header information
+### Update transaction header information
 
 Some transaction header information can affect tax calculation. Examples include the transaction date and currency. Therefore, when this type of information is updated to a different value, the tax document should be marked as **Dirty** so that it can be recalculated later.
 
@@ -483,17 +483,17 @@ The following method lists fields that might affect tax calculation for a purcha
 
 ![Method for listing fields that affect tax calculation](media/gte-tax-calc-purchase.png)
 
-### Update – Update transaction line information
+### Update transaction line information
 
 Similarly, the update of some transaction line fields also affects tax calculation.
 
 ![Transaction lines that affect tax calculation](media/gte-update-trx-line-info.png)
 
-### Update – Update tax information
+### Update tax information
 
 The tax information of a transaction line has a major effect on tax calculation. The logic is maintained on the Application Object Tree (AOT) **TransTaxInformation** page. This page might not require further uptake.
 
-### Posting – Define a tax document transit rule
+### Define a tax document transit rule
 
 A rule should be defined to associate a purchase invoice and journal with the tax document. In **TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleList()**, rules are defined for VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans to specify that the tax document or tax document row should be associated with the transaction table.
 
@@ -503,19 +503,19 @@ A rule should be defined to associate a purchase invoice and journal with the ta
 
 ![Tax document transit rule extension](media/gte-tax-doc-transit-rule-ext.png)
 
-### Posting – Transfer a tax document
+### Transfer a tax document
 
 When a journal is created from a transaction, the tax document should be transferred to the journal. The following code transfers a tax document from a purchase invoice to a purchase invoice journal.
 
 ![Transfer a tax document](media/gte-transfer-tax-document.png)
 
-### Posting – Post tax
+### Post tax
 
 Tax posting occurs when the purchase invoice journal is posted. Therefore, **TaxBusinessService::PostTax()** is called in the **FormLetterJournalPost.postTax()** base class to post the purchase invoice journal.
 
 ![Posting tax](media/gte-post-tax.png)
 
-### Posting – Add inventory tax
+### Add inventory tax
 
 Tax that must be posted to inventory should be added to an inventory transaction.
 
@@ -523,7 +523,7 @@ The following example shows logic in the **Inventory** module that posts tax for
 
 ![Adding inventory tax](media/gte-purchinvoicejournalpost.png)
 
-### Posting – Post a tax document
+### Post a tax document
 
 After tax is posted, the tax document should be updated to a status that indicates that the tax document has been posted.
 
@@ -537,7 +537,7 @@ When the preceding method is called, an additional record is created in the TaxD
 
 Debugging of the Tax engine is done mainly on the validation of transaction data and the calculated tax document result. Both the transaction data and the calculated result are in JavaScript Object Notation (JSON) string format.
 
-### Debugging on transaction data
+### Debugging transaction data
 
 Put a breakpoint in **TaxEngineServiceProxy.calculate()**, as shown in the following illustration.
 
@@ -545,7 +545,7 @@ Put a breakpoint in **TaxEngineServiceProxy.calculate()**, as shown in the follo
 
 **JsonStr** contains all the transaction data information that is prepared by data providers. You can use any online JSON viewer to easily identify whether data is correctly set for tax model attributes.
 
-### Debugging on the tax document result
+### Debugging the tax document
 
 If the Tax engine returns errors for a calculation, all the results will be set to the **RET** attribute in the preceding method. By using a Quick Watch command on the attribute, you can easily understand the full error from the Tax engine.
 
