@@ -39,7 +39,6 @@ There are three models for Tax engine integration in the Finance and Operations 
 - Tax engine interfaces with the Tax engine service
 - Tax business service
 - Finance and Operations application integration:
-
     - Application integration
     - Accounting integration
 
@@ -53,7 +52,7 @@ The ITaxEngine interface and its implementation contain the basic operations of 
 
 The set of ITaxDocument interfaces and implementations enables information to be read from a tax document that the Tax engine calculates and returns. This set includes ITaxDocument, ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
 
-    ![GTE interfaces](./media/gte-itaxdocument_interfaces.jpg)
+![GTE interfaces](./media/gte-itaxdocument_interfaces.jpg)
 
 These interfaces also provide methods for retrieving a specified field value (**ITaxDocumentField**) from ITaxDocumentLine and an expected measure value (**ITaxDocumentMeasure**) from ITaxDocumentComponentLine.
 
@@ -68,7 +67,7 @@ This model serves as the façade for interactions that the Finance and Operation
 <table>
 <tr>
 <td><strong>Method</strong></td>
-<td><strong>Additional information</strong>
+<td><strong>Description</strong>
 </td>
 </tr>
 <tr>
@@ -167,7 +166,7 @@ This model serves as the façade for interactions that the Finance and Operation
 
 ## Finance and Operations application integration
 
-The transaction information in Finance and Operations should be sent to GTE. At the same time, the accounting and posting of tax should be aligned with the Finance and Operations implementation. Therefore, three parts are created in the Finance and Operations application:
+Transaction information from Finance and Operations should be sent to the Tax engine. At the same time, the accounting and posting of tax should be aligned with the Finance and Operations implementation. Therefore, three parts are created in the Finance and Operations application:
 
 - Taxable document
 - GTE tax accounting
@@ -189,26 +188,22 @@ In the following example, TaxableDocumentDescriptorPurchaseOrderParm implements 
 
 ![Shared table example](media/gte-example-shared-table.png)
 
-##### Integration uptake point
-
 If additional attributes are added to a tax configuration, and they are used for lookup, condition, formula, or other configurations, you should bind the attributes with transaction data. Therefore, you should modify the corresponding data provider classes for a transaction so that they do this type of data binding.
 
-If additional transactions should support GTE, you should create related TaxableDocumentTypeDefinitions, TaxableDocumentDescriptors, and TaxableDocumentDataProviders.
+> [!NOTE]
+> If additional transactions should support GTE, you should create related TaxableDocumentTypeDefinitions, TaxableDocumentDescriptors, and TaxableDocumentDataProviders.
 
 #### Transit document
 
-A transit document is an existing framework in Finance and Operations that is used for two purposes:
+A transit document is an existing framework in Finance and Operations that is used for the following two purposes:
 
 - Maintain the relationship between a transaction and a transit document.
 - Transfer the document from one transaction to another transaction.
 
-This framework lets you easily find a transaction's document and track the transit history.
+This framework lets you easily find a transaction's document and track the transit history. For example, a tax document is created from VendInvoiceInfoTable, and then the transit document maintains the relationship between VendInvoiceInfoTable and TaxDocument. When a purchase order is invoiced, the tax document from VendInvoiceInfoTable is transferred to VendInvoiceJour.
 
-For example, a tax document is created from VendInvoiceInfoTable, and then the transit document maintains the relationship between VendInvoiceInfoTable and TaxDocument. When a purchase order is invoiced, the tax document from VendInvoiceInfoTable is transferred to VendInvoiceJour.
-
-##### Integration uptake
-
-If additional transactions should support GTE, you should define a rule for the transit document framework to describe which transaction should have a tax document from both the header level and the line level. The rule should also define the transit action from the source transaction to the target transaction.
+> [!NOTE] 
+> If additional transactions should support the Tax engine, you should define a rule for the transit document framework to describe which transaction should have a tax document from both the header level and the line level. The rule should also define the transit action from the source transaction to the target transaction.
 
 #### Transaction integration
 
@@ -216,32 +211,30 @@ Transaction integration occurs only on a case-by-case basis. For each transactio
 
 ### Accounting integration
 
-#### GTE tax accounting
+#### Tax engine tax accounting
 
-The accounting of Finance and Operations transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to GTE tax accounting, which is integrated with the Finance and Operations implementation on both sides:
+The accounting of Finance and Operations transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance and Operations implementation on both sides:
 
 - For source document transactions, such as a purchase order or free text invoice, the account information for tax is fetched when the tax document is created.
 - For non-source document transactions, such as a sales order or general journal, the account information is determined when tax is posted.
 
-##### Integration uptake 
+> [!NOTE]
+> If any additional source document transaction requires Tax engine support, you should create source document–related classes to extend AccountingJournalizationRule and AccountingDistributionRule for the specified business event and monetary amount.
 
-If any additional source document transaction requires GTE support, you should create source document–related classes to extend AccountingJournalizationRule and AccountingDistributionRule for the specified business event and monetary amount.
+#### Tax engine tax posting
 
-#### GTE tax posting
-
-Currently, GTE tax posting generates TaxTrans, TaxTrans\_IN (if you're running under the India country/region code), and a related voucher for TaxTrans. In order for the **taxTrans** field to be filled with attributes or measures from the tax document, the mapping should be provided via **TaxAcctTaxTransTaxDocAttrMapping** and **TaxAcctTxTransTaxDocMeasureMapping**.
+Currently, Tax engine tax posting generates TaxTrans, TaxTrans\_IN (if you're running under the India country/region code), and a related voucher for TaxTrans. In order for the **taxTrans** field to be filled with attributes or measures from the tax document, the mapping should be provided via **TaxAcctTaxTransTaxDocAttrMapping** and **TaxAcctTxTransTaxDocMeasureMapping**.
 
 The following illustration shows how TaxTrans and the voucher are created.
 
 ![Create TaxTrans and the voucher](media/gte-create-taxtrans-voucher.png)
 
-##### Integration uptake point
+> [!NOTE]
+> If **taxTrans** fields should be filled with additional fields from the tax document, you should update the **TaxAcctTaxTransTaxDocAttrMapping** class, the **TaxAcctTxTransTaxDocMeasureMapping** class, or the extended classes of one of these classes in the appropriate manner for data binding.
 
-If **taxTrans** fields should be filled with additional fields from the tax document, you should update the **TaxAcctTaxTransTaxDocAttrMapping** class, the **TaxAcctTxTransTaxDocMeasureMapping** class, or the extended classes of one of these classes in the appropriate manner for data binding.
+## Example: Finance and Operations integration – Purchase order invoice
 
-## Finance and Operations integration example – Purchase order invoice
-
-This section provides an example of Finance and Operations GTE uptake for a purchase order invoice. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
+This section provides an example of Finance and Operations Tax engine uptake for a purchase order invoice. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
 
 ### Integration checklist
 
@@ -542,7 +535,7 @@ When the preceding method is called, an additional record is created in the TaxD
 
 ## Debugging
 
-Debugging of GTE is done mainly on the validation of transaction data and the calculated tax document result. Both the transaction data and the calculated result are in JavaScript Object Notation (JSON) string format.
+Debugging of the Tax engine is done mainly on the validation of transaction data and the calculated tax document result. Both the transaction data and the calculated result are in JavaScript Object Notation (JSON) string format.
 
 ### Debugging on transaction data
 
@@ -554,9 +547,9 @@ Put a breakpoint in **TaxEngineServiceProxy.calculate()**, as shown in the follo
 
 ### Debugging on the tax document result
 
-If GTE returns errors for a calculation, all the results will be set to the **RET** attribute in the preceding method. By using a Quick Watch command on the attribute, you can easily understand the full error from GTE.
+If the Tax engine returns errors for a calculation, all the results will be set to the **RET** attribute in the preceding method. By using a Quick Watch command on the attribute, you can easily understand the full error from the Tax engine.
 
-If GTE returns no issues, the tax document result will be persisted into the following tables:
+If the Tax engine returns no issues, the tax document result will be persisted into the following tables:
 
 - TaxDocument
 - TaxDocumentRow
