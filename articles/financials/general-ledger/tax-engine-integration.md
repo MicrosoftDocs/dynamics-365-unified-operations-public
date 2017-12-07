@@ -72,7 +72,7 @@ This model serves as the façade for interactions that the Finance and Operation
 </tr>
 <tr>
 <td>CalculateTax</td>
-<td> Delete a tax document if it's marked as **Dirty**, and then calculate tax.<ul>
+    <td> Delete a tax document if it's marked as <strong>Dirty</strong>, and then calculate tax.<ul>
 <li><strong>Input</strong>: Taxable document identifier</li>
 <li><strong>Output</strong>: Tax document object</li>
 </ul>
