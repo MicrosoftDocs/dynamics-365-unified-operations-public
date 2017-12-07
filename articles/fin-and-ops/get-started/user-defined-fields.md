@@ -5,7 +5,7 @@ title: Custom fields
 description: This topics shows how Microsoft Dynamics 365 for Finance and Operations allows you to create custom fields to tailor the application to fit your business.
 author: jasongre
 manager: AnnBe
-ms.date: 12/06/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -96,7 +96,7 @@ Follow these steps to expose a custom field on a data entity:
 1.   Select the custom field on the **Custom fields** form. 
 2.   Expand the **Entities** section to view the set of relevant entities.  
 3.   Click the **Edit** button.
-4.   Modify the **Enabled** field to be checked for each entity that should expose this field.  
+4.   Modify the **Enabled** field to be selected for each entity that should expose this field.  
 5.   Click **Apply changes** to save your selections.  
 
 ### Allowing custom fields to be displayed in other languages
