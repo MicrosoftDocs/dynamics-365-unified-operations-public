@@ -209,9 +209,9 @@ This framework lets you easily find a transaction's document and track the trans
 
 Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#microsoft-dynamics-ax-integration-example-purchase-order-invoice) section later in this topic.
 
-### Accounting integration
+#### Accounting integration
 
-#### Tax accounting
+##### Tax accounting
 
 The accounting of Finance and Operations transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance and Operations implementation on both sides:
 
@@ -221,7 +221,7 @@ The accounting of Finance and Operations transactions has two parts: source docu
 > [!NOTE]
 > If any additional source document transaction requires Tax engine support, you should create source document–related classes to extend AccountingJournalizationRule and AccountingDistributionRule for the specified business event and monetary amount.
 
-#### Tax engine tax posting
+##### Tax engine tax posting
 
 Currently, Tax engine tax posting generates TaxTrans, TaxTrans\_IN (if you're running under the India country/region code), and a related voucher for TaxTrans. In order for the **taxTrans** field to be filled with attributes or measures from the tax document, the mapping should be provided via **TaxAcctTaxTransTaxDocAttrMapping** and **TaxAcctTxTransTaxDocMeasureMapping**.
 
