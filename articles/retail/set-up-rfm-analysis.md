@@ -74,15 +74,15 @@ If your organization uses an aggregate number for the score, the individual rati
    
 6.	On the **Frequency** FastTab, do the following: 
     - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers. 
-   - In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer. 
-   - In the **Multiplier** field, enter the value by which to multiply the frequency score. If you do not enter a value, the score will not be multiplied.
+    - In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer. 
+    - In the **Multiplier** field, enter the value by which to multiply the frequency score. If you do not enter a value, the score will not be multiplied.
    
 7.	On the **Monetary** FastTab, do the following: 
     - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers. 
     - In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer. 
-   - In the **Multiplier** field, enter the value by which to multiply the monetary score. If you do not enter a value, the score will not be multiplied. 
-   - In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount. 
-   - If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box. 
+    - In the **Multiplier** field, enter the value by which to multiply the monetary score. If you do not enter a value, the score will not be multiplied. 
+    - In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount. 
+    - If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box. 
  
 ## View a customer’s RFM score
 Use this procedure to view a customer’s RFM score. 
