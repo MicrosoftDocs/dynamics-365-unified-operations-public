@@ -132,6 +132,25 @@ To view additional information about Financial reporting using Power BI, watch t
 ## Fixed asset roll forward report
 The new **Fixed assets roll** forward report provides you with the detailed fixed asset data needed for period closing, financial statements, and tax reporting in an easy-to-read Excel format. The report, which utilizes the GER framework, shows fixed asset financial details for a specific period. Comprehensive data includes individual asset starting and ending balances along with valuation movements for the period, in addition to any new asset acquisitions and disposals that occurred in the specified timeframe. Totals are provided for the fixed asset group and legal entity.  
 
+## Global coverage - Configurable Electronic Reporting
+Several new features have been added to the Electronic Reporting (ER) framework.
+
+- **Improvements in supporting data import from incoming documents in XML format** – You can now configure a single ER format to import data from incoming XML files with a different format. For example, you can have a different root element, or a root element predefined in the format, or any sequence of nested elements of a particular parent element. This allows customers to reduce the efforts needed to manage the ER solution and to easily adopt existing ER solutions to support new requirements.
+
+- **Configurable import from incoming documents in CSV format** – You can now use ER to configure the import of data from incoming documents in CSV format. Initially designed to support import from incoming files in only XML and TXT format, ER formats can be used for parsing incoming documents in another format – as plain text storing tabular data separated by a special character and embraced by quotation characters. This allows customers to easily adopt specific requirements that can be introduced for payment, settlement, and other processes.
+
+- **Check prerequisites for the importing ER solution** - This functionality allows you to check the compliance of the current application instance with the ER configuration that has been selected for import. All missing application updates (if any) will be indicated, as the list of required KB numbers that significantly reduce the efforts needed to install necessary prerequisites for making the application compatible with the selected for import ER configuration.
+
+- **Re-usage of application logic by calling methods of application classes** – The existing functionality to configure ER expressions for calling methods of application classes with arguments has been improved. With this new functionality, you will be able to configure expressions in which the values of such arguments can be defined dynamically at run-time by using ER data sources. This allows customers to significantly reduce the effort needed to configure ER solutions when the necessary logic is already available in the application’s source code.
+
+- **Improvements in calculation of aggregate functions and data grouping** – For some ER data sources of the GROUP BY type, the data grouping and calculation of aggregate functions can be performed at the database (SQL) level. This allows customers to significantly improve the performance of ER reports especially for the transactional data sources that may contain many records.
+
+- **Records deletion based on information from incoming documents** – You can now configure ER formats for data import from incoming documents to only insert new records or update existing ones. You will be able also to configure the logic of existing records’ deletion. This gives customers more opportunities to use ER framework for automation of various business processes as configurable ones.
+
+- **Changes in APIs to access the ER framework** – The existing APIs to access ER framework has been changed – most of X++ classes were moved to an external C# assembly while the rest of them were marked as internal. New APIs improves the ER framework’s backward compatibility. This allows customers to significantly reduce the effort needed to manage their ER-related code modifications in the future updates of the application.
+
+For more information, see [Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting). 
+
 Inventory transactions logging (InventSumLogTTS) optimization  
 ---------------------------------------------------------------
 
