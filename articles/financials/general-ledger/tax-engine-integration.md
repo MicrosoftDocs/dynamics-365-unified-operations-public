@@ -240,7 +240,7 @@ This section provides an example of Finance and Operations Tax engine uptake for
 
 The following table summarizes all relevant changes that are related to the uptake of a purchase order invoice.
 
-<table border="1">
+<table>
 <tr>
 <th colspan="2">Transaction uptake checklist</th>
 <th>Description</th>
@@ -342,7 +342,7 @@ AccJourRuleVendPaymReqTaxMeasure</td>
 
 ### Define a taxable document
 
-**TaxableDocumentTypeDefintionPurchaseInvoice** and **TaxableDocumentDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for GTE.
+**TaxableDocumentTypeDefintionPurchaseInvoice** and **TaxableDocumentDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for the Tax engine.
 
 ![Taxable document classes](media/gte-classes-taxable-document.png)
 
@@ -427,7 +427,7 @@ The following table lists the taxable document fields that are mapped in Finance
 
 ### Add the Tax document button on a transaction
 
-One way to trigger tax calculation in GTE is through a **Tax document** button that you add on the transaction. When this button is clicked, transactional data is sent to GTE as a predefined taxable document object, and tax calculation is triggered in GTE. The button is usually added to a transaction page, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface (UI).
+One way to trigger tax calculation in the Tax engine is through a **Tax document** button that you add on the transaction. When this button is clicked, transactional data is sent to the Tax engine as a predefined taxable document object, and tax calculation is triggered in the Tax engine. The button is usually added to a transaction page, such as **VendEditInvoice**. Immediately after tax is calculated, the result appears in the tax document user interface (UI).
 
 ![Tax document button on the Action Pane](media/gte-vend-taxdocument.png)
 
@@ -437,7 +437,7 @@ One way to trigger tax calculation in GTE is through a **Tax document** button t
 
 The **Totals** button is used to show a transaction's financial information, such as the tax amount, discount amount, and total amounts. The tax amount that appears on the total page will also be added to the invoiced amount of the journal.
 
-For an existing implementation of Finance and Operations, a set of **PurchTotals** classes is created to handle this functionality. Therefore, GTE-related code is inserted into the class's **calcTax** method to help guarantee that the expected tax total amount is initiated.
+For an existing implementation of Finance and Operations, a set of **PurchTotals** classes is created to handle this functionality. Therefore, Tax engine-related code is inserted into the class's **calcTax** method to help guarantee that the expected tax total amount is initiated.
 
 ![calcTax method](media/gte-trx-totals.png)
 
@@ -445,7 +445,7 @@ For alignment with the existing logic, the existing **taxTotal** parameter is us
 
 ### Integrate with a source document
 
-A purchase invoice is a source document transaction. Therefore, the calculated tax result from GTE should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the GTE integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
+A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the GTE integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
 
 ![Distribution and journalization rules](media/gte-distribution-journalization-rule.png)
 
