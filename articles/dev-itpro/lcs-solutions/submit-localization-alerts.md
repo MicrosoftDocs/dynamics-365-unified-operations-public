@@ -5,7 +5,7 @@ title: Inform about country/region regulatory features
 description: This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -40,7 +39,7 @@ This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to
 Accessing the regulatory alert submission service
 -------------------------------------------------
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
+In Microsoft Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
 
 The **Dynamics regulatory alert submission** page appears. You can use this page to view any alerts that have previously been submitted by you or your organization.
 
@@ -84,7 +83,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 			<p>Title</p>
 			</td>
 			<td>
-			<p>Enter a descriptive title to identify the area of impact. For example, enter **Changes in invoice document as of January 1, 2018**.</p>
+			<p>Enter a descriptive title to identify the area of impact. For example, enter <strong>Changes in invoice document as of January 1, 2018</strong>.</p>
 			</td>
 		</tr>
 		<tr>
@@ -108,7 +107,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 			<p>Industry</p>
 			</td>
 			<td>
-			<p>Select the industry, if the requirement applies only to specific industries. For example, select **Public sector**, **Retail**, or **Manufacturing**. </p>             
+			<p>Select the industry, if the requirement applies only to specific industries. For example, select <strong>Public sector</strong>, <strong>Retail</strong>, or <strong>Manufacturing</strong>. </p>             
 			</td>
 		</tr>
 		<tr>
@@ -180,7 +179,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 			<p>Business process</p>
 			</td>
 			<td>
-			<p>The business processes that you selected through the **Alert submission** wizard.</p>
+			<p>The business processes that you selected through the <strong>Alert submission</strong> wizard.</p>
 			</td>
 		</tr>
 		<tr>
@@ -191,7 +190,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 		</tr>
 		<tr>
 			<td> Attachments </td>
-			<td> <p>Click the **Upload** button, and then browse to select a file to add as an attachment. After you select the file, it's uploaded and appears as a linked file. You can add up to three files that have a size 5 MB each. To delete files that have been attached, click **Remove** under the title of the file. **Note:** Attachments must be publicly available materials. They can't be propriety or customer-specific/partner-specific.</p>
+			<td> <p>Click the <strong>Upload</strong> button, and then browse to select a file to add as an attachment. After you select the file, it's uploaded and appears as a linked file. You can add up to three files that have a size 5 MB each. To delete files that have been attached, click <strong>Remove</strong> under the title of the file. <strong>Note</strong> Attachments must be publicly available materials. They can't be propriety or customer-specific/partner-specific.</p>
 			</td>
 		</tr>
 </table>
