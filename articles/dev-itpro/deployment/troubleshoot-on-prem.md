@@ -42,7 +42,7 @@ Service Fabric Explorer can be accessed by using a browser and the default addre
 To access the site, the client certificate needs to be in cert:\CurrentUser\My (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ## Stateful and Stateless Services, how to identify nodes for log review 
-To find out what machine is the primar instance for Stateful Services, like a Local Agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**. Note the primary node. 
+To find out what machine is the primar instance for Stateful Services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**. Note the primary node. 
 For Stateless Services, or the rest of the applications, you need to check all of the nodes. 
 
 ## Timeout error received when creating a Service Fabric cluster 
@@ -69,10 +69,10 @@ If you receive an access denied error, restart PowerShell or restart the machine
 ## LocalAgent 
 LocalAgent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-## How to find the LocalAgent values that are used 
-Local Agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
+## How to find the local agent values that are used 
+Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details** section.
 
-## Install, upgrade, or uninstall Local agent 
+## Install, upgrade, or uninstall local agent 
 Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the following upgrade and uninstall commands: 
 
     LocalAgentCLI.exe Install <path of localagent-config.json> 
@@ -82,7 +82,7 @@ Local agent installation is discussed in the topic, [Set up and deploy on-premis
 > [!NOTE]
     > The cleanup command doesn't remove any of the files that were placed in the file share. The file share can be reused.
 
-## Error occurs when starting up Local agent services  
+## Error occurs when starting up local agent services  
 If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification should no longer be enabled. This is done by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
 ## In LCS, "Validation in progress" is showing for several minutes
@@ -209,10 +209,10 @@ If you receive this error, close and reopen PowerShell. If the error still occur
 ## What Cluster ID in Agent config should be used 
 The Cluster ID can be any GUID. This GUID is used for tracking purposes. 
 
-## Local Agent stops working after the tenant for the project from LCS is changed 
-Complete the following steps to configure Local Agent with updated tenant.  
+## Local agent stops working after the tenant for the project from LCS is changed 
+Complete the following steps to configure local agent with updated tenant.  
 1. Remove all of the environments from LCS that already have the connector installed. 
-2. Uninstall the local agent 
+2. Uninstall the local agent. 
 
         .\LocalAgentCLI.exe Cleanup <path of localagent-config.json> 
         
@@ -245,7 +245,7 @@ AX-SetupInfrastructureEvents (additional details when interactions with Service 
 **Event Viewer** > **Custom Views** > **Administrative Events** 
 
 ## Find a full error
-Click on the **Details** tab to view the full error message. 
+Click the **Details** tab to view the full error message. 
 
 ## Service Fabric failing
 Note the service that is failing and open the corresponding application directory. For example, C:\ProgramData\SF\ORCH1\Fabric\work\Applications\LocalAgentType_App5\log.
@@ -253,20 +253,20 @@ Note the service that is failing and open the corresponding application director
 ## Encryption errors
 Some encryption error examples include, AXBootStrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
 
-You might receive one of these errors if the data encipherment cert is used to encrypt AOS AccountPassword was not installed on the machine. This cert could be in the Certificates (Local Computer) or it could be that the Provider type is wrong. 
+You might receive one of these errors if the data encipherment certificate is used to encrypt AOS AccountPassword was not installed on the machine. This certificate could be in the certificates (local computer) or it could be that the provider type is wrong. 
 
-To resolve the error, validate  the credentials.json file. Verify that the texts are decrypting correctly by typing in the following message (on AOS1). 
+To resolve the error, validate the credentials.json file. Verify that the text is decrypting correctly by typing in the following message (on AOS1). 
 
         Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip 
 
-This error might have also occurred if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to Go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for:
+This error might have also occurred if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for the following:
 
-- Proper layout/structure of credentails.json file Encrypt credentials  
-- An end quote at the end of the line or on the next line 
+- Proper layout/structure of credentails.json file encrypt credentials.  
+- An end quote at the end of the line or on the next line. 
 - Error on Microsoft-Service Fabric source.
     
 ## Can't find the certificate and private key to use for decryption (0x8009200C) 
-If you are missing a cert and ACL, or you have the wrong thumbprint entry, check for special characters and check in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt for thumbprints.  
+If you are missing a certificate and ACL, or you have the wrong thumbprint entry, check for special characters and check in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt for thumbprints.  
 
 You can also test by using the Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | clip. If you receive the message, "Cannot find the certificate and private key to use for decryption", verify axdataenciphermentcert and svc-AXSF$ AXServiceUser ACL. 
 If the credentials.json have changed, delete and redeploy from LCS. 
@@ -276,36 +276,36 @@ Additional logging can be done by registering providers. Download the [ETWManife
 
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" =    "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} 
 
-If you need tounregister, use following command:
+If you need to un-register, use following command:
 
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister  
 
-After providers are registered, additional details will be logged on new deployment that can be reviewed in **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics**, 
+After providers are registered, additional details will be logged about the new deployment in **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics**, 
 
 - MR-Logger 
 - MR-Sql 
     
 ### Error while executing AddAXDatabaseChangeTracking
 If you encounter an error while executing AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. For example, ax.d365ffo.onprem.contoso.com.
-The error may have also occurred because of an issue with the star/* cert. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that is not valid or does not match the host ax.d365ffo.onprem.contoso.com.  
+The error may have also occurred because of an issue with the star/* certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that is not valid or does not match the host ax.d365ffo.onprem.contoso.com.  
 
 ### Remove name can't be resolved
 The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details. 
   
 ### Run initialize database script and validate DBs have correct users 
-If you only receive the AddAXDatabaseChangeTracking event, try to reach the Metadataservice of Dynamics 365 by going to 
+If you only receive the AddAXDatabaseChangeTracking event, try to reach the Metadataservice of Dynamics 365 for Finance and Operations by going to 
 https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService. 
-Next, check the Certificates of the service in the file wif.config. To find the file, log on to one of the AOS boxes and, using Task manager, locate **AxService.exe**, right-click and select **Open file location**. In the wif.config file, you should see 3 thumbprints. Note that: 
+Next, check the certificates of the service in the file wif.config. To find the file, log on to one of the AOS boxes and, using Task manager, locate **AxService.exe**, right-click and select **Open file location**. In the wif.config file, you should see 3 thumbprints. Note that: 
 
 - They have to be different. 
 - They need to be in this order: 
-    1. Finacialreporting Thumbprint 
+    1. Financialreporting Thumbprint 
     2. ReportingService Thumbprint 
     3. SessionAuthentication Thumbprint 
-If the thumbprints to not follow the list of requirements, you must redeploy from LCS with proper Thumbprints. 
+If the thumbprints do not follow the list of requirements, you must redeploy from LCS with proper thumbprints. 
 
 ## Unable to resolve the xPath value 
-Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value looking for AOS runtime user information however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.  
+Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value is looking for AOS runtime user information, however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.  
 
 ## ADFS
 ### Login page not redirecting
@@ -313,20 +313,20 @@ If the Login page is not redirecting and is still prompting for credentials, or 
 
 - Add ADFS link to trusted sites.
 - Add Dynamics 365 link to trusted sites.
-- Try adding trailing slash '/' to see if behavior changes.
+- Try adding a trailing slash '/' to see if behavior changes.
 
 Verify the AD FS Manager by going to **ADFS** > **Application groups**. Double-click **Microsoft Dynamics 365 for Operations on-premises**. Under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.
-- Note the Redirect URI as it should match the DNS forward lookup zone for Dynamics 365. 
+- Note the Redirect URI as it should match the DNS forward lookup zone for Dynamics 365 for Finance and Operations. 
 
 ### Error: Could not establish trust relationship for the SSL/TLS secure channel
 If you receive the error, "Could not establish trust relationship for the SSL/TLS secure channel", do the following: 
 
 1. Go to **Service Fabric** > **Cluster** > **Applications** > **AXSFType** > **fabric:/AXSF** > **Details** tab and Aad_AADMetadataLocationFormat / - Aad_FederationMetadataLocation. Next, browse to that URL from AOS.  
 2. Go to **AOS Event Viewer** > **Applications and Services Log**s > **Microsoft** > **Dynamics** > **AX-SystemRuntime** for details. 
-3. Check to see if ADFS cert is trusted:
-    1. Verify ADFS cert by going to **ADFS machine** > **Server Manager** > **Tools** > **AD FS Management**. 
-    2. Expand **AD FS** > **Service** > **Certificates** and note the certs. For example, ex. dc1.contoso.com. 
-    3. On AOS machine, go to the Cert manager, **Certificates** (Local Computer) > **Trusted Root Certification Authorities** > **Certificates**  and verify that the ADFS cert is listed.
+3. Check to see if ADFS certificate is trusted:
+    1. Verify ADFS certificate by going to **ADFS machine** > **Server Manager** > **Tools** > **AD FS Management**. 
+    2. Expand **AD FS** > **Service** > **Certificates** and note the certificates. For example, ex. dc1.contoso.com. 
+    3. On the AOS machine, go to the Cert manager, **Certificates** (Local Computer) > **Trusted Root Certification Authorities** > **Certificates**  and verify that the ADFS certificate is listed.
 If you receive a message that the site isn't secure, this is because you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. 
 
 ### Can't connect to remove server in some locations
@@ -335,7 +335,7 @@ If you are unable to connect to the remote server at the following places:
 - System.Net.HttpWebRequest.GetResponse() 
 - System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy) 
 - System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn) 
-Go to the C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log folder where you get the err and out files. 
+Go to the C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log folder where you get the error and out files. 
 The out file contains the following information: 
 
 - System.Net.WebException: Unable to connect to the remote server ---> 
@@ -356,12 +356,12 @@ If you used **Reset-DatabaseUsers.ps1**, you will need to restart the Dynamics S
 -  NETWORKDOMAIN example https://DC1.contoso.com/adfs 
 - NETWORKALIAS example AXServiceUser@contoso.com 
 
-In the ADFS machine, go to **Server Manager** > **Tools** > **AD FS Management** > **Service**. Right-click **Service and Edit Federation Service Properties**. Note the Federation Service identifier which should match the **USERINFO.NETWORKDOMAIN (https://DC1.contoso.com/adfs)**. Verify that both are https in **USERINFO**. 
+In the ADFS machine, go to **Server Manager** > **Tools** > **AD FS Management** > **Service**. Right-click **Service and Edit Federation Service Properties**. Note the Federation Service identifier, which should match the **USERINFO.NETWORKDOMAIN (https://DC1.contoso.com/adfs)**. Verify that both are HTTPS in **USERINFO**. 
 
 In the ADFS machine, go to **Event Viewer** > **Applications and Services Logs** > **AD FS** > **Admin** and note any errors.
 
 ## Login issues 
-IF you or others are experiencing login issues, verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If it is valid, then on the primary SQL Server machine, run the following:    
+If you or others are experiencing login issues, verify in Service Fabric Explorer that Provisioning_AdminPrincipalName and Provisioning_AdminIdentityProvider is valid. If it is valid, then on the primary SQL Server machine, run the following:    
 
             - .\Reset-DatabaseUsers.ps1 
 On each AOS, open Task Manager, select AXService.exe, and then click **End task**. 
@@ -385,9 +385,9 @@ If you receive one of the following errors:
 The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes. 
 
 ## Keyset doesn't exist 
-If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Go back and review  the section, Install Certificates section. Copy the scripts in each folder to the VMs that correspond to the folder name. 
+If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Go back and review the section, "Install Certificates". Copy the scripts in each folder to the VMs that correspond to the folder name. 
 
-Also check csv file for correct domain being used 
+Also check the csv file to be sure that the correct domain being used. 
 
 ## Error: RunAsync failed due to an unhandled FabricException causing replica to fault
 If you receive this error, "RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0:", change the ClusterConfig.json diagnosticsStore from network share to local path such as, \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore. 
@@ -406,10 +406,10 @@ This is not a root error. This error means that the status of each node is not r
 Navigate to the Event Viewer to get root error. You can also find it here, c:\ProgramData\SF… 
 
 ## Error, "Unable to find certificate" when running Test-D365FOConfiguration.ps1 
-If you receive this error, check to see if certs/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure). 
+If you receive this error, check to see if certificates/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure). 
 
-## The client and server can't communicate because they do not possess a common algorithm 
-If this occurs, verify that the certificates created are using the specified provider as explained [2. Plan and acquire your certificates](setup-deploy-on-premises-environments.md#plancert).
+## Client and server can't communicate because they do not possess a common algorithm 
+If this occurs, verify that the certificates created are using the specified provider as explained in [2. Plan and acquire your certificates](setup-deploy-on-premises-environments.md#plancert).
  
 ## Find a list of group managed service accounts (gMSA)
 To find a list of all groups and hosts, [Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties *] 
@@ -418,12 +418,12 @@ PrincipalsAllowedToRetrieveManagedPassword
 ## AddCertToServicePrincipal script failing on Import-Module 
 AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.  
 
-To resolve this issue, run the following command in PowerShell 
+To resolve this issue, run the following command in PowerShell. 
         
         Uninstall-Module -Name AzureRM  
         Install-Module AzureRM 
 
-Then, close the PowerShell window and try again.
+Vlose the PowerShell window and try again.
 
 ## ReportingServicesSetup.exe Error
 ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes 
@@ -443,12 +443,3 @@ AOS users are not in the local administrator group and the UAC has not been disa
 ## Files in use errors
 Set up exclusion rules advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-
-
- 
-
-
-
-
-
- 
