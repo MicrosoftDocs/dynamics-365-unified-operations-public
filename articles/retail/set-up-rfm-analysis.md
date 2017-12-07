@@ -62,27 +62,27 @@ If your organization uses an aggregate number for the score, the individual rati
 3.	Enter a start date and end date for this RFM definition.
 
 4.	On the **General** FastTab, do the following: 
-   - If each section of the RFM score must contain an equal count of customers, select the **Even distribution** check box. 
-  - Select the **Add scores** check box to aggregate the three scores. For example, this would give a customer an RFM score of 13 instead of 535. 
-  - Select the **Save history** check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.
+    - If each section of the RFM score must contain an equal count of customers, select the **Even distribution** check box. 
+    - Select the **Add scores** check box to aggregate the three scores. For example, this would give a customer an RFM score of 13 instead of 535. 
+    - Select the **Save history** check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.
   
 5.	On the **Recency** FastTab, do the following: 
-   - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers. For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score. The 20 customers who have made purchases most recently have a recency score of 5. The next 20 customers have a recency score of 4, and so on. If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on. 
-   - In the **Priority** field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer. For example, you might place more value on the recency score than the monetary score. 
-   - In the **Multiplier** field, enter the value by which to multiply the recency score. If you do not enter a value, the score will not be multiplied. 
-   - In the **Period** field, select the time period by which the recency score is calculated. For example, by week or by month.
+    - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers. For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score. The 20 customers who have made purchases most recently have a recency score of 5. The next 20 customers have a recency score of 4, and so on. If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on. 
+    - In the **Priority** field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer. For example, you might place more value on the recency score than the monetary score. 
+    - In the **Multiplier** field, enter the value by which to multiply the recency score. If you do not enter a value, the score will not be multiplied. 
+    - In the **Period** field, select the time period by which the recency score is calculated. For example, by week or by month.
    
 6.	On the **Frequency** FastTab, do the following: 
-   - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers. 
-  - In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer. 
+    - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers. 
+   - In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer. 
    - In the **Multiplier** field, enter the value by which to multiply the frequency score. If you do not enter a value, the score will not be multiplied.
    
 7.	On the **Monetary** FastTab, do the following: 
-   - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers. 
-   - In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer. 
-  - In the **Multiplier** field, enter the value by which to multiply the monetary score. If you do not enter a value, the score will not be multiplied. 
-  - In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount. 
-  - If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box. 
+    - In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers. 
+    - In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer. 
+   - In the **Multiplier** field, enter the value by which to multiply the monetary score. If you do not enter a value, the score will not be multiplied. 
+   - In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount. 
+   - If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box. 
  
 ## View a customer’s RFM score
 Use this procedure to view a customer’s RFM score. 
