@@ -46,9 +46,12 @@ To become more familiar with the details of this feature, play the task guide, E
 
 To complete some steps of the task guide, you must download the following files:
 
-- [ER data model configuration](https://go.microsoft.com/fwlink/?linkid=862266)
-- [ER format configuration](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Web service response sample 1](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Web service response sample 2](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Web service response sample 3](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Web service response sample 4](https://go.microsoft.com/fwlink/?linkid=862266)
+| Content description           | File                                                              |
+--------------------------------|-------------------------------------------------------------------|
+| ER data model configuration   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
+| ER format configuration       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| Web service response sample 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| Web service response sample 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| Web service response sample 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| Web service response sample 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+
