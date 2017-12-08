@@ -32,15 +32,25 @@ ms.dyn365.ops.version: 7.3
 [!include[banner](../includes/banner.md)]
 
 
-The Tax Engine (GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
+The Tax engine (Also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
 
-In this topic, you will learn the GTE configuration extension process using the following example scenarios.
+In this topic, you will learn the Tax engine configuration extension process using the following example scenarios that apply to India.
 
--	Extend the GTE configuration for UTGST
--	Apply tax rate of BCD for import order of goods from different countries/regions (Usage of Reference Model)
+-	Extend the Tax engine configuration for UTGST
+-	Use a Reference Model to apply a tax rate of BCD for import order of goods from different countries/regions
 
+The following tax terms are mentioned in this topic:
+
+|Tax term | Full name|
+|-----|-----------|
+|GST | Goods and Services Tax|
+|UTGST | Union Territory Goods and Services Tax|
+|CGST | Central Goods and Services Tax|
+|IGST | Integrated Goods and Services Tax |
+|BCD| Basic Customs Duty|
 
 ## Activate the tax configuration
+Before you can complete the example scenarios, you must activate the tax configuration using the following steps. 
 
 1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting** > **Tax configurations**.
 2.	Click **Exchange** > **Load from XML files**.
@@ -63,7 +73,7 @@ In this topic, you will learn the GTE configuration extension process using the 
 
 ![Active solution](media/gte-extension-active-solution.png)
 
-## Scenario 1: Extend the GTE configuration for UTGST
+## Scenario 1: Extend the Tax engine configuration for UTGST
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
 
@@ -79,7 +89,7 @@ For UTGST, the following combinations of taxes can be applied for any transactio
 
 -	Supply of goods and services within a state (intrastate): CGST + SGST
 -	Supply of goods and services within union territories (intra-UT): CGST + UTGST
--	Supply of goods and services across states or union territories (interstate/inter-UT): Integrated GST (IGST)
+-	Supply of goods and services across states or union territories (interstate/inter-UT): IGST
 
 The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
@@ -136,10 +146,10 @@ For convenience, there is a special data source called **Taxable document source
 
  -or-
  
-**Method 2**: You can use Electronic Reporting (ER) data mapping, which lets you map a Finance and Operations field by using table records, classes, etc.
+**Method 2**: You can use Electronic reporting (ER) data mapping, which lets you map a Finance and Operations field by using table records, classes, etc.
  
 #### Method 1: Data mapping by Taxable document source
-Before you start this task, be sure to read the **Tax Engine Integration** document where you can find all the details. GTE must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to GTE.
+Before you start this task, be sure to read about [Tax engine integration](tax-engine-integration.md) so you understand the underlying concepts. The Tax engine must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to the Tax engine.
 
 1. Find the system name of the Union Territory of State master.
 	1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
@@ -148,7 +158,7 @@ Before you start this task, be sure to read the **Tax Engine Integration** docum
 ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
 2. Add a tax engine model field for intrastate transactions in a union territory. 
-	1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a const str for intrastate transactions in a union territory.
+	1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a ```const str``` for intrastate transactions in a union territory.
 	
 ```
 public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
@@ -429,11 +439,11 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 ![Set up data for new version](media/gte-extension-tax-setup.png)
 
-## Scenario 2: Usage of Reference Model
+## Scenario 2: Using a Reference Model
 
-Per the Microsoft-provided configuration, the tax rate of BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use a reference model to support the following scenario:
+Per the Microsoft-provided configuration, the tax rate for the BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use a reference model to support the following scenario:
 
-- Apply the different tax rate of BCD for import order of goods from difference countries/regions.
+- Apply a different tax rate for the BCD on the import order of goods from difference countries/regions.
 
 ### Task 1: Create extension configuration
 
@@ -491,7 +501,7 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 5: Change the lookup of BCD tax rate
+### Task 5: Change the lookup of the BCD tax rate
 
 1.  Go to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
 2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
