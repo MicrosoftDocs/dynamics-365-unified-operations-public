@@ -142,14 +142,11 @@ To support the scenario, the following must be done:
 There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in the taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
 For convenience, there is a special data source called **Taxable document source** which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
-**Method 1**: You can enable the additional field for the existing Taxable document source.
-
- -or-
- 
-**Method 2**: You can use Electronic reporting (ER) data mapping, which lets you map a Finance and Operations field by using table records, classes, etc.
+- 	Method 1: Enable the additional field for the existing Taxable document source.
+-	Method 2: Use Electronic reporting (ER) data mapping
  
 #### Method 1: Data mapping by Taxable document source
-Before you start this task, be sure to read about [Tax engine integration](tax-engine-integration.md) so you understand the underlying concepts. The Tax engine must determine whether a state is a union territory. Therefore, in this scenario, you will modify the data provider so that it provides this information to the Tax engine.
+Before you use this method, be sure to read about [Tax engine integration](tax-engine-integration.md) so you understand the underlying concepts. The Tax engine must determine whether a state is a union territory. Therefore, in this method, you will modify the data provider so that it provides this information to the Tax engine.
 
 1. Find the system name of the Union Territory of State master.
 	1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
@@ -229,16 +226,16 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 	7. Enter a description such as **UTGST**, and then click **OK**.
 	8. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
-#### Task 3.2: Data mapping using the ER model mapping designer
-You should be familiar with the table relation, class, method, etc. so you can use the ER model mapping designer efficiently.
+#### Method 2: Data mapping using the ER model mapping designer
+Before you use this method, be sure you are familiar with ER and the table relation, class, method, etc. for purchase orders. 
 1. Open the model mapping design of purchase order, add table records **PurchLine** as a root data source
-![](media/gte-extension-purchline.png)
+![Purchline extension](media/gte-extension-purchline.png)
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**
-![](media/gte-extension-add-enumerations.png)
+![Add enumerations](media/gte-extension-add-enumerations.png)
 3. Add a calculated field **$PurchLine** in **purchase order** to build the connection between existing taxable document **purchase order** and the table records **PurchLine**, click **Edit formula**.
-![](media/gte-extension-edit-formula.png)
+![Edit formula](media/gte-extension-edit-formula.png)
 4. Input formula which describe the relation between **PurchLine** and **purchase order**
-![](media/gte-extension-add-formula.png)
+![Add formula](media/gte-extension-add-formula.png)
 5. Click **Save**, and close the page
 6. Add calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, the formula is 
 ```
