@@ -1,12 +1,11 @@
-
 ---
 # required metadata
 
-title: Add a custom control to POS non-screen designer-based views
-description: 
+title: Add a custom control to a Retail Modern POS non-screen designer-based view
+description: This topic demonstrates how to a add custom control to non-screen layout designer-based view.
 author: mugunthanm
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,12 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 
 
-# Add a custom control to POS non-screen designer-based views
-**Add a custom control to POS views:**
+# Add a custom control to a Retail Modern POS non-screen designer-based view
 
-You can enhance the information displayed on the Dynamics 365 for Retail POS views by adding custom controls. Custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix. In this document we will focus on how to add custom control to non-screen layout designer based views. In the current version you will not be able place the custom control in desired location, POS at the runtime will load it in fixed position.
+You can enhance the information displayed on a Dynamics 365 for Retail POS view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. In the current version you will not be able place the custom control in desired location, POS at the runtime will load it in fixed position.
 
-Below is the list of non-screen layout designer based views which support custom control:
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
+
+The followingn table lists the non-screen layout designer-based views which support custom controls.
 
 | POS Views              | Support custom control | Number of custom control |
 |------------------------|------------------------|--------------------------|
@@ -46,28 +46,20 @@ Below is the list of non-screen layout designer based views which support custom
 | Product details view   | Yes                    | Multiple                 |
 | Price check view       | Yes                    | Multiple                 |
 
-Below is the list of screen layout designer based views which support custom control:
+The followingn table lists the screen layout designer based-views which support custom control:
 
 | POS Views | Support custom control | Number of custom control |
 |-----------|------------------------|--------------------------|
 | Cart view | Yes                    | 10                       |
 
-In the following example, we will show you how you can add custom control to one of the POS existing view using extension:
+The following example demonstrates show how to add a custom control to one of the POS existing view using extension. Suppose that you want to show the product availability information in the product details view by adding custom data list which has four columns - Location, Inventory, Reserved, and Ordered.
 
-**Scenario:** We want to show the product availability information in the product details view by adding custom data list which has four columns (Location, Inventory, Reserved and Ordered). You can follow the same pattern to show any custom information you want to show in the POS views.
-
-1.  Open visual studio 2015 in administrator mode.
-
-2.  Open ModernPOS solution from …\\RetailSDK\\POS
-
-3.  Under the POS.Extensions project create a new folder called ProdDetailsCustomColumnExtensions.
-
-4.  Under ProdDetailsCustomColumnExtensions, create new folder called ViewExtensions.
-
-5.  Under ViewExtensions, create new folder called SimpleProductDetails.
-
-6.  Add new HTML inside the SimpleProductDetails folder and name it as ProductAvailabilityPanel.html
-
+1. Open visual studio 2015 in administrator mode.
+2. Open ModernPOS solution from …\\RetailSDK\\POS
+3. Under the POS.Extensions project create a new folder called ProdDetailsCustomColumnExtensions.
+4. Under ProdDetailsCustomColumnExtensions, create new folder called ViewExtensions.
+5. Under ViewExtensions, create new folder called SimpleProductDetails.
+6. Add new HTML inside the SimpleProductDetails folder and name it as ProductAvailabilityPanel.html
     In the HTML you can add whatever information you want to show in the custom control and in the .ts file add the corresponding logic. Custom control is nothing but simple HTML page with your custom information.
 
 7.  Open the ProductAvailabilityPanel.html and copy the below code:
