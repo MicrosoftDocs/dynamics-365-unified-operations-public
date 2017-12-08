@@ -507,6 +507,7 @@
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)

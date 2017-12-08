@@ -15,6 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
+
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: tonyafehr
@@ -38,6 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 12, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=863949).
 
+
 Browser client - Discover and learn currently available keyboard shortcuts
 --------------------------------------------------------------------------
 
@@ -48,6 +50,14 @@ shortcuts**. This will open a dialog box listing the shortcuts that you can use
 based on where you are on the page. 
 
 For more information, see [Keyboard shortcuts](shortcut-keys.md).
+
+## Development and build environments in a customer LCS implementation project are monitored and managed by Microsoft 
+If you’re a customer operating or implementing Finance and Operations, you are provided with a set of environments to enable development, testing, and production. Sandbox (Tier-2) and production environments are managed by Microsoft, while your IT staff is responsible for managing developer and build environments. With this feature, all environments in a Lifecycle Services (LCS) implementation project that are running in the Microsoft subscription, including developer and build environments, are monitored and managed by Microsoft. This relieves your IT staff from having to monitor and manage security, including applying security patches and updates for these environments. This does not affect development and build environments running on-premises or in the customer’s or partner’s own Microsoft Azure subscription.
+
+Development and application management tasks performed by developers can be done without requiring local administrator rights on the development virtual machine (VM). Customers will not have access to the VM admin account of development and build environments running in the Microsoft subscription. 
+
+For more information, refer to this LCS blog topic, [Restricted Admin Access](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/).
+
 
 ## Enabling SQL triggers in ‘bring your own database’ (BYOD)
 The ‘bring your own database’ feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 for Finance and Operations into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.

@@ -81,6 +81,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
 - [Call a POS API or operation from a POS extension](pos-api-extension.md)
 - [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
+- [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -120,6 +121,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add custom controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
 - [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
 - [Call a POS API or operation from a POS extension](pos-api-extension.md)
+- [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

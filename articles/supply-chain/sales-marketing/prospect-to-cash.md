@@ -59,6 +59,8 @@ In earlier versions, the Prospect to cash solution provides the following types 
 
 To use the Prospect to cash solution, you must install the following components:
 
+### July 2017 (7.2):
+
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with platform update 8 (application build 7.2.11792.56024 with platform build 7.0.4565.16212)
 - The following hotfixes for Finance and Operations:
 
@@ -68,6 +70,25 @@ To use the Prospect to cash solution, you must install the following components:
 
     > [!NOTE]
     > You only have to install KB4045570, because the installation includes the changes from the other Microsoft Knowledge Base (KB) articles.
+
+### November 2016 / 1611 (7.1):
+
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (November 2016) with platform update 8 or higher
+
+- The following hotfixes for Finance and Operations:
+
+    - **[KB4051266](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4051266&bugId=3863566&qc=ee80faaa7bc6c77b368d5eaf456c9c08e0b9fba5903a7b6fd8c13756c3a4b757)** - Enable sales order synchronization with Data integrator from Microsoft Dynamics 365 for Finance and Operations to Sales 
+    - **[KB4037542](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037542&bugId=3848253&qc=8323b93c15280172c5ab4159e0256e37104ced1729462c91ab2f7d00cb8d419c)** - Enable sales order header and line synchronization with Data integrator from Microsoft Dynamics 365 for Finance and Operations to Sales
+    - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Support for prospect to cash integration through data entities is required
+    
+
+    > [!NOTE]
+    > After installing the hotfixes you have to trigger the following batch job from the form SalesPopulateProspectToCash. This form is hidden as you only need it once. 
+    To access it add the following to your browser address, when logged in to the environment: &mi=action:SalesPopulateProspectToCash 
+    E.g. https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash
+    In the form that opens click OK.
+    This will populate a new “LineCreationSequnceNumber” field in “SalesLine”, “SalesQuotationLine” and “CustInvoiceTrans” tables with unique values and refresh the product list. This is needed for the P2C integration to work on 7.1
+
 
 ## System requirements for Sales
 
