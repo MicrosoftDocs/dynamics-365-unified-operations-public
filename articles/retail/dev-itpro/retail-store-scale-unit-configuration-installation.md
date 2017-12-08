@@ -56,6 +56,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 6. In the **Type** field, leave the default value (**Channel database**) selected.
 7. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
+
+     The data sync interval determines how frequently the data will synchronize between the channel database (Retail Store Scale Unit) and the environment SQL Azure database (headquarters).  When no value is entered, the default installed value in the Retail Store Scale Unit will be used, which is ...
+
 8. On the **Retail channel** FastTab, select **Add**, and then, in the **Channel** field, select the appropriate Retail store channel. Repeat this step to add all the channels that use this database.
 
      You can also add channels that don't use this database. In this way, you keep the data for those channels in the Retail Store Scale Unit channel database. The Retail store channels that actively use this database can then access that data locally.
@@ -77,7 +80,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 18. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 19. In the **Property key** field, select **Cloud POS URL**.
-20. In the **Property value** field, enter the URL of the Retail Server that will be installed for Retail Store Scale Unit.
+20. In the **Property value** field, enter the URL of the Retail Cloud POS that will be installed for Retail Store Scale Unit.
 
      The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
