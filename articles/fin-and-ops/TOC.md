@@ -10,6 +10,7 @@
 ##### [System requirements for cloud deployments](get-started/system-requirements.md)
 ##### [On-premises deployment](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [System requirements for on-premises deployments](get-started/system-requirements-on-prem.md)
+##### [Warehousing for on-premises deployments](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Buy Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
