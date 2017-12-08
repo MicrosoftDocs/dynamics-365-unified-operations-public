@@ -268,7 +268,7 @@ To resolve the error, validate the credentials.json file. Verify that the text i
 
 This error may also occur if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for the following:
 
-- Proper layout/structure of credentails.json file encrypt credentials. For more information, see [Encrypt credentials](setup-deploy-onpremises-environments.md#encryptcred). 
+- Proper layout/structure of credentails.json file encrypt credentials. For more information, see [Encrypt credentials](setup-deploy-on-premises-environments.md#encryptcred). 
 - An end quote at the end of the line or on the next line. 
 - Error on Microsoft-Service Fabric source.
     
