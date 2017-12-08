@@ -106,9 +106,9 @@ This is applicale to both POS and E-commerce.
 3.  In Visual Studio, right-click and unload the project.
 4.  Right-click the project and choose **Edit Proxies.RetailProxy.Extensions.StoreHoursSample.csproj file**.
 5.  Update the following nodes under the first property group section:
-    - **<RootNamespace>**: Update it with your custom namespace
-    - **<AssemblyName>**: Update it with your custom output library name for the proxy
-    - **<RetailServerExtensionLibraryNoPrefixForRetailProxyCSharpExtensionGeneration>**: Update it with your retail server extension library name.Proxy is generated based on this extension library name.
+    - **RootNamespace**: Update it with your custom namespace
+    - **AssemblyName**: Update it with your custom output library name for the proxy
+    - **RetailServerExtensionLibraryNoPrefixForRetailProxyCSharpExtensionGeneration**: Update it with your retail server extension library name.Proxy is generated based on this extension library name.
 6.  Save the project file and load the project again.
 7.  Rename the project according to your extension pattern.
 8.  Once the project has loaded, delete the **StoreDayHoursManager.cs** file from the **Adapters** folder.
