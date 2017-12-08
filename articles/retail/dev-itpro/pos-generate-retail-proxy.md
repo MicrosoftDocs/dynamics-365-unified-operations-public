@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to generate retail proxy for POS and E-commerce
+title: How to generate the Retail proxy for POS and E-commerce
 description:
 author: mugunthanm
 manager: AnnBe
@@ -29,32 +29,19 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# How to generate retail proxy for POS and E-commerce
-**Retail proxy:**
+# How to generate the Retail proxy for POS and E-commerce
 
-Whenever you create a new Retail server API/controller or extended the existing controller (Ex: Added a new API for customer entity by extending Customer controller) then you need to generate the Retail proxy by using the tools available part of the Retail SDK.
+Whenever you create a new Retail server API controller or extend the existing controller then you need to generate the Retail proxy by using the tools available part of the Retail SDK. For example, if you added a new API for customer entity by extending the Customer controller, the you would have to generate the Retail proxy.
 
-**What is the use of Retail proxy and when should you use it:**
+## What is the Retail proxy and when should you use it
 
-All the clients use the proxy API to interact with the Retail server. Retail proxy abstracts the interface between Retail server (RS) and Commerce Runtime (CRT).
+All clients use the proxy API to interact with the Retail server. The Retail proxy abstracts the interface between Retail server (RS) and Commerce Runtime (CRT). For example, suppose that you created a CRT entity or added some business logics using request/response in CRT and added a new Retail server API to expose those entities and the request/response. Now you want to access those request/responses and the entities in POS to do some client logic. To access them, you could manually create all those entities and request metadata in POS and access the retail server with right parameters. However, there a lot of additional overhead because you need to duplicate the entities, manage the request/response code in two places, and you also need to write lot of code. The Retail proxy reduces this effort by auto-generating the proxy for all the custom entities and request/responses added in Retail server. The proxy tool will generate all the necessary interfaces, metadata, and abstracts of the implementation so that you can include these files in the extension projects. Then you can access the retail server APIs and entities using the metadata and interface generated.
 
-Ex:
-
-1.  If created a CRT entity or added some business logics as request/response in CRT and added a new Retail server API to expose those entities and request/response.
-
-2.  Now you want to access those request/response and the entities in POS to do some client logic.
-
-3.  In order to access it either you can manually create all those entities and request/response metadata in POS and access the retail server with right parameters but in this cause, there a lot of additional overhead because you need to duplicate the entities, manager and request/response code in two places and you also need to write lot of code.
-
-The Retail proxy reduces this effort by auto generating the proxy for all the custom entities and request/response added in Retail server. The proxy tool will generate all the necessary interface, metadata and abstracts the actual implementation so that you can include these files in the extension projects and access the retail server APIs, entities using the metadata and interface generated.
-
-**Types of proxy:**
+## Types of proxy
 
 There two types of proxy to support cross platform:
-
-1.  Typescript proxy
-
-2.  C# proxy
+- Typescript proxy
+- C# proxy
 
 **Typescript proxy:**
 
