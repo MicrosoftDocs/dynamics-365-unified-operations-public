@@ -121,7 +121,7 @@ On the **Form setup** page in Procurement and sourcing, you can configure the ap
 
 When you create an RFQ for a purchase order and add an inventory item to the RFQ, an inventory transaction is generated that has a receipt status of **Quotation receipt**. Only RFQ lines that have this status are considered when you use a master plan to calculate supplies. If you want the master plan to include RFQ lines as an expected receipt, you must configure this behavior in the setup of master planning.
 
-A purchasing manager or agent can create and maintain solicitation types to suit the organization's procurement requirements. Each solicitation type can drive scoring methods. Scoring methods consist of a set of criteria that can be used when you score bids. You must set up solicitation types, scoring methods, and scoring criteria on the **Solicitation type** and **Scoring method** pages.
+A purchasing manager or agent can create and maintain solicitation types to suit the organization's procurement requirements. Each solicitation type can be associated with a scoring method. Scoring methods consist of a set of criteria that can be used when you score bids. You must set up solicitation types, scoring methods, and scoring criteria on the **Solicitation type** and **Scoring method** pages.
 
 ## Creating and sending an RFQ
 
