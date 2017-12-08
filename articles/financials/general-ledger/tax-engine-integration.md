@@ -61,8 +61,7 @@ These interfaces also provide methods for retrieving a specified field value (**
 
 ### Tax business service model
 
-The Tax business service model is part of the Finance and Operations integration framework and almost no uptake is required for partners or customers. 
-This model serves as the façade for interactions that the Finance and Operations application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
+The Tax business service model is part of the Finance and Operations integration framework and almost no uptake is required for partners or customers. This model supports the interactions that the Finance and Operations application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
 
 <table>
 <tr>
@@ -234,17 +233,17 @@ The following illustration shows how TaxTrans and the voucher are created.
 
 ## Example: Finance and Operations integration – Purchase order invoice
 
-This section provides an example of Finance and Operations Tax engine uptake for a purchase order invoice. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
+This section provides an example of how the Tax engine is integrated with purchase order invoices. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
 
 ### Integration checklist
 
-The following table summarizes all relevant changes that are related to the uptake of a purchase order invoice.
+The following table summarizes all relevant changes that are related to the integration with purchase order invoices.
 
 <table>
 <tr>
 <th colspan="2">Transaction uptake checklist</th>
 <th>Description</th>
-<th>Rainier AOT object</th>
+<th>AOT object</th>
 </tr>
 <tr>
 <td rowspan="2">Definition</td>
@@ -356,7 +355,7 @@ TaxableDocumentTypeDefinitionPurchaseInvoice is the interface that defines a pur
 
 ### Define data providers
 
-The following illustration shows the data providers that are used to send transaction data to GTE for any tax-related operation.
+The following illustration shows the data providers that are used to send transaction data to the Tax engine for any tax-related operation.
 
 ![Data providers for GTE](media/gte-data-providers.png)
 
@@ -445,7 +444,7 @@ For alignment with the existing logic, the existing **taxTotal** parameter is us
 
 ### Integrate with a source document
 
-A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the GTE integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
+A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the Tax engine integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
 
 ![Distribution and journalization rules](media/gte-distribution-journalization-rule.png)
 
