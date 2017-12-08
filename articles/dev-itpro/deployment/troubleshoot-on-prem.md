@@ -268,7 +268,7 @@ To resolve the error, validate the credentials.json file. Verify that the text i
 
 This error may also occur if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for the following:
 
-- Proper layout/structure of credentails.json file encrypt credentials.  
+- Proper layout/structure of credentails.json file encrypt credentials. For more information, see [Encrypt credentials](setup-deploy-onpremises-environments.md#encryptcred). 
 - An end quote at the end of the line or on the next line. 
 - Error on Microsoft-Service Fabric source.
     
@@ -279,7 +279,7 @@ You can also test by using the Invoke-ServiceFabricDecryptText -CipherText 'long
 If the credentials.json have changed, delete and redeploy from LCS. 
 
 ## MR
-Additional logging can be done by registering providers. Download the [ETWManifest.zip](need fwlink) to the primary orchestrator machine and run the following commands.  
+Additional logging can be done by registering providers. Download the [ETWManifest.txt](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.  
 
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" =    "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} 
 
@@ -349,7 +349,7 @@ The out file contains the following information:
 - System.Net.WebException: Unable to connect to the remote server ---> 
 - System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443 
 
-Psping, IP and see if it is reachable.  
+You can also use Psping to try to reach the remove server. For information about Psping, see [Psping](https://docs.microsoft.com/en-us/sysinternals/downloads/psping).  
 
 ### Redirect login questions and issues 
 If you are having issues with login, verify in Service Fabric Explorer that the **Provisioning_AdminPrincipalName** and **Provisioning_AdminIdentityProvider** are valid. For example,
@@ -390,9 +390,9 @@ If you receive one of the following errors:
 The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes. 
 
 ## Keyset doesn't exist 
-If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Go back and review the section, "Install Certificates". Copy the scripts in each folder to the VMs that correspond to the folder name. 
+If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete [Set up VMs](setup-deploy-on-premises-environments.md#setupvms). Copy the scripts in each folder to the VMs that correspond to the folder name. 
 
-Also check the .csv file to be sure that the correct domain is being used. 
+Also check the .csv file to verify that the correct domain is being used. 
 
 ## Error "RunAsync failed due to an unhandled FabricException causing replica to fault"
 If you receive this error, "RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0:", change the ClusterConfig.json diagnosticsStore from network share to local path such as, \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore. 
