@@ -239,7 +239,7 @@
 ### [Deploy a payment connector](dev-itpro/deploy-payment-connector.md)
 ### [Create a Windows installer for a payment connector](dev-itpro/create-windows-installer-payment-connector.md)
 
-## [Retail SDK overview](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
@@ -259,6 +259,7 @@
 ### [Add custom columns to a POS transaction grid](dev-itpro/pos-custom-transaction-column.md)
 ### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
 ### [Extend existing POS views to add custom columns and app bar buttons](dev-itpro/pos-view-extension.md)
+### [Retail Modern POS triggers and printing](dev-itpro/pos-trigger-printing.md)
 
 ## Commerce runtime
 ### [Loyalty extension](dev-itpro/retail-sdk/loyalty-extension-sample.md)
