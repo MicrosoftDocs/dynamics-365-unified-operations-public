@@ -5,7 +5,7 @@ title: How to generate the Retail proxy for POS and E-commerce
 description:
 author: mugunthanm
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -69,15 +69,12 @@ The **CommerceProxyGenerator.exe** application in the **Retail SDK\Reference** f
     ```
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll     <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
-
     An example of running this command is:
-    
     ```
-    CommerceProxyGenerator.exe C:\\RetailSDK\\Refernce\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\Refernce\\**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** /application:typescriptextensions
+    CommerceProxyGenerator.exe C:\RetailSDK\Refernce\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
     You would replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with your custom retail server extension library name.
-
-4. Include the generated files in your POS project. Two files will be generated based on your extension libraries: **DataServiceEntities.g.ts** and **DataServiceRequests.g.ts**. 
+4. Include the generated files in your POS project. Two files will be generated based on your extension libraries, **DataServiceEntities.g.ts** and **DataServiceRequests.g.ts**. 
 5. Similarly, generate proxies for all your Retail Server extensions.
 
 ### Generate the Typescript proxy for E-commerce
@@ -97,10 +94,8 @@ The **CommerceProxyGenerator.exe** application in the **Retail SDK\Reference** f
     <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>
     ```
 Note: Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll is the custom library name in our example, in your scenario you will add you own library name.
-
-4.  Similarly add all your custom retail server extension here to generate the proxy.
-
-5.  Build the Ecommerce Platform.Ecommerce.Sdk.Controls and Platform.Ecommerce.Sdk.Core project, proxy will be automatically in the project.
+4.  Similarly add all your custom retail server extensions.
+5.  Build the **Ecommerce Platform.Ecommerce.Sdk.Controls** and **Platform.Ecommerce.Sdk.Core** projects. The proxy will be automatically in the project.
 
 **How to generate C# proxy (this applicable for both POS and Ecommerce)**
 
