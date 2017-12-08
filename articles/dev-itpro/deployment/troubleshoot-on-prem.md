@@ -377,7 +377,8 @@ To verify that a user has been reset, run the following select query in the SQL 
 
             - select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'admin' 
             
-  > [!NOTE] SID in AAD environment (online) is a hash of network alias and network domain. SID in AD environment (on-premises) is a hash of network alias and identify provider.
+  > [!NOTE] 
+  > SID in AAD environment (online) is a hash of network alias and network domain. SID in AD environment (on-premises) is a hash of network alias and identify provider.
 
 If you are still unable to log in and you are receiving the error, "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds", see the section, [ADFS](#ADFS) in this topic. 
 
