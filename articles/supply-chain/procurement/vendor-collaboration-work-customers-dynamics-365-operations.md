@@ -114,6 +114,8 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
     A closed RFQ shows all vendor bids down to the line level. As bids are awarded or rejected, this information is reflected in the closed RFQ. Any attachments that are included in the bid are also available.
 
+**Note:** This functionality is only available if the Public sector cofiguration is enabled.
+
 ### Bidding
 
 - Select **Bid** to start to bid on an RFQ.
