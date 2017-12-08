@@ -118,7 +118,7 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
 ### Bidding
 
-- Select **Bid** to start to bid on an RFQ.
+- Click **Bid** to start to bid on an RFQ.
 
     When the editing is enabled for bid fields on the headers and lines of an RFQ, you can enter your bid directly in the line grid. You must also consider any additional bid information that should be added in the line details.
 
