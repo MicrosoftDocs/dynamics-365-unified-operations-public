@@ -32,48 +32,87 @@ ms.dyn365.ops.version: 2012
 
 This topic provides a walkthrough of the features that are related to the Goods and Services Tax (GST). Each documented scenario walks you through basic business transactions that typically occur across various business segments in industries of all types. This document also highlights the effect of GST on various type of business transactions, and shows the accounting and posting of transactions of various types.
 
-## Setup
+## GST Setup
 
-### Create a business vertical
-Create business verticals on the Business verticals page (**General ledger** > **Setup** > **Sales tax** > **India** > **Business verticals**).
+<table>
+<thead>
+<tr>
+<th>Setup</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Business verticals
+    </td>
+    <td>Create business verticals on the <strong>Business verticals</strong> page (<strong>General ledger</strong> > <strong>Setup</strong> > <strong>Sales tax</strong> > <strong>India</strong> > <strong>Business verticals</strong>).
+    </td>
+  </tr>
+    
+  <tr>
+    <td>State codes and union territory designation for India states
+    </td>
+    <td>On the <strong>Address setup page</strong> (<strong>Organization administration</strong> > <strong>Global address book</strong> > <strong>Addresses</strong> > <strong>Address setup</strong>), be sure to enter state codes for each Indian state. Indicate if the state is a union territory by setting the <strong>Union territory</strong> option to <strong>Yes</strong>.
+    </td>
+  </tr>
+  <tr>
+    <td>Enterprise tax registration numbers
+</td>
+    <td>
+    <p>India taxpayers are assigned a state-wise PAN-based 15-digit GSTIN. Complete the steps below to create an enterprise tax registration number record for the GSTIN.</p>
+<p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for Companies, Vendors and Customers.</p>
+<ul>
+<li>Company - Create a GSTIN entry for each company and specify casual registration periods as well as the following number sequence references:<ul>
+<li>GST invoice number sequence - This will be used when customer sales that have GST transactions are posted. </li>
+<li>Bill of supply number sequence - This will be used when customer sales that have non-GST transactions are posted.</li>
+</ul>
+</li>
+<li>Vendors - Define state-wide GST type registration numbers for vendors.</li>
+<li>Customers - Define state-wide GST type registration numbers for customers.</li>
+</ul>
+    </td>
+  </tr>
+ <tr>
+    <td> GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
+   </td>
+   <td>
+   </td>
+  </tr>
+<tr>
+  <td>Harmonized System of Nomenclature (HSN) codes and Service accounting codes</td>
+  <td>Enter HSN code information on the HSN page (<strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>HSN code</strong>).</td>
+</tr>
+<tr>
+  <td>Service accounting codes (SAC)</td>
+  <td>Set up service accounting codes on the <strong>Service accounting codes</strong> page (<strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>Service accounting codes</strong>.)</td>
+</tr>
+<tr>
+  <td>Assign HSN and SAC to products</td>
+  <td> 
+    <ol>
+      <li>Click <strong>Product information management</strong> > <strong>Common</strong> > <strong>Released products</strong>. </li>
+      <li>Select an item.</li>
+      <li>On the Action Pane, on the Product tab, in the Maintain group, click Edit.</li>
+      <li>In the HSN code field, select a value.</li>
+    </ol>
+  <p> <strong>Note</strong>: The following setup is required for the calculation of GST: <ul>
+  <li> A Harmonized System of Nomenclature (HSN) code should be defined for the Item item type, or a Service accounting code (SAC) should be defined for the Service item type.</li>
+  <li>Item sales tax group should be removed.</li>
+  </ul></p>
+  </td>
+</tr>
+<tr>
+<td>Assign a Service accounting code to miscellaneous charges</td>
+<td></td>
+</tr>
+<tr>
+<td>Charges code</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
-### Update the state codes and union territory designation for India states.
-On the **Address setup page** (**Organization administration** > **Global address book** > **Addresses** > **Address setup**), be sure to enter state codes for each Indian state. Indicate if the state is a union territory by setting the **Union territory** option to **Yes**.
 
-### Enter the Enteprrise tax registration numbers into the system
-
-India taxpayers are assigned a state-wise PAN-based 15-digit GSTIN. Complete the steps below to create an enterprise tax registration number record for the GSTIN.
-
-On the **Enterprise tax registration numbers** page (**Tax** > **Setup** > **Sales tax** > **Enterprise tax registration numbers**), create enterprise tax registration numbers for Companies, Vendors and Customers.
-
-- Company - Create a GSTIN entry for each company and specify casual registration periods as well as the following number sequence references:
-  - GST invoice number sequence - This will be used when customer sales that have GST transactions are posted. 
-  - Bill of supply number sequence - This will be used when customer sales that have non-GST transactions are posted.
-- Vendors - Define state-wide GST type registration numbers for vendors.
-- Customers - Define state-wide GST type registration numbers for customers.
-
-### Define GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
-
-<Need steps here> 
-
-
-|Setup | Additional information|
-|------|-----------------------|
-|Harmonized System of Nomenclature (HSN) codes and Service accounting codes| Enter HSN code information on the HSN page (**General ledger** > **Setup** > **Sales tax** > **India** > **HSN code**).|
-|Service accounting codes (SAC) |Set up service accounting codes on the **Service accounting codes** page (**General ledger** > **Setup** > **Sales tax** > **India** > **Service accounting codes**.)|
-|Assign HSN and SAC to products| |
-|Assign a Service accounting code to miscellaneous charges| |
-|Charges code | |
-
-Assign HSN codes and Service accounting codes to products
-1	Click **Product information management** > **Common** > **Released products**.
-2	Select an item.
-3	On the Action Pane, on the Product tab, in the Maintain group, click Edit.
-4	In the HSN code field, select a value.
-
-Note: The following setup is required for the calculation of GST:
-●	A Harmonized System of Nomenclature (HSN) code should be defined for the Item item type, or a Service accounting code (SAC) should be defined for the Service item type.
-●	Item sales tax group should be removed.
 
 Assign a Service accounting code to miscellaneous charges
 Accounts payable
@@ -93,6 +132,7 @@ Accounts receivable
 10	Select the Exempt check box to exempt this charges from the calculation of GST.
 11	Save the record.
 When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
+
 Update number sequences
 Accounts payable parameters
 1	Click **Accounts payable** > **Setup** > **Accounts payable parameters**.
