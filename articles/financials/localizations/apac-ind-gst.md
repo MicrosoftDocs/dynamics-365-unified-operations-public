@@ -59,8 +59,7 @@ This topic provides a walkthrough of the features that are related to the Goods 
     <td>Enterprise tax registration numbers
 </td>
     <td>
-    <p>India taxpayers are assigned a state-wise PAN-based 15-digit GSTIN. Complete the steps below to create an enterprise tax registration number record for the GSTIN.</p>
-<p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for Companies, Vendors and Customers.</p>
+    <p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for Companies, Vendors and Customers.</p>
 <ul>
 <li>Company - Create a GSTIN entry for each company and specify casual registration periods as well as the following number sequence references:<ul>
 <li>GST invoice number sequence - This will be used when customer sales that have GST transactions are posted. </li>
@@ -73,7 +72,7 @@ This topic provides a walkthrough of the features that are related to the Goods 
     </td>
   </tr>
  <tr>
-    <td> GSTIN numbers for the legal entity, warehouse, vendor, or customer masters
+    <td> GSTIN numbers for legal entities, warehouses, vendors, or customers
    </td>
    <td>
    </td>
@@ -103,57 +102,54 @@ This topic provides a walkthrough of the features that are related to the Goods 
 </tr>
 <tr>
 <td>Assign a Service accounting code to miscellaneous charges</td>
-<td></td>
+<td>
+<ol>
+  <li>Click <strong>Accounts payable</strong> > <strong>Setup</strong> > <strong>Charges</strong> > <strong>Charges code</strong>.</li>
+  <li>Select a charges code.</li>
+  <li>On the Tax information FastTab, enter a value in the SAC or HSN code field.</li>
+  <li>Enter a value in the Service category or ITC Category field.</li>
+  <li>Select the Exempt check box to exempt these charges from the calculation of GST.</li>
+  <li>Click <strong>Save</strong>.</li>
+  </ol>
+  <p>When this charges code is selected for a transaction, the defined tax information automatically entered, and GST is calculated accordingly.</p>
+<ol>
+  <li>Click <strong>Accounts receivable</strong> > <strong>Setup</strong> > <strong>Charges</strong> > <strong>Charges code</strong>.</li>
+  <li>Select a charges code.</li>
+  <li>On the Tax information FastTab, enter a value in the SAC or HSN code field.</li>
+  <li>Select the Exempt check box to exempt this charges from the calculation of GST.</li>
+  <li>Click <strong>Save</strong>.</li>
+  </ol>
+<p>When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
+  
+  </td>
 </tr>
 <tr>
-<td>Charges code</td>
-<td></td>
+<td>Number sequences</td>
+<td>
+  <p>Update the following number sequences on the Accounts payable parameters page (Accounts payable > Setup > Accounts payable parameters): </p>
+    <ul>
+      <li> Debit note references: This number sequence will be used for purchase debit note transactions.</li>
+      <li>GST transaction ID references: This number sequence will be used for vendor advance payment transactions.</li>
+  </ul>
+  <p>Update the following number sequences on the Accounts receivable parameters page (Accounts Receivable > Setup > Accounts receivable parameters): </p>
+    <ul>
+      <li> Debit note references: This number sequence will be used for sales debit note transactions.</li>
+      <li>GST transaction ID references: This number sequence will be used for customer advance payment transactions.</li>
+  </ul>
+  
+  </td>
 </tr>
+<tr>
+  <td>Main accounts for the GST posting type 
+  </td>
+  <td> <p><strong>General ledger</strong> > <strong>Common</strong> > <strong>Main accounts</strong></p>
+    <p> Create a Main account for all required state-wide ledger accounts and be sure to select <strong>GST</strong> as the posting type on the <strong>Setup</strong> FastTab.
+    </p>
+  </td>
+  </tr>
 </tbody>
 </table>
 
-
-
-Assign a Service accounting code to miscellaneous charges
-Accounts payable
-1	Click **Accounts payable** > **Setup** > **Charges** > **Charges code**.
-2	Select a charges code.
-3	On the Tax information FastTab, enter a value in the SAC or HSN code field.
-4	Enter a value in the Service category or ITC Category field.
-5	Select the Exempt check box to exempt these charges from the calculation of GST.
-6	Save the record.
-When this charges code is selected for a transaction, the defined tax information automatically entered, and GST is calculated accordingly.
-
-
-Accounts receivable
-7	Click **Accounts receivable** > **Setup** > **Charges** > **Charges code**.
-8	Select a charges code.
-9	On the Tax information FastTab, enter a value in the SAC or HSN code field.
-10	Select the Exempt check box to exempt this charges from the calculation of GST.
-11	Save the record.
-When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
-
-Update number sequences
-Accounts payable parameters
-1	Click **Accounts payable** > **Setup** > **Accounts payable parameters**.
-2	On the Number sequences tab, define a number sequence for Debit note references. This number sequence will be used for purchase debit note transactions.
-3	Define a number sequence for GST transaction ID references. This number sequence will be used for vendor advance payment transactions.
-
-Accounts receivable parameters
-1	Click **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2	On the Number sequences tab, define a number sequence for Debit note references. This number sequence will be used for sales debit note transactions.
-3	Define a number sequence for GST transaction ID references. This number sequence will be used for customer advance payment transactions.
-
-Create main accounts for the GST posting type
-1	Click **General ledger** > **Common** > **Main accounts**.
-2	Create a record.
-3	In the Main account field, enter a value.
-4	In the Name field, enter a value.
-5	On the General FastTab, in the Main account type field, select a value.
-6	On the Setup FastTab, in the Posting type field, select GST.
-
-7	Repeat steps 2 through 6 to create all the other required state-wide ledger accounts.
-8	Click Close.
 
 Create a tax settlement period
 
