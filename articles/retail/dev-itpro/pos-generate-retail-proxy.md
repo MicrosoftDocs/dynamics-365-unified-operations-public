@@ -45,16 +45,17 @@ There two types of proxy to support cross platform:
 
 The Typescript and C# proxies are different, and they are generated differently.
 
-## Typescript proxy
+### Typescript proxy
 The typescript proxy is used by both POS and E-commerce to access any Retail server APIs and CRT entities. If the POS is using Retail server then it needs the Typescript proxy. Without the Typescript proxy POS will not be able to commumicate with Retail server for any operations or workflow. E-commerce controls also uses the Typescript proxy.
 
-## C# proxy
+### C# proxy
 The C# proxy is used by POS when its offline (POS directly talks to CRT without Retail Server) and e-commerce. If you want your customization to work in offline POS and want your E-commerce core to access the Retail Server APIs then you need to generate the C# proxy.
 
-## Generate Typescript proxy
+## Generate the Typescript proxy
 
 The steps are applicable only for Dynamics 365 for Retail and Finance and Operation, Enterprise edition (Dec 2017 release).
 
+### Generate the proxy for Retail Server
 The **CommerceProxyGenerator.exe** application in the **Retail SDK\Reference** folder generates the Typescript proxy for POS.
 
 1. Copy the following libraries to the **Retail SDK\Reference** folder before generating the proxy. These libraries are in the  **Retail SDK\Reference\...** folder. 
@@ -79,18 +80,22 @@ The **CommerceProxyGenerator.exe** application in the **Retail SDK\Reference** f
 4. Include the generated files in your POS project. Two files will be generated based on your extension libraries: **DataServiceEntities.g.ts** and **DataServiceRequests.g.ts**. 
 5. Similarly, generate proxies for all your Retail Server extensions.
 
-**Typescript proxy for Ecommerce:**
+### Generate the Typescript proxy for E-commerce
 
-1.  Navigate to RetailSDK\\BuildTools folder.
-
-2.  Open the Customization.settings file
-
-3.  Under the ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''" section, add your custom retail server library information (below the <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll"/> line.
-
-    Ex: 
-```typescript
-    <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll**"/>
-```
+1. Navigate to the **RetailSDK\BuildTools* folder.
+2. Open the **Customization.settings** file.
+3. Find the **ItemGroup Condition** section.
+    ```
+    ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''" 
+    ```
+4. Find the line for **RetailServerLibraryPathForProxyGeneration**.
+    ```
+    <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Microsoft.Dynamics.Retail.RetailServerLibrary.dll"/>
+    ```
+4. Add your custom retail server library information below that line. For example:
+    ```
+    <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>
+    ```
 Note: Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll is the custom library name in our example, in your scenario you will add you own library name.
 
 4.  Similarly add all your custom retail server extension here to generate the proxy.
