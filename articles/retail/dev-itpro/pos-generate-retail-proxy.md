@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to generate the Retail proxy for POS and E-commerce
-description:
+description: Whenever you create a new Retail server API controller or extend the existing controller then you need to generate the Retail proxy by using the tools available part of the Retail SDK.
 author: mugunthanm
 manager: AnnBe
 ms.date: 12/08/2017
@@ -123,10 +123,10 @@ This is applicale to both POS and E-commerce.
 17. Copy the output assembly to the **RetailSDK\References** folder.
 18. Navigate to the **RetailSDK\Assets** folder and open **RetailProxy.MPOSOffline.ext.config**.
 19. Under the **composition** section, register your new proxy library name, which is the assembly generated after building your proxy project. In the value field, add your proxy library name. In the following example, the proxy library name is **Contoso.Commerce.RetailProxy.StoreHoursSample**.
-    ```typescript
+    ```
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
     ```
 19. For manual testing, update the **RetailProxy.MPOSOffline.ext.config** under **C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** with the custom proxy library name under the **composition** section. For example:
-    ```typescript
+    ```
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
     ```
