@@ -1,10 +1,9 @@
 ---
-
 # required metadata
 
-title: Price and discounts changes in the Fall Release 2017
-description: This topic describes the changes in the price and discount area in the Fall Release 2017.
-author: Lars Blaaberg
+title: Table map extension
+description: 
+author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
@@ -30,11 +29,12 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Table map extension (Fall Release 2017)
+# Table map extension
+
+This topic applies to App Update 7.3 and later.
 
 ## Requesting add a field or method extension capability to existing table maps 
 
-### Problem statement
 The platform team has received requests to provide add a field or method capabilities to table maps through extensions. 
 
 Adding a field or a method to an existing table map, however, presents some challenges which can lead to unforeseen runtime errors. The reason being that the party adding the field does not have control over all the tables which implement mapping to the table map. The same is true for adding a method to a table map, if the method is called directly as an instance method on the table map.
