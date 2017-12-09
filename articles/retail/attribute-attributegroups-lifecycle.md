@@ -85,8 +85,59 @@ The remaining properties in attribute metadata -
 These were originally intended for improving search for online store-front. With Dyamics 365, although we don’t ship that Online Store out of the box but we ship **eCommerce Publishing SDK** which is used by the customers to put products into a Search Index of their choice. While the data is imported it is still good idea to let our customers distinguish between searchable, queryable, and so on so they could build optimal index to make sure they index only those attributes which *in their opinion* should be indexed. 
 
 ## Filter settings for Attributes 
----add details around filter settings for attributes ---
----Add screenshot for filter settings of attributes----
+Filter settings for attributes allows user to define how the filters for attributes gets displayed on the Retail point of sale. 
+These filter settings are accessible from the attribute definition page in Dynamics 365. 
+
+Refiner display preferences it has the following elements-
+	1. Name: 
+	2. Display option:
+	3. Display control:
+	4. Threshold Value
+
+**Name**: Editable textbox, but contains name of the attribute by default.  
+
+**Display option**: This has the following two options:
+
+	a) Single value
+		- Enabled for the following attribute types: Boolean, Currency, Decimal, Integer, and Text. 
+		- Single value selection enabled on the client.
+	b) Multi value
+		- Enabled for the following attribute types: Currency, Decimal, Integer, and Text.
+		- Multi-value selection enabled on the client.
+		
+**Display control**: This has the following 4 options:
+	a) List
+	b) Range 
+	c) Slider
+	d) Slider with bars  (P2)
+	 
+	• List 
+		○ Enabled for the all attribute types:
+		
+	• Range 
+		○ Enabled for the following attribute types: Currency, Decimal, and Integer.
+		○ Single or Multi value selection enabled on the client
+		
+	• Slider and Slider with bars
+		○ Enabled for the following attribute types: Currency, Decimal, and Integer.
+
+
+**Threshold values** is required for the display control type Range. Values for it can be defined using ";" (semi-colon) as a delimiter. 
+
+For e.g. in case of 'Bag Volume' refiner a threshold value can be
+ 10; 20; 50; 100; 200; 500; 1000; 5000. 
+
+For the above values point of sale, will show the following ranges and grey out the ranges which do not have any products in the result set.
+	- Less than 10
+	- 10 – 20
+	- 20 – 50
+	- 50 – 100
+	- 100 – 200
+	- 200 – 500
+	- 500 or more
+
+
+![Attribute filter settings](media/AttributeFilterSettings.PNG)
 
 ## Attribute group 
 An attribute group is used to group the attributes for a component or subcomponent in a product configuration model. This can help a person configure a product, because the selections are arranged in a certain context. Once attributes have been defined, they can be grouped under **Attribute Groups**. Attribute Groups provide grouping of individual attributes and can be assigned to retail categories or retail channels. An attribute can be included in more than one attribute group. 
