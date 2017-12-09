@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development box, one-box, or demo environment.
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment.
 
 In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
 
-This topic explains how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
+This topic explains how to upgrade an older database to the latest Finance and Operations application release. 
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
-> - This process doesn't apply to the upgrade of data in the financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 
@@ -147,8 +147,11 @@ This step is required if you're upgrading a database from the February 2016 rele
 ## Upgrade the database
 
 1. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-2. Import or restore a backup of the source database to the one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+2. Import or restore a backup of the source database to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
+    > [!NOTE]
+    > If you are validating the data upgrade of your production database running on the ealier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
+    
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
