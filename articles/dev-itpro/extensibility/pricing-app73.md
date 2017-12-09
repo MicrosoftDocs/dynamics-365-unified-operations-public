@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Price and discounts changes in the Fall Release 2017
-description: This topic describes the changes in the price and discount area in the Fall Release 2017.
+title: Changes to price and discount extensibility for App Update 7.3
+description: This topic describes the changes Changes to price and discount extensibility for App Update 7.3.
 author: smithanataraj
 manager: AnnBe
 ms.date: 12/10/2017
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Price and discounts changes in the Fall Release 2017
+# Changes to price and discount extensibility for App Update 7.3
 
 This is an overview of the changes being done to make the pricing area extensible.This article outlines the extensibility changes part of the Fall Release 2017 in the pricing area.
 
