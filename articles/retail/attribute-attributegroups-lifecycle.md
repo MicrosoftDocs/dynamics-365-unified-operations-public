@@ -103,7 +103,7 @@ Once attributes have been defined, they can be grouped under **Attribute Groups*
 One or more attribute groups that can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Products will inherit the attributes, which are included in the attribute groups, upon their categorization.
 
 
-![Retail product hierarchy product attribute Groups](media/AGRetailProdHierarchy.png)
+![Retail product hierarchy product attribute Groups](media/AGRetailProdHierarchy.PNG)
 
 
 ## How-to Steps – Assign attribute groups to Retail categories
