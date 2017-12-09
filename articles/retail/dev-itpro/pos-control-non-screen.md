@@ -173,7 +173,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
-13.  Add the **OnReady** method to bind the Html control.
+13. Add the **OnReady** method to bind the Html control.
     ```typescript
     public onReady(element: HTMLElement): void {
 
