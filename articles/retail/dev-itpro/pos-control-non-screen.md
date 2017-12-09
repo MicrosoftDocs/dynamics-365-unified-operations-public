@@ -65,7 +65,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 5. Under **ViewExtensions**, create new folder named **SimpleProductDetails**.
 6. Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.  
 7. Open the ProductAvailabilityPanel.html and add the following code. The code adds a POS data list control to show the product availability information and specified the width of the control.
-    ```
+    ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -214,7 +214,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
-   The entire code example is:
+    The entire code example is:
     ```typescript
     import {
         SimpleProductDetailsCustomControlBase,
@@ -294,7 +294,6 @@ A custom control is an HTML page with the custom information to be displayed. A 
         }
 
         /**
-   
         * Binds the control to the specified element.
         * @param {HTMLElement} element The element to which the control should be bound.
         */
@@ -312,7 +311,6 @@ A custom control is an HTML page with the custom information to be displayed. A 
         }
 
         /**
-   
         * Initializes the control.
         * @param {ISimpleProductDetailsCustomControlState} state The initial state of the page used to initialize the control.
         */
@@ -337,7 +335,6 @@ A custom control is an HTML page with the custom information to be displayed. A 
                     });
             }
         }
-
     }
     ```
 15. Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.
