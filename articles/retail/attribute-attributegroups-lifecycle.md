@@ -62,11 +62,14 @@
 ![Attribute](media/Attribute.png)
 
 ## Attribute metadata
-As you may notice, on the attribute form there's a dedicated section for the Attribute metadata. It allows you to define the characteristics around how the system may treat the values of the attribute. 
+Attribute metadata allows you to select the options that indicate how the attributes for each product should behave. 
 
-Of the mentioned properties, the actual property that affects the treatment of the attribute values by the system on Retail Point of Sale is "Can be refined". Upon setting the value to be "Yes" for "Can be refined" only those attributes show up for refinement on Point of sale. 
+For example, you can select whether attributes are required, whether they can be used for search, and whether they can be used as a filter. For retail products, the attribute metadata settings can be overridden at the channel level, we will learn later in this article about it. 
 
-Actual purpose of the remaining properties in attribute metadata - 
+As you may notice, on the attribute form there's a dedicated section for the Attribute metadata. Of the available properties, the property that affects the behavior or treatment of the attribute values by the system on Retail Point of Sale is **"Can be refined"**. 
+Upon setting the value to be "Yes" for "Can be refined" only those attributes show up for refinement or filtering of products on Point of sale. 
+
+The remaining properties in attribute metadata - 
 
 
 - Searchable,
@@ -77,7 +80,7 @@ Actual purpose of the remaining properties in attribute metadata -
   - Ignore case & format, and
   - Complete match 
   
-  can be understood here [Overview of SharePoint search ](https://technet.microsoft.com/en-us/library/jj219669.aspx "Overview of SharePoint search")
+  Purpose of these propoerties can be understood here [Overview of SharePoint search ](https://technet.microsoft.com/en-us/library/jj219669.aspx "Overview of SharePoint search")
 
 These were originally intended for improving search for online store-front. With Dyamics 365, although we don’t ship that Online Store out of the box but we ship **eCommerce Publishing SDK** which is used by the customers to put products into a Search Index of their choice. While the data is imported it is still good idea to let our customers distinguish between searchable, queryable, and so on so they could build optimal index to make sure they index only those attributes which *in their opinion* should be indexed. 
 
