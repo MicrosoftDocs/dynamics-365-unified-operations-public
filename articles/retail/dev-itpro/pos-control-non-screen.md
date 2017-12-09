@@ -173,241 +173,235 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
-13.  Add the OnReady method to bind the Html control
-```typescript
-public onReady(element: HTMLElement): void {
+13.  Add the **OnReady** method to bind the Html control.
+    ```typescript
+    public onReady(element: HTMLElement): void {
 
-ko.applyBindingsToNode(element, {
-template: {
-name: ProductAvailabilityPanel.TEMPLATE_ID,
-data: this
+        ko.applyBindingsToNode(element, {
+            template: {
+                name: ProductAvailabilityPanel.TEMPLATE_ID,
+                data: this
 
-}
+            }
 
-});
-}
-```
-14.  Add the init method to get the product availability details so that page loads the data is fetched and updated in the data list
-```typescript
-public init(state: ISimpleProductDetailsCustomControlState): void {
+        });
+    }
+    ```
+14. Add the **init** method to get the product availability details so that when the page loads, the data is fetched and updated in the data list.
+    ```typescript
+    public init(state: ISimpleProductDetailsCustomControlState): void {
 
-this._state = state;
-let correlationId: string = this.context.logger.getNewCorrelationId();
-if (!this._state.isSelectionMode) {
-this.isVisible = true;
+        this._state = state;
+        let correlationId: string = this.context.logger.getNewCorrelationId();
+        if(!this._state.isSelectionMode) {
+        this.isVisible = true;
 
-let request: InventoryLookupOperationRequest<InventoryLookupOperationResponse> =
-new InventoryLookupOperationRequest<InventoryLookupOperationResponse>
-(this._state.product.RecordId, correlationId);
-this.context.runtime.executeAsync(request)
-.then((result: ClientEntities.ICancelableDataResult<InventoryLookupOperationResponse>) => {
+        let request: InventoryLookupOperationRequest<InventoryLookupOperationResponse> =
+            new InventoryLookupOperationRequest<InventoryLookupOperationResponse>
+                (this._state.product.RecordId, correlationId);
+        this.context.runtime.executeAsync(request)
+            .then((result: ClientEntities.ICancelableDataResult<InventoryLookupOperationResponse>) => {
 
-if (!result.canceled) {
-this.orgUnitAvailabilities(result.data.orgUnitAvailability);
-}
+                if (!result.canceled) {
+                    this.orgUnitAvailabilities(result.data.orgUnitAvailability);
+                }
 
-}).catch((reason: any) => {
-this.context.logger.logError(JSON.stringify(reason), correlationId);
+            }).catch((reason: any) => {
+                this.context.logger.logError(JSON.stringify(reason), correlationId);
 
-});
-}
+            });
+    }
 
-}
-```
-The overall code should look like this:
-```typescript
- /**
+    }
+    ```
+   The entire code example is:
+    ```typescript
+    import {
+        SimpleProductDetailsCustomControlBase,
+        ISimpleProductDetailsCustomControlState,
+        ISimpleProductDetailsCustomControlContext
+    } from "PosApi/Extend/Views/SimpleProductDetailsView";
 
- * SAMPLE CODE NOTICE
- *
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU   *  TO DO SO. 
- */
+    import { InventoryLookupOperationRequest, InventoryLookupOperationResponse } from "PosApi/Consume/OrgUnits";
+    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+    import { ArrayExtensions } from "PosApi/TypeExtensions";
+    import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
+    export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase {
 
- import {
- SimpleProductDetailsCustomControlBase,
- ISimpleProductDetailsCustomControlState,
- ISimpleProductDetailsCustomControlContext
- } from "PosApi/Extend/Views/SimpleProductDetailsView";
+        private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
+        public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
+        public readonly dataList: DataList<ProxyEntities.OrgUnitAvailability>;
+        public readonly title: Observable<string>;
+        private _state: ISimpleProductDetailsCustomControlState;
 
- import { InventoryLookupOperationRequest, InventoryLookupOperationResponse } from "PosApi/Consume/OrgUnits";
- import { ClientEntities, ProxyEntities } from "PosApi/Entities";
- import { ArrayExtensions } from "PosApi/TypeExtensions";
- import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
- export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase {
+        constructor(id: string, context: ISimpleProductDetailsCustomControlContext) {
+            super(id, context);
+            this.orgUnitAvailabilities = ko.observableArray([]);
+            this.title = ko.observable("Product Availability");
+            this.dataList = new DataList<ProxyEntities.OrgUnitAvailability>({
 
- private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
- public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
- public readonly dataList: DataList<ProxyEntities.OrgUnitAvailability>;
- public readonly title: Observable<string>;
- private _state: ISimpleProductDetailsCustomControlState;
+                columns: [
+                    {
+                        title: "Location",
+                        ratio: 31,
+                        collapseOrder: 4,
+                        minWidth: 100,
+                        computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
+                            return value.OrgUnitLocation.OrgUnitName;
+                        }
+                    },
 
- constructor(id: string, context: ISimpleProductDetailsCustomControlContext) {
- super(id, context);
- this.orgUnitAvailabilities = ko.observableArray([]);
- this.title = ko.observable("Product Availability");
- this.dataList = new DataList<ProxyEntities.OrgUnitAvailability>({
+                    {
+                        title: "Inventory",
+                        ratio: 23,
+                        collapseOrder: 3,
+                        minWidth: 60,
+                        computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
+                            return ArrayExtensions.hasElements(value.ItemAvailabilities) ? 
+                            value.ItemAvailabilities[0].AvailableQuantity.toString() : "0";
+                        }
+                    },
 
- columns: [
- {
- title: "Location",
- ratio: 31,
- collapseOrder: 4,
- minWidth: 100,
- computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
- return value.OrgUnitLocation.OrgUnitName;
- }
- },
+                    {
+                        title: "Reserved",
+                        ratio: 23,
+                        collapseOrder: 1,
+                        minWidth: 60,
+                        computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
+                            return ArrayExtensions.hasElements(value.ItemAvailabilities) ? 
+                            value.ItemAvailabilities[0].PhysicalReserved.toString() : "0";
+                        }
+                    },
 
- {
- title: "Inventory",
- ratio: 23,
- collapseOrder: 3,
- minWidth: 60,
- computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
- return ArrayExtensions.hasElements(value.ItemAvailabilities) ? value.ItemAvailabilities[0].AvailableQuantity.toString() : "0";
- }
- },
+                    {
+                        title: "Ordered",
+                        ratio: 23,
+                        collapseOrder: 2,
+                        minWidth: 60,
+                        computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
+                            return ArrayExtensions.hasElements(value.ItemAvailabilities) ? 
+                            value.ItemAvailabilities[0].OrderedSum.toString() : "0";
+                        }
 
- {
- title: "Reserved",
- ratio: 23,
- collapseOrder: 1,
- minWidth: 60,
- computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
- return ArrayExtensions.hasElements(value.ItemAvailabilities) ? value.ItemAvailabilities[0].PhysicalReserved.toString() : "0";
- }
- },
+                    }
 
- {
- title: "Ordered",
- ratio: 23,
- collapseOrder: 2,
- minWidth: 60,
- computeValue: (value: ProxyEntities.OrgUnitAvailability): string => {
- return ArrayExtensions.hasElements(value.ItemAvailabilities) ? value.ItemAvailabilities[0].OrderedSum.toString() : "0";
- }
+                ],
 
- }
+                itemDataSource: this.orgUnitAvailabilities,
+                selectionMode: SelectionMode.None
+            });
 
- ],
+        }
 
- itemDataSource: this.orgUnitAvailabilities,
- selectionMode: SelectionMode.None
- });
+        /**
+   
+        * Binds the control to the specified element.
+        * @param {HTMLElement} element The element to which the control should be bound.
+        */
 
- }
+        public onReady(element: HTMLElement): void {
+            ko.applyBindingsToNode(element, {
+                template: {
+                    name: ProductAvailabilityPanel.TEMPLATE_ID,
+                    data: this
 
- /**
+                }
 
- * Binds the control to the specified element.
- * @param {HTMLElement} element The element to which the control should be bound.
- */
+            });
 
- public onReady(element: HTMLElement): void {
- ko.applyBindingsToNode(element, {
- template: {
- name: ProductAvailabilityPanel.TEMPLATE_ID,
- data: this
+        }
 
- }
+        /**
+   
+        * Initializes the control.
+        * @param {ISimpleProductDetailsCustomControlState} state The initial state of the page used to initialize the control.
+        */
 
- });
+        public init(state: ISimpleProductDetailsCustomControlState): void {
+            this._state = state;
+            let correlationId: string = this.context.logger.getNewCorrelationId();
+            if (!this._state.isSelectionMode) {
+                this.isVisible = true;
+                let request: InventoryLookupOperationRequest<InventoryLookupOperationResponse> =
+                    new InventoryLookupOperationRequest<InventoryLookupOperationResponse>
+                        (this._state.product.RecordId, correlationId);
+                this.context.runtime.executeAsync(request)
+                    .then((result: ClientEntities.ICancelableDataResult<InventoryLookupOperationResponse>) => {
+                        if (!result.canceled) {
+                            this.orgUnitAvailabilities(result.data.orgUnitAvailability);
+                        }
 
- }
+                    }).catch((reason: any) => {
+                        this.context.logger.logError(JSON.stringify(reason), correlationId);
 
- /**
+                    });
+            }
+        }
 
- * Initializes the control.
- * @param {ISimpleProductDetailsCustomControlState} state The initial state of the page used to initialize the control.
- */
+    }
+    ```
+15. Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.
+16. In the **manifest.json** file, add the following code:
+    ```typescript
+     {
 
- public init(state: ISimpleProductDetailsCustomControlState): void {
- this._state = state;
- let correlationId: string = this.context.logger.getNewCorrelationId();
- if (!this._state.isSelectionMode) {
- this.isVisible = true;
- let request: InventoryLookupOperationRequest<InventoryLookupOperationResponse> =
- new InventoryLookupOperationRequest<InventoryLookupOperationResponse>
- (this._state.product.RecordId, correlationId);
- this.context.runtime.executeAsync(request)
- .then((result: ClientEntities.ICancelableDataResult<InventoryLookupOperationResponse>) => {
- if (!result.canceled) {
- this.orgUnitAvailabilities(result.data.orgUnitAvailability);
- }
+        "$schema": "../manifestSchema.json",
+            "name": "Pos_Extensibility_Samples",
+                "publisher": "Microsoft",
+                    "version": "7.2.0",
+                        "minimumPosVersion": "7.2.0.0",
+                            "components": {
+            "extend": {
+                "views": {
+                    "SimpleProductDetailsView": {
+                        "controlsConfig": {
+                            "customControls": [
+                                {
 
- }).catch((reason: any) => {
- this.context.logger.logError(JSON.stringify(reason), correlationId);
+                                    "controlName": "productAvailabilityPanel",
+                                    "htmlPath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel.html",
+                                    "modulePath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel"
+                                }
+                            ]
 
- });
- }
- }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ```
+17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so that POS during runtime will include the extension.
+    ```typescript
+     {
+        "extensionPackages": [
+            {
+                "baseUrl": "SampleExtensions2"
+            },
+            {
+                "baseUrl": "ProdDetailsCustomColumnExtensions"
+            }
+        ]
+    }
+    ```
+18. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS uses this file to include or exclude extensions. By default, the list contains all the excluded extensions list. If you want to include any extension part of the POS then you need add the extension folder name and comment out the extension from the extension list as shown.
+    ```typescript
+     "exclude": [
+        "AuditEventExtensionSample",
+        "B2BSample",
+        "CustomerSearchWithAttributesSample",
+        "FiscalRegisterSample",
+        "PaymentSample",
+        "PromotionsSample",
+        "SalesTransactionSignatureSample",
+        "SampleExtensions",
+        //"SampleExtensions2",
+        //"ProdDetailsCustomColumnExtensions"
+    ],
+    ```
+19. Compile and rebuild the project.
 
-}
-```
-15.  Create a new json file and under the ProdDetailsCustomColumnExtensions folder and name it as manifest.json.
+## Validate the customization
 
-16.  In the manifest.json file, copy and paste the below code:
-```typescript
- {
-
- "$schema": "../manifestSchema.json",
- "name": "Pos_Extensibility_Samples",
- "publisher": "Microsoft",
- "version": "7.2.0",
- "minimumPosVersion": "7.2.0.0",
- "components": {
- "extend": {
- "views": {
- "SimpleProductDetailsView": {
- "controlsConfig": {
- "customControls": [
- {
-
- "controlName": "productAvailabilityPanel",
- "htmlPath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel.html",
- "modulePath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel"
- }
- ]
-
- }   }   }   }  }  }
-```
-17.  Open the extensions.json file under POS.Extensions project and update it with ProdDetailsCustomColumnExtensions samples, so that POS during runtime will include this extension.
-```typescript
- {
-
- "extensionPackages": [
- {
- "baseUrl": "SampleExtensions2"
- },
- {
- "baseUrl": "ProdDetailsCustomColumnExtensions"
- }
- ]
-
-}
-```
-18.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
-```typescript
- "exclude": [
- "AuditEventExtensionSample",
- "B2BSample",
- "CustomerSearchWithAttributesSample",
- "FiscalRegisterSample",
- "PaymentSample",
- "PromotionsSample",
- "SalesTransactionSignatureSample",
- "SampleExtensions",
- //"SampleExtensions2",
- //"ProdDetailsCustomColumnExtensions"
-],
-```
-19.  Compile and rebuild the project.
-
- **Validate the customization:**
-
-20.  Press F5 and deploy the POS to test your customization.
-
-21.  Once the POS is launched, login to POS and then search for any product and navigate to product details view, then you should see the custom control you added something like below:
+1. Press **F5** and deploy the POS to test your customization.
+2. Once the POS is launched, login to POS. Search for any product and navigate to product details view. You should see the custom control you added.
