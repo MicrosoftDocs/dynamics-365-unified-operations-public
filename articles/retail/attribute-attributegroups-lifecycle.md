@@ -86,7 +86,9 @@ These were originally intended for improving search for online store-front. With
 ---Add screenshot for filter settings of attributes----
 
 ## Attribute group 
-Once attributes have been defined, they can be grouped under **Attribute Groups**. Attribute Groups provide grouping of individual attributes and can be assigned to retail categories or retail channels.
+An attribute group is used to group the attributes for a component or subcomponent in a product configuration model. This can help a person configure a product, because the selections are arranged in a certain context. Once attributes have been defined, they can be grouped under **Attribute Groups**. Attribute Groups provide grouping of individual attributes and can be assigned to retail categories or retail channels. An attribute can be included in more than one attribute group. 
+
+You can also set default values for selected attributes that are included in the attribute group. For example, if you add an attribute for color to an attribute group, you can select the color ***Blue*** as the default attribute value. When the attribute group is added to a retail product that includes a color as one of its attributes, the color ***Blue*** is displayed as the default color for that product. 
 
 ![Attribute Groups](media/AttributeGroup.png)
 
