@@ -51,7 +51,7 @@
   *	Lens shape (Values: Oval, Square, Rectangle)
   *	Sunglass brand (Values: Ray ban, Aviator, Oakley)
 
-----ADD IMAGE FOR ATTRIBUTE TYPE SCREEN_SHOT----
+![Attribute type](media/AttributeType.png)
 
 ## How-to set up attributes in Dynamics 365 
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager	
@@ -59,7 +59,7 @@
   - Create a new attribute: *Lens *
   -	Set Attribute type: *Lens shape*
 
----ADD IMAGE FOR ATTRIBUTE SCREEN_SHOT----
+![Attribute](media/Attribute.png)
 
 ## Attribute metadata
 As you may notice, on the attribute form there's a dedicated section for the Attribute metadata. It allows you to define the characteristics around how the system may treat the values of the attribute. 
@@ -88,7 +88,7 @@ These were originally intended for improving search for online store-front. With
 ## Attribute group 
 Once attributes have been defined, they can be grouped under **Attribute Groups**. Attribute Groups provide grouping of individual attributes and can be assigned to retail categories or retail channels.
 
------ADD SCREENSHOT FOR ATTRIBUTE GROUPS----
+![Attribute Groups](media/AttributeGroup.png)
 
 
 ## How-to Steps: Attribute groups
@@ -103,7 +103,8 @@ Once attributes have been defined, they can be grouped under **Attribute Groups*
 One or more attribute groups that can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Products will inherit the attributes, which are included in the attribute groups, upon their categorization.
 
 
-----Add screenshot for Retail product hierarchy showcasing Product attribute groups----
+![Retail product hierarchy product attribute Groups](media/AGRetailProdHierarchy.png)
+
 
 ## How-to Steps – Assign attribute groups to Retail categories
 -	Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
@@ -141,7 +142,8 @@ One or more attribute groups that can be associated with one or more Retail stor
 	- Select category node “Fashion Accessories  Fashion Sunglasses” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
 	- Select category node “Menswear  Pants” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
 	
----- Add screenshot for Channel categories and product attributes ----
+![Channel categories and product attributes -  attribute Groups](media/CCPAttrGrp.png)
+
 
 ## Override attribute values
 The default values of the attributes can be overridden at the product level, that is, for individual products.
@@ -153,7 +155,8 @@ The default values of the attributes can be overridden at the product level, tha
 - Select the required product from the list in the right pane and then in the action pane, select “Setup Product attributes” under the Product tab.
 - Select any of the attributes from the left pane and then change / update its value in the right pane.
 
----- Add screenshot for product attributes value on product details page ---
+![product details page - product attribute Groups](media/ProdDetailsProdAttrValues.png)
+
 
 ## Override attribute values of product in Catalog
 
@@ -172,7 +175,8 @@ The default values of the attributes can be overridden for individual products i
 	- Channel product attributes
 	*[Note: If created in Dynamics 365, Shared product media and Shared product attributes are applicable to all the Retail products.]*
 
----- Add image for product attributes in catalog ---
+![Catalog product attribute Groups](media/CatalogProdAttrValues.png)
+
 
 ## Override attribute values of product in Channel
 The default values of the attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
