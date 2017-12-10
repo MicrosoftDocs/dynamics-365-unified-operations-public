@@ -47,8 +47,8 @@ This topic explains how to upgrade an older database to the latest Finance and O
 ## Before you begin
 
 1. Back up your current database.
-2. You must have a functional one-box demo or development environment that is already successfully running the latest Finance and Operations update.
-3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) (which is also known as RTW) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
+2. You must have a functional demo or development environment that is already successfully running the latest Finance and Operations update.
+3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
 
     - KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync."
     - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys."
@@ -63,7 +63,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
     - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1) (build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
     - **If you're upgrading from the July 2017 release (also known as 7.2) (build 7.2.11792.56024):** No hotfix is required for this version.
 
-5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
+5. In any one-box (Development, Demo) environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
     cd J:\AosService\WebRoot\bin>
@@ -95,41 +95,18 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 ## Download the latest data upgrade deployable packages
 
-To obtain the latest data upgrade deployable packages for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+1. Sign-in to http://lcs.dynamics.com/
+2. Select the Shared asset library tile
+3. In the Shared asset library, under Select asset type, select Software deployable package
+4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
-1. In LCS, in the **Environments** section, select the target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile or the **Platform updates** tile.
-2. On the **Binary updates** page, select **Download binaries**. On the next page, select **Save package** to save the package to the LCS Asset library.
-3. On the **Asset library** page, on the **Software deployable package** tab, download the package. Extract it, and then go to the **..\\CustomDeployablePackage** directory to find the appropriate deployable package file for the data upgrade. The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
-
-    - If you're upgrading from AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates.
-    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates. (In versions before Microsoft Dynamics 365 for Operations with platform update 4 \[February 2017\], there was one package that was named **DataUpgrade.zip**.)
+    - If you're upgrading from AX 2012, the package name starts with **MajorVersionDataUpgrade** **robadawy: TODO insert correct name here**
+    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **MinorVersionDataUpgrade-July2017**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
+    - If you're upgrade from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **MinorVersionDataUpgrade-7-3**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
 
 > [!NOTE]
-> Computers that are deployed from LCS will already have a local data upgrade package. However, that file is out of date and includes issues that have been resolved in later hotfixes. Always download the latest version of the file from LCS.
-
-## Remove encryption certification rotation
-
-1. Extract the **MinorVersionDataUpgrade.zip** deployable package to **C:\\Temp** or a location of your choice.
-2. In a text editor, open the **C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json** file. Modify the file as shown here, and then save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This issue is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed won't be affected. For information about the fields that are affected, see the [Encrypted fields in demo data](#encrypted-fields-in-demo-data) section later in this topic.
-
-    ```
-    {
-        "AosService": {
-            "EncryptionThumbprint": null,
-            "SigningThumbprint": null,
-            "Certificates": [
-                ],
-            "CertificateThumbprints": [
-                ],
-            "KeyValues": [
-                ]
-        }
-    }
-    ```
-
-3. Run the Microsoft Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
-4. Open **C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1**.
-5. Press F5 to run the script.
+> Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
 
 ### Fix the duplicate key issue (February 2016 release only)
 
@@ -146,8 +123,9 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 ## Upgrade the database
 
-1. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-2. Import or restore a backup of the source database to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+1. Extract the data upgrade deployable package to **C:\\Temp** or a location of your choice. 
+
+3. Import or restore a backup of the source database to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
     > If you are validating the data upgrade of your production database running on the ealier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
@@ -155,16 +133,20 @@ This step is required if you're upgrading a database from the February 2016 rele
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
-3. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
-4. Rename the existing database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
+2. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
+
+For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
+
+4. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
+5. Rename the existing database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
     ```
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-5. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
-6. Mark Step 4 of the runbook completed, and continue to run the runbook until it's completed. 
+6. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
+7. Mark Step 4 of the runbook completed, and continue to run the runbook until it's completed. 
 
 > [!NOTE]
 > When you upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8 (June 2017) or later, or when you upgrade from AX 2012, you must repeat these steps for the related \_Retail package after you run the first package.
