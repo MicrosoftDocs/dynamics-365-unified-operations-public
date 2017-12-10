@@ -93,7 +93,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
-## Download the latest data upgrade deployable packages
+## Download the latest data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
