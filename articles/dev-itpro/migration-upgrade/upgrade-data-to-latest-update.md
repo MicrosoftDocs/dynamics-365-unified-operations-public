@@ -144,7 +144,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 5. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
 
-For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
+For instructions, see [Install a deployable package](../deployment/install-deployable-package.md#install-a-deployable-package-1).
 
 This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
 
