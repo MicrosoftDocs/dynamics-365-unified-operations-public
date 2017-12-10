@@ -125,7 +125,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 1. Extract the data upgrade deployable package to **C:\\Temp** or a location of your choice. 
 
-3. Import or restore a backup of the source database to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
     > If you are validating the data upgrade of your production database running on the ealier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
@@ -133,23 +133,20 @@ This step is required if you're upgrading a database from the February 2016 rele
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
-2. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
-
-For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-
-4. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
-5. Rename the existing database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
+3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
     ```
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-6. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
-7. Mark Step 4 of the runbook completed, and continue to run the runbook until it's completed. 
+4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
 
-> [!NOTE]
-> When you upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8 (June 2017) or later, or when you upgrade from AX 2012, you must repeat these steps for the related \_Retail package after you run the first package.
+5. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
+
+For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
+
+This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 
@@ -158,10 +155,6 @@ Run the following SQL against the upgraded database to make sure that change tra
 ```
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
-
-## Additional steps for financial reporting
-
-Reset the financial reporting data mart by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). Then reimport the building block groups that you exported in an earlier step.
 
 ## Troubleshoot upgrade script errors
 
