@@ -1215,6 +1215,7 @@
 
 ### Document reporting and printing
 #### [Document Reporting Services overview](../dev-itpro/analytics/document-reporting-services.md)
+#### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Printing](../dev-itpro/analytics/print-documents.md)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md)
