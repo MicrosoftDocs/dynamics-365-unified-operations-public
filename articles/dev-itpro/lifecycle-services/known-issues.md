@@ -45,7 +45,7 @@ You can find known issues in Finance and Operations by using the Issue search to
 
 | Release                                                               | Version          | Build number   | Availability  | Search for this text |
 |-----------------------------------------------------------------------|------------------|----------------|---------------|----------------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3 | xxx | November 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3 | xxx | December 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition 7.3 |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017 | 7.2.11792.56024| June 2017     | Known issue in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) |
 | Microsoft Dynamics 365 for Operations                                 | 1611             | 7.1.1541.3036  | November 2016 | Known issue in Dynamics 365 for Operations version 1611 with platform update 3 |
 | Microsoft Dynamics AX                                                 | 7.0.1            | 7.0.1265.23014 | May 2016      | Known issue in May 2016 release |
