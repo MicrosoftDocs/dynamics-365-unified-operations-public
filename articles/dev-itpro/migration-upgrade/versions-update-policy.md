@@ -107,6 +107,11 @@ For information about the new features included in each release, click the links
 | [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
+### Table 4: Downloadable virtual hardrive (VHD) releases
+
+| Release           | VHD name   | VHD expiration date  | SLT expiration date   |
+|-------------------|----------------|---------------|-------------------|
+| X | X | X   | X   |
 
 ## Support matrix
 Platform updates are compatible with all application versions that are supported at the time of release.
