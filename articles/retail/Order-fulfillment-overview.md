@@ -94,7 +94,6 @@ The  **Pick** category of actions is provided to aid in the process of picking 
 **Action: Picking**
 
   Resulting POS status: Picking
-  
   Resulting back office status: No change
 
 After an order has been accepted, lines may be selected and marked as **Picking**. Marking a line as **Picking** is a way to indicate that the picking work is already being performed on a line. This prevents two workers from attempting to pick the same order lines at the same time.  
