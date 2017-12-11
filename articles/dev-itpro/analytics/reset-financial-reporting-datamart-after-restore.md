@@ -88,7 +88,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Restore database** – The Finance and Operations database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
-[![Reset data mart](./media/Integration.PNG)](./media/Integration.PNG)
+[![Reset data mart](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
