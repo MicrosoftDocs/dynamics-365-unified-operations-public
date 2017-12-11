@@ -959,7 +959,7 @@ Sites Services let you build websites that extend your business processes to the
 |------------|--------------------|
 | **Reason for deprecation/removal** | The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites). |
 | **Replaced by another feature?**   | No   |
-| **Product areas affected**         | HR recruiting, Case management, Request for quotes, Vendor registration  |
+| **Product areas affected**         | HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns  |
 | **Status**                         | Removed as of Dynamics AX 7.0.    |
 
 ### SSAS demand forecasting strategy
