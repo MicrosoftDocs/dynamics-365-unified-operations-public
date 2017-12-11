@@ -80,7 +80,7 @@ POs are prepared in Finance and Operations. When a PO has a status of **Approved
 
 ### Confirmation and acceptance of a PO by a vendor
 
-After a vendor accepts a PO, the PO can be automatically confirmed, or it might have to be manually confirmed. The behavior depends on whether the **Vendor activation** field is set to **Active (PO is auto-confirmed)** or **Active (PO is not auto-confirmed)** for the vendor.
+After a vendor accepts a PO, the PO can be automatically confirmed, or it might have to be manually confirmed. The behavior depends on whether the **Collaboration activation** field is set to **Active (PO is auto-confirmed)** or **Active (PO is not auto-confirmed)** for the vendor.
 
 The following table shows the typical exchange of information, depending on the vendor's response when you send a PO for confirmation.
 
