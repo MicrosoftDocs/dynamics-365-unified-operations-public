@@ -205,19 +205,19 @@ Continuing with the above example, if 200 boards are marked as packed and shippi
 
 Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through **Retail** > **Customers** > **All customer orders**. Select the **Order ID** to view order details. From order details select the **Sales order** tab, then select **Detailed status** under the **View** subheader. 
 
-**Pending**- Order lines that have been assigned to a store, but not yet accepted have the **Pending** status when viewed at the point of sale. Lines pending acceptance in the point of sale will have the **Order processing** status in the back office.
+**Pending** - Order lines that have been assigned to a store, but not yet accepted have the **Pending** status when viewed at the point of sale. Lines pending acceptance in the point of sale will have the **Order processing** status in the back office.
 
-**Accepted**- Order lines that have been manually accepted or automatically accepted will have the status of **Accepted** when viewed at the point of sale. Lines with the **Accepted** status will show as **Order processing** in the back office.
+**Accepted** - Order lines that have been manually accepted or automatically accepted will have the status of **Accepted** when viewed at the point of sale. Lines with the **Accepted** status will show as **Order processing** in the back office.
 
-**Picking**- Lines that are currently being picked at the store level have the status of **Picking**. Those same lines, when viewed at the back office, will show as **Order processing**.
+**Picking** - Lines that are currently being picked at the store level have the status of **Picking**. Those same lines, when viewed at the back office, will show as **Order processing**.
 
-**Picked** and **Partially picked**- Lines that have been picked or partially picked at the point of sale will have the status **Picked** or **Partially picked**. The same lines in the back office will also show as **Picked** or **Partially picked**.
+**Picked** and **Partially picked** - Lines that have been picked or partially picked at the point of sale will have the status **Picked** or **Partially picked**. The same lines in the back office will also show as **Picked** or **Partially picked**.
 
-**Packed** and **Partially packed**- Lines that have been packed or partially packed at the point of sale will have the status **Packed** or **Partially packed**. The same lines in the back office will also show as **Delivered** or **Partially delivered**.
+**Packed** and **Partially packed** - Lines that have been packed or partially packed at the point of sale will have the status **Packed** or **Partially packed**. The same lines in the back office will also show as **Delivered** or **Partially delivered**.
 
-**Partially invoiced**- Lines that have been partially picked up or partially shipped will have the status **Partially invoiced** at the point of sale and in the back office.
+**Partially invoiced** - Lines that have been partially picked up or partially shipped will have the status **Partially invoiced** at the point of sale and in the back office.
 
-**Invoiced**- Lines that have been fully invoiced at the point of sale will no longer show up for fulfillment. In the back office the status for those lines is **Invoiced**.
+**Invoiced** - Lines that have been fully invoiced at the point of sale will no longer show up for fulfillment. In the back office the status for those lines is **Invoiced**.
 
 ## Order fulfillment filtering
 
