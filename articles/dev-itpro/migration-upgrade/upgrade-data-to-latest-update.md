@@ -101,7 +101,7 @@ To obtain the latest data upgrade deployable package for a target environment th
 3. In the Shared asset library, under Select asset type, select Software deployable package
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
-    - If you're upgrading from AX 2012, the package name starts with **AX2012VersionDataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012VersionDataUpgrade-July2017**
+    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-July2017**
     - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
     - If you're upgrade from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
 
