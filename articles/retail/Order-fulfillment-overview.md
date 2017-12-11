@@ -92,6 +92,7 @@ For example, an accepted order line can be selected and then picked up directly 
 The  **Pick** category of actions is provided to aid in the process of picking order lines from shelves. The picking action can only be performed on order lines that have been previously accepted. 
 
 **Action: Picking**
+
   Resulting POS status: Picking
   
   Resulting back office status: No change
