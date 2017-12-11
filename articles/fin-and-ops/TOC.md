@@ -1365,6 +1365,7 @@
 #### [Generate a constrained plan (Task guide)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Create a material plan for co-products (Task guide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Handle safety stock](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Handle delays](../supply-chain/master-planning/delays.md)
 #### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
 #### [Action messages](../supply-chain/master-planning/action-messages.md)
@@ -1689,6 +1690,7 @@
 #### [Create a product master (Task guide)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Create predefined product variants (Task guide)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Create a released product for a single company (Task guide)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Product lifecycle state](../supply-chain/pim/product-lifecycle.md)
 #### [Create a bar code for a product (Task guide)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Enter the GTIN code for a product (Task guide)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Create batch attributes for a product (Task guide)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1812,6 +1814,7 @@
 ### [Warehouse work policies](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
+#### [Set up a warehouse by using a warehouse configuration template](../supply-chain/inventory/warehouse-template.md)
 ### Picking and packing
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
