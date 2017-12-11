@@ -38,7 +38,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
 
 The following table lists the non-screen layout designer-based views that support custom controls.
 
-| POS views              | Support custom control | Number of custom control |
+| POS views              | Support custom control | Number of custom controls |
 |------------------------|------------------------|--------------------------|
 | Customer Add/Edit view | Yes                    | Multiple                 |
 | Address Add/Edit view  | Yes                    | Multiple                 |
@@ -48,7 +48,7 @@ The following table lists the non-screen layout designer-based views that suppor
 
 The following table lists the screen layout designer based-views that support custom controls.
 
-| POS views | Support custom control | Number of custom control |
+| POS views | Support custom control | Number of custom controls |
 |-----------|------------------------|--------------------------|
 | Cart view | Yes                    | 10                       |
 
