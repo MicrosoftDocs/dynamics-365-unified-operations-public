@@ -51,7 +51,7 @@ The following steps describe the process for creating a custom field and placing
           - If you choose the text data type, you can also specify the maximum length of the text that can be entered in this field. 
           - If you choose the picklist data type, you can also select the set of valid values for the field.  
      3.   Provide a name, label, and help text for the field. The name corresponds to the physical field name in the database, whereas the label and help text are the text used to represent this field in the user interface.  
-8.   If this is the only field that you need to create for this form, click **Save**. If you need to create additional fields, click **Save and new** and go back to step 7. Note that there is currently a limit of 20 custom fields per table.
+8.   If this is the only field that you need to create for this form, click **Save**. If you need to create additional fields, click **Save and new** and go back to step 7. Note that there is currently a limit of **20 custom fields per table**.
 9.   Leaving the **Create new field** dialog box will return you to the **Insert fields** dialog box. Any custom fields that were just added will be automatically marked in the field list to be inserted into the form.  
 10.   Click **Insert** to insert the marked fields into the selected region of the form. 
 11.   **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
@@ -87,7 +87,7 @@ You *cannot* edit the following attributes:
 -   Field name
 -   Data type
 
-Additionally, for picklist fields, the set of valid values for the custom field can be reordered, and new values can be added; however, existing values for the picklist field cannot be removed.   
+Additionally, for picklist fields, the set of valid values for the custom field can be reordered, and new values can be added; however, existing values for the picklist field cannot be removed. Remember to click **Apply changes** when you are done editing fields for a particular table so the changes are saved. 
 
 ### Exposing custom fields on data entities
 It may also be important to allow custom fields to be visible on data entities. Data entities are utilized in the [Open in Office](../../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.  
@@ -111,7 +111,7 @@ The following steps describe the process for translating custom fields in other 
 4.   Click **OK** when you are finished.  
 
 ### Deleting custom fields
-In some rare cases, you may decide that a custom field is no longer needed. When this occurs, you can choose to delete the field from the **Custom fields** page. Note, bthis action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
+In some rare cases, you may decide that a custom field is no longer needed. When this occurs, you can choose to delete the field from the **Custom fields** page. To do this, ensure the correct field is selected, then click **Delete**, then **Yes** to confirm the deletion, and finally **Apply changes**. Note, this action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
 
 ## Appendix 
 ### Tables that support custom fields
