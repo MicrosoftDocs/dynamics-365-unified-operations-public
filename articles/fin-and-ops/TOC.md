@@ -21,6 +21,7 @@
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (August 2017)](get-started/whats-new-platform-update-10.md)
@@ -1215,6 +1216,7 @@
 
 ### Document reporting and printing
 #### [Document Reporting Services overview](../dev-itpro/analytics/document-reporting-services.md)
+#### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Printing](../dev-itpro/analytics/print-documents.md)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,6 +1287,7 @@
 ##### [Select data model definition while creating format for electronic reporting](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Upgrade your format by adopting of new base version of that format for electronic reporting](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Upload a configuration into Lifecycle Services for electronic reporting](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Electronic reporting framework API changes for Application update 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
 ### Analytical tools and visualizations
 #### [Analytics, aggregate measurements, and KPI modeling](../dev-itpro/analytics/analytics.md)

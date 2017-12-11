@@ -65,7 +65,8 @@ For information about the new features included in each release, click the links
 
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024| June 2017     | June 2020  | 
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md) | 7.3.11971.56116 | December 2017     | December 2020  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024 | June 2017     | June 2020  | 
 |  Dynamics 365 for Operations     | Major release | [1611](../../fin-and-ops/get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | 
 |  Dynamics AX |Minor release  | [7.0.1](../../fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
 |  Dynamics AX | Major release | [7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 

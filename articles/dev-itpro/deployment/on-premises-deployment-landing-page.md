@@ -5,7 +5,7 @@ title: On-premises deployment
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,6 +46,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 ## Onboard
 - [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md)
+- [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
