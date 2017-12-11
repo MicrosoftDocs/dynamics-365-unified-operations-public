@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
