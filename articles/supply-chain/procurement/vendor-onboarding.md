@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Onboarding vendors
-description: The process to onboard new vendors and actions required by different roles.
+title: Onboard vendors
+description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -27,226 +27,149 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.3
 ---
 
-# Onboarding vendors
+# Onboard vendors
 [!include[banner](../includes/banner.md)]
 ---
 
-New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365
-for Finance and Operations based on information collected from a person
-representing the vendor.
+New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, based on information that is collected from a person who represents the vendor.
 
-The process is described in steps where different roles take actions in the
-system.
+The process consists of the following steps, where various roles perform actions in the system.
 
-Step 1  
-The initial request is the prospective vendor registration request and it
-typically comes from a source such as a customer-hosted website that allows
-anonymous access. Vendors can sign up by providing basic information such as: vendor name, justification, organization number, contact person name and email. The requests are imported via the data management interface.
+1. **Data management OData** – Entity import - The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
+2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
+3. **User provisioning workflow** - When a procurement professional has verified the information in the incoming request and has decided to continue with the onboarding process, the user request workflow provisions the new user and sends an invitation email to accept the contact person as an authenticated user of Microsoft Dynamics 365.
+4. **Vendor registration wizard** - The vendor's contact person signs in to Finance and Operations by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
+5. **Approval workflow** - A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
+6. **Creation of a vendor master and user role modification** - When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or inactivated.
 
-Step 2
-Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
+The following table shows the steps and roles that are involved in the process.
 
-Step 3
-Based on the information provided in the prospective vendor registration request, a procurement professional decides whether to onboard the vendor. The procurement professional views the incoming request in the list page **Prospective vendor registration requests** in Microsoft Dynamics 365.
+| Role and "process"       | Data management OData – Entity import | Prospective vendor registration request list page | User provisioning workflow | Vendor registration wizard | Approval workflow | Creation of a vendor master and user role modification |
+|--------------------------|---|---|---|---|---|---|
+| System                   | The request for a new vendor is imported. | | | | | After the vendor request is accepted, the vendor record is created. |
+| Procurement professional | | Start the onboarding process. | | | Review and either accept or reject the vendor request. | |
+| Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
+| Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
-Step 4  
-The vendors contact person logs into Microsoft Dynamics 365 with the new user
-account and uses a registration wizard to provide information such as addresses,
-business information, procurement categories, and questionnaire responses.
+## Importing the prospective vendor registration request
 
-Step 5  
-A **vendor request** is created with the registration information and the vendor
-request is submitted to workflow and routed for review and approval.
+The prospective vendor registration request is an entity in Finance and Operations. You can set up the system to import data via this entity. 
 
-Step 6  
-On approval, a vendor record is created, and the user account of the vendor’s
-contact person is granted permission to vendor collaboration or is inactivated.
+The following table shows the information that this entity contains, and that can be imported.
 
-The schema below illustrates the steps and the acting role involved in the
-process.
+| Field                        | Description |
+|------------------------------|-------------|
+| Vendor name                  | The name of the vendor. |
+| Business justification       | The reason or reasons for the vendor request. |
+| Organization number          | An officially known registration number. |
+| Line of business             | The line of business that the vendor is in. |
+| Contact person's first name  | The first name of the person who will be invited to register vendor information. |
+| Contact person's middle name | The middle name of the person who will be invited to register vendor information. |
+| Contact person's last name   | The last name of the person who will be invited to register vendor information. |
+| Contact person's email       | The email address that will be used to create a new user in Finance and Operations, and that will be registered in the tenant's Azure Active Directory (Azure AD) account. |
+| Submitted date               | The date when the request was created in an external system. |
+| Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Finance and Operations. If no value is received though the import process, a value from the Procurement and sourcing parameters is applied. |
+| Vendor type                  | The vendor can be either an organization or a person. The vendor type determines how the vendor is finally created. |
 
-| Role and ”process”       | Step 1 Data Management Odata - Entities import | Step 2 Prospective vendor registration request List page | Step 3 User provisioning workflow | Step 4 Registration wizard | Step 5 Vendor request: Request submitted to workflow | Step 6 Creation of Vendor master & User role modification |
-|--------------------------|--------------------------------------------------|-----------------------------------------------------------|-------------------------------------|------------------------------|--------------------------------------------------------|-------------------------------------------------------------|
-| System                   | Request for new vendor imported                  |                                                           |                                     |                              |                                                        | Vendor is created on acceptance of vendor request           |
-| Procurement professional |                                                  | Starts the onboarding process                             |                                     |                              | Reviews and accepts/rejects the vendor                    |                                                             |
-| Administrator            |                                                  |                                                           | Creates user in Dynamics 365 and Azure       |                              |                                                        |                                                             |
-| Vendor contact person    |                                                  |                                                           | Sends mail to the contact person    | Registers vendor information |                                                        |                                                             |
+After the prospective vendor registration request is imported, it appears on the **Prospective vendor registration request** list page. From this list page, a procurement professional can invite the user. A user request for provisioning the user is sent to a workflow.
 
-Importing the prospective vendor registration request
------------------------------------------------------
+## Submitting a prospective vendor user request
 
-The **prospective vendor registration request** is an entity in Microsoft
-Dynamics 365. You can set up the system to import data via this entity. 
+The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that he or she can sign in to Finance and Operations by using the email account that is provided in the prospective vendor registration request.
 
-The entity contains the following information for import:
+The prospective vendor user request is processed by the user request workflow. This workflow communicates through Azure AD B2B collaboration. It creates a user in Finance and Operations that has the appropriate security settings.
 
-| **Field**                    | **Description**                                                                                                                                                                                                                                                            |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vendor name                  | Name of the vendor.                                                                                                                                                                                                                                                         |
-| Business justification       | Reason or reasons for the vendor request.                                                                                                                                                                                                                                  |
-| Organization number          | An officially known registration number.                                                                                                                                                                                                                                   |
-| Line of business             | The line of business that the vendor is in.                                                                                                                                                                                                                                |
-| Contact person’s first name  | The name of the person that will be invited to register vendor information.                                                                                                                                                                                                |
-| Contact person’s middle name |                                                                                                                                                                                                                                                                            |
-| Contact person’s last name   |                                                                                                                                                                                                                                                                            |
-| Contact person’s email       | The email that will be used to create a new user in Microsoft Dynamics 365 and which will be registered in the tenant’s Azure active directory account.                                                                                                                    |
-| Submitted date               | The date that the request was created in an external system.                                                                                                                                                                                                               |
-| Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Microsoft Dynamics 365. If no value is received though the import, a value from the Procurement and sourcing parameters is applied. |
-| Vendor type                | This can be an organization or a person and will determine how the vendor is finally created.                                                                                                                                                                            |
+New users that are set up have the following security roles:
 
-When the prospective vendor registration request is imported, it will be visible
-in the list page **Prospective vendor registration request**. From the list
-page, a procurement professional can invite the user. A user request for
-provisioning the user is sent to a workflow.
+- System external user
+- Vendor prospective (external)
 
-Submitting a prospective vendor user request
---------------------------------------------
+The new user will receive an email that is generated by the user request workflow. This email invites the user to sign in to the system.
 
-The purpose of a prospective user request is to provision the person that has
-raised the initial request to be able to log in to Dynamics 365 with the email
-account that is provided in the prospective vendor registration request.
+For information about the configuration of the email and the workflow in general, see the description of a user request workflow in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
-The user request is processed by the user request workflow. The workflow
-communicates through Azure active directory B2B and creates the user in Dynamics
-365 with the appropriate security settings.
+## Vendor registration
 
-A new user will be set up with the following security roles:
+A prospective vendor user who signs in to Finance and Operations will see the first page of a vendor registration wizard, where he or she can enter vendor information.
 
--   System external user
+The wizard reflects the configuration of the vendor request. The country or region where the vendor does business determines what information is requested in the wizard and what information is mandatory.
 
--   Vendor prospective (external)
+For more information about the vendor request configuration, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md). The following table gives an overview of the pages in the wizard and the purpose of each page.
 
-The new user will receive an email generated from the user request workflow to
-invite the user to log on to the system.
+| Page                       | Description |
+|----------------------------|-------------|
+| Country/region             | The country or region determines the vendor request configuration that is applied on the remaining wizard pages. It also determines values in the **Tax state** lookup. |
+| Terms and conditions       | This page might be available, depending on the vendor request configuration. If it's available, the user must acknowledge the terms and conditions to continue. |
+| Vendor information         | This page contains the vendor name, which is automatically entered from the original prospective vendor registration request. It also contains the organization number, the vendor's telephone number, fax number, and email address, and the vendor's addresses for various purposes. |
+| Contact person information | This page contains the contact person's name, which is automatically entered from the original prospect vendor registration request. It also contains the contact person's telephone number and email address, and the contact person's addresses for various purposes. |
+| Business information       | This page contains tax registration numbers (for various countries or regions) and the numbers of employees. It also indicates whether the business is minority owned. |
+| Procurement categories     | This page contains the procurement categories that the vendor is requesting approval for. The user can select categories in the procurement category hierarchy. You can configure the number of levels that are shown in the hierarchy at **Procurement and sourcing parameters** &gt; **Vendor collaboration**, under **Procurement and sourcing** &gt; **Setup**. |
+| Questionnaires             | The wizard might include a set of questionnaires for the vendor. Questionnaires that appear in the wizard are configured either on the vendor request or per procurement category. If questionnaires are configured per procurement category, the procurement categories that the vendor requests approval for determine the questionnaires that appear in the wizard. On the **Procurement categories** page, you can add a questionnaire under the relevant category and set the activity type to **Vendor onboarding**. |
 
-For information about the configuration of the email and the workflow in
-general, see the description of a user request workflow in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
+When the prospective vendor user completes the vendor registration wizard, a vendor request is created.
 
-Vendor registration
--------------------
+## Manually or automatically submit a vendor request
 
-The prospective vendor user who logs into Microsoft Dynamics 365 will land on
-the first page of a wizard where vendor information can be entered.
+A vendor request can be created as a draft and manually submitted to a workflow. Alternatively, the vendor request can be automatically submitted to a workflow when the vendor registration wizard is completed. A request can be submitted manually if, for example, a procurement professional wants to assess whether the request should be routed through an approval process before it's submitted to the workflow.
 
-The wizard reflects the vendor request configuration and the country/region
-where the vendor is doing business determines what information is requested in
-the wizard and what information is mandatory.
+- Select **Procurement and sourcing parameters** &gt; **Vendor collaboration**, and then select **Auto submit prospective vendor registration to workflow** to configure the vendor request so that it's submitted automatically to a workflow when the vendor registration wizard is completed.
 
-For more information about the vendor request configuration, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
-Below is an overview of the pages in the wizard and their purpose, the
-description provides some examples of contents.
-
-| Page                       | Description                                                                                                                                                                                                                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Country/region             | The country/region determines the vendor request configuration that is applied on the remaining wizard pages. This also determines values in the Tax state look up.                                                                                                                           |
-| Terms and conditions       | This page will be available depending on the configuration. It may request an acknowledgement from the user to proceed.                                                                                                                                                                       |
-| Vendor information         | Contains the vendor name that is defaulted from the original prospective vendor registration request, the organization number, the vendor's phone number, fax, and email, and the vendor's adresses for different purposes.                                                                                                                                                                                         |
-| Contact person information | Contains the contact person’s name, defaulted from the original prospect vendor registration request, the contact person’s phone number and email address, and the contact person's adresses for different purposes.                                                                                                                                                                                                                                                                                                            |      
-| Business information       | Contains tax registration numbers (for different countries), minority owned, and numbers of employees.                                                                                                                                                                                                                                                                                     |
-| Procurement categories     | The procurement categories that the vendor is requesting to be approved for. The procurement category hierarchy is available to select from. The number of levels of the hierarchy that is displayed can be configured in **Procurement and sourcing parameters** > **Vendor collaboration** under **Procurement and sourcing** > **Setup**.|
-| Questionnaires             | The wizard may include a set of questionnaires for the vendor. Questionnaires that appear in the wizard are either configured on the vendor request or per procurement category. If questionnaires are configured per procurement category, the procurement category that the vendor requests approval for will control the questionnaires that appear in the wizard. You can add a questionnaire in the **Procurement categories** page under the relevant category and set the activity type to **Vendor onboarding**.                                                                                                                                                                                  |
-
-When the prospective vendor user finalizes the wizard, a vendor request is
-created.
-
-Submit a vendor request manually or automatically
--------------------------------------------------
-
-A vendor request can be created as a draft and manually submitted to workflow or
-it can be submitted to workflow automatically when the vendor registration
-wizard is finalized. A request can, for example, be submitted manually if a
-procurement professional wants to assess if the request should be routed through
-an approval process before it is submitted to the workflow.  
-- Click **Procurement and sourcing parameters/Vendor collaboration** and select
-**Auto submit prospective vendor registration to workflow** to configure the
-vendor request to be submitted automatically to workflow when the vendor
-registration wizard finalizes.
-
-Vendor requests
----------------
+## Vendor requests
 
 Vendor requests are available on the **Vendor collaboration user requests** page.
 
-A vendor request contains the information that was provided by the prospective
-vendor user in the registration wizard.
+A vendor request contains the information that the prospective vendor user entered in the vendor registration wizard.
 
-The request allows you to review the vendor information and decide whether the
-vendor is to become a registered vendor in Microsoft Dynamics 365.
+The request lets you review the vendor information and decide whether the vendor should become a registered vendor in Finance and Operations.
 
-The vendor request should be submitted to workflow, and be routed to the
-relevant reviewers and approvers. Basic information about setting up workflows
-can be found in [Procurement and sourcing workflows](procurement-sourcing-workflows.md).
+The vendor request should be submitted to a workflow, and it should be routed to the relevant reviewers and approvers. For basic information about how to set up workflows, see [Procurement and sourcing workflows](procurement-sourcing-workflows.md).
 
-The vendor request can have the following statuses:
+The following table shows the statuses that vendor requests can have.
 
-| Status                     | Description                                                                                                                                                                                                                                                                                                |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Draft                      | The vendor request is not submitted yet.                                                                                                                                                                                                                                                                   |
-| Request submitted          | The request is submitted, and the workflow is processing the first step in the workflow.                                                                                                                                                                                                                   |
-| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can **Accept** the task of reviewing and complete the review. If there are only one reviewer, the participant can go ahead and complete the review by clicking **Completed** in the workflow action without having to accept the work item. |
-| Request pending approval   | The request is routed to the participants for approval and there is an option to request additional information. This will route the work item back to the submitter. The vendor request can also be approved or rejected at this state.                                                                   |
-| Application change request | Additional information has been requested by the approver and the vendor request is routed to the participant who submitted the vendor request, who can add needed information and re-submit. If resubmitted, a vendor request returns to the state Request pending approval                               |
-| Request Approved           | This is a final state.                                                                                                                                                                                                                                                                                     |
-| Request rejected           | This is a final state.                                                                                                                                                                                                                                                                                     |
+| Status                     | Description |
+|----------------------------|-------------|
+| Draft                      | The vendor request hasn't yet been submitted. |
+| Request submitted          | The vendor request has been submitted, and the first step in the workflow is being processed. |
+| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there is only one reviewer, that participant can complete the review by selecting **Completed** in the workflow action. He or she doesn't have to accept the work item first. |
+| Request pending approval   | The vendor request has been routed to the participants for approval, and there is an option to request additional information. A request for additional information cause the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
+| Application change request | Additional information has been requested by the approver, and the vendor request has been routed to the person who submitted the vendor request. The submitter can add required information and then resubmit the vendor request. If a vendor request is resubmitted, the status is changed back to **Request pending approval** status. |
+| Request approved           | This status is a final state. |
+| Request rejected           | This status is a final state. |
 
-### Approving a vendor request
+## Approving a vendor request
 
-When a vendor request gets approved, a vendor account is created, and the status
-**Approved** will be visible on the initial prospective vendor registration
-request as well as on the vendor request.
+When a vendor request is approved, a vendor account is created, and the status **Approved** appears on both the initial prospective vendor registration request and the vendor request.
 
-Before you approve a vendor request, in the **New vendor** page, on the
-**General** FastTab, click **Vendor group** to select a vendor group.
+Before you approve a vendor request, on the **New vendor** page, on the **General** FastTab, select **Vendor group** to select a vendor group.
 
-If the prospective vendor user should have access to Microsoft Dynamics 365 as a
-vendor collaboration user representing the vendor, set the vendor collaboration
-access permission to **Yes**. To inactivate the user account that was used by
-the prospective vendor to register, set the permission to **No**.
+If the prospective vendor user should have access to Finance and Operations as a vendor collaboration user who represents the vendor, set the vendor collaboration access permission to **Yes**. To inactivate the user account that the prospective vendor used to register, set this permission to **No**.
 
-When the vendor collaboration access is set to **Yes**, approval of the vendor
-request will submit a request to modify the user’s roles so that the user gets
-the roles defined in **External roles** for the type=vendor.
+If the vendor collaboration access permission is set to **Yes**, when the vendor request is approved, a request is submitted to modify the user's roles so that the user has the roles that are defined for the **Vendor** type in **External roles**. If this permission is set to **No**, when the vendor request is approved, a request is submitted to inactivate the user. In this case, the workflow to inactivate a user request must be set up.
 
-When the vendor collaboration access is set to **No**, approval of the vendor
-request will submit a request to inactivate the user. Inactivating the vendor
-account requires that the workflow to inactivate a user request is set up.
+For a vendor account to be created when the vendor request is approved, the number sequence for creating vendors from vendor requests must be set to **Auto**.
 
-Note that to create a vendor account on approval, the number sequence for
-creating vendors from vendor requests must be set to auto.
+For an overview of the access permissions of a vendor collaboration user, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
-For an overview of the access permissions of a vendor collaboration user, see [Set up and maintain vendor collaboraton](set-up-maintain-vendor-collaboration.md).
+## Rejecting a vendor request
 
-Rejecting a vendor request
---------------------------
+If a vendor request is rejected, a reason for rejection must be selected in the vendor request.
 
-When a vendor request is rejected, it requires a reason for rejection which must
-be selected in the vendor request.
+When a vendor request is rejected, a request is submitted to inactivate the user. In this case, the workflow to inactivate a user request must be set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
-Rejection of a vendor request will submit a request for inactivating the user.
-Inactivating a user requires that the workflow to inactivate a user request
-workflow is set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
+When a vendor request is rejected, the status **Rejected** appears on both the initial prospective vendor registration request and the vendor request.
 
-When a vendor request is rejected, the status **Rejected** will be visible on
-the initial prospective vendor registration request as well as on the vendor
-request.
+## Deleting a prospective vendor registration request in various statuses
 
-Deleting a prospective vendor registration request in different statuses
-------------------------------------------------------------------------
+The various statuses of a prospective vendor registration request give an overview of the request's progress.
 
-The prospective vendor registration request has different statuses that provide
-an overview of how it is progressing.
+By using the **Delete** action on the prospective vendor registration request, you can clean up and remove the chain of records that has been created, and you can inactivate the user account. The result of the **Delete** action varies, depending on the status of the prospective vendor registration request, as shown in the following table.
 
-By using the **Delete** action on the prospective vendor registration request,
-you can clean up and remove the chain of records that have been created, and you
-can inactivate the user account. The result of using the **Delete** action
-varies depending on the status of the prospective vendor registration request.
-
-| Status                       | Status description                                                                                                                                                | Result of using the **Delete** action                                                                                                                                                                                                                               |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **New**                      | No actions have been taken on the request.                                                                                                                        | The prospective vendor registration request will be deleted.                                                                                                                                                                                                        |
-| **User requested**           | When you click **Invite user,** the status changes to **User requested**, and a **Prospective user request** is created and submitted to a user request workflow. | Deleting a prospective vendor registration request with this status is not allowed because the user request workflow has not ended.                              |
-| **User invited**             | The user request workflow is approved, and the user is created.                                                                                                   | Creates a request to inactivate the user and deletes the prospective vendor registration request.                                                                                                                                                                   |
-| **Registration in progress** | The new user has logged in and started the vendor registration wizard.                                                                                            | Creates a request to inactivate the user, deletes the prospective vendor registration request and deletes the data entered into the registration wizard.                                                                                                            |
-| **Vendor request created**   | The vendor registration wizard is finalized.                                                                                                                      | Creates a request to inactivate the user, deletes the prospective vendor registration request and the data in the registration wizard, and deletes the vendor request. Note: Delete is not possible when the vendor request is in a review process in the workflow. |
-| **Approved**                 | The vendor request is approved.                                                                                                                                   | Deletes the prospective vendor registration request and the data entered into the registration wizard, and deletes the vendor request.                                                                                                                              |
-| **Rejected**                 | The vendor request is rejected.                                                                                                                                   | Deletes the prospective vendor registration request and the data entered into the registration wizard, and deletes the vendor request.                                                                                                                              |
+| Status                   | Status description | Result of the Delete action |
+|--------------------------|--------------------|-----------------------------------|
+| New                      | No actions have been taken on the request. | The prospective vendor registration request is deleted. |
+| User requested           | When you select **Invite user**, the status is changed to **User requested**, and a prospective user request is created and submitted to a user request workflow. | You can't delete a prospective vendor registration request that has this status, because the user request workflow hasn't ended. |
+| User invited             | The user request workflow is approved, and the user is created. | A request to inactivate the user is created, and the prospective vendor registration request is deleted. |
+| Registration in progress | The new user has signed in and has started the vendor registration wizard. | A request to inactivate the user is created, and the prospective vendor registration request and the data that was entered in the vendor registration wizard are deleted. |
+| Vendor request created   | The vendor registration wizard has been completed. | A request to inactivate the user is created, and the prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.<blockquote>[!NOTE]<br>You can't use the **Delete** action when the vendor request is in a review process in the workflow.</blockquote> |
+| Approved                 | The vendor request is approved. | The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted. |
+| Rejected                 | The vendor request is rejected. | The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted. |
