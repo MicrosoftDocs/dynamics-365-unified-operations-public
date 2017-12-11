@@ -44,6 +44,7 @@
 ## [Retail time and attendance](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) and Cloud POS
+## [Choose between Modern POS and Cloud POS](MPOS-or-CPOS.md)
 ## [POS operations](POS-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## Hardware peripherals
