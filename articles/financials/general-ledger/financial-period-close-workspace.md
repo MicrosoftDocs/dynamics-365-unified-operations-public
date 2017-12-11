@@ -5,7 +5,7 @@ title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -95,7 +95,7 @@ You can assign a task in the template to one or more companies where that task 
 
 The **Task link** menu item is associated with the task work effort and can be used to go directly to the associated page from the task link in the workspace. For example, a closing task to run the currency revaluation process for Accounts payable can be linked to the associated **Foreign currency revaluation** page in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You can also link to an external URL. 
 
-> [!Hint]
+> [!TIP]
 > If you want to link a specific Management Reporter report to a financial period close task, you can use the report URL. To access the report URL, open the report in the report designer, and then click **File** &gt; **View report** to open the report in a web browser. You can then copy the URL in the browser's address bar and paste it into the **Task link** **URL** field. 
 
 You can define task dependencies in the template. If a task has been set up to depend on one or more tasks, that task can't be marked as completed until all the dependencies have been completed. 

@@ -5,7 +5,7 @@ title: Migrate data
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -127,7 +127,7 @@ For files, you must define whether the data comes from a list that consists of c
     </tr>
     <tr class="even">
     <td><strong>First row header</strong></td>
-    <td>Select this option if the first row of your data files contains header information.For fixed-width formats, you can specify delimiter characters to define the values in the header row, if there is a header row.</td>
+    <td>Select this option if the first row of your data files contains header information. For fixed-width formats, you can specify delimiter characters to define the values in the header row, if there is a header row.</td>
     </tr>
     <tr class="odd">
     <td><strong>Row delimiter</strong></td>
@@ -286,7 +286,7 @@ This section describes how to configure a source data format for data from an OD
 1.  Open **Data Import/Export Framework** &gt; **Setup** &gt; **Source data formats**.
 2.  Click **New**.
 3.  Click **Type**, and then select **ODBC**.
-4.  The Data Import/Export Framework connects to ODBC by using a data source name (DSN) type. In the **DSN** section, define which type of DSN you are using to connect, and where the DSN is located.If you have not yet defined a DSN for your ODBC connection, determine which type of DSN to use. For more information about DSNs, see [Using the ODBC Data Source Administrator](http://go.microsoft.com/fwlink/?LinkId=269895).
+4.  The Data Import/Export Framework connects to ODBC by using a data source name (DSN) type. In the **DSN** section, define which type of DSN you are using to connect, and where the DSN is located. If you have not yet defined a DSN for your ODBC connection, determine which type of DSN to use. For more information about DSNs, see [Using the ODBC Data Source Administrator](http://go.microsoft.com/fwlink/?LinkId=269895).
     -   **User DSN** – This type is available only to the person who created the DSN.
     -   **System DSN** – This type is available to all users of a computer.
     -   **File DSN** – This type lets you connect to a data provider. File DSNs can be shared by users who have the same drivers installed.
@@ -341,7 +341,7 @@ To add a new target entity, follow these steps.
 3.  In the **Entity type** field, select the type of entity to add.
     -   For an entity of the entity type, select the entity in the first **Entity** field, select the application module that the entity belongs to in the **Application module** field, and provide a unique name in the second **Entity** field. The other fields are populated automatically.
     -   For an entity of the table type, select the application module that the entity belongs to in the **Application module** field, provide a unique name in the second **Entity** field, and specify the target table in the **Staging table** field. Leave the **Entity class** and **Target entity** fields blank.
-    -   For an entity of the composite entity type, select the application module that the entity belongs to in the **Application module** field, and provide a unique name in the second **Entity** field. Leave the **Staging table**, **Entity class**, and **Target entity** fields blank. Click **Child entities** to identify the entities that make up the composite entity.You add one child entity for each entity in the system that should be the target for part of the composite data. For example, you are importing composite sales information that contains both sales header data and sales line item data. In this case, you add one child entity for **DMFSalesTableEntity** and one child entity for **DMFSalesLineEntity**.
+    -   For an entity of the composite entity type, select the application module that the entity belongs to in the **Application module** field, and provide a unique name in the second **Entity** field. Leave the **Staging table**, **Entity class**, and **Target entity** fields blank. Click **Child entities** to identify the entities that make up the composite entity. You add one child entity for each entity in the system that should be the target for part of the composite data. For example, you are importing composite sales information that contains both sales header data and sales line item data. In this case, you add one child entity for **DMFSalesTableEntity** and one child entity for **DMFSalesLineEntity**.
         1.  In the **Target entities** form, click **New** to add the first child entity.
         2.  In the **Application module** field, select the application module that the entity belongs to. In the second **Entity** field, provide a unique name. Select the related **Staging** table, **Entity** class, and **Target** entity values that belong to the target entity for part of the composite data.
         3.  Repeat steps 1 and 2 until you have added child entities for all targets of the composite data. Then click **Close**.
@@ -353,7 +353,7 @@ To add a new target entity, follow these steps.
 You can change the sequence in which fields in an entity are processed. You can also enable a field to call the **validateField** method or the **modifiedField** method to check business logic when the field is processed. **Important:** Even if you set the **Call validate** field method or **Call modified** field method value for a field, you do not guarantee that a method will be run. These values only *enable* the methods to be run. However, the settings for the processing group determine whether a method is actually run for a specific operation.
 
 1.  Open **Data import export framework** &gt; **Setup** &gt; **Target entities**.
-2.  Select the target entity to modify, and then click **Modify target mapping**. The **Map staging to target** form opens.The default **Mapping visualization view** shows the staging fields, functions (entity classes that contain transformations), and target fields that are associated with the target entity.
+2.  Select the target entity to modify, and then click **Modify target mapping**. The **Map staging to target** form opens. The default **Mapping visualization view** shows the staging fields, functions (entity classes that contain transformations), and target fields that are associated with the target entity.
 3.  Click **Mapping details**.
 4.  To modify the order in which a field is processed, change the **Sequence** value.
 5.  To enable a field to be run together with any business logic in the **validateField** method, select **Call validate Field method**.
@@ -406,7 +406,7 @@ After you have associated an entity with a processing group, you should validate
 
 #### Add default strings and numbers during the source-to-staging mapping
 
-1.  Open **Data import export framework** &gt; **Common** &gt; **Processing group** &gt; **Entities**. Click **Modify source mapping**.The default Mapping visualization view lets you quickly see which source fields are mapped to which staging fields.
+1.  Open **Data import export framework** &gt; **Common** &gt; **Processing group** &gt; **Entities**. Click **Modify source mapping**. The default Mapping visualization view lets you quickly see which source fields are mapped to which staging fields.
 2.  Click **Mapping details**.
 3.  In the **Source field** field, select a field, and then select the staging field that the field applies to.
 4.  To add a default value for the field, follow these steps:
@@ -467,8 +467,8 @@ By default, all processing groups can be run against all companies. To restrict 
 Before you run a job to copy data from source to staging, you can preview the process to determine whether errors will be generated.
 
 1.  Open **Data import export framework** &gt; **Common** &gt; **Processing group** &gt; **Entities**.
-2.  In the **Select entities for processing group** form, click **Preview source file**.The **Preview** field lists the rows that can be processed. An Infolog displays the number of rows that have errors.
-3.  To view the errors, either click **Log** in the Infolog, or click **Preview error details** in the **Select entities for processing group** form.The **Log text** field lists any rows that could not be processed.
+2.  In the **Select entities for processing group** form, click **Preview source file**. The **Preview** field lists the rows that can be processed. An Infolog displays the number of rows that have errors.
+3.  To view the errors, either click **Log** in the Infolog, or click **Preview error details** in the **Select entities for processing group** form. The **Log text** field lists any rows that could not be processed.
 
 ### Process export data
 

@@ -5,7 +5,7 @@ title: Apply updates to an on-premises deployment
 description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: manado
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,17 +36,17 @@ ms.dyn365.ops.version: Platform update 12
 This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Update types
-Four types of updates can be applied to an on-premises deployment of Finance and Operations:
+Three types of updates can be applied to an on-premises deployment of Finance and Operations:
 
 - Customizations
 - Application X++ hotfixes that are released by Microsoft
 - Platform updates
-- Application binary updates
 
-Currently, only customizations, X++ application hotfixes, and platform updates can be applied to on-premises environments.
+> [!NOTE] 
+> At this time, application binary updates can't be applied to an on-premises environment.
 
 > [!IMPORTANT]
-> Before you apply any updates to an on-premises environment, save the configuration settings that were used to deploy that environment. When you apply updates, you must re-enter the configuration settings.
+> Before you apply any updates to an on-premises environment, save the configuration settings that were used to deploy that environment. When you apply updates, you must re-enter the configuration settings. For more information, see [Redeploy an on-premises environment](redeploy-on-prem.md#save-your-configuration).
 
 ## Apply code customizations
 To apply customizations at the same time that you deploy a new on-premises environment, follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md). To apply new customizations to an on-premises environment that has already been deployed, follow these steps.
@@ -73,6 +73,6 @@ Follow these steps to apply a hotfix.
 
 ## Apply the latest platform update
 There are two ways to apply the latest platform update:
-
 - Deploy a new environment, and select the latest platform update topology during deployment. Then follow the usual steps for deploying an environment.
-- To update an existing environment with the latest update, select **Delete** to delete the application, and then select **Configure** to deploy a new version of the platform to the on-premises environment.
+- To update an existing environment with the latest update, you must redeploy the environment. For detailed information about redeploying, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+

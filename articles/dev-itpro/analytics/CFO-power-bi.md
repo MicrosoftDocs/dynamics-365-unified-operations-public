@@ -5,7 +5,7 @@ title: CFO overview Power BI content
 description: This topic describes the CFO overview Microsoft Power BI content. 
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic describes the **CFO overview** Microsoft Power BI content.
 
 ## Accessing the Power BI content
 
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), reports from the **CFO overview** Power BI content are shown in the **CFO overview** workspace.
+Reports from the **CFO overview** Power BI content are shown in the **CFO overview** workspace.
 
 ## Reports that are included in the Power BI content
 The **CFO overview** Power BI content is a composite of reports from various other Power BI content, together with some actual and budget balances from General ledger. Therefore, this Power BI content gives the chief financial officer (CFO) an overview of the organization.

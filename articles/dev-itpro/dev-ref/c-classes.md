@@ -1078,7 +1078,7 @@ The following code example calls the CodeAccessPermission::assertMultple method.
         static public void RunOnServerPermissionTest()
     {
         Set permissionSet;
-        str fileName = @"C:TestFile75a.txt";
+        str fileName = @"C:\TestFile75a.txt";
         boolean boolFileDeleted;
      
         permissionSet =  new Set(Types::Class);
@@ -1150,7 +1150,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close code access permission scope. 
@@ -1492,7 +1492,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
-            result = com.GetFileName(@"c:boot.ini"); 
+            result = com.GetFileName(@"c:\boot.ini"); 
         } 
       
         // Close the code access permission scope. 
@@ -1963,7 +1963,7 @@ This example uses a CommaIO object to read from the example file.
         CommaIo myfile; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:myfile.txt") 
+        #define.ExampleFile(@"c:\myfile.txt") 
         #define.ExampleOpenMode("w") 
       
         // Set code access permission to help protect the use 
@@ -2012,7 +2012,7 @@ The following example uses a CommaIO object to read from the ExampleFile file.
         container       con; 
         FileIoPermission perm; 
       
-        #define.ExampleFile(@"c:test.txt") 
+        #define.ExampleFile(@"c:\test.txt") 
         #define.ExampleOpenMode("r") 
       
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
@@ -2122,7 +2122,7 @@ The number of characters to read for each record in the file.
 
 #### Remarks
 
-For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record.If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
+For files that have a fixed-length format, use the inRecordLength property to guarantee that no more than the specified number of characters are read for each record. If the record format is overruled by a specified inRecordDelimiter property value , that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no additional data is read. To guarantee that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
 
 ### Method outFieldDelimiter
 

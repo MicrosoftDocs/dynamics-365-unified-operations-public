@@ -5,7 +5,7 @@ title: Access instances
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
-ms.date: 04/13/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,9 +41,9 @@ Definitions
 -----------
 
 | Term      | Definition                                                                                                                                                                                                                                       |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------|------------------------------------------|
 | End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
-| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.                              |
+| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.      |
 
 ### Environments
 
@@ -51,6 +51,46 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is deploye
 
 -   A cloud environment that is provisioned through Microsoft Dynamics Lifecycle Services (LCS), and that supports various topologies (developer, demo, and high availability)
 -   A local (on-premises) development virtual machine (VM) that is downloaded from LCS
+
+## Deploying cloud environments
+
+The process of deploying cloud hosted environments differs for partners and customers.
+
+If you are a **Partner**:
+
+1. Create a connection between a LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
+
+2. Select **+** under **Environments** to deploy.
+
+    ![LCS Onboard methodology](media/access-instances-5.jpeg)
+
+3. Select an application and platform version.
+
+4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for a preview subscription](sign-up-preview-subscription.md).
+
+    ![Select environment topology](media/access-instances-2.jpeg)
+
+5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
+
+    ![Deploy environment](media/access-instances-3.jpeg)
+
+6. if you did not choose a cloud-hosted environment, select a VHD to download.
+
+If you are a **Customer** :
+
+1. Log on to your LCS Implementation project.
+
+2. Select **Configure** to deploy.
+
+    ![Develop, test, and configure](media/access-instances-6.jpeg)
+
+3. Select an application and platform version.
+
+4. Specify the settings and select **Save**.
+
+    ![Deployment settings](media/access-instances-7.jpeg)
+
+Customers are provided with 1 free "develop and build" environment hosted in Microsoft's Azure subscription. Any additional develop and build environments or demo environments will need to be hosted in their own subscription. To deploy an environment in your own environment use Partner steps above.
 
 ## Cloud environment that is provisioned through LCS
 When a cloud environment is provisioned through LCS, the following events occur:

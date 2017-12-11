@@ -5,7 +5,7 @@ title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
 description: This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -237,7 +237,7 @@ The following tables provide descriptions for the controls in the Scheduled task
 </tr>
 <tr class="even">
 <td><strong><span class="ui">Select archive type</span></strong></td>
-<td>Select a value from the list to indicate whether the archival transactions are row-based or set-based. Select <strong><span class="ui">Row-by-row</span></strong> to create a row-based transactional unit for the archival function. A row-based transactional unit archives a single row from the Archive Object at a time. Similarly, a set-based transactional unit archives all matching records from the Archive Object as a record set.The default value for this list is <strong><span class="ui">Set-based</span></strong>. We recommend that you use a set-based archive type for improved performance.
+<td>Select a value from the list to indicate whether the archival transactions are row-based or set-based. Select <strong><span class="ui">Row-by-row</span></strong> to create a row-based transactional unit for the archival function. A row-based transactional unit archives a single row from the Archive Object at a time. Similarly, a set-based transactional unit archives all matching records from the Archive Object as a record set. The default value for this list is <strong><span class="ui">Set-based</span></strong>. We recommend that you use a set-based archive type for improved performance.
 <div class="alert">
 <table>
 <thead>

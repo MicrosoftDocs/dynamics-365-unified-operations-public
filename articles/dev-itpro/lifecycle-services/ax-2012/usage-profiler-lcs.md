@@ -5,7 +5,7 @@ title: Usage profiler 
 description: This topic provides information about the data that is collected by the Usage profiler. 
 author: kfend
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -62,7 +62,7 @@ We recommend that you start by importing data from Business process modeler, and
 
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  Configure your organization in Business process modeler.
-3.  On the project home page, click the **Usage profiler** tile, and then on the **Usage profiler** page, click **Import from BPM**.The system displays the message **Retrieving BPM data**. When it has finished importing the data, you will be returned to the Usage profiler page.
+3.  On the project home page, click the **Usage profiler** tile, and then on the **Usage profiler** page, click **Import from BPM**. The system displays the message **Retrieving BPM data**. When it has finished importing the data, you will be returned to the Usage profiler page.
 
 ## Enter data
 You can either enter data directly in Usage profiler, or you can download an Excel template, complete it, and then upload it again.
@@ -76,7 +76,7 @@ The following table lists the sections that you can enter data for.
 | Section                 | Description                                                                                                                                                                                                                                                                                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Environment details** | Under **Deployment details**, answer a series of questions about the version, hosting environment, organizational structure, and so on.                                                                                                                                                                                                                           |
-| **Business processes**  | Business processes must be defined in **Business Process Modeler**, and then imported. All business processes will be in the **Not started** state until the predicted usage information has been filled in. Many processes require that you estimate the predicted monthly volume and number of users. You may need to enter users and volumes for subprocesses. |
+| **Business processes**  | Business processes must be defined in **Business Process Modeler**, and then imported. All business processes will be in the **Not started** state until the predicted usage information has been filled in. Many processes require that you estimate the predicted monthly volume and number of users. You may need to enter users and volumes for sub processes. |
 | **Reports**             | Describe reports by whether they are operational, management, or offline, their complexity, frequency, and related business process.                                                                                                                                                                                                                              |
 | **Operating sites**     | Operating sites are the locations in which your organization is running Microsoft Dynamics AX. You'll need to provide a name, whether the location is remote or onsite, upload and download bandwidth, and your WAN connection latency. Use the **Work schedule** to enter peak concurrent users per hour.                                                        |
 | **ISV products**        | Enter the ISV products in your environment, and the estimated transaction lines per hour.                                                                                                                                                                                                                                                                         |

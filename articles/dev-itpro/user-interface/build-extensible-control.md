@@ -62,12 +62,12 @@ All three artifacts of extensible control development are explained in more deta
 
 Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 3.  On the **Dynamics 365 **menu, click **Import Project**.
 4.  In the **Import Project** dialog box, next to the **File name** text box, click the ellipsis button (...).
-5.  In the **Select the file to import** dialog box, browse to **C:\\FMLab**, click **FMTutorialDataModel.axpp**, and then click **Open**.
-6.  In the **Project file location** field, enter **C:\\FMLab**.
+5.  In the **Select the file to import** dialog box, browse to **C:\FMLab**, click **FMTutorialDataModel.axpp**, and then click **Open**.
+6.  In the **Project file location** field, enter **C:\FMLab**.
 7.  Select the **Overwrite Elements** check box and the **Current solution** option. The following screen shot shows the completed **Import Project** dialog box. 
 
     [![Ext1](./media/ext1.png)](./media/ext1.png)

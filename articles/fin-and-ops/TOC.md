@@ -10,6 +10,7 @@
 ##### [System requirements for cloud deployments](get-started/system-requirements.md)
 ##### [On-premises deployment](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [System requirements for on-premises deployments](get-started/system-requirements-on-prem.md)
+##### [Warehousing for on-premises deployments](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Buy Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,6 +21,7 @@
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (August 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition (July 2017)](get-started/whats-new-application-July-2017-update.md)
@@ -42,6 +44,7 @@
 ##### [February 2016 task guides](get-started/new-task-guides-available-february-2016.md)
 
 ### Explore the user interface
+#### [Accessibility features](get-started/accessibility-features.md)
 #### [Client UI FAQ](get-started/client-faq.md)
 #### [Action search](get-started/action-search.md)
 #### [Advanced filtering and query syntax](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Set a user's preferred time zone](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Understand Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Get help and support
+### Read and run the documentation
 #### [Help overview](get-started/help-overview.md)
 #### [Connect Help](get-started/help-connect.md)
 #### [View and export field descriptions](get-started/view-export-field-descriptions.md)
@@ -131,69 +134,15 @@
 ##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
 ##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 
-
-## Data management platform
-
-### [Data entities, projects, and packages](../dev-itpro/data-entities/data-entities.md)
-#### [Data entities and packages framework](../dev-itpro/data-entities/data-entities-data-packages.md)
-##### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
-##### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
-##### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
-##### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
-##### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
-
-#### Standard data entities
-##### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
-##### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
-##### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
-##### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
-##### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
-##### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
-##### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
-##### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
-##### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
-##### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
-##### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
-##### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
-##### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
-##### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
-##### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
-##### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
-##### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
-##### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
-##### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
-##### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
-##### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
-##### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
-##### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
-##### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
-##### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
-
-#### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
-
-##### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
-
-#### Development for data entities
-##### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
-##### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
-##### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
-##### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
-##### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
-##### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
-##### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
-##### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
-##### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
-
-### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-
-## Data integration framework
+## Data integration
+### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
 
 ### Data integration APIs
 #### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
 #### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
 ##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro/data-entities/odata.md)
+#### [OData](../dev-itpro//data-entities/odata.md)
+#### [Custom services](../dev-itpro/data-entities/custom-services.md)
 #### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
 ### Development for integration
@@ -206,19 +155,79 @@
 
 #### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Maintain products in Finance and Operations and sync them directly to Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronize sales quotation directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synchronize sales orders directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synchronize sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synchronize sales invoice directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Maintain accounts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Maintain contacts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Maintain products in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Create sales quotes in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Create sales orders in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Create sales invoices in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
 
 
+
+#### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
+
+
+## [Data management](../dev-itpro/data-entities/data-entities-data-packages.md)
+
+### [Data entities](../dev-itpro/data-entities/data-entities.md)
+
+#### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
+#### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
+#### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+#### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+#### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
+
+### Standard data entities
+#### [Data entities report](../dev-itpro/data-entities/data-entities-report.md)
+#### [Data entities: Accounts payable and taxes](../dev-itpro/data-entities/data-entities-accounts-payable-taxes.md)
+#### [Data entities: Accounts receivable](../dev-itpro/data-entities/data-entities-accounts-receivable.md)
+#### [Data entities: Bank](../dev-itpro/data-entities/data-entities-bank.md)
+#### [Data entities: Beginning balances](../dev-itpro/data-entities/data-entities-beginning-balances.md)
+#### [Data entities: Budget planning](../dev-itpro/data-entities/data-entities-budget-plan.md)
+#### [Data entities: Budgeting](../dev-itpro/data-entities/data-entities-budgeting.md)
+#### [Data entities: Costing](../dev-itpro/data-entities/data-entities-costing.md)
+#### [Data entities: Expense management](../dev-itpro/data-entities/data-entities-expense-management.md)
+#### [Data entities: Fixed assets](../dev-itpro/data-entities/data-entities-fixed-assets.md)
+#### [Data entities: General ledger](../dev-itpro/data-entities/data-entities-general-ledger.md)
+#### [Data entities: Global address book](../dev-itpro/data-entities/data-entities-global-address-book.md)
+#### [Data entities: Human resources](../dev-itpro/data-entities/data-entities-human-resources.md)
+#### [Data entities: Inventory management](../dev-itpro/data-entities/data-entities-inventory-management.md)
+#### [Data entities: Master planning](../dev-itpro/data-entities/data-entities-master-plan.md)
+#### [Data entities: Procurement and sourcing](../dev-itpro/data-entities/data-entities-procurement-sourcing.md)
+#### [Data entities: Product information management](../dev-itpro/data-entities/data-entities-product-information-management.md)
+#### [Data entities: Production control](../dev-itpro/data-entities/data-entities-production-control.md)
+#### [Data entities: Project accounting](../dev-itpro/data-entities/data-entities-project-accounting.md)
+#### [Data entities: Public sector](../dev-itpro/data-entities/data-entities-public-sector.md)
+#### [Data entities: Retail](../dev-itpro/data-entities/data-entities-retail.md)
+#### [Data entities: Sales and marketing execution](../dev-itpro/data-entities/data-entities-sales-marketing.md)
+#### [Data entities: Sales and marketing pre-sales](../dev-itpro/data-entities/data-entities-sales-marketing-pre-sales.md)
+#### [Data entities: System administration](../dev-itpro/data-entities/data-entities-system-administration.md)
+#### [Data entities: Workflow](../dev-itpro/data-entities/data-entities-workflow.md)
+
+### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md)
+
+#### [Best practices for importing vouchers using the General journal entity](../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md)
+
+### Development for data entities
+#### [Create new data entities](../dev-itpro/data-entities/build-consuming-data-entities.md)
+#### [Data entity properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Create compute columns and virtual fields](../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md)
+#### [Cross-company behavior](../dev-itpro/data-entities/cross-company-behavior.md)
+#### [Handling country/region codes](../dev-itpro/data-entities/countryregion-codes-configuration-keys.md)
+#### [Inheritance patterns](../dev-itpro/data-entities/support-super-type-sub-type.md)
+#### [Data entity wizard rules](../dev-itpro/data-entities/data-entity-wizard-rules.md)
+#### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md)
+#### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md)
+#### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md)
+
+### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
 
 ## [Financial management](../financials/index.md)
 
@@ -849,6 +858,7 @@
 ###### [Vendor invoice payment holds](../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 ##### [Approve and post draw bill of exchange](../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md)
 ##### [Chronological invoices vouchers](../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+##### [Create Standard Audit File for France (FEC)](../financials/localizations/emea-fra-fec-audit-file.md)
 ##### [Customer and vendor account statements](../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md)
 ##### [Daily interest calculation for late payment and lump sum in the invoice and collection letter](../financials/localizations/tasks/fr-00018-daily-interest.md)
 ##### [Derogatory depreciation](../financials/localizations/emea-fra-derogatory-depreciation.md)
@@ -891,6 +901,7 @@
 ##### [Black list report](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Competence date](../financials/localizations/emea-ita-competence-date.md)
 ##### [Depreciation of fixed assets](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Packing slip date verification on invoices](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Split payment for invoices issued to the Public Administration](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1204,6 +1215,7 @@
 
 ### Document reporting and printing
 #### [Document Reporting Services overview](../dev-itpro/analytics/document-reporting-services.md)
+#### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Printing](../dev-itpro/analytics/print-documents.md)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1344,7 +1356,29 @@
 ### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Master planning
+## [Master planning](../supply-chain/master-planning/master-planning-home-page.md)
+### [Master plan](../supply-chain/master-planning/master-plans.md)
+#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
+#### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Generate a constrained plan (Task guide)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Create a material plan for co-products (Task guide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Handle delays](../supply-chain/master-planning/delays.md)
+#### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
+#### [Action messages](../supply-chain/master-planning/action-messages.md)
+#### [Monitor a master planning run (Task guide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Create a schedule for a site (Task guide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Create a plan for a site (Task guide)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Master plans and multisite functionality](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Plan for site coverage, mandatory warehouse](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Plan for site coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Plan for site and warehouse coverage, warehouse mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Plan for site and warehouse coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Determine the BOM version](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Explosion of a BOM version](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Create an intercompany plan (Task guide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [View outbound planned intercompany demand (Task guide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Collaborate with internal supply chain customers (Task guide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Demand forecasting](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Set up a demand forecast](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Import historical data for demand forecasts](../supply-chain/master-planning/import-historical-data.md)
@@ -1356,29 +1390,6 @@
 #### [Reduction keys](../supply-chain/master-planning/reduction-keys.md)
 #### [Create a baseline forecast (Task guide)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Modify a demand forecast manually (Task guide)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Master plan](../supply-chain/master-planning/master-plans.md)
-#### [Coverage settings](../supply-chain/master-planning/coverage-settings.md)
-#### [Maintain planned orders](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Delays](../supply-chain/master-planning/delays.md)
-#### [Action messages](../supply-chain/master-planning/action-messages.md)
-#### [Trace an explosion](../supply-chain/master-planning/trace-explosion.md)
-#### [Master plans and multisite functionality](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Plan for site coverage, mandatory warehouse](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Plan for site coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Plan for site and warehouse coverage, warehouse mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Plan for site and warehouse coverage, warehouse not mandatory](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Determine the BOM version](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Explosion of a BOM version](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Monitor a master planning run (Task guide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Define coverage rules for items (Task guide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Create a plan for a site (Task guide)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Create a schedule for a site (Task guide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Generate a constrained plan (Task guide)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Create an intercompany plan (Task guide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Create a material plan for co-products (Task guide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [View outbound planned intercompany demand (Task guide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Collaborate with internal supply chain customers (Task guide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobile app](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1850,7 +1861,7 @@
 #### [Set up a work template for purchase orders](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Plan loads and shipments using the Load planning workbench](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Development & administration](../dev-itpro/toc.md)
+# [Development & administration for Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 

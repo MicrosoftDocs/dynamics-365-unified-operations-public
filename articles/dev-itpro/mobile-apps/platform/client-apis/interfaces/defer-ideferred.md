@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Deferred
-description: 
+description: Deferred type
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017

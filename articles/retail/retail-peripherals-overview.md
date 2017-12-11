@@ -2,10 +2,9 @@
 # required metadata
 
 title: Retail peripherals overview
-description: This topic explains the concepts that are related to retail peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
-author: rubencdelgado
+description: This topic explains the concepts that are related to retail peripherals. 
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -579,7 +578,7 @@ According to current security standards, the following settings should be used i
 ## Peripheral simulator
 For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).
 
-## Microsofttested peripheral devices
+## Microsoft-tested peripheral devices
 ### IPC (built-in) hardware station
 
 The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.
