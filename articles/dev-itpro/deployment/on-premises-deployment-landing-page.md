@@ -5,7 +5,7 @@ title: On-premises deployment
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,6 +52,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 ## Work in your on-premises deployment
 - [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
