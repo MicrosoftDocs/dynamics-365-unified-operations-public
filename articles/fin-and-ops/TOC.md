@@ -1287,6 +1287,7 @@
 ##### [Select data model definition while creating format for electronic reporting](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Upgrade your format by adopting of new base version of that format for electronic reporting](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Upload a configuration into Lifecycle Services for electronic reporting](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Electronic reporting framework API changes for Application update 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
 ### Analytical tools and visualizations
 #### [Analytics, aggregate measurements, and KPI modeling](../dev-itpro/analytics/analytics.md)
