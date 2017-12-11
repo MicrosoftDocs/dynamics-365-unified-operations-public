@@ -82,7 +82,7 @@ To use the Prospect to cash solution, you must install the following components:
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Support for prospect to cash integration through data entities is required
     
     > [!NOTE]
-    > After installing the hotfixes you have to trigger the following batch job from the form SalesPopulateProspectToCash. This form is hidden as you only need it once. To access the form, when you log in the environment: &mi=action:SalesPopulateProspectToCash, add the following url https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash to you. wser address. In the form that opens, click OK. This will populate a new **LineCreationSequnceNumber** field in **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
+    > After installing the hotfixes you have to trigger the following batch job from the form SalesPopulateProspectToCash. This form is hidden as you only need it once. To access the form, when you log in the environment: &mi=action:SalesPopulateProspectToCash, add the following url https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash to your browser address. When the form opens, click OK. This will populate a new **LineCreationSequnceNumber** field in **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
 
 
 ## System requirements for Sales
