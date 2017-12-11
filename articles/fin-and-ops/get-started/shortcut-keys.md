@@ -39,7 +39,7 @@ The following keyboard shortcuts apply across Dynamics 365 for Finance and Opera
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 
-## Finding a shorcut
+## Finding a shortcut
 As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. 
 
 
@@ -148,6 +148,9 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
 | Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.                 | Enter                           |
+| Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
+| Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
+| Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
 
 ## Input control shortcuts
 |                                                                              |                               |
