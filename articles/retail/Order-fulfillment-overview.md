@@ -41,10 +41,9 @@ The order fulfillment operation in the point of sale provides a single work area
 
 ## Accessing unified order fulfillment in the point of sale
 
-Operation ID 928, “Order fulfillment”, can be added to a point of sale button grid to access the unified order fulfillment page in the
-point of sale. 
+Order fulfillment can be added to a point of sale button grid to access the **Unified order fulfillment** page in the point of sale. 
 
-The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users may require the 'Allow retreive order' permission to invoke the operation from the point of sale.
+The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users may require the **Allow retrieve order** permission to invoke the operation from the point of sale.
 
 At the store level, a configuration setting is available that determines whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to select **Allow accept order** permission to accept orders from within the point of sale.
 Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow order reject** permission. 
@@ -94,12 +93,14 @@ The  **Pick** category of actions is provided to aid in the process of picking 
 
 **Action: Picking**
   Resulting POS status: Picking
+  
   Resulting back office status: No change
 
 After an order has been accepted, lines may be selected and marked as **Picking**. Marking a line as **Picking** is a way to indicate that the picking work is already being performed on a line. This prevents two workers from attempting to pick the same order lines at the same time.  
 
 **Action: Print picking list**
   Resulting status: Picking
+  
   Resulting back office status: No change
 
 Picking lists can be printed at the point of sale to assist workers performing the picking process. A printed picking list can be carried with the worker performing picking and as products are picked, the worker would manually mark them as picked on the picking list. 
@@ -111,6 +112,7 @@ If lines are selected and a picking list is printed for those lines, they are au
 
 **Action: Mark as picked**
   Resulting status: Picked or partially picked
+  
   Resulting back office status: Picked or partially picked
 
 After the physical picking process has been performed, lines can be marked as **Picked**. Selecting a line and marking it as **Picked** performs a real-time call to update the order line in Dynamics 365 for Retail. After the line has been marked as **Picked** at the point of sale, the status in the back office is also updated to **Picked** and inventory transactions reflect that the specified quantity has been decremented.
@@ -127,12 +129,14 @@ Order lines may be packed at any point after the order line has been accepted.
 
 **Action: Print packing slip**
   Resulting status: Packed or partially packed
+  
   Resulting back office status: Delivered or partially delivered
 
 This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Dynamics 365 for Retail and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Action: Mark as packed**
   Resulting status: Packed or partially packed
+  
   Resulting back office status: Delivered or partially delivered
 
 The **Mark as packed** action can be used to indicate that lines are packed without printing a packing slip. Both **Print packing slip** and **Mark as packed** result in inventory transactions in the back office. Packing lines in the point of sale will result in packing slip journals being generated in the back office. 
@@ -150,6 +154,7 @@ acceptance.
 
 **Action: Pick up**
   Resulting status: Invoiced or partially invoiced
+  
   Resulting back office status: Invoiced or partially invoiced
 
 If a line is selected for pick up from unified order fulfillment, the entire order is loaded into the point of sale and the full quantity for the selected line is marked. Other lines on the order are also loaded into the transaction view of the point of sale, but with quantity marked as zero. 
@@ -168,6 +173,7 @@ Order lines to be shipped from the store can be processed through unified order 
 
 **Action: Ship**
   Resulting status: Invoiced or partially invoiced
+  
   Resulting back office status: Invoiced or partially invoiced
 
 Lines shipped from unified order fulfillment are invoiced from the back office similar to if the order is invoiced directly from the back office. Lines being shipped from unified order fulfillment are not loaded into the transaction view and there is no tendering performed at the time the lines are shipped. 
@@ -182,6 +188,7 @@ Lines or partial lines may be rejected. This allows them to be reassigned from t
 
 **Action: Reject**
   Resulting status: Rejected
+  
   Resulting back office status: No change 
 
 The rejected order lines can be viewed from the **Sales order processing and inquiry** workspace. Clear the person filter on the workspace to view all the rejected order lines across the stores. The **Rejected order lines** tab under the **Orders and favorites** section display the order line details. Additionally, the users can click the **Rejected order lines** button under the **Summary** section to navigate to a sales order view. This shows all the orders that have one or more rejected order lines. If Distributed Order Management (DOM) is enabled, then these rejected orders will be automatically reassigned to the appropriate stores for fulfillment, however, these order lines can be manually reassigned as well. To do so, select the line that shows the **Fulfillment status** as **Rejected** and change the site/warehouse as needed. Click the **Update line** drop-down menu and click **Reset fulfillment status** to change the fulfillment status from **Rejected** to **Accepted** or **Pending** depending on the order fulfillment set up. After the fulfillment status is reset, then the store workers will be able to view the order lines in POS.
