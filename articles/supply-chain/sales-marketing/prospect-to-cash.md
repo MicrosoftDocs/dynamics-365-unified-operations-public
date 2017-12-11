@@ -69,7 +69,7 @@ To use the Prospect to cash solution, you must install the following components:
     - **[KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2)** – This hotfix enables sales order synchronization from Finance and Operations to Sales via the Data Integration feature.
 
     > [!NOTE]
-    > You only have to install KB4045570, because the installation includes the changes from the other Microsoft Knowledge Base (KB) articles.
+    > You only have to install KB4045570 because the installation includes the changes from other hotfixes. 
 
 ### November 2016 (Version 1611)
 
