@@ -53,31 +53,35 @@ The following tax terms are mentioned in this topic:
 Before you can complete the example scenarios, you must activate the tax configuration using the following steps. 
 
 1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2.	On Microsoft Configuration providers, Click **Repositories**.
+2.	In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
 
 ![Load configuration](media/gte-extension-repositories.png)
 
-3. Click **Add**, choose **LCS** to create a LCS configuration repositories.
-4. Select the LCS configuration repositories, click **Open**.
-5. Select the latest tax document and click **Import**
+3. Click **Add**. 
+4. Select the **LCS** option. 
+5. Click **Create repository** to create an LCS configuration repository.
+6. Enter a name and description for the repository and then click **OK**.
+7. Select the new LCS configuration repository in the list, and then click **Open**.
+8. In tree, select the latest tax document (for example, select **Tax (India GST)**).
+9. In the **Versions** section, click **Import**.
 
 ![Load configuration](media/gte-extension-import-configurations.png)
 
-6. Click **Yes**.
+10. Click **Yes**.
 
 ![Load configuration](media/gte-extension-import-configurations2.png)
 
-7. Close the page.
+11. Close the page.
 
-8. Click **Solutions**.
+12. Click **Solutions**.
 
 ![Solutions link](media/gte-extensions-solution.png)
 
-9. Create a new solution and enter the required information.
+13. Create a new solution and enter the required information.
 
 ![Solution information](media/gte-extensions-solution2.png)
 
-10. Click **Set active** to activate the new solution.
+14. Click **Set active** to activate the new solution.
 
 ![Active solution](media/gte-extension-active-solution.png)
 
