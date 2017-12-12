@@ -279,7 +279,7 @@ You can also test by using the Invoke-ServiceFabricDecryptText -CipherText 'long
 If the credentials.json have changed, delete and redeploy from LCS. 
 
 ## MR
-Additional logging can be done by registering providers. Download the [ETWManifest.txt](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.  
+Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.  
 
     .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" =    "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} 
 
