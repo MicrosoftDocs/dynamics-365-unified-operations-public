@@ -130,7 +130,7 @@ By default, orders will have a status of **Accepted**. Order status can be viewe
 
 ### Order fulfillment filtering
 
-Order fulfillment at the point of sale includes filtering to help the user easily find what they need. Filters can be changed on the action pane at the bottom of the point of sale screen. By default, a "Delivery type" filter is applied, based on how the operation is set up. If the operation is set up with the parameter "All orders" then that filter is applied when accessing order fulfillment. The same applies for the "Store pickup" and "Ship from store parameters". Other filters that can be applied to the order fulfillment view include:
+Order fulfillment at the point of sale includes filtering to help the user easily find what they need. Filters can be changed on the Action Pane at the bottom of the **Point of sale** screen. By default, a **Delivery type** filter is applied, based on how the operation is set up. If the operation is set up with the parameter **All orders**, then that filter is applied when accessing order fulfillment. The same applies for the **Store pickup** and **Ship from store** parameters. Other filters that can be applied to the order fulfillment view include:
 
   - Customer number
   - Customer name
