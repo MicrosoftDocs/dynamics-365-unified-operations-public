@@ -54,11 +54,11 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Create incident](media/CPS4.png)
 
-5.  Select issue category page.
+5.  Select issue **category**.
 
 ![Category](media/CPS5.png)
 
-6.  Select issue area.
+6.  Select issue **area**.
 
 ![Area](media/CPS6.png)
 
@@ -76,6 +76,9 @@ To use the Support tool, you must have previously created a project in Lifecycle
 ![Contact info](media/CPS8.png)
 
 9. Select **support contract** and **severity level**. 
+  
+  - Support contract for on-premises products with limited incident counts, we show your available support contract(s), and you choose which support option to use if you have multiple tier support contracts.  
+  - Support contract for cloud products have unlimited incidents, therefore, we show your the best available support plan(s). 
 
 ![Contract and severity](media/CPS9.png)
 
@@ -83,13 +86,13 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Completed](media/CPS10.png)
 
-    After you click **Submit**, the following steps occur:
-    -   An incident is created and added to the **Incidents** list.
-    -   You receive an email message from the Microsoft Support Engineer who is working on your case. 
+After you click **Submit**, the following steps occur:
+-   An incident is created and added to the Incidents list.
+-   You receive an email message from the Microsoft Support Engineer who is working on your case. 
 
 
 ## Manage support plans
-If you have purchased support plans, you will need to add your purchased support plans to LCS the **first time** you submit a support ticket. 
+If you have purchased support plan(s), you will need to add the new purchased support contract(s) to LCS Support before creating a new ticket.  This is a one time setup, you won't need to add it again the next time you create a ticket.    
 
 1. From the **Submitted to Microsoft** tab, click the **Manage support plans** button. 
 
