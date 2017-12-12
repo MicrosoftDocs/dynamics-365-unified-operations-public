@@ -107,6 +107,7 @@ Make an HTTP POST call against the following URL.
 
 In the message body, you can the pass the data as a memory stream.
 
+
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
@@ -163,6 +164,10 @@ Your implementation might include runs of recurring jobs where files or packages
 
 The **Total records exported** column shows the total count of records that were exported. A value of **0** (zero) indicates that no records were exported to the file or included in the package. 
 
-The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank. 
+The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank.
+
+### Http Vs Https
+It is known that the dequeue API in recurring integrations returns http instead of https. This behavior is observed in D365FO environments that has a load balancer in place like, in a production environment. This is not observed on a one box environment. The recommended way to handle this is by changing the Uri scheme to https in the middleware application that is trying to dequeue from D365FO.
+
 
 ![Batch job status](./media/show-batch-status.png)
