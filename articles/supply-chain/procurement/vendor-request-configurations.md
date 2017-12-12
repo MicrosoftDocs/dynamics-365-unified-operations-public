@@ -23,7 +23,7 @@ ms.search.scope: Operations, Core
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2017-12-30 
+ms.search.validFrom: 2018-03-28 
 ms.dyn365.ops.version: AX 7.3.0
 ---
 
