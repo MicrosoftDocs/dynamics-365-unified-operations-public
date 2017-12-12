@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor request configurations
-description: ***.
+description: This topic includes information about vendor request configurations.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
