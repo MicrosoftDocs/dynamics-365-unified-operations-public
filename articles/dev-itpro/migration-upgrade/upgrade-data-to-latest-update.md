@@ -34,21 +34,21 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development box, one-box, or demo environment.
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment.
 
 In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
 
-This topic explains how to upgrade an older source database to the latest Finance and Operations update. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
+This topic explains how to upgrade an older database to the latest Finance and Operations application release. 
 
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
-> - This process doesn't apply to the upgrade of data in the financial reporting database. It also doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 
 1. Back up your current database.
-2. You must have a functional one-box demo or development environment that is already successfully running the latest Finance and Operations update.
-3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) (which is also known as RTW) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
+2. You must have a functional demo or development environment that is already successfully running the latest Finance and Operations update.
+3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
 
     - KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync."
     - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys."
@@ -63,7 +63,7 @@ This topic explains how to upgrade an older source database to the latest Financ
     - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1) (build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
     - **If you're upgrading from the July 2017 release (also known as 7.2) (build 7.2.11792.56024):** No hotfix is required for this version.
 
-5. In any one-box environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
+5. In any one-box (Development, Demo) environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
     cd J:\AosService\WebRoot\bin>
@@ -92,297 +92,21 @@ This topic explains how to upgrade an older source database to the latest Financ
     ```
 
 8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
-9. Delete the cloud version of the retail channel database in the source environment. This database will be re-created as part of the upgrade. To delete the primary cloud-hosted channel database, run the following script.
 
-    > [!NOTE]
-    > If you have customizations that rely on the retail channel database schema, you might encounter errors in the following steps. If you encounter errors, you must delete your channel database customizations and then rerun the script.
+## Download the latest data upgrade deployable package
 
-    ```
-    /* Drop all non-system stored procs under schema crt and ax */
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
+To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+1. Sign-in to http://lcs.dynamics.com/
+2. Select the Shared asset library tile
+3. In the Shared asset library, under Select asset type, select Software deployable package
+4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @objId INT
-    DECLARE @SQL NVARCHAR(1024)
-
-    SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.procedures WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-
-    WHILE @name is not null AND len(@name) > 0
-    BEGIN
-        SELECT @SQL = 'DROP PROCEDURE [' + OBJECT_SCHEMA_NAME(@objId) + '].[' + RTRIM(@name) +']'
-        EXEC (@SQL)
-        PRINT @SQL
-        SELECT @name = NULL, @objId = 0
-        SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.procedures WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-    END
-    GO
-
-    /* Drop all views under schema crt, ax and ext */
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
-
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @objId INT
-    DECLARE @SQL NVARCHAR(1024)
-
-    /* Order by id DESC to remove the later view first since there may be some dependency between different views */
-    SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.views WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-
-    WHILE @name is not null AND len(@name) > 0
-    BEGIN
-        SELECT @SQL = 'DROP VIEW [' + OBJECT_SCHEMA_NAME(@objId) + '].[' + RTRIM(@name) +']'
-        EXEC (@SQL)
-        PRINT @SQL	
-        SELECT @name = NULL, @objId = 0
-        SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.views WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-    END
-    GO
-
-    /* Drop all functions under schemas crt, ax and ext*/
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
-
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @objId INT
-    DECLARE @SQL NVARCHAR(1024)
-
-    SELECT TOP 1 @name = [name], @objId = id FROM sysobjects WHERE [type] IN (N'FN', N'IF', N'TF', N'FS', N'FT') AND OBJECT_SCHEMA_NAME(id) IN ('crt','ax','ext') ORDER BY [crdate] DESC
-
-    WHILE @name IS NOT NULL AND len(LTRIM(RTRIM(@name))) > 0
-    BEGIN
-        SELECT @SQL = 'DROP FUNCTION [' + OBJECT_SCHEMA_NAME(@objId) + '].[' + RTRIM(@name) +']'
-        EXEC (@SQL)
-        PRINT @SQL
-        SELECT @name = NULL, @objId = 0
-        SELECT TOP 1 @name = [name], @objId = id FROM sysobjects WHERE [type] IN (N'FN', N'IF', N'TF', N'FS', N'FT') AND OBJECT_SCHEMA_NAME(id) IN ('crt','ax','ext') ORDER BY [crdate] DESC
-        PRINT @name
-    END
-    GO
-
-    /* Drop all foreign key constraints under schemas crt, ax and ext*/
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
-
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @constraint NVARCHAR(254)
-    DECLARE @tableSchema NVARCHAR(254)
-    DECLARE @SQL NVARCHAR(1024)
-
-    SELECT TOP 1 @name = TABLE_NAME, @tableSchema = TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE constraint_catalog=DB_NAME() AND CONSTRAINT_TYPE = 'FOREIGN KEY' AND CONSTRAINT_SCHEMA IN ('crt','ax','ext') ORDER BY TABLE_NAME
-
-    WHILE @name is not null
-    BEGIN
-        SELECT @constraint = NULL
-        SELECT @constraint = (SELECT TOP 1 CONSTRAINT_NAME FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE constraint_catalog=DB_NAME() AND CONSTRAINT_TYPE = 'FOREIGN KEY' AND TABLE_NAME = @name AND CONSTRAINT_SCHEMA IN ('crt','ax','ext') ORDER BY CONSTRAINT_NAME)
-        WHILE @constraint IS NOT NULL
-        BEGIN
-            SELECT @SQL = 'ALTER TABLE [' + @tableSchema + '].[' + RTRIM(@name) +'] DROP CONSTRAINT [' + RTRIM(@constraint) +']'
-            EXEC (@SQL)
-            PRINT @SQL
-            SELECT @constraint = NULL		
-            SELECT @constraint = (SELECT TOP 1 CONSTRAINT_NAME FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE constraint_catalog=DB_NAME() AND CONSTRAINT_TYPE = 'FOREIGN KEY' AND CONSTRAINT_NAME <> @constraint AND TABLE_NAME = @name AND CONSTRAINT_SCHEMA IN ('crt','ax','ext') ORDER BY CONSTRAINT_NAME)
-        END
-    SELECT TOP 1 @name = TABLE_NAME, @tableSchema = TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE constraint_catalog=DB_NAME() AND CONSTRAINT_TYPE = 'FOREIGN KEY' AND CONSTRAINT_SCHEMA IN ('crt','ax','ext') ORDER BY TABLE_NAME
-    END
-    GO
-
-    /* Drop all tables under schemas crt, ax and ext */
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
-
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @objId INT
-    DECLARE @SQL NVARCHAR(1024)
-
-    SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.tables WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-
-    WHILE @name IS NOT NULL
-    BEGIN	
-        SELECT @SQL = 'DROP TABLE [' + OBJECT_SCHEMA_NAME(@objId) + '].[' + RTRIM(@name) +']'
-        EXEC (@SQL)
-        PRINT @SQL	
-        SELECT @name = NULL, @objId = 0
-        SELECT TOP 1 @name = [name], @objId = [object_id] FROM sys.tables WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [create_date] DESC
-    END
-    GO
-
-    /* Drop all types under schemas crt, ax and ext */
-    DECLARE @schemaCrt INT
-    DECLARE @schemaAx INT
-    DECLARE @schemaExt INT
-
-    SELECT @schemaCrt = schema_id FROM sys.schemas WHERE [NAME] = 'crt'
-    SELECT @schemaAx = schema_id FROM sys.schemas WHERE [NAME] = 'ax'
-    SELECT @schemaExt = schema_id FROM sys.schemas WHERE [NAME] = 'ext'
-
-    DECLARE @name NVARCHAR(128)
-    DECLARE @schemaId INT
-    DECLARE @SQL NVARCHAR(1024)
-
-    /* Order by id DESC to remove the later type first since there may be some dependency between different types */
-    SELECT TOP 1 @name = [name], @schemaId = [schema_id] FROM sys.types WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [user_type_id] DESC
-
-    WHILE @name is not null AND len(@name) > 0
-    BEGIN
-        SELECT @SQL = 'DROP TYPE [' + SCHEMA_NAME(@schemaId) + '].[' + RTRIM(@name) +']'
-        EXEC (@SQL)
-        PRINT @SQL	
-        SELECT @name = NULL, @schemaId = 0
-        SELECT TOP 1 @name = [name], @schemaId = [schema_id]  FROM sys.types WHERE [schema_id] IN (@schemaCrt,@schemaAx,@schemaExt) ORDER BY [user_type_id] DESC
-    END
-    GO
-
-    /* Drop retail full text search catalog */
-    IF EXISTS (SELECT 1 FROM sys.fulltext_catalogs WHERE [name] = 'COMMERCEFULLTEXTCATALOG')
-    BEGIN
-        DROP FULLTEXT CATALOG [COMMERCEFULLTEXTCATALOG]
-    END
-
-    /* Drop retail db roles */
-    IF EXISTS (SELECT 1 FROM sys.procedures WHERE [name] = 'DropDatabaseRoleExt')
-    BEGIN
-        DROP PROCEDURE dbo.DropDatabaseRoleExt
-    END
-    GO
-
-    CREATE PROCEDURE dbo.DropDatabaseRoleExt
-    (
-        @RoleName NVARCHAR(255)
-    )
-    AS BEGIN
-        IF  EXISTS (SELECT * FROM dbo.sysusers WHERE name = @RoleName AND issqlrole = 1)
-        BEGIN 
-            DECLARE @RoleMemberName sysname
-            /* Cursor to Loop in for Each Member have the Role Privilege and Drop RoleMember */
-            DECLARE Member_Cursor CURSOR FOR
-            SELECT [name]
-            FROM dbo.sysusers
-            WHERE UID IN (
-                SELECT memberuid
-                FROM dbo.sysmembers
-                WHERE groupuid IN (
-                    SELECT UID FROM dbo.sysusers WHERE [name] = @RoleName AND issqlrole = 1)) 
-            OPEN Member_Cursor;
-
-            FETCH NEXT FROM Member_Cursor INTO @RoleMemberName
-
-            WHILE @@FETCH_STATUS = 0
-            BEGIN 
-                EXEC sp_droprolemember @rolename=@RoleName, @membername= @RoleMemberName 
-                FETCH NEXT FROM Member_Cursor INTO @RoleMemberName
-            END;
-
-            CLOSE Member_Cursor;
-            DEALLOCATE Member_Cursor;
-            /* End Of Cursor */ 
-        END
-        /* Checking If Role Name Exists In Database */
-        IF  EXISTS (SELECT * FROM sys.database_principals WHERE name = @RoleName AND TYPE = 'R')
-        BEGIN
-            DECLARE @SqlStatement NVARCHAR(1024)
-            SELECT @SqlStatement = 'DROP ROLE ' + @RoleName
-            EXEC sp_executesql @SqlStatement
-        END
-    END
-    GO
-
-    EXEC dbo.DropDatabaseRoleExt 'DataSyncUsersRole'
-    EXEC dbo.DropDatabaseRoleExt 'ReportUsersRole'
-    EXEC dbo.DropDatabaseRoleExt 'db_executor'
-    EXEC dbo.DropDatabaseRoleExt 'PublishersRole'
-    EXEC dbo.DropDatabaseRoleExt 'UsersRole'
-    EXEC dbo.DropDatabaseRoleExt 'DeployExtensibilityRole'
-    GO
-
-    IF EXISTS (SELECT 1 FROM sys.procedures WHERE [name] = 'DropDatabaseRoleExt')
-    BEGIN
-        DROP PROCEDURE dbo.DropDatabaseRoleExt
-    END
-    GO
-
-    /* Drop retail schema crt, ax, ext */
-    IF EXISTS (SELECT 1 FROM sys.schemas WHERE [name] = 'crt')
-    BEGIN
-        DROP SCHEMA crt
-    END
-    GO
-
-    IF EXISTS (SELECT 1 FROM sys.schemas WHERE [name] = 'ax')
-    BEGIN
-        DROP SCHEMA ax
-    END
-    GO
-
-    IF EXISTS (SELECT 1 FROM sys.schemas WHERE [name] = 'ext')
-    BEGIN
-        DROP SCHEMA ext
-    END
-    GO
-    ```
-
-## Download the latest data upgrade deployable packages
-
-To obtain the latest data upgrade deployable packages for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
-
-1. In LCS, in the **Environments** section, select the target Finance and Operations environment, scroll to the bottom of the page, and then select the **All binary updates** tile or the **Platform updates** tile.
-2. On the **Binary updates** page, select **Download binaries**. On the next page, select **Save package** to save the package to the LCS Asset library.
-3. On the **Asset library** page, on the **Software deployable package** tab, download the package. Extract it, and then go to the **..\\CustomDeployablePackage** directory to find the appropriate deployable package file for the data upgrade. The name of the data upgrade deployable packages varies, depending on the version that you're upgrading from and the version that you're upgrading to:
-
-    - If you're upgrading from AX 2012, the packages are named **MajorVersionDataUpgrade.zip** and **MajorversionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates.
-    - If you're upgrading from a previous release of Finance and Operations, the packages are named **MinorVersionDataUpgrade.zip** and **MinorVersionDataUpgrade\_Retail.zip**. These packages must be run one after the other. To find these packages, download the latest binary updates. (In versions before Microsoft Dynamics 365 for Operations with platform update 4 \[February 2017\], there was one package that was named **DataUpgrade.zip**.)
+    - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-July2017**
+    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
+    - If you're upgrade from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
 
 > [!NOTE]
-> Computers that are deployed from LCS will already have a local data upgrade package. However, that file is out of date and includes issues that have been resolved in later hotfixes. Always download the latest version of the file from LCS.
-
-## Remove encryption certification rotation
-
-1. Extract the **MinorVersionDataUpgrade.zip** deployable package to **C:\\Temp** or a location of your choice.
-2. In a text editor, open the **C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json** file. Modify the file as shown here, and then save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This issue is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed won't be affected. For information about the fields that are affected, see the [Encrypted fields in demo data](#encrypted-fields-in-demo-data) section later in this topic.
-
-    ```
-    {
-        "AosService": {
-            "EncryptionThumbprint": null,
-            "SigningThumbprint": null,
-            "Certificates": [
-                ],
-            "CertificateThumbprints": [
-                ],
-            "KeyValues": [
-                ]
-        }
-    }
-    ```
-
-3. Run the Microsoft Windows PowerShell Integrated Scripting Environment (ISE) as an administrator.
-4. Open **C:\\Temp\\DataUpgrade\\RotateConfigData\\Scripts\\EncryptRotationConfigData.ps1**.
-5. Press F5 to run the script.
+> Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
 
 ### Fix the duplicate key issue (February 2016 release only)
 
@@ -399,25 +123,31 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 ## Upgrade the database
 
-1. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). For instructions, see [Install a deployable package](../deployment/install-deployable-package.md).
-2. Import or restore a backup of the source database to the one-box demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+1. Extract the data upgrade deployable package to **C:\\Temp** or a location of your choice. 
 
+2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
+
+    > [!NOTE]
+    > If you are validating the data upgrade of your production database running on the ealier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
+    
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
-3. Run the runbook file from the deployable package until you reach Step 4: GlobalBackup.
-4. Rename the existing database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
+3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
     ```
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-5. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
-6. Mark Step 4 of the runbook completed, and continue to run the runbook until it's completed. 
+4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
 
-> [!NOTE]
-> When you upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8 (June 2017) or later, or when you upgrade from AX 2012, you must repeat these steps for the related \_Retail package after you run the first package.
+5. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
+
+For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
+**Install a deployable package**. 
+
+This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 
@@ -426,10 +156,6 @@ Run the following SQL against the upgraded database to make sure that change tra
 ```
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
-
-## Additional steps for financial reporting
-
-Reset the financial reporting data mart by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). Then reimport the building block groups that you exported in an earlier step.
 
 ## Troubleshoot upgrade script errors
 

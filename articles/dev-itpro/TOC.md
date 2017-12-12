@@ -363,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Custom services](data-entities/custom-services.md)
 ### [Recurring integrations](data-entities/recurring-integrations.md)
+### [Use third-party service testing utilities with services](data-entities/third-party-service-test.md)
 
 ## Development for integration
 ### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
@@ -397,6 +398,7 @@
 ### [Configuration data packages](data-entities/configuration-data-packages.md)
 ### [Copy configuration data between companies](data-entities/copy-configuration.md)
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
 
 ## Standard data entities
