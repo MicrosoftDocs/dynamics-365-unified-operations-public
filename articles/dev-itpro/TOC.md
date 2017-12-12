@@ -396,6 +396,7 @@
 ### [Configuration data packages](data-entities/configuration-data-packages.md)
 ### [Copy configuration data between companies](data-entities/copy-configuration.md)
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
 
 ## Standard data entities
