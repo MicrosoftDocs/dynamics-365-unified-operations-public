@@ -5,7 +5,7 @@ title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
 author: SunilGarg
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,7 +25,8 @@ ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30 
-ms.dyn365.ops.version: Platform update 2 
+ms.dyn365.ops.version: Platform update 2
+
 ---
 
 # Bring your own database
@@ -48,13 +49,13 @@ If you followed the series of [blog posts about Microsoft Power BI integration](
 However, the BYOD feature is recommended for the following scenarios:
 
 - You must export data from Finance and Operations into your own data warehouse.
-- You use analytical tools besides Power BI, and those tools require T-SQL access to data.
+- You use analytical tools other than Power BI, and those tools require T-SQL access to data.
 - You must perform batch integration with other systems.
 
 > [!NOTE]
 > Finance and Operations doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
 
- As a customer of Finance and Operations, you can use either Entity store or BYOD. The ready-made operational reports that are available take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
+As a customer of Finance and Operations, you can use either Entity store or BYOD. The default operational reports that are available take advantage of embedded Power BI and Entity store. We recommend that you use our default operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
 
 ## Creating a SQL database
 
@@ -83,7 +84,7 @@ If you're using the BYOD feature for integration with a business intelligence (B
     - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create a SQL premium database.
     - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework. 
 
-For scenarios where reporting systems read data from BYOD, there will always be this challenge to ensure that the reporting systems always get consistent data from BYOD while the sync from D365FO is in progress. This can be achieved by not having the reporting systems read directly off of the staging tables created by the BYOD process. These are staging tables to hold the data while data is being synced from D365FO instance and hence will be a moving target. The solution must leverage the SQL trigger capability to get informed about when the data sync from D365FO has been completed and use this to hydrate the downstream reporting systems using an approach that is suitable to an implementation.
+For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync from Finance and Operations is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the Finance and Operations instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync from Finance and Operations has been completed, and then hydrate the downstream reporting systems .
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
