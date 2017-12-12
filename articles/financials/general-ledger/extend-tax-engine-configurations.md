@@ -105,11 +105,14 @@ The order of utilization for the Input Tax Credit of UTGST is the same as it is 
 
 To support this scenario, you must complete the following tasks:
 1. [Create exstension configurations.](#create-extension-configurations)	
-2. Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
-3. Do data mapping for the extended taxable document to get the value from transaction to GTE.
-4. Change the applicability of State GST (SGST).
-5. Add and configure UTGST.
-6. Import the extended configuration and deploy it to a specific company. 
+2. [Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
+3. [Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document)
+4. [Change the data model of Tax (India GST Contoso)](#change-the-data-model-of-tax-india-gst-contoso)
+5. [Change the applicability of State GST (SGST)](#change-the-applicability-of-sgst)
+6. [Configure the UTGST task component](#task-6-configure-the-utgst-tax-component)
+7. [Modify the formulas of lines to include UTGST](#modify-the-formulas-of-lines-to-include-UTGST)
+8. [Complete the tax document configuration](#complete-the-tax-document-configuration)
+9. [Import the extended configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company) 
 
 
 ### Create extension configurations
@@ -125,7 +128,7 @@ Complete the following steps to do the following:
 6. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document. For this example, enter the name **Tax (India GST Contoso)**.
 7. Click **Create configuration**.
 
-### Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
+### Extend the taxable document so that it includes the IntraStateInUnionTerritory flag.
 
 Complete the following steps to add the **IntraStateInUnionTerritory** flag to **Taxable Document (India Contoso)**.
 
@@ -149,7 +152,7 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
  10. If there are any errors, open the designer, click **Validate**, and fix the errors.
  11. After the status is updated to **Complete**, the configuration is ready for deployment.
  
-### Task 3: Complete data mapping for the extended taxable document
+### Complete data mapping for the extended taxable document
 There are data mappings for each taxable document (purchase order, sales order, etc.) and reference mode in the taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability, tax calculation, etc. 
 For convenience, there is a special data source called **Taxable document source** which encapsulates most common tax relevant fields like Assessable Value, HSN, SAC, etc. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
@@ -239,16 +242,16 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 
 #### Method 2: Data mapping using the ER model mapping designer
 Before you use this method, be sure you are familiar with ER and the table relation, class, method, etc. for purchase orders. 
-1. Open the model mapping design of purchase order, add table records **PurchLine** as a root data source
+1. Open the model mapping design of purchase order, add table records **PurchLine** as a root data source.
 ![Purchline extension](media/gte-extension-purchline.png)
-2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**
+2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
 ![Add enumerations](media/gte-extension-add-enumerations.png)
 3. Add a calculated field **$PurchLine** in **purchase order** to build the connection between existing taxable document **purchase order** and the table records **PurchLine**, click **Edit formula**.
 ![Edit formula](media/gte-extension-edit-formula.png)
-4. Input formula which describe the relation between **PurchLine** and **purchase order**
+4. Input formula which describe the relation between **PurchLine** and **purchase order**.
 ![Add formula](media/gte-extension-add-formula.png)
-5. Click **Save**, and close the page
-6. Add calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, the formula is 
+5. Click **Save** and close the page.
+6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula: 
 ```
 AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
 ```
@@ -261,7 +264,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 	```
 	CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
 	```
-	5. Click Save and close the page.
+	5. Click **Save** and close the page.
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
@@ -273,7 +276,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 ### Task 4: Change the data model of Tax (India GST Contoso)
 
 1. Go to the **Tax (India GST Contoso)** configuration that you created in [Scenario 1: Task 1.2](#task-12-create-a-new-tax-document-that-is-derived-from-tax-india-gst), and then click **Designer**.
-2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
+2. Click **Tax document** and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
 
 	![Tax document](media/gte-tax-document-designer.png)
 
@@ -290,109 +293,87 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 
 ### Task 6: Configure the UTGST tax component
 
-#### Task 6.1: Add the UTGST tax component
-
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST**, click **Add**, and then select **Tax component**.
-2. Enter a name and description for the UTGST tax component, and then click **OK**.
-
-#### Task 6.2: Configure tax measures for the UTGST tax component
-
-1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
-2. Click **Add**, and then select **Tax measure**.
-3. All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
+1. Add the UTGST tax component.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST**, click **Add**, and then select **Tax component**.
+	2. Enter a name and description for the UTGST tax component, and then click **OK**.
+2. Configure tax measures for the UTGST tax component.
+	1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
+	2. Click **Add**, and then select **Tax measure**.
+	3. All the logic (properties, lookups, formulas, postings, accounting, and so on) except applicability of UTGST is the same as it is for SGST. Therefore, add all the tax measures that SGST uses by selecting the existing measures in the list.
 
 	![Listed measures](media/gte-utgst-list.png)
 
-#### Task 6.3 Configure rate/percentage lookups
+3. Configure rate/percentage lookups.
+	1. Expand the **UTGST** tax component node.
+	2. Select the measure of the **Rate/Percentage** type to create a rate/percentage lookup.
+	3. Click **Columns** to see a list of the attributes that are relevant to the tax rate/percentage value.
+	4. Select the same attributes that SGST uses.
+		> [!Note]
+		> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
 
-1. Expand the **UTGST** tax component node.
-2. Select the measure of the **Rate/Percentage** type to create a rate/percentage lookup.
-3. Click **Columns** to see a list of the attributes that are relevant to the tax rate/percentage value.
-4. Select the same attributes that SGST uses.
+	5. Save the tax document.
 
-	> [!Note]
-	> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
-
-5. Save the tax document.
-
-#### Task 6.4: Configure properties
-
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Properties** tab.
-2. Click **Edit** (the pencil symbol) next to **Condition**.
-3. Enter the same condition that SGST uses.
+4. Configure properties.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Properties** tab.
+	2. Click **Edit** (the pencil symbol) next to **Condition**.
+	3. Enter the same condition that SGST uses.
 
 	![SGST condition](media/gte-sgst-condition.png)
 
-4. Save the tax document.
+	4. Save the tax document.
 
-#### Task 6.5: Configure tax applicability lookups
+5. Configure tax applicability lookups.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Lookup** tab.
+	2. Click **Columns**.
+	3. Select **Import Order** and **IntraStateInUnionTerritory** as lookup columns.
+	4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.	
+	5. Save the tax document.
 
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Lookup** tab.
-2. Click **Columns**.
-3. Select **Import Order** and **IntraStateInUnionTerritory** as lookup columns.
-4. Select **Configuration** as the source type, and select **No** for the **Import Order** column and **Yes** for the **IntraStateInUnionTerritory** column.	
-5. Save the tax document.
+6. Configure formulas. Formulas can be configured at either the group node level (line, tax component, or tax type) or the measure node level. However, we recommend that you always configure tax calculation formulas at the group node level. Tax amount distribution formulas can be configured at either the group node level or the measure node level.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Formula** tab.
+	2. Click **Add Tax formula**.
+	3. On the **Details** FastTab, select **Formula** as the category, and then click **Edit** to enter the formula and condition.
+	4. Repeat steps 2 through 3 until the UTGST tax component has all the same formulas as SGST.
+	5. Save the tax document.
 
-#### Task 6.6 Configure formulas
+7. Configure a posting profile. Only nodes of the **Tax Component** type support a posting profile definition.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Postings** tab.
+	2. Click **Add Posting Profile** to create a new posting profile definition.
+	3. On the **Details** FastTab, enter the accounting treatment for the various tax measures that you defined in the previous task, and provide the names of the Debit and Credit accounting subledgers.
+	4. Click **Edit** to enter a condition.
+	5. Optional: Enter a description for the posting profile.
+	6. Repeat steps 2 through 5 until the UTGST tax component has all the same posting profiles as SGST.
+	7. Save the tax document.
 
-Formulas can be configured at either the group node level (line, tax component, or tax type) or the measure node level. However, we recommend that you always configure tax calculation formulas at the group node level. Tax amount distribution formulas can be configured at either the group node level or the measure node level.
+8. Configure accounting lookups. Only nodes of the **Tax Type** and **Tax Component** types support an accounting lookup definition.
+	1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Accounting** tab.
+	2. Click **Columns** to see a list of the attributes that can be used to determine the main accounts that will be used for accounting taxes.
+	3. Select the same attributes that SGST uses.
+		> [!NOTE]
+		> Don’t click **Add**. Values that you enter have no effect on the actual tax main accounts decision table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
 
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Formula** tab.
-2. Click **Add Tax formula**.
-3. On the **Details** FastTab, select **Formula** as the category, and then click **Edit** to enter the formula and condition.
-4. Repeat steps 2 through 3 until the UTGST tax component has all the same formulas as SGST.
-5. Save the tax document.
+	4. Save the tax document.
 
-### Task 6.7 Configure a posting profile
+9. Configure credit pools. Only nodes of the **Tax Component** type support a credit pool definition.
+	1. Expand the **UTGST** tax component node, and then click the **Credit Pool** tab.
+	2. Click **Columns** to see a list of the attributes that are relevant to the tax settlement of this component. Typically, the selected column is the appropriate tax registration number, like **GST Registration Number**.
+	3. Select the same attributes that SGST uses.
+		> [!NOTE]
+		> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
 
-Only nodes of the **Tax Component** type support a posting profile definition.
+	4. Save the tax document.
 
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Postings** tab.
-2. Click **Add Posting Profile** to create a new posting profile definition.
-3. On the **Details** FastTab, enter the accounting treatment for the various tax measures that you defined in the previous task, and provide the names of the Debit and Credit accounting subledgers.
-4. Click **Edit** to enter a condition.
-5. Optional: Enter a description for the posting profile.
-6. Repeat steps 2 through 5 until the UTGST tax component has all the same posting profiles as SGST.
-7. Save the tax document.
-
-#### Task 6.8 Configure accounting lookups
-
-Only nodes of the **Tax Type** and **Tax Component** types support an accounting lookup definition.
-
-1. Navigate to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**, and then click the **Accounting** tab.
-2. Click **Columns** to see a list of the attributes that can be used to determine the main accounts that will be used for accounting taxes.
-3. Select the same attributes that SGST uses.
-
-	> [!NOTE]
-	> Don’t click **Add**. Values that you enter have no effect on the actual tax main accounts decision table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
-
-4. Save the tax document.
-
-#### Task 6.9 Configure credit pools
-
-Only nodes of the **Tax Component** type support a credit pool definition.
-
-1. Expand the **UTGST** tax component node, and then click the **Credit Pool** tab.
-2. Click **Columns** to see a list of the attributes that are relevant to the tax settlement of this component. Typically, the selected column is the appropriate tax registration number, like **GST Registration Number**.
-3. Select the same attributes that SGST uses.
-
-	> [!NOTE]
-	> Don’t click **Add**. Values that you enter here have no effect on the actual rate table. That table should be completed at **Tax** > **Tax configuration** > **Tax setup**.
-
-4. Save the tax document.
-
-### Task 7: Modify the formulas of lines so that they reflect UTGST
+### Modify the formulas of lines to include UTGST
 
 1. Navigate to **Tax document** > **Header** > **Lines**, and then click the **Formulas** tab.
-2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST.
+2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST. For example, change the **Tax amount inclusive** formula as shown here.
 
-	For example, change the **Tax amount inclusive** formula as shown here.
-	![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
+ ![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
 	
 3. Save the tax document.
 4. Close the designer.
 
-### Task 8: Complete the tax document configuration
+### Complete the tax document configuration
 
 1. Save the configuration, and close the designer.
 2. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
@@ -400,27 +381,27 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 4. If there are any errors, open the designer, click **Validate**, and fix the errors.
 5. After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 9: Import the configuration and deploy it to a specific company
-1.	Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
-2.	Create a new record and define Tax setup.
+### Import the configuration and deploy it to a specific company
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
+2. Create a new record and define Tax setup.
 
 ![New tax setup](media/gte-extension-new-tax-setup.png)
 
-3.	Click **Configurations**.
+3. Click **Configurations**.
 
 ![Configuration](media/gte-extension-new-configuration.png)
 
-4.	Click on **Tax configuration** tab, switch to **Available configurations** and click **New** to create a tax configuration.
+4. Click on **Tax configuration** tab, switch to **Available configurations** and click **New** to create a tax configuration.
 	> [!NOTE]
 	> The configuration that is added to tax gets listed on the **Available configuration** tab
 	
 ![New configuration](media/gte-extension-new-configuration2.png)
 
-5.	Select the required configuration, Ex: **Tax (India GST)** and Click **Save**.
+5. Select the required configuration, Ex: **Tax (India GST)** and Click **Save**.
 
 ![Select configuration](media/gte-extension-select-configuration.png)
 
-6.	In the elipses menu, click **Synchronize**.
+6. In the elipses menu, click **Synchronize**.
 
 ![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
 
@@ -430,20 +411,20 @@ Only nodes of the **Tax Component** type support a credit pool definition.
 
 ![Active configuration](media/gte-extension-active-configuration.png)
 
-8.	Click **Close**.
-9.	Click the **Companies** FastTab.
-10.	Click **New**(1) and then select **INMF** in the **Companies** field (2).
+8. Click **Close**.
+9. Click the **Companies** FastTab.
+10. Click **New**(1) and then select **INMF** in the **Companies** field (2).
 
 ![Select company](media/gte-extension-deploy-to-company.png)
 
-11.	Click **Save**.
-12.	Click **Activate** to activate the configuration for the company.
+11. Click **Save**.
+12. Click **Activate** to activate the configuration for the company.
 
 ![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
 
 ![Active configuration for the company](media/gte-extension-activate-configuration-to-company2.png)
 
-13.	Click **Setup** to set up data for the new version.
+13. Click **Setup** to set up data for the new version.
 
 ![Set up data for new version](media/gte-extension-tax-setup.png)
 
