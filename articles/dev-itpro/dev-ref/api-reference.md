@@ -5,7 +5,7 @@ title: API, class, and table reference
 description: This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,12 +37,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 
-Application classes and tables
-------------------------------
+## Application classes and tables
 
 ### Application class and table documentation is in Visual Studio
 
-You can find documentation for the Application classes in Microsoft Visual Studio by searching for the application programming interface (API) in Application Explorer and then displaying the code. You can find additional metadata about the API in the **Properties** window.
+You can find documentation for the Application classes in Microsoft Visual Studio by searching for the application programming interface (API) in Application Explorer and then displaying the code. You can find additional metadata about the API in the **Properties** window. You can also download a list of all tables in the [Technical Reference Reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).
 
 ### Programming with application tables and classes
 
@@ -53,7 +52,7 @@ Application tables are being similar to application classes, but with the follo
 -   A table almost always corresponds to a real object.
 -   The definition of a table must sometimes be erased if you later want another table to extend it.
 
-### Design Pattern of private new in application classes
+### Design pattern of private new in application classes
 
 All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no new node in the AOT. If the class has no explicit new node, the implicit `new` method is public. A design pattern that is sometimes used in the application classes is to declare the explicit `new` constructor method as `private`. Then a `public static` method is added to call the `new` method. The static method can restrict or control the call the `new` method based on various conditions, if necessary.
 
