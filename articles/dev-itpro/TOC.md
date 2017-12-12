@@ -363,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Custom services](data-entities/custom-services.md)
 ### [Recurring integrations](data-entities/recurring-integrations.md)
+### [Use third-party service testing utilities with services](data-entities/third-party-service-test.md)
 
 ## Development for integration
 ### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
