@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
-
+.md
 # Set up and maintain vendor collaboration
 
 [!include[banner](../includes/banner.md)]
@@ -87,7 +87,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This rolle will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#Set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
 
-For information about how to onboard prospective vendors, see [Vendor onboarding](vendor-onboarding).
+For information about how to onboard prospective vendors, see [Vendor onboarding](vendor-onboarding.md).
 
 ### Set up a security role that is used when a new prospective vendor user request is submitted
 
