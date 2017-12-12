@@ -17,14 +17,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: bis
-ms.search.scope: Operations, Core
+ms.search.scope: AX 7.3.0, Operations, UnifiedOperations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2018-03-28 
-ms.dyn365.ops.version: AX 7.3.0
+ms.search.validFrom: 2017-12-31 
+ms.dyn365.ops.version: AX 7.3
 ---
 
 # Vendor request configurations
