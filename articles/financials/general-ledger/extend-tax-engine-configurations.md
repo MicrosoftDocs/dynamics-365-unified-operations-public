@@ -52,24 +52,32 @@ The following tax terms are mentioned in this topic:
 ## Activate the tax configuration
 Before you can complete the example scenarios, you must activate the tax configuration using the following steps. 
 
-1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting** > **Tax configurations**.
-2.	Click **Exchange** > **Load from XML files**.
+1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2.	On Microsoft Configuration providers, Click **Repositories**.
 
-![Load configuration](media/gte-extension-load-configuration.png)
+![Load configuration](media/gte-extension-repositories.png)
 
-3. Select the configuration file and click **OK** to load the configuration. Repeat step 2 and 3 for Taxable document, Taxable document (India) and Tax (India GST) in sequence.
+3. Click **Add**, choose **LCS** to create a LCS configuration repositories.
+4. Select the LCS configuration repositories, click **Open**.
+5. Select the latest tax document and click **Import**
 
-![Load from XML](media/gte-extension-load-configuration2.png)
+![Load configuration](media/gte-extension-import-configurations.png)
 
-4.	Click **Solutions**.
+6. Click **Yes**.
+
+![Load configuration](media/gte-extension-import-configurations2.png)
+
+7. Close the page.
+
+8. Click **Solutions**.
 
 ![Solutions link](media/gte-extensions-solution.png)
 
-5.	Create a new solution and enter the required information.
+9. Create a new solution and enter the required information.
 
 ![Solution information](media/gte-extensions-solution2.png)
 
-6. Click **Set active** to activate the new solution.
+10. Click **Set active** to activate the new solution.
 
 ![Active solution](media/gte-extension-active-solution.png)
 
