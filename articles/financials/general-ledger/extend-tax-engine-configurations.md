@@ -124,7 +124,7 @@ To support the scenario, the following must be done:
 
 #### Task 1.2: Create a new tax document that is derived from Tax (India GST)
 
-1. Navigate to the **Tax (India GST)** configuration, and then click **Create configuration**.
+1. In the tree, select the **Tax (India GST)** configuration, and then click **Create configuration**.
 2. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document. For this example, enter the name **Tax (India GST Contoso)**.
 3. Click **Create configuration**.
 
@@ -142,7 +142,7 @@ To support the scenario, the following must be done:
  5. On the **Node** FastTab, click **Switch item reference**.
  6. Select **NoYes** in the tree, and then click **OK**.
  7. Save the configuration, and close the designer.
- 8. In the **Configurations** workspace, click **Change status** > **Complete**.
+ 8. With **Taxable Document (India Contoso)** still selected in the tree, click **Change status** > **Complete** in the **Versions** list.
 
 	![Update the configuration status](media/gte-change-configuration-status.png)
 
@@ -460,7 +460,7 @@ Complete the steps in [Scenario 1: Task 1](#task-1-create-extension-configuratio
 
 ### Task 2: Add Reference model for Country/Region of Origin
 
-1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+1. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 2. Click the elipses button, then click **Reference model** to change the view to Reference model, so you can view all the available reference models.
 3. Click **New** to add a new reference model.
     -	**Name:** Country of Origin
@@ -482,7 +482,7 @@ Complete the steps in [Scenario 1: Task 1](#task-1-create-extension-configuratio
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 3: Do data mapping for the reference model
+### Task 3: Complete data mapping for the reference model
 1. In the designer of **Taxable Document (India Contoso)**, and then click **Map model to datasource**.
 2. Add a new model mapping for the reference model Country of Origin
 ![Add model mapping](media/gte-extension-map-reference-model.png)
