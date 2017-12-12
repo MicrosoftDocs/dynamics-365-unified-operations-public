@@ -32,9 +32,7 @@ ms.dyn365.ops.version: 7.3
 [!include[banner](../includes/banner.md)]
 
 
-The Tax engine (Also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
-
-In this topic, you will learn the Tax engine configuration extension process using the following example scenarios that apply to India.
+The Tax engine (Also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
 
 -	Extend the Tax engine configuration for UTGST
 -	Use a Reference Model to apply a tax rate of BCD for import order of goods from different countries/regions
@@ -49,11 +47,12 @@ The following tax terms are mentioned in this topic:
 |IGST | Integrated Goods and Services Tax |
 |BCD| Basic Customs Duty|
 
-## Activate the tax configuration
-Before you can complete the example scenarios, you must activate the tax configuration using the following steps. 
+## Prerequisites
+Before you can complete the example scenarios, complete the following tasks.
 
-1.	Navigate to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2.	In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
+### Create a Lifecycle Services configuration respository
+1. Navigate to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
 
 ![Load configuration](media/gte-extension-repositories.png)
 
@@ -61,33 +60,32 @@ Before you can complete the example scenarios, you must activate the tax configu
 4. Select the **LCS** option. 
 5. Click **Create repository** to create an LCS configuration repository.
 6. Enter a name and description for the repository and then click **OK**.
-7. Select the new LCS configuration repository in the list, and then click **Open**.
-8. In tree, select the latest tax document (for example, select **Tax (India GST)**).
-9. In the **Versions** section, click **Import**.
+
+#### Import configurations from LCS
+1. Navigate to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
+3. Select the configuration repository that you just created in the list. 
+4. Click **Open**.
+5. In tree, select the latest tax document (for example, select **Tax (India GST)**).
+6. In the **Versions** section, click **Import**.
 
 ![Load configuration](media/gte-extension-import-configurations.png)
 
-10. Click **Yes**.
+7. Click **Yes** to confirm the import.
 
 ![Load configuration](media/gte-extension-import-configurations2.png)
 
-11. Close the page.
-
-12. Click **Solutions**.
-
-![Solutions link](media/gte-extensions-solution.png)
-
-13. Create a new solution and enter the required information.
-
-![Solution information](media/gte-extensions-solution2.png)
-
-14. Click **Set active** to activate the new solution.
+#### Add a Configuration provider and make it the active provider
+1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. Click **Configuration providers**.
+3. Create a new configuration provider and close the page.
+4. Click **...** > **Set active** on the configuration provider that you created.
 
 ![Active solution](media/gte-extension-active-solution.png)
 
 ## Scenario 1: Extend the Tax engine configuration for UTGST
 
-For union territories that don’t have a legislature, the GST Council introduced UTGST, which is on a par with SGST. UTGST applies to the following union territories of India:
+For union territories that don’t have a legislature, the GST Council introduced UTGST, which is comparable to SGST. UTGST applies to the following union territories of India:
 
 -	Chandigarh
 -	Lakshadweep
@@ -105,32 +103,33 @@ For UTGST, the following combinations of taxes can be applied for any transactio
 
 The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
-To support the scenario, the following must be done:
-1.	Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
-2.	Do data mapping for the extended taxable document to get the value from transaction to GTE
-3.	Change the applicability of State GST (SGST).
-4.	Add and configure UTGST.
-5.	Import the extended configuration and deploy it to a specific company. 
+To support this scenario, you must complete the following tasks:
+1. [Create exstension configurations.](#create-extension-configurations)	
+2. Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
+3. Do data mapping for the extended taxable document to get the value from transaction to GTE.
+4. Change the applicability of State GST (SGST).
+5. Add and configure UTGST.
+6. Import the extended configuration and deploy it to a specific company. 
 
 
-### Task 1: Create extension configurations
-
-#### Task 1.1: Create a new taxable document that is derived from Taxable Document (India)
+### Create extension configurations
+Complete the following steps to do the following:
+-	Create a new taxable document that is derived from Taxable Document (India)
+-	Create a new tax document that is derived from Tax (India GST)
 
 1. On the **Localization configurations** workspace (**Organization administration** > **Workspaces** > **Electronic reporting**), click **Tax configurations**.
 2. In the tree, find the **Taxable Document (India)** configuration, and then click **Create configuration**.
 3. Select the **Derive from Taxable document model** option, and then enter a name and description for the derived taxable document. For this example, enter the name **Taxable Document (India Contoso)**.
 4. Click **Create configuration**.
+5. In the tree, select the **Tax (India GST)** configuration, and then click **Create configuration**.
+6. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document. For this example, enter the name **Tax (India GST Contoso)**.
+7. Click **Create configuration**.
 
-#### Task 1.2: Create a new tax document that is derived from Tax (India GST)
+### Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.
 
-1. In the tree, select the **Tax (India GST)** configuration, and then click **Create configuration**.
-2. Select the **Derive from Tax configuration** option, and then enter a name and description for the derived tax document. For this example, enter the name **Tax (India GST Contoso)**.
-3. Click **Create configuration**.
+Complete the following steps to add the **IntraStateInUnionTerritory** flag to **Taxable Document (India Contoso)**.
 
-### Task 2: Add the IntraStateInUnionTerritory flag to Taxable Document (India Contoso)
-
- 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Scenario 1: Task 1.1](#task-11-create-a-new-taxable-document-that-is-derived-from-taxable-document-india), and then click **Designer**.
+ 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Create exstension configurations.](#create-extension-configurations), and then click **Designer**.
  2. In the tree, go to **Taxable document** > **Header** > **Lines**, and then click **New** to create a new node.
  3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
