@@ -44,6 +44,7 @@
 ## [Retail time and attendance](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) and Cloud POS
+## [Choose between Modern POS and Cloud POS](MPOS-or-CPOS.md)
 ## [POS operations](POS-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## Hardware peripherals
@@ -258,7 +259,6 @@
 ### [Add custom controls to Retail Modern POS transaction pages](dev-itpro/pos-custom-transaction.md)
 ### [Add custom columns to a POS transaction grid](dev-itpro/pos-custom-transaction-column.md)
 ### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
-### [Extend existing POS views to add custom columns and app bar buttons](dev-itpro/pos-view-extension.md)
 ### [Retail Modern POS triggers and printing](dev-itpro/pos-trigger-printing.md)
 ### [Add a custom control to a Retail Modern POS non-screen designer-based view](dev-itpro/pos-control-non-screen.md)
 ### [Generate the Retail proxy for POS and e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
