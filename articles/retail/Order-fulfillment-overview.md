@@ -39,14 +39,14 @@ Orders for fulfillment at a specific store has the store's warehouse designated 
 
 The order fulfillment operation in the point of sale provides a single work area in the point of sale that can be used to process orders. This includes everything from accepting the order, to marking it as shipped, or initiating store pickup. 
 
-## Accessing unified order fulfillment in the point of sale
+## Access unified order fulfillment in the point of sale
 
-Order fulfillment can be added to a point of sale button grid to access the **Unified order fulfillment** page in the point of sale. 
+Order fulfillment, [Operation ID 928](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/pos-operations), can be used to access the store order fulfillment work area in the point of sale. 
 
-The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users may require the **Allow retrieve order** permission to invoke the operation from the point of sale.
+The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users will be able to use the **Allow retrieve order** permission to invoke the operation from the point of sale.
 
-At the store level, a configuration setting is available that determines whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to select **Allow accept order** permission to accept orders from within the point of sale.
-Order lines may also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow order reject** permission. 
+At the store level, a configuration setting is available to determine whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to select **Allow accept order** permission to accept orders from within the point of sale.
+Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow order reject** permission. 
 
 ## Order fulfillment operation parameters
 
@@ -59,7 +59,7 @@ stores to fulfill are not listed when using the order fulfillment operation.
 
 ## Line selection
 
-Lines can be selected using the **Select** function in the Action Pane. When **Select** is enabled, multiple lines may be selected for
+Lines can be selected using the **Select** function in the Action Pane. When **Select** is enabled, multiple lines can be selected for
 processing. You can clear selected lines by clicking the same line again. 
 
 ## Line details
@@ -96,7 +96,7 @@ The  **Pick** category of actions is provided to aid in the process of picking 
 - Resulting POS status: Picking
 - Resulting back office status: No change
 
-After an order has been accepted, lines may be selected and marked as **Picking**. Marking a line as **Picking** is a way to indicate that the picking work is already being performed on a line. This prevents two workers from attempting to pick the same order lines at the same time.  
+After an order has been accepted, lines can be selected and marked as **Picking**. Marking a line as **Picking** is a way to indicate that the picking work is already being performed on a line. This prevents two workers from attempting to pick the same order lines at the same time.  
 
 **Action: Print picking list**
 
@@ -117,15 +117,15 @@ If lines are selected and a picking list is printed for those lines, they are au
 
 After the physical picking process has been performed, lines can be marked as **Picked**. Selecting a line and marking it as **Picked** performs a real-time call to update the order line in Dynamics 365 for Retail. After the line has been marked as **Picked** at the point of sale, the status in the back office is also updated to **Picked** and inventory transactions reflect that the specified quantity has been decremented.
 
-When orders are processed over time, partial quantities may be processed for a specific line. If a line is selected and the action **Mark as picked** is taken, and the quantity is greater than one, the user is prompted for the quantity. The remaining quantity to be picked is auto-filled. If less than the remaining quantity is specified, the status of the line becomes **Partially picked**. When the order line is updated in the back office, it will also reflect the partially picked status and the quantity entered by the user is used for the inventory update. 
+When orders are processed over time, partial quantities can be processed for a specific line. If a line is selected and the action **Mark as picked** is taken, and the quantity is greater than one, the user is prompted for the quantity. The remaining quantity to be picked is auto-filled. If less than the remaining quantity is specified, the status of the line becomes **Partially picked**. When the order line is updated in the back office, it will also reflect the partially picked status and the quantity entered by the user is used for the inventory update. 
 
 If an order line is picked in error, the unpick process must be performed on the order line in the back office. There is currently no unpick action supported at the point of sale. 
 
-Orders lines from different orders may selected and marked as **Picking**, printed on the same pick list, or marked as **Picked**. 
+Orders lines from different orders can be selected and marked as **Picking**, printed on the same pick list, or marked as **Picked**. 
 
 ### Pack
 
-Order lines may be packed at any point after the order line has been accepted. 
+Order lines can be packed at any point after the order line has been accepted. 
 
 **Action: Print packing slip**
 
@@ -149,7 +149,7 @@ Currently, the option to mark store pickup lines as **Packed** is disabled. This
 
 ### Pick up
 
-Orders for store pickup may be directly picked up once they are retrieved in the point of sale. Store pick up orders are not subject to
+Orders for store pickup can be directly picked up once they are retrieved in the point of sale. Store pick up orders are not subject to
 acceptance. 
 
 **Action: Pick up**
@@ -169,7 +169,7 @@ Only lines on the same order and with the same mode of delivery can be picked up
 
 ### Shipping
 
-Order lines to be shipped from the store can be processed through unified order fulfillment using the **Ship** action. If manual order line acceptance is configured at the channel level, orders must be accepted prior to shipping. After an order line has been accepted and has a **Pending** or other status, lines may be shipped. 
+Order lines to be shipped from the store can be processed through unified order fulfillment using the **Ship** action. If manual order line acceptance is configured at the channel level, orders must be accepted prior to shipping. After an order line has been accepted and has a **Pending** or other status, lines can be shipped. 
 
 **Action: Ship**
 
@@ -180,11 +180,11 @@ Lines shipped from unified order fulfillment are invoiced from the back office s
 
 Order lines that have been fully shipped no longer appear in unified order fulfillment. Partially shipped lines will continue to appear in unified order fulfillment until they have been shipped in full. 
 
-Only lines from the same order may be shipped at the same time. If the lines from the same order have different modes of deliver, they may still be selected for shipping at the same time. 
+Only lines from the same order can be shipped at the same time. If the lines from the same order have different modes of deliver, they can still be selected for shipping at the same time. 
 
 ### Reject
 
-Lines or partial lines may be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines may only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. 
+Lines or partial lines can be rejected. This allows them to be reassigned from the back office to another store or warehouse. Lines can only be rejected if they have not yet been picked or packed. To reject a line that has already been picked or packed, that line must be unpicked or unpacked from the back office. 
 
 **Action: Reject**
 
@@ -195,13 +195,13 @@ The rejected order lines can be viewed from the **Sales order processing and inq
 
 ## Line quantity tracking
 
-A single order line of quantity greater than one may be processed over time, resulting in multiple sub states for order lines. For example, if a builder has a project that required 500 boards, but the builder will only pick up or have a few boards delivered at a time over the course of the project, there could be quantities that are being picked, packed, and shipped at the same time. 
+A single order line of quantity greater than one can be processed over time, resulting in multiple sub states for order lines. For example, if a builder has a project that required 500 boards, but the builder will only pick up or have a few boards delivered at a time over the course of the project, there could be quantities that are being picked, packed, and shipped at the same time. 
 
 Any time a line is selected, the remaining amount for the line will be auto-filled to assume that the remaining quantity is being processed. Using the above example, if 200 boards have already been picked and the line for boards is selected for picking, the remaining quantity of 300 will be automatically filled in the quantity. The same is true if 200 boards have already been invoiced. In that case, only the remaining quantity will be auto filled. 
 
 Continuing with the above example, if 200 boards are marked as packed and shipping is selected, the full amount of 500 will be autofilled. If only 200 boards are shipped, the system will assume that the previously packed boards are being shipped and the packed quantity will be decremented. If 201 boards are shipped, the packed boards are first decremented with the remaining single board being decremented from the quantity remaining. 
 
-## Line statuses explained
+## Line statuses
 
 Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through **Retail** > **Customers** > **All customer orders**. Select the **Order ID** to view order details. From order details select the **Sales order** tab, then select **Detailed status** under the **View** subheader. 
 
