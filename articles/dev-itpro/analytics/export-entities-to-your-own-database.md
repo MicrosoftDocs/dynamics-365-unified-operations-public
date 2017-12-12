@@ -3,9 +3,9 @@
 
 title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
-author: MilindaV2
+author: SunilGarg
 manager: AnnBe
-ms.date: 10/16/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,17 +13,17 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope:  Operations 
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: milindav
+# ms.search.industry:
+ms.author: sunilg
 ms.search.validFrom: 2016-08-30 
 ms.dyn365.ops.version: Platform update 2 
 ---
@@ -38,7 +38,7 @@ The BYOD feature lets administrators configure their own database, and then expo
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
 - Export either all the records (*full push*) or only the records that have changed (*incremental push*).
-- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable recurring exports.
+- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
 ## Entity store or BYOD?
@@ -155,15 +155,11 @@ If you select to do an incremental push, whenever a new record is inserted, or a
 
 Full push truncates the table and inserts all the records from the selected entity.
 
-You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a recurring basis by selecting the **Create recurring data job** option.
+You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
 ### Known limitations
 
-In Platform update 8, the BYOD feature has several known limitations.
-
-#### Incremental push doesn't propagate records that have been deleted in the source
-
-If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database. If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.
+The BYOD feature has the following limitations.
 
 #### Export data projects are specific to a single legal entity
 
