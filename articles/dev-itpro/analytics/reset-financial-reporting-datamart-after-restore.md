@@ -5,7 +5,7 @@ title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart.
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,7 +60,7 @@ The data mart reset should be done only during times when the amount of processi
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
-[![Reset Data Mart dialog box](./media/Statistics.png)](./media/Statistics.png)
+[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### Integration attempts
 
@@ -88,8 +88,10 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Restore database** – The Finance and Operations database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
+[![Reset data mart](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Verify that all existing tasks have finished integrating before you complete the steps. You can view the status of the integration by selecting **Tools** &gt; **Integration status**.
+> Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
 
 #### Clear users and companies
 
@@ -99,7 +101,10 @@ When you're ready to start the reset process, select **OK**. You're prompted to 
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/Integration.png)](./media/Integration.png)
+[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says “Integration complete” in the bottom-left corner.
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
 
