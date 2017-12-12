@@ -88,3 +88,13 @@ To use the Support tool, you must have previously created a project in Lifecycle
     -   You receive an email message from the Microsoft Support Engineer who is working on your case. 
 
 
+## Manage support plans
+If you have purchased support plans, you will need to add your purchased support plans to LCS the **first time** you submit a support ticket. 
+
+1. From the **Submitted to Microsoft** tab, click the **Manage support plans** button. 
+
+   ![Manage support plans](media/SupportManagePlans.png)
+   
+2. In the **Manage support plans** slide, click **Add contract** to enter the **Access ID** and **Password/Contract ID** to add - contract.
+
+   ![Add contracts](media/SupportAddPlans.png) 
