@@ -166,8 +166,8 @@ The **Total records exported** column shows the total count of records that were
 
 The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank.
 
-### Http Vs Https
-It is known that the dequeue API in recurring integrations returns http instead of https. This behavior is observed in D365FO environments that has a load balancer in place like, in a production environment. This is not observed on a one box environment. The recommended way to handle this is by changing the Uri scheme to https in the middleware application that is trying to dequeue from D365FO.
+### Http vs Https
+The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in Finance and Operations environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from Finance and Operations.
 
 
 ![Batch job status](./media/show-batch-status.png)
