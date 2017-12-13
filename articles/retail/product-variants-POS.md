@@ -28,9 +28,9 @@ The locations list is comprised of two types of entities:
 
 - **Distribution centers** - These types are configurable in Dynamics 365 for Retail but we show inventory availability information only for the **Standard/Default type** of Distribution centers. 
 > [!NOTE]
-> Inventory availability information is not displayed for in POS for Transit, Quarantine & GoodsInRoute_RU type of warehouses.
+> Inventory availability information is not displayed for POS for Transit, Quarantine, and Goods in Route type of warehouses.
 
-On the **Inventory lookup** page, in addition to the current quantity on hand, reserved, and ordered, the future available to promise (ATP) quantities can be viewed for each store. To do view this information, select the store that you want to view the ATP for and then click **Show store availability**.
+On the **Inventory lookup** page, in addition to the current quantity on hand, reserved, and ordered, future available to promise (ATP) quantities can be viewed for each store. To do view this information, select the store that you want to view the ATP for and then click **Show store availability**.
 
 ![ATP](media/ATP.png)
 
@@ -40,17 +40,17 @@ There are two ways to navigate to the **Dimension based matrix** view from the f
    - **Product details** page
    - **Inventory lookup** page
 
-You would notice a new control available on the app-bar titled as **View all variants**. And this button is active/available only for an item **(Product master)** with product variants. 
+The **View all variants** button on the app bar is available only for an item product master with product variants. 
 > [!NOTE]
-> The **View all variants** button on the app bar is inactive/not-available for stand-alone products or kits.*)
+> The **View all variants** button on the app bar is not available for stand-alone products or kits.
 
 ![StandardViewToMatrix](media/StandardToMatrix.png)
 
-Click **View all variants** from *Product details page* of a **product master** or from *Inventory look up page* without selecting a location user shall be navigated to **Dimension based matrix view** showcasing inventory availability information for all variants of an entered product for *current store*.
+Click **View all variants** on the **Product details** page of a product master or from the **Inventory lookup** page, without selecting a location, go to the **Dimension based matrix** view to view the inventory availability information for all variants of a product for the current store.
 
 ![InventoryDimensionMatrixView](media/Matrix.png)
 > [!NOTE]
-> The display order of dimensions is alphabetic - that's because the display order for the dimensions on this product were not configured.*
+> The display order of dimensions is alphabetic because the display order for the dimensions on this product were not configured.
 
 There are various kind of variant tiles, as noted in the following table. 
 
@@ -65,7 +65,7 @@ You can also change the pivot for dimensions by selecting the dimension that you
 
 ![ChangingPivot](media/ChangePivot.png)
 > [!NOTE]
-> The display order of dimensions for this product is custom [non-alphabetic]. It's based on the dimension display order that is set in the back office.
+> The display order of dimensions for this product is custom (non-alphabetic). It's based on the dimension display order that is set in the back office.
 
 ![PivotChanged](media/PivotChanged.png)
 
