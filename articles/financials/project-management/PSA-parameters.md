@@ -36,14 +36,8 @@ ms.dyn365.ops.version: AX 7.0.0
 You can configure how data should be defaulted when integrating Project Service Automation with Finance and Operations. The following must 
 be set up for projects to be successfully synchronized from Project Service Automation in Finance and Operations.
 
-| **Tab**                      | **Field                            | Description                    |
+| **Tab**                      | **Field**                          | **Description**                    |
 |------------------------------|------------------------------------|--------------------------------|
-| **General**                  | Default project type               | Select how the Project type should default when projects are being
-synchronized from Project Service Automation if you have not provided a default value in the integration template. New projects synced 
-will have the project type set to this value and may be updated when the project contract lines are synchronized from Project Service
-Automation.               |
-| **Project group defaults**   | Project type | Click New to add a row where you can select the project type for which to set the 
-default project group. A specific project type can be selected only once in the configuration.              |
-|                              | Project group                       | Select the default project group for the specified project type. 
-When new projects are synced from Project Service Automation, the project group will be defaulted based on the project type if you have
-not provided a default value in the integration template.  |
+| **General**                  | Default project type               | Select how the Project type should default when projects are being synchronized from Project Service Automation if you have not provided a default value in the integration template. New projects synced will have the project type set to this value and may be updated when the project contract lines are synchronized from Project Service Automation.               |
+| **Project group defaults**   | Project type | Click New to add a row where you can select the project type for which to set the default project group. A specific project type can be selected only once in the configuration.              |
+|                              | Project group                       | Select the default project group for the specified project type. When new projects are synced from Project Service Automation, the project group will be defaulted based on the project type if you have not provided a default value in the integration template.  |
