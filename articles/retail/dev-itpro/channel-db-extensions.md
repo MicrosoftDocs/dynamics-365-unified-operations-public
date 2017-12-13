@@ -35,7 +35,7 @@ The channel database (channel DB) holds transactional and master data from one o
 
 In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Before going to the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions:
+Before going to the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions, also its recommended to apply the application update 5 for Microsoft Dynamics 365 for Finance and Operation binary hotfix or Application Update 5 for Dynamics 365 for Retail (depends on the type of environment) before doing the DB customization because we did some improvements to fix the issues happening during upgrade if you have any customizations:
 
 ## Ext Schema
 
