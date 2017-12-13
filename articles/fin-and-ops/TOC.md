@@ -1555,7 +1555,9 @@
 #### Operate production jobs
 ##### [Create production orders](../supply-chain/production-control/create-production-orders.md)
 ##### [Release production orders](../supply-chain/production-control/release-production-orders.md)
-##### [Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Visibility into material exceptions](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Release BOM and formula lines to the warehouse](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Register material consumption using a mobile device](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Control raw material consumption by using flushing principles](../supply-chain/production-control/flushing-principles.md) 
 ##### [Cross-docking from production orders to outbound docks](../supply-chain/production-control/cross-docking-opportunities.md)
