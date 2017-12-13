@@ -1442,6 +1442,7 @@
 #### [Set up and maintain vendor collaboration](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Manage vendor collaboration users](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Set up vendor accounts](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Vendor request configurations](../supply-chain/procurement/vendor-request-configurations.md)
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
@@ -1555,7 +1556,9 @@
 #### Operate production jobs
 ##### [Create production orders](../supply-chain/production-control/create-production-orders.md)
 ##### [Release production orders](../supply-chain/production-control/release-production-orders.md)
-##### [Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Visibility into material exceptions](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Release BOM and formula lines to the warehouse](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Register material consumption using a mobile device](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Control raw material consumption by using flushing principles](../supply-chain/production-control/flushing-principles.md) 
 ##### [Cross-docking from production orders to outbound docks](../supply-chain/production-control/cross-docking-opportunities.md)
