@@ -19,7 +19,7 @@ audience: IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.search.region: Global
+ms.search.region: India
 # ms.search.industry: 
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
@@ -273,25 +273,26 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 10. Enter a description such as **UTGST**, and then click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
-### Task 4: Change the data model of Tax (India GST Contoso)
+### Change the data model of Tax (India GST Contoso)
 
-1. Go to the **Tax (India GST Contoso)** configuration that you created in [Scenario 1: Task 1.2](#task-12-create-a-new-tax-document-that-is-derived-from-tax-india-gst), and then click **Designer**.
+1. Go to the **Tax (India GST Contoso)** configuration and then click **Designer**.
 2. Click **Tax document** and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
 
 	![Tax document](media/gte-tax-document-designer.png)
 
 3. Click **Save** to save the configuration.
 
-### Task 5: Change the applicability of SGST
+### Change the applicability of SGST
 
 1. Go to the **Tax (India GST Contoso)** configuration, select the version that has a status of **Draft**, and then click **Designer**.
-2. Go to **Tax document** > **Header** > **Lines** > **GST** > **SGST**, and then click the **Lookup** tab.
+2. Go to **Tax document** > **Header** > **Lines** > **GST** > **SGST**, and then click the **Lookups** tab.
 3. Click **Columns**.
-4. Select **IntraStateInUnionTerritory** as the lookup column, and then click the right arrow button.
-5. For the **IntraStateInUnionTerritory** column, select **No**.
-6. Click **Save** to save the configuration.
+4. Select **IntraStateInUnionTerritory** from the **Available columns** list, and then click the right arrow button to move the column to the **Selected columns** list.
+5. Click **OK**.
+6. For the **IntraStateInUnionTerritory** column, select **No**.
+7. Click **Save** to save the configuration.
 
-### Task 6: Configure the UTGST tax component
+### Configure the UTGST tax component
 
 1. Add the UTGST tax component.
 	1. Navigate to **Tax document** > **Header** > **Lines** > **GST**, click **Add**, and then select **Tax component**.
