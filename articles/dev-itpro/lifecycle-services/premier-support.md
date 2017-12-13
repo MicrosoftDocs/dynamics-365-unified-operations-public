@@ -2,10 +2,10 @@
 # required metadata
 
 title: Log premier support tickets using Microsoft Dynamics Lifecycle Services
-description: This topic shows how Microsoft Premier customers can submit a support incident for Microsoft Dynamics 365 for Finance and Operations, Enterprise editionby using Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic shows how Microsoft Premier customers can submit a support incident for Dynamics 365 for Finance and Operations, Enterprise edition by using Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -28,5 +28,5 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-The content of this page has been removed.  Please see [Manage Finance and Operation Support experience](../cloud-powered-support-lcs.md)
+The content of this page has been removed. For more information, see [Manage Finance and Operation Support experience](../cloud-powered-support-lcs.md).
 
