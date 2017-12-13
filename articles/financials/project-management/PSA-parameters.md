@@ -2,8 +2,7 @@
 # required metadata
 
 title: Project Service Automation integration parameters
-description: You can configure how data should default when integrating Project Service Automation with Dynamics 365 for Finance
-and Operations, Enterprise edition.
+description: You can configure how data should default when integrating Project Service Automation with Dynamics 365 for Finance and Operations, Enterprise edition.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/13/2017
