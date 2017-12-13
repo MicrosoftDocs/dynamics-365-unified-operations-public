@@ -104,8 +104,8 @@ For UTGST, the following combinations of taxes can be applied for any transactio
 The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
 To support this scenario, you must complete the following tasks:
-1. [Create exstension configurations.](#create-extension-configurations)	
-2. [Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag.](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
+1. [Create extension configurations](#create-extension-configurations)	
+2. [Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
 3. [Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document)
 4. [Change the data model of Tax (India GST Contoso)](#change-the-data-model-of-tax-india-gst-contoso)
 5. [Change the applicability of State GST (SGST)](#change-the-applicability-of-sgst)
@@ -430,55 +430,61 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 
 ## Scenario 2: Using a Reference Model
 
-Per the Microsoft-provided configuration, the tax rate for the BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use a reference model to support the following scenario:
+Per the Microsoft-provided configuration, the tax rate for the BCD is determined by Preferential Party/Import Order/Import Custom Tariff Code/Export Order/Export Custom Tariff Code. We will use this scenario to explain how to use a reference model to support applying a different tax rate for the BCD on the import order of goods from difference countries/regions.
 
-- Apply a different tax rate for the BCD on the import order of goods from difference countries/regions.
+To support this scenario, you must complete the following tasks:
+1. [Create extension configurations](#create-extension-configurations)
+2. [Add a reference model for Country/Region of Origin](#add-reference-model-for-countryregion-of-origin)
+3. [Complete data mapping for the reference model](#complete-data-mapping-for-the-reference-model)
+4. [Link the reference model to field in taxable document](#link-the-reference-model-to-a-field-in-the-taxable-document)
+5. [Change the lookup of the BCD tax rate](#change-the-lookup-of-the-bcd-tax-rate)
+6. [Complete the tax document configuration](#complete-the-tax-document-configuration)
+7. [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company)
 
-### Task 1: Create extension configuration
+### Add Reference model for Country/Region of Origin
 
-Complete the steps in [Scenario 1: Task 1](#task-1-create-extension-configurations).
-
-### Task 2: Add Reference model for Country/Region of Origin
-
-1. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
-2. Click the elipses button, then click **Reference model** to change the view to Reference model, so you can view all the available reference models.
-3. Click **New** to add a new reference model.
+1. On the **Localization configurations** workspace (**Organization administration** > **Workspaces** > **Electronic reporting**), click **Tax configurations**.
+2. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+3. Click **...** > **Reference model** to change the view so that you can view all the available reference models.
+4. Click **New** to add a new reference model.
     -	**Name:** Country of Origin
     -	**Node type:** Model root
-4. Click **Add**.
-5. Highlight **Country of Origin**, click **New** to add new reference model.
+5. Click **Add**.
+6. Highlight **Country of Origin**, click **New** to add new reference model.
     -   **Name:** Countries of Origin
     -   **Node type:** Child of an active node
     -   **Item type:** Record list
-6. Click **Add**.
-7. Highlight **Countries of Origin**, click **New** to add new reference model.
+7. Click **Add**.
+8. Highlight **Countries of Origin**, click **New** to add new reference model.
     -   **Name:** Country of Origin
     -   **Node type:** Child of an active node
     -   **Item type:** String
-8. Click **Add**.
-9. Highlight **Country of Origin**, click **Natural key**.
-10. Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the **Natural key**.
-11. If there are any errors, open the designer, click **Validate**, and fix the errors.
+9. Click **Add**.
+10. Highlight **Country of Origin**, click **Natural key**.
+11. Choose **Country of Origin\\Countries of Origin\\Country of Origin** as the **Natural key**.
+12. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
-After the status is updated to **Complete**, the configuration is ready for deployment.
+After you update the status to be **Complete**, the configuration is ready for deployment.
 
-### Task 3: Complete data mapping for the reference model
-1. In the designer of **Taxable Document (India Contoso)**, and then click **Map model to datasource**.
-2. Add a new model mapping for the reference model Country of Origin
+### Complete data mapping for the reference model
+1. On the **Localization configurations** workspace (**Organization administration** > **Workspaces** > **Electronic reporting**), click **Tax configurations**.
+2. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+3. Click **Map model to datasource**.
+4. Select Country of Origin and then click **Add**.
 ![Add model mapping](media/gte-extension-map-reference-model.png)
-3. Open the designer of the model mapping
+5. With **Country of Origin** selected in the list, click **Designer** to open the designer of the model mapping.
 ![Model mapping designer](media/gte-extension-designer-mapping-reference-model.png)
-4. Add table records **LogisticsAddressCountryRegion** as a root **DATA SOURCES**
+6. Add table records **LogisticsAddressCountryRegion** as a root **DATA SOURCES**
 ![Add table records](media/gte-extension-add-table-records.png)
-5.Bind the table
+7.Bind the table
 ![Bind table](media/gte-extension-bind-table.png)
-6.Bind the field
+8.Bind the field
 ![Bind field](media/gte-extension-bind-field.png)
-7.Click **Save** and close the page
+9.Click **Save**.
 
-### Task 4: Link the reference model to field in taxable document
+### Link the reference model to a field in the taxable document
 
-1. Click the elipses button, then click **Taxable document** to change the view to Taxable document.
+1. Click **...** > **Taxable document** to change the view to Taxable document.
 2. Navigate to **Taxable document** > **Header** > **Lines** > **GST** > **Country/Region of Origin**.
 3. On the **Node** FastTab, click **Select reference model**. 
 4. Choose **Country of Origin** for the reference model.
@@ -490,7 +496,7 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
-### Task 5: Change the lookup of the BCD tax rate
+### Change the lookup of the BCD tax rate
 
 1.  Go to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
 2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
@@ -499,8 +505,3 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
-### Task 6: Complete the tax document configuration
-Complete the steps in [Scenario 1: Task 8](task-8-complete-the-tax-document-configuration).
-
-### Task 7: Import the configuration and deploy it to a specific Company
-Complete the steps in [Scenario 1: Task 9](#task-9-import-the-configuration-and-deploy-it-to-a-specific-company).
