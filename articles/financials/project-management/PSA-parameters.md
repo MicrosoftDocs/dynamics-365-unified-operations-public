@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project Service Automation integration parameters
-description: You can configure how data should be defaulted when integrating Project Service Automation Microsoft Dynamics 365 for Finance
+description: You can configure how data should default when integrating Project Service Automation Microsoft Dynamics 365 for Finance
 and Operations, Enterprise edition.
 author: KimANelson
 manager: AnnBe
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 # Project Service Automation integration parameters
 
-You can configure how data should be defaulted when integrating Project Service Automation with Finance and Operations. The following must 
-be set up for projects to be successfully synchronized from Project Service Automation in Finance and Operations.
+On the Project Service Automation integration parameters page, you can configure how data default when integrating Project Service Automation with Finance and Operations. The following must be set up for projects to be successfully synchronized from Project Service Automation in Finance and Operations.
 
 | **Tab**                      | **Field**                          | **Description**                    |
 |------------------------------|------------------------------------|--------------------------------|
