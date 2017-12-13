@@ -5,7 +5,7 @@ title: Manage Finance and Operations Support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,62 +42,61 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Support menu](media/CPS1.png)
 
-2.  From the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+2.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
 
 ![Support button](media/CPS2.png)
 
-3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. Enter a description or by object path in the Application object Tree (AOT) of the issue and click the search icon.
+3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. You ccan search by description or object path in the Application object Tree (AOT) of the issue. Click the Search icon.
 
 ![Issue search](media/CPS3.png)
 
-4.  If you cannot find an existing solution to your issue from the Issue search tool, click **Create incident** to create a new incident.
+4.  If you can't find an existing solution to your issue, click **Create incident** to create a new incident.
 
 ![Create incident](media/CPS4.png)
 
-5.  Select issue **category**.
+5.  Select an issue category.
 
 ![Category](media/CPS5.png)
 
-6.  Select issue **area**.
+6.  Select an issue area.
 
 ![Area](media/CPS6.png)
 
-7. In the **Describe your issue** window -  
+7. In the **Describe your issue** window:
+
  - Toggle **Yes** if the issue occure in an environment and select the environment name.  
- - Enter a short description of your issue in **Title**
- - Provide issue detail and repo steps
- - If applicable, enter **error message**. 
- - It’s also a good idea to attach screenshots that illustrate the problem, to do this, use **Attach file from computer**.
+ - Enter a short description of your issue in the **Title** field.
+ - Provide details about the issue detail and rero steps.
+ - If applicable, enter an error message. 
+ - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
  ![Detail](media/CPS7.png)
  
-8. Enter the **primary contact information**. These contact details will be used by the customer support to contact you about the case.
+8. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
 
 ![Contact info](media/CPS8.png)
 
-9. Select **support contract** and **severity level**. 
+9. Select the support contract and the severity level. 
   
-  - Support contract for on-premises products with limited incident counts, we show your available support contract(s), and you choose which support option to use if you have multiple tier support contracts.  
-  - Support contract for cloud products have unlimited incidents, therefore, we show your the best available support plan(s). 
+  - Support contracts for on-premises products have limited incident counts. From the list of available support contracts, select the support option to use if you have multiple tier support contracts.  
+  - Support contracts for cloud products have unlimited incidents, therefore, we show your the best available support plans. 
 
 ![Contract and severity](media/CPS9.png)
 
-10. Click **Submit** to complete. 
+10. Click **Submit**. 
 
 ![Completed](media/CPS10.png)
 
-After you click **Submit**, the following steps occur:
--   An incident is created and added to the Incidents list.
--   You receive an email message from the Microsoft Support Engineer who is working on your case. 
+After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 
 
 ## Manage support plans
-If you have purchased support plan(s), you will need to add the new purchased support contract(s) to LCS Support before creating a new ticket.  This is a one time setup, you won't need to add it again the next time you create a ticket.    
+If you purchased a support plan, you will need to add it to LCS Support before you create a new ticket.    
 
-1. From the **Submitted to Microsoft** tab, click the **Manage support plans** button. 
+1. From the **Submitted to Microsoft** tab, click **Manage support plans**. 
 
    ![Manage support plans](media/SupportManagePlans.png)
    
-2. In the **Manage support plans** slide, click **Add contract** to enter the **Access ID** and **Password/Contract ID** to add - contract.
+2. In the **Manage support plans** slide, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
 
    ![Add contracts](media/SupportAddPlans.png) 
