@@ -53,8 +53,7 @@ The following template and underlying task are used to synchronize project contr
 - **Name of the template in Data integration:** Project contract lines (PSA to Fin and Ops)
 - **Name of the task in the project:** ContractLine
 
-Before synchronization of project contract lines can occur, you must synchronize projects. For more information, see <TO DO – add link to Projects topic>.
-
+Before synchronization of project contract lines can occur, you must synchronize projects. For more information, see Projects.
 ## Entity set
 
 | Project Service Automation | Finance and Operations                       |
