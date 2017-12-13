@@ -2,31 +2,31 @@
 ## Inventory lookup on POS 
 
 
-Inventory lookup on POS helps retailers achieve real-time operational excellence and insights by connecting stores, POS, and the back office. It provides an accurate real-time view of products inventory across various stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time. 
+Inventory lookup on POS helps retailers achieve real-time operational excellence and insights by connecting stores, POS, and the back office. It provides an accurate real-time view of products inventory across stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time. 
 
-An accurate real-time inventory view across organization helps store-associates to provide timely, elevated customer service. The moment that matters most is the when the customer is ready to make a purchase decision. Real-time inventory information at the fingertips of cashiers the in store, empowers them to be able to accurately promise product delivery and pick up. 
+An accurate real-time inventory view across an organization helps store-associates to provide timely, elevated customer service. The moment that matters most is when the customer is ready to make a purchase decision. It's important for real-time inventory information to be at the fingertips of cashiers in the store, to empower cashiers to be able to accurately promise product delivery and pick up. 
 
-Go to the Retail Modern POS or Retail Cloud POS home page to open the **Inventory lookup** page.
+Go to the Retail Modern POS workspace or Retail Cloud POS workspace to open the **Inventory lookup** page.
 
 ![POS home page](media/POSHomepage.png)
 
-The **Inventory lookup** page allows you to enter a product on the number pad so you can view quantity on hand for multiple stores and warehouses. 
+The **Inventory lookup** page allows you to enter a product on the numeric keypad so you can view quantity on hand for multiple stores and warehouses. 
 
 ![Standard inventory look up](media/InventoryLookUp.png)
 
 There are also values shown for **Reserved** and **Ordered** for each location. 
 
- - **Reserved quantity** - Refers to the *'Physical reserved'* value from back-office for a product number at the given location.
+ - **Reserved quantity** - Refers to the Physical reserved value from back office for a product number at the given location.
 
- - **Ordered quantity** - Refers to the *'Ordered in total'* value from back-office for a product number at the given location. 
+ - **Ordered quantity** - Refers to the Ordered in total value from back office for a product number at the given location. 
 
 ### What are the locations for which inventory availability information is shown
 
-The locations list is comprised of two types of entities: **Retail stores** and **Distribution centers**. 
+The locations list is comprised of two types of entities:
 
- - **Retail stores** - This is the list of stores that are configured using **Store-locator group** for the current store in the headquarters. 
+ - **Retail stores** - This is the list of stores that are configured using the **Store-locator group** for the current store in the headquarters. 
 
-- **Distribution centers** - These different types are configurable in Dynamics 365 for Retail but we show inventory availability information only for the **Standard/Default type** of Distribution centers. *(Note - We do not show inventory availability information in POS for Transit, Quarantine & GoodsInRoute_RU type of warehouses.)*
+- **Distribution centers** - These types are configurable in Dynamics 365 for Retail but we show inventory availability information only for the **Standard/Default type** of Distribution centers. *(Note - We do not show inventory availability information in POS for Transit, Quarantine & GoodsInRoute_RU type of warehouses.)*
 
 On the **Inventory lookup** page, in addition to the *current quantity on hand, reserved & ordered*, the future **available to promise (ATP) quantities** can be viewed for each individual store. To do so, select the store that you want to view the ATP for and then click **Show store availability**.
 
@@ -34,18 +34,21 @@ On the **Inventory lookup** page, in addition to the *current quantity on hand, 
 
 ### To open the **Dimension based matrix view** showing all variants
 
-There are two ways to navigate to the **'Dimension based matrix view'** from the following pages: 
+There are two ways to navigate to the **Dimension based matrix view** from the following pages: 
    - **Product details** page
    - **Inventory lookup** page
 
-You would notice a new control available on the app-bar titled as **'View all variants'**. And this button is active/available only for an item **(Product master)** with product variants. (*Note - 'View all variants' button in app-bar is inactive/ not-available for standard standalone products or kits.*)
+You would notice a new control available on the app-bar titled as **View all variants**. And this button is active/available only for an item **(Product master)** with product variants. 
+> [!NOTE]
+> **View all variants** button in app-bar is inactive/ not-available for standard standalone products or kits.*)
 
 ![StandardViewToMatrix](media/StandardToMatrix.png)
 
 Upon clicking **'View all variants'** from *'Product details page'* of a **product master** or from *'Inventory look up page* without selecting a location' user shall be navigated to **'Dimension based matrix view'** showcasing inventory availability information for all variants of an entered product for *current store*.
 
 ![InventoryDimensionMatrixView](media/Matrix.png)
-(*Note - The display order of dimensions is alphabetic - that's because the display order for the dimensions on this product were not configured)*
+> [!NOTE]
+> The display order of dimensions is alphabetic - that's because the display order for the dimensions on this product were not configured.*
 
 And as you may notice, there are various kind of variant tiles 
 
@@ -59,7 +62,8 @@ And as you may notice, there are various kind of variant tiles
 You can also change the pivot for dimensions by selecting the dimension that you would like to swap.
 
 ![ChangingPivot](media/ChangePivot.png)
-*(Note: The display order of dimensions for this product is custom [non-alphabetic], it's based on the dimension display order that is set in the back office.)*
+> [!NOTE]
+> The display order of dimensions for this product is custom [non-alphabetic], it's based on the dimension display order that is set in the back office.*
 
 ![PivotChanged](media/PivotChanged.png)
 
@@ -70,7 +74,8 @@ Additionally, to boost a a store associates productivity there are additional ac
 - Provide the customer with available-to-promise information for an individual product variant at a specific location. 
 
 ![VariantTileActions](media/VariantActions.png)
-(*Note - The display order of dimensions is alphabetic because the display order for the dimensions on this product were not configured.*) 
+> [!NOTE]
+> The display order of dimensions is alphabetic because the display order for the dimensions on this product were not configured. 
 
 | **Actions**              | **Description**                                                                                                                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
