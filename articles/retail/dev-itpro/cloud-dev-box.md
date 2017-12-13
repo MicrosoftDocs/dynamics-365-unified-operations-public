@@ -45,5 +45,5 @@ Because the developer cloud VMs do not have admin access to the VMs, Modern POS 
     1. Close Visual Studio.
     2. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files, because you will copy the **applicationhost.config** to a new location in step 4.
     3. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
-    4. Replace the **applicationhost.config** file in the recreated folder with the **applicationhost.config** file in the folder you renamed in step 2.
+    4. Copy the **applicationhost.config** file from the folder you renamed in step 2 to the folder created in step 4. 
 
