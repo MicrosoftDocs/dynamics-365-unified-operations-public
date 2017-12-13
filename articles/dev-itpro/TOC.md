@@ -600,6 +600,7 @@
 ## [Issue search](lifecycle-services/issue-search-lcs.md)
 ## [Configuration manager](lifecycle-services/configuration-manager-lcs.md)
 ### [Set up Configuration manager](lifecycle-services/set-up-configuration-manager-lcs.md)
+### [Update the local agent](lifecycle-services/updatelocal-agent.md)
 ## [Configure the code upgrade service](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Create a methodology ](lifecycle-services/create-methodology.md)
 ## [Business process modeler](lifecycle-services/bpm-overview.md)
