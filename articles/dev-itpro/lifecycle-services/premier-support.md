@@ -28,5 +28,5 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-The content of this page has been removed. For more information, see [Manage Finance and Operation Support experience](../cloud-powered-support-lcs.md).
+The content of this page has been removed. For more information, see [Manage Finance and Operation Support experience](cloud-powered-support-lcs.md).
 
