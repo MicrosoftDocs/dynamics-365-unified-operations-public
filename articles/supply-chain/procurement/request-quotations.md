@@ -50,7 +50,7 @@ You can create an RFQ from planned orders, from a purchase requisition, or by ma
 
 After you prepare the RFQ case and add vendors, select **Send** on the RFQ case. An RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the Print management settings for the Send action so that it either prints a report for each vendor to an archive or sends a report to each vendor's email address. In addition, you can use the RFQ journal for each vendor to generate a report that you can send or resend to the vendor later. You can also configure the Send action so that it generates a reply sheet that the vendor can fill in.
 
-This topic covers the process for handling RFQs when vendor collaboration isn't used. If your system is set up for vendor collaboration, vendors can enter bids directly in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. For more information, see [Request for quotations](vendor-collaboration-work-customers-dynamics-365-operations.md).
+This topic covers the process for handling RFQs when vendor collaboration isn't used. If your system is set up for vendor collaboration, vendors can enter bids directly in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. For more information, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
  
 If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished by using the two amendment actions: Create and Finalize.
 
