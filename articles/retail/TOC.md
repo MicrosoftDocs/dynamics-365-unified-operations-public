@@ -262,7 +262,7 @@
 ### [Retail Modern POS triggers and printing](dev-itpro/pos-trigger-printing.md)
 ### [Add a custom control to a Retail Modern POS non-screen designer-based view](dev-itpro/pos-control-non-screen.md)
 ### [Generate the Retail proxy for POS and e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
-
+### [Configuration steps for Retail developers working on cloud-hosted development boxes](dev-itpro/cloud-dev-box.md)
 
 ## Commerce runtime
 ### [Loyalty extension](dev-itpro/retail-sdk/loyalty-extension-sample.md)
