@@ -1442,6 +1442,7 @@
 #### [Set up and maintain vendor collaboration](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Manage vendor collaboration users](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Set up vendor accounts](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Vendor request configurations](../supply-chain/procurement/vendor-request-configurations.md)
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
