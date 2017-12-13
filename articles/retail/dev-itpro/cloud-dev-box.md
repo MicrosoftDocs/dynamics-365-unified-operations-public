@@ -43,7 +43,7 @@ Because developer cloud virtual machine (VMs) do not have admin access to the VM
     ``` 
     To resolve this issue, follow these steps:
     1. Close Visual Studio.
-    2. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in step 4.
+    2. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in step *iv*.
     3. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
-    4. Copy the **applicationhost.config** file from the folder that you renamed in step 2, to the folder created in step 3. 
+    4. Copy the **applicationhost.config** file from the folder that you renamed in step *ii*, to the folder created in step *iii*. 
 
