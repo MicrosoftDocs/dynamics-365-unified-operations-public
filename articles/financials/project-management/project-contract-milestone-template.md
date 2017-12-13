@@ -5,7 +5,7 @@ title: Synchronize project contract line milestones from Project Service Automat
 description: This topic describes the templates and underlying tasks that are used to synchronize project contract line milestones directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: KimANelson
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: knelson
-ms.search.validFrom: 2016-11-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2017-12-13
+ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
@@ -54,7 +54,7 @@ The following template and underlying task are used to synchronize project contr
 - **Name of the template in Data integration:** Project contract line milestones (PSA to Fin and Ops)
 - **Name of the task in the project:** Milestone
 
-Before synchronization of project contract line milestones can occur, you must synchronize project contract lines. For more information, see <TO DO – add link to Project contract lines topic>.
+Before synchronization of project contract line milestones can occur, you must synchronize project contract lines. For more information, see Project contract lines.
 
 ## Entity set
 
@@ -68,7 +68,7 @@ Project contract line milestones are managed in Project Service Automation, and 
 
 ## Preconditions and mapping setup
 
-Before synchronization of project contract line milestones can occur, you must synchronize project contract lines. For more information, see <TO DO – add link to Project contract lines topic>.
+Before synchronization of project contract line milestones can occur, you must synchronize project contract lines. For more information, see Project contract lines.
 
 ## Template mapping in Data integration
 
