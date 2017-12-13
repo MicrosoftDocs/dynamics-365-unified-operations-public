@@ -56,9 +56,9 @@ There are various kind of variant tiles, as noted in the following table.
 
 | **Variant tile on-hand value** | **Description**                                                                                                                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Numeric (>0)               | Indicates that a particular variant is released to the selected location, and you can perform additional actions in that individual cell.                                                               |
-| Numeric (= 0)              | Indicates that a particular variant is released to the selected location, and the item is not available in selected location, but you can perform additional actions in that cell. |
-| n/a or dead cell           | Indicates that a particular variant is not released to the selected location, and you cannot perform additional actions in that cell.                                                    |
+| Numeric (>0)               | Indicates that a variant is released to the selected location, and you can perform additional actions in that individual cell.                                                               |
+| Numeric (= 0)              | Indicates that a variant is released to the selected location, and the item is not available in selected location, but you can perform additional actions in that cell. |
+| n/a or dead cell           | Indicates that a variant is not released to the selected location, and you cannot perform additional actions in that cell.                                                    |
 
 
 You can also change the pivot for dimensions by selecting the dimension that you would like to swap.
@@ -69,7 +69,7 @@ You can also change the pivot for dimensions by selecting the dimension that you
 
 ![PivotChanged](media/PivotChanged.png)
 
-Additionally, to boost a a store associates productivity there are additional actions that can be performed from a product-dimension based matrix form of inventory lookup. For example, you can do the following: 
+Additionally, to boost a store associate's productivity there are additional actions that can be performed from a product-dimension based matrix form of inventory lookup. For example, you can do the following: 
  
 - Change the store location to look up inventory availability of all product variants at other locations. This include other stores in the store-locator group as well as standard/default types from the distribution center.
 - Sell an individual product variant to a customer using cash and carry, pick up at store, and ship to address. 
@@ -81,9 +81,9 @@ Additionally, to boost a a store associates productivity there are additional ac
 
 | **Actions**              | **Description**                                                                                                                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sell now             | Adds the selected item variant to the transaction and re-directs the user to the transaction screen. (Not available when the selected iocation is of type distribution center.)                                             |
+| Sell now             | Adds the selected item variant to the transaction and re-directs the user to the transaction screen. (Not available when the selected location is of type distribution center.)                                             |
 | Pick up in store     | Creates a customer order for that product variant to be picked up from the selected location and re-directs the user to the transaction screen. (Not available when the selected location is of type distribution center.)     |
 | Ship product         | Creates a customer order for the product variant to be shipped from the selected location and re-directs the user to the transaction screen.                                                                              |
 | Availability         | Shows the available to promise information (ATP) for the selected variant combination for the selected location.                                                                                                     |
-| Show all locations      | Switches the user to standard inventory look up view, highlighting inventory availability information for that particular item variant across all stores in the store-locator group and standard/default distribution centers. |
+| Show all locations      | Switches the user to standard inventory look up view, highlighting inventory availability information for that item variant across all stores in the store-locator group and standard/default distribution centers. |
 | View product details | Re-directs the user to the product details page of the associated product master.                                                                                                                                        |
