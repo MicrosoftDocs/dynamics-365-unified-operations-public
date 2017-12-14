@@ -1809,7 +1809,8 @@
 ### [Set up transportation constraints for an item](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Warehouse management](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Warehouse configuration](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Warehouse configuration](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Set up a warehouse by using a warehouse configuration template](../supply-chain/inventory/warehouse-template.md)
 #### [Control work by using work templates and location directives](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Unit of measure and stocking policies](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Warehouse Power BI content](../dev-itpro/analytics/warehouse-power-bi-content.md)
@@ -1818,7 +1819,6 @@
 ### [Warehouse work policies](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
-#### [Set up a warehouse by using a warehouse configuration template](../supply-chain/inventory/warehouse-template.md)
 ### Picking and packing
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
