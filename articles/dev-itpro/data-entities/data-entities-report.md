@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities report
-description: This topic points you to a report that lists the data entities that are available.
+title: Find information about standard data entities
+description: This topic describes how to get information about the standard data entities that are available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,20 +30,22 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Data entities report
+# Find information about standard data entities
 
 [!include[banner](../includes/banner.md)]
 
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.  
 
-This topic points you to a report that lists the data entities that are available.
+## Data entity templates
 
-A *data entity* is an abstraction from the physical implementation of database tables. For example, in normalized tables, a lot of the data for each customer might be stored in a customer table, and then the rest might be spread across a small set of related tables. In this case, the data entity for the customer concept appears as one de-normalized view, in which each row contains all the data from the customer table and its related tables. A data entity encapsulates a business concept into a format that makes development and integration easier. The abstracted nature of a data entity can simplify application development and customization. Later, the abstraction also insulates application code from the inevitable churn of the physical tables between versions. For more information about data entities, see [Data entities home page](data-entities.md).
+## Data entity reports
+Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep): 
+- **Data entities** (Analysis-AxDataEntitiesV2) lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
+- **Data entities fields** (Analysis-AxDataEntityFieldsV2) lists each field in a data entity, and the table that it originates from.
+- **Aggregate data entities** (Analysis-AxAggregateDataEntitiesV2) lists the aggregate data entities, and the fields that each contains. 
 
-## View the report
-The [Data entities report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
-
-## How the report is grouped
-The report is a Microsoft Excel file. For large reports, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+You may also find the Tables report of interest--it lists each table, and its table group. (Analysis-AxTablesReportV2).  
 
 
-
+## See also
+[Data entities home page](data-entities.md).
