@@ -108,12 +108,12 @@ For information about the new features included in each release, click the links
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
 ### Table 4: Downloadable virtual hardrive (VHD) releases
-The VHD releases listed below consist of application updates on the same platform update released on top of Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. 
+Use of the VHDs is subject to the [Software license terms](). 
 
-| Release           | VHD name   | VHD expiration date  | SLT expiration date   |
-|-------------------|----------------|---------------|-------------------|
-| Platform update 12 / Application release 7.2 | FinanceAndOperations-EEJuly2017wtihPlatUpdate12.vhd | May 24, 2018   | December 06, 2018   |
-| Platform update 12 / Application release 7.3 | FinandOps7.3withPlatUpdate12.vhd | June 05, 2018   | June 15, 2018   |
+| Release           | VHD name   | VHD expiration date  |
+|-------------------|----------------|---------------|
+| Platform update 12 / Application release 7.2 | FinanceAndOperations-EEJuly2017wtihPlatUpdate12.vhd | May 24, 2018   | 
+| Platform update 12 / Application release 7.3 | FinandOps7.3withPlatUpdate12.vhd | June 05, 2018   |
 
 ## Support matrix
 Platform updates are compatible with all application versions that are supported at the time of release.
