@@ -139,6 +139,31 @@ Use the following API.
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
     
+### API for getting message status
+The following API to get the status of a message is available as of hotfix XX of Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when enqueue is completed. If the message returns a failed status, the external integration app can be set to re-try or take another actions to recover.
+
+**Example**
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
+BODY
+{
+    "messageId":"<string>"
+}
+
+The following table lists the possible status values.
+
+| Value              | Meaning                                                                              |
+|----------------------|--------------------------------------------------------------------------------------|
+| Enqueued             | The file has been successfully enqueued to blob storage                              |
+| Dequeued             | The file has been successfully dequeued from blob storage                            |
+| Acked                | The exported file has been acknowledged to be downloaded by the external application |
+| Preprocessing        | The import/export operation is pre-processing the request                            |
+| Processing           | The import/export operation is in process                                            |
+| Processed            | The import/export operation completed successfully                                   |
+| PreProcessingError   | The import/export operation failed in the pre-processing stage                       |
+| ProcessedWithErrors  | The import/export operation completed with errors                                    |
+| PostProcessingFailed | the import/export operation failed during post-processing                            |
+
+    
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
