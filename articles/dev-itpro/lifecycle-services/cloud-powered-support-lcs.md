@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Finance and Operations Support experiences
-description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
+description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
 ms.date: 12/13/2017
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-To use the Support tool, you must have previously created a project in Lifecycle Services and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
+To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
 
 ## Open a new incident
-1.  From LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
+1.  In LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
 
 ![Support menu](media/CPS1.png)
 
@@ -46,7 +46,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Support button](media/CPS2.png)
 
-3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. You ccan search by description or object path in the Application object Tree (AOT) of the issue. Click the Search icon.
+3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. You can search by description or object path in the Application Object Tree (AOT) of the issue. Click the Search icon.
 
 ![Issue search](media/CPS3.png)
 
@@ -62,11 +62,11 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Area](media/CPS6.png)
 
-7. In the **Describe your issue** window:
+7. In the **Describe your issue** window, you need to do the following:
 
- - Toggle **Yes** if the issue occure in an environment and select the environment name.  
+ - Select **Yes** if the issue occured in an environment. Select the environment name.  
  - Enter a short description of your issue in the **Title** field.
- - Provide details about the issue detail and rero steps.
+ - Provide details about the issue detail and the steps needed to reproduce the error.
  - If applicable, enter an error message. 
  - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
@@ -79,7 +79,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
 9. Select the support contract and the severity level. 
   
   - Support contracts for on-premises products have limited incident counts. From the list of available support contracts, select the support option to use if you have multiple tier support contracts.  
-  - Support contracts for cloud products have unlimited incidents, therefore, we show your the best available support plans. 
+  - Support contracts for cloud products have unlimited incidents, therefore, we show you the best available support plans. 
 
 ![Contract and severity](media/CPS9.png)
 
@@ -93,10 +93,10 @@ After you click **Submit**, an incident is created and added to the **Incidents*
 ## Manage support plans
 If you purchased a support plan, you will need to add it to LCS Support before you create a new ticket.    
 
-1. From the **Submitted to Microsoft** tab, click **Manage support plans**. 
+1. On the **Submitted to Microsoft** tab, click **Manage support plans**. 
 
    ![Manage support plans](media/SupportManagePlans.png)
    
-2. In the **Manage support plans** slide, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
+2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
 
    ![Add contracts](media/SupportAddPlans.png) 
