@@ -103,7 +103,7 @@ The order of utilization for the Input Tax Credit of UTGST is the same as it is 
 
 To support this scenario, you must complete the following tasks:
 1. [Create extension configurations](#create-extension-configurations)	
-2. [Extend the taxable document so that it includes the **IntraStateInUnionTerritory** flag](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
+2. [Extend the taxable document so that it includes the IntraStateInUnionTerritory flag](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
 3. [Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document)
 4. [Change the data model of Tax (India GST Contoso)](#change-the-data-model-of-tax-india-gst-contoso)
 5. [Change the applicability of State GST (SGST)](#change-the-applicability-of-sgst)
@@ -130,7 +130,7 @@ The following steps are needed to create extension configurations:
 
 Complete the following steps to add the **IntraStateInUnionTerritory** flag to **Taxable Document (India Contoso)**.
 
- 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Create extension configurations.](#create-extension-configurations), and then click **Designer**.
+ 1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Create extension configurations](#create-extension-configurations), and then click **Designer**.
  2. In the tree, go to **Taxable document** > **Header** > **Lines**, and then click **New** to create a new node.
  3. Enter a name for the node, and select the item type:
 	-	**Name:** IntraStateInUnionTerritory
@@ -152,7 +152,7 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
  
 ### Complete data mapping for the extended taxable document
 There are data mappings for each taxable document, such as a purchase order or sales order, and reference mode in the taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability or tax calculation. 
-For convenience, there is a special data source called **Taxable document source**, which encapsulates most common tax relevant fields like assessable value, HSN, ot SAC. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
+For convenience, there is a special data source called **Taxable document source**, which encapsulates most common tax relevant fields like assessable value, HSN, or SAC. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
 - 	Method 1: Enable the additional field for the existing taxable document source.
 -	Method 2: Use Electronic reporting (ER) data mapping.
@@ -347,7 +347,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 	7. Save the tax document.
 
 9. Configure accounting lookups. Only nodes of the **Tax Type** and **Tax Component** types support an accounting lookup definition.
-	1. Go to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**. Cick the **Accounting** tab.
+	1. Go to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**. Click the **Accounting** tab.
 	2. Click **Columns** to see a list of the attributes that can be used to determine the main accounts that will be used for accounting taxes.
 	3. Select the same attributes that SGST uses.
 		> [!NOTE]
