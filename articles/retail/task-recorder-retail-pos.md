@@ -102,7 +102,7 @@ To resume the recording session after you've paused it, click **Continue**.
 
 ### Capture screenshots
 
-Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes** and then do the recording. Once the recording is completed CLik Stop and download the word document. The word document should have the steps with relevant screenshots.
+Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes** and then make the recording. Once the recording is completed, click **Stop** and download the Word document. The document will contain the steps with relevant screenshots.
 
 #### Note
 > Capture screenshot functionality is not supported in Modern POS.
