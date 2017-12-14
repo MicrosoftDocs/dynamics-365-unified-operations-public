@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/04/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

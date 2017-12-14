@@ -81,8 +81,7 @@ When the export is completed, complete the following tasks:
 ## Setup considerations for some entities that are used to export configurations
 
 Currently, several entities require additional steps when you build configurations. Follow these recommendations as you build your configurations.
-
-> ![IMPORTANT]
+> [!IMPORTANT]
 > This list will be updated as the Copy configuration feature is improved.
 
 ### Using special-purpose entities
@@ -91,7 +90,6 @@ The following entities require special handling when they are used in configurat
 
 | Area | Entity | Action |
 |------|--------|--------|
-
 | System setup | Global address book | The entity no longer exports the records that are created automatically when a company is created. The import no longer accepts those records as well, starting in the platform 9 release. |
 | GL Shared | Account structures active group | This composite entity will export and import only the active account structures. If you use any other account structure entities, the status of the active account structures will be changed to **Draft**, and you must activate them before they can be used. |
 | | Advanced rule structures active group | This composite entity is used in combination with the account structures active group entity. It will export and import only the active advanced rule structures. If you use any other advanced rule structure entities, the status of the advanced rule structures will be changed to **Draft**, and you must activate them before they can be used. |
@@ -101,7 +99,6 @@ The following entities require special handling when they are used in configurat
 | Tax | Sales tax parameters | The default value for the marginal base calculations method is **Total** for sales tax parameters. The Ledger Parameters entity doesn't set that value. However, the marginal base that some tax codes use, **Line**, will fail validation. A new entity that is named the Sales tax parameters preset entity was created so that you can import the marginal base calculation method first. You can then import tax codes. | 
 | Accounts receivable | Customers | The Customers entity was designed to be used for OData scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities let you import the basic information about a customer. In this way, you enable entities that require that a customer have that information earlier in the import process. The Customer details entity contains additional information about a customer that you can add after parameters and reference data have been set up. |
 | Inventory management | Warehouse locations | Some warehouse locations require a location profile ID. Location profile IDs require a location format. Currently, the location format information must be manually added before the warehouse location. The entities for the location format and location profile were added in version 7.2.3, (App update 3 of the July 2017 release).| 
-
 | Product information management | Products | The Products and Released Products entities should be used for configurations. The Product master and Released product master entities should be used for OData scenarios. |
 | | Product document attachments | For attachments to product documents released product documents, you must never skip staging, because additional steps are performed in the staging environment. You must use a data package for export and import, because the export file must be accompanied by a resources folder that contains the attachments. The entities support images, documents, notes, and links. When you export, you will see an image file that has a name that resembles a globally unique identifier (GUID). This file is a valid data package that is required in order to complete the import. |
 | | Product attribute values | Product attribute values are assigned only when a user opens the **Attribute values** page from the **Products details** page. Currently, you can't import the values unless this step was performed in the golden build. |
@@ -182,7 +179,6 @@ The following entities require filters or special handling when you export the d
 | | Budget plan process administration | You will experience the same issue that is described for the Budget plan stage rule entity. |
 | | Budget transfer rules | Apply a filter to Legal entity. |
 | Inventory management | Warehouse current postal address | Apply a filter to Company. |
-
 | | Site current postal address | Apply a filter to Company. | 
 | | Tracking number groups | The entity automatically filters the Number sequence scope data area by the legal entity. Therefore, you don't require a filter. However, if you must change the legal entity, the legal entity is stored in the table. | 
 | Retail | POS registers | Apply a filter to Legal entity. This entity was added to the Retail template version 7.2.3, (App update 3 of the July 2017 release). | 
@@ -287,7 +283,6 @@ The following entities require special handling when they are used to copy into 
 
 | Area | Entity | Action |
 |------|--------|--------|
-
 | System setup | Number sequences | If you use a number sequence for vendors and customers on the parameters forms and then you copy customers and vendors, you need to make sure that the "Allow user to change to a lower number" settings on the number sequences to Yes. The "No" settings will cause the import to reject vendor and customer numbers since they were created before using numbers lower than the next available number sequence. If you use the Reset to smallest feature, you need to change the  "Allow user to change to a higher number" since the vendor and customer numbers are higher than the next available number sequence. |
 | System setup | Workflow | Workflow requires additional changes before it can be copied. Workflow copies are not supported at this time. |
 | Accounts payable | Vendors | Vendors have many settings that are dependent on the values that come from other entities. For example, if you update the matching settings to require three-way matching but you have vendors set for two-way matching, the vendor will fail validation. If you use auto sequencing for new vendor, you will need to unmap the vendor account before you do the copy into legal entity. In addition, if an auto-sequenced vendor has an invoice account, that vendor account is not transformed and may fail. You may see similar issues in other areas such as vendors in posting accounts and approved vendor list by products. |

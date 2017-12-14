@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -183,6 +183,14 @@ turned on.
 The **Inventory transactions log** table will be periodically cleaned up to
 remove all records that are older than 90 days. The cleanup is triggered
 automatically by regenerating the master plan.
+
+## India localization
+India localization is available with the following features:
+
+- Withholding tax, including TDS and TCS.
+- Fixed assets, including depreciation as per the Companies act, depreciation as per the Income tax act, and special depreciation.
+- Value-added tax (VAT).
+- Custom duty and India Goods and Services Tax (GST). For more information, see the “Tax Engine (GTE) – India GST only” section in this topic.
 
 Master and reference data entities for warehouse and transportation management  
 --------------------------------------------------------------------------------
