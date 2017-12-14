@@ -45,7 +45,7 @@
     "globalMetadata": {
       "contributors_to_exclude": ["OpenLocalizationService"], 
       "layout": "Conceptual",
-      "searchScope": ["Unified Operations"],
+      "searchScope": ["Dynamics 365", "Unified Operations"],
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
