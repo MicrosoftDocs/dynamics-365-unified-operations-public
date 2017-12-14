@@ -142,7 +142,7 @@
 #### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
 #### [Service endpoints](../dev-itpro/data-entities/services-home-page.md)
 ##### [Service authentication troubleshooting](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Custom services](../dev-itpro/data-entities/custom-services.md)
 #### [Recurring integrations](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -1569,7 +1569,7 @@
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
 ##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Absence registration in Time and attendance](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
