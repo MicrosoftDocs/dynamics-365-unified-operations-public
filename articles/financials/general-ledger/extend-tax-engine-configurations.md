@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -107,8 +107,8 @@ To support this scenario, you must complete the following tasks:
 3. [Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document)
 4. [Change the data model of Tax (India GST Contoso)](#change-the-data-model-of-tax-india-gst-contoso)
 5. [Change the applicability of State GST (SGST)](#change-the-applicability-of-sgst)
-6. [Configure the UTGST task component](#task-6-configure-the-utgst-tax-component)
-7. [Modify the formulas of lines to include UTGST](#modify-the-formulas-of-lines-to-include-UTGST)
+6. [Configure the UTGST task component](#configure-the-utgst-tax-component)
+7. [Modify the formulas of lines to include UTGST](#modify-the-formulas-of-lines-to-include-utgst)
 8. [Complete the tax document configuration](#complete-the-tax-document-configuration)
 9. [Import the extended configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company) 
 
@@ -433,7 +433,7 @@ Per the Microsoft-provided configuration, the tax rate for the BCD is determined
 
 To support this scenario, you must complete the following tasks:
 1. [Create extension configurations](#create-extension-configurations)
-2. [Add a reference model for country/region of origin](#add-reference-model-for-countryregion-of-origin)
+2. [Add a reference model for country/region of origin](##add-a-reference-model-for-countryregion-of-origin)
 3. [Complete data mapping for the reference model](#complete-data-mapping-for-the-reference-model)
 4. [Link the reference model to field in taxable document](#link-the-reference-model-to-a-field-in-the-taxable-document)
 5. [Change the lookup of the BCD tax rate](#change-the-lookup-of-the-bcd-tax-rate)
