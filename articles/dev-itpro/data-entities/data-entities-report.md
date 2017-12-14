@@ -36,7 +36,8 @@ ms.dyn365.ops.version: Platform update 1
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.  
 
-## Data entity templates
+## Configuration entity spreadsheets
+Configuration entity spreadsheets are released as part of configuration data packages on Microsoft Dynamics Lifecycle Services (LCS). Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of a Finance and Operations implementation. The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data. We recommend that you download and review the configuration entity spreadsheets to understand how we recommend that you order your data imports. For more information, see [Configuration data packages](configuration-data-packages.md).
 
 ## Data entity reports
 Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep): 
