@@ -82,7 +82,7 @@ When the export is completed, complete the following tasks:
 
 Currently, several entities require additional steps when you build configurations. Follow these recommendations as you build your configurations.
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > This list will be updated as the Copy configuration feature is improved.
 
 ### Using special-purpose entities
