@@ -156,7 +156,7 @@ First, upgrade your code as described in scenario 2. This step is a developer ta
 
 ### Upgrade your data in a development environment
 
-Run the data upgrade process on a copy of your target database. If your environment is already live in production, the target database is a copy of the production database. Otherwise, the target database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
+Run the data upgrade process on a copy of your source database. If your environment is already live in production, the source database is a copy of the production database. Otherwise, the source database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
 
 To make a copy of your production database, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
 
@@ -200,6 +200,7 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 
     > [!IMPORTANT]
     > - If you don't select application deployable packages in your service request, DSE might reject the request.
+    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is a intended as a pre-production validation of the upgrade process.
     > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
     > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
 
