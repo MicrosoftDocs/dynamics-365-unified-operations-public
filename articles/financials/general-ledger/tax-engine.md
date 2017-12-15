@@ -31,7 +31,10 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-The Tax engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements.
+The Tax engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. 
+
+> [!NOTE]
+> The Tax engine functionality is only available for legal entities with a primary address in India.
 
 ## Key concepts
 
@@ -153,3 +156,9 @@ The set-off rule determines how the tax recoverable should be used to set off th
 | SGST\_TDS        | SGST             |
 | IGST\_TDS        | IGST             |
 | CESS\_TDS        | CESS\_TDS        |
+
+## Additional resources
+
+- [Extending the Tax engine](extend-tax-engine-configurations.md)
+- [Tax engine integration](tax-engine-integration.md)
+
