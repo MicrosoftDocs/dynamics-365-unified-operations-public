@@ -5,7 +5,7 @@ title: Tax engine integration
 description: This topic provides information about Tax engine integration.
 author: yijialuan
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.search.region: Global
+ms.search.region: India
 # ms.search.industry: 
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-To integrate the Tax engine (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
+To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
 
 ## Tax engine integration models
 There are three models for Tax engine integration in the Finance and Operations application:
@@ -555,3 +555,8 @@ If the Tax engine returns no issues, the tax document result will be persisted i
 - TaxDocumentJason
 
 By querying these tables to obtain the JSON string, you can easily check the result details via any online JSON viewer.
+
+## Additional resources
+
+- [Tax engine overview](tax-engine.md)
+- [Extending the Tax engine](extend-tax-engine-configurations.md)
