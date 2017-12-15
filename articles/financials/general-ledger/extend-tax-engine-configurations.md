@@ -37,6 +37,9 @@ The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax
 -	Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
 -	Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
 
+> [!NOTE]
+> The Tax engine functionality is only available for legal entities with a primary address in India.
+
 The following tax terms are mentioned in this topic.
 
 |Tax term | Full name|
