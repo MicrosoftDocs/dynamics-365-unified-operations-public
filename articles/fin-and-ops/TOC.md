@@ -645,6 +645,11 @@
 ##### [User operation log by China working rule](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [VAT customer invoices FAQ](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
 
+#### India
+##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
+##### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
+##### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
+
 #### Japan
 ##### [Acquire a fixed asset and claim for the government grant subsidy](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
 ##### [Acquire a fixed asset with asset retirement obligations](../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md)
