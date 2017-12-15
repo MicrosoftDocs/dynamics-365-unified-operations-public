@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 [!include[banner](../includes/banner.md)]
 
 
-The Tax engine (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
+The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
 
 -	Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
 -	Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
