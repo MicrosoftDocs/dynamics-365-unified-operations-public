@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
-ms.date: 12/14/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -397,9 +397,6 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 ![New configuration](media/gte-extension-new-configuration2.png)
 
 6. Select the required configuration, such as **Tax (India GST)**. Click **Save**.
-
-![Select configuration](media/gte-extension-select-configuration.png)
-
 7. Click **Synchronize**.
 
 ![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
@@ -413,19 +410,12 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 9. Click **Close**.
 10. Click the **Companies** FastTab.
 11. Click **New** and then select **INMF** in the **Companies** field.
-
-![Select company](media/gte-extension-deploy-to-company.png)
-
 12. Click **Save**.
 13. Click **Activate** to activate the configuration for the company.
 
 ![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
 
-![Active configuration for the company](media/gte-extension-activate-configuration-to-company2.png)
-
 14. Click **Setup** to set up data for the new version.
-
-![Set up data for new version](media/gte-extension-tax-setup.png)
 
 ## Scenario 2: Using a reference model
 
@@ -470,14 +460,25 @@ After you update the status to be **Complete**, the configuration is ready for d
 2. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 3. Click **Map model to datasource**.
 4. Select **Country of Origin** and then click **Add**.
-![Add model mapping](media/gte-extension-map-reference-model.png)
 5. With **Country of Origin** selected in the list, click **Designer** to open the designer of the model mapping.
-![Model mapping designer](media/gte-extension-designer-mapping-reference-model.png)
-6. Add table records **LogisticsAddressCountryRegion** as a root. 
+6. Add table records **LogisticsAddressCountryRegion** as a root.
+	1. Select **Table records** in the **Data source type** tree.
+	2. Click **Add root**.
+	3. Enter the name **LogisticsAddressCountryRegion** in the **Name** field.
+	4. Select a table.
+	5. Click **OK**.
+	
 ![Add table records](media/gte-extension-add-table-records.png)
 7.Bind the table.
+	1. In the **Data sources** tree, select the **LogisticsAddressCountryRegion** table record that you created in step 5.
+	2. In the **Date model** tree, select **Countries of Origin: Record list**.
+	3. Click **Bind**.
+	
 ![Bind table](media/gte-extension-bind-table.png)
 8.Bind the field.
+	1. In the **Data sources** tree, select **Country/region(CountryRegionID): String**.
+	2. In the **Date model** tree, select **Country of Origin: String**.
+	3. Click **Bind**.
 ![Bind field](media/gte-extension-bind-field.png)
 9.Click **Save**.
 
