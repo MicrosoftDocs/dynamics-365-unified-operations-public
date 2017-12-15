@@ -406,6 +406,11 @@ fulfilled in the FEFO (First Expired, First Out) order.
 ## Tax Engine (GTE) – India GST only
 The Tax Engine (GTE) is an essential part of the configurable business application experience in Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
 
+### More information
+- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
+- [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
+- [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
+
 Vendor collaboration 
 ---------------------
 Vendor collaboration has been extended to enable vendors to view and selectively maintain their own company information, such as contact information, business identification data, procurement categories, and certifications. 
