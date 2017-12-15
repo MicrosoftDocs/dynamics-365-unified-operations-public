@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: RichardLuan
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,11 +19,11 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.search.region: Global
+ms.search.region: India
 # ms.search.industry: 
 ms.author: riluan
-ms.search.validFrom:
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.3
 
 ---
 
