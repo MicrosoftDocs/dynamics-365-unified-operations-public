@@ -5,7 +5,7 @@ title: Intelligence
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -93,10 +93,7 @@ To learn more, see the following topics:
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations:
 
-- [Aggregate data entities report](aggregate-data-entities-report.md)
-- [Aggregate measurements report](aggregate-measurements-report.md)
 - [Data entities report](../data-entities/data-entities-report.md)
-- [Key performance indicators (KPIs) report](key-performance-indicators-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services reports report](SSRS-report.md)
 - [Workflow types report](../../fin-and-ops/organization-administration/workflow-types-report.md)
