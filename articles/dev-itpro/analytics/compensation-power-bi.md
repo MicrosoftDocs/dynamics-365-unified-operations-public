@@ -5,7 +5,7 @@ title: Compensation Power BI content
 description: This topic describes the Compensation Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,13 +51,6 @@ The reports that are included in **Compensation** the Power BI content have both
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Extending the Power BI content
-If you're using Microsoft Dynamics 365 for Operations version 1611 or Finance and Operations, Enterprise edition (July 2017), you can find the **Compensation** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Compensation** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
-
->[!NOTE]
->The .pbix files available in Lifecycle Services apply to Finance and Operations only.
 
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Compensation** Power BI content. This table shows the entities that the content was based on.
