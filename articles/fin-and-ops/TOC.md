@@ -1294,29 +1294,26 @@
 ##### [Upload a configuration into Lifecycle Services for electronic reporting](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
 ##### [Electronic reporting framework API changes for Application update 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analytical tools and visualizations
+### Embedded analytical solutions
+#### [Embedded Power BI in workspaces](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Personalization options with PowerBI.com
+#### [Power BI integration](../dev-itpro/analytics/power-bi-integration.md)
+#### [Pin Power BI reports to workspaces](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Tools for creating and extending solutions
 #### [Analytics, aggregate measurements, and KPI modeling](../dev-itpro/analytics/analytics.md)
+#### [Author analytical reports by using Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Modeling and aggregate data](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Add financial dimensions to aggregate measurements](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Add contextual BI to forms](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Aggregate measurements report](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Aggregate data entities report](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [Key performance indicator (KPI.md) report](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI integration](../dev-itpro/analytics/power-bi-integration.md)
-#### [Access Power BI content](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Create a Power BI report and dashboard](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Create a Power BI report by using Finance and Operations data](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Embedded Power BI in workspaces](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Add analytics to workspaces by using Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Help secure analytical workspaces and reports by using Power BI Embedded](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Add Power BI to workspaces](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Pin Power BI reports to workspaces](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Power user management tools
 #### [Power BI integration with Entity store](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Author analytical reports by using Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Publish analytical applications on Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Inventory management](../supply-chain/inventory/inventory-home-page.md)
