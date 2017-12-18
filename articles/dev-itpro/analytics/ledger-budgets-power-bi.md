@@ -5,7 +5,7 @@ title: Actual vs budget Power BI content
 description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content. 
 author: ryansandness
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,10 +52,6 @@ The following table provides details about the metrics that are found on each re
 | Revenue                     | <ul><li>Total revenue this year</li><li>Goal for revenue based on budget </li><ul> |
 | Net income                  | <ul><li>Net income this year</li><li>Goal for net income based on budget </li><ul> |
 
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis. 
-
-You can find the **Actual vs budget** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 # Understanding the data model and entities
 

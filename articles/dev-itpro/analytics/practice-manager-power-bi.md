@@ -5,7 +5,7 @@ title: Practice manager Power BI content
 description: This topic describes what is included in the Practice manager Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
 author: KimANelson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,13 +62,6 @@ The following table provides details about the metrics that are found on each re
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
 in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
-
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Finance and Operations. You can modify these content packs so that they include other reports or visuals, and then publish them to your Power BI.com tenant for analysis. 
-
-You can find the **Practice manager** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Practice manager** content that applies to the version of Finance and Operations that you're using.
 
 ## Understanding the data model and entities
 
