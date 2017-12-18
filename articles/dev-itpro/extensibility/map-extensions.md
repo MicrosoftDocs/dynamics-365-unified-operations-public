@@ -31,54 +31,38 @@ ms.dyn365.ops.version: Platform update 11
 
 # Table map extension
 
-This topic applies to App Update 7.3 and later.
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 
-## Requesting add a field or method extension capability to existing table maps 
+Adding a field to an existing table map through extension presents some challenges. If these are not addressed in the implementation, there can be runtime errors. The errors happen because the developer cannot modify all the tables when are involved in implementing the table map. The same is true for adding a method to a table map, if the method is called directly as an instance method on the table map. 
+There is no enforcement that fields on table maps must be mapped to fields on all the tables implementing the table map. Similarly, there is no enforcement that methods on table maps must be as methods on all tables implementing the table map.
 
-The platform team has received requests to provide add a field or method capabilities to table maps through extensions. 
-
-Adding a field or a method to an existing table map, however, presents some challenges which can lead to unforeseen runtime errors. The reason being that the party adding the field does not have control over all the tables which implement mapping to the table map. The same is true for adding a method to a table map, if the method is called directly as an instance method on the table map.
-
-One of the issues with table maps, is that it is not enforced, that fields on table maps are mapped to fields on all tables implementing the table map. Likewise another issue is, that it is not enforced, that methods on the table map are implemented as methods on all tables implementing the table map.
-
-The below diagram is meant to illustrate the issue. The diagram shows the SalesPurchTable table map which is implemented by the SalesTable, PurchTable, and SalesBasket tables in the ApplicationSuite model. In addition, an ISV1Header table being part of an ISVModule1 model is implementing the SalesPurchTable table map.
+The following diagram shows that the SalesPurchTable table map, which is implemented by the SalesTable, PurchTable, and SalesBasket tables in the ApplicationSuite model. In addition, an ISV1Header table is implemented the SalesPurchTable table map, but ISV1Header is part of an ISVModule1 model.
 
 ![MapExtensionsProblem](media/MapExtensions1.png)
 
-Assume that a new field named AccountingGroupId and a new method named validateAccountingGroup are added to the table map. As the change is made in the ApplicationSuite model, then the tables known to be implementing the table map can be fixed, and get the field and method added as well.
-
-The ISV1Header table in the ISVModule1 model is, however, outside of the control of engineer making the changes to the ApplicationSuite model.
+Suppose that a new field named AccountingGroupId and a new method named validateAccountingGroup are added to the table map. As the change is made in the ApplicationSuite model, then the tables that you know implement the table map can be updated to include the field and method added as well. The ISV1Header table in the ISVModule1 model is, however, outside of the control of the developer making the changes to the ApplicationSuite model.
 
 ![MapExtensionsProblem](media/MapExtensions2.png)
 
-Logic implemented in the ApplicationSuite model, that query the value of a the AccountingGroupId table map field will result in a runtime error, if the table map record is of type ISV1Header.
+Suppose you add business logic to the ApplicationSuite model, and that logic queries the new AccountingGroupId field. If the table map record is of type ISV1Header, a runtime error occurs.
 
         SalesPurchTable      headerTable;
         ...
         ...
         if (headerTable.AccountingGroupId)
 
-Also logic in the ApplicationSuite model, calling the validateAccountingGroup table map method will result in a runtime error, if the table map record is of type ISV1Header.
+Similarly, if you add business logic to the ApplicationSuite model, and that logic queries validateAccountingGroup, then a runtime error occurs.
 
         SalesPurchTable      headerTable;
         ...
         ...
         if (headerTable.validateAccountingGroup())
 
-Until the time, when the ISV1Header table has added mapping to the AccountingGroupId field and added the validateAccountingGroup method, then the combined solution is essentially broken.
+As a result, the solution is broken, unless you add mapping to the new field and new method to the ISV1Header table. 
 
-
-If we played with the thought of adding the ability to add fields or methods to table maps through extension, the issues above are not being mitigated. Instead they remain the same.
-
-This is illustrated in the next diagram where the ISVModule2 includes extensions of the table map and the implementing tables in the ApplicationSuite model. 
-
-The engineer implementing the ISVModule2 has no control over the ISV1Header table in the ISVModule1 model, and therefore the ISV1Header table is still lacking a mapping of the AccountingGroupId field and implementation of the validateAccountingGroup method.
+The conflict is not resolved if we add the ability to add fields or methods to table maps through extension. This is illustrated in the following diagram where the ISVModule2 includes extensions of the table map and the implementing tables in the ApplicationSuite model. The developer implementing the ISVModule2 has no control over the ISV1Header table in the ISVModule1 model, and therefore the ISV1Header table is still lacks a mapping of the AccountingGroupId field and implementation of the validateAccountingGroup method.
 
 ![MapExtensionsProblem](media/MapExtensions3.png)
 
-If the compiler enforced, that all fields on table map had to be mapped on all tables implementing the table map, and enforced that methods added to a table map had to be implemented on all tables as well, then the issues would be somewhat the same.
-Instead of receiving runtime errors, then adding a field or a method would be a clear breaking change, as tables not having a new field mapped or a new method implemented would result in a compile when the model containing the added field/method is applied.
-
-
-Because of the issues described and the lack of ability to control which tables implement the table map, then we have taken a route of refactoring the usage of the table maps into a model, which allows extending with solution with additional fields and methods.
+Even if the the compiler enforced that all fields and method on table map had to be mapped on all tables implementing the table map, teh conflict would not be resolved. Instead of receiving runtime errors, then adding a field or a method would be a clear breaking change, as tables not having a new field mapped or a new method implemented would result in a compile when the model containing the added field/method is applied. To resolve the desire for extending tables, we have refactored the usage of the table maps into a model, which allows extending with solution with additional fields and methods.
 
