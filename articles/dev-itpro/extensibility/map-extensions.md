@@ -2,7 +2,7 @@
 # required metadata
 
 title: Table map extension
-description: 
+description: To support extending table maps, we have refactored the usage of the table maps into a model, which allows extending with solution with additional fields and methods.
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/20/2017
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 11
 # Table map extension
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
+
+To support extending table maps, we have refactored the usage of the table maps into a model, which allows extending with solution with additional fields and methods. This topic discusses why you need a model to extend a table map.
 
 Adding a field to an existing table map through extension presents some challenges. If these are not addressed in the implementation, there can be runtime errors. The errors happen because the developer cannot modify all the tables when are involved in implementing the table map. The same is true for adding a method to a table map, if the method is called directly as an instance method on the table map. 
 There is no enforcement that fields on table maps must be mapped to fields on all the tables implementing the table map. Similarly, there is no enforcement that methods on table maps must be as methods on all tables implementing the table map.
@@ -64,5 +66,5 @@ The conflict is not resolved if we add the ability to add fields or methods to t
 
 ![MapExtensionsProblem](media/MapExtensions3.png)
 
-Even if the the compiler enforced that all fields and method on table map had to be mapped on all tables implementing the table map, teh conflict would not be resolved. Instead of receiving runtime errors, then adding a field or a method would be a clear breaking change, as tables not having a new field mapped or a new method implemented would result in a compile when the model containing the added field/method is applied. To resolve the desire for extending tables, we have refactored the usage of the table maps into a model, which allows extending with solution with additional fields and methods.
+Even if the the compiler enforced that all fields and method on table map had to be mapped on all tables implementing the table map, teh conflict would not be resolved. Instead of receiving runtime errors, then adding a field or a method would be a clear breaking change, as tables not having a new field mapped or a new method implemented would result in a compile when the model containing the added field/method is applied. To support extending table maps, we have refactored the usage of the table maps into a model, which allows extending with solution with additional fields and methods.
 
