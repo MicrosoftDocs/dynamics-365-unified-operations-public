@@ -103,8 +103,6 @@ There are several scenarios where you can use Excel:
 -	Use the Power Query extension in Excel to combine the data in another worksheet (or data that is imported from OData endpoints) with external data. You can visualize the resulting data by using Power View.
 - Use the PowerPivot extension in Excel to ingest a larger amount of data into Excel.
 
-For more information about Power BI integration with Excel, see [Create a Power BI report](create-powerbi-report-data.md).
-
 Consider using Export to Excel functionality for ad-hoc “one-off” reports. If the reports will be shared with a group of users, you should consider using Entity store to create them.
 
 ## Sharing and using reports in PowerBI.com
