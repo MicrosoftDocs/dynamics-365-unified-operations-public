@@ -89,7 +89,7 @@ If you're using Microsoft Dynamics 365 for Operations version 1611, the followin
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 
 ### Accessing the content
-This Power BI content is available in the Shared assets library in LCS. For more information about how to download the content and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+This Power BI content is available in the Shared assets library in LCS. For more information about how to download the content and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Power BI content for Microsoft Dynamics AX
 If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:
