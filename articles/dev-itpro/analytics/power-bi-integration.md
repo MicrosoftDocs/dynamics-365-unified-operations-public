@@ -5,7 +5,7 @@ title: Power BI integration
 description: This topic explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data. 
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -81,7 +81,7 @@ Entity store is an operational data store that is built specifically for Power B
 
 Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in Finance and Operations.
 
-For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). For more information about how to create reports by using Entity store, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
 
 If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md).
 
@@ -92,7 +92,7 @@ Finance and Operations is a first-class data source for Power BI authoring tools
 
 You can access OData endpoints via the following URL: https://<your Microsoft Dynamics 365 URL>/Data
 
-OData endpoints are ideal for quick and convenient data mash-ups. However, we recommend that you use Entity store to create reports that extract large volumes of data. For more information about how to create a Power BI report and a dashboard by using OData endpoints, see [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md). Note that this article refers to the Power Query and PowerPivot tools. If you want to use Power BI desktop to create reports that use OData endpoints, the procedure is similar.
+OData endpoints are ideal for quick and convenient data mash-ups. However, we recommend that you use Entity store to create reports that extract large volumes of data. 
 
 ### Creating Power BI reports by using Excel
 In addition to using the Power BI desktop authoring tool, you can use “Power tools” that are incorporated into Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick “one-off” report, Excel might be the best option for these users.
