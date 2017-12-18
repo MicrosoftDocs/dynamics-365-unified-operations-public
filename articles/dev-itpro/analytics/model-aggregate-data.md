@@ -5,7 +5,7 @@ title: Modeling and aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data .
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -286,7 +286,6 @@ Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is sho
 
 [Adding BI to workspaces](add-bi-workspaces.md)
 
-[Adding contextual BI to forms](add-contextual-bi-forms.md)
 
 
 
