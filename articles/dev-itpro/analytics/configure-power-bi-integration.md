@@ -5,7 +5,7 @@ title: Configure Power BI integration for workspaces
 description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 07/07/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -165,6 +165,6 @@ For subsequent visits, this whole flow doesn't occur. Because Finance and Operat
 Now that you've enabled the PowerBI.com integration feature, you might want to perform the following steps:
 
 - If your organization uses PowerBI.com, you can invite users to pin tiles and reports from their own PowerBI.com account to workspaces for easy access.
-- If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) or later, ready-made analytical workspaces might be built into your workspaces. Currently, this feature is available only in multi-box environments. If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account. The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+- If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) or later, ready-made analytical workspaces might be built into your workspaces. Currently, this feature is available only in multi-box environments. If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account. The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS). 
 - You might want to create your own Power BI content by using data that is available in Entity store. (Entity store is the operational data warehouse that is included with Finance and Operations.) For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 - You might want to mash up external data with ready-made Power BI content that is provided with Finance and Operations. You can do this data mash-up by using Power BI solution templates.
