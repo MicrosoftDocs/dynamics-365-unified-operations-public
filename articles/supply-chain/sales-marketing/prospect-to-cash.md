@@ -96,7 +96,7 @@ To use the Prospect to cash solution, you must install the following components:
    >
    > Templates with version 1.0.0.0 and 1.0.0.1 are supported on Prospect to cash solution for Microsoft Dynamics 365 for Sales, version 1.14.1.0
    >
-   > Templates with version 2.0.0.0 and 2.1.0.0 are upported on Prospect to cash solution for Microsoft Dynamics 365 for Sales, version 1.15.0.0
+   > Templates with version 2.0.0.0 and 2.1.0.0 are supported on Prospect to cash solution for Microsoft Dynamics 365 for Sales, version 1.15.0.0
 
 ### Install the Prospect to cash solution for Sales
 
