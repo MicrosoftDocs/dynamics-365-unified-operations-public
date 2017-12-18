@@ -139,8 +139,19 @@ Based on the duties assigned to you, you will see either the **Download view** o
 **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
 - **Request view:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
-### Create and submit a new issue
+### Search for project work items in Visual Studio Team Services (VSTS)
 
+The Visual Studio Team Services (VSTS) administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work itmes will be searchable for users from the client support search box. The search result will include tagged VSTS work items in addition to Microsoft publisehd updates and fiexes. The following graphic shows a tagged VSTS work item for publishing.
+
+[![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
+
+When you search for published VSTS work items using the support search box, search results show the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permissions can edit the work item in Visual Studio Team Services. The following graphic shows the search result of a published VSTS work item.
+
+[![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
+
+**Note:** The published VSTS work items are only visible to your organization's users.  
+
+### Create and submit a new issue
 If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
 
 ## Work with issues in LCS
