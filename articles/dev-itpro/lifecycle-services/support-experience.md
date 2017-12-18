@@ -37,10 +37,10 @@ ms.dyn365.ops.version: AX 7.0.0
  Prerequisites
 --------------
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (AAD) account. This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition subscription.
+Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Create a Visual Studio Team Services project
-The **Support** tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in Lifecycle Services (LCS). This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
+The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.
 
 ### Create a new VSTS project
 
@@ -61,9 +61,9 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 
 ### Create the Support system user
 
-1.  Create a new user in your AAD tenant, and enter a descriptive name, such as **LcsCpsSystemAccount**.
+1.  Create a new user in your Azure AD tenant, and enter a descriptive name, such as **LcsCpsSystemAccount**.
 2.  In the upper-left corner, click **Team Services**.
-3.  On the **Users **tab, click **Add**, and invite the system user that you created in step 1. For this user, select **Stakeholder**.
+3.  On the **Users** tab, click **Add**, and invite the system user that you created in step 1. For this user, select **Stakeholder**.
 4.  In the upper-left corner, click **Team Services** again.
 5.  Click **Browse**, and browse to the project that you created earlier.
 6.  In the **Members** section of the project home page, click **Add**, and add the system user.
@@ -75,7 +75,7 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 3.  In the upper-right corner, click the user name, and then click **My profile**.
 4.  On the **Security** tab, on the **Personal access tokens** tab, click **Add**.
 5.  Enter a description, such as **LCS Support system account**.
-6.  Select an expiry of one year.
+6.  Select an expiration date of one year.
 7.  Click **Selected scopes**, and the select **Work items (read and write)**.
 8.  Click **Create token**.
 9.  Copy the token and paste it in a safe location because it won't be accessible after you move away from the page.
@@ -100,7 +100,7 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 13. Click **Accept**.
 
 ## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)
-If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
+If you are on Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
 
 **Important:** If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.
 
@@ -135,13 +135,13 @@ After you connect to LCS, you can search for existing Microsoft published update
 **Note:** If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
 
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
-- **Download view:** By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
+- **Download view** - By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
 **Note:** The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
-- **Request view:** By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
+- **Request view** - By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
 ### Search for project work items in Visual Studio Team Services (VSTS)
 
-The Visual Studio Team Services (VSTS) administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work itmes will be searchable for users from the client support search box. The search result will include tagged VSTS work items in addition to Microsoft publisehd updates and fiexes. The following graphic shows a tagged VSTS work item for publishing.
+The Visual Studio Team Services (VSTS) administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work items will be searchable for users from the client support search box. The search result will include tagged VSTS work items in addition to Microsoft published updates and fixes. The following graphic shows a tagged VSTS work item for publishing.
 
 [![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
 
@@ -199,11 +199,11 @@ When you deploy Finance and Operations from Lifecycle Services, no configuratio
 
 ## Support plans (on-premises only)
 The following customer and partner support plans are available for on-premises deployments.
-- **Customer:** 
+- **Customer** 
     - Software assurance
     - Advantage/Advantage Plus
     - Premier
-- **Partner:**
+- **Partner**
     - Partner Advantage/Partner Advantage Plus
     - Advanced Support for Partners
     - Premier
