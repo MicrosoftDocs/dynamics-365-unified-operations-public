@@ -282,9 +282,7 @@ Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is sho
 1.  Click **Save** on the bottom left to save changes. Notice that the KPI status color has changed in the KPI tile shown.
 
 
-# See also
 
-[Adding BI to workspaces](add-bi-workspaces.md)
 
 
 
