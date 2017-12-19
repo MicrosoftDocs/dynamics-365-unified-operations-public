@@ -5,7 +5,7 @@ title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,11 +134,4 @@ The following table shows the key dimensions that are used as filters to slice t
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
 
-## Additional resources
 
-Here are some helpful links that are related to entities and building Power BI content:
-
-- [Data entities](../data-entities/data-entities.md)
-- [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)

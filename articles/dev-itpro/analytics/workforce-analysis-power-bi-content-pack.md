@@ -5,7 +5,7 @@ title: Workforce metrics Power BI content
 description: This topic describes the Workforce metrics Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -93,4 +93,4 @@ The following table shows the entities that the content was based on.
 | Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Line |
 | Mass Hire Line           | Department, employment type, and position                                           | Date, Job, Mass Hire Project |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the Power BI content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the Power BI content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+
