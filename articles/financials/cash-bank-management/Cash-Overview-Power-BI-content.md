@@ -5,7 +5,7 @@ title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,5 +72,4 @@ The following table shows the entities that the **Cash overview** Power BI conte
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summarized cash inflows, outflows, and balance using the system currency for all companies |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summarized net transaction amount and balance of currencies using the transaction currency |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the charts and reports that are used in the **Cash overview** Power BI content. To include additional calculations on your reports and dashboard, you can download and modify the Power BI file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create organizational content and dashboards that contain the information that you’ve added.
 
