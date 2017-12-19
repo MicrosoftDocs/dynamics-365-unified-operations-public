@@ -38,7 +38,7 @@ When new fields are added to the PurchLine and PurchLineHistory tables using tab
 
 ![VersioningPurchaseOrder](media/MapsWithVersioning1.png)
 
-To be able to specify new fields to be copied, the PurchLineMap table map logic and its usage has been refactored. The copy logic has been moved to the PurchLineVersioning class, so the VersioningPurchaseorder class references the PurchLineVersioning class instead of the PurchLineMap table map. The PurchLineVersioning class delegates the logic to copy and determines whether a confirmation is required to a set of class instances, that all implement the PurchLineIVersioningFieldSet interface. Each implementing class is associated with a table map, that describes the set of fields to copy.
+To be able to specify new fields to be copied, the PurchLineMap table map logic and its usage have been refactored. The copy logic has been moved to the PurchLineVersioning class, so the VersioningPurchaseorder class references the PurchLineVersioning class instead of the PurchLineMap table map. The PurchLineVersioning class delegates the logic to copy the fields and it determines whether a confirmation is required to a set of class instances, that all implement the PurchLineIVersioningFieldSet interface. Each implementing class is associated with a table map, that describes the set of fields to copy.
 
 The PurchLineDictVersioning class is responsible for instantiating the PurchLineIVersioningFieldSet object using reflection, and also for collecting the entire set of fields which must be copied. This data is collected based on all the table maps associated with a PurchLineIVersioningFieldSet implementing class.
 
