@@ -2,9 +2,9 @@
 
 # required metadata
 
-title: Extending table maps used for versioning
+title: Extend table maps used for versioning
 description: This topic describes how to extend table maps used for versioning.
-author: Lars Blaaberg
+author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
@@ -30,21 +30,15 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Extending table maps used for versioning
+# Extend table maps used for versioning
 
-One of the table maps where we have received requests to support the ability to add a field is the PurchLineMap table maps.
+This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 
-This table map is used to describe the set of fields which must be copied between the PurchLine table and the PurchLineHistory table, when a new purchase order version is created or editing of a version is reverted. The PurchLineMap is therefore used by the VersioningPurchaseOrder class when archiving purchase order lines.
+When new fields are added to the PurchLine and PurchLineHistory tables using table extensions then the new fields must be copied between the tables whenever a purchase order is versioned. The PurchLineMap table map specifies the fields that must be copied between the PurchLine table and the PurchLineHistory table when a new purchase order version is created or edited. To accomplish this, the PurchLineMap map table needs to be extended to include the additional fields. Additionally, the PurchLineMap is used by the VersioningPurchaseOrder class when archiving purchase order lines. The model is shown in the following diagram.
 
 ![VersioningPurchaseOrder](media/MapsWithVersioning1.png)
 
-When additional fields are added to the PurchLine and PurchLineHistory tables using table extensions then it is also a requirement, that this additional set of fields must be copied between the tables when the purchase orders are versioned.
-
-## Overview of the solution:
-
-To enable the ability for additional models to identify additional sets of fields to be copied, the PurchLineMap table map logic and its usage has been refactored.
-
-The copy logic has been moved to the PurchLineVersioning class, so the VersioningPurchaseorder class is referencing this class instead of the PurchLineMap table map. The PurchLineVersioning class delegates the logic to copy and determine whether a confirmation is required to a set of class instances, that all implement the PurchLineIVersioningFieldSet interface. Each implementing class is associated with a table map, that describes the set of fields to copy.
+To be able to specify new fields to be copied, the PurchLineMap table map logic and its usage has been refactored. The copy logic has been moved to the PurchLineVersioning class, so the VersioningPurchaseorder class references the PurchLineVersioning class instead of the PurchLineMap table map. The PurchLineVersioning class delegates the logic to copy and determines whether a confirmation is required to a set of class instances, that all implement the PurchLineIVersioningFieldSet interface. Each implementing class is associated with a table map, that describes the set of fields to copy.
 
 The PurchLineDictVersioning class is responsible for instantiating the PurchLineIVersioningFieldSet object using reflection, and also for collecting the entire set of fields which must be copied. This data is collected based on all the table maps associated with a PurchLineIVersioningFieldSet implementing class.
 
