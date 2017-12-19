@@ -451,18 +451,18 @@ Set up exclusion rules that are advised by Service Fabric. For information, see 
 
 ## Apply deployable packages during deployment
 ### Package deployment fails due to "path too long" exception
-Because of a 260 character limit in Windows, deployment will fail if a package has a longer name, or if the on-premises share has the full FQDN path. If you exceed the character limit, you will receive the following error:
+Because of a 260-character limit in Windows, deployment will fail if a package has a longer name, or if the on-premises share has the full FQDN path. If the character limit is exceeded, you will receive the following error:
 
 **System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. at System.IO.PathHelper.GetFullPathName** 
 
 To work around the error, shorten the package name and then apply the package again, or shorten the overall length of the share path for the on-premises assets.
 
 ### Package deployment fails because of serialization error
-During package deployment, uf you receive the error, **Serialization version mismatch detect, make sure the runtime dlls are in sync with the deployed metadata. Version of file 'XXX'. Version of dll 'XXX'**, it is likely that the package was developed on an environment that has a different version than the environment that the package is being deployed on. 
-To work around this issue, keep the development or build environments on the same version as the deployed on-premises environment. You can confirm the package version by checking the **Additional details** section in the Asset library where the package is uploaded. To fix the error, generate the package on the same or an earlier version as the version deployed on the on-premises environment. 
+During package deployment, if you receive the error, **Serialization version mismatch detect, make sure the runtime dlls are in sync with the deployed metadata. Version of file 'XXX'. Version of dll 'XXX'**, it is likely that the package was developed on an environment that has a different version than the environment that the package is being deployed on. 
+To work around this issue, keep the development or build environments on the same version as the deployed on-premises environment. You can confirm the package version by checking the **Additional details** section in the Asset library where the package is uploaded. To fix the error, generate the package on the same version or an earlier version as the version deployed on the on-premises environment. 
 
 ### Package deployment fails because of dependencies on missing modules
-If you are trying to apply a package that is missing dependent modules, the package application will fail wtih a message similar to this:
+If you are trying to apply a package that is missing dependent modules, the package application will fail with a message that is similar to the following:
 
 **Package [dynamicsax-My_commonextension.7.0.4679.35176.nupkg has missing dependencies: [dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor]]** 
 
@@ -470,9 +470,9 @@ If you are trying to apply a package that is missing dependent modules, the pack
 
 **Package [dynamicsax-My_uiextension.7.0.4679.35176.nupkg has missing dependencies: [dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests]]**
 
-To confirm the issue and find the missing dependencies, log in to the Event Viewer, open the Application and Services, and go to **Microsoft** > **Dynamics** > **AX-SetupModuleEvents**. This will have events that show the missing modules. For example, one of the common missing modules is the ApplicationFoundationFormAdaptor module.  
+To confirm the issue and find the missing dependencies, log in to the Event Viewer, open the Application and Services, and go to **Microsoft** > **Dynamics** > **AX-SetupModuleEvents**. This will show events that have missing modules. For example, one of the common missing modules is the ApplicationFoundationFormAdaptor module.  
 To fix this issue and apply the package successfully, add dependent modules or remove modules that require dependent modules. To add the dependent modules, you will need to include the dependencies when building the package. To remove the modules, you can use ModelUtil.exe to delete the module. For more information, see [Export and import a model](./dev-tools/models-export-import.md). 
 
-### Package deployment works on one-box but not in the sandbox environment
-A one-box environment may have of the modules installed and the sandbox has only the modules that are needed to run your production. If the package built in the dev environment takes a dependency on the modules that are present in the one-box but not in the sandbox, the package won't work in the sandbox environment. 
+### Package deployment works on one-box environment but not in the sandbox environment
+A one-box environment might have all of the modules installed and the sandbox only has the modules that are needed to run your production environment. If the package built in the dev environment takes a dependency on the modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment. 
 To resolve this issue, look at all of the modules that you are dependent on and ensure that you do not pull any farm adapter or any other modules that are not needed in the production environment. The best practice is to take the package from the build box.
