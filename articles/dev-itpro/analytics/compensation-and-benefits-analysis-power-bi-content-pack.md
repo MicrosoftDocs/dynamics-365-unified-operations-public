@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compensation and Benefits Power BI content
-description: This topic describes the Finance and Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+description: This topic describes the Finance and Operations - Compensation and Benefits Power BI content. 
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Finance and Operations - Compensation and Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the Finance and Operations - Compensation and Benefits Power BI content. 
 
 ## Reports that are included in the content pack
 After you’ve connected the content pack to your Finance and Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
