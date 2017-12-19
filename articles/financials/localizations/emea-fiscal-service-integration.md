@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal service (ESR) integration
-description: This topic provides information about the Fiscal service integration for Austria and the Czech Republic.
+description: This topic provides information about the fiscal service integration for Austria and the Czech Republic.
 author: Anasyash
 manager: AnnBe
 ms.date: 12/07/2017
@@ -32,470 +32,324 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-In Austria, all cash payments should be signed by an external device or service and securely stored. In Czech Republic, all cash payments should be sent to the government portal for a fiscal signature. In both countries, a cash receipt should be issued where the signature is printed.
+In Austria, all cash payments should be signed by an external device or service, and they should be securely stored. In the Czech Republic, all cash payments should be sent to the government portal for a fiscal signature. In both countries, a cash receipt should be issued where the signature is printed.
 
-To support these requirements for these two countries, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition allows you to integrate with a fiscal service that is compliant with specific requirements for cash payment control in different countries. 
+To support these country-specific requirements, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.
 
 > [!NOTE]
-> It's assumed that all other specific country legal requirements concerning the registered transactions are fulfilled on the side of fiscal service and it is the user's responsibility to properly set up and administer the third-party fiscal service.
+> It's assumed that the third-party fiscal service meets all other country-specific legal requirements about registered transactions. You're responsible for correctly setting up and administering the fiscal service.
 
 ## Available configurations
-The format of Cash receipt, XML request to Fiscal service and XML response from Fiscal service are configured as Electronic reporting configurations. The following configurations are available:
 
-<table class="table ng-scope">
-	<tbody>
-		<tr>
-			<td width="198">
-			<p><span><strong>Configuration Name</strong></span></p>
-			</td>
-			<td width="208" class="x-hidden-focus">
-			<p><span><strong>Configuration Description</strong></span></p>
-			</td>
-			<td width="227">
-			<p><span><strong>Comment</strong></span></p>
-			</td>
-			<td width="227"><strong>GER configuration files in LCS Shared Asset Library</strong></td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span><strong>Cash Receipt Model</strong></span></p>
-			</td>
-			<td width="208" class="x-hidden-focus">
-			<p><span><strong><span lang="EN-US"> </span></strong></span></p>
-			</td>
-			<td width="227">
-			<p><span><strong>Data model for cash receipt format</strong></span></p>
-			</td>
-			<td width="227"><strong>Cash Receipt Model.version.1.xml</strong></td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> Cash Receipt Format</span></p>
-			</td>
-			<td width="208">
-			<p><span><span> </span></span></p>
-			</td>
-			<td width="227">
-			<p><span class="x-hidden-focus">Basic format for cash receipt</span></p>
-			</td>
-			<td width="227">Cash Receipt Format.version.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> Cash Receipt Format (AT)</span></p>
-			</td>
-			<td width="208">
-			<p><span><span lang="EN-US"> </span></span></p>
-			</td>
-			<td width="227">
-			<p><span>Format for cash receipt in Austria (incl. QR code)</span></p>
-			</td>
-			<td width="227">Cash Receipt Format (AT).version.1.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> Cash Receipt Format (CZ)</span></p>
-			</td>
-			<td width="208">
-			<p><span><span lang="EN-US"> </span></span></p>
-			</td>
-			<td width="227" class="x-hidden-focus">
-			<p><span>Format for cash receipt in Czech Republic (incl. BP Id)</span></p>
-			</td>
-			<td width="227">Cash Receipt Format (CZ).version.1.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span><strong>Cash Register Model</strong></span></p>
-			</td>
-			<td width="208">
-			<p><span><strong><span lang="EN-US"> </span></strong></span></p>
-			</td>
-			<td width="227">
-			<p><span><strong>Data model for cash register integration</strong></span></p>
-			</td>
-			<td width="227"><strong>Cash Register Model</strong>.<strong>version.1.xml</strong></td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> ESR Request example</span></p>
-			</td>
-			<td width="208">
-			<p><span>EFSTA Simple Receipt Request example</span></p>
-			</td>
-			<td width="227">
-			<p><span>Basic format for Sample XML request to Fiscal service EFSTA (could be used in Austria)</span></p>
-			</td>
-			<td width="227">ESR Request example.version.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> ESR Request example (CZ)</span></p>
-			</td>
-			<td width="208">
-			<p><span>EFSTA Simple Receipt Request example (CZ)</span></p>
-			</td>
-			<td width="227">
-			<p><span>Format for Sample XML request to Fiscal service EFSTA in Czech Republic</span></p>
-			</td>
-			<td width="227">ESR Request example (CZ).version.1.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> ESR Response example</span></p>
-			</td>
-			<td width="208">
-			<p><span>EFSTA Simple Receipt Response example</span></p>
-			</td>
-			<td width="227">
-			<p><span>Basic format for Sample XML response to Fiscal service EFSTA (could be used in Austria)</span></p>
-			</td>
-			<td width="227">ESR Response example.version.1.1.xml</td>
-		</tr>
-		<tr>
-			<td width="198">
-			<p><span> ESR Response example (CZ)</span></p>
-			</td>
-			<td width="208">
-			<p><span>EFSTA Simple Receipt Response example (CZ)</span></p>
-			</td>
-			<td width="227">
-			<p><span>Format for Sample XML response to Fiscal service EFSTA in Czech Republic</span></p>
-			</td>
-			<td width="227">ESR Response example (CZ).<strong>version</strong>.1.1.1.xml</td>
-		</tr>
-	</tbody>
-</table>
+The formats of the cash receipt, the XML request to the fiscal service, and the XML response from the fiscal service are configured as Electronic reporting (ER) configurations that are stored in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The following configurations are available.
+
+| Configuration name | Configuration description | Comment | ER configuration file in the LCS Shared asset library |
+|---|---|---|---|
+| **Cash Receipt Model** | | **Data model for the cash receipt format** | **Cash Receipt Model.version.1.xml** |
+| Cash Receipt Format | | Basic format for a cash receipt | Cash Receipt Format.version.1.1.xml |
+| Cash Receipt Format (AT) | | Format for a cash receipt in Austria (This format includes a Quick Response Code \[QR code\].) | Cash Receipt Format (AT).version.1.1.1.xml |
+| Cash Receipt Format (CZ) | | Format for a cash receipt in the Czech Republic (This format includes the Business Premises \[BP\] ID.) | Cash Receipt Format (CZ).version.1.1.1.xml |
+| **Cash Register Model** | | **Data model for cash register integration** | **Cash Register Model.version.1.xml** |
+| ESR Request example | Example of a European Fiscal Standards Association (EFSTA) Simple Receipt (ESR) Request | Basic format for a sample XML request to the EFSTA fiscal service (This format can be used in Austria.) | ESR Request example.version.1.1.xml |
+| ESR Request example (CZ) | Example of an ESR Request for the Czech Republic | Format for a sample XML request to the EFSTA fiscal service in the Czech Republic | ESR Request example (CZ).version.1.1.1.xml |
+| ESR Response example | Example of an ESR Response | Basic format for a sample XML response to the EFSTA fiscal service (This format can be used in Austria.) | ESR Response example.version.1.1.xml |
+| ESR Response example (CZ) | Example of an ESR Response for the Czech Republic | Format for a sample XML response to the EFSTA fiscal service in the Czech Republic | ESR Response example (CZ).version.1.1.1.xml |
 
 ## Setup
 
-### Cash registers 
-Each cash register must be set up to communicate with the fiscal service. You can set up cash registers on the **Cash registers** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash registers**). Refer to the following table for more information.
+### Cash registers
 
-<table> 
+Every cash register must be set up to communicate with the fiscal service. You can set up cash registers on the **Cash registers** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash registers**). The following table gives more information about the setup that is required.
+
+<table>
+<thead>
 <tr>
-	<td><strong>Setup</strong></td>
-<td><strong>Details</strong></td>
-<td><strong>More information</strong></td></tr>
+<th>Setup</th>
+<th>Details</th>
+<th>More information</th>
+</tr>
+</thead>
+<tbody>
 <tr>
-	<td>Cash Register settings</td>
-	<td>Enter the <strong>Cash register URL</strong>, the <strong>Key Vault name</strong> and the <strong>Class name</strong>.</td>
-	<td><p><strong>Cash register URL</strong> - Enter the URL for the Fiscal service. <strong>WARNING</strong>: Third party services or other services that you configure here do not require a certification and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about each service's provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://).</p>
-		<p><strong>Key Vault name</strong> - If the fiscal service is accessible at a secure connection (https://), you should set up certificates and store them properly on both sides – Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the third party fiscal service. Choose the name of the Key Vault where the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition certificate is stored. For more information, see <a href="https://support.microsoft.com/en-us/help/4040305/setting-up-a-key-vault-client"> Setting up a Key Valut Client</a>.</p>
-		<p><strong>Class name</strong> - Choose the class where specifics of integration with the fiscal service are implemented. Available class is CashRegisterProcessingEFSTA_W</p>
-	</td>
-	</tr>
+<td>Cash register settings</td>
+<td>Specify the URL of the cash register, the name of the instance of Microsoft Azure Key Vault, and the class name.</td>
+<td><ul>
+<li><strong>Cash register URL</strong> – Enter the URL of the fiscal service.
+<blockquote>[!WARNING]<br>Third-party services or other services that you configure here don't require certification, and they might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about the level of compliance that each service provides. You're responsible for making sure that these services meet your security-related, privacy-related, and legal standards. You bear the risk of using these services. Microsoft gives no express warranties, guarantees, or conditions. We strongly recommend that you use only services that provide secure and authorized connections (that is, services that use the HTTPS protocol).</blockquote>
+</li>
+<li><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service). In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored. For more information, see <a href="https://support.microsoft.com/en-us/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</li>
+<li><strong>Class name</strong> – Select the class where specifics of the integration with the fiscal service are implemented. The available class is <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
+</ul>
+</td>
+</tr>
 <tr>
 <td>Configurations</td>
-<td>For each cash register, select the electronic reporting formats for printing of Receipt, sending Request to fidcal service and getting Responce from service that are appropriate for the legal entity's primary address.	</td>
-<td><p><strong>Example</strong>: For the receipt format, select "Cash receipt format (AT)" for Austria and "Cash receipt format(CZ) for the Czech Republic.</p> 
-	<p>If you can't find a format in the list, you can download recent electronic formats from Lifecycle Services. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs"> Download Electronic reporting configurations</a>.</p>
-	</td>
+<td>For each cash register, select the ER formats to use to print receipts, send requests to the fiscal service, and receive responses from the fiscal service. The ER formats that you select must be appropriate for the legal entity's primary address.</td>
+<td>For example, for the receipt format, select <strong>Cash receipt format (AT)</strong> for Austria and <strong>Cash receipt format (CZ)</strong> for the Czech Republic.
+
+If you can't find a format in the list, you can download recent electronic formats from LCS. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</td>
 </tr>
 <tr>
 <td>Cash register certificate settings</td>
-<td>Enable sage of self-signed certificates</td>
-	<td><p><strong>Use a self-signed certificate</strong> - Select <strong>yes</strong> if you are going to use a self-generated and self-signed certificate which you are not able to add in the list of trusted certificates.</p><p><strong>Cash register certificate thumbprint</strong> - Enter the thumbprint of the self-signed certificate that is stored in a fiscal service which will be used for validating the fiscal service certificate.</p></td>
+<td>Enable sage of self-signed certificates.</td>
+<td>
+<ul>
+<li><strong>Use a self-signed certificate</strong> – Set this option to <strong>Yes</strong> if you will use a self-generated, self-signed certificate that you can't add to the list of trusted certificates.</li>
+<li><strong>Cash register certificate thumbprint</strong> – Enter the thumbprint of the self-signed certificate that is stored in a fiscal service, and that will be used to validate the fiscal service certificate.</li>
+</ul>
+</td>
 </tr>
+</tbody>
 </table>
 
 ### Cash register locations
-You can set up locations of cash registers on the **Cash register locations** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash register locations**). 
 
-#### Czech Republic prerequisites
-Before you set up cash register locations for a legal entity with a primary address in the Czech Republic, you must do the following:
+You can set up the locations of cash registers on the **Cash register locations** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register locations**).
 
-1. Create a tax registration type for Business Premises ID (**Organization administration** > **Global address book** > **Registration types** > **Registration types**). 
-	1. This registration type should be restricted to **Organization**.
-2. Associate the registration type that you created in step one with the registration category **Business Premise ID**.
-	1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**. 
-	2. Select the registration type that you created earlier, and then select **Business Premise ID** for the **Registration category**.
-3. Associate the Business Premises ID number with the operating unit address for the operating unit that you will use for the cash register loation. 
-	1. Go to **Organization administration** > **Common** > **Organizations** > **Internal organizations**.
-	2. Select the organization to associate with the Business Premise ID number.
-	3. Expand the **Addresses** FastTab and click **More options** > **Advanced**. 
-	4. On the **Registration Id** FastTab, click **Add**. 
-	5. Select the registration type that you created in step one earlier.
-	6. Enter the registration number.
+#### Prerequisites for the Czech Republic
+
+Before you set up cash register locations for a legal entity that has its primary address in the Czech Republic, you must follow these steps.
+
+1. Create a tax registration type for the BP ID by selecting **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
+
+    This registration type should be restricted to **Organization**.
+
+2. Associate the registration type with the **Business Premise ID** registration category:
+
+    1. Select **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
+    2. Select the registration type that you created earlier, and then, in the **Registration category** field, select **Business Premise ID**.
+
+3. Associate the BP ID with the operating unit address of the operating unit that will be used for the cash register location.
+
+    1. Select **Organization administration** &gt; **Common** &gt; **Organizations** &gt; **Internal organizations**.
+    2. Select the organization to associate with the BP ID.
+    3. On the **Addresses** FastTab, select **More options** &gt; **Advanced**.
+    4. On the **Registration ID** FastTab, select **Add**.
+    5. Select the registration type that you created earlier.
+    6. Enter the registration number.
 
 ### Create cash register terminals
-Create cash register terminals which are available for the location and assign the cash register for the terminal on the **Cash register terminals** page (**Accounts receivable** > **Setup** > **Cash registers** > **Cash register terminals**).
+
+You can create the cash register terminals that will be available for the location, and then assign the cash register to the terminal, on the **Cash register terminals** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register terminals**).
 
 ### Assign the user to a person
-Assign a User who is acting as cash operator and is allowed to log a cash transaction which will be registered in cash register, to a Person in **System administration** > **Users**. 
+
+The user who will act as a cash operator, and who will be allowed to log cash transactions that are registered in the cash register, must be assigned to a person. You can assign a user to a person by selecting **System administration** &gt; **Users**.
 
 ### Set up cash register operators
-Set up cash register operators, assign them to the cash register location and assign default terminal in **Accounts receivable** > **Setup** > **Cash register** > **Cash register operators**. 
+
+You can set up cash register operators, assign them to the cash register location, and assign a default terminal by selecting **Accounts receivable** &gt; **Setup** &gt; **Cash register** &gt; **Cash register operators**.
 
 ### Set up methods of payment that require fiscal registration
-Set up methods of payment, which needs to be registered in cash register at **Accounts receivable** > **Setup** > **Cash registers** > **Cash register methods of payment**. 
 
-|Field |Description |
-|--|-------|
-|Method of payment|Choose a method of payment which needs to be registered in cash register and sent to Fiscal service.|
-|Register tax amount|Activate the check box if the tax amounts related to the cash payment amount need to be registered in Fiscal service.|
+You can set up methods of payment that must be registered in a cash register. Select **Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register methods of payment**, and then set the following fields.
+
+| Field | Description |
+|---|---|
+| Method of payment | Select a method of payment that must be registered in the cash register and sent to the fiscal service. |
+| Register tax amount | Select the check box to indicate that the tax amounts that are related to a cash payment amount must be registered in the fiscal service. |
 
 #### Important notices
-In the following scenarios, the tax amounts related to the payment amount can be identified reliably from the posted transactions:
-- For the cash payment posted automatically during posting of a COD invoice (cash on delivery terms of payment), tax amounts sent are equal to the tax amounts produced by an invoice posting.
-- For the cash prepayment posted manually from the customer payment journal, when sales tax amounts are calculated and posted from the payment journal (tax amounts posted from the prepayment are always sent irrespectively from the parameter Register tax amount).
-User should consult with local tax authority to identify the requirements to registering the tax amounts related to the cash payment in the cash register. User should split methods of payment if necessary.
 
-In the following scenarios, the tax amounts related to payment amount can't be identified reliably from the posted transactions:
-- For the cash payment posted manually from the customer payment journal and settled to the previously posted invoice which contains a posted tax amount.
-- If you set up to send these tax amounts to cash register, they can't be considered as fully correct tax amounts but rather rough tax amounts are calculated from the payment amount by a specific amount distribution logic. 
+In the following scenarios, the tax amounts that are related to the payment amount can be reliably identified from the posted transactions:
 
-In these scenarios, the correct tax amounts are presented only in the settled posted invoice. Consult with local tax authority to identify the right way for submitting the invoiced tax amounts to tax authority checks for these scenarios.
+- For the cash payment that is automatically posted when a cash on delivery (COD) invoice (COD terms of payment) is posted. In this case, tax amounts that are sent are equal to the tax amounts that are produced by an invoice posting.
+- For the cash prepayment that is manually posted from the Customer payment journal, when sales tax amounts are calculated and posted from the payment journal. (Tax amounts that are posted from a prepayment are always sent, regardless of the setting of the **Register tax amount** check box.)
 
-### Create terms of payment for cash on delivery scenario
-Create Terms of payment with Cash on delivery payment method if a cash payment can be received in the moment of an invoice posting, at **Account receivables** > **Payment** > **Terms of payment**.
+You should consult the local tax authority to identify the requirements for registering tax amounts that are related to a cash payment in the cash register. You should split methods of payment as required.
 
-|Field |Description |
-|--|-------|
-|Payment method |Choose "COD".|
-|Cash payment| Enable the parameter to create an automatic payment transaction.|
-|Cash| Choose G/L account for posting of an automatically generated cash payment.| 
+In the following scenarios, the tax amounts that are related to the payment amount can't be reliably identified from the posted transactions:
+
+- For the cash payment that is manually posted from the Customer payment journal and settled against the previously posted invoice that contains a posted tax amount.
+- If you set up to send these tax amounts to the cash register. In this case, the tax amounts can't be considered fully correct tax amounts. A specific amount distribution logic calculates approximate tax amounts, based on the payment amount.
+
+In these scenarios, the correct tax amounts are presented only in the posted invoice that is settled. Consult the local tax authority to identify the correct method for submitting the invoiced tax amounts to tax authority checks for these scenarios.
+
+### Create terms of payment for a COD scenario
+
+If a cash payment can be received when an invoice is posted, you can create terms of payment that have the **Cash on delivery** payment method. Select **Account receivables** &gt; **Payment** &gt; **Terms of payment**, and then set the following fields.
+
+| Field | Description |
+|---|---|
+| Payment method | Select **COD**. |
+| Cash payment | Enable the parameter to create an automatic payment transaction. |
+| Cash | Select the general ledger account that is used to post cash payments that are automatically generated. |
 
 ## Example
-This section walks you through the following business processes using the [EFR](http://public.efsta.net/efr/) fiscal service provided by EFSTA(European Fiscal Standards Association) as an example.
 
-- After you post a cash payment that is liable for registration, a cash register transaction with data to be signed is created and sent for the registration to fiscal service in the specified XML format. 
-- Response with a signature and fiscal codes (generated by Fiscal service per country-specific rules) is received from the fiscal service and stored in the Cash register fiscal transaction.
-- The cash receipt with transaction data and signatures/fiscal codes is printed.
+This section walks you through the following business processes and uses the [EFSTA Fiscal Register (EFR)](http://public.efsta.net/efr/) fiscal service as an example:
 
-### Register automatically posted COD payment for the Free text invoice and print cash receipt
-1. Go to **Accounts receivable** > **Free text invoices** > **All free text invoices**.
+- After you post a cash payment that is liable for registration, a cash register transaction that has data that must be signed is created. This transaction is then sent, in the specified XML format, to the fiscal service for registration.
+- You receive a response from the fiscal service. This response has a signature and fiscal codes that the fiscal service generates according to country/region-specific rules. This response is stored in the cash register fiscal transaction.
+- The cash receipt is printed. This receipt includes the transaction data, signatures, and fiscal codes.
+
+### Register an automatically posted COD payment for a free text invoice and print a cash receipt
+
+1. Select **Accounts receivable** &gt; **Free text invoices** &gt; **All free text invoices**.
 2. Create a free text invoice. For more information, see [Create a free text invoice](../accounts-receivable/tasks/create-free-text-invoice.md).
-3. On the **Payment** FastTab, select the method of payment that is set up as cash a register method of payment. 
-4. Select a terms of payment that is set up for cash on delivery. 
-5. Click **Post**.
-6. In the **Post free text invoice** dialog, do the following:
-	1. Activate the check-box **Print receipt** in the fast tab **Parameters** for printing the cash receipt after the invoice is posted.
-	2. On fast tab **Cash register** review the location, terminal, cash register and operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator.
-	3. Click **OK**.
-7. Review the generated cash receipt for the posted invoice. By default, the generated cash receipt is available as a file. For information about how to set up other destinations that you could use for cash receipt output, see [Electronic Reporting Destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+3. On the **Payment** FastTab, select a method of payment that is set up as a method of payment for the cash register.
+4. Select terms of payment that are set up for COD.
+5. Select **Post**.
+6. In the **Post free text invoice** dialog box, follow these steps:
+
+    1. On the **Parameters** FastTab, select the **Print receipt** check box to print a cash receipt after the invoice is posted.
+    2. On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.
+    3. Select **OK**.
+
+7. Review the cash receipt that is generated for the posted invoice. By default, the generated cash receipt is available as a file. For information about how to set up other destinations that you can use for cash receipts, see [Electronic Reporting Destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
-### Register automatically posted COD payment for the Sales order invoice and print cash receipt
-1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
+### Register an automatically posted COD payment for a sales order invoice and print a cash receipt
+
+1. Select **Accounts receivable** &gt; **Orders** &gt; **All sales orders**.
 2. Create a sales order. For more information, see [Create a sales order](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
-3. On fast tab Price and discount, choose Method of payment which is set up as a cash register method of payment. Choose Terms of payment with cash on delivery settings in the **Payment field**.
-4. Click **Invoice** > **Invoice**.
-5. Expand the **Parameters** FastTab and select the **Print receipt** check box to print a cash receipt after the invoice is posted.
-6. On the **Cash register** FastTab, review and modify the following information if necessary: Location, Terminal, Cash register and Operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator.
+3. On the **Price and discount** FastTab, select a method of payment that is set up as a method of payment for the cash register.
+4. In the **Payment** field, select terms of payment that are set up for COD.
+5. Select **Invoice** &gt; **Invoice**.
+6. On the **Parameters** FastTab, select the **Print receipt** check box to print a cash receipt after the invoice is posted.
+7. On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes. Modify the information as you require. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.
 
-### Register customer payment from Customer payment journal and print cash receipt
+### Register a customer payment from the Customer payment journal and print a cash receipt
 
-1. Go to Customer payment journal at **Accounts receivables** > **Journals** > **Payments** > **Payment journal** (or General journal at **General ledger** > **Journals** > **General journal**).
-2. Create the journal lines with a customer cash payment. 
-3. On the **Payment** tab, select a method of payment that is set up as a cash register method of payment. Select the **Prepayment journal voucher** check box if this is a prepayment. 
-4. On tab **Payment**, review and modify the following information if necessary: Location, Terminal, Cash register and Operator code. The terminal code is pre-filled from the **Default cash register terminal** field in the **Cash register operators** page. Change the Terminal code only if the cash payment is received in a different cash register terminal available for the current operator. 
-5. Click **Post** > **Post**. 
-6. Click **Print** > **Cash receipt** to print a receipt with fiscal codes.
+1. Select **Accounts receivables** &gt; **Journals** &gt; **Payments** &gt; **Payment journal** to open the Customer payment journal. (Alternatively, select **General ledger** &gt; **Journals** &gt; **General journal** to open the General journal.)
+2. Create the journal lines that have a customer cash payment.
+3. On the **Payment** tab, select a method of payment that is set up as a method of payment for the cash register.
+4. Select the **Prepayment journal voucher** check box if the payment is a prepayment.
+5. On the **Payment** tab, review the location, terminal, cash register, and operator codes. Modify the information as you require. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.
+6. Select **Post** &gt; **Post**.
+7. Select **Print** &gt; **Cash receipt** to print a receipt that includes fiscal codes.
 
-### Register customer payment from Slip journal and print cash order with cash receipt information (Czech Republic only)
+### Register a customer payment from the Slip journal and print a cash order that includes cash receipt information (Czech Republic only)
 
-1. Go to **Cash and bank management** > **Journals** > **Slip journal**.
-2. Create the journal lines with a customer cash payment.
-3. On the **Payment** tab, review the fields in the **Cash register** section. 
-4. Modify the **Terminal code** only if the cash payment was received in a different cash register terminal. The terminal code is auto-filled from the **Default cash register terminal** field on the **Cash register operators** page. 
-5. Click **Documents approval** > **Approve**. The cash order number is assigned to the payment.
-6. Click **Post** > **Post**.  
-7. Click **Print** > **Cash order** to print a cash order that includes fiscal codes.
+1. Select **Cash and bank management** &gt; **Journals** &gt; **Slip journal**.
+2. Create the journal lines that have a customer cash payment.
+3. On the **Payment** tab, review the fields in the **Cash register** section. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment was received at a different cash register terminal. 
+4. Select **Documents approval** &gt; **Approve**. The cash order number is assigned to the payment.
+5. Select **Post** &gt; **Post**.
+6. Select **Print** &gt; **Cash order** to print a cash order that includes fiscal codes.
 
 ### Cancel a payment
 
-If the payment to be cancelled has been registered in the cash register with a cash receipt number, then a new cash receipt number with a negative amount will be registered in the same cash register when you cancel the payment. The payment cancellation cash receipt will include the same amounts as the initial receipt except with a negative sign.
+If a cash receipt number has been registered for a payment in the cash register, and you then cancel the payment, a new cash receipt number is registered in the same cash register. The payment cancellation cash receipt includes all the same amounts as the original receipt, but the amounts have a negative sign.
 
-1. Go to the **Customer transactions** page.
-	1. Go to **Accounts receivable** > **Customers** > **All Customers**. 
-	2. Select a customer.
-	3. On the Action Pane, click **Customer** > **Transactions**. 
+1. Open the **Customer transactions** page:
+
+    1. Select **Accounts receivable** &gt; **Customers** &gt; **All Customers**.
+    2. Select a customer.
+    3. On the Action Pane, select **Customer** &gt; **Transactions**.
+
 2. Select the payment transaction to reverse.
-3. Click **Reverse** > **Cancel payment**.
-3. Enter the necessary information and then click **OK** to create the payment cancellation transaction and return to the **Customer transactions** page. 
-4. Select the newly created payment cancellation transaction and then click **Print** > **Cash receipt** to print a cash receipt that includes fiscal codes.
+3. Select **Reverse** &gt; **Cancel payment**.
+3. Enter the required information, and then select **OK** to create the payment cancellation transaction and return to the **Customer transactions** page.
+4. Select the new payment cancellation transaction, and then select **Print** &gt; **Cash receipt** to print a cash receipt that includes fiscal codes.
 
-### Review Cash register fiscal transactions. Resend transaction to cash register.
+### Review cash register fiscal transactions and resend a transaction to the cash register
 
-You can review the registered cash payments, and you can also reprint the original cash receipt or a copy of the cash receipt from the  original and copy at **Accounts receivable** > **Inquires** > **Cash register fiscal transactions**.
+You can review the cash payments that have been registered, and you can also reprint the original cash receipt or a copy of the cash receipt from the original and copy, by selecting **Accounts receivable** &gt; **Inquires** &gt; **Cash register fiscal transactions**.
 
-If the cash payment wasn't successfully registered for a reason that is not related to the exception scenarios described in the law which should be correctly handled on fiscal service side, you will get an error message after a posting a cash payment. The cash register transaction with a status of **Created** will be available on the **Cash register fiscal transactions** page. You must fix issues and manually resend the created cash transactions to the cash register. Otherwise, you cannot print the cash receipt with fiscal codes. When a cash payment is correctly registered, it will have a status of **Registered**.
+The law describes exception scenarios that the fiscal service should correctly handle. If a cash payment wasn't successfully registered for a reason that isn't related to one of those exception scenarios, you will receive an error message after you post a cash payment. The cash register transaction that has a status of **Created** will be available on the **Cash register fiscal transactions** page. You must fix the issues and manually resend the cash transactions that are created to the cash register. Otherwise, you can't print a cash receipt that includes fiscal codes. When a cash payment is correctly registered, it has a status of **Registered**.
 
-Fields description for the Cash register payment transactions:
+The following table describes the fields for cash register payment transactions.
 
-<table >
-		<tr>
-			<td >
-			<p><strong>Field</strong></p>
-			</td>
-			<td >
-			<p><strong>Description</strong></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Cash register</p>
-			</td>
-			<td>
-			<p>ID of cash register</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Transaction ID</p>
-			</td>
-			<td>
-			<p>ID of transaction in cash register</p>
-			<p>This value is received from Fiscal service.</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Cash register URL</p>
-			</td>
-			<td>
-			<p>URL of the place where Fiscal service is located.</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Status</p>
-			</td>
-			<td>
-			<p>Status of transaction. Possible values:</p>
-				<ul><li>Created. The payment transaction is posted, but not registered.</li>
-			<li>Registered The payment transaction is posted and registered (sent to Fiscal service and received response with fiscal codes). </li></ul>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>CZ/Czech republic: Offline </p>
-			</td>
-			<td>
-			<p>Indication that the cash transaction is registered in Offline regime (allowed exception) and PKP code is received. </p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Terminal</p>
-			</td>
-			<td>
-			<p>Code of cash register terminal</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Operator</p>
-			</td>
-			<td>
-			<p>Code of cash register operator</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Voucher</p>
-			</td>
-			<td>
-			<p>Voucher number of posted cash transaction</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Date</p>
-			</td>
-			<td>
-			<p>Date of transaction</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Receipt number</p>
-			</td>
-			<td>
-			<p>Number of cash receipt</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Transaction date and time</p>
-			</td>
-			<td>
-			<p>Date and time of registered transaction</p>
-			<p>This value is received from Fiscal service.</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Receipt amount</p>
-			</td>
-			<td>
-			<p>Payment amount</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Currency</p>
-			</td>
-			<td>
-			<p>Currency of payment</p>
-			</td>
-		</tr>
-		<tr>
-			<td>Name</td>
-			<td>
-			<p>Name of fiscal code received from the fiscal service. Possible values:
-				<ul>
-			<li>Info – additional information</li>
-			<li>AT/Austria: Code - signature</li>
-			<li>AT/Austria: Link – signature dependent link</li>
-				</ul>
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td> Label </td>
-			<td> <p>Label of the fiscal code received from the fiscal service</p>
-			<p>Possible values:
-				<ul>
-					<li> CZ/Czech Republic: <strong>FIK</strong> – Fiscal Identification Code</li>
-			<li> CZ/Czech Republic: <strong>BKP</strong> – Security Code</li>
-			<li> CZ/Czech Republic: <strong>PKP</strong> – Signature Code (returned in case of offline registration)</li>
-				</ul></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Value</p>
-			</td>
-			<td>
-			<p>Value of fiscal code received from fiscal service</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Value</p>
-			</td>
-			<td>
-			<p>% of registered tax</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Sales tax amount</p>
-			</td>
-			<td>
-			<p>Amount of registered tax</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Gross amount</p>
-			</td>
-			<td>
-			<p>Amount of registered payment</p>
-			</td>
-		</tr>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cash register</td>
+<td>The ID of the cash register.</td>
+</tr>
+<tr>
+<td>Transaction ID</td>
+<td>The ID of the transaction in the cash register. This value is received from the fiscal service.</td>
+</tr>
+<tr>
+<td>Cash register URL</td>
+<td>The URL of the place where the fiscal service is located.</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>The status of the transaction. The following values are used:
+<ul>
+<li><strong>Created</strong> – The payment transaction has been posted but hasn't been registered.</li>
+<li><strong>Registered</strong> – The payment transaction has been posted and registered. (In other words, you've sent the payment transaction to the fiscal service, and you've received a response that includes fiscal codes.)</li>
+</ul></td>
+</tr>
+<tr>
+<td>(CZ/Czech Republic) Offline</td>
+<td>An indicator that the cash transaction was registered offline (allowed exception), and a PKP (signature code) was received.</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>The code of the cash register terminal.</td>
+</tr>
+<tr>
+<td>Operator</td>
+<td>The code of the cash register operator.</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>The voucher number of the posted cash transaction.</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>The date of the transaction.</td>
+</tr>
+<tr>
+<td>Receipt number</td>
+<td>The number of the cash receipt.</td>
+</tr>
+<tr>
+<td>Transaction date and time</td>
+<td>The date and time of the registered transaction. This value is received from the fiscal service.</td>
+</tr>
+<tr>
+<td>Receipt amount</td>
+<td>The payment amount.</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>The currency of the payment.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name of the fiscal code that is received from the fiscal service. The following values can be used:
+<ul>
+<li><strong>Info</strong> – Additional information</li>
+<li>(AT/Austria) <strong>Code</strong> – Signature</li>
+<li>(AT/Austria) <strong>Link</strong> – Signature-dependent link</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>The label of the fiscal code that is received from the fiscal service. The following values can be used:
+<ul>
+<li>(CZ/Czech Republic) <strong>FIK</strong> – Fiscal identification code</li>
+<li>(CZ/Czech Republic) <strong>BKP</strong> – Security code</li>
+<li>(CZ/Czech Republic) <strong>PKP</strong> – Signature code (This code is returned in the event of offline registration.)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>The value of the fiscal code that is received from the fiscal service.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>The percentage of registered tax.</td>
+</tr>
+<tr>
+<td>Sales tax amount</td>
+<td>The amount of registered tax.</td>
+</tr>
+<tr>
+<td>Gross amount</td>
+<td>The amount of the registered payment.</td>
+</tr>
+</tbody>
 </table>
-
-
