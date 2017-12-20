@@ -36,145 +36,87 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now suppor
 
 This topic will help you plan and prepare for your on-premises deployment.
 
-**
-**
-
-Differences between cloud deployments and on-premises deployments
------------------------------------------------------------------
-
+## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:
+- [Deployment options](choose-deployment-type.md)
+- [Cloud and on-premises feature comparison](articles/fin-and-ops/get-started/cloud-prem-comparison.md)
+- [Features not implemented in on-premises deployments](articles/fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [Deprecated features](../migration-upgrade/deprecated-features)
 
--   [Deployment options](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type)
-
--   [C](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/cloud-prem-comparison)loud and on-premises feature comparison
-
--   [Features not implemented in on-premises deployments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/features-not-implemented-on-prem?hubRefSrc=email&utm_source=lfemail&utm_medium=email)
-
--   [Deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)
-
-How LCS is used with on-premises deployments
---------------------------------------------
-
+## How LCS is used with on-premises deployments
 Microsoft Dynamics Lifecycle Services (LCS) is an application management portal that provides tools and services for managing the application lifecycle. Customers and partners use LCS to manage both cloud and on-premises deployments. You can use LCS for the following tasks:
-
--   Deploy cloud and on-premises environments.
-
--   Service your environments.
-
--   Monitor, diagnose, and analyze the health of the environments that you manage (cloud only).
-
--   Search for product issues and regulatory features.
-
--   Obtain support.
+- Deploy cloud and on-premises environments.
+- Service your environments.
+- Monitor, diagnose, and analyze the health of the environments that you manage (cloud only).
+- Search for product issues and regulatory features.
+- Obtain support.
 
 For more information about LCS, see [Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs).
 
-Environments
-------------
-
+## Environments
 There are four types of environments that you need to plan for. This section describes the four environments and how to access and deploy them.
 
 ### Demo environment
-
-You can sign up for a demo environment to learn about Finance and Operations. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for a preview subscription](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
+You can sign up for a demo environment to learn about Finance and Operations. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md).
 
 ### Developer environment
-
-The development experience for Finance and Operations is the same for cloud and on-premises deployments. To access a developer environment, see [Access instances](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances).
+The development experience for Finance and Operations is the same for cloud and on-premises deployments. To access a developer environment, see [Access instances](../dev-tools/access-instances.md).
 
 ### Sandbox environment
-
-Business users and functional team members validate application functionality by using a sandbox environment. This functionality includes customizations and data that was brought forward from Microsoft Dynamics AX 2012 environments. To deploy an on-premises sandbox environment, see [Set up and deploy on-premises environments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments).
+Business users and functional team members validate application functionality by using a sandbox environment. This functionality includes customizations and data that was brought forward from Microsoft Dynamics AX 2012 environments. To deploy an on-premises sandbox environment, see [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
 
 At a minimum, an on-premises sandbox environment requires:
-
--   3 machines running Environment Orchestrator
-
--   2 machines running Application Object Servers (AOS)
-
--   1 machine running Management Reporter (MR)
-
--   1 machine running SQL Server Reporting Services (SSRS)
-
--   1 machine running Azure Active Directory (Azure AD)
-
--   1 machine running SQL Server
+- 3 machines running Environment Orchestrator
+- 2 machines running Application Object Servers (AOS)
+- 1 machine running Management Reporter (MR)
+- 1 machine running SQL Server Reporting Services (SSRS)
+- 1 machine running Azure Active Directory (Azure AD)
+- 1 machine running SQL Server
 
 ### Production environment
+The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
 
-The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments).
+At a minimum, an on-premises production environment requires:
+- 3 machines running Environment Orchestrator
+- 3 machines running Application Object Servers (AOS)
+- 1 machine running Management Reporter (MR)
+- 1 machine running SQL Server Reporting Services (SSRS)
+- 2 or more machines running SQL Server
+- 2 or more machines running Azure Active Directory (Azure AD)
 
-<span id="_Hlk501530223" class="anchor"></span>At a minimum, an on-premises production environment requires:
-
--   3 machines running Environment Orchestrator
-
--   3 machines running Application Object Servers (AOS)
-
--   1 machine running Management Reporter (MR)
-
--   1 machine running SQL Server Reporting Services (SSRS)
-
--   2 or more machines running SQL Server
-
--   2 or more machines running Azure Active Directory (Azure AD)
-
-**
-**
-
-Service Fabric
---------------
-
+## Service Fabric
 An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
 
-<span id="_Hlk501531677" class="anchor"></span>An on-premises deployment has a standalone cluster for each sandbox environment and a standalone cluster for each production environment. The following roles or node types are deployed into both types of clusters:
-
--   Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios.
-
--   Management Reporter (MR) – Provides financial reporting functionality.
-
--   SQL Server Reporting Services (SSRS) – Provides document reporting functionality.
-
--   Environment Orchestrator – Enables on-premises environment management from LCS.
+An on-premises deployment has a standalone cluster for each sandbox environment and a standalone cluster for each production environment. The following roles or node types are deployed into both types of clusters:
+- Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios.
+- Management Reporter (MR) – Provides financial reporting functionality.
+- SQL Server Reporting Services (SSRS) – Provides document reporting functionality.
+- Environment Orchestrator – Enables on-premises environment management from LCS.
 
 The following diagram shows the node types deployed in a Service Fabric standalone cluster.
 
-<img src="media/image1.png" alt="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/media/on-premises-overview-01.png" width="624" height="284" />
+![Node types deployed in a Service Fabric standalone cluster](media/on-premises-overview-01.png)
 
 ### Service Fabric resources
-
 To learn more about Service Fabric, see the following topics:
+- [Azure Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric) - To learn more about Service Fabric.
+- [Service Fabric application upgrade](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade) - An Azure Service Fabric application is a collection of services that requires periodic upgrades.
+- [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
 
--   [Azure Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric) - To learn more about Service Fabric.
+## System requirements
+Review the system requirements in [System requirements for on-premises deployments](articles/fin-and-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
 
--   [Service Fabric application upgrade](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade) - An Azure Service Fabric application is a collection of services that requires periodic upgrades.
-
--   [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
-
-System requirements
--------------------
-
-Review the system requirements in [System requirements for on-premises deployments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements-on-prem) and be aware of the number of machines that are required for on-premises deployments.
-
-Hardware sizing
----------------
-
-Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System req](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements)uirements and [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
+## Hardware sizing
+Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](/articles/fin-and-ops/get-started/system-requirements.md) and [Setup and deployment instructions](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
 
 ### Factors that affect sizing
-
 The core factors that affect sizing are:
-
--   Transaction characterization
-
--   User characterization - Type and concurrency
-
--   Data composition
-
--   Extensions
-
--   Reporting usage patterns
-
--   Third-party solutions
+- Transaction characterization
+- User characterization - Type and concurrency
+- Data composition
+- Extensions
+- Reporting usage patterns
+- Third-party solutions
 
 The more detailed data that you collect, the more precisely you can estimate sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The minimum data that you need to collect is the peak transaction line load per hour. The factors that affect sizing are shown in the following diagram.
 
