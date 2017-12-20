@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Changes to price and discount extensibility for App Update 7.3
-description: This topic describes the changes Changes to price and discount extensibility for App Update 7.3.
+title: Changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+description: This topic describes the changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 author: smithanataraj
 manager: AnnBe
 ms.date: 12/10/2017
@@ -30,16 +30,11 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Changes to price and discount extensibility for App Update 7.3
+# Changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
-This is an overview of the changes being done to make the pricing area extensible.This article outlines the extensibility changes part of the Fall Release 2017 in the pricing area.
-
-You would be interested to read this if you currently have any customizations around the price and discount search in Dynamics 365. 
-
-Some of the most commonly seen customizations in the pricing area are:
-
-1. Adding new price group types and the corresponding price types (enum values for PriceType and PriceGroupType) and adding search mechanisms for the new price types.
-2. Modifying the price and discount search, including passing in any additional parameters to the PriceDisc class. 
+In Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later, the pricing area is extensible. Some common seen customization in the pricing area are:
+- Adding new price group types and the corresponding price types (enum values for PriceType and PriceGroupType) and adding search mechanisms for the new price types.
+- Modifying the price and discount search, including passing in any additional parameters to the PriceDisc class. 
 
 The solution here is targeting to address the above.
 
