@@ -78,6 +78,11 @@
 ### [Send email receipts from MPOS](email-receipts.md)
 ## [Task recorder and Help for POS](task-recorder-retail-pos.md)
 
+# Order fulfillment
+## [Overview of store order fulfillment](Order-fulfillment-overview.md)
+## [Set up fulfillment in the store](Order-fulfillment-POS-setup.md)
+## [Enable notifications in the point of sale](Notifications-POS.md)
+
 # Monitoring and analysis
 ## [Monitor sales and margin performance](monitor-sales-margin-performance.md)
 ## [Analyze sales trends and patterns](analyze-sales-trends-patterns.md)
