@@ -7,21 +7,21 @@ author: AdamTrukawka
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
+# ms.tgt_pltfrm:
+# ms.custom:
 ms.search.region: India
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-You can calculate depreciation for a group of fixed assets. The calculation is based on the number of days that is defined in the **Asset group depreciation threshold** field on the **General ledger parameters** page. The following table shows the various formulas that are used to calculate depreciation for asset groups.
+You can calculate depreciation for a group of fixed assets. The calculation is based on the number of days that is defined in the **Asset group depreciation threshold** field on the **Fixed assets parameters** page. The following table shows the various formulas that are used to calculate depreciation for asset groups.
 
 | Type of proposal   | Number of days that the asset is used                                                        | Formula |
 |--------------------|----------------------------------------------------------------------------------------------|---------|
@@ -55,27 +55,22 @@ Depreciation isn't calculated for an asset group that has a written-down value o
 
 If a positive or negative amount is entered in the **Debit** field on a journal line, the same amount is updated on the **Fixed asset balances** page. However, if a positive amount is entered in the **Credit** field, the amount is updated as a negative amount. This negative amount is then updated as a positive amount on the **Fixed asset balances** page.
 
-## Create and post a depreciation book journal
+## Create and post fixed asset depreciation in journal
 
-1. On the **Depreciation book journal** page, create a new depreciation book journal.
-2. In the **Name** field, select a journal name for the depreciation book journal.
-3. Select **Lines**.
-4. In the **Transaction type** field, select a transaction type.
-5. In the **Fixed asset number** field, select a fixed asset number.
+1. Create a new **Fixed asset journal** to post depreciation transaction.
+2. In the **Name** field, select journal for posting depreciation.
+3. Select **Lines** and add new line.
+4. In the **Transaction type** field, select **Depreciation** transaction type.
+5. In the **Account** field, select a fixed asset.
 
     > [!NOTE]
-    > The **Fixed asset number** field isn't available on a journal line if the fixed asset group and depreciation book that are selected have the **Depreciation** or **Depreciation adjustment** transaction type, and if the **Asset group depreciation** check box is selected.
+    > The **Fixed asset number** field isn't available in a journal line if the **Asset group depreciation** is set to **Yes** in fixed asset book.
 
 6. In the **Fixed asset group** field, select a fixed asset group.
-7. In either the **Debit** field or the **Credit** field, enter an amount.
-8. Select **Proposals** to generate different types of proposals for fixed asset groups that the **Asset group depreciation** check box has been selected for, and then select **OK**. You can create an acquisition, depreciation, revaluation, or bonus depreciation proposal.
-9. Select **Post** to post the journal, or post lines that have no errors and transfer the lines that have errors to a new journal. 
-
-    The totals of the amounts that are entered for fixed asset numbers that have the same fixed asset group and the same transaction type are updated on the **Fixed asset balances** page. (On the **Fixed assets** page, select a fixed asset. On the Action Pane, select **Depreciation books**. Select a depreciation book, and then select **Inquiry** &gt; **Balance**.)
-
-    For example, you post a journal voucher of the acquisition type for fixed asset numbers Book 1 and Book 2 in a fixed asset group. You enter INR 20,000.00 for Book 1 and INR 30,000.00 for Book 2. In this case, the total amount, INR 50,000.00, is shown in the **Acquisition** field on the **Fixed asset balances** page.
-
-    A new journal line is created for the proposal type, and the amount that is entered in the **Debit** field or the **Credit** field is updated on the **Fixed asset balances** page. (On the **Fixed assets** page, select a fixed asset. On the Action Pane, select **Depreciation books**. Select a depreciation book, and then select **Inquiry** &gt; **Balance**.)
+7. Enter depreciation amount in the **Credit** field.
+9. Select **Post** to post the journal.
+10. Navigate to **Fixed assets**, select fixed asset and the book as it was chosen in the journal line, on the Action Pane, select Transactions, notice depreciation amount posted for fixed asset group without specification of an asset.
+11. Navigate back to **Inquiry** &gt; **Asset group balance** and notice total depreciation amount posted for asset group in the selected book.
 
     > [!NOTE]
-    > Asset group depreciation doesn't apply to proposals of the **Consumption depreciation**, **Revenue recognition of reserves**, or **Extraordinary depreciation** type.
+    > In the journal you can use **Proposal** function for various proposal types to create transactions for fixed asset groups. Asset group depreciation doesn't apply to proposals of the **Consumption depreciation**, **Revenue recognition of reserves**, or **Extraordinary depreciation** type.
