@@ -504,7 +504,7 @@
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
-### [Planning for your on-premises deployment](plan-onprem-deployment.md)
+### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
 ### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
