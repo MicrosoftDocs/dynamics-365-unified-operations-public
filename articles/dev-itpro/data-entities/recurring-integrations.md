@@ -5,7 +5,8 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/14/2017
+ms.date: 12/19/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -138,6 +139,34 @@ Use the following API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+    
+### API for getting message status
+The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
+
+**Example**
+
+```
+    POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
+    BODY
+    {
+    "messageId":"<string>"
+    }
+```
+    
+The following table lists the possible status values.
+
+| Value              | Meaning                                                                              |
+|----------------------|--------------------------------------------------------------------------------------|
+| Enqueued             | The file has been successfully enqueued to blob storage                              |
+| Dequeued             | The file has been successfully dequeued from blob storage                            |
+| Acked                | The exported file has been acknowledged to be downloaded by the external application |
+| Preprocessing        | The import/export operation is pre-processing the request                            |
+| Processing           | The import/export operation is in process                                            |
+| Processed            | The import/export operation completed successfully                                   |
+| PreProcessingError   | The import/export operation failed in the pre-processing stage                       |
+| ProcessedWithErrors  | The import/export operation completed with errors                                    |
+| PostProcessingFailed | the import/export operation failed during post-processing                            |
+
     
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
