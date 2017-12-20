@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 
 
-# Order fulfillment point of sale setup
+# Set up order fulfillment for stores
 
 ## Overview
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help
