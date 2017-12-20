@@ -39,7 +39,7 @@ This topic will help you plan and prepare for your on-premises deployment.
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
-- [Cloud and on-premises feature comparison](articles/fin-and-ops/get-started/cloud-prem-comparison.md)
+- [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 - [Features not implemented in on-premises deployments](articles/fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features)
 
