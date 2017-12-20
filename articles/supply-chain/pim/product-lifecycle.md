@@ -5,7 +5,7 @@ title: Product lifecycle state
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: cvocph
 manager: AnnBe
-ms.date: 12/8/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
