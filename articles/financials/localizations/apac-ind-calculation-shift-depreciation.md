@@ -7,21 +7,21 @@ author: AdamTrukawka
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
+# ms.tgt_pltfrm:
+# ms.custom:
 ms.search.region: India
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 # Shift depreciation calculation
 [!include[banner](../includes/banner.md)]
 
-Per the Companies Act, 1956, you can calculate shift depreciation for a value model that currently has a status of **Selected** in the **Posting layer** field, if the Straight line percentage method or the Reducing balance depreciation method is selected for the value model in the **Depreciation profile** field on the **Value models** page.
+You can calculate shift depreciation for fixed assets Accordingly to The Indian Companies Act, 1956. You can activate shift depreciation calculation in **Depreciation profiles**. Once **Shift depreciation** option is selected in depreciation profile you can select from Action Pane **Shift depreciation** to define periods of shifted levels depreciation calculation and their percentages.
 
 ## Example
 
@@ -48,7 +48,7 @@ Therefore, the total number of days that the asset is used is 102 (11 + 31 + 29 
 
 ## Depreciation for non-working days
 
-Depreciation for non-working days is calculated as single-shift depreciation. 
+Depreciation for non-working days is calculated as single-shift depreciation.
 
 - Single-shift depreciation is always calculated on a 365/365 basis. Double-shift and triple-shift depreciation are calculated on regular working days in a year (180 days for seasonal industries or 240 days for non-seasonal industries).
 - If the value model that is attached to the depreciation profile uses the Straight line percentage or Reducing balance depreciation method, but a shift depreciation type isn't defined in the value model, no depreciation is calculated for shifts.
