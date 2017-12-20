@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 # Shift depreciation calculation
 [!include[banner](../includes/banner.md)]
 
-You can calculate shift depreciation for fixed assets Accordingly to The Indian Companies Act, 1956. You can activate shift depreciation calculation in **Depreciation profiles**. Once **Shift depreciation** option is selected in depreciation profile you can select from Action Pane **Shift depreciation** to define periods of shifted levels depreciation calculation and their percentages.
+You can calculate shift depreciation for fixed assets accordingly to The Indian Companies Act, 1956. Shift depreciation calculation can be activated in **Depreciation profiles**. Once **Shift depreciation** option is selected in depreciation profile you can select from Action Pane **Shift depreciation** to define periods when of shift depreciation calculation applies and relevant percentages per each shift.
 
 ## Example
 
@@ -51,8 +51,6 @@ Therefore, the total number of days that the asset is used is 102 (11 + 31 + 29 
 Depreciation for non-working days is calculated as single-shift depreciation.
 
 - Single-shift depreciation is always calculated on a 365/365 basis. Double-shift and triple-shift depreciation are calculated on regular working days in a year (180 days for seasonal industries or 240 days for non-seasonal industries).
-- If the value model that is attached to the depreciation profile uses the Straight line percentage or Reducing balance depreciation method, but a shift depreciation type isn't defined in the value model, no depreciation is calculated for shifts.
-- If shift depreciation is defined in the value model, but shift depreciation rates aren't defined in the depreciation profile, the standard depreciation rate applies as single shift. If shift depreciation rates are defined, they have precedence over the standard rate.
 - The total number of working days for single shift, double shift, or triple shift in a period can't exceed the number of days that are defined in the ledger period.
 - Depreciation for non-working days (calendar days in a period minus the days that are defined in a ledger period) is calculated as single-shift depreciation.
 
