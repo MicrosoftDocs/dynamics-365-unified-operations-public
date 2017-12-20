@@ -3,7 +3,7 @@
 
 title: Planning for your on-premises deployment 
 description: This topic will help you plan and prepare for your on-premises deployment.
-author: robinahr
+author: robinarh
 manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
