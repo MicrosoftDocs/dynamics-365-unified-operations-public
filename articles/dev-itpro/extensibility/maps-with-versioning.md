@@ -36,7 +36,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
 
 ## Refactor of PurchLineMap
 
-When new fields are added to the PurchLine and PurchLineHistory tables using table extensions then the new fields must be copied between the tables whenever a purchase order is versioned. The PurchLineMap table map specifies the fields that must be copied between the PurchLine table and the PurchLineHistory table when a new purchase order version is created or edited. To accomplish this, the PurchLineMap map table needs to be extended to include the additional fields. Additionally, the PurchLineMap is used by the VersioningPurchaseOrder class when archiving purchase order lines. The model is shown in the following diagram.
+When new fields are added to the PurchLine and PurchLineHistory tables using table extensions, the new fields must be copied between the tables whenever a purchase order is versioned. The PurchLineMap table map specifies the fields that must be copied between the PurchLine table and the PurchLineHistory table when a new purchase order version is created or edited. To accomplish this, the PurchLineMap map table needs to be extended to include the additional fields. Additionally, the PurchLineMap is used by the VersioningPurchaseOrder class when archiving purchase order lines. The model is shown in the following diagram.
 
 ![VersioningPurchaseOrder](media/MapsWithVersioning1.png)
 
