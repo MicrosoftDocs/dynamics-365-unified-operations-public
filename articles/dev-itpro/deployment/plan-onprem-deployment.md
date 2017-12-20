@@ -51,7 +51,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is an application management portal 
 - Search for product issues and regulatory features.
 - Obtain support.
 
-For more information about LCS, see [Lifecycle Services](../lifecycle-services/lcs).
+For more information about LCS, see [Lifecycle Services](../lifecycle-services/lcs.md).
 
 ## Environments
 There are four types of environments that you need to plan for. This section describes the four environments and how to access and deploy them.
