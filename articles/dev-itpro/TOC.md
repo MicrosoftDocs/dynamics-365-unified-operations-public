@@ -510,6 +510,8 @@
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
+### [Update the local agent](lifecycle-services/update-local-agent.md)
+### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
 ### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
@@ -600,7 +602,6 @@
 ## [Issue search](lifecycle-services/issue-search-lcs.md)
 ## [Configuration manager](lifecycle-services/configuration-manager-lcs.md)
 ### [Set up Configuration manager](lifecycle-services/set-up-configuration-manager-lcs.md)
-### [Update the local agent](lifecycle-services/update-local-agent.md)
 ## [Configure the code upgrade service](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Create a methodology ](lifecycle-services/create-methodology.md)
 ## [Business process modeler](lifecycle-services/bpm-overview.md)

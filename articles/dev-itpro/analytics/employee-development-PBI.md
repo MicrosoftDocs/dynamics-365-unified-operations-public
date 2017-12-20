@@ -2,10 +2,10 @@
 # required metadata
 
 title: Employee development Power BI content
-description: This topic describes the Employee development Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Employee development Power BI content. 
 author: jcart1106 
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,11 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the **Employee development** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
-
-## Accessing the Power BI content
-
-You can find the **Employee development** content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+This topic describes the **Employee development** Microsoft Power BI content.
 
 ## Reports that are included in the Power BI content
 The reports that are included in the **Employee development** Power BI content have both charts and tables that contain additional information. The following table describes the reports.
@@ -78,4 +74,3 @@ You can filter the charts and tiles on these reports, and pin the charts and til
 | Performance              | Rating, description, and rating model                                                                      | Current Employee, Current Position, Employee Trend, Job Preferred Skill, Past Position Assignment, Position Trend, Terminated Employee |
 |  Skill                   | Skill, skill type, and rating                                                                              | Employee Skill Analysis, Job Preferred Skill |                                                                                                                        
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the Power BI content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the Power BI content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.

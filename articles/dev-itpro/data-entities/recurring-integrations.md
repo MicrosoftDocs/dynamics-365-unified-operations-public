@@ -6,6 +6,7 @@ description: This topic provides information about recurring integrations. The p
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/19/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

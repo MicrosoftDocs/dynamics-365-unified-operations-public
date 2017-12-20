@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -183,6 +183,14 @@ turned on.
 The **Inventory transactions log** table will be periodically cleaned up to
 remove all records that are older than 90 days. The cleanup is triggered
 automatically by regenerating the master plan.
+
+## India localization
+India localization is available with the following features:
+
+- Withholding tax, including TDS and TCS.
+- Fixed assets, including depreciation as per the Companies act, depreciation as per the Income tax act, and special depreciation.
+- Value-added tax (VAT).
+- Custom duty and India Goods and Services Tax (GST). For more information, see the “Tax Engine (GTE) – India GST only” section in this topic.
 
 Master and reference data entities for warehouse and transportation management  
 --------------------------------------------------------------------------------
@@ -397,6 +405,11 @@ fulfilled in the FEFO (First Expired, First Out) order.
 
 ## Tax Engine (GTE) – India GST only
 The Tax Engine (GTE) is an essential part of the configurable business application experience in Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
+
+### More information
+- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
+- [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
+- [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 Vendor collaboration 
 ---------------------

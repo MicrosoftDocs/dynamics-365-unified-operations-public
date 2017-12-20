@@ -5,7 +5,7 @@ title: Workforce metrics Power BI content
 description: This topic describes the Workforce metrics Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,11 +63,6 @@ The following table lists the metrics that are shown on each report.
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Finance and Operations. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
-
-You can find the **Workforce metrics** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
 Be sure to download the **Workforce metrics** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 >[!NOTE]
@@ -98,4 +93,4 @@ The following table shows the entities that the content was based on.
 | Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Line |
 | Mass Hire Line           | Department, employment type, and position                                           | Date, Job, Mass Hire Project |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the Power BI content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the Power BI content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+
