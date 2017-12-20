@@ -180,9 +180,10 @@
 ### [Data entities](../dev-itpro/data-entities/data-entities.md)
 
 #### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+##### [Configuration data packages (July 2017 release only)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Standard data entities
