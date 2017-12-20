@@ -5,7 +5,7 @@ title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
