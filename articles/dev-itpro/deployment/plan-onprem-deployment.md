@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planning for your on-premises deployment 
-description:  
+description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinahr
 manager: AnnBe
 ms.date: 12/20/2017
@@ -126,7 +126,7 @@ From left to right, the first and most important factor needed to accurately est
 
 As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:
 - **Transactions** – Transactions typically have certain peaks throughout the day or week. The peaks might depend on the transaction type. For example, time and expense entries usually show peaks once per week, while sales orders might arrive in bulk via integration or trickle in during the day.
-- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You cannot get reliable sizing estimates based only on the number of concurrent users. If concurrent users are the only data that you have available, then estimate an approximate number for transactions, and revisit this when you have more data. An accurate concurrent user definition means that:
+- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You cannot get reliable sizing estimates based only on the number of concurrent users. If concurrent users is the only data that you have available, then estimate an approximate number for transactions, and revisit this when you have more data. An accurate concurrent user definition means that:
     - Named users are not concurrent users.
     - Concurrent users are always a subset of named users.
     - Peak workload defines the maximum concurrency for sizing.
@@ -140,7 +140,7 @@ As you understand the load that impacts your infrastructure, you also need to un
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
 
 ## Sizing your Finance and Operations environment
-To determine your sizing requirements, you need to know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this topic focuses primarily on AOS and SQL Server.
+To determine your sizing requirements, you must know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this topic focuses primarily on AOS and SQL Server.
 
 In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS. The database tier should be set up in an Always On highly-available setup.
 
@@ -200,7 +200,7 @@ For the general availability release, only one SSRS node can be deployed. Monito
 The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity).
 
 ### Virtualization and oversubscription
-Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.
+Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – core, memory, and disk.
 
 ## Authentication methods
 
@@ -219,7 +219,7 @@ The following authentication methods are used with on-premises deployments:
 
 The on-premises deployment option for Finance and Operations stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data).
 
-The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), the Microsoft Office signup portal, and Azure Active Directory. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
+The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), Microsoft Office signup portal, and Azure Active Directory. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
 
 | Supporting services               | Customer data definition                      |
 |---------------------------------------|----------------------------------------------------|
