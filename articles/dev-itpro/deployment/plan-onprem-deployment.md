@@ -104,7 +104,7 @@ To learn more about Service Fabric, see the following topics:
 - [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
 
 ## System requirements
-Review the system requirements in [System requirements for on-premises deployments](articles/fin-and-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
+Review the system requirements in [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
 
 ## Hardware sizing
 Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](/articles/fin-and-ops/get-started/system-requirements.md) and [Setup and deployment instructions](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
