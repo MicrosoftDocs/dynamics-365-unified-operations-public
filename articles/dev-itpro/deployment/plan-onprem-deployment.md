@@ -41,7 +41,7 @@ The features in cloud deployments and on-premises deployments of Finance and Ope
 - [Deployment options](choose-deployment-type.md)
 - [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [Deprecated features](../migration-upgrade/deprecated-features)
+- [Deprecated features](../migration-upgrade/deprecated-features.md)
 
 ## How LCS is used with on-premises deployments
 Microsoft Dynamics Lifecycle Services (LCS) is an application management portal that provides tools and services for managing the application lifecycle. Customers and partners use LCS to manage both cloud and on-premises deployments. You can use LCS for the following tasks:
@@ -51,7 +51,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is an application management portal 
 - Search for product issues and regulatory features.
 - Obtain support.
 
-For more information about LCS, see [Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs).
+For more information about LCS, see [Lifecycle Services](../lifecycle-services/lcs).
 
 ## Environments
 There are four types of environments that you need to plan for. This section describes the four environments and how to access and deploy them.
