@@ -221,17 +221,16 @@ The on-premises deployment option for Finance and Operations stores core custome
 
 The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), the Microsoft Office signup portal, and Azure Active Directory. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
 
-| **Supporting services**               | **Customer data definition**                                                                                                                                                               |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Supporting services               | Customer data definition                      |
+|---------------------------------------|----------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | Project content and files are stored in a project. This includes application configuration data, code, metadata, and data assets that include the application and business process models. |
-| Microsoft Office signup portal        | Customer information that is collected during the onboarding process.                                                                                                                      |
-| Microsoft Azure Active Directory      | Authentication for LCS and Visual Studio Team Services.                                                                                                                                    |
+| Microsoft Office signup portal        | Customer information that is collected during the onboarding process.  |
+| Microsoft Azure Active Directory      | Authentication for LCS and Visual Studio Team Services.   |
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment.
 
-**Next steps**
---------------
+## Next steps
 
-After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page) section of the [On-premises deployment landing page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page).
+After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md) section of the [On-premises deployment landing page](on-premises-deployment-landing-page.md).
 
-Be sure to refer to the [On-premises deployment landing page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
+Be sure to refer to the [On-premises deployment landing page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
