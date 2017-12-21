@@ -497,7 +497,7 @@ The following table of methods lists the new methods that have been extracted an
 |WhsWorkExecuteDisplayReturnOrder.buildReturnOrder|
 |WhsWorkExecuteDisplayReturnOrder.displayForm|
 
-## Method overlayered which require extension support
+## Changes using other methods to support extensibility
 
 This groups of changes includes several different approaches to extensibility and represents the extensiblity changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, delegates, changed access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, since we are primarily using **Chain of Command** going forward.
 
@@ -1411,7 +1411,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 ## SQL operations made extensible
 
-Application code with embedded SQL statements cannot be modified through extensions. Changes has been made to the standard application to enabled extensibility in the listed methods. This has commonly been enabled by transforming embedded SQL statements into query objects that allow for extending how SQL statements are built up in these methods.
+Application code with embedded SQL statements cannot be modified through extensions. Changes has been made to the standard application to enable extensibility in the listed methods. This has commonly been enabled by transforming embedded SQL statements into query objects that support extending how SQL statements are built up in these methods.
 
 |  Method |
 | -------------|
@@ -1459,7 +1459,7 @@ Application code with embedded SQL statements cannot be modified through extensi
 
 ## Maps enabled for extensibility
 
-We have introduced new patterns for maps  implementation that will allow adding field and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
+We have introduced new patterns for maps implementation that will allow adding field and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
 
 The following table lists show the maps and related tables where we have applied changes for enabling extensibility.
 
@@ -1474,9 +1474,9 @@ The following table lists show the maps and related tables where we have applied
 
 ## Inventory dimensions
 
-The release introduces a new model for how to add inventory dimensions. We have found it impractical that customization for new inventory dimensions should base upon extending every SQL statement that include inventory dimensions. The way we mitigate this is through that we have added 10 inventory dimensions without any specific designated usage. Partner solutions will code through an indirection in models that hold their code, and other models are made for individual implementation projects that deploy one or more of the prefabricated inventory dimensions toward use in a partner solution. Documentation will be available on how to implement under inventory dimensions under this model, and release of a sample app with a Flavor dimension can also be consulted to help learn about the new model. The new inventory dimension can freely be deployed and used as either product dimensions or tracking dimensions.
+This release introduces a new model for how to add inventory dimensions. It was impractical to support customization for new inventory dimensions if that required extending every SQL statement that included inventory dimensions. Insted, we have added 10 inventory dimensions without any specific designated usage. Partner solutions will code through indirection models that hold their code, and other models are made for individual implementation projects that deploy one or more of the prefabricated inventory dimensions toward use in a partner solution. Documentation will be available on how to implement with inventory dimensions under this model, and release of a sample app with a Flavor dimension will help you learn about the new model. The new inventory dimension can be freely deployed and used as either product dimensions or tracking dimensions.
 
-The changes have led to changing multiple places across the application including what is shown in the list below.
+The changes have led to changing multiple places across the application including what is shown in the following list.
 
 | Change |
 | -------------|
@@ -1518,7 +1518,7 @@ The changes have led to changing multiple places across the application includin
 
 ## Metadata changes to enable extensibility
 
-The following table lists show changes made for enabling extensibility for specific metadata on these objects. These changes vary from instance to instance, so please consult the specific implementation to review changes.
+The following table lists changes made for enabling extensibility for specific metadata on these objects. These changes vary from instance to instance, you can consult the specific implementation to review the changes.
 
 | Change |
 | -------------|
