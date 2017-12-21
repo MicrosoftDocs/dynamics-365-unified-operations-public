@@ -2,10 +2,10 @@
 # required metadata
 
 title: Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-description: 
-author: ivanv-microsoft
+description: This is a list of extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,8 +25,8 @@ ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ivanv
-ms.search.validFrom: 2017-06-01
+ms.author: fdahl
+ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
 
 ---
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (December 2017). For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
-This release marks the last release before all models will become hard sealed, and as a step toward this all application models are now at least soft sealed. Soft sealed models still allow for making overlayered code, but warnings will be generated upon compilation of overlayered code. Even so overlayered code is still possible doing customization through extensions is the recommended approach.
+This release marks the last release before all models will become hard-sealed, and as a step toward this all application models are now at least soft-sealed. Soft-sealed models still allow for making overlayered code, but warnings will be generated when you compile the overlayered code. Thus, you can still overlayer code, but extension is the recommended approach.
 
-The list below include the complete list of models that are now soft sealed with this release.
+The list below include the complete list of models that are now soft-sealed with this release.
 
 | Module | Model         |
 | --------------- |-------------|
@@ -69,9 +69,9 @@ The list below include the complete list of models that are now soft sealed with
 
 ## Hard-sealed application models
 
-With this release almost all application core models has been hard sealed. Overlayered code of code from these models will now result in compilation errors. The only supported customization model is now through extensions. Customizations to these models where this cannot be seen achieved through extensions, will require requests made to Microsoft to enable extensibility by changing the standard application for this.
+With this release almost all application core models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
 
-The list below include the complete list of models that are now hard sealed with this release.
+The list below include the complete list of models that are now hard-sealed with this release.
 
 | Module| Model         |
 | --------------- |-------------|
@@ -304,7 +304,7 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Exposing class members
 
-Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
+Additional private members are now available for customization as a result of changes to access modifiers and parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
 
 | Member |
 | -------------|
@@ -392,13 +392,13 @@ Some **find** methods were implemented with **throw** statements if there was a 
 
 ## Extracted method to open up for class extensions
 
-Within this release cycle we added the foundation feature **Chain of Command** which open up for making extension classes. Extensions classes offer a stronger way of extending than other options by that they allow access to both protected and public methods and members. We believe this offer much better flexibility with this approach over extending through delegates or by pre or post event.
+Within this release cycle we added the foundation feature **Chain of Command** which letsyou create extension classes. Extensions classes offer a stronger way of extending than other options because they allow access to both protected and public methods and members. This provides more flexibility than extending through delegates or by pre or post event.
 
-Within this category of how we have enabled extensibility are commonly longer methods where we have taken part of the logic in this method and extracted into it's own method. The new methods has a more specific focus and extensibility can in this was be made on the scope it covers.
+Within this group of changes, we have extracted longer methods into smaller methods. The new methods have a more specific focus and you have more control over the scope of your extentions.
 
-After the release of the **Chain of Command** feature we favor to enable extensibility by extracting methods over adding delegates because this approach is a more versatile solution.
+Since the **Chain of Command** feature, we will choose extensibility by extracting methods over adding delegates because this approach provides a more versatile solution.
 
-The list of method below is showing where new methods have been extracted and opened up for building extension classes.
+The following table of methods lists the new methods that have been extracted and opened up for building extension classes.
 
 | Method |
 | -------------|
@@ -499,9 +499,7 @@ The list of method below is showing where new methods have been extracted and op
 
 ## Method overlayered which require extension support
 
-Within this category of extensibility support falls different approaches we have taken to make this feasible. This was the general category we worked from up until the foundation feature **Chain of Command** opened up for making extension classes. The list show methods where extensibility have been enabled toward specific requests from one of different approaches: Extracting methods, Adding "stub" methods, Delegates, Changed access modifiers on methods, and through using SysExtension framework. Please consult the implementation in places required for your customization to review if the approach taken can be applied to address building needed customizations.
-
-After the release of the **Chain of Command** feature we hardly see this category used anymore, as we favor the approach with the extract method category.
+This groups of changes includes several different approaches to extensibility and represents the extensiblity changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, delegates, changed access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, since we are primarily using **Chain of Command** going forward.
 
 | Method |
 | -------------|
