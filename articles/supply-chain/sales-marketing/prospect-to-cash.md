@@ -71,7 +71,7 @@ To use the Prospect to cash solution, you must install the following components:
     > [!NOTE]
     > You only have to install KB4045570 because the installation includes the changes from other hotfixes. 
 
-### Dynamics 365 for Operations version 1611 (November 2016) 
+### Dynamics 365 for Finance and Operations version 1611 (November 2016) 
 
 - Dynamics 365 for Operations version 1611 (November 2016)  with platform update 8 or higher
 
