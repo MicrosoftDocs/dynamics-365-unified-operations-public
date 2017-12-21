@@ -1,4 +1,37 @@
-# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (December 2017)
+---
+# required metadata
+
+title: Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+description: 
+author: ivanv-microsoft
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 268724
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ivanv
+ms.search.validFrom: 2017-06-01
+ms.dyn365.ops.version: Platform update 4
+
+---
+
+# Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
 [!include[banner](../includes/banner.md)]
 
