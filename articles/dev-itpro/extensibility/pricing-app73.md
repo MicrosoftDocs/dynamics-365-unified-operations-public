@@ -67,7 +67,7 @@ The following diagram illustrates how a new price search can be added for the **
 
 In this example:
 
-1 For the newly created **PriceGroupType** value, a **PriceGroupTypeTradeAgreementMappingISVPriceGroupType** class decorated with the attribute **ISVPriceGroupType** defines the behavior of the price group type.
+1. For the newly created **PriceGroupType** value, a **PriceGroupTypeTradeAgreementMappingISVPriceGroupType** class decorated with the attribute **ISVPriceGroupType** defines the behavior of the price group type.
 2. For the newly created **PriceType** value, the **PriceTypeTradeAgreementMappingISVPurchPriceType** and **PriceTypeTradeAgreementMappingISVSalesPriceType** classes corresponding to Purchase and Sales is implemented.
 3. Augment the **PriceDiscParameters** class to add any generic parameters for the price discount search.
 4. Augment the **PriceDisc** class to create the new price discount search methods for the new price types.
