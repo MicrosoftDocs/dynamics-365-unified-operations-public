@@ -113,6 +113,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
+#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -137,6 +138,10 @@
 #### [Modify form control properties](extensibility/modify-control-properties.md)
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
+#### [Changes to price and discount extensibility](extensibility/pricing-app73.md)
+#### [Table map extension](extensibility/map-extensions.md)
+#### [Extend table maps used as interfaces](extensibility/maps-as-interfaces.md)
+#### [Extend table maps used for versioning](extensibility/maps-with-versioning.md)
 
 
 
