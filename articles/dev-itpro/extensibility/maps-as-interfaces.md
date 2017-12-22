@@ -4,7 +4,7 @@
 
 title: Extend table maps used as interfaces
 description: This topic describes how to extend table maps that are used as interfaces.
-author: Lars Blaaberg
+author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
