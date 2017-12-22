@@ -76,10 +76,10 @@ The following changes were introduced in Dynamics 365 for Finance and Operations
 
 + [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-+ [Enabling extensibility on pricing](pricing-app73.md)
-+ [Map extensions](map-extensions.md)
-  + [Extending table maps used as interfaces](maps-as-interfaces.md)
-  + [Extending table maps used for versioning](maps-with-versioning.md)
++ [Changes to price and discount extensibility](pricing-app73.md)
++ [Table map extension](map-extensions.md)
+  + [Extend table maps used as interfaces](maps-as-interfaces.md)
+  + [Extend table maps used for versioning](maps-with-versioning.md)
   
 ## How do I..?
 
