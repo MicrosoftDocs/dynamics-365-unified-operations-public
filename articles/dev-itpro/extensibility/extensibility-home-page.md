@@ -50,7 +50,7 @@ These introductory topics contain general information about customization, inclu
 This section lists the extensibility-related updates that have been made since July 2017.
 
 + [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](changes-fall-2017.md)
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
 
 ## Getting started
 
@@ -74,6 +74,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 
 The following topics provide an overview of the extensibility changes proposed for the fall 2017 release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Enabling extensibility on pricing](pricing-app73.md)
 + [Map extensions](map-extensions.md)
