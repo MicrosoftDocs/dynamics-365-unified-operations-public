@@ -76,5 +76,6 @@ The following table provides some recommendations for which solver strategy fits
 ## Additional resources
 
 [Heuristics](https://techterms.com/definition/heuristic)
+
 [CSP](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
 
