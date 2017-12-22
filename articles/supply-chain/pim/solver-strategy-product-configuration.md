@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses how to use solver strategy to improve performance of product configuration.
 
-The **Solver strategy** concept was first introduced in Cumulative update 7 for Dynamics AX 2012 R2. The concept has been extended in Cumulative update 8 for Dynamics AX 2012 R3 and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (December, 2017).
+The **Solver strategy** concept was first introduced in Cumulative update 7 for Dynamics AX 2012 R2. The concept has been extended in Cumulative update 8 for Dynamics AX 2012 R3 and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (December 2017).
 
 It now consists of the following strategies:
 
@@ -47,8 +47,9 @@ It now consists of the following strategies:
 
 ## Solver strategy 
 
-A configuration model can be formulated as a constraint satisfaction problem (CSP).
-Microsoft Solver Foundation (MSF) provides two types of solver strategy to solve the CSPs that can be expressed from a configuration model. These two solve strategies rely on heuristics, which are used to decide in which order the variables of the CSP are considered when solving the problem. Heuristics can have a significant impact on the performance of solving a problem or class of problems.
+A configuration model can be formulated as a constraint satisfaction problem (CSP). For more information about [CSP](see http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf).
+
+Microsoft Solver Foundation (MSF) provides two types of solver strategy to solve the CSPs that can be expressed from a configuration model. These two solve strategies rely on heuristics, which are used to decide in which order the variables of the CSP are considered when solving the problem. [Heuristics](https://techterms.com/definition/heuristic) can have a significant impact on the performance of solving a problem or class of problems.
 
 The Solver strategy that is exposed for product configuration models in Dynamics 365 for Finance and Operations controls which solver will be used with heuristics. The **Default**, **Minimal domains first** and **Top-down** strategies use the two solvers from MSF, whereas **Z3** uses the Z3 solver. 
 
