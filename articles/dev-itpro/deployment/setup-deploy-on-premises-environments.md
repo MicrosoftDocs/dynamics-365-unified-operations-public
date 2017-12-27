@@ -678,7 +678,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     ```
 
     - **AccountPassword** is the encrypted domain user password for the AOS domain user (contoso\\axserviceuser).
-    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDBRAIN), and **SqlPassword** is the encrypted SQL password.
+    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDB), and **SqlPassword** is the encrypted SQL password.
 
 4. Copy the .json file to the SMB file share, \\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json.
 5. Update the Credentials.json file with encrypted values.
