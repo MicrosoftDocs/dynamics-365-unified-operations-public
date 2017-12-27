@@ -685,7 +685,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     ```
     # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | clip
+    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
 
 ### <a name="setupssis"></a> 16. Set up SSIS
