@@ -281,7 +281,7 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contos
 
 Join each VM to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the following Windows PowerShell script.
 
-```
+```powershell
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
 Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter domain credential')
 ```
@@ -341,14 +341,14 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 2. Copy the **infrastructure** folder to the domain controller machine.
 3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
 
-    ```
+    ```powershell
     Import-Module .\D365FO-OP\D365FO-OP.psd1
     New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
 
-    ```
+    ```powershell
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
@@ -357,7 +357,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 1. Navigate to the machine that has the **infrastructure** folder.
 2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
-    ```
+    ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -368,7 +368,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 >[!WARNING]
 >Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in powershell.
-```
+```powershell
 dir cert:\CurrentUser\My
 dir cert:\LocalMachine\My
 dir cert:\LocalMachine\Root
@@ -378,7 +378,7 @@ dir cert:\LocalMachine\Root
 
 5. Export the certificates into .pfx files.
 
-    ```
+    ```powershell
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -386,7 +386,7 @@ dir cert:\LocalMachine\Root
 ### <a name="setupvms"></a> 9. Setup VMs
 1. Export the scripts that must be run on each VM.
 
-    ```
+    ```powershell
     # Exports the script files to be execute on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -404,7 +404,7 @@ dir cert:\LocalMachine\Root
 
 1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
-    ```
+    ```powershell
     # Install pre-req software on the VMs.
     .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
     ```
@@ -414,7 +414,7 @@ dir cert:\LocalMachine\Root
 
 2. Run the following scripts, if they exist, in order to complete the VM setup.
 
-    ```
+    ```powershell
     .\Add-GMSAOnVM.ps1
     .\Import-PfxFiles.ps1
     .\Set-CertificateAcls.ps1
@@ -422,7 +422,7 @@ dir cert:\LocalMachine\Root
 
 3. Run the following script to validate the VM setup.
 
-    ```
+    ```powershell
     .\Test-D365FOConfiguration.ps1
     ```
 
@@ -434,7 +434,7 @@ dir cert:\LocalMachine\Root
 
 3. Navigate to the **infrastructure** folder and execute the following command to generate the Service Fabric ClusterConfig.json file.
 
-    ```
+    ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
 
@@ -444,13 +444,13 @@ dir cert:\LocalMachine\Root
 
 5. Navigate to the \<ServiceFabricStandaloneInstallerPath\> in Windows PowerShell by using elevated privileges. Run the following command to test ClusterConfig.
 
-    ```
+    ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
 
 6. If the test is successful, run the following command to deploy the cluster.
 
-    ```
+    ```powershell
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
@@ -476,7 +476,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 3. Run the following script from $(DownloadPath)\\InfrastructureScripts.
 
-    ```
+    ```powershell
     .\AddCertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
@@ -498,7 +498,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. On the file share machine, run the following command.
 
-    ```
+    ```powershell
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
@@ -529,13 +529,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for a Clustered SQL instance**
 
-    ```
+    ```powershell
     New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contososqlao.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contososqlao.com"
     ```
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    ```
+    ```powershell
     #https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
     # Create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
@@ -587,7 +587,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. Execute the following script.
 
-   ```
+   ```powershell
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
    ```
 
@@ -600,7 +600,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. Execute the following scripts.
 
-   ```
+   ```powershell
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
    ```
@@ -637,7 +637,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 2. Run the following command to reset the database users.
 
-    ```
+    ```powershell
     .\Reset-DatabaseUsers.ps1 -DatabaseServer ‘<FQDN of the SQL server>’ -DatabaseName '<AX database name>'
     ```
 
@@ -645,7 +645,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. Execute the following script.
 
-   ```
+   ```powershell
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName MR
    ```
 
@@ -665,7 +665,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Grant the current user read access to the private key of this certificate.
 3. Create the Credentials.json file, as shown here.
 
-    ```
+    ```json
     {
         "AosPrincipal": {
             "AccountPassword": "<encryptedDomainUserPassword>"
@@ -683,7 +683,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 4. Copy the .json file to the SMB file share, \\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json.
 5. Update the Credentials.json file with encrypted values.
 
-    ```
+    ```powershell
     # Service fabric API to encrypt text and copy it to the clipboard.
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
@@ -711,20 +711,20 @@ Finance and Operations requires additional configuration beyond the default out-
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-    ```
+    ```powershell
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-    ```
+    ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
     ```
 
 3. For sign-in, the user's email address must be an acceptable authentication input.
 
-    ```
+    ```powershell
     Add-Type -AssemblyName System.Net
     $fdqn = ([System.Net.Dns]::GetHostEntry('localhost').HostName).ToLower()
     $domainName = $fdqn.Substring($fdqn.IndexOf('.')+1)
@@ -735,7 +735,7 @@ In order for AD FS to trust Finance and Operations for the exchange of authentic
 
 For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS in a later step. Should you lose the client IDs, they can be found in the `ADFSApplicationGroup_<datetime>.log` file in the working directory from which the script was executed.
 
-```
+```powershell
 # Host URL is your DNS record\host name for accessing the AOS
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
@@ -770,7 +770,7 @@ You've now completed the setup of the infrastructure. The following sections des
 10. Copy the localagent-config.json file to the machine where the agent installer package is located.
 11. In a **Command Prompt** window, run the following command by navigating to the folder that contains the agent installer.
 
-    ```
+    ```powershell
     LocalAgentCLI.exe Install <path of config.json>
     ```
 
