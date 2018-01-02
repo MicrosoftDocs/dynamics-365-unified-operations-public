@@ -83,9 +83,9 @@ Finance and Operations, Retail, and Talent all share a single table of contents 
 To follow a topic, click the +Follow button below the comment box. You will need to log in to follow the topic. See [Leave us a comment](#leave-us-a-comment) for details.  
 
 ### Use an RSS feed
-To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser or other RSS feed manager: 
+To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager: 
 
-(https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27)
+https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27
 
 ### Give feedback 
 We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
