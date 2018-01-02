@@ -1742,6 +1742,7 @@
 
 
 ## [Project management and accounting](../financials/project-management/overview-project-management-accounting.md)
+### [Microsoft Project client integration](../financials/project-management/project-integration.md)
 ### [Intercompany invoicing](../financials/project-management/intercompany-invoicing.md)
 ### [Configure intercompany project invoicing](../financials/project-management/tasks/configure-intercompany-project-invoicing.md)
 ### [Configure standard costs for labor and expenses](../financials/project-management/tasks/configure-standard-costs-labor-expenses.md)
