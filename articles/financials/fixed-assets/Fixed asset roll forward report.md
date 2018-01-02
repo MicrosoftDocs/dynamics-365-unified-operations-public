@@ -1,6 +1,35 @@
 ---
-title: Fixed asset roll forward report
+# required metadata
+
+title: Fixed assets roll forward report
+description: This article explains how to use the Fixed assets roll forward report.
+author: saraschi
+manager: 
+ms.date: 12/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 23021
+ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: saraschi
+ms.search.validFrom: 2017-12-20
+ms.dyn365.ops.version: AX 7.3.0
+
 ---
+
 
 The Fixed assets roll forward report provides detailed fixed asset data you need
 for period closing, financial statements, and tax reporting in an easy to read
