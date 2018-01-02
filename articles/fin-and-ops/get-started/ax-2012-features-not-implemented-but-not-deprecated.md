@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
