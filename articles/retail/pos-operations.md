@@ -108,6 +108,7 @@ The following columns specify where the operations can be invoked:
 | 521 | Loyalty card points balance | Show the balance of points for the specified loyalty card. | Yes | Yes | No | No | No |
 | 914 | Minimize POS window | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1000 | Open drawer | Perform a "no sale" operation, and open the currently selected cash drawer. | Yes | Yes | Yes | Yes | No |
+| 928 | Order fulfillment | This operation allows users to pick, pack, ship, or recall orders for store picked up. | Yes | Yes | Yes | No | No |
 | 129 | Override line product tax | Override the tax on the selected line item, and use a different specified tax. | Yes | Yes | No | Yes | No |
 | 130 | Override line product tax from list | Override the tax on the selected line item, and use the tax that the user selects in a list. | Yes | Yes | No | Yes | No |
 | 127 | Override transaction tax | Override the tax on the transaction, and use a different specified tax. | Yes | Yes | No | Yes | No |

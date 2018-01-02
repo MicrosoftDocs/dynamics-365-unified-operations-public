@@ -104,16 +104,15 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| Version 1611 (application 7.1.0)                               | 7.1.1541.3036 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | July 2017 release (application 7.2.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | July 2017 release (application 7.2.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| Microsoft Dynamics AX 2012                                     | Not applicable | July 2017 release (application 7.2.0) | Yes |
-| July 2017 release (Platform update 8, application 7.2)         | Not applicable | Newer version of the platform | No |
-| Version 1611 (Platform update 3, application 7.1.0)            | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 7.3 | Yes |
+| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 7.3, or July 2017 (7.2) | Yes |
+| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| Microsoft Dynamics AX 2012                                     | Not applicable | Application release 7.3 or July 2017 (7.2)  | Yes |
+| Application release 7.3         | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)         | Not applicable | Newer version of the platform | No |
+| Release 1611 (application 7.1)            | Not applicable | Newer version of the platform | No |
 | May 2016 release (Platform update 1, application 7.0.1)        | Not applicable | August 2016 release (Platform update 2, application 7.0.1) | No |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.

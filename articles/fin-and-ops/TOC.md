@@ -180,8 +180,11 @@
 ### [Data entities](../dev-itpro/data-entities/data-entities.md)
 
 #### [Configuration data projects](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Copy configuration data between companies](../dev-itpro/data-entities/copy-configuration.md)
+##### [Configuration data packages (July 2017 release only)](../dev-itpro/data-entities/configuration-data-packages.md)
+#### [Configuration data templates](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md)
 #### [Find information about standard data entities](../dev-itpro/data-entities/data-entities-report.md)
 #### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md)
@@ -621,6 +624,11 @@
 ##### [Set up negative debits credits ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [User operation log by China working rule](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [VAT customer invoices FAQ](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### India
+##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
+##### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
+##### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japan
 ##### [Acquire a fixed asset and claim for the government grant subsidy](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1263,29 +1271,26 @@
 ##### [Upload a configuration into Lifecycle Services for electronic reporting](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
 ##### [Electronic reporting framework API changes for Application update 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analytical tools and visualizations
+### Embedded analytical solutions
+#### [Embedded Power BI in workspaces](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Personalization options with PowerBI.com
+#### [Power BI integration](../dev-itpro/analytics/power-bi-integration.md)
+#### [Pin Power BI reports to workspaces](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Tools for creating and extending solutions
 #### [Analytics, aggregate measurements, and KPI modeling](../dev-itpro/analytics/analytics.md)
+#### [Author analytical reports by using Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Modeling and aggregate data](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Add financial dimensions to aggregate measurements](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Add contextual BI to forms](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Aggregate measurements report](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Aggregate data entities report](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [Key performance indicator (KPI.md) report](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI integration](../dev-itpro/analytics/power-bi-integration.md)
-#### [Access Power BI content](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Create a Power BI report and dashboard](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Create a Power BI report by using Finance and Operations data](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Embedded Power BI in workspaces](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Add analytics to workspaces by using Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Help secure analytical workspaces and reports by using Power BI Embedded](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Add Power BI to workspaces](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Pin Power BI reports to workspaces](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Power user management tools
 #### [Power BI integration with Entity store](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Author analytical reports by using Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Publish analytical applications on Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Inventory management](../supply-chain/inventory/inventory-home-page.md)
@@ -1699,6 +1704,7 @@
 ##### [Calculation for product configuration model FAQ](../supply-chain/pim/calculate-product-configuration-models.md)
 ##### [Configuration rule](../supply-chain/pim/configuration-rules.md)
 ##### [Expression constraint and table constraint](../supply-chain/pim/expression-constraints-table-constraints-product-configuration-models.md)
+##### [Solver strategy for product configuration](../supply-chain/pim/solver-strategy-product-configuration.md)
 ##### [Reuse product configuration](../supply-chain/pim/reuse-product-configurations.md)
 ##### [System-defined and user-defined table constraint](../supply-chain/pim/system-defined-user-defined-table-constraints.md)
 ##### [Create product model components (Task guide)](../supply-chain/pim/tasks/create-product-model-components.md)
@@ -1712,6 +1718,7 @@
 
 
 ## [Project management and accounting](../financials/project-management/overview-project-management-accounting.md)
+### [Microsoft Project client integration](../financials/project-management/project-integration.md)
 ### [Intercompany invoicing](../financials/project-management/intercompany-invoicing.md)
 ### [Configure intercompany project invoicing](../financials/project-management/tasks/configure-intercompany-project-invoicing.md)
 ### [Configure standard costs for labor and expenses](../financials/project-management/tasks/configure-standard-costs-labor-expenses.md)

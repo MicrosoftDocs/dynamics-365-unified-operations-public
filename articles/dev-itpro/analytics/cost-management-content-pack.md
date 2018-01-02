@@ -2,10 +2,10 @@
 # required metadata
 
 title: Cost management Power BI content
-description: This topic describes what is included in the Cost management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what is included in the Cost management Power BI content. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes what is included in the Cost management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This topic describes what is included in the Cost management Power BI content. 
 
 # Overview
 
@@ -55,8 +55,6 @@ The **Cost management** Microsoft Power BI content is intended for inventory acc
 
 The primary data source for CostAggregatedCostStatementEntryEntity is the CostStatementCache table. This table is managed by the Data set cache framework. By default, the table is updated every 24 hours, but you can enable manual updates in the data cache configuration. You can then do a manual update in the **Cost management** or **Cost analysis** workspace. After the update of CostStatementCache is run, you must update the OData connection on Power BI.com to see updated data on the site. The variance (purchase, production) measures in this Power BI content pertain only to items that are valuated by the Standard cost inventory method. Production variance is calculated as the difference between active cost and realized cost. The production variance is calculated when the production order has a status of **Ended**. For more information about production variance types and how each type is calculated, see [About analyzing variances for a completed production order](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## Accessing the Power BI content
-The **Cost management** Power BI content is available from PowerBI.com. For more information about how to connect and load your Microsoft Dynamics 365 for Finance and Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost management** Power BI content.
@@ -140,13 +138,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Ledgers          | Currency, Name, Description                  |
 | Sites            | ID, Name, Country, City                      |
 
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](..\data-entities\data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 
 
 
