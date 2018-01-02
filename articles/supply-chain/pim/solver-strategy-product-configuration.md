@@ -55,7 +55,7 @@ Real customer implementation studies have shown that a change in the solver stra
 
 ## Change the settings for the solver strategy
 
-You can change the solver strategy on the **Model properties** page.
+To change the solver strategy, on the **Product configuration models** page, on the Action Pane, select **Model properties**. Then, in the **Edit the model details** dialog box, select a solver strategy.
 
 [![Changing the solver strategy](./media/solver-strategy.png)](./media/solver-strategy.png)
 
