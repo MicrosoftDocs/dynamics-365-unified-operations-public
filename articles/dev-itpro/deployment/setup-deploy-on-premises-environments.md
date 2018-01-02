@@ -638,7 +638,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Run the following command to reset the database users.
 
     ```powershell
-    .\Reset-DatabaseUsers.ps1 -DatabaseServer ‘<FQDN of the SQL server>’ -DatabaseName '<AX database name>'
+    .\Reset-DatabaseUsers.ps1 -DatabaseServer '<FQDN of the SQL server>' -DatabaseName '<AX database name>'
     ```
 
 #### Configure the Financial Reporting database
