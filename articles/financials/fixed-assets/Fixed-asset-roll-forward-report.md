@@ -29,9 +29,11 @@ ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: AX 7.3.0
 
 ---
+# Fixed assets roll forward report
 
+[!include[banner](../includes/banner.md)]
 
-The Fixed assets roll forward report provides detailed fixed asset data you need for period closing, financial statements, and tax reporting in an easy to read Excel format. The report includes fixed asset starting and ending balances with valuation movements for the period, along with any new asset acquisitions and disposals that occurred during the period. Data is reported for individual fixed assets as well as summarized values for fixed asset groups and the legal entity.
+The **Fixed assets roll forward** report provides detailed fixed asset data you need for period closing, financial statements, and tax reporting in an easy to read Excel format. The report includes fixed asset starting and ending balances with valuation movements for the period, along with any new asset acquisitions and disposals that occurred during the period. Data is reported for individual fixed assets as well as summarized values for fixed asset groups and the legal entity.
 
 The Fixed asset roll forward report utilizes the Electronic reporting framework. You must have the Fixed assets model and Fixed asset roll forward configurations imported from LCS before you can run the report. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
