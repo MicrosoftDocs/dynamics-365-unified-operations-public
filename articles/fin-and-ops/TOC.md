@@ -1728,6 +1728,7 @@
 ##### [Calculation for product configuration model FAQ](../supply-chain/pim/calculate-product-configuration-models.md)
 ##### [Configuration rule](../supply-chain/pim/configuration-rules.md)
 ##### [Expression constraint and table constraint](../supply-chain/pim/expression-constraints-table-constraints-product-configuration-models.md)
+##### [Solver strategy for product configuration](../supply-chain/pim/solver-strategy-product-configuration.md)
 ##### [Reuse product configuration](../supply-chain/pim/reuse-product-configurations.md)
 ##### [System-defined and user-defined table constraint](../supply-chain/pim/system-defined-user-defined-table-constraints.md)
 ##### [Create product model components (Task guide)](../supply-chain/pim/tasks/create-product-model-components.md)
@@ -1741,6 +1742,7 @@
 
 
 ## [Project management and accounting](../financials/project-management/overview-project-management-accounting.md)
+### [Microsoft Project client integration](../financials/project-management/project-integration.md)
 ### [Intercompany invoicing](../financials/project-management/intercompany-invoicing.md)
 ### [Configure intercompany project invoicing](../financials/project-management/tasks/configure-intercompany-project-invoicing.md)
 ### [Configure standard costs for labor and expenses](../financials/project-management/tasks/configure-standard-costs-labor-expenses.md)
