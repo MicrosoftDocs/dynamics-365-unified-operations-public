@@ -5,7 +5,7 @@ title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
 author: cvocph 
 manager: AnnBe
-ms.date: 12/22/2017
+ms.date: 2/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ The solver strategy concept now consists of the following strategies:
 
 ## Solver strategy 
 
-A product configuration model can be formulated as a [constraint satisfaction problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) provides two types of solver strategies to solve the CSPs that can be expressed from product configuration models. These solver strategies rely on [heuristics](https://techterms.com/definition/heuristic), which are used to determine the order that the variables of the CSPs are considered in when the problem is being solved. Heuristics can significantly affect performance when a problem or class of problems is being solved.
+A product configuration model can be formulated as a [constraint satisfaction problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) provides two types of solver strategies to solve the CSPs that can be used from product configuration models. These solver strategies rely on [heuristics](https://techterms.com/definition/heuristic), which are used to determine the order that the variables of the CSPs are considered in when the problem is being solved. Heuristics can significantly affect performance when a problem or class of problems is being solved.
 
 In Finance and Operations, the solver strategy for product configuration models determines which solver is used with heuristics. The **Default**, **Minimal domains first**, and **Top-down** strategies use the two solvers from MSF, whereas the **Z3** strategy uses the Z3 solver. 
 
