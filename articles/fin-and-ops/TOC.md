@@ -1728,6 +1728,7 @@
 ##### [Calculation for product configuration model FAQ](../supply-chain/pim/calculate-product-configuration-models.md)
 ##### [Configuration rule](../supply-chain/pim/configuration-rules.md)
 ##### [Expression constraint and table constraint](../supply-chain/pim/expression-constraints-table-constraints-product-configuration-models.md)
+##### [Solver strategy for product configuration](../supply-chain/pim/solver-strategy-product-configuration.md)
 ##### [Reuse product configuration](../supply-chain/pim/reuse-product-configurations.md)
 ##### [System-defined and user-defined table constraint](../supply-chain/pim/system-defined-user-defined-table-constraints.md)
 ##### [Create product model components (Task guide)](../supply-chain/pim/tasks/create-product-model-components.md)
