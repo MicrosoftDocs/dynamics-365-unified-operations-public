@@ -68,8 +68,8 @@ Fixed asset group is the only required field when you create a fixed asset. The 
 
 You can also define special depreciation allowances, or bonus depreciation, for a specific combination of a fixed asset group and a book. You must assign a priority to the special depreciation allowance to specify the order that allowances are calculated in when multiple allowances are assigned to a book. For more information, see [Set up fixed asset groups](tasks/set-up-fixed-asset-groups.md)
 
-##Journal names
-Journal names need to be created to use with the Fixed assets journal.  The Journal type must be set to Post fixed assets.  Configure the voucher series to be used for the journal.  Fixed asset journals should not use the One voucher number only setting, as a unique voucher number is required for several automated processes including transfers and splits.
+## Journal names
+Journal names need to be created in the **Journal names** page to use with the Fixed assets journal.  The **Journal type** field must be set to **Post fixed assets**.  Configure the **Voucher series** field to be used for the the Fixed assets journal.  Fixed asset journals should not use the **One voucher number only** setting, as a unique voucher number is required for several automated processes including transfers and splits.
 
 ## Fixed asset parameters
 The last step is to update the fixed asset parameters.
