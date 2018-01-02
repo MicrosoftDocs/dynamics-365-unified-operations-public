@@ -5,7 +5,7 @@ title: Fixed assets roll forward report
 description: This article explains how to use the Fixed assets roll forward report.
 author: saraschi
 manager: 
-ms.date: 12/20/2017
+ms.date: 01/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
