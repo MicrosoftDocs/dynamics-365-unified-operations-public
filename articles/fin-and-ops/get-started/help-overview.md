@@ -85,7 +85,7 @@ To follow a topic, click the +Follow button below the comment box. You will need
 ### Use an RSS feed
 To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager: 
 
-https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27)
+[RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### Give feedback 
 We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
