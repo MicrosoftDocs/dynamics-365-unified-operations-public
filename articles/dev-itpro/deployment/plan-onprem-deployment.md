@@ -5,7 +5,7 @@ title: Planning for your on-premises deployment
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -107,7 +107,7 @@ To learn more about Service Fabric, see the following topics:
 Review the system requirements in [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
 
 ## Hardware sizing
-Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](../../fin-and-ops/get-started/system-requirements.md) and [Setup and deployment instructions](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
+Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md) and [Setup and deployment instructions](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
 
 ### Factors that affect sizing
 The core factors that affect sizing are:
