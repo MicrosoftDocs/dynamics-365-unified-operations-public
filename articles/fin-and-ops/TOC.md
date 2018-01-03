@@ -1207,6 +1207,7 @@
 #### [Employee competencies and development](../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md)
 #### [Employee development](../dev-itpro/analytics/employee-development-PBI.md) 
 #### [Financial performance](../dev-itpro/analytics/financial-performance-power-bi-content-pack.md)
+#### [Financial insights](../dev-itpro/analytics/financial-insights.md)
 #### [Fixed asset management](../financials/fixed-assets/Fixed-asset-management-workspace.md)
 #### [Learning](../dev-itpro/analytics/learning-power-bi.md)
 #### [Organizational training](../dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md)
