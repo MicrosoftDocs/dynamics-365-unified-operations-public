@@ -53,6 +53,8 @@ Note, if an entity has another entity as a data source then, the above semantics
 ### Entity list refresh
 When the entity list is refreshed, data management builds the configuration key metadata for runtime use. This metadata is built using the above semantics. It is always recommended to wait for the entity refresh to complete before using jobs and entities in data management as the configuration key meta data may not be up to date and could result in an unexpected outcome. When the entity list is being refreshed, the following message is shown in the entity list page.
 
+![Entity list refresh](.media/Entity refresh list.png)
+
 ### Data entity list page
 The data entity list page in data management shows the configuration key settings for the entities. You must start from this page for each of the entities you plan to use to first understand the impact from configuration keys on the data entity.
 This information is shown using the metadata that is built during entity refresh. The configuration key column shows the name of the configuration key that is associated with the data entity. If this is blank, it means, there is no configuration key associated. The configuration key status column shows the state of the configuration key. If it has a tick mark, it means the key is enabled. If it is blank, it means either the key is disabled or there is no key associated.
@@ -81,4 +83,4 @@ Using the configuration key metadata built during entity refresh list, run time 
 Any time configuration keys are updated at the entity, table or field level, the entity list in data management must be refreshed. This process will ensure that, data management picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. It is recommended to validate existing data projects and jobs to make sure they will function as expected after the configuration keys changes were put in effect.
 
 
-[!include[banner](../includes/banner.md)]
+
