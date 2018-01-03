@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 13
 ---
 
 # Configuration keys and data entities
-When using data entities for imports and/or exports, it is recommended to first understand what impact if any, would configuration keys will have on the data entities that you are planning to use. It is recommended that you follow the below defined process for determining this prior to using data entities. 
+When using data entities for imports and/or exports, it is recommended to first understand what impact if any, would configuration keys will have on the data entities that you are planning to use. It is recommended to follow the below defined process for determining this prior to using data entities. 
 
 To learn more about configuration keys in D365FO, refer to this topic.
 
