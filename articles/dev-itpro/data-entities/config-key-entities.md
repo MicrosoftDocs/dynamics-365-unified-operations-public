@@ -45,7 +45,6 @@ Configuration keys can be assigned to one or all the following artifacts.
         -   Field(s)
 
     -   Fields (data entity fields)
-)
 
 Following table provides a summary of what the expected behavior should be under various scenarios while dealing with configuration keys.
                                                                                                                                                                                                                                                                                                                                                                                                 |
