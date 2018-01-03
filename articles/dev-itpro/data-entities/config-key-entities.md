@@ -82,14 +82,24 @@ After understanding the full impact, if any, of configuration keys on the data e
 
 ### Run time validations for configuration keys
 Using the configuration key metadata built during entity refresh list, run time validations are performed in the following use cases.
-•	When a data entity is added to a job 
-•	When user clicks ‘validate’ on the entity list 
-•	When the user loads a data package into a data project
-•	When the user loads a template into a data project
-•	Before the export/import job is executed (batch, non-batch, recurring, Odata) 
-•	When the user generates mapping 
-•	When the user maps fields in the mapping UI 
-•	When the user adds only 'importable fields'
+
+-   When a data entity is added to a job
+
+-   When user clicks ‘validate’ on the entity list
+
+-   When the user loads a data package into a data project
+
+-   When the user loads a template into a data project
+
+-   Before the export/import job is executed (batch, non-batch, recurring,
+    Odata)
+
+-   When the user generates mapping
+
+-   When the user maps fields in the mapping UI
+
+-   When the user adds only 'importable fields'
+
 
 ### Guidance on managing configuration key changes in data management
 Any time configuration keys are updated at the entity, table or field level, the entity list in data management must be refreshed. This process will ensure that, data management picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. It is recommended to validate existing data projects and jobs to make sure they will function as expected after the configuration keys changes were put in effect.
