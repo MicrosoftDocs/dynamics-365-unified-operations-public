@@ -248,7 +248,8 @@ AX-SetupModuleEvents (additional details for Module details)
 AX-SetupInfrastructureEvents (additional details when interactions with Service Fabric) 
 
 ## AOS machines
-**Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** **Event Viewer** > **Custom Views** > **Administrative Events** 
+**Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** 
+**Event Viewer** > **Custom Views** > **Administrative Events** 
 
 ## To view the entire error message
 Click the **Details** tab to view the full error message. 
