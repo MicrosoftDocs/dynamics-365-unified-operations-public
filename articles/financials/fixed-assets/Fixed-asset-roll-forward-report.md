@@ -39,9 +39,7 @@ The Fixed asset roll forward report utilizes the Electronic reporting framework.
 
 This report is available on the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, or as a hotfix on the July 2017 release. Environments with the July 2017 release will need three hotfixes applied:
 
-- **KB 4041754**: Electronic reporting (ER) configuration can’t be downloaded from LCS as not applicable for the current application version after applying the platform update package
-
-- **KB 4056107**: Electronic reporting (GER) cumulative update 5
+- **KB 4058263**:  Electronic reporting (GER) cumulative update 6
 
 - **KB 4056353**: Fixed assets Statement and Notes reports don't meet the requirements in GAAP and IFRS
 
