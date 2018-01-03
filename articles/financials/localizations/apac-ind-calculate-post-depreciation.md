@@ -5,7 +5,7 @@ title: Create and post depreciation for a fixed asset group by using depreciatio
 description: This topic walks you through the process of creating and posting depreciation for a fixed asset group by using depreciation books for India in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: AdamTrukawka
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -68,9 +68,11 @@ If a positive or negative amount is entered in the **Debit** field on a journal 
 
 6. In the **Fixed asset group** field, select a fixed asset group.
 7. Enter depreciation amount in the **Credit** field.
-9. Select **Post** to post the journal.
-10. Navigate to **Fixed assets**, select fixed asset and the book as it was chosen in the journal line, on the Action Pane, select Transactions, notice depreciation amount posted for fixed asset group without specification of an asset.
-11. Navigate back to **Inquiry** &gt; **Asset group balance** and notice total depreciation amount posted for asset group in the selected book.
+8. Select **Post** to post the journal.
+9. Click **Fixed assets** > **Fixed assets** > Select a fixed asset > **Books** tab on Action Pane.
+10. Click **Transactions** and notice that the depreciation amount was posted for the fixed asset group without the specification of an asset.
+11. Close the **Fixed assets transactions** page.
+12. Click **Inquiry** > **Asset group balances** and notice that the total depreciation amount was posted for the asset group in the selected book.
 
     > [!NOTE]
-    > In the journal you can use **Proposal** function for various proposal types to create transactions for fixed asset groups. Asset group depreciation doesn't apply to proposals of the **Consumption depreciation**, **Revenue recognition of reserves**, or **Extraordinary depreciation** type.
+    > In the journal you can use the **Proposal** function for various proposal types to create transactions for fixed asset groups. Asset group depreciation doesn't apply to proposals of the **Consumption depreciation**, **Revenue recognition of reserves**, or **Extraordinary depreciation** type.
