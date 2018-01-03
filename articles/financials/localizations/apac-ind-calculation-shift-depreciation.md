@@ -5,7 +5,7 @@ title: Shift depreciation calculation for Indian fixed assets
 description: This topic walks you through the process of calculating shift depreciation for India fixed assets in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: AdamTrukawka
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+ms.search.form: AssetShiftDepreciationProfile_IN, AssetDepreciationProfile
 audience: Application User
 # ms.devlang:
 ms.reviewer: shylaw
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: 7.3
 # Shift depreciation calculation
 [!include[banner](../includes/banner.md)]
 
-You can calculate shift depreciation for fixed assets accordingly to The Indian Companies Act, 1956. Shift depreciation calculation can be activated in **Depreciation profiles**. Once **Shift depreciation** option is selected in depreciation profile you can select from Action Pane **Shift depreciation** to define periods when of shift depreciation calculation applies and relevant percentages per each shift.
+Shift depreciation is used when manufacturing companies have multiple production shifts for parts of the year. For example, a company can have one, two, or three shifts during high production season but only one shift during the rest of the year. This means that some fixed assets are used more often than normal during the high product season and they would experience greater depreciation during that time. Being able to adjust the fixed asset's depreciation rates higher makes sense if the fixed asset is active for more than one shift. You can adjust the depreciation using calculated depreciation that is unique to each shift.
+
+You can calculate shift depreciation for fixed assets accordingly to The Indian Companies Act, 1956. Shift depreciation calculation can be activated in **Depreciation profiles**. Once the **Shift depreciation** option is selected in the depreciation profile, you can click **Shift depreciation** to define periods when shift depreciation calculation applies and the relevant percentages per shift.
 
 ## Example
 
