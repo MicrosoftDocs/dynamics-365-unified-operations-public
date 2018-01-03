@@ -35,6 +35,9 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
+> [!NOTE]
+> This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
 This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
 Finance and Operations - Warehousing is an application available on Google Play Store and Windows Store. For the current version of Finance and Operations, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app in your Finance and Operations environment, you must download the app on each device and configure it to connect to your Finance and Operations environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Finance and Operations environment.
