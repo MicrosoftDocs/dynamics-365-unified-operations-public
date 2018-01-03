@@ -53,7 +53,7 @@ Note, if an entity has another entity as a data source then, the above semantics
 ### Entity list refresh
 When the entity list is refreshed, data management builds the configuration key metadata for runtime use. This metadata is built using the above semantics. It is always recommended to wait for the entity refresh to complete before using jobs and entities in data management as the configuration key meta data may not be up to date and could result in an unexpected outcome. When the entity list is being refreshed, the following message is shown in the entity list page.
 
-![Entity list refresh](.media/Entity_refresh_list.png)
+![Entity list refresh](..media/Entity_refresh_list.png)
 
 ### Data entity list page
 The data entity list page in data management shows the configuration key settings for the entities. You must start from this page for each of the entities you plan to use to first understand the impact from configuration keys on the data entity.
