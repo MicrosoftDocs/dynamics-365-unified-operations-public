@@ -726,8 +726,8 @@ Finance and Operations requires additional configuration beyond the default out-
 
     ```powershell
     Add-Type -AssemblyName System.Net
-    $fdqn = ([System.Net.Dns]::GetHostEntry('localhost').HostName).ToLower()
-    $domainName = $fdqn.Substring($fdqn.IndexOf('.')+1)
+    $fqdn = ([System.Net.Dns]::GetHostEntry('localhost').HostName).ToLower()
+    $domainName = $fqdn.Substring($fqdn.IndexOf('.')+1)
     Set-AdfsClaimsProviderTrust -TargetIdentifier 'AD AUTHORITY' -AlternateLoginID mail -LookupForests $domainName
     ```
 
