@@ -78,6 +78,7 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 ![Warning](./media/Cantdisplay.png)
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
+
 •	CustCollectionsBIMeasurements
 
 •	FinancialReportingOtherData
@@ -267,7 +268,7 @@ The financial statement visuals have a limit on the number of rows that can be s
 
 If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.
 
-# Empty rows
+## Empty rows
 Power BI doesn’t provide an option to hide and show empty rows. If a row doesn’t have any data, the row won’t appear in the visual.
 
 # What is coming in future releases?
