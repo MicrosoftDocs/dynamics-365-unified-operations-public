@@ -5,7 +5,7 @@ title: CFDI layout version 3.3
 description: This topic provides information about Comprobante Fiscal Digital por Internet (CFDI) layout version 3.3 for Mexico.
 author: sndray
 manager: AnnBe
-ms.date: 12/06/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: CustPosting, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -53,7 +53,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 <thead>
 <tr>
 <th>SAT catalog</th>
-<th>Microsoft Dynamics AX mapping</th>
+<th>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mapping</th>
 </tr>
 </thead>
 <tbody>
@@ -109,7 +109,7 @@ This information must be entered in the <strong>Payment type</strong> field on t
 </tr>
 <tr>
 <td>cMoneda</td>
-<td>This information is identified by the <strong>Currency code</strong> value that is configured in Microsoft Dynamics AX.
+<td>This information is identified by the <strong>Currency code</strong> value that is configured in Finance and Operations.
 
 The government defines the exchange rate variation that is allowed. This value must be configured at <strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Currencies</strong> &gt; <strong>Electronic invoices</strong>. You can enter the <strong>Exchange rate variation limit</strong> value per currency.</td>
 </tr>
@@ -119,7 +119,7 @@ The government defines the exchange rate variation that is allowed. This value m
 </tr>
 <tr>
 <td>cPais</td>
-<td>This information is identified by the <strong>Country code</strong> value that is configured in Microsoft Dynamics AX.</td>
+<td>This information is identified by the <strong>Country code</strong> value that is configured in Finance and Operations.</td>
 </tr>
 <tr>
 <td>c_PatenteAduanal</td>
@@ -238,7 +238,7 @@ You use the functionality for prepayment journal vouchers to issue a CFDI advanc
 4. Post the sales invoice, and continue with the regular process.
 
     > [!NOTE]
-    > Currently, as of the date when we released this Microsoft Knowledge Base (KB) article, the government hasn't updated the schema to enable **cTipoRelacion** to be set to **07**. If you receive an error message during schema validation, you can manually select **01: Credit note** to solve the issue.
+    > As of publication, the government hasn't updated the schema to enable **cTipoRelacion** to be set to **07**. If you receive an error message during schema validation, you can manually select **01: Credit note** to solve the issue.
 
 ## Step 3: Issue a CFDI advance payment reverse
 
