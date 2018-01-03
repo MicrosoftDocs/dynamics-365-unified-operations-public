@@ -2,8 +2,7 @@
 # required metadata
 
 title: Financial insights
-description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and 
-financial statements.  
+description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.  
 author: kweekley
 manager: AnnBe
 ms.date: 01/03/2017
