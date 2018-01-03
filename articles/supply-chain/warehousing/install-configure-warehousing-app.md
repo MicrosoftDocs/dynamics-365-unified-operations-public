@@ -57,21 +57,16 @@ The app is available on Android and Windows operating systems. To use this app, 
 ## Create a web service application in Active Directory
 To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
 
-1.  In a web browser, go to <https://manage.windowsazure.com>.
+1.  In a web browser, go to <https://portal.azure.com>.
 2.  Enter the name and password for the user who has access to the Azure subscription.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  In the grid, select the Active Directory instance that is used by Finance and Operations.
-5.  On the top toolbar, click **Applications**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
-7.  Enter a name for the application and select **Web application and/or web API**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Enter the App ID URI, this value is mandatory, but isn’t required for the authentication. Make sure that this App ID URI is a mock URI like https://contosooperations/wmapp, since using the URL of your deployment can cause sign-in issues in other AAD applications such as the Excel Add-in. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Go to the **Configure** tab. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Scroll down until you see the **Permissions to other applications** section. Click **Add application**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Select **Microsoft Dynamics ERP** in the list. Click the **Complete check** button in the right corner of the page. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. In the **Delegate Permissions** list, select all the check boxes. Click **Save**. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Make a note of the following information:
-    -   **Client ID** - As you scroll up the page, you will see **Client ID** displayed.
-    -   **Key** - In the **Keys** section, create a key by selecting duration, and copy the key. This key will later be referred to as the **Client secret**.
+3.  In Azure Portal, in the left navigation pane, click **Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Ensure that the Active Directory instance is the one that is used by Finance and Operations.
+5.  On the top toolbar, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  In the top pane, click **New application registration**. The **Add application** wizard starts.
+7.  Enter a name for the application and select **Web application and/or web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Click on the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Make a note of the **Application ID**. The **Application ID** will later be reffered to as the **Client ID**.
+10. Click on Keys in the **Settings pane** - In the **Passwords** section, create a key by entering a Key description and selecting duration. Click **Save** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
