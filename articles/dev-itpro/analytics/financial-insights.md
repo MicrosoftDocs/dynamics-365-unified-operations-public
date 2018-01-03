@@ -58,6 +58,7 @@ The **CFO overview** workspace shows the same visuals as **Financial Insights**,
 
 # Finance and Operations setup
 **General ledger**
+
 The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
 
 On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:
