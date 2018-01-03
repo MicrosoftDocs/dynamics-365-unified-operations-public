@@ -54,7 +54,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 15. Go to **Retail** > **Retail IT** > **Distribution schedule**.
 16. Select the **Registers (1090)** job and click **Run now**.
 
- ## Add business logic to a custom column
+## Add business logic to a custom column
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.

@@ -1051,6 +1051,7 @@
 #### Mexico
 ##### [Adjustment inflation declaration report](../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 ##### [Cancel an electronic invoice](../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md)
+##### [CFDI Version 3.3](../financials/localizations/latam-mex-cfdi-3-3.md)
 ##### [Customer registration IDs and other information](../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md)
 ##### [DIOT declaration statement](../financials/localizations/latam-mex-diot-declaration-statement.md)
 ##### [E-invoicing CFDI](../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md)
@@ -1207,6 +1208,7 @@
 #### [Employee competencies and development](../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md)
 #### [Employee development](../dev-itpro/analytics/employee-development-PBI.md) 
 #### [Financial performance](../dev-itpro/analytics/financial-performance-power-bi-content-pack.md)
+#### [Financial insights](../dev-itpro/analytics/financial-insights.md)
 #### [Fixed asset management](../financials/fixed-assets/Fixed-asset-management-workspace.md)
 #### [Learning](../dev-itpro/analytics/learning-power-bi.md)
 #### [Organizational training](../dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md)
