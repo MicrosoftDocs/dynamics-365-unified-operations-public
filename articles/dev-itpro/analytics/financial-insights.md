@@ -75,7 +75,7 @@ To appear on the financial statements and to be included in various other visual
 # Entity store
 The data for **Financial Insights** is pulled from the Entity store (**System administration** > **Setup** > **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
  
-cid:image001.png@01D3742D.8F013E10
+[![Warning](./media/Cantdisplay.PNG)](./media/Cantdisplay.PNG)
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 •	CustCollectionsBIMeasurements
@@ -102,9 +102,7 @@ Currently, the data on embedded Power BI reports can’t be limited to the legal
 | **Duty**                     | **Roles**                                       | Decription                     |
 |------------------------------|-------------------------------------------------|-----------------|
 | View CFO Overview workspace  | Chief Financial Officer                         | •	This duty provides access to the CFO overview workspace. •	By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities.               |
-| View financial insights current company | •	Accountant •	Accounting manager •	Accounting supervisor •	Auditor •	Budget manager
-•	Chief executive officer •	Chief financial officer •	Financial controller  |   •	This duty provides access to Financial Insights.
-•	By default, the active company is used as a filter. You can’t add other legal entities.            |
+| View financial insights current company | •	Accountant •	Accounting manager •	Accounting supervisor •	Auditor •	Budget manager •	Chief executive officer •	Chief financial officer •	Financial controller  |   •	This duty provides access to Financial Insights. •	By default, the active company is used as a filter. You can’t add other legal entities.            |
 | View financial insights cross company   | •	In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn’t assigned to a role. •	In the next release, this duty will be assigned to the Chief financial officer role. | •	This duty provides access to the menu item for the CFO overview workspace. •	By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities.             |
 
 
@@ -147,7 +145,7 @@ There are various levels of filtering, some of which might not be available, dep
 
 •	**Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
-
+[![Warning](./media/filter.PNG)](./media/filter.PNG)
 
 
 To remove a specific filter value, select the eraser symbol next to it. Don’t remove a filter by selecting the X. If you select the X, the field that you’re filtering on is removed as a filter option. If you accidently remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
@@ -199,32 +197,28 @@ Various levels of drilling are available through Power BI. Each level has a diff
 
 In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.
 
-
-
+[![Trial Balance](./media/trial-balance.PNG)](./media/trial-balance.PNG)
 
  
 To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field). You now see all the main account categories expanded. Currently, Power BI doesn’t let you expand only one row or column but still see all the other rows or columns.
  
+ [![Trial Balance](./media/trial-balance2.PNG)](./media/trial-balance2.PNG)
  
- 
- 
- 
+  
 To expand to the main accounts for all rows, you can again use the **Expand** button. However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on. The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.
 
+[![Trial Balance](./media/trial-balance3.PNG)](./media/trial-balance3.PNG)
 
-
-
- 
 After you drill down on a single row, multiple clicks are required in order to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
  
- 
+[![Trial Balance](./media/trial-balance4.PNG)](./media/trial-balance4.PNG) 
  
  
 You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.
 
 Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field). The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy. When you expand the hierarchy, the hierarchy is maintained on the report. For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report. However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.
 
-
+[![Trial Balance](./media/trial-balance5.PNG)](./media/trial-balance5.PNG)
 
  
 To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.
@@ -268,8 +262,7 @@ Currently, the financial statements don’t support the organizational hierarchi
 # Data limitations
 The financial statement visuals have a limit on the number of rows that can be shown. Currently, the limit is set to 30,000. If you exceed this limit, the visual will have a warning symbol to notify you about this situation.
  
-cid:image001.png@01D37433.31B29E60
-
+[![Data limitations](./media/data-limit.PNG)](./media/data-limit.PNG)
 
 
 If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.
@@ -307,5 +300,7 @@ The new features will be communicated through the roadmap website as work is sta
 # Additional resources for Power BI
 
 The information in the following resources isn’t required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.
+
 https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/
+
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces
