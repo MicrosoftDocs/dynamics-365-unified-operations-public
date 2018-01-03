@@ -94,5 +94,5 @@ Using the configuration key metadata built during entity refresh list, run time 
 ### Guidance on managing configuration key changes in data management
 Any time configuration keys are updated at the entity, table or field level, the entity list in data management must be refreshed. This process will ensure that, data management picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. It is recommended to validate existing data projects and jobs to make sure they will function as expected after the configuration keys changes were put in effect.
 
-![Target fields](.media/Target_fields_3.png)
+![Target fields](./media/Target_fields_3.png)
 
