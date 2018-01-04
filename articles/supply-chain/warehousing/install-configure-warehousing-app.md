@@ -64,7 +64,7 @@ To enable the app to interact with a specific Finance and Operations server, you
 2.  Enter the name and password for the user who has access to the Azure subscription.
 3.  In Azure Portal, in the left navigation pane, click **Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Ensure that the Active Directory instance is the one that is used by Finance and Operations.
-5.  On the top toolbar, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  In the list, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
 6.  In the top pane, click **New application registration**. The **Add application** wizard starts.
 7.  Enter a name for the application and select **Web application and/or web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
 8.  Click on the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
