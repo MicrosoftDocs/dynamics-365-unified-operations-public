@@ -62,14 +62,15 @@ To enable the app to interact with a specific Finance and Operations server, you
 
 1.  In a web browser, go to <https://portal.azure.com>.
 2.  Enter the name and password for the user who has access to the Azure subscription.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  In Azure Portal, in the left navigation pane, click **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Ensure that the Active Directory instance is the one that is used by Finance and Operations.
 5.  In the list, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
 6.  In the top pane, click **New application registration**. The **Add application** wizard starts.
-7.  Enter a name for the application and select **Web application and/or web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+7.  Enter a name for the application and select **Web application/web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
 8.  Click on the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
-9.  Make a note of the **Application ID**. The **Application ID** will later be reffered to as the **Client ID**.
-10. Click on Keys in the **Settings pane** - In the **Passwords** section, create a key by entering a Key description and selecting duration. Click **Save** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+9.  Make a note of the **Application ID**. The **Application ID** will later be referred to as the **Client ID**.
+10. Click on **Keys** in the **Settings pane**, and create a key by entering a key description and a duration in the **Passwords** section. 
+11. Click **Save** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
