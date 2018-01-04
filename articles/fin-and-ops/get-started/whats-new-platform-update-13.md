@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 (December 2017)
+title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 (January 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13. This version was released in January 2018.
 author: tonyafehr
 manager: AnnBe
