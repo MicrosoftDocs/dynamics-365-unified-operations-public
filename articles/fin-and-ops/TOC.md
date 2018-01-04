@@ -56,6 +56,7 @@
 #### [Change the banner or logo](get-started/tasks/change-banner-or-logo.md)
 #### [Navigation search](get-started/navigation-search.md)
 #### [Personalize the user experience](get-started/personalize-user-experience.md)
+#### [Custom fields](get-started/user-defined-fields.md)
 #### [Use lookups to find information](get-started/use-lookups-to-find-information.md)
 #### [Change the date for the session](organization-administration/tasks/change-date-session.md)
 #### [Set a user's preferred time zone](organization-administration/tasks/set-users-preferred-time-zone.md)
