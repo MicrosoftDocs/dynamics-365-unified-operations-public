@@ -96,7 +96,7 @@ We have made it easier to add custom fields to forms in Dynamics 365 for Finance
 and Operations, Enterprise edition. Developer customization is no longer
 needed. Instead, a power user can add a custom field to a table and
 then place that field on the form using personalization. An IT administrator
-can then share the personalization with others in your organization.
+can then share the personalization with others in your organization. For information about how to create and manage custom fields, see [Custom fields](user-defined-fields.md).
 
 Service offered via a published range of network addresses
 ----------------------------------------------------------
