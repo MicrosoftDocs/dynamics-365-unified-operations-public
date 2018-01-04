@@ -193,3 +193,4 @@ This topic explains how to add a new custom column to a POS transaction page usi
 4. The custom column should display the line number.
 
 
+
