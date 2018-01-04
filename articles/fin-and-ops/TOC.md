@@ -1255,6 +1255,8 @@
 #### [Destinations](../dev-itpro/analytics/electronic-reporting-destinations.md)
 #### [Set up Electronic reporting with Power BI](../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 #### [Generate electronic documents and and update application data using the Electronic reporting tool](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md)
+#### [Parse incoming documents to update application data](../dev-itpro/analytics/parse-incoming-electronic-documents.md)
+#### [Parse incoming documents in CSV format](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md)
 #### Electronic reporting tasks
 ##### [Create a configuration provider and mark it as active for electronic reporting](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 ##### [Define the dependency of configurations from other components for electronic reporting](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
