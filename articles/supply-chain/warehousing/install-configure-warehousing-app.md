@@ -104,11 +104,11 @@ In case of a lost or compromised device, you must remove access to Finance and O
 
 1.  In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
 2.  Delete the line that corresponds to the device to which you want to remove access. Note down the **Client ID** used for the removed device.
-3.  Sign in the Azure classic portal at <https://manage.windowsazure.com>.
-4.  Click the **Active Directory** icon on the left menu, and then click the desired directory.
-5.  On the top menu, click **Applications**, and then click the application you want to configure. The **Quick Start** page will appear with single sign-on and other configuration information.
-6.  Click the **Configure** tab, scroll down and ensure that the **Client ID** of the application is the same as in step 2 in this section.
-7.  Click the **Delete** button in the command bar.
+3.  Sign in to the Azure portal at <https://portal.azure.com>.
+4.  Click the **Active Directory** icon on the left menu, and ensure you are in the desired directory.
+5.  In the list, click **App registrations**, and then click the application you want to configure. The **Settings** page will appear with configuration information.
+6.  Ensure that the **Client ID** of the application is the same as in step 2 in this section.
+7.  Click the **Delete** button in the top pane.
 8.  Click **Yes** in the confirmation message.
 
 
