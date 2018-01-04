@@ -91,6 +91,10 @@ Using the configuration key metadata built during entity refresh list, run time 
 
 -   When the user loads a template into a data project
 
+-   When an existing data project is loaded
+
+-   When a template is loaded into a data project
+
 -   Before the export/import job is executed (batch, non-batch, recurring,
     Odata)
 
@@ -99,6 +103,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 -   When the user maps fields in the mapping UI
 
 -   When the user adds only 'importable fields'
+
 
 
 ### Guidance on managing configuration key changes in data management
