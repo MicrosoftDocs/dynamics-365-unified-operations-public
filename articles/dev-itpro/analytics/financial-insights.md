@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial insights
+title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.  
 author: kweekley
 manager: AnnBe
@@ -30,11 +30,10 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# Financial insights
+# Financial Insights
 
 [!include[banner](../includes/banner.md)]
 
-Financial Insights
 Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
 The focus of Financial Insights is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
