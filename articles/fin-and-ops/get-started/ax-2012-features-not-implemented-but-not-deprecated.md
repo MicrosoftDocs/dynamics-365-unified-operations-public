@@ -286,6 +286,93 @@ Values for these supported payment specifications are used as payment specificat
 <td>Type E2 - Payment slip with notifications</td>
 </tr>
 </tbody>
+</table>
+<p><strong>AvtaleGiro (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Varsling</td>
+<td>AvtaleGiro-trans with notification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AutoGiro (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Melding</td>
+<td>Autogiro-trans with notification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>eFaktura (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reklame</td>
+<td>Include advertising flag</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ISO20022 Credit transfer (DK)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EasyAccountTransfer</td>
+<td>Easy-account with CVR (NKV)</td>
+</tr>
+<tr class="even">
+<td>Paym_slip</td>
+<td>Transfer forms (OCR)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ISPAG-CNAB240 format (BR)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>OP (payment order), DOC (wire transfer ), TED (other type of wire transfer)  and direct credit in the account</td>
+</tr>
+<tr class="even">
+<td>J</td>
+<td>Barcode payments (invoice with barcode or other type of documents with barcode)</td>
+</tr>
+<tr class="odd">
+<td>O</td>
+<td>Tax payments or other publics services payments</td>
+</tr>
+</tbody>
 </table></td>
 <td>Not implemented</td></tr>
 <tr class="even">
