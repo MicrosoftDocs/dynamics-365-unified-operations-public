@@ -21,7 +21,7 @@
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Releases and lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Platform update 13 (December 2017)](get-started/whats-new-platform-update-13.md)
+#### [Platform update 13 (January 2018)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
@@ -1255,6 +1255,8 @@
 #### [Destinations](../dev-itpro/analytics/electronic-reporting-destinations.md)
 #### [Set up Electronic reporting with Power BI](../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 #### [Generate electronic documents and and update application data using the Electronic reporting tool](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md)
+#### [Parse incoming documents to update application data](../dev-itpro/analytics/parse-incoming-electronic-documents.md)
+#### [Parse incoming documents in CSV format](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md)
 #### Electronic reporting tasks
 ##### [Create a configuration provider and mark it as active for electronic reporting](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 ##### [Define the dependency of configurations from other components for electronic reporting](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
@@ -1746,7 +1748,6 @@
 
 
 ## [Project management and accounting](../financials/project-management/overview-project-management-accounting.md)
-### [Microsoft Project client integration](../financials/project-management/project-integration.md)
 ### [Intercompany invoicing](../financials/project-management/intercompany-invoicing.md)
 ### [Configure intercompany project invoicing](../financials/project-management/tasks/configure-intercompany-project-invoicing.md)
 ### [Configure standard costs for labor and expenses](../financials/project-management/tasks/configure-standard-costs-labor-expenses.md)
@@ -1759,6 +1760,7 @@
 ### [Project resourcing](../financials/project-management/project-resourcing.md)
 ### [Receive items on purchase order from item requirement](../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md)
 ### [Work breakdown structures](../financials/project-management/work-breakdown-structures.md)
+#### [Microsoft Project client integration](../financials/project-management/project-integration.md)
 ### [Project time entry mobile workspace](../financials/project-management/project-time-entry-mobile-workspace.md)
 
 ## [Sales and marketing](../supply-chain/sales-marketing/overview-sales-marketing.md)
