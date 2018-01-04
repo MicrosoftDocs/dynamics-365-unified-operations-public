@@ -5,7 +5,7 @@ title: Customization analysis
 description: In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums. It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -59,9 +59,9 @@ To use Customization analysis, you must upload model files and then evaluate the
 Customization analysis checks your model files against the Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums. It then generates detailed reports of instances where your code deviates from those rules. After processing is complete, you can select the reports that you would like to review. Customization analysis provides the following types of reports:
 
 1.  An HTML Customization Analysis report that you can view in a browser.
-2.  An Excel file that you can use to review the errors that are generated.To view this report, click **View**, and then open the file.
-3.  An HTML developer report that you can open in a Microsoft Dynamics AX developer environment.To view this report in the Microsoft Dynamics AX development environment, perform the following steps:
-    1.  Click **View**.The file will open in a browser window.
+2.  An Excel file that you can use to review the errors that are generated. To view this report, click **View**, and then open the file.
+3.  An HTML developer report that you can open in a Microsoft Dynamics AX developer environment. To view this report in the Microsoft Dynamics AX development environment, perform the following steps:
+    1.  Click **View**. The file will open in a browser window.
     2.  Save the report to a computer in your development environment.
     3.  In the **Compiler output** window, click **Import**, and select the file to open it.
     4.  You can double-click any line within the report to open the object and line with the reported issue.

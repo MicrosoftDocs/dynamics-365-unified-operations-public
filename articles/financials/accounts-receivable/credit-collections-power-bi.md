@@ -5,7 +5,7 @@ title: Credit and collections management Power BI content
 description: This topic describes what is included in the Credit and collections management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ All the amounts are shown in the system currency. You can set the system currenc
 By default, the credit and collections data for the current company is shown. To see the data across all companies, assign the **CustCollectionsBICrossCompany** duty to the role.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
+The **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
 
 ## Reports that are included in the Power BI content
 
@@ -65,13 +65,6 @@ The **CustCollectionsBICrossCompany** Power BI content includes a report that co
 | Collections letters         | <ul><li>Collection code amounts</li><li>Collection code amount details</li><li>Collection letter amount per company</li><li>Collection letter amount per customer group</li><li>Collection letter amount by region</li></ul> |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data that is summarized on a visualization.
-
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Finance and Operations. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
-
-You can find the **Credit and collections management** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](../../dev-itpro/analytics/power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Credit and collections management** Power BI content that applies to the version of Finance and Operations that you're using.
 
 ## Understanding the data model and entities
 

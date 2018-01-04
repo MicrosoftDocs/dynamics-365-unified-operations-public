@@ -726,7 +726,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -1937,7 +1937,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -6718,7 +6718,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -7753,7 +7753,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|

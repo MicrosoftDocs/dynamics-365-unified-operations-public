@@ -75,6 +75,16 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add extension properties to a Customer entity](add-extension-properties.md)
 - [Add a custom control to a POS view](pos-custom-control.md)
 - [POS payment extension](pos-payment-extension.md)
+- [Run Retail POS samples](pos-run-samples.md)
+- [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
+- [Add custom controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
+- [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
+- [Call a POS API or operation from a POS extension](pos-api-extension.md)
+- [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
+- [Retail Modern POS triggers and printing](pos-trigger-printing.md)
+- [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
+- [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
+- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -109,7 +119,15 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)
 - [Retail Typescript and C# proxy](typescript-proxy-retail-pos.md)
-
+- [Run Retail POS samples](pos-run-samples.md)
+- [Extend existing POS views to add custom columns and app bar buttons](pos-view-extension.md)
+- [Add custom controls to Retail Modern POS transaction pages](pos-custom-transaction.md)
+- [Add custom columns to a POS transaction grid](pos-custom-transaction-column.md)
+- [Call a POS API or operation from a POS extension](pos-api-extension.md)
+- [Retail Modern POS triggers and printing](pos-trigger-printing.md)
+- [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
+- [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
+- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

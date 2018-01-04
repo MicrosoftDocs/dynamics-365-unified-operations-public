@@ -5,7 +5,7 @@ title: Publish a mobile workspace
 description: This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic describes the steps that system administrators must follow to publish
 > [!NOTE]
 > The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
-## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
 1. In your browser, start Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 2. Click **Settings** > **Mobile app**.
