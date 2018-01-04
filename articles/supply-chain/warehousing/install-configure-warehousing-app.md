@@ -49,15 +49,16 @@ The app is available on Android and Windows operating systems. To use this app, 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
--   Windows (UWP): [Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## Create a web service application in Active Directory
+## Create a web service application in Azure Active Directory
 To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
 
 1.  In a web browser, go to <https://portal.azure.com>.
@@ -67,9 +68,9 @@ To enable the app to interact with a specific Finance and Operations server, you
 5.  In the list, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
 6.  In the top pane, click **New application registration**. The **Add application** wizard starts.
 7.  Enter a name for the application and select **Web application/web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  Click on the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
-9.  Make a note of the **Application ID**. The **Application ID** will later be referred to as the **Client ID**.
-10. Click on **Keys** in the **Settings pane**, and create a key by entering a key description and a duration in the **Passwords** section. 
+8.  Select the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Remember the **Application ID**, you will need it later. The **Application ID** will later be referred to as the **Client ID**.
+10. Click **Keys** in the **Settings pane**. Create a key by entering a key description and a duration in the **Passwords** section. 
 11. Click **Save** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## Create and configure a user account in Finance and Operations
@@ -104,14 +105,10 @@ You must configure the app on the device to connect to the Finance and Operatio
 In case of a lost or compromised device, you must remove access to Finance and Operations for the device. The following steps describe the recommended process to remove access.
 
 1.  In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
-2.  Delete the line that corresponds to the device to which you want to remove access. Note down the **Client ID** used for the removed device.
+2.  Delete the line that corresponds to the device to which you want to remove access. Remember the **Client ID** used for the removed device, you will need it later.
 3.  Sign in to the Azure portal at <https://portal.azure.com>.
-4.  Click the **Active Directory** icon on the left menu, and ensure you are in the desired directory.
-5.  In the list, click **App registrations**, and then click the application you want to configure. The **Settings** page will appear with configuration information.
+4.  Click the **Active Directory** icon on the left menu, and ensure that you are in the correct directory.
+5.  In the list, click **App registrations**, and then click the application that you want to configure. The **Settings** page will appear with configuration information.
 6.  Ensure that the **Client ID** of the application is the same as in step 2 in this section.
 7.  Click the **Delete** button in the top pane.
 8.  Click **Yes** in the confirmation message.
-
-
-
-
