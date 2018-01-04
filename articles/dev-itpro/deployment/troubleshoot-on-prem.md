@@ -272,15 +272,16 @@ This error may also occur if the parameter **''** is not defined in the Applicat
 - An end quote at the end of the line or on the next line. 
 - Error on Microsoft-Service Fabric source.
  
-## What are the properties to create DataEncryption certificate
-Use the below properties to create the DataEncryption certificate
-1. **Is self-signed certificate**
-2. **Certificate purposes:** Enable all purposes for this certificate
-3. **Signature algorithm:** sha256RSA
-4. **Signature hash algorithm:** sha256
-5. **Issuer:** CN = DataEncryptionCertificate
-6. **Public Key:** RSA (2048 bits)
-7. **Thumbprint algorithm:** sha1
+## Properties to create a DataEncryption certificate
+Use the following properties to create the DataEncryption certificate:
+
+- **Is self-signed certificate**
+- **Certificate purposes:** Enable all purposes for this certificate
+- **Signature algorithm:** sha256RSA
+- **Signature hash algorithm:** sha256
+- **Issuer:** CN = DataEncryptionCertificate
+- **Public Key:** RSA (2048 bits)
+- **Thumbprint algorithm:** sha1
 
 ## Can't find the certificate and private key to use for decryption (0x8009200C) 
 If you are missing a certificate and ACL, or you have the wrong thumbprint entry, check for special characters and check in C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXBootstrapperAppType_App9\log\ConfigureCertificates….txt for thumbprints.  
