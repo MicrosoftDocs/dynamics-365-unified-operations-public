@@ -362,11 +362,11 @@ Values for these supported payment specifications are used as payment specificat
 <tbody>
 <tr class="odd">
 <td>A</td>
-<td>OP (payment order), DOC (wire transfer ), TED (other type of wire transfer)  and direct credit in the account</td>
+<td>OP (payment order), DOC (wire transfer), TED (other type of wire transfer), and direct credit in the account</td>
 </tr>
 <tr class="even">
 <td>J</td>
-<td>Barcode payments (invoice with barcode or other type of documents with barcode)</td>
+<td>Bar code payments (invoice with bar code or other type of documents with bar code)</td>
 </tr>
 <tr class="odd">
 <td>O</td>
