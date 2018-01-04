@@ -5,7 +5,7 @@ title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.  
 author: kweekley
 manager: AnnBe
-ms.date: 01/03/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
-The focus of Financial Insights is analytical reporting. Personas across an organization can view, research, understand, and act. 
+**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
+The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
-Financial Insights combines data from the general ledger and subledgers to give a more complete picture of the financial health of an 
+**Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an 
 organization.
 
 > [!NOTE] 
@@ -52,7 +52,7 @@ statement as a visual can have no other visuals, because of the size of the data
 
 Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
 
-The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The CFO overview workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
+The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
 
 # Finance and Operations setup
 **General ledger**
@@ -60,15 +60,20 @@ The **CFO overview** workspace shows the same visuals as **Financial Insights**,
 The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
 
 On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:
+
 •	Revenue
+
 •	Expense
+
 •	Assets
+
 •	Liabilities
+
 •	Equity
 
 Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts. Reporting can’t determine the type of main account when other main account types are assigned, because they aren’t granular enough. The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.
 
-To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in Financial Insights. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
+To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
 
 
 # Entity store
@@ -107,7 +112,7 @@ Currently, the data on embedded Power BI reports can’t be limited to the legal
 
 
 # How financial statements work
-Although Financial Insights does contain financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in Financial Insights are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+Although **Financial Insights** does contain financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial Insights** are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 In addition to the visuals from the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
 
@@ -141,7 +146,7 @@ There are various levels of filtering, some of which might not be available, dep
 
 •	**Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.
 
-•	**Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters
+•	**Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 
 •	**Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
@@ -227,22 +232,23 @@ The drill-back from the financial statements takes you to the Accounting source 
 
 The following filters from the financial statements are sent to the ASE, so that the ASE shows the transactions that are aggregated:
 
-•	Required fields for filtering:
-      –	Legal entity
+Required fields for filtering:
 
-      –	Fiscal calendar
+  - Legal entity
+ 
+  - Fiscal calendar
+ 
+  - Year
+ 
+  - Main account ID
 
-      –	Year
+Optional fields for filtering:
 
-      –	Main account ID
+  - Quarter
 
-•	Optional fields for filtering:
+  - Month
 
-     –	Quarter
-     
-     –	Month
-     
-     –	Period
+  - Period
 
 If you don’t expand down far enough on a row, the drill-down doesn’t work. For example, if you expand down only to the main account category, you can’t drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.
 
@@ -275,19 +281,19 @@ The new workspaces and financial statements that use Power BI will continue to b
 
 •	The ability to copy, edit, delete, and create visuals, even the financial statements
 
-•	Additional default reports
-        
-        –	Support for additional subledger data
+•	Additional default reports        
+    
+    - Support for additional subledger data
 
 •	Support for a reporting currency
 
 •	Add custom calculations for rows and columns
 
 •	The ability to export the financial statements to Microsoft Excel
-        
-        –	Maintain the format of the financial statement during export.
-        
-        –	Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
+
+    - Maintain the format of the financial statement during export.
+    
+    - Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
 
 •	Locale support
 
@@ -295,7 +301,7 @@ The new workspaces and financial statements that use Power BI will continue to b
 
 •	Support for printing
 
-The new features will be communicated through the roadmap website as work is started: https://roadmap.dynamics.com/
+The new features will be communicated through the roadmap website as work is started: https://roadmap.dynamics.com/.
 
 # Additional resources for Power BI
 
