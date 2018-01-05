@@ -63,6 +63,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 5. Under **Cart**, create a new folder named **LinesGrid**.
 6. In the **LinesGrid** folder, add a new Typescript file and name it **CustomColumn1Configuration.ts**.
 7. Add the following **import** statements to import the relevant entities and context.
+
     ```Typescript
     import {
 
@@ -75,21 +76,25 @@ This topic explains how to add a new custom column to a POS transaction page usi
     import { ProxyEntities } from "PosApi/Entities";
     ```
 8. Create a new class named **LinesCustomGridColumn1** and extend it from **CustomLinesGridColumnBase**.
-    ```typescript
+
+    ```Typescript
     export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {}
     ```
 9. Inside the class declare a private variable to capture the selected tender lines.
-    ```typescript
+
+    ```Typescript
     private _selectedTenderLines: ProxyEntities.TenderLine[ ];
     ```
 10. Create a class constructor method to initialize the context.
-    ```typescript
+
+    ```Typescript
     constructor(context: ICustomLinesGridColumnContext) {
         super(context);
     }
     ```
 11. Add the following methods for the columns title and alignment.
-    ```typescript
+
+    ```Typescript
     public title(): string {
         return "Line number";
     } 
@@ -99,13 +104,13 @@ This topic explains how to add a new custom column to a POS transaction page usi
     }
     ```
 12. Add the column compute value method, which returns the line number.
-    ```typescript
+    ```Typescript
     public computeValue(cartLine: ProxyEntities.CartLine): string {
         return cartLine.LineNumber.toString();
     }
     ```
     The code for the entire class is:
-    ```typescript
+    ```Typescript
     import {
         ICustomLinesGridColumnContext,
         CustomLinesGridColumnBase
@@ -133,7 +138,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ```
 13. Create a new .json file under the **CustomColumnExtensions** folder and name it **manifest.json**.
 14. In the **manifest.json** file, replace the generated code with the following code.
-    ```typescript
+
+    ```Typescript
     {
         "$schema": "../manifestSchema.json",
             "name": "Pos_Extensibility_Samples",
@@ -154,7 +160,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
     }
     ```
 15. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **CustomColumnExtensions** sample, so that POS during runtime will include this extension.
-    ```typescript
+
+    ```Typescript
     {
         "extensionPackages": [
             {
@@ -167,7 +174,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
     }
     ```
 16. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions. If you want to include any extension part of the POS, then you need add the extension folder name and comment the extension from the extension list as shown.
-    ```typescript
+
+    ```Typescript
     "exclude": [
         "AuditEventExtensionSample",
         "B2BSample",
@@ -191,5 +199,6 @@ This topic explains how to add a new custom column to a POS transaction page usi
 2. Click the **Current transaction** button on the **Welcome** screen.
 3. Add item **(0005)** to the transaction.
 4. The custom column should display the line number.
+
 
 
