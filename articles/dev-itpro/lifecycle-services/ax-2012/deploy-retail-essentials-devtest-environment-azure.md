@@ -61,7 +61,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 3.  Enter a name to identify the connection to Azure.
 4.  Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
     1.  Open another instance of your browser.
-    2.  Log on to the [Azure portal](https://portal.azure.com/).
+    2.  Log on to the [Azure portal](https://ms.portal.azure.com/).
     3.  In the navigation pane on the left, click **Subscriptions**. 
         > [!Note]
         > You may need to click **More services** at the bottom, and then click **Subscriptions**.
@@ -154,7 +154,7 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
     <li>The <span class="label"><strong>Application subnet name</strong></span> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label">*APPNET*</span></strong> value.</li>
     <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you desire to target.
     <ol>
-    <li>Log on to the <a href="https://manage.windowsazure.com/">Azure portal</a>.</li>
+    <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
     <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
     <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
