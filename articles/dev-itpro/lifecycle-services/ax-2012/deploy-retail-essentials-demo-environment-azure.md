@@ -79,7 +79,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 > If the certificate expires, you can obtain a new one. To do so:
 > 1. Select the connection in the **Azure connectors** area of your project settings, and click **Edit**.
 > 2. The **Microsoft Azure setup** panel is displayed on the side of the screen. Click **Download** to download a new certificate.
-> 3. Repeat steps 7-10 of the above procedure.
+> 3. Repeat steps 6-9 of the above procedure.
 
 ## 4. Deploy a Retail essentials demo environment on Azure
 Complete the following procedure to deploy a Retail essentials demo environment on Azure.
