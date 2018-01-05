@@ -53,30 +53,35 @@ Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative works
 ## 2. Create a project
 
 After you log in to Lifecycle Services, open an existing project, or create a new project. Projects are the key organizer of your experience in Lifecycle Services. The methodology associated with a project determines which phases and tasks are included in the project by default.
-## 3. Connect the project to your Azure subscription
 
-Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX 2012 R3 environment to the subscription. To connect the project to your Azure subscription, complete the following procedure. Keep in mind that a project can be connected to only one Azure subscription. If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.
-1.  Click **Cloud-hosted environments**. The **Cloud-hosted environments** page is displayed.
-2.  The **Microsoft Azure setup** panel is displayed on the side of the screen. If it is not displayed, click **Microsoft Azure settings**.
-3.  Enter your **Azure subscription ID**. If you need to find your subscription ID, complete the following steps:
+## 3. Connect the project to your Azure subscription
+Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.
+
+1.  In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
+    >[!Note]
+    > The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.
+3.  Enter a name to identify the connection to Azure.
+4.  Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
     1.  Open another instance of your browser.
-    2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
-    3.  In the navigation pane on the left, click **Settings**. (You may have to scroll to the bottom of the navigation pane to see the **Settings** link.) The **Settings** page is displayed.
+    2.  Log on to the [Azure portal](https://portal.azure.com/).
+    3.  In the navigation pane on the left, click **Subscriptions**. 
+        > [!Note]
+        > You may need to click **More services** at the bottom, and then click **Subscriptions**.
     4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
 
-4.  Click **Next**.
-5.  Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment**.**cer**.
-6.  Upload the management certificate to Azure. To do so, complete the following steps:
-    1.  Open another instance of your browser. (Or, go to the browser instance that you may have opened in step 3.)
-    2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
-    3.  In the navigation pane on the left, click **Settings**. The **Settings** page is displayed.
-    4.  Click **Management certificates**.
-    5.  Click **Upload** at the bottom of the page.
-    6.  In the **Upload a management certificate** window, browse to the management certificate that you downloaded in step 5. Then click the check mark.
+5.  Click **Next**.
+6.  Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
+7.  Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
-7.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
-8.  Select the region that is closest to you. The Dynamics AX  environment will be deployed to a datacenter in this region.
-9.  Click **Connect**. The project is now connected to the Azure subscription that you specified. If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.
+8.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
+9.  Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
+10.  Click **Connect**. The project is now connected to the Azure subscription that you specified. 
+
+>[!Note]
+> If the certificate expires, you can obtain a new one. To do so:
+> 1. Select the connection in the **Azure connectors** area of your project settings, and click **Edit**.
+> 2. The **Microsoft Azure setup** panel is displayed on the side of the screen. Click **Download** to download a new certificate.
+> 3. Repeat steps 6-9 of the above procedure.
 
 ## 4. Deploy a Retail e-commerce dev/test environment on Azure
 Complete the following procedure to deploy a Retail e-commerce dev/test environment on Azure.
