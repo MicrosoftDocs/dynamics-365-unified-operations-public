@@ -86,7 +86,7 @@ For a **Customer Implementation** project:
 
 Customers are provided with 1 free "develop and build" environment hosted in Microsoft's Azure subscription. Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the Cloud-hosted environment page.
 
-**ADD CLOUD HOSTED PICTURE HERE**
+![Cloud-hosted instances](media/CloudHostedPicture.JPG)
 
 ## Cloud environment that is provisioned through LCS
 When a cloud environment is provisioned through LCS:
