@@ -154,7 +154,7 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     <li>The <strong><span class="label">Application subnet name</span></strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label">*APPNET*</span></strong> value.</li>
     <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you desire to target.
     <ol>
-    <li>Log on to the <a href="https://ms.portal.azure.com/">Azure management portal</a>.</li>
+    <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
     <li>In the navigation pane on the left, click <strong><span class="label">Virtaul networks</span></strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
     <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
