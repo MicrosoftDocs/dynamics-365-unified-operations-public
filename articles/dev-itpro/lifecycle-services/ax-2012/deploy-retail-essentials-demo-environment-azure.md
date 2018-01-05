@@ -117,8 +117,8 @@ Complete the following procedure to deploy a Retail essentials demo environment 
     <li>Click <strong><span class="label">Existing virtual network</span></strong>.</li>
     <li>Select the name of the existing virtual network that you want to use. The <span class="label"><strong>Application subnet</strong> <strong>name</strong></span> and <strong><span class="label">Address space</span></strong> fields will automatically display the appropriate information based on the virtual network that you selected. If you want to verify the information in these fields, do this:
     <ol>
-    <li>Log on to the <a href="https://manage.windowsazure.com/">Azure management portal</a>.</li>
-    <li>In the navigation pane on the left, click <strong><span class="label">Networks</span></strong>.</li>
+    <li>Log on to the <a href="https://manage.windowsazure.com/">Azure portal</a>.</li>
+    <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
     <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
     <li>Click <strong><span class="label">Done</span></strong>. The <strong><span class="label">Deploy environment</span></strong> panel is redisplayed.</li>
