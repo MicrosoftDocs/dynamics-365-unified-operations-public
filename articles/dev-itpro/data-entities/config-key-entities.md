@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities. 
+description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -31,21 +31,18 @@ ms.dyn365.ops.version: Platform update 13
 ---
 
 # Configuration keys and data entities
-When using data entities for imports and/or exports, it is recommended to first understand what impact if any, would configuration keys will have on the data entities that you are planning to use. It is recommended to follow the below defined process for determining this prior to using data entities. 
+Before you use data entities to import or export data, we recommended that you first determine the impact of configuration (config) keys on the data entities that you are planning to use. 
 
-To learn more about configuration keys in D365FO, refer to this topic.
+To learn more about configuration keys in Finance and Operations, see .
 
 ### Configuration key assignments
-Configuration keys can be assigned to one or all the following artifacts.
--   Data entity
+Configuration keys can be assigned to one or all of the following artifacts.
+-   Data entities
+-   Tables used as data sources
+-   Table fields
+-   Data entity fields
 
-    -   Table(s) (which are added as data sources)
-
-        -   Field(s)
-
-    -   Fields (data entity fields)
-
-Following table provides a summary of what the expected behavior should be under various scenarios while dealing with configuration keys.
+The following table summarizes how config key settings for an object change the expected behavior of the object.
 
 | Config key setting on data entity | Config key setting on table | Config key setting on table field | Config key on data entity field |                                                                                                                                                                                                                                                             Expected behavior                                                                                                                                                                                                                                                             |
 |:---------------------------------:|:---------------------------:|:---------------------------------:|:-------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
