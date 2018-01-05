@@ -108,7 +108,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
 
-**ADD PICTURE From Roadmap Blog Post**
+![Restricted admin access](media/restricted-admin.png)
 
 For environments deployed **before Platform Update 12**:
 1.	Click the VM name.
