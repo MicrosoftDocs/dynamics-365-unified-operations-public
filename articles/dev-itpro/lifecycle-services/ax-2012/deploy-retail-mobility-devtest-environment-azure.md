@@ -47,7 +47,7 @@ Before you complete the procedures in this topic, make sure that the following p
 | Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
-Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/).
+Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/)
 
 ## 2. Create a project
 After you log in to LCS, open an existing project, or create a new project. Projects are the key organizer of your experience in LCS. The methodology associated with a project determines which phases and tasks are included in the project by default.
@@ -71,7 +71,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 6.  Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
 7.  Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
-8.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
+8.  Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
 9.  Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
 10.  Click **Connect**. The project is now connected to the Azure subscription that you specified. 
 
@@ -84,7 +84,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 ## 4. Deploy a Retail mobility dev/test environment on Azure
 Complete the following procedure to deploy a Retail mobility dev/test environment on Azure.
 
-1.  On the **Cloud-hosted environments** page, click the **Add** (**+**) icon.
+1.  On the **Cloud-hosted environments** page, click the Add (**+**) icon.
 2.  In the **Select environment topology** panel, select **Dev/test**.
 3.  Click **Retail mobility dev/test**.
 4.  In the **Environment name** field, enter a name for the environment that will be deployed.
@@ -182,7 +182,7 @@ Before you complete the following procedures, make sure that the following prere
 
 | Prerequisite                                                                                                                                                     | More information                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX can be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
+| Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
 | Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md). |
 | Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
 | Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
@@ -201,7 +201,7 @@ Log on to the server or virtual machine where the AOS is installed and complete 
 
 ### Complete configuration tasks on the MOBIL virtual machine
 
-On the **Cloud-hosted environments** page, select your Retail mobility environment. Then scroll to the right and click the **MOBIL-&lt;GUID&gt;** link to log on to the virtual machine. After you have logged on to the machine, complete the following steps:
+From the **Cloud-hosted environments** page, select your Retail mobility environment. Then scroll to the right and click the **MOBIL-&lt;GUID&gt;** link to log on to the virtual machine. After you have logged on to the machine, complete the following steps:
 
 1.  If using a self-signed certificate, install the certificate on the MOBIL-&lt;GUID&gt; virtual machine. For instructions, see the “Install the Cert on the External Machine” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
 2.  Update Async Client to use the URL of the Async Server. For instructions, see the “Install CDX Async Client” section of this [blog post](https://blogs.msdn.microsoft.com/axsupport/2014/06/27/connecting-retail-components-on-an-external-computer-to-the-microsoft-dynamics-ax-r3-azure-lifecycle-services-demo-virtual-machine/).
