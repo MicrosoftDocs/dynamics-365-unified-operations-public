@@ -81,6 +81,8 @@ Excel to interactively view, edit, and create data. These workbooks, powered by
 the Excel add-in, provide a productive environment configuration experience.
 With this enhancement, you can move data from one environment to another by reading data into Excel from one environment, change the environment address, and then publish the data into the new environment.
 
+For more information, see [Copy environment data](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data).
+
 Power users can add custom fields to forms without developer customization 
 ---------------------------------------------------------------------------
 
