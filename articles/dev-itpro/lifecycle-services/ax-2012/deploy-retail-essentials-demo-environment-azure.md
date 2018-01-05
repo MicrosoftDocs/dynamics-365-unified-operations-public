@@ -72,7 +72,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 7.  Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
 8.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
-9.  Select the region that is closest to you. The AX 2012 R3 environment will be deployed to a datacenter in this region.
+9.  Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
 10.  Click **Connect**. The project is now connected to the Azure subscription that you specified. 
 
 >[!Note]
