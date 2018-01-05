@@ -55,7 +55,7 @@ After you log in to Lifecycle Services, open an existing project, or create a ne
 ## 3. Connect the project to your Azure subscription
 Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.
 
-1.  In your LCS project, go to the **Environments** section, and click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
+1.  In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
     >[!Note]
     > The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.
 3.  Enter a name to identify the connection to Azure.
