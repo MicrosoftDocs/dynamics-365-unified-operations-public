@@ -88,11 +88,11 @@ Before the update is applied, Microsoft runs validations to make sure that there
 After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs some basic verification tests to make sure that Microsoft Dynamics 365 for Finance and Operations can be used to complete transactions.
 
 ### Can I reschedule the planned maintenance?
-We do not offer an option to reschedule a planned maintenance. However, you can select to be excluded from the current months maintenance cycle. 
+We do not offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
 We plan to add this option into LCS so that you can reschedule an update directly through LCS. 
 
 ### How do I opt out of the the current maintenance cycle?
-To opt out of the current maintenance cycle, file a support ticket with Microsoft. Your environment will be excluded for the current months maintenance cycle. However, your environment will be updated during the next months maintenance. 
+To opt out of the current maintenance cycle, file a support ticket with Microsoft. Your environment will be excluded from the maintenance cycle for the current month. However, your environment will be updated the next month.
 
 ### How do I report an issue that is identified during validation of the updates that were applied to the environment?
 To report an issue that is identified during update validation, file a support ticket with Microsoft and append the title with ‘Planned Maintenance Window’.
