@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <tr class="header">
 <th>AX 2012 feature that was postponed</th>
 <th>Description</th>
-<th>Current status (as of December 2017)
+<th>Current status (as of January 2018)
 </tr>
 </thead>
 <tbody>
@@ -284,6 +284,93 @@ Values for these supported payment specifications are used as payment specificat
 <tr class="even">
 <td>TpE2.PSWN</td>
 <td>Type E2 - Payment slip with notifications</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AvtaleGiro (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Varsling</td>
+<td>AvtaleGiro-trans with notification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AutoGiro (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Melding</td>
+<td>Autogiro-trans with notification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>eFaktura (NO)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reklame</td>
+<td>Include advertising flag</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ISO20022 Credit transfer (DK)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EasyAccountTransfer</td>
+<td>Easy-account with CVR (NKV)</td>
+</tr>
+<tr class="even">
+<td>Paym_slip</td>
+<td>Transfer forms (OCR)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ISPAG-CNAB240 format (BR)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Payment specification (used in ER)</th>
+<th>Export format description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>OP (payment order), DOC (wire transfer), TED (other type of wire transfer), and direct credit in the account</td>
+</tr>
+<tr class="even">
+<td>J</td>
+<td>Bar code payments (invoice with bar code or other type of documents with bar code)</td>
+</tr>
+<tr class="odd">
+<td>O</td>
+<td>Tax payments or other publics services payments</td>
 </tr>
 </tbody>
 </table></td>
