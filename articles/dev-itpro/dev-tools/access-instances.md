@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Access instances
+# Deploy and access development environments 
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,18 +45,12 @@ Definitions
 | End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
 | Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.      |
 
-### Environments
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is deployed in two modes:
+## Deploying cloud development environments
 
--   A cloud environment that is provisioned through Microsoft Dynamics Lifecycle Services (LCS), and that supports various topologies (developer, demo, and high availability)
--   A local (on-premises) development virtual machine (VM) that is downloaded from LCS
+The process of deploying cloud hosted environments differs for LCS trial or partner projects and LCS customer implementation projects.
 
-## Deploying cloud environments
-
-The process of deploying cloud hosted environments differs for partners and customers.
-
-If you are a **Partner**:
+For a **Trial** or **Partner** project:
 
 1. Create a connection between a LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 
@@ -76,7 +70,7 @@ If you are a **Partner**:
 
 6. if you did not choose a cloud-hosted environment, select a VHD to download.
 
-If you are a **Customer** :
+For a **Customer Implementation** project:
 
 1. Log on to your LCS Implementation project.
 
@@ -90,13 +84,15 @@ If you are a **Customer** :
 
     ![Deployment settings](media/access-instances-7.jpeg)
 
-Customers are provided with 1 free "develop and build" environment hosted in Microsoft's Azure subscription. Any additional develop and build environments or demo environments will need to be hosted in their own subscription. To deploy an environment in your own environment use Partner steps above.
+Customers are provided with 1 free "develop and build" environment hosted in Microsoft's Azure subscription. Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the Cloud-hosted environment page.
+
+![Cloud-hosted instances](media/CloudHostedPicture.JPG)
 
 ## Cloud environment that is provisioned through LCS
-When a cloud environment is provisioned through LCS, the following events occur:
+When a cloud environment is provisioned through LCS:
 
 -   The user who requests the cloud environment is provisioned as the administrator in that environment.
--   A user who requests access through LCS will be able to access the cloud environment through Remote Desktop.
+-   User accounts are provisioned on the development VM to allow access to the environment vis Remote Desktop, these credentials are accessible on the environment page in LCS.
 
 ### Accessing an instance through a URL
 
@@ -112,10 +108,16 @@ The system can be accessed by end users. The administrator can add users to this
 
 Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
 
-1.  Click the VM name.
-2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
+![Restricted admin access](media/restricted-admin.png)
+
+For environments deployed **before Platform Update 12**:
+1.	Click the VM name.
+2.	Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
+
+For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
+
 
 ## VM that is running on-premises
 An environment virtual hard disk (VHD) is made available for download from LCS, so that it can be set up on a local machine. This system is intended to be accessed by a developer.
