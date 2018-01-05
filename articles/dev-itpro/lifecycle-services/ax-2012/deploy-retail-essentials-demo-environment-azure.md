@@ -61,7 +61,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 3.  Enter a name to identify the connection to Azure.
 4.  Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
     1.  Open another instance of your browser.
-    2.  Log on to the [Azure portal](https://portal.azure.com/).
+    2.  Log on to the [Azure portal](https://ms.portal.azure.com/).
     3.  In the navigation pane on the left, click **Subscriptions**. 
         > [!Note]
         > You may need to click **More services** at the bottom, and then click **Subscriptions**.
