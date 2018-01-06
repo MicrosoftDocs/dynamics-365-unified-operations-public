@@ -57,7 +57,7 @@ This topic describes authentication for services, and the REST Metadata service.
 ## Authentication
 OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication. 
 
-We currently support [Authorization Code Grant flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx). 
+We currently support both [Authorization Code Grant flow](https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx) and [Service to service calls using client credentials (shared secret or certificate)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service). 
 
 Two kinds of application are supported in Microsoft Azure Active Directory (AAD):
 
@@ -68,9 +68,13 @@ For more information, see:
 - [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/dn645545.aspx)
 - [Troubleshoot service authentication](troubleshoot-service-authentication.md)
 
-The following illustration describes how authorization must be configured. 
+The following illustration describes how authorization must be configured for Authorization code grant flow. 
 
 ![Authorization code grant flow](./media/services-authentication.png)
+
+And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
+
+![Service to service calls using clident credentials](./media/S2SAuth.jpg)
 
 ### Register a native application with AAD
 
