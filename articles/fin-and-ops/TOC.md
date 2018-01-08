@@ -446,6 +446,7 @@
 
 ### [Fixed assets](../financials/fixed-assets/fixed-assets.md)
 #### [Fixed asset workspace](../financials/fixed-assets/fixed-asset-management-workspace.md)
+#### [Fixed assets roll forward report](../financials/fixed-assets/Fixed-asset-roll-forward-report.md)
 #### [Depreciation book upgrade overview](../financials/fixed-assets/depreciation-book-upgrade-considerations.md)
 #### [Derived books](../financials/fixed-assets/derived-books.md)
 #### [Fixed asset value model and depreciation book merge](../financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge.md)
