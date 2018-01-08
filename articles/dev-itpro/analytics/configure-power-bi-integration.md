@@ -5,7 +5,7 @@ title: Configure Power BI integration for workspaces
 description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
