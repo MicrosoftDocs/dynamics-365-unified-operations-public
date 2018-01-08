@@ -3,7 +3,7 @@
 
 title: Standard cost conversion overview
 description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624

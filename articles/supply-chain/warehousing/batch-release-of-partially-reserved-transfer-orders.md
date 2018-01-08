@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Batch release of partially reserved transfer orders
 description: This topic describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
 author: pjacobse
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global

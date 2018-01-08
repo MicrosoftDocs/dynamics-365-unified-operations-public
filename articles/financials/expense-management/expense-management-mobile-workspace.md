@@ -6,7 +6,7 @@ title: Expense management mobile workspace
 description: This topic provides information about the Expense management mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports. 
 author: KimANelson 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274023
 ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
@@ -52,7 +52,7 @@ Specifically, the **Expense management** mobile workspace lets users perform the
 - Upload a file as a captured receipt. You can then attach that file to an expense report later.
 - Create a new expense line by using an attached receipt. You can then add the line item to an expense report later, and submit it for approval and reimbursement.
 
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), you can also use these features:
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can also use these features:
 
 - Create a new expense report.
 - Attach credit card transactions and other previously created expenses to an expense report.
@@ -66,8 +66,8 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 ## Prerequisites
 The prerequisites vary, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

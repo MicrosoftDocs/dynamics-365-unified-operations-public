@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 125753
 ms.assetid: 99af5334-d30e-4160-9504-881777e9d4ea
@@ -122,11 +122,11 @@ Form adaptor models are required for test automation. Regenerate the platform fo
 
 The following examples show how to generate the form adaptor models.
 
-    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:templog1.xml"
+    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:\temp\log1.xml"
 
-    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="ApplicationFoundationFormAdaptor" -xmllog="c:templog2.xml"
+    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="ApplicationFoundationFormAdaptor" -xmllog="c:\temp\log2.xml"
 
-    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:templog3.xml"
+    xppfagen.exe -metadata=j:AosServicePackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
 
 ### Install the new Data Management service
 
@@ -147,9 +147,9 @@ Applying the platform upgrade package on a build environment requires the same p
 
 ### Prepare your build environment
 
-When the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before upgrading the VM to a newer Dynamics AX platform. You should then delete the metadata backup. This will ensure that the platform update will be applied on a clean environment, and the next build process will detect that no metadata backup exists and automatically create a new one, which will include the updated platform. To find out if a complete metadata backup exists, please look for a BackupComplete.txt file in I:DynamicsBackupPackages" (or C:DynamicsBackupPackages on a downloadable VHD). The presence of this file indicates that a metadata backup exists and the file will contain a timestamp of when it was created. To restore the deployment's metadata packages folder from the metadata backup open an elevated PowerShell command prompt and run the below command. This will exercise the same script as used in the first step of the build process.
+When the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before upgrading the VM to a newer Dynamics AX platform. You should then delete the metadata backup. This will ensure that the platform update will be applied on a clean environment, and the next build process will detect that no metadata backup exists and automatically create a new one, which will include the updated platform. To find out if a complete metadata backup exists, please look for a BackupComplete.txt file in I:\Dynamics\BackupPackages" (or C:\Dynamics\BackupPackages on a downloadable VHD). The presence of this file indicates that a metadata backup exists and the file will contain a timestamp of when it was created. To restore the deployment's metadata packages folder from the metadata backup open an elevated PowerShell command prompt and run the below command. This will exercise the same script as used in the first step of the build process.
 
-    if (Test-Path -Path "I:DynamicsBackupPackagesBackupComplete.txt") { C:DynamicsSDKPrepareForBuild.ps1 }
+    if (Test-Path -Path "I:\Dynamics\BackupPackages\BackupComplete.txt") { C:\Dynamics\SDK\PrepareForBuild.ps1 }
 
 Note: Execute the above command only if a complete metadata backup exists, as it will create a new backup if it does not. This command will stop the Dynamics AX deployment services and IIS before restoring the files from the metadata backup to the deployment's metadata packages folder. You should see output like this: *6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics AX deployment...* *6:18:06 PM: **A backup already exists at: I:DynamicsBackupPackages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* Once the metadata backup has been restored, **delete (or rename) the metadata backup folder (*DynamicsBackupPackages*)** so it will no longer be found by the build process.
 

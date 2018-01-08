@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail SDK overview
-description: This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
+description: This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17771
 ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include[banner](../../includes/banner.md)]
 
 
-This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
+This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 
 Overview
 --------
@@ -202,7 +202,7 @@ BuildTools\\Customization.settings holds most of the configuration values for t
 
 #### Adding new projects
 
-It's easy to adding new projects to the Retail SDK’s build system. You can either clone one of the many existing projects or start a new project. You just have to make some adjustments in a text editor, as shown in the following illustration. The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property. These adjustments are required in order to get versioning, code signing, uniform assembly naming, automatic dropping to the References folder, and other tasks for free. [![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)
+It's easy to add new projects to the Retail SDK’s build system. You can either clone one of the many existing projects or start a new project. You just have to make some adjustments in a text editor, as shown in the following illustration. The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property. These adjustments are required in order to get versioning, code signing, uniform assembly naming, automatic dropping to the References folder, and other tasks for free. [![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)
 
 #### Changing the build order or adding to the build
 

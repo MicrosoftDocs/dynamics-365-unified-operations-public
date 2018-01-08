@@ -5,7 +5,7 @@ title: Human resources
 description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 07/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.search.region: Global
@@ -71,7 +71,7 @@ After you've hired staff, you can set up plans to effectively and equitably mana
 
 ## Develop and train employees
 
-To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
+To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback. To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
 -   [Performance management](../../talent/performance-management-overview.md)
 -   [Align workforce skills and business needs](../../talent/skills.md)

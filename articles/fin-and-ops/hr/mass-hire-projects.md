@@ -17,8 +17,8 @@ ms.search.form: HRMMassHireProject
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: rschloma
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9

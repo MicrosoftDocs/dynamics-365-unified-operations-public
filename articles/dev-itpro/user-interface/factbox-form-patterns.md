@@ -2,10 +2,10 @@
 # required metadata
 
 title: FactBox form patterns
-description: This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
+description: This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
+This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 
 Usage
 -----
@@ -96,7 +96,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **FactBox** **general guidelines:**
 

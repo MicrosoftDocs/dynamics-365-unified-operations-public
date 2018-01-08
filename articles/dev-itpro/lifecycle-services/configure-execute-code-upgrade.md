@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265594
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
@@ -45,14 +45,14 @@ The code upgrade tool operates by connecting to Visual Studio Team Services (VST
 ## Process
 ### Create the Trunk\\Main folder structure
 
-For the code upgrade service to recognise your source code, the folder structure must conform to the following strict pattern. The correct structure is: 
+For the code upgrade service to recognize your source code, the folder structure must conform to the following strict pattern. The correct structure is: 
  - For code itself: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
  - For Visual Studio projects: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
  
  To create new folders in VSTS, create the folders locally and then check them into VSTS.
  
  > [!NOTE]
- > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognise the folder. 
+ > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder. 
 
 ### To create a personal access token
 

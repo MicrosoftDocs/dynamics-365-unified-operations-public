@@ -5,7 +5,7 @@ title: My team mobile workspace
 description: This topic provides information about the My team mobile workspace, which lets mmanagers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Talent, Operations, UnifiedOperations
+ms.search.scope: Talent, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -57,7 +57,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)</li>
+<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</li>
 <li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>

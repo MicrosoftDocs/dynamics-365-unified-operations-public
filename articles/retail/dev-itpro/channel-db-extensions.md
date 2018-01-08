@@ -5,7 +5,7 @@ title: Channel database (DB) extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/15/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -31,15 +31,21 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Channel database (DB) extensions
 
-The channel database (channel DB) holds transitional and master data from one or more retail channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Retail Headquarters (Retail HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
+The channel database (channel DB) holds transactional and master data from one or more retail channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Retail Headquarters (Retail HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
 In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Before going to the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions:
+Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions. 
+
+We have made some improvements to how customizations are handled during an upgrade. We recommend using one of the following environment configurations:
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with application update 5.
+- Microsoft Dynamics 365 for Retail 7.2 with application update 5, which will be available soon.
+- Microsoft Dynamics 365 for Retail 7.3, which includes application update 5.
+- Microsoft Dynamics 365 for Finance and Operations 7.3, which includes application update 5.
 
 ## Ext Schema
 
-In Dynamics 365 for Retail and Dynamics 365 Finance and Operations, Enterprise edition we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In Dynamics 365 for Retail and Dynamics 365 for Finance and Operations, Enterprise edition version you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services will fail. The error reports taht don’t have permission to modify the CRT, AX, and DBO schemas. 
+In Dynamics 365 for Retail and Dynamics 365 Finance and Operations, Enterprise edition we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In Dynamics 365 for Retail and Dynamics 365 for Finance and Operations, Enterprise edition version you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services will fail. The error reports that don’t have permission to modify the CRT, AX, and DBO schemas. 
 
 ## Best practices for channel DB extensions
 
@@ -55,7 +61,7 @@ USING (SELECT DISTINCT
 tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
 FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
 JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
-WHERE tp.PARENTRECID &lt;&gt; 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
+WHERE tp.PARENTRECID <> 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
 ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID   
 and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
 and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
@@ -77,7 +83,7 @@ VALUES
     ,SOURCE.ACCOUNTNUM
 );
 SELECT @i_Error = @@ERROR;
-IF @i_Error &lt;&gt; 0
+IF @i_Error <> 0
     BEGIN
     SET @i_ReturnCode = @i_Error;
     GOTO exit_label;
@@ -89,7 +95,7 @@ END;
 - If you are creating extension table or new table all should be done in ext schema.
 - Don’t modify any views, procedures, functions or any of the database artifacts.
 - Don’t access or call any of any database artifacts including views, defined types, functions and procedures from your extensions.
-- To access the database artifacts, use the CRT data service. For example, suppose you want to extend the product search view to search some custom fields or to show custom columns in show journal views. Don’t modify the views or procedures or functions in SQL. Instead, use the CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
+- To access the database artifacts, use the CRT data service. For example, suppose you want to extend the product search view to search some custom fields or to show custom columns in journal views. Don’t modify the views or procedures or functions in SQL. Instead, use the CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
 
 ```sql
 CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
@@ -130,10 +136,10 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 We extended the attribute framework in HQ to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
 
 ### Customer attributes
-With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - customer panel.
+With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - **Customer** panel.
 
 ### Order attributes
-The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration. Before creating the extension table for customer master or for order/transaction scenarios, read the attribute article on customer and order attributes.
+The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration. 
 
 ## Adding a new table
 
@@ -156,7 +162,7 @@ In this scenario we will explain how to create a new table and add it to the cha
         [RECID] ASC
     ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
     ) ON [PRIMARY]
-    ALTER TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE] WITH CHECK ADD CHECK (([RECID]&lt;&gt;(0)))
+    ALTER TABLE [ext].[CONTOSORETAILSTOREHOURSTABLE] WITH CHECK ADD CHECK (([RECID]<>(0)))
     END
     GO
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
@@ -166,7 +172,7 @@ In this scenario we will explain how to create a new table and add it to the cha
 
 If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
 
-```
+```sql
 CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
 [TRANSACTIONID] [nvarchar](44) NOT NULL, -- FK to [crt].RETAILTRANSACTIONTABLE
 [ISB2BSALES] [int] NOT NULL DEFAULT (0),

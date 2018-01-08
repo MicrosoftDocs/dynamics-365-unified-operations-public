@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.assetid: 
@@ -92,7 +92,7 @@ The actual hardware requirements vary, based on the system configuration, the da
 - The number of concurrent users
 
 ## Minimum infrastructure requirements
-Finance and Operations (on-premises) uses Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services. Microsoft SQL Server Reporting Services (SSRS) aren't hosted in the Service Fabric cluster.
+Finance and Operations (on-premises) uses Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services. 
 
 SQL Server must have a high-availability HADRON setup that has at least two nodes for production use.
 
@@ -229,6 +229,12 @@ The following table lists the SQL Server versions that are supported for the Fin
 | Requirement                                                      | Notes |
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition or Enterprise Edition | For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
+
+## Software requirements for Application Object Server (AOS) 
+- SQL Server Integation Services (SSIS)
+
+## Software requirements for Reporting Server (BI)
+- SQL Server Reporting Services (SSRS)
 
 ## Software requirements for client computers
 The Finance and Operations web application can run on any device that has an HTML 5.0–compliant web browser. Here are some of the specific device/browser combinations that Microsoft has confirmed:

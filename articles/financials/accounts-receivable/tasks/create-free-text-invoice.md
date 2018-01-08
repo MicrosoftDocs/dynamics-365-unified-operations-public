@@ -5,7 +5,7 @@ title: Create a free text invoice
 description: This task guide demonstrates creating a free text invoice. 
 author: mikefalkner
 manager: AnnBe 
-ms.date: 10/23/2016
+ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -46,7 +46,7 @@ This task guide demonstrates creating a free text invoice. This task uses the US
 7. Click the Financial dimensions line tab.
     * The dimensions are for the selected line only.    
     * The sales tax group is populated from the customer. If the customer does not have a sales tax group, the sales tax group from the main account is used.  
-    * The items sales tax group is populated from the main account. If the main account does not have a item sales tax group, then the item sales tax group in the General ledger sales tax parameters is used.    
+    * The items sales tax group is populated from the main account. If the main account does not have an item sales tax group, then the item sales tax group in the General ledger sales tax parameters is used.    
 8. In the Quantity field, enter a number.
     * The quantity is optional.  
 9. In the Unit price field, enter a number.

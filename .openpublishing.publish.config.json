@@ -8,7 +8,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -16,108 +16,15 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "d365Ops-Core",
-      "build_source_folder": "core",
-      "build_output_subfolder": "d365Ops-Core",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-DevITPro",
-      "build_source_folder": "dev-itpro",
-      "build_output_subfolder": "d365Ops-DevITPro",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-Financials",
-      "build_source_folder": "financials",
-      "build_output_subfolder": "d365Ops-Financials",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-Retail",
-      "build_source_folder": "retail",
-      "build_output_subfolder": "d365Ops-Retail",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-SCM",
-      "build_source_folder": "scm",
-      "build_output_subfolder": "d365Ops-SCM",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-Talent",
-      "build_source_folder": "hr",
-      "build_output_subfolder": "d365Ops-Talent",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
     }
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/",
+  "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -128,11 +35,16 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
     "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "eag": [
       "Publish",
       "Pdf"
     ]

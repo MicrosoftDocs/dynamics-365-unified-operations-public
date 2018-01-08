@@ -5,7 +5,7 @@ title: Purchase order approval mobile workspace
 description: This topic provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
 author: mkirknel 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
 
-ms.search.scope: Core, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 30211
@@ -47,8 +47,8 @@ The **Purchase order approval** mobile workspace lets you easily view and respon
 ## Prerequisites
 The prerequisites vary, depending on the version of Finance and Operations that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), has been deployed for your organization, the system administrator must publish the **Purchase order approval** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has been deployed for your organization, the system administrator must publish the **Purchase order approval** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

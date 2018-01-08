@@ -2,10 +2,10 @@
 # required metadata
 
 title: Learning Power BI content
-description: This topic describes the Learning Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Learning Power BI content. 
 author: jcart1106 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, UnifiedOperations, Talent, Core
+ms.search.scope: Operations, Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -31,11 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the **Learning** Microsoft Power BI content. It explains how to access the content, and describes the data model and entities that were used to build the content.
-
-## Accessing the Power BI content
-
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), you can find the **Learning** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+This topic describes the **Learning** Microsoft Power BI content.
 
 ## Reports that are included in the Power BI content
 
@@ -73,4 +69,4 @@ The following data is used to fill the reports in the **Learning** Power BI cont
 | Employee Name    | First name, last name, and full name                             | Course Attendees |
 | Employee Title   | Title and seniority date                                         | Course Attendees |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+

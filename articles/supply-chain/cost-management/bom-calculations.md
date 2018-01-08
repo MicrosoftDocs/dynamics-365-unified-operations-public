@@ -3,7 +3,7 @@
 
 title: BOM calculations
 description: The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This topic provides information about BOM calculations.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, Sa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
@@ -90,7 +90,7 @@ When you use a cost-plus-markup approach, the calculated sales price for an item
 -   **BOM calculation for an item and specified costing version** - The BOM calculation generates a pending sales price record within the costing version. This sales price record provides the starting point for viewing the calculation details (for example, on the **Calculate item cost** page). The sales price record acts mainly as reference information and isn't used as the basis for a sales price on sales orders.
 -   **Order-specific BOM calculation** - A variation of the **BOM calculatio**n page is used in the context of a sales order, sales quotation, or service order line item. An order-specific BOM calculation doesn't generate a record in the within a costing version. Instead, it generates a calculation record that appears on the **BOM calculation results** page. This calculation record provides the starting point for viewing the calculation details (for example, on the **Calculate item cost** page). Information about a selected calculation record can be transferred to the originating line item. For example, the calculated sales price can be transferred to a sales order line item.
 
-## Orderspecific BOM calculations
+## Order-specific BOM calculations
 An order-specific BOM calculation represents a variation of a BOM calculation for a manufactured item. The order-specific BOM calculation is performed in the context of a sales order, sales quotation, or service order line item. An order-specific BOM calculation generates a calculation record that appears on the **BOM calculation results** page. The calculation record includes a calculated weight, a calculated cost that is based on active cost records, and a calculated sales price. The calculation record that each order-specific BOM calculation for an item generates on the **BOM calculation results** page is uniquely identified by a calculation number. The results of a calculation record can be optionally transferred to the originating line item. An order-specific BOM calculation differs from a BOM calculation for a manufactured item in two ways:
 
 -   An order-specific BOM calculation doesn't generate an item cost record within a costing version. Therefore, the BOM calculation policies aren't applied when an item cost record is created, or when a cost record is overwritten.

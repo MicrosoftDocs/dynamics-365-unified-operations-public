@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, Operations, UnifiedOperations
+ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13301
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
@@ -42,9 +42,8 @@ This topic explains how to view a standard business process library, how to copy
 ## View and copy a standard business process library
 You can select a standard business process library on the Business process library page. To open this page, sign in to Lifecycle Services, open a project, and then click the Business process modeler tile.
 
-| ![Important](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Important")**Important**                                      |
-|---------------------------------------------------------------------------------------------------------------------------------------------|
-| The business process libraries that are available depend on the industry that was selected when the Lifecycle Services project was created. |
+> [!IMPORTANT]
+> The business process libraries that are available depend on the industry that was selected when the Lifecycle Services project was created.
 
 To select a standard business process library to start with, follow these steps:
 

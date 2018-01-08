@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations, UnifiedOperations, Platform
+ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
@@ -89,7 +89,7 @@ The following table includes links to resources that can help you implement both
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Finance and Operations or Finance and Operations in your organization.</td>
+<td>Implement Finance and Operations in your organization.</td>
 <td><ul><li>If you haven't yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">

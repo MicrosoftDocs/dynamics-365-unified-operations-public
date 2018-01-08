@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.2.0, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 # Dynamics 365 for Finance and Operations, (Enterprise edition on-premises) overview 
+
+[!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center. Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments. LCS is an application management portal that provides tools and services for managing the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations in the cloud and on-premises. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments. 
 

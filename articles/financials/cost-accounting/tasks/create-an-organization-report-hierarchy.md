@@ -5,7 +5,7 @@ title: Create an organization report hierarchy
 description: Use this procedure to create a report hierarchy for organization reporting. 
 author: YuyuScheller
 manager: AnnBe 
-ms.date: 06/28/2017
+ms.date: 10/30/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -78,7 +78,7 @@ Use this procedure to create a report hierarchy for organization reporting. The 
 40. In the From dimension member field, enter or select a value.
     * Select the dimension member that corresponds to the node.  
 41. Click Save.
-42. In the tree, select 'Oganization USP2\CEO\CFO cost centers'.
+42. In the tree, select 'Organization USP2\CEO\CFO cost centers'.
 43. Click New.
 44. In the Node name field, type 'Trade shows'.
 45. Click Save.

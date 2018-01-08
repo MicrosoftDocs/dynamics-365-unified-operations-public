@@ -40,7 +40,7 @@ This procedure walks through creating a new point of sale (POS) visual profile. 
 6. In the list, click the link in the selected row.
 7. In the Theme field, click the drop-down button to open the lookup.
 8. In the list, click the link in the selected row.
-9. In the Accent colour field, click the drop-down button to open the lookup.
+9. In the Accent color field, click the drop-down button to open the lookup.
 10. In the list, find and select the desired record.
 11. In the list, click the link in the selected row.
 12. Toggle the expansion of the Login background section.

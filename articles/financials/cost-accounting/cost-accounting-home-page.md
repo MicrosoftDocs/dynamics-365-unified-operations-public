@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
@@ -43,12 +43,11 @@ The following learning map shows the major concepts and tasks that make up the f
 ## Quick links
 |      |   |
 |------|---|
-|  [Get started](terms-cost-accounting.md)    | [Configure source system](../general-ledger/financial-dimensions.md)  |
-|  [Create dimensions and import dimension members](cost-elements.md)    |[Create dimension hierarchy](dimension-hierarchy.md)   |
-|  [Create basic setup](./tasks/define-cost-control-units.md)    |  [Define allocation base](allocation-bases.md) |
-|    [Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)  | [Data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md)  |
-| [Data source processing](./tasks/process-trace-source-data.md)     | [Overhead calculation](overhead-calculation.md)  |
-|   [Analysis and reporting](cost-control-workspace.md)   |   |
+|  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Create dimensions](cost-elements.md)  |
+|  [Create dimension hierarchy](dimension-hierarchy.md)  |[Create basic setup](./tasks/define-cost-control-units.md)| 
+| [Define allocation base](allocation-bases.md)|[Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Data source and data provider](./tasks/process-trace-source-data.md)     | 
+|[Overhead calculation](overhead-calculation.md)  | [Analysis and reporting](cost-control-workspace.md)   |
 
 ## Get started videos<br/>
 

@@ -5,7 +5,7 @@ title: Create documentation or training using Task recordings
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 
 > [!IMPORTANT]
-> You cannot create custom task guides for Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. 
+> You can record your own task guides for Dynamics 365 for Talent but you won't be able to save them to a Business Process Modeler (BPM) library or open them from the Help pane at this time. You can save them locally or to a network location, and then open and replay them using Task recorder. 
 
 Learn about Task recorder
 -------------------------
@@ -46,7 +46,7 @@ Task recorder is a tool that you can use to record actions that you take in the 
 
 -   **Task recordings can be played as task guides.** Task guides are an integral piece of the Help experience. A task guide is a controlled, guided, interactive experience through the steps of a business process. The user is instructed to complete each step by way of a pop-up prompt (or "bubble"), which will animate across the UI and point to the UI element that the user should interact with. The "bubble" also provides information about how to interact with the element, such as “Click here” or “In this field, enter a value.” A task guide runs against the user’s current data set and the data that is entered is saved in the user’s environment.
 -   **Task recordings can be displayed as procedural steps in the Help pane.** You can use the Help pane to search for and display task recordings. You can access the Help pane by clicking the **?** icon in the top navigation bar or you can use the shortcut key combination, **Ctrl+Shift+?**. You can read the steps of a task recording in the Help pane, or you can opt to play the recording as a task guide so it guides you through the UI.
--   **Task recordings can be saved to BPM.** You can save your task recording to a line of a hierarchy in a Business Process Modeler (BPM) library in Lifecycle Services (LCS). A list of steps and a business process flow chart will be generated from the recording. Task recordings that have been saved to a BPM library can be shown as Help.
+-   **Task recordings can be saved to BPM.** You can save your task recording to a line of a hierarchy in a BPM library in Lifecycle Services (LCS). A list of steps and a business process flow chart will be generated from the recording. Task recordings that have been saved to a BPM library can be shown as Help.
 -   **Task recordings can be saved as Word documents.** This allows you to easily produce printable training guides.
 
 You can create your own task recordings, play task recordings provided by Microsoft, or modify Microsoft-provided task recordings to reflect your configuration. For more information about Task recorder, see [Task recorder](task-recorder.md).
@@ -89,7 +89,7 @@ This is what the notes annotation looks like in the "bubble" in the task guide.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, or to refer to other recordings (although you cannot create hyperinks in annotations.).
+-   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, or to refer to other recordings (although you cannot create hyperlinks in annotations).
 
 **Determine how long to make your recording**
 

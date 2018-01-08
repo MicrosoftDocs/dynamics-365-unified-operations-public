@@ -5,7 +5,7 @@ title: Help secure mobile workspaces
 description: This topic describes how to limit a user's access to a workspace.
 author: makhabaz
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
@@ -51,5 +51,5 @@ You can also specify whether the workspace is hidden or shown, based on paramete
 
 ![Override the workspaceHidden method](media/workspace-api/SecureWorkspaceOption2.png)
 
-## Add an menu item and override the workspaceHidden method
+## Add a menu item and override the workspaceHidden method
 You can use both the preceding methods in your app. The menu item provides a security check, and the **workspaceHidden** method contains additional logic that is related to the visibility of the workspace.

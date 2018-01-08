@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
@@ -102,10 +102,10 @@ To resume the recording session after you've paused it, click **Continue**.
 
 ### Capture screenshots
 
-Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. Task recorder uses the screenshots if you download the recording as a Word document. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes**. 
+Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes** and then make the recording. Once the recording is completed, click **Stop** and download the Word document. The document will contain the steps with relevant screenshots.
 
 #### Note
-> Capture screenshot functionality is not supported in Cloud POS.
+> Capture screenshot functionality is not supported in Modern POS.
 
 ### Start task and End task
 

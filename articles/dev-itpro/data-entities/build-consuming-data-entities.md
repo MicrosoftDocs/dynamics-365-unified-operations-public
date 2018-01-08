@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
@@ -108,7 +108,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     -   PrimaryAddress \_ZipCode &gt; ZipCode
     -   PrimaryAddress \_Country &gt; Country
 
-    [ ](./media/data-entity-wizard-3.png)
+    ![Data entity wizard](./media/data-entity-wizard-3.png)
     
 11. Click **Finish**. A data entity item and staging table are added to the project.
 
@@ -265,7 +265,7 @@ You've now created a navigation property between **FMRentalEntity** and **FMCust
 In this section, you will use some of the standard OData syntax to navigate and query the OData entities that are exposed in the Fleet Management model. First, follow these steps the enable Internet Explorer to view JSON formatted data.
 
 1.  Close all Internet Explorer windows.
-2.  Go to C:FMLab, and select and double-click the json.ie.reg file.
+2.  Go to C:\FMLab, and select and double-click the json.ie.reg file.
 3.  In the **Registry Editor** dialog box, click **Yes**.
 4.  Click **OK**.
 
@@ -329,7 +329,7 @@ In this section, you will use a console application to consume the OData endpoin
 
 1.  Start a new instance of Visual Studio.
 2.  On the **File** menu, click **Open** &gt; **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to **C:FMLabOdata4ConsoleApplication**, and then select **Odata4ConsoleApplication.csproj**.
+3.  In the **Open Project** dialog box, browse to **C:\FMLab\Odata4ConsoleApplication**, and then select **Odata4ConsoleApplication.csproj**.
 4.  Click **Open**. The **Odata4ConsoleApplication** project appears in Solution Explorer.
 5.  In Solution Explorer, double-click **OdataProxyGenerator.tt**.
 6.  In the code editor, replace the following string with your organization's URL.
