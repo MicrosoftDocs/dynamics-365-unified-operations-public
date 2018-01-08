@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax thresholds | Microsoft Docs
-description: This article provides information about tax thresholds for India.
+description: This topic provides information about tax thresholds for India.
 author: RichardLuan
 manager: AnnBe
 ms.date: 01/08/2018
@@ -41,11 +41,11 @@ You can set up and apply threshold limits to calculate direct taxes on customer 
 
 You can apply the following types of threshold limits on transactions:
 
--   **Cumulative threshold** – The maximum limit of a cumulative transaction value, beyond which direct tax on the transaction value is applied. For example, you set up a cumulative threshold limit of 100,000, and a tax percentage of 10 percent for vendor account 1001. You create three transactions for the vendor that have values of 35,000, 55,000, and 60,000. The total value for all transactions for vendor account 1001 is 150,000 (which exceeds the threshold limit of 100,000). Direct taxes of 10 percent are calculated and applied on the total value for all transactions. Total taxable amount = 150,000 Tax amount = 15,000
+-   **Cumulative threshold** – The maximum limit of a cumulative transaction value, beyond which direct tax on the transaction value is applied. For example, you set up a cumulative threshold limit of 100,000, and a tax percentage of 10 percent for vendor account 1001. You create three transactions for the vendor that have values of 35,000, 55,000, and 60,000. The total value for all transactions for vendor account 1001 is 150,000 (which exceeds the threshold limit of 100,000). Direct taxes of 10 percent are calculated and applied on the total value for all transactions. The Total taxable amount = 150,000 and the Tax amount = 15,000.
 
--   **Transaction threshold** – The maximum limit of an individual transaction value, beyond which direct tax on the transaction value is applied. For example, you set up a transaction threshold limit of 30,000, and a tax percentage of 10 percent for vendor account 1001. You create three transactions for the vendor that have values of 25,000, 35,000, and 15,000. The transaction value 35,000 exceeds the threshold limit of 30,000. Direct taxes of 10 percent are calculated and applied only on the transaction that exceeds the transaction threshold limit. Total taxable amount = 35,000 Tax amount = 3,500
+-   **Transaction threshold** – The maximum limit of an individual transaction value, beyond which direct tax on the transaction value is applied. For example, you set up a transaction threshold limit of 30,000, and a tax percentage of 10 percent for vendor account 1001. You create three transactions for the vendor that have values of 25,000, 35,000, and 15,000. The transaction value 35,000 exceeds the threshold limit of 30,000. Direct taxes of 10 percent are calculated and applied only on the transaction that exceeds the transaction threshold limit. The Total taxable amount = 35,000 and the Tax amount = 3,500.
 
--   **Transaction line threshold** – The maximum limit of a transaction line value, beyond which direct tax on the transaction line value is applied. For example, you set up a transaction line threshold limit of 10,000, and a tax percentage of 10 percent for vendor account 1001. You create a transaction for the vendor that has transaction line values of 5,000, 25,000, and 15,000. The transaction line values 25,000 and 15,000 exceed the threshold limit of 10,000. Direct taxes of 10 percent are calculated and applied only on the transaction lines that exceed the transaction threshold limit. Total taxable amount = 40,000 Tax amount = 4,000
+-   **Transaction line threshold** – The maximum limit of a transaction line value, beyond which direct tax on the transaction line value is applied. For example, you set up a transaction line threshold limit of 10,000, and a tax percentage of 10 percent for vendor account 1001. You create a transaction for the vendor that has transaction line values of 5,000, 25,000, and 15,000. The transaction line values 25,000 and 15,000 exceed the threshold limit of 10,000. Direct taxes of 10 percent are calculated and applied only on the transaction lines that exceed the transaction threshold limit. The Total taxable amount = 40,000 and the Tax amount = 4,000.
 
 If the system previously calculated direct taxes by using thresholds for a transaction line or a transaction, thresholds and direct taxes are not applied to that transaction line or transaction again. The transaction line or transaction is excluded from threshold and direct tax calculations.
 
@@ -67,12 +67,12 @@ You can design a hierarchy structure for a threshold in the following ways:
     | Segment three | 5,00,000      | -             | 15 percent |
 
 ## When do I assign the tax rates to the hierarchy segments of a threshold?
-You can specify tax rates that apply to the final levels of the various hierarchy segments of the threshold in the **Threshold designer** page, after you set up a withholding tax code to use the threshold in the Withholding tax codes form and then set up an entity to use a threshold in the **Threshold references** page.
+You can specify tax rates that apply to the final levels of the various hierarchy segments of the threshold in the **Threshold designer** page. You need to do this after you set up a withholding tax code to use the threshold in the **Withholding tax codes** page and after which you set up an entity to use a threshold in the **Threshold references** page.
 
 ## Which PAN status should I select when I specify threshold values for a customer?
-If the threshold applies to a customer, a customer group, or all customers, you must select **Not applicable** in the **PAN Status** field in the Threshold designer form for each threshold value that you specify.
+For the Permanent Account Number (PAN), if the threshold applies to a customer, a customer group, or all customers, you must select **Not applicable** in the **PAN Status** field in the **Threshold designer** page for each threshold value that you specify.
 
-## When I create a withholding tax code that uses a threshold, what should I select in the Value field in the Withholding tax values form?
+## When I create a withholding tax code that uses a threshold, what should I select in the Value field in the Withholding tax values page?
 When you create a withholding tax code that uses a threshold, leave the **Value** field on the **Withholding tax values** page blank, because you specify the tax values for the final levels of each threshold segment on the **Threshold designer** page.
 
 ## Don't see your question here?
