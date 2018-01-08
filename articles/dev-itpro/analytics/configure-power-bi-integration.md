@@ -119,6 +119,8 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     ![Authorize Power BI](./media/Authorize.JPG)
 
+    Note: Should you have an issue with this step, please see the notes in the troubleshooting section on granting users to consent to apps accessing company data on their behalf.
+
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
     ![Consent page](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
@@ -140,6 +142,7 @@ After you select **Accept** in the previous procedure, you might receive the fol
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
 | You can’t access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and rerun the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
+| Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under "Users and Groups" > "User settings", ensure that the option "Users can consent to apps accessing company data on their behalf" is set to "Yes" |
 
 ## Technical details about OAuth 2.0 Authorization Code Grant Flow
 
