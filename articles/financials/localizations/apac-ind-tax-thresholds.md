@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax thresholds | Microsoft Docs
+title: Tax thresholds for India FAQ | Microsoft Docs
 description: This topic provides information about tax thresholds for India.
 author: RichardLuan
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Tax thresholds for India
+# Tax thresholds for India FAQ
 
 You can set up and apply threshold limits to calculate direct taxes on customer and vendor transactions. Perform the following tasks to set up and use threshold limits:
 
