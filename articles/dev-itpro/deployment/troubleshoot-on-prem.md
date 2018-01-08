@@ -407,18 +407,32 @@ The certificates have not been installed or given access to the correct users. T
 ## Keyset doesn't exist 
 If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete [Set up VMs](setup-deploy-on-premises-environments.md#setupvms). Copy the scripts in each folder to the VMs that correspond to the folder name. 
 
-Also check the .csv file to verify that the correct domain is being used. 
+Also check the .csv file to verify that the correct domain is being used.
 
 ## Error "RunAsync failed due to an unhandled FabricException causing replica to fault"
 If you receive this error, "RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0:", change the ClusterConfig.json diagnosticsStore from network share to local path such as, \\server\path to default of c:\\ProgramData\\SF\\DiagnosticsStore. 
 
-## Error Dbsync (DB sync) issues 
+## Error Dbsync (DB sync) issues
 If you are having database sync issues, look at AOS working directory, ex C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log and complete a review of the following on all AOS machines:  
 
-- **Event Viewer** > **Custom Views** > **Administrative Events** 
-- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize** 
+- **Event Viewer** > **Custom Views** > **Administrative Events**
+- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
 
-## Error "Invalid algorithm specified / Cryptography"  
+## Service Fabric AOS Node Error during build: Execution Timeout Expired
+Error message:
+```
+The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.
+```
+
+Only one AOS machine can DB Sync at a time. This error message is safe to ignore, as it means that one of the AOS VMs is running DB Sync, and the others yield a warning that they cannot. The fact that DB Sync is running can be verified by checking **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize/Operational** on the AOS VM that is not yielding warnings.
+
+## Error "RequireNonce is 'true' (default) but validationContext.Nonce is null"
+Also shows as a HTTP Error 500 in Internet Explorer after logging in to AX. The issued nonce can not be validated if Internet Explorer is in Enhanced Security Configuration.
+
+Disable Enhanced Security Configuration for Internet Explorer via the Server Manager, in order to log in to AX.
+
+## Error "Invalid algorithm specified / Cryptography"
 If you receive this error, you need to be using the Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, review the certificates requirements. Additionally, verify that the structure of the credentials.json file is correct. 
 
 ### Error "Partition is below target replica or instance count" 
@@ -439,9 +453,9 @@ PrincipalsAllowedToRetrieveManagedPassword
 AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.  
 
 To resolve this issue, run the following command in PowerShell. 
-        
-        Uninstall-Module -Name AzureRM  
-        Install-Module AzureRM 
+
+    Uninstall-Module -Name AzureRM  
+    Install-Module AzureRM 
 
 Close the PowerShell window and try again.
 
