@@ -5,7 +5,7 @@ title: Fixed assets roll forward report
 description: This topic explains how to use the Fixed assets roll forward report.
 author: saraschi
 manager: 
-ms.date: 01/2/2018
+ms.date: 01/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,18 +51,18 @@ The following table describes the fields that are available on the report.
 | Balances: Closing                           | The fixed asset net book value as of the "to" date that is specified on the report. |
 | Acquisitions: Opening value                 | The sum of all transactions of the **Acquisition** and **Acquisition adjustment** types up to the "from" date that is specified on the report. |
 | Acquisitions: Period acquisitions           | The sum of all transactions of the **Acquisition** and **Acquisition adjustment** types that were posted during the date range for the report. |
-| Acquisitions: Period disposals              | The sum of all acquisition reversals that were posted with a disposal transaction during the date range for the report. |
+| Acquisitions: Period disposals              | The sum of all acquisition reversals that were posted that had a disposal transaction during the date range for the report. |
 | Acquisitions: Closing value                 | The sum of all transactions of the **Acquisition** and **Acquisition adjustment** types up to the "to" date that is specified on the report. |
 | Depreciations: Opening value                | The sum of all transactions of the **Depreciation**, **Depreciation adjustment**, **Special depreciation allowance**, and **Extraordinary depreciation** types up to the "from" date that is specified on the report. |
 | Depreciations: Period depreciations         | The sum of all transactions of the **Depreciation**, **Depreciation adjustment**, and **Extraordinary depreciation** types that were posted during the date range for the report. |
 | Depreciations: Period special depreciations | The sum of all transactions of the **Special depreciation allowance** type that were posted during the date range for the report. |
-| Depreciations: Period disposals             | The sum of all depreciation reversals that were posted with a disposal transaction during the date range for the report. |
+| Depreciations: Period disposals             | The sum of all depreciation reversals that were posted that had a disposal transaction during the date range for the report. |
 | Depreciations: Closing value                | The sum of all transactions of the **Depreciation**, **Depreciation adjustment**, **Special depreciation allowance**, and **Extraordinary depreciation** types up to the "to" date that is specified on the report. |
 | Write-ups/Write downs: Opening value        | The sum of all transactions of the **Write up adjustment**, **Write down adjustment**, and **Revaluation** types up to the "from" date that is specified on the report. |
 | Write-ups/Write downs: Period write ups     | The sum of all transactions of the **Write up adjustment** type that were posted during the date range for the report. |
 | Write-ups/Write downs: Period write downs   | The sum of all transactions of the **Write down adjustment** type that were posted during the date range for the report. |
 | Write-ups/Write downs: Period revaluations  | The sum of all transactions of the **Revaluation** type that were posted during the date range for the report. |
-| Write-ups/Write downs: Period disposals     | The sum of all write-up, write-down, and revaluation reversals that were posted with a disposal transaction during the date range for the report. |
+| Write-ups/Write downs: Period disposals     | The sum of all write-up, write-down, and revaluation reversals that were posted that had a disposal transaction during the date range for the report. |
 | Write-ups/Write downs: Closing value        | The sum of all transactions of the **Write up adjustment**, **Write down adjustment**, and **Revaluation** types up to the "to" date that is specified on the report. |
 | Disposals: Disposal date                    | The disposal date for the fixed asset book. |
 | Disposals: Net book value at disposal       | The net book value of the fixed asset book at the time of disposal. |
