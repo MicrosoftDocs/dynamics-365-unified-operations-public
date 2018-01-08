@@ -88,7 +88,7 @@ For scenarios in which reporting systems read data from BYOD, there is always th
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
-    ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+   ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
