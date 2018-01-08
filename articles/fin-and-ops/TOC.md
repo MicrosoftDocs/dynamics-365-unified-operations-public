@@ -645,6 +645,9 @@
 ##### [User operation log by China working rule](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [VAT customer invoices FAQ](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
 
+#### India
+##### [Tax threshholds](../financials/localizations/apac-ind-tax-thresholds.md)
+
 #### Japan
 ##### [Acquire a fixed asset and claim for the government grant subsidy](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
 ##### [Acquire a fixed asset with asset retirement obligations](../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md)
