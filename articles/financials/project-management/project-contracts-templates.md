@@ -32,27 +32,32 @@ ms.dyn365.ops.version: AX 7.3.0
 
 # Synchronize project contracts and projects from Project Service Automation directly to project contracts and projects in Finance and Operations
 
-This topic describes the templates and underlying tasks that are used to synchronize project contracts directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 > [!NOTE]
 > Before you can use the Project Service Automation to Finance and Operations integration solution, you should be familiar with the Dynamics 365 Data integration feature.
 
 ## Data flow for Project Service Automation to Finance and Operations
 
-The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance and Operations. The integration templates that are available with the Data integration feature enable the flow of data about project contracts, projects, project contract lines, and project contract line milestones from Project Service Automation to Finance and Operations.
+The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance and Operations. The integration template that is available with the Data integration feature enable the flow of data about project contracts, projects, project contract lines, and project contract line milestones from Project Service Automation to Finance and Operations.
 
 The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectContractFlow.JPG)](./media/ProjectContractFlow.JPG)
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## Templates and tasks
 
 To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying task are used to synchronize project contracts from Project Service Automation to Finance and Operations:
+The following template and underlying task are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
 
-- **Name of the template in Data integration:** Project contracts (PSA to Fin and Ops)
-- **Name of the task in the project:** Project contracts PSA to Fin and Ops
+- **Name of the template in Data integration:** Projects and contracts (PSA to Fin and Ops)
+- **Name of the tasks in the project:
+
+Project contracts PSA to Fin and Ops
+Projects PSA to Fin and Ops
+Project contract lines PSA to Fin and Ops
+Project contract line milestones PSA to Fin and Ops
 
 Before synchronization of project contracts can occur, you must synchronize accounts.
 
