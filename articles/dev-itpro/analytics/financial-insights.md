@@ -41,10 +41,10 @@ The focus of **Financial Insights** is analytical reporting. Personas across an 
 organization.
 
 > [!NOTE] 
-> This document uses the following Power BI terminology:
-•	**Report** – A single .pbix file that all the visuals on all tabs are saved to.
-•	**Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
-•	**Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial 
+> This document uses the following Power BI terminology:                                                                           
+**Report** – A single .pbix file that all the visuals on all tabs are saved to.                                                          
+**Page** – A tab in a single .pbix file. Each page can contain one or more visuals.                                                     
+**Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial 
 statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
 
