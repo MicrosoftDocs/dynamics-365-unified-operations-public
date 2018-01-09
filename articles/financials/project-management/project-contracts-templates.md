@@ -1,8 +1,8 @@
----
+ ---
 # required metadata
 
-title: Synchronize project contracts from Project Service Automation directly to project contracts Finance and Operations
-description: This topic describes the templates and underlying tasks that are used to synchronize project contracts directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Synchronize project contracts and projects from Project Service Automation directly to project contracts and projects in Finance and Operations
+description: This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/13/2017
