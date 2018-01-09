@@ -277,27 +277,17 @@ Power BI doesn’t provide an option to hide and show empty rows. If a row doesn
 # What is coming in future releases?
 The new workspaces and financial statements that use Power BI will continue to be enhanced. Here are some of the new features that are being considered for future releases:
 
-•	The ability to copy, edit, delete, and create visuals, even the financial statements
-
-•	Additional default reports        
-    
-     • Support for additional subledger data
-
-•	Support for a reporting currency
-
-•	Add custom calculations for rows and columns
-
-•	The ability to export the financial statements to Microsoft Excel
-
-    • Maintain the format of the financial statement during export.
-    
-    • Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
-
-•	Locale support
-
-•	The ability to define reporting hierarchies, so that you can define main account hierarchies or an organizational hierarchy that can be used on financial statements for design, filtering, and security
-
-•	Support for printing
+ - The ability to copy, edit, delete, and create visuals, even the financial statements                                                  
+ - Additional default reports                                                                                                            
+    - Support for additional subledger data                                                                                            
+ - Support for a reporting currency                                                                                                      
+ - Add custom calculations for rows and columns                                                                                          
+ - The ability to export the financial statements to Microsoft Excel                                                                     
+   - Maintain the format of the financial statement during export.                                                                          
+   - Analyze data in Excel by creating a Pivot Table that uses the information on the visual.                                              
+ - Locale support                                                                                                                        
+ - The ability to define reporting hierarchies, so that you can define main account hierarchies or an organizational hierarchy that can be used on financial statements for design, filtering, and security.                                                                    
+ - Support for printing
 
 The new features will be communicated through the roadmap website as work is started: https://roadmap.dynamics.com/.
 
