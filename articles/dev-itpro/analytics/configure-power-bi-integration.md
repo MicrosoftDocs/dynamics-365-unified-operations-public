@@ -5,7 +5,7 @@ title: Configure Power BI integration for workspaces
 description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 01/08/2018
+ms.date: 01/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -119,7 +119,8 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     ![Authorize Power BI](./media/Authorize.JPG)
 
-    Note: Should you have an issue with this step, please see the notes in the troubleshooting section on granting users to consent to apps accessing company data on their behalf.
+    > [!Note}
+    > If you have an issue with this step, please see the **Troublesooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** field.
 
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
@@ -142,7 +143,7 @@ After you select **Accept** in the previous procedure, you might receive the fol
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
 | You can’t access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and rerun the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
-| Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under "Users and Groups" > "User settings", ensure that the option "Users can consent to apps accessing company data on their behalf" is set to "Yes" |
+| Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under **Users and Groups > User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 
 ## Technical details about OAuth 2.0 Authorization Code Grant Flow
 
