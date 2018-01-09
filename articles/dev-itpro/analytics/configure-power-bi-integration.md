@@ -120,7 +120,7 @@ By completing this configuration step, you enable Finance and Operations to cont
     ![Authorize Power BI](./media/Authorize.JPG)
 
     > [!Note}
-    > If you have an issue with this step, please see the **Troublesooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** field.
+    > If you have an issue with this step, please see the **Troublesooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** option.
 
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
