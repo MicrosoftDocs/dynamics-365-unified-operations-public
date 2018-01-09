@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial performance Power BI content
-description: This topic describes the Financial performance Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Financial performance Power BI content. 
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,21 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 This topic describes the **Financial performance** Microsoft Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
-
-## Accessing the Power BI content
-
-You can access the **Financial performance** Power BI from Microsoft Dynamics Lifecycle Services (LCS) and from PowerBI.com.
-
-### Available from LCS
-The **Financial performance** Power BI content that is available from LCS supports the following versions:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
-- Microsoft Dynamics 365 for Operations version 1611 
-
-You can find the Power BI content in the Shared asset library in LCS. For more information about how to download the content pack and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-### Available from PowerBI.com
-The **Financial performance** Power BI content that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics AX data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Power BI will reverse the signs and show the amounts as positive.
@@ -106,4 +91,4 @@ The following entities were used as the basis of the **Financial performance** P
 - Ledgers
 - ChartofAccounts
 
-These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content. After you've finished making your modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content. 

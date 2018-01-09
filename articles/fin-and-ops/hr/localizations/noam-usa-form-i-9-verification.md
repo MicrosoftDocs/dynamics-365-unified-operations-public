@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HCMemploymentverification, Hcmi9Document, Hcmi9DocumentType
+ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9DocumentType 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

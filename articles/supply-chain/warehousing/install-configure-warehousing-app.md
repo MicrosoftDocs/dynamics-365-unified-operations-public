@@ -35,6 +35,9 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
+> [!NOTE]
+> This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
 This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
 Finance and Operations - Warehousing is an application available on Google Play Store and Windows Store. For the current version of Finance and Operations, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app in your Finance and Operations environment, you must download the app on each device and configure it to connect to your Finance and Operations environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Finance and Operations environment.
@@ -46,32 +49,29 @@ The app is available on Android and Windows operating systems. To use this app, 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
--   Windows (UWP): [Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## Create a web service application in Active Directory
+## Create a web service application in Azure Active Directory
 To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
 
-1.  In a web browser, go to <https://manage.windowsazure.com>.
+1.  In a web browser, go to <https://portal.azure.com>.
 2.  Enter the name and password for the user who has access to the Azure subscription.
-3.  In Azure Portal, in the left navigation pane, click **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  In the grid, select the Active Directory instance that is used by Finance and Operations.
-5.  On the top toolbar, click **Applications**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
-7.  Enter a name for the application and select **Web application and/or web API**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Enter the App ID URI, this value is mandatory, but isn’t required for the authentication. Make sure that this App ID URI is a mock URI like https://contosooperations/wmapp, since using the URL of your deployment can cause sign-in issues in other AAD applications such as the Excel Add-in. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Go to the **Configure** tab. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Scroll down until you see the **Permissions to other applications** section. Click **Add application**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Select **Microsoft Dynamics ERP** in the list. Click the **Complete check** button in the right corner of the page. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. In the **Delegate Permissions** list, select all the check boxes. Click **Save**. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Make a note of the following information:
-    -   **Client ID** - As you scroll up the page, you will see **Client ID** displayed.
-    -   **Key** - In the **Keys** section, create a key by selecting duration, and copy the key. This key will later be referred to as the **Client secret**.
+3.  In Azure Portal, in the left navigation pane, click **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Ensure that the Active Directory instance is the one that is used by Finance and Operations.
+5.  In the list, click **App registrations**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  In the top pane, click **New application registration**. The **Add application** wizard starts.
+7.  Enter a name for the application and select **Web application/web API**. Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Click **Create**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Select the new app in the list. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Remember the **Application ID**, you will need it later. The **Application ID** will later be referred to as the **Client ID**.
+10. Click **Keys** in the **Settings pane**. Create a key by entering a key description and a duration in the **Passwords** section. 
+11. Click **Save** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
@@ -105,14 +105,10 @@ You must configure the app on the device to connect to the Finance and Operatio
 In case of a lost or compromised device, you must remove access to Finance and Operations for the device. The following steps describe the recommended process to remove access.
 
 1.  In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
-2.  Delete the line that corresponds to the device to which you want to remove access. Note down the **Client ID** used for the removed device.
-3.  Sign in the Azure classic portal at <https://manage.windowsazure.com>.
-4.  Click the **Active Directory** icon on the left menu, and then click the desired directory.
-5.  On the top menu, click **Applications**, and then click the application you want to configure. The **Quick Start** page will appear with single sign-on and other configuration information.
-6.  Click the **Configure** tab, scroll down and ensure that the **Client ID** of the application is the same as in step 2 in this section.
-7.  Click the **Delete** button in the command bar.
+2.  Delete the line that corresponds to the device to which you want to remove access. Remember the **Client ID** used for the removed device, you will need it later.
+3.  Sign in to the Azure portal at <https://portal.azure.com>.
+4.  Click the **Active Directory** icon on the left menu, and ensure that you are in the correct directory.
+5.  In the list, click **App registrations**, and then click the application that you want to configure. The **Settings** page will appear with configuration information.
+6.  Ensure that the **Client ID** of the application is the same as in step 2 in this section.
+7.  Click the **Delete** button in the top pane.
 8.  Click **Yes** in the confirmation message.
-
-
-
-

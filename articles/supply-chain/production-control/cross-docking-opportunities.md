@@ -78,7 +78,7 @@ In the **cross-docking policy**, you define which document types are applicable 
 ### Cross-docking policy name: Transfer order
 
 -   Sequence number: 10
--   Work order type: Transfer issue
+ -   Work order type: Transfer issue
 -   Cross docking demand requires location: False
 -   Cross docking strategy: Date and time
 
@@ -106,10 +106,9 @@ After a product is reported as finished at the production line it is transferred
 6.  Create a transfer order. Create the transfer order for item number L0101. Quantity = 20.
 7.  Release the transfer order from the load planning workbench. On the **Ship** tab, select the menu item for the load planning workbench and on the **Release** menu of the load line, select **Release to warehouse**. An open wave line of type **Transfer issue** now exists for the transfer order.
 8.  Create a production order. Go to the **Production order** list page, and create a production order for product L0101. Quantity = 20. Estimate and start the production order. Note that the **Post picking list now** field remains set to **No**.
-9.  Report as finished from the mobile device. Go to the mobile device portal and select menu item **Report as finished and put away**. Now report as finished L0101 from the handheld device. Note that the put location is **BAYDOOR**. This location is found from the **Transfer issue** location directive for the **Put** work order type. Also notice that work of the type **Transfer issue** has been created and completed. Go to the transfer order work details to verify the work.
-10. Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device. This time, location **LP-001** is suggested as the put location. This location is found from the location directive for **Finished goods put away**. This location directive is being used, because no opportunity for cross-docking exists. The transfer order for LP-001 was completely fulfilled by the first cross-docking activity.
-
-Work of the type **Finished goods put away** was created and processed.
+9.  Report as finished from the mobile device. Go to the mobile device portal and select menu item **Report as finished and put away**. Now report as finished L0101 from the handheld device. Quantity = 10. Note that the put location is **BAYDOOR**. This location is found from the **Transfer issue** location directive for the **Put** work order type. Also notice that work of the type **Transfer issue** has been created and completed. Go to the transfer order work details to verify the work.
+10. Now report additional 10 pieces from the mobile device. Note that the put location again is **BAYDOOR**. Also notice that a new work of type **Transfer issue** has been created for the 10 pieces.
+11. Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device. This time, location **LP-001** is suggested as the put location. This location is found from the location directive for **Finished goods put away**. This location directive is being used, because no opportunity for cross-docking exists. The transfer order for LP-001 was completely fulfilled by the two cross-docking activities in step 9 and 10. Notice that work of the type **Finished goods put away** was created and processed.
 
 #### Scenario 2 - Cross-docking from production to transfer orders with an appointment schedule
 
@@ -127,6 +126,6 @@ After a product is reported as finished at the production line it is transferred
 
 ### Additional information
 
--   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.
+-   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
 
 

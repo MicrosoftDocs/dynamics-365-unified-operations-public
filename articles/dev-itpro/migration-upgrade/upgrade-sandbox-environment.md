@@ -36,8 +36,6 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
-
 This topic describes the steps for performing a data upgrade to a Tier 2 or higher sandbox environment.
 
 In some environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).

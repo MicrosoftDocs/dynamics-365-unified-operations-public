@@ -5,7 +5,7 @@ title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ This Power BI content also lets you analyze production variances. Production var
 The **Production performance** Power BI content includes data that originates from production orders and batch orders. The reports don't include data that is related to kanban productions.
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Production performance** Power BI content is shown on the **Production performance** page (**Production control** > **Inquiries and reports** > **Production performance analysis** > **Production performance**). 
+The **Production performance** Power BI content is shown on the **Production performance** page (**Production control** > **Inquiries and reports** > **Production performance analysis** > **Production performance**). 
 
 ## Metrics that are included in the Power BI content
 
@@ -63,15 +63,6 @@ The following table provides an overview of the visualizations that are included
 | Defects trend by resource                  | Defect rate (ppm) by quantity processed | |
 | Production variances for job order costing | <ul><li>Production variance by date and cost group type</li><li>Production variance by site and cost group type</li><li>Top 10 products with unfavorable production variance</li><li>Top 10 unfavorable production variance by resource</li></ul> | <ul><li>Realized cost</li><li>Production variance</li><li>Production variance %</li></ul> |
 
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
-
-You can find the **Production performance** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Production performance** content that applies to the version of Dynamics 365 that you're using.
-
-> [!NOTE]
-> If you're using Microsoft Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## Understanding the data model and entities
 
@@ -143,11 +134,4 @@ The following table shows the key dimensions that are used as filters to slice t
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
 
-## Additional resources
 
-Here are some helpful links that are related to entities and building Power BI content:
-
-- [Data entities](../data-entities/data-entities.md)
-- [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)

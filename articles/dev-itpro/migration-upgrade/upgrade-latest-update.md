@@ -104,16 +104,15 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| Version 1611 (application 7.1.0)                               | 7.1.1541.3036 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | July 2017 release (application 7.2.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | July 2017 release (application 7.2.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| Microsoft Dynamics AX 2012                                     | Not applicable | July 2017 release (application 7.2.0) | Yes |
-| July 2017 release (Platform update 8, application 7.2)         | Not applicable | Newer version of the platform | No |
-| Version 1611 (Platform update 3, application 7.1.0)            | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 7.3 | Yes |
+| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 7.3, or July 2017 (7.2) | Yes |
+| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| Microsoft Dynamics AX 2012                                     | Not applicable | Application release 7.3 or July 2017 (7.2)  | Yes |
+| Application release 7.3         | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)         | Not applicable | Newer version of the platform | No |
+| Release 1611 (application 7.1)            | Not applicable | Newer version of the platform | No |
 | May 2016 release (Platform update 1, application 7.0.1)        | Not applicable | August 2016 release (Platform update 2, application 7.0.1) | No |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
@@ -156,7 +155,7 @@ First, upgrade your code as described in scenario 2. This step is a developer ta
 
 ### Upgrade your data in a development environment
 
-Run the data upgrade process on a copy of your target database. If your environment is already live in production, the target database is a copy of the production database. Otherwise, the target database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
+Run the data upgrade process on a copy of your source database. If your environment is already live in production, the source database is a copy of the production database. Otherwise, the source database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
 
 To make a copy of your production database, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
 
@@ -200,6 +199,7 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 
     > [!IMPORTANT]
     > - If you don't select application deployable packages in your service request, DSE might reject the request.
+    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is a intended as a pre-production validation of the upgrade process.
     > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
     > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
 

@@ -2,6 +2,7 @@
 # [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
 # [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Demo data](../fin-and-ops/get-started/demo-data.md)
+## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
 # [Develop and customize using Visual Studio](dev-tools/developer-home-page.md)
@@ -113,6 +114,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
+#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -137,6 +139,10 @@
 #### [Modify form control properties](extensibility/modify-control-properties.md)
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
+#### [Changes to price and discount extensibility](extensibility/pricing-app73.md)
+#### [Table map extension](extensibility/map-extensions.md)
+#### [Extend table maps used as interfaces](extensibility/maps-as-interfaces.md)
+#### [Extend table maps used for versioning](extensibility/maps-with-versioning.md)
 
 
 
@@ -362,6 +368,7 @@
 ### [OData](data-entities/odata.md)
 ### [Custom services](data-entities/custom-services.md)
 ### [Recurring integrations](data-entities/recurring-integrations.md)
+### [Use third-party service testing utilities with services](data-entities/third-party-service-test.md)
 
 ## Development for integration
 ### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +403,7 @@
 ### [Configuration data packages](data-entities/configuration-data-packages.md)
 ### [Copy configuration data between companies](data-entities/copy-configuration.md)
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
 
 ## Standard data entities
@@ -501,12 +509,16 @@
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
+### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
 ### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
+### [Update the local agent](lifecycle-services/update-local-agent.md)
+### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
