@@ -61,8 +61,8 @@ HR professionals can view the active business processes from the Business proces
 Process owners can view the active business processes that are assigned to them from the My Business Process workspace. The workspace lists all active processes and associated tasks that that user owns.  The comprehensive task list can be filtered by due date. The page also lists tasks specifically assigned to process owner. The process owner can also update the status of all tasks, as well as reassign any tasks.
 
 ## Navigating Business Processes
-1.	 To add a Business process template, navigate to Business processes- links – Business processes administration
-  a.	New will create a new template
-  b.	Copy from template will copy the selected template to a new one.
-  c.	Start process will start the selected business process, assign tasks, and calculate due dates.  
+1.	 To add a Business process template, navigate to Business processes- links – Business processes administration.
+ - a.	New will create a new template.
+ - b.	Copy from template will copy the selected template to a new one.
+ - c.	Start process will start the selected business process, assign tasks, and calculate due dates.  
 2.	To view active processes and associated tasks navigate to the Business processes workspace.
