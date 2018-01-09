@@ -3,9 +3,9 @@
 
 title: Generate Affordable Care Act reports
 description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
-author: kherr75
+author: shielas
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 01/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,8 +25,8 @@ ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
-ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.search.validFrom: 2018-01-09
+ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
 ---
 # Formalize business processes
@@ -61,8 +61,8 @@ HR professionals can view the active business processes from the Business proces
 Process owners can view the active business processes that are assigned to them from the My Business Process workspace. The workspace lists all active processes and associated tasks that that user owns.  The comprehensive task list can be filtered by due date. The page also lists tasks specifically assigned to process owner. The process owner can also update the status of all tasks, as well as reassign any tasks.
 
 ## Navigating Business Processes
-> 1.	 To add a Business process template, navigate to Business processes- links – Business processes administration
-> >  a.	New will create a new template
-> >  b.	Copy from template will copy the selected template to a new one.
-> >  c.	Start process will start the selected business process, assign tasks, and calculate due dates.  
-> 2.	To view active processes and associated tasks navigate to the Business processes workspace.
+1.	 To add a Business process template, navigate to Business processes- links – Business processes administration
+  a.	New will create a new template
+  b.	Copy from template will copy the selected template to a new one.
+  c.	Start process will start the selected business process, assign tasks, and calculate due dates.  
+2.	To view active processes and associated tasks navigate to the Business processes workspace.
