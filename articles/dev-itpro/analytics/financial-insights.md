@@ -5,7 +5,7 @@ title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.  
 author: kweekley
 manager: AnnBe
-ms.date: 01/03/2018
+ms.date: 01/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,13 +42,11 @@ organization.
 
 > [!NOTE] 
 > This document uses the following Power BI terminology:
-
 •	**Report** – A single .pbix file that all the visuals on all tabs are saved to.
-
 •	**Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
-
 •	**Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial 
 statement as a visual can have no other visuals, because of the size of the data that is being reported on.
+
 
 Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
 
@@ -283,7 +281,7 @@ The new workspaces and financial statements that use Power BI will continue to b
 
 •	Additional default reports        
     
-    - Support for additional subledger data
+     • Support for additional subledger data
 
 •	Support for a reporting currency
 
@@ -291,9 +289,9 @@ The new workspaces and financial statements that use Power BI will continue to b
 
 •	The ability to export the financial statements to Microsoft Excel
 
-    - Maintain the format of the financial statement during export.
+    • Maintain the format of the financial statement during export.
     
-    - Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
+    • Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
 
 •	Locale support
 
