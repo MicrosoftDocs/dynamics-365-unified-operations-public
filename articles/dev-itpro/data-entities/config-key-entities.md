@@ -103,8 +103,8 @@ Using the configuration key metadata built during entity refresh list, run time 
 -   When the user adds only 'importable fields'
 
 
-### Guidance on managing configuration key changes in data management
-Any time configuration keys are updated at the entity, table or field level, the entity list in data the management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
+### Managing configuration key changes
+Anytime that you update configuration keys at the entity, table or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
 ![Target fields](./media/Target_fields_3.png)
 
