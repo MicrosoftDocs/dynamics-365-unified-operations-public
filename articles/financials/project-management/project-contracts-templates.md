@@ -49,7 +49,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying task are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
+The following template and underlying tasks are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
 
 - **Name of the template in Data integration:** Projects and contracts (PSA to Fin and Ops)
 - **Name of the tasks in the project:**
