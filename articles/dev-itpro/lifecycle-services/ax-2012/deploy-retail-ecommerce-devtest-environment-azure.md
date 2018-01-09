@@ -65,8 +65,10 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
     1.  Open another instance of your browser.
     2.  Log on to the [Azure portal](https://ms.portal.azure.com).
     3.  In the navigation pane on the left, click **Subscriptions**. 
+    
         > [!Note]
         > You may need to click **More services** at the bottom, and then click **Subscriptions**.
+        
     4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
 
 5.  Click **Next**.
