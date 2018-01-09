@@ -3,7 +3,7 @@
 
 title: Generate Affordable Care Act reports
 description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: ShielaSogge
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
