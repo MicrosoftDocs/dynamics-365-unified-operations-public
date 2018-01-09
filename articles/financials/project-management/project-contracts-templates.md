@@ -54,10 +54,10 @@ The following template and underlying task are used to synchronize project contr
 - **Name of the template in Data integration:** Projects and contracts (PSA to Fin and Ops)
 - **Name of the tasks in the project:**
 
-- - Project contracts PSA to Fin and Ops
-- - Projects PSA to Fin and Ops
-- - Project contract lines PSA to Fin and Ops
-- - Project contract line milestones PSA to Fin and Ops
+  - Project contracts PSA to Fin and Ops
+  - Projects PSA to Fin and Ops
+  - Project contract lines PSA to Fin and Ops
+  - Project contract line milestones PSA to Fin and Ops
 
 Before synchronization of project contracts and projects can occur, you must synchronize accounts.
 
@@ -67,7 +67,7 @@ Before synchronization of project contracts and projects can occur, you must syn
 |----------------------------------|--------------------------------------------------------|
 | Orders                           | Integration entity for project contract                |
 | Projects                         | Integration entity for project                         |
-| Order lines                      | Integration entity for project contract lines          |
+| Order lines                      | Integration entity for project contract line          |
 | Project contract line milestones | Integration entity for project contract line milestone |
 
 ## Entity flow
@@ -75,6 +75,10 @@ Before synchronization of project contracts and projects can occur, you must syn
 Project contracts are managed in Project Service Automation, and they are synchronized to Finance and Operations as project contracts. As part of the integration template, you can set the integration source in Finance and Operations for the project contract.
 
 Time and material and fixed price projects are managed in Project Service Automation, and they are synchronized to Finance and Operations as projects. As part of the template integration, you can set the integration source in Finance and Operations for the project.
+
+Project contract lines are managed in Project Service Automation, and they are synchronized to Finance and Operations as project contract billing rules. The synchronization will update the project type for the contract line project and project group if the billing method is different than the default project type.
+
+Project contract line milestones are managed in Project Service Automation, and they are synchronized to Finance and Operations as project contract billing rule milestones.
 
 ## Project Service Automation to Finance and Operations integration solution
 
@@ -131,6 +135,6 @@ The following illustrations show examples of the template task mappings in Data 
 
 [![Template mapping](./media/ProjectTemplateMapping.JPG)](./media/ProjectTemplateMapping.JPG)
 
-[![Template mapping]
+[![Template mapping](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
-[![Template mapping]
+[![Template mapping](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
