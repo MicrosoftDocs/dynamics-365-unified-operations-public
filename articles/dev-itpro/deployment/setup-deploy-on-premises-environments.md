@@ -406,15 +406,22 @@ dir cert:\LocalMachine\Root
 
     ```powershell
     # Install pre-req software on the VMs.
+
+    # If Remoting
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <path of the MSIs>
+
     .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
     ```
 
     > [!IMPORTANT]
-    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the .\Configure-PreReqs.ps1 script after each restart until all the prerequisites are installed.
+    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, simply rerun the AllVMs script when all the machines are back online.
 
 2. Run the following scripts, if they exist, in order to complete the VM setup.
 
     ```powershell
+    # If Remoting
+    # .\Complete-PreReqs-AllVMs.ps1
+
     .\Add-GMSAOnVM.ps1
     .\Import-PfxFiles.ps1
     .\Set-CertificateAcls.ps1
@@ -423,6 +430,9 @@ dir cert:\LocalMachine\Root
 3. Run the following script to validate the VM setup.
 
     ```powershell
+    # If Remoting
+    # .\Test-D365FOConfiguration-AllVMs.ps1
+
     .\Test-D365FOConfiguration.ps1
     ```
 
