@@ -181,6 +181,7 @@ The following steps must be completed to set up the infrastructure for Finance a
 17. [Set up SSRS](#setupssrs)
 18. [Configure AD FS](#configureadfs)
 19. [Configure a connector and install an on-premises local agent](#configureconnector)
+20. [Tear down CredSSP, if remoting was used](#teardowncredssp)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
@@ -403,7 +404,7 @@ dir cert:\LocalMachine\Root
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
-> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts from the same machine that `.\Export-Scripts.ps1` was executed on. The remoting scripts, when available, are declared after a "`# If Remoting`" comment. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. CredSSP can be disabled on all configured VMs by executing the `.\Disable-CredSSP-AllVMs.ps1` script.
+> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts from the same machine that `.\Export-Scripts.ps1` was executed on. The remoting scripts, when available, are declared after a "`# If Remoting`" comment. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
 
 1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
@@ -440,7 +441,7 @@ dir cert:\LocalMachine\Root
     ```
 
 > [!IMPORTANT]
-> If remoting was used, be sure to execute `.\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml` once finished. The script ensures that if CredSSP was left enabled somehow, it will be disabled on all machines.
+> If remoting was used, please see "[20. Tear down CredSSP](#teardowncredssp)".
 
 ### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
@@ -551,7 +552,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    When setting up testing certificates for Always-On, the following **remoting** scripts will perform the same as the script below and steps: 4., 5. and 6.:
+    When setting up testing certificates for Always-On, the following **remoting** script will perform the same as the **manual** script below and steps: **4.**, **5.** and **6.**:
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -559,7 +560,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    Manual set up of test certificates:
+    **Manual** creation of test certificates:
     ```powershell
     #https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
@@ -580,6 +581,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
 
 6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
+
+> [!IMPORTANT]
+> If remoting was used, please see "[20. Tear down CredSSP](#teardowncredssp)".
 
 ### <a name="configuredb"></a> 14. Configure the databases
 
@@ -805,12 +809,24 @@ You've now completed the setup of the infrastructure. The following sections des
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
 
- 12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
+12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
 13. On the **Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, the page will resemble the following illustration.
 
     ![Validate the agent](./media/ValidateAgent.PNG)
+
+### <a name="teardowncredssp"></a> 20. Tear down CredSSP, if remoting was used
+
+If any of the remoting scripts were used during setup, be sure to execute the following whenever there are breaks in the setup process, or the setup has finished:
+
+```powershell
+.\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
+
+The script ensures that if CredSSP was left enabled somehow, it will be disabled on all the machines specified in the configuration file.
+
+
 ## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
- 
+
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script to get a part of the values needed.
 
     ```powershell
@@ -824,6 +840,7 @@ You've now completed the setup of the infrastructure. The following sections des
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
 ## Connect to your Finance and Operations (on-premises) environment
+
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
 ## See also
