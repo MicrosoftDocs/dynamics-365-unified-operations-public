@@ -5,7 +5,7 @@ title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The Prospect to cash solution provides direct synchronization across Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Sales. The Prospect to cash templates that are available with the Data Integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations.
+The Prospect to cash solution provides direct synchronization across Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Sales. The Prospect to cash templates that are available with the Data Integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. For more information about the Prospect to cash integration, see [Introduction to Prosepct to cash integration (Video)](https://youtu.be/AVV9x5x-XCg). 
 
 In the current version, the Prospect to cash solution provides the following types of direct synchronization:
 
@@ -109,3 +109,5 @@ To use the Prospect to cash solution, you must install the following components:
     2. Select **Show advanced**.
     3. For a quick installation, select a region. If you select **Don't know**, the system searches for all regions, and the installation will take more time.
     4. Enter the user name and password of an admin user who has installation rights.
+
+
