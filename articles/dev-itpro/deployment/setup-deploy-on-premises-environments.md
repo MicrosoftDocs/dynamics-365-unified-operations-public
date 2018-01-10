@@ -400,27 +400,30 @@ dir cert:\LocalMachine\Root
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
-**Follow these steps for each VM**
+#### Follow these steps for each VM, or use remoting from a single machine
+
+> [!NOTE]
+> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts from the same machine that `.\Export-Scripts.ps1` was executed on. The remoting scripts, when available, are declared after a "`# If Remoting`" comment. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. CredSSP can be disabled on all configured VMs by executing the `.\Disable-CredSSP-AllVMs.ps1` script.
 
 1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
 
     ```powershell
     # Install pre-req software on the VMs.
 
-    # If Remoting
-    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <path of the MSIs>
+    # If Remoting, execute
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
     ```
 
     > [!IMPORTANT]
-    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, simply rerun the AllVMs script when all the machines are back online.
+    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all the machines are back online.
 
 2. Run the following scripts, if they exist, in order to complete the VM setup.
 
     ```powershell
-    # If Remoting
-    # .\Complete-PreReqs-AllVMs.ps1
+    # If Remoting, only execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\Add-GMSAOnVM.ps1
     .\Import-PfxFiles.ps1
@@ -430,11 +433,14 @@ dir cert:\LocalMachine\Root
 3. Run the following script to validate the VM setup.
 
     ```powershell
-    # If Remoting
-    # .\Test-D365FOConfiguration-AllVMs.ps1
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    .\Test-D365FOConfiguration.ps1
+    .\Test-D365FOConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
+
+> [!IMPORTANT]
+> If remoting was used, be sure to execute `.\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml` once finished. The script ensures that if CredSSP was left enabled somehow, it will be disabled on all machines.
 
 ### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
