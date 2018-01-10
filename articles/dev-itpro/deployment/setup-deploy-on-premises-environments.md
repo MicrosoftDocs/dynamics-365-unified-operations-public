@@ -551,10 +551,19 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
+    When setting up testing certificates for Always-On, the following **remoting** scripts will perform the same as the script below and steps: 4., 5. and 6.:
+
+    ```powershell
+    .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
+        -SqlMachineNames DAX7SQLAOSQLA01, DAX7SQLAOSQLA02 `
+        -SqlListenerName dax7sqlaosqla
+    ```
+
+    Manual set up of test certificates:
     ```powershell
     #https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
-    # Create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
+    # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
     # Run script on each node
     $computerName = $env:COMPUTERNAME.ToLower() 
     $domain = $env:USERDNSDOMAIN.ToLower()
