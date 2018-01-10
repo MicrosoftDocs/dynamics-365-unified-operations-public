@@ -367,7 +367,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
 >[!WARNING]
->Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in powershell.
+>Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
 ```powershell
 dir cert:\CurrentUser\My
 dir cert:\LocalMachine\My
@@ -527,7 +527,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.) 
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
@@ -556,8 +556,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
     ```
 
-4. Use the certificate to configure SSL on SQL Server. Follow the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
-5. For each node of the cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
+4. Use the certificate(s) to configure SSL on SQL Server. Follow the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
+5. For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
 
     1. Import the certificate into LocalMachine\\My.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
@@ -577,7 +577,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 | Release | Demo Data |
 |-------|------|
 | On-premises General Availability (GA) release | Dynamics 365 for Operations, Enterprise Edition (on-premises) - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-prmises) - Update 11 Demo data |
+| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -591,7 +591,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    
    > 2. If a database with the same name exists, the database will be reused.
 
-6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a Powershell window with elevate privileges.
+6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a PowerShell window with elevate privileges.
 
 #### Configure the OrchestratorData database
 
@@ -604,7 +604,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
   The script will do the following:
   
   - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-  - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissionson the database.
+  - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
 #### Configure the Finance and Operations database
 

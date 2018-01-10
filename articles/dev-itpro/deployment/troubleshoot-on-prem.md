@@ -65,7 +65,7 @@ You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipse
 
 ### Remove all, by LCS, deployed AX applications from Service Fabric
 
-The following script will remove and unprovision all SF applications, except the LocalAgent and Monitoring agent for the LocalAgent. Execute it on an orchestrator VM.
+The following script will remove and unprovision all SF applications, except the LocalAgent and Monitoring agent for the LocalAgent. It must be executed on a orchestrator VM.
 
 ```powershell
 $applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring')
@@ -294,7 +294,7 @@ Click the **Details** tab to view the full error message.
 Note the service that is failing and open the corresponding application directory. For example, C:\ProgramData\SF\ORCH1\Fabric\work\Applications\LocalAgentType\_App5\log.
 
 ## Encryption errors
-Some encryption error examples include, AXBootStrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
+Some encryption error examples include, AXBootstrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
 
 You might receive one of these errors if the data encipherment certificate is used to encrypt AOS AccountPassword was not installed on the machine. This certificate could be in the certificates (local computer) or it could be that the provider type is incorrect.
 
@@ -337,7 +337,7 @@ Additional logging can be done by registering providers. Download the [ETWManife
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"}
 ```
 
-If you need to un-register, use the following command.
+If you need to unregister, use the following command.
 
 ```powershell
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister
