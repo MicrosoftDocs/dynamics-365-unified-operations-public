@@ -5,7 +5,7 @@ title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -109,3 +109,8 @@ To use the Prospect to cash solution, you must install the following components:
     2. Select **Show advanced**.
     3. For a quick installation, select a region. If you select **Don't know**, the system searches for all regions, and the installation will take more time.
     4. Enter the user name and password of an admin user who has installation rights.
+
+
+### Additional resources
+
+[Prosepct to cash integration (YouTube Video)](https://youtu.be/AVV9x5x-XCg) 
