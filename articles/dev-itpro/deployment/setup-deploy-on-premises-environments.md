@@ -785,7 +785,12 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
-8. On the **Configure agent** tab, enter the configuration settings.
+8. On the **Configure agent** tab, enter the configuration settings. Execute the following script to get a part of the values needed.
+
+    ```powershell
+    .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
 9. Save the configuration, and then select **Download configurations** to download the localagent-config.json configuration file.
 
     ![Download configurations button on the Configure agent tab](./media/OPSetup_08_DownloadConfigurations.png)
@@ -806,12 +811,17 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Validate the agent](./media/ValidateAgent.PNG)
 ## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
  
-1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**.
+1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script to get a part of the values needed.
+
+    ```powershell
+    .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 3. If you have an existing deployment, see the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
 4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   
+If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
 ## Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
