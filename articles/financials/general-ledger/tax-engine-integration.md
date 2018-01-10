@@ -555,7 +555,7 @@ If the Tax engine returns no issues, the tax document result will be persisted i
 
 - TaxDocument
 - TaxDocumentRow
-- TaxDocumentJason
+- TaxDocumentJson
 
 By querying these tables to obtain the JSON string, you can easily check the result details via any online JSON viewer.
 
