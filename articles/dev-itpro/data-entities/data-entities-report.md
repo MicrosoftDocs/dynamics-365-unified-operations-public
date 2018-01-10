@@ -41,9 +41,9 @@ Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) conta
 
 ## Data entity reports
 Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep): 
-- **Data entities** (Analysis-AxDataEntitiesV2) lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
-- **Data entities fields** (Analysis-AxDataEntityFieldsV2) lists each field in a data entity, and the table that it originates from.
-- **Aggregate data entities** (Analysis-AxAggregateDataEntitiesV2) lists the aggregate data entities, and the fields that each contains. 
+- **Data entities** lists each data entity that is available. The report indicates the data source of the entity and the fields included in the entity. The report also indicates whether the data entity is public.
+- **Data entities fields** lists each field in a data entity, and the table that it originates from.
+- **Aggregate data entities** lists the aggregate data entities, and the fields that each contains. 
 
 You may also find the Tables report of interest--it lists each table, and its table group. (Analysis-AxTablesReportV2).  
 
