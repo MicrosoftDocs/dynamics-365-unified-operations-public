@@ -113,4 +113,4 @@ To use the Prospect to cash solution, you must install the following components:
 
 ### Additional resources
 
-[Prosepct to cash integration (YouTube Video)](https://youtu.be/AVV9x5x-XCg) 
+[Prosepct to cash integration (Video)](https://youtu.be/AVV9x5x-XCg) 
