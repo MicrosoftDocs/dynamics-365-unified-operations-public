@@ -406,7 +406,7 @@ dir cert:\LocalMachine\Root
 > [!NOTE]
 > The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts from the same machine that `.\Export-Scripts.ps1` was executed on. The remoting scripts, when available, are declared after a "`# If Remoting`" comment. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
 
-1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM, and then run the following scripts.
+1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (unless remoting is used, in which case the scripts will automatically pass the contents), and then run the following scripts.
 
     ```powershell
     # Install pre-req software on the VMs.
@@ -771,7 +771,13 @@ For more information about how to use the script, see the documentation that is 
 
 ![Application group properties](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
-Finally, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type. To perform this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide. If you successfully access the URL, a JavaScript Object Notation (JSON) file is returned that contains your AD FS configuration, and you will see that your AD FS URL is trusted.
+Finally, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type. To perform this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide, and if you are using remoting, you can use the following script to install the certificate on all nodes in the Service Fabric cluster:
+
+```powershell
+.\Install-ADFSCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
+
+If you successfully access the URL, a JavaScript Object Notation (JSON) file is returned that contains your AD FS configuration, and you will see that your AD FS URL is trusted.
 
 You've now completed the setup of the infrastructure. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Finance and Operations environment.
 
@@ -823,7 +829,6 @@ If any of the remoting scripts were used during setup, be sure to execute the fo
 ```
 
 The script ensures that if CredSSP was left enabled somehow, it will be disabled on all the machines specified in the configuration file.
-
 
 ## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
 
