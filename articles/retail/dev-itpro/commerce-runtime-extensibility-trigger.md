@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This article explains trigger support for the Dynamics 365 for Retail commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 
-CRT trigger overview
---------------------
+## CRT trigger overview
 
 Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and let you add business logic before and after every CRT request is executed. The following two methods are used:
 
@@ -117,13 +116,14 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
         }
 
 ## Trigger CommerceRunTime.config updates for 7.0
-When you extend the CRT, make sure that you always write your extension in your own assembly. After you write the trigger extension in your assembly, you must copy the extension library to the Retail server bin folder and add an entry in the **composition** section of the commerceRuntime.config file for the CRT, so that the trigger is loaded at run time. The following example shows a .config file that includes an entry for a trigger implementation in the **CRTExtensionTrigger** assembly. [![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)
+When you extend the CRT, you must write your extension in your own assembly. After you write the trigger extension in your assembly, you must copy the extension library to the Retail server bin folder and add an entry in the **composition** section of the commerceRuntime.config file for the CRT, so that the trigger is loaded at run time. The following example shows a .config file that includes an entry for a trigger implementation in the **CRTExtensionTrigger** assembly. 
 
-For the CRT extension to work in offline mode update the ...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config with the extension library information under the composition section and copy paste the extension library to ...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker
+[![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)
+
+For the CRT extension to work in offline mode update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config** with the extension library information under the composition section and copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker**.
 
 ## Trigger CommerceRunTime.config updates for 7.1 (with May 2017 monthly update), 7.2 and 7.3
-Copy paste the extension library to ...\RetailServer\webroot\bin\ext folder and update the commerceRuntime.ext.config file with the custom extension library information under composition section like below:
-<add source="assembly" value="Contoso.Commerce.Runtime.Services" />. 
-Note: Contoso.Commerce.Runtime.Services is my custom extension name.
+Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
+    <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
 
-For the CRT extension to work in offline mode update the ...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config with the extension library information under the composition section and copy paste the extension library to ...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext
+For the CRT extension to work in offline mode update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section and copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
