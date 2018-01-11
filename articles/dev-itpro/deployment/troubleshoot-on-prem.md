@@ -63,7 +63,7 @@ We recommend that you use Lifecycle Services (LCS) to remove or clean up deploym
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm.
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm.
 
-### Remove all, by LCS, deployed AX applications from Service Fabric
+### Remove all AX applications from Service Fabric
 
 The following script will remove and unprovision all SF applications, except the LocalAgent and Monitoring agent for the LocalAgent. It must be executed on a orchestrator VM.
 

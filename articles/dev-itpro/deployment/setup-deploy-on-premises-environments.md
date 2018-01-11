@@ -404,9 +404,9 @@ dir cert:\LocalMachine\Root
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
-> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts from the same machine that `.\Export-Scripts.ps1` was executed on. The remoting scripts, when available, are declared after a "`# If Remoting`" comment. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
+> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts, which provides the option of running the necessary scripts from a single machine, e.g. the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section texts for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
 
-1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (unless remoting is used, in which case the scripts will automatically pass the contents), and then run the following scripts.
+1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts.
 
     ```powershell
     # Install pre-req software on the VMs.
@@ -441,7 +441,7 @@ dir cert:\LocalMachine\Root
     ```
 
 > [!IMPORTANT]
-> If remoting was used, please see "[20. Tear down CredSSP](#teardowncredssp)".
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See "[20. Tear down CredSSP](#teardowncredssp)".
 
 ### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
@@ -552,7 +552,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script will perform the same as the **manual** script below and steps: **4.**, **5.** and **6.**:
+    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the **manual** script below and steps: **4.**, **5.** and **6.**:
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -562,7 +562,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Manual** creation of test certificates:
     ```powershell
-    #https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
+    # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
     # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
     # Run script on each node
@@ -575,7 +575,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 4. Use the certificate(s) to configure SSL on SQL Server. Follow the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 5. For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
 
-    1. Import the certificate into LocalMachine\\My, unless you're setting up Always-On, in which case the certificate already exists on the node.
+    1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
     3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
@@ -583,7 +583,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
 
 > [!IMPORTANT]
-> If remoting was used, please see "[20. Tear down CredSSP](#teardowncredssp)".
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See "[20. Tear down CredSSP](#teardowncredssp)".
 
 ### <a name="configuredb"></a> 14. Configure the databases
 
@@ -774,6 +774,7 @@ For more information about how to use the script, see the documentation that is 
 Finally, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type. To perform this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide, and if you are using remoting, you can use the following script to install the certificate on all nodes in the Service Fabric cluster:
 
 ```powershell
+# If remoting, execute
 .\Install-ADFSCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
@@ -795,7 +796,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
-8. On the **Configure agent** tab, enter the configuration settings. Execute the following script to get a part of the values needed.
+8. On the **Configure agent** tab, enter the configuration settings. Execute the following script on any machine with access to it- and the configuration file, to get a part of the values needed.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -822,17 +823,17 @@ You've now completed the setup of the infrastructure. The following sections des
 
 ### <a name="teardowncredssp"></a> 20. Tear down CredSSP, if remoting was used
 
-If any of the remoting scripts were used during setup, be sure to execute the following whenever there are breaks in the setup process, or the setup has finished:
+If any of the remoting scripts were used during setup, be sure to execute the following script whenever there are breaks in the setup process, or the setup has finished:
 
 ```powershell
 .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
-The script ensures that if CredSSP was left enabled somehow, it will be disabled on all the machines specified in the configuration file.
+If the previous remoting PowerShell window was accidentally closed and CredSSP was left enabled, the script will disable it on all the machines specified in the configuration file.
 
 ## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
 
-1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script to get a part of the values needed.
+1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get a part of the values needed.
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
