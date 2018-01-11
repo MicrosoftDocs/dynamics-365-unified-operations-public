@@ -173,7 +173,7 @@ If a cash payment can be received when an invoice is posted, you can create term
 | Field | Description |
 |---|---|
 | Payment method | Select **COD**. |
-| Cash payment | Enable the parameter to create an automatic payment transaction. |
+| Cash payment | Set the option to **Yes** to create an automatic payment transaction. |
 | Cash | Select the general ledger account that is used to post cash payments that are automatically generated. |
 
 ## Example
@@ -246,7 +246,7 @@ If a cash receipt number has been registered for a payment in the cash register,
 
 ### Review cash register fiscal transactions and resend a transaction to the cash register
 
-You can review the cash payments that have been registered, and you can also reprint the original cash receipt or a copy of the cash receipt from the original and copy, by selecting **Accounts receivable** &gt; **Inquires** &gt; **Cash register fiscal transactions**.
+You can review the cash payments that have been registered, and also reprint Cash receipt original or a copu of Cash receipt, by selecting **Print** at the **Accounts receivable** &gt; **Inquires** &gt; **Cash register fiscal transactions**.
 
 The law describes exception scenarios that the fiscal service should correctly handle. If a cash payment wasn't successfully registered for a reason that isn't related to one of those exception scenarios, you will receive an error message after you post a cash payment. The cash register transaction that has a status of **Created** will be available on the **Cash register fiscal transactions** page. You must fix the issues and manually resend the cash transactions that are created to the cash register. Otherwise, you can't print a cash receipt that includes fiscal codes. When a cash payment is correctly registered, it has a status of **Registered**.
 
