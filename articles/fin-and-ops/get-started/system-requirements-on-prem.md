@@ -186,7 +186,7 @@ The following tables list the number of processors and the amount of random-acce
 </tbody>
 </table>
 
-\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
+\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). We recommend separate SQL Server machines for sandbox and production environments. For proof-of-concept or testing scenarios, you can share infrastructure.
 
 ## Storage
 
