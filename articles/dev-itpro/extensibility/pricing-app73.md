@@ -2,8 +2,7 @@
 
 # required metadata
 
-title: Changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-description: This topic describes the changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+title: Price and discount extensibility
 author: smithanataraj
 manager: AnnBe
 ms.date: 12/21/2017
@@ -30,7 +29,7 @@ ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Changes to price and discount extensibility for Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+# Price and discount extensibility
 
 In Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later, the pricing area is extensible. Some common customizations for pricing area are:
 - Adding new price group types and the corresponding price types (enum values for **PriceType** and **PriceGroupType**) and adding search mechanisms for the new price types.
