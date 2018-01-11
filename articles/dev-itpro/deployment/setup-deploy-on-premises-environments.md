@@ -509,7 +509,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.  Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is needed.) 
+
+    You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. In that case, Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
     > [!NOTE]
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
