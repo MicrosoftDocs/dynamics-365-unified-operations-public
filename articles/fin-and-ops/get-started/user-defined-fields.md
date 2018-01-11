@@ -5,7 +5,7 @@ title: Custom fields
 description: This topics shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
-ms.date: 12/07/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,10 @@ ms.dyn365.ops.version: Platform update 13
 [!include[banner](../includes/banner.md)] 
 
 ## Overview 
-While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you (starting in Platform Update 13) to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
+While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
+
+> [!Note]
+> This feature is supported in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 or later.
 
 ## Creating custom fields
 After you’ve identified additional information that you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.   
@@ -44,7 +47,10 @@ The following steps describe the process for creating a custom field and placing
 3.   Click **Insert** and then **Field**.  
 4.   Select the region of the form where you want to expose the new field. After selection, the **Insert fields** dialog box will display a list of existing fields that can be inserted into the selected region of the form.  
 5.   Ensure that the field you are interested in does not already exist in the list. If it does, you can simply mark that field in the list and select **Insert**.   
-6.   Click the **Create new field** button above the list to initiate the process of creating a custom field. This will open the **Create new field** dialog box. If you do not see the **Create new field** button, you do not have the necessary permissions to use this feature.  
+6.   Click the **Create new field** button above the list to initiate the process of creating a custom field. This will open the **Create new field** dialog box. 
+
+     If you do not see the **Create new field** button, you do not have the necessary permissions to use this feature.  
+     
 7.   In the **Create new field** dialog box, enter the following information.
      1.   Select the database table where this field should be added. Note that only tables that support custom fields will appear in the drop-down list. See the section below for technical details on supported tables.  
      2.   Select the data type for the new field. The available data types are checkbox, date, date time, decimal, number, picklist, and text.   
@@ -111,11 +117,14 @@ The following steps describe the process for translating custom fields in other 
 4.   Click **OK** when you are finished.  
 
 ### Deleting custom fields
-In some rare cases, you may decide that a custom field is no longer needed. When this occurs, a system administrator can choose to delete the field from the **Custom fields** page. To do this, ensure the correct field is selected, then click **Delete**, then **Yes** to confirm the deletion, and finally **Apply changes**. Note, this action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
+In some rare cases, you may decide that a custom field is no longer needed. When this occurs, a system administrator can choose to delete the field from the **Custom fields** page. To do this, ensure the correct field is selected, then click **Delete**, then **Yes** to confirm the deletion, and finally **Apply changes**. 
+
+> [!Note]
+> This action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
 
 ## Appendix 
 ### Access to the custom fields feature
-Due to the nature of the custom fields feature, only system administrators have access by default. However, those power users whom the organization deems necessary to utilize custom fields can be given access by a system administrator using the "Runtime customization power user" security role. Users without this security role will not have access to custom fields.  
+Due to the nature of the custom fields feature, only system administrators have access by default. However, those power users whom the organization deems necessary to utilize custom fields can be given access by a system administrator using the **Runtime customization power user** security role. Users without this security role will not have access to custom fields.  
 
 ### Tables that support custom fields
 For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.
