@@ -98,7 +98,7 @@ SQL Server must have a high-availability HADRON setup that has at least two node
 
 The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.
 
-[![Recommended number of nodes for the Service Fabric cluster](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png) 
+[![Recommended number of nodes for the Service Fabric cluster](./media/Minimum-infrastructure-Jan2017.png)](./media/Minimum-infrastructure-Jan2017.png.png) 
 
 ## Processor and RAM requirements
 The following tables list the number of processors and the amount of random-access memory (RAM) that are required for each role that is required in order to run this deployment option. For more information, see the recommended minimum requirements for a Service Fabric standalone cluster in [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
