@@ -91,7 +91,7 @@ If you can't find a format in the list, you can download recent electronic forma
 </tr>
 <tr>
 <td>Cash register certificate settings</td>
-<td>Enable sage of self-signed certificates.</td>
+<td>Enable usage of self-signed certificates.</td>
 <td>
 <ul>
 <li><strong>Use a self-signed certificate</strong> – Set this option to <strong>Yes</strong> if you will use a self-generated, self-signed certificate that you can't add to the list of trusted certificates.</li>
@@ -206,7 +206,7 @@ This section walks you through the following business processes and uses the [EF
 3. On the **Price and discount** FastTab, select a method of payment that is set up as a method of payment for the cash register.
 4. In the **Payment** field, select terms of payment that are set up for COD.
 5. Select **Invoice** &gt; **Invoice**.
-6. On the **Parameters** FastTab, select the **Print receipt** check box to print a cash receipt after the invoice is posted.
+6. On the **Parameters** FastTab,set the **Print receipt** option to **Yes** to print a cash receipt after the invoice is posted.
 7. On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes. Modify the information as you require. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.
 
 ### Register a customer payment from the Customer payment journal and print a cash receipt
