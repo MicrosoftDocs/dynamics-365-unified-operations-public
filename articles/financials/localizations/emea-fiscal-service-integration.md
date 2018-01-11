@@ -161,7 +161,8 @@ You should consult the local tax authority to identify the requirements for regi
 In the following scenarios, the tax amounts that are related to the payment amount can't be reliably identified from the posted transactions:
 
 - For the cash payment that is manually posted from the Customer payment journal and settled against the previously posted invoice that contains a posted tax amount.
-- If you set up to send these tax amounts to the cash register. In this case, the tax amounts can't be considered fully correct tax amounts. A specific amount distribution logic calculates approximate tax amounts, based on the payment amount.
+
+If the Cash register method of payment is configured to register tax amounts, a specific amount distribution logic calculates approximate tax amounts, based on the payment amount, in this scenario.
 
 In these scenarios, the correct tax amounts are presented only in the posted invoice that is settled. Consult the local tax authority to identify the correct method for submitting the invoiced tax amounts to tax authority checks for these scenarios.
 
