@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom fields
-description: This topics shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
+description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
 ms.date: 01/11/2018
@@ -31,11 +31,10 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include[banner](../includes/banner.md)] 
 
-## Overview 
-While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
-
 > [!Note]
 > This feature is supported in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 or later.
+
+While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
 
 ## Creating custom fields
 After you’ve identified additional information that you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.   
@@ -46,7 +45,7 @@ The following steps describe the process for creating a custom field and placing
 2.   Because the end goal is to expose the custom field on a form, the entry point for creating custom fields exists inside the personalization experience. Open the personalization toolbar by selecting **Options**, and then **Personalize this form**. 
 3.   Click **Insert** and then **Field**.  
 4.   Select the region of the form where you want to expose the new field. After selection, the **Insert fields** dialog box will display a list of existing fields that can be inserted into the selected region of the form.  
-5.   Ensure that the field you are interested in does not already exist in the list. If it does, you can simply mark that field in the list and select **Insert**.   
+5.   Ensure that the field you are interested in does not already exist in the list. If it does, you can simply select that field in the list and click **Insert**.   
 6.   Click the **Create new field** button above the list to initiate the process of creating a custom field. This will open the **Create new field** dialog box. 
 
      If you do not see the **Create new field** button, you do not have the necessary permissions to use this feature.  
@@ -65,13 +64,13 @@ The following steps describe the process for creating a custom field and placing
 ### Sharing custom fields with other users
 After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
--   The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details. 
+-   The recommended route is through the system administrator, who can push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details. 
 
 -   Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
 
-Management of all the custom fields in the system can be accomplished through the **Custom fields** page in the System administration module.  This page allows users access to many capabilities including: 
+Management of all the custom fields in the system can be accomplished through the **Custom fields** page in the System administration module.  This page allows users access to many capabilities, including: 
 -   Viewing a list of all custom fields in the system.
 -   Limited editing of existing custom fields.
 -   Deleting custom fields.
@@ -117,7 +116,7 @@ The following steps describe the process for translating custom fields in other 
 4.   Click **OK** when you are finished.  
 
 ### Deleting custom fields
-In some rare cases, you may decide that a custom field is no longer needed. When this occurs, a system administrator can choose to delete the field from the **Custom fields** page. To do this, ensure the correct field is selected, then click **Delete**, then **Yes** to confirm the deletion, and finally **Apply changes**. 
+In some rare cases, you may decide that a custom field is no longer needed. When this occurs, a system administrator can choose to delete the field from the **Custom fields** page. To do this, ensure the correct field is selected, click **Delete**, click **Yes** to confirm the deletion, and finally click **Apply changes**. 
 
 > [!Note]
 > This action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
