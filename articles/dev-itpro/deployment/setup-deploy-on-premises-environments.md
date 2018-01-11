@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -786,5 +786,5 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
 ## See also
-[Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-[Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](redeploy-on-prem.md)
