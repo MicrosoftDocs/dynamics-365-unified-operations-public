@@ -5,7 +5,7 @@ title: Budget planning overview
 description: This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
