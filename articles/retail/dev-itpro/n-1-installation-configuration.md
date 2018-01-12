@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Retail
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global

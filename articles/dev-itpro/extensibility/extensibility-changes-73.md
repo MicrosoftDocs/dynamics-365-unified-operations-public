@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-description: This is a list of extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 author: FrankDahl
 manager: AnnBe
 ms.date: 12/20/2017
@@ -35,13 +35,16 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include[banner](../includes/banner.md)]
 
-This is a list of extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
-This release marks the last release before all models will become hard-sealed, and as a step toward this all application models are now at least soft-sealed. Soft-sealed models still allow for making overlayered code, but warnings will be generated when you compile the overlayered code. Thus, you can still overlayer code, but extension is the recommended approach.
+This release marks the last release before all models will become hard-sealed, and as a step toward this all application models are now soft-sealed. Soft-sealed models still allow for making overlayered code, but warnings will be generated when you compile the overlayered code. 
 
-The list below include the complete list of models that are now soft-sealed with this release.
+> [!NOTE]
+> You can still overlayer code, but extension is the recommended approach.
+
+The following table includes a list of the models that are soft-sealed with this release.
 
 | Module | Model         |
 | --------------- |-------------|
@@ -69,9 +72,9 @@ The list below include the complete list of models that are now soft-sealed with
 
 ## Hard-sealed application models
 
-With this release almost all application core models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
+With this release, almost all application core models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
 
-The list below include the complete list of models that are now hard-sealed with this release.
+TThe following table includes a list of models that are now hard-sealed with this release.
 
 | Module| Model         |
 | --------------- |-------------|
@@ -288,7 +291,7 @@ As a general practice, you use data methods on tables to raise events that can b
 
 The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
 
-| Table & Method |
+| Table and method |
 | ----------------------|
 |BOM|
 |BOMTable|
@@ -390,15 +393,15 @@ Some **find** methods were implemented with **throw** statements if there was a 
 | -------------|
 |TradePostalAddress.partyTable|
 
-## Extracted method to open up for class extensions
+## Extracted method to open for class extensions
 
-Within this release cycle we added the foundation feature **Chain of Command** which letsyou create extension classes. Extensions classes offer a stronger way of extending than other options because they allow access to both protected and public methods and members. This provides more flexibility than extending through delegates or by pre or post event.
+The **Chain of Command** feature lets you create extension classes. Extensions classes offer a stronger way of extending than other options because they allow access to both protected and public methods and members. This provides more flexibility than extending through delegates or by pre or post event.
 
-Within this group of changes, we have extracted longer methods into smaller methods. The new methods have a more specific focus and you have more control over the scope of your extentions.
+Within this group of changes, longer methods are extracted into smaller methods. The new methods have a more specific focus and you have more control over the scope of your extensions.
 
-Since the **Chain of Command** feature, we will choose extensibility by extracting methods over adding delegates because this approach provides a more versatile solution.
+After the introduction of the **Chain of Command** feature, we suggest using extensibility by extracting methods instead of adding delegates because this approach provides a more versatile solution.
 
-The following table of methods lists the new methods that have been extracted and opened up for building extension classes.
+The following table lists the new methods that have been extracted and opened for building extension classes.
 
 | Method |
 | -------------|
@@ -499,7 +502,7 @@ The following table of methods lists the new methods that have been extracted an
 
 ## Changes using other methods to support extensibility
 
-This groups of changes includes several different approaches to extensibility and represents the extensiblity changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, delegates, changed access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, since we are primarily using **Chain of Command** going forward.
+The group of changes in this section includes several different approaches to extensibility and represents the extensibilty changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, adding delegates, changing access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, because we will primarily be using **Chain of Command**.
 
 | Method |
 | -------------|
@@ -1411,7 +1414,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 ## SQL operations made extensible
 
-Application code with embedded SQL statements cannot be modified through extensions. Changes has been made to the standard application to enable extensibility in the listed methods. This has commonly been enabled by transforming embedded SQL statements into query objects that support extending how SQL statements are built up in these methods.
+Application code with embedded SQL statements cannot be modified through extensions. Changes have been made to the standard application to enable extensibility in the methods listed in the folllowing table. This has commonly been enabled by transforming embedded SQL statements into query objects that support extending how SQL statements are built in these methods.
 
 |  Method |
 | -------------|
@@ -1459,11 +1462,11 @@ Application code with embedded SQL statements cannot be modified through extensi
 
 ## Maps enabled for extensibility
 
-We have introduced new patterns for maps implementation that will allow adding field and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
+New patterns have been introduced for maps implementation that will allow you to add field and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
 
-The following table lists show the maps and related tables where we have applied changes for enabling extensibility.
+The following table lists the maps and related tables where changes have been applied for enabling extensibility.
 
-| Maps & Tables|
+| Maps and tables|
 | -------------------|
 |Map CustVendInvoiceTrans|
 |Map SalesPurchLine extensions or inheritance|
@@ -1474,9 +1477,9 @@ The following table lists show the maps and related tables where we have applied
 
 ## Inventory dimensions
 
-This release introduces a new model for how to add inventory dimensions. It was impractical to support customization for new inventory dimensions if that required extending every SQL statement that included inventory dimensions. Insted, we have added 10 inventory dimensions without any specific designated usage. Partner solutions will code through indirection models that hold their code, and other models are made for individual implementation projects that deploy one or more of the prefabricated inventory dimensions toward use in a partner solution. Documentation will be available on how to implement with inventory dimensions under this model, and release of a sample app with a Flavor dimension will help you learn about the new model. The new inventory dimension can be freely deployed and used as either product dimensions or tracking dimensions.
+This release introduces a new model for adding inventory dimensions. In previous releases it was not practical to support customization for new inventory dimensions if that required extending every SQL statement that included inventory dimensions. Instead, we have added 10 inventory dimensions without any specific designated usage. Partner solutions will code through indirection models that hold their code, and other models are made for individual implementation projects that deploy one or more of the prefabricated inventory dimensions toward use in a partner solution. Documentation will be available on how to implement with inventory dimensions under this model, and release of a sample app with a Flavor dimension will help you learn about the new model. The new inventory dimension can be freely deployed and used as either product dimensions or tracking dimensions.
 
-The changes have led to changing multiple places across the application including what is shown in the following list.
+The changes have led to changing multiple places across the application, including what is shown in the following list.
 
 | Change |
 | -------------|
@@ -1563,7 +1566,7 @@ The following table lists additional changes that have been made for extensibili
 
 ## Bugs
 
-The following table lists changes that were requested for extensibility, but were acknowledged as bugs and fixed in the standard application.
+The following table lists changes that were requested for extensibility but were acknowledged as bugs and fixed in the standard application.
 
 | Change |
 | -------------|
