@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User
+audience: [Pick one: Application User]
 # ms.devlang: 
 # ms.reviewer: sericks
 ms.search.scope: Operations Platform 
@@ -44,7 +44,9 @@ An important part of building a PowerApp to be used within or in conjunction wit
 ## Adding an embedded PowerApp to a page
 Before embedding a PowerApp into the Finance and Operations client, you first need to find or build a PowerApp with the desired visuals and/or functionality. We will not describe the detailed process for building a PowerApp here; however, the Introduction to PowerApps article is a good starting point for those who are new to PowerApps.
 
-Once you are ready to embed a particular PowerApp, you can choose between one of two ways of accessing the PowerApp on a page. The first way is through the new PowerApps button that has been added to the standard Action Pane. PowerApps added via this mechanism will appear as menu items inside the PowerApps menu button. When accessed, each of these menu items will open a dialog containing the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page inside a pivot tab, fast tab, vertical tab, or panorama section. 
+Once you are ready to embed a particular PowerApp, you can choose between one of two ways of accessing the PowerApp on a page, whichever route better fits your scenario. The first way is through the new PowerApps button that has been added to the standard Action Pane. PowerApps added via this mechanism will appear as menu items inside the PowerApps menu button. When selected, each of these menu items will open a dialog containing the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page inside a pivot tab, fast tab, vertical tab, or panorama section. 
+
+When configuring your embedded PowerApp in Finance and Operations, you will have the ability to select the single field you want to send as input to the PowerApp. The data sent from that field will be based on the   
 
 When you have a PowerApp ready to be included in Finance and Operations, you can follow these instructions to include the PowerApp into the Finance and Operations web client.  
 
