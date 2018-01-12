@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: PrintMgmtSetupUIMain
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
