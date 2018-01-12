@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Adjust on-hand inventory cost values
+# Cost management home page
 
 [!include[banner](../includes/banner.md)]
 
