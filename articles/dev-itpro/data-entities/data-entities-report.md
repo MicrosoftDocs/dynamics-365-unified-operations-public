@@ -3,7 +3,7 @@
 
 title: Find information about standard data entities
 description: This topic describes how to get information about the standard data entities that are available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: sericks007
+author: margoc
 manager: AnnBe
 ms.date: 12/14/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: margoc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
