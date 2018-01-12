@@ -32,6 +32,26 @@ ms.dyn365.ops.version: Platform update 13
 [!include[banner](../includes/banner.md)]
 
 
+[!Note] This feature is supported in Dynamics 365 for Finance and Operations, Enterprise edition platform update 14 or later.
+
+## Overview
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and nontechnical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system, or you might want to surface mobile or tablet experiences built using PowerApps inside the Finance and Operations client.  
+
+## Building a PowerApp that leverages data from Finance and Operations
+An important part of building a PowerApp to be used within or in conjunction with Finance and Operations is designing the PowerApp to accept data from an outside source, in particular from Finance and Operations.  
+
+
+## Adding an embedded PowerApp to a page
+Before embedding a PowerApp into the Finance and Operations client, you first need to find or build a PowerApp with the desired visuals and/or functionality. We will not describe the detailed process for building a PowerApp here; however, the Introduction to PowerApps article is a good starting point for those who are new to PowerApps.
+
+Once you are ready to embed a particular PowerApp, you can choose between one of two ways of accessing the PowerApp on a page. The first way is through the new PowerApps button that has been added to the standard Action Pane. PowerApps added via this mechanism will appear as menu items inside the PowerApps menu button. When accessed, each of these menu items will open a dialog containing the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page inside a pivot tab, fast tab, vertical tab, or panorama section. 
+
+When you have a PowerApp ready to be included in Finance and Operations, you can follow these instructions to include the PowerApp into the Finance and Operations web client.  
+
+1. Navigate to the page where you would like to embed the PowerApp. This will be the same page that contains any data that needs to be passed to the PowerApp as input.  
+2. Determine where on the page the PowerApp should appear.  Finance and Operations supports adding PowerApps to pages in two ways: 
+
+
 ## Editing an embedded PowerApp
 After a PowerApp has been embedded onto a page in the system, you may need to make some changes to the configuration of that PowerApp. For example, perhaps you want to modify the label associated with the embedded PowerApp or you or your organization have created a new version of a PowerApp, and you need to update the App ID to point at the latest PowerApp. 
 
