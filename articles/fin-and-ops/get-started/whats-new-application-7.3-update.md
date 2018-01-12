@@ -114,6 +114,10 @@ Highlights of these integration enhancements include:
 
 -   Sync support for country/region ISO codes on invoice address, exposed on
     data entities.
+    
+For a short video introduction, see [Prospect to Cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+
+For more information, see [Prospect to cash documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
 
 ## Expense management mobile workspace enhancements
 This feature provides support for functionality that is available in expense management that was not available in the mobile solution for expense management. This list includes (but is not limited to):
