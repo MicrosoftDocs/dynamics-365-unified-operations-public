@@ -5,7 +5,7 @@ title: Install report design templates
 description: This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 author: tjvass
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
