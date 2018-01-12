@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  SysSecConfiguration, 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations Core
+ms.search.scope:  Operations, Core
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
