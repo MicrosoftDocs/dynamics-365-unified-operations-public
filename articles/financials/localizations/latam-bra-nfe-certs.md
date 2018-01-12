@@ -53,7 +53,7 @@ The Brazilian government updated the root certification authority (CA) that is u
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
-For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://msdn.microsoft.com/library/azure/dn903623(v=azure.1).aspx).
+For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/rest/api/keyvault/about-keys--secrets-and-certificates).
 The following table lists each tax authority and the solution that you should use to install certificates for it in Finance and Operations.
 
 |Tax authority|	States|	Solution|
