@@ -37,7 +37,7 @@ CDX is a system that transfers data between Retail headquarters (Retail HQ) and 
 + Configure all the custom jobs and subjobs by using the configuration user interface (UI) for CDX.
 + Extend the Retail initialization class by using the extension points that are provided to support custom jobs and subjobs for both push and pull.
 
-The advantage of using the Retail initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail CDX initialization by using the **Initialize retail scheduler** dialog from **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
+The advantage of using the Retail initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail CDX initialization by using the **Initialize retail scheduler** dialog box from **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
 There are various scenarios for data transfer between Retail HQ and the channel database:
 

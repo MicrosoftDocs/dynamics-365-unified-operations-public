@@ -5,7 +5,7 @@ title: Set up fixed assets
 description: This topic provides an overview of the setup of the Fixed assets module.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: AssetTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

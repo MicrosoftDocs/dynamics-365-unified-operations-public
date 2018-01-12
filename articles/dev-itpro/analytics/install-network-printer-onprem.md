@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: SysCorpNetPrinterList
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
