@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Adjust on-hand inventory cost values
-description: Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
+title: Cost management home page
+description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/14/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventAdjInventOnHand
+ms.search.form: 
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
@@ -34,4 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
+Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. Cost management is the process of defining, managing, and reporting Inventory accounting and Manufacturing accounting.
+
+Manufacturing accounting lets you handle **Job order costing** in production order and batch order and backflush costing in lean manufacturing.
+
+You can define cost policies in the following areas. 
+-	 Inventory accounting
+-  Manufacturing accounting
+-  Indirect cost accounting
+-  Predetermined cost
+-  Ledger integration
+
+For example, you can define which inventory valuation methods, for example, **FIFO**, **Weighted average**, **Standard cost**, or **Moving average** you want to apply to products in **Item model group** in Inventory accounting.
+
+You can use Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, KPIs, and detection of deviation. 
+
+
