@@ -62,10 +62,10 @@ To use the Support tool, you must have previously created a project in Lifecycle
  - If applicable, enter an error message. 
  - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
- **Note**
- LCS Support will populate the top 10 "Possible issue solutions" via issue search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+ > [!Note]
+ > LCS Support will populate the top 10 "Possible issue solutions" via issue search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
  
- Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
+ > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
  
  ![Detail](media/CPS7-1.png)
  
@@ -97,3 +97,40 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
 2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
 
    ![Add contracts](media/SupportAddPlans.png) 
+   
+   
+# Report production outage
+This feature is available to all customers that have purchased Dynamics 365 Finance and Operations, Enterprise edition and have implementation projects with a **production** environment deployed in LCS.  
+
+Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
+
+A production outage is be defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
+
+**Reporting flow**
+1. In a live production environment, a customer experiences an outage or other situation that prevents business from continuing.
+2. The customer reports a production outage issue by using the LCS Support portal.
+3. The customer selects a production outage issue and provides additional information.
+4. A Microsoft support engineer acknowledges the production outage ticket within 30 minutes of submission and begins to immediately collaborate with stakeholders to investigate and resolve the issue.
+5. A support engineer contacts the customer to provide a status update
+
+**Access and availibility** 
+All users that been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
+
+This feature is available to:
+- Dynamics 365 for Finance and Operation, Enterprise edition 
+- Environments managed by Microsoft 
+- A production environment in the LCS Project 
+- All support plans
+
+## Report a production outage
+1. Log into you LCS project.
+2. From the hamburger menu, click **Support**.
+3. On the **Submitted To Microsoft** tab, click **Report production outage**.
+4. Confirm the production outage, select the outage scenario from the drop-down list, and then click **Continue**.
+5. Add a title and details about the outage, and then click **Next**.
+6. Provide contact information, and then click **Next**. 
+7. Click **Done**.
+
+[!Note] If you don't see your situation listed in the outage scenarios, enter a support incident through LCS.  If, during the initial investigation by a Microsoft support engineer, it is found the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA based on your current support plan.
+
+
