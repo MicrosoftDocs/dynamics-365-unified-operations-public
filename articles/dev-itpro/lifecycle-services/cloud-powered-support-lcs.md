@@ -46,23 +46,15 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Support button](media/CPS2.png)
 
-3.  Before you submit an incident, use the Issue Search tool to search for existing solutions. You can search by description or object path in the Application Object Tree (AOT) of the issue. Click the Search icon.
-
-![Issue search](media/CPS3.png)
-
-4.  If you can't find an existing solution to your issue, click **Create incident** to create a new incident.
-
-![Create incident](media/CPS4.png)
-
-5.  Select an issue category.
+3.  Select an issue category.
 
 ![Category](media/CPS5.png)
 
-6.  Select an issue area.
+4.  Select an issue area.
 
 ![Area](media/CPS6.png)
 
-7. In the **Describe your issue** window, you need to do the following:
+5. In the **Describe your issue** window, you need to do the following:
 
  - Select **Yes** if the issue occured in an environment. Select the environment name.  
  - Enter a short description of your issue in the **Title** field.
@@ -72,18 +64,18 @@ To use the Support tool, you must have previously created a project in Lifecycle
  
  ![Detail](media/CPS7.png)
  
-8. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
+6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
 
 ![Contact info](media/CPS8.png)
 
-9. Select the support contract and the severity level. 
+7. Select the support contract and the severity level. 
   
   - Support contracts for on-premises products have limited incident counts. From the list of available support contracts, select the support option to use if you have multiple tier support contracts.  
   - Support contracts for cloud products have unlimited incidents, therefore, we show you the best available support plans. 
 
 ![Contract and severity](media/CPS9.png)
 
-10. Click **Submit**. 
+8. Click **Submit**. 
 
 ![Completed](media/CPS10.png)
 
@@ -91,7 +83,7 @@ After you click **Submit**, an incident is created and added to the **Incidents*
 
 
 ## Manage support plans
-If you purchased a support plan, you will need to add it to LCS Support before you create a new ticket.    
+If you purchased a support plan, such as **Premier Support** or **Advance Support for Partners**, you will need to add it to LCS Support before you create a new ticket.    
 
 1. On the **Submitted to Microsoft** tab, click **Manage support plans**. 
 
