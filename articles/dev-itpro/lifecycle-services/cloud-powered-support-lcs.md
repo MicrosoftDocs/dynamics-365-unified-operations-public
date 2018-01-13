@@ -100,11 +100,11 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
    
    
 # Report production outage
-This feature is available to all customers that have purchased Dynamics 365 Finance and Operations, Enterprise edition and have implementation projects with a **production** environment deployed in LCS.  
-
 Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
 
-> [!Note] A production outage is be defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
+This feature is available to all customers that have purchased Dynamics 365 Finance and Operations, Enterprise edition and have **implementation** projects with a **production** environment deployed in LCS.  
+
+A production outage is defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
 
 **Reporting flow**
 1. In a live production environment, a customer experiences an outage or other situation that prevents business from continuing.
@@ -115,7 +115,7 @@ Report production outage provides a quick and effective channel to escalate  iss
 
 **Access and availibility**
 
-All users that been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
+All users that have been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
 
 This feature is available to:
 - Dynamics 365 for Finance and Operation, Enterprise edition 
