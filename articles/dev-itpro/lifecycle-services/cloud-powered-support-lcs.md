@@ -54,7 +54,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ![Area](media/CPS6.png)
 
-5. In the **Describe your issue** window, you need to do the following:
+5. In the **Describe your issue** window, enter the following:
 
  - Select **Yes** if the issue occured in an environment. Select the environment name.  
  - Enter a short description of your issue in the **Title** field.
@@ -62,7 +62,12 @@ To use the Support tool, you must have previously created a project in Lifecycle
  - If applicable, enter an error message. 
  - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
- ![Detail](media/CPS7.png)
+ **Note**
+ LCS Support will populate the top 10 "Possible issue solutions" via issue search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+ 
+ Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
+ 
+ ![Detail](media/CPS7-1.png)
  
 6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
 
