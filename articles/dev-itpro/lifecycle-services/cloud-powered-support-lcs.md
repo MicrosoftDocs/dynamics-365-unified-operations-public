@@ -104,7 +104,7 @@ This feature is available to all customers that have purchased Dynamics 365 Fina
 
 Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
 
-A production outage is be defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
+> [!Note] A production outage is be defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
 
 **Reporting flow**
 1. In a live production environment, a customer experiences an outage or other situation that prevents business from continuing.
@@ -113,7 +113,8 @@ A production outage is be defined as **one or more system-wide issues on a live 
 4. A Microsoft support engineer acknowledges the production outage ticket within 30 minutes of submission and begins to immediately collaborate with stakeholders to investigate and resolve the issue.
 5. A support engineer contacts the customer to provide a status update
 
-**Access and availibility** 
+**Access and availibility**
+
 All users that been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
 
 This feature is available to:
@@ -125,12 +126,29 @@ This feature is available to:
 ## Report a production outage
 1. Log into you LCS project.
 2. From the hamburger menu, click **Support**.
+
+![Support](media/outage1.jpg)
+
 3. On the **Submitted To Microsoft** tab, click **Report production outage**.
+
+![Support](media/outage2.jpg)
+
 4. Confirm the production outage, select the outage scenario from the drop-down list, and then click **Continue**.
+
+![scenario](media/outage3.jpg)
+
 5. Add a title and details about the outage, and then click **Next**.
+
+![detail](media/outage4.jpg)
+
 6. Provide contact information, and then click **Next**. 
+
+![contact](media/outage5.jpg)
+
 7. Click **Done**.
 
-[!Note] If you don't see your situation listed in the outage scenarios, enter a support incident through LCS.  If, during the initial investigation by a Microsoft support engineer, it is found the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA based on your current support plan.
+![done](media/outage6.jpg)
+
+> [!Note] If you don't see your situation listed in the outage scenarios, enter a support incident through LCS.  If, during the initial investigation by a Microsoft support engineer, it is found the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA based on your current support plan.
 
 
