@@ -45,7 +45,7 @@ Microsoft provides the following reports for data entities, which can be downloa
 - **Data entities fields** lists each field in a data entity, and the table that it originates from.
 - **Aggregate data entities** lists the aggregate data entities, and the fields that each contains. 
 
-You may also find the Tables report of interest--it lists each table, and its table group. (Analysis-AxTablesReportV2).  
+You may also find the Tables report of interest--it lists each table, and its table group. 
 
 
 ## See also
