@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13. This version was released in January 2018 and has a build number of 7.0.4764.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13. This version was released to public preview in January 2018 and has a build number of 7.0.4764. Platform update 13 was released to public preview only and isn't generally available.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 13, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=865988).
 
