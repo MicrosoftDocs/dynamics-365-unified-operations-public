@@ -29,7 +29,7 @@ ms.dyn365.ops.version: App update 7.3.1
 ---
 # Deployment guidelines for cash registers for India
 
-This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India.
+This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India. For more information about the Retail localization for India, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).
 
 This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](./retail-sdk-overview.md).
 
@@ -94,6 +94,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+### Set up required parameters in Retail headquarters
+
+For more information, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).
 
 ## Production environment
 
