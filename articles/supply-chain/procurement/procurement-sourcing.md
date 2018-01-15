@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
