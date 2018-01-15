@@ -301,6 +301,8 @@ foundation (MSF) solver. The new Z3 Solver strategy will be assigned per
 configuration model. Note that the other three solver strategies are all
 strategies of MSF: **Default**, **Top-down**, and **Minimal domains first**.
 
+For more information, see [Solver strategy for product configuration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/solver-strategy-product-configuration).
+
 **Import, export, and migrate the product configuration model** - You can export
 and import the product configuration model and model versions using standard
 data entities. The configuration model is exported as an XML structure and saved
