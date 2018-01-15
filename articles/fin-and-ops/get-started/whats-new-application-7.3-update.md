@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/14/2017
+ms.date: 01/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -115,7 +115,7 @@ Highlights of these integration enhancements include:
 -   Sync support for country/region ISO codes on invoice address, exposed on
     data entities.
     
-For a short video introduction, see [Prospect to Cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+For a very short introduction to Prospect to cash integration, see the [Prospect to Cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg) video.
 
 For more information, see [Prospect to cash documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
 
