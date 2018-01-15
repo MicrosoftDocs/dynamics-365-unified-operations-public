@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Configuration steps for Retail developers working on cloud-hosted development machines
 
-Retail developers do not have administsrator access to cloud-hosted development virtual machines (VMs). Modern POS (MPOS) development is possible if you use Cloud POS. Before starting the development for any retail application, configure Cloud POS as follows:
+Retail developers do not have administsrative access to cloud-hosted development virtual machines (VMs). Modern POS (MPOS) development is possible if you use Cloud POS. Before starting the development for any retail application, configure Cloud POS as follows:
 
 1. Open  Visual Studio and click **View** > **Application Explorer**. 
 
