@@ -27,3 +27,7 @@ ms.search.validFrom: 2018-02-02
 ms.dyn365.ops.version: 
 ---
 # GST integration for cash registers for India
+
+### Configure Retail channel components
+
+To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
