@@ -36,7 +36,7 @@ Retail developers do not have administsrative access to cloud-hosted development
 
 1. Open  Visual Studio and click **View** > **Application Explorer**. 
 
-    Wait for Internet Information Services (IIS) Express to start with all the Retail websites deployed. You should see the IIS tray icon in the task bar with all the Retail websites running, such as Cloud POS and Retail Server.
+    Wait for Internet Information Services (IIS) Express to start with all the Retail websites deployed. You should see the IIS icon in the task bar with all the Retail websites running, such as Cloud POS and Retail Server.
     
 2. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
 
