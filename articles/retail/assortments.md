@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Managing assortments
-description: This topic explains the basic concepts of assortment management in Dynamics 365 for Retail and provides implementation considerations for your project.
+title: Assortment management
+description: This topic explains the basic concepts of assortment management in Microsoft Dynamics 365 for Retail and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
 ms.date: 11/21/2017
@@ -27,76 +27,75 @@ ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5 
 ---
 
-# Managing assortments
+# Assortment management
 [!include[banner](../includes/banner.md)]
 
-## Insights
-Microsoft Dynamics 365 for Retail provides assortments to allow users to manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period of time.   
-In Dynamics 365 for Retail, an *assortment* is a mapping of one or more channels (or groups of channels, using organization hierarchies) to one or more products (or groups of products, using category hierarchies).
-The overall product mix of a channel is determined by the published assortments that are assigned to the channel. As a result, users can configure multiple active assortments per channel.
+## Overview
+Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
+
+In Retail, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
+
+The overall product mix of a channel is determined by the published assortments that are assigned to the channel. Therefore, you can configure multiple active assortments per channel.
 
 ### Basic assortment setup
-In the following example, a unique assortment is configured for each store. In this case, only Product 1 is available at Store 1 and only Product 2 is available at Store 2.
+In the following example, a unique assortment is configured for each store. In this case, only product 1 is available at store 1, and only product 2 is available at store 2.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Figure 1")
+![Each product is available at one store](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Each product is available at one store")
 
-In order to make Product 2 available at Store 1, the user can add the product to Assortment 1. 
+To make product 2 available at store 1, you can add the product to assortment 1.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Figure 2")
+![Product 2 added to assortment 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Product 2 added to assortment 1")
 
-Or, the user can add Store 1 to Assortment 2.
+Alternatively, you can add store 1 to assortment 2.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Figure 3")
+![Store 1 added to assortment 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Store 1 added to assortment 2")
 
 ### Organization hierarchies
-In situations where multiple channels share the same product assortments, users can configure the assortments using the Retail assortment organization hierarchy. Adding nodes from this hierarchy will include all channels in that node and its child nodes.
+In situations where multiple channels share the same product assortments, you can configure the assortments by using the Retail assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Figure 4")
+![Organization hierarchy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organization hierarchy")
 
 ### Product categories
-Similarly, on the product side, groups of products can be included by using product category hierarchies. Users can configure assortments by including one or more category hierarchy nodes. In this case, the assortment will include all products in that category node and its child nodes.
+Similarly, on the product side, you can include groups of products by using product category hierarchies. You can configure assortments by including one or more category hierarchy nodes. In this case, the assortment will include all products in that category node and its child nodes.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Figure 5")
+![Product categories](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Product categories")
 
 ### Excluded products or categories
-In addition to including products and categories in assortments, users can also use the exclude option to define specific products or catergories. In the following example, the user intends to have all products in a specific category included, except for Product 2. Instead of defining the assortment product by product or creating additional category nodes, the user can simply include the category, but exclude the product.
+In addition to including products and categories in assortments, you can use the Exclude option to define specific products or categories that should be excluded from assortments. In the following example, you want to include all the products in a specific category, except product 2. In this case, you don't have to define the assortment product by product or create additional category nodes. Instead, you can just include the category but exclude the product.
 
 > [!NOTE]
-> If a product is both included and excluded by definition in one or more assortments, the product will always be considered excluded.
+> If a product is both included and excluded in one or more assortments by definition, the product will always be considered excluded.
 
-![alt text](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Figure 6")
+![Excluded product](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Excluded product")
 
 ### Global and released products
-Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, in order to actually sell, order, count, or receive a product within the channel (for example within POS), the product must first be released. This means two stores in different legal entities can share an assortment containing the same product, but the products are only available if they have been released to the legal entities.
+Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, a product must be released before it can actually be sold, ordered, counted, or received in the channel (for example, in the point of sale \[POS\]). Therefore, although two stores in different legal entities can share an assortment that contains the same products, the products are available only if they have been released to those legal entities.
 
 ### Dynamic and static assortments
-Assortments can be defined with specific channels and products or by including organization units and categories. Assortments, including references to these groups, are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment also changes.
+Assortments can be defined so that they include specific channels and products. Alternatively, organization units and categories can be included when assortments are defined. Assortments, and also references to these groups, are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment also changes.
 
-For example, an assortment is initially defined and published by referencing a category of products. If additional products are subsequently added to the category, they are automatically included in the definition of the existing assortment. The user does not need to manually add these products to the assortment. Similarly, if an organizational unit is added to a different node, its assortment would automatically be adjusted based on that definition.
+For example, an assortment is originally defined and published so that it references a category of products. If additional products are later added to the category, those products are automatically included in the definition of the existing assortment. You don't have to manually add the products to the assortment. Similarly, if an organization unit is added to a different node, its assortment is automatically adjusted based on that definition.
 
 ### Stopped products 
-Released products can be “stopped” for the sales process by enabling the option in the **Default order** settings. This setting is most oftent used when a product is end of life and should not be sold at any channel. Assortments will respect this setting and stopped products will not be assorted, regardless of the assortment configuration.
+You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often used when a product is at the end of its life and should not be sold at any channel. Assortments respect this setting, and stopped products won't be assorted, regardless of the assortment configuration.
 
 ### Blocked products
-In addition to stopping the sales of a product, users can also temporarily block the sales of a product. This can be configured on the **Retail** tab of a released product. Blocked products will still be assorted, but the user will receive a message in POS that the product cannot be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Retail** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
-To allow retailers the ability to configure when products should or should not be available per channel, assortments are date effective. Users can define and publish their assortments ahead of time and specify the start and end dates. The products will automatically become available or unavailable when the specified dates occur. 
+Assortments are date-effective. Therefore, retailers can configure when products should or should not be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products will automatically become available or unavailable on the specified dates.
 
 ### Process assortments batch job
-Assortments that are defined in Dynamics 365 for Retail need to be processed before taking effect. This is done for the following reasons: 
+Assortments that are defined in Retail must be processed before they take effect. This processing is done for the following reasons:
 
-   - Assortment definitions need to be de-normalized to make them more easily consumed by the channels. A given product mix for a channel can be defined by multiple assortments spanning different date ranges. Pre-calculating some of this information ahead of time on the server, will help to improve performance at the channel.
-
-  - The products and channels within the assortment can change outside of the assortment itself. Dynamic assortments that contain references to categories or organization units must periodically be processed to include or exclude records based on their current assignment.
+- Assortment definitions must be de-normalized so that channels can more easily consume them. A product mix for a channel can be defined through multiple assortments that span various date ranges. When some of this information is calculated ahead of time on the server, performance at the channel is improved.
+- The products and channels in the assortment can change outside the assortment itself. Dynamic assortments that contain references to categories or organization units must be processed periodically so that they include or exclude records, based on their current assignment.
 
 ## Implementation considerations
-Consider the following implementation requirements as you plan and manage your assortments for your retail implementation.
+Consider the following implementation requirements as you plan and manage assortments for your retail implementation:
 
-  - **Data replication and database size** – While assortments help to serve to serve the business need to manage product availability, they are also an important tool for managing channel and offline database size. Well-managed assortments help to reduce the amount of data that needs to be processed and replicated to channel and offline databases, and reduce the number of records that need to be persisted. Fewer records in these databases will increase performance when adding items to a transaction, searching, and browsing for products.  
+- **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases will increase performance when you add items to a transaction, search, and browse for products.
+- **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases will grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
+- **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product was mistakenly omitted from an assortment, or where a product was returned outside the effective dates for the assortment.
 
-  - **Date effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. Leaving open-ended (non-expiring) assortments for seasonal products or products that are end of life will cause these databases to grow indefinitely. One approach to help manage this is to keep separate assortments for seasonal products versus products that are always available.  
-
-  - **Sales and returns outside of assortments** – This capability allows retailers to effectively manage their assortments to reduce the number of available products to those that are within the core product mix for the store. It also helps to account for situations where a product was mistakenly not included in an assortment or if the product is being returned outside of the assortment effective dates.
-
-If product data does not exist in the channel database, POS will make real time calls to headquarters to retrieve the necessary information, allowing the product to be sold, returned, or placed on a customer order. Product information retrieved in this manner is only available during the scope of that transaction. The product is not added to the assortment definition, therefore subsequent real time calls will be made as needed.
+If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
