@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
