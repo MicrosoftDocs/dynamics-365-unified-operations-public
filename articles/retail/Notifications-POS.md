@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+# ms.search.form:  RetailOperations, RetailFunctionalityProfile
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: josaw
