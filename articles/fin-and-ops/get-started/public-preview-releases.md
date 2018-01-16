@@ -11,17 +11,17 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 
-# optional metadata
+optional metadata
 
-# ms.search.form:  
+ms.search.form:  
 audience: IT Pro
-# ms.devlang: 
-# ms.reviewer: kfend
+ms.devlang: 
+ms.reviewer: 
 ms.search.scope: All topics: Operations, Platform 
-# ms.tgt_pltfrm: Platform Update 11
-# ms.custom: 
+ms.tgt_pltfrm: Platform Update 11
+ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform Update 11
