@@ -81,12 +81,13 @@ The following Microsoft Office applications are supported in cloud and on-premis
 ## Retail Modern POS requirements
 
 > [!NOTE]
-> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. A Retail Modern POS offline database will work on Microsoft SQL Server 2012 with Service Pack 3 or later, Microsoft SQL Server 2014 with Service Pack 2 or later, and Microsoft SQL Server 2016. We recommend that you always use the latest version that is available, and that you install all the latest service packs.
+> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. A Retail Modern POS offline database will work on Microsoft SQL Server 2012 with Service Pack 3 or later, Microsoft SQL Server 2014 with Service Pack 2 or later, and Microsoft SQL Server 2016. We recommend that you always use the latest version that is available, and that you install all the latest service packs.  This is useful for both compatibility and security.
 
 ### Supported operating systems
 
 -   Retail Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
--   Retail Modern POS is supported only on Windows 10 Pro, Enterprise, and Enterprise Long Term Servicing Branch (LTSB) editions.
+-   Retail Modern POS is supported only on Windows 10 Pro, Enterprise, and Enterprise Long Term Servicing Branch (LTSB) editions and must have, at minimum, the Anniversary update (Version 14393) installed.
+-   Retail Modern POS, and other Retail components, is not recommended on Windows 10 Pro, which does not allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
@@ -110,6 +111,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
     -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
     -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    -   Retail hardware station, and other Retail components, is not recommended on Windows 10 Pro, which does not allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
@@ -125,8 +127,13 @@ The computer must meet all system requirements for installing and using the foll
 -   Retail Store Scale Unit is supported on the following operating systems:
 
     -   Windows 7 Professional, Enterprise, and Ultimate editions
+    
+        > [!NOTE]
+        > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
+    
     -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
     -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    -   Retail hardware station, and other Retail components, is not recommended on Windows 10 Pro, which does not allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
