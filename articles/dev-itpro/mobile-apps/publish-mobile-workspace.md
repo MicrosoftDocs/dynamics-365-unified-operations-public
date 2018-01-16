@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: SysAppDesignerPane
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
+ms.search.scope:  Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154

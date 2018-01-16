@@ -5,7 +5,7 @@ title: Intercompany expenses
 description: A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization. In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+# ms.search.form: TrvParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer:  twheeloc

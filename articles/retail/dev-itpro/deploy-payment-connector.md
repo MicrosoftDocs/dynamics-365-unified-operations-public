@@ -5,7 +5,7 @@ title: Deploy a payment connector
 description: This topic describes how to deploy a payment connector package to the appropriate components. 
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -76,6 +76,7 @@ A deployable package is an asset that can be consumed by the LCS deployment serv
 2.  In the **More tools** section, click **Asset library**.
 3.  Select **Software package**, and then click the plus sign (**+**).
 4.  Enter a name and description, and select the correct package type, as described in the following table.
+
     | Deployable package      | Deployable package type in LCS |
     |-------------------------|--------------------------------|
     | AOSPaymentPackage       | Binary hotfix                  |

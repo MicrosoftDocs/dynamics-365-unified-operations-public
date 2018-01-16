@@ -93,8 +93,8 @@ You must configure the app on the device to connect to the Finance and Operatio
 1.  In the app, go to **Connection settings**.
 2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Enter the following information: 
-    + **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". 
-    + **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client ID** - The client ID is obtained in step 9 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client secret** - The client secret is obtained in step 11 in "Create a web service application in Active Directory". 
     + **Azure Active directory resource** - The Azure AD directory resource depicts the Finance and Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
     + **Azure Active directory tenant** - The Azure AD directory tenant used with the Finance and Operations server: https://login.windows.net/your-AD-tenant-ID. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
     <br>**Note**: Do not end this field with a forward slash character (/). 

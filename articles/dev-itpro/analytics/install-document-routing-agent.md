@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: SysCorpNetPrinterList
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108

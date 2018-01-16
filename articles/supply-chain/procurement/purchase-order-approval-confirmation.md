@@ -17,7 +17,7 @@ ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 
 
 ms.search.scope: Core, Operations, Retail

@@ -5,7 +5,7 @@ title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: LedgerConsolidate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13151
