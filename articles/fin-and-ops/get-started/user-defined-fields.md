@@ -36,6 +36,11 @@ ms.dyn365.ops.version: Platform update 13
 
 While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
 
+This video shows how easy it is to add a custom field to a page.
+
+
+> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+
 ## Creating custom fields
 After you’ve identified additional information that you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.   
 
