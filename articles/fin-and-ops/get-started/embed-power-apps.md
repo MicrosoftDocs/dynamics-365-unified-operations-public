@@ -53,12 +53,21 @@ Follow the instructions below to embed a PowerApp into the Finance and Operation
    - Click **Options** then select **Personalize this form**. Under the **Insert** menu, choose **PowerApp**. Finally, select the region where you would like to add a PowerApp. If you want to embed the PowerApp under the PowerApps menu button, choose the Action Pane. If you want to embed the PowerApp directly onto the page, choose the appropriate pivot tab, fast tab, vertical tab, or panorama section.   
    - If the PowerApp will be accessed via the PowerApps menu button, you can alternatively click the **PowerApps** menu button in the standard Action Pane and then select **Insert a PowerApp**.  
 3. Configure the embedded PowerApp
-   - **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
-   - **App ID** is the GUID for the PowerApp you want to embed. To retrieve this value, find the PowerApp on web.powerapps.com, its Details, and find the App ID field.  
-   - For **Input data for the PowerApp**, you can optionally select the field that contains the data you want to pass to the PowerApp as input. See the section on Building a PowerApp that leverages data from Finance and Operations for details on how the PowerApp can access the data sent from Finance and Operations.  
+   - The **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
+   - **App ID** is the GUID for the PowerApp you want to embed. To retrieve this value, find the PowerApp on web.powerapps.com and then locate the App ID field under Details.  
+   - For **Input data for the PowerApp**, you can optionally select the field that contains the data you want to pass to the PowerApp as input. We currently support selecting  See the section on Building a PowerApp that leverages data from Finance and Operations for details on how the PowerApp can access the data sent from Finance and Operations.  
    - Choose the **Application size** that matches the type of PowerApp you are embedding. Select **Thin** for PowerApps built for mobile devices, and **Wide** for PowerApps built for tablets. This ensures a sufficient amount of space is allotted for the embedded PowerApp.
    - The **Legal entities** fast tab provides the ability to choose which legal entities the PowerApp is available for. The default is to show the PowerApp in all legal entities.  
-4. After confirming the configuration is correct, click **Insert** to embed the PowerApp on the page. A message will appear prompting you to refresh the browser in order to see the embedded PowerApp.  
+4. After confirming the configuration is correct, click **Insert** to embed the PowerApp on the page. A message will appear prompting you to refresh the browser in order to see the embedded PowerApp. 
+
+## Sharing an embedded PowerApp
+After you have embedded a PowerApp on a page and confirmed it is working correctly with any data context passed from the page, you may want to share this embedded PowerApp with other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
+
+- The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users. 
+
+- Alternatively, you can export your page's personalizations, send them to one or more users, and have each of those users import those changes. The Manage option on the personalization toolbar enables you to export and import personalizations.
+
+See Personalize the user experience for more details the personalization capabilities in the product and how to use them.
 
 ## Building a PowerApp that leverages data sent from Finance and Operations
 An important part of building a PowerApp that will be embedded in Finance and Operations is utilizing the input data from Finance and Operations. Inside the PowerApp, that input data can be accessed via the Param("EntityId") variable.  
@@ -68,9 +77,8 @@ As an example, in the OnStart function of the PowerApp, you could set the input 
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, "")); 
 
 ## Viewing an embedded PowerApp
+In order to view an embedded PowerApp on a page in Finance and Operations, simply navigate to a page with an embedded PowerApp. Recall that PowerApps may be accessed through the PowerApps button in the standard Action Panem, or may appear directly on the form as a fast tab, pivot tab, vertical tab, or panorama section. When a user first attempts to load a PowerApp on a form, he or she will be prompted to sign in to PowerApps to ensure the user has the approrpiate permissions to use the PowerApp.   
 
-   
-   
 ## Editing an embedded PowerApp
 After a PowerApp has been embedded onto a page in the system, you may need to make some changes to the configuration of that PowerApp. For example, perhaps you want to modify the label associated with the embedded PowerApp or you or your organization have created a new version of a PowerApp, and you need to update the App ID to point at the latest PowerApp. 
 
@@ -85,11 +93,23 @@ Once a PowerApp has been embedded onto a page in the system, there are two ways 
 1. Navigate to the **Edit a PowerApp** dialog using the instructions from the [Editing an embedded PowerApp]. After confirming the dialog is showing information for the embedded PowerApp you would like to remove, simply click the **Delete** button. 
 2. Since an embedded PowerApp is saved as personalization data, clearing your page's personalization will also remove any embedded PowerApps on that form. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options** and then click **Personalize this form**. Under the **Manage** menu, select the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See Personalization the user experience for more information about how to optimize pages in Finance and Operations using personalization.  
 
-## Sharing an embedded PowerApp
-After you have embedded a PowerApp on a page and confirmed it is working correctly with any data context passed from the form, you may want to share this embedded PowerApp with other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
+## Appendix 
+### Developer control over where a PowerApp can be embedded
 
-- The recommended route is through the system administrator, who has the ability to push a personalization to all users or a subset of users. 
+[ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
+public final class ClassTest_Extension
+{
+    public static boolean isPowerAppPresonalizationEnabled(str formName)
+    {
+        var result = next isPowerAppPresonalizationEnabled(formName);
+        return true;
+    }
 
-- Alternatively, you can export your changes (called personalizations), send them to one or more users, and have each of those users import your changes. The Manage option on the personalization toolbar enables you to export and import personalizations.
+    public static boolean isPowerAppTabPresonalizationEnabled(str formName)
+    {
+        var result = next isPowerAppTabPresonalizationEnabled(formName);
+        return true;
+    }
 
-See Personalize the user experience for more details on how to use .
+}
+
