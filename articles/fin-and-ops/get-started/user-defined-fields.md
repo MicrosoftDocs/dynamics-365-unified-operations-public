@@ -38,6 +38,7 @@ While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition prov
 
 This video shows how easy it is to add a custom field to a page.
 
+
 > [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
 
 ## Creating custom fields
