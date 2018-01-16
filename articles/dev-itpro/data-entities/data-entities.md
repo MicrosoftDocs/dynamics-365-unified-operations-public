@@ -115,12 +115,12 @@ Entities are categorized based on their functions and the type of data that the
 
 -   Functional or behavioral parameters.
 -   Required to set up a deployment or a module for a specific build or customer.
--   Can include data that is specific to an industry or business. The data can also apply to broader set of customers.
+-   Can include data that is specific to an industry or business. The data can also apply to a broader set of customers.
 -   Tables that contain only one record, where the columns are values for settings. Examples of such tables exist for Account payable (AP), General ledger (GL), client performance options, workflows, and so on.
 
 ### Reference
 
--   Simple reference data, of small quantity, that is required to operate a business process.
+-   Simple reference data, of small quantity, which is required to operate a business process.
 -   Data that is specific to an industry or a business process.
 -   Examples include units, dimensions, and tax codes.
 
