@@ -95,19 +95,26 @@ Once a PowerApp has been embedded onto a page in the system, there are two ways 
 
 ## Appendix 
 ### Developer control over where a PowerApp can be embedded
+By default, users can embed PowerApps on any page, either under the PowerApps menu button or directly on the page as a fast tab, pivot tab, vertical tab, or panorama section. However, if required, developers can also configure this feature to only allow embedding of PowerApps on certain pages by implementing the following methods: 
+- isPowerAppPersonalizationEnabled: If this method returns false for a specific page, then the PowerApps menu button will not be shown, and users will not be able to embed PowerApps anywhere on this page, including as a tab.  
+- isPowerAppTabPersonalizationEnabled: If this method returns false for a specific page, then users will not be able to embed PowerApps directly on the page as a fast tab, pivot tab, vertical tab, or panorama section. Users will still be able to embed PowerApps through the PowerApps menu button if embedding is allowed on the form.  
 
-[ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
+Below is an example you can follow that shows a new class with the two methods needed to configure where PowerApps can be embedded.  
+
+\[ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
+
 public final class ClassTest_Extension
 {
-    public static boolean isPowerAppPresonalizationEnabled(str formName)
+
+    public static boolean isPowerAppPresonalizationEnabled(str pageName)
     {
-        var result = next isPowerAppPresonalizationEnabled(formName);
+        var result = next isPowerAppPresonalizationEnabled(pageName);
         return true;
     }
 
-    public static boolean isPowerAppTabPresonalizationEnabled(str formName)
+    public static boolean isPowerAppTabPresonalizationEnabled(str pageName)   
     {
-        var result = next isPowerAppTabPresonalizationEnabled(formName);
+        var result = next isPowerAppTabPresonalizationEnabled(pageName);
         return true;
     }
 
