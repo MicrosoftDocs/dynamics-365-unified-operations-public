@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
+ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
