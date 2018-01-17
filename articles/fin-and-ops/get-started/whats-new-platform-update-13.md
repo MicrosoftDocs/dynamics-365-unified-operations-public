@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13. This version was released in January 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/04/2018
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,6 +62,9 @@ Finance and Operations has ISO 27108 certification. 
 financial data is secure and protected. Finance and Operations has achieved
 SOC-1/Type-2 and SOC-2/Type-2 certification.
 
+## Ability to color grid rows without overlayering via FormDataSource OnDisplayOptionInitialize event
+The ability to color grid rows without overlayering is now possible via the OnDisplayOptionInitialize event on FormDataSource.
+
 Accessibility support for controls and forms developed using the cloud platform 
 --------------------------------------------------------------------------------
 
@@ -72,6 +75,15 @@ Microsoft’s Accessibility Standards. With additional support for performing
 tasks via the keyboard, there is richer integration with screen readers, high
 contrast theming and full label support, and applications built using the cloud
 platform which provide additional opportunities for users with disabilities.
+
+## Changed how extension and overlayering options are presented in Visual Studio
+In this release we have adjusted how the extension and overlayering options are presented in Visual Studio. The extension options are now shown first and the overlayering option has changed from "Customize" to "Overlayer" to be more explicit.
+Extensions should be used whenever possible. 
+
+The customization options are now shown in the recommended order of use:
+1.	Create extension
+2.	Create extension in new project
+3.	Overlayer
 
 Move master data from one environment to another using the Excel add-in 
 ------------------------------------------------------------------------
@@ -109,4 +121,57 @@ specific firewall rules in your on-premises network to enable your users to
 access Dynamics 365 for Finance and Operations, Enterprise edition. This service
 will publish the IP addresses to your service environment so that an
 administrator can define a custom firewall on your on-premises network.
+
+## Support for display and edit methods on form data sources using augmentation classes (ExtensionOf)
+
+The following examples use Display/Edit methods on augmented classes for tables and forms.
+
+#### Class extension for a form
+
+```
+[ExtensionOf(formstr(abForm))]
+public final class abClassForm_Extension
+{
+    private Name previousName;
+    private Counter noOfChanges;
+
+    public display Name formExt_Display()
+    {
+        return previousName;
+    }
+
+    public edit Name formExt_Edit(boolean _set, Name _value)
+    {
+        if (_set)
+        {
+            noOfChanges++;
+            previousName = strFmt("%1 %2", _value, noOfChanges);
+        }
+
+        return previousName;
+    }
+}
+  ``` 
+#### Class extension for a table
+  ``` 
+[ExtensionOf(tablestr(abTable))]
+public final class abClassTable_Extension
+{
+    public display Name tableExt_Display()
+    {
+        return "tableExt_Display " + this.FirstName + " " + this.LastName;
+    }
+
+    public edit Name tableExt_Edit(boolean _set, Name _value)
+    {
+        if (_set)
+        {
+            this.FirstName = "tableExt_Edit " +_value;
+        }
+
+        return this.FirstName;
+    }
+}
+  ``` 
+The form or form extension can then consume the display and edit methods from a form control by providing the `<ClassName>.<MethodName>` in the DataMethod property.
 

@@ -31,12 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 # Configuration steps for Retail developers working on cloud-hosted development environment with no administrator access
 
+
 As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. This restriction only applies to new deployments of Platform update 12 (or newer) environments. Environments that were deployed before this update, and  have been updated to Platform update 12, will still have administrator access.
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. This blog post contains more information about how to access these VMs: 
 https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/
 
 Retail developers do not have administrative access to cloud-hosted development virtual machines. Modern POS (MPOS) development is possible if you use Cloud POS. Before starting development on any Retail application, configure Cloud POS as follows:
+
 
 1. Open Visual Studio and click **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Retail websites deployed. You should see the IIS tray icon in the task bar with all the Retail websites running, such as Cloud POS and Retail Server.
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
@@ -53,7 +55,9 @@ Retail developers do not have administrative access to cloud-hosted development 
     4. Copy the **applicationhost.config** file from the folder that you renamed in step *ii*, to the folder created in step *iii*. 
 
 ## Install the Developer topology prerequisites
-Cloud-hosted development environments do not include Typescript version 2.2.2 by default, and the default Windows host file does not contain the Cloud POS URL to use for local debugging. The **Developer topology prerequisites** package installs Typescript 2.2.2 and updates the Windows host file with your Cloud POS URL. Deploying the package will take few minutes. 
+
+Cloud-hosted development environments do not include Typescript version 2.2.2 by default, and the default Windows host file does not contain the Cloud POS URL to use for local debugging. The **Developer topology prerequisites** package installs Typescript 2.2.2 and updates the Windows host file with your Cloud POS URL. Deploying the package will take a few minutes. 
+
 
 To install the Developer topology prerequisites:
 

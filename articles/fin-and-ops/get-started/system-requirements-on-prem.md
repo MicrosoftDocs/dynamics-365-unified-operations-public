@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -98,7 +98,7 @@ SQL Server must have a high-availability HADRON setup that has at least two node
 
 The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.
 
-[![Recommended number of nodes for the Service Fabric cluster](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png) 
+[![Recommended number of nodes for the Service Fabric cluster](./media/Minimum-infrastructure-Jan2017.png)](./media/Minimum-infrastructure-Jan2017.png) 
 
 ## Processor and RAM requirements
 The following tables list the number of processors and the amount of random-access memory (RAM) that are required for each role that is required in order to run this deployment option. For more information, see the recommended minimum requirements for a Service Fabric standalone cluster in [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
@@ -186,7 +186,7 @@ The following tables list the number of processors and the amount of random-acce
 </tbody>
 </table>
 
-\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).
+\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). Separate SQL Server machines for sandbox and production environments must be used.
 
 ## Storage
 
