@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailFunctionalityProfile, 
+ms.search.form: RetailFunctionalityProfile 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
