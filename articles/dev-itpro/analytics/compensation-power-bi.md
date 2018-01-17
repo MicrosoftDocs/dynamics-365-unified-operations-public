@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  HcmCompensationWorkspace
+ms.search.form:  HcmCompensationWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

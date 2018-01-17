@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +26,7 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Retail Version
+ms.dyn365.ops.version: Retail July 2017 update
 
 ---
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  BankTreasurerWorkspace
+ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc

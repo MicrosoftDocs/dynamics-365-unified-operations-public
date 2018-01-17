@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysSecConfiguration
+ms.search.form: SysSecConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Security architecture
-
 [!include[banner](../includes/banner.md)]
 
 
@@ -67,4 +66,4 @@ Additionally, the Table Permissions Framework helps protect some data. Data secu
 ## Auditing
 Auditing of user sign in and sign out is now enabled in Finance and Operations. The system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
-A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration **>** Inquiries **>** User log**).
+A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).

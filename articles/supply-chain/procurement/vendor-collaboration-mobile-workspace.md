@@ -25,7 +25,7 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

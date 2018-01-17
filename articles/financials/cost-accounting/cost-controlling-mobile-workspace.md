@@ -25,7 +25,7 @@ ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 # ms.search.industry: 
 ms.author: aevengir
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

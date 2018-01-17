@@ -23,6 +23,7 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
+ms.search.scope: Operations
 # ms.search.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28

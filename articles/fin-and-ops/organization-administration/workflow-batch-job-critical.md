@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  BatchJob
+ms.search.form:  BatchJob
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

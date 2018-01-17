@@ -22,7 +22,7 @@ ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 273023
 ms.search.region: Belgium
-ms.search.industry: All
+# ms.search.industry: 
 ms.author: v-oloski
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysCustomFieldManageFields
+ms.search.form: SysCustomFieldManageFields
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: sericks
@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include[banner](../includes/banner.md)] 
 
-> [!Note]
-> This feature is supported in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 or later.
+[!include[banner](../includes/pre-release.md)] 
 
 While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
 

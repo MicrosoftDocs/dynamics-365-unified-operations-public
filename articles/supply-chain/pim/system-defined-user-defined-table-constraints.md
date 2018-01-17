@@ -17,7 +17,7 @@ ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSys
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19781

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -23,7 +23,7 @@ ms.search.scope: Retail, Operations
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31]
+ms.search.validfrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
 ---
 

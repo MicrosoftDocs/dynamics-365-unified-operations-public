@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: BankStatementFormat
+ms.search.form: BankStatementFormat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: PrintMgmtSetupUIMain
+ms.search.form: PrintMgmtSetupUIMain
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 

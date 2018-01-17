@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
+ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
