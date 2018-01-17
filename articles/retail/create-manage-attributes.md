@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: EcoResAttributeType, EcoResAttribute
+ms.search.form: EcoResAttributeType, EcoResAttribute
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
