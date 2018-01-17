@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> This topic contains information about a pre-release feature that is currently available only in a targeted release. For more information about targeted releases, see [Targeted releases](..fin-and-ops/get-started/targeted-releases.md).
+> This feature is part of a targeted release and is available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). This feature will be included in another upcoming general availability release.
