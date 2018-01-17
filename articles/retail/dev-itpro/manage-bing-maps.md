@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailSharedParameters
+ms.search.form: RetailSharedParameters
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

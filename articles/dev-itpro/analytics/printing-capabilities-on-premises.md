@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  SysCorpNetPrinterList
+ms.search.form:  SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

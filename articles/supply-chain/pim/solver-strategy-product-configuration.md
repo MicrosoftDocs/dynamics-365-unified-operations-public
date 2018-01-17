@@ -16,7 +16,7 @@ ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelLi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 

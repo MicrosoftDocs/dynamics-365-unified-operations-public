@@ -124,7 +124,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 13</td>
 <td>7.0.4764</td>
-<td>January 2018 (Released to public preview only)</td>
+<td>January 2018 (This is a targeted release available only to users who have opted in to the Cuntinuous Auto-update Advantage Program (CAAP).)</td>
 <td><a href="whats-new-platform-update-13.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 (January 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>

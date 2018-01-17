@@ -49,4 +49,4 @@ You may also find the Tables report of interest--it lists each table, and its ta
 
 
 ## See also
-[Data entities home page](data-entities.md).
+[Data entities home page](data-entities.md)

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  VendPaymentWorkspace
+ms.search.form:  VendPaymentWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc

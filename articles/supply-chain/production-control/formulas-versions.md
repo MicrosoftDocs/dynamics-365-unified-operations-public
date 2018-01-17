@@ -17,7 +17,7 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: YuyuScheller
+# ms.reviewer: yuyus
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 

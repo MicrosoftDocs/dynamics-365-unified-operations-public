@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysAppDesignerPane
+ms.search.form: SysAppDesignerPane
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -25,7 +25,7 @@ ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: Platform update 4
+ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 
 ---

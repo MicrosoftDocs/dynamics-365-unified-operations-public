@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysSecRolesEditUsers, SysSecConfiguration
+ms.search.form: SysSecRolesEditUsers, SysSecConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
