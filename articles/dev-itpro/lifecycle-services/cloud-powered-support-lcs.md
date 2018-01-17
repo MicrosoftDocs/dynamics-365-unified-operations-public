@@ -62,7 +62,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
  - If applicable, enter an error message. 
  - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
- > [!Note]
+ > [!NOTE]
  > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
  
  > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
