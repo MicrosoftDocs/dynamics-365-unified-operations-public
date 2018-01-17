@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: CostingVersion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 #  Restrictions on costing versions for standard costs
 
 [!include[banner](../includes/banner.md)]
-
-# Restrictions on costing versions for standard costs
 
 This topic describes the restrictions that apply to a costing version for standard costs. 
 
