@@ -76,13 +76,10 @@
 ### [Audit policy violations and cases](../financials/general-ledger/audit-policy-violations-cases.md)
 
 ## Cost management
-### Power BI content pack
-#### [Cost management content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 ### Predetermined cost
 #### [Costing sheet](../supply-chain/cost-management/costing-sheets.md)
 #### [Costing version](../supply-chain/cost-management/costing-versions.md)
 #### [Simulate cost change by using a costing version for planned cost](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
-
 ### Inventory costing
 #### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 #### [Cost object](../supply-chain/cost-management/cost-object.md)
@@ -108,6 +105,14 @@
 #### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
 #### [BOM calculation group](../supply-chain/cost-management/bom-calculation-groups.md)
+#### BOM calculations using costing sheet (Play the task guides in sequence)
+##### [Create a finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-finished-product-2016-02.md)
+##### [Create a semi-finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md)
+##### [Create raw materials (February 2016 only)](../supply-chain/cost-management/tasks/create-raw-materials-2016-02.md)
+##### [Create BOMs (February 2016 only)](../supply-chain/cost-management/tasks/create-boms-2016-02.md)
+##### [Create routes (February 2016 only)](../supply-chain/cost-management/tasks/create-routes-2016-02.md)
+##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
+##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
 #### [Common sources of production variance](../supply-chain/cost-management/common-sources-of-production-variances.md)
 #### [Cost category used in production routing](../supply-chain/cost-management/cost-categories-used-production-routings.md)
 #### [Cost category used in Production control and Project management accounting](../supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting.md)
@@ -120,22 +125,18 @@
 #### [Set up a product that can be produced or procured](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Total cost allocation method](../supply-chain/cost-management/methodology-total-cost-allocation.md)
 ### Standard cost
-#### [BOM calculations with standard cost](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
-#### [Manage standard cost update](../supply-chain/cost-management/manage-standard-cost-updates.md)
-#### [Prerequisite for a standard cost conversion](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
+#### [Prerequisites for standard costs](../supply-chain/cost-management/prerequisites-standard-costs.md)
 #### [Standard cost conversion overview](../supply-chain/cost-management/standard-cost-conversion-overview.md)
+#### [Prerequisite for a standard cost conversion](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
+#### [Manage standard cost update](../supply-chain/cost-management/manage-standard-cost-updates.md)
+#### [Restrictions on costing versions for standard costs](../supply-chain/cost-management/restrictions-costing-versions-standard-costs.md)
+#### [BOM calculations with standard cost](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
 #### [Update standard cost in a manufacturing environment](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
 #### [Update standard cost for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
 #### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
-### Cost management tasks
-#### BOM calculations using costing sheet (task guides in sequence for the white paper)
-##### [Create a finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-finished-product-2016-02.md)
-##### [Create a semi-finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md)
-##### [Create raw materials (February 2016 only)](../supply-chain/cost-management/tasks/create-raw-materials-2016-02.md)
-##### [Create BOMs (February 2016 only)](../supply-chain/cost-management/tasks/create-boms-2016-02.md)
-##### [Create routes (February 2016 only)](../supply-chain/cost-management/tasks/create-routes-2016-02.md)
-##### [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
-##### [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
+#### [Prepare to maintain standard costs for manufactured items](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
+### Power BI content pack
+#### [Cost management content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Data integration
 ### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
