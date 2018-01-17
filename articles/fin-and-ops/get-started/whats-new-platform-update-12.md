@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -123,3 +123,6 @@ advantage of the intelligent document queue management.
 version of the Document Routing Agent onto local print servers hosted on the
 corporate domain, [Install the Document Routing Agent to enable network printer
 devices](../../dev-itpro/analytics/install-document-routing-agent.md).
+
+## Table extension - PreviewPartRef property
+This release includes the ability to change the value of the **PreviewPartRef** property via a table extension. This feature provides an enhanced preview to existing fields, such as an enhanced preview for TMSRoute.
