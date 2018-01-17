@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailChannelReport, SysOperationTemplateForm, RetailChannelManagementWorkspace
+ms.search.form: RetailChannelReport, SysOperationTemplateForm, RetailChannelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
