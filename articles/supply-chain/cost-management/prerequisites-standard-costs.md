@@ -55,13 +55,15 @@ Before you define the item posting rules, use the **Transaction combinations** p
 
 **4. Define inventory parameters that are related to standard costs.** 
 
--  Use the **Bills of materials** tab on the **Inventory parameters** page to define two cost control parameters that are related to standard costs. In the **Cost breakdown** field, select **None** or **Sub ledger**. If you select **Sub ledger**, the cost breakdown is an *active* cost breakdown. An active cost breakdown is critical for calculating, retaining, and viewing cost group segmentation across a multilevel product structure for standard cost items. When the cost breakdown is active, you can report and analyze inventory, work in process (WIP), and cost of goods sold (COGS) per cost group in a single-level, multilevel, or total format. When the cost breakdown is active, if you activate a manufactured item's cost, the cost group segmentation will be stored in the item's cost record. 
+-  Use the **Bills of materials** tab on the **Inventory parameters** page to define two cost control parameters that are related to standard costs. 
 
-If you select **None**, cost group segmentation won't be maintained for standard cost items. In other words, a manufactured item's standard cost will be calculated and maintained as a single amount, without cost group segmentation. The cost contributions of manufactured components will be aggregated into the single amount.
+-    In the **Cost breakdown** field, select **None** or **Sub ledger**. If you select **Sub ledger**, the cost breakdown is an *active* cost breakdown. An active cost breakdown is critical for calculating, retaining, and viewing cost group segmentation across a multilevel product structure for standard cost items. When the cost breakdown is active, you can report and analyze inventory, work in process (WIP), and cost of goods sold (COGS) per cost group in a single-level, multilevel, or total format. When the cost breakdown is active, if you activate a manufactured item's cost, the cost group segmentation will be stored in the item's cost record. 
+
+-    If you select **None**, cost group segmentation won't be maintained for standard cost items. In other words, a manufactured item's standard cost will be calculated and maintained as a single amount, without cost group segmentation. The cost contributions of manufactured components will be aggregated into the single amount.
 
 -  In the **Variances to standard** field, select **Summarized** or **Per cost group**. If you select **Per cost group**, you can identify purchase price variances and production variances by cost group. You can also identify the four types of production variances: the lot size, quantity, price, and substitution variances. If you select **Summarized**, you can't identify variances by cost group, and you can't identify the four types of production variances. You can just view a summarized production variance.
 
-The policy about variance to standard works independently of the cost breakdown policy. In other words, you can select a cost breakdown policy of **None** and select variances per cost group, so that production variances by cost group will still be captured.
+-  The policy about variance to standard works independently of the cost breakdown policy. In other words, you can select a cost breakdown policy of **None** and select variances per cost group, so that production variances by cost group will still be captured.
 
 **5. Create costing versions for standard costs.** 
 
