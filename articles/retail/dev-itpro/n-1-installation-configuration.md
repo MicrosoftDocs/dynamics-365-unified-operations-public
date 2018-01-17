@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
+ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: CustFreeInvoice
+ms.search.form: CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

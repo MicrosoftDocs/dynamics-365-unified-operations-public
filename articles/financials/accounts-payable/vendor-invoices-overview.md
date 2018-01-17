@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

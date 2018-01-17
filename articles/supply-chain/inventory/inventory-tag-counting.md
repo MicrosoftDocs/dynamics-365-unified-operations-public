@@ -17,7 +17,7 @@ ms.search.form: InventJournalCount, InventJournalCountTag
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom: 11594

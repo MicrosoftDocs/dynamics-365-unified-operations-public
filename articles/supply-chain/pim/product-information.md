@@ -17,7 +17,7 @@ ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResPro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 
 ms.search.scope: Core, Operations, Retail
 

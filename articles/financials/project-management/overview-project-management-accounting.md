@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ProjTable
+ms.search.form: ProjTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

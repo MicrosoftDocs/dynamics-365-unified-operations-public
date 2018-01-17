@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: BIMeasurementDeployManagementEntityStore
+ms.search.form: BIMeasurementDeployManagementEntityStore
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 

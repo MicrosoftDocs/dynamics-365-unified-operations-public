@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: LedgerJournalTable
+ms.search.form: LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

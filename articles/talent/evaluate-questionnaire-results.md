@@ -24,7 +24,7 @@ ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr75
+ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
