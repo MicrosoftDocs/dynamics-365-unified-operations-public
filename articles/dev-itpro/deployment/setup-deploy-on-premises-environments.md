@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,12 @@ ms.dyn365.ops.version: Platform update 8
 # Set up and deploy on-premises environments
 
 [!include[banner](../includes/banner.md)]
+
+> [!Note]
+> The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
+
+> If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
+
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
