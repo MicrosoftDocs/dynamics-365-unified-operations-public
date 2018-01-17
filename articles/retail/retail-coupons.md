@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: RetailCoupon
+
+ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
