@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysCustomFieldManageFields
+ms.search.form: SysCustomFieldManageFields
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: sericks

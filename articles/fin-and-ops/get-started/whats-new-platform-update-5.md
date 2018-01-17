@@ -25,7 +25,7 @@ ms.assetid: 025acbbf-7c05-407c-bed2-cde1935e11c9
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.dyn365.ops.intro: Platform update 5
+ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
 
 ---

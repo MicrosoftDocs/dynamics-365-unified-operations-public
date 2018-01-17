@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  TAMVendRebateAgreement
+ms.search.form:  TAMVendRebateAgreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis

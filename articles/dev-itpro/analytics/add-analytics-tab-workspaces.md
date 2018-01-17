@@ -25,7 +25,6 @@ ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update 
 ---
 

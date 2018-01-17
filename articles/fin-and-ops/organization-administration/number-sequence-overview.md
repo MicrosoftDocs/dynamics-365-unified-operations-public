@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: NumberSequenceTableListPage
+ms.search.form: NumberSequenceTableListPage
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 

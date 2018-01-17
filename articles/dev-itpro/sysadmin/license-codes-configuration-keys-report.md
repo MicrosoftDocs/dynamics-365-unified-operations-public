@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysConfiguration
+ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 

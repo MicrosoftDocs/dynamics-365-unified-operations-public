@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: BudgetPlanSetLayout
+ms.search.form: BudgetPlanSetLayout
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
