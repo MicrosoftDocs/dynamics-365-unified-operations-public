@@ -36,18 +36,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting Inventory accounting and Manufacturing accounting.
 
-You can define cost policies in the following areas. 
+You can define cost policies in the following areas: 
 -  Predetermined cost	 
 -  Inventory accounting
 -  Manufacturing accounting
 -  Indirect cost accounting
 -  Ledger integration
 
-For example, you can define which inventory valuation methods, for example, **FIFO**, **Weighted average**, **Standard cost**, or **Moving average** you want to apply to products in **Item model group** in Inventory accounting.
+For example, you can define which inventory valuation methods, such as **FIFO**, **Weighted average**, **Standard cost**, or **Moving average** that you want to apply to products in the **Item model group** in Inventory accounting.
 
 You can use Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, KPIs, and detection of deviation. 
 
-Manufacturing accounting lets you handle **Job order costing** in production order and batch order and backflush costing in lean manufacturing.
+Manufacturing accounting lets you handle **Job order costing** in production orders and batch orders, as well as backflush costing in lean manufacturing.
 
 ### Additional resources
 
