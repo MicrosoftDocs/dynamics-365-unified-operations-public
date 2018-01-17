@@ -52,15 +52,15 @@ Policies that are assigned to manufactured items can affect the cost calculation
 
    The item's BOM calculation group defines warning conditions that apply. In that way, when a BOM calculation is done, warning messages can be generated about possible sources of calculation errors. For example, a warning message can identify when an active BOM or route doesn't exist. The BOM calculation group contains a stop explosion policy that indicates when a manufactured item should be treated as a purchased item.
 
-6.  If the manufactured item has constant costs, assign a standard order quantity to it. 
+6. If the manufactured item has constant costs, assign a standard order quantity to it. 
 
    The standard order quantity is an accounting lot size for amortizing constant costs. Examples of constant costs include setup times in routing operations and a constant component quantity in the BOM.
 
-7.  Define the BOM for the manufactured item. 
+7. Define the BOM for the manufactured item. 
 
    One or more BOM versions can be defined for the manufactured item. Verify that the versions that you want have been marked as approved and active, and that they have the effective dates that you want. The BOM version can be company-wide or site-specific.
 
-8.  Define the routing for the manufactured item. 
+8. Define the routing for the manufactured item. 
 
    One or more route versions can be defined for the manufactured item. Verify that the versions that you want have been marked as approved and active, and that they have the effective dates that you want. The route version must be site-specific.
 
