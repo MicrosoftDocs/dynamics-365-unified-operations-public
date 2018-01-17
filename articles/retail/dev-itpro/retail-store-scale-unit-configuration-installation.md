@@ -225,7 +225,7 @@ The last steps require validation and verification that the Azure application ID
 >         - Retail Store Scale Unit Retail Server for Cloud POS
 >     - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Retail Store Scale Unit installation (for example, RetailStoreScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
 >     - The application ID (client ID) of the manually created web application has been added to the **Azure Active Directory applications** page in Retail, as explained in step 1 of the preceding procedure.
->     - The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the **Identity providers** FastTab, as explained in steps 3 and 4 of the preceding procedure.
+>     - The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the previous section "Run the Retail Store Scale Unit installer".
 
 ### Multiple-computer installation
 
