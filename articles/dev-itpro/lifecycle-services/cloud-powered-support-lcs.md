@@ -149,6 +149,6 @@ This feature is available to:
 
 ![done](media/outage6.jpg)
 
-> [!Note] If you don't see your situation listed in the outage scenarios, enter a support incident through LCS.  If, during the initial investigation by a Microsoft support engineer, it is found the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA based on your current support plan.
+> [!Note] If you don't see your situation listed in the outage scenarios, enter a support incident through LCS. If, during the initial investigation by a Microsoft support engineer, it is found the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA based on your current support plan.
 
 
