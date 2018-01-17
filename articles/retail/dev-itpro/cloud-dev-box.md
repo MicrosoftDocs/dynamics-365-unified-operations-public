@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration steps for Retail developers working on cloud-hosted development machines
+title: Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
@@ -29,10 +29,10 @@ ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
-# Configuration steps for Retail developers working on cloud-hosted development environment with no administrator access
+# Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
 
 
-As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. This restriction only applies to new deployments of Platform update 12 (or newer) environments. Environments that were deployed before this update, and  have been updated to Platform update 12, will still have administrator access.
+As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running in Microsoft subscriptions. This restriction only applies to new deployments of Platform update 12 (or newer) environments. Environments that were deployed before this update, and  have been updated to Platform update 12, will still have administrator access.
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. This blog post contains more information about how to access these VMs: 
 https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/
