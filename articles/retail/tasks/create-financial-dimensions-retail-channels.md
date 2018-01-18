@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

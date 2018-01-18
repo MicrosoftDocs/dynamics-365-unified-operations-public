@@ -16,12 +16,12 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
+ms.reviewer: sericks
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
+ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Retail July 2017 update 
