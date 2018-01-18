@@ -17,7 +17,7 @@ ms.search.form:  SysSecConfiguration, SrsReportViewerForm, SysOperationTemplateF
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations, Core
+ms.search.scope:  Core, Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 

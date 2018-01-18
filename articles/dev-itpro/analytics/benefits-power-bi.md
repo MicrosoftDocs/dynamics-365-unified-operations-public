@@ -17,7 +17,7 @@ ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent, Core
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

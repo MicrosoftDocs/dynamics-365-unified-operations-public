@@ -18,12 +18,12 @@ ms.technology:
 audience: Developer
 ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Retail, Retail
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: retailms.author: ivanvms.search.validFrom: 2017-10-02
+ms.search.industry: retailms.author: ivanvms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
 
 ---

@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
