@@ -114,10 +114,12 @@ The following tables list the number of processors and the amount of random-acce
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|             | SQL Server database |  8  | 32 |
 | Sandbox    | AOS, Data management, Batch   | 4                           | 24                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|                 | SQL Server database | 8  | 32|
 
 **Minimum sizing estimates for production and sandbox deployments\***
 
@@ -133,7 +135,7 @@ The following tables list the number of processors and the amount of random-acce
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator                  | 3                   |
 |                                                 | SQL Server database |   1    |
-| *Summary for production and sandbox topologies* |                               | *16*                |
+| *Summary for production and sandbox topologies* |                               | *19*                |
 
 \* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.
 
