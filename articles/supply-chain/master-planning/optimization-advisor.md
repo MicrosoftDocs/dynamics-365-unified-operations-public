@@ -79,3 +79,6 @@ protected List evaluate()
     return results; 
 } 
 ```
+
+The method above is looping over companies and selecting RFQ Cases with empty titles, in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
+
