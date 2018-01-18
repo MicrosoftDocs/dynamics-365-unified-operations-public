@@ -57,7 +57,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 6. In the **Type** field, leave the default value (**Channel database**) selected.
 7. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
 
-     The data sync interval determines how frequently the data will synchronize between the channel database (Retail Store Scale Unit) and the environment SQL Azure database (headquarters).  When no value is entered, the default installed value in the Retail Store Scale Unit will be used, which is 15 minutes.
+     The data sync interval determines how frequently the data will synchronize between the channel database (Retail Store Scale Unit) and the environment SQL Azure database (headquarters).  When no value is entered, the default installed value in the Retail Store Scale Unit will be used, which is three minutes.
 
 8. On the **Retail channel** FastTab, select **Add**, and then, in the **Channel** field, select the appropriate Retail store channel. Repeat this step to add all the channels that use this database.
 
