@@ -105,3 +105,27 @@ private container findRFQCasesWithEmptyTitle()
 Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**. The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.
 
 The title returned by **opportunityTitle** appears under the **Optimization opportunity** column on the **Optimization advisor** workspace. It also appears as header of the side pane showing more information on the opportunity. By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments: 
+
+* **Diagnostic area** – an enum of type **DiagnosticArea** describing what area of the application the rule belongs to (e.g. **DiagnosticArea::SCM**) 
+
+* **Rule name** – a string with the rule name; it will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**) 
+
+* **Run frequency** – an enum of type **DiagnosticRunFrequency** describing how often the rule should be run (e.g. **DiagnosticRunFrequency::Daily**). 
+
+* **Rule description** – a string with a more detailed description of the rule; it will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**) 
+
+> [!NOTE]
+> The attribute is required for the rule to work. It is conventionally used on opportunityTitle, but it can decorate any method of the class.
+
+Below is an example implementation. Raw strings are used for simplicity, but a correct implementation requires labels. 
+
+```
+[DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
+                             'Assign titles to Request for Quotation cases', 
+                             DiagnosticsRunFrequency::Daily,  
+                             'This rule detects Requests for Quotation with empty titles.')] 
+public str opportunityTitle() 
+{ 
+    return 'Assign titles to Request for Quotation cases'; 
+} 
+```
