@@ -17,7 +17,7 @@ ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Retail, Core
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway

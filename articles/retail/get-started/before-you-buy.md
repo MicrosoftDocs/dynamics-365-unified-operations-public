@@ -21,7 +21,7 @@ ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
+ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Retail July 2017 update 

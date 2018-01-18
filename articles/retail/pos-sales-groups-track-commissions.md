@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa

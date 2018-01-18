@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Retail, Retail
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.search.region: Global
