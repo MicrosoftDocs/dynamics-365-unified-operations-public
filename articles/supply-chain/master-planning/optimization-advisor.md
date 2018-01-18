@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Writing Rules for the Optimization Advisor
+# Writing rules for the Optimization advisor
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,5 +45,37 @@ To write a new rule for the **Optimization Advisor**, add a new class that exten
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
 … 
+} 
+```
+
+The **SelfHealingRule** abstract class has some abstract methods that must be implemented in inheriting classes. The core is the **evaluate** method, which returns a List of the opportunities detected by the rule. Opportunities can be per legal entity or can apply to the whole system.
+
+```
+protected List evaluate() 
+{ 
+    List results = new List(Types::Record); 
+    
+    DataArea dataArea; 
+
+    while select id from dataArea 
+        where !dataArea.isVirtual 
+    { 
+        changecompany(dataArea.id) 
+        { 
+            container result = this.findRFQCasesWithEmptyTitle(); 
+
+            if (conLen(result) > 0) 
+            { 
+                SelfHealingOpportunity opportunity = this.getOpportunityForCompany(dataArea.Id); 
+                opportunity.EvaluationState = SelfHealingEvaluationState::Evaluated; 
+                opportunity.Data = result; 
+                opportunity.OpportunityDate = DateTimeUtil::utcNow(); 
+                
+                results.addEnd(opportunity); 
+            } 
+        } 
+    } 
+    
+    return results; 
 } 
 ```
