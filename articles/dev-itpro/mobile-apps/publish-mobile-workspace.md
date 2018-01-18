@@ -18,7 +18,7 @@ ms.search.form: SysAppDesignerPane
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations, Core
+ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154

@@ -18,7 +18,7 @@ ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
