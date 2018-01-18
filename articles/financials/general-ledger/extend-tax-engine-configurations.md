@@ -427,7 +427,7 @@ Per the Microsoft-provided configuration, the tax rate for the BCD is determined
 To support this scenario, you must complete the following tasks:
 1. [Create extension configurations](#create-extension-configurations)
 2. [Add a reference model for country/region of origin](#add-a-reference-model-for-countryregion-of-origin)
-3. [Complete data mapping for the reference model](#complete-data-mapping-for-the-extended-taxable-document)
+3. [Complete data mapping for the reference model](#complete-data-mapping-for-the-reference-model)
 4. [Link the reference model to field in taxable document](#link-the-reference-model-to-a-field-in-the-taxable-document)
 5. [Change the lookup of the BCD tax rate](#change-the-lookup-of-the-bcd-tax-rate)
 6. [Complete the tax document configuration](#complete-the-tax-document-configuration)
