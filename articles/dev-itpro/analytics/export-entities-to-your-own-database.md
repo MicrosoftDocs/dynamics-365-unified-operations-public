@@ -3,9 +3,9 @@
 
 title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
-author: MilindaV2
+author: SunilGarg
 manager: AnnBe
-ms.date: 10/16/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,19 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope:  Operations 
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: 
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: milindav
+# ms.search.industry:
+ms.author: sunilg
 ms.search.validFrom: 2016-08-30 
-ms.dyn365.ops.version: Platform update 2 
+ms.dyn365.ops.version: Platform update 2
+
 ---
 
 # Bring your own database
@@ -38,7 +39,7 @@ The BYOD feature lets administrators configure their own database, and then expo
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
 - Export either all the records (*full push*) or only the records that have changed (*incremental push*).
-- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable recurring exports.
+- Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
 ## Entity store or BYOD?
@@ -48,13 +49,13 @@ If you followed the series of [blog posts about Microsoft Power BI integration](
 However, the BYOD feature is recommended for the following scenarios:
 
 - You must export data from Finance and Operations into your own data warehouse.
-- You use analytical tools besides Power BI, and those tools require T-SQL access to data.
+- You use analytical tools other than Power BI, and those tools require T-SQL access to data.
 - You must perform batch integration with other systems.
 
 > [!NOTE]
 > Finance and Operations doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
 
-As a customer of Finance and Operations, you can use either Entity store or BYOD. The ready-made operational reports that are available take advantage of embedded Power BI and Entity store. You should use ready-made operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
+As a customer of Finance and Operations, you can use either Entity store or BYOD. The default operational reports that are available take advantage of embedded Power BI and Entity store. We recommend that you use our default operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
 
 ## Creating a SQL database
 
@@ -81,11 +82,13 @@ If you're using the BYOD feature for integration with a business intelligence (B
 4. Select **Validate**, and make sure that the connection is successful.
 
     - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create a SQL premium database.
-    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
+    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework. 
 
-    When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
+For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync from Finance and Operations is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the Finance and Operations instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync from Finance and Operations has been completed, and then hydrate the downstream reporting systems .
 
-    ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
+
+   ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
@@ -155,15 +158,11 @@ If you select to do an incremental push, whenever a new record is inserted, or a
 
 Full push truncates the table and inserts all the records from the selected entity.
 
-You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a recurring basis by selecting the **Create recurring data job** option.
+You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
 ### Known limitations
 
-In Platform update 8, the BYOD feature has several known limitations.
-
-#### Incremental push doesn't propagate records that have been deleted in the source
-
-If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database. If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.
+The BYOD feature has the following limitations.
 
 #### Export data projects are specific to a single legal entity
 

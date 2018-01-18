@@ -5,7 +5,7 @@ title: Sales and profitability performance Power BI content
 description: This topic describes what's included in the Sales and profitability performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SalesProfitabilityPerformancePowerBI 
+ms.search.form: SalesProfitabilityPerformancePowerBI 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -54,7 +54,7 @@ Profitability can be analyzed in these ways:
 -   Customer profitability (by revenue versus gross margin)
 
 ## Accessing the Power BI content
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), the **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
+The **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
 
 ## Metrics that are included in the Power BI content
 The **Sales and profitability performance** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content.
@@ -81,15 +81,6 @@ The **Sales and profitability performance** Power BI content includes a report t
 
 \* Revenue this and last year, and growth by sales category.
 
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
-
-You can find the **Sales and profitability performance** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Sales and profitability performance** content that applies to the version of Dynamics 365 that you're using.
-
-> [!NOTE]
-> If you're using Microsoft Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## Understanding the data model and entities
 The following data is used to fill the report in the **Sales and profitability performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 

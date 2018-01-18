@@ -17,14 +17,14 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Retail
+ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2017-10-15
-ms.dyn365.ops.version: App update 4
+ms.dyn365.ops.version: Application update 4
 ---
 # Deployment guidelines for cash registers for Norway
 

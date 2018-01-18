@@ -5,7 +5,8 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/04/2017
+ms.date: 12/19/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,7 +79,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 
     - **File** – Your external integration will push individual files so that they can be processed via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     - **Data package** – You can push only data package files for processing. A data package is a new format that lets you submit multiple data files as a single unit that can be used in integration jobs.
-
+    - **Process messages in order** – You can enable this option to force sequential processing of incoming files in an import scenario. This option is only applicable to files and not data packages.
+    
 5. Select **Set processing recurrence**, and then, in the **Define recurrence** dialog box, set up a valid recurrence for your data job. 
 6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence. 
 
@@ -106,6 +108,7 @@ Make an HTTP POST call against the following URL.
     https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
 
 In the message body, you can the pass the data as a memory stream.
+
 
 **Example**
 
@@ -138,6 +141,34 @@ Use the following API.
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
     
+### API for getting message status
+The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
+
+**Example**
+
+```
+    POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
+    BODY
+    {
+    "messageId":"<string>"
+    }
+```
+    
+The following table lists the possible status values.
+
+| Value              | Meaning                                                                              |
+|----------------------|--------------------------------------------------------------------------------------|
+| Enqueued             | The file has been successfully enqueued to blob storage                              |
+| Dequeued             | The file has been successfully dequeued from blob storage                            |
+| Acked                | The exported file has been acknowledged to be downloaded by the external application |
+| Preprocessing        | The import/export operation is pre-processing the request                            |
+| Processing           | The import/export operation is in process                                            |
+| Processed            | The import/export operation completed successfully                                   |
+| PreProcessingError   | The import/export operation failed in the pre-processing stage                       |
+| ProcessedWithErrors  | The import/export operation completed with errors                                    |
+| PostProcessingFailed | the import/export operation failed during post-processing                            |
+
+    
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
@@ -163,6 +194,10 @@ Your implementation might include runs of recurring jobs where files or packages
 
 The **Total records exported** column shows the total count of records that were exported. A value of **0** (zero) indicates that no records were exported to the file or included in the package. 
 
-The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank. 
+The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank.
+
+### Http vs Https
+The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in Finance and Operations environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from Finance and Operations.
+
 
 ![Batch job status](./media/show-batch-status.png)

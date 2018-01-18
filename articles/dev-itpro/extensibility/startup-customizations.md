@@ -25,7 +25,7 @@ ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rbadawy
+ms.author: robadawy
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 

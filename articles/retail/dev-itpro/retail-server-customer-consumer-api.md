@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Retail
+ms.search.scope: Operations, Retail, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 84383
 ms.assetid: c60de19f-06e5-4e57-8956-7fd17c460e52

@@ -5,7 +5,7 @@ title: Invoice approvals mobile workspace
 description: This topic provides information about the Invoice approvals mobile workspace. This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process. 
 author: abruer 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,7 +53,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) must be deployed in your organization.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition must be deployed in your organization.</td>
 <td>System administrator</td>
 <td>See <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.
 </td>

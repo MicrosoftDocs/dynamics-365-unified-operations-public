@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: B2B Invitation Configuration
+ms.search.form: B2BInvitationConfiguration
 # ROBOTS: 
 audience: developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, UnifiedOperations
+ms.search.scope: Operations, UnifiedOperations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

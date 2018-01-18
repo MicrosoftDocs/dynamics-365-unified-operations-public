@@ -8,16 +8,16 @@ manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  SysSecConfiguration, SrsReportViewerForm, SysOperationTemplateForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations Core
+ms.search.scope:  Operations, Core
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
