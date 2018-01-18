@@ -8,12 +8,12 @@ manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  RetailCategoryAndProductWorkspace, RetailCategory
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: josaw

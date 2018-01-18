@@ -8,7 +8,7 @@ manager:
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
-ms.service: Dynamics365Talent
+ms.service: dynamics-ax-talent
 ms.technology:
 
 # optional metadata
