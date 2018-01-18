@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
+> [!NOTE]
+> This topic assumes that you are familiar with [data entities](data-entities.md).
+
 ## Data import/export process
 Here are the steps to import or export data.
 
