@@ -5,7 +5,7 @@ title: Create an Electronic reporting configuration
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
