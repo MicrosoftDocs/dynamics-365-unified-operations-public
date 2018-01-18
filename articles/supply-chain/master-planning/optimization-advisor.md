@@ -129,3 +129,69 @@ public str opportunityTitle()
     return 'Assign titles to Request for Quotation cases'; 
 } 
 ```
+
+The description returned by **opportunityDetails** appears in the side pane showing more information about the opportunity. It takes a **SelfHealingOpportunity**, the **Data** field of which can be used to provide more details about the opportunity. In the example, the method returns the IDs of the RFQ cases with an empty title. 
+
+```
+public str opportunityDetails(SelfHealingOpportunity _opportunity) 
+{ 
+    str details = ''; 
+    container opportunityData = _opportunity.Data; 
+    int affectedRFQCasesCount = conLen(opportunityData); 
+
+    if (affectedRFQCasesCount != 0) 
+    { 
+        details = 'The following Request for Quotation cases have an empty title:\n'; 
+        for (int i = 1; i <= affectedRFQCasesCount ; i++) 
+        { 
+            PurchRFQCaseId rfqCaseId = conPeek(opportunityData, i); 
+            details += rfqCaseId + '\n'; 
+        } 
+    } 
+
+    return details; 
+}
+```
+
+The two remaining abstract methods to implement are **provideHealingAction** and **securityMenuItem**. 
+
+**provideHealingAction** returns true if a healing action is provided, otherwise, it returns false. If true is returned, the method **performAction** must be implemented, or an error will be thrown. The **performAction** method takes a **SelfHealingOpportunity** argument, whose data can be used for the action. In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction. 
+
+```
+public boolean providesHealingAction() 
+{ 
+    return true; 
+} 
+
+protected void performAction(SelfHealingOpportunity _opportunity) 
+{ 
+    new MenuFunction(menuItemDisplayStr(PurchRFQCaseTableListPage), MenuItemType::Display).run(); 
+} 
+```
+
+Depending on the specifics of the rule, it might be possible to take an automatic action using the opportunity data. In this example, the system could generate titles for RFQ Cases automatically. 
+
+**securityMenuItem** returns the name of an action menu item such that the rule is only visible to users that can access the action menu item. Security might require that specific rules and opportunities are accessible only to authorized users. In the example, only users with access to **PurchRFQCaseTitleAction** can see the opportunity. Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege. 
+
+```
+public MenuName securityMenuItem() 
+{ 
+    return menuItemActionStr(PurchRFQCaseTitleAction); 
+}
+```
+
+Once the rule has compiled, execute the following job to have it show up in the UI.
+
+```
+class ScanNewRulesJob 
+{         
+    public static void main(Args _args) 
+    {         
+        SysExtensionCache::clearAllScopes(); 
+        var controller = new DiagnosticsRuleController(); 
+        controller.runOperation(); 
+    } 
+} 
+```
+
+The rule will show up in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule (e.g. **Daily**) and click **OK**. Go to **System administration** > **Optimization advisor** to see the new opportunity. 
