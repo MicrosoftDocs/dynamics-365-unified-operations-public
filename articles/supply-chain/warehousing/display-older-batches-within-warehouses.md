@@ -17,7 +17,7 @@ ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global

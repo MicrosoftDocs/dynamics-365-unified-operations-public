@@ -17,7 +17,7 @@ ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
