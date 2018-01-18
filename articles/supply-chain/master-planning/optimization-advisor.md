@@ -82,3 +82,26 @@ protected List evaluate()
 
 The method above is looping over companies and selecting RFQ Cases with empty titles, in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
 
+Opportunities can also be cross company. In that case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
+
+Below is the code for **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.
+
+```
+private container findRFQCasesWithEmptyTitle() 
+{ 
+    container result; 
+
+    PurchRFQCaseTable rfqCase; 
+    while select RFQCaseId from rfqCase 
+        where rfqCase.Name == '' 
+    { 
+        result += rfqCase.RFQCaseId; 
+    } 
+    
+    return result; 
+} 
+```
+
+Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**. The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.
+
+The title returned by **opportunityTitle** appears under the **Optimization opportunity** column on the **Optimization advisor** workspace. It also appears as header of the side pane showing more information on the opportunity. By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments: 
