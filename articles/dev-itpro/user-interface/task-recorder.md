@@ -19,7 +19,7 @@ ms.search.form: SysTaskRecorderPane
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
