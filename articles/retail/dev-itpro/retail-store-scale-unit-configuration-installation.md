@@ -13,12 +13,12 @@ ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
-ms.search.form: SysAADClientTable, RetailCDXDataStore
+ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
