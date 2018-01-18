@@ -23,9 +23,10 @@ ms.search.scope: Operations, Retail
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.search.industry: retailms.author: ivanvms.search.validFrom: 2017-10-02
+ms.search.industry: retail
+ms.author: ivanv
+ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-
 ---
 
 # External gift card support
