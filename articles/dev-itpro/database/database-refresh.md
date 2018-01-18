@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
