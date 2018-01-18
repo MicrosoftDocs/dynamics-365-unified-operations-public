@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  RetailCategoryAndProductWorkspace, RetailCategory
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: josaw
+ms.reviewer: josaw
 ms.search.scope: Core, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 

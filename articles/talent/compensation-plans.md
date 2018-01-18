@@ -18,7 +18,7 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8

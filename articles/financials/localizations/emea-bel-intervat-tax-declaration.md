@@ -18,7 +18,7 @@ ms.search.form: TaxIntervat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273023
 ms.search.region: Belgium
