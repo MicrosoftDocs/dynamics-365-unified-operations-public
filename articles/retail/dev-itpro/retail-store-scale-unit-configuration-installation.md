@@ -13,7 +13,7 @@ ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysAADClientTable
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
