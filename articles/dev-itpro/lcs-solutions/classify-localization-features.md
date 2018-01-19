@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ERWorkspace
+# ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
