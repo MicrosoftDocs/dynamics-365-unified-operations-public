@@ -127,9 +127,9 @@ In some rare cases, you may decide that a custom field is no longer needed. When
 
 ## Appendix 
 ### Who can create custom fields?
-As a safeguard to the system, only system administrators are able to create custom fields by default. However, those power users whom the organization deems necessary can be given rights to create custom fields by a system administrator using the **Runtime customization power user** security role. Users without this security role will not be able to create custom fields, but will still be able to see and interact with custom fields added by others in the system.    
+As a safeguard to the system, only system administrators are able to create custom fields by default. However, those power users whom the organization deems necessary can be given rights to create custom fields by a system administrator using the **Runtime customization power user** security role. Users without this security role will not be able to create custom fields, but will still be able to see and interact with custom fields added by other users in the system.    
 
-### Tables that support custom fields
+### What tables support custom fields?
 For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.
 
 - The table must be tagged as one of these groups: 
