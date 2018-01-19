@@ -51,7 +51,7 @@ This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 ver
 ### Examples of commands for silent servicing
 This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
 
-#### Silently update the current installation of Modern POS
+#### Silently update the current installation of Retail Modern POS
 The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
 ```
@@ -84,32 +84,48 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 #### Configure user permission
 1. Use your Azure AD credentials to sign in to Retail headquarters.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.
-3. On the Action Pane, select **Mass deployment**.
-4. On the drop-down menu, select **Mass device update**.
-5. On the slide-out that appears from the right-hand side of the window, select the organization nodes that require permission (E.g. In demo data, Houston is a well configured store with many devices to test with) and use the arrow in the center of the slide-out panel that is facing to the right to take your selection from the lefthand **Available organization nodes** and move it to the righthand **Selected organization nodes**.  Repeat this process until all required nodes 
-5. On the drop-down menu, select **Configuration file**.
+3. On the lefthand side, select the appropriate group that requires the new permission (E.g. Manager).
+4. In the **Permissions** group, change the setting for **Allow mass activation** to **Yes**.
+5. On the Action Pane, select **Save**.
+6. On the drop-down menu, select **Configuration file**.
+7. Use the menu in the upper left to go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+8. On the lefthand side, select the **1060** job.
+9. On the Action Pane, select **Run now**.
+10. On the verification message that appears stating **Do you want to run job 1060**, select **Yes**.
 
 #### Configure device permission
 1. Use your Azure AD credentials to sign in to Retail headquarters.
 2. On the **Welcome** page, use the menu in the upper left to go to **Workspaces** &gt; **Channel deployment**.  This workspace can also be accessed directly on the homepage for users with permission.
 3. On the Action Pane, select **Mass deployment**.
 4. On the drop-down menu, select **Mass device update**.
-5. On the drop-down menu, select **Configuration file**.
+5. On the slide-out that appears from the right-hand side of the window, select the organization nodes that require permission (E.g. In demo data, Houston is a well configured store with many devices to test with) and use the arrow in the center of the slide-out panel that is facing to the right to take your selection from the lefthand **Available organization nodes** and move it to the righthand **Selected organization nodes**.  Repeat this process until all required nodes are shown on the righthand node list.
 
     > [!NOTE]
-    > To help guarantee that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    > To verify that permission has appropriately been set, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.  On this page, select any device that exists in the nodes configured above and verify that the permission **Allow mass activation** is currently set to **Yes**.
 
-6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
+6. Select **OK** at the bottom of the slide-out to complete device permission configuration.
+
+
+#### Download the configured devices
+1. Use your Azure AD credentials to sign in to Retail headquarters.
+2. On the **Welcome** page, use the menu in the upper left to go to **Workspaces** &gt; **Channel deployment**.  This workspace can also be accessed directly on the homepage for users with permission.
+3. On the Action Pane, select **Mass deployment**.
+4. On the drop-down menu, select **Mass download**.
+5. On the slide-out that appears from the right-hand side of the window, select the organization nodes that require permission (E.g. In demo data, Houston is a well configured store with many devices to test with) and use the arrow in the center of the slide-out panel that is facing to the right to take your selection from the lefthand **Available organization nodes** and move it to the righthand **Selected organization nodes**.  Repeat this process until all required nodes are shown on the righthand node list.
+6. Select **OK** at the bottom of the slide-out to complete and download the zipped configurations.
+
+    > [!NOTE]
+    > The system will generate and collect all of the configuration files and unique Retail Modern POS packages associated with the selected nodes and create a zipped folder to download. If the nodes listed contain a large amount of devices, the generation and collection can take some time to complete and show the download. 
+    > Further, a new file titled **RetailAssociationMap.xml** will be generated. This new file allows for easy consumption of configurations.  A configuration includes the name of the configuration file, the name of the installer, the name of the device (Also known as terminal), and the name of the register.
+    
+7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
      Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
-#### Download the configured devices
-
-
-### Examples of commands for silent servicing
+### Examples of commands for silent mass deployment
 This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
 
-#### Silently update the current installation of Modern POS
+#### Silently install Retail Modern POS
 The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
 ```
