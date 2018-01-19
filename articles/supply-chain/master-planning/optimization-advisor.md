@@ -1,11 +1,12 @@
 ---
+
 # required metadata
 
-title: Writing Rules for the Optimization Advisor
-description: This topic discusses how to add new rules to the Optimization Advisor. 
+title: Create rules for Optimization advisor
+description: This topic discusses how to add new rules to Optimization Advisor. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/03/2017
+ms.date: 01/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,17 +25,17 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: roxanadiaconu
-ms.dyn365.ops.intro: 7.3 
-ms.search.validFrom: 2017-12-31
+ms.author: roxanad
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 7.3 
 
 ---
 
-# Writing rules for the Optimization advisor
+# Create rules for Optimization advisor
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to write a new rule for the Optimization Advisor. To give an example, we will create a new rule that detects what Request for Quotations Cases (RFQ Cases) have an empty title. Having titles on cases makes them clearly identifiable and searchable. While quite simple, this example gives the opportunity to see what can be achieved with optimization rules. 
+This article explains how to create new rules for Optimization advisor. For example, you want to reate a new rule that identifies what Request for Quotations Cases (RFQ Cases) have an empty title. (Clarify the sentence!) Having titles on cases makes them clearly identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
 
 A rule is a check on application data. If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created. The opportunities can be acted upon and, optionally, the impact of the actions can be measured. 
 
