@@ -181,6 +181,8 @@ The following steps must be completed to set up the infrastructure for Finance a
 17. [Set up SSRS](#setupssrs)
 18. [Configure AD FS](#configureadfs)
 19. [Configure a connector and install an on-premises local agent](#configureconnector)
+20. [Deploy your Finance and Operations (on-premises) environment from LCS](#DeployFO")
+21. [Connect to your Finance and Operations (on-premises) environment](#ConnectToFO)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
@@ -789,7 +791,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.   
 
-## Connect to your Finance and Operations (on-premises) environment
+### <a name="ConnectToFO"></a> 21. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
 ## See also
