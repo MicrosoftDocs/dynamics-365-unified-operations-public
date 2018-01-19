@@ -137,7 +137,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP1 must be installed on the Power BI machines.
+- SQL Server 2016 SP1 must be installed on the BI machines.
 - SQL Server Reporting Services 2016 must be installed in **Native** mode on the BI machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
