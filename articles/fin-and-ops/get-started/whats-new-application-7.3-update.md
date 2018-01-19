@@ -241,6 +241,8 @@ With the current release, the advisor presents opportunities to optimize:
 
 -   Master data quality across BOMs, routes, and inventory management.
 
+To learn more about this feature, see the short video [Optimization advisor](https://youtu.be/MRsAzgFCUSQ).
+
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------
 
