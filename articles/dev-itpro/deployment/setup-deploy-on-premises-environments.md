@@ -86,7 +86,7 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 ## Infrastructure
 
-Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers. 
+Finance and Operations is designed to work on machines running Windows Server. 
 
  > [!WARNING]
  > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
