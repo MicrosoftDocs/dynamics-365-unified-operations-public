@@ -35,11 +35,11 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to create new rules for **Optimization advisor**. For example, you want to reate a new rule that identifies what Request for Quotations Cases (RFQ Cases) have an empty title. (Clarify the sentence!) Having titles on cases makes them clearly identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
+This article explains how to create new rules for **Optimization advisor**. For example, you want to reate a new rule that identifies that Request for Quotations Cases (RFQ Cases) have an empty title. Having titles on cases makes them clearly identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
 
 A rule is a check on application data. If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created. The opportunities can be acted upon and, optionally, the impact of the actions can be measured. 
 
-To create a new rule for the **Optimization Advisor** workspace, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute. (Clarify what is decorated by!) The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute. By convention, that is done on the **opportunityTitle** method, which will be discussed later. This new class can be added to a custom model with a dependency on the **SelfHealingRules** model. In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.
+To create a new rule for the **Optimization Advisor** workspace, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute. The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute. By convention, that is done on the **opportunityTitle** method, which will be discussed later. This new class can be added to a custom model with a dependency on the **SelfHealingRules** model. In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.
 
 ```
 [DiagnosticsRule] 
@@ -81,9 +81,9 @@ protected List evaluate()
 } 
 ```
 
-The method above is looping over (???) companies and selecting RFQ Cases with empty titles ???, in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
+The method above is looping over companies and selecting RFQ Cases with empty titles ???, in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
 
-Opportunities can also be across the company. In that case, the loop over companies ??? is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
+Opportunities can also be across the company. In that case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
 
 Below is the code for **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.
 
@@ -113,7 +113,7 @@ The title returned by **opportunityTitle** appears under the **Optimization oppo
 
 * **Run frequency** – an enum of type **DiagnosticRunFrequency** describing how often the rule should be run (e.g. **DiagnosticRunFrequency::Daily**). 
 
-* **Rule description** – a string with a more detailed description of the rule; it will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**) 
+* **Rule description** – a string with a more detailed description of the rule; it will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
 
 > [!NOTE]
 > The attribute is required for the rule to work. It is conventionally used on opportunityTitle, but it can decorate any method of the class.
