@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: ERWorkspace
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -59,5 +58,7 @@ The following table explains the components of the naming convention.
 
 For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder.md).
 
+## Additional resources
 
+- [Localization and regulatory features](country-region.md)
 
