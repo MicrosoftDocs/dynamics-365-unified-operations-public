@@ -779,7 +779,8 @@ You've now completed the setup of the infrastructure. The following sections des
 13. On the **Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, the page will resemble the following illustration.
 
     ![Validate the agent](./media/ValidateAgent.PNG)
-## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
+
+### <a name="DeployFO"></a> 20. Deploy your Finance and Operations (on-premises) environment from LCS
  
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**.
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
