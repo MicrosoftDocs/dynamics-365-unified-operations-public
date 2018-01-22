@@ -2,10 +2,10 @@
 # required metadata
 
 title: Accessibility features
-description: This topic describes the functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Windows Narrator.
+description: This topic describes the functionality that is designed to help users who have various disabilities use Dynamics 365 for Finance and Opertations, Enterprise edition, Dynamics 365 for Retail, and Dynamics 365 for Talent.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-This topic describes the functionality that is designed to help users who have various disabilities. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
+This topic describes the functionality that is designed to help users who have various disabilities use Dynamics 365 for Finance and Opertations, Enterprise edition, Dynamics 365 for Retail, and Dynamics 365 for Talent. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
