@@ -5,7 +5,7 @@ title: Buy Dynamics 365 for Finance and Operations, Enterprise edition (on-premi
 description: This topic explains how to purchase and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 author: maertenm 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -76,6 +76,6 @@ Access to the Provisioning guide can be found here:
 
 - [Provisioning guide on CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080)
 
-- [Provisioning guide on PartnerSource](https://go.microsoft.com/fwlink/?linkid=852081)
+- [Provisioning guide on PartnerSource](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy Finance and Operations (on-premises). For more details on getting started with your LCS project, see [Create an on-premises project in Lifecycle Services](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).

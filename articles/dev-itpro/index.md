@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](includes/banner.md)]
 
-Development and administration for Microsoft Dynamics 365 for Finance and Operations platform includes:
+Development and administration for Microsoft Dynamics 365 for Finance and Operations includes:
 
 - Administrator experience and Lifecycle Services
 - Developer experience
