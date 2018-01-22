@@ -130,6 +130,7 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
+- **DatabaseServiceObjective** - Specifies the performance level of the database. For example, use P2 when the database size is less than 100Gb, P4 when the database size is between 100 and 250 Gb, and P6 when the database is larger than 250 Gb.
 
 ### Run a script to update the Finance and Operations database
 
