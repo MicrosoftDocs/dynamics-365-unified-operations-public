@@ -101,10 +101,9 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 5. On the slide-out that appears from the right-hand side of the window, select the organization nodes that require permission (E.g. In demo data, Houston is a well configured store with many devices to test with) and use the arrow in the center of the slide-out panel that is facing to the right to take your selection from the lefthand **Available organization nodes** and move it to the righthand **Selected organization nodes**.  Repeat this process until all required nodes are shown on the righthand node list.
 
     > [!NOTE]
-    > To verify that permission has appropriately been set, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.  On this page, select any device that exists in the nodes configured above and verify that the permission **Allow mass activation** is currently set to **Yes**.
+    > To verify that permission has appropriately been set, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.  On this page, select any device that exists in the nodes configured above and verify that the permission **Allow mass activation** is currently set to **Yes**. As an alternative to the workflow explained in this sub-heading, each device can be manually set to **Yes** for this permission on the **Devices** page.
 
 6. Select **OK** at the bottom of the slide-out to complete device permission configuration.
-
 
 #### Download the configured devices
 1. Use your Azure AD credentials to sign in to Retail headquarters.
@@ -116,28 +115,70 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 
     > [!NOTE]
     > The system will generate and collect all of the configuration files and unique Retail Modern POS packages associated with the selected nodes and create a zipped folder to download. If the nodes listed contain a large amount of devices, the generation and collection can take some time to complete and show the download. 
-    > Further, a new file titled **RetailAssociationMap.xml** will be generated. This new file allows for easy consumption of configurations.  A configuration includes the name of the configuration file, the name of the installer, the name of the device (Also known as terminal), and the name of the register.
+    > Further, a new file titled **RetailAssociationMap.xml** will be generated. This new file allows for easy consumption of configurations.  A configuration includes the name of the configuration file, the name of the installer, the name of the device (Also known as terminal), and the name of the register.  This file will be discussed in more detail further in this article.
     
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
      Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
+#### How to proceed
+The zipped folder generated and downloaded include files that are a part of three buckets:
+1. The list of XML configuration files, including one file for each device that was selected to be downloaded.
+2. The list of one or more Retail Modern POS installation executables.  There will be one file for each unique instance of Retail Modern POS across all the devices that were selected to be downloaded.
+
+    > [!NOTE]
+    > As an example of this, assume there are ten devices downloaded.  One of these devices has been configured (Per the Devices page in headquarters) to utilize the customized version of Retail Modern POS titled **MPOS_V1.1.7.exe**.  The other nine devices have been configured to utilize the previous customized version of Retail Modern POS titled **MPOS_V1.1.6.exe**.  Despite there being ten devices, there are only two unique versions of the installer.  When downloading these ten devices, only two executable installers are downloaded (One for each of these two unique instances).
+
+3. The **RetailAssociationMap.xml** lists configurations.  A configuration is the association between a specific unique installer (See the previous line above) and it's associated configuration file, register, and device (Also known as terminal).  This XML file is generated to assist the users in pushing out the appropriate files to the appropriate systems and running the installer correctly.
+
+There are many ways to push data across an organization (to individual computers) and will not be discussed in this article.  The entire folder could be pushed to each machine, the XML could be parsed to push only the required files to each machine, or the files could even be accessed remotely and never pushed to each machine. However the files are utilized, the result is the same to finally run either a scheduled task or a PowerShell script to perform the silent installation of Retail Modern POS.
+
 ### Examples of commands for silent mass deployment
-This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
+This section shows examples regarding self-service mass deployment for Retail Modern POS. This includes Retail Modern POS with offline  and the installer without offline support.  Example PowerShell scripts will also be shown to assist users in performing the installations.
+
+#### Example PowerShell scripts
+The following basic script will list the configurations in the **RetailAssociationMap.xml** file:
+```
+$path = ".\RetailAssociationMap.xml"
+$Xpath = "/Configurations/Configuration"
+select-xml -path $Path -xPath $xpath | Select-Object -ExpandProperty Node
+```
+
+The following basic script will select a specific configuration (by filtering based upon a specific value) in the **RetailAssociationMap.xml** file.  Using this as a basis for a larger script would assist in pulling the specific XML configuration file and executable installer necessary to a particular computer:
+```
+$path = ".\RetailAssociationMap.xml"
+$Xpath = "/Configurations/Configuration[@Device='HOUSTON-3']"
+select-xml -path $Path -xPath $xpath | Select-Object -ExpandProperty Node
+```
+
+The last command can even be put into a variable to more easily access the values directly.  This concept will be utilized later.
 
 #### Silently install Retail Modern POS
-The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
+The following command silently updates the current installation of Modern POS. It has the standard command structure that is used for silent servicing of currently installed components. The structure uses the basic values of **InstallerName.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.  This command should not be used if multiple configuration files are available to select.
 
 ```
-ModernPOSSetup_V72.exe -S
+ModernPOSSetup_V73.exe -S
 ```
 
 > [!NOTE]
-> A configuration file is still required for Retail Store Scale Unit. However, the installer still keeps all possible values that are currently installed.
+> A configuration file is not required for Retail Modern POS. However, the installed Retail Modern POS application will not appropriately activate without the associated configuration file to read from.  
 
-#### Silently update the current installation of Retail Store Scale Unit
-The following command silently updates the current installation of Retail Store Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and installation steps. We recommend that you use this command only for testing and development purposes.
+#### Silently install Retail Modern POS with a specific configuration file
+The following command silently installs the current installation of Retail Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer or multiple configuration files may be available.
 
 ```
-StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
+ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
+```
+
+#### Bringing it all together
+When all of the above is used as starting points together, a basic script can be achieved to read through the **RetailAssociationMap.xml** file and select the correct device, then perform the installation.  This installation assumes that the configuration file and the installer are both in the same directory as the directory in which the PowerShell script is run from.
+
+```
+$path = ".\RetailAssociationMap.xml"
+$Xpath = "/Configurations/Configuration[@Device='HOUSTON-3']"
+$configuration = select-xml -path $Path -xPath $xpath | Select-Object -ExpandProperty Node
+$installer = '.\' + $configuration.Installer
+
+& $installer -S -C $configuration.File
+
 ```
