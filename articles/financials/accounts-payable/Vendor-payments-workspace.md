@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  VendPaymentWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: 
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 

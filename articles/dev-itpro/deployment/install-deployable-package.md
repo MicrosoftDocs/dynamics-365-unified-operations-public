@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
@@ -34,125 +34,187 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
+This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 
 > [!IMPORTANT]
-> This topic applies to only two topologies:
-- Local development environments (Downloadable virtual hard disk [VHD])
-- Multi-box dev/test environments in Microsoft Azure (Partner and trial projects)
-
-> For all other environments that are deployed through LCS, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in the topic, [Apply a deployable package on a system](apply-deployable-package-system.md).
+> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply a deployable package on a system](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]) and multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects). However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
 
 ## Key concepts
--   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
--   **AXUpdateInstaller**– A deployable package has the installer executable bundled in it. When the package is downloaded to a computer, the installer is available.
--   **Runbook**– The deployment runbook is a series of steps that is generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller provides the capability to run these steps one by one and in the correct sequence.
+- **Deployable package** – A deployable package is a unit of deployment that can be applied to any environment. It can consist of a binary hotfix to the runtime components of Application Object Server (AOS), an updated application package, or a new application package.
+- **AXUpdateInstaller** – AXUpdateInstaller is an executable program that is bundled in the deployable package. When the package is downloaded to a computer, the installer is available.
+- **Runbook** – The deployment runbook is a series of steps that is generated and used to apply the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller enables these steps to be run one at a time and in the correct order.
+
+## Install an application (AOT) deployable package on a development environment
+An AOT deployable package is a package that contains customizations and extensions to your application. If you want to use the command line just to install an AOT deployable package on a development or demo environment, follow the instructions in this section. You can then skip the rest of this topic.
+
+1. On the virtual machine (VM), download the zip file for the deployable package. Make sure that the zip file is stored in a non-user folder.
+
+    > [!NOTE]
+    > After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, select **Unblock** to unlock the files.
+
+2. Extract the files.
+3. Open a Command Prompt window, and go to the folder where you extracted the deployable package.
+4. Run the following command.
+
+    ```
+    AXUpdateInstaller.exe devinstall
+    ```
+
+    The **devinstall** option installs the AOT deployable package on the VM. As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 12, the **devinstall** option doesn't require that you be an administrator on the VM.
+    
+    > [!NOTE]
+    > This command doesn't run database synchronization. You must run database synchronization from Microsoft Visual Studio after you install the deployable package.
 
 ## Collect topology configuration data
-1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment** page.
-2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the **Environment** page.
-3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step. Also, make sure that the **zip** file is stored in a non-user folder
-4.  In the folder where the deployable package was extracted, find and open the file that is named DefaultTopologyData.xml. You must populate this file with the VM name and installed components.
-    -   To populate the VM name, follow these steps:
-        1.  Open Windows Explorer, right-click **This PC**, and then select **Properties**.
-        2.  In the system properties, find and make a note of the machine name (for example, AOS-950ed2c3e7b).
-        3.  In the DefaultTopologyData.xml file, replace the machine name with the name that you found in the previous step.
-    -   To populate the installed components, follow these steps:
-        1.  Open a Command Prompt window as an administrator.
-        2.  Navigate to the extracted folder, and run the following command to see a list of all the installed components on the computer.
+1. In LCS, on the **Environment** page, select the name of a VM. Establish a Remote Desktop connection to the VM by using the user name and password that are provided on the **Environment** page.
+2. On the VM, download the zip file for the deployable package from LCS. Make sure that the zip file is stored in a non-user folder.
 
-                AXUpdateInstaller.exe list
+    > [!NOTE]
+    > After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, select **Unblock** to unlock the files.
+    
+3. Extract the files.
+4. In the folder where you extracted the deployable package, find and open the file that is named **DefaultTopologyData.xml**. You must specify the VM name and the installed components in this file.
 
-        3.  Update the DefaultTopologyData.xml with the list of components.
+    - To specify the VM name, follow these steps:
 
-    When you've finished populating the VM name and installed components, the DefaultTopologyData.xml file should resemble the following illustration. ![defaulttopology](./media/defaulttopology.png)
-5.  Repeat steps 2 through 4 for each VM that is listed on the **Environment** page.
+        1. In File Explorer, right-click **This PC**, and then select **Properties**.
+        2. In the system properties, find and make a note of the computer name (for example, **AOS-950ed2c3e7b**).
+        3. In the DefaultTopologyData.xml file, replace the machine name with the computer name that you found in the previous step.
+
+    - To specify the installed components, follow these steps:
+
+        1. Open a Command Prompt window as an administrator.
+        2. Go to the extracted folder, and run the following command to see a list of all the components that are installed on the computer.
+
+            ```
+            AXUpdateInstaller.exe list
+            ```
+
+        3. Update the DefaultTopologyData.xml file with the list of components.
+
+    When you've finished specifying the VM name and the installed components, the DefaultTopologyData.xml file should resemble the following illustration.
+    
+    ![Topology configuration data](./media/defaulttopology.png)
+
+5. Repeat steps 1 through 4 for every other VM that is listed on the **Environment** page.
 
 ## Generate a runbook from the topology
 Based on the topology information in the DefaultTopologyData.xml file, you must generate the runbook file that will provide step-by-step instructions for updating each VM.
 
--   On any VM, run the following command to generate the runbook.
+- On any VM, run the following command to generate the runbook.
 
-        AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
+    ```
+    AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
+    ```
 
     Here is an explanation of the parameters that are used in this command:
 
-    -   **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package
-    -   **\[topologyFile\]**– The path of the DefaultTopologyData.xml file
-    -   **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file
-    -   **\[runbookFile\]**– The name of the runbook file to generate (for example, AOSRunbook.xml)
-
-### Example
-
-        AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
-
-The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details. [![runbook-steps](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
-
-## Install a deployable package
-1.  Based on the sequence of steps that is specified in the runbook, start with the first machine (VM) that is listed.
-2.  Follow these steps on each VM. For one-box environments like Development, Build, and Demo environments, there is only one VM.
-    1.  Import the runbook by running the following command.
-
-            AXUpdateInstaller.exe import -runbookfile=[runbookFile]
-
-        **Example**
-
-            AXUpdateInstaller.exe import -runbookfile="VAL200AA2BMEDIU-runbook.xml"
-
-    2.  Verify the runbook.
-
-            AXUpdateInstaller.exe list
-
-    3.  Execute the runbook.
-
-            AXUpdateInstaller.exe execute -runbookid=[runbookID]
-
-        **Example**
-
-            AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook"
-
-    4.  Export the runbook.
-
-            AXUpdateInstaller.exe export -runbookid=[runbookID] -runbookfile=[runbookFile]
-
-        **Example**
-
-            AXUpdateInstaller.exe export -runbookid="VAL200AA2BMEDIU-runbook" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
-
-3.  AXUpdateInstaller updates the runbook file after each step is run on a VM.
-4.  The runbook also logs information about each step.
-5.  For manual steps, follow the instructions, and then mark the step as completed in the runbook by using the AXUpdateInstaller.
-
-        AXUpdateInstaller.exe execute -runbookID=[runbookID] -setstepcomplete=[stepID]
+    - **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package.
+    - **\[topologyFile\]**– The path of the DefaultTopologyData.xml file.
+    - **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file.
+    - **\[runbookFile\]**– The name of the runbook file to generate (for example, **AOSRunbook.xml**).
 
     **Example**
 
-        AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=2
+    ```
+    AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
+    ```
 
-8.  If errors occur during any step, debug the script/instructions in the step, and update accordingly.
+The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details.
+
+[![Example of a runbook file](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
+
+## Install a deployable package
+1. On the first machine (VM) that is listed in the runbook file, follow these steps:
+
+    1. Import the runbook by running the following command.
+
+        ```
+        AXUpdateInstaller.exe import -runbookfile=[runbookFile]
+        ```
+
+        **Example**
+
+        ```
+        AXUpdateInstaller.exe import -runbookfile="VAL200AA2BMEDIU-runbook.xml"
+        ```
+
+    2. Verify the runbook.
+
+        ```
+        AXUpdateInstaller.exe list
+        ```
+
+    3. Run the runbook.
+
+        ```
+        AXUpdateInstaller.exe execute -runbookid=[runbookID]
+        ```
+
+        **Example**
+
+        ```
+        AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook"
+        ```
+
+        AXUpdateInstaller updates the runbook file after each step is run on a VM. The runbook also logs information about each step.
+
+        For manual steps, follow the instructions, and then run the following command to mark the step as completed in the runbook.
+
+        ```
+        AXUpdateInstaller.exe execute -runbookID=[runbookID] -setstepcomplete=[stepID]
+        ```
+
+        **Example**
+
+        ```
+        AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=2
+        ```
+
+        If errors occur during any step, debug the script or the instructions in the step, and update accordingly.
+
+    4. Export the runbook.
+
+        ```
+        AXUpdateInstaller.exe export -runbookid=[runbookID] -runbookfile=[runbookFile]
+        ```
+
+        **Example**
+
+        ```
+        AXUpdateInstaller.exe export -runbookid="VAL200AA2BMEDIU-runbook" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
+        ```
+
+2. Repeat step 1 on every other VM that is listed in the runbook file. For one-box environments, such as development, build, and demo environments, there is only one VM.
 
 ## Verify installation
-1.  Run the following command to verify that the new updates are installed.
+1. Run the following command to verify that the new updates are installed.
 
-        AXUpdateInstaller.exe list
+    ```
+    AXUpdateInstaller.exe list
+    ```
 
-2.  View the runbook to see the completed steps. [![image013](./media/image013-1024x978.png)](./media/image013.png)
+2. View the runbook to see the completed steps. Here is an example of a runbook file where the steps have been completed.
+
+    [![Example of completed steps in a runbook](./media/image013-1024x978.png)](./media/image013.png)
+
+## Backup the runbook file
+- After all the steps in the runbook are completed and you've exported the runbook, save the file outside the computer for future reference. For example, you might have to use the runbook file in these situations:
+
+    - You must analyze the downtime requirements for production, and so on.
+    - You must send the file to Microsoft because a deployable package can't be installed.
 
 ## Troubleshooting
--   After all the steps are completed, export the runbook, and save it outside the computer for future reference. For example, you might have to use the runbook file in these situations:
-    -   You must analyze the downtime requirements for production, and so on.
-    -   You must send the file to Microsoft in the event of failure to install a deployable package.
--   If any step fails, you can rerun it by running the following command.
+- If any step in the runbook fails, you can rerun it by running the following command.
 
-        AXUpdateInstaller.exe execute -runbookid=[runbookID] -rerunstep=[stepID]
+    ```
+    AXUpdateInstaller.exe execute -runbookid=[runbookID] -rerunstep=[stepID]
+    ```
 
--   To prevent version mismatch or downgrade, or installation of the same deployable package, run the following command.
+- To prevent version mismatch or downgrade, or installation of the same deployable package, run the following command.
 
-        AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
+    ```
+    AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
+    ```
 
--   To verify database synchronization, navigate to the aosservce\\scripts\\ folder and find the dbsync.error.txt file. Find the file, and look for any errors.
-
-
-
-
+- To verify database synchronization, in the **aosservce\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.

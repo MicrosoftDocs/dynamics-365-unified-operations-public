@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104173
 ms.search.region: Global
@@ -228,6 +228,7 @@ The following sections list resources by country/region.
 -   [VAT statements details](../../financials/localizations/emea-ita-vat-statements-details.md)
 -   [Competence date for transactions](../../financials/localizations/emea-ita-competence-date.md)
 -   [Manual depreciation of fixed assets](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
 -   [Packing slip date verification on invoices for Italy](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 -   [Italian sales tax books](../../financials/localizations/emea-ita-fiscal-books.md)
 -   [Split payment for invoices issued to the Public Administration](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)

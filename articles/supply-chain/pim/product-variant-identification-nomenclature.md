@@ -2,10 +2,10 @@
 # required metadata
 
 title: Nomenclature of product variant numbers and names
-description: This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format. The new nomenclature has a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also create a nomenclature for product names. Finally, you can build a nomenclature to identify configurations that are created by the constraint-based product configurator. These nomenclatures can contain attributes of your choice.
+description: This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220104
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
@@ -71,7 +71,7 @@ A T-shirt (TS1234) is produced in three sizes (S, M, L), four colors (Red, Green
 
 In this case, the product variant number for a red, small, polo T-shirt will be TS1234-Red-Small-Polo.
 
-## Nomenclature of constraintbased configurations
+## Nomenclature of constraint-based configurations
 For constraint-based configurations, you can create a dedicated nomenclature for the configuration product dimension. You can select the following segments on the **Product nomenclature** page:
 
 -   Number sequence value
@@ -95,7 +95,7 @@ You create a configuration nomenclature that has the following segments:
 
 In this case, the configuration ID for wood material that has a length of 78 will be WoodAAA78.
 
-## Nomenclature of dimensionbased configurations
+## Nomenclature of dimension-based configurations
 For dimension-based configurations, you can create a dedicated nomenclature for the configuration product dimension. You can select the following segments on the **Product nomenclature** page:
 
 -   Number sequence value

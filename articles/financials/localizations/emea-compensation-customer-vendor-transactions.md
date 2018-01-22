@@ -18,6 +18,7 @@ ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 #ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1691503

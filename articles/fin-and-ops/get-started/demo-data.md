@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56551
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
@@ -93,7 +93,7 @@ To view the Cash flow forecasting reports with data, you must first run the fore
 
 For demonstration purposes, you can add cash flow forecasting demo data using the **Generate data** page from the **Demo data** module. This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports. 
 
-The credit and collections analytics can be viewed on the **Manage customer credit and collections** workspace. The view the analytics you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
+The credit and collections analytics can be viewed on the **Manage customer credit and collections** workspace. To view the analytics you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
 
 The vendor payments analytics can be viewed on the **Vendor payments** workspace. To view the analytics, you need to refresh the VendPaymentBIMeasure aggregate measure on the **Entity Store** page.
 

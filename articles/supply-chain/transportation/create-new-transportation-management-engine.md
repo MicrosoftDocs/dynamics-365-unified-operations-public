@@ -3,7 +3,7 @@
 
 title: Create a new transportation management engine
 description: This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations. 
-author: twheeloc
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: bis
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vakarosa
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

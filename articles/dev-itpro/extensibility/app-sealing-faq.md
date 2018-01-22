@@ -18,14 +18,14 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: fdahl
-ms.search.validFrom: 2017-07/01
+ms.search.validfrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -37,7 +37,7 @@ CDX is a system that transfers data between Retail headquarters (Retail HQ) and 
 + Configure all the custom jobs and subjobs by using the configuration user interface (UI) for CDX.
 + Extend the Retail initialization class by using the extension points that are provided to support custom jobs and subjobs for both push and pull.
 
-The advantage of using the Retail initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail initialization by using the **Initialize** button on the **Retail parameters** page. Information about the custom job for the data synchronization is then automatically created in CDX.
+The advantage of using the Retail initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail CDX initialization by using the **Initialize retail scheduler** dialog box from **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
 There are various scenarios for data transfer between Retail HQ and the channel database:
 
@@ -124,7 +124,8 @@ If you created a new Retail HQ table and a new channel database table, follow th
 
     Whenever the Retail initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
 
-9. Run the Retail initialization by selecting the **Initialize** button on the **General** tab of the **Retail parameters** page.
+9. Navigate to **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**.
+10. Run the Retail CDX initialization by clicking the OK button on **Initialize retail scheduler** dialog.
 
 ## Pull data from a new channel database table to a new Retail HQ table by using a push job
 

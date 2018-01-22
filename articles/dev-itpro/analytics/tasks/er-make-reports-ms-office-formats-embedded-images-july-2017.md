@@ -44,7 +44,7 @@ In this example, you will use created ER configurations for sample company, ‘L
     * Run the format for testing purposes.  
 6. Select Yes in the Negotiable check format field.
 7. Click OK.
-    * Review the created output. Note that the company logo is presented in the report as well as the authorized person’s signature. The signature image is taken from the field of the ‘Container’ data type of the cheque layout record which is associated with the selected bank account.  
+    * Review the created output. Note that the company logo is presented in the report as well as the authorized person’s signature. The signature image is taken from the field of the ‘Container’ data type of the check layout record which is associated with the selected bank account.  
 8. Expand the Copies section.
 9. Click Edit.
 10. In the Watermark field, enter 'Print watermark as Void'.
@@ -59,14 +59,14 @@ In this example, you will use created ER configurations for sample company, ‘L
 17. Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.
 18. In the list, mark all rows.
 19. Click Print check copy.
-    * Run the format to re-print the selected cheques.  
-    * Review the created output. Note that the selected cheques have been re-printed. The company logo and labels are not printed out since they are presented on the pre-printed form.  
+    * Run the format to re-print the selected checks.  
+    * Review the created output. Note that the selected checks have been re-printed. The company logo and labels are not printed out since they are presented on the pre-printed form.  
 
 ## Modify the mapping of the imported data model
 1. Close the page.
 2. Close the page.
 3. Go to Organization administration > Electronic reporting > Configurations.
-4. In the tree, select 'Model for cheques'.
+4. In the tree, select 'Model for checks'.
 5. Click Designer.
 6. Click Map model to datasource.
 7. Click Designer.

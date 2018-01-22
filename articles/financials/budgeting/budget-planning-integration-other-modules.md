@@ -5,7 +5,7 @@ title: Budget planning integration with other modules
 description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BudgetPlanGenerate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
@@ -57,7 +57,7 @@ The basic elements of the periodic process are the same for all the processes.
 
 For each generation process, three actions are available:
 
--   **Create a new budget plan** creates a new plan that has the attributes that are selected in the **Target **section. These attributes don't have to be unique. Therefore, two plans can have the same name and other values.
+-   **Create a new budget plan** creates a new plan that has the attributes that are selected in the **Target** section. These attributes don't have to be unique. Therefore, two plans can have the same name and other values.
 -   **Replace the existing budget plan scenario** deletes all data in the target budget plan in the selected budget plan scenario and creates new lines that use the selected source data.
 -   **Update the existing budget plan scenario, and append new data** updates existing lines in the target plan that match the source lines and adds new lines for new data. The matching is based on the ledger account, date, budget class, and various other fields. For example, when you generate budget plans from forecast positions, the position number is an important field. All lines that have a position number that matches the source position number are replaced with the new lines from the source.
 

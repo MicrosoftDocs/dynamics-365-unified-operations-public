@@ -5,7 +5,7 @@ title: Benefits Power BI content
 description: This topic describes the Benefits Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, UnifiedOperations, Talent, Core
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -36,7 +36,7 @@ This topic describes the **Benefits** Microsoft Power BI content. It explains ho
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content
@@ -49,13 +49,6 @@ The reports that are included in the **Benefits** Power BI content have both cha
                                                                                              
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Extending the Power BI content
-By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Finance and Operations. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
-
-You can find the **Benefits** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
->[!NOTE]
->The .pbix files available in Lifecycle Services apply to Finance and Operations only.
 
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Benefits** Power BI content. This table shows the entities that the content was based on.
@@ -83,4 +76,4 @@ The following data is used to fill the reports in the **Benefits** Power BI cont
 | Employee Title           | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+

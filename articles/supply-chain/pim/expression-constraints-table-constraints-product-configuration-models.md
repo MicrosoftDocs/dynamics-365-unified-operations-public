@@ -17,8 +17,8 @@ ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6

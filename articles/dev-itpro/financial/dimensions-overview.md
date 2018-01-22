@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add dimensions to a Excel template
+title: Add dimensions to an Excel template
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: robinarh
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Add dimensions to a Excel template
+# Add dimensions to an Excel template
 
 [!include[banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ This topic shows how to modify DimensionCombinationEntity to enable the dimens
 Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio. 
 
 1. In Microsoft Visual Studio, click **Dynamics 365** > **Addins** > **Add financial dimensions for Odata**.
-2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer.** **Click **Apply**. 
+2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
 
     [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)
     

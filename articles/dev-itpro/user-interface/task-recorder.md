@@ -19,7 +19,7 @@ ms.search.form: SysTaskRecorderPane
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
@@ -352,7 +352,7 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the Task guide.
 
-## (PRE-RELEASE) Screenshot Extension setup
+## Screenshot Extension setup 
 
 ### Document generation setup (optional)
 

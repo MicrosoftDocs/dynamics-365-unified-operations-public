@@ -18,14 +18,14 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27831
 ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 ms.search.region: global
 # ms.search.industry: 
 ms.author: janeaug
-ms.search.validFrom: Feb-16
+ms.search.validfrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

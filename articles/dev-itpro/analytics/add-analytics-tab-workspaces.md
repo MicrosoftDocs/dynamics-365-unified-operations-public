@@ -18,14 +18,13 @@ ms.technology:
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update 
 ---
 

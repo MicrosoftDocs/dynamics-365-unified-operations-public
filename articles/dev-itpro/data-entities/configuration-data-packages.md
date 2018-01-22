@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configuration data packages
-description: This topic provides an overview of the configuration data packages that are available on Lifecycle Services.
+description: This topic provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: saraschi2
 manager: AnnBe
-ms.date: 06/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 8
 # Configuration data packages
 
 [!include[banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. If you are running a later release, refer to the topic [Copy configuration](copy-configuration.md). 
 
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
@@ -53,7 +56,7 @@ You can access configuration data packages from LCS. You can either apply them t
 4.  Select the configuration data package.
 5.  Click **Pick**.
 
-At this point, you can use the **Consume** function to apply the process data package to an LCS environment.
+At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
 
 You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace in Finance and Operations to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).
 

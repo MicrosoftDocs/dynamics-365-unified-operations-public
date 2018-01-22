@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform, UnifiedOperations, 
+ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2, 
+ms.dyn365.ops.version: Platform update 2 
 
 ---
 # Deploy a demo environment

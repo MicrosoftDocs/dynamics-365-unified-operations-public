@@ -5,7 +5,7 @@ title: Modify and run format to use Document Management files in format outputs 
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 10/31/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -98,5 +98,5 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
     * 000148  
 6. Click OK.
 7. Click OK.
-    * Review the generated output. Note,that in addition to the invoice message in XML format, a single file has been created for each attachment. The attachment files are populated with the zipped output in binary format.  
+    * Review the generated output. Note, in addition to the invoice message in XML format, a single file has been created for each attachment. The attachment files are populated with the zipped output in binary format.  
 

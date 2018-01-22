@@ -5,7 +5,7 @@ title: Align workforce skills with business needs
 description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 author: kherr75
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,7 +18,7 @@ ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
@@ -55,7 +55,7 @@ When you enter information about a job, you can specify the skills that a person
 You can enter target skills or actual skills for workers, applicants, or contacts. A target skill is a skill that a person plans to achieve. An actual skill is a skill that a person currently has.
 
 ## Skill mapping and Skill mapping profiles
-You can create a skill-mapping search to find a worker, applicant, or contact person who is qualified to perform a specific type of task. Skill-mapping searches look across skills, education, certificates, positions of trust and project experience and return a results that match the criteria entered.  For example, it might be useful to know which workers in your organization earned their CPA.
+You can create a skill-mapping search to find a worker, applicant, or contact person who is qualified to perform a specific type of task. Skill-mapping searches look across skills, education, certificates, positions of trust and project experience and return results that match the criteria entered.  For example, it might be useful to know which workers in your organization earned their CPA.
 
 Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.  For example, you could create a skill-mapping profile for an open position in your organization. By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.
 

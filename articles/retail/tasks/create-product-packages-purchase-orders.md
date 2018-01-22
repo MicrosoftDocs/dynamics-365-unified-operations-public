@@ -5,10 +5,10 @@ title: Create product packages for purchase orders
 description: This procedure walks through creating a product package and using it on a purchase order. 
 author: josaw1
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -56,7 +56,7 @@ This procedure walks through creating a product package and using it on a purcha
 20. Click Save.
 21. Close the page.
 
-## Add package to puchase order
+## Add package to purchase order
 1. Go to Accounts payable > Purchase orders > All purchase orders.
 2. Click New.
 3. In the Vendor account field, click the drop-down button to open the lookup.

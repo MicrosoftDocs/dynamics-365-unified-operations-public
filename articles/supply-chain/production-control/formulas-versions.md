@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +17,8 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -41,7 +41,7 @@ A formula consists of the ingredients and quantities that are required in order 
 ## Formulas and formula lines
 A formula consists of one or more formula lines that identify the ingredients or items that make up the formula. A formula line can contain Bill of materials (BOM) items, formula items, catch-weight items, purchased items, co-products, or by-products. Because many items are used in multiple products, an item can be used in more than one formula.
 
-An example of a formula is the formula for a chocolate chip cookie. The ingredients for this formula use multiple lines, such as flour, sugar, eggs, butter, and chocolate chips. The formula for the chocolate chip cookie contains ingredients that are likely used in other formulas. While you make the chocolate chip cookies, there might be leftovers, such as crumbs, or some of the cookies might be overbaked or underbaked. These items can be set up as co-products or by-products, depending on the production operations.
+An example of a formula is the formula for a chocolate chip cookie. The ingredients for this formula use multiple lines, such as flour, sugar, eggs, butter, and chocolate chips. The formula for the chocolate chip cookie contains ingredients that are likely used in other formulas. While you make the chocolate chip cookies, there might be leftovers, such as crumbs, or some of the cookies might be overbaked or undercooked. These items can be set up as co-products or by-products, depending on the production operations.
 
 When you create a formula line, you use the line type to indicate how the system should handle the line when you run master planning and produce batch orders. Each line type gives a different result. The following table describes the line types that you can select. 
 

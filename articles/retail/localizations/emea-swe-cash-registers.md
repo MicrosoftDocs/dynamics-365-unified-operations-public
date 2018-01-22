@@ -17,7 +17,7 @@ ms.search.form:  RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFor
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core, UnifiedOperations
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Sweden

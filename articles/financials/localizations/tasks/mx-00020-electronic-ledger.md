@@ -5,7 +5,7 @@ title: Produce Mexican electronic ledger accounting report version 1.1
 description: This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. 
 author: sndray
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -64,7 +64,7 @@ This task walks through all necessary steps to configure the generation of elect
 27. Close the page.
 28. Click the Configurations box.
 29. In the tree, select 'Electronic ledger accounting model MX'.
-30. In the tree, expand 'In the treem expand 'Electronic ledger accoutning model MX''.
+30. In the tree, expand 'In the tree expand 'Electronic ledger accounting model MX''.
     * You will be able to see the four (4) XML formats that you previously imported.  
 
 ## Configure general ledger parameters for electronic reporting mapping
@@ -73,7 +73,7 @@ This task walks through all necessary steps to configure the generation of elect
 3. In the list, select the Trial Balance XML format
 4. In the list, click the link in the selected row.
 5. In the Auxiliary ledger field, click the drop-down button to open the lookup.
-6. In the list, selecy the Auxiliary ledger XML format
+6. In the list, select the Auxiliary ledger XML format
 7. In the Ledger entries field, click the drop-down button to open the lookup.
 8. In the list, select the Journal XML format
 9. In the list, click the link in the selected row.
@@ -87,7 +87,7 @@ This task walks through all necessary steps to configure the generation of elect
 3. In the list, find and select the desired record.
 4. In the list, click the link in the selected row.
 5. In the Period field, enter a date.
-6. Check or uncheck the Trial Balance opcion
+6. Check or uncheck the Trial Balance option
     * This option generates the Chart of Account and Trial Balance XML files.  
 7. Select or clear the Ledger entries check box.
 8. Select or clear the Auxiliary ledger check box.

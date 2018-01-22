@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18391
 ms.assetid: f62f5636-4d63-473e-b326-277ea500c540
@@ -65,7 +65,7 @@ This section lists the procedures required to install and configure the Security
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.
     2.  At the Windows PowerShell command prompt, PS C:&gt;, type the following command, and then press ENTER.
 
-            Install-AXModel -File “C:Program Files (x86)MicrosoftSecurity DevelopmentToolSecurityDevelopmentTool.axmodel”
+            Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
 
         For more information, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
 

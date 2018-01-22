@@ -5,7 +5,7 @@ title: Export and import transactions for General ledger consolidation for Brazi
 description: You can transfer the general ledger transactions from the source company to the consolidated account in the consolidated company without consolidating the transactions.
 author: v-gonode
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  LedgerConsolidate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -39,7 +39,7 @@ You can transfer general ledger transactions from the source company to the cons
 9. In the **File name** field, type a value. 
 10. Click **OK**. 
 11. Change the company to the consolidation company.
-12. On the **Consolidate with import** page, enter a start date in the **From** field and enter a end date in the **To:** field. 
+12. On the **Consolidate with import** page, enter a start date in the **From** field and enter an end date in the **To:** field. 
 13. In the **Include actual amounts** field, select **Yes**. 
 14. Click the **Legal entities** tab, click **New**. 
 15. In the **Source legal entity** field, select a legal entity. 

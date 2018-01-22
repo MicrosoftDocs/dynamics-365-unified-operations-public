@@ -15,10 +15,10 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: IT Pro, developer
+audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa

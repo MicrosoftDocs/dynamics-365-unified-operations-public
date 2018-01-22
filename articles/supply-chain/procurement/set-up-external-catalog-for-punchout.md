@@ -5,7 +5,7 @@ title: Set up an external catalog for PunchOut eProcurement
 description: This topic describes the use of an  external catalog or punchout catalog to collect quote information from a vendor and add it to a requisition.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
@@ -51,7 +51,7 @@ When setting up the external catalog, you need to make sure that the purpose of 
 
 1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Register the vendor in Finance and Operations. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). 
-For information about how to assign vendor’s to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
+For information about how to assign vendors to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
 4. Configure the external vendor catalog by using the requirements for your vendor’s external catalog site. For more details about this task, see [Configure the external vendor catalog](#configure-the-external-vendor-catalog).
 5. Test the vendor’s external catalog configurations to verify that the settings are valid and that you can access the vendor’s external catalog. Use the **Validate settings** action to validate the request setup message that you’ve defined. This message should cause the vendors external catalog site to be opened in a browser window. During validation, you can’t order items and services from the vendor. To order items and services, you must access the vendor’s catalog from a purchase requisition.

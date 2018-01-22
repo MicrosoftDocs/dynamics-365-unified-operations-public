@@ -2,10 +2,10 @@
 # required metadata
 
 title: Call center functionality
-description: This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
+description: This topic provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
@@ -45,7 +45,7 @@ Dynamics 365 for Retail supports call centers as a type of retail channel. In a 
 
 After you enable these features in the call center settings, they are available on the **Sales order** page to users who are associated with the call center. Most of these features require additional setup before they can be used. Before users can create call center orders, you must add those users to the call center as call center users. This step enables the call center channel-specific configuration and functionality. Here are some examples of the functionality that becomes available:
 
--   Guided selling provides configuration options for telesales scripts and product images to help and guide sales clerks while they take orders.
+-   Guided selling provides configuration options for tele-sales scripts and product images to help and guide sales clerks while they take orders.
 -   Orders can't be completed until sales clerks have captured at least one payment method.
 -   Upsell and cross-sell rules can be configured to prompt sales clerks to promote specific products to the customer.
 -   Sales clerks can capture the source code for the catalog that a customer is ordering from.

@@ -3,7 +3,7 @@
 
 title: General ledger in the public sector
 description: This topic describes the General ledger functionality that is available for the public sector.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,8 +17,8 @@ ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHie
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27211
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c

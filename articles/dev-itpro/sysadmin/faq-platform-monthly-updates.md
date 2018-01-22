@@ -18,14 +18,14 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273383
 ms.assetid: ac5c9f89-98a6-481f-a0d6-a9627e01030e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
-ms.dyn365.ops.intro: Platform update 5
+ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
 
 ---

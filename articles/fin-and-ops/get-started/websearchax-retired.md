@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: 
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 

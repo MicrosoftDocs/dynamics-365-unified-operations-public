@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  BatchJob
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 9dc45189-6e7e-4207-ad78-dbbb644dd1ce

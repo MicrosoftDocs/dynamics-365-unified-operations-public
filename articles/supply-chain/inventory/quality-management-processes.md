@@ -17,8 +17,8 @@ ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConfor
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9

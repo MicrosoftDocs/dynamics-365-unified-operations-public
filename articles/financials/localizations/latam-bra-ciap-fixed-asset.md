@@ -5,7 +5,7 @@ title: Acquire and dispose a CIAP fixed asset
 description: Fiscal books can acquire and dispose of fixed assets that are ICMS tax long term return.
 author: v-gonode
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,13 +17,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
-ms.search.validFrom: 2017-06-30]
+ms.search.validfrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
@@ -53,7 +53,7 @@ Use this functionality to register in Fiscal books module the acquisition of a f
 18.	Click **ICMS** > **ICMS tax assessment** > **OK**.
 19.	On the **All CIAP fixed assets** page, click the link to select a CIAP asset ID.
 20.	Expand the Line details section.
-21.	On the **CIAP Report** page,in the **Fiscal establishment** field, enter a fiscal establishment.
+21.	On the **CIAP Report** page, in the **Fiscal establishment** field, enter a fiscal establishment.
 22.	Click **OK**.
 
 ## Dispose of a CIAP fixed asset

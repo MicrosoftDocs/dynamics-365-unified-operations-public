@@ -18,7 +18,7 @@ ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
@@ -48,10 +48,11 @@ The following workflow types are available for Procurement and sourcing.
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Type**                         | **Use this type to**                                          |
-| Purchase requisition review      | Create review workflows for purchase requisitions.            |
-| Purchase requisition line review | Create review workflows for purchase requisition lines.       |
+| Purchase requisition review      | Create review and approval workflows for purchase requisitions.            |
+| Purchase requisition line review | Create review and approval workflows for purchase requisition lines.       |
 | Purchase order workflow          | Create review and approval workflows for purchase orders.     |
 | Purchase order line workflow     | Create review and approve workflows for purchase order lines. |
+| Vendor add application workflow  | Create review and approval workflows for adding new vendors via vendor requests. |
 
 ## Creating a workflow
 To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.  
@@ -79,5 +80,5 @@ See also
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 
-
+[Onboarding vendors](vendor-onboarding.md)
 

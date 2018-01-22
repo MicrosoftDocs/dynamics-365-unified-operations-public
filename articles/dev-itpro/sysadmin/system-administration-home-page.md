@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 09/01/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13531
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
@@ -106,3 +106,5 @@ The Microsoft Dynamics 365 for Unified Operations mobile app enables your organi
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 - [License codes and configuration keys report](license-codes-configuration-keys-report.md)
 - [Maintenance mode](maintenance-mode.md)
+- [Pre-configured system accounts](pre-configured-system-accounts.md)
+- [Export B2B users to Azure AD](implement-b2b.md)

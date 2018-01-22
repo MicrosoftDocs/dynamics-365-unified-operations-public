@@ -17,8 +17,8 @@ ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelL
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
@@ -142,7 +142,7 @@ You can view whether a released product can be used as a component or subcompone
 </tr>
 <tr class="odd">
 <td>User requirements</td>
-<td>User requirements represent an abstraction between user requirements and specific components and attributes. You can't map a user requirement to an item. For example, a customer is shopping for a home theater system. The sales representative might ask about the size of the room where the customer plans to install the system, to determine how many watts are required. In this example, the room size can be a user requirement that helps determine the appropriate attribute value for a specific component.You can hide user requirements so that they aren't displayed to the user during a configuration session. Attributes, subcomponents, and user requirements that are related to the user requirement are also hidden. You can write a condition to control whether a user requirement can be hidden. You must write the condition by using Optimization Modeling Language (OML) syntax.</td>
+<td>User requirements represent an abstraction between user requirements and specific components and attributes. You can't map a user requirement to an item. For example, a customer is shopping for a home theater system. The sales representative might ask about the size of the room where the customer plans to install the system, to determine how many watts are required. In this example, the room size can be a user requirement that helps determine the appropriate attribute value for a specific component. You can hide user requirements so that they aren't displayed to the user during a configuration session. Attributes, subcomponents, and user requirements that are related to the user requirement are also hidden. You can write a condition to control whether a user requirement can be hidden. You must write the condition by using Optimization Modeling Language (OML) syntax.</td>
 </tr>
 <tr class="even">
 <td>BOM lines</td>
