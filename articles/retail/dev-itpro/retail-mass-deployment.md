@@ -70,7 +70,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ## Retail Modern POS mass deployment
 ### Before you begin
-This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (Major release version 7.3) or later is required.  It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this article.
+This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (Major release version 7.3.1) with App Update 1, or later, is required.  It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this article.
 
 It is important to note that devices should only be configured for mass deployment only right before they are deployed and activated.  Once the activation is complete, it is important to verify that no remaining devices are still configured to be activated in this manner.  Leaving this configuration for extended periods of time in an unmanaged state could be considered a security risk.
 
