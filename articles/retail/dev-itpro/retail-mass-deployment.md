@@ -36,7 +36,7 @@ The following table shows the delimiters that can currently be used in execution
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
-| -S or -Silent             | Silently run the installer. (No graphical user interface is used.) |
+| -S or -Silent             | Silently run the installer. No graphical user interface is used.  Quiet (-Q or -Quiet) may also be used to the same effect. |
 | -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
 | -FilePath                 | Specify a custom installation location. (We don't recommend that you use this delimiter for a standard installation.) |
 | -LogFile                  | Specify a custom log file location for the installation logs. (We don't recommend that you use this delimiter for a standard installation.) |
@@ -72,7 +72,8 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 ### Before you begin
 This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (Major release version 7.3.1) with App Update 1, or later, is required.  It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this article.
 
-It is important to note that devices should only be configured for mass deployment only right before they are deployed and activated.  Once the activation is complete, it is important to verify that no remaining devices are still configured to be activated in this manner.  Leaving this configuration for extended periods of time in an unmanaged state could be considered a security risk.
+    > [!NOTE]
+    > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  Once the activation of these devices are complete, verify that no remaining devices are still configured to be activated through mass deployment.  Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
 
 #### Important concepts
 There are two important concepts to the mass deployment of Retail Modern POS.  Device permission and user permission.
@@ -84,12 +85,12 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 #### Configure user permission
 1. Use your Azure AD credentials to sign in to Retail headquarters.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.
-3. On the lefthand side, select the appropriate group that requires the new permission (E.g. Manager).
+3. On the lefthand side, select the appropriate group that requires the new permission (E.g. Manager, Cashier, etc.).
 4. In the **Permissions** group, change the setting for **Allow mass activation** to **Yes**.
 5. On the Action Pane, select **Save**.
 6. On the drop-down menu, select **Configuration file**.
 7. Use the menu in the upper left to go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-8. On the lefthand side, select the **1060** job.
+8. On the lefthand side, select the **1060** (Also known as **Staff**) job.
 9. On the Action Pane, select **Run now**.
 10. On the verification message that appears stating **Do you want to run job 1060**, select **Yes**.
 
@@ -122,14 +123,14 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
      Browsers might block the download pop-up that is generated. Select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 #### How to proceed
-The zipped folder generated and downloaded include files that are a part of three buckets:
+The zipped folder generated and downloaded in the previous sub-heading (Download the configured devices) include files that are a part of three buckets:
 1. The list of XML configuration files, including one file for each device that was selected to be downloaded.
 2. The list of one or more Retail Modern POS installation executables.  There will be one file for each unique instance of Retail Modern POS across all the devices that were selected to be downloaded.
 
     > [!NOTE]
     > As an example of this, assume there are ten devices downloaded.  One of these devices has been configured (Per the Devices page in headquarters) to utilize the customized version of Retail Modern POS titled **MPOS_V1.1.7.exe**.  The other nine devices have been configured to utilize the previous customized version of Retail Modern POS titled **MPOS_V1.1.6.exe**.  Despite there being ten devices, there are only two unique versions of the installer.  When downloading these ten devices, only two executable installers are downloaded (One for each of these two unique instances).
 
-3. The **RetailAssociationMap.xml** lists configurations.  A configuration is the association between a specific unique installer (See the previous line above) and it's associated configuration file, register, and device (Also known as terminal).  This XML file is generated to assist the users in pushing out the appropriate files to the appropriate systems and running the installer correctly.
+3. The **RetailAssociationMap.xml** identifies the association between device (Terminal) and the installer.  It does this using a list of configurations.  A configuration shows which specific unique installer (See the previous line above), it's associated configuration file, the associated register, and the associated device (Also known as terminal).  This XML file is generated to assist the users in pushing out the appropriate files to the appropriate systems and running the installer correctly.
 
 There are many ways to push data across an organization (to individual computers) and will not be discussed in this article.  The entire folder could be pushed to each machine, the XML could be parsed to push only the required files to each machine, or the files could even be accessed remotely and never pushed to each machine. However the files are utilized, the result is the same to finally run either a scheduled task or a PowerShell script to perform the silent installation of Retail Modern POS.
 
