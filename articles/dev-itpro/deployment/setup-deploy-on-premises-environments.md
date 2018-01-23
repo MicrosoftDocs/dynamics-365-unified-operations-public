@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/17/2018
+ms.date: 01/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -86,7 +86,7 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 ## Infrastructure
 
-Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers. 
+Finance and Operations is designed to work on machines running Windows Server. 
 
  > [!WARNING]
  > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
@@ -137,7 +137,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP1 must be installed on the Power BI machines.
+- SQL Server 2016 SP1 must be installed on the BI machines.
 - SQL Server Reporting Services 2016 must be installed in **Native** mode on the BI machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
@@ -182,6 +182,8 @@ The following steps must be completed to set up the infrastructure for Finance a
 18. [Configure AD FS](#configureadfs)
 19. [Configure a connector and install an on-premises local agent](#configureconnector)
 20. [Tear down CredSSP, if remoting was used](#teardowncredssp)
+21. [Deploy your Finance and Operations (on-premises) environment from LCS](#deploy)
+22. [Connect to your Finance and Operations (on-premises) environment](#connect)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
@@ -210,7 +212,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Data Signing certificate                     | This certificate is used by AOS to encrypt sensitive information.  | This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. |  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
-| On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p> | |
+| On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premise local agent certificate is needed for a tenant.</p> | |
 
 The following is an example of a Service Fabric Server certificate combined with an AOS SSL Certificate.
 
@@ -831,7 +833,7 @@ If any of the remoting scripts were used during setup, be sure to execute the fo
 
 If the previous remoting PowerShell window was accidentally closed and CredSSP was left enabled, the script will disable it on all the machines specified in the configuration file.
 
-## <a name="DeployFO"></a> Deploy your Finance and Operations (on-premises) environment
+### <a name="deploy"></a> 21. Deploy your Finance and Operations (on-premises) environment from LCS
 
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get a part of the values needed.
 
@@ -845,8 +847,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-## Connect to your Finance and Operations (on-premises) environment
-
+### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
 ## See also
