@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: Talent, update policy, requirements, system requirements
+# ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
