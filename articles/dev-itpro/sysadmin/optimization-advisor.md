@@ -6,7 +6,7 @@ title: Create rules for Optimization advisor
 description: This topic discusses how to add new rules to Optimization advisor. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/20/2018
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SelfHealingWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
