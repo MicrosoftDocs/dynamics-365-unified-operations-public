@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: AX 7.3.0
+ms.dyn365.ops.version: 7.3
 
 ---
 # Fixed assets roll forward report

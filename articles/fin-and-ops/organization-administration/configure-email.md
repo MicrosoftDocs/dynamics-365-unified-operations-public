@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysEmailParameters
+ms.search.form: SysEmailParameters
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 

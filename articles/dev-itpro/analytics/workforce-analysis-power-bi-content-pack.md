@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmWorkforceWorkspace
+ms.search.form: HcmWorkforceWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent, Core
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02

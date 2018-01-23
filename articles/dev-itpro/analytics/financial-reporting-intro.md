@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: FinanicalReportingSetup 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5

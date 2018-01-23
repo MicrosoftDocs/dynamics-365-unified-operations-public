@@ -233,7 +233,7 @@ You use the functionality for prepayment journal vouchers to issue a CFDI advanc
 ## Step 2: Issue a CFDI invoice together with details of the advance payment that was applied
 
 1. Create a sales invoice transaction.
-2. Before you post the invoice, you can settle the advance payment that you created in [Step 1: Issue a CFDI advance payment](##step-1-issuing-cfdi-for-advance-payment). To settle the advance payment, use the **Open transaction settle** option.
+2. Before you post the invoice, you can settle the advance payment that you created in [Step 1: Issue a CFDI advance payment](#step-1-issuing-cfdi-for-advance-payment). To settle the advance payment, use the **Open transaction settle** option.
 3. On the **Post** page, you can verify the referenced CFDI invoice. The invoice is created automatically, and the type of relation (**cTipoRelacion**) is set to **07**.
 4. Post the sales invoice.
 
@@ -242,7 +242,7 @@ You use the functionality for prepayment journal vouchers to issue a CFDI advanc
 
 ## Step 3: Issue a CFDI advance payment reverse
 
-After the company issues a CFDI invoice for the total amount of the operation, it must submit a CFDI advance payment reverse (Egreso) for the advance payment that was settled. This CFDI advance payment reverse is automatically generated when you receive approval for the CFDI invoice that you generated in [Step 2: Issue a CFDI invoice together with details of the advance payment that was applied](##step-2-issuing-cfdi-invoice-with-advance-application).
+After the company issues a CFDI invoice for the total amount of the operation, it must submit a CFDI advance payment reverse (Egreso) for the advance payment that was settled. This CFDI advance payment reverse is automatically generated when you receive approval for the CFDI invoice that you generated in [Step 2: Issue a CFDI invoice together with details of the advance payment that was applied](#step-2-issuing-cfdi-invoice-with-advance-application).
 
 Based on a customer's request, you can use the CFDI electronic invoice inquiry to view, email, export, or print a CFDI payment complement that was previously generated. Select **Accounts receivable** &gt; **Inquiries and reports** &gt; **CFDI (electronic invoices)**, and then select the **Payment** tab. The printed CFDI electronic invoice includes a two-dimensional barcode in accordance with the format for QR codes that is described in the ISO/IEC 18004 standard.
 

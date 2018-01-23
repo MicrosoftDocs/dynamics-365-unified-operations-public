@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: VendPostDatedChecks, CustPostDatedChecks
+ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

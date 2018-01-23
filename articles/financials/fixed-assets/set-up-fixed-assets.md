@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: AssetTable
+ms.search.form: AssetTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

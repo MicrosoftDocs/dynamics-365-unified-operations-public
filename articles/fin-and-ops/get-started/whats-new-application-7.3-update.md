@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 update 
+ms.dyn365.ops.version: 7.3 
 ---
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -240,6 +240,8 @@ With the current release, the advisor presents opportunities to optimize:
     settings to reflect the actual business processes. 
 
 -   Master data quality across BOMs, routes, and inventory management.
+
+To learn more about this feature, watch this short video [Optimization advisor](https://youtu.be/MRsAzgFCUSQ).
 
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------

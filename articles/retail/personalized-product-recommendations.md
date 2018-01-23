@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 259664
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580

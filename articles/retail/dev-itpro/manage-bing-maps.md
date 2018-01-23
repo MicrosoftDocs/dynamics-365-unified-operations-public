@@ -9,16 +9,16 @@ manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: RetailSharedParameters
+ms.search.form: RetailSharedParameters
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
+ms.search.scope: Core, Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 

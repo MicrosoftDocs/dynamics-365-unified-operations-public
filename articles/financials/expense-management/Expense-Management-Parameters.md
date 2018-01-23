@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  TrvParameters
+ms.search.form:  TrvParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: VendInvoiceWorkspace 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -52,9 +52,11 @@ The **Summary** tiles give an overview of the invoices for the selected vendor. 
 -   Paid invoices are those that have been fully paid in Finance and Operations.
 
 Clicking on a tile will open a filtered view of the **Invoices list** page.
+
 ### Tabular lists
 
 In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists. While in the Draft state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
+
 All vendor invoices list page
 -----------------------------
 

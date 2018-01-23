@@ -8,24 +8,24 @@ manager:
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
-ms.service: Dynamics365Talent
+ms.service: dynamics-ax-talent
 ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
+ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-# ms.reviewer:
-ms.search.scope: Operations, Core, Talent
+ms.reviewer: rschloma
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tbisaacs
-# ms.search.validFrom:
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 

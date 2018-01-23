@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: BankLCImport
+ms.search.form: BankLCImport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2, 
+ms.dyn365.ops.version: Platform update 2 
 
 ---
 # Deploy a demo environment

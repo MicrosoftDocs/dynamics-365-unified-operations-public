@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -39,6 +39,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 
 ## Database refresh process
+
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
 1. In LCS, select the hamburger icon in the upper left, and then select **Work items**.
@@ -65,11 +66,11 @@ Here is the list of requirements and conditions of operation for a database refr
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and teamplates won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system. 
-- The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs. 
-- All batches that were set to run are set to Withhold status, to stop batches from running before the environment has been reconfigured. 
-- The SMTP server configuration, all emaill addresses, and all print management settings, including network printers are removed. 
-- Any user with a role of Project owner or Enivoronment managemer in LCS will have acccess to the SQL and machine credentials for all non-production environments. 
-
+- The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
+- All data management framework recurring import and export jobs must be fully processed and stopped in the source system prior to initiating the copy. This will ensure there are no orphaned files in Azure storage. This is important because orphaned files cannot be processed after the database is restored in the new environment. After the restore, the integration jobs can be resumed.
+- All batches that were set to run are set to **Withhold** status, to stop batches from running before the environment has been reconfigured. 
+- The SMTP server configuration, all email addresses, and all **Print management** settings, including network printers are removed. 
+- Any user with a role of Project owner or Environment manager in LCS will have acccess to the SQL and machine credentials for all non-production environments. 
 
 ## Steps to complete after a database refresh for environments that use Retail functionality
 When a database is refreshed, you must run the Environment reprovisioning tool before the copied database is fully functional. This step helps guarantee that all Retail components are up to date.

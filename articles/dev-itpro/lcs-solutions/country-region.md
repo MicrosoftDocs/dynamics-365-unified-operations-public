@@ -279,6 +279,8 @@ The following sections list resources by country/region.
 
 ### Norway
 
+-   [Cash registers for Norway](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Deployment guidelines for cash registers for Norway](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets import format](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [VAT statement](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

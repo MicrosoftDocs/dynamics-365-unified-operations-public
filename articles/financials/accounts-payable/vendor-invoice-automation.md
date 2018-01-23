@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: VendEditInvoiceHeaderStagingListPage 
+ms.search.form: VendEditInvoiceHeaderStagingListPage 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-# ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 

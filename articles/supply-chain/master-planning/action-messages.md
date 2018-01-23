@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form: 
+ms.search.form: ReqGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
