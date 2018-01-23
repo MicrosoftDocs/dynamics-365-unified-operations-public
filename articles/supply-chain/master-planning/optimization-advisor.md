@@ -81,7 +81,7 @@ protected List evaluate()
 } 
 ```
 
-The method shown above loops over companies and selects RFQ cases with empty titles ???, in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
+The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
 
 Opportunities can also be across the company. In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
 
