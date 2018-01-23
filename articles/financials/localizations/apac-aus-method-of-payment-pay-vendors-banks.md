@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:VendBankAccounts 
+ms.search.form: VendBankAccounts 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
