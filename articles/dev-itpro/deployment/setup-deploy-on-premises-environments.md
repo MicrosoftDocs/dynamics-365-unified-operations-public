@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/19/2018
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,7 +59,7 @@ These components depend on the following system software:
     - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
     > [!WARNING]
-    > The application won't run if Full Text Search isn't enabled.
+    > Full Text Search must be enabled.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
@@ -137,8 +137,8 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP1 must be installed on the BI machines.
-- SQL Server Reporting Services 2016 must be installed in **Native** mode on the BI machines.
+- SQL Server 2016 SP1 must be installed on the SSRS machines.
+- SQL Server Reporting Services 2016 must be installed in **Native** mode on the SSRS machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
 
