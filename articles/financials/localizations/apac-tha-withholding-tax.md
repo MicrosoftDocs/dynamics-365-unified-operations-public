@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -23,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 265904
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
