@@ -2,7 +2,7 @@
 # required metadata
 
 title: Progressive withholding tax
-description: This topic provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
+description: This topic provides information about progressive withholding tax in Japan.
 author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw

@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: TaxTable, VendParameters, CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -24,7 +23,7 @@ ms.custom: 265924
 ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
