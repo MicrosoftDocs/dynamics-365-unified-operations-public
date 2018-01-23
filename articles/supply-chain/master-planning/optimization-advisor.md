@@ -39,7 +39,7 @@ This topic explains how to create new rules for **Optimization advisor**. For ex
 
 A *rule* is a check on application data. If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created. The opportunities can be acted upon and, optionally, the impact of the actions can be measured. 
 
-To create a new rule for the **Optimization advisor** workspace, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute. The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute. By convention, that is done on the **opportunityTitle** method, which will be discussed later. This new class can be added to a custom model with a dependency on the **SelfHealingRules** model. In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.
+To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute. The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute. By convention, that is done on the **opportunityTitle** method, which will be discussed later. This new class can be added to a custom model with a dependency on the **SelfHealingRules** model. In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.
 
 ```
 [DiagnosticsRule] 
@@ -83,7 +83,7 @@ protected List evaluate()
 
 The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method. If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method. Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule. Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.  
 
-Opportunities can also be across the company. In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
+Opportunities can also be cross-company. In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method. 
 
 The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.
 
@@ -116,7 +116,7 @@ The title returned by **opportunityTitle** appears under the **Optimization oppo
 * **Rule description** – A string with a more detailed description of the rule. This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
 
 > [!NOTE]
-> The attribute is required for the rule to work. Typically, it is used on opportunityTitle, but it can decorate any method of the class.
+> The **DiagnosticRuleSubscription** attribute is required for the rule to work. Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.
 
 The following is an example implementation. Raw strings are used for simplicity, but a correct implementation requires labels. 
 
