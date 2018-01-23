@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validations, defaults, and unmapped fields
-description: Validations are defined on the tables that back up the entities. Validations are defined at both the field level and the record level.
+description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/23/2018
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4624
