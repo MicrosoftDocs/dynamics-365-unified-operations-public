@@ -596,6 +596,8 @@
 ### [Batch server overview](sysadmin/batch-server-overview.md)
 ### [Create a batch job](sysadmin/tasks/create-batch-job.md)
 
+## [Create rules for Optimization advisor](sysadmin/optimization-advisor.md)
+
 # Lifecycle Services
 ## [Overview of Lifecycle Services](lifecycle-services/lcs.md)
 ### [LCS for customers](lifecycle-services/lcs-works-lcs.md)
