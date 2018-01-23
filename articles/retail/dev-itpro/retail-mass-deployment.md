@@ -73,7 +73,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (Major release version 7.3.1) with App Update 1, or later, is required.  It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this article.
 
     > [!NOTE]
-    > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  Once the activation of these devices are complete, verify that no remaining devices are still configured to be activated through mass deployment.  Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
+    > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  Once the activation of these devices are complete, verify that no remaining devices are still configured to be activated through mass deployment. By default, a device may only be activated once through the mass deployment workflow.  Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
 
 #### Important concepts
 There are two important concepts to the mass deployment of Retail Modern POS.  Device permission and user permission.
@@ -133,6 +133,10 @@ The zipped folder generated and downloaded in the previous sub-heading (Download
 3. The **RetailAssociationMap.xml** identifies the association between device (Terminal) and the installer.  It does this using a list of configurations.  A configuration shows which specific unique installer (See the previous line above), it's associated configuration file, the associated register, and the associated device (Also known as terminal).  This XML file is generated to assist the users in pushing out the appropriate files to the appropriate systems and running the installer correctly.
 
 There are many ways to push data across an organization (to individual computers) and will not be discussed in this article.  The entire folder could be pushed to each machine, the XML could be parsed to push only the required files to each machine, or the files could even be accessed remotely and never pushed to each machine. However the files are utilized, the result is the same to finally run either a scheduled task or a PowerShell script to perform the silent installation of Retail Modern POS.
+
+Once a device has Retail Modern POS installed, it will function similar to an activated device.  The first time Retail Modern POS is started, it will request user credentials (Of a user who has been given permission as stated previously in this document).  The user enters their standard login credentials and the POS will quickly run through device activation and log the user in and work in Modern POS as they normally would.  After this brief departure from the standard user login, every login after will follow the standard flow.
+
+If a device needs to be reactivated, one of two things must occur. Either the device must be set back to the **Pending** state in headquarters or the device must be reactivated using Azure Active Directory credentials.  Reactivation of an already activated device is not allowed using the mass deployment workflow.
 
 ### Examples of commands for silent mass deployment
 This section shows examples regarding self-service mass deployment for Retail Modern POS. This includes Retail Modern POS with offline  and the installer without offline support.  Example PowerShell scripts will also be shown to assist users in performing the installations.
