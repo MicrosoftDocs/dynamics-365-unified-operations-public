@@ -5,7 +5,7 @@ title: Validations, defaults, and unmapped fields
 description: Validations are defined on the tables that back up the entities. Validations are defined at both the field level and the record level.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,15 +34,40 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
 
-Validations are defined on the tables that back up the entities. Validations are defined at both the field level and the record level.
+## Validations
+Validations can be defined on the tables that back up entities, at both the field level and the record level. Validations can also be defined at the data entity level. 
 
-Validations
------------
-
-## Entities vs. data sources
+### Table (data source) vs. entity validation 
 
 Entities are backed by tables (data sources), and validations are defined for these tables at both the field level (**Table.validateField()**) and the record level (**Table.validateWrite()**). The validations are respected by data entities that are built by using those tables. Although these validations are intrinsic to the tables that back a data entity, validations can also be defined at the data entity level. Like table-based validations, entity-based validations can be written at the field level (**DataEntity.validateField()**) or the record level (**DataEntity.validateWrite()**).
+
+### Table-based validation behavior
+
+Table validations are fired automatically as a part of the CUD operations. **Table.ValidateField, AllowEdit, AllowEditOnCreate** Field-level validations are fired automatically when you perform inserts or updates on the data entity. This is true for all paths (X++, OData, and so on). These validations occur during the mapping process, when fields are mapped from an entity to individual data sources.
+
+[![redo1](./media/redo1-1024x582.png)](./media/redo1.png)
+
+After the field values from the data entity are copied to mapped data source fields, field validations are run on the set fields. Validations include table-level **validateField**, which validates **AllowEdit** and **AllowEditOnCreate**. If a validation fails because of an error, validation for the remaining fields continues. Finally, validation checks whether any error occurred during the validation process for any of the data sources. If there was an error, the process errors out at this point, and table-level **validateWrite()** isn't called. To skip **validateField** for a back-end table, a consumer can call **DataEntity.skipDataSourceValidateField(Int \_DataEntityFieldId, Boolean \_skip)**. Note that the field ID for this method is the field ID of the data-entity mapped field, not the back-end table field. By using the following API, you can skip validation for a particular field, regardless of the consumer.
+
+[![Over9](./media/over9.png)](./media/over9.png)
+
+**Table.ValidateWrite** Record-level **ValidateWrite** validations that are defined in back-end tables are fired automatically when you perform data-entity inserts and updates. This is true for all paths (X++, OData, and so on). These validations occur just before the actual insert or update is applied to the data source. If the validation fails, an error is thrown, and the process stops for other data sources. 
+
+![redo2](./media/redo2-1024x636.png)
+
+To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular field, regardless of the consumer.
+
+[![Over10](./media/over10.png)](./media/over10.png)
+
+**Table.ValidateDelete** Record-level **ValidateDelete** validations that are defined in back-end tables are fired automatically when you perform data entity deletes. This is true for all paths (X++, OData, and so on). These validations occur just before the delete is applied to the data source. If the validation fails, an error is thrown, and the process stops for other data sources.
+
+[![Over11](./media/over11.png)](./media/over11.png)
+
+To skip **validateDelete** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateDelete(Boolean \_skip)**. This method turns **validateDelete** on or off for all data sources. By using the following API, you can skip validation for a particular data source, regardless of the consumer.
+
+[![Over12](./media/over12.png)](./media/over12.png)
 
 ### Entity-based validation behavior
 
@@ -104,31 +129,7 @@ Entities are backed by tables (data sources), and validations are defined for th
 </tbody>
 </table>
 
-### Table-based validation behavior
 
-Back-end table, or data source, validations are fired automatically as a part of the CUD operations. **Table.ValidateField, AllowEdit, AllowEditOnCreate** Field-level validations are fired automatically when you perform inserts or updates on the data entity. This is true for all paths (X++, OData, and so on). These validations occur during the mapping process, when fields are mapped from an entity to individual data sources.
-
-[![redo1](./media/redo1-1024x582.png)](./media/redo1.png)
-
-After the field values from the data entity are copied to mapped data source fields, field validations are run on the set fields. Validations include table-level **validateField**, which validates **AllowEdit** and **AllowEditOnCreate**. If a validation fails because of an error, validation for the remaining fields continues. Finally, validation checks whether any error occurred during the validation process for any of the data sources. If there was an error, the process errors out at this point, and table-level **validateWrite()** isn't called. To skip **validateField** for a back-end table, a consumer can call **DataEntity.skipDataSourceValidateField(Int \_DataEntityFieldId, Boolean \_skip)**. Note that the field ID for this method is the field ID of the data-entity mapped field, not the back-end table field. By using the following API, you can skip validation for a particular field, regardless of the consumer.
-
-[![Over9](./media/over9.png)](./media/over9.png)
-
-**Table.ValidateWrite** Record-level **ValidateWrite** validations that are defined in back-end tables are fired automatically when you perform data-entity inserts and updates. This is true for all paths (X++, OData, and so on). These validations occur just before the actual insert or update is applied to the data source. If the validation fails, an error is thrown, and the process stops for other data sources. 
-
-![redo2](./media/redo2-1024x636.png)
-
-To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular field, regardless of the consumer.
-
-[![Over10](./media/over10.png)](./media/over10.png)
-
-**Table.ValidateDelete** Record-level **ValidateDelete** validations that are defined in back-end tables are fired automatically when you perform data entity deletes. This is true for all paths (X++, OData, and so on). These validations occur just before the delete is applied to the data source. If the validation fails, an error is thrown, and the process stops for other data sources.
-
-[![Over11](./media/over11.png)](./media/over11.png)
-
-To skip **validateDelete** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateDelete(Boolean \_skip)**. This method turns **validateDelete** on or off for all data sources. By using the following API, you can skip validation for a particular data source, regardless of the consumer.
-
-[![Over12](./media/over12.png)](./media/over12.png)
 
 ## Defaults
 Default values can be provided for initializations and rows.
