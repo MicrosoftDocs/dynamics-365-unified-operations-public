@@ -40,11 +40,11 @@ Validations are defined on the tables that back up the entities. Validations are
 Validations
 -----------
 
-### Entities vs. data sources
+## Entities vs. data sources
 
 Entities are backed by tables (data sources), and validations are defined for these tables at both the field level (**Table.validateField()**) and the record level (**Table.validateWrite()**). The validations are respected by data entities that are built by using those tables. Although these validations are intrinsic to the tables that back a data entity, validations can also be defined at the data entity level. Like table-based validations, entity-based validations can be written at the field level (**DataEntity.validateField()**) or the record level (**DataEntity.validateWrite()**).
 
-#### Entity-based validation behavior
+### Entity-based validation behavior
 
 <table>
 <colgroup>
@@ -104,7 +104,7 @@ Entities are backed by tables (data sources), and validations are defined for th
 </tbody>
 </table>
 
-#### Table-based validation behavior
+### Table-based validation behavior
 
 Back-end table, or data source, validations are fired automatically as a part of the CUD operations. **Table.ValidateField, AllowEdit, AllowEditOnCreate** Field-level validations are fired automatically when you perform inserts or updates on the data entity. This is true for all paths (X++, OData, and so on). These validations occur during the mapping process, when fields are mapped from an entity to individual data sources.
 
@@ -131,6 +131,8 @@ To skip **validateDelete** for all back-end tables for a data entity, a consumer
 [![Over12](./media/over12.png)](./media/over12.png)
 
 ## Defaults
+Default values can be provided for initializations and rows.
+
 ### Initializations
 
 **DataEntity.initValue:** A data entity is initialized with default values and by using any custom logic that is present in entity-level **initValue**. This method isn't called automatically when an insert or update is performed on a data entity from X++. It must be called explicitly if it's required. The method is called automatically by the form engine when a new record is created. **DataEntity.initValue** doesn't call the **initValue** method for back-end tables that are used in the data entity. **Table.initValue:** Table-level **initValue**, as defined for back-end tables, is fired when you perform a data entity insert. This is true for all paths (X++, OData, and so on). **Table.initValue** is run just before the entity is mapped to data source fields.
