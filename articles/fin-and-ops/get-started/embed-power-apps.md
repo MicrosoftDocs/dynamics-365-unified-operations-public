@@ -89,7 +89,7 @@ Follow these steps to edit the configuration of an embedded PowerApp:
 ## Removing an embedded PowerApp
 After a PowerApp has been embedded onto a page, there are two ways to remove it if needed: 
 
-- Go to the **Edit a PowerApp** dialog box using the instructions from the [Editing an embedded PowerApp](#Editing-an-embedded-PowerApp) section earlier in this topic. Confirm that the dialog box displays information for the embedded PowerApp that you would like to remove, and then click the **Delete** button. 
+- Go to the **Edit a PowerApp** dialog box using the instructions from the [Editing an embedded PowerApp](#editing-an-embedded-powerapp) section earlier in this topic. Confirm that the dialog box displays information for the embedded PowerApp that you would like to remove, and then click the **Delete** button. 
 
 - Because an embedded PowerApp is saved as personalization data, clearing your page's personalization will also remove any embedded PowerApps on that form. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options** and then click **Personalize this form**. Under the **Manage** menu, select the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalization the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more information about how to optimize pages using personalization.  
 
