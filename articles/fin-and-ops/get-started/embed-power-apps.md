@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed PowerApps
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes how to embed PowerApps into the Finance and Operations client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
 ms.date: 01/24/2018
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  FormRunConfigurationAddPAControl
-audience: Application User
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
 ms.search.scope: Operations, Core 
