@@ -82,6 +82,10 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 - [Batch processing overview](batch-processing-overview.md)
 - [Batch server overview](batch-server-overview.md)
 
+## Optimization advisor
+- [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [Create rules for Optimization advisor](optimization-advisor.md)
+
 ## Office integration
 The integration with Microsoft Office provides a set of productive, collaborative, and integrated user experiences that take advantage of the Microsoft Office suite. This functionality can help your organization become more efficient and effective.
 

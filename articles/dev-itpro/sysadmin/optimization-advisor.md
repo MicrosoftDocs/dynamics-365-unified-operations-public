@@ -196,3 +196,7 @@ class ScanNewRulesJob
 ```
 
 The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**. Click **OK**. Go to **System administration** > **Optimization advisor** to view the new opportunity. 
+
+For more information, watch the short YouTube video:
+
+> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
