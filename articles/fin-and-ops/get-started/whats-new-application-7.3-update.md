@@ -241,7 +241,7 @@ With the current release, the advisor presents opportunities to optimize:
 
 ### More information
 -  [Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [Create rules for Optimization advisor](optimization-advisor.md)
+-  [Create rules for Optimization advisor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/optimization-advisor)
 
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------
