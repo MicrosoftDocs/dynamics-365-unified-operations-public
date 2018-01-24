@@ -3,7 +3,7 @@
  
 title: Assign a product lifecycle state to a released product
 description: This procedure shows how to assign a product lifecycle state to a released product. 
-author: cvocph�
+author: cvocph
 manager: AnnBe 
 ms.date: 12/05/2017
 ms.topic: business-process 
@@ -25,6 +25,7 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
+
 ---
 # Assign a product lifecycle state to a released product
 
