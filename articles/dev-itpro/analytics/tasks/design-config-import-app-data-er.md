@@ -3,7 +3,7 @@
  
 title: Design configurations to parse incoming documents for application data updates (ER)
 description: This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. 
-author: Nikolay Selin
+author: NickSelin
 manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
@@ -25,13 +25,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
+
 ---
 # Design configurations to parse incoming documents for application data updates (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them for parsing incoming electronic documents. To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active.”
-This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
+This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them for parsing incoming electronic documents. To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active.”
+
+This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
+
 These steps can be completed using any dataset. Before you begin, download and save the files listed in the topic, “Parse incoming documents to update application data” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). The files are: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
