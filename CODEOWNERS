@@ -4,18 +4,18 @@
 /articles/dev-itpro/database	@margoc
 /articles/dev-itpro/data-entities	@margoc
 /articles/dev-itpro/deployment	@kfend
-/articles/dev-itpro/dev-ref	@margoc
-/articles/dev-itpro/dev-tools	@margoc
-/articles/dev-itpro/extensibility	@margoc
+/articles/dev-itpro/dev-ref	@kfend
+/articles/dev-itpro/dev-tools	@kfend
+/articles/dev-itpro/extensibility	@kfend
 /articles/dev-itpro/financial	@margoc @twheeloc
 /articles/dev-itpro/lcs-solutions	@kfend
 /articles/dev-itpro/lifecycle-services	@kfend
 /articles/dev-itpro/migration-upgrade	@margoc
-/articles/dev-itpro/mobile-apps	@margoc
+/articles/dev-itpro/mobile-apps	@kfend @sericks007
 /articles/dev-itpro/office-integration	@sericks007
 /articles/dev-itpro/perf-test	@margoc
 /articles/dev-itpro/sysadmin	@sericks007
-/articles/dev-itpro/user-interface	@margoc
+/articles/dev-itpro/user-interface	@kfend
 /articles/financials/accounts-payable	@twheeloc
 /articles/financials/accounts-receivable	@twheeloc
 /articles/financials/budgeting	@twheeloc
@@ -32,8 +32,8 @@
 /articles/fin-and-ops/hr/localizations	@shylaw
 /articles/fin-and-ops/organization-administration	@sericks007
 /articles/retail	@josaw1
-/articles/retail/dev-itpro	@sericks007
-/articles/retail/dev-itpro/retail-sdk	@margoc @sericks007
+/articles/retail/dev-itpro	@sericks007 @kfend
+/articles/retail/dev-itpro/retail-sdk	@kfend @sericks007
 /articles/retail/get-started	@josaw1
 /articles/retail/localizations	@shylaw
 /articles/supply-chain/cost-management	@yuyus
