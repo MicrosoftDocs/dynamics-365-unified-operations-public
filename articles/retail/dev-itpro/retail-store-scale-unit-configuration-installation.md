@@ -152,7 +152,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
     > [!NOTE]
     > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed.
-    > - If a system restart is required, the installer shows this requirement. Although the restart is recommended, the installer can continue without it.
+    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that tells all applications if a restart is required.  While it is recommended to restart prior to continuing the installation, a restart is not mandatory and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL that is used to access Retail headquarters.)
 
@@ -292,7 +292,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
     > [!NOTE]
     > At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the healthcheck again.
 
-6. Go to **IIS**, select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
+6. Start **Microsoft Internet Information Services (IIS)** (Also known as just **IIS**), select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
 7. Explore the working directory.
 8. Open the Web.config file, and then, in the **connectionStrings** section, add **Server name**. **Server name** is the name of the first computer where you installed components. Save the file.
 9. If the certificate that is used isn't a valid, trusted certificate from a trusted authority, open CERTMGR.MSC, and follow these steps:
@@ -352,7 +352,7 @@ According to current security standards, the following options should be set in 
 - You should use only trusted certificate authorities to obtain certificates that will be used on Store system computers.
 
 > [!IMPORTANT]
-> It's critical that you review security guidelines for Internet Information Services (IIS) and Payment Card Industry (PCI) requirements.
+> It's critical that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
 ### Troubleshoot Retail Store Scale Unit
 
