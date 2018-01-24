@@ -3,7 +3,7 @@
  
 title: Create a model mapping configuration (ER)
 description: Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
-author: Nikolay Selin
+author: NickSelin
 manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
@@ -25,13 +25,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
+
 ---
 # Create a model mapping configuration (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. In this procedure, you will create a configuration for sample company, Litware, Inc. 
-This procedure is created for uses with the assigned role of System administrator or Electronic reporting developer.
+Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. In this procedure, you will create a configuration for sample company, Litware, Inc. 
+
+This procedure is created for uses with the assigned role of System administrator or Electronic reporting developer.
+
 These steps can be completed using any dataset. To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
