@@ -3,7 +3,7 @@
  
 title: Design a configuration to import data from an external file in CSV format (ER)
 description: Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file in CSV format. 
-author: Nikolay Selin
+author: NickSelin
 manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
@@ -25,13 +25,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
+
 ---
 # Design a configuration to import data from an external file in CSV format (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file in CSV format. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.” 
-This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. These steps can be completed using the USMF data set. 
+Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file in CSV format. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.” 
+
+This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. These steps can be completed using the USMF data set. 
+
 You must also download and save the following files locally: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
