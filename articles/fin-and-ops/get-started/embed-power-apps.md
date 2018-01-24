@@ -54,7 +54,7 @@ Follow the instructions below to embed a PowerApp into the Finance and Operation
 3. Configure the embedded PowerApp:
    - The **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
    - **App ID** is the GUID for the PowerApp you want to embed. To retrieve this value, find the PowerApp on [web.powerapps.com](https://web.powerapps.com) and then locate the App ID field under Details.  
-   - For **Input data for the PowerApp**, you can optionally select the field that contains the data you want to pass to the PowerApp as input. We currently support selecting  See the section on Building a PowerApp that leverages data from Finance and Operations for details on how the PowerApp can access the data sent from Finance and Operations.  
+   - For **Input data for the PowerApp**, you can optionally select the field that contains the data you want to pass to the PowerApp as input. See the section on "Building a PowerApp that leverages data from Finance and Operations" for details on how the PowerApp can access the data sent from Finance and Operations.  
    - Choose the **Application size** that matches the type of PowerApp you are embedding. Select **Thin** for PowerApps built for mobile devices, and **Wide** for PowerApps built for tablets. This ensures a sufficient amount of space is allotted for the embedded PowerApp.
    - The **Legal entities** fast tab provides the ability to choose which legal entities the PowerApp is available for. The default is to show the PowerApp in all legal entities.  
 4. After confirming the configuration is correct, click **Insert** to embed the PowerApp on the page. A message will appear prompting you to refresh the browser in order to see the embedded PowerApp. 
@@ -66,7 +66,7 @@ After you have embedded a PowerApp on a page and confirmed it is working correct
 
 - Alternatively, you can export your page's personalizations, send them to one or more users, and have each of those users import those changes. The Manage option on the personalization toolbar enables you to export and import personalizations.
 
-See [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more details the personalization capabilities in the product and how to use them.
+See [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more details about the personalization capabilities in the product and how to use them.
 
 ## Building a PowerApp that leverages data sent from Finance and Operations
 An important part of building a PowerApp that will be embedded in Finance and Operations is utilizing the input data from Finance and Operations. Inside the PowerApp, that input data can be accessed via the Param("EntityId") variable.  
@@ -89,14 +89,18 @@ Follow these steps to edit the configuration of an embedded PowerApp:
 
 ## Removing an embedded PowerApp
 Once a PowerApp has been embedded onto a page in the system, there are two ways to remove it if desired: 
-1. Navigate to the **Edit a PowerApp** dialog using the instructions from the Editing an embedded PowerApp section. After confirming the dialog is showing information for the embedded PowerApp you would like to remove, simply click the **Delete** button. 
-2. Since an embedded PowerApp is saved as personalization data, clearing your page's personalization will also remove any embedded PowerApps on that form. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options** and then click **Personalize this form**. Under the **Manage** menu, select the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalization the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more information about how to optimize pages in Finance and Operations using personalization.  
+
+- Navigate to the **Edit a PowerApp** dialog using the instructions from the "Editing an embedded PowerApp" section. After confirming that the dialog is showing information for the embedded PowerApp you would like to remove, simply click the **Delete** button. 
+
+- Since an embedded PowerApp is saved as personalization data, clearing your page's personalization will also remove any embedded PowerApps on that form. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options** and then click **Personalize this form**. Under the **Manage** menu, select the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalization the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more information about how to optimize pages using personalization.  
 
 ## Appendix 
 ### Developer control over where a PowerApp can be embedded
 By default, users can embed PowerApps on any page, either under the PowerApps menu button or directly on the page as a fast tab, pivot tab, vertical tab, or panorama section. However, if required, developers can also configure this feature to only allow embedding of PowerApps on certain pages by implementing the following methods: 
-- isPowerAppPersonalizationEnabled: If this method returns false for a specific page, then the PowerApps menu button will not be shown, and users will not be able to embed PowerApps anywhere on this page, including as a tab.  
-- isPowerAppTabPersonalizationEnabled: If this method returns false for a specific page, then users will not be able to embed PowerApps directly on the page as a fast tab, pivot tab, vertical tab, or panorama section. Users will still be able to embed PowerApps through the PowerApps menu button if embedding is allowed on the form.  
+
+- **isPowerAppPersonalizationEnabled**: If this method returns false for a specific page, then the PowerApps menu button will not be shown, and users will not be able to embed PowerApps anywhere on this page, including as a tab. 
+
+- **isPowerAppTabPersonalizationEnabled**: If this method returns false for a specific page, then users will not be able to embed PowerApps directly on the page as a fast tab, pivot tab, vertical tab, or panorama section. Users will still be able to embed PowerApps through the PowerApps menu button if embedding is allowed on the form.  
 
 Below is an example you can follow that shows a new class with the two methods needed to configure where PowerApps can be embedded.  
 
