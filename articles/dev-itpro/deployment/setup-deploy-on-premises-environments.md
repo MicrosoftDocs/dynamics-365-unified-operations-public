@@ -36,9 +36,7 @@ ms.dyn365.ops.version: Platform update 8
 
 > [!Note]
 > The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
-
 > If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
-
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
@@ -84,14 +82,20 @@ The on-premises application works with AD FS. To interact with LCS, you must als
 
 Finance and Operations uses standalone Service Fabric. For more information, see the [Service Fabric documentation](/azure/service-fabric/).
 
+Setup of Finance and Operations will deploy a set of applications inside Service Fabric (SF). During deployment, each node in the cluster will be defined via configuration to have one of the following node types:
+
+- **AOSNodeType**: hosts the application object server (business logic).
+- **OrchestratorType**: functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
+- **ReportServerType**: hosts SSRS and reporting logic.
+- **MRType**: hosts management reporting logic.
+
 ## Infrastructure
 
 Finance and Operations is designed to work on machines running Windows Server. 
 
  > [!WARNING]
  > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
-  
-    
+
 The hardware configuration includes the following components:
 
 - Standalone Service Fabric cluster that is based on Windows Server 2016 virtual machines (VMs)
@@ -111,23 +115,23 @@ The following table shows an example of a hardware layout. This example is used 
 > [!NOTE]
 > The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type.
 
-| Machine purpose                                 | Machine name    | IP address    |
-|-------------------------------------------------|-----------------|---------------|
-| Domain controller                               | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                                           | DAX7SQLAOADFS1  | 10.179.108.3  |
-| File server                                     | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On cluster                           | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                                                 | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                                                 | DAX7SQLAOSQLA   | 10.179.108.9  |
-| Client                                          | SQLAOCLIENT1    | 10.179.108.11 |
-| Service Fabric cluster/AOS 1                    | SQLAOSF1AOS1    | 10.179.108.12 |
-| Service Fabric cluster/AOS 2                    | SQLAOSF1AOS2    | 10.179.108.13 |
-| Service Fabric cluster/AOS 3                    | SQLAOSF1AOS3    | 10.179.108.14 |
-| Service Fabric cluster/Orchestrator 1           | SQLAOSF1ORCH1   | 10.179.108.15 |
-| Service Fabric cluster/Orchestrator 2           | SQLAOSF1ORCH2   | 10.179.108.16 |
-| Service Fabric cluster/Orchestrator 3           | SQLAOSF1ORCH3   | 10.179.108.17 |
-| Service Fabric cluster/Management Reporter node | SQLAOSMR1       | 10.179.108.18 |
-| Service Fabric cluster/SSRS node                | SQLAOSFBIN1     | 10.179.108.10 |
+| Machine purpose          | SF Node type     | Machine name    | IP address    |
+|--------------------------|------------------|-----------------|---------------|
+| Domain controller        |                  | DAX7SQLAODC1    | 10.179.108.2  |
+| AD FS                    |                  | DAX7SQLAOADFS1  | 10.179.108.3  |
+| File server              |                  | DAX7SQLAOFILE1  | 10.179.108.4  |
+| SQL Always-On cluster    |                  | DAX7SQLAOSQLA01 | 10.179.108.5  |
+|                          |                  | DAX7SQLAOSQLA02 | 10.179.108.6  |
+|                          |                  | DAX7SQLAOSQLA   | 10.179.108.9  |
+| Client                   |                  | SQLAOCLIENT1    | 10.179.108.11 |
+| AOS 1                    | AOSNodeType      | SQLAOSF1AOS1    | 10.179.108.12 |
+| AOS 2                    | AOSNodeType      | SQLAOSF1AOS2    | 10.179.108.13 |
+| AOS 3                    | AOSNodeType      | SQLAOSF1AOS3    | 10.179.108.14 |
+| Orchestrator 1           | OrchestratorType | SQLAOSF1ORCH1   | 10.179.108.15 |
+| Orchestrator 2           | OrchestratorType | SQLAOSF1ORCH2   | 10.179.108.16 |
+| Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.17 |
+| Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.18 |
+| SSRS node                | ReportServerType | SQLAOSFBIN1     | 10.179.108.10 |
 
 ## Setup
 
@@ -525,7 +529,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
-    3. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorNodeType.
+    3. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
     4. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
 
 3. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\agent file share:
