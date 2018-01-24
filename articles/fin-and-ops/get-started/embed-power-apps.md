@@ -5,7 +5,7 @@ title: Embed PowerApps
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: jasongre
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  FormRunConfigurationAddPAControl
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: sericks
-ms.search.scope: Operations Platform 
+ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
-ms.search.validFrom: 2017-11-30
-ms.dyn365.ops.version: Platform update 15
+ms.search.validFrom: 2018-02-28
+ms.dyn365.ops.version: Platform update 14
 ---
 
 # Embed PowerApps
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: Platform update 15
 [!include[banner](../includes/banner.md)]
 
 
-[!Note] This feature is supported in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 or later.
+[!Important] This feature is part of a targeted release and is available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). This feature will be included in another upcoming general availability release.
 
-## Introduction
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and nontechnical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
 
 ## Adding an embedded PowerApp to a page
 ### Overview
@@ -43,16 +42,16 @@ Before embedding a PowerApp into the Finance and Operations client, you first ne
 
 Once you are ready to embed a particular PowerApp, you can choose between one of two ways of accessing the PowerApp on a page, whichever route better fits your scenario. The first way is through the new PowerApps button that has been added to the standard Action Pane. PowerApps added via this mechanism will appear as menu items inside the PowerApps menu button. When selected, each of these menu items will open a dialog containing the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page inside a pivot tab, fast tab, vertical tab, or panorama section. 
 
-When configuring your embedded PowerApp in Finance and Operations, you can select a single field you want to send as input to the PowerApp. This allows the PowerApp to be responsive based on the data you are currently viewing in Finance and Operations.  
+When configuring your embedded PowerApp in Finance and Operations, you can select a single field that you want to send as input to the PowerApp. This allows the PowerApp to be responsive based on the data you are currently viewing in Finance and Operations.  
 
 ### Details
 Follow the instructions below to embed a PowerApp into the Finance and Operations web client.  
 
 1. Navigate to the page where you would like to embed the PowerApp. This will be the same page that contains any data that needs to be passed to the PowerApp as input.  
-2. Open the **Insert a PowerApp** dialog
+2. Open the **Insert a PowerApp** dialog:
    - Click **Options** then select **Personalize this form**. Under the **Insert** menu, choose **PowerApp**. Finally, select the region where you would like to add a PowerApp. If you want to embed the PowerApp under the PowerApps menu button, choose the Action Pane. If you want to embed the PowerApp directly onto the page, choose the appropriate pivot tab, fast tab, vertical tab, or panorama section.   
    - If the PowerApp will be accessed via the PowerApps menu button, you can alternatively click the **PowerApps** menu button in the standard Action Pane and then select **Insert a PowerApp**.  
-3. Configure the embedded PowerApp
+3. Configure the embedded PowerApp:
    - The **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
    - **App ID** is the GUID for the PowerApp you want to embed. To retrieve this value, find the PowerApp on [web.powerapps.com](https://web.powerapps.com) and then locate the App ID field under Details.  
    - For **Input data for the PowerApp**, you can optionally select the field that contains the data you want to pass to the PowerApp as input. We currently support selecting  See the section on Building a PowerApp that leverages data from Finance and Operations for details on how the PowerApp can access the data sent from Finance and Operations.  
