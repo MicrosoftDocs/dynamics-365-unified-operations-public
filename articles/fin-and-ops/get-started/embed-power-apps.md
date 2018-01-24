@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 14
 
 [!include[banner](../includes/banner.md)]
 
-[!Important] This feature is part of a targeted release and is available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). This feature will be included in another upcoming general availability release.
+[!include[banner](../includes/pre-release.md)] 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
 
