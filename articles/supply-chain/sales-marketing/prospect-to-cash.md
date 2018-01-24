@@ -63,7 +63,7 @@ In earlier versions, the Prospect to cash solution provides the following types 
 
 Prospect to cash integration is supported on the following versions:
 
-### Dynamics 365 for Finance and Operations, Enterprise edition (December 2017) - 7.3
+### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
 
 - Dynamics 365 for Finance and Operations, Enterprise edition (December 2017) - Application build 7.3.11971.56116 with Platform Update 12 (7.0.4709.41129)
 
