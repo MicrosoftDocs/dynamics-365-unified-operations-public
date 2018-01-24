@@ -115,10 +115,10 @@ Highlights of these integration enhancements include:
 -   Sync support for country/region ISO codes on invoice address, exposed on
     data entities.
     
-To view additional information about Prospect to cash integration 
+### More information 
 
--  Watch this short video [Introduction to Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg).
--  See [Prospect to cash documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
+-  [Introduction to Prospect to cash integration (Video)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+-  [Prospect to cash documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
 
 ## Expense management mobile workspace enhancements
 This feature provides support for functionality that is available in expense management that was not available in the mobile solution for expense management. This list includes (but is not limited to):
@@ -211,9 +211,7 @@ For more information, see [Set up a warehouse by using a warehouse configuration
 ## Notifications in Point of Sale
 In today's modern retail environment, the store associates are assigned various tasks such as helping customers, running transactions, performing stock counts, or receiving orders in the store. Point of Sale (POS) client empowers the associates to do these and much more, all in one application. With various tasks to be performed in a day, there is a need to notify the associates when a task requires their attention. To address this requirement, we have created a notification framework that utilizes the notification capability in POS. For this release, the notifications can be enabled for POS operations only, and out of the box, the notifications can only be enabled for the order fulfillment operation. However, the notification framework is extensible and enables developers to easily plug in custom code for any operation. We have also provided the ability to configure role-based notifications that empower the retailers to easily define who should receive what notifications.
 
-Optimization advisor   
------------------------
-
+## Optimization advisor   
 The Optimization advisor workspace helps business users follow best practices to
 optimize the business processes that they own. It analyzes business processes,
 finds optimization opportunities, leverages application data to quantify the
@@ -241,7 +239,9 @@ With the current release, the advisor presents opportunities to optimize:
 
 -   Master data quality across BOMs, routes, and inventory management.
 
-To learn more about this feature, watch this short video [Optimization advisor](https://youtu.be/MRsAzgFCUSQ).
+### More information
+-  [Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Create rules for Optimization advisor](optimization-advisor.md)
 
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------
