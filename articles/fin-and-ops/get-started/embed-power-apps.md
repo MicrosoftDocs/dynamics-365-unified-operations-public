@@ -53,7 +53,7 @@ The following instructions show how to embed a PowerApp into the Finance and Ope
 3. Configure the embedded PowerApp:
    - The **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
    - **App ID** is the GUID for the PowerApp that you want to embed. To retrieve this value, find the PowerApp on [web.powerapps.com](https://web.powerapps.com) and then locate the **App ID** field under **Details**.  
-   - For **Input data for the PowerApp**, you can optionally select the field that contains the data that you want to pass to the PowerApp as input. See the section later in this topic titled "Building a PowerApp that leverages data from Finance and Operations" for details on how the PowerApp can access the data sent from Finance and Operations.  
+   - For **Input data for the PowerApp**, you can optionally select the field that contains the data that you want to pass to the PowerApp as input. See the section later in this topic titled [Building a PowerApp that leverages data from Finance and Operations](#Building-a-PowerApp-that-leverages-data-sent-from-Finance-and-Operations) for details on how the PowerApp can access the data sent from Finance and Operations.  
    - Choose the **Application size** that matches the type of PowerApp that you're embedding. Select **Thin** for PowerApps built for mobile devices, and **Wide** for PowerApps built for tablets. This ensures a sufficient amount of space is allotted for the embedded PowerApp.
    - The **Legal entities** FastTab provides the ability to choose which legal entities the PowerApp is available for. The default is to show the PowerApp in all legal entities.  
 4. After confirming that the configuration is correct, click **Insert** to embed the PowerApp on the page. You will be prompted to refresh the browser in order to see the embedded PowerApp. 
@@ -89,7 +89,7 @@ Follow these steps to edit the configuration of an embedded PowerApp:
 ## Removing an embedded PowerApp
 After a PowerApp has been embedded onto a page, there are two ways to remove it if needed: 
 
-- Go to the **Edit a PowerApp** dialog box using the instructions from the "Editing an embedded PowerApp" section earlier in this topic. Confirm that the dialog box displays information for the embedded PowerApp that you would like to remove, and then click the **Delete** button. 
+- Go to the **Edit a PowerApp** dialog box using the instructions from the [Editing an embedded PowerApp](#Editing-an-embedded-PowerApp) section earlier in this topic. Confirm that the dialog box displays information for the embedded PowerApp that you would like to remove, and then click the **Delete** button. 
 
 - Because an embedded PowerApp is saved as personalization data, clearing your page's personalization will also remove any embedded PowerApps on that form. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options** and then click **Personalize this form**. Under the **Manage** menu, select the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalization the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more information about how to optimize pages using personalization.  
 
