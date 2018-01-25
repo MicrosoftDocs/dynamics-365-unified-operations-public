@@ -1,0 +1,23 @@
+
+#Configure Reverse proxy for your Dynamics 365 for Finance and Operations On-premises environment
+
+Customers may want to secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy. Reverse proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the F&O environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the F&O environment. This adds a measure of security and enable load balancing. 
+
+##Steps to configure the reverse proxy
+
+Perform the below steps in **each** node of type OrchestratorType in the Service Fabric cluster
+1. Remote into the Orchestrator VM
+2. Execute the below powershell script to retrive the path of the ```machine.config``` file
+```Powershell
+[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
+```
+3. Edit the ```machine.config``` file to add the below xml snippet
+```XML
+	<system.net>
+		<defaultProxy enabled="true" >
+			<proxy <<<SET YOUR PROXY SETTINGS>> />
+	    </defaultProxy>
+    </system.net>
+```
+4. Save the file.
+5. Restart the machine.
