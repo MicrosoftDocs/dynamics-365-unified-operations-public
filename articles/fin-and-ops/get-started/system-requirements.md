@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for cloud deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 01/18/2018
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -170,7 +170,7 @@ The computer must meet all system requirements for installing and using the foll
 
 ## Requirements for development on local VMs
 
-For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances#vm-that-is-running-on-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
 ## See also
 
