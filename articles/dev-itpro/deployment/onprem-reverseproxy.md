@@ -39,19 +39,19 @@ Perform the below steps in **each** node of type OrchestratorType in the Service
 1. Remote into the Orchestrator VM
 2. Execute the below powershell script to retrive the path of the ```machine.config``` file
 
-```Powershell
-[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
-```
+	```Powershell
+	[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
+	```
 
 3. Edit the ```machine.config``` file to add the below xml snippet
 
-```XML
-	<system.net>
-		<defaultProxy enabled="true" >
-			<proxy <<<SET YOUR PROXY SETTINGS>> />
-	    </defaultProxy>
-    </system.net>
-```
+	```XML
+		<system.net>
+			<defaultProxy enabled="true" >
+				<proxy <<<SET YOUR PROXY SETTINGS>> />
+	   	 </defaultProxy>
+    	</system.net>
+	```
 
 4. Save the file.
 5. Restart the machine.
