@@ -183,117 +183,203 @@ You can switch to **Graphs view** to view different indicators for the test cont
 
 ## Troubleshooting
 
-### System.TypeInitializationException
-If you see an error message like this: 
+### Blank Web Client for Single User Test
+The single user test runs and opens a web client.  A website is never loaded.  Instead, there is an empty web client with a white screen with the message "This is the initial start page for the WebDriver server" at the top of the page.  The test will eventually timeout and fail with an error message.
 
-
-    System.TypeInitializationException: System.TypeInitializationException: The type initializer for
-    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
-    System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
-    https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
-    that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
-    by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
-    The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
-    Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
-    System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
-
-
-### Solution
-You would need to run the following Powershell script on your **development machine**:
-
-    Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
-    if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
-    { 
-        Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
-    }
-
-## Certificate thumbprint errors
-
-### Error example
-
-    Result StackTrace:          
-
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.MintToken(String email, 
-    String nameId, String identityProvider, String audience, String certThumbprint)
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.SignIn()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_Service()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.PopulateAxUsers()
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement..cctor()
-    --- End of inner exception stack trace ---
-    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_AdminUser()
-        at MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup() in 
-            J:PerfSDKPerfSDKLocalDirectorySampleProjectPerfSDKSampleGeneratedTestRecord1Base.cs:line 45
-    Result Message:             
-
-    Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
-    System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
-    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
-    MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
-    Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
-
-### Solution:
-
-Make sure the thumbprint in CloudEnvironment.Config doesn't have invisible Unicode characters. To do that paste your error message into a tool that would show invisible Unicode characters. An example is [Unicode code converter](https://r12a.github.io/apps/conversion/).
-
-![Unicode code converter](media/unicode-extra.jpg)
-
-
-## Zoom factor
-Sometimes you get the error related to IE zoom factor. 
-
-## Error example
+#### Error Example
 
 ```
-Result StackTrace:          
-at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1108
-   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 862
-   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 830
-   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
-   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options) in c:\Projects\webdriver\dotnet\src\webdriver\IE\InternetExplorerDriver.cs:line 127
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.InternetExplorerBrowser.GetWebDriver(Uri initialUri)
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.SeleniumBrowser.LaunchWithAuthentication(Uri targetUri)
-   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.AuthenticatedBrowser.CreateSession(SupportedBrowser browser, IAuthenticator authenticator, Uri launchUri)
-   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenPipeline()
-   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
-   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
-   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
-   at MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup() in C:\PerfSDK\Scripts\SampleProject\PerfSDKSample\Generated\Free_Text_InvoiceBase.cs:line 50
-Result Message:              Initialization method MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
+Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
 ```
+#### Solution
+This problem can happen if trust has not been established with the LocalHostSSL certificate that was installed in the **SSL Certificate Add Failed** section above. To establish trust, ensure that the LocalHostSSL.cer has been installed in the **Trusted Root Certification Authorities** store.
 
-### Solution
+### Zoom Factor
+This issue occurs during single user tests. The test will fail very quickly with an error message.
+
+#### Error Example
+
+```Initialization method <Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
+```
+#### Solution
 The IE zoom factor can be set to 100% by changing the following keys:
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
-+ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
+•	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
+•	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
+•	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
+ 
+Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to click **Change the size of text, apps and other items**. This field is available in the Windows **Display settings**. 
+ 
+If none of this works, try changing the size of your remote desktop before starting the RDP session so that the default Internet Explorer zoom level is 100%. This is only necessary for single user tests.
 
-Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to “Change the size of text, apps and other items”. This field is available by right-clicking on your display and selecting Display settings. 
+### Certificate Thumbprint Errors
 
-## Missing configuration file
+#### Error Example
 
 ```
-Result Stack Trace:
-System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
-System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName, Configuration configuration)
-System.ServiceModel.ChannelFactory.InitializeEndpoint(String configurationName, EndpointAddress address, Configuration configuration)
-System.ServiceModel.Configuration.ConfigurationChannelFactory`1..ctor(String endpointConfigurationName, Configuration configuration, EndpointAddress remoteAddress)
-MS.Dynamics.TestTools.CloudCommonTestUtilities.Services.ConfigurationClientBase`1.InitConfigurationChannelFactory(Configuration config, String endpointConfigurationName, EndpointAddress remoteAddress)
-MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ReliableCommunicationManagerProxy..ctor(String endpointConfigurationName, EndpointAddress remoteAddress)
-MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor(String endpointConfigurationName)
-MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor()
-Microsoft.Dynamics.TestTools.Dispatcher.ISDispatcher.ISDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
-Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
-Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
-MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend() in 
-
-Debug Trace:
-Default: DateTime="09/20/2016 23:53:42" "Changing company from  to USMF"
-Default: DateTime="09/20/2016 23:53:43" "Opening ISDispatcher client."
-Default: DateTime="09/20/2016 23:53:43" "Reliable communication manager proxy pointing to URL: https://<BaseURL>/Services/ReliableCommunicationManager.svc"
+Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
+System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
+'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
+MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
+Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
 ```
 
-### Solution
-This error message indicates that you’re missing **MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config**. Check that this file has been added to vsonline.testsettings, note there are two files with similar names except one is a __\*.dll__ and the other is __\*dll.config__. 
+#### Solution
+There are a number of reasons that you could be seeing this error message:
+1.	There could be invisible unicode characters in the certificate's thumbprint when you copied it into CloudEnvironment.config and wif.config.  To check this, paste your thumbprint into a Unicode code converter and see if extra characters show up in the HTML/XML field:
 
+![Unicode code converter](./media/)
+ 
 
+ 
+2.	The certificate may not be installed on the AOS machine. Check that the certificate can be found on the AOS machine by running the following PowerShell script:
 
+```
+cd Cert:\LocalMachine\My
+Get-ChildItem | Where-Object { $_.Subject -like "CN=<your certificate's name>" }
+```
+
+If the thumbprint is not printed in the PowerShell console after running the script, this means the certificate cannot be found and must be installed following the steps described earlier in the instructions
+ 
+3.	If this issue is present when running load tests, it is possible that the corresponding .pfx file is not being installed correctly by the setup scripts.  Check that the password specified in CloudCtuFakeACSInstall.cmd matches the password that the certificate was created with:
+ 
+![Match password](./media/)
+ 
+### No Endpoint Listening
+This issue can show up when running single or multi-user tests, or when creating users with MS.Dynamics.Performance.CreateUsers.exe.
+#### Error Example
+Failed with the following error:
+
+```
+System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at <web address> that could accept the message. This is often caused by an incorrect address or SOAP action. 
+```
+
+#### Solution
+This issue indicates that the host specified in the CloudEnvironment.config is not accessible from the machine which is attempting to run the tests or create users.
+ 
+In the CloudEnvironment.config file, check the values specified by the following keys:
+
+```
+<ExecutionConfigurations Key="HostName" Value="web address of host" />
+<ExecutionConfigurations Key="SoapHostName" Value="web address of SOAP" />
+```
+The web addresses specified here must be the environment that you are testing.  Ensure that you can navigate to this web address within a web browser from your developer machine.
+ 
+In the case of online load tests, the environment specified by the HostName field in the CloudEnvironment.config must be publicly accessible from any machine.  This means that you will not be able to load test a OneBox environment using Visual Studio Online.
+
+### Could Not Enumerate AX Users
+This issue can show up when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe.
+
+#### Error Example
+
+```System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.InvalidOperationException: Could not enumerate AX users ---> System.ServiceModel.FaultException'1[System.ComponentModel.Win32Exception]: Forbidden
+```
+
+#### Solution
+The user specified as the SelfMintingAdminUser must have the System Administrator role. This error will occur when the wrong user is specified as the SelfMintingAdminUser. You can check that you are specifying the correct user by logging onto the endpoint and viewing the user's roles.
+
+![Administrator user](./media/)
+
+### Forbidden Request with Client Authentication Scheme 'Anonymous'
+
+#### Error Example
+```
+Initialization method <Test class name>.TestSetup threw exception. System.ServiceModel.Security.MessageSecurityException: System.ServiceModel.Security.MessageSecurityException: The HTTP request was forbidden with client authentication scheme 'Anonymous'. ---> System.Net.WebException: The remote server returned an error: (403) Forbidden..
+```
+
+#### Solution
+This issue can occur when the number of users specified by the UserCount field in the CloudEnvironment.config  is greater than the number of test users created by running MS.Dynamics.Performance.CreateUsers.exe.  Ensure that you created more test users than you are requesting in CloudEnvironment.config
+ 
+![Cloud environment configuration](./media/)
+
+### At Least One Security Token Could Not Be Validated
+This issue can show up when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe. The issue tends to be present when the AOS machine is a different machine than the developer machine. 
+
+#### Error Example
+
+```System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.Security.MessageSecurityException: An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail. ---> System.ServiceModel.FaultException: At least one security token in the message could not be validated.
+```
+
+#### Solution
+This issue is caused by the AOS endpoint not being able to validate the thumbprint of the certificate you created. The two possible reasons for this are the following:
+1.	The certificate has not been installed on the AOS machine.
+2.	The thumbprint of the certificate was not added to the wif.config file on the AOS machine.
+ 
+For the case where the certificate has not been installed on the AOS machine, copy the .cer file that you created earlier in the instructions to the AOS machine. Install the .cer file in the "Trusted Root Certification Authorities" store on the AOS machine
+ 
+For the case where the thumbprint of the certificate has not been added to the wif.config, please refer back to the section that describes the lines that must be added to the wif.config. Be sure to perform IISRESET after modifying wif.config.
+ 
+### Missing MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config in Deployment Items
+This issue usually only occurs when performing load tests.
+
+#### Error Example
+
+```
+<Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Could not find endpoint element with name 'ClientCommunicationManager' and contract 'Microsoft.Dynamics.Client.InteractionService.Communication.Reliable.IReliableCommunicationManager' in the ServiceModel client configuration section. This might be because no configuration file was found for your application, or because no endpoint element matching this name could be found in the client element.. at System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
+```
+
+#### Solution
+This is caused by being unable to locate the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file when the load tests run. This happens when the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file was not added as a deployment item. To verify that this is the case, check if the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is in the out folder for the test run: 
+
+```
+<solution path>\TestResults\<your test run>\Out
+```
+
+If the config file is missing, simply add it to the deployment items in the test settings in the same way as in Issue 6.
+ 
+Note that there are two very similarly named files. One is *.dll and one is *.dll.config. The *.dll.config must be in the deployment items in the test settings.
+ 
+### Missing CloudEnvironment.config in Deployment Items
+This issue usually only occurs when performing load tests.
+
+#### Error Example
+
+```
+Initialization method <Test class name>.TestSetup threw exception. 
+System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> MS.Dynamics.TestTools.TestLogging.EvaluateException: Assert.Fail failed. DateTime="10/13/2017 14:42:55" "The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception.".
+```
+
+#### Solution
+This issue is caused when the CloudEnvironment.config file is not present when the tests run. Typically shows up when running load tests and the CloudEnvironment.config file was not added as a deployment item. To verify that this is the case, check if the CloudEnvironment.config is in the out folder for the test run: <solution path>\TestResults\<your test run>\Out
+If the config file is missing, simply add it to the deployment items in the test settings:
+
+![Test settings](./media/)
+
+### InteractiveClientID was not Specified in Settings
+
+#### Error Example
+```The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception. --->
+Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not specified in settings
+```
+
+#### Solution
+This error occurs when the field SelfSigningCertificateThumbprint is left blank in the CloudEnvironment.config file. Paste the thumbprint of the certificate you created and installed in the following line in the CloudEnvironment.config file:
+
+```
+<ExecutionConfigurations Key="SelfSigningCertificateThumbprint" Value="" />
+``` 
+### An Existing Connection was Forcibly Closed by the Remote Host
+
+#### Error Example
+
+```
+System.TypeInitializationException: System.TypeInitializationException: The type initializer for
+'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
+System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
+<Host name>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
+that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
+by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
+The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
+Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
+System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
+```
+
+#### Solution
+Run the following Windows PowerShell script on the development machine:
+
+```
+Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
+if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319)) 
+{ 
+ Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
+}
+```
