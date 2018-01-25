@@ -74,7 +74,7 @@ Do not assign any other main account type, such as **Balance sheet** or **Profit
 To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
 
 
-# Entity store
+## Entity store
 The data for **Financial Insights** is pulled from the Entity store (**System administration** > **Setup** > **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
  
 ![Warning](./media/Cantdisplay.png)
