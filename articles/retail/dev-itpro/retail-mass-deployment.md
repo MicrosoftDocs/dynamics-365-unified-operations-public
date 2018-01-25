@@ -76,8 +76,9 @@ This functionality works in Microsoft Dynamics 365 for Retail. The December 2017
     > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  Once the activation of these devices are complete, verify that no remaining devices are still configured to be activated through mass deployment. By default, a device may only be activated once through the mass deployment workflow.  Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
 
 #### Important concepts
-There are two important concepts to the mass deployment of Retail Modern POS.  Device permission and user permission.
-1. Each Retail Modern POS device now has a permission to **Allow mass activation**.  This permission allows the device to be activated one, and only one, time without Azure Active Directory credentials (AAD credentials are required for device activation normally).  While not recommended, if the device requires reactivation and the mass deployment flow is still needed, it is required to reset the **Activation status** of the device to the **Pending** state.  Then set the **Allow mass activation** permission to yes.
+There are two important concepts to the mass deployment of Retail Modern POS: device permission and user permission.
+
+1.Each Retail Modern POS device now has a permission to **Allow mass activation**.  This permission allows the device to be activated one, and only one, time without Azure Active Directory credentials (AAD credentials are required for device activation normally).  While not recommended, if the device requires reactivation and the mass deployment flow is still needed, it is required to reset the **Activation status** of the device to the **Pending** state.  Then set the **Allow mass activation** permission to yes.
 2. Each user has a new POS permissions.  This permission, **Allow mass activation**, has been created to allow a user to activate a device that has been configured to activate through mass deployment.  This permission can be set directly on the user's POS permissions or at the group level.  To update a group's permissions, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.  In this page, select the appropriate permission group (E.g. Manager) and set the permission **Allow mass activation** to yes.  This will allow all users set to this permission group to activate a mass deployed Retail Modern POS device.
 
 ### Configure mass deployment
@@ -90,7 +91,7 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 5. On the Action Pane, select **Save**.
 6. On the drop-down menu, select **Configuration file**.
 7. Use the menu in the upper left to go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-8. On the lefthand side, select the **1060** (Also known as **Staff**) job.
+8. On the lefthand side, select the **1060** (also known as **Staff**) job.
 9. On the Action Pane, select **Run now**.
 10. On the verification message that appears stating **Do you want to run job 1060**, select **Yes**.
 
@@ -116,7 +117,7 @@ There are two important concepts to the mass deployment of Retail Modern POS.  D
 
     > [!NOTE]
     > The system will generate and collect all of the configuration files and unique Retail Modern POS packages associated with the selected nodes and create a zipped folder to download. If the nodes listed contain a large amount of devices, the generation and collection can take some time to complete and show the download. 
-    > Further, a new file titled **RetailAssociationMap.xml** will be generated. This new file allows for easy consumption of configurations.  A configuration includes the name of the configuration file, the name of the installer, the name of the device (Also known as terminal), and the name of the register.  This file will be discussed in more detail further in this article.
+    > Further, a new file titled **RetailAssociationMap.xml** will be generated. This new file allows for easy consumption of configurations.  A configuration includes the name of the configuration file, the name of the installer, the name of the device (also known as terminal), and the name of the register.  This file will be discussed in more detail further in this article.
     
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
@@ -128,7 +129,7 @@ The zipped folder generated and downloaded in the previous sub-heading (Download
 2. The list of one or more Retail Modern POS installation executables.  There will be one file for each unique instance of Retail Modern POS across all the devices that were selected to be downloaded.
 
     > [!NOTE]
-    > As an example of this, assume there are ten devices downloaded.  One of these devices has been configured (Per the Devices page in headquarters) to utilize the customized version of Retail Modern POS titled **MPOS_V1.1.7.exe**.  The other nine devices have been configured to utilize the previous customized version of Retail Modern POS titled **MPOS_V1.1.6.exe**.  Despite there being ten devices, there are only two unique versions of the installer.  When downloading these ten devices, only two executable installers are downloaded (One for each of these two unique instances).
+    > As an example of this, assume there are ten devices downloaded.  One of these devices has been configured (per the Devices page in headquarters) to utilize the customized version of Retail Modern POS titled **MPOS_V1.1.7.exe**.  The other nine devices have been configured to utilize the previous customized version of Retail Modern POS titled **MPOS_V1.1.6.exe**.  Despite there being ten devices, there are only two unique versions of the installer.  When downloading these ten devices, only two executable installers are downloaded (One for each of these two unique instances).
 
 3. The **RetailAssociationMap.xml** identifies the association between device (Terminal) and the installer.  It does this using a list of configurations.  A configuration shows which specific unique installer (See the previous line above), it's associated configuration file, the associated register, and the associated device (Also known as terminal).  This XML file is generated to assist the users in pushing out the appropriate files to the appropriate systems and running the installer correctly.
 
@@ -143,6 +144,7 @@ This section shows examples regarding self-service mass deployment for Retail Mo
 
 #### Example PowerShell scripts
 The following basic script will list the configurations in the **RetailAssociationMap.xml** file:
+
 ```
 $path = ".\RetailAssociationMap.xml"
 $Xpath = "/Configurations/Configuration"
@@ -150,6 +152,7 @@ select-xml -path $Path -xPath $xpath | Select-Object -ExpandProperty Node
 ```
 
 The following basic script will select a specific configuration (by filtering based upon a specific value) in the **RetailAssociationMap.xml** file.  Using this as a basis for a larger script would assist in pulling the specific XML configuration file and executable installer necessary to a particular computer:
+
 ```
 $path = ".\RetailAssociationMap.xml"
 $Xpath = "/Configurations/Configuration[@Device='HOUSTON-3']"
