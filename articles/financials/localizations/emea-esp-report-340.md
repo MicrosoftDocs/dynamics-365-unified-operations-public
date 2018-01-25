@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-Report 340 is a report that replaced two reports (Sales and Purchases Statutory Books) that all Spanish companies submited as hard copy to the Spanish tax authorities. Although Report 340 replaces the sales and purchase statutory books, these reports will not be deleted from Microsoft Dynamics AX, and companies can send either Report 340 or the statutory books to the tax authorities. 
-
-At this time, Spanish companies submit sales and purchase statutory books to the Spanish tax authorities in paper form. Report 340 is a new report that will eventually replace this procedure. The new report will be uploaded to the tax authority Web site or submitted using a software package that is available free of cost from the tax authority. Report 340 will contain information about all invoices and taxes pertaining to invoices that were issued or received by a company during a specific period. Report 340 will be submitted to the tax authorities during the first 20 days of the month or quarter, depending on the size of the company. The first report will be sent in February 2009, and will contain records for January. 
+Report 340 is a report that replaced two reports (Sales and Purchases Statutory Books) that all Spanish companies submited as hard copy to the Spanish tax authorities. 
+The new report may be uploaded to the tax authority Web site or submitted using a software package that is available free of cost from the tax authority. Report 340 contains information of all invoices and taxes pertaining to invoices that were issued or received by a company during a specific period. Report 340 should be submitted to the tax authorities during the first 20 days following the reporting period (month or quarter, depending on the size of the company). 
 
 ## Entries included in Report 340
 Report 340 includes the following entries: 
-- Sales entries: Entries of VAT report lines corresponding to sales invoices and project invoices. These records are Type 2 issued invoices.
+- Sales entries: Entries of VAT report lines corresponding to sales invoices and project invoices. These records are **Type 2** issued invoices.
 - Sales credit memos (corrective invoices): Entries of VAT report lines corresponding to corrective invoices. 
-- Purchase entries: Entries of VAT report lines corresponding to purchase invoices. These records are Type 2 received invoices.
+- Purchase entries: Entries of VAT report lines corresponding to purchase invoices. These records are **Type 2** received invoices.
 - Purchase credit memos: Entries of VAT report lines corresponding to corrective invoices. 
 - Auto-invoices and auto-credit memos: Entries of VAT report lines corresponding to auto-invoices and auto-credit memos, which are created when goods or services are delivered by a vendor in the European Union.
 - Invoices that include equivalence charge. Equivalence charge is a Spanish sales tax type.
@@ -50,18 +49,18 @@ Report 340 includes the following entries:
 1. Click *Tax > Setup > Sales tax > Spanish VAT books*. 
 2. In the **VAT book** and **Description** fields, enter the name and the description for the VAT book. 
 3. In the **Number sequence code** field, select a number sequence code. 
-4. In **Setup** area click **Add** button to setup, which sales tax transactions should be included in the report: 
-   - in the **Sales tax code** field, select a sales tax code. The selected sales tax code specifies, which VAT transactions should be  selected in the VAT book created. 
-   - in the **Equivalence charge code** field, select the equivalence charge if needed. The selected sales tax code specifies, which VAT transactions should be selected in the VAT book created. 
+4. In **Setup** area click **Add** button to setup sales tax codes on which sales tax transactions should be included in the report: 
+   - in the **Sales tax code** field, select a sales tax code.  
+   - in the **Equivalence charge code** field, select the equivalence charge if needed.  
    - select the **Non-Deductible VAT** check box to activate non-deductible VAT for a sales tax code. Note: A purchaser is not allowed to deduct non-deductible VAT from his own VAT liability. 
-   - Select the **Reverse Charge** check box to activate reverse charge for a sales tax code. Note:  In some cases, goods or services are delivered by a foreign company. Reverse charge is a component of the VAT law whereby the VAT on such goods and services is payable by the recipient company and not the foreign company. 
+   - Select the **Reverse Charge** check box to activate reverse charge for a sales tax code. Note: in some cases, goods or services are delivered by a foreign company. Reverse charge is a component of the VAT law whereby the VAT on such goods and services is payable by the recipient company and not the foreign company. 
 5. Click the **Spanish VAT reports** button to open the **Spanish VAT reports** form. 
 9. Click **Create new** button to create a new report and fill in the fields in the **Spanish VAT list** form (**VAT book**, **Description**, **Settlement period**, **From date**, **Start numbering**): 
    - Select the value in the **Method of numbering** field 
    - Select the **Replacement declaration** check box to replace the previous declaration. 
    - in the **Previous declaration number** field, enter the 13-digit number of the previous declaration. Note:  The **Previous declaration number** field is editable only if the **Replacement declaration** check box is selected. 
 10. Click **OK** button to return to the **Spanish VAT reports** form. The system inserts information to the **Spanish VAT reports** form from the **Spanish VAT list** form. You cannot modify the values in the **Settlement period**, **Method of numbering**, **From date** fields in the **Spanish VAT reports** form.
-11. **General** tab:
+11. Fill in the fields on **General** tab:
   - in the **Presentation type field**, select the type of media to be used to export the file: **Telematic** – upload the report to the tax authority Web site or submit the report using software provided by the tax authority. **CD-R** – send the report to the tax authority on a CD-ROM. Report  Note: select either **Telematic** or **CD-R**. If you select **Report**, an error message is displayed. 
   - Select the **Reported** check box to generate the final report. 
   - In the **Contact person** field, enter the name of the contact person. 
@@ -71,7 +70,7 @@ Report 340 includes the following entries:
 12. Click the **Totals** button to open the **Totals** form. In the form, you can view:  
   - **Number of operations** – the total number of sales or receivables under the **Deliveries** field group, the total number of purchases or payables under the **Acquisitions** field group. 
   - **Amount** – the total amount of the sales or receivables under the **Deliveries** field group and the total number of purchases or payables under the **Acquisitions** field group. 
-13. Click the **VAT report lines** button to open the **VAT report lines** form. In the form, you can view the details of VAT transactions. You can delete lines if they are not required to be reported at the time of exporting the report. 
+13. Click the **VAT report lines** button to open the **VAT report lines** form. In the form, you can view the details of VAT transactions. You can delete or Exclude lines from report if they are not required to be reported at the time of exporting the report. 
 14. Click the **Output** button and select from the following: **Print** or **Export to ASCII file**. Note: if the VAT report contains no transactions, an error message is displayed. 
     - In the **Export to ASCII** form, select the file to be exported and click **OK**. Tax law forbids the export of ASCII files for years prior to 2009. However, you can print pre-2009 records.
     - In the **Spanish VAT register book** form select format in the **Format mapping** field.
