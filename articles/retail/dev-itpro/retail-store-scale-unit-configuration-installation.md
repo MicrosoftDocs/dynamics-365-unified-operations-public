@@ -6,7 +6,7 @@ description: This topic explains how you can use self-service to configure Retai
 
 author: jashanno
 manager: AnnBe
-ms.date: 01/18/2018
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -292,7 +292,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
     > [!NOTE]
     > At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the healthcheck again.
 
-6. Start **Microsoft Internet Information Services (IIS)** (Also known as just **IIS**), select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
+6. Start **Microsoft Internet Information Services (IIS)**, select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
 7. Explore the working directory.
 8. Open the Web.config file, and then, in the **connectionStrings** section, add **Server name**. **Server name** is the name of the first computer where you installed components. Save the file.
 9. If the certificate that is used isn't a valid, trusted certificate from a trusted authority, open CERTMGR.MSC, and follow these steps:
