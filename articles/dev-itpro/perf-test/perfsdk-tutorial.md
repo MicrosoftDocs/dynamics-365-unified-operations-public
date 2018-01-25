@@ -3,9 +3,9 @@
 
 title: Performance SDK and multiuser testing via Visual Studio Online
 description: This tutorial introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. It also shows how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
-author: RobinARH
+author: margoc
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chwolf
+ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -317,7 +317,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 There are a number of reasons that you could be seeing this error message:
 1.	There could be invisible unicode characters in the certificate's thumbprint when you copied it into CloudEnvironment.config and wif.config.  To check this, paste your thumbprint into a Unicode code converter and see if extra characters show up in the HTML/XML field:
 
-![Unicode code converter](./media/)
+![Unicode code converter](./media/sdk_unicode_code_converter.jpg)
  
 
  
@@ -333,7 +333,7 @@ If the thumbprint is not printed in the PowerShell console after running the scr
  
 3.	If this issue is present when running load tests, it is possible that the corresponding .pfx file is not being installed correctly by the setup scripts.  Check that the password specified in CloudCtuFakeACSInstall.cmd matches the password that the certificate was created with:
  
-![Match password](./media/)
+![Match password](./media/set_cloudctufakeacsinstall.jpg)
  
 ### No Endpoint Listening
 This issue can show up when running single or multi-user tests, or when creating users with MS.Dynamics.Performance.CreateUsers.exe.
@@ -371,7 +371,7 @@ This issue can show up when running multi-user tests or creating users with MS.D
 #### Solution
 The user specified as the SelfMintingAdminUser must have the System Administrator role. This error will occur when the wrong user is specified as the SelfMintingAdminUser. You can check that you are specifying the correct user by logging onto the endpoint and viewing the user's roles.
 
-![Administrator user](./media/)
+![Administrator user](./media/sdk_admin.png)
 
 ### Forbidden Request with Client Authentication Scheme 'Anonymous'
 
@@ -383,7 +383,7 @@ Initialization method <Test class name>.TestSetup threw exception. System.Servic
 #### Solution
 This issue can occur when the number of users specified by the UserCount field in the CloudEnvironment.config  is greater than the number of test users created by running MS.Dynamics.Performance.CreateUsers.exe.  Ensure that you created more test users than you are requesting in CloudEnvironment.config
  
-![Cloud environment configuration](./media/)
+![Cloud environment configuration](./media/cloud-env-config.png)
 
 ### At Least One Security Token Could Not Be Validated
 This issue can show up when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe. The issue tends to be present when the AOS machine is a different machine than the developer machine. 
@@ -438,7 +438,7 @@ This issue is caused when the CloudEnvironment.config file is not present when t
 If the config file is missing, simply add it to the deployment items in the test settings:
 
 
-![Test settings](./media/)
+![Test settings](./media/test-settings.png)
 
 ### InteractiveClientID was not Specified in Settings
 
