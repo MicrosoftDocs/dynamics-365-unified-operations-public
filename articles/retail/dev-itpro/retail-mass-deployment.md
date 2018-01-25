@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass deployment of Retail self-service components
-description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates and mass deployment and activation of Retail Modern POS is available.
+description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. 
 author: jashanno
 manager: AnnBe
 ms.date: 01/25/2018
@@ -23,7 +23,7 @@ ms.search.scope: Retail, Operations
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31]
+ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
 ---
 
@@ -38,11 +38,11 @@ The following table shows the delimiters that can currently be used in execution
 |---------------------------|-------------|
 | -S or -Silent             | Silently run the installer. No graphical user interface is used.  Quiet (-Q or -Quiet) may also be used to the same effect. |
 | -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
-| -FilePath                 | Specify a custom installation location. (We don't recommend that you use this delimiter for a standard installation.) |
-| -LogFile                  | Specify a custom log file location for the installation logs. (We don't recommend that you use this delimiter for a standard installation.) |
-| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.  You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
-| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation. You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station. You should use this delimiter only for development and testing. (We don't recommend that you use this delimiter for a standard installation.) |
+| -FilePath                 | Specify a custom installation location.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -LogFile                  | Specify a custom log file location for the installation logs.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.  You should use this delimiter only for development and testing.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation. You should use this delimiter only for development and testing.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station. You should use this delimiter only for development and testing.<br><br>We don't recommend that you use this delimiter for a standard installation. |
 
 ## Silent servicing
 ### Before you begin
