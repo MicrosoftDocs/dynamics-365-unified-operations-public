@@ -5,7 +5,7 @@ title: Mass deployment of Retail self-service components
 description: This topic explains how you can use self-service to do silent servicing updates, initial deployments, and some concepts of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates and mass deployment and activation of Retail Modern POS is available.
 author: jashanno
 manager: AnnBe
-ms.date: 11/07/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
