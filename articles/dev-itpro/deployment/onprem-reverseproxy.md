@@ -50,7 +50,7 @@ Perform the below steps in **each** node of type OrchestratorType in the Service
 			<defaultProxy enabled="true" >
 				<proxy <<<SET YOUR PROXY SETTINGS>> />
 	   	 	</defaultProxy>
-    		</system.net>
+    	</system.net>
 	```
 
 4. Save the file.
