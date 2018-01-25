@@ -3,7 +3,7 @@
 
 title: Software lifecycle policy and list of releases
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
-author: ryanCcarlson 
+author: RyanCCarlson2 
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
