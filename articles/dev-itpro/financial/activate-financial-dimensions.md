@@ -49,7 +49,7 @@ Adding a financial dimension is typically a very deliberate business process. If
 
 The **Rebuild financial dimensions** option is set to **No** by default, as it is a process that should only be run if unexpected results occur during the initial activation process. This will drop and re-add all financial dimensions and values to the tables.
 
-# See also
+## See also
 
 [Set up financial dimensions (Task guide)](../../financials/general-ledger/tasks/define-financial-dimensions.md)
 

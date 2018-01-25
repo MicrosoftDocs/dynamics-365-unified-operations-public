@@ -99,7 +99,7 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
    ![Add contracts](media/SupportAddPlans.png) 
    
    
-# Report production outage
+## Report production outage
 Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
 
 This feature is available to all customers that have purchased Dynamics 365 Finance and Operations, Enterprise edition and have **implementation** projects with a **production** environment deployed in LCS.  
@@ -123,7 +123,7 @@ This feature is available to:
 - A production environment in the LCS Project 
 - All support plans
 
-## Report a production outage
+### Report a production outage
 1. Log into you LCS project.
 2. From the hamburger menu, click **Support**.
 

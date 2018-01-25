@@ -52,7 +52,7 @@ Currently, **Financial Insights** is used to view data for either the active leg
 
 The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-# Finance and Operations setup
+## Finance and Operations setup
 **General ledger**
 
 The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
@@ -74,7 +74,7 @@ Do not assign any other main account type, such as **Balance sheet** or **Profit
 To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
 
 
-# Entity store
+## Entity store
 The data for **Financial Insights** is pulled from the Entity store (**System administration** > **Setup** > **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
  
 ![Warning](./media/Cantdisplay.png)
@@ -99,7 +99,7 @@ In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure enti
 
 You can define a recurring batch to regularly update the data in the entities. Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully. The primary entity that is used for financial statements is the FinancialReportingTransactionData entity. Therefore, you might decide to update that entity more often.
 
-# Security
+## Security
 Currently, the data on embedded Power BI reports can’t be limited to the legal entities that the user has access to. Therefore, the embedded Power BI reports are controlled through duties in the security setup. The duties that are defined allow access to data for either all legal entities or only the active company. The following table shows the duties that exist and the roles that they are assigned to. The duties can be removed or assigned to different roles, based on your organization’s requirements.
 
 | **Duty**                     | **Roles**                                       | Decription                     |
@@ -109,7 +109,7 @@ Currently, the data on embedded Power BI reports can’t be limited to the legal
 | View financial insights cross company   | •	In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn’t assigned to a role. •	In the next release, this duty will be assigned to the Chief financial officer role. | •	This duty provides access to the menu item for the CFO overview workspace. •	By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities.             |
 
 
-# How financial statements work
+## How financial statements work
 Although **Financial Insights** does contain financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial Insights** are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 In addition to the visuals from the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
@@ -132,11 +132,11 @@ In addition to the visuals from the original **CFO overview** workspace, new KPI
 
 •	Sales by customer
 
-# Edit visuals
+## Edit visuals
 In the initial release of **Financial Insights**, none of the visuals can be edited. In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals. Although the .pbix files that contain the reports are available as resources, we don’t recommend that you edit the default reports. Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements. Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.
 
 
-# Filtering
+## Filtering
 Users can filter the report by using the **Filter** pane on the left. This pane is the same pane that is available through Power BI Desktop.
 There are various levels of filtering, some of which might not be available, depending on what you’ve selected on a page (tab) or whether you’re using the drill-through capabilities:
 
@@ -161,7 +161,7 @@ The **Posting layer** filter is also required. By default, the filter is set to 
 
 Filters are also available for the **Date** and **Fiscal year** fields. Typically, these filters are applied at the page level. By default, the **Date** filter uses a relational date that you can change. You can also remove the relational date filter and use the **Fiscal year** filter instead.
 
-# Currency
+## Currency
 
 All visuals that report on general ledger data show amounts in the accounting currency. Therefore, when you filter on the legal entity, you must be careful to include only legal entities that have the same accounting currency. Otherwise, you will aggregate data in different currencies.
 
@@ -169,7 +169,7 @@ All visuals that report on subledger data, such as the **Cash flow forecast** an
 
 The **Balance by bank account** visual uses amounts in the bank accounts’ currency.
 
-# Dimensions
+## Dimensions
 
 The default financial statements don’t include any financial dimensions but are focused only on the main account. Support for financial dimensions will be available in future releases, when the reports become editable. Organizations will then be able to filter on financial dimension values.
 
@@ -194,7 +194,7 @@ The following dimensions are used on the default reports. None of these dimensio
 > [!IMPORTANT] 
 > If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect. Reporting can’t determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn’t maintained anywhere. Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.
 
-# Drill on data
+## Drill on data
 
 Various levels of drilling are available through Power BI. Each level has a different name and different functionality. You can also drill on rows and columns. This section discusses the various options by using the **Trial balance** financial statement as an example and showing how you can drill on the rows. The same functionality exists for columns. You just have to change the **Drill on** setting.
 
@@ -255,7 +255,7 @@ If you expand down too far on a row, the additional filters on the financial sta
 > [!NOTE]
 > You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering. Therefore, in some situations, the sum of detailed transactions in the ASE won’t match the balance that you’re drilling back on. This functionality will continue to be enhanced in the future.
 
-# Hierarchies
+## Hierarchies
 
 The default financial statements use two hierarchies to drill and expand on the data. One hierarchy is for the rows, and the other hierarchy is for the columns. Both hierarchies are predefined in the design of the financial statement. For most financial statements, the row hierarchy is **Main account type** > **Main account categories** > **Main account**. However, some reports have additional fields, such as Country and Region. The additional nodes of the hierarchy are based on subledger data for each transaction.
 
@@ -263,7 +263,7 @@ For the columns, the hierarchy is focused on the legal entities and the fiscal p
 
 Currently, the financial statements don’t support the organizational hierarchies, which let you aggregate data.
 
-# Data limitations
+## Data limitations
 The financial statement visuals have a limit on the number of rows that can be shown. Currently, the limit is set to 30,000. If you exceed this limit, the visual will have a warning symbol to notify you about this situation.
  
 ![Data limitations](./media/data-limit.png)
@@ -271,10 +271,10 @@ The financial statement visuals have a limit on the number of rows that can be s
 
 If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.
 
-## Empty rows
+### Empty rows
 Power BI doesn’t provide an option to hide and show empty rows. If a row doesn’t have any data, the row won’t appear in the visual.
 
-# What is coming in future releases?
+## What is coming in future releases?
 The new workspaces and financial statements that use Power BI will continue to be enhanced. Here are some of the new features that are being considered for future releases:
 
  - The ability to copy, edit, delete, and create visuals, even the financial statements                                                  
@@ -291,7 +291,7 @@ The new workspaces and financial statements that use Power BI will continue to b
 
 The new features will be communicated through the roadmap website as work is started: https://roadmap.dynamics.com/.
 
-# Additional resources for Power BI
+## Additional resources for Power BI
 
 The information in the following resources isn’t required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.
 

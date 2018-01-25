@@ -37,8 +37,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes what is included in the Cost management Power BI content. 
 
-# Overview
-
 The **Cost management** Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for inventory. The **Cost management** Power BI content provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
 
 ## Key measures

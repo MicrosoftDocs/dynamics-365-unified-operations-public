@@ -122,7 +122,7 @@ select * from DIMENSIONCOMBINATIONENTITY
 ```
  
 
-# See also
+## See also
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
