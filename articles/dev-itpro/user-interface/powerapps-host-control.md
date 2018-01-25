@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Microsoft PowerApps, you can manage organizational data by running an app that you created, or an app that someone else created and shared with you. Apps run on [mobile devices such as phones](https://powerapps.microsoft.com/en-us/tutorials/run-app-client/), or you can run them [in a browser](https://powerapps.microsoft.com/en-us/tutorials/run-app-browser/) by starting Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You can create many types of apps without having to learn a programming language such as C\#. By using the PowerApps Host control that is available to developers who use Microsoft Visual Studio, you can embed a PowerApps app that you’ve created or a shared PowerApps app. To learn more about PowerApps, see [https://powerapps.microsoft.com](https://powerapps.microsoft.com/).
 
-# Host a PowerApps app on a page
+## Host a PowerApps app on a page
 
 1.  In PowerApps, find the web-based PowerApps app that you want to host, and record or copy the **App ID** value.
   
