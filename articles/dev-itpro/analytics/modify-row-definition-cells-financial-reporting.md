@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 
-# Specify a row code in a row definition
+## Specify a row code in a row definition
 
 In row definitions, the numbers or labels in the **Row Code** cell identify each line in the row definition. You can specify the row code to refer to data in calculations and totals.
 
@@ -525,8 +525,7 @@ A dimension value set is a named group of dimension values. A dimension value se
 4.  Select the set to delete, and then click **Delete**. Click **Yes** to permanently delete the dimension value set.
 
 
-See also
---------
+## See also
 
 [Financial reporting](financial-reporting-intro.md)
 
