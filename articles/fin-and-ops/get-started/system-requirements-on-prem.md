@@ -114,10 +114,12 @@ The following tables list the number of processors and the amount of random-acce
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|             | SQL Server  |  8  | 32 |
 | Sandbox    | AOS, Data management, Batch   | 4                           | 24                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|                 | SQL Server  | 8  | 32|
 
 **Minimum sizing estimates for production and sandbox deployments\***
 
@@ -127,11 +129,13 @@ The following tables list the number of processors and the amount of random-acce
 |                                                 | Management Reporter           | 2                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator\*\*              | 3                   |
+|                                                  | SQL Server  | 2   |
 | Sandbox                                         | AOS, Data management, Batch   | 2                   |
 |                                                 | Management Reporter           | 1                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator                  | 3                   |
-| *Summary for production and sandbox topologies* |                               | *16*                |
+|                                                 | SQL Server  |   1    |
+| *Summary for production and sandbox topologies* |                               | *19*                |
 
 \* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.
 
@@ -186,7 +190,7 @@ The following tables list the number of processors and the amount of random-acce
 </tbody>
 </table>
 
-\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). Separate SQL Server machines for sandbox and production environments must be used.
+\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). Separate SQL Server machines for sandbox and production environments must be used. However, SQL Server can be shared in all sandbox environments.
 
 ## Storage
 
