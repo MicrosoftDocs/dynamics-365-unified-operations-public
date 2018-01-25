@@ -55,23 +55,23 @@ Report 340 includes the following entries:
    - select the **Non-Deductible VAT** check box to activate non-deductible VAT for a sales tax code. Note: A purchaser is not allowed to deduct non-deductible VAT from his own VAT liability. 
    - Select the **Reverse Charge** check box to activate reverse charge for a sales tax code. Note: in some cases, goods or services are delivered by a foreign company. Reverse charge is a component of the VAT law whereby the VAT on such goods and services is payable by the recipient company and not the foreign company. 
 5. Click the **Spanish VAT reports** button to open the **Spanish VAT reports** form. 
-9. Click **Create new** button to create a new report and fill in the fields in the **Spanish VAT list** form (**VAT book**, **Description**, **Settlement period**, **From date**, **Start numbering**): 
+6. Click **Create new** button to create a new report and fill in the fields in the **Spanish VAT list** form (**VAT book**, **Description**, **Settlement period**, **From date**, **Start numbering**): 
    - Select the value in the **Method of numbering** field 
    - Select the **Replacement declaration** check box to replace the previous declaration. 
    - in the **Previous declaration number** field, enter the 13-digit number of the previous declaration. Note:  The **Previous declaration number** field is editable only if the **Replacement declaration** check box is selected. 
-10. Click **OK** button to return to the **Spanish VAT reports** form. The system inserts information to the **Spanish VAT reports** form from the **Spanish VAT list** form. You cannot modify the values in the **Settlement period**, **Method of numbering**, **From date** fields in the **Spanish VAT reports** form.
-11. Fill in the fields on **General** tab:
+7. Click **OK** button to return to the **Spanish VAT reports** form. The system inserts information to the **Spanish VAT reports** form from the **Spanish VAT list** form. You cannot modify the values in the **Settlement period**, **Method of numbering**, **From date** fields in the **Spanish VAT reports** form.
+8. Fill in the fields on **General** tab:
   - in the **Presentation type field**, select the type of media to be used to export the file: **Telematic** – upload the report to the tax authority Web site or submit the report using software provided by the tax authority. **CD-R** – send the report to the tax authority on a CD-ROM. Report  Note: select either **Telematic** or **CD-R**. If you select **Report**, an error message is displayed. 
   - Select the **Reported** check box to generate the final report. 
   - In the **Contact person** field, enter the name of the contact person. 
   - In the **Telephone** field, enter the telephone number of the contact person. 
   - In the **Document** field, enter the four-digit document number. If you enter a number containing fewer than four digits, preceding zeros are appended to create a four-digit number. For example, if you enter 1, AX will automatically convert it to 0001 and store it. 
   - In the **Electronic** field, enter the 16-digit electronic code. This number is provided by the authorities and it is mandatory. 
-12. Click the **Totals** button to open the **Totals** form. In the form, you can view:  
+9. Click the **Totals** button to open the **Totals** form. In the form, you can view:  
   - **Number of operations** – the total number of sales or receivables under the **Deliveries** field group, the total number of purchases or payables under the **Acquisitions** field group. 
   - **Amount** – the total amount of the sales or receivables under the **Deliveries** field group and the total number of purchases or payables under the **Acquisitions** field group. 
-13. Click the **VAT report lines** button to open the **VAT report lines** form. In the form, you can view the details of VAT transactions. You can delete or Exclude lines from report if they are not required to be reported at the time of exporting the report. 
-14. Click the **Output** button and select from the following: **Print** or **Export to ASCII file**. Note: if the VAT report contains no transactions, an error message is displayed. 
+10. Click the **VAT report lines** button to open the **VAT report lines** form. In the form, you can view the details of VAT transactions. You can delete or Exclude lines from report if they are not required to be reported at the time of exporting the report. 
+11. Click the **Output** button and select from the following: **Print** or **Export to ASCII file**. Note: if the VAT report contains no transactions, an error message is displayed. 
     - In the **Export to ASCII** form, select the file to be exported and click **OK**. Tax law forbids the export of ASCII files for years prior to 2009. However, you can print pre-2009 records.
     - In the **Spanish VAT register book** form select format in the **Format mapping** field.
     The information is retrieved from the **VAT report lines** form.  
