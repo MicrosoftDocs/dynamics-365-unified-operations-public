@@ -50,6 +50,7 @@ These introductory topics contain general information about customization, inclu
 This section lists the extensibility-related updates that have been made since July 2017.
 
 + [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
 
 ## Getting started
 
@@ -69,16 +70,17 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
 
-## Upcoming: Fall release 2017 
+## Changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
-The following topics provide an overview of the extensibility changes proposed for the fall 2017 release of Finance and Operations. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
+The following changes were introduced in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
 + [Inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-+ [Enabling extensibility on pricing](https://blogs.msdn.microsoft.com/mfp/2017/09/21/enabling-extensibility-on-pricing/)
-+ [Map extensions](https://blogs.msdn.microsoft.com/mfp/2017/09/22/table-map-extensions/)
-  + [Extending table maps used as interfaces](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-as-interfaces/)
-  + [Extending table maps used for versioning](https://blogs.msdn.microsoft.com/mfp/2017/09/22/extending-table-maps-used-for-versioning/)
-
++ [Changes to price and discount extensibility](pricing-app73.md)
++ [Table map extension](map-extensions.md)
+  + [Extend table maps used as interfaces](maps-as-interfaces.md)
+  + [Extend table maps used for versioning](maps-with-versioning.md)
+  
 ## How do I..?
 
 Here is where you find "How do I?" topics on customizing specific object types or code. Most of these topics are brief and to the point. There are many topics here, so searching for a particular topic may be practical.
@@ -91,6 +93,7 @@ Here is where you find "How do I?" topics on customizing specific object types o
 + [Register a subclass for factory methods](register-subclass-factory-methods.md)
 + [Respond with EventHandlerResult](respond-event-handler-result.md)
 + [Extend the RunBase class](extend-runbase-class.md)
++ [Use delegates to customize Application startup](startup-customizations.md)
 
 ### Tables
 + [Modify an existing field in a table](modify-existing-field.md)

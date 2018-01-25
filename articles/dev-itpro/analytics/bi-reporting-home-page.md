@@ -5,7 +5,7 @@ title: Intelligence
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
@@ -53,7 +53,6 @@ Users can interact with data by clicking or touching visuals on the page. They c
  - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
  - [Power BI Embedded integration](power-bi-embedded-integration.md)
  - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Publish analytical applications on Power BI](publish-apps-powerbi.md)
  - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
  - [Power BI content for Finance and Operations](power-bi-home-page.md)
 
@@ -93,10 +92,7 @@ To learn more, see the following topics:
 ## Technical reference reports
 The following reports provide reference information about the objects in Finance and Operations:
 
-- [Aggregate data entities report](aggregate-data-entities-report.md)
-- [Aggregate measurements report](aggregate-measurements-report.md)
 - [Data entities report](../data-entities/data-entities-report.md)
-- [Key performance indicators (KPIs) report](key-performance-indicators-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services reports report](SSRS-report.md)
 - [Workflow types report](../../fin-and-ops/organization-administration/workflow-types-report.md)

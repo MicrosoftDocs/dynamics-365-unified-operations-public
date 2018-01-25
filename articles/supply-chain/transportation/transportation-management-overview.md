@@ -3,7 +3,7 @@
 
 title: Transportation management overview
 description: This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

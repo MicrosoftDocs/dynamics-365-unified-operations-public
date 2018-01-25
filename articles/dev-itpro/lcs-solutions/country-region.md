@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: ERWorkspace 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -228,6 +227,7 @@ The following sections list resources by country/region.
 -   [VAT statements details](../../financials/localizations/emea-ita-vat-statements-details.md)
 -   [Competence date for transactions](../../financials/localizations/emea-ita-competence-date.md)
 -   [Manual depreciation of fixed assets](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
 -   [Packing slip date verification on invoices for Italy](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 -   [Italian sales tax books](../../financials/localizations/emea-ita-fiscal-books.md)
 -   [Split payment for invoices issued to the Public Administration](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -279,6 +279,8 @@ The following sections list resources by country/region.
 
 ### Norway
 
+-   [Cash registers for Norway](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Deployment guidelines for cash registers for Norway](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets import format](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [VAT statement](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

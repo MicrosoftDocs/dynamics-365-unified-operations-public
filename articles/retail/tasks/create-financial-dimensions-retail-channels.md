@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronization of sales orders directly between Sales and Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to run two-way synchronization of sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -18,14 +18,14 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
 ---
@@ -34,13 +34,13 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to run two-way synchronization of sales order headers and lines directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Templates and tasks
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following templates and underlying tasks are used to run two-way synchronization of sales order headers and lines directly between Sales and Finance and Operations:
+The following templates and underlying tasks are used to run synchronization of sales orders directly between Sales and Finance and Operations:
 
 - **Names of the templates in Data integration:** 
 

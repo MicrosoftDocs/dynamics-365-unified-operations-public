@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Event
-description: 
+description: Event module
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:

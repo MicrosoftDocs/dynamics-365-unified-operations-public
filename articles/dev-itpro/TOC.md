@@ -2,6 +2,7 @@
 # [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
 # [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Demo data](../fin-and-ops/get-started/demo-data.md)
+## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
 # [Develop and customize using Visual Studio](dev-tools/developer-home-page.md)
@@ -113,6 +114,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
+#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -124,6 +126,7 @@
 #### [Register a subclass for factory methods](extensibility/register-subclass-factory-methods.md)
 #### [Respond with EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Extend the RunBase class](extensibility/extend-runbase-class.md)
+#### [Use delegates to customize Application startup](extensibility/startup-customizations.md)
 #### [Modify an existing field in a table](extensibility/modify-existing-field.md)
 #### [Add a new field to an existing table](extensibility/add-field-extension.md)
 #### [Add an index to an existing table](extensibility/add-index.md)
@@ -136,6 +139,10 @@
 #### [Modify form control properties](extensibility/modify-control-properties.md)
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
+#### [Changes to price and discount extensibility](extensibility/pricing-app73.md)
+#### [Table map extension](extensibility/map-extensions.md)
+#### [Extend table maps used as interfaces](extensibility/maps-as-interfaces.md)
+#### [Extend table maps used for versioning](extensibility/maps-with-versioning.md)
 
 
 
@@ -361,6 +368,7 @@
 ### [OData](data-entities/odata.md)
 ### [Custom services](data-entities/custom-services.md)
 ### [Recurring integrations](data-entities/recurring-integrations.md)
+### [Use third-party service testing utilities with services](data-entities/third-party-service-test.md)
 
 ## Development for integration
 ### [Data integration using data entities](data-entities/data-management-integration-data-entity.md)
@@ -395,6 +403,7 @@
 ### [Configuration data packages](data-entities/configuration-data-packages.md)
 ### [Copy configuration data between companies](data-entities/copy-configuration.md)
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
+### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
 
 ## Standard data entities
@@ -500,15 +509,20 @@
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
+### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
 ### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
+### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
+### [Update the local agent](lifecycle-services/update-local-agent.md)
+### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
-### [Apply a deployable package](deployment/apply-deployable-package-system.md)
+### [Apply updates to a cloud environment](deployment/apply-deployable-package-system.md)
 ### [Install a deployable package](deployment/install-deployable-package.md)
 ### [Troubleshoot package application issues](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +558,13 @@
 ## Upgrade to a recent update
 ### [Process for moving to the latest update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle policy](migration-upgrade/versions-update-policy.md)
-### [Upgrade to the latest platform update](migration-upgrade/upgrade-latest-platform-update.md)
+### [Apply the latest platform update to your environment](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Upgrade the Dynamics platform to the August 2016 release](migration-upgrade/update-platform-each-release.md)
 ### [Upgrade a sandbox environment](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade data in development or demo environments](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Update development tools](dev-tools/update-development-tools.md)
+### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
+### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 
 ## Hotfixes and servicing
 ### [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +582,7 @@
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
 ## [Maintenance mode](sysadmin/maintenance-mode.md)
 ## [Pre-configured system accounts](sysadmin/pre-configured-system-accounts.md)
+## [Export B2B users to Azure AD](sysadmin/implement-b2b.md)
 ## [Role-based security](sysadmin/role-based-security.md)
 ### [Security architecture](sysadmin/security-architecture.md)
 ### [Security reports](sysadmin/security-reports.md)
@@ -578,6 +595,8 @@
 ## [Batch processing](sysadmin/batch-processing-overview.md)
 ### [Batch server overview](sysadmin/batch-server-overview.md)
 ### [Create a batch job](sysadmin/tasks/create-batch-job.md)
+
+## [Create rules for Optimization advisor](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Overview of Lifecycle Services](lifecycle-services/lcs.md)

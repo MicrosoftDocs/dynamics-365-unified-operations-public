@@ -5,10 +5,10 @@ title: Define loyalty schemes
 description: This procedure walks through how to define a loyalty scheme. 
 author: jashanno
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -53,7 +53,7 @@ This procedure walks through how to define a loyalty scheme. Loyalty schemes are
 13. In the Reward point ID field, click the drop-down button to open the lookup.
 14. In the list, click the link in the selected row.
 15. In the Reward points field, enter a number.
-    * Amount type reward points will record earned amounts with decimals. For example, if the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Canadian Dollars, then the customer will earn 1.25 reward points. Quantity type reward points will record earned amounts in integers. Using the example where the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Canadian Dollars, then the customer will earn 1.0 reward points.  
+    * Amount type reward points will record earned amounts with decimals. For example, if the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Dollars, then the customer will earn 1.25 reward points. Quantity type reward points will record earned amounts in integers. Using the example where the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Dollars, then the customer will earn 1.0 reward points.  
 16. Click Save.
 17. Click Add line.
     * Redemption rules are used when the loyalty payment method is used.  

@@ -5,7 +5,7 @@ title: Author analytical reports by using Power BI Desktop
 description: This topic walks you through the process of authoring Power BI reports by using the local Entity Store database. 
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BIMeasurementDeployManagementEntityStore
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
@@ -88,4 +88,4 @@ Power BI Desktop also supports the creation of calculations and lets you combine
 
 ## Validating reports in a demo environment
 
-The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client. If you want a preview of the report that contains demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client. 

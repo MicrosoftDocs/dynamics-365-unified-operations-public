@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer attributes
-description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record..
+description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Retail, Operations 
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -42,9 +42,9 @@ The new customer attribute framework lets you use configurations to add new fiel
 
 ## Why and when you should configure customer attributes
 
-If you want to add new fields to the customer master record, and capture the information in POS or Retail headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Retail headquarters, you had to create new extension table in Retail headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show it in POS. You had to handle this in various POS views and scenarios, such as the **Customer details** screen and the **Customer** panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration. You don't have to write any code or create custom extension tables in Retail headquarters or the channel database.
+If you want to add new fields to the customer master record, and capture the information in POS or Retail headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Retail headquarters, you had to create a new extension table in Retail headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show them in POS. You had to handle this in various POS views and scenarios, such as the **Customer details** screen and the **Customer** panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration. You don't have to write any code or create custom extension tables in Retail headquarters or the channel database.
 
-The first version of this functionality doesn't support datetime and reference attribute types. For those attribute types, you should use extension properties and custom controls to show the details in POS.
+The first version of this functionality doesn't support **datetime** and **reference** attribute types. For those attribute types, you should use extension properties and custom controls to show the details in POS.
 
 ## Configure customer attributes in POS and Retail headquarters
 
@@ -60,7 +60,7 @@ The first version of this functionality doesn't support datetime and reference a
     > [!NOTE]
     > The **Fixed list** check box is available only for the **Text** attribute type.
 
-7. To define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
+    Alternatively, to define a range of valid values for the attribute type, select the **Value range** check box. Then, on the **Range** FastTab, enter the valid range of values.
 
 ### Define attributes
 
@@ -102,7 +102,7 @@ The first version of this functionality doesn't support datetime and reference a
 
 - Start POS, and then either open the **Customer Add/Edit** screen to set or update the attribute values for the customer, or open the **Customer details** screen to view the configured attributes.
 
-### Show customer attributes in the Customer panel on the POS transaction screen
+### Show customer attributes in the POS transaction screen
 
 #### Retail headquarters
 
@@ -125,4 +125,4 @@ The first version of this functionality doesn't support datetime and reference a
 #### POS
 
 1. Start POS, and add a customer to a transaction.
-2. Open the transaction screen to view the attributes that have been added to the **Customer** card.
+2. Open the transaction screen to view the attributes that have been added.

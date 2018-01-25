@@ -5,7 +5,7 @@ title: Supply chain management home page
 description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,7 @@ Select a feature area to learn more about it.
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/costing-sheets.md)  
 - [Inventory management](inventory/inventory-home-page.md)
-- [Master planning](master-planning/introduction-demand-forecasting.md)
+- [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
 - [Production control](production-control/production-process-overview.md)
@@ -56,9 +56,12 @@ Select a feature area to learn more about it.
 
 ## Videos
 
-### Get started  
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
-These short videos help you get started with the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+-  [Prosepct to cash integration](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
 -  [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -66,8 +69,7 @@ These short videos help you get started with the new features that are in Micros
 -  [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 -  [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
-### Tech conference recordings
-Most of these recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
+These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance</a>

@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-# ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
