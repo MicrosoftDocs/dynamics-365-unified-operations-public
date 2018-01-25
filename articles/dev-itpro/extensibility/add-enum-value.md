@@ -51,7 +51,7 @@ Usually, an extended enum must have its own implementation wherever it's used. L
 
 + If the enum has an associated class hierarchy that handles the enum, create a subclass for the extended enum–specific implementation, and uptake the construct on the base class as required. For more information, see [Register a subclass for factory methods](register-subclass-factory-methods.md).
 	
-# Extend an enum
+## Extend an enum
 
 There are two ways to extend an enum:
 
