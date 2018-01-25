@@ -46,7 +46,7 @@ The following table shows the delimiters that can currently be used in execution
 
 ## Silent servicing
 ### Before you begin
-This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, please complete this prior to following the directions explained in this article.
+This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, please complete this prior to following the directions explained in this topic.
 
 ### Examples of commands for silent servicing
 This section shows examples of commands for self-service mass deployment. The commands that are shown work for all the standard self-service installers. These installers include Retail Modern POS (both the installer with offline support and the installer without offline support), hardware station, and Retail Store Scale Unit.
@@ -62,7 +62,8 @@ ModernPOSSetup_V72.exe -S
 > A configuration file is still required for Retail Store Scale Unit. However, the installer still keeps all possible values that are currently installed.
 
 #### Silently update the current installation of Retail Store Scale Unit
-The following command silently updates the current installation of Retail Store Scale Unit by using a specific configuration file. (E.g. This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and continues to the installation steps. We recommend that you use this command only for testing and development purposes.
+The following command silently updates the current installation of Retail Store Scale Unit by using a specific configuration file. 
+(This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and continues to the installation steps. We recommend that you use this command only for testing and development purposes.
 
 ```
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
@@ -70,16 +71,16 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ## Retail Modern POS mass deployment
 ### Before you begin
-This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (Major release version 7.3.1) with App Update 1, or later, is required.  It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this article.
+This functionality works in Microsoft Dynamics 365 for Retail. The December 2017 version (release version 7.3.1) with App Update 1, or later, is required. It is assumed that all stores, registers, devices, and other configurations in headquarters have already been completed. If any configuration is still required, please complete this prior to following the directions explained in this topic.
 
     > [!NOTE]
-    > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  Once the activation of these devices are complete, verify that no remaining devices are still configured to be activated through mass deployment. By default, a device may only be activated once through the mass deployment workflow.  Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
+    > It is important that devices should only be configured for mass deployment just before the devices are deployed and activated.  After the activation of these devices is complete, verify that no remaining devices are still configured to be activated through mass deployment. By default, a device can only be activated once through the mass deployment workflow. Leaving devices configured for mass deployment for extended periods of time in an unmanaged state could be considered a security risk.
 
 #### Important concepts
 There are two important concepts to the mass deployment of Retail Modern POS: device permission and user permission.
 
-1.Each Retail Modern POS device now has a permission to **Allow mass activation**.  This permission allows the device to be activated one, and only one, time without Azure Active Directory credentials (AAD credentials are required for device activation normally).  While not recommended, if the device requires reactivation and the mass deployment flow is still needed, it is required to reset the **Activation status** of the device to the **Pending** state.  Then set the **Allow mass activation** permission to yes.
-2. Each user has a new POS permissions.  This permission, **Allow mass activation**, has been created to allow a user to activate a device that has been configured to activate through mass deployment.  This permission can be set directly on the user's POS permissions or at the group level.  To update a group's permissions, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.  In this page, select the appropriate permission group (E.g. Manager) and set the permission **Allow mass activation** to yes.  This will allow all users set to this permission group to activate a mass deployed Retail Modern POS device.
+  - Each Retail Modern POS device now has a permission to **Allow mass activation**.  This permission allows the device to be activated one, and only one, time without Azure Active Directory credentials (AAD credentials are required for device activation normally).  While not recommended, if the device requires reactivation and the mass deployment flow is still needed, it is required to reset the **Activation status** of the device to the **Pending** state.  Then set the **Allow mass activation** permission to yes.
+  - Each user has a new POS permissions.  This permission, **Allow mass activation**, has been created to allow a user to activate a device that has been configured to activate through mass deployment.  This permission can be set directly on the user's POS permissions or at the group level.  To update a group's permissions, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.  In this page, select the appropriate permission group (E.g. Manager) and set the permission **Allow mass activation** to yes.  This will allow all users set to this permission group to activate a mass deployed Retail Modern POS device.
 
 ### Configure mass deployment
 
