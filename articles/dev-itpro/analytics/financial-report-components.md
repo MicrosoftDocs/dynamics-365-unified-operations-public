@@ -116,7 +116,7 @@ When you open a building block, other users have read-only access that building 
 3.  Select a building block, and then click **Undo Checkout**.
 4.  Click **Yes** to check in the building block.
 
-# See also
+## See also
 
 [Financial reporting](financial-reporting-intro.md)
 
