@@ -84,7 +84,7 @@ For a **Customer Implementation** project:
 
     ![Deployment settings](media/access-instances-7.jpeg)
 
-Customers are provided with 1 free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are 2 types of environments. A **Develop** environment and a **Build and Test** environment. For development and customization activity, configure a **Develop** environment (**Build and Test** are not supported for standatd development activities, they are used for daily build and test automation, see [Sign up for a preview subscription](../perf-test/continuous-build-test-automation.md)).  
+Customers are provided with 1 free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are 2 types of environments. A **Develop** environment and a **Build and Test** environment. For development and customization activities, configure a **Develop** environment (**Build and Test** are not supported for standatd development activities, they are used for daily build and test automation, see [Sign up for a preview subscription](../perf-test/continuous-build-test-automation.md)).  
 
 Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the Cloud-hosted environment page.
 
