@@ -45,7 +45,7 @@ To enable notifications for the order fulfillment operations, refer to the follo
 > [!NOTE]
 > Notifications can be overridden at the user level by navigating to the worker's record and selecting **POS Permissions** and then editing that user's notification subscription.
 
- - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. We recommend setting this value to 10 minutes to avoid unnecessary communication to the headquarters. Setting the notification interval to "0" will turn off notifications.  
+ - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. For some notifications, the Point of Sale needs to make real-time calls to the back office application, which consumes compute capacity of your back office application. We recommend entering a number that meets your business requirements but also considers the impact of real-time calls. Setting the notification interval to "0" will turn off notifications.  
 
  - Go to **Retail** > **Retail IT** > **Distribution schedule**. Select schedule "1060-Staff" to sync notification subscription settings and then click **Run now**. Next, sync the permission interval by selecting the "1070-Channel configuration" and then click **Run now**. 
 
@@ -65,3 +65,13 @@ When there are new orders assigned to the store for fulfillment, the notificatio
 > [!NOTE]
 > Pending orders notifications will be enabled in an upcoming update to Dynamics 365 for Retail. 
 
+## Enable live content on the POS buttons
+
+You can now display an integer count on the POS buttons to help the workers easily determine the tasks that need their immediate attention. To display this number on the POS button, you need to complete the notification set up mentioned in the 'Notification setup' section i.e. enabling notification for an operation, setting up a notification pull frequency and updating the POS permission group for the worker. In addition to this, you would need to open the button grid designer, view button properties and select "Enable live content" checkbox. You have an option of displaying the number on the 'top right' corner or on the 'center' of the button. The below images display the live content settings on button grid designer and display the effect of choosing top right vs center on various button sizes.
+
+> [!NOTE]
+> The live content can only be enabled for those operations for which the "Enable notifications" has been checked in POS Operations
+
+![Button grid designer with live content settings](./media/ButtonGridDesigner.png "Button grid designer with live content settings").
+
+![POS Buttons with live content](./media/ButtonsWithLiveContent.png "POS buttons with live content"). 
