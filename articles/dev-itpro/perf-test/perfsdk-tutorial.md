@@ -274,32 +274,33 @@ You can now run performance tests against the topology.
 ## Troubleshooting
 
 ### Blank Web Client for Single User Test
-The single user test runs and opens a web client.  A website is never loaded.  Instead, there is an empty web client with a white screen with the message "This is the initial start page for the WebDriver server" at the top of the page.  The test will eventually timeout and fail with an error message.
+The single user test runs and opens a web client. A website is never loaded. Instead, there is an empty web client with a white screen that displays the message "This is the initial start page for the WebDriver server". The test times out and fails with an error message.
 
 #### Error Example
 
 ```
 Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
 ```
+
 #### Solution
 This problem can happen if trust has not been established with the LocalHostSSL certificate that was installed in the **SSL Certificate Add Failed** section above. To establish trust, ensure that the LocalHostSSL.cer has been installed in the **Trusted Root Certification Authorities** store.
 
 ### Zoom Factor
-This issue occurs during single user tests. The test will fail very quickly with an error message.
+This issue occurs during single user tests. 
 
 #### Error Example
 
 ```Initialization method <Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
 ```
 #### Solution
-The IE zoom factor can be set to 100% by changing the following keys:
+The IE zoom factor can be set to 100% by changing the following registry keys:
 •	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
 •	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
 •	Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
  
 Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to click **Change the size of text, apps and other items**. This field is available in the Windows **Display settings**. 
  
-If none of this works, try changing the size of your remote desktop before starting the RDP session so that the default Internet Explorer zoom level is 100%. This is only necessary for single user tests.
+If none of these fixes work, try changing the size of your remote desktop before starting the RDP session so that the default Internet Explorer zoom level is 100%. This is only necessary for single user tests.
 
 ### Certificate Thumbprint Errors
 
@@ -315,38 +316,35 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 #### Solution
 There are a number of reasons that you could be seeing this error message:
-1.	There could be invisible unicode characters in the certificate's thumbprint when you copied it into CloudEnvironment.config and wif.config.  To check this, paste your thumbprint into a Unicode code converter and see if extra characters show up in the HTML/XML field:
+1.	There could be invisible unicode characters in the certificate's thumbprint when you copied it into CloudEnvironment.config and wif.config. To fix this issue, paste your thumbprint into a Unicode code converter to see whether extra characters show up in the HTML/XML field:
 
 ![Unicode code converter](./media/sdk_unicode_code_converter.jpg)
- 
-
  
 2.	The certificate may not be installed on the AOS machine. Check that the certificate can be found on the AOS machine by running the following PowerShell script:
 
 ```
-cd Cert:\LocalMachine\My
-Get-ChildItem | Where-Object { $_.Subject -like "CN=<your certificate's name>" }
+    cd Cert:\LocalMachine\My
+    Get-ChildItem | Where-Object { $_.Subject -like "CN=<your certificate's name>" }
 ```
 
-
-If the thumbprint is not printed in the PowerShell console after running the script, this means the certificate cannot be found and must be installed following the steps described earlier in the instructions
+> If the thumbprint is not printed in the PowerShell console after running the script, this means the certificate cannot be found and must be installed following the steps described earlier in the instructions
  
 3.	If this issue is present when running load tests, it is possible that the corresponding .pfx file is not being installed correctly by the setup scripts.  Check that the password specified in CloudCtuFakeACSInstall.cmd matches the password that the certificate was created with:
  
 ![Match password](./media/set_cloudctufakeacsinstall.jpg)
  
 ### No Endpoint Listening
-This issue can show up when running single or multi-user tests, or when creating users with MS.Dynamics.Performance.CreateUsers.exe.
+This issue can occur when running single or multi-user tests, or when creating users with MS.Dynamics.Performance.CreateUsers.exe.
+
 #### Error Example
 Failed with the following error:
-
 
 ```
 System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at <web address> that could accept the message. This is often caused by an incorrect address or SOAP action. 
 ```
 
 #### Solution
-This issue indicates that the host specified in the CloudEnvironment.config is not accessible from the machine which is attempting to run the tests or create users.
+This issue indicates that the host specified in the CloudEnvironment.config is not accessible from the machine that is attempting to run the tests or create users.
  
 In the CloudEnvironment.config file, check the values specified by the following keys:
 
@@ -354,42 +352,42 @@ In the CloudEnvironment.config file, check the values specified by the following
 <ExecutionConfigurations Key="HostName" Value="web address of host" />
 <ExecutionConfigurations Key="SoapHostName" Value="web address of SOAP" />
 ```
-The web addresses specified here must be the environment that you are testing.  Ensure that you can navigate to this web address within a web browser from your developer machine.
- 
-In the case of online load tests, the environment specified by the HostName field in the CloudEnvironment.config must be publicly accessible from any machine.  This means that you will not be able to load test a OneBox environment using Visual Studio Online.
+
+The web addresses specified here must be the environment that you are testing. Ensure that you can navigate to this web address within a web browser from your developer machine.
+
+In the case of online load tests, the environment specified by the HostName field in the CloudEnvironment.config must be publicly accessible from any machine. This means that you will not be able to loadtest a OneBox environment using Visual Studio Online.
 
 
 ### Could Not Enumerate AX Users
-This issue can show up when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe.
+This issue can occur when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe.
 
 #### Error Example
 
 ```System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.InvalidOperationException: Could not enumerate AX users ---> System.ServiceModel.FaultException'1[System.ComponentModel.Win32Exception]: Forbidden
 ```
 
-
 #### Solution
-The user specified as the SelfMintingAdminUser must have the System Administrator role. This error will occur when the wrong user is specified as the SelfMintingAdminUser. You can check that you are specifying the correct user by logging onto the endpoint and viewing the user's roles.
+The user specified as the SelfMintingAdminUser must be a member of the System Administrator role. This error occurs when the wrong user is specified as the SelfMintingAdminUser. You can check that you are specifying the correct user by logging onto the endpoint and viewing the user's roles.
 
 ![Administrator user](./media/sdk_admin.png)
 
 ### Forbidden Request with Client Authentication Scheme 'Anonymous'
 
 #### Error Example
+
 ```
 Initialization method <Test class name>.TestSetup threw exception. System.ServiceModel.Security.MessageSecurityException: System.ServiceModel.Security.MessageSecurityException: The HTTP request was forbidden with client authentication scheme 'Anonymous'. ---> System.Net.WebException: The remote server returned an error: (403) Forbidden..
 ```
 
 #### Solution
-This issue can occur when the number of users specified by the UserCount field in the CloudEnvironment.config  is greater than the number of test users created by running MS.Dynamics.Performance.CreateUsers.exe.  Ensure that you created more test users than you are requesting in CloudEnvironment.config
+This issue can occur when the number of users specified by the UserCount field in the CloudEnvironment.config is greater than the number of test users created by running MS.Dynamics.Performance.CreateUsers.exe. Ensure that you created more test users than you are requesting in CloudEnvironment.config.
  
 ![Cloud environment configuration](./media/cloud-env-config.png)
 
 ### At Least One Security Token Could Not Be Validated
-This issue can show up when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe. The issue tends to be present when the AOS machine is a different machine than the developer machine. 
+This issue can occur when running multi-user tests or creating users with MS.Dynamics.Performance.CreateUsers.exe. The issue tends to be present when the AOS machine is a different machine than the developer machine. 
 
 #### Error Example
-
 
 ```System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.Security.MessageSecurityException: An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail. ---> System.ServiceModel.FaultException: At least one security token in the message could not be validated.
 ```
@@ -398,10 +396,10 @@ This issue can show up when running multi-user tests or creating users with MS.D
 This issue is caused by the AOS endpoint not being able to validate the thumbprint of the certificate you created. The two possible reasons for this are the following:
 1.	The certificate has not been installed on the AOS machine.
 2.	The thumbprint of the certificate was not added to the wif.config file on the AOS machine.
+
+If a certificate has not been installed on the AOS machine, copy the .cer file that you created earlier in the instructions to the AOS machine. Install the .cer file in the "Trusted Root Certification Authorities" store on the AOS machine.
  
-For the case where the certificate has not been installed on the AOS machine, copy the .cer file that you created earlier in the instructions to the AOS machine. Install the .cer file in the "Trusted Root Certification Authorities" store on the AOS machine
- 
-For the case where the thumbprint of the certificate has not been added to the wif.config, please refer back to the section that describes the lines that must be added to the wif.config. Be sure to perform IISRESET after modifying wif.config.
+If the thumbprint of the certificate has not been added to the wif.config, please refer back to the section that describes the lines that must be added to the wif.config. Be sure to perform IISRESET after modifying wif.config.
  
 ### Missing MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config in Deployment Items
 This issue usually only occurs when performing load tests.
@@ -413,7 +411,7 @@ This issue usually only occurs when performing load tests.
 ```
 
 #### Solution
-This is caused by being unable to locate the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file when the load tests run. This happens when the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file was not added as a deployment item. To verify that this is the case, check if the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is in the out folder for the test run: 
+This issue is caused by being unable to locate the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file when the load tests run. This happens when the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file was not added as a deployment item. To verify that this is the case, check if the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is in the out folder for the test run: 
 
 ```
 <solution path>\TestResults\<your test run>\Out
@@ -421,7 +419,7 @@ This is caused by being unable to locate the MS.Dynamics.Test.Team.Foundation.We
 
 If the config file is missing, simply add it to the deployment items in the test settings in the same way as in Issue 6.
  
-Note that there are two very similarly named files. One is *.dll and one is *.dll.config. The *.dll.config must be in the deployment items in the test settings.
+Note that there are two very similarly named files. One is \*.dll and one is \*.dll.config. The \*.dll.config must be in the deployment items in the test settings.
  
 ### Missing CloudEnvironment.config in Deployment Items
 This issue usually only occurs when performing load tests.
@@ -434,9 +432,13 @@ System.TypeInitializationException: System.TypeInitializationException: The type
 ```
 
 #### Solution
-This issue is caused when the CloudEnvironment.config file is not present when the tests run. Typically shows up when running load tests and the CloudEnvironment.config file was not added as a deployment item. To verify that this is the case, check if the CloudEnvironment.config is in the out folder for the test run: <solution path>\TestResults\<your test run>\Out
-If the config file is missing, simply add it to the deployment items in the test settings:
+This issue is caused when the CloudEnvironment.config file is not present when the tests run. Typically shows up when running load tests and the CloudEnvironment.config file was not added as a deployment item. To verify that this is the case, check if the CloudEnvironment.config is in the out folder for the test run: 
 
+```
+<solution path>\TestResults\<your test run>\Out
+```
+
+If the config file is missing, add it to the deployment items in the test settings.
 
 ![Test settings](./media/test-settings.png)
 
