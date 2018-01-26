@@ -97,7 +97,7 @@ If your model belongs to a package with multiple models (For example, MyModel1 o
 5. In Visual Studio, build the package that the deleted models belonged to (Visual Studio > Dynamics 365 > Build models...)
 6. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
 
-# See also
+## See also
 
 [Development tools overview](development-tools-overview.md)
 

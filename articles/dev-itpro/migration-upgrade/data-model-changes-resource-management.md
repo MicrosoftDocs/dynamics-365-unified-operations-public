@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about the Project resource scheduling data model.
 
-Physical data model for Project resource scheduling
----------------------------------------------------
+## Physical data model for Project resource scheduling
 
 The following diagram represents the data design structure of the Project resource scheduling physical data model.   [![Resource management data model](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
 
@@ -82,18 +81,17 @@ The following table provides a list of the most informative views that you can u
 | ResAssignmentView               | This view is based on the table **ResAssignment**, which stores the activity resource assignments to either project or quotation work breakdown structure (WBS) task.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ResBookingView                  | This view is based on the table **ResBooking**, which stores the activity resource bookings to a project or quotation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-Changes that will affect tables and fields
-==========================================
+## Changes that will affect tables and fields
 
 These sections contain information regarding code changes to tables and fields that are part of the feature implementation related to Project resource scheduling.
 
-## Resource scheduling
+### Resource scheduling
 The table **PSASchedEmplReservation** is no longer used to store a resource’s reservations. Instead, reservations are stored in the **ResAssignment** and **ResBooking **tables. Both tables use the **Activity resource** field Foreign Key for **PSAProjSchedRole.RecId** to store a resource’s reservation. The **PSAProjSchedRole** table is the project team table that has the **Resource** field Foreign Key to **ResourceView.RecId** and the **ResourceLegalEntity** field Foreign Key to **CompanyInfo.RecId** to identify which resources are the project’s or quotation’s team members. If the **PSAProjSchedRole.Resource** field = 0, then this activity resource is a planned resource. A planned resource is a shadow resource that is not backed by an actual resource. **PSAProjSchedRole.ResourceCategory** is a Foreign Key to **PSASchedRole** that stores the role of this team member. The **ResourceResourceCategorySetup** table stores the default time effective resource/role association. However, the resource can be reserved to any role defined by **PSAProjSchedRole.ResourceCategory,** ignoring the default role definition on the **ResourceResourceCategorySetup** table. Regarding WBS versioning, the tables **ProjPlanVersions** and **ProjPlanVersionDetails** store the WBS tasks versions. Initially, all WBS task data will be stored on these tables while the user is editing the WBS tasks content. After the user clicks the **Publish** button, the task data will be pushed to the original hierarchy tables (**smmActivities** and **PSAActivitySetup**). The resource management feature requires data in the original hierarchy tables and requires a published WBS.
 
-## Price by resource and resource category
+### Price by resource and resource category
 The pricing tables, **ProjCostPriceExpense**, **ProjCostSalesPrice**, and **ProjRevenueSalesPrice** have a Foreign Key from **ResourceView.RecId**. The tables **ProjHourCostPrice**, **ProjHourSalesPrice**, and **ProjTransferPrice** have a Foreign Key from **ResourceView.RecId**. The field **ResourceCategory** is part of the Foreign Key for **ResourceCategoryView.RecId**. This is done so that pricing is based on a resource instead of a worker and enables pricing setup by resource category.
 
-## Common methods to get resource field and lookup resources
+### Common methods to get resource field and lookup resources
 There are several resource methods in the **ResourceFacade** class. The following table includes some of the most common methods.
 
 |                                       |                                                                                                                                                                                                                                                                                                                                               |
@@ -104,7 +102,7 @@ There are several resource methods in the **ResourceFacade** class. The follow
 | ResourceFacade.findByResourceID()     |  Look up the resource record ID by resource ID.                                                                                                                                                                                                                                                                                               |
 | ResourceFacade.get…                   | There are many get methods supported for the resource in the **ResourceFacade** class. Resource related values like **Resource ID**, **Resource calendar**, **Resource legal entity**, and **Resource period** can be queried from the **ResourceView**, **ResourceLegalEntityView**, **ResourceCalendarView**, and **ResourceSetup** tables. |
 
-## Facade classes
+### Facade classes
 The following table lists the facade classes that you can use as a starting point to interact with the Resource management data model.
 
 |                        |                                                                                                                                                                                                                                        |
