@@ -82,10 +82,11 @@ The vision behind Talent’s integration with PowerApps environments is to enabl
     > [!IMPORTANT]
     > If you previously created a CDS database and entered any of your company's production data into it, be aware that these steps remove **all** the data in the selected database, even your company's production data.
 
-    1. Sign in to [PowerApps](https://preview.web.powerapps.com/home), and go to the environment that you created in step 2.
-    2. Select **Entities**. On the right side of the page, select the ellipse (**…**) button, and then select **Clear all data**.
-    3. Select **Delete data** to confirm that you want to remove the data. This action removes all the demo data that is included in the CDS by default. It also removes any other data that has been entered in the selected database.
-
+    1. Sign in to [PowerApps](https://preview.web.powerapps.com/home), and select the environment that you created in step 2 from the drop-down on the right side of the page.
+    2. Expand the **Common Data Service** on the left navigation pane and choose **Entities**.
+    3. On the right side of the page, select the ellipse (**…**) button, and then select **Clear all data**.
+    4. Select **Delete data** to confirm that you want to remove the data. This action removes all the demo data that is included in the CDS by default. It also removes any other data that has been entered in the selected database.
+    
 You can now use your new environment.
 
 ## Granting access to the environment
