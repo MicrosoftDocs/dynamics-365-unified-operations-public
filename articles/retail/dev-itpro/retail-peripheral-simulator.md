@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: RetailHardwareProfile 
+ms.search.form: RetailHardwareProfile, RetailTerminalTable 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
