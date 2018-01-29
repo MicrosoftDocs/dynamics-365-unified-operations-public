@@ -45,6 +45,12 @@ This topic describes each task in the Microsoft Dynamics AX 2012 checklist that 
 
 For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
 
+## Compress your AX 2012 database
+
+In order to minimize downtime during cutover and to reduce cost of SQL Azure, perform page compression on your AX 2012 database before you upgrade to Dynamics 365 for Finance and Operations. Compress and test a copy of your production database on a test system first before you compress your AX 2012 production database.
+
+Refer to [this](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression) article for more information on data compression.
+
 ## Prepare model metadata
 
 During data upgrade, one goal is to maintain element IDs between the existing AX 2012 environment and the upgraded Finance and Operations environment. To accomplish this goal, you must bring a copy of the element IDs from the AX 2012 environment into the Finance and Operations environment. AX 2012 stores element IDs in a table that is named ModelElement. This table is in the model database, which is a separate database from the AX 2012 business data database. During an upgrade to Finance and Operations, you must copy the AX 2012 database to Microsoft Azure. This process can be time consuming. 
