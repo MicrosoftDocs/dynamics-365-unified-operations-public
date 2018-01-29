@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  FormRunConfigurationAddPAControl
+ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
