@@ -72,13 +72,13 @@ Upon setting the value to be "Yes" for "Can be refined" only those attributes sh
 The remaining properties in attribute metadata - 
 
 
-- Searchable,
-  - Retrievable,
-  - Can be queried,
-  - Sortable,
-  - Allow multiple values,
-  - Ignore case & format, and
-  - Complete match 
+	- Searchable,
+	- Retrievable,
+	- Can be queried,
+	- Sortable,
+	- Allow multiple values,
+	- Ignore case & format, and
+	- Complete match 
   
   Purpose of these propoerties can be understood here [Overview of SharePoint search ](https://technet.microsoft.com/en-us/library/jj219669.aspx "Overview of SharePoint search")
 
@@ -149,9 +149,9 @@ You can also set default values for selected attributes that are included in the
 
 ## How-to Steps: Attribute groups
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
--	Go to Product information management > Setup > Categories and attributes > Attribute groups
--	Create a new attribute group: *Fashion Sunglasses*
--	Add attributes: *Lens shape, Sunglass brand*
+- Go to Product information management > Setup > Categories and attributes > Attribute groups
+- Create a new attribute group: *Fashion Sunglasses*
+- Add attributes: *Lens shape, Sunglass brand*
 
 
 ## Assign attribute groups to Retail categories
