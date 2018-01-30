@@ -80,6 +80,6 @@ The recommendation is that you sign off with testing the platform update that's 
 ## What is a planned maintenance update?
 A planned maintenance update is explained in [Planned maintenance window FAQ](../lifecycle-services/planned-maintenance-window-faq.md).
 
-
-
+## Is there any type of early access program for the Finance and Operations platform?
+Yes. There are standard and targeted releases of the Finance and Operations platform. For more information, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).
 
