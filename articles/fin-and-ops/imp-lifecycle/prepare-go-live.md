@@ -50,45 +50,27 @@ Completing a step has two components to it:
 
 It is good practice to complete the steps in the methodology as you progress with the implementation. Do not wait until the last minute. Do not simply click through all steps just to get to a Production environment; it is in the customer’s best interest to have a solid implementation. 
 
-## Testing the solution
+## User acceptance testing for your solution
 
-Once you have completed the *Test* phase, you should have tested all the business processes that you have implemented as well as any customizations you have made on a *Sandbox: Standard Acceptance Test* environment in the implementation project. For a successful Go-live it is important to complete the User Acceptance Test (UAT) with the following in mind:
+Once you have completed the *Test* phase, you should have tested all the business processes that you have implemented as well as any customizations you have made on a *Sandbox: Standard Acceptance Test* environment in the implementation project. For a successful Go-live it is important to complete the UAT phase with the following in mind:
 
--   Test cases must cover the entire scope of requirements
--   Test with migrated data including master data and opening balances even if
-    those are not final yet
--   Test with the right security roles (default and custom roles) assigned to
-    users
--   Make sure the solution adheres to company/industry specific compliance, if
-    any
+-   Test cases cover the entire scope of requirements
+-   Test with migrated data including master data and opening balances even if those are not final yet
+-   Test with the right security roles (default and custom roles) assigned to users
+-   Make sure the solution adheres to company/industry specific compliance, if any
 -   Document all features and get approval and sign off from the customer
 
-It is not sufficient to test on an environment with developer or demo topology,
-no matter whether it is cloud-hosted or a downloaded VHD, for the following
-reasons:
+It is not sufficient to test on an environment that is a developer or demo topology, no matter whether it is cloud-hosted or a downloaded VHD, for the following reasons:
 
--   The topology of the Tier-1 environments is different from that of your
-    production environment. It is important to test every functionality, but
-    especially integrations, printing, workflow, as well as warehouse and retail
-    devices, on a Tier-2 or higher sandbox environment in the Microsoft-managed
-    subscription.
--   The performance of the system cannot be measured when you do the UAT on
-    local or privately hosted VMs
--   It is important that the team experiences the servicing in LCS (applying
-    deployable packages, creating service requests, moving database between
-    environments, and others) during the implementation to prevent delays during
-    the cutover process
+-   The topology of the Tier-1 environments is different from that of your production environment. It is important to test every functionality, but especially integrations, printing, workflow, as well as warehouse and retail devices, on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription.
+-   The performance of the system cannot be measured when you do the UAT on local or privately hosted VMs.
+-   It is important that the team experiences the servicing in LCS (applying deployable packages, creating service requests, moving database between environments, and others) during the implementation to prevent delays during the cutover process.
 
 ## FastTrack go live assessment
 
-Dynamics 365 for Finance and Operations, Enterprise edition customers should
-complete a Pre-Go-live review with the Microsoft FastTrack team before
-requesting their production environment. If you are not familiar with Microsoft
-FastTrack, see the [Microsoft FastTrack for Dynamics 365
-overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview).
+Dynamics 365 for Finance and Operations, Enterprise edition customers should complete a Pre-Go-live review with the Microsoft FastTrack team before requesting their production environment. If you are not familiar with Microsoft FastTrack, see the [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack team will ask you to populate a Pre-Go-Live Checklist about 8
-weeks prior to go live:
+The FastTrack team will ask you to populate a Pre-Go-Live Checklist about 8 weeks prior to go live:
 
 -   If you have over 150 seats, and have a Microsoft solutions architect assigned to your project, they will reach out to you
 -   If you have 20-149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
