@@ -58,7 +58,7 @@ There are various kind of variant tiles, as noted in the following table.
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Numeric (>0)               | Indicates that a variant is released to the selected location, and you can perform additional actions in that individual cell.                                                               |
 | Numeric (= 0)              | Indicates that a variant is released to the selected location, and the item is not available in selected location, but you can perform additional actions in that cell. |
-| n/a or dead cell           | Indicates that a variant is not released to the selected location, and you cannot perform additional actions in that cell.                                                    |
+| n/a or inactive cell           | Indicates that a variant is not released to the selected location, and you cannot perform additional actions in that cell.                                                    |
 
 
 You can also change the pivot for dimensions by selecting the dimension that you would like to swap.
