@@ -36,14 +36,14 @@ This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Ope
 ## Lifecycle Services Implementation project workspace
 
 After you have purchased and activated a subscription to Finance and Operations, an Implementation project workspace is provisioned in LCS when the tenant administrator logs in for the first time. If you are a customer and need help getting started with
-LCS, see [Lifecycle Services for Finance and Operations customers](../dev-itpro/lifecycle-services/lcs-works-lcs.md).
-For a comprehensive overview of Lifecycle Services, see [Overview of Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+For a comprehensive overview of Lifecycle Services, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## FastTrack Onboarding services
 
 The provisioning of your LCS implementation project workspace is the trigger for the FastTrack team to reach out to your project team to discuss onboarding services. For more information on the FastTrack program and the services it offers, see
 [Microsoft FastTrack for Dynamics
-365](./get-started/fasttrack-dynamics-365-overview.md).
+365](../get-started/fasttrack-dynamics-365-overview.md).
 
 The FastTrack team will reach out to all of the partner and customer users in your LCS project to schedule a 60-minute Onboarding call via Skype to introduce the FastTrack program and to assist you with the initial configuration of the LCS project and related tasks: 
 -   Tenant validation 
@@ -73,6 +73,6 @@ In order for us to best work with you, we recommend that you  add key project m
 
 Keep the milestone dates in your LCS project current to help us to connect with you at different project stages. When you are closer to your Go-live, we’ll reach out to you for a project Go-live assessment prior to deploying your Production environment. 
 
-Milestone dates are stored in the LCS implementation methodology. For more information, see [Methodologies in the LCS for Customers](../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) topic.
+Milestone dates are stored in the LCS implementation methodology. For more information, see [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) in the LCS for Customers topic.
 
 The onboarding call is an optional service; partners who are experienced with Dynamics 365 for Finance and Operations implementations can work through the tasks with their customers without the help of the FastTrack team. In those cases, it is especially important to keep the project users and milestone dates current.
