@@ -49,7 +49,7 @@ For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier
 
 In order to minimize downtime during cutover and to reduce the cost of SQL Azure, we strongly recommend that you perform page compression on your AX 2012 database before you upgrade to Finance and Operations. Create a copy of your production database, and compress it on a test system before you compress your AX 2012 production database.
 
-Refer to this article on SQL Server [Data Compression](../sql/relational-databases/data-compression/data-compression) for more information.
+Refer to this article on SQL Server [Data Compression](/sql/relational-databases/data-compression/data-compression) for more information.
 
 ## Prepare model metadata
 
