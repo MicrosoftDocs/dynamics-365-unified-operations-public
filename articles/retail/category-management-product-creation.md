@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 
-# Enhanced product and category management
+# Manage Retail product categories and products
 
 [!include[banner](./includes/banner.md)]
 
@@ -56,6 +56,6 @@ Compared to previous versions, in the new Retail product category structure a me
 
 ## Select properties to update products from the Retail product category form 
  
-You can use this new enhanced structure for product properties to select which updated product properties must be pushed to associated products. 
+You can use this new enhanced structure for product properties to select which updated product properties must be pushed to associated products. From the menu bar of the Retail Product Category Hierarchy, choose CATEGORY then Update products to land on this view below. 
 
 ![New enhanced view of Update products](media/NewUpdateProductsEnhancedView.PNG) 
