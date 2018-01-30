@@ -40,9 +40,17 @@ You can try Dynamics 365 for Finance and Operations for 30 days through a simple
 
 ## Step two: Choose a deployment option
 You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
-For more information, see: [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
+
+The following considerations must be taken when you choose on-premises as a deployment option:
+- Regulatory and compliance needs that are not available in the [cloud certifications](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management
+- [Features currently not implemented in on-premises deployments](features-not-implemented-on-prem.md)
+- [Minimum infrastructure requirements](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
 > [!IMPORTANT]
 > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+
+For more information, see [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
 
 ## Step three: Buy and manage a subscription
 To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization’s needs.
