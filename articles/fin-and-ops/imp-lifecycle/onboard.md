@@ -56,17 +56,15 @@ The FastTrack team will reach out to all of the partner and customer users in yo
 -   Introduction to servicing, support and service health
 -   Readiness planning 
 
-It is recommended that the people in the following project roles participate in the meeting; others are optional: 
+We recommend that the people in the following project roles participate in the meeting; others are optional. 
 
--   **Customer**
+**Customer**
+-   Project owner 
+-   Volume Licensing Service Center administrator, if the license was procured through a Volume Service agreement with Microsoft 
 
-    -   Project owner 
-    -   Volume Licensing Service Center administrator, if the license was procured through a Volume Service agreement with Microsoft 
-
--   **Partner** 
-
-    -   Delivery lead / Solutions Architect 
-    -   Project manager 
+**Partner** 
+-   Delivery lead / Solutions Architect 
+-   Project manager 
 
 ## Key data to keep current in LCS
 In order for us to best work with you, we recommend that you  add key project members (such as project managers) to the LCS project with their work email addresses. This way they will not miss important communication from us. 
