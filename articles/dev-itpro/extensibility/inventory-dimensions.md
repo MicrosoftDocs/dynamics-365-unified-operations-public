@@ -95,10 +95,12 @@ The VAR's job is to wire the ISV solution(s) to the available dimension fields o
 
 ## Sample application
 
-A sample application is available here. It consists of 3 models: The ISV’s production code, the ISV’s test code, and the VAR’s integration code. Together they provide a great starting point for implementing new inventory dimensions. The sample application introduces the new product dimension: Flavor. 
+A sample application is available on Github ![here](https://github.com/Microsoft/Product-flavor-dimension-sample-app).
+
+It consists of 3 models: The ISV’s production code, the ISV’s test code, and the VAR’s integration code. Together they provide a great starting point for implementing new inventory dimensions. The sample application introduces the new product dimension: Flavor. 
 
 The application supports many end-to-end business scenarios, for example creating, buying and selling items with various flavors.
 
-The sample application is made available on GitHub. Please log issues directly there, and feel free to contribute by adding more coverage.
+Please log issues directly in Github, and feel free to contribute by adding more coverage.
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
