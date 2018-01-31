@@ -46,8 +46,9 @@ In row definitions, the numbers or labels in the **Row Code** cell identify each
 A row code is required for all rows. You can mix numeric, alphanumeric, and unset (empty) row codes in a row definition. The row code can be any positive integer (below 100,000,000) or a descriptive label that identifies that row. A descriptive label must follow these rules:
 
 -   The label must begin with an alphabetical character (a through z or A through Z), and can be any combination of numbers and letters up to 16 characters. 
-    > [!NOTE]
-    > A label can include the underscore character (\_), but no other special characters are allowed.
+> [!NOTE]
+> A label can include the underscore character (\_), but no other special characters are allowed.
+
 -   The label can't use any of the following reserved words: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO, or RPO.
 
 The following examples are valid row codes:
