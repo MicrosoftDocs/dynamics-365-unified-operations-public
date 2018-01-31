@@ -528,16 +528,16 @@
 
 # [Upgrade and migration](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analyze - Use the Upgrade analyzer tool to plan upgrade](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analyze – Use the Code upgrade service to estimate the effort to upgrade code](migration-upgrade/analyze-code-upgrade.md)
-### [Analyze - Deploy a sandbox environment](migration-upgrade/analysis-sandbox.md)
-### [Upgrade - Data upgrade in a development environment](migration-upgrade/data-upgrade-2012.md)
-### [Upgrade - AX 2012 data upgrade tasks](migration-upgrade/prepare-data-upgrade.md)
-### [Upgrade - Data upgrade in a sandbox environment](migration-upgrade/upgrade-data-sandbox.md)
-### [Validate - Cutover testing](migration-upgrade/upgrade-cutover-testing.md)
-### [Validate - Tasks to perform after upgrade](migration-upgrade/app-validation-process.md)
-### [Validate - Functional testing](migration-upgrade/upgrade-functional-validation.md)
-### [Validate - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012 upgrade - Use the Upgrade analyzer tool to plan](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012 upgrade – Use the Code upgrade service to estimate effort](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012 upgrade - Deploy a sandbox environment](migration-upgrade/analysis-sandbox.md)
+### [AX 2012 upgrade - Data upgrade in a development environment](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012 upgrade - AX 2012 data upgrade tasks](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012 upgrade - Data upgrade in a sandbox environment](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012 upgrade - Cutover testing](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012 upgrade - Tasks to perform after upgrade](migration-upgrade/app-validation-process.md)
+### [AX 2012 upgrade - Functional testing](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 upgrade - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Changes that affect upgrade from AX 2012
