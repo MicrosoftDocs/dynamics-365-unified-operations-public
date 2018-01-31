@@ -176,5 +176,11 @@ EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 ```
 
+### Re-provision Retail components in the target environment
+
+Reprovisioning is only required if you are restoring or importing the database on another environment. 
+
+[!include[environment-reprovision](../includes/environment-reprovision.md)]
+
 ## Limitations
 After you import a database, the link between the database and document handling documents that are stored in Azure blob storage might be broken. If you have custom code that uses the X++ **FileUpload** class to put files in blob storage, the links to those files might also be broken.
