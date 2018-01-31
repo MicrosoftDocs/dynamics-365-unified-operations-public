@@ -38,9 +38,6 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 
-> [!NOTE]
-> This topic applies to Microsoft Dynamics AX 2012 R3.
-
 ## Installation
 
 For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
