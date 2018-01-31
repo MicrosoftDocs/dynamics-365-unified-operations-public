@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tasks to complete after an upgrade from AX 2012
+title: Upgrade from AX 2012 - Tasks to complete after upgrade
 description: This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
 author: tariqbell
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Tasks to complete after an upgrade from AX 2012
+# Upgrade from AX 2012 - Tasks to complete after upgrade
 
 [!include[banner](../includes/banner.md)]
 

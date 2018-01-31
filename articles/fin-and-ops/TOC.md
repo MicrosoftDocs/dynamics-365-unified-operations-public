@@ -967,6 +967,7 @@
 ###### [Sales complementary fiscal documents](../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
 ###### [Service electronic fiscal document](../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
 ###### [Journals generated during the electronic payment return process](../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
+##### [NF-e certificates](../financials/localizations/latam-bra-nfe-certs.md)
 ##### [NF-e process](../financials/localizations/latam-bra-nf-e-process.md)
 ##### [Parameters for legal entities](../financials/localizations/latam-bra-legal-entity-parameters.md)
 ##### [Acquire a CIAP fixed asset](../financials/localizations/latam-bra-ciap-fixed-asset.md)

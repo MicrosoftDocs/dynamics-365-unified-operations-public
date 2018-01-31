@@ -118,7 +118,7 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 
 The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams.
 
-### Governance workshop (W2.2, Design phase)
+### Governance workshop (W2.1, Design phase)
 
 The Governance workshop is designed to provide planning and governance recommendations based on project needs and best practices from other cloud deployments. Topics are likely to include:
 
@@ -133,7 +133,7 @@ The Governance workshop is designed to provide planning and governance recommend
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
 
-### Solution workshop (W3.1, Build phase)
+### Solution workshop (W2.2, Design phase)
 
 The Solution workshop is designed to provide guidance on solution design alignment with our public cloud deployment approach, a review of the product roadmap, and project goals and schedule. Topics are likely to include:
 
@@ -152,7 +152,7 @@ The Solution workshop is designed to provide guidance on solution design alignme
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
-### Build workshop (W3.2, Build phase)
+### Build workshop (W3.1, Build phase)
 
 The Build workshop is designed to review the development approach, build progress, quality, risks, and blockers. Topics are likely to include:
 

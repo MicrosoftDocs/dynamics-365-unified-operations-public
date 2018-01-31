@@ -36,14 +36,16 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now suppor
 
 This topic will help you plan and prepare for your on-premises deployment.
 
+>   [!IMPORTANT]
+>   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Removed or deprecated features](../migration-upgrade/deprecated-features.md)
-> [!IMPORTANT]
-> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+
 ## How LCS is used with on-premises deployments
 Microsoft Dynamics Lifecycle Services (LCS) is an application management portal that provides tools and services for managing the application lifecycle. Customers and partners use LCS to manage both cloud and on-premises deployments. You can use LCS for the following tasks:
 - Deploy cloud and on-premises environments.
