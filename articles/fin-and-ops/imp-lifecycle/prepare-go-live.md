@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preparing for go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project 
-description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project using Microsoft Lifecycle Services.
+title: Preparing for go-live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project 
+description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 01/18/2018
@@ -27,82 +27,76 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Preparing for go live
+# Preparing for go-live
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project using Microsoft Lifecycle Services (LCS).
+This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project by using Microsoft Dynamics Lifecycle Services (LCS).
 
-## Completing LCS Methodology
+## Completing the LCS methodology
 
 A major milestone in each implementation project is the cutover to the production environment.
 
-To ensure the environment is used for live operations, we will provision the production instance only after the implementation nears the Operate phase after completion of the required activities in the LCS methodology. For more information about the environments
-within your subscription, see the [Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).
+To help guarantee that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).
 
-Customers must complete the *Analysis*, *Design and develop*, and *Test* phases in the LCS methodology before the Configure button to request the production environment becomes enabled. To complete a phase in LCS, you must first complete each required step in that phase. When all steps in a phase are completed, you can complete the entire phase. You can always reopen a phase later if you need
-to make changes. If you need more help, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
-Completing a step has two components to it:
+The process of completing a step has two parts:
 
--   Performing the actual work, such as a Fit-gap analysis or a User acceptance test (UAT)
--   Marking the corresponding step in the LCS methodology as complete
+- Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).
+- Mark the corresponding step in the LCS methodology as completed.
 
-It is good practice to complete the steps in the methodology as you progress with the implementation. Do not wait until the last minute. Do not simply click through all steps just to get to a Production environment; it is in the customer’s best interest to have a solid implementation. 
+It's good practice to complete the steps in the methodology as you make progress with the implementation. Don't wait until the last minute. Don't just click through all the steps so that you can get a production environment. It's in the customer's best interest to have a solid implementation.
 
-## User acceptance testing for your solution
+## UAT for your solution
 
-Once you have completed the *Test* phase, you should have tested all the business processes that you have implemented as well as any customizations you have made on a *Sandbox: Standard Acceptance Test* environment in the implementation project. For a successful Go-live it is important to complete the UAT phase with the following in mind:
+During the Test phase, you should test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help guarantee a successful go-live, you should keep the following points in mind as you complete the UAT phase:
 
--   Test cases cover the entire scope of requirements
--   Test with migrated data including master data and opening balances even if those are not final yet
--   Test with the right security roles (default and custom roles) assigned to users
--   Make sure the solution adheres to company/industry specific compliance, if any
--   Document all features and get approval and sign off from the customer
+- Test cases cover the whole scope of requirements.
+- Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
+- Test by using the correct security roles (default roles and custom roles) that are assigned to users.
+- Make sure that the solution adheres to any company-specific and industry-specific compliance.
+- Document all features, and obtain approval and sign-off from the customer.
 
-It is not sufficient to test on an environment that is a developer or demo topology, no matter whether it is cloud-hosted or a downloaded VHD, for the following reasons:
+It isn't enough that you test in an environment that is a developer or demo topology, regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD). Here are the reasons:
 
--   The topology of the Tier-1 environments is different from that of your production environment. It is important to test every functionality, but especially integrations, printing, workflow, as well as warehouse and retail devices, on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription.
--   The performance of the system cannot be measured when you do the UAT on local or privately hosted VMs.
--   It is important that the team experiences the servicing in LCS (applying deployable packages, creating service requests, moving database between environments, and others) during the implementation to prevent delays during the cutover process.
+- The topology of the Tier-1 environments differs from the topology of your production environment. It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription. It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and retail devices in the sandbox environment.
+- System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.
+- To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation. This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.
 
-## FastTrack go live assessment
+## FastTrack Go-live assessment
 
-Dynamics 365 for Finance and Operations, Enterprise edition customers should complete a Pre-Go-live review with the Microsoft FastTrack team before requesting their production environment. If you are not familiar with Microsoft FastTrack, see the [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
+Finance and Operations customers should complete a Pre go-live review with the Microsoft FastTrack team before they request their production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack team will ask you to populate a Pre-Go-Live Checklist about 8 weeks prior to go live:
+About eight weeks before go-live, the FastTrack team will ask you to fill in a Pre go-live checklist:
 
--   If you have over 150 seats, and have a Microsoft solutions architect assigned to your project, they will reach out to you
--   If you have 20-149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
+- If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
+- If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.
 
-You can also download the checklist from CustomerSource: [FastTrack Pre-Go-live Checklist for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).
+You can also [download the checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).
 
-The project manager or a key project member must complete this checklist during the Pre-Go-live phase of the project, generally 4–6 weeks before the proposed Go-live date, when UAT is completed or almost completed.
+The project manager or a key project member must complete Pre go-live checklist during the Pre go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
 
-When you have completed this checklist:
--   If you have over 150 seats, and have a Microsoft solutions architect assigned to your project, send it to them.
--   If you have 20-149 seats, send it to <go-live@microsoft.com>.
+When you've completed the Pre go-live checklist, follow one of these steps:
 
-After the checklist is submitted, a Microsoft solutions architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful Go-live of the project. In some cases, the solutions architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solutions architect will indicate that you’re ready to request the production environment in LCS.
+- If you have 20–149 seats, send the checklist to <go-live@microsoft.com>.
+- If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, send the checklist to the solution architect.
 
-If you request the production environment before the assessment is complete, the deployment will be on hold until the assessment has been finished successfully.
+After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.
+
+If you request the production environment before the assessment is completed, the deployment will be put on hold until the assessment is successfully completed.
 
 ## Requesting the production environment
 
-When the *Analysis*, *Design and develop*, and *Test* phases in the LCS methodology have been completed by you and the Go-live assessment concluded that the project is ready, you can request your production environment.
+After you've completed the Analysis, Design and develop, and Test phases in the LCS methodology, and the Go-live assessment has concluded that the project is ready, you can request your production environment.
 
-It is recommended that you select a generic user account to be the Admin user of the environments that you deploy. This is important because if you use a named user account you might not be able to access an environment if that user is not
-available. Some scenarios where only the Admin user can access an environment are:
+We recommend that you select a generic user account as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:
 
--   First log-on after initial deployment to any environment – in that case the Admin is the only user that can access the environment
--   First log-on to a sandbox environment after a database refresh from Production – in that case all user accounts except for the Admin account are disabled
+- **First sign-in to any environment after initial deployment** – In this case, the Admin user is the only user who can access the environment.
+- **First sign-in to a sandbox environment after a database refresh from the production environment** – In this case, all user accounts except the Admin account are disabled.
 
-Your production environment should be deployed to the same data center where your sandbox environments are deployed.
+Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.
 
-Once you have signed off on the request for production environment, Microsoft is responsible to deploy the Production environment for you. Microsoft’s service level agreement (SLA) for deploying production environment is *48 hours*. Production may be deployed
-anytime within 48 hours from when you submitted the request, assuming your usage profile does not require additional information. You can see the progress of the deployment in LCS. It is normal for the request to remain in *Queued* state for
-a few hours before it changes to *Deploying*.
+After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. The Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
 
-When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team gets created automatically, and you can see it in the Service requests list in LCS. If DSE has questions for you that prevent them from deploying the Production environment – such as the ask to update the subscription estimate or to change the data center – they will add a
-comment to the service request. In some cases, it might be necessary that you clear the sign off from the Production deployment request to make changes. This is possible while the Production environment request is in Queued state. When you click on the Queued button, you can then clear sign off. The environment will go back to the Configure status. You can then make any changes that are
-necessary and sign off again.
+When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent it from deploying the production environment, it will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. You can clear the sign-off only while the status of the production environment request is **Queued**. To clear the sign-off, click the **Queued** button. The status of the environment is returned to **Configure**. You can then make any changes that are required and sign off again.
