@@ -63,15 +63,15 @@ The VAR provides the binding between the physical data model and logical impleme
 ## Details
 The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. There is currently no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
 
-![InventDimensionClassHierarchy](media/InventDimension1.png)
+![InventDimensionClassHierarchy](media/InventDimensions1.png)
 
 To reference the new dimension in a strongly-typed fashion the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color and Size can be used as templates.
  
-![InventDimensionClassExtension](media/InventDimension2.png)
+![InventDimensionClassExtension](media/InventDimensions2.png)
  
 Now the dimensions can be referenced like this:
 
-![InventDimensionDimensionReference](media/InventDimension3.png)
+![InventDimensionDimensionReference](media/InventDimensions3.png)
 
 The ISV can now build logic including data model and user interface for maintaining the list of dimension values for the new inventory dimension.
 
@@ -91,7 +91,7 @@ The VAR's job is to wire the ISV solution(s) to the available dimension fields o
 - Extend the ProductDimensions or TrackingDimensions field groups on InventDim - and a few other tables, depending on the type of dimension.
 - Extend relations and index as needed on InventDim.
 
-![InventDimensionISVVARExtensions](media/InventDimension4.png)
+![InventDimensionISVVARExtensions](media/InventDimensions4.png)
 
 ## Sample application
 
@@ -99,4 +99,4 @@ A sample application is available here. It consists of 3 models: The ISV’s pro
 
 The sample application is made available on GitHub, please log issues directly there, and feel free to contribute by adding more coverage.
  
-![InventDimensionFlavorScreenshot](media/InventDimension5.png)
+![InventDimensionFlavorScreenshot](media/InventDimensions5.png)
