@@ -5,7 +5,7 @@ title: Report 340 for Spain
 description: This topic provides information about setting up and generating the Report 340 for Spain.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/24/2018
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,7 @@ Report 340 includes the following entries:
 - Invoices including different VAT% or equivalence charge percentage (EC%) – Entries of invoices that have more than one VAT% or EC%.
 
 ## Generate a Spanish VAT book and export the Report 340 ASCII file
-1. Click *Tax > Setup > Sales tax > Spanish VAT books*. 
+1. Click **Tax** > **Setup** > **Sales tax** > **Spanish VAT books**. 
 2. In the **VAT book** and **Description** fields, enter the name and the description for the VAT book. 
 3. In the **Number sequence code** field, select a number sequence code. 
 4. In **Setup** area click **Add** button to setup sales tax codes on which sales tax transactions should be included in the report: 
