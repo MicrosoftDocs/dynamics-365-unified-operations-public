@@ -5,7 +5,7 @@ title: Implementation lifecycle management for Microsoft Dynamics 365 for Financ
 description: These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 01/30/2018
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
