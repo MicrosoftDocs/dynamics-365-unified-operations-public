@@ -75,7 +75,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 The following changes were introduced in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
 
 + [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
-+ [Inventory dimensions](invent-dimensions.md)
++ [Inventory dimensions](inventory-dimensions.md)
 + [Changes to price and discount extensibility](pricing-app73.md)
 + [Table map extension](map-extensions.md)
   + [Extend table maps used as interfaces](maps-as-interfaces.md)
