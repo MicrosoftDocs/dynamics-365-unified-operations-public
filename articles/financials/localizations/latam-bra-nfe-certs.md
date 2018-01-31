@@ -5,7 +5,7 @@ title: NF-e certificates for Brazil
 description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This includes information about the solution you should use for each state tax authority.
 author: sndray
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
