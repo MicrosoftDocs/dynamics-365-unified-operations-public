@@ -176,7 +176,9 @@ EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 ```
 
-### Re-provision the target environment
+### Re-provision Retail components in the target environment
+
+Reprovisioning is only required if you are restoring or importing the database on another environment. 
 
 [!include[environment-reprovision](../includes/environment-reprovision.md)]
 
