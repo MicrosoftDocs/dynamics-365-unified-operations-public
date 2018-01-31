@@ -76,14 +76,14 @@ Now the dimensions can be referenced like this:
 The ISV can now build logic including data model and user interface for maintaining the list of dimension values for the new inventory dimension.
 
 The second half of the solution is the data model. The standard application will contain the following for each of the new dimension:
-•	One Label file, 
-•	One Configuration key, 
-•	Two EDTs (for the field on InventDim and for the flag on InventDimParm), 
-•	One field on InventDim table,
-•	One field on InventDimParm table,
-•	One field on InventDimFieldMap map - and one field on each of the (~30) tables mapped.
+- A Label file
+- A Configuration key
+- Two EDTs (for the field on InventDim and for the flag on InventDimParm)
+- One field on InventDim table,
+- One field on InventDimParm table,
+- One field on InventDimFieldMap map and one field on each of the (~30) tables mapped.
 
-The VAR's job is to wire the ISV solution(s) to the available dimension fields on InventDim for a given customer.  We are aiming at minimizing this work. As of now, it includes:
+The VAR's job is to wire the ISV solution(s) to the available dimension fields on InventDim for a given customer. We are aiming at minimizing this work. As of now, it includes:
 - Implement the binding mapping - This is accomplished by extending the method InventDimFieldBinding.className2FieldName().
 - Enable the configuration key(s).
 - Extend the EDT(s) - to specify the right string size.
@@ -95,8 +95,10 @@ The VAR's job is to wire the ISV solution(s) to the available dimension fields o
 
 ## Sample application
 
-A sample application is available here. It consists of 3 models: The ISV’s production code, the ISV’s test code, and the VAR’s integration code.  Together they provide a great starting point for implementing new inventory dimensions. The sample application introduces the new product dimension: Flavor. The application supports many end-to-end business scenarios, for example creating, buying and selling items with various flavors.
+A sample application is available here. It consists of 3 models: The ISV’s production code, the ISV’s test code, and the VAR’s integration code. Together they provide a great starting point for implementing new inventory dimensions. The sample application introduces the new product dimension: Flavor. 
 
-The sample application is made available on GitHub, please log issues directly there, and feel free to contribute by adding more coverage.
+The application supports many end-to-end business scenarios, for example creating, buying and selling items with various flavors.
+
+The sample application is made available on GitHub. Please log issues directly there, and feel free to contribute by adding more coverage.
  
-![InventDimensionFlavorScreenshot](media/InventDimensions5.png)
+![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
