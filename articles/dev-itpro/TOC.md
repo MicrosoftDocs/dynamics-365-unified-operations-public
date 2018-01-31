@@ -536,7 +536,7 @@
 ### [AX 2012 upgrade - Data upgrade in a sandbox environment](migration-upgrade/upgrade-data-sandbox.md)
 ### [AX 2012 upgrade - Cutover testing](migration-upgrade/upgrade-cutover-testing.md)
 ### [AX 2012 upgrade - Tasks to perform after upgrade](migration-upgrade/app-validation-process.md)
-### [AX 2012 upgrade - Functional testing](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 upgrade - Functional test pass](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 upgrade - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
 
 
