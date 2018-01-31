@@ -15,11 +15,6 @@
 #### Buy Finance and Operations
 ##### [Buy Finance and Operations (on-premises)](get-started/purchase-on-premises.md)
 
-### Understand the implementation lifecycle
-#### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
-#### [Onboarding](imp-lifecycle/onboard.md) 
-#### [Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
-
 ### [What's new or changed](get-started/whats-new-changed.md)
 #### [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
@@ -74,6 +69,11 @@
 ##### [Task Recorder](../dev-itpro/user-interface/task-recorder.md)
 ##### [Create documentation or training](../dev-itpro/user-interface/task-recorder-training-docs.md)
 #### [Glossary](get-started/glossary.md)
+
+## Understand the implementation lifecycle
+### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
+### [Onboarding](imp-lifecycle/onboard.md) 
+### [Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
