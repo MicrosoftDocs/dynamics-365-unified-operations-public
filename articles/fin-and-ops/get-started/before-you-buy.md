@@ -3,7 +3,7 @@
 
 title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations, Enterprise edition.  
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
