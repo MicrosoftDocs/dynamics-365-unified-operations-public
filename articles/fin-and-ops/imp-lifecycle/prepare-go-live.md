@@ -5,7 +5,7 @@ title: Preparing for go-live with a Microsoft Dynamics 365 for Finance and Opera
 description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 01/18/2018
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,12 +50,12 @@ It's good practice to complete the steps in the methodology as you make progress
 
 ## UAT for your solution
 
-During the Test phase, you should test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help guarantee a successful go-live, you should keep the following points in mind as you complete the UAT phase:
+During the UAT phase, you should test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox: Standard Acceptance Test environment in the implementation project. To help guarantee a successful go-live, you should keep the following points in mind as you complete the UAT phase:
 
 - Test cases cover the whole scope of requirements.
 - Test by using migrated data. This data should include master data and opening balances, even if they aren't yet final.
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users.
-- Make sure that the solution adheres to any company-specific and industry-specific compliance.
+- Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
 - Document all features, and obtain approval and sign-off from the customer.
 
 It isn't enough that you test in an environment that is a developer or demo topology, regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD). Here are the reasons:
@@ -70,8 +70,9 @@ Finance and Operations customers should complete a Pre go-live review with the M
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a Pre go-live checklist:
 
-- If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
 - If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.
+- If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
+
 
 You can also [download the checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).
 
@@ -99,4 +100,4 @@ Your production environment should be deployed to the same datacenter where your
 
 After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. The Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
 
-When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent it from deploying the production environment, it will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. You can clear the sign-off only while the status of the production environment request is **Queued**. To clear the sign-off, click the **Queued** button. The status of the environment is returned to **Configure**. You can then make any changes that are required and sign off again.
+When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent it from deploying the production environment, it will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. You can clear the sign-off only while the status of the production environment request is **Queued**. To clear the sign-off, click the **Queued** button. The status of the request is returned to **Configure**. You can then make any changes that are required and sign off again.
