@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade cutover testing
+title: Dynamics AX 2012 upgrade - Cutover testing
 description: This topic explains how to test the tasks that occur after you turn off AX 2012 but before you turn on Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: tariqbell
 manager: AnnBe
-ms.date: 05/29/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade cutover testing
+# Dynamics AX 2012 upgrade - Cutover testing
 
 [!include[banner](../includes/banner.md)]
 
