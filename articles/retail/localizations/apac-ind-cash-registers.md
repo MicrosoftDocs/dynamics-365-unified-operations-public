@@ -60,7 +60,7 @@ The tax information on the Retail store, defaults from the selected retail wareh
 2.  Select a retail store.
 3.  Click the **Tax information** FastTab.
 
-![](media/a5ac907050b6d6169853c182267b2c55.png)
+![Tax information FastTab](media/apac-ind-gst-tax-info-tab.png)
 
 Configure Language text and custom fields 
 ------------------------------------------
@@ -80,7 +80,7 @@ The default company of the user creating the receipt setup should be the same as
 5.  Enter the **Text ID** field, equal or greater than 900001.
 6.  Enter the **Text** field.
 
->   [./media/image6.png](./media/image6.png)
+[Language text](media/apac-ind-gst-language-text.png)
 
 **Custom fields**
 
