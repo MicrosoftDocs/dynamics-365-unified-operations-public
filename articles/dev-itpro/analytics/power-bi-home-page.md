@@ -7,7 +7,7 @@ description: This topic lists the Power BI content that is available and points 
 
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,11 +78,6 @@ If you're using Microsoft Dynamics 365 for Operations version 1611, the followin
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 
-## Power BI content for Microsoft Dynamics AX
-If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:
 
-- [Cost management Power BI content](cost-management-content-pack.md)    
-- [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
-- [Retail channel performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md) 
 
 
