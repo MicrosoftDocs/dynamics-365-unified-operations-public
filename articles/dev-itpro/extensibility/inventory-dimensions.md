@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Price and discount extensibility
+title: Adding new Inventory dimensions through extensions
 description: This topic describes how to add new inventory dimensions through extensions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: MichaelFruergaard
 manager: AnnBe
@@ -87,7 +87,7 @@ The second half of the solution is the data model. The standard application will
 - Two extended data types (EDTs) (for the field on InventDim and for the flag on InventDimParm).
 - One field on InventDim table.
 - One field on InventDimParm table.
-- One field on InventDimFieldMap map and one field on each of the (~30) tables mapped.
+- One field on InventDimFieldMap map and one field on each of the tables(approximately 30) mapped.
 
 The VAR's job is to wire the ISV solutions to the available dimension fields on InventDim for a given customer. To minimize this work, it currently includes the following:
 - Implement the binding mapping. This is accomplished by extending the method InventDimFieldBinding.className2FieldName().
@@ -98,6 +98,12 @@ The VAR's job is to wire the ISV solutions to the available dimension fields on 
 - Extend relations and index as needed on InventDim.
 
 ![InventDimensionISVVARExtensions](media/InventDimensions4.png)
+
+## Limitations
+
+There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application containing where-clauses on InventDim. Most of these are implemented using macros - but that doesn't change the fact that SQL statements are not extensible. Many of the SQL statements could be rewritten to use Query objects to make them extensible; still many delete_from and update_recordset would remain. A viable solution cannot require changes to these SQL statements when adding new dimensions.
+
+Another mention-worthy technical limitation is the amount of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper-limit on 32. This EDT contains a bit mask for each dimension, and as the EDT is an integer, it is limit to 32. The provided solution stays within the limit of 32. If required in the future, we could change InventDimFixed to be an Int64 (or better still a container, or even better remove it).
 
 ## Sample application
 
