@@ -74,6 +74,7 @@ The first half of the solution is straight forward. A new class hierarchy is int
 To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
  
 **InventDimStyle Extension** 
+
 /// <summary>
 /// The <c>InventDimStyle_Extension</c> class extends the <c>InventDim</c> table with behavior for the style dimension.
 /// </summary>
@@ -100,9 +101,10 @@ final class InventDimStyle_Extension
 
 }
 
-The dimensions can be referenced like this.
+The dimensions can be referenced like this:
 
 **Referencing dimensions**
+
 //Setting a value
 inventDim.parmISVDim("Some value");
 
