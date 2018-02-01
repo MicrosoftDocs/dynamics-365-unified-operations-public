@@ -91,7 +91,7 @@ On creating the Customs fields, the **Caption text ID** field values must be co
 3.  In the **Type** field, select the value.
 4.  Enter the **Caption text ID** field.
 
->   [./media/image7.png](./media/image7.png)
+  [Custom fields](media/apac-ind-gst-custom-fields.png)
 
 Receipt format
 --------------
@@ -102,14 +102,14 @@ This section guides to configure the custom fields to the appropriate sections i
 
 2.  Select a receipt format for the **Receipt** receipt type and make the required changes.
 
-    ![](media/b659ddac93fafde55ab52bd4dafe250b.png)
+    ![Receipt format design](media/apac-ind-gst-receipt-format.png)
 
 Update receipt profiles 
 ------------------------
 
 **●** Click **Retail** \> **Setup** \> **POS** \> **Receipt profile**.
 
-![](media/3f97d8b8e1765d486000b99b8d7d00a3.png)
+![Receipt profiles](media/apac-ind-gst-receipt-profiles.png)
 
 Update POS invoice number 
 --------------------------
@@ -122,13 +122,12 @@ On selecting **the Update POS invoice number** checkbox in the **Retail paramete
 
 2.  On the **Posting** tab, select the **Update POS invoice number** check box to update the POS receipt number as the invoice number for customer transactions.
 
-![](media/1192e3380ce6d03f925285acbc39edc7.png)
+![Retail parameters](media/apac-ind-gst-retail-parameters.png)
 
->   **Note:**
+  > [!NOTE]
+  > You can select the **Update POS invoice number** check box only if the existing receipt format includes the store number and terminal number.
 
--   You can select the **Update POS invoice number** check box only if the existing receipt format includes the store number and terminal number.
-
-![](media/2c91c32afa96e6b4ca882dfddf4745fd.png)
+![POS functionality profiles](media/apac-ind-gst-pos-functionality-profile.png)
 
 Run a distribution schedule 
 ----------------------------
@@ -153,7 +152,7 @@ Customer address with the registration number are required fields for these tran
 1.  Login to the POS.
 2.  Enter the items, and then click **Enter**.
 
-![](media/fe7610d6d760bbc2635d4ab52677df19.png)
+![POS customer order](media/apac-ind-gst-pos-customer-order.png)
 
 Validate GST calculates as per the rate defined in the Tax setup.
 
@@ -176,7 +175,7 @@ Validate GST calculates as per the rate defined in the Tax setup.
 4.  Select the **Store** and **Pick-up date**.
 5.  Click **OK**.
 
- [./media/image13.png](./media/image13.png)
+ [POS Customer order](./media/apac-ind-gst-pos-customer-order2.png)
 
   >  [!NOTE]
   >  In this example, Store location state is Delhi and Customer address state is Delhi. Both are of same state and hence intrastate GST gets computed.
@@ -189,7 +188,7 @@ Validate GST calculates as per the rate defined in the Tax setup.
 2.  Select the transactions.
 3.  Click **Receipt**.
 
-   [./media/image14.png](./media/image14.png)
+   [Receipt example](media/apac-ind-gst-receipt.png)
 
 **Validate the sales order and tax document at Microsoft Dynamics AX
 headquarters**
@@ -199,7 +198,7 @@ headquarters**
 3.  On the Action Pane, on the **Sell** tab, in the **Tax** group, click **Tax
     document**.
 
-  ![](media/40bf33a8a0b99a3266cd66c53c0e3d04.png)
+  ![Tax document](media/apac-ind-gst-tax-document.png)
 
 **Recall and process the customer order**
 
@@ -209,7 +208,7 @@ headquarters**
 4.  Click **Picking and packing** \> **Pickup**
 5.  Click **Select all** and then **Pickup.**
 
-   [./media/image16.png](./media/image16.png)
+   [Process a customer order](media/apac-ind-gst-process-customer-order.png)
 
 6.  Click **Exact,** to process the payment.
 
@@ -219,7 +218,7 @@ headquarters**
 2.  Select the transactions.
 3.  Click **Receipt**.
 
-![](media/8964112f465b668daa0acb3d68c7d771.png)
+![Receipt example](media/apac-ind-gst-receipt-2.png)
 
 **Validate the voucher transactions**
 
@@ -228,12 +227,18 @@ headquarters**
 3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
 4.  Click **Voucher**.
 
-   [./media/image18.png](./media/image18.png)
+|Ledger account name|Debit amount (Rs.)|Credit amount (Rs.)|
+|-------------------|------------------|-------------------|
+|Customer account|    19,692.00||
+|   CGST payable account||   1,832.00|
+|   SGST payable account||   1,660.00|
+|   Sales account||   16,200.00|
+
 
 5.  Click **Tax document.**
 6.  Validate the receipt number is updated as the **Transaction id**.
 
-![](media/a139239bb9768168fa48969193893db5.png)
+![Tax document](media/apac-ind-gst-tax-document2.png)
 
 ### Sale of taxable goods to a consumer 
 
