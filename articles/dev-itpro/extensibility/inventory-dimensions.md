@@ -73,7 +73,7 @@ The first half of the solution is straight forward. A new class hierarchy is int
 
 To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
  
-**InventDimStyle_Extension** 
+**Example: InventDimStyle_Extension** 
 
 ```
 /// <summary>
