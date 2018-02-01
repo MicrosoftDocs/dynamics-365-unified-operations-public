@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Adding new Inventory dimensions through extensions
+title: Add new inventory dimensions through extensions
 description: This topic describes how to add new inventory dimensions through extensions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: MichaelFruergaard
 manager: AnnBe
@@ -34,10 +34,10 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides a high-level overview of how to add new inventory dimensions through extensions. Plus, it includes information about how to access a sample application that contains an actual implementation.
+This topic provides a high-level overview of how to add new inventory dimensions through extensions. It also includes information about how to access a sample application that contains an actual implementation.
 
 ## Solution overview
-The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution, however, in real-life there is overlap between the roles, and sometimes it might even be the same person filling several roles.
+The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution, however, in real life there is overlap between the roles, and sometimes it might even be the same person filling several roles.
 
 ### Microsoft's role
 Microsoft provides a finite set of unused dimension fields.
@@ -102,7 +102,7 @@ final class InventDimStyle_Extension
 }
 ```
 
-The dimensions can be referenced like this:
+The dimensions can be referenced like this.
 
 ```
 //Setting a value
@@ -113,7 +113,7 @@ select inventDim
     where inventDim.(InventDim::fieldIdISVDim()) == "Some value";
 ```
 
-The ISV can now build logic, including data model and user interface for maintaining the list of dimension values, for the new inventory dimension.
+The ISV can now build logic, including the data model and user interface for maintaining the list of dimension values, for the new inventory dimension.
 
 The second half of the solution is the data model. The standard application will contain the following for each new dimension:
 - A label file.
@@ -121,37 +121,37 @@ The second half of the solution is the data model. The standard application will
 - Two extended data types (EDTs) (for the field on InventDim and for the flag on InventDimParm).
 - One field on InventDim table.
 - One field on InventDimParm table.
-- One field on InventDimFieldMap map and one field on each of the tables(approximately 30) mapped.
+- One field on InventDimFieldMap map and one field on each of the tables (approximately 30) mapped.
 
 The VAR's job is to wire the ISV solutions to the available dimension fields on InventDim for a given customer. To minimize this work, it currently includes the following:
 - Implement the binding mapping. This is accomplished by extending the method InventDimFieldBinding.className2FieldName().
 - Enable the configuration key.
 - Extend the EDT to specify the right string size.
-- Extend the Label file, suh as copy the ISV provided labels into the correct label file.
+- Extend the Label file, such as copy the ISV-provided labels into the correct label file.
 - Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.
 - Extend relations and index as needed on InventDim.
 
 ![InventDimensionISVVARExtensions](media/InventDimensions4.png)
 
-## Limitations
+## Known issues
 
-There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application containing where-clauses on InventDim. Most of these are implemented using macros - but that doesn't change the fact that SQL statements are not extensible. Many of the SQL statements could be rewritten to use Query objects to make them extensible; still many delete_from and update_recordset would remain. A viable solution cannot require changes to these SQL statements when adding new dimensions.
+There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application that contain where-clauses on InventDim. Most of these are implemented using macros, which doesn't change the fact that SQL statements are not extensible. Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain. A viable solution cannot require changes to these SQL statements when adding new dimensions.
 
-Another mention-worthy technical limitation is the amount of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper-limit on 32. This EDT contains a bit mask for each dimension, and as the EDT is an integer, it is limit to 32. The provided solution stays within the limit of 32. If required in the future, we could change InventDimFixed to be an Int64 (or better still a container, or even better remove it).
+Another technical limitation is the amount of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32. This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32. The provided solution stays within the limit of 32. If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.
 
 ## Sample application
 
-A sample application called "Product flavor dimension sample app" can be found on [Github](https://github.com/Microsoft/Product-flavor-dimension-sample-app). 
+A sample application called "Product flavor dimension sample app" can be found on [GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app). 
 
 This sample consists of three models: 
  - ISV production code
  - ISV test code
  - VAR integration code
  
- Together they provide a great starting point for implementing new inventory dimensions. The sample application introduces a new product dimension: Flavor. 
+Together these models provide a great starting point for implementing new inventory dimensions. The sample application introduces a new product dimension: Flavor. 
 
 The application supports many end-to-end business scenarios, for example creating, buying, and selling items with various flavors.
 
-If needed, please log issues directly in GitHub, and feel free to contribute by adding more coverage.
+If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
