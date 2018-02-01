@@ -5,7 +5,7 @@ title: Buy Dynamics 365 for Finance and Operations, Enterprise edition (on-premi
 description: This topic explains how to purchase and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 author: maertenm 
 manager: AnnBe
-ms.date: 01/22/2018
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
