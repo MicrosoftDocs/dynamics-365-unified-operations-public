@@ -73,8 +73,9 @@ The first half of the solution is straight forward. A new class hierarchy is int
 
 To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
  
-**InventDimStyle Extension** 
+**InventDimStyle_Extension** 
 
+```
 /// <summary>
 /// The <c>InventDimStyle_Extension</c> class extends the <c>InventDim</c> table with behavior for the style dimension.
 /// </summary>
@@ -98,19 +99,19 @@ final class InventDimStyle_Extension
     {
         return InventDim::fieldIdForDimension(classStr(InventProductDimensionStyle));
     }
-
 }
+```
 
 The dimensions can be referenced like this:
 
-**Referencing dimensions**
-
+```
 //Setting a value
 inventDim.parmISVDim("Some value");
 
 //Select statements
 select inventDim
     where inventDim.(InventDim::fieldIdISVDim()) == "Some value";
+```
 
 The ISV can now build logic, including data model and user interface for maintaining the list of dimension values, for the new inventory dimension.
 
