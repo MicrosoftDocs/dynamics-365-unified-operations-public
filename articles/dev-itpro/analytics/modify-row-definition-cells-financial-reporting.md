@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58881
@@ -242,32 +242,6 @@ In the following example, the values in column D of the report will be sorted in
 |          | ...                                                 |             |                             |                |                    |                              |
 | 940      | Interest Income                                     |             |                             | C              |                    | 7000                         |
 
-Here is an example of the report that is generated.
-
-||||||||||---|---|---|---|---|---|---|
-|**Variance Analysis (Sorted by Variance)**|||||||
-|**Beijing and Atlanta Regions**|||||||
-|**For the Seven Months Ending July 31, 2013**|||||||
-||**July**|**YTD**|||||
-||**Actual**|**Budget**|**Variance**|**Actual**|**Budget**|**Variance**|
-|**Sorted by Monthly Variance in Ascending Order**|||||||
-|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
-|Salaries and Wages|97,624|65,573|(32,051)|653,884|441,664|(212,220)|
-|Sales Discounts|36,383|24,152|(12,231)|241,562|162,670|(78,892)|
-|Sales Returns|10,917|7,246|(3,671)|62,809|48,803|(14,006)|
-|Rent Expense|12,052|9,019|(3,033)|80,444|60,748|(19,696)|
-|Office Expense|5,023|3,291|(1,732)|33,420|22,098|(11,322)|
-|Travel Expense|7,656|7,641|(15)|51,062|51,469|407|
-|Sales|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739|
-|**Sorted by YTD Absolute Variance in Descending Order**|||||||
-|Sales|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739|
-|Travel Expense|7,656|7,641|(15)|51,062|51,469|407|
-|Office Expense|5,023|3,291|(1,732)|33,420|22,098|(11,322)|
-|Sales Returns|10,917|7,246|(3,671)|62,809|48,803|(14,006)|
-|Rent Expense|12,052|9,019|(3,033)|80,444|60,748|(19,696)|
-|Sales Discounts|36,383|24,152|(12,231)|241,562|162,670|(78,892)|
-|Salaries and Wages|97,624|65,573|(32,051)|653,884|441,664|(212,220)|
-|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## Specify a Format Override cell
 The **Format Override** cell specifies the formatting that is used for the row when the report is printed. This formatting overrides the formatting that is specified in the column definition and the report definition. By default, the formatting that is specified in those definitions is currency. If one row of the report lists the number of assets, such as the number of buildings, and another row lists the monetary value of those assets, you can override the currency formatting and enter numeric formatting for the row that specifies the number of buildings. You specify this information in the **Format Override** dialog box. The available options depend on the format category that you select. The **Sample** area of the dialog box shows example formats. The following format categories are available:

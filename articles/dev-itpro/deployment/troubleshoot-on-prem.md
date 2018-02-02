@@ -5,7 +5,7 @@ title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition 
 description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,12 @@ ms.dyn365.ops.version: Platform Update 8
 [!include[banner](../includes/banner.md)]
 
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
+
+## Error when signing in to on-premises environments
+A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
+
+`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
+
 
 ## Service Fabric 
 Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by the Orchestrator, Application Object Server (AOS), SSRS and MR nodes.

@@ -5,7 +5,7 @@ title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart.
 author: aolson
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 2/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -173,8 +173,13 @@ On the AOS computer, start Microsoft Windows PowerShell as an administrator, and
 F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
-Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>"
+Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
+ > [!NOTE]
+ > SkipMRTableReset preserves tree unit security if you are using it. 
+  - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
+
+
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
 

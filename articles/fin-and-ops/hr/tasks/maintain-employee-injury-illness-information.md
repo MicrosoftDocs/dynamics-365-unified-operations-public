@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 02/16/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-talent 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
