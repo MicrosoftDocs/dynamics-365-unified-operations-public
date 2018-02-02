@@ -5,7 +5,7 @@ title: CFO overview Power BI content
 description: This topic describes the CFO overview Microsoft Power BI content. 
 author: kweekley
 manager: AnnBe
-ms.date: 02/01/2018
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ The following table shows the Power BI content that the reports are copied from 
 
 | Power BI content that is included     | Reports |
 |---------------------------------------|---------|
-| Financial performance | <ul><li>Revenue</li><li>Expenses</li><li>Net income</li><li>Gross margin</li><li>Current ratio</li><li>Total accounts payable</li><li>Total accounts receivable</li><li>Expenses by account category</li><li>Expenses - Actual vs budget</li><li>Revenue - Actual vs budget</li></ul> |
+| [Financial performance](financial-performance-power-bi-content-pack.md) | <ul><li>Revenue</li><li>Expenses</li><li>Net income</li><li>Gross margin</li><li>Current ratio</li><li>Total accounts payable</li><li>Total accounts receivable</li><li>Expenses by account category</li><li>Expenses - Actual vs budget</li><li>Revenue - Actual vs budget</li></ul> |
 | [Cash overview](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Cash flow forecast</li><li>Bank account balance</li><li>Balance by currency</li></ul> |
 | [Sales and profitability](sales-profitability-performance-content-pack.md) | <ul><li>Revenue by region</li><li>Top 10 customers by revenue</li><li>Top 10 products by revenue</li></ul> |
 | [Credit and collections management](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Customer past due</li><li>Customers over credit limit</li><li>Aged balances</li></ul> |
