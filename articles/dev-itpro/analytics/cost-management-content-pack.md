@@ -5,7 +5,7 @@ title: Cost management Power BI content
 description: This topic describes what is included in the Cost management Power BI content. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Cost management Power BI content
 
 [!include[banner](../includes/banner.md)]
+
+> [Note]
+> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 
 This topic describes what is included in the Cost management Power BI content. 
