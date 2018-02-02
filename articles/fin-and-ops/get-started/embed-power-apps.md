@@ -5,7 +5,7 @@ title: Embed PowerApps
 description: This topic describes how to embed PowerApps into the Finance and Operations client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
-ms.date: 01/24/2018
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Platform update 14
 
 [!include[banner](../includes/pre-release.md)] 
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
+In Platform update 14, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
 
 ## Adding an embedded PowerApp to a page
 ### Overview
 Before embedding a PowerApp into the Finance and Operations client, you first need to find or build a PowerApp with the desired visuals and/or functionality. We will not describe the detailed process for building a PowerApp here. The [Introduction to PowerApps](https://docs.microsoft.com/en-us/powerapps/getting-started) topic is a good starting point if you are new to PowerApps.
 
-When you are ready to embed a specific PowerApp, you can choose between one of two ways of accessing the PowerApp on a page, whichever route better fits your scenario. The first way is through the PowerApps button that has been added to the standard Action Pane. PowerApps added using this mechanism will appear as menu items inside the PowerApps menu button. When selected, each of these menu items will open a dialog box that contains the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page inside a pivot tab, vertical tab, FastTab, or panorama section. 
+When you are ready to embed a specific PowerApp, you can choose between one of two ways of accessing the PowerApp on a page, whichever route better fits your scenario. The first way is through the PowerApps button that has been added to the standard Action Pane. PowerApps added using this mechanism will appear as menu items inside the PowerApps menu button. When selected, each of these menu items will open a side pane that contains the embedded PowerApp. Alternatively, you may choose to show a PowerApp directly on a page as a new tab, FastTab, blade, or as a new section in a workspace. 
 
 When configuring your embedded PowerApp in Finance and Operations, you can select a single field that you want to send as input to the PowerApp. This allows the PowerApp to be responsive based on the data that you are currently viewing in Finance and Operations.  
 
@@ -47,8 +47,8 @@ When configuring your embedded PowerApp in Finance and Operations, you can selec
 The following instructions show how to embed a PowerApp into the Finance and Operations web client.  
 
 1. Go to the page where you would like to embed the PowerApp. This will be the same page that contains any data that needs to be passed to the PowerApp as input.  
-2. Open the **Insert a PowerApp** dialog box:
-   - Click **Options**, and then select **Personalize this form**. Under the **Insert** menu, choose **PowerApp**. Finally, select the region where you would like to add a PowerApp. If you want to embed the PowerApp under the PowerApps menu button, choose the Action Pane. If you want to embed the PowerApp directly onto the page, choose the appropriate pivot tab, vertical tab, FastTab, or panorama section.   
+2. Open the **Insert a PowerApp** pane:
+   - Click **Options**, and then select **Personalize this form**. Under the **Insert** menu, choose **PowerApp**. Finally, select the region where you would like to add a PowerApp. If you want to embed the PowerApp under the PowerApps menu button, choose the Action Pane. If you want to embed the PowerApp directly onto the page, choose the appropriate tab, FastTab, blade, or section (if you're on a workspace).   
    - If the PowerApp will be accessed using the PowerApps menu button, you can alternatively click the **PowerApps** menu button in the standard Action Pane, and then select **Insert a PowerApp**.  
 3. Configure the embedded PowerApp:
    - The **Name** field indicates the text shown for the button or tab that will contain the embedded PowerApp. Oftentimes, you may want to repeat the name of the PowerApp in this field.  
@@ -65,7 +65,7 @@ After you have embedded a PowerApp on a page and confirmed that it is working co
 
 - Alternatively, you can export your page's personalizations, send them to one or more users, and have each of those users import those changes. The Manage option on the personalization toolbar enables you to export and import personalizations.
 
-See [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience) for more details about the personalization capabilities in the product and how to use them.
+See [Personalize the user experience](personalize-user-experience.md) for more details about the personalization capabilities in the product and how to use them.
 
 ## Building a PowerApp that leverages data sent from Finance and Operations
 An important part of building a PowerApp that will be embedded in Finance and Operations is utilizing the input data from Finance and Operations. Inside the PowerApp, that input data can be accessed using the Param("EntityId") variable.  
