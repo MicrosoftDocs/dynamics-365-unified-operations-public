@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+# ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -80,7 +80,7 @@ The default company of the user creating the receipt setup should be the same as
 5.  Enter the **Text ID** field, equal or greater than 900001.
 6.  Enter the **Text** field.
 
-[Language text](media/apac-ind-gst-language-text.png)
+![Language text](media/apac-ind-gst-language-text.png)
 
 **Custom fields**
 
@@ -91,7 +91,7 @@ On creating the Customs fields, the **Caption text ID** field values must be co
 3.  In the **Type** field, select the value.
 4.  Enter the **Caption text ID** field.
 
-  [Custom fields](media/apac-ind-gst-custom-fields.png)
+  ![Custom fields](media/apac-ind-gst-custom-fields.png)
 
 Receipt format
 --------------
@@ -99,7 +99,6 @@ Receipt format
 This section guides to configure the custom fields to the appropriate sections in the **Receipt format designer**, which must be printed on the POS receipts.
 
 1.  Click **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
-
 2.  Select a receipt format for the **Receipt** receipt type and make the required changes.
 
     ![Receipt format design](media/apac-ind-gst-receipt-format.png)
@@ -107,19 +106,16 @@ This section guides to configure the custom fields to the appropriate sections i
 Update receipt profiles 
 ------------------------
 
-**●** Click **Retail** \> **Setup** \> **POS** \> **Receipt profile**.
+To update receipt profiles, click **Retail** \> **Setup** \> **POS** \> **Receipt profile**.
 
 ![Receipt profiles](media/apac-ind-gst-receipt-profiles.png)
 
 Update POS invoice number 
 --------------------------
 
-This feature facilitates to reconcile the POS receipt number with the Invoice number for the named customer retail transactions.
-
-On selecting **the Update POS invoice number** checkbox in the **Retail parameter**, the POS receipt number gets populated in the **Transaction id** field for the corresponding Retail sales order.
+This feature facilitates to reconcile the POS receipt number with the Invoice number for the named customer retail transactions. On selecting **the Update POS invoice number** checkbox in the **Retail parameter**, the POS receipt number gets populated in the **Transaction id** field for the corresponding Retail sales order.
 
 1.  Click **Retail** \> **Headquarter setup** \> **Parameters** \> **Retail parameters**.
-
 2.  On the **Posting** tab, select the **Update POS invoice number** check box to update the POS receipt number as the invoice number for customer transactions.
 
 ![Retail parameters](media/apac-ind-gst-retail-parameters.png)
@@ -154,7 +150,7 @@ Customer address with the registration number are required fields for these tran
 
 ![POS customer order](media/apac-ind-gst-pos-customer-order.png)
 
-Validate GST calculates as per the rate defined in the Tax setup.
+3. Validate GST calculates as per the rate defined in the Tax setup.
 
 **Example**:
 
@@ -169,29 +165,29 @@ Validate GST calculates as per the rate defined in the Tax setup.
 |                  | 16,200.00      |               | 1,832.00 | 1,660.00 |
 | Total amount     | 19,692.00      |               |          |          |
 
-1.  Click **Orders \>Create customer order**.
-2.  Click on **Add customer** to select the customer account.
-3.  Click **Pick up all**.
-4.  Select the **Store** and **Pick-up date**.
-5.  Click **OK**.
+4.  Click **Orders \>Create customer order**.
+5.  Click on **Add customer** to select the customer account.
+6.  Click **Pick up all**.
+7.  Select the **Store** and **Pick-up date**.
+8.  Click **OK**.
 
- [POS Customer order](./media/apac-ind-gst-pos-customer-order2.png)
+ ![POS Customer order](./media/apac-ind-gst-pos-customer-order2.png)
 
   >  [!NOTE]
   >  In this example, Store location state is Delhi and Customer address state is Delhi. Both are of same state and hence intrastate GST gets computed.
 
-6.  Click **Exact**, to process the deposit payment.
+9.  Click **Exact**, to process the deposit payment.
 
-**Validate the receipt**
+### Validate the receipt
 
 1.  Click **Show journal**.
 2.  Select the transactions.
 3.  Click **Receipt**.
 
-   [Receipt example](media/apac-ind-gst-receipt.png)
+   ![Receipt example](media/apac-ind-gst-receipt.png)
 
-**Validate the sales order and tax document at Microsoft Dynamics AX
-headquarters**
+### Validate the sales order and tax document at Microsoft Dynamics AX
+headquarters
 
 1.  Go to **Retail \> Customers \> All sales orders**.
 2.  Select the sales order.
@@ -200,7 +196,7 @@ headquarters**
 
   ![Tax document](media/apac-ind-gst-tax-document.png)
 
-**Recall and process the customer order**
+### Recall and process the customer order
 
 1.  Login to POS.
 2.  Click **Recall order**.
@@ -208,11 +204,11 @@ headquarters**
 4.  Click **Picking and packing** \> **Pickup**
 5.  Click **Select all** and then **Pickup.**
 
-   [Process a customer order](media/apac-ind-gst-process-customer-order.png)
+   ![Process a customer order](media/apac-ind-gst-process-customer-order.png)
 
 6.  Click **Exact,** to process the payment.
 
-**Validate the receipt**
+### Validate the receipt
 
 1.  Click **Show journal**.
 2.  Select the transactions.
@@ -220,7 +216,7 @@ headquarters**
 
 ![Receipt example](media/apac-ind-gst-receipt-2.png)
 
-**Validate the voucher transactions**
+### Validate the voucher transactions
 
 1.  Go to **Retail \> Customers \> All sales orders**.
 2.  Select the sales order.
@@ -242,43 +238,40 @@ headquarters**
 
 ### Sale of taxable goods to a consumer 
 
-Sales to unregistered customer are known as B2C sales. There is no difference in computation of tax for a B2B and B2C sales.
-
-Customer shall be selected as **Consumer**, if the customer master is maintained with the address in the Dynamics 365.
+Sales to unregistered customer are known as B2C sales. There is no difference in computation of tax for a B2B and B2C sales. Customer shall be selected as **Consumer**, if the customer master is maintained with the address in the Dynamics 365.
 
 1.  Login into POS.
 2.  Enter an Item, and then click **Enter**.
 3.  Click **Add customer**, and select the customer account
 
-![](media/260dd90852026c9eb82f76e16b2ef078.png)
+  ![](media/260dd90852026c9eb82f76e16b2ef078.png)
 
->   *Note: In this example, Store location state is Delhi and Customer address
->   state is Bangalore. Both are of different state and hence interstate GST
->   gets computed.*
+  >  [!NOTE]
+  > In this example, Store location state is Delhi and Customer address state is Bangalore. Both are of different state and hence interstate GST gets computed.
 
-1.  Click **Exact,** to process the payment.
+4.  Click **Exact,** to process the payment.
 
-**Validate the receipt**
+### Validate the receipt
 
 1.  Click **Show journal**.
 2.  Select the transactions.
 3.  Click **Receipt**.
 
->   [./media/image21.png](./media/image21.png)
+ ![./media/image21.png](./media/image21.png)
 
-**Validate the retail sales invoice in Microsoft Dynamics AX headquarters**
+### Validate the retail sales invoice in Microsoft Dynamics AX headquarters
 
 1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
 2.  Run job **P-0001** (**Channel transactions**).
 3.  Close the form.
 
-**Post the statement**
+### Post the statement
 
 1.  Go to **Retail** \> **Channels \> Retail stores** \> **Open statements**.
 2.  Create a statement.
 3.  Click **Calculate statement** and then **Post statement**.
 
-**Validate voucher transactions**
+### Validate voucher transactions
 
 1.  Go to **Retail** \> **Customers** \> **All sales orders**.
 2.  Select the sales invoice.
@@ -286,18 +279,18 @@ Customer shall be selected as **Consumer**, if the customer master is maintained
 4.  Verify the Location (Store address) and the Customer address in the
     respective tabs.
 
->   [./media/image22.png](./media/image22.png)
+  ![./media/image22.png](./media/image22.png)
 
-1.  Click **OK**.
-2.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
-3.  Click **Voucher**.
+5.  Click **OK**.
+6.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
+7.  Click **Voucher**.
 
     ![](media/0a30aaf623dd77e34e845f913fe03a55.png)
 
-4.  Click **Tax document.**
-5.  Validate the receipt number is updated as the **Transaction id**.
+8.  Click **Tax document.**
+9.  Validate the receipt number is updated as the **Transaction id**.
 
->   [./media/image24.png](./media/image24.png)
+  ![./media/image24.png](./media/image24.png)
 
 ### Sale of taxable goods to an anonymous customer where GST is price-inclusive
 
