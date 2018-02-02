@@ -139,6 +139,7 @@
 #### [Modify form control properties](extensibility/modify-control-properties.md)
 #### [Change a label](extensibility/change-label.md)
 #### [Extend the number sequence scope](extensibility/extend-number-sequence-scope.md)
+#### [Add a new inventory dimension](extensibility/inventory-dimensions.md)
 #### [Changes to price and discount extensibility](extensibility/pricing-app73.md)
 #### [Table map extension](extensibility/map-extensions.md)
 #### [Extend table maps used as interfaces](extensibility/maps-as-interfaces.md)
