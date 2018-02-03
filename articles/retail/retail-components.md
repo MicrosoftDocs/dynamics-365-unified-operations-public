@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Components of Dynamics 365 for Retail
+title: Dynamics 365 for Retail System Architecture
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
 author: MargoC
 manager: AnnBe
@@ -92,6 +92,7 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 </tbody>
 </table>
 
+[![SystemArchitecture](./media/Dynamics 365 for Retail System Architecture.PNG )]
 
 
 
