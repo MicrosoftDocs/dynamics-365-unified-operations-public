@@ -174,6 +174,9 @@ Depending on the specifics of the rule, it might be possible to take an automati
 
 **securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item. Security might require that specific rules and opportunities are accessible only to authorized users. In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity. Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege. 
 
+> [!NOTE]
+> The menu item must be an **action menu item** for security to work correctly. Other menu item types like display menu items will not work correctly.
+
 ```
 public MenuName securityMenuItem() 
 { 
@@ -196,6 +199,65 @@ class ScanNewRulesJob
 ```
 
 The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**. Click **OK**. Go to **System administration** > **Optimization advisor** to view the new opportunity. 
+
+Below is a code snippet with the skeleton of a rule including all the required methods and attributed. It can be used to quickly start writing new rules. The included labels and action menu item are only illustrative.
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
 
 For more information, watch the short YouTube video:
 
