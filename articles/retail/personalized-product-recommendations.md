@@ -5,7 +5,7 @@ title: Personalized product recommendations overview
 description: This topic has information about the Dynamics 365 for Retail product recommendations that can be displayed on the point of sale (POS) device.
 author: ashishmsft
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
