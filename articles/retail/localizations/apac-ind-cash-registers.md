@@ -28,16 +28,19 @@ ms.dyn365.ops.version: 7.3.1
 ---
 # GST integration for cash registers for India
 
-This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail industry. This document also highlights the effect of GST on various type of business transactions, and shows the accounting and posting of transactions of various types with the receipt print at the POS.
+This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail. This document also highlights the effect of GST on various type of retail business transactions, and shows the accounting and posting of retail transactions with the receipt printed at the POS.
+
+> [!NOTE]
+  > This topic applies to both Dynamics 365 for Finance and Operations, Enterprise edition, and to Dynamics 365 for Retail.
 
 ## Prerequisites 
 
-- Execute **Goods and Services tax configuration in Dynamics 365** script
-- Configure Retail channel components
-  -To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- Execute [Goods and Services tax configuration in Dynamics 365 for Finance and Operations, Enterprise edition](./???)
+> [!NOTE] TODO: add a link
+- Configure Retail channel components: to enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
   
 ## India tax entities mapped in Dynamic 365 for Retail
-The navigation path for the India tax entities are different in the **Dynamics 365 for Retail** and **Dynamics 365 for Finance and operations**. The below table guides the navigation path for the India tax entities in the **Dynamics 365 for Retail**.
+The navigation path for the India tax entities are different in the **Dynamics 365 for Retail** and **Dynamics 365 for Finance and operations, Enterprise edition**. For information about the navigation path in Dynamics 365 for Finance and Operations, Enterprises edition, see [Goods and Services tax configuration in Dynamics 365 for Finance and Operations, Enterprise edition](./???). The below table guides the navigation path for the India tax entities in the **Dynamics 365 for Retail**.
 
 | **India tax entities**              | **Navigation path in Dynamics 365 for Retail**                                |
 |-------------------------------------|-------------------------------------------------------------------------------|
@@ -121,7 +124,7 @@ This feature facilitates to reconcile the POS receipt number with the Invoice nu
 ![Retail parameters](media/apac-ind-gst-retail-parameters.png)
 
   > [!NOTE]
-  > You can select the **Update POS invoice number** check box only if the existing receipt format includes the store number and terminal number.
+  > You can select the **Update POS invoice number** check box only if the existing receipt number format includes the store number and terminal number.
 
 ![POS functionality profiles](media/apac-ind-gst-pos-functionality-profile.png)
 
@@ -186,8 +189,7 @@ Customer address with the registration number are required fields for these tran
 
    ![Receipt example](media/apac-ind-gst-receipt.png)
 
-### Validate the sales order and tax document at Microsoft Dynamics AX
-headquarters
+### Validate the sales order and tax document at Retail Headquarters
 
 1.  Go to **Retail \> Customers \> All sales orders**.
 2.  Select the sales order.
@@ -238,7 +240,7 @@ headquarters
 
 ### Sale of taxable goods to a consumer 
 
-Sales to unregistered customer are known as B2C sales. There is no difference in computation of tax for a B2B and B2C sales. Customer shall be selected as **Consumer**, if the customer master is maintained with the address in the Dynamics 365.
+Sales to unregistered customer are known as B2C sales. There is no difference in computation of tax for a B2B and B2C sales. Customer shall be selected as **Consumer**, if the customer master is maintained with the address in the Retail Headquarters.
 
 1.  Login into POS.
 2.  Enter an Item, and then click **Enter**.
@@ -259,7 +261,7 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
 
  ![./media/image21.png](./media/image21.png)
 
-### Validate the retail sales invoice in Microsoft Dynamics AX headquarters
+### Validate the retail sales invoice in Retail Headquarters
 
 1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
 2.  Run job **P-0001** (**Channel transactions**).
@@ -331,7 +333,7 @@ CGST – 12% ; SGST – 11%
 
 ![](media/ec13811218348456926d3cc08bc586c5.png)
 
-**Validate the retail sales invoice in Microsoft Dynamics AX headquarters**
+**Validate the retail sales invoice in Retail Headquarters**
 
 1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
 2.  Run job **P-0001** (**Channel transactions**).
@@ -375,7 +377,7 @@ CGST – 12% ; SGST – 11%
 
 >   [./media/image31.png](./media/image31.png)
 
-**Validate the retail sales invoice at Microsoft Dynamics AX headquarters**
+**Validate the retail sales invoice at Retail Headquarters**
 
 1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
 2.  Run job **P-0001** (**Channel transactions**).
@@ -421,7 +423,7 @@ CGST – 12% ; SGST – 11%
 
 >   [./media/image35.png](./media/image35.png)
 
-**Validate the retail sales invoice at Microsoft Dynamics AX headquarters**
+**Validate the retail sales invoice at Retail Headquarters**
 
 1.  Go to **Retail \> Retail IT \> Data distribution**.
 2.  Run job P-0001 (Channel transactions).
