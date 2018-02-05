@@ -5,7 +5,7 @@ title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
 author: cvocph 
 manager: AnnBe
-ms.date: 2/01/2018
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

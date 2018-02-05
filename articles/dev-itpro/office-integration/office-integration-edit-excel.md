@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Learn about creating Open in Office experiences for Excel and Word.
 
-What are Open in Excel experiences?
------------------------------------
+## What are Open in Excel experiences?
 
 Open in Excel experiences are:
 
@@ -117,8 +116,7 @@ Example:  
         }
     }
 
-How does the app get injected into a workbook to start building a template?
-===========================================================================
+## How does the app get injected into a workbook to start building a template?
 
 The Excel Data Connector App is injected into a workbook when a generated Open in Excel experience is triggered or when a workbook is created using the **Common** &gt; **Common** &gt; **Office integration** &gt; **Excel workbook designer** form.
 
@@ -175,8 +173,7 @@ When creating a template for an entity that has region-specific fields, you shou
 -   If a region has a region-specific entity, then a region-specific template could be created.
 -   If a region is important enough, then you could define a region-specific template as well as a region-generic template.
 
-How do I add an explicit button for a template Open in Excel option?
-====================================================================
+## How do I add an explicit button for a template Open in Excel option?
 
 An explicit button can be added for Open in Excel experiences. The label shown on the button should usually be “Open target in Excel” where target is the name of the target data like “lines” or “catalog”. The code behind such a button will:
 
@@ -290,8 +287,7 @@ To programmatically add generated and template Open in Excel options Open in Exc
         }
     ...
 
-How do I add a filter for a programmatically-added template Open in Excel option?
-=================================================================================
+## How do I add a filter for a programmatically-added template Open in Excel option?
 
 A template Open in Excel option can be programmatically added by implementing the ExportToExcelITemplateCustomExport interface and providing a template in the getTemplate method. A filter for that option can be programmatically added by using the ExportToExcelFilterBuilder API in the updateTemplateSettings method.
 
@@ -355,7 +351,7 @@ To use a header and lines workbook to create a new header and some lines:
 3. Enter header values and lines as needed
 4. Click **Publish**
 
-### Troubleshooting
+## Troubleshooting
 
 If you are not seeing an expected lookup, validate relationship metadata by checking the metadata feed available at \[YourSiteURL\]/data/$metadata.  Search the $metadat feed for the public name of your entity to find its EntityType element, then make sure there is a child NavigationProperty element with a name equal to the Role value of the relationship. If the navigation property exists, it will be used by the Excel Data Connector to show a relationship lookup. Lookups are not shown under the following conditions:
 

@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -36,6 +35,9 @@ ms.dyn365.ops.version: Version 1611
 
 
 This topic describes the process for configuring tax integration for China.
+
+## Prerequisite
+Before you can configure tax integration, you must enable tax integration by selecting **Yes** for the **Integration with tax system** option on the **Accounts receivable parameters** page (**Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Ledger and sales tax** > **General** tab).
 
 To configure tax integration for China, complete the following tasks.
 

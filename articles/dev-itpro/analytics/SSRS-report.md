@@ -5,7 +5,7 @@ title: SQL Server Reporting Services reports
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 01/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -47,11 +46,3 @@ For more information, see [Create next-generation reporting solutions](create-ne
 
 ## To view the report
 The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report.
-
-## How the report is grouped
-The report is a Microsoft Excel file. In this report, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. 
-
-[![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
-
-
-

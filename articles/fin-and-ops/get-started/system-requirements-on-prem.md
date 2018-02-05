@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,6 +35,8 @@ ms.dyn365.ops.version: Platform update 8
 [!include[banner](../includes/banner.md)]
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+> [!IMPORTANT]
+> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
 
 ## Network requirements
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.
@@ -114,10 +116,12 @@ The following tables list the number of processors and the amount of random-acce
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|             | SQL Server  |  8  | 32 |
 | Sandbox    | AOS, Data management, Batch   | 4                           | 24                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | Orchestrator                  | 4                           | 16                      |
+|                 | SQL Server  | 8  | 32|
 
 **Minimum sizing estimates for production and sandbox deployments\***
 
@@ -127,11 +131,13 @@ The following tables list the number of processors and the amount of random-acce
 |                                                 | Management Reporter           | 2                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator\*\*              | 3                   |
+|                                                  | SQL Server  | 2   |
 | Sandbox                                         | AOS, Data management, Batch   | 2                   |
 |                                                 | Management Reporter           | 1                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | Orchestrator                  | 3                   |
-| *Summary for production and sandbox topologies* |                               | *16*                |
+|                                                 | SQL Server  |   1    |
+| *Summary for production and sandbox topologies* |                               | *19*                |
 
 \* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.
 
@@ -186,7 +192,7 @@ The following tables list the number of processors and the amount of random-acce
 </tbody>
 </table>
 
-\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). Separate SQL Server machines for sandbox and production environments must be used.
+\* SQL Server sizes are highly dependent on workloads. For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md). Separate SQL Server machines for sandbox and production environments must be used. However, SQL Server can be shared in all sandbox environments.
 
 ## Storage
 
@@ -255,7 +261,7 @@ The domain controller must be Windows Server 2012 R2 or later, and the domain fu
 ## Supported Microsoft Office applications
 The following Microsoft Office applications are supported in the cloud and on-premises deployments of Finance and Operations:
 
--   To run the Microsoft Excel and Microsoft Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed. For more information about version requirements, see [Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
+-   To run the Microsoft Excel and Microsoft Word add-ins, you must have Microsoft Office 2016 for Windows installed. For more information about version requirements, see [Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   To view documents that are generated by the Export to Excel or Export to Word functionality, you must have Microsoft Office 2007 or later installed.
  
 ## Hardware and software requirements for Retail components

@@ -58,7 +58,7 @@ In the current release, this code would be converted to:
 
 For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.
 
-# See also
+## See also
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 

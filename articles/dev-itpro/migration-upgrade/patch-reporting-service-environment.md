@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The following procedure is for one-box development environments only.
 
-Patch the Reporting Service
-===========================
+## Patch the Reporting Service
 
 The following procedure is for one-box development environments only.
 
@@ -50,7 +49,7 @@ The following procedure is for one-box development environments only.
     -   Remove/reinstall the reporting extension. The remove/reinstall option requires that redeploy all reports after you have finished the reinstallation..
     -   Manually copy binaries to the sql server binary folder. If you choose to manually copy the files, then you do not need to redeploy reports.
 
-## Remove/reinstall the reporting extension
+### Remove/reinstall the reporting extension
 Complete the following procedure as a user in the administrator group for the machine where SSRS is running.
 
 -   Using Windows PowerShell, remove the Dynamics SSRS extension by running the following script:
@@ -61,7 +60,7 @@ Complete the following procedure as a user in the administrator group for the ma
     -   Powershell .\\DeployAllReportsToSsrs.ps1
 -   This task will take 20 to 30 minutes to complete.
 
-## Manually copy binaries to the SQL Server binary folder
+### Manually copy binaries to the SQL Server binary folder
 1.  Stop SQL Server Reporting Services. This can be done either from the **Services management** console or from the **Reporting Services Configuration Manager**. [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
 2.  Find the SQL Server Reporting Services binary folder. This folder is usually located at C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin.
 3.  If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *
@@ -86,7 +85,7 @@ Complete the following procedure as a user in the administrator group for the ma
 
 Restart SQL Server Reporting Services.
 
-## Reporting service installation
+### Reporting service installation
 The following changes are made with the reporting service installation: The following files will be copied into Reporting service bin folder (C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin), and the corresponding SSRS config files will be updated so that SSRS is aware of the extension.
 
 -   Dynamics.AX.Framework.Services.Platform.Client.dll
