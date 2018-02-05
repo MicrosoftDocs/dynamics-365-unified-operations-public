@@ -635,7 +635,7 @@
 ##### [Fixed assets](../financials/localizations/apac-ind-fixed-assets.md)
 ##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
 ##### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
-##### [Tax threshholds FAQ](../financials/localizations/apac-ind-tax-thresholds.md)
+##### [Tax thresholds FAQ](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japan
@@ -1250,7 +1250,7 @@
 ##### [Map models  to use financial dimensions as a data source for electronic reporting](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md)
 ##### [Design a report to use financial dimensions as a data source for electronic reporting](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md)
 ##### [Run a report that uses financial dimensions as a data source for electronic reporting](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md)
-##### [Create formate for counting and summing for electronic reporting](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md)
+##### [Create format for counting and summing for electronic reporting](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md)
 ##### [Configure computations to do counting and summing for electronic reporting](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md)
 ##### [Use computations to make the output for counting and summing for electronic reporting](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md)
 ##### [Run the format to do counting and summing for electronic reporting](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md)
@@ -1264,7 +1264,7 @@
 ##### [Design configurations to generate reports in Microsoft Office formats with embedded images for electronic reporting (ER) (Part 1) ](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md)
 ##### [Review configurations to make reports in Microsoft Office formats with embedded images for electronic reporting](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md)
 ##### [Generate reports in Microsoft Office formats with embedded images for electronic reporting](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md)
-#### [Generate electronic documents and and update application data using the Electronic reporting tool](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md)
+#### [Generate electronic documents and update application data using the Electronic reporting tool](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md)
 ##### [Import configurations to generate documents with application data update for electronic reporting](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md)
 ##### [Generate documents with application data update for electronic reporting](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md)
 ##### [Modify model and mapping to generate documents with application data update for electronic reporting](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md)
