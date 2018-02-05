@@ -301,9 +301,7 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
 
 1.  Go to **Retail** \> **Channels** \> **Retail stores \> All retail stores.**
 2.  Select a retail store
-3.  Select **Price include sales tax** checkbox
-
-![](media/f201725af4374e68d900a2f5b0c9c48d.png)
+3.  Set the **Price include sales tax** option to **Yes**.
 
 **Run the distribution schedule**
 
@@ -402,11 +400,13 @@ CGST – 12% ; SGST – 11%
 3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
 4.  Click **Voucher**.
 
-![](media/f8b9b7396ff26e3fc67ee436c7d10f12.jpg)
+|Ledger account name|Debit amount (Rs.)|Credit amount (Rs.)|
+|-------------------|------------------|-------------------|
+|Customer account|    12,000.00||
+|   Sales - Finished Goods||   12,000.00|
 
 1.  Click **Tax document**.
-2.  Verify **Exempt** is yes
->   [./media/image33.png](./media/image33.png)
+2.  Verify that the **Exempt** option is set to **Yes**.
 
 ### Return transaction with GST
 
@@ -417,7 +417,7 @@ CGST – 12% ; SGST – 11%
 5.  Verify the GST computation is as per the selected original transactions to
     be returned.
 
->   [./media/image34.png](./media/image34.png)
+![POS return transaction](media/apac-ind-gst-return-trx.png)
 
 1.  Click **Exact**.
 
