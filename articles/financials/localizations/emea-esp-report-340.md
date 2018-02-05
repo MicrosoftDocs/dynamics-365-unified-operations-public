@@ -57,12 +57,12 @@ Report 340 includes the following entries:
 
     1. In the **Sales tax code** field, select a sales tax code.
     2. In the **Equivalence charge code** field, select the EC, if it's required.
-    3. Select the **Non-Deductible VAT** check box to activate non-deductible VAT for a sales tax code.
+    3. Set the **Non-Deductible VAT** option to **Yes** to activate non-deductible VAT for a sales tax code.
 
         > [!NOTE]
         > Purchasers aren't allowed to deduct non-deductible VAT from their own VAT liability.
 
-    4. Select the **Reverse Charge** check box to activate reverse charges for a sales tax code.
+    4. Set the **Reverse Charge** option to **Yes** to activate reverse charges for a sales tax code.
 
         > [!NOTE]
         > Reverse charges are part of the VAT law. In some cases, goods or services are delivered by a foreign company. When reverse charges are activated, the VAT on these goods and services is payable by the recipient company, not by the foreign company.
@@ -71,11 +71,11 @@ Report 340 includes the following entries:
 6. Select the **Create new** button to create a new report. On the **Spanish VAT list** page, fill in the **VAT book**, **Description**, **Settlement period**, **From date**, and **Start numbering** fields, and follow these steps:
 
     1. In the **Method of numbering** field, select a value.
-    2. Select the **Replacement declaration** check box to replace the previous declaration.
+    2. Set the **Replacement declaration** option to **Yes** to replace the previous declaration.
     3. In the **Previous declaration number** field, enter the 13-digit number of the previous declaration.
 
         > [!NOTE]
-        > The **Previous declaration number** field can be edited only if the **Replacement declaration** check box is selected.
+        > The **Previous declaration number** field can be edited only if the **Replacement declaration** option has **Yes**.
 
 7. Select **OK** to return to the **Spanish VAT reports** page. The system enters information from the **Spanish VAT list** page on the **Spanish VAT reports** page. You can't modify the values in the **Settlement period**, **Method of numbering**, and **From date** fields on the **Spanish VAT reports** page.
 8. On the **General** tab, follow these steps:
@@ -89,7 +89,7 @@ Report 340 includes the following entries:
         > [!NOTE]
         > Select either **Telematic** or **CD-R**. If you select **Report**, you receive an error message.
 
-    2. Select the **Reported** check box to generate the final report.
+    2. Set the **Reported** option to **Yes** to generate the final report.
     3. In the **Contact person** field, enter the name of the contact person.
     4. In the **Telephone** field, enter the telephone number of the contact person.
     5. In the **Document** field, enter the four-digit document number. If you enter a number that contains fewer than four digits, leading zeros are added to create a four-digit number. For example, if you enter **1**, the system automatically converts the value to **0001** and stores the new value.
