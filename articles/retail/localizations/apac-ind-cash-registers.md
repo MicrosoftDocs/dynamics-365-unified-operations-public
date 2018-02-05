@@ -246,7 +246,7 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
 2.  Enter an Item, and then click **Enter**.
 3.  Click **Add customer**, and select the customer account
 
-  ![](media/260dd90852026c9eb82f76e16b2ef078.png)
+  ![Example transaction](media/apac-ind-gst-example-trx.png)
 
   >  [!NOTE]
   > In this example, Store location state is Delhi and Customer address state is Bangalore. Both are of different state and hence interstate GST gets computed.
@@ -259,7 +259,7 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
 2.  Select the transactions.
 3.  Click **Receipt**.
 
- ![./media/image21.png](./media/image21.png)
+ ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
 
 ### Validate the retail sales invoice in Retail Headquarters
 
@@ -280,14 +280,15 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
 3.  Click **Sales order lines** \> **Tax information** button
 4.  Verify the Location (Store address) and the Customer address in the
     respective tabs.
+![Tax information](media/apac-ind-gst-tax-info.png)
 
-  ![./media/image22.png](./media/image22.png)
+
 
 5.  Click **OK**.
 6.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
 7.  Click **Voucher**.
 
-    ![](media/0a30aaf623dd77e34e845f913fe03a55.png)
+    ![Tax document sales invoice](media/apac-ind-gst-tax-document3.png)
 
 8.  Click **Tax document.**
 9.  Validate the receipt number is updated as the **Transaction id**.
@@ -321,7 +322,7 @@ Taxable value = 10000.00
 
 CGST – 12% ; SGST – 11%
 
-![](media/685a4f2d644079b0db9511cb84445468.png)
+![Transaction example](media/apac-ind-gst-trx-example.png)
 
 1.  Click **Exact,** to process the payment.
 
@@ -331,7 +332,7 @@ CGST – 12% ; SGST – 11%
 2.  Select the transactions.
 3.  Click **Receipt**.
 
-![](media/ec13811218348456926d3cc08bc586c5.png)
+![Receipt example](media/apac-ind-gst-receipt-3.png)
 
 **Validate the retail sales invoice in Retail Headquarters**
 
@@ -352,20 +353,25 @@ CGST – 12% ; SGST – 11%
 3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
 4.  Click **Voucher**.
 
-    ![](media/e90f01ccef6e66f96b2a826d1d4bc7de.png)
+|Ledger account name|Debit amount (Rs.)|Credit amount (Rs.)|
+|-------------------|------------------|-------------------|
+|Customer account|    10,000.00||
+|   CGST payable account||   975.61|
+|   SGST payable account||   894.31|
+|   Sales account||   8,130.08|
 
 5.  Click **Tax document.**
 6.  Validate the **Transaction id** is updated as per the GST number sequence
     defined in **the GST reference number sequence group**.
 
-![](media/edfe6aa41d6f6375734b9da767d52894.png)
+![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### Sales of exempted good 
 
 1.  Login to POS.
 2.  Enter an exempted item.
 
->   [./media/image30.png](./media/image30.png)
+![Exempted item transaction](media/apac-ind-gst-exempted-item-trx.png)
 
 1.  Click **Exact**, to process the payment.
 
@@ -375,7 +381,7 @@ CGST – 12% ; SGST – 11%
 2.  Select the transactions.
 3.  Click **Receipt**.
 
->   [./media/image31.png](./media/image31.png)
+![Receipt example.png](media/apac-ind-gst-receipt-4.png)
 
 **Validate the retail sales invoice at Retail Headquarters**
 
