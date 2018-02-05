@@ -6,7 +6,7 @@ title: Create rules for Optimization advisor
 description: This topic discusses how to add new rules to Optimization advisor. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -175,7 +175,7 @@ Depending on the specifics of the rule, it might be possible to take an automati
 **securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item. Security might require that specific rules and opportunities are accessible only to authorized users. In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity. Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege. 
 
 > [!NOTE]
-> The menu item must be an **action menu item** for security to work correctly. Other menu item types like display menu items will not work correctly.
+> The menu item must be an action menu item for security to work correctly. Other menu item types, such as **Display menu items** will not work correctly.
 
 ```
 public MenuName securityMenuItem() 
@@ -200,7 +200,7 @@ class ScanNewRulesJob
 
 The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**. Click **OK**. Go to **System administration** > **Optimization advisor** to view the new opportunity. 
 
-Below is a code snippet with the skeleton of a rule including all the required methods and attributed. It can be used to quickly start writing new rules. The included labels and action menu item are only illustrative.
+The following example is a code snippet with the skeleton of a rule including all the required methods and attributes. It helps you get started with writing new rules. The labels and action menu items that are used in the example are only used for demonstration purpose.
 
 ```
 [DiagnosticsRuleAttribute]
