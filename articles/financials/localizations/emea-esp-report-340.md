@@ -105,7 +105,7 @@ Report 340 includes the following entries:
 
     > [!NOTE]
     > If the VAT report contains no transactions, you receive an error message.
-    > Before execution these step, please, check information on **General** tab. You should fill in information in **Contact information** and **Document number** field groups. Otherwise you would get error message. 
+    > Before execution the following step, please, check information on **General** tab. You should fill in information in **Contact information** and **Document number** field groups. Otherwise you would get error message. 
     
     1. On the **Export to ASCII** page, select the file to export, and then select **OK**. Tax law forbids the export of ASCII files for years before 2009. However, you can print records for years before 2009.
     2. On the **Spanish VAT register book** page, in the **Format mapping** field, select the format.
