@@ -55,7 +55,7 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 | **Replaced by another feature?**   | No. However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.   |
 | **Product areas affected**         | Personalized product recommendations in POS.                                                    |
 | **Deployment option**              | All                                                                                      |
-| **Status**                         |Removed as of February 15, 2018. |
+| **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Operations 1611 and later.  |
 
 ### Extension of the list of Electronic reporting (ER) functions
 The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
@@ -149,7 +149,7 @@ Users can download this from the government portal.
 | **Status**                                  | Deprecated: A removal date has not been set for this feature.  |    
 
 
-## Dynamics 365 for Retail version 7.2
+## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
 Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
@@ -160,7 +160,7 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 | **Replaced by another feature?**   | No. However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.   |
 | **Product areas affected**         | Personalized product recommendations in POS.                                                    |
 | **Deployment option**              | All                                                                                      |
-| **Status**                         |Removed as of February 15, 2018. |
+| **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Retail 7.2  and later. |
 
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
