@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope:  Operations, Platform
+ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
