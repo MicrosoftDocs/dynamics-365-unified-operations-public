@@ -53,7 +53,7 @@ Report 340 includes the following entries:
 1. Select **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Spanish VAT books**.
 2. In the **VAT book** and **Description** fields, enter a name and description for the VAT book.
 3. In the **Number sequence code** field, select a number sequence code.
-4. In the **Setup** area, select the **Add** button, and then follow these steps to set up sales tax codes on the sales tax transactions that should be included on the report:
+4. On the **Setup** FstTab, select the **Add** button, and then follow these steps to set up sales tax codes on the sales tax transactions that should be included on the report:
 
     1. In the **Sales tax code** field, select a sales tax code.
     2. In the **Equivalence charge code** field, select the EC, if it's required.
