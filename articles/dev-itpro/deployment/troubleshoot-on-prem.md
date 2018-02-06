@@ -292,8 +292,8 @@ Complete the following steps to resolve the error.
         www.office.com:443
         login.microsoftonline.com:443
         dc.services.visualstudio.com:443
-        uswelcs1lcm.blob.core.windows.net
-        uswedpl1catalog.blob.core.windows.net 
+        uswelcs1lcm.blob.core.windows.net:443
+        uswedpl1catalog.blob.core.windows.net:443 
 
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
