@@ -18,8 +18,8 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform
-# ms.tgt_pltfrm: Platform Update 11
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
