@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure reverse proxy for your Dynamics 365 for Finance and Operations on-premises environment
+title: Configure reverse proxy for your on-premises environment
 description: This topic describes how you can secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy.
 author: sarvanisathish
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 
 ---
 
-# Configure reverse proxy for your Dynamics 365 for Finance and Operations on-premises environment
+# Configure reverse proxy for your on-premises environment
 
 [!include[banner](../includes/banner.md)]
 
