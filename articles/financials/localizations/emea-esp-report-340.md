@@ -116,7 +116,7 @@ Report 340 includes the following entries:
 The format of the Report 340 text file complies with the regulatory requirements and contains the following record types:
 
 - **Type 1** – The **Type 1** record contains information about the company that submits Report 340. This company is known as the *deponent*. The information is retrieved from the Company Information table and the **Spanish VAT books** page.
-- **Type 2** – The report should include at least one **Type 2** record. **Type 2** records contain information about the goods and services that were purchased and sold during the specified period. Customer and vendor information is retrieved from the Customer and Vendor cards.
+- **Type 2** – The report should include at least one **Type 2** record. **Type 2** records contain information about the goods and services that were purchased and sold during the specified period. Customer and vendor information is retrieved from the Customer and Vendor records.
 
 > [!NOTE]
 > If there are no **Type 2** records, the file isn't generated.
