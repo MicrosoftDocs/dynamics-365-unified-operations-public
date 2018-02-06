@@ -98,26 +98,16 @@ This topic provides a walkthrough of the features that are related to the Goods 
   </tr>
 <tr>
   <td>Harmonized System of Nomenclature (HSN) codes and Service accounting codes</td>
-  <td>Enter HSN code information on the HSN page (<strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>HSN code</strong>).</td>
-</tr>
-<tr>
-  <td>Service accounting codes (SAC)</td>
-  <td>Set up service accounting codes on the <strong>Service accounting codes</strong> page (<strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>Service accounting codes</strong>.)</td>
-</tr>
-<tr>
-  <td>Assign HSN and SAC to products</td>
-  <td> 
-    <ol>
-      <li>Click <strong>Product information management</strong> > <strong>Common</strong> > <strong>Released products</strong>. </li>
-      <li>Select an item.</li>
-      <li>On the Action Pane, on the Product tab, in the Maintain group, click Edit.</li>
-      <li>In the HSN code field, select a value.</li>
-    </ol>
-  <p> <strong>Note</strong>: The following setup is required for the calculation of GST: <ul>
-  <li> A Harmonized System of Nomenclature (HSN) code should be defined for the Item item type, or a Service accounting code (SAC) should be defined for the Service item type.</li>
-  <li>Item sales tax group should be removed.</li>
-  </ul></p>
-  </td>
+  <td>Create Harmonized System of Nomenclature (HSN code) and Service accounting codes (SAC) for all goods and services. The GST rates are applicable based on the HSN or SAC codes assigned to the goods or services. 
+<ul>
+  <li> HSN - Go to <strong>Tax</strong> > <strong>Setup</strong> > <strong>Sales tax</strong> > <strong>HSN code</strong>.
+  </li>
+  <li> SAC - Go to <strong>Tax</strong> > <strong>Setup</strong> > <strong>Sales tax</strong> > <strong>Service accounting codes</strong>.
+  </li>
+    </ul>
+    <p> You can assign HSN codes and Service accounting codes to products in the <strong>GST</strong> area of the the <strong>Released products</strong> page. Products of the <strong>Item</strong> item type should get an HSN code and products of the <strong>Service</strong> item type should get a SAC. </p>
+      <strong>IMPORTANT</strong>: Item sales tax group should be removed on products that are assigned an HSN or SAC code. 
+    </td>
 </tr>
 <tr>
 <td>Assign a Service accounting code to miscellaneous charges</td>
