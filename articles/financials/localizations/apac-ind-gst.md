@@ -151,13 +151,41 @@ This topic provides a walkthrough of the features that are related to the Goods 
 </table>
 
 
-Create a tax settlement period
+## Define GST reference number groups
+The various GST transactions are differentiated with a unique number sequence in the Dynamics 365.
+In case of different number sequence required for per Warehouse/Entity addresses, the required Reference number sequence group can be created and assigned to the addresses.
 
-1	Click **Accounts payable** > **Vendors** > **All vendors**, and create a GST authority.
+The following steps demonstrates how to create the GST reference number group and assign to the addresses.
 
-2	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax authorities**.
+1	Go to Tax > Setup > Sales tax > India > GST reference number sequence group.
+2	Click New.
+3	In the Name field, enter a value. 
+4	In the Description field, enter a value. 
+5	On the Details FastTab, define number sequences for the references. Refer to the following table for additional information about each reference.
 
-3	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax settlement periods**, and create a tax period for GST.
+| **Source**          | **Reference**            | **Description**                                                                                                                                                                               |
+|---------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Accounts receivable | Bill of supply           | The **Bill of supply** number sequence will be used when customer sales that have non-GST transactions are posted.                                                                            |
+| Accounts receivable | Debit/Credit note        | The **Debit/Credit note** number sequence will be used when customer debit or credit sales that have GST transactions are posted.                                                             |
+| Accounts receivable | Revised invoice          | The **Revised invoice** number sequence will be used when customer revised sales invoice with reference to the existing invoice, that have GST transactions are posted.                       |
+| Accounts receivable | Advanced receipt voucher | The **Advance receipt voucher** number sequence will be used when customer advance receipt transactions that have GST transactions are posted.                                                |
+| Accounts receivable | Advanced refund voucher  | The **Advance refund voucher** number sequence will be used when customer advance refund transactions that have GST transactions are posted.                                                  |
+| Accounts receivable | GST invoice              | The **GST invoice** number sequence will be used when customer sales that have GST transactions are posted.                                                                                   |
+| Accounts receivable | Export order             | The **Export order** number sequence will be used when customs export order transactions are posted.                                                                                          |
+| Accounts payable    | Debit/Credit note        | The **Debit/Credit note** number sequence will be used when vendor debit or credit purchase that have GST with reverse charge transactions are posted.                                        |
+| Accounts payable    | Revised invoice          | The **Revised invoice** number sequence will be used when vendor revised purchase invoice with reference to the existing invoice, which have GST with reverse charge transactions are posted. |
+| Accounts payable    | Advanced payment voucher | The **Advance payment voucher** number sequence will be used when vendor advance payment transactions that have GST transactions are posted.                                                  |
+| Accounts payable    | GST invoice              | The **GST invoice** number sequence will be used when vendor purchase that have GST with reverse charge transactions are posted.                                                              |
+
+
+
+## Create a tax settlement period
+
+1.	Click **Accounts payable** > **Vendors** > **All vendors**, and create a GST authority.
+
+2.	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax authorities**.
+
+3.	Click **General ledger** > **Setup** > **Sales tax** > **Sales tax settlement periods**, and create a tax period for GST.
 
 ### Attach the GSTIN to a tax registration group
 Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax registration group**, create a group, and define the required GSTIN.
