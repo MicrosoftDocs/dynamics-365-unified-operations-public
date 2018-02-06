@@ -3,7 +3,7 @@
 
 title: Apply updates to an on-premises deployment
 description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: manado
+author: manalidongre
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article

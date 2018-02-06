@@ -3,7 +3,7 @@
 
 title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
-author: SunilGarg
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: article
