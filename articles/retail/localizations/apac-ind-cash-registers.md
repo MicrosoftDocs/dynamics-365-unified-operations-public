@@ -147,13 +147,13 @@ Sales to a registered customer are known as B2B sales. If the store location’s
 
 3. Validate GST calculations considering the rate defined in the tax setup.
 
-| **Item/Service** | **Unit price** | **Tax rates**    | **CGST** | **SGST**    |
-|------------------|----------------|------------------|----------|-------------|
-| M0001            | 10,000.00      | CGST12%, SGST11% | 1,200.00 | 1,100.00    |
-| M0002            | 5,000.00       | CGST10%, SGST10% | 500.00   | 500.00      |
-| S0001            | 1,200.00       | CGST11%, SGST5%  | 132.00   | 60.00       |
-|                  | 16,200.00      |                  | 1,832.00 | 1,660.00    |
-| Total amount     |                |                  |          | 19,692.00   |
+  | **Item/Service** | **Unit price** | **Tax rates**    | **CGST** | **SGST**    |
+  |------------------|----------------|------------------|----------|-------------|
+  | M0001            | 10,000.00      | CGST12%, SGST11% | 1,200.00 | 1,100.00    |
+  | M0002            | 5,000.00       | CGST10%, SGST10% | 500.00   | 500.00      |
+  | S0001            | 1,200.00       | CGST11%, SGST5%  | 132.00   | 60.00       |
+  |                  | 16,200.00      |                  | 1,832.00 | 1,660.00    |
+  | Total amount     |                |                  |          | 19,692.00   |
 
 4.  Click **Orders** > **Create customer order**.
 5.  Click **Add customer** to select the customer account.
@@ -183,11 +183,11 @@ Sales to a registered customer are known as B2B sales. If the store location’s
   ![Tax document](media/apac-ind-gst-tax-document.png)
 
 12. Recall and process the customer order
-  1.  Login to POS.
-  2.  Click **Recall order**.
-  3.  Search for the order and Select the order.
-  4.  Click **Picking and packing** \> **Pickup**
-  5.  Click **Select all** and then **Pickup.**
+    1.  Login to POS.
+    2.  Click **Recall order**.
+    3.  Search for the order and Select the order.
+    4.  Click **Picking and packing** \> **Pickup**
+    5.  Click **Select all** and then **Pickup.**
 
    ![Process a customer order](media/apac-ind-gst-process-customer-order.png)
 
@@ -202,61 +202,61 @@ Sales to a registered customer are known as B2B sales. If the store location’s
     3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
     4.  Click **Voucher**.
 
-|Ledger account name      |Debit amount (Rs.)|Credit amount (Rs.)|
-|-------------------------|------------------|-------------------|
-|Customer account         |         19,692.00|                   |
-|   CGST payable account  |                  |           1,832.00|
-|   SGST payable account  |                  |           1,660.00|
-|   Sales account         |                  |          16,200.00|
+    |Ledger account name      |Debit amount (Rs.)|Credit amount (Rs.)|
+    |-------------------------|------------------|-------------------|
+    |Customer account         |         19,692.00|                   |
+    |   CGST payable account  |                  |           1,832.00|
+    |   SGST payable account  |                  |           1,660.00|
+    |   Sales account         |                  |          16,200.00|
 
 
-   5.  Click **Tax document.**
-   6.  Validate the receipt number is updated as the **Transaction id**.
+    5.  Click **Tax document.**
+    6.  Validate the receipt number is updated as the **Transaction id**.
 
 ![Tax document](media/apac-ind-gst-tax-document2.png)
 
-### Sale of taxable goods to a consumer 
+### Sell taxable goods to a consumer 
 
-Sales to unregistered customer are known as B2C sales. There is no difference in computation of tax for a B2B and B2C sales. Customer shall be selected as **Consumer**, if the customer master is maintained with the address in the Retail Headquarters.
+When you sell to unregistered customers, these types of sales are referred to as B2C sales. There is no difference in tax calculation for a B2B and B2C sales. The customer shall be selected as **Consumer** if the customer master is maintained with the address in the Retail Headquarters.
 
-1.  Login into POS.
-2.  Enter an Item, and then click **Enter**.
-3.  Click **Add customer**, and select the customer account
+1. Login into POS.
+2. Enter an Item, and then click **Enter**.
+3. Click **Add customer**, and select the customer account
 
   ![Example transaction](media/apac-ind-gst-example-trx.png)
 
   >  [!NOTE]
   > In this example, Store location state is Delhi and Customer address state is Bangalore. Both are of different state and hence interstate GST gets computed.
 
-4.  Click **Exact,** to process the payment.
+4. Click **Exact,** to process the payment.
 5. Validate the receipt.
-    1.  Click **Show journal**.
-    2.  Select the transactions.
-    3.  Click **Receipt**.
+   1.  Click **Show journal**.
+   2.  Select the transactions.
+   3.  Click **Receipt**.
 
  ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
 
 6. Validate the retail sales invoice in Retail Headquarters
-    1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
-    2.  Run job **P-0001** (**Channel transactions**).
-    3.  Close the form.
+   1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
+   2.  Run job **P-0001** (**Channel transactions**).
+   3.  Close the form.
 
-7. Post the statement
-    1.  Go to **Retail** \> **Channels \> Retail stores** \> **Open statements**.
-    2.  Create a statement.
-    3.  Click **Calculate statement** and then **Post statement**.
+7. Post the statement.
+   1.  Go to **Retail** \> **Channels \> Retail stores** \> **Open statements**.
+   2.  Create a statement.
+   3.  Click **Calculate statement** and then **Post statement**.
 
 8. Validate voucher transactions
-    1.  Go to **Retail** \> **Customers** \> **All sales orders**.
-    2.  Select the sales invoice.
-    3.  Click **Sales order lines** \> **Tax information** button
-    4.  Verify the Location (Store address) and the Customer address in the respective tabs.
+   1.  Go to **Retail** \> **Customers** \> **All sales orders**.
+   2.  Select the sales invoice.
+   3.  Click **Sales order lines** \> **Tax information** button
+   4.  Verify the Location (Store address) and the Customer address in the respective tabs.
 
     ![Tax information](media/apac-ind-gst-tax-info.png)
 
-    5.  Click **OK**.
-    6.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
-    7.  Click **Voucher**.
+   5.  Click **OK**.
+   6.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
+   7.  Click **Voucher**.
 
     |Ledger account name     |Debit amount (Rs.)|Credit amount (Rs.)|
     |------------------------|------------------|-------------------|
@@ -264,43 +264,43 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
     |   IGST payable account |                  |           2,500.00|
     |   Sales account        |                  |          10,000.00|
 
-    8.  Click **Tax document**.
-    9.  Validate the receipt number is updated as the **Transaction id**.
+   8.  Click **Tax document**.
+   9.  Validate the receipt number is updated as the **Transaction id**.
 
 ### Sale of taxable goods to an anonymous customer where GST is price-inclusive
 
 1. Define price-inclusiveness at the retail store.
-    1.  Go to **Retail** \> **Channels** \> **Retail stores \> All retail stores.**
-    2.  Select a retail store.
-    3.  Set the **Price include sales tax** option to **Yes**.
+   1.  Go to **Retail** \> **Channels** \> **Retail stores \> All retail stores.**
+   2.  Select a retail store.
+   3.  Set the **Price include sales tax** option to **Yes**.
 2. Run the distribution schedule.
-    1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
-    2.  Run the job, to update the changes in the POS database.
-    3. Close the page.
+   1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
+   2.  Run the job, to update the changes in the POS database.
+   3. Close the page.
 3. Enter a transaction.
-    1.  Login into POS.
-    2.  Enter an item, and then click **Enter**. For this example, use an item that has a Taxable value = 10000.00; CGST – 12% ; SGST – 11%.
+   1.  Login into POS.
+   2.  Enter an item, and then click **Enter**. For this example, use an item that has a Taxable value = 10000.00; CGST – 12% ; SGST – 11%.
 
-![Transaction example](media/apac-ind-gst-trx-example.png)
+  ![Transaction example](media/apac-ind-gst-trx-example.png)
 
-4.  Click **Exact,** to process the payment.
+4. Click **Exact,** to process the payment.
 5. Validate the receipt.
 
 ![Receipt example](media/apac-ind-gst-receipt-3.png)
 
 6. Validate the retail sales invoice in Retail Headquarters.
-    1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
-    2.  Run job **P-0001** (**Channel transactions**).
-    3.  Close the page.
+   1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
+   2.  Run job **P-0001** (**Channel transactions**).
+   3.  Close the page.
 7. Post the statement.
-    1.  Go to **Retail \> Channels \> Retail stores \> Open statements.**
-    2.  Create a statement.
-    3.  Click **Calculate statement** and then **Post statement**.
+   1.  Go to **Retail \> Channels \> Retail stores \> Open statements.**
+   2.  Create a statement.
+   3.  Click **Calculate statement** and then **Post statement**.
 8. Validate voucher transactions.
-    1.  Go to **Retail \> Customers \> All sales orders**.
-    2.  Select the sales invoice.
-    3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
-    4.  Click **Voucher**.
+   1.  Go to **Retail \> Customers \> All sales orders**.
+   2.  Select the sales invoice.
+   3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
+   4.  Click **Voucher**.
 
     |Ledger account name     |Debit amount (Rs.)|Credit amount (Rs.)|
     |------------------------|------------------|-------------------|
@@ -309,100 +309,79 @@ Sales to unregistered customer are known as B2C sales. There is no difference in
     |   SGST payable account |                  |             894.31|
     |   Sales account        |                  |           8,130.08|
 
-    5.  Click **Tax document.**
-    6.  Validate the **Transaction id** is updated as per the GST number sequence defined in **the GST reference number sequence group**.
+   5.  Click **Tax document.**
+   6.  Validate the **Transaction id** is updated as per the GST number sequence defined in **the GST reference number sequence group**.
 
-![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
+  ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
-### Sales of exempted good 
+### Sell an exempted good 
 
-1.  Login to POS.
-2.  Enter an exempted item.
+1. Log into POS.
+2. Enter an exempted item.
 
 ![Exempted item transaction](media/apac-ind-gst-exempted-item-trx.png)
 
-1.  Click **Exact**, to process the payment.
-
-**Validate the receipt**
-
-1.  Click **Show journal**.
-2.  Select the transactions.
-3.  Click **Receipt**.
+3. Click **Exact**, to process the payment.
+4. Validate the receipt.
 
 ![Receipt example.png](media/apac-ind-gst-receipt-4.png)
 
-**Validate the retail sales invoice at Retail Headquarters**
+5. Validate the retail sales invoice at Retail Headquarters.
+   1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
+   2.  Run job **P-0001** (**Channel transactions**).
+   3.  Close the form.
+6. Post the statement.
+   1.  Go to **Retail** \> **Channels \> Retail stores** \> **Open statements**.
+   2.  Create a statement.
+   3.  Click **Calculate statement** and then **Post statement**
+7. Validate the voucher transactions.
+   1.  Go to **Retail** \> **Customers** \> **All sales orders**.
+   2.  Select the sales invoice.
+   3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
+   4.  Click **Voucher**.
 
-1.  Go to **Retail** \> **Retail IT** \> **Data distribution**.
-2.  Run job **P-0001** (**Channel transactions**).
-3.  Close the form.
+    |Ledger account name      |Debit amount (Rs.)|Credit amount (Rs.)|
+    |-------------------------|------------------|-------------------|
+    |Customer account         |         12,000.00|                   |
+    |   Sales - Finished Goods|                  |          12,000.00|
 
-**Post the statement**
+   5.  Click **Tax document**.
+   6.  Verify that the **Exempt** option is set to **Yes**.
+8. Return transaction with GST
+   1.  Login to POS.
+   2.  Click **Show journal**.
+   3.  Select the transaction and Click **Return**.
+   4.  Click **Select all** and then **Return**.
+   5.  Verify the GST computation is as per the selected original transactions to be returned.
 
-1.  Go to **Retail** \> **Channels \> Retail stores** \> **Open statements**.
-2.  Create a statement.
-3.  Click **Calculate statement** and then **Post statement**
+  ![POS return transaction](media/apac-ind-gst-return-trx.png)
 
-**Validate the voucher transactions**
+   6.  Click **Exact**.
 
-1.  Go to **Retail** \> **Customers** \> **All sales orders**.
-2.  Select the sales invoice.
-3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
-4.  Click **Voucher**.
+9. Validate the receipt.
 
-|Ledger account name|Debit amount (Rs.)|Credit amount (Rs.)|
-|-------------------|------------------|-------------------|
-|Customer account|    12,000.00||
-|   Sales - Finished Goods||   12,000.00|
+  ![Receipt example](media/apac-ind-gst-receipt-5.png)
 
-1.  Click **Tax document**.
-2.  Verify that the **Exempt** option is set to **Yes**.
+10. Validate the retail sales invoice at Retail Headquarters.
+    1.  Go to **Retail \> Retail IT \> Data distribution**.
+    2.  Run job P-0001 (Channel transactions).
+    3.  Close the form.
 
-### Return transaction with GST
+11. Post the statement.
+    1.  Go to **Retail \> Channels \> Retail stores \> Open statements**.
+    2.  Create a statement.
+    3.  Click **Calculate statement** and then **Post statement**.
+12. Validate the voucher transactions**
+    1.  Go to **Retail \> Customers \> All sales orders**.
+    2.  Select the sales invoice.
+    3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
+    4.  Click **Voucher**.
 
-1.  Login to POS.
-2.  Click **Show journal**.
-3.  Select the transaction and Click **Return**.
-4.  Click **Select all** and then **Return**.
-5.  Verify the GST computation is as per the selected original transactions to
-    be returned.
-
-![POS return transaction](media/apac-ind-gst-return-trx.png)
-
-1.  Click **Exact**.
-
-**Validate the receipt**
-
-1.  Click **Show journal**.
-2.  Select the transactions.
-3.  Click **Receipt**.
-
-[Receipt example](media/apac-ind-gst-receipt-5.png)
-
-**Validate the retail sales invoice at Retail Headquarters**
-
-1.  Go to **Retail \> Retail IT \> Data distribution**.
-2.  Run job P-0001 (Channel transactions).
-3.  Close the form.
-
-**Post the statement**
-
-1.  Go to **Retail \> Channels \> Retail stores \> Open statements**.
-2.  Create a statement.
-3.  Click **Calculate statement** and then **Post statement**.
-
-**Validate the voucher transactions**
-
-1.  Go to **Retail \> Customers \> All sales orders**.
-2.  Select the sales invoice.
-3.  On the Action Pane, on the **Invoice** tab, click **Invoice journals**.
-4.  Click **Voucher**.
-
-|Ledger account name     |Debit amount (Rs.)|Credit amount (Rs.)|
-|------------------------|------------------|-------------------|
-|Customer account        |                  |12,500.00          |
-|   IGST payable account |2,500.00          |                   |
-|   Sales account        |10,00.00          |                   |
-
-1.  Click **Tax document**.
-2.  Validate the return receipt number is updated as the **Transaction id**.
+    |Ledger account name     |Debit amount (Rs.)|Credit amount (Rs.)|
+    |------------------------|------------------|-------------------|
+    |Customer account        |                  |12,500.00          |
+    |   IGST payable account |2,500.00          |                   |
+    |   Sales account        |10,00.00          |                   |
+  
+    5.  Click **Tax document**.
+    6.  Validate the return receipt number is updated as the **Transaction id**.
