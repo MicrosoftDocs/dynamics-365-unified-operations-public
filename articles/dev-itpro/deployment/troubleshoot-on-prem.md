@@ -286,9 +286,14 @@ Complete the following steps to resolve the error.
 1. Run `psping lcsapi.lcs.dynamics.com:80`.
 2. If you don't receive a reply, contact the IT department at your organization. The firewall is blocking access to lcsapi or proxy issues.
 
-        Lcsapi.lcs.dynamics.com
-        <lcs azure blob storage domain>
-        <lcs azure queue domain>
+        lcsapi.lcs.dynamics.com:443
+        login.windows.net:443
+        uswelcs1lcm.queue.core.windows.net:443
+        www.office.com:443
+        login.microsoftonline.com:443
+        dc.services.visualstudio.com:443
+        uswelcs1lcm.blob.core.windows.net
+        uswedpl1catalog.blob.core.windows.net 
 
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
