@@ -41,7 +41,7 @@ Before you can publish the marketing content for your LCS solution package to th
 ## Upload marketing materials, set up legal information, and identify the support team
 You can upload a marketing summary, a description of your solution, and other marketing materials.
 
-1.  In the [Azure Publishing Portal](https://publish.windowsazure.com/workspace/), open your solution, and then, in the left pane, click **Marketing**.
+1.  In the [Azure Publishing Portal](https://cloudpartner.azure.com/), open your solution, and then, in the left pane, click **Marketing**.
 2.  In the **Url** section, in the **Identifier** field, enter a short, URL-friendly identifier to use in the URLs that link to the specific marketing pages for your offer.
 3.  In the **Languages** section, select **English**, and then, in the **Description** section, enter the title, summary, long summary, and description of your solution.
 4.  In the **Logos** section, click the **Upload Image** link for the graphic size that corresponds to the graphic size that you want to upload. **Note:** All graphics must follow the sizes that are given for each image, and they must be in a PNG format.
