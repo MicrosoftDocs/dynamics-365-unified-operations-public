@@ -82,7 +82,7 @@ Report 340 includes the following entries:
 
     1. In the **Presentation type** field, select the type of media to use to export the file:
 
-        - **Telematic** – Upload the report to the tax authorities' website, or submit the report by using the free software that is provided by the tax authorities.
+         - **Telematic** – Upload the report to the tax authorities' website, or submit the report by using the free software that is provided by the tax authorities.
         - **CD-R** – Send the report to the tax authorities on a CD-ROM.
         - **Report**
 
@@ -101,11 +101,12 @@ Report 340 includes the following entries:
     - **Amount** – The total amount of the sales or receivables in the **Deliveries** field group, and the total number of purchases or payables in the **Acquisitions** field group.
 
 10. Select the **VAT report lines** button to open the **VAT report lines** page. On this page, you can view the details of VAT transactions. You can delete or exclude lines from the report if they don't have be reported when you export the report.
-11. Select the **Output** button, and then select either **Print** or **Export to ASCII file**.
+11. Select the **Output** button, and then select either **Print** or **Export to ASCII file**. If you selected **Export to ASCII file** then complete the following steps: 
 
     > [!NOTE]
     > If the VAT report contains no transactions, you receive an error message.
-
+    > Before execution these step, please, check information on **General** tab. You should fill in information in **Contact information** and **Document number** field groups. Otherwise you would get error message. 
+    
     1. On the **Export to ASCII** page, select the file to export, and then select **OK**. Tax law forbids the export of ASCII files for years before 2009. However, you can print records for years before 2009.
     2. On the **Spanish VAT register book** page, in the **Format mapping** field, select the format.
 
