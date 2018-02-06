@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure reverse proxy for your Dynamics 365 for Finance and Operations on-premises environment
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes how customers can secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/25/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,19 +31,20 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-Customers may want to secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy. Reverse proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the F&O environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the F&O environment. This adds a measure of security and enable load balancing. 
+Customers may want to secure the Dynamics 365 for Finance and Operations, Enterprise edition on-premises environment behind a reverse proxy. Reverse proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the Finance and Operations environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the Finance and Operations environment. This adds a measure of security and enable load balancing. 
 
 ## Steps to configure the reverse proxy
 
-Perform the below steps in **each** node of type OrchestratorType in the Service Fabric cluster
-1. Remote into the Orchestrator VM
-2. Execute the below powershell script to retrive the path of the ```machine.config``` file
+Perform the below steps in **each** node of type OrchestratorType in the Service Fabric cluster.
+
+1. Remote into the Orchestrator virtual machine (VM).
+2. Execute the below powershell script to retrive the path of the ```machine.config``` file.
 
 	```Powershell
 	[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
 	```
 
-3. Edit the ```machine.config``` file to add the below xml snippet
+3. Edit the ```machine.config``` file to add the below xml snippet.
 
 	```XML
 		<system.net>
