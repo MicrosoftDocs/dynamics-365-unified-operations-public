@@ -55,6 +55,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing capabilities in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
+- [Configure reverse proxy for your on-premises environment](onprem-reverseproxy.md)
 - [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client Internet connection troubleshooting](../user-interface/client-disconnected.md)
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
