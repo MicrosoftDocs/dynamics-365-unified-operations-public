@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides a walkthrough of the features that are related to the Goods and Services Tax (GST). Each documented scenario walks you through basic business transactions that typically occur across various business segments in industries of all types. This document also highlights the effect of GST on various type of business transactions, and shows the accounting and posting of transactions of various types.
+This content provides a walkthrough of the entities of the India Goods and Services Tax (GST) and how they are related, in Microsoft Dynamics 365. 
 
 ## Prerequisites
 
@@ -213,54 +213,35 @@ Legal entity.
 17.  On the **Companies** FastTab, create a record.
 18.  In the **Companies** field, select a value and then click **Save**.
 19.  On the **Companies** FastTab, click **Activate.** The tax setup will now be **Active** for the selected company.
+    ![Tax setup status](media/apac-ind-gst-tax-setup-status.png)
 
->   [Tax setup status](media/apac-ind-gst-tax-setup-status.png)
+## Update the configuration version
 
-**Update the configuration version**
-
-1.  Click **Deactivate**.
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
+2. Select a tax setup.
+3. On the **Companies** FastTab, click **Deactivate**.
 
 >   [./media/image32.png](./media/image32.png)
 
-1.  Repeat steps 2 through 13 to load the configuration , deploy to the company
-    and synchronize the new version.
+4.  Repeat steps 2 through 13 of [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company) to load the configuration , deploy to the company and synchronize the new version.
 
-![](media/a42ad1ed5a1489781a6d58d6858f4222.png)
+  ![Two configurations](media/apac-ind-gst-two-configurations.png)
 
-1.  Select the New version and Click **Activate**.
+5.  Select the New version and Click **Activate**.
+6.  Follow the **Tax setup** task to update data for the new version.
+    > [!IMPORTANT]
+    > If the task in the Tax setup section have been completed for the old configuration version, the data will be retained after you synchronize to the new configuration version. You just have to review and update the setup per the new changes.
 
->   [./media/image34.png](./media/image34.png)
+## Tax setup example
+This section walks you through defining the GST and Customs tax setup in Finance and Operations.
 
->   [./media/image35.png](./media/image35.png)
-
-1.  Follow the **Tax setup** task to update data for the new version.
-
->   *Note: If the task in the Tax setup section have been completed for the old
->   configuration version, the data will be retained after you synchronize to
->   the new configuration version. You just have to review and update the setup
->   per the new changes.*
-
-Tax setup 
-==========
-
-The following procedure shows how to define the GST and Customs tax setup in
-Dynamics 365.
-
-Map configuration tax types to ERP tax types 
----------------------------------------------
-
-**Tax type - Customs**
+### Map configuration tax types to ERP tax types (Customs) 
 
 1.  Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
-
-2.  Select a company.
-
+2.  Select a tax setup and then select a company.
 3.  Click **Setup**.
-
 4.  Select the **Customs** node.
-
-5.  On the **Tax type mapping** tab, in the **Tax type** field, select
-    **Customs**.
+5.  On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**.
 
 Define a tax period 
 --------------------
@@ -294,47 +275,26 @@ Define main accounts
 account selected for the **Customs duty accrual account** of the **GST \> IGST
 node**
 
-**Tax type - GST**
-
+### Map configuration tax types to ERP tax types (GST) 
 1.  Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
-
 2.  Select a company.
-
 3.  Click **Setup**.
-
 4.  Select the **GST** node.
-
 5.  On the **Tax type mapping** tab, in the **Tax type** field, select **GST**.
+6. Define a tax period. 
+    1.  Select the node for the tax component.
+    2.  On the **Tax period mapping** tab, in the **Period** field, select a value.
 
-Define a tax period 
---------------------
+7. Define main accounts 
+    1.  On the **Accounting** tab, on the **Conditions** FastTab, click Add.
+    2.  In the **GST Registration Number** field, select a value.
+    3.  Save the record.
+    4.  On the **Values** FastTab, in the **Main account** field, select a value.
 
-1.  Select the node for the tax component.
-
-2.  On the **Tax period mapping** tab, in the **Period** field, select a value.
-
-Define main accounts 
----------------------
-
-1.  On the **Accounting** tab, on the **Conditions** FastTab, click Add.
-
-2.  In the **GST Registration Number** field, select a value.
-
-3.  Save the record.
-
-4.  On the **Values** FastTab, in the **Main account** field, select a value.
-
->   **Note:**
-
-1.  The list of accounts is generated dynamically, based on the posting profile
+    >   [!NOTE]
+    >   - The list of accounts is generated dynamically, based on the posting profile
     from the configuration.
-
-2.  Tax main accounts can be defined at level of the tax type or the tax
-    component. The value at the tax component level will override the value at
-    the tax type level. If the field is left blank for a posting type at the tax
-    component level, the corresponding value from the tax type level will be
-    used for posting. It is recommend to set up the tax accounts at the tax
-    component level per registration.
+    >   - Tax main accounts can be defined at level of the tax type or the tax component. The value at the tax component level will override the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level will be used for posting. It is recommend to set up the tax accounts at the tax component level per registration.
 
 Set up rate and percentage tables 
 ----------------------------------
