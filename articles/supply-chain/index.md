@@ -60,6 +60,7 @@ These short videos help you learn about the new features that are in Microsoft D
 
 -  [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
