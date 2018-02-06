@@ -24,7 +24,7 @@ ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

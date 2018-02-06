@@ -3,7 +3,7 @@
 
 title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart.
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 2/02/2018
 ms.topic: article

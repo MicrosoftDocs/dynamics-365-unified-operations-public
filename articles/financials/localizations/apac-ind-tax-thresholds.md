@@ -3,7 +3,7 @@
 
 title: Tax thresholds for India FAQ | Microsoft Docs
 description: This topic provides information about tax thresholds for India.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article

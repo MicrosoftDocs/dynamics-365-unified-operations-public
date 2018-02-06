@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/05/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-retail 
+ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 

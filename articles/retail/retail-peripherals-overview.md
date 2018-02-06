@@ -3,6 +3,7 @@
 
 title: Retail peripherals overview
 description: This topic explains the concepts that are related to retail peripherals. 
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
