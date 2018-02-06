@@ -32,31 +32,31 @@ ms.dyn365.ops.version: 2012
 
 This topic provides a walkthrough of the features that are related to the Goods and Services Tax (GST). Each documented scenario walks you through basic business transactions that typically occur across various business segments in industries of all types. This document also highlights the effect of GST on various type of business transactions, and shows the accounting and posting of transactions of various types.
 
-## GST Setup
+## Prerequisites
 
 <table>
 <thead>
 <tr>
-<th>Setup</th>
+<th>Prerequisite</th>
 <th>Details</th>
 </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Business verticals
+    <td>Set up business verticals
     </td>
     <td>Create business verticals on the <strong>Business verticals</strong> page (<strong>General ledger</strong> > <strong>Setup</strong> > <strong>Sales tax</strong> > <strong>India</strong> > <strong>Business verticals</strong>).
     </td>
   </tr>
     
   <tr>
-    <td>State codes and union territory designation for India states
+    <td>Set up state codes and union territory designation for India states
     </td>
     <td>On the <strong>Address setup page</strong> (<strong>Organization administration</strong> > <strong>Global address book</strong> > <strong>Addresses</strong> > <strong>Address setup</strong>), be sure to enter state codes for each Indian state. Indicate if the state is a union territory by setting the <strong>Union territory</strong> option to <strong>Yes</strong>.
     </td>
   </tr>
   <tr>
-    <td>Enterprise tax registration numbers
+    <td>Set up enterprise tax registration numbers
 </td>
     <td>
     <p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for Companies, Vendors and Customers.</p>
@@ -71,10 +71,29 @@ This topic provides a walkthrough of the features that are related to the Goods 
 </ul>
     </td>
   </tr>
+  <tr>
+  <td> Set up GST reference number groups
+  </td>
+  <td>GST transactions are differentiated with a unique number sequence. If different number sequences are required for each warehouse or legal entity addresses, you can create a reference number sequence group and assign the reference number sequence group to the addresses. See [Set up GST reference number groups](#set-up-gst-reference-number-groups).
+  </td>
+  </tr>
  <tr>
-    <td> GSTIN numbers for legal entities, warehouses, vendors, or customers
+    <td> Enter GST information for legal entities, warehouses, vendors, or customers 
    </td>
-   <td>
+   <td> For each legal entity, warehouse, vendor and customer, you can enter a GSTIN number. For each legal entity and warehouse, you can select the GST reference number sequence group. 
+     <ul>
+       <li>
+     Legal entity - Go to <strong>Organization administration</strong> \> <strong>Organizations</strong> \> <strong>Legal
+    entities</strong> \> <strong>Addresses (More options \> Advanced)</strong> \> <strong>Tax
+         information</strong>. </li>
+    <li> Warehouses - Go to <strong>Inventory management</strong> \> <strong>Setup</strong> \> <strong>Inventory</strong> \> <strong>Inventory
+    breakdown</strong> \> <strong>Warehouse</strong> \> <strong>Addresses</strong> \> <strong>Advanced</strong> \> <strong>Tax
+    information</strong>.</li>
+    <li> Vendors - Go to <strong>Accounts payable</strong> \> <strong>Vendors</strong> \> <strong>All vendors</strong> \> <strong>Addresses
+    (More options \> Advanced)</strong>\> <strong>Tax information</strong>.</li>
+    <li> Customers - Go to <strong>Accounts receivable</strong> \> <strong>Customers</strong> \> <strong>All customers</strong> \>
+    <strong>Addresses (More options \> Advanced)</strong>\> <strong>Tax information</strong>.</li>
+     </ul>
    </td>
   </tr>
 <tr>
@@ -147,21 +166,18 @@ This topic provides a walkthrough of the features that are related to the Goods 
     </p>
   </td>
   </tr>
+  
 </tbody>
 </table>
 
 
-## Define GST reference number groups
-The various GST transactions are differentiated with a unique number sequence in the Dynamics 365.
-In case of different number sequence required for per Warehouse/Entity addresses, the required Reference number sequence group can be created and assigned to the addresses.
-
+## Set up GST reference number groups
 The following steps demonstrates how to create the GST reference number group and assign to the addresses.
 
-1	Go to Tax > Setup > Sales tax > India > GST reference number sequence group.
-2	Click New.
-3	In the Name field, enter a value. 
-4	In the Description field, enter a value. 
-5	On the Details FastTab, define number sequences for the references. Refer to the following table for additional information about each reference.
+1.	Go to **Tax** > **Setup** > **Sales tax** > **India** > **GST reference number sequence group**.
+2.	Click **New**.
+3.	Enter a name and a description.
+4.	On the **Details** FastTab, define number sequences for the references. Refer to the following table for additional information about each reference.
 
 | **Source**          | **Reference**            | **Description**                                                                                                                                                                               |
 |---------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -192,50 +208,49 @@ Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax registr
 
 ### Import the configuration and deploy it to a specific company
 Save all the configuration files in one folder that the instance of Microsoft Dynamics AX Application Object Server (AOS) can access.
-1	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Load configuration**.
-2	In the **Directory** field, enter a value.
+1.	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Load configuration**.
+2.	In the **Directory** field, enter a value.
 
-> [!NOTE]
-> Both the tax configuration and the report configuration are saved in the same folder.
+  > [!NOTE]
+  > Both the tax configuration and the report configuration are saved in the same folder.
 
-3	Click **OK**.
-4	Click **Close**.
-5	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax setup**.
-6	Create a record.
-7	In the **Tax setup** field, enter a value.
-8	In the **Description** field, enter a value.
-9	Click **Configurations**.
-10	On the **Tax configuration** tab, under **Available configurations**, click **New**.
-11	In the **Configurations** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
-12	Click **OK**.
-13	Click **Synchronize**.
-14	Click **Activate**.
+3.	Click **OK**.
+4.	Click **Close**.
+5.	Click **General ledger** > **Setup** > **Sales tax** > **India** > **Tax setup**.
+6.	Create a record.
+7.	In the **Tax setup** field, enter a value.
+8.	In the **Description** field, enter a value.
+9.	Click **Configurations**.
+10.	On the **Tax configuration** tab, under **Available configurations**, click **New**.
+11.	In the **Configurations** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
+12.	Click **OK**.
+13.	Click **Synchronize**.
+14.	Click **Activate**.
 
   > [!NOTE]
   > The activated configuration is updated as the current configuration.
-15	Click the **Report configurations** tab. The **Available configurations** grid lists the configurations that are related to the report.
-16	Select the **Select** check box.
-17	In the **Report data provider** field, select a value.
-18	Click **Close**.
-19	On the **Companies** FastTab, create a record.
-20	In the **Companies** field, select a value.
-21	Save the record.
-22	Click **Activate** to activate the configuration for the company.
+  
+15.	Click the **Report configurations** tab. The **Available configurations** grid lists the configurations that are related to the report.
+16.	Select the **Select** check box.
+17.	In the **Report data provider** field, select a value.
+18.	Click **Close**.
+19.	On the **Companies** FastTab, create a record.
+20.	In the **Companies** field, select a value.
+21.	Save the record.
+22.	Click **Activate** to activate the configuration for the company.
+23. Update the configuration version
+    1.	Click **Deactivate**.
+    2.	Repeat steps 2 through 5 to load the latest configuration.
+24.	Click **Configurations**.
+25.	On the **Tax configuration** tab, under **Available configurations**, click **New**.
+26.	In the **Configurations** field, select a value. The new tax configuration is listed in the Available configurations grid.
+27.	Click **OK**.
+28.	Select the record, and then click **Synchronize**.
+30.	Click **Activate**.
 
-Update the configuration version
-23	Click **Deactivate**.
-24	Repeat steps 2 through 5 to load the latest configuration.
-
-25	Click **Configurations**.
-26	On the **Tax configuration** tab, under **Available configurations**, click **New**.
-27	In the **Configurations** field, select a value.
-The new tax configuration is listed in the Available configurations grid.
-
-28	Click **OK**.
-29	Select the record, and then click **Synchronize**.
-30	Click **Activate**.
-
-Note: The activated configuration is updated as the current configuration.
+    > [!NOTE]
+    > The activated configuration is updated as the current configuration.
+  
 31	Click **Close**.
 32	Click **Activate.
 
