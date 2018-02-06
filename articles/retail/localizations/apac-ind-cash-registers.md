@@ -129,16 +129,19 @@ To sync Tax Engine (GTE) data from headquarters to the POS database, a job is ad
 
 ## Example scenarios 
 
-The following example scenarios will help you to better understand the cash register functionality for India.
+The following example scenarios walk you through sample transactions for India.
 
-### Sell to a registered customer 
+- Scenario 1: Sell to a registered customer 
+- Scenario 2: Sell taxable goods to a consumer 
+- Scenario 3: Sell taxable goods to an anonymous customer where GST is price-inclusive
+- Scenario 4: Sell an exempted good 
+
+### Scenario 1: Sell to a registered customer 
 
 Sales to a registered customer are known as B2B sales. If the store location’s state and place of supply state (customer address) are the same, then the transaction becomes an intrastate sale and CGST & SGST are payable. If the store location’s state and place of supply (customer address) are in different states, then the transaction becomes an interstate sale and IGST is payable.
 
 > [!NOTE]
 > Customer address with the registration number are required fields for these transactions.
-
-#### Complete a customer order
 
 1.  Log into the POS.
 2.  Enter the items, and then click **Enter**.
@@ -215,7 +218,7 @@ Sales to a registered customer are known as B2B sales. If the store location’s
 
 ![Tax document](media/apac-ind-gst-tax-document2.png)
 
-### Sell taxable goods to a consumer 
+### Scenario 2: Sell taxable goods to a consumer 
 
 When you sell to unregistered customers, these types of sales are referred to as B2C sales. There is no difference in tax calculation for a B2B and B2C sales. The customer shall be selected as **Consumer** if the customer master is maintained with the address in the Retail Headquarters.
 
@@ -267,7 +270,7 @@ When you sell to unregistered customers, these types of sales are referred to as
    8.  Click **Tax document**.
    9.  Validate the receipt number is updated as the **Transaction id**.
 
-### Sale of taxable goods to an anonymous customer where GST is price-inclusive
+### Scenario 3: Sell taxable goods to an anonymous customer where GST is price-inclusive
 
 1. Define price-inclusiveness at the retail store.
    1.  Go to **Retail** \> **Channels** \> **Retail stores \> All retail stores.**
@@ -314,7 +317,7 @@ When you sell to unregistered customers, these types of sales are referred to as
 
   ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
-### Sell an exempted good 
+### Scenario 4: Sell an exempted good 
 
 1. Log into POS.
 2. Enter an exempted item.
