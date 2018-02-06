@@ -92,7 +92,7 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 </tbody>
 </table>
 
-[![SystemArchitecture](./media/Dynamics 365 for Retail System Architecture.PNG )]
+![SystemArchitecture](./media/Dynamics%20365%20for%20Retail%20System%20Architecture.PNG)
 
 
 

@@ -7,7 +7,7 @@ description: This topic lists the Power BI content that is available and points 
 
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -80,6 +80,9 @@ If you're using Microsoft Dynamics 365 for Operations version 1611, the followin
 
 ## Power BI content for Microsoft Dynamics AX
 If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:
+
+> [!Note]
+> These content packs have been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Cost management Power BI content](cost-management-content-pack.md)    
 - [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
