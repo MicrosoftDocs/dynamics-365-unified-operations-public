@@ -5,7 +5,7 @@ title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition 
 description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
