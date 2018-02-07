@@ -120,17 +120,24 @@ Open a **Command Prompt** window as an administrator, and run the following comm
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure DSQL database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<new database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P2
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure DSQL database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<new database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<See below>
 ```
 
 Here is an explanation of the parameters:
 
-- **tsn (target server name)** – The name of the Azure SQL Database server to import into. You can find the name in LCS. Add the suffix **database.windows.net** to it.
+- **tsn (target server name)** – The name of the Azure SQL Database server to import into. You can find the name in LCS on the environment page under Database Accounts. Add the suffix **database.windows.net** to it.
 - **tdn (target database name)** – The name of the database to import into. The database should **not** already exist. The import process will create it.
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** - Specifies the performance level of the database. For example, use P2 when the database size is less than 100Gb, P4 when the database size is between 100 and 250 Gb, and P6 when the database is larger than 250 Gb.
+- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database on this envrironment. To query the service level objective of the current database, run the following query.
+```
+SELECT  d.name,   
+     slo.*    
+FROM sys.databases d   
+JOIN sys.database_service_objectives slo    
+ON d.database_id = slo.database_id;  
+```
 
 ### Run a script to update the Finance and Operations database
 
