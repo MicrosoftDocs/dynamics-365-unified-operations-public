@@ -157,7 +157,7 @@ To complete these steps, you must first complete the steps in the procedure, “
 46. Close the page.
 
 ## Run the format mapping
-    * For testing purposes, execute the format mapping using the SampleIncomingMessage.txt file that you downloaded. The generated output includes data that will be imported from the selected TXT file and populated to the custom data model during the real import.   
+For testing purposes, execute the format mapping using the SampleIncomingMessage.txt file that you downloaded. The generated output includes data that will be imported from the selected TXT file and populated to the custom data model during the real import.   
 1. Click Run.
     * Click Browse and navigate to the SampleIncomingMessage.txt file that you previously downloaded.  
 2. Click OK.
