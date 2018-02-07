@@ -42,14 +42,14 @@ You must also download and save the following files locally: (https://go.microso
     * The following steps show how externally tracked vendors’ transactions are imported from the external CSV file for later use in the vendor’s settlement for 1099’s forms.   
     * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.  
 2. Click Reporting configurations.
-    * Apply the '1099 Payments model' filter. If you already completed the procedure,” ER Create required configurations to import data from an external file for electronic reporting”, and the ‘1099 Payments model’ configuration is available in the configuration tree, skip all of the steps in the next sub-task.   
+3. Apply the '1099 Payments model' filter. If you already completed the procedure,” ER Create required configurations to import data from an external file for electronic reporting”, and the ‘1099 Payments model’ configuration is available in the configuration tree, skip all of the steps in the next sub-task.   
 
 ## Add a new ER model configuration
-    * Instead of creating a new model to support data import, load the 1099model.xml file that you previously downloaded. This file contains the custom data model of vendors’ transactions. This data model is already mapped to the necessary data components.  
-1. Click Exchange.
-2. Click Load from XML file.
-    * Click Browse and navigate to the 1099model.xml file that you previously downloaded.  
-3. Click OK.
+1. Instead of creating a new model to support data import, load the 1099model.xml file that you previously downloaded. This file contains the custom data model of vendors’ transactions. This data model is already mapped to the necessary data components.  
+2. Click Exchange.
+3. Click Load from XML file.
+4. Click Browse and navigate to the 1099model.xml file that you previously downloaded.  
+5. Click OK.
 
 ## Add a new ER format configuration that supports data import
 1. In the tree, select '1099 Payments model'.
@@ -116,7 +116,7 @@ You must also download and save the following files locally: (https://go.microso
 18. Close the page.
 
 ## Run the format mapping
-    * For testing purposes, execute the format mapping using the 1099entriescsv.csv file that you previously downloaded. The generated output will present data that will be imported from the selected CSV file and populated to the custom data model at real import.   
+For testing purposes, execute the format mapping using the 1099entriescsv.csv file that you previously downloaded. The generated output will present data that will be imported from the selected CSV file and populated to the custom data model at real import.   
 1. Click Run.
     * Click Browse and navigate to the 1099entriescsv.csv file that you previously downloaded.  
 2. Click OK.
