@@ -3,7 +3,7 @@
 
 title: Dynamics 365 for Retail System Architecture
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article

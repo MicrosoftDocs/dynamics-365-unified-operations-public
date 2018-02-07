@@ -19,7 +19,7 @@ ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
