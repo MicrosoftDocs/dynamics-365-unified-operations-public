@@ -5,7 +5,7 @@ title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart.
 author: aprilolson
 manager: AnnBe
-ms.date: 2/02/2018
+ms.date: 2/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form:  FinanicalReports
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -47,6 +47,9 @@ To get Finance and Operations Financial reporting release 7.2.6.0, you can downl
 
 > [!NOTE]
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
+
+To find the version of report designer, watch this video:
+> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
