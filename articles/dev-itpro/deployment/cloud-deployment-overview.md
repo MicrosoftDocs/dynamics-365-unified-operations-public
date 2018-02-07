@@ -96,7 +96,7 @@ The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Plan
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Dynamics 365 for Operations cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. For more information about Azure availability sets, see [Azure availability sets guidelines for Windows VMs]/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines).
- High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/sql-database/sql-database-business-continuity).
+High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/sql-database/sql-database-business-continuity).
 
 ### Disaster recovery features
 Finance and Operations production environments are configured with Azure disaster recovery support that includes the following:
