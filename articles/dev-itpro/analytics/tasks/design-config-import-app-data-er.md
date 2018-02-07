@@ -43,7 +43,7 @@ These steps can be completed using any dataset. Before you begin, download and s
     * The following scenario will be used to show the capabilities of parsing incoming electronic documents in XML format: ERP application (Dynamics 365 for Finance and Operations)  requests data from the web service (such as http://efsta.org/ EFSTA fiscal service) and parses the incoming responses to update application data accordingly. For the most efficient way to parse, a single ER format is used despite the different structure of expected incoming documents in XML format.   
 
 ## Import and review ER configurations
-    * Import the ER model configuration that contains the sample data model designed to store the details of the incoming file.  
+Import the ER model configuration that contains the sample data model designed to store the details of the incoming file.  
 1. Click Exchange.
 2. Click Load from XML file.
     * Click Browse and select the EFSTA model.xml file.  
@@ -84,35 +84,35 @@ These steps can be completed using any dataset. Before you begin, download and s
 25. Close the page.
 
 ## Run model mapping of ER format configured for parsing incoming files
-    * You will run the created model mapping for testing purposes to see how the configured ER format will parse incoming service responses. This step uses different XML files to simulate different type of web service responses.   
-    * Open the Response1.xml file in an xml reader, such as a web browser. Note that this file contains confirmation details about the completed transaction (‘TraC’ is the root element).   
-1. Click Run.
+You will run the created model mapping for testing purposes to see how the configured ER format will parse incoming service responses. This step uses different XML files to simulate different type of web service responses.   
+1. Open the Response1.xml file in an xml reader, such as a web browser. Note that this file contains confirmation details about the completed transaction (‘TraC’ is the root element).   
+2. Click Run.
     * Click Browse and select the Response1.xml file.  
-2. Click OK.
+3. Click OK.
     * Review the generated output. Note that the response type has been correctly recognized and parsed (ERModelEnumDataSourceHandler#EFSTA model#enumType#C means transaction completion case).   
     * Open the Response2.xml file in an XML reader. Note that this file contains information about last transaction submitted (‘Tra’ is the root element).   
-3. Click Run.
+4. Click Run.
     * Click Browse and select the Response2.xml file.  
-4. Click OK.
+5. Click OK.
     * Review the generated output. Note that the response type has been correctly recognized and parsed (ERModelEnumDataSourceHandler#EFSTA model#enumType#R means system restart case).   
     * Open the Response3.xml file in an XML reader. Note that this file starts from the TraZ root item and that this structure is not configured using ER format.   
-5. Click Run.
+6. Click Run.
     * Click Browse and select the Response3.xml file.  
-6. Click OK.
+7. Click OK.
     * Review the generated output. Note that the response type has been correctly recognized as not-supported (ERModelEnumDataSourceHandler#EFSTA model#enumType#U). The corresponding message has been placed in the Infolog (according to the ER validation setting), and most of the data model has not been filled in.   
     * Open the Response4.xml file in an XML reader. Note that the structure of this file is almost the same as the successfully parsed Response1.xml, except the sequence of nested elements of the root element ‘TraC’.   
-7. Click Run.
+8. Click Run.
     * Click Browse and select the Response4.xml file.  
-8. Click OK.
+9. Click OK.
     * Review the generated output. Note that the response type has been correctly recognized as not-supported (ERModelEnumDataSourceHandler#EFSTA model#enumType#U)). The corresponding message has been placed in the Infolog, and most of the data model has not been filled in. This is because the current setting of this ER format assumes a certain sequence of nested elements of the root item of the incoming file.   
-9. Close the page.
-10. In the tree, select 'Responses\Transaction completion\TraC'.
-11. In the Parsing order of nested elements field, select 'Any'.
+10. Close the page.
+11. In the tree, select 'Responses\Transaction completion\TraC'.
+12. In the Parsing order of nested elements field, select 'Any'.
     * Select Any in the ‘Parsing order of nested elements’ field to allow any sequence of nested elements for this root XML item.  
-12. Click Save.
-13. Click Map format to model.
-14. Click Run.
+13. Click Save.
+14. Click Map format to model.
+15. Click Run.
     * Click Browse and select the Response4.xml file.  
-15. Click OK.
+16. Click OK.
     * Review the generated output. Note that the response type has now been properly recognized as equal for Response1.xml file.  
 
