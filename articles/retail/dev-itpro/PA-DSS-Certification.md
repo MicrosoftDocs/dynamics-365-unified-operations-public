@@ -52,6 +52,6 @@ This topic explains the past, current, and pending listings of PA-DSS certificat
 
 ## Certification in progress
 | Release  | Version | Build |
-| -------------------------------------------------- | ----------- |
+| ---------------------------|----------------------- | ----------- |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3  | 7.3  |
 | Microsoft Dynamics 365 for Retail | 7.3 | 7.3  |
