@@ -36,6 +36,9 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now suppor
 
 This topic will help you plan and prepare for your on-premises deployment.
 
+>   [!IMPORTANT]
+>   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)

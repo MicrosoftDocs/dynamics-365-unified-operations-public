@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 02/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -97,13 +97,13 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
-2. Select the Shared asset library tile
-3. In the Shared asset library, under Select asset type, select Software deployable package
+2. Select the **Shared asset** library tile
+3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
     - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-July2017**
-    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
-    - If you're upgrade from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
+    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. Select the package that corresponds to the release you are upgrading to. 
+    - If you're upgrading from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. elect the package that corresponds to the release you are upgrading to. 
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.

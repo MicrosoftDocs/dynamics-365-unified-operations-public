@@ -36,7 +36,7 @@ This topic lists features that have not been implemented in on-premises deployme
 - The first section lists features that haven't been implemented yet. These features are not deprecated.
 - The second section lists features that are not intended for use with on-premises deployments. There are no plans to implement these features.
 
-# Features not yet implemented
+## Features not yet implemented
 The following features have not yet been implemented in on-premises deployments. These features have not been deprecated. If these features are critical to your on-premises deployment, please let us know by providing feedback on the [Ideas](https://ideas.dynamics.com/ideas/) site.
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |
@@ -54,7 +54,7 @@ The following features have not yet been implemented in on-premises deployments.
 |SSRS scale out  |Currently SQL Server Reporting Services (SSRS) does not support scaling out. This feature will be added in a future release. |
 |Telemetry  |Currently no telemetry is transferred into the cloud. In a future update we will start transferring telemetry data into the cloud. |
 
-# Features not intended for use in on-premises deployments
+## Features not intended for use in on-premises deployments
 The following features are not intended for use in on-premises deployments. There are no plans to implement these features in on-premises deployments.
 
 | **Feature**                                                      | **Description**                                                                                                                                                                          |

@@ -17,10 +17,10 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
-ms.search.region: Global
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-06-30 

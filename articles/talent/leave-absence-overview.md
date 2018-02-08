@@ -2,13 +2,13 @@
 # required metadata
 
 title: Leave and absence management overview
-description: This topic provides an overview of the Leave and absence management module. This module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. 
+description: This topic provides an overview of the Leave and absence management module. 
 author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-talent
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Supply chain management home page
-description: This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
+description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,9 @@ Select a feature area to learn more about it.
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
--  [Prosepct to cash integration (Video)](https://youtu.be/AVV9x5x-XCg) 
+-  [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 

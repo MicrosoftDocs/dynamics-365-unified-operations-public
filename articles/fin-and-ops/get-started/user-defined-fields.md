@@ -5,7 +5,7 @@ title: Custom fields
 description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 01/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -126,10 +126,10 @@ In some rare cases, you may decide that a custom field is no longer needed. When
 > This action cannot be undone, and will result in the data associated with the field being permanently deleted from the database. 
 
 ## Appendix 
-### Access to the custom fields feature
-Due to the nature of the custom fields feature, only system administrators have access by default. However, those power users whom the organization deems necessary to utilize custom fields can be given access by a system administrator using the **Runtime customization power user** security role. Users without this security role will not have access to custom fields.  
+### Who can create custom fields?
+As a safeguard to the system, only system administrators are able to create custom fields by default. However, those power users whom the organization deems necessary can be given rights to create custom fields by a system administrator using the **Runtime customization power user** security role. Users without this security role will not be able to create custom fields, but will still be able to see and interact with custom fields added by other users in the system.    
 
-### Tables that support custom fields
+### What tables support custom fields?
 For performance and technical reasons, only tables that meet the following conditions currently allow custom fields to be added.
 
 - The table must be tagged as one of these groups: 

@@ -3,7 +3,7 @@
 
 title: Infrastructure estimator (AX 2012)
 description: The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment. Estimates can be provided for environments that are on your premises or in the cloud. The estimate is intended to be used as a basis for more in-depth, manual sizing estimates, not to replace them.
-author: josaw1
+author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19081
 ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mumani
+ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 

@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: cvocph
+ms.author: conradv
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 
@@ -121,9 +121,9 @@ Use the following criteria to select and update the released products and produc
 
 ## Related topics
 
--  Create a new product lifecycle state
--  Create a default new product lifecycle state
--  Assign a product lifecycle state to a released product master
--  Assign a product lifecycle state to a released product
--  Find obsolete product variants and assign a product lifecycle state
--  Create a product lifecycle state to exclude products from Master planning
+-  [Create a new product lifecycle state (Task guide)](tasks/new-product-lifecycle-state.md)
+-  [Create a default new product lifecycle state (Task guide)](tasks/default-product-lifecycle-state.md)
+-  [Assign a product lifecycle state to a released product master (Task guide)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Assign a product lifecycle state to a released product (Task guide)](tasks/product-lifecycle-state-released-product.md)
+-  [Find obsolete product variants and assign a product lifecycle state (Task guide)](tasks/obsolete-product-variants.md)
+-  [Create a product lifecycle state to exclude products from Master planning (Task guide)](tasks/exclude-products-master-planning.md)
