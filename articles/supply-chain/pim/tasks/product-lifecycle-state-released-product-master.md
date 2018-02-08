@@ -36,18 +36,25 @@ This procedure shows how to assign a product lifecycle state to a released produ
 ## Find a released product master
 1. Go to Product information management > Products > Released products.
 2. In the list, find and select the desired record.
-    * A product master has the Product subtype Product master.  
+
+> [!NOTE]
+> A product master has the Product subtype Product master.  
 
 ## Update the lifecycle state
 1. Click Edit.
 2. In the Product lifecycle state field, enter or select a value.
 3. Click Save.
 4. Click Yes.
-    * If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state. If No is selected, all variants keep their actual state. Variants that have a different product lifecycle state from the released product master are not updated.  
+
+> [!NOTE]
+> If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state. If No is selected, all variants keep their actual state. Variants that have a different product lifecycle state from the released product master are not updated.  
 
 ## Verify the lifecycle state of the variants
 1. Click Released product variants.
-    * Note that all variants have inherited the selected lifecycle state from the released product master.  
+
+> [!NOTE]
+> Note that all variants have inherited the selected lifecycle state from the released product master.  
+
 2. In the list, mark the selected row.
 3. In the Product lifecycle state field, enter or select a value.
 
