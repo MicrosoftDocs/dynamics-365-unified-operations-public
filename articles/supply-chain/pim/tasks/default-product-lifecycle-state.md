@@ -40,7 +40,9 @@ This procedure shows how to create a default product lifecycle state as well as 
 4. Select Yes in the Default when released to legal entity field.
 5. In the Description field, type a value.
 6. Select No in the Is active for planning field.
-    * If a new released product should not be included in Master planning, select No. If it should be included in Master planning, leave the control at its default value Yes.  
+
+> [!NOTE]
+> If a new released product should not be included in Master planning, select No. If it should be included in Master planning, leave the control at its default value Yes.  
 
 ## Create a new released product
 1. Close the page.
@@ -58,5 +60,7 @@ This procedure shows how to create a default product lifecycle state as well as 
 
 ## Change the product to an active state
 1. In the Product lifecycle state field, enter or select a value.
-    * Assume that you have set up an active state, you can now select the active state to allow the product to be used in Master planning and BOM-level calculation. Obviously, this only makes sense if all the product details that are required for consistent planning are specified.  
+
+> [!NOTE]
+> Assume that you have set up an active state, you can now select the active state to allow the product to be used in Master planning and BOM-level calculation. Obviously, this only makes sense if all the product details that are required for consistent planning are specified.  
 
