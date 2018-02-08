@@ -945,6 +945,7 @@
 ##### [One-time customers](../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
 ##### [Print checks with a Spanish layout](../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 ##### [Promissory note options](../financials/localizations/emea-esp-promissory-note-options.md)
+##### [Report 340](../financials/localizations/emea-esp-report-340.md)
 ##### [Sales and purchase cycles](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
