@@ -90,7 +90,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
 - Retail Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
 - Retail Modern POS is supported only on Windows 10 Pro, Enterprise, and Enterprise Long Term Servicing Branch (LTSB) editions. At minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
-- We don't recommend that you use Retail Modern POS and other Retail components on Windows 10 Pro, because Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+- We don't recommend that you use Retail Modern POS and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
