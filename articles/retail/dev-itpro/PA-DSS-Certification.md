@@ -38,13 +38,13 @@ ms.dyn365.ops.version: Platform update 8
 This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications direction, please visit [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
 ## Past certification
-| Release | Version  | Build number |
+| Release | Version  | Build  |
 | ----------------------|-------- | ----------- |
 | Microsoft Dynamics AX | 2012 R3  | 6.3 |
 | Microsoft Dynamics AX | 7        | 7.0  |
 
 ## Current certification
-| Release  | Version | Build number |
+| Release  | Version | Build  |
 | ----------------------------|---------------------- | ----------- |
 | Microsoft Dynamics 365 for Operations | 1611 | 7.1  |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017  | 7.2 |
