@@ -3,10 +3,9 @@
 
 title: Payment Application Data Security Standards (PA-DSS) certification
 description: This topic explains which releases have been certified, are certified, and are in progress of certification for PA-DSS.
-
 author: jashanno
 manager: AnnBe
-ms.date: 02/01/2018
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,8 +19,7 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 219744
-ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
@@ -30,7 +28,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# All PA-DSS certification listings for Microsoft Dynamics
+# Payment Application Data Security Standards (PA-DSS) certification
 
 [!include[banner](../includes/banner.md)]
 
