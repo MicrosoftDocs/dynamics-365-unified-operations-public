@@ -56,7 +56,9 @@ This procedure shows how to create a default product lifecycle state as well as 
 9. In the Storage dimension group field, enter or select a value.
 10. In the Tracking dimension group field, enter or select a value.
 11. Click OK.
-    * The default product lifecycle state is a global definition.  
+
+> [!NOTE]
+> The default product lifecycle state is a global definition.  
 
 ## Change the product to an active state
 1. In the Product lifecycle state field, enter or select a value.
