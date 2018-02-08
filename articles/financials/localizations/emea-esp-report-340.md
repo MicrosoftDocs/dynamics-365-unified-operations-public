@@ -5,7 +5,7 @@ title: Report 340 for Spain
 description: This topic provides information about how to set up and generate Report 340 for Spain.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/31/2018
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
