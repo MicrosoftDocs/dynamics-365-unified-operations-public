@@ -3,9 +3,9 @@
 
 title: Power BI integration
 description: This topic explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data. 
-author: MilindaV2
+author: TJVass 
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 02/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
