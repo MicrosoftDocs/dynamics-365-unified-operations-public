@@ -85,15 +85,6 @@ For an overview of Power BI integration with Entity store, see [Overview of Powe
 
 If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md).
 
-### Creating self-service “data mash-up” reports by using OData
-_Data mash-up_ is a term that is used to refer to ad-hoc, self-service reports that combine data from multiple sources. As a power user or a business analyst, you can create Power BI reports by using Open Data Protocol (OData) endpoints.
-
-Finance and Operations is a first-class data source for Power BI authoring tools, such as Microsoft Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Finance and Operations data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
-
-You can access OData endpoints via the following URL: https://<your Microsoft Dynamics 365 URL>/Data
-
-OData endpoints are ideal for quick and convenient data mash-ups. However, we recommend that you use Entity store to create reports that extract large volumes of data. 
-
 ### Creating Power BI reports by using Excel
 In addition to using the Power BI desktop authoring tool, you can use “Power tools” that are incorporated into Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick “one-off” report, Excel might be the best option for these users.
 
