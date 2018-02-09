@@ -48,9 +48,13 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <h3><a href="get-started/before-you-buy.md">Before you buy</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementation lifecycle</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
+  
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>

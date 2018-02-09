@@ -14,7 +14,6 @@
 #### [Standard and targeted platform releases](get-started/public-preview-releases.md)
 
 #### Buy Finance and Operations
-##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ##### [Buy Finance and Operations (on-premises)](get-started/purchase-on-premises.md)
 
 ### [What's new or changed](get-started/whats-new-changed.md)
@@ -71,6 +70,11 @@
 ##### [Task Recorder](../dev-itpro/user-interface/task-recorder.md)
 ##### [Create documentation or training](../dev-itpro/user-interface/task-recorder-training-docs.md)
 #### [Glossary](get-started/glossary.md)
+
+## [Understand the implementation lifecycle](imp-lifecycle/implementation-lifecycle.md)
+### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
+### [Onboarding](imp-lifecycle/onboard.md) 
+### [Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
@@ -945,6 +949,7 @@
 ##### [One-time customers](../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
 ##### [Print checks with a Spanish layout](../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 ##### [Promissory note options](../financials/localizations/emea-esp-promissory-note-options.md)
+##### [Report 340](../financials/localizations/emea-esp-report-340.md)
 ##### [Sales and purchase cycles](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
