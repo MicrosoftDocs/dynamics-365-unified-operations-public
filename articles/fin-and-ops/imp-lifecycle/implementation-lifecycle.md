@@ -42,6 +42,6 @@ These topics describe the programs, tools, and processes available related to th
 [Overview of Lifecycle Services for Customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## Processes
-[Onboarding your implementation project](imp-lifecycle/onboard.md)
+[Onboarding your implementation project](onboard.md)
 
-[Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
+[Preparing for go-live](prepare-go-live.md) 
