@@ -55,9 +55,9 @@ In the **Alert me for** area of the **Create alert rule** form, you can use cond
 
 In this case, you want to be alerted when the status of purchase orders are set to Received. This change in status is the event that triggers the alert. 
 
-Then, you must decide which purchase orders you want to be alerted about. For example, you can select one of the following options. These options define the conditions for the alert rule. 
-    - **Current** selected record – You receive an alert when the status of a specific purchase order changes to received. 
-    - **All records** that match the form filter – You receive an alert when the status of a purchase order is changed for an item in the active form view.  Use the advanced filtering available in the form list to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders to customers in a specific customer group.
+Then, you must decide which purchase orders you want to be alerted about. For example, you can select one of the following options. These options define the conditions for the alert rule.<br> 
+  -  **Current** selected record – You receive an alert when the status of a specific purchase order changes to received. <br>
+  -  **All records** that match the form filter – You receive an alert when the status of a purchase order is changed for an item in the active form view.  Use the advanced filtering available in the form list to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders to customers in a specific customer group.
 	
 ### Expiry of rule
 In the **Alert me until** area of the **Create alert rule** form, you can specify how long you want the alert rule to be active. 
