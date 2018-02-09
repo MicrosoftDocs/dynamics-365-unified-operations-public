@@ -33,6 +33,9 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project by using Microsoft Dynamics Lifecycle Services (LCS).
 
+This graphic lists the phases of the go-live process.
+![Go-live process](./media/go-live-process.PNG)
+
 ## Completing the LCS methodology
 
 A major milestone in each implementation project is the cutover to the production environment.
