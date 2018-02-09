@@ -221,8 +221,9 @@ The last steps require validation and verification that the Azure application ID
     The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open until you've completed the validation.
 
 > [!NOTE]
-> - If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
-> - If you followed all the steps correctly, your configuration should have these characteristics:
+> If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
+>
+> If you followed all the steps correctly, your configuration should have these characteristics:
 >
 >     - In Azure, two web applications have been automatically generated through the installer:
 >
