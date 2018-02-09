@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: Talent
+ms.search.form: UserDefinedAppSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
