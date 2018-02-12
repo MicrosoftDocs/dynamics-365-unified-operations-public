@@ -3,9 +3,9 @@
 
 title: Go-live frequently asked questions for Microsoft Dynamics 365 for Finance and Operations 
 description: This topic describes frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
-author: ClaudiaBetz-Haubold
+author: sshashi7
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 
@@ -34,51 +34,30 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 
-**Go-live FAQ**
+## When can I configure and request my production environment?
 
-1.  **When can I configure and request my production environment?**
+Typically, Production environment is deployed when all customizations are code-complete, the user acceptance test (UAT) is complete, customer has signed off on the solution and there are no Go-live blockers.
 
->   Typically, Production environment is deployed when all customizations are
->   code-complete, the user acceptance test (UAT) is complete, customer has
->   signed off on the solution and there are no Go-live blockers.
+When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre-Go-live review or assessment.
 
->   When you're at this stage, Microsoft FastTrack team will work with the
->   project team to do a Pre-Go-live review or assessment.
+## What are the prerequisites to deploy production environment?
 
-1.  **What're the prerequisites to deploy production environment?**
+The prerequisites are listed in the topic [Preparing for Go-live](prepare-go-live.md)
 
->   Refer the following article on Preparing for Go-live
+## What is a Pre-go-live review and why is it required?
 
-1.  **What is Pre-Go-live review and why is it required?**
+The Pre-go-live review is part of the [Microsoft FastTrack program](../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md), in which a solutions architect assesses readiness of an implementation project for a successful cutover and Go-live. This review is mandatory for every Finance and Operations project before a request to go live in a production environment.
 
->   Pre-Go-live review is part of [Microsoft FastTrack
->   program](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview)
->   where a solutions architect assesses readiness of the project for a
->   successful cutover and Go-live. This review is mandatory for every Dynamics
->   365 for Finance and Operations, Enterprise edition project before requesting
->   the production environment.
+## I want to request my production environment but who do I contact for a Pre-Go-live review?
 
-1.  **I want to request my production environment but who do I contact for
-    Pre-Go-live review?**
+If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the Pre-Go-live Checklist from here, fill it up and send it to <go-live@microsoft.com>.
 
-    If you have a FastTrack solution architect assigned to your project, please
-    reach out to him or her directly. Otherwise, based your Go-live date
-    specified in LCS, you will receive an email to fill out the Pre-Go-live
-    checklist and send it to <go-live@microsoft.com> few weeks before the
-    Go-live date. If you’ve not received an email and you’re ready for Go-live,
-    you can download the Pre-Go-live Checklist from here, fill it up and send it
-    to <go-live@microsoft.com>
+## The Production button is not enabled in LCS. How do I request my Production environment?**
 
-2.  **The Production button is not enabled in LCS. How do I request my
-    Production environment?**
+To enable the Production button in LCS, it is mandatory to complete the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
->   To enable the Production button in LCS, it is mandatory to complete the
->   A*nalysis*, *Design & develop*, and *Test* phases of the LCS implementation
->   methodology. Read more about completing Methodology tasks and phases
->   [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs)
-
->   **Note**: Production environment will not be deployed unless the Pre-Go-live
->   review is complete.
+>   [!NOTE]
+>   Your production environment will not be deployed until the Pre-Go-live review has been completed.
 
 1.  **My sandbox environment is currently on a platform update which is set to
     expire in 2 months. Can I request Production with the latest platform
