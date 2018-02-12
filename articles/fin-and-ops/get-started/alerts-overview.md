@@ -41,7 +41,7 @@ Here are a few common scenarios in enterprise resource planning that will utiliz
    1. Navigate to the **All sales orders** page.
    2. Click the **Options** menu.
    3. In the **Share** area, click **Alert me** and select  **Create alert rule**.
-   4. Expand the **Alert me when** section. 
+   4. The **Create alert rule** pane displays. Expand the **Alert me when** section. 
    5. In the **Event list**, select **Record has been created**. 
 
 ### Scenario 2:  Create an alert rule for postponement of a delivery date
@@ -50,7 +50,7 @@ Here are a few common scenarios in enterprise resource planning that will utiliz
    3. Expand the **Purchase order header** tab. 
    4. Click the **Options** menu.
    5. In the **Share** area, click **Alert me** and select  **Create alert rule**.
-   6. Expand the **Alert me when** section. 
+   6. The **Create alert rule** pane displays. Expand the **Alert me when** section. 
    7. In the **Field** list, select **Delivery date**.
    8. In the **Event** list, select **has been postponed**. 
 	
