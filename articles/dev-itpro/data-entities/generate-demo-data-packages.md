@@ -123,13 +123,15 @@ The following packages can be loaded. When you import any package except the Sys
 | 200 - Financials - CONS | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PICH | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PIFB | You can load this package alone or together with another Financials package. |
-| 250 - Project management - HQUS | Load this package after the HQUS Financials package. If you want to also use Supply chain, you must import this package first.|
+| 250 - Project management - HQUS | Load this package after the HQUS Financials package and before any of the other Financials packages. If you want to also use Supply chain, you must import this package first. |
 | 300 - Supply chain 1 of 2 - HQUS | Load this package after the HQUS Financials package. If you want to also use Project management, you must import the Project management package first before you import this package. |
 | 310 - Supply chain 2 of 2 - HQUS | Load this package after the HQUS Supply chain 1 of 2 package. |
-| 300 - Supply chain - PIFB | Load this package after the PIFB Supply chain package. |
-| 300 - Supply chain - PICH | Load this package after the PICH Supply chain package. |
+| 300 - Supply chain - PIFB | Load this package after the PICH Supply chain package. |
+| 300 - Supply chain - PICH | Load this package after the PIFB Supply chain package. |
 | 900 - Financial transactions - HQUS | Load this package after the HQUS Financials package. |
 | 900 - Financial transactions - HQEU | You can load this package alone or together with another Financials package. |
+
+To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.  
 
 > [!NOTE]
 > We discovered an issue with the Number sequence references entity that causes a random failure during import although the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
