@@ -40,7 +40,7 @@ Typically, a production environment is deployed after all customizations are cod
 
 When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre-go-live review or assessment.
 
-## What are the prerequisites to deploy production environment?
+## What are the prerequisites to deploy a production environment?
 
 The prerequisites are listed in the topic [Preparing for Go-live](prepare-go-live.md)
 
@@ -48,16 +48,16 @@ The prerequisites are listed in the topic [Preparing for Go-live](prepare-go-liv
 
 The Pre-go-live review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md), in which a solutions architect assesses readiness of an implementation project for a successful cutover and Go-live. This review is mandatory for every Finance and Operations project before a request to go live in a production environment.
 
-## I want to request my production environment but who do I contact for a Pre-Go-live review?
+## I want to request my production environment but who do I contact for a Pre-go-live review?
 
-If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the Pre-Go-live Checklist from here, fill it up and send it to <go-live@microsoft.com>.
+If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the [Pre-go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
 
 ## The Production button is not enabled in LCS. How do I request my production environment?
 
 To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 >   [!NOTE]
->   Your production environment will not be deployed until the Pre-Go-live review has been completed.
+>   Your production environment will not be deployed until the Pre-go-live review has been completed.
 
 ##  My sandbox environment is currently on a platform update which is set to expire in 2 months. Can I request a production environment with the latest platform update?
 
