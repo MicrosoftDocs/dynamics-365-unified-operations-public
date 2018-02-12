@@ -2,7 +2,7 @@
 # required metadata
 
 title: Go-live frequently asked questions for Microsoft Dynamics 365 for Finance and Operations 
-description: This topic describes frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+description: This topic lists frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 author: sshashi7
 manager: AnnBe
 ms.date: 02/13/2018
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+This topic lists frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 
 ## When can I configure and request my production environment?
 
-Typically, Production environment is deployed when all customizations are code-complete, the user acceptance test (UAT) is complete, customer has signed off on the solution and there are no Go-live blockers.
+Typically, a production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is complete, the customer has signed off on the solution, and there are no go-live blocking issues.
 
-When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre-Go-live review or assessment.
+When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre-go-live review or assessment.
 
 ## What are the prerequisites to deploy production environment?
 
@@ -52,50 +52,31 @@ The Pre-go-live review is part of the [Microsoft FastTrack program](../fin-and-o
 
 If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the Pre-Go-live Checklist from here, fill it up and send it to <go-live@microsoft.com>.
 
-## The Production button is not enabled in LCS. How do I request my Production environment?**
+## The Production button is not enabled in LCS. How do I request my production environment?**
 
-To enable the Production button in LCS, it is mandatory to complete the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 >   [!NOTE]
 >   Your production environment will not be deployed until the Pre-Go-live review has been completed.
 
-1.  **My sandbox environment is currently on a platform update which is set to
-    expire in 2 months. Can I request Production with the latest platform
-    update?**
+##  My sandbox environment is currently on a platform update which is set to expire in 2 months. Can I request a production environment with the latest platform update?
 
->   No. Such requests will be denied. When configuring production environment,
->   it is required that you select the same Application and Platform version as
->   that of your sandbox environment in which your solution is signed-off. If
->   you want the production environment with the latest platform update, you
->   will have to apply the latest platform update to your sandbox environments
->   first, test it and sign off.
+No, requests to have a production environment on a different version than your sandbox will be denied. When configuring a production environment, you must select the same application and platform version as that of the sandbox environment in which you signed off on your solution. If you want a production environment with the latest platform update, you must apply the latest platform update to your sandbox environment first, test it, and sign off.
 
->   **Link**: [Versions Update
->   Policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy)
+For more information, see [Versions Update Policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
 
-1.  **My Sandbox environments are deployed in Central US datacenter, but we
-    would like to have our Production deployed in West US datacenter. Can I
-    select West US as my data center in my Production configuration?**
+## My sandbox environments are deployed in the Central US datacenter, but we would like to have our Production environments deployed in the West US datacenter. Can I select West US as my data center in my Production configuration?
 
->   No. Such requests will be denied. It is required that all your environments
->   reside in the same data center. If you wish to have your Production in West
->   US data center, you will have to move your Sandbox environments to West US
->   data center, test and sign-off your solution first.
+No, requests to have a production environment in a different data center than your sandbox will be denied. We require that all of your environments reside in the same data center. If you want to have your production environment in the West US data center, you must first move your Sandbox environments to the West US data center, test it, and sign off.
 
->   Refer **Network requirements** section in System requirements document to
->   help you choose the right data center.
+See the [Network requirements section in the System requirements topic](/fin-and-ops/get-started/system-requirements.md#network-requirements) to help you choose the right data center.
 
-1.  **How will my production environment be sized?**
+## How will my production environment be sized?
 
->   Your production environment will be sized based on the current user license
->   count and the information in subscription estimate that is active when you
->   request the production environment. ** **
+Your production environment will be sized based on the current user license count and the information in subscription estimate that is active when you request the production environment.
 
->   **Note**: If you add additional users in future, you must create a support
->   ticket to activate a new subscription estimate. Whether resizing is
->   necessary depends on the number of users, the type of user licenses and the
->   expected peak transaction volume. Resizing of the production environment
->   requires downtime.
+> ![NOTE]
+> If you add additional users in future, you must create a support ticket to activate a new subscription estimate. Whether resizing is necessary depends on the number of users, the type of user licenses and the expected peak transaction volume. Resizing of the production environment requires downtime.
 
 1.  **I submitted the request for Production environment, but I made a mistake;
     can I still change it?**
