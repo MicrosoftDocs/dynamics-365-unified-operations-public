@@ -5,7 +5,7 @@ title: Go-live frequently asked questions for Microsoft Dynamics 365 for Finance
 description: This topic describes frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date:02/05/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
