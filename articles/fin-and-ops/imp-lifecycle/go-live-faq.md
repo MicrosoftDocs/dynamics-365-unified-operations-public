@@ -46,7 +46,7 @@ The prerequisites are listed in the topic [Preparing for Go-live](prepare-go-liv
 
 ## What is a Pre-go-live review and why is it required?
 
-The Pre-go-live review is part of the [Microsoft FastTrack program](../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md), in which a solutions architect assesses readiness of an implementation project for a successful cutover and Go-live. This review is mandatory for every Finance and Operations project before a request to go live in a production environment.
+The Pre-go-live review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md), in which a solutions architect assesses readiness of an implementation project for a successful cutover and Go-live. This review is mandatory for every Finance and Operations project before a request to go live in a production environment.
 
 ## I want to request my production environment but who do I contact for a Pre-Go-live review?
 
@@ -54,7 +54,7 @@ If you have a FastTrack solution architect assigned to your project, please reac
 
 ## The Production button is not enabled in LCS. How do I request my production environment?
 
-To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 >   [!NOTE]
 >   Your production environment will not be deployed until the Pre-Go-live review has been completed.
@@ -63,13 +63,13 @@ To enable the **Production** button in LCS, you must have completed the **Analys
 
 No, requests to have a production environment on a different version than your sandbox will be denied. When configuring a production environment, you must select the same application and platform version as that of the sandbox environment in which you signed off on your solution. If you want a production environment with the latest platform update, you must apply the latest platform update to your sandbox environment first, test it, and sign off.
 
-For more information, see [Versions Update Policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md)
 
 ## My sandbox environments are deployed in the Central US datacenter, but we would like to have our Production environments deployed in the West US datacenter. Can I select West US as my data center in my Production configuration?
 
 No, requests to have a production environment in a different data center than your sandbox will be denied. We require that all of your environments reside in the same data center. If you want to have your production environment in the West US data center, you must first move your Sandbox environments to the West US data center, test it, and sign off.
 
-See the [Network requirements section in the System requirements topic](/fin-and-ops/get-started/system-requirements.md#network-requirements) to help you choose the right data center.
+See the [Network requirements section in the System requirements topic](../get-started/system-requirements.md#network-requirements) to help you choose the right data center.
 
 ## How will my production environment be sized?
 
@@ -106,7 +106,7 @@ To copy and restore from a Tier 1 sandbox:
 1. Move your gold configuration database from a Tier 1 sandbox to a Tier 2 sandbox.
 2. Submit a service request to copy your golden configuration from the Tier 2 sandbox environment to the Production environment.
 
-For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)
+For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)
 
 >   [!NOTE]
 > If your gold configuration is in data packages, you will have to import them to the production environment manually.
@@ -115,7 +115,7 @@ For more information, see [Copy a Finance and Operations database from SQL Serve
 
 Yes. You can submit a service request in LCS to apply a deployable package to your production environment. Applying one deployable package to production involves a lead time of 5 hours and downtime of approximately 5 hours.
 
-For more information, see [Apply deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
+For more information, see [Apply deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ## What should I do if my production environment is down?
 
