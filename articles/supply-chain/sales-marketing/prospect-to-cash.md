@@ -50,15 +50,6 @@ In the current version, the Prospect to cash solution provides the following typ
 - [Synchronize sales orders directly between Sales and Finance and Operations (template pending release)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronize sales invoice directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
 
-In earlier versions, the Prospect to cash solution provides the following types of non-direct synchronization:
-
-- [Maintain accounts in Sales and sync them to Finance and Operations](accounts-template-mapping.md)
-- [Maintain contacts in Sales and sync them to Finance and Operations](contacts-template-mapping.md)
-- [Maintain products in Finance and Operations and sync them to Sales](products-template-mapping.md)
-- [Create sales quotes in Sales and sync them to Finance and Operations](sales-quotation-template-mapping.md)
-- [Create sales orders in Finance and Operations and sync them to Sales](sales-order-template-mapping.md)
-- [Create sales invoices in Finance and Operations and sync them to Sales](sales-invoice-template-mapping.md)
-
 ## System requirements for Finance and Operations
 
 Prospect to cash integration is supported on the following versions:
@@ -99,12 +90,6 @@ To use the Prospect to cash solution, you must install the following components:
 
 - Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Templates with version 1.0.0.0 and 1.0.0.1 are supported on Prospect to cash solution for Dynamics 365 for Sales, version 1.14.1.0
-   >
-   > Templates with version 2.0.0.0 and 2.1.0.0 are supported on Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0
 
 ### Install the Prospect to cash solution for Sales
 
