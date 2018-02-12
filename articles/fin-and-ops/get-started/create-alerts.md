@@ -67,17 +67,17 @@ In the **Alert me until** area of the **Create alert rule** pane, you can specif
 In the **Alert me with** area of the **Create alert rule** pane, you can specify the subject text and message text that you want the alert messages to use. 
 
 ## User ID
-In the **Alert me with** area of the **Create alert rule** pane, you can specify which user you want to receive the alert messages. By default, your user ID is selected. This option is restricted to Organization administrators.
+In the **Alert who** area of the **Create alert rule** pane, you can specify which user you want to receive the alert messages. By default, your user ID is selected. This option is restricted to Organization administrators.
 
 ## Create an alert rule
   1. Open the page that contains the data to monitor. 
   2. Click the **Options** menu.
-  3. In the **Personalize** area, click **Create alert rule**.
+  3. In the **Share** area, click **Alert me** and then select **Create alert rule**.
   4. In the **Create alert rule** pane, in the **Field** list, select the field to monitor. 
   5. In the **Event** list, select the type of event. 
   6. In the **Alert me for** section, select an option. 
   7. If you want the alert rule to become inactive on a specific date, in the **Alert me until** section, select an end date. 
-8. Expans the **Alert me with** section. 
+8. Expand the **Alert me with** section. 
 9. In the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. 
   7. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered. 
   8. Click **OK** to save the settings and create the alert rule. 
