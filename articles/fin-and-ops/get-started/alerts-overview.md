@@ -69,11 +69,11 @@ Before you set up an alert rule, decide when or in what situations you want to r
 ### Components of an alert rule
 There are five components to an alert rule:
 
-   1. **Event** - The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Events are defined in the **Alert me when** area of the **Create alert rule** pane.
+   1. **Event** - The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Events are defined in the **Send email alerts for job status changes** area of the **Create alert rule** form.
    2. **Condition** - In the **Alert me for** area of the **Create alert rule** pane, you can use choose the scope of the condition to control when you are alerted about events.  Choose to apply the rule to only the current record, or all visible records on the page.  You can also set the rule to be Organization-wide if the rule applies across legal entities.
    3. **Expiry of rule** - In the **Alert me until** area of the **Create alert rule** pane, you can specify how long you want the alert rule to be active.
    4. **Contents** - In the **Alert me with** area of the **Create alert rule** pane, you can specify the subject text and message text that you want the alert messages to use. 
-   5. **User** - In the **Alert me with** area of the **Create alert rule** pane, you can specify which user you want to receive the alert messages. By default, your user ID is selected.  
+   5. **User** - In the **Alert who** area of the **Create alert rule** pane, you can specify which user you want to receive the alert messages. By default, your user ID is selected.  
    > [!Note]
    > This option is restricted to Organization administrators.
 
