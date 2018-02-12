@@ -47,7 +47,7 @@ The app is available on Android and Windows operating systems. To use this app, 
 
 | Platform                    | Version                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
