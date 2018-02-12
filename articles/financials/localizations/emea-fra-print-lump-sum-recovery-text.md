@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CustFormletterParameters
+ms.search.form: CustFormletterParameters, CustInvoiceJournal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
