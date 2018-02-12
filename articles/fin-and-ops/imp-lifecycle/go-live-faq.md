@@ -75,7 +75,7 @@ See the [Network requirements section in the System requirements topic](/fin-and
 
 Your production environment will be sized based on the current user license count and the information in subscription estimate that is active when you request the production environment.
 
-> ![NOTE]
+>   [!NOTE]
 > If you add additional users in future, you must create a support ticket to activate a new subscription estimate. Whether resizing is necessary depends on the number of users, the type of user licenses and the expected peak transaction volume. Resizing of the production environment requires downtime.
 
 ## I submitted the request for Production environment, but I made a mistake; can I still change it?
@@ -108,7 +108,7 @@ To copy and restore from a Tier 1 sandbox:
 
 For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)
 
-> [!NOTE]
+>   [!NOTE]
 > If your gold configuration is in data packages, you will have to import them to the production environment manually.
 
 ## After going live, can I apply new code changes to the production environment?
