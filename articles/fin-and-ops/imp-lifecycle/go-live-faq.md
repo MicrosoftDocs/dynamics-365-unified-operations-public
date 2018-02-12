@@ -119,6 +119,6 @@ For more information, see [Apply deployable package](../../dev-itpro/deployment/
 
 ## What should I do if my production environment is down?
 
-Please follow the process in the following link to report a production outage: 
+Please follow the process described in the following blog post to report a production outage: 
 
-New process to report a production outage through Lifecycle Services. 
+[New process to report a production outage through Lifecycle Services](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/)
