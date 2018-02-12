@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create alerts
-description: TBD
+description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
 ms.date: 01/03/2018
@@ -33,51 +33,50 @@ ms.dyn365.ops.version: Platform update 14
 [!include[banner](../includes/banner.md)]
 
 ## Getting started
-Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, locate the page where the data that causes the event is displayed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The event can be a date that arrives or a change that occurs. Therefore, you must find the page where this date is specified, or where the field that changes or the new record is displayed. When you have this information, you can proceed with creating your alert rule.
+Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
-When you create an alert rule, you define the criteria that the system must meet before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up in Finance and Operations. 
+When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up in Finance and Operations.
 
 ## Events
-The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Triggers for events are defined in the **Alert me when** area of the **Create alert rule** pane. The events that are available for a particular field depend on the trigger that is selected. 
+The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Triggers for events are defined on the **Alert me when** FastTab of the **Create alert rule** dialog box. The events that are available for a particular field depend on the trigger that is selected.
 
-For example, if you want to set up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the **is due in** event type is available for this field. However, for a field such as **Cost center**, a due date event is not appropriate, so that the **is due in** event type is not available. However, the **has changed** event type is available. 
+For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the **is due in** event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the **is due in** event type isn't available. Instead, the **has changed** event type is available.
 
 ## Event types
 Three types of events can occur:
-- **Create-type and delete-type events** – These events trigger an alert when a record is created or deleted. 
-- **Update-type events** – These events trigger an alert when data in a particular field changes. 
-- **Due date-type events** – These events trigger an alert when a date arrives. 
+
+- **Create-type and delete-type events** – These events trigger an alert when a record is created or deleted.
+- **Update-type events** – These events trigger an alert when the data in a specific field changes.
+- **Due date-type events** – These events trigger an alert when a date arrives.
 	
-Changes that occur can be initiated by a user. For example, a user changes the delivery date of a purchase order. Alternatively, changes can occur as part of a process. For example, the **Status** field on a page changes to reflect the life cycle of various processes in the system. 
+Changes that occur can be initiated by a user. For example, a user changes the delivery date of a purchase order. Alternatively, changes can occur as part of a process. For example, the **Status** field on a page changes to reflect the life cycle of various processes in the system.
 
 ## Conditions
-In the **Alert me for** area of the **Create alert rule** pane, you can use conditions to control when you are alerted about events. For example, you can specify that the system should alert you when the status of purchase orders change, but only if a purchase order matches a certain set of conditions. 
+On the **Alert me for** FastTab of the **Create alert rule** dialog box, you can use conditions to control when you're alerted about events.
 
-In this case, you want to be alerted when the status of purchase orders are set to **Received**. This change in status is the event that triggers the alert. 
+For example, you can specify that the system should alert you when the status of purchase orders changes, but only if the status matches a specific set of conditions. Specifically, you want to be alerted when the status of a purchase order is set to **Received**. This change in status is the event that triggers the alert.
 
-Then, you must decide which purchase orders you want to be alerted about. For example, you can select one of the following options. These options define the conditions for the alert rule.
+Next, you must decide which purchase orders you want to be alerted about. For example, you can select one of the following options. These options define the conditions for the alert rule.
 
-  -  **Current selected record** – You receive an alert when the status of a specific purchase order changes to **Received**.
-  -  **All records** – You receive an alert when the status of a purchase order is changed for an item in the active page view.  Use the advanced filtering available in the page to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders to customers in a specific customer group.
+- **Current selected record** – You receive an alert when the status of a specific purchase order changes to **Received**.
+- **All records** – You receive an alert when the status of a purchase order is changed for an item in the active page view. You can use the advanced filtering that is available on the page to create rules for a specific set of records. For example, you can create an alert that is triggered for all purchase orders for the customers in a specific customer group.
 	
 ## Expiry of rule
-In the **Alert me until** area of the **Create alert rule** pane, you can specify how long you want the alert rule to be active. 
+On the **Alert me until** FastTab of the **Create alert rule** dialog box, you can specify how long the alert rule should be active.
 
 ## Alert contents
-In the **Alert me with** area of the **Create alert rule** pane, you can specify the subject text and message text that you want the alert messages to use. 
+On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify the subject text and message text that the alert messages should use.
 
 ## User ID
-In the **Alert who** area of the **Create alert rule** pane, you can specify which user you want to receive the alert messages. By default, your user ID is selected. This option is restricted to Organization administrators.
+On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify which user should receive the alert messages. By default, your user ID is selected. This option is restricted to organization administrators.
 
 ## Create an alert rule
-  1. Open the page that contains the data to monitor. 
-  2. Click the **Options** menu.
-  3. In the **Share** area, click **Alert me** and then select **Create alert rule**.
-  4. In the **Create alert rule** pane, in the **Field** list, select the field to monitor. 
-  5. In the **Event** list, select the type of event. 
-  6. In the **Alert me for** section, select an option. 
-  7. If you want the alert rule to become inactive on a specific date, in the **Alert me until** section, select an end date. 
-8. Expand the **Alert me with** section. 
-9. In the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. 
-  7. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered. 
-  8. Click **OK** to save the settings and create the alert rule. 
+1. Open the page that contains the data to monitor.
+2. On the Action Pane, on the **Options** tab, in the **Personalize** group, select **Create alert rule**.
+3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
+4. In the **Event** field, select the type of event.
+5. On the **Alert me for** FastTab, select an option.
+6. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
+7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered.
+8. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered.
+9. Select **OK** to save the settings and create the alert rule.
