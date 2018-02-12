@@ -40,7 +40,7 @@ Here are a few common scenarios in enterprise resource planning that will utiliz
 ### Scenario 1:  Create an alert rule for new sales orders
    1. Navigate to the **All sales orders** page.
    2. Click the **Options** menu.
-   3. In the **Personalize** area, click **Create alert rule**.
+   3. In the **Share** area, click **Alert me** and select  **Create alert rule**.
    4. Expand the **Alert me when** section. 
    5. In the **Event list**, select **Record has been created**. 
 
@@ -49,7 +49,7 @@ Here are a few common scenarios in enterprise resource planning that will utiliz
    2. Click on a purchase order ID to access the purchase order details.
    3. Expand the **Purchase order header** tab. 
    4. Click the **Options** menu.
-   5. In the **Personalize** area, click **Create alert rule**.
+   5. In the **Share** area, click **Alert me** and select  **Create alert rule**.
    6. Expand the **Alert me when** section. 
    7. In the **Field** list, select **Delivery date**.
    8. In the **Event** list, select **has been postponed**. 
