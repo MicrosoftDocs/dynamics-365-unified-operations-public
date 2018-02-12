@@ -78,67 +78,47 @@ Your production environment will be sized based on the current user license coun
 > ![NOTE]
 > If you add additional users in future, you must create a support ticket to activate a new subscription estimate. Whether resizing is necessary depends on the number of users, the type of user licenses and the expected peak transaction volume. Resizing of the production environment requires downtime.
 
-1.  **I submitted the request for Production environment, but I made a mistake;
-    can I still change it?**
+## I submitted the request for Production environment, but I made a mistake; can I still change it?
 
->   Yes, as long as the Production environment is in *Queued* state you can
->   clear the sign off, make changes, and then sign off again.
+Yes, as long as the Production environment is **Queued** state you can clear the sign off flag, make changes, and then sign off again.
 
-1.  **How long does it take to deploy my production environment?**
+## How long does it take to deploy my production environment?
 
->   Once the Pre-Go-live review with the Microsoft FastTrack team is complete
->   and the production request is submitted, the deployment of production should
->   complete within 2 business days.
+ Once the Pre-go-live review with the Microsoft FastTrack team is complete and the production request is submitted, the deployment of production should be completed within 2 business days.
 
-1.  **What level of access do I have in my D365FFO Production environment? Can I
-    login to the VM?**
+## What level of access do I have in my Finance and Operations production environment? Can I log in to the VM?
 
->   No. Access to Production environment is limited. You cannot access the VM,
->   IIS or manipulate the database through SQL Management Studio.
+No, access to the production environment is limited. You cannot access the VM, IIS or access the database through SQL Management Studio.
 
-1.  **How often is my production database backed up?**
+## How often is my production database backed up?
 
->   Databases are protected by automatic back-ups per [Azure
->   capabilities](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups).
->   Full database backups are taken weekly, differential database backups are
->   taken hourly, and transaction log backups are taken every 5 minutes.
->   Automatic back-ups are retained for 35 days.
+Databases are protected by automatic backups. Full database backups are taken weekly, differential database backups are taken hourly, and transaction log backups are taken every 5 minutes. Automatic back-ups are retained for 35 days.
 
-1.  **Can I request a copy of the backup of my production database?**
+For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 
->   No. However, you can raise a database refresh service request to copy your
->   production database to your tier-2 and above Sandbox environment. You can
->   take a backup of your Sandbox environment once the copy request is complete.
+## Can I request a copy of the backup of my production database?
 
-1.  My gold configuration database is in a tier 1 sandbox, what should I do to
-    copy and restore it to production environment?"**?**
+No, however, you can submit a database refresh service request to copy your production database to your tier-2 and above Sandbox environment. After the copy request is complete, you can then back up your sandbox environment.
 
->   First, you will have to move your gold configuration database from tier 1 to
->   tier 2. Next, You can raise a service request to copy your golden
->   configuration from Tier 2 and above sandbox environment (like Sandbox:
->   Standard Acceptance Test) to Production environment.
+## My gold configuration database is in a tier 1 sandbox, what should I do to copy and restore it to production environment?
 
->   **See**: Copy a Finance and Operations database from SQL Server to a
->   production Azure SQL Database environment
+To copy and restore from a Tier 1 sandbox: 
+1. Move your gold configuration database from a Tier 1 sandbox to a Tier 2 sandbox.
+2. Submit a service request to copy your golden configuration from the Tier 2 sandbox environment to the Production environment.
 
->   **Note**: In case your Golden configuration is in Data Packages, you will
->   have to import them in Production environment manually.
+For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)
 
-1.  **After going live, can I apply new code changes to the production
-    environment?**
+> [!NOTE]
+> If your gold configuration is in data packages, you will have to import them to the production environment manually.
 
->   Yes. You can raise a service request in LCS to apply a deployable package to
->   your production environment. Applying 1 deployable package to production
->   involves a lead time of 5 hours and downtime of approximately 5 hours.
+## After going live, can I apply new code changes to the production environment?
 
->   **Link**: [Apply deployable package
->   ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system)
+Yes. You can submit a service request in LCS to apply a deployable package to your production environment. Applying one deployable package to production involves a lead time of 5 hours and downtime of approximately 5 hours.
 
-1.  **What should I do if my production environment is down?**
+For more information, see [Apply deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
 
->   Please follow the process in the following link to report production outage
+## What should I do if my production environment is down?
 
->   *New process to report a production outage through Lifecycle Services*
+Please follow the process in the following link to report a production outage: 
 
-
-
+New process to report a production outage through Lifecycle Services. 
