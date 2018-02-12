@@ -52,7 +52,7 @@ The Pre-go-live review is part of the [Microsoft FastTrack program](../fin-and-o
 
 If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the Pre-Go-live Checklist from here, fill it up and send it to <go-live@microsoft.com>.
 
-## The Production button is not enabled in LCS. How do I request my production environment?**
+## The Production button is not enabled in LCS. How do I request my production environment?
 
 To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
