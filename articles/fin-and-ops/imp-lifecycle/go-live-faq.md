@@ -25,6 +25,7 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
+
 ---
 
 # Preparing for go live
