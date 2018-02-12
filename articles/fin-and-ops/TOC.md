@@ -171,13 +171,6 @@
 ###### [Synchronize sales orders directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ###### [Synchronize sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synchronize sales invoice directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-###### [Maintain accounts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Maintain contacts in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Maintain products in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Create sales quotes in Sales and sync them to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Create sales orders in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Create sales invoices in Finance and Operations and sync them to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-
 
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
