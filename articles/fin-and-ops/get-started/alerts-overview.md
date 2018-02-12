@@ -5,7 +5,7 @@ title: Alerts overview
 description: TBD
 author: tjvass
 manager: AnnBe
-ms.date: 01/03/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,19 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+ms.search.form: EventCreateRule
 # ROBOTS:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
-ms.search.validFrom: 2018-01-31 
-ms.dyn365.ops.version: Platform update 14
+ms.search.validFrom: 2018-15-28
+ms.dyn365.ops.version: Platform update 15
 ---
 
 # Alerts overview
@@ -33,22 +33,20 @@ ms.dyn365.ops.version: Platform update 14
 [!include[banner](../includes/banner.md)]
 
 ## About alerts
-Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance & Operations. You can use alerts to stay informed about events that you want to keep track of during the workday. Easily set up your own set of rules so that you are alerted about overdue deliveries, orders that are deleted, prices that change, or other events that you must respond to.
+Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You can use alerts to stay informed about events that you want to keep track of during the workday. You can easily set up your own set of rules so that you are alerted about overdue deliveries, orders that are deleted, prices that change, or other events that you must respond to.
 
-Here are a few common scenarios in Enterprise Resource Planning that will utilize the client alerts features available in Microsoft Dynamics 365 for Finance & Operations.
+Here are a few common scenarios in enterprise resource planning that will utilize the alerts feature available in Finance and Operations.
 
-### SCENARIO 1)  Create an alert rule for new sales orders
-**Solution:**
-   1. Navigate to the **All sales orders** form **[Accounts receivable > Sales orders > All sales orders]** 
-   2. Expand the **Options** menu
-   3. Under the **Share** tab, click on **Alert me**, and select **Create alert rule**
-   4. Expand the **Alert me when** section, in the **Event list**, select **Record has been created** 
+### Scenario 1:  Create an alert rule for new sales orders
+   1. Navigate to the **All sales orders** page.
+   2. Click the **Options** menu.
+   3. Under the **Share** tab, click on **Alert me**, and select **Create alert rule**.
+   4. Expand the **Alert me when** section. In the **Event list**, select **Record has been created**. 
 
-### SCENARIO 2)  Create an alert rule for postponement of a delivery date
-**Solution:**
-   1. Navigate to the **All purchase orders** form **[Accounts payable > Purchase orders > All purchase orders]** 
-   2. Click on a purchase order ID to access the **Purchase order details**
-   3. In the **Purchase order** form, expand the Purchase order header tab. 
+### Scenario 2:  Create an alert rule for postponement of a delivery date
+   1. Navigate to the **All purchase orders** page.
+   2. Click on a purchase order ID to access the purchase order details.
+   3. Expand the **Purchase order header** tab. 
    4. Expand the **Options** menu
    5. Under the **Share** tab, click on **Alert me**, and select **Create alert rule**
    6. Expand the **Alert me when** section, open the **Field** list, and select **Delivery date**
