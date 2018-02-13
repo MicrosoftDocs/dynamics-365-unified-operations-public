@@ -188,7 +188,7 @@ GO
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<sql user>
 ```
@@ -217,7 +217,7 @@ When you import the database, we recommend that you follow these guidelines:
 To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window as an administrator, and run the following commands.
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```
