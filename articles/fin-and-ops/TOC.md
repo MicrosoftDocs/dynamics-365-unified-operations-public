@@ -1557,14 +1557,12 @@
 ##### [Deactivate a production flow version (task guide)](../supply-chain/production-control/tasks/deactivate-production-flow-version.md)
 ##### [Define an expiry date for a production flow version (task guide)](../supply-chain/production-control/tasks/define-expiry-date-production-flow-version.md)
 ##### [Define production flow models (task guide)](../supply-chain/production-control/tasks/define-production-flow-models.md)
-
 #### Schedule production operations
 ##### [Operations scheduling](../supply-chain/production-control/operations-scheduling.md)
 ##### [Job scheduling](../supply-chain/production-control/job-scheduling.md)
 ##### [Gantt chart for job scheduling](../supply-chain/production-control/visual-scheduling-production.md)
 ##### [Operations scheduling options](../supply-chain/production-control/operation-scheduling-options.md)
 ##### [Schedule a production order with operations and job scheduling (task guide)](../supply-chain/production-control/tasks/schedule-production-order-operations-job-scheduling.md)
-
 #### Operate production jobs
 ##### [Manage production order lifecycle](../supply-chain/production-control/create-production-orders.md)
 ###### [Create a production order (task guide)](../supply-chain/production-control/tasks/create-production-order.md)
@@ -1594,38 +1592,37 @@
 ##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Enable the payroll process for time and attendance (task guide)](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Configure a worker using the mobile job device (task guide)](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
-
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
 
-
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
 #### [Activity-based subcontracting](../supply-chain/production-control/activity-based-subcontracting.md)
+
 #### Maintain production master data
 ##### [Model a lean organization](../supply-chain/production-control/lean-manufacturing-modeling-lean-organization.md)
 ##### [Operations resources](../supply-chain/production-control/operations-resources.md)
+##### [Define lean manufacturing work cells (task guide)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
+##### [Define lean schedule groups (task guide)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
+
 #### Schedule kanban jobs
 ##### [Visual scheduling for lean manufacturing](../supply-chain/production-control/visual-scheduling-lean-manufacturing.md)
 ##### [Kanban job scheduling for lean manufacturing](../supply-chain/production-control/lean-manufacturing-kanban-job-scheduling.md)
 ##### [Job scheduling](../supply-chain/production-control/job-scheduling.md)
+
 #### Operate kanban jobs
 ##### [Kanban transfer board support for barcode scanners](../supply-chain/production-control/kanban-transfer-board-support-barcode-scanner.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
-#### Lean manufacturing tasks
-##### [Define lean manufacturing work cells (task guide)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
-##### [Define lean schedule groups (task guide)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
-##### Production flows and activities in lean manufacturing 
-###### [Create a production flow version (task guides)](../supply-chain/production-control/tasks/create-production-flow-version.md)
-###### [Create process activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
-###### [Create transfer activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
-###### [Validate a production flow and version (task guide)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
-###### [Activate a production flow version (task guide)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
-###### [Create activity relation: Successor (task guide)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
-###### [Add a predecessor to a production flow activity (task guide)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
-###### [Create a value stream (task guide)](../supply-chain/production-control/tasks/create-value-stream.md)
+##### [Create a production flow version (task guides)](../supply-chain/production-control/tasks/create-production-flow-version.md)
+##### [Create process activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
+##### [Create transfer activities for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
+##### [Validate a production flow and version (task guide)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
+##### [Activate a production flow version (task guide)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
+##### [Create activity relation: Successor (task guide)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
+##### [Add a predecessor to a production flow activity (task guide)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
+##### [Create a value stream (task guide)](../supply-chain/production-control/tasks/create-value-stream.md)
 ##### [Lean pegging from sales orders (task guide)](../supply-chain/production-control/tasks/lean-pegging-sales-orders.md)
 ##### [Create a subcontracted work cell for lean manufacturing (task guide)](../supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md)
 ##### [Add a kanban quantity calculation policy to a kanban rule (task guide)](../supply-chain/production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md)
