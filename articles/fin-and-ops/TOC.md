@@ -1654,6 +1654,10 @@
 ##### [Operations resources](../supply-chain/production-control/operations-resources.md)
 ##### [Resource capabilities](../supply-chain/production-control/resource-capabilities.md)
 ##### [Batch attributes](../supply-chain/production-control/batch-attributes.md)
+##### [Copy a formula (task guides)](../supply-chain/production-control/tasks/copy-formula.md)
+##### [Create a formula by copying from an existing formula (task guide)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
+##### [Copy co-products from an existing formula version (task guide)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
+##### [Create a formula by copying from an existing formula (task guide)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Production parameters in Manufacturing execution](../supply-chain/production-control/production-parameters-manufacturing-execution.md)
 ##### [Production setup requirements](../supply-chain/production-control/production-set-up-requirements.md)
 #### Schedule production operations
@@ -1662,6 +1666,8 @@
 ##### [Job scheduling](../supply-chain/production-control/job-scheduling.md)
 #### Operate production jobs
 ##### [Consolidated batch orders](../supply-chain/production-control/consolidated-batch-orders.md)
+##### [Batch order lifecycle from create to start (task guide)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
+##### [Sequence production jobs for process manufacturing (task guide)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
 ##### [Material substitution in manufacturing](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
@@ -1670,16 +1676,6 @@
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
-#### Process manufacturing tasks
-##### [Copy a formula (task guides)](../supply-chain/production-control/tasks/copy-formula.md)
-##### [Create a formula by copying from an existing formula (task guide)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
-##### [Copy co-products from an existing formula version (task guide)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
-##### [Create a formula by copying from an existing formula (task guide)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
-##### [Batch order lifecycle from create to start (task guide)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
-##### [Sequence production jobs for process manufacturing (task guide)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
-
-
-
 
 ## [Product information management](../supply-chain/pim/product-information.md)
 ### Product information
