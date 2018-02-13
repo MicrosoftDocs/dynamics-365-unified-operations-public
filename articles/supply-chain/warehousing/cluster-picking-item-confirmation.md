@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product confirmation for cluster picking
-description: This topic describes how you set up item verificatin together with cluster picking.
+description: This topic describes how you set up item verification together with cluster picking.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
