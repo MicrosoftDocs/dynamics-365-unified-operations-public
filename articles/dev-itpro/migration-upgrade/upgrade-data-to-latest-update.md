@@ -93,7 +93,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
-## Download the latest data upgrade deployable package
+## Select the correct data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
@@ -142,10 +142,13 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
 
-5. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
+5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
 
 For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
 **Install a deployable package**. 
+
+> [!NOTE]
+> If you are upgrading a database on a development environment, you can now execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
 
 This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
 
