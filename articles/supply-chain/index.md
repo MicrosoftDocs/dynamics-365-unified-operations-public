@@ -80,16 +80,15 @@ These tech conference recordings discuss product functionality in the previous v
 
 ### Product information management
 
--  [Product Configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+-  [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 
 ### Warehouse management 
 
--  [Process inb(ound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
 -  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
--  [Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
--  [Advanced R3 Warehouse management - A day in the life, outbound processing and Demand Replenishment](https://youtu.be/Og0gLlVp7jA)
-
--  [Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management](https://youtu.be/5w1MngVchBA)
+-  [Advanced R3 Warehouse management - Inbound processing and min/max replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment](https://youtu.be/Og0gLlVp7jA)
+-  [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing](https://www.youtube.com/embed/QUxXUrN-7n4)
 
 ### Production control
