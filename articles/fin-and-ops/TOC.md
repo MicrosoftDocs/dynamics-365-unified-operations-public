@@ -1683,7 +1683,7 @@
 
 
 ## [Product information management](../supply-chain/pim/product-information.md)
-### [Product information](../supply-chain/pim/product-information.md)
+### Product information
 #### [Create a hierarchy of product classification (Task guide)](../supply-chain/pim/tasks/create-hierarchy-product-classification.md)
 #### [Classify a product using category hierarchies (Task guide)](../supply-chain/pim/tasks/classify-product-category-hierarchies.md)
 #### [Product number nomenclature](../supply-chain/pim/product-variant-identification-nomenclature.md)
@@ -1715,7 +1715,8 @@
 #### [Create sales price selection criteria (Task guide)](../supply-chain/pim/tasks/create-sales-price-selection-criteria.md)
 #### [Set up attribute-based pricing for configurable products (Task guide)](../supply-chain/pim/tasks/set-up-attribute-based-pricing-configurable-products.md)
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
-### [Product configuration models](../supply-chain/pim/build-product-configuration-model.md)
+
+### [Product configuration](../supply-chain/pim/build-product-configuration-model.md)
 #### [Create dimension-based configuration](../supply-chain/pim/dimension-based-product-configuration.md) 
 ##### [Product dimension](../supply-chain/pim/product-dimensions.md)
 ##### [Create a dimension-based product master (Task guide)](../supply-chain/pim/tasks/create-dimension-based-product-master.md)
