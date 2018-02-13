@@ -1532,10 +1532,10 @@
 
 
 
-## [Production](../supply-chain/production-control/production-process-overview.md)
-### [Production process overview](../supply-chain/production-control/production-process-overview.md)
+## [Production control](../supply-chain/production-control/production-process-overview.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](../supply-chain/production-control/mixed-mode-plan.md)
 ### [Manage subcontracting work in production](../supply-chain/production-control/manage-subcontract-work-production.md)
+
 ### Discrete manufacturing
 #### Maintain production master data
 ##### [Production setup requirements](../supply-chain/production-control/production-set-up-requirements.md)
@@ -1547,17 +1547,19 @@
 ##### [Resource capabilities](../supply-chain/production-control/resource-capabilities.md)
 ##### [Routes and operations](../supply-chain/production-control/routes-operations.md)
 ##### [Warehouse work policies](../supply-chain/warehousing/warehouse-work-policies.md)
+
 #### Schedule production operations
 ##### [Operations scheduling](../supply-chain/production-control/operations-scheduling.md)
 ##### [Job scheduling](../supply-chain/production-control/job-scheduling.md)
 ##### [Gantt chart for job scheduling](../supply-chain/production-control/visual-scheduling-production.md)
 ##### [Operations scheduling options](../supply-chain/production-control/operation-scheduling-options.md)
+
 #### Operate production jobs
 ##### [Create production orders](../supply-chain/production-control/create-production-orders.md)
 ##### [Release production orders](../supply-chain/production-control/release-production-orders.md)
 ##### [Visibility into material exceptions](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
 ##### [Release BOM and formula lines to the warehouse](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
-#####[Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Reverse the production order status](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Register material consumption using a mobile device](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Control raw material consumption by using flushing principles](../supply-chain/production-control/flushing-principles.md) 
 ##### [Cross-docking from production orders to outbound docks](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1569,10 +1571,13 @@
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
 ##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
 ##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
+
+
 #### Discrete manufacturing tasks
 ##### [Define discrete manufacturing resource group (task guide)](../supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group.md)
 ##### [Add an existing activity to a production flow version (task guide)](../supply-chain/production-control/tasks/add-existing-activity-production-flow-version.md)
