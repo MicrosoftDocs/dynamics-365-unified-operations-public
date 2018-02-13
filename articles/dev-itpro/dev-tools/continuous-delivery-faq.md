@@ -55,10 +55,10 @@ For more information, see [Extensibility home page](..\extensibility\extensibili
 You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](lock-models.md) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
 
 ### How can I define the scope of my models? How many models or packages should I create?
-Designing models and model elements is no different than designing other types of software libraries, [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles apply. In addition here are some tips that are specific to the Dynamics 365 Unified Operations platform:
--   If there are components in your solution that you want to ship and service more frequent than the rest, they are good candidates to be placed into their own model and package.
--   It is common practice to start with two packages (each with one model) at the initial stage of an implementation, one foundation package that contains extension to Microsoft platform packages and one application package that contains extension to Microsoft application packages. More models can be introduced on an as-needed basis.
--	Existing packages can be subdivided into smaller packages when necessary. If your implementation is already live using one of your packages, avoid renaming a package for simpler lifecycle management.
+Designing models and model elements is no different than designing other types of software libraries. You should apply [SOLID (object-oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) design principles. In addition, we recommend the following tips that are specific to the Dynamics 365 Unified Operations platform:
+-   If there are components in your solution that you want to ship and service more frequent than the rest, they are good candidates to place in a separate model and package.
+-   It is common practice to start with two packages (each with one model) at the initial stage of an implementation, one foundation package that contains extensions to the Microsoft platform packages and one application package that contains extensions to the Microsoft application packages. More models can be introduced on an as-needed basis.
+-	Existing packages can be subdivided into smaller packages when necessary. If your implementation is already live using one of your packages, avoid renaming a package, to help simplify lifecycle management.
 
 ## Continuous delivery
 ### Do I need build environments?
