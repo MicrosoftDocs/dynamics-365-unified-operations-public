@@ -43,7 +43,7 @@ What's important to know?
 -   You can enable network printers for specific companies by using in-client administrative pages.
 -   Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 -   The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
--   The application requires Adobe Acrobat Viewer.
+-   The application requires Adobe Acrobat Reader.
 -   The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
 -   Dynamics AX 7.0 & Platform Update 1 deployments require Microsoft .NET 4 on the client.
 -   Platform udate 2 or later requires .NET 4.62 on the client.
