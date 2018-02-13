@@ -5,7 +5,7 @@ title: Supply chain management home page
 description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/04/2018
+ms.date: 02/13/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,6 +72,7 @@ These short videos help you learn about the new features that are in Microsoft D
 
 These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
+-  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Help! MRP is slow!</a>
