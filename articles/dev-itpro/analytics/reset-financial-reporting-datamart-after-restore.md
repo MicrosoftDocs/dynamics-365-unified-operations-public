@@ -155,7 +155,7 @@ The following Microsoft Windows services will have open connections to the Finan
 
 #### Download the latest MinorVersionDataUpgrade.zip package
 
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the[Select the correct data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package). 
+Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Select the correct data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
 
 An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
