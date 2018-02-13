@@ -77,4 +77,4 @@ The system output invoice in two languages if the customer language is different
 The diagram below shows how data may be collected in Sales tax payment by report code report. 
 It is important to note that data is collected on the base of sales tax transactions. Therefore, if an invoice created has not tax transactions then this invoice will not be included in the report.  One report code may be selected in several sales tax codes and several report codes may be selected in one sales tax code in different fields. 
 
-![Sales tax payment by report code](media/apac-sau-sales-tax-diagram.jpg)
+![Sales tax payment by report code](media/apac-sau-sales-tax-diagram.png)
