@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Go-live frequently asked questions for Microsoft Dynamics 365 for Finance and Operations 
-description: This topic lists frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+title: Go-live FAQ for Microsoft Dynamics 365 for Finance and Operations
+description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 author: sshashi7
 manager: AnnBe
 ms.date: 02/13/2018
@@ -28,97 +28,96 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Preparing for go live
+# Prepare for go-live
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists frequently asked questions about going live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
 
 ## When can I configure and request my production environment?
 
-Typically, a production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is complete, the customer has signed off on the solution, and there are no go-live blocking issues.
+Typically, a production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is completed, the customer has signed off on the solution, and there are no blocking issues for go-live.
 
-When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre-go-live review or assessment.
+When you're at this stage, the Microsoft FastTrack team will work with the project team to do a Pre go-live review or assessment.
 
 ## What are the prerequisites to deploy a production environment?
 
-The prerequisites are listed in the topic [Preparing for Go-live](prepare-go-live.md)
+For a list of the prerequisites, see [Preparing for Go-live](prepare-go-live.md).
 
-## What is a Pre-go-live review and why is it required?
+## What is a Pre go-live review, and why is it required?
 
-The Pre-go-live review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md), in which a solutions architect assesses readiness of an implementation project for a successful cutover and Go-live. This review is mandatory for every Finance and Operations project before a request to go live in a production environment.
+The Pre go-live review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every Finance and Operations project before you can request to go live in a production environment.
 
-## I want to request my production environment but who do I contact for a Pre-go-live review?
+## I want to request my production environment. Who do I contact for a Pre go-live review?
 
-If you have a FastTrack solution architect assigned to your project, please reach out to him or her directly. Otherwise, based your Go-live date specified in LCS, you will receive an email to fill out the Pre-go-live checklist and send it to <go-live@microsoft.com> few weeks before the Go-live date. If you’ve not received an email and you’re ready for Go-live, you can download the [Pre-go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
+If a FastTrack solution architect is assigned to your project, contact to him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
 
-## The Production button is not enabled in LCS. How do I request my production environment?
+## The Production button isn't available in LCS. How do I request my production environment?
 
-To enable the **Production** button in LCS, you must have completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. Read more about completing [Methodology tasks and phases](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. For more information about how to complete these phases, see [Methodology tasks and phases](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
->   [!NOTE]
->   Your production environment will not be deployed until the Pre-go-live review has been completed.
+> [!NOTE]
+> Your production environment won't be deployed until the Pre go-live review has been completed.
 
-##  My sandbox environment is currently on a platform update which is set to expire in 2 months. Can I request a production environment with the latest platform update?
+## My sandbox environment is currently on a platform update that is set to expire in two months. Can I request a production environment that has the latest platform update?
 
-No, requests to have a production environment on a different version than your sandbox will be denied. When configuring a production environment, you must select the same application and platform version as that of the sandbox environment in which you signed off on your solution. If you want a production environment with the latest platform update, you must apply the latest platform update to your sandbox environment first, test it, and sign off.
+No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the application and platform versions that you select must match the application and platform versions of the sandbox environment where you signed off on your solution. If you want a production environment that has the latest platform update, you must first apply the latest platform update to your sandbox environment, test it, and sign off.
 
-For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md)
+For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
-## My sandbox environments are deployed in the Central US datacenter, but we would like to have our Production environments deployed in the West US datacenter. Can I select West US as my data center in my Production configuration?
+## Our sandbox environments are deployed in the Central US datacenter, but we want our production environments to be deployed in the West US datacenter. Can I select West US as the datacenter in my production configuration?
 
-No, requests to have a production environment in a different data center than your sandbox will be denied. We require that all of your environments reside in the same data center. If you want to have your production environment in the West US data center, you must first move your Sandbox environments to the West US data center, test it, and sign off.
+No. We will deny any request for a production environment that is in a different datacenter than your sandbox environment. We require that all your environments reside in the same datacenter. If you want your production environment to reside in the West US datacenter, you must first move your sandbox environments to the West US datacenter, test them, and sign off.
 
-See the [Network requirements section in the System requirements topic](../get-started/system-requirements.md#network-requirements) to help you choose the right data center.
+For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" topic.
 
 ## How will my production environment be sized?
 
-Your production environment will be sized based on the current user license count and the information in subscription estimate that is active when you request the production environment.
+Your production environment will be sized based on the current user license count and the information in the subscription estimate that is active when you request the production environment.
 
->   [!NOTE]
-> If you add additional users in future, you must create a support ticket to activate a new subscription estimate. Whether resizing is necessary depends on the number of users, the type of user licenses and the expected peak transaction volume. Resizing of the production environment requires downtime.
+> [!NOTE]
+> If you add additional users later, you must create a support ticket to activate a new subscription estimate. Your production environment might have to be resized, depending on the number of users, the type of user licenses, and the expected peak transaction volume. Downtime is required in order to resize a production environment.
 
-## I submitted the request for Production environment, but I made a mistake; can I still change it?
+## I submitted the request for a production environment, but I made a mistake. Can I still change it?
 
-Yes, as long as the Production environment is **Queued** state you can clear the sign off flag, make changes, and then sign off again.
+Yes. As long as the status of the production environment is **Queued**, you can clear the sign-off flag, make changes, and then sign off again.
 
 ## How long does it take to deploy my production environment?
 
- Once the Pre-go-live review with the Microsoft FastTrack team is complete and the production request is submitted, the deployment of production should be completed within 2 business days.
+After the Pre go-live review with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within two business days.
 
-## What level of access do I have in my Finance and Operations production environment? Can I log in to the VM?
+## What level of access do I have in my Finance and Operations production environment? Can I sign in to the VM?
 
-No, access to the production environment is limited. You cannot access the VM, IIS or access the database through SQL Management Studio.
+No. Access to the production environment is limited. You can't access the virtual machine (VM) or Microsoft Internet Information Services (IIS). You also can't access the database through Microsoft SQL Server Management Studio.
 
 ## How often is my production database backed up?
 
-Databases are protected by automatic backups. Full database backups are taken weekly, differential database backups are taken hourly, and transaction log backups are taken every 5 minutes. Automatic back-ups are retained for 35 days.
+Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 35 days.
 
 For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 
 ## Can I request a copy of the backup of my production database?
 
-No, however, you can submit a database refresh service request to copy your production database to your tier-2 and above Sandbox environment. After the copy request is complete, you can then back up your sandbox environment.
+No. However, you can submit a database refresh service request to copy your production database to your Tier 2 and higher sandbox environment. After the copy request is completed, you can back up your sandbox environment.
 
-## My gold configuration database is in a tier 1 sandbox, what should I do to copy and restore it to production environment?
+## My gold configuration database is in a Tier 1 sandbox environment. How can I copy and restore it to my production environment?
 
-To copy and restore from a Tier 1 sandbox: 
-1. Move your gold configuration database from a Tier 1 sandbox to a Tier 2 sandbox.
-2. Submit a service request to copy your golden configuration from the Tier 2 sandbox environment to the Production environment.
+To copy and restore from a Tier 1 sandbox environment, follow these steps.
 
-For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)
+1. Move your gold configuration database from a Tier 1 sandbox environment to a Tier 2 sandbox environment.
+2. Submit a service request to copy your golden configuration from the Tier 2 sandbox environment to the production environment.
 
->   [!NOTE]
-> If your gold configuration is in data packages, you will have to import them to the production environment manually.
+For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md).
 
-## After going live, can I apply new code changes to the production environment?
+> [!NOTE]
+> If your gold configuration is in data packages, you must manually import the data packages to the production environment.
 
-Yes. You can submit a service request in LCS to apply a deployable package to your production environment. Applying one deployable package to production involves a lead time of 5 hours and downtime of approximately 5 hours.
+## After go-live, can I apply new code changes to the production environment?
 
-For more information, see [Apply deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md)
+Yes. In LCS, you can submit a service request to apply a deployable package to your production environment. Application of one deployable package to a production environment involves a lead time of five hours and downtime of approximately five hours.
+
+For more information, see [Apply deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md).
 
 ## What should I do if my production environment is down?
 
-Please follow the process described in the following blog post to report a production outage: 
-
-[New process to report a production outage through Lifecycle Services](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/)
+To report a production outage, follow the process that is described in the [New process to report a production outage through Lifecycle Services](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/) blog post.
