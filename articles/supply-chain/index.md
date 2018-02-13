@@ -72,17 +72,17 @@ These short videos help you learn about the new features that are in Microsoft D
 
 These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
-### Master planning
+**Master planning**
 
 -  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
 -  [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
 
-### Product information management
+**Product information management**
 
 -  [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 
-### Warehouse management 
+**Warehouse management** 
 
 -  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
 -  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
@@ -91,11 +91,11 @@ These tech conference recordings discuss product functionality in the previous v
 -  [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing](https://www.youtube.com/embed/QUxXUrN-7n4)
 
-### Production control
+**Production control**
 
 -  [Subcontracting operations and activities in manufacturing](https://youtu.be/y1jrd3A_k70)
 
-### Transportation management
+**Transportation management**
 
 -  [Transportation management (TMS) in the new Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
