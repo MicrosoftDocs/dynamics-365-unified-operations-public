@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create routes (February 2016 only)
-description: This task focuses on creating the production routes for a finished product and and a semi-finished product. 
+description: This task focuses on creating the production routes for a finished product and a semi-finished product. 
 author: BibiSp
 manager: AnnBe 
 ms.date: 02/07/2017
