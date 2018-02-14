@@ -81,6 +81,17 @@
 ### [Audit policy violations and cases](../financials/general-ledger/audit-policy-violations-cases.md)
 
 ## Cost management
+### Standard cost
+#### [Prerequisites for standard costs](../supply-chain/cost-management/prerequisites-standard-costs.md)
+#### [Standard cost conversion overview](../supply-chain/cost-management/standard-cost-conversion-overview.md)
+#### [Prerequisite for a standard cost conversion](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
+#### [Manage standard cost update](../supply-chain/cost-management/manage-standard-cost-updates.md)
+#### [Restrictions on costing versions for standard costs](../supply-chain/cost-management/restrictions-costing-versions-standard-costs.md)
+#### [BOM calculations with standard cost](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
+#### [Update standard cost in a manufacturing environment](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
+#### [Update standard cost for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
+#### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
+#### [Prepare to maintain standard costs for manufactured items](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
 ### Predetermined cost
 #### [Costing sheet](../supply-chain/cost-management/costing-sheets.md)
 #### [Costing version](../supply-chain/cost-management/costing-versions.md)
@@ -96,7 +107,6 @@
 #### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [Include physical value](../supply-chain/cost-management/include-physical-value.md)
 #### [Inventory object value](../supply-chain/cost-management/physical-quantity.md)
-#### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 #### [LIFO Date with physical value and marking](../supply-chain/cost-management/lifo-date-physical-value-marking.md)
 #### [LIFO with physical value and marking](../supply-chain/cost-management/lifo-physical-value-marking.md)
 #### [Moving average](../supply-chain/cost-management/moving-average.md)
@@ -105,6 +115,7 @@
 #### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 #### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
 #### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
+#### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 ### Manufacturing accounting
 #### [Amortize constant costs for a manufactured item](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
 #### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
@@ -129,17 +140,6 @@
 #### [Production posting](../supply-chain/cost-management/production-posting.md)
 #### [Set up a product that can be produced or procured](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Total cost allocation method](../supply-chain/cost-management/methodology-total-cost-allocation.md)
-### Standard cost
-#### [Prerequisites for standard costs](../supply-chain/cost-management/prerequisites-standard-costs.md)
-#### [Standard cost conversion overview](../supply-chain/cost-management/standard-cost-conversion-overview.md)
-#### [Prerequisite for a standard cost conversion](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
-#### [Manage standard cost update](../supply-chain/cost-management/manage-standard-cost-updates.md)
-#### [Restrictions on costing versions for standard costs](../supply-chain/cost-management/restrictions-costing-versions-standard-costs.md)
-#### [BOM calculations with standard cost](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
-#### [Update standard cost in a manufacturing environment](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
-#### [Update standard cost for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
-#### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
-#### [Prepare to maintain standard costs for manufactured items](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
 ### Power BI content pack
 #### [Cost management content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 
