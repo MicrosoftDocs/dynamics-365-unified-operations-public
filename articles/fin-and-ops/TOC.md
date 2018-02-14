@@ -97,7 +97,6 @@
 #### [Costing version](../supply-chain/cost-management/costing-versions.md)
 #### [Simulate cost change by using a costing version for planned cost](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
 ### Inventory accounting
-#### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 #### [Cost object](../supply-chain/cost-management/cost-object.md)
 #### [View cost object balance (task guide)](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
 #### [View inventory statement and KPI by cost object (task guide)](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
@@ -116,11 +115,11 @@
 #### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
 #### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
 #### [Inventory close](../supply-chain/cost-management/inventory-close.md)
+#### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 ### Manufacturing accounting
-#### [Amortize constant costs for a manufactured item](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
-#### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
 #### [BOM calculation group](../supply-chain/cost-management/bom-calculation-groups.md)
+#### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
 #### [Common sources of production variance](../supply-chain/cost-management/common-sources-of-production-variances.md)
 #### [Cost category used in production routing](../supply-chain/cost-management/cost-categories-used-production-routings.md)
 #### [Cost category used in Production control and Project management accounting](../supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting.md)
@@ -132,6 +131,7 @@
 #### [Production posting](../supply-chain/cost-management/production-posting.md)
 #### [Set up a product that can be produced or procured](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Total cost allocation method](../supply-chain/cost-management/methodology-total-cost-allocation.md)
+#### [Amortize constant costs for a manufactured item](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
 ### Power BI content pack
 #### [Cost management content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 
