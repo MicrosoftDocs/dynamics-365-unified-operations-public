@@ -34,20 +34,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](../supply-chain/cost-management/cost-object.md) and [Manufacturing accounting](../supply-chain/cost-management/bom-calculations.md).
+Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 
 You can define cost policies in the following areas: 
--  [Predetermined cost](../supply-chain/cost-management/costing-versions.md)
--  [Inventory accounting](../supply-chain/cost-management/cost-object.md)
--  [Manufacturing accounting](../supply-chain/cost-management/bom-calculations.md)
--  [Indirect cost accounting](../supply-chain/cost-management/costing-sheets.md)
--  [Ledger integration](../supply-chain/cost-management/production-order-cost-analysis.md)
+-  [Predetermined cost](costing-versions.md)
+-  [Inventory accounting](cost-object.md)
+-  [Manufacturing accounting](bom-calculations.md)
+-  [Indirect cost accounting](costing-sheets.md)
+-  [Ledger integration](production-order-cost-analysis.md)
 
-For example, you can define which inventory valuation methods, such as [FIFO](../supply-chain/cost-management/fifo-physical-value-marking.md), [Weighted average](../supply-chain/cost-management/weighted-average-physical-value-marking.md), [Standard cost](../supply-chain/cost-management/prerequisites-standard-costs.md), or [Moving average](../supply-chain/cost-management/moving-average.md) that you want to apply to products in the [Item model group](../supply-chain/inventory/reserve-inventory-quantities.md) in Inventory accounting.
+For example, you can define which inventory valuation methods, such as [FIFO](fifo-physical-value-marking.md), [Weighted average](weighted-average-physical-value-marking.md), [Standard cost](prerequisites-standard-costs.md), or [Moving average](moving-average.md) that you want to apply to products in the [Item model group](../inventory/reserve-inventory-quantities.md) in Inventory accounting.
 
 You can access Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, key performance indicators (KPIs), and detection of deviation. 
 
-Manufacturing accounting lets you handle [Job order costing](../supply-chain/cost-management/production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](../supply-chain/cost-management/backflush-costing.md) in lean manufacturing.
+Manufacturing accounting lets you handle [Job order costing](production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](backflush-costing.md) in lean manufacturing.
 
 ### Additional resources
 
@@ -59,13 +59,13 @@ features are in development.
 #### White paper
 [BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations. We don’t expect that you will follow all these scenarios, because this document doesn't provide enough details to configure them. Nevertheless, if you have the basic knowledge, you can try to play the task guides listed below in the order that they appear. Use the knowledge that you’ve gained from reading this document to do BOM calculation analysis. 
 
--  [Create a finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-finished-product-2016-02.md)
--  [Create a semi-finished product (February 2016 only)](../supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md)
--  [Create raw materials (February 2016 only)](../supply-chain/cost-management/tasks/create-raw-materials-2016-02.md)
--  [Create BOMs (February 2016 only)](../supply-chain/cost-management/tasks/create-boms-2016-02.md)
--  [Create routes (February 2016 only)](../supply-chain/cost-management/tasks/create-routes-2016-02.md)
--  [Calculate a BOM by using a single level structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Calculate a BOM by using a multilevel structure (February 2016 only)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
+-  [Create a finished product (February 2016 only)](tasks/create-finished-product-2016-02.md)
+-  [Create a semi-finished product (February 2016 only)](tasks/create-semi-finished-product-2016-02.md)
+-  [Create raw materials (February 2016 only)](tasks/create-raw-materials-2016-02.md)
+-  [Create BOMs (February 2016 only)](tasks/create-boms-2016-02.md)
+-  [Create routes (February 2016 only)](tasks/create-routes-2016-02.md)
+-  [Calculate a BOM by using a single level structure (February 2016 only)](tasks/calculate-bom-single-level-structure-2016-02.md)
+-  [Calculate a BOM by using a multilevel structure (February 2016 only)](tasks/calculate-bom-multilevel-structure-2016-02.md)
 
 
 #### Blogs
