@@ -528,7 +528,7 @@
 ### [Install a deployable package](deployment/install-deployable-package.md)
 ### [Troubleshoot package application issues](deployment/deployable-package-troubleshooting.md)
 
-# [Upgrade and migration](migration-upgrade/upgrade-home-page.md)
+# [Upgrades, updates, and hotfixes](migration-upgrade/upgrade-home-page.md)
 ## [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012 upgrade - Use the Upgrade analyzer tool to plan](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012 upgrade – Use the Code upgrade service to estimate effort](migration-upgrade/analyze-code-upgrade.md)
@@ -556,8 +556,7 @@
 ### [Split models](dev-tools/model-split.md)
 ### [Use delegates to solve dependencies between models](migration-upgrade/delegates-migration.md)
 
-
-## Upgrade to a recent update
+## Upgrade to a recent update (cloud)
 ### [Process for moving to the latest update](migration-upgrade/upgrade-latest-update.md)
 ### [Lifecycle policy](migration-upgrade/versions-update-policy.md)
 ### [Apply the latest platform update to your environment](migration-upgrade/upgrade-latest-platform-update.md)
@@ -565,13 +564,17 @@
 ### [Upgrade a sandbox environment](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Upgrade data in development or demo environments](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Update development tools](dev-tools/update-development-tools.md)
+
+## Upgrade to a recent update (on-premises)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 
-## Hotfixes and servicing
+## Hotfixes
 ### [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+### [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
 ### [Install a metadata hotfix](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Patch Reporting Services in a one-box environment](migration-upgrade/patch-reporting-service-environment.md)
+### [Update Visual Studio development tools](update-development-tools.md)
 
 ## Deprecations
 ### [Deprecated APIs](migration-upgrade/deprecated-apis.md)
