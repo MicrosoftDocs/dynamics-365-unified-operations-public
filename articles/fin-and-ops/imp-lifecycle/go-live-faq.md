@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Prepare for go-live
+# Go live FAQ
 
 [!include[banner](../includes/banner.md)]
 
