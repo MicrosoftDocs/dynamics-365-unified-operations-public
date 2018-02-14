@@ -74,7 +74,8 @@
 ## [Understand the implementation lifecycle](imp-lifecycle/implementation-lifecycle.md)
 ### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Onboarding](imp-lifecycle/onboard.md) 
-### [Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
+### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
+### [Go-live FAQ](imp-lifecycle/go-live-faq.md)
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
