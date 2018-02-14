@@ -94,7 +94,7 @@ Windows Remoting (WinRM) is disabled on all environments. Exceptions to enable W
 
 > [!IMPORTANT]
 > Customers need to ensure that RDP and WinRM endpoints are secured through explicit NSG rules as mentioned above. The NSG rules should adhere to the below conditions to ensure the environments are secure and the Intellectual Property is protected.
-> - NSG rules should **NOT** using star/zero, opening the environment to internet
+> - NSG rules should **NOT** use star/zero, opening the environment to internet
 > - Wide IP address ranges should not be used.
 > - IP address ranges should restrict to the Customer's CORPNET 
 > - If computers outside the customer's CORPNET are used to connect to the Sandboxes, only IP addresses of the computers should be added.
