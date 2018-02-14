@@ -20,8 +20,6 @@ audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 189723
-ms.assetid: 998bd849-ce82-4f50-ad50-a7573ca52fd7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
@@ -77,7 +75,7 @@ If you are applying updates to a cloud version of Finance and Operations, review
 - [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
 - [Install a metadata hotfix](install-metadata-hotfix-package.md)
 - [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)
-- [Update Visual Studio development tools](..dev-tools/update-development-tools.md)
+- [Update Visual Studio development tools](../dev-tools/update-development-tools.md)
 
 This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests). 
 
