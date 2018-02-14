@@ -50,7 +50,7 @@ The Go-live assessment/review is part of the [Microsoft FastTrack program](../ge
 
 ## I want to request my production environment. Who do I contact for a Go-live assessment/review?
 
-If a FastTrack solution architect is assigned to your project, contact to him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
+If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
