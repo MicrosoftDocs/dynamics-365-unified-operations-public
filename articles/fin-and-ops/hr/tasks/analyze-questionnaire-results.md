@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form: KMKnowledgeCollectorCollection  
+# ms.search.form:   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
