@@ -61,13 +61,13 @@ features are in development.
 #### White paper
 [BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations. We don’t expect that you will follow all these scenarios, because this document doesn't provide enough details to configure them. Nevertheless, if you have the basic knowledge, you can try to play the task guides listed below in the order that they appear. Use the knowledge that you’ve gained from reading this document to do BOM calculation analysis. 
 
--  [Create a finished product (February 2016 only)](tasks/create-finished-product-2016-02.md)
--  [Create a semi-finished product (February 2016 only)](tasks/create-semi-finished-product-2016-02.md)
--  [Create raw materials (February 2016 only)](tasks/create-raw-materials-2016-02.md)
--  [Create BOMs (February 2016 only)](tasks/create-boms-2016-02.md)
--  [Create routes (February 2016 only)](tasks/create-routes-2016-02.md)
--  [Calculate a BOM by using a single level structure (February 2016 only)](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Calculate a BOM by using a multilevel structure (February 2016 only)](tasks/calculate-bom-multilevel-structure-2016-02.md)
+-  [Create a finished product](tasks/create-finished-product-2016-02.md)
+-  [Create a semi-finished product](tasks/create-semi-finished-product-2016-02.md)
+-  [Create raw materials](tasks/create-raw-materials-2016-02.md)
+-  [Create BOMs](tasks/create-boms-2016-02.md)
+-  [Create routes](tasks/create-routes-2016-02.md)
+-  [Calculate a BOM by using a single level structure](tasks/calculate-bom-single-level-structure-2016-02.md)
+-  [Calculate a BOM by using a multilevel structure](tasks/calculate-bom-multilevel-structure-2016-02.md)
 
 
 #### Blogs
