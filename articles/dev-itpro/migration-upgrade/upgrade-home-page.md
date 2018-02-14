@@ -73,11 +73,11 @@ If you are applying updates to a cloud version of Finance and Operations, review
 
 ## Hotfixes
 
-- [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+- [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
 - [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
-- [Install a metadata hotfix](migration-upgrade/install-metadata-hotfix-package.md)
-- [Patch Reporting Services in a one-box environment](migration-upgrade/patch-reporting-service-environment.md)
-- [Update Visual Studio development tools](update-development-tools.md)
+- [Install a metadata hotfix](install-metadata-hotfix-package.md)
+- [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)
+- [Update Visual Studio development tools](..dev-tools/update-development-tools.md)
 
 This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests). 
 
