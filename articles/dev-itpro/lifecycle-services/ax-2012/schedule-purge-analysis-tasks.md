@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+title: Schedule Intelligent Data Management Framework purge and analysis tasks (AX 2012)
 description: This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+# Schedule Intelligent Data Management Framework purge and analysis tasks (AX 2012)
 
 [!include[banner](../../includes/banner.md)]
 
