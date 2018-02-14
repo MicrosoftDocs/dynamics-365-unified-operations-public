@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting Inventory accounting and Manufacturing accounting.
+Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](../supply-chain/cost-management/cost-object.md) and [Manufacturing accounting](../supply-chain/cost-management/bom-calculations.md).
 
 You can define cost policies in the following areas: 
 -  [Predetermined cost](../supply-chain/cost-management/costing-versions.md)
@@ -43,11 +43,11 @@ You can define cost policies in the following areas:
 -  [Indirect cost accounting](../supply-chain/cost-management/costing-sheets.md)
 -  [Ledger integration](../supply-chain/cost-management/production-order-cost-analysis.md)
 
-For example, you can define which inventory valuation methods, such as **FIFO**, **Weighted average**, **Standard cost**, or **Moving average** that you want to apply to products in the **Item model group** in Inventory accounting.
+For example, you can define which inventory valuation methods, such as [FIFO](../supply-chain/cost-management/fifo-physical-value-marking.md), [Weighted average](../supply-chain/cost-management/weighted-average-physical-value-marking.md), [Standard cost](../supply-chain/cost-management/prerequisites-standard-costs.md), or [Moving average](../supply-chain/cost-management/moving-average.md) that you want to apply to products in the [Item model group](../supply-chain/inventory/reserve-inventory-quantities.md) in Inventory accounting.
 
 You can access Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, key performance indicators (KPIs), and detection of deviation. 
 
-Manufacturing accounting lets you handle **Job order costing** in production orders and batch orders, as well as backflush costing in lean manufacturing.
+Manufacturing accounting lets you handle [Job order costing](../supply-chain/cost-management/production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](../supply-chain/cost-management/backflush-costing.md) in lean manufacturing.
 
 ### Additional resources
 
