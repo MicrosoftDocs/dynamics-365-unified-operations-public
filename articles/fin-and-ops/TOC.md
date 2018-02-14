@@ -85,7 +85,7 @@
 #### [Costing sheet](../supply-chain/cost-management/costing-sheets.md)
 #### [Costing version](../supply-chain/cost-management/costing-versions.md)
 #### [Simulate cost change by using a costing version for planned cost](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
-### Inventory costing
+### Inventory accounting
 #### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
 #### [Cost object](../supply-chain/cost-management/cost-object.md)
 #### [View cost object balance (task guide)](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
@@ -105,7 +105,7 @@
 #### [Tracking running average cost per inventory dimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 #### [Weighted average date](../supply-chain/cost-management/weighted-average-date.md)
 #### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
-### Manufacturing costing
+### Manufacturing accounting
 #### [Amortize constant costs for a manufactured item](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
 #### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
