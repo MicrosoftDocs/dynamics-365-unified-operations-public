@@ -49,6 +49,8 @@ You can access Inventory accounting and Manufacturing accounting from the **Cost
 
 Manufacturing accounting lets you handle [Job order costing](production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](backflush-costing.md) in lean manufacturing.
 
+The [Cost management Power BI content](../../dev-itpro/analytics/cost-management-content-pack.md) provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
+
 ### Additional resources
 
 #### What's new and in development
