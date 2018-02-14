@@ -5,7 +5,7 @@ title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: AndersGirke
 manager: AnnBe
-ms.date: 01/14/2017
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -37,11 +37,11 @@ ms.dyn365.ops.version: AX 7.0.0
 Cost management lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting Inventory accounting and Manufacturing accounting.
 
 You can define cost policies in the following areas: 
--  Predetermined cost	 
--  Inventory accounting
--  Manufacturing accounting
--  Indirect cost accounting
--  Ledger integration
+-  [Predetermined cost](../supply-chain/cost-management/costing-versions.md)
+-  [Inventory accounting](../supply-chain/cost-management/cost-object.md)
+-  [Manufacturing accounting](../supply-chain/cost-management/bom-calculations.md)
+-  [Indirect cost accounting](../supply-chain/cost-management/costing-sheets.md)
+-  [Ledger integration](../supply-chain/cost-management/production-order-cost-analysis.md)
 
 For example, you can define which inventory valuation methods, such as **FIFO**, **Weighted average**, **Standard cost**, or **Moving average** that you want to apply to products in the **Item model group** in Inventory accounting.
 
