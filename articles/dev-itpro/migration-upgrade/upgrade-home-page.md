@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade home page
-description: These topics describe the process for upgrading your Dynamics 365 for Finance and Operations environment and data.
+title: Upgrades, updates, and hotfixes
+description: These topics describe the process for upgrading, updating, and applying hotfixes to your Dynamics 365 for Finance and Operations environment and data.
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 02/14/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Upgrade home page
+# Upgrades, updates, and hotfixes
 
 [!include[banner](../includes/banner.md)]
 
-When we discuss upgrade, we can be talking about anything from moving to new product version upgrades, code migration and upgrade, moving to an update, or deploying a hotfix. 
+Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix. 
 
 The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.
 
@@ -55,12 +55,6 @@ This Tech Talk video provides an introduction to migration from AX 2009 to Finan
 
 The steps for applying updates and upgrading differ between cloud and on-premises implementations. 
 
-### On-premises
-If you are applying updates to a cloud version of Finance and Operations, review the following topic:
-
-- [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)
-
 ### Cloud
 If you are upgrading a cloud version of Finance and Operations, review the following topics:
 
@@ -70,6 +64,25 @@ If you are upgrading a cloud version of Finance and Operations, review the follo
 
 - [Download Finance and Operations hotfixes from Lifecycle Services](download-hotfix-lcs.md)
 
-This Tech Talk video provides an introduction to servicing a Finance and Operations environment.
+
+### On-premises
+If you are applying updates to a cloud version of Finance and Operations, review the following topic:
+
+- [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
+- [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)
+
+## Hotfixes
+
+- [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+- [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
+- [Install a metadata hotfix](migration-upgrade/install-metadata-hotfix-package.md)
+- [Patch Reporting Services in a one-box environment](migration-upgrade/patch-reporting-service-environment.md)
+- [Update Visual Studio development tools](update-development-tools.md)
+
+This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests). 
 
 > [!Video https://www.youtube.com/embed/QkcdBI_ipTM?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
+
+ For more information, see: 
+- [Request a sandbox database refresh](../database/database-refresh.md)
+- [Set up technical support](../lifecycle-services/support-experience.md) 
