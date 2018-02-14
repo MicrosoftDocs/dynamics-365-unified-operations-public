@@ -80,7 +80,7 @@
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
 ### [Audit policy violations and cases](../financials/general-ledger/audit-policy-violations-cases.md)
 
-## Cost management
+## [Cost management](../supply-chain/cost-management/cost-management-home-page.md)
 ### Standard cost
 #### [Prerequisites for standard costs](../supply-chain/cost-management/prerequisites-standard-costs.md)
 #### [Standard cost conversion overview](../supply-chain/cost-management/standard-cost-conversion-overview.md)
