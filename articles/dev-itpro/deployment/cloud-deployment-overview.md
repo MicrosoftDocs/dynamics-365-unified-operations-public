@@ -68,7 +68,7 @@ Here's how the lifecycle maps to the available environments.
 ## Features of the Finance and Operations production instance
 The Finance and Operations application production instance has the following capabilities.
 
-### Security and compliance
+## Security and compliance
 Dynamics 365 for Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
 All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
@@ -79,19 +79,32 @@ All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure ar
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
-#### Remote Desktop (RDP) lockdown
+## Remote Desktop (RDP)
+### Microsoft Managed environments
 Customers are now required to complete additional setup to connect to Dynamics 365 for Finance and Operations virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!NOTE]
 > Ensure that public IP addresses, such as a coffee shop location, are NOT configured.     
  
-> [!IMPORTANT]
-> By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
- 
-#### Windows Remoting (WinRM) lockdown
+### Partner/Customer Managed environments 
+By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
+
+## Windows Remoting (WinRM)
 Windows Remoting (WinRM) is disabled on all environments. Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommend that you do not do this.
 
-### Availability
+> [!IMPORTANT]
+> Customers need to ensure that RDP and WinRM endpoints are secured through explicit NSG rules as mentioned above. The NSG rules should adhere to the below conditions to ensure the environments are secure and the Intellectual Property is protected.
+> - NSG rules should **NOT** using star/zero, opening the environment to internet
+> - Wide IP address ranges should not be used.
+> - IP address ranges should restrict to the Customer's CORPNET 
+> - If computers outside the customer's CORPNET are used to connect to the Sandboxes, only IP addresses of the computers should be added.
+> - Azure Datacenter IP Address ranges should not be added
+
+> [!WARNING]
+> Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restrictied.
+> Microsoft reserves the right to and will remove any IP Address rules that are deemed not restrictive without providing notice.
+
+## Availability
 The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
@@ -135,3 +148,6 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 
 ### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 Sandbox environmnents?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
+
+### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
+Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop and Windows Remoting management endpoints to be restricted to specific IP Address sets. Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address ranges that are not deemed restrictive. You may not be able to Remote Desktop into your environment in the event your IP address is not in the access list, has changed from the IP address listed in the access list or if Microsoft deleted the IP address range. You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
