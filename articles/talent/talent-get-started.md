@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: Talent
-# ROBOTS: 
+# ROBOTS: HrmParameters, HcmSharedParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
