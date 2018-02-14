@@ -2,13 +2,13 @@
 # required metadata
 
 title: Asset library (LCS)
-description: This topic provides information abou the Asset Library functionality in Lifecycle Services (LCS).
+description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: manalidongre
 manager: AnnBe
 ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

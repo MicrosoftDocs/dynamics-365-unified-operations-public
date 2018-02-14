@@ -8,20 +8,20 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: Retail
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
@@ -59,9 +59,9 @@ At the store level, a configuration setting is available to determines whether a
 
 Be default, order lines assigned to a store are marked as **Accepted**. This means that it is assumed they will be fulfilled from the assigned store and will not be subject to further assignment. In certain cases, retailers may want to manually accept orders before they can be fulfilled. For example, if a store is short staffed and is unable to fulfill orders, a store manager will only accept as many orders for processing as they feel can adequately be processed in a given day. Until an order is accepted, it may be reassigned by the back office to a different store. In this way, order acceptance also provides a way to indicate that an order has been acknowledged by a store and will be fulfilled. 
 
-Order lines for store pickup are marked as always marked as **Pending** and are not subject to acceptance.
+Order lines for store pickup are marked as **Pending** and are not subject to acceptance.
 
-To turn on manual acceptance or order lines, navigate to **Retail** > **Channels** > **Retail stores** > **All retail stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**. 
+To turn on manual acceptance for order lines, navigate to **Retail** > **Channels** > **Retail stores** > **All retail stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**. 
 
 ### Enable reject order line capability
 
@@ -124,7 +124,7 @@ By default, orders will have a status of **Accepted**. Order status can be viewe
 
 **Pack** - The pack option supports two actions: **Print packing slip** will print a packing slip for the selected lines and **Mark as packed** will and mark the lines as packed and mark the lines as delivered in the back office. Only order lines that belong to the same order and have the same mode of delivery can be packed at the same time. Packing slip formats are controlled as part of receipt formats. For more information about how to set up receipt formats, see [Receipt templates and printing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Ship** - The ship action will mark selected lines as **Delivered** in the back office. After a line has been fully shipped, it will no longer appear in the store fulfillment view.
+**Ship** - The ship action will mark selected lines as **Delivered** in the back office. After a line has been fully shipped, it will no longer appear in the order fulfillment view.
 
 **Pickup** - The pickup action adds the lines to the transaction view for pickup. If there are other lines on the order that aren't currently being picked up, they will be added to the transaction view with quantity zero. After a line has been fully picked up, it will no longer appear in the order fulfillment view. 
 

@@ -3,9 +3,9 @@
 
 title: Fixed asset management workspace
 description: This topic provides information about the Fixed asset management workspace. This workspace shows information that is related to the fixed assets that are entered in the system. It includes a summary view and an analytics view.
-author: saraschi
+author: saraschi2
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  AssetWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 

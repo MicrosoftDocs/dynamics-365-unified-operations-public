@@ -5,7 +5,7 @@ title: Retail Channel Performance Power BI content
 description: This topic provides information about the Retail Channel Performance Power BI content for Dynamics AX 7.0 releases. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: ashishmsft
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+> [!Note]
+> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 This topic provides information about the Retail Channel Performance Power BI content for Dynamics AX. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 

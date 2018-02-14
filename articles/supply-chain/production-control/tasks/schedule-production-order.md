@@ -1,30 +1,30 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Schedule a production order
-description: This procedure shows how to schedule a production order. 
+description: This procedure shows how to schedule a production order.
 author: johanhoffmann
-manager: AnnBe 
+manager: AnnBe
 ms.date: 11/11/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: yuyus
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Schedule a production order
 
@@ -56,4 +56,3 @@ This procedure shows how to schedule a production order. The demo data company u
     * The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.  
 6. Close the page.
 7. Close the page.
-

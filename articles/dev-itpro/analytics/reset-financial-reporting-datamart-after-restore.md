@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reset the Financial reporting data mart
-description: This topic describes how to reset the Financial reporting data mart.
-author: aolson
+title: Reset the Financial reporting data mart for Finance and Operations
+description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+author: aprilolson
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,9 +13,9 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: FinancialReports
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aloson
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions:
+This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
 
-- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.6.0 and later
-- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.0.10000.4 and later
+- Financial reporting release 7.2.6.0 and later
+- Financial reporting release 7.0.10000.4 and later
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
 
 To get Finance and Operations Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
@@ -47,6 +47,9 @@ To get Finance and Operations Financial reporting release 7.2.6.0, you can downl
 
 > [!NOTE]
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
+
+To find the version of report designer, watch this video:
+> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
@@ -152,7 +155,7 @@ The following Microsoft Windows services will have open connections to the Finan
 
 #### Download the latest MinorVersionDataUpgrade.zip package
 
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the[Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Select the correct data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
 
 An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
@@ -173,8 +176,13 @@ On the AOS computer, start Microsoft Windows PowerShell as an administrator, and
 F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
-Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>"
+Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
+ > [!NOTE]
+ > SkipMRTableReset preserves tree unit security if you are using it. 
+  - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
+
+
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
 

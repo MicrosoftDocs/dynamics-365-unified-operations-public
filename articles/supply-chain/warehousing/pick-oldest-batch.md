@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  WHSRFMenuItem
+ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis

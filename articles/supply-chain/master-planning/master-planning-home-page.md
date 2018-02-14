@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roxanadiaconu
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -84,6 +84,10 @@ Additional help is available as task guides inside Finance and Operations. To ac
 ### Webinars
 [Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
+### Tech conference recordings
+-  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
+-  [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
 
 
 

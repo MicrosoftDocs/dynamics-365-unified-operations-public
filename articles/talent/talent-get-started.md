@@ -8,13 +8,14 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: Talent
 # ROBOTS: HrmParameters, HcmSharedParameters
+# ms.search.form: HrmParameters, HcmSharedParameters
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma

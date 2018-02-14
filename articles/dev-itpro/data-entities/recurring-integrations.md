@@ -79,7 +79,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 
     - **File** – Your external integration will push individual files so that they can be processed via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     - **Data package** – You can push only data package files for processing. A data package is a new format that lets you submit multiple data files as a single unit that can be used in integration jobs.
-
+    - **Process messages in order** – You can enable this option to force sequential processing of incoming files in an import scenario. This option is only applicable to files and not data packages.
+    
 5. Select **Set processing recurrence**, and then, in the **Define recurrence** dialog box, set up a valid recurrence for your data job. 
 6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence. 
 

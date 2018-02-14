@@ -1,30 +1,30 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Start a production order
-description: This procedure shows how to start a production order on the shop floor. 
+description: This procedure shows how to start a production order on the shop floor.
 author: johanhoffmann
-manager: AnnBe 
+manager: AnnBe
 ms.date: 11/11/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: yuyus
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Start a production order
 
@@ -73,4 +73,3 @@ This procedure shows how to start a production order on the shop floor. Time and
 7. Click Post.
 8. Click OK.
     * In the Route card journal, the time spent on the individual operations is recorded. Good and error quantity can also be reported.  
-

@@ -2,7 +2,7 @@
 # required metadata
 
 title: My team mobile workspace
-description: This topic provides information about the My team mobile workspace, which lets mmanagers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Talent, Operations
+ms.search.scope: Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

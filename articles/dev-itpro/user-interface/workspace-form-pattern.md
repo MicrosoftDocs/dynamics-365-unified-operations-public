@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 
-# Usage
+## Usage
 
 Workspaces are a new concept, and are meant to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business “activity” that you want to support. An “activity” is less granular than a task and more granular than a legacy “area page.” A workspace is intended to provide a one-page overview of the activity, and to help users understand the current status, the upcoming workload, and the performance of the process or user. Users should be able to start the most typical tasks for the activity directly from the workspace. If possible, users should also be able to complete tasks directly in the workspace, based on the overview that they just received. Currently, there are two workspace patterns:
 
@@ -47,22 +47,22 @@ Workspaces are a new concept, and are meant to be the primary way that users nav
 
 The rest of this topic will focus on the Operational workspace pattern and the Tabbed Workspace pattern, as the original Workspace pattern is deprecated and should not be used.
 
-# Wireframe
+## Wireframe
 
-## Operational workspace
+### Operational workspace
 
 [![Workspace(1)](./media/workspace1.png)](./media/workspace1.png)
 
-## Tabbed workspace
+### Tabbed workspace
 
 [![Workspace(2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
 ## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
 
-# Model
+## Model
 
-## Operational workspace – High-level structure
+### Operational workspace – High-level structure
 
 - Design
 
@@ -76,7 +76,7 @@ The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activit
         - *Section PowerBI (TabPage) \[Optional\]* – This must use the [Section PowerBI](section-powerbi-subpattern.md) subpattern.
         - Section related links (TabPage) – This must use the [Section Related Links](section-related-links-subpattern.md) subpattern.
 
-## Tabbed workspace – High-level structure
+### Tabbed workspace – High-level structure
 
 - Design
 
@@ -107,7 +107,7 @@ The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activit
 - [Form Part Section List](section-list-form-pattern.md)
 - [Section Chart](section-chart-form-pattern.md)
 
-# UX guidelines
+## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   Standard form guidelines
@@ -129,15 +129,15 @@ The verification checklist shows the steps for manually verifying that the form 
         -   Only a single field can be put under the page title
         -   The remaining filters must be in a workspace configuration dialog.
 
-# Example
+## Example
 
-## Operational workspace
+### Operational workspace
 
 Form: **FMClerkWorkspace** 
 
 [![Workspace(3)](./media/workspace3.png)](./media/workspace3.png)
 
-# Frequently asked questions
+## Frequently asked questions
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 

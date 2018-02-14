@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -25,7 +24,7 @@ ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
 ms.search.region: global
 # ms.search.industry: 
 ms.author: janeaug
-ms.search.validFrom: Feb-16
+ms.search.validfrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -59,5 +58,7 @@ The following table explains the components of the naming convention.
 
 For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder.md).
 
+## Additional resources
 
+- [Localization and regulatory features](country-region.md)
 

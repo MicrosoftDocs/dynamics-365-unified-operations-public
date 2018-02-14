@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade in a sandbox environment
-description: This topic explains how to perform a data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
+title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
+description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Data upgrade in a sandbox environment
+# Upgrade from AX 2012 - Data upgrade in a sandbox environment
 
 [!include[banner](../includes/banner.md)]
 

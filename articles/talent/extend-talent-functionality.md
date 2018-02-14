@@ -8,12 +8,12 @@ manager: AnnBe
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: UserDefinedAppSetup
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

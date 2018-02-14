@@ -8,20 +8,20 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: Retail
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
@@ -64,9 +64,9 @@ processing. You can clear selected lines by clicking the same line again.
 
 ## Line details
 
-Line details can be shown using the line details flyout menu. When this menu is used, two tabs are provided to show additional
+Line details can be shown using the line details flyout menu. When this menu is used, three tabs are provided to show additional
 information for the selected line. The first tab, **Line details** shows details for the line itself such as quantity ordered and remaining. Additional details are provided including quantity picked, packed, and invoiced as well as mode of
-delivery and delivery address. The **Order details** tab provides order header information including customer, customer ID, order number, order total, and balance.
+delivery and delivery address. The **Order details** tab provides order header information including customer, customer ID, order number, order total, and balance. The **Inventory** tab shows information for the selected line in terms of physical available inventory, reserved inventory and ordered inventory.
 
 If multiple lines are selected, the order line details flyout menu will only indicate that multiple lines are selected. To show details for a single line, clear the lines until only one line remains. 
 

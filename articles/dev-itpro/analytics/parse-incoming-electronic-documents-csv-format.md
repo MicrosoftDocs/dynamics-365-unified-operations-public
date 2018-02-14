@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.3.0, UnifiedOperations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
-ms.dyn365.ops.version: AX 7.3.0
+ms.dyn365.ops.version: 7.3
 
 ---
 # Parse incoming documents in CSV format

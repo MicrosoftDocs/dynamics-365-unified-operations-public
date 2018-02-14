@@ -5,7 +5,7 @@ title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
 author: cvocph 
 manager: AnnBe
-ms.date: 2/01/2018
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelLi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: cvocph
+ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -39,8 +39,7 @@ This topic describes how to define and configure warehouse app field names and p
 
 **Note:** This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Finance and Operations - Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Finance and Operations - Warehousing. For detailed information about how to configure the connection to Finance and Operations  - Warehousing, refer to the tutorial [Install and configure Finance and Operations - Warehousing](install-configure-warehousing-app.md).
 
-Configure warehouse app field names
-===================================
+## Configure warehouse app field names
 
 When you use Finance and Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page. In a new company in Finance and Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
 
@@ -73,8 +72,7 @@ When you use Finance and Operations - Warehousing on your mobile device, you can
 </tbody>
 </table>
 
-Configure warehouse app field priority
-======================================
+## Configure warehouse app field priority
 
 On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When Finance and Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
 

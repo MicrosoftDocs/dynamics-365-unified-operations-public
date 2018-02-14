@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.assetid: 

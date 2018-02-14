@@ -47,7 +47,7 @@ The app is available on Android and Windows operating systems. To use this app, 
 
 | Platform                    | Version                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
@@ -93,8 +93,8 @@ You must configure the app on the device to connect to the Finance and Operatio
 1.  In the app, go to **Connection settings**.
 2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Enter the following information: 
-    + **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". 
-    + **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client ID** - The client ID is obtained in step 9 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client secret** - The client secret is obtained in step 11 in "Create a web service application in Active Directory". 
     + **Azure Active directory resource** - The Azure AD directory resource depicts the Finance and Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
     + **Azure Active directory tenant** - The Azure AD directory tenant used with the Finance and Operations server: https://login.windows.net/your-AD-tenant-ID. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
     <br>**Note**: Do not end this field with a forward slash character (/). 

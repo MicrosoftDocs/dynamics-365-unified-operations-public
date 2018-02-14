@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -47,7 +47,7 @@ Many frequently used tools that will help you perform these actions are availabl
 Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
 
 For details, see:
-- [Register an application with AAD](services-home-page.md#register-an-application-with-aad)
+- [Register an application with AAD](services-home-page.md#register-a-native-application-with-aad)
 - [Register your external application in Finance and Operations](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## Query Finance and Operations OData by using Postman
