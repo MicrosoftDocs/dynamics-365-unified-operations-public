@@ -50,7 +50,7 @@ The Go-live assessment/review is part of the [Microsoft FastTrack program](../ge
 
 ## I want to request my production environment. Who do I contact for a Go-live assessment/review?
 
-If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-Go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
+If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
@@ -61,7 +61,7 @@ The **Production** button in LCS is available only after you've completed the **
 
 ## My sandbox environment is currently on a platform update that is set to expire in two months. Can I request a production environment that has the latest platform update?
 
-No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the application and platform versions that you select must match the application and platform versions of the sandbox environment where you signed off on your solution. Hence, you must first apply the latest platform update to your sandbox environment, test it, and sign off.
+No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the application and platform versions that you select must match the application and platform versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest platform update to your sandbox environment, test it, and sign off.
 
 For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
@@ -84,7 +84,7 @@ Yes. As long as the status of the production environment is **Queued**, you can 
 
 ## How long does it take to deploy my production environment?
 
-After the Pre-Go-live review with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within 48 hours.
+After the Go-live assessment with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within 48 hours.
 
 ## What level of access do I have in my Finance and Operations production environment? Can I sign in to the VM?
 
