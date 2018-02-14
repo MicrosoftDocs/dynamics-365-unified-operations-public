@@ -571,10 +571,10 @@
 
 ## Hotfixes
 ### [Download hotfixes from Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
-### [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
+### [Apply updates to a cloud environment](deployment/apply-deployable-package-system.md)
 ### [Install a metadata hotfix](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Patch Reporting Services in a one-box environment](migration-upgrade/patch-reporting-service-environment.md)
-### [Update Visual Studio development tools](update-development-tools.md)
+### [Update Visual Studio development tools](dev-tools/update-development-tools.md)
 
 ## Deprecations
 ### [Deprecated APIs](migration-upgrade/deprecated-apis.md)
