@@ -54,7 +54,7 @@ Product name |	Version |	File format supported |	Note
 --- | --- | --- | ---
 **Dynamics AX 2012**	| All versions	| .ktd, .ald	|
 **Dynamics 365 for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
-**Dynamics 365 for Retail | All versions | .label.txt |
+**Dynamics 365 for Retail** | All versions | .label.txt |
 **Dynamics CRM**	| 2011-2016 |	.resx, .js	|
 **Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf |	.txt, .xml and .xlf are in NAV-specific formats
 
