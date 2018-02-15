@@ -96,8 +96,8 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 6. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
 
     ```
-    PS Cert:\LocalMachine\My> cd Cert:\LocalMachine\My
-    PS Cert:\LocalMachine\My> Get-ChildItem | Where-Object { $_.Subject -like "CN=TestAuthCert" }
+    cd Cert:\LocalMachine\My
+    Get-ChildItem | Where-Object { $_.Subject -like "CN=TestAuthCert" }
     ```
 
     [![Thumbprint of the installed certificate](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
@@ -206,9 +206,9 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-For this step, you must have a developer topology. Follow the instructions in the previous section. You must follow these additional steps to establish trust between your developer topology and/or the Visual Studio Online test agent.
+Up to this point, these instructions have made the assumption that you have a developer topology where the AOS machine is also your development machine.  If you would like to test a sandbox environment, you must follow these additional steps to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
 
-1. Establish a Remote Desktop connection to your AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
+1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
 
     [![Updated wif.config file](./media/wif-updated.jpg)](./media/wif-updated.jpg)
@@ -293,7 +293,7 @@ This issue can occur if trust hasn't been established with the LocalHostSSL cert
 
 ### Zoom factor
 
-This issue occurs during single-user tests. 
+This issue only impacts single-user tests. 
 
 #### Error example
 
@@ -310,7 +310,7 @@ In Internet Explorer, you can change the zoom factor to 100 percent by changing 
  
 Depending on the version of the local machine that is used, before you start the Remote Desktop Protocol (RDP) session, you might have to select **Change the size of text, apps and other items**. This field is available in **Display settings** in Microsoft Windows. 
  
-If those steps don't work, try to change the size of your remote desktop before you start the RDP session, so that the default zoom level in Internet Explorer is 100 percent. This is required only for single-user tests.
+If those steps don't work, try to change the size of your remote desktop before you start the RDP session, so that the default zoom level in Internet Explorer is 100 percent.
 
 ### Certificate thumbprint errors
 
@@ -328,7 +328,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 You might receive the error message for several reasons:
 
-- The certificate thumbprint that you copied into the CloudEnvironment.Config and wif.config files includes invisible Unicode characters. To determine whether the thumbprint contains invisible Unicode characters, paste it into a Unicode code converter, and see whether extra characters appear in the **HTML/XML** field.
+- The certificate thumbprint that you copied into the CloudEnvironment.Config and wif.config files includes invisible Unicode characters. To determine whether the thumbprint contains invisible Unicode characters, paste it into a Unicode code converter, and see whether extra characters appear in the **HTML/XML** field. For example, you may use the following unicode converter: https://r12a.github.io/apps/conversion/
 
     ![Unicode code converter](./media/sdk_unicode_code_converter.jpg)
  
@@ -339,7 +339,7 @@ You might receive the error message for several reasons:
     Get-ChildItem | Where-Object { $_.Subject -like "CN=<name of your certificate>" }
     ```
 
-    If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. Therefore, you must install it by following the steps earlier in this topic.
+    If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. To fix the issue, copy and install the .cer file that you created earlier in this topic to the AOS machine.
  
 - If this issue occurs when you run load tests, the setup scripts might not have installed the corresponding .pfx file correctly. Verify that the password that is specified in the CloudCtuFakeACSInstall.cmd file matches the password that was set when the certificate was created.
  
@@ -363,12 +363,12 @@ This issue occurs when the host that is specified in the CloudEnvironment.Config
  
 In the CloudEnvironment.Config file, review the values that are specified by the following keys.
 
-- &lt;ExecutionConfigurations Key="HostName" Value="web address of host" /&gt;
-- &lt;ExecutionConfigurations Key="SoapHostName" Value="web address of SOAP" /&gt;
+- &lt;ExecutionConfigurations Key="HostName" Value="&lt;web address of host&gt;" /&gt;
+- &lt;ExecutionConfigurations Key="SoapHostName" Value="&lt;web address of SOAP&gt;" /&gt;
 
-The web addresses that are specified by these keys must be the environment that you're testing. Make sure that you can open this web address in a web browser from your developer machine.
+The web addresses that are specified by these keys must be the environment that you're testing. Make sure that you can open the web address specified by the **HostName** key in a web browser from your developer machine.
 
-For online load tests, the environment that is specified by the **HostName** field in the CloudEnvironment.Config file must be publicly accessible from any machine. Therefore, for a one-box environment, you won't be able to use run a load test by using Visual Studio Online.
+For online load tests, the environment that is specified by the **HostName** field in the CloudEnvironment.Config file must be publicly accessible from any machine. Therefore, you won't be able to run the load test using Visual Studio Online to test a one-box environment since the endpoint won't be accessible outside of the one-box environment.
 
 ### Users can't be enumerated
 
@@ -382,9 +382,12 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### Solution
 
-The user who is specified as **SelfMintingAdminUser** must be a member of the System Administrator role. This issue occurs when the incorrect user is specified as **SelfMintingAdminUser**. To verify that you've specified the correct user, you can sign in to the endpoint and view the user's roles.
+There are two scenarios that can cause this error:
+- The user who is specified as **SelfMintingAdminUser** must be a member of the System Administrator role. This issue occurs when the **SelfMintingAdminUser** is a user that is not assigned the System Administrator role. To verify that you've specified the correct user, you can sign in to the endpoint and view the user's roles.
 
 ![Admin user](./media/sdk_admin.png)
+
+- The user who is specified as **SelfMintingAdminUser** has a provider other than "https://sts.windows-ppe.net/" or "https://sts.windows.net/". Sometimes the admin user will have a company specific domain included in the provider field. To work around this issue, create a user in AX with any name and email. Assign this new user the System Administrator role.  You do not need to link this user to a real Azure Active Directory user. Specify this new admin user as the **SelfMintingAdminUser** in the CloudEnvironment.config
 
 ### Forbidden request that has the Anonymous client authentication scheme
 
@@ -414,8 +417,8 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 This issue occurs when the AOS endpoint can't validate the thumbprint of the certificate that you created. There are two possible causes:
 
-- The certificate wasn't installed on the AOS machine. To fix the issue, copy the .cer file that you created earlier in this topic to the AOS machine. Make sure that you install the .cer file in the **Trusted Root Certification Authorities** store on the AOS machine.
-- The thumbprint of the certificate wasn't added to the wif.config file on the AOS machine. To fix the issue, see the section that describes the lines that must be added to the wif.config file. Be sure to perform IISRESET after you modify the wif.config file.
+- The certificate wasn't installed on the AOS machine. To fix the issue, copy and install the .cer file that you created earlier in this topic to the AOS machine.
+- The thumbprint of the certificate wasn't added to the wif.config file on the AOS machine. To fix the issue, see step 8 of the "Run a single-user performance test by using the Performance SDK" section for details on how to add the certificate to the wif.config file. Be sure to restart IIS after you modify the wif.config file.
  
 ### MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is missing from the deployment items
 
@@ -433,7 +436,7 @@ This issue occurs when the system can't find the MS.Dynamics.Test.Team.Foundatio
 
 &lt;solution path&gt;\\TestResults\\&lt;your test run&gt;\\Out
 
-If the file is missing, add it to the deployment items in the test settings, as described in the solution for issue 6.
+If the file is missing, add it to the deployment items in the test settings.
  
 Note that there are two files that have very similar names. The name of one file ends in **\*.dll**, and the name of the other file ends in **\*.dll.config**. The **\*.dll.config** file must be in the deployment items in the test settings.
  
