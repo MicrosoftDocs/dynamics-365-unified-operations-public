@@ -5,7 +5,7 @@ title: Shift and cash drawer management
 description: This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -105,25 +105,25 @@ A shared shift is used in an environment where multiple cashiers share a cash dr
 10. Use the **Close shift** operation to close the shared shift.
 
 ## Shift operations
-Various actions can be taken to change the state of a shift or to increase or decrease the amount of money in the drawer.  The section below describes these shift operations for Dynamics 365 for Retail Modern POS and Cloud POS.
+Various actions can be taken to change the state of a shift or to increase or decrease the amount of money in the drawer. The section below describes these shift operations for Dynamics 365 for Retail Modern POS and Cloud POS.
 
 **Open shift**
 
 POS requires that a user has an active, open shift to perform any operations that would result in a financial transaction such as a sale, return, or customer order.  
 
-When logging into the POS, the system first checks to see if the user has an active shift available on the current register.  If not, the user can then choose to open a new shift, resume an existing shift, or continue to login in “non-drawer” mode, depending on the system configuration and their permissions.
+When logging into the POS, the system first checks to see if the user has an active shift available on the current register. If not, the user can then choose to open a new shift, resume an existing shift, or continue to login in “non-drawer” mode, depending on the system configuration and their permissions.
 
 **Declare start amount**
 
-This operation is often the first action that is taken a newly opened shift.  Users specify the starting cash amount in the drawer for the shift.  This is important because the over/short calculation that occurs when closing a shift accounts for this amount.
+This operation is often the first action that is taken a newly opened shift. Users specify the starting cash amount in the drawer for the shift. This is important because the over/short calculation that occurs when closing a shift accounts for this amount.
 
 **Float entry**
 
-Float entries are non-sales transactions that are performed in an active shift that increases the amount of the cash in the drawer.  A common example of a float entry would be to add additional change to the drawer when it is running low.
+Float entries are non-sales transactions that are performed in an active shift and they increase the amount of the cash in the drawer. A common example of a float entry would be to add additional change to the drawer when it is running low.
 
 **Tender removal**
 
-Tender removals are non-sales transactions that are performed in an active shift to reduce the amount of the cash in the drawer.  This is most commonly used in conjunction with a float entry on a different shift.  For example, Register 1 is running low on change, so the user on Register 2 performs a tender removal to reduce the drawer amount.  The user on Register 1 would then perform a float entry to increase their amount.
+Tender removals are non-sales transactions that are performed in an active shift to reduce the amount of the cash in the drawer. This is most commonly used in conjunction with a float entry on a different shift. For example, Register 1 is running low on change, so the user on Register 2 performs a tender removal to reduce the drawer amount. The user on Register 1 would then perform a float entry to increase their amount.
 
 **Suspend shift**
 
@@ -137,33 +137,26 @@ This operation allows a user to resume a previously suspended shift on a registe
 
 **Tender declaration**
 
-The tender declaration is action the user takes to specify the amount of total money currently in the drawer, most often before closing the shift.  This is the value that is compared against the expected shift to calculate the over/short amount.
+The tender declaration is action the user takes to specify the amount of total money currently in the drawer, most often before closing the shift. This is the value that is compared against the expected shift to calculate the over/short amount.
 
 **Safe drop**
 
-Safe drops can be performed at any time on an active shift.  This operation removes money from the drawer, so it can be transferred to a more secure location such as a safe in the back room.  The total amount recorded for safe drops are still included in the shift totals, but do not need to be counted as part of the tender declaration.
+Safe drops can be performed at any time on an active shift. This operation removes money from the drawer, so it can be transferred to a more secure location such as a safe in the back room. The total amount recorded for safe drops is still included in the shift totals, but doesn't need to be counted as part of the tender declaration.
 
 **Bank drop**
 
-Like safe drops, bank drops are also performed on active shifts.  This operation removes money from the shift to prepare for the bank deposit.
+Like safe drops, bank drops are also performed on active shifts. This operation removes money from the shift to prepare for the bank deposit.
 
 **Blind close shift**
 
-A blind closed shift is a shift that is no longer active but has not been fully closed.  Blind closed shifts cannot be resumed like a suspended shift but closing procedures such as tender declarations and bank drops can be performed at a later time or from a different register.
+A blind closed shift is a shift that is no longer active but has not been fully closed. Blind closed shifts can't be resumed like a suspended shift, but closing procedures such as tender declarations and bank drops can be performed at a later time or from a different register.
 
 Blind closed shifts are often used to free up a register for a new user or shift, without having to fully count, reconcile, and close this shift first. 
 
 **Close shift**
 
-This operation calculates shift totals, over/short amounts, and then finalizes an active or blind closed shift.  Closed shifts cannot be resumed or modified.  
+This operation calculates shift totals, over/short amounts, and then finalizes an active or blind closed shift. Closed shifts cannot be resumed or modified.  
 
 **Manage shifts**
 
-This operation allows users to view all active, suspended, and blind closed shifts for the store.  This is where users can perform their final closing procedures such as tender declaration and close shifts for blind closed shifts.
-This operation will also allow users to view and delete invalid shifts in the rare event that a shift is left in a bad state after switching between offline and online modes.  These invalid shifts do not contain any financial information or transactional data needed for reconciliation. 
-
-
-
-
-
-
+This operation allows users to view all active, suspended, and blind closed shifts for the store. Users can perform their final closing procedures such as tender declaration and close shifts for blind closed shifts. This operation will also allow users to view and delete invalid shifts in the rare event that a shift is left in a bad state after switching between offline and online modes. These invalid shifts do not contain any financial information or transactional data needed for reconciliation. 
