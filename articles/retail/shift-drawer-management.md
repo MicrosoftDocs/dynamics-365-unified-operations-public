@@ -149,7 +149,7 @@ Like safe drops, bank drops are also performed on active shifts. This operation 
 
 **Blind close shift**
 
-A blind closed shift is a shift that is no longer active but has not been fully closed. Blind closed shifts can't be resumed like a suspended shift, but closing procedures such as tender declarations and bank drops can be performed at a later time or from a different register.
+A blind closed shift is a shift that is no longer active but has not been fully closed. Blind closed shifts can't be resumed like a suspended shift, but procedures such as declare staring amounts and tender declarations can be performed at a later time or from a different register.
 
 Blind closed shifts are often used to free up a register for a new user or shift, without having to fully count, reconcile, and close this shift first. 
 
@@ -159,4 +159,4 @@ This operation calculates shift totals, over/short amounts, and then finalizes a
 
 **Manage shifts**
 
-This operation allows users to view all active, suspended, and blind closed shifts for the store. Users can perform their final closing procedures such as tender declaration and close shifts for blind closed shifts. This operation will also allow users to view and delete invalid shifts in the rare event that a shift is left in a bad state after switching between offline and online modes. These invalid shifts do not contain any financial information or transactional data needed for reconciliation. 
+This operation allows users to view all active, suspended, and blind closed shifts for the store. Depending on their permissions, users can perform their final closing procedures such as tender declaration and close shifts for blind closed shifts. This operation will also allow users to view and delete invalid shifts in the rare event that a shift is left in a bad state after switching between offline and online modes. These invalid shifts do not contain any financial information or transactional data needed for reconciliation. 
