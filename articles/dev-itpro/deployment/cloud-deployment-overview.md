@@ -151,9 +151,9 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelisted). Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address ranges that violate the above rules, immediately without providing notice. You may not be able to Remote Desktop into your environment in the event 
-- your IP address is not in the access list
-- has changed from the IP address listed in the access list or 
-- if Microsoft deleted the whitelisted IP address range.
+Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelisted). Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice. You may not be able to Remote Desktop into your environment in the event 
+- your IP address is not in the whitelist
+- has changed from the IP address listed in the whitelist or 
+- if Microsoft deleted the rule containing your IP address from the whitelist.
 
 You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
