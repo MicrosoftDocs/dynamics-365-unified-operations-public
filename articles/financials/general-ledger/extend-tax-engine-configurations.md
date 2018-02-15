@@ -243,13 +243,13 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 
 #### Method 2: Data mapping using the ER model mapping designer
 Before you use this method, be sure that you are familiar with ER and the table relation, class, and method for purchase orders. 
-1. Open the model mapping design for a purchase order, add table records **PurchLine** as a root data source.
+1. Open the model mapping designer for a purchase order, add table records **PurchLine** as a root data source.
 ![Purchline extension](media/gte-extension-purchline.png)
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
 ![Add enumerations](media/gte-extension-add-enumerations.png)
-3. Add a calculated field **$PurchLine** in to the purchase order to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
+3. Add a calculated field **$PurchLine** in to the purchase order\Lines to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
 ![Edit formula](media/gte-extension-edit-formula.png)
-4. Input the formula that describe the relationship between **PurchLine** and **purchase order**.
+4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId)```
 ![Add formula](media/gte-extension-add-formula.png)
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
