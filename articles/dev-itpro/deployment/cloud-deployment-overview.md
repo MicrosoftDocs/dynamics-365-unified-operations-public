@@ -81,20 +81,20 @@ All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure ar
 
 ## Remote Desktop (RDP)
 ### Microsoft Managed environments
-Customers are now required to complete additional setup to connect to Dynamics 365 for Finance and Operations virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
+Customers are now required to complete additional setup to connect to Dynamics 365 for Finance and Operations virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (whitelisted) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
-> Customers need to ensure that RDP and WinRM endpoints are secured through explicit NSG rules as mentioned above. The NSG rules should adhere to the below conditions to ensure the environments are secure and the Intellectual Property is protected.
-> - NSG rules should **NOT** use star/zero, opening the environment to internet
-> - Wide IP address ranges should not be used.
-> - IP address ranges should restrict to the Customer's CORPNET 
-> - If computers outside the customer's CORPNET are used to connect to the Sandboxes, only IP addresses of the computers should be added.
-> - Azure Datacenter IP Address ranges should not be added
-> - Public IP addresses, such as a coffee shop location should NOT be configured.     
+> Customers need to ensure that RDP endpoints are secured through explicit IP whitelist rules as mentioned above. The IP whitelist rules must adhere to the below conditions to ensure the environments are secure and the Intellectual Property is protected.
+> - IP whitelist rules must NOT use star/zero, opening the environment to internet
+> - Wide IP address ranges must NOT be used.
+> - IP address ranges must restrict to the Customer's CORPNET 
+> - If computers outside the customer's CORPNET (e.g. a home office) are used to connect to the Sandbox environment(s), only the specific IP addresses of the computers used to connect to the sandbox environment(s) must be added.
+> - Azure Datacenter IP Address ranges must NOT be added
+> - Public IP addresses, such as a coffee shop location must NOT be configured.     
 
 > [!WARNING]
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
-> Microsoft reserves the right to and will remove any IP Address rules that are deemed not restrictive without providing notice.
+> Microsoft reserves the right to and will remove any IP Address rules that violate the above rules without providing notice.
  
 ### Partner/Customer Managed environments 
 By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
@@ -151,4 +151,8 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop and Windows Remoting management endpoints to be restricted to specific IP Address sets. Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address ranges that are not deemed restrictive. You may not be able to Remote Desktop into your environment in the event your IP address is not in the access list, has changed from the IP address listed in the access list or if Microsoft deleted the IP address range. You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
+Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelisted). Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address ranges that violate the above rules, immediately without providing notice. You may not be able to Remote Desktop into your environment in the event 
+> - your IP address is not in the access list
+> - has changed from the IP address listed in the access list or 
+> - if Microsoft deleted the whitelisted IP address range. 
+You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
