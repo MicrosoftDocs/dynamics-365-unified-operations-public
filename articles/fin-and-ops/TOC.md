@@ -74,15 +74,15 @@
 ## [Understand the implementation lifecycle](imp-lifecycle/implementation-lifecycle.md)
 ### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Onboarding](imp-lifecycle/onboard.md) 
-### [Preparing for go-live](imp-lifecycle/prepare-go-live.md) 
+### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
+### [Go-live FAQ](imp-lifecycle/go-live-faq.md)
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
 ### [Audit policy violations and cases](../financials/general-ledger/audit-policy-violations-cases.md)
 
 ## [Cost management](../supply-chain/cost-management/cost-management-home-page.md)
-### Standard cost
-#### [Prerequisites for standard costs](../supply-chain/cost-management/prerequisites-standard-costs.md)
+### [Standard cost](../supply-chain/cost-management/prerequisites-standard-costs.md)
 #### [Standard cost conversion overview](../supply-chain/cost-management/standard-cost-conversion-overview.md)
 #### [Prerequisite for a standard cost conversion](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
 #### [Manage standard cost update](../supply-chain/cost-management/manage-standard-cost-updates.md)
@@ -92,11 +92,10 @@
 #### [Update standard cost for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
 #### [Update standard cost in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
 #### [Prepare to maintain standard costs for manufactured items](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
-### Predetermined cost
+### [Predetermined cost](../supply-chain/cost-management/costing-versions.md)
 #### [Costing sheet](../supply-chain/cost-management/costing-sheets.md)
-#### [Costing version](../supply-chain/cost-management/costing-versions.md)
 #### [Simulate cost change by using a costing version for planned cost](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
-### Inventory accounting
+### [Inventory accounting](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [Cost object](../supply-chain/cost-management/cost-object.md)
 #### [View cost object balance (task guide)](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
 #### [View inventory statement and KPI by cost object (task guide)](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
@@ -116,7 +115,7 @@
 #### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
 #### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 #### [Adjust on-hand inventory cost value](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
-### Manufacturing accounting
+### [Manufacturing accounting](../supply-chain/cost-management/production-order-cost-analysis.md)
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
 #### [BOM calculation group](../supply-chain/cost-management/bom-calculation-groups.md)
 #### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
@@ -132,8 +131,7 @@
 #### [Set up a product that can be produced or procured](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Total cost allocation method](../supply-chain/cost-management/methodology-total-cost-allocation.md)
 #### [Amortize constant costs for a manufactured item](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
-### Power BI content pack
-#### [Cost management content pack](../dev-itpro/analytics/cost-management-content-pack.md)
+### [Cost management Power BI content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Data integration
 ### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)

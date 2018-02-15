@@ -45,3 +45,6 @@ These topics describe the programs, tools, and processes available related to th
 [Onboarding your implementation project](onboard.md)
 
 [Preparing for go-live](prepare-go-live.md) 
+
+## Frequently asked questions
+[Go-live FAQ](go-live-faq.md)
