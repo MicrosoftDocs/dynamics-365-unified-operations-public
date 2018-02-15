@@ -80,7 +80,7 @@ All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure ar
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
 ## Remote Desktop (RDP)
-### Microsoft Managed environments
+### Microsoft managed environments
 Customers are now required to complete additional setup to connect to Dynamics 365 for Finance and Operations virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (whitelist) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
@@ -96,14 +96,14 @@ Customers are now required to complete additional setup to connect to Dynamics 3
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
 > Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice.
  
-### Partner/Customer Managed environments 
+### Partner/Customer managed environments 
 By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
 
 ## Windows Remoting (WinRM)
 Windows Remoting (WinRM) is disabled on all environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommend that you do not do this.
 
 > [!WARNING]
-> Exceptions to enable WinRM will **not** be granted for any Microsoft-managed environments. 
+> Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
 The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
@@ -151,9 +151,9 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelist). Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice. You may not be able to Remote Desktop into your environment for one of these reasons 
-- Your current IP address is not in the whitelist
-- Your IP has changed from the IP address listed in the whitelist or 
+Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelist). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address whitelist rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
+- Your current IP address is not in the whitelist.
+- Your IP has changed from the IP address listed in the whitelist. 
 - Microsoft deleted the rule containing your IP address from the whitelist because it violated a guideline.
 
-You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
+To regain access to the environment, you will need to add the IP address of the computer from which you are connecting. To do this, complete the steps in the section, [Remote Desktop (RDP)](cloud-deployment-overview.md#remote-desktop-(RDP)) earlier in this document.
