@@ -3,7 +3,7 @@
 
 title: Performance SDK and multiuser testing via Visual Studio Online
 description: This tutorial introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. It also shows how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
-author: margoc
+author: jujoh
 manager: AnnBe
 ms.date: 02/15/2018
 ms.topic: article
