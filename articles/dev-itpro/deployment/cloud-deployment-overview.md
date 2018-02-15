@@ -128,7 +128,7 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
-## How do I access a development instance
+### How do I access a development instance?
 
 See [Access instances](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
 
