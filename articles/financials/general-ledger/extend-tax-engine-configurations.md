@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
-ms.date: 12/15/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -247,9 +247,10 @@ Before you use this method, be sure that you are familiar with ER and the table 
 ![Purchline extension](media/gte-extension-purchline.png)
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
 ![Add enumerations](media/gte-extension-add-enumerations.png)
-3. Add a calculated field **$PurchLine** in to the purchase order\Lines to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
+3. In the **Data Source** tree, add a calculated field **$PurchLine** under **purchase order** > **lines**  to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
 ![Edit formula](media/gte-extension-edit-formula.png)
-4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
+4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: 
+```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
 ![Add formula](media/gte-extension-add-formula.png)
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
