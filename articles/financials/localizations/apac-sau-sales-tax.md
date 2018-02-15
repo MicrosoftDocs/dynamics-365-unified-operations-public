@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through setting up sales taxes for Saudi Arabia. Before you read this topic, it might be helpful to read [Sales tax overview](../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia](https://www.vat.gov.sa/). 
+This topic walks you through setting up sales taxes for Saudi Arabia. Before you read this topic, it might be helpful to read [Sales tax overview](../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia (Government website)](https://www.vat.gov.sa/). 
 
 ## Setting up sales tax for Saudi Arabia
 The following table lists the typical sales tax setup tasks with notes for sales tax in Saudi Arabia.
@@ -44,27 +44,25 @@ The following table lists the typical sales tax setup tasks with notes for sales
 | Set up ledger posting groups for sales tax.                     |                                        |[Set up ledger posting groups for sales tax](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md). |
 | Set up sales tax authorities.                                   | When you set up sales tax authorities pay attention to the **Report layout** field. When you create a new sales tax code and select **Settlement period,** the system fills in the corresponding field with the value from sales tax authority, which related to Sales tax settlement period selected in **Settlement period** field. If you fill in the **Vendor account** field, then during running **Settle and post sales tax** [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) for the sales tax authority the system transfers the amount that the company owes the sales tax authority for the period to the sales tax authority's vendoraccount. When an employee performs the company's usual payment routine, the payment to the sales tax authority is created along with payments to other vendors. Filled **Report layout** field is transferred to the corresponding field when you create a sales tax code.| [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)| |
 | Set up sales tax settlement periods.                            | In Saudi Arabia Taxable persons which make an annual taxable supply of goods and services in excess of SAR 40,000,000 will be required to file VAT returns monthly. All other taxable persons will be required to file VAT returns quarterly. However, such persons may elect to file monthly returns subject to approval by GAZT. **Period** field should be filled in according to company registration in Tax Authorities. |[Set up sales tax settlement periods](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)|
-| Set up sales tax reporting codes.                               |See [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) |[Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)|
-| Set up sales tax codes.                                         |                                 |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups)|
-| Set up sales tax groups.                                        |                  |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups)|
-| Set up item sales tax groups.                                   |  |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups)|
-| Set up sales tax parameters on the application parameter pages. |  ||
+| Set up sales tax reporting codes.                               |See [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) |[Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)||
+| Set up sales tax codes.                                         |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create sales tax codes for reverse charge operations](#create-sales-tax-codes-for-reverse-charge-operations)                                | [Sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)|
+| Set up sales tax groups and item sales tax groups                                        |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create a sales tax group for reverse charge](#create-sales-tax-group-for-reverse-charge)                 |[Sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)|
+| Set up sales tax parameters on the application parameter pages. | Enable reverse charge functionality on the **General ledger parameters** page. See [Reverse charges](#reverse-charges).   ||
 
 
 ### Sales tax reporting codes example for Saudi Arabia
-You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
+You can create report codes which might be necessary for analysis (E.g. details of legislation return and/or data disclosure). The following screenshot shows examples of reporting codes.
+
+![Sales tax reporting codes example](apac-sau-sales-tax-reporting-codes.png)
 
 ### Sales tax codes, sales tax groups, and item sales tax groups
 
-- [Sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)
-- [Sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)
-
-Tax type with values added for VAT type: Standard VAT, Reduced VAT, VAT 0%
+For Saudi Arabia, the following Tax type with values added for VAT type: Standard VAT, Reduced VAT, VAT 0%
 New value in Country/ Region field: GCC
 Translation of sales tax description (button Tax directive)
 
  
-You may set up, for example, one group named Domestic and include two sales tax codes in it (one sales tax code with rate 5% and another with rate 0%) and set up two item sales tax groups. Each group includes only one sales tax code.
+
 
 Sales tax group may be set up in Customer/ Vendor by default and Item sales tax group may be set up in Items by default when a user creates sales/purchase order the system transfers Sales tax group from customer to the header and lines and transfers Item sales tax group from item to the lines. But a user may change groups both in the header and in lines.
 
@@ -97,9 +95,7 @@ When you post an invoice with such setting, the system creates sales tax transac
 This setting allows you to analyze purchases from third countries by VAT rates.
 Example of sales tax transactions with different values of sales tax direction.
 
-
 ## Reverse charges
-
 
 ### Enable reverse charge
 You can enable the reverse charge functionality by setting the **Reverse charge** option to **Yes** on the **General ledger parameters** page.
