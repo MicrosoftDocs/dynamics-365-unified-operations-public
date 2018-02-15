@@ -108,7 +108,7 @@ Note: THe operations listed below apply to the latest version of Dynamics 365 fo
 | 703 | Lock register | Lock the current register, so that it can't be used, but don't sign the current user out. | No | No | No | Yes | No |
 | 701 | Log off | Sign the current user out of the register. | Yes | Yes | Yes | Yes | No |
 | 521 | Loyalty card points balance | Show the balance of points for the specified loyalty card. | Yes | Yes | No | No | No |
-| 918 | Manage shifts | Show a list of active, suspended and blind closed shifts. | Yes | Yes | Yes | No | No |
+| 918 | Manage shifts | Show a list of active, suspended, and blind closed shifts. | Yes | Yes | Yes | No | No |
 | 914 | Minimize POS window | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1000 | Open drawer | Perform a "no sale" operation, and open the currently selected cash drawer. | Yes | Yes | Yes | Yes | No |
 | 928 | Order fulfillment | This operation allows users to pick, pack, ship, or recall orders for store picked up. | Yes | Yes | Yes | No | No |
