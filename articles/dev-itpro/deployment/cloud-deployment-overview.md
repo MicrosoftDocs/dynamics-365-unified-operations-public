@@ -94,7 +94,7 @@ Customers are now required to complete additional setup to connect to Dynamics 3
 
 > [!WARNING]
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
-> Microsoft reserves the right to and will remove any IP Address rules that violate the above rules, immediately without providing notice.
+> Microsoft reserves the right to and will remove any IP Address whitelist rules that violate the above guidelines, immediately without providing notice.
  
 ### Partner/Customer Managed environments 
 By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
@@ -152,7 +152,8 @@ The Private AOS VMs were part of your environment configuration as they were nee
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
 Microsoft managedTier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (whitelisted). Microsoft regularly validates the environments are sufficiently restricted. Microsoft reserves the right to and will remove any IP Address ranges that violate the above rules, immediately without providing notice. You may not be able to Remote Desktop into your environment in the event 
-> - your IP address is not in the access list
-> - has changed from the IP address listed in the access list or 
-> - if Microsoft deleted the whitelisted IP address range. 
-> You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
+- your IP address is not in the access list
+- has changed from the IP address listed in the access list or 
+- if Microsoft deleted the whitelisted IP address range.
+
+You will need to add the IP address of your computer from which you are connecting by following the steps specified in the **Remote Desktop (RDP)** section in this document to regain access to the environment.
