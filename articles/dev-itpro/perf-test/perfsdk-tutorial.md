@@ -5,7 +5,7 @@ title: Performance SDK and multiuser testing via Visual Studio Online
 description: This tutorial introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. It also shows how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 author: margoc
 manager: AnnBe
-ms.date: 01/25/2018
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -206,7 +206,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-Up to this point, these instructions have made the assumption that you have a developer topology where the AOS machine is also your development machine.  If you would like to test a sandbox environment, you must follow these additional steps to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
+Up to this point, these instructions have made the assumption that you have a developer topology in which the AOS machine is also your development machine.  If you would like to test a sandbox environment, you must complete the following additional steps to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
 
 1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
@@ -276,20 +276,6 @@ You can now run performance tests against the topology.
     > While tests are being run, information about your system isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine and set up the Microsoft Azure portal to monitor Microsoft SQL Server usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
-
-### The web client is blank for a single-user test
-
-When the single-user test is run and opens a web client, a website might not be loaded. Instead, the web client is blank, and a white page shows the message, "This is the initial start page for the WebDriver server." The test times out and fails, and an error message is shown.
-
-#### Error example
-
-```
-Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
-```
-
-#### Solution
-
-This issue can occur if trust hasn't been established with the LocalHostSSL certificate that was installed in the **SSL Certificate Add Failed** section above. To establish trust, make sure that the LocalHostSSL.cer file has been installed in the **Trusted Root Certification Authorities** store.
 
 ### Zoom factor
 
