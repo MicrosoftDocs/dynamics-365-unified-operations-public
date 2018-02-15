@@ -135,5 +135,7 @@ No, not at this time. There are several dependencies on Azure capabilities that 
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
+### How many network printers can the Document Routing Agent support?
 
+The Document Routing Agent currently supports up to 50 network printers. If more then 50 network printers are required, then a pool of Document Routing Agents can be installed across several host machines.
 
