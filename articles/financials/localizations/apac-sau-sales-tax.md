@@ -53,7 +53,7 @@ The following table lists the typical sales tax setup tasks with notes for sales
 ### Sales tax reporting codes example for Saudi Arabia
 You can create report codes which might be necessary for analysis (E.g. details of legislation return and/or data disclosure). The following screenshot shows examples of reporting codes.
 
-![Sales tax reporting codes example](apac-sau-sales-tax-reporting-codes.png)
+![Sales tax reporting codes example](media/apac-sau-sales-tax-reporting-codes.png)
 
 ### Sales tax codes, sales tax groups, and item sales tax groups
 
