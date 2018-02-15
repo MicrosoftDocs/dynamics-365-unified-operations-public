@@ -126,15 +126,14 @@ Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax
 
 When you print an invoice, if your language is different than the language specified for the current legal entity, two invoices will be generated, one in Arabic and the other in the language that you selected on the **User options** page.
 
-## Sales tax payment by report code report
+## Sales tax payment by code report
 
-The diagram below shows how data may be collected in the **Sales tax payment by report code** report. 
-It is important to note that data is collected on the base of sales tax transactions. Therefore, if an invoice does not include tax transactions then this invoice will not be included in the report.  One report code may be selected in several sales tax codes and several report codes may be selected in one sales tax code in different fields. 
+The diagram below shows how data may be collected in the **Sales tax payment by code** report. It is important to note that data is collected on the base of sales tax transactions. Therefore, if an invoice does not include tax transactions then this invoice will not be included in the report.  One report code may be selected in several sales tax codes and several report codes may be selected in one sales tax code in different fields. 
 
 ![Sales tax payment by report code](media/apac-sau-sales-tax-diagram.png)
 
 ### Report setup
-Consider the following before you generate the **Sales tax payment by report code** report:
+Consider the following before you generate the **Sales tax payment by code** report:
 
 - 
 
@@ -142,9 +141,7 @@ Consider the following before you generate the **Sales tax payment by report cod
 
 ### Sales tax reporting codes
 
-You may create report codes in details which are necessary for analysis (for
-example, details of legislation return and/or data disclosure). You may consider
-this table only as an example.
+You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
 
 *Tax \> Setup \> Sales tax \> Sales tax reporting codes*
 
@@ -152,13 +149,10 @@ this table only as an example.
 
 ### Sales tax codes
 
-To include sales tax transactions in **Sales tax payments by report code**
-report, it is necessary to select report codes in the corresponding fields. in
-the **Report setup** and **Report setup – Credit note** areas in **Sales tax
-code** form.
+To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** form.
 
-*Note*: you may input Reporting codes in the sales tax code either before
-posting tax transactions or after posting tax transactions.
+> [!NOTE]
+> You may input Reporting codes in the sales tax code either before posting tax transactions or after posting tax transactions.
 
 *Tax \> Indirect taxes \> Sales tax \> Sales tax codes*
 
@@ -170,8 +164,7 @@ To run this report, please, open
 
 *Tax \> Inquiries and reports \> Sales tax reports \> Sales tax payment by code*
 
-The system collects data from sales tax transactions on **Report layout**
-specified in dialog form.
+The system collects data from sales tax transactions on **Report layout** specified in dialog form.
 
 ![](media/95b43ad71006eb64365cff8103b09f8c.png)
 
@@ -189,8 +182,6 @@ Example of the report:
 
 
 ## VAT returns
-
-
 
 [FAQ: VAT returns (English)](https://www.vat.gov.sa/en/e-services/vat-returns)
 [FAQ: VAT returns (Arabic)](https://www.vat.gov.sa/ar/e-services/vat-returns)
