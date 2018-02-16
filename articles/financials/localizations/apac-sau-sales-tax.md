@@ -72,24 +72,19 @@ The following diagram demonstrates one way that sales tax groups can be set up a
 
 ![Sales tax groups diagram](media/apac-sau-sales-tax-groups-diagram.png)
 
-In every sales tax code you should fill in (main sales tax settings): 
-1.	Type of tax (Standard VAT or VAT 0%)
-2.	Settlement period
-3.	Ledger posting codes
-4.	Calculation (firstly the settings by default may be used)
-5.	Report setup/ Report setup – Credit note
-When you select Settlement period the system automatically fills in Report layout field in the Report setup/ Report setup – Credit note areas.
+For each sales tax code enter the following: 
+- Type of tax (Standard VAT or VAT 0%)
+- Settlement period
+ > [!NOTE]
+ > When you select a settlement period the system automatically fills in the **Report layout** field.
+- Ledger posting codes
+- Calculation (firstly the settings by default may be used)
+- Report setup/ Report setup – Credit note
 
-Tax > Setup > Sales tax > Sales tax groups 
-And
-Tax > Indirect taxes > Sales tax > Item sales tax groups
-It is up to company accounting how it will be include sales tax codes in Sales tax groups and Item sales tax groups.
-Different Sales tax group settings may be for different operations. 
-For examples, for export operations, you may select **Exempt** check box and Select **Exempt code**. In this case, the system will create sales tax transaction with VAT equal to zero. But with the rate equal to 5% (Value field in sales tax transaction). It may be useful for analysis of export operations by VAT rates.   
+Your company's accounting practices will affect how you set up Sales tax groups and Item sales tax groups to include sales tax codes. 
+For example, an export operation might select the **Exempt** check box and Select **Exempt code**. In this case, the system will create sales tax transaction with VAT equal to zero. But with the rate equal to 5% (Value field in sales tax transaction). It may be useful for analysis of export operations by VAT rates.   
 
-The similar settings may be done for other exemption operations. 
-
-For import operations from third countries (VAT is paid at customs) you may use the following setting: 
+For import operations from third countries (VAT is paid at customs) you might use the following setting: 
 
 When you post an invoice with such setting, the system creates sales tax transaction with Use tax direction, but sales tax is not included in vendor liability. Sales transactions with Use tax direction are not taken into account when settling and posting sales taxes (see Settle and post sales tax), and depending on ledger posting setting (see Ledger posting groups) the system creates ledger transactions for this sales tax (see the screenshot below).
 This setting allows you to analyze purchases from third countries by VAT rates.
