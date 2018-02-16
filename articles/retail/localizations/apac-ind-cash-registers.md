@@ -60,7 +60,7 @@ The following table shows the navigation paths for the India tax entities in Ret
 
 ## Validate tax information for the retail store
 
-The tax information for the retail store comes from the selected retail warehouse. This warehouse is defined in the warehouse master. The configured tax information from the store is printed on the POS receipt. It's also updated on the retail sales order at the headquarters for the financial postings.
+The tax information for the retail store comes from the selected retail warehouse. This warehouse is defined in the warehouse master. The configured tax information from the store is printed on the POS receipt. It's also updated on the retail sales order at the retail headquarters for the financial postings.
 
 Follow these steps to view the tax information for a retail store.
 
@@ -122,7 +122,7 @@ You can set the **Update POS invoice number** option to **Yes** only if the exis
 
 ## Run a distribution schedule
 
-To synchronize Tax Engine (GTE) data from headquarters to the POS database, you must add a job to the **Distribution schedule** page.
+To synchronize Tax Engine (GTE) data from retail headquarter to the POS database, you must add a job to the **Distribution schedule** page.
 
 Follow these steps to verify that the job exists and to run the job.
 
@@ -225,7 +225,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 
 ### Scenario 2: Sell taxable goods to a consumer
 
-When you sell to unregistered customers, the sales are referred to as *business-to-consumer* (B2C) sales. Tax is calculated in the same manner for B2B and B2C sales. The customer will be selected as **Consumer** if the customer master is maintained with the address in Retail headquarters.
+When you sell to unregistered customers, the sales are referred to as *business-to-consumer* (B2C) sales. Tax is calculated in the same manner for B2B and B2C sales. 
 
 1. Sign in to the POS.
 2. Enter an item, and then select **Enter**.
@@ -379,35 +379,35 @@ When you sell to unregistered customers, the sales are referred to as *business-
     5. Select **Tax document**.
     6. Verify that the **Exempt** option is set to **Yes**.
 
-8. Return the transaction that has GST:
+### Scenario 5: Return the transaction that has GST:
 
-    1. Sign in to the POS.
-    2. Select **Show journal**.
-    3. Select the transaction, and then select **Return**.
-    4. Select **Select all** and then **Return**.
-    5. Verify that the GST calculation is done correctly, based on the selected original transactions that must be returned.
+1. Sign in to the POS.
+2. Select **Show journal**.
+3. Select the transaction, and then select **Return**.
+4. Select **Select all** and then **Return**.
+5. Verify that the GST calculation is done correctly, based on the selected original transactions that must be returned.
 
-        ![POS return transaction](media/apac-ind-gst-return-trx.png)
+    ![POS return transaction](media/apac-ind-gst-return-trx.png)
 
-    6. Select **Exact**.
+6. Select **Exact**.
 
-9. Validate the receipt.
+7. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-5.png)
+   ![Receipt example](media/apac-ind-gst-receipt-5.png)
 
-10. Validate the retail sales invoice in Retail headquarters:
+8. Validate the retail sales invoice in Retail headquarters:
 
     1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
     2. Run job **P-0001** (**Channel transactions**).
     3. Close the page.
 
-11. Post the statement:
+9. Post the statement:
 
     1. Go to **Retail** \> **Channels** \> **Retail stores** \> **Open statements**.
     2. Create a statement.
     3. Select **Calculate statement** and then **Post statement**.
 
-12. Validate the voucher transactions:
+10. Validate the voucher transactions:
 
     1. Go to **Retail** \> **Customers** \> **All sales orders**.
     2. Select the sales invoice.
