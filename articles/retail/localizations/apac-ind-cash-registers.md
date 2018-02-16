@@ -138,6 +138,7 @@ The following example scenarios walk you through sample transactions for India:
 - Scenario 2: Sell taxable goods to a consumer
 - Scenario 3: Sell taxable goods to an anonymous customer where GST is price-inclusive
 - Scenario 4: Sell an exempted good
+- Scenario 5: Return the transaction that has GST
 
 ### Scenario 1: Sell to a registered customer
 
