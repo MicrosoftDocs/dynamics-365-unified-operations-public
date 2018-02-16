@@ -286,7 +286,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     1. Go to **Retail** \> **Channels** \> **Retail stores** \> **All retail stores**.
     2. Select a retail store.
-    3. Set the **Price include sales tax** option to **Yes**.
+    3. Set the **Prices include sales tax** option to **Yes**.
 
 2. Run the distribution schedule:
 
