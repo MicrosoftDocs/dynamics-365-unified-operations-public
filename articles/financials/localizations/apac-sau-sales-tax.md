@@ -163,6 +163,6 @@ Report example:
 
 ## VAT returns
 
-[FAQ: VAT returns (English)](https://www.vat.gov.sa/en/e-services/vat-returns)
-[FAQ: VAT returns (Arabic)](https://www.vat.gov.sa/ar/e-services/vat-returns)
+- [FAQ: VAT returns (English)](https://www.vat.gov.sa/en/e-services/vat-returns)
+- [FAQ: VAT returns (Arabic)](https://www.vat.gov.sa/ar/e-services/vat-returns)
 
