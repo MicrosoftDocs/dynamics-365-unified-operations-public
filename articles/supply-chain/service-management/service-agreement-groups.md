@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Copy service templates lines 
+# Service agreement groups 
 
 [!include[banner](../includes/banner.md)]
 
