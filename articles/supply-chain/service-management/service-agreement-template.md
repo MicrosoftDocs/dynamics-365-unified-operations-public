@@ -74,4 +74,4 @@ templates.
 
 ## Related topics
 
-[Copy service templates lines](opy-service-template-lines.md)
+[Copy service templates lines](copy-service-template-lines.md)
