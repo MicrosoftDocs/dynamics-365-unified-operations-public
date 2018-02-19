@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Service agreement groups are useful for sorting and filtering service agreements.
+
 1. Click **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.
 2. Press **Alt+N** to create a new service agreement group.
 3. In the **Service agreement group** field, enter an ID for the service agreement group.
