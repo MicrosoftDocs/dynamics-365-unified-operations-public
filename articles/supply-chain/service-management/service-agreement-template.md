@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.
 
-** Example
+## Example
 
 A customer for whom you provide service has identical service elevators at five different locations.
 
@@ -48,7 +48,7 @@ it as a template for the service work on the elevators.
 You can now copy the template lines into the five new service agreements, so
 that each service agreement is populated with the lines from the template.
 
-**Create a template
+## Create a template
 
 When you create a service template, you create a service agreement, create the
 required lines on it, and attach the service agreement to a service-template
@@ -59,7 +59,7 @@ group.
 orders attached to it. Also, no service orders can be generated from a service
 agreement that is defined as a template.
 
-**Copy template lines
+## Copy template lines
 
 You can copy template lines from a service template into another service
 agreement or into a service order.
