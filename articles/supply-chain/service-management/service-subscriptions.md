@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# service subscriptions
+# Service subscriptions
 
 [!include[banner](../includes/banner.md)]
 
