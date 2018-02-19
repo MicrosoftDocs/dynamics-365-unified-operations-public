@@ -60,3 +60,8 @@ The service template lines are now copied to the service agreement, together wit
 
 The service template lines are now copied to the new service order, together with the attached service object and service task relations. 
 
+## Related topics
+
+[Service templates](service-agreement-template.md)
+
+
