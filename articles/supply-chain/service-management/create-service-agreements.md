@@ -65,7 +65,8 @@ as service-object relations and service-task relations on the new service-agreem
 5. Follow the steps in the section titled **Create a service agreement** as described earlier in this topic to enter the project reference.
 
 
+## Related topics
 
-
+[Service agreements](service-agreements.md)
 
 
