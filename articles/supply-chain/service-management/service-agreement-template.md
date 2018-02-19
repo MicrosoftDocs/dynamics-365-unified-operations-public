@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Service agreements
+# Service templates
 
 [!include[banner](../includes/banner.md)]
 
