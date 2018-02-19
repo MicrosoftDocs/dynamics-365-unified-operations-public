@@ -2,7 +2,7 @@
 # required metadata
 
 title: Peripheral compatibility for Retail  
-description: This topic describes the process of listing peripheral devices as 'compatible' with Microsoft Dynamics 365 for Retail. Whether a device has been previously tested for compatibility or not, devices should always be tested with the customer's specific environment to ensure compatibility. 
+description: This topic lists retail peripheral devices that have been tested for compatibility with Microsoft Dynamics 365 for Retail
 author: rubencdelgado
 manager: AnnBe
 ms.date: 10/08/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-Devices listed on this page have been tested for compatiblity with Microsoft Dynamics for Retail using the [Peripheral simulator for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party. 
+Devices listed on this page have been tested for compatiblity with Microsoft Dynamics 365 for Retail using the [Peripheral simulator for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party. 
 
 ## Compatible devices by type
 
