@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configuration rules
+# Service agreement
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,9 +79,9 @@ If you select the **Stopped** check box on a service agreement line, you cannot:
 -    Create service orders automatically or manually from the service agreement line.
 -    Copy the service agreement line into another service agreement or service order.
 
-Note:
-If a service agreement is suspended, all the attached lines are stopped,
-regardless of their individual status.
+
+> [!NOTE]
+> If a service agreement is suspended, all the attached lines are stopped, regardless of their individual status.
 
 ## Service-agreement lines
 
