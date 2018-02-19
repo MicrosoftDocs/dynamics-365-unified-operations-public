@@ -45,3 +45,6 @@ Service agreement groups are useful for sorting and filtering service agreements
 > [!NOTE]
 > If a service agreement group is defined in the **Service agreement group** field of the **Service management parameters** page, the program suggests this group for all new service agreements that you create.
 
+## Related topics
+
+[Service agreement groups](service-agreement-groups.md)
