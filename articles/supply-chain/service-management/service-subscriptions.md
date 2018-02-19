@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SMAAgreementTable
+ms.search.form: SMASubscriptionTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service agreements
+# service subscriptions
 
 [!include[banner](../includes/banner.md)]
 
