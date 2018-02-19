@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Service agreement groups  
+title: Create service agreement groups  
 description: Service agreement groups are useful for sorting and filtering service agreements.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Service agreement groups 
+# Create service agreement groups 
 
 [!include[banner](../includes/banner.md)]
 
