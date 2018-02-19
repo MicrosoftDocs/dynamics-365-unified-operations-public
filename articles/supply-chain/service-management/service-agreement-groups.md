@@ -44,3 +44,6 @@ In the **Service agreement group** field in the **Service management parameters*
 -  The three agreement groups you have set up in your company are Gold, Silver, and Bronze.
 -  A new service account manager has been employed in your company. The service manager is responsible for dealing with all clients in the Gold agreement group. You can filter agreement records on the Gold agreement group to find all of the agreements for which you must specify the new service manager as the person in charge.
 
+## Related topics
+
+[Create service agreement groups](create-service-agreement-groups.md)
