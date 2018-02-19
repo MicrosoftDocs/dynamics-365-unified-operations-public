@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Service agreements
+title: Create service agreements
 description: This topic describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Service agreements
+# Create service agreements
 
 [!include[banner](../includes/banner.md)]
 
