@@ -72,3 +72,6 @@ It is easier to determine the service-template lines that you want to copy if
 you have grouped the templates under names that reflect the use of the
 templates.
 
+## Related topics
+
+[Copy service templates lines](opy-service-template-lines.md)
