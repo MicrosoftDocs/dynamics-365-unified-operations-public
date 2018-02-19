@@ -40,7 +40,7 @@ Project management and accounting modules to create service agreements.
 ## Create a service agreement from Service management
 
 1. Navigate to **Service management**.
-2. Click **Service agreements** to create a new service agreement line in the form header. 
+2. Click **Service agreements** to create a new service agreement line in the page header. 
 3. Click **New**. Enter a description, select a reference to a project in the **Project ID** field, and fill in the rest of the fields and lines for the service agreement. Click **Save**.
 4. On the **Relations** tab, select **Service objects** or **Service tasks** to create service object relations or service task relations for the service agreement. The service objects and tasks that you have created relations for can be attached on the lines of the service agreement.
 5. In the lower half of the page, create service agreement lines by copying lines from a service template, another service agreement,
