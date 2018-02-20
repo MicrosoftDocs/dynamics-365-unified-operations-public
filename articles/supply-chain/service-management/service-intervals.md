@@ -96,4 +96,7 @@ Because there is no grouping on the service order (defined by the **By service a
 
 Three service order lines have been created within the time frame that you specified in the **Create service orders** dialog box. You can view the service order lines in the **Service agreements** page (**Action Pane** \> **Deliver** tab \>**View** button).
 
+## Related topics
+
+[Set up service intervals](set-up-service-intervals.md)  
 
