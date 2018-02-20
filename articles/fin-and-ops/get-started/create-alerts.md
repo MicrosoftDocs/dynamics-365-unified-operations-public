@@ -72,7 +72,7 @@ On the **Alert me with** FastTab of the **Create alert rule** dialog box, you ca
 
 ## Create an alert rule
 1. Open the page that contains the data to monitor.
-2. On the Action Pane, on the **Options** tab, in the **Personalize** group, select **Create alert rule**.
+2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
 3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
 4. In the **Event** field, select the type of event.
 5. On the **Alert me for** FastTab, select an option.
