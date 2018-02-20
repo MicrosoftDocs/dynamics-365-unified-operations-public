@@ -2,8 +2,7 @@
 # required metadata
 
 title: Service intervals
-description: The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
-automatically.
+description: Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 02/20/2018
