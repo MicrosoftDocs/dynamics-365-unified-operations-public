@@ -35,11 +35,11 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The service-agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
+The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
 
 When you create service orders automatically, service order lines are created according to the interval that you have specified for the service agreement line from the start date of the agreement line.
 
-If the **Interval** field of a service-agreement line in the **Service agreements** page is blank, the line is a one-time event, and it is not used to create service orders repeatedly.
+If the **Interval** field of a service agreement line in the **Service agreements** page is blank, the line is a one-time event, and it is not used to create service orders repeatedly.
 
 ## Example
 
@@ -62,7 +62,7 @@ You have now created the following service agreement:
 
 ### Create a service agreement line
 
-Next, you create a service-agreement line that has the transaction type **Hour**.
+Next, you create a service agreement line that has the transaction type **Hour**.
 
 To complete this part of the example, you must create a service interval of 10 days in the **Service intervals** page. 
 
