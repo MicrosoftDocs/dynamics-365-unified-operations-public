@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SMATimeWindow
+ms.search.form: SMATimeAgreement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
