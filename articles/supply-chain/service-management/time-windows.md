@@ -54,3 +54,8 @@ the values in the following table.
 If you do not specify a time window for a service agreement line, the service
 order line that is derived from the service agreement must be on the exact date
 for which it was originally scheduled.
+
+## Related topics
+
+[Create time windows](create-time-windows.md)
+
