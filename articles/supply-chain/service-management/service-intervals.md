@@ -87,7 +87,7 @@ You can now create planned service orders and service order lines for the coming
 
 1. In the **Service agreements** page, on the **Action Pane**, on the **Deliver** tab, click **Planned service orders**.
 2. In the **Create service orders** page, enter the current date in the **From date** field and a date that is one month from the current date in the **To date** field.
-3. Select the **Hour** check box.
+3. Set the **Hour** slider to **Yes**. 
 4. Click **OK**.
 
 Because there is no grouping on the service order (defined by the **By service agreement** option in the **Combine service orders** field), one service order line is created per service order.
