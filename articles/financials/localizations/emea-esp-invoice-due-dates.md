@@ -86,3 +86,13 @@ You can specify the payment schedule and the payment day for a customer invoice,
 You can specify the number of days in the grace period, within which an invoice payment must be made in the Due date limits page. You can select the Use the delivery date to calculate the payment due date check box in the Terms of payment form to use the delivery date to calculate the invoice due dates.  
 You must specify a payment due date that comes before the due date limit for an invoice. You can set the payment schedule and the payment day for an invoice and manually calculate the invoice due date. If the date comes after the due date limit that is set in the Due date limits page, then you must correct the due date. 
 
+## Generate the payment due date compliance report
+
+You can generate the Payments due date compliance report, which is a statistics report that contains information about the invoices that are paid during a period that you specify. The report displays the amounts that are paid based on the payment terms, as well as the amounts that are paid outside of the payment terms. The amounts that are paid using payment journals and promissory notes are included in the report. 
+
+Use the Spanish payments due date compliance report form to generate the Payments due date compliance report. 
+1. Click General ledger > Reports > External > Spanish payments due date compliance report. 
+2. On the General tab, in the Current period field group, in the From and To fields, select the starting and ending dates of the period that the report is generated for. 
+3. In the Comparative period field group, in the From and To fields, select the starting and ending dates of the comparative period. For example, you can select the starting and ending dates of the previous fiscal period. 
+4. Click Select, and then specify the criteria to select the vendor transactions, such as invoices, payments, and promissory note journals. Click OK. 
+5. In the Spanish payments due date compliance report form, click OK to generate the report. 
