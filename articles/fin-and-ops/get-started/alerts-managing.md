@@ -56,7 +56,7 @@ If you set up a low frequency for batch processing for change-based events, data
 For example, an alert rule is set up to trigger an alert when the event is **customer contact changes** and the condition is **customer = BB**. In other words, when the customer contact for customer BB is changed, the event is logged. However, the batch processing system is set up so that batch processing occurs less often than data entry. If the customer name is changed from **BB** to **AA** before the event is processed, the data in the database no longer matches the condition in the rule, **customer = BB**. Therefore, when the event is finally processed, no alert is generated.
 
 ### Set up processing for change-based alerts
-1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Change based alerts**.
+1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Change based alerts**.
 2. In the **Change based alerts** dialog box, enter the appropriate information.
 
 ## Batch processing for due-date events
