@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create service template group 
+title: Create a service template group 
 description: You can use service template groups to sort and filter service templates.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create service template group  
+# Create a service template group  
 
 [!include[banner](../includes/banner.md)]
 
