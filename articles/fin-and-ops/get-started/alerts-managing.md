@@ -41,7 +41,7 @@ Finance and Operations supports two types of events:
 You can set up batch processes for each type of event.
 
 ## Set up batch execution for alerts
-You can set up batch processing for both due-date events and change-based events. The setup for each kind of event is completed on a different page.
+You can set up batch processing for both change-based events and due-date events. The setup for each kind of event is completed on a different page.
 
 ### Set up processing for change-based alerts
 1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Change based alerts**.
