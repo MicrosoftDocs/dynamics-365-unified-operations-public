@@ -5,7 +5,7 @@ title: Manage Finance and Operations Support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 12/13/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,20 +38,17 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 
 ## Open a new incident
-1.  In LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
-
+1. In LCS, navigate to the project for which you want to file a support incident. 
+1.  Click the **Support** tile.
 ![Support menu](media/CPS1.png)
 
 2.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
-
 ![Support button](media/CPS2.png)
 
 3.  Select an issue category.
-
 ![Category](media/CPS5.png)
 
 4.  Select an issue area.
-
 ![Area](media/CPS6.png)
 
 5. In the **Describe your issue** window, enter the following:
@@ -70,18 +67,15 @@ To use the Support tool, you must have previously created a project in Lifecycle
  ![Detail](media/CPS7-1.png)
  
 6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
-
 ![Contact info](media/CPS8.png)
 
 7. Select the support contract and the severity level. 
   
   - Support contracts for on-premises products have limited incident counts. From the list of available support contracts, select the support option to use if you have multiple tier support contracts.  
   - Support contracts for cloud products have unlimited incidents, therefore, we show you the best available support plans. 
-
 ![Contract and severity](media/CPS9.png)
 
 8. Click **Submit**. 
-
 ![Completed](media/CPS10.png)
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
@@ -91,11 +85,9 @@ After you click **Submit**, an incident is created and added to the **Incidents*
 If you purchased a support plan, such as **Premier Support** or **Advance Support for Partners**, you will need to add it to LCS Support before you create a new ticket.    
 
 1. On the **Submitted to Microsoft** tab, click **Manage support plans**. 
-
    ![Manage support plans](media/SupportManagePlans.png)
    
 2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
-
    ![Add contracts](media/SupportAddPlans.png) 
    
    
@@ -124,29 +116,23 @@ This feature is available to:
 - All support plans
 
 ### Report a production outage
-1. Log into you LCS project.
+1. Log into your LCS project.
 2. From the hamburger menu, click **Support**.
-
 ![Support](media/outage1.jpg)
 
 3. On the **Submitted To Microsoft** tab, click **Report production outage**.
-
 ![Support](media/outage2.jpg)
 
 4. Confirm the production outage, select the outage scenario from the drop-down list, and then click **Continue**.
-
 ![scenario](media/outage3.jpg)
 
 5. Add a title and details about the outage, and then click **Next**.
-
 ![detail](media/outage4.jpg)
 
 6. Provide contact information, and then click **Next**. 
-
 ![contact](media/outage5.jpg)
 
 7. Click **Done**.
-
 ![done](media/outage6.jpg)
 
 > [!NOTE] 
