@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Platform update 14
 
 Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You must set up batch processing before alerts can be delivered.
 
-## Event types in Finance and Operations 
 Finance and Operations supports two types of events:
 
 - Events that are triggered by change-based events. These events are also referred to as create/delete and update events.
