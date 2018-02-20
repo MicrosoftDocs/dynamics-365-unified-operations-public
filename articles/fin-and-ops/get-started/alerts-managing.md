@@ -78,5 +78,5 @@ To prevent due-date alerts from becoming obsolete because the batch job hasn't b
 If you set up a batch processing window, an alert is sent when the alert rule is processed, even if the alert exceeds the time limit that is defined in the due-date criteria. An alert continues to be sent for as long as the period that is defined by this time limit plus the batch processing window isn't exceeded. However, when the period that is defined by the time limit plus the batch processing window is exceeded, an alert is no longer sent.
 
 ### Set up processing for due-date alerts
-1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Due date alerts**.
+1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Due date alerts**.
 2. In the **Due date alerts** dialog box, enter the appropriate information.
