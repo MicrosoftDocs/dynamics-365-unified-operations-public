@@ -43,14 +43,14 @@ You can set up batch processes for each type of event.
 ## Set up batch execution for alerts
 You can set up batch processing for both due-date events and change-based events. The setup for each kind of event is completed on a different page.
 
-## Set up processing for due-date alerts
-1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Due date alerts**.
-2. In the **Due date alerts** dialog box, enter the appropriate information.
-	
-## Set up processing for change-based alerts
+### Set up processing for change-based alerts
 1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Change based alerts**.
 2. In the **Change based alerts** dialog box, enter the appropriate information.
-	
+
+### Set up processing for due-date alerts
+1. Go to **System administration** &gt; **Periodic** &gt; **Alerts** &gt; **Due date alerts**.
+2. In the **Due date alerts** dialog box, enter the appropriate information.
+		
 ## Process batches for change-based events
 Finance and Operations reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that are set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
 
