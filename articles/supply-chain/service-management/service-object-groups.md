@@ -51,8 +51,7 @@ A customer from Belgium calls your service center and wants to create a service
 agreement for an object, ABC. You have attached an object group for geographical
 location, Belgium, to all objects that are serviced in Belgium. By using this
 group as a filter, you can quickly search to see whether you already have a
-record for ABC in the program, or whether you must set up a new object. For more
-information about filtering, see Filter records.
+record for ABC in the program, or whether you must set up a new object. 
 
 ## Group by type
 
@@ -70,12 +69,7 @@ group to all air conditioning objects. Therefore, you can quickly search for and
 identify all other air conditioning machines and use the template information
 from these objects to create service agreement lines for HIJ. By using object
 groups in this manner, you can quickly set up new objects and determine the
-service tasks that must be performed on them. For more information about
-searching and filtering, see Filter records.
-
-
-
-
+service tasks that must be performed on them. 
 
 
 
