@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations – Pre-upgrade checklist in AX 2012
+title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
-author: tariqbell
+author: robadawy
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,13 +24,13 @@ ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: robadawy
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Data upgrade – Pre-upgrade checklist in AX 2012
+# Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,12 +38,15 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 
-> [!NOTE]
-> This topic applies to Microsoft Dynamics AX 2012 R3.
-
 ## Installation
 
 For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
+
+## Compress your AX 2012 database
+
+In order to minimize downtime during cutover and to reduce the cost of SQL Azure, we strongly recommend that you perform page compression on your AX 2012 database before you upgrade to Finance and Operations. Create a copy of your production database, and compress it on a test system before you compress your AX 2012 production database.
+
+Refer to this article on SQL Server [Data Compression](/sql/relational-databases/data-compression/data-compression) for more information.
 
 ## Prepare model metadata
 

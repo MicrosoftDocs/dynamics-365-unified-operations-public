@@ -65,7 +65,7 @@ This section lists the procedures required to install and configure the Security
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.
     2.  At the Windows PowerShell command prompt, PS C:&gt;, type the following command, and then press ENTER.
 
-            Install-AXModel -File “C:Program Files (x86)MicrosoftSecurity DevelopmentToolSecurityDevelopmentTool.axmodel”
+            Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
 
         For more information, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
 

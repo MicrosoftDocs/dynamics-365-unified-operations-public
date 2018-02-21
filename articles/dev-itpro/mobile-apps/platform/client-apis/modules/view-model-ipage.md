@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -110,7 +110,7 @@ Design <br>&nbsp;&nbsp;&nbsp;└─ [PageLinkDesign](../interfaces/view-model-co
 | [border](../interfaces/view-model-ipage-idesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|The border behavior of a control. This property will not be inherited by the children.<br>  |
 | [color](../interfaces/view-model-ipage-idesign.md#color) |color: string (optional)  <br>|The foreground color of the container.<br>  |
 | [flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) |flexFlow: string (optional)  <br>|Specifying this property makes the component a flex container component.<br>  |
-| [flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accomodate available space in the immediate flex container.<br>  |
+| [flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  |
 | [fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|The proportional text size<br>  |
 | [fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (optional)  <br>|Normal or bold text.<br>  |
 | [justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems) |justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)  <br>|This property is an alias for the CSS property "justify-content".<br>  |

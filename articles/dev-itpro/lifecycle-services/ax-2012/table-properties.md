@@ -5,7 +5,7 @@ title: Table properties
 description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -53,20 +53,16 @@ The following table describes the properties of table elements in the AOT.
 <tbody>
 <tr class="odd">
 <td><strong><span class="ui">Abstract</span></strong></td>
-<td>Specifies whether or not the table supports inheritance.The default value is <span class="ui">No</span>. If the value is <span class="ui">Yes</span>, the table cannot be a direct target of X++ SQL statements such as <span class="code">update_recordset</span> and <span class="code">select</span>. This property is unavailable when the <span class="ui">SupportInheritance</span> property is set to <span class="ui">No</span>. For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">Table Inheritance Overview</a>.</td>
+<td>Specifies whether the table supports inheritance. The default value is <span class="ui">No</span>. If the value is <span class="ui">Yes</span>, the table cannot be a direct target of X++ SQL statements such as <span class="code">update_recordset</span> and <span class="code">select</span>. This property is unavailable when the <span class="ui">SupportInheritance</span> property is set to <span class="ui">No</span>. For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">Table Inheritance Overview</a>.</td>
 <td>AX 2012</td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">AnalysisDimensionType</span></strong></td>
-<td>Determines the type of dimension created based on the <span class="ui">IsLookup</span> property setting. You can specify one of the following values.<strong><span class="ui">IsLookup</span></strong> property set to <strong><span class="ui">Yes</span></strong>
-<ul>
+<td>Determines the type of dimension created based on the <span class="ui">IsLookup</span> property setting. You can specify one of the following values.<ul>
 <li><strong><span class="ui">Auto</span></strong> - Specifies that the table may contain factual as well as dimensional data. The <strong>BI Wizard</strong> will extract dimensional data and create dimensions and attributes while factual data will be extracted to create measures. One child dimension is created with attributes from the parent table.</li>
 <li><strong><span class="ui">MasterInner</span></strong> - Specifies an inner (full) join to create relationships with this table to the child table. Each record combination for this table and the child table are generated in the dimension. One child dimension is created with attributes from the parent table.</li>
 <li><strong><span class="ui">MasterLeftOuter</span></strong> - Specifies a left outer join to create relationships with this table to the child table. Dimensions will have additional attributes based on values in this table that can also be empty. One child dimension is created with attributes from the parent table.</li>
-<li><strong><span class="ui">Transaction</span></strong> - Specifies that the table should strictly be used to generate factual data (measures). This setting should be used when a table only contains transactional data. One child dimension is created containing only enumeration fields from the table.</li>
-</ul>
-<strong><span class="ui">IsLookup</span></strong> property set to <strong><span class="ui">No</span></strong>
-<ul>
+<li><strong><span class="ui">Transaction</span></strong> - Specifies that the table should strictly be used to generate factual data (measures). This setting should be used when a table only contains transactional data. One child dimension is created containing only enumeration fields from the table. <strong><span class="ui">IsLookup</span></strong> property set to <strong><span class="ui">No</span></strong>
 <li><strong><span class="ui">Auto</span></strong> - Specifies that the table may contain factual as well as dimensional data. The <strong>BI Wizard</strong> will extract dimensional data and create dimensions and attributes while factual data will be extracted to create measures. One parent and child dimension is created.</li>
 <li><strong><span class="ui">MasterInner</span></strong> - Not applicable. Same as <span class="ui">Auto</span>.</li>
 <li><strong><span class="ui">MasterLeftOuter</span></strong> - Not applicable. Same as <span class="ui">Auto</span>.</li>
@@ -81,22 +77,22 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="even">
 <td><strong><span class="ui">AOSAuthorization</span></strong></td>
-<td>Specifies the type of operation that a user can perform on a table, depending on the user's permissions.When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
+<td>Specifies the type of operation that a user can perform on a table, depending on the user's permissions. When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">CacheLookup</span></strong></td>
-<td>Determines how to cache the records retrieved during a lookup operation.This <strong><span class="ui">CacheLookup</span></strong> property exists only on tables that do not inherit from another table. On an inheritance root table, this property cannot be set to <strong><span class="ui">EntireTable</span></strong> by using the AOT <span class="ui">Properties</span> window. You must not use other techniques to assign this value to inheritance root tables. For example, do not use the <strong><span class="code">AOTsetProperty</span></strong> method of the <strong><span class="code">TreeNode</span></strong> class to assign this value.</td>
+<td>Determines how to cache the records retrieved during a lookup operation. This <strong><span class="ui">CacheLookup</span></strong> property exists only on tables that do not inherit from another table. On an inheritance root table, this property cannot be set to <strong><span class="ui">EntireTable</span></strong> by using the AOT <span class="ui">Properties</span> window. You must not use other techniques to assign this value to inheritance root tables. For example, do not use the <strong><span class="code">AOTsetProperty</span></strong> method of the <strong><span class="code">TreeNode</span></strong> class to assign this value.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">ClusterIndex</span></strong></td>
-<td>Specifies the cluster index.This property is used only for SQL optimization purposes.</td>
+<td>Specifies the cluster index. This property is used only for SQL optimization purposes.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">ConfigurationKey</span></strong></td>
-<td>Specifies the configuration key for the table.Configuration keys allow a system administrator to enable and disable certain parts of an application.</td>
+<td>Specifies the configuration key for the table. Configuration keys allow a system administrator to enable and disable certain parts of an application.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -141,12 +137,12 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="even">
 <td><strong><span class="ui">Extends</span></strong></td>
-<td>Derives the table from another table that is chosen as the property value.The value is null when the <span class="ui">SupportInheritance</span> property is set to <span class="ui">Yes</span>. For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">Table Inheritance Overview</a>.</td>
+<td>Derives the table from another table that is chosen as the property value. The value is null when the <span class="ui">SupportInheritance</span> property is set to <span class="ui">Yes</span>. For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">Table Inheritance Overview</a>.</td>
 <td>AX 2012</td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">FormRef</span></strong></td>
-<td>Specifies the display menu item that is activated when a table is referenced. A display menu item is associated with a form.When you use a primary index field on a report, this form is available as a link in the report. A primary index is specified by using the <strong><span class="code">PrimaryIndex</span></strong> property. If you leave this field blank, the system attempts to display a form that has the same name as the table.</td>
+<td>Specifies the display menu item that is activated when a table is referenced. A display menu item is associated with a form. When you use a primary index field on a report, this form is available as a link in the report. A primary index is specified by using the <strong><span class="code">PrimaryIndex</span></strong> property. If you leave this field blank, the system attempts to display a form that has the same name as the table.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -156,7 +152,7 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">IsLookup</span></strong></td>
-<td>For report models, it specifies whether the table information is incorporated into other tables that reference it when a report model is generated.For OLAP cubes, it determines whether to generate a consolidated dimension or a distinct dimension. You can specify one of the following values.
+<td>For report models, it specifies whether the table information is incorporated into other tables that reference it when a report model is generated. For OLAP cubes, it determines whether to generate a consolidated dimension or a distinct dimension. You can specify one of the following values.
 <ul>
 <li><strong><span class="ui">Yes</span></strong> - Indicates that attributes from the table are to be consolidated into the parent dimension (star schema).</li>
 <li><strong><span class="ui">No</span></strong> - Indicates that a separate dimension is to be generated for the table (snowflake schema).</li>
@@ -176,7 +172,7 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="even">
 <td><strong><span class="ui">Model</span></strong></td>
-<td>Specifies which model the table is in.A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. Examples of elements are a table or class. The same element can exist in a customized version in a model in a higher layer.</td>
+<td>Specifies which model the table is in. A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. Examples of elements are a table or class. The same element can exist in a customized version in a model in a higher layer.</td>
 <td>AX 2012</td>
 </tr>
 <tr class="odd">
@@ -201,17 +197,17 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">OccEnabled</span></strong></td>
-<td>Specifies whether the optimistic concurrency mode is enabled for a table.When this mode is enabled, data is not locked from future modification when it is fetched from the database. Data is locked only when the actual update is performed.</td>
+<td>Specifies whether the optimistic concurrency mode is enabled for a table. When this mode is enabled, data is not locked from future modification when it is fetched from the database. Data is locked only when the actual update is performed.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">PreviewPartRef</span></strong></td>
-<td>Specifies the <span class="ui">Info Part</span> or <span class="ui">Form Part</span> to be used in the enhanced preview.An info part shows a collection of data fields from a specified query. An info part uses metadata to describe how the data appears. A form part represents a pointer to a form.</td>
+<td>Specifies the <span class="ui">Info Part</span> or <span class="ui">Form Part</span> to be used in the enhanced preview. An info part shows a collection of data fields from a specified query. An info part uses metadata to describe how the data appears. A form part represents a pointer to a form.</td>
 <td>AX 2012</td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">PrimaryIndex</span></strong></td>
-<td>Specifies the primary index.Only a unique index can be selected. The property is used for database optimization purposes and to indicate which unique index to use as the caching key. If a primary index is not specified, the unique index with the lowest ID is used as the caching key.</td>
+<td>Specifies the primary index. Only a unique index can be selected. The property is used for database optimization purposes and to indicate which unique index to use as the caching key. If a primary index is not specified, the unique index with the lowest ID is used as the caching key.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -221,12 +217,12 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">ReportRef</span></strong></td>
-<td>Specifies the output menu item that is activated when a table is referenced. An output menu item is associated with a report.When you use a primary index field on a report, this report is available as a link in the report. A primary index is specified using the <span class="code">PrimaryIndex</span> property.</td>
+<td>Specifies the output menu item that is activated when a table is referenced. An output menu item is associated with a report. When you use a primary index field on a report, this report is available as a link in the report. A primary index is specified using the <span class="code">PrimaryIndex</span> property.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">SaveDataPerCompany</span></strong></td>
-<td>Indicates whether the data for the current company is saved.If you set the property to<strong><span class="ui"> No</span></strong>, data is saved without a company identifier (<span class="code">DataAreaId</span>).
+<td>Indicates whether the data for the current company is saved. If you set the property to<strong><span class="ui"> No</span></strong>, data is saved without a company identifier (<span class="code">DataAreaId</span>).
 <div class="alert">
 <table>
 <thead>
@@ -259,12 +255,12 @@ For more information about dimensions and star and snowflake schemas, see <a hre
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">SaveDataPerPartition</span></strong></td>
-<td>Shows whether the table has a system field named <strong><span class="code">Partition</span></strong>. This is meant to be a read-only system field.If the table has a <strong><span class="code">Partition</span></strong> field, each record is assigned to one partition. Each record is kept hidden from data access operations that are run under the context of other partitions.</td>
+<td>Shows whether the table has a system field named <strong><span class="code">Partition</span></strong>. This is meant to be a read-only system field. If the table has a <strong><span class="code">Partition</span></strong> field, each record is assigned to one partition. Each record is kept hidden from data access operations that are run under the context of other partitions.</td>
 <td>AX 2012 R2</td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">SearchLinkRefName</span></strong></td>
-<td>Specifies the name of the menu item that links to information on a Web site about a table record listed in the Enterprise Portal search results.If the <strong><span class="code">SearchLinkRefType</span></strong> property is set to URL, select a menu item from the <strong><span class="code">SearchLinkRefName</span></strong> property list that links to a Web part page that displays the table data. Forms and reports on Web part pages can display data.</td>
+<td>Specifies the name of the menu item that links to information on a Web site about a table record listed in the Enterprise Portal search results. If the <strong><span class="code">SearchLinkRefType</span></strong> property is set to URL, select a menu item from the <strong><span class="code">SearchLinkRefName</span></strong> property list that links to a Web part page that displays the table data. Forms and reports on Web part pages can display data.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -299,7 +295,7 @@ For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a
 </tr>
 <tr class="even">
 <td><strong><span class="ui">SystemTable</span></strong></td>
-<td>Indicates if a table appears as a System table. It can then be filtered during export and import.System tables are always synchronized when you log in. This may be useful for tables that you use as soon as you log in.</td>
+<td>Indicates if a table appears as a System table. It can then be filtered during export and import. System tables are always synchronized when you log in. This may be useful for tables that you use as soon as you log in.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -315,7 +311,7 @@ For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a
 </tr>
 <tr class="even">
 <td><strong><span class="ui">TableGroup</span></strong></td>
-<td>Determines which group the table belongs to.<a href="http://msdn.microsoft.com/library/3330d438-ab53-44db-9a9b-a044ed19608d(AX.60).aspx">Table Groups</a> provide a method for categorizing tables according to the type of data they contain. Table groups can be used to define whether the system should prompt users when they update or delete from the table in forms by using the table as the data source. When exporting data, you can use table groups to filter records.</td>
+<td>Determines which group the table belongs to. <a href="http://msdn.microsoft.com/library/3330d438-ab53-44db-9a9b-a044ed19608d(AX.60).aspx">Table Groups</a> provide a method for categorizing tables according to the type of data they contain. Table groups can be used to define whether the system should prompt users when they update or delete from the table in forms by using the table as the data source. When exporting data, you can use table groups to filter records.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -335,7 +331,7 @@ For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">TypicalRowCount</span></strong></td>
-<td>Specifies the number of records that typically appear in a table.If the <strong><span class="code">AnalysisSelection</span></strong> property is not set, the <strong><span class="code">TypicalRowCount</span></strong> property determines how records are selected by using Report Builder for Microsoft SQL Server Reporting Services. The <strong><span class="code">TypicalRowCount</span></strong> property setting affects whether a drop-down list, list box, or a filtered list box is used to select table records. For more information, see <a href="http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">Best Practices for Table Properties</a>.</td>
+<td>Specifies the number of records that typically appear in a table. If the <strong><span class="code">AnalysisSelection</span></strong> property is not set, the <strong><span class="code">TypicalRowCount</span></strong> property determines how records are selected by using Report Builder for Microsoft SQL Server Reporting Services. The <strong><span class="code">TypicalRowCount</span></strong> property setting affects whether a drop-down list, list box, or a filtered list box is used to select table records. For more information, see <a href="http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">Best Practices for Table Properties</a>.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -345,7 +341,7 @@ For more information, see <a href="http://msdn.microsoft.com/library/cb4803e7-9a
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">Visible</span></strong></td>
-<td>Specifies the access rights when the table is used as a data source in a form or a report.If the table is used as a data source in a form, then the access rights in the form cannot exceed the access rights defined for the table.</td>
+<td>Specifies the access rights when the table is used as a data source in a form or a report. If the table is used as a data source in a form, then the access rights in the form cannot exceed the access rights defined for the table.</td>
 <td></td>
 </tr>
 </tbody>

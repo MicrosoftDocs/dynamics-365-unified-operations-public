@@ -5,7 +5,7 @@ title: Create a requisition for consumption
 description: This procedure walks you through the process of creating a requisition. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -91,9 +91,9 @@ This procedure walks you through the process of creating a requisition. It shows
 2. Click Distribute amounts.
     * This process shows you how to distribute the cost for the first line between 2 accounts. This can also be done later when the requisition is in review.  
 3. Click Split to create a new distribution line.
-4. In the Ledger account field select the first cost centre that should take part of the cost.
+4. In the Ledger account field select the first cost center that should take part of the cost.
 5. Select the other distribution line.
-6. In the Ledger account field specify the other cost centre.
+6. In the Ledger account field specify the other cost center.
 7. Click Distribute equally.
 8. Close the page.
 

@@ -24,7 +24,7 @@ ms.custom: 62303
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jasongre
+ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 

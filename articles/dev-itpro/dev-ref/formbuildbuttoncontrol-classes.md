@@ -1616,7 +1616,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -2795,7 +2795,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -3344,7 +3344,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -4503,26 +4503,26 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -4545,7 +4545,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method comboType
@@ -5888,7 +5888,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -7924,7 +7924,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public FormBuildDataSource masterDataSource()                                     |                                                                                                                           |
 | public int maxAccessRight(\[int value\])                                          |                                                                                                                           |
 | public int maxRecordsToLoad(\[int value\])                                        |                                                                                                                           |
-| public str name(\[str value\])                                                    | Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object. |
+| public str name(\[str value\])                                                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object. |
 | public boolean onlyFetchActive(\[boolean value\])                                 |                                                                                                                           |
 | public int optionalRecordMode(\[int value\])                                      |                                                                                                                           |
 | public int startPosition(\[int value\])                                           |                                                                                                                           |
@@ -8205,7 +8205,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, rable, query, or another MSDAX application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
 
     public str name([str value])
 
@@ -10146,20 +10146,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
@@ -10188,7 +10188,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method configurationKey
@@ -11647,26 +11647,26 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -11689,7 +11689,7 @@ The color scheme is defined according to the following table:
 | Value. | Style.                        |
 |--------|-------------------------------|
 | 0      | Default.                      |
-| 1      | The MicrosoftWindows palette. |
+| 1      | The Microsoft Windows palette. |
 | 2      | The true-color scheme.        |
 
 ### Method columns
@@ -15239,20 +15239,20 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-The values in the following table are for the Middle East language edition of MicrosoftWindows.
+The values in the following table are for the Middle East language edition of Microsoft Windows.
 
 | Value. | Description.    |
 |--------|-----------------|
 | 177    | HEBREW\_CHARSET |
 | 178    | ARABIC\_CHARSET |
 
-The value in the following table is for the Thai language edition of MicrosoftWindows.
+The value in the following table is for the Thai language edition of Microsoft Windows.
 
 | Value. | Description.  |
 |--------|---------------|

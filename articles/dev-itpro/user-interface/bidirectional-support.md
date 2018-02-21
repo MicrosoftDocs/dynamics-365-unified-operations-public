@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 
-A great example of right-to-left language support: Microsoft Word
------------------------------------------------------------------
+## A great example of right-to-left language support: Microsoft Word
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. One example of a program that implements this functionality correctly is Microsoft Word. If you're trying to understand the correct behavior of mixed language presentation, you can use Word for validation. The problem is that most software just implements the Unicode standard to display bidirectional data, without evaluating how that data is actually used. Additionally, there's no attempt to provide the interactive experience that the user actually requires. 
 
@@ -131,8 +130,7 @@ Numbers are read from left to right in Arabic and Hebrew. “Item” numbers, re
 
 **Arabic:** شقلاهؤ\_english\_شقشلاهؤ
 
-Issue: The hyphen used together with numbers: Language-specific behavior
-========================================================================
+## Issue: The hyphen used together with numbers: Language-specific behavior
 
 **Description:** LTR is expected for Hebrew, whereas RTL is expected for Arabic. 
 
@@ -191,8 +189,7 @@ There is an issue with phone numbers if you try to use a US pattern that include
 
 **Recommendation:** Expose an RTL flag for controls or an extended data type for phone numbers. A customizer can force the control into LTR mode. This approach will let users enter values in the order that they want.
 
-Issue: LTR text combined with neutral characters in RTL input
-=============================================================
+## Issue: LTR text combined with neutral characters in RTL input
 
 **Description:** English text is combined with parentheses or other neutral characters. 
 

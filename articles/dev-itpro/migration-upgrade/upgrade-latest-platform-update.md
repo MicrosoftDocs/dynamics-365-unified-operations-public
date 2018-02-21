@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade Finance and Operations to the latest platform update
-description: This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
+title: Apply the latest platform update to your Dynamics 365 Finance and Operations environment
+description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 05/23/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,14 +29,13 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
 
-# Upgrade Finance and Operations to the latest platform update
+# Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.
+This topic explains how to apply the latest platform release to your Microsoft Dynamics 365 for Finance and Operations environment.
 
-Overview
---------
+## Overview
 
 The Microsoft Dynamics 365 for Finance and Operations platform consists of the following components:
 
@@ -47,7 +46,7 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on a platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
@@ -58,13 +57,33 @@ If you are already running on platform update 4 or later, updating the Finance a
 
 [![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
-Learn how to get the latest platform package in the next section.
+Learn how to **get the latest platform package and apply it to an environment deployed through LCS** in the next section.
 
-## How to get the latest platform package
-There are 3 ways to get the latest platform update package.
+### How to get the latest platform package
+There are two ways to get the latest platform update package.
+- Click the **Platform binary updates** tile of your environment's page in LCS to get the latest platform update or a platform hotfix. 
+- Click the **All Binary Updates** tile of your environment's page in LCS to get a combined package of application and platform binary updates.(As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
+
+> [!NOTE]
+> Tiles on an environments page in LCS show the updates that are applicable to your environment based on the version of the environment you have deployed. 
+
+### Import the platform update package
+Get the latest platform update package by clicking on one of the two tiles as mentioned above. After reviewing the KBs included in the platform, click on **Save Package** button to save the package to the project asset library.
+
+### Choose the correct package deployment method
+From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
+
+-   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
+[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg) 
+For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
+
+Learn how to apply a platform update package to your **local development environments (environments not connected to LCS servicing)** in the next section:
+
+> [!NOTE]
+> **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
+
+### How to get the latest platform package
 - In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library.
-- Search for "platform update" in LCS **Issue Search**.
-- Click the **Binary Updates** tile of your environment's page in LCS (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 ### Import the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Finance and Operations Platform Update* (for example, Finance and Operations Platform Update 3)*.* Use these steps to import the platform update package:
@@ -73,19 +92,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 3.  Select the desired platform update package.
 
-## Choose the correct package deployment method
-From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
-
--   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
-[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg) 
-For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
-
--   To apply a platform update package to your local development environments (environments not connected to LCS servicing), follow the instructions in the next section.
-
-> [!NOTE]
-> **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
-
-## Apply the platform update package on your development environment
+### Apply the platform update package on your development environment
 Follow the instructions in this section if you are upgrading your local development or build environment to the latest platform. 
 > [!NOTE]
 > This only applies to environments that cannot be updated directly from LCS.

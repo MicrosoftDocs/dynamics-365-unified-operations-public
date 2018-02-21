@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostAccountingLedger
+
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  WHSWorker
+ms.search.form:  WHSWorker
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis

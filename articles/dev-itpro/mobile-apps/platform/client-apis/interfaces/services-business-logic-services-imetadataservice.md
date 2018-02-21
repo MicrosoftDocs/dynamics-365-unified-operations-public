@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -100,7 +100,7 @@ Compares the current platform version with a reference version.
 | versionToCompare|string|The reference version to compare with|
 
 #### Returns 1 &#124; -1
-1 to indicate the platform version is older than than the reference version,
+1 to indicate the platform version is older than the reference version,
 -1 to indicate that the platform version is newer or same as the reference version
 
 ### configureAction

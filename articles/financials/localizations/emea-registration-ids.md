@@ -5,7 +5,7 @@ title: Registration IDs
 description: This topic provides information about setting up and using registration IDs.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -102,6 +101,12 @@ The following table lists the supported registration types in Finance and Opera
 | OGRN                                                          | Russian Federation| OGRN (Legislative type OGRN in AX 2012 R3) |
 | SNILS                                                         | Russian Federation| SNILS (Legislative type SNILS in AX 2012 R3)|
 | CIFTS                                                         | Russian Federation| CIFTS (Legislative type CIFTS in AX 2012 R3)|
+| Passport                                                      | Spain             | Passport|
+| Official identification document                              | Spain             | Official identification document|
+| Residence certificate                                         | Spain             | Residence certificate|
+| Other identification document                                 | Spain             | Other identification document|
+| Not censused                                                  | Spain             | Not available in AX 2012 R3|
+
 
 For more information about registration IDs processing, including required prerequisites, see the following task recordings for VAT ID in Lifecycle Services (LCS):
 

@@ -5,7 +5,7 @@ title: Install the Data import/export framework (AX 2012)
 description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -62,9 +62,9 @@ To install the version of the framework available in Microsoft Dynamics AX 2012 
 3.  In the **Setup** wizard, accept the license terms, and then click **Accept and continue**.
 4.  On the **Select components** page, select the components of the Data Import/Export Framework that can be installed on the local computer, and then click **Next**.
 5.  The prerequisite validation check runs. Address any issues that the prerequisite check finds outside the installer. When all prerequisites have been addressed, restart **Setup**.
-6.  If you are installing on the computer that runs Microsoft SQL Server Integration Services, specify a service account and the version of SQL Server that is running. We recommend that you use the AOS service account. Or,If you are installing on the AOS computer, specify the name of the server that is running SQL Server Integration Services.
+6.  If you are installing on the computer that runs Microsoft SQL Server Integration Services, specify a service account and the version of SQL Server that is running. We recommend that you use the AOS service account. If you are installing on the AOS computer, specify the name of the server that is running SQL Server Integration Services.
 7.  On the **Ready to install** page, review the summary, and then click **Install**.
-8.  On the **Installation completed** page, select **Show logs** to display the log files, verify that the files were installed successfully, and then click **Finish**.The log file is stored in the same location that **Setup** was run from.
+8.  On the **Installation completed** page, select **Show logs** to display the log files, verify that the files were installed successfully, and then click **Finish**. The log file is stored in the same location that **Setup** was run from.
 9.  Repeat until all components (Integration Services, AOS instance, and client) have been installed.
 
 ### Install the Data Import/Export Framework model (InformationSource)
@@ -74,7 +74,7 @@ To install the version of the framework available in Microsoft Dynamics AX 2012 
 1.  On the client computer, from the location where you installed the Data Import/Export Framework, import the DataImportExportFramework.axmodel file. For more detailed instructions, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx). **Note:** Verify that the Microsoft Dynamics AX Management Shell is pointing to the database that you want to install the model in.
     1.  Drain client connections to the AOS instance that you are working with.
     2.  Stop the AOS.
-    3.  Use one of the following command-line tools to import the model.The version of the model that you import depends on the version of Microsoft Dynamics AX that you are running:
+    3.  Use one of the following command-line tools to import the model. The version of the model that you import depends on the version of Microsoft Dynamics AX that you are running:
 
         -   For AX 2012, install the model from the 2012 directory.
         -   For AX 2012 Feature Pack, install the model from the 2012 FP directory.
@@ -82,11 +82,11 @@ To install the version of the framework available in Microsoft Dynamics AX 2012 
 
         Windows PowerShell
 
-            Install-AXModel -File "C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Client Component<version number>modelDataImportExportFramework.axmodel"
+            Install-AXModel -File "C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component<version number>modelDataImportExportFramework.axmodel"
 
         AXUtil
 
-            axutil import /file: "C:Program Files Microsoft Dynamics AX 2012 Data Import Export Framework Client Component <version number>modelDataImportExportFramework.axmodel"
+            axutil import /file: "C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component <version number>modelDataImportExportFramework.axmodel"
 
 2.  Restart the AOS service.
 3.  Start the client.
@@ -113,14 +113,14 @@ This section describes how to troubleshoot issues with a Data Import/Export Fram
 After you install the Data Import/Export Framework, if you cannot compile, validate that the Data Import/Export Framework was installed correctly.
 
 1.  Verify that the Microsoft Dynamics AX Data Import/Export Framework service is running.
-2.  Verify that the Data Import/Export Framework DLLs are present in C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder:
+2.  Verify that the Data Import/Export Framework DLLs are present in C:\Program Files (x86)\Microsoft Dynamics AX60\Client\Bin folder:
     -   Microsoft.Dynamics.AX.DMF.Mapper.dll
     -   Microsoft.Dynamics.AX.DMF.PreviewGrid.
     -   Microsoft.Dynamics.AX.DMF.ServiceProxy.dll
     -   DMFConfig.xml
     -   Microsoft.Dynamics.AX.DMF.DriverHelper.dll
 
-**Resolution** Copy the DLLs from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Client Component) to the C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder.
+**Resolution** Copy the DLLs from the installation location (C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Client Component) to the C:\Program Files (x86)\Microsoft Dynamics AX60\Client\Bin folder.
 
 ### Exception message while you use Data Import/Export Framework
 
@@ -128,17 +128,17 @@ While you use the Data Import/Export Framework, you might receive the following 
 
 > System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.InvalidOperationException
 
-Verify that the following files are present in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance:
+Verify that the following files are present in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance:
 
 -   DMFConfig.xml
 -   DMFClientConfig.xml
 -   Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config
 
-**Resolution** Copy the .xml and the config files from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Server Component) to the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.
+**Resolution** Copy the .xml and the config files from the installation location (C:\Program Files\Microsoft Dynamics AX 2012 Data Import Export Framework Server Component) to the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
 
 ### Changes to the location of the Data Import/Export Framework service
 
-If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.
+If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
 
 
 

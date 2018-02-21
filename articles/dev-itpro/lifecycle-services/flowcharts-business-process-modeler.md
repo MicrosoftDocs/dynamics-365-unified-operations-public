@@ -5,7 +5,7 @@ title: Flowcharts in Business process modeler
 description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
 author: robadawy
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ You can use Business process modeler in Microsoft Dynamics Lifecycle Services (L
 
 You can start with default connected flowcharts for Microsoft Dynamics 365 for Finance and Operations, and modify them, create and upload connected flowcharts from Task recorder, or you can import a business process model flowchart from another library. Connected flowcharts can also be used to create gaps for export to Microsoft Team Foundation Server. You can also create and upload high-level flowcharts from Microsoft Visio.
 
--   Connected flowcharts are based on data recorded in the AX 2012 Task recorder and uploaded to Business process modeler. They include properties, security roles, and related information. Each flowchart also includes detailed steps and a video.
+-   Connected flowcharts are based on data recorded in the AX 2012 Task recorder and uploaded to Business process modeler. They include properties, security roles, and related information. Each flowchart also includes detailed steps.
 -   Unconnected flowcharts are uploaded directly from Visio.
 
 ## Connected flowcharts

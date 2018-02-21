@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy Finance and Operations database - Azure SQL to SQL Server
-description: This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+title: Copy a Finance and Operations database – Azure SQL to SQL Server
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 08/21/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,287 +34,328 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to export a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
-Overview
---------
+## Overview
 
-Moving a database involves using the sqlpackage.exe command line tool to export a database from Azure SQL Database and then import the database to Microsoft SQL Server 2016. Because the file extension for the exported data is .bacpac, the process for moving a database is commonly referred to as the *bacpac process*. The high-level process for a database move is:
+To move a database, you use the sqlpackage.exe command-line tool to export the database from Azure SQL Database and then import it into Microsoft SQL Server 2016. Because the file name extension for the exported data is .bacpac, this process is often referred to as the *bacpac process*.
 
--   Create a duplicate of the source database.
--   Run a SQL Server script to prepare the database.
--   Export the database from the Azure SQL database.
--   Import the database to SQL Server 2016.
--   Run a SQL script to update the database.
+Here is the high-level process for a database move.
 
+1. Create a duplicate of the source database.
+2. Run a SQL Server script to prepare the database.
+3. Export the database from the Azure SQL database.
+4. Import the database into SQL Server 2016.
+5. Run a SQL script to update the database.
 
 ## Prerequisites
-The following prerequisites are required before you can move a database.
 
--   Only a database to which the customer has SQL access to can be copied. If you must copy the production environment, then first copy the production environment to the sandbox environment, and work from the sandbox environment.
--   The destination SQL Server environment must be running SQL Server 2016 RTM (13.00.1601.5) or higher. The CTP versions of SQL Server 2016 may cause errors during the import process.
--   To export a database from a sandbox environment, you must install the [latest SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) to the AOS machine in that environment and perform the bacpac export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can't complete the tasks required.
+The following prerequisites must be met before you can move a database:
+
+- The source environment (that is, the environment that is connected to the source database) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
+- Only a database that the customer has SQL access to can be copied. If you must copy the production environment, you must first copy that environment to the sandbox environment. Then work from the sandbox environment.
+- The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
+- To export a database from a sandbox environment, you must install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in that environment. You then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+
+    - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
+    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
 
 ## Before you begin
+
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
 
 ### Document the values of encrypted fields
 
-Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and re-enter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import will be readable. The following fields are affected. (The field names are given in *Table*.*Field* format.)
+Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and re-enter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import will be readable. The following fields are affected. The field names are given in Table.Field format.
 
-|                                                          |                                                                                                                                                                                |
-|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Table.field name**                                     | **Where to set the value**                                                                                                                                                     |
-| CreditCardAccountSetup.SecureMerchantProperties          | Click **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**.                                                                                               |
-| ExchangeRateProviderConfigurationDetails.Value           | Click **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**.                                                                                       |
-| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Click **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**.                                                                           |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework.                                                                                                                         |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | Click **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, click **Identification numbers**.                   |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since the February 2016 release. It was previously in the **Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions** form. |
-| SysEmailSMPTPassword.Password                            | Click **System administration** &gt; **Email** &gt; **Email parameters**.                                                                                                      |
-| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
-| SysOAuthUserTokens.EncryptedRefreshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
+| Field name                                               | Where to set the value |
+|----------------------------------------------------------|------------------------|
+| CreditCardAccountSetup.SecureMerchantProperties          | Select **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**. |
+| ExchangeRateProviderConfigurationDetails.Value           | Select **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**. |
+| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
+| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
+| HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
+| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
+| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
+| SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
 ### If you're running Retail components, document encrypted and environment-specific values
 
-The values in the following forms are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
+The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
 
--   **Accounts receivable** &gt; **Payments setup** &gt; **Payments services**
--   **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**
+- Payments services (**Accounts receivable** &gt; **Payments setup** &gt; **Payments services**)
+- Hardware profiles (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**)
 
-## Copy the source database
-Because you will need to disable change tracking and delete the users from the database before you can export, you should create a copy of the source Azure SQL database that you will export. Then, you can work with a copy instead of deleting information from the original database. The following SQL statement will create a copy of the database **axdb\_mySourceDatabaseToCopy** called **MyNewCopy**. Edit this script with your own database names.
+## Create a copy of the source database
 
-    CREATE DATABASE MyNewCopy AS COPY OF axdb_mySourceDatabaseToCopy
+Because you must turn off change tracking and delete database users before you can export the source Azure SQL database, you should create a copy of that database. You can then work with the copy instead of deleting information from the original database. The following SQL statement creates a copy of the axdb\_mySourceDatabaseToCopy database and names it **MyNewCopy**. Edit this script so that it uses the names of your databases.
 
-Note that this command will execute asynchronously, meaning that it will appear to complete after 1 minute, but actually it is running in the background. For more information, refer to [CREATE DATABASE (Azure SQL Database)](https://msdn.microsoft.com/en-us/library/dn268335.aspx). To monitor the progress of the copy operation, execute the following query against the MASTER database within the same instance.
+```
+CREATE DATABASE MyNewCopy AS COPY OF axdb_mySourceDatabaseToCopy
+```
 
-    SELECT * FROM sys.dm_database_copies
+This SQL statement runs asynchronously. In other words, although it appears to be completed after one minute, it actually continues to run in the background. For more information, see [CREATE DATABASE (Azure SQL Database)](https://msdn.microsoft.com/en-us/library/dn268335.aspx). To monitor the progress of the copy operation, run the following query against the MASTER database in the same instance.
 
-## Prepare the copied database
-Run the following script against the copied database to remove change tracking, SQL Database users, and a system view. The script will also correct system flags, remove references to the previous environment, withhold batches, and remove email configuration. These changes are all required to successfully export and import the database and to ensure that when the AOS is started in the target environment, nothing will automatically start running. 
+```
+SELECT * FROM sys.dm_database_copies
+```
+
+## Prepare the database
+
+Run the following script against the copy of the database to turn off change tracking, and to remove SQL Database users and a system view. The script also corrects system flags, removes references to the previous environment, withholds batches, and removes email configuration. All these changes are required for a successful export and import of the database. These changes also help guarantee that, when the AOS computer is started in the target environment, nothing automatically starts to run.
 
 > [!NOTE]
-> You must update the following ALTER DATABASE command with your database copy name.
+> You must edit the following **ALTER DATABASE** command so that it uses the name of your database copy.
 
-    --Prepare a database in SQL Azure for export to SQL Server.
-    --Disable change tracking on tables where it is enabled.
-    declare
-    @SQL varchar(1000)
-    set quoted_identifier off
-    declare changeTrackingCursor CURSOR for
-    select 'ALTER TABLE ' + t.name + ' DISABLE CHANGE_TRACKING'
-    from sys.change_tracking_tables c, sys.tables t
-    where t.object_id = c.object_id
-    OPEN changeTrackingCursor
-    FETCH changeTrackingCursor into @SQL
-    WHILE @@Fetch_Status = 0
-    BEGIN
-    exec(@SQL)
-    FETCH changeTrackingCursor into @SQL
-    END
-    CLOSE changeTrackingCursor
-    DEALLOCATE changeTrackingCursor
-     
-    --Disable change tracking on the database itself.
-    ALTER DATABASE
-    -- SET THE NAME OF YOUR DATABASE BELOW
-    MyNewCopy
-    set CHANGE_TRACKING = OFF
-    --Remove the database level users from the database
-    --these will be recreated after importing in SQL Server.
-    declare
-    @userSQL varchar(1000)
-    set quoted_identifier off
-    declare userCursor CURSOR for
-    select 'DROP USER ' + name
-    from sys.sysusers
-    where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
-    OPEN userCursor
-    FETCH userCursor into @userSQL
-    WHILE @@Fetch_Status = 0
-    BEGIN
-    exec(@userSQL)
-    FETCH userCursor into @userSQL
-    END
-    CLOSE userCursor
-    DEALLOCATE userCursor
-    --Delete the SYSSQLRESOURCESTATSVIEW view as it has an Azure-specific definition in it.
-    --We will run db synch later to recreate the correct view for SQL Server.
-    if(1=(select 1 from sys.views where name = 'SYSSQLRESOURCESTATSVIEW'))
-    DROP VIEW SYSSQLRESOURCESTATSVIEW
-    --Next, set system parameters ready for being a SQL Server Database.
-    update sysglobalconfiguration
-    set value = 'SQLSERVER'
-    where name = 'BACKENDDB'
-    update sysglobalconfiguration
-    set value = 0
-    where name = 'TEMPTABLEINAXDB'
-    --Clean up the batch server configuration, server sessions, and printers from the previous environment.
-    TRUNCATE TABLE SYSSERVERCONFIG
-    TRUNCATE TABLE SYSSERVERSESSIONS
-    TRUNCATE TABLE SYSCORPNETPRINTERS
-    --Remove records which could lead to accidentally sending an email externally.
-    UPDATE SysEmailParameters
-    SET SMTPRELAYSERVERNAME = ''
-    GO
-    UPDATE LogisticsElectronicAddress
-    SET LOCATOR = ''
-    WHERE Locator LIKE '%@%'
-    GO
-    TRUNCATE TABLE PrintMgmtSettings
-    TRUNCATE TABLE PrintMgmtDocInstance
-    --Set any waiting, executing, ready, or canceling batches to withhold.
-    UPDATE BatchJob
-    SET STATUS = 0
-    WHERE STATUS IN (1,2,5,7)
-    GO
+```
+--Prepare a database in Azure SQL Database for export to SQL Server.
+--Disable change tracking on tables where it is enabled.
+declare
+@SQL varchar(1000)
+set quoted_identifier off
+declare changeTrackingCursor CURSOR for
+select 'ALTER TABLE ' + t.name + ' DISABLE CHANGE_TRACKING'
+from sys.change_tracking_tables c, sys.tables t
+where t.object_id = c.object_id
+OPEN changeTrackingCursor
+FETCH changeTrackingCursor into @SQL
+WHILE @@Fetch_Status = 0
+BEGIN
+exec(@SQL)
+FETCH changeTrackingCursor into @SQL
+END
+CLOSE changeTrackingCursor
+DEALLOCATE changeTrackingCursor
+
+--Disable change tracking on the database itself.
+ALTER DATABASE
+-- SET THE NAME OF YOUR DATABASE BELOW
+MyNewCopy
+set CHANGE_TRACKING = OFF
+--Remove the database level users from the database
+--these will be recreated after importing in SQL Server.
+declare
+@userSQL varchar(1000)
+set quoted_identifier off
+declare userCursor CURSOR for
+select 'DROP USER ' + name
+from sys.sysusers
+where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
+OPEN userCursor
+FETCH userCursor into @userSQL
+WHILE @@Fetch_Status = 0
+BEGIN
+exec(@userSQL)
+FETCH userCursor into @userSQL
+END
+CLOSE userCursor
+DEALLOCATE userCursor
+--Delete the SYSSQLRESOURCESTATSVIEW view as it has an Azure-specific definition in it.
+--We will run db synch later to recreate the correct view for SQL Server.
+if(1=(select 1 from sys.views where name = 'SYSSQLRESOURCESTATSVIEW'))
+DROP VIEW SYSSQLRESOURCESTATSVIEW
+--Next, set system parameters ready for being a SQL Server Database.
+update sysglobalconfiguration
+set value = 'SQLSERVER'
+where name = 'BACKENDDB'
+update sysglobalconfiguration
+set value = 0
+where name = 'TEMPTABLEINAXDB'
+--Clean up the batch server configuration, server sessions, and printers from the previous environment.
+TRUNCATE TABLE SYSSERVERCONFIG
+TRUNCATE TABLE SYSSERVERSESSIONS
+TRUNCATE TABLE SYSCORPNETPRINTERS
+--Remove records which could lead to accidentally sending an email externally.
+UPDATE SysEmailParameters
+SET SMTPRELAYSERVERNAME = ''
+GO
+UPDATE LogisticsElectronicAddress
+SET LOCATOR = ''
+WHERE Locator LIKE '%@%'
+GO
+TRUNCATE TABLE PrintMgmtSettings
+TRUNCATE TABLE PrintMgmtDocInstance
+--Set any waiting, executing, ready, or canceling batches to withhold.
+UPDATE BatchJob
+SET STATUS = 0
+WHERE STATUS IN (1,2,5,7)
+GO
+```
 
 ## Export the database
-Open a command prompt as an Administrator, and then execute the following commands.
 
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+Open a **Command Prompt** window as an administrator, and run the following commands.
 
-    SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<sql password> /su:<sql user>
+```
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
 
-The following list provides an explanation of the parameters:
+SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<sql user>
+```
 
--   ssn (source server name): The name of the SQL Azure server from which you will export.
--   sdn (source database name): The name of the database that you will export.
--   tf (target file): The path and file name that you will export to.
--   sp (source password): The SQL password for source SQL Server.
--   su (source user): The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user, which the deployment will have created on every Dynamics SQL instance. You can retrieve the password for this user from your Lifecycle Services (LCS) project.
+Here is an explanation of the parameters:
 
-After the export completes, delete the copied database.
+- **ssn (source server name)** – The name of the Azure SQL Database server to export from.
+- **sdn (source database name)** – The name of the database to export.
+- **tf (target file)** – The path and name of the file to export to.
+- **sp (source password)** – The SQL password for the source SQL Server.
+- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Finance and Operations SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
 
-    DROP DATABASE [MyNewCopy]
+After the export is completed, run the following command to delete the database copy.
+
+```
+DROP DATABASE [MyNewCopy]
+```
 
 ## Import the database
-When you import the database, we recommend that you:
 
--   Retain a copy of the existing AxDB database, to allow you to revert to it later if needed.
--   Import the new database with a new name, for example AxDB\_fromProd.
+When you import the database, we recommend that you follow these guidelines:
 
-Copy the \*.bacpac file to the local machine from which you will import to ensure the best performance. Open a command prompt as Administrator and run the following commands.
+- Retain a copy of the existing AxDB database, so that you can revert to it later if you must.
+- Import the new database under a new name, such as **AxDB\_fromProd**.
 
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window as an administrator, and run the following commands.
 
-    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+```
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
 
-The following list provides an explanation of the parameters:
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+```
 
--   tsn (target server name): The name of the SQL Server that you will import to.
--   tdn (target database name): The name of the database that you will import to. The database should **not** already exist.
--   sf (source file): The path and file name to import from.
+Here is an explanation of the parameters:
+
+- **tsn (target server name)** – The name of the SQL Server to import into.
+- **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
+- **sf (source file)** – The path and name of the file to import from.
 
 > [!NOTE]
-> During import, the user name and password are not required because SQL Server will default to Windows authentication for the currently logged on user.
+> During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
-Execute the following SQL script against the imported database. This will add back the users that were deleted from the source database earlier, correctly linking them to the SQL logins for this SQL instance and also re-enable change tracking. Remember to edit the final ALTER DATABASE statement with your database name.
 
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
 
-    CREATE USER axdbadmin FROM LOGIN axdbadmin
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+```
+CREATE USER axdeployuser FROM LOGIN axdeployuser
+EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axmrruntimeuser FROM LOGIN axmrruntimeuser
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+CREATE USER axdbadmin FROM LOGIN axdbadmin
+EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+CREATE USER axmrruntimeuser FROM LOGIN axmrruntimeuser
+EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
-    EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
-    
-    UPDATE T1
-    SET T1.storageproviderid = 0
-           , T1.accessinformation = ''
-           , T1.modifiedby = 'Admin'
-           , T1.modifieddatetime = getdate()
-    FROM docuvalue T1
-    WHERE T1.storageproviderid = 1 --Azure storage
-    
-    ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
+EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+
+CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
+EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
+
+UPDATE T1
+SET T1.storageproviderid = 0
+    , T1.accessinformation = ''
+    , T1.modifiedby = 'Admin'
+    , T1.modifieddatetime = getdate()
+FROM docuvalue T1
+WHERE T1.storageproviderid = 1 --Azure storage
+
+ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+```
 
 ### Re-provision the target environment
+
 [!include[environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 
-If you're using Financial Reporting (formerly Management Reporter), then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
+If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
-## Start using the new database
-To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
+## Start to use the new database
 
--   World wide web publishing service
--   Finance and Operations Batch Management service
--   Management Reporter 2012 Process service
+To switch the environment and use the new database, first stop the following services:
 
-To switch back to the original database, reverse the step above. Stop the services, rename the databases, and then start the services.
+- World wide web publishing service
+- Finance and Operations Batch Management service
+- Management Reporter 2012 Process service
 
-## Reenter data from encrypted and environment specific fields in the target database
-In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)
+After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
-|                                                          |                                                                                                                                                                                |
-|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Table.field name**                                     | **Where to set the value**                                                                                                                                                     |
-| CreditCardAccountSetup.SecureMerchantProperties          | Click **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**.                                                                                               |
-| ExchangeRateProviderConfigurationDetails.Value           | Click **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**.                                                                                       |
-| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Click **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**.                                                                           |
-| FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework.                                                                                                                         |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | Click **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, click **Identification numbers**.                   |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since the February 2016 release. It was previously in the **Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions** form. |
-| SysEmailSMPTPassword.Password                            | Click **System administration** &gt; **Email** &gt; **Email parameters**.                                                                                                      |
-| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
-| SysOAuthUserTokens.EncryptedRefreshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
+To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+## Re-enter data from encrypted and environment-specific fields in the target database
+
+In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in Table.Field format.
+
+| Field name                                               | Where to set the value |
+|----------------------------------------------------------|------------------------|
+| CreditCardAccountSetup.SecureMerchantProperties          | Select **Accounts receivable** &gt; **Payments setup** &gt; **Payment services**. |
+| ExchangeRateProviderConfigurationDetails.Value           | Select **General ledger** &gt; **Currencies** &gt; **Configure exchange rate providers**. |
+| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
+| FiscalEstablishmentStaging.CSC                           | This field is used by DIXF. |
+| HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
+| HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
+| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
+| SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
 ## Known issues
-### Cannot drop users in source database
 
-When dropping users in the source database, the user **axdbadmin** or **axdeployuser** may fail to delete as they are currently owner of the full-text catalog. This occurs if the database was originally created in CTP7 or CTP8. To resolve this, change the owner to the dbo user using the transact-SQL command [ALTER AUTHORIZATION](https://msdn.microsoft.com/en-us/library/ms187359.aspx).
+### I can't drop users in source database
 
-    ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
+When you drop users in the source database, the axdbadmin or axdeployuser user might not be deleted, because that user is the current owner of the full-text catalog. This issue occurs if the database was originally created for CTP7 or CTP8 of Dynamics AX 7 (Finance and Operations). To resolve the issue, run the following Transact-SQL (T-SQL) command to change the owner to the **dbo** user.
 
-### Can't download SQL Server Management Studio installation files
+```
+ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
+```
 
-When you attempt to download the SQL Management Studio install, you might receive the following error: 
-> *"Your current security settings do not allow this file to be downloaded."*      
+For more information about this command, see [ALTER AUTHORIZATION](https://msdn.microsoft.com/en-us/library/ms187359.aspx).
 
-To work around this issue, enable file download for the **Internet Zone**, on the **Security** tab in **Internet Options**, as shown below. 
-[![SecuritySettingsFix](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)
+### I can't download Management Studio installation files
+
+When you try to download the Management Studio installer, you might receive the following error message:
+
+> Your current security settings do not allow this file to be downloaded.
+
+To work around this issue, follow these steps to enable file downloads.
+
+1. In your web browser, open **Internet options**.
+2. On the **Security** tab, select the **Internet** zone, and then select **Custom level**.
+3. Scroll to **Downloads**, and then, under **File download**, select the **Enable** option.
 
 ### Database synchronization fails
 
-When you synchronize the database against the newly imported database from Visual Studio, the synchronization might fail with the following error:
-> *"Failed to open SQL connection* *syncengine.exe exited with code -1."* 
+When you synchronize the database against the newly imported database from Microsoft Visual Studio, the synchronization might fail, and you might receive the following error message:
 
-Also, in the Windows application log, you will find this message logged under event ID 140: 
-> *Object Server Database Synchronizer:* *The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.* 
+> Failed to open SQL connection syncengine.exe exited with code -1.
 
-This can occur when the platform build number of the current environment is lower than the platform build number of the source environment. Depending on your circumstances, either upgrade the current environment’s platform to match the source environment, by using the **Updates** tiles on the LCS **Environment** page, or adjust the expected version in the database by using the following query.
+In this case, the following message is also logged under event ID 140 in the Windows application log:
 
-    UPDATE SQLSYSTEMVARIABLES
+> Object Server Database Synchronizer: The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.
 
-    SET VALUE = 138
+This issue can occur when the platform build number of the current environment is lower than the platform build number of the source environment. Depending on your circumstances, either use the **Updates** tiles on the LCS **Environment** page to upgrade the platform in the current environment so that it matches the platform in the source environment, or run the following query to adjust the expected version in the database.
 
-    WHERE PARM = 'SYSTABVERSION'
+```
+UPDATE SQLSYSTEMVARIABLES
+
+SET VALUE = 138
+
+WHERE PARM = 'SYSTABVERSION'
+```
 
 > [!NOTE]
-> The value 138 in the query above is taken from the event log message that was expecting 138 in this particular environment.
+> The value **138** in the preceding query is taken from the event log message, where version 138 was expected in this particular environment.
 
 ### Performance
 
-Refer to the following guidelines for optimal performance:
+The following guidelines can help you achieve optimal performance:
 
--   Always export a database from a virtual machine that is located in the same Azure data center as the Azure SQL database. If you are exporting a copy of your sandbox database, export it from the Sandbox AOS machine.
--   Always import the .bacpac locally on the machine that is running the SQL Server instance. Do not import from SQL Server Management Studio on a remote machine.
--   On a Dynamics 365 for Finance and Operations one-box environment, also known as a tier 1 environment, which is hosted in Azure, place the bacpac file on the D: drive when importing for increased performance. Read more about the temporary drive in Azure machines in the blog post [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
--   Grant the account running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. This can speed up the import process and improve the speed of restore from a \*.bak file. A simple way to do this in a Developer environment is to set SQL Server to run as the axlocaladmin account.
--   From SQL Azure, do not select Export data tier application in SQL Server Management Studio because there can be a memory limitation for larger databases.
+- Always export a database from a virtual machine (VM) that is in the same Azure datacenter as the Azure SQL database. If you're exporting a copy of your sandbox database, export it from the sandbox AOS computer.
+- Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
+- In a Finance and Operations one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure VMs, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
+- Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
+- From Azure SQL Database, don't select **Export data tier application in Management Studio**, because there can be a memory limitation for larger databases.

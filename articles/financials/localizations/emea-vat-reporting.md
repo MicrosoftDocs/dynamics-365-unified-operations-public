@@ -61,8 +61,9 @@ To generate a VAT statement you must set up the following.
 
 ### Sales tax authorities for VAT reporting
 
-<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](general-ledger/tasks/set-up-sales-tax-authorities). -->
 Before you can set up sales tax reporting codes, you must select the correct report layout for the sales tax authority. On the **Sales tax authorities** page, in the **General** section, select a **Report layout**. This layout will be used when you set up sales tax reporting codes.
+
+<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md). -->
 
 ### Sales tax reporting codes
 

@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: VendParameters, BankPromissoryNoteTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw

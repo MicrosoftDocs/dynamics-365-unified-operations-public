@@ -39,15 +39,15 @@ This article reviews the commands that have been added to the Microsoft Visual s
 
 Because of the large number of elements in a typical application, commands have been added to the Microsoft Visual Studio Tools to make it easier to determine how an element is used.
 
-### Finding where elements are used
+## Finding where elements are used
 
 During build operations, cross-reference information is generated that can be used to show how elements are used. You can right-click an element and then click **Find References** to display a list of the locations where that element is used. When you click one of the items in the list, the designer for the element opens. [![23\_DevoToolsConcept](./media/23_devotoolsconcept.png)](./media/23_devotoolsconcept.png)
 
-### Viewing a reference diagram
+## Viewing a reference diagram
 
 When you right-click some higher-level elements, such as tables, the **View Reference** command is available. This command produces a graphic that shows the elements that are related to the current element. You can right-click the items in the graphic and then click **Go To Definition** to navigate to those elements. [![24\_DevoToolsConcept](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
 
-# See also
+## See also
 
 [Development tools overview](development-tools-overview.md)
 

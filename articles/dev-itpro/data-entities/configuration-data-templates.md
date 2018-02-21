@@ -89,38 +89,39 @@ Our long-term goal for sequencing is to automatically sequence all the entities 
 
 The following table shows how the templates were set up to handle dependencies. Note that the entities do **not** have to be processed in the order that we have sequenced them in. You can sequence them differently. However, you might inadvertently change the order that entities are processed in. If an entity requires data that hasn't been imported by another entity, you might receive errors because of missing dependent data.
 
-| Module                  | Unit | Level |
-|-------------------------|------|-------|
-| System setup            | 1    |  10 	 | 
-| Global address book     | 1    |  15 	 |
-| General ledger shared   | 1    |  20   |
-| Workflow                | 1    |  22 	 | 
-| General ledger          | 1    |  25 	 | 
-| Band 1 for dependencies | 1    |  30 	 | 
-| Band 2 for dependencies | 1    |  40 	 | 
-| Band 3 for dependencies | 1    |  50 	 | 
-| Band 4 for dependencies | 1    |  60 	 | 
-| Band 5 for dependencies | 1    |  70 	 |
-| Band 6 for dependencies | 1    |  80 	 | 
-| Band 7 for dependencies | 1    |  90 	 | 
-| Bank                    | 1    | 100 	 |
-| Accounts payable        | 1    | 120 	 |
-| Tax                     | 1    | 130 	 |
-| Accounts receivable     | 1    | 140 	 |
-| Fixed assets            | 1    | 150 	 |
-| Budgeting               | 1    | 160 	 |
-| Inventory management    | 1    | 300 	 |
-| Product management      | 1    | 310 	 |
-| Procurement             | 1    | 320 	 | 
-| Sales and Marketing     | 1    | 330 	 |
-| Warehouse management    | 1    | 400 	 |
-| Production control      | 1    | 410 	 |
-| Costing                 | 1    | 420 	 |
-| Retail (See the note.)  | 1    | 500 	 | 
-| Expense management      | 1    | 600 	 |
-| Project accounting      | 1    | 650 	 |
-| Human resources         | 1    | 700 	 |
-| Payroll                 | 1    | 800 	 |
+| Module                    | Unit | Level |
+|---------------------------|------|-------|
+| System setup              | 1    |  10 	 | 
+| Global address book       | 1    |  15 	 |
+| General ledger shared     | 1    |  20   |
+| Workflow                  | 1    |  22 	 | 
+| General ledger            | 1    |  25 	 | 
+| Band 1 for dependencies   | 1    |  30 	 | 
+| Band 2 for dependencies   | 1    |  40 	 | 
+| Band 3 for dependencies   | 1    |  50 	 | 
+| Band 4 for dependencies   | 1    |  60 	 | 
+| Band 5 for dependencies   | 1    |  70 	 |
+| Band 6 for dependencies   | 1    |  80 	 | 
+| Band 7 for dependencies   | 1    |  90 	 | 
+| Bank                      | 1    | 100 	 |
+| Accounts payable          | 1    | 120 	 |
+| Tax                       | 1    | 130 	 |
+| Accounts receivable       | 1    | 140 	 |
+| Fixed assets              | 1    | 150 	 |
+| Budgeting                 | 1    | 160 	 |
+| Inventory management      | 1    | 300 	 |
+| Product management        | 1    | 310 	 |
+| Procurement               | 1    | 320 	 | 
+| Sales and Marketing       | 1    | 330 	 |
+| Quality management        | 1    | 395 	 |
+| Warehouse management      | 1    | 400 	 |
+| Transportation management | 1    | 405 	 |
+| Production control        | 1    | 410 	 |
+| Process manufacturing     | 1    | 412 	 |
+| Costing                   | 1    | 420 	 |
+| Retail (See the note.)    | 1    | 500 	 | 
+| Expense management        | 1    | 600 	 |
+| Project accounting        | 1    | 650 	 |
 
 > [!NOTE]
 > The Retail template is scheduled to be released in Finance and Operations, App update 3.
@@ -148,6 +149,8 @@ We have created larger templates that cover multiple module areas. You can use t
 - Supply chain management, which includes inventory management, product management, procurement, sales and marketing, limited warehouse management, production control, and costing
 
 The Expense and Project Management templates aren't included in a larger template. However, they are designed so that they can easily be merged into a project that uses other templates.
+
+The Workers template includes the entities needed to add workers and re-map entities where the worker mapping was removed.
  
 #### Master data
 Many default templates include entities for master data such as customers, vendors, and released products. These entities are included to indicate the correct sequence of entities that you will require after you've loaded parameters and reference data. Master entities are most often sequenced in the module bands that are numbered 100 and above. In the grid, the entity category for these entities will be **Master**.

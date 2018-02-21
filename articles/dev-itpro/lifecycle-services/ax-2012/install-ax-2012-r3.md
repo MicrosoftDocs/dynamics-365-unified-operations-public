@@ -5,7 +5,7 @@ title: Install Data import/export framework for AX 2012 R3
 description: This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -75,7 +75,7 @@ When you have finished installing the Data Import/Export Framework, follow these
 2.  Add the AOS service account to the **Microsoft Dynamics AX Data Import Export Framework Service Users** local group on the computer that is running the AOS instance. Then restart that computer.
 3.  Set the Data Import/Export Framework parameters. The Data Import/Export Framework requires a shared directory that the Data Import/Export Framework service account must have read access to. The AOS service account must have read and write access to the directory. The AOS service writes data to the shared directory, so that the Data Import/Export Framework can use SQL Server Integration Services to read the data. For performance reasons, we recommend that the directory be located on the same server as SQL Server Integration Services. **Security Note:** Be aware that the shared directory may contain sensitive data, depending on what you are importing and exporting. Ensure that as few users as possible have access to the location, in addition to the AOS service account and the Data Import/Export Framework service account.
     1.  In an AX 2012 R3 client, go to **Data Import/Export Framework** &gt; **Setup** &gt; **Data Import/Export Framework parameters**.
-    2.  In the **Shared working directory** field, enter a shared directory, and then click **Validate**. This step verifies that the AOS account can write to the location, and that the Data Import/Export Framework can read from the location.If both these conditions are true, the validation icon turns green.
+    2.  In the **Shared working directory** field, enter a shared directory, and then click **Validate**. This step verifies that the AOS account can write to the location, and that the Data Import/Export Framework can read from the location. If both these conditions are true, the validation icon turns green.
     3.  If you want to skip rows that contain errors when data is processed, select **Ignore error**. If you select **Ignore error**, you can also select **Create error file** to write any errors to a file.
     4.  You can use the **Data access mode** field to control the method that SQL Server Integration Services uses to load data. You can also use the **Maximum insert commit size** field to control the size of the batches that are loaded.
 

@@ -5,7 +5,7 @@ title: Sales tax report for Norway
 description: This topic explains how to set up and generate the VAT statement for legal entities that have a primary address in Norway. 
 author: epodkolz
 ms.author: epodkolz
-ms.date: 06/16/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,17 +14,18 @@ ms.technology:
 # optional metadata
 
 manager: annbe
-# ms.search.form: [AOT names of the forms related to the topic, separated by comma]
+# ms.search.form: 
 audience: Application User
-# ms.devlang: [Development language for the topic]
+# ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: [Target platform (for example, ios or android).]
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.tgt_pltfrm: 
+# ms.custom: 
 ms.search.region: Norway
-# ms.search.industry: [industry; e.g. retail]
+# ms.search.industry: 
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+
 ---
 
 # VAT statement for Norway
@@ -55,6 +56,8 @@ For users in legal entities in Norway, the following sales tax reporting codes c
 | 72             | Domestic turnover subject to reverse charge (emission trading and gold), calc. tax | **Use tax** |
 | 81             | Total zero rated turnover due to export of goods and services, basis               | **Tax-free sales** |
 | 91             | Import of goods, and calculated VAT 25 %, basis                                    | **Taxable import** |
+| 92             | Import of goods, and calculated VAT 25 %, calc. tax                                | **Use tax**         |
+| 93             | Offset for the 92                                                                  | **Offset use tax**         |
 | 101            | Import of goods, and calculated VAT 15 %, basis                                    | **Taxable import** |
 | 102            | Import of goods, and calculated VAT 15 %, calc. tax                                | **Use tax** |
 | 103            | Offset for the 102                                                                 | **Offset use tax** |

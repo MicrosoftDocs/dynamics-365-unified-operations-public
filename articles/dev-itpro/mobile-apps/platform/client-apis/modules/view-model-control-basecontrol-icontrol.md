@@ -1,10 +1,10 @@
 ---
 # required metadata
 title: Control
-description: Controls are what makeup the content of a page.
+description: Controls are what make up the content of a page.
 author: shadykdc
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,7 +25,7 @@ ms.dyn365.ops.version:
 ---
 
 # Control 
-Controls are what makeup the content of a page.
+Controls are what make up the content of a page.
 
 ## Index
 

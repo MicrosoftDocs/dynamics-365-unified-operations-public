@@ -5,7 +5,7 @@ title: X Classes
 description: System API classes that start with the letter X.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -932,7 +932,7 @@ The xArgs class is used to pass arguments such as a name, a caller, and paramete
 
 ### Remarks
 
-Forms, reports and queries all use this class as their first argument in the constructor. The preferred way to use this class is to construct an xArgs object, supply a name-string, and then pass the xArgs object to the forms constructor or a ClassFactory method.If you want to refer to the xArgs object passed to one of these classes, it can be reached using args method of that class.There are four methods that can be used to pass extra information to the new class:
+Forms, reports and queries all use this class as their first argument in the constructor. The preferred way to use this class is to construct an xArgs object, supply a name-string, and then pass the xArgs object to the forms constructor or a ClassFactory method. If you want to refer to the xArgs object passed to one of these classes, it can be reached using args method of that class. There are four methods that can be used to pass extra information to the new class:
 
 -   The parm - to pass strings
 -   The parmEnum and parmEnumType methods - to pass enumeration values
@@ -6480,7 +6480,7 @@ Note: This system class represents MenuItem nodes in the AOT. This class enables
 | public int objectType(\[int value\])                                                                    |                                                                                                                                           |
 | public int openMode(\[int value\])                                                                      |                                                                                                                                           |
 | public Guid origin(\[Guid value\])                                                                      |                                                                                                                                           |
-| public str parameters(\[str value\])                                                                    | Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.                                    |
+| public str parameters(\[str value\])                                                                    | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                    |
 | public str query(\[str value\])                                                                         |                                                                                                                                           |
 | public int readPermissions(\[int value\])                                                               |                                                                                                                                           |
 | public str reportDesign(\[str value\])                                                                  |                                                                                                                                           |
@@ -6757,7 +6757,7 @@ An xArgs class object as would be passed to the run() method; optional.
 
 #### Return Value
 
-true if neccessary permissions exist to successfully call run().
+true if necessary permissions exist to successfully call run().
 
 #### Remarks
 
@@ -6779,7 +6779,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property dialog box.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property dialog box. The help text must not exceed 250 characters.
 
 ### Method imageLocation
 
@@ -6807,7 +6807,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method linkedPermissionObject
 
@@ -6969,7 +6969,7 @@ value
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -6983,7 +6983,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method query
 
@@ -8388,7 +8388,7 @@ The value of a field.
 
 #### Remarks
 
-The arrayIndex parameter only applies to array fields. Either omit this parameter or specify 0 (zero) for fields that are not arrays.This method throws an ArgumentOutOfRange exception if the specified field is unknown.
+The arrayIndex parameter only applies to array fields. Either omit this parameter or specify 0 (zero) for fields that are not arrays. This method throws an ArgumentOutOfRange exception if the specified field is unknown.
 
 ### Method getInstanceRelationType
 
@@ -8543,7 +8543,7 @@ fieldId
 
 #### Return Value
 
-true if field is has a Set or Defaulted state; otherwise, false.
+true if field has a Set or Defaulted state; otherwise, false.
 
 ### Method isFormDataSource
 
@@ -9387,7 +9387,7 @@ The array index of the field; optional.
 
 #### Remarks
 
-The arrayIndex parameter applies only to array fields. Either omit this parameter or specify0 (zero) for fields that are not arrays.This method throws an ArgumentOutOfRange exception if the specified field is unknown or a TypeMismatch exception if the value parameter is incompatible with the specified field..
+The arrayIndex parameter applies only to array fields. Either omit this parameter or specify0 (zero) for fields that are not arrays. This method throws an ArgumentOutOfRange exception if the specified field is unknown or a TypeMismatch exception if the value parameter is incompatible with the specified field..
 
 ### Method doInsert
 

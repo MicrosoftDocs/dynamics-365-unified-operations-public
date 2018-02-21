@@ -266,7 +266,7 @@ The device should now be activated and ready to use.
     - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
-        1. In File Explorer, browse to **C:Microsoft Dynamics 36570Retail Server**.
+        1. In File Explorer, browse to **C:\Microsoft Dynamics 365\70\Retail Server**.
         2. Right-click the **SelfServicePackages** folder, and then select **Properties**.
         3. On the **Security** tab, select **Edit**.
         4. In the **Permissions for SelfServiceDeployment** dialog box, select **Add**.

@@ -115,7 +115,7 @@ You can create environments in two ways:
 Start on the project page in LCS.
 
 1. In the **Environments** section, select the plus sign (**+**). The **Microsoft Azure setup** dialog box appears.
-2. Enter your Azure subscription ID. You can find your Azure subscription ID in Azure Management Portal (<https://manage.windowsazure.com/>), under **Settings** in the lower left.
+2. Enter your Azure subscription ID. You can find your Azure subscription ID in Azure Portal (<https://ms.portal.azure.com/>), under **Settings** in the lower left.
 3. Select **Next**.
 4. Download the Azure Management Certificate to a local folder on your computer, and then upload it to Azure Management Portal by going to **Settings** &gt; **Management Certificates**. This certificate will enable LCS to communicate with Azure on your behalf.
 5. Return to LCS, and select **Next**.
