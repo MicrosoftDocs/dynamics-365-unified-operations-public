@@ -1,17 +1,53 @@
+---
+# required metadata
+
+title: Service tasks 
+description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 02/21/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceTask
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Service tasks  
+
+[!include[banner](../includes/banner.md)]
+
 Use service tasks to describe the task to be completed during a service order.
 Both technicians and customers can see this information.
 
-You create service tasks in the Service tasks form, and you associate service
+You create service tasks in the **Service tasks** page, and you associate service
 tasks with a specific service agreement or service order by creating service
 task relations. Every time that you create a service task relation, you can
 create the following:
 
->   Internal notes for the task, such as detailed technical requests for the
->   task that are important for the technician to know.
+-  Internal notes for the task, such as detailed technical requests for the
+task that are important for the technician to know.
 
->   External notes that the customer can see. These might provide a less
->   technical explanation of the task that is being completed, according to the
->   agreement between the customer and the service company.
+-  External notes that the customer can see. These might provide a less
+technical explanation of the task that is being completed, according to the
+agreement between the customer and the service company.
 
 When you have set up a service task relation between a service task and a
 service order or service agreement, you can specify this service task when you
@@ -22,14 +58,20 @@ When you generate service orders from a service agreement, you can use the
 service tasks that are assigned to each service agreement line to group service
 order lines into service orders.
 
-Example
+## Create a service task
+
+1. Click **Service management** \> **Setup** \> **Service tasks**.
+2. Create a new line.
+3. Enter the service ID and description.
+
+## Example
 
 A technician must complete two jobs on a gearbox (service object GB-1234) at a
 customer site. A service agreement is created for the customer, and several
 transactions are associated with the jobs. The service agreement and service
 agreement lines for the two jobs are as follows:
 
-Service agreement
+### Service agreement
 
 | Project | Service agreement | Description                                  | Group   |
 |---------|-------------------|----------------------------------------------|---------|
@@ -56,26 +98,23 @@ that are involved in completing a routine replacement job.
 The service task relations that connect the service tasks to the specific
 agreement are as follows:
 
-Service tasks
+### Service tasks
 
 | Service task | Description                             | Internal note                                                                                                                 | External note                 |
 |--------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 | I/C - GB1234 | Inspection of gearbox GB-1234           | Visual and mechanical inspection and cleaning of gearbox GB-1234                                                              | Routine inspection of gearbox |
 | RR - GB1234  | Routine replacement of parts in GB-1234 | Routine service replacement of GR-1 and GR-5 components (for gearboxes manufactured before 2002, also replace GR-2 component) | Routine replacement of parts  |
 
-Grouping of service orders
+### Group service orders
 
 When you create service orders automatically, you can use service tasks as
 grouping criteria. To group service orders by service tasks, define on the
 service agreement that service orders that are based on the service agreement
 should be grouped by service task ID as their initial grouping criteria.
 
-Group by service task
+**Group by service task**
 
->   Service agreements
+1. Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+2. On the **Setup** tab, select **By service task** in the **Combine service orders** field.
 
->   On the Setup tab, select By service task in the Combine service orders
->   field.
 
-Create service tasks  
-Create service task relations
