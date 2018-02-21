@@ -51,7 +51,9 @@ The following table shows the delimiters that can currently be used in execution
 
 ### Before you begin
 
-This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
+This functionality works in Microsoft Dynamics 365 for Retail. The July 2017 version with Application update 3 or later is required. For more information about Retail releases, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md). 
+
+Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
 
 ### Examples of commands for silent servicing
 
