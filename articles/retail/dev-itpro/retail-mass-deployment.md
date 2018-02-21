@@ -41,11 +41,11 @@ The following table shows the delimiters that can currently be used in execution
 |---------------------------|-------------|
 | -S or -Silent             | Silently run the installer. No graphical user interface (GUI) is used. The **-Q** and **-Quiet** delimiters have the same effect and can also be used. |
 | -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
-| -FilePath                 | Specify a custom installation location.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -LogFile                  | Specify a custom file location for the installation logs.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -FilePath                 | Specify a custom installation location.<p><p>We don't recommend that you use this delimiter for a standard installation.</p> |
+| -LogFile                  | Specify a custom file location for the installation logs.<p><p>We don't recommend that you use this delimiter for a standard installation.</p> |
+| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 
 ## Silent servicing
 
