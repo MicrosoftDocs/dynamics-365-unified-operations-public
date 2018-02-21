@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: smatemplategroup
+ms.search.form: SMAServiceObjectTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a service template group  
+# Create service objects  
 
 [!include[banner](../includes/banner.md)]
    
