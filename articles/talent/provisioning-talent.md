@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 # Provision Microsoft Dynamics 365 for Talent
-This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
+This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) and create a new Talent project. Unless a licensing issue prevents you from provisioning Talent, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
@@ -62,7 +62,7 @@ After you've created an LCS project, you can provision Talent into an environmen
 6. Select **Log on to Talent** to use your new environment.
 
 > [!NOTE]
-> If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
+> If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment. None of the Talent environments provisioned through LCS contain demo data that's configured for human resources tasks, or that is specific to Talent. If you need an environment with demo data, we recomment signing up for a free 60-day [Talent trial environment](https://dynamics.microsoft.com/en-us/talent/overview/).  A trial environment is owned by the user that requested it, but provides the ability to invite others through the Core HR system administration experience. Trial environments contain fictitious data that can be used to explore the application in a safe environment and are not intended for use as production environments.  Keep in mind that all data is deleted upon expiration, 60 days, and cannot be recovered.  Users can sign up for a new Trial environment after the existing environment expires.
 
 ## Create a new PowerApps environment (if required)
 
