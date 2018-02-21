@@ -80,45 +80,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ### Before you begin
 
-This functionality works in Retail. The December 2017 version (release version 7.3.1) with Application update 1 or later is required. It's assumed that the configuration of all stores, registers, and devices, and other configurations in the headquarters, have already been completed. If any configuration is still required, complete it before you follow the instructions in this topic.
-
-> [!NOTE]
-> It's important that you configure devices for mass deployment just before the devices are deployed and activated. After these devices are activated, verify that no devices are still configured for activation through mass deployment. By default, a device can be activated through the mass deployment workflow only one time. Devices that you leave configured for mass deployment in an unmanaged state for extended periods could be considered a security risk.
-
-#### Important concepts
-
-There are two important concepts for mass deployment of Retail Modern POS: device permission and user permission.
-
-- **Device permission** – Every Retail Modern POS device now has a permission that is named **Allow mass activation**. Usually, Microsoft Azure Active Directory (Azure AD) credentials are required for device activation. However, this permission allows a device to be activated exactly one time without Azure AD credentials. If the device requires reactivation, and the mass deployment workflow is still required, you must reset the activation status of the device to **Pending** and then set the **Allow mass activation** permission to **Yes**. However, we don't recommend this approach.
-- **User permission** – Every user now has a point of sale (POS) permission that is named **Allow mass activation**. This permission allows a user to activate a device that has been configured for activation through mass deployment. This permission can be set either directly on the user's POS permissions or at the group level. To update a group's permissions, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**. On the **Permission groups** page, select the appropriate permission group (for example, **Manager**), and set the **Allow mass activation** permission to **Yes**. All users who belong to this permission group can now activate a Retail Modern POS device that has been mass-deployed.
-
-### Configure mass deployment
-
-#### Configure user permission
-
-1. Use your Azure AD credentials to sign in to Retail headquarters.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Employees** &gt; **Permission groups**.
-3. On the left side of the page, select the group that requires the new permission (for example, the **Manager** or **Cashier** group).
-4. In the **Permissions** group, change the setting for **Allow mass activation** to **Yes**.
-5. On the Action Pane, select **Save**.
-6. On the drop-down menu, select **Configuration file**.
-7. Use the menu in the upper left to go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-8. On the left side of the page, select the **1060** job (also known as the **Staff** job).
-9. On the Action Pane, select **Run now**.
-10. When you're prompted to confirm that you want to run job 1060, select **Yes**.
-
-#### Configure device permission
-
-1. Use your Azure AD credentials to sign in to Retail headquarters.
-2. On the **Welcome** page, use the menu in the upper left to go to **Workspaces** &gt; **Channel deployment**. Users who have the appropriate permission can also access the **Channel deployment** workspace directly from the home page.
-3. On the Action Pane, select **Mass deployment**.
-4. On the drop-down menu, select **Mass device update**.
-5. In the dialog box that appears, select an organization node that requires permission. (For example, in the demo data, the Houston store is well configured with many devices that you can use for testing.) Then use the right arrow button in the center of the dialog box to move your selection from the **Available organization nodes** list on the left to the **Selected organization nodes** list on the right. Repeat this step until all required nodes appear in the **Selected organization nodes** list.
-
-    > [!NOTE]
-    > To verify that permission has been set in the appropriate manner, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. On the **Devices** page, select any device that exists in the nodes that you configured in this step, and verify that the **Allow mass activation** permission is set to **Yes**. As an alternative to the preceding steps of this procedure, you can manually set the permission for each device to **Yes** on the **Devices** page.
-
-6. Select **OK** at the bottom of the dialog box to complete the configuration of device permission.
+This functionality works in Retail. The release version 7.3 or later is required. It's assumed that the configuration of all stores, registers, and devices, and other configurations in the headquarters have already been completed. If any configuration is still required, complete it before you follow the instructions in this topic.
 
 #### Download the configured devices
 
@@ -151,9 +113,7 @@ The zip file that is generated and downloaded in the previous section includes f
 
 Many methods can be used to push data across an organization (that is, to individual computers). For example, the whole folder can be pushed to each computer, the XML can be parsed so that only the required files are pushed to each computer, or the files can be accessed remotely and never pushed to each computer. (Detailed discussion of the various methods is outside the scope of this topic.) However the files are used, the result is the same: either a scheduled task or a Microsoft Windows PowerShell script is run to do the silent installation of Retail Modern POS.
 
-After Retail Modern POS is installed on a device, the device works like an activated device. The first time that Retail Modern POS is started, it requests the user credentials of a user who has been given permission, as described earlier in this topic. After the user enters his or her standard sign-in credentials, the POS quickly completes device activation and signs the user in. The user can then work in Retail Modern POS in the usual manner. Every subsequent sign-in follows the standard flow.
-
-If a device must be reactivated, either the device must be set back to the **Pending** state in headquarters, or it must be reactivated by using Azure AD credentials. The mass deployment workflow can't be used to reactivate a device that has already been activated.
+After Retail Modern POS is installed on a device, the device must be activated per the standard Azure Active Directory flow.
 
 ### Examples of commands for silent mass deployment
 
