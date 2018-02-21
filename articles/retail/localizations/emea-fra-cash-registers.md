@@ -20,7 +20,7 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Norway
+ms.search.region: France
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
