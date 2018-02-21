@@ -47,14 +47,13 @@ group that you attach to the item, you can create a service object to a
 level of detail that includes the item serial number. This is useful when
 you must keep track of the exact item that the service object represents.
 
-
     A tangible service object can also be an item that is not directly related
 to a company's direct production or supply chain. For example, a tool kit
 that is used for repairs in a service order can be a service object that is
 not included in inventory. In this case, you don’t register it as an
 inventory item.
 
-Intangible objects are nonphysical things, such as a set of accounts or a
+-  Intangible objects are nonphysical things, such as a set of accounts or a
 legal document, on which you can perform a service task.
 
 ## Example of an intangible service object
