@@ -72,6 +72,10 @@ These short videos help you learn about the new features that are in Microsoft D
 
 These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
+**Cost management**
+
+-  [Overview of Cost management](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
 **Master planning**
 
 -  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
