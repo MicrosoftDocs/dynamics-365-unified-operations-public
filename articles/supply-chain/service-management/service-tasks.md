@@ -77,7 +77,7 @@ agreement lines for the two jobs are as follows:
 |---------|-------------------|----------------------------------------------|---------|
 | 9012    | 000008\_001       | Inspection and routine replacement – GB-1234 | Premium |
 
-Service agreement lines
+### Service agreement lines
 
 | Description             | Transaction type | Service object | Service task |
 |-------------------------|------------------|----------------|--------------|
@@ -105,7 +105,7 @@ agreement are as follows:
 | I/C - GB1234 | Inspection of gearbox GB-1234           | Visual and mechanical inspection and cleaning of gearbox GB-1234                                                              | Routine inspection of gearbox |
 | RR - GB1234  | Routine replacement of parts in GB-1234 | Routine service replacement of GR-1 and GR-5 components (for gearboxes manufactured before 2002, also replace GR-2 component) | Routine replacement of parts  |
 
-### Group service orders
+## Group service orders
 
 When you create service orders automatically, you can use service tasks as
 grouping criteria. To group service orders by service tasks, define on the
