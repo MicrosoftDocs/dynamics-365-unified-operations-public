@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: WebSearchAX retired
+title: AxERD retired
 description: We’ve had to retire the AxERD page. 
 author: margoc
 manager: AnnBe
