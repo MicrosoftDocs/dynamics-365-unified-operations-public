@@ -503,7 +503,7 @@ After the status is updated to **Complete**, the configuration is ready for depl
 ### Change the lookup of the BCD tax rate
 
 1.  Go to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
-2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
+2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1, Task 3: Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document).
 3.  Go to **Tax document** > **Header** > **Lines** > **Custom Duty** > **BCD** > **Rate**. Click the **Lookup** tab.
 4.  Click **Columns**.
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
