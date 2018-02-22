@@ -248,6 +248,34 @@ set TENANTID = '<tenant ID from existing database>'
 
 update dbo.PROVISIONINGMESSAGETABLE
 set TENANTID = '<tenant ID from existing database>'
+GO
+-- Begin Refresh Retail FullText Catalogs
+DECLARE @RFTXNAME NVARCHAR(MAX);
+DECLARE @RFTXSQL NVARCHAR(MAX);
+DECLARE retail_ftx CURSOR FOR
+SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
+	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+OPEN retail_ftx;
+FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+
+BEGIN TRY
+	WHILE @@FETCH_STATUS = 0  
+	BEGIN  
+		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+		EXEC SP_EXECUTESQL @RFTXSQL;
+		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+	END
+END TRY
+BEGIN CATCH
+	PRINT error_message()
+END CATCH
+
+CLOSE retail_ftx;  
+DEALLOCATE retail_ftx; 
+-- End Refresh Retail FullText Catalogs
+
 ```
 
 ## Synchronize the database
