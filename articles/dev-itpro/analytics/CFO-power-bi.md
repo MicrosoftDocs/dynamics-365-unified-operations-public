@@ -32,7 +32,8 @@ ms.dyn365.ops.version: July 2017 update
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the **CFO overview** Microsoft Power BI content. 
+This topic describes the **CFO overview** Microsoft Power BI content. This Power BI content applies to those using version 7.2. If you are using version 7.3 or later, please refer to [Financial Insights](financial-insights.md).
+
 
 ## Accessing the Power BI content
 
