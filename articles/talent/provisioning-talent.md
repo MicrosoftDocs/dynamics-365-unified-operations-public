@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 # Provision Microsoft Dynamics 365 for Talent
+
+[!include[banner](includes/banner.md)]
+
 This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) and create a new Talent project. Unless a licensing issue prevents you from provisioning Talent, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
@@ -57,47 +60,50 @@ After you've created an LCS project, you can provision Talent into an environmen
 3. Select **Add**, and then select the environment to provision Talent into.
 4. Select **Yes** to agree to the terms and begin deployment.
 
-    Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes just a few minutes. If provisioning fails, you must contact Support.
+    Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes just a few minutes. If the provisioning process is unsuccessful, you must contact Support.
 
 6. Select **Log on to Talent** to use your new environment.
 
 > [!NOTE]
-> If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment. 
+> If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
-> [!Note]
-> None of the Talent environments provisioned through LCS contain demo data that's configured for human resources tasks, or that is specific to Talent. If you need an environment with demo data, we recommend signing up for a free 60-day [Talent trial environment](https://dynamics.microsoft.com/en-us/talent/overview/). A trial environment is owned by the user that requested it, but provides the ability to invite others through the core HR system administration experience. Trial environments contain fictitious data that can be used to explore the application in a safe environment and are not intended for use as production environments. Keep in mind that all data is deleted upon expiration, 60 days, and cannot be recovered. You can sign up for a new trial environment after the existing environment expires.
+> [!NOTE]
+> Talent environments that are provisioned through LCS don't contain demo data that is configured for Human resources (HR) tasks, or that is specific to Talent. If you require an environment that contains demo data, we recommend that you sign up for a free 60-day [Talent trial environment](https://dynamics.microsoft.com/en-us/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Core HR. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when the trial environment expires after 60 days, all the data in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
 
 ## Create a new PowerApps environment (if required)
+The integration of Talent with PowerApps environments is intended to enable data integration and extension flows by letting you use PowerApps tools on top of Talent data. Therefore, it's important that you understand the purpose of PowerApps environments when you select the environment to use for Talent. For more information about PowerApps environments, such as the environment scope, environment access, and information about how to create and select an environment, see [Announcing PowerApps environments](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
 
-The vision behind Talent’s integration with PowerApps environments is to enable data integration and extension flows through the use of PowerApps tools on top of Talent data. As a result, it is important to understand the purpose of PowerApps environments when choosing the environment to use for Talent. For more information about PowerApps environments, including environment scope, environment access, and creating and choosing an environment, see [Announcing PowerApps environments](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  While each tenant is automatically provisioned in a Default PowerApps environment, it may not be the best environment to use for your Talent deployment. Data integration and testing strategies should be considered during this step, so we recommend that you consider the various implications for your deployment, since it is not easy to change later.
+Although each tenant is automatically provisioned in a Default PowerApps environment, that environment might not be the best environment for your Talent deployment. Data integration and testing strategies should be considered during this step. Therefore, we recommend that you consider the various implications for your deployment, because it isn't easy to change the PowerApps environment later.
 
-1. Select **Manage Environments** in LCS. You're taken to the [PowerApps Admin Center](https://preview.admin.powerapps.com/environments), where you can view existing environments and create new environments.
-2. Select the (**+**) **New environment** button.
+1. In LCS, select **Manage environments**. You're taken to the [PowerApps Admin center](https://preview.admin.powerapps.com/environments), where you can view existing environments and create new environments.
+2. Select **New environment**.
 3. Enter a unique name for the environment, and select the location to deploy to.
 
     > [!NOTE]
     > Talent isn't available in all regions. Therefore, be sure to check for availability before you select the location for your environment.
 
 4. When you're asked whether you want to create a database, select **Create database** to create the Common Data Service (CDS) database that must host part of your Talent data. By creating a database, you can also integrate PowerApps applications with Talent.
-5. You're asked about the access level that you want to use for the database. We recommend that you select **Restrict access**, because this option prevents Talent users from directly accessing sensitive data by using a PowerApps application.
+5. You're asked about the access level to use for the database. We recommend that you select **Restrict access**, because this option prevents Talent users from directly accessing sensitive data by using a PowerApps application.
 6. The CDS database that is created contains demo data that adds inactive employees and fictitious addresses, among other information, to your production environment. To remove the demo data, follow these steps after you've finished creating the CDS database:
 
     > [!IMPORTANT]
-    > If you previously created a CDS database and entered any of your company's production data into it, be aware that these steps remove **all** the data in the selected database, even your company's production data.
+    > If you previously created a CDS database and entered any of your company's production data into it, these steps remove **all** the data in the selected database, even your company's production data.
 
-    1. Sign in to [PowerApps](https://preview.web.powerapps.com/home), and select the environment that you created in step 2 from the drop-down on the right side of the page.
-    2. Expand the **Common Data Service** on the left navigation pane and choose **Entities**.
-    3. On the right side of the page, select the ellipse (**…**) button, and then select **Clear all data**.
-    4. Select **Delete data** to confirm that you want to remove the data. This action removes all the demo data that is included in the CDS by default. It also removes any other data that has been entered in the selected database.
-    
+    1. Sign in to [PowerApps](https://preview.web.powerapps.com/home).
+    2. In the drop-down list in the upper right, select the environment that you created in step 2.
+    3. In the navigation pane on the left, expand **Common Data Service**, and then select **Entities**.
+    4. On the right side of the page, select the ellipse (**…**) button, and then select **Clear all data**.
+    5. Select **Delete data** to confirm that you want to remove the data. This action removes all the demo data that is included in the CDS by default. It also removes any other data that has been entered in the selected database.
+
 You can now use your new environment.
 
-## Granting access to the environment
-The global administrator that created the environment will have access by default, but additional application users must be explicitly granted access. This can be done by [adding users](../dev-itpro/sysadmin/tasks/create-new-users.md) and [assigning them the appropriate roles](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) within the Core HR environment. In addition to this, it is also necessary to add those users to the PowerApps environment so they can access the Attract and Onboard applications.  The blog post, [Introducing the PowerApps admin center](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) might help you to complete those steps, which are outlined here:
+## Grant access to the environment
+By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you [add users](../dev-itpro/sysadmin/tasks/create-new-users.md) and [assign the appropriate roles to them](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) in the Core HR environment. You must also add those users to the PowerApps environment, so that they can access the Attract and Onboard applications. The procedure is outlined here. If you require help to complete the steps, see the [Introducing the PowerApps admin center](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) blog post.
 
-> 1.	The global administrator that deployed the Talent environment should navigate to the [PowerApps Admin center](https://preview.admin.powerapps.com/environments).   
-> 2.	Select the environment(s) in question.
-> 3.	Under the Security tab, add the necessary users to the “Environment Maker” role.
+This procedure is completed by the global administrator who deployed the Talent environment.
 
-Note that this final step of adding users to the PowerApps environment is temporary. We will eventually add functionality to enable this automatically when the user is added within Core HR.
+1. Open the [PowerApps Admin center](https://preview.admin.powerapps.com/environments).
+2. Select the appropriate environments.
+3. On the **Security** tab, add the required users to the **Environment Maker** role.
 
+Note that this final step, where you manually add users to the PowerApps environment, is temporary. Eventually, it will be completed automatically when users are added in Core HR.
