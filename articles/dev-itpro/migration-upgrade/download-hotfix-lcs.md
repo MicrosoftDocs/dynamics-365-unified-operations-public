@@ -42,13 +42,19 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
         
     If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.
     
->    [!NOTE]
->    If your environment is on Platform Update 4 and above, you will have the option to download **All binary udpates** and **Platform binary updates** from the LCS **Environment** page.  
->    - The **All binary updates** tile includes a combined package of application and platform binary updates.  
->    - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
+    > [!NOTE]
+    > If your environment is on Platform Update 4 and above, you will have the option to download **All binary udpates** and **Platform binary updates** from the LCS **Environment** page.  
+    > - The **All binary updates** tile includes a combined package of application and platform binary updates.  
+    > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
     
 
 - **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Any dependent X++ updates are then automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
+    > [!NOTE]
+    >  In your production environment, you will have the the **All X++ updates** tile and the **Critical X++ updates** tile.  The Critical X++ updates are recommended KBs based on the telemetry data in your production environment, they are specifically to your production environment, and can be downloaded only from your production environment.  
+    > - The **All X++ updates** tile includes all application X++ updates that are available to an environment.
+    > - The **Critical X++ updates** tile is only available in the production environment, it includes recommended application X++ updates that are available specifically to your production environment.
+    
 
 ## Download updates
 
