@@ -45,7 +45,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <tr class="header">
 <th>AX 2012 feature that was postponed</th>
 <th>Description</th>
-<th>Current status (as of January 2018)
+<th>Current status (as of March 2018)
 </tr>
 </thead>
 <tbody>
