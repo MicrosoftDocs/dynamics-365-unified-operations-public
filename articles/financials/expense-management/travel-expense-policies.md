@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysPolicyListPage 
+ms.search.form: SysPolicyListPage, TrvPolicyRule 
 audience: Application User
 # ms.devlang: 
 ms.reviewer:  twheeloc
