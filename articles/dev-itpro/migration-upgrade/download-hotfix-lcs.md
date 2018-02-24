@@ -82,7 +82,7 @@ To view available updates:
 
 4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.
 
-   ![Save package to asset library](./media/SaveBinaryPackge.jpg)
+   ![Save package to asset library](./media/SaveBinaryPackage.jpg)
 
 5. Click **Done** to return to environment page.
 
