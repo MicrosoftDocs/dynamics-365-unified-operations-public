@@ -70,7 +70,7 @@ To view available updates:
 
 1. Click **All binary update** tile to view the combined list of application and platform binary updates, or **Platform binary updates** tile for platform only binary updates. 
 
-   ![Binary tiles](./media/Binarytiles.png)
+   ![Binary tiles](./media/BinaryUpdateTiles.jpg)
 
 2. On the **Binary Updates** page, select **Save Package**.
 
@@ -82,15 +82,15 @@ To view available updates:
 
 4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.
 
-   ![Save package to asset library](./media/SaveBinarytoAssetLibrary.png)
+   ![Save package to asset library](./media/SaveBinaryPackge.jpg)
 
 5. Click **Done** to return to environment page.
 
 ## Download X++ updates
 
-1. Click on **Application X++ update** tile to view the list of available application updates.
+1. Click on **All X++ updates** tile to view the list of available application updates to an environment, or **Critical X++ updates** for recommended application updates to your production environment. 
 
-   ![Application X++ update tile](./media/x++Tile.png)   
+   ![Application X++ update tile](./media/X++UpdateTiles.jpg)   
   
 2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then click **Add** to add selected KBs to the **Download package**.
 
