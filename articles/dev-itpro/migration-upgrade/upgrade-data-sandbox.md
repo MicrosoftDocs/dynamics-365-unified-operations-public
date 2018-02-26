@@ -50,7 +50,7 @@ Here are the high-level steps in the upgrade process.
 2. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 3. Upload the bacpac file to Azure storage.
 4. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
-5. Run the MajorVersionDataUpgrade.zip package to run the data upgrade against the imported database.
+5. Run the appropriate data upgrade package against the imported database.
 
 ## Create a copy of the AX 2012 database
 
@@ -277,9 +277,7 @@ Run the following script against the imported database. The script performs the 
 	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
-### Run the data upgrade deployable package (MajorVersionDataUpgrade.zip)
-
-Run the data upgrade deployable package for your environment (MajorVersionDataUpgrade.zip). 
+### Run the data upgrade deployable package
 
 To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 
