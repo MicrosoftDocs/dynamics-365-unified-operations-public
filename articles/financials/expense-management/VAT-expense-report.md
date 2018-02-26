@@ -53,7 +53,7 @@ steps are as follows:
 
 5. Process expenses for domestic VAT recovery. 
 
-The following scenarios provide examples of how Fabrikam employees complete these steps. 
+The following scenarios provide examples of how Contoso employees complete these steps. 
 
 ## In an expense report, enter tax information about credit card transactions to identify eligible VAT refunds
 
