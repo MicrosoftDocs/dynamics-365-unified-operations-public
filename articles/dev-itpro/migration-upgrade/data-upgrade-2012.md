@@ -73,9 +73,7 @@ Next, rename the original AXDB database **AXDB_orig**. This database might be us
 
 Finally, rename the newly restored AX 2012 database **AXDB**.
 
-### Run the data upgrade deployable package (MajorVersionDataUpgrade.zip)
-
-Run the data upgrade deployable package for your environment (MajorVersionDataUpgrade.zip). 
+### Run the data upgrade deployable package 
 
 To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 
