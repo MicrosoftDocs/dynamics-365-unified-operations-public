@@ -51,10 +51,7 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
 - **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Any dependent X++ updates are then automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
     > [!NOTE]
-    >  In your production environment, you will have the the **All X++ updates** tile and the **Critical X++ updates** tile.  The Critical X++ updates are recommended KBs based on the telemetry data in your production environment, they are specifically to your production environment, and can be downloaded only from your production environment.  
-    > - The **All X++ updates** tile includes all application X++ updates that are available to an environment.
-    > - The **Critical X++ updates** tile is only available in the production environment, it includes recommended application X++ updates that are available specifically to your production environment.
-    
+    >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment.  
 
 ## Download updates
 
