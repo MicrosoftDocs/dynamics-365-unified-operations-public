@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
 description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
-ms.date: 01/31/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -277,9 +277,18 @@ Run the following script against the imported database. The script performs the 
 	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
-### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
+### Run the data upgrade deployable package (MajorVersionDataUpgrade.zip)
 
-Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
+Run the data upgrade deployable package for your environment (MajorVersionDataUpgrade.zip). 
+
+To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+
+1. Sign in to http://lcs.dynamics.com/
+2. Select the **Shared asset library** tile.
+3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
+4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
+
+For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
 
 ### Upgrade a copy of the database in a development environment
 
