@@ -68,7 +68,7 @@ The following options are available to help you port personal data in response t
 ### Right to restrict processing
 
 + Remove the employee from, for example, a course.
-+ Following guidance from its legal counsel, refuse the right to restrict processing where data is needed by Contoso for compliance with other legal or industry mandates.
++ Following guidance from its legal counsel, refuse the right to restrict processing where data is needed by your company for compliance with other legal or industry mandates.
 
 ## Additional notes that apply to requests for personal data
 
