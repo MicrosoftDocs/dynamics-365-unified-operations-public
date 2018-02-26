@@ -57,7 +57,7 @@ The following scenarios provide examples of how Fabrikam employees complete thes
 
 ## In an expense report, enter tax information about credit card transactions to identify eligible VAT refunds
 
-Nancy, a U.S.-based Fabrikam sales representative, recently returned from a sales trip to the United Kingdom. Nancy must create an 
+Nancy, a U.S.-based Contoso sales representative, recently returned from a sales trip to the United Kingdom. Nancy must create an 
 expense report to reconcile her expenses. During her trip, she incurred some personal credit card expenses for meals. When Nancy is 
 entering information in her expense report, in the **Country/region** field of the **Edit expense report** page, she selects United 
 Kingdom. The list of sales tax groups is filtered to display only the groups that apply to the United Kingdom. Nancy selects the United 
