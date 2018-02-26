@@ -154,7 +154,7 @@ This content provides a walkthrough of the entities of the India Goods and Servi
   <td>Main accounts for the GST posting type 
   </td>
   <td> <p><strong>General ledger</strong> > <strong>Common</strong> > <strong>Main accounts</strong></p>
-    <p> Create a Main account for all required state-wide ledger accounts and be sure to select <strong>GST</strong> as the posting type on the <strong>Setup</strong> FastTab. For more information, see [Create a main account](../general-ledger/tasks/create-main-account.md).
+    <p> Create a Main account for all required state-wide ledger accounts and be sure to select <strong>GST</strong> as the posting type on the <strong>Setup</strong> FastTab. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localization/tasks/create-main-account">Create a main account</a>.
     </p>
   </td>
   </tr>
