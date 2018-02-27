@@ -62,6 +62,6 @@ The service template lines are now copied to the new service order, together wit
 
 ## Related topics
 
-[Service templates](service-agreement-template.md)
+[Service templates](service-template.md)
 
 
