@@ -160,6 +160,10 @@ Run the following SQL against the upgraded database to make sure that change tra
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
 
+## Refresh the data entities list
+
+If you have upgraded from a platform version prior to platform update 14 to a platform update 14 or higher, then you must refresh the data entity list in data management. This is available in Data management > framework parameters > entity settings > refresh entity list. This will ensure that the entity list is rebuilt on the latest platform and the required metatdata is available for data management operations.
+
 ## Troubleshoot upgrade script errors
 
 This section provides information that can help you troubleshoot various issues.
