@@ -360,7 +360,7 @@
 #### [ValueMetadata Type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Data integration
-## [Integration patterns](data-entities/integration-overview.md)
+## [Choose a data integration (import/export) strategy](data-entities/integration-overview.md)
 
 ## Data integration APIs
 ### [Data management package API](data-entities/data-management-api.md)
