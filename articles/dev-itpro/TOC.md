@@ -9,7 +9,7 @@
 ## [Application stack and server architecture](dev-tools/application-stack-server-architecture.md)
 ## [Get an evaluation copy](dev-tools/get-evaluation-copy.md)
 ## [Sign up for a subscription](dev-tools/sign-up-preview-subscription.md)
-## [Access instances](dev-tools/access-instances.md)
+## [Deploy and access a development environment](dev-tools/access-instances.md)
 ## [Development system requirements](dev-tools/development-system-requirements.md)
 ## Fleet Management sample application
 ### [Fleet Management sample application](dev-tools/fleet-management-sample.md)

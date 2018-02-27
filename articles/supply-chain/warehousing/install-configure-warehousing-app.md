@@ -36,7 +36,9 @@ ms.dyn365.ops.version: Version 1611
 
 
 > [!NOTE]
+
 > This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 

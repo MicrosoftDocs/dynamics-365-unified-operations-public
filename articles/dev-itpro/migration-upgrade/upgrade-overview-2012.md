@@ -5,7 +5,7 @@ title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Ente
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 02/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-In Platform update 8 and the July 2017 Application release, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 is supported, support for older versions of AX 2012 will be added later. The upgrade process is built on the following elements:
+In Platform update 8 and the July 2017 Application release, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
 - Tools to help you bring forward existing custom application code from AX 2012.
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
@@ -77,11 +77,12 @@ The upgrade analyzer tool runs against your AX 2012 environment and identifies t
 - **SQL configuration** – This process reviews the SQL configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
 - **Deprecated features** – This process identifies features that you're currently using, but that aren't available in Finance and Operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
 
-Additionally, as part of this step, you must install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255) in the AX 2012 environment (this link requires that you log in to LCS). This hotfix provides a pre-upgrade checklist. In the AX 2012 environment, you can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
+Additionally, as part of this step, you must install a pre-upgrade checklist in your AX 2012 environment. You can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations. 
 
-The output of this step becomes the workstream in the upgrade project plan for your AX 2012 system administrators.
+- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
+- if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
 
-For more information, see [Analysis: Use the upgrade analyzer to plan migration work](upgrade-analyzer-tool.md).
+The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators.For more information, see [Analysis: Use the upgrade analyzer to plan migration work](upgrade-analyzer-tool.md).
 
 ### Run the Code upgrade estimation tools
 This step takes your code from AX 2012, converts it to the new format, and provides feedback about conflicts that a developer must resolve later. This step forms the basis for the estimate of the cost of your code upgrade.

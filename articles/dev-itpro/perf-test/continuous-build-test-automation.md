@@ -54,11 +54,13 @@ Compare VSTS features required for your organization: <https://www.visualstudio.
     
 -   **Free VSTS account provides only one build agent**. Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.
 
+
 To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
 -   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](/vsts/billing/buy-load-testing-vs)
+
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
 
@@ -87,7 +89,7 @@ LCS provides an option to deploy a Development topology environment. With this o
 
 ### VSTS credential setup and linking to LCS project
 
-1.  Login to the LCS portal to connect to VSTS and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/en/).
+1.  Login to the LCS portal to connect to VSTS and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/).
 2.  Select a project that you are working on.
 3.  Click the **Project Settings** tile.
 4.  Select **Visual Studio Team Services** and enter the VSTS URL where the source code for your module project is located.
