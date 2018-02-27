@@ -30,18 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # The Person search report
 
-You can use the Global address book in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to create an instance of a person that is described in the data model as a party. 
+The Person search report is a refinement of the existing Data management framework of Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
 > The Person search report is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations), Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent.
+
+You can use the Global address book in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to create an instance of a person that is described in the data model as a party. 
 
 When you add a contact, customer, user, worker, or other person in Finance and Operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
 
 ![Address book structure](../../fin-and-ops/organization-administration/media/address-book-structure.png)
 
 At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person in Finance and Operations is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data.  The Person search report  can help with both these tasks.
-
-The Person search report is a refinement of the existing Data management framework of  Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 The Person search report is extensible. If you find that the existing entities do not contain all of the personal data you are looking for, they can be extended, or new entities can be written. In addition, you can change the data mappings for each entity and remove fields that you don't want to export.
 
