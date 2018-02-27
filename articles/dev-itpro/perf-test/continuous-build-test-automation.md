@@ -54,11 +54,11 @@ Compare VSTS features required for your organization: <https://www.visualstudio.
     
 -   **Free VSTS account provides only one build agent**. Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.
 
-To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](../../../vsts/billing/set-up-billing-for-your-account-vs) 
+To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](../../../vsts/billing/buy-load-testing-vs)
+-   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](/vsts/billing/buy-load-testing-vs)
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
 
@@ -216,6 +216,3 @@ Select specific completed build and view success/ failure details.
 [![build10](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
 [![build11](./media/build11-1024x455.jpg)](./media/build11.jpg)
-
-
-
