@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Title TBD
-description: TBD
+title: Title Create a new POS operation and add it to the POS layout using Button grid designer
+description: This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,19 +23,22 @@ ms.search.scope: Retail, Operations
 ms.search.region: Global
 # ms.search.industry: retail
 ms.author: mumani
-ms.search.validFrom: 2017-12-31 
-ms.dyn365.ops.version: 7.3 
+ms.search.validFrom: 2017-10-31  
+ms.dyn365.ops.version: Application update 4 
 ---
 
-# How to create new POS Operation and add it to Button grid
+# Create a new POS operation and add it to the POS layout using Button grid designer
 
-**How to create new POS Operation:**
+This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer. This topic applies to the following applications where platform update 8 and the Application update 4 hotfix are installed:
 
-This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
+- Dynamics 365 for Finance and Operations 
+- Dynamics 365 for Retail 
 
+## How to create new POS Operation
 When you want your business logic to be executed in POS based on user button click then you should create POS operations. POS operations can execute multiple activities or workflows. Ex: Navigate to new view or ask user input or execute some business logic etc. all standard and custom POS operation supports pre and post trigger.
 
-Note: If you want our logic to be executed part of some other workflow or no user click is required then you create POS APIs(request/response), POS operations is not required in these scenarios.
+> [!Note]
+> If you want our logic to be executed part of some other workflow or no user click is required then you create POS APIs(request/response), POS operations is not required in these scenarios.
 
 Each operation should implement the following:
 
