@@ -133,7 +133,7 @@ You may create report codes in details which are necessary for analysis (for exa
 
 ### Sales tax codes
 
-To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** form.
+To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** page.
 
 > [!NOTE]
 > You can enter Reporting codes in the sales tax code either before posting tax transactions or after posting tax transactions.
