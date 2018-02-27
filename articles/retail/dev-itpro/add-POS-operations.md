@@ -34,7 +34,6 @@ This topic explains how to create a new POS operation and add it to the POS layo
 - Dynamics 365 for Finance and Operations 
 - Dynamics 365 for Retail 
 
-## How to create new POS Operation
 When you want your business logic to be executed in POS based on user button click then you should create POS operations. POS operations can execute multiple activities or workflows. Ex: Navigate to new view or ask user input or execute some business logic etc. all standard and custom POS operation supports pre and post trigger.
 
 > [!Note]
@@ -50,6 +49,7 @@ Each operation should implement the following:
 
 4.  **Operation handler** – Operation handler extends from ExtensionOperationRequestHandlerBase and it contains core logic for the operation. All the business logic should be returned in the handler and it should return the operation response after execution of the operation.
 
+## Create new POS Operation
 Lets create a sample new operation to do simplified EOD of processing. In this operation, we will call the standard Tender removal, safe drop, tender declaration and Close shift in a sequence. This one operation combines multiples steps and execute based on the conditions defined.
 
 > [!Note]
@@ -63,18 +63,18 @@ Lets create a sample new operation to do simplified EOD of processing. In this o
 
 4.  Under EODSample folder create new folder called Operations.
 
-    **Create the operation request class:**
+### Create the operation request class
 
-5.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequest.ts
+1.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequest.ts
 
-6.  Add the below import statement inside the EndOfDayOperationRequest.ts file to import the relevant entities and context.
+2.  Add the below import statement inside the EndOfDayOperationRequest.ts file to import the relevant entities and context.
 
 ```typescript
 import { ExtensionOperationRequestBase } from "PosApi/Create/Operations"; 
                                                                             
  import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
 ```
-7.  Inside the EndOfDayOperationRequest.ts file add a new class called EndOfDayOperationRequest and extend it from ExtensionOperationRequestBase.
+3.  Inside the EndOfDayOperationRequest.ts file add a new class called EndOfDayOperationRequest and extend it from ExtensionOperationRequestBase.
 
 ```typescript
  /**                                                                                                                                      * (Sample) Operation request for executing end of day operations.                                                                       
@@ -93,15 +93,15 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
 > [!Note]
 > In the Super method, we are initializing the operation id as 5500, you can use any operation id starting from 4001. 0 - 4000 is reserved for internal Retail POS operations and no two operations should have the same operation id. Also the button grid desginer properties will show custom parameters text box (where you can pass parameters to the POS operation from HQ) only if the operation id is greater than 4001.
 
-**Create the operation response class:**
+### Create the operation response class
 
-8.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationResponse.ts
+1.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationResponse.ts
 
-9.  Add the below import statement inside the EndOfDayOperationResponse.ts file to import the relevant entities and context.
+2.  Add the below import statement inside the EndOfDayOperationResponse.ts file to import the relevant entities and context.
 
     import { Response } from "PosApi/Create/RequestHandlers";
 
-10.  Inside the EndOfDayOperationResponse.ts add a new class called EndOfDayOperationResponse and extend it from Response class.
+3.  Inside the EndOfDayOperationResponse.ts add a new class called EndOfDayOperationResponse and extend it from Response class.
 ```typescript
  /**                                                               
                                                                       
@@ -111,11 +111,11 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
                                                                       
  export default class EndOfDayOperationResponse extends Response { }  
 ```
-**Create the operation handler class:**
+### Create the operation handler class
 
-11.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequestHandler.ts
+1.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequestHandler.ts
 
-12.  Add the below import statement inside the EndOfDayOperationRequestHandler.ts to import the relevant entities and context.
+2.  Add the below import statement inside the EndOfDayOperationRequestHandler.ts to import the relevant entities and context.
 
 ```typescript
  import { ExtensionOperationRequestType, ExtensionOperationRequestHandlerBase } from "PosApi/Create/Operations";         
@@ -134,17 +134,17 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
                                                                                                                           
  import { ClientEntities } from "PosApi/Entities";                                                                        |
 ```
-13.  Inside the EndOfDayOperationRequestHandler.ts add a new class called EndOfDayOperationRequestHandler and extend it from ExtensionOperationRequestHandlerBase class.
+3.  Inside the EndOfDayOperationRequestHandler.ts add a new class called EndOfDayOperationRequestHandler and extend it from ExtensionOperationRequestHandlerBase class.
 ```typescript
     export default class EndOfDayOperationRequestHandler<TResponse extends EndOfDayOperationResponse> extends ExtensionOperationRequestHandlerBase<TResponse> {}
 ```
-14.  Each handler should implement two methods:
+4.  Each handler should implement two methods:
 
      1.  Supported request
 
      2.  Execute Async
 
-15.  Add the supported request type in the class:
+5.  Add the supported request type in the class:
 
 ```typescript
 /**                                                                           
@@ -161,7 +161,7 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
                                                                                   
  }                                                                                |
 ```
-16.  Implement the executeAsync method:
+6.  Implement the executeAsync method:
 ```typescript
  /**                                                                                                                                                    
                                                                                                                                                            
@@ -483,11 +483,11 @@ The overall code should look like this:
                                                                                                                                                                           
  }                                                                                                                                                                        |
 ```
-**Create the operation factory class:**
+### Create the operation factory class
 
-17.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequestFactory.ts
+1.  In the Operations folder, add a new ts (typescript) file and name it has EndOfDayOperationRequestFactory.ts
 
-18.  Add the below import statement inside the EndOfDayOperationRequestFactory.ts to import the relevant entities and context.
+2.  Add the below import statement inside the EndOfDayOperationRequestFactory.ts to import the relevant entities and context.
 ```typescript
 import EndOfDayOperationResponse from "./EndOfDayOperationResponse";                                        
                                                                                                               
@@ -497,7 +497,7 @@ import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
                                                                                                               
  import { ClientEntities } from "PosApi/Entities";                                                            |
 ```
-19.  Let’s add a function inside the EndOfDayOperationRequestFactory.ts to link the operation handler and the operation button.
+3.  Let’s add a function inside the EndOfDayOperationRequestFactory.ts to link the operation handler and the operation button.
 ```typescript
 let getOperationRequest: ExtensionOperationRequestFactoryFunctionType<EndOfDayOperationResponse> =                                                        
                                                                                                                                                                   
@@ -609,7 +609,7 @@ The overall code should look like this:
                                                                                                                                                                   
  export default getOperationRequest;                                                                                                                              |
 ```
-20.  In the manifest.json file, copy and paste the below code:
+4.  In the manifest.json file, copy and paste the below code:
 ```typescript
 {                                                                             
                                                                                 
@@ -647,7 +647,7 @@ The overall code should look like this:
                                                                                 
  }                                                                              |
 ```
-21.  Open the extensions.json file under POS.Extensions project and update it with EODSample, so that POS during runtime will include this extension.
+5.  Open the extensions.json file under POS.Extensions project and update it with EODSample, so that POS during runtime will include this extension.
 ```typescript
  {
  "extensionPackages": [
@@ -661,7 +661,7 @@ The overall code should look like this:
 ]
 }
 ```
-22.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+6.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
 ```typescript
 "extends": "../tsconfigs/tsmodulesconfig",
 
@@ -680,7 +680,7 @@ The overall code should look like this:
 "SuspendTransactionReceiptSample"
 ],
 ```
-23.  Compile and rebuild the project.
+7.  Compile and rebuild the project.
 
 ## Add Custom operation button to the POS layout in HQ
 
@@ -702,7 +702,7 @@ The overall code should look like this:
 
     **Note:** The above steps assumes you are using demo data, if not create and add the button according to your custom configurations.
 
-## How to validate your extension
+## Validate your extension
 
 1.  Press F5 and deploy the POS to test your customization.
 
