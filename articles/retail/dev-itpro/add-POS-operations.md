@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Application update 4
 
 # Create a new POS operation and add it to the POS layout using Button grid designer
 
-This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer. This topic applies to the following applications where platform update 8 and the Application update 4 hotfix are installed:
+This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer. This topic applies to the following applications where Platform update 8 and the Application update 4 hotfix are installed:
 
 - Dynamics 365 for Finance and Operations 
 - Dynamics 365 for Retail 
@@ -91,7 +91,7 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
  }                                                                                                                                                          |
 ```
 > [!Note]
-> In the Super method, we are initializing the operation id as 5500, you can use any operation id starting from 4001. 0 - 4000 is reserved for internal Retail POS operations and no two operations should have the same operation id. Also the button grid desginer properties will show custom parameters text box (where you can pass parameters to the POS operation from HQ) only if the operation id is greater than 4001.
+> In the Super method, we are initializing the operation ID as 5500, you can use any operation ID starting from 4001. 0 - 4000 is reserved for internal Retail POS operations and no two operations should have the same operation ID. Also the button grid desginer properties will show custom parameters text box (where you can pass parameters to the POS operation from HQ) only if the operation ID is greater than 4001.
 
 ### Create the operation response class
 
@@ -700,7 +700,8 @@ The overall code should look like this:
 
 8.  Go to Retail and commerce > Retail IT > Distribution schedule, select "1090" and click "Run now".
 
-    **Note:** The above steps assumes you are using demo data, if not create and add the button according to your custom configurations.
+    > [!Note]
+    > The above steps assumes you are using demo data, if not create and add the button according to your custom configurations.
 
 ## Validate your extension
 
