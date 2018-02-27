@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 02/05/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -162,7 +162,7 @@ ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENT
 
 ## Refresh the data entities list
 
-If you have upgraded from a platform version prior to platform update 14 to a platform update 14 or higher, then you must refresh the data entity list in data management. This is available in Data management > framework parameters > entity settings > refresh entity list. This will ensure that the entity list is rebuilt on the latest platform and the required metatdata is available for data management operations.
+If you have upgraded to Platform update 14 or later, then you will need refresh the data entity list in the Data management workspace (**Data management** > **Framework parameters** > **Entity settings** > **Refresh entity list**) to ensure that the entity list is rebuilt on the latest platform and that the required metatdata is available for data management operations. 
 
 ## Troubleshoot upgrade script errors
 
