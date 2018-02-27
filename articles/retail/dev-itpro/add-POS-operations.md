@@ -42,7 +42,7 @@ When you want your business logic to be executed in POS based on user button cli
 
 Each operation should implement the following:
 
-1.  **Operation request** – Operation request extends from the ExtensionOperationRequestBase and it contains all the inputs for the operation to execute
+1.  **Operation request** – Operation request extends from the ExtensionOperationRequestBase and it contains all the inputs for the operation to execute.
 
 2.  **Operation response** – Operation response extends from the Response and it contains all the response based on the operation execution.
 
@@ -50,9 +50,10 @@ Each operation should implement the following:
 
 4.  **Operation handler** – Operation handler extends from ExtensionOperationRequestHandlerBase and it contains core logic for the operation. All the business logic should be returned in the handler and it should return the operation response after execution of the operation.
 
-**Scenario:** Lets create a sample new operation to do simplified EOD of processing. In this operation, we will call the standard Tender removal, safe drop, tender declaration and Close shift in a sequence. This one operation combines multiples steps and execute based on the conditions defined.
+Lets create a sample new operation to do simplified EOD of processing. In this operation, we will call the standard Tender removal, safe drop, tender declaration and Close shift in a sequence. This one operation combines multiples steps and execute based on the conditions defined.
 
-Note: You can create new operation and execute your own custom logic or call existing POS operations like Add item to cart, Apply line discount etc. or call existing APIs like Get current cart, Set extension properties etc.
+> [!Note]
+> You can create new operation and execute your own custom logic or call existing POS operations like Add item to cart, Apply line discount etc. or call existing APIs like Get current cart, Set extension properties etc.
 
 1.  Open visual studio 2015 in administrator mode.
 
@@ -89,7 +90,8 @@ import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
                                                                                                                                                             
  }                                                                                                                                                          |
 ```
-**Note:** In the Super method, we are initializing the operation id as 5500, you can use any operation id starting from 4001. 0 - 4000 is reserved for internal Retail POS operations and no two operations should have the same operation id. Also the button grid desginer properties will show custom parameters text box (where you can pass parameters to the POS operation from HQ) only if the operation id is greater than 4001.
+> [!Note]
+> In the Super method, we are initializing the operation id as 5500, you can use any operation id starting from 4001. 0 - 4000 is reserved for internal Retail POS operations and no two operations should have the same operation id. Also the button grid desginer properties will show custom parameters text box (where you can pass parameters to the POS operation from HQ) only if the operation id is greater than 4001.
 
 **Create the operation response class:**
 
@@ -680,7 +682,7 @@ The overall code should look like this:
 ```
 23.  Compile and rebuild the project.
 
-**Add Custom operation button to the POS layout in HQ:**
+## Add Custom operation button to the POS layout in HQ
 
 1.  Go to Retail and commerce > Channel setup > POS setup > POS > Operations in Dynamics 365 for Retail.
 
@@ -700,7 +702,7 @@ The overall code should look like this:
 
     **Note:** The above steps assumes you are using demo data, if not create and add the button according to your custom configurations.
 
-**How to validate your extension:**
+## How to validate your extension
 
 1.  Press F5 and deploy the POS to test your customization.
 
