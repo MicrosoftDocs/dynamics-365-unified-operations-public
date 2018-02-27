@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 author: robadawy
 manager: AnnBe
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,14 +39,10 @@ ms.dyn365.ops.version: Platform update 8
 This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 
 ## Installation
+Use the pre-upgrade checklist to enter data that will be required for the upgrade procedure. 
 
-For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
-
-## Compress your AX 2012 database
-
-In order to minimize downtime during cutover and to reduce the cost of SQL Azure, we strongly recommend that you perform page compression on your AX 2012 database before you upgrade to Finance and Operations. Create a copy of your production database, and compress it on a test system before you compress your AX 2012 production database.
-
-Refer to this article on SQL Server [Data Compression](/sql/relational-databases/data-compression/data-compression) for more information.
+- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
+- if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
 
 ## Prepare model metadata
 
@@ -70,15 +66,13 @@ Another goal during data upgrade is to preserve security role assignments. This 
 
 If the process is successful, the task is marked as completed.
 
-## Setup user mapping
+## Set up user mapping
 
 In AX 2012, users are authenticated against an on-premises Active Directory server. However, in Finance and Operations, users are authenticated against Azure Active Directory (Azure AD). This task provides a form where you can map existing AX 2012 users to equivalent Azure AD users. The AX 2012 users will then be able to access Finance and Operations.
 
-1. In the Finance and Operations data upgrade checklist, click **Setup user mapping**.
-1. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
-
+1. In the Finance and Operations data upgrade checklist, click **Set up user mapping**.
+2. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
     - Import users from AX 2012, and then manually fill in the Azure AD email address:
-
         1. Click **Import from AX**. The grid is filled with existing users.
         1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
 
