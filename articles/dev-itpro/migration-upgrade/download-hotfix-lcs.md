@@ -43,7 +43,7 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
     If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.
     
     > [!NOTE]
-    > If your environment is on Platform Update 4 and above, you will have the option to download **All binary udpates** and **Platform binary updates** from the LCS **Environment** page.  
+    > If your environment is on Platform Update 4 and above, you will have the option to download **All binary updates** and **Platform binary updates** from the LCS **Environment** page.  
     > - The **All binary updates** tile includes a combined package of application and platform binary updates.  
     > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
     
@@ -52,7 +52,9 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
 
     > [!NOTE]
     >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment. 
+    >
     > To test and apply critical X++ updates, you should first download the updates from the production environment, and then apply them in a development environment, to build a deployable package to deploy to your sandbox and then production environments. 
+    >
     > For more information about deploying updates, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)  
 
 ## Download updates
