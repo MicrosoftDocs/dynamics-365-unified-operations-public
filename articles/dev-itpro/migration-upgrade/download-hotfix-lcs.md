@@ -48,10 +48,11 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
     > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
     
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Any dependent X++ updates are then automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
     > [!NOTE]
-    >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment.  
+    >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment.  To apply the critical X++ updates, you will need to download the critical X++ udpates from the production environment, then apply it in the development environment to build the deployable package before deploy it to your production environment. 
+    For more information about deploye updates, please see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)  
 
 ## Download updates
 
@@ -103,3 +104,7 @@ To view available updates:
 4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
 
     ![Review and download hotfixes](media/Review%20and%20download%20X%2B%2B%20updates.png)
+
+## Also see
+- [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
+- [Install a metadata hotfix](./install-metadata-hotfix-package.md) 
