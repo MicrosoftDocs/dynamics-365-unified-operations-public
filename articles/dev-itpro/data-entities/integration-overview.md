@@ -46,6 +46,7 @@ The following table lists the integration patterns that are available for Financ
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management API](data-management-api.md) |
 | Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
+| Excel integration | [Office integration](../office-integration/office-integration.md) |
 
 ## Synchronous vs. asynchronous integration patterns
 
