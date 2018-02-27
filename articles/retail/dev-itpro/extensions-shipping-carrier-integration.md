@@ -78,11 +78,12 @@ Like the client side we have added few new requests in Commerce runtime (busines
 ## Below are the new requests added for the packing slip fulfillment scenario:
 
 ## MarkAsPickedRealtimeRequest:
-This request marks the fulfillment lines as picked. You can add some custom logic according to your scenario if you want to change some property or add some logic etc. before marking the line as picked. This picked line information will be later used for printing the packing slip. You can override this request or add pre or post trigger according to your scenario 
+This request marks the fulfillment lines as picked. You can add some custom logic according to your scenario if you want to change some property or add some logic etc. before marking the line as picked. This picked line information will be later used for printing the packing slip. You can override this request or add pre or post trigger according to your scenario. 
 
 **Ex:** For the fulfillment lines if you want to calculate item weight etc. the you can customize this service. 
 
-**Note:** If you need some logic for your customization that need to be determined in HQ then you can customize at HQ level also no need to customize in CRT. Ex: For each line if you want to get the item weight which is available only in HQ then you customize the relevant real time service methods and return the result to CRT form HQ itself.
+> [!Note]
+> If you need some logic for your customization that need to be determined in HQ then you can customize at HQ level also no need to customize in CRT. Ex: For each line if you want to get the item weight which is available only in HQ then you customize the relevant real time service methods and return the result to CRT form HQ itself.
 
 ## PackFulfillmentLinesRealtimeRequest:
 Updates the status of the fulfillment lines to partially packed or packed. You can override this service or add pre or post trigger according to your extension scenario. 
@@ -94,10 +95,10 @@ New real time service methods added in Headquarters to get the packing slip info
 We added all the new methods related to this order fulfillment packing slip process in this class.
 
 ### GetPackingSlipsData:
-This method returns the all the packing slip information by passing the Sales Id as the parameter. 
+This method returns the all the packing slip information by passing the Sales ID as the parameter. 
 
 ### GetFulfillmentLinesByPackingSlipId:
-Return the fulfillment lines based on the packing slip id. Suppose if you have the packing slip id and want to get the sales lines relevant to that packing slip id then you can use this method.
+Return the fulfillment lines based on the packing slip ID. Suppose if you have the packing slip ID and want to get the sales lines relevant to that packing slip ID then you can use this method.
 
 ### MarkFulfillmentLinesAsPacked
 This method updates the status of the fulfillment lines to packed by taking the fulfillment details as parameter in Xml string format. POS calls CRT to mark the selected lines from the POS UI as picked. **MarkAsPickedRealtimeRequest** in CRT calls the **MarkFulfillmentLinesAsPacked** real time service method in HQ to set the line status as marked. You can customize the **packingSlipExtensionPoint** method to add custom logic or return additional information when the line marked as packed and returned for printing.
