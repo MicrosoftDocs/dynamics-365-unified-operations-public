@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: AxERD retired
+title: AxErd retired
 description: We’ve had to retire the AxERD page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
 author: margoc
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 2012
 
 ---
 
-# AxERD retired
+# AxErd retired
 
-We’ve unfortunately had to retire the AxERD web page, which provided Entity relationship diagrams (ERDs) for many Microsoft Dynamics AX 2012 tables. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo: https://github.com/Microsoft/ax-2012-doc-tools
+We’ve unfortunately had to retire the AxErd web page, which provided Entity relationship diagrams (ERDs) for many Microsoft Dynamics AX 2012 tables. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo: https://github.com/Microsoft/ax-2012-doc-tools
 
 The HTML pages are in the repo, at [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)
 
