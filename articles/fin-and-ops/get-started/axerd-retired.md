@@ -2,7 +2,7 @@
 # required metadata
 
 title: AxErd retired
-description: We’ve had to retire the AxERD page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
+description: We’ve had to retire the AxErd page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
 author: margoc
 manager: AnnBe
 ms.date: 02/27/2018
