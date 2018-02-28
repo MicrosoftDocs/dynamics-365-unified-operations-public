@@ -164,12 +164,20 @@ Suppose that a Contoso customer decides that he or she wants to understand what 
 + Affirm that the DSR request is proper and valid. You will need to work with your legal counsel to determine what is valid. For example, you must make sure that compliance with a DSR request doesn't conflict with any other legal obligations that you have.
 + Verify that you have the information that is related to the request.
 
-> [!NOTE]
-> Identify products or services that your organization has enabled and is sharing personal data with, such as a credit card processor. If you share data with a third party, it's your responsibility to identify that data to be included in a DSR request.
+### Reasons why certain personal data may not be modified or deleted in Talent
+
+The following table lists several reasons why personal data modification or deletion is restricted in certain scenarios.
+
+| Reason | Comment |
+|--------|---------|
+| Financial, tax, generally accepted accounting principles (GAAP) | A party can't be deleted, but the party's name can be updated. |
+| Financial, tax, GAAP | A current worker's data can't be deleted, but the worker's name can be updated. | 
+| GAAP | Posted or completed transactions can't be modified. |
+
 
 ### Right to view
 
-Contoso might decide to take any of the following actions in response to a DSR request to view data:
+An organization might decide to take any of the following actions in response to a DSR request to view data:
 
 + Use the Person search report to find and collect personal data.
 + Extend the Person search report by authoring a new entity or extending an existing entity.
@@ -184,7 +192,7 @@ If the Person search report doesn't contain all the information that the data su
 
 ### Right to correct\*
 
-Contoso might decide to take any of the following actions in response to a DSR request to correct data:
+An organization might decide to take any of the following actions in response to a DSR request to correct data:
 
 + Use the Person search report to find the information that is the subject of the request.
 + Extend the Person search report by authoring a new entity or extending an existing entity.
@@ -201,7 +209,7 @@ When data is located, use in-product features the correct the data where the pro
 
 ### Right to be forgotten\*
 
-Contoso might decide to take any of the following actions in response to a DSR request to erase data:
+An organization might decide to take any of the following actions in response to a DSR request to erase data:
 
 + Delete or otherwise erase personal data where the product enables that action directly.
 + Anonymize the personal data where Finance and Operations enables that action directly.
@@ -211,7 +219,7 @@ Contoso might decide to take any of the following actions in response to a DSR r
 
 ### Right to port
 
-Contoso might decide to take any of the following actions in response to a DSR request to port data:
+An organization might decide to take any of the following actions in response to a DSR request to port data:
 
 + Use the Microsoft Office Add-in to export personal data.
 + Author a custom report that enables the export of personal data.
@@ -226,7 +234,7 @@ The controller may, at their sole descretion choose to redact certain types of i
 
 ## Right to restrict
 
-Contoso might decide to take any of the following actions in response to a DSR request to restrict optional data processing:
+An organization might decide to take any of the following actions in response to a DSR request to restrict optional data processing:
 
 + Remove the customer from, for example, a marketing campaign.
 
