@@ -5,7 +5,7 @@ title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.  
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -111,6 +111,23 @@ Currently, the data on embedded Power BI reports can’t be limited to the legal
 
 ## How financial statements work
 Although **Financial Insights** does contain financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial Insights** are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+
+The following comparison will help differentiate the two options:
+
+|                                         | **Financial Reporting**                            | **Financial Insights**             |
+|-----------------------------------------|----------------------------------------------------|---------- -------------------------|
+| **Edit default reports**                | Yes                                                | No                                 |
+| **Create new reports**                  | Yes                                                | No                                 |
+| **Print reports**                       | Yes                                                | No                                 |
+| **Export to Excel**                     | Yes          | Limited Exports raw data to Excel, not formatted report       |
+| **Support reporting hierarchy/Organization hierarchy**   | Yes                               | No                                 |
+| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc  |
+| **Reporting Currency**      | Yes Accounting currency and translate to reporting currency       | No Accounting currency only      |
+| **Security**                | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
+| **Support different Chart of accounts and fiscal years** | Yes                   | No                   |
+| **report on external data**                              | No                   | No                                   |
+| **Support consolidations**                               | Yes                          | Limited Can report on multiple companies but use accounting currency only                                     |
+
 
 In addition to the visuals from the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
 
