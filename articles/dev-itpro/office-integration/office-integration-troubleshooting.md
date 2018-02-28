@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -86,7 +86,7 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Why is Export to Excel limited to ten thousand records?
 
-Export to Excel is limited to 10,000 records because the export process uses the form to provide the records with fields and data that cannot be obtained otherwise: formatted values, calculated values, and temporary table data. The use of the form means that the export occurs inside the Client process that is shared by all the users on particular machine. For the duration of the export, those other users are blocked from interacting with the Client.
+Export to Excel is limited to 10,000 records because the export process uses the form to provide the records with fields and data that cannot be obtained otherwise: formatted values, calculated values, and temporary table data. The use of the form means that the export occurs inside the Client process that is shared by all the users on a particular machine. For the duration of the export, those other users are blocked from interacting with the Client.
 
 The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data using the OData service and makes use of the security provided by the entities. The import and export capabilities in the Data Management Framework (DMF/DIXF) can also be used, but it is often limited to administrators.
 
