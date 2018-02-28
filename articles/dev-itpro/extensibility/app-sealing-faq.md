@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Extensibility FAQ
 
+[!include[banner](../includes/banner.md)]
+
 ## Will source code be available after the hard seal?
 
 Yes, source code will be available after the hard seal, because it's required for effective implementation and debugging.
