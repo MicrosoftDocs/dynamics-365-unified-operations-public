@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Types of product identifiers 
+title: Product identifiers 
 description: This article explains the types of product identifiers and how you can add product identifiers in your product data.
 auhor: cvocph
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Types of product identifiers 
+# Product identifiers 
 
 
 [!include[banner](../includes/banner.md)]
@@ -40,7 +40,23 @@ This article explains the types of product identifiers and how you can add produ
 
 Working with products in ERP or CRM, on the shopfloor or in a warehouse requires a good strategy to identify those products - and product variants.  
 
-## The unique product number / product ID 
+## Types of product identifiers
+
+|Type   | Description  | 
+|---|---|
+| Product number  |   | 
+|Item number |   |
+|Product name |   |
+|External product identifiers|    |
+|Barcode |   |
+|GIIN |   |
+|External codes |   |
+|Product entity identifiers |   |
+
+
+
+
+## Unique product number / product ID 
 
 In Dynamics 365 for operations the primary identification of a product is the Product Number (the unique Product ID). This number can result of a number sequence, or can be associated manually. For product variants, the numbers can be defined through the product nomenclature template. 
 
@@ -52,7 +68,7 @@ When implementing Dynamics 365 the product number strategy should always have sp
 
 When using the common data service, the Product Number is also the product number of the common data service. Product variants are synchronized to the common data service (CDS) as distinct products.  
 
-## The item number and the product dimensions 
+## Item number and product dimensions 
 
 The item number is the product identification of a specific legal entity. The item number should ideally be identical to the Product number, as different nomenclature by legal entity makes it difficult to follow a product throughout a supply chain and introduces painful relabeling and referencing processes. For combability reasons to older versions  (AX 2009 and older) we have preserved this model, but we do recommend to eliminate identifiers specific to legal entities wherever possible and use the unique product number as primary identifier.  
 
@@ -62,7 +78,7 @@ Many forms still have the item number and product dimensions as the primary iden
 
 This setting is highly recommended, if you use product variants and the unique product number as the primary identifier of the products. The only exception might be the Fashion industry, where it the business processes often require to start with the selection of the master, before a variant is selected. You should evaluate this option carefully before implementing the numbering system.  
 
-## Product name and descriptions 
+## Product name and description
 
 Product name and descriptions are the human readable identifiers of a product. They can be maintained in many languages, however the client of Dynamics 365 for operations shows the all product information by default in the default company language, not in the users language. The translated product name and description are however used in all communication with customers and vendors based on the language code of the customer and vendor accounts.  
 
@@ -73,7 +89,7 @@ For product variants, the product name can be generated through a product nomenc
 Dynamics 365 for finance and operations offers a secondary search name for products and also for items (released products). This search name does not require uniqueness and can be changed after the creation of a product or product variant. It is recommended to use the search name to search products by categories. The search names allow fast search especially on sales and purchase processes.  
 The search name could also contain customer or vendor product ID, or another external product ID, if the primary search criteria for a product is this external ID.  
 
-## External product identifiers (Customer and Vendor identifiers) 
+## External product identifiers (Customer and vendor identifiers) 
 
 For released products, you can maintain correspondent item numbers, item names and item descriptions of customers and vendors. The references are shown on the external documents like sales and purchaser orders, packing slips and invoices. In the current version the external references not shown in the core operations forms, with the exception of the vendor product number, that is shown in the product information dialog if a default vendor is defined for the released product.  
 
@@ -108,7 +124,7 @@ It is recommended to use the barcode definition to main GTIN or EAN numbers
 
 You can maintain the barcodes in the released product form opening Manage inventory > Warehouse > Bar codes 
 
-## GTIN - The Global Trade Item Number 
+## Global Trade Item Number (GTIN)
 
 In eCommerce, it is crucial to speak a common language and refer to products with common identifiers. Certain industries therefore rely on a global item number system, that is facilitated by GS1. (https://www.gs1.org/id-keys/gtin) 
 
@@ -124,7 +140,6 @@ Many entities in Dynamics 365 for operations allow to define External codes. For
 There is however no standard functionality that allows to search for products by external codes. Note that external codes values must be unique by legal entity and code type, and table reference.  
   
 ## Data entities to import and export product identifiers 
-
 
 | **Entity name**                                                            | **Imports identifiers**                                                           | **Exports identifiers**                                                                                                       | **Comments**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
