@@ -112,124 +112,30 @@ There is however no standard functionality that allows to search for products by
   
 ## Data entities to import and export product identifiers 
 
-Entity name 
-Imports identifiers 
-Exports identifiers 
-Comments 
-Products V2 
-Product Number 
-Product Search name 
-Product Name 
-Product Description 
-Product Number 
-Product Search name 
-Product Name 
-Product Description 
-Depending on the settings of the entity and the Number sequence for the product number, the product number can be auto-created on import.  
-Product variants 
-Product Number 
-Product Search name 
-Product Name 
-Product Description 
-Product Number 
-Product Search name 
-Product Name 
-Product Description 
-Depending on the product nomenclature template, the product number can be auto-created on import. You can however import any (unique) product number on import, that would not need to follow the structure of the product nomenclature templates.  
-Product translations 
-Product Name 
-Product Description 
-Product Name 
-Product Description 
-Overwrites any language. Note that when overwriting the name or description of the primary language of a legal entity, the name and description of the product as such is changed.  
-Released products V2 
-Item Number 
-Product Number 
-Item Search name 
-Item number 
-Product number  
-Item Search name 
-Product Search name 
-Product Name 
-The released product entity can be a tricky one, when it comes to use the number sequences on creation of new released products. Both number sequences, Item number and Product number have an influence, however note that the item number sequence is per legal entity, while the Product number sequence is a global one. This is why it is not recommended to use the item number number sequence to be used when deploying new released products. Obviously, when using the entity to release an existing product, the Product number must be given in the entity.  
-Released product variants 
-Item Number 
-Product dimensions 
-Product Number 
+
+| **Entity name**                                                            | **Imports identifiers**                                                           | **Exports identifiers**                                                                                                       | **Comments**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Products V2                                                                | Product Number  Product Search name  Product Name  Product Description            | Product Number  Product Search name  Product Name  Product Description                                                        | Depending on the settings of the entity and the Number sequence for the product number, the product number can be auto-created on import.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Product variants                                                           | Product Number  Product Search name  Product Name  Product Description            | Product Number  Product Search name  Product Name  Product Description                                                        | Depending on the product nomenclature template, the product number can be auto-created on import. You can however import any (unique) product number on import, that would not need to follow the structure of the product nomenclature templates.                                                                                                                                                                                                                                                                                                                        |
+| Product translations                                                       | Product Name  Product Description                                                 | Product Name  Product Description                                                                                             | Overwrites any language. Note that when overwriting the name or description of the primary language of a legal entity, the name and description of the product as such is changed.                                                                                                                                                                                                                                                                                                                                                                                        |
+| Released products V2                                                       | Item Number  Product Number  Item Search name                                     | Item number  Product number   Item Search name                                                                                | The released product entity can be a tricky one, when it comes to use the number sequences on creation of new released products. Both number sequences, Item number and Product number have an influence, however note that the item number sequence is per legal entity, while the Product number sequence is a global one. This is why it is not recommended to use the item number number sequence to be used when deploying new released products. Obviously, when using the entity to release an existing product, the Product number must be given in the entity.   |
+|                                                                            |                                                                                   | Product Search name                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                            |                                                                                   | Product Name                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Released product variants                                                  | Item Number  Product dimensions  Product Number                                   | Product Number  Product Search name  Product Name  Product Description  Product Dimensions                                    | Like on the product variants, the released product variants can be used to create new products following the product nomenclature template or using own product numbers for the variant.                                                                                                                                                                                                                                                                                                                                                                                  |
+| External item description for customers                                    | Customer Item Number  Customer Item Name  Customer Description  Customer account  | Customer Item Number  Customer Item Name  Customer Description  Customer account                                              | A group of Customers, for example a buyer association, can be aggregated to one Group by using the Externa item description customer groups entity                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| External item description for vendors                                      | Vendor Item Number  Vendor Item Name  Vendor Description  Vendor account          | Vendor Item Number  Vendor Item Name  Vendor Description  Vendor account                                                      | A group of Vendors, for example a sales association or industry organization, can be aggregated to one Group by using the Externa item description vendor groups entity                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Item Barcode                                                               | Barcode                                                                           | Barcode                                                                                                                       | Note that on import, you must refer to a barcode setup that is defined in the target system. The imported barcode references will be validated on import against that setup, and rejected if the barcodes are not matching to the requirements defined in the barcode setup.                                                                                                                                                                                                                                                                                              |
+| External codes for released products                                       | External code                                                                     | External code  External code classes  Item Number                                                                             | External codes are by legal entity  For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity                                                                                                                                                                                                                                                                                                                                                                                           |
+| External codes for released product variants                               | External code                                                                     | External code  External code classes  Item Number  Product dimensions                                                         | External codes are by legal entity  For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity  This entity refers to product variants by Item number and product dimensions.                                                                                                                                                                                                                                                                                                            |
+| External codes for released product variants by product number identifier  | External code                                                                     | External code  External code classes  Product number                                                                          | External codes are by legal entity  For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity  This entity refers to product variants by product number of the variant.                                                                                                                                                                                                                                                                                                                 |
+|                                                                            |                                                                                   |                                                                                                                               | (From Release 8.0)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| GTIN                                                                       |                                                                                   |                                                                                                                               | At this stage, there is no specific entity to import and export GTIN numbers, we recommend to use the Item Barcode instead                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Product entity common data service identifier entity                       | N/A                                                                               | Item Number  Item Search name  Product Search name  Vendor Item number  Customer Item number  External codes  GTIN  Barcodes  | This entity consolidates all identifiers in one data model, making it easy to export all identifiers and their related types with one interface.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|                                                                            |                                                                                   |                                                                                                                               | Use the entities Product entity identifier code entity to export the identifier codes and descriptions. Use the Product entity identifier scope entity to export additional scope information to an identifier, like party, legal entity, quantity or unit                                                                                                                                                                                                                                                                                                                |
+
+
+
  
-Product Number 
-Product Search name 
-Product Name 
-Product Description 
-Product Dimensions 
-Like on the product variants, the released product variants can be used to create new products following the product nomenclature template or using own product numbers for the variant.  
-External item description for customers 
-Customer Item Number 
-Customer Item Name 
-Customer Description 
-Customer account 
-Customer Item Number 
-Customer Item Name 
-Customer Description 
-Customer account 
-A group of Customers, for example a buyer association, can be aggregated to one Group by using the Externa item description customer groups entity 
-External item description for vendors 
-Vendor Item Number 
-Vendor Item Name 
-Vendor Description 
-Vendor account 
-Vendor Item Number 
-Vendor Item Name 
-Vendor Description 
-Vendor account 
-A group of Vendors, for example a sales association or industry organization, can be aggregated to one Group by using the Externa item description vendor groups entity 
-Item Barcode 
-Barcode 
-Barcode 
-Note that on import, you must refer to a barcode setup that is defined in the target system. The imported barcode references will be validated on import against that setup, and rejected if the barcodes are not matching to the requirements defined in the barcode setup.  
-External codes for released products 
-External code 
- 
-External code 
-External code classes 
-Item Number 
-External codes are by legal entity 
-For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity 
-External codes for released product variants 
-External code 
-External code 
-External code classes 
-Item Number 
-Product dimensions 
-External codes are by legal entity 
-For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity 
-This entity refers to product variants by Item number and product dimensions.  
-External codes for released product variants by product number identifier 
-External code 
-External code 
-External code classes 
-Product number 
- 
-External codes are by legal entity 
-For import, you need to refer to a defined code class. Import the code classes using the External code classes for released products entity 
-This entity refers to product variants by product number of the variant.  
-(From Release 8.0) 
-GTIN 
- 
- 
-At this stage, there is no specific entity to import and export GTIN numbers, we recommend to use the Item Barcode instead 
-Product entity common data service identifier entity 
-N/A 
-Item Number 
-Item Search name 
-Product Search name 
-Vendor Item number 
-Customer Item number 
-External codes 
-GTIN 
-Barcodes 
-This entity consolidates all identifiers in one data model, making it easy to export all identifiers and their related types with one interface.  
-Use the entities Product entity identifier code entity to export the identifier codes and descriptions. Use the Product entity identifier scope entity to export additional scope information to an identifier, like party, legal entity, quantity or unit of measure.  
  
  
 ## Product entity identifier (Export all product identifiers) 
