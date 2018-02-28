@@ -119,9 +119,9 @@ The following comparison will help differentiate the two options:
 | **Edit default reports**                | Yes                                                | No                                 |
 | **Create new reports**                  | Yes                                                | No                                 |
 | **Print reports**                       | Yes                                                | No                                 |
-| **Export to Excel**                     | Yes                                                | Limited Exports raw data to Excel, not formatted report                          |
+| **Export to Excel**                     | Yes          | Limited Exports raw data to Excel, not formatted report       |
 | **Support reporting hierarchy/Organization hierarchy**   | Yes                               | No                                 |
-| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc                                  |
+| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc  |
 | **Reporting Currency**      | Yes Accounting currency and translate to reporting currency       | No Accounting currency only      |
 | **Security**                | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
 | **Support different Chart of accounts and fiscal years** | Yes                   | No                   |
