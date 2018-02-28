@@ -109,19 +109,19 @@ Currently, the data on embedded Power BI reports can’t be limited to the legal
 | View financial insights cross company   | •	In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn’t assigned to a role. •	In the next release, this duty will be assigned to the Chief financial officer role. | •	This duty provides access to the menu item for the CFO overview workspace. •	By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities.             |
 
 
-## How financial statements work
-Although **Financial Insights** does contain financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial Insights** are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+## Financial reporting vs. Finanical insights
+Although **Financial insights** contains financial statements, it isn’t a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial insights** are limited in scope and don’t include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
-The following comparison will help differentiate the two options:
+The following comparison chart will help differentiate the two options:
 
 |                                         | **Financial Reporting**                            | **Financial Insights**             |
 |-----------------------------------------|----------------------------------------------------|---------- -------------------------|
 | **Edit default reports**                | Yes                                                | No                                 |
 | **Create new reports**                  | Yes                                                | No                                 |
 | **Print reports**                       | Yes                                                | No                                 |
-| **Export to Excel**                     | Yes          | Limited Exports raw data to Excel, not formatted report       |
+| **Export to Excel**                     | Yes          | Limited Exports raw data to Excel, not a formatted report       |
 | **Support reporting hierarchy/Organization hierarchy**   | Yes                               | No                                 |
-| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc  |
+| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.  |
 | **Reporting Currency**      | Yes Accounting currency and translate to reporting currency       | No Accounting currency only      |
 | **Security**                | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
 | **Support different Chart of accounts and fiscal years** | Yes                   | No                   |
@@ -129,7 +129,7 @@ The following comparison will help differentiate the two options:
 | **Support consolidations**                               | Yes                          | Limited Can report on multiple companies but use accounting currency only                                     |
 
 
-In addition to the visuals from the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
+In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
 
 •	Trial balance
 
@@ -137,11 +137,11 @@ In addition to the visuals from the original **CFO overview** workspace, new KPI
 
 •	Income statement by region
 
-•	Income statement actual vs budget
+•	Income statement actual vs. budget
 
 •	Income statement with variances
 
-•	12 month trend income statement
+•	12-month trend income statement
 
 •	Expenses three-year trend
 
