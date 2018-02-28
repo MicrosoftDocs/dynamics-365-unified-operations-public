@@ -53,29 +53,29 @@ An individual might exist as multiple parties in Finance and Operations data. Yo
 
 To use the Person search report, you must complete these tasks.
 
-1.	In the Data management workspace, load the default template for the Person search report.
-
-2.	From the System administration menu, open the Person search list page, and create a new search.
+1.	From the System administration menu, open the Person search list page, and create a new search.
 
     ![Person search list page](../media/gdpr-person-search-list-page.png)
 
-3.  The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
+2.  The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
 
     ![Define search](../media/gdpr-define-search.png)
 
-4.  Run the search to show the results.
+3.  Run the search to show the results.
 
-5.  Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
+4.  Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
 
     ![Review search results](../media/gdpr-review-search-results.png)
 
-6.  Select **Process report**, and then select the Person search template.
+5.  Select **Process report**, and then select the Person search template.
 
     ![Process report](../media/gdpr-process-report.png)
 
-7.  Select **OK**. A data package is generated.
+6.  Select **OK**. A data package is generated.
 
-8. When the package has been generated, export it to your selected data format.
+7. When the package has been generated, export it to your selected data format. 
+
+> Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
 
 ## Additional resources
 
