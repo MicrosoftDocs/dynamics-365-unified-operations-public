@@ -86,11 +86,11 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Why is Export to Excel limited to ten thousand records?
 
-Export to Excel is limited to 10,000 records because the export process uses the form to provide the records with fields and data that cannot be obtained otherwise: formatted values, calculated values, and temporary table data. The use of the form means that the export occurs inside the Client process that is shared by all the users on a particular machine. For the duration of the export, those other users are blocked from interacting with the Client.
+Export to Excel is limited to 10,000 records. This is because the export process uses the form to provide the following records with fields and data that cannot be obtained otherwise: formatted values, calculated values, and temporary table data. The use of the form means that the export occurs inside the client process that is shared by all the users on a particular machine. For the duration of the export, those other users are blocked from interacting with the client.
 
 The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data using the OData service and makes use of the security provided by the entities. The import and export capabilities in the Data Management Framework (DMF/DIXF) can also be used, but it is often limited to administrators.
 
-If there are conerns about giving users access to the data via the Excel Add-in because they shouldn't be able to update records:
+If there are concerns about giving users access to the data via the Excel Add-in because they shouldn't be able to update records:
 
 1. The entities should contain all the validation and logic that the forms do and if they don't that would be a bug 
 2. The entities are secured similar to forms, so if the user shouldn't have access to update/write data using a form that exposes that data, then they shouldn't have permissions to update/write data using an entity that exposes that data.
