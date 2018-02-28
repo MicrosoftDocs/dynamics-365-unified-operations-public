@@ -75,15 +75,11 @@ For customers, open Sell > Related information > External item description
 For vendors, open Purchase > Related information > External item description 
 In this form you can associate the Customer or Vendor item number, to a released product. Note that this association needs to be done per legal entity. The following information can be captured. Unfortunately, the labels are slightly misleading, they might be changed in a future version.  
 
-External item number 
-Item number of the customer 
-Item number of the vendor 
-Description 
-Name that the customer associates with the item 
-Name that the vendor associates with the item 
-External item text 
-Item Description of the customer 
-Description of the vendor 
+|External item number   | Item number of the customer  | Item number of the vendor  |
+|---|---|---|
+| Description  | Name that the customer associates with the item  | Name that the vendor associates with the item  |
+|External item text   | Item Description of the customer  | Description of the vendor  |
+
  
 If many customers or many vendors use the same item numbers, like for example a purchase association or a retail group, you can create groups of customer or groups of vendors to simplify the maintenance of the external product information.  
 For customer groups, go to Sales > Setup > Items > External item description to create and maintain the groups and the related item numbers. Associate the customers to the groups in Accounts receivable > Customers > All customers - In the fast tab Sales order defaults, set the Item customer group. 
