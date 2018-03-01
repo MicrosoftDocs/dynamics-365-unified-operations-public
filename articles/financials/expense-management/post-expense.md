@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post an expense report
-description: This topic explains how to post an expense report to the General ledger.
+description: This topic explains how to post an expense report to the general ledger.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
@@ -31,18 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-After an expense report has been approved and transferred to the general journal, the report can be posted to the general ledger. When 
-you post an expense report, expenses that are eligible for Value Added Tax (VAT) recovery are identified. The task of verifying and 
-recovering VAT payments is assigned to the employee who is responsible for verifying the expense report. 
+After an expense report has been approved and transferred to the general journal, it can be posted to the general ledger. When you post an expense report, expenses that are eligible for recovery of value-added tax (VAT) are identified. The task of verifying and recovering VAT payments is assigned to the employee who is responsible for verifying the expense report.
 
-If an expense report contains expenses that are charged to a company other than the company that employs the employee, you must verify 
-which company the expense is owed to and which company the expense is owed from. For example, if the employee who submitted the expense 
-report works for company DAT but charged an expense to company DIR, DAT is the owed-to company and DIR is the owed-from company. After 
-you verify these journal lines, you can post the expense lines to the general ledger. 
+If expenses on an expense report are charged to a company other than the company that employs the employee, you must verify the company that those expenses are owed to and the company that the expenses are owed from. For example, the employee who submitted an expense report works for the DAT company but charged an expense to the DIR company. In this case, DAT is the company that the expense is owed to, and DIR is the company that the expense is owed from. After you verify these journal lines, you can post the expense lines to the general ledger.
 
-To post an expense report: 
+To post an expense report, on the **Approved expense reports** page, select the expense report, and then, on the Action Pane, select **Post**.
 
- - On the **Approved expense reports** page, select the expense report that you want to post, and on the Action Pane, click **Post**. 
-
-You can approve all of the expense reports in the list by selecting all the expense reports on the list and click **Post**.
-
+You can also post all the expense reports in the list at the same time. Select all the expense reports, and then select **Post**.
