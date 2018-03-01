@@ -52,8 +52,8 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Data management and integration| | Yes | Yes |
 | | Configuration-driven extension| Yes | No |
 | | Export data to your own data warehouse| Yes | Yes |
-| | Recurring integrations                 |Yes | No|
 | | Enable the export of incremental updates to a data entity | Yes | No |
+| | Recurring integrations                 |Yes | No|
 | Document management| | Yes| Yes |
 | Financial management|  | Yes | Yes |
 | Help| | Yes | No |
