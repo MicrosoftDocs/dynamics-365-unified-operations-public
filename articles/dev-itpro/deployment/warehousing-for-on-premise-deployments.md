@@ -30,6 +30,9 @@ ms.dyn365.ops.version: 7.3
 
 ---
 # Warehousing for on-premises deployments
+
+[!include[banner](../includes/banner.md)]
+
 This topic describes how to configure Microsoft Dynamics 365 for Finance and Operations - Warehousing for on-premises deployments.
 
 ## Prerequisites

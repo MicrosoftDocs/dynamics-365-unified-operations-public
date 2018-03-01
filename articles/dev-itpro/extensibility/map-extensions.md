@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 11
 
 # Table map extension
 
+[!include[banner](../includes/banner.md)]
+
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 
 To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. This topic discusses why you need a model to extend a table map.

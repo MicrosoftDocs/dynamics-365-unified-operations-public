@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Migrate from overlayering to extensions
 
+[!include[banner](../includes/banner.md)]
+
 ## Introduction
 
 When Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, was first released, we strongly recommended that extensions be used instead of overlayering for customization. Overlayering-based customizations have been migrated from release to release through code migrations, and many customizations of application code are still based on the overlayering of code. For most partners, at least some of their solution is still based on overlaying, and some partners will have lots of overlayering across their solutions.
