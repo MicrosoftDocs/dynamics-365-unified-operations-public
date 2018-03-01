@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond  to a request for personal data  using Microsoft Dynamics AX 2012
-description: This topic describes how you, as a data controller, can use Microsoft Dynamics AX 2012 as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
+description: This topic can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). 
 author: ryanc
 manager: AnnBe
 ms.date: 12/31/2017
