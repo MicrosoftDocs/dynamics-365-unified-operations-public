@@ -37,9 +37,9 @@ This topic can help businesses that use Microsoft Dynamics AX 2012, implementati
 
 ## Applicable product updates for Dynamics AX 2012
 
-Additional product updates and further information that is specific to AX 2012 are available from [Microsoft Dynamics Lifecycle Services](https://fix.lcs.dynamics.com/Issue/Results?q=3909273) (LCS). Sign-in is required for access to LCS. 
+Additional product updates and information related to GDPR that's specific to AX 2012 are available from [Microsoft Dynamics Lifecycle Services](https://fix.lcs.dynamics.com/Issue/Results?q=3909273) (LCS). Sign-in is required for access to LCS. 
 
-Here are some example inquiries and reports that are available in AX 2012:
+Here are some example inquiries and reports that are available in AX 2012 that might help you find and report personal data:
 
 + **Home** &gt; **Common** &gt; **Global address book**
 
