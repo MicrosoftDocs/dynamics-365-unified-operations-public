@@ -84,20 +84,20 @@ To check processing time in the Excel Add-in versus the server/service, follow t
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
 
-### Why is Export to Excel limited to ten thousand records?
+### Why is Export to Excel limited to 10,000 records?
+ 
+Export to Excel is limited to 10,000 records. This limitation is in place because the export process uses the page to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the page is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
 
-Export to Excel is limited to 10,000 records. This is because the export process uses the form to provide the following records with fields and data that cannot be obtained otherwise: formatted values, calculated values, and temporary table data. The use of the form means that the export occurs inside the client process that is shared by all the users on a particular machine. For the duration of the export, those other users are blocked from interacting with the client.
+The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and it takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF)/Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators. 
 
-The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data using the OData service and makes use of the security provided by the entities. The import and export capabilities in the Data Management Framework (DMF/DIXF) can also be used, but it is often limited to administrators.
+If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points: 
 
-If there are concerns about giving users access to the data via the Excel Add-in because they shouldn't be able to update records:
+- The entities should have all the validation and logic that the pages have. If they don't, it's a bug. 
+- The way that entities are secured resembles the way that pages are secured. Therefore, if a user should not have permission to update or write data by using a page that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
 
-1. The entities should contain all the validation and logic that the forms do and if they don't that would be a bug 
-2. The entities are secured similar to forms, so if the user shouldn't have access to update/write data using a form that exposes that data, then they shouldn't have permissions to update/write data using an entity that exposes that data.
+## Why is the Publish button in the Excel Add-in unavailable? 
 
-## Why is the publish button in the Excel Add-in disabled?
-
-All key and mandatory fields need to be present to facilitate publishing data back to the entity. Try editing the Design to add more fields into the binding.
+All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
 
 ## Troubleshooting issues
 
