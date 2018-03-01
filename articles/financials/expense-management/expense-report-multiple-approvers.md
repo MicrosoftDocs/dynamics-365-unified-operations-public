@@ -2,8 +2,7 @@
 # required metadata
 
 title: Expense reports and multiple approvers
-description: Depending on the expense approval policies of your organization, more than one person may be required to approve an expense 
-report that is submitted by an employee. 
+description: This topic provides information about expense reports that require approval by more than one person. 
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
@@ -32,26 +31,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Depending on the expense approval policies of your organization, more than one person may be required to approve an expense report that 
-is submitted by an employee. When you are setting up the workflow process for expense report approval, you can add workflow elements 
-that include tasks or steps for one or more expense report approvers. For example, you might require that all expense reports be 
-approved first by the manager of the employee who submitted the report, and then by the accounts payable coordinator. 
+Depending on your organization's expense approval policies, more than one person might have to approve an expense report that is submitted by an employee. When you set up the workflow process for expense report approval, you can add workflow elements that include tasks or steps for one or more expense report approvers. For example, you might require that all expense reports be approved first by the manager of the employee who submitted the report and then by the Accounts payable coordinator.
 
-If you decide to require multiple expense report approvers, you can add the workflow elements in any of the following ways: 
+If you decide to require multiple expense report approvers, you can add the workflow elements in any of the following ways:
 
- - One approval element that contains one step. For example, the step might require that an expense report be assigned to a user group 
- and that it be approved by 50% of the user group members. 
- 
- - One approval element that contains multiple steps. For example, the steps in the approval element are as follows: 
+- Add one approval element that has one step. For example, the step might require that an expense report be assigned to a user group, and that it be approved by 50 percent of the user group's members.
+- Add one approval element that has multiple steps. For example, the approval element might have the following steps:
 
-         1. The manager of the employee who submitted the expense report approves it. 
+    1. The manager of the employee who submitted the expense report approves it.
+    2. The Accounts payable clerk verifies the receipts and the expense report items.
+    3. The budget owner approves the expense report.
 
-         2. The accounts payable clerk verifies the receipts and expense report items. 
+- Add multiple approval elements, each of which has one step. For example, you might add a separate approval element for each of the following steps:
 
-         3. The budget owner approves the expense report. 
-
- - Multiple approval elements, where each element contains one step. For example, the approval elements are as follows: 
-
-         1. The employee’s manager approves the expense report. 
-
-         2. The budget owner approves the expense report. 
+    1. The employee's manager approves the expense report.
+    2. The budget owner approves the expense report.
