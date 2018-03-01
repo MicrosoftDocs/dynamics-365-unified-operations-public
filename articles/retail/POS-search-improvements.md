@@ -85,6 +85,23 @@ In a remote customer search, the customer ID isn't shown for customers from the 
 
 ![Global customer search](./media/Globalcustomersearch.png "Global customer search")
 
-### Enhancements to local customer searches
+### Enhancements to local customer search
+The phone number based search is now simplified as it ignores the special characters such as spaces, hyphens, or brackets that might have been added while creating the customer. Thus cashiers do not have to worry about the phone number format while searching. They can also search for customers by typing a partial phone number. If special characters are included in the phone number, then it can also be found by searching for the numbers that appear after the special characters. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **123**, **456**, **7890**, or **1234567890**, or by partially entering the first few numbers of the phone number. 
 
-Local customer searches help employees quickly find customers by phone number. Employees don't have to type any special characters that have been added to a customer's phone number, such as spaces, hyphens, or brackets. Although cashiers can store phone numbers in any format (for example, they can include brackets, hyphens, symbols, and so on), they can search for customers by typing a partial phone number. If a cashier included special characters when he or she entered a phone number, other cashiers can find the customer by typing the numbers that appear after the special characters. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **123**, **456**, **7890**, or **1234567890**, or by partially entering the first few numbers of the phone number.
+Instead of the traditional customer search, which can be time consuming as it searches across multiple fields, the cashiers can now search within a single custom property e.g. name, email, phone number etc. of their choice. The properties used by the customer search algorithm are collectively called the customer search criteria. The system admin can easily configure one or more these criteria as shortcuts that will be displayed on POS. Since the search is restricted to a single criteria, so, only the relevant search results are displayed and the performance is much better than the standard customer search. The below image shows the customer search shortcuts in POS.
+
+![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
+
+
+To set a search criteria as a shortcut, the admin can navigate to the Retail parameters form, within the "POS search criteria" tab, select all the criteria which should be displayed as a shortcut. The below image shows the form in Dynamics 365 for Operations to configure customer search shortcuts 
+
+![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
+
+> [!NOTE]
+> Many shortcuts will clutter the POS search dropdown and can hinder the employee experience. Only add those criteria as shortcuts which makes sense for your business and keep them to a minimum.  
+
+
+The display order field determines the order in which these shortcuts will be displayed in POS. The criteria shown here are the out-of-the-box properties that the customer search algorithm uses for searching customers. The partners can easily add their custom properties as a search shortcut. To do so, they need to extend the extensible enum used for the customer search criteria and then mark their custom properties as shortcuts. The partners are responsible for writing the code to find results when their custom shortcuts are used for searching.
+
+> [!NOTE]
+> Adding a custom property to the enum does not have any impact on the standard customer search algorithm, in other words, the customer search algorithm will not search within the custom property. The only way to allow users to search using your custom property is to add is as a shortcut or override the default search algorithm. 
