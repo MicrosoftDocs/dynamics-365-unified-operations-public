@@ -48,7 +48,10 @@ To restart a specific service within a deployed environment, complete the follow
 1. Navigate to the appropriate LCS project, and select the environment that you want to restart the service for. 
 2. Open the **Environment details** page, click **Maintain**  and then select **Restart Services**. 
 3. On the **Restart a service** slider, select the service that you want to restart, and then click **OK**.
+[![Restart environment services](./media/RestartService01.png)](./media/RestartService01.png)
+
 The **Environment state** is updated when the service is restarted. 
+
 4. To view the updated status, refresh the page. 
 Note that because it can take only a few seconds for a service to restart, the environment state may have already reset to **Deployed**. An entry will be added to the **History** page when the restart is complete.  
 
