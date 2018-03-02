@@ -11,6 +11,21 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 
+# optional metadata
+
+ms.search.form: WHSMobileAppField
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 269384
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mafoge
+ms.search.validFrom: 2017-01-03
+ms.dyn365.ops.version: AX 8.0.0
+
 ---
 
 # Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing
