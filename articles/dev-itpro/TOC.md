@@ -452,6 +452,8 @@
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
+## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
+
 # [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
