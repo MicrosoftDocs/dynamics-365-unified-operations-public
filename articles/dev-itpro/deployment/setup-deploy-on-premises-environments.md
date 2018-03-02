@@ -539,8 +539,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
-    3. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
-    4. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
+    3. Leave **Allow caching of share** checked.
+    4. Check **Encrypt data access**.
+    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
+    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
     
     >[!NOTE]
     > You may need to enable **Computers** under **Object Types..** to add machines or enable **Service Accounts** under **Object Types..** to add service accounts.
