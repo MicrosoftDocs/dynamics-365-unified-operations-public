@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 The Person search report is a refinement of the existing Data management framework of Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
-> The Person search report will be available in an upcoming release. When available, you'll be able to use the report with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations), Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent.
+> The Person search report will be available in an upcoming release. When available, you'll be able to use the report with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. 
 
-You can use the Global address book in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (Finance and Operations) to create an instance of a person that is described in the data model as a party. 
+You can use the Global address book in Finance and Operations to create an instance of a person that is described in the data model as a party. 
 
 When you add a contact, customer, user, worker, or other person in Finance and Operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
 
