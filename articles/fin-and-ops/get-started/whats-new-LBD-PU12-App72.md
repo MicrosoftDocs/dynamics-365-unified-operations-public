@@ -35,6 +35,8 @@ ms.dyn365.ops.version: Platform update 12
 
 This topic describes features that are either new or changed in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with Platform update 12. This deployment option became available in March 2018.
 
+For more resources about on-premises deployments, see [On-premises deployment landing page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
+
 ## Setup and deployment
 Improvements have been made to the setup and deployment process. These improvements significantly reduce the time required for deployment. Increased automation and multiple pre-requisite checks have also been added to improve reliability.  For more information, see [Set up and deploy on-premises environments](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md).
 
