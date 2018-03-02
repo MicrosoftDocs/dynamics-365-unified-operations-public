@@ -24,7 +24,7 @@ ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2017-0-30 
+ms.search.validFrom: 2017-11-30 
 ms.dyn365.ops.version: Platform update 12 
 
 ---
