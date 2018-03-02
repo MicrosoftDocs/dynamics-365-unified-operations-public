@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 
-Overlayering
-------------
+## Overlayering
 
 You can customize source code and metadata of model elements that are shipped by Microsoft or third-party Microsoft partners. In order to customize metadata and source code of a model, the developer must create a new model that overlays the model they want to customize. For example, solution developers can provide code in the SLN layer, independent software vendors can use the ISV layer, and value-added resellers can use the VAR layer. Functionality defined in higher layers (VAR layer in this example) can override the functionality of lower layers. The overlaying model must belong to the same **Package** as the source model and belong to a layer that is higher than the source model. Overlayering is a powerful tool to perform advanced customizations of metadata and source code, but may increase the cost of upgrading a solution to a new version. Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.
 
@@ -331,7 +330,7 @@ Tables, form data sources, form controls, and other element types that support e
 -   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
 
 
-# See also
+## See also
 
 [Customize model elements using extensions](customize-model-elements-extensions.md)
 

@@ -3,7 +3,7 @@
 
 title: Track user sign-ins 
 description: This topic explains how to create an audit log of users who have signed in and used Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: manado
+author: manalidongre
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Unified Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

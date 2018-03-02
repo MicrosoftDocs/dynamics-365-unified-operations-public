@@ -76,7 +76,7 @@ The demo data set supports 40 languages across 16 countries or regions. It also 
 | USSI         | Contoso Consulting USA               |
 
 
-# Embedded analytics
+## Embedded analytics
 Demo data has been updated in five companies to provide better reports on the new embedded analytics within workspace.  Filter the embedded analytics to the following legal entities for the improved report data:
 
 | Legal entity | Description                           |

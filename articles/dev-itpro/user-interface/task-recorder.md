@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use Task Recorder to record client functions.
 
-Overview
-========
+## Overview
 
 ### The new Task Recorder
 

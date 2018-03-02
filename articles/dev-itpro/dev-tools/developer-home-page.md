@@ -175,7 +175,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 - [Gantt development guide](../user-interface/gantt-development-guide.md)
 - [Create a new transportation management engine](../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
-# See also
+## See also
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 

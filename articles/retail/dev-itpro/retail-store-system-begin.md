@@ -53,8 +53,7 @@ Before you begin setting up Store Scale Unit, take a moment determine whether th
 -   In Store Scale Unit, users cannot perform any real time operations such as issuing gift cards, looking up products, or performing credit card transactions, unless there is Internet connectivity to HQ or a payment provider. If the majority of your transactions involve real time transactions, then your Store Scale Unit will always need Internet connectivity to enable the connection to HQ or payment provider.
 -   Direct database connectivity from POS to the channel database is not supported in the Store Scale Unit. The POS devices in the Store Scale Unit will always use the Retail Server for performing operations. You will need customization to enable direct database connectivity and bypass Retail Server.
 
-Get started with Store Scale Unit
-=================================
+## Get started with Store Scale Unit
 
 To get started, review the following topic on configuring the Store Scale Unit, [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md).
 

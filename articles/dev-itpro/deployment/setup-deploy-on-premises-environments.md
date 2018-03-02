@@ -84,14 +84,14 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 Setup of Finance and Operations will deploy a set of applications inside Service Fabric (SF). During deployment, each node in the cluster will be defined via configuration to have one of the following node types:
 
-- **AOSNodeType**: hosts the application object server (business logic).
-- **OrchestratorType**: functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
-- **ReportServerType**: hosts SSRS and reporting logic.
-- **MRType**: hosts management reporting logic.
+- **AOSNodeType**: Hosts the application object server (business logic).
+- **OrchestratorType**: Functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
+- **ReportServerType**: Hosts SSRS and reporting logic.
+- **MRType**: Hosts management reporting logic.
 
 ## Infrastructure
 
-Finance and Operations is designed to work on machines running Windows Server. 
+Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers.
 
  > [!WARNING]
  > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.

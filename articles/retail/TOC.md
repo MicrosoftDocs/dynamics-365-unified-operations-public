@@ -183,6 +183,7 @@
 ### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Payment Application Data Security Standards (PA-DSS) certification](dev-itpro/PA-DSS-Certification.md)
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)

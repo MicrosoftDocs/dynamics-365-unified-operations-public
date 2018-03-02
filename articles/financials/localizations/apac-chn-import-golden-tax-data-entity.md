@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The Microsoft Dynamics 365 - Translation Service (DTS) is designed to enhance the translation experience for partners and ISVs with their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
+The Microsoft Dynamics 365 - Translation Service (DTS), which is hosted in Microsoft Dynamics Lifecycle Services (LCS), is designed to enhance the translation experience for partners and ISVs with their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
 
 DTS uses a custom-trained machine translation (MT) system for [Microsoft’s General Availability (GA) languages](./use-translation-service.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
 
@@ -53,7 +53,8 @@ DTS currently supports the following product versions.
 Product name |	Version |	File format supported |	Note
 --- | --- | --- | ---
 **Dynamics AX 2012**	| All versions	| .ktd, .ald	|
-**Dynamics for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
-**Dynamics CRM**	| 2011-2015 |	.resx, .js	|
-**Dynamics NAV** | 2013-2017	| .etx, .stx, .resx, .txt, .xml |	.txt and .xml are in NAV-specific formats
+**Dynamics 365 for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
+**Dynamics 365 for Retail** | All versions | .label.txt |
+**Dynamics CRM**	| 2011-2016 |	.resx, .js	|
+**Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf |	.txt, .xml and .xlf are in NAV-specific formats
 

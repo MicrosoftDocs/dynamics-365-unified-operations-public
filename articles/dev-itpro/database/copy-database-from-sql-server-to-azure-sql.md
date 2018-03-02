@@ -140,6 +140,7 @@ drop user axdeployuser
 drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
+drop user axdeployextuser
 ```
 
 ## Export the database from SQL Server

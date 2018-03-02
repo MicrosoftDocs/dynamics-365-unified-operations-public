@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Analyze - Use the Upgrade analyzer tool to plan upgrade
+title: Upgrade from AX 2012 - Use the Upgrade analyzer tool to plan
 description: This topic explains how to use the Upgrade analyzer tool to plan upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Analyze - Use the Upgrade analyzer tool to plan upgrade
+# Upgrade from AX 2012 - Use the Upgrade analyzer tool to plan
 
 [!include[banner](../includes/banner.md)]
 

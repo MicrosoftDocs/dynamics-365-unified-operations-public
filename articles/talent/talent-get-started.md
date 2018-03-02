@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ROBOTS: HrmParameters, HcmSharedParameters
+# ms.search.form: HrmParameters, HcmSharedParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

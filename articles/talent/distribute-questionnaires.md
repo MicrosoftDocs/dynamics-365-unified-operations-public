@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-talent
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470

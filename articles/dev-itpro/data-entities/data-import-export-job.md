@@ -56,6 +56,9 @@ Here are the steps to import or export data.
 
 The remaining sections of this topic provide more details about each step of the process.
 
+> [!NOTE]
+> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.
+
 ## Create an import or export job
 A data import or export job can be run one time or many times.
 

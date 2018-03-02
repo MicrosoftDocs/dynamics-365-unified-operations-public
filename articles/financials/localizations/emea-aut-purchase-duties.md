@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  TaxPurchaseTaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw

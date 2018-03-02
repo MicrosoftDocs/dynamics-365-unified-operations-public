@@ -57,11 +57,16 @@ The following table shows the POS views that currently support extensions. It al
 | SearchView                      | No                            | Yes                          | Yes                                  |
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
-| SimpleProductDetailsView        | No                            | Yes                          | Yes                                  |
+| SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
 | AddressAddEditView              | Yes                           | No                           |  No                                    |
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | No                                   |
-| SearchOrdersView                | No                            | Yes                          | No                                     |
+| SearchOrdersView                | No                            | Yes                          | No   
+|
+| SearchPickingAndReceivingView   | No                            | Yes                          | No
+|
+
+Note: The above table is getting updated based on the latest realsed version and hotfix. In lower versions some of these extension points will be missing.
 
 ## Add a custom column and an app bar button
 

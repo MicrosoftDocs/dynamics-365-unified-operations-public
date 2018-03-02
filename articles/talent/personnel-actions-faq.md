@@ -3,7 +3,7 @@
 
 title: Personnel actions [FAQ]
 description: This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -13,6 +13,7 @@ ms.technology:
 
 # optional metadata
 
+# ms.search.form: HcmPositionActionDetail
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User

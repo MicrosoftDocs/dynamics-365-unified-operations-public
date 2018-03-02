@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: SysOperationTemplateForm, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

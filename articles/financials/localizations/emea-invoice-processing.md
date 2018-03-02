@@ -11,7 +11,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -26,6 +26,8 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Invoice processing
+
+[!include[banner](../includes/banner.md)]
 
 This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic provides also an information about how customer and vendor invoices are processed for these countries. 
 <table>

@@ -5,7 +5,7 @@ title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition 
 description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -35,7 +35,12 @@ ms.dyn365.ops.version: Platform Update 8
 
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
 
-## Service Fabric
+## Error when signing in to on-premises environments
+A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
+
+`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
+
+## Service Fabric 
 Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by the Orchestrator, Application Object Server (AOS), SSRS and MR nodes.
 
 ## Access Service Fabric Explorer
@@ -282,9 +287,14 @@ Complete the following steps to resolve the error.
 1. Run `psping lcsapi.lcs.dynamics.com:80`.
 2. If you don't receive a reply, contact the IT department at your organization. The firewall is blocking access to lcsapi or proxy issues.
 
-        Lcsapi.lcs.dynamics.com
-        <lcs azure blob storage domain>
-        <lcs azure queue domain>
+        lcsapi.lcs.dynamics.com:443
+        login.windows.net:443
+        uswelcs1lcm.queue.core.windows.net:443
+        www.office.com:443
+        login.microsoftonline.com:443
+        dc.services.visualstudio.com:443
+        uswelcs1lcm.blob.core.windows.net:443
+        uswedpl1catalog.blob.core.windows.net:443 
 
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
@@ -369,7 +379,6 @@ Use the following properties to create the DataEncryption certificate:
 
 ## Can't find the certificate and private key to use for decryption (0x8009200C)
 If you are missing a certificate and ACL, or you have the wrong thumbprint entry, check for special characters and check in `C:\ProgramData\SF\<AOSMachineName>\Fabric\work\Applications\AXBootstrapperAppType_App<N>\log\ConfigureCertificates-<timestamp>.txt` for thumbprints.
-
 You can also test by using the `Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard`. If you receive the message, "Cannot find the certificate and private key to use for decryption", verify axdataenciphermentcert and svc-AXSF$ AXServiceUser ACL.
 
 If the credentials.json have changed, delete and redeploy from LCS.

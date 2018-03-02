@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integration patterns and practices
+title: Choose a data integration (import/export) strategy 
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: Sunil-Garg
 manager: AnnBe

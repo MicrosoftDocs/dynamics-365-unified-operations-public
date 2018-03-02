@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define retail channel communications (Commerce Data Exchange)
-description: This topicprovides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 for Retail and retail channels.
+description: This topic provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 for Retail and retail channels.
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017

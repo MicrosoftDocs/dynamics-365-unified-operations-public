@@ -3,7 +3,7 @@
 
 title: Prevent discounts for retail products
 description: There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

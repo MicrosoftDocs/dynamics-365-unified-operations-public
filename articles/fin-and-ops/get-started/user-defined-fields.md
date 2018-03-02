@@ -65,7 +65,7 @@ The following steps describe the process for creating a custom field and placing
 10.   Click **Insert** to insert the marked fields into the selected region of the form. 
 11.   **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
 
-### Sharing custom fields with other users
+## Sharing custom fields with other users
 After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
 -   The recommended route is through the system administrator, who can push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details. 
