@@ -21,9 +21,9 @@ This topic explains how to set up Dynamics 365 for Finance and Operations – Wa
 To use this feature, you need to have version 1.2.0.0 of Warehousing installed, and your device must have a camera. When you open the app after updating, you will be prompted to allow the Dynamics 365 for Finance and Operations – Warehousing application to use the camera. If your device doesn’t have a camera, no prompt will be shown, and you will not be able to use a camera as a scanner. 
 
 ## Setup
-In the Display settings of the Warehousing application, you can select if the camera should be used for bar code scanning. If you enable Use the camera as scanner, you can use the camera on every input field that has the preferred input mode set to Scanning. 
+In the Display settings of the Warehousing application, you can select if the camera should be used for bar code scanning. If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**. 
 
-To control whether an input field should be scannable, on the Warehouse app field names page in Dynamics 365 for Finance and Operations, set Preferred input mode to Scanning. When this option is selected, a camera can be used for scanning in the Warehousing app. For information about how to configure app field names in Warehousing, see [Configure app field names in Warehousing app](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse)
+To control whether an input field should be scannable, on the **Warehouse app field names** page in Dynamics 365 for Finance and Operations, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehousing app. For information about how to configure app field names in Warehousing, see [Configure app field names in Warehousing app](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse)
 
 ## Supported bar code formats
 The most common bar code formats are supported, including Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A, and QR codes. 
@@ -35,9 +35,10 @@ The camera page will be initiated on each page where the input field has the pre
 - Click the camera to go back to the Camera page. 
 
 | Task and details page | Camera page | 
+| --------------------- | -------------------- |
+| ![camera-scanning-example-task-detail-page](media/camera-scanning-example-task-detail-page.png)          | ![camera-scanning-example-camera-page](media/camera-scanning-example-camera-page.png)          |
 
+On the camera page, when you click the **Camera** button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the **Camera** button will become available again. You will then be able to try to scan a bar code again.
 
-On the camera page, when you click the Camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the Camera button will become available again. You will then be able to try to scan a bar code again.
-
-When you aim the camera at a bar code, keep the bar code aligned within the brackets for best results. When a bar code is scanned successfully, the results will be processed, and you will be taken to the next step. If the next step contains another input field with preferred input mode set to Scanning, the camera page will start again. If the next step is not a scanning field, then the camera page will not be initiated.
+When you aim the camera at a bar code, keep the bar code aligned within the brackets for best results. When a bar code is scanned successfully, the results will be processed, and you will be taken to the next step. If the next step contains another input field with preferred input mode set to **Scanning**, the camera page will start again. If the next step is not a scanning field, then the camera page will not be initiated.
 
