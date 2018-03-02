@@ -36,14 +36,13 @@ ms.dyn365.ops.version: AX 7.0.1
 
 You can set up a number sequence for purchase product receipts by warehouse in the Accounts payable parameters form. You can number delivery documents separately for each warehouse. 
 
-Click Accounts payable > Setup > Accounts payable parameters. 
-In the Accounts payable parameters form, in the left pane, click Number sequences. 
-In the Number sequence code field, select a number sequence for the Internal product receipt reference type. 
-Click Warehouses. 
-In the Purchase – delivery note numbering form, in the Warehouse field, select a warehouse. 
-In the Number sequence code field, enter a product receipt number sequence code for the selected warehouse. 
-Repeat step 6 for each warehouse. 
-Press CTRL+S or close the form. 
+1. Click Accounts payable > Setup > Accounts payable parameters. 
+2. In the Accounts payable parameters form, in the left pane, click Number sequences. 
+3. In the Number sequence code field, select a number sequence for the Internal product receipt reference type. 
+4. Click Warehouses. 
+5. In the Purchase – delivery note numbering form, in the Warehouse field, select a warehouse. 
+6. In the Number sequence code field, enter a product receipt number sequence code for the selected warehouse. 
+7. Repeat step 6 for each warehouse. 
 
 > [!NOTE]
 > You can also set up delivery document numbering by warehouse for a purchase order. To do this, select a specific warehouse in the Posting product receipt form. After you post a product receipt, the order status of the purchase order line will not change to Delivered or Received until all purchase lines for all warehouses are posted for the purchase order. 
@@ -52,14 +51,13 @@ Press CTRL+S or close the form.
 
 You can set up a number sequence for sales packing slips by warehouse in the Accounts receivable parameters form. You can number delivery documents separately for each warehouse. 
 
-Click Accounts receivable > Setup > Accounts receivable parameters. 
-In the left pane, click Updates. Select the Independent delivery note numbering check box. 
-In the left pane, click Number sequences. Select a number sequence for the Packing slip reference type. 
-Click Warehouses. 
-In the Sales - delivery note numbering form, in the Warehouse field, select a warehouse. 
-In the Number sequence code field, enter a packing slip number sequence codes for the selected warehouse. 
-Repeat step 6 for each warehouse. 
-Press CTRL+S or close the form. 
+1. Click Accounts receivable > Setup > Accounts receivable parameters. 
+2. In the left pane, click Updates. Select the Independent delivery note numbering check box. 
+3. In the left pane, click Number sequences. Select a number sequence for the Packing slip reference type. 
+4. Click Warehouses. 
+5. In the Sales - delivery note numbering form, in the Warehouse field, select a warehouse. 
+6. In the Number sequence code field, enter a packing slip number sequence codes for the selected warehouse. 
+7. Repeat step 6 for each warehouse. 
 
 > [!NOTE]
 > You can also set up delivery document numbering by warehouse for a sales order. To do this, select a specific warehouse in the Packing slip form. After you post a packing slip, the order status will not change to Delivered or Received in the sales order until all sales lines for all warehouses are posted for the sales order. 
