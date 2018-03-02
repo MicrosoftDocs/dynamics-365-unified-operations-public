@@ -108,7 +108,7 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="get-started/demo-data.md">Demo data</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Deployment</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Cloud deployment</a></p>
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">On-premises deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
