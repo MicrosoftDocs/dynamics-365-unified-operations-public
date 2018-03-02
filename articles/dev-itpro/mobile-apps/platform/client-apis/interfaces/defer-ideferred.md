@@ -26,6 +26,7 @@ ms.dyn365.ops.version:
 
 # Deferred Type&lt;T&gt;
 
+[!include[banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 
