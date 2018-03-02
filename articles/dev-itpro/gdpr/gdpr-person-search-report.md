@@ -30,10 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # The Person search report
 
-The Person search report is a refinement of the existing Data management framework of Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
+The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
-> The Person search report will be available in an upcoming release. When available, you'll be able to use the report with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. 
+> The Person search report will be available in an upcoming release. When available, you'll be able to use the report withFinance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. 
 
 You can use the Global address book in Finance and Operations to create an instance of a person that is described in the data model as a party. 
 
@@ -41,7 +41,7 @@ When you add a contact, customer, user, worker, or other person in Finance and O
 
 ![Address book structure](../../fin-and-ops/organization-administration/media/address-book-structure.png)
 
-At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person in Finance and Operations is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data.  The Person search report  can help with both these tasks.
+At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person in Finance and Operations is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data. The Person search report can help with both these tasks.
 
 The Person search report is extensible. If you find that the existing entities do not contain all of the personal data you are looking for, they can be extended, or new entities can be written. In addition, you can change the data mappings for each entity and remove fields that you don't want to export.
 
@@ -79,9 +79,7 @@ To use the Person search report, you must complete these tasks.
 
 ## Additional resources
 
-If you're using the Person search report to respond to a request for data under the General Data Protection Regulation (GDPR) in the European Union, more information about that regulation is available in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](./gdpr-guide.md).
-
-You can learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the GDPR on the [European Union's website](http://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) and in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](./gdpr-guide.md) topic.
 
 
 ### Disclaimer
