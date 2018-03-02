@@ -76,7 +76,7 @@ Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD.
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD. If you do not already have an AAD tenant, you can get one for free by using on of the options provided by AAD, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -110,7 +110,7 @@ For more information, see [System requirements](../../fin-and-ops/get-started/sy
 
 Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup.
+The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
 > The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type.
@@ -164,7 +164,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 ### Overview
 
-The following steps must be completed to set up the infrastructure for Finance and Operations.
+The following steps must be completed to set up the infrastructure for Finance and Operations. Reading all the steps before you begin will make it easier to plan your setup.
 
 1. [Plan your domain name and DNS zones](#plandomain)
 2. [Plan and acquire your certificates](#plancert)
@@ -202,7 +202,7 @@ For example, if your company's domain is contoso.com, your zone for Finance and 
 
 Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [Active Directory Certificate Services](https://technet.microsoft.com/en-us/library/cc772393(v=ws.10).aspx) (AD CS), you can create the certificates through AD CS. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
-Self-signed certificates can be used only for testing purposes. For convenience, the setup scripts include scripts that generate and export self-signed certificates. As we've mentioned, these certificates can be used for testing purposes only.
+Self-signed certificates can be used only for testing purposes. For convenience, the setup scripts provided in LCS include scripts that generate and export self-signed certificates. If you are using self-signed scripts, you will be instructed to run the creation scripts in later steps. As we've mentioned, these certificates can be used for testing purposes only.
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
@@ -252,7 +252,7 @@ You must create several user or service accounts for Finance and Operations (on-
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
-DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. Create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
+DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. The following instructions provide steps to create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
 
 - **ax**.d365ffo.onprem.contoso.com for AOS machines
 - **sf**.d365ffo.onprem.contoso.com for the Service Fabric cluster
@@ -261,21 +261,25 @@ DNS is integrated with AD DS, and lets you organize, manage, and find resources 
 
 Use the following procedure to add a DNS zone.
 
-1. Sign in to the domain controller machine, select **Start**, and start DNS Manager by typing **dnsmgmt.msc**.
-2. Right-click the domain controller name, and then select **New Zone** \> **Next**.
+1. Sign in to the domain controller machine, select **Start**, and start DNS Manager by typing **dnsmgmt.msc** and selecting **dnsmgmt (DNS)** application.
+2. Right-click the domain controller name in the console tree, and then select **New Zone** \> **Next**.
 3. Select **Primary Zone**.
 4. Leave the **Store the zone in Active Directory (available only if the DNS Server is a writeable domain controller** check box selected, and then select **Next**.
 5. Select **To all DNS Servers running on Domain Controllers in this domain: Contoso.com**, and then select **Next**.
 6. Select **Forward Lookup Zone**, and then select **Next**.
 7. Enter the zone name for your setup, and then select **Next**. For example, enter **d365ffo.onprem.contoso.com**.
 8. Select **Do not allow dynamic updates**, and then select **Next**.
+9. Select **Finish**.
 
 #### Set up an A record for AOS
 
 In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.contoso.com** for **each** Service Fabric cluster node of the **AOSNodeType** type. Don't create A records for the other node types.
 
-1. Right-click the new zone, and then select **New Host**.
-2. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.12** as the IP address.) Select **Add Host**.
+1. Find the newly created zone under the **Forward Lookup Zones** folder in DNS Manager.
+2. Right-click the new zone, and then select **New Host**.
+3. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.12** as the IP address.) Select **Add Host**.
+4. Do not select either checkbox.
+5. Repeat steps 1-4 for each AOS Node.
 
 #### Set up an A record for the orchestrator
 
@@ -283,10 +287,12 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contos
 
 1. Right-click the new zone, and then select **New Host**.
 2. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.15** as the IP address.) Select **Add Host**.
+3. Do not select either checkbox.
+4. Repeat for each Orchestrator Node.
 
 ### <a name="joindomain"></a> 5. Join VMs to the domain
 
-Join each VM to the domain by completing the steps in [How to join Windows Server 2016 to an Active Directory domain](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html). Alternatively, use the following Windows PowerShell script.
+Join each VM to the domain by completing the steps in the [Join a Computer to a Domain](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain) document. Alternatively, use the following Windows PowerShell script.
 
 ```powershell
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
@@ -322,6 +328,9 @@ The infrastructure setup scripts use the following configuration files to drive 
 - infrastructure\ConfigTemplate.xml
 - infrastructure\D365FO-OP\NodeTopologyDefintion.xml
 - infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
+
+>[!NOTE]
+>Configuration files must be updated based on your environment for the setup scripts to work correctly. Be sure to update these files with the proper computer names, IP addresses, service accounts, domain based on your setup.
 
 **infrastructure\ConfigTemplate.xml** describes:
 - Service Accounts that are needed for the application to operate
@@ -403,7 +412,7 @@ dir cert:\LocalMachine\Root
 | Component | Download link |
 |-----------|---------------|
 | SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
-| Microsoft SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
@@ -412,7 +421,7 @@ dir cert:\LocalMachine\Root
 > [!NOTE]
 > The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts, which provides the option of running the necessary scripts from a single machine, e.g. the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section texts for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
 
-1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts.
+1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts as an Administrator.
 
     ```powershell
     # Install pre-req software on the VMs.
@@ -460,29 +469,29 @@ dir cert:\LocalMachine\Root
     ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
+4. Additional modifications to your cluster configuration may be necessary based on your environment. For more information, see, [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
-    For more information, see, [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
+5. Copy the generated ClusterConfig.json file to the \<ServiceFabricStandaloneInstallerPath\>.
 
-4. Copy the generated ClusterConfig.json file to the \<ServiceFabricStandaloneInstallerPath\>.
-
-5. Navigate to the \<ServiceFabricStandaloneInstallerPath\> in Windows PowerShell by using elevated privileges. Run the following command to test ClusterConfig.
+6. Navigate to the \<ServiceFabricStandaloneInstallerPath\> in Windows PowerShell by using elevated privileges. Run the following command to test ClusterConfig.
 
     ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
 
-6. If the test is successful, run the following command to deploy the cluster.
+7. If the test is successful, run the following command to deploy the cluster.
 
     ```powershell
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
-7. After the cluster is created, open the Service Fabric explorer on any client machine to validate the installation.
+8. After the cluster is created, open the Service Fabric explorer on any client machine to validate the installation.
 
     1. Install the Service Fabric client certificate in CurrentUser\\My if it isn't already installed.
     2. Go to **IE settings** \> **Compatibility Mode**, and clear the **Display Intranet sites in compatibility mode** check box.
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
     4. Select the client certificate. The **Service Fabric explorer** page appears.
+    5. Verify that all nodes are showing green.
 
 ### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
@@ -532,6 +541,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
     3. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
     4. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
+    
+    >[!NOTE]
+    > You may need to enable **Computers** under **Object Types..** to add machines or enable **Service Accounts** under **Object Types..** to add service accounts.
 
 3. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\agent file share:
 
@@ -549,12 +561,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user.
-3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate.
+3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the example below.
 
     **Self-signed certificate for a Clustered SQL instance**
 
     ```powershell
-    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contososqlao.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contososqlao.com"
+    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contoso.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contoso.com"
     ```
 
     **Self-signed certificate for an Always-On SQL instance**
@@ -585,7 +597,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
     3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate.
+        1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
+        2. Navigate to the certificate, right-click > **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
+        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for <server instance>, and then select **Properties**.
+        2. In the **Protocols for <instance name> Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate* box, click **OK**.
+        3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, click **OK**
+        4. Restart the SQL Server service
 
 6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
 
