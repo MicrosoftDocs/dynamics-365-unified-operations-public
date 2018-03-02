@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Respond to a DSR request for data from Talent
+title: Respond to a request for data using Talent
 description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 for Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Respond to a DSR request for data from Talent
+# Respond to a request for data using Talent
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,15 +48,17 @@ Data subjects have the following rights under the GDPR, and a data controller mi
 + Use advanced search and filters to find specific personal data and export that data by using the Microsoft Office Export functionality.
 + Extend the Person search report by adding an existing entity. For information that can help you extend the report, see [Extend the Person search report with your own data](gdpr-extend-person-search-report.md).
 
-### Right to correct\*
+### Right to modify\*
 
 + Use advanced search and filters to find the data that should be corrected, and correct the data directly in Talent.
 
 \* You might find that some data that qualifies as personal data can't be modified directly in the product or feature. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. As the controller, it's your responsibility to correct inaccurate or incomplete personal data.
 
-### Right to be forgotten
+### Right to be forgotten\*
 
 + You can delete or erase personal data where the product enables that action directly. As the controller, you should ensure any personal data that a data subject requests be erased does not conflict with other compliance obligations your organization may have around data retention, for example proof of payment or proof of tax.
+
+\* You might find that some data that qualifies as personal data can't be modified directly in the product or feature. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. As the controller, it's your responsibility to correct inaccurate or incomplete personal data.
 
 ### Right to port
 The following options are available to help you port personal data in response to a data rights request. 
