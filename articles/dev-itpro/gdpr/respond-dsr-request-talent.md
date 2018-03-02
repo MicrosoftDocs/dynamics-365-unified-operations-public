@@ -70,13 +70,13 @@ The following options are available to help you port personal data in response t
 ### Right to restrict processing
 
 + Remove the employee from, for example, a course.
-+ Following guidance from its legal counsel, refuse the right to restrict processing where data is needed by your company for compliance with other legal or industry mandates.
++ Following guidance from an organization's legal counsel, the company might refuse the right to restrict processing where data is needed by the company for compliance with other legal or industry mandates.
 
 ## Additional notes that apply to requests for personal data
 
-+ Personal data that is found in Microsoft Power BI is generated from the information that is entered in Talent and then transferred to that application for reporting purposes. Any request for peronsal data should be fulfilled from the information in Talent, by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Power BI to fulfill a DSR request. 
-+ Talent doesn't export documents that are attached to records. These attachments must be manually downloaded and shared with the individual who has the DSR.
-+ If a master record has transactional data associated with a master record, that record can't be deleted. 
++ Personal data that is found in Microsoft Power BI is generated from the information that is entered in Talent and then transferred to that application for reporting purposes. Any request for personal data should be fulfilled from the information in Talent, by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Power BI to fulfill a DSR request. 
++ Talent doesn't export documents that are attached to records. These attachments must be manually downloaded and shared with the individual who has made the DSR.
++ If transactional data is associated with a master record, that record can't be deleted. 
 + Similarly, transactions that have been posted or completed can't be deleted.
 
 ### Reasons why certain personal data may not be modified or deleted in Talent
@@ -111,10 +111,10 @@ Only terminated workers can be deleted from Talent. Follow these steps to delete
 
 Compensation isn't assigned to contractors. Therefore, those steps can be skipped in the preceding process.
 
-An admin can search and export personal data in Attract and Onboarding via <https://attract.talent.dynamics.com/personreport>.
+An admin can search and export personal data in Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboarding via <https://attract.talent.dynamics.com/personreport>.
 
 ## Additional resources
-To learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 
