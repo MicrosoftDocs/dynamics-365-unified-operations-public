@@ -41,5 +41,3 @@ Improvements have been made to the setup and deployment process. These improveme
 ## Servicing 
 You now have the ability to apply Microsoft-released platform and application updates, as well as code customizations, to your on-premises environment after deployment through Lifecycle Services (LCS). This enables customers to stay current with the latest set of fixes as well as take new customizations without having to reconfigure an existing environment or re-deploy the on-premises environment. You are now able to rollback code changes in case package application fails. Note that the [reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) will remain available for environments deployed with Platform update versions prior to Platform update 12. 
 
-## Disconnected client experiences
-You can now disable experiences that depend on internet connectivity on the client machine, even when the client is connected to the internet via a simple configuration update from the application.
