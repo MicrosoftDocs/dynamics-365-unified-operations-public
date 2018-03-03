@@ -33,7 +33,14 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to update the local agent.
+This topic provides information about how to update the local agent. The latest version of local agent released in March 2018 is 2.0.4. Please find below information on the Local agents released till date.
+
+| Local Agent version | Capability                   | Download location |
+|---------------------|------------------------------|-------------------|
+| Null                | Initial version. Deploys PU8 |                   |
+| 1.0.0               | Enables Reconfigure for failed deployments. |  |
+| 1.1.0               | Enables Reconfigure on successful deployments. Enables Multi model package deployments. Deploys PU12. | |
+| 2.0.4               | Enables Servicing flows. Deploys PU12 | |
 
 ## Download the local agent and configuration from LCS 
 
