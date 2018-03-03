@@ -40,6 +40,9 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
+[!IMPORTANT]
+> This document was updated Monday March 5 2018, needs the new infrastructure scripts and applies Platform Update 12. If you have PU8 or PU11 installations in progress please refer to the setup document at [link]. You may download the older versions of infrastructure scripts from [link]
+
 ## Finance and Operations components
 
 The Finance and Operations application consists of three main components:
@@ -867,8 +870,12 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     ```
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
-3. If you have an existing deployment, see the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
-4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
+3. If you have an existing PU8 or PU11 deployment, 
+    - Update the local agent. See the top [Update your local agent](update-local-agent.md) for more details.
+    - Validate the local agent from LCS.
+    - Reconfigure the local agent. See the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
+4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment.
+5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
