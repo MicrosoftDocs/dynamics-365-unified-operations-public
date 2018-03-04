@@ -51,6 +51,9 @@ The following table shows the steps and roles that are involved in the process.
 | Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video: 
+> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
+
 ## Importing the prospective vendor registration request
 
 The prospective vendor registration request is an entity in Finance and Operations. You can set up the system to import data via this entity. 
