@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # PageLinkMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Pagelink metadata type.
 
 ### Hierarchy
