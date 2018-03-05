@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 2012
 
 # Create configurations for India GST
 
+[!include[banner](../includes/banner.md)]
+
 If you are using one of the following Microsoft Dynamics AX versions, you can use the India GST release to help you be compliant with India GST regulations.
 
 - Microsoft Dynamics AX 2009 SP1
