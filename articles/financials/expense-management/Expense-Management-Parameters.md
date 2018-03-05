@@ -29,6 +29,9 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Expense management parameters
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 The parameters control the general behavior in Expense management.
