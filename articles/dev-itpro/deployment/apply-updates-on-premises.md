@@ -48,7 +48,7 @@ If you are on a platform version that is older than Update 12, you will have the
 To apply updates a deployed on-premises environment, in LCS, navigate to the **Environment details** page for that environment and under Maintain, select **Apply Updates**.  
 
    > [!NOTE]
-    > You can only apply updates after deployment on environments with Platform Update 12 or higher. The environment must also have the latest version of the local agent available in LCS. For more information, see the topic [Update the local agent](./lifecycle-services/update-local-agent.md).
+    > You can only apply updates after deployment on environments with Platform Update 12 or higher. The environment must also have the latest version of the local agent available in LCS. For more information, see the topic [Update the local agent](../lifecycle-services/update-local-agent.md).
 
 
 ## Apply application or binary updates through LCS 
@@ -60,9 +60,9 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 ### Pre-requisites
 - Before you begin, complete a full backup of the MR, AX and SSRS databases. While the restoring the code is completed through LCS, restoring the database must be done manually to ensure that there is no data loss.  
 - Update you environment to the latest build of Platform Update 12. 
-- Update the local agent to the latest version. For more information, see [Update the local agent](./lifecycle-services/update-local-agent.md).Visit the agent version topic for more details.  
+- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).Visit the agent version topic for more details.  
 - Depending on the update type, complete the following steps to generate a deployable package: 
-        - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](./migration-upgrad/download-hotfix-lcs.md).  
+        - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).  
         - Application X++ updates - Download the required hotfix to your development environment, and then follow the steps in the topic, [Create a deployable package of your models in order to apply it to a runtime environment(create-apply-deployable-package.md).  
         - Customizations - Follow the steps in the topic, [Develop and Deploy custom models](develop-deploy-custom-models-on-premises.md). 
 
@@ -83,12 +83,41 @@ After the update is complete, the environment will return to the **Deployed** st
 ### Update a production environment 
 Before you update a production environment, you must first successfully complete the package application update on a sandbox environment. 
 
-1. On the sandbox environment with the successful application of the package, open the project's Asset Library, select the package on the **Software deployable packages** tab, and mark it is as a **Release candidate**.  
-2. To apply the package to a production environment, open the environment details page. 
+1. In the project of the sandbox environment to which you applied the package, open the Asset Library, select the package on the **Software deployable packages** tab, and mark it is as a **Release candidate**.  
+2. Open the **Environment details** page.
+3. Under **Maintain**, select **Apply Updates**. In the slider that opens, only packages marked as **Release candidates** will be included.  
+4. On the confirmation dialog, click **Yes**. 
+As with updating the sandbox environment, the environment state will change from **Deployed** to **Preparation**. During the **Preparation** phase, the actual deployment has not yet started. This means that even if the preparation fails, the on-premises environment is not touched and can be used.  
+    >[!NOTE]
+    > Even though the **Preparation** phase does not touch the on-premises environment directly, we recommend you do not use the environment to perform transactions during this time.  
+When the preparation is complete, the environment state changes from **Preparation** to **Deploying**.  
+After the update is complete, the environment will return to the **Deployed** state. If the update application fails, the environment state will update to **Failed**. For details on what to do when package application fails, refer to the **What to do** section later in this topic.
+5. Navigate to **History** and **Environment details** to view the operations performed on the environment. You can also view a record of major actions performed on the environment such as deployment, servicing, and rollback.  
+
+## Resolve a failed application
+When update application fails, the environment is in a **Failed** state. The first step is to figure out why the update application failed. Based on where the failure is, the logs will be located in two difference locations.  
+
+- **Preparation** stage: When the operation fails in the **Preparation** stage, the logs are uploaded to LCS. In the log files, click **Download Logs** to download the log files. If there are any merge issues with the package, the error will be included in the log file.  
+- **Deploying** stage: When the operation fails in the **Deploying** stage, the logs are located in the on-premises environment. You will need to login to the environment and then access the logs and event viewer.  
+
+For more information about to use the troubleshooting logs, see [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem-md). 
 
 
-Under Maintain, select Apply Updates button to start a servicing operation. In the slider that opens, only packages marked as Release candidates will be seen.  
+After you have reviewed the logs and determined the cause of the failure, complete one of the following options to restore the environment to a healthy state. During the time that the environment is in a failed state, actions that can be performed on the environment will not be enabled until it been restored to a healthy state.
 
+- **Retry failed operation:** If update application fails, click **Retry** to recover from the failed operation.  
+- **Rollback the update:** To roll back the update that failed, click **Rollback**. Restoring the database to the last known good state must be completed prior to starting the rollback. When you click **Rollback**, the environment will be restored to the last known good state. The environment will then go into the **Preparation** state followed by the **Deploying** and then **Deployed** or **Failed** state.  
+   >[!NOTE]
+   > Clicking **Rollback** does not rollback the database. You are responsible to restoring the database to the last know backup taken before applying the update. This is critical to ensure that there is no data loss.  
+- **Refresh the state:** - If the update application fails in the **Preparation** state, the failure was on the LCS side and the update application had not yet started. This means that the on-premises environment is in a good state. To restore the LCS environment state back to **Deployed**, on the Project dashboard page, click **Refresh**.  
+- **Delete and redeploy an environment:** - **Important** - This option should NOT be exercised on a production environment. This can be used on a sandbox deployment to restore the environment to a healthy state. 
+If the retry and rollback options do not work, you will need to delete and redeploy the environment. To delete the environment, on the Project dashboard page, click **Delete** . You will now see the option to **Configure** the environment.  
+   > [!NOTE]
+   > Because this option requires you to do a fresh deployment of the environment, you will lose any previously applied updates. Any customizations and binary updates will have to be re-applied to this environment.
 
-Now follow steps 5 through 9 listed in the Steps to update a sandbox environment. 
+## Apply the latest platform update 
+There are two ways to apply the latest platform update: 
+- Deploy a new environment and select the latest platform update topology during deployment. Then, follow the usual steps for deploying an environment. 
+- Update an existing environment with the latest update by redeploying the environment. For more information about redeploying, see [Redeploy an on-premises environment](redeploy-on-prem.md). 
+
 
