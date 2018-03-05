@@ -79,7 +79,7 @@ Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD. If you do not already have an AAD tenant, you can get one for free by using on of the options provided by AAD, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD. If you do not already have an AAD tenant, you can get one for free by using one of the options provided by AAD. For more information, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
