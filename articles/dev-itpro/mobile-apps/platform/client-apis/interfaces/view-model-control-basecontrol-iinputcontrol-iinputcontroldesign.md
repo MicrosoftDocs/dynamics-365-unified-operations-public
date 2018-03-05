@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # InputControlDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Input control design.
 
 ### Hierarchy
