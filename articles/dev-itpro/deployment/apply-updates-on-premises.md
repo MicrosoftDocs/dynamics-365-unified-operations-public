@@ -36,19 +36,18 @@ ms.dyn365.ops.version: Platform update 12
 This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Search for and download updates
-For more information about how to find the updates that you can apply to your on-premises environment, see Issue search. For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
+For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
 
 ## Update an on-premises deployment
 You can apply updates to an on-premises environment either during deployment or after the deployment is completed.
 
 While an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings. For more information about how to apply customizations or application X++ updates, see [Develop and Deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
-If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
-
 To apply updates to an on-premises environment after it has been deployed, in LCS, on the **Environment details** page for the environment, under **Maintain**, select **Apply updates**.
 
 > [!NOTE]
-> You can apply updates after deployment only on environments that have Platform update 12 or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
+> You can apply updates after deployment only on environments that have Platform update 12 or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
+> If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
 The following steps can be used to apply X++, All Binary, or Platform Binary updates. For information about how to move from one platform release to another, see the "Apply the latest platform update" section later in this topic.
@@ -59,7 +58,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 ### Prerequisites
 - Before you begin, complete a full backup of the MR, AX, and SSRS databases. Although the code is restored through LCS, the database must be manually restored to help guarantee that there is no data loss.
 - Update you environment to the latest build of Platform update 12.
-- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). For more details, see the agent version topic.
+- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
     - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).
