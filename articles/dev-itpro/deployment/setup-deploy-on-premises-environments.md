@@ -870,25 +870,32 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     ```
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
+
 ![Deploy](./media/Deploy.png)
+
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
-    - Update the local agent. See the top [Update your local agent](../lifecycle-services/update-local-agent.md) for more details.
+    - Update the local agent. See [Update your local agent](../lifecycle-services/update-local-agent.md) for more details.
     - Validate the local agent from LCS.
-    - Deploy Platform Update 12 while going through the [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md).
+    - Deploy Platform Update 12 while going through the steps in [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
+
 ![Preparing](./media/Preparing.png)
 
-Clicking on **Full details** will take you to the environment details page as below
+Clicking on **Full details** will take you to the environment details page, as shown below.
+
 ![Details_Preparing](./media/Details_Preparing.png)
-5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. Once deployment starts status will change to **Deploying** as in
+
+5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. Once deployment starts status will change to **Deploying**, as shown.
+
 ![Deploying](./media/Deploying.png)
 
 ![Details_Deploying](./media/Details_Deploying.png)
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS as below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment. 
+If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
+
 ![Failed](./media/Failed.png)
 
-See topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure.
+See the topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure.
 
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
