@@ -40,6 +40,9 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
+> [!Important]
+> This topic applies to those who are deploying Platform update 11 and Local agent 1.1.0.
+
 ## Finance and Operations components
 
 The Finance and Operations application consists of three main components:
