@@ -29,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Create an end-to-end payment extension
+# Payment integration with payment terminal
 
-[!include[banner](../includes/banner.md)]
+This topic provides an overview of how to write a payment integration for the Dynamics 365 for Retail Modern POS (MPOS) for a payment terminal that can directly communicate with the payment gateway.
+
+## Overview
 
