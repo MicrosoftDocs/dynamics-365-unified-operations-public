@@ -75,8 +75,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 5. On the confirmation dialog, click **Yes**. The servicing operation has started on this environment.  
 The environment state will change from **Deployed** to **Preparation**. During the **Preparation** phase, the actual deployment has not yet started. This means that even if the preparation fails, the on-premises environment is not touched and can be used.  
     >[!NOTE]
-    > Even though the **Preparation** phase does not touch the on-premises environment directly, we recommend you do not use the environment to perform transactions during this time.  
-When the preparation is complete, the environment state changes from **Preparation** to **Deploying**.  
+    > Even though the **Preparation** phase does not touch the on-premises environment directly, we recommend you do not use the environment to perform transactions during this time.  When the preparation is complete, the environment state changes from **Preparation** to **Deploying**.  
 
 After the update is complete, the environment will return to the **Deployed** state. If the update application fails, the environment state will update to **Failed**. For details on what to do when package application fails, refer to the **What to do** section later in this topic.
 6. Navigate to **History** and **Environment details** to view the operations performed on the environment. You can also view a record of major actions performed on the environment such as deployment, servicing, and rollback.   
@@ -101,7 +100,7 @@ When update application fails, the environment is in a **Failed** state. The fir
 - **Preparation** stage: When the operation fails in the **Preparation** stage, the logs are uploaded to LCS. In the log files, click **Download Logs** to download the log files. If there are any merge issues with the package, the error will be included in the log file.  
 - **Deploying** stage: When the operation fails in the **Deploying** stage, the logs are located in the on-premises environment. You will need to login to the environment and then access the logs and event viewer.  
 
-For more information about to use the troubleshooting logs, see [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem-md). 
+For more information about to use the troubleshooting logs, see [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem.md). 
 
 
 After you have reviewed the logs and determined the cause of the failure, complete one of the following options to restore the environment to a healthy state. During the time that the environment is in a failed state, actions that can be performed on the environment will not be enabled until it been restored to a healthy state.
