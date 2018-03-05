@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments
+title: Set up and deploy on-premises environments (PU12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments
+# Set up and deploy on-premises environments  (PU12)
 
 [!include[banner](../includes/banner.md)]
 
