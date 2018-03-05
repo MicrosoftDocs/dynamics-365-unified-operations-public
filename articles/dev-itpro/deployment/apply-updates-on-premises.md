@@ -5,7 +5,7 @@ title: Apply updates to an on-premises deployment
 description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: manalidongre
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,44 +35,60 @@ ms.dyn365.ops.version: Platform update 12
 
 This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
-## Update types
-Three types of updates can be applied to an on-premises deployment of Finance and Operations:
+## Search for and download updates
+To learn more about how to find the updates that you can apply to your on-premises environment, see the topic, Issue search. To download the updates from the tiles in the **Updates** section of the **Environment details** page, see the topic, [Download updates](../migration-upgrade/download-hotfix-lcs.md). 
 
-- Customizations
-- Application X++ hotfixes that are released by Microsoft
-- Platform updates
+## Update an on-premises deployment
+You can apply updates to an on-premises environment during the deployment or after the deployment is complete.  
 
-> [!NOTE] 
-> At this time, application binary updates can't be applied to an on-premises environment.
+When an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings.For more information about how to apply customizations or application X++ updates, complete the steps in the topic, [Develop and Deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).  
 
-> [!IMPORTANT]
-> Before you apply any updates to an on-premises environment, save the configuration settings that were used to deploy that environment. When you apply updates, you must re-enter the configuration settings. For more information, see [Redeploy an on-premises environment](redeploy-on-prem.md#save-your-configuration).
+If you are on a platform version that is older than Update 12, you will have the option to reconfigure an already deployed environment to update the customizations or to update to the latest platform release. For more information about redeploying, see [Redeploy an on-premises environment](redeploy-on-prem.md). 
 
-## Apply code customizations
-To apply customizations at the same time that you deploy a new on-premises environment, follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md). To apply new customizations to an on-premises environment that has already been deployed, follow these steps.
+To apply updates a deployed on-premises environment, in LCS, navigate to the **Environment details** page for that environment and under Maintain, select **Apply Updates**.  
 
-1. In LCS, open the on-premises implementation project.
-2. Under **Environments**, select **Delete** to delete the application for the environment. This step cleans up the environment and removes any code that is deployed. **The on-premises agent, the data, and the infrastructure aren't affected when the application is deleted**.
+   > [!NOTE]
+    > You can only apply updates after deployment on environments with Platform Update 12 or higher. The environment must also have the latest version of the local agent available in LCS. For more information, see the topic [Update the local agent](./lifecycle-services/update-local-agent.md).
 
-    ![Delete an application](./media/apply-updates-on-prem-env-01.png)
 
-3. Select **Configure** to re-deploy by using a new application and custom code.
-4. In the advanced settings of the deployment configuration, select the application deployable package to apply, and then select **Done** to continue with the environment deployment process.
+## Apply application or binary updates through LCS 
+The following steps can be used to apply X++, All Binary, or Platform Binary updates. To move from one platform release to another, refer to the **Apply the latest platform update** section later in this topic.  
+    > [!IMPORTANT]
+    > Applying updates will require downtime to your environment. This means that no business transactions can be performed on the environment during the update. When you complete the following steps, verify that the system is not being used and that an official downtime notice has been communicated to all system users. 
 
-## Find and apply application hotfixes
-There are two ways to find application hotfixes that are available:
 
-- **Issue search in Lifecycle Services** – For more information about Issue search, see [Issue search](../lifecycle-services/issue-search-lcs.md).
-- **Application X++ hotfix tiles** – For cloud-hosted environments, the **Environment details** page shows all hotfixes that are applicable to the environment, based on the version that is currently deployed. However, the tile functionality isn't available for on-premises environments. Therefore, to see the list of applicable hotfixes, you should maintain a cloud-hosted development environment that is the same version as the on-premises sandbox or production environment. Note that this approach is recommended only for X++ hotfixes, not for any other type of update.
+### Pre-requisites
+- Before you begin, complete a full backup of the MR, AX and SSRS databases. While the restoring the code is completed through LCS, restoring the database must be done manually to ensure that there is no data loss.  
+- Update you environment to the latest build of Platform Update 12. 
+- Update the local agent to the latest version. For more information, see [Update the local agent](./lifecycle-services/update-local-agent.md).Visit the agent version topic for more details.  
+- Depending on the update type, complete the following steps to generate a deployable package: 
+        - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](./migration-upgrad/download-hotfix-lcs.md).  
+        - Application X++ updates - Download the required hotfix to your development environment, and then follow the steps in the topic, [Create a deployable package of your models in order to apply it to a runtime environment(create-apply-deployable-package.md).  
+        - Customizations - Follow the steps in the topic, [Develop and Deploy custom models](develop-deploy-custom-models-on-premises.md). 
 
-Follow these steps to apply a hotfix.
+### Update a sandbox environment
+1. In the LCS Asset library, upload the deployable package from the pre-requisite section to the **Software deployable packages** tab.
+2. In LCS, open the on-premises Implementation project and navigate to the **Environment details** page of the environment you want to update.  
+3. Under **Maintain**, select **Apply updates**. A slider will open that shows the updates that were uploaded to the Asset library. Note that only packages marked as **Valid** in the Asset Library will show up.  
+4. Select the update and click **Apply**.  
+5. On the confirmation dialog, click **Yes**. The servicing operation has started on this environment.  
+The environment state will change from **Deployed** to **Preparation**. During the **Preparation** phase, the actual deployment has not yet started. This means that even if the preparation fails, the on-premises environment is not touched and can be used.  
+    >[!NOTE]
+    > Even though the **Preparation** phase does not touch the on-premises environment directly, we recommend you do not use the environment to perform transactions during this time.  
+When the preparation is complete, the environment state changes from **Preparation** to **Deploying**.  
 
-1. Download the required hotfix to your development environment, and then follow the steps in [Create a deployable package](create-apply-deployable-package.md).
-2. In the Asset library in LCS, upload the deployable package to the **Software deployable packages** tab.
-3. As when you apply code customizations, you can include the above deployable package as an asset when you deploy an environment. To apply the package to a new environment or an environment that was previously deployed, follow the steps in the "Apply code customizations" section of this topic.
+After the update is complete, the environment will return to the **Deployed** state. If the update application fails, the environment state will update to **Failed**. For details on what to do when package application fails, refer to the **What to do** section later in this topic.
+6. Navigate to **History** and **Environment details** to view the operations performed on the environment. You can also view a record of major actions performed on the environment such as deployment, servicing, and rollback.   
 
-## Apply the latest platform update
-There are two ways to apply the latest platform update:
-- Deploy a new environment, and select the latest platform update topology during deployment. Then follow the usual steps for deploying an environment.
-- To update an existing environment with the latest update, you must redeploy the environment. For detailed information about redeploying, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+### Update a production environment 
+Before you update a production environment, you must first successfully complete the package application update on a sandbox environment. 
+
+1. On the sandbox environment with the successful application of the package, open the project's Asset Library, select the package on the **Software deployable packages** tab, and mark it is as a **Release candidate**.  
+2. To apply the package to a production environment, open the environment details page. 
+
+
+Under Maintain, select Apply Updates button to start a servicing operation. In the slider that opens, only packages marked as Release candidates will be seen.  
+
+
+Now follow steps 5 through 9 listed in the Steps to update a sandbox environment. 
 
