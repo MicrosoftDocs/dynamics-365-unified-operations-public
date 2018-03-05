@@ -33,31 +33,30 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to update the local agent. The latest version of local agent released in March 2018 is 2.0.0. Please find below information on the Local agents released till date.
+This topic provides information about how to update the local agent. The latest version of the local agent is version 2.0.0 released in March 2018. 
 
-| Local Agent version | Capability                   | Download location |
+| Local agent version | Capability                   | Download location |
 |---------------------|------------------------------|-------------------|
-| Null                | Initial version. Deploys PU8 |                   |
+| Null                | Initial version. Deploys Platform update 8. |                   |
 | 1.0.0               | Enables Reconfigure for failed deployments. |  |
-| 1.1.0               | Enables Reconfigure on successful deployments. Enables Multi model package deployments. Deploys PU12. | |
-| 2.0.0               | Enables Servicing flows. Deploys PU12 | |
+| 1.1.0               | Enables Reconfigure on successful deployments. Enables multi-model package deployments. Deploys Platform update 12. | |
+| 2.0.0               | Enables servicing flows. Deploys Platform update 12. | |
 
-## Whats new in local agent v2.0.0?
-Local agent v2.0.0 
-- is able to now Deploy Platform Update 12
-- enables Reconfigure feature until the first deployment of PU12 succeeds
-- disables Reconfigure feature on the 1st successful deployment of PU12. Once deployment succeeds you may use the regular update experience to update the environment.
+## Whats new in local agent 2.0.0?
+- Is able to deploy Platform update 12.
+- Enables Reconfigure feature until the first deployment of Platform update 12 succeeds.
+- Disables Reconfigure feature on the 1st successful deployment of Platform update 12. Once deployment succeeds you may use the regular update experience to update the environment.
 
 [!WARNING]
-> Local agent v2.0.0 **cannot** deploy PU8 and PU11. You will need version v1.1.0 to deploy PU11 and PU8.
+> Local agent 2.0.0 **cannot** deploy Platform update 8 and Platform update 11. You will need version 1.1.0 to deploy those platform updates.
 
-## Download the latest (v2.0.0) local agent and configuration from LCS 
+## Download the latest local agent and configuration from LCS 
 
 [!NOTE] 
-> If you need the older version of the agent for your current deployments please download it from the LCS asset library location specified in the table above.
+> If you need the older version of the agent for your current deployments, download it from the LCS asset library location specified in the table above.
 
 [!IMPORTANT]
-> You will need the version 2.0.0 or above to deploy Platform Update 12 and exercise update flows.
+> You will need version 2.0.0 or above to deploy Platform update 12 and exercise update flows.
 
 1. In Lifecycle Services (LCS), go to **Project Settings** > **On-prem Connectors**. 
 2. Select the connector to your environment and click **Edit**. 
@@ -76,7 +75,7 @@ Local agent v2.0.0
 
    ```LocalAgentCLI.exe Cleanup <path of localagent-config.json> ``` 
    
-[!NOTE] 
+> [!NOTE] 
 > You will need to use the current agent's binaries to cleanup the agent. In the event you do not have the current agent's binaries, you may delete the local agent application from service fabric explorer.
 
 5. Press any key to exit the cleanup operation. 
