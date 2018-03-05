@@ -65,7 +65,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 
    - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).  
    - Application X++ updates - Download the required hotfix to your development environment, and then follow the steps in the topic, [Create a deployable package of your models in order to apply it to a runtime environment(create-apply-deployable-package.md).
-   - Customizations - Follow the steps in the topic, [Develop and Deploy custom models](develop-deploy-custom-models-on-premises.md). 
+   - Customizations - Follow the steps in the topic, [Develop and deploy custom models](develop-deploy-custom-models-on-premises.md). 
 
 ### Update a sandbox environment
 1. In the LCS Asset library, upload the deployable package from the pre-requisite section to the **Software deployable packages** tab.
