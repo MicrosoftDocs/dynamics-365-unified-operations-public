@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ValueDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Value design object type.
 
 ### Hierarchy
