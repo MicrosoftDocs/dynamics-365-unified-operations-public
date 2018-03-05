@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments  (PU12)
+# Set up and deploy on-premises environments (Platform update 12)
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ ms.dyn365.ops.version: Platform update 12
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
 > [!IMPORTANT]
-> This document was updated March 5, 2018, with new infrastructure scripts and applies to Platform update 12. If you have Platform update 8 or Platform update 11 installations in progress please refer to these setup instructions [link]. You may download the older version of infrastructure scripts from LCS. Navigate to the Shared asset library and select **Model**. Select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment Scripts - Latest** row and then click the **Versions** button at the top. Download version 1.
+> This document was updated March 5, 2018, with new infrastructure scripts and applies to Platform update 12. If you have Platform update 8 or Platform update 11 installations in progress please refer to the [setup instructions for Platform Updates 8 and 11](setup-deploy-on-premises-environments-BeforeMarch2018.md). You may download the older version of infrastructure scripts from LCS. Navigate to the Shared asset library and select **Model**. Select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment Scripts - Latest** row and then click the **Versions** button at the top. Download version 1.
 
 ## Finance and Operations components
 
