@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # GroupDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Group design object type.
 
 ### Hierarchy
