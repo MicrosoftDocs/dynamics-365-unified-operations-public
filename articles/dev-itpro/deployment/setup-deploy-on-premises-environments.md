@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8
+ms.search.validFrom: 2018-02-28
+ms.dyn365.ops.version: Platform update 12
 
 ---
 
@@ -40,7 +40,7 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > This document was updated Monday March 5 2018, needs the new infrastructure scripts and applies Platform Update 12. If you have PU8 or PU11 installations in progress please refer to the setup document at [link]. You may download the older versions of infrastructure scripts from [link]
 
 ## Finance and Operations components
