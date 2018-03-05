@@ -39,8 +39,8 @@ This topic provides information about how to update the local agent. The latest 
 |---------------------|------------------------------|-------------------|
 | Null                | Initial version. Deploys Platform update 8. |                   |
 | 1.0.0               | Enables Reconfigure for failed deployments. |  |
-| 1.1.0               | Enables Reconfigure on successful deployments. Enables multi-model package deployments. Deploys Platform update 12. | |
-| 2.0.0               | Enables servicing flows. Deploys Platform update 12. | |
+| 1.1.0               | Enables Reconfigure on successful deployments. Enables multi-model package deployments. Deploys Platform update 12. | https://go.microsoft.com/fwlink/?linkid=869439 |
+| 2.0.0               | Enables servicing flows. Deploys Platform update 12. | https://go.microsoft.com/fwlink/?linkid=869440 |
 
 ## Whats new in local agent 2.0.0?
 - Is able to deploy Platform update 12.
