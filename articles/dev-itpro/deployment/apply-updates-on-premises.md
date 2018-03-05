@@ -48,7 +48,7 @@ If you are on a platform version that is older than Update 12, you will have the
 To apply updates a deployed on-premises environment, in LCS, navigate to the **Environment details** page for that environment and under Maintain, select **Apply Updates**.  
 
    > [!NOTE]
-    > You can only apply updates after deployment on environments with Platform Update 12 or higher. The environment must also have the latest version of the local agent available in LCS. For more information, see the topic [Update the local agent](../lifecycle-services/update-local-agent.md).
+   > You can only apply updates after deployment on environments with Platform Update 12 or higher. The environment must also have the latest version of the local agent available in LCS. For more information, see the topic [Update the local agent](../lifecycle-services/update-local-agent.md).
 
 
 ## Apply application or binary updates through LCS 
@@ -62,9 +62,10 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 - Update you environment to the latest build of Platform Update 12. 
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).Visit the agent version topic for more details.  
 - Depending on the update type, complete the following steps to generate a deployable package: 
-        - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).  
-        - Application X++ updates - Download the required hotfix to your development environment, and then follow the steps in the topic, [Create a deployable package of your models in order to apply it to a runtime environment(create-apply-deployable-package.md).  
-        - Customizations - Follow the steps in the topic, [Develop and Deploy custom models](develop-deploy-custom-models-on-premises.md). 
+
+   - Application binary updates - Download or save the update directly to the Asset library by following the steps in the topic, [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).  
+   - Application X++ updates - Download the required hotfix to your development environment, and then follow the steps in the topic, [Create a deployable package of your models in order to apply it to a runtime environment(create-apply-deployable-package.md).
+   - Customizations - Follow the steps in the topic, [Develop and Deploy custom models](develop-deploy-custom-models-on-premises.md). 
 
 ### Update a sandbox environment
 1. In the LCS Asset library, upload the deployable package from the pre-requisite section to the **Software deployable packages** tab.
