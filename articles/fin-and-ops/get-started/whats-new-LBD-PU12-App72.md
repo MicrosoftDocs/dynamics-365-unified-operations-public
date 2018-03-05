@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with plat
 description: This topic describes features that are either new or changed in on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12. This deployment option became available in March 2018.
 author: sericks007
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
