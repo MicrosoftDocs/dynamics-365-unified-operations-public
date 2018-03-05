@@ -885,7 +885,10 @@ Clicking on **Full details** will take you to the environment details page as be
 
 ![Details_Deploying](./media/Details_Deploying.png)
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment. See topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure.
+If the deployment fails, the **Reconfigure** button will become available for your environment in LCS as below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment. 
+![Failed](./media/Failed.png)
+
+See topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure.
 
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
