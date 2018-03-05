@@ -264,7 +264,7 @@ DNS is integrated with AD DS, and lets you organize, manage, and find resources 
 
 Use the following procedure to add a DNS zone.
 
-1. Sign in to the domain controller machine, select **Start**, and start DNS Manager by typing **dnsmgmt.msc** and selecting **dnsmgmt (DNS)** application.
+1. Sign in to the domain controller machine, select **Start**, and start DNS Manager by typing **dnsmgmt.msc** and selecting the **dnsmgmt (DNS)** application.
 2. Right-click the domain controller name in the console tree, and then select **New Zone** \> **Next**.
 3. Select **Primary Zone**.
 4. Leave the **Store the zone in Active Directory (available only if the DNS Server is a writeable domain controller** check box selected, and then select **Next**.
