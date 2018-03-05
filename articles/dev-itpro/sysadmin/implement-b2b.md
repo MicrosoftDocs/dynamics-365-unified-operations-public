@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 12
 ---
 
 # Export B2B users to Azure AD
+
+[!include[banner](../includes/banner.md)]
+
 You can automatically export business-to-business (B2B) users to Azure Active Directory (Azure AD). 
 
 In the past, B2B users were exported manually to a .csv file. Then the Azure AD tenant administrator had to use this file to manually add the users to Azure AD using the Azure portal. 
