@@ -64,7 +64,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
-    - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrad/download-hotfix-lcs.md).
+    - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrade/download-hotfix-lcs.md).
     - **Application X++ updates** – Download the required hotfix to your development environment, and then follow the steps in [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md).
     - **Customizations** – Follow the steps in [Develop and deploy custom models](develop-deploy-custom-models-on-premises.md).
 
