@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # GenericValue Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Generic value control type.
 
 ### Hierarchy
