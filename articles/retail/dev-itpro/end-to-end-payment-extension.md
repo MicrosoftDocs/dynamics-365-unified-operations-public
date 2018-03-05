@@ -39,6 +39,7 @@ This topic provides an overview of how to write a payment integration for the Dy
 
 ## Overview
 The diagram below illustrates how a new payment connector that integrates with a payment terminal that can directly communicate with a payment gateway fits into the Dynamics 365 for Retail stack. Note, the diagram below assumes that a local Hardware Station is used to communicate with the payment terminal. However, the same patterns apply to the shared Hardware Station as well and the article below describes how a new payment connetors can be hooked up in each of the two scenarios.
+
 ![test](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
 This article describes the following steps required to create a new payment connector:
