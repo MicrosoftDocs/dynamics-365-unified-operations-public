@@ -5,7 +5,7 @@ title: Cloud and on-premises feature comparison
 description: The topic shows which features are supported in Cloud and on-premises.
 author: robinarh
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
