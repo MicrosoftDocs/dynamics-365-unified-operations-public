@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 11)
+# Set up and deploy on-premises environments (Platform updates 8-11)
 
 [!include[banner](../includes/banner.md)]
 
