@@ -47,15 +47,15 @@ This topic provides information about how to update the local agent. The latest 
 - Enables Reconfigure feature until the first deployment of Platform update 12 succeeds.
 - Disables Reconfigure feature on the 1st successful deployment of Platform update 12. Once deployment succeeds you may use the regular update experience to update the environment.
 
-[!WARNING]
+> [!Note]
 > Local agent 2.0.0 **cannot** deploy Platform update 8 and Platform update 11. You will need version 1.1.0 to deploy those platform updates.
 
 ## Download the latest local agent and configuration from LCS 
 
-[!NOTE] 
+> [!NOTE] 
 > If you need the older version of the agent for your current deployments, download it from the LCS asset library location specified in the table above.
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > You will need version 2.0.0 or above to deploy Platform update 12 and exercise update flows.
 
 1. In Lifecycle Services (LCS), go to **Project Settings** > **On-prem Connectors**. 
