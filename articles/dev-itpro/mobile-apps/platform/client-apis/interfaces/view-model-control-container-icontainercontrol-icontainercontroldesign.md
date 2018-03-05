@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ContainerControlDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Container control design object has properties specific to all container controls.
 
 ### Hierarchy
