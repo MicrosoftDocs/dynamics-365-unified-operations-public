@@ -37,6 +37,9 @@ This topic explains how to apply supported updates to an on-premises deployment 
 
 ## Search for and download updates
 For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
+   
+   >[!NOTE]
+    > When you are updating an on-premises environment, always select updates from the update tiles on the **Environment** details page. If you select updates from another location, the updates might not work. 
 
 ## Update an on-premises deployment
 You can apply updates to an on-premises environment either during deployment or after the deployment is completed.
@@ -56,7 +59,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 > The application of updates requires downtime for your environment. Therefore, no business transactions can be performed in the environment during the update. When you complete the following steps, verify that the system isn't being used, and that an official downtime notice has been communicated to all system users.
 
 ### Prerequisites
-- Before you begin, complete a full backup of the MR, AX, and SSRS databases. Although the code is restored through LCS, the database must be manually restored to help guarantee that there is no data loss.
+- Before you begin, complete a full backup of the Management Reporter (MR), Microsoft Dynamics AX, and Microsoft SQL Server Reporting Services (SSRS databases). Although the code is restored through LCS, the database must be manually restored to help guarantee that there is no data loss.
 - Update you environment to the latest build of Platform update 12.
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
