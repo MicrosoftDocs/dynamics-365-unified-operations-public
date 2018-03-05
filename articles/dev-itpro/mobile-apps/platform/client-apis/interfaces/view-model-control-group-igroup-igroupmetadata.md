@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # GroupMetadata Type
+
+[!include[banner](../includes/banner.md)]
+
 Group metadata type.
 
 ### Hierarchy
