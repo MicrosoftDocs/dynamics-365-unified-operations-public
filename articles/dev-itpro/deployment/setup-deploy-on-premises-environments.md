@@ -870,8 +870,8 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     ```
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
-3. If you have an existing PU8 or PU11 deployment, 
-    - Update the local agent. See the top [Update your local agent](update-local-agent.md) for more details.
+3. If you have an existing Platform update 8 or Platform update 11 deployment: 
+    - Update the local agent. See the top [Update your local agent](../lifecycle-services/update-local-agent.md) for more details.
     - Validate the local agent from LCS.
     - Reconfigure the local agent. See the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment.
