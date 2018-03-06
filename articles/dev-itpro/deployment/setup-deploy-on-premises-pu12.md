@@ -316,8 +316,10 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts - Latest** row.
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts** row.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
+>[!Note] 
+> If you need the older version for PU8 or PU11 download version 1.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
@@ -603,10 +605,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
     3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate.
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
-        2. Navigate to the certificate, right-click > **Modify**, then replace the value with the certificate thumbprint.
+        2. Navigate to the certificate, right-click -> **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
-        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for <server instance>, and then select **Properties**.
-        2. In the **Protocols for <instance name> Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate* box, click **OK**.
+        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
+        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate** box, click **OK**.
         3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, click **OK**
         4. Restart the SQL Server service
 
@@ -625,8 +627,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 | Release | Demo Data |
 |-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations, Enterprise Edition (on-premises) - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
+| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises, Enterprise Edition - Demo data |
+| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
+| On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -820,7 +823,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Project settings command](./media/OPSetup_06_ProjectSettings.png)
 
 3. Select **On-premises connectors**.
-4. Select **Add** to create a new connector.
+4. Select **Add** to create a new connector. 
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
@@ -895,7 +898,8 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 ![Failed](./media/Failed.png)
 
-See the topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure.
+See the topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure. On successful deployment the screen will look as below.
+![Deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
@@ -903,4 +907,3 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 ## See also
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)
-
