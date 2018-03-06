@@ -63,11 +63,7 @@ This content provides a walkthrough of the entities of the India Goods and Servi
     <td>
     <p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for Companies, Vendors and Customers.</p>
 <ul>
-<li><strong>Company</strong> - Create a GSTIN entry for each company and specify casual registration periods as well as the following number sequence references:<ul>
-<li><strong>GST invoice number sequence</strong> - This will be used when customer sales that have GST transactions are posted. </li>
-<li><strong>Bill of supply number sequence</strong> - This will be used when customer sales that have non-GST transactions are posted.</li>
-</ul>
-</li>
+<li><strong>Company</strong> - Create a GSTIN entry for each company and specify casual registration periods 
 <li><strong>Vendors</strong> - Define state-wide GST type registration numbers for vendors.</li>
 <li><strong>Customers</strong> - Define state-wide GST type registration numbers for customers.</li>
 </ul>
@@ -135,20 +131,9 @@ This content provides a walkthrough of the entities of the India Goods and Servi
   </td>
 </tr>
 <tr>
-<td>Number sequences</td>
 <td>
-  <p>Update the following number sequences on the Accounts payable parameters page (Accounts payable > Setup > Accounts payable parameters): </p>
-    <ul>
-      <li> Debit note references: This number sequence will be used for purchase debit note transactions.</li>
-      <li>GST transaction ID references: This number sequence will be used for vendor advance payment transactions.</li>
-  </ul>
-  <p>Update the following number sequences on the Accounts receivable parameters page (Accounts Receivable > Setup > Accounts receivable parameters): </p>
-    <ul>
-      <li> Debit note references: This number sequence will be used for sales debit note transactions.</li>
-      <li>GST transaction ID references: This number sequence will be used for customer advance payment transactions.</li>
-  </ul>
+<td>
   
-  </td>
 </tr>
 <tr>
   <td>Main accounts for the GST posting type 
@@ -220,8 +205,7 @@ Legal entity.
 1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2. Select a tax setup.
 3. On the **Companies** FastTab, click **Deactivate**.
-
->   [./media/image32.png](./media/image32.png)
+   ![Deactivate](media/apac-ind-gst-deactivate-configuration.png)
 
 4.  Repeat steps 2 through 13 of [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company) to load the configuration , deploy to the company and synchronize the new version.
 
@@ -333,22 +317,22 @@ Set up a sales tax hierarchy and Maintain setoff rules profiles
 
 4.  In the **Structure** field, select **GTE hierarchy**.
 
->   [./media/image36.png](./media/image36.png)
+>   ![GTEhierarchy](media/apac-ind-gst-GTEhierarchy-Setoffrule.png)
 
-1.  Click **OK**.
+5.  Click **OK**.
 
-2.  On the **Versions** FastTab, click **Synchronize**.
+6.  On the **Versions** FastTab, click **Synchronize**.
 
-3.  Close the message.
+7.  Close the message.
 
-4.  Click **View**.
+8.  Click **View**.
 
->   [./media/image37.png](./media/image37.png)
+>   ![View](media/apac-ind-gst-View-Setoffrule.png)
 
 >   The **Sales tax hierarchy designer** form shows the tax type and tax
 >   components per the configuration.
 
-![](media/358b9042aea42d6a89be0266b5332b78.png)
+![Salestaxhierarchydesigner](media/apac-ind-gst-salestaxdesigner.png)
 
 1.  Click **Setoff rules for sales tax hierarchy**.
 
@@ -366,15 +350,15 @@ Set up a sales tax hierarchy and Maintain setoff rules profiles
 
 7.  Define the setoff rules per the legal requirement.
 
-![](media/69dc31bf0e716fe083d11e3b60e2de07.png)
+![Setoffrule](media/apac-ind-gst-View-Setoffrule.png)
 
-1.  Click **Close**.
+8.  Click **Close**.
 
-2.  Close the **Sales tax hierarchy designer** form.
+9.  Close the **Sales tax hierarchy designer** form.
 
-3.  Click **Activate**.
+10. Click **Activate**.
 
-4.  Click **Close**.
+11. Click **Close**.
 
 >   **Maintain setoff hierarchy profiles**
 
@@ -386,19 +370,79 @@ Set up a sales tax hierarchy and Maintain setoff rules profiles
 
 4.  In the **Hierarchy** field, select a value.
 
->   [./media/image40.png](./media/image40.png)
+>   ![Setoffhierarchyprofile](media/apac-ind-gst-create-Setoffhierarchyprofile.png)
 
-1.  Click **OK**.
+5. Click **OK**.
 
-2.  Click **Activate**.
+6. Click **Activate**.
 
-3.  Click **Yes** on the message.
+7. Click **Yes** on the message.
 
-4.  Close the message.
+8. Close the message.
 
-5.  Close the form.
+9. Close the form.
 
 
+## Create GST minor codes
+
+1. Go to **Tax** > **Setup** > **Sales tax** > **India** > **GST minor codes**.
+
+2. Click **New**.
+
+3. In the **Tax component** field, select a value. 
+
+4. In the **Minor code** field, enter a value.
+
+5. In the **Description** field, enter a value. 
+
+6. Close the form.
+
+
+
+## Print management
+
+### Accounts payable
+
+
+1. Go to **Accounts payable** > **Setup** > **Forms** > **Form setup**.
+
+2. Click on the **General** tab.
+
+3. Click **Print management**.
+
+4. Expand **Vendor invoice**.
+
+5. Select **Original<Default>**
+  
+6. Select **Report format** ‘VendInvoiceDocument_IN.Report’.
+
+>  ![Vendorinvoiceprintmgnt](media/apac-ind-gst-Vendorinvoiceprintmgnt.png)
+
+7. Close the forms.
+
+
+### Accounts receivable
+1. Go to **Accounts receivable** > **Setup** > **Forms** > **Form setup**.
+
+2. Click on the **General** tab.
+
+3. Click **Print management**.
+
+4. Expand **Customer invoice**.
+
+5. Select **Original<Default>**  
+  
+6. Select **Report format** ‘SalesInvoice_IN.Report’.
+
+>  ![Customerinvoiceprintmgnt](media/apac-ind-gst-Customerinvoiceprintmgnt.png)
+
+7. Expand **Free text invoice**.
+
+8. Select **Original <Default>**.
+  
+9. Select **Report format** ‘FreeTextInvoice.ReportIN’.
+
+8. Close the form
 
 
 ## Resources for other Microsoft Dynamics products
