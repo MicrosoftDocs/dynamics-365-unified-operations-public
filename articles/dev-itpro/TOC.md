@@ -631,6 +631,7 @@
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
+## [Restart environment services](lifecycle-services/restart-environment-services.md)
 ## [Track user log-ins](lifecycle-services/user-logins.md)
 ## [Asset library](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
