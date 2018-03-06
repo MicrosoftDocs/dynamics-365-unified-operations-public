@@ -55,7 +55,7 @@ The instructions in this section can be found in the `PaymentDeviceSample` class
 ### High level overview of payment flows 
 The following diagram illustrates a high level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Capture, End Transaction) across the Dynamics 365 for Retail MPOS, Hardware Station, and Payment Connector. 
 
-![test](media/PAYMENTS/PAYMENT-TERMINAL/Payment Flow.jpg)
+![test](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
 
 ### Implement payment connector
 
