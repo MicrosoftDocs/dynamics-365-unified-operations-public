@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-The process for deploying on-premises environments differs between Platform update 12 and earlier platform updates. For more information, see: 
+The process for deploying on-premises environments differs between Platform update 12 and earlier platform updates. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) 
+
+For setup instructions, see: 
 - [Set up and deploy on-premises environments (Platform update 12)](setup-deploy-on-premises-pu12.md)
 - [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
 
