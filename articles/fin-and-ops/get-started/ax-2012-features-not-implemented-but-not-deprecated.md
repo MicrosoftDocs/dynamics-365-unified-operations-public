@@ -411,5 +411,9 @@ Values for these supported payment specifications are used as payment specificat
 <td>Customizable help topics</td>
 <td>The ability to create customized help topics has not yet been implemented. Custom task guides and custom field help are available. This feature will be available in a future update. </td>
 <td>Not implemented</td></tr>
+</td>
+<td>Procurement site</td>
+<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and a similar "self service" interface for confirming receipts in relation to the requisitions and derived purchase orders aren't currently available.</td>
+<td>Not implemented</td>
 </tbody>
 </table>
