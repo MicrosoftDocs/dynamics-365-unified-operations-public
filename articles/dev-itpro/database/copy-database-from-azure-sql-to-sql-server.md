@@ -5,7 +5,7 @@ title: Copy a Finance and Operations database – Azure SQL to SQL Server
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,7 +58,7 @@ The following prerequisites must be met before you can move a database:
 - To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
-    - The exported *.bacpac file may be dependent on version specific features of Management Studio.
+    - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
 
 ## Before you begin
 
