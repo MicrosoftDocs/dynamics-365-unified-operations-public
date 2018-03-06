@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/08/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,14 +34,10 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-> [!Note]
-> The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
-> If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
+This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform updates 8 and 11.
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).
-
-> [!Important]
-> This topic applies to those who are deploying on-premises environments with Platform updates 8 and 11.
+> [!IMPORTANT]
+> This topic applies only to deploying on-premises environments on Platform updates 8 and 11. For information about deploying to Platform update 12, see [Set up and deploy on premises environments (Platform update 12](setup-deploy-on-premises-pu12.md).
 
 ## Finance and Operations components
 
@@ -302,15 +298,13 @@ After the VMs are joined to the domain, add the AOS Service Accounts, **Contoso\
 
 ### <a name="downloadscripts"></a> 6. Download setup scripts from LCS
 
-We have provided several scripts to help improve the setup experience. Follow these steps to download the setup scripts from LCS.
-
 > [!IMPORTANT]
 > The scripts must be executed from a computer in the same domain that the on-premises infrastructure is in.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts - Latest** row.
-4. Select **Versions**, and then download the latest version of the zip file for the scripts.
+4. Click the **Versions** button, and then select **Version 1**.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
