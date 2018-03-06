@@ -30,37 +30,38 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Payment integration with payment terminal
-This topic provides an overview of how to write a payment integration for the Dynamics 365 for Retail Modern POS (MPOS) for a payment terminal that can directly communicate with the payment gateway.
+This topic describes how to write a payment integration for the Dynamics 365 for Retail Modern POS (MPOS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key Terms
 | Term | Description |
 | --- | --- |
-| Payment Connector | Extension library written to integrate the Dynamics 365 for Retail Modern POS with a payment terminal. |
+| Payment Connector | Extension library written to integrate the MPOS with a payment terminal. |
 | Payment Processor | Extension library written to retrieve merchant propeties used by the payment connector. |
 
 ## Overview
-The diagram below illustrates how a new payment connector that integrates with a payment terminal fits into the Dynamics 365 for Retail stack. Note, the diagram below assumes that a local Hardware Station is used to communicate with the payment terminal. However, the same patterns apply to the shared Hardware Station as well and the article below describes how a new payment connetors can be hooked up in each of the two scenarios.
+The diagram below provides a high level overview of the payment terminal integration through the MPOS. Note, the diagram assumes that a local Hardware Station is used to communicate with the payment terminal but the same patterns apply to the shared Hardware Station as well.
 
 ![test](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
-This article describes in detail the following steps that are required to create an end-to-end payment integration for a payment terminal:
-- **Write a payment connector**: The payment connector is the main integration point between the Dynamics 365 for Retail MPOS and the payment terminal. This section describes how to implement a new payment connector that can relay the various payment requests (e.g. authorize, refund, void) to the payment terminal. 
+This article describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
+- **Write a payment connector**: The payment connector is the main integration point between the MPOS and the payment terminal. This section describes how to implement a new payment connector that can relay payment requests (e.g. authorize, refund, void) to the payment terminal. 
 - **Write a payment processor**: The payment processor is used to define the merchant properties used as part of the payment integration. This section describes how to implement a new payment processor, including interfaces to implement and patterns to follow.
 - **Configure the payment connector in the Hardware Station config**: This section describes how to configure the new payment connector to be loaded by the Hardware Station (local or shared).
 - **Configure the payment connector on the AX Hardware Station profile page**: The Hardware Station profile page in the AX Client is where all payment related configuration properties are set for the end-to-end payment integration to work. This section describes how to configure the payment connector on the Hardware Station page.
 
 ## Write a payment connector
-The instructions in this section can be found in the `PaymentDeviceSample` class in the Retail SDK.
+This section describes how to write a new payment connector.
 
-### High level overview of payment flows 
-The following diagram illustrates a high level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Capture, End Transaction) across the Dynamics 365 for Retail MPOS, Hardware Station, and Payment Connector. 
+### Understanding the payment flows
+The following diagram illustrates a high level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Capture, End Transaction) across the MPOS, Hardware Station, and payment connector.
 
 ![test](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
 
 ### Implement payment connector
+The section below describes how to implement a new payment connector. The examples shown below can be found in the `PaymentDeviceSample` class located under `SampleExtensions\HardwareStation\Extension.PaymentSample` folder in the Retail SDK.
 
 #### Implement the INamedRequestHandler interface
-All MPOS payment related flows go through the hardware station through the request/response pattern, which is used as the extensibility pattern for other channel related components as well. The first step to writing a payment connector is to create a new class that implements the `INamedRequestHandler` interface.
+All MPOS payment related flows are handled through request/response patterns in the Hardware Station. The first step in writing a new payment connector is to create a class that implements the `INamedRequestHandler` interface defined in the `Microsoft.Dynamics.Commerce.Runtime.Framework` library.
 
 ``` csharp
 public class PaymentDeviceSample : INamedRequestHandler
@@ -82,8 +83,8 @@ public class PaymentDeviceSample : INamedRequestHandler
 
 The `HandlerName` is used to configure the payment connector used on a given MPOS register through the AX Client UI (desccribed below).
 
-#### Implement payment related request and response
-In order to process payment related flows the payment connector has to define the `SupportedRequestTypes` that it can handle. This indicates to the MPOS and Hardware Station what type of requests (i.e. payment flows) this specific payment connector can handle. This becomes particularly important when several distinct connectors are implemented to handle different type of requests. Additionally, the `Execute` method has to be implemented to route each of the requests supported by the connector to a given method. The example below shows the complete list of `SupportedRequestTypes` and an example of a request (i.e. `Authorize`).
+#### Implement supported payment requests
+In order to process payment related flows the payment connector has to define the `SupportedRequestTypes` that it can handle. Additionally, the `Execute` method has to be implemented to route each of the requests supported by the connector to a given method. The example below shows the complete list of `SupportedRequestTypes` and an example of a specific request (i.e. `Authorize`).
 
 ``` csharp
 public class PaymentDeviceSample : INamedRequestHandler
@@ -155,7 +156,23 @@ public class PaymentDeviceSample : INamedRequestHandler
 }
 ```
 
-#### Full list of supported payment requests and responses
-The list below describes each of the supported payment related requests and responses.
+#### Full list of supported requests
+The list below descibes all supported requests types that a payment connector can implement.
 
-##### 
+| Request Class | Description |
+| --- | --- |
+| OpenPaymentTerminalDeviceRequest | Called before a sales transaction is initiated to establish a connection to the payment terminal. | 
+| BeginTransactionPaymentTerminalDeviceRequest | Called when a new sales transaction is initiated to handle any initialization on the payment terminal (e.g. initializing transaction screen). | 
+| UpdateLineItemsPaymentTerminalDeviceRequest | Called when line items on the cart are updated. | 
+| AuthorizePaymentTerminalDeviceRequest | Called when a payment is initiated on the MPOS payment view. | 
+| CancelOperationPaymentTerminalDeviceRequest | Called when a user hits the "cancel" button on the payment view dialog after the payment is initiated but before the payment is completed on the payment terminal. | 
+| CapturePaymentTerminalDeviceRequest | Called for each payment line when the entire amount on the cart is paid and before the sales transaction is concluded. | 
+| VoidPaymentTerminalDeviceRequest | Called when a payment line is voided on the cart. | 
+| RefundPaymentTerminalDeviceRequest | Called when a refund is issued. | 
+| FetchTokenPaymentTerminalDeviceRequest | Called to fetch a payment token to support deferred payments for customer orders. | 
+| EndTransactionPaymentTerminalDeviceRequest | Called when the sales transaction is concluded and all payments have been captured. | 
+| ClosePaymentTerminalDeviceRequest | Called after the sales transaction is concluded to close the connection to the payment terminal. | 
+| ActivateGiftCardPaymentTerminalRequest | Called when an external gift card is being activated through the MPOS. | 
+| AddBalanceToGiftCardPaymentTerminalRequest | Called when a balance is being added to an external gift card. | 
+| GetGiftCardBalancePaymentTerminalRequest | Called to when the balance on the gift card is being retrieved. | 
+| GetPrivateTenderPaymentTerminalDeviceRequest | TODO (add more details). | 
