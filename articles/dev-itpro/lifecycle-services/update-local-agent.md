@@ -35,12 +35,12 @@ ms.dyn365.ops.version: 7.3
 
 This topic explains how to update the local agent. The latest version of the local agent is version 2.0.0, which was released in March 2018.
 
-| Local agent version | Capability | Download location |
-|---------------------|------------|-------------------|
-| Null                | This initial version deploys Platform update 8. | |
-| 1.0.0               | This version enables the Reconfigure feature for failed deployments. | |
-| 1.1.0               | This version enables the Reconfigure feature for successful deployments, enables multi-model package deployments, and deploys Platform update 12. | <https://go.microsoft.com/fwlink/?linkid=869439> |
-| 2.0.0               | This version enables servicing flows and deploys Platform update 12. | <https://go.microsoft.com/fwlink/?linkid=869440> |
+| Local agent version | Capability | 
+|---------------------|------------|
+| Null                | This initial version deploys Platform update 8. |
+| 1.0.0               | This version enables the Reconfigure feature for failed deployments. |
+| 1.1.0               | This version enables the Reconfigure feature for successful deployments, enables multi-model package deployments, and deploys Platform update 12. | 
+| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 
 ## What's new in local agent 2.0.0?
 - Local agent 2.0.0 can deploy Platform update 12.
@@ -53,7 +53,7 @@ This topic explains how to update the local agent. The latest version of the loc
 ## Download the latest local agent and configuration from LCS
 
 > [!NOTE]
-> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS), at the location that is specified in the preceding table.
+> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent v1.1.0 navigate to **Shared Asset Library -> Model and click on Dynamics 365 for Finance and Operations on-premises, Enterprise edition - Local agent v1.1.0**.
 
 > [!IMPORTANT]
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
