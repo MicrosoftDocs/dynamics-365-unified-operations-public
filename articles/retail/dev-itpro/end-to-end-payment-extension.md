@@ -195,10 +195,13 @@ In order to ensure that the payment connector is loaded by the Hardware Station 
 <hardwareStationExtension>
   <composition>
     <!-- 
-    Register your own assemblies or types here.
-    The the following example registers NewPeripheralDevice (and all its request handlers). Any other services are not being overridden:
-    <add source="type" value="Contoso.Commerce.HardwareStation.NewPeripheralDevice, Contoso.Commerce.HardwareStation.NewPeripheralDevice" />
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.NewPeripheralDevice” />
+        Register your own assemblies or types here. The the following example registers NewPeripheralDevice 
+        (and all its request handlers). Any other services are not being overridden:
+
+        <add source="type" 
+             value="Contoso.Commerce.HardwareStation.NewPeripheralDevice, Contoso.Commerce.HardwareStation.NewPeripheralDevice" />
+        <add source="assembly" 
+             value="Contoso.Commerce.HardwareStation.NewPeripheralDevice” />
     -->
     <add source="assembly" value="Contoso.Commerce.HardwareStation.PaymentSample" />
   </composition>
