@@ -55,10 +55,10 @@ The following prerequisites must be met before you can move a database:
 - The source environment (that is, the environment that is connected to the source database) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - Only a database that the customer has SQL access to can be copied. If you must copy the production environment, you must first copy that environment to the sandbox environment. Then work from the sandbox environment.
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
-- To export a database from a sandbox environment, you must install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in that environment. You then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+- To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio as in the environment you will be importing the database. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
-    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
+    - The exported *.bacpac file may be dependent on version specific features of Management Studio.
 
 ## Before you begin
 
@@ -185,7 +185,7 @@ GO
 
 ## Export the database
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
@@ -214,7 +214,7 @@ When you import the database, we recommend that you follow these guidelines:
 - Retain a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window as an administrator, and run the following commands.
+To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window and run the following commands.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
