@@ -38,14 +38,14 @@ This topic explains how to update the local agent. The latest version of the loc
 | Local agent version | Capability | 
 |---------------------|------------|
 | Null                | This initial version deploys Platform update 8. |
-| 1.0.0               | This version enables the Reconfigure feature for failed deployments. |
-| 1.1.0               | This version enables the Reconfigure feature for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
+| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
+| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 
 ## What's new in local agent 2.0.0?
 - Local agent 2.0.0 can deploy Platform update 12.
-- It enables the Reconfigure feature until the first deployment of Platform update 12 succeeds.
-- It disables the Reconfigure feature on the first successful deployment of Platform update 12. After deployment succeeds, you can use the regular update experience to update the environment.
+- It enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) until the first deployment of Platform update 12 succeeds.
+- It disables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) on the first successful deployment of Platform update 12. After deployment succeeds, you can use the regular update experience to update the environment.
 
 > [!NOTE]
 > Local agent 2.0.0 **cannot** deploy Platform update 8 and Platform update 11. You must have version 1.1.0 to deploy those platform updates.
