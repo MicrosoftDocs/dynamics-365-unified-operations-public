@@ -36,6 +36,7 @@ This topic provides an overview of how to write a payment integration for the Dy
 | Term | Description |
 | --- | --- |
 | Payment Connector | Extension library written to integrate the Dynamics 365 for Retail Modern POS with a payment terminal. |
+| Payment Processor | Extension library written to retrieve merchant propeties used by the payment connector. |
 
 ## Overview
 The diagram below illustrates how a new payment connector that integrates with a payment terminal fits into the Dynamics 365 for Retail stack. Note, the diagram below assumes that a local Hardware Station is used to communicate with the payment terminal. However, the same patterns apply to the shared Hardware Station as well and the article below describes how a new payment connetors can be hooked up in each of the two scenarios.
@@ -52,7 +53,9 @@ This article describes in detail the following steps that are required to create
 The instructions in this section can be found in the `PaymentDeviceSample` class in the Retail SDK.
 
 ### High level overview of payment flows 
-The following diagram illustrates a high level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Void, Capture, End Transaction) across the Dynamics 365 for Retail MPOS, Hardware Station, and Payment Connector. 
+The following diagram illustrates a high level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Capture, End Transaction) across the Dynamics 365 for Retail MPOS, Hardware Station, and Payment Connector. 
+
+![test](media/PAYMENTS/PAYMENT-TERMINAL/Payment Flow.jpg)
 
 ### Implement payment connector
 
