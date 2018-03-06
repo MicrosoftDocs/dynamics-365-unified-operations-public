@@ -574,11 +574,6 @@
             "source_path": "dev-itpro/data-entities/data-entities-product-information-management.md",
             "redirect_url": "/dynamics365/unified-operations/ dev-itpro/data-entities/data-entities-report",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "dev-itpro/data-entities/data-entities-accounts-payable-taxes.md",
-            "redirect_url": "/dynamics365/unified-operations/ dev-itpro/data-entities/data-entities-report",
-            "redirect_document_id": true
         }
     ]
 }
