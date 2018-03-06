@@ -603,10 +603,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
     3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate.
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
-        2. Navigate to the certificate, right-click > **Modify**, then replace the value with the certificate thumbprint.
+        2. Navigate to the certificate, right-click -> **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
-        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for <server instance>, and then select **Properties**.
-        2. In the **Protocols for <instance name> Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate* box, click **OK**.
+        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
+        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate** box, click **OK**.
         3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, click **OK**
         4. Restart the SQL Server service
 
@@ -625,8 +625,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 | Release | Demo Data |
 |-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations, Enterprise Edition (on-premises) - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
+| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises, Enterprise Edition - Demo data |
+| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
+| On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -820,7 +821,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Project settings command](./media/OPSetup_06_ProjectSettings.png)
 
 3. Select **On-premises connectors**.
-4. Select **Add** to create a new connector.
+4. Select **Add** to create a new connector. 
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
