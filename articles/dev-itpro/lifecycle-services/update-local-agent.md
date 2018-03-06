@@ -39,7 +39,7 @@ This topic explains how to update the local agent. The latest version of the loc
 |---------------------|------------|
 | Null                | This initial version deploys Platform update 8. |
 | 1.0.0               | This version enables the Reconfigure feature for failed deployments. |
-| 1.1.0               | This version enables the Reconfigure feature for successful deployments, enables multi-model package deployments, and deploys Platform update 12. | 
+| 1.1.0               | This version enables the Reconfigure feature for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 
 ## What's new in local agent 2.0.0?
