@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 # Demo data screen layouts in MPOS/CPOS
 
+[!include[banner](includes/banner.md)]
+
 This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
 
 ## Overview

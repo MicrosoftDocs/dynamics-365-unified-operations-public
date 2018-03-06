@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # MultiLookupDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Multi-Lookup design object type.
 
 ### Hierarchy

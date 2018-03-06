@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # HyperLinkDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Hyperlink design object type.
 
 ### Hierarchy

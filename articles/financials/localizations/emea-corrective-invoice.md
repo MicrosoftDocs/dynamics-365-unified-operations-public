@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Corrective invoicing
 
+[!include[banner](../includes/banner.md)]
+
 A credit note or credit memorandum (memo) is a document that reduces or
 eliminates the amount that the buyer has to pay.
 

@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ListDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 List design object type.
 
 ### Hierarchy

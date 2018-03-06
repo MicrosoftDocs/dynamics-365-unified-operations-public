@@ -26,4 +26,6 @@ ms.dyn365.ops.version:
 
 # index 
 
+[!include[banner](../../../../includes/banner.md)]
+
 

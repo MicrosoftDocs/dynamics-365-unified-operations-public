@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Page 
+
+[!include[banner](../../../../includes/banner.md)]
+
 The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 ### Page data Synchronization
 Pages that can submit changes (also referred to as actions) go through various stages before they're completely in sync with the server.

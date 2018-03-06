@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ImageDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Image design object type.
 
 ### Hierarchy
