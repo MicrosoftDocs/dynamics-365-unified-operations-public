@@ -64,10 +64,10 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 ## Prerequisites
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
-- To import a database into an Azure SQL Database environment, you must install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in that environment. You then do the bacpac import on the AOS computer. There are two reasons for this requirement:
+- To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio as in the environment you will be importing the database. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
-    - Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
-    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
+    - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
+    - The exported *.bacpac file may be dependent on version specific features of Management Studio.
 
 > [!IMPORTANT]
 > If your environment includes Microsoft Dynamics 365 for Retail components, you must manually store some environment-specific values before you begin. For more information, see the "Additional steps for Retail environments" section.
@@ -145,7 +145,7 @@ drop user axdeployextuser
 
 ## Export the database from SQL Server
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
 > If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
@@ -168,7 +168,7 @@ Copy the .bacpac file that was generated in the previous section to the AOS comp
 > [!NOTE]
 > Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more information, see the "Known issues and limitations" section.)
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
 > If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
