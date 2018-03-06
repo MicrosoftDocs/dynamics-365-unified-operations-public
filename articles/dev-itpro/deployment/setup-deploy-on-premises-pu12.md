@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12.
+This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) 
 
 > [!IMPORTANT]
 > This topic applies only to deploying on-premises environments on Platform update 12. For information about deploying to Platform update 8 or Platform update 11 installations see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
