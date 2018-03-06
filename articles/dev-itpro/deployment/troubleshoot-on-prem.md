@@ -5,7 +5,7 @@ title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition 
 description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -46,7 +46,10 @@ Service Fabric is one of the initial components to install and configure for you
 ## Access Service Fabric Explorer
 Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080.
 
-To verify the address, note what was used in the topic, [Create DNS zones and add A records](setup-deploy-on-premises-environments.md#createdns).
+To verify the address, note what was used in the section Create DNS zones and add A records in the appropriate topic for your environment: 
+- [Platform update 12](setup-deploy-on-premises-pu12.md#createdns).
+- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#createdns).
+
 To access the site, the client certificate needs to be in `cert:\CurrentUser\My` (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ## Locate logs for deployment diagnostics
@@ -73,7 +76,10 @@ To determine what machine is the primary instance for stateful services, like a 
 Note the primary node. For stateless services, or the rest of the applications, you need to check all of the nodes.
 
 ## Timeout error received when creating a Service Fabric cluster
-Run Test-D365FOConfiguration.ps1 as noted in [Set up a standalone Service Fabric cluster](setup-deploy-on-premises-environments.md#setupsfcluster) and note any errors.
+Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fabric cluster in the appropriate setup topic and note any errors: 
+- [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
+- [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)
+
 Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all service fabric nodes.
 Verify that the Service Fabric Server certificate has the ACL for Network Service on all service fabric nodes.
 
@@ -146,7 +152,7 @@ Follow the steps below in order to start over:
         - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
     - If the ADFS settings will be modified, remove the ADFS certificate as well.
-1. Update configuration files. Refer to the [deployment documentation](setup-deploy-on-premises-environments.md) in order to properly fill out the fields in the templates.
+1. Update configuration files. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
     - ConfigTemplate.xml
     - ClusterConfig.json
 1. Access the project in LCS.
@@ -154,7 +160,7 @@ Follow the steps below in order to start over:
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
 
-Now start again with the [deployment documentation](setup-deploy-on-premises-environments.md).
+Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pull.md).
 
 ## Local agent
 Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition.
@@ -163,7 +169,11 @@ Local agent is the framework that is responsible for communicating with LCS, dow
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
 
 ## Install, upgrade, or uninstall local agent
-Local agent installation is discussed in the topic, [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md). You can also use the following upgrade and uninstall commands:
+Local agent installation is discussed in the Set up and deploy on-premises environments topic for the appropriate platform update: 
+- [Platform update 12](setup-deploy-on-premises-pu12.md) 
+- [Platform update 8 or 11](setup-deploy-on-premises-pu8-pull.md)
+
+You can also use the following upgrade and uninstall commands:
 
 ```powershell
 LocalAgentCLI.exe Install <path of localagent-config.json>
@@ -212,7 +222,9 @@ Complete the following steps to resolve the error.
         </Certificate>
         ```
 
-3. Ensure that the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configurelcs) were completed using the same certificate that is specified in the local agent configuration in LCS.
+3. Ensure that the steps in Configure LCS connectivity for the tenant were completed using the same certificate that is specified in the local agent configuration in LCS: 
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
 4. Uninstall the local agent.
 5. Specify the correct certificate in the local agent configuration and download the configuration file again.
 6. Install the local agent again with the new configuration file.
@@ -311,7 +323,10 @@ Complete the following steps to configure local agent with updated tenant.
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-3. Complete the steps in step [11. Configure LCS connectivity for the tenant](setup-deploy-on-premises-environments.md#configurelcs).
+3. Complete the steps in step 11. Configure LCS connectivity for the tenant for your environment:
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+
 4. Create a new LCS connector in the new tenant.
 5. Download the local-agent.config file.
 6. Install local agent.
@@ -344,7 +359,7 @@ AX-SetupInfrastructureEvents (additional details when interactions with Service 
 Click the **Details** tab to view the full error message.
 
 ## Service Fabric failing
-Note the service that is failing and open the corresponding application directory. For example, `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`.
+Note the service that is failing and open the corresponding application directory. For example: `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`
 
 ## Encryption errors
 Some encryption error examples include, AXBootstrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
@@ -359,7 +374,9 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 This error may also occur if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for the following:
 
-- Proper layout/structure of credentials.json file encrypt credentials. For more information, see [Encrypt credentials](setup-deploy-on-premises-environments.md#encryptcred).
+- Proper layout/structure of credentials.json file encrypt credentials. For more information, see Encrypt credentials for your environment:
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#encryptcred)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
 - An end quote at the end of the line or on the next line.
 - Error on Microsoft-Service Fabric source.
 
@@ -494,7 +511,7 @@ The out file contains the following information:
 - System.Net.WebException: Unable to connect to the remote server --->
 - System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443
 
-You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](https://docs.microsoft.com/en-us/sysinternals/downloads/psping).
+You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](/sysinternals/downloads/psping).
 
 ### Redirect login questions and issues
 If you are having issues with login, verify in Service Fabric Explorer that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** are valid. For example,
@@ -541,7 +558,11 @@ If you receive one of the following errors:
 The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes.
 
 ## Keyset doesn't exist
-If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete [Set up VMs](setup-deploy-on-premises-environments.md#setupvms). Copy the scripts in each folder to the VMs that correspond to the folder name.
+If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete Set up VMs for your environments.
+- [Platform update 12](setup-deploy-on-premises-pu12.md#setupvms)
+- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupvms)
+
+Copy the scripts in each folder to the VMs that correspond to the folder name.
 
 Also check the .csv file to verify that the correct domain is being used.
 
@@ -587,7 +608,9 @@ Navigate to the Event Viewer to get root error.
 If you receive this error, check to see if certificates/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure).
 
 ## Client and server can't communicate because they do not have a common algorithm
-If this occurs, verify that the certificates created are using the specified provider as explained in step [2. Plan and acquire your certificates](setup-deploy-on-premises-environments.md#plancert).
+If this occurs, verify that the certificates created are using the specified provider as explained in step 2. Plan and acquire your certificates for your environment. 
+- [Platform update 12](setup-deploy-on-premises-pu12.md#plancert)
+- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert)
 
 ## Find a list of group managed service accounts (gMSA)
 To find a list of all groups and hosts, see `Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRetrieveManagedPassword`
@@ -620,7 +643,7 @@ AOS users are not in the local administrator group and the UAC has not been disa
 4. If UAC was changed, you need to restart the machine to take effect.
 
 ## Files in use errors
-Set up exclusion rules that are advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Set up exclusion rules that are advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## Apply deployable packages during deployment
 ### Package deployment fails due to "path too long" exception
