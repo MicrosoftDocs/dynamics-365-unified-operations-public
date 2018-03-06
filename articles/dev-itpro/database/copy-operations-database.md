@@ -182,6 +182,9 @@ EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+
+CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
 ```
 
 ### Re-provision Retail components in the target environment
