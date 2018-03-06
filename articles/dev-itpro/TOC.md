@@ -516,6 +516,9 @@
 ### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
+#### [Deploy on-premises environments with Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
+#### [Deploy on-premises environments with Platform updates 8 and 11](deployment/setup-deploy-on-premises-pu8-pu11.md)
+
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Configure reverse proxy for your on-premises environment](deployment/onprem-reverseproxy.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
