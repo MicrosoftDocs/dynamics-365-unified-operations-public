@@ -160,7 +160,7 @@ Follow the steps below in order to start over:
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
 
-Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pull.md).
+Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## Local agent
 Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition.
@@ -171,7 +171,7 @@ Local agent values can be found in Service Fabric Explorer under **Cluster** > *
 ## Install, upgrade, or uninstall local agent
 Local agent installation is discussed in the Set up and deploy on-premises environments topic for the appropriate platform update: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md) 
-- [Platform update 8 or 11](setup-deploy-on-premises-pu8-pull.md)
+- [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md)
 
 You can also use the following upgrade and uninstall commands:
 
