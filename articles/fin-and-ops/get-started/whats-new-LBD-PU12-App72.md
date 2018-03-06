@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in on-premises depl
 For more resources about on-premises deployments, see [On-premises deployment landing page](../../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 ## Setup and deployment
-Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md).
+Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments (Platform update 12)](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
 
 ## Servicing
 After your on-premises environment is deployed, you can now use Microsoft Dynamics Lifecycle Services (LCS) to apply platform and application updates that Microsoft releases. You can also apply code customizations. Therefore, customers can stay current with the latest set of fixes and take up new customizations without having to reconfigure an existing environment or redeploy the on-premises environment. Additionally, you can now roll back code changes if packages aren't successfully applied.
