@@ -47,7 +47,8 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 
 ## Onboard
 - [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md)
+- [Set up and deploy on-premises environments (Platform update 12)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform update 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
