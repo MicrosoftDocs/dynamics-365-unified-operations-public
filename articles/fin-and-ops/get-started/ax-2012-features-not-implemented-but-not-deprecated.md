@@ -376,7 +376,7 @@ Values for these supported payment specifications are used as payment specificat
 </table></td>
 <td>Not implemented</td></tr>
 <tr class="even">
-<td>Fiscal printers for Poland</td>
+,<td>Fiscal printers for Poland</td>
 <td>Integration with Polish fiscal printers enables the required information to be sent to the fiscal printer in the correct format during invoice posting. Examples of Polish fiscal printers include the Posnet Thermal and Elzab Omega printer types. This feature will be available in a future update.</td>
 <td>Not implemented</td></tr>
 <tr class="odd">
@@ -413,7 +413,8 @@ Values for these supported payment specifications are used as payment specificat
 <td>Not implemented</td></tr>
 </td>
 <td>Procurement site</td>
-<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and a similar "self service" interface for confirming receipts in relation to the requisitions and derived purchase orders aren't currently available.</td>
+<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different Procurement catalogs could be configured to show on the site depending on policy. Furthermore procurement catalogs could be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hieararchy. 
+Additionally on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
 <td>Not implemented</td>
 </tbody>
 </table>
