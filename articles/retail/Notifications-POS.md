@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Display order notifications in Point of Sale
-description: This topic describes how to enable order notifications in the Point of Sale and the notifications framework, which can be extended to other operations. 
+title: Display order notifications in the point of sale
+description: This topic describes how to enable order notifications in the point of sale and the notifications framework, which can be extended to other operations. 
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 10/30/2017
@@ -28,9 +28,9 @@ ms.dyn365.ops.version:
 
 ---
 
-# Display notifications in Point of Sale
+# Display notifications in point of sale
 
-In today's modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, performing stock counts, and receiving orders in store. The Point of Sale (POS) client empowers the associates to do these tasks and much more, all in a single application. With various tasks to be performed during a day, associates may need to be notified when something requires their attention. The notification framework in the POS solves this problem by allowing the retailers to configure role-based notifications. With Dynamics 365 for Retail with Application update 5, these notifications can be only configured for POS operations.
+In today's modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, performing stock counts, and receiving orders in store. The point of sale (POS) client empowers the associates to do these tasks and much more, all in a single application. With various tasks to be performed during a day, associates may need to be notified when something requires their attention. The notification framework in the POS solves this problem by allowing the retailers to configure role-based notifications. With Dynamics 365 for Retail with Application update 5, these notifications can be only configured for POS operations.
 
 Currently, the system provides the capability to display notifications for order fulfillment operation, however, the framework is designed to be extensible, so that in the future, developers will be able to write a notification handler for any operation and display the notifications in POS.  
 
@@ -45,7 +45,7 @@ To enable notifications for the order fulfillment operations, refer to the follo
 > [!NOTE]
 > Notifications can be overridden at the user level by navigating to the worker's record and selecting **POS Permissions** and then editing that user's notification subscription.
 
- - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. For some notifications, the Point of Sale needs to make real-time calls to the back office application, which consumes compute capacity of your back office application. We recommend entering a number that meets your business requirements but also considers the impact of real-time calls. Setting the notification interval to "0" will turn off notifications.  
+ - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. For some notifications, the POS needs to make real-time calls to the back office application, which consumes the compute capacity of your back office application. We recommend entering a number that meets your business requirements but also considers the impact of real-time calls. Setting the notification interval to "0" will turn off notifications.  
 
  - Go to **Retail** > **Retail IT** > **Distribution schedule**. Select schedule "1060-Staff" to sync notification subscription settings and then click **Run now**. Next, sync the permission interval by selecting the "1070-Channel configuration" and then click **Run now**. 
 
