@@ -915,7 +915,7 @@
 ##### [Nets import format](../financials/localizations/emea-nor-nets-import-format.md)
 ##### [VAT statement](../financials/localizations/emea-nor-sales-tax-payment-report.md)
 ##### [Cash registers](../retail/localizations/emea-nor-cash-registers.md)
-##### [Deployment guidelines for cash registers](localizations/emea-nor-loc-deployment-guidelines.md)
+##### [Deployment guidelines for cash registers](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 
 #### Poland
 ##### [Calculate line discounts from the unit price](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
