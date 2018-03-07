@@ -199,11 +199,11 @@ The concept of macros continues to be fully supported in X++. However, using con
 
 Macros that are defined in class scopes (in class declarations) are effectively available in all methods of all derived classes. This was originally a bug in the legacy compiler macro implementation, but this loophole is now massively exploited by application programmers. The new X++ compiler still honors this, but no new code that uses this should be written. This particular feature also considerably impacts compiler performance. Constants can be declared at the class level as suggested below.
 
-    private const str MyContant = 'SomeValue';
+    private const str MyConstant = 'SomeValue';
 
 The constants can then be referenced by using the double-colon syntax.
 
-      str value = MyClass::MyContant;
+      str value = MyClass::MyConstant;
 
 If you're in the scope of the class where the const is defined, you can omit the type name prefix (MyClass in the example above). You can easily implement the concept of a macro library this way. The list of macro symbols becomes a class with public const definitions.
 
