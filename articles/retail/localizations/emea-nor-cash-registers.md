@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Application update 4
 ---
 # Cash registers for Norway
 
+[!include[banner](../includes/banner.md)]
+
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
