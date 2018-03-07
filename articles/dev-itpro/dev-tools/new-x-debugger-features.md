@@ -170,7 +170,22 @@ It's now possible to assign a value to a field inline, i.e. along with the decla
       }
     }
 
-The code above has the same semantic meaning as: public class MyClass2 { int field1; str field2; void new() { this.field1 = 1; this.field2 = "Banana"; // … } } The inline assignments work for both static and instance members.
+The code above has the same semantic meaning as:  
+
+    public class MyClass2
+    {
+      int field1;
+      str field2;
+      
+      void new()
+      {
+        this.field1 = 1;
+        this.field2 = "Banana";
+        // …
+      }
+    }
+    
+The inline assignments work for both static and instance members.
 
 ## Consts/Readonly
 The concept of macros continues to be fully supported in X++. However, using constants instead of \#defines has a number of benefits.
