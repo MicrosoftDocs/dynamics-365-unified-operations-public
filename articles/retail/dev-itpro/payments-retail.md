@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 # Payments FAQ
 
+[!include[banner](../../includes/banner.md)]
+
 ## What payment scenarios are supported?
 - Set up a merchant account.
 - Process a call center order.
