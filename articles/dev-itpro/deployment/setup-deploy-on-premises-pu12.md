@@ -457,7 +457,7 @@ dir cert:\LocalMachine\Root
     # If Remoting, execute
     # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    .\Test-D365FOConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1 
     ```
 
 > [!IMPORTANT]
