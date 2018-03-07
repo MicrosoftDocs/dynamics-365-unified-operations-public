@@ -632,6 +632,8 @@
 ##### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
 ##### [Tax thresholds FAQ](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [GST integration for cash registers](../retail/localizations/apac-ind-cash-registers.md)
+##### [Deployment guidelines for cash registers](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### Japan
 ##### [Acquire a fixed asset and claim for the government grant subsidy](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -911,7 +913,10 @@
 ##### [Customer and vendor payment formats](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [Customer payment based on payment ID](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Nets import format](../financials/localizations/emea-nor-nets-import-format.md)
-##### [VAT statement](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [VAT statement](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [Cash registers](../retail/localizations/emea-nor-cash-registers.md)
+##### [Deployment guidelines for cash registers](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### Poland
 ##### [Calculate line discounts from the unit price](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [Correction notes](../financials/localizations/emea-pol-correction-notes.md)
@@ -938,6 +943,7 @@
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
 ##### [Import payment formats](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [Cash registers](../retail/localizations/emea-swe-cash-registers.md)
 #### Switzerland
 ##### [Import customer payments in ESR](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### United Kingdom
