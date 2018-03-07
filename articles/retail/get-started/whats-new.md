@@ -29,12 +29,15 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # What's new or changed in Dynamics 365 for Retail
 
+[!include[banner](../../includes/banner.md)]
+
 This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail.
 
 ## Releases of Dynamics 365 for Retail
 
 |Release | Build number | Availability | Learn more |
 |--------|--------------|--------------|------------|
+|Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | March 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Dynamics 365 for Retail 7.3.1**. |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | February 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Dynamics 365 for Retail 7.3**. |
 |Application update 5 | 7.2.21792.64093 | February 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application update 5**. |
 |Application update 4 | 7.2.21792.64070 | October 2017 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application update 4**. |

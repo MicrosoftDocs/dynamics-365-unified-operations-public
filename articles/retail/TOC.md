@@ -131,6 +131,16 @@
 ## [Organize your workforce using departments, jobs, and positions](../talent/departments-jobs-positions.md)
 ## [Setting up the components of a job](../talent/create-job.md)
 
+# Localization and regulatory features
+## India
+### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norway
+### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
+### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+## Sweden
+### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
+
 # Retail tasks
 ## [Create a product](../supply-chain/pim/tasks/create-product.md)
 ## [Configure linked products](../supply-chain/pim/tasks/configure-linked-products.md)
@@ -249,10 +259,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
-### [Sample for Retail POS integration with control units for Sweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)

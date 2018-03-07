@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Run Retail POS samples
 
+[!include[banner](../../includes/banner.md)]
+
 There are several samples in the Retails SDK that demonstrate retail extensions. This topic explains how to run these samples. 
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.

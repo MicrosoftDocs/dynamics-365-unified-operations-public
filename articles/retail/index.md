@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Version 1611
 
 # Welcome to Dynamics 365 for Retail
 
+[!include[banner](includes/banner.md)]
+
 Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
 > [!NOTE] 

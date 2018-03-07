@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -457,7 +457,7 @@ dir cert:\LocalMachine\Root
     # If Remoting, execute
     # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    .\Test-D365FOConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1 
     ```
 
 > [!IMPORTANT]

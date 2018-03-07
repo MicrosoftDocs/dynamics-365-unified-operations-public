@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Retail Modern POS triggers and printing
 
+[!include[banner](../../includes/banner.md)]
+
 You can use triggers to capture events that occur before or after Retail Modern POS operations. Using triggers supports several business logic scenarios that enable you to do the following: 
 - Insert custom logic before the operation runs or after it has completed. This includes operation-specific triggers and generic triggers called the PreOperationTrigger and PostOperationTrigger, which run at the beginning and end of all POS operations.  
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable. 

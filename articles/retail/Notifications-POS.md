@@ -30,6 +30,8 @@ ms.dyn365.ops.version:
 
 # Display notifications in Point of Sale
 
+[!include[banner](includes/banner.md)]
+
 In today's modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, performing stock counts, and receiving orders in store. The Point of Sale (POS) client empowers the associates to do these tasks and much more, all in a single application. With various tasks to be performed during a day, associates may need to be notified when something requires their attention. The notification framework in the POS solves this problem by allowing the retailers to configure role-based notifications. With Dynamics 365 for Retail with Application update 5, these notifications can be only configured for POS operations.
 
 Currently, the system provides the capability to display notifications for order fulfillment operation, however, the framework is designed to be extensible, so that in the future, developers will be able to write a notification handler for any operation and display the notifications in POS.  
