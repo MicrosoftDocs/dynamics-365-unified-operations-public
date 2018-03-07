@@ -28,6 +28,8 @@ ms.dyn365.ops.version: July 2017 update
 ---
 # Cash registers for Sweden
 
+[!include[banner](../includes/banner.md)]
+
 This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one retail receipt
