@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 # Overview of product and customer search in Point of Sale
 
+[!include[banner](includes/banner.md)]
+
 Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality that lets store employees quickly search for products and customers. The search bar is always present at the top of MPOS and CPOS, so that employees can quickly find products and customers.
 
 Employees can search for products in the assortments and catalogs that are associated with the current store, and in the assortments and catalogs that are associated with any other store in the company. Therefore, cashiers can sell and return products outside the store assortment. Similarly, employees can search for customers that are associated with the current store or any other store in the company. Additionally, employees can search for customers that are associated with a different company in the parent organization.
