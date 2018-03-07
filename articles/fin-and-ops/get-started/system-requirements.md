@@ -95,8 +95,8 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
 ### Minimum system requirements
 
-- The minimum supported resolution for POS Full layout (PCs and tablets) is 1,024 × 768 (recommended 1366 x 768 or greater)
-- The minimum supported resolution for POS Compact layout (phones and small tablets) is 320 x 480 (recommended 360x640 or greater)
+- The minimum supported effective resolution for POS Full layout (PCs and tablets) is 1,024 × 768 (recommended 1366 x 768 or greater)
+- The minimum supported effective resolution for POS Compact layout (phones and small tablets) is 320 x 480 (recommended 360x640 or greater)
 - The computer that Retail Modern POS runs on must meet these requirements:
 
     - It must have, at a minimum, a dual-core processor that runs at no less than 2 gigahertz (GHz).
