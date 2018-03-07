@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Display order notifications in the point of sale
-description: This topic describes how to enable order notifications in the point of sale and the notifications framework, which can be extended to other operations. 
+title: Show order notifications in the point of sale
+description: This topic describes how to enable order notifications in the point of sale and the notification framework. Eventually, developers will be able to extend these notifications to operations besides order fulfillment operations. 
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 10/30/2017
@@ -28,50 +28,54 @@ ms.dyn365.ops.version:
 
 ---
 
-# Display notifications in point of sale
+# Show order notifications in the point of sale
 
-In today's modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, performing stock counts, and receiving orders in store. The point of sale (POS) client empowers the associates to do these tasks and much more, all in a single application. With various tasks to be performed during a day, associates may need to be notified when something requires their attention. The notification framework in the POS solves this problem by allowing the retailers to configure role-based notifications. With Dynamics 365 for Retail with Application update 5, these notifications can be only configured for POS operations.
+In the modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, doing stock counts, and receiving orders in the store. The point of sale (POS) client provides a single application where associates can perform all these tasks and many others. Because various tasks must be performed during the day, associates might have to be notified when something requires their attention. The notification framework in the POS helps by letting retailers configure role-based notifications. In Microsoft Dynamics 365 for Retail with application update 5, these notifications can be configured only for POS operations.
 
-Currently, the system provides the capability to display notifications for order fulfillment operation, however, the framework is designed to be extensible, so that in the future, developers will be able to write a notification handler for any operation and display the notifications in POS.  
+Currently, the system can show notifications only for order fulfillment operations. However, because the framework is designed to be extensible, developers will eventually be able to write a notification handler for any operation and show the notifications for that operation in the POS.
 
 ## Enable notifications for order fulfillment operations
 
-To enable notifications for the order fulfillment operations, refer to the following the steps:
+To enable notifications for order fulfillment operations, follow these steps.
 
- - Go to the **Operations** page (**Retail** > **Channel setup** > **POS setup** > **POS** > **Operations**).
- - Search for the Order fulfillment operation and select the **Enable notifications** check box for this operation. This indicates to the notification framework to listen to the handler for the order fulfillment operation. If the handler is implemented, then the notifications will be displayed on POS, otherwise the notifications will not be displayed for this operation.
-- Go to the POS permissions associated with the workers and under the **Notifications** FastTab, add the Order fulfillment operation with the "Display order" as 1. When there is more than one notification configured, the display order is used to arrange the notification from top to bottom with 1 being on top. Only those operations can be added for which the **Enable notifications** check box has been selected. Also, the notifications will be displayed only for the operations that have been added here and only to those workers for whom the operations have been added to the corresponding POS permissions. 
+1. Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Operations**.
+2. Search for the **Order fulfillment** operation, and select the **Enable notifications** check box for it to specify that the notification framework should listen to the handler for this operation. If the handler is implemented, notifications for this operation will then be shown in the POS.
+3. Go to the POS permissions that are associated with the workers, and then, on the **Notifications** FastTab, add the **Order fulfillment** operation, and set the **Display order** field to **1**. If more than one notification is configured, this field is used to arrange the notifications. Notifications that have a lower **Display order** value appear above notifications that have a higher value. Notifications that have a **Display order** value of **1** are at the top.
 
-> [!NOTE]
-> Notifications can be overridden at the user level by navigating to the worker's record and selecting **POS Permissions** and then editing that user's notification subscription.
+    Notifications are shown only for operations that are added on the **Notifications** FastTab, and you can add operations there only if the **Enable notifications** check box for those operations has been selected on the **POS operations** page. Additionally, notifications for an operation are shown to workers only if the operation is added to the POS permissions for those workers.
 
- - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. For some notifications, the POS needs to make real-time calls to the back office application, which consumes the compute capacity of your back office application. We recommend entering a number that meets your business requirements but also considers the impact of real-time calls. Setting the notification interval to "0" will turn off notifications.  
+    > [!NOTE]
+    > Notifications can be overridden at the user level. Open the worker's record, select **POS permissions**, and then edit the user's notification subscription.
 
- - Go to **Retail** > **Retail IT** > **Distribution schedule**. Select schedule "1060-Staff" to sync notification subscription settings and then click **Run now**. Next, sync the permission interval by selecting the "1070-Channel configuration" and then click **Run now**. 
+4. Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**. In the **Notification interval** field, specify how often notifications should be pulled. For some notifications, the POS must make real-time calls to the back-office application. These calls consume the compute capacity of your back-office application. Therefore, when you set the notification interval, you should consider both your business requirements and the impact of real-time calls to the back-office application. A value of **0** (zero) turns off notifications.
+5. Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**. Select the **1060** (**Staff**) schedule to synchronize notification subscription settings, and then select **Run now**. Next, select the **1070** (**Channel configuration**) schedule to synchronize the permission interval, and then select **Run now**.
 
-## View notifications in POS
+## View notifications in the POS
 
-After the above steps are complete, the workers, for whom the notifications are set up, can view the notifications in POS. To view the notifications, click the notification icon in the title bar of the POS. This diplays a notification center with the notifications
-for the order fulfillment operation. The notification center should display the following groups within the order fulfillment operation: 
+After you complete the preceding steps, workers that notifications are set up for can view those notifications in the POS. To view notifications, select the notification button in the title bar of the POS. A notification center appears and shows notifications for the order fulfillment operation. The notification center should show the following groups in the order fulfillment operation:
 
-- **Pending orders** - This group displays the count of orders that are in the pending state, such as orders which need to be accepted by a POS worker, having the required permissions for store fulfillment. Clicking the number on the group will open the **Order fulfillment** page, filtered to display only the pending orders assigned to the store for fulfillment. If the orders are automatically accepted for the store, then the count for this group will be zero.
+- **Pending orders** – This group shows the count of orders that are in a pending state, such as orders that must be accepted by a POS worker who has the required permissions for store fulfillment. You can select the number in the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the pending orders that are assigned to the store for fulfillment. If the orders are automatically accepted for the store, the count for this group will be 0 (zero).
+- **Store pickup** – This group shows the count of orders that have a delivery mode of **Pickup**, and that are scheduled for pickup from the current store. You can select the number in the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for pickup from the current store.
+- **Ship from store** – This group shows the count of orders that have the delivery mode of **Shipping**, and that are scheduled for shipment from the current store. You can select the number in the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for shipment from the current store.
 
-- **Store pickup** - This group displays the count of orders that have the delivery mode of **Pickup** and the pickup is scheduled from the current store. Clicking the number on the group will open the **Order fulfillment** page, filtered to display the active orders which are set up to be picked from the current store.
+When new orders are assigned to the store for fulfillment, the notification button changes to indicate that there are new notifications, and the count for the appropriate groups is updated. Users can manually update the count for the groups at any time by selecting the **Refresh** button next to the operation name. The count is also updated at the interval that you specified. If any group has a new item that the current worker hasn't viewed, the group shows a burst symbol.
 
-- **Ship from store** - This group displays the count of orders that have the delivery mode of **Shipping** and the shipping is scheduled from the current store. Clicking the number on the group will open the **Order fulfillment** page, filtered to display the active orders which are set up to be shipped from the current store.
-
-When there are new orders assigned to the store for fulfillment, the notification icon will change to indicate the new notifications and the count of the corresponding groups will be updated. The user can also click on the refresh icon, next to the operation name, to immediately update the count of the groups. The count will also be updated at the predefined interval. Any group that has a new item, which is not seen by the current worker, will display a burst icon indicating this group has a new item. Clicking on the tiles within notifications will open the specific operation for which that notification is configured. In the above scenarios, clicking the notifications will open the **Order fulfillment** page and pass the appropriate parameters: pending orders, store pickup, and ship from store. 
-
-> [!NOTE]
-> Pending orders notifications will be enabled in an upcoming update to Dynamics 365 for Retail. 
-
-## Enable live content on the POS buttons
-
-You can now display an integer count on the POS buttons to help the workers easily determine the tasks that need their immediate attention. To display this number on the POS button, you need to complete the notification set up mentioned in the 'Notification setup' section i.e. enabling notification for an operation, setting up a notification pull frequency and updating the POS permission group for the worker. In addition to this, you would need to open the button grid designer, view button properties and select "Enable live content" checkbox. You have an option of displaying the number on the 'top right' corner or on the 'center' of the button. The below images display the live content settings on button grid designer and display the effect of choosing top right vs center on various button sizes.
+By selecting the tiles in notifications, you can open the specific operation that a notification is configured for. For example, by selecting the notifications for the order fulfillment operation, you can open the **Order fulfillment** page and pass in the appropriate parameters for pending orders, store pickups, and shipments from the store.
 
 > [!NOTE]
-> The live content can only be enabled for those operations for which the "Enable notifications" has been checked in POS Operations
+> Notifications for pending orders will be enabled in an upcoming update to Retail.
 
-![Button grid designer with live content settings](./media/ButtonGridDesigner.png "Button grid designer with live content settings").
+## Enable live content on POS buttons
 
-![POS Buttons with live content](./media/ButtonsWithLiveContent.png "POS buttons with live content"). 
+Buttons in the POS can now show a count to help workers easily determine which tasks require their immediate attention. To show this number on a POS button, you must complete the notification setup that is described earlier in this topic (that is, you must enable notifications for an operation, set up a notification interval, and update the POS permission group for the worker). Additionally, you must open the button grid designer, view the button's properties, and select the **Enable live content** check box. In the **Content alignment** field, you can select whether the count appears in the upper-right corner of the button (**Top right**) or in the center (**Center**).
+
+> [!NOTE]
+> The live content can be enabled for operations only if the **Enable notifications** check box has been selected for them on the **POS operations** page, as described earlier in this topic.
+
+The following illustration shows the live content settings in the button grid designer.
+
+![Live content settings in the button grid designer](./media/ButtonGridDesigner.png "Live content settings in the button grid designer")
+
+The following illustration shows the effect of selecting **Top right** versus **Center** in the **Content alignment** field for buttons of various sizes.
+
+![Live content on POS buttons](./media/ButtonsWithLiveContent.png "Live content on POS buttons")
