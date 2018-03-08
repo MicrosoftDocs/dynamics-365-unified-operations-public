@@ -1,5 +1,5 @@
 
-# Attributes, Attribute groups & their associations with various Retail Entities in Dynamics 365. 
+# Attributes, Attribute groups & their associations with various Retail entities in Dynamics 365. 
 
  **Attribute** provides a way to further describe a product and its characteristics through user defined fields (examples: memory size, hard disk capacity, Is Energy star compliant etc.). In Dynamics 365, attributes can be associated with various retail entities such as Product Categories and Retail Channels, and default values can be set on them. Products inherit the attributes and the default values upon their association with the Product Categories or Retail Channels. The default values can be overridden at the product level: at the individual product level, at retail channel level, or in retail catalog.
  
