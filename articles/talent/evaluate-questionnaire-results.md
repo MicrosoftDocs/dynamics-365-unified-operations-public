@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # View and evaluate the results of a questionnaire
 
+[!include[banner](includes/banner.md)]
+
 This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
 After respondents complete a questionnaire, you can view and evaluate the questionnaire results in the following ways:

@@ -135,7 +135,7 @@
 ### [Cost management Power BI content pack](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Data integration
-### [Integration patterns](../dev-itpro/data-entities/integration-overview.md)
+### [Choose a data integration (import/export) strategy](../dev-itpro/data-entities/integration-overview.md)
 
 ### Data integration APIs
 #### [Data management package API](../dev-itpro/data-entities/data-management-api.md)
