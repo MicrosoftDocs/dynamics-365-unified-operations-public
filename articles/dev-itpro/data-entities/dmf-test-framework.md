@@ -47,23 +47,36 @@ Once the task has been identified, it must be defined in an XML manifest. This s
 
 ### Manifest root
 The <TestManifest>  is the root of the manifest. All the elements are children of this element.
+
 ![Manifest](./media/Manifest.png)
 
 ### Shared set up
 The shared set up section provides for defining the generic task parameters and task behavior for all tasks in the manifest. This enables maintainability of the manifest.
 
+![Shared set up](./media/SharedData.png)
+
 ### Data files
 The <DataFile> element allows to define the data packages and/or data files that must be used by the tasks in the manifest. The data files must be in the LCS asset library of an LCS project or it can be in the shared asset library.
 Note: The user account running the task automation manager in Dynamics 365 for Operations and Finance must have access to LCS and the LCS project that is referenced in the manifest for data packages.
-  
+
+![Data files](./media/SharedData2.png)
+
 ### Data project definition
 The data project definition is defined using the <JobDefinition> element. There can be more than one job definitions in a manifest.
+
+![JobDef](./media/JobDef.png)
 
 ### Entity set up:
 The entity set up provides for defining the characteristics of an entity that is being used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
 
+![Entity set up](./media/EntitySetup.png)
+
+![Entity set up](./media/EntitySetup2.png)
+
 ### Test groups:
 Groups can be used to organize related tasks together in a manifest. There can be more than one group in a manifest.
+
+![Groups](./media/Groups.png)
 
 ### Best practice for manifest design
 There are different ways in which a manifest can be defined. Below are a few pointers to consider when designing the manifest.
@@ -74,12 +87,20 @@ There are different ways in which a manifest can be defined. Below are a few poi
 ### Validations
 The task automation manager performs validations based on the set up of a task. The validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed.
 
+![Validations](./media/Validations.png)
+
 ### Configuration management for data projects
 The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. Below is a sample for such a task. The fist one is an example to configure a data project without any recurring schedule. The second one is an example where a recurring schedule must also be configured. The difference is the value provided to the <Operation> element.
 The manifest for the configuration tasks can be source controlled to enable ALM on configuration management of data projects
 
+![Config](./media/Config.png)
+
+![Config](./media/Config2.png)
+
 ### Automating demo data set up for environments
 Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed thereby not having to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because, the data project import happens in the specified legal entity thereby eliminating for the user to switch companies to import a data package. Below is an example task for demo data import where the demo data packages are in the shared asset library.
+
+![Demo data](./media/DemoData.png)
 
 ### Automating data migration tasks
 A similar approach to demo data tasks can be also taken to perform data imports of data packages in a data migration process. Typically, once the environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration (also called as the golden configuration data packages) data packages. After the base configuration is complete, the migrated data is imported via data management. These import tasks can be configured as tasks in a manifest and can be executed using the task automation manager to simplify and streamline this part of the data migration process.
