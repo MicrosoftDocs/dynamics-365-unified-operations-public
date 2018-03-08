@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Integration patterns and practices
+# Choose a data integration (import/export) strategy
 
 [!include[banner](../includes/banner.md)]
 
