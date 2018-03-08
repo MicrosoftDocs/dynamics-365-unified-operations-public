@@ -44,3 +44,11 @@ The configuration of the local network for an on-premises deployment of Dynamics
 + The favorite icon shown in the browser tab will be the browser's default favorite icon instead of the Finance and Operations icon. 
 
 In addition to platform features that may not be accessible when the client can't access the Internet, there may also be application features that rely on an Internet connection that developers will need to hide or switch off. To facilitate this, developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the Internet.
+
+## Client Internet Connectivity switches
+
+The Client Internet Connectivity switches (added by [KB 4091763](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=19e9634da3297903a2ac51cf291a4770fd4532c9767ca7b5cefbe1bccb5d4d9f)) allow an administrator to manually switch off the external connections that the Web Client makes even when the Internet connectivity is available. These can be used for troubleshooting issues or just to see what the Web Client will look like when Internet connectivity is not available. 
+The switches can be found on the **System administration > Setup > Client performance options** form:
+
+- Internet connectivity enabled - allows an administrator to switch off all external connections that the Web Client would otherwise make.
+- Skype presence enabled - allows an administrator to switch off external connections to Skype that the Web Client would otherwise make.
