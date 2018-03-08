@@ -151,7 +151,7 @@ The automation manager has inbuilt validations to aid with confirmation of why a
 -   Truncation – if truncation was enabled, then validation is done to check if
     truncation happened
 
-Skip staging – if skip staging was enabled on a test then, validation is done to
+-   Skip staging – if skip staging was enabled on a test then, validation is done to
 check if staging was skipped
 
 If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
