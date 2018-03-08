@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 
 > [!NOTE]
-> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). And navigate to the bottom of page if you are facing issues with already enabled Product recommendations for your environment. 
+> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment. 
 
 In Dynamics 365 for Retail, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Retail, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
 
@@ -88,7 +88,6 @@ When you turn on **Enable recommendations** and run the configuration jobs, the�
 -   Model credentials and ID are picked up from the API and stored in the Dynamics 365 for Retail operational database, in the web.config for AOS, and also in the retail server.
 -   Model credentials and ID are made available to CRT so that calls for product recommendations from Cloud POS and MPOS in online mode can be honored.
 
-> [!NOTE]
 > ## Troubleshoot issues where you have already enabled Product recommendations. 
 >- Please navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**. And if you are not able to locate **Machine learning** tab - please reach out to the Dynamics Support. 
 
