@@ -48,4 +48,7 @@ After your on-premises environment is deployed, you can now use Microsoft Dynami
 Note that the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) will remain available for environments that were deployed with platform update versions that are earlier than Platform update 12.
 
 ## Hotfixes
-Hotfixes that will soon be available in LCS will provide additional features for your on-premises deployments of Platform update 12. This topic will be updated as the hotfixes become available.
+Hotfixes that you can download from LCS provide additional features for your on-premises deployments of Platform update 12. Be sure to apply the following hotfixes:
+
+- **KB 4091763: Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines.
+
