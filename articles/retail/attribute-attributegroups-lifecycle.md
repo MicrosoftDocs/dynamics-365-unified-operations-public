@@ -19,8 +19,7 @@
 |            |                          |                          |               |
 | LCD        | 3D Ready                 | Yes or No                | Yes           |
 |            | 3D Enabled               | Yes or No                | No            |
-|            |                          |                          |               |
-| Plasma     | Operating Temp From      | 32 degree – 110 degree   | 32            |
+|            |                          |                          |               || Plasma     | Operating Temp From      | 32 degree – 110 degree   | 32            |
 |            | Operating Temp To        | 32 degree – 110 degree   | 100           |
 |            |                          |                          |               |
 | Projection | Projection Tube Warranty | 6, 12 or 18 months       | 12            |
@@ -164,7 +163,7 @@ One or more attribute groups that can be associated with category nodes in the f
 
 ## How-to Steps – Assign attribute groups to Retail categories
 -	Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
--	Go to Retail and commerce > Category and product management > Retail product hierarchy
+-	Go to Retail > Category and product management > Retail product hierarchy
   -	Click on “Fashion navigation hierarchy”.	
   -	Select category “Pants” under Menswear and add attribute group “Men’s belt” under Product attribute group tab.
   -	Select category “Fashion sunglasses” and verify new attributes in “Fashion Sunglasses” attribute group by clicking view attributes.
@@ -173,8 +172,8 @@ One or more attribute groups that can be associated with category nodes in the f
   [Note: It should show Men’s belt attributes: Men’s belt brand, Belt fabric, and Belt size.]
 
   [Note: The aforementioned approach can be used to assign attribute groups to categories in Channel navigation category hierarchy, and Supplemental product category hierarchy as well:
-- Retail and commerce > Category and product management > Channel navigation categories
-- Retail and commerce > Category and product management > Supplemental product categories]
+- Retail > Category and product management > Channel navigation categories
+- Retail > Category and product management > Supplemental product categories]
 
 
 ## Assign attribute groups to Retail stores
@@ -184,7 +183,7 @@ One or more attribute groups that can be associated with one or more Retail stor
 
 ## How-to Steps – Assign attribute groups to Retail stores
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail and commerce  Channel setup  Channel categories and product attributes
+- Go to Retail > Channel setup > Channel categories and product attributes
 - Assign the following attribute groups to the “Houston” channel:
 - Select channel "Houston"
 - Click on button "Add" under the Attribute group fast tab and then select " SharePointProvisionedProductAttributeGroup" in the Name drop down.
@@ -195,7 +194,7 @@ One or more attribute groups that can be associated with one or more Retail stor
 - Click on Set attribute metadata on the action pane.
 	- In the Metadata form:
 	- Select category node “Fashion” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
-	- Select category node “Fashion Accessories  Fashion Sunglasses” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
+	- Select category node “Fashion Accessories > Fashion Sunglasses” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
 	- Select category node “Menswear  Pants” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
 	
 ![Channel categories and product attributes -  attribute Groups](media/CCPAttrGrp.png)
@@ -206,7 +205,7 @@ The default values of the attributes can be overridden at the product level, tha
 
 ## How-to Steps – Override attribute values of product
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail and commerce > Category and product management  Released products by category
+- Go to Retail > Category and product management > Released products by category
 - Select category node “Fashion > Fashion Accessories > Fashion Sunglasses”.
 - Select the required product from the list in the right pane and then in the action pane, select “Setup Product attributes” under the Product tab.
 - Select any of the attributes from the left pane and then change / update its value in the right pane.
@@ -220,9 +219,9 @@ The default values of the attributes can be overridden for individual products i
 
 ## How-to Steps – Override attribute values of product in Catalog
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail and commerce  Catalog management  All catalogs
+- Go to Retail > Catalog management > All catalogs
 - Select catalog “Fabrikam Base Catalog”.
-- Select category node “Fashion  Fashion Accessories  Fashion Sunglasses”.
+- Select category node “Fashion  Fashion Accessories > Fashion Sunglasses”.
 - Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
 - Change / update the values of the required attributes under the following fast tabs:
 	- Shared product media
@@ -239,7 +238,7 @@ The default values of the attributes can be overridden for individual products i
 
 ## How-to Steps – Override attribute values of product in Channel
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail and commerce  Channel setup  Channel categories and product attributes
+- Go to Retail > Channel setup > Channel categories and product attributes
 - Select the “Houston” channel.
 - Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
 	*[Note: If there are no products available, then add products by clicking on the “Add” button under the “Products” fast tab and then selecting the required products from the “Add products” dialog.]*
