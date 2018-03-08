@@ -57,11 +57,11 @@ The following steps can be used for a sandbox environment or a production enviro
 
 1. Collect the tenant name and ID for the customer to issue the license to.  
 
-    1. Connect to the Service Fabric Explorer where the environment is hosted 
-    2. Navigate to Clusters->Applications->AXSFType->fabric:\AXSF and click on the details tab on the right pane 
-    3. In the parameters table, locate the values for the keys License_TenantDomainGuid and Licence_TenantId 
+    1. Connect to the Service Fabric Explorer where the environment is hosted.
+    2. Navigate to **Clusters** > **Applications** > **AXSFType** > **fabric:\AXSF** and on the right page, click the **Details** tab.
+    3. In the **Parameters** table, locate the values for the keys **License_TenantDomainGuid** and **Licence_TenantId**. 
 
-2. Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the axutil genlicense command to create the license file. This will generate an xml file.  
+2. Generate a license for the customer (tenant ID and name), and sign the license using the certificate's private key. The following parameters must be passed to the axutil genlicense command to create the license file. This will generate an xml file.  
 
   | Parameter name  | Description                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------|
@@ -74,24 +74,20 @@ The following steps can be used for a sandbox environment or a production enviro
 | expirationdate  | Optional: The license expiration date.                                                                               |
 | usercount       | Optional: The number that can be required for the custom validation logic. This can be, but is not limited to users. |
 
-Here is an example: 
-C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********  
+For example:
+`C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********` 
 
 3. Copy the generated licenses to a folder in one of the machines that is running fabric:/AXSF and verify that fabric:/AXSF is healthy.
 4. Run the following Import-LicensePackage.ps1 script from one of the AOS machines. This script can be found in the latest Deployment scripts folder available in **Shared Asset** library in LCS under the **Model** tab. Below is the list of parameters to pass to the script.
 
-| LicenseFilesPath      | The path to a folder that ocntains the license files that need to be imported. |
-|-----------------------|-------------|
-| SqlUser               | The same user that is specified in the credentials.json file to run the AOS. |
-| SqlPassword           | The password that can be used to connect to SQL. |
-| EnvironmentConfigPath | The configuration file for the environment. The file, config.json, is located under the agent share in the folder with the format wp\<environment-name>\StandaloneSetup. |
+- LicenseFilesPath: The path to a folder that ocntains the license files that need to be imported. 
+- SqlUser: The same user that is specified in the credentials.json file to run the AOS.
+- SqlPassword: The password that can be used to connect to SQL.
+- EnvironmentConfigPath: The configuration file for the environment. The file, config.json, is located under the agent share in the folder with the format wp\<environment-name>\StandaloneSetup.
 
-5. After the command is executed, a log file is generated for each license file that is processed in the format {license_file_name}.output.log and {license_file_name}.error.log. The logs generated during database synchronizer are in a file of format dbsync.output.log and dbsync.error.log. 
-6. Once script executes successfully, validate that the config key has been imported and is enabled. In the product, the corresponding configuration key will be available and enabled on the License configuration page. By default, the configuration is enabled. For example, if you have added a configuration key by the name 'ISVConfigurationKey1' it will be visible in this page as shown in the screenshot below. 
-7. After the configuration key is enabled, the changes in the ISV solution will be visible in the product.  
-
-
-
+5. After the command is executed, a log file is generated for each license file that is processed in the format {license_file_name}.output.log and {license_file_name}.error.log. The logs generated during database synchronization are located in files structured like, dbsync.output.log and dbsync.error.log. 
+6. When the script has executed successfully, validate that the config key has been imported and is enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you have added a configuration key by the name **ISVConfigurationKey1** it will appear in the list of configuration keys. 
+7. When the configuration key is enabled, the changes in the ISV solution will be visible in the product.  
 
 
 
