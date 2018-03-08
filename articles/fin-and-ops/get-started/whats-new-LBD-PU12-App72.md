@@ -49,3 +49,6 @@ Note that the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigu
 
 ## Hotfixes
 Hotfixes that will soon be available in LCS will provide additional features for your on-premises deployments of Platform update 12. This topic will be updated as the hotfixes become available.
+
+- **KB 4091763: Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines.
+
