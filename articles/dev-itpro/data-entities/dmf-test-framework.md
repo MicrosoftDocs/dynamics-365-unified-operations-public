@@ -106,7 +106,7 @@ There are different ways in which a manifest can be defined. Below are a few poi
     maintenance. Emphasis must be given to minimize repeating of configuration
     elements and instead re-use as much as it is possible.
 
-**Source control** – manifests that must be used by all the members of an
+-   **Source control** – manifests that must be used by all the members of an
 implementation team should be source controlled in the application object tree
 (AOT). This not only provides for the benefits of source control but also
 enables a process to distribute or make the manifest(s) available to all users
@@ -139,7 +139,7 @@ The task automation concepts can be also used to perform automated testing of da
 
 The automation manager has inbuilt validations to aid with confirmation of why a task failed or passed. The data validations currently supported are the following.
 
-•	-   Job status – checks if the status of the job is successful or not
+-   Job status – checks if the status of the job is successful or not
 
 -   Batch status – checks if the status of the batch was successful or not
 
@@ -153,6 +153,3 @@ Skip staging – if skip staging was enabled on a test then, validation is done 
 check if staging was skipped
 
 If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
-[!include[banner](../includes/banner.md)]
-
-Intro sentence
