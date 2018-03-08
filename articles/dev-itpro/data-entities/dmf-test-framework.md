@@ -38,7 +38,9 @@ The task automation manager in data management enables automation of certain typ
 3.	The task automation manager drives off an XML manifest which must define each task that is automated. If task automation is used only to configure data projects but not to import/export actual data, the manifest enables such option. In this context, the manifest can be source controlled for effective configuration management as part of the overall ALM.
 4.	The task automation manager provides success or failure outcome for a task. It also provides insights into why a task failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using data project and execution details in data management.
 
-Note: Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for test automation for testing purposes.
+Note: Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
+
+Note: Task automation is currently not supported for on premise environments.
 
 The following sections goes into the details for each of these aspects.
 
