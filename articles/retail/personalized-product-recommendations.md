@@ -91,7 +91,7 @@ When you turn on **Enable recommendations** and run the configuration jobs, theÂ
 > ## Troubleshoot issues where you have Product recommendations already enabled 
 >- Navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**. If you are not able to locate **Machine learning** tab, please contact Dynamics Support. 
 
->- If you added the **'Recommendations control'** to your transaction screen using the **Screen layout designer**, please remove that as well. 
+>- If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well. 
 
 
 
