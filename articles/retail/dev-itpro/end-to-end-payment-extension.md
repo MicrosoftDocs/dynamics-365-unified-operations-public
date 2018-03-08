@@ -183,6 +183,7 @@ The list below descibes all supported requests types that a payment connector ca
 | **AddBalanceToGiftCardPaymentTerminalRequest** | Called when a balance is being added to an external gift card. | 
 | **GetGiftCardBalancePaymentTerminalRequest** | Called to when the balance on the gift card is being retrieved. | 
 | **GetPrivateTenderPaymentTerminalDeviceRequest** | TODO | 
+| **ExecuteTaskPaymentTerminalDeviceRequest** | Extension request that can be invoked from the POS through customizations to enable additional payment related flows. | 
 
 ##### OpenPaymentTerminalDeviceRequest
 ###### Signature
@@ -407,6 +408,19 @@ public GetPrivateTenderPaymentTerminalDeviceRequest(string token, decimal amount
 | amount | TODO | 
 | declined | TODO |
 | isSwipe | TODO |
+| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+
+##### ExecuteTaskPaymentTerminalDeviceRequest
+###### Signature
+``` charp
+public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, ExtensionTransaction extensionTransactionProperties)
+```
+
+###### Variables
+| Variable | Description |
+| --- | --- |
+| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
+| task | Unique identifier for the task being executed. | 
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 #### State in the payment connector
