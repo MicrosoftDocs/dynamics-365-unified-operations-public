@@ -47,6 +47,7 @@ Once the task has been identified, it must be defined in an XML manifest. This s
 
 ### Manifest root
 The <TestManifest>  is the root of the manifest. All the elements are children of this element.
+![Manifest](./media/Manifest.png)
 
 ### Shared set up
 The shared set up section provides for defining the generic task parameters and task behavior for all tasks in the manifest. This enables maintainability of the manifest.
