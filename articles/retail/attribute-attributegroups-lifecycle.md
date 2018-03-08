@@ -15,8 +15,7 @@
 |            | HDMI Inputs              | 0 – 10                   | 3             |
 |            | DVI Inputs               | 0 – 10                   | 1             |
 |            | Composite Inputs         | 0 – 10                   | 2             |
-|            | Component Inputs         | 0 – 10                   | 1             |
-|            |                          |                          |               |
+|            | Component Inputs         | 0 – 10                   | 1             ||            |                          |                          |               |
 | LCD        | 3D Ready                 | Yes or No                | Yes           |
 |            | 3D Enabled               | Yes or No                | No            |
 |            |                          |                          |               || Plasma     | Operating Temp From      | 32 degree – 110 degree   | 32            |
@@ -54,7 +53,7 @@
 
 ## How-to set up attributes in Dynamics 365 
 - Login to Dynamics 365 back-office client as a Retail Merchandising Manager	
-- Go to Product information management  Setup  Categories and attributes  Attributes
+- Go to Product information management > Setup > Categories and attributes > Attributes
   - Create a new attribute: *Lens *
   -	Set Attribute type: *Lens shape*
 
