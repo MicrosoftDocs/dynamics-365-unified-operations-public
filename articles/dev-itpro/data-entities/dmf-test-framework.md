@@ -80,9 +80,38 @@ Groups can be used to organize related tasks together in a manifest. There can b
 
 ### Best practice for manifest design
 There are different ways in which a manifest can be defined. Below are a few pointers to consider when designing the manifest.
-•	Granularity – the granularity of the manifest must be a functional decision more than anything else. There is going be a fine balance between the number of manifests an implementation team must manage versus showing discipline and being judicious to manage all tasks in a single manifest. One rule of thumb teams can use is to find out if they are constantly having an urge to merge tasks from multiple manifests as they start using them. This would indicate that the manifests are too granular and are functionally not composed as needed. The other aspect to consider would we separation of duties on who should perform what tasks. For example, there could be a one manifest to set up the demo data and a different manifest to set up the golden configuration on environments. This way, team members can be guided to only use manifests which they are supposed to use. A third aspect would be the implementation team’s access to LCS as the tasks would expect the data packages to be in LCS. This could become a point to consider for larger and globally distributed implementation teams/end user base that either has multiple instances of Dynamics 365 for Finance and Operations or have multiple LCS projects.
-•	Inheritance – the manifest schema supports inheritance of common elements that are going to be applicable to all tasks in the manifest. The task can override an element to create a unique behavior for itself. This helps to keep the manifest concise and clean which improves readability and maintenance. Emphasis must be given to minimize repeating of configuration elements and instead re-use as much as it is possible.
-•	Source control – manifests that must be used by all the members of an implementation team should be source controlled in the application object tree (AOT). This not only provides for the benefits of source control but also enables a process to distribute or make the manifest(s) available to all users in a consistent manner. This also enables configuration management for data management related data projects if manifests are being used to configure.
+
+-   **Granularity** – the granularity of the manifest must be a functional
+    decision more than anything else. There is going be a fine balance between
+    the number of manifests an implementation team must manage versus showing
+    discipline and being judicious to manage all tasks in a single manifest. One
+    rule of thumb teams can use is to find out if they are constantly having an
+    urge to merge tasks from multiple manifests as they start using them. This
+    would indicate that the manifests are too granular and are functionally not
+    composed as needed. The other aspect to consider would we separation of
+    duties on who should perform what tasks. For example, there could be a one
+    manifest to set up the demo data and a different manifest to set up the
+    golden configuration on environments. This way, team members can be guided
+    to only use manifests which they are supposed to use. A third aspect would
+    be the implementation team’s access to LCS as the tasks would expect the
+    data packages to be in LCS. This could become a point to consider for larger
+    and globally distributed implementation teams/end user base that either has
+    multiple instances of Dynamics 365 for Finance and Operations or have
+    multiple LCS projects.
+
+-   **Inheritance** – the manifest schema supports inheritance of common
+    elements that are going to be applicable to all tasks in the manifest. The
+    task can override an element to create a unique behavior for itself. This
+    helps to keep the manifest concise and clean which improves readability and
+    maintenance. Emphasis must be given to minimize repeating of configuration
+    elements and instead re-use as much as it is possible.
+
+**Source control** – manifests that must be used by all the members of an
+implementation team should be source controlled in the application object tree
+(AOT). This not only provides for the benefits of source control but also
+enables a process to distribute or make the manifest(s) available to all users
+in a consistent manner. This also enables configuration management for data
+management related data projects if manifests are being used to configure.
 
 ### Validations
 The task automation manager performs validations based on the set up of a task. The validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed.
@@ -110,11 +139,19 @@ The task automation concepts can be also used to perform automated testing of da
 
 The automation manager has inbuilt validations to aid with confirmation of why a task failed or passed. The data validations currently supported are the following.
 
-•	Job status – checks if the status of the job is successful or not
-•	Batch status – checks if the status of the batch was successful or not
-•	Message status – if the test is about integrations then, the message status is also validated
-•	Truncation – if truncation was enabled, then validation is done to check if truncation happened
-•	Skip staging – if skip staging was enabled on a test then, validation is done to check if staging was skipped
+•	-   Job status – checks if the status of the job is successful or not
+
+-   Batch status – checks if the status of the batch was successful or not
+
+-   Message status – if the test is about integrations then, the message status
+    is also validated
+
+-   Truncation – if truncation was enabled, then validation is done to check if
+    truncation happened
+
+Skip staging – if skip staging was enabled on a test then, validation is done to
+check if staging was skipped
+
 If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
 [!include[banner](../includes/banner.md)]
 
