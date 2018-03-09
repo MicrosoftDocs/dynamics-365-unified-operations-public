@@ -2,8 +2,7 @@
 # required metadata
 
 title: Pay based on registrations
-description: This topic describes how how pay is calculated based on
-workers’ registrations.
+description: This topic describes how how pay is calculated based on workers’ registrations.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/20/2017
