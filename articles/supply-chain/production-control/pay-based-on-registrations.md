@@ -515,7 +515,7 @@ categories defined for the activities.
 -  - If set to **Yes**, cost is calculated based on cost categories for production
     and project activities.
 
-Cost calculation based on pay rates calculated in Time and attendance
+## Cost calculation based on pay rates calculated in Time and attendance
 
 The following example illustrates how the hourly cost is calculated when the
 cost is set up to be calculated based on pay rates.
@@ -554,7 +554,7 @@ of the direct payroll costs.
 -   To set up the direct payroll costs, click **Time and attendance** \>
     **Setup** \> **Time and attendance parameters** and open the **Cost price**
     tab. In the **Standard time** field under **Direct payroll costs** you can
-    select Yes, No, and Allocation. See the following sections for at
+    select **Yes**, **No**, and **Allocation**. See the following sections for a
     description of each of these options.
 
 **Yes**
@@ -601,7 +601,7 @@ activities
 | Break (Paid)          | 0.50     | 0.00                    |
 | Clock out             | 0.00     | 0.00                    |
 
-**Absence**
+## Absence
 
 An absence code is used for the registration of a period for workers’ absence.
 An absence code is, like breaks and switch codes, a type of an indirect
@@ -611,7 +611,7 @@ seminar or jury duty. Illegal absence is absence with no good reason such as
 being late for work. Legal absence normally does not affect a deduction in
 workers’ pay whereas illegal does.
 
-**Planned absence**
+### Planned absence**
 
 Workers’ planned absence can be created on the **Create planned absence** page
 where the planned absence is registered as an absence job for a specified date
@@ -632,13 +632,11 @@ from the **Attendance** page or from the **Time registration workers** page.
     and then click **Absence registrations** under **Time assignment** on the
     **Time tab** page.
 
-Use the report **Planned absences** for an overview of planned absences for
-workers.
+-   Use the report **Planned absences** for an overview of planned absences for workers.
 
-Click **Time and attendance** \> **Inquiries and reports** \> **Absence
-reports** \> **Planned absences** to open the **Planned absences** report.
+-   Click **Time and attendance** \> **Inquiries and reports** \> **Absence reports** \> **Planned absences** to open the **Planned absences** report.
 
-**Registered absence**
+### Registered absence
 
 In general, a worker is regarded as absent for the time where he is not at work
 during his planned clock-in and clock-out. If a worker clocks in later than
@@ -646,7 +644,7 @@ planned or clocks out earlier, he will be prompted to select an absence code for
 the reason for being absent. An absence code can be set up to be applicable
 registration and only applicable codes will be shown in the list.
 
-Scenarios based on various combinations of work hour registrations
+## Scenarios based on various combinations of work hour registrations
 
 The following scenarios illustrate what pay items and entries for approval are
 generated for workers based on their registrations.
@@ -661,7 +659,7 @@ generated for workers based on their registrations.
 | Clock out        | 03:30 PM  | 03:30 PM | Monday  |
 | Over time        | 03:30 PM  | 06:00 AM | Tuesday |
 
-**Scenario 1 – The worker clocks in later than planned**
+### Scenario 1 – The worker clocks in later than planned**
 
 The worker clocks in at 08:30 AM, and since his planned clock-in time is 07:00
 AM, he is 1.50 hour late for work. The 1.50 hour is regarded as absence time, so
@@ -698,8 +696,8 @@ The resulting pay item after transfer:
 |---------------|--------------|---------------|----------|
 | Standard time | 1201         | 7.00          | 10       |
 
-**Scenario 2 – The worker clocks out before planned clock-out in a Standard-time
-period**
+### Scenario 2 – The worker clocks out before planned clock-out in a Standard-time
+period
 
 The worker clocks in at 07:00 AM and clocks out early at 01:00 PM. As 01:00 PM
 is before planned clock-out at 03:30 PM and 01:00 AM is in a standard-time
@@ -724,8 +722,8 @@ The resulting pay item after transfer
 |---------------|--------------|---------------|----------|
 | Standard time | 1201         | 7.50          | 10       |
 
-**Scenario 3 – The worker clocks out in a Flex- period before planned
-clock-out**
+### Scenario 3 – The worker clocks out in a Flex- period before planned
+clock-out
 
 The worker clocks in at 07:00 AM and clocks out at 02:15 PM which is in the
 planned Flex- period. The time between the clock-out and the planned clock-out
@@ -745,8 +743,8 @@ The resulting pay item after transfer:
 |---------------|--------------|---------------|----------|
 | Standard time | 1201         | 8.50          | 10       |
 
-**Scenario 4 – The worker clocks-in late and clocks-out in an overtime period
-after planned clock-out**
+### Scenario 4 – The worker clocks in late and clocks out in an overtime period
+after planned clock-out
 
 The worker clocks in late at 09:30 AM and to compensate for his late attendance,
 he works overtime and clocks out at 05:00 PM. In this case, the company does not
@@ -793,8 +791,8 @@ In this case, the 1.5 hours of illegal absence from 07:00 AM to 09:30 AM will
 deduct the 2.0 hours of overtime from 03:30 PM to 05:30 PM and the result of the
 registration will be 1.5 hours of standard time and 0.5 hours of overtime.
 
-**Scenario 5 – The worker clocks out before planned clock-out and can convert
-the absence period to a Flex- period**
+### Scenario 5 – The worker clocks out before planned clock-out and can convert
+the absence period to a Flex- period
 
 The following example illustrates how a worker’s flex account can be reduced by
 converting the absence period to a Flex- period:
@@ -808,11 +806,11 @@ period. To convert the remaining part of the work day to a Flex- period, the
 worker can select an absence code that is set up to reduce his flex account.
 
 -   Click **Time and attendance** \> **Setup** \> **Groups** \> **Absence
-    groups** and select the **Reduce flex** check box to reduce the balance of
+    groups**, and select the **Reduce flex** check box to reduce the balance of
     flexible hours for workers who register absence on a work day.
 
 This is how the workers registrations for the day will appear on the **Approve**
-page before calculation
+page before calculation:
 
 | **Journal registration type** | **Start** | **End**  | **Time** |
 |-------------------------------|-----------|----------|----------|
@@ -820,7 +818,7 @@ page before calculation
 | Production job                | 07:00 AM  | 01:00 PM | 6.0      |
 | Clock out                     | 01:00 PM  | 01:00 PM |          |
 
-If the user selects an absence code for illegal absence this is how the
+If the worker selects an absence code for illegal absence, this is how the
 resulting pay item will look after the registration has been transferred:
 
 | **Wage type** | **Pay type** | **Pay units** | **Rate** |
@@ -835,17 +833,18 @@ this:
 |---------------|--------------|---------------|----------|
 | Standard time | 1201         | 8.50          | 10       |
 
-In this case, the workers flex balance will be reduced with the hours from where
+In this case, the worker's flex balance will be reduced with the hours from where
 he clocks-out to the time of planned clock-out, that is 2.5 hours from 01:00 PM
 to 03:30 PM.
 
-**Note**: It is not recommended to use absence codes where both the **Deduct
+[!NOTE]
+It is not recommended to use absence codes where both the **Deduct
 flex** and the **Deduct overtime** check box is selected because that will
 convert the worker’s overtime hours with the illegal hours and reduce his flex
 account at the same time.
 
-**Scenario 6 – No planned absence for the day and no workers attendance for the
-day**
+### Scenario 6 – No planned absence for the day and no workers attendance for the
+day
 
 If the worker does not show up at work on a work day and there is no planned
 absence for the worker for this day, a default absence code will be used for the
