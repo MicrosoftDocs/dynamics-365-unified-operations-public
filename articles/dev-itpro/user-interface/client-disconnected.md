@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-## Client onternet connection 
+## Client internet connection 
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,13 +43,13 @@ The configuration of the local network for an on-premises deployment of Dynamics
 + Skype integration will not be available.  
 + The favorite icon shown in the browser tab will be the browser's default favorite icon instead of the Finance and Operations icon. 
 
-In addition to platform features that may not be accessible when the client can't access the Internet, there may also be application features that rely on an internet connection that developers will need to hide or switch off. To facilitate this, developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the Internet.
+In addition to platform features that may not be accessible when the client can't access the internet, there may also be application features that rely on an internet connection that developers will need to hide or switch off. To facilitate this, developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the internet.
 
 ## Client internet connectivity options
 
 Client internet connectivity options (added by [KB 4091763](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=19e9634da3297903a2ac51cf291a4770fd4532c9767ca7b5cefbe1bccb5d4d9f)) allow an administrator to manually switch off the external connections that the client makes even when internet connectivity is available. These can be used for troubleshooting issues or just to see what the client will look like when internet connectivity is not available.
 
-These options can be found on the **System administration > Setup > Client performance options** form:
+These options can be found on the **System administration > Setup > Client performance options** page.
 
 - **Internet connectivity enabled** - Allows an administrator to switch off all external connections that the web client would otherwise make.
 - **Skype presence enabled** - Allows an administrator to switch off external connections to Skype that the web client would otherwise make.
