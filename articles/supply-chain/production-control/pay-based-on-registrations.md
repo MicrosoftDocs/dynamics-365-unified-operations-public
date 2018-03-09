@@ -258,17 +258,18 @@ Pay items generated after the calculation parameters are adjusted:
 | Overtime      | 1301         | 1.50          | 15       | 22.50          |
 |               |              |               | Total    | 107.50         |
 
-**Note**: The calculation parameters have a recommended standard setting, so you
+> [!NOTE]
+The calculation parameters have a recommended standard setting, so you
 should in general be careful changing the parameters. On the **Calculation
 parameters** page, you can click **Restore values** to restore the recommend
 standard setting.
 
-**Allow a deviation from the standard pay profiles**
+### Allow a deviation from the standard pay profiles
 
 Click **Time and attendance** \> **Setup** \> **Time profiles** \> **Profiles**
 to open the **Profiles** page where you can set the following profile types:
 
-**Switch codes**
+### Switch codes
 
 You can use witch codes to allow that workers deviate from their profile type by
 changing from one profile type to another. You can, for example, allow a worker
@@ -283,7 +284,7 @@ following example a switch code is created that allows converting the Flex+
 period from 06:00 AM to 07:00 AM to overtime. The task includes the following
 steps.
 
--   Create a Switch code called OTBCI (Convert flex to overtime before
+-   Create a switch code called OTBCI (Convert flex to overtime before
     clock-in). Click **Time and attendance** \> **Manage indirect activities**
     \> **Indirect activities**
 
@@ -303,7 +304,7 @@ Consider the following Flex profile that represents a work day:
 | Clock out        | 03:30 PM  | 03:30 PM | Monday  |
 | Over time        | 03:30 PM  | 06:00 AM | Tuesday |
 
-The workers registrations for the day:
+The worker's registrations for the day:
 
 | **Journal registration type** | **Start** | **End**  |
 |-------------------------------|-----------|----------|
@@ -329,26 +330,27 @@ you will get the following pay items:
 | Overtime      | 1305         | 2.00          | 15       | 30.0           |
 |               |              |               | Total    | 107.50         |
 
-Note that when you apply the switch code, overtime is increased with 0.5 hour
+> [!NOTE] 
+When you apply the switch code, overtime is increased with 0.5 hour
 from 1.50 to 2.00. The 0.5 hour is the conversion of the Flex+ time registered
 from 6:30 AM to 07:00 to overtime.
 
-**Breaks**
+### Breaks
 
 Break from work has an impact on the calculation of the workers’ pay. A break is
-defined as a type of indirect activity. The Break can be defined as either
+defined as a type of indirect activity. The break can be defined as either
 Unpaid or Paid to either allow or not allow the break to add to the workers’
 pay. A break can also be defined as either Planned or Registered.
 
-**Planned break**
+### Planned break
 
 If a company has a fixed break time such as a fixed break for lunch, the break
 can be pre-defined in the time profile. In that case, the worker does not need
 to register the break in the job card pages, but the break is automatically
-accounted for when calculating the workers registrations on the **Approve**
+accounted for when calculating the worker's registrations on the **Approve**
 page.
 
-**Registered break**
+### Registered break
 
 If a company does not use planned breaks, a worker can register breaks during
 the work day. The use of registered break can, for example, be relevant if the
@@ -358,13 +360,13 @@ break is registered by the worker on the Job card terminal page or on the Job
 card device page. In these pages the user can select from a list of defined
 break activities.
 
-**Paid and unpaid breaks**
+### Paid and unpaid breaks
 
 The Break activity can be set up as Paid or Unpaid. If a break is set up as
 Paid, it is included in the calculation of pay time and the system will use the
 pay type that is defined in the pay agreement for Break registration type.
 
-**Example of the use of Planned break**
+### Example of the use of Planned break
 
 Consider the following time profile with an unpaid break for lunch.
 
@@ -380,7 +382,7 @@ Consider the following time profile with an unpaid break for lunch.
 | Clock out        | 03:30 PM  | 03:30 PM | Monday  |
 | Over time        | 03:30 PM  | 06:00 AM | Tuesday |
 
-The workers registrations for the day:
+The worker's registrations for the day:
 
 | **Journal registration type** | **Start** | **End**  |
 |-------------------------------|-----------|----------|
@@ -396,10 +398,11 @@ fields:
 |-------------|------------|----------|--------------|-------------------------|------------------|
 | 0.50        | 0.00       | 10.50    | 9.50         | 0.5                     | 1.50             |
 
-Note that the system calculated 0.5 hours of non-paid break time and that this
+> [!NOTE]> 
+The system calculated 0.5 hours of non-paid break time and that this
 time is not part of the pay time.
 
-**Example of the use of Registered breaks**
+### Example of the use of Registered breaks
 
 Consider the following time profile without planned breaks:
 
@@ -423,7 +426,7 @@ The workers registrations for the day:
 | Clock out                     | 05:00 PM  | 05:00 PM |
 
 When the registrations are calculated, the time for the activities are
-calculated
+calculated:
 
 | **Journal registration type** | **Start** | **End**  | **Time** |
 |-------------------------------|-----------|----------|----------|
@@ -432,7 +435,8 @@ calculated
 | Break                         | 12:03 PM  | 12:32 PM | 0.50     |
 | Clock out                     | 05:00 PM  | 05:00 PM |          |
 
-Note that the break time runs in parallel time with an activity, in this case a
+> [!NOTE]
+The break time runs in parallel time with an activity, in this case a
 production job. This is always the case for break activities. When the
 registrations are calculated, the break time will be subtracted from the
 activity time. In this case the production job has a duration of 10.50 hours,
@@ -454,7 +458,7 @@ calculation would look like this:
 |-------------|------------|----------|--------------|---------------------|------------------|
 | 0.50        | 0.00       | 10.50    | 10.00        | 0.5                 | 1.50             |
 
-**Pay items and paid breaks**
+### Pay items and paid breaks
 
 When you transfer registrations in the **Approve** form, pay items are
 generated. For paid breaks, a separate pay item will be generated.
@@ -475,7 +479,7 @@ Consider following time profile
 | Clock out        | 03:30 PM  | 03:30 PM | Monday  |
 | Over time        | 03:30 PM  | 06:00 AM | Tuesday |
 
-The workers registrations for the day:
+The worker's registrations for the day:
 
 | **Journal registration type** | **Start** | **End**  | **Time** |
 |-------------------------------|-----------|----------|----------|
@@ -487,7 +491,7 @@ The workers registrations for the day:
 For this example, the pay type for Standard time is set to 1201 with a pay rate
 of 10 in the pay agreement. The paid break has a pay type of 1301 with a pay
 rate of 8. When the registrations are transferred the following pay items will
-be generated
+be generated.
 
 | **Wage type** | **Pay type** | **Pay units** | **Rate** |
 |---------------|--------------|---------------|----------|
@@ -495,7 +499,7 @@ be generated
 | Flex-         | 1201         | 0.50          | 10       |
 | Break (Paid)  | 1301         | 0.50          | 8        |
 
-**How the cost of paid breaks is allocated to projects and production orders**
+## How the cost of paid breaks is allocated to projects and production orders**
 
 The hourly cost on project activities and production jobs can be set up to be
 determined by the pay rates calculated in Time and attendance or by the cost
@@ -505,10 +509,10 @@ categories defined for the activities.
     Manufacturing execution \> Production order defaults and set the Cost
     category field to either Yes or No.
 
--   If set to No, cost is calculated based on pay rates defined for Time and
+-  - If set to No, cost is calculated based on pay rates defined for Time and
     attendance registration types.
 
--   If set to Yes, cost is calculated based on cost categories for production
+-  - If set to Yes, cost is calculated based on cost categories for production
     and project activities.
 
 Cost calculation based on pay rates calculated in Time and attendance
