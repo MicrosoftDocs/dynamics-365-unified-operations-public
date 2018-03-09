@@ -85,7 +85,7 @@ the worker clocks in and out.
 ### Scenario 1 – A worker registers clock-in in a Flex+ period and clock-out in a
 Flex- period  
   
-The worker’s registration for the day:
+The worker’s registrations for the day:
 
 | **Journal registration type** | **Start** | **End**  |
 |-------------------------------|-----------|----------|
@@ -93,8 +93,8 @@ The worker’s registration for the day:
 | Production job                | 06:30 AM  | 02:45 PM |
 | Clock out                     | 02:45 PM  | 02:45 PM |
 
-The worker's registration for the day is calculated and transferred to pay on the
-**Approve** page. When the registration has been calculated, the result of the
+The worker's registrations for the day are calculated and transferred to pay on the
+**Approve** page. When the registrations have been calculated, the result of the
 calculation is visible under the **Times** tab. 
 
 For an understanding of this scenario, see the following fields:
@@ -107,13 +107,13 @@ For an understanding of this scenario, see the following fields:
 
 ### Calculation of Flex+
 
-If the worker clocks-in at 06:30 AM, he earns 0.5 hours because, according to
+If the worker clocks in at 06:30 AM, he earns 0.5 hours because, according to
 the profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. The 0.5
 hours are added to the workers flex account.
 
 ### Calculation of Flex-
 
-If the worker clocks-out at 02:45 PM, the 45 minutes from 02:45 to 03:30 will be
+If the worker clocks out at 02:45 PM, the 45 minutes from 02:45 to 03:30 will be
 registered as pay time and the same amount of time will be deducted from his
 flex account. This is because the Flex- period starts at 02:30 PM and ends
 at 03:30 PM, so he has 45 minutes (0.75 hours) left of the Flex- period. The
