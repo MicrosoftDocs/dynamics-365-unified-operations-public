@@ -1,3 +1,38 @@
+---
+# required metadata
+
+title: Pay based on registrations
+description: This topic describes how how pay is calculated based on
+workers’ registrations.
+author: johanhoffmann
+manager: AnnBe
+ms.date: 03/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: JmgCalcApproveWeekView
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 1705903
+ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: johanho
+ms.search.validFrom: 2018-03-20
+ms.dyn365.ops.version: AX 8.0.0
+---
+
+# Pay based on registrations
+
+[!include[banner](../includes/banner.md)]
 This topic provides a detailed description of how pay is calculated based on
 workers’ registrations and you’ll get an example of how the various combinations
 of setup options that are available for the calculation will affect the result.
