@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 8.0.0
 [!include[banner](../includes/banner.md)]
 
 This topic provides a detailed description of how pay is calculated based on
-workers’ registrations and you’ll get an example of how the various combinations
+workers’ registrations and you’ll see examples of how the various combinations
 of setup options that are available for the calculation will affect the result.
 Here are some of the areas that will be covered:
 
@@ -54,23 +54,23 @@ Here are some of the areas that will be covered:
 
 -   Absence
 
-**The use of Flex time**
+## The use of Flex time
 
 Periods of flex time are set up in the time profiles that are used in Time and
-attendance. There are two types of flex profile types **Flex+** and **Flex-**.
+attendance. There are two flex profile types: **Flex+** and **Flex-**.
 When a worker registers time in a Flex+ period, the worker’s flex balance is
 increased with the hours worked. The worker will not receive any compensation
-for the hours worked in the Flex+ period but the worker can take time off in the
+for the hours worked in the Flex+ period but he can take time off in the
 Flex- periods and be compensated with the hours from his flex balance. So time
 off in the flex periods is not considered as absence by the system.
 
-Scenarios based on flex periods
+## Scenarios based on flex periods
 
 The two scenarios below are based on a flex profile that represents a work day.
 For both of the scenarios, pay is calculated according to the flex period where
 the worker clocks in and out.
 
-**Flex profile for one work day**
+### Flex profile for one work day
 
 | **Profile type** | **Start** | **End**  | **Day** |
 |------------------|-----------|----------|---------|
@@ -82,10 +82,10 @@ the worker clocks in and out.
 | Clock out        | 03:30 PM  | 03:30 PM | Monday  |
 | Over time        | 03:30 PM  | 06:00 AM | Tuesday |
 
-**Scenario 1 – A worker registers clock-in in a Flex+ period and clock-out in a
-Flex- period**  
+### Scenario 1 – A worker registers clock-in in a Flex+ period and clock-out in a
+Flex- period  
   
-The worker’s registrations for the day:
+The worker’s registration for the day:
 
 | **Journal registration type** | **Start** | **End**  |
 |-------------------------------|-----------|----------|
@@ -93,42 +93,42 @@ The worker’s registrations for the day:
 | Production job                | 06:30 AM  | 02:45 PM |
 | Clock out                     | 02:45 PM  | 02:45 PM |
 
-The workers registration for the day is calculated and transferred to pay on the
+The worker's registration for the day is calculated and transferred to pay on the
 **Approve** page. When the registration has been calculated, the result of the
-calculation is visible under the **Times** tab. For an understanding of this
-scenario, see the following fields:
+calculation is visible under the **Times** tab. 
+
+For an understanding of this scenario, see the following fields:
 
 | **Flex +**  | **Flex -** | **Time** | **Pay time** |
 |-------------|------------|----------|--------------|
 | 0.50        | 0.75       | 8.25     | 8.50         |
-
--   To access the **Approve** page, click **Time and attendance** and then click
+-   To access the **Approve** page, click **Time and attendance**, and then click
     **Approve** under **Review and approve**.
 
-**Calculation of Flex+**
+### Calculation of Flex+
 
 If the worker clocks-in at 06:30 AM, he earns 0.5 hours because, according to
 the profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. The 0.5
 hours are added to the workers flex account.
 
-**Calculation of Flex-**
+### Calculation of Flex-
 
 If the worker clocks-out at 02:45 PM, the 45 minutes from 02:45 to 03:30 will be
 registered as pay time and the same amount of time will be deducted from his
-flex account. This is because the **Flex-** period starts at 02:30 PM and ends
+flex account. This is because the Flex- period starts at 02:30 PM and ends
 at 03:30 PM, so he has 45 minutes (0.75 hours) left of the Flex- period. The
 worker will be granted pay for the remaining 45 minutes in the Flex- period,
-which is why the 45 minutes are included as pay time. The 45 minutes will be
+which is why the 45 minutes are included as pay time. if he is absent in the Flex- period The 45 minutes will be
 deducted from the worker’s flex account.
 
-**Calculation of Time**
+### Calculation of Time
 
 Time is calculated as the time between clock-in and clock-out, that is, 06:30 AM
 to 14:45 PM with equals 8.25 hours.
 
-**Calculation of Pay time**
+### Calculation of Pay time
 
-Pay time is the time in which a worker is granted pay. In this scenario the
+Pay time is the time in which a worker is granted pay. In this scenario, the
 worker is at work for 8.25 hours (Time), but the pay time is calculated to 8.50
 hours. This is because the worker is granted pay in the Flex- period after he
 clocked out. The pay time equals the planned work hours since Flex+ is added to
@@ -142,7 +142,7 @@ period is compensated with pay time and deducted on the worker’s flex account.
 | 2:45 PM – 3:30 PM | Flex-                 | 0.75 (Absence period) |
 |                   | Total                 | 8.50                  |
 
-**Scenario 2 – A worker works in the complete Flex- period and works overtime**
+### Scenario 2 – A worker works in the complete Flex- period and works overtime
 
 The worker’s registrations for the day
 
@@ -160,32 +160,32 @@ this scenario, see the following fields:
 |-------------|------------|----------|--------------|------------------|
 | 0.50        | 0.00       | 10.50    | 10.00        | 1.50             |
 
-**Calculation of Flex+**
+### Calculation of Flex+
 
 The worker clocks-in at 06:30 AM, so he earns 0.5 hours Flex+ on his flex
 balance, because the time between 06:00 AM and 07:00 AM is a Flex+ period
 according to the profile.
 
-**Calculation of Flex-**
+### Calculation of Flex-
 
 The worker is working in the Flex- period, so no Flex- time will be calculated.
 Flex- is only calculated if the worker is absent in the Flex- period. From a
 payment perspective, the worker is granted the pay rate defined for the Standard
-time if he is working the Flex- period. The worker is granted the pay rate
-defined for Flex- time if he is absent in the Flex- period.
+time if he is working the Flex- period. If the worker if is absent in the Flex- period, the 45 minutes will be
+deducted from the his flex account.
 
-**Calculation of Time**
+### Calculation of Time
 
 Time is calculated as the time between clock-in and clock-out at 06:30 AM to
 05:00 PM which equals 10.50 hours.
 
-**Calculation of Pay time**
+### Calculation of Pay time
 
 In this scenario, the worker works 10.50 hours (Time), but the **Pay time** is
 calculated to 10.00 hours. This is because the worker is not granted pay in the
 Flex+ period.
 
-**Calculation of Pay overtime**
+### Calculation of Pay overtime
 
 | **Time**           | **Registration type** | **Pay time (hours)** |
 |--------------------|-----------------------|----------------------|
@@ -195,7 +195,7 @@ Flex+ period.
 | 3:30 PM – 05:00 PM | Overtime              | 1.50                 |
 |                    | Total                 | 10.00                |
 
-**Generation of Pay items**
+### Generation of Pay items
 
 Workers’ registrations for the day can be transferred from the **Approve** page.
 In the transfer process, pay items and transferred registrations are generated.
@@ -203,11 +203,9 @@ Pay items represent a breakdown of Pay time into Standard time, Overtime, Paid
 break time etc.
 
 -   To open the list of pay items, click **Time and attendance** \> **Approve**,
-    and then click **Transferred registrations** on the **Inquiry** menu..
+    and then click **Transferred registrations** on the **Inquiry** menu.
 
-The pay items are the basis for a workers’ pay, and a file, containing the
-information from the pay items, can be generated and transferred to a payroll
-system.
+The pay items are the basis for a workers’ pay and a file can be generated and transferred to a payroll system with the information from the pay items.
 
 As part of the transfer process, time and cost from production and project
 activities are transferred to production and project journals to account for the
@@ -230,8 +228,7 @@ time based on the default parameter setting on the Calculation parameters page.
 The overtime is calculated on top of the standard time with an additional rate
 of 5.
 
-To open the **Calculation parameters** page, click **Time and attendance** \>
-**Setup** \> **Calculation parameters**.
+-   To open the **Calculation parameters** page, click **Time and attendance** \> **Setup** \> **Calculation parameters**.
 
 If you want to distinguish clearly between the standard time and overtime so
 that the pay units for the pay types only cover the actual time spend on
@@ -243,7 +240,7 @@ overtime, you must exclude overtime from the standard time and change the setup
 of the pay type for overtime so that the pay rate for overtime covers all
 payments for the hours spent on overtime.
 
-**Exclude overtime from the standard time**
+### Exclude overtime from the standard time
 
 -   On the **Calculation** parameters page, select the **Overtime** profile
     specification type and set the **Pay time** field to **No** as shown below
