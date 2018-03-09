@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # The Person search report
 
+[!include[banner](../includes/banner.md)]
+
 The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
