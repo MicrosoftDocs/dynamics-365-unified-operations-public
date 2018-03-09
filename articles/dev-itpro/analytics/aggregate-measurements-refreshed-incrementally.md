@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aggregate measurements are refreshed incrementally
+title: Scheduling Entity Store model updates
 description: TBD
 author: tjvass
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ---
 
-# Aggregate measurements are refreshed incrementally
+# Scheduling Entity Store model updates
 
 [!include[banner](../includes/banner.md)]
 
