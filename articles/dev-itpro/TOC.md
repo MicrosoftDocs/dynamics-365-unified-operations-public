@@ -500,6 +500,7 @@
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 ### [Update the local agent](lifecycle-services/update-local-agent.md)
 ### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
+### [Client internet connection](user-interface/client-disconnected.md)
 ### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
