@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with plat
 description: This topic describes features that are either new or changed in on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12. This deployment option became available in March 2018.
 author: sericks007
 manager: AnnBe
-ms.date: 03/08/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,5 +50,7 @@ Note that the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigu
 ## Hotfixes
 Hotfixes that you can download from LCS provide additional features for your on-premises deployments of Platform update 12. Be sure to apply the following hotfixes:
 
-- **KB 4091763: Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines.
+- **KB 4091763 - Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines. For more information, see [Client internet connection](../../dev-itpro/user-interface/client-disconnected.md).
+
+- **KB 4093454 - NAME**: For more information, see [ISV licensing (on-premises)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md).
 
