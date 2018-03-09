@@ -258,7 +258,8 @@ Pay items generated after the calculation parameters are adjusted:
 | Overtime      | 1301         | 1.50          | 15       | 22.50          |
 |               |              |               | Total    | 107.50         |
 
-> [!NOTE]
+[!NOTE]
+
 The calculation parameters have a recommended standard setting, so you
 should in general be careful changing the parameters. On the **Calculation
 parameters** page, you can click **Restore values** to restore the recommend
@@ -330,7 +331,7 @@ you will get the following pay items:
 | Overtime      | 1305         | 2.00          | 15       | 30.0           |
 |               |              |               | Total    | 107.50         |
 
-> [!NOTE] 
+[!NOTE] 
 When you apply the switch code, overtime is increased with 0.5 hour
 from 1.50 to 2.00. The 0.5 hour is the conversion of the Flex+ time registered
 from 6:30 AM to 07:00 to overtime.
@@ -398,7 +399,7 @@ fields:
 |-------------|------------|----------|--------------|-------------------------|------------------|
 | 0.50        | 0.00       | 10.50    | 9.50         | 0.5                     | 1.50             |
 
-> [!NOTE]> 
+[!NOTE] 
 The system calculated 0.5 hours of non-paid break time and that this
 time is not part of the pay time.
 
@@ -853,7 +854,7 @@ calculation of the worker’s registrations.
 -   To define a default absence code, click **Time and attendance** \> **Time
     and attendance parameters**.
 
->   The following two absence codes can be defined in the parameters:
+The following two absence codes can be defined in the parameters:
 
 -   Auto insert Flex-
 
