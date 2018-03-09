@@ -162,7 +162,7 @@ this scenario, see the following fields:
 
 ### Calculation of Flex+
 
-The worker clocks-in at 06:30 AM, so he earns 0.5 hours Flex+ on his flex
+The worker clocks in at 06:30 AM, so he earns 0.5 hours Flex+ on his flex
 balance, because the time between 06:00 AM and 07:00 AM is a Flex+ period
 according to the profile.
 
@@ -835,7 +835,7 @@ this:
 | Standard time | 1201         | 8.50          | 10       |
 
 In this case, the worker's flex balance will be reduced with the hours from where
-he clocks-out to the time of planned clock-out, that is 2.5 hours from 01:00 PM
+he clocks out to the time of planned clock-out, that is 2.5 hours from 01:00 PM
 to 03:30 PM.
 
 [!NOTE]
