@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend the Person search report with your own data (Customer or ISV)
 
+[!include[banner](../includes/banner.md)]
+
 The Person search report for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is backed by an intelligent search processor that is designed to manage a collection of entities for a single person. The Person search report searches Finance and Operations data and creates a set of resulting identifiers. Each result references a search category (for example, Customer) and a result record in a related table. For information about using the Person search report, refer the [Person search report](/gdpr-person-search-report.md) topic.
 
 > [!Note]
