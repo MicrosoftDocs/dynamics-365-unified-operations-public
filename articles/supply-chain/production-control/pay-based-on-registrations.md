@@ -436,6 +436,7 @@ calculated:
 | Clock out                     | 05:00 PM  | 05:00 PM |          |
 
 > [!NOTE]
+
 The break time runs in parallel time with an activity, in this case a
 production job. This is always the case for break activities. When the
 registrations are calculated, the break time will be subtracted from the
@@ -509,10 +510,10 @@ categories defined for the activities.
     Manufacturing execution \> Production order defaults and set the Cost
     category field to either Yes or No.
 
--  - If set to No, cost is calculated based on pay rates defined for Time and
+   - If set to No, cost is calculated based on pay rates defined for Time and
     attendance registration types.
 
--  - If set to Yes, cost is calculated based on cost categories for production
+   - If set to Yes, cost is calculated based on cost categories for production
     and project activities.
 
 Cost calculation based on pay rates calculated in Time and attendance
