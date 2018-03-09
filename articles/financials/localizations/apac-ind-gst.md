@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../includes/banner.md)]
 
-This content provides a walkthrough of the entities of the India Goods and Services Tax (GST) and how they are related, in Microsoft Dynamics 365. 
+This content provides detailed information about India Goods and Services Tax (GST). 
 
 ## Prerequisites
 
@@ -171,23 +171,20 @@ This content provides a walkthrough of the entities of the India Goods and Servi
 ## Import the configuration and deploy it to a specific company
 Before you complete this task, be sure to save all the configuration files in a location that you can access from Finance and Operations.
 
-The following task demonstrates how to load the tax configuration and map to the
-Legal entity.
+Complete the following steps to load a tax configuration and map it to a legal entity.
 
 1.  Go to **Organization administration** > **Workspaces** > **Electronic reporting** > **Tax configurations**.
 2.  Click **Exchange** > **Load from XML files**.
 3.  Browse to the location of the configuration file and select the configuration file to load.
 4.  Click **OK**.
-5.  Repeat step 2 - 4 to load **Taxable document**, **Taxable document (India)**
-    and **Tax (India GST)** in sequence.
+5.  Repeat step 2 - 4 to load **Taxable document**, **Taxable document (India)** and **Tax (India GST)** in sequence.
 6.  Click **Close**.
 7.  Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 8.  Click **New**.
 9.  In the **Tax setup** field, enter a value.
 10. In the **Description** field, enter a value.
 11.  Click **Configurations**.
-12.  On the **Tax configuration** tab, under **Available configurations**, click
-    **New**.
+12.  On the **Tax configuration** tab, under **Available configurations**, click **New**.
     ![Available configurations](media/apac-ind-gst-available-configurations.png)
 13.  In the **Configuration version** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
 14.  Click **Synchronize**.
@@ -211,12 +208,12 @@ Legal entity.
 
   ![Two configurations](media/apac-ind-gst-two-configurations.png)
 
-5.  Select the New version and Click **Activate**.
+5.  Select the new version and click **Activate**.
 6.  Follow the **Tax setup** task to update data for the new version.
     > [!IMPORTANT]
     > If the task in the Tax setup section have been completed for the old configuration version, the data will be retained after you synchronize to the new configuration version. You just have to review and update the setup per the new changes.
 
-## Tax setup example
+## Example: Tax setup
 This section walks you through defining the GST and Customs tax setup in Finance and Operations.
 
 ### Map configuration tax types to ERP tax types (Customs) 
@@ -226,38 +223,24 @@ This section walks you through defining the GST and Customs tax setup in Finance
 3.  Click **Setup**.
 4.  Select the **Customs** node.
 5.  On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**.
+6. Define a tax period. 
+    1.  Select the node for the tax component.
+    2. On the **Tax period mapping** tab, in the **Period** field, select a value.
+7. Define main accounts 
+    1.  On the **Accounting** tab, on the **Conditions** FastTab, click **Add**.
+    2.  In the **Import Order** field, select a value.
+    3.  In the **Export order** field, select a value
+    4.  Save the record.
+    5.  On the **Values** FastTab, in the **Main account** field, select a value.
 
-Define a tax period 
---------------------
+    >   [!NOTE]
+    >    The list of accounts is generated dynamically, based on the posting profile from the configuration. The selected Main account should be of posting type **Customs**.
 
-1.  Select the node for the tax component.
+    6.  Select **IGST CUS** node
+    7.  On the **Values** FastTab, in the **Main account** field, select a value.
 
-On the **Tax period mapping** tab, in the **Period** field, select a value
-
-Define main accounts 
----------------------
-
-1.  On the **Accounting** tab, on the **Conditions** FastTab, click **Add**.
-
-2.  In the **Import Order** field, select a value.
-
-3.  In the **Export order** field, select a value
-
-4.  Save the record.
-
-5.  On the **Values** FastTab, in the **Main account** field, select a value.
-
->   **Note:** The list of accounts is generated dynamically, based on the
->   posting profile from the configuration. Selected Main account should be of
->   posting type ‘**Customs’**.
-
-1.  Select **IGST CUS** node
-
-2.  On the **Values** FastTab, in the **Main account** field, select a value.
-
-**Note: Main account** selected for **Customs duty accrual** should be the same
-account selected for the **Customs duty accrual account** of the **GST \> IGST
-node**
+    >   [!NOTE]
+    >   The main account that you selected for **Customs duty accrual** should be the same account selected for the **Customs duty accrual account** of the **GST \> IGST** node.
 
 ### Map configuration tax types to ERP tax types (GST) 
 1.  Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
@@ -280,170 +263,90 @@ node**
     from the configuration.
     >   - Tax main accounts can be defined at level of the tax type or the tax component. The value at the tax component level will override the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level will be used for posting. It is recommend to set up the tax accounts at the tax component level per registration.
 
-Set up rate and percentage tables 
-----------------------------------
+8. Set up rate and percentage tables. 
+    1.  Expand the node for the tax Component.
+    2.  Select the **Rate** node, and then, in the **Value** field, define the tax rates.
+    3.  Select the **Reverse Charge Percentage** node, and then, in the **Value** field, define the reverse charge percentage.
+    4.  Select the **Load on Inventory Percentage** node, and then, in the **Value** field, define the load on inventory percentage.
+    5.  Click **Close**.
+    6.  Click **Parameters**.
+    7.  In the **Tax journal name** field, select a value. (Required for posting the Tax adjusments)
+    8.  In the **Tax journal voucher series** field, select a value.
+    9.  Click **OK**.
+9. Set up a sales tax hierarchy and Maintain setoff rules profiles.
+    1.  Go to **Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies.**
+    2.  Click **New**.
+    3.  In the **Name** field, enter a value.
+    4.  In the **Structure** field, select **GTE hierarchy**.
+    ![GTEhierarchy](media/apac-ind-gst-GTEhierarchy-Setoffrule.png)
+    5.  Click **OK**.
+    6.  On the **Versions** FastTab, click **Synchronize**.
+    7.  Close the message.
+    8.  Click **View**. The **Sales tax hierarchy designer** page shows the tax type and tax components per the configuration.
+    ![View](media/apac-ind-gst-View-Setoffrule.png)
+    ![Salestaxhierarchydesigner](media/apac-ind-gst-salestaxdesigner.png)
 
-1.  Expand the node for the tax Component.
+    9.  Click **Setoff rules for sales tax hierarchy**.
+    10.  Click **New**.
+    11.  In the **Name** field, enter a value.
+    12.  Save the record.
+    13.  On the **Recoverable** FastTab, select the tax components, and adjust the **Priority** values.
+    14.  On the **Payable** FastTab, select the tax components, and adjust the **Priority** values.
+    15.  Define the setoff rules per the legal requirement.
+      ![Setoffrule](media/apac-ind-gst-View-Setoffrule.png)
+    16.  Click **Close**.
+    17.  Close the **Sales tax hierarchy designer** form.
+    18. Click **Activate**.
+    19. Click **Close**.
 
-2.  Select the **Rate** node, and then, in the **Value** field, define the tax
-    rates.
-
-3.  Select the **Reverse Charge Percentage** node, and then, in the **Value**
-    field, define the reverse charge percentage.
-
-4.  Select the **Load on Inventory Percentage** node, and then, in the **Value**
-    field, define the load on inventory percentage.
-
-5.  Click **Close**.
-
-6.  Click **Parameters**.
-
->   In order to post the Tax adjusments, the following fields must be defined.
-
-1.  In the **Tax journal name** field, select a value.
-
-2.  In the **Tax journal voucher series** field, select a value.
-
-3.  Click **OK**.
-
-Set up a sales tax hierarchy and Maintain setoff rules profiles
----------------------------------------------------------------
-
-1.  Go to **Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies.**
-
-2.  Click **New**.
-
-3.  In the **Name** field, enter a value.
-
-4.  In the **Structure** field, select **GTE hierarchy**.
-
->   ![GTEhierarchy](media/apac-ind-gst-GTEhierarchy-Setoffrule.png)
-
-5.  Click **OK**.
-
-6.  On the **Versions** FastTab, click **Synchronize**.
-
-7.  Close the message.
-
-8.  Click **View**.
-
->   ![View](media/apac-ind-gst-View-Setoffrule.png)
-
->   The **Sales tax hierarchy designer** form shows the tax type and tax
->   components per the configuration.
-
-![Salestaxhierarchydesigner](media/apac-ind-gst-salestaxdesigner.png)
-
-1.  Click **Setoff rules for sales tax hierarchy**.
-
-2.  Click **New**.
-
-3.  In the **Name** field, enter a value.
-
-4.  Save the record.
-
-5.  On the **Recoverable** FastTab, select the tax components, and adjust the
-    **Priority** values.
-
-6.  On the **Payable** FastTab, select the tax components, and adjust the
-    **Priority** values.
-
-7.  Define the setoff rules per the legal requirement.
-
-![Setoffrule](media/apac-ind-gst-View-Setoffrule.png)
-
-8.  Click **Close**.
-
-9.  Close the **Sales tax hierarchy designer** form.
-
-10. Click **Activate**.
-
-11. Click **Close**.
-
->   **Maintain setoff hierarchy profiles**
+### Maintain setoff hierarchy profiles
 
 1.  Go to **Tax** > **Setup** > **Sales tax** > **Maintain setoff hierarchy profiles**.
-
 2.  Click **New**.
-
 3.  In the **Effective date** field, enter a value.
-
 4.  In the **Hierarchy** field, select a value.
-
->   ![Setoffhierarchyprofile](media/apac-ind-gst-create-Setoffhierarchyprofile.png)
-
+    ![Setoffhierarchyprofile](media/apac-ind-gst-create-Setoffhierarchyprofile.png)
 5. Click **OK**.
-
 6. Click **Activate**.
-
 7. Click **Yes** on the message.
-
 8. Close the message.
-
 9. Close the form.
 
-
-## Create GST minor codes
+### Create GST minor codes
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **India** > **GST minor codes**.
-
 2. Click **New**.
-
 3. In the **Tax component** field, select a value. 
-
 4. In the **Minor code** field, enter a value.
-
 5. In the **Description** field, enter a value. 
 
-6. Close the form.
-
-
-
 ## Print management
+Complete the following tasks to select the India GST report formats for customer and vendor invoices.
 
 ### Accounts payable
 
-
 1. Go to **Accounts payable** > **Setup** > **Forms** > **Form setup**.
-
 2. Click on the **General** tab.
-
 3. Click **Print management**.
-
 4. Expand **Vendor invoice**.
-
-5. Select **Original<Default>**
-  
+5. Select **Original**.
 6. Select **Report format** ‘VendInvoiceDocument_IN.Report’.
 
->  ![Vendorinvoiceprintmgnt](media/apac-ind-gst-Vendorinvoiceprintmgnt.png)
-
-7. Close the forms.
-
+  ![Vendorinvoiceprintmgnt](media/apac-ind-gst-Vendorinvoiceprintmgnt.png)
 
 ### Accounts receivable
 1. Go to **Accounts receivable** > **Setup** > **Forms** > **Form setup**.
-
-2. Click on the **General** tab.
-
+2. Expand the **General** FastTab.
 3. Click **Print management**.
-
 4. Expand **Customer invoice**.
-
-5. Select **Original<Default>**  
-  
-6. Select **Report format** ‘SalesInvoice_IN.Report’.
+5. Select **Original**.  
+6. Select the report format **SalesInvoice_IN.Report**.
 
 >  ![Customerinvoiceprintmgnt](media/apac-ind-gst-Customerinvoiceprintmgnt.png)
 
 7. Expand **Free text invoice**.
-
-8. Select **Original <Default>**.
-  
-9. Select **Report format** ‘FreeTextInvoice.ReportIN’.
-
-8. Close the form
-
+8. Select **Original**.
+9. Select the report format **FreeTextInvoice.ReportIN**.
 
 ## Resources for other Microsoft Dynamics products
 
