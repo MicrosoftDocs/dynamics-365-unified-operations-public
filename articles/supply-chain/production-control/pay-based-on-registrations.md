@@ -435,8 +435,7 @@ calculated:
 | Break                         | 12:03 PM  | 12:32 PM | 0.50     |
 | Clock out                     | 05:00 PM  | 05:00 PM |          |
 
-> [!NOTE]
-
+[!NOTE]
 The break time runs in parallel time with an activity, in this case a
 production job. This is always the case for break activities. When the
 registrations are calculated, the break time will be subtracted from the
@@ -506,14 +505,14 @@ The hourly cost on project activities and production jobs can be set up to be
 determined by the pay rates calculated in Time and attendance or by the cost
 categories defined for the activities.
 
--   To set up the cost category, click Production control \> Setup \>
-    Manufacturing execution \> Production order defaults and set the Cost
-    category field to either Yes or No.
+-   To set up the cost category, click **Production control** \> **Setup** \>
+    **Manufacturing execution** \> **Production order defaults** and set the **Cost
+    category** field to either **Yes** or **No**.
 
-   - If set to No, cost is calculated based on pay rates defined for Time and
+-  - If set to **No**, cost is calculated based on pay rates defined for Time and
     attendance registration types.
 
-   - If set to Yes, cost is calculated based on cost categories for production
+-  - If set to **Yes**, cost is calculated based on cost categories for production
     and project activities.
 
 Cost calculation based on pay rates calculated in Time and attendance
@@ -523,11 +522,11 @@ cost is set up to be calculated based on pay rates.
 
 The hourly cost rate that is used for production orders and projects is
 calculated in the transfer process. To view hourly rate per activity, open the
-Approve page in Time and attendance and then click Inquiry \> Transferred
-registrations. The hourly cost rate per registration is found under the **Cost
-prices** tab**.**
+**Approve** page in **Time and attendance**, and then click **Inquiry** \> **Transferred
+registrations**. The hourly cost rate per registration is found under the **Cost
+prices** tab.
 
-Consider follow registrations using the same time profile as in the previous
+Consider the following registrations using the same time profile as in the previous
 example:
 
 | **Journal registration type** | **Start** | **End**  | **Time** |
@@ -539,7 +538,7 @@ example:
 | Clock out                     | 03:00 PM  | 03:00 PM |          |
 
 After transferring the registrations, the following transferred registrations
-are generated
+are generated:
 
 | **Registration type** | **Time** | **Cost price per hour** |
 |-----------------------|----------|-------------------------|
