@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
 ---
-# On-premises deployment landing page
+# On-premises deployment home page
 
 [!include[banner](../includes/banner.md)]
 
