@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 8.0.0
 # Pay based on registrations
 
 [!include[banner](../includes/banner.md)]
+
 This topic provides a detailed description of how pay is calculated based on
 workers’ registrations and you’ll get an example of how the various combinations
 of setup options that are available for the calculation will affect the result.
