@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Dynamics 365 overview
 description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
