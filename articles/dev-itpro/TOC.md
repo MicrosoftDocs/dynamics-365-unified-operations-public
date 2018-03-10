@@ -159,6 +159,7 @@
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
 ## [Date effectivity](dev-tools/date-effectivity.md)
 ## [ISV licensing](dev-tools/isv-licensing.md)
+## [ISV licensing on-prem](dev-tools/isv-licensing-on-prem.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -499,6 +500,7 @@
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 ### [Update the local agent](lifecycle-services/update-local-agent.md)
 ### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
+### [Client internet connection](user-interface/client-disconnected.md)
 ### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code

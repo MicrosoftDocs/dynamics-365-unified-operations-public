@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing
 
+[!include[banner](../includes/banner.md)]
+
 This topic explains how to set up Dynamics 365 for Finance and Operations – Warehousing to scan bar codes using a camera on a mobile device. 
 
 ## Prerequisites
@@ -50,8 +52,8 @@ The camera page will be initiated on each page where the input field has the pre
 - Click the camera on the Task and details page to go back to the Camera page. 
 
 | Task and details page | Camera page | 
-| --------------------- | -------------------- |
-| ![camera-scanning-example-task-detail-page](media/camera-scanning-example-task-detail-page.png)          | ![camera-scanning-example-camera-page-smaller](media/camera-scanning-example-camera-page.png)          |
+| :---------------------: | :--------------------: |
+| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
 
 On the camera page, when you click the Camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the Camera button will become available again. You will then be able to try to scan a bar code again.
 

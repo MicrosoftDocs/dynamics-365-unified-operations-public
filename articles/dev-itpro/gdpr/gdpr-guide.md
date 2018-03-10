@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
+[!include[banner](../includes/banner.md)]
+
 ## Overview of the GDPR
 
 The European Union's General Data Protection Regulation (GDPR) sets a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). The GDPR governs the handling and use of personal data of EU citizens and residents. Enforcement of the GDPR begins May 25, 2018, and there are significant consequences for non-compliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
