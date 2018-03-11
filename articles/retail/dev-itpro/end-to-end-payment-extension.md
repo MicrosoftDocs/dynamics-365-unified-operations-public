@@ -251,6 +251,57 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 | isManualEntry | Defines whether the card number was entered manually. |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
+###### Response
+The `AuthorizePaymentCardPaymentResponse` response object has to be returned when handling the `AuthorizePaymentTerminalDeviceRequest` request. The response must contain an instance of the `PaymentInfo` object with the following required properties:
+
+| Property | Description |
+| --- | --- |
+| ApprovedAmount | The amount approved for the transaction. |
+| CardNumberMasked | The masked credit card number which must at least contain the first digit of the credit card to support bin range lookup in POS (most devices return first 6 digits and last 4 digits). |
+| CardType | The type of card used for the payment (e.g. Credit or Debit) using the `Microsoft.Dynamics.Commerce.HardwareStation.CardPayment.CardType` entity. |
+| CashbackAmount | The cashback amount defined on the payment terminal (for debit transactions). |
+| Errors | List of errors occurred during the authorize call. |
+| IsApproved | Flag indicating whether the payment was approved. |
+| PaymentSdkData | The response data used to support cross channel payment operations. |
+
+The `PaymentSdkData` has to contain the following data.
+
+| Namespace | Name | Description | Sample value |
+| --- | --- | --- | --- |
+| Connector | ConnectorName | The name of the `IPaymentProcessor` used for the transactions as described in the **Write a payment processor** section below. |
+| AuthorizationResponse | Properties | The list of authorization responses. | *See list below*. |
+
+The `Properties` field above must contain the following fields.
+
+| Namespace | Name | Description | Sample value |
+| --- | --- | --- | --- |
+| AuthorizationResponse | ApprovedAmount | The amount approved for the transaction. | 28.08m |
+| AuthorizationResponse | AvailableBalance | The available balance on the card. | 100.00m |
+| AuthorizationResponse | ApprovalCode | The apprival code for the transaction. | Z123456 |
+| AuthorizationResponse | ProviderTransactionId | The transaction identifier of the payment provider. | 123456789 |
+| AuthorizationResponse | AuthorizationResult | The result of the authorization call. | `AuthorizationResult.Success.ToString()` |
+| AuthorizationResponse | ExternalReceipt | The external receipt data from the payment provider. | `<ReceiptData>...</ReceiptData>` |
+| AuthorizationResponse | TerminalId | The unique identifier of the terminal that handled the payment. | 000001 |
+
+The example below illustrates how to construct the `PaymentSdkData` object.
+
+``` csharp
+List<PaymentProperty> paymentSdkProperties = new List<PaymentProperty>();
+paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.Connector, ConnectorProperties.ConnectorName, "TestConnector");
+
+List<PaymentProperty> paymentSdkAuthorizationProperties = new List<PaymentProperty>();
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovedAmount, 28.08m);
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AvailableBalane, 100.00);
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovalCode, "Z123456");
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ProviderTrasactionId, "123456789");
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AuthorizationResult, AuthorizationResult.Success.ToString());
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, TransactionDataProperties.TerminalId, "000001");
+
+paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.Properties, paymentSdkAuthorizationProperties.ToArray()));
+
+string paymentSdkData = PaymentProperty.ConvertPropertyArrayToXML(paymentSdkProperties.ToArray());
+```
+
 ##### CancelOperationPaymentTerminalDeviceRequest
 ###### Signature
 ``` charp
@@ -455,8 +506,8 @@ In order to determine the right payment connector to load on the POS the value o
 ## Write a payment processor
 Payment processes are usually used only if a direct connection to a payment gateway is established as it is most commonly the case in card-not-present sales transactions or more involved card-present scenarios. Additionally, the payment processor is also used to process the merchant properties configured through the `POS hardware profile` form in the AX client. 
 
-    > [!NOTE]
-    > The payment processor is required today even if all payment requests are handled directly through the payment terminal and no merchant properties need to be set through the POS. 
+> [!NOTE]
+> The payment processor is required today even if all payment requests are handled directly through the payment terminal and no merchant properties need to be set through the POS. 
     
 ### Understanding the merchant properties flows
 The sections below describe how the merchant properties are set on the AX client POS hardware profile page and how they are passed to the payment connector during payment flows on the POS.
