@@ -302,6 +302,24 @@ paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationRespo
 string paymentSdkData = PaymentProperty.ConvertPropertyArrayToXML(paymentSdkProperties.ToArray());
 ```
 
+If the payment terminal returns a receipt you can print it through the POS by setting the following data on the `ExternalReceipt` object described above:
+
+```xml
+<ReceiptData>
+    <Receipt Type='Customer'>
+        <Line>Line 1 of receipt.</Line>
+	<Line>Line 2 of receipt.</Line>
+    </Receipt>
+    <Receipt Type='Merchant'>
+        <Line>Line 1 of receipt.</Line>
+	<Line>Line 2 of receipt.</Line>
+    </Receipt>
+</ReceiptData>
+
+###### Other Considerations
+> [!NOTE]
+> If the payment terminal handles the **authorize** and **capture** requests in a single call (i.e. **immediate capture**) and the cashier wants to void the transaction the payment terminal must be able to support reversal of an immediate capture. One point to keep in mind when voiding an immediate capture is if the void request fails the cashier will be asked if they want to locally void the payment. If they select yes, then the tender is voided only in POS no call is made to the payment terminal to void the payment. This basically allows the cashier to unblock POS if it can no longer void the payment on the payment terminal. This can cause issues as the lock lasts for 3-5 days until the bank reverse the lock but for immediate capture the payment is made. This can result in duplicate payments!
+
 ##### CancelOperationPaymentTerminalDeviceRequest
 ###### Signature
 ``` charp
@@ -327,6 +345,13 @@ public CapturePaymentTerminalDeviceRequest(string token, decimal amount, string 
 | currency | The currency for the amount to capture. |
 | paymentPropertiesXml | TODO |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+
+###### Other Considerations
+> [!NOTE]
+> If the payment terminal handles the **authorize** and **capture** requests in a single call then the `CapturePaymentTerminalDeviceRequest` should be a no-op and immediately return. 
+
+> [!NOTE]
+> If the payment terminal requires state from the **authorize** requests in order to handle the **capture** call then the properties should be stored in the `PaymentSdkData` of the `AuthorizePaymentTerminalDeviceResponse` request described above which is passed through the `paymentPropertiesXml` of the `CapturePaymentTerminalDeviceRequest`. 
 
 ##### VoidPaymentTerminalDeviceRequest
 ###### Signature
