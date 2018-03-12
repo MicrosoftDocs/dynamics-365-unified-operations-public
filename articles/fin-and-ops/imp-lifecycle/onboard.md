@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Onboarding a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project
+title: Onboard a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project
 description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Onboarding a Finance and Operations project
+# Onboard a Finance and Operations project
 
 [!include[banner](../includes/banner.md)]
 
