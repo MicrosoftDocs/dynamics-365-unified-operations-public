@@ -118,14 +118,14 @@ Consider the following before you generate the **Sales tax payment by code** rep
 
 - You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
 
-![](media/1f9ea5e313eddd40083b396e5d6a1a08.png)
+![Sales tax reporting codes](media/apac-sau-sales-tax-report-codes.png)
 
 - To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** page.
 
  > [!NOTE]
  > You can enter Reporting codes in the sales tax code either before posting tax transactions or after posting tax transactions.
 
-![](media/2191347efca160fb97f79dbbb4eadd68.png)
+![Sales tax report codes](media/apac-sau-sales-tax-codes.png)
 
 ### Generate the **Sales tax payment by code** report
 
