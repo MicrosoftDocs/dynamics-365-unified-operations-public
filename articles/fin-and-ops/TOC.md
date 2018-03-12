@@ -1651,6 +1651,7 @@
 ##### [Operations resources](../supply-chain/production-control/operations-resources.md)
 ##### [Resource capabilities](../supply-chain/production-control/resource-capabilities.md)
 ##### [Batch attributes](../supply-chain/production-control/batch-attributes.md)
+##### [Batch balancing](../supply-chain/production-control/batch-balancing.md)
 ##### [Copy a formula (task guides)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [Create a formula by copying from an existing formula (task guide)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Copy co-products from an existing formula version (task guide)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
