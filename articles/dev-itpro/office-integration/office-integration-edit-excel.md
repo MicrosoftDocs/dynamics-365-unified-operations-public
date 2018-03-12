@@ -351,6 +351,31 @@ To use a header and lines workbook to create a new header and some lines:
 3. Enter header values and lines as needed
 4. Click **Publish**
 
+## How can fields be added, removed, or moved within an existing template workbook?
+Fields can be added into an existing template workbook by editing the workbook stored in **Document Templates**
+
+1. Get the original template workbook
+   1. Open the **Document Templates** form
+   2. Find the existing template workbook
+   3. **Download** the workbook
+   4. Open the workbook and enable editing so the Excel Add-in runs
+2. Make changes to the template 
+   1. In the Excel Add-in, click **Design**
+   2. Click the **Edit** button (pencil icon) next to the datasource that you want to add a field into
+   3. Add fields by moving them from the **Available fields** list into the **Selected fields** list. Double clicking a field will move it.
+   4. Remove fields by moving them from the **Selected fields** list into the **Available fields** list.
+   5. Move fields using the **Up** and **Down** buttons
+   6. Once changes are complete then click **Update**, **Yes** to confirm, and **Done** to exit the Designer (if appropriate, click **Refresh** to check that the data is correctly populated)
+   7. Clear the data from the template before upload by clicking **Options** (gear icon), expand the **Data Connector** section, then click the **Clear binding data** button
+   8. Use **Save As** to put the template somewhere temporarily
+3. Upload the changed template
+   1. Open return to the **Document Templates** form and upload the changed template
+   2.  Click **New** and browse to find the changed template
+   3. Select the saved template file and click open
+   4. In the **Upload template** dialog, remove the underscore and trailing random number from the name e.g. "CustInvoiceJournalTemplate_636564840743000567" becomes "CustInvoiceJournalTemplate"
+   5. A confirmation should be shown that "A template with this name already exists...", click **Yes**  to confirm replacement of the previous template. Note that if this confirmation is not shown then the template name is different and it is being uploaded as a new template.
+4. Open the form that the template is used on and try out the changed template
+
 ## Troubleshooting
 
 If you are not seeing an expected lookup, validate relationship metadata by checking the metadata feed available at \[YourSiteURL\]/data/$metadata.  Search the $metadat feed for the public name of your entity to find its EntityType element, then make sure there is a child NavigationProperty element with a name equal to the Role value of the relationship. If the navigation property exists, it will be used by the Excel Data Connector to show a relationship lookup. Lookups are not shown under the following conditions:
