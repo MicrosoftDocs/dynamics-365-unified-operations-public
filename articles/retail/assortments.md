@@ -5,7 +5,7 @@ title: Assortment management
 description: This topic explains the basic concepts of assortment management in Microsoft Dynamics 365 for Retail and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 3/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -72,9 +72,9 @@ In addition to including products and categories in assortments, you can use the
 Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, a product must be released before it can actually be sold, ordered, counted, or received in the channel (for example, in the point of sale \[POS\]). Therefore, although two stores in different legal entities can share an assortment that contains the same products, the products are available only if they have been released to those legal entities.
 
 ### Dynamic and static assortments
-Assortments can be defined so that they include specific channels and products. Alternatively, organization units and categories can be included when assortments are defined. Assortments, and also references to these groups, are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment also changes.
+Assortments can be defined with specific channels and products or by including organization units and categories. Assortments including references to these groups are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment will also change.
 
-For example, an assortment is originally defined and published so that it references a category of products. If additional products are later added to the category, those products are automatically included in the definition of the existing assortment. You don't have to manually add the products to the assortment. Similarly, if an organization unit is added to a different node, its assortment is automatically adjusted based on that definition.
+For example, an assortment is originally defined and published so that it references a category of products. If additional products are later added to the category, those products are automatically included in the definition of the existing assortment. You don't have to manually add the products to the assortment. Similarly, if an organization unit is added to a different node, the organization unit's assortment is automatically adjusted based on that definition.
 
 ### Stopped products 
 You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often used when a product is at the end of its life and should not be sold at any channel. Assortments respect this setting, and stopped products won't be assorted, regardless of the assortment configuration.
