@@ -57,16 +57,9 @@ You can create report codes which might be necessary for analysis (E.g. details 
 
 ### Sales tax codes, sales tax groups, and item sales tax groups
 
-For Saudi Arabia, the following Tax type with values added for VAT type: Standard VAT, Reduced VAT, VAT 0%
-New value in Country/ Region field: GCC
-Translation of sales tax description (button Tax directive)
-
- 
-
-
 Sales tax group may be set up in Customer/ Vendor by default and Item sales tax group may be set up in Items by default when a user creates sales/purchase order the system transfers Sales tax group from customer to the header and lines and transfers Item sales tax group from item to the lines. But a user may change groups both in the header and in lines.
 
-If a sales tax code is included in two groups (sales tax group and item sales tax group) in the line, then when posting the invoice, the system will create sales tax transaction with this sales tax code and calculate sales tax. If there is no intersection of sales tax codes in groups of line, then sales tax transaction will not be created
+If a sales tax code is included in two groups (sales tax group and item sales tax group) in the line, then when posting the invoice, the system will create sales tax transaction with this sales tax code and calculate sales tax. If there is no intersection of sales tax codes in groups of line, then sales tax transaction will not be created.
 
 The following diagram demonstrates one way that sales tax groups can be set up and how sales tax transactions and sales tax calculation are defined given that setup.  
 
@@ -106,9 +99,7 @@ Create a sales tax group that has the **Reverse charge** check box selected for 
 
 
 ### Sales tax transactions with reverse charges
-If the **Reverse charge** check box is selected in the sales tax group, sales tax transactions are created when you post an invoice. One transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
-
-Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax
+If the **Reverse charge** check box is selected in the sales tax group, sales tax transactions are created when you post an invoice. In the following screenshot, one transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
 
 ![Posted sales tax](media/apac-sau-posted-sales-tax.png)
 
@@ -123,22 +114,16 @@ The following diagram shows how data may be collected in the **Sales tax payment
 ![Sales tax payment by report code](media/apac-sau-sales-tax-diagram.png)
 
 ### Report setup
-Consider the following before you generate the **Sales tax payment by code** report:
+Consider the following before you generate the **Sales tax payment by code** report.
 
-### Sales tax reporting codes
-
-You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
+- You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
 
 ![](media/1f9ea5e313eddd40083b396e5d6a1a08.png)
 
-### Sales tax codes
+- To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** page.
 
-To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** page.
-
-> [!NOTE]
-> You can enter Reporting codes in the sales tax code either before posting tax transactions or after posting tax transactions.
-
-*Tax \> Indirect taxes \> Sales tax \> Sales tax codes*
+ > [!NOTE]
+ > You can enter Reporting codes in the sales tax code either before posting tax transactions or after posting tax transactions.
 
 ![](media/2191347efca160fb97f79dbbb4eadd68.png)
 
@@ -152,17 +137,6 @@ Report example:
 
 ![Report example](media/apac-sau-report-example.png)
 
-## Validate previously posted sales tax payments
-
-**Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**
-
-## Post sales tax payment
-
-[Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md)
-
-
-## VAT returns
-
-- [FAQ: VAT returns (English)](https://www.vat.gov.sa/en/e-services/vat-returns)
-- [FAQ: VAT returns (Arabic)](https://www.vat.gov.sa/ar/e-services/vat-returns)
-
+## Additional resources
+- [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md)
+- [FAQ: VAT returns (Government website)](https://www.vat.gov.sa/en/e-services/vat-returns)
