@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Inventory lookup on POS
+description: This article describes the options available for viewing inventory in the point of sale (POS). 
+author: ashishmsft
+manager: AnnBe
+ms.date: 03/12/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2018-03-30
+ms.dyn365.ops.version: Application pdate 5, AX 8.0
+
+---
 
 ## Inventory lookup on POS 
 
