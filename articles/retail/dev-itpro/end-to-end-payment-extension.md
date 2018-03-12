@@ -315,6 +315,7 @@ If the payment terminal returns a receipt you can print it through the POS by se
 	<Line>Line 2 of receipt.</Line>
     </Receipt>
 </ReceiptData>
+```
 
 ###### Other Considerations
 > [!NOTE]
@@ -646,4 +647,6 @@ The following table illustrates the required merchant property fields that have 
 | MerchantAccount | PortableAssemblyName | Contoso.Microsoft.PaymentsSample |
 | MerchantAccount | ServiceAccountId | f35989c8-e571-4de1-862a-996c82a2e6b6 |
 | MerchantAccount | SupportedCurrencies | AUD;BRL;CAD;CHF;CNY;CZK;DKK;EUR;GBP;HKD;HUF;INR;JPY;KPW;KRW;MXN;NOK;NZD;PLN;SEK;SGD;TWD;USD;ZAR |
-| MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
+| MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |\
+
+## Error Handling
