@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade the Document Routing Agent
-description: TBD
+description: This topic explains how to upgrade the Document Routing Agent.
 author: TJVass
 manager: AnnBe
 ms.date: 03/13/2018
