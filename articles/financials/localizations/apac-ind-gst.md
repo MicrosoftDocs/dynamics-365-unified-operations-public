@@ -116,10 +116,6 @@ The item sales tax group should be removed on products that are assigned an HSN 
 </td>
 </tr>
 <tr>
-<td>
-<td>
-</tr>
-<tr>
 <td>Create main accounts for the GST posting type.</td>
 <td><p>Go to <strong>General ledger</strong> &gt; <strong>Common</strong> &gt; <strong>Main accounts</strong>, and create a main account for each state-wide ledger account that is required. On the <strong>Setup</strong> FastTab, be sure to select <strong>GST</strong> as the posting type.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localization/tasks/create-main-account">Create a main account</a>.</p>
