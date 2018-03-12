@@ -88,7 +88,7 @@ Prospect to cash integration is supported on the following versions:
 
 To use the Prospect to cash solution, you must install the following components:
 
-- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or a later version
 - Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 (v15) 
 
 ### Install the Prospect to cash solution for Sales
