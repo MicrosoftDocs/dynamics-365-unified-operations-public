@@ -71,9 +71,9 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 7. Select the support contract and the severity level. 
     
-  - Support contracts for on-premises products have limited incident. 
-  - Support contracts for cloud products have unlimited incident. 
-  - For either on-premises products or cloud products, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
+  - Support contracts for on-premises environments have a limited incident count. 
+  - Support contracts for cloud environments have an unlimited incident count. 
+  - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
 ![Contract and severity](media/CPS9.png)
 
 8. Click **Submit**. 
