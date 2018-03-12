@@ -1,251 +1,262 @@
+---
+# required metadata
 
-# Attributes, Attribute groups & their associations with various Retail entities in Dynamics 365. 
+title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+description: 
+auhor: 
+manager: 
+ms.date: 
+ms.topic: 
+ms.prod: 
+ms.service: 
+ms.technology: 
 
- **Attribute** provides a way to further describe a product and its characteristics through user defined fields (examples: memory size, hard disk capacity, Is Energy star compliant etc.). In Dynamics 365, attributes can be associated with various retail entities such as Product Categories and Retail Channels, and default values can be set on them. Products inherit the attributes and the default values upon their association with the Product Categories or Retail Channels. The default values can be overridden at the product level: at the individual product level, at retail channel level, or in retail catalog.
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: 
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: 
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+
+---
+
+# Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+
+[!include[banner](includes/banner.md)]
+
+*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
  
-*Example for a typical TV product there could be following attributes*
+For example, a typical television product might have the following attributes.
 
-| **Category   | Attribute                | Permissible Values       | Default Value** |
-|------------|--------------------------|--------------------------|---------------|
-| TV & Video | Brand                    | Any valid Brand value    | (None)        |
-|            |                          |                          |               |
-| TV         | Screen Size              | 20” – 80”                | (None)        |
-|            | Vertical Resolution      | 480i, 720p, 1080i, 1080p | 1080P         |
-|            | Screen Refresh Rate      | 60hz, 120hz, 240hz       | 60hz          |
-|            | HDMI Inputs              | 0 – 10                   | 3             |
-|            | DVI Inputs               | 0 – 10                   | 1             |
-|            | Composite Inputs         | 0 – 10                   | 2             |
-|            | Component Inputs         | 0 – 10                   | 1             ||            |                          |                          |               |
-| LCD        | 3D Ready                 | Yes or No                | Yes           |
-|            | 3D Enabled               | Yes or No                | No            |
-|            |                          |                          |               || Plasma     | Operating Temp From      | 32 degree – 110 degree   | 32            |
-|            | Operating Temp To        | 32 degree – 110 degree   | 100           |
-|            |                          |                          |               |
-| Projection | Projection Tube Warranty | 6, 12 or 18 months       | 12            |
-|            | # of Projection Tubes    | 1 to 5                   | 3             |
+| Category   | Attribute                | Permissible values          | Default value |
+|------------|--------------------------|-----------------------------|---------------|
+| TV & Video | Brand                    | Any valid brand value       | None          |
+| TV         | Screen Size              | 20–80 inches                | None          |
+|            | Vertical Resolution      | 480i, 720p, 1080i, or 1080p | 1080p         |
+|            | Screen Refresh Rate      | 60hz, 120hz, or 240hz       | 60hz          |
+|            | HDMI Inputs              | 0–10                        | 3             |
+|            | DVI Inputs               | 0–10                        | 1             |
+|            | Composite Inputs         | 0–10                        | 2             |
+|            | Component Inputs         | 0–10                        | 1             |
+| LCD        | 3D Ready                 | Yes or No                   | Yes           |
+|            | 3D Enabled               | Yes or No                   | No            |
+| Plasma     | Operating Temp From      | 32–110 degrees              | 32            |
+|            | Operating Temp To        | 32–110 degrees              | 100           |
+| Projection | Projection Tube Warranty | 6, 12, or 18 months         | 12            |
+|            | # of Projection Tubes    | 1–5                         | 3             |
 
+## Attributes and attribute types
 
+Attributes are based on *attribute types*. The attribute type identifies the type of data that can be entered for a specific attribute. Finance and Operations currently supports the following attribute types:
 
+- **Currency** – This type supports a currency value. It can be bounded (that is, it can support a range of values), or it can be left open.
+- **DateTime** – This type supports a date and time value. It can be bounded or left open.
+- **Decimal** – This type supports a numerical value that includes decimal places. It also supports a unit of measure. It can be bounded or left open.
+- **Integer** – This type supports a numerical value. It also supports a unit of measure. It can be bounded or left open.
+- **Text** – This type supports a text value. It also supports a predefined set of possible values (that is, an *enumeration*).
+- **Boolean** – This type supports a binary value (**true** or **false**).
+- **Reference** – This type references other attributes.
 
+### Set up attribute types in Finance and Operations
 
+1. Sign in to the Finance and Operations back-office client as a retail merchandising manager.
+2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.
+3. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
 
-## Attribute types
+    - Name one attribute type **Lens shape**, and add the following values: **Oval**, **Square**, and **Rectangle**.
+    - Name the other attribute type **Sunglass brand**, and add the following values: **Ray ban**, **Aviator**, and **Oakley**.
 
-*Attributes* are based off **Attribute Types**. The **Attribute Type** identifies the type of data that can be entered for a specific attribute. The following attribute types are currently supported in the Dynamics 365:
+![Attribute types](media/AttributeType.png)
 
--	**Currency** – Supports currency value. It can be bounded (supports a value range) or can be left open.
--	**DateTime** – Supports date and time value. It can be bounded (supports a value range) or can be left open.
--	**Decimal** – Supports numerical value including decimals. It also supports unit of measure. It can be bounded (supports a value range) or can be left open.
--	**Integer** – Supports numerical value. It also supports unit of measure. It can be bounded (supports a value range) or can be left open.
--	**Text** – Supports text value. It also supports a predefined set of possible values (aka Enumeration).
--	**Boolean** – Supports binary value (true / false).
--	**Reference** – References other attributes.
+### Set up an attribute in Finance and Operations
 
-## How-to set up attribute types in Dynamics 365 
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
+3. Create an attribute that is named **Lens**.
+4. Set the **Attribute type** field to **Lens shape**.
 
-*	Login to Dynamics 365 back-office client as a Retail Merchandising Manager	
-* Go to Product information management > Setup > Categories and attributes > Attribute types
-	Create a new attribute types of type Text and with Fixed list:
-  *	Lens shape (Values: Oval, Square, Rectangle)
-  *	Sunglass brand (Values: Ray ban, Aviator, Oakley)
-
-![Attribute type](media/AttributeType.png)
-
-## How-to set up attributes in Dynamics 365 
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager	
-- Go to Product information management > Setup > Categories and attributes > Attributes
-  - Create a new attribute: *Lens *
-  -	Set Attribute type: *Lens shape*
-
-![Attribute](media/Attribute.png)
+![Attributes](media/Attribute.png)
 
 ## Attribute metadata
-Attribute metadata allows you to select the options that indicate how the attributes for each product should behave. 
 
-For example, you can select whether attributes are required, whether they can be used for search, and whether they can be used as a filter. For retail products, the attribute metadata settings can be overridden at the channel level, we will learn later in this article about it. 
+*Attribute metadata* lets you select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
 
-As you may notice, on the attribute form there's a dedicated section for the Attribute metadata. Of the available properties, the property that affects the behavior or treatment of the attribute values by the system on Retail Point of Sale is **"Can be refined"**. 
-Upon setting the value to be "Yes" for "Can be refined" only those attributes show up for refinement or filtering of products on Point of sale. 
+For retail products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
 
-The remaining properties in attribute metadata - 
+As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes that you set the **Can be refined** option to **Yes** for show up for refinement or filtering of products in the retail POS.
 
+Here are the remaining attribute metadata options on the **Attributes** page:
 
-	- Searchable,
-	- Retrievable,
-	- Can be queried,
-	- Sortable,
-	- Allow multiple values,
-	- Ignore case & format, and
-	- Complete match 
-  
-  Purpose of these propoerties can be understood here [Overview of SharePoint search ](https://technet.microsoft.com/en-us/library/jj219669.aspx "Overview of SharePoint search")
+- Searchable
+- Retrievable
+- Can be queried
+- Sortable
+- Allow multiple values
+- Ignore case and format
+- Complete match
 
-These were originally intended for improving search for online store-front. With Dyamics 365, although we don’t ship that Online Store out of the box but we ship **eCommerce Publishing SDK** which is used by the customers to put products into a Search Index of their choice. While the data is imported it is still good idea to let our customers distinguish between searchable, queryable, and so on so they could build optimal index to make sure they index only those attributes which *in their opinion* should be indexed. 
+These options were originally intended to improve the search functionality for the online storefront. Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
-## Filter settings for Attributes 
-Filter settings for attributes allows user to define how the filters for attributes gets displayed on the Retail point of sale. 
-These filter settings are accessible from the attribute definition page in Dynamics 365. 
+For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
 
-Refiner display preferences it has the following elements-
-	1. Name: 
-	2. Display option:
-	3. Display control:
-	4. Threshold Value
+## Filter settings for attributes
 
-**Name**: Editable textbox, but contains name of the attribute by default.  
+Filter settings for attributes let you define how the filters for attributes are shown in the retail POS. To access the filter settings for an attribute, on the **Attributes** page in Finance and Operations, select the attribute, and then, on the Action Pane, select **Filter settings**.
 
-**Display option**: This has the following two options:
+The **Filter display preferences** page includes the following fields:
 
-	a) Single value
-		- Enabled for the following attribute types: Boolean, Currency, Decimal, Integer, and Text. 
-		- Single value selection enabled on the client.
-	b) Multi value
-		- Enabled for the following attribute types: Currency, Decimal, Integer, and Text.
-		- Multi-value selection enabled on the client.
-		
-**Display control**: This has the following 4 options:
-	a) List
-	b) Range 
-	c) Slider
-	d) Slider with bars  (P2)
-	 
-	• List 
-		○ Enabled for the all attribute types:
-		
-	• Range 
-		○ Enabled for the following attribute types: Currency, Decimal, and Integer.
-		○ Single or Multi value selection enabled on the client
-		
-	• Slider and Slider with bars
-		○ Enabled for the following attribute types: Currency, Decimal, and Integer.
+- **Name** – By default, this field is set to the name of the attribute. However, you can change the value.
+- **Display option** – The following options are available:
 
+    - **Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. Single-value selection is enabled in the client.
+    - **Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. Multi-value selection is enabled in the client.
 
-**Threshold values** is required for the display control type Range. Values for it can be defined using ";" (semi-colon) as a delimiter. 
+- **Display control** – The following options are available:
 
-For e.g. in case of 'Bag Volume' refiner a threshold value can be
- 10; 20; 50; 100; 200; 500; 1000; 5000. 
+    - **List** – This option is available for the all attribute types.
+    - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**. Single-value or multi-value selection is enabled in the client.
+    - **Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
+    - **Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
 
-For the above values point of sale, will show the following ranges and grey out the ranges which do not have any products in the result set.
-	- Less than 10
-	- 10 – 20
-	- 20 – 50
-	- 50 – 100
-	- 100 – 200
-	- 200 – 500
-	- 500 or more
+- **Threshold value** – This setting is required is you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
+    For example, for the **Bag Volume** refiner, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the retail POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
+
+    - Less than 10
+    - 10 – 20
+    - 20 – 50
+    - 50 – 100
+    - 100 – 200
+    - 200 – 500
+    - 500 or more
 
 ![Attribute filter settings](media/AttributeFilterSettings.PNG)
 
-## Attribute group 
-An attribute group is used to group the attributes for a component or subcomponent in a product configuration model. This can help a person configure a product, because the selections are arranged in a certain context. Once attributes have been defined, they can be grouped under **Attribute Groups**. Attribute Groups provide grouping of individual attributes and can be assigned to retail categories or retail channels. An attribute can be included in more than one attribute group. 
+## Attribute groups
 
-You can also set default values for selected attributes that are included in the attribute group. For example, if you add an attribute for color to an attribute group, you can select the color ***Blue*** as the default attribute value. When the attribute group is added to a retail product that includes a color as one of its attributes, the color ***Blue*** is displayed as the default color for that product. 
+After attributes have been defined, they can be assigned to attribute groups. An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products, because the various selections are arranged in a specific context. Attribute groups can be assigned to retail categories or retail channels.
 
-![Attribute Groups](media/AttributeGroup.png)
+You can also set default values for attributes that are included in an attribute group. For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value. In this case, when the attribute group is added to a retail product that includes color as one of its attributes, **Blue** appears as the default color for that product.
 
+![Attribute groups](media/AttributeGroup.png)
 
-## How-to Steps: Attribute groups
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Product information management > Setup > Categories and attributes > Attribute groups
-- Create a new attribute group: *Fashion Sunglasses*
-- Add attributes: *Lens shape, Sunglass brand*
+### Create an attribute group
 
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.
+3. Create an attribute group that is named **Fashion Sunglasses**.
+4. Add the following attributes: **Lens shape** and **Sunglass brand**.
 
-## Assign attribute groups to Retail categories
+### Assign attribute groups to retail categories
 
-One or more attribute groups that can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Products will inherit the attributes, which are included in the attribute groups, upon their categorization.
+One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
 
+![Retail product hierarchy – Product attribute groups](media/AGRetailProdHierarchy.PNG)
 
-![Retail product hierarchy product attribute Groups](media/AGRetailProdHierarchy.PNG)
+Follow these steps to assign attribute groups to categories in the Retail product hierarchy.
 
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Retail** &gt; **Category and product management** &gt; **Retail product hierarchy**.
+3. Select **Fashion navigation hierarchy**.
+4. Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**.
+5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**.
 
-## How-to Steps – Assign attribute groups to Retail categories
--	Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
--	Go to Retail > Category and product management > Retail product hierarchy
-  -	Click on “Fashion navigation hierarchy”.	
-  -	Select category “Pants” under Menswear and add attribute group “Men’s belt” under Product attribute group tab.
-  -	Select category “Fashion sunglasses” and verify new attributes in “Fashion Sunglasses” attribute group by clicking view attributes.
-  [Note: It should show the newly added attributes Lens shape, Sunglass brand.]
-  - Select category “Pants” under Menswear and verify attributes for “Men’s belt” attribute group by clicking view attributes
-  [Note: It should show Men’s belt attributes: Men’s belt brand, Belt fabric, and Belt size.]
+    The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
 
-  [Note: The aforementioned approach can be used to assign attribute groups to categories in Channel navigation category hierarchy, and Supplemental product category hierarchy as well:
-- Retail > Category and product management > Channel navigation categories
-- Retail > Category and product management > Supplemental product categories]
+6. Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**.
 
+    The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.
 
-## Assign attribute groups to Retail stores
+> [!NOTE]
+> This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
+>
+> - **Retail** &gt; **Category and product management** &gt; **Channel navigation categories**
+> - **Retail** &gt; **Category and product management** &gt; **Supplemental product categories**
 
-One or more attribute groups that can be associated with one or more Retail stores in the retail stores hierarchy. Products will inherit the attributes, which are included in the attribute groups, when they are enriched for specific retail stores.
+### Assign attribute groups to retail stores
 
+One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy. Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.
 
-## How-to Steps – Assign attribute groups to Retail stores
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail > Channel setup > Channel categories and product attributes
-- Assign the following attribute groups to the “Houston” channel:
-- Select channel "Houston"
-- Click on button "Add" under the Attribute group fast tab and then select " SharePointProvisionedProductAttributeGroup" in the Name drop down.
-- Click on button "Add" under the Attribute group fast tab and then select "Men’s belt" in the Name drop down.
-- Click on button "Add" under the Attribute group fast tab and then select "Fashion Sunglasses" in the Name drop down.
-	[*Note: There is an option to inherit attribute groups from parent channel in the hierarchy. If enabled, the child channel node will inherit all the attribute groups (and all the attributes contained in the attribute groups).]*
-- Enable the attributes to be available in the “Houston” channel
-- Click on Set attribute metadata on the action pane.
-	- In the Metadata form:
-	- Select category node “Fashion” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
-	- Select category node “Fashion Accessories > Fashion Sunglasses” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
-	- Select category node “Menswear  Pants” and for each of the attributes under the “Channel product attributes” fast tab, check / select “Include attribute”.
-	
-![Channel categories and product attributes -  attribute Groups](media/CCPAttrGrp.png)
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+3. Assign attribute groups to the Houston channel:
 
+    1. Select the **Houston** channel.
+    2. On the **Attribute group** FastTab, select **Add**, and then, in the **Name** field, select **SharePointProvisionedProductAttributeGroup**.
+    3. Select **Add** again, and then, in the **Name** field, select **Men's belt**.
+    4. Select **Add** again, and then, in the **Name** field, select **Fashion Sunglasses**.
 
-## Override attribute values
-The default values of the attributes can be overridden at the product level, that is, for individual products.
+        > [!NOTE]
+        > An option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy. If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.
 
-## How-to Steps – Override attribute values of product
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail > Category and product management > Released products by category
-- Select category node “Fashion > Fashion Accessories > Fashion Sunglasses”.
-- Select the required product from the list in the right pane and then in the action pane, select “Setup Product attributes” under the Product tab.
-- Select any of the attributes from the left pane and then change / update its value in the right pane.
+4. Enable the attributes so that they are available in the Houston channel:
 
-![product details page - product attribute Groups](media/ProdDetailsProdAttrValues.png)
+    1. On the Action Pane, select **Set attribute metadata**.
+    2. Select the **Fashion** category node, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
+    3. Select the **Fashion Accessories** category node, select the **Fashion Sunglasses** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
+    4. Select the **Menswear** category node, select the **Pants** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
 
+![Channel categories and product attributes – Attribute groups](media/CCPAttrGrp.png)
 
-## Override attribute values of product in Catalog
+## Overriding attribute values
 
-The default values of the attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+The default values of attributes can be overridden for individual products at the product level. Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.
 
-## How-to Steps – Override attribute values of product in Catalog
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail > Catalog management > All catalogs
-- Select catalog “Fabrikam Base Catalog”.
-- Select category node “Fashion  Fashion Accessories > Fashion Sunglasses”.
-- Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
-- Change / update the values of the required attributes under the following fast tabs:
-	- Shared product media
-	- Shared product attributes
-	- Channel media
-	- Channel product attributes
-	*[Note: If created in Dynamics 365, Shared product media and Shared product attributes are applicable to all the Retail products.]*
+### Override the attribute values of an individual product
 
-![Catalog product attribute Groups](media/CatalogProdAttrValues.png)
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Retail** &gt; **Category and product management** &gt; **Released products by category**.
+3. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
+4. Select the required product in the grid. Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.
+5. Select an attribute in the left pane, and then update its value in the right pane.
 
+![Product details page – Product attribute groups](media/ProdDetailsProdAttrValues.png)
 
-## Override attribute values of product in Channel
-The default values of the attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+### Override the attribute values of products in a catalog
 
-## How-to Steps – Override attribute values of product in Channel
-- Login to Dynamics 365 back-office client as a Retail Merchandising Manager 
-- Go to Retail > Channel setup > Channel categories and product attributes
-- Select the “Houston” channel.
-- Select the required product under the “Products” fast tab and then click on the “Attributes” button that is right above the products grid / list.
-	*[Note: If there are no products available, then add products by clicking on the “Add” button under the “Products” fast tab and then selecting the required products from the “Add products” dialog.]*
-- Change / update the values of the required attributes under the following fast tabs:
-	- Shared product media
-	- Shared product attributes
-	- Channel media
-	- Channel product attributes
-	*[Note: If created in Dynamics 365, Shared product media and Shared product attributes are applicable to all the Retail products.]*
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Retail** &gt; **Catalog management** &gt; **All catalogs**.
+3. Select the **Fabrikam Base Catalog** catalog.
+4. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
+5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
+6. On the following FastTabs, update the values of the required attributes:
 
+    - Shared product media
+    - Shared product attributes
+    - Channel media
+    - Channel product attributes
 
+    > [!NOTE]
+    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+
+![Catalog product attribute groups](media/CatalogProdAttrValues.png)
+
+### Override the attribute values of products in a channel
+
+1. Sign in to the back-office client as a retail merchandising manager.
+2. Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+3. Select the **Houston** channel.
+4. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
+
+    > [!NOTE]
+    > If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required products in the **Add products** dialog box.
+
+5. On the following FastTabs, update the values of the required attributes:
+
+    - Shared product media
+    - Shared product attributes
+    - Channel media
+    - Channel product attributes
+
+    > [!NOTE]
+    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
