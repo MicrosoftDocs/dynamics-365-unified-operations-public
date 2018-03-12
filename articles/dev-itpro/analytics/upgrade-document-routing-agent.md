@@ -37,7 +37,7 @@ installed**.
 > [!Important]
 > If the Document Routing Agent is running as Windows service,  make sure that the service account information (user name and password) is available. This will need to be used after the Document Routing Agent is upgraded. The service account information can be obtained by opening the **Services** window and finding the **Microsoft Dynamics 365 Document Routing Service**.
 
-    ![](media/0ead6f8d15e287ff0de9dbbc8e3f5cbd.png)
+    ![Sevices window](media/0ead6f8d15e287ff0de9dbbc8e3f5cbd.png)
 
 1.  Uninstall existing Document Routing Agent. 
 
@@ -45,13 +45,13 @@ installed**.
 
     During the uninstallation, the below window might be shown. Choose **Automatically close applications and attempt to restart them after setup is complete.**
 
-    ![cid:image003.png\@01D39B46.C7814470](media/1ae8c98a774df5d3ccaec83368be0270.png)
+    ![Uninstall the existing Document Routing Agent](media/1ae8c98a774df5d3ccaec83368be0270.png)
 
 2.  Reinstall the latest Document Routing Agent.
 
     Go to the **Network printers** page of Dynamics 365 for Finance and Operations. Download the latest Document Routing Agent and install it.
 
-    ![](media/2e707cfcc1b4d1032c4dd3a60d8979c0.png)
+    ![Network Printers page](media/2e707cfcc1b4d1032c4dd3a60d8979c0.png)
 
 3.  Start the Document Routing Agent from the link on the desktop and sign in. Then click the **Printers** menu to make sure that it shows the correct printers.
 
