@@ -35,15 +35,15 @@ To update the Document Routing Agent, complete the following steps on **each mac
 installed**.
 
 > [!Important]
-> If the Document Routing Agent is running as Windows service,  make sure that the service account information (user name and password) is available. This will need to be used after the Document Routing Agent is upgraded. The service account information can be obtained by opening the **Services** window and finding the **Microsoft Dynamics 365 Document Routing Service**.
+> If the Document Routing Agent is running as a Windows service, make sure that the service account information (user name and password) is available. This will be used after the Document Routing Agent is upgraded. The service account information can be obtained by opening the **Services** window and finding the **Microsoft Dynamics 365 Document Routing Service**.
 
     ![Sevices window](media/0ead6f8d15e287ff0de9dbbc8e3f5cbd.png)
 
-1.  Uninstall existing Document Routing Agent. 
+1.  Uninstall the existing Document Routing Agent. 
 
     Open the **Programs and Features** window, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.
 
-    During the uninstallation, the below window might be shown. Choose **Automatically close applications and attempt to restart them after setup is complete.**
+    During the uninstallation, the following window might display. Choose **Automatically close applications and attempt to restart them after setup is complete.**
 
     ![Uninstall the existing Document Routing Agent](media/1ae8c98a774df5d3ccaec83368be0270.png)
 
@@ -53,6 +53,6 @@ installed**.
 
     ![Network Printers page](media/2e707cfcc1b4d1032c4dd3a60d8979c0.png)
 
-3.  Start the Document Routing Agent from the link on the desktop and sign in. Then click the **Printers** menu to make sure that it shows the correct printers.
+3.  Start the Document Routing Agent from the link on the desktop and sign in. Click the **Printers** menu to make sure that it shows the correct printers.
 
-4.  If the Document Routing Agent is running as a Windows service, please change the service account to the same account used previously (as noted at the beginning of this topic).
+4.  If the Document Routing Agent is running as a Windows service, you need to change the service account to the same account used previously (as noted at the beginning of this topic).
