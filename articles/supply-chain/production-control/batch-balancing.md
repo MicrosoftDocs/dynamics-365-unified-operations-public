@@ -53,8 +53,7 @@ accepted deviation from the target level. They can be used, for example, as an
 accepted tolerance for batches at product receipt.
 
 A product can have only one active ingredient. To specify the active ingredient
-of a product, you must first define a product-specific batch attribute. You then
-you associate the attribute as a base attribute of the product.
+of a product, you must first define a product-specific batch attribute. You then associate the attribute as a base attribute of the product.
 
 On the product level, you must also specify how the level of the active
 ingredient for a batch of the product should be recorded: as part of the
@@ -70,8 +69,9 @@ To associate a base attribute with a product, the following setup is required:
     product-specific batch attribute for the product.
 
 You can look up and edit the actual value of the active ingredient for a batch
-on the **Inventory batch attributes** page. Select **Inventory management** \>
-**Inquiries and reports** \> **Tracking dimensions** \> **Batches** \>
+on the **Inventory batch attributes** page. 
+
+-  Select **Inventory management** \> **Inquiries and reports** \> **Tracking dimensions** \> **Batches** \>
 **Inventory batch attributes**.
 
 Ingredient types and how they interact in the batch balancing process
@@ -132,7 +132,7 @@ calculation of the balanced quantity looks like this:
 ### None
 
 When you apply the batch balancing process when the ingredient type is **None**,
-the estimated quantity and balanced quantity of the formula line in the batch
+the estimated quantity and the balanced quantity of the formula line in the batch
 order are the same.
 
 **Example**
@@ -193,11 +193,11 @@ compensating ingredient will be calculated like this:
 
 >   25.71 – 30 = –4.29
 
-1.  The result is multiplied by the compensating factor:
+2.  The result is multiplied by the compensating factor:
 
 >   4.29 × 1.10 = –4.72
 
-1.  The estimated compensating quantity is reduced by –4.72 to determine the
+3.  The estimated compensating quantity is reduced by –4.72 to determine the
     balanced compensating quantity:
 
 >   10 – (–4.72) = 14.72
@@ -250,8 +250,7 @@ active ingredients. As a rule, the calculation can be completed only if there is
 full coverage of all ingredients. You can't balance only part of the batch that
 the batch order is set up to produce.
 
-**Note**
-
+[!NOTE]
 You can't save a calculation and then complete the batch balancing process
 later. If you close the **Batch balancing** page, you must repeat the
 calculation to complete the process.
@@ -268,8 +267,7 @@ products are enabled for the warehouse management processes:
     that match the balanced quantities, and it's released for the specific
     batches that are selected for the active ingredients.
 
->   **Note**
-
+>   [!NOTE]
 >   Formula lines can be released to warehouse only as part of the batch
 >   balancing process. Although there are other options for releasing materials
 >   for production to warehouse, those options can't be used for formula lines.
