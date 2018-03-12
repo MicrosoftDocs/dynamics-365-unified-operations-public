@@ -37,7 +37,7 @@ Inventory lookup on POS helps retailers achieve real-time operational excellence
 
 An accurate real-time inventory view across an organization helps store-associates to provide timely, elevated customer service. The moment that matters most is when the customer is ready to make a purchase decision. It's important for real-time inventory information to be at the fingertips of cashiers in the store, to empower cashiers to be able to accurately promise product delivery and pick up. 
 
-Go to the **Retail Modern POS** workspace or **Retail Cloud** POS workspace to open the **Inventory lookup** page.
+Go to the Retail Modern POS workspace or Retail Cloud POS workspace to open the **Inventory lookup** page.
 
 ![POS home page](media/POSHomepage.png)
 
