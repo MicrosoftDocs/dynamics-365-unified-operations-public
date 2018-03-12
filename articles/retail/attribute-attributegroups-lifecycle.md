@@ -93,7 +93,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 For retail products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
 
-As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes that you set the **Can be refined** option to **Yes** for show up for refinement or filtering of products in the retail POS.
+As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **"Can be refined"** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **"Can be refined"** option to **"Yes"**, will show up for refinement or filtering of products in the retail POS.
 
 Here are the remaining attribute metadata options on the **Attributes** page:
 
@@ -105,7 +105,7 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 - Ignore case and format
 - Complete match
 
-These options were originally intended to improve the search functionality for the online storefront. Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
+These options were originally intended to improve the search functionality for the online storefront. Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
 For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
 
@@ -118,19 +118,19 @@ The **Filter display preferences** page includes the following fields:
 - **Name** – By default, this field is set to the name of the attribute. However, you can change the value.
 - **Display option** – The following options are available:
 
-    - **Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. Single-value selection is enabled in the client.
-    - **Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. Multi-value selection is enabled in the client.
+    - **Single value** – This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. This option enables single value selection for these attributes in the client for refinement.
+    - **Multi value** – This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. This option enables multi-value selection for this attribute in the client for refinement.
 
 - **Display control** – The following options are available:
 
     - **List** – This option is available for the all attribute types.
-    - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**. Single-value or multi-value selection is enabled in the client.
+    - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**. 
     - **Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
     - **Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
 
-- **Threshold value** – This setting is required is you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
+- **Threshold value** – This setting is required if you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
-    For example, for the **Bag Volume** refiner, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the retail POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
+    For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the retail POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
 
     - Less than 10
     - 10 – 20
