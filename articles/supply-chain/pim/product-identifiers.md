@@ -5,7 +5,7 @@ title: Product identifiers
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 auhor: cvocph
 manager: AnnBe
-ms.date: 28/02/2018
+ms.date: 13/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ ms.search.validFrom: 2017-12-31
 
 This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 
-When you work with products on the shop floor or in a warehouse in enterprise resource planning (ERP) or customer relationship management (CRM), you must have a good strategy for identifying those products and product variants.
+When you work with products on the shop floor or in a warehouse in Microsoft Dynamics ERP or Microsoft Dynamics CRM, you must have a good strategy for identifying those products and product variants.
 
 ## Types of product identifiers
 
@@ -85,7 +85,7 @@ The search name can also contain a customer or vendor product ID, or some other 
 
 ## External product identifiers (Customer and vendor identifiers)
 
-For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders and purchaser orders, packing slips, and invoices. In the current version, the external references aren't shown on core operations pages. The only exception is the vendor product number. This number is shown in the product information dialog box if a default vendor is defined for the released product.
+For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders and purchaser orders, packing slips, and invoices. In the current version of Finance and Operations, the external references aren't shown on core operations pages. The only exception is the vendor item number. This number is shown in the product information dialog box if a default vendor is defined for the released product.
 
 You can maintain the external product identifiers by released product, released product variant, customer or customer group, or vendor or vendor group.
 
@@ -94,7 +94,7 @@ On the **Released products** page, follow one of these steps.
 - For customers, on the **Sell** tab, in the **Related information** group, select **External item description**.
 - For vendors, on the **Purchase** tab, in the **Related information** group, select **External item description**.
 
-On the **External item descriptions** page, you can associate the customer's or vendor's item number with a released product. This association must be done for each legal entity. The following information can be captured. Unfortunately, the labels are currently slightly misleading and might be changed in a future version.
+On the **External item descriptions** page, you can associate the customer's or vendor's item number with a released product. This association must be done for each legal entity. The following information can be captured. Unfortunately, the labels are currently slightly misleading and might be changed in a future version of Finance and Operations.
 
 | Field | Corresponding customer information | Corresponding vendor information |
 |-------|------------------------------------|----------------------------------|
