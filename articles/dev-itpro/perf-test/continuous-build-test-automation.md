@@ -52,14 +52,14 @@ Compare VSTS features required for your organization: <https://www.visualstudio.
     
     [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
     
--   **Free VSTS account provides only one build agent**. Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.
+-   **Free VSTS account provides only one build pipeline**. For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline.
 
 
-To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
+To use more build pipelines than you're currently granted, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](/vsts/billing/buy-load-testing-vs)
+-   After your account is linked with the Azure subscription, follow the instructions in the Azure management portal to purchase more concurrent pipelines - [Concurrent pipelines in VSTS](/vsts/build-release/concepts/licensing/concurrent-pipelines-ts)
 
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
