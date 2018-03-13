@@ -59,9 +59,8 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 **Question:** Why does an error occur when I mark an estimate as **Active**?
 
-**Answer:** When you mark an estimate as **Active**, you might receive one of the following error messages:
+**Answer:** When you mark an estimate as **Active**, you might receive the following error message:
 
-- **Estimate cannot be marked as active** – This error occurs because the number of primary users that you provided in the usage profile exceeds the number of licenses that you purchased. To resolve this error, select **Purchase history** to verify whether the counts that you provided in the usage profile exceed the number of licenses that you purchased. If those counts exceed the number of purchased licenses, edit the profile, and then try to mark the estimate as **Active** again.
 - **Estimate created but does not meet requirements** – This error occurs if transaction lines that are entered aren't within the limits of the Subscription estimation tool. To resolve this error, create a support request, and attach the usage profile. Your instance can then be manually sized.
 
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.
