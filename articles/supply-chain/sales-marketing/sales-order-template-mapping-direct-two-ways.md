@@ -135,7 +135,8 @@ Before you synchronize sales orders, it's important that you update the followin
 
     Go to **Settings** &gt; **Security** &gt; **Teams**, select the relevant team, select **Manage Roles**, and select a role that has the desired permissions, such as **System Administrator**.
 
-- Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the following settings are used:
+- To ensure correct calculation of discounts in both Field Service and Finance and Operations **Discount calculation method** must be set to **Line item**.
+    Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the following settings are used:
 
     - The **Use system prizing calculation system** option is set to **Yes**.
     - The **Discount calculation method** field is set to **Line item**.
