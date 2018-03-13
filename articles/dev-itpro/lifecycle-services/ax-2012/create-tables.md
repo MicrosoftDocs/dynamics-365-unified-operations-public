@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create tables
-description: This topic provides information about how to use the Applicaiton Object Tree (AOT) to create tables in which to store data.
+description: This topic provides information about how to use the Application Object Tree (AOT) to create tables in which to store data.
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017

@@ -121,7 +121,7 @@ For more information, please refer to our contributor's guide: https://github.co
 
 > [!NOTE]
 > We will only be accepting contributions to our English repositories at this time.  
-> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/. 
+> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/. 
 
 
 ## Task guides

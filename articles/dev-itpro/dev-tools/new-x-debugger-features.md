@@ -170,7 +170,22 @@ It's now possible to assign a value to a field inline, i.e. along with the decla
       }
     }
 
-The code above has the same semantic meaning as: public class MyClass2 { int field1; str field2; void new() { this.field1 = 1; this.field2 = "Banana"; // … } } The inline assignments work for both static and instance members.
+The code above has the same semantic meaning as:  
+
+    public class MyClass2
+    {
+      int field1;
+      str field2;
+      
+      void new()
+      {
+        this.field1 = 1;
+        this.field2 = "Banana";
+        // …
+      }
+    }
+    
+The inline assignments work for both static and instance members.
 
 ## Consts/Readonly
 The concept of macros continues to be fully supported in X++. However, using constants instead of \#defines has a number of benefits.
@@ -184,11 +199,11 @@ The concept of macros continues to be fully supported in X++. However, using con
 
 Macros that are defined in class scopes (in class declarations) are effectively available in all methods of all derived classes. This was originally a bug in the legacy compiler macro implementation, but this loophole is now massively exploited by application programmers. The new X++ compiler still honors this, but no new code that uses this should be written. This particular feature also considerably impacts compiler performance. Constants can be declared at the class level as suggested below.
 
-    private const str MyContant = 'SomeValue';
+    private const str MyConstant = 'SomeValue';
 
 The constants can then be referenced by using the double-colon syntax.
 
-      str value = MyClass::MyContant;
+      str value = MyClass::MyConstant;
 
 If you're in the scope of the class where the const is defined, you can omit the type name prefix (MyClass in the example above). You can easily implement the concept of a macro library this way. The list of macro symbols becomes a class with public const definitions.
 

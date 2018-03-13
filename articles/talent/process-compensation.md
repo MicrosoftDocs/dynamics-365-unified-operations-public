@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: HcmCompensationWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ---
 
 # Process compensation
+
+[!include[banner](includes/banner.md)]
+
 Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This topic covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.
 
 ## Plan the new compensation amounts and budgets

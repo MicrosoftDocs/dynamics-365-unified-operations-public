@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales tax reporting for the Czech Republic
 
+[!include[banner](../includes/banner.md)]
+
 This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
 
 When legal entities that have their primary address in the Czech Republic purchase from European Union (EU) member states, they should do a self-assessment of value-added tax (VAT) to make sure that the following conditions are met:

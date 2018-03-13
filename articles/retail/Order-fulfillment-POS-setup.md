@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,8 @@ ms.dyn365.ops.version:
 
 
 # Set up order fulfillment for stores
+
+[!include[banner](includes/banner.md)]
 
 ## Overview
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help

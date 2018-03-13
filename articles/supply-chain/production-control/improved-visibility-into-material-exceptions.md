@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: JmgShopSupervisorWorkspace 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -28,6 +28,8 @@ ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 # Visibility into material exceptions
+
+[!include[banner](../includes/banner.md)]
 
 In the **Production floor management** workspace, three tiles give you better visibility into exceptions for raw materials for production orders and batch orders:
 

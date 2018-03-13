@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # FileUploaderMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 File uploader metadata type.
 
 ### Hierarchy

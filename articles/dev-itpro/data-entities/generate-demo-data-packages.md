@@ -5,7 +5,7 @@ title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system. 
 author: mikefalkner
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Generate demo data by using data packages
 
-In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data will also be released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. You can select to just the packages that you must load for your demonstration.
+[!include[banner](../includes/banner.md)]
+
+In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data will also be released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -72,15 +74,15 @@ At least two financial companies are required for cross-company tasks such as ce
 
 The Financials data packages also have five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products will be added when you import the Supply chain data packages.
 
+### Project management and accounting
+
+The Project management and accounting data packages contain data for project accounting and expense management. The names of these data packages consist of **250-Project management and accounting** followed by the legal entity that the packages are intended for. For example, the Project management and accounting data package for the HQUS legal entity is named **250-Project management and accounting-HQUS.zip**.
+
 ### Supply chain
 
 The Supply chain data packages contain data for inventory management, product information, procurement and sourcing, sales and marketing, quality management, warehouse management, transportation management, production control, process manufacturing, costing, and master planning for a single company. Because of the large number of entities, the Supply chain packages for some companies have been split into two packages. You must load both packages to complete the supply chain scenarios. However, you can load these packages as two separate projects.
 
 These names of these data packages consist of **300-Supply chain** followed by the legal entity that the packages are intended for. For example, the Supply chain data package for the PICH legal entity is named **300-Supply chain-PICH.zip**. The supply chain package for the HQUS legal entity is split into packages that are named **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
-
-### Project management and accounting
-
-The Project management and accounting data packages contain data for project accounting and expense management. The names of these data packages consist of **400-Project management and accounting** followed by the legal entity that the packages are intended for. For example, the Project management and accounting data package for the HQUS legal entity is named **400-Project management and accounting-HQUS.zip**.
 
 ## Demo data package releases
 
@@ -123,13 +125,25 @@ The following packages can be loaded. When you import any package except the Sys
 | 200 - Financials - CONS | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PICH | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PIFB | You can load this package alone or together with another Financials package. |
-| 300 - Supply chain 1 of 2 - HQUS | Load this package after the HQUS Financials package. |
+| 250 - Project management - HQUS | Load this package after the HQUS Financials package and before any of the other Financials packages. If you want to also use Supply chain, you must import this package first. |
+| 300 - Supply chain 1 of 2 - HQUS | Load this package after the HQUS Financials package. If you want to also use Project management, you must import the Project management package first before you import this package. |
 | 310 - Supply chain 2 of 2 - HQUS | Load this package after the HQUS Supply chain 1 of 2 package. |
-| 300 - Supply chain - PIFB | Load this package after the PIFB Supply chain package. |
-| 300 - Supply chain - PICH | Load this package after the PICH Supply chain package. |
-| 400 - Project management - HQUS | Load this package after the HQUS Financials package. |
+| 300 - Supply chain - PIFB | Load this package after the PICH Supply chain package. |
+| 300 - Supply chain - PICH | Load this package after the PIFB Supply chain package. |
 | 900 - Financial transactions - HQUS | Load this package after the HQUS Financials package. |
 | 900 - Financial transactions - HQEU | You can load this package alone or together with another Financials package. |
+
+To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.  
+
+> [!NOTE]
+> We discovered an issue with the Number sequence references entity that causes a random failure during import although the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
+> 1. Click on the name of the entity (**number sequence references**) to display a form that lists all of the records in the data package.
+> 2. Click on **Copy data to target**
+> 3. Change the **Run for** value to **Criteria** and **Change Rows with previous errors** to **Yes**
+> 4. Click **Ok** and then click **Run** on the form that appears
+> 5. Repeat these steps until all records import without error.
+>
+> We are working on the issue and will release a fix for it as soon as possible.
 
 ### After you load the packages
 
@@ -139,7 +153,7 @@ After you load the data packages, you must also manually follow these steps.
 
 1. Start the workflow jobs. Select **System administration** &gt; **Workflow infrastructure configuration**, and then select **OK**.
 2. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
-3. Before you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
+3. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
 4. Add Print management settings for each module.
 
 

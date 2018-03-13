@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: 
+ms.author: mumani
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Customer attributes
+
+[!include[banner](../../includes/banner.md)]
 
 We extended the attribute framework in Retail headquarters to support attributes for customers, customer orders, cash-and-carry transactions, and call center orders.
 

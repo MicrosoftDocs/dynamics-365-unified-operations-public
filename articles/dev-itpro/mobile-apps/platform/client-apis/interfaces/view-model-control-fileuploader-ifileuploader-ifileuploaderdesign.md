@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: FileUploaderDesign
-description: File uploader design object type.
+description: File uploader design object type. 
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # FileUploaderDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 File uploader design object type.
 
 ### Hierarchy

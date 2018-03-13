@@ -5,7 +5,7 @@ title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
+This topic describes how to use the Budget analysis page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 
 This topic describes the budget analysis functionality available for the public sector. 
 
 Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md). 
 
-You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. 
+You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view posted revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. 
 
 The revenues and expenditures can be summarized by the different levels of the financial dimensions. For example, if the budget dimensions are fund, organization, and main account, you can select **Fund**, **Organization**, or **Main account** to see the financial activity summarized at that level. 
 
@@ -64,8 +64,8 @@ You can select an item in the grid and drill down to see the following transacti
 ### Tips
 
 -   You can view the revised budget register entries for the budget analysis inquiry by clicking **Revised budget** on the Action pane. The budget types for the revised budget register entries include original budget, carry-forward, transfer, and revision. These amounts come from the budget register entry tables.
--   To view the actual expenditures for the budget analysis inquiry, click **Actual**. The page affects the originating document page, such as an advanced ledger entry. These amounts come from the general ledger account entry tables.
--   To view the encumbrances and the referenced transactions for the budget analysis inquiry, click **Encumbrance**. The page affects the purchase order for the selected transaction. These amounts come from the budget source tracking tables.
+-   To view the actual expenditures for the budget analysis inquiry, click **Actual**. The page affects the originating document page, such as an advanced ledger entry. These amounts come from the general ledger account entry tables, except when the **Expense with carry-forward** option is selected. When this option is selected, the budget source tables are used.
+-   To view the encumbrances and the referenced transactions for the budget analysis inquiry, click **Encumbrance**. The page affects the general budget reservation (if implemented) or the purchase order for the selected transaction. These amounts come from the budget source tracking tables.
 -   To view the pre-encumbrances and the referenced transactions for the budget analysis inquiry, click **Pre-encumbrance**. The page affects the purchase requisition for the selected transaction. These amounts come from the budget source tracking tables.
 
 ## Should I use the Budget control statistics page or the Budget analysis page?

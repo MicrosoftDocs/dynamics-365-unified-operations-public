@@ -3,7 +3,7 @@
 
 title: External gift card support
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 for Retail.
-author: 
+author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Application update 4
 ---
 
 # External gift card support
+
+[!include[banner](../../includes/banner.md)]
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 

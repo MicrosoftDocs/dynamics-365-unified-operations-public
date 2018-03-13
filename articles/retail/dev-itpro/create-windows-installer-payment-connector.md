@@ -2,8 +2,8 @@
 # required metadata
 
 title: Create a Windows installer for a payment connector
-description: This topic describes how to create a Windows installer for a payment connector. This topic is targeted at developers working for or with a payment connector provider, for example, MasterCard or Visa, to describe how to package a payment connector, which can then be shared with implementation partners working for specific customers. 
-author: MargoC
+description: This topic describes how to create a Windows installer for a payment connector. 
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

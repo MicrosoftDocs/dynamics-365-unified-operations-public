@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Device management implementation guidance
+
+[!include[banner](includes/banner.md)]
+
 This topic is intended for people who implement functionality that is related to device management in a retail environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 
 ## Overview

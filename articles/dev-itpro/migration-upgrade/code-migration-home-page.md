@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code migration and upgrade home page
 
+[!include[banner](../includes/banner.md)]
+
 ## Migrate your code
 
 To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Deployment options
+
+[!include[banner](../../includes/banner.md)]
 
 Retail functionality is available in the following products:
  

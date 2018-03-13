@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -93,17 +93,17 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
 8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
-## Download the latest data upgrade deployable package
+## Select the correct data upgrade deployable package
 
 To obtain the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 1. Sign-in to http://lcs.dynamics.com/
-2. Select the Shared asset library tile
-3. In the Shared asset library, under Select asset type, select Software deployable package
+2. Select the **Shared asset** library tile
+3. In the Shared asset library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade.
 
     - If you're upgrading from AX 2012, the package name starts with **AX2012DataUpgrade**. Select the package that corresponds to the release you are upgrading to. For example: **AX2012DataUpgrade-July2017**
-    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
-    - If you're upgrade from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. If there are more than one package, select the package that corresponds to the version of the platform your destination environment is on.
+    - If you're upgrading from a previous release of Finance and Operations to the July 2017 release (aka 7.2), the package name starts with **DataUpgrade-July2017**. Select the package that corresponds to the release you are upgrading to. 
+    - If you're upgrading from a previous release of Finance and Operations to release 7.3 (December 2017), the package name starts with **DataUpgrade-7-3**. elect the package that corresponds to the release you are upgrading to. 
 
 > [!NOTE]
 > Computers that are deployed from LCS will already have local data upgrade packages. However, these files may be out of date. Always download the latest data upgrade package from LCS.
@@ -128,7 +128,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
-    > If you are validating the data upgrade of your production database running on the ealier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
+    > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
     
     > [!NOTE]
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
@@ -142,10 +142,13 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
 
-5. Install the deployable package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
+5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
 
 For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
 **Install a deployable package**. 
+
+> [!NOTE]
+> If you are upgrading a database on a development environment, you can now execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
 
 This will upgrade your Finance and Operations database, Retail channel database and reset the Financial reporting database.
 
@@ -156,6 +159,10 @@ Run the following SQL against the upgraded database to make sure that change tra
 ```
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
+
+## Refresh the data entities list
+
+If you have upgraded to Platform update 14 or later, then you will need refresh the data entity list in the Data management workspace (**Data management** > **Framework parameters** > **Entity settings** > **Refresh entity list**) to ensure that the entity list is rebuilt on the latest platform and that the required metatdata is available for data management operations. 
 
 ## Troubleshoot upgrade script errors
 

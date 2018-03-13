@@ -24,7 +24,7 @@ ms.custom: 201813
 ms.assetid: 4985e308-7824-41fc-83fd-fd0bdae888e3
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

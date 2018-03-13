@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ApplicationMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Represents the declarative metadata of an application
 
 ### Hierarchy

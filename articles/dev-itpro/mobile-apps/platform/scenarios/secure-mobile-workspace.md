@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Help secure mobile workspaces
+
+[!include[banner](../../../includes/banner.md)]
+
 This topic describes how to limit a user's access to a workspace.
 
 ## Assign a menu item to workspace

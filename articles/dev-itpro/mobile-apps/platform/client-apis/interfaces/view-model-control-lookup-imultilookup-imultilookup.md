@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # MultiLookup Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 
 ### Hierarchy

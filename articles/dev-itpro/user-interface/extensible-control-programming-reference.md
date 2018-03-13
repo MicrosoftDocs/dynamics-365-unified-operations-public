@@ -332,8 +332,7 @@ A control with a design time class like the one above can then bind to the speci
 If you supply both a data field and data method to FormBindingUtil::initBinding, the data field binding will override the data method binding.
 
 ## HTML
-HTML: Framework attributes
---------------------------
+## HTML: Framework attributes
 
 The following section documents the HTML attributes that are used in the control framework for control development.
 
@@ -1086,8 +1085,7 @@ messages: {
 console.log($dyn.label("greeting"));
 ```
 
-CSS
----
+## CSS
 
 Add namespaces to all CSS class names by prepending the class name with the control’s template ID. This will prevent your control and its styles from conflicting with other controls in the client.
 
@@ -1102,10 +1100,9 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 -   Locking/Freezing elements
 -   Building scrollable elements
 
-Control Lifecycle Diagrams
-==========================
+## Control Lifecycle Diagrams
 
-## Control Instantiation
+### Control Instantiation
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
 
 

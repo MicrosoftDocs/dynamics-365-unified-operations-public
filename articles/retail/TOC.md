@@ -39,6 +39,7 @@
 # Channel setup and management
 ## [Initialize seed data in a Retail environment](enable-configure-retail-functionality.md)
 ## [Define retail channels](define-maintain-retail-channels.md)
+## [Assortment management](assortments.md)
 ## [Online store overview](online-stores.md)
 ## [Configure and install a Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Retail time and attendance](retail-time-attendance.md)
@@ -100,6 +101,7 @@
 # Products and merchandising
 ## [Product information overview](../supply-chain/pim/product-information.md)
 ## [Retail hierarchies](retail-hierarchies.md)
+## [Attributes and attribute groups overview](attribute-attributegroups-lifecycle.md)
 ## [Create and manage attributes](create-manage-attributes.md)
 ## [Set up retail products](set-up-retail-products.md)
 ## [Product dimensions](../supply-chain/pim/product-dimensions.md)
@@ -130,6 +132,16 @@
 # Human resources
 ## [Organize your workforce using departments, jobs, and positions](../talent/departments-jobs-positions.md)
 ## [Setting up the components of a job](../talent/create-job.md)
+
+# Localization and regulatory features
+## India
+### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norway
+### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
+### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+## Sweden
+### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 
 # Retail tasks
 ## [Create a product](../supply-chain/pim/tasks/create-product.md)
@@ -183,6 +195,7 @@
 ### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Payment Application Data Security Standards (PA-DSS) certification](dev-itpro/PA-DSS-Certification.md)
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
@@ -248,10 +261,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
-### [Sample for Retail POS integration with control units for Sweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)

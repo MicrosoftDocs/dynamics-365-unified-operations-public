@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -50,6 +50,9 @@ The following table shows the steps and roles that are involved in the process.
 | Procurement professional | | Start the onboarding process. | | | Review and either accept or reject the vendor request. | |
 | Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
+
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video: 
+> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
 
 ## Importing the prospective vendor registration request
 

@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # List 
+
+[!include[banner](../../../../includes/banner.md)]
+
 A list is a control that contains any numbers of rows.
 Each row follows a template for the layout of any number of controls.
 Lists come in two styles: simple and card.
