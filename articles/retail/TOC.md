@@ -56,6 +56,7 @@
 ## Screen layout
 ### [Configure screen layouts for POS](pos-screen-layouts.md)
 ### [Install the Retail POS Layout designer](install-pos-layout-designer.md)
+### [Choose notification settings](Notifications-POS.md)
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up images for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Info codes overview](info-codes-retail.md) 
