@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes an enhanced way to manage Retail product categories and products in Dynamics 365 for Retail. These enhancements let merchandising managers view a common structure of product properties between Retail product hierarchy and released product details.
 
-To learn more about managing Retail product categories, go to **Retail product hierarchy** from the **Category & product management** workspace, and note the enhanced structure of the **Retail product category** page.
+To learn more about managing Retail product categories, go to **Retail product hierarchy** from the **Category and product management** workspace, and note the enhanced structure of the **Retail product category** page.
 
 ![Category & product management workspace](media/LaunchRetailProductHierarchy.png)
 
