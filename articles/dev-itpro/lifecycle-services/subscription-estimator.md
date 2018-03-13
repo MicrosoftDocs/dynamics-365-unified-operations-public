@@ -5,7 +5,7 @@ title: Subscription estimator
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS) for Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
 author: manalidongre
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,21 +55,7 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 **Question:** Why isn't the **Configure** button for deploying a production environment available, even though there is an active estimate? And why does a warning message appear in the Action center on the project dashboard?
 
-**Answer:** The **Configure** button becomes unavailable, and you receive a warning message, when the total number of users across all implementation projects for the organization, as entered in the Microsoft Excel template, exceeds the total number of licenses that you purchased.
-
-For customers that are on the pre-Microsoft Dynamics 365 license plan, there are three license types:
-
-- Plan 2
-- Self-serve
-- Task users
-
-For Microsoft Dynamics 365 customers, there are three license types:
-
-- Enterprise
-- Team Member
-- Activity Plan
-
-You must purchase at least 20 licenses (of the Enterprise type or an equivalent). For more information, contact your local Microsoft Dynamics 365 representative, or see the [Microsoft Dynamics 365 licensing guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+**Answer:** If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the action center regarding an insufficient number of licenses. Log a support request, and the support team can help resolve this issue.
 
 **Question:** Why does an error occur when I mark an estimate as **Active**?
 
