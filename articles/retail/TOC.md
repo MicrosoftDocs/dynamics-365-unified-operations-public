@@ -39,6 +39,7 @@
 # Channel setup and management
 ## [Initialize seed data in a Retail environment](enable-configure-retail-functionality.md)
 ## [Define retail channels](define-maintain-retail-channels.md)
+## [Assortment management](assortments.md)
 ## [Online store overview](online-stores.md)
 ## [Configure and install a Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Retail time and attendance](retail-time-attendance.md)

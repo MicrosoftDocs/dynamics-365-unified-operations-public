@@ -36,6 +36,13 @@ ms.dyn365.ops.version: Platform Update 8
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Error when signing in to on-premises environments
+
+PU12
+Please turn off the "Skype Integration" by navigating to the System Administration > Setup > Client performance options form.
+When navigating to the app, append ?debug=true as shown in the following example
+https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true
+
+PU8 and PU11
 A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
 
 `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
