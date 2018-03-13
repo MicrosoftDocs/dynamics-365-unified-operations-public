@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include[banner](../includes/banner.md)]
 
-Subscription estimator is a tool that is available in Microsoft Dynamics Lifecycle Services (LCS). Microsoft uses this tool to estimate the initial size of the production environment that must be provisioned for a customer. Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to LCS. By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps guarantee that the provisioned environment meets the customer's business requirements.
+Subscription estimator is a tool that is available in Microsoft Dynamics Lifecycle Services (LCS). Microsoft uses this tool to estimate the initial size of the production environment that must be provisioned for a customer. Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to LCS. By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps ensure that the provisioned environment meets the customer's business requirements.
 
 Follow these steps to use the Subscription estimator tool.
 
-1. In LCS, open the project that is associated with the implementation project for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+1. In LCS, open the project that is associated with the implementation project for Finance and Operations.
 2. At the top of the page, select the hamburger icon, and then select **Subscription estimator**.
 [![subscription estimator](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
 3. Download the sample usage profile.
-4. Answer the mandatory questions on each tab. If you're a Retail customer, be sure to answer the questions on the **Retail and Commerce** tab.
+4. Answer the required questions on each tab. If you're a Retail customer, be sure to answer the questions on the **Retail and Commerce** tab.
 5. Save the usage profile locally.
 6. To upload the usage profile, select **New estimate**, name the estimate, and then upload the usage profile.
 7. After the upload is completed, select **Mark as Active** to activate an estimate. An active estimate is required in order to configure a production deployment.
@@ -55,7 +55,7 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 **Question:** Why isn't the **Configure** button for deploying a production environment available, even though there is an active estimate? And why does a warning message appear in the Action center on the project dashboard?
 
-**Answer:** If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the action center regarding an insufficient number of licenses. Log a support request, and the support team can help resolve this issue.
+**Answer:** If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action center regarding an insufficient number of licenses. Log a support request, and the support team can help resolve this issue.
 
 **Question:** Why does an error occur when I mark an estimate as **Active**?
 
