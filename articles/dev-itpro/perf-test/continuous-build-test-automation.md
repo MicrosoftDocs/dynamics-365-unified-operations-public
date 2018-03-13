@@ -47,12 +47,12 @@ After you have configured a VSTS subscription in Lifecycle Services (LCS), you c
 ## Set up Visual Studio Team Services (VSTS)
 Compare VSTS features required for your organization: <https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
 
--   **TFVC vs GIT**: For RTW, we only support TFVC as source control repository that can be configured in VSTS project connected to LCS. Git is not supported.
+-   **TFVC vs GIT:** Currently TFVC is the only supported source control repository, Git is not supported.
 -   **Suspend current builds:** If you are deploying the build agent on an existing VSTS project which already has build definition created, please ensure you do not have any active triggers to queue the build. Additionally, make sure there are no builds scheduled / queued against the build pool. 
     
     [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
     
--   **Free VSTS account provides only one build pipeline**. For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline.
+-   **Free VSTS accounts provide only one build pipeline:** For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline.
 
 
 To use more build pipelines than you're currently granted, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
