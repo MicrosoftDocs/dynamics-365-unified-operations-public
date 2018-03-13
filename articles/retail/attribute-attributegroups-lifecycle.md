@@ -2,31 +2,30 @@
 # required metadata
 
 title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
-description: 
-auhor: 
-manager: 
-ms.date: 
-ms.topic: 
+author: ashishmsft
+manager: AnnBe
+ms.date: 03/12/2018
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
-audience: 
+audience: Application User
 # ms.devlang: 
-ms.reviewer: 
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: 
-ms.search.industry: 
-ms.author: 
-ms.dyn365.ops.version: 
-ms.search.validFrom: 
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2018-03-30
+ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
