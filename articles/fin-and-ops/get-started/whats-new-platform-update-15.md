@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 15
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 13 (March 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 > [!NOTE]
 > This platform release is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15. 
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=867433).
+Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=869898).
 
 ## Ability to color grid rows without overlayering via FormDataSource OnDisplayOptionInitialize event
 The ability to color grid rows without overlayering is now possible via the OnDisplayOptionInitialize event on FormDataSource.
