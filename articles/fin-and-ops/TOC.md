@@ -473,7 +473,13 @@
 #### [Distributions on an expense report](../financials/expense-management/expense-report-distributions.md)
 #### [Intercompany expenses](../financials/expense-management/intercompany-expense.md)
 #### [Expense policies](../financials/expense-management/travel-expense-policies.md)
-
+#### [View an expense report](../financials/expense-management/view-expense-report.md)
+#### [Post an expense report](../financials/expense-management/post-expense.md)
+#### [Expense reports and multiple approvers](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [VAT recovery in Expense management](../financials/expense-management/VAT-expense-report.md)
+#### [Per diem rules](../financials/expense-management/per-diem.md)
+#### [Travel requisitions](../financials/expense-management/travel-req.md)
+#### [Personal expenses on an expense report](../financials/expense-management/personal-expenses.md)
 
 ### [Budgeting](../financials/budgeting/budgeting-overview.md)
 #### [Budget planning overview ](../financials/budgeting/budget-planning-overview-configuration.md)
