@@ -35,13 +35,15 @@ ms.dyn365.ops.version: Platform update 15
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15. 
 
+> [!NOTE]
+> This platform release is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15. 
+
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=867433).
 
 ## Ability to color grid rows without overlayering via FormDataSource OnDisplayOptionInitialize event
 The ability to color grid rows without overlayering is now possible via the OnDisplayOptionInitialize event on FormDataSource.
 
 ## Accessibility support for controls and forms developed using the cloud platform 
---------------------------------------------------------------------------------
 
 Reaffirming our commitment to providing accessible software, this update focuses
 on broadening our already rich accessibility feature set. These updates improve
@@ -51,7 +53,15 @@ tasks via the keyboard, there is richer integration with screen readers, high
 contrast theming and full label support, and applications built using the cloud
 platform which provide additional opportunities for users with disabilities.
 
-## Changed how extension and overlayering options are presented in Visual Studio
+## Client-based alerts 
+Client-based alert functionality enables a user to define an alert rule without leaving the Finance and Operations client. Users can define alerts based on business events, such as when an invoice is paid or a customer changes an address. When specific conditions are met, the system will show a notification to alert the user. 
+
+Alerts form a notification system for critical events in Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to keep track of during the workday. You can also easily set up your own set of rules so that you are alerted about overdue deliveries, orders that are deleted, prices that change, or other events that you must respond to.
+
+## Embed PowerApps
+Microsoft PowerApps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps). 
+
+## Extension and overlayering options in Visual Studio
 In this release we have adjusted how the extension and overlayering options are presented in Visual Studio. The extension options are now shown first and the overlayering option has changed from "Customize" to "Overlayer" to be more explicit.
 Extensions should be used whenever possible. 
 
@@ -60,15 +70,10 @@ The customization options are now shown in the recommended order of use:
 2.	Create extension in new project
 3.	Overlayer
 
-## Embed PowerApps
-Microsoft PowerApps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps). 
-
 ## Message Center has been upgraded to the new Action Center with improved notification visuals and capabilities
 The Message Center has been upgraded to the new Action Center. Not only have the visuals been refreshed to reflect a more modern notification interface, but messages sent to the Action Center using the new messaging API also come with additional capabilities including notification persistence, the ability to specify one or more actions associated with a message, and the ability to send a message to a list of users or a list of roles. All existing messages that were routed to the Message Center will automatically be surfaced in the Action Center.
 
 ## Move master data from one environment to another using the Excel add-in 
-------------------------------------------------------------------------
-
 Dynamics 365 for Talent provides “getting started” workbooks so users can use
 Excel to interactively view, edit, and create data. These workbooks, powered by
 the Excel add-in, provide a productive environment configuration experience.
@@ -77,8 +82,6 @@ With this enhancement, you can move data from one environment to another by read
 For more information, see [Copy environment data](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data).
 
 ## Power users can add custom fields to forms without developer customization 
----------------------------------------------------------------------------
-
 Many application customizations involve adding one or more fields to existing
 tables and including them in application forms. Most of your customizations may
 be comprised of adding fields.
@@ -93,8 +96,7 @@ needed. Instead, a power user can add a custom field to a table and
 then place that field on the form using personalization. An IT administrator
 can then share the personalization with others in your organization. For information about how to create and manage custom fields, see [Custom fields](user-defined-fields.md).
 
-(SR 10) Certifications for Dynamics 365 for Finance and Operations, Enterprise edition 
----------------------------------------------------------------------------------------
+## (SR 10) Certifications for Dynamics 365 for Finance and Operations, Enterprise edition 
 
 **ISO 27001(Secure)** – ISO 27001 certification confirms that the service
 complies with the controls and specifications outlined in the information
@@ -118,7 +120,6 @@ financial data is secure and protected. Finance and Operations has achieved
 SOC-1/Type-2 and SOC-2/Type-2 certification.
 
 ## Service offered via a published range of network addresses
-----------------------------------------------------------
 
 Your organization may have specific security policies that prevents users from
 navigating to unknown or malicious IP addresses and domains. You can now open
