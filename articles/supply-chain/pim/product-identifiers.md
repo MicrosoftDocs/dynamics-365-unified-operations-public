@@ -85,7 +85,7 @@ The search name can also contain a customer or vendor product ID, or some other 
 
 ## External product identifiers (Customer and vendor identifiers)
 
-For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders and purchaser orders, packing slips, and invoices. In the current version of Finance and Operations, the external references aren't shown on core operations pages. The only exception is the vendor item number. This number is shown in the product information dialog box if a default vendor is defined for the released product.
+For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders and purchaser orders, packing slips, and invoices. In the current version of Finance and Operations, the external references aren't shown on core operations pages. The only exception is the vendor item number. This number is shown in the **Product information** dialog box if a default vendor is defined for the released product.
 
 You can maintain the external product identifiers by released product, released product variant, customer or customer group, or vendor or vendor group.
 
@@ -113,7 +113,7 @@ If you want to use a bar code scanner to identify products, the product identifi
 
 Before you define bar codes, you can define one or more bar code setups to help validate that bar codes follow the required guidelines, and that they can therefore be effectively printed and scanned. You can also maintain special bar codes for specific product quantities.
 
-We recommend that you use the bar code definition to maintain GTIN or International Article Number (EAN) codes.
+We recommend that you use the bar code setup to maintain GTIN or International Article Number (EAN) codes.
 
 To maintain bar codes, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **Bar codes**.
 
@@ -154,7 +154,7 @@ Unfortunately, there is no standard functionality that lets you search for produ
 
 ## Product entity identifier (Export all product identifiers)
 
-The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are referenced to a product. To simplify this task, all identifiers are aggregated into one global identifier table so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, this entity and this process have limited practical use, and will likely be subject to change in the future.
+The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, this entity and this process have limited practical use, and will likely be subject to change in the future.
 
 The product identifier table is a global table that is populated from all reference tables of the Main legal entity through a recurring batch job. You must select a legal entity and a product category hierarchy as the definition of the global product master scope. Generation of the global product identifier table is limited to products that are released to the selected legal entity and products that are members of the product hierarchy that is selected for the **Common data service** role in the product category hierarchy.
 
@@ -170,6 +170,6 @@ Follow these steps to configure the environment.
 
     You can now maintain the list of code types. You can change the code, name, and description. You can also delete code types. Code types that you delete won't be used to populate the global product entity identifier tables.
 
-4. When you've finished defining the product identifier code types, you can create the identifiers in the global table by starting Create product entity identifiers. You should run this job in a batch. This job should be set up as a periodic batch job so that the table are populated according to new entries.
+4. When you've finished defining the product identifier code types, you can create the identifiers in the global table by starting **Create product entity identifiers**. You should run this job in a batch. This job should be set up as a periodic batch job so that the table are populated according to new entries.
 
 You can now use the Product entity common data service identifier entity, Product entity identifier code, and Product entity identifier scope data entities to export the identifiers for any target system.
