@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Calculate fixed asset depreciation across legal entities
-description: Use this procedure to change the fixed asset group that a fixed asset is assigned to. 
+description: This procedure shows you to how set up and run the depreciation process for multiple legal entities.
 author: saraschi2
 manager: AnnBe 
-ms.date: 10/11/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,16 +30,36 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to change the fixed asset group that a fixed asset is assigned to. Fixed assets should be assigned to the correct fixed asset group. The fixed asset group is used when you create inquiries and reports, set up new fixed assets, and integrate ledgers and post fixed asset transactions to the appropriate ledger accounts.
+Fixed asset depreciation can be run across legal entities in a single step. This procedure shows you to how set up and run the process for multiple legal entities. It uses the accountant role.  
 
 This recording uses the USMF demo company.
 
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Select the fixed asset to change the fixed asset group for.
-3. Click Change fixed asset group.
-4. In the New group field, enter or select a value.
-5. Set the New fixed asset number option to Yes to assign a fixed asset number to the selected fixed asset.
-    * The Fixed asset number field becomes available when the New fixed asset number option is set to Yes.   If automatic numbering is set up for fixed assets, this field shows the next available fixed asset number. You can change the number.   If manual numbering is set up for fixed assets, this field is blank, and you must enter the new fixed asset number.  
-6. Click OK.
-7. Click Yes.
 
+Steps (16)
+Sub-task: Set up cross company depreciation run journals. 
+
+1. First, you must set up the journals to be used in the cross company depreciation run in each legal entity. 
+Go to Fixed assets > Setup > Fixed assets parameters. 
+2. Expand the Fixed asset proposals section. 
+3. Create a record with the journal name to be used for each posting layer in the legal entity. If books do not post to the general ledger, then the None posting layer should be selected with the associated journal. 
+Click Add. 
+4. In the Posting layer field, enter or select a value. 
+5. In the Journal name field, enter or select a value. 
+6. Repeat the journal setup on the Fixed asset parameters page in each legal entity. 
+
+Sub-task: Calculate depreciation
+
+1. Use the Create depreciation proposal page to start your depreciation run across legal entities. 
+Go to Fixed assets > Journal entries > Create depreciation proposal. 
+2. In the Posting layer field, enter or select a value. 
+3. The journal name will default from the Fixed asset parameters. It can be changed here for the current legal entity. 
+4. In the To date field, enter a date. 
+5. Select the legal entities to be included in the depreciation run. 
+Only legal entities with journals set up for Fixed asset proposals on the Fixed asset parameters page will be shown in the list. 
+6. When enabled, the Post journals option will automatically post the depreciation journals when they are created. When not selected, the journals will be created, but not posted, so you can review the details before posting. 
+Select Yes in the Post journals field. 
+7. Filtering fields include all fixed assets, groups, and books for the legal entities selected for this depreciation run. 
+8. The Batch processing option is enabled by default. When this option is enabled, the depreciation journal creation and posting will run in the background. 
+9. Click Create journal. 
+10. You must view the depreciation journals created in the respective legal entities. 
+Go to Fixed assets > Journal entries > Fixed assets journal.

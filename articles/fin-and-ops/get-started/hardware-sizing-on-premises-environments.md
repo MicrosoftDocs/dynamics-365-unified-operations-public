@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.assetid: 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Hardware sizing for on-premises environments
+
+[!include[banner](../includes/banner.md)]
+
 Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](system-requirements.md) and [Setup and deployment instructions](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
 
   **Note:** Pay close attention to the system setup best practices for optimum performance. 

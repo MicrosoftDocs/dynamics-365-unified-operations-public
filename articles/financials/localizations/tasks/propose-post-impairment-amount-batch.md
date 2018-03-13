@@ -5,7 +5,7 @@ title: Propose and post the impairment amount by batch (Japan)
 description: This task walks you through proposing and posting the impairment amount by batch. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/26/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -54,7 +54,7 @@ This task uses the JPMF demo company data.
 11. Refresh the page.
     * You can refresh the page to see the latest information. You may need to refresh multiple times depending on when the batch is processed.  
 12. In the list, find and select the desired record.
-    * You may need to refresh the page multiple times depending on when the batch is been processed.  
+    * You may need to refresh the page multiple times depending on when the batch is being processed.  
 13. Click Lines.
     * Confirm that the correct fixed assets were created and that they have the correct impairment amount.  
 14. Click Post.

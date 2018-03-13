@@ -5,7 +5,7 @@ title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations, Enterprise edition or load them from a third-party program.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BudgetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
@@ -47,7 +47,7 @@ Only an administrator can manage users. Follow these steps.
 
 ### Invite a user to an LCS project
 
-1.  Sign in to [LCS](http://lcs.dynamics.com/en//t_blank).
+1.  Sign in to [LCS](http://lcs.dynamics.com/).
 2.  Click the project to add the user to.
 3.  Click the **Project users** tile, and then, on the **Project users** page, click the plus sign (**+**).
 4.  Enter the user’s email address, select the correct security role, and then click **Invite**.
@@ -57,7 +57,7 @@ The information in this section is intended to help you access CustomerSource or
 
 ### Signing in to CustomerSource or PartnerSource
 
-Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](http://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx/t_blank) page.
+Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) page.
 
 ### Determining the administrator for your organization in CustomerSource or PartnerSource
 

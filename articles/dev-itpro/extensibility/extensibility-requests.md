@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Extensibility requests
+
+[!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is moving to a model of exclusively using extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
 

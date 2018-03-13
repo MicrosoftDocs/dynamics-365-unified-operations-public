@@ -8,12 +8,11 @@ manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form: 
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -59,3 +58,6 @@ Compared to previous versions, in the new Retail product category structure a me
 You can use this new enhanced structure for product properties to select which updated product properties must be pushed to associated products. 
 
 ![New enhanced view of Update products](media/NewUpdateProductsEnhancedView.PNG) 
+
+Merchandising managers can modify these inherited product properties for each product, to meet individual business requirements.
+

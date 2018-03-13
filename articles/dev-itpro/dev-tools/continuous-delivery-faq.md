@@ -5,7 +5,7 @@ title: Development and continuous delivery FAQ
 description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
+This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Customization
 -------------
 
 ### Do I customize (overlayer) or use extensions?
 
-Application customization is enabled using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
+Application customization is enabled using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Microsoft Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
 
 -   Use extensions as your default mode of development and fall back to overlayering only as a last resort.
 -   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](../migration-upgrade/delegates-migration.md)
@@ -53,6 +53,12 @@ For more information, see [Extensibility home page](..\extensibility\extensibili
 ### How do I prevent my models from being customized by customers or other partners?
 
 You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](lock-models.md) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
+
+### How can I define the scope of my models? How many models or packages should I create?
+Designing models and model elements is no different than designing other types of software libraries. You should apply [SOLID (object-oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) design principles. In addition, we recommend the following tips that are specific to the Dynamics 365 Unified Operations platform:
+-   If there are components in your solution that you want to ship and service more frequent than the rest, they are good candidates to place in a separate model and package.
+-   It is common practice to start with two packages (each with one model) at the initial stage of an implementation, one foundation package that contains extensions to the Microsoft platform packages and one application package that contains extensions to the Microsoft application packages. More models can be introduced on an as-needed basis.
+-	Existing packages can be subdivided into smaller packages when necessary. If your implementation is already live using one of your packages, avoid renaming a package, to help simplify lifecycle management.
 
 ## Continuous delivery
 ### Do I need build environments?
@@ -137,17 +143,17 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](enable-development-machine.md).
 
+If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Visual Studio Team Services) and you keep a backup of test databases. 
+
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
-A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as both a configuration environment and a UAT environment before (or after) the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, you can restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. If you prefer to have two separate sandbox environments, one for pre-production validation and the other to serve as your gold configuration, you can purchase an additional tier-2 sandbox. The following servicing requests and tools are supported by Lifecycle Services, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
+A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox environment that is is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes. 
+The following servicing requests and tools are supported by LCS, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 
 1.  Restore a sandbox database to a point in time.
 2.  Copy a sandbox database to a production environment (only allowed before the application is live in production).
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
-5.  Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
-
-
-
-
+5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
+6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.  

@@ -13,12 +13,15 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailCoupon
+
+ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
+
+ms.search.scope: Core, Operations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

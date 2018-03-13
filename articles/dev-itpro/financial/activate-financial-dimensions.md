@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
@@ -49,7 +49,7 @@ Adding a financial dimension is typically a very deliberate business process. If
 
 The **Rebuild financial dimensions** option is set to **No** by default, as it is a process that should only be run if unexpected results occur during the initial activation process. This will drop and re-add all financial dimensions and values to the tables.
 
-# See also
+## See also
 
 [Set up financial dimensions (Task guide)](../../financials/general-ledger/tasks/define-financial-dimensions.md)
 

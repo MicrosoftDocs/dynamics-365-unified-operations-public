@@ -3,7 +3,7 @@
 
 title: Impairment accounting for fixed assets
 description: This topic includes information about impairment accounting for fixed assets in Japan.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
 ms.search.region: Japan

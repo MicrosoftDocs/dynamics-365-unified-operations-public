@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create purge objects (AX 2012)
-description: 
+description: This topic provides information about how to create IDMF purge objects that define hierarchical relationship trees among application tables in Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17951
 ms.assetid: 2ecae3f6-1163-4a0f-8db3-8b53908961ce

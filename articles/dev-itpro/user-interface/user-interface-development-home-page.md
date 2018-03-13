@@ -5,7 +5,7 @@ title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
@@ -49,7 +49,6 @@ The form metamodel continues to be used to define controls and application logic
 ## Tutorials
 -   [Building the rental charge type form](build-rental-charge-type-form.md)
 -   [Building the customer form](build-customer-form.md)
--   [Add contextual BI to forms](..\analytics\add-contextual-bi-forms.md)
 
 ## Forms
 -   [Navigation concepts](page-navigation.md)

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18181
 ms.assetid: 60c79bd4-1090-4e79-9a8c-2117d963647a
@@ -104,7 +104,8 @@ This section describes how to manually create a custom entity.
 
     | Index name                              | Properties                             | Fields                                                 |
     |-----------------------------------------|----------------------------------------|--------------------------------------------------------|
-    | &lt;&lt;any name&gt;&gt;. Example – Idx | AllowDuplicates – NoAlternateKey - Yes | **DefinitionGroup**                                    |
+    | &lt;&lt;any name&gt;&gt;. Example – Idx | AllowDuplicates – No  | **DefinitionGroup**                                    |
+    |   | AlternateKey - Yes | **DefinitionGroup**                                    |
     |                                         |                                        | **ExecutionId**                                        |
     |                                         |                                        | **Fields from the staging table to define uniqueness** |
     |                                         |                                        | ..                                                     |

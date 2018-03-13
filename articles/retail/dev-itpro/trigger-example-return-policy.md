@@ -5,7 +5,7 @@ title: Implement a return policy using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 65863
 ms.assetid: 539105e2-097d-4723-84a1-8084c2c32652
@@ -41,7 +41,7 @@ The examples in this topic assume that you have a new return policy. The maximum
 
 ## Extend the MPOS trigger
 1.  Open Visual Studio as an administrator.
-2.  Open the ModernPOS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.
+2.  Open the Modern POS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.
 3.  Add new a TypeScript file in the POS.Core project, under the **Triggers** folder, and name it ExtensionTrigger.ts.
 4.  Add reference to the triggers interface and create a new module for the code. In the ExtensionTrigger.ts file, add the following code.
 

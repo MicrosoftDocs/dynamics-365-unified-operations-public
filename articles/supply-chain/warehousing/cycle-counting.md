@@ -18,7 +18,7 @@ ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThres
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
@@ -141,7 +141,7 @@ A cycle counting difference occurs in the following scenarios if the **Is a cy
 
 You can adjust differences in the counted value and then accept the counted value on the **Cycle count pending review** page. You can verify the modified count of the item quantity on the **On hand by location** page. The counted value is rejected if the difference can't be approved.
 
-# See also
+## See also
 [Configure mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
 
 

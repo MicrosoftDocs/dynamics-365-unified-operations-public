@@ -5,7 +5,7 @@ title: Macros in X++
 description: This topic describes how to create and use macros in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189441
 ms.assetid: a2de1498-2c9d-4c5d-b396-5c8703a5ef72
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create and use macros in X++.
 
-Precompiler directives are processed before the the code is compiler. The directives declare and handle macros and their values. The directives are removed by the precompiler so that the X++ compiler never encounters them. The X++ compiler only sees the sequence of characters written into the X++ code by the directives.
+Precompiler directives are processed before the code is compiled. The directives declare and handle macros and their values. The directives are removed by the precompiler so that the X++ compiler never encounters them. The X++ compiler only sees the sequence of characters written into the X++ code by the directives.
 
 ## \#define and \#if directives
 All precompiler directives and symbols begin with the \# character. A macro can be defined at any point in the code. The variable can have a value that is a sequence of characters, but it is not required to have a value. The **\#define** directive tells the precompiler to create the macro variable, including an optional value. The **\#if** directive tests whether the variable is defined, and optionally, whether it has a specific value. The X++ precompiler directives, the macro names that they define, and the **\#if** directive value tests are all case-insensitive. However, it is a best practice to begin macro names with an uppercase letter.
@@ -78,7 +78,7 @@ The following code example has a lexical error caused by the first closing paren
 
     #define.MyMacro1(info("Hello");)
 
-The following code example has a syntax error caused by using the non-existent **++++** operator. The X++ compiler encounters this operator after **\#MyMacro2** is replaced by the macro value.The macro definition is correct even though its value is not accepted X++ syntax.
+The following code example has a syntax error caused by using the non-existent **++++** operator. The X++ compiler encounters this operator after **\#MyMacro2** is replaced by the macro value. The macro definition is correct even though its value is not accepted X++ syntax.
 
     #define.MyMacro2(++++iTest;) 
     #MyMacro2
@@ -180,7 +180,7 @@ The following code sample shows the **\#if.DebugMacro(heavy)** directive that te
     }
 
 ## \#defInc and \#defDec directives
-**\#defInc** and **\#defDec** are the only directives that interpret the value of a macro and they apply apply only to macros that have a value that can be converted to the formal **int** type. The value can only contain numerals. The only non-numeric character allowed is a leading negative sign (-). The integer value is treated as an X++ **int**, not as an **int64**. For macro names that are used by the **\#defInc** directive, it is important that the **\#define** directive that creates the macro not reside in a class declaration. The behavior of **\#defInc** in these cases is unpredictable. Instead, such macros should be defined in only a method. We recommend that the **\#defInc** and **\#defDec** directives only be used for macros that have an integer value. The precompiler follows special rules for **\#defInc** when the macro value is not an integer, or when the value is unusual or extreme. The following table lists the values that **\#defInc** converts to zero (0) and then increments. When a value is converted to 0 by **\#defInc,** the original value cannot be recovered, not even by **\#defDec.**
+**\#defInc** and **\#defDec** are the only directives that interpret the value of a macro and they apply only to macros that have a value that can be converted to the formal **int** type. The value can only contain numerals. The only non-numeric character allowed is a leading negative sign (-). The integer value is treated as an X++ **int**, not as an **int64**. For macro names that are used by the **\#defInc** directive, it is important that the **\#define** directive that creates the macro not reside in a class declaration. The behavior of **\#defInc** in these cases is unpredictable. Instead, such macros should be defined in only a method. We recommend that the **\#defInc** and **\#defDec** directives only be used for macros that have an integer value. The precompiler follows special rules for **\#defInc** when the macro value is not an integer, or when the value is unusual or extreme. The following table lists the values that **\#defInc** converts to zero (0) and then increments. When a value is converted to 0 by **\#defInc,** the original value cannot be recovered, not even by **\#defDec.**
 
 | Macro value       | Behavior                                                                                                                                                                                               |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -286,13 +286,13 @@ The following code sample shows a difference in the behavior of **\#define** and
     /*****************************  Actual Infolog output
     Message (09:31:26 pm)
     11__DEFINE.
-    12_GLOBAL. Shows that #globaldefine overwrites #define when #globaldefine is giving a value to an existing macro that has no value.Test cases 13 and 29 are more common and realistic.
-    13__DEFINE. Shows that #define usually takes precedence over #globaldefine, regardless of which directive occurs first in the X++ code.Test case 12 shows this is not always true.
+    12_GLOBAL. Shows that #globaldefine overwrites #define when #globaldefine is giving a value to an existing macro that has no value. Test cases 13 and 29 are more common and realistic.
+    13__DEFINE. Shows that #define usually takes precedence over #globaldefine, regardless of which directive occurs first in the X++ code. Test case 12 shows this is not always true.
     27_GLOBAL.
     28__DEFINE.
-    29__DEFINE. Shows that #define usually takes precedence over #globaldefine, regardless of which directive occurs first in the X++ code.Test case 12 shows this is not always true.
-    50__DEFINE 1. Shows that a #globaldefine that has a name but no value does not overwrite a #globaldefine that has both a name and a value. The same is true between a pair of #define directives.This resembles test case 12.
-    64_GLOBAL 1. Shows that a #globaldefine that has a name but no value does not overwrite a #globaldefine that has both a name and a value. The same is true between a pair of #define directives.This resembles test case 12.
+    29__DEFINE. Shows that #define usually takes precedence over #globaldefine, regardless of which directive occurs first in the X++ code. Test case 12 shows this is not always true.
+    50__DEFINE 1. Shows that a #globaldefine that has a name but no value does not overwrite a #globaldefine that has both a name and a value. The same is true between a pair of #define directives. This resembles test case 12.
+    64_GLOBAL 1. Shows that a #globaldefine that has a name but no value does not overwrite a #globaldefine that has both a name and a value. The same is true between a pair of #define directives. This resembles test case 12.
     65_GLOBAL 2. Shows that a #globaldefine that has both a name and a value overwrites a previous #globaldefine.
     66_GLOBAL 2. Shows that a #globaldefine that has both a name and a value overwrites a previous #globaldefine.
     *****************************/
@@ -509,7 +509,7 @@ To create a macro library:
 
 ### Code examples
 
-Finance and Operations has an macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
+Finance and Operations has a macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
 
     static void SystemProvidedMacroLibraryJob(Args _args)
     {

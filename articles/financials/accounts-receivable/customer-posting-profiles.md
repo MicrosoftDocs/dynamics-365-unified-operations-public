@@ -18,7 +18,7 @@ ms.search.form: CustPosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -58,10 +58,6 @@ Specify the ledger accounts that are used in the posting of transactions that us
 If you want all customer transactions to have the same posting profile, set up only one posting profile with All in the Account code field. Specify the following values to set up your posting profile:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>

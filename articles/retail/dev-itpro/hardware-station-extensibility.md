@@ -5,7 +5,7 @@ title: Hardware Station overview and extensibility
 description: This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17971
 ms.assetid: 256f7f2b-c419-442f-b195-0c6a299a056e
@@ -66,7 +66,7 @@ For this scenario, we will add support for a cash dispenser device in Hardware S
 
 -   The Retail software development kit (SDK) has a cash dispenser sample. See RetailSdk\\SampleExtensions\\HardwareStation.
 -   In this case, we must add a new Web API controller and helper properties/methods.
--   The new **CashDispender** controller must extend **ApiController** and **IHardwareStationController**.
+-   The new **CashDispenser** controller must extend **ApiController** and **IHardwareStationController**.
 -   The **Export** attribute string here specifies the device that this controller is used for: \[Export("CASHDISPENSER", typeof(IHardwareStationController))\]
 
 <!-- -->

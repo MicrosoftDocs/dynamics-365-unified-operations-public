@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Exclude test packages from the build output
+
+[!include[banner](../includes/banner.md)]
 
 In Platform update 4, the automated build process lets you prevent specific packages from being included in the deployable package in the build output. This capability can be important for customers that use automated testing. These customers might want to build and run their tests, but prevent them from being added to the deployable package that the build generates as output.
 

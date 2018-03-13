@@ -5,7 +5,7 @@ title: X++ string run-time functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31401
 ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
@@ -100,7 +100,7 @@ The search is case-insensitive. The following special characters can be used to 
 </tr>
 <tr class="even">
 <td>? or .</td>
-<td>A question mark (?) or a period (.) matchs any one character in the same position. Examples:
+<td>A question mark (?) or a period (.) matches any one character in the same position. Examples:
 <ul>
 <li><strong>match(&quot;abc.def&quot;,&quot;abc#def&quot;);</strong> returns <strong>1</strong>.</li>
 <li><strong>match(&quot;colou?r&quot;,&quot;colouXr&quot;);</strong> returns <strong>1</strong>.</li>

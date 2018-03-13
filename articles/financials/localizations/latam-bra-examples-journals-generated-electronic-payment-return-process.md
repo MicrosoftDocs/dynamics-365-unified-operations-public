@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269174
 
@@ -51,7 +51,7 @@ You can post all approved payment lines that belong to the same journal name to 
 | DP           | 002            | 1            | Approved | 5,000  |
 | DP           | 002            | 2            | Sent     | 6,000  |
 
-When you post the payment lines, the two approved payment lines for journal numbers 001 and 002 that belong to the DP journal name are posted to the same payment journal, 003. However, the approved payment line for journal number 100 that belongs to the Test journal name is posted to payment journal 101.The following table contains information about the payment journals that are created when you post the approved payment lines.
+When you post the payment lines, the two approved payment lines for journal numbers 001 and 002 that belong to the DP journal name are posted to the same payment journal, 003. However, the approved payment line for journal number 100 that belongs to the Test journal name is posted to payment journal 101. The following table contains information about the payment journals that are created when you post the approved payment lines.
 
 | New journal number | From journal number | Payment line | Status   | Amount |
 |--------------------|---------------------|--------------|----------|--------|

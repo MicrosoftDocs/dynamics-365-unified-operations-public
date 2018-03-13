@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: bis
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58021
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b

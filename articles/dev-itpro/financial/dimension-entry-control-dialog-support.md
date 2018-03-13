@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26321
 ms.assetid: ec5f2f8c-eb9b-4fbe-a388-be145b2bf98b
@@ -58,7 +58,7 @@ In the current release, this code would be converted to:
 
 For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.
 
-# See also
+## See also
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 

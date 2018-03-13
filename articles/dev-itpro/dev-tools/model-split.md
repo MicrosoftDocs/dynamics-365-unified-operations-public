@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26941
 ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 
-# Overview
+## Overview
 
 Developing modular code is the driving force behind the model split. Splitting the stack into multiple models provides many benefits, including faster compile time and a greater distinction between partner's IP in production. There are three main models: the **Application Platform**, the **Application Foundation**, and the **Application Suite**. 
 

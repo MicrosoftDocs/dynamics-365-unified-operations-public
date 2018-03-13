@@ -5,7 +5,7 @@ title: Business Activity Statement (BAS)
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/08/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,9 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12641
-ms.assetid: 76db7011-2055-4c24-ac78-8f4d0675da2b
 ms.search.region: Australia
 # ms.search.industry: 
 ms.author: shylaw
@@ -114,6 +113,7 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 | Default       | 11             | G11 Other acquisitions                                                     | G11                 |
 | Default       | 13             | G13 Acquisitions for making input taxed sales & income and other supplies  | G13                 |
 | Default       | 14             | G14 Acquisitions with no GST in the price                                  | G14                 |
+| Default       | 15             | Non-income tax deductible acquisitions                                     | G15                 |
 | Default       | 18             | G18 Adjustment (credit)                                                    | G18                 |
 | Default       | 101            | 1C Wine equalization tax payable                                           | 1C                  |
 | Default       | 102            | 1D Wine equalization tax refundable                                        | 1D                  |

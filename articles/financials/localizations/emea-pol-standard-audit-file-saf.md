@@ -18,7 +18,7 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
@@ -31,6 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Standard audit file (SAF) for Poland
+
+[!include[banner](../includes/banner.md)]
 
 Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 

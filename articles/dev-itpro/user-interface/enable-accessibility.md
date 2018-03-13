@@ -2,10 +2,10 @@
 # required metadata
 
 title: Accessibility in forms, products, and controls
-description: This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+description: This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.reviewer: robinr
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104943
 ms.assetid: 5b97c471-212a-4487-baef-120d01063319
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include[banner](../includes/banner.md)]
 
 
-This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 
 Accessibility is about inclusion, that is, a person with a disability can perform the same task as a person without that disability. Making an accessible control or form should be as fundamental as making it secure, high-performing, or easy-to-understand.
 
@@ -46,7 +46,7 @@ The bedrock of accessibility is keyboard-only access. When you can use the keybo
 The use of color is encouraged and is a common way to express state or status of a record or other piece of information. However, color cannot be the only way that state or status is communicated. An accompanying symbol, help text, or additional column should include a textual description of the state or status. A simple test is to identify all use of color in your system and ensure that color isn't being used to express a state or status. A common example is to use the color red to indicate "needs attention," or the color green to mean an "OK" status.
 
 ## Images
-When showing an image there should be a label that describes the image. If the image expresses state or status of a record, then accompanying help text or an additional column should include a textual description of the state or status. If the image is symbolic, like a logo, then it doesn’t require a textual description. If you have an image on a form or grid to convey a status, such as "in progress", ensure that the image has a tooltip that can then be read to a sight-impaired user who is utilizing a screen reader.
+When showing an image there should be a label that describes the image. If the image expresses state or status of a record, then accompanying help text or an additional column should include a textual description of the state or status. If the image is symbolic, like a logo, then it doesn’t require a textual description. If you have an image on a form or grid to convey a status, such as "in progress", ensure that the image has a tooltip that can then be read to someone who is utilizing a screen reader.
 
 ```
 public display container statusImageDataMethod()
@@ -81,7 +81,7 @@ A visually impaired or blind user cannot be surprised by significant or unexpect
 | Visible focus indicator               |                                                                                                                                                                                                                                    | It’s always apparent which control has focus.                                                                                                                                      |                   |
 | Focus order                           | Cannot “jump to” a non-logical location.                                                                                                                                                                                           | Tabbing doesn’t jump to a non-logical portion or unexpected portion of the form.                                                                                                   |                   |
 | Focus trapping                        | Cannot be “trapped” in a control, focus must be able to move out of control using the keyboard.                                                                                                                                    | Tabbing into a control should allow tabbing out or a keyboard equivalent that lets them escape.                                                                                    |                   |
-| Images of text                        | Cannot use an image to display text.                                                                                                                                                                                               | For example, you cannot have a button label that is an image of text. Logo’s are exempt.                                                                                           |                   |
+| Images of text                        | Cannot use an image to display text.                                                                                                                                                                                               | For example, you cannot have a button label that is an image of text. Logos are exempt.                                                                                           |                   |
 | Using color                           | Color alone cannot be used to convey status or state.                                                                                                                                                                              | All status indicators on a form or grid must have unique shape or texture for each color. See the "Color" section in this document for more information.                           |                   |
 | Text contrast                         | Minimum 4.5:1 ratio.                                                                                                                                                                                                               | Extensible controls should use framework color theming to ensure compliance.                                                                                                       |                   |
 | User input instructions               | Widgets or other multi-step controls must have a usability overview label or help text (can be embedded in ARIA tag).                                                                                                              | When using a screen reader, the control must be introduced and its label or purpose described.                                                                                     |                   |
@@ -91,7 +91,7 @@ A visually impaired or blind user cannot be surprised by significant or unexpect
 | Use of video                          | Video (with audio) must have accompanied text.                                                                                                                                                                                     | When showing pre-recorded content, the deaf person must have supporting text to consume the content.                                                                               |                   |
 | Use of images                         |                                                                                                                                                                                                                                    | All images must be accompanied by text that describes the specific content. For example, a “tooltip” or secondary column in a grid that describes and matches the state or status. |                   |
 | Communication                         | Use of VoIP or other telecommunication device or software, such as Skype, must be accessible and usable from the keyboard.                                                                                                         | Any use of VoIP or telecommunication is a legal obligation.                                                                                                                        |                   |
-| Navigation                            |                                                                                                                                                                                                                                    | Navigation controls must communitate that navigation will occur if executed.                                                                                                       |                   |
+| Navigation                            |                                                                                                                                                                                                                                    | Navigation controls must communicate that navigation will occur if executed.                                                                                                       |                   |
 
 ## Extensible controls – Insights for accessibility
 An extensible control is simply an extension of the framework. The interaction of the extensible control should be considered no different than any other framework control. When the control is a visually-rich widget that offers mouse actions, the author needs to ensure that equivalent, keyboard access functionality is available. A widget may not run in an “accessible mode” that is different than the standard presentation. Instead the widget must offer similar functionality without the need to activate or toggle state of the control. All uses of color should be based on themed colors so that when the mode is “High Contrast” your color scheme matches the theme change. The World Wide Web Consortium (WC3) website provides guidance for "Supported States and Properties" ([www.w3.org/TR/wai aria/states\_and\_properties\#state\_prop\_def](http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def)). This site is a helpful resource for ARIA tags and provides the definitions that you see below.

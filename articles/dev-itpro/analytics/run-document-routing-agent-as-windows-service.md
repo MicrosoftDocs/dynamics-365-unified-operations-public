@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191133
 ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
@@ -111,4 +111,4 @@ The Document Routing Agent is now running as a Windows service.
     
 ### Review the event logs
 1. On the host machine, start Event Viewer.
-2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-SSRSReportsShared**.
+2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-DocumentRouting**.

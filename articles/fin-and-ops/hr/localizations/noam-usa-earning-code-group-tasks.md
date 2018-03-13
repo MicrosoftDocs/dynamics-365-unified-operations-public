@@ -18,7 +18,7 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221384
 ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df

@@ -5,7 +5,7 @@ title: Establish customer payment terms
 description: This procedure defines a cash discount and due date setup. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/26/2016
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -61,7 +61,7 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 19. In the Cash discount field, enter an ID in the Cash discount field.
 20. In the Description field, enter a description.
 21. If a tiered cash discount is available, select the Next discount code that is relevant after this new cash discount.
-22. Enter the number of days used to calculate the cash dicount date.
+22. Enter the number of days used to calculate the cash discount date.
     * If Net principle is selected, the number of days will be added to the invoice date to calculate the cash discount date.  
 23. Enter the percentage of the cash discount.
 24. Enter the main account to which the cash discount will post for customer invoices.

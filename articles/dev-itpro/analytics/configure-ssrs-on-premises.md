@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 # Configure SQL Server Reporting Services for an on-premises deployment
+
+[!include[banner](../includes/banner.md)]
 
 Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) deployment.
 

@@ -5,7 +5,7 @@ title: Import configurations to generate documents with application data update 
 description: To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active”. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 06/19/2017
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -36,7 +36,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.  
-    * The steps in this procedure show how to use ER capabilities to complete an application data update and how to generate a Intrastat report. The details of the reporting process are archived in the application tables. Currently, when the Intrastat reporting process is activated from the Intrastat form, archiving is done based on the logic programmed in the existing source code. In this procedure, you will configure a similar yet simplified logic of application data using only the ER framework. No changes will be made to the source code.   
+    * The steps in this procedure show how to use ER capabilities to complete an application data update and how to generate an Intrastat report. The details of the reporting process are archived in the application tables. Currently, when the Intrastat reporting process is activated from the Intrastat form, archiving is done based on the logic programmed in the existing source code. In this procedure, you will configure a similar yet simplified logic of application data using only the ER framework. No changes will be made to the source code.   
 
 ## Import ER configurations
 1. Click Reporting configurations.

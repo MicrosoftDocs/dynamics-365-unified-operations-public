@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade in a sandbox environment
-description: This topic explains how to perform a data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
+title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
+description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope:  Operations, UnifiedOperations, Platform
+ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Data upgrade in a sandbox environment
+# Upgrade from AX 2012 - Data upgrade in a sandbox environment
 
 [!include[banner](../includes/banner.md)]
 
@@ -50,7 +50,7 @@ Here are the high-level steps in the upgrade process.
 2. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 3. Upload the bacpac file to Azure storage.
 4. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
-5. Run the MajorVersionDataUpgrade.zip package to run the data upgrade against the imported database.
+5. Run the appropriate data upgrade package against the imported database.
 
 ## Create a copy of the AX 2012 database
 
@@ -146,9 +146,10 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 
 	declare     viewCursor CURSOR for
 
-	select viewname = v.name
-	from sys.views v
-	order by v.name
+	select s.name + '.' + v.name 
+	from sys.views v, sys.schemas s 
+	where s.schema_id = v.schema_id
+    	order by v.name
 
 	OPEN viewCursor
 
@@ -202,7 +203,7 @@ The bacpac file you have created will need to be copied to the AOS machine in yo
 1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
 2. Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.
 
-You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-prem environment to Azure storage and then on your download it on your development environment.
+You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
 ### Import the bacpac file into SQL Database
 
@@ -276,9 +277,16 @@ Run the following script against the imported database. The script performs the 
 	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
-### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
+### Run the data upgrade deployable package
 
-Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
+To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+
+1. Sign in to http://lcs.dynamics.com/
+2. Select the **Shared asset library** tile.
+3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
+4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
+
+For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
 
 ### Upgrade a copy of the database in a development environment
 

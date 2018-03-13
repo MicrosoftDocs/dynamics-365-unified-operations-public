@@ -5,7 +5,7 @@ title: Extensibility changes in the Dynamics 365 for Finance and Operations, Ent
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 manager: AnnBe
-ms.date: 08/13/2017
+ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -719,7 +719,7 @@ Foundation changes were made to improve support for extensible enumerations. The
 
 ## Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events
 
-As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not alwaysed follow this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
+As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not always followed this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
 
 The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
 

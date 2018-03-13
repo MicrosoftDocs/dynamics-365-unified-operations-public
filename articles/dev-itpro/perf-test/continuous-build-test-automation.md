@@ -5,7 +5,7 @@ title: Deployment with continuous build and test automation
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13171
-ms.assetid: 300b7ebe-c320-4a2f-89a9-33635c7108d2
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shailesn
@@ -54,15 +54,18 @@ Compare VSTS features required for your organization: <https://www.visualstudio.
     
 -   **Free VSTS account provides only one build agent**. Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.
 
-To use more than one build agents, setup your VSTS account with Azure billing: <https://www.visualstudio.com/get-started/setup/set-up-billing-for-your-account-vs> 
+
+To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - <https://www.visualstudio.com/en-us/get-started/setup/get-more-build-or-load-testing-vs>
+-   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](/vsts/billing/buy-load-testing-vs)
+
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
 
-Note: make sure you increase “Private Agents” under PAID option. 
+> [!NOTE]
+> Make sure you increase “Private Agents” under PAID option. 
 
 [![VSTS3](./media/vsts3-300x191.jpg)](./media/vsts3.jpg)
 
@@ -86,14 +89,15 @@ LCS provides an option to deploy a Development topology environment. With this o
 
 ### VSTS credential setup and linking to LCS project
 
-1.  Login to the LCS portal to connect to VSTS and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/en/).
+1.  Login to the LCS portal to connect to VSTS and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/).
 2.  Select a project that you are working on.
 3.  Click the **Project Settings** tile.
 4.  Select **Visual Studio Team Services** and enter the VSTS URL where the source code for your module project is located.
 5.  Specify the VSTS link, authorize, and then click **Choose default project**.
-6.  **Note:** We currently support VSTF as source control and do not support Git. 
+ > [!NOTE]
+ > We currently support VSTF as source control and do not support Git. 
 
-    [![VSTS](./media/vsts-1024x792.jpg)](./media/vsts.jpg)
+[![VSTS](./media/vsts-1024x792.jpg)](./media/vsts.jpg)
 
 ### Check-in migrated or new module code into VSTS
 
@@ -116,7 +120,10 @@ As part of code Migration process or development activities, we expect you to ch
     -   Depending on your LCS project type, some deployment steps described below may vary.
 
 5.  On the **Deploy environment** pane, enter the environment name for the deployment, and select the number of instances for **Developer** VMs.
-6.  **Note:** You can only deploy one Build VM and one Developer VM. If you don’t want to deploy a Developer VM, then set instances count to zero. If you want multiple Developer VMs then deploy new environment per developer VM.
+ > [!NOTE]
+ > You can only deploy one Build VM and one Developer VM. If you don’t want to deploy a Developer VM, then set instances count to zero. 
+
+ If you want multiple Developer VMs then deploy new environment per developer VM.
 
     [![Deploy](./media/deploy-1024x669.jpg)](./media/deploy.jpg)
     
@@ -211,6 +218,3 @@ Select specific completed build and view success/ failure details.
 [![build10](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
 [![build11](./media/build11-1024x455.jpg)](./media/build11.jpg)
-
-
-

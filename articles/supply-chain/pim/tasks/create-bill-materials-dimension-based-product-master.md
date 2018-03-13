@@ -5,7 +5,7 @@ title: Create a bill of materials for a dimension-based product master
 description: For this procedure you should have completed the previous 4 guides in this sequence of eight recordings. 
 author: YuyuScheller
 manager: AnnBe 
-ms.date: 06/21/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -72,7 +72,7 @@ For this procedure you should have completed the previous 4 guides in this seque
 19. In the Item number field, enter or select a value.
     * Select Item number M0007 StandardCabinet as the last BOM line.  
 20. In the Configuration group field, enter or select a value.
-    * Select the Cabinet configuration group for the laste BOM line.  
+    * Select the Cabinet configuration group for the last BOM line.  
 
 ## Approve and activate
 1. Close the page.

@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: CustParameters 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, Operations, Unified operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

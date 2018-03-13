@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 
 # Add a custom control to a POS view
+
+[!include[banner](../../includes/banner.md)]
 
 To enhance the information that appears in the views in Microsoft Dynamics 365 for Retail POS, you can add custom controls. A custom control lets you add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
 

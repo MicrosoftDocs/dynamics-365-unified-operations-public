@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
@@ -58,7 +58,7 @@ This is a new pattern in Finance and Operations.
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn’t include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Advanced selection guidelines:**
     -   By default, the Quick filter should use the name or description column.
     -   The list can display up to 15 columns. **Note:** This guidelines has been relaxed since Microsoft Dynamics AX 2012.

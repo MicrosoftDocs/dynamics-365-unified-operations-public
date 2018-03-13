@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Naming Guidelines
+
+[!include[banner](../includes/banner.md)]
 
 ## Naming model elements
 Any element in a model must be given a name, which is unique across all models at installation time. 
