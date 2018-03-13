@@ -51,7 +51,7 @@ To limit the impact on users, the maintenance window is planned according to the
 - APAC: 12 PM to 9 PM
 
 ### What updates are applied in the planned maintenance window?
-During the planned maintenance window, operating system–level updates, and critical security and reliability platform updates are applied. For more information about the patches that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/en-us/security/bulletins.aspx).  
+During the planned maintenance window, operating system–level updates, and critical security and reliability platform updates are applied. For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/en-us/security/bulletins.aspx).  
 
 ### How long is the maintenance window?
 Operating system–level updates are completed in approximately one hour.
