@@ -170,6 +170,6 @@ Follow these steps to configure the environment.
 
     You can now maintain the list of code types. You can change the code, name, and description. You can also delete code types. Code types that you delete won't be used to populate the global product entity identifier tables.
 
-4. When you've finished defining the product identifier code types, you can create the identifiers in the global table by starting **Create product entity identifiers**. You should run this job in a batch. This job should be set up as a periodic batch job so that the table are populated according to new entries.
+4. When you've finished defining the product identifier code types, you can create the identifiers in the global table by starting **Create product entity identifiers** on the **Product entity identifier codes** page. You should run this job in a batch. This job should be set up as a periodic batch job so that the table are populated according to new entries.
 
 You can now use the Product entity common data service identifier entity, Product entity identifier code, and Product entity identifier scope data entities to export the identifiers for any target system.
