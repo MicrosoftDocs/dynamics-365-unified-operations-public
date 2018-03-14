@@ -42,7 +42,7 @@ For instance, Customer Collections and Leger Activity are examples of business p
 The Entity Store functions as an intermediary cache between the Dynamics 365 for Finance & Operations transactional database and the published end-points consumed by external reporting and analytical tooling like Excel or Power BI.com.  Entity Store ensures the memory consumed by reporting and monitoring solutions do not interfere with resources supporting active user sessions in the web application.  The Cloud hosted service automatically updates Entity Store models based on a refresh schedule managed by the System Administrator.  
 
 The following diagram illustrates the management of business data for Reporting & Analytics tooling.
-[![Incremental-refresh](./media/Incremental refresh data flow diagram.png)](./media/Incremental refresh data flow diagram.png) 
+[![Incremental-refresh](./media/Incremental-refresh-data-flow-diagram.png)](./media/Incremental-refresh-data-flow-diagram.png) 
 
 Within the Customer Collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the Application Suite provides an Entity Store model for Customer Collections agents that can be used to conveniently visualize the Aging buckets of customers.  Because the data is sourced from the Entity Store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database.  Click here for more information on the Entity Store.
 
@@ -63,7 +63,7 @@ Incremental refresh is now available as an option for updating Entity Store mode
 **Can have an Entity Store model that uses both incremental and full-refresh?**  Absolutely, in fact, we recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details in the model are updated.
 
 Here's a screenshot of the Entity Store model administration experience using Incremental refresh options…
-[![Incremental-refresh](./media/Entity Store model administration - Incremental.png)](./media/Entity Store model administration - Incremental.png) 
+[![Incremental-administration](./media/Entity-Store-model-management.png)](./media/Entity-Store-model-management.png) 
 
 
 System Administrators use the Entity Store model management form to define the schedule for synchronizing data with the Dynamics 365 for Finance & Operations transactional database.  For more information on using the Entity Store admin tools, review the related article Scheduling Entity Store model refreshes.
