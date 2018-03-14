@@ -54,29 +54,58 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
         - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
-    - In the **Reference\\TaxEngine** folder:
-
-        - Microsoft.Dynamics365.Tax.Core.dll
-        - Microsoft.Dynamics365.Tax.DataAccessor.dll
-        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-        - Microsoft.Dynamics365.Tax.DataModel.dll
-        - Microsoft.Dynamics365.Tax.Metadata.dll
-        - Microsoft.Dynamics365.LocalizationFramework.dll
-        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-        - Microsoft.Dynamics365.XppSupportLayer.dll
-
     - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
 
         - Newtonsoft.Json.dll
 
-    - In the **Reference\\Z3\\x86** folder:
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
 
-        - Microsoft.Z3.dll
-        - libz3.dll
+    In the **Reference\\TaxEngine** folder:
 
-        > [!NOTE]
-        > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+      - Microsoft.Dynamics365.Tax.Core.dll
+      - Microsoft.Dynamics365.Tax.DataAccessor.dll
+      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+      - Microsoft.Dynamics365.Tax.DataModel.dll
+      - Microsoft.Dynamics365.Tax.Metadata.dll
+      - Microsoft.Dynamics365.LocalizationFramework.dll
+      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+    In the **Reference\\Z3\\x86** folder:
+
+      - Microsoft.Z3.dll
+      - libz3.dll
+
+      > [!NOTE]
+      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+    In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
+
+      - Microsoft.Dynamics365.LocalizationFramework.dll
+      - Microsoft.Dynamics365.Tax.Core.dll
+      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+      - Microsoft.Dynamics365.Tax.DataAccessor.dll
+      - Microsoft.Dynamics365.Tax.DataModel.dll
+      - Microsoft.Dynamics365.Tax.Metadata.dll
+
+    In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
+
+      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+    In the **Reference\\Z3.4.5.0\\lib\\net40\\x86** folder:
+
+      - Microsoft.Z3.dll
+      - libz3.dll
+
+      > [!NOTE]
+      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+
+    ---
 
 3. Copy the 13 assembly files to the CRT extensions folder:
 
@@ -113,6 +142,8 @@ Follow these steps to create deployable packages that contain Retail components,
 
 2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.Core.dll" />
@@ -127,6 +158,27 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3\x86\Microsoft.Z3.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3\x86\libz3.dll" />
+    ```
+
+    > [!NOTE]
+    > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+    ``` xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Core.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Metadata.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessFramework.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataModel.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFramework.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\Microsoft.Z3.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\libz3.dll" />
     ```
 
     > [!NOTE]
