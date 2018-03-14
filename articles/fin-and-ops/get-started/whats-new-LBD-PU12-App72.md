@@ -50,7 +50,7 @@ Note that the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigu
 ## Hotfixes
 Hotfixes that you can download from LCS provide additional features for your on-premises deployments of Platform update 12. Be sure to apply the following hotfixes:
 
-- **KB 4091763 - Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines. For more information, see [Client internet connection](../../dev-itpro/user-interface/client-disconnected.md).
+- **[KB 4091763 - Admin toggles for Client connectivity and Skype presence](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6)**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines. For more information, see [Client internet connection](../../dev-itpro/user-interface/client-disconnected.md).
 
-- **KB 4093454 - NAME**: For more information, see [ISV licensing (on-premises)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md).
+- **[KB 4093454 - ISV license support for on-premises](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592)**: When deploying an on-premises environment starting from platform update 12, the tenant GUID is automatically populated from LCS to the on-prem environment. Licensing validation can read this value and successfully validate the licenses. For more information, see [ISV licensing (on-premises)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md).
 
