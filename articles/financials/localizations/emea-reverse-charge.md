@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse charge VAT
-description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries.
+description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries and Saudi Arabia.
 author: epodkolz 
 manager: AnnBe
 ms.date: 05/12/2017
@@ -13,18 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.search.industry: [leave blank for most, retail, public sector]
+# ms.custom: 
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+# ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+
 ---
 
 # Reverse charge VAT
@@ -32,7 +33,7 @@ This topic describes a generic approach for setting up the reverse charge value-
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) in their VAT statement.
 
-The European Union (EU) Directive let member states determine how they would adapt the generic requirements to local requirements. Therefore, in some countries, the Reverse Charge schema is implemented only for some goods and/or services, and there are additional conditions or thresholds on sales amounts. In other countries, the responsibility for VAT payment depends on the status of the supplier and the buyer. If the buyer is liable to pay VAT, this fact must be clearly indicated on the invoice that the supplier issues. For example, the invoice must include the words "Reverse charge" and must indicate which positions are under the Reverse Charge schema. 
+In some countries/regions, the Reverse Charge schema is implemented only for some goods and/or services, and there are additional conditions or thresholds on sales amounts. In other countries/regions, the responsibility for VAT payment depends on the status of the supplier and the buyer. If the buyer is liable to pay VAT, this fact must be clearly indicated on the invoice that the supplier issues. For example, the invoice must include the words "Reverse charge" and must indicate which positions are under the Reverse Charge schema. 
 
 To apply the reverse charge, you must complete the following setup.
 
@@ -70,7 +71,7 @@ We recommend that you use separate sales tax groups for purchase operations and 
 </tr>
 <tr>
 <td><strong>Sales tax groups for purchases</strong></td>
-<td>Create a sales tax group for purchase operations that have the reverse charge (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include both positive and negative sales tax codes in this group. Select the <strong>Reverse charge</strong> check box for the sales tax code that has a negative value.</td>
+<td>Create a sales tax group for purchase operations that have the reverse charge (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include both positive and negative sales tax codes in this group. Select the <strong>Reverse charge</strong> check box for the sales tax code that has a negative value. </td>
 </tr>
 <tr>
 <td><strong>Item sales tax groups</strong></td>
@@ -105,6 +106,10 @@ To enable the functionality, on the **General ledger parameters** page, on the *
 For sales under the Reverse Charge schema, the seller doesn't charge VAT. Instead, the invoice indicates both the items that are subject to the reverse charge VAT and the total amount of the reverse charge VAT.
 
 When a sales invoice is posted that has the reverse charge, the sales tax transactions have the **Sales tax payable** tax direction and zero sales tax, and the **Reverse charge** check box is selected.
+
+In the following screenshot, one transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
+
+![Posted sales tax](media/apac-sau-posted-sales-tax.png)
 
 ## Reverse charge on a purchase invoice
 For purchases under the Reverse Charge schema, the purchaser that receives the invoice that has the reverse charge acts as a buyer and a seller for VAT accounting purposes.
