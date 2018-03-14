@@ -5,7 +5,7 @@ title: Testing with the data management framework
 description: 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,12 +16,8 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 25341
-# ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: Platform update 14
 
 ---
 
-# Task automation in data management framework
+# Task automation in the Data management workspace
 
 The task automation manager in data management enables automation of certain types of data tasks for specific scenarios. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
 1.	Identify the data related tasks that will benefit from task automation. A task would usually be a configuration task or a task to import/export some data. Implementation teams must look at their configuration management and data migration plan to identify potential tasks that can benefit from task automation. Implementation teams can also identify test cases for automated testing of data entities. Each test case can then be defined as a task.
