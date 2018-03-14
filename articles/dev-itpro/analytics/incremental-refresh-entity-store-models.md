@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 16
 
 TARGET: **Platform Update 16 or later**
 
-## WHAT ARE ENTITY STORE MODELS?
+## What are Entity Store models?
 Entity Store models are used in Dynamics 365 for Finance & Operations to provide customers with accessible views of business data for Reporting & Analytical tools.  Delivered as part of the application metadata, Entity Store models can be described as collections of data sets and relationships associated with a particular business process.  Models often contain a root data source and a series of related views that are useful in analyzing business activities and performance.  
 
 For instance, Customer Collections and Leger Activity are examples of business processes that require an Entity Store model for reporting and analytics.  Defined in the application metadata using Aggregate Measurements, these views are specifically designed to be the source of data for high volume consumers like visualizations embedded in dashboards and electronic reports.
@@ -47,7 +47,7 @@ IMAGE HERE
 Within the Customer Collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the Application Suite provides an Entity Store model for Customer Collections agents that can be used to conveniently visualize the Aging buckets of customers.  Because the data is sourced from the Entity Store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database.  Click here for more information on the Entity Store.
 
 
-## MANAGING ENTITY STORE MODELS
+## Managing Entity Store models
 By channeling reporting and analytical queries to the Entity Store, system administrators have the opportunity to control the time accuracy of the data.  For some data analytics scenarios, data that is delayed by 5-10 minutes will be acceptable by users.  However, for other types of reporting experiences the information customers require near real-time results.  It's important to understand time requirements associated with the data before rolling out an Entity Store model refresh strategy.
 
 System administrators use built-in tooling to manage the frequency at which Entity Store models are refreshed with the latest updates available in the transactional database.  Dynamics 365 for Finance & Operations supports both a Full and Incremental synchronization strategy that may be used in concert to keep models up-to-date:
