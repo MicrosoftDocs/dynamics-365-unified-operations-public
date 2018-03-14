@@ -214,7 +214,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
 2. In the **RetailServer\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the **Contoso.RetailServer.SalesTransactionSignatureSample.dll** assembly file.
 3. Copy the assembly file to the Retail Server extensions folder.
 
-    # [Application update 4, update 5](#tab/app-update-4-update-5)
+    # [Application update 4](#tab/app-update-4)
+
+    The folder is **\\bin** folder under the IIS Retail Server site location.
+
+    # [Application update 5](#tab/app-update-5)
 
     The folder is **\\bin** folder under the IIS Retail Server site location.
 
@@ -270,6 +274,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
         > - This step resembles the step for including the SalesTransactionSignature.Messages CRT extension component, but it uses a different destination folder: bin instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
+
     > [!Note]
     > There are no any actions required.
 
@@ -475,7 +480,16 @@ Follow these steps to create deployable packages that contain Retail components,
 
     2. Enable Retail Proxy customization
 
-        # [Application update 4, update 5](#tab/app-update-4-update-5)
+        # [Application update 4](#tab/app-update-4)
+
+        In the **dllhost.exe.config** configuration file, add the following lines to the **appSettings** subsection of the **configuration** section.
+
+        ``` xml
+        <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy"/>
+        <add key="AdaptorCallerFullTypeName" value ="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller"/>
+        ```
+
+        # [Application update 5](#tab/app-update-5)
 
         In the **dllhost.exe.config** configuration file, add the following lines to the **appSettings** subsection of the **configuration** section.
 
@@ -497,7 +511,15 @@ Follow these steps to create deployable packages that contain Retail components,
 2. Make the following changes in the **Customization.settings** package customization configuration file:
 
     1. Enable Retail Proxy customization
-        # [Application update 4, update 5](#tab/app-update-4-update-5)
+        # [Application update 4](#tab/app-update-4)
+
+        Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
+
+        ``` xml
+        <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
+        ```
+
+        # [Application update 5](#tab/app-update-5)
 
         Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
 
