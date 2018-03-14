@@ -100,7 +100,7 @@ The following areas should be validated:
 
 ### Download and import the bacpac file to the Azure SQL database
 
-When this task occurs at go-live, it will be performed by the Microsoft DSE team. However, during cutover testing, it involves your DBA. The outcome of this task is the export file that will be uploaded to Azure for the new system.
+This task involves your DBA. The outcome of this task is the export file that will be uploaded to Azure for the new system.
 
 The following areas should be validated:
 
@@ -116,7 +116,7 @@ The following areas should be validated:
 
 ### Run the MajorVersiondataUpgrade.zip package
 
-When this task occurs at go-live, it will be performed by the Microsoft DSE team. However, during cutover testing, it involves the developers. During this task, the old database structure is transformed to the structure of the new system.
+When this task occurs at go-live (during the real cutover), it will be performed by the Microsoft DSE team. However, during cutover testing, it involves the developers. During this task, the old database structure is transformed to the schema of the new system.
 
 The database synchronization process runs as part of this task. Database synchronization might take a significant amount of time in some situations, such as when a clustered index has changed on a table, because this operation is a costly operation in SQL.
 
