@@ -181,8 +181,8 @@ The list below descibes all supported requests types that a payment connector ca
 | **ClosePaymentTerminalDeviceRequest** | Called after the sales transaction is concluded to close the connection to the payment terminal. | 
 | **ActivateGiftCardPaymentTerminalRequest** | Called when an external gift card is being activated through the POS. | 
 | **AddBalanceToGiftCardPaymentTerminalRequest** | Called when a balance is being added to an external gift card. | 
-| **GetGiftCardBalancePaymentTerminalRequest** | Called to when the balance on the gift card is being retrieved. | 
-| **GetPrivateTenderPaymentTerminalDeviceRequest** | TODO | 
+| **GetGiftCardBalancePaymentTerminalRequest** | Called when the balance on the gift card is being retrieved. | 
+| **GetPrivateTenderPaymentTerminalDeviceRequest** | Called when retrieving gift card numbers from the payment terminal for gift card flows (e.g. issue gift card, pay by gift card, or add to gift card). | 
 | **ExecuteTaskPaymentTerminalDeviceRequest** | Extension request that can be invoked from the POS through customizations to enable additional payment related flows. | 
 
 ##### OpenPaymentTerminalDeviceRequest
@@ -246,8 +246,8 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
 | amount | The amount to authorize. |
 | currency | The currency for the amount to authorize. |
-| tenderInfo | TODO |
-| voiceAuthorization | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
+| voiceAuthorization | The voice approval code sent from the POS in case voice authorization is required. |
 | isManualEntry | Defines whether the card number was entered manually. |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
@@ -262,7 +262,7 @@ The `AuthorizePaymentCardPaymentResponse` response object has to be returned whe
 | CashbackAmount | The cashback amount defined on the payment terminal (for debit transactions). |
 | Errors | List of errors occurred during the authorize call. |
 | IsApproved | Flag indicating whether the payment was approved. |
-| PaymentSdkData | The response data used to support cross channel payment operations. |
+| PaymentSdkData | The response data used to support state between the `Authorize` \ `Refund` and `Capture` \ `Void` call or cross channel payment operations. |
 
 The `PaymentSdkData` has to contain the following data.
 
@@ -344,7 +344,7 @@ public CapturePaymentTerminalDeviceRequest(string token, decimal amount, string 
 | token | Unique token value generated when the payment terminal is initially locked for the transaction. |
 | amount | The amount to capture. |
 | currency | The currency for the amount to capture. |
-| paymentPropertiesXml | TODO |
+| paymentPropertiesXml | The content of the `PaymentSdkData` returned by the `AuthorizePaymentTerminalDeviceRequest` or `RefundPaymentTerminalDeviceRequest` used to support stateful properties between the requests. |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ###### Other Considerations
@@ -367,8 +367,8 @@ public VoidPaymentTerminalDeviceRequest(string token, string paymentConnectorNam
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
 | amount | The amount for the payment to void. |
 | currency | The currency for the payment to void. |
-| tenderInfo | TODO |
-| paymentPropertiesXml | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
+| paymentPropertiesXml | The content of the `PaymentSdkData` returned by the `AuthorizePaymentTerminalDeviceRequest` or `RefundPaymentTerminalDeviceRequest` used to support stateful properties between the requests. |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ##### RefundPaymentTerminalDeviceRequest
@@ -382,7 +382,7 @@ public RefundPaymentTerminalDeviceRequest(string token, string paymentConnectorN
 | --- | --- |
 | token | Unique token value generated when the payment terminal is initially locked for the transaction. |
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
-| tenderInfo | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
 | amount | The amount to refund. |
 | currency | The currency for the amount to refund. |
 | isManualEntry | Defines whether the card number was entered manually. |
@@ -438,7 +438,7 @@ public ActivateGiftCardPaymentTerminalRequest(string token, string paymentConnec
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
 | amount | The initial amount to add to the gift card during activation. |
 | currency | The currency for the initial amount to be added to the gift card during activation. |
-| tenderInfo | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ##### AddBalanceToGiftCardPaymentTerminalRequest
@@ -454,7 +454,7 @@ public AddBalanceToGiftCardPaymentTerminalRequest(string token, string paymentCo
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
 | amount | The amount to add to the gift card. |
 | currency | The currency in which to add the gift card balance. |
-| tenderInfo | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ##### GetGiftCardBalancePaymentTerminalRequest
@@ -469,7 +469,7 @@ public GetGiftCardBalancePaymentTerminalRequest(string token, string paymentConn
 | token | Unique token value generated when the payment terminal is initially locked for the transaction. |
 | paymentConnectorName | The name of the payment connctor used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. |  
 | currency | The currency in which to retrieve the gift card balance on. |
-| tenderInfo | TODO |
+| tenderInfo | The card information send from POS retrieved from an external source (if present). |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ##### GetPrivateTenderPaymentTerminalDeviceRequest
@@ -482,9 +482,9 @@ public GetPrivateTenderPaymentTerminalDeviceRequest(string token, decimal amount
 | Variable | Description |
 | --- | --- |
 | token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| amount | TODO | 
-| declined | TODO |
-| isSwipe | TODO |
+| amount | The amount set on the POS (generally used to display on the payment terminal when retrieving the card number). | 
+| declined | *This parameter is deprecated.* |
+| isSwipe | Determines whether the card number should be retrieved through a swipe or manual entry on the payment terminal. |
 | extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
 
 ##### ExecuteTaskPaymentTerminalDeviceRequest
@@ -648,5 +648,3 @@ The following table illustrates the required merchant property fields that have 
 | MerchantAccount | ServiceAccountId | f35989c8-e571-4de1-862a-996c82a2e6b6 |
 | MerchantAccount | SupportedCurrencies | AUD;BRL;CAD;CHF;CNY;CZK;DKK;EUR;GBP;HKD;HUF;INR;JPY;KPW;KRW;MXN;NOK;NZD;PLN;SEK;SGD;TWD;USD;ZAR |
 | MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |\
-
-## Error Handling
