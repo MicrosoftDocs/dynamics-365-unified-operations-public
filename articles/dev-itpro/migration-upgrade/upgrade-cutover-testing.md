@@ -44,12 +44,11 @@ The following illustration shows the overall process for cutover to go-live as i
 
 ![Cutover process](./media/cutover_1.png)
 
-This cutover process differs from a basic data upgrade in a sandbox environment in the following ways:
+This cutover process differs from a basic data upgrade validation in a sandbox environment in the following ways:
 
-- The AX 2012 database isn’t copied but is only backed up, and then the original database is modified. This approach is faster, and the backup provides rollback, if rollback is required.
-- Because the production environment for Finance and Operations has restricted access, the tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include downloading and importing the bacpac file, and running the MajorversionDataUpgrade.zip package.
+- The AX 2012 database isn’t copied but is only backed up, the original database is modified/upgraded. This approach is faster, and the backup provides rollback, if rollback is required.
+- Because the production environment for Finance and Operations has restricted access, some tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include running the data upgrade process on the production instance.
 - We added the following tasks:
-
     - Perform a smoke test.
     - Complete application setup tasks. This step can be large, depending on the functionality that is used. During this step, the functional team configures new application functionality so that it's ready to be used in the upgraded system.
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
