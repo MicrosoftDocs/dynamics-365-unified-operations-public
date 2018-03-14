@@ -154,7 +154,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 11. Click **OK** to accept the default values in the dialog box.
 12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the **To address** to your email address.
-    -   Ensure that the account specified in the SMTP settings is able to **Send As** or **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
+    -   Ensure that the account specified in the SMTP settings is able to **Send As** and **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
