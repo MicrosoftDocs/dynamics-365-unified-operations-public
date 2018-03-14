@@ -47,7 +47,7 @@ The following table lists the typical sales tax setup tasks with notes for sales
 | Set up sales tax reporting codes.                               |See [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) |[Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)||
 | Set up sales tax codes.                                         |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create sales tax codes for reverse charge operations](#create-sales-tax-codes-for-reverse-charge-operations)                                | [Sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)|
 | Set up sales tax groups and item sales tax groups                                        |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create a sales tax group for reverse charge](#create-sales-tax-group-for-reverse-charge)                 |[Sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)|
-| Set up sales tax parameters on the application parameter pages. | Enable reverse charge functionality on the **General ledger parameters** page. See [Reverse charges](#reverse-charges).   ||
+| Set up sales tax parameters on the application parameter pages. | Enable reverse charge functionality on the **General ledger parameters** page. See [Reverse charges](#reverse-charges).   |[Reverse charges](emea-reverse-charge.md)|
 
 
 ### Sales tax reporting codes example for Saudi Arabia
@@ -83,25 +83,6 @@ When you post an invoice with such setting, the system creates sales tax transac
 This setting allows you to analyze purchases from third countries by VAT rates.
 Example of sales tax transactions with different values of sales tax direction.
 
-## Reverse charges
-
-### Enable reverse charge
-You can enable the reverse charge functionality by setting the **Reverse charge** option to **Yes** on the **General ledger parameters** page. This functionality, when enabled, requires that the buyer reports the VAT transaction on behalf of the seller.  
-
-### Create sales tax codes for reverse charge operations
-Create sales tax codes for reverse charge operations (for purchase operations). It is necessary to set up two sales tax codes for reverse charge operations (for purchase operations): one with a positive rate and another with a negative rate.  You can fill in negative rate (SALES TAX CODE/ Value button) if Negative sales tax percentage check box has been selected in the Sales tax codes page as shown in the following screenshot.
-![Sales tax codes for reverse charge](media/apac-sau-sales-tax-codes-reverse-charge.png)
-
-### Create a sales tax group for reverse charge
-Create a sales tax group that has the **Reverse charge** check box selected for a sales tax code with a negative rate. The two sales tax codes that you created in [Create sales tax codes for reverse charge operations](#create-sales-tax-codes-for-reverse-charge-operations) should be added to a sales tax group and to an item sales tax group.  
-
-![Reverse charge selection on sales tax group](media/apac-sau-sales-tax-group-reverse-charge.png)
-
-
-### Sales tax transactions with reverse charges
-If the **Reverse charge** check box is selected in the sales tax group, sales tax transactions are created when you post an invoice. In the following screenshot, one transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
-
-![Posted sales tax](media/apac-sau-posted-sales-tax.png)
 
 ## Printing invoices
 
