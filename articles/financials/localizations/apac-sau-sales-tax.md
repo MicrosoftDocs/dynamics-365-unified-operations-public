@@ -47,7 +47,7 @@ The following table lists the typical sales tax setup tasks with notes for sales
 | Set up sales tax reporting codes.                               |See [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) |[Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)||
 | Set up sales tax codes.                                         |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create sales tax codes for reverse charge operations](#create-sales-tax-codes-for-reverse-charge-operations)                                | [Sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)|
 | Set up sales tax groups and item sales tax groups                                        |See [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) and [Create a sales tax group for reverse charge](#create-sales-tax-group-for-reverse-charge)                 |[Sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)|
-| Set up sales tax parameters on the application parameter pages. | Enable reverse charge functionality on the **General ledger parameters** page. See [Reverse charges](#reverse-charges).   |[Reverse charges](emea-reverse-charge.md)|
+| Set up sales tax parameters on the application parameter pages. | Enable reverse charge functionality on the **General ledger parameters** page.    |[Reverse charges](emea-reverse-charge.md)|
 
 
 ### Sales tax reporting codes example for Saudi Arabia
