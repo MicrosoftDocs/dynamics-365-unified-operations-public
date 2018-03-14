@@ -629,7 +629,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-         # [Application update 7.3.1](#tab/app-update-7-3-1)
+         # [Application update 7.3.2](#tab/app-update-7-3-2)
 
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -754,7 +754,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Application update 7.3.2](#tab/app-update-7-3-2)
 
         ``` xml
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
