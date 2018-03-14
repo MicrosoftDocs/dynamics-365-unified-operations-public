@@ -56,6 +56,7 @@
 ## Screen layout
 ### [Configure screen layouts for POS](pos-screen-layouts.md)
 ### [Install the Retail POS Layout designer](install-pos-layout-designer.md)
+### [Choose notification settings](Notifications-POS.md)
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up images for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Info codes overview](info-codes-retail.md) 
@@ -101,6 +102,7 @@
 # Products and merchandising
 ## [Product information overview](../supply-chain/pim/product-information.md)
 ## [Retail hierarchies](retail-hierarchies.md)
+## [Attributes and attribute groups overview](attribute-attributegroups-lifecycle.md)
 ## [Create and manage attributes](create-manage-attributes.md)
 ## [Set up retail products](set-up-retail-products.md)
 ## [Product dimensions](../supply-chain/pim/product-dimensions.md)
