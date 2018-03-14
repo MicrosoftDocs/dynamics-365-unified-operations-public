@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/19/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,6 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Configure and send email
