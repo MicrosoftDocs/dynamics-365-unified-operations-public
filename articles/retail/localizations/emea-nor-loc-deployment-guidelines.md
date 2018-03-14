@@ -259,6 +259,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
         > - Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations. 
         > - This step resembles the step for including the SalesTransactionSignature CRT extension component, but it uses a different destination folder: bin instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
 
+
+
     # [Application update 5](#tab/app-update-5)
 
     - In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
@@ -274,6 +276,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
         > [!WARNING]
         > - Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations. 
         > - This step resembles the step for including the SalesTransactionSignature.Messages CRT extension component, but it uses a different destination folder: bin instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
+
+
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
 
