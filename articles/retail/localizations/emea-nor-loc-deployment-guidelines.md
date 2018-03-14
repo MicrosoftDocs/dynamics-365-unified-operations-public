@@ -238,18 +238,20 @@ The CRT extension components are included in the CRT samples. To complete the fo
 6. Register the dependencies of the Retail Server extensions.
 
     > [!NOTE]
-    > This step differs for Application update 4 and for later versions. Follow the steps in one of the following sections, depending on the version that you're using. 
+    > This step differs for Application update 4 and for later versions. Follow the steps in one of the following sections, depending on the version that you're using.
 
     # [Application update 4](#tab/app-update-4)
 
-    - In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+    Register Extensions.SalesTransactionSignatureSample dependency:
+
+    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
         - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
-    - Copy the files to the **\\bin** folder under the IIS Retail Server site location.
+    2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
 
-    - Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -259,15 +261,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
         > - Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations. 
         > - This step resembles the step for including the SalesTransactionSignature CRT extension component, but it uses a different destination folder: bin instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
 
-
-
     # [Application update 5](#tab/app-update-5)
 
-    - In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
+    Register Extensions.SalesTransactionSignatureSample.Messages dependency:
 
-    - Copy the file to the **\\bin** folder under the IIS Retail Server site location.
+    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
 
-    - Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+    2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
+
+    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -276,8 +278,6 @@ The CRT extension components are included in the CRT samples. To complete the fo
         > [!WARNING]
         > - Do **not** edit the commerceruntime.config file. This file isn't intended for any customizations. 
         > - This step resembles the step for including the SalesTransactionSignature.Messages CRT extension component, but it uses a different destination folder: bin instead of bin\\ext. You must use the bin folder to help guarantee that the Retail Server extension is successfully loaded.
-
-
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
 
@@ -321,6 +321,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         }
     ```
 
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    > [!Note]
+    > Not applicable for this version.
+
     ---
 
 3. To regenerate the proxy code, build the **Proxies** folder from the command line (use the **msbuild /t:Rebuild** command)
@@ -334,6 +339,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     # [Application update 5](#tab/app-update-5)
 
     Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    > [!Note]
+    > Not applicable for this version.
 
     ---
 
@@ -364,6 +374,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
             return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<GetLastFiscalTransactionResponse>(new GetLastFiscalTransactionRequest(), null).FiscalTransaction);
         }
     ```
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    > [!Note]
+    > Not applicable for this version.
 
     ---
 
