@@ -44,7 +44,7 @@ The Entity Store functions as an intermediary cache between the Dynamics 365 for
 The following diagram illustrates the management of business data for Reporting & Analytics tooling.
 [![Incremental-refresh](./media/Incremental-refresh-data-flow-diagram.png)](./media/Incremental-refresh-data-flow-diagram.png) 
 
-Within the Customer Collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the Application Suite provides an Entity Store model for Customer Collections agents that can be used to conveniently visualize the Aging buckets of customers.  Because the data is sourced from the Entity Store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database.  Click here for more information on the Entity Store.
+Within the Customer Collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the Application Suite provides an Entity Store model for Customer Collections agents that can be used to conveniently visualize the Aging buckets of customers.  Because the data is sourced from the Entity Store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database. [Click here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store) for more information on the Entity Store.
 
 
 ## Managing Entity Store models
@@ -66,7 +66,4 @@ Here's a screenshot of the Entity Store model administration experience using In
 [![Incremental-administration](./media/Entity-Store-model-management.png)](./media/Entity-Store-model-management.png) 
 
 
-System Administrators use the Entity Store model management form to define the schedule for synchronizing data with the Dynamics 365 for Finance & Operations transactional database.  For more information on using the Entity Store admin tools, review the related article Scheduling Entity Store model refreshes.
-
-
-
+System Administrators use the Entity Store model management form to define the schedule for synchronizing data with the Dynamics 365 for Finance & Operations transactional database.  For more information on using the Entity Store admin tools, review the related article [Scheduling Entity Store model refreshes](scheduling-entity-store-model-refreshes.md).
