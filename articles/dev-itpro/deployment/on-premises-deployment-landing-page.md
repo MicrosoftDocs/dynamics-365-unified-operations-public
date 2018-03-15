@@ -66,5 +66,5 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](troubleshoot-on-prem.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features.md)
-- [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
+- [Software lifecycle policy and list of releases](../migration-upgrade/versions-update-policy.md)
  
