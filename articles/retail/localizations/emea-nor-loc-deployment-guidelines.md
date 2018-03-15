@@ -547,27 +547,37 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     # [Application update 4](#tab/app-update-4)
 
     Extensions folders:
+
       - **AuditEventExtensionSample**
+
       - **SalesTransactionSignatureSample**
 
     # [Application update 5](#tab/app-update-5)
 
     Extensions folders:
+
       - **AuditEventExtensionSample**
+
       - **SalesTransactionSignatureSample**
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
 
     Extensions folders:
+
       - **AuditEventExtensionSample**
+
       - **SalesTransactionSignatureSample**
 
     # [Application update 7.3.2](#tab/app-update-7-3-2)
 
     Extensions folders:
+
       - **AuditEventExtensionSample**
+
       - **SalesTransactionSignatureSample**
+
       - **SalesTransactionSignatureNorway**
+
       - **SequentialSignature**
 
     ---
