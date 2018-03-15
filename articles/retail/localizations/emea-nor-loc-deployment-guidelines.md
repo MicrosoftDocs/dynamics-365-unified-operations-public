@@ -353,6 +353,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ---
 
 4. Find the configuration file for Retail Server. The file is named **web.config**, and it's in the root folder under the IIS Retail Server site location.
+
 5. Register the Retail Server extensions in the **extensionComposition** section of the configuration file.
 
     ``` xml
@@ -370,6 +371,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+
 
     Copy the files to the **\\bin** folder under the IIS Retail Server site location.
 
