@@ -542,9 +542,61 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     > [!NOTE]
     > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
 
-2. Include existing **AuditEventExtensionSample** and **SalesTransactionSignatureSample** source code folders in the **Pos.Extensions** project.
-3. Enable the extensions to be compiled in **tsconfig.json** by removing the **AuditEventExtensionSample** and **SalesTransactionSignatureSample** folders from the exclude list.
+2. Include following existing source code folders in the **Pos.Extensions** project.
+
+    # [Application update 4](#tab/app-update-4)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 5](#tab/app-update-5)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
+
+    ---
+
+3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
+
+    # [Application update 4](#tab/app-update-4)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 5](#tab/app-update-5)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
+
+    ---
+
 4. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate place.
+
+    # [Application update 4](#tab/app-update-4)
 
     ``` json
     {
@@ -554,6 +606,47 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         "baseUrl": "SalesTransactionSignatureSample"
     }
     ```
+
+    # [Application update 5](#tab/app-update-5)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    }
+    ```
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    }
+    ```
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureNorway"
+    },
+    {
+        "baseUrl": "SequentialSignature"
+    }
+    ```
+
+    ---
 
     > [!NOTE]
     > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
@@ -564,9 +657,61 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 ### The Cloud POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
-2. Include existing **AuditEventExtensionSample** and **SalesTransactionSignatureSample** source code folders in the **Pos.Extensions** project.
-3. Enable the extensions to be compiled in **tsconfig.json** by removing the **AuditEventExtensionSample** and **SalesTransactionSignatureSample** folders from the exclude list.
+2. Include following existing source code folders in the **Pos.Extensions** project.
+
+    # [Application update 4](#tab/app-update-4)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 5](#tab/app-update-5)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
+
+    ---
+
+3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
+
+    # [Application update 4](#tab/app-update-4)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 5](#tab/app-update-5)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
+
+    ---
+
 4. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate place.
+
+    # [Application update 4](#tab/app-update-4)
 
     ``` json
     {
@@ -576,6 +721,47 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         "baseUrl": "SalesTransactionSignatureSample"
     }
     ```
+
+    # [Application update 5](#tab/app-update-5)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    }
+    ```
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    }
+    ```
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+    ``` json
+    {
+        "baseUrl": "AuditEventExtensionSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureSample"
+    },
+    {
+        "baseUrl": "SalesTransactionSignatureNorway"
+    },
+    {
+        "baseUrl": "SequentialSignature"
+    }
+    ```
+
+    ---
 
     > [!NOTE]
     > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
