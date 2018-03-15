@@ -368,8 +368,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
-        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
-        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
+      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
     Copy the files to the **\\bin** folder under the IIS Retail Server site location.
 
@@ -1010,7 +1010,26 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ---
 
-3. Modify the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy this config file to the **References** folder.
+3. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
+
+    # [Application update 4](#tab/app-update-4)
+
+    The file is named **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** and located under **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug**
+
+    # [Application update 5](#tab/app-update-5)
+
+    The file is named **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** and located under **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug**
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    The file is named **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** and located under **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug**
+
+    # [Application update 7.3.2](#tab/app-update-7-3-2)
+
+    The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and located under **Extensions.SequentialSignatureRegister\\bin\\Debug**
+
+    ---
+
 3. Run **msbuild** for the whole Retail SDK to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
