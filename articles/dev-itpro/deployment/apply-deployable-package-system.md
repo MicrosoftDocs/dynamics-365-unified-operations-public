@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply updates to a cloud environment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# Apply updates to a cloud environment
 
 [!include[banner](../includes/banner.md)]
 
