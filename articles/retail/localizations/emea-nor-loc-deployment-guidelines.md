@@ -369,9 +369,9 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
-      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
-      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+      1. The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
 
+      2. The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
     Copy the files to the **\\bin** folder under the IIS Retail Server site location.
 
