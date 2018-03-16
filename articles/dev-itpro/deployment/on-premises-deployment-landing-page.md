@@ -5,7 +5,7 @@ title: On-premises deployment
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,7 +41,6 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edi
 - [Planning for your on-premises deployment](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
