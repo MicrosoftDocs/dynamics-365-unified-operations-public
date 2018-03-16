@@ -37,18 +37,16 @@ There are several samples in the Retails SDK that demonstrate retail extensions.
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.
 
-## Run the StoreHoursSample sample
-1. Open **ModernPos.Sln** from the **Retail SDK\\POS** folder.
+## Run the SampleExtensions in POS
+1. Open **ModernPos.Sln** or **CloudPos.sln** from the **Retail SDK\\POS** folder.
 2. Select the **POS.Extensions** project in the solution and click **Show All Files**.
 3. Right-click the **SampleExtensions** folder and select **Include in Project**.
-4. Open the **extensions.json** file and add the extension folder for **StoreHoursSample**, so that POS during runtime will include this extension. The **baseUrl** value must exactly match the relative path and extension folder name.
+4. Right-click the **SampleExtensions2** folder and select **Include in Project**.
+5. Open the **extensions.json** file and add the extension folder for **SampleExtensions** and **SampleExtensions2**, so that POS during runtime will include this extension. The **baseUrl** value must exactly match the relative path and extension folder name.
 
     ```Typescript
     {
         "extensionPackages": [
-            {
-                "baseUrl": "StoreHoursSample"
-            },
             {
                 "baseUrl": " SampleExtensions"
             },
@@ -59,7 +57,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
     }
     ```
     **Note:** In the extension.json file you must include at least two extension folders. If you add only one extension folder, then POS will not load the extension.
-1. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to determine whether to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS, then you need add the extension folder name and comment out the extension from the extension as shown. 
+5. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to determine whether to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS, then you need add the extension folder name and comment out the extension from the extension as shown. 
 
     ```Typescript
     {
@@ -74,7 +72,7 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
             ,"SalesTransactionSignatureSample"
             // ,"SampleExtensions"
             // ,"SampleExtensions2"
-            //,"StoreHoursSample"
+            ,"StoreHoursSample"
             ,"SuspendTransactionReceiptSample"
         ],
         "compilerOptions": {
@@ -104,10 +102,13 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         ,"SalesTransactionSignatureSample"
         // ,"SampleExtensions"
         // ,"SampleExtensions2"
-        //,"StoreHoursSample"
+        ,"StoreHoursSample"
         ,"SuspendTransactionReceiptSample"
     ],
     ```
     **Note:** Other extension package folders, even though not included in the Visual Studio project, should be kept in the exclude list if they are not meant to be included.
-1. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine** or **Simulator**.
-1. Click **Save all** and press **F5** to validate the extensions.
+6. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine** or **Simulator** if you are using Modern Pos for validation.
+7. Click **Save all** and press **F5** to validate the extensions.
+
+    **Note:** In case of cloud POS do a clean solution in VS first and then do rebuild for the solution.
+8. Navigate to product search screen or use the top search bar to search for a product. You should see custom columns in the grid and new app bar buttons.
