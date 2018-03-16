@@ -31,7 +31,9 @@ ms.dyn365.ops.version: 2017-06-30
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists the retail capabilities available in on-premises deployments.
+This topic lists retail capabilities that are available in on-premises deployments.
+
+For more information about on-premises deployments, see [On-premises deployment home page](../deployment/on-premises-deployment-landing-page.md).
 
 | **Component**        | **On-premises status** |
 |----------------------|------------------------|
@@ -46,6 +48,7 @@ This topic lists the retail capabilities available in on-premises deployments.
 ## Head office capability
 
 ### Channel management
+The following table indicates which channel managment components are available in on-premises deployments.
 
 | **Component**                         | **On-premises status** |
 |---------------------------------------|------------------------|
@@ -64,6 +67,7 @@ This topic lists the retail capabilities available in on-premises deployments.
 | Sales tax groups                      | Available              |
 
 ### Pricing and discounts
+The following table indicates which pricing and discount components are available in on-premises deployments.
 
 | **Component**                                         | **On-premises status** |
 |-------------------------------------------------------|------------------------|
@@ -77,6 +81,7 @@ This topic lists the retail capabilities available in on-premises deployments.
 | Price simulator                                       | Not available          |
 
 ### Customer
+The following table indicates which customer components are available in on-premises deployments.
 
 | **Component**   | **On-premises status** |
 |-----------------|------------------------|
@@ -85,6 +90,7 @@ This topic lists the retail capabilities available in on-premises deployments.
 | Loyalty points  | Not available          |
 
 ### Merchandising
+The following table indicates which merchandising components are available in on-premises deployments.
 
 | **Component**                               | **On-premises status** |
 |---------------------------------------------|------------------------|
@@ -101,6 +107,7 @@ This topic lists the retail capabilities available in on-premises deployments.
 | Bar codes                                   | Available              |
 
 ### Inventory management
+The following table indicates which inventory management components are available in on-premises deployments.
 
 | **Component**                  | **On-premises status** |
 |--------------------------------|------------------------|
