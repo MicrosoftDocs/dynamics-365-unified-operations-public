@@ -44,8 +44,6 @@ In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the pr
 
 In many cases, the product number isn't originally created in Finance and Operations, but is associated with a product in a product lifecycle management (PLM) system or a product data management (PDM) system. In this case, you use data entities to import the products and product variants. Finance and Operations then uses the numbers in all operations.
 
-Note that for every instance (or, to be more precise, for every partition), a product number **must** be unique over all products **and** all product variants. If you try to create a new product that has a product number that already exists, you receive an error message. Because the product number is unique over all legal entities of a partition, the product can more easily be identified throughout the supply chain.
-
 When you implement Finance and Operations, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an additional name that represents the classifications of a product.
 
 When you use the Common Data Service (CDS), the product number in Finance and Operations is also the product number in the CDS. Product variants are synchronized to the CDS as distinct products.
@@ -108,9 +106,11 @@ To maintain bar codes, on the **Released products** page, on the **Manage invent
 
 In e-commerce, it's crucial that all parties speak a common language and refer to products by using a common set of identifiers. Therefore, some industries rely on the [GTIN](https://www.gs1.org/id-keys/gtin), which is a global item number system that is facilitated by GS1.
 
-In Finance and Operations, we recommend that you maintain the GTIN either as a bar code. However, you can also maintain it on the **Item - GTIN** page. To open this page, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**. Note that the GTIN isn't maintained as a global number. Instead, it's maintained by legal entity.
+In Finance and Operations, we recommend that you maintain the GTIN as a bar code. However, you can also maintain it on the **Item - GTIN** page. To open this page, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**. Note that the GTIN isn't maintained as a global number. Instead, it's maintained by legal entity.
 
-In Finance and Operations, you define packaging variants in the warehouse operations by defining specific units of measure. For example, an item might be stored in pieces, in bundles of six, in trays of 18, or in full pallets. A specific unit of measure will be defined for each of these packaging variants. Because the GTIN is typically related to the packaging unit of a product, the **Item - GTIN** page lets you maintain multiple GTIN codes per product and unit of measure. However, you can't use the same GTIN code more than one time for different items or product variants of a legal entity.
+In Finance and Operations, you define packaging variants in the warehouse operations by defining specific units of measure. For example, an item might be stored in pieces, in bundles of six, in trays of 18, or in full pallets. A specific unit of measure will be defined for each of these packaging variants. Because the GTIN is typically related to the packaging unit of a product, the **Item - GTIN** page lets you maintain multiple GTIN codes per product and unit of measure. However, you can't use the same GTIN code more than one time for different items or product variants of a legal entity. 
+
+To maintain **GTIN codes**, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN**.
 
 ## External codes
 
