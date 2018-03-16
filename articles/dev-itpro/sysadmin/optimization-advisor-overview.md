@@ -53,6 +53,15 @@ For more information, watch the short YouTube video:
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
+## Optimization advisor rules
+
+The list of optimization advisor rules and their periodicity can be accessed by navigating to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have stautus **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
+
+When you want to trigger the validation of unscheduled rules or when you want to re-evaluate periodic rules outside their predefined schedule, navigate to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**. In the **Diagnostic rule validation** dialog, choose a frequency. All rules that have the specified frequency will be re-evaluated.
+
+
+
+
 
 
 
