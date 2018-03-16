@@ -43,9 +43,9 @@ Open in Excel experiences are:
 
 -   Based on entities and the OData services that they create.
 -   Dynamically-generated or based on a pre-defined template.
--   Editable and refreshable via the Excel Data Connector App.
+-   Editable and refreshable via the Excel Add-in.
 
-The following image shows the **Excel Data Connector App** inside the Journal entry in Microsoft.
+The following image shows the **Excel Add-in** being used for Journal entry.
 
 [![off101a](./media/off101a.png)](./media/off101a.png)
 
@@ -56,7 +56,7 @@ Open in Excel experiences are usually found under in the Open in Excel section o
 The Export to Excel options and experiences are both found in the Open in Microsoft Office menu:
 
 -   The Export to Excel options are static exports of grid data. Each one corresponds to a visible grid. All the grid data for the current filter is placed into a workbook.
--   The Open in Excel experiences utilize the Excel Data Connector App to facilitate refresh and publish.
+-   The Open in Excel experiences utilize the Excel Add-in to facilitate refresh and publish.
 
 The following image shows the **Open in Microsoft Office** menu on the **Fleet Customers** form with a template **Open in Excel** option, a generated **Open in Excel** option, and a static **Export to Excel** option.
 
@@ -71,7 +71,7 @@ The default fields that will be added into the workbook are the key and mandator
 [![off101c](./media/off101c.png)](./media/off101c.png)
 
 ## What fields will be shown when an entity is the target of a lookup?
-When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. Excel Data Connector App with an enumeration lookup is shown below.
+When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. The Excel Add-in with an enumeration lookup is shown below.
 
 [![off101d](./media/off101d.png)](./media/off101d.png)
 
@@ -118,18 +118,18 @@ Example:  
 
 ## How does the app get injected into a workbook to start building a template?
 
-The Excel Data Connector App is injected into a workbook when a generated Open in Excel experience is triggered or when a workbook is created using the **Common** &gt; **Common** &gt; **Office integration** &gt; **Excel workbook designer** form.
+The Excel Add-in is injected into a workbook when a generated Open in Excel experience is triggered or when a workbook is created using the **Common** &gt; **Common** &gt; **Office integration** &gt; **Excel workbook designer** form.
 
 -   The **Create workbook** button will add the selected entity and fields, a pointer to the server, and the app into a workbook.
 -   The **Create blank workbook** button will simply add a pointer to the server and the app into a workbook.
 -   The **View related** form will navigate to the form relating to the currently selected entity to more easily review the effect of data changes made in Excel.
--   The **Get entity record count** button will show the record count for the currently selected entity. Currently, the Excel Data Connector App cannot handle large (tall and wide) data sets. Any unfiltered entity with more than 10,000 records is at risk of crashing the app.
+-   The **Get entity record count** button will show the record count for the currently selected entity. The Excel Add-in will handle large sets of data within the memory limits of a user's machine. By default, the Excel Add-in has a data govenor that restricts the data size to one million cells but, depending on the performance abilities of the user's machine, this can usually be extended to around 2.5 million cells.
 
 The following image shows the **Excel workbook designer** form.
 
 [![off101e](./media/off101e.png)](./media/off101e.png) 
 
-After obtaining a workbook containing the Excel Data Connector App, additional datasources can be added using the **Design** button. Currently, datasources cannot be removed. The following image shows the Excel Data Connector App with the **Design** button highlighted.
+After obtaining a workbook containing the Excel Add-in, additional datasources can be added using the **Design** button. Currently, datasources cannot be removed. The following image shows the Excel Add-in with the **Design** button highlighted.
 
 [![off101f](./media/off101f.png)](./media/off101f.png)
 
@@ -168,7 +168,7 @@ Don’t create a template if:
 -   You can just specify a set of fields to show in a table binding.
 
 ## What are the region-specific considerations for templates?
-When creating a template for an entity that has region-specific fields, you should leave those region-specific fields out of the template, otherwise all users will see the region-specific fields. Templates should cater to the majority of users by default and region-specific users can add those fields using the easy-to-use design experience of the Excel Data Connector App.  The region-specific fields and columns can be added by users as needed. That template can be either saved to local computer for reuse by a single user or uploaded via the Document Templates form for reuse by any user of that instance. A couple of other considerations:
+When creating a template for an entity that has region-specific fields, you should leave those region-specific fields out of the template, otherwise all users will see the region-specific fields. Templates should cater to the majority of users by default and region-specific users can add those fields using the easy-to-use design experience of the Excel Add-in.  The region-specific fields and columns can be added by users as needed. That template can be either saved to local computer for reuse by a single user or uploaded via the Document Templates form for reuse by any user of that instance. A couple of other considerations:
 
 -   If a region has a region-specific entity, then a region-specific template could be created.
 -   If a region is important enough, then you could define a region-specific template as well as a region-generic template.
@@ -303,11 +303,11 @@ A template Open in Excel option can be programmatically added by implementing th
 
     }
 
-After a filter has been added programmatically, the resulting filter can be viewed in the Excel Data Connector App using the **Filter** button. The following image shows the Excel Data Connector App with the **Filter** button highlighted.
+After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
 
 [![off101j](./media/off101j.png)](./media/off101j.png) 
 
-The following image shows the Excel Data Connector App with the **Filter** dialog box opened.
+The following image shows the Excel Add-in with the **Filter** dialog box opened.
 
 [![off101k](./media/off101k.png)](./media/off101k.png)
 
@@ -383,7 +383,7 @@ If you are not seeing an expected lookup, validate relationship metadata by chec
   - The authenticated user does not have permission to access the entity targeted by the lookup.
 
 ## How do dimensions work?
-The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](../financial/dimensions-overview.md). Lookups, at RTW, are only generated automatically for non-ledger dimensions. Custom dimensions are not supported for the initial release, but support will be added in a future update. If you want to enable lookups for ledger dimensions (MainAccount, Department, CostCenter, etc.), see [Dimensions Overview](../financial/dimensions-overview.md) for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields. When those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or editing each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately. If both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
+The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](../financial/dimensions-overview.md). Lookups, are only generated automatically for non-ledger dimensions. Custom dimensions are not supported curently. If you want to enable lookups for ledger dimensions (MainAccount, Department, CostCenter, etc.), see [Dimensions Overview](../financial/dimensions-overview.md) for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields. When those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or editing each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately. If both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
 
 ## How do I create formula table columns?
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the **Formula** button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click **Update**. After the field has been added to the table, use standard Excel capabilities to create a formula, then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel provides may be for ALL rows instead of THAT row. To specify just the current row, the at sign (@) is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".
