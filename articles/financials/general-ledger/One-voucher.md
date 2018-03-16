@@ -37,15 +37,15 @@ The existing functionality for financial journals (general journal, fixed asset 
 
 -   Set up the journal name (**General ledger** \> **Journal setup** \>**Journal names**) so that the **New voucher** field is set to **One voucher number only**. Every line that you add to the journal is now included on the same voucher. Because every line is added to the same voucher, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
-    ![](media/aa343f004b5ee4e82afd28365325fff3.png)
+[![Single line](./media/same-line.png)](./media/same-line.png)
 
 -   Enter a multiline voucher where there is no offset account.
 
-    ![](media/796286375d304a142a7a77ae28d6db0f.png)
+[![Multiline voucher](./media/Multi-line.png)](./media/Multi-line.png)
 
 -   Enter a voucher where both the account and the offset account contain a subledger account type, such as vendor/vendor, Customer/customer, vendor/customer, or bank/bank.
 
-    ![](media/11c4cf7028f842cb4fe8979e18842436.png)
+[![Subledger voucher](./media/subledger.png)](./media/subledger.png)
 
 Issues with One voucher
 =======================
@@ -55,11 +55,11 @@ To work and report correctly, these processes and reports require transaction de
 
 For example, you post the following multiline voucher.
 
-![](media/796286375d304a142a7a77ae28d6db0f.png)
+[![Example](./media/example.png)](./media/example.png)
 
 You then generate the **Expenses by vendor** report in the **Financial Insights** workspace. The report groups expense account balances under vendor group and then vendor. When generating the report, the system can't determine which vendor groups/vendors incurred the expense of 250.00. Because transaction details are missing, the system assumes the whole 250.00 was incurred by the first vendor found in the voucher. The 250.00, which is included in the balance for main account 600120, is then shown under that vendor group/vendor. It’s very likely that the first vendor in the voucher was not the correct vendor, so the report is incorrect.
 
-![](media/ac4d5fb9a96d108161cdedee3ef5d9c4.png)
+[![Expenses](./media/expenses.png)](./media/expenses.png)
 
 The future of One voucher
 =========================
