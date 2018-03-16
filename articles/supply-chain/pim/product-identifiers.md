@@ -164,7 +164,7 @@ The following table gives an overview of the results that happen on import and o
 
 ## Product entity identifier (Export all product identifiers)
 
-The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, this entity and this process have limited practical use, and will likely be subject to change in the future.
+The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, the **Product entity common data service identifier entity** and this process have limited practical use, and will likely be subject to change in the future.
 
 The product identifier table is a global table that is populated from all reference tables of the Main legal entity through a recurring batch job. You must select a legal entity and a product category hierarchy as the definition of the global product master scope. Generation of the global product identifier table is limited to products that are released to the selected legal entity and products that are members of the product hierarchy that is selected for the **Common data service** role in the product category hierarchy.
 
