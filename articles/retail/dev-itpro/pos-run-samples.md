@@ -106,9 +106,11 @@ This topic applies to Dynamics 365 for Finance and Operations, Enterprise editio
         ,"SuspendTransactionReceiptSample"
     ],
     ```
-    **Note:** Other extension package folders, even though not included in the Visual Studio project, should be kept in the exclude list if they are not meant to be included.
+    > [!Note] 
+    > Other extension package folders, even though not included in the Visual Studio project, should be kept in the exclude list if they are not meant to be included.
 6. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine** or **Simulator** if you are using Modern Pos for validation.
 7. Click **Save all** and press **F5** to validate the extensions.
 
-    **Note:** In case of cloud POS do a clean solution in VS first and then do rebuild for the solution.
+    > [!Note] 
+    > In case of cloud POS do a clean solution in VS first and then do rebuild for the solution.
 8. Navigate to product search screen or use the top search bar to search for a product. You should see custom columns in the grid and new app bar buttons.
