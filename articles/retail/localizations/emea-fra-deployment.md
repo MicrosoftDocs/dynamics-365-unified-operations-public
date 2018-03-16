@@ -359,7 +359,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 
 6. Run Modern POS in the debugger, and test the functionality.
 
-## Storing certificate for digital signing in Azure Key Valut
+## Storing certificate for digital signing in Azure Key Vault
 
 The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
 
@@ -403,12 +403,12 @@ The **DigitalSignatureKeyVaultSample** project contains the sample code that use
 
 To override the signing flow you need to:
 
-1.	Build the **DigitalSignatureKeyVaultSample** project and copy the assembly **Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** to the Retail server folder **bin\ext**;
+1. Build the **DigitalSignatureKeyVaultSample** project and copy the assembly **Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** to the Retail server folder **bin\ext**;
 
-2.	Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section:
+2. Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section:
 
     ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.DigitalSignatureKeyVaultSample " />
+    <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
     ```
 
 > [!NOTE] 
@@ -462,6 +462,15 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
         ```
 
+        Add additional following line to use storing certificate for digital signing in Azure Key Vault functionality
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
+        ```
+
+        > [NOTE!]
+        > Complete [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in Azure-Key-Vault) section first
+
      2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
         ``` xml
@@ -487,8 +496,19 @@ Follow these steps to create deployable packages that contain Retail components,
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsFrance.dll" />
         ```
+
+        
+        Add additional following line to use storing certificate for digital signing in Azure Key Vault functionality
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll" />
+        ```
+
+        > [NOTE!]
+        > Complete [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in Azure-Key-Vault) section first
 
     3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
 
