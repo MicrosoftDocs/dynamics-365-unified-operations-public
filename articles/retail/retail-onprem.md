@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 2017-06-30
 
 This topic lists retail capabilities that are available in on-premises deployments.
 
-For more information about on-premises deployments, see [On-premises deployment home page](../deployment/on-premises-deployment-landing-page.md).
+For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 | **Component**        | **On-premises status** |
 |----------------------|------------------------|
