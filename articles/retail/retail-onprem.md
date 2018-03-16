@@ -48,7 +48,7 @@ For more information about on-premises deployments, see [On-premises deployment 
 ## Head office capability
 
 ### Channel management
-The following table indicates which channel managment components are available in on-premises deployments.
+The following table indicates which channel management components are available in on-premises deployments.
 
 | **Component**                         | **On-premises status** |
 |---------------------------------------|------------------------|
