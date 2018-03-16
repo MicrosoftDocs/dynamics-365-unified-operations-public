@@ -136,6 +136,34 @@ Unfortunately, there is no standard functionality that lets you search for produ
 | GTIN | Not applicable  | Not applicable | Currently, there is no specific entity that is used to import and export GTIN codes. We recommend that you use the Item Barcode entity instead. |
 | Product entity common data service identifier entity | Not applicable | Item number, item search name, product search name, vendor item number, customer item number, external codes, GTIN codes, bar codes | This entity consolidates all identifiers into one data model, so that one interface can be used to easily export all identifiers and their related types. Use the Product entity identifier code entity to export the identifier codes and descriptions. Use the Product entity identifier scope entity to export additional scope information to an identifier, such as the party, legal entity, quantity, or unit. |
 
+### Use product and item number sequences
+
+Finance and Operations lets you define two different number sequences:
+
+-	The Product number sequence for the global product number
+-	The Item number sequence for the item number per legal entity
+
+> [!NOTE]
+> Note that the item number as a separate identification should only be used when migrating different legal entities from different sources that had different numbering systems. You should always try to use a unique product identification throughout all legal entities. That means, the **Item number sequence** should be set to **Manual = Yes**, which means the item number will follow the product number on creation. If Finance and Dynamics 365 is not the leading system for new product numbers, both number sequences should be set to **Manual = Yes**. 
+
+When using the **Released product V2 entity** to create products, there are multiple settings that can affect how the number sequences are used to create **Product number** and **Item number**:
+
+-	The product number sequence setting
+-	The item number sequence setting
+-	The mapping of the item number 
+-	The mapping of the product number 
+
+The following table gives an overview of the results that happen on import and on manual creation in a specific combination of the number sequence and field mapping settings.
+
+
+
+
+
+
+
+
+
+
 ## Product entity identifier (Export all product identifiers)
 
 The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, this entity and this process have limited practical use, and will likely be subject to change in the future.
