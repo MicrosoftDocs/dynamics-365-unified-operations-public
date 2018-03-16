@@ -37,6 +37,9 @@ The output of this task is an upgraded database that you can use in a sandbox en
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
 
+> [!NOTE]
+> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
+
 ## Overview of the sandbox data upgrade process
 A sandbox environment for the purposes of this article is a Tier 2 or higher non-production environment. 
 
