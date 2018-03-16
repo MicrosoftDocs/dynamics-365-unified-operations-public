@@ -155,7 +155,12 @@ When using the **Released product V2 entity** to create products, there are mult
 
 The following table gives an overview of the results that happen on import and on manual creation in a specific combination of the number sequence and field mapping settings.
 
-
+| Product number sequence  | Item number sequence  |  Mapping of item number |  Mapping of product number |  Results on entity import | Results on manual creation  |  Conclusion |
+|---|---|---|---|---|---|---|
+| Manual = No  | Manual = No  |  No mapping |  No mapping |  Product number uses product number sequence. Item number uses item number sequence  |  Product number uses product number sequence. Item number uses item number sequence. | This setting can be used, if a different number for product and item are required, but we do not recommend to use different numbering for item and product.   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
 
 
 
