@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cost management Power BI reports
-description: This topic describes what is included in the Cost management Power BI report. 
+title: Cost management Power BI content
+description: This topic describes what is included in the Cost management Power BI content. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 03/16/2018
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -41,8 +41,8 @@ accountants or individuals in the organization who are responsible for or
 interested in status of inventory, work in progress (WIP) or analyzing standard
 cost variances
 
-This content pack lets you use Microsoft Power BI to monitor performance of
-inventories and visualize how cost flows through these in a categorized format.
+This Power BI content helps you monitor performance of
+inventories, and visualize how cost flows through these in a categorized format.
 
 Gain managerial insights like Turnover ratio, Days on-hand, Accuracy and “ABC
 classification” at your preferred aggregated level (Company, item, Item group,
@@ -51,7 +51,7 @@ Site).
 The information made available can also be used as a detailed supplement to the
 financial statement.
 
-The content pack is built upon the **CostObjectStatementCacheMonthly**
+The Power BI content is built upon the **CostObjectStatementCacheMonthly**
 aggregated measurement which primary data source is the
 **CostObjectStatementCache** table. This table is managed by the Data set cache
 framework. By default, the table is updated every 24 hours, but you can change
@@ -61,36 +61,38 @@ configuration. Manual updates can be executed in the **Cost administration** or
 
 After each update of the **CostObjectStatementCache** table, a refresh of the
 **CostObjectStatementCacheMonthly** aggregated measurement must executed before
-data in Microsoft Power BI visualizations are updated
+data in the Power BI visualizations are updated.
 
 ## Accessing the Power BI content
 
 The **Cost management** Power BI content is shown in the **Cost administration**
 or **Cost analysis** workspaces.
 
--   **Cost administration workspace**
+The **Cost administration** workspace contains the following tabs:
 
-    -   Overview (Application data)
+    -   **Overview** (displays application data)
 
-    -   Inventory accounting status (Microsoft Power BI)
+    -   **Inventory accounting status** (displays Power BI content)
 
-    -   Manufacturing accounting status (Microsoft Power BI)
+    -   **Manufacturing accounting** status (displays Power BI content)
 
--   **Cost analysis workspace**
+The **Cost analysis** workspace contains the following tabs:
 
-    -   Overview (Application data)
+    -   **Overview** (displays application data)
 
-    -   Inventory accounting analysis (Microsoft Power BI)
+    -   **Inventory accounting analysis** (displays Power BI content)
 
-    -   Manufacturing accounting analysis (Microsoft Power BI)
+    -   **Manufacturing accounting analysis** (displays Power BI content)
 
-    -   Std. cost variance analysis (Microsoft Power BI)
+    -   **Std. cost variance analysis** (displays Power BI content)
 
 ## Report pages that are included in the Power BI content
 
 The **Cost management** Power BI content includes a set of report pages that
 consists of a set of metrics. These metrics are visualized as charts, tiles, and
-tables. The following table provides an overview of the visualizations in
+tables. 
+
+The following table provides an overview of the visualizations in
 the **Cost management** Power BI content.
 
 ### Inventory accounting status
@@ -197,15 +199,14 @@ the **Cost management** Power BI content.
 
 ### Understanding the data model and entities
 
-Dynamics 365 for Operations data is used to populate the report pages in the
+Finance and Operations data is used to populate the report pages in the
 **Cost management** Power BI content. This is represented as aggregate
-measurements that are staged in the Entity store, which is a Microsoft SQL
-database optimized for analytics. Read more about it in the blog [Power BI
-integration with Entity Store in
-Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+measurements that are staged in the entity store, which is a Microsoft SQL
+database optimized for analytics. For more information, see [Power BI
+integration with entity store](power-bi-integration-entity-store.md).
 
 The following key aggregate measurements of the objects listed below are used as
-the basis of the content pack.
+the basis of the Power BI content.
 
 | **Object**                      | **Key aggregate measurements** | **Data source for Dynamics 365 for Operations** | **Field**           |
 |---------------------------------|--------------------------------|-------------------------------------------------|---------------------|
@@ -214,7 +215,7 @@ the basis of the content pack.
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn            | CostInventoryAccountingKPIGoal                  | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy              | CostInventoryAccountingKPIGoal                  | InventoryAccuracy   |
 
-The following table shows the key calculated measurements in the content pack.
+The following table shows the key calculated measurements in the Power BI content.
 
 | Measure                            | Calculation                                                                                                                                                                                                      |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
