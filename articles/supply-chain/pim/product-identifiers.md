@@ -158,16 +158,9 @@ The following table gives an overview of the results that happen on import and o
 | Product number sequence  | Item number sequence  |  Mapping of item number |  Mapping of product number |  Results on entity import | Results on manual creation  |  Conclusion |
 |---|---|---|---|---|---|---|
 | Manual = No  | Manual = No  |  No mapping |  No mapping |  Product number uses product number sequence. Item number uses item number sequence  |  Product number uses product number sequence. Item number uses item number sequence. | This setting can be used, if a different number for product and item are required, but we do not recommend to use different numbering for item and product.   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-
-
-
-
-
-
-
+|  Manual = No | Manual = Yes  | Auto generate  | No mapping  | Product number uses item number sequence. Item number uses item number sequence.  | Product number uses product number sequence. Item number uses product number sequence.  | This is not a recommended setting . Import and manual creation will work differently.  |
+| Manual = No  |  Manual = Yes | No mapping  |  No mapping | Product number uses product number sequence. Item number uses product number sequence. | Product number uses product number sequence. Item number uses product number sequence.  | This is the recommended setting, if products should get consistent automatic numbering on import and on manual creation.  |
+|  Manual = Yes |  Not applicable | Not applicable   | Auto generate  | Error message: Number sequence cannot be detected.  | According to item number sequence  |  This setting is not supported for import.  |
 
 ## Product entity identifier (Export all product identifiers)
 
