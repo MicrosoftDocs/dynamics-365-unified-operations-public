@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
 description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
-ms.date: 02/26/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,6 +36,9 @@ ms.dyn365.ops.version: Platform update 8
 The output of this task is an upgraded database that you can use in a sandbox environment. A sandbox environment is a Tier 2 or higher environment where business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
+
+> [!NOTE]
+> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## Overview of the sandbox data upgrade process
 A sandbox environment for the purposes of this article is a Tier 2 or higher non-production environment. 
@@ -175,7 +178,7 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 
 Export the copied database to a bacpac file by using the SQLPackage.exe tool. This step should be done by the DBA or a team member who has equivalent knowledge.
 
-It's very important that you install the latest version of SQL Server Management Studio before you start this step. Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.
+It's very important that you install the latest version of SQL Server Management Studio before you start this step: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.
 
 This step is important, because the export will have to be done again during the downtime before go-live. Here are some tips:
 
