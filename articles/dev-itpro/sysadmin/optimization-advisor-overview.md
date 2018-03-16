@@ -66,10 +66,12 @@ When you want to trigger the validation of unscheduled rules or when you want to
 The current set of optimization rules can be divided in the following categories:
 
 **1. Module configuration and set up**
+
 For example, there are a few rules validating the correctness of warehouse location directive setup for fixed product variant locations, for sales orders and transfer orders.
 There are a few rules that check whether features that have been enabled are actually used. For example, there is a rule that checks whether you are using the **Master planning** module. If it identifies that you are not, then it will create an optimization opportunity suggesting you turn off planning processes.  
 
 **2. System configuration set up**
+
 If certain functionality controlled by a configuration key is not used, an optimization opportunity will be generated, suggesting to disable the configuration key. Examples include Catch Weight, Budget planning, Project, Approved vendor list configuration keys.
 
 
