@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/14/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -165,12 +165,12 @@ Workflow email configuration is a collection of related settings that work in co
 
 ### Workflow email notification setup
 
-1. Verify email settings
-    1. Navigate to **System administration** > **Setup** > **Email** > **Email parameters**
-    2. Verify that SMTP is enabled
-    3. Set the SMTP mail server settings
-2. Verify the email batch process is running
-    1. Navigate to the **System administration** > **Periodic tasks** > **Email processing** > **Batch**
+1. Verify email settings:
+    1. Navigate to **System administration** > **Setup** > **Email** > **Email parameters**.
+    2. Verify that SMTP is enabled.
+    3. Set the SMTP mail server settings.
+2. Verify the email batch process is running:
+    1. Navigate to the **System administration** > **Periodic tasks** > **Email processing** > **Batch**.
     2. Enable the 'Batch processing' option
     3. Optionally adjust the recurrence of the email process
         1. Select 'No end date' to adjust all recurrences of the email batch process
