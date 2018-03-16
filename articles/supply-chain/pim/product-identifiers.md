@@ -153,7 +153,7 @@ When using the **Released product V2 entity** to create products, there are mult
 -	The mapping of the item number 
 -	The mapping of the product number 
 
-The following table gives an overview of the results that happen on import and on manual creation in a specific combination of the number sequence and field mapping settings.
+The following table provides an overview of the results on import and manual creation with specific combinations of the number sequence and field mapping settings.
 
 | Product number sequence  | Item number sequence  |  Mapping of item number |  Mapping of product number |  Results on entity import | Results on manual creation  |  Conclusion |
 |---|---|---|---|---|---|---|
