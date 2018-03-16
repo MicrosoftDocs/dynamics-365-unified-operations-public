@@ -144,7 +144,7 @@ Finance and Operations lets you define two different number sequences:
 -	The Item number sequence for the item number per legal entity
 
 > [!NOTE]
-> Note that the item number as a separate identification should only be used when migrating different legal entities from different sources that had different numbering systems. You should always try to use a unique product identification throughout all legal entities. That means, the **Item number sequence** should be set to **Manual = Yes**, which means the item number will follow the product number on creation. If Finance and Dynamics 365 is not the leading system for new product numbers, both number sequences should be set to **Manual = Yes**. 
+> Note that the item number as a separate identification should only be used when migrating different legal entities from different sources that had different numbering systems. You should always try to use a unique product identification throughout all legal entities. This means that **Manual** should be set to **Yes** for the **Item number sequence**, which means the item number will follow the product number on creation. If Finance and Dynamics 365 is not the leading system for new product numbers, **Manual** should be set to **Yes** for both number sequences. 
 
 When using the **Released product V2 entity** to create products, there are multiple settings that can affect how the number sequences are used to create **Product number** and **Item number**:
 
