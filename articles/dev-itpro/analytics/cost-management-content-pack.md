@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Cost management Power BI report
+# Cost management Power BI content
 
 [!include[banner](../includes/banner.md)]
 
@@ -69,22 +69,15 @@ The **Cost management** Power BI content is shown in the **Cost administratio
 or **Cost analysis** workspaces.
 
 The **Cost administration** workspace contains the following tabs:
-
-    -   **Overview** (displays application data)
-
-    -   **Inventory accounting status** (displays Power BI content)
-
-    -   **Manufacturing accounting** status (displays Power BI content)
+-   **Overview** (displays application data)
+-   **Inventory accounting status** (displays Power BI content)
+-   **Manufacturing accounting** status (displays Power BI content)
 
 The **Cost analysis** workspace contains the following tabs:
-
-    -   **Overview** (displays application data)
-
-    -   **Inventory accounting analysis** (displays Power BI content)
-
-    -   **Manufacturing accounting analysis** (displays Power BI content)
-
-    -   **Std. cost variance analysis** (displays Power BI content)
+-   **Overview** (displays application data)
+-   **Inventory accounting analysis** (displays Power BI content)
+-   **Manufacturing accounting analysis** (displays Power BI content)
+-   **Std. cost variance analysis** (displays Power BI content)
 
 ## Report pages that are included in the Power BI content
 
