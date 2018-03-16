@@ -2,7 +2,7 @@
 # required metadata
 
 title: One voucher
-description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
+description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: aprilolson
 manager: AnnBe
 ms.date: 03/16/2018
