@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cost management Power BI content
-description: This topic describes what is included in the Cost management Power BI content. 
+title: Cost management Power BI reports
+description: This topic describes what is included in the Cost management Power BI report. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,116 +30,213 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Cost management Power BI content
+# Cost management Power BI report
 
 [!include[banner](../includes/banner.md)]
 
-> [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+**Overview**
 
+The **Cost management** Microsoft Power BI content is intended for inventory
+accountants or individuals in the organization who are responsible for or
+interested in status of inventory, work in progress (WIP) or analyzing standard
+cost variances
 
-This topic describes what is included in the Cost management Power BI content. 
+This content pack lets you use Microsoft Power BI to monitor performance of
+inventories and visualize how cost flows through these in a categorized format.
 
-The **Cost management** Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for inventory. The **Cost management** Power BI content provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
+Gain managerial insights like Turnover ratio, Days on-hand, Accuracy and “ABC
+classification” at your preferred aggregated level (Company, item, Item group,
+Site).
 
-## Key measures
+The information made available can also be used as a detailed supplement to the
+financial statement.
 
-+ Beginning balance
-+ Ending balance
-+ Net change
-+ Net change in %
-+ Aging
+The content pack is built upon the **CostObjectStatementCacheMonthly**
+aggregated measurement which primary data source is the
+**CostObjectStatementCache** table. This table is managed by the Data set cache
+framework. By default, the table is updated every 24 hours, but you can change
+the update frequency or enable manual update in the data set cache
+configuration. Manual updates can be executed in the **Cost administration** or
+**Cost analysis** workspace.
 
-## Key performance indicators
-+ Inventory turn
-+ Inventory accuracy
+After each update of the **CostObjectStatementCache** table, a refresh of the
+**CostObjectStatementCacheMonthly** aggregated measurement must executed before
+data in Microsoft Power BI visualizations are updated
 
-The primary data source for CostAggregatedCostStatementEntryEntity is the CostStatementCache table. This table is managed by the Data set cache framework. By default, the table is updated every 24 hours, but you can enable manual updates in the data cache configuration. You can then do a manual update in the **Cost management** or **Cost analysis** workspace. After the update of CostStatementCache is run, you must update the OData connection on Power BI.com to see updated data on the site. The variance (purchase, production) measures in this Power BI content pertain only to items that are valuated by the Standard cost inventory method. Production variance is calculated as the difference between active cost and realized cost. The production variance is calculated when the production order has a status of **Ended**. For more information about production variance types and how each type is calculated, see [About analyzing variances for a completed production order](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+**Accessing the Power BI content**
 
+The **Cost management** Power BI content is shown in the **Cost administration**
+or **Cost analysis** workspaces.
 
-## Metrics that are included in the Power BI content
-The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost management** Power BI content.
+-   **Cost administration**
 
-| Report page | Charts | Titles |
-|---|---|---|
-|Inventory overall (Default by current period) |Accuracy |Inventory measures:<br>Inventory ending balance<br>Inventory net change<br>Inventory net change %<br>|
-| |Inventory turn | |
-| |Inventory ending balance by Resource group | |
-| |Inventory net change by Category name level 1 and Category name level 2| |
-| |Purchase variances by Resource group and Category name level 3 | |
-|Inventory by site (Default by current period) |Inventory ending balance by Site name and Resource group | |
-| |Inventory turn by Site name and Resource group | |
-| |Inventory ending balance by City and Resource group | |
-|Inventory by resource group (Default by current period) |Inventory measures | |
-| |Inventory accuracy by amount by Resource group | |
-| |Inventory turn by amount by Resource group | |
-|Inventory YOY (Default current year vs previous year) |Inventory measures | |
-| |Inventory KPIs:<br>Inventory turn<br>Inventory accuracy | |
-| |Inventory ending balance by Year and Resource group | |
-| |Purchase variances by Year and Category name level 3 | |
-|Inventory aging (Default by current year) |Inventory aging by Quarter and Resource group | |
-| |Inventory aging by Quarter and Site name | |
-|WIP overall (Default by current period) |WIP net change by Category name level 1 and Category name level 2 |Work in progress WIP measures:<br>WIP ending balance<br>WIP net change<br>WIP net change %<br> |
-| |Production variances by Resource group and Category name level 3 | |
-| |WIP net change by Resource group | |
-|WIP by site (Default by current period) |Work in progress WIP measures | |
-| |WIP net change by Site name and Category name level 2 | |
-| |Production variances by Site name and Category name level 3 | |
+    -   Overview (Application data)
 
-## Understanding the data model and entities
-Finance and Operations data is used to populate the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are used as the basis of the content.
+    -   Inventory accounting status (Microsoft Power BI)
 
-| Entity            | Key aggregate measurement | Data source for Finance and Operations | Field             | Description                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Statement entries | Net change                | CostAggregatedCostStatementEntryEntity      | sum(\[Amount\])   | Amount in the accounting currency |
-| Statement entries | Net change quantity       | CostAggregatedCostStatementEntryEntity      | sum(\[Quantity\]) |                                   |
+    -   Manufacturing accounting status (Microsoft Power BI)
 
-The following table shows how the key aggregate measurements are used to create several calculated measures in the content's dataset.
+-   **Cost analysis**
 
-| Measure                                 | How the measure is calculated                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Beginning balance                       | \[Ending balance\]-\[Net change\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Beginning balance quantity              | \[Ending balance quantity\]-\[Net change quantity\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Ending balance                          | CALCULATE(SUM(\[Amount\]), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &lt;= MAX('Fiscal calendars'\[Date\])))                                                                                                                                                                                           |
-| Ending balance quantity                 | CALCULATE(SUM(\[Quantity\]), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &lt;= MAX('Fiscal calendars'\[Date\])))                                                                                                                                                                                         |
-| Inventory beginning balance             | CALCULATE(\[Beginning balance\], 'Statement entries'\[Statement Type\] = "Inventory")                                                                                                                                                                                                                                                                                                                                                                                      |
-| Inventory ending balance                | CALCULATE(\[Ending balance\], 'Statement entries'\[Statement Type\] = "Inventory")                                                                                                                                                                                                                                                                                                                                                                                         |
-| Inventory net change                    | CALCULATE(\[Net change\], 'Statement entries'\[Statement type\] = "Inventory")                                                                                                                                                                                                                                                                                                                                                                                             |
-| Inventory net change quantity           | CALCULATE(\[Net change quantity\], 'Statement entries'\[Statement type\] = "Inventory")                                                                                                                                                                                                                                                                                                                                                                                    |
-| Inventory net change %                  | IF(\[Inventory ending balance\] = 0, 0, \[Inventory net change\] / \[Inventory ending balance\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Inventory turn by amount                | if(OR(\[Inventory average balance\] &lt;= 0, \[Inventory sold or consumed issues\] &gt;= 0), 0, ABS(\[Inventory sold or consumed issues\])/\[Inventory average balance\])                                                                                                                                                                                                                                                                                                  |
-| Inventory average balance               | (\[Inventory ending balance\] + \[Inventory beginning balance\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Inventory sold or consumed issues       | \[Inventory sold\] + \[Inventory consumed material cost\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Inventory consumed material cost        | CALCULATE(\[Inventory net change\], 'Statement entries'\[Category name - level 2\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Inventory sold                          | CALCULATE(\[Inventory net change\], 'Statement entries'\[Category name - level 2\_\] = "Sold")                                                                                                                                                                                                                                                                                                                                                                             |
-| Inventory accuracy by amount            | IF(\[Inventory ending balance\] &lt;= 0, IF(OR(\[Inventory counted amount\] &lt;&gt; 0, \[Inventory ending balance\] &lt; 0), 0, 1), MAX(0, (\[Inventory ending balance\] - ABS(\[Inventory counted amount\]))/\[Inventory ending balance\]))                                                                                                                                                                                                                              |
-| Inventory counted amount                | CALCULATE(\[Inventory net change\], 'Statement entries'\[Category name - level 3\_\] = "Counting")                                                                                                                                                                                                                                                                                                                                                                         |
-| Inventory aging                         | if(ISBLANK(max('Fiscal calendars'\[Date\])), blank(), MAX(0, MIN(\[Inventory aging receipts quantity\], \[Inventory aging ending balance quantity\] - \[Inventory aging receipts quantity in the future\]))) \* \[Inventory avg unit cost\]                                                                                                                                                                                                                                |
-| Inventory aging receipts quantity       | IF(\[minDate\] = \[minDateAllSelected\], CALCULATE(\[Inventory net change quantity\], 'Statement entries'\[Quantity\] &gt; 0, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &lt;= MAX('Fiscal calendars'\[Date\]))), CALCULATE(\[Inventory net change quantity\], 'Statement entries'\[Quantity\] &gt; 0)) |
-| Inventory aging ending balance quantity | \[Inventory ending balance quantity\] + CALCULATE(\[Inventory net change quantity\], FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &gt; max('Fiscal calendars'\[Date\]) ))                                                                                                                                 |
-| Inventory aging receipts in the future  | CALCULATE(\[Inventory net change\], 'Statement entries'\[Amount\] &gt; 0, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]), 'Fiscal calendars'\[Date\] &gt; MAX('Fiscal calendars'\[Date\])))                                                                                                                                             |
-| Inventory avg unit cost                 | CALCULATE(\[Inventory ending balance\] / \[Inventory ending balance quantity\],ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'\[LedgerRecId\], 'entities'\[ID\], 'entities'\[Name\], 'Ledgers'\[Currency\], 'Ledgers'\[Description\], 'Ledgers'\[Name\]))                                                                                                                                                                                                                 |
-| Purchase variances                      | CALCULATE(SUM(\[Amount\]), 'Statement entries'\[Category name - level 2\_\] = "Procured", 'Statement entries'\[Statement type\] = "Variance")                                                                                                                                                                                                                                                                                                                              |
-| WIP beginning balance                   | CALCULATE(\[Beginning balance\], 'Statement entries'\[Statement Type\] = "WIP")                                                                                                                                                                                                                                                                                                                                                                                            |
-| WIP ending balance                      | CALCULATE(\[Ending balance\], 'Statement entries'\[Statement Type\] = "WIP")                                                                                                                                                                                                                                                                                                                                                                                               |
-| WIP net change                          | CALCULATE(\[Net change\], 'Statement entries'\[Statement type\] = "WIP")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| WIP net change %                        | IF(\[WIP ending balance\] = 0, 0, \[WIP net change\] / \[WIP ending balance\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Production variances                    | CALCULATE(SUM(\[Amount\]), 'Statement entries'\[Category name - level 2\_\] = "ManufacturedCost", 'Statement entries'\[Statement type\] = "Variance")                                                                                                                                                                                                                                                                                                                      |
-| Category name - level 1                 | switch(\[Category name - level 1\_\], "None", "None", "NetSourcing", "Net sourcing", "NetUsage", "Net usage", "NetConversionCost", "Net conversion cost", "NetCostOfGoodsManufactured", "Net cost of goods manufactured", "BeginningBalance", "Beginning balance")                                                                                                                                                                                                         |
-| Category name - level 2                 | switch(\[Category name - level 2\_\], "None", "None", "Procured", "Procured", "Disposed", "Disposed", "Transferred", "Transferred", "Sold", "Sold", "ConsumedMaterialsCost", "Consumed material cost", "ConsumedManufacturingCost", "Consumed manufacturing cost", "ConsumedOutsourcingCost", "Consumed outsourcing cost", "ConsumedIndirectCost", "Consumed indirect cost", "ManufacturedCost", "Manufactured cost", "Variances", "Variances")                            |
-| Category name - level 3                 | switch(\[Category name - level 3\_\], "None", "None", "Counting", "None", "ProductionPriceVariance", "Production price", "QuantityVariance", "Quantity", "SubstitutionVariance", "Substitution", "ScrapVariance", "Scrap", "LotSizeVariance", "Lot size", "RevaluationVariance", "Revaluation", "PurchasePriceVariance", "Purchase price", "CostChangeVariance", "Cost change", "RoundingVariance", "Rounding variance")                                                   |
+    -   Overview (Application data)
 
-The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and provide deeper analytical insights.
+    -   Inventory accounting analysis (Microsoft Power BI)
 
-| Entity           | Examples of attributes                       |
-|------------------|----------------------------------------------|
-| Entities         | ID, Name                                     |
-| Fiscal calendars | Calendar, Month, Period, Quarter, Year       |
-| KPI goals        | Inventory accuracy goal, Inventory turn goal |
-| Ledgers          | Currency, Name, Description                  |
-| Sites            | ID, Name, Country, City                      |
+    -   Manufacturing accounting analysis (Microsoft Power BI)
 
+    -   Std. cost variance analysis (Microsoft Power BI)
 
+**Reports that are included in the Power BI content**
 
+The **Cost management** Power BI content includes a set of report pages that
+consists of a set of metrics. These metrics are visualized as charts, tiles, and
+tables. The following table provides an overview of the visualizations in
+the **Cost management** Power BI content.
 
+**Inventory accounting status**
 
+| Report page                               | Visualization                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Inventory overview                        | Beginning balance                               |
+|                                           | Net change                                      |
+|                                           | Net change %                                    |
+|                                           | Ending balance                                  |
+|                                           | Inventory accuracy                              |
+|                                           | Inventory turnover ratio                        |
+|                                           | Days inventory on-hand                          |
+|                                           | Active product in period                        |
+|                                           | Active cost objects in period                   |
+|                                           | Balance by item group                           |
+|                                           | Balance by site                                 |
+|                                           | Statement by category                           |
+|                                           | Net change by quarter                           |
+| Inventory overview by site and item group | Inventory accuracy by site                      |
+|                                           | Inventory turnover ratio by site                |
+|                                           | Inventory ending balance by site                |
+|                                           | Inventory accuracy by item group                |
+|                                           | Inventory turnover ratio by item group          |
+|                                           | Inventory ending balance by site and item group |
+| Inventory statement                       | Inventory statement                             |
+| Inventory statement by site               | Inventory statement by site                     |
+| Inventory statement by product hierarchy  | Inventory statement                             |
+| Inventory statement by product hierarchy  | Inventory statement by site                     |
+
+**Manufacturing accounting status**
+
+| Report page                | Visualization                       |
+|----------------------------|-------------------------------------|
+| WIP overview YTD           | Beginning balance                   |
+|                            | Net change                          |
+|                            | Net change %                        |
+|                            | Ending balance                      |
+|                            | WIP turnover ratio                  |
+|                            | Days WIP on-hand                    |
+|                            | Active cost object in period        |
+|                            | Net change by resource group        |
+|                            | Balance by site                     |
+|                            | Statement by category               |
+|                            | Net change by quarter               |
+| WIP statement              | Beginning balance                   |
+|                            | Ending balance                      |
+|                            | WIP statement by category           |
+| WIP statement by site      | Beginning balance                   |
+|                            | Ending balance                      |
+|                            | WIP statement by category and site  |
+| WIP statement by hierarchy | Beginning balance                   |
+|                            | Ending balance                      |
+|                            | WIP statement by category hierarchy |
+
+**Inventory accounting analysis**
+
+| Report page        | Visualization                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Inventory details  | Top 10 resources by ending balance                                           |
+|                    | Top 10 resources by net change increase                                      |
+|                    | Top 10 resources by net change decrease                                      |
+|                    | Top 10 resources by inventory turnover ratio                                 |
+|                    | Resources by low inventory turnover ratio and ending balance above threshold |
+|                    | Top 10 resources by low accuracy                                             |
+| ABC classification | Inventory ending balance                                                     |
+|                    | Consumed material                                                            |
+|                    | Sold (COGS)                                                                  |
+| Inventory trends   | Inventory ending balance                                                     |
+|                    | Inventory net change                                                         |
+|                    | Inventory turnover ratio                                                     |
+|                    | Inventory accuracy                                                           |
+
+**Manufacturing accounting analysis**
+
+| Report page | Visualization      |
+|-------------|--------------------|
+| WIP trends  | WIP ending balance |
+|             | WIP net change     |
+|             | WIP turnover ratio |
+
+**Std. cost variance analysis**
+
+| Report page                             | Visualization                                        |
+|-----------------------------------------|------------------------------------------------------|
+| Purchase price variance (Std. cost) YTD | Procured balance                                     |
+|                                         | Purchase price variance                              |
+|                                         | Purchase price variance ratio                        |
+|                                         | Variance by item group                               |
+|                                         | Variance by site                                     |
+|                                         | Purchase price by quarter                            |
+|                                         | Purchase price by quarter and Item group             |
+|                                         | Top 10 resources by unfavorable purchase price ratio |
+|                                         | Top 10 resources by favorable purchase price ratio   |
+| Production variance (Std. cost) YTD     | Manufactured cost                                    |
+|                                         | Production variance                                  |
+|                                         | Production variance ratio                            |
+|                                         | Variance by item group                               |
+|                                         | Variance by site                                     |
+|                                         | Production variance by quarter                       |
+|                                         | Production variance by quarter and variance type     |
+|                                         | Top 10 resources by unfavorable production variance  |
+|                                         | Top 10 resources by favorable production variance    |
+
+**Understanding the data model and entities**
+
+Dynamics 365 for Operations data is used to populate the report pages in the
+**Cost management** Power BI content. This is represented as aggregate
+measurements that are staged in the Entity store, which is a Microsoft SQL
+database optimized for analytics. Read more about it in the blog [Power BI
+integration with Entity Store in
+Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+
+The following key aggregate measurements of the objects listed below are used as
+the basis of the content pack.
+
+| **Object**                      | **Key aggregate measurements** | **Data source for Dynamics 365 for Operations** | **Field**           |
+|---------------------------------|--------------------------------|-------------------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Amount                         | CostObjectStatementCache                        | Amount              |
+| CostObjectStatementCacheMonthly | Quantity                       | CostObjectStatementCache                        | Qty                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn            | CostInventoryAccountingKPIGoal                  | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy              | CostInventoryAccountingKPIGoal                  | InventoryAccuracy   |
+
+The following table shows the key calculated measurements in the content pack.
+
+| Measure                            | Calculation                                                                                                                                                                                                      |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Beginning balance                  | Beginning balance = [Ending balance]-[Net change]                                                                                                                                                                |
+| Beginning balance qty.             | Beginning balance qty. = [Ending balance qty.]-[Net change qty.]                                                                                                                                                 |
+| Ending balance                     | Ending balance = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))))                                                                 |
+| Ending balance qty.                | Ending balance qty. = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))                                                                  |
+| Net change                         | Net change = SUM([AMOUNT])                                                                                                                                                                                       |
+| Net change qty.                    | Net change qty. = SUM([QTY])                                                                                                                                                                                     |
+| Inventory turnover ratio by amount | Inventory turnover ratio by amount = if(OR([Inventory average balance] \<= 0, [Inventory sold or consumed issues] \>= 0), 0, ABS([Inventory sold or consumed issues])/[Inventory average balance])               |
+| Inventory average balance          | Inventory average balance = (([Ending balance] + [Beginning balance]) / 2)                                                                                                                                       |
+| Days inventory on-hand             | Days inventory onhand = 365 / CostObjectStatementEntries[Inventory turnover ratio by amount]                                                                                                                     |
+| Inventory accuracy                 | Inventory accuracy by amount = IF([Ending balance] \<= 0, IF(OR([Inventory counted amount] \<\> 0, [Ending balance] \< 0), 0, 1), MAX(0, ([Ending balance] - ABS([Inventory counted amount]))/[Ending balance])) |
+
+The following key dimensions are used as filters to slice the aggregate
+measurements, so that you can achieve greater granularity and gain deeper
+analytical insights.
+
+| Entity                                                  | Examples of attributes                          |
+|---------------------------------------------------------|-------------------------------------------------|
+| Products                                                | Product number, Product name, Unit, Item groups |
+| Category hierarchies (Assigned to role Cost management) | Category hierarchy, Category level              |
+| Legal entities                                          | Legal entity names                              |
+| Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
+| Site                                                    | ID, Name, Address, State, Country,              |
