@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-**Overview**
+## Overview
 
 The **Cost management** Microsoft Power BI content is intended for inventory
 accountants or individuals in the organization who are responsible for or
@@ -63,12 +63,12 @@ After each update of the **CostObjectStatementCache** table, a refresh of the
 **CostObjectStatementCacheMonthly** aggregated measurement must executed before
 data in Microsoft Power BI visualizations are updated
 
-**Accessing the Power BI content**
+## Accessing the Power BI content
 
 The **Cost management** Power BI content is shown in the **Cost administration**
 or **Cost analysis** workspaces.
 
--   **Cost administration**
+-   **Cost administration workspace**
 
     -   Overview (Application data)
 
@@ -76,7 +76,7 @@ or **Cost analysis** workspaces.
 
     -   Manufacturing accounting status (Microsoft Power BI)
 
--   **Cost analysis**
+-   **Cost analysis workspace**
 
     -   Overview (Application data)
 
@@ -86,14 +86,14 @@ or **Cost analysis** workspaces.
 
     -   Std. cost variance analysis (Microsoft Power BI)
 
-**Reports that are included in the Power BI content**
+## Report pages that are included in the Power BI content
 
 The **Cost management** Power BI content includes a set of report pages that
 consists of a set of metrics. These metrics are visualized as charts, tiles, and
 tables. The following table provides an overview of the visualizations in
 the **Cost management** Power BI content.
 
-**Inventory accounting status**
+### Inventory accounting status
 
 | Report page                               | Visualization                                   |
 |-------------------------------------------|-------------------------------------------------|
@@ -121,7 +121,7 @@ the **Cost management** Power BI content.
 | Inventory statement by product hierarchy  | Inventory statement                             |
 | Inventory statement by product hierarchy  | Inventory statement by site                     |
 
-**Manufacturing accounting status**
+### Manufacturing accounting status
 
 | Report page                | Visualization                       |
 |----------------------------|-------------------------------------|
@@ -146,7 +146,7 @@ the **Cost management** Power BI content.
 |                            | Ending balance                      |
 |                            | WIP statement by category hierarchy |
 
-**Inventory accounting analysis**
+### Inventory accounting analysis
 
 | Report page        | Visualization                                                                |
 |--------------------|------------------------------------------------------------------------------|
@@ -164,7 +164,7 @@ the **Cost management** Power BI content.
 |                    | Inventory turnover ratio                                                     |
 |                    | Inventory accuracy                                                           |
 
-**Manufacturing accounting analysis**
+### Manufacturing accounting analysis
 
 | Report page | Visualization      |
 |-------------|--------------------|
@@ -172,7 +172,7 @@ the **Cost management** Power BI content.
 |             | WIP net change     |
 |             | WIP turnover ratio |
 
-**Std. cost variance analysis**
+### Std. cost variance analysis
 
 | Report page                             | Visualization                                        |
 |-----------------------------------------|------------------------------------------------------|
@@ -195,7 +195,7 @@ the **Cost management** Power BI content.
 |                                         | Top 10 resources by unfavorable production variance  |
 |                                         | Top 10 resources by favorable production variance    |
 
-**Understanding the data model and entities**
+### Understanding the data model and entities
 
 Dynamics 365 for Operations data is used to populate the report pages in the
 **Cost management** Power BI content. This is represented as aggregate
