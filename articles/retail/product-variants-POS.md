@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Inventory lookup on POS
-description: This article describes the options available for viewing inventory in the point of sale (POS). 
+title: Inventory lookup in the POS
+description: This topic describes the options that are available for viewing inventory information in the point of sale (POS). 
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
@@ -30,91 +30,92 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
-## Inventory lookup on POS 
+# Inventory lookup in the POS 
 
+[!include[banner](includes/banner.md)]
 
-Inventory lookup on POS helps retailers achieve real-time operational excellence and insights by connecting stores, POS, and the back office. It provides an accurate real-time view of products inventory across stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time. 
+Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office. This functionality provides an accurate real-time view of product inventory across stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.
 
-An accurate real-time inventory view across an organization helps store-associates to provide timely, elevated customer service. The moment that matters most is when the customer is ready to make a purchase decision. It's important for real-time inventory information to be at the fingertips of cashiers in the store, to empower cashiers to be able to accurately promise product delivery and pick up. 
+An accurate real-time view of inventory across an organization helps store associates provide timely, superior customer service. The moment that matters most is the moment when the customer is ready to make a purchase decision. It's important that cashiers in the store have real-time inventory information at their fingertips, so that they can accurately promise product delivery and pickup.
 
-Go to the Retail Modern POS workspace or Retail Cloud POS workspace to open the **Inventory lookup** page.
+You can open the **Inventory lookup** page from the **Retail Modern POS** workspace or the **Retail Cloud POS** workspace.
 
-![POS home page](media/POSHomepage.png)
+![Inventory lookup tile on the POS home page](media/POSHomepage.png)
 
-The **Inventory lookup** page allows you to enter a product on the numeric keypad so you can view quantity on hand for multiple stores and warehouses. 
+On the **Inventory lookup** page, you can use the numeric keyboard to enter a product number. You can then view the on-hand quantity for multiple stores and warehouses.
 
-![Standard inventory look up](media/InventoryLookUp.png)
+![Standard inventory lookup page](media/InventoryLookUp.png)
 
-There are also values shown for **Reserved** and **Ordered** for each location. 
+**Reserved** and **Ordered** quantities are also shown for each location.
 
- - **Reserved quantity** - Refers to the Physical reserved value from back office for a product number at the given location.
+- **Reserved** – This quantity refers to the **Physical reserved** value from the back office for the specified product number at the location.
+- **Ordered** – This quantity refers to the **Ordered in total** value from the back office for the specified product number at the location.
 
- - **Ordered quantity** - Refers to the Ordered in total value from back office for a product number at the given location. 
+## Locations that inventory availability information is shown for
 
-### Locations for which inventory availability information is shown
+The list of locations includes two types of entities:
 
-The locations list is comprised of two types of entities:
+- **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the headquarters. 
+- **Distribution centers** – Various types of distribution centers can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard/Default** type. 
 
- - **Retail stores** - This is the list of stores that are configured using the **Store-locator group** for the current store in the headquarters. 
+    > [!NOTE]
+    > Inventory availability information isn't shown for warehouses of the **Transit**, **Quarantine**, and **Goods in Route** types for the POS.
 
-- **Distribution centers** - These types are configurable in Dynamics 365 for Retail but we show inventory availability information only for the **Standard/Default type** of Distribution centers. 
+On the **Inventory lookup** page, you can view available to promise (ATP) quantities for each store, in addition to the current on-hand quantities, reserved quantities, and ordered quantities. Select the store to view the ATP information for, and then select **Show store availability**.
+
+![ATP quantities](media/ATP.png)
+
+## Opening the Dimension based matrix view to show all variants
+
+You can open the **Dimension based matrix** view from either the **Product details** page or the **Inventory lookup** page by using the **View all variants** button on the app bar at the bottom of the window.
+
 > [!NOTE]
-> Inventory availability information is not displayed for POS for Transit, Quarantine, and Goods in Route type of warehouses.
+> The **View all variants** button is available only for item product masters that have product variants. It isn't available for standalone products or kits.
 
-On the **Inventory lookup** page, in addition to the current quantity on hand, reserved, and ordered, future available to promise (ATP) quantities can be viewed for each store. To do view this information, select the store that you want to view the ATP for and then click **Show store availability**.
+![View all variants button on the Inventory lookup page](media/StandardToMatrix.png)
 
-![ATP](media/ATP.png)
+Select **View all variants** on the **Product details** page of a product master, or on the **Inventory lookup** page, without selecting a location, to go to the **Dimension based matrix** view to view the inventory availability information for all variants of a product for the current store.
 
-### Open the **Dimension based matrix view** to show all variants
+![Dimension based matrix view for the Inventory lookup page](media/Matrix.png)
 
-There are two ways to navigate to the **Dimension based matrix** view from the following pages: 
-   - **Product details** page
-   - **Inventory lookup** page
-
-The **View all variants** button on the app bar is available only for an item product master with product variants. 
 > [!NOTE]
-> The **View all variants** button on the app bar is not available for stand-alone products or kits.
+> In the preceding illustration, the display order of the dimensions is alphabetic, because the display order of dimensions wasn't configured for the selected product.
 
-![StandardViewToMatrix](media/StandardToMatrix.png)
+In the **Dimension based matrix** view, the tiles for the product variants include an on-hand value in the lower-right corner. The following table explains the meaning of the various values.
 
-Click **View all variants** on the **Product details** page of a product master or from the **Inventory lookup** page, without selecting a location, go to the **Dimension based matrix** view to view the inventory availability information for all variants of a product for the current store.
+| On-hand value                            | Description |
+|------------------------------------------|-------------|
+| Numeric value that is more than 0 (zero) | A variant has been released to the selected location, and you can perform additional actions in the cell. (These actions are described in more detail later in this topic.) |
+| **0** (zero)                             | A variant has been released to the selected location, but the item isn't available in selected location. However, you can perform additional actions in the cell. (These actions are described in more detail later in this topic.) |
+| **n/a** or an inactive cell              | A variant hasn't been released to the selected location, and you can't perform additional actions in the cell. |
 
-![InventoryDimensionMatrixView](media/Matrix.png)
+You can also change the pivot for dimensions by selecting the new dimension to use. 
+
+![Changing the pivot](media/ChangePivot.png)
+
+![Pivot changed](media/PivotChanged.png)
+
 > [!NOTE]
-> The display order of dimensions is alphabetic because the display order for the dimensions on this product were not configured.
+> In the preceding illustrations, the display order of the dimensions for the selected product is custom (non-alphabetic). It's based on the dimension display order that is set in the back office.
 
-There are various kind of variant tiles, as noted in the following table. 
-
-| **Variant tile on-hand value** | **Description**                                                                                                                                                                                                               |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Numeric (>0)               | Indicates that a variant is released to the selected location, and you can perform additional actions in that individual cell.                                                               |
-| Numeric (= 0)              | Indicates that a variant is released to the selected location, and the item is not available in selected location, but you can perform additional actions in that cell. |
-| n/a or inactive cell           | Indicates that a variant is not released to the selected location, and you cannot perform additional actions in that cell.                                                    |
-
-
-You can also change the pivot for dimensions by selecting the dimension that you would like to swap.
-
-![ChangingPivot](media/ChangePivot.png)
-> [!NOTE]
-> The display order of dimensions for this product is custom (non-alphabetic). It's based on the dimension display order that is set in the back office.
-
-![PivotChanged](media/PivotChanged.png)
-
-Additionally, to boost a store associate's productivity there are additional actions that can be performed from a product-dimension based matrix form of inventory lookup. For example, you can do the following: 
+Furthermore, from an inventory lookup that is based on a product dimension–based matrix, additional actions can be performed to help boost a store associate's productivity. Here are some examples:
  
-- Change the store location to look up inventory availability of all product variants at other locations. This include other stores in the store-locator group as well as standard/default types from the distribution center.
-- Sell an individual product variant to a customer using cash and carry, pick up at store, and ship to address. 
-- Provide the customer with available-to-promise information for an individual product variant at a specific location. 
+- Change the store location to look up the inventory availability of all product variants at other locations. These locations include other stores in the store locator group and distribution centers of the **Standard/Default** type.
+- Sell an individual product variant to a customer by using cash and carry, in-store pickup, or shipment to an address.
+- Provide the customer with ATP information for an individual product variant at a specific location.
 
-![VariantTileActions](media/VariantActions.png)
+![Additional actions on variant tiles](media/VariantActions.png)
+
 > [!NOTE]
-> The display order of dimensions is alphabetic because the display order for the dimensions on this product were not configured. 
+> In the preceding illustration, the display order of the dimensions is alphabetic, because the display order of dimensions wasn't configured for the selected product.
 
-| **Actions**              | **Description**                                                                                                                                                                                                          |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sell now             | Adds the selected item variant to the transaction and re-directs the user to the transaction screen. (Not available when the selected location is of type distribution center.)                                             |
-| Pick up in store     | Creates a customer order for that product variant to be picked up from the selected location and re-directs the user to the transaction screen. (Not available when the selected location is of type distribution center.)     |
-| Ship product         | Creates a customer order for the product variant to be shipped from the selected location and re-directs the user to the transaction screen.                                                                              |
-| Availability         | Shows the available to promise information (ATP) for the selected variant combination for the selected location.                                                                                                     |
-| Show all locations      | Switches the user to standard inventory look up view, highlighting inventory availability information for that item variant across all stores in the store-locator group and standard/default distribution centers. |
-| View product details | Re-directs the user to the product details page of the associated product master.                                                                                                                                        |
+The following table provides more information about the additional actions that are available.
+
+| Action               | Description |
+|----------------------|-------------|
+| Sell now             | Add the selected item variant to the transaction, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
+| Pick up in store     | Create a customer order for the product variant that will be picked up from the selected location, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
+| Ship product         | Create a customer order for the product variant that will be shipped from the selected location, and redirect the user to the transaction screen. |
+| Availability         | Show the ATP information for the selected variant combination for the selected location. |
+| Show all locations   | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the **Standard/Default** type. |
+| View product details | Redirect the user to the **Product details** page of the associated product master. |
