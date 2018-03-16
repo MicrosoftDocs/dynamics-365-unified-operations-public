@@ -43,11 +43,11 @@ Android will be compatible with Platform update 16, when it becomes available.
 Create a project timesheet on your mobile device
 ------------------------------------------------
 
-1.  Take note of your Dynamics 365 URL for the Project management and accounting\>Timesheets\>My timesheets(Optimized for mobile) page.
+1.  Take note of your Dynamics 365 URL for the **Project management and accounting**\>**Timesheets**\>**My timesheets(Optimized for mobile)** page.
 
 2.  On your mobile device’s web browser, access the URL noted in the previous step.
  
-3.  Select Project management and Accounting\>Timesheets\>My timesheets(Optimized for mobile).
+3.  Select **Project management and Accounting**\>**Timesheets**\>**My timesheets(Optimized for mobile)**.
 
 4.  Select **New**.
 
