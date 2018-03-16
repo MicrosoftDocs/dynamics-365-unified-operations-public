@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 7.3
 
 This topic explains what tools you have available to ensure optimal configuration and smooth operation of your Dynamics 365 Finance and Operations, Enterpise Edition installation.
 
-##Overview
+## Overview
 
 The availability and performance of the ERP installation and the smooth operation of business processes are negatively affected by incorrect or incomplete module configuration and setup. Another major impacting factor is business data correctness, completeness and cleaness.   
 The **Optimization advisor** is a tool that enables power users, business analysts, functional consultants and various IT support functions to identify configuration and business data issues. The **Optimization advisor** suggests configuration best practices and points out what business data is obsolete or incorrect.
@@ -48,6 +48,10 @@ Standard security policies apply to optimization opportunties. For example, opti
 Opportunites are displayed in the language of the end user.
 
 To complement the set of rules that are shipped with the standard version, you can create rules that are specific to your customizations, ISV solutions and business data. The process of creating a new rule is described [in this article](./optimization-advisor.md).
+
+For more information, watch the short YouTube video:
+
+> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 
 
