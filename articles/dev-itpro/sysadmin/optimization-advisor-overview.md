@@ -47,17 +47,36 @@ The **Optimization advisor** runs a set of best practice rules, on a perodic bas
 Standard security policies apply to optimization opportunties. For example, optimization opportunities related to the **Warehouse management** module configuration are visible only to users that have access and can make changes to **Warehouse managemnet** setup.
 Opportunites are displayed in the language of the end user.
 
+Opportunities can be company specific or cross-company, depending on the type of setup and data they validate. Cross-company opportunities can be viewed from all companies. Company specific opportunities can be viewed only by changing company first. 
+
 To complement the set of rules that are shipped with the standard version, you can create rules that are specific to your customizations, ISV solutions and business data. The process of creating a new rule is described [in this article](./optimization-advisor.md).
 
-For more information, watch the short YouTube video:
+When you take action on an opportunity, the system can calculate the impact this had, in terms of business process runtime reduction. This feature is unfortunately not available for all the optimization opportunities.
+
+For more information on the **Optimization advisor**, watch the short YouTube video:
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
-## Optimization advisor rules
+## Optimization rules
 
-The list of optimization advisor rules and their periodicity can be accessed by navigating to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have stautus **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
+The list of optimization advisor rules and their periodicity can be accessed by navigating to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have status **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
 
 When you want to trigger the validation of unscheduled rules or when you want to re-evaluate periodic rules outside their predefined schedule, navigate to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**. In the **Diagnostic rule validation** dialog, choose a frequency. All rules that have the specified frequency will be re-evaluated.
+
+The current set of optimization rules can be divided in the following categories:
+
+**1. Module configuration and set up**
+For example, there are a few rules validating the correctness of warehouse location directive setup for fixed product variant locations, for sales orders and transfer orders.
+There are a few rules that check whether features that have been enabled are actually used. For example, there is a rule that checks whether you are using the **Master planning** module. If it identifies that you are not, then it will create an optimization opportunity suggesting you turn off planning processes.  
+
+**2. System configuration set up**
+If certain functionality controlled by a configuration key is not used, an optimization opportunity will be generated, suggesting to disable the configuration key. Examples include Catch Weight, Budget planning, Project, Approved vendor list configuration keys.
+
+
+## Optimization opportunities
+
+To view the optimization opportunities that resulted from the optimization rules evaluation, open the **Optimization advisor** page, available from the default dashboard.
+
 
 
 
