@@ -3,7 +3,7 @@
 
 title: One voucher
 description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
-author: aprilolson
+author: kweekley
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
