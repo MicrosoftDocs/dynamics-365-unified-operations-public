@@ -87,9 +87,10 @@ To create the best XLIFF TM, make sure that the following conditions are met:
 - The resources are in the same order in both the source file and the target file.
 - There are no empty strings. The following illustration shows examples of empty strings from the source and the target.
 
+
     ![Empty strings](./media/dts-align3.png "Empty strings")
 
-    These empty strings are inherited by the XLIFF TM. If a **Rebate** string in the source has an empty string in the target, it will likely be translated as an empty string if this XLIFF TM is used.
+These empty strings are inherited by the XLIFF TM. If a **Rebate** string in the source has an empty string in the target, it will likely be translated as an empty string if this XLIFF TM is used.
 
     ![Missing strings](./media/dts-align4.png "Missing strings")
 
@@ -107,8 +108,7 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Field name        | Description |
     |-------------------|-------------|
     | Request name      | Type your own description |
-    | Request type      | **User Interface** - select this if you are translating software file(s) for a product or solution.  
-      **Documentation** - select this if you are translating Microsoft Word .docx file(s). Documentation request type will be available only if you have turn on the **Dynamics 365 Translation Service - Documentation Translation Support** from LCS Preview features. |
+    | Request type      | **User Interface** - select this if you are translating software file(s) for a product or solution. **Documentation** - select this if you are translating Microsoft Word .docx file(s). Documentation request type will be available only if you have turn on the **Dynamics 365 Translation Service - Documentation Translation Support** from LCS Preview features. |
     | Product name      | Select a product name. If you accessed DTS from within a LCS project, this field is automatically filled in as read-only. |
     | Product version   | Select a product version. If you accessed DTS from within a LCS project, this field will show the product version information from the project as a default and you can select a different version if needed.|
     | Target country/region | select a country where the translated file will be released to.|
