@@ -193,7 +193,7 @@ After you adjust the calculation parameters, the following pay items are generat
 
 ### Allow a deviation from the standard pay profiles
 
-On the **Profiles** page (**Time and attendance** &gt; **Setup** &gt; **Time profiles** &gt; **Profiles**), you can set the following profile types:
+On the **Profiles** page (**Time and attendance** &gt; **Setup** &gt; **Time profiles** &gt; **Profiles**), you can set up profile types that include switch codes and breaks.
 
 ### Switch codes
 
@@ -248,15 +248,15 @@ On the **Approve** page, undo the transfer, and then use the **Switch code** men
 
 Breaks from work affect the calculation of worker pay. Breaks are defined as a type of indirect activity. They can be defined as either **Paid**, to allow the break to add to the worker's pay, or **Unpaid**, to prevent the break from adding to the worker's pay. A break can also be defined as either **Planned** or **Registered**.
 
-### Planned breaks
+#### Planned breaks
 
 If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the **Job card terminal** page or on the **Job card device** page. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
 
-### Registered breaks
+#### Registered breaks
 
 If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card terminal** page or on the **Job card device** page. On both these pages, the user can select the type of break in a list of predefined break activities.
 
-### Paid and unpaid breaks
+#### Paid and unpaid breaks
 
 Break activities can be set up as **Paid** or **Unpaid**. A paid break is included in the calculation of pay time, and the system uses the pay type that is defined in the pay agreement for the **Break** registration type.
 
@@ -455,7 +455,7 @@ You can use the **Planned absences** report to see an overview of planned absenc
 
 ### Registered absence
 
-In general, workers are considered absent if they aren't at work for any period between their planned clock-in time and their planned clock-out time. If workers clock in later than planned, or if they clock out earlier than planned, they are prompted to select an absence code to indicate the reason for the absence. An absence code can be set up so that it's applicable registration. In this case, only applicable codes appear for selection in the list.
+In general, workers are considered absent if they aren't at work for any period between their planned clock-in time and their planned clock-out time. If workers clock in later than planned, or if they clock out earlier than planned, they are prompted to select an absence code to indicate the reason for the absence. An absence code can be set up so that it's applicable to registration. Only applicable codes will be available for selection in the list.
 
 ## Scenarios based on various combinations of work hour registrations
 
@@ -593,7 +593,7 @@ If the worker selects an absence code for legal absence, and the absence code is
 In this case, the worker's flex balance is reduced by the hours between the actual clock-out time and the planned clock-out time (that is, the 2.5 hours from 01:00 PM to 03:30 PM).
 
 > [!NOTE]
-> We don't recommend that you select both the **Deduct flex** check box and the **Deduct overtime** check box for an absence code, because this setup converts the worker's overtime hours with the illegal hours and reduces the worker's flex account at the same time.
+> We don't recommend that you select both the **Deduct flex** check box and the **Deduct overtime** check box for an absence code, because this setup will deduct the illegal hours from the worker's overtime hours and at the same time reduce the worker's flex account.
 
 ### Scenario 6: There is no planned absence for the day and no worker attendance for the day
 
