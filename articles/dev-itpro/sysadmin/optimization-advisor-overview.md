@@ -39,8 +39,6 @@ This topic discusses how to use Optimization advisor to ensure optimal cofigurat
 
 ## Overview
 
-The availability and performance of the ERP installation and the smooth operation of business processes are negatively affected by incorrect or incomplete module configuration and setup. Another major impacting factor is business data correctness, completeness and cleaness. (rewrote as follows?)   
-
 The incorrect module configuration and setup can adversely affect the feature availability and performance of Finance and Operations as well as the smooth operation of business processes. Business data quality, such as data correctness, completeness, and cleanliness, also has impacts on system performace and organizations, for example, decision making, productivity, and so on.    
 
 The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions to identify the issues in module configuration and business data. The **Optimization advisor** suggests best practices for module configuration and specifies which business data is obsolete or incorrect.
