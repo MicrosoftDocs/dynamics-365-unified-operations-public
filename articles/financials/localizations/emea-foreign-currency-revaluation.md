@@ -50,7 +50,7 @@ You can revalue foreign currency amounts for bank transactions, and you can crea
 3. If you leave the Bank account field blank, you can view the bank transaction details for all bank accounts. 
 4. Click OK to generate the report. 
 
-## (LT, LV, EE, CZ) Calculate exchange rate adjustments for bank account transactions
+## (CZ, EE, LT, LV) Calculate exchange rate adjustments for bank account transactions
 
 You must revalue and adjust bank accounts if there is a difference in the exchange rate between the accounting currency and the reporting currency. This helps you to calculate the correct balance in the accounting currency and the reporting currency for the bank accounts. 
 
