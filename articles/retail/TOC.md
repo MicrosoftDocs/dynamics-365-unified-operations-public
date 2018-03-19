@@ -46,8 +46,9 @@
 
 # Modern Point of Sale (MPOS) and Cloud POS
 ## [Choose between Modern POS and Cloud POS](MPOS-or-CPOS.md)
-## [POS operations](POS-operations.md)
+## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
+## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +61,7 @@
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up images for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Info codes overview](info-codes-retail.md) 
+## [POS improvements for serialized products](serialized-inventory.md)
 ## Product recommendations
 ### [Personalized product recommendations overview](personalized-product-recommendations.md)
 ### [Add a recommendations control on a POS device](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
+## [Prevent discounts for retail products](prevent-discounts.md)
 ## [Create coupons for retail sales](retail-coupons.md)
 
 # Products and merchandising
@@ -105,6 +108,7 @@
 ## [Attributes and attribute groups overview](attribute-attributegroups-lifecycle.md)
 ## [Create and manage attributes](create-manage-attributes.md)
 ## [Set up retail products](set-up-retail-products.md)
+## [Enhanced product and category management](category-management-product-creation.md)
 ## [Product dimensions](../supply-chain/pim/product-dimensions.md)
 ## [Set up bar codes](set-up-bar-codes.md)
 ## [Set up bar code masks](set-up-bar-code-masks.md)
@@ -197,6 +201,7 @@
 ### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 ### [Payment Application Data Security Standards (PA-DSS) certification](dev-itpro/PA-DSS-Certification.md)
+### [Retail capabilities available in on-premises deployments](retail-onprem.md)
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
