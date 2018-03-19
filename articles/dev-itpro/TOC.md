@@ -159,7 +159,7 @@
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
 ## [Date effectivity](dev-tools/date-effectivity.md)
 ## [ISV licensing](dev-tools/isv-licensing.md)
-## [ISV licensing on-prem](dev-tools/isv-licensing-on-prem.md)
+## [ISV licensing on-premises](dev-tools/isv-licensing-on-prem.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
