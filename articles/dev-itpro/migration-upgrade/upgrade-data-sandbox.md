@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-The output of this task is an upgraded database that you can use in a sandbox environment. A sandbox environment is a Tier 2 or higher environment where business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
+The output of this task is an upgraded database that you can use in a sandbox environment. In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
 
@@ -171,7 +171,7 @@ After the copy is created, run the following Transact-SQL (T-SQL) script against
 	end	
 ```
 
-### Export the copied database to a bacpac file
+## Export the copied database to a bacpac file
 
 Export the copied database to a bacpac file by using the SQLPackage.exe tool. This step should be done by the DBA or a team member who has equivalent knowledge.
 
@@ -197,7 +197,7 @@ Here is an explanation of the parameters:
 - **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the file will be created by the process.
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
 
-### Upload the bacpac file to Azure storage
+## Upload the bacpac file to Azure storage
 
 The bacpac file you have created will need to be copied to the AOS machine in your Azure hosted sandbox environment. There are several reasons for this:
 1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
@@ -205,7 +205,7 @@ The bacpac file you have created will need to be copied to the AOS machine in yo
 
 You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
-### Import the bacpac file into SQL Database
+## Import the bacpac file into SQL Database
 
 During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
 
@@ -277,7 +277,7 @@ Run the following script against the imported database. The script performs the 
 	ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
-### Run the data upgrade deployable package
+## Run the data upgrade deployable package
 
 To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 
@@ -290,4 +290,4 @@ For more information, see [Upgrade data in development, demo, or sandbox environ
 
 ### Upgrade a copy of the database in a development environment
 
-It's useful to upgrade the same database in a development environment. If you have a copy of the database available for development environments, it will be much easier to investigate bugs that are found in the upgraded sandbox environment.
+It is highly recommended to have upgraded the same database in a development environment. If you have a copy of the database available for development environments, it will be much easier to investigate bugs that are found in the upgraded sandbox environment.
