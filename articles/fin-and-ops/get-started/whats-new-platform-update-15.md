@@ -92,7 +92,7 @@ The existing functionality for financial journals (general journal, fixed asset 
     - Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required for one of the functional gaps.
 -   **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
 
-See the [One voucher documentation](https://go.microsoft.com/fwlink/?linkid=869389) for detailed information about the use and deprecation of this functionality.
+See the [One voucher documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/one-voucher) for detailed information about the use and deprecation of this functionality.
 
 
 ## Power users can add custom fields to forms without developer customization 
