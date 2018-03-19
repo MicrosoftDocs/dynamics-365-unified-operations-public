@@ -58,14 +58,14 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for companies, vendors, and customers.</p>
 <ul>
 <li><strong>Companies:</strong> Create an entry for the Goods and Services Taxpayer Identification Number (GSTIN) for every company, and specify casual registration periods.</li>
-<li><strong>Vendors:</strong> Define state-wide GST type registration numbers for vendors.</li>
-<li><strong>Customers:</strong> Define state-wide GST type registration numbers for customers.</li>
+<li><strong>Vendors:</strong> Define state-wise of GST type registration numbers for vendors.</li>
+<li><strong>Customers:</strong> Define state-wise of GST type registration numbers for customers.</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>Set up GST reference number groups.</td>
-<td>GST transactions are differentiated through a unique number sequence. If different number sequences are required for each warehouse or legal entity addresses, you can create a reference number sequence group and assign it to the addresses. For more information, see <a href="apac-ind-gst-reference-groups.md">Set up GST reference number groups</a>.</td>
+<td>GST transactions are differentiated through a unique number sequence. If different number sequence is required for every warehouse or for the addresses of legal entities, you can create a reference number sequence group and assign it to the addresses. For more information, see <a href="apac-ind-gst-reference-groups.md">Set up GST reference number groups</a>.</td>
 </tr>
 <tr>
 <td>Enter GST information for legal entities, warehouses, vendors, or customers.</td>
@@ -86,7 +86,7 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <li><strong>HSN:</strong> Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>HSN code</strong>.</li>
 <li><strong>SAC:</strong> Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Service accounting codes</strong>.</li>
 </ul>
-<p>You can assign HSN and SAC codes to products in the <strong>GST</strong> area of the <strong>Released products</strong> page. Products of the <strong>Item</strong> item type should have an HSN code, and products of the <strong>Service</strong> item type should have a SAC code.</p>
+<p>You can assign HSN and SAC codes to products in the <strong>GST</strong> field group of the <strong>Released products</strong> page. Products of the <strong>Item</strong> item type should have an HSN code, and products of the <strong>Service</strong> item type should have an SAC code.</p>
 <blockquote>
 <p>
 [!IMPORTANT]
@@ -96,7 +96,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 </td>
 </tr>
 <tr>
-<td>Assign a SAC code to miscellaneous charges.</td>
+<td>Assign an SAC code to miscellaneous charges.</td>
 <td>
 <ol>
 <li>Go to <strong>Accounts payable</strong> &gt; <strong>Setup</strong> &gt; <strong>Charges</strong> &gt; <strong>Charges code</strong>, and select a charges code.</li>
@@ -126,7 +126,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 <td>
 <ol>
 <li>Go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>, and create a vendor record for the GST authority.</li>
-<li>Go to <strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax authorities</strong>, and create a sales tax authority with the GST authority vendor account.</li>
+<li>Go to <strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax authorities</strong>, and create a sales tax authority by using the GST authority vendor account.</li>
 </ol>
 </td>
 </tr>
@@ -151,7 +151,7 @@ Follow these steps to load a tax configuration and map it to a legal entity.
 2. Select **Exchange** &gt; **Load from XML files**.
 3. Browse to the location of the configuration file that should be loaded, and select the configuration file.
 4. Select **OK**.
-5. Repeat steps 2 through 4 to load **Taxable document**, **Taxable document (India)**, and **Tax (India GST)** in sequence.
+5. Repeat steps 2 through 4 to load **Taxable document**, **Taxable document (India)**, and **Tax (India GST)** in that order.
 6. Select **Close**.
 7. Go to **Tax** &gt; **Setup** &gt; **Tax configuration** &gt; **Tax setup**.
 8. Select **New**.
@@ -185,9 +185,12 @@ Follow these steps to load a tax configuration and map it to a legal entity.
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
 
     > [!IMPORTANT]
-    > If the tasks in the **Tax setup** section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.
+    > If the tasks in the [Tax setup](#tax-setup), section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.
+    
+    
+        
 
-## Example: Tax setup
+## Tax setup
 
 This section walks you through the process of defining the GST and Customs tax setup in Finance and Operations.
 
@@ -241,7 +244,7 @@ This section walks you through the process of defining the GST and Customs tax s
 
     > [!NOTE]
     > - The list of accounts is generated dynamically, based on the posting profile from the configuration.
-    > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
+    > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level for each  registration.
 
 8. Set up rate and percentage tables:
 
