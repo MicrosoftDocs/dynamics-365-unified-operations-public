@@ -69,28 +69,30 @@ The current set of optimization rules can be divided into the following categori
 
 ### 1. Module configuration and setup
 
-Warehouse management setup is a complicated process. To aid with that, we have introduced a few rules validating the correctness of the setup, such as warehouse location directive setup for fixed product variant locations, for sales orders and transfer orders.
-There are a few rules that check whether features that have been enabled are actually being used. For example, there is a rule that checks whether you are using the **Master planning** module. If it identifies that you are not, then it will create an optimization opportunity suggesting you turn off planning processes.  
+Warehouse management setup is a complicated process. For ease of setup, a few rules have been introduced to help validating the correctness of the setup, such as the warehouse location directive setup for fixed product variant locations, for sales orders, and transfer orders.
 
-**2. System configuration**
+There are a few rules that check whether features that have been enabled are actually being used. For example, there is a rule that checks whether you are using the **Master planning** module. If it identifies that you are not using the module, then it will create an optimization opportunity that suggests to turn off the planning processes.  
 
-If certain functionality controlled by a configuration key is not used, an optimization opportunity will be generated, suggesting to disable the configuration key. Examples include Catch Weight, Budget planning, Project, Approved vendor list configuration keys.
+### 2. System configuration
 
-**3. Business data consistency and cleanup**
+If certain functionality controlled by a configuration key is not used, an optimization opportunity will be generated to suggest to disable the configuration key. Examples include **Catch weight**, **Budget planning**, **Project**, **Approved vendor list configuration keys**.
 
-If master data is not correct (e.g. you have unit of measure conversions for units that have not been defined, you have unit of measure conversions that have a division by 0, etc), then the rules controlling this will fire and you will see an optimization opportunity to correct the data. 
-If you have too many and too old batch job history entries, obsolete items, closed on hand entries for warehouse enabled items, etc you will also get optimization opportunities suggesting to clean up the data. Keeping your data clean ensures better overall system performance.
+### 3. Business data consistency and cleanup
 
-**4. Best practices**
+If master data is not correct, for example, you have unit of measure conversions for units that have not been defined, or you have unit of measure conversions that have a division by 0, then the rules that controll this process will be triggered and an optimization opportunity will be created to suggest to correct the data. 
 
-If you are not running certain business processes according to best practices (e.g. running inventory pre-closing before the inventory closing, use scheduled batch for subledger journal batch transfer, etc), you will get optimization opportunities informing you what the best practice is and asking you to follow it.
+If you have too many or too old batch job history entries, obsolete items, closed on-hand entries for warehouse enabled items, etc, you will also see the optimization opportunities that are created to suggest to clean up the data. Keeping your data clean improves overall system performance.
 
+### 4. Best practices
 
+If you are not running certain business processes according to best practices, for example, running inventory pre-closing before the inventory is closed, or use the scheduled batch for subledger journal batch transfer, you will see the optimization opportunities that inform you about what the best practice is and asks you to follow it.
 
 ## Optimization opportunities
 
 To view the optimization opportunities that result from the optimization rules evaluation, open the **Optimization advisor** page, available from the default dashboard.
+
 On this page, you can get more information about an opportunity by clicking the **More information** button. If you want the system to take action and correct the setup, clean the data, etc without you having to navigate to the corresponding forms, you can click the **Take action** button. 
+
 There is no workflow for optimization opportunities. Once you have clicked **Take action** or once you click a navigation path available in the **More information** dialog, the optimization opportunity will dissapear from the list. If the corrective action didn't solve the issue completely, next time the rule is evaluated, the opportunity will be generated again. 
 If an opportunity doesn't apply to your role, you can chose to **Hide from my list**. Even if the rule behind this opportunity will trigger again, you will not see this opportunity in your list.
 If you want to deactivate the evaluation of certain rules, click on the opportunity generated by the rule and then click **Deactivate analysis**.
