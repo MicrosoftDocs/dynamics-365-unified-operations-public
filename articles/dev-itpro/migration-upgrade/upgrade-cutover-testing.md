@@ -53,8 +53,9 @@ This cutover process differs from a basic data upgrade validation in a sandbox e
     - Complete application setup tasks. This step can be large, depending on the functionality that is used. During this step, the functional team configures new application functionality so that it's ready to be used in the upgraded system.
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
 
-    > [!NOTE]
-    > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
+
+> [!NOTE]
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
@@ -133,19 +134,17 @@ The following areas should be validated:
 
     - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource. Because this machine is Microsoft-hosted, you must submit a request to Microsoft to increase resources if you identify that they are a bottleneck.
 
-### Run the MajorVersiondataUpgrade.zip package
+### Execute the data upgrade process (Run the MajorVersiondataUpgrade.zip package)
 
-When this task occurs at go-live (during the real cutover), it will be performed by the Microsoft DSE team. However, during cutover testing, it involves the developers. During this task, the old database structure is transformed to the schema of the new system.
+Once you have completed importing the database, notify the DSE team that the database is ready to be upgraded. Include the location (Environment name) that the database has been imported on.
+The DSE team will perform this task, the old database structure is transformed to the schema of the new system. The database synchronization process also runs as part of this task. Database synchronization might take a significant amount of time in some situations, such as when a clustered index has changed on a table, because this operation is a costly operation in SQL.
 
-The database synchronization process runs as part of this task. Database synchronization might take a significant amount of time in some situations, such as when a clustered index has changed on a table, because this operation is a costly operation in SQL.
-
-We strongly recommend that you first perform your analysis and debugging process in a development environment. In a sandbox environment, debugging and analysis options are more restricted. The goal is to have few or no issues that must be addressed when you do cutover testing.
+We strongly recommend that you have first performed your analysis and debugging process in a development and sandbox environment. In a sandbox environment, debugging and analysis options are more restricted. The goal is to have few or no issues that must be addressed when you do cutover testing.
 
 The following areas should be validated:
 
 - Get concrete timings for the import process.
 - Optimize the process to help guarantee the fastest experience. Optimization might require the following tasks:
-
     - Monitor the performance of individual upgrade scripts through the ReleaseUpdateScriptsExecution table.
     - Adjust scripts to optimize performance. This task might require that you customize a script’s X++ code to optimize it for your dataset.
     - Monitor Azure SQL DTU by using Microsoft Dynamics Lifecycle Services (LCS) monitoring or the sys.dm_resources_stats system view in Management Studio. If resources are maxed out, you might have to request a higher database level from the Microsoft DSE team.
