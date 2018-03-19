@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15. This version was released in March 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,11 @@ This topic describes features that are either new or changed in Dynamics 365 for
 > [!NOTE]
 > This platform release is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15. 
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=869898).
+### Dynamics 365 Spring ‘18 release notes
+Discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform. Download the [Dynamics 365 Spring ’18 release notes](https://aka.ms/businessappsreleasenotes).
+
+### Platform update 15 bug fixes
+For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=869898).
 
 ## Ability to color grid rows without overlayering via FormDataSource OnDisplayOptionInitialize event
 The ability to color grid rows without overlayering is now possible via the OnDisplayOptionInitialize event on FormDataSource.
@@ -80,6 +84,16 @@ the Excel add-in, provide a productive environment configuration experience.
 With this enhancement, you can move data from one environment to another by reading data into Excel from one environment, change the environment address, and then publish the data into the new environment.
 
 For more information, see [Copy environment data](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data).
+
+## One voucher deprecation
+The existing functionality for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher. This functionality is referred to as “One voucher.” The One voucher functionality causes issues during settlement, tax calculation, reconciliation of a subledger to the general ledger, financial reporting, and more. Because of these issues, the One voucher functionality will be made obsolete. However, because there are functional gaps that depend on this functionality, the functionality won't become obsolete all at once. Instead, we will use the following schedule:
+-   **Spring '18 release** – The functionality will be turned off by default, through a General ledger parameter. However, you can turn the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed in the One voucher documentation.
+    -  If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix “bugs” in the areas that are identified in the One voucher documentation if this functionality is used.
+    - Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required for one of the functional gaps.
+-   **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
+
+See the [One voucher documentation](https://go.microsoft.com/fwlink/?linkid=869389) for detailed information about the use and deprecation of this functionality.
+
 
 ## Power users can add custom fields to forms without developer customization 
 Many application customizations involve adding one or more fields to existing
