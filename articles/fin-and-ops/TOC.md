@@ -229,7 +229,7 @@
 ##### [Currency revaluation in a consolidation company](../financials/general-ledger/currency-revaluation-consolidation-company.md)
 ##### [Foreign currency revaluation for General ledger](../financials/general-ledger/foreign-currency-revaluation-general-ledger.md)
 ##### [Import currency exchange rates](../financials/general-ledger/import-currency-exchange-rates.md)
-#### Period end close
+#### Period-end close
 ##### [Close the general ledger at period end](../financials/general-ledger/close-general-ledger-at-period-end.md)
 ##### [Financial period close workspace](../financials/general-ledger/financial-period-close-workspace.md)
 ##### [Year-end close](../financials/general-ledger/year-end-close.md)
