@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Cutover testing
+title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the tasks that occur after you turn off AX 2012 but before you turn on Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: tariqbell
 manager: AnnBe
@@ -46,18 +46,37 @@ The following illustration shows the overall process for cutover to go-live as i
 
 This cutover process differs from a basic data upgrade validation in a sandbox environment in the following ways:
 
-- The AX 2012 database isn’t copied but is only backed up, the original database is modified/upgraded. This approach is faster, and the backup provides rollback, if rollback is required.
-- Because the production environment for Finance and Operations has restricted access, some tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include running the data upgrade process on the production instance.
+- The data upgrade process is performed on the production environment, this approach is faster.
+- Because the production environment for Finance and Operations has restricted access, some tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include running the data upgrade process.
 - We added the following tasks:
     - Perform a smoke test.
     - Complete application setup tasks. This step can be large, depending on the functionality that is used. During this step, the functional team configures new application functionality so that it's ready to be used in the upgraded system.
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
+
+    > [!NOTE]
+    > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
 The technical workstream involves various technical team members: the database administrator (DBA), the AX 2012 system administrator, server administrators, and developers who are familiar with AX 2012 and Finance and Operations. This topic will explain which tasks involve which roles.
 
 During cutover testing, the technical team is focused on performance and reliability testing of the data upgrade process, to make sure that it meets the business's downtime limit. Many elements of hardware and software are involved in this process. Some of these elements are on-premises, whereas others are in the Microsoft cloud. In addition, many elements of custom application code and standard code are involved. The result of this testing should be confidence in the cutover process for your environment.
+
+### Overall process
+
+These are the high-level steps og the production environment upgrade process, cutover testing will use the same steps for the technical workstream.
+
+1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice. Indicate in the service request that this is a mock cutover.
+2.  Turn of AX 2012 AOS instances.
+3.	Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
+4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
+5.	Upload the bacpac file to the AOS machine.
+6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox (this does intentionally say Sandbox environment) environment, and then import it by using SQLPackage.exe. 
+7.	Notify the Microsoft DSE team that your database is ready for upgrade – they will copy the imported database from sandbox to the production environment.
+8.	Microsoft DSE team will run the data upgrade against the imported database.
+9.	Microsoft DSE team will notify you once the data upgrade is complete – at this point you can log in and complete any functional configuration tasks required post-upgrade before you allow the end users back into the new system.
+
+The next sections contain more details.
 
 ### Turn off the AX 2012 AOS instances
 
