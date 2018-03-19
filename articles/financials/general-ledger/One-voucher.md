@@ -26,11 +26,11 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2018-03-16
-ms.dyn365.ops.version: July 2017 update
+ms.dyn365.ops.version: 
 
 ---
 > [!NOTE]
->  This functionality is available in the Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.   
+>  This functionality will be available in the Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.   
 
 What is "One voucher"?
 ======================
