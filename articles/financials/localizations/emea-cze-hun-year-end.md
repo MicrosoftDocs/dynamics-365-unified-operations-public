@@ -5,7 +5,7 @@ title: Year-end close for Czech Republic and Hungary
 description: This topic provides information about the year end closing process and opening transactions for Hungary and Czech Republic.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 02/20/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,17 +14,18 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  
-# audience: 
+audience: Application user
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 1176603
+ms.custom:
 ms.search.region: Czech Republic, Hungary
 # ms.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Year-end close for Czech Republic and Hungary
@@ -43,3 +44,5 @@ On the **Accounts for automatic transactions**  page, you can specify the gene
 ## Opening transactions setup
 Before you can post opening transactions to a different account for each of the accounts that you set up earlier, you must specify another general ledger account in the Opening account field on the main account.
 
+## Additional resources
+[Year-end close](../general-ledger/year-end-close.md)
