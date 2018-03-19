@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LedgerChartofAccounts,DimensionDetails
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -29,6 +29,11 @@ ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 
 ---
+
+# One voucher
+
+[!include[banner](../includes/banner.md)]
+
 > [!NOTE]
 >  This functionality will be available in the Dynamics 365 for Finance and Operations version 8.0, which will be available in the 
 Spring '18 release.   
