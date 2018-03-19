@@ -3,10 +3,10 @@
 # required metadata
 
 title: Optimization advisor overview
-description: This topic discusses what tools you have avaialble to ensure optimal cofiguration of your Dynamics 365 Finance and Operations, Enterprise Edition installation. 
+description: This topic discusses how to use Optimization advisor to ensure optimal cofiguration of Dynamics 365 Finance and Operations, Enterprise edition. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,16 +35,21 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains what tools you have available to ensure optimal configuration and smooth operation of your Dynamics 365 Finance and Operations, Enterpise Edition installation.
+This topic discusses how to use Optimization advisor to ensure optimal cofiguration of Dynamics 365 Finance and Operations, Enterprise edition. 
 
 ## Overview
 
-The availability and performance of the ERP installation and the smooth operation of business processes are negatively affected by incorrect or incomplete module configuration and setup. Another major impacting factor is business data correctness, completeness and cleaness.   
-The **Optimization advisor** is a tool that enables power users, business analysts, functional consultants and various IT support functions to identify configuration and business data issues. The **Optimization advisor** suggests configuration best practices and points out what business data is obsolete or incorrect.
+The availability and performance of the ERP installation and the smooth operation of business processes are negatively affected by incorrect or incomplete module configuration and setup. Another major impacting factor is business data correctness, completeness and cleaness. (rewrote as follows?)   
 
-The **Optimization advisor** runs a set of best practice rules, on a perodic basis. When a violation of a rule is detected, an optimization opportunity is created and displayed in the **Optimization advisor** page. A user can take corrective action from the **Optimization advisor** page direclty and fix the best practice violation.
+The incorrect module configuration and setup can adversely affect the feature availability and performance of Finance and Operations as well as the smooth operation of business processes. Business data quality, such as data correctness, completeness, and cleanliness, also has impacts on system performace and organizations, for example, decision making, productivity, and so on.    
 
-Standard security policies apply to optimization opportunties. For example, optimization opportunities related to the **Warehouse management** module configuration are visible only to users that have access and can make changes to **Warehouse managemnet** setup.
+The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions to identify the issues in module configuration and business data. The **Optimization advisor** suggests best practices for module configuration and specifies which business data is obsolete or incorrect.
+
+The **Optimization advisor** runs a set of best practice rules on a perodic basis. When a violation of a rule is detected, an optimization opportunity is created and displayed on the **Optimization advisor** page. A user can take corrective action from the **Optimization advisor** page direclty and correct the violation.
+
+The standard security policies apply to optimization opportunties. For example, the optimization opportunities that are related to the **Warehouse management** module configuration are visible only to users that have access and can make changes to **Warehouse managemnet** setup.
+
+
 Opportunites are displayed in the language of the end user.
 
 Opportunities can be company specific or cross-company, depending on the type of setup and data they validate. Cross-company opportunities can be viewed from all companies. Company specific opportunities can be viewed only by changing company first. 
