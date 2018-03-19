@@ -418,7 +418,7 @@ To override the signing flow you need to:
 
 The following application attributes may be printed in receipts via custom fields (see [Cash registers for France](./emea-fra-cash-registers.md) for more details):
 
-- **Build number**: the software version of the POS application. By default it is equal to the POS build number assigned by Microsoft;
+- **Build number**: the software version of the POS application. By default it is equal to the POS build number assigned by Microsoft for Retail POS sample;
 - **Certificate category** and **Certificate number**: the category and the number of the certificate of compliance issued by an accredited body for the application. By default it is equal to the category and the number of the certificate granted to Microsoft:
     - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
         - Certificate category: **C**
@@ -432,7 +432,16 @@ The following application attributes may be printed in receipts via custom field
 
 ### Overriding build number
 
-If you customize the POS application, you must specify the software version/build number in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
+If you customize the POS application, you must specify the software version/build number, and publisher in **RetailSDK\\BuildTools\\Customization.settings**.
+
+```xml
+    <CustomVersion Condition="'$(CustomVersion)' == ''">1.0.0.1</CustomVersion>
+    <CustomName Condition="'$(CustomName)' == ''">Contoso Retail Customization</CustomName> 
+    <CustomDescription Condition="'$(CustomDescription)' == ''">Contoso Retail Customization</CustomDescription>
+    <CustomPublisher Condition="'$(CustomPublisher)' == ''">CN=Contoso Ltd.</CustomPublisher>
+    <CustomPublisherDisplayName Condition="'$(CustomPublisherDisplayName)' == ''">Contoso Ltd.</CustomPublisherDisplayName>
+    <CustomCopyright Condition="'$(CustomCopyright)' == ''">Copyright © 2016</CustomCopyright>
+```
 
 ### Overriding certificate category and certificate number
 
@@ -524,9 +533,11 @@ Follow these steps to create deployable packages that contain Retail components,
 
 4. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and located under **Extensions.SequentialSignatureRegister\\bin\\Debug**
 
-5. Open MSBuild Command Prompt for Visual Studio utility and run **msbuild** under Retail SDK folder to create deployable packages.
+5. Overriding build number, certificate category, and certificate number if needed. See instructions above for details.
 
-6. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+6. Open MSBuild Command Prompt for Visual Studio utility and run **msbuild** under Retail SDK folder to create deployable packages.
+
+7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 
