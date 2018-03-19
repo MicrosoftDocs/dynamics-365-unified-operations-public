@@ -49,7 +49,7 @@ The **Optimization advisor** runs a set of best practice rules on a perodic basi
 
 The standard security policies apply to optimization opportunties. For example, the optimization opportunities that are related to the **Warehouse management** module configuration are visible only to users that have access and can make changes to **Warehouse managemnet** setup.
 
-Opportunites are displayed for end users to take appropriate actions. Opportunities can be company specific or cross-company, depending on the type of setup and data that are being validated. Cross-company opportunities can be viewed from all companies. Company specific opportunities can be viewed only by changing company first. 
+Opportunites are displayed for end users to take appropriate actions. Opportunities can be company specific or cross-company, depending on the type of setup and data that are being validated. Cross-company opportunities can be viewed from all companies. To see the opportunities for a specific company, select the company first and then view the opportunities.  
 
 In addition to the set of rules that are shipped with Finance and Operations, Enterprise edition Spring 2018 update, users can create rules that are specific to their ustomizations, ISV solutions, and business data. For more information about how to create new rules, see [Create new rules](./optimization-advisor.md).
 
@@ -61,7 +61,7 @@ For learn more about the **Optimization advisor**, watch the short YouTube video
 
 ## Optimization rules
 
-To see the complete list of **Optimization advisor* rules and their periodicity, navigate to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have status **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
+To see the complete list of **Optimization advisor** rules and how often the rules are evaluated, navigate to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have status **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
 
 When you want to trigger the validation of unscheduled rules, or when you want to reevaluate periodic rules outside their predefined schedule, navigate to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**. In the **Diagnostic rule validation** dialog, choose a frequency. All rules that have the specified frequency will be reevaluated.
 
