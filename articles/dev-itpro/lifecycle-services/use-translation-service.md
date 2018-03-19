@@ -202,6 +202,11 @@ To verify the translation, you can apply a filter to show only strings that are 
 
 Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
 
+### Review and edit the Documentation translation
+DTS provides the Documentation translation review file in .docx format. You can open it in Microsoft Word to review and edit. 
+
+![DOCX file to review](./media/dts-doc-review.png "DOCX file for translation review")
+
 ### Regenerate output files
 When you've finished reviewing and editing the translation files, you must regenerate the output files in the source file format so you can include the latest translations you edited into your software or documentation files.
 
