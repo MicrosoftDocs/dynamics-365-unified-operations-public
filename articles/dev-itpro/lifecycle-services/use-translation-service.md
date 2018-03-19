@@ -88,22 +88,22 @@ To create the best XLIFF TM, make sure that the following conditions are met:
 - There are no empty strings. The following illustration shows examples of empty strings from the source and the target.
 
 
-    ![Empty strings](./media/dts-align3.png "Empty strings")
+![Empty strings](./media/dts-align3.png "Empty strings")
 
 These empty strings are inherited by the XLIFF TM. If a **Rebate** string in the source has an empty string in the target, it will likely be translated as an empty string if this XLIFF TM is used.
 
-    ![Missing strings](./media/dts-align4.png "Missing strings")
+![Missing strings](./media/dts-align4.png "Missing strings")
 
 Although the Align tool can resolve some of these issues, it's easier if you prevent them before you see unexpected results in the output.
 
 Review the aligned XLIFF file before you use it as a TM. Translation units (TUs) that have been reviewed should be marked as **Final** or **Signed off**, so that they aren't mistaken for unreviewed TUs.
 
 ## Create a translation request
-1. On the DTS dashboard, select the **Add** button to create a new translation request.
+1. On the DTS dashboard, select the **Add** button to create a new translation request.  
 
     ![Add button](./media/dts-request1.png "Add button")
 
-2. Enter the required information for the request. 
+2. Enter the required information for the request. See below for details of each field.  
 
     | Field name        | Description |
     |-------------------|-------------|
@@ -113,6 +113,7 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Product version   | Select a product version. If you accessed DTS from within a LCS project, this field will show the product version information from the project as a default and you can select a different version if needed.|
     | Target country/region | select a country where the translated file will be released to.|
     | Translation source/target languages | Select the language pair from/to which translation will be done. All languages that are supported for the selected product name and version will be available in these fields. Language name in BOLD in the list represents Dynamics product General Availability (GA) language. Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on Microsoft Dynamics terminology. For non-GA languages, the MT system falls back to the general domain training.|
+    
         
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language.
@@ -125,22 +126,19 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Japanese                | English – United States	| Microsoft-trained MT system |
     | German                  | Japanese                | Generic MT system, unless the user provides an XLIFF TM that has more than 10,000 TUs |
 
-    ![Creating a new request](./media/dts-request2.png "Creating a new request")
  
-3. Select **Create**.
+3. Click **Create** to go to the next step.
 
 ## Upload the files
-Select the plus sign (**+**) button to open the **File upload** dialog box. You can upload one zip file for each of two files types: the source labels file and the XLIFF TM file. 
+Select the plus sign (**+**) button in each section to open the **File upload** form. You can upload one zip file per section. 
 
-### Source labels zip file
-The source labels zip file contains all the source files that should be translated in the translation request. The source labels file can include files that have different file types, provided that the file types are supported for the product. For more information about supported file types, see [Supported products](./translation-service-overview.md#supported-products).
+### Upload files to translate (Required)
+For User Interface request type, create one zip file that contains all the source software files that you would like to translate in the request. The zip file can include different file types, provided the file types are supported for the product. For more information about supported file types, see [Supported products](./translation-service-overview.md#supported-products).
 
-![Source labels file selected in the File upload dialog box](./media/dts-upload1.png "Source labels file selected in the File upload dialog box")
+For Documentation request type, create one zip file that contains all the Word document files (.docx) that you want to translate. 
 
-### XLIFF TM zip file (Optional)
-If you have XLIFF files from a previous translation request, or if you used the Align tool to create an XLIFF TM, you can zip the XLIFF files and then upload them. Strings that match are recycled into the new source files to help you remain consistent between product versions. For details about XLIFF files, see the [XLIFF TM](./use-translation-service.md#xliff-tm) section of this topic.
-
-![XLIFF TM file selected in the File upload dialog box](./media/dts-upload2.png "XLIFF TM file selected in the File upload dialog box")
+### Upload XLIFF translation memory files (Optional)
+If you have XLIFF translation memory (TM) files from a previous User Interface translation request, or if you used the Align tool to create an XLIFF TM, you can zip the XLIFF files and upload them. Strings that match are recycled into the new source files to help you remain consistent between product versions. For details about XLIFF files, see the [XLIFF TM](./use-translation-service.md#xliff-tm) section of this topic.
 
 In addition to using the XLIFF TM for the recycling process, DTS uses the XLIFF TM to create a customized MT system, based on the following rules:
 
@@ -149,31 +147,42 @@ In addition to using the XLIFF TM for the recycling process, DTS uses the XLIFF 
 
 If neither the source language or the target language is a Microsoft GA language, and the XLIFF TM contains fewer than 10,000 TUs, DTS uses a general domain MT system after the recycling. This behavior occurs because of the requirements that are set by MT Hub.
 
-After you've uploaded the required files, select **Submit** to start the translation process.
+### Upload XLIFF or TMX translation memory files (Optional)
+For Documentation request type, you can provide XLIFF you got from user interface file type translations and/or TMX translation memory files from previous documentation translations to recycle the translations in the new request. Zip the files before you can upload it.
 
-![Submitting the translation request](./media/dts-submit.png "Submitting the translation request")
+After you've uploaded the required files, select **Submit** to start the translation process. Once submitted and a new request is created in the DTS dashboard, you can click the request ID to see the summary of your request and the status in **Request status** tab. 
 
-Note that the processing time depends on the number of requests that are in the DTS queue and the volume of the word count in the files that you submit.
+![Request status tab](./media/dts-request-status.png "Request status tab")
 
-+ Requests that don't have an XLIFF TM can be completed in a few minutes, depending on the file size.
-+ For requests that have an XLIFF TM, the time that is required depends on the type of MT system:
+Note that the processing time depends on the number of requests that are in the DTS queue and the volume of the word count in the source files that you submit.
+
++ User Interface type requests that don't have an XLIFF TM may be completed in a few minutes, depending on the file size.
++ User Interface type requests that have an XLIFF TM, the time that is required depends on the type of MT system:
 
     + Creation of a custom MT system requires two to three days.
     + If you're using a generic MT system, requests can be completed in a few minutes, depending on the file size.
 
++ Documentation type requests processing time varies and may be completed in a few days.
+
 ## After translation is completed
-When the translation process is completed, you receive an email notification. The result is available on the **Request output** tab.
+When the translation process is completed, you will receive an email notification from DTS. The result is available on the **Request output** tab of your request details page.
 
 ![Request output tab](./media/dts-output.png "Request output tab")
 
-After the translation process is completed, two types of output file are available:
+For User Interface request type, after the translation process is completed, two types of output file are available:
 
 + **File for translation review** – Download the XLIFF file to review and, as required, edit the translations in this file. The file shows the side-by-side source and target languages.
-+ **Translated file in native format** – Download this file if you don't intend to review or edit the translations. (Native format means that the files is in the same format as the source file.)
++ **Translated file in native format** – Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted.
 
-We recommend that you post-edit the translations in the XLIFF file that is provided, by using the free Multilingual Editor that is provided or any XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
+For Documentation request type, after the translation process is completed, three types of output files are available:
 
-## Editing the translation in the XLIFF file
++ **File for translation review** - Doenload this file to review and edit the translated document strings in a table view. The file provides the side-by-side source and target languages segments.
++ **Translated file in native format** - Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted. 
++ **Translation memory format** - Download this file if you want to recycle these translations in a newer version of source document. 
+
+### Review and edit the UI translation in XLIFF file
+We recommend that you review and edit the translations in the provided XLIFF file by using the free Multilingual Editor that is provided or any other XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
+
 When you open the XLIFF file in the Multilingual Editor, it resembles the following illustration.
 
 ![XLIFF file in the Multilingual Editor](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
@@ -194,21 +203,17 @@ To verify the translation, you can apply a filter to show only strings that are 
 Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
 
 ## Regenerate output files
-When you've finished reviewing and editing the translation files, you must regenerate the output files, based on the changes that you made in the XLIFF files.
+When you've finished reviewing and editing the translation files, you must regenerate the output files in the source file format so you can include the latest translations you edited into your software or documentation files.
 
-![Regenerate button](./media/dts-regenerate.png "Regenerate button")
+In the Request output tab, click **Regenerate** button to open the **File upload** form and upload the edited XLIFF files. Be sure to zip the edited XLIFF files before you upload them.
 
-Select **Regenerate** to open the **File upload** dialog box, where you can upload the edited XLIFF files. Be sure to zip the edited XLIFF files before you upload them.
-
-![File upload dialog box](./media/dts-regenerate-upload.png "File upload dialog box")
-
-After you select **Upload**, you're prompted to confirm that action. DTS regenerates the new output immediately after confirmation.
+After you select **Upload** button, you're prompted to confirm that action. If your request is for User Interface file translation, DTS regenerates the new output files immediately after confirmation. If your request is for Documentation file translation, it may take a while for DTS to process to regenerate and send you an automated email notification. Then you can come back to the request to download the final output files. Access **Regenerate(By Partner)** tab to see the files you uploaded and download the new output files. 
 
 ![Regenerated output](./media/dts-regenerate-output.png "Regenerated output")
 
 You can repeat the regeneration process as many times as you require.
 
-## XLIFF TM
+## XLIFF Translation Memory (TM)
 DTS uses a bilingual XLIFF format to store source language and target language pairs. The XLIFF format is based on XML. Therefore, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. You can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 
 In DTS, you can obtain an XLIFF TM in two ways:
@@ -224,7 +229,7 @@ The following illustration shows the same TU (highlighted in blue) in the Multil
 
 ![XLIFF translation unit in the Multilingual Editor](./media/dts-editor3.png "XLIFF translation unit in the Multilingual Editor")
 
-## State
+### State
 Each translation in the XLIFF file is associated with a state value. The value that DTS assigns to each translation depends on the way that the string is translated. When an XLIFF TM is created by using the Align tool, all translations are marked as **Translated**, because the aligned TUs are produced from known good translations, such as a previous product version.
 
 However, when the XLIFF files are generated as a result of a translation request, two types of states can be used:
