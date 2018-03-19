@@ -107,11 +107,11 @@ For sales under the Reverse Charge schema, the seller doesn't charge VAT. Instea
 
 When a sales invoice is posted that has the reverse charge, the sales tax transactions have the **Sales tax payable** tax direction and zero sales tax, and the **Reverse charge** check box is selected.
 
-In the following screenshot, one transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
-
-![Posted sales tax](media/apac-sau-posted-sales-tax.png)
-
 ## Reverse charge on a purchase invoice
 For purchases under the Reverse Charge schema, the purchaser that receives the invoice that has the reverse charge acts as a buyer and a seller for VAT accounting purposes.
 
 When a purchase invoice that has the reverse charge is posted, two sales tax transactions are created. One transaction has the **Sales tax receivable** tax direction. The other transaction has the **Sales tax payable** tax direction, and the **Reverse charge** check box is selected.
+
+In the following screenshot, one transaction includes sales tax receivable and another transaction includes a sales tax payable direction. 
+
+![Posted sales tax](media/apac-sau-posted-sales-tax.png)
