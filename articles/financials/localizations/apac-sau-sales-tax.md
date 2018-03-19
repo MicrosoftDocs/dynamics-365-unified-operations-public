@@ -77,7 +77,7 @@ For each sales tax code enter the following:
 Your company's accounting practices will affect how you set up Sales tax groups and Item sales tax groups to include sales tax codes. 
 For example, an export operation might select the **Exempt** check box and Select **Exempt code**. In this case, the system will create sales tax transaction with VAT equal to zero. But with the rate equal to 5% (Value field in sales tax transaction). It may be useful for analysis of export operations by VAT rates.   
 
-For import operations from third countries (VAT is paid at customs) you might use the following setting: 
+For import operations from third countries (VAT is paid at customs) you might use the Use tax check box in sales tax group. 
 
 When you post an invoice with such setting, the system creates sales tax transaction with Use tax direction, but sales tax is not included in vendor liability. Sales transactions with Use tax direction are not taken into account when settling and posting sales taxes (see Settle and post sales tax), and depending on ledger posting setting (see Ledger posting groups) the system creates ledger transactions for this sales tax (see the screenshot below).
 This setting allows you to analyze purchases from third countries by VAT rates.
@@ -97,9 +97,7 @@ The following diagram shows how data may be collected in the **Sales tax payment
 ### Report setup
 Consider the following before you generate the **Sales tax payment by code** report.
 
-- You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). You may consider this table only as an example.
-
-![Sales tax reporting codes](media/apac-sau-sales-tax-report-codes.png)
+- You may create report codes in details which are necessary for analysis (for example, details of legislation return and/or data disclosure). 
 
 - To include sales tax transactions in **Sales tax payments by report code** report, it is necessary to select report codes in the corresponding fields. in the **Report setup** and **Report setup – Credit note** areas in **Sales tax code** page.
 
