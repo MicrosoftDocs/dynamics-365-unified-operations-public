@@ -57,7 +57,7 @@ Because an LCS project is always tied to a product, any translation request that
 
 ![DTS dashboard that is opened from within a project](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
 
-## Accessing LCS Prevoew features
+## Accessing LCS Preview features
 LCS offers some services or features only as preview features for various reasons. There are two preview features that are available for DTS. To access the list of available preview features, from the LCS home page, find **Preview feature management** file. 
 
 Select a feature you need and move the slider to **Yes** to enable the selected feature for you. 
@@ -202,7 +202,7 @@ To verify the translation, you can apply a filter to show only strings that are 
 
 Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
 
-## Regenerate output files
+### Regenerate output files
 When you've finished reviewing and editing the translation files, you must regenerate the output files in the source file format so you can include the latest translations you edited into your software or documentation files.
 
 In the Request output tab, click **Regenerate** button to open the **File upload** form and upload the edited XLIFF files. Be sure to zip the edited XLIFF files before you upload them.
