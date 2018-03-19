@@ -1,4 +1,5 @@
-(---
+---
+
 # required metadata
 
 title: Foreign currency revaluation for bank accounts
