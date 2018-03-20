@@ -131,15 +131,16 @@ The active price is calculated by taking the trade agreement price and applying 
 Category price rules feature in Dynamics 365 for Retail provides an easy way to create new trade agreements for all the products within a category. It also allows the users to automatically find existing trade agreements for the products in the category and expire them. When you select the option to expire existing trade agreements, the system creates a new trade agreement journal for the category products which have an active trade agreement. However, the journal needs to be posted manually. Also, the Category price rules can find the existing trade agreements only if you are using the same price rule i.e. if you create a new price rule using the same category as before, then the existing trade agreements will not be expired.
  
 The prices can be increased or decreased by using the Price rule and Price basis columns of the category price rules. The various values of these columns are explained below: 
-- In the **Price rule** field, select which type of price change to use: 
--- **Markup** – A percentage of the price basis is used to calculate the sales price. Example: A product that costs 10.00 and sells for 15.00 has a markup of 50 percent. 
--- **Margin** – A percentage of the sales price that is used to calculate the amount of profit. Example: A product that costs 10.00 and sells for 15.00 has a margin of 33.3 percent. 
--- **Fixed amount** – An amount added to the price basis that is used to calculate the sales price. Example: A product that costs 10.00 and sells for 15.00 has a fixed amount of 5.00. 
 
-- In the **Price basis** field, select the type of price to modify: 
--- **Base cost** – The amount that the retailer paid to the supplier. 
--- **Base price** – The sales price before trade agreements and price adjustments are applied. 
--- **Current price** – The sales price after trade agreements and price adjustments are applied. 
+In the **Price rule** field, select which type of price change to use:
+ - **Markup** – A percentage of the price basis is used to calculate the sales price. Example: A product that costs 10.00 and sells for 15.00 has a markup of 50 percent.
+  - **Margin** – A percentage of the sales price that is used to calculate the amount of profit. Example: A product that costs 10.00 and sells for 15.00 has a margin of 33.3 percent.
+  - **Fixed amount** – An amount added to the price basis that is used to calculate the sales price. Example: A product that costs 10.00 and sells for 15.00 has a fixed amount of 5.00. 
+
+In the **Price basis** field, select the type of price to modify: 
+- **Base cost** – The amount that the retailer paid to the supplier. 
+- **Base price** – The sales price before trade agreements and price adjustments are applied. 
+- **Current price** – The sales price after trade agreements and price adjustments are applied. 
   
 You can leverage the supplemental product categories along with the Category price rules to easily update the prices of various products from different product categories. 
 
