@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alerts overview
-description: This topic provides general information about alerts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You can use alerts to stay informed about events that you want to track during the workday.
+description: This topic provides general information about alerts in Microsoft Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to track during the workday.
 author: tjvass
 manager: AnnBe
 ms.date: 03/20/2018
