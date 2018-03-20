@@ -67,7 +67,9 @@ During cutover testing, the technical team is focused on performance and reliabi
 
 These are the high-level steps og the production environment upgrade process, cutover testing will use the same steps for the technical workstream.
 
-1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice. Indicate in the service request that this is a mock cutover.
+1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a mock cutover.
+    - Make sure you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
+    - Mock cutovers are performed during business hours, Monday to Thursday, in the US Pacific timezone.
 2.  Turn of AX 2012 AOS instances.
 3.	Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
