@@ -35,24 +35,91 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](includes/banner.md)]
 
+<!-- Total re-write to make this call center landing page - deleted all previous content - hhaines -->   
 
-This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
+# Call Center Overview
 
-Dynamics 365 for Retail supports call centers as a type of retail channel. In a call center, workers take orders from customers over the phone and create sales orders. Call center functionality includes features that are designed to make it easier to take phone orders and handle customer service throughout the order fulfillment process. For example, call center workers can enter payment information directly into the sales order, and can view a detailed summary of charges and payments before they submit the order. Workers also have options for controlling pricing, and can access various data about customers, products, and prices from the **Sales order** page. Additionally, call centers have enhanced functionality for tracking customer history and order status. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. Additionally, you can use the **Call center** page to enable or disable the following groups of features that are unique to call centers:
+In Dynamics 365 for Retail, a Call Center is another type of Retail channel that can be defined in the application.   Defining a specific channel for your call center entities allows the system to tie some specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
 
--   **Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.
--   **Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.
+The call center feature of the Dynamics 365 for Retail product utilizes Retail features of Dynamics 365 such as advanced retail price and promotions, catalogs, gift cards, loyalty programs and coupons.  Call Center orders are also leveraged by our POS application to support cross-channel order fulfillment scenarios.
 
-After you enable these features in the call center settings, they are available on the **Sales order** page to users who are associated with the call center. Most of these features require additional setup before they can be used. Before users can create call center orders, you must add those users to the call center as call center users. This step enables the call center channel-specific configuration and functionality. Here are some examples of the functionality that becomes available:
+It is important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Dynamics 365 for Retail call center application has not been optimized for use in Business to Business (B to B) order processing scenarios, or scenarios where orders have a large amount of sales lines.   It is recommended that users who wish to utilize the call center features for order processing outside of normal Direct to Consumer (B to C or Direct) transaction processing take adequate time to test and validate that enabling call center functionality will meet your functional and performance needs.
+In addition to supporting the order creation side, the call center module also provides a user-friendly customer service application that better allows users to locate customer accounts and review all of the related customer order data and attributes through a single workbench.  The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order related questions received from customers.
 
--   Guided selling provides configuration options for tele-sales scripts and product images to help and guide sales clerks while they take orders.
--   Orders can't be completed until sales clerks have captured at least one payment method.
--   Upsell and cross-sell rules can be configured to prompt sales clerks to promote specific products to the customer.
--   Sales clerks can capture the source code for the catalog that a customer is ordering from.
--   Sales clerks can add a retailer's coupons to the order.
--   Sales clerks can sell continuity programs.
--   Orders can be put on hold manually or automatically, to indicate that additional investigation is required before the order can be processed.
+This landing page provides links to relevant documentation and videos related to the setup, configuration and functional use of the call center features of Dynamics 365 for Retail.
 
 
+<!-- We will eventually put a video overview of call center in this space - hhaines -->   
 
+<!-- Links to documents are being added below - not all have actual branches or completed documents - these need to be created - hhaines -->   
+
+## Configure the Call Center
+[Define Call Center Channels](../blob/master/xxx)
+
+## Configure Order Processing Features
+[Scripts](../blob/master/xxx)
+
+[Upsell-Cross-Sell](../blob/master/xxx)
+
+[Price Overrides](../blob/master/xxx)
+
+[Fraud Holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts)
+
+[Manual Order Holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds)
+
+[Return Orders](../blob/master/xxx)
+
+[Email Notifications](../blob/master/xxx)
+
+[Postage/Shipping and Handling Charges](../blob/master/xxx)
+
+## Configure Payment Processing
+[Payment Methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments)
+
+[Call Center Credit Card Processing](../blob/master/xxx)
+
+[Payment Controls](../blob/master/xxx)
+
+[Installment Billing](../blob/master/xxx)
+
+
+## Configure Direct Marketing Features
+[Catalogs and Source Code ID's](hhttps://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs)
+
+[RFM Scoring](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-rfm-analysis)
+
+
+## Call Center Execution
+[Basic Sales Order Processing](../blob/master/xxx)
+
+[Utlizing Catalog Source Codes in Order Entry](../blob/master/xxx)
+
+[Price Match](../blob/master/xxx)
+
+[Managing Payment Issues](../blob/master/xxx)
+
+[Customer Merge](../blob/master/xxx)
+
+[Customer Service](../blob/master/xxx)
+
+[Searching for Customer and Products](../blob/master/xxx)
+
+[Expedited Order Management](../blob/master/xxx)
+
+[Creating a Return Order](../blob/master/xxx)
+
+[Creating a Return with Replacement Order](../blob/master/xxx)
+
+## Call Center Analysis
+[Operational Reports](../blob/master/xxx)
+
+[Analysis](../blob/master/xxx)
+
+
+## Configure Continuity Programs
+[Continuity Program Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-continuity-program)
+
+[Sell Continuity Items](../blob/master/xxx)
+
+[Process and Manage Continuity Orders](../blob/master/xxx)
 
