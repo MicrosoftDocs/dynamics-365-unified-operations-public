@@ -2,10 +2,10 @@
 # required metadata
 
 title: Batch execution for alerts
-description: This topic provides information about batch processing of alerts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about batch processing of alerts in Microsoft Dynamics 365 for Finance and Operations.
 author: tjvass
 manager: AnnBe
-ms.date: 02/20/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 14
 # Batch processing for alerts
 [!include[banner](../includes/banner.md)]
 
-Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You must set up batch processing before alerts can be delivered.
+Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations. You must set up batch processing before alerts can be delivered.
 
 Finance and Operations supports two types of events:
 
