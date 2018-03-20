@@ -46,6 +46,6 @@ Customers do not select specifically where their modular applications will provi
 
 Modular applications will provision only in supported geographies (as defined in the Microsoft Trust Center for Talent data transparency), according to the logic below: 
 
-[Modular applications available for Talent](/media/modular-apps-diagram-mod-app-tech.png)
+[Modular applications available for Talent](./media/modular-apps-diagram-mod-app-tech.png)
 
 Unlike Dynamics 365 for Talent, the modular applications do not maintain a list of environments accessible by each user. When using the modular applications service users, will automatically log into the last environment used, and can select alternate environments through the gear menu. 
