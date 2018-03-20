@@ -145,7 +145,9 @@ The item sales tax group should be removed on products that are assigned an HSN 
 
 Before you complete this task, be sure to save all the configuration files in a location that you can access from Microsoft Dynamics 365 for Finance and Operations.
 
-Follow these steps to load a tax configuration and map it to a legal entity.
+Follow these steps to load the configurations and map them to a legal entity.
+
+### Tax configurations
 
 1. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**, and select the **Tax configurations** tile.
 2. Select **Exchange** &gt; **Load from XML files**.
@@ -153,22 +155,40 @@ Follow these steps to load a tax configuration and map it to a legal entity.
 4. Select **OK**.
 5. Repeat steps 2 through 4 to load **Taxable document**, **Taxable document (India)**, and **Tax (India GST)** in that order.
 6. Select **Close**.
-7. Go to **Tax** &gt; **Setup** &gt; **Tax configuration** &gt; **Tax setup**.
-8. Select **New**.
-9. In the **Tax setup** field, enter a value.
-10. In the **Description** field, enter a value.
-11. Select **Configurations**.
-12. On the **Tax configuration** FastTab, under **Available configurations**, select the ellipsis button (**...**), and then select **New**.
-13. In the **Configuration version** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
-14. Select the ellipsis button (**...**), and then select **Synchronize**.
-15. Select **Activate**. The activated configuration is updated as the current configuration.
 
-    ![Current configuration](media/apac-ind-gst-current-configurations.png)
+### Report configurations
 
-16. Close the page.
-17. On the **Companies** FastTab, create a record.
-18. In the **Companies** field, select a value, and then select **Save**.
-19. On the **Companies** FastTab, select **Activate**. The tax setup is now active for the selected company.
+1. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**, and select the **Report configurations**        tile.
+2. Select **Exchange** &gt; **Load from XML files**.
+3. Browse to the location of the configuration file that should be loaded, and select the configuration file.
+4. Select **OK**.
+5. Repeat steps 2 through 4 to load **GST Returns govt.model**, **GST Returns govt. model mapping **, **GSTR-1 Govt. offline tool CSV**    and **GSTR1_Government offline** in that order.
+6. Select **Close**.
+
+### Map configurations to the Legal entity
+
+1. Go to **Tax** &gt; **Setup** &gt; **Tax configuration** &gt; **Tax setup**.
+2. Select **New**.
+3. In the **Tax setup** field, enter a value.
+4. In the **Description** field, enter a value.
+5. Select **Configurations**.
+6. On the **Tax configuration** FastTab, under **Available configurations**, select the ellipsis button (**...**), and then select **New**.
+7. In the **Configuration version** field, select a value. The new tax configuration is listed in the **Available configurations** grid.
+8. Select the ellipsis button (**...**), and then select **Synchronize**.
+9. Select **Activate**. The activated configuration is updated as the current configuration.
+
+    ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
+
+10. On the **Report configuration** FastTab, under **Select report configurations** and select the **Select** checkbox.
+11. In the **Report controller** field, select a value. 
+12. Repeat step 10 and 11, to map the report configurations.
+
+    ![Report configuration](media/apac-ind-gst-Reportconfiguration2-configuration.png)
+    
+13. Close the page.
+14. On the **Companies** FastTab, create a record.
+15. In the **Companies** field, select a value, and then select **Save**.
+16. On the **Companies** FastTab, select **Activate**. The tax setup is now active for the selected company.
 
     ![Tax setup status](media/apac-ind-gst-tax-setup-status.png)
 
@@ -179,7 +199,7 @@ Follow these steps to load a tax configuration and map it to a legal entity.
 3. On the **Companies** FastTab, select **Deactivate**.
 4. Repeat steps 2 through 13 in the previous section, [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company), to load the configuration, deploy it to the company, and synchronize the new version.
 
-    ![Two configurations](media/apac-ind-gst-two-configurations.png)
+    ![Two configurations](media/apac-ind-gst-Available2-configuration.png)
 
 5. Select the new version, and then select **Activate**.
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
