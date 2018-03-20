@@ -40,7 +40,7 @@ A customer might be a person who resides in a country/region that is not a membe
 Use this procedure to set up an exchange rate that is automatically selected in tax reimbursement documents. 
 1. Click Accounts receivable > Setup > Accounts receivable parameters. 
 2. In the Accounts receivable parameters form, in the left pane, click Updates. 
-3. In the Tax reimbursement slip field, select the type of exchange rate to use by default for tax reimbursement documents. 
+3. In the Other FastTab, in the Tax reimbursement slip field, select the type of exchange rate to use by default for tax reimbursement documents. 
 
 ### Set up a number sequence
 Use this procedure to set up a number sequence that is automatically assigned to tax reimbursement documents. 
@@ -67,20 +67,20 @@ The tax reimbursement document is available only if the customer is set up as a 
 
 ### Select invoice lines for a tax reimbursement document
 
-1. Click Accounts receivable > Inquiries > Journals > Invoice journal. 
+1. Click Accounts receivable > Inquiries and reports > Journals > Invoice journal. 
 2. In the Invoice journal form, on the Overview tab, select the customer invoice for which the customer is requesting tax reimbursement. 
 3. Select the Tax reimbursement check box for the selected invoice. 
 4. By default, on the Lines tab, in the Tax reimbursement lines field, all invoice lines are selected. Clear the check boxes for the invoice lines to exclude from the tax reimbursement document. 
 5. On the Overview tab, on the menu bar, click Tax reimbursement > Original preview to view the document before you print it. 
 6. Optional: Click Tax reimbursement > Use print management to modify the print settings, such as the number of copies to print. 
-7. In the View original form, review the information, and then click File > Print to print the tax reimbursement document. 
+7. In the View original form, review the information, and then Print the tax reimbursement document. 
 
 When you print a tax reimbursement document, the document number that is assigned to the document is displayed in the Invoice journal form, in the Tax reimbursement document field. The Tax reimbursement check box is unavailable for the lines that you included in the tax reimbursement document. 
 
 ### Settle a tax reimbursement
 
 When your organization reimburses a customer for VAT, you must indicate the reimbursement in the invoice journal to prevent a duplicate reimbursement. Use the following procedure to settle invoice lines for which a customer received a VAT reimbursement. 
-1. Click Accounts receivable > Inquiries > Journals > Invoice journal. 
+1. Click Accounts receivable > Inquiries and reports > Journals > Invoice journal. 
 2. In the Invoice journal form, on the Overview tab, select the customer invoice for which the customer received a VAT reimbursement. 
 3. On the Overview tab, on the menu bar, click Tax reimbursement > VAT settled. 
 
