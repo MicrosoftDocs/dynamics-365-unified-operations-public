@@ -804,11 +804,7 @@
 #### [VAT reporting](../financials/localizations/emea-vat-reporting.md)
 #### [View transactions on settlement](../financials/localizations/emea-transactions-settlement-form.md)
 
-#### Austria
-##### [Half-year depreciation](../financials/localizations/emea-aut-half-year-depreciation.md)
-##### [Packing material fees](../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-##### [Purchase duties](../financials/localizations/emea-aut-purchase-duties.md)
-##### [VAT statement](../financials/localizations/emea-aut-vat-statement-details.md)
+#### [Austria](../financials/localizations/austria.md)
 #### Belgium
 ##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
 ##### [Create and transfer transactions to the BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
