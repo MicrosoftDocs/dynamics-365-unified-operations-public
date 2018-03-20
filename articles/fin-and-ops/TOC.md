@@ -155,12 +155,12 @@
 
 #### [Data integration using the Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Maintain products in Finance and Operations and sync them directly to Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Maintain sales quotation in Sales and sync them directly to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [Maintain sales orders in Finance and Operations and sync them directly to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Maintain sales invoice in Finance and Operations and sync them directly to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -596,13 +596,7 @@
 
 ## [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md)
 ### Asia-Pacific
-#### Australia
-##### [Add report boxes and generate the Australia Business Activity Statement (BAS)](../financials/localizations/tasks/add-bas-report-boxes.md)
-##### [Bank file formats](../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
-##### [Business activity statement ](../financials/localizations/apac-aus-business-activity-statement.md)
-##### [Low-value pool depreciation](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-##### [Set up reason codes for Australia BAS](../financials/localizations/tasks/set-up-reason-codes-australia-bas.md)
-
+#### [Australia](../financials/localizations/australia.md)
 #### China
 ##### [Bill of materials comparison](../financials/localizations/apac-chn-bom-comparison.md)
 ##### [Chinese hierarchy of chart of accounts](../financials/localizations/tasks/china-hierarchy-chart-accounts.md)
@@ -626,19 +620,25 @@
 #### India
 
 ##### [Fixed assets](../financials/localizations/apac-ind-fixed-assets.md)
-###### [Transfer of capital items to the fixed asset](../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
 ###### [Attach a day-based calendar to a fixed asset book](../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+###### [Calculate shift depreciation](../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+###### [Create an inventory model group for capital items](../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+###### [Create and post depreciation](../financials/localizations/apac-ind-calculate-post-depreciation.md)
+###### [Define type of shift and industry for books and attach to fixed asset](../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+###### [Reversing fixed asset transactions](../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md)
+###### [Shift depreciation calculation](../financials/localizations/apac-ind-calculation-shift-depreciation.md)
 ###### [Set up parameters to calculate depreciation](../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
 ###### [Set up asset group depreciation for depreciation books](../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
-###### [Create an inventory model group for capital items](../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
-###### [Shift depreciation calculation for India fixed assets](../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
-###### [Define type of shift and industry for books and attach to fixed asset](../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
-##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
-##### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
-##### [Tax thresholds FAQ](../financials/localizations/apac-ind-tax-thresholds.md)
-##### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
-##### [GST integration for cash registers](../retail/localizations/apac-ind-cash-registers.md)
+###### [Transfer of capital items to the fixed asset](../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+
+##### [India GST](../financials/localizations/apac-ind-gst.md)
+###### [India GST reference groups](../financials/localizations/apac-ind-gst-reference-groups.md)
+###### [GST integration for cash registers](../retail/localizations/apac-ind-cash-registers.md)
 ##### [Deployment guidelines for cash registers](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
+##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
+###### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
+###### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [Tax thresholds FAQ](../financials/localizations/apac-ind-tax-thresholds.md)
 
 #### Japan
 ##### [Acquire a fixed asset and claim for the government grant subsidy](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -804,11 +804,7 @@
 #### [VAT reporting](../financials/localizations/emea-vat-reporting.md)
 #### [View transactions on settlement](../financials/localizations/emea-transactions-settlement-form.md)
 
-#### Austria
-##### [Half-year depreciation](../financials/localizations/emea-aut-half-year-depreciation.md)
-##### [Packing material fees](../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-##### [Purchase duties](../financials/localizations/emea-aut-purchase-duties.md)
-##### [VAT statement](../financials/localizations/emea-aut-vat-statement-details.md)
+#### [Austria](../financials/localizations/austria.md)
 #### Belgium
 ##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
 ##### [Create and transfer transactions to the BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
@@ -817,15 +813,7 @@
 ##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
 ##### [Set up payment balance reporting](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
 
-#### The Czech Republic
-##### [Credit note on cash discount](../financials/localizations/emea-cze-credit-note-cash-discount.md)
-##### [Depreciation rounding](../financials/localizations/emea-cze-depreciation-rounding.md)
-##### [Depreciation suspension](../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
-##### [Fixed assets depreciation](../financials/localizations/emea-cze-fixed-assets-depreciation.md)
-##### [Half year depreciation](../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
-##### [Sales tax reporting ](../financials/localizations/emea-cze-intra-community-vat-transactions.md)
-##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
-
+#### [The Czech Republic](../financials/localizations/czech-republic.md)
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
 ##### [Create and post a customer invoice for a public sector customer](../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md)
