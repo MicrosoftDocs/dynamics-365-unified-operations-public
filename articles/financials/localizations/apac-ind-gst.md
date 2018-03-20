@@ -2,7 +2,7 @@
 # required metadata
 
 title: India GST
-description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 for Finance and Operations. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/08/2017
@@ -24,8 +24,9 @@ ms.search.region: India
 ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
-ms.dyn365.ops.version: 2012
-# ms.search.validFrom:
+ms.dyn365.ops.version: 7.3
+ms.search.validFrom: 2017-12-31
+
 ---
 
 # India Goods and Services Tax
@@ -58,8 +59,8 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <p>On the <strong>Enterprise tax registration numbers</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Enterprise tax registration numbers</strong>), create enterprise tax registration numbers for companies, vendors, and customers.</p>
 <ul>
 <li><strong>Companies:</strong> Create an entry for the Goods and Services Taxpayer Identification Number (GSTIN) for every company, and specify casual registration periods.</li>
-<li><strong>Vendors:</strong> Define state-wise of GST type registration numbers for vendors.</li>
-<li><strong>Customers:</strong> Define state-wise of GST type registration numbers for customers.</li>
+<li><strong>Vendors:</strong> Define state GST type registration numbers for vendors.</li>
+<li><strong>Customers:</strong> Define state GST type registration numbers for customers.</li>
 </ul>
 </td>
 </tr>
@@ -162,7 +163,7 @@ Follow these steps to load the configurations and map them to a legal entity.
 2. Select **Exchange** &gt; **Load from XML files**.
 3. Browse to the location of the configuration file that should be loaded, and select the configuration file.
 4. Select **OK**.
-5. Repeat steps 2 through 4 to load **GST Returns govt.model**, **GST Returns govt. model mapping **, **GSTR-1 Govt. offline tool CSV**    and **GSTR1_Government offline** in that order.
+5. Repeat steps 2 through 4 to load **GST Returns govt.model**, **GST Returns govt. model mapping**, **GSTR-1 Govt. offline tool CSV**    and **GSTR1_Government offline** in that order.
 6. Select **Close**.
 
 ### Map configurations to the Legal entity
