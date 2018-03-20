@@ -38,3 +38,24 @@ ms.dyn365.ops.version: Platform update 12
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
 ![Cutover process](./media/cutover_1.png)
+
+> [!NOTE]
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
+
+## Overall process
+
+These are the high-level steps of the production environment upgrade process.
+
+1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a final cutover.
+    - Make sure you have already completed a successful mock cutover.
+    - Mock cutovers requests are subject to availability of the DSE team, please plan ahead.
+2.  Turn of AX 2012 AOS instances.
+3.	Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
+4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
+5.	Upload the bacpac file to the AOS machine.
+6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. 
+7.	Notify the Microsoft DSE team that your database is ready for upgrade – they will copy the imported database from sandbox to the production environment.
+8.	Microsoft DSE team will run the data upgrade against the imported database.
+9.	Microsoft DSE team will notify you once the data upgrade is complete – at this point you can log in and complete any functional configuration tasks required post-upgrade before you allow the end users back into the new system.
+
+The next sections contain more details.
