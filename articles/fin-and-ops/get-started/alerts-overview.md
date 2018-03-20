@@ -24,7 +24,7 @@ ms.search.scope: Operations, Core
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
-ms.search.validFrom: 2018-15-28
+ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
 
