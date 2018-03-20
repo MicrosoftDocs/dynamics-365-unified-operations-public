@@ -190,4 +190,4 @@ For details, see [Validate: Prepare for go live](upgrade-go-live-prep.md).
 ### Supported upgrade paths
 Upgrade to the cloud version of Finance and Operations is supported from Microsoft Dynamics AX 2012 R3. All cumulative updates (CUs) of AX 2012 R3 are supported. 
 
-Upgrade from Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
+Upgrade from Microsoft Dynamics AX 2012 RTM aren't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
