@@ -24,8 +24,8 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tjvass
-ms.search.validFrom: 2018-01-31 
-ms.dyn365.ops.version: Platform update 14
+ms.search.validFrom: 2018-3-30 
+ms.dyn365.ops.version: Platform update 15
 ---
 
 # Batch processing for alerts
