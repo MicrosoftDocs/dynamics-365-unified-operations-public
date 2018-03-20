@@ -807,15 +807,7 @@
 ##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
 ##### [Set up payment balance reporting](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
 
-#### The Czech Republic
-##### [Credit note on cash discount](../financials/localizations/emea-cze-credit-note-cash-discount.md)
-##### [Depreciation rounding](../financials/localizations/emea-cze-depreciation-rounding.md)
-##### [Depreciation suspension](../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
-##### [Fixed assets depreciation](../financials/localizations/emea-cze-fixed-assets-depreciation.md)
-##### [Half year depreciation](../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
-##### [Sales tax reporting ](../financials/localizations/emea-cze-intra-community-vat-transactions.md)
-##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
-
+#### [The Czech Republic](../financials/localizations/czech-republic.md)
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
 ##### [Create and post a customer invoice for a public sector customer](../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md)
