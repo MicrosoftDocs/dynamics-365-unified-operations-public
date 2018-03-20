@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
->  This functionality will be available in the Dynamics 365 for Finance and Operations version 8.0, which will be available in the 
+>  This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the 
 Spring '18 release.   
 
 What is "One voucher"?
@@ -154,12 +154,9 @@ payment that the customer made.
 -   **Fixed asset maintenance: Catch-up depreciation, split asset, calculate depreciation on disposal**
 
 The following fixed asset transactions also create multiple transactions within a single voucher:
-
-        -   An additional acquisition is made on an asset and ‘catch-up’ depreciation is calculated.
-
-        -   An asset is split.
-
-        -   A parameter to calculate depreciation on disposal is enabled and then the asset is disposed.
+-   An additional acquisition is made on an asset and ‘catch-up’ depreciation is calculated.
+-   An asset is split.
+-   A parameter to calculate depreciation on disposal is enabled and then the asset is disposed.
 
 Scenarios that don't require One voucher
 ----------------------------------------
@@ -187,10 +184,8 @@ Organizations often want to post to the general ledger in summary to minimize th
 still require that the transaction detail be maintained. When posting is done in summary through a single voucher, the transaction 
 detail isn't known and can't be maintained.
 
-        -   Because the transaction detail currently can't be maintained, we recommend that One voucher not be used to post in summary.
-
-        -   After support for One voucher is removed, we can implement the Source document and Accounting frameworks into the journals. 
-        These frameworks, will then maintain the transaction detail and support summarization into the general ledger.
+   -   Because the transaction detail currently can't be maintained, we recommend that One voucher not be used to post in summary.
+   -   After support for One voucher is removed, we can implement the Source document and Accounting frameworks into the journals. These frameworks, will then maintain the transaction detail and support summarization into the general ledger.
 
 -   **Settle multiple unposted payments to the same invoice**
 
