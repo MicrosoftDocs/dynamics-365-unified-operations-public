@@ -117,6 +117,31 @@ The CRT extension components are included in the CRT samples. To complete the fo
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
+#### XZReportsNorway component
+
+1. Find the **Runtime.Extensions.XZReportsNorway** project, and build it.
+2. In the **Extensions.XZReportsNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.XZReportsNorway.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
+
+    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+5. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+# [Application update 4](#tab/app-update-4)
+
 #### SalesTransactionSignature sample component
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
@@ -145,10 +170,37 @@ The CRT extension components are included in the CRT samples. To complete the fo
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-#### SalesTransactionSignatureSample.Messages component (Application update 5)
+# [Application update 5 and later](#tab/app-update-5-and-later)
 
-> [!NOTE]
-> This section applies only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with application update 5 and later.
+#### SalesTransactionSignature sample component
+
+1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then build the project.
+3. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+
+3. Copy the files to the CRT extensions folder:
+
+    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+5. Register the CRT change in the extensions configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+#### SalesTransactionSignatureSample.Messages component
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureSample.Messages** project.
 2. In the **Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
@@ -171,23 +223,18 @@ The CRT extension components are included in the CRT samples. To complete the fo
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-#### SequentialSignatureRegister.Contracts component (Application update 7.3.1 and later)
+# [Application update 7.3.1 and later](#tab/app-update-7-3-1-and-later)
 
-> [!NOTE]
-> This section applies only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with application update 7.3.1 and later.
+#### SalesTransactionSignature sample component
 
-1. Find the **Runtime.Extensions.SequentialSignatureRegister.Contracts** project.
-2. In the **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
+1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then build the project.
+3. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
-    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
-    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
+    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
-#### XZReportsNorway component
-
-1. Find the **Runtime.Extensions.XZReportsNorway** project, and build it.
-2. In the **Extensions.XZReportsNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.XZReportsNorway.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
+3. Copy the files to the CRT extensions folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
@@ -200,11 +247,20 @@ The CRT extension components are included in the CRT samples. To complete the fo
 5. Register the CRT change in the extensions configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
     ```
 
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+#### SequentialSignatureRegister.Contracts component
+
+1. Find the **Runtime.Extensions.SequentialSignatureRegister.Contracts** project.
+2. In the **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
+
+    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
 ### The Retail Server extension components
 
