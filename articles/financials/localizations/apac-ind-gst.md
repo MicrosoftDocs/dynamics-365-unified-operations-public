@@ -179,7 +179,7 @@ Follow these steps to load the configurations and map them to a legal entity.
 
     ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
 
-10. On the **Report configuration** FastTab, under **Select report configurations** and select the **Select** checkbox.
+10. On the **Report configuration** FastTab, under **Select report configurations**, select the **Select** checkbox.
 11. In the **Report controller** field, select a value. 
 12. Repeat step 10 and 11, to map the report configurations.
 
