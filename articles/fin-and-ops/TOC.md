@@ -596,13 +596,7 @@
 
 ## [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md)
 ### Asia-Pacific
-#### Australia
-##### [Add report boxes and generate the Australia Business Activity Statement (BAS)](../financials/localizations/tasks/add-bas-report-boxes.md)
-##### [Bank file formats](../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
-##### [Business activity statement ](../financials/localizations/apac-aus-business-activity-statement.md)
-##### [Low-value pool depreciation](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-##### [Set up reason codes for Australia BAS](../financials/localizations/tasks/set-up-reason-codes-australia-bas.md)
-
+#### [Australia](../financials/localizations/australia.md)
 #### China
 ##### [Bill of materials comparison](../financials/localizations/apac-chn-bom-comparison.md)
 ##### [Chinese hierarchy of chart of accounts](../financials/localizations/tasks/china-hierarchy-chart-accounts.md)
