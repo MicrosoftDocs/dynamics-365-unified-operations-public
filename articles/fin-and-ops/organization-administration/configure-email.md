@@ -166,52 +166,52 @@ Workflow email configuration is a collection of related settings that work in co
 ### Workflow email notification setup
 
 1. Verify email settings:
-    1. Navigate to **System administration** > **Setup** > **Email** > **Email parameters**.
+    1. Go to **System administration** > **Setup** > **Email** > **Email parameters**.
     2. Verify that SMTP is enabled.
     3. Set the SMTP mail server settings.
 2. Verify that the email batch process is running:
-    1. Navigate to **System administration** > **Periodic tasks** > **Email processing** > **Batch**.
+    1. Go to **System administration** > **Periodic tasks** > **Email processing** > **Batch**.
     2. Enable the **Batch processing** option.
-    3. Optionally adjust the recurrence of the email process:
+    3. Optionally, adjust the recurrence of the email process:
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count.
 3. Verify workflow notification system email templates:
-    1. Navigate to **System administration** > **Setup** > **Email** > **Email messages** (for system-wide templates).
+    1. Go to **System administration** > **Setup** > **Email** > **Email messages** (for system-wide templates).
     2. Verify that the **Sender email** field is set and valid.
-4. Verify workflow notification organtization email templates:
-    1. Navigate to **Organization administration** > **Setup** > **Email templates** (for organization-specific templates).
+4. Verify workflow notification organization email templates:
+    1. Go to **Organization administration** > **Setup** > **Email templates** (for organization-specific templates).
     2. Verify that the **Sender email** field is set and valid.
 5. Verify that the user can receive email notifications:
-    1. Navigate to **Settings** > **User options**.
-    2. Navigate to the **Account** tab.
-        1. Set the email provider ID (i.e. SMTP).
-        2. Optionally set the email address for the provider if it was not defaulted from the User setup.
+    1. Go to **Settings** > **User options**.
+    2. Go to the **Account** tab.
+         1. Set the email provider ID (for example, SMTP).
+         2. Optionally, set the email address for the provider if it was not the default from the user setup.
     3. Navigate to the **Workflow** tab.
         1. Set the option to send notifications in email to **Yes**.
 6. Verify that the workflow system will send email notifications:
     1. For each workflow that should have a notification, open the workflow properties in the workflow editor. 
         1. Click **Basic settings**.
-            1. Adjust the email template for the workflow notifications
+            1. Adjust the email template for the workflow notifications.
         2. Click **Notifications**.
             1. Enable the events for which a user should be notified.
-            2. Set the recipient of the workflow notification for each event notification enabled.
+            2. Set the recipient of the workflow notification for each event notification that is enabled.
         3. On a workflow approval element for which a user should be notified:
             1. Go to **Properties**.
             2. Enable the events for which a user should be notified.
-            3. Set the recipient of the workflow notification for each event notification enabled.
+            3. Set the recipient of the workflow notification for each event notification that is enabled.
  
 ### Workflow email notification testing
 
-The testing for email notifications is to simply trigger the notification and then check for it:
+The testing for email notifications is to simply trigger the notification and then check for it.
 
 1. Submit a workflow that has been set up for email notifications.
 2. Check the workflow history to make sure that a workflow work item was assigned to the expected user.
 3. Check the status of the pending email notification in **System administration** > **Periodic tasks** > **Email processing** > **Email sending status**.
-    1. If the email is failing to send, make sure that the SMTP mail account can be opened.
+    1. If the email is fails to send, make sure that the SMTP mail account can be opened.
 4. Check for the email notification in the appropriate inbox.
 
 ## Other notes
-The system talks to Exchange or an SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
+The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
 See also
 --------
@@ -221,6 +221,3 @@ See also
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
-
-
-
