@@ -5,7 +5,7 @@ title: Performance SDK and multiuser testing via Visual Studio Online
 description: This topic introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. 
 author: jujoh
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -204,7 +204,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-Up to this point, these instructions have made the assumption that you have a developer topology in which the AOS machine is also your development machine.  If you would like to test a sandbox environment, you must complete the following additional steps to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
+Up to this point, these instructions have made the assumption that you have a developer topology in which the AOS machine is also your development machine.  In order to run load tests on Visual Studio Online, you must be testing a sandbox environment.  There are a few additional steps that must be completed to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
 
 1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
@@ -230,35 +230,46 @@ You can now run performance tests against the topology.
     } 
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
+2. The following installer files must be downloaded and placed in the **Visual Studio Online** folder located within the PerfSDK directory:
+    - Visual C++ redistributable for Visual Studio 2015: https://www.microsoft.com/en-us/download/details.aspx?id=48145
+    - Microsoft ODBC Driver 13 for SQL Server (pick the 64 bit version msi): https://www.microsoft.com/en-us/download/details.aspx?id=50420
 
-2. In your solution files, double-click the **vsonline.testsettings** file. In the **Test Settings** dialog box, on the **Deployment** tab, use the following settings:
+3. Change the contents of **setup.cmd** located in the **Visual Studio Online** folder to match the following:
+
+        setx testroot "%DeploymentDirectory%"
+        ECHO Installing D365 prerequisites
+        ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
+        MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
+        ECHO %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
+        %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
+        %windir%\sysnative\windowspowershell\v1.0\powershell.exe -File %DeploymentDirectory%\install-wif.ps1
+        Md %DeploymentDirectory%\Common\Team\Foundation\Performance\Framework
+        %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
+    
+4. Modify the contents of **CloudCtuFakeACSInstall.cmd** so that the **Import** command has an empty string instead of **'password'**.  The third line of the script should look like this:
+
+    set MyStoreInstallCmd= .... $pfxcert.Import('%TestCertPath%', '', 'Exportable,PersistKeySet')....
+
+5. In your solution files, double-click the **vsonline.testsettings** file to modify the test settings.
+6. In the **Test Settings** dialog box, on the **Deployment** tab, use the following settings:
 
     - Select the **Enable deployment** check box.
     - In the **Additional files and directories to deploy** field, make sure that the following files are listed:
 
-        - &lt;Solution Directory&gt;\\FinancialBenchmark\\bin\\Debug\\
-        - &lt;Solution Directory&gt;\\packages\\Newtonsoft.Json.6.0.5\\lib\\net45\\Newtonsoft.Json.dll
+        - &lt;Solution Directory&gt;\\PerfSDKSample\\bin\\Debug\\
         - C:\\PerfSDK\\CloudEnvironment.Config
-        - C:\\PerfSDK\\CsuClient.pfx
-        - C:\\PerfSDK\\Microsoft.Dynamics.Xml.dll
-        - C:\\PerfSDK\\Microsoft.IdentityModel.dll
+        - C:\\PerfSDK\\authcert.pfx
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\SampleProject\\packages\\Newtonsoft.Json.6.0.5\\lib\\net45\\Newtonsoft.Json.dll
-        - C:\\PerfSDK\\Visual Studio Online\\CloudCtuFakeACSInstall.cmd
-        - C:\\PerfSDK\\Visual Studio Online\\install-wif.ps1
+        - C:\\PerfSDK\\Visual Studio Online\\
 
         > [!NOTE]
         > Your PerfSDK folder might differ.
+        
+7. In the **Test Settings** dialog box, on the **Setup and Cleanup Scripts** tab, select **setup.cmd**, located in the **Visual Studio Online** folder within your PerfSDK directory.
 
-3. On the **Setup and Cleanup Scripts** tab, select **setup.cmd**, which is located in **%testroot%Visual Studio Onlinesetup.cmd**.
+8. In the **Test Settings** dialog box, on the **Additional Settings** tab, select **Run tests in 64 bit process on 64 bit machine**.
 
-    You might have to update your deployment configuration to reflect the certificate name (**CsuClient.pfx** in this tutorial) and password. Make sure that you add the \*.pfx file that you generated earlier, and update the following files:
-
-    - **setup.cmd** – Update this file with **%DeploymentDirectory%CloudCtuFakeACSInstall.cmd %DeploymentDirectory%YourCertificate.pfx**.
-    - **CloudCtuFakeACSInstall.cmd** – Update this file with the password of your certificate. (The password should be an empty string.)
-
-4. On the **Additional Settings** tab, select **Run tests in 64 bit process on 64 bit machine**.
-5. To run the test, open the **SampleLoadTest.loadtest** file, and select **Run Load Test**.
+9. To run the test, open the **SampleLoadTest.loadtest** file, and select **Run Load Test**.
 
     [![Run Load Test](./media/perf103u.png)](./media/perf103u.png)
 
@@ -373,7 +384,7 @@ There are two scenarios that can cause this error:
 
 - The user who is specified as **SelfMintingAdminUser** has a provider other than "https://sts.windows-ppe.net/" or "https://sts.windows.net/". Sometimes the admin user will have a company specific domain included in the provider field. To work around this issue, create a user in AX with any name and email. Assign this new user the System Administrator role.  You do not need to link this user to a real Azure Active Directory user. Specify this new admin user as the **SelfMintingAdminUser** in the CloudEnvironment.config
 
-### Forbidden request that has the Anonymous client authentication scheme
+### Request was forbidden with client authentication scheme 'Anonymous'
 
 #### Error example
 
@@ -489,3 +500,17 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
     Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
 }
 ```
+
+### Service w3svc was not found on computer
+
+This error only occurs when running load tests using Visual Studio Online.
+
+#### Error example
+```
+Test method MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend threw exception: 
+System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.InvalidOperationException: Service w3svc was not found on computer '.'. ---> System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+```
+
+#### Solution
+
+There is a hotfix available which resolves this issue. The KB number is 4095640.
