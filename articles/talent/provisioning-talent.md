@@ -104,7 +104,7 @@ Here are the instructions to run the script:
  > 3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
 
  > [!Note]
- > Visit here to learn more about setting the execution policy so scripts can be run.
+ > Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
 
   > 4.	Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
