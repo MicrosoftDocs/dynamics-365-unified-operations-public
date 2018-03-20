@@ -39,14 +39,14 @@ In enterprise resource planning (ERP), there are several typical scenarios where
 
 ### Scenario 1: Create an alert rule for new sales orders
 1. Open the **All sales orders** page.
-2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Alert me**, and then select **Create alert rule**.
+2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
 3. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Event** field, select **Record has been created**.
 
 ### Scenario 2: Create an alert rule for postponement of a delivery date
 1. Open the **All purchase orders** page.
 2. Select a purchase order ID to access the purchase order details.
 3. Expand the **Purchase order header** FastTab.
-4. On the Action Pane, on the **Options** tab, in the **Share** group, select **Alert me**, and then select **Create alert rule**.
+4. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create a custom alert**.
 5. In the **Create alert rule** dialog box, on the **Alert me when** FastTab, in the **Field** field, select **Delivery date**.
 6. In the **Event** field, select **has been postponed**.
 	
