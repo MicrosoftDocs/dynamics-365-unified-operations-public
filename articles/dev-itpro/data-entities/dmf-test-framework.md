@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Testing with the data management framework
+title: Data task automation
 description: 
 author: Sunil-Garg
 manager: AnnBe
@@ -26,9 +26,9 @@ ms.dyn365.ops.version: Platform update 14
 
 ---
 
-# Task automation in the Data management workspace
+# Data task automation
 
-The task automation manager in data management enables automation of certain types of data tasks for specific scenarios. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
+Data task automation enables automation of certain types of data tasks for specific scenarios. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
 1.	Identify the data related tasks that will benefit from task automation. A task would usually be a configuration task or a task to import/export some data. Implementation teams must look at their configuration management and data migration plan to identify potential tasks that can benefit from task automation. Implementation teams can also identify test cases for automated testing of data entities. Each test case can then be defined as a task.
 2.	The task automation manager expects the data packages to be available in the asset library of an LCS project. It is up to the implementation teams to identify the LCS project based on other decision-making factors. With data packages available in LCS project, task automation manager can consume the packages from any environment (sandbox and/or production) making the consumption of data packages easy across environments.
 3.	The task automation manager drives off an XML manifest which must define each task that is automated. If task automation is used only to configure data projects but not to import/export actual data, the manifest enables such option. In this context, the manifest can be source controlled for effective configuration management as part of the overall ALM.
