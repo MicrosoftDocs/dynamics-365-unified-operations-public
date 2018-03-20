@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations release 8.0. 
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations release 8.0. This version has a was released in April 2018 and has a build number of XXXX.
 
 > [!NOTE]
 > Users and developers will see an updated product name, "Microsoft Dynamics 365 for Finance and Operations." With release 8.0, Microsoft is further simplifying our Dynamics 365 offerings and increasing ease of selection for our customers and ecosystem. Going forward, Microsoft is no longer offering separate editions (Business edition and Enterprise edition), so the product name for this Dynamics 365 application is Microsoft Dynamics 365 for Finance and Operations.
