@@ -2,10 +2,10 @@
 # required metadata
 
 title: Segmented entry control migration guidance
-description: This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
+description: This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
+This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
 The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, *all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance*. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**). Any property that was previously manipulated or called on the controller must now be called on the control. **Notes:**
 
@@ -584,7 +584,7 @@ A map of the dimension specifiers must be created that can then be sent into th
 
 #### Dynamics AX
 
-Remove this line of code, because it's no longer required. However, first make a note of which controller is used with which control. For example, in this case, ledgerDimensionDefaultAccoutnController is being used with the ClearningAccount SEC. A mapping is required when you replace method calls on controller objects with corresponding method calls on the control, and when you set the properties at design time.
+Remove this line of code, because it's no longer required. However, first make a note of which controller is used with which control. For example, in this case, ledgerDimensionDefaultAccountController is being used with the ClearingAccount SEC. A mapping is required when you replace method calls on controller objects with corresponding method calls on the control, and when you set the properties at design time.
 
 ### Step 17
 
@@ -699,7 +699,7 @@ Remove this line of code, because it's no longer required in most cases. Before 
 
 #### Dynamics AX
 
-This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. **Note:** Because of a framework bug, if you don't setting this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
+This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. **Note:** Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
 
 ### Step 26
 

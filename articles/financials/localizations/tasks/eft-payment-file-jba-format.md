@@ -5,7 +5,7 @@ title: Generate an EFT payment file with JBA format (Japan)
 description: In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/16/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -49,8 +49,8 @@ This task uses the JPMF demo company data.
 7. Note the value in the Offset account field to reference later
 8. Click Save.
 9. Click Generate payments.
-10. In the Method of payment field, select a method of payment that is enabled for the JBA file format..
-11. In the File name field, Specify a file name for the generated file..
+10. In the Method of payment field, select a method of payment that is enabled for the JBA file format.
+11. In the File name field, Specify a file name for the generated file.
 12. Use the value noted previously in the Bank account field
     * Select a Offset bank account in the vendor journal lines.  
 13. Click OK.

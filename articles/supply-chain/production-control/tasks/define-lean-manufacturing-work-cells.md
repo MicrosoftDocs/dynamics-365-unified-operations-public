@@ -5,7 +5,7 @@ title: Define lean manufacturing work cells
 description: A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. 
 author: cvocph
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -59,7 +59,7 @@ A work cell is a specific form of resource groups that can be used in lean manuf
     * In multiple activity production flows or production lines, this is often the input warehouse of the next work cell or the sales or transit warehouse where a product is typically transferred to after the production process. Remember when modeling lean manufacturing processes, transport is usually waste, as is reporting transport.  
 16. In the list, click the link in the selected row.
 17. In the Output location field, click the drop-down button to open the lookup.
-    * In a production flow with multiple process activites this if often the input location of the next work cell.  
+    * In a production flow with multiple process activities this if often the input location of the next work cell.  
 18. In the list, find and select the desired record.
 19. In the list, click the link in the selected row.
 20. Expand or collapse the Operation section.
@@ -78,7 +78,7 @@ A work cell is a specific form of resource groups that can be used in lean manuf
 30. Click Add.
 31. In the Production flow model field, click the drop-down button to open the lookup.
 32. In the list, find and select the desired record.
-    * This procedures requires production flow model type Throughput, to show the definition of throughput capacity.  
+    * This procedure requires production flow model type Throughput, to show the definition of throughput capacity.  
 33. In the list, click the link in the selected row.
 34. In the Capacity period field, select an option.
     * The options include:   Standard workday - The capacity is expressed by the length of the standard workday of the working time calendar for the work cell. For each day, the actual working time is determined from the calendar and the effective available capacity is calculated based on that.   Week - Allows a weekly capacity. There is no adjustment done by the actual working time.   Month - Allows a monthly capacity. There is no adjustment done by the actual capacity.   Typically, the standard workday is used for daily periods and the weekly capacity is used for weekly capacity periods.  

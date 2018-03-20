@@ -5,7 +5,7 @@ title: Gantt chart for job scheduling
 description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -41,7 +41,7 @@ A Gantt chart is a visual representation of scheduled activities within a define
 -   Jobs from planned production orders.
 -   Job scheduled project activities of type Hour forecasts.
 
-The Gantt chart can be opened in two different views, **Order view** and **Resource view**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
+The Gantt chart can be opened in two different views, **Order view** and **Resource view**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
 
 1.  Gantt chart activity
 2.  Material shortage icon
@@ -153,9 +153,11 @@ The Gantt chart can be opened from the following pages.
 | **Resource**                                                                                 | On the **Resource** page, you can open the Gantt chart from the menu item **Gantt chart**. When selected, all the jobs scheduled on the resource in a selected time interval will be loaded to the chart.                                                                                                                                                                                                                                                                                                   |
 | **Resource group**                                                                           | On the **Resource group** page, you can open the Gantt chart from the menu item **Gantt** chart. When selected, all the jobs scheduled on the resources in the resource group will be shown in a selected time interval.                                                                                                                                                                                                                                                                                    |
 | **Gantt charts**                                                                             | On the **Gantt charts** page you can configure Gantt charts by resources and resource groups. For example, if you want to control production activities for specific sets of resources or resource groups, then you can make individual configurations of those on the **Gantt charts** page. You can then open the Gantt chart from each configuration.                                                                                                                                                    |
-| **Hour forecasts** (project)                                                                 | Project activities of type **Hour forecast** can be job scheduled on resources. On the **Hour forecast** page on the **Scheduling** menu you can open the Gantt chart on a order to see job scheduled project activities of type hour forecast.                                                                                                                                                                                                                                                             |
+| **Hour forecasts** (project)                                                                 | Project activities of type **Hour forecast** can be job scheduled on resources. On the **Hour forecast** page on the **Scheduling** menu you can open the Gantt chart on an order to see job scheduled project activities of type hour forecast.                                                                                                                                                                                                                                                             |
 | **Job to complete** (List in **Production floor management** workspace)                      | The **Jobs to complete list in the Production floor management** workspace shows jobs from production and batch orders that are in progress on the selected resources for the workspace. On the **Gantt chart** menu item you can open the Gantt chart, where all the jobs selected in the list will be loaded to the chart.                                                                                                                                                                                |
 | **Production orders to release** (Opened from the **Production floor management** workspace) | The production orders to release page is opened from the **Production floor management** workspace. This page shows scheduled production and batch orders pending release. On this page you can open the Gantt chart for selected production orders.                                                                                                                                                                                                                                                        |
 ## See also  
 [Visual scheduling with Gantt chart for production and batch orders (Video)](https://youtu.be/BtbuShkGj4I)
+
+[Visual scheduling for production (demo script)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 

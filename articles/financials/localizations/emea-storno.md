@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1219713
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
@@ -29,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Storno accounting
+
+[!include[banner](../includes/banner.md)]
 
 Storno accounting is the practice of using negative numbers to reverse original journal account entries.
 

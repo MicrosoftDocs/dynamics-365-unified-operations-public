@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
@@ -32,12 +31,9 @@ ms.search.validFrom: 2016-11-30
 
 # Fixed assets depreciation methods for Hungary
 
-This topic provides information about fixed asset depreciation for legal entities in Hungary.
+[!include[banner](../includes/banner.md)]
 
-Overview
---------
-
-In Hungary, there are four country-specific depreciation methods:
+This topic provides information about fixed asset depreciation for legal entities in Hungary. In Hungary, there are four country-specific depreciation methods:
 
 -   Straight line (Hungary)
 -   Multiplication Factor

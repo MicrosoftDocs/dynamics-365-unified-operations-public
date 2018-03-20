@@ -5,7 +5,7 @@ title: Expand Application Suite report data sets
 description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
@@ -97,18 +97,19 @@ The following walkthrough shows the process of expanding an existing application
 
             class FERentalsByCustomerHandler
             {
-                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, getTmpFMRentalsByCust))]
+                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, processReport))]
                 public static void TmpTablePostHandler(XppPrePostArgs arguments)
                 {
-                    TmpFMRentalsByCust tmpTable = arguments.getReturnValue();
+                    FMRentalsByCustDP dpInstance = arguments.getThis() as FMRentalsByCustDP;
+                    TmpFMRentalsByCust tmpTable = dpInstance.getTmpFMRentalsByCust();
                     FMRentalCharge chargeTable;
                     ttsbegin;
-                        while select forUpdate tmpTable
-                        {
-                            select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
-                            tmpTable.ChargeDesc = chargeTable.Description;
-                            tmpTable.update();
-                        }
+                    while select forUpdate tmpTable
+                    {
+                        select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
+                        tmpTable.ChargeDesc = chargeTable.Description;
+                        tmpTable.update();
+                    }
                     ttscommit;
                 }
             }

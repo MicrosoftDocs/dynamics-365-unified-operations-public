@@ -38,7 +38,7 @@ This procedure shows you how to register items using the item arrival journal wh
 1. Go to Inventory management > Journal entries > Item arrival > Item arrival.
 2. Click New.
 3. In the Name field, type a value.
-    * If you are using USMF, you can type WHS. If you’re using other data, the journal whose name you choose has to have the following properties: cheque picking location must be set to No, and Quarantine management must be set to No.  
+    * If you are using USMF, you can type WHS. If you’re using other data, the journal whose name you choose has to have the following properties: check picking location must be set to No, and Quarantine management must be set to No.  
 4. In the Packing slip field, type a value.
     * This is the packing slip ID from the packing slip issued by the vendor. Add a unique number.  
 5. In the Number field, In the Number field, select the purchase order..

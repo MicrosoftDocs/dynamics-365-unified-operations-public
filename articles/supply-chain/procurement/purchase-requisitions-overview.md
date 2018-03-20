@@ -2,10 +2,10 @@
 # required metadata
 
 title: Purchase requisition overview
-description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
+description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,8 +17,8 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: bis
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
+This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 
 Depending on the setup of your organization, you can create purchase requisitions for products that your organization uses. A purchase requisition is an internal document that authorizes the Purchasing department to buy items or services.  
 
@@ -74,7 +74,7 @@ The overall status of a purchase requisition is determined by the status of the 
 <tr class="odd">
 <td>Draft</td>
 <td>Draft</td>
-<td>The purchase requisition and purchase requisition line have been created, but they haven't been submitted for review. Purchase requisitions and purchase requisition lines that have a status of <strong>Draft</strong> can be modified.A purchase requisition or purchase requisition line also has a status of <strong>Draft</strong> if it has been recalled but hasn't been resubmitted for review.<strong>Note:</strong> You can submit or recall a purchase requisition at the document level. However, you can't submit or recall a single purchase requisition line.</td>
+<td>The purchase requisition and purchase requisition line have been created, but they haven't been submitted for review. Purchase requisitions and purchase requisition lines that have a status of <strong>Draft</strong> can be modified. A purchase requisition or purchase requisition line also has a status of <strong>Draft</strong> if it has been recalled but hasn't been resubmitted for review. <strong>Note:</strong> You can submit or recall a purchase requisition at the document level. However, you can't submit or recall a single purchase requisition line.</td>
 </tr>
 <tr class="even">
 <td>In review</td>
@@ -115,7 +115,7 @@ If you resubmit a purchase requisition line that has been rejected, the review p
 <tr class="odd">
 <td>Cancelled</td>
 <td>Cancelled</td>
-<td>The purchase requisition and all purchase requisition lines have been canceled.<strong>Note:</strong> If you no longer require an item that is on a purchase requisition line, you must cancel the purchase requisition line if it has already been approved. Only purchase requisition lines that have been approved can be canceled. If any purchase requisition lines are in review, the purchase requisition will have a status of <strong>In review</strong>. In this case, you can recall the purchase requisition and delete the appropriate purchase requisition line.</td>
+<td>The purchase requisition and all purchase requisition lines have been canceled. <strong>Note:</strong> If you no longer require an item that is on a purchase requisition line, you must cancel the purchase requisition line if it has already been approved. Only purchase requisition lines that have been approved can be canceled. If any purchase requisition lines are in review, the purchase requisition will have a status of <strong>In review</strong>. In this case, you can recall the purchase requisition and delete the appropriate purchase requisition line.</td>
 </tr>
 <tr class="even">
 <td>Closed</td>

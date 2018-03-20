@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Troubleshooting guide for package deployment issues
+
+[!include[banner](../includes/banner.md)]
+
 This topic provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply a deployable package](apply-deployable-package-system.md).
 
 ## General troubleshooting and diagnostics

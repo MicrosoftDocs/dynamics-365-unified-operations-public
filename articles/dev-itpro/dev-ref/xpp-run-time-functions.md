@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31461
 ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
@@ -56,8 +56,8 @@ Inside this assembly, the X++ run-time functions are implemented as static meth
 ## Categories and functions
 The following table lists and describes only the categories of X++ functions. These categories are intended to help you understand the many functions. However, the categories don't represent any formal construct.
 
-| Category                  | Description                                                                                                                                                                                                                |
-|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Category                  | Description  |
+|---|---|
 | [Business](#business)     | Functions that enter financial data and calculate formulas. For more information, see [X++ Business Run-Time Functions](xpp-business-run-time-functions.md).                              |
 | [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
 | [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).                  |
@@ -81,19 +81,13 @@ For more information, see [X++ Business Run-Time Functions](xpp-business-run-tim
 ## Container
 For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).
 
-conDel
-
-conFind
-
-conIns
-
-conLen
-
-conNull
-
-conPeek
-
-conPoke
+- conDel
+- conFind
+- conIns
+- conLen
+- conNull
+- conPeek
+- conPoke
 
 ## Conversion
 For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).

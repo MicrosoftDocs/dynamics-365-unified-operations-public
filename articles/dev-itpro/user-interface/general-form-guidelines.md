@@ -5,7 +5,7 @@ title: General form guidelines
 description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
@@ -145,7 +145,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   **Exceptions:**
         -   FastTabs that contain only a grid aren't expected to display summary fields.
         -   Dimensions FastTab pages can't display summary fields, because this functionality isn't currently supported.
--   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md)subpattern guidelines.
+-   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md) subpattern guidelines.
 
 ## Radio button guidelines
 -   Follow all [standard Microsoft guidelines for radio buttons.](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511488.aspx) Specifically, observe these guidelines:
@@ -174,7 +174,7 @@ Toggle buttons are typically used instead of traditional check boxes.
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
         -   **Exceptions:**
             -   Use a check box when a large number of related options must be set in a group.
-            -   Use a check box inside [Custom Filter Group](custom-filter-group-subpattern.md)subpatterns.
+            -   Use a check box inside [Custom Filter Group](custom-filter-group-subpattern.md) subpatterns.
             -   Groups where a check box is used on the frame to collect related fields. *This exception is currently under review to add clarity.*
     -   Don't use check boxes/toggle buttons as a progress indicator.
     -   Don't use check boxes to initiate a command. However, a message box can be shown to the user to refine or clarify the choice.
@@ -183,7 +183,7 @@ Toggle buttons are typically used instead of traditional check boxes.
     -   Use positive phrasing. Don't phrase a label so that selection of the check box means that an action is **not** performed.
 
 ## Selection panel guidelines
--   Occasionally, you'll require a discrete list of options that the user can select from, where each option presents the same interface. Don't use radio buttons to present the list of options. Instead, use a combo box control inside a [Custom Filter Group ](custom-filter-group-subpattern.md)group.
+-   Occasionally, you'll require a discrete list of options that the user can select from, where each option presents the same interface. Don't use radio buttons to present the list of options. Instead, use a combo box control inside a [Custom Filter Group ](custom-filter-group-subpattern.md).
 -   If the selection list is common to a set of items, the combo box should appear above all the items that are affected.
 
 ## General grid guidelines

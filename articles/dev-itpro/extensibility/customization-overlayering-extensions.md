@@ -5,7 +5,7 @@ title: Customize with extensions and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: robadawy
 manager: AnnBe
-ms.date: 05/18/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 
-Overlayering
-------------
+## Overlayering
 
 You can customize source code and metadata of model elements that are shipped by Microsoft or third-party Microsoft partners. In order to customize metadata and source code of a model, the developer must create a new model that overlays the model they want to customize. For example, solution developers can provide code in the SLN layer, independent software vendors can use the ISV layer, and value-added resellers can use the VAR layer. Functionality defined in higher layers (VAR layer in this example) can override the functionality of lower layers. The overlaying model must belong to the same **Package** as the source model and belong to a layer that is higher than the source model. Overlayering is a powerful tool to perform advanced customizations of metadata and source code, but may increase the cost of upgrading a solution to a new version. Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.
 
@@ -94,7 +93,7 @@ Plug-ins are extension points that are defined by the base application. By using
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details refer to the topic [class extensions](class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
@@ -106,10 +105,9 @@ You can extend the functionality of a form by extending its controls and data so
 -   Change a form's help text.
 -   Change a form's caption.
 -   Add a new data source.
--   Change properties at the data-source level.
 -   Add a form part.
 
-Other ways to customize a form, such as reordering controls in the form or subscribing to form or control events, are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
+Other ways to customize a form, such as reordering controls in the form are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
 
 |**Published form DataSource method**|**Preceding event**|**Succeeding event**|
 |---|---|---|
@@ -180,19 +178,19 @@ In Microsoft Dynamics AX 2012, you could override the virtual methods of a table
 Validation events capture and return results by using the **DataEventArgs** parameter. The display and edit method modifiers are supported on table extensions.
 
 ## View and Data entity extensions
-You can extend a View or Data entity to achieveÂ much of theÂ functionalityÂ available withÂ table extensions.
+You can extend a View or Data entity to achieve much of the functionality available with table extensions.
 
 ## Enum extensions
-You can extend any Enum that is marked extensble (IsExtensible=True). 
+You can extend any Enum that is marked extensible (IsExtensible=True). 
 
 [![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) 
 
 By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
 1.  You cannot have X++ logic that depends on the integer value of Enum values (For example. *If (Enum1.v1 &gt; Enum1.v2) ...* is not supported for extensible enums)
-2.  WhenÂ Enum values of extensible Enums are synchronized into the database:
-    -   IntegerÂ values thatÂ belong to theÂ baseline enum are deterministic, they come from the metadata.
-    -   IntegerÂ values that are an extension are generated during the synchronization process and are not deterministic.
+2.  When Enum values of extensible Enums are synchronized into the database:
+    -   Integer values that belong to the baseline enum are deterministic, they come from the metadata.
+    -   Integer values that are an extension are generated during the synchronization process and are not deterministic.
 
 ## EDT extensions
 You can extend an EDT element in order to modify any of the following properties:
@@ -240,7 +238,7 @@ You can create label extension files in order to modify the string value of a la
 4.  If your goal is to create translations of the FLM label, right-click on the FLM\_Extension element in your project and select **Add new languages**. Follow the wizard to add translation files to the FLM labels.
 
 > [!NOTE]
-> If the FLM_Extension file already exists in another model, you can name your file **FLM_Extension<N>** where <N> is any integer.
+> If the FLM_Extension file already exists in another model, you can name your file **FLM_ExtensionN** where N is any integer (For example FLM_Extension2, FLM_Extension3, ...etc)
 
 ## Extension of Country/Region Codes
 
@@ -332,7 +330,7 @@ Tables, form data sources, form controls, and other element types that support e
 -   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
 
 
-# See also
+## See also
 
 [Customize model elements using extensions](customize-model-elements-extensions.md)
 

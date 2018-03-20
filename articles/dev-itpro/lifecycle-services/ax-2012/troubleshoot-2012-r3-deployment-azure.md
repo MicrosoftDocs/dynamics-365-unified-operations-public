@@ -2,10 +2,10 @@
 # required metadata
 
 title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
-description: This article explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
+description: This topic explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18691
 ms.assetid: cc7c6dd5-b715-4734-9918-c25df4187c6e
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 2012
 [!include[banner](../../includes/banner.md)]
 
 
-This article explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
+This topic explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 
 How do I renew the Windows license on a demo virtual machine?
 -------------------------------------------------------------
@@ -55,7 +55,7 @@ A command prompt window will be displayed briefly, and then the virtual machine 
 ## How do I renew the Microsoft Dynamics AX license on a demo virtual machine?
 If you need to renew the license for Microsoft Dynamics AX on the virtual machine in a demo environment, please download the trial license files from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898). Then, follow the steps listed in [Provide license information](https://technet.microsoft.com/en-us/library/aa496447.aspx).
 
-## How do I activate Windows on the virtual machines in my nondemo environment?
+## How do I activate Windows on the virtual machines in my non-demo environment?
 Windows is automatically activated on the virtual machines that are included with non-demo environments. However, the activation may take up to 4 days to complete. If you continue to see messages that prompt you to activate Windows after 4 days, contact the Azure support team. For information on how to contact the Azure support team, see the following section.
 
 ## How do I resolve the following error: ScriptId 'InstallDatabase' failed execution on VM instance
@@ -111,7 +111,7 @@ To obtain support for Azure, use the resources listed in the following table.
 </tr>
 <tr class="odd">
 <td>Enter a support ticket with the Azure support team</td>
-<td>Go to the <a href="http://www.windowsazure.com/en-us/support/options/">Azure support options</a> page, and click Get Support to open a support ticket.The Azure support team can help you resolve issues related to:
+<td>Go to the <a href="http://www.windowsazure.com/en-us/support/options/">Azure support options</a> page, and click Get Support to open a support ticket. The Azure support team can help you resolve issues related to:
 <ul>
 <li>Requests to increase the size of your Azure subscription</li>
 <li>Errors when using the Azure management portal</li>

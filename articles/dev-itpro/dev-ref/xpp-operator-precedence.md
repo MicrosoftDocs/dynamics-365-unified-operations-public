@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6174
 ms.assetid: dd4a4971-c35a-466d-9c24-244cd75f9020
@@ -51,7 +51,7 @@ The operators in the following table are listed in precedence order. The higher 
 | logical operators (AND, OR)                              | && ||                                  |
 | conditional                                              | ? :                                    |
 
-Operators on the same line have equal precedence. If there is more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used (these are evaluated from right to left).For example, && (logical AND) and || (logical OR) have the same precedence and are evaluated from left to right. This means that:0&&0||1 == 1, and 1||0&&0 == 0
+Operators on the same line have equal precedence. If there is more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used (these are evaluated from right to left). For example, && (logical AND) and || (logical OR) have the same precedence and are evaluated from left to right. This means that:0&&0||1 == 1, and 1||0&&0 == 0
 
 ## See also
 [Assignment Operators](http://msdn.microsoft.com/library/d4e86b9c-be82-4f19-ad86-7722344a05f3(AX.60).aspx)

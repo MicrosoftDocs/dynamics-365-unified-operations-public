@@ -40,7 +40,8 @@ To complete these steps, you must first complete these three task guides:
 
 “ER Use financial dimensions as a data source (Part 2: Model mapping)”
 
-You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+You must also download and save a local copy of the template with a sample report found here, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
+
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

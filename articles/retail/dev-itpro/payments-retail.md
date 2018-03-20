@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, UnifiedOperations, Retail
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 # Payments FAQ
+
+[!include[banner](../../includes/banner.md)]
 
 ## What payment scenarios are supported?
 - Set up a merchant account.

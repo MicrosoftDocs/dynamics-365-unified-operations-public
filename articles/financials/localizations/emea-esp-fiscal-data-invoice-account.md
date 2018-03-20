@@ -5,7 +5,7 @@ title: Use fiscal data from the invoice account
 description: For legal entities in Spain, the Use fiscal data from invoice account functionality enables fiscal data on sales orders, free text invoices, and purchase orders to be updated automatically, based on information from the invoice account. This topic provides information about the Use fiscal data from invoice account functionality and explains how to set it up.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265224
 ms.search.region: Spain
@@ -38,13 +37,13 @@ For legal entities in Spain, the Use fiscal data from invoice account functional
 
 For legal entities in Spain, the Use fiscal data from invoice account functionality enables fiscal data on sales orders, free text invoices, and purchase orders to be updated automatically, based on information from the invoice account. The fiscal data that is updated includes the customer or vendor name, address, and tax information. The Use fiscal data from invoice account functionality affects the following modules:
 
--   Accounts payable'**Invoice account** change page'
+-   Accounts payable **Invoice account** change page
 -   Procurement and sourcing
 -   Accounts receivable
 -   Sales and marketing
 
 ## Accounts payable and Procurement and sourcing
-To manage the opportunity of fiscal data automatic update on Invoice account change in the Accounts payable module you need to set up a parameter Use fiscal data from invoice account on Invoice tab of the Account payable &gt; Setup &gt; Account payable &gt; parameters page. The following options are available:
+To manage the opportunity of fiscal data automatic update on Invoice account change in the Accounts payable module you need to set up a parameter Use fiscal data from invoice account on Invoice tab of the **Account payable parameters** page. The following options are available:
 
 -   **Never** – Information is updated from the vendor account.
 -   **Always** – Information is updated from the invoice account.
@@ -57,7 +56,7 @@ When the **Use fiscal data from invoice account** parameter is set, three fields
 -   Tax exemption
 
 ## Accounts receivable and Sales and marketing
-To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**” on the **Invoice** fasttab of the **Updates** tab of the **Account receivable** &gt; **Setup** &gt; **Account receivable** **parameters** page. The following options are available:
+To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**” on the **Invoice** fasttab of the **Updates** tab of the **Account receivable parameters** page. The following options are available:
 
 -   **Never** – Information is updated from the customer account.
 -   **Always** – Information is updated from the invoice account.

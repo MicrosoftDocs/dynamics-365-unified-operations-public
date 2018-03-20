@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 4
 ---
 
 # Modify an existing field in a table
+
+[!include[banner](../includes/banner.md)]
 
 To modify properties on an existing field in a table, you must first create an extension for the table. You can modify the following properties:
 

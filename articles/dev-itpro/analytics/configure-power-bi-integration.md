@@ -5,7 +5,7 @@ title: Configure Power BI integration for workspaces
 description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 07/07/2017
+ms.date: 01/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: PowerBIConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
@@ -119,6 +119,9 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     ![Authorize Power BI](./media/Authorize.JPG)
 
+    > [!Note]
+    > If you have an issue with this step, please see the **Troubleshooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** option.
+
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
     ![Consent page](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
@@ -140,6 +143,7 @@ After you select **Accept** in the previous procedure, you might receive the fol
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
 | You can’t access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and rerun the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
+| Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under **Users and Groups > User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 
 ## Technical details about OAuth 2.0 Authorization Code Grant Flow
 
@@ -165,6 +169,6 @@ For subsequent visits, this whole flow doesn't occur. Because Finance and Operat
 Now that you've enabled the PowerBI.com integration feature, you might want to perform the following steps:
 
 - If your organization uses PowerBI.com, you can invite users to pin tiles and reports from their own PowerBI.com account to workspaces for easy access.
-- If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) or later, ready-made analytical workspaces might be built into your workspaces. Currently, this feature is available only in multi-box environments. If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account. The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+- If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) or later, ready-made analytical workspaces might be built into your workspaces. Currently, this feature is available only in multi-box environments. If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account. The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS). 
 - You might want to create your own Power BI content by using data that is available in Entity store. (Entity store is the operational data warehouse that is included with Finance and Operations.) For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 - You might want to mash up external data with ready-made Power BI content that is provided with Finance and Operations. You can do this data mash-up by using Power BI solution templates.

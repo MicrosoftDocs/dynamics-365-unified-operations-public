@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: 
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196873
 ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d

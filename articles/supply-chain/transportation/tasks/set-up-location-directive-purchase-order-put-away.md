@@ -5,7 +5,7 @@ title: Set up a location directive for purchase order put-away
 description: This procedure shows you how to set up a simple location directive. 
 author: BibiSp
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -64,7 +64,7 @@ This procedure shows you how to set up a simple location directive. The example 
 4. In the Unit field, type a value.
     * The unit the From quantity and To quantity is expressed in. If you leave this field blank the inventory unit from the item is used.  
 5. In the Locate quantity field, select an option.
-    * None, or licence plate quantity: The quantity registered on each licence plate. Unitized quantity: The entire quantity that’s been registered. Remaining quantity: The quantity that is yet to be registered from the purchase order line. Expected quantity: The total quantity that is specified on the purchase order line.  
+    * None, or license plate quantity: The quantity registered on each license plate. Unitized quantity: The entire quantity that’s been registered. Remaining quantity: The quantity that is yet to be registered from the purchase order line. Expected quantity: The total quantity that is specified on the purchase order line.  
 6. Check or uncheck the Restrict by unit checkbox.
     * If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location. For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.  
 7. Check or uncheck the Allow split checkbox.

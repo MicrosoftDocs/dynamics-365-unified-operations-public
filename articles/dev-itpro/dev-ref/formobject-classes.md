@@ -5,7 +5,7 @@ title: F Classes - FormObject to FormRealControl
 description: API reference for classes from FormObject to FormRealControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63603
 ms.assetid: 170eb939-154e-488e-84a8-f67dd9d9a8f6
@@ -2939,7 +2939,7 @@ Indicates that the control has received focus.
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the font weight that is used to display text in the control.                                                                                               |
 | public int bottomMargin(\[int value\], \[AutoMode mode\])                                                   |                                                                                                                                                                         |
@@ -3199,7 +3199,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -3380,7 +3380,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -5425,7 +5425,7 @@ This event is not raised unless the DragDrop property is enabled for the control
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int autoInsSeparator(\[int value\])                                                                  |                                                                                                                                                                         |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that is used to output text in the control.                                                                                             |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -5753,7 +5753,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -5910,7 +5910,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -5929,7 +5929,7 @@ The value in the following table is for the Thai language edition of Windows.
 |-------|---------------|
 | 222   | THAI\_CHARSET |
 
-The default character set is set to a values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN website, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN website, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method charFromPos
 

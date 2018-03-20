@@ -2,10 +2,10 @@
 # required metadata
 
 title: Font and background colors for input, table, and grid controls
-description: This article provides information about the new color picker control that lets users select a color.
+description: This topic provides information about the new color picker control that lets users select a color.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about the new color picker control that lets users select a color.
+This topic provides information about the new color picker control that lets users select a color.
 
 Traditionally, color has been considered an ideal way to communicate with a user. For example, the color red is often used to draw the user's attention to information that is important. However, some users can't distinguish certain colors or shades, and some users are blind. Therefore, we don't recommend that you use color alone to communicate information to the user. Instead, you should use color together with a symbol or additional text to convey information to all users.
 
@@ -157,7 +157,7 @@ There is no design-time experience for coloring input controls. In other words, 
         super(_record, _options);
     }
 
-## Static RGB instead of runtime conversion from integer to RGB values
+## Static RGB instead of run-time conversion from integer to RGB values
 Previously, run-time conversion that used **WinAPI::RGB2Int** was required, because the Win32 color picker returned an RGB value, whereas the background color APIs accepted an integer. This run-time conversion isn't required, because the new color picker returns an integer to match the control's consumption of an integer. Additionally, it’s understood that .NET code often uses RGB values for colors. Therefore, in those cases, run-time conversion of colors isn't required for each use. Instead, you can define static color variables. Here are three examples.
 
     Static int GrayColor = 220 + 220 <<#offset8 + 220<<offset16;

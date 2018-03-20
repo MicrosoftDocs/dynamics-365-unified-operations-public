@@ -5,7 +5,7 @@ title: Set up customers and customer bank accounts for ISO20022 direct debits
 description: This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 10/13/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit. Depending on the customer payment formats tha are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account. 
+This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit. Depending on the customer payment formats that are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account. 
 
 This task was created using the demo data company DEMF with a legal entity primary address in Germany.
 

@@ -18,7 +18,7 @@ ms.search.form: EInvoiceCFDIJour_MX, EInvoiceCFDIPACTable_MX, EInvoiceParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29791
 ms.assetid: b6861a2c-c132-48a2-97b5-9cb1020e0512
@@ -34,6 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+Electronic billing in Mexico requires the Comprobantes fiscales digitales por internet (CFDI) format. 
 
 This article provides information about the electronic invoices that your organization can submit to the Mexican tax authority (SAT). It describes the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 
@@ -96,5 +97,6 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [Create and post a customer invoice as an electronic invoice by using the CFDI method](./tasks/mx-00010-e-invoicing-cfdi.md)
 - [View, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request](./tasks/mx-00010-inquire-print-electronic-invoice.md)
 - [Cancel a CFDI electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
+- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
 
 

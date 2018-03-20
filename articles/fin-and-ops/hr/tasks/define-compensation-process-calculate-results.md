@@ -5,10 +5,10 @@ title: Define compensation process and calculate results
 description: Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. 
 author: kherr75
 manager: AnnBe 
-ms.date: 06/10/2016
+ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-talent 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -75,7 +75,7 @@ Compensation processes are used to determine new compensation amounts and awards
 16. In the Type field, select an option.
     * Fixed and variable compensation plans can be run in the same compensation process.  
 17. In the Plan field, enter or select a value.
-    * Use the Enable pay for performance check box to determined whether fixed and variable compensation amounts should be adjusted based on the employee's performance rating.  
+    * Use the Enable pay for performance check box to determine whether fixed and variable compensation amounts should be adjusted based on the employee's performance rating.  
     * Leverage can be overridden on variable compensation plans.  
 18. Click Save.
 19. Click Add.

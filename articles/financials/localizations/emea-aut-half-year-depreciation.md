@@ -5,7 +5,7 @@ title: Half-year depreciation on additional acquisitions for Austria
 description: This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272663
 ms.search.region: Austria
@@ -48,7 +48,7 @@ In legal entities in Austria depreciation for additional acquisitions and acquis
 | Set up **Depreciation profile**       | Open **Fixed assets** &gt; **Setup** &gt; **Depreciation profile**. For depreciation profile with **Depreciation method = Straight line life remaining**, mark check box **Half year depreciation on additional acquisitions**. If this option is switched on, depreciation convention **Half year (start year)** is implemented for additional acquisitions. |
 | Set up **Fixed assets parameters**    | Open **Fixed assets** &gt; **Setup** &gt; **Fixed assets parameters.** On the **General** tab, select the following parameters:  **Apply specific rules for half year depreciation** , **Automatically create depreciation adjustment amounts with disposal**.                                                                                  |
 
-## Halfyear depreciation on additional acquisitions calculation
+## Half year depreciation on additional acquisitions calculation
 When **Apply specific rules for half year depreciation** checkbox is marked, and **Automatically create depreciation adjustment amounts with disposal** checkbox is marked, the depreciation adjustment amount for fixed assets with **Straight line life remaining** depreciation method and **Half year (start of year)** convention used, is posted automatically with the disposal calculated according to the half year convention rules.
 
 

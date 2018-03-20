@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13671
 ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
@@ -60,12 +60,12 @@ Adhering to the form pattern ensures that this Simple List form has the same str
 
 Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
-1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
+1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 3.  On the **Finance and Operations** menu, click **Import Project**.
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
-5.  In the **Select the file to import** window, browse to C: \\FMLab, click FMTutorialDataModel.axpp, and then click **Open**.
-6.  In the **Project file location** text box, enter C:\\FMLab.
+5.  In the **Select the file to import** window, browse to C:\FMLab, click FMTutorialDataModel.axpp, and then click **Open**.
+6.  In the **Project file location** text box, enter C:\FMLab.
 7.  Select the **Overwrite Elements** option, and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
     [![rentalcharge2](./media/rentalcharge2.png)](./media/rentalcharge2.png)
@@ -80,14 +80,14 @@ Use Visual Studio to open the FMTutorial project. If you have Visual Studio open
 
 1.  If the development environment isn’t already open, on the desktop, double-click the Visual Studio shortcut to open the development environment.
 2.  On the **File** menu, click **Open** &gt; **Project/Solution**.
-3.  In the **Open Project** dialog box, browse to C:FmLabFMTutorial, select the **FMTutorial** solution, and then click **Open**
+3.  In the **Open Project** dialog box, browse to C:\FmLab\FMTutorial, select the **FMTutorial** solution, and then click **Open**
 4.  The FMTutorial project appears in **Solution Explorer**.
 
 ## Use a template to create the form
 Use Visual Studio to create the **FmtChargeType** form. You’ll use a template for building the Simple List form. You’ll also add a data source to the form and add fields to the data grid.
 
 1.  In **Solution Explorer**, right-click the **FMTutorial** project, point to **Add**, and then click **Existing Item**.
-2.  In the **Add Existing Item** window, browse to C:FmLab, click **AxForm\_FmtChargeType**, and then click **Add**. The **FmtChargeType** form appears at the bottom of the **FMTutorial** project in **Solution Explorer**.
+2.  In the **Add Existing Item** window, browse to C:\FmLab, click **AxForm\_FmtChargeType**, and then click **Add**. The **FmtChargeType** form appears at the bottom of the **FMTutorial** project in **Solution Explorer**.
 3.  In **Solution Explorer**, double-click **FmtChargeType**. The form opens in the Form designer.
 4.  Add the **FmtChargeType** table as the data source for the form. Right-click **Data Sources,** and then click **New Data Source**. A data source node is added.
 5.  Click the data source node from the previous step. In the **Properties** window, populate the following properties with the specified values.

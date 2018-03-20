@@ -3,7 +3,7 @@
 
 title: Cost objects
 description: This article provides information about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for. A cost object entity can be either a product or product variants, such as variants for style and color.  
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: InventCostOnhandItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for. A cost object entity can be either a product or product variants, such as variants for style and color.  
 
-Cost objects
-------------
+## Cost objects
 
 The **Cost objects** page lists all cost objects that are registered on a product. The cost objects are defined by data from the following sources:
 

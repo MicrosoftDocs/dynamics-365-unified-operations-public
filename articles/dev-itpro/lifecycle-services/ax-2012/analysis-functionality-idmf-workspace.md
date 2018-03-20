@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17672
 ms.assetid: ea04ef47-0316-4fc9-b785-da4c43b19a8d
@@ -281,7 +281,7 @@ The following tables provide descriptions for the controls in this workspace.
 | **Minimum**                                                   | The minimum value of the configuration option.                                                                                                                                                                                                                                                                                                                    |
 | **Maximum**                                                   | The maximum value of the configuration option.                                                                                                                                                                                                                                                                                                                    |
 | **Configuration value**                                       | The value to which the configuration option was set by using sp\_configure (the value in sys.configurations.value). For more information about these options, see [Setting Server Configuration Options](https://msdn.microsoft.com/en-us/library/ms189631.aspx) and [sys.configurations (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms188345.aspx). |
-| **Run value**                                                 | The currently running value of the configuration option (the value in sys.configurations.value\_in\_use).For more information, see [sys.configurations (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms188345.aspx).                                                                                                                                   |
+| **Run value**                                                 | The currently running value of the configuration option (the value in sys.configurations.value\_in\_use). For more information, see [sys.configurations (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms188345.aspx).                                                                                                                                   |
 
 #### 
 

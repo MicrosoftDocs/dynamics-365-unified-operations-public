@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: LedgerInterCompany
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
@@ -64,9 +64,9 @@ For this example, FRSI must be a customer in the USSI legal entity, and USSI mus
 
 1.  Set up FRSI as a customer in the USSI legal entity, and set up USSI as a vendor in the FRSI legal entity. There are three entry points for the steps that are required for this task.
     | Step | Entry point                                                                       | Description   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | In USSI, click **Accounts receivable** &gt; **Customers** &gt; **All customers**. | Create a new customer record for FRSI, and select the customer group.                                                                                                                                                                                                                           |
-    | B    | In FRSI, click **Accounts payable** &gt; **Vendors** &gt; **All vendors**.        | Create a new vendor record for USSI, and select the vendor group.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | In USSI, click **Accounts receivable** &gt; **Customers** &gt; **All customers**. | Create a new customer record for FRSI, and select the customer group.                                                                                  |
+    | B    | In FRSI, click **Accounts payable** &gt; **Vendors** &gt; **All vendors**.        | Create a new vendor record for USSI, and select the vendor group.                                                                                    |
     | C    | In FRSI, open the vendor record that you just created.                            | On the Action Pane, on the **General** tab, in the **Set up** group, click **Intercompany**. On the **Intercompany** page, on the **Trading relationship** tab, set the **Active** slider to **Yes**. In the **Customer company** field, select the customer record that you created in step A. |
 
 2.  Click **Project management and accounting** &gt; **Setup** &gt; **Project management accounting parameters**, and then click the **Intercompany** tab. The way that you set up the parameters depends on whether you're the borrowing legal entity or the lending legal entity.

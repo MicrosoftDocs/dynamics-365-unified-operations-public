@@ -5,7 +5,7 @@ title: Sequence production jobs for process manufacturing
 description: This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size. 
 author: ChristianRytt
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -72,5 +72,5 @@ This procedure uses paint products as an example to show how to sequence planned
     * Select MasterPlan.  
 7. In the list, click the link in the selected row.
 8. Use the Quick Filter to filter on the Item number field with a value of 'P300'.
-    * Notice that the orders now are sequenced according to the priority of color and size and the planned orders start at the earliest order date and delivery date. Validate the Order date column or the Start date in the Schedule details FactBbox.  
+    * Notice that the orders now are sequenced according to the priority of color and size and the planned orders start at the earliest order date and delivery date. Validate the Order date column or the Start date in the Schedule details FactBox.  
 

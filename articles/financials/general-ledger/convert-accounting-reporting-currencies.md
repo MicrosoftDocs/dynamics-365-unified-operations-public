@@ -2,10 +2,10 @@
 # required metadata
 
 title: Convert accounting or reporting currencies
-description: 
+description: A company that must change its accounting currency or reporting currency has two options.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b

@@ -5,7 +5,7 @@ title: Tax payments in Brazil
 description: This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 author: sndray
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270254
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
@@ -167,6 +167,6 @@ For more information, see the following topics:
  - [Set up interest and fines for vendor payments](tasks/br-00065-1-set-up-interest-fines-vendor-payments.md)
  - [Calculate interest and fines on vendor payments](tasks/br-00065-2-calculate-interest-fines-vendor-payments.md)
  - [Set up interest and fines on customer payments](tasks/br-00066-1-set-up-interest-fines-customer-payments.md)
- - [Calculate interest and fines on customer payements](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
+ - [Calculate interest and fines on customer payments](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
 
 

@@ -5,7 +5,7 @@ title: Set up bank facilities and posting profiles for letter of credit
 description: This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
 author: kweekley
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 10/27/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
 
-This tasks uses the demo company 'USMF'.
+This task uses the demo company 'USMF'.
 
 
 

@@ -3,9 +3,9 @@
 
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
-author: saraschi
+author: saraschi2
 manager: AnnBe
-ms.date: 05/15/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,16 +13,16 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarasch 
+ms.author: saraschi 
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 

@@ -5,7 +5,7 @@ title: Install and run System diagnostics (AX 2012)
 description: In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
 author: manalidongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
@@ -50,7 +50,7 @@ To install the System diagnostics on-premises component, the following is requir
 
 This section describes the permissions that are required for the service account that the Lifecycle Services Diagnostic Service (LCSDiagFXService.exe) runs as.
 
--   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role.We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
+-   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role. We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
 
     | **Note**                                                                                                                     |
     |------------------------------------------------------------------------------------------------------------------------------|
@@ -66,18 +66,18 @@ On each server in your environment that hosts an AOS instance or Microsoft Dynam
 
 | **Caution**                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The following procedure includes editing the Windows Registry. Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved.You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry. |
+| The following procedure includes editing the Windows Registry. Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved. solved. You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry. |
 
 To grant access to collect data from the Windows registry on the server that hosts the SQL Server business database:
 1.  Click **Start**, click **Run**, type **regedit**, and then press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetControlPriorityControl**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Control\PriorityControl**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
 
 To grant access to collect data from the Windows registry on a server that hosts one or more AOS instances:
 1.  Click **Start**, click **Run**, type **regedit**, and press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetServicesDynamics Server6.0**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Services\Dynamics Server\6.0**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
@@ -94,7 +94,7 @@ To grant access to collect data from the Windows registry on a server that hosts
 </thead>
 <tbody>
 <tr class="odd">
-<td>As you are configuring rights in the registry, do not reduce account privileges that already exist.For more information about Advanced security settings, see:
+<td>As you are configuring rights in the registry, do not reduce account privileges that already exist. For more information about Advanced security settings, see:
 <ul>
 <li><a href="http://technet.microsoft.com/en-us/library/jj134043.aspx">Windows Server 2012 Access Control and Authorization Overview</a></li>
 <li><a href="http://technet.microsoft.com/en-us/library/cc730772.aspx">Windows Server 2008 R2 Advanced Security Settings Properties Page - Permissions Tab</a></li>
@@ -153,9 +153,9 @@ For more information, see [Securing a Remote WMI Connection](http://msdn.microso
 
 The service account must be able to read the data in the Microsoft Dynamics AX business database and must have access to the default dynamic management views in SQL Server.
 
-1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed.For information about how to perform this step, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).
-2.  Add the account as a user of the business database.For information about how to perform this step, see [How to: Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).
-3.  Add the service account to the db\_datareader role in the business database.For information about how to perform this step, see [Join a Role](http://msdn.microsoft.com/en-us/library/ff877886.aspx).
+1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed. For information about how to perform this step, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).
+2.  Add the account as a user of the business database. For information about how to perform this step, see [How to: Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).
+3.  Add the service account to the db\_datareader role in the business database. For information about how to perform this step, see [Join a Role](http://msdn.microsoft.com/en-us/library/ff877886.aspx).
 4.  Grant the service account the VIEW SERVER STATE permission in the SQL Server instance.
     1.  In SQL Server Management Studio, expand **Databases**, right-click the **Microsoft Dynamics AX** database, and then click **Properties**.
     2.  Click **Permissions**, and then click **View server permissions**.
@@ -173,7 +173,7 @@ To install the on-premises component of System diagnostics, you must be a member
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  Open a project and click the **System diagnostics** tile.
 3.  On the **Admin** page, download the compressed installer (**LCSDiagFX\_x64.zip.**).
-4.  Extract the installer to a computer that is running a Microsoft Dynamics AX client.The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.
+4.  Extract the installer to a computer that is running a Microsoft Dynamics AX client. The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.
 
     | **Important**                                                                                                                                                                                                      |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

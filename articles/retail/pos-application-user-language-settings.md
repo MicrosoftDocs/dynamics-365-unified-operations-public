@@ -18,7 +18,7 @@ ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
@@ -38,9 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.
 
-Overview
-========
-
+## Overview
 Retail Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.
 
 ## Data language

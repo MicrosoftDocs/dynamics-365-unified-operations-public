@@ -2,10 +2,10 @@
 # required metadata
 
 title: Continuous delivery home page
-description: These topics describe tools and guidelines related to continuous delivery of your solution.
+description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/15/2017
+ms.date: 02/13/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
@@ -57,4 +57,8 @@ FAQ and guidelines
 - [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
-- [Servicing environments](..\dev-tools\developer-home-page.md#service-environments)
+- [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
+- [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
+- [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
+- [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
+- [Updating the Visual Studio development tools](update-development-tools.md)

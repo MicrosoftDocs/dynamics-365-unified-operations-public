@@ -2,10 +2,10 @@
 # required metadata
 
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
-description: This article provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Microsoft Dynamics 365 for Finance and Operations makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders). 
+description: This topic provides information about mixed mode planning. 
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Microsoft Dynamics 365 for Finance and Operations makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders). 
+This topic provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Microsoft Dynamics 365 for Finance and Operations makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders). 
 
 You can select your overall strategy for supplying a product, regardless of the product structure.  
 
@@ -62,7 +62,7 @@ Typically, kanbans aren't created for future dates, because a kanban has a short
 
 The same logic is present for all other supply policy types. Therefore, long-term materials planning is based on the same logic that you expect to run with the actual orders after production and supply are approved.
 
-## Materials allocation crosssupply policy – Resource consumption on BOMs
+## Materials allocation cross-supply policy – Resource consumption on BOMs
 Resource consumption is an important functionality. Resource consumption enables a warehouse for picking materials to be selected dynamically, based on the supply policy (order type), and also makes maintenance of base data easier.  
 
 Resource consumption requires that the warehouse that materials are picked from be assigned based on the way that the product is supplied. In other words, at run time, the system finds the resources that should be used for manufacturing. Based on those resources, the system then finds the picking warehouse.  
