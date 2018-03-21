@@ -92,9 +92,9 @@ Use the following guidance when determining which PowerApps environment to deplo
  >  **Test Drive environments** Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
    
  >  **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, or Australia.
-   
- > 6.	There is no specific action to take once you have determined the correct environment to use. Continue with the provisioning process.
-
+  
+6. There is no specific action to take once you have determined the correct environment to use. Continue with the provisioning process. 
+ 
 ## Create a new PowerApps environment (if required)
 
 Run a PowerShell script to create a new PowerApps environment for Talent in the context of the tenant admin that has the PowerApps Plan 2 license. The script automates the following steps:
@@ -112,9 +112,9 @@ Complete the following instructions to run the script:
 > 3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
 
   > Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
- 
-> 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
+  > 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
+ 
 > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation
 
     Note the following when creating a new PowerApps environment: 
@@ -125,8 +125,7 @@ Complete the following instructions to run the script:
 
   > **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
 
-
-> 5. Continue with the provisioning process. 
+> 5. Continue with the provisioning process.
  
 
 
