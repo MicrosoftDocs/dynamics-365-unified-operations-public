@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
+Once you have successfully completed upgrade testing in a Standard or Premier Acceptance Test environment (Sandbox Tier2 or higher), and you have also completed a successful test cutover, the moment has arrived to upgrade your production environment and go live.
+
 *Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. Before you plan your final cutover, you need to successfully complete one successful mock cutover as described in [Cutover testing](./upgrade-cutover-testing.md)
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
@@ -46,16 +48,27 @@ The following illustration shows the overall process for cutover to go-live as i
 
 These are the high-level steps of the production environment upgrade process.
 
-1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a final cutover.
+1.	Submit an **Other type** service request through LCS to notify the Microsoft Service Engineering (DSE) team of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a final cutover.
     - Make sure you have already completed a successful mock cutover.
     - Mock cutovers requests are subject to availability of the DSE team, please plan ahead.
 2.  Turn of AX 2012 AOS instances.
 3.	Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-5.	Upload the bacpac file to the AOS machine.
+5.	Upload the bacpac file.
 6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. 
 7.	Notify the Microsoft DSE team that your database is ready for upgrade – they will copy the imported database from sandbox to the production environment.
 8.	Microsoft DSE team will run the data upgrade against the imported database.
 9.	Microsoft DSE team will notify you once the data upgrade is complete – at this point you can log in and complete any functional configuration tasks required post-upgrade before you allow the end users back into the new system.
 
-The next sections contain more details.
+The steps above resemble the steps you have performed during the mock cutover, refer to [Cutover testing](./upgrade-cutover-testing.md) for detailed instructions.
+
+## Prerequisites 
+Before you can perform an upgrade in the production environment the following prerequisites must be met:
+-	Complete the code upgrade and data upgrade in a sandbox environment and successfully completed a functional test pass
+-	Deploy the production environment
+     - Before the option to request the deployment of the production environment lights up you must have completed:
+         - The subscription estimator in LCS. We use this to help us size your production environment as it provides details of the throughput you’ll require.
+         - The Test phase of the methodology in LCS. This is to help ensure that you’re at the stage in your project where you’re ready to start testing in the production environment.
+     - You can then submit the request to deploy the production environment. The production environment will take roughly 24 hours to deploy, so ensure you leave enough time for this to happen.
+-	Apply all necessary updates and customizations (AOT deployable packages) to the production environment.
+-	Work with your Microsoft Solution Architect to schedule your upgrade. To schedule an upgrade, request a timeslot with the DSE team by submitting “other” type service requests from LCS. This is to ensure that the preferred timeslots will be available for you. Be aware that there is significantly higher demand for slots during the weekend, so requesting these as far in advance as possible will help attain your preferred schedule.
