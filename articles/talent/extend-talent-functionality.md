@@ -40,15 +40,13 @@ Use the **Set embedded Microsoft PowerApps** page to configure Talent pages to s
 
 The following information is entered or set on this page: 
 
-> -	A descriptive name or identifier for each PowerApps application.
-> -	A unique identifier (GUID) for each application that you add to a Talent page. The app ID is available on the PowerApps site, [powerapps.com](http://powerapps.com/). 
-> -	The page from which users can open an application or report. Not all Talent pages support embedded PowerApps and Power BI reports. 
-
+ -	A descriptive name or identifier for each PowerApps application.
+ -	A unique identifier (GUID) for each application that you add to a Talent page. The app ID is available on the PowerApps site, [powerapps.com](http://powerapps.com/). 
+ -	The page from which users can open an application or report. Not all Talent pages support embedded PowerApps and Power BI reports. 
  > [!NOTE]
  >  Enter the internal name of the page, rather than the display name that appears at the top of the page. To find the internal name, open the page that you need the internal name of, and right-click anywhere on the page. When the menu opens, hover over the **Form information** item. The internal form name is displayed next to the **Form information** item in the menu.
- 
-> -	Specify the form control from which the application can retrieve context data. For example, an application might use data about a worker. If you enter the **Worker** page in the **Context** field, the **Worker** page will open when you start the application. An entry in the **Context field** is optional. 
-> -	Set the size of the dialog box on which the PowerApps application will run. The dialog boxes are designated as “small” or “large” to optimize the user interface when your application for running on a phone or a larger device, respectively. 
+-	Specify the form control from which the application can retrieve context data. For example, an application might use data about a worker. If you enter the **Worker** page in the **Context** field, the **Worker** page will open when you start the application. An entry in the **Context field** is optional. 
+-	Set the size of the dialog box on which the PowerApps application will run. The dialog boxes are designated as “small” or “large” to optimize the user interface when your application for running on a phone or a larger device, respectively. 
 
 You can also specify which legal entities an application will be available for, or you can make it available to all your legal entities. By default, your PowerApps applications are available to all legal entities.
 
