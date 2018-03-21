@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent March 2018 update
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for Talent includes Core HR capabilities and functionality that provides additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application through web-direct (e.g. Dynamics 365 for Talent: Attract or Dynamics 365 for Talent: Onboard SKUs). There are some experience differences when purchasing full Talent vs. the modular applications.  
+Dynamics 365 for Talent includes core human resources capabilities and functionality that provide additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application through web-direct (for example, Dynamics 365 for Talent: Attract or Dynamics 365 for Talent: Onboard SKUs). There are some experience differences when purchasing full Talent versus the modular applications.  
 
 Modular applications will automatically provision upon initiation of a trial or purchase of the services through web-direct. Lifecycle Services (LCS), which is used to provision Dynamics 365 for Talent, is not used with the modular applications. Customers can sign up for a trial for Attract or Onboard independently.
 
@@ -46,6 +46,6 @@ Customers do not select specifically where their modular applications will provi
 
 Modular applications will provision only in supported geographies (as defined in the Microsoft Trust Center for Talent data transparency), according to the logic below: 
 
-[Modular applications available for Talent](./media/modular-apps-diagram-mod-app-tech.png)
+[![Geographies for modular applications](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 Unlike Dynamics 365 for Talent, the modular applications do not maintain a list of environments accessible by each user. When using the modular applications service users, will automatically log into the last environment used, and can select alternate environments through the gear menu. 
