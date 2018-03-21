@@ -18,7 +18,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
+,# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -57,7 +57,7 @@ To import vendor catalog data, you must complete the following tasks:
 
 2.  Set up a procurement category hierarchy, and assign your vendors to
     procurement categories. If you use commodity codes, add the commodity codes
-    to the procurement categories. For information about setting up a procurement category, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
+    to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
 
 3.  Configure the vendor for catalog import.
 
@@ -70,18 +70,16 @@ To import vendor catalog data, you must complete the following tasks:
 
 7.  Upload the CMR file.
 
-8.  Review, approve, or reject the products in the vendor catalog. Details that
-    can be reviewed include the product name, description, pricing, or order
-    quantity requirements. Approved products are added to the product master and
-    are released to the selected legal entities. Only approved products can be
-    added to the procurement catalog. The products are now automatically mapped
-    to the procurement categories in AX.
+8.  Review, approve, or reject the products in the vendor catalog. The products are  automatically mapped
+    to the procurement categories in Dynamics 365 for Finance and Operations. 
+    
+Approved products are added to the product master and are released to the selected legal entities. Only approved products can be added to the procurement catalog.
 
-Generate a catalog import file template
+## Generate a catalog import file template
 
 The catalog import file template is an industry-standard XSD file that you use
 to create a CMR file for a vendor’s products. You can use the CMR file to create
-a new catalog, replace an existing catalog, or modify an existing catalog.
+a new catalog, replace an existing catalog, or to modify an existing catalog.
 
 1.  Click **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
     catalogs**.
