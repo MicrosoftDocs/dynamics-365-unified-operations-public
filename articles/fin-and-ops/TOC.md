@@ -633,8 +633,8 @@
 
 ##### [India GST](../financials/localizations/apac-ind-gst.md)
 ###### [India GST reference groups](../financials/localizations/apac-ind-gst-reference-groups.md)
-###### [GST integration for cash registers](../retail/localizations/apac-ind-cash-registers.md)
-##### [Deployment guidelines for cash registers](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
+###### [GST integration for cash registers](../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json)
+##### [Deployment guidelines for cash registers](../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json)
 ##### [Tax engine overview](../financials/general-ledger/tax-engine.md)
 ###### [Tax engine integration](../financials/general-ledger/tax-engine-integration.md)
 ###### [Extending the Tax engine](../financials/general-ledger/extend-tax-engine-configurations.md)
@@ -907,8 +907,8 @@
 ##### [Customer payment based on payment ID](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Nets import format](../financials/localizations/emea-nor-nets-import-format.md)
 ##### [VAT statement](../financials/localizations/emea-nor-sales-tax-payment-report.md)
-##### [Cash registers](../retail/localizations/emea-nor-cash-registers.md)
-##### [Deployment guidelines for cash registers](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+##### [Cash registers](../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json)
+##### [Deployment guidelines for cash registers](../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json)
 
 #### Poland
 ##### [Calculate line discounts from the unit price](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
@@ -936,7 +936,7 @@
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
 ##### [Import payment formats](../financials/localizations/emea-swe-payment-formats-import.md)
-##### [Cash registers](../retail/localizations/emea-swe-cash-registers.md)
+##### [Cash registers](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Switzerland
 ##### [Import customer payments in ESR](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### United Kingdom
