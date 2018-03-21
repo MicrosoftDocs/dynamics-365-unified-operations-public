@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create exchange rate providers
+title: Create exchange rate providers in Dynamics 365 for Finance and Operations, version 8.0.
 description: This article describes how to set up an exchange rate provider in Dynamics 365 for Finance and Operations, version 8.0. 
 author: aolson
 manager: AnnBe
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# Create exchange rate providers
+# Create exchange rate providers in Dynamics 365 for Finance and Operations, version 8.0.
 
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to set up an exchange rate provider. 
+This article describes how to set up an exchange rate provider in Dynamics 365 for Finance and Operations, version 8.0. 
 
 This article describes the steps that are required in order to set up an exchange rate provider. For the purpose of illustration, the 
 OANDA exchange rate service is used throughout this article. By following the steps that are described in this article, you will create 
