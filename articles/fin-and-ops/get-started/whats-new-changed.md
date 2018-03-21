@@ -34,6 +34,11 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include[banner](../includes/banner.md)]
 
+This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
+For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+
+
 > [!IMPORTANT]
 > **Announcing the Dynamics 365 Spring '18 release notes**
 >
@@ -46,11 +51,6 @@ ms.dyn365.ops.version: Platform update 2
 > * Platform advancements that deliver an unmatched palette of tools to customize and extend Dynamics 365
 > 
 > **Coming soon**: We'll keep updating the Release notes PDF as features ship, and will also make them available on a web page. 
-
-This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-
-For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
-
 
 ## Application releases
 
