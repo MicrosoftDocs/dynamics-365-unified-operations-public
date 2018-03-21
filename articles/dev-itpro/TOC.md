@@ -2,7 +2,7 @@
 # [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
 # [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
 # [Demo data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
-### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
+## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
 # [Develop and customize using Visual Studio](dev-tools/developer-home-page.md)
