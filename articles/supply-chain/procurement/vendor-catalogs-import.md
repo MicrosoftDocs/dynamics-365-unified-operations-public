@@ -42,7 +42,7 @@ catalog data or by manually adding the product catalog data to the product maste
 
 You can upload catalog data submitted by a vendor from the Microsoft Dynamics 365 client.
 
-The product data that the vendor submits to you, in the form of a catalog
+The product data that a vendor submits to you, in the form of a catalog
 maintenance request (CMR) file, must be in XML file format. The CMR file should
 contain all of the details for the products that the vendor supplies to your
 company.
@@ -52,12 +52,12 @@ Importing vendor catalog data
 
 To import vendor catalog data, you must complete the following tasks:
 
-1.  Set up a project in data management workspace. Here you have to define your
-    data mapping rules.
+1.  Set up a project in the Data management workspace where you have define your
+    data mapping rules: Select **Data management** and then select **Set up roles for data projects**. 
 
 2.  Set up a procurement category hierarchy, and assign your vendors to
     procurement categories. If you use commodity codes, add the commodity codes
-    to the procurement categories.
+    to the procurement categories. For information about setting up a procurement category, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
 
 3.  Configure the vendor for catalog import.
 
