@@ -2,10 +2,10 @@
 # required metadata
 
 title: Dynamics AX 2012 features that were postponed
-description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. 
+description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
 manager: AnnBe
-ms.date: 02/23/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <tr class="header">
 <th>AX 2012 feature that was postponed</th>
 <th>Description</th>
-<th>Current status (as of March 2018)
+<th>Current status (as of April 2018)
 </tr>
 </thead>
 <tbody>
