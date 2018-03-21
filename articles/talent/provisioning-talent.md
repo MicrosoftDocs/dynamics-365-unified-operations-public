@@ -82,16 +82,16 @@ Use the following guidance when determining which PowerApps environment to deplo
  > 4.	Data integration and testing strategies should be considered, for example: Sandbox, UAT, Production. Therefore, we recommend that you consider the various implications for your deployment, because it isn't easy to change which Talent environment is mapped to a PowerApps environment later.
  > 5.	The following PowerApps environments cannot be used for Talent and will be filtered from the selection list within LCS:
  
-    **CDS 2.0 Environments** CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option to use CDS 2.0 Environments in Talent deployments will be available at a later date.
+   **CDS 2.0 Environments** CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option to use CDS 2.0 Environments in Talent deployments will be available at a later date.
    
  >[!Note]
  >You can't easily determine the difference between CDS 1.0 and CDS 2.0 environments in the administration portal. Environments with a created date on or after March 21, 2018 (3/21/2018) are likely CDS 2.0 environments.
  
-    **Default Power Apps environments** Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
+ >  **Default Power Apps environments** Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
    
-    **Test Drive environments** Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+ >  **Test Drive environments** Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
    
-    **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, or Australia.
+ >  **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, or Australia.
    
  > 6.	There is no specific action to take once you have determined the correct environment to use. Continue with the provisioning process.
 
@@ -109,19 +109,19 @@ Complete the following instructions to run the script:
 > 2. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder.
 > 3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
 
-    Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
+  > Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
  
 > 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
-    .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
+ > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
 
     Note the following when creating a new PowerApps environment: 
  
-    **EnvironmentName** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
+  > **EnvironmentName** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
 
-    **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
+  > **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
 
-    **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
+  > **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
 
 
 > 5. Continue with the provisioning process. 
