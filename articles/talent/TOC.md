@@ -3,6 +3,7 @@
 # [Getting started](talent-get-started.md)
 ## [System requirements and update policy](talent-versions-update-policy.md)
 ## [Provision Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
 
 # [Develop a human resources strategy](departments-jobs-positions.md)
