@@ -55,72 +55,31 @@ This landing page provides links to relevant documentation and videos related to
 <!-- Links to documents are being added below - not all have actual branches or completed documents - these need to be created - hhaines -->   
 
 ## Configure the Call Center
-[Define Call Center Channels](../blob/master/xxx)
 
 ## Configure Order Processing Features
-[Scripts](../blob/master/xxx)
 
-[Upsell-Cross-Sell](../blob/master/xxx)
-
-[Price Overrides](../blob/master/xxx)
 
 [Fraud Holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts)
 
 [Manual Order Holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds)
 
-[Return Orders](../blob/master/xxx)
-
-[Email Notifications](../blob/master/xxx)
-
-[Postage/Shipping and Handling Charges](../blob/master/xxx)
-
 ## Configure Payment Processing
 [Payment Methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments)
 
-[Call Center Credit Card Processing](../blob/master/xxx)
-
-[Payment Controls](../blob/master/xxx)
-
-[Installment Billing](../blob/master/xxx)
-
 
 ## Configure Direct Marketing Features
-[Catalogs and Source Code ID's](hhttps://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs)
+[Catalogs and Source Codes](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs)
 
 [RFM Scoring](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-rfm-analysis)
 
 
 ## Call Center Execution
-[Basic Sales Order Processing](../blob/master/xxx)
 
-[Utlizing Catalog Source Codes in Order Entry](../blob/master/xxx)
-
-[Price Match](../blob/master/xxx)
-
-[Managing Payment Issues](../blob/master/xxx)
-
-[Customer Merge](../blob/master/xxx)
-
-[Customer Service](../blob/master/xxx)
-
-[Searching for Customer and Products](../blob/master/xxx)
-
-[Expedited Order Management](../blob/master/xxx)
-
-[Creating a Return Order](../blob/master/xxx)
-
-[Creating a Return with Replacement Order](../blob/master/xxx)
 
 ## Call Center Analysis
-[Operational Reports](../blob/master/xxx)
 
-[Analysis](../blob/master/xxx)
 
 
 ## Configure Continuity Programs
 [Continuity Program Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-continuity-program)
-
-[Sell Continuity Items](../blob/master/xxx)
-
-[Process and Manage Continuity Orders](../blob/master/xxx)
 
