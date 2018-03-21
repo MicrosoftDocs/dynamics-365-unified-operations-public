@@ -75,16 +75,16 @@ The integration between Talent and the PowerApps environments lets you integrate
 
 Although each tenant is automatically provisioned in a Default PowerApps environment, that environment might not be the best environment for your Talent deployment. Data integration and testing strategies should be considered during this step. Therefore, we recommend that you consider the various implications for your deployment, because it isn't easy to change the PowerApps environment later.
 
-1. In LCS, select **Manage environments**. You're taken to the [PowerApps Admin center](https://preview.admin.powerapps.com/environments), where you can view existing environments and create new environments.
-2. Select **New environment**.
-3. Enter a unique name for the environment, and select the location to deploy to.
+> 1. In LCS, select **Manage environments**. You're taken to the [PowerApps Admin center](https://preview.admin.powerapps.com/environments), where you can view existing environments and create new environments.
+> 2. Select **New environment**.
+> 3. Enter a unique name for the environment, and select the location to deploy to.
 
     > [!NOTE]
     > Talent isn't available in all regions. Therefore, be sure to check for availability before you select the location for your environment.
 
-4. When you're asked whether you want to create a database, select **Create database** to create the Common Data Service (CDS) database that must host part of your Talent data. By creating a database, you can also integrate PowerApps applications with Talent.
-5. You're asked about the access level to use for the database. We recommend that you select **Restrict access**, because this option prevents Talent users from directly accessing sensitive data by using a PowerApps application.
-6. The CDS database that is created contains demo data that adds inactive employees and fictitious addresses, among other information, to your production environment. To remove the demo data, follow these steps after you've finished creating the CDS database:
+> 4. When you're asked whether you want to create a database, select **Create database** to create the Common Data Service (CDS) database that must host part of your Talent data. By creating a database, you can also integrate PowerApps applications with Talent.
+> 5. You're asked about the access level to use for the database. We recommend that you select **Restrict access**, because this option prevents Talent users from directly accessing sensitive data by using a PowerApps application.
+> 6. The CDS database that is created contains demo data that adds inactive employees and fictitious addresses, among other information, to your production environment. To remove the demo data, follow these steps after you've finished creating the CDS database:
 
     > [!IMPORTANT]
     > If you previously created a CDS database and entered any of your company's production data into it, these steps remove **all** the data in the selected database, even your company's production data.
