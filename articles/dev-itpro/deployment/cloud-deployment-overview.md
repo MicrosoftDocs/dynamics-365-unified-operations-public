@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview 
-description: Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in the cloud.
+title: Cloud deployment overview  
+description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview
+# Cloud deployment overview for Microsoft Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
  

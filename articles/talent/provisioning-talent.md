@@ -99,9 +99,11 @@ Use the following guidance when determining which PowerApps environment to deplo
 
 Run a PowerShell script to create a new PowerApps environment for Talent in the context of the tenant admin that has the PowerApps Plan 2 license. The script automates the following steps:
 
+
 > + Creation of a PowerApps environment
 > + Creation of a CDS 1.0 database
 > + Clear all sample data in the CDS 1.0 database
+
 
 Complete the following instructions to run the script:
 
