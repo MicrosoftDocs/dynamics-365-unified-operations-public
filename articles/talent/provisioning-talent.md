@@ -53,7 +53,7 @@ After you've created an LCS project, you can provision Talent into an environmen
 
 1. In your LCS project, select the **Talent App Management** tile.
 2. Talent is always provisioned into a Microsoft PowerApps environment, to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. 
-3. Select **Add**, and then select the environment to provision Talent into.
+3. If you don't already have a PowerApps environment, follow the steps in the "Create a new PowerApps environment (if required)" section of this topic before you continue.
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/en-us/pricing/).
@@ -81,14 +81,18 @@ Use the following guidance when determining which PowerApps environment to deplo
  > 3.	A PowerApps environment “contains” the Talent application, along with the corresponding PowerApps, Flow, and CDS applications. If the PowerApps environment is deleted, so are the apps within it.
  > 4.	Data integration and testing strategies should be considered, for example: Sandbox, UAT, Production. Therefore, we recommend that you consider the various implications for your deployment, because it isn't easy to change which Talent environment is mapped to a PowerApps environment later.
  > 5.	The following PowerApps environments cannot be used for Talent and will be filtered from the selection list within LCS:
-   - a.	**CDS 2.0 Environments** - CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option CDS 2.0 Environments in Talent deployments will be available at a later date.
+ 
+   a.	**CDS 2.0 Environments** - CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option to use CDS 2.0 Environments in Talent deployments will be available at a later date.
    
  >[!Note]
  >You can't easily determine the difference between CDS 1.0 and CDS 2.0 environments in the administration portal. Environments with a created date on or after March 21, 2018 (3/21/2018) are likely CDS 2.0 environments.
  
-   - b.	**Default Power Apps environments** - Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
-   - c.	**Test Drive environments** - Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
-   - d.	**Unsupported regions** – Currently Talent is only supported in the following regions: United States, Europe, or Australia.
+   b.	**Default Power Apps environments** - Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
+   
+   c.	**Test Drive environments** - Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+   
+   d.	**Unsupported regions** – Currently Talent is only supported in the following regions: United States, Europe, or Australia.
+   
  > 6.	There is no specific action to take once you have determined the correct environment to use. Continue with the provisioning process.
 
 ## Create a new PowerApps environment (if required)
@@ -109,7 +113,7 @@ Complete the following instructions to run the script:
  
 > 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
-> .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
+  > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
 
 Note the following when creating a new PowerApps environment: 
  
