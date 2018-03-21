@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Impairment accounting for fixed assets
+title: Impairment accounting for fixed assets for Japan
 description: This topic includes information about impairment accounting for fixed assets in Japan.
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -29,10 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Impairment accounting for fixed assets
+# Impairment accounting for fixed assets for Japan
 
 [!include[banner](../includes/banner.md)]
-
 
 This topic includes information about impairment accounting for fixed assets in Japan.
 
