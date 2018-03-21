@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,6 +54,7 @@ Check out the following series of how-to videos that show how to create a mobile
 
 ## Common configurations
 These topics describe some common customizations that you can add to your mobile app.
+
 + [Localize mobile workspaces](scenarios/localize-workspaces-on-server.md)
 + [Help secure mobile workspaces](scenarios/secure-mobile-workspace.md)
 + [Set up clickable fields](scenarios/make-workspace-field-clickable.md)
