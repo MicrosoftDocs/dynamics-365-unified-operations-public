@@ -38,13 +38,7 @@ This page points you to resources that can help you learn about the new features
 >
 > Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 > 
-> [Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. Learn about:
->
-> * New capabilities and intelligence in our business apps, plus an all-new marketing app to take lead generation to the next level
-> * Deeper integrations with Microsoft Outlook, SharePoint, Stream, Azure, LinkedIn, Office 365, Bing, and more
-> * Platform advancements that deliver an unmatched palette of tools to customize and extend Dynamics 365
-> 
-> **Coming soon**: We'll keep updating the Release notes PDF as features ship, and will also make them available on a web page. 
+> [Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. 
 
 ## Releases of Dynamics 365 for Retail
 
