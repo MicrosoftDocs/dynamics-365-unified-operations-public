@@ -1,3 +1,36 @@
+---
+# required metadata
+
+title: Import vendor catalogs
+description: This topic describes the process to import vendor catalog data.
+author: mkirknel
+manager: AnnBe
+ms.date: 03/20/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: VendProspectiveVendorRegistrationRequests  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mkirknel
+ms.search.validFrom: 2018-04-20 
+ms.dyn365.ops.version: 7.3
+---
+
+# Onboard vendors
+[!include[banner](../includes/banner.md)]
+---
+
 Vendor catalogs import
 ======================
 
