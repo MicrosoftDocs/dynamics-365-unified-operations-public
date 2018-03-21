@@ -56,7 +56,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Alerts help users keep track of data changes in the system.</td>
-<td>Implemented in Dynamics 365 for Finance and Operations platform update 15.</td>
+<td>Implemented in Microsoft Dynamics 365 for Finance and Operations platform update 15.</td>
 </tr>
 <tr class="even">
 <td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
