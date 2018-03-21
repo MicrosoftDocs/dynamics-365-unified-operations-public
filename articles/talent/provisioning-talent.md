@@ -113,7 +113,7 @@ Complete the following instructions to run the script:
  
 > 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
- > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
+ > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation
 
     Note the following when creating a new PowerApps environment: 
  
