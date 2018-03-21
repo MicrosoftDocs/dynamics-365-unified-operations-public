@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Depreciation methods for fixed assets
+# Fixed assets depreciation methods for China
 
 [!include[banner](../includes/banner.md)]
 
