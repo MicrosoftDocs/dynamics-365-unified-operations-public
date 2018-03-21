@@ -73,7 +73,7 @@ After you've created an LCS project, you can provision Talent into an environmen
 
 ## Select a PowerApps environment
 
-The integration between Talent and the PowerApps environments lets you integrate and extend the use of Talent data using PowerApps tools. Understanding the purpose of PowerApps environments will not only help you build apps to extend Talent, but also can also help you select the correct environment when provisioning Talent. For information about PowerApps environments, including environment scope, environment access, and creating and choosing an environment, see Announcing PowerApps environments. 
+The integration between Talent and the PowerApps environments lets you integrate and extend the use of Talent data using PowerApps tools. Understanding the purpose of PowerApps environments will not only help you build apps to extend Talent, but also can also help you select the correct environment when provisioning Talent. For information about PowerApps environments, including environment scope, environment access, and creating and choosing an environment, see [Announcing PowerApps environments](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
 
 Use the following guidance when determining which PowerApps environment to deploy Talent into: 
  > 1.	In LCS, select Manage environments, or navigate directly to the PowerApps Admin center , where you can view existing environments and create new environments.
