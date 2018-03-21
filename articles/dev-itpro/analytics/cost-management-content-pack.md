@@ -171,7 +171,7 @@ The following tables provide an overview of the visualizations in the **Cost man
 
 ### Understanding the data model and entities
 
-Data from Microsoft Dynamics 365 for Finance and Operations is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
+Data from Microsoft Dynamics 365 for Finance and Operations is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
 
 The key aggregate measurements of the following objects are used as the basis of the Power BI content.
 
