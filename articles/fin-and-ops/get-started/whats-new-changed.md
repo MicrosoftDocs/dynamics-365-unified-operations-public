@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,6 +33,19 @@ ms.dyn365.ops.version: Platform update 2
 # What's new or changed
 
 [!include[banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> **Announcing the Dynamics 365 Spring '18 release notes**
+>
+> Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
+> 
+> [Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. Learn about:
+>
+> * New capabilities and intelligence in our business apps, plus an all-new marketing app to take lead generation to the next level
+> * Deeper integrations with Microsoft Outlook, SharePoint, Stream, Azure, LinkedIn, Office 365, Bing, and more
+> * Platform advancements that deliver an unmatched palette of tools to customize and extend Dynamics 365
+> 
+> **Coming soon**: We'll keep updating the Release notes PDF as features ship, and will also make them available on a web page. 
 
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
