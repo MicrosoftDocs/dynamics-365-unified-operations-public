@@ -97,5 +97,4 @@ a new catalog, replace an existing catalog, or to modify an existing catalog.
 In the **Save as** dialog box, select the location where you want to store the
 catalog file template and save the file
 
-For more information about how to [set up system etc.] and for examples, see
-[reference blog post]
+For more information and for examples, refer to this blog post: [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
