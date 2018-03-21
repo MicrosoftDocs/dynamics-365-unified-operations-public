@@ -105,7 +105,7 @@ Run a PowerShell script to create a new PowerApps environment for Talent in the 
 
 Complete the following instructions to run the script:
 
-> 1. Download the ProvisionCDSEnvironment.zip file from the following location: <*Let me know where this should go*> 
+> 1. Download the ProvisionCDSEnvironment.zip file from the following location: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
 > 2. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder.
 > 3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
 
