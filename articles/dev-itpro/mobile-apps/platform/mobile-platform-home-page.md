@@ -62,7 +62,7 @@ These topics describe some common customizations that you can add to your mobile
 
 ## Client-side development
 
-Client-side APIs are used in the business logic file, which provides an extensibility layer to the mobile workspace that allows for customization. Some things that you can access through the client-side APIs include:
+Client-side APIs are used in the business logic file, which provides an extensibility layer to the mobile workspace that allows for customization. Some things that you can access and influence through the client-side APIs include:
 + Metadata
 + Runtime control/page instances
 + Business data
@@ -78,11 +78,52 @@ You can download a sample business logic file (a .js file) for the Reservation m
 
 ## Server-side development
 
-Workspace attributes and classes are used to create, configure, and publish workspaces on the server. Server-side development is described in these topics:
+Workspace attributes and classes are used to create, configure, and publish workspaces on the server. These server-side X++ APIs can be used instead of using the task-recorder-based mechanism to build up a workspace. Workspaces created using either mechanism can then be styled and augmented using the client-side APIs.  
+Server-side development is described in these topics:
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (X++)](mobile-workspace-server-apis.md)
 
 You can download the sample project (an .axpp file) for the Fleet Management mobile app. Go to from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) and download the **FMMobileApp.axpp** file.
+
+## Debugging during development
+
+During development it can be useful to attach a debugger to get more detailed information and insight into what is happening in the background to deliver the observed user experience. A web debugger can be used with the client-side JavaScript logic and styling and the Visual Studio debugger can be used with the server-side X++ business logic.
+
+### Debugging client-side 
+
+#### Pre-requisites
+- Android device plus PC (recommended) or iOS device plus Mac
+- Azure-hosted development machine (so the mobile device can point at it)
+
+#### Steps to debug client-side
+1. Publish: From the Web Client exposed by the Azure-hosted development machine, ensure there are Mobile Client workspaces published for the Unified Operations app. 
+2. Open app: Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in
+3. Connect debugger: Connect to the device from the debugging machine
+    - For Android devices, on the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). If a video walkthrough is desired, there is a wide selection available in YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
+    - For iOS devices, you will connect to your iOS device using Safari running on a Mac.
+4. Find source: Once you connect the debugger, find the active tab on your device. You may need to click "View more tabs" on Android. One of the tabs should look similar to /www/index.html#/app/appList or /www/index.html#/app/app_landing. Expand nodes to find the workspace JavaScript e.g. File > (no domain) > ExpenseMobile.js. Click on the JavaScript file to to view it and add breakpoints. 
+5. Reflect: Reflect the mobile device on your desktop, so you can interact with it on the desktop screen. 
+6. Navigate: Navigate through the desired workspace and forms.
+7. Debug: When breakpoints are encountered then the browser developer tools will allow you to control the flow of execution and see the values and parameters being passed around. 
+8. Restyle: To change styling at runtime, use the elements tab to alter the styling. This will help you determine what elements JavaScript should target and how those elements should be styled.
+9. Change: Once a needed change is identified, make those changes in JavaScript, and push those changes into the environment.
+10. Repeat: If more changes or validation is needed, repeat the process.
+
+### Debugging server-side
+
+#### Pre-requisites
+- Azure-hosted development machine (so the mobile device can point at it)
+
+#### Steps to debug server-side
+1. Publish: From the Web Client exposed by the Azure-hosted development machine, ensure there are Mobile Client workspaces published for the Unified Operations app. 
+2. Open app: Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign 
+3. Connect debugger: Open Visual Studio on the Azure-hosted development machine and attach the debugger to the w3wp process.
+4. Find source: Once you connect the debugger, find the desired business logic, and insert breakpoints as needed.
+5. View: Either use the app on your device as normal, or reflect the mobile device on your desktop so you can interact with it on the desktop screen. 
+6. Navigate: Navigate through the desired workspace and forms.
+7. Debug: When breakpoints are encountered then Visual Studio will allow you to control the flow of execution and see the values and parameters being passed around. 
+8. Change: Once a needed change is identified, make those changes in X++, and push those changes into the environment.
+9. Repeat: If more changes or validation is needed, repeat the process.
 
 ## Additional resources
 ### What's new and in development
