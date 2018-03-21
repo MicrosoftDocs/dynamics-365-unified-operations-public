@@ -17,8 +17,7 @@ ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, Operations
-,# ms.tgt_pltfrm: 
+ms.search.scope: Core, Operations,# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -59,14 +58,15 @@ To import vendor catalog data, you must complete the following tasks:
     procurement categories. If you use commodity codes, add the commodity codes
     to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
 
-3.  Configure the vendor for catalog import.
+3.  Configure the vendor for catalog import.**NB: Where or how?**
 
-4.  Configure workflow for catalog import.
+4.  Configure workflow for catalog import. **NB: Where or how?**
 
 5.  Create a CMR file template and share this with your vendor.
 
-6.  Create a vendor catalog. The catalog maintenance request (CMR) files that
-    you receive from your vendor are grouped in this catalog.
+6.  Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
+    catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that
+    you receive from your vendor are grouped in this catalog 
 
 7.  Upload the CMR file.
 
@@ -81,10 +81,8 @@ The catalog import file template is an industry-standard XSD file that you use
 to create a CMR file for a vendor’s products. You can use the CMR file to create
 a new catalog, replace an existing catalog, or to modify an existing catalog.
 
-1.  Click **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
-    catalogs**.
-
-2.  On the **Vendor catalogs** list page, double-click the catalog that you want
+1.  Select **Procurement and sourcing** \> **Catalogs** \> **Vendor
+    catalogs** and double-click the catalog that you want
     to work with.
 
 3.  To download a current catalog import template (XSD file), in the **Update
