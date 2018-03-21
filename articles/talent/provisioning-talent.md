@@ -81,44 +81,46 @@ Use the following guidance when determining which PowerApps environment to deplo
  > 3.	A PowerApps environment “contains” the Talent application, along with the corresponding PowerApps, Flow, and CDS applications. If the PowerApps environment is deleted, so are the apps within it.
  > 4.	Data integration and testing strategies should be considered, for example: Sandbox, UAT, Production. Therefore, we recommend that you consider the various implications for your deployment, because it isn't easy to change which Talent environment is mapped to a PowerApps environment later.
  > 5.	The following PowerApps environments cannot be used for Talent and will be filtered from the selection list within LCS:
-   - a.	**CDS 2.0 Environments** - CDS 2.0 will be made publicly available on 3/21/2018; however, Talent does not yet support CDS 2.0.  Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent.  This option will be available at a later date.
- > [!Note]
- > Presently you will not be able to easily determine the difference between CDS 1.0 and CDS 2.0 environments in the administration portal. Environments with a created date on or after 3/21/2018 are likely CDS 2.0 environments.
+   - a.	**CDS 2.0 Environments** - CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option CDS 2.0 Environments in Talent deployments will be available at a later date.
+   
+ >[!Note]
+ >You can't easily determine the difference between CDS 1.0 and CDS 2.0 environments in the administration portal. Environments with a created date on or after March 21, 2018 (3/21/2018) are likely CDS 2.0 environments.
  
-   - b.	**Default Power Apps environments** - Although each tenant is automatically provisioned with a Default PowerApps environment, it is not recommended for use with Talent since all tenant users have access and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
-   - c.	**Test Drive environments** - Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will eventually expire, causing your environment to be removed automatically.
-   - d.	**Unsupported regions** – Presently Talent is only supported in the following regions: United States, Europe, or Australia.
- > 6.	There is no specific action to take once you have determined the correct environment to use.  Continue with the provisioning process.
+   - b.	**Default Power Apps environments** - Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
+   - c.	**Test Drive environments** - Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+   - d.	**Unsupported regions** – Currently Talent is only supported in the following regions: United States, Europe, or Australia.
+ > 6.	There is no specific action to take once you have determined the correct environment to use. Continue with the provisioning process.
 
 ## Create a new PowerApps environment (if required)
 
-Creating a new PowerApps environment for Talent is achieved by running a PowerShell script in the context of the tenant admin that has the PowerApps Plan 2 license. The script automates the following steps:
-> 1. Creation of a PowerApps environment
-> 2. Creation of a CDS 1.0 database
-> 3. Clear all sample data in the CDS 1.0 database
+Run a PowerShell script to create a new PowerApps environment for Talent in the context of the tenant admin that has the PowerApps Plan 2 license. The script automates the following steps:
 
-Here are the instructions to run the script:
+> + Creation of a PowerApps environment
+> + Creation of a CDS 1.0 database
+> + Clear all sample data in the CDS 1.0 database
 
-> 1. Download the ProvisionCDSEnvironment.zip file from the following location: <Let me know where this should go> 
+Complete the following instructions to run the script:
+
+> 1. Download the ProvisionCDSEnvironment.zip file from the following location: <*Let me know where this should go*> 
 > 2. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder.
 > 3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
 
-
  > Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
  
-
 > 4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed in the note below:
   
 > .\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation [-Verbose]
 
- > [!Note]
- > **EnvironmentName** should be replaced with your environmental name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
+Note the following when creating a new PowerApps environment: 
+ 
+> **EnvironmentName** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
+
 > **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
-**-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
+
+> **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
 
 
-
- > 5. Continue with the provisioning process. 
+> 5. Continue with the provisioning process. 
  
 
 
