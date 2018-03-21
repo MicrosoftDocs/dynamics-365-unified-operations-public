@@ -47,7 +47,7 @@ The following illustration shows the overall process for cutover to go-live as i
 This cutover process differs from a basic data upgrade validation in a sandbox environment in the following ways:
 
 - The data upgrade process is performed on the production environment, this approach is faster.
-- Because the production environment for Finance and Operations has restricted access, some tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include running the data upgrade process.
+- Because the production environment for Finance and Operations has restricted access, some tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft Service Engineering (DSE) team. These tasks include running the data upgrade process.
 - We added the following tasks:
     - Perform a smoke test.
     - Complete application setup tasks. This step can be large, depending on the functionality that is used. During this step, the functional team configures new application functionality so that it's ready to be used in the upgraded system.
@@ -71,7 +71,7 @@ These are the high-level steps og the production environment upgrade process, cu
     - Make sure you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
     - Mock cutovers are performed during business hours, Monday to Thursday, in the US Pacific timezone.
 2.  Turn of AX 2012 AOS instances.
-3.	Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
+3.	Create a backup of the AX 2012 database.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 5.	Upload the bacpac file to the AOS machine.
 6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. 
@@ -95,9 +95,103 @@ The following areas should be validated:
 This task involves the DBA. The backup will be used if a rollback is required. It will also be used as a reference point that will be kept for a period and show the system state at the moment of cutover.
 
 The following areas should be validated:
-
 - Get concrete timings for the backup process.
 - Adjust the backup options that are used (for example, compression versus non-compression), to help guarantee the fastest possible backup.
+
+After the backup is created, run the following Transact-SQL (T-SQL) script against the original database.
+```
+    --remove NT users as these are not supported in Azure SQL Database
+    declare 
+    @SQL varchar(255),
+    @UserName varchar(255)
+
+    set quoted_identifier off
+
+    declare     userCursor CURSOR for
+    select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+
+    OPEN userCursor
+        FETCH userCursor into @UserName
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL = 'DROP USER [' + @UserName + ']'
+            exec(@SQL)
+            FETCH userCursor into @UserName
+          END
+    CLOSE userCursor
+    DEALLOCATE userCursor
+
+    go
+
+    --remove any AX 2012 RTM model store procedures that still exist
+    declare 
+    @SQL varchar(255),
+    @procname varchar(255)
+
+    set quoted_identifier off
+
+    declare     procCursor CURSOR for
+    select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+
+    OPEN procCursor
+        FETCH procCursor into @procname
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+            exec(@SQL)
+            FETCH procCursor into @procname
+          END
+    CLOSE procCursor
+    DEALLOCATE procCursor
+
+    go
+
+    --If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+    --Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+    --The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+
+        if exists (select 1 from sys.schemas where name = 'contoso\admin')
+    begin
+        drop schema [contoso\admin]
+    end
+    if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+    begin
+        drop schema [CONTOSO\Domain Users]
+    end
+    go
+    
+    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Database
+    declare 
+    @SQL2 varchar(255),
+    @ViewName varchar(255)
+
+    set quoted_identifier off
+
+    declare     viewCursor CURSOR for
+
+    select viewname = v.name
+    from sys.views v
+    order by v.name
+
+    OPEN viewCursor
+
+    FETCH viewCursor into @ViewName
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL2 = 'DROP VIEW ' + @ViewName
+            exec(@SQL2)
+            FETCH viewCursor into @ViewName
+          END
+    CLOSE viewCursor
+    DEALLOCATE viewCursor
+    go
+
+    -- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+    If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+    begin
+        drop procedure MaintainShipCarrierRole
+    end
+```
 
 ### Export the database to bacpac
 
