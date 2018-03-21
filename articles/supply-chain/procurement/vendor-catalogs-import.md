@@ -85,10 +85,10 @@ a new catalog, replace an existing catalog, or to modify an existing catalog.
     catalogs** and double-click the catalog that you want
     to work with.
 
-3.  To download a current catalog import template (XSD file), in the **Update
-    catalog** form, on the **Action Pane**, on the **Catalogs** tab, in the
+3.  Download a current catalog import template (XSD file): On the **Update
+    catalog** page, on the **Action Pane**, on the **Catalogs** tab, in the
     **Related information** group, click **Generate catalog template**. The only
-    available option is**:**
+    available option is **NB I cannot locate the Update catalog page, please provide path**
 
     -   **Procurement category** – Generate a catalog template that includes the
         procurement categories in which the vendor is authorized to provide
