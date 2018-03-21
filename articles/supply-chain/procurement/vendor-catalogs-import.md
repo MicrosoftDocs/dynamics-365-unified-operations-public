@@ -34,14 +34,13 @@ ms.dyn365.ops.version: 7.3
 Vendor catalogs import
 ======================
 
-In Microsoft Dynamics AX, purchasing professionals can create and maintain
+In Microsoft Dynamics 365 for Finance and Operations, purchasing professionals can create and maintain
 catalogs for company employees to use when they order items and services for
-internal use. When you create a procurement catalog you can add the items and
-services that you make available to employees, either by importing the vendor
-catalog data or by adding the vendor catalog data to the product master
-manually. If you use the catalog import process the vendor can send you the
-product catalog data and you can upload it by using the Microsoft Dynamics AX
-client.
+internal use. To create a procurement catalog, you can add the items and
+services that you want to make available to employees, either by importing the product
+catalog data or by manually adding the product catalog data to the product master. 
+
+You can upload catalog data submitted by a vendor from the Microsoft Dynamics 365 client.
 
 The product data that the vendor submits to you, in the form of a catalog
 maintenance request (CMR) file, must be in XML file format. The CMR file should
