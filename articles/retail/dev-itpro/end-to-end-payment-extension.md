@@ -36,7 +36,7 @@ This topic describes how to write a payment integration for the Dynamics 365 for
 | Term | Description |
 | --- | --- |
 | Payment Connector | Extension library written to integrate the POS with a payment terminal. |
-| Payment Processor | Extension library written to retrieve merchant propeties used by the payment connector. |
+| Payment Processor | Extension library written to retrieve merchant properties used by the payment connector. |
 
 ## Overview
 The diagram below provides a high level overview of the payment terminal integration through the POS. Note, the diagram assumes that a local Hardware Station is used to communicate with the payment terminal but the same patterns apply to the shared Hardware Station as well.
@@ -44,8 +44,8 @@ The diagram below provides a high level overview of the payment terminal integra
 ![Payment Connector Integration Overview](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
 This article describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
-- **Write a payment connector**: The payment connector is the main integration point between the POS and the payment terminal. This section describes how to implement and configure a new payment connector that can relay payment requests (e.g. authorize, refund, void) to the payment terminal. 
-- **Write a payment processor**: The payment processor is used to define the merchant properties used as part of the payment integration. This section describes how to implement a new payment processor, including interfaces to implement and patterns to follow.
+- **[Write a payment connector](#Write-a-payment-connector)**: The payment connector is the main integration point between the POS and the payment terminal. This section describes how to implement and configure a new payment connector that can relay payment requests (e.g. authorize, refund, void) to the payment terminal. 
+- **[Write a payment processor](#Write-a-payment-processor)**: The payment processor is used to define the merchant properties used as part of the payment integration. This section describes how to implement a new payment processor, including interfaces to implement and patterns to follow.
 
 ## Write a payment connector
 This section describes how to write a new payment connector.
@@ -549,7 +549,7 @@ The diagram below illustrates how the merchant properties are retrieved from the
 ![Setting Merchant Properties on payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 
 ### Implement the IPaymentProcessor interface
-In order to handle merchant properties related payment flows the `IPaymentProcessor` interface defiend in the `Microsoft.Dynamics.Retail.PaymentSDK` library has to be implemented. The example below shows how to implement the two required interface methods `GetMerchantAccountPropertyMetadata` and `ValidateMerchantAccount`. Other interface methods can be left blak (e.g. return `FeatureNotSupportedException`).
+In order to handle merchant properties related payment flows the `IPaymentProcessor` interface defiend in the `Microsoft.Dynamics.Retail.PaymentSDK` library has to be implemented. The example below shows how to implement the two required interface methods `GetMerchantAccountPropertyMetadata` and `ValidateMerchantAccount`. Other interface methods can be left blank (e.g. return `FeatureNotSupportedException`).
 
 ``` charp
 /// <summary>
@@ -642,9 +642,11 @@ public class SampleConnector : IPaymentProcessor
 #### Required merchant property fields
 The following table illustrates the required merchant property fields that have to be set as part of the `GetMerchantAccountPropertyMetadata` method.
 
-| Namespace | Name | Sample value |
+| Namespace | Name | Sample value * |
 | --- | --- | --- |
 | MerchantAccount | PortableAssemblyName | Contoso.Microsoft.PaymentsSample |
 | MerchantAccount | ServiceAccountId | f35989c8-e571-4de1-862a-996c82a2e6b6 |
 | MerchantAccount | SupportedCurrencies | AUD;BRL;CAD;CHF;CNY;CZK;DKK;EUR;GBP;HKD;HUF;INR;JPY;KPW;KRW;MXN;NOK;NZD;PLN;SEK;SGD;TWD;USD;ZAR |
-| MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |\
+| MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
+
+`*` These are sample values that **must** be replaced with unique values for your own payment processor.
