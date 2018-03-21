@@ -160,7 +160,7 @@ After the backup is created, run the following Transact-SQL (T-SQL) script again
     end
     go
     
-    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Database
+    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
     declare 
     @SQL2 varchar(255),
     @ViewName varchar(255)
