@@ -98,7 +98,7 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point at it)
 
 #### Steps to debug client-side
-1. From the web client exposed by the Azure-hosted development machine, ensure that there are mobile  workspaces published for the Unified Operations app. For information on publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+1. From the web client exposed by the Azure-hosted development machine, ensure that there are mobile  workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
 
@@ -130,15 +130,23 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point at it)
 
 #### Steps to debug server-side
-1. Publish: From the Web Client exposed by the Azure-hosted development machine, ensure there are Mobile Client workspaces published for the Unified Operations app. 
-2. Open app: Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign 
-3. Connect debugger: Open Visual Studio on the Azure-hosted development machine and attach the debugger to the w3wp process.
-4. Find source: Once you connect the debugger, find the desired business logic, and insert breakpoints as needed.
-5. View: Either use the app on your device as normal, or reflect the mobile device on your desktop so you can interact with it on the desktop screen. 
-6. Navigate: Navigate through the desired workspace and forms.
-7. Debug: When breakpoints are encountered then Visual Studio will allow you to control the flow of execution and see the values and parameters being passed around. 
-8. Change: Once a needed change is identified, make those changes in X++, and push those changes into the environment.
-9. Repeat: If more changes or validation is needed, repeat the process.
+1. From the web client exposed by the Azure-hosted development machine, ensure there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+
+2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
+
+3. Open Visual Studio on the Azure-hosted development machine and attach the debugger to the w3wp process.
+
+4. Once you connect the debugger, find the desired business logic, and insert breakpoints as needed.
+
+5. Either use the app on your device as normal, or reflect the mobile device on your desktop so you can interact with it on the desktop screen.
+
+6. Navigate through the desired workspace and forms.
+
+7. When breakpoints are encountered then Visual Studio will allow you to control the flow of execution and see the values and parameters being passed around. 
+
+8. Once a needed change is identified, make those changes in X++, and push those changes into the environment.
+
+9. If more changes or validation is needed, repeat the process.
 
 ## Additional resources
 ### What's new and in development
