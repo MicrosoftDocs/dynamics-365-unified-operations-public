@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate products and warehouse management from AX 2012 to Finance and Operations 
+title: Upgrade warehouse management from AX 2012 to Finance and Operations 
 description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Migrate products and warehouse management from AX 2012 to Finance and Operations
+# Upgrade warehouse management from AX 2012 to Finance and Operations 
 
 [!include[banner](../includes/banner.md)]
 
