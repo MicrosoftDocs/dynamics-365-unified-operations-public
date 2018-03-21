@@ -183,9 +183,9 @@ Workflow email configuration is a collection of related settings that work in co
     2. Verify that the **Sender email** field is set and valid.
 5. Verify that the user can receive email notifications:
     1. Go to **Settings** > **User options**.
-    2. Go to the **Account** tab.
-        1. Set the email provider ID (for example, SMTP).
-        2. Optionally, set the email address for the provider if it was not the default from the user setup.
+    2. Go to the **Account** tab.
+       1. Set the email provider ID (for example, SMTP).
+       2. Optionally, set the email address for the provider if it was not the default from the user setup.
     3. Navigate to the **Workflow** tab.
         1. Set the option to send notifications in email to **Yes**.
 6. Verify that the workflow system will send email notifications:
