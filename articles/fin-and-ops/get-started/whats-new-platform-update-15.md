@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15. This version was released in March 2018.
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018.
 author: tonyafehr
 manager: AnnBe
 ms.date: 03/19/2018
@@ -29,11 +29,11 @@ ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 15
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15. 
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. 
 
 > [!NOTE]
 > This platform release is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15. 
@@ -105,12 +105,12 @@ development, test, and code life cycle management. Customizations also need to
 be managed and migrated from one environment to another.  
 
 We have made it easier to add custom fields to forms in Dynamics 365 for Finance
-and Operations, Enterprise edition. Developer customization is no longer
+and Operations. Developer customization is no longer
 needed. Instead, a power user can add a custom field to a table and
 then place that field on the form using personalization. An IT administrator
 can then share the personalization with others in your organization. For information about how to create and manage custom fields, see [Custom fields](user-defined-fields.md).
 
-## (SR 10) Certifications for Dynamics 365 for Finance and Operations, Enterprise edition 
+## (SR 10) Certifications for Dynamics 365 for Finance and Operations 
 
 **ISO 27001(Secure)** – ISO 27001 certification confirms that the service
 complies with the controls and specifications outlined in the information
@@ -121,8 +121,7 @@ reassuring your auditors that you are running your business on an ISO27001
 certified service.
 
 **ISO 27018 (Protects personal data)** – ISO 27018 focuses on protection of
-personal data in the cloud. Dynamics 365 for Finance and Operations, Enterprise
-edition has achieved ISO 27018 certification. We want you to know that when you
+personal data in the cloud. Dynamics 365 for Finance and Operations has achieved ISO 27018 certification. We want you to know that when you
 are using our service to manage your business, your personal and sensitive data
 is safe and protected in the cloud. Additionally, if you choose to gain your own
 ISO 27018 certification for your business, your auditors will appreciate that
@@ -138,7 +137,7 @@ SOC-1/Type-2 and SOC-2/Type-2 certification.
 Your organization may have specific security policies that prevents users from
 navigating to unknown or malicious IP addresses and domains. You can now open
 specific firewall rules in your on-premises network to enable your users to
-access Dynamics 365 for Finance and Operations, Enterprise edition. This service
+access Dynamics 365 for Finance and Operations. This service
 will publish the IP addresses to your service environment so that an
 administrator can define a custom firewall on your on-premises network.
 
