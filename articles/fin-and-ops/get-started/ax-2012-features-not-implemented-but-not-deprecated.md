@@ -36,6 +36,8 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
+To see a table listing when each version of the product was released, see [Software lifecycle policy and list of releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -56,7 +58,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Alerts help users keep track of data changes in the system.</td>
-<td>Implemented in Microsoft Dynamics 365 for Finance and Operations platform update 15</td>
+<td>Implemented in platform update 15</td>
 </tr>
 <tr class="even">
 <td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
@@ -66,7 +68,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <tr class="even">
 <td>Employee self-service (ESS)</td>
 <td><p>ESS shows employees several tiles that show task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
-<td>Implemented in Microsoft Dynamics 365 for Operations version 1611</td>
+<td>Implemented in version 1611</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
@@ -76,7 +78,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <tr class="even">
 <td>Cost accounting</td>
 <td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitability reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget. It also lets you compare realized costs and budgeted costs.</td>
-<td>Implemented in Dynamics 365 for Operations version 1611</td>
+<td>Implemented in version 1611</td>
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
@@ -94,7 +96,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 
 <td>Client right-to-left (RTL) layout</td>
 <td>RTL layout is now supported.</td>
-<td>Implemented in Microsoft Dynamics AX platform update 2</td></tr>
+<td>Implemented in platform update 2</td></tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
@@ -105,7 +107,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 <td>Not implemented</td></tr>
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
-<td>Implemented in Dynamics 365 for Finance and Operations, Enterprise edition 7.2 (July 2017)</td></tr>
+<td>Implemented in version 7.2 (July 2017 update)</td></tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td><p>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.</p>
