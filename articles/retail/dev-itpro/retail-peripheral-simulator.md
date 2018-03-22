@@ -5,7 +5,7 @@ title: Peripheral simulator for Retail
 description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 for Retail.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
