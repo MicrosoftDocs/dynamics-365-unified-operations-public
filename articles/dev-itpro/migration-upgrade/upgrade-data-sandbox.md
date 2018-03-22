@@ -38,8 +38,6 @@ The output of this task is an upgraded database that you can use in a sandbox en
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
 
 ## Overview of the sandbox data upgrade process
-A sandbox environment for the purposes of this article is a Tier 2 or higher non-production environment. 
-
 Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Data upgrade in a development environment](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
 
 ![Sandbox data upgrade process](./media/data-upgrade-sandbox.png)
@@ -221,7 +219,7 @@ Open a **Command Prompt** window as an administrator, and run the following comm
 ```
 	cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-	SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P1
+	SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
 ```
 
 Here is an explanation of the parameters:
@@ -232,9 +230,9 @@ Here is an explanation of the parameters:
 - **tp** (target password) – The SQL password for the target SQL Database instance.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
-- **/p:DatabaseServiceObjective** – The service tier level of the database that is created. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
 
-After you run the commands, you will receive the following warning. You can safely ignore it.
+After you run the commands, you may the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
 
