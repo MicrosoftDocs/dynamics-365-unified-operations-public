@@ -214,7 +214,7 @@ origin setup in Finance and Operations.
 
 The field **External work order status** is shown on the Sales order header
 **Setup** tab when the sales order originates from a work order. The **External
-work order status** shows the System status from the Field Service Work order,
+work order status** shows the system status from the Field Service Work order,
 to keep track of the synchronized work order status in the Finance and
 Operations Sales order. This also provides insight to the Finance and Operations
 user about when to ship or invoice the sales order.
@@ -229,92 +229,83 @@ The External work order status field can have the following values:
 ## Field Service CRM solution
 
 To support the field service integration between Field service and Finance and
-Operations additional functionality from the Field Service CRM solution is
+Operations, additional functionality from the Field Service CRM solution is
 needed. The solution includes the following changes:
 
 ### Work Order entity
 
--   The field **Has Externally Maintained Products Only** have been added to the
-    Work order entity and appears on the page.
-
->   The **Has Externally Maintained Products Only** setting is used to
->   consistently track whether a work order consists entirely of externally
->   maintained products. A work order consists entirely of externally maintained
->   products when all the related products are maintained in Finance and
->   Operations. This setting helps guarantee that you don't try to synchronize
->   work orders that have products that are unknown to Finance and Operations.
+The field **Has Externally Maintained Products Only** has been added to the **Work order entity** and appears on the page. The **Has Externally Maintained Products Only** setting is used to consistently track whether a work order consists entirely of externally
+maintained products. A work order consists entirely of externally maintained products when all the related products are maintained in Finance and Operations. This setting helps guarantee that you don't try to synchronize work orders that have products that are unknown to Finance and Operations.
 
 ### Work Order Product entity
 
 -   The field **Order Has Externally Maintained Products Only** has been added
-    to the Work Order Product entity and appears on the page. It is used to
+    to the **Work Order Product** entity and appears on the page. It is used to
     consistently track whether the work order product is maintained in Finance
     and Operations. This setting helps guarantee that you don't try to
     synchronize work order products that are unknown to Finance and Operations.
 
--   The field **Header System Status** has been added to the Work Order Product
+-   The field **Header System Status** has been added to the **Work Order Product**
     entity and appears on the page. It is used to consistently track the work
     order system status and ensure correct filtering when synchronizing work
-    order products to Finance and Operations. With filters on the integration
+    order products to Finance and Operations. With filters set on the integration
     tasks, **Header System Status** information is also used to determine
     whether the estimated or used values should be synchronized.
 
--   **Invoiced Unit Amount** shows the Amount invoiced per actual unit used.
+-   **Invoiced Unit Amount** shows the **Amount invoiced per actual unit** used.
     **Invoiced Unit Amount** = **Total Amount** / **Actual Quantity**. The field
     is used for integration to systems that don’t support different values for
-    used and billed quantity. The field is not shown in the UI.
+    used and billed quantity. The field is not shown in the user interface. 
 
 -   **Invoiced Discount Amount** is calculated as the **Discount Amount** plus
     rounding from the calculation of the **Invoiced Unit Amount**. The field is
-    used for integration and not shown in the UI.
+    used for integration and not shown in the user interface.
 
--   **Decimal Quantity** stores the value from **Quantity** as a Decimal Number.
-    The field is used for integration and not shown in the UI.
+-   **Decimal Quantity** stores the value from **Quantity** as a decimal number.
+    The field is used for integration and not shown in the user interface. 
 
 -   The value in **Used** fields is set back to zero in case the work order
-    product **Line Status** for some reason is changed from **Used** to
-    **Estimated**. This is done to avoid situations where mistakenly entered
-    used quantity is used for synchronizing when **Line Status** is
-    **Estimated** and **Allocated** = **No.**
+    product **Line Status** is changed from **Used** to **Estimated**. This is done to avoid situations where mistakenly entered
+    used quantity is used for synchronizing when **Line Status** is **Estimated** and **Allocated** = **No.**
 
 ### Work Order Service entity
 
 -  The field **Order Has Externally Maintained Products Only** has been added
-    to the Work Order Service entity and appears on the page. It is used to
+    to the **Work Order Service** entity and appears on the page. It is used to
     consistently track whether the work order service is maintained in Finance
     and Operations. This setting helps guarantee that you don't try to
     synchronize work order service that are unknown to Finance and Operations.
 
--  The field **Header System Status** has been added to the Work Order Service
+-  The field **Header System Status** has been added to the **Work Order Service**
     entity and appears on the page. It is used to consistently track the work
     order system status and ensure correct filtering when synchronizing work
-    order service to Finance and Operations. With filters on the integration
+    order service to Finance and Operations. With filters set on the integration
     tasks, **Header System Status** information is also used to determine
     whether the estimated or used values should be synchronized.
 
 -  The field **Duration In Hours** stores the minute value from **Duration**
     converted to hours. The field is used for integration and not shown in the
-    UI.
+    user interface. 
 
 -  The field **Estimated Duration In Hours** stores the minute value from
     **Estimated Duration** converted to hours. The field is used for integration
-    and not shown in the UI.
+    and not shown in the user interface.
 
 -  The field **Invoiced Unit Amount** stores the Amount invoiced per actual
     unit used. **Invoiced Unit Amount** = **Total Amount** / **Actual
     Quantity**. The field is used for integration to systems that don’t support
     different values for used and billed quantity. The field is not shown in the
-    UI.
+    user interface.
 
 -  The field **Invoiced Discount Amount** is calculated as the **Discount
     Amount** plus rounding from the calculation of the **Invoiced Unit Amount**.
-    The field is used for integration and not shown in the UI.
+    The field is used for integration and not shown in the user interface.
 
 -  The field **External Line Order** is a calculated negative line order number
     for use in external systems where work order product and service lines are
     combined. This way work order products are inserted with positive line
     numbers and services with negative line numbers. **External Line Order** =
-    **Line Order** \* -1. The field is not shown in the UI.
+    **Line Order** \* -1. The field is not shown in the user interface.
 
 -  The value in **Used** fields is set back to zero in case the work order
     service **Line Status** for some reason is changed from **Used** to
@@ -335,7 +326,7 @@ settings in the systems.
     Operations.
 
 -  Set **Work Order Invoice Creation** to **Never**, as the invoicing will be
-    done from Finance and Operations
+    done from Finance and Operations.
 
 Go to Field Service \> Settings \> Administration \> Field Service Settings, and make sure that the following setting is used:
 
