@@ -232,7 +232,7 @@ Here is an explanation of the parameters:
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
 - **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
 
-After you run the commands, you may the following warning. You can safely ignore it.
+After you run the commands, you may see the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
 
