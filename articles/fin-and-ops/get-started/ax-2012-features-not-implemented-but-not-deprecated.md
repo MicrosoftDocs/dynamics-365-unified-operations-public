@@ -429,7 +429,7 @@ Values for these supported payment specifications are used as payment specificat
 <tr class="odd">
 <td>US Payroll</td>
 <td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
-<td>Implemented in Dynamics 365 for Operations version 1611</td>
+<td>Implemented in version 1611</td>
 </tr>
 
 
