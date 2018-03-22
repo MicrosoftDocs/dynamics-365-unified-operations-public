@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 02/23/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,174 +42,10 @@ This topic describes features that have been removed or deprecated for Dynamics 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!Note]
-> Starting with the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+> Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
-
-### Feature name 
-Short description of the feature.  
-
-|                                    |                                                         |
-|------------------------------------|---------------------------------------------------------|
-| **Reason for deprecation/removal** | Indicate why the feature was removed or deprecated      |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature  |
-| **Product areas affected**         | Product areas affected, such as a module name           |
-| **Deployment option**              | Select: All, Cloud only, or On-premises only            |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.       |
+No features have been removed or deprecated with this release.
 
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
@@ -269,7 +105,7 @@ The standard UI in data management is the legacy UI, which is the default UI pre
 | **Replaced by another feature?**   | The new UI called *Enhanced views* is replacing the old UI.            |
 | **Product areas affected**         | Data management workspace                                                     |
 | **Deployment option**              | All                                                                           |
-| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q2 2018. |
 
 ### Excise, Sales Tax, Service Tax for India
 
