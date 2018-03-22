@@ -2,10 +2,10 @@
 # required metadata
 
 title: Virtual machines that do not allow administrator access
-description: TBD
+description: This topic provides answers to frequantly asked questions about virtual machiens that do not allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 01/08/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 # Virtual machines that do not allow administrator access
 
 [!include[banner](../includes/banner.md)]
-
-Content goes here.
-## FAQ for PU12 and later tier 1 VMs that do not allow administrator access (Dynamics 365 for Finance & Operations)
+This topic provides answers to frequently asked questions about platform udpate 12 and later Tier 1 virutal machines (VMs) that do not allow administrator access.
 
 **Q**: How can I install a deployable package?  
 **A**: When possible, use LCS to install a package. You can install a deployable package using the -devinstall option. Keep in mind that this option requires a manual DB sync.
