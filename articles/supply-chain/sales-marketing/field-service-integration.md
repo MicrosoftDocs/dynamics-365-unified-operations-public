@@ -30,46 +30,28 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
+# Integration with Dynamics 365 for Field Service 
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales.
+Dynamics 365 for Finance and Operations has enabled synchronization of business processes between Finance and Operations and Dynamics 365 for Field Service. These scenarios are configured using extensible Data integrator templates and CDS  to enable the synchronization of business processes.  
 
-
----
-title: Field Service integration documentation
----
-
-The Dynamics 365 Data integration provides support for scenarios where field
-service activities are done outside of Dynamics 365 for Finance and Operations.
-
-The first phase focuses on enabling invoicing of Dynamics 365 for Field Service
-work orders and agreements in Finance and Operations. The supported flow starts
-in Field Service, where information from work orders will sync to Finance and
-Operations as sales orders. In Finance and Operations, the sales orders can be
-invoiced to generate the invoice documents. In addition, the information from
-Field Service agreement invoices will sync to Finance and Operations.
-
-The Dynamics 365 Data Integration synchronizes data using customizable projects.
-Standard templates can be used to create custom integration projects, where
-additional standard and custom fields as well as entities can be mapped to
-adjust integration and fit into specific needs.
-
+The first phase focuses on enabling invoicing of Field Service work orders and agreements in Finance and Operations. The supported flow starts in Field Service, where information from work orders is synchronized to Finance and Operations as sales orders. In Finance and Operations, the sales orders are invoiced to generate invoice documents. In addition, the information from Field Service agreement invoices is synchronized to Finance and Operations. The Dynamics 365 data integrator synchronizes data by using customizable projects. Standard templates can be used to create custom integration projects, where additional standard and custom fields, and also entities, can be mapped to adjust the integration and meet specific needs. 
+ 
 The first phase for integration between Field Service and Finance and Operations
 enables synchronization of:
 
--   Finance and Operations Products to Field Service Products with Field Service
-    Product Type
+-   Products from Finance and Operations to Products including Product Type information in Field Service
 
--   Field Service Work order to Finance and Operations Sales order
+-   Work order from Field Service to Sales order in Finance and Operations
 
--   Field Service Invoice to Finance and Operations Free text invoice
+-   Invoice from Field Service to Free text invoice in Finance and Operations 
+
+[![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 ![](media/7477cbf17827210318e1a83d4276c69e.png)
 
-Synchronization of Field Service Work orders to Finance and Operations Sales orders
-===================================================================================
+## Synchronization of Field Service Work orders to Finance and Operations Sales orders
 
 This topic discusses the templates and underlying tasks that are used for
 synchronization of Work orders from Microsoft Dynamics 365 for Field Service to
