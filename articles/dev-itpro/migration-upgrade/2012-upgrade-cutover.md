@@ -50,7 +50,7 @@ These are the high-level steps of the production environment upgrade process.
 
 1.	Submit an **Other type** service request through Lifecycle Services (LCS) to notify the Microsoft Service Engineering (DSE) team of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a final cutover.
     - Make sure you have already completed a successful mock cutover.
-    - Mock cutover requests are subject to availability of the DSE team, please plan ahead.
+    - Cutover requests are subject to availability of the DSE team, please plan ahead.
 2.  Turn off all AX 2012 AOS instances.
 3.	Back up the AX 2012 database and run the T-SQL scripts against the original database.
 4.	Export the copied database to a bacpac file by using the SQLPackage.exe (a free SQL Server tool available for download). This tool provides a special type of database backup that can be imported into SQL Database. 
