@@ -86,6 +86,7 @@ The next sections contain more details.
 Submit an **Other type** service request. Work with your Microsoft solution architect and ensure that you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a mock cutover.
     - Make sure that you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
     - Mock cutovers are performed during business hours, Monday to Thursday, in the US Pacific timezone.
+    - Mock cutover requests are subject to availability of the DSE team, please plan ahead.
 
 For more information, see: 
 - [Submit a service request](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
