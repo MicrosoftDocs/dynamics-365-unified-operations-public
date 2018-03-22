@@ -3,7 +3,7 @@
 
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the tasks that occur after you turn off AX 2012 but before you turn on Dynamics 365 for Finance and Operations, Enterprise edition. 
-author: tariqbell
+author: robadawy
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope:  Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: robadawy
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -75,7 +75,7 @@ These are the high-level steps og the production environment upgrade process, cu
     - During a mock cutover, you run T-SQL against a copy of the original database.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 5.	Upload the bacpac file to the AOS machine.
-6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. 
+6.	Download the bacpac file to the Application Object Server (AOS) virtual machine in the sandbox environment, and then import it by using SQLPackage.exe. 
 7.	Notify the Microsoft DSE team that your database is ready for upgrade – they will copy the imported database from sandbox to the production environment.
 8.	Microsoft DSE team will run the data upgrade against the imported database.
 9.	Microsoft DSE team will notify you once the data upgrade is complete – at this point you can log in and complete any functional configuration tasks required post-upgrade before you allow the end users back into the new system.
