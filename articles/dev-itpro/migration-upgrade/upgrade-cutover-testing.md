@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the tasks that occur after you turn off AX 2012 but before you turn on Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: robadawy
 manager: AnnBe
-ms.date: 01/31/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-*Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. The purpose of upgrade cutover testing is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
+*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. The purpose of upgrade cutover testing is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 
 There are two main workstreams during a cutover:
 
@@ -55,7 +55,7 @@ This cutover process differs from a basic data upgrade validation in a sandbox e
 
 
 > [!NOTE]
-> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
@@ -65,10 +65,11 @@ During cutover testing, the technical team is focused on performance and reliabi
 
 ### Overall process
 
-These are the high-level steps og the production environment upgrade process, cutover testing will use the same steps for the technical workstream.
+> [!NOTE]
+> For the technical workstream, the cutover testing process is the same as the high-level steps of the production environment upgrade process.
 
-1.	Submit an **Other type** service request through LCS to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a mock cutover.
-    - Make sure you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
+1.	Submit an **Other type** service request through Microsoft Lifecycle Services (LCS) to notify DSE of your intention to upgrade a production environment. Work with your Microsoft solution architect and ensure you do this with plenty of notice (2 to 3 weeks in advance). Indicate in the service request that this is a mock cutover.
+    - Make sure that you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
     - Mock cutovers are performed during business hours, Monday to Thursday, in the US Pacific timezone.
 2.  Turn of AX 2012 AOS instances.
 3.	Create a backup of the AX 2012 database and run T-SQL script against the original database.
