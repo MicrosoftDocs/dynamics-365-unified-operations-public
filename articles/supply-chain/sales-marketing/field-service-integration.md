@@ -49,8 +49,6 @@ enables synchronization of:
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
-![](media/7477cbf17827210318e1a83d4276c69e.png)
-
 ## Synchronization of Field Service Work orders to Finance and Operations Sales orders
 
 This topic discusses the templates and underlying tasks that are used for
