@@ -49,75 +49,59 @@ enables synchronization of:
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
-## Synchronization of Field Service Work orders to Finance and Operations Sales orders
+## Synchronization of Work orders from Field Service to Sales orders in Finance and Operations
 
-This topic discusses the templates and underlying tasks that are used for
-synchronization of Work orders from Microsoft Dynamics 365 for Field Service to
-Sales orders in Microsoft Dynamics 365 for Finance and Operations, Enterprise
-edition.
+The following sections discusses the templates and underlying tasks that are used for
+synchronization of Work orders from Field Service to Sales orders in Finance and Operations.
 
-Templates and tasks
+### Templates and tasks
 
 The following templates and underlying tasks are used to run synchronization of
-Work order from Field Service to Sales order in Microsoft Dynamics 365 for
-Finance and Operations:
+Work order from Field Service to Sales order in Finance and Operations:
 
-1.  **Names of the templates in Data integration:**
+#### Names of the templates in Data integration
+The template **Work Orders to Sales orders (Field Service to Fin and Ops)** is used to run synchronization.
 
-    -   Work Orders to Sales orders (Field Service to Fin and Ops)
+#### Names of the tasks in the Data integration project
 
-2.  **Names of the tasks in the Data integration project:**
+-  WorkOrderHeader
+-  WorkOrderServiceLineEstimate
+-  WorkOrderServiceLineUsed
+-  WorkOrderProductLineEstimate
+-  WorkOrderProductLineUsed
 
-    -   WorkOrderHeader
+The following synchronization tasks are required before synchronization of sales order headers and lines can occur:
 
-    -   WorkOrderServiceLineEstimate
+-  Field Service Products (Fin and Ops to Field Service)
+-  Accounts (Sales to Fin and Ops) – Direct
 
-    -   WorkOrderServiceLineUsed
-
-    -   WorkOrderProductLineEstimate
-
-    -   WorkOrderProductLineUsed
-
-The following synchronization tasks are required before synchronization of sales
-order headers and lines can occur:
-
--   Field Service Products (Fin and Ops to Field Service)
-
--   Accounts (Sales to Fin and Ops) – Direct
-
-Entity set
+### Entity set
 
 **Field Service Finance and Operations**
 
-msdyn_workorders CDS sales order headers
+-  msdyn_workorders CDS sales order headers
+-  msdyn_workorderservices CDS sales order lines
+-  msdyn_workorderproducts CDS sales order lines
 
-msdyn_workorderservices CDS sales order lines
+### Entity flow
 
-msdyn_workorderproducts CDS sales order lines
+Work orders are created in Field Service and can be synchronized to Finance and
+Operations via a CDS Data Integration project, when they only include
+**Externally maintained products** and work order status differs from
+**Open-Unscheduled** and **Closed – Cancelled**. Updates on the work orders will
+be synced as the sales orders, including the information about origin type and status.
 
-Entity flow
+### Expected versus Used
 
-Work orders are created in Field Service and can synchronize to Finance and
-Operations, via a CDS Data Integration project, when they only include
-externally maintained products and work order status differs from
-**Open-Unscheduled** and **Closed – Cancelled**. Updates on the work order will
-sync to the sales order, including origin type and status information.
+The work order products and services in Field Service have both **Estimated** and
+**Used** values for quantity and amount.  The sales orders in Finance and Operations
+don’t have the same concept of **Estimated** and **Used**. To support the product allocation
+with the expected quantity on the Sales order in Finance and Operations, while keeping the used quantity to be consumed and invoiced, there are two sets of tasks that synchronize the **Work Order Products** and **Work Order
+Services**: One for **Estimated** and one for **Used** values.
 
-Expected versus Used
+This enables scenarios where estimated values are used for allocation or reservation in Finance and Operations while the used values are used for consumption and invoicing.
 
-The Field Service Work order products and services holds both **Estimated** and
-**Used** values for quantity and amount. Finance and Operations Sales orders
-don’t have the same concept of Estimated and Used. To support product allocation
-with expected quantity on the Sales order in Finance and Operations, while at
-the same time ensuring that the used quantity is consumed and invoiced, there
-are two sets of tasks to synchronize the Work Order Products and Work Order
-Services; One for estimated and one for used values.
-
-This enables scenarios where estimated values are used for
-allocation/reservation in Finance and Operations while the used values are used
-for consumption and invoicing.
-
-### Estimated:
+#### Estimated:
 
 The estimated values are used for synchronization of **Product lines** when:
 
@@ -129,11 +113,11 @@ The estimated values are used for synchronization of **Service lines** when:
 **Line Status** is **Estimated,** and **System status** is not **Closed –
 Posted**.
 
-### Used:
+#### Used:
 
 In other cases, the used values are synchronized.
 
-#### The following table shows an overview of the various combinations
+The following table shows an overview of the various combinations.
 
 | **Line type** | **System Status**  | **Line Status** | **Allocated** |     | **Fin and Ops value** |
 |---------------|--------------------|-----------------|---------------|-----|-----------------------|
