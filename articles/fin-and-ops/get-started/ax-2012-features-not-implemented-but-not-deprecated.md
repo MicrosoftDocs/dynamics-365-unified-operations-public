@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
-To see a table listing when each version of the product was released, see [Software lifecycle policy and list of releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+For a detailed list of when each version of the product was released, see [Software lifecycle policy and list of releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <colgroup>
@@ -54,14 +54,14 @@ To see a table listing when each version of the product was released, see [Softw
 
 <tr class="even">
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
-<td>Implemented in Microsoft Dynamics 365 for Talent</td>
+<td>Functionality for entering absence transactions isn't included in Finance and Operations. Additionally, functionality for approving absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Implemented in Dynamics 365 for Talent</td>
 </tr>
 
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Alerts help users keep track of data changes in the system.</td>
-<td>Implemented in platform update 15</td>
+<td>Implemented in Platform update 15</td>
 </tr>
 
 <tr class="odd">
@@ -83,7 +83,7 @@ To see a table listing when each version of the product was released, see [Softw
 
 <td>Client right-to-left (RTL) layout</td>
 <td>RTL layout is now supported.</td>
-<td>Implemented in platform update 2</td></tr>
+<td>Implemented in Platform update 2</td></tr>
 
 <tr class="even">
 <td>Cost accounting</td>
@@ -93,7 +93,7 @@ To see a table listing when each version of the product was released, see [Softw
 
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
-<td>CSS lets you create approved customer records. It also lets users can view selected product catalogs, order items, and view the status of invoices. Additionally, CSS provides the ability to create and follow return orders.</td>
+<td>CSS lets you create approved customer records. It also allows users to view selected product catalogs, order items, and view the status of invoices. Additionally, CSS provides the ability to create and follow return orders.</td>
 <td>Not implemented</td>
 </tr>
 
@@ -105,7 +105,7 @@ To see a table listing when each version of the product was released, see [Softw
 
 <tr class="even">
 <td>Employee self-service (ESS)</td>
-<td><p>ESS shows employees several tiles that show task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
+<td><p>ESS shows employees several tiles which have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
 <td>Implemented in version 1611</td>
 </tr>
 
@@ -120,11 +120,11 @@ To see a table listing when each version of the product was released, see [Softw
 
 <tr class="odd">
 <td>General budget reservations</td>
-<td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
+<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
 <td>Not implemented</td></tr>
 
 <tr class="even">
-<td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
+<td><strong>Graphics</strong> tab on the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> pages</td>
 <td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
 <td>Not implemented</td>
 </tr>
@@ -142,8 +142,8 @@ To see a table listing when each version of the product was released, see [Softw
 </tr>
 
 <td>Procurement site</td>
-<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different Procurement catalogs could be configured to show on the site depending on policy. Furthermore procurement catalogs could be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hieararchy. 
-Additionally on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
+<td>In previous versions, the Employee self-service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different procurement catalogs could be configured to show on the site depending on policy. Procurement catalogs could also be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. 
+Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
 <td>Not implemented</td></tr>
 
 
@@ -155,9 +155,9 @@ Additionally on the procurement site the employee could approve a vendor invoice
 
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td><p>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.</p>
+<td><p>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.</p>
 <blockquote>[!NOTE]<br>
-Values for these supported payment specifications are used as payment specification parameters in the <strong>Payment specification</strong> form for a selected method of payment.</blockquote>
+Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
@@ -442,12 +442,12 @@ Values for these supported payment specifications are used as payment specificat
 
 <tr class="odd">
 <td>Vendor requests - external request to become a new vendor</td>
-<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, this process has been enabled in a slightly different way. The anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register further details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.
 </td>
 <td>Implemented in version 7.3</td></tr>
 
 <td>Vendor requests in general</td>
-<td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to update vendor related information, such as requesting new procurement categories for the vendor, internal employees requested new vendors or request to add vendor to another company. Only vendor's request of being added as a vendor has been implemented in 7.3.</td>
+<td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to updating vendor-related information, such as requesting new procurement categories for the vendor, internal employees requesting new vendors, or requesting to add a vendor to another company. Only the vendor's request of being added as a vendor has been implemented in version 7.3.</td>
 <td>Not implemented</td>
 </td></tr>
 
