@@ -445,13 +445,13 @@ Values for these supported payment specifications are used as payment specificat
 <td>Vendor requests in general</td>
 <td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to update vendor related information, such as requesting new procurement categories for the vendor, internal employees requested new vendors or request to add vendor to another company. Only vendor's request of being added as a vendor has been implemented in 7.3.</td>
 <td>Not implemented</td>
-</td>
+</td></tr>
 
 
 
 <td>Procurement site</td>
 <td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different Procurement catalogs could be configured to show on the site depending on policy. Furthermore procurement catalogs could be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hieararchy. 
 Additionally on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
-<td>Not implemented</td>
+<td>Not implemented</td></tr>
 </tbody>
 </table>
