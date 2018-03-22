@@ -137,7 +137,6 @@ The following table shows an overview of the various combinations.
 | Products      | Closed - Posted    | Estimated       | No            | =\> | Used                  |
 | Products      | Closed - Posted    | Used            | Yes           | =\> | Used                  |
 | Products      | Closed - Posted    | Used            | No            | =\> | Used                  |
-|               |                    |                 |               |     |                       |
 | Services      | Open - Scheduled   | Estimated       | \-            | =\> | Estimated             |
 | Services      | Open - Scheduled   | Used            | \-            | =\> | Used                  |
 | Services      | Open - In Progress | Estimated       | \-            | =\> | Estimated             |
@@ -154,60 +153,49 @@ the correct task, and the underlying mapping ensures that the correct values for
 
 #### Example
 
-1.  A work order is created and scheduled in Field Service
+1. A work order is created and scheduled in Field Service.
 
     System Status: **Open – Scheduled**
 
-    -   Product line Estimated Qty = 5ea, Used Qty = 0ea, Line Status =
-        Estimated, Allocated = No
+    -   Product line Estimated Qty = 5ea, Used Qty = 0ea, Line Status = Estimated, Allocated = No
 
     -   Service line Estimated Qty = 2h, Used Qty = 0h, Line Status = Estimated
 
->   Here the Product Used Quantity of 0 and Service Estimated Quantity of 2h
->   sync to Finance and Operations
+In this example, the Product Used Quantity of 0 and Service Estimated Quantity of 2h are synced to Finance and Operations.
 
-1.  Products are allocated in Field service
+2. Products are allocated in Field service
 
     System Status: **Open – Scheduled**
 
-    -   Product line Estimated Qty = 5ea, Used Qty = 0ea, Line Status =
-        Estimated, Allocated = Yes
+    -   Product line Estimated Qty = 5ea, Used Qty = 0ea, Line Status = Estimated, Allocated = Yes
 
     -   Service line Estimated Qty = 2h, Used Qty = 0h, Line Status = Estimated
 
->   Here the Product Estimated Quantity of 5ea and Service Estimated Quantity of
->   2h sync to Finance and Operations
+In this example, the Product Estimated Quantity of 5ea and Service Estimated Quantity of 2h are synced to Finance and Operations.
 
-1.  The service technician starts working on the Work order and registers
-    material usage (6)
+3. The service technician starts working on the Work order and registers material usage of 6.
 
     System Status: **Open – In Progress**
 
-    -   Product line Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used,
-        Allocated = Yes
+    -   Product line Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used, Allocated = Yes
 
     -   Service line Estimated Qty = 2h, Used Qty = 0h, Line Status = Estimated
 
->   Here the Product Used Quantity of 6 and Service Estimated Quantity of 2h
->   sync to Finance and Operations
+In this example, the Product Used Quantity of 6 and Service Estimated Quantity of 2h are synced to Finance and Operations.
 
-1.  The service technician completes the Work order and registers used time
-    (1.5h)
+4. The service technician completes the Work order and registers the used time of 1.5h
 
     System Status: **Open – Completed**
 
-    -   Product line Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used,
-        Allocated = Yes
+    -   Product line Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used, Allocated = Yes
 
     -   Service line Estimated Qty = 2h, Used Qty = 1.5h, Line Status = Used
 
->   Here the Product Used Quantity of 6 and Service Estimated Quantity of 1.5h
->   sync to Finance and Operations
+In this example, the Product Used Quantity of 6 and Service Estimated Quantity of 1.5h are synced to Finance and Operations.
 
-Sales order Origin and Status
+### Sales order Origin and Status
 
-Sales origin
-------------
+#### Sales origin
 
 To keep track of sales orders in Finance and Operations, which originate work
 orders it is possible to create a **Sales origin** with **Origin type
@@ -222,8 +210,7 @@ orders.
 See Preconditions and Mapping setup for details on creating the correct sales
 origin setup in Finance and Operations.
 
-Status
-------
+#### Status
 
 The field **External work order status** is shown on the Sales order header
 **Setup** tab when the sales order originates from a work order. The **External
@@ -234,22 +221,18 @@ user about when to ship or invoice the sales order.
 
 The External work order status field can have the following values:
 
--   Open - Scheduled
+-  Open - Scheduled
+-  Open - In Progress
+-  Open - Completed
+-  Closed - Posted
 
--   Open - In Progress
-
--   Open - Completed
-
--   Closed - Posted
-
-Field Service CRM solution
+## Field Service CRM solution
 
 To support the field service integration between Field service and Finance and
 Operations additional functionality from the Field Service CRM solution is
 needed. The solution includes the following changes:
 
-Work Order entity
------------------
+### Work Order entity
 
 -   The field **Has Externally Maintained Products Only** have been added to the
     Work order entity and appears on the page.
@@ -261,8 +244,7 @@ Work Order entity
 >   Operations. This setting helps guarantee that you don't try to synchronize
 >   work orders that have products that are unknown to Finance and Operations.
 
-Work Order Product entity
--------------------------
+### Work Order Product entity
 
 -   The field **Order Has Externally Maintained Products Only** has been added
     to the Work Order Product entity and appears on the page. It is used to
@@ -295,75 +277,71 @@ Work Order Product entity
     used quantity is used for synchronizing when **Line Status** is
     **Estimated** and **Allocated** = **No.**
 
-Work Order Service entity
--------------------------
+### Work Order Service entity
 
--   The field **Order Has Externally Maintained Products Only** has been added
+-  The field **Order Has Externally Maintained Products Only** has been added
     to the Work Order Service entity and appears on the page. It is used to
     consistently track whether the work order service is maintained in Finance
     and Operations. This setting helps guarantee that you don't try to
     synchronize work order service that are unknown to Finance and Operations.
 
--   The field **Header System Status** has been added to the Work Order Service
+-  The field **Header System Status** has been added to the Work Order Service
     entity and appears on the page. It is used to consistently track the work
     order system status and ensure correct filtering when synchronizing work
     order service to Finance and Operations. With filters on the integration
     tasks, **Header System Status** information is also used to determine
     whether the estimated or used values should be synchronized.
 
--   The field **Duration In Hours** stores the minute value from **Duration**
+-  The field **Duration In Hours** stores the minute value from **Duration**
     converted to hours. The field is used for integration and not shown in the
     UI.
 
--   The field **Estimated Duration In Hours** stores the minute value from
+-  The field **Estimated Duration In Hours** stores the minute value from
     **Estimated Duration** converted to hours. The field is used for integration
     and not shown in the UI.
 
--   The field **Invoiced Unit Amount** stores the Amount invoiced per actual
+-  The field **Invoiced Unit Amount** stores the Amount invoiced per actual
     unit used. **Invoiced Unit Amount** = **Total Amount** / **Actual
     Quantity**. The field is used for integration to systems that don’t support
     different values for used and billed quantity. The field is not shown in the
     UI.
 
--   The field **Invoiced Discount Amount** is calculated as the **Discount
+-  The field **Invoiced Discount Amount** is calculated as the **Discount
     Amount** plus rounding from the calculation of the **Invoiced Unit Amount**.
     The field is used for integration and not shown in the UI.
 
--   The field **External Line Order** is a calculated negative line order number
+-  The field **External Line Order** is a calculated negative line order number
     for use in external systems where work order product and service lines are
     combined. This way work order products are inserted with positive line
     numbers and services with negative line numbers. **External Line Order** =
     **Line Order** \* -1. The field is not shown in the UI.
 
--   The value in **Used** fields is set back to zero in case the work order
+-  The value in **Used** fields is set back to zero in case the work order
     service **Line Status** for some reason is changed from **Used** to
     **Estimated**. This is done to avoid situations where mistakenly entered
     used quantity is used for synchronizing when **Line Status** = **Estimated**
     and **Header System Status** = **Closed – Posted**.
 
-Preconditions and mapping setup
+## Preconditions and mapping setup
 
 Before you synchronize work orders, it's important that you update the following
 settings in the systems.
 
-Setup in Field Service
-----------------------
+### Setup in Field Service
 
--   Ensure that you don’t have overlapping number series for Work orders and
+-  Ensure that you don’t have overlapping number series for Work orders and
     Sales order cross both Sales and Finance and Operations, as this could lead
     to incorrect update of existing sales orders in Sales or Finance and
     Operations.
 
--   Set **Work Order Invoice Creation** to **Never**, as the invoicing will be
+-  Set **Work Order Invoice Creation** to **Never**, as the invoicing will be
     done from Finance and Operations
 
->   Go to Field Service \> Settings \> Administration \> Field Service Settings,
->   and make sure that the following setting is used:
+Go to Field Service \> Settings \> Administration \> Field Service Settings, and make sure that the following setting is used:
 
--   The **Work Order Invoice Creation** option is set to **Never**.
+The **Work Order Invoice Creation** option is set to **Never**.
 
-Setup in Finance and Operations
--------------------------------
+### Setup in Finance and Operations
 
 Setup of sales origin for Work order integration is needed to distinguish the
 Finance and Operations sales orders created from Field Service Work Orders. When
@@ -374,19 +352,14 @@ Besides having the information on the sales order header, it can be used to
 ensure that sales orders created from Field Service Work Orders are filtered out
 during sales order synchronization from Finance and Operations to Sales.
 
-Go to Sales and marketing \> Setup \> Sales orders \> Sales origin, click
-**New** to create a new **Sales origin**
+Go to Sales and marketing \> Setup \> Sales orders \> Sales origin, click **New** to create a new **Sales origin**.
 
--   Enter the **Sales origin** e.g. WorkOrder
+-  Enter the **Sales origin** e.g. WorkOrder
+-  Enter the **Description** e.g. Field Service Work Order
+-  Checkmark **Origin type assignment**
+-  Set **Sales origin type** to **Work order integration**
+-  Click **Save**
 
--   Enter the **Description** e.g. Field Service Work Order
+### Template mapping in Data integration
 
--   Checkmark **Origin type assignment**
-
--   Set **Sales origin type** to **Work order integration**
-
--   Click **Save**
-
-Template mapping in Data integration
-
-*Will insert screenshots of the final mapping for the 5 tasks, once finalized.*
+Will insert screenshots of the final mapping for the 5 tasks when the feature is finalized.
