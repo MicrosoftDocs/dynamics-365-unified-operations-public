@@ -45,8 +45,7 @@ This list is intended to help you consider these removals and deprecations for y
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
-No features have been removed or deprecated with this release.
-
+No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
