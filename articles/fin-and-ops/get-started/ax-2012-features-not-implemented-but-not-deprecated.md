@@ -141,11 +141,11 @@ To see a table listing when each version of the product was released, see [Softw
 <td>Implemented in version 7.2 (July 2017 update)</td>
 </tr>
 
-<tr class="odd">
-<td>US Payroll</td>
-<td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
-<td>Implemented in Dynamics 365 for Operations version 1611</td>
-</tr>
+<td>Procurement site</td>
+<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different Procurement catalogs could be configured to show on the site depending on policy. Furthermore procurement catalogs could be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hieararchy. 
+Additionally on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
+<td>Not implemented</td></tr>
+
 
 <tr class="odd">
 <td>Secure global address book</td>
@@ -426,7 +426,11 @@ Values for these supported payment specifications are used as payment specificat
 
 
 
-
+<tr class="odd">
+<td>US Payroll</td>
+<td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
+<td>Implemented in Dynamics 365 for Operations version 1611</td>
+</tr>
 
 
 
@@ -449,9 +453,8 @@ Values for these supported payment specifications are used as payment specificat
 
 
 
-<td>Procurement site</td>
-<td>In previous versions, Employee self service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different Procurement catalogs could be configured to show on the site depending on policy. Furthermore procurement catalogs could be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hieararchy. 
-Additionally on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
-<td>Not implemented</td></tr>
+
+
+
 </tbody>
 </table>
