@@ -65,6 +65,18 @@ To see a table listing when each version of the product was released, see [Softw
 </tr>
 
 <tr class="odd">
+<td>Bank payment order for Latvia and Lithuania</td>
+<td>You can print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
+<td>Not implemented</td>
+</tr>
+
+<tr class="even">
+<td>Bankgirot AP return format for Sweden</td>
+<td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
+<td>Not implemented</td>
+</tr>
+
+<tr class="odd">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
 <td>Not implemented</td></tr>
@@ -121,15 +133,19 @@ To see a table listing when each version of the product was released, see [Softw
 <td>Intelligent Data Management Framework (IDMF)</td>
 <td>IDMF is an add-on tool that lets system administrators optimize performance. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
 <td>Not implemented</td>
-  
+</tr>
+ 
+<tr class="odd">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with projects.</td>
-<td>Implemented in version 7.2 (July 2017 update)</td></tr>
+<td>Implemented in version 7.2 (July 2017 update)</td>
+</tr>
 
 <tr class="odd">
 <td>US Payroll</td>
 <td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
-<td>Implemented in Dynamics 365 for Operations version 1611</td></tr>
+<td>Implemented in Dynamics 365 for Operations version 1611</td>
+</tr>
 
 <tr class="odd">
 <td>Secure global address book</td>
@@ -410,15 +426,7 @@ Values for these supported payment specifications are used as payment specificat
 
 
 
-<tr class="odd">
-<td>Bank payment order for Latvia and Lithuania</td>
-<td>You can print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
-<td>Not implemented</td></tr>
 
-<tr class="even">
-<td>Bankgirot AP return format for Sweden</td>
-<td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
-<td>Not implemented</td></tr>
 
 
 
