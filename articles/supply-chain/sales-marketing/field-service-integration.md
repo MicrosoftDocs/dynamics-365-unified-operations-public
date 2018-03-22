@@ -85,18 +85,18 @@ The following synchronization tasks are required before synchronization of sales
 
 ### Entity flow
 
-Work orders are created in Field Service and can be synchronized to Finance and
+**Work orders** are created in Field Service and can be synchronized to Finance and
 Operations via a CDS Data Integration project, when they only include
-**Externally maintained products** and work order status differs from
-**Open-Unscheduled** and **Closed – Cancelled**. Updates on the work orders will
-be synced as the sales orders, including the information about origin type and status.
+**Externally maintained products** and the **Work order status** differs from
+**Open-Unscheduled** and **Closed – Cancelled**. Updates on the **Work orders** will
+be synced as the **Sales orders** in Finance and Operations, including the information about the origin type and status.
 
 ### Expected versus Used
 
-The work order products and services in Field Service have both **Estimated** and
-**Used** values for quantity and amount.  The sales orders in Finance and Operations
+The **Work Order Products and Services** in Field Service have both **Estimated** and
+**Used** values for quantity and amount. The **Sales orders** in Finance and Operations
 don’t have the same concept of **Estimated** and **Used**. To support the product allocation
-with the expected quantity on the Sales order in Finance and Operations, while keeping the used quantity to be consumed and invoiced, there are two sets of tasks that synchronize the **Work Order Products** and **Work Order
+with the expected quantity on the **Sales order** in Finance and Operations, while keeping the used quantity to be consumed and invoiced, there are two sets of tasks that synchronize the **Work Order Products** and **Work Order
 Services**: One for **Estimated** and one for **Used** values.
 
 This enables scenarios where estimated values are used for allocation or reservation in Finance and Operations while the used values are used for consumption and invoicing.
@@ -146,8 +146,8 @@ The following table shows an overview of the various combinations.
 | Services      | Closed - Posted    | Estimated       | \-            | =\> | Used                  |
 | Services      | Closed - Posted    | Used            | \-            | =\> | Used                  |
 
-Synchronization of **Estimated** versus **Used** is controlled with the two sets
-of tasks for Product lines and Services lines where predefined filters trigger
+Synchronization of **Estimated** versus **Used** is managed with the two sets
+of tasks for **Product lines** and **Services lines** where predefined filters trigger
 the correct task, and the underlying mapping ensures that the correct values for
 **Expected** versus **Used** are synchronized.
 
@@ -197,17 +197,17 @@ In this example, the Product Used Quantity of 6 and Service Estimated Quantity o
 
 #### Sales origin
 
-To keep track of sales orders in Finance and Operations, which originate work
-orders it is possible to create a **Sales origin** with **Origin type
+To keep track of sales orders in Finance and Operations, which originate **Work
+orders**, it is possible to create a **Sales origin** with **Origin type
 assignment** = **Yes** and **Sales origin type** = **Work order integration**.
 
-The mapping defaulting will set sales origin of all sales orders created from
-work orders to this sales origin. This can be useful when working with the sales
-order in Finance and Operations and it is essential to ensure that these sales
+The mapping defaults the sales origin of all sales orders created from
+work orders to the sales origin. This can be useful when working with the sales
+order in Finance and Operations. It is essential to ensure that these sales
 orders originating from work orders do not synchronize back to Sales as sales
 orders.
 
-See Preconditions and Mapping setup for details on creating the correct sales
+The **Preconditions and Mapping setup** section discusses the details for creating the correct sales
 origin setup in Finance and Operations.
 
 #### Status
