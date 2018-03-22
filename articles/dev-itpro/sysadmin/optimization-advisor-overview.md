@@ -1,9 +1,8 @@
 ---
-
 # required metadata
 
 title: Optimization advisor overview
-description: This topic discusses how to use Optimization advisor to ensure optimal cofiguration of Dynamics 365 Finance and Operations, Enterprise edition. 
+description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations, Enterprise edition. 
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/19/2018
@@ -35,72 +34,70 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses how to use Optimization advisor to ensure optimal cofiguration of Dynamics 365 Finance and Operations, Enterprise edition. 
+This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
 
 ## Overview
 
-The incorrect module configuration and setup can adversely affect the feature availability and performance of Finance and Operations as well as the smooth operation of business processes. Business data quality, such as data correctness, completeness, and cleanliness, also has impacts on system performace and organizations, for example, decision making, productivity, and so on.    
+Incorrect configuration and setup of a module can adversely affect the availability of features in Finance and Operations, system performance, and the smooth operation of business processes. The quality of business data (for example, the correctness, completeness, and cleanliness of the data) also affects system performance, and an organization's decision-making capabilities, productivity, and so on.
 
-The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions to identify the issues in module configuration and business data. The **Optimization advisor** suggests best practices for module configuration and specifies which business data is obsolete or incorrect.
+The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions identify issues in module configuration and business data. Optimization advisor suggests best practices for module configuration and identifies business data that is obsolete or incorrect.
 
-The **Optimization advisor** runs a set of best practice rules on a perodic basis. When a violation of a rule is detected, an optimization opportunity is created and displayed on the **Optimization advisor** page. A user can take corrective action from the **Optimization advisor** page direclty and correct the violation.
+Optimization advisor periodically runs a set of best practice rules. A default set of rules is released together with Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). However, users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create new rules](./optimization-advisor.md).
 
-The standard security policies apply to optimization opportunties. For example, the optimization opportunities that are related to the **Warehouse management** module configuration are visible only to users that have access and can make changes to **Warehouse managemnet** setup.
+When a violation of a rule is detected, an optimization opportunity is generated and appears in the **Optimization advisor** workspace. A user can take appropriate corrective action directly from the **Optimization advisor** workspace.
 
-Opportunites are displayed for end users to take appropriate actions. Opportunities can be company specific or cross-company, depending on the type of setup and data that are being validated. Cross-company opportunities can be viewed from all companies. To see the opportunities for a specific company, select the company first and then view the opportunities.  
+Opportunities can be company-specific or cross-company, depending on the type of setup and data that is being validated. Cross-company opportunities can be viewed from all companies. To view the opportunities for a specific company, you must first select the company.
 
-In addition to the set of rules that are shipped with Finance and Operations, Enterprise edition Spring 2018 update, users can create rules that are specific to their ustomizations, ISV solutions, and business data. For more information about how to create new rules, see [Create new rules](./optimization-advisor.md).
+Standard security policies apply to optimization opportunities. For example, the optimization opportunities that are related to configuration of the **Warehouse management** module are visible only to users who have access to Warehouse management and can change its setup.
 
-When you take action on an opportunity, the system calculates the impact of the opportunity, in terms of business process runtime reduction. Unfornately, this feature is avaialbe for some optimization opportunities, but not for all optimization opportunities.
+When you take action on some optimization opportunities, the system calculates the impact of the opportunity in terms of the reduction in the runtime of business processes. Unfortunately, this feature isn't available for all optimization opportunities.
 
-For learn more about the **Optimization advisor**, watch the short YouTube video:
+To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations, Enterprise edition](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## Optimization rules
 
-To see the complete list of **Optimization advisor** rules and how often the rules are evaluated, navigate to: **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**. For a rule to be validated, it must have status **Active**. The validation frequency can be set to **Daily**, **Weekly**, **Monthly** or **Unscheduled**.
+To view the complete list of Optimization advisor rules and to see how often the rules are evaluated, go to **System administration** &gt; **Periodic tasks** &gt; **Maintain diagnostics validation rule**. Only rules that have a status of **Active** are evaluated. The evaluation frequency can be set to **Daily**, **Weekly**, **Monthly**, or **Unscheduled**.
 
-When you want to trigger the validation of unscheduled rules, or when you want to reevaluate periodic rules outside their predefined schedule, navigate to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**. In the **Diagnostic rule validation** dialog, choose a frequency. All rules that have the specified frequency will be reevaluated.
+To trigger the evaluation of unscheduled rules, or to reevaluate periodic rules outside their predefined schedule, go to **System administration** &gt; **Periodic tasks** &gt; **Schedule diagnostics validation rule**. Then, in the **Diagnostic rule validation** dialog box, select an evaluation frequency. All rules that have the specified frequency will be reevaluated.
 
-The current set of optimization rules can be divided into the following categories:
+The current set of optimization rules can be divided into the following categories.
 
-### 1. Module configuration and setup
+### Module configuration and setup
 
-Warehouse management setup is a complicated process. For ease of setup, a few rules have been introduced to help validating the correctness of the setup, such as the warehouse location directive setup for fixed product variant locations, for sales orders, and transfer orders.
+The setup of Warehouse management is a complicated process. To make the process easier, some rules have been introduced to help validate the correctness of the setup. For example, one rule validates the setup of warehouse location directives for fixed product variant locations for sales orders and transfer orders.
 
-There are a few rules that check whether features that have been enabled are actually being used. For example, there is a rule that checks whether you are using the **Master planning** module. If it identifies that you are not using the module, then it will create an optimization opportunity that suggests to turn off the planning processes.  
+Additionally, some rules check whether features that have been enabled are actually used. For example, one rule determines whether you're using the **Master planning** module. If the rule determines that you aren't using the module, an optimization opportunity is generated to suggest that you turn off the planning processes.
 
-### 2. System configuration
+### System configuration
 
-If certain functionality controlled by a configuration key is not used, an optimization opportunity will be generated to suggest to disable the configuration key. Examples include **Catch weight**, **Budget planning**, **Project**, **Approved vendor list configuration keys**.
+If specific functionality that is controlled by a configuration key isn't used, an optimization opportunity is generated to suggest that you disable the configuration key. Examples of configuration keys include **Catch weight**, **Budget planning**, **Project**, and **Approved vendor list**.
 
-### 3. Business data consistency and cleanup
+### Business data consistency and cleanup
 
-If master data is not correct, for example, you have unit of measure conversions for units that have not been defined, or you have unit of measure conversions that have a division by 0, then the rules that controll this process will be triggered and an optimization opportunity will be created to suggest to correct the data. 
+If master data isn't correct (for example, if you have unit of measure conversions for units that haven't been defined, or if you have unit of measure conversions that have a division by 0 \[zero\]), an optimization opportunity is generated to suggest that you correct the data. 
 
-If you have too many or too old batch job history entries, obsolete items, closed on-hand entries for warehouse enabled items, etc, you will also see the optimization opportunities that are created to suggest to clean up the data. Keeping your data clean improves overall system performance.
+If you have too many batch job history entries, obsolete items, closed on-hand entries for warehouse enabled items, and so on, or if those entries and items are too old, optimization opportunities are generated to suggest that you clean up the data. By keeping your data clean, you can help improve overall system performance.
 
-### 4. Best practices
+### Best practices
 
-If you are not running certain business processes according to best practices, for example, running inventory pre-closing before the inventory is closed, or use the scheduled batch for subledger journal batch transfer, you will see the optimization opportunities that inform you about what the best practice is and asks you to follow it.
+If you aren't running some business processes according to best practices (for example, if you run inventory pre-closing before the inventory is closed, or if you use the scheduled batch for subledger journal batch transfer), optimization opportunities inform you about the best practice and ask that you follow it.
 
 ## Optimization opportunities
 
-To view the optimization opportunities that result from the evaluation of optimization rules, navigate to the **Optimization advisor** page available from the default dashboard.
+To view the optimization opportunities that are generated during the evaluation of optimization rules, open the **Optimization advisor** workspace.
 
-On this page, you can get more information about an opportunity by clicking the **More information** button. If you want the system to take action and correct the setup, clean the data, etc. instead of having you to navigate to the corresponding pages, you can click the **Take action** button. 
+In this workspace, you can view more information about an opportunity by selecting **More information**. If you want the system to take action and correct the setup, clean the data, and so on, so that you don't have to open the corresponding pages yourself, select **Take action**.
 
-There is no workflow for optimization opportunities. Once you have clicked **Take action** or a navigation path available in the **More information** dialog, the optimization opportunity will dissapear from the list. If the corrective action doesn't solve the issue completely, next time when the rule is evaluated, the opportunity will be generated again.
+There is no workflow for optimization opportunities. After you select **Take action** or use a navigation path that is provided in the **More information** dialog box, the optimization opportunity disappears from the list. If the corrective action doesn't completely resolve an issue, the opportunity will be generated again the next time that the rule is evaluated.
 
-If an opportunity doesn't apply to your role, you can select **Hide from my list**. Even if the rule behind this opportunity will be triggered again, you won't see this opportunity in your list.
+If an opportunity doesn't apply to your role, you can select **Hide from my list**. Even if the rule behind this opportunity is triggered again later, you won't see the opportunity in your list.
 
-If you want to deactivate the evaluation of certain rules, click the opportunity generated by the rule and then click **Deactivate analysis**.
+To deactivate the evaluation of specific rules, select the opportunity that was generated by the rule, and then select **Deactivate analysis**.
 
-## See also 
+## See also
 
 [Create new rules](./optimization-advisor.md)
 
-[Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-
-
+[Optimization advisor in Dynamics 365 for Finance and Operations, Enterprise edition (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
