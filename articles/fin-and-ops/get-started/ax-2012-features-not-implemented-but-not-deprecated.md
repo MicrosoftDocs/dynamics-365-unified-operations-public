@@ -52,11 +52,21 @@ To see a table listing when each version of the product was released, see [Softw
 </thead>
 <tbody>
 
+<tr class="even">
+<td>Absence management in Human resources</td>
+<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Implemented in Microsoft Dynamics 365 for Talent</td>
+</tr>
+
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Alerts help users keep track of data changes in the system.</td>
 <td>Implemented in platform update 15</td>
 </tr>
+
+<td>Client right-to-left (RTL) layout</td>
+<td>RTL layout is now supported.</td>
+<td>Implemented in platform update 2</td></tr>
 
 <tr class="even">
 <td>Cost accounting</td>
@@ -94,11 +104,7 @@ To see a table listing when each version of the product was released, see [Softw
 
 
 
-<tr class="even">
-<td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
-<td>Implemented in Microsoft Dynamics 365 for Talent</td>
-</tr>
+
 <tr class="odd">
 <td>US Payroll</td>
 <td>US Payroll provides gross-to-net processing for employees in the United States. In Payroll, you can set up, enter, and maintain all payroll records and transactions. </td>
@@ -108,9 +114,8 @@ To see a table listing when each version of the product was released, see [Softw
 <td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
 <td><p>External questionnaire functionality hasn't been implemented.</p><p>Recruiting functionality is available in the Attract app for Talent.</p></td></tr>
 
-<td>Client right-to-left (RTL) layout</td>
-<td>RTL layout is now supported.</td>
-<td>Implemented in platform update 2</td></tr>
+
+
 <tr class="odd">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
