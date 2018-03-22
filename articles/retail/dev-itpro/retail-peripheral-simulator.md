@@ -229,7 +229,7 @@ Changes to configured cash drawers aren't effective until a new shift is created
 
 Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
 
-It is possible that, at install time, certain assemblies related to the virtual peripheral simulator registered improperly. This issue is often sufaced with an 'OPOS_E_CLOSED' error when attempting to use virtual device. This can be recitfied by running the Windows Assembly Registration tool. To re-register the assmebly 'Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll' open a command prompt as administrator and execute 'regasm /codebase "C:\Program Files (x86)\Microsoft Dynamics 365\70\Peripheral simulator for Retail\Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll"'.
+At install time, it's possible that certain assemblies related to the virtual peripheral simulator were registered incorrectly. This issue is often associated with an 'OPOS_E_CLOSED' error when attempting to use a virtual device. This can be corrected by running the Windows Assembly Registration tool. To register the assembly (called Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll), open a command prompt as administrator and run 'regasm /codebase "C:\Program Files (x86)\Microsoft Dynamics 365\70\Peripheral simulator for Retail\Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll"'.
 
 ## POS simulator
 
