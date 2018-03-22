@@ -71,7 +71,8 @@ These are the high-level steps og the production environment upgrade process, cu
     - Make sure you have a production environment already deployed with your customizations, a mock database upgrade will occur on your production environment.
     - Mock cutovers are performed during business hours, Monday to Thursday, in the US Pacific timezone.
 2.  Turn of AX 2012 AOS instances.
-3.	Create a backup of the AX 2012 database.
+3.	Create a backup of the AX 2012 database and run T-SQL script against the original database.
+    - During a mock cutover, you run T-SQL against a copy of the original database.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 5.	Upload the bacpac file to the AOS machine.
 6.	Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. 
@@ -86,11 +87,10 @@ The next sections contain more details.
 This task involves the AX 2012 system administrator and the server administrators.
 
 The following areas should be validated:
-
 - **Batch jobs that are running at the time of cutover** – A long-running batch job that has already started to run will prevent the system from stopping. Plan ahead, so that you can stop your AOS instances at the desired moment. You might have to schedule batches so that they're completed some time before you turn off AX 2012.
 - **Integrated systems** – You might have other systems that are integrated with the AX 2012 environment. You must factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
 
-### Create a backup of the AX 2012 database
+### Create a backup of the AX 2012 database and run T-SQL script
 
 This task involves the DBA. The backup will be used if a rollback is required. It will also be used as a reference point that will be kept for a period and show the system state at the moment of cutover.
 
@@ -99,6 +99,8 @@ The following areas should be validated:
 - Adjust the backup options that are used (for example, compression versus non-compression), to help guarantee the fastest possible backup.
 
 After the backup is created, run the following Transact-SQL (T-SQL) script against the original database.
+(In the case of a mock cutover you should run the T-SQL script against a copy of the original database)
+
 ```
     --remove NT users as these are not supported in Azure SQL Database
     declare 
@@ -198,36 +200,39 @@ After the backup is created, run the following Transact-SQL (T-SQL) script again
 This task involves the DBA. The output of this task is the export file that will be uploaded to Microsoft Azure for the new system.
 
 The following areas should be validated:
-
 - Get concrete timings for the backup process.
 - Optimize the export process to help guarantee the fastest possible experience. Optimization might require the following tasks:
-
     - Measure system resources during export, such as CPU, disk I/O, and memory.
     - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource.
+
+You should already be familiar with this process if you have performed a data upgrade test on your sandbox environment as described in the [topic](./upgrade-data-sandbox.md).
 
 ### Upload the bacpac file to Azure storage
 
 This task involves the DBA or the server administrators. During this task, the bacpac file is moved into Azure.
 
-The following areas should be validated:
+The bacpac file you have created needs to be copied to the AOS virtual machine (VM) in your Azure hosted sandbox environment. There are several reasons for this:
+   1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
+   2. Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.
 
-- Select the machine that will be used for upload, and make sure that the Azure Storage explorer tool is configured and ready to use.
+You can choose how you would like to move the bacpac file to the sandbox AOS VM. A fast option is to use Microsoft Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics 365 subscription itself). There are free tools to help you to move files between Azure storage: From the command line you can use [Azcopy](docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](azure.microsoft.com/en-us/features/storage-explorer/). Use one of these tools to upload the backup from your on-premises environment to Azure storage. You can then download it to your sandbox AOS VM.
+A free option is to use the LCS asset library, the upload and download will take longer than Azure storage. To do this log into your project in LCS and go to your asset library, select the Database backup tab, and upload the created bacpac file. You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that machine and downloading from the asset library.
+
+The following areas should be validated:
 - Get concrete timings for the upload process by measuring it several times. Upload times will vary, based on the speed of your Internet connection and the geographical location of the Azure datacenter in relation to your location.
 
 ### Download and import the bacpac file to the Azure SQL database
 
-This task involves your DBA. The outcome of this task is the export file that will be uploaded to Azure for the new system.
+This task involves your DBA. The outcome of this task is a SQL Azure database that is ready to by upgraded. You should already be familiar with the import process if you have performed a data upgrade test on your sandbox environment as described in the [sandbox upgrade topic](./upgrade-data-sandbox.md). 
+Perform this task directly on the AOS virtual machine (VM) in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance. However, by using the AOS machine, you can gain access. For performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure VMs, drive D is a physical disk that typically has higher performance than other available disks.
 
 The following areas should be validated:
 
 - Get concrete timings for the import process.
 - Optimize the export process to help guarantee the fastest possible experience. Optimization might require the following tasks:
-
     - Measure system resources during export. Here are some examples:
-
         - **On the AOS machine:** CPU, disk I/O, and memory
         - **On the Azure SQL Database instance:** SQL database throughput (DTU). You can monitor Azure SQL DTU from Microsoft SQL Server Management Studio on the AOS machine by looking at the sys.dm_resource_stats system view.
-
     - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource. Because this machine is Microsoft-hosted, you must submit a request to Microsoft to increase resources if you identify that they are a bottleneck.
 
 ### Execute the data upgrade process
@@ -238,12 +243,13 @@ The DSE team will perform this task, the old database structure is transformed t
 We strongly recommend that you have first performed your analysis and debugging process in a development and sandbox environment. In a sandbox environment, debugging and analysis options are more restricted. The goal is to have few or no issues that must be addressed when you do cutover testing.
 
 The following areas should be validated:
-
 - Get concrete timings for the import process.
 - Optimize the process to help guarantee the fastest experience. Optimization might require the following tasks:
     - Monitor the performance of individual upgrade scripts through the ReleaseUpdateScriptsExecution table.
     - Adjust scripts to optimize performance. This task might require that you customize a script’s X++ code to optimize it for your dataset.
     - Monitor Azure SQL DTU by using Microsoft Dynamics Lifecycle Services (LCS) monitoring or the sys.dm_resources_stats system view in Management Studio. If resources are maxed out, you might have to request a higher database level from the Microsoft DSE team.
+
+The Microsoft DSE team will notify you when the upgrade is complete. At this point you can complete a smoke test of the environment and perform any functional configuration tasks required before allowing the end users into the new system.
 
 ### Roll back to AX 2012
 
