@@ -51,15 +51,16 @@ To see a table listing when each version of the product was released, see [Softw
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Intelligent Data Management Framework (IDMF)</td>
-<td>IDMF is an add-on tool that lets system administrators optimize performance. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
-<td>Not implemented</td>
 </tr><tr class="odd">
 <td>Alerts</td>
 <td>Alerts help users keep track of data changes in the system.</td>
 <td>Implemented in platform update 15</td>
 </tr>
+
+<tr class="odd">
+<td>Intelligent Data Management Framework (IDMF)</td>
+<td>IDMF is an add-on tool that lets system administrators optimize performance. IDMF assesses the health of the application, analyzes current usage patterns, and helps reduce database size.</td>
+<td>Not implemented</td>
 <tr class="even">
 <td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
 <td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
