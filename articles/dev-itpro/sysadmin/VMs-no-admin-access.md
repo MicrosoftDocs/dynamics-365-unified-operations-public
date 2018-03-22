@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Virtual machines that do not allow administrator access
-description: This topic provides answers to frequantly asked questions about virtual machiens that do not allow administrator access.
+title: FAQ about virtual machines that do not allow administrator access
+description: This topic provides answers to frequantly asked questions (FAQs) about virtual machiens that do not allow administrator access.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 03/22/2018
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Virtual machines that do not allow administrator access
+# FAQ about virtual machines that do not allow administrator access
 
 [!include[banner](../includes/banner.md)]
 
