@@ -32,6 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 # Virtual machines that do not allow administrator access
 
 [!include[banner](../includes/banner.md)]
+
 This topic provides answers to frequently asked questions about platform udpate 12 and later Tier 1 virutal machines (VMs) that do not allow administrator access.
 
 ## How can I install a deployable package?  
