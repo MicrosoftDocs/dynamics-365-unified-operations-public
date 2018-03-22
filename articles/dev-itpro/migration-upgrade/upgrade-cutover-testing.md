@@ -243,7 +243,7 @@ The following areas should be validated:
   - Measure system resources during export. Here are some examples:
    - **On the AOS machine:** CPU, disk I/O, and memory
    - **On the Azure SQL Database instance:** SQL database throughput (DTU). You can monitor Azure SQL DTU from Microsoft SQL Server Management Studio on the AOS machine by looking at the sys.dm_resource_stats system view.
-  - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource. Because this machine is Microsoft-hosted, you must submit a request to Microsoft to increase resources if you identify that they are a bottleneck.
+  - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource. This may mean you need to run this process on a sandbox that belongs to a higher tier like a Standard or Premier Performance Test.
 
 ### 7. Request the DSE team to start the data upgrade process
 
