@@ -38,7 +38,6 @@ You can export financial data using the formats specified by the Standard Import
 2. In the Export to SIE file form enter the Reporting date, Budget model and Format mapping (SIE export format (SE). 
 3. Click OK button. 
 4. In Electronic report parameters form select one of the following options in the SIE type field : 
-  - Type 1 
   - Type 2 – Exports year-end balances and period balances. 
   - Type 3 – Exports dimension balances. 
   - Type 4I – Exports transactions. 
