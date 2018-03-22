@@ -37,6 +37,7 @@ This page points you to resources that can help you learn about the new features
 
 |Release | Build number | Availability | Learn more |
 |--------|--------------|--------------|------------|
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | March 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Dynamics 365 for Retail 7.3.2**. |
 |Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | March 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Dynamics 365 for Retail 7.3.1**. |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | February 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Dynamics 365 for Retail 7.3**. |
 |Application update 5 | 7.2.21792.64093 | February 2018 | 1. Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Click the **What's New** tab.<br><br>3. Click the **Dynamics 365 for Retail** check box.<br><br>4. Search for features **Released with Application update 5**. |
