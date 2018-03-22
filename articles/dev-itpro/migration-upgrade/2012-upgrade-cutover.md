@@ -52,7 +52,7 @@ These are the high-level steps of the production environment upgrade process.
     - Make sure you have already completed a successful mock cutover.
     - Mock cutovers requests are subject to availability of the DSE team, please plan ahead.
 2.  Turn of AX 2012 AOS instances.
-3.	Backup the AX 2012 database and run T-SQL scripts on the original database.
+3.	Backup the AX 2012 database and run T-SQL scripts against the original database.
 4.	Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
 5.	Upload the bacpac file.
 6.	Download the bacpac file to the Application Object Server (AOS) virtual machine in the sandbox environment, and then import it by using SQLPackage.exe. 
