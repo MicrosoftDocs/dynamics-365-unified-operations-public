@@ -205,7 +205,7 @@ The following areas should be validated:
     - Measure system resources during export, such as CPU, disk I/O, and memory.
     - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource.
 
-You should already be familiar with this process if you have performed a data upgrade test on your sandbox environment as described in the [topic](./upgrade-data-sandbox.md).
+You should already be familiar with this process if you have performed a data upgrade test on your sandbox environment as described in the [sandbox upgrade topic](./upgrade-data-sandbox.md).
 
 ### Upload the bacpac file to Azure storage
 
@@ -215,7 +215,7 @@ The bacpac file you have created needs to be copied to the AOS virtual machine (
    1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
    2. Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.
 
-You can choose how you would like to move the bacpac file to the sandbox AOS VM. A fast option is to use Microsoft Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics 365 subscription itself). There are free tools to help you to move files between Azure storage: From the command line you can use [Azcopy](docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](azure.microsoft.com/en-us/features/storage-explorer/). Use one of these tools to upload the backup from your on-premises environment to Azure storage. You can then download it to your sandbox AOS VM.
+You can choose how you would like to move the bacpac file to the sandbox AOS VM. A fast option is to use Microsoft Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics 365 subscription itself). There are free tools to help you to move files between Azure storage: From the command line you can use [Azcopy](http://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://azure.microsoft.com/en-us/features/storage-explorer/). Use one of these tools to upload the backup from your on-premises environment to Azure storage. You can then download it to your sandbox AOS VM.
 A free option is to use the LCS asset library, the upload and download will take longer than Azure storage. To do this log into your project in LCS and go to your asset library, select the Database backup tab, and upload the created bacpac file. You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that machine and downloading from the asset library.
 
 The following areas should be validated:
