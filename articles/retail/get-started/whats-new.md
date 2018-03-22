@@ -18,8 +18,6 @@ audience: Application User, IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail 
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl
@@ -33,7 +31,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail.
 
-[!include[release-notes](../../includes/release-notes.md)]
+[!include[release notes](../../includes/release-notes.md)]
 
 ## Releases of Dynamics 365 for Retail
 
