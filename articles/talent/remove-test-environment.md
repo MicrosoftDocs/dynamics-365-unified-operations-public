@@ -55,8 +55,6 @@ To remove the entire PowerApps environment, including Talent and the associated 
 > [!Important]
 > Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent.
 
-Before removing the PowerApps environment, make sure that it isn't being use for rich data integrations outside the scope of Talent. 
-
 1. Navigate to the [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
 2. Select **Environments**.
 3. Select the environment to be removed. 
@@ -72,11 +70,11 @@ Before removing the PowerApps environment, make sure that it isn't being use for
 9. Select the instance to remove. 
 10. Select **Remove instance** and confirm your decision. 
 
-To remove a Talent environment from an existing PowerApps environment, complete the following steps. 
+To remove a Talent environment from an existing PowerApps environment, complete the following steps. Note that the need to involve support and contact the Talent DevOps team is temporary until this feature is enabled directly in LCS.
 
-1. Contact Support to initiate a removal request (temporary).
-2. The Support team will initiate a removal request with the Talent DevOps team (temporary). 
-3. Continue after you receive word that the environment has been removed (temporary).
+1. Contact Support to initiate a removal request.
+2. The Support team will initiate a removal request with the Talent DevOps team. 
+3. Continue after you receive word that the environment has been removed.
 4.  Sign in to LCS using the account that you used to subscribe to Talent. 
 5. Select the Talent project that contains the environment. 
 6. In your LCS project, select the **Talent App Management** tile. 
