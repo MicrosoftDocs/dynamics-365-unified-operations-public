@@ -42,7 +42,7 @@ Incorrect configuration and setup of a module can adversely affect the availabil
 
 The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions identify issues in module configuration and business data. Optimization advisor suggests best practices for module configuration and identifies business data that is obsolete or incorrect.
 
-Optimization advisor periodically runs a set of best practice rules. A default set of rules is released together with Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). However, users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create new rules](./optimization-advisor.md).
+Optimization advisor periodically runs a set of best practice rules. A default set of rules is released together with Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). However, users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create new rules](./create-rules-optimization-advisor.md).
 
 When a violation of a rule is detected, an optimization opportunity is generated and appears in the **Optimization advisor** workspace. A user can take appropriate corrective action directly from the **Optimization advisor** workspace.
 
@@ -98,6 +98,6 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 
 ## See also
 
-[Create new rules](./optimization-advisor.md)
+[Create new rules](./create-rules-optimization-advisor.md)
 
 [Optimization advisor in Dynamics 365 for Finance and Operations, Enterprise edition (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
