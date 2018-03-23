@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,21 +34,21 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment.
+This topic explains how to upgrade an older database to the latest Finance and Operations application release.
+
+The topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. The instructions also apply to Standard/Premier Acceptance Test sandbox environments (Tier 2 or 3) or higher sandbox tiers.
 
 In some Tier 2 or higher environments, the Microsoft Service Engineering Team (DSE) will run the data upgrade for you. For more information, see the end-to-end upgrade process in [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release).
 
-This topic explains how to upgrade an older database to the latest Finance and Operations application release. 
-
 > [!IMPORTANT]
-> - You do **not** have to upgrade your database if you're updating to the latest platform of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 7.3.
 > - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 
 1. Back up your current database.
-2. You must have a functional demo or development environment that is already successfully running the latest Finance and Operations update.
-3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the destination environment:
+2. You must have a functional environment that is already successfully running the latest Finance and Operations update.
+3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the **destination** environment:
 
     - KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync."
     - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys."
@@ -57,13 +57,12 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
     If you're upgrading to a version that is newer than the May 2016 release, you do **not** have to install these hotfixes. They are already included.
 
-4. In the source environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
+4. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
 
     - **If you're upgrading from the February 2016 release (also known as RTW or 7.0) (build 7.0.1265.3015):** KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release."
     - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1) (build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
     - **If you're upgrading from the July 2017 release (also known as 7.2) (build 7.2.11792.56024):** No hotfix is required for this version.
-
-5. In any one-box (Development, Demo) environment, after you install the application hotfixes from step 4, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
+    - After you install application hotfixes required in this step, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
     ```
     cd J:\AosService\WebRoot\bin>
@@ -71,7 +70,7 @@ This topic explains how to upgrade an older database to the latest Finance and O
     Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
     ```
 
-5. If you're upgrading to the July 2017 release (also known as 7.2) (build 7.2.11792.56024), apply the following application X++ hotfixes in the destination environment before you run the data upgrade in that environment. These hotfixes will prevent various errors from occurring during the data upgrade.
+4. If you're upgrading to the July 2017 release (also known as 7.2) (build 7.2.11792.56024), apply the following application X++ hotfixes in the **destination** environment before you run the data upgrade in that environment. These hotfixes will prevent various errors from occurring during the data upgrade.
 
     - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.'
     
@@ -79,19 +78,19 @@ This topic explains how to upgrade an older database to the latest Finance and O
 
     - KB 4045801 - "Scheduler job has failed" error encountered when upgrading from Fall 2016 update to July 2017 update.
 
-6. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
+5. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
 
     - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
-7. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
+6. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
     ```
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
+7. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
 ## Select the correct data upgrade deployable package
 
@@ -128,9 +127,8 @@ This step is required if you're upgrading a database from the February 2016 rele
 2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
     > [!NOTE]
-    > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).
-    
-    > [!NOTE]
+    > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md).   
+    > 
     > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 
 3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
@@ -142,9 +140,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 4. Create a backup of the source database, in case you have to revert to it. This step is important, because the following steps will modify the source database.
 
-5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package.
-
-For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
+5. Execute the data upgrade package from the **C:\\Temp\\DataUpgrade** folder (the location that you extracted the deployable package to earlier). Executing a data upgrade package is similar to installing any software deployable package. For detailed instructions, see [Install a deployable package](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology). Start at the section titled **Generate a runbook from the topology** then execute the steps in the section 
 **Install a deployable package**. 
 
 > [!NOTE]
