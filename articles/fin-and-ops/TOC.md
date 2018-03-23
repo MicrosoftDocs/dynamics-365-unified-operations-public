@@ -1680,6 +1680,7 @@
 
 ## [Product information management](../supply-chain/pim/product-information.md)
 ### Product information
+#### [Product identifiers](../supply-chain/pim/product-identifiers.md)       
 #### [Create a hierarchy of product classification (Task guide)](../supply-chain/pim/tasks/create-hierarchy-product-classification.md)
 #### [Classify a product using category hierarchies (Task guide)](../supply-chain/pim/tasks/classify-product-category-hierarchies.md)
 #### [Product number nomenclature](../supply-chain/pim/product-variant-identification-nomenclature.md)
