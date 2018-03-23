@@ -5,7 +5,7 @@ title: Data task automation
 description: 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/18/2018
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,7 +28,8 @@ ms.dyn365.ops.version: Platform update 14
 
 # Data task automation
 
-Data task automation enables automation of certain types of data tasks for specific scenarios. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
+The data task automation system lets you automate certain types of data tasks. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
+
 1.	Identify the data related tasks that will benefit from task automation. A task would usually be a configuration task or a task to import/export some data. Implementation teams must look at their configuration management and data migration plan to identify potential tasks that can benefit from task automation. Implementation teams can also identify test cases for automated testing of data entities. Each test case can then be defined as a task.
 2.	The task automation manager expects the data packages to be available in the asset library of an LCS project. It is up to the implementation teams to identify the LCS project based on other decision-making factors. With data packages available in LCS project, task automation manager can consume the packages from any environment (sandbox and/or production) making the consumption of data packages easy across environments.
 3.	The task automation manager drives off an XML manifest which must define each task that is automated. If task automation is used only to configure data projects but not to import/export actual data, the manifest enables such option. In this context, the manifest can be source controlled for effective configuration management as part of the overall ALM.
@@ -40,43 +41,43 @@ Note: Task automation is currently not supported for on premise environments.
 
 The following sections goes into the details for each of these aspects.
 
-### Task manifest
+## Task manifest
 Once the task has been identified, it must be defined in an XML manifest. This section describes the manifest. Refer to the best practice section for guidance on how to name and design the manifest.
 
-### Manifest root
+## Manifest root
 The <TestManifest>  is the root of the manifest. All the elements are children of this element.
 
 ![Manifest](./media/Manifest.png)
 
-### Shared set up
+## Shared set up
 The shared set up section provides for defining the generic task parameters and task behavior for all tasks in the manifest. This enables maintainability of the manifest.
 
 ![Shared set up](./media/SharedData.png)
 
-### Data files
+## Data files
 The <DataFile> element allows to define the data packages and/or data files that must be used by the tasks in the manifest. The data files must be in the LCS asset library of an LCS project or it can be in the shared asset library.
 Note: The user account running the task automation manager in Dynamics 365 for Operations and Finance must have access to LCS and the LCS project that is referenced in the manifest for data packages.
 
 ![Data files](./media/SharedData2.png)
 
-### Data project definition
+## Data project definition
 The data project definition is defined using the <JobDefinition> element. There can be more than one job definitions in a manifest.
 
 ![JobDef](./media/JobDef.png)
 
-### Entity set up:
+## Entity set up:
 The entity set up provides for defining the characteristics of an entity that is being used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
 
 ![Entity set up](./media/EntitySetup.png)
 
 ![Entity set up](./media/EntitySetup2.png)
 
-### Test groups:
+## Test groups:
 Groups can be used to organize related tasks together in a manifest. There can be more than one group in a manifest.
 
 ![Groups](./media/Groups.png)
 
-### Best practice for manifest design
+## Best practice for manifest design
 There are different ways in which a manifest can be defined. Below are a few pointers to consider when designing the manifest.
 
 -   **Granularity** – the granularity of the manifest must be a functional
@@ -111,12 +112,12 @@ enables a process to distribute or make the manifest(s) available to all users
 in a consistent manner. This also enables configuration management for data
 management related data projects if manifests are being used to configure.
 
-### Validations
+## Validations
 The task automation manager performs validations based on the set up of a task. The validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed.
 
 ![Validations](./media/Validations.png)
 
-### Configuration management for data projects
+## Configuration management for data projects
 The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. Below is a sample for such a task. The fist one is an example to configure a data project without any recurring schedule. The second one is an example where a recurring schedule must also be configured. The difference is the value provided to the <Operation> element.
 The manifest for the configuration tasks can be source controlled to enable ALM on configuration management of data projects
 
@@ -124,15 +125,15 @@ The manifest for the configuration tasks can be source controlled to enable ALM 
 
 ![Config](./media/Config2.png)
 
-### Automating demo data set up for environments
+## Automating demo data set up for environments
 Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed thereby not having to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because, the data project import happens in the specified legal entity thereby eliminating for the user to switch companies to import a data package. Below is an example task for demo data import where the demo data packages are in the shared asset library.
 
 ![Demo data](./media/DemoData.png)
 
-### Automating data migration tasks
+## Automating data migration tasks
 A similar approach to demo data tasks can be also taken to perform data imports of data packages in a data migration process. Typically, once the environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration (also called as the golden configuration data packages) data packages. After the base configuration is complete, the migrated data is imported via data management. These import tasks can be configured as tasks in a manifest and can be executed using the task automation manager to simplify and streamline this part of the data migration process.
 
-### Data entity test automation
+## Data entity test automation
 The task automation concepts can be also used to perform automated testing of data entities including integration scenarios. The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities.
 
 The automation manager has inbuilt validations to aid with confirmation of why a task failed or passed. The data validations currently supported are the following.
