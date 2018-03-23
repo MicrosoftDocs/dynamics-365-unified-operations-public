@@ -7,7 +7,7 @@ You can use Taks Guides and BPM to create your user acceptance test plan. This e
 There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing).
 
 For illustration purposes, this article uses a library with common business processes (Create Expense Report, Approve Order Request, etc) that was created via Excel Import.  
-![Import from Excel](Linke "Import from Excel")
+![Import from Excel](Link "Import from Excel")
 
 ## 2. Record Test Cases and Upload to BPM 
 
@@ -104,6 +104,8 @@ Select **Run** then **Add test cases**.
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
 ![Test Case Details](LINK "Test Case Details")
+
+Note: This examples shows the creation of a comprehensive acceptance test suite with all test cases added. You can create various test suites (i.e. basic acceptance test suite) and use custom queries to add specific test cases. 
 
 
 ### Executing manual test cases
