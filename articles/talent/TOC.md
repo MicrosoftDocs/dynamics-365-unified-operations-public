@@ -3,6 +3,7 @@
 # [Getting started](talent-get-started.md)
 ## [System requirements and update policy](talent-versions-update-policy.md)
 ## [Provision Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Remove a Talent environment](remove-test-environment.md)
 ## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
 
