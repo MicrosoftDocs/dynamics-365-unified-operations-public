@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: WHSLocDirTable  
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -29,11 +29,10 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ---
 
-# Batch balancing
+# Immediate replenishment
 
 [!include[banner](../includes/banner.md)]
 
-Immediate replenishment
 
 Immediate replenishment allows you to replenish inventory right after a location
 directive line has failed to allocate inventory. The replenishment will happen
@@ -50,7 +49,7 @@ The benefit of using immediate replenishment is that replenishment can be
 restricted by specific units and the quantity will be directed to specific
 locations.
 
-Business scenario
+## Business scenario
 
 Say that we have a warehouse with picking areas for boxes and eaches, and we
 want to optimize picking with as many boxes as possible and with the remaining
@@ -66,7 +65,7 @@ a box, will be picked from the each area. In the case of a shortage in a box
 area, we will still be able to send as many boxes as possible out of the total
 demand and the rest will be picked from the each area.
 
-Where it applies
+## Where it applies
 
 Immediate replenishment is used during wave execution if allocation fails for a
 location directive line that has a replenishment template set.
@@ -80,7 +79,7 @@ Set up immediate replenishment
 The replenishment template is applied if the location directive line fails to
 allocate a dedicated unit of measure.
 
-Troubleshooting
+## Troubleshooting
 
 If immediate replenishment is selected for a location directive line, and no
 replenishment work is generated when you use demand replenishment templates for
