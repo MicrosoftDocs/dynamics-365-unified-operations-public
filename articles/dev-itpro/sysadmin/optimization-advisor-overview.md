@@ -5,7 +5,7 @@ title: Optimization advisor overview
 description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations, Enterprise edition. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
