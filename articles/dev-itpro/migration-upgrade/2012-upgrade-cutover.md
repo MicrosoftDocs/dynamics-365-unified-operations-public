@@ -1,12 +1,11 @@
 ---
-
 # required metadata
 
 title: Upgrade from AX 2012 - Go live
 description: This topic explains the final cutover process that starts after you turn off AX 2012 and completes with Dynamics 365 for Finance and Operations running an upgraded version of your code and database.
 author: robadawy
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,8 +65,13 @@ The steps above resemble the steps you have performed during the mock cutover, r
 Before you can perform an upgrade in the production environment the following prerequisites must be met:
 -	Complete the code upgrade and data upgrade in a sandbox environment and successfully completed a functional test pass
 -	Deploy the production environment. Before the option to request the deployment of the production environment lights up you must have completed:
-    - The subscription estimator in LCS. We use this to help us size your production environment as it provides details of the throughput you’ll require.
+    - The Subscription estimator in LCS. We use this to help us size your production environment because it provides details of the throughput you’ll require.
     - The Test phase of the methodology in LCS. This is to help ensure that you’re at the stage in your project where you’re ready to start testing in the production environment.
-    - You can then submit the request to deploy the production environment. The production environment will take roughly 24 hours to deploy, so ensure you leave enough time for this to happen.
+    - After a request is submitted to Microsoft to deploy the production environment, it will take roughly 24 hours to deploy, so ensure that you leave enough time for this to happen.
 -	Apply all necessary updates and customizations (AOT deployable packages) to the production environment.
--	Work with your Microsoft Solution Architect to schedule your upgrade. To schedule an upgrade, request a timeslot with the DSE team by submitting “other” type service requests from LCS. This is to ensure that the preferred timeslots will be available for you. Be aware that there is significantly higher demand for slots during the weekend, so requesting these as far in advance as possible will help attain your preferred schedule.
+-	Work with your Microsoft Solution Architect to schedule your upgrade. To schedule an upgrade, request a timeslot with the DSE team by submitting “Other” type service requests from LCS. This is to ensure that the preferred timeslots will be available for you. Be aware that there is significantly higher demand for slots during the weekend, so requesting these as far in advance as possible will help attain your preferred schedule.
+
+## Related articles
+- [Onboarding](../../fin-and-ops/imp-lifecycle/onboard.md)
+- [Submit a service request](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
+- [Upgrade from AX 2012 - Cutover testing](./upgrade-cutover-testing.md)
