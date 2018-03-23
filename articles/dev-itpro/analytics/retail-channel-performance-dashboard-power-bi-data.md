@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail Channel Performance Power BI content
-description: This topic provides information about the Retail Channel Performance Power BI content for Dynamics AX 7.0 releases. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+title: Retail channel performance Power BI content
+description: This topic provides information about the Retail channel performance Power BI content for Dynamics AX 7.0 releases. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/02/2018
@@ -30,32 +30,32 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Retail Channel Performance Power BI content
+# Retail channel performance Power BI content
 
 [!include[banner](../includes/banner.md)]
 
 > [!Note]
 > This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
-This topic provides information about the Retail Channel Performance Power BI content for Dynamics AX. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+This topic provides information about the Retail channel performance Power BI content for Dynamics AX. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
-The Retail Channel Performance content pack lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
+The Retail channel performance content pack lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
 
--   Learn how to connect the Retail Channel Performance content pack in Power BI to a Dynamics AX data source.
+-   Learn how to connect the Retail channel performance content pack in Power BI to a Dynamics AX data source.
 -   View a list of reports that provide insights into retail channel performance.
 -   Learn how to modify an existing report in the content pack to make it self-authored.
 -   Get a glimpse of an actual data model that enables the whole experience in Power BI.
 
-## Connect the Retail Channel Performance content pack in Power BI to a Dynamics AX data source
+## Connect the Retail channel performance content pack in Power BI to a Dynamics AX data source
 1.  Go to https://www.powerbi.com, and click **Sign in**. If you don't have an account, you can sign up to try the new Power BI Preview for free.
 2.  To sign in, enter a Microsoft Office 365 account that has a Power BI account.
 3.  If your workspace appears, click **Get Data** at the bottom of the left navigation pane.
 4.  In **Services** section, click **Get**.
-5.  Scroll or search to find **Microsoft Dynamics AX Retail Channel Performance**, and then click **Get it now**.
+5.  Scroll or search to find **Microsoft Dynamics AX Retail channel performance**, and then click **Get it now**.
 6.  Enter your Dynamics AX URL in the following format: `https://<tenant>.cloudax.dynamics.com` (for example, `https://YourAOSTenant.cloudax.dynamics.com`). Then click **Next** to pull data from Dynamics AX data storage into this Power BI dashboard.
 7.  Select **oAuth2** as the authentication method, and then click **Sign in**.
 8.  To sign in, enter an Office 365 account that has permission to access your Dynamics AX environment.
-9.  After data is successfully pulled from Dynamics AX into Power BI, you can view your personal **Retail Channel Performance** dashboard in Power BI by clicking **Retail Channel Performance Dashboard** in the left navigation pane. [![Retail Channel Performance dashboard](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
+9.  After data is successfully pulled from Dynamics AX into Power BI, you can view your personal **Retail channel performance** dashboard in Power BI by clicking **Retail channel performance dashboard** in the left navigation pane. [![Retail channel performance dashboard](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
 10. You can then take advantage of the Q&A feature in Power BI to query your Dynamics AX sales data by using natural language. [![Q&A feature in Power BI](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
 
 ## View a list of reports
