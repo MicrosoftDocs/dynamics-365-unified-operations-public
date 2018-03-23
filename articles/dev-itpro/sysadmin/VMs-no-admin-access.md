@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: FAQ about virtual machines that do not allow administrator access
-description: This topic provides answers to frequantly asked questions (FAQs) about virtual machiens that do not allow administrator access.
+title: Virtual machines that don't allow administrator access FAQ
+description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 03/22/2018
@@ -29,64 +29,65 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# FAQ about virtual machines that do not allow administrator access
+# Virtual machines that don't allow administrator access FAQ
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions about platform udpate 12 and later Tier 1 virutal machines (VMs) that do not allow administrator access.
+This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. Specifically, the information in this topic applies to Tier 1 VMs that run Platform update 12 and later.
 
-## How can I install a deployable package?  
-When possible, use Lifecyle Services (LCS) to install a package. You can install a deployable package using the -devinstall option. Keep in mind that this option requires a manual database sync.
+## How can I install a deployable package?
+Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
 
-For more information about how to install a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).  
+For more information about how to install a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
 
-## Is the Dynamics 365 for Finance and Operations web site accessible when Visual Studio (VS) is not running?  
-Yes, IIS Express is an .EXE running as your user, but when you close VS the XPPC agent will start regular IIS (not IIS Express) before it shuts down. This ensures that even when you log off or the machine reboots, the AOS and Finance and Operations web site are accessible remotely. We recognize many people use these devoper machines as test machines and they expect the AOS to always be running, which can’t be done with IIS Express.  
+## Is the Finance and Operations website accessible when Visual Studio isn't running?
+Yes, you can access the Microsoft Dynamics 365 for Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps guarantee that you can remotely access the Application Object Server (AOS) instance and the Finance and Operations website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
 
-## What about the other services?  
-You can restart Windows services such as SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, MR, and IIS (using the World Wide Web Windows service, not iisreset.exe).  
+## What about the other services?
+You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, MR, and IIS. (For IIS, you must use the World Wide Web Windows service, not iisreset.exe.)
 
-## Will I be able to clean up the service volume drive?  
-Yes, you have full access to the service volume drive, so you can clean up the monitoring data, etc.
+## Can I clean up the service volume drive?
+Yes, you have full access to the service volume drive. Therefore, you can clean up the monitoring data, and so on.
 
-## What are the alternatives to the VM that do not allow administrator access?  
-An Azure VM on a private Azure subscription and a local VHD allow administrator access. In this case you need to run VS as an administrator. This is because only the administrator has access to these things through the “administrator” group and not explicitly.  
+## What are the alternatives to VMs that don't allow administrator access?
+Both a Microsoft Azure VM on a private Azure subscription and a local virtual hard disk (VHD) allow administrator access. However, you must run Visual Studio as an administrator. This requirement applies because the administrator has access to these alternatives only through the **administrator** group, not explicitly.
 
-## Can VS be run as an administrator?  
-Starting with platform update 12, this is no longer required. Connecting via RDP to a VM as an administrator is no longer allowed for VMs under a Microsoft-owned Azure subscription such as the tier 1 VM included in the subscription and tier 1 add-on VMs. However, if you are connecting as an administrator to a VM not under a Microsoft-owned subscription, you must still run VS as an administrator.  
+## Can I run Visual Studio as an administrator?
+Starting with Platform update 12, you're no longer required to run Visual Studio as an administrator. You can no longer use the Remote Desktop Protocol (RDP) to connect as an administrator to VMs that are under a Microsoft-owned Azure subscription. These VMs include the Tier 1 VM that is included in the subscription and Tier 1 add-on VMs. However, if you're connecting as an administrator to a VM that isn't under a Microsoft-owned subscription, you must still run Visual Studio as an administrator.
 
-## A "get latest" in VS fails because files are blocked by the AOS. How do we start / stop IIS?  
-You have to use IIS Express. See the next question for more information.  
+## A "get latest" operation in Visual Studio failed because files are blocked by the AOS instance. How do I start and stop IIS?
+You must use IIS Express. See the next question for more information.
 
-## What are the instructions for using IIS Express?  
-IIS Express, when started, shows an icon in the notification area (near the clock) where it shows all the running sites. You can stop if from that menu. A start in IIS Express will be triggered by some actions in VS, but you can also explicitly do it with the menu item in the “Dynamics 365” menu “Restart IIS Express.”  
+## What are the instructions for using IIS Express?
+When IIS Express is started, an icon appears in the notification area (near the clock). This icon shows all the running sites. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-## How to apply a partner VS license which is not tied to the VS log-in account that is likely within the customer AAD / domain?  
-This is not supported.  
+## How can I apply a partner Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
+This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain.
 
-## Can additional development tools (e.g. Fiddler, Pepper, etc.) be installed?  
-This is not supported.  
+## Can I install additional development tools (such as Fiddler and Pepper)?
+No, you can't install additional development tools.
 
-## Is there a way to run PowerShell & Command Prompt commands as an administrator?  
-This is not supported.  
+## Is there a way to run Windows PowerShell and command prompt commands as an administrator?
+No, you can't run Windows PowerShell commands and commands at a prompt command as an administrator.
 
-## Is the Trace Parser supported?  
-It is currently not supported but we will support it again soon.  
+## Is the Trace Parser supported?
+Although the Trace Parser isn't currently supported, we plan to add support for it again soon.
 
-## Is putting the system in maintenance mode supported?  
-Putting the system in maintenance mode to change the license configuration is supported, but using the procedure described in [Maintenance mode](maintenance-mode.md) is not supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until it is available in LCS, you can use the following steps to put a system in maintenance mode.
+## Can the system be put into maintenance mode?
+You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.
 
-1.	RDP onto the developer machine.
+1. Establish an RDP connection to the developer machine.
+2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
 
-2.	Log in to SQL Server on the developer machine using the credentials from LCS for the axdbadmin user. Then switch to the AXDB database and run the following command:
+    ```
+    update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+    ```
 
-  update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
-  
-3.	Restart the **World Wide Web Publishing Service** service to reset IIS.
+3. Restart the **World Wide Web Publishing Service** service to reset IIS.
 
-  After it is restarted, it will be in maintenance mode.
-  
-4.	Reverse the steps when done with maintenance mode activities. Set the value to 0 and restart the **World Wide Web Publishing Service** service.  
+    After the service is restarted, the system will be in maintenance mode.
 
-## Is installing a license deployable package supported?  
-This should work with the -devinstall option but a problem was found with this scenario and we are working on it.  
+4. When you've completed your maintenance mode activities, repeat steps 2 and 3, but set the value to **0** in step 2.
+
+## Can I install a license deployable package?
+You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
