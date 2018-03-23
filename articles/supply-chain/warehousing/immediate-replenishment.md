@@ -43,7 +43,7 @@ specified for this line will happen immediately.
 Immediate replenishment provides an alternative to the method where allocation
 of inventory is based on more lines in the location directive and where the
 demand is summed up at the end of the allocation and replenished in the unit of
-measure that is specified by the last line in the location directive. .
+measure that is specified by the last line in the location directive.
 
 The benefit of using immediate replenishment is that replenishment can be
 restricted by specific units and the quantity will be directed to specific
