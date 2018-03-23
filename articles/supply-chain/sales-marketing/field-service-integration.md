@@ -101,23 +101,22 @@ Services**: One for **Estimated** and one for **Used** values.
 
 This enables scenarios where estimated values are used for allocation or reservation in Finance and Operations while the used values are used for consumption and invoicing.
 
-#### Estimated:
+**Estimated**:
 
-The estimated values are used for synchronization of **Product lines** when:
+The **Estimated** values are used for synchronization of **Product lines** when:
 
 **Line Status** is **Estimated,** and **Allocated** is **Yes,** and **System
 status** is not **Closed – Posted**.
 
 The estimated values are used for synchronization of **Service lines** when:
-
 **Line Status** is **Estimated,** and **System status** is not **Closed –
 Posted**.
 
-#### Used:
+**Used**:
 
-In other cases, the used values are synchronized.
+In other cases, the **Used** values are synchronized.
 
-The following table shows an overview of the various combinations.
+The following table provides an overview of the various combinations.
 
 | **Line type** | **System Status**  | **Line Status** | **Allocated** |     | **Fin and Ops value** |
 |---------------|--------------------|-----------------|---------------|-----|-----------------------|
@@ -212,12 +211,8 @@ origin setup in Finance and Operations.
 
 #### Status
 
-The field **External work order status** is shown on the Sales order header
-**Setup** tab when the sales order originates from a work order. The **External
-work order status** shows the system status from the Field Service Work order,
-to keep track of the synchronized work order status in the Finance and
-Operations Sales order. This also provides insight to the Finance and Operations
-user about when to ship or invoice the sales order.
+The field **External work order status** is shown on the **Setup** tab on the **Sales order** header when the sales order originates from a work order. The **External work order status** shows the system status from the Field Service Work order,
+to keep track of the synchronized work order status in the Finance and Operations Sales order. This also provides insight to the Finance and Operations user about when to ship or invoice the sales order.
 
 The External work order status field can have the following values:
 
@@ -353,4 +348,4 @@ Go to Sales and marketing \> Setup \> Sales orders \> Sales origin, click **New*
 
 ### Template mapping in Data integration
 
-Will insert screenshots of the final mapping for the 5 tasks when the feature is finalized.
+(Will insert screenshots of the final mapping for the 5 tasks when the feature is finalized.)
