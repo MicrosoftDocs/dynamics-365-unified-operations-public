@@ -146,7 +146,6 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 <li>Writes a customization.</li>
 <li>Reaches out to third parties for shared-controller DSRs.</li>
 <li>Reaches out to Microsoft for activity data.</li> 
-<li>Reaches out to Microsoft for activity data.</li>
 </ul>
 </td>
 <td>

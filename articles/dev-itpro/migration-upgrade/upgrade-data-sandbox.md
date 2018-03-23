@@ -5,7 +5,9 @@ title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
 description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
+
 ms.date: 03/22/2018
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,6 +38,9 @@ ms.dyn365.ops.version: Platform update 8
 The output of this task is an upgraded database that you can use in a sandbox environment. In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
+
+> [!NOTE]
+> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## Overview of the sandbox data upgrade process
 Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Data upgrade in a development environment](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
@@ -177,6 +182,7 @@ Export the copied database to a bacpac file by using the SQLPackage.exe tool. Th
 
 > [!IMPORTANT]
 > It's very important that you install the latest version of SQL Server Management Studio before you start this step. Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.
+
 
 This step is important, because the export will have to be done again during the downtime before go-live. Here are some tips:
 

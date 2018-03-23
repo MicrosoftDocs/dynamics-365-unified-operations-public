@@ -65,7 +65,6 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
-
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
     - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
 

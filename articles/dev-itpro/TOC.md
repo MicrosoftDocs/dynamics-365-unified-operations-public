@@ -1,7 +1,7 @@
 # [Development and administration for Dynamics 365 for Finance and Operations](index.md)
-# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
-# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Demo data](../fin-and-ops/get-started/demo-data.md)
+# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Demo data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
@@ -159,7 +159,7 @@
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
 ## [Date effectivity](dev-tools/date-effectivity.md)
 ## [ISV licensing](dev-tools/isv-licensing.md)
-## [ISV licensing on-prem](dev-tools/isv-licensing-on-prem.md)
+## [ISV licensing on-premises](dev-tools/isv-licensing-on-prem.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -494,7 +494,7 @@
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
 ### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
-### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 #### [Deploy on-premises environments with Platform update 12](deployment/setup-deploy-on-premises-pu12.md)

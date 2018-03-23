@@ -192,7 +192,9 @@ After you have successfully completed upgrade testing in a Standard or Premier A
 
 For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade-cutover.md)
 
+
 ## Supported upgrade paths
 Upgrade to the cloud version of Finance and Operations is supported from AX 2012 R2 and AX 2012 R3, in private preview.  
 
 Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
+
