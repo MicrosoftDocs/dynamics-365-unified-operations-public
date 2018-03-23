@@ -99,7 +99,7 @@ Select **Add existing** and query the Tag **LCS:Test Cases**.
 
 Select **Run** then **Add test cases**.
 
-![Add Test Cases](LINK "Add Test Cases")
+![Add Test Cases](Dynamics-365-Operations/articles/dev-itpro/lifecycle-services/media/Add Test Cases.PNG "Add Test Cases")
  
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
