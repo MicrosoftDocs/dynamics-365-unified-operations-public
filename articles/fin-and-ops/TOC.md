@@ -1519,6 +1519,10 @@
 #### [Enable users to receive workflow-related email messages](organization-administration/tasks/users-receive-workflow-related-email-messages.md)
 #### [Workflow types report](organization-administration/workflow-types-report.md)
 
+### [Alerts](get-started/alerts-overview.md)
+#### [Create alerts](get-started/create-alerts.md)
+#### [Batch processing for alerts](get-started/alerts-managing.md)
+
 ### [Electronic signatures](organization-administration/electronic-signature-overview.md)
 #### [Set up electronic signatures](organization-administration/tasks/set-up-electronic-signatures.md)
 ### [Case management](organization-administration/cases.md)
