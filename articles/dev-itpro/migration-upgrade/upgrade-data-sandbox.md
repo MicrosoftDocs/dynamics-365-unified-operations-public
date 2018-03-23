@@ -240,12 +240,12 @@ After you run the commands, you may see the following warning. You can safely ig
 ![Sandbox error](./media/sandbox-2.png)
 
 
-### Run a script to update the database
+## Run a T-SQL script to update the database
 Run the following script against the imported database. The script performs the following actions:
 
--   Recreate database users.
--   Set the correct performance parameters.
--   Enable the SQL Query Store feature.
+-   Recreates database users
+-   Sets the correct performance parameters
+-   Enables the SQL Query Store feature
 
 ```
 	CREATE USER axdeployuser FROM LOGIN axdeployuser
