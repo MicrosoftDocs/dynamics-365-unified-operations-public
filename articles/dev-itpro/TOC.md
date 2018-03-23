@@ -527,7 +527,7 @@
 ### [AX 2012 upgrade - Tasks to complete after upgrade](migration-upgrade/app-validation-process.md)
 ### [AX 2012 upgrade - Functional test pass](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 upgrade - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
 #### [Single voucher and currency revaluation upgrade ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
