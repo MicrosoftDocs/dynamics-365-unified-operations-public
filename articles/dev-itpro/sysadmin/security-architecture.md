@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysSecConfiguration, SysUserGroupInfo
+ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
