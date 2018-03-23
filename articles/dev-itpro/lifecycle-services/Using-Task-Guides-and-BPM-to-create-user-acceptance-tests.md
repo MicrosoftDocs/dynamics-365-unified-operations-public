@@ -4,21 +4,19 @@ You can use Taks Guides and BPM to create your user acceptance test plan. This e
 
 ## 1 .Create a BPM library
 
-There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing
+There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing).
 
 For illustration purposes, this article uses a library with common business process such as Creating an Expense Report that was created via Excel Import.  
 ![Import from Excel](Linke "Import from Excel")
 
 ## 2. Record Test Cases and Upload to BPM 
 
-Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. 
+Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. If you're using a library that already has all desired Task Recordings attached, skip this step.
 
-Note: If you're using a library that already has all desired Task Recordings attached, skip this step.
+Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
-You can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
-
-### To create a new Task Recording and save to BPM 
-First, open the client and log in. Note: It&#39;s good practice to refresh the browser before each new recording. This creates a new user session and restarts Task Recorder, providing the most stable recording experience.
+###  Create and Save a new Task Recording 
+First, open the client and log in. 
 
 Select the company that you want to use while recording.
 
@@ -32,11 +30,13 @@ Enter a name for the recording and click **Start**. Recording begins the moment 
 
 When recording is complete, click **Stop** in the **Task Recorder Pane.**
 
-Click **Save to Lifecycle Services**.
+To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
 
 ![Task Recorder Option](LINK "Task Recorder Options")
 
 Select the library you want to save the recording to and **Save**.
+
+Otherwise, Select **Save to Disk** and follow the instructions below to upload the file to BPM.
 
 
 ### To upload an AXTR file to BPM 
@@ -53,8 +53,13 @@ Select **Browse** to find and select the file to upload, and then select **Uploa
 
 ![Upload AXTR 2](LINK "Upload AXTR 2")
 
+### Save an existing Task Recording to BPM
 
-Note: If you'd like to attach an existing Task Recording, select **Edit Task Recording**, and attach using either method outlined above.
+If you'd like to attach an existing Task Recording, log into the client.
+
+Go to **Settings &gt; Task recorder**.
+
+Select **Edit Task Recording** and attach using either method outlined above.
 
 
 ## 3. Sync with VSTS   
