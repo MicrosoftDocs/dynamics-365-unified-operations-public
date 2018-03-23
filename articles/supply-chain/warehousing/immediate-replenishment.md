@@ -90,7 +90,7 @@ replenishment work is generated when you use demand replenishment templates for
 this location directive line, two main reasons need to be investigated.
 
 -  Make sure that the demand replenishment template that is applied is set up
-    with the correct locations templates and with work templates of the type
+    with the correct location templates and with work templates of the type
     Replenishment.
 
 -  Make sure that the quantities of on-hand inventory are sufficient on the
