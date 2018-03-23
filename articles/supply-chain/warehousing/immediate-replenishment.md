@@ -70,7 +70,7 @@ demand and the rest will be picked from the each area.
 Immediate replenishment is used during wave execution if allocation fails for a
 location directive line that has a replenishment template set.
 
-Set up immediate replenishment
+## Set up immediate replenishment
 
 -   Under **Warehouse management** \> **Setup** \> **Location directives**,
     select a replenishment template for wave demand in the **Immediate
