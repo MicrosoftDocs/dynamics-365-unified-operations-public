@@ -1216,10 +1216,10 @@
 
 ### Document reporting and printing
 #### [Document Reporting Services overview](../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json)
-#### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Printing](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+#### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Run the Document Routing Agent as a Windows service](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
 #### [Help prevent long-running reports from timing out](../dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/fin-and-ops/toc.json)
