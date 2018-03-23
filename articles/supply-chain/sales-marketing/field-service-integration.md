@@ -52,15 +52,15 @@ enables synchronization of:
 ## Synchronization of Work orders from Field Service to Sales orders in Finance and Operations
 
 The following sections discusses the templates and underlying tasks that are used for
-synchronization of Work orders from Field Service to Sales orders in Finance and Operations.
+synchronization of **Work orders** from Field Service to **Sales orders** in Finance and Operations.
 
 ### Templates and tasks
 
 The following templates and underlying tasks are used to run synchronization of
-Work order from Field Service to Sales order in Finance and Operations:
+**Work order** from Field Service to **Sales order** in Finance and Operations:
 
 #### Names of the templates in Data integration
-The template **Work Orders to Sales orders (Field Service to Fin and Ops)** is used to run synchronization.
+The template **Work orders to Sales orders (Field Service to Fin and Ops)** is used to run synchronization.
 
 #### Names of the tasks in the Data integration project
 
@@ -85,7 +85,7 @@ The following synchronization tasks are required before synchronization of sales
 
 ### Entity flow
 
-**Work orders** are created in Field Service and can be synchronized to Finance and
+**Work Orders** are created in Field Service and can be synchronized to Finance and
 Operations via a CDS Data Integration project, when they only include
 **Externally maintained products** and the **Work order status** differs from
 **Open-Unscheduled** and **Closed – Cancelled**. Updates on the **Work orders** will
@@ -93,11 +93,11 @@ be synced as the **Sales orders** in Finance and Operations, including the infor
 
 ### Expected versus Used
 
-The **Work Order Products and Services** in Field Service have both **Estimated** and
+The **Work order products and services** in Field Service have both **Estimated** and
 **Used** values for quantity and amount. The **Sales orders** in Finance and Operations
 don’t have the same concept of **Estimated** and **Used**. To support the product allocation
-with the expected quantity on the **Sales order** in Finance and Operations, while keeping the used quantity to be consumed and invoiced, there are two sets of tasks that synchronize the **Work Order Products** and **Work Order
-Services**: One for **Estimated** and one for **Used** values.
+with the expected quantity on the **Sales order** in Finance and Operations, while keeping the used quantity to be consumed and invoiced, there are two sets of tasks that synchronize the **Work order products** and **Work order
+services**: One for **Estimated** and one for **Used** values.
 
 This enables scenarios where estimated values are used for allocation or reservation in Finance and Operations while the used values are used for consumption and invoicing.
 
@@ -114,7 +114,7 @@ Posted**.
 
 **Used**:
 
-In other cases, the **Used** values are synchronized.
+Used values are used for consumption and invoicing. In these cases, the **Used** values are synchronized.
 
 The following table provides an overview of the various combinations.
 
@@ -196,23 +196,21 @@ In this example, the Product Used Quantity of 6 and Service Estimated Quantity o
 
 #### Sales origin
 
-To keep track of sales orders in Finance and Operations, which originate **Work
-orders**, it is possible to create a **Sales origin** with **Origin type
+To keep track of sales orders in Finance and Operations, which originate from **Work
+Orders**, it is possible to create a **Sales origin** with **Origin type
 assignment** = **Yes** and **Sales origin type** = **Work order integration**.
 
 The mapping defaults the sales origin of all sales orders created from
-work orders to the sales origin. This can be useful when working with the sales
-order in Finance and Operations. It is essential to ensure that these sales
-orders originating from work orders do not synchronize back to Sales as sales
-orders.
+**Work Orders** to the sales origin. This can be useful when working with the **Sales
+order** in Finance and Operations. It is essential to ensure that these **Sales
+orders** originating from **Work orders** do not synchronize back to Field Service as **Work orders**.
 
 The **Preconditions and Mapping setup** section discusses the details for creating the correct sales
 origin setup in Finance and Operations.
 
 #### Status
 
-The field **External work order status** is shown on the **Setup** tab on the **Sales order** header when the sales order originates from a work order. The **External work order status** shows the system status from the Field Service Work order,
-to keep track of the synchronized work order status in the Finance and Operations Sales order. This also provides insight to the Finance and Operations user about when to ship or invoice the sales order.
+The field **External work order status** is shown on the **Setup** tab on the **Sales order** header when the sales order originates from a work order. The **External work order status** shows the system status from the **Work order** in Field Service to keep track of the synchronized work order status of sales orders in the Finance and Operations. This also provides insight to the Finance and Operations user about when to ship or invoice the sales order.
 
 The External work order status field can have the following values:
 
@@ -227,18 +225,17 @@ To support the field service integration between Field service and Finance and
 Operations, additional functionality from the Field Service CRM solution is
 needed. The solution includes the following changes:
 
-### Work Order entity
+### Work order entity
 
-The field **Has Externally Maintained Products Only** has been added to the **Work order entity** and appears on the page. The **Has Externally Maintained Products Only** setting is used to consistently track whether a work order consists entirely of externally
-maintained products. A work order consists entirely of externally maintained products when all the related products are maintained in Finance and Operations. This setting helps guarantee that you don't try to synchronize work orders that have products that are unknown to Finance and Operations.
+The field **Has Externally Maintained Products Only** has been added to the **Work Order Entity** and appears on the page. The **Has Externally Maintained Products Only** setting is used to consistently track whether a work order consists entirely of externally
+maintained products. A work order consists entirely of externally maintained products when all the related products are maintained in Finance and Operations. This setting helps guarantee that users don't synchronize work orders that have products that are unknown to Finance and Operations.
 
-### Work Order Product entity
+### Work order product entity
 
 -   The field **Order Has Externally Maintained Products Only** has been added
     to the **Work Order Product** entity and appears on the page. It is used to
     consistently track whether the work order product is maintained in Finance
-    and Operations. This setting helps guarantee that you don't try to
-    synchronize work order products that are unknown to Finance and Operations.
+    and Operations. This setting helps guarantee that users don't synchronize work order products that are unknown to Finance and Operations.
 
 -   The field **Header System Status** has been added to the **Work Order Product**
     entity and appears on the page. It is used to consistently track the work
@@ -268,8 +265,7 @@ maintained products. A work order consists entirely of externally maintained pro
 -  The field **Order Has Externally Maintained Products Only** has been added
     to the **Work Order Service** entity and appears on the page. It is used to
     consistently track whether the work order service is maintained in Finance
-    and Operations. This setting helps guarantee that you don't try to
-    synchronize work order service that are unknown to Finance and Operations.
+    and Operations. This setting helps guarantee that users don't synchronize work order service that are unknown to Finance and Operations.
 
 -  The field **Header System Status** has been added to the **Work Order Service**
     entity and appears on the page. It is used to consistently track the work
@@ -315,9 +311,9 @@ settings in the systems.
 
 ### Setup in Field Service
 
--  Ensure that you don’t have overlapping number series for Work orders and
-    Sales order cross both Sales and Finance and Operations, as this could lead
-    to incorrect update of existing sales orders in Sales or Finance and
+-  Ensure that you don’t have overlapping number series for **Work orders** and
+    **Sales order** cross both Field Service and Finance and Operations, as this could lead
+    to incorrect update of existing sales orders in Field Service or Finance and
     Operations.
 
 -  Set **Work Order Invoice Creation** to **Never**, as the invoicing will be
@@ -329,14 +325,14 @@ The **Work Order Invoice Creation** option is set to **Never**.
 
 ### Setup in Finance and Operations
 
-Setup of sales origin for Work order integration is needed to distinguish the
+Setup of sales origin for **Work order** integration is needed to distinguish the
 Finance and Operations sales orders created from Field Service Work Orders. When
-the sales origin on a sales order has sales origin type Work order integration
+the sales origin on a sales order has sales origin type **Work order integration**
 the field **External work order status** is shown.
 
 Besides having the information on the sales order header, it can be used to
 ensure that sales orders created from Field Service Work Orders are filtered out
-during sales order synchronization from Finance and Operations to Sales.
+during sales order synchronization from Finance and Operations to Field Service.
 
 Go to Sales and marketing \> Setup \> Sales orders \> Sales origin, click **New** to create a new **Sales origin**.
 
