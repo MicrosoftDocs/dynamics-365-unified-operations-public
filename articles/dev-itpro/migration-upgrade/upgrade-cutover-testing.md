@@ -66,7 +66,7 @@ During cutover testing, the technical team is focused on performance and reliabi
 ### Technical workstream process
 
 > [!NOTE]
-> For the technical workstream, the cutover testing process is the same as the high-level steps of the production environment upgrade process.
+> For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
 1.	Submit an **Other type** service request through Microsoft Lifecycle Services (LCS) to notify DSE of your intention to upgrade a production environment.
 2.  Turn off your AX 2012 AOS instances.
