@@ -79,6 +79,7 @@ After VSTS synchronization is complete, select the ellipsis button (…), and th
 ![Sync Test Cases](LINK "Syc Test Cases")
 
 Once this step is complete, your task recordings will become test cases in VSTS and a link will appear under the requirements tab. 
+
 ![View Test Case](LINK "View Test Case")
 
 
@@ -98,7 +99,7 @@ Select **Add existing** and query the Tag **LCS:Test Cases**.
 
 Select **Run** then **Add test cases**.
 
-![Add Test Cases](LINK "Add Test Cases)
+![Add Test Cases](LINK "Add Test Cases")
  
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
