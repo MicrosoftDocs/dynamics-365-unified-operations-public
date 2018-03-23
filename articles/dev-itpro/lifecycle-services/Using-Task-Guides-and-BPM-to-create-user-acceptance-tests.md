@@ -11,9 +11,7 @@ For illustration purposes, this article uses a library with common business proc
 
 ## 2. Record Test Cases and Upload to BPM 
 
-Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. If you're using a library that already has all desired Task Recordings attached, skip this step.
-
-Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
+Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
 ###  Create and Save a new Task Recording 
 First, open the client and log in. 
@@ -39,7 +37,7 @@ Select the library you want to save the recording to and **Save**.
 Otherwise, Select **Save to Disk** and follow the instructions below to upload the file to BPM.
 
 
-### To upload an AXTR file to BPM 
+### Upload an AXTR file to BPM 
 
 In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 
@@ -78,11 +76,11 @@ Once this step is complete, your task recordings will become test cases in VSTS.
 
 **SHOW  EXPENSE REPORT test case IN VSTS**
 
-In addition to the test steps, the task recording XML file is attached to the VSTS test case. Tis file will be needed in case you wish to automate test execution. 
+In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed in case you wish to automate test execution. 
 
 ## 4. Create a test suite in VSTS
 
-Next you will need to create a test suite in VSTS. A test suite allows you to run a suite of tests and manage, investigate, and track  results. 
+Now you will need to create a test suite in VSTS. A test suite allows you to run a suite of tests and manage, investigate, and track  results. 
 
 To create a test suite in VSTS, log into VSTS and select the project you want to test in.
 
@@ -93,9 +91,7 @@ Select **+** from the left pane and select **Static suite**
 
 ### Executing manual test cases
 
-Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment.  
-
-Execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
+Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment. Either execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
 ![VSTS Test Marked](LINK "VSTS Test Marked")
 
@@ -105,3 +101,5 @@ We highly encourage users to take advantage of VSTS as it provides a rich set of
 
 ### Executing automatic test cases
 
+
+VSTS won't sync so test cases won't show up so unclear if test plan is neceesayr and need working sync for last two screenshots/ Otherwise article is ready for review. 
