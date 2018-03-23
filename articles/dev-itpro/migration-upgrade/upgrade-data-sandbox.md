@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
 description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
-ms.date: 02/26/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -71,109 +71,112 @@ Here is an example of the code that creates a database copy. You must modify thi
 	NOUNLOAD,  STATS = 5
 
 ```
+## Run the T-SQL script to prepare the database
+
+This script prepares the database by removing users, removing procedures related to the AX 2012 RTM model store, cleaning up schemas, dropping views, and dropping references to tempDB. 
 
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
 
 ```
-	--remove NT users as these are not supported in Azure SQL Database
-	declare 
-	@SQL varchar(255),
-	@UserName varchar(255)
+    --remove NT users as these are not supported in Azure SQL Database
+    declare 
+    @SQL varchar(255),
+    @UserName varchar(255)
 
-	set quoted_identifier off
+    set quoted_identifier off
 
-	declare     userCursor CURSOR for
-	select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+    declare     userCursor CURSOR for
+    select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
-	OPEN userCursor
-	    FETCH userCursor into @UserName
-	    WHILE @@Fetch_Status = 0
-		  BEGIN
-			set @SQL = 'DROP USER [' + @UserName + ']'
-			exec(@SQL)
-			FETCH userCursor into @UserName
-		  END
-	CLOSE userCursor
-	DEALLOCATE userCursor
+    OPEN userCursor
+        FETCH userCursor into @UserName
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL = 'DROP USER [' + @UserName + ']'
+            exec(@SQL)
+            FETCH userCursor into @UserName
+          END
+    CLOSE userCursor
+    DEALLOCATE userCursor
 
-	go
-	
-	--remove any AX 2012 RTM model store procedures that still exist
-	declare 
-	@SQL varchar(255),
-	@procname varchar(255)
+    go
 
-	set quoted_identifier off
+    --remove any AX 2012 RTM model store procedures that still exist
+    declare 
+    @SQL varchar(255),
+    @procname varchar(255)
 
-	declare     procCursor CURSOR for
-	select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+    set quoted_identifier off
 
-	OPEN procCursor
-	    FETCH procCursor into @procname
-	    WHILE @@Fetch_Status = 0
-		  BEGIN
-			set @SQL = 'DROP PROCEDURE [' + @procname + ']'
-			exec(@SQL)
-			FETCH procCursor into @procname
-		  END
-	CLOSE procCursor
-	DEALLOCATE procCursor
+    declare     procCursor CURSOR for
+    select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
 
-	go
-	
-	--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
-	--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
-	--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+    OPEN procCursor
+        FETCH procCursor into @procname
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+            exec(@SQL)
+            FETCH procCursor into @procname
+          END
+    CLOSE procCursor
+    DEALLOCATE procCursor
+
+    go
+
+    --If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+    --Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+    --The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
 
         if exists (select 1 from sys.schemas where name = 'contoso\admin')
-	begin
-		drop schema [contoso\admin]
-	end
-	if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
-	begin
-		drop schema [CONTOSO\Domain Users]
-	end
-	go
-	--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Database
+    begin
+        drop schema [contoso\admin]
+    end
+    if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+    begin
+        drop schema [CONTOSO\Domain Users]
+    end
+    go
+    
+    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
+    declare 
+    @SQL2 varchar(255),
+    @ViewName varchar(255)
 
-	declare 
-	@SQL2 varchar(255),
-	@ViewName varchar(255)
+    set quoted_identifier off
 
-	set quoted_identifier off
+    declare     viewCursor CURSOR for
 
-	declare     viewCursor CURSOR for
+    select viewname = v.name
+    from sys.views v
+    order by v.name
 
-	select s.name + '.' + v.name 
-	from sys.views v, sys.schemas s 
-	where s.schema_id = v.schema_id
-    	order by v.name
+    OPEN viewCursor
 
-	OPEN viewCursor
+    FETCH viewCursor into @ViewName
+        WHILE @@Fetch_Status = 0
+          BEGIN
+            set @SQL2 = 'DROP VIEW ' + @ViewName
+            exec(@SQL2)
+            FETCH viewCursor into @ViewName
+          END
+    CLOSE viewCursor
+    DEALLOCATE viewCursor
+    go
 
-	FETCH viewCursor into @ViewName
-	    WHILE @@Fetch_Status = 0
-		  BEGIN
-			set @SQL2 = 'DROP VIEW ' + @ViewName
-			exec(@SQL2)
-			FETCH viewCursor into @ViewName
-		  END
-	CLOSE viewCursor
-	DEALLOCATE viewCursor
-	go
-
-	-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
-	If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
-	begin
-		drop procedure MaintainShipCarrierRole
-	end	
+    -- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+    If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+    begin
+        drop procedure MaintainShipCarrierRole
+    end
 ```
 
 ## Export the copied database to a bacpac file
 
 Export the copied database to a bacpac file by using the SQLPackage.exe tool. This step should be done by the DBA or a team member who has equivalent knowledge.
 
-It's very important that you install the latest version of SQL Server Management Studio before you start this step. Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.
+> [!IMPORTANT]
+> It's very important that you install the latest version of SQL Server Management Studio before you start this step. Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.
 
 This step is important, because the export will have to be done again during the downtime before go-live. Here are some tips:
 
