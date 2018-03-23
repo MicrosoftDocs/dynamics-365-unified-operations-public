@@ -56,8 +56,9 @@ This landing page provides links to relevant documentation and videos related to
 
 ## Configure the Call Center
 
-## Configure Order Processing Features
+[Call Center Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-order-processing-options)
 
+## Configure Order Processing Features
 
 [Fraud Holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts)
 
@@ -66,19 +67,14 @@ This landing page provides links to relevant documentation and videos related to
 ## Configure Payment Processing
 [Payment Methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments)
 
-
 ## Configure Direct Marketing Features
 [Catalogs and Source Codes](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs)
 
 [RFM Scoring](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-rfm-analysis)
 
-
 ## Call Center Execution
 
-
 ## Call Center Analysis
-
-
 
 ## Configure Continuity Programs
 [Continuity Program Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-continuity-program)
