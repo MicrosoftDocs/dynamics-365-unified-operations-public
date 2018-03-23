@@ -1,3 +1,38 @@
+---
+# required metadata
+
+title: Immediate replenishment
+description: This topic describes how to use immediate replenishment to replenish inventory when a location directive fails to locate inventory.
+author: Mirzaab
+manager: AnnBe
+ms.date: 03/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 1705903
+ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mirzaab
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 8.0.0
+---
+
+# Batch balancing
+
+[!include[banner](../includes/banner.md)]
+
 Immediate replenishment
 
 Immediate replenishment allows you to replenish inventory right after a location
