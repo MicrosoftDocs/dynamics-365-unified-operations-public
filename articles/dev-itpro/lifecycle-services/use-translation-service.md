@@ -108,7 +108,7 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Field name        | Description |
     |-------------------|-------------|
     | Request name      | Type your own description |
-    | Request type      | **User Interface** - select this if you are translating software file(s) for a product or solution. **Documentation** - select this if you are translating Microsoft Word .docx file(s). Documentation request type will be available only if you have turn on the **Dynamics 365 Translation Service - Documentation Translation Support** from LCS Preview features. |
+    | File type      | **User Interface** - select this if you are translating software file(s) for a product or solution. **Documentation** - select this if you are translating Microsoft Word .docx file(s). Documentation request type will be available only if you have turn on the **Dynamics 365 Translation Service - Documentation Translation Support** from LCS Preview features. |
     | Product name      | Select a product name. If you accessed DTS from within a LCS project, this field is automatically filled in as read-only. |
     | Product version   | Select a product version. If you accessed DTS from within a LCS project, this field will show the product version information from the project as a default and you can select a different version if needed.|
     | Target country/region | select a country where the translated file will be released to.|
@@ -172,13 +172,13 @@ When the translation process is completed, you will receive an email notificatio
 For User Interface request type, after the translation process is completed, two types of output file are available:
 
 + **File for translation review** – Download the XLIFF file to review and, as required, edit the translations in this file. The file shows the side-by-side source and target languages.
-+ **Translated file in native format** – Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted.
++ **Translated file in source format** – Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted.
 
 For Documentation request type, after the translation process is completed, three types of output files are available:
 
 + **File for translation review** - Doenload this file to review and edit the translated document strings in a table view. The file provides the side-by-side source and target languages segments.
-+ **Translated file in native format** - Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted. 
-+ **Translation memory format** - Download this file if you want to recycle these translations in a newer version of source document. 
++ **Translated file in source format** - Download this file if you don't intend to review or edit the translations. Native format means that the file is in the same format as the source file you submitted. 
++ **Translation memory** - Download this file if you want to recycle these translations in a newer version of source document. 
 
 ### Review and edit the UI translation in XLIFF file
 We recommend that you review and edit the translations in the provided XLIFF file by using the free Multilingual Editor that is provided or any other XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
