@@ -11,7 +11,9 @@ For illustration purposes, this article uses a library with common business proc
 
 ## 2. Record Test Cases and Upload to BPM 
 
-Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
+Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. 
+
+If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
 ###  Create and Save a new Task Recording 
 First, open the client and log in. 
@@ -72,21 +74,35 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ![VSTS Sync2](LINK "VSTS Sync2")
 
-Once this step is complete, your task recordings will become test cases in VSTS.
+After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
-**SHOW  EXPENSE REPORT test case IN VSTS**
+![Sync Test Cases](LINK "Syc Test Cases")
+
+Once this step is complete, your task recordings will become test cases in VSTS and a link will appear under the requirements tab. 
+![View Test Case](LINK "View Test Case")
+
 
 In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed in case you wish to automate test execution. 
 
 ## 4. Create a test suite in VSTS
 
-Now you will need to create a test suite in VSTS. A test suite allows you to run a suite of tests and manage, investigate, and track  results. 
+Now you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track results. 
 
-To create a test suite in VSTS, log into VSTS and select the project you want to test in.
+To create a test suite in VSTS, log into VSTS and select the project and test plan you want to test in. 
 
 Select **Test** from the toolbar.
 
-Select **+** from the left pane and select **Static suite**
+Select **+** from the left pane and select **Static suite** and enter a name for the suite.
+
+Select **Add existing** and query the Tag **LCS:Test Cases**.
+
+Select **Run** then **Add test cases**.
+
+![Add Test Cases](LINK "Add Test Cases)
+ 
+You can click on the test case to view details and attached xml file, create a work item, and more.   
+
+![Test Case Details](LINK "Test Case Details")
 
 
 ### Executing manual test cases
@@ -101,5 +117,3 @@ We highly encourage users to take advantage of VSTS as it provides a rich set of
 
 ### Executing automatic test cases
 
-
-VSTS won't sync so test cases won't show up so unclear if test plan is neceesayr and need working sync for last two screenshots/ Otherwise article is ready for review. 
