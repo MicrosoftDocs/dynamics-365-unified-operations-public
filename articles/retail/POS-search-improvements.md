@@ -3,7 +3,7 @@
 
 title: Product search and customer search in POS
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 for Retail. 
-author: shalabhjain
+author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 08/16/2017
 ms.topic: article
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-# ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail April 2017 update
 ---
 
 # Overview of product and customer search in Point of Sale
+
+[!include[banner](includes/banner.md)]
 
 Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality that lets store employees quickly search for products and customers. The search bar is always present at the top of MPOS and CPOS, so that employees can quickly find products and customers.
 

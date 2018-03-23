@@ -17,7 +17,7 @@ ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
@@ -27,6 +27,8 @@ ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ---
 # Cash registers for Norway
+
+[!include[banner](../includes/banner.md)]
 
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 

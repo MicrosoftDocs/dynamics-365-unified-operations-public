@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split periods in periodic journals
-description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the journal is posted. When you create the journal, you specify the period interval for the recurrence, such as days or months. You also specify the number of periods for which the journal will be posted.
+description: This topic provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw

@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailTerminalTable, RetailDevice
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Device management implementation guidance
+
+[!include[banner](includes/banner.md)]
+
 This topic is intended for people who implement functionality that is related to device management in a retail environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 
 ## Overview

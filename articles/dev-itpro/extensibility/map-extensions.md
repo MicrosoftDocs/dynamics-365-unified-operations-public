@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 11
 
 # Table map extension
 
+[!include[banner](../includes/banner.md)]
+
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 
 To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. This topic discusses why you need a model to extend a table map.
@@ -41,7 +43,7 @@ The following diagram shows the **SalesPurchTable** table map, which is implemen
 
 ![MapExtensionsProblem](media/MapExtensions1.png)
 
-For example, if a new field named **AccountingGroupId** and a new method named **validateAccountingGroup** are added to the table map in the **ApplicationSuite** model, then the tables that you know implement the table map can be updated to include the field and method added as well. The **ISV1Header** table in the **ISVModule1** model is, however, outside of the control of the developer making the changes to the **ApplicationSuite** model.
+For example, if a new field named **AccountingGroupId** and a new method named **validateAccountingGroup** are added to the table map in the **ApplicationSuite** model, then the tables that you implement the table map can be updated to include the field and method added as well. The **ISV1Header** table in the **ISVModule1** model is, however, outside of the control of the developer making the changes to the **ApplicationSuite** model.
 
 ![MapExtensionsProblem](media/MapExtensions2.png)
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: AccountingSourceExplorer
+ms.search.form: AccountingSourceExplorer
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

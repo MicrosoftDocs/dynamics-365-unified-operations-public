@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ProjWbsTemplate
+ms.search.form: ProjWbsTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: AX 7.3.0
+ms.dyn365.ops.version: 7.3
 
 ---
 

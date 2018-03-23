@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: BankPositivePaySummary
+ms.search.form: BankPositivePaySummary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

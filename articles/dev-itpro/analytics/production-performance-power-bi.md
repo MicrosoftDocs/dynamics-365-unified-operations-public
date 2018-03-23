@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  ProductionPerformancePowerBI
+ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

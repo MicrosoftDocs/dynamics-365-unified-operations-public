@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-#ms.search.form: 
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -209,7 +209,7 @@ This framework lets you easily find a transaction's document and track the trans
 
 #### Transaction integration
 
-Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#microsoft-dynamics-ax-integration-example-purchase-order-invoice) section later in this topic.
+Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#example-finance-and-operations-integration--purchase-order-invoice) section later in this topic.
 
 #### Accounting integration
 
@@ -555,7 +555,7 @@ If the Tax engine returns no issues, the tax document result will be persisted i
 
 - TaxDocument
 - TaxDocumentRow
-- TaxDocumentJason
+- TaxDocumentJson
 
 By querying these tables to obtain the JSON string, you can easily check the result details via any online JSON viewer.
 

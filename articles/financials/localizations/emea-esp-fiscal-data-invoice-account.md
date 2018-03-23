@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -44,7 +43,7 @@ For legal entities in Spain, the Use fiscal data from invoice account functional
 -   Sales and marketing
 
 ## Accounts payable and Procurement and sourcing
-To manage the opportunity of fiscal data automatic update on Invoice account change in the Accounts payable module you need to set up a parameter Use fiscal data from invoice account on Invoice tab of the Account payable &gt; Setup &gt; Account payable &gt; parameters page. The following options are available:
+To manage the opportunity of fiscal data automatic update on Invoice account change in the Accounts payable module you need to set up a parameter Use fiscal data from invoice account on Invoice tab of the **Account payable parameters** page. The following options are available:
 
 -   **Never** – Information is updated from the vendor account.
 -   **Always** – Information is updated from the invoice account.
@@ -57,7 +56,7 @@ When the **Use fiscal data from invoice account** parameter is set, three fields
 -   Tax exemption
 
 ## Accounts receivable and Sales and marketing
-To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**” on the **Invoice** fasttab of the **Updates** tab of the **Account receivable** &gt; **Setup** &gt; **Account receivable** **parameters** page. The following options are available:
+To manage the opportunity of fiscal data automatic update on **Invoice account** change in the **Accounts receivable** module you need to set up a parameter “**Use fiscal data from invoice account**” on the **Invoice** fasttab of the **Updates** tab of the **Account receivable parameters** page. The following options are available:
 
 -   **Never** – Information is updated from the customer account.
 -   **Always** – Information is updated from the invoice account.

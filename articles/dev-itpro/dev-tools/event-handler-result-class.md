@@ -54,7 +54,7 @@ For example, the <strong>newSingleResponse</strong> static constructor simply de
 
     return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
     
-# Accept and reject request/response scenarios
+## Accept and reject request/response scenarios
 
 In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection. Using the **EventHandlerResult** class to request acceptance/rejection can be confusing, if the subscriber is only expected to respond with a Boolean value. In a validation scenario, for example, should the subscriber only respond with Boolean false, when validation fails, or should the subscriber also respond with Boolean true, if validation succeeds? If the response is gathered using an **EventHandlerResult** object, then the second subscriber that validates and replies with Boolean true, might overwrite the Boolean false from the first subscriber.
 

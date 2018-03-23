@@ -5,7 +5,7 @@ title: Power BI Embedded integration
 description: Power BI content that partners and ISVs develop can be embedded directly into the application. This topic describes some of the ways that you can use the Power BI Embedded integration.
 author: TJVass
 manager: AnnBe
-ms.date: 07/26/2017
+ms.date: 02/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: WHSWarehousePerformancePowerBI 
+ms.search.form: WHSWarehousePerformancePowerBI 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -25,7 +25,7 @@ ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

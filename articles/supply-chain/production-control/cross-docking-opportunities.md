@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: WHSCrossDockOpportunityPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Cross-docking from production orders to outbound docks
+
+[!include[banner](../includes/banner.md)]
 
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 

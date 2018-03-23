@@ -111,4 +111,4 @@ The Document Routing Agent is now running as a Windows service.
     
 ### Review the event logs
 1. On the host machine, start Event Viewer.
-2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-SSRSReportsShared**.
+2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-DocumentRouting**.

@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
-ms.date: 12/15/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-#ms.search.form: 
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -243,13 +243,14 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 
 #### Method 2: Data mapping using the ER model mapping designer
 Before you use this method, be sure that you are familiar with ER and the table relation, class, and method for purchase orders. 
-1. Open the model mapping design for a purchase order, add table records **PurchLine** as a root data source.
+1. Open the model mapping designer for a purchase order, add table records **PurchLine** as a root data source.
 ![Purchline extension](media/gte-extension-purchline.png)
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
 ![Add enumerations](media/gte-extension-add-enumerations.png)
-3. Add a calculated field **$PurchLine** in to the purchase order to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
+3. In the **Data Source** tree, add a calculated field **$PurchLine** under **purchase order** > **lines**  to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
 ![Edit formula](media/gte-extension-edit-formula.png)
-4. Input the formula that describe the relationship between **PurchLine** and **purchase order**.
+4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: 
+```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
 ![Add formula](media/gte-extension-add-formula.png)
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
@@ -426,7 +427,7 @@ Per the Microsoft-provided configuration, the tax rate for the BCD is determined
 
 To support this scenario, you must complete the following tasks:
 1. [Create extension configurations](#create-extension-configurations)
-2. [Add a reference model for country/region of origin](##add-a-reference-model-for-countryregion-of-origin)
+2. [Add a reference model for country/region of origin](#add-a-reference-model-for-countryregion-of-origin)
 3. [Complete data mapping for the reference model](#complete-data-mapping-for-the-reference-model)
 4. [Link the reference model to field in taxable document](#link-the-reference-model-to-a-field-in-the-taxable-document)
 5. [Change the lookup of the BCD tax rate](#change-the-lookup-of-the-bcd-tax-rate)
@@ -502,7 +503,7 @@ After the status is updated to **Complete**, the configuration is ready for depl
 ### Change the lookup of the BCD tax rate
 
 1.  Go to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
-2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1: Task 3](#task-3-do-data-mapping-for-the-extended-taxable-document).
+2.  Change the data model of **Tax (India GST Contoso)** to the updated version of the extended taxable document. To do this, complete the steps in [Scenario 1, Task 3: Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document).
 3.  Go to **Tax document** > **Header** > **Lines** > **Custom Duty** > **BCD** > **Rate**. Click the **Lookup** tab.
 4.  Click **Columns**.
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.

@@ -8,7 +8,7 @@ manager: AnnBE
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Sweden
@@ -27,6 +27,8 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: July 2017 update
 ---
 # Sample for Retail POS integration with control units for Sweden
+
+[!include[banner](../../../includes/banner.md)]
 
 **SAMPLE CODE NOTICE**
 

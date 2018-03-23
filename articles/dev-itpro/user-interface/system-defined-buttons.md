@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the system-defined buttons.
 
-Overview
---------
+## Overview
 
 Several system-defined buttons are automatically present on the Action Pane. In general, these system-defined buttons should be applicable and should kept available to the end user. However, in rare cases (for example, if a more specialized control is required, or if a system-defined button isn't useful or applicable for a particular form), developers might have to explicitly suppress or override a system-defined button. For example, in some situations, a MenuButton that lets the user select from multiple “New” options might be preferable to the system-defined **New** button.
 
@@ -164,8 +163,7 @@ Imagine that you want to replace the system-defined **New** button with a menu b
 
 However, at this point, the system-behavior for New still fires when the keyboard shortcut is invoked. If you want to make this modeled **New** button fire when the keyboard shortcut is pressed, you must set this button as the NewRecordAction on **Form.Design**. As we noted in the previous section, the action will currently be fired for all CommandButtons that call the New task on the form. Therefore, you should not use this approach on forms that have multiple data sources.
 
-Edit, Done, Save, and Restore system buttons
-============================================
+## Edit, Done, Save, and Restore system buttons
 
 The **Edit**, **Done**, **Save**, and **Restore** buttons let users switch the edit mode of the form as they require. Because this capability is critical, these buttons can't currently be suppressed. However, if a form should always be in **Edit** mode or should always be in **View** mode, you can use the **ViewEditMode** property to achieve that effect, and the buttons won't appear on the form. Note that most forms should be left as **ViewEditMode**=**Auto**. Don't set **ViewEditMode**=**View** or **ViewEditMode=Edit** for purely cosmetic reasons, but only if the form will always be read-only or will always be editable.
 

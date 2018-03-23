@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: ProjManagementWorkspace 
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

@@ -3,6 +3,8 @@
 # [Getting started](talent-get-started.md)
 ## [System requirements and update policy](talent-versions-update-policy.md)
 ## [Provision Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Remove a Talent environment](remove-test-environment.md)
+## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
 
 # [Develop a human resources strategy](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 # Workplace safety and compliance (United States)
-## [Form I-9 employment verification](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Comply with the ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [Form I-9 employment verification](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Comply with the ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)

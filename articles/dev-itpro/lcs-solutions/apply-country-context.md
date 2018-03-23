@@ -25,7 +25,7 @@ ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: Feb-16
+ms.search.validfrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

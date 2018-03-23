@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: IT Pro, developer
+audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations

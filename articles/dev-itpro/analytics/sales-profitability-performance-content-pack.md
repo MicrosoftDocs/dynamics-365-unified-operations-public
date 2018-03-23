@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SalesProfitabilityPerformancePowerBI 
+ms.search.form: SalesProfitabilityPerformancePowerBI 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
