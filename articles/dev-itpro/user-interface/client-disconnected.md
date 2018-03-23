@@ -5,7 +5,7 @@ title: Client internet connection
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 manager: AnnBe
-ms.date: 03/08/2018
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
