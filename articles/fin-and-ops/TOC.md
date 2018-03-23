@@ -1343,7 +1343,7 @@
 ### [Inventory journals](../supply-chain/inventory/inventory-journals.md)
 ### [Inventory locations](../supply-chain/inventory/inventory-locations.md)
 ### [Inventory statuses](../supply-chain/inventory/inventory-statuses.md)
-### [Create a new warehouse layout (Task guide)](../supply-chain/inventory/tasks/create-new-warehouse-layout.md)
+### [Create a new warehouse layout (task guide)](../supply-chain/inventory/tasks/create-new-warehouse-layout.md)
 ### [Maintain bar code types (Task guide)](../supply-chain/inventory/tasks/maintain-barcode-types.md)
 ### [Check the availability of stock (Task guide)](../supply-chain/inventory/tasks/check-availability-stock.md)
 ### [Initialize stock levels in the warehouse (Task guide)](../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md)
