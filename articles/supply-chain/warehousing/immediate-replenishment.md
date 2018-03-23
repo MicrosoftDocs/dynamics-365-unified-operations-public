@@ -51,13 +51,17 @@ locations.
 
 ## Business scenario
 
-Say that we have a warehouse with picking areas for boxes and eaches, and we
+Say that you have a warehouse with picking areas for boxes and eaches, and you
 want to optimize picking with as many boxes as possible and with the remaining
-quantity, less than a box, to be picked from the each area. In this case, we can
-use immediate replenishment to optimize the process. Immediate replenishment can
-be set up for boxes which will enable you to replenish using demand
-replenishment as soon as there is a shortage of boxes to be picked for the
-demand quantity. This way the picking will be optimized to include as many boxes
+quantity, less than a box, to be picked from the each area. 
+
+You can use immediate replenishment to optimize the process. 
+
+You can set immediate replenishment up for boxes in the location directive to 
+replenish using demand replenishment as soon as there is a shortage of boxes to be picked for the
+demand quantity. 
+
+This way, the picking will be optimized to include as many boxes
 as possible. Immediate replenishment will generate replenishment of the boxes
 and the demand will not be passed on to have the quantities picked in eaches.
 That is, only what was supposed to be picked in eaches, quantities of less than
