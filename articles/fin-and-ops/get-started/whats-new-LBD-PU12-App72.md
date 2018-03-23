@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in on-premises depl
 
 For more information about platform update 12, see [What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12](whats-new-platform-update-12.md).
 
-For more resources about on-premises deployments, see [On-premises deployment landing page](../../dev-itpro/deployment/on-premises-deployment-landing-page.md).
+For more resources about on-premises deployments, see [On-premises deployment home page](../../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 ## Setup and deployment
 Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments (Platform update 12)](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
