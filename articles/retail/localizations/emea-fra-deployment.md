@@ -39,7 +39,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Retail 
 
 ## Storing certificate for digital signing in Azure Key Vault
 
-The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
+The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#sequentialsignatureregister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
 
 ### Prerequisites
 The following steps are required to be able to use a certificate stored in an Azure Key Vault storage:
@@ -90,13 +90,13 @@ To override the signing flow you need to:
     ```
 
 > [!NOTE] 
-> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
+> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](##sequentialsignatureregister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
 
 ## Specifying application attributes to be printed in receipts
 
 The following application attributes may be printed in receipts via custom fields (see [Cash registers for France](./emea-fra-cash-registers.md) for more details):
 
-- **Build number**: the software version of the POS application. By default it is equal to the POS build number assigned by Microsoft for Retail POS sample;
+- **Build number**: the software version of the POS application. By default it should be equal to the POS build number assigned by Microsoft to the POS application;
 - **Certificate category** and **Certificate number**: the category and the number of the certificate of compliance issued by an accredited body for the application. By default it is equal to the category and the number of the certificate granted to Microsoft:
     - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
         - Certificate category: **C**
@@ -105,12 +105,14 @@ The following application attributes may be printed in receipts via custom field
         - Certificate category: **B**
         - Certificate number: **18/0203**
 
-> [!NOTE]
-> By default, the certificate category and number assigned to Dynamics 365 for Finance and Operations, Enterprise edition, are printed. If you are implementing Dynamics 365 for Retail, you need to override the certificate category and number (see below for more instructions).
+    > [!NOTE]
+    > By default, the certificate category and number assigned to Dynamics 365 for Finance and Operations, Enterprise edition, are printed. If you are implementing Dynamics 365 for Retail, you need to override the certificate category and number.
+
+If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the build number and the certificate category and number. Otherwise, the default values for the certificate category and number will be printed, but you still need to specify the POS build number assigned by Microsoft to the POS application.
 
 ### Overriding build number
 
-If you customize the POS application, you must specify the software version/build number, and publisher in **RetailSDK\\BuildTools\\Customization.settings**.
+The software version/build number and publisher are specified in **RetailSDK\\BuildTools\\Customization.settings**.
 
 ```xml
     <CustomVersion Condition="'$(CustomVersion)' == ''">1.0.0.1</CustomVersion>
@@ -123,7 +125,7 @@ If you customize the POS application, you must specify the software version/buil
 
 ### Overriding certificate category and certificate number
 
-If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the certificate category and number. You must specify the certificate category and number in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
+The certificate category and number are specified in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
 
 > [!NOTE]
 > You also need to override the certificate category and number if you are implementing Dynamics 365 for Retail. Use the certificate category and number provided above in this case.
