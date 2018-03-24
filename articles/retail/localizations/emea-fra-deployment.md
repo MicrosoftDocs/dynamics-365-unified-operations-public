@@ -37,9 +37,100 @@ This localization is part of the Retail software development kit (SDK). For info
 
 This localization consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
+## Storing certificate for digital signing in Azure Key Vault
+
+The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
+
+### Prerequisites
+The following steps are required to be able to use a certificate stored in an Azure Key Vault storage:
+
+- An Azure Key Vault storage must be created. It is recommended that the storage is deployed in the same geographical region as the Retail Server;
+- The certificate must be uploaded to the storage;
+- The Retail Server application must be authorized to read secrets from the storage.
+
+See [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started#add) for more details on working with Azure Key Vault.
+
+### Using the sample
+
+The **DigitalSignatureKeyVaultSample** project contains the sample code that uses a certificate stored in an Azure Key Vault storage. In order to use the sample in a production environment, you need to implement the logic that will allow populating the following parameters in the **HashAndSignData** method of the **CertificateSignatureServiceRequestHandler** class:
+
+- **Azure Key Vault URL**: the URL of the Azure Key Vault storage:
+
+    ``` csharp
+    settings.Add(WellKnownKeyVaultSettings.KeyVaultUrl, "Set your Azure Key Vault url here");
+    ```
+
+- **Client Id**: an interactive Client ID of the AD application associated with the Azure Key Vault storage for authentication.  This client should have access to read secrets from the Azure Key Vault storage:
+
+    ``` csharp
+    settings.Add(WellKnownKeyVaultSettings.KeyVaultInteractiveClientId, "Set client id here");
+    ```
+
+- **Client Secret**: a Secret Key associated with the AD application used for authentication in Azure Key Vault storage:
+
+    ``` csharp
+    // Secret key value should be encrypted and stored in a safe place.
+    settings.Add(WellKnownKeyVaultSettings.KeyVaultClientSecretKey, "Set secret key here");
+    ```
+
+- **Secret reference**: a secret reference to the certificate:
+
+    ``` csharp
+    SecretCertificate secretCertificate = settingsHelper.SecretProvider.GetSecret("vault:///{Specify secret reference}") as SecretCertificate;
+    ```
+
+To override the signing flow you need to:
+
+1. Build the **DigitalSignatureKeyVaultSample** project and copy the assembly **Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** to the Retail server folder **bin\ext**;
+
+2. Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section:
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
+    ```
+
+> [!NOTE] 
+> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
+
+## Specifying application attributes to be printed in receipts
+
+The following application attributes may be printed in receipts via custom fields (see [Cash registers for France](./emea-fra-cash-registers.md) for more details):
+
+- **Build number**: the software version of the POS application. By default it is equal to the POS build number assigned by Microsoft for Retail POS sample;
+- **Certificate category** and **Certificate number**: the category and the number of the certificate of compliance issued by an accredited body for the application. By default it is equal to the category and the number of the certificate granted to Microsoft:
+    - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
+        - Certificate category: **C**
+        - Certificate number: **18/0202**
+    - Microsoft Dynamics 365 for Retail:
+        - Certificate category: **B**
+        - Certificate number: **18/0203**
+
+> [!NOTE]
+> By default, the certificate category and number assigned to Dynamics 365 for Finance and Operations, Enterprise edition, are printed. If you are implementing Dynamics 365 for Retail, you need to override the certificate category and number (see below for more instructions).
+
+### Overriding build number
+
+If you customize the POS application, you must specify the software version/build number, and publisher in **RetailSDK\\BuildTools\\Customization.settings**.
+
+```xml
+    <CustomVersion Condition="'$(CustomVersion)' == ''">1.0.0.1</CustomVersion>
+    <CustomName Condition="'$(CustomName)' == ''">Contoso Retail Customization</CustomName> 
+    <CustomDescription Condition="'$(CustomDescription)' == ''">Contoso Retail Customization</CustomDescription>
+    <CustomPublisher Condition="'$(CustomPublisher)' == ''">CN=Contoso Ltd.</CustomPublisher>
+    <CustomPublisherDisplayName Condition="'$(CustomPublisherDisplayName)' == ''">Contoso Ltd.</CustomPublisherDisplayName>
+    <CustomCopyright Condition="'$(CustomCopyright)' == ''">Copyright © 2016</CustomCopyright>
+```
+
+### Overriding certificate category and certificate number
+
+If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the certificate category and number. You must specify the certificate category and number in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
+
+> [!NOTE]
+> You also need to override the certificate category and number if you are implementing Dynamics 365 for Retail. Use the certificate category and number provided above in this case.
+
 ## Development environment
 
-Follow these steps to set up a development environment, so that you can test and extend the sample.
+Follow these steps to set up a development environment, so that you can test and extend the localization functionality.
 
 ### The CRT extension components
 
@@ -54,12 +145,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
@@ -74,12 +165,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsFrance" />
@@ -94,12 +185,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RestrictingShiftDuration" />
@@ -114,12 +205,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
@@ -134,12 +225,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtFrance" />
@@ -154,12 +245,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
@@ -179,12 +270,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+4. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+5. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -358,97 +449,6 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 5. Rebuild the solution.
 
 6. Run Modern POS in the debugger, and test the functionality.
-
-## Storing certificate for digital signing in Azure Key Vault
-
-The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
-
-### Prerequisites
-The following steps are required to be able to use a certificate stored in an Azure Key Vault storage:
-
-- An Azure Key Vault storage must be created. It is recommended that the storage is deployed in the same geographical region as the Retail Server;
-- The certificate must be uploaded to the storage;
-- The Retail Server application must be authorized to read secrets from the storage.
-
-See [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started#add) for more details on working with Azure Key Vault.
-
-### Using the sample
-
-The **DigitalSignatureKeyVaultSample** project contains the sample code that uses a certificate stored in an Azure Key Vault storage. In order to use the sample in a production environment, you need to implement the logic that will allow populating the following parameters in the **HashAndSignData** method of the **CertificateSignatureServiceRequestHandler** class:
-
-- **Azure Key Vault URL**: the URL of the Azure Key Vault storage:
-
-    ``` csharp
-    settings.Add(WellKnownKeyVaultSettings.KeyVaultUrl, "Set your Azure Key Vault url here");
-    ```
-
-- **Client Id**: an interactive Client ID of the AD application associated with the Azure Key Vault storage for authentication.  This client should have access to read secrets from the Azure Key Vault storage:
-
-    ``` csharp
-    settings.Add(WellKnownKeyVaultSettings.KeyVaultInteractiveClientId, "Set client id here");
-    ```
-
-- **Client Secret**: a Secret Key associated with the AD application used for authentication in Azure Key Vault storage:
-
-    ``` csharp
-    // Secret key value should be encrypted and stored in a safe place.
-    settings.Add(WellKnownKeyVaultSettings.KeyVaultClientSecretKey, "Set secret key here");
-    ```
-
-- **Secret reference**: a secret reference to the certificate:
-
-    ``` csharp
-    SecretCertificate secretCertificate = settingsHelper.SecretProvider.GetSecret("vault:///{Specify secret reference}") as SecretCertificate;
-    ```
-
-To override the signing flow you need to:
-
-1. Build the **DigitalSignatureKeyVaultSample** project and copy the assembly **Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** to the Retail server folder **bin\ext**;
-
-2. Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section:
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
-    ```
-
-> [!NOTE] 
-> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](#SequentialSignatureRegister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
-
-## Specifying application attributes to be printed in receipts
-
-The following application attributes may be printed in receipts via custom fields (see [Cash registers for France](./emea-fra-cash-registers.md) for more details):
-
-- **Build number**: the software version of the POS application. By default it is equal to the POS build number assigned by Microsoft for Retail POS sample;
-- **Certificate category** and **Certificate number**: the category and the number of the certificate of compliance issued by an accredited body for the application. By default it is equal to the category and the number of the certificate granted to Microsoft:
-    - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
-        - Certificate category: **C**
-        - Certificate number: **18/0202**
-    - Microsoft Dynamics 365 for Retail:
-        - Certificate category: **B**
-        - Certificate number: **18/0203**
-
-> [!NOTE]
-> By default, the certificate category and number assigned to Dynamics 365 for Finance and Operations, Enterprise edition, are printed. If you are implementing Dynamics 365 for Retail, you need to override the certificate category and number (see below for more instructions).
-
-### Overriding build number
-
-If you customize the POS application, you must specify the software version/build number, and publisher in **RetailSDK\\BuildTools\\Customization.settings**.
-
-```xml
-    <CustomVersion Condition="'$(CustomVersion)' == ''">1.0.0.1</CustomVersion>
-    <CustomName Condition="'$(CustomName)' == ''">Contoso Retail Customization</CustomName> 
-    <CustomDescription Condition="'$(CustomDescription)' == ''">Contoso Retail Customization</CustomDescription>
-    <CustomPublisher Condition="'$(CustomPublisher)' == ''">CN=Contoso Ltd.</CustomPublisher>
-    <CustomPublisherDisplayName Condition="'$(CustomPublisherDisplayName)' == ''">Contoso Ltd.</CustomPublisherDisplayName>
-    <CustomCopyright Condition="'$(CustomCopyright)' == ''">Copyright © 2016</CustomCopyright>
-```
-
-### Overriding certificate category and certificate number
-
-If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the certificate category and number. You must specify the certificate category and number in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
-
-> [!NOTE]
-> You also need to override the certificate category and number if you are implementing Dynamics 365 for Retail. Use the certificate category and number provided above in this case.
 
 ## Production environment
 
