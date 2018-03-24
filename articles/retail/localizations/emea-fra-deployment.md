@@ -526,7 +526,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
-4. Update the Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section:
+4. Update the Retail Server configuration file. In **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section:
 
     ``` xml
         <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
@@ -534,7 +534,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 5. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and is located under **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 
-6. Override the build number and the certificate category and number if needed. See instructions in the section [Specifying application attributes to be printed in receipts](#specifying-application-attributes-to-be-printed-in-receipts) for more details.
+6. Override the build number and the category and number of the certificate of compliance, if needed. See instructions in the section [Specifying application attributes to be printed in receipts](#specifying-application-attributes-to-be-printed-in-receipts) for more details.
 
 7. Open MSBuild Command Prompt for Visual Studio utility and run **msbuild** under Retail SDK folder to create deployable packages.
 
