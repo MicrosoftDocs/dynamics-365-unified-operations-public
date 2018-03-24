@@ -520,7 +520,7 @@ Follow these steps to create deployable packages that contain Retail components,
         > [!NOTE]
         > Complete the section [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in-azure-key-vault) first.
 
-    3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
+    3. Add the following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
 
         ``` xml
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
