@@ -310,7 +310,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
 
-### The Retail Server extension components
+### Retail Server extension components
 
 #### SalesTransactionSignature Retail Server sample component
 
@@ -330,7 +330,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 ### Retail proxy extension component
 
-This part is equivalent to the Retail Server controller, but it extends the local CRT that is used Modern POS offline mode.
+This part is equivalent to the Retail Server controller, but it extends the local CRT that is used in the Modern POS offline mode.
 
 #### SalesTransactionSignature Retail proxy sample component
 
@@ -340,7 +340,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 
 3. Copy the assembly files to the **\\ext** folder under the local CRT client broker location.
 
-4. Register the Retail proxy change in the extensions configuration file. The file is named ****RetailProxy.MPOSOffline.ext.config****, and it's under the local CRT client broker location.
+4. Register the Retail proxy change in the extensions configuration file. The file is named **RetailProxy.MPOSOffline.ext.config**, and it's under the local CRT client broker location.
 
     ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -361,8 +361,8 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
-    > [Note!]
-    > There is a button in the Solution Explorer called ```Show All Files```. (If the button isn't there, make sure you have the project selected and not the solution.) Click that button and Visual Studio will that will show all the files in the project folder and not just those that are included in the project. Files and folders that are not currently part of the project will have their icons shown with dotted outlines. Then you can just right-click the folder you want to include, and select Include in Project.
+    > [!Note]
+    > Click the button ```Show All Files``` in the Solution Explorer to view all files in the project folder and not just those that are included in the project. If the button is not available, make sure you selected the project. Files and folders that are not currently part of the project will have their icons shown with dotted outlines. Right-click the folder you want to include and select Include in Project.
 
 3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
 
