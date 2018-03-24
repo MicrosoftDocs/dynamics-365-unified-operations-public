@@ -456,7 +456,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 
 Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
-1. Complete the above **Cloud POS extension components** or **Modern POS extension components** section
+1. Complete the above **Cloud POS extension components** or **Modern POS extension components** sections.
 
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -473,14 +473,14 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
         ```
 
-        Add additional following line to use storing certificate for digital signing in Azure Key Vault functionality
+        Add the following line to use a certificate for digital signing stored in an Azure Key Vault storage:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
         ```
 
-        > [NOTE!]
-        > Complete [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in Azure-Key-Vault) section first
+        > [!NOTE]
+        > Complete the section [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in-azure-key-vault) first.
 
      2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
@@ -510,16 +510,15 @@ Follow these steps to create deployable packages that contain Retail components,
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsFrance.dll" />
         ```
-
         
-        Add additional following line to use storing certificate for digital signing in Azure Key Vault functionality
+        Add the following line to use a certificate for digital signing stored in an Azure Key Vault storage:
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll" />
         ```
 
-        > [NOTE!]
-        > Complete [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in Azure-Key-Vault) section first
+        > [!NOTE]
+        > Complete the section [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in-azure-key-vault) first.
 
     3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
 
@@ -527,19 +526,19 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
-4. Update Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section
+4. Update the Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section:
 
     ``` xml
         <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-4. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and located under **Extensions.SequentialSignatureRegister\\bin\\Debug**
+5. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and is located under **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 
-5. Overriding build number, certificate category, and certificate number if needed. See instructions above for details.
+6. Override the build number and the certificate category and number if needed. See instructions in the section [Specifying application attributes to be printed in receipts](#specifying-application-attributes-to-be-printed-in-receipts) for more details.
 
-6. Open MSBuild Command Prompt for Visual Studio utility and run **msbuild** under Retail SDK folder to create deployable packages.
+7. Open MSBuild Command Prompt for Visual Studio utility and run **msbuild** under Retail SDK folder to create deployable packages.
 
-7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 
