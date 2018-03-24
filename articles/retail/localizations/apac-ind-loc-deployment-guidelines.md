@@ -37,6 +37,9 @@ This sample is a part of the Retail software development kit (SDK). For informat
 
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
+> [!NOTE] 
+> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
 ## Development environment
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
@@ -80,7 +83,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
       > [!NOTE]
       > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
-    # [Application update 7.3.2](#tab/app-update-7-3-2)
+    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
 
     In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
 
@@ -163,7 +166,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
-    # [Application update 7.3.2](#tab/app-update-7-3-2)
+    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
