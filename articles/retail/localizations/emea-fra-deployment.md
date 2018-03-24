@@ -48,7 +48,7 @@ The following steps are required to be able to use a certificate stored in an Az
 - The certificate must be uploaded to the storage;
 - The Retail Server application must be authorized to read secrets from the storage.
 
-See [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started#add) for more details on working with Azure Key Vault.
+See [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started) for more details on working with Azure Key Vault.
 
 ### Using the sample
 
@@ -90,7 +90,7 @@ To override the signing flow you need to:
     ```
 
 > [!NOTE] 
-> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](##sequentialsignatureregister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
+> The thumbprint of the certificate used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly (see the section [SequentialSignatureRegister component](#sequentialsignatureregister-component) for more details), even if the certificate is stored in the Azure Key Vault storage.
 
 ## Specifying application attributes to be printed in receipts
 
