@@ -473,7 +473,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
         ```
 
-        Add the following line to use a certificate for digital signing stored in an Azure Key Vault storage:
+    2. Add the following line to use a certificate for digital signing stored in an Azure Key Vault storage:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
@@ -482,7 +482,7 @@ Follow these steps to create deployable packages that contain Retail components,
         > [!NOTE]
         > Complete the section [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in-azure-key-vault) first.
 
-     2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
+     3. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
