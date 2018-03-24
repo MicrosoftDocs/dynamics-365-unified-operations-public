@@ -123,7 +123,7 @@ The software version/build number and publisher are specified in **RetailSDK\\Bu
     <CustomCopyright Condition="'$(CustomCopyright)' == ''">Copyright © 2016</CustomCopyright>
 ```
 
-### Overriding certificate category and certificate number
+### Overriding certificate category and number
 
 The certificate category and number are specified in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
 
