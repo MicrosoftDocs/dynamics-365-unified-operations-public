@@ -346,14 +346,14 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
     ```
 
-### The Modern POS extension components
+### Modern POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
     > [!NOTE]
     > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
 
-2. Include following existing source code folders in the **Pos.Extensions** project.
+2. Include the following existing source code folders in the **Pos.Extensions** project.
 
     - SalesTransactionSignatureSample
     - SequentialSignature
@@ -364,7 +364,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     > [!Note]
     > Click the button ```Show All Files``` in the Solution Explorer to view all files in the project folder and not just those that are included in the project. If the button is not available, make sure you selected the project. Files and folders that are not currently part of the project will have their icons shown with dotted outlines. Right-click the folder you want to include and select Include in Project.
 
-3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
+3. Enable the extensions to be compiled by removing the following folders from the exclude list in **tsconfig.json**:
 
     - SalesTransactionSignatureSample
     - SequentialSignature
@@ -372,7 +372,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
-4. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate place.
+4. Enable the extensions to be loaded by adding the following lines in **extensions.json**:
 
     ``` json
     {
@@ -400,11 +400,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 6. Run Modern POS in the debugger, and test the functionality.
 
 
-### The Cloud POS extension components
+### Cloud POS extension components
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
 
-2. Include following existing source code folders in the **Pos.Extensions** project.
+2. Include the following existing source code folders in the **Pos.Extensions** project.
 
     - SalesTransactionSignatureSample
     - SequentialSignature
@@ -412,10 +412,10 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
-    > [Note!]
-    > There is a button in the Solution Explorer called ```Show All Files```. (If the button isn't there, make sure you have the project selected and not the solution.) Click that button and Visual Studio will that will show all the files in the project folder and not just those that are included in the project. Files and folders that are not currently part of the project will have their icons shown with dotted outlines. Then you can just right-click the folder you want to include, and select Include in Project.
+    > [!Note]
+    > Click the button ```Show All Files``` in the Solution Explorer to view all files in the project folder and not just those that are included in the project. If the button is not available, make sure you selected the project. Files and folders that are not currently part of the project will have their icons shown with dotted outlines. Right-click the folder you want to include and select Include in Project.
 
-3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
+3. Enable the extensions to be compiled by removing the following folders from the exclude list in **tsconfig.json**:
 
     - SalesTransactionSignatureSample
     - SequentialSignature
@@ -423,7 +423,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     - RestrictingShiftDuration
     - SalesTransBuildNumberSample
 
-4. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate place.
+4. Enable the extensions to be loaded by adding the following lines in **extensions.json**:
 
     ``` json
     {
