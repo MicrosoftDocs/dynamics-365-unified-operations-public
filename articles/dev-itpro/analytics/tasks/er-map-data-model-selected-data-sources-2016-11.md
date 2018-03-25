@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition (November 2016) data sources. This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations data sources. This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.
 
 
 ## Open ER configurations tree
