@@ -114,7 +114,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
-#### [Extensibility changes in Dynamics 365 for Finance and Operations 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
