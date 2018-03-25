@@ -5,7 +5,7 @@ title: Software lifecycle policy and list of releases
 description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,6 +94,7 @@ For information about the new features included in each release, click the links
 
 | Release           | Build number   | Availability  | Expiration date   |
 |-------------------|----------------|---------------|-------------------|
+| [Platform update 15*](../../fin-and-ops/get-started/whats-new-platform-update-15.md)| 7.0.4839 | March 2017   | March 2018   |
 | [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)| 7.0.4709 | November 2017   | November 2018   |
 | [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)| 7.0.4679.35176 | October 2017   | October 2018  |
 | [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)| 7.0.4641.16233 | August 2017   | August 2018   |
@@ -108,7 +109,7 @@ For information about the new features included in each release, click the links
 | [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
-\* As of January 2018, Platform update 13 is generally available for a targeted set of customers. Platform update 13 has a build number of 7.0.4764. 
+\* Platform updates 13 and 14 are available for a targeted set of customers. Platform update 15 is cumulative. It contains new or changed features from Platform update 13, Platform update 14, and Platform update 15, as well as all earlier updates. 
 
 
 ## Support matrix
