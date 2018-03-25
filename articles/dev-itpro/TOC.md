@@ -29,7 +29,7 @@
 ### [Export and import a model](dev-tools/models-export-import.md)
 ### [Metadata search in Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Models](dev-tools/models.md)
-### [Projects in Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projects in Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Tools add-ins for Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Turn off model customization and deprecate functionality](dev-tools/lock-models.md)
 ### [Update Visual Studio development tools](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
-#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes in Dynamics 365 for Finance and Operations 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [Build navigation](user-interface/build-navigation.md)
 ### [Build a workspace](user-interface/build-workspace.md)
 ## Forms
-### [Navigation in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Layout in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigation in Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Layout in Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Symbol font](user-interface/symbol-font.md)
 ### [Test forms with custom patterns](user-interface/testing-forms-custom-patterns.md)
 ### [Create and use deep links](user-interface/create-deep-links.md)
@@ -489,7 +489,7 @@
 
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
-### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
@@ -507,7 +507,7 @@
 ### [Update the local agent](lifecycle-services/update-local-agent.md)
 ### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
 ### [Client internet connection](user-interface/client-disconnected.md)
-### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -703,10 +703,10 @@
 ## [Request a sandbox database refresh](database/database-refresh.md)
 
 # Support
-## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Get support for Dynamics 365 for Finance and Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
+## [Set up technical support for Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 ## [Manage Finance and Operations Support experiences](lifecycle-services/cloud-powered-support-lcs.md)

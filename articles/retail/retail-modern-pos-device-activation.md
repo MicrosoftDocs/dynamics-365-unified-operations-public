@@ -53,7 +53,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
-- Verify that the Microsoft Dynamics 365 for Retail, Enterprise edition, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
 ## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Download updates from Lifecycle Services
-description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, from Lifecycle Services (LCS).
+description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
 ms.date: 02/27/2018
@@ -48,7 +48,7 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
     > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
     
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations. 
 
     > [!NOTE]
     >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment. 

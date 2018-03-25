@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+title: What's new or changed in Dynamics 365 for Finance and Operations (July 2017)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
 ms.date: 06/26/2017
@@ -27,18 +27,18 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+# What's new or changed in Dynamics 365 for Finance and Operations (July 2017)
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. 
 
-## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
+## Introducing Dynamics 365 for Finance and Operations
 
 Users and developers will see an updated product name ("Microsoft Dynamics 365
-for Finance and Operations, Enterprise edition") and product icon in the web
+for Finance and Operations") and product icon in the web
 client. Some platform components (for example, the developer tools and the
 mobile application) that are shared by Dynamics 365 for Finance and Operations,
 Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as
@@ -133,7 +133,7 @@ their mobile device.
 Specifically, the **Expense management** mobile workspace enables a user to:
 
 -   Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance
-    and Operations, Enterprise edition. A user can then attach that photo to an
+    and Operations. A user can then attach that photo to an
     expense report later.
 
 -   Upload a file as a captured receipt. A user can then attach that file to an
@@ -406,7 +406,7 @@ For more information, see [Mobile invoice approvals](../../financials/accounts-p
 
 ### Configuration data packages
 
-Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations, Enterprise edition.
+Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations.
 
 The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial ‘golden’ build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](../../dev-itpro/data-entities/configuration-data-packages.md). 
 
@@ -450,7 +450,7 @@ Oftentimes, organizations offload the paper invoice processing to a third-party
 optical character recognition (OCR) service provider to get machine readable
 invoice metadata along with the scanned image of the invoice. To help with
 automation, a solution is built in the invoicing system to enable consumption of
-these artifacts. Dynamics 365 for Finance and Operations, Enterprise edition
+these artifacts. Dynamics 365 for Finance and Operations
 enables this automation out of the box. 
 
 The basic premise of invoice automation is to enable a standard interface that
@@ -484,7 +484,7 @@ a more user-friendly way to view the workflow history for an expense report.
 
 ### Cross legal entities reporting in Cost accounting 
 
-This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations, Enterprise edition. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs. 
+This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs. 
 
 For more information, see [Cost accounting overview](../../financials/cost-accounting/cost-accounting-home-page.md).
 
@@ -682,7 +682,7 @@ invoices.
 ### Global coverage – Languages
 
 This feature allows ISVs and partners to create a new language in Dynamics 365
-for Finance and Operations, Enterprise edition, including managing this process
+for Finance and Operations, including managing this process
 throughout upgrades and updates of source labels via extensions.
 
 ### Global coverage - Retail 
@@ -977,7 +977,7 @@ project managers. It provides key metrics that are related to the projects that
 the organization is working on. The content gives an overview of the projects
 and related customers. The Power BI content pulls data from the project
 accounting aggregate measurements for Microsoft Dynamics 365 for Finance and
-Operations, Enterprise edition.
+Operations.
 
 The Practice manager Power BI content contains five report pages: one overview
 page and four pages that provide details about project costs, revenues, earned
@@ -1037,7 +1037,7 @@ For more information, see [Add financial dimensions to aggregate measurements](.
 The Purchase spend analysis content pack for Microsoft Power BI was created for
 purchasing managers and managers who are responsible for budgets. It's designed
 to help them monitor purchase spending. It uses purchase transactional data from
-Dynamics 365 for Finance and Operations, Enterprise edition and provides both an
+Dynamics 365 for Finance and Operations and provides both an
 aggregate view of the company-wide purchase figures and a breakdown of purchase
 spending by vendor and product. Reports highlight changes in purchase spending
 over time. Therefore, they can be used to alert managers about positive and
@@ -1055,7 +1055,7 @@ following ways: 
 
 The Purchase spend analysis Power BI content pack is available via the Lifecycle
 Services (LCS) Asset library and as an embedded report in Dynamics 365 for
-Finance and Operations, Enterprise edition.  
+Finance and Operations.  
 For more information, see [Purchase content pack for Power BI](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md).
 
 ### Purchasing analysis Power BI content
@@ -1124,7 +1124,7 @@ Profitability can be analyzed by:
 
 The Sales and profitability performance Power BI content pack is available via
 the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics
-365 for Finance and Operations, Enterprise edition.
+365 for Finance and Operations.
 
 For more information, see [Sales and profitability performance Power BI content pack](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md).
 
@@ -1145,7 +1145,7 @@ capabilities to analyze warehouse performance in the past, present, and future.
 
 Warehouse and operations managers can monitor the key inbound, outbound, and
 inventory metrics. This feature uses product and other transactional data from
-Dynamics 365 for Finance and Operations, Enterprise edition to provide both an
+Dynamics 365 for Finance and Operations to provide both an
 aggregate view of the warehouse performance and a breakdown for customers,
 vendors, product groups, and product sites and warehouses. For more information,
 see [Warehouse performance Power BI content](../../dev-itpro/analytics/warehouse-power-bi-content.md).
@@ -1306,7 +1306,7 @@ For more information, see [Configuration data templates](../../dev-itpro/data-en
 ### Upgrade 
 
 You can upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and
-Operations, Enterprise edition. The complete Dynamics AX 2012 database can be
+Operations. The complete Dynamics AX 2012 database can be
 brought forward, and your AX 2012 codebase can be upgraded to Finance and
 Operations. You can migrate from Dynamics AX 2009 to Finance and Operations via
 a migration toolset to bring forward master data and opening balances.
@@ -1607,7 +1607,7 @@ We extended the Retail initialize feature to support custom table and field init
 ### Retail peripheral compatibility
 
 The Peripheral simulator for Retail, included in Dynamics 365 for Retail and
-Dynamics 365 for Finance and Operations, Enterprise edition, introduces an
+Dynamics 365 for Finance and Operations, introduces an
 important update to the previously released peripheral simulator. New to the
 Peripheral simulator for Retail is a point of sale simulator that can test
 peripheral devices for compatibility with the Modern point of sale and Hardware
@@ -1811,7 +1811,7 @@ For more information, see [Piece picking confirmation](../../supply-chain/wareho
 
 ### Product work confirmation for cluster picking 
 
-Dynamics 365 for Finance and Operations, Enterprise edition now supports item
+Dynamics 365 for Finance and Operations now supports item
 scanning and verification in the cluster picking flow.
 
 When cluster picking is applied, item confirmation is crucial to verify the
@@ -1876,7 +1876,7 @@ adjust integration settings for your data structure and business needs.
 **Enhanced systems and flexible setup**  
 The integration comes with a rich solution to optimize the experience and allow
 for complex process flows between Dynamics 365 for Sales and Dynamics 365 for
-Finance and Operations, Enterprise edition. Finance and Operations, optimized to
+Finance and Operations. Finance and Operations, optimized to
 support integration with enhanced entities and Dynamics 365 for Sales is
 optimized with a solution.
 
@@ -1915,7 +1915,7 @@ was not possible to filter or group work using work lists.
 ### Vendor collaboration
 
 Vendor collaboration was enabled in earlier releases. In Dynamics 365 for
-Finance and Operations, Enterprise edition, we have enabled a seamless
+Finance and Operations, we have enabled a seamless
 consumption of changes to a purchase order when a vendor accepts or suggests
 changes to a purchase order in the vendor collaboration interface and returns
 the changed purchase order to the purchasing professionals.

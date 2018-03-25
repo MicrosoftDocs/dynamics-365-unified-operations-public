@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy configuration data from one company or legal entity to another
-description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Microsoft Dynamics 365 for Finance and Operations.
 
 author: mikefalkner
 manager: AnnBe
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include[banner](../includes/banner.md)]
 
-There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
+There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations:
 
 - To move data between instances of Finance and Operations, you must first export it from one company and then import it to another company. 
 - To move data from one legal entity to another legal entity in the same instance, you can use the **Copy into legal entity** feature.

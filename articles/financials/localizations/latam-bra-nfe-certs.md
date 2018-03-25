@@ -2,7 +2,7 @@
 # required metadata
 
 title: NF-e certificates for Brazil
-description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This includes information about the solution you should use for each state tax authority.
+description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations. This includes information about the solution you should use for each state tax authority.
 author: sndray
 manager: AnnBe
 ms.date: 01/31/2018
@@ -43,7 +43,7 @@ Before you can generate an NF e, you must complete the following tasks:
 - Set up a fiscal document type for NF e.
 
 ## Set up certificates
-The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process, so that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, can connect with the state web services.
+The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process, so that Microsoft Dynamics 365 for Finance and Operations, can connect with the state web services.
 
 The Brazilian government updated the root certification authority (CA) that is used to issue the certificate that is required in order to establish a Secure Sockets Layer (SSL) connection on server side. The current version of the root CA is AC Raiz v5. By default, the previous version (AC Raiz v2) is deployed on Microsoft Windows.
 

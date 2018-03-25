@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy a Finance and Operations database – Azure SQL to SQL Server
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: maertenm
 manager: AnnBe
 ms.date: 03/07/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
 ## Overview
 

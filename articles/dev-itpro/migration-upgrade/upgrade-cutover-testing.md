@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
-description: This topic explains how to test the cutover process between turning off an AX 2012 environment and turning on Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic explains how to test the cutover process between turning off an AX 2012 environment and turning on Dynamics 365 for Finance and Operations. 
 author: robadawy
 manager: AnnBe
 ms.date: 03/22/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
+*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Microsoft Dynamics 365 for Finance and Operations, is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 
 There are three main workstreams during a cutover:
 

@@ -38,7 +38,7 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable. 
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
-This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
+This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
 
 The following table lists the available triggers and denotes whether they can be cancelled.
 

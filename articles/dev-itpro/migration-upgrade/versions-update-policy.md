@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software lifecycle policy and list of releases
-description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations, Enterprise edition online service and for Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
+description: This topic outlines the lifecycle and support policies for both the Dynamics 365 for Finance and Operations online service and for Dynamics 365 for Finance and Operations (on-premises) software deployments.
 author: RyanCCarlson2 
 manager: AnnBe
 ms.date: 03/06/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include[banner](../includes/banner.md)]
 
-This topic outlines the lifecycle and support policies for both the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition online service and for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) software deployments.
+This topic outlines the lifecycle and support policies for both the Microsoft Dynamics 365 for Finance and Operations online service and for Microsoft Dynamics 365 for Finance and Operations (on-premises) software deployments.
 
 ## Modern Lifecycle Policy
 
@@ -64,27 +64,27 @@ For information about the new features included in each release, click the links
 
 | Release          |Major or minor release         | Version          | Build number | Availability  | Expiration date | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md) | 7.3.11971.56116 | December 2017     | December 2020  |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Major release | [July 2017](../../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024 | June 2017     | June 2020  | 
+|  Dynamics 365 for Finance and Operations | Major release | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md) | 7.3.11971.56116 | December 2017     | December 2020  |
+|  Dynamics 365 for Finance and Operations | Major release | [July 2017](../../fin-and-ops/get-started/whats-new-application-july-2017-update.md) | 7.2.11792.56024 | June 2017     | June 2020  | 
 |  Dynamics 365 for Operations     | Major release | [1611](../../fin-and-ops/get-started/whats-new-dynamics-365-operations-1611.md) | 7.1.1541.3036| November 2016 | November 2019   | 
 |  Dynamics AX |Minor release  | [7.0.1](../../fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014 | May 2016 | June 2017 | 
 |  Dynamics AX | Major release | [7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md) | 7.0.1265.3015 | February 2016 | June 2017 | 
 
 ### Table 2: Application updates
 
-The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for the July 2017 release.
+The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for the July 2017 release.
 
 For information about the new features included in each update, click the links in the **Version** column.
 
 | Release          | Version          | Build number | Availability  |  
 |------------------|------------------|--------------|---------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition | 7.3.2: [KB 4093261 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2 (Binary part)](https://fix.lcs.dynamics.com/Issue/Details?kb=4093261&bugId=3937217&qc=848a3e7a82137b3ac4412537f1fdb4fafacab7d7565e0a7a6930b0c96406c96a), [KB 4093262 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2 (X++ part)*](https://fix.lcs.dynamics.com/Issue/Details?kb=4093262&bugId=3937219&qc=848a3e7a82137b3ac4412537f1fdb4fafacab7d7565e0a7a6930b0c96406c96a) | 7.3.11971.62687 | March 2018     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | 7.3.1: [KB 4093139 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.1 (Binary part)*](https://fix.lcs.dynamics.com/Issue/Details?bugId=3933782&qc=419638525c20d4bcd818cd40be05a12876e4c00a39124d2e44a0d950af21be89), [KB 4091727 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.1 (X++ part)*](https://fix.lcs.dynamics.com/Issue/Details?bugId=3933783&qc=419638525c20d4bcd818cd40be05a12876e4c00a39124d2e44a0d950af21be89) | 7.3.11971.62430 | March 2018     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 5: [KB 4053277 Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053277&bugId=3893141&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5), [KB 4053278 Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053278&bugId=3893143&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5) | 7.2.11792.62725 | November 2017     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 4: [KB 4047325 Application Update 4 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047325&bugId=3866272&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838), [KB 4047321 Application Update 4 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047321&bugId=3866273&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838) | 7.2.11792.62509 | October 2017     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 3: [KB 4043284 Application Update 3 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=e6921e68e9b9037bf91c26b3b553e479890731b4b4dd5e6dcb45b0ca13895d8d), [KB 4043285 Application Update 3 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043285&bugId=3857199&qc=54ee2e988aace65d26834ced54cc11326f5d5e435520ccaf951d41bd1276f672) | 7.2.11792.62370 | September 2017     | 
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 2: [KB 4039142 Application Update 2 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4039487 Application Update 2 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039487&bugId=3850591&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62192 | September 2017     | 
-|  Dynamics 365 for Finance and Operations, Enterprise edition | Application update 1: [KB 4035749 Application Update 1 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4035751 Application Update 1 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035751&bugId=3845891&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62089 | July 2017     | 
+|  Dynamics 365 for Finance and Operations | 7.3.2: [KB 4093261 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2 (Binary part)](https://fix.lcs.dynamics.com/Issue/Details?kb=4093261&bugId=3937217&qc=848a3e7a82137b3ac4412537f1fdb4fafacab7d7565e0a7a6930b0c96406c96a), [KB 4093262 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2 (X++ part)*](https://fix.lcs.dynamics.com/Issue/Details?kb=4093262&bugId=3937219&qc=848a3e7a82137b3ac4412537f1fdb4fafacab7d7565e0a7a6930b0c96406c96a) | 7.3.11971.62687 | March 2018     |
+|  Dynamics 365 for Finance and Operations | 7.3.1: [KB 4093139 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.1 (Binary part)*](https://fix.lcs.dynamics.com/Issue/Details?bugId=3933782&qc=419638525c20d4bcd818cd40be05a12876e4c00a39124d2e44a0d950af21be89), [KB 4091727 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.1 (X++ part)*](https://fix.lcs.dynamics.com/Issue/Details?bugId=3933783&qc=419638525c20d4bcd818cd40be05a12876e4c00a39124d2e44a0d950af21be89) | 7.3.11971.62430 | March 2018     |
+|  Dynamics 365 for Finance and Operations | Application update 5: [KB 4053277 Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053277&bugId=3893141&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5), [KB 4053278 Application Update 5 for Microsoft Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4053278&bugId=3893143&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5) | 7.2.11792.62725 | November 2017     |
+|  Dynamics 365 for Finance and Operations | Application update 4: [KB 4047325 Application Update 4 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047325&bugId=3866272&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838), [KB 4047321 Application Update 4 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047321&bugId=3866273&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838) | 7.2.11792.62509 | October 2017     |
+|  Dynamics 365 for Finance and Operations | Application update 3: [KB 4043284 Application Update 3 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043284&bugId=3857197&qc=e6921e68e9b9037bf91c26b3b553e479890731b4b4dd5e6dcb45b0ca13895d8d), [KB 4043285 Application Update 3 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4043285&bugId=3857199&qc=54ee2e988aace65d26834ced54cc11326f5d5e435520ccaf951d41bd1276f672) | 7.2.11792.62370 | September 2017     | 
+|  Dynamics 365 for Finance and Operations | Application update 2: [KB 4039142 Application Update 2 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039142&bugId=3850590&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4039487 Application Update 2 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4039487&bugId=3850591&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62192 | September 2017     | 
+|  Dynamics 365 for Finance and Operations | Application update 1: [KB 4035749 Application Update 1 for Dynamics 365 for Finance and Operations (Binary part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4035751 Application Update 1 for Dynamics 365 for Finance and Operations (X++ part)*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035751&bugId=3845891&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df) | 7.2.11792.62089 | July 2017     | 
 
 \* The link points to a Knowledge Base (KB) article. You must log in to Lifecycle Services (LCS) to view the KB article.
 
@@ -133,7 +133,7 @@ Microsoft is committed to supporting the deployments of the Dynamics 365 for Fin
 
 | Release                                                                             | Version          | Build number | Availability | Expiration date | Product life  |
 |-------------------------------------------------------------------------------------|------------------|--------------|--------------|-----------------|---------------|
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017  | 7.2.11792 | June 2017    |  June 2020   | December 2027 |
+| Microsoft Dynamics 365 for Finance and Operations (on-premises) | July 2017  | 7.2.11792 | June 2017    |  June 2020   | December 2027 |
 
 
 ## Related topics: 

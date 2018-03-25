@@ -49,7 +49,7 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 ## Wireframe
 [![patternNSLD](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
 
-## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md) pattern document.

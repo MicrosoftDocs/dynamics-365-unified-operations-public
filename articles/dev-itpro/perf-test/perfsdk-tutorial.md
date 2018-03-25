@@ -106,7 +106,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
 8. Follow these steps to update the **wif.config** file so that Application Object Server (AOS) trusts the certificate:
 
-    1. Start Microsoft Internet Information Services (IIS), and find **Microsoft Dynamics 365 for Finance and Operations, Enterprise edition** in the list of sites.
+    1. Start Microsoft Internet Information Services (IIS), and find **Microsoft Dynamics 365 for Finance and Operations** in the list of sites.
     2. Select **Explore**, and find the **wif.config** file.
 
         [![wif.config file](./media/wifconfig.jpg)](./media/wifconfig.jpg)

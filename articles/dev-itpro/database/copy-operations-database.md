@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a copy of a Finance and Operations database to restore later
-description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database to a file, and then reimport that file into the same instance or another instance of the application.
+description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
 ms.date: 11/21/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
 
 > [!NOTE]
 > This topic applies to Microsoft Azure SQL databases that are connected to sandbox user acceptance testing (UAT) environments.

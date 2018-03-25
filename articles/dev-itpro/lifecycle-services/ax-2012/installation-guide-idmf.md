@@ -86,9 +86,9 @@ The following table provides the minimum hardware requirements to install and ru
 ### Supported operating systems
 
 IDMF is currently supported on 32-bit and 64-bit versions of the following operating systems.
--   Windows Server 2008 Standard Edition, Enterprise Edition, or Datacenter Edition
--   Windows Server 2008 R2 Standard Edition, Enterprise Edition, or Datacenter Edition
--   Windows Server 2012 Standard Edition, Enterprise Edition, or Datacenter Edition
+-   Windows Server 2008 Standard Edition, or Datacenter Edition
+-   Windows Server 2008 R2 Standard Edition, or Datacenter Edition
+-   Windows Server 2012 Standard Edition, or Datacenter Edition
 -   Windows 7 Professional Edition or Ultimate Edition
 -   Windows 8 Pro Edition or Enterprise Edition
 

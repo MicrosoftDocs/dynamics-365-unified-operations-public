@@ -3,7 +3,7 @@
 # required metadata
 
 title: Add new inventory dimensions through extensions
-description: This topic describes how to add new inventory dimensions through extensions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to add new inventory dimensions through extensions in Microsoft Dynamics 365 for Finance and Operations.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 02/01/2018

@@ -97,7 +97,7 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers.
 
  > [!WARNING]
- > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
+ > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
 
 The hardware configuration includes the following components:
 
@@ -316,7 +316,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts** row.
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
 >[!Note] 
 > If you need the older version for PU8 or PU11 download version 1.
@@ -627,7 +627,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 | Release | Demo Data |
 |-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises, Enterprise Edition - Demo data |
+| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
 | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
 | On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
