@@ -1,4 +1,4 @@
-ProjectTasksFlow.PNG[![
+   ProjectTasksFlow.PNG[![
 # Synchronize project tasks from Project Service Automation directly to project activities in Finance and Operations
 
 This topic describes the template and underlying task that is used to synchronize project tasks directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
@@ -26,9 +26,9 @@ Before synchronization of project tasks can occur, you mus synchronize project c
 
 ## Entity set
 
-|Project Service Automation               | Finance and Operations          |
-|-----------------------------------------|---------------------------------|
-| Project Tasks                           | Integration entity for project task
+|Project Service Automation               | Finance and Operations                |
+|-----------------------------------------|---------------------------------------|
+| Project Tasks                           | Integration entity for project task   |
 
 ## Entity flow
 
