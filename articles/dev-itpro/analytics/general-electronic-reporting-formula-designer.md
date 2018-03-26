@@ -40,7 +40,7 @@ This topic explains how to use the formula designer in Electronic reporting (ER)
 
 ER supports the formula designer. Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:
 
-- Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
+- Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
 - Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format. (For example, the formatting might be done in accordance with the requested language or culture, or the encoding).
 - Control the process of creating electronic documents. (For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data. They can also interrupt the document creation process or throw messages to users.)
 

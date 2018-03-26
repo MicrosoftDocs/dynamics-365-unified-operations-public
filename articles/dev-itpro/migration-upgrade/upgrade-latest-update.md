@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process for moving to the latest update of Finance and Operations
-description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
+This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
 For information about the contents of each upgrade that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 

@@ -57,7 +57,7 @@ The rest of this topic will focus on the Operational workspace pattern and the T
 
 [![Workspace(2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
-## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
 
 ## Model

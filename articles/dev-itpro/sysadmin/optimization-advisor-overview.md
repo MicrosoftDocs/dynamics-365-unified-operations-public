@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimization advisor overview
-description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations, Enterprise edition. 
+description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations. 
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
+This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations.
 
 ## Overview
 
@@ -52,7 +52,7 @@ Standard security policies apply to optimization opportunities. For example, the
 
 When you take action on some optimization opportunities, the system calculates the impact of the opportunity in terms of the reduction in the runtime of business processes. Unfortunately, this feature isn't available for all optimization opportunities.
 
-To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations, Enterprise edition](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
+To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
@@ -100,4 +100,4 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 
 [Create new rules](./create-rules-optimization-advisor.md)
 
-[Optimization advisor in Dynamics 365 for Finance and Operations, Enterprise edition (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimization advisor in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

@@ -144,7 +144,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 [aria-expanded (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded) - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
-**Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+**Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 [aria-haspopup](http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup) - Indicates that the element has a pop-up context menu or sub-level menu.
 

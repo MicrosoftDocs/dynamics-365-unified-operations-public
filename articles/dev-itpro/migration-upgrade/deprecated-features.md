@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0 
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

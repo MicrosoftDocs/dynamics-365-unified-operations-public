@@ -194,7 +194,7 @@
 # [Retail development & administration](dev-itpro/dev-retail-home-page.md)
 
 ## Architecture
-### [Components of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
+### [Components of Microsoft Dynamics 365 for Finance and Operations - Retail](retail-components.md)
 ### [Retail Server architecture](dev-itpro/retail-server-architecture.md)
 ### [Retail channel communications](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)

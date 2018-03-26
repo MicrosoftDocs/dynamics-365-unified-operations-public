@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: B2B functionality in Dynamics 365 for Finance and Operations, Enterprise edition
+title: B2B functionality in Dynamics 365 for Finance and Operations
 description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
@@ -89,7 +89,7 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 
 ### Configure the B2B invitation service settings in Finance and Operations
 
-1. Sign in to Dynamics 365 for Finance and Operations, Enterprise edition as administrator.
+1. Sign in to Dynamics 365 for Finance and Operations as administrator.
 
 2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 

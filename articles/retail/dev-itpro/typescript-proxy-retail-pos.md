@@ -53,7 +53,7 @@ There two types of proxy to support cross-platform scenarios:
 
 ## Generate the Typescript proxy
 
-The following steps apply only to Microsoft Dynamics 365 for Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation, Enterprise edition.
+The following steps apply only to Microsoft Dynamics 365 for Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
 
 You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder to generate the Typescript proxy for the POS.
 

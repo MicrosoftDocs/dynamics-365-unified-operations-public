@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises
-description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Troubleshoot Dynamics 365 for Finance and Operations on-premises
+description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 03/05/2018
@@ -29,11 +29,11 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises
+# Troubleshoot Dynamics 365 for Finance and Operations on-premises
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 
 ## Error when signing in to on-premises environments
 
@@ -170,7 +170,7 @@ Follow the steps below in order to start over:
 Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## Local agent
-Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition.
+Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations.
 
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.

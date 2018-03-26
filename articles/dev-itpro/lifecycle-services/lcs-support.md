@@ -2,7 +2,7 @@
 # required metadata
 
 title: Find support for Finance and Operations and Dynamics Lifecycle Services
-description: This article explains how to get help with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition or Microsoft Dynamics Lifecycle Services (LCS). 
+description: This article explains how to get help with Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services
+# Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services
 
 [!include[banner](../includes/banner.md)]
 
