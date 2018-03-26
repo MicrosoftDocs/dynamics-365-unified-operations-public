@@ -94,10 +94,10 @@
 #### [Update standard costs for a new manufactured item](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
 #### [Update standard costs in a non-manufacturing environment](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
 #### [Prepare to maintain standard costs for manufactured items](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
-### [Costing versions (for predetermined costs)](../supply-chain/cost-management/costing-versions.md)
+### [Costing versions](../supply-chain/cost-management/costing-versions.md)
 #### [Costing sheets](../supply-chain/cost-management/costing-sheets.md)
 #### [Simulate cost changes by using a costing version for planned costs](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
-### [Inventory accounting]
+### Inventory accounting
 #### [Cost objects](../supply-chain/cost-management/cost-object.md)
 #### [View cost object balance](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
 #### [View inventory statement and KPI by cost object](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
@@ -117,7 +117,7 @@
 #### [Weighted average with physical value and marking](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
 #### [Inventory close](../supply-chain/cost-management/inventory-close.md)
 #### [Adjust on-hand inventory cost values](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
-### [Manufacturing accounting]
+### Manufacturing accounting
 #### [BOM calculations](../supply-chain/cost-management/bom-calculations.md)
 #### [BOM calculation groups](../supply-chain/cost-management/bom-calculation-groups.md)
 #### [Backflush costing](../supply-chain/cost-management/backflush-costing.md)
