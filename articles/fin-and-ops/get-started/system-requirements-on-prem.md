@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for on-premises deployments
-description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, for on-premises deployments.
+description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments.
 author: kfend
 manager: AnnBe
 ms.date: 02/01/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 > [!IMPORTANT]
 > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
 
