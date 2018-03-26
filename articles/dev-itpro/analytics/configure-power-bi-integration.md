@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Overview
 
-Microsoft Dynamics 365 for Finance and Operations, lets users pin tiles and reports from their own PowerBI.com account to workspaces.
+Microsoft Dynamics 365 for Finance and Operations lets users pin tiles and reports from their own PowerBI.com account to workspaces.
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.
 
