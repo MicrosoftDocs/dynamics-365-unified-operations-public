@@ -118,14 +118,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 ### Run the installer
 
 > [!NOTE]
-> Before you run the Retail hardware station installer, make sure that the following requirements are met:
-> - The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on your system.
-> - The installer installs Retail hardware station only on the following operating systems:
->    - Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren't supported.
->    - Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn't supported.
->    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.  Home edition isn't supported.
->    - Windows Server 2012 R2 or Windows Server 2016.
->    - It is not recommended to use Retail hardware station and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+> Before you run the Retail hardware station installer, make sure that all requirements are met on the [Systems Requirements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements) page.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 
