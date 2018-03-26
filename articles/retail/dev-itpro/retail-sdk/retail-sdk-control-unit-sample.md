@@ -2,10 +2,10 @@
 # required metadata
 
 title: Control unit sample for Sweden
-description: This topic is the building and installation guide for the sample for control unit integration for Sweden 
+description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 manager: AnnBE
-ms.date: 07/01/2017
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
