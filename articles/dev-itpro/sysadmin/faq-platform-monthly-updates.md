@@ -148,7 +148,7 @@ We want customers to stay current. We will allow customers to delay the update f
 
 ## When should I update my dev/build environment?
 
-After Microsoft updates your production environment, apply the update to the rest of your environments (such as additional sandboxes and dev/build environments). You can take the latest platform update package from the **Platform update** tile on the environment details page in LCS. For additional instructions, see [Apply the latest platform update](../upgrade-latest-platform-update.md).
+After Microsoft updates your production environment, apply the update to the rest of your environments (such as additional sandboxes and dev/build environments). You can take the latest platform update package from the **Platform update** tile on the environment details page in LCS. For additional instructions, see [Apply the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
 ## In the scenario where Microsoft initiates platform updates, if an update is completed on a Tier 2 Standard Acceptance Test (Sandbox) environment but isn't yet applied to the production environment, there is a gap of five days when the sandbox and production environments are on different versions. If we find an issue in the production environment, can we still follow the process of applying a package to the sandbox environment and then moving it to the production environment, even though the versions the environments are on different versions?
 
