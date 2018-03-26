@@ -110,6 +110,20 @@ The following application attributes may be printed in receipts via custom field
 
 If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the build number and the certificate category and number. Otherwise, the default values for the certificate category and number will be printed, but you still need to specify the POS build number assigned by Microsoft to the POS application.
 
+The certificate category and number are specified in **RetailSDK\SampleExtensions\CommerceRuntime\Extensions.ReceiptsFrance\GetSalesTransactionCustomReceiptFieldService.cs"**
+
+``` csharp
+    /// <summary>
+    /// Certification category.
+    /// </summary>
+    private const string CertificationCategory = "C";
+
+    /// <summary>
+    /// Certificate number.
+    /// </summary>
+    private const string CertificateNumber = "18/0202";
+```
+
 ### Overriding build number
 
 The software version/build number and publisher are specified in **RetailSDK\\BuildTools\\Customization.settings**.
@@ -285,7 +299,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### SequentialSignatureRegister.Contracts component
 
-1. Find the **Runtime.Extensions.SequentialSignatureRegister.Contracts** project.
+1. Find the **Runtime.Extensions.SequentialSignatureRegister.Contracts** project, and build it.
 2. In the **Extensions.SequentialSignatureRegister.Contracts\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
 
@@ -332,7 +346,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 ### Retail proxy extension component
 
-This part is equivalent to the Retail Server controller, but it extends the local CRT that is used in the Modern POS offline mode.
+> [!NOTE]
+> Steps in this section are required to enable the extensions in the offline mode of Modern POS
 
 #### SalesTransactionSignature Retail proxy sample component
 
@@ -450,7 +465,9 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 
 5. Rebuild the solution.
 
-6. Run Modern POS in the debugger, and test the functionality.
+6. Run the solution by using the Run command and following the steps in the Retail SDK handbook.
+
+7. Test the functionality.
 
 ## Production environment
 
@@ -472,7 +489,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
         ```
-        
+
         Add the following line to use a certificate for digital signing stored in an Azure Key Vault storage:
 
         ``` xml
@@ -482,7 +499,7 @@ Follow these steps to create deployable packages that contain Retail components,
         > [!NOTE]
         > Complete the section [Storing certificate for digital signing in Azure Key Vault](#storing-certificate-for-digital-signing-in-azure-key-vault) first.
 
-     2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
+    2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
