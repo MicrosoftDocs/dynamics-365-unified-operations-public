@@ -5,3 +5,9 @@ This topic describes the template and underlying task that is used to synchroniz
 
 [!NOTE] Backporting of the functionality required to integrate project tasks to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 is in process. This topic will be updated when the hotfix is available.
 
+## Data flow for Project Service Automation to Finance and Operations
+
+The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of PRoject Service Automation and Finance and Operations. The integration template that is available with the Data integration feature enables the flow of data about project tasks from Project Service Automation to Finance and Operations.
+
+The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
+
