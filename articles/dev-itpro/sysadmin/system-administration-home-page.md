@@ -87,8 +87,8 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 - [Batch server overview](batch-server-overview.md)
 
 ## Optimization advisor
-- [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Optimization advisor overview](optimization-advisor-overview.md)
+- [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Create rules for Optimization advisor](create-rules-optimization-advisor.md)
 
 ## Office integration
