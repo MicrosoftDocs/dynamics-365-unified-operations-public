@@ -33,12 +33,12 @@ ms.dyn365.ops.version: 7.3.1
 
 This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India. For more information about the Retail localization for India, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).
 
-This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+This sample is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations.
+> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Finance and Operations that you're using.
 
 ## Development environment
 
@@ -54,65 +54,63 @@ The CRT extension components are included in the CRT samples. To complete the fo
 2. Find the following files:
 
     - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
-
+    
         - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
     - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
-
+    
         - Newtonsoft.Json.dll
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    **For [Application update 7.3.1](#tab/app-update-7-3-1) only:**
 
-    In the **Reference\\TaxEngine** folder:
+    - In the **Reference\\TaxEngine** folder:
 
-      - Microsoft.Dynamics365.Tax.Core.dll
-      - Microsoft.Dynamics365.Tax.DataAccessor.dll
-      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-      - Microsoft.Dynamics365.Tax.DataModel.dll
-      - Microsoft.Dynamics365.Tax.Metadata.dll
-      - Microsoft.Dynamics365.LocalizationFramework.dll
-      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-      - Microsoft.Dynamics365.XppSupportLayer.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    In the **Reference\\Z3\\x86** folder:
+    - In the **Reference\\Z3\\x86** folder:
 
-      - Microsoft.Z3.dll
-      - libz3.dll
+        - Microsoft.Z3.dll
+        - libz3.dll
 
-      > [!NOTE]
-      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+        > [!NOTE]
+        > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    **For [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later):**
 
-    In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
 
-      - Microsoft.Dynamics365.LocalizationFramework.dll
-      - Microsoft.Dynamics365.Tax.Core.dll
-      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-      - Microsoft.Dynamics365.Tax.DataAccessor.dll
-      - Microsoft.Dynamics365.Tax.DataModel.dll
-      - Microsoft.Dynamics365.Tax.Metadata.dll
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
 
-    In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
 
-      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-      - Microsoft.Dynamics365.XppSupportLayer.dll
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    In the **Reference\\Z3.4.5.0\\lib\\net40\\x86** folder:
+    - In the **Reference\\Z3.4.5.0\\lib\\net40\\x86** folder:
 
-      - Microsoft.Z3.dll
-      - libz3.dll
+        - Microsoft.Z3.dll
+        - libz3.dll
 
-      > [!NOTE]
-      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
-
-    ---
+        > [!NOTE]
+        > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
 3. Copy the 13 assembly files to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Internet Information Services (IIS) Retail server site location.
+    - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
 
 4. Find the extensions configuration file for CRT:
@@ -145,7 +143,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    **For [Application update 7.3.1](#tab/app-update-7-3-1) only:**
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
@@ -166,7 +164,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    **For [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later):**
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
