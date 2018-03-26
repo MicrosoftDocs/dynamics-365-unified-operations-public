@@ -64,7 +64,7 @@ The expected downtime of a successful update is one hour. However, we ask for th
 
 ## Where can I find details about the maintenance windows when the update will be applied?
 
-An email notification will contain details about the environment that is being updated, the amount of downtime, and the time when the update will be applied. For more details, see [What is a planned maintenance window](../lifecycle-services/planned-maintenance-window-faq.md).
+An email notification will contain details about the environment that is being updated, the amount of downtime, and the time when the update will be applied. For more details, see [What is a planned maintenance window?](../lifecycle-services/planned-maintenance-window-faq.md)
 
 ## Who will receive the email notifications?
 
