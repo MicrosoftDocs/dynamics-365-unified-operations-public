@@ -2,7 +2,7 @@
 # required metadata
 
 title: Go-live FAQ for Microsoft Dynamics 365 for Finance and Operations
-description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
 author: sshashi7
 manager: AnnBe
 ms.date: 02/13/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
 
 ## When can I configure and request my production environment?
 

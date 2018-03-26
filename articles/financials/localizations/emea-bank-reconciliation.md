@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 
-In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
+In Microsoft Dynamics 365 for Finance and Operations, you can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
 
 -   Importing bank statements
 -   Importing payments

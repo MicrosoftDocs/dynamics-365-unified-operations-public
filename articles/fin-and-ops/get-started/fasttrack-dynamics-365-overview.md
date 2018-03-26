@@ -39,7 +39,7 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
 
-**Product offering: Dynamics 365, Enterprise edition**
+**Product offering: Dynamics 365**
 
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|

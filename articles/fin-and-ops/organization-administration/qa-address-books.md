@@ -2,7 +2,7 @@
 # required metadata
 
 title: Address books FAQ
-description: This topic provides answers to frequently asked questions related to address books in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic provides answers to frequently asked questions related to address books in Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017

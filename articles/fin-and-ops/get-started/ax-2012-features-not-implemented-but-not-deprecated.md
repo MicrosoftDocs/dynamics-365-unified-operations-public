@@ -80,7 +80,7 @@ This topic lists features of Microsoft Dynamics AX 2012 that were postponed. The
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Functionality for entering absence transactions isn't included in Microsoft Dynamics 365 for Finance and Operations. Additionally, functionality for approving those absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 <td>Implemented in Microsoft Dynamics 365 for Talent</td>
 </tr>
 <tr class="odd">

@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for cloud deployments
-description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for cloud deployments.
+description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments.
 author: sericks007
 manager: AnnBe
 ms.date: 02/08/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for cloud deployments. If this step is appropriate, before you install Finance and Operations, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments. If this step is appropriate, before you install Finance and Operations, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 ## Supported web browsers
 
