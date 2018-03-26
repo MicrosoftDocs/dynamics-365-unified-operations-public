@@ -1322,7 +1322,7 @@
 #### [Nonconformance management](../supply-chain/inventory/enable-nonconformance-management.md)
 #### [Set up prerequisites for management](../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md)
 #### [Create and process a conformance](../supply-chain/inventory/tasks/create-process-non-conformance.md)
-#### [Quarantine order](../supply-chain/inventory/quarantine-orders.md)
+#### [Quarantine orders](../supply-chain/inventory/quarantine-orders.md)
 #### [Set up quality orders](../supply-chain/inventory/tasks/set-up-quality-orders.md)
 #### [Inspect the quality of goods](../supply-chain/inventory/tasks/inspect-quality-goods.md)
 #### [Inventory blocking](../supply-chain/inventory/inventory-blocking.md)
@@ -1345,7 +1345,7 @@
 #### [Change the ownership of consignment inventory based on production demand](../supply-chain/inventory/tasks/change-ownership-consignment.md)
 #### [Create a consignment replenishment order](../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)
 #### [Monitor consignment inventory using vendor collaboration](../supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
-#### [Trace item and raw material](../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md)
+#### [Item and raw material tracing in inventory, production, and sales](../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md)
 #### [Trace an item or raw material](../supply-chain/inventory/tasks/trace-item-or-raw-material.md)
 #### [Merge inventory batch](../supply-chain/inventory/merge-inventory-batches.md)
 #### [Correct inventory tracking information](../supply-chain/inventory/tasks/correct-inventory-tracking-information.md)
@@ -1353,7 +1353,7 @@
 #### [Inventory on-hand mobile workspace](../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)
 
 ### [Outbound process](../supply-chain/inventory/outbound-process.md)
-#### [Reserve inventory quantity](../supply-chain/inventory/reserve-inventory-quantities.md)
+#### [Reserve inventory quantities](../supply-chain/inventory/reserve-inventory-quantities.md)
 #### [Reserve the same batch for a sales order](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
 
 ### Inventory control
