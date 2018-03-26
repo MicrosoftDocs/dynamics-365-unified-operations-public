@@ -68,7 +68,7 @@ An email notification will contain details about the environment that is being u
 
 ## Who will receive the email notifications?
 
-The Project owner, Organization administrator, and Environment manager roles in Microsoft Dynamics Lifecycle Services (LCS) will receive the email notifications. If you aren't part of the project but still want to be notified, on the environment details page for a specific environment, in the Notification list, add the email addresses of the interested stakeholders as a colon-separated list. In the future, we will consider publishing a predictable schedule of upcoming updates.
+The Project owner, Organization administrator, and Environment manager roles in Microsoft Dynamics Lifecycle Services (LCS) will receive the email notifications. If you aren't part of the project but still want to be notified, on the environment details page for a specific environment, in the Notification list, add the email addresses of the interested stakeholders as a colon-separated list. In the future, we will consider publishing a schedule of upcoming updates.
 
 ## Do I have to do anything to prepare for the update?
 
