@@ -56,7 +56,7 @@ The platform update package will be applied to your environment. This is a colle
 
 ## What is the overall process that will be used?
 
-Microsoft will notify you 5 days before an update will be applied to your purchased Tier – 2 sandbox. You will be given 5 days to test and validate the platform version in the Tier-2 sandbox prior to the update being applied to your production environment. No explicit sign off will be required.
+Microsoft will notify you 5 days before an update will be applied to your purchased Tier 2 Standard Acceptance Test (Sandbox). You will be given 5 days to test and validate the platform version in the Tier 2 Standard Acceptance Test (Sandbox) prior to the update being applied to your production environment. No explicit sign off will be required.
 
 ## What’s the expected downtime?
 
@@ -68,25 +68,26 @@ An email notification will contain details on the environment being updated, dow
 
 ## Who will receive the email notifications?
 
-The project owner, organization administrator, and environment manager roles in Lifecycle Services (LCS) receive the email notifications. If you are not part of the project but would still like to be notified, you can go to the Notification list on the Environment Details page for a specific environment and add the email addresses of the interested stakeholders in a colon separated list. In the future, we will look at publishing a predictable schedule of the upcoming updates.
+The project owner, organization administrator, and environment manager roles in Lifecycle Services (LCS) receive the email notifications. If you are not part of the project but would still like to be notified, you can go to the Notification list on the environment details page for a specific environment and add the email addresses of the interested stakeholders in a colon separated list. In the future, we will look at publishing a predictable schedule of the upcoming updates.
 
 ## Is there anything I need to do in preparation for the update?
 
-There is no action item on the customer when Microsoft is pushing the update. The only ask we have is for you to sign off on any complete package applications in the purchased Tier 2 Standard Acceptance Test (Sandbox) and Production environments. This can be done by navigating to the specific environment details page and setting the package application status to Sign-Off.  
+The only ask we have is for you to sign off on any complete package applications in the purchased Tier 2 Standard Acceptance Test (Sandbox) and production environments. This can be done by navigating to the specific environment details page and setting the package application status to **Sign-Off**.  
 
 ## What details will the platform update release notes provide? Will there be a list of fixes and new features with information on which processes they impact?
+To see a list of the new or changed features in the latest monthly update, see the [What's new or changed](../fin-and-ops/get-started/whats-new-changed.md) topic. We also publish KB articles that document any new fixes and features. Feedback on the [What's new or changed](../fin-and-ops/get-started/whats-new-changed.md) topic that we publish today will help us understand if there are gaps in the communication. 
 
-To see a list of the new or changed features in the latest monthly update, see the [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed). We do put out release notes that document any new fixes and features. Any feedback on the What’s new we publish today will help us understand if there are gaps in the communication. Platform updates do not contain any application changes and so the impact should be minimal.
+Platform updates do not contain any application changes and so the impact should be minimal.
 
 ## What validations does Microsoft do for changes in the platform that will be applied during the update?
 
 Before the update is applied, Microsoft runs validations to make sure there is no impact on components outside the platform, such as Management reporter or Retail. Microsoft also makes sure that changes are backward compatible and forward compatible.
 
-After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs verification tests to make sure that Microsoft Dynamics 365 for Finance and Operations can be used to complete transactions.
+After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs verification tests to make sure that Dynamics 365 for Finance and Operations can be used to complete transactions.
 
 ## What kind of validation requirements do I have to complete?
 
-When a platform update is applied, you don’t have to complete any validations. Microsoft is responsible for making sure that the updates are backward compatible and forward compatible with standard Dynamics 365 for Finance and Operations. However, if you prefer, you can complete basic acceptance tests of your key scenarios, because Microsoft doesn’t perform those validations after updates are applied. For example, platform components include Microsoft Office/Excel integrations, workflow, form personalization, data management framework, ODATA integrations, entity store, and Power BI integration; testing functionality around these components is beneficial.
+When a platform update is applied, you don’t have to complete any validations. Microsoft is responsible for making sure that the updates are backward compatible and forward compatible with standard Dynamics 365 for Finance and Operations. However, if you prefer, you can complete basic acceptance tests of your key scenarios, because Microsoft doesn’t perform those validations after updates are applied. For example, platform components include Microsoft Office/Excel integrations, workflow, form personalization, Data management framework, ODATA integrations, entity store, and Power BI integration; testing functionality around these components is beneficial.
 
 We recommend that you automate functional validations to reduce the validation effort.
 
@@ -112,31 +113,31 @@ If you find issues in the sandbox environment, you have the option to postpone t
 
 You cannot rollback a successful update today. We will provide means to rollback a platform update in the coming months.
 
-## What about MR/ Retail and DRA? Are these updated?
+## What about Management Reporter, Retail and Document routing agent? Are these updated?
 
 Management reporter and Retail are not included in the platform update release by Microsoft. However, Financial Reporting will also be included with updates starting in May 2018.
 
-DRA updates are managed by the customer and are not part of the platform update.
+Document routing agent updates are managed by the customer and are not part of the platform update.
 
-## What about batch jobs – are they suspended and external pieces? How is this managed?
+## What about batch jobs -- are they suspended and external pieces? How is this managed?
 
 Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.
 
 ## How long can I stay on a specific monthly platform update?
 
-The Software lifecycle policy states that a customer must stay current on the latest platform update released by Microsoft. You have the option to postpone an update for up to 30 days. After that your environment will be updated. For more details, please see the [Software Lifecycle Policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy) topic.
+The [Software lifecycle policy](../migration-upgrade/versions-update-policy) states that a customer must stay current on the latest platform update released by Microsoft. You have the option to postpone an update for up to 30 days. After that your environment will be updated. For more details, please see the [Software lifecycle policy]../migration-upgrade/versions-update-policy.md) topic.
 
 ## How can I get early access to the platform bits for validation?
 
 If you are a partner that is interested in getting early access to the platform update, please join the [PEAP program](http://aka.ms/PEAPnomination) by completing this nomination survey: http://aka.ms/PEAPnomination. If you are a customer and want your environments to always run on the latest platform, please submit your nomination survey here: http://aka.ms/CAAPnomination.
 
-## I would rather have Microsoft update a different Standard Acceptance test (sandbox) environment than the purchased Tier-2 sandbox. What can I do?
+## I would rather have Microsoft update a different Standard Acceptance Test (Sandbox) environment than the purchased Tier-2 sandbox. What can I do?
 
 In the opt-out survey, Microsoft will provide a location for you to provide a different sandbox environment ID. Please note that Microsoft will not update the Tier 1 sandbox, which are environments that are deployed as a single virtual machine (VM).
 
 ## Can we opt-in to have Microsoft manage additional environments?
 
-For now, the only environment that will be updated is the default Tier 2 Standard Acceptance Environment (Sandbox) environment. We will add a way to allow customers to opt-in additional Tier 2+ environments.
+For now, the only environment that will be updated is the default Tier 2 Standard Acceptance Test (Sandbox) environment. We will add a way to allow customers to opt-in additional Tier 2+ environments.
 
 ## What if the timeframe being proposed will not work with my schedule? Or if I want a different window for the update?
 
@@ -148,19 +149,19 @@ We want customers to stay current. We will allow customers to delay the update f
 
 ## When should I update my Dev/Build environment?
 
-After Microsoft updates your production environment, apply the update to the rest of your environments (such as additional sandboxes and dev/build environments). You can take the latest platform update package from the ‘Platform Update’ tile on the environment details page in LCS. For additional instructions, please check the [Apply the latest platform update](https://docs.microsoft.com/en us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update) topic.
+After Microsoft updates your production environment, apply the update to the rest of your environments (such as additional sandboxes and dev/build environments). You can take the latest platform update package from the **Platform Update** tile on the environment details page in LCS. For additional instructions, please check the [Apply the latest platform update](../upgrade-latest-platform-update.md) topic.
 
-## I need to install a hotfix to my production environment, but my sandbox and production environments are on different platform versions. What process should I follow?
+##  In the scenario where Microsoft initiates platform updates and completes the update on Tier 2 Standard Acceptance Test (Sandbox) environment, but has not yet applied the update to Production, there is a gap of 5 days during which the Tier 2 Standard Acceptance Test (Sandbox) and production enviornments are on different versions. If we find an issue in the production environment, can we still follow the process of applying a package on sandbox and then move it to production even though the versions are different on the environements?
 
-The Platform update package is available to you via Microsoft Lifecycle Services. You will be able to deploy directly to production as a package file. Because you will be applying the package to production, Microsoft will not redeploy the Platform update. You can also apply this package on your dev/build environments. Follow the Update to the latest platform topic to learn how to apply this update to your environment.
+Yes. Since platform updates are backward and forward compatible, even though your Tier 2 Standard Acceptance Test (Sandbox) and Production environments are on different versions, you will still be able to apply packages on Tier 2 Standard Acceptance Test (Sandbox) first and then move it to Production. This a supported flow. You also have the option of pro-actively updating your Production environment to the same version as the platform on your default Tier 2 Standard Acceptance Test (Sandbox) environment. 
 
 ## How can I get early access to non-released platform updates?
 
 You can join the Microsoft Continuous Auto-Update Advantage Program (CAAP) where Microsoft will keep your platform always current. If you are interested in learning more and signing up for the program, the nomination survey can be found here: http://aka.ms/CAAPnomination.
 
-## We have seen ISVs being dependent on Platform Updates. How will we ensure that the PU compatible versions are available from all involved ISVs before the PU is applied?
+## We have seen ISVs being dependent on platform updates. How will we ensure that the platform update compatible versions are available from all involved ISVs before the platform update is applied?
 
-ISVs develop on the minimum required platform release their code depends on. Platform updates to your customer environments will be compatible. Having said that we recommend for the ISVs to be part of our PEAP programs so they can get early access to the platform bits and validate their solutions against the platform before it is made generally available.
+ISVs develop on the minimum required platform release their code depends on. Platform updates to your customer environments will be compatible. Having said that, we recommend for the ISVs to be part of our PEAP programs so they can get early access to the platform bits and validate their solutions against the platform before it is made generally available.
 
 ## What level of involvement do you foresee for the implementation partners?
 
@@ -168,4 +169,4 @@ We recommend for partners to sign up for the PEAP program so they get early acce
 
 ## Can partners see the platform update communication before the customer or get an update earlier?
 
-Partners can sign up for the PEAP program to get access to the early access to the platform bits. We also ask that partners be added to the Customers project as a stakeholder or as an interested party in the Notification List. We are looking at publishing a predictable schedule of the updates in the upcoming months.
+Partners can sign up for the PEAP program to get access to the early access to the platform bits. We also ask that partners be added to the customer's project as a stakeholder or as an interested party in the Notification list. We are looking at publishing a schedule of the updates in the upcoming months.
