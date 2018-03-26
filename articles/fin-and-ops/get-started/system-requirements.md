@@ -85,13 +85,13 @@ The following Microsoft Office applications are supported in cloud and on-premis
 ## Retail Modern POS for Windows requirements
 
 > [!NOTE]
-> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS will work on Microsoft SQL Server 2012 with Service Pack 3 or later, Microsoft SQL Server 2014 with Service Pack 2 or later, and Microsoft SQL Server 2016. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help guarantee both compatibility and security.
+> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires Microsoft SQL Server 2012 with Service Pack 3 or later, Microsoft SQL Server 2014 with Service Pack 2 or later, and Microsoft SQL Server 2016.  The SQL version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help guarantee both compatibility and security.
 
 ### Supported Windows operating systems
 
 - Retail Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
-- Retail Modern POS is supported only on Windows 10 Pro, Enterprise, and Enterprise Long Term Servicing Branch (LTSB) editions. At minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
-- We don't recommend that you use Retail Modern POS and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+- Retail Modern POS is supported on Windows Server 2016, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Enterprise Long Term Servicing Branch (LTSB) editions. At minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
+- It is not recommended to use Retail Modern POS and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
@@ -100,7 +100,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 - The computer that Retail Modern POS runs on must meet these requirements:
 
     - It must have, at a minimum, a dual-core processor that runs at no less than 2 gigahertz (GHz).
-    - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).
+    - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).  When combining with SQL for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
 ## Retail Modern POS for Apple iPad requirements
@@ -124,7 +124,8 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
-    - We don't recommend that you use Retail hardware station and other Retail components on Windows 10 Pro, because Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+    - Windows Server 2012 R2 and Windows Server 2016.
+    - It is not recommended to use Retail hardware station and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
@@ -146,7 +147,8 @@ The computer must meet all system requirements for installing and using the foll
     
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
-    - We don't recommend that you use Retail Store Scale Unit and other Retail components on Windows 10 Pro, because Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+    - Windows Server 2012 R2 and Windows Server 2016.
+    - It is not recommended to use Retail Store Scale Unit and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
@@ -167,10 +169,11 @@ The computer must meet all system requirements for installing and using the foll
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions
-    - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
-    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions
-    - Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016
+    - Windows 7 Professional, Enterprise, and Ultimate editions.
+    - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
+    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
+    - Windows Server 2012 R2 and Windows Server 2016.
+    - It is not recommended to use Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
 
