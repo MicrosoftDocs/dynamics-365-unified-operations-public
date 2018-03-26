@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Retail localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 10/23/2017
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,8 +24,9 @@ ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.scope: Retail
-ms.search.validFrom: 2017-10-15
-ms.dyn365.ops.version: Application update 4
+ms.search.validFrom: 2018-2-28
+ms.dyn365.ops.version: 7.3.2
+
 ---
 # Deployment guidelines for cash registers for Norway
 
@@ -38,7 +39,7 @@ This sample is part of the Retail software development kit (SDK). For informatio
 This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Development environment
 
