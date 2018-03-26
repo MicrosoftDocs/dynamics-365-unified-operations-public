@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: 
 manager: ralin
-ms.date: 01/17/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,8 +23,8 @@ ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.scope: Retail
-ms.search.validFrom: 2018-01-15
-ms.dyn365.ops.version: App update 7.3.1
+ms.search.validFrom: 2018-2-28
+ms.dyn365.ops.version: 7.3.2
 
 ---
 # Deployment guidelines for cash registers for India
@@ -38,7 +38,7 @@ This sample is a part of the Retail software development kit (SDK). For informat
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Development environment
 
