@@ -124,7 +124,7 @@ Batch jobs are suspended during the maintenance windows and resume when the main
 
 ## How long can I stay on a specific monthly platform update?
 
-The [Software lifecycle policy](../migration-upgrade/versions-update-policy) states that a customer must stay current on the latest platform update that Microsoft releases. You can postpone an update for up to 30 days. After that time, your environment will be updated. For more details, see [Software lifecycle policy](../migration-upgrade/versions-update-policy.md).
+The [Software lifecycle policy](../migration-upgrade/versions-update-policy.md) states that a customer must stay current on the latest platform update that Microsoft releases. You can postpone an update for up to 30 days. After that time, your environment will be updated. For more details, see [Software lifecycle policy](../migration-upgrade/versions-update-policy.md).
 
 ## How can I get early access to the platform bits for validation?
 
