@@ -74,7 +74,7 @@ If you have files that were previously translated, you can recycle the translate
 ![Align button](./media/dts-align-icon.png "Align button")
 
 > [!NOTE]
-> Align tool currently supports User Interface files only. 
+> Align tool currently supports User Interface files only.  
 > You might have to explicitly allow pop-up windows in your browser.
 
 On the **Align** page, select the source language and target language, and select the files to align. Then select **Align** to complete the alignment. When the alignment is completed, a message box appears.
@@ -113,7 +113,8 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Product version   | Select a product version. If you accessed DTS from within a LCS project, this field will show the product version information from the project as a default and you can select a different version if needed.|
     | Target country/region | select a country where the translated file will be released to.|
     | Translation source/target languages | Select the language pair from/to which translation will be done. All languages that are supported for the selected product name and version will be available in these fields. Language name in BOLD in the list represents Dynamics product General Availability (GA) language. Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on Microsoft Dynamics terminology. For non-GA languages, the MT system falls back to the general domain training.|
-    
+
+3. Click **Create** to go to the next step.
         
     > [!NOTE]
     > To take advantage of the Microsoft-trained MT system on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language.
@@ -126,8 +127,6 @@ Review the aligned XLIFF file before you use it as a TM. Translation units (TUs)
     | Japanese                | English – United States	| Microsoft-trained MT system |
     | German                  | Japanese                | Generic MT system, unless the user provides an XLIFF TM that has more than 10,000 TUs |
 
- 
-3. Click **Create** to go to the next step.
 
 ## Upload the files
 Select the plus sign (**+**) button in each section to open the **File upload** form. You can upload one zip file per section. 
@@ -138,7 +137,7 @@ For User Interface request type, create one zip file that contains all the sourc
 For Documentation request type, create one zip file that contains all the Word document files (.docx) that you want to translate. 
 
 ### Upload XLIFF translation memory files (Optional)
-If you have XLIFF translation memory (TM) files from a previous User Interface translation request, or if you used the Align tool to create an XLIFF TM, you can zip the XLIFF files and upload them. Strings that match are recycled into the new source files to help you remain consistent between product versions. For details about XLIFF files, see the [XLIFF TM](./use-translation-service.md#xliff-tm) section of this topic.
+If you have XLIFF translation memory (TM) files from a previous User Interface translation request, or if you used the Align tool to create an XLIFF TM, you can zip the XLIFF files and upload them. Strings that match are recycled into the new source files to help you remain consistent between product versions. For details about XLIFF files, see the [XLIFF TM](./use-translation-service.md#xliff-translation-memory-tm) section of this topic.
 
 In addition to using the XLIFF TM for the recycling process, DTS uses the XLIFF TM to create a customized MT system, based on the following rules:
 
@@ -223,7 +222,7 @@ DTS uses a bilingual XLIFF format to store source language and target language p
 
 In DTS, you can obtain an XLIFF TM in two ways:
 
-+ **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service.md#alignment) section of this topic.
++ **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service.md#preparing-a-translation-memory---alignment) section of this topic.
 + **Complete a translation request** – When a translation request is completed, DTS provides XLIFF TMs. It also provides the translated files in the source format.
 
 XLIFF files contain a series of TUs that are extracted from the source files. The following illustration shows an example of a TU.
