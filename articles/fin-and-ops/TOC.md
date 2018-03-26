@@ -103,7 +103,7 @@
 #### [View inventory statement and KPI by cost object](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
 #### [Cost entries](../supply-chain/cost-management/cost-entries.md)
 #### [View cost entries for a cost object](../supply-chain/cost-management/tasks/view-cost-entries-cost-object.md)
-#### [Cost groups(../supply-chain/cost-management/cost-groups.md)
+#### [Cost groups](../supply-chain/cost-management/cost-groups.md)
 #### [FIFO with physical value and marking](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [Include physical value](../supply-chain/cost-management/include-physical-value.md)
 #### [Inventory object values](../supply-chain/cost-management/physical-quantity.md)
