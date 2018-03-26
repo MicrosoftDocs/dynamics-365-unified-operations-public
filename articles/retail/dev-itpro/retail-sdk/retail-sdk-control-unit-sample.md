@@ -23,8 +23,9 @@ ms.search.scope: Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: July 2017 update
+ms.search.validFrom: 2018-2-28
+ms.dyn365.ops.version: 7.3.2
+
 ---
 # Sample for Retail POS integration with control units for Sweden
 
@@ -43,7 +44,7 @@ This sample is a part of the Retail software development kit (SDK). For informat
 This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
-> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+> Some steps in the procedures in this topic differ depending on the version of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Development environment
 
