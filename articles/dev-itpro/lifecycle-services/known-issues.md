@@ -5,7 +5,7 @@ title: Known issues
 description: This topic explains how to view the known issues that you might experience when you use Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 03/26/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
