@@ -105,7 +105,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Run the installer on a Windows computer
 
 > [!NOTE]
-> Before you run the Retail Modern POS installer, make sure that all requirements are met on the [Systems Requirements](..\fin-and-ops/get-started/system-requirements.md) page.
+> Before you run the Retail Modern POS installer, make sure that all requirements are met on the [Systems Requirements](..\..\fin-and-ops/get-started/system-requirements.md) page.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
