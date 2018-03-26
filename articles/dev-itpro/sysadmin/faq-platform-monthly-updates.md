@@ -152,7 +152,7 @@ After Microsoft updates your production environment, apply the update to the res
 
 ## In the scenario where Microsoft initiates platform updates, if an update is completed on a Tier 2 Standard Acceptance Test (Sandbox) environment but isn't yet applied to the production environment, there is a gap of five days when the sandbox and production environments are on different versions. If we find an issue in the production environment, can we still follow the process of applying a package to the sandbox environment and then moving it to the production environment, even though the versions the environments are on different versions?
 
-Yes. Because platform updates are backward-compatible and forward-compatible, even though your Tier 2 Standard Acceptance Test (Sandbox) and production environments are on different versions, you will still be able to apply packages on the sandbox environment first and then move it to the production environment. This flor is supported. You can also proactively update the platform of your production environment to the same version as the platform of your default Tier 2 Standard Acceptance Test (Sandbox) environment. 
+Yes. Because platform updates are backward-compatible and forward-compatible, even though your Tier 2 Standard Acceptance Test (Sandbox) and production environments are on different versions, you will still be able to apply packages on the sandbox environment first and then move it to the production environment. This flow is supported. You can also proactively update the platform of your production environment to the same version as the platform of your default Tier 2 Standard Acceptance Test (Sandbox) environment. 
 
 ## How can I get early access to non-released platform updates?
 
