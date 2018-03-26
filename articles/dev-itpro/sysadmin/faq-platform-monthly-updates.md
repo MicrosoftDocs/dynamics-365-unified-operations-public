@@ -76,7 +76,7 @@ We ask only that you sign off on any complete package applications in the purcha
 
 ## What details will the release notes for platform updates provide? Will there be a list of fixes and new features, and information about the processes that those fixes and features affect?
 
-To see a list of the new or changed features in the latest monthly update, see [What's new or changed](../fin-and-ops/get-started/whats-new-changed.md). We also publish Microsoft Knowledge Base (KB) articles that document any new fixes and features. Feedback that is provided for the [What's new or changed](../fin-and-ops/get-started/whats-new-changed.md) topic that we currently publish will help us understand whether there are gaps in the communication. 
+To see a list of the new or changed features in the latest monthly update, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md). We also publish Microsoft Knowledge Base (KB) articles that document any new fixes and features. Feedback that is provided for the [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md) topic that we currently publish will help us understand whether there are gaps in the communication. 
 
 Platform updates don't contain any application changes. Therefore, the impact should be minimal.
 
