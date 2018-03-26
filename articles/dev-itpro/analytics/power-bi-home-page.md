@@ -62,8 +62,8 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, the following
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 
-## Power BI content for Dynamics 365 for Operations, version 1611
-If you're using Microsoft Dynamics 365 for Operations, version 1611, the following Power BI content is available:
+## Power BI content for Dynamics 365 for Operations version 1611
+If you're using Microsoft Dynamics 365 for Operations version 1611, the following Power BI content is available:
 
 - [Compensation and benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
