@@ -32,10 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project Service Automation
 
-The Project Service Automation to Finance and Operations integration solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Project Service Automation via the Common Data Service (CDS). The integration templates that are available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations.
+The Project Service Automation to Finance and Operations integration solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Project Service Automation via the Common Data Service (CDS). The integration templates that are available with the Data Integration feature enable the flow of projects, project contracts, project contract lines, project contract line milestones, project tasks, expense transaction categories, hour estimates, and expense estimates from Project Service Automation to Finance and Operations.
 
 > [!NOTE] 
 > If you are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you must install KB 4074835.
+
+>[!NOTE]
+>Backporting of the functionality required to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and functionality locking to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 is in process. This topic will be updated as the hotfixes become available.
 
 Before you can integrate Project Service Automation with Finance and Operations, you must configure the Project Service Automation integration parameters. For more information, see Project Service Automation integration parameters.
 
@@ -45,6 +48,10 @@ This integration solution enables direct synchronization in the following scenar
 - Create projects in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
 - Maintain project contract lines in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
 - Maintain project contract line milestones in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
+- Maintain project tasks in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
+- Maintain expense transaction categories in Finance and Operations, and synchronize them directly from Finance and Operations to Project Service Automation.
+- Create project hour estimates in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
+- Create project expense estimates in Project Service Automation, and synchronize them directly from Project Service Automatin to Finance and Operations.
 
 ## Conceptual flow of the Project Service Automation integration with Finance and Operations
 
@@ -63,7 +70,7 @@ To use the Project Service Automation to Finance and Operations integration solu
 
 To use the Project Service Automation to Finance and Operations integration solution, you must install the following components:
 
-- Microsoft Dynamics 365 for Project Service Automation version 7.2.0.69 or later
+- Microsoft Dynamics 365 for Project Service Automation version 9.0.0.0 or later
 - Prospect to cash solution for Dynamics 365 for Sales, version 1.14.0.0 (v14) or later
 - Project Service Automation to Operations solution for Dynamics 365 for Project Service Automation version 1.0.0.0 or later
 
