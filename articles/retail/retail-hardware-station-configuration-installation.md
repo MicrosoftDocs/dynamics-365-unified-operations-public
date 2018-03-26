@@ -123,8 +123,9 @@ This topic explains how to configure, download, and install Retail hardware stat
 > - The installer installs Retail hardware station only on the following operating systems:
 >    - Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren't supported.
 >    - Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn't supported.
->    - Windows 10 Pro or Enterprise edition with Anniversary Update (both x86 and x64 architectures). Home edition isn't supported.
->    - Microsoft Windows Server 2012 R2.
+>    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.  Home edition isn't supported.
+>    - Windows Server 2012 R2 or Windows Server 2016.
+>    - It is not recommended to use Retail hardware station and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 
