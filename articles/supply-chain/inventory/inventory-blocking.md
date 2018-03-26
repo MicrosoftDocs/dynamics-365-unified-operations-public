@@ -67,7 +67,7 @@ You can specify which inventory statuses are blocking statuses by using the **I
 See also
 --------
 
-[Create and maintain an inventory blocking (Task guide)](tasks/create-maintain-inventory-blocking.md
+[Create and maintain an inventory blocking](tasks/create-maintain-inventory-blocking.md)
 
 [Quality management processes](quality-management-processes.md)
 
