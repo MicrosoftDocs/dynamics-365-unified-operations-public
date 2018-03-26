@@ -41,7 +41,7 @@ DTS uses a custom-trained machine translation (MT) system for [Microsoft’s Gen
 The following diagram shows a high-level view of how the service works. ![alt text](./media/dts-overview.png "How the DTS works")
  
 ## Recycle existing translations
-Recycling existing linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. For more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-tm).
+Recycling existing linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. For more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-translation-memory-tm).
 
 ## Custom-trained MT system
 DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products.
@@ -50,11 +50,11 @@ The use of the custom-trained MT system is limited to Microsoft’s Dynamics GA 
 ## Supported products
 DTS currently supports the following product versions.  
 
-Product name |	Version |	File format supported |	Note
---- | --- | --- | ---
-**Dynamics AX 2012**	| All versions	| .ktd, .ald	|
-**Dynamics 365 for Finance and Operations, Enterprise edition** | All versions |	.label.txt	|
-**Dynamics 365 for Retail** | All versions | .label.txt |
-**Dynamics CRM**	| 2011-2016 |	.resx, .js	|
-**Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf |	.txt, .xml and .xlf are in NAV-specific formats
+Product name |	Version |	User interface file format supported |	Documentation file format supported | Note
+--- | --- | --- | --- | ---
+**Dynamics AX 2012**	| All versions	| .ktd, .ald	| .docx |
+**Dynamics 365 for Finance and Operations** | All versions |	.label.txt	| .docx | 
+**Dynamics 365 for Retail** | All versions | .label.txt | .docx | 
+**Dynamics CRM**	| 2011-2016 |	.resx, .js	| .docx | 
+**Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf | .docx |	.txt, .xml and .xlf are in NAV-specific formats
 
