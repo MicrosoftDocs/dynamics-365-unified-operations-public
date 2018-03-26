@@ -13,7 +13,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 [![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectTasksFlow.PNG)](./media/ProjectTasksFlow.PNG)
 
-##Template and task
+## Template and task
 
 To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
@@ -30,5 +30,28 @@ Before synchronization of project tasks can occur, you mus synchronize project c
 |-----------------------------------------|---------------------------------|
 | Project Tasks                           | Integration entity for project task
 
-##Entity flow
+## Entity flow
 
+Project tasks are managed in Project Service Automation, and they are synchronized to Finance and Operations as project activities.
+
+## Preconditions and mapping setup
+
+- Before synchronization of project tasks can occur, you must synchronize project contracts and projects.
+
+## Power Query
+
+You must use Microsoft Power Query to filter data if these conditions are met:
+
+- You have resource specific records within a project task.
+
+If you must use Power Query, follow these guidelines:
+
+- The Project tasks (PSA to Fin and Ops) template has a default filter to exclude resource specific records from within a project task by setting the filter on the **IsLineTask** to **False**. If you create your own template, you must add this filter.
+
+## Template mapping in Data integration
+
+The following illustration shows an example of the template task mappings in Data integration.
+
+[!NOTE] The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+
+[!(Template mapping](./media/ProjectTasksMapping.PNG)](./media/ProjectTasksMapping.PNG)
