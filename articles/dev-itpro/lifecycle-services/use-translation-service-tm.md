@@ -62,3 +62,28 @@ Although the Align tool can resolve some of these issues, it's easier if you pre
 Review the aligned XLIFF file before you use it as a TM. Translation units (TUs) that have been reviewed should be marked as **Final** or **Signed off**, so that they aren't mistaken for unreviewed TUs.
 
 
+## Editing an XLIFF translation memeory
+
+It is recommended that you review and edit the translations in the XLIFF file that DTS provided by using the free Multilingual Editor or any other XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards
+
+When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration.
+
+![XLIFF file in the Multilingual Editor](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
+
+Notice that there is a circle near the beginning of each line. The color of the circle indicates the state of the translation. Depending on where the translation came from, DTS automatically assigns these states.
+
++	**Red circle** – The text is machine translated. DTS assigns the **Needs Review** state.
+
+    > [!NOTE]
+    > The state value that is shown might differ slightly, depending on the XLIFF editor that you're using.
+
++	**Yellow, green/yellow, or green circle** – The text is recycled. DTS inherited the state from the XLIFF TM that was used in the request.
+
+To verify the translation, you can apply a filter to show only strings that are in the **Needs Review** state.
+
+![Files in the Needs Review state](./media/dts-editor2.png "Files in the Needs Review state")
+
+Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
+
+Once you are done editing the XLIFF translation memory, remember to ask DTS to regenerate the refreshed output file in the source format. See [Regenerate output files](./use-translation-service.md#regenerate-output-files) section for this step. 
+
