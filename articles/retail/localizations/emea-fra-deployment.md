@@ -39,7 +39,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Retail 
 
 ## Storing certificate for digital signing in Azure Key Vault
 
-The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#sequentialsignatureregister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).  The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
+The digital signature extension uses a certificate installed into the local certificate storage of the machine on which Retail Server is deployed. The thumbprint of the certificate needs to be specified in the configuration file (see the section [SequentialSignatureRegister component](#sequentialsignatureregister-component) for more details). Depending on the implementation topology, it may be required to store the certificate in an [Azure Key Vault storage](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started). The Dynamics 365 for Retail localization for France contains a code sample that demonstrates how to override the signing flow and sign sales transactions by using a certificate that is stored in an Azure Key Vault storage.
 
 ### Prerequisites
 The following steps are required to be able to use a certificate stored in an Azure Key Vault storage:
@@ -110,20 +110,6 @@ The following application attributes may be printed in receipts via custom field
 
 If you customize the POS application, and your customizations affect the compliance of the application, you may need to request a new certificate of compliance from an accredited body. In this case you will need to override the build number and the certificate category and number. Otherwise, the default values for the certificate category and number will be printed, but you still need to specify the POS build number assigned by Microsoft to the POS application.
 
-The certificate category and number are specified in **RetailSDK\SampleExtensions\CommerceRuntime\Extensions.ReceiptsFrance\GetSalesTransactionCustomReceiptFieldService.cs"**
-
-``` csharp
-    /// <summary>
-    /// Certification category.
-    /// </summary>
-    private const string CertificationCategory = "C";
-
-    /// <summary>
-    /// Certificate number.
-    /// </summary>
-    private const string CertificateNumber = "18/0202";
-```
-
 ### Overriding build number
 
 The software version/build number and publisher are specified in **RetailSDK\\BuildTools\\Customization.settings**.
@@ -140,6 +126,18 @@ The software version/build number and publisher are specified in **RetailSDK\\Bu
 ### Overriding certificate category and number
 
 The certificate category and number are specified in **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsFrance\\GetSalesTransactionCustomReceiptFieldService**.
+
+``` csharp
+    /// <summary>
+    /// Certification category.
+    /// </summary>
+    private const string CertificationCategory = "C";
+
+    /// <summary>
+    /// Certificate number.
+    /// </summary>
+    private const string CertificateNumber = "18/0202";
+```
 
 > [!NOTE]
 > You also need to override the certificate category and number if you are implementing Dynamics 365 for Retail. Use the certificate category and number provided above in this case.
@@ -275,7 +273,24 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### SequentialSignatureRegister component
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
-2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then build the project.
+
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. **certificateThumbprint** is the only mandatory property, it's the 40 character string without any delimiters. See [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate) for more details.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <section name="SalesTransactionSignature" type="Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample.Configuration.SalesTransactionSignatureConfigSection, Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample"/>
+    </configSections>
+    <SalesTransactionSignature certificateThumbprint="insert key certificateThumbprint here" certificateStoreLocation="LocalMachine" certificateStoreName="My"/>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
+    </startup>
+</configuration>
+```
+
+3. Build the project.
+
 3. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
     - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
