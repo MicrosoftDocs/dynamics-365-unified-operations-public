@@ -48,7 +48,7 @@ If you're using a library that already has all desired Task Recordings attached,
 
 1. If you'd like to attach an existing Task Recording, log into the client.
 2. Go to **Settings &gt; Task recorder**.
-3. Select **Edit Task Recording** and attach using either method outlined above.
+3. Select **Edit Task Recording** and attach by either saving directly to LCS or downloading the AXTR and uploading to BPM.
 
 ## Sync with VSTS   
 
