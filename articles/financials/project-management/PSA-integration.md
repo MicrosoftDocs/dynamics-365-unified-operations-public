@@ -37,9 +37,6 @@ The Project Service Automation to Finance and Operations integration solution us
 > [!NOTE] 
 > If you are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you must install KB 4074835.
 
->[!NOTE]
->Backporting of the functionality required to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and functionality locking to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 is in process. This topic will be updated as the hotfixes become available.
-
 > [!NOTE]
 > Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
 
