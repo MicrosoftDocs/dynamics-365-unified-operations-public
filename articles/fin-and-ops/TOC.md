@@ -877,6 +877,7 @@
 ##### [Fixed asset depreciation methods](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
 ##### [Low-cost fixed assets](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Move a fixed asset to inventory](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Tax reimbursement documents](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### Iceland
 ##### [Create a vendor account and attach the invoice declaration category](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
