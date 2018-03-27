@@ -42,7 +42,7 @@ Talent test drives are provisioned with a 60-day expiration policy. However, own
 3. Select the test drive environment, which has a naming pattern similar to this: TestDrive - alias@domain
 4. Select **Delete** and confirm the decision. 
 
-The existing test drive environment will be removed. When it is removed, you sign up for a new test drive environment. 
+The existing test drive environment will be removed. When it is removed, you can sign up for a new test drive environment. 
 
 ## Removing a production environment
 
