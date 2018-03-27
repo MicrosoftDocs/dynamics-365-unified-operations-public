@@ -64,7 +64,7 @@ For each open invoice, Customer payment insights (preview) predicts three paymen
 
 The probability of payments can be viewed in the prediction section.
 
-[![Payment predictions](./media/Predictions.png)](./media/Predictions.png)
+[![Payment predictions](./media/Predictions-sm.png)](./media/Predictions-sm.png)
 
 
 Also, each invoice is assigned a winning probability of payment using one of the three predicted payment probabilities buckets defined above. The bucket with the highest probability of payment is the winning bucket.
