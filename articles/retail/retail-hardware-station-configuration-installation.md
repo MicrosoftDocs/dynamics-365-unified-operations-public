@@ -118,7 +118,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 ### Run the installer
 
 > [!NOTE]
-> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements) are met.
+> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 
