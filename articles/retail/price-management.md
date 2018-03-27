@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: Retail sales price management
+description: This document describes the concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -24,46 +24,47 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Retail sales price management # 
-This document describes all the concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail. This document doesn’t give step-by-step instructions for creating prices, instead, it focuses on concepts, and on the effects of the various configuration options for sales prices.  
+# Retail sales price management
+
+This document describes concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail. It focuses on concepts and on the effects of the various configuration options for sales prices.  
 
 ## Terminology ## 
 The following terms are used in this document. 
 
 | **Term**  | **Definition, usage, and notes**  |
 | :------------- | :------------- |
-| Price  | The single unit amount that a product sells for in a point of sale (POS) client or on a sales order. In this document, the term price always refers to sales price, not inventory price or cost price. |
+| Price  | The single unit amount that a product sells for in a point of sale (POS) client or on a sales order. In this document, price always refers to sales price, not inventory price or cost price. |
 | Base price  | The price field on a released product.  |
 | Trade agreement price | The price that is set on a product or variant by using a trade agreement of the **Price (sales)** type. |
 | Best price | When more than one price or discount can be applied to a product, the best price is the smallest price amount and/or the largest discount amount that produces the lowest possible net amount that the customer must pay. In this document, the concept of the best price is always referred to as “the best price.” This best price differs from and should not be confused with the **Best price** enum value for a discount’s concurrency mode.
  
-## Price groups ## 
+## Price groups
 Price groups are at the heart of price and discount management in Microsoft Dynamics 365 for Retail. Price groups are used to assign prices and discounts to retail entities (channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it’s very important that you plan how you will use them before you start. A price group by itself is just a name, a description, and, optionally, a pricing priority. The main point to remember about price groups is that they are used to manage the many-to-many relationships of discounts and prices with retail entities. The following illustration shows how price groups are used. Notice that Price group is literally in the center of pricing and discount management. The retail entities that you can use to manage differential prices and discounts are on the left, and the actual price and discount records are on the right.
 
 ![Price groups](./media/PriceGroups.png "Price groups")
  
-When you create price groups, you should not use a single price group for multiple types of retail entities. Otherwise, it can be difficult to determine why a particular price or discount is being applied to a transaction. In the illustration, the red dashed line shows that we do support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements, and nothing else. To apply customer specific prices, we recommend using Affiliations over adding price groups directly on the customer. 
+When you create price groups, you shouldn't use a single price group for multiple types of retail entities. Otherwise, it can be difficult to determine why a particular price or discount is being applied to a transaction. In the illustration, the red dashed line shows that we do support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements, and nothing else. To apply customer specific prices, we recommend using Affiliations over adding price groups directly on the customer. 
 Let’s take a closer look at each of the entities that you can use to set distinct prices when the price group mechanism is used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to first set the price groups on the entities, because this step is likely a one-time setup that is done during implementation. Then, as prices and discounts are created, you set the price groups on them individually. 
 
-## Channels ## 
+## Channels
 In the retail industry, it’s very common to have different prices in different channels. The two primary factors that affect channel-specific prices are costs and local market conditions.  
 Costs - The farther away from the product source, the more it costs to stock a product. For example, fresh produce has a limited shelf life and specific production requirements (growing season). During the winter, fresh lettuce likely costs more in northern climates than southern climates. If you’re setting prices for channels across a large geographical area, you will probably want to set different prices in different channels.  
 Local market conditions – A store that has a direct competitor across the street will be much more price-sensitive than a store that doesn’t have a direct competitor nearby. 
  
-### Affiliations ### 
+### Affiliations
 The general definition of affiliation is a link to or association with a group. In Microsoft Dynamics 365 for Retail, affiliations are groups of customers. Affiliations are a much more flexible tool for customer pricing and discounts than the core Microsoft Dynamics 365 concept of customer groups and discount groups. First, an affiliation can be used for both prices and discounts, whereas non-retail pricing has a different group for each type of discount and price. Next, a customer can belong to only one non-retail pricing group of each type, but a customer can belong to multiple affiliations. Finally, although affiliations can be set up so that they are linked to a customer, they don’t have to be. An affiliation can be used ad hoc with anonymous customers at the POS. A typical example of an anonymous affiliation discount is the senior or student discount, where a customer can get a discount just by showing a group membership card. 
 Although affiliations are most often associated with discounts, you can also use them to set differential pricing. For example, when a retailer sells to an employee, it might want to change the selling price instead of applying a discount on top of the regular price. A retailer that sells to both consumer customers and business customers might offer business customers better prices, based on their purchasing volume. Affiliations enable both these scenarios. 
 
-### Loyalty programs ### 
+### Loyalty programs
 In relation to prices and discounts, loyalty programs are basically a specially named affiliation. Both prices and discounts can be set for a loyalty program as for an affiliation. However, the way that you get loyalty pricing during a transaction or order differs from the way that you get affiliation pricing. The only way to get loyalty pricing is to add a loyalty card to a transaction. When a loyalty card is added to a transaction, the loyalty program is also added, and enables special prices and discounts. Loyalty programs can have multiple tiers, and the discounts can differ for different tiers. In this way, retailers can give frequent customers larger rewards, without having to manually put those customers in a special group. 
 
 Loyalty programs have additional functionality outside prices and discounts, but from the perspective of pricing and discounts, they are the same as affiliations. 
 
-### Catalogs ### 
+### Catalogs
 Some retailers use physical or virtual catalogs to market and price products to focused groups of customers. As part of their business model to target marketing via a catalog, these retailers can set differential prices on their various catalogs. Microsoft Dynamics 365 supports this capability by letting you define catalog-specific discounts and prices, just as you do for a channel or affiliation. When you edit a catalog, you can associate price groups with the catalog, just as you can for channels, affiliations, and loyalty programs. 
 
 ## Best practices 
