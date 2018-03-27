@@ -85,7 +85,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 ## Retail Modern POS for Windows requirements
 
 > [!NOTE]
-> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016.  The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help guarantee both compatibility and security.
+> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016.  The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
 
 ### Supported Windows operating systems
 
