@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.3.0
 On the **Project Service Automation integration parameters** page, you can configure how data should default when integrating Project Service Automation with Finance and Operations. The following must be set up for projects to be successfully synchronized from Project Service Automation in Finance and Operations.
 
 > [!NOTE]
->  Hour estimates, expense estimates, actuals and functionality locking functionality is available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
+> Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
 
 
 
