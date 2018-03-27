@@ -31,11 +31,12 @@ ms.dyn365.ops.version: Platform update 15
 
 [!include[banner](../includes/banner.md)]
 
-When maintenance is performed on the entity store, it impacts the following items:
+When maintenance is performed on the entity store, it impacts the following components:
 
 - Power BI analytical workspaces, if you are on Dynamics 365 for Finance and Operations 7.2 or higher and have configured analytical workspaces and embedded Power BI reports.
 - Entity store-based reports that have been deployed to PowerBI.com.
 
+To resolve isues with these components, complete the procedures in this topic.
 
 ## If you are using Power BI analytical workspaces
 You should be able to access your Power BI reports until the migration starts. After the migration completes, your Power BI reports will not render any data. The following screenshot shows an example of this. 
@@ -45,14 +46,14 @@ You should be able to access your Power BI reports until the migration starts. A
 To resolve this issue:
 
 1.	Sign in to Dynamics 365 for Finance and Operations. 
-2.	Go to the Entity store page (System Administration > Setup > Entity Store). 
+2.	Go to the **Entity store** page (**System Administration > Setup > Entity Store**). 
 3.	Select all entities that need to be refreshed. 
-4.	Click Refresh, and then click OK. 
+4.	Click **Refresh**, and then click **OK**. 
 
 After the refresh completes, Power BI reports will render data.
 
 ## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
-Redeploy the reports using the Deploy Power BI report files page in Finance and Operations (System Administration > Setup > Deploy Power BI files).
+Redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations (**System Administration > Setup > Deploy Power BI files**).
 
 Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete the report.
 
