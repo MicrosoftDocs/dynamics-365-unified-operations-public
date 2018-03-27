@@ -40,7 +40,7 @@ To print the transportation document and shipping information on a packing slip,
 
 1. Go to the Accounts receivable parameters page. 
 2. Click Shipments, and then in the Carrier name field, select the name of the carrier for the customer shipment. 
-3. Select the Use transportation document information on packing slip check box to display the transportation details on the packing slip when it is posted. 
+3. Set the option Use transportation document information on packing slip to Yes to display the transportation details on the packing slip when it is posted. 
 4. Close the page to save your changes. 
 5. Click Accounts receivable > Setup > Forms > Form setup. 
 6. Click the Packing slip link, and then select the Shipping details check box to print shipping information, including the carrier details, on the packing slip. 
@@ -63,10 +63,10 @@ If the details of the contractor, loader, owner, and compiler are not set on the
 1. Click Sales and marketing > Common > Sales orders > All sales orders. 
 2. Select an open sales order, and then click Pick and pack > Packing slip to open the Packing slip posting page. 
 3. On the Parameters tab, in the Quantity field, select All. 
-4. Select the Posting check box to post the packing slip. 
-5. Select the Print packing slip check box to print the packing slip when it is posted. 
-6. Click the Bill of lading tab, and then in the Carrier name field, select the name of the carrier. 
-7. Click the Transportation document tab. In the Compiler field, apply the filter to sort the compiler names, and then select the name of the person who created the packing slip. 
+4. Set the option Posting to Yes to post the packing slip. 
+5. Set the option Print packing slip to Yes to print the packing slip when it is posted. 
+6. In the Carrier name field select the name of the carrier. 
+7. In the Compiler field, apply the filter to sort the compiler names, and then select the name of the person who created the packing slip. 
 8. In the Contractor, Loader, and Owner fields, select the type of party as Carrier, Legal entities, Customer, or Vendor to filter the transportation party, and then select the name for each party. 
 9. In the Additional declarations, Additional notes, and Additional instructions fields, enter any additional information to be printed on the packing slip. 
 10. Click OK to post and print the packing slip with the transportation document information. 
