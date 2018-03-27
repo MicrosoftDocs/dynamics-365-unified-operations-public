@@ -274,39 +274,39 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
 
-2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. **certificateThumbprint** is the only mandatory property, it's the 40 character string without any delimiters. See [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate) for more details.
+2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. It must be a 40 character-long string without any delimiters. See [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate) for more details.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <configSections>
-        <section name="SalesTransactionSignature" type="Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample.Configuration.SalesTransactionSignatureConfigSection, Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample"/>
-    </configSections>
-    <SalesTransactionSignature certificateThumbprint="insert key certificateThumbprint here" certificateStoreLocation="LocalMachine" certificateStoreName="My"/>
-    <startup>
-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
-    </startup>
-</configuration>
-```
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+        <configSections>
+            <section name="SalesTransactionSignature" type="Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample.Configuration.SalesTransactionSignatureConfigSection, Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample"/>
+        </configSections>
+        <SalesTransactionSignature certificateThumbprint="insert key certificateThumbprint here" certificateStoreLocation="LocalMachine" certificateStoreName="My"/>
+        <startup>
+            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
+        </startup>
+    </configuration>
+    ```
 
 3. Build the project.
 
-3. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+4. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
     - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
     - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
 
-3. Copy the files to the CRT extensions folder:
+5. Copy the files to the CRT extension folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extension configuration file for CRT:
+6. Find the extension configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extension configuration file.
+7. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
