@@ -70,4 +70,11 @@ The following template and underlying task is used to synchronize project expens
 
 ## Entity flow
 
-Project expense categories are managed in Finance and Operations, and they are synchronized to Project Service Automation as transaction categories.
+Project expense categories are managed in Finance and Operations, and they are synchronized to Project Service Automation as transaction categories. The synchronization back to Finance and Operations updates the integration ID from Project Service Automation on the Finance and Operations project category.
+
+The following illustration shows an example of the template task mapping in Data integration.
+
+>[!NOTE]
+>The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+
+[![Template mapping](./media/ProjectExpenseCategoriesToFinOpsMapping.JPG)](./media/ProjectExpenseCategoriesToFinOpsMapping.JPG)
