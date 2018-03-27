@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -118,7 +118,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 ### Run the installer
 
 > [!NOTE]
-> Before you run the Retail hardware station installer, make sure that all requirements are met on the [Systems Requirements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements) page.
+> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements) are met.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 
