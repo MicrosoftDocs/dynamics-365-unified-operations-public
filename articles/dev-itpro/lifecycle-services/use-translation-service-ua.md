@@ -8,7 +8,7 @@ This topic describes the steps you can follow to translate a documentation file 
 + Review and edit the translation
 + Upload the edited translation to regenerate the target language documentation file  
 
-See [Dynamics 365 - Translation Service Overview topic](./translation-service-overview.md#microsoft-dynamics-365---translation-service-overview) to learn how the service works and how to access it. 
+See [Dynamics 365 - Translation Service Overview topic](./translation-service-overview.md#microsoft-dynamics-365---translation-service-overview) to learn how the service works and how to access it.  
 See [Dynamics 365 - Translation Service user guide - User interface file translation](./use-translation-service.md#) for the steps to translate a user interface file. 
 
 ## Create a translation request
