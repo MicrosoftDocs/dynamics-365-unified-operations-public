@@ -34,57 +34,58 @@ You can use Task guides and Business process modeler (BPM) to create a user acce
 
 ## Create a BPM library
 
-There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
+There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
 
-For illustration purposes, this topic uses a library that contains common business processes such as Create expense report and Approve order Requests. The library was created by using the Excel import functionality.  
+For illustration purposes, this topic uses a library that contains common business processes such as Create expense report and Approve order requests. The library was created by using the Excel import functionality.  
 
 ![Import from Excel](./media/import_from_excel.png.PNG "Import from Excel")
 
 ## Record test cases and upload to BPM 
 
-After you have created a BPM library, you'll need to create your test cases by using Task recorder and then upload the cases to BPM. There are several ways to do this. 
+After you have created a BPM library, you'll need to use Task recroder to create your test cases and then upload the cases to BPM. There are several ways to do this. 
 
-If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
+If you're using a library that already has all of the necessary task recordings attached, you can skip this step. Otherwise, create a new task recording in the client and save it directly to LCS, or download the AXTR file and upload it to a BPM library at a later time . 
 
-### Create and Save a new Task Recording 
+### Create and save a new task recording 
 1. Open the client and log in. 
 2. Select the company that you want to use while recording.
-3. Go to **Settings &gt; Task recorder**.
+3. Go to **Settings** > **Task recorder**.
 
 ![Select Task recorder](./media/select_task_recorder.png.PNG "Select Task recorder")
 
 4. Click **Create a new recording**.
-5. Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked.
-6. When recording is complete, click **Stop** in the **Task Recorder Pane.**
+5. Enter a name for the recording, and then click **Start**. Recording begins the moment you click **Start**.
+6. When the recording is complete, in the Task recorder pane, click **Stop**.
 7. To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
 
 ![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
-8. Select the library you want to save the recording to and **Save**. Otherwise, select **Save to Disk** and follow the steps in the section, Upload an AXTR file to BPM.
+8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the section, Upload an AXTR file to BPM.
 
 ### Upload an AXTR file to BPM 
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
-2. Select the process to upload the task recording to.
-3. In the right pane, select **Upload**. 
+2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
+3. In the right pane, click **Upload**. 
 
 ![Upload AXTR 1](./media/upload_axtr_1.png.PNG "Upload AXTR 1")
 
-4. Select **Browse** to find and select the file to upload, and then select **Upload**.
+4. Click **Browse** to find and select the file to upload, and then click **Upload**.
 
 ![Upload AXTR 2](./media/upload_axtr_2.png.PNG "Upload AXTR 2")
-.md
-### Save an existing Task recording to BPM
 
-1. If you'd like to attach an existing Task Recording, log into the client.
-2. Go to **Settings &gt; Task recorder**.
-3. Select **Edit Task Recording** and attach by either saving directly to LCS or downloading the AXTR and uploading to BPM.
+### Save an existing task recording to BPM
+
+1. To attach an existing task recording, log in to the client.
+2. Go to **Settings** > **Task recorder**.
+3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
 ## Sync with VSTS   
 
 Next, you'll need to synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
 
-After configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
+After configuration is complete, synchronize the BPM library with a VSTS project.
+1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
 ![VSTS Sync1](./media/vsts_sync_1.png.png "VSTS Sync1")
 
@@ -92,44 +93,46 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ![VSTS Sync2](./media/vsts_sync_2.png.png "VSTS Sync2")
 
-After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
+2. After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
 ![Sync test cases](./media/sync_test_case.png.PNG "Sync test cases")
 
-Once this step is complete, your task recordings will become test cases in VSTS and a link will appear under the requirements tab. 
+3. When this step is complete, your task recordings will become test cases in VSTS and a link will appear under the **Requirements** tab. 
 
 ![View test case](./media/view_test_case.png.PNG "View test case")
 
 
-In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed in case you wish to automate test execution. 
+In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed if you want to automate test execution. 
 
 ## Create a test suite in VSTS
 
-Now you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track results. 
+Next, you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track the results. 
 
-1. To create a test suite in VSTS, log into VSTS and select the project and test plan you want to test in. 
-2. Select **Test** from the toolbar.
-3. Select **+** from the left pane and select **Static suite** and enter a name for the suite.
-4. Select **Add existing** and query the Tag **LCS:Test Cases**.
-5. Select **Run** then **Add test cases**.
+1. Log in to VSTS and select the project and test plan that you want to test in. 
+2. On the toolbar, select **Test**.
+3. In the left pane, select **+**, and then select **Static suite**. 
+4. Enter a name for the suite.
+5. Click **Add existing** and query the tag **LCS:Test Cases**.
+6. Click **Run** > **Add test cases**.
 
 ![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
-6. Click the test case to view details and attached xml file, create a work item, and more.   
+7. Click the test case to view details and the attached xml file and to create a work item.   
 
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
-Note: This example shows hot to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
+ >![NOTE]
+ > This example shows how to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
 ### Execute manual test cases
 
-Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment. Either execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
+After you have a test suite, you are ready to use it for regression testing after updates made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
 ![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
 
-VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For instructions on how to use Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
 
-We highly encourage users to take advantage of VSTS as it provides a rich set of management features not only for testing, but result managment and mititigation.
+We recommend that you take advantage of VSTS as it provides a rich set of management features not only for testing, but result managment and mititigation.
 
 ### Execute automated test cases
 
