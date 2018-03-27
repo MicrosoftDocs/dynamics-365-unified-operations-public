@@ -82,7 +82,7 @@ You must use Microsoft Power Query to set the billing type on the transaction ca
 - Open the Advance Query and Filtering form from within the mapping of project expense categories task.
 - Select **Add Conditional Column**.
 - Give the new column a name, such as BillingType.
-- Enter the following condition: f **CATEGORYID not equal to null then 19235001, Otherwise null**.
+- Enter the following condition: if **CATEGORYID not equal to null then 19235001, Otherwise null**.
 - Click OK on the column.
 - Be sure to map this new column in the mapping page.
 
