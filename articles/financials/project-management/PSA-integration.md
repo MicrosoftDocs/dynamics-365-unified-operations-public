@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project Service Automation
-description: This topic provides information about the Project Service Automation to Finance and Operations integration solution. This solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Project Service Automation via the Common Data Service (CDS).
+description: This topic provides information about the Project Service Automation to Finance and Operations integration solution. This solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Project Service Automation via the Common Data Service (CDS).
 author: KimANelson
 manager: AnnBe
 ms.date: 11/27/2017
@@ -39,6 +39,9 @@ The Project Service Automation to Finance and Operations integration solution us
 
 >[!NOTE]
 >Backporting of the functionality required to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and functionality locking to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 is in process. This topic will be updated as the hotfixes become available.
+
+> [!NOTE]
+> Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
 
 Before you can integrate Project Service Automation with Finance and Operations, you must configure the Project Service Automation integration parameters. For more information, see Project Service Automation integration parameters.
 
