@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France
 description: This topic is a deployment guide for the Retail localization for France.
 author: AlexChern0v
 manager: ezubov
-ms.date: 10/23/2017
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -26,12 +26,13 @@ ms.author: v-alexec
 ms.search.scope: Retail
 ms.search.validFrom: 2018-3-15
 ms.dyn365.ops.version: 7.3.2
+
 ---
 # Deployment guidelines for cash registers for France
 
 [!include[banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events and sales and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events and sales and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. <!--For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).-->
 
 This localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -94,7 +95,7 @@ To override the signing flow you need to:
 
 ## Specifying application attributes to be printed in receipts
 
-The following application attributes may be printed in receipts via custom fields (see [Cash registers for France](./emea-fra-cash-registers.md) for more details):
+The following application attributes may be printed in receipts via custom fields <!--(see [Cash registers for France](./emea-fra-cash-registers.md) for more details)-->:
 
 - **Build number**: the software version of the POS application. By default it should be equal to the POS build number assigned by Microsoft to the POS application;
 - **Certificate category** and **Certificate number**: the category and the number of the certificate of compliance issued by an accredited body for the application. By default it is equal to the category and the number of the certificate granted to Microsoft:
