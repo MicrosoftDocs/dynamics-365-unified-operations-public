@@ -54,7 +54,10 @@ To access the available templates, in the Microsoft PowerApps Admin Center, sele
 The following template and underlying task is used to synchronize project hour estimates from Project Service Automation to Finance and Operations:
 
 -**Name of the template in Data integration:** Project hour estimates (PSA to Fin and Ops)
--**Name of the task in the project:** HourEstimates
+
+-**Name of the task in the project:** 
+  - Transaction relationships 
+  - Expense estimates
 
 ## Entity set
 
