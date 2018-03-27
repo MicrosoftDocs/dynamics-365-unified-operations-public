@@ -100,7 +100,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 - The computer that Retail Modern POS runs on must meet these requirements:
 
     - It must have, at a minimum, a dual-core processor that runs at no less than 2 gigahertz (GHz).
-    - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).  When combining with SQL for offline, no less than 4 GB of RAM is required.
+    - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).  When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
 ## Retail Modern POS for Apple iPad requirements
