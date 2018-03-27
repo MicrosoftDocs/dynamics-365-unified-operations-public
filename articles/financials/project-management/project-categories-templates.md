@@ -1,13 +1,48 @@
+---
+# required metadata
+
+title: Synchronize project expense categories from Project Service Automation 
+description: This topic describes the templates and underlying tasks that are used to synchronize project expense categories between Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Project Service Automation.
+author: KimANelson
+manager: AnnBe
+ms.date: 04/02/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 87983
+ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: knelson
+ms.search.validFrom: 2016-11-28
+ms.dyn365.ops.version: AX 8.0.0
+
+---
 
 # Synchronize project expense categories between Finance and Operations and Project Service Automation
 
-This topic describes the templates and underlying tasks that are used to synchronize project expense categories between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Microsoft Dynamics 365 for Project Service Automation.
+This topic describes the templates and underlying tasks that are used to synchronize project expense categories between Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Project Service Automation.
 
-[!NOTE] Backporting of the functionality required to integrate project expense categories between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 and Microsoft Dynamics 365 for Project Service Automation is in process. This topic will be updated once the hotfix becomes available.
+> [!NOTE]
+> Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
+in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
 
-[!NOTE] Typically, the project expense categories will be mastered in Finance and Operations. If that is not your situation, or you already have expense categories created in Project Service Automation, you must first sync using the Project expense transaction categories (PSA to Fin and Ops) and then sync using Project expense transaction categories (Fin and Ops to PSA). You should then run the sync from PSA to Fin and Ops one more time.
+> [!NOTE]
+> Typically, the project expense categories will be mastered in Finance and Operations. If that is not your situation, or you already have expense categories created in Project Service Automation, you must first sync using the Project expense transaction categories (PSA to Fin and Ops) and then sync using Project expense transaction categories (Fin and Ops to PSA). You should then run the sync from PSA to Fin and Ops one more time.
 
-[!NOTE] If synchronizing first from Project Service Automation, the project categories must already be set up in Finance and Operations and any project categories that need to be synched with the Project Service Automation transaction categories must be set up to be **Active in journals**.
+> [!NOTE]
+> If synchronizing first from Project Service Automation, the project categories must already be set up in Finance and Operations and any project categories that need to be synched with the Project Service Automation transaction categories must be set up to be **Active in journals**.
 
 ## Data flow for Project Service Automation and Finance and Operations
 
@@ -19,7 +54,8 @@ If the project expense categories are mastered in Project Service Automation, th
 
 The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectExpenseCategoriesFlow.PNG)](./media/ProjectExpenseCategoriesFlow.PNG)
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectExpenseCategoriesFlow.png)](./media/ProjectExpenseCategoriesFlow.png)
+
 
 ## Templates and tasks
 
@@ -48,14 +84,16 @@ You must use Microsoft Power Query to set the billing type on the transaction ca
 - Give the new column a name, such as BillingType.
 - Enter the following condition: f **CATEGORYID not equal to null then 19235001, Otherwise null**.
 - Click OK on the column.
-- Be sure to map this new column in the mapping form.
+- Be sure to map this new column in the mapping page.
 
 The following illustration shows an example of the template task mapping in Data integration.
 
->[!NOTE]
->The mapping shows the field information that will be synchronized from Finance and Operations to Project Service Automation.
+> [!NOTE]
+> The mapping shows the field information that will be synchronized from Finance and Operations to Project Service Automation.
 
-[![Template mapping](./media/ProjectExpenseCategoriesToPSAMapping.JPG)](./media/ProjectExpenseCategoriesToPSAMapping.JPG)
+[![Template mapping](./media/ProjectExpenseCategoriesToPSAMapping.jpg)](./media/ProjectExpenseCategoriesToPSAMapping.jpg)
+
+ProjectExpenseCategoriesToFinOpsMapping.jpg
 
 The following template and underlying task is used to synchronize project expense categories from Project Service Automation to Finance and Operations:
 
@@ -74,7 +112,7 @@ Project expense categories are managed in Finance and Operations, and they are s
 
 The following illustration shows an example of the template task mapping in Data integration.
 
->[!NOTE]
->The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+> [!NOTE]
+> The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
-[![Template mapping](./media/ProjectExpenseCategoriesToFinOpsMapping.JPG)](./media/ProjectExpenseCategoriesToFinOpsMapping.JPG)
+[![Template mapping](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)
