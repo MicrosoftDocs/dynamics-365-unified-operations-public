@@ -1,7 +1,42 @@
+---
+# required metadata
 
+title: Synchronize project estimates from Project Service Automation directly to project forecasts in Finance and Operations
+description: This topic decribes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+author: KimANelson
+manager: AnnBe
+ms.date: 04/02/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 87983
+ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: knelson
+ms.search.validFrom: 2016-11-28
+ms.dyn365.ops.version: AX 7.3.0
+
+---
 # Synchronize project estimates from Project Service Automation directly to project forecasts in Finance and Operations
 
-This topic decribes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic decribes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+
+> [!NOTE]
+> Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
+in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
+
 
 ## Data flow for Project Service Automation to Finance and Operations
 
@@ -9,7 +44,8 @@ The Project Service Automation to Finance and Operations integration solution us
 
 The following illustration shows how the data is synchronized between Project Service Automation adn Finance and Operations.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.PNG)](./media/ProjectEstimatesFlow.PNG)
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectTasksFlow.png)](./media/ProjectTasksFlow.png)
+
 
 ## Templates and tasks
 
@@ -56,18 +92,17 @@ You must add a filter to remove any rows with empty transaction categories wheth
 
 The following illustration shows an example of the template task mapping in Data integration.
 
->[!NOTE]
->The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+> [!NOTE]
+> The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
-[![Template mapping](./media/ProjectHourEstimatesMapping.JPG)](./media/ProjectHourEstimatesMapping.JPG)
+[![Template mapping](./media/ProjectHourEstimatesMapping.jpg)](./media/ProjectHourEstimatesMapping.jpg)
 
 The following template and underlying task is used to synchronize project expense estimates from Project Service Automation to Finance and Operations:
 
--**Name of the template in Data integration:** Project expense estimates (PSA to Fin and Ops)
--**Name of the tasks in the project:**
+**Name of the template in Data integration:** Project expense estimates (PSA to Fin and Ops)
 
---Transaction relationships
---Expense estimates
+
+**Name of the tasks in the project:**  - Transaction relationships - Expense estimates
 
 ## Entity set
 
@@ -119,12 +154,12 @@ The Project expense estimates (PSA to Fin and Ops) template has a conditional co
 
 The following illustrations show examples of the template task mappings in Data integration.
 
->[!NOTE]
->The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+> [!NOTE]
+> The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
-[![Template mapping](./media/ExpenseEstimateTransactionRelationshipsMapping.JPG)](./media/ExpenseEstimateTransactionRelationshipsMapping.JPG)
+[![Template mapping](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)
 
-[![Template mapping](./media/ExpenseEstimatesMapping.JPG)](./media/ExpenseEstimatesMapping.JPG)
+[![Template mapping](./media/ExpenseEstimatesMapping.jpg)](./media/ExpenseEstimatesMapping.jpg)
 
 
 
