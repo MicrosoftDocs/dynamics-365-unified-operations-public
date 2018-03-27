@@ -34,39 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-## Accessing the Dynamics 365 Translation Service
-You can access the Microsoft Dynamics 365 Translation Service (DTS) from two places in Microsoft Dynamics Lifecycle Services (LCS):
-
-- From the LCS home page
-- From within an LCS project
-
-### Accessing DTS from the LCS home page
-Sign in to LCS, and scroll to the right side of the page. Expand the tiles waffle, and then select the **Translation service** tile to open the dashboard view for DTS. 
-
-![DTS tile](./media/dts-tile.png "DTS tile")
-
-### Accessing DTS from within an LCS project
-Create a new project, or open an existing project. In the project dashboard, in the **More tools** section, select the **Translation service** tile. Or open menus in the project dashboard and find **Translation service** in the list.
-
-### Accessing DTS from the LCS home page vs. accessing it from within an LCS project
-When you access DTS from the LCS home page and create a translation request, you can select the product to use for the request. You can then add more requests that use different products by switching the product selection. You don't have to exit the service and open a different translation project. This option is convenient when you work on multiple product translation projects. However, because you access the service outside an LCS project, no other users can view your requests on the DTS dashboard. This option gives you your own DTS dashboard that shows all the translation requests that you've made across all LCS projects and from the LCS home page. The following illustration shows an example of the DTS dashboard that you open from the LCS home page.
-
-![DTS dashboard that is opened from the LCS home page](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
-
-Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request. In an LCS project, the project owner and the users will have permission to access the DTS dashboard and the translation requests that are submitted from within that project. This option is useful when you work with a group of people on one product translation project in LCS. The following illustration shows an example of the DTS dashboard that you open from within an LCS project.
-
-![DTS dashboard that is opened from within a project](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
-
-## Accessing LCS Preview features
-LCS offers some services or features only as preview features for various reasons. There are two preview features that are available for DTS. To access the list of available preview features, from the LCS home page, find **Preview feature management** file. 
-
-Select a feature you need and move the slider to **Yes** to enable the selected feature for you. 
-
-#### Dynamics 365 Translation Service - Documentation Translation Support
-You must turn this feature on if you want to translate a product or solution document (i.e. Microsoft Word document).
-
-#### NAV product availability
-You need this feature if you want to create a LCS project for NAV products and access DTS from within the project. 
 
 ## Preparing a translation memory - Alignment
 If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF). On the DTS dashboard, select the **Align** icon to access the Align tool.
