@@ -5,7 +5,7 @@ title: Tax reimbursement documents for Hungary
 description: This topic explains how to set up and create tax reimbursement documents for Hungary.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/09/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,7 +73,7 @@ The tax reimbursement document is available only if the customer is set up as a 
 2. On the **Invoice journal** page, on the **Overview** tab, select the customer invoice that the customer is requesting tax reimbursement for.
 3. Select the **Tax reimbursement** check box for the selected invoice.
 4. By default, on the **Lines** tab, in the **Tax reimbursement lines** field, all invoice lines are selected. Clear the check box for any invoice line that should be excluded from the tax reimbursement document.
-5. On the **Overview** tab, on the menu bar, select **Tax reimbursement** &gt; **Original preview** to view the document before you print it.
+5. On the **Overview** tab, select **Tax reimbursement** &gt; **Original preview** to view the document before you print it.
 6. Optional: Select **Tax reimbursement** &gt; **Use print management** to modify the print settings, such as the number of copies to print.
 7. On the **View original** page, review the information, and then print the tax reimbursement document.
 
@@ -85,6 +85,6 @@ When your organization reimburses a customer for VAT, you must indicate the reim
 
 1. Select **Accounts receivable** &gt; **Inquiries and reports** &gt; **Journals** &gt; **Invoice journal**.
 2. On the **Invoice journal** page, on the **Overview** tab, select the customer invoice that the customer received a VAT reimbursement for.
-3. On the menu bar, select **Tax reimbursement** &gt; **VAT settled**.
+3. Select **Tax reimbursement** &gt; **VAT settled**.
 
 The **VAT settled** check box is selected for the invoice and the invoice lines.
