@@ -41,7 +41,7 @@ To resolve isues with these components, complete the procedures in this topic.
 ## If you are using Power BI analytical workspaces
 You should be able to access your Power BI reports until the migration starts. After the migration completes, your Power BI reports will not render any data. The following screenshot shows an example of this. 
 
-<screen shot>
+![Blank PowerBI content](media/blank-powerbi.png)
  
 To resolve this issue:
 
