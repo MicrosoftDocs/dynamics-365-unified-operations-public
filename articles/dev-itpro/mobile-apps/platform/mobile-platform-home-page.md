@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 03/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -108,9 +108,9 @@ During development it can be useful to attach a debugger to get more detailed in
     
     - For iOS devices, you will connect to your iOS device using Safari running on a Mac.
     
-4. After you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to `www.index.html#/app/appList` or `www.index.html#/app/app_landing`. 
+4. After you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to /www.index.html#/app/appList or /www.index.html#/app/app_landing. 
 
-    Expand the nodes to find the workspace JavaScript e.g. File > (no domain) > ExpenseMobile.js. Click the JavaScript file to view it and add breakpoints. 
+    Expand the nodes to find the workspace JavaScript, such as **File** > (no domain) > **ExpenseMobile.js**. Click the JavaScript file to view it and add breakpoints.
     
 5. Reflect the mobile device on your desktop so that you can interact with it on the desktop screen. 
 
