@@ -62,10 +62,10 @@ LCS offers some services or features only as preview features for various reason
 
 Select a feature you need and move the slider to **Yes** to enable the selected feature for you. 
 
-### Dynamics 365 Translation Service - Documentation Translation Support
+#### Dynamics 365 Translation Service - Documentation Translation Support
 You must turn this feature on if you want to translate a product or solution document (i.e. Microsoft Word document).
 
-### NAV product availability
+#### NAV product availability
 You need this feature if you want to create a LCS project for NAV products and access DTS from within the project. 
 
 ## Preparing a translation memory - Alignment
