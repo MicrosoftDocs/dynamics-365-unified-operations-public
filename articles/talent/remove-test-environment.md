@@ -50,25 +50,24 @@ This topic assumes that you've purchased Talent through a Cloud Solution Provide
 
 Since a single Talent environment is “contained” within a single PowerApps environment, there are two options to consider. First involves removing the entire PowerApps environment; the second option involves removing only Talent. The first option is preferred when you have created a PowerApps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established PowerApps environment populated with rich data that's leveraged in PowerApps and Flows.
 
-To remove the entire PowerApps environment, including Talent and the associated Apps and Flows:
-
 > [!Important]
 > Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent.
 
+> [!Note]
+> Default PowerApps environments cannot be removed.
+
+To remove the entire PowerApps environment, including Talent and the associated Apps and Flows:
+
 1. Navigate to the [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
 2. Select **Environments**.
-3. Select the environment to be removed. 
-
-> [!Note]
-> [Default PowerApps environments cannot be removed.] 
-
+3. Select the environment to be removed.
 4. Select **Delete** and confirm the decision. 
 5. Wait until the deletion is complete.
 6. Sign in to [Lifecycle Services](https://lcs.dynamics.com/Logon/Index) (LCS) using the account that you used to subscribe to Talent. 
 7. Select the Talent Project that contains the environment. 
 8. In your LCS project, select the **Talent App Management** tile. 
 9. Select the instance to remove. 
-10. Select **Remove instance** and confirm your decision. 
+10. Select **Remove instance** and confirm your decision.  
 
 To remove a Talent environment from an existing PowerApps environment, complete the following steps. Note that the need to involve support and contact the Talent DevOps team is temporary until this feature is enabled directly in LCS.
 
