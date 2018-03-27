@@ -69,11 +69,11 @@ Next, you'll need to synchronize your BPM library with your VSTS project. For de
 
 Once configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
-![VSTS Sync1](./media/vsts_sync_1.png.PNG "VSTS Sync1")
+![VSTS Sync1](./media/vsts_sync_1.png.png "VSTS Sync1")
 
 You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
 
-![VSTS Sync2](./media/vsts_sync_2.png.PNG "VSTS Sync2")
+![VSTS Sync2](./media/vsts_sync_2.png.png "VSTS Sync2")
 
 After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
@@ -104,7 +104,7 @@ Select **Run** then **Add test cases**.
  
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
-![Test case details](./media/test_case_details.png.png "Test case details")
+![Test case details](./media/test_case_details.png.PNG "Test case details")
 
 Note: This examples shows the creation of a comprehensive acceptance test suite with all test cases added. You can create various test suites (i.e. basic acceptance test suite) and use custom queries to add specific test cases. 
 
@@ -113,7 +113,7 @@ Note: This examples shows the creation of a comprehensive acceptance test suite 
 
 Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment. Either execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
-![VSTS test marked](./media/vsts_test_marked.png.PNG "VSTS test marked")
+![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
 
 VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For instructions on how to use Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
 
