@@ -157,10 +157,3 @@ After you select **Upload** button, you're prompted to confirm that action.
 
 You can repeat the regeneration process as many times as you require.
 
-
-## Glossary
-| Term                   | Description |
-|------------------------|-------------|
-| XLIFF                  | XML Localization Interchange File Format. XLIFF is an XML-based format that was created to standardize the way that localizable data is passed between tools during a localization process, and to serve as a common format for computer-aided translation (CAT) tool files. |
-| Microsoft GA languages | A general availability of the Microsoft produced languages. This list varies depending on the product. |
-| TU                     | A translation unit which typically contains a source string, translation, state, state qualifier, and note. |
