@@ -13,3 +13,25 @@ The following illustration shows how the data is synchronized between Project Se
 
 ## Templates and tasks
 
+To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
+
+The following template and underlying task is used to synchronize project hour estimates from Project Service Automation to Finance and Operations:
+
+-**Name of the template in Data integration:** Project hour estimates (PSA to Fin and Ops)
+-**Name of the task in the project:** HourEstimates
+
+## Entity set
+
+| Project Service Automation      | Finance and Operations                          |
+|---------------------------------|-------------------------------------------------|
+| Project Tasks                   | Integration entity for project hour estimates   |
+
+## Entity flow
+
+Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project hour forecasts.
+
+## Preconditions
+
+Before synchronization of project hour estimates can occur, you must synchronize Projects, Project tasks and Project expense transaction categories.
+
+## Power Query
