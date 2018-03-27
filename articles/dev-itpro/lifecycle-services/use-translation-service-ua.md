@@ -48,9 +48,9 @@ Select the plus sign (**+**) button in each section to open the **File upload** 
 Currently only Microsoft Word documentation (.docx) file format is accepted to process. Create a zip file including all the docx files you want to translate. You can upload only one zip file. 
 
 ### Upload XLIFF or TMX translation memory files (Optional)
-For Documentation request type, you can provide XLIFF you got from user interface file type translations and/or TMX translation memory files from previous documentation translations to recycle the translations in the new request. Zip the files before you can upload it.
+If you have a TMX translation memory you got from a previous DTS request, and/or a XLIFF TM from a user interface file translation, you can attach them to recycle the translations from them in the new document translation you are submitting. Zip the files before you can upload it. Only one zip file is accepted. 
 
-After you've uploaded the required files, select **Submit** to start the translation process. Once submitted and a new request is created in the DTS dashboard, you can click the request ID to see the summary of your request and the status in **Request status** tab. 
+After you've uploaded the required files, select **Submit** to start the translation process. Once submitted and a new request ID is created in the DTS dashboard, you can click the request ID to see the summary of your request and the status in **Request status** tab. 
 
 ![Request status tab](./media/dts-request-status-ua.png "Request status tab")
 
