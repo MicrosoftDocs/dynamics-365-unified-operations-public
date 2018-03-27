@@ -69,7 +69,7 @@ The probability of payments can be viewed in the prediction section.
 
 Also, each invoice is assigned a winning probability of payment using one of the three predicted payment probabilities buckets defined above. The bucket with the highest probability of payment is the winning bucket.
 
-[![Payment buckets](./media/score-sm.png)](./media/score-sm.png)
+[![Payment buckets](./media/score-sm2.png)](./media/score-sm2.png)
 
 For example, let’s assume for an invoice the prediction shows a 71% probability the invoice will be paid on time, 13% probability the invoice will be paid within 30 days of due date and 16% probability the invoice will be paid beyond 30 days of due date. The highest probability shows that the invoice will be in the on time bucket, hence the invoice will be tagged with the probability of being paid on time.
 
