@@ -1,73 +1,61 @@
-# Use Task Guide and BPM to create an acceptance test suite
+# Use Task Guides and BPM to create an acceptance test suite
 
 You can use Taks Guides and BPM to create your user acceptance test plan. This enables you to organize your acceptance tests by business processes and synchronize BPM to VSTS allowing you to manage test execution and results. This article walks through the process of creating an acceptance test suite to be used for either manual or automatic testing in four easy steps.
 
-## 1 .Create a BPM library
+## 1. Create a BPM library
 
 There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](creating-editing-browsing.md).
 
-For illustration purposes, this article uses a library with common business processes (Create Expense Report, Approve Order Request, etc) that was created via Excel Import.  
+For illustration purposes, this article uses a library with common business processes (Create Expense Report, Approve Order Request, etc) that was created by using Excel import.  
 
 ![Import from Excel](./media/import_from_excel.png.PNG "Import from Excel")
 
-## 2. Record Test Cases and Upload to BPM 
+## 2. Record test cases and upload to BPM 
 
-Once you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM, there are several ways to do this. 
+After you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM. There are several ways to do this. 
 
 If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
 ###  Create and Save a new Task Recording 
-First, open the client and log in. 
-
-Select the company that you want to use while recording.
-
-Go to **Settings &gt; Task recorder**.
+1. Open the client and log in. 
+2. Select the company that you want to use while recording.
+3. Go to **Settings &gt; Task recorder**.
 
 ![Select Task recorder](./media/select_task_recorder.png.PNG "Select Task recorder")
 
-Click **Create a new recording**.
-
-Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked.
-
-When recording is complete, click **Stop** in the **Task Recorder Pane.**
-
-To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
+4. Click **Create a new recording**.
+5. Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked.
+6. When recording is complete, click **Stop** in the **Task Recorder Pane.**
+7. To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
 
 ![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
-Select the library you want to save the recording to and **Save**.
-
-Otherwise, Select **Save to Disk** and follow the instructions below to upload the file to BPM.
+8. Select the library you want to save the recording to and **Save**. Otherwise, select **Save to Disk** and follow the steps in the section, Upload an AXTR file to BPM.
 
 
 ### Upload an AXTR file to BPM 
 
-In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
-
-Select the process to upload the task recording to.
-
-In the right pane, select **Upload**. 
+1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
+2. Select the process to upload the task recording to.
+3. In the right pane, select **Upload**. 
 
 ![Upload AXTR 1](./media/upload_axtr_1.png.PNG "Upload AXTR 1")
 
-Select **Browse** to find and select the file to upload, and then select **Upload**.
+4. Select **Browse** to find and select the file to upload, and then select **Upload**.
 
 ![Upload AXTR 2](./media/upload_axtr_2.png.PNG "Upload AXTR 2")
 
-### Save an existing Task Recording to BPM
+### Save an existing Task recording to BPM
 
-If you'd like to attach an existing Task Recording, log into the client.
-
-Go to **Settings &gt; Task recorder**.
-
-Select **Edit Task Recording** and attach using either method outlined above.
-
+1. If you'd like to attach an existing Task Recording, log into the client.
+2. Go to **Settings &gt; Task recorder**.
+3. Select **Edit Task Recording** and attach using either method outlined above.
 
 ## 3. Sync with VSTS   
 
-Next, you'll need to synchronize your BPM library with your VSTS project. For details on how to configure, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
+Next, you'll need to synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
 
-Once configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
+After configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
 ![VSTS Sync1](./media/vsts_sync_1.png.png "VSTS Sync1")
 
@@ -90,24 +78,19 @@ In addition to the test steps, the task recording XML file is attached to the VS
 
 Now you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track results. 
 
-To create a test suite in VSTS, log into VSTS and select the project and test plan you want to test in. 
-
-Select **Test** from the toolbar.
-
-Select **+** from the left pane and select **Static suite** and enter a name for the suite.
-
-Select **Add existing** and query the Tag **LCS:Test Cases**.
-
-Select **Run** then **Add test cases**.
+1. To create a test suite in VSTS, log into VSTS and select the project and test plan you want to test in. 
+2. Select **Test** from the toolbar.
+3. Select **+** from the left pane and select **Static suite** and enter a name for the suite.
+4. Select **Add existing** and query the Tag **LCS:Test Cases**.
+5. Select **Run** then **Add test cases**.
 
 ![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
-You can click on the test case to view details and attached xml file, create a work item, and more.   
+6. Click the test case to view details and attached xml file, create a work item, and more.   
 
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
-Note: This examples shows the creation of a comprehensive acceptance test suite with all test cases added. You can create various test suites (i.e. basic acceptance test suite) and use custom queries to add specific test cases. 
-
+Note: This example shows hot to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
 ### Executing manual test cases
 
@@ -122,5 +105,4 @@ We highly encourage users to take advantage of VSTS as it provides a rich set of
 ### Executing automated test cases
 
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
-For details see the [Continuous delivery hompage](http://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/)
-We are also working on developping a tool that enables non developers to author and automate the execution of task recorder based test cases that will significantly reduce the cost of user acceptance testing.
+For details see the [Continuous delivery hompage](../dev-tools/continuous-delivery-home-page) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
