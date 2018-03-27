@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include[banner](../../includes/banner.md)]
 
-By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
+By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to Finance and Operations. 
 
 ## Get started
 
@@ -75,76 +75,76 @@ The process for client-side development is described in these topics:
 + [Business logic events overview](business-logic-events-overview.md)
 + [Client APIs](client-apis/client-apis-reference.md)
 
-You can download a sample business logic file (a .js file) for the Reservation management workspace. Go to [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples), open the **business_logic folder**, and locate the FM.js file
+You can download a sample business logic file (with a .js file name extension) for the Reservation management workspace. Go to [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples), open the **business_logic folder**, and locate the FM.js file
 
 ## Server-side development
 
-Workspace attributes and classes are used to create, configure, and publish workspaces on the server. These server-side X++ APIs can be used instead of using the task recorder-based mechanism to build up a workspace. Workspaces created using either mechanism can then be styled and augmented using the client-side APIs.
+Workspace attributes and classes are used to create, configure, and publish workspaces on the server. These server-side X++ APIs can be used instead of using the task recorder-based mechanism to build a workspace. Workspaces created using either mechanism can then be styled and augmented using the client-side APIs.
 
 Server-side development is described in these topics:
 + [Workspace class overview](scenarios/mobile-workspace-configuration.md)
 + [Server APIs (X++)](mobile-workspace-server-apis.md)
 
-You can download the sample project (an .axpp file) for the Fleet Management mobile app. Go to from [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) and download the **FMMobileApp.axpp** file.
+You can download the sample project (with an .axpp file name extension) for the Fleet Management mobile app. Go to [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) and download the **FMMobileApp.axpp** file.
 
 ## Debugging during development
 
-During development it can be useful to attach a debugger to get more detailed information and insight into what is happening in the background to deliver the observed user experience. A web debugger can be used with the client-side JavaScript logic and styling and the Visual Studio debugger can be used with the server-side X++ business logic.
+During development it can be useful to attach a debugger to get more detailed information and insight into what is happening in the background. A web debugger can be used with the client-side JavaScript logic and styling and the Visual Studio debugger can be used with the server-side X++ business logic.
 
-### Debugging client-side 
+### Debugging the client side 
 
-#### Pre-requisites
+#### Prerequisites
 - Android device plus PC (recommended) or iOS device plus Mac
-- Azure-hosted development machine (so the mobile device can point at it)
+- Azure-hosted development machine (so the mobile device can point to it)
 
-#### Steps to debug client-side
-1. From the web client exposed by the Azure-hosted development machine, ensure that there are mobile  workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+#### Steps to debug the client side
+1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
 
 3. Connect to the device from the debugging machine.
 
-    - For Android devices, on the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). If a video walkthrough is desired, there is a wide selection available in YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
+    - For Android devices, on the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). You can also find a wide selection of instructional videos on YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
     
     - For iOS devices, you will connect to your iOS device using Safari running on a Mac.
     
-4. Once you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to `www.index.html#/app/appList` or `www.index.html#/app/app_landing`. 
+4. After you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to `www.index.html#/app/appList` or `www.index.html#/app/app_landing`. 
 
-    Expand nodes to find the workspace JavaScript e.g. File > (no domain) > ExpenseMobile.js. Click on the JavaScript file to to view it and add breakpoints. 
+    Expand the nodes to find the workspace JavaScript e.g. File > (no domain) > ExpenseMobile.js. Click the JavaScript file to view it and add breakpoints. 
     
 5. Reflect the mobile device on your desktop so that you can interact with it on the desktop screen. 
 
-6. Navigate through the desired workspace and forms.
+6. Go to through the desired workspace and forms.
 
-7. When breakpoints are encountered then the browser developer tools will allow you to control the flow of execution and see the values and parameters being passed around. 
+7. If breakpoints are encountered, then the browser developer tools will allow you to control the flow of execution and see the values and parameters being passed. 
 
 8. To change styling at runtime, use the elements tab to alter the styling. This will help you determine what elements JavaScript should target and how those elements should be styled.
 
-9. Once a needed change is identified, make those changes in JavaScript, and push those changes into the environment.
+9. If a needed change is identified, make those changes in JavaScript, and then push those changes into the environment.
 
 10. If more changes or validation is needed, repeat the process.
 
-### Debugging server-side
+### Debugging the server side
 
-#### Pre-requisites
-- Azure-hosted development machine (so the mobile device can point at it)
+#### Prerequisites
+- Azure-hosted development machine (so the mobile device can point to it)
 
-#### Steps to debug server-side
-1. From the web client exposed by the Azure-hosted development machine, ensure there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+#### Steps to debug the serverside
+1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
 
 3. Open Visual Studio on the Azure-hosted development machine and attach the debugger to the w3wp process.
 
-4. Once you connect the debugger, find the desired business logic, and insert breakpoints as needed.
+4. After you connect the debugger, find the desired business logic, and insert breakpoints as needed.
 
-5. Either use the app on your device as normal, or reflect the mobile device on your desktop so you can interact with it on the desktop screen.
+5. Either use the app on your device as usual, or reflect the mobile device on your desktop so you can interact with it on the desktop screen.
 
 6. Navigate through the desired workspace and forms.
 
-7. When breakpoints are encountered then Visual Studio will allow you to control the flow of execution and see the values and parameters being passed around. 
+7. If breakpoints are encountered, then Visual Studio will allow you to control the flow of execution and see the values and parameters being passed. 
 
-8. Once a needed change is identified, make those changes in X++, and push those changes into the environment.
+8. If a needed change is identified, make those changes in X++, and push those changes into the environment.
 
 9. If more changes or validation is needed, repeat the process.
 
