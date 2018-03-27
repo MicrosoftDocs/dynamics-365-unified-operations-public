@@ -202,16 +202,30 @@ To verify the translation, you can apply a filter to show only strings that are 
 Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
 
 ### Review and edit the Documentation translation
-DTS provides the Documentation translation review file in .docx format. You can open it in Microsoft Word to review and edit. 
+DTS provides the Documentation translation review file in .docx format. You can open it in Microsoft Word to review and edit in a convenient table view as shown in the example below. Once the review is done to this file, you will have to upload it back to DTS to generate the refreshed .docx file output in the original source style. See the next [Regenerate output files](./use-translation-service.md#regenerate-output-files) section for this step.    
 
-![DOCX file to review](./media/dts-doc-review.png "DOCX file for translation review")
+![DOCX file to review](./media/dts-doc-review.png "DOCX file for translation review") 
+ 
+When editing the review .docx file, please make note of the following:
+
++ Only edit the text in the **Target segment** column.
++ Do not add/remove any row.
++ Do not change the order of the rows or columns.
++ Do not add/remove the red tags. Most red tags represent formatting and styles in .docx. 
++ If it is necessary to move the red tags, be careful not to switch a start tag (i.e. <116>) and its end tag (i.e. </116>).
+
 
 ### Regenerate output files
 When you've finished reviewing and editing the translation files, you must regenerate the output files in the source file format so you can include the latest translations you edited into your software or documentation files.
 
-In the Request output tab, click **Regenerate** button to open the **File upload** form and upload the edited XLIFF files. Be sure to zip the edited XLIFF files before you upload them.
+In the Request output tab, click **Regenerate** button. It will add a new tab **Regenerate(By Partner)**. Using the plus (**+**) button, open the **File upload** form and upload the edited files. Be sure to zip the files before you upload them.
 
-After you select **Upload** button, you're prompted to confirm that action. If your request is for User Interface file translation, DTS regenerates the new output files immediately after confirmation. If your request is for Documentation file translation, it may take a while for DTS to process to regenerate and send you an automated email notification. Then you can come back to the request to download the final output files. Access **Regenerate(By Partner)** tab to see the files you uploaded and download the new output files. 
++ For User interface file type request, zip the edited XLIFF file(s) and upload it. Do not change the XLIFF file name from what DTS provided in **Request output** tab. DTS will also regenerate the refreshed output file in the source format in the same file name as provided in **Request output** tab. 
++ For Documentation file type request, zip the edited .docx file(s) and upload it. Do not change the .docx review file name from what DTS provided in **Request output** tab. 
+
+After you select **Upload** button, you're prompted to confirm that action. 
++ For User interface file type request, DTS regenerates the new output files shortly after confirmation in the **Regenerate(By Partner)** tab. 
++ For Documentation file type request, it may take a while for DTS to process to regenerate the refreshed docx in the source format and send you an automated email notification. Then you can come back to the request to download the final output files. Check **Regenerate(By Partner)** tab to see the files you uploaded and download the new output files. 
 
 ![Regenerated output](./media/dts-regenerate-output.png "Regenerated output")
 
