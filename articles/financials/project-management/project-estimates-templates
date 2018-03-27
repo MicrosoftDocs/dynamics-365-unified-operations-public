@@ -71,24 +71,26 @@ The following template and underlying task is used to synchronize project expens
 
 ## Entity set
 
-| Project Service Automation      | Finance and Operations                          |
-|---------------------------------|-------------------------------------------------|
-| Project Tasks                   | Integration entity for project hour estimates   |
+| Project Service Automation      | Finance and Operations                                     |
+|---------------------------------|------------------------------------------------------------|
+| Transaction Connections         | Integration entity for project transaction relationships   |
+| Estimate Lines                  | Integration entity for project expense estimates           |
 
 ## Entity flow
 
-Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project hour forecasts.
+Project expense estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project expense forecasts.
 
 ## Preconditions
 
-Before synchronization of project hour estimates can occur, you must synchronize Projects, Project tasks and Project expense transaction categories.
+Before synchronization of project expense estimates can occur, you must synchronize Projects, Project tasks and Project expense transaction categories.
 
 ## Power Query
 
-You must use Microsoft Power Query in the project hour estimates template to:
+You must use Microsoft Power Query in the project expense estimates template to:
+- Filter to include only expense estimate line records
 - Set the **Forecast model ID** that will be used when the integration creates new hour forecasts.
-- Filter out any resource specific records within the task that will fail the integration into hour forecasts
-- Filter out any empty transaction category rows. Failure to do this may result in incorrect hour forecasts.
+- Transform the billing types
+- Transform the transaction types
 
 ### Forecast model ID
 To update the default forecast model ID in the template, click on the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
