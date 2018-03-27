@@ -62,7 +62,7 @@ Although the Align tool can resolve some of these issues, it's easier if you pre
 Review the aligned XLIFF file before you use it as a TM. Translation units (TUs) that have been reviewed should be marked as **Final** or **Signed off**, so that they aren't mistaken for unreviewed TUs.
 
 
-## Editing an XLIFF translation memeory
+## Editing an XLIFF translation memory
 
 It is recommended that you review and edit the translations in the XLIFF file that DTS provided by using the free Multilingual Editor or any other XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards
 
