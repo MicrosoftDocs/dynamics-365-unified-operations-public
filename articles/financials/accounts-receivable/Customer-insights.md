@@ -61,29 +61,29 @@ For each open invoice, Customer payment insights (preview) predicts three paymen
 
 The probability of payments can be viewed in the prediction section.
 
-![](media/e0f9db0392b03048ff8531f3f270fe6f.png)
+[![Payment predictions](./media/Predictions.png)](./media/Predictions.png)
 
-![](media/e7fea8c04b6dac5dffe44cfdfaa8a126.png)
 
 Also, each invoice is assigned a winning probability of payment using one of the three predicted payment probabilities buckets defined above. The bucket with the highest probability of payment is the winning bucket.
 
+[![Payment buckets](./media/score.png)](./media/score.png)
+
 For example, let’s assume for an invoice the prediction shows a 71% probability the invoice will be paid on time, 13% probability the invoice will be paid within 30 days of due date and 16% probability the invoice will be paid beyond 30 days of due date. The highest probability shows that the invoice will be in the on time bucket, hence the invoice will be tagged with the probability of being paid on time.
 
-![](media/6db0de2b13f4a977fe401a4a4651afb7.png)
-
-[./media/image4.png](./media/image4.png)
-========================================
+[![Payment predictions](./media/payment-predict.png)](./media/payment-predict.png)
 
 ## Optimization strategies
 
 In addition to payment predictions, the Customer Payment Insights (preview) can use optimization strategies to improve the chances of getting paid on time. It lets organizations do “What-if” analysis by allowing users to adjust invoice and customer parameters and then compare the corresponding effect on the probability of receiving payment on invoices on time.
+
+[![Optimized predictions](./media/optminization.png)](./media/optminization.png)
 
 For example, an organization may want to evaluate the effect of updating the cash discount on invoices on the probability of receiving the payment on time. When the invoices are optimized to use the new discount, the users can review the effect of applying the discount on the invoice. If the cost of applying the discount is minimal when compared to the benefit of collecting the payment on time, the organization may choose to apply the selected discount to all future open orders.
 
 > [!NOTE] 
 > Currently, only discount is available as an optimization strategy for the Customer payment insights (preview).
 
-![](media/2394b4c283df283351734b4b24d956b6.png)
+[![Optimized predictions](./media/optimized-pay.png)](./media/optimized-pay.png)
 
 ## How to get Customer payment insights (preview)
 ==============================================
