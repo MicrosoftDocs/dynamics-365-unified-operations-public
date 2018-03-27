@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for cloud deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 02/08/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -85,7 +85,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 ## Retail Modern POS for Windows requirements
 
 > [!NOTE]
-> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires Microsoft SQL Server 2012 with Service Pack 3 or later, Microsoft SQL Server 2014 with Service Pack 2 or later, and Microsoft SQL Server 2016.  The SQL version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help guarantee both compatibility and security.
+> If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016.  The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help guarantee both compatibility and security.
 
 ### Supported Windows operating systems
 
