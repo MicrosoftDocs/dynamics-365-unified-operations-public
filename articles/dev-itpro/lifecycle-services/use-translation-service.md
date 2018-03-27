@@ -1,4 +1,4 @@
-----
+---
 # required metadata
 
 title: Microsoft Dynamics 365 Translation Service user guide
