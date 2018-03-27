@@ -5,7 +5,7 @@ Reason codes enable you to analyze the results of and discrepancies within a
 counting process. You can identify the reason for a counting such as a broken
 pallet or a stock adjustment based on inventory samples.
 
-**Recommendation**
+## Recommendation
 
 We recommend that you set a strategy for working with reason codes before you
 set up the system.
@@ -40,7 +40,7 @@ warehouse or the item level.
     **Optional** to define if the selection of a reason code should be an
     optional or a mandatory action in one of the following counting journals:
 
-- -  Cycle Count (mobile device)
+-    Cycle Count (mobile device)
 
 -   Spot Count (mobile device)
 
