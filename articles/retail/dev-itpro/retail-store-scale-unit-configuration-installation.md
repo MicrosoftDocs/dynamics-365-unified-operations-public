@@ -124,7 +124,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 > [!NOTE]
 > If you will install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.
 
-Before you run the Retail Store Scale Unit installer, make sure that all requirements are met on the [Systems Requirements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements) page.
+Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements) are met.
 
 The Retail Store Scale Unit installer first extracts the associated files. It then begins the installation.
 
