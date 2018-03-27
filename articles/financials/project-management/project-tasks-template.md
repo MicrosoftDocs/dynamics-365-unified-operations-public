@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.3.0
 
 # Synchronize project tasks from Project Service Automation directly to project activities in Finance and Operations
 
+This topic describes the template and underlying task that is used to synchronize project tasks directly from Microsoft 
+Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+
 > [!NOTE]
 > Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
 in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
