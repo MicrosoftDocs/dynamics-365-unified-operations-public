@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an end-to-end payment extension
-description: 
+description: This topic describes how to create an end-to-end payment integration for a payment terminal.
 author: 
 manager: AnnBe
 ms.date: 02/21/2018
@@ -29,37 +29,38 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Payment integration with payment terminal
-This topic describes how to write a payment integration for the Dynamics 365 for Retail Modern and Cloud POS (POS) for a payment terminal that can directly communicate with the payment gateway.
+# Payment integration with a payment terminal
+This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
-## Key Terms
+## Key terms
 | Term | Description |
-| --- | --- |
-| Payment Connector | Extension library written to integrate the POS with a payment terminal. |
-| Payment Processor | Extension library written to retrieve merchant properties used by the payment connector. |
+|---|---|
+| Payment connector | An extension library that is written to integrate the POS with a payment terminal. |
+| Payment processor | An extension library that is written to retrieve merchant properties that the payment connector uses. |
 
 ## Overview
-The diagram below provides a high-level overview of the payment terminal integration through the POS. Note, the diagram assumes that a local Hardware Station is used to communicate with the payment terminal but the same patterns apply to the shared Hardware Station as well.
+The following illustration shows a high-level overview of the payment terminal integration through the POS. Although this illustration assumes that a local Hardware Station is used to communicate with the payment terminal, the same patterns apply to a shared Hardware Station.
 
-![Payment Connector Integration Overview](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
+![Payment connector integration overview](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
-This article describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
-- **[Write a payment connector](#Write-a-payment-connector)**: The payment connector is the main integration point between the POS and the payment terminal. This section describes how to implement and configure a new payment connector that can relay payment requests (e.g. authorize, refund, void) to the payment terminal. 
-- **[Write a payment processor](#Write-a-payment-processor)**: The payment processor is used to define the merchant properties used as part of the payment integration. This section describes how to implement a new payment processor, including interfaces to implement and patterns to follow.
+This topic describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
+
+- **[Write a payment connector](#Write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
+- **[Write a payment processor](#Write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
 
 ## Write a payment connector
 This section describes how to write a new payment connector.
 
 ### Understanding the payment flows
-The following diagram illustrates a high-level overview of several payment flows (i.e. Begin Transaction, Update Cart Lines, Authorize, Capture, End Transaction) across the POS, Hardware Station, and payment connector.
+The following illustration shows a high-level overview of several payment flows (Begin Transaction, Update Cart Lines, Authorize, Capture, and End Transaction) across the POS, Hardware Station, and payment connector.
 
-![Payment Flow Overview](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
+![Payment flow overview](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
 
 ### Implement a payment connector
-The section below describes how to implement a new payment connector. The examples shown below can be found in the `PaymentDeviceSample` class located under `SampleExtensions\HardwareStation\Extension.PaymentSample` folder in the Retail SDK.
+This section below describes how to implement a new payment connector. The examples that are shown here can be found in the **PaymentDeviceSample** class that is located under the **SampleExtensions\HardwareStation\Extension.PaymentSample** folder in the Retail software development kit (SDK).
 
 #### Implement the INamedRequestHandler interface
-All POS payment related flows are handled through request/response patterns in the Hardware Station. The first step in writing a new payment connector is to create a class that implements the `INamedRequestHandler` interface defined in the `Microsoft.Dynamics.Commerce.Runtime.Framework` library.
+All POS payment-related flows are handled through request/response patterns in the Hardware Station. The first step in the process of writing a new payment connector is to create a class that implements the **INamedRequestHandler** interface that is defined in the **Microsoft.Dynamics.Commerce.Runtime.Framework** library.
 
 ``` csharp
 namespace Contoso.Commerce.HardwareStation.PaymentSample 
@@ -67,7 +68,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     public class PaymentDeviceSample : INamedRequestHandler
     {
         private const string PaymentTerminalDevice = "MOCKPAYMENTTERMINAL";
-    
+
         /// <summary>
         /// Gets the specify the name of the request handler.
         /// </summary>
@@ -82,10 +83,10 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-The `HandlerName` is used to configure the payment connector used on a given POS register through the AX client (described below).
+The **HandlerName** string is used to configure the payment connector that is used on a given POS register through the Microsoft Dynamics 365 for Finance and Operations client (see the information later in this topic).
 
 #### Implement supported payment requests
-To process payment related flows, the payment connector has to define the `SupportedRequestTypes` that it can handle. Additionally, the `Execute` method has to be implemented to route each of the requests supported by the connector to a given method. The example below shows the complete list of `SupportedRequestTypes` and an example of a specific request (i.e. `Authorize`).
+To process payment-related flows, the payment connector must define the supported request types that it can handle. Additionally, the **Execute** method must be implemented to route each request that the connector supports to a given method. The following example shows the complete list of supported request types and an example of a specific request (that is, an authorize request).
 
 ``` csharp
 namespace Contoso.Commerce.HardwareStation.PaymentSample 
@@ -122,7 +123,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
                 };
             }
         }
-        
+
         /// <summary>
         /// Executes the payment device simulator operation based on the incoming request type.
         /// </summary>
@@ -131,9 +132,9 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
         public Response Execute(Microsoft.Dynamics.Commerce.Runtime.Messages.Request request)
         {
             ThrowIf.Null(request, "request");
-    
+
             Type requestType = request.GetType();
-    
+
             if (requestType == typeof(AuthorizePaymentTerminalDeviceRequest))
             {
                 return this.AuthorizePayment((AuthorizePaymentTerminalDeviceRequest)request);
@@ -142,10 +143,10 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
             {
                 ...
             }
-    
+
             return new NullResponse();
         }
-    
+
         /// <summary>
         /// Authorize payment.
         /// </summary>
@@ -154,36 +155,36 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
         public AuthorizePaymentTerminalDeviceResponse AuthorizePayment(AuthorizePaymentTerminalDeviceRequest request)
         {
             ThrowIf.Null(request, "request");
-    
+
             PaymentInfo paymentInfo = Utilities.WaitAsyncTask(() => this.AuthorizePaymentAsync(request.Amount, request.Currency, request.VoiceAuthorization, request.IsManualEntry, request.ExtensionTransactionProperties));
-    
+
             return new AuthorizePaymentTerminalDeviceResponse(paymentInfo);
         }
     }
 }
 ```
 
-#### Full list of supported requests
-The list below describes all supported requests types that a payment connector can implement.
+#### Full list of supported request types
+The following table describes all supported requests types that a payment connector can implement.
 
-| Request Class | Payment Flow Description |
-| --- | --- |
-| **OpenPaymentTerminalDeviceRequest** | Called before a sales transaction is initiated to establish a connection to the payment terminal. | 
-| **BeginTransactionPaymentTerminalDeviceRequest** | Called when a new sales transaction is initiated to handle any initialization on the payment terminal (e.g. initializing transaction screen). | 
-| **UpdateLineItemsPaymentTerminalDeviceRequest** | Called when line items on the cart are updated. | 
-| **AuthorizePaymentTerminalDeviceRequest** | Called when a payment is initiated on the POS payment view. | 
-| **CancelOperationPaymentTerminalDeviceRequest** | Called when a user hits the "cancel" button on the payment view dialog after the payment is initiated but before the payment is completed on the payment terminal. | 
-| **CapturePaymentTerminalDeviceRequest** | Called for each payment line when the entire amount on the cart is paid and before the sales transaction is concluded. | 
-| **VoidPaymentTerminalDeviceRequest** | Called when a payment line is voided on the cart. | 
-| **RefundPaymentTerminalDeviceRequest** | Called when a refund is issued. | 
-| **FetchTokenPaymentTerminalDeviceRequest** | Called to fetch a payment token to support deferred payments for customer orders. | 
-| **EndTransactionPaymentTerminalDeviceRequest** | Called when the sales transaction is concluded and all payments have been captured. | 
-| **ClosePaymentTerminalDeviceRequest** | Called after the sales transaction is concluded to close the connection to the payment terminal. | 
-| **ActivateGiftCardPaymentTerminalRequest** | Called when an external gift card is being activated through the POS. | 
-| **AddBalanceToGiftCardPaymentTerminalRequest** | Called when a balance is being added to an external gift card. | 
-| **GetGiftCardBalancePaymentTerminalRequest** | Called when the balance on the gift card is being retrieved. | 
-| **GetPrivateTenderPaymentTerminalDeviceRequest** | Called when retrieving gift card numbers from the payment terminal for gift card flows (e.g. issue gift card, pay by gift card, or add to gift card). | 
-| **ExecuteTaskPaymentTerminalDeviceRequest** | Extension request that can be invoked from the POS through customizations to enable additional payment related flows. | 
+| Request class | Payment flow description |
+|---|---|
+| OpenPaymentTerminalDeviceRequest | This request is called before a sales transaction is initiated. It is used to establish a connection to the payment terminal. |
+| BeginTransactionPaymentTerminalDeviceRequest | This request is called when a new sales transaction is initiated. It is used to handle any initialization on the payment terminal (for example, by initializing the transaction screen). |
+| UpdateLineItemsPaymentTerminalDeviceRequest | This request is called when line items in the cart are updated. |
+| AuthorizePaymentTerminalDeviceRequest | This request is called when a payment is initiated in the POS payment view. |
+| CancelOperationPaymentTerminalDeviceRequest | This request is called when a user selects the **Cancel** button in the payment view dialog box after the payment is initiated but before the payment is completed on the payment terminal. |
+| CapturePaymentTerminalDeviceRequest | This request is called for each payment line when the whole amount in the cart is paid but before the sales transaction is concluded. |
+| VoidPaymentTerminalDeviceRequest | This request is called when a payment line is voided in the cart. |
+| RefundPaymentTerminalDeviceRequest | This request is called when a refund is issued. |
+| FetchTokenPaymentTerminalDeviceRequest | This request is called to fetch a payment token to support deferred payments for customer orders. |
+| EndTransactionPaymentTerminalDeviceRequest | This request is called when the sales transaction is concluded and all payments have been captured. |
+| ClosePaymentTerminalDeviceRequest | This request is called after the sales transaction is concluded. It is used to close the connection to the payment terminal. |
+| ActivateGiftCardPaymentTerminalRequest | This request is called when an external gift card is being activated through the POS. |
+| AddBalanceToGiftCardPaymentTerminalRequest | This request is called when a balance is being added to an external gift card. |
+| GetGiftCardBalancePaymentTerminalRequest | This request is called when the balance on the gift card is being retrieved. |
+| GetPrivateTenderPaymentTerminalDeviceRequest | This request is called when gift card numbers are retrieved from the payment terminal for gift card flows (for example, Issue gift card, Pay by gift card, or Add to gift card). |
+| ExecuteTaskPaymentTerminalDeviceRequest | This extension request can be invoked from the POS through customizations. It is used to enable additional payment-related flows. |
 
 ##### OpenPaymentTerminalDeviceRequest
 ###### Signature
@@ -193,12 +194,12 @@ public OpenPaymentTerminalDeviceRequest(string token, string deviceName, Setting
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| deviceName | Name of the device as defined in the AX client POS hardware profile form. |
-| terminalSettings | Set of payment terminal specific configuration properties defined in the AX client, such as signature capture minimum amount, debit cash back limit, etc. |
-| deviceConfig | Set of payment terminal specific configuration properties in the form of name value pairs, such as the IP address and port in case of network devices. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| deviceName | The name of the device, as defined on the **POS hardware profile** page in the Finance and Operations client. |
+| terminalSettings | The set of payment terminal–specific configuration properties that are defined in the Finance and Operations client, such as the minimum amount for signature capture and the debit cash-back limit. |
+| deviceConfig | The set of payment terminal–specific configuration properties in the form of name/value pairs, such as the IP address and port in the case of network devices. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### BeginTransactionPaymentTerminalDeviceRequest
 ###### Signature
@@ -208,13 +209,13 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case you plan to integrate with payment flows leveraging the IPaymentProcessor. | 
-| merchantInformation | The merchant information defined in the AX client POS hardware profile form. |
-| invoiceNumber | Unique invoice number generated by the POS to track the sales transaction. |
-| isTestMode | Indicates whether the payment connector is being used in testing mode. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if you plan to integrate with payment flows that use the **IPaymentProcessor** interface. |
+| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
+| isTestMode | A value that indicates whether the payment connector is being used in testing mode. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### UpdateLineItemsPaymentTerminalDeviceRequest
 ###### Signature
@@ -224,66 +225,66 @@ public UpdateLineItemsPaymentTerminalDeviceRequest(string token, string totalAmo
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| totalAmount | The total amount on the current sales transaction. | 
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| totalAmount | The total amount on the current sales transaction. |
 | taxAmount | The tax amount on the current sales transaction. |
-| discountAmount | The discount amount on the current sales transaction |
-| subTotalAmount | The sub total amount on the current sales transaction |
-| items | List of line item to display. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| discountAmount | The discount amount on the current sales transaction. |
+| subTotalAmount | The subtotal amount on the current sales transaction. |
+| items | The list of line items to show. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### AuthorizePaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
 | amount | The amount to authorize. |
 | currency | The currency for the amount to authorize. |
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
-| voiceAuthorization | The voice approval code sent from the POS in case voice authorization is required. |
-| isManualEntry | Defines whether the card number was entered manually. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
+| voiceAuthorization | The voice approval code that is sent from the POS if voice authorization is required. |
+| isManualEntry | A value that defines whether the card number was entered manually. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ###### Response
-The `AuthorizePaymentCardPaymentResponse` response object has to be returned when handling the `AuthorizePaymentTerminalDeviceRequest` request. The response must contain an instance of the `PaymentInfo` object with the following required properties:
+The **AuthorizePaymentCardPaymentResponse** response object must be returned when the **AuthorizePaymentTerminalDeviceRequest** request is handled. The response must contain an instance of the **PaymentInfo** object that has the following required properties.
 
 | Property | Description |
-| --- | --- |
-| ApprovedAmount | The amount approved for the transaction. |
-| CardNumberMasked | The masked credit card number which must at least contain the first digit of the credit card to support bin range lookup in POS (most devices return first 6 digits and last 4 digits). |
-| CardType | The type of card used for the payment (e.g. Credit or Debit) using the `Microsoft.Dynamics.Commerce.HardwareStation.CardPayment.CardType` entity. |
-| CashbackAmount | The cashback amount defined on the payment terminal (for debit transactions). |
-| Errors | List of errors occurred during the authorize call. |
-| IsApproved | Flag indicating whether the payment was approved. |
-| PaymentSdkData | The response data used to support state between the `Authorize` \ `Refund` and `Capture` \ `Void` call or cross-channel payment operations. |
+|---|---|
+| ApprovedAmount | The amount that was approved for the transaction. |
+| CardNumberMasked | The masked credit card number. The value must contain at least the first digit of the credit card to support bin range lookup in the POS. (Most devices return the first six digits and the last four digits.) |
+| CardType | The type of card that was used for the payment (for example, **Credit** or **Debit**) by using the **Microsoft.Dynamics.Commerce.HardwareStation.CardPayment.CardType** entity. |
+| CashbackAmount | For debit transactions, the cash-back amount that was defined on the payment terminal. |
+| Errors | The list of errors that occurred during the authorize call. |
+| IsApproved | A flag that indicates whether the payment was approved. |
+| PaymentSdkData | The response data that is used to support state between the authorize/refund and capture/void calls or cross-channel payment operations. |
 
-The `PaymentSdkData` has to contain the following data.
-
-| Namespace | Name | Description | Sample value |
-| --- | --- | --- | --- |
-| Connector | ConnectorName | The name of the `IPaymentProcessor` used for the transactions as described in the **Write a payment processor** section below. |
-| AuthorizationResponse | Properties | The list of authorization responses. | *See list below*. |
-
-The `Properties` field above must contain the following fields.
+The **PaymentSdkData** property must contain the following data.
 
 | Namespace | Name | Description | Sample value |
-| --- | --- | --- | --- |
-| AuthorizationResponse | ApprovedAmount | The amount approved for the transaction. | 28.08m |
+|---|---|---|---|
+| Connector | ConnectorName | The name of the **IPaymentProcessor** interface that is used for the transactions, as described in the "Write a payment processor" section later in this topic. |
+| AuthorizationResponse | Properties | The list of authorization responses. | See the next table. |
+
+The **Properties** field of the **PaymentSdkData** property must contain the following fields.
+
+| Namespace | Name | Description | Sample value |
+|---|---|---|---|
+| AuthorizationResponse | ApprovedAmount | The amount that was approved for the transaction. | 28.08m |
 | AuthorizationResponse | AvailableBalance | The available balance on the card. | 100.00m |
 | AuthorizationResponse | ApprovalCode | The approval code for the transaction. | Z123456 |
 | AuthorizationResponse | ProviderTransactionId | The transaction identifier of the payment provider. | 123456789 |
-| AuthorizationResponse | AuthorizationResult | The result of the authorization call. | `AuthorizationResult.Success.ToString()` |
-| AuthorizationResponse | ExternalReceipt | The external receipt data from the payment provider. | `<ReceiptData>...</ReceiptData>` |
+| AuthorizationResponse | AuthorizationResult | The result of the authorization call. | AuthorizationResult.Success.ToString() |
+| AuthorizationResponse | ExternalReceipt | The external receipt data from the payment provider. | \<ReceiptData\>...\</ReceiptData\> |
 | AuthorizationResponse | TerminalId | The unique identifier of the terminal that handled the payment. | 000001 |
 
-The example below illustrates how to construct the `PaymentSdkData` object.
+The following example shows how to construct the **PaymentSdkData** object.
 
 ``` csharp
 List<PaymentProperty> paymentSdkProperties = new List<PaymentProperty>();
@@ -302,351 +303,348 @@ paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationRespo
 string paymentSdkData = PaymentProperty.ConvertPropertyArrayToXML(paymentSdkProperties.ToArray());
 ```
 
-If the payment terminal returns a receipt you can print it through the POS by setting the following data on the `ExternalReceipt` object described above:
+If the payment terminal returns a receipt, you can print it through the POS by setting the following data on the **ExternalReceipt** object that was described earlier.
 
 ```xml
 <ReceiptData>
     <Receipt Type='Customer'>
         <Line>Line 1 of receipt.</Line>
-	<Line>Line 2 of receipt.</Line>
+        <Line>Line 2 of receipt.</Line>
     </Receipt>
     <Receipt Type='Merchant'>
         <Line>Line 1 of receipt.</Line>
-	<Line>Line 2 of receipt.</Line>
+        <Line>Line 2 of receipt.</Line>
     </Receipt>
 </ReceiptData>
 ```
 
-###### Other Considerations
-> [!NOTE]
-> If the payment terminal handles the **authorize** and **capture** requests in a single call (i.e. **immediate capture**) and the cashier wants to void the transaction the payment terminal must be able to support reversal of an immediate capture. One point to keep in mind when voiding an immediate capture is if the void request fails the cashier will be asked if they want to locally void the payment. If they select `Yes`, then the tender is voided only in POS no call is made to the payment terminal to void the payment. This basically allows the cashier to unblock POS if it can no longer void the payment on the payment terminal. This can cause issues as a lock lasts for 3-5 days until the bank reverses it. But for immediate capture the payment is made. This can result in duplicate payments!
+###### Other considerations
+If the payment terminal handles the authorize and capture requests in a single call (that is, if *immediate capture* occurs), and the cashier wants to void the transaction, the payment terminal must support reversal of an immediate capture. When an immediate capture is voided, if the void request fails, the cashier will be asked whether he or she wants to locally void the payment. If the cashier selects **Yes**, the tender is voided only in the POS. No call is made to the payment terminal to void the payment. Basically, this behavior lets the cashier unblock the POS if it can no longer void the payment on the payment terminal. However, this behavior can cause issues, because a lock lasts for three to five days, until the bank reverses it, but the payment is made for immediate capture. Therefore, duplicate payments can occur.
 
 ##### CancelOperationPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public CancelOperationPaymentTerminalDeviceRequest(string token)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
 
 ##### CapturePaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public CapturePaymentTerminalDeviceRequest(string token, decimal amount, string currency, string paymentPropertiesXml, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
 | amount | The amount to capture. |
 | currency | The currency for the amount to capture. |
-| paymentPropertiesXml | The content of the `PaymentSdkData` returned by the `AuthorizePaymentTerminalDeviceRequest` or `RefundPaymentTerminalDeviceRequest` used to support stateful properties between the requests. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
-###### Other Considerations
-> [!NOTE]
-> If the payment terminal handles the **authorize** and **capture** requests in a single call then the `CapturePaymentTerminalDeviceRequest` should be a no-op and immediately return. 
+###### Other considerations
+If the payment terminal handles the authorize and capture requests in a single call, the **CapturePaymentTerminalDeviceRequest** request should be a no-op and should immediately return.
 
-> [!NOTE]
-> If the payment terminal requires state from the **authorize** requests to handle the **capture** call, then the properties should be stored in the `PaymentSdkData` of the `AuthorizePaymentTerminalDeviceResponse` request described above, which is passed through the `paymentPropertiesXml` of the `CapturePaymentTerminalDeviceRequest`. 
+If the payment terminal requires state from the authorize requests to handle the capture call, the properties should be stored in the **PaymentSdkData** object of the **AuthorizePaymentTerminalDeviceResponse** request that is described earlier, and passed through the **paymentPropertiesXml** variable of the **CapturePaymentTerminalDeviceRequest** request.
 
 ##### VoidPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public VoidPaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string paymentPropertiesXml, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
 | amount | The amount for the payment to void. |
 | currency | The currency for the payment to void. |
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
-| paymentPropertiesXml | The content of the `PaymentSdkData` returned by the `AuthorizePaymentTerminalDeviceRequest` or `RefundPaymentTerminalDeviceRequest` used to support stateful properties between the requests. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### RefundPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public RefundPaymentTerminalDeviceRequest(string token, string paymentConnectorName, TenderInfo tenderInfo, decimal amount, string currency, bool isManualEntry, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
 | amount | The amount to refund. |
 | currency | The currency for the amount to refund. |
-| isManualEntry | Defines whether the card number was entered manually. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| isManualEntry | A value that defines whether the card number was entered manually. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### FetchTokenPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public FetchTokenPaymentTerminalDeviceRequest(string token, bool isManualEntry, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| isManualEntry | Defines whether the card number was entered manually. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| isManualEntry | A value that defines whether the card number was entered manually. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### EndTransactionPaymentTerminalDeviceRequest
 ##### Signature
-``` charp
+``` csharp
 public EndTransactionPaymentTerminalDeviceRequest(string token, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### ClosePaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public ClosePaymentTerminalDeviceRequest(string token, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### ActivateGiftCardPaymentTerminalRequest
 ###### Signature
-``` charp
+``` csharp
 public ActivateGiftCardPaymentTerminalRequest(string token, string paymentConnectorName, decimal amount, string currencyCode, TenderInfo tenderInfo, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
 | amount | The initial amount to add to the gift card during activation. |
-| currency | The currency for the initial amount to be added to the gift card during activation. |
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| currency | The currency for the initial amount to add to the gift card during activation. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### AddBalanceToGiftCardPaymentTerminalRequest
 ###### Signature
-``` charp
+``` csharp
 public AddBalanceToGiftCardPaymentTerminalRequest(string token, string paymentConnectorName, decimal amount, string currencyCode, TenderInfo tenderInfo, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. | 
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
 | amount | The amount to add to the gift card. |
-| currency | The currency in which to add the gift card balance. |
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+| currency | The currency for the amount to add to the gift card balance. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source present). |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### GetGiftCardBalancePaymentTerminalRequest
 ###### Signature
-``` charp
+``` csharp
 public GetGiftCardBalancePaymentTerminalRequest(string token, string paymentConnectorName, string currencyCode, TenderInfo tenderInfo, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| paymentConnectorName | The name of the payment connector used as part of the payment flow. This is used in case there is an integration with payment flows leveraging the IPaymentProcessor. |  
-| currency | The currency in which to retrieve the gift card balance on. |
-| tenderInfo | The card information sent from POS retrieved from an external source (if present). |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the **IPaymentProcessor** interface. |
+| currency | The currency to retrieve the gift card balance in. |
+| tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source present). |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### GetPrivateTenderPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public GetPrivateTenderPaymentTerminalDeviceRequest(string token, decimal amount, bool declined, bool isSwipe, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| amount | The amount set on the POS (generally used to display on the payment terminal when retrieving the card number). | 
-| declined | *This parameter is deprecated.* |
-| isSwipe | Determines whether the card number should be retrieved through a swipe or manual entry on the payment terminal. |
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| amount | The amount that is set on the POS. (Typically, this variable is used to show the amount on the payment terminal when the card number is retrieved.) |
+| declined | This variable is obsolete. |
+| isSwipe | A value that determines whether the card number should be retrieved through a swipe or manual entry on the payment terminal. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 ##### ExecuteTaskPaymentTerminalDeviceRequest
 ###### Signature
-``` charp
+``` csharp
 public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
 | Variable | Description |
-| --- | --- |
-| token | Unique token value generated when the payment terminal is initially locked for the transaction. |
-| task | Unique identifier for the task being executed. | 
-| extensionTransactionProperties | Set of extension configuration properties in the form of name value pairs. |
+|---|---|
+| token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
+| task | The unique identifier for the task that is being run. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
 #### State in the payment connector
-The payment connector can be either hosted as part of the `dllhost.exe` process when hosted through the in-proc Hardware Station inside the POS or as a `w3wp.exe` process when hosted in the IIS based Hardware Station. In either scenario, there are circumstances under which each of these processes can be terminated or crash in between or in the middle of payment flows. As a result, it is recommended that payment connectors do not have state dependencies and can recover if terminated at any point in time during the payment flow related requests described above.
+The payment connector can be hosted as part of the dllhost.exe process when it's hosted through the in-process Hardware Station inside the POS. Alternatively, the payment connector can be hosted as a w3wp.exe process when it's hosted in the Hardware Station that is based on Microsoft Internet Information Services (IIS). In some circumstances, both processes can be terminated or stop responding between or during payment flows. Therefore, we recommend that payment connectors not have state dependencies, and that they be able to recover if they are terminated at any point during the payment flow–related requests that are described earlier.
 
 ### Configure the payment connector in the Hardware Station config
-To ensure that the payment connector is loaded by the Hardware Station the corresponding assembly reference has to be set on the `HardwareStation.Extension.config` found in the `Assets` folder in the Retail SDK.
+To help guarantee that the Hardware Station loads the payment connector, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <hardwareStationExtension>
-  <composition>
-    <!-- 
-        Register your own assemblies or types here. The the following example registers NewPeripheralDevice 
+    <composition>
+        <!-- 
+        Register your own assemblies or types here. The following example registers NewPeripheralDevice 
         (and all its request handlers). Any other services are not being overridden:
 
         <add source="type" 
-             value="Contoso.Commerce.HardwareStation.NewPeripheralDevice, Contoso.Commerce.HardwareStation.NewPeripheralDevice" />
+            value="Contoso.Commerce.HardwareStation.NewPeripheralDevice, Contoso.Commerce.HardwareStation.NewPeripheralDevice" />
         <add source="assembly" 
-             value="Contoso.Commerce.HardwareStation.NewPeripheralDevice” />
-    -->
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.PaymentSample" />
-  </composition>
+            value="Contoso.Commerce.HardwareStation.NewPeripheralDevice” />
+        -->
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.PaymentSample" />
+    </composition>
 </hardwareStationExtension>
 ```
 
-### Configure the payment connector on the AX client POS hardware profile form
-To determine the right payment connector to load on the POS, the value of the `PaymentTerminalDevice` property has to be set on the `Device` field in the `PIN Pad` section on the AX client POS hardware profile form as shown below.
+### Configure the payment connector on the POS hardware profile page in the Finance and Operations client
+To determine the correct payment connector that should be loaded on the POS, you must set the value of the **PaymentTerminalDevice** property in the **Device name** field on the **PIN pad** FastTab of the **POS hardware profile** page in the Finance and Operations client, as shown in the following illustration.
 
-![Configure payment connector on the AX client POS hardware profile form](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
+![Configure payment connector on the POS hardware profile page in the Finance and Operations client](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 
 ## Write a payment processor
-Payment processes are usually used only if a direct connection to a payment gateway is established as it is most commonly the case in card-not-present sales transactions or more involved card-present scenarios. Additionally, the payment processor is also used to process the merchant properties configured through the `POS hardware profile` form in the AX client. 
+Payment processes are usually used only if a direct connection to a payment gateway is established. This scenario most often occurs in card-not-present sales transactions or more complex card-present scenarios. Additionally, the payment processor is used to process the merchant properties that are configured through the **POS hardware profile** page in the Finance and Operations client.
 
 > [!NOTE]
-> The payment processor is required today even if all payment requests are handled directly through the payment terminal and no merchant properties need to be set through the POS. 
-    
+> The payment processor is currently required, even if all payment requests are handled directly through the payment terminal and no merchant properties must be set through the POS.
+
 ### Understanding the merchant properties flows
-The sections below describe how the merchant properties are set on the AX client POS hardware profile page and how they are passed to the payment connector during payment flows on the POS.
+The following sections describe how the merchant properties are set on the **POS hardware profile** page in the Finance and Operations client, and how they are passed to the payment connector during payment flows on the POS.
 
-#### Set merchant properties in AX client POS hardware profile form
-The diagram below illustrates how the merchant properties are set through the AX client POS hardware profile form. To enable the merchant properties to be set, the `IPaymentProcessor` interface defined in the `Microsoft.Dynamics.Retail.PaymentSDK` library has to be implemented. The two required interface methods are `GetMerchantAccountPropertyMetadata` and `ValidateMerchantAccount`. 
+#### Set merchant properties on the POS hardware profile page in the Finance and Operations client
+The following illustration shows how the merchant properties are set through the **POS hardware profile** page in the Finance and Operations client. To enable the merchant properties to be set, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. Two interface methods are required: **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**.
 
-![Setting Merchant Properties in AX client POS hardware profile form](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
+![Setting merchant properties on the POS hardware profile page in the Finance and Operations client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### Set merchant properties on payment connector during POS sales transaction
-The diagram below illustrates how the merchant properties are retrieved from the AX DB through the Retail Server and passed to the payment connector during the `BeginTransactionPaymentTerminalDeviceRequest`.
+The following illustration shows how the merchant properties are retrieved from the Finance and Operations database through the Retail Server and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
 
-![Setting Merchant Properties on payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
+![Setting merchant properties on the payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 
 ### Implement the IPaymentProcessor interface
-To handle merchant properties related payment flows the `IPaymentProcessor` interface defined in the `Microsoft.Dynamics.Retail.PaymentSDK` library has to be implemented. The example below shows how to implement the two required interface methods `GetMerchantAccountPropertyMetadata` and `ValidateMerchantAccount`. Other interface methods can be left blank (e.g. return `FeatureNotSupportedException`).
+To handle merchant properties that are related to payment flows, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. The following example shows how to implement the two required interface methods, **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**. Other interface methods can be left blank (for example, they can return **FeatureNotSupportedException**).
 
-``` charp
+``` csharp
 /// <summary>
 /// SampleConnector class (Portable Class Library version).
 /// </summary>
 public class SampleConnector : IPaymentProcessor
 {
-     /// <summary>
-     /// GetMerchantAccountPropertyMetadata returns the merchant account properties need by the payment provider.
-     /// </summary>
-     /// <param name="request">Request object.</param>
-     /// <returns>
-     /// Response object.
-     /// </returns>
-     public Response GetMerchantAccountPropertyMetadata(Request request)
-     {
-         string methodName = "GetMerchantAccountPropertyMetadata";
+    /// <summary>
+    /// GetMerchantAccountPropertyMetadata returns the merchant account properties need by the payment provider.
+    /// </summary>
+    /// <param name="request">Request object.</param>
+    /// <returns>
+    /// Response object.
+    /// </returns>
+    public Response GetMerchantAccountPropertyMetadata(Request request)
+    {
+        string methodName = "GetMerchantAccountPropertyMetadata";
 
-         // Check null request
-         List<PaymentError> errors = new List<PaymentError>();
-         if (request == null)
-         {
-             errors.Add(new PaymentError(ErrorCode.InvalidRequest, "Request is null."));
-             return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, locale: null, properties: null, errors: errors);
-         }
+        // Check null request
+        List<PaymentError> errors = new List<PaymentError>();
+        if (request == null)
+        {
+            errors.Add(new PaymentError(ErrorCode.InvalidRequest, "Request is null."));
+            return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, locale: null, properties: null, errors: errors);
+        }
 
-         // Prepare response
-         List<PaymentProperty> properties = new List<PaymentProperty>();
-         PaymentProperty property;
-         property = new PaymentProperty(
-             GenericNamespace.MerchantAccount,
-             MerchantAccountProperties.AssemblyName,
-             this.GetAssemblyName());
-         property.SetMetadata("Assembly Name:", "The assembly name of the test provider", false, true, 0);
-         properties.Add(property);
+        // Prepare response
+        List<PaymentProperty> properties = new List<PaymentProperty>();
+        PaymentProperty property;
+        property = new PaymentProperty(
+            GenericNamespace.MerchantAccount,
+            MerchantAccountProperties.AssemblyName,
+            this.GetAssemblyName());
+        property.SetMetadata("Assembly Name:", "The assembly name of the test provider", false, true, 0);
+        properties.Add(property);
 		 
-         Response response = new Response();
-         response.Locale = request.Locale;
-         response.Properties = properties.ToArray();
-         if (errors.Count > 0)
-         {
-             response.Errors = errors.ToArray();
-         }
+        Response response = new Response();
+        response.Locale = request.Locale;
+        response.Properties = properties.ToArray();
+        if (errors.Count > 0)
+        {
+            response.Errors = errors.ToArray();
+        }
 
-         PaymentUtilities.LogResponseBeforeReturn(methodName, this.Name, Platform, response);
-         return response;
-     }
+        PaymentUtilities.LogResponseBeforeReturn(methodName, this.Name, Platform, response);
+        return response;
+    }
 
-     /// <summary>
-     /// ValidateMerchantAccount the passed merchant account properties with the payment provider.
-     /// </summary>
-     /// <param name="request">Request object to validate.</param>
-     /// <returns>
-     /// Response object.
-     /// </returns>
-     public Response ValidateMerchantAccount(Request request)
-     {
-         string methodName = "ValidateMerchantAccount";
+    /// <summary>
+    /// ValidateMerchantAccount the passed merchant account properties with the payment provider.
+    /// </summary>
+    /// <param name="request">Request object to validate.</param>
+    /// <returns>
+    /// Response object.
+    /// </returns>
+    public Response ValidateMerchantAccount(Request request)
+    {
+        string methodName = "ValidateMerchantAccount";
 
-         // Convert request
-         ValidateMerchantAccountRequest validateRequest = null;
-         try
-         {
-             validateRequest = ValidateMerchantAccountRequest.ConvertFrom(request);
-         }
-         catch (SampleException ex)
-         {
-             return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, locale: request == null ? null : request.Locale, properties: null, errors: ex.Errors);
-         }
+        // Convert request
+        ValidateMerchantAccountRequest validateRequest = null;
+        try
+        {
+            validateRequest = ValidateMerchantAccountRequest.ConvertFrom(request);
+        }
+        catch (SampleException ex)
+        {
+            return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, locale: request == null ? null : request.Locale, properties: null, errors: ex.Errors);
+        }
 
-         // Validate merchant account
-         List<PaymentError> errors = new List<PaymentError>();
-         ValidateMerchantProperties(validateRequest, errors);
-         if (errors.Count > 0)
-         {
-             return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, validateRequest.Locale, errors);
-         }
+        // Validate merchant account
+        List<PaymentError> errors = new List<PaymentError>();
+        ValidateMerchantProperties(validateRequest, errors);
+        if (errors.Count > 0)
+        {
+            return PaymentUtilities.CreateAndLogResponseForReturn(methodName, this.Name, Platform, validateRequest.Locale, errors);
+        }
 
-         // Create response
-         var validateResponse = new ValidateMerchantAccountResponse(validateRequest.Locale, validateRequest.ServiceAccountId, this.Name);
+        // Create response
+        var validateResponse = new ValidateMerchantAccountResponse(validateRequest.Locale, validateRequest.ServiceAccountId, this.Name);
 
-         // Convert response and return
-         Response response = ValidateMerchantAccountResponse.ConvertTo(validateResponse);
-         PaymentUtilities.LogResponseBeforeReturn(methodName, this.Name, Platform, response);
-         return response;
-     }
+        // Convert response and return
+        Response response = ValidateMerchantAccountResponse.ConvertTo(validateResponse);
+        PaymentUtilities.LogResponseBeforeReturn(methodName, this.Name, Platform, response);
+        return response;
+    }
 }
 ```
 
 #### Required merchant property fields
-The following table illustrates the required merchant property fields that have to be set as part of the `GetMerchantAccountPropertyMetadata` method.
+The following table shows the required merchant property fields that must be set as part of the **GetMerchantAccountPropertyMetadata** method.
 
-| Namespace | Name | Sample value * |
-| --- | --- | --- |
+| Namespace | Name | Sample value\* |
+|---|---|---|
 | MerchantAccount | PortableAssemblyName | Contoso.Microsoft.PaymentsSample |
 | MerchantAccount | ServiceAccountId | f35989c8-e571-4de1-862a-996c82a2e6b6 |
 | MerchantAccount | SupportedCurrencies | AUD;BRL;CAD;CHF;CNY;CZK;DKK;EUR;GBP;HKD;HUF;INR;JPY;KPW;KRW;MXN;NOK;NZD;PLN;SEK;SGD;TWD;USD;ZAR |
 | MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
 
-`*` These are sample values that **must** be replaced with unique values for your own payment processor.
+\* You **must** replace the sample values in this column with unique values for your own payment processor.
