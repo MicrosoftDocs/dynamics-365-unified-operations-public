@@ -124,26 +124,8 @@ For Documentation request type, after the translation process is completed, thre
 + **Translation memory** - Download this file if you want to recycle these translations in a newer version of source document. 
 
 ### Review and edit the UI translation in XLIFF file
-We recommend that you review and edit the translations in the provided XLIFF file by using the free Multilingual Editor that is provided or any other XLIFF editor. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
+We recommend that you review and edit the translations in the XLIFF file that DTS provided to verify that the translation output meets your product's quality standards. See [Editing an XLIFF translation memory](./use-translation-service-tm.md#editing-an-xliff-translation-memeory) for the details on the steps. 
 
-When you open the XLIFF file in the Multilingual Editor, it resembles the following illustration.
-
-![XLIFF file in the Multilingual Editor](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
-
-Notice that there is a circle near the beginning of each line. The color of the circle indicates the state of the translation. Depending on where the translation came from, DTS automatically assigns these states.
-
-+	**Red circle** – The text is machine translated. DTS assigns the **Needs Review** state.
-
-    > [!NOTE]
-    > The state value that is shown might differ slightly, depending on the XLIFF editor that you're using.
-
-+	**Yellow, green/yellow, or green circle** – The text is recycled. DTS inherited the state from the XLIFF TM that was used in the request.
-
-To verify the translation, you can apply a filter to show only strings that are in the **Needs Review** state.
-
-![Files in the Needs Review state](./media/dts-editor2.png "Files in the Needs Review state")
-
-Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
 
 ### Review and edit the Documentation translation
 DTS provides the Documentation translation review file in .docx format. You can open it in Microsoft Word to review and edit in a convenient table view as shown in the example below. Once the review is done to this file, you will have to upload it back to DTS to generate the refreshed .docx file output in the original source style. See the next [Regenerate output files](./use-translation-service.md#regenerate-output-files) section for this step.    
@@ -175,33 +157,6 @@ After you select **Upload** button, you're prompted to confirm that action.
 
 You can repeat the regeneration process as many times as you require.
 
-## XLIFF Translation Memory (TM)
-DTS uses a bilingual XLIFF format to store source language and target language pairs. The XLIFF format is based on XML. Therefore, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. You can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
-
-In DTS, you can obtain an XLIFF TM in two ways:
-
-+ **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service.md#preparing-a-translation-memory---alignment) section of this topic.
-+ **Complete a translation request** – When a translation request is completed, DTS provides XLIFF TMs. It also provides the translated files in the source format.
-
-XLIFF files contain a series of TUs that are extracted from the source files. The following illustration shows an example of a TU.
-
-![XLIFF translation unit](./media/dts-xlf.png "XLIFF translation unit")
-
-The following illustration shows the same TU (highlighted in blue) in the Multilingual Editor.
-
-![XLIFF translation unit in the Multilingual Editor](./media/dts-editor3.png "XLIFF translation unit in the Multilingual Editor")
-
-### State
-Each translation in the XLIFF file is associated with a state value. The value that DTS assigns to each translation depends on the way that the string is translated. When an XLIFF TM is created by using the Align tool, all translations are marked as **Translated**, because the aligned TUs are produced from known good translations, such as a previous product version.
-
-However, when the XLIFF files are generated as a result of a translation request, two types of states can be used:
-
-+ **Needs Review** – The string has been machine translated.
-+ **Translated**, **Final**, or **Signed off** – The string has been recycled. The states were inherited from the XLIFF TM.
-
-In this way, you can immediately identify the **Needs Review** strings during the post-editing process. After strings have been reviewed, they should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** won't be included for recycling.
-
-Inherited state values for recycled strings are also helpful, because you will never have to review the same string (that is, a string that has the same ID) again.
 
 ## Glossary
 | Term                   | Description |
