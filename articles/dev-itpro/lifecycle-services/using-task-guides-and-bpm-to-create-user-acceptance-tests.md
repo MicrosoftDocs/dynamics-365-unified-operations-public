@@ -52,7 +52,6 @@ In the right pane, select **Upload**.
 
 Select **Browse** to find and select the file to upload, and then select **Upload**.
 
-![Upload AXTR 2](LINK "Upload AXTR 2")
 ![Upload AXTR 2](./media/upload_axtr_2.png.PNG "Upload AXTR 2")
 
 ### Save an existing Task Recording to BPM
