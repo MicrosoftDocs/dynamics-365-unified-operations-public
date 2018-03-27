@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLocDirTable
+ms.search.form: InventCountingReasonCodePolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
