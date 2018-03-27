@@ -5,7 +5,7 @@ title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -105,7 +105,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Run the installer on a Windows computer
 
 > [!NOTE]
-> Before you run the Retail Modern POS installer, make sure that all requirements are met on the [Systems Requirements](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements) page.
+> Before you run the Retail Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
