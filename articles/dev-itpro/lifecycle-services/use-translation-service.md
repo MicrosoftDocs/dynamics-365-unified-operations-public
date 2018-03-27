@@ -113,7 +113,7 @@ For User Interface request type, after the translation process is completed, two
 
 
 ### Review and edit the UI translation in XLIFF file
-We recommend that you review and edit the translations in the XLIFF file that DTS provided to verify that the translation output meets your product's quality standards. See [Editing an XLIFF translation memory](./use-translation-service-tm.md#editing-an-xliff-translation-memeory) for the details on the steps. 
+We recommend that you review and edit the translations in the XLIFF file that DTS provided to verify that the translation output meets your product's quality standards. See [Editing an XLIFF translation memory](./use-translation-service-tm.md#editing-an-xliff-translation-memory) for the details on the steps. 
 
 ### Regenerate output files
 When you've finished reviewing and editing the translation files, you must regenerate the output files in the source file format so you can apply the latest translations you edited into your target language user interface files.
