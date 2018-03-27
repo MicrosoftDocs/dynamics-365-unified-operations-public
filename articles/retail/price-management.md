@@ -48,15 +48,19 @@ Price groups are at the heart of price and discount management in Microsoft Dyna
 ![Price groups](./media/PriceGroups.png "Price groups")
  
 When you create price groups, you shouldn't use a single price group for multiple types of retail entities. Otherwise, it can be difficult to determine why a particular price or discount is being applied to a transaction. In the illustration, the red dashed line shows that we do support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements, and nothing else. To apply customer specific prices, we recommend using Affiliations over adding price groups directly on the customer. 
+
 Let’s take a closer look at each of the entities that you can use to set distinct prices when the price group mechanism is used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to first set the price groups on the entities, because this step is likely a one-time setup that is done during implementation. Then, as prices and discounts are created, you set the price groups on them individually. 
 
 ## Channels
 In the retail industry, it’s very common to have different prices in different channels. The two primary factors that affect channel-specific prices are costs and local market conditions.  
-Costs - The farther away from the product source, the more it costs to stock a product. For example, fresh produce has a limited shelf life and specific production requirements (growing season). During the winter, fresh lettuce likely costs more in northern climates than southern climates. If you’re setting prices for channels across a large geographical area, you will probably want to set different prices in different channels.  
+
+Costs - The farther away from the product source, the more it costs to stock a product. For example, fresh produce has a limited shelf life and specific production requirements (growing season). During the winter, fresh lettuce likely costs more in northern climates than southern climates. If you’re setting prices for channels across a large geographical area, you will probably want to set different prices in different channels. 
+
 Local market conditions – A store that has a direct competitor across the street will be much more price-sensitive than a store that doesn’t have a direct competitor nearby. 
  
 ### Affiliations
 The general definition of affiliation is a link to or association with a group. In Microsoft Dynamics 365 for Retail, affiliations are groups of customers. Affiliations are a much more flexible tool for customer pricing and discounts than the core Microsoft Dynamics 365 concept of customer groups and discount groups. First, an affiliation can be used for both prices and discounts, whereas non-retail pricing has a different group for each type of discount and price. Next, a customer can belong to only one non-retail pricing group of each type, but a customer can belong to multiple affiliations. Finally, although affiliations can be set up so that they are linked to a customer, they don’t have to be. An affiliation can be used ad hoc with anonymous customers at the POS. A typical example of an anonymous affiliation discount is the senior or student discount, where a customer can get a discount just by showing a group membership card. 
+
 Although affiliations are most often associated with discounts, you can also use them to set differential pricing. For example, when a retailer sells to an employee, it might want to change the selling price instead of applying a discount on top of the regular price. A retailer that sells to both consumer customers and business customers might offer business customers better prices, based on their purchasing volume. Affiliations enable both these scenarios. 
 
 ### Loyalty programs
@@ -69,20 +73,26 @@ Some retailers use physical or virtual catalogs to market and price products to 
 
 ## Best practices 
 Don’t use a price group for multiple retail entity types. Use one set of price groups for channels, and a different set of price groups for affiliations or loyalty programs, and so on. You can use a prefix or suffix in the name of the price group to visually group the distinct types of price groups that you’re using. 
+
 Avoid using price groups directly on a customer. Instead, use an affiliation. In this way, you can assign all types of prices and discounts to customers, instead of just sales price trade agreements. 
 
 ## Best price 
 The calculation of price and discount on a transaction follows the principle of finding the best price for the customer. According to this principle, if more than one price is found, we use the lowest price. We also use the combination of discounts that produces the largest discount amount for the whole transaction. In some cases, we must use a smaller discount on a single product, so that we can apply additional discounts to other products in the transaction. 
+
 The one exception to the principle of finding the best price for the customer is an option for mix-and-match least-expensive discounts. This option enables least-expensive discounts that favor the retailer when products are selected and grouped. Therefore, when a transaction includes more products than are required to qualify for the least-expensive discount, the retail pricing engine selects the products that produce the smallest possible discount amount for the customer. This option is covered in more detail in the discounts related document. 
 
 ## Pricing priority 
 By itself, a pricing priority is just a number and a description. Pricing priorities can be applied to price groups, or they can be applied directly to discounts. When they are used, they let a retailer override the principle of the best price by controlling the order in which prices and discounts are applied to products. A larger pricing priority number is evaluated before a lower pricing priority number, and if a price or discount is found at any priority number, all prices or discounts at lower priority numbers are ignored. The price and a discount can come from two different pricing priorities, because pricing priorities apply to prices and discounts independently. 
+
 To use pricing priority for prices, you must assign a pricing priority to a price group and then create a sales price trade agreement for that price group. 
+
 This feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or the local market will bear a higher price. As described in the Best price section, the retail pricing engine usually selects the lower of two prices, which prevents the retailer from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the introduction of the pricing priority feature, the retailer had to define prices for every product two times and not assign both price groups, or create with extra price groups to isolate the products that have higher prices from products that have common prices. However, the pricing priority feature lets the retailer create a pricing priority for store prices that is higher than the pricing priority for regional prices. Alternatively, the retailer can just create a pricing priority for store prices and leave regional prices at the default pricing priority, which is 0 (zero). Either setup helps guarantee that a store price will always be used before regional prices. 
 
 ## Pricing priority example 
 Let’s look at an example where store prices override other prices. A national retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area. 
+
 For this example, we will drill into the North east region. Store 1 is in Boston, and Store 2 is in Manhattan. For the Boston store, the price groups North East and Store 1 are linked to the channel. For the Manhattan store, the price groups North East, NYC and Store 2 are linked to the channel. 
+
 The retailer sets up two pricing priorities: High cost has a priority number of 5, and Store prices has a priority number of 10. (Remember that, by default, pricing priority is 0 [zero], and a price or discount that has a higher priority number is used before a price or discount that has a lower priority number.) For the North East price group, the pricing priority is left at the default value of 0 (zero). For the NYC price group, the pricing priority is set to **5**, because New York City is a high-cost market. For the Store 1 and Store 2 price groups, the pricing priority is set to **10**. 
 
 Two products that the retailer sells are product 1, a commodity T-shirt, and product 2, brand-specific fashion jeans. 
@@ -109,7 +119,9 @@ The base price and trade agreement price are part of core Microsoft Dynamics 3
 ## Setting prices 
 ### Base price 
 The easiest place to set the price for a product is directly on the product. This value is often referred to as the base price for a product. You set the base price in the **Price** field on the **Sell** tab of the **Released product details** page. The value that you enter is in the company currency and, by default, is for a quantity of 1 of the unit of measure (UoM) that is set in the **Unit** field on the **Sell** tab. The actual price per unit of a product takes into account the UoM, price quantity, and currency. If a product has one price for everyone, using the base price is the most efficient way to manage its price. Even if you use trade agreements to set prices, you might also set the base price on a product, because you don’t use an All trade agreement, but you want a fallback price when no trade agreement applies. 
+
 If a retail channel’s currency differs from the company’s currency, the base price in that retail channel is determined by using currency conversion on the price that is set on the product. 
+
 Although the price unit isn’t a common retail scenario, it’s supported by the retail pricing engine. If the price unit is set to some value other than 0 (zero), the price per unit equals Price ÷ Price unit. For example, if a product’s price is $10.00, and the price unit is 50, the price for a quantity of one is $0.20 ($10.00 ÷ 50). 
 
 ### Sales price trade agreement 
@@ -127,6 +139,7 @@ The retail pricing engine returns three prices for every product: the base price
 The base price is just the property on the product and is the same for everyone everywhere. 
 
 If the **Find next** property is set to **Yes**, the trade agreement price is the lowest price that is found for applicable sales price trade agreements. Trade agreements can be found by using price groups or the **ALL** account code, or they can be assigned directly to a customer. If **Find next** is NOT set to **Yes**, the first trade agreement price that is found is used. If no sales price trade agreements are found, the trade agreement price is set to the base price. 
+
 The active price is calculated by taking the trade agreement price and applying the largest price adjustment that applies to the product. If no price adjustments are found, or if the calculated active price is more than the trade agreement price, the active price is set to the trade agreement price. You can’t increase the price of a product by using price adjustments. The applicable price adjustments can be found only by using price groups that are assigned to a channel, catalog, affiliation, or loyalty program. 
 
 ## Category price rules 
