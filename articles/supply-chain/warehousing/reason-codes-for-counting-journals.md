@@ -40,7 +40,7 @@ warehouse or the item level.
     **Optional** to define if the selection of a reason code should be an
     optional or a mandatory action in one of the following counting journals:
 
--   Cycle Count (mobile device)
+- -  Cycle Count (mobile device)
 
 -   Spot Count (mobile device)
 
