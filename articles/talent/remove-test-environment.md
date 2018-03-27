@@ -51,10 +51,7 @@ This topic assumes that you've purchased Talent through a Cloud Solution Provide
 Since a single Talent environment is “contained” within a single PowerApps environment, there are two options to consider. First involves removing the entire PowerApps environment; the second option involves removing only Talent. The first option is preferred when you have created a PowerApps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established PowerApps environment populated with rich data that's leveraged in PowerApps and Flows.
 
 > [!Important]
-> Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent.
-
-> [!Note]
-> Default PowerApps environments cannot be removed.
+> Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent. Also note that the default PowerApps environments cannot be removed. 
 
 To remove the entire PowerApps environment, including Talent and the associated Apps and Flows:
 
@@ -79,11 +76,4 @@ To remove a Talent environment from an existing PowerApps environment, complete 
 6. In your LCS project, select the **Talent App Management** tile. 
 7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
 8. Select **Remove instance** and confirm your decision. 
-
-
-
-
-
-
-
 
