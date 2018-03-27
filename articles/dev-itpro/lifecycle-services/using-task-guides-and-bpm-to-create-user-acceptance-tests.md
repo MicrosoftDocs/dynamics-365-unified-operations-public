@@ -104,7 +104,7 @@ Select **Run** then **Add test cases**.
  
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
-![Test case details](./media/test_case_details.png.PNG "Test case details")
+![Test case details](./media/test_case_details.png.png "Test case details")
 
 Note: This examples shows the creation of a comprehensive acceptance test suite with all test cases added. You can create various test suites (i.e. basic acceptance test suite) and use custom queries to add specific test cases. 
 
