@@ -4,10 +4,11 @@ You can use Taks Guides and BPM to create your user acceptance test plan. This e
 
 ## 1 .Create a BPM library
 
-There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing).
+There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](creating-editing-browsing.md).
 
 For illustration purposes, this article uses a library with common business processes (Create Expense Report, Approve Order Request, etc) that was created via Excel Import.  
-![Import from Excel](Link "Import from Excel")
+
+![Import from Excel](./media/import_from_excel.png.PNG "Import from Excel")
 
 ## 2. Record Test Cases and Upload to BPM 
 
@@ -22,7 +23,7 @@ Select the company that you want to use while recording.
 
 Go to **Settings &gt; Task recorder**.
 
-![Select Task Recorder](LINK "Select Task Recorder")
+![Select Task recorder](./media/select_task_recorder.png.PNG "Select Task recorder")
 
 Click **Create a new recording**.
 
@@ -32,7 +33,7 @@ When recording is complete, click **Stop** in the **Task Recorder Pane.**
 
 To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
 
-![Task Recorder Option](LINK "Task Recorder Options")
+![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
 Select the library you want to save the recording to and **Save**.
 
@@ -47,11 +48,12 @@ Select the process to upload the task recording to.
 
 In the right pane, select **Upload**. 
 
-![Upload AXTR 1](LINK "Upload AXTR 1")
+![Upload AXTR 1](./media/upload_axtr_1.png.PNG "Upload AXTR 1")
 
 Select **Browse** to find and select the file to upload, and then select **Upload**.
 
 ![Upload AXTR 2](LINK "Upload AXTR 2")
+![Upload AXTR 2](./media/upload_axtr_2.png.PNG "Upload AXTR 2")
 
 ### Save an existing Task Recording to BPM
 
@@ -64,23 +66,23 @@ Select **Edit Task Recording** and attach using either method outlined above.
 
 ## 3. Sync with VSTS   
 
-Next, you'll need to synchronize your BPM library with your VSTS project. For details on how to configure, see [Configure your LCS project and connect to LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts#configure-your-lcs-project-to-connect-to-vsts). 
+Next, you'll need to synchronize your BPM library with your VSTS project. For details on how to configure, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
 
 Once configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
-![VSTS Sync1](LINK "VSTS Sync1")
+![VSTS Sync1](./media/vsts_sync_1.png.PNG "VSTS Sync1")
 
 You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
 
-![VSTS Sync2](LINK "VSTS Sync2")
+![VSTS Sync2](./media/vsts_sync_2.png.PNG "VSTS Sync2")
 
 After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
-![Sync Test Cases](LINK "Syc Test Cases")
+![Sync test cases](./media/sync_test_case.png.PNG "Sync test cases")
 
 Once this step is complete, your task recordings will become test cases in VSTS and a link will appear under the requirements tab. 
 
-![View Test Case](LINK "View Test Case")
+![View test case](./media/view_test_case.png.PNG "View test case")
 
 
 In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed in case you wish to automate test execution. 
@@ -99,11 +101,11 @@ Select **Add existing** and query the Tag **LCS:Test Cases**.
 
 Select **Run** then **Add test cases**.
 
-![Add Test Cases](Dynamics-365-Operations/articles/dev-itpro/lifecycle-services/media/Add Test Cases.PNG "Add Test Cases")
+![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
 You can click on the test case to view details and attached xml file, create a work item, and more.   
 
-![Test Case Details](LINK "Test Case Details")
+![Test case details](./media/test_case_details.png.PNG "Test case details")
 
 Note: This examples shows the creation of a comprehensive acceptance test suite with all test cases added. You can create various test suites (i.e. basic acceptance test suite) and use custom queries to add specific test cases. 
 
@@ -112,7 +114,7 @@ Note: This examples shows the creation of a comprehensive acceptance test suite 
 
 Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment. Either execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
-![VSTS Test Marked](LINK "VSTS Test Marked")
+![VSTS test marked](./media/vsts_test_marked.png.PNG "VSTS test marked")
 
 VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For instructions on how to use Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
 
