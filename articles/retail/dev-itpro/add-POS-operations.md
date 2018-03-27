@@ -38,7 +38,7 @@ This topic explains how to create a new point of sale (POS) operation and add it
 
 If you want your business logic to be run in the POS when users click a button, you should create POS operations. POS operations can run multiple activities or workflows. For example, they can open a new view, ask for user input, or run business logic. All standard and custom POS operations support pre-triggers and post-triggers.
 
-> [!NOTE]
+> [NOTE]
 > If logic should be run as part of another workflow, or if no button click is required, create POS request/response application programming interfaces (APIs). POS operations aren't required in these scenarios.
 
 Every operation should implement the following elements:
@@ -46,7 +46,7 @@ Every operation should implement the following elements:
 - **Operation request** – The operation request is extended from the **ExtensionOperationRequestBase** class. It contains all the input that is required in order to run the operation.
 - **Operation response** – The operation response is extended from the **Response** class. It contains the whole response, based on execution of the operation.
 - **Operation factory** – The operation factory links the button click for the operation with the operation handler.
-- **Operation handler** – The operation handler is extended from the **ExtensionOperationRequestHandlerBase** class. It contains core logic for the operation. All the business logic should be returned in the handler, and it should return the operation response after the operation is run.
+- **Operation handler** – The operation handler is extended from the **ExtensionOperationRequestHandlerBase** class. It contains core logic for the operation. All the business logic should be written in the handler, and it should return the operation response after the operation is run.
 
 ## Create a POS operation
 
@@ -56,7 +56,7 @@ This section explains how to create a sample operation that does simplified end-
 > You can create a new operation and run your own custom logic, you can call existing POS operations, such as Add item to cart and Apply line discount, or you can call existing APIs, such as Get current cart and Set extension properties.
 
 1. Start Microsoft Visual Studio 2015 in administrator mode.
-2. From **...\\RetailSDK\\POSOpen**, open the **ModernPOS** solution.
+2. From **...\RetailSDK\POSOpen**, open the **ModernPOS** solution.
 3. Under the **POS.Extensions** project, create a folder that is named **EODSample**.
 4. Under the **EODSample** folder, create a folder that is named **Operations**.
 
@@ -65,10 +65,10 @@ This section explains how to create a sample operation that does simplified end-
 1. In the **Operations** folder, create a typescript (.ts) file that is named **EndOfDayOperationRequest.ts**.
 2. Open the **EndOfDayOperationRequest.ts** file, and add the following **import** statements to import the relevant entities and context.
 
-    ```typescript
+```typescript
     import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
     import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
-    ```
+```
 
 3. Add a class that is named **EndOfDayOperationRequest**, and extend it from the **ExtensionOperationRequestBase** class.
 
@@ -80,11 +80,11 @@ This section explains how to create a sample operation that does simplified end-
         constructor(correlationId: string) {
             super(5001, correlationId);
         }
-    }|
+    }
     ```
 
     > [!NOTE]
-    > In this example, the operation ID in the **super** method is initialized to **5500**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from HQ.)
+    > In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters.)
     
 ### Create the operation response class
 
@@ -133,19 +133,19 @@ This section explains how to create a sample operation that does simplified end-
 
 4. Add the supported request type in the class.
 
-    ```typescript
+```typescript
     /**
      * Gets the supported request type.
      * @return {RequestType<TResponse>} The supported request type.
      */
     public supportedRequestType(): ExtensionOperationRequestType<TResponse> {
         return EndOfDayOperationRequest;
-    }|
-    ```
+    }
+```
 
 5. Implement the **executeAsync** method.
 
-    ```typescript
+```typescript
     /**
      * Executes the request handler asynchronously.
      * @param {EndOfDayOperationRequest<TResponse>} request The request.
@@ -211,12 +211,12 @@ This section explains how to create a sample operation that does simplified end-
                 };
             });
         }
-    }|
-    ```
+    }
+```
 
-    The overall code should look like this.
+The overall code should look like this.
 
-    ```typescript
+```typescript
     /**
      * SAMPLE CODE NOTICE
      *
@@ -309,20 +309,20 @@ This section explains how to create a sample operation that does simplified end-
                 };
             });
         }
-    }|
-    ```
+    }
+```
 
 ### Create the operation factory class
 
 1. In the **Operations** folder, create a typescript (.ts) file that is named **EndOfDayOperationRequestFactory.ts**.
 2. Open the **EndOfDayOperationRequestFactory.ts** file, and add the following **import** statements to import the relevant entities and context.
 
-    ```typescript
+```typescript
     import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
     import EndOfDayOperationRequest from "./EndOfDayOperationRequest";
     import { ExtensionOperationRequestFactoryFunctionType, IOperationContext } from "PosApi/Create/Operations";
     import { ClientEntities } from "PosApi/Entities";|
-    ```
+ ```
 
 3. Add a function to link the operation handler and the operation button.
 
@@ -352,7 +352,7 @@ This section explains how to create a sample operation that does simplified end-
 
     The overall code should look like this.
 
-    ```typescript
+```typescript
     /**
      * SAMPLE CODE NOTICE
      *
@@ -386,11 +386,11 @@ This section explains how to create a sample operation that does simplified end-
         });
     };
     export default getOperationRequest;|
-    ```
+```
 
 4. Open the **manifest.json** file, and paste in the following code.
 
-    ```typescript
+```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_EODSample",
@@ -408,12 +408,12 @@ This section explains how to create a sample operation that does simplified end-
                 ]
             }
         }
-    }|
-    ```
+    }
+```
 
 5. Open the **extensions.json** file under the **POS.Extensions** project, and update it with **EODSample**, so that the POS will include the extension at runtime.
 
-    ```typescript
+```typescript
     {
         "extensionPackages": [
             {
@@ -424,11 +424,11 @@ This section explains how to create a sample operation that does simplified end-
             }
         ]
     }
-    ```
+```
 
 6. Open the **tsconfig.json** file, and comment out the extension package folders in the exclude list. The POS will use this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, you must add the name of the extension folder and comment out the extension in the extension list, as shown here.
 
-    ```typescript
+```typescript
     "extends": "../tsconfigs/tsmodulesconfig",
     "exclude": [
         "AuditEventExtensionSample",
@@ -438,21 +438,21 @@ This section explains how to create a sample operation that does simplified end-
         //"EODSample",
         "PromotionsSample",
         "SalesTransactionSignatureSample",
-        "SampleExtensions",
+        "SampleExtensions2",
         //"SampleExtensions",
         "StoreHoursSample",
         "SuspendTransactionReceiptSample"
     ],
-    ```
+ ```
 
 7. Compile and rebuild the project.
 
-## Add a custom operation button to the POS layout in HQ
+## Add a custom operation button to the POS layout in Retail headquarters
 
-1. Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Operations in Dynamics 365 for Retail**.
+1. In Retail go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Operations.
 2. Create an operation that is named **EOD** and that has an operation ID of **5001**.
 3. Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Button grids**.
-4. Filter for " F2W2".
+4. Filter for **'F2W2'**.
 5. Select the **Designer** button, and then follow the instructions to install the designer. If you're prompted for credentials, enter the Retail user name and password.
 6. Right-click in the designer area, and then select **Add new row**.
 7. Right-click the new button, and then select **Button properties**.
@@ -460,7 +460,7 @@ This section explains how to create a sample operation that does simplified end-
 9. Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select **1090**, and then select **Run now**.
 
-> [!NOTE]
+> [NOTE]
 > The preceding steps assume that you're using demo data. If you aren't using demo data, create and add the button according to your custom configurations.
 
 ## Validate your extension
