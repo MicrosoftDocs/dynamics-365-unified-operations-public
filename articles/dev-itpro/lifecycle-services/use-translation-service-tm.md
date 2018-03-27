@@ -1,14 +1,15 @@
-# Microsoft Dynamics 365 Translation Service user guide 
+# Microsoft Dynamics 365 Translation Service user guide - Translation memory 
 
 [!include[banner](../includes/banner.md)]
+This topic describes when and where translation memory file can be created, edited and used to help DTS provide you a quality translation output file. 
 
 ## XLIFF Translation Memory (TM)
 DTS uses a bilingual XLIFF format to store source language and target language pairs. The XLIFF format is based on XML. Therefore, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. You can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 
 In DTS, you can obtain an XLIFF TM in two ways:
 
-+ **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service.md#preparing-a-translation-memory---alignment) section of this topic.
-+ **Complete a translation request** – When a translation request is completed, DTS provides XLIFF TMs. It also provides the translated files in the source format.
++ **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service-tm.md#creating-a-translation-memory---alignment) section in this topic.
++ **Complete a translation request** – When a DTS translation request is completed, it provides you the XLIFF TMs as part of the request output. You can bring this to the next time you submit a new translation request with the updated source files. 
 
 XLIFF files contain a series of TUs that are extracted from the source files. The following illustration shows an example of a TU.
 
@@ -30,7 +31,7 @@ In this way, you can immediately identify the **Needs Review** strings during th
 
 Inherited state values for recycled strings are also helpful, because you will never have to review the same string (that is, a string that has the same ID) again.
 
-## Preparing a translation memory - Alignment
+## Creating a translation memory - Alignment
 If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF). On the DTS dashboard, select the **Align** icon to access the Align tool.
 
 ![Align button](./media/dts-align-icon.png "Align button")
