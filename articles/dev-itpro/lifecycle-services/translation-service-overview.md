@@ -41,7 +41,7 @@ DTS uses a custom-trained machine translation (MT) system for [Microsoft’s Gen
 The following diagram shows a high-level view of how the service works. ![alt text](./media/dts-overview.png "How the DTS works")
  
 ## Recycle existing translations
-Recycling existing linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. For more information, see [XLIFF TM zip file](./use-translation-service.md#xliff-translation-memory-tm).
+Recycling existing linguistic assets is enabled only when the assets are uploaded in the XLIFF translation memory (TM) zip file format. For more information, see [XLIFF Translation Memory (TM)](./use-translation-service-tm.md) topic.
 
 ## Custom-trained MT system
 DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products.
