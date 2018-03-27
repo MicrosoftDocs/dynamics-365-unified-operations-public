@@ -180,7 +180,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt example](media/apac-ind-gst-receipt.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Retail headquarters:
 
@@ -203,7 +203,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-2.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -308,7 +308,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-3.png)
+    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 
