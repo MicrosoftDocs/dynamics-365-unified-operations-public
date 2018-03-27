@@ -1,0 +1,15 @@
+
+# Synchronize project estimates from Project Service Automation directly to project forecasts in Finance and Operations
+
+This topic decribes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+
+## Data flow for Project Service Automation to Finance and Operations
+
+The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance and Operations. The integration templates that are available with the Data integration feature enable the flow of data about project hour estimates and project expense estimates from Project Service Automation to Finance and Operations.
+
+The following illustration shows how the data is synchronized between Project Service Automation adn Finance and Operations.
+
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.PNG)](./media/ProjectEstimatesFlow.PNG)
+
+## Templates and tasks
+
