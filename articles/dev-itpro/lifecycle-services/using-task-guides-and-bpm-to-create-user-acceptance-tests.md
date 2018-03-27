@@ -1,18 +1,48 @@
-# Use Task Guides and BPM to create an acceptance test suite
+---
+title: Use Task guides and BPM to create an acceptance test suite
+description: This topic provides information about using Task guides and BOM to create acceptance test suites.
+author: kfend
+manager: AnnBe
+ms.date: 03/27/2018
+ms.topic: article
+ms.prod: 
+ms.service:  dynamics-ax-platform
+ms.technology: 
 
-You can use Taks Guides and BPM to create your user acceptance test plan. This enables you to organize your acceptance tests by business processes and synchronize BPM to VSTS allowing you to manage test execution and results. This article walks through the process of creating an acceptance test suite to be used for either manual or automatic testing in four easy steps.
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 13301
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ntecklu
+ms.search.validFrom: 
+ms.dyn365.ops.version: 2012
+
+---
+
+# Use Task guides and BPM to create an acceptance test suite
+
+You can use Task guides and Business process modeler (BPM) to create a user acceptance test plan. This enables you to organize your acceptance tests by business process and then synchronize BPM to VSTS allowing you to manage test execution and results. This topic walks through the process of creating an acceptance test suite to be used for manual or automatic testing.
 
 ## Create a BPM library
 
-There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
+There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
 
-For illustration purposes, this article uses a library with common business processes (Create Expense Report, Approve Order Request, etc) that was created by using Excel import.  
+For illustration purposes, this topic uses a library that contains common business processes such as Create expense report and Approve order Requests. The library was created by using the Excel import functionality.  
 
 ![Import from Excel](./media/import_from_excel.png.PNG "Import from Excel")
 
 ## Record test cases and upload to BPM 
 
-After you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM. There are several ways to do this. 
+After you have created a BPM library, you'll need to create your test cases by using Task recorder and then upload the cases to BPM. There are several ways to do this. 
 
 If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
