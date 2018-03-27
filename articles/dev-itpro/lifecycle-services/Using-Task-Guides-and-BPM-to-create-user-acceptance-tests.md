@@ -118,5 +118,8 @@ VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution
 
 We highly encourage users to take advantage of VSTS as it provides a rich set of management features not only for testing, but result managment and mititigation.
 
-### Executing automatic test cases
+### Executing automated test cases
 
+The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
+For details see the [Continuous delivery hompage](http://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/)
+We are also working on developping a tool that enables non developers to author and automate the execution of task recorder based test cases that will significantly reduce the cost of user acceptance testing.
