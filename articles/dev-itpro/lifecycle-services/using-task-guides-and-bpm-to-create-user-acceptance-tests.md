@@ -2,7 +2,7 @@
 
 You can use Taks Guides and BPM to create your user acceptance test plan. This enables you to organize your acceptance tests by business processes and synchronize BPM to VSTS allowing you to manage test execution and results. This article walks through the process of creating an acceptance test suite to be used for either manual or automatic testing in four easy steps.
 
-## 1. Create a BPM library
+## Create a BPM library
 
 There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see [Create, Edit, and browse BPM libraries](creating-editing-browsing.md).
 
@@ -10,13 +10,13 @@ For illustration purposes, this article uses a library with common business proc
 
 ![Import from Excel](./media/import_from_excel.png.PNG "Import from Excel")
 
-## 2. Record test cases and upload to BPM 
+## Record test cases and upload to BPM 
 
 After you have created a BPM library, you'll need to create your test cases using Task Recorder and upload them to BPM. There are several ways to do this. 
 
 If you're using a library that already has all desired Task Recordings attached, skip this step. Otherwise, you can create a new Task Recording in the client and save it directly to LCS, or download the AXTR file and later upload it to an BPM. 
 
-###  Create and Save a new Task Recording 
+### Create and Save a new Task Recording 
 1. Open the client and log in. 
 2. Select the company that you want to use while recording.
 3. Go to **Settings &gt; Task recorder**.
@@ -31,7 +31,6 @@ If you're using a library that already has all desired Task Recordings attached,
 ![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
 8. Select the library you want to save the recording to and **Save**. Otherwise, select **Save to Disk** and follow the steps in the section, Upload an AXTR file to BPM.
-
 
 ### Upload an AXTR file to BPM 
 
@@ -51,7 +50,7 @@ If you're using a library that already has all desired Task Recordings attached,
 2. Go to **Settings &gt; Task recorder**.
 3. Select **Edit Task Recording** and attach using either method outlined above.
 
-## 3. Sync with VSTS   
+## Sync with VSTS   
 
 Next, you'll need to synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
 
@@ -74,7 +73,7 @@ Once this step is complete, your task recordings will become test cases in VSTS 
 
 In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed in case you wish to automate test execution. 
 
-## 4. Create a test suite in VSTS
+## Create a test suite in VSTS
 
 Now you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track results. 
 
@@ -92,7 +91,7 @@ Now you will need to create a test suite in VSTS. This will allow you to run a s
 
 Note: This example shows hot to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
-### Executing manual test cases
+### Execute manual test cases
 
 Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment. Either execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
@@ -102,7 +101,7 @@ VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution
 
 We highly encourage users to take advantage of VSTS as it provides a rich set of management features not only for testing, but result managment and mititigation.
 
-### Executing automated test cases
+### Execute automated test cases
 
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
 For details see the [Continuous delivery hompage](../dev-tools/continuous-delivery-home-page) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
