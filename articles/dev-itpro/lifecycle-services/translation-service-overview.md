@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Microsoft Dynamics 365 - Translation Service (DTS), which is hosted in Microsoft Dynamics Lifecycle Services (LCS), is designed to enhance the translation experience for partners and ISVs with their solutions or when adding a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).  
 
-DTS uses a custom-trained machine translation (MT) system for [Microsoft’s General Availability (GA) languages](./use-translation-service.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
+DTS uses a custom-trained machine translation (MT) system for [Microsoft’s General Availability (GA) languages](./translation-service-overview.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from Microsoft Dynamics and partners/ISVs linguistic assets so that identical strings are translated one time and consistently. 
 
 The following diagram shows a high-level view of how the service works. ![alt text](./media/dts-overview.png "How the DTS works")
  
