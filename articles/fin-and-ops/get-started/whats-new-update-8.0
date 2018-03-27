@@ -1,0 +1,46 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 for Finance and Operations version 8.0
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
+author: tonyafehr
+manager: AnnBe
+ms.date: 04/02/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: tfehr
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global 
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: tfehr
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 8.0 
+---
+
+# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+
+[!include[banner](../includes/banner.md)]
+
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018 and has a build number of XXXX.
+
+To learn more about the new features and changes in all of the latest product releases, see [What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) and [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new).
+
+GThis topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. 
+
+### Announcing the Dynamics 365 Spring '18 release notes
+Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
+
+[Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. 
+
+### Platform update 15 bug fixes
+For information about the bug fixes included in Platform update 15, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=869898).
