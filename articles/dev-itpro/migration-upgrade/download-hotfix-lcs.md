@@ -86,9 +86,11 @@ To view available updates:
    ![Save package to asset library](./media/SaveBinaryPackage.jpg)
 
 5. Click **Done** to return to environment page.
+
    ![DoneSavingBinaryPackage](./media/DoneSavingBinaryPackage.jpg)
  
 6. You'll see the saved binary package in the asset library. 
+
    ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
 ## Download X++ updates
@@ -106,11 +108,16 @@ To view available updates:
 
 3. Select **Download package**.
 
-    ![Download package](./media/DownloadX++UpdatePackage.jpg)
+    ![Download X++ package](./media/DownloadX++UpdatePackage.jpg)
 
 4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
 
-    ![Review and download hotfixes](media/ReviewAndDownloadX++Package.jpg)
+    ![Review and download X++ updates](media/ReviewAndDownloadX++Package.jpg)
+    
+5. Downloaded package
+    
+    ![downloaded](media/X++UpdatesDownloadBegin.jpg)
+
 
 ## Also see
 - [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
