@@ -32,18 +32,38 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about how to create or edit a Business process modeler (BPM) library.
+This topic provides information about how to create, edit, and browse Business process modeler (BPM) libraries. It's important to note You can browse a BPM library that is a global library or a corporate library. However, before you can edit and work with a BPM library, it must be part of your project in Microsoft Dynamics Lifecycle Services (LCS). Libraries that are distributed by Microsoft appear under **Global libraries**, whereas libraries that are published by your organization appear under **Corporate libraries**.
 
 ## Create a BPM library
+There are several ways to author a BPM library. You can do so from scratch either building directly in the client or by importing an Excel template. Additionally, you can copy an existing library. This section walks through each of these methods.
+
+### Using the BPM client 
 
 1. On the **Business process libraries** page, select **New library**.
 2. Enter a name for the new library, and then select **Create**.
+    
+### Using Excel Import
 
-    The new library is now available to users in the current project.
+1. On the **Business process libraries** page, select **Import from Excel**
+2. Select **Download template** from the pane. Once downloaded, open the file.
+3. The template has several columns, most importantly **Id** and **Parent Id**. Associate each line with a new Id number, if you'd like to make a line a child item, add the Id of the line you'd like it to fall under in the parent Id column. the 
+4. Once complete, save the template and return to BPM.
+5. Using the import pane, select **Browse** to upload the updated template, enter a name for the new library, and select **Import**. 
+ 
+### Copying a library 
 
-3. Select the library to open it in BPM.
+1. Openn the **Business process libraries** page 
+2. On the tile for the library that you want to copy, select the ellipsis button (…), and then select **Copy**.
+3. Enter a name for the library, and then select **Create**.
 
-    You can now use BPM to build, edit, and browse your library.
+
+### Importing sections of libraries
+1. Openn the **Business process libraries** page and select the library you would like to edit. 
+2. Navigate to the line you would like to import to and select **Import**.
+3. Select **As child** or **As sibling**
+4. In the pane, select the library you would like to import from. 
+
+ 
 
 ## Add a new process
 
@@ -80,12 +100,6 @@ To delete a business process, select the process to delete, and then select **De
 ## Copy a global or corporate library to your project
 
 You can browse a BPM library that is a global library or a corporate library. However, before you can edit and work with a BPM library, it must be part of your project in Microsoft Dynamics Lifecycle Services (LCS). Libraries that are distributed by Microsoft appear under **Global libraries**, whereas libraries that are published by your organization appear under **Corporate libraries**.
-
-Follow these steps to copy a global or corporate library to your project.
-
-1. In your LCS project, open the **Business process libraries** page.
-2. On the tile for the library that you want to copy, select the ellipsis button (…), and then select **Copy**.
-3. Enter a name for the library, and then select **Create**.
 
 ## Browse a BPM library
 
