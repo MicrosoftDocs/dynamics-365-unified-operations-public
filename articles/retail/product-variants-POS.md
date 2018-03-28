@@ -100,7 +100,7 @@ You can also change the pivot for dimensions by selecting the new dimension to u
 
 Additionally, in the **Dimension based matrix** view, more actions can be performed to help boost a store associate's productivity. Here are some examples:
  
-- Change the store location to look up the inventory availability of all product variants at other locations. These locations include other stores in the store locator group and distribution centers of the **Standard/Default** type.
+- Change the store location to look up the inventory availability of all product variants at other locations. These locations include other stores in the store locator group and distribution centers of the **Standard** default type.
 - Sell an individual product variant to a customer by using cash and carry, in-store pickup, or shipment to an address.
 - Provide the customer with ATP information for an individual product variant at a specific location.
 
