@@ -51,20 +51,14 @@ To use the Support tool, you must have previously created a project in Lifecycle
 4.  Select an issue area.
 ![Area](media/CPS6.png)
 
-5. In the **Describe your issue** window, enter the following:
+5. In the **Describe your issue** window, provide additional information related the issue.  
+The more information you can provide here, the more helpful for the support organization in diagnosing and resolving your incident. 
 
- - Select **Yes** if the issue occured in an environment. Select the environment name.  
- - Enter a short description of your issue in the **Title** field.
- - Provide details about the issue detail and the steps needed to reproduce the error.
- - If applicable, enter an error message. 
- - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
- 
  > [!NOTE]
- > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
- 
+ > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation.  
  > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
  
- ![Detail](media/CPS7-1.png)
+ ![Detail](media/CPS7.png)
  
 6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
 ![Contact info](media/CPS8.png)
