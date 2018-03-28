@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Customer payment insights
+title: Customer payment insights (preview)
 description: This topic describes how Customer payment insights can help predict when an invoice will be paid and help organizations to
 create optimization strategies that improve the probability of being paid on time.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,24 +14,21 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User/Developer/IT Pro]
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+ms.search.scope: 
 # ms.tgt_pltfrm: 
-ms.custom: 14531
-ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
-ms.search.region: Global
+# ms.custom: 
+ms.search.region: Global 
 # ms.search.industry: 
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-
 ---
 
-# Customer payment insights
+# Customer payment insights (preview)
 
 [!include[banner](../includes/banner.md)]
 
