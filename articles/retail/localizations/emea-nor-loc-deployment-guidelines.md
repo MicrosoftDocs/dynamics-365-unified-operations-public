@@ -379,30 +379,25 @@ The CRT extension components are included in the CRT samples. To complete the fo
     
     # [Application update 4](#tab/app-update-4)
 
-    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+      1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+           - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
+           - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+      2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
+      3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
-        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
-        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
-
-    2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
-
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
-
-    ``` xml
+        ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-    ```
+        ```
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
+      1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
+      2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
+      3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
-    2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
-
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
-
-    ``` xml
+        ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
-    ```
+        ```
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
 
