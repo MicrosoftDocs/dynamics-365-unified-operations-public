@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 # Use Task guides and BPM to create an acceptance test suite
 
-You can use Task guides and Business process modeler (BPM) to create a user acceptance test plan. This enables you to organize your acceptance tests by business process and then synchronize BPM to VSTS allowing you to manage test execution and results. This topic walks through the process of creating an acceptance test suite to be used for manual or automatic testing.
+You can use Task guides and Business process modeler (BPM) to create a user acceptance test plan. You can organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and results. This topic walks through the process of creating an acceptance test suite to be used for manual or automatic testing.
 
 ## Create a BPM library
 
@@ -42,29 +42,29 @@ For illustration purposes, this topic uses a library that contains common busine
 
 ## Record test cases and upload to BPM 
 
-After you have created a BPM library, you'll need to use Task recroder to create your test cases and then upload the cases to BPM. There are several ways to do this. 
+After you have created a BPM library, you'll need to use Task recorder to create your test cases and then upload the cases to BPM. There are several ways to do this. 
 
-If you're using a library that already has all of the necessary task recordings attached, you can skip this step. Otherwise, create a new task recording in the client and save it directly to LCS, or download the AXTR file and upload it to a BPM library at a later time . 
+If you're using a library that already has all of the necessary task recordings attached, you can skip this step. Otherwise, create a new task recording in the client and save it directly to LCS, or download the AXTR file and upload it to a BPM library later. 
 
 ### Create and save a new task recording 
-1. Open the client and log in. 
+1. Open the client and sign in. 
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
 
 ![Select Task recorder](./media/select_task_recorder.png.PNG "Select Task recorder")
 
 4. Click **Create a new recording**.
-5. Enter a name for the recording, and then click **Start**. Recording begins the moment you click **Start**.
+5. Enter a name for the recording, and then click **Start**. Recording begins the moment that you click **Start**.
 6. When the recording is complete, in the Task recorder pane, click **Stop**.
-7. To save the Task Recording to an attached BPM, click **Save to Lifecycle Services**.
+7. To save the task recording to an attached BPM, click **Save to Lifecycle Services**.
 
 ![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
-8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the section, Upload an AXTR file to BPM.
+8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
 ### Upload an AXTR file to BPM 
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
+1. In Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
 3. In the right pane, click **Upload**. 
 
@@ -76,7 +76,7 @@ If you're using a library that already has all of the necessary task recordings 
 
 ### Save an existing task recording to BPM
 
-1. To attach an existing task recording, log in to the client.
+1. To attach an existing task recording, sign in to the client.
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
@@ -106,9 +106,9 @@ In addition to the test steps, the task recording XML file is attached to the VS
 
 ## Create a test suite in VSTS
 
-Next, you will need to create a test suite in VSTS. This will allow you to run a suite of tests and manage, investigate, and track the results. 
+Next, you will need to create a test suite in VSTS. This will allow you to run a suite of tests so you can easily manage, investigate, and track the results. 
 
-1. Log in to VSTS and select the project and test plan that you want to test in. 
+1. Sign in to VSTS and select the project and test plan that you want to test in. 
 2. On the toolbar, select **Test**.
 3. In the left pane, select **+**, and then select **Static suite**. 
 4. Enter a name for the suite.
@@ -117,24 +117,24 @@ Next, you will need to create a test suite in VSTS. This will allow you to run a
 
 ![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
-7. Click the test case to view details and the attached xml file and to create a work item.   
+7. Select the test case to view details and the attached XML file, and to create a work item.   
 
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
  >![NOTE]
  > This example shows how to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
-### Execute manual test cases
+### Run manual test cases
 
-After you have a test suite, you are ready to use it for regression testing after updates made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
+After you have a test suite, you are ready to use it for regression testing after updates have been made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
 ![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
 
-VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+VSTS also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
 
-We recommend that you take advantage of VSTS as it provides a rich set of management features not only for testing, but result managment and mititigation.
+We recommend that you take advantage of VSTS as it provides a rich set of management features not only for testing, but result management and mitigation.
 
-### Execute automated test cases
+### Run automated test cases
 
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
-For details see the [Continuous delivery hompage](././dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
+For details, see the [Continuous delivery home page](././dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
