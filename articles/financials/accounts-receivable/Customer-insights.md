@@ -45,7 +45,7 @@ Payment predictions allow organizations to improve their business processes by h
 -   Easily identify the invoices that are predicted to be paid late.
 -   Take appropriate measures to improve chances of getting paid on time.
 
-Customer payment insights (preview) uses machine learning to predict when an invoice will be paid. It uses historical invoices, payments, and customer data to create a machine learning model that is used to predict when an invoice will be paid.
+Customer payment insights (preview) uses machine learning to predict when an invoice will be paid. It uses historical invoice, payment, and customer data to create a machine learning model that is used to predict when an invoice will be paid.
 
 For each open invoice, Customer payment insights (preview) predicts three payment probabilities:
 
@@ -68,7 +68,7 @@ For example, let’s assume for an invoice the prediction shows a 71 percent pro
 
 In addition to payment predictions, the Customer Payment Insights (preview) can use optimization strategies to improve the chances of getting paid on time. This lets organizations do 'What if' analysis by allowing users to adjust invoice and customer parameters and then compare the corresponding effect on the probability of receiving payment on invoices on time.
 
-For example, an organization may want to evaluate the effect of updating the cash discount on invoices on the probability of receiving the payment on time. When the invoices are optimized to use the new discount, the users can review the effect of applying the discount on the invoice. If the cost of applying the discount is minimal when compared to the benefit of collecting the payment on time, the organization may choose to apply the selected discount to all future open orders.
+For example, an organization may want to evaluate the effect of updating the cash discount on invoices on the probability of receiving the payment on time. When the invoices are optimized to use the new discount, the users can review the effect of applying the discount on the probability of receiving payments for those invoices on time. If the cost of applying the discount is minimal when compared to the benefit of collecting the payment on time, the organization may choose to apply the selected discount to all future open orders.
 
 > [!NOTE] 
 > Currently, only discount is available as an optimization strategy for Customer payment insights (preview).
