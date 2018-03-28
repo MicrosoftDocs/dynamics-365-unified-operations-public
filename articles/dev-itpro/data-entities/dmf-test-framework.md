@@ -53,7 +53,7 @@ We recommend the following approach to data task automation:
 
 4.	Run the data tasks, and then review the outcomes. 
 
-    Data task automation manager provides success or failure outcome for each task. It also provides insights into why a task failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using the data project and execution details in the Data management workspace.
+    Data task automation manager provides success or failure outcome for each task. It also provides insights into why a task failed.
     
     > [!NOTE]
     > Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
@@ -110,13 +110,14 @@ The manifest schema supports inheritance of common elements that are going to be
 Manifests that must be used by all the members of an implementation team should be stored in source control in the application object tree (AOT). This not only provides for the benefits of source control but also enables a process to distribute or make the manifest(s) available to all users in a consistent manner. This also enables configuration management for data management related data projects if manifests are being used to configure.
 
 ## Validations
-The task automation manager performs validations based on the set up of a task. The validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed.
+The task automation manager performs validations based on how a task has been set up. Validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using the data project and execution details in the Data management workspace.
 
 ![Validations](./media/Validations.png)
 
 ## Configuration management for data projects
-The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. Below is a sample for such a task. The fist one is an example to configure a data project without any recurring schedule. The second one is an example where a recurring schedule must also be configured. The difference is the value provided to the <Operation> element.
-The manifest for the configuration tasks can be source controlled to enable ALM on configuration management of data projects
+The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. 
+
+The first example below configures a data project without a recurring schedule. The second example includes a recurring schedule. The difference is the value provided to the <Operation> element. Manifests for configuration tasks should also be kept under source control.
 
 ![Config](./media/Config.png)
 
