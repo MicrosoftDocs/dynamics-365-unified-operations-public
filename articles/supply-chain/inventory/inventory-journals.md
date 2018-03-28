@@ -108,7 +108,7 @@ Data entities support the following two types of integration scenarios.
 -	 Synchronous service (OData)
 -  Asynchronous integration
 
-For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md)
+For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Not all inventory journals are OData-enabled, and therefore you can’t use the Excel data connector to get data published, updated, and imported back to Dynamics 365 for Finance and Operations. 
@@ -117,10 +117,10 @@ Another difference between the journal data entities is the capability of using 
 -	Inventory adjustment journal
 -	Inventory movement journal
 
-These two inventory journals only support the Initialize stock scenario as follows as part of a data management import project:
-- When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines.
--	 It is assumed that unique line information exists per inventory dimension, and therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
+These two inventory journals only support the *Initialize stock* scenario as follows as part of a data management import project:
+-  When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines.
+-	 It is assumed that unique line information exists per inventory dimension. Therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
 
+## Related topic
 
-
-
+[Data entities](../../dev-itpro/data-entities/data-entities.md)
