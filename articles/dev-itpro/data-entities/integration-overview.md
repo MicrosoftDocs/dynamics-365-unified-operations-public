@@ -43,10 +43,13 @@ The following table lists the integration patterns that are available for Financ
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
 | OData                         | [OData](odata.md) |
-| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management API](data-management-api.md) |
+| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data package API](data-management-api.md) |
 | Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
 | Excel integration | [Office integration](../office-integration/office-integration.md) |
+
+Note:
+For on premise deployments, the only supported API is the [Data package API](data-management-api.md). To know more about the versions on which this capabilitiy is available, follow this wiki.
 
 ## Synchronous vs. asynchronous integration patterns
 
