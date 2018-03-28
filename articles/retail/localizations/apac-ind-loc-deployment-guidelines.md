@@ -75,13 +75,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - Microsoft.Dynamics365.ElectronicReportingMapping.dll
       - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    In the **Reference\\Z3\\x86** folder:
+    Find the following folders in the **Reference\\Z3** folder:
 
-      - Microsoft.Z3.dll
-      - libz3.dll
-
-      > [!NOTE]
-      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+      - x86
+      - x64
 
     # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
 
@@ -100,17 +97,14 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
       - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    In the **Reference\\Z3.4.5.0\\lib\\net40\\x86** folder:
+    Find the following folders in the **Reference\\Z3.4.5.0\\lib\\net40** folder:
 
-      - Microsoft.Z3.dll
-      - libz3.dll
-
-      > [!NOTE]
-      > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+      - x86
+      - x64
 
     ---
 
-3. Copy the 13 assembly files to the CRT extensions folder:
+3. Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:
 
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
@@ -159,12 +153,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.XppSupportLayer.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3\x86\Microsoft.Z3.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3\x86\libz3.dll" />
     ```
-
-    > [!NOTE]
-    > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
 
     # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
 
@@ -180,12 +169,46 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\Microsoft.Z3.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\libz3.dll" />
     ```
 
-    > [!NOTE]
-    > If you target a 64-bit computer, modify the Z3 package so that it's an x64 version.
+3. Modify the following files to include the Z3 libraries in deployable packages.:
 
-3. Run **msbuild** for the whole Retail SDK to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+    - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
+    - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
+    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
+
+    # [Application update 7.3.1](#tab/app-update-7-3-1)
+
+    Add the following lines to the **ItemGroup** section
+
+    ```xml
+        <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
+        <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
+    ```
+
+    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+
+    ```xml
+        <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
+        <_bin_ext_Z3_x64_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x64\*.*" />
+    ```
+
+    ---
+
+    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+
+        ```xml
+            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+        ```
+
+    For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+
+        ```xml
+            <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+            <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+        ```
+
+4. Run **msbuild** for the whole Retail SDK to create deployable packages.
+
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
