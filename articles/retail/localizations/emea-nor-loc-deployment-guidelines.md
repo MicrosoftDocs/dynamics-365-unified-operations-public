@@ -41,10 +41,6 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 > [!NOTE] 
 > Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Finance and Operations that you're using.
 
-## Prerequisites
-
-- Make sure Visual C++ Redistributable Packages are present on machine you are running Goods and Services Tax (GST) calculations. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. The following download link points you to the components that must be installed, if there are no packages. [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
-
 ## Development environment
 
 Complete these procedures to set up a development environment so that you can test and extend the sample.
