@@ -26,7 +26,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: Application pdate 5, AX 8.0
+ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
@@ -55,8 +55,8 @@ On the **Inventory lookup** page, you can use the numeric keyboard to enter a pr
 
 The list of locations includes two types of entities:
 
-- **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the headquarters. 
-- **Distribution centers** – Various types of distribution centers can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard/Default** type. 
+- **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the Retail headquarters. 
+- **Distribution centers** – Various types of distribution centers (such as warehouses) can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard** default type. 
 
     > [!NOTE]
     > Inventory availability information isn't shown for warehouses of the **Transit**, **Quarantine**, and **Goods in Route** types for the POS.
@@ -67,7 +67,7 @@ On the **Inventory lookup** page, you can view available to promise (ATP) quanti
 
 ## Opening the Dimension based matrix view to show all variants
 
-You can open the **Dimension based matrix** view from either the **Product details** page or the **Inventory lookup** page by using the **View all variants** button on the app bar at the bottom of the window.
+On the **Product details** page of a product master, or on the **Inventory lookup** page, select **View all variants** from the app-bar at bottom of the page. The **Dimension based matrix** view for the initial launch from these pages shows the inventory availability information for all variants of a product for the current store.
 
 > [!NOTE]
 > The **View all variants** button is available only for item product masters that have product variants. It isn't available for standalone products or kits.
@@ -81,7 +81,7 @@ Select **View all variants** on the **Product details** page of a product master
 > [!NOTE]
 > In the preceding illustration, the display order of the dimensions is alphabetic, because the display order of dimensions wasn't configured for the selected product.
 
-In the **Dimension based matrix** view, the tiles for the product variants include an on-hand value in the lower-right corner. The following table explains the meaning of the various values.
+In the **Dimension based matrix** view, the cells for the product variants include an on-hand value in the lower-right corner. The following table explains the meaning of the various values.
 
 | On-hand value                            | Description |
 |------------------------------------------|-------------|
@@ -98,7 +98,7 @@ You can also change the pivot for dimensions by selecting the new dimension to u
 > [!NOTE]
 > In the preceding illustrations, the display order of the dimensions for the selected product is custom (non-alphabetic). It's based on the dimension display order that is set in the back office.
 
-Furthermore, from an inventory lookup that is based on a product dimension–based matrix, additional actions can be performed to help boost a store associate's productivity. Here are some examples:
+Additionally, in the **Dimension based matrix** view, more actions can be performed to help boost a store associate's productivity. Here are some examples:
  
 - Change the store location to look up the inventory availability of all product variants at other locations. These locations include other stores in the store locator group and distribution centers of the **Standard/Default** type.
 - Sell an individual product variant to a customer by using cash and carry, in-store pickup, or shipment to an address.
