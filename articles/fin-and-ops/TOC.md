@@ -748,6 +748,7 @@
 #### [File formats for methods of payment](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 #### [Fiscal service (ESR) integration](../financials/localizations/emea-fiscal-service-integration.md)
 #### [Fixed assets disposal for Estonia and Lithuania](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [Foreign currency revaluation](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [Generate a transfer document for an internal inventory transfer](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [Generate an EU Intrastat declaration](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [Generate an EU sales list report](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
