@@ -1,5 +1,5 @@
 ---
-title: Use Task guides and BPM to create an acceptance test suite
+title: Create an acceptance test suite using Task guides and BPM
 description: This topic provides information about using Task guides and BOM to create acceptance test suites.
 author: kfend
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Use Task guides and BPM to create an acceptance test suite
+# Create an acceptance test suite using Task guides and BPM
 
 You can use Task guides and Business process modeler (BPM) to create a user acceptance test plan. You can organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and results. This topic walks through the process of creating an acceptance test suite to be used for manual or automatic testing.
 
