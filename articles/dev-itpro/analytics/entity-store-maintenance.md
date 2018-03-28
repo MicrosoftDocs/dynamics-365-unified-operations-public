@@ -3,7 +3,7 @@
 
 title: Entity store maintenance
 description: When maintenance is performed on the entity store, you'll need to complete the procedures listed in this topic.
-author: Sarvani Sathish
+author: sarvanisathish
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
