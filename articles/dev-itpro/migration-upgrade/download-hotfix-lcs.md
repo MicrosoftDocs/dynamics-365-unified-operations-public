@@ -75,17 +75,21 @@ To view available updates:
 
 2. On the **Binary Updates** page, select **Save Package**.
 
-   ![Save Binary Package](./media/BinarySavePackage.png)
+   ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. On the **Review and Save Updates** page, select **Save package**.
 
-![Review and Save updates](./media/ReviewBinaryPackage.png)
+![Review and Save updates](./media/ReviewBinaryPackage.jpg)
 
 4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.
 
    ![Save package to asset library](./media/SaveBinaryPackage.jpg)
 
 5. Click **Done** to return to environment page.
+   ![DoneSavingBinaryPackage](./media/DoneSavingBinaryPackage.jpg)
+ 
+6. You'll see the saved binary package in the asset library. 
+   ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
 ## Download X++ updates
 
