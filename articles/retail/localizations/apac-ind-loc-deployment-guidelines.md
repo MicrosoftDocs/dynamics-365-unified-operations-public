@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: 
 manager: ralin
-ms.date: 03/27/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -42,7 +42,7 @@ This sample consists of extensions for the Commerce runtime (CRT). To run this s
 
 ## Prerequisites
 
-- Make sure Visual C++ Redistributable Packages are present on machine you are running Goods and Services Tax (GST) calculations. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. The following download link points you to the components that must be installed, if there are no packages. [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
+Make sure that the Visual C++ Redistributable Packages are present on the machine you are running Goods and Services Tax (GST) calculations on. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. You can get the packages from the following location: [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/en-us/download/details.aspx?id=30679).
 
 ## Development environment
 
