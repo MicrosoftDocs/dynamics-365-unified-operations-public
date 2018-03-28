@@ -3,7 +3,7 @@
 
 title: Synchronize project tasks from Project Service Automation 
 description: This topic describes the template and underlying task that is used to synchronize project tasks directly from Microsoft 
-Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 04/02/2018
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.3.0
 # Synchronize project tasks from Project Service Automation directly to project activities in Finance and Operations
 
 This topic describes the template and underlying task that is used to synchronize project tasks directly from Microsoft 
-Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
 > Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
-in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.
+in Dynamics 365 for Finance and Operations version 8.0.
 
 ## Data flow for Project Service Automation to Finance and Operations
 
@@ -52,7 +52,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 ## Template and task
 
-To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, 
+To access the template, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, 
 select **New project** to select public templates.
 
 The following template and underlying task is used to synchronize project tasks from Project Service Automation to Finance and 
@@ -61,21 +61,21 @@ Operations:
 -**Name of the template in Data integration:** Project tasks (PSA to Fin and Ops)
 -**Name of the task in the project:** Project tasks
 
-Before synchronization of project tasks can occur, you mus synchronize project contracts and projects.
+Before synchronization of project tasks can occur, you must synchronize project contracts and projects.
 
 ## Entity set
 
 |Project Service Automation               | Finance and Operations                |
 |-----------------------------------------|---------------------------------------|
-| Project Tasks                           | Integration entity for project task   |
+| Project Tasks                           | Integration entity for project task.   |
 
 ## Entity flow
 
 Project tasks are managed in Project Service Automation, and they are synchronized to Finance and Operations as project activities.
 
-## Preconditions and mapping setup
+## Prerequisites and mapping setup
 
-- Before synchronization of project tasks can occur, you must synchronize project contracts and projects.
+Before synchronization of project tasks can occur, you must synchronize project contracts and projects.
 
 ## Power Query
 
@@ -90,10 +90,7 @@ by setting the filter on the **IsLineTask** to **False**. If you create your own
 
 ## Template mapping in Data integration
 
-The following illustration shows an example of the template task mappings in Data integration.
-
-> [!NOTE] 
-> The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+The following illustration shows an example of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
 [![Template mapping](./media/ProjectTasksMapping.png)](./media/ProjectTasksMapping.png)
 
