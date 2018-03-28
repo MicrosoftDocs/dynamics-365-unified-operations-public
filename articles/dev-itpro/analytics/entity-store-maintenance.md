@@ -33,12 +33,12 @@ ms.dyn365.ops.version: Platform update 15
 
 When maintenance is performed on the entity store, it impacts the following components:
 
-- Application Analytical Workspaces, if you are on Dynamics 365 for Finance and Operations 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
+- Application analytical workspaces, if you are on Dynamics 365 for Finance and Operations 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
 - Entity store-based reports that have been deployed to PowerBI.com.
 
 To resolve issues with these components, complete the procedures in this topic.
 
-## If you are using Application Analytical Workspaces
+## If you are using application analytical workspaces
 You should be able to access your analytical reports until the migration starts. After the migration completes, your embedded analytical reports will not render any data. The following screenshot shows an example of this. 
 
 ![Blank PowerBI content](media/blank-powerbi.png)
@@ -50,7 +50,7 @@ To resolve this issue:
 3.	Select all entities that need to be refreshed. 
 4.	Click **Refresh**, and then click **OK**. 
 
-After the refresh completes, the Application Analytical Workspaces and Reports will render data.
+After the refresh completes, the application analytical workspaces and reports will render data.
 
 ## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
 Redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations (**System Administration** > **Setup** > **Deploy Power BI files**).
