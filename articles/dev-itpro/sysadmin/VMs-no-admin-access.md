@@ -44,7 +44,7 @@ For more information about how to install a deployable package, see [Install a d
 Yes, you can access the Microsoft Dynamics 365 for Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps guarantee that you can remotely access the Application Object Server (AOS) instance and the Finance and Operations website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
 
 ## What about the other services?
-You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, MR, and IIS. (For IIS, you must use the World Wide Web Windows service, not iisreset.exe.)
+You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, Financial reporting (formerly Management Reporter), and IIS. (For IIS, you must restart the World Wide Web Publishing Service service because you can't use iisreset.exe.)
 
 ## Can I clean up the service volume drive?
 Yes, you have full access to the service volume drive. Therefore, you can clean up the monitoring data, and so on.
@@ -59,7 +59,7 @@ Starting with Platform update 12, you're no longer required to run Visual Studio
 You must use IIS Express. See the next question for more information.
 
 ## What are the instructions for using IIS Express?
-When IIS Express is started, an icon appears in the notification area (near the clock). This icon shows all the running sites. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
+When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
 ## How can I apply a partner Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
 This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain.
