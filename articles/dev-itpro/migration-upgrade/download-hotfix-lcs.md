@@ -99,18 +99,18 @@ To view available updates:
   
 2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then click **Add** to add selected KBs to the **Download package**.
 
-    ![Add X++ updates](./media/Add%20X%2B%2B%20Updates.png)
+    ![Add X++ updates](./media/AddX++Updates.jpg)
 
     > [!NOTE]
     > For X++ updates, you can download all available updates at this point. Select **Select all**, and then click **Add** to add all KBs to  the **Download package**.
 
 3. Select **Download package**.
 
-    ![Download package](./media/X%2B%2B%20Download%20package.png)
+    ![Download package](./media/DownloadX++UpdatePackage.jpg)
 
 4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
 
-    ![Review and download hotfixes](media/Review%20and%20download%20X%2B%2B%20updates.png)
+    ![Review and download hotfixes](media/ReviewAndDownloadX++Package.jpg)
 
 ## Also see
 - [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
