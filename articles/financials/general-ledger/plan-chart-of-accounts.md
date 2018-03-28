@@ -48,7 +48,7 @@ Here are some of the factors that you must consider when you plan the structure 
 - The reporting requirements of your legal entity
 - The degree of specification that is required, both for both external organizations and for your organization
 
-You create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Your main accounts shouldn't use any special characters that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the flyout when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
+You create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Your main accounts shouldn't use any special characters that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the dialog box when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
 
 > [!NOTE]
 > In Microsoft Dynamics for Finance and Operations version 8.0 (April 2018), you can modify the chart of accounts delimiter from the **General ledger parameters** page.
