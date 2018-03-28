@@ -5,7 +5,7 @@ title: Budget planning overview
 description: This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -42,7 +42,7 @@ Overview of budget planning
 
 You perform budget planning when you're preparing the budgets that an organization will implement. An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. 
 
-When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, it will be easier for you to implement budget planning in your organization.
+When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Finance and Operations, it will be easier for you to implement budget planning in your organization.
 
 ### Key terms
 

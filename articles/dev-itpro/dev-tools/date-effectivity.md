@@ -5,7 +5,7 @@ title: Date effectivity
 description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
@@ -44,7 +44,7 @@ There are different design patterns for date-effective features that involve dat
 
 The next sections describe the small list of properties and methods that control the date-effective behavior of entities and their date-effective data sources.
 
-## Dateeffective entities
+## Date-effective entities
 The following table describes the properties that control the date-effective behavior of a data entity.
 
 | Property name of the entity | Node of the property                                    | Value       | Description                                                                                                                                                                                                                                                                                                                                                  |
@@ -137,7 +137,7 @@ This section describes your options for configuring the behavior of date-effecti
 
 **Date-effective entity:** By contrast, when data is inserted or updated in a date-effective data entity, the **validTimeStateUpdateMode** method isn't used at the entity level. For writes, the data entity leaves the date-effective processing to the table level. You can use the **Valid Time State Update** property on the entity data source to specify the **validTimeStateUpdateMode** method to use for each data source of the data entity.
 
-## Creating a dateeffective entity
+## Creating a date-effective entity
 This section shows how to create a date-effective entity.
 
 #### Create a new project

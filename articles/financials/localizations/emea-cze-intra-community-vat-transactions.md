@@ -17,7 +17,7 @@ ms.search.form: TaxGroup, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1696023
 ms.search.region: Czech Republic
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Sales tax reporting for the Czech Republic
+
+[!include[banner](../includes/banner.md)]
 
 This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
 

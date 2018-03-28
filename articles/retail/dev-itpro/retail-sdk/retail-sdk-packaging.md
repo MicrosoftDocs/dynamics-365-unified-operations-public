@@ -5,7 +5,7 @@ title: Retail SDK packaging
 description: This topic explains how to create a Retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations manually.
+This topic explains how to manually create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 
-The Retail deployable package is a bundle package which includes all the below retail componetst:
+The Retail deployable package is a bundle package, which includes all the of the following retail components:
 
 -   Commerce runtime (CRT)
 -   Retail Server
@@ -47,7 +47,7 @@ The Retail deployable package is a bundle package which includes all the below r
 
 For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
 
-## Retail Deployable Package
+## Retail deployable package
 Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
 
 ### Steps to create a Retail deployable package
@@ -55,19 +55,19 @@ Retail deployable package is an asset that can be consumed by the LCS deployme
 There are two ways to generate the Retail deployable package. One is using the Retail build automation or manually using the build tools in Retail SDK. In this topic we will focus on the manual way.
 1. Customize or add functionality to the Retail stack.
 2. Use the build tools to give an identity to the customized installation package, code-sign it, and specify the customized CRT, Retail Server, customized Hardware station assemblies, and customized database scripts.
-3. After all the settings have been specified on Customization.settings file under Retail SDK\BuildTools folder, run **msbuild /t:rebuild** on the root of the Retail SDK folde using the VS dev command prompt tool to generate the retail deployable packages. Before building the package place all the customized assemblies to Retail SDK\Refernces folder and also place the modified config files like commerceruntime.config, CommerceRuntime.MPOSOffline.config, dllhost.exe.config to the Retail SDk\Assets folder.
+3. After all the settings have been specified on Customization.settings file under Retail SDK\BuildTools folder, run **msbuild /t:rebuild** on the root of the Retail SDK folder using the VS dev command prompt tool to generate the retail deployable packages. Before building the package, place all the customized assemblies to Retail SDK\References folder and also place the modified config files like commerceruntime.config, CommerceRuntime.MPOSOffline.config, dllhost.exe.config to the Retail SDK\Assets folder.
 
 ## Retail SDK build tools – Customization settings
 BuildTools\Customization.setting files is where most of the configuration values for the Retail SDK are set for build and packaging. These values control how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, The Retail SDK build system uses it to give an identity to the assets, and to package the customization assets for all the Retail components.
 
-Below are the list fo configurations available in Customization.Settings file:
+The following list of configurations is available in Customization.Settings file:
 -   **AssemblyNamePrefix** – Specify the prefix name for the assembly. When you build the Retail SDK, all the assemblies are prefixed with this name.
 -   **CustomAssemblyVersion** – Specify the custom assembly version for all assemblies that are built by using the Retail SDK.
 -   **CustomVersion** – Specify the custom file version for all assemblies that are built by using the Retail SDK.
 -   **CustomName** – Specify the custom name for the assembly.
 -   **CustomDescription** – Specify the description for the assembly.
--   **CustomDescription** – Specify the publisher for the assembly.
--   **CustomDescription** – Specify the copyright for the assembly.
+-   **CustomPublisher** – Specify the publisher for the assembly.
+-   **CustomPublisherDisplayName** – Specify the copyright for the assembly.
 -   **SignAssembly** – Specify **True** if you want to sign the assembly during the build.
 -   **DelaySign** – Specify **True** if you want to delay signing of the assets during the build.
 -   **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.
@@ -80,10 +80,10 @@ Below are the list fo configurations available in Customization.Settings file:
     -   **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify all the customized database scripts.
 
 
-#### Retail Deployable package
+#### Retail reployable package
 
 ### CRT extension assemblies
-By default, there is no separate package for invidual retail componetst, because CRT isn't deployed individually, instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for Operations HQ. In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:
+By default, there is no separate package for individual retail components, because CRT isn't deployed individually, instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for Operations HQ. In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:
 
 1.  **CRT extension assemblies** – These will be the new assemblies where you've written CRT extensions. Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings. 
 
@@ -94,7 +94,7 @@ By default, there is no separate package for invidual retail componetst, because
     [![crt-config](./media/crt-config.png)](./media/crt-config.png)
 
 #### Retail Server extension assemblies
-1.  **Retail Server extension assemblies **– These will be the new assemblies where you've written Retail Server customizations. Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings. 
+1.  **Retail Server extension assemblies** – These will be the new assemblies where you've written Retail Server customizations. Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings. 
 
     [![retail server customization setting](./media/retail-server-customization-setting.png)](./media/retail-server-customization-setting.png)
     
@@ -117,11 +117,8 @@ The Retail SDK fully supports msbuild. To build the Retail SDK and , open a **Vi
 
 ### Packages
 
-After the build is completed, retail deployable packages(RetailDeployablePackage.zip) is generated in the Retail SDK\Packages\RetailDeployablePackage folder. Note: There will not be any seperate packages for retail, all will be combined and created as one bundle package called RetailDeployablePackage
+After the build is completed, retail deployable packages(RetailDeployablePackage.zip) is generated in the Retail SDK\Packages\RetailDeployablePackage folder. Note: There will not be any separate packages for retail, all will be combined and created as one bundle package called RetailDeployablePackage
       
- ## Deploy the Retail Deployable packages:
+ ## Deploy the retail deployable packages
  
-To deploy the packages either manually or using the LCS automated flow, please follow the below link:
-[Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md)
-
-[Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md)
+To deploy the packages either manually or by using the LCS automated flow, refer to the following topics, [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).

@@ -5,7 +5,7 @@ title: Monitoring and diagnostics (Lifecycle Services, LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 author: manalidongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
@@ -47,7 +47,7 @@ The telemetry data that is the basis of the Monitoring and diagnostics portal in
 In business operations software, you should always know whether your environment is up and running, so that it can perform business operations. You should also be able to easily view the health of the environment through LCS. Microsoft supports two types of monitoring capabilities:
 
 -   **Availability monitoring** – This type of monitoring performs a check against the environment to make sure that it's available at all times. If the check fails, the Microsoft Service Engineering team is immediately notified.
--   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These basic health checks include CPU level, memory consumption of the virtual machines (VMs), and the total number of deadlocks in a five-minute period. Microsoft Telemetry Infrastructure collects lots of health metrics from the environments. If a metric cross a threshold value, the Microsoft Service Engineering term is alerted so that it can investigate the issue.
+-   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These basic health checks include CPU level, memory consumption of the virtual machines (VMs), and the total number of deadlocks in a five-minute period. Microsoft Telemetry Infrastructure collects lots of health metrics from the environments. If a metric crosses a threshold value, the Microsoft Service Engineering term is alerted so that it can investigate the issue.
 
 ### Diagnostics
 
@@ -101,6 +101,12 @@ Several tools and resources are available in the Monitoring and diagnostics port
 <td>Demo/build</td>
 <td><ul>
 <li>Activity monitoring</li>
+<li>System diagnostics</li>
+</ul></td>
+</tr>
+ <tr class="even">
+<td>Environments deployed in customer/partner subscriptions</td>
+<td><ul>
 <li>System diagnostics</li>
 </ul></td>
 </tr>

@@ -18,7 +18,7 @@ ms.search.form: Intrastat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -110,6 +110,10 @@ The following table lists the prerequisites for Intrastat reporting.
 <tr class="even">
 <td>Electronic reporting</td>
 <td>Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel).</td>
+</tr>
+<tr class="even">
+<td>Warehousing</td>
+<td>Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order.</td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,7 @@ title: Set up prerequisites for management
 description: Use this procedure to enable nonconformance management processes.
 author: perlynne
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod:  
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -41,7 +41,7 @@ Use this procedure to enable nonconformance management processes. A nonconforman
 4. In the Hourly rate field, enter a number.
     * Use the Hourly rate field to enter an hourly labor rate in the local currency. The hourly rate is used for calculating costs for operations that are related to a nonconformance. The hourly rate and calculated costs provide reference information for a nonconformance, and they do not interact with other functionality.  
 5. Click Report setup.
-    * This page allows you define the quality report note types that will be used on different kinds of quality management reports.  
+    * This page allows you to define the quality report note types that will be used on different kinds of quality management reports.  
 6. Close the page.
 7. Close the page.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Allocation rules for fixed assets
-description: In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
-author: RichardLuan
+title: Fixed asset allocation rules for Japan
+description: This article answers some frequently asked questions about fixed asset allocation rules for Japan.
+author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,11 +14,10 @@ ms.technology:
 # optional metadata
 
 ms.search.form: AssetAllocationRuleSetup_CN
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.search.region: Japan
@@ -29,10 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Allocation rules for fixed assets
+# Fixed asset allocation rules for Japan
 
 [!include[banner](../includes/banner.md)]
-
 
 In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
 
@@ -67,6 +65,3 @@ If the total rounded-down depreciation cost that must be allocated across each d
 
 ## Additional resources
 - [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
-
-
-

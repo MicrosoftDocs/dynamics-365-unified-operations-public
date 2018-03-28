@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23941
 ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 
-Code editor
------------
+## Code editor
 
 You use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you will see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window. 
 
@@ -52,7 +51,7 @@ You can open the element designer that corresponds to the current X++ source cod
 
 ![opendesigner](./media/opendesigner.jpg)
 
-# See also
+## See also
 
 [Developer home page](developer-home-page.md)
 

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
@@ -102,7 +102,7 @@ Some Dimension Entry controls might not have the controller property set. The co
 Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();</code></pre>
 
-### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
+### Microsoft Dynamics 365 for Finance and Operations 
 The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource; an optimization can be manually made to improve performance and reduce code uptake:
 <p>1) Remove the parmCompany() and reactivate() calls during the datasource active process.</p>
 <p>2) In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:</p>

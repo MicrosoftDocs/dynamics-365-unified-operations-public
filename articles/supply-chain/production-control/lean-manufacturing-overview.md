@@ -18,7 +18,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobScheduling
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.
 
 Lean manufacturing offers tools that you can use to model lean operations. These tools support and promote the following concepts and business activities:
 -   Create a lean manufacturing foundation by modeling manufacturing and logistics processes as production flows.

@@ -18,7 +18,7 @@ ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25871
 ms.search.region: Global
@@ -39,7 +39,7 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 
 After you've created the financial dimensions, use the **Financial dimension values** page to assign additional properties to each financial dimension. 
 
-You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. However, financial dimensions aren’t designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
+You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren’t designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
 
 Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine whether this setup will work for your organization:
 

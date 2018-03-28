@@ -2,10 +2,10 @@
 # required metadata
 
 title: Demo files for the Data import/export framework
-description: 
+description: This topic provides a list of the demo files and their corresponding entities for the Data import/export framework (DIXF).
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, UnifiedOperations
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 29921
 ms.assetid: 70033f55-eddd-4e5a-8f91-5e8670d104c5

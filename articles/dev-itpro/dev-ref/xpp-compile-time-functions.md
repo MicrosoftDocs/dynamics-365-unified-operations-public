@@ -5,7 +5,7 @@ title: X++ compile-time functions
 description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29581
 ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
@@ -2132,7 +2132,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     }
 
 ## webpageDefStr
-Validates that the specified Web page defintion exists in the Application Explorer; if it does not, a compiler error occurs.
+Validates that the specified Web page definition exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 

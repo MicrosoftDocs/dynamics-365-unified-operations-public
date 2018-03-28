@@ -3,7 +3,7 @@ title: Business process modeler
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 09/17/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 2012, Operations, UnifiedOperations
+ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13301
 ms.assetid: 
@@ -32,13 +32,14 @@ ms.dyn365.ops.version: 2012
 
 [!include[banner](../includes/banner.md)]
 
-Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in Finance and Operations. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined in Finance and Operations.
+Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes in Microsoft Dynamics 365 for Finance and Operations, with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in Microsoft Dynamics 365 for Finance and Operations. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined in Finance and Operations.
 
 BPM is compatible with the following programs:
 
-- **Microsoft Visual Studio Team Foundation Server (TFS)** – You can generate a consolidated list of gaps and manually import them into TFS as work items that include a reference to the process flow.
 - **Microsoft Word** – You can generate documentation for business processes.
 - **Microsoft Visio** – You can export business process maps to Visio files.
+
+**Note:** The information in this topic is specific only to Dynamics 365 for Finance and Operations. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](ax-2012/business-process-modeler-lcs.md). 
 
 ## Prerequisites
 
@@ -66,9 +67,7 @@ The following topics provide more information about how to work with BPM librari
 - [Synchronize a BPM library with Visual Studio Team Services](synchronize-bpm-vsts.md)
 - [Complete tasks in BPM](complete-tasks-bpm.md)
 - [Use activity diagrams with BPM](using-activity-diagrams.md)
+- [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
+- [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
 
-## See also
 
-[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
-
-[Upload custom business processes to BPM](upload-business-processes-bpm-task-recorder.md)

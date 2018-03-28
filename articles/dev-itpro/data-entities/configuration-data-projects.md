@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data projects
-description: This topic provides an overview of configuration data projects, configuration data templates, and the process for using them to move company configuration data between instances of Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides an overview of configuration data projects, configuration data templates, and the process for using them to move company configuration data between instances of Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: margoc
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Configuration data projects
 
-## Overview
-Configuration data projects are used to manage the movement of company configuration data between instances of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. They are intended to support the following scenarios:
+[!include[banner](../includes/banner.md)]
+
+Configuration data projects are used to manage the movement of company configuration data between instances of Microsoft Dynamics 365 for Finance and Operations. They are intended to support the following scenarios:
 
 - **Export of configurations** – Create configurations of entities, and use the data management framework to export the configurations to a package.
 - **Import of configurations** – Upload a configuration package, and use the data management framework to import the package.

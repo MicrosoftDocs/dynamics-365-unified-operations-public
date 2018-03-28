@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
@@ -87,7 +87,7 @@ The entity also has the following fields.
 
 #### Steps
 
-1.  In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.
+1.  In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations project.
 2.  In Solution Explorer, select the project, and then right-click **Properties**.
 3.  Specify the following project properties, and then click **OK**.
 

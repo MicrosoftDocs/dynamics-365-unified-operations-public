@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Brazil 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Process electronic payment remittances for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 Use this functionality to create the file that must be sent to the bank with the instructions for electronic payment of vendor invoices.
 
 1.	On the **Payment journal** page, click **New**.

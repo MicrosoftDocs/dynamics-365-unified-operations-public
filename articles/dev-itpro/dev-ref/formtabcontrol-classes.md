@@ -5,7 +5,7 @@ title: F Classes - FormTabControl to FormWindowControl
 description: API reference for classes from FormTabControl to FormWindowControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63443
 ms.assetid: 7a521bd7-da3d-469a-8397-d8fb5e6d5ed1
@@ -554,7 +554,7 @@ The color scheme is defined according to the following table.
 | Value | Style                        |
 |-------|------------------------------|
 | 0     | Default                      |
-| 1     | The MicrosoftWindows palette |
+| 1     | The Microsoft Windows palette |
 | 2     | The true-color scheme        |
 
 ### Method columns
@@ -2906,7 +2906,7 @@ The color scheme is defined according to the following table.
 | Value | Style                        |
 |-------|------------------------------|
 | 0     | Default                      |
-| 1     | The MicrosoftWindows palette |
+| 1     | The Microsoft Windows palette |
 | 2     | The true-color scheme        |
 
 ### Method column
@@ -5166,7 +5166,7 @@ The color scheme is defined according to the following table.
 | Value | Style                        |
 |-------|------------------------------|
 | 0     | Default                      |
-| 1     | The MicrosoftWindows palette |
+| 1     | The Microsoft Windows palette |
 | 2     | The true-color scheme        |
 
 ### Method columns
@@ -7036,7 +7036,7 @@ e
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user begins dragging a form control.                                                                                                                 |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font that was used to output text in the control.                                                                                            |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -7337,7 +7337,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -7494,7 +7494,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -9948,7 +9948,7 @@ charIndexTo
 | public boolean allowSysSetup()                                                                              | Retrieves a value that indicates whether the control is shown in the SysSetup form.                                                                                     |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form tree control.                                                                                                             |
 | public boolean beginLabelEdit(int Idx, str text, AnyType data)                                              |                                                                                                                                                                         |
 | public int bold(\[int value\])                                                                              | Gets or sets the font weight that is used to display text in the control.                                                                                               |
@@ -10263,7 +10263,7 @@ The following example shows how to return and set the background color for a con
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -10481,7 +10481,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -11117,7 +11117,7 @@ Returns the number of visible items in the tree control.
 
 #### Return Value
 
-The number of visibile items in the tree control.
+The number of visible items in the tree control.
 
 #### Examples
 
@@ -13687,7 +13687,7 @@ The color scheme is defined according to the following table.
 | Value | Style                        |
 |-------|------------------------------|
 | 0     | Default                      |
-| 1     | The MicrosoftWindows palette |
+| 1     | The Microsoft Windows palette |
 | 2     | The true-color scheme        |
 
 ### Method command

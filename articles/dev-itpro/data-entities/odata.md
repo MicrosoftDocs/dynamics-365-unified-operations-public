@@ -2,10 +2,12 @@
 # required metadata
 
 title: OData
-description: This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
+description: This topic provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+
+ms.date: 11/10/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +19,10 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+
+ms.reviewer: margoc
+ms.search.scope: Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -34,39 +38,152 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
 This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 
-You can expose updatable views by using Open Data Protocol (OData) V4.
-
 ## What is OData?
-OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a Representational State Transfer (REST)–based protocol for Create, Read, Update, and Delete (CRUD)–style operations. OData applies web technologies such as HTTP and JavaScript Object Notation (JSON) to provide access to information from various programs. OData provides the following benefits:
+OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol that is based on Representational State Transfer (REST) for create, read, update, and delete (CRUD) operations. OData applies web technologies such as HTTP and JavaScript Object Notation (JSON) to provide access to information from various programs. OData provides the following benefits:
 
--   It lets developers interact with data by using RESTful web services.
--   It provides a simple and uniform way to share data in a discoverable fashion.
--   It enables broad integration across products.
--   It enables integration by using the HTTP protocol stack.
+- It lets developers interact with data by using RESTful web services.
+- It provides a simple and uniform way to share data in a discoverable manner.
+- It enables broad integration across products.
+- It enables integration by using the HTTP protocol stack.
 
 For more information about OData, see the following webpages.
 
-| To learn about this topic                                                        | See this webpage                                        |
-|----------------------------------------------------------------------------------|---------------------------------------------------------|
-| Open Data Protocol Standards                                                     | <http://www.odata.org/documentation/>  |
-| Open Data Protocol: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
-| Open Data Protocol by example                                                    | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
+| Topic                                                               | Webpage                                                 |
+|---------------------------------------------------------------------|---------------------------------------------------------|
+| OData standards                                                     | <http://www.odata.org/documentation/>                   |
+| OData: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
+| OData through examples                                              | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
 
-The public OData service endpoint that enables access to data in a consistent way across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: `[Your Organization Root URL]/data`.
+The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **[Your organization's root URL]/data**
 
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
 
-| Resource            | URL                                                                   | Description                                                    |
-|---------------------|-----------------------------------------------------------------------|----------------------------------------------------------------|
-| Service endpoint    | \[Your Organization Root URL\]/data/                                  | The root service endpoint for OData entities                   |
-| Entity collection   | \[Your Organization Root URL\]/data/Customers                         | The collection of all customers                                |
-| Entity              | \[Your Organization Root URL\]/data/Customers(“\[key\]”)              | A single entity from the entity collection                     |
-| Navigation property | \[Your Organization Root URL\]/data/Customers(“\[key\]”)/Reservations | The navigation from a customer to that customer's reservations |
-| Property            | \[Your Organization Root URL\]/data/Customers(“\[key\]”)/FirstName    | The customer’s first name                                      |
+
+| Resource            | URL                                                                     | Description                                                    |
+|---------------------|-------------------------------------------------------------------------|----------------------------------------------------------------|
+| Service endpoint    | \[Your organization's root URL\]/data/                                  | The root service endpoint for OData entities                   |
+| Entity collection   | \[Your organization's root URL\]/data/Customers                         | The collection of all customers                                |
+| Entity              | \[Your organization's root URL\]/data/Customers("\[key\]")              | A single entity from the entity collection                     |
+| Navigation property | \[Your organization's root URL\]/data/Customers("\[key\]")/Reservations | The navigation from a customer to that customer's reservations |
+| Property            | \[Your organization's root URL\]/data/Customers("\[key\]")/FirstName    | The customer's first name                                      |
+
+## OData services
+We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. 
+
+For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).
+
+Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
+
+### Supported features from the OData specification
+
+The following are the high-level features that are enabled for the OData service, per the [OData specification](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
+
+- CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE. 
+- Available query options are
+ -   $filter
+ -   $count
+ -   $orderby
+ -   $skip
+ -   $top
+ -   $expand
+ -   $select
+- The OData service supports serving driven paging with a maximum page size of 1,000.
+
+For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
+
+#### Filter details
+
+There are built-in operators for $filter
+-   Equals
+-   Not equals
+-   Greater than
+-   Greater than or equal
+-   Less than
+-   Less than or equal
+-   And
+-   Or
+-   Not
+-   Addition
+-   Subtraction
+-   Multiplication
+-   Division
+
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+
+For more information, see [OData operators](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
+
+#### Batch requests
+Batch requests are supported in the OData service. For more information, see [OData batch requests](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398359).
+
+#### Metadata annotations
+
+/data/$metadata provides annotations. EnumType is support in $metadata.
+
+![EnumType metadata](./media/metadata.png)
+
+
+### Cross-company behavior
+
+By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. 
+
+**Example:** `http://[baseURI\]/data/FleetCustomers?cross-company=true`
+
+To filter by a particular company that isn't your default company, use the following syntax: 
+`http://[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true`
+
+### Validate methods
+
+The following table summarizes the validate methods that the OData stack calls implicitly on the corresponding data entity.
+
+<table>
+<thead>
+<tr class="header">
+<th>OData</th>
+<th>Methods (listed in the order in which they are called)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Create</td>
+<td><ol>
+<li><strong>Clear()</strong></li>
+<li><strong>Initvalue()</strong></li>
+<li><strong>PropertyInfo.SetValue()</strong> for all specified fields in the request</li>
+<li><strong>Validatefield()</strong></li>
+<li><strong>Defaultrow</strong></li>
+<li><strong>Validatewrite()</strong></li>
+<li><strong>Write()</strong></li>
+</ol></td>
+</tr>
+<tr class="even">
+<td>Update</td>
+<td><ol>
+<li><strong>Forupdate()</strong></li>
+<li><strong>Reread()</strong></li>
+<li><strong>Clear()</strong></li>
+<li><strong>Initvalue()</strong></li>
+<li><strong>PropertyInfo.SetValue()</strong> for all specified fields in the request</li>
+<li><strong>Validatefield()</strong></li>
+<li><strong>Defaultrow()</strong></li>
+<li><strong>Validatewrite()</strong></li>
+<li><strong>Write()</strong></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>Delete</td>
+<td><ol>
+<li><strong>Forupdate()</strong></li>
+<li><strong>Reread()</strong></li>
+<li><strong>checkRestrictedDeleteActions()</strong></li>
+<li><strong>Validatedelete()</strong></li>
+<li><strong>Delete()</strong></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
 
 ## Exposing OData entities
 OData entities are based on the concept of an updatable view. When the **IsPublic** property for an updatable view is set to **TRUE**, that view is exposed as a top-level OData entity.
@@ -74,8 +191,8 @@ OData entities are based on the concept of an updatable view. When the **IsPubli
 ## Setting navigation properties between OData entities
 Links between OData entities are described by a navigation property. Navigation properties describe the navigation from one end of an association to the other end.
 
-## Adding actions on OData entities
-Actions provide a way to inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
+#### Adding actions on OData entities
+Actions let you inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
 
     [SysODataActionAttribute("CalcMaintenanceDuration", true)]
     public int CalculateMaintenanceDuration()
@@ -84,7 +201,11 @@ Actions provide a way to inject behaviors into the data model. To add actions, a
         return 0;
     }
 
-In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.[![1\_Odata](./media/1_odata.png)](./media/1_odata.png) The following example of an OData action takes in a parameter and returns a list.
+In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
+
+[![Exposed method in the OData $metadata](./media/1_odata.png)](./media/1_odata.png)
+
+The following example of an OData action takes in a parameter and returns a list.
 
     [SysODataActionAttribute("GetColors", true),
      SysODataCollectionAttribute("return", Types::Record, "CarColor")]
@@ -97,23 +218,23 @@ In this example, the **SysODataActionAttribute** class decorates the **Calculate
 
 In this example, the **SysODataCollectionAttribute** class enables OData to expose strongly typed collections from X++. This class takes in three parameters:
 
--   The name of the parameter that is a list (use **return** for the return value of the method)
--   The X++ type for the members of this list
--   The public name of the OData resource that is contained in the collection
+- The name of the parameter that is a list (Use **return** for the return value of the method.)
+- The X++ type of the members of this list
+- The public name of the OData resource that is contained in the collection
 
 After these actions are exposed, they can be invoked from the service root URL. 
 
 You can find actions that are defined on data entities by searching for the **SysODataActionAttribute** attribute in the source code.
 
 ## Querying or browsing an OData endpoint
-OData enables an SQL-like language for creating rich queries against the database to include only those data items that you want in the results. To create a query, append criteria to the resource path. For example, you can query the **Customers** entity collection by appending the following query options in your browser.
+OData enables an SQL-like language that lets you create rich queries against the database, so that the results include only the data items that you want. To create a query, append criteria to the resource path. For example, you can query the **Customers** entity collection by appending the following query options in your browser.
 
 | URL                                                                      | Description                                                                                   |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| \[Your Organization Root URL\]/data/Customers                            | List all the customers.                                                                       |
-| \[Your Organization Root URL\]/data/Customers?$top=3                     | List the first three records.                                                                 |
-| \[Your Organization Root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties.                |
-| \[Your Organization Root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
+| \[Your organization's root URL\]/data/Customers                            | List all the customers.                                                                       |
+| \[Your organization's root URL\]/data/Customers?$top=3                     | List the first three records.                                                                 |
+| \[Your organization's root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties.                |
+| \[Your organization's root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
 
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](http://msdn.microsoft.com/en-us/library/ff478141.aspx).
 
@@ -121,5 +242,52 @@ The OData protocol supports many similar filtering and querying options on entit
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
 
+## Tips and tricks
 
+### Run multiple requests in a single transaction
+The OData batch framework uses *changesets*. Each changeset contains a list of requests that should be treated as single atomic unit. In other words, either all the requests are run successfully or, if any request fails, none of the requests are run successfully. The following example shows how to send a batch request that has a list of requests in a single changeset. 
+
+The **SaveChangesOptions.BatchWithSingleChangeset** option in **SaveChanges()** helps guarantee that all requests are bundled into a single changeset. 
+
+    public static void CreateProductColors(Resources context)
+        {
+            var productColorsCollection = new DataServiceCollection<ProductColor>(context);
+
+            var color1 = new ProductColor();
+            productColorsCollection.Add(color);
+            color1.ColorId = "New Color1"; // set any other properties needed
+
+            var color2 = new ProductColor();
+            productColorsCollection.Add(color1);
+            color2.ColorId = "New Color2"; // set any other properties needed
+
+            context.SaveChanges(SaveChangesOptions.BatchWithSingleChangeset);
+        }
+
+### Prevent unset records from being posted when you use an OData client
+When you create a new record by using an OData client, as shown in example 1, properties that aren't set are included in the body of the request, and default values are assigned to them. To prevent this behavior and post only properties that are set explicitly, use the **SaveChangesOptions.PostOnlySetProperties** option in **SaveChanges()**, as shown in example 2.
+
+**Example 1**
+
+    public static void CreateVendor(Resources context)
+        {
+            var vendorCollection = new DataServiceCollection<Vendor>(context);
+            var vendor = new Vendor();
+            vendorCollection.Add(vendor);
+            // set properties
+            context.SaveChanges();
+        }
+
+**Example 2**
+
+    public static void CreateVendor(Resources context)
+        {
+            var vendorCollection = new DataServiceCollection<Vendor>(context);
+            var vendor = new Vendor();
+            vendorCollection.Add(vendor);
+            // set properties
+
+            // Save specifying PostOnlySetProperties flag
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
+        }
 

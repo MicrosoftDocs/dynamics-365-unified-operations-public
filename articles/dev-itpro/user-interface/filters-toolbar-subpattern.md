@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29191
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
@@ -63,7 +63,7 @@ Two subpatterns are described in this article:
 
 [![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
-## Pattern changes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
 These patterns didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model

@@ -5,7 +5,7 @@ title: Set up asset retirement obligation documents and enter ARO amount on a fi
 description: For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/22/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -65,7 +65,7 @@ This procedure was created using the demo data company JPMF.
 7. In the Book field, select the book of the fixed asset.
 8. In the Document ID field, select the ID of the asset retirement document to attach to the fixed asset.
 
-## Enter the asset retirement oblgiation amounts
+## Enter the asset retirement obligation amounts
 1. Click Create to open the drop dialog.
 2. In the Transaction date field, enter the date on which to recognize the asset retirement obligation
 3. In the Estimated retirement cost adjustment field, enter the cash flow amount

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
@@ -97,7 +97,7 @@ If your model belongs to a package with multiple models (For example, MyModel1 o
 5. In Visual Studio, build the package that the deleted models belonged to (Visual Studio > Dynamics 365 > Build models...)
 6. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
 
-# See also
+## See also
 
 [Development tools overview](development-tools-overview.md)
 

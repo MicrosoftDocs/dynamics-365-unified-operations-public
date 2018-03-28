@@ -18,7 +18,7 @@ ms.search.form: EFDocContingencyMode_BR, EFDocContingencyModeHistory_BR, EFDocCo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269114
 ms.assetid: 7cb522a4-2f84-4399-a60d-8692df6e08f3
@@ -56,7 +56,7 @@ After you generate an NF-e, you can submit the digitally signed NF-e to the Secr
 
 1.  The fiscal establishment posts a fiscal document by using a fiscal document type that is set up for fiscal document model 55 to generate an NF-e.
 2.  The NF-e export or import process detects the posted fiscal document for the fiscal document model 55 and generates an XML message in the specified format. A separate XML message is generated for each NF-e. The XML message is transmitted to SEFAZ.
-3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Finance and Operations.
 
 After the status of the NF-e is received from SEFAZ, you can perform the following tasks, depending on the status:
 
@@ -66,8 +66,9 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
 -   If the NF-e is rejected and can't be fixed, you must cancel the discarded NF-e that has discarded number. The NF-e export or import process detects the fiscal document that is posted and marked for discard, and then generates an XML message in the specified format for the discarded NF-e number. This XML message is then transmitted to SEFAZ, and the fiscal document status is set to **Discarded**.
 
 
-For more information, see the following topics:
+## Additional resources
 
+ - [NF-e certification](latam-bra-nfe-certs.md)
  - [Set up NF-e federal parameters (Brazil)](tasks/br-00053-1-set-up-nf-e-federal-parameters.md)
  - [Set up NF-e parameters for a fiscal establishment (Brazil)](tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md)
  - [Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)

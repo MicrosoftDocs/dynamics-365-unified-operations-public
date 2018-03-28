@@ -5,7 +5,7 @@ title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
@@ -53,7 +53,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
-- Verify that the Microsoft Dynamics 365 for Retail, Enterprise edition, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
 ## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured
@@ -105,10 +105,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Run the installer on a Windows computer
 
 > [!NOTE]
-> Before you run the Retail Modern POS installer, make sure that the following requirements are met:
-> - The installer requires that the Microsoft .NET Framework version 4.5.1 or above be installed on the system.
-> - The installer installs Retail Modern POS only on the following operating systems:
->     - Windows 10 Pro, Enterprise, or Enterprise Long Term Servicing Branch (LTSB) edition with Anniversary Update (both x86 and x64 architectures).
+> Before you run the Retail Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
@@ -266,7 +263,7 @@ The device should now be activated and ready to use.
     - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
-        1. In File Explorer, browse to **C:Microsoft Dynamics 36570Retail Server**.
+        1. In File Explorer, browse to **C:\Microsoft Dynamics 365\70\Retail Server**.
         2. Right-click the **SelfServicePackages** folder, and then select **Properties**.
         3. On the **Security** tab, select **Edit**.
         4. In the **Permissions for SelfServiceDeployment** dialog box, select **Add**.

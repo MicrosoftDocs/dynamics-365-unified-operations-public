@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72181
 ms.assetid: fe5d3cdd-8b3d-4967-98a2-dadada18a421
@@ -57,7 +57,7 @@ The X++ language programming guide is divided into these sections:
 + [X++ statements and loops](xpp-statements-loops.md)
 + [X++ variables and data types](xpp-variables-data-types.md)
 
-# See also
+## See also
 + [X++ Syntax](xpp-syntax.md)
 + [X++ and C# Comparison](xpp-cs-comparison.md)
 

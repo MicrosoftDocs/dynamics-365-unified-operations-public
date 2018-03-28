@@ -5,7 +5,7 @@ title: Ship sales orders without warehousing
 description: This guide demonstrates how to update a sales order when products are shipped to the customer. 
 author: omulvad
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -54,12 +54,12 @@ This guide demonstrates how to update a sales order when products are shipped to
 15. Click Change view.
 16. Click Header view.
     * If all of the lines on the order have been fully shipped, the order status changes from Open to Delivered.  
-    * In this example, the order line has been shipped partially. This is why the the order status remains Open.     
+    * In this example, the order line has been shipped partially. This is why the order status remains Open.     
     * The Document status field is set to Packing slip because at least one of the order lines have been shipped.  
 17. On the Action Pane, click General.
 18. Click Line quantity.
 19. Close the page.
 20. On the Action Pane, click Pick and pack.
 21. Click Packing slip.
-    * The Packing slip journal page contains all the packing slip documents that were generated for your order. You can review details of each document and print them, if you wish.  
+    * The Packing slip journal page contains all the packing slip documents that were generated for your order. You can review details of each document and print them, if needed.  
 

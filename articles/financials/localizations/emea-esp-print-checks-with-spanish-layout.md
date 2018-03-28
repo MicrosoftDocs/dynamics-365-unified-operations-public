@@ -18,7 +18,7 @@ ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274753
 ms.search.region: Spain
@@ -30,6 +30,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Print checks by using the Spanish layout
+
+[!include[banner](../includes/banner.md)]
 
 This topic provides information about how to print checks that follow the standards that are required in Spain.
 

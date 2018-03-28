@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance holder transactions
-description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262554
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.
 
 Transactions for these workers who are advance holders can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
 

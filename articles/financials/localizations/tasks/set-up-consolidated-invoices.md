@@ -5,7 +5,7 @@ title: Set up consolidated invoices (Japan)
 description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/16/2016
+ms.date: 10/31/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -57,6 +57,6 @@ This procedure was created using the demo data company JPMF.
 2. Use the Quick Filter to find records. For example, filter on the Terms of payment field with a value of 'COD'.
 3. Click Edit.
     * Select Cutoff day as the Payment Method  
-    * The Cutoff day is not available at R1 release. You can choose Current month as an alternative. This may result in slight difference, which needs to adjusted manually.  
+    * The Cutoff day is not available at R1 release. You can choose Current month as an alternative. This may result in slight difference, which needs to be adjusted manually.  
 4. In the Payment day field, type a value.
 

@@ -5,7 +5,7 @@ title: F Classes - FormDataObject to FormFastTabHeaderControl
 description: API reference for classes from FormDataObject to FormFastTabHeaderControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63703
 ms.assetid: 7c23d29c-9408-49ca-82e7-ddb940dc8526
@@ -370,7 +370,7 @@ Indicates that the field has been successfully validated and modified in the cur
 
 #### Remarks
 
-This method is called from the modified method on controls if the validation methods returned true. You can overriding this method to allow for recalculation of other values that are based on the modified values. The call to the super() method guarantees that the modifiedField method on the table is called. Modified means that the value of the field on the current record has changed, but the value is not written to the database before the record is saved.
+This method is called from the modified method on controls if the validation methods returned true. You can override this method to allow for recalculation of other values that are based on the modified values. The call to the super() method guarantees that the modifiedField method on the table is called. Modified means that the value of the field on the current record has changed, but the value is not written to the database before the record is saved.
 
 ### Method OnValidating
 
@@ -889,7 +889,7 @@ The cached value is updated only if the method name that was supplied was previo
 
 #### Examples
 
-The following example recalculates cached values by using the nextCashDiscDate method and the nextCashDiscAmount method, both of the VendTransOpen table.
+The following example recalculates cached values by using the nextCashDiscDate method and the nextCashDiscAmount method, both in the VendTransOpen table.
 
     public void write() 
     { 
@@ -1885,7 +1885,7 @@ This method calls the validateDelete method on the data source table. The FormDa
 
 #### Examples
 
-The following example does not call the super() method and returns true. This supresses the display of the delete confirmation message box.
+The following example does not call the super() method and returns true. This suppresses the display of the delete confirmation message box.
 
     public boolean validateDelete() 
     { 
@@ -2717,7 +2717,7 @@ e
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -3017,7 +3017,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -3038,12 +3038,12 @@ Is called when the user starts to drag a form control.
 #### Parameters
 
 x  
-An integer value that indicates the y-coordinate of the mouse pointer The coordinate is relative to the upper-left corner of the control.
+An integer value that indicates the y-coordinate of the mouse pointer. The coordinate is relative to the upper-left corner of the control.
 
 <!-- -->
 
 y  
-An integer value that indicates the y-coordinate of the mouse pointer The coordinate is relative to the upper-left corner of the control.
+An integer value that indicates the y-coordinate of the mouse pointer. The coordinate is relative to the upper-left corner of the control.
 
 #### Return Value
 
@@ -3174,7 +3174,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -3761,7 +3761,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -3845,7 +3845,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -3975,7 +3975,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -5139,7 +5139,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -5629,7 +5629,7 @@ Displays the control.
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -5914,7 +5914,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -6071,7 +6071,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -6539,7 +6539,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -6626,7 +6626,7 @@ The string to be displayed at the bottom of the screen.
 
 #### Remarks
 
-Set the HelpText property for an object by using the property sheet.The help text must not exceed 250 characters.
+Set the HelpText property for an object by using the property sheet. The help text must not exceed 250 characters.
 
 ### Method hierarchyParent
 
@@ -6746,7 +6746,7 @@ The current value of the label string.
 
 #### Remarks
 
-The label determines which text is displayed in the control or adjacent to it.The label property value cannot exceed 250 characters.
+The label determines which text is displayed in the control or adjacent to it. The label property value cannot exceed 250 characters.
 
 ### Method labelAlignment
 
@@ -7911,7 +7911,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -8808,7 +8808,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET.For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
 
 ### Method colorScheme
 
@@ -9046,7 +9046,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -9666,7 +9666,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -9886,7 +9886,7 @@ form
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                                                                    |
 | public boolean autoRefreshData(\[boolean value\])                                                           | Specifies whether the data from the data source that is associated with the control will be refreshed when the button is clicked. The default value is No.                                                            |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                                                                     |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                                                                        |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                                                                        |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                                                                |
 | public boolean big(\[boolean value\])                                                                       |                                                                                                                                                                                                                       |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                                                                   |
@@ -10137,7 +10137,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -10228,7 +10228,7 @@ An integer between zero and four, inclusive.
 
 #### Remarks
 
-The integer that is returned contains the style of the borderline of the control as follows:
+The integer that is returned contains the style of the borderline of the control as follows.
 
 | Value. | Description. |
 |--------|--------------|
@@ -10254,7 +10254,7 @@ An integer between zero and five, inclusive.
 
 #### Remarks
 
-The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed.The integer value that is returned contains the appearace of the button control as follows:
+The value of the property defines whether the text, the image, or both should be displayed on the button. This property also controls relative positions of text and image if both are displayed. The integer value that is returned contains the appearance of the button control as follows.
 
 | Value. | Description.                                                     |
 |--------|------------------------------------------------------------------|
@@ -10335,7 +10335,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -10785,7 +10785,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -10853,7 +10853,7 @@ The Help text for the control; an empty string if there is no Help text for the 
 
 #### Remarks
 
-The helpField method cannot be used to set the value of the Help text. Use the helpText mehod to set the value of the Help text.
+The helpField method cannot be used to set the value of the Help text. Use the helpText method to set the value of the Help text.
 
 ### Method helpText
 
@@ -11342,7 +11342,7 @@ value
 
 ### Method parameters
 
-Gets or sets the list of parameters that are passed to objects taht are run by the MenuFunction class.
+Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.
 
     public str parameters([str value])
 
@@ -11356,7 +11356,7 @@ The list of parameters that are passed to the object.
 
 #### Remarks
 
-The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on.cts ignore passed, unrecognized parameters.
+The parameters string format is Parameter1=Value1, Parameter2=Value2, and so on. Objects ignore passed, unrecognized parameters.
 
 ### Method parentControl
 
@@ -11881,7 +11881,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|
@@ -12256,7 +12256,7 @@ overrideObject
 | public int arrangeWhen(\[int value\])                                                                               |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                                   | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                           | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                                 | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                                 | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                                  | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                                      | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public int bottomMargin(\[int value\], \[AutoMode mode\])                                                           |                                                                                                                                                                         |
@@ -12598,7 +12598,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -12795,7 +12795,7 @@ The values for the integer that is returned indicate the character set according
 | 238    | EASTEUROPE\_CHARSET  |
 | 255    | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value. | Description.   |
 |--------|----------------|
@@ -13223,7 +13223,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the height according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
 
 | Mode.            | Height calculation.                                                                       |
 |------------------|-------------------------------------------------------------------------------------------|
@@ -14249,7 +14249,7 @@ The width of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the value parameter is omitted.Calculate the width according to the following table:
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
 
 | Mode.           | Width calculation.                                                                       |
 |-----------------|------------------------------------------------------------------------------------------|

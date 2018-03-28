@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191133
 ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
@@ -50,7 +50,7 @@ Although there are many benefits of running the Document Routing Agent as a Wind
 ## Documents that require custom margins
 When the Document Routing Agent runs as a Windows service, document reports, such as checks, that require custom margins can't be printed directly to network printers. Instead, the Document Routing Agent automatically routes those document to a target folder. New configuration properties in the application's **Settings** dialog box let you define the target location for document reports that require custom margins.
 
-When the Document Routing Agent runs as a desktop application, it continues to take advantage of Adobe Reader to spool the document to the shared printer device that is selected in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. To handle scenarios where documents that have custom margins must be printed, we recommend that you install the Document Routing Agent in multiple locations. Then install the printers that will handle those documents only on the Document Routing Agents that will run in desktop application mode. Alternatively, use a post-execution process to pick up the files in the target directory and direct them in the appropriate manner.
+When the Document Routing Agent runs as a desktop application, it continues to take advantage of Adobe Reader to spool the document to the shared printer device that is selected in Microsoft Dynamics 365 for Finance and Operations. To handle scenarios where documents that have custom margins must be printed, we recommend that you install the Document Routing Agent in multiple locations. Then install the printers that will handle those documents only on the Document Routing Agents that will run in desktop application mode. Alternatively, use a post-execution process to pick up the files in the target directory and direct them in the appropriate manner.
 
 ## Install the latest build
 1. Save a copy of the current Document Routing Agent configuration file. This file is located at C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config. In this path, &lt;UserID&gt; is the Active Directory Domain Services (AD DS) user name that the Document Routing Agent was installed under.
@@ -111,4 +111,4 @@ The Document Routing Agent is now running as a Windows service.
     
 ### Review the event logs
 1. On the host machine, start Event Viewer.
-2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-SSRSReportsShared**.
+2. Review the logs at **Application and Services Logs** > **Microsoft** > **Dynamics** > **AX-DocumentRouting**.

@@ -5,7 +5,7 @@ title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: cvocph
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -43,7 +43,7 @@ This procedure focuses on creating a new production flow version. For this proce
     * Select an operating unit of type value stream. A value stream is an operating unit that spans all activities and flows of the value stream. At this stage, operating units are limited to a legal entity and have no further functionality.  
 7. In the Production group field, click the drop-down button to open the lookup.
 8. In the list, click the link in the selected row.
-    * Select a production group for the production flow. Production groups allow the definition of material, labour, and WIP accounts for a production process. To associate the accounting context to a production flow, a production group must be selected.  
+    * Select a production group for the production flow. Production groups allow the definition of material, labor, and WIP accounts for a production process. To associate the accounting context to a production flow, a production group must be selected.  
 9. Click Save.
 
 ## Create a production flow version

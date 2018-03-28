@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
+This article explains how to enable another user account as a developer on a development VM.
 
 When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs). However, you can enable a new user account to develop on the VM. Even after you enable a new account, only one developer can develop at a time on the same VM/application.
 
@@ -44,7 +44,7 @@ To enable a new user account to develop on the VM, the user account must be an�
 
 ## Steps
 1.  Download the following script: ProvisionAxDeveloper.ps1, the script is available at <https://github.com/Microsoft/Dynamics-AX-Scripts>.
-2.  Open a Microsoft Windows PowerShell **Command Prompt** window as an administrator.
+2.  Open a Microsoft Windows **PowerShell Command Prompt** window as an administrator.
 3.  Run the ProvisionAxDeveloper.ps1 script. Specify the following parameters:
 
     -   **DatabaseServerName** – Typically, this is the machine name.

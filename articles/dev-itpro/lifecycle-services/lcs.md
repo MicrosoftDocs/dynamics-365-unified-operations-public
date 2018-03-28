@@ -5,7 +5,7 @@ title: Lifecycle Services for Finance and Operations
 description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 71724
 ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
@@ -41,7 +41,7 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 -   [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md)
 -   [Projects (Lifecycle Services, LCS)](./ax-2012/projects-lcs.md)
 -   [Methodologies (Lifecycle Services, LCS)](./ax-2012/methodologies-lcs.md)
--   [Business process modeler (Lifecycle Services, LCS)](./ax-2012/business-process-modeler-lcs.md)
+-   [Business process modeler (Lifecycle Services, LCS)](bpm-overview.md)
 -   [Cloud-hosted environments (Lifecycle Services, LCS)](./ax-2012/cloud-hosted-environments-lcs.md)
 -   [Cloud-powered support (Lifecycle Services, LCS)](cloud-powered-support-lcs.md)
 -   [Configuration manager (Lifecycle Services, LCS)](configuration-manager-lcs.md)

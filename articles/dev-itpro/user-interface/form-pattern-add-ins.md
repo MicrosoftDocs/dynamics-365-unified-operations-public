@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28891
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Form pattern add-ins
+
+[!include[banner](../includes/banner.md)]
 
 The tools for Visual Studio include a number of add-ins that support pattern usage. 
 

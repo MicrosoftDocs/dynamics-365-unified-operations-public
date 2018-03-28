@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55521
 ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
@@ -149,7 +149,7 @@ Toolbars have the same overflow feature as standard Action Panes.  See the secti
 Starting in Platform Update 6, Toolbars have a new capability that allows developers to provide a cleaner action story by designating certain buttons to always render in overflow. This makes it easier to differentiate actions that users will commonly use versus those that are infrequently or rarely used.  This behavior is controlled by a new metadata property called **AlwaysInOverflow** that exists on Button groups inside Toolbars.  
 
 ## Right-click context menus
-Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition context menu, which shows both system-defined actions and developer-defined actions. 
+Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the Microsoft Dynamics 365 for Finance and Operations context menu, which shows both system-defined actions and developer-defined actions. 
 
 + If you right-click on an image, in an editable field, or if text is selected, then the browser's context menu will appear.  This is to provide access to browser functionality like **Cut**, **Copy**, and **Paste**.  We cannot embed these actions into the Finance and Operations context menus since browsers do not allow programmatic access to the system clipboard for security reasons.  
 

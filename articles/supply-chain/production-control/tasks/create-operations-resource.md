@@ -5,7 +5,7 @@ title: Create an operations resource
 description: An operations resource performs the activities of a project or a production process. 
 author: sorenva
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-An operations resource performs the activities of a project or a production process. This procedures shows you how to define an operations resource. You can walk through this procedure in demo data company USMF, or using your own data.
+An operations resource performs the activities of a project or a production process. This procedure shows you how to define an operations resource. You can walk through this procedure in demo data company USMF, or using your own data.
 
 1. Go to Resources.
 2. Click New.

@@ -5,7 +5,7 @@ title: Run a report that uses financial dimensions as a data source for electron
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 10/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -40,7 +40,7 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 2. In the tree, expand 'Financial dimensions sample model'.
 3. In the tree, select 'Financial dimensions sample model\Ledger journal report'.
 4. Click Run.
-5. In the Dimension name field, In the Dimension name field, enter or select a value..
+5. In the Dimension name field, In the Dimension name field, enter or select a value.
     * To select all dimensions in the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
 6. Expand the Records to include section.
 7. Click Filter.
@@ -48,5 +48,5 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 9. In the Criteria field, type '00057'.
 10. Click OK.
 11. Click OK.
-    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.  
+    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations instance.  
 

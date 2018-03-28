@@ -5,7 +5,7 @@ title: Set up a min-max replenishment process
 description: This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. 
 author: perlynne
 manager: AnnBe 
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -144,7 +144,7 @@ This procedure shows you how to set up a new replenishment process which uses th
 7. Set the Batch processing option to Yes.
 8. Click Recurrence.
 9. Select the No end date option.
-10. Set the Recurrance pattern.
+10. Set the Recurrence pattern.
     * For example, select Days.  
 11. Click OK.
 12. Click OK.

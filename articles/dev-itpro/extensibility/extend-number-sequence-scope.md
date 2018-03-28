@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Extend the number sequence scope
+
+[!include[banner](../includes/banner.md)]
 
 This topic shows you how to extend the number sequence scope.
 

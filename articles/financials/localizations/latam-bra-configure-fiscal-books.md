@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  FBTaxStatement_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: 
+ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 

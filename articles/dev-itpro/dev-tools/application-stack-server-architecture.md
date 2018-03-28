@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
@@ -62,7 +62,7 @@ The left side of the following diagram shows how the application stack has been 
 
 [![Architecture drawing](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
-Microsoft Dynamics AX 2012 unionizes permissions that are granted to a user. However, an issue can occur when a data source is granted read permissions through an entry point and edit permissions through a form. Because permissions are unionized, the user eventually has edit permissions to that data source in this case. However, if the form was granted read access through a menu item, the expectation is that the data source can't be edited through that path. Therefore, the context of the call isn't honored. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the context of the call is honored, based on the permissions that are granted through the entry point. If the form was granted read access through a menu item, the framework grants the user only read access to the table. However, if the same form is opened through another menu item that provides write access, the form is granted write permissions. This behavior simplifies the development experience, because developers can specify the desired behavior for a form through a given entry point.
+Microsoft Dynamics AX 2012 unionizes permissions that are granted to a user. However, an issue can occur when a data source is granted read permissions through an entry point and edit permissions through a form. Because permissions are unionized, the user eventually has edit permissions to that data source in this case. However, if the form was granted read access through a menu item, the expectation is that the data source can't be edited through that path. Therefore, the context of the call isn't honored. In Microsoft Dynamics 365 for Finance and Operations, the context of the call is honored, based on the permissions that are granted through the entry point. If the form was granted read access through a menu item, the framework grants the user only read access to the table. However, if the same form is opened through another menu item that provides write access, the form is granted write permissions. This behavior simplifies the development experience, because developers can specify the desired behavior for a form through a given entry point.
 
 ## Cloud architecture
 The cloud architecture includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. The cloud architecture consists of three main conceptual areas:

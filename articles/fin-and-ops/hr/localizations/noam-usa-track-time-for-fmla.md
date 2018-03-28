@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
@@ -41,7 +41,7 @@ This topic explains how to track Family and Medical Leave Act (FMLA) eligibility
 The following table shows the prerequisites must be in place before you start.
 
 > [!NOTE]
-> The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+> The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations.
 
 | Category                  | Prerequisite |
 |---------------------------|--------------|

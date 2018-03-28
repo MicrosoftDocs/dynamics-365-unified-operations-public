@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up asset retirement obligation for fixed assets
-description: In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
-author: RichardLuan
+title: Set up asset retirement obligation for fixed assets for Japan
+description: This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
+author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,11 +14,10 @@ ms.technology:
 # optional metadata
 
 ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10174
 ms.search.region: Japan
@@ -29,10 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up asset retirement obligation
+# Set up asset retirement obligation for Japan
 
 [!include[banner](../includes/banner.md)]
-
 
 In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 
@@ -73,8 +71,3 @@ If you don't have access to the pages that are used to complete this task, conta
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuration keys        | Ensure that the Fixed **Assets** configuration key is available under the **Data Dictionary** &gt; **Configuration Keys** node in the Application Object Tree (AOT). |
 | Security roles and duties | To perform this task, you must be a member of the **-Maintain fixed assets-** security role.|
-
-
-
-
-

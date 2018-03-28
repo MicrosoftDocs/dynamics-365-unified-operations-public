@@ -5,7 +5,7 @@ title: Validate an application for an LCS solution
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ Currently, partners must demonstrate that these requirements have been met by do
 -   Business process modeler (BPM)/test scripts
 -   Business database backup
 -   Project name and description
--   Data packages and Prpcess data packages (PDPs)
+-   Data packages and Process data packages (PDPs)
 -   Methodology
 -   Binaries (optional)
 -   Deployable packages

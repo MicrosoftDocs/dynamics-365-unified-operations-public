@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
@@ -58,21 +58,21 @@ The following filtering options.
 | Advanced filter/sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from Dynamics AX 2012 is still available.                     |
 
 ## Filter expressions
-One important difference between filtering in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Finance and Operations filter operators and Dynamics AX 2012 query syntax.
+One important difference between filtering in Microsoft Dynamics 365 for Finance and Operations and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Finance and Operations filter operators and Dynamics AX 2012 query syntax.
 
 | Filter operator                      | Finance and Operations query syntax |
 |--------------------------------------|------------------------------------------|
-| Is “foo” /  Is equal to “foo”        | “foo”                                    |
-| Is not “foo” / Is not equal to “foo” | “!foo”                                   |
-| Is one of “foo”, “bar”, “foobar”     | “foo,bar,foobar”                         |
-| Contains “foo”                       | “\*foo\*”                                |
-| Does not contain “foo”               | “!\*foo\*”                               |
-| Begins with “foo”                    | “foo\*”                                  |
-| After “foo” / Greater than “foo”     | “&gt;foo”                                |
-| Greater than or equal “foo”          | “foo..”                                  |
-| Before “foo” / Less than “foo”       | “&lt;foo”                                |
-| Less than or equal “foo”             | “..foo”                                  |
-| Between “bar” and “foo”              | “bar..foo”                               |
+| Is “circle” /  Is equal to “circle”        | “circle”                                    |
+| Is not “circle” / Is not equal to “circle” | “!circle”                                   |
+| Is one of “circle”, “square”, “circlesquare”     | “circle,square,circlesquare”                         |
+| Contains “circle”                       | “\*circle\*”                                |
+| Does not contain “circle”               | “!\*circle\*”                               |
+| Begins with “circle”                    | “circle\*”                                  |
+| After “circle” / Greater than “circle”     | “&gt;circle”                                |
+| Greater than or equal “circle”          | “circle..”                                  |
+| Before “circle” / Less than “circle”       | “&lt;circle”                                |
+| Less than or equal “circle”             | “..circle”                                  |
+| Between “square” and “circle”              | “square..circle”                               |
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 

@@ -5,7 +5,7 @@ title: Data validation workspace
 description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration.
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  DataValidationWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: 
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -69,7 +69,7 @@ You can filter the task list in several ways. Click **Edit task** to change the
 status of a task or assign a task. Click **Attachments** to view attachments for a
 task.
 
-The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition page
+The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations page
 where the user must go to complete the work. You can set this hyperlink by using
 the **Menu item name** field when you edit or create a task from the **Configure
 data validation project** form.

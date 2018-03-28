@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Platform, UnifiedOperations, AX Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 107013
 ms.assetid: 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Develop and deploy custom models to on-premises environments
+
+[!include[banner](../includes/banner.md)]
+
 This topic describes how to develop customizations and extensions, and deploy them to an on-premises environment. On-premises environments are also referred to as local business data (LBD) environments. This topic focuses on the ways that this process differs from the process in a run-time cloud environment.
 
 The process has the following main steps:
@@ -63,7 +66,7 @@ Then follow these steps.
 2. Select **Azure** or **Locally**. If you select **Locally**, find and download a development VHD. If you select **Azure**, you're prompted to select one of three topologies: **Build and Test**, **Demo**, or **Development**.
 3. Complete the deployment steps, and deploy a VM in your Azure subscription.
 
-For more information about how to configure a local development VHD, see [Access instances](../dev-tools/access-instances.md#vm-that-is-running-onpremises).
+For more information about how to configure a local development VHD, see [Access instances](../dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
 > [!NOTE]
 > To deploy environments in your own Azure subscription, you must set up at least one Azure Connector. To set up an Azure Connector, in LCS, open the **Project settings** page, and then click the **Azure connectors** tab. Then follow the instructions to add an Azure Connector. To complete the steps, you must be the tenant administrator of the organization.  
@@ -87,7 +90,7 @@ When your deployable package is ready, follow these steps to upload it to your L
 3. Click the plus sign (**+**) to upload the deployable package. 
 
 ## Configure an on-premises runtime environment that uses your code
-As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
+As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
 
 1. In your LCS project, click **Configure** to deploy your environment.
 

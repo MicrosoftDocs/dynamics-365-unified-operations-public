@@ -18,7 +18,7 @@ ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfil
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
@@ -40,7 +40,7 @@ This article explains how to configure a warehouse. It includes information abou
 **Note:** This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
 
 ## Warehouse layout
-The Warehouse management system in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
+The Warehouse management system in Microsoft Dynamics 365 for Finance and Operations gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
 
 -   You can establish high-priority and low-priority storages areas for optimum placement of goods.
 -   You can divide your warehouse into zones to accommodate various storage needs, such as temperature requirements, or various turnover rates for items.

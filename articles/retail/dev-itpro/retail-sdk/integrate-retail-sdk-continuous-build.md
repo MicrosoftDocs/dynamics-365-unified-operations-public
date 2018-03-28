@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate the Retail SDK with the Dynamics 365 Unified Operations platform build definition using Visual Studio Team Services
-description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail using Visual Studio Team Services.  
+description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Visual Studio Team Services.  
 author: andreash1
 manager: AnnBe
 ms.date: 09/19/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](../../includes/banner.md)]
 
-This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Visual Studio Team Services. 
+This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Visual Studio Team Services. 
 
 ## Enable the build system
 

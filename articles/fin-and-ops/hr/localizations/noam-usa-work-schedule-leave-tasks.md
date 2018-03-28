@@ -18,7 +18,7 @@ ms.search.form: HcmLeaveType, WorkTimeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221494
 ms.assetid: 60ce2f9f-73a7-4903-89da-6af7d681cc7a

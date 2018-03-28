@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition deployment options 
-description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in the cloud or on-premises. This topic provides information about the different deployment options. 
+title: Microsoft Dynamics 365 for Finance and Operations deployment options 
+description: Microsoft Dynamics 365 for Finance and Operations now supports running business processes in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
 manager: AnnBe
 ms.date: 06/29/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: AX 7.2.0, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
@@ -29,8 +29,13 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Microsoft Dynamics 365 for Finance and Operations, Enterprise edition deployment options
-You can now deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center. 
+# Microsoft Dynamics 365 for Finance and Operations deployment options
+
+[!include[banner](../includes/banner.md)]
+
+You can now deploy Microsoft Dynamics 365 for Finance and Operations in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center. 
+> [!IMPORTANT]
+> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 
