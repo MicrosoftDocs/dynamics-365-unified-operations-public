@@ -120,7 +120,7 @@ Complete the following instructions to run the script:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
+   **MyNewEnvironment** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
 
    **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
 
