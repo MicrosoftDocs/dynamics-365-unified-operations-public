@@ -390,7 +390,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
         ```
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-
+    
       1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
       2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
       3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
