@@ -37,33 +37,41 @@ This topic provides information about how to create, edit, and browse Business p
 ## Create a BPM library
 There are several ways to author a BPM library. You can do so from scratch either building directly in the client or by importing an Excel template. Additionally, you can copy an existing library. This section walks through each of these methods.
 
-### Using the BPM client 
+### Use the BPM client 
 
 1. On the **Business process libraries** page, select **New library**.
+     ![Select_new_library](./media/Select_new_library.PNG "New library")
 2. Enter a name for the new library, and then select **Create**.
+     ![Create_new_library](./media/Create_new_library.PNG "Create new library")
     
-### Using Excel Import
+### Use Excel Import
 
-1. On the **Business process libraries** page, select **Import from Excel**
+1. On the **Business process libraries** page, select **Import from Excel**.
+     ![Import_from_Excel](./media/Import_from_Excel.PNG "Import from Excel")
 2. Select **Download template** from the pane. Once downloaded, open the file.
 3. The template has several columns, most importantly **Id** and **Parent Id**. Associate each line with a new Id number, if you'd like to make a line a child item, add the Id of the line you'd like it to fall under in the parent Id column. the 
 4. Once complete, save the template and return to BPM.
 5. Using the import pane, select **Browse** to upload the updated template, enter a name for the new library, and select **Import**. 
+    ![Download_template](./media/Download_template.PNG "Download template")
  
-### Copying a library 
+### Copy a library 
 
 1. Openn the **Business process libraries** page 
 2. On the tile for the library that you want to copy, select the ellipsis button (…), and then select **Copy**.
+    ![Copy_a_library](./media/Copy_a_library.PNG "Copy library")   
 3. Enter a name for the library, and then select **Create**.
+    ![Create a_copied_library](./media/Create_a_copied_library.PNG "Create copied library")
 
 
-### Importing sections of libraries
-1. Openn the **Business process libraries** page and select the library you would like to edit. 
+## Import a sections of another library
+1. Openn the **Business process libraries** page and open the library you would like to edit. 
 2. Navigate to the line you would like to import to and select **Import**.
+     ![Select_import](./media/Select_import.PNG "Select import")
 3. Select **As child** or **As sibling**
-4. In the pane, select the library you would like to import from. 
+     ![Select_child_or_sibling](./media/Select_child_or_sibling.PNG "Select child or sibling")
+4. In the pane, choose the library you would like to import from and select **Import**.
+     ![Choose_library](./media/Choose_library.PNG "Choose library")
 
- 
 
 ## Add a new process
 
@@ -82,6 +90,10 @@ There are several ways to author a BPM library. You can do so from scratch eithe
     ![Process properties](./media/NEWBPM_BlogPost08-194x300.png "Process details")
 
 5. When you've finished editing the properties, select **Save**.
+
+
+
+
 
 ## Move a process
 
