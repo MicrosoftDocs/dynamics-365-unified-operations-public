@@ -5,7 +5,7 @@ title: Product search and customer search in POS
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
