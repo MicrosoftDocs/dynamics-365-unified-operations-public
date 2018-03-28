@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data task automation
-description: 
+description: Data task automation in Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks, and validate the outcome of each task. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,18 +28,35 @@ ms.dyn365.ops.version: Platform update 14
 
 # Data task automation
 
-The data task automation system lets you automate certain types of data tasks. Implementation projects can use this capability to manage automation of data project creation, data project configuration, or recurring schedules. You can also configure and trigger the execution of import/export operations, such as the setup of demo data, golden configuration data, or data migration related tasks. This feature will also provide a way to validate a task’s outcome, which makes it conducive for automated testing of data entities. The basic approach to task automation is as follows.
+Data task automation in Microsoft Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks, and validate the outcome of each task. Data task automation is very useful for projects in the implementation phase. For example, you can automate data project creation and data project configuration. You can also configure and trigger the execution of import/export operations, such as setting up demo data, golden configuration data, and performing other data migration related tasks. You can also use data task automation to create automated testing of data entities, using task outcome validation. 
 
-1.	Identify the data related tasks that will benefit from task automation. A task would usually be a configuration task or a task to import/export some data. Implementation teams must look at their configuration management and data migration plan to identify potential tasks that can benefit from task automation. Implementation teams can also identify test cases for automated testing of data entities. Each test case can then be defined as a task.
-2.	The task automation manager expects the data packages to be available in the asset library of an LCS project. It is up to the implementation teams to identify the LCS project based on other decision-making factors. With data packages available in LCS project, task automation manager can consume the packages from any environment (sandbox and/or production) making the consumption of data packages easy across environments.
-3.	The task automation manager drives off an XML manifest which must define each task that is automated. If task automation is used only to configure data projects but not to import/export actual data, the manifest enables such option. In this context, the manifest can be source controlled for effective configuration management as part of the overall ALM.
-4.	The task automation manager provides success or failure outcome for a task. It also provides insights into why a task failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using data project and execution details in data management.
+> [!IMPORTANT]
+> Data task automation is currently not supported for on-premises environments.
 
-Note: Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
+We recommend the following approach to data task automation:
 
-Note: Task automation is currently not supported for on premise environments.
+1.	Identify the data related tasks that will benefit from automation. 
 
-The following sections goes into the details for each of these aspects.
+    We recommend that implementation teams review their configuration management and data migration plans to identify potential data tasks for automation, and data entity test cases. 
+
+2.	Define tasks.
+
+    Tasks are defined in an XML manifest. You can keep your manifest under source control as part of configuration management in your application lifecycle management (ALM) strategy.
+
+3.	Put the data packages related to the automation manager in the asset library of the appropriate LCS project. 
+
+    The Data task automation manager can consume packages from any environment (sandbox and/or production) related to the LCS project.
+
+    > [!IMPORTANT]
+    > Although data task automation can be run on any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration API’s in a production environment. Data task automation with integration API’s should be used for automated testing only.
+
+4.	Run the data tasks, and then review the outcomes. 
+
+    Data task automation manager provides success or failure outcome for each task. It also provides insights into why a task failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using the data project and execution details in the Data management workspace.
+    
+    > [!NOTE]
+    > Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
+
 
 ## Task manifest
 Once the task has been identified, it must be defined in an XML manifest. This section describes the manifest. Refer to the best practice section for guidance on how to name and design the manifest.
