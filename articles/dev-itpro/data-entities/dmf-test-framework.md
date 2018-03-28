@@ -48,6 +48,7 @@ We recommend the following approach to data task automation:
     The Data task automation manager can consume packages from any environment (sandbox and/or production) related to the LCS project.
 
     > [!IMPORTANT]
+    > The user account running the task automation manager in Finance and Operations must have access to LCS and the LCS project that is referenced in the manifest for data packages.
     > Although data task automation can be run on any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration API’s in a production environment. Data task automation with integration API’s should be used for automated testing only.
 
 4.	Run the data tasks, and then review the outcomes. 
@@ -56,78 +57,57 @@ We recommend the following approach to data task automation:
     
     > [!NOTE]
     > Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
+    
 
 
 ## Task manifest
-Once the task has been identified, it must be defined in an XML manifest. This section describes the manifest. Refer to the best practice section for guidance on how to name and design the manifest.
+A task must be defined in an XML manifest. This section describes the manifest. See the Best practice section for guidance on how to name and design the manifest.
 
-## Manifest root
-The <TestManifest>  is the root of the manifest. All the elements are children of this element.
+### Manifest root
+The <TestManifest>  is the root of the manifest. All other elements are children of this element.
 
 ![Manifest](./media/Manifest.png)
 
-## Shared set up
-The shared set up section provides for defining the generic task parameters and task behavior for all tasks in the manifest. This enables maintainability of the manifest.
+### Shared set up
+The Shared set up section defines general task parameters and behaviors for all tasks in the manifest. 
 
 ![Shared set up](./media/SharedData.png)
-
-## Data files
-The <DataFile> element allows to define the data packages and/or data files that must be used by the tasks in the manifest. The data files must be in the LCS asset library of an LCS project or it can be in the shared asset library.
-Note: The user account running the task automation manager in Dynamics 365 for Operations and Finance must have access to LCS and the LCS project that is referenced in the manifest for data packages.
+### Data files
+The <DataFile> element defines the data packages and data files that will be used by the tasks in the manifest. The data files must be in the LCS asset library of your LCS project or in the Shared asset library.
 
 ![Data files](./media/SharedData2.png)
 
-## Data project definition
+### Data project definition
 The data project definition is defined using the <JobDefinition> element. There can be more than one job definitions in a manifest.
 
 ![JobDef](./media/JobDef.png)
 
-## Entity set up:
-The entity set up provides for defining the characteristics of an entity that is being used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
+### Entity set up
+The entity set up defines the characteristics of an entity to be used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
 
 ![Entity set up](./media/EntitySetup.png)
 
 ![Entity set up](./media/EntitySetup2.png)
 
-## Test groups:
+### Test groups
 Groups can be used to organize related tasks together in a manifest. There can be more than one group in a manifest.
 
 ![Groups](./media/Groups.png)
 
 ## Best practice for manifest design
-There are different ways in which a manifest can be defined. Below are a few pointers to consider when designing the manifest.
+You can define a manifest in many different ways. Below are a few pointers to consider when designing the manifest.
 
--   **Granularity** – the granularity of the manifest must be a functional
-    decision more than anything else. There is going be a fine balance between
-    the number of manifests an implementation team must manage versus showing
-    discipline and being judicious to manage all tasks in a single manifest. One
-    rule of thumb teams can use is to find out if they are constantly having an
-    urge to merge tasks from multiple manifests as they start using them. This
-    would indicate that the manifests are too granular and are functionally not
-    composed as needed. The other aspect to consider would we separation of
-    duties on who should perform what tasks. For example, there could be a one
-    manifest to set up the demo data and a different manifest to set up the
-    golden configuration on environments. This way, team members can be guided
-    to only use manifests which they are supposed to use. A third aspect would
-    be the implementation team’s access to LCS as the tasks would expect the
-    data packages to be in LCS. This could become a point to consider for larger
-    and globally distributed implementation teams/end user base that either has
-    multiple instances of Dynamics 365 for Finance and Operations or have
-    multiple LCS projects.
+### Granularity
+We recommend that you determine the granularity of your manifest as a functional decision. Your team will need to decide whether they want to manage many manifests, or manage changes in a single manifest. 
+-	Start with as many manifests as your team thinks you need logically, and then merge them if the team finds themselves using and wanting to merge manifests when they start running them. 
+-	Consider separation of duties. For example, you might have one manifest to set up the demo data and a different manifest to set up the golden configuration for your environment. This way, you can make sure that team members use only the manifests that they are supposed to use. 
+-	Consider user access to LCS. For larger and globally distributed implementation teams, that have multiple instances of Finance and Operations or multiple LCS projects.
 
--   **Inheritance** – the manifest schema supports inheritance of common
-    elements that are going to be applicable to all tasks in the manifest. The
-    task can override an element to create a unique behavior for itself. This
-    helps to keep the manifest concise and clean which improves readability and
-    maintenance. Emphasis must be given to minimize repeating of configuration
-    elements and instead re-use as much as it is possible.
+### Inheritance
+The manifest schema supports inheritance of common elements that are going to be applicable to all tasks in the manifest. A task can override a common element to define a unique behavior. The goal of the Shared setup section is to minimize repeating configuration elements to re-use as much as possible. The goal is to keep the manifest concise and clean to improve maintenance and readability. 
 
--   **Source control** – manifests that must be used by all the members of an
-implementation team should be source controlled in the application object tree
-(AOT). This not only provides for the benefits of source control but also
-enables a process to distribute or make the manifest(s) available to all users
-in a consistent manner. This also enables configuration management for data
-management related data projects if manifests are being used to configure.
+### Source control
+Manifests that must be used by all the members of an implementation team should be stored in source control in the application object tree (AOT). This not only provides for the benefits of source control but also enables a process to distribute or make the manifest(s) available to all users in a consistent manner. This also enables configuration management for data management related data projects if manifests are being used to configure.
 
 ## Validations
 The task automation manager performs validations based on the set up of a task. The validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed.
