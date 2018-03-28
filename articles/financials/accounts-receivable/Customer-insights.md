@@ -2,8 +2,7 @@
 # required metadata
 
 title: Customer payment insights (preview)
-description: This topic describes how Customer payment insights can help predict when an invoice will be paid and help organizations to
-create optimization strategies that improve the probability of being paid on time.
+description: This topic describes how Customer payment insights can help predict when an invoice will be paid and help organizations to create optimization strategies that improve the probability of being paid on time.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/02/2018
@@ -15,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User/Developer/IT Pro]
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 ms.search.scope: 
