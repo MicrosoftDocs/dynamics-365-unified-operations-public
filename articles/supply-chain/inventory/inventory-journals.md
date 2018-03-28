@@ -3,9 +3,9 @@
 
 title: Inventory journals
 description: This article describes how you can use inventory journals to post various types of physical inventory transactions.
-author: MarkusFogelberg
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -57,7 +57,7 @@ The following types of inventory journals are available:
 
 ### Movement
 
-When you use an inventory movement journal, you can add cost to an item when you add inventory, but you must manually allocate the additional cost to a particular general ledger account by specifying a general ledger offset account when you create the journal. This inventory journal type is useful if you want to expense an item against a different department, or if you want to remove items from inventory for expense purposes.
+When you use an inventory movement journal, you can add cost to an item when you add inventory, but you must manually allocate the additional cost to a particular general ledger account by specifying a general ledger offset account when you create the journal. This inventory journal type is useful if you want to overwrite the default posting accounts.
 
 ### Inventory adjustment
 
@@ -101,3 +101,26 @@ A journal can be accessed by only one user at a time. If several users must acce
 
 ## Posting journal lines
 You can post the journal lines that you create at any time until you've locked an item from additional transactions. The data that you enter in a journal remains in that journal, even if you close the journal without posting the lines.
+
+## Data entity support for inventory journals
+
+Data entities support the following two types of integration scenarios. 
+-	 Synchronous service (OData)
+-  Asynchronous integration
+
+For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md)
+
+> [!NOTE]
+> Not all inventory journals are OData-enabled, and therefore you can’t use the Excel data connector to get data published, updated, and imported back to Dynamics 365 for Finance and Operations. 
+
+Another difference between the journal data entities is the capability of using the composite entities that include both the header and line data. Currently, you can use the composite entities for:
+-	Inventory adjustment journal
+-	Inventory movement journal
+
+These two inventory journals only support the Initialize stock scenario as follows as part of a data management import project:
+- When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines.
+-	 It is assumed that unique line information exists per inventory dimension, and therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
+
+
+
+
