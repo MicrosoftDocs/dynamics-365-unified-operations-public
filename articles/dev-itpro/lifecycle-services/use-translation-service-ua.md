@@ -63,7 +63,7 @@ When DTS is done processing your translation request, you will receive an email 
 
 There are three types of output files available:
 
-+ **File for translation review** - Doenload this file to review and edit the translated document strings in a table view. The file provides the side-by-side source and target languages segments.
++ **File for translation review** - Download this file to review and edit the translated document strings in a table view. The file provides the side-by-side source and target languages segments.
 + **Translated file in source format** - Download this file if you don't intend to review or edit the translations. This file is in the same style as the source docx file you submitted and ready to use. 
 + **Translation memory** - Download this file if you want to recycle these translations the next time you are submitting a new translation request with a newer version of the source document. 
 
