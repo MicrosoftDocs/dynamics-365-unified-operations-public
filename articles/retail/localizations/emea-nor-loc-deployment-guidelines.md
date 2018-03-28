@@ -490,7 +490,6 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 5. Adjust the interface methods in the **StoreOperationsManager** class:
 
     # [Application update 4](#tab/app-update-4)
-
     ``` csharp
         public Task<bool> SalesTransactionSignatureServiceIsReady()
         {
@@ -503,7 +502,6 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     ```
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-
     ``` csharp
         public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
         {
