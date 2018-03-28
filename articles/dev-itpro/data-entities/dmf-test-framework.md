@@ -110,9 +110,24 @@ The manifest schema supports inheritance of common elements that are going to be
 Manifests that must be used by all the members of an implementation team should be stored in source control in the application object tree (AOT). This not only provides for the benefits of source control but also enables a process to distribute or make the manifest(s) available to all users in a consistent manner. This also enables configuration management for data management related data projects if manifests are being used to configure.
 
 ## Validations
-The task automation manager performs validations based on how a task has been set up. Validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. Detailed investigation must be done using the data project and execution details in the Data management workspace.
+The task automation manager performs validations based on how a task has been set up. Validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery. 
 
 ![Validations](./media/Validations.png)
+
+The data validations currently supported are the following.
+
+-   Job status – checks whether the status of the job is successful or not
+
+-   Batch status – checks whether the status of the batch was successful or not
+
+-   Message status – if the test is about integrations then message status is also validated
+
+-   Truncation – if truncation is enabled, then validation is done to check whether truncation happened
+
+-   Skip staging – if Skip staging is enabled on a test, then validation is done to checkw whether staging was skipped
+
+If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
+
 
 ## Configuration management for data projects
 The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. 
@@ -123,30 +138,13 @@ The first example below configures a data project without a recurring schedule. 
 
 ![Config](./media/Config2.png)
 
-## Automating demo data set up for environments
-Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed thereby not having to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because, the data project import happens in the specified legal entity thereby eliminating for the user to switch companies to import a data package. Below is an example task for demo data import where the demo data packages are in the shared asset library.
+## Example: Automated demo data set up
+Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed so that you do not have to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because the data project import happens in the specified legal entity, so that the user does not need to switch companies to import a data package. The folloiwng is an example task for demo data import where the demo data packages are in the shared asset library.
 
 ![Demo data](./media/DemoData.png)
 
-## Automating data migration tasks
-A similar approach to demo data tasks can be also taken to perform data imports of data packages in a data migration process. Typically, once the environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration (also called as the golden configuration data packages) data packages. After the base configuration is complete, the migrated data is imported via data management. These import tasks can be configured as tasks in a manifest and can be executed using the task automation manager to simplify and streamline this part of the data migration process.
+## Example: Automate data migration tasks
+Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration.
 
-## Data entity test automation
-The task automation concepts can be also used to perform automated testing of data entities including integration scenarios. The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities.
-
-The automation manager has inbuilt validations to aid with confirmation of why a task failed or passed. The data validations currently supported are the following.
-
--   Job status – checks if the status of the job is successful or not
-
--   Batch status – checks if the status of the batch was successful or not
-
--   Message status – if the test is about integrations then, the message status
-    is also validated
-
--   Truncation – if truncation was enabled, then validation is done to check if
-    truncation happened
-
--   Skip staging – if skip staging was enabled on a test then, validation is done to
-check if staging was skipped
-
-If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
+## Examaple: Data entity test automation
+The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities.
