@@ -31,7 +31,7 @@
 ## [Call center catalogs](call-center-catalogs.md)
 ## [Create a call center catalog](create-call-center-catalogs.md)
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
-## [Set up order processing options](set-up-order-processing-options.md)
+## [Set up a call center](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
 ## [Order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
