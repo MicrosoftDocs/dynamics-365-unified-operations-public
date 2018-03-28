@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cross-docking from production orders to outbound docks
 
+[!include[banner](../includes/banner.md)]
+
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
 Introduction

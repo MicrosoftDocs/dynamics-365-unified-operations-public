@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Development and administration for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-description: This page helps developers and IT Pros get started with Finance and Operations, Enterprise edition.
+title: Development and administration for Microsoft Dynamics 365 for Finance and Operations
+description: This page helps developers and IT Pros get started with Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development and administration for Dynamics 365 for Finance and Operations, Enterprise edition 
+# Development and administration for Dynamics 365 for Finance and Operations 
 
 [!include[banner](includes/banner.md)]
 
@@ -50,7 +50,7 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 -	Microsoft Visual Studio is the development environment. Finance and Operations customizes the Visual Studio environment to provide you with a smooth and familiar experience.
 -	The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C# programming language.
 -	You can leverage the browser-based client and design patterns for forms to provide an improved end-user experience.
--	The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
+-	The Application Lifecycle Management (ALM) system supports build automation, test automation, and deployment of models to the cloud.
 
 For more information, see [Developer home page](dev-tools/developer-home-page.md).
 

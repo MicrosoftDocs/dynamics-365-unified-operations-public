@@ -3,8 +3,8 @@
 # Get started
 ## [What's new or changed](get-started/whats-new.md)
 ## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
-## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Deployment options](dev-itpro/choose-deployment.md)
 
 
@@ -39,14 +39,16 @@
 # Channel setup and management
 ## [Initialize seed data in a Retail environment](enable-configure-retail-functionality.md)
 ## [Define retail channels](define-maintain-retail-channels.md)
+## [Assortment management](assortments.md)
 ## [Online store overview](online-stores.md)
 ## [Configure and install a Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Retail time and attendance](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) and Cloud POS
 ## [Choose between Modern POS and Cloud POS](MPOS-or-CPOS.md)
-## [POS operations](POS-operations.md)
+## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
+## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -55,9 +57,11 @@
 ## Screen layout
 ### [Configure screen layouts for POS](pos-screen-layouts.md)
 ### [Install the Retail POS Layout designer](install-pos-layout-designer.md)
+### [Choose notification settings](Notifications-POS.md)
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up images for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Info codes overview](info-codes-retail.md) 
+## [POS improvements for serialized products](serialized-inventory.md)
 ## Product recommendations
 ### [Personalized product recommendations overview](personalized-product-recommendations.md)
 ### [Add a recommendations control on a POS device](add-recommendations-control-pos-screen.md)
@@ -95,13 +99,16 @@
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
+## [Prevent discounts for retail products](prevent-discounts.md)
 ## [Create coupons for retail sales](retail-coupons.md)
 
 # Products and merchandising
 ## [Product information overview](../supply-chain/pim/product-information.md)
 ## [Retail hierarchies](retail-hierarchies.md)
+## [Attributes and attribute groups overview](attribute-attributegroups-lifecycle.md)
 ## [Create and manage attributes](create-manage-attributes.md)
 ## [Set up retail products](set-up-retail-products.md)
+## [Enhanced product and category management](category-management-product-creation.md)
 ## [Product dimensions](../supply-chain/pim/product-dimensions.md)
 ## [Set up bar codes](set-up-bar-codes.md)
 ## [Set up bar code masks](set-up-bar-code-masks.md)
@@ -130,6 +137,16 @@
 # Human resources
 ## [Organize your workforce using departments, jobs, and positions](../talent/departments-jobs-positions.md)
 ## [Setting up the components of a job](../talent/create-job.md)
+
+# Localization and regulatory features
+## India
+### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norway
+### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
+### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+## Sweden
+### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 
 # Retail tasks
 ## [Create a product](../supply-chain/pim/tasks/create-product.md)
@@ -177,13 +194,14 @@
 # [Retail development & administration](dev-itpro/dev-retail-home-page.md)
 
 ## Architecture
-### [Components of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
+### [Components of Microsoft Dynamics 365 for Finance and Operations - Retail](retail-components.md)
 ### [Retail Server architecture](dev-itpro/retail-server-architecture.md)
 ### [Retail channel communications](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [Payment Application Data Security Standards (PA-DSS) certification](dev-itpro/PA-DSS-Certification.md)
+### [Retail capabilities available in on-premises deployments](retail-onprem.md)
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
@@ -195,7 +213,7 @@
 ### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 ### [Mass deployment of Retail self-service components](dev-itpro/retail-mass-deployment.md)
 ### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Upgrade and N-1 support
 ### [Overview of upgrade and N-1 support](dev-itpro/overview-upgrade-n-minus1.md)
@@ -205,7 +223,7 @@
 ### [Device management implementation guidance](implementation-considerations-devices.md)
 
 ## Environment configuration
-### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
 ## Point of sale extensibility
@@ -249,10 +267,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
-### [Sample for Retail POS integration with control units for Sweden](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)

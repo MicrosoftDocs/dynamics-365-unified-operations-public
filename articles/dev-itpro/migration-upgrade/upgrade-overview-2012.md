@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Enterprise edition 
-description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations 
+description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 02/26/2017
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,13 +27,13 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 [!include[upgrade banner](../includes/upgrade-banner.md)]
 
-In Platform update 8 and the July 2017 Application release, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
+Microsoft Dynamics 365 for Finance and Operations running Platform update 8 and the July 2017 Application release, and later provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
 - Tools to help you bring forward existing custom application code from AX 2012.
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
@@ -185,9 +185,16 @@ After the configuration restriction and code freeze are in place, data upgrade s
 
 For details, see [Validate: Prepare for go live](upgrade-go-live-prep.md).
 
+### Go live
+After you have successfully completed upgrade testing in a Standard or Premier Acceptance Test environment (Sandbox Tier 2 or higher), and you have also completed a successful test cutover, the moment has arrived to upgrade your production environment and go live. 
+
+*Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Microsoft Dynamics 365 for Finance and Operations, is turned on. 
+
+For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade-cutover.md)
 
 
-### Supported upgrade paths
-Upgrade to the cloud version of Finance and Operations is supported from Microsoft Dynamics AX 2012 R3. All cumulative updates (CUs) of AX 2012 R3 are supported. 
+## Supported upgrade paths
+Upgrade to the cloud version of Finance and Operations is supported from AX 2012 R2 and AX 2012 R3, in private preview.  
 
-Upgrade from Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
+Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
+

@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ValueMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Value metadata type.
 
 ### Hierarchy

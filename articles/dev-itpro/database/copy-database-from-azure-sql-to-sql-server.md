@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy a Finance and Operations database – Azure SQL to SQL Server
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
-author: tariqbell
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
+author: maertenm
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 203764
 ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: maertenm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -34,16 +34,16 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
 ## Overview
 
 To move a database, you use the sqlpackage.exe command-line tool to export the database from Azure SQL Database and then import it into Microsoft SQL Server 2016. Because the file name extension for the exported data is .bacpac, this process is often referred to as the *bacpac process*.
 
-Here is the high-level process for a database move.
+The high-level process for a database move includes the following phases:
 
 1. Create a duplicate of the source database.
-2. Run a SQL Server script to prepare the database.
+2. Run a SQL script to prepare the database.
 3. Export the database from the Azure SQL database.
 4. Import the database into SQL Server 2016.
 5. Run a SQL script to update the database.
@@ -54,11 +54,16 @@ The following prerequisites must be met before you can move a database:
 
 - The source environment (that is, the environment that is connected to the source database) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - Only a database that the customer has SQL access to can be copied. If you must copy the production environment, you must first copy that environment to the sandbox environment. Then work from the sandbox environment.
+
+    > [!NOTE]
+    > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
+
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
-- To export a database from a sandbox environment, you must install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in that environment. You then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+    > [!IMPORTANT] 
+    > To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio (SSMS) that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the VM that runs Application Object Server (AOS) in the sandbox environment. Do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
-    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
+    - The exported \*.bacpac file may be dependent on version specific features of Management Studio. Make sure the SSMS version that you use to export the database **is not newer** than the SSMS version (on the target environment) that you will be using to import the bacpac.
 
 ## Before you begin
 
@@ -185,10 +190,10 @@ GO
 
 ## Export the database
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<sql user>
 ```
@@ -214,10 +219,10 @@ When you import the database, we recommend that you follow these guidelines:
 - Retain a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window as an administrator, and run the following commands.
+To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window and run the following commands.
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
+cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```

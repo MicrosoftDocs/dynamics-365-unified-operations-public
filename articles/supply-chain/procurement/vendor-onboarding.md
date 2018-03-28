@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 [!include[banner](../includes/banner.md)]
 ---
 
-New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, based on information that is collected from a person who represents the vendor.
+New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, based on information that is collected from a person who represents the vendor.
 
 The process consists of the following steps, where various roles perform actions in the system.
 
@@ -50,6 +50,9 @@ The following table shows the steps and roles that are involved in the process.
 | Procurement professional | | Start the onboarding process. | | | Review and either accept or reject the vendor request. | |
 | Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
+
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video: 
+> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
 
 ## Importing the prospective vendor registration request
 

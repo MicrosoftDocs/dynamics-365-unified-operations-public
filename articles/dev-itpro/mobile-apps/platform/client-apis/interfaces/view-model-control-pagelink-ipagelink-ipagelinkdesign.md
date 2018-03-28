@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # PageLinkDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Pagelink design object type.
 
 ### Hierarchy

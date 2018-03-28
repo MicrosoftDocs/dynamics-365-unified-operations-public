@@ -26,6 +26,7 @@ ms.dyn365.ops.version:
 
 # PageTarget Type
 
+[!include[banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 

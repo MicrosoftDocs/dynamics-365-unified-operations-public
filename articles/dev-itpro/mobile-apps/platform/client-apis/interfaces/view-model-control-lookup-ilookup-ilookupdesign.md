@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # LookupDesign Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Lookup design object type.
 
 ### Hierarchy

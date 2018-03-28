@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use third-party service testing utilities with Finance and Operations
-description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
+At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
 - Explore and analyze how an interaction's messages are constructed.
 - Test the response of a service to a well-known request.

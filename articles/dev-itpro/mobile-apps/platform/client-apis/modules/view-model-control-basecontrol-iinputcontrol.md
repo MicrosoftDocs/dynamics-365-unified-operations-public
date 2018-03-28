@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Input 
+
+[!include[banner](../../../../includes/banner.md)]
+
 Input controls are typically used on task pages for collecting user input, for example, for a new control.
 
 ## Index

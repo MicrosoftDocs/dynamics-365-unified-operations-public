@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Control Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Control interface with base methods and attributes for all controls.
 This represents the runtime instance of a control. Modifying the properties are immediately reflected in the UI.
 

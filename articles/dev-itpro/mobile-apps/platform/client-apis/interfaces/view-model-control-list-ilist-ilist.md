@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # List Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 List control type.
 A list is a control that contains any numbers of rows.
 Each row follows a template for the layout of any number of controls.

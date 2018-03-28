@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # LookupMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Lookup metadata type.
 
 ### Hierarchy

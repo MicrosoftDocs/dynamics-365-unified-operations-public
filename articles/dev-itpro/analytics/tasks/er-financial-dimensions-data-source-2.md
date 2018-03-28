@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Map models  to use financial dimensions as a data source for electronic reporting (ER)
+title: Map models to use financial dimensions as a data source for electronic reporting (ER)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 

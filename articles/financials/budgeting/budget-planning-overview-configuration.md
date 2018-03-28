@@ -42,7 +42,7 @@ Overview of budget planning
 
 You perform budget planning when you're preparing the budgets that an organization will implement. An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. 
 
-When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, it will be easier for you to implement budget planning in your organization.
+When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Finance and Operations, it will be easier for you to implement budget planning in your organization.
 
 ### Key terms
 

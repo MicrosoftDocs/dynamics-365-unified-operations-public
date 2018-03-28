@@ -2,7 +2,7 @@
 # required metadata
 
 title: View financial reports
-description: This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+description: This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
 Financial reporting overview
 ----------------------------

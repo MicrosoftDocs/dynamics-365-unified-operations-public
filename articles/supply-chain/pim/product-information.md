@@ -63,7 +63,7 @@ A product is primarily defined by a product number, name, and description. Howev
 
 ## Distribution, export, and import of product data
 
-The product definition can be created in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It can also be imported from product lifecycle management (PLM), product data management (PDM), or product information management (PIM) systems. When more than one instance of Finance and Operations is used, one instance is typically used as the master of the product data for all other instances. This approach is supported by a large set of data entities that enable the export and import of product definition data from one instance to another.
+The product definition can be created in Microsoft Dynamics 365 for Finance and Operations. It can also be imported from product lifecycle management (PLM), product data management (PDM), or product information management (PIM) systems. When more than one instance of Finance and Operations is used, one instance is typically used as the master of the product data for all other instances. This approach is supported by a large set of data entities that enable the export and import of product definition data from one instance to another.
 
 To support the distribution of product data to many instances, Finance and Operations lets you use the Common Data Service. The product definitions can be exported from an instance of Finance and Operations to the Common Data Service. The product definitions can then be used to provision other business applications, such as Microsoft Dynamics 365 for Sales, with product data.
 

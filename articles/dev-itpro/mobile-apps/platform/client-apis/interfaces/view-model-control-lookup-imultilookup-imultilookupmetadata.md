@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # MultiLookupMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Multi-Lookup metadata type.
 
 ### Hierarchy

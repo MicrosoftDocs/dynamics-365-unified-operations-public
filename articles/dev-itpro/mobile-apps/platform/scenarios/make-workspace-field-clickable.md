@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 3
 
 # Set up clickable fields
 
+[!include[banner](../../../includes/banner.md)]
+
 The fields on a mobile app page can be customized so that they are shown as email addresses, phone numbers, or URLs.
 
 ## Email field
