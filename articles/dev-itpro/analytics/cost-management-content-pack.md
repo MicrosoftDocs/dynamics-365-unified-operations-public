@@ -41,7 +41,7 @@ The **Cost management** Microsoft Power BI content is intended for inventory acc
 > [!Note]
 > The **Cost management** Power BI content described in this this topic applies to Dynamics 365 for Finance and Operations 8.0.
 > 
-> The **Cost management** Power BI content pack, published to the PowerBI.com site has been deprecated. For more information about that deprecation, see [Power BI content packs published to PowerBI.com](../migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> The **Cost management** Power BI content pack, published to the PowerBI.com site has been deprecated. For more information about that deprecation, see [Power BI content packs published to PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
 This Power BI content provides a categorized format that helps you monitor the performance of inventories and visualize how cost flows through them. You can gain managerial insights such as the turnover ratio, number of days that inventory is on hand, accuracy, and "ABC classification" at your preferred aggregated level (company, item, item group, or site). The information that is made available can also be used as a detailed supplement to the financial statement.
