@@ -44,7 +44,7 @@ The Project Service Automation to Finance and Operations integration solution us
 
 The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectTasksFlow.png)](./media/ProjectTasksFlow.png)
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.png)](./media/ProjectEstimatesFlow.png)
 
 
 ## Templates and tasks
