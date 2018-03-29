@@ -39,7 +39,7 @@ When maintenance is performed on the entity store, it impacts the following comp
 
 To resolve issues with these components, complete the procedures in this topic.
 
-**If you are using application analytical workspaces**
+## If you are using application analytical workspaces
 
 You should be able to access your analytical reports until the migration starts. After the migration completes, your embedded analytical reports will not render any data. The following screenshot shows an example of this.
 
@@ -57,9 +57,9 @@ To resolve this issue:
 
 After the refresh completes, the application analytical workspaces and reports will render data.
 
-**If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com**
+## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
 
-Redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations (**System Administration** \> **Setup** \> **Deploy Power BI files**).
+After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations (**System Administration** \> **Setup** \> **Deploy Power BI files**).
 
 > [!Note]
 > Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete the report.
