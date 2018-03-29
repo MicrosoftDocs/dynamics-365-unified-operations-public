@@ -43,6 +43,8 @@ To resolve issues with these components, complete the procedures in this topic.
 
 You should be able to access your analytical reports until the migration starts. After the migration completes, your embedded analytical reports will not render any data. The following screenshot shows an example of this.
 
+![Analytical report is blank](media/blank-powerbi.png)
+
 To resolve this issue:
 
 1.  Sign in to Dynamics 365 for Finance and Operations.
