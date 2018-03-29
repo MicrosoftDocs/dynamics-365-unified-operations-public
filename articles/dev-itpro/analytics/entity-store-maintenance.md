@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 15
 
 [!include[banner](../includes/banner.md)]
 
-When maintenance is performed on the entity store, it impacts the following components:
+When maintenance is performed on the entity store, it impacts the following components: 
 
 -   Application analytical workspaces, if you are on Dynamics 365 for Finance and Operations 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
 
