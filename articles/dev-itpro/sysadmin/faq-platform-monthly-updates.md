@@ -82,13 +82,13 @@ Platform updates don't contain any application changes. Therefore, the impact sh
 
 ## What validations does Microsoft do for platform changes that will be applied during the update?
 
-Before the update is applied, Microsoft runs validations to make sure that there is no impact on components outside the platform, such as Management reporter and Retail. Microsoft also makes sure that changes are backward-compatible and forward-compatible.
+Before the update is applied, Microsoft runs validations to make sure that there is no impact on components outside the platform, such as Management reporter and Retail. Microsoft also makes sure that changes are backward-compatible.
 
 After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs verification tests to make sure that Finance and Operations can be used to complete transactions.
 
 ## What kind of validation requirements do I have to complete?
 
-When a platform update is applied, you don't have to complete any validations. Microsoft is responsible for making sure that the updates are backward-compatible and forward-compatible with standard Finance and Operations. However, if you prefer, you can complete basic acceptance tests of your key scenarios, because Microsoft doesn't perform those validations after updates are applied. For example, platform components include Microsoft Office and Microsoft Excel integrations, workflows, form personalization, Data management framework, ODATA integrations, entity store, and Microsoft Power BI integration. You might find it beneficial to test functionality that involves these components.
+When a platform update is applied, you don't have to complete any validations. Microsoft is responsible for making sure that the updates are backward-compatible with standard Finance and Operations. However, if you prefer, you can complete basic acceptance tests of your key scenarios, because Microsoft doesn't perform those validations after updates are applied. For example, platform components include Microsoft Office and Microsoft Excel integrations, workflows, form personalization, Data management framework, ODATA integrations, entity store, and Microsoft Power BI integration. You might find it beneficial to test functionality that involves these components.
 
 We recommend that you automate functional validations to reduce the validation effort.
 
@@ -152,7 +152,7 @@ After Microsoft updates your production environment, apply the update to the res
 
 ## In the scenario where Microsoft initiates platform updates, if an update is completed on a Tier 2 Standard Acceptance Test (Sandbox) environment but isn't yet applied to the production environment, there is a gap of five days when the sandbox and production environments are on different versions. If we find an issue in the production environment, can we still follow the process of applying a package to the sandbox environment and then moving it to the production environment, even though the versions the environments are on different versions?
 
-Yes. Because platform updates are backward-compatible and forward-compatible, even though your Tier 2 Standard Acceptance Test (Sandbox) and production environments are on different versions, you will still be able to apply packages on the sandbox environment first and then move it to the production environment. This flow is supported. You can also proactively update the platform of your production environment to the same version as the platform of your default Tier 2 Standard Acceptance Test (Sandbox) environment. 
+Yes. Because platform updates are backward-compatible, even though your Tier 2 Standard Acceptance Test (Sandbox) and production environments are on different versions, you will still be able to apply packages on the sandbox environment first and then move it to the production environment. This flow is supported. You can also proactively update the platform of your production environment to the same version as the platform of your default Tier 2 Standard Acceptance Test (Sandbox) environment. 
 
 ## How can I get early access to non-released platform updates?
 
