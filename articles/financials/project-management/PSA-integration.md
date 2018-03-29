@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Project Service Automation to Finance and Operations integration solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Project Service Automation via the Common Data Service (CDS). The integration templates that are available with the Data Integration feature enable the flow of projects, project contracts, project contract lines, project contract line milestones, project tasks, expense transaction categories, hour estimates, and expense estimates from Project Service Automation to Finance and Operations.
 
 > [!NOTE] 
-> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you must install KB 4074835. This will allow you to use project contracts, which is only available in this release.
+> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you must install KB 4074835. This will allow you to integrate fixed price projects.
 
 > If you are using Dynamics 365 for Finance and Operations version 8.0, you will be able to use project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking.
 
