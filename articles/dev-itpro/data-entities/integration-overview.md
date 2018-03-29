@@ -49,7 +49,7 @@ The following table lists the integration patterns that are available for Financ
 | Excel integration | [Office integration](../office-integration/office-integration.md) |
 
 Note:
-For on premise deployments, the only supported API is the [Data package API](data-management-api.md). To know more about the versions on which this capabilitiy is available, follow this wiki.
+For on premise deployments, the only supported API is the [Data package API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Synchronous vs. asynchronous integration patterns
 
