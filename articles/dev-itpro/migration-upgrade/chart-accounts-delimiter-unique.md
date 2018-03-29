@@ -41,8 +41,10 @@ This feature is available in:
 - Finance and Operations, version 7.1, KB 4094701 Cannot enter the financial dimensions when the dimension values contain the chart of accounts delimiter
 - Finance and Operations, version 7.2, KB 4092967 Cannot choose sub-project as dimension when sub-project format contains the dimension delimiter
 
+## Update delimiter
 If there is a conflict, the Chart of accounts delimiter and the Project > Subproject format can be changed. No other dimension delimiters can be changed. 
 - You can change the chart of accounts delimiter after upgrade to Finance and Operations under the **General ledger parameters** > **Chart of accounts and dimensions** > **Change delimiter**. 
 - If the only conflict is with the project/subproject ID format, you can change that value in **Project management and accounting parameters** > **General** > **Modify subproject format**. 
 
-> You won't get an error, but you may experience instability when entering values in the segmented entry control or dimension entry control, and will need to always use lookups or the flyout when entering account and dimension combinations.
+## How to determine if your environment requires updated delimiters 
+If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control, and will need to always use lookups or the flyout when entering account and dimension combinations.
