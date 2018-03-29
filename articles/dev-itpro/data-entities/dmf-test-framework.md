@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Platform update 14
+ms.dyn365.ops.version: Platform update 16
 
 ---
 
@@ -58,7 +58,8 @@ We recommend the following approach to data task automation:
     > [!NOTE]
     > Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
     
-
+The following video is a 55 minute TechTalk that walks through an early release of Data task automation manager.
+> [!Video https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4]
 
 ## Task manifest
 A task must be defined in an XML manifest. This section describes the manifest. See the Best practice section for guidance on how to name and design the manifest.
@@ -66,6 +67,7 @@ A task must be defined in an XML manifest. This section describes the manifest. 
 ### Manifest root
 The <TestManifest>  is the root of the manifest. All other elements are children of this element.
 
+```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
   <SharedSetup />
@@ -74,6 +76,7 @@ The <TestManifest>  is the root of the manifest. All other elements are children
   </SharedSetup>
   <TestGroup />
 </TestManifest>
+```
 
 ### Shared set up
 The Shared set up section defines general task parameters and behaviors for all tasks in the manifest. 
@@ -82,14 +85,17 @@ The Shared set up section defines general task parameters and behaviors for all 
 ### Data files
 The <DataFile> element defines the data packages and data files that will be used by the tasks in the manifest. The data files must be in the LCS asset library of your LCS project or in the Shared asset library.
 
+```
 <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
+```
 
 ### Data project definition
 The data project definition is defined using the <JobDefinition> element. There can be more than one job definitions in a manifest.
 
+```
 <JobDefinition ID='ImportJobDefinition_1'>
   <Operation>Import</Operation>
   <SkipStaging></SkipStaging>
@@ -105,10 +111,12 @@ The data project definition is defined using the <JobDefinition> element. There 
   <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
   <LegalEntity>DAT</LegalEntity>
 </JobDefinition>
+```
 
 ### Entity set up
 The entity set up defines the characteristics of an entity to be used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
 
+```
     <EntitySetup ID='Generic'>
       <Entity name='*'>
         <SourceDataFormatName>Package</SourceDataFormatName>
@@ -127,10 +135,12 @@ The entity set up defines the characteristics of an entity to be used by a task.
         </ParallelProcessing>
       </Entity>
     </EntitySetup>
+```
 
 ### Test groups
 Groups can be used to organize related tasks together in a manifest. There can be more than one group in a manifest.
 
+```
   <TestGroup name='Set up Financials'>
     <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
       <DataFile RefID='SharedSetup' />
@@ -162,6 +172,7 @@ Groups can be used to organize related tasks together in a manifest. There can b
 		<EntitySetup RefID='Generic' />
 	</TestCase>
   </TestGroup>
+```
 
 ## Best practice for manifest design
 You can define a manifest in many different ways. Below are a few pointers to consider when designing the manifest.
@@ -190,6 +201,7 @@ The data validations currently supported are the following.
 
 -   Job status – checks whether the status of the job is successful or not
 
+
 -   Batch status – checks whether the status of the batch was successful or not
 
 -   Message status – if the test is about integrations then message status is also validated
@@ -201,11 +213,12 @@ The data validations currently supported are the following.
 If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
 
 
-## Configuration management for data projects
+## Example: Configuration management for data projects
 The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. 
 
-The first example below configures a data project without a recurring schedule. The second example includes a recurring schedule. The difference is the value provided to the <Operation> element. Manifests for configuration tasks should also be kept under source control.
+The first example below configures a data project without a recurring schedule. The second example includes a recurring schedule. The difference is the value provided to the **<Operation>** element. Manifests for configuration tasks should also be kept under source control.
 
+```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
   <SharedSetup>
@@ -283,14 +296,12 @@ The first example below configures a data project without a recurring schedule. 
 	</TestCase>
   </TestGroup>
 </TestManifest>
+```
 
-## Example: Manifest with automated demo data set up, automated data migration tasks, and data entity test automation
-Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed so that you do not have to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because the data project import happens in the specified legal entity, so that the user does not need to switch companies to import a data package. The following is an example task for demo data import where the demo data packages are in the shared asset library.
+## Example: Automated demo data set up
+The following manifest demonstrates setting up demo data for three legal entities, when the demo data packages are stored in the Shared asset library.
 
-Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration. The above examples of manifest applies here as well.
-
-The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities. The above examples of manifest applies here as well.
-
+```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
   <SharedSetup>
@@ -367,9 +378,5 @@ The ability to configure a data project and entities using the manifest provides
 	</TestCase>
   </TestGroup>
 </TestManifest>
+```
 
-## Example: Automate data migration tasks
-Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration. The above examples of manifest applies here as well.
-
-## Example: Data entity test automation
-The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities. The above examples of manifest applies here as well.
