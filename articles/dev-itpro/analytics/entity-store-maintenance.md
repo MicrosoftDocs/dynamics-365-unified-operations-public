@@ -27,9 +27,9 @@ ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
 
-*Entity store maintenance**
+# Entity store maintenance
 
-[!include[banner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/dev-itpro/includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 When maintenance is performed on the entity store, it impacts the following components:
 
