@@ -401,15 +401,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     # [Application update 7.3.1](#tab/app-update-7-3-1)
 
-    > [!Note]
-    > There are no any actions required.
+      > [!Note]
+      > There are no any actions required.
 
     # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
 
-    > [!Note]
-    > There are no any actions required.
+     > [!Note]
+     > There are no any actions required.
 
-    ---
+   ---
 
 ### The Modern POS extension components
 
