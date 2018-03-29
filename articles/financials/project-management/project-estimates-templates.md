@@ -133,7 +133,7 @@ The Project expense estimates (PSA to Fin and Ops) template has a default filter
 ### Forecast model ID
 To update the default forecast model ID in the template, for the Expense estimates task, click the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
 - If you are using the default Microsoft Project expense estimates (PSA to Fin and Ops) template, select the first **Inserted Condition** in the **Applied Steps** section. In the **Function** entry, replace **O_forecast** with the name of the **Forecast model ID** that should be used with the integration. The default template has a forecast model ID from the demo data.
-- If you are creating a new template, you must add this column. Select **Add Conditional Column** and give the column a name, such as ModelID. Enter the condition for the column where if Estimate line ID is not null, then <enter the forecast model ID>; else null.
+- If you are creating a new template, you must add this column. Select **Add Conditional Column** and give the column a name, such as ModelID. Enter the condition for the column where if Estimate line ID is not null, then < enter the forecast model ID >; else null.
 
 ### Transform the billing types
 The Project expense estimates (PSA to Fin and Ops) template has a conditional column added to transform the billing types received from Project Service Automation during the integration.
