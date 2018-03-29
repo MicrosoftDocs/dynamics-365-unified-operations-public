@@ -39,7 +39,7 @@ This sample is part of the Retail software development kit (SDK). For informatio
 This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Finance and Operations that you're using.
+> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
 ## Development environment
 
@@ -224,7 +224,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-# [Application update 7.3.1](#tab/app-update-7-3-1)
+# [Retail 7.3.1](#tab/retail-7-3-1)
 
 #### SalesTransactionSignature sample component
 
@@ -263,7 +263,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-# [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 #### SequentialSignatureRegister component
 
@@ -357,11 +357,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
     The folder is **\\bin** folder under the IIS Retail Server site location.
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     The folder is **\\bin\\ext** folder under the IIS Retail Server site location.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     The folder is **\\bin\\ext** folder under the IIS Retail Server site location.
 
@@ -377,9 +376,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 6. Register the dependencies of the Retail Server extensions.
     
-
-    # [Application update 4](#tab/app-update-4)
-
+   # [Application update 4](#tab/app-update-4)
+    Complete the following procedure:
     1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
@@ -390,8 +388,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
       ```
 
-    # [Application update 5 and later](#tab/app-update-5-and-later)
-
+   # [Application update 5 and later](#tab/app-update-5-and-later)
+    Complete the following procedure:
     1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
     2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
     3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
@@ -401,12 +399,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
       ```
         
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+   # [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > No actions required.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+   # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     > [!Note]
     > No actions required.
@@ -448,12 +445,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         }
     ```
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > Not applicable for this version.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     > [!Note]
     > Not applicable for this version.
@@ -472,12 +468,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
 
     Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**, add the **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** project to the solution, and add a project reference to the **RetailProxy** project to reference **SalesTransactionSignatureSample.Messages**.
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > Not applicable for this version.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     > [!Note]
     > Not applicable for this version.
@@ -510,12 +505,11 @@ This part is equivalent to the Retail Server controller, but it extends the loca
         }
     ```
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > Not applicable for this version.
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     > [!Note]
     > Not applicable for this version.
@@ -529,8 +523,8 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
     ```
 
-#### Retail proxy extension component (Application update 7.3.1 and later)
-Complete the following procedure only if you're using Application update 7.3.1 and later. 
+#### Retail proxy extension component (Retail 7.3.1 and later)
+Complete the following procedure only if you're using Retail 7.3.1 and later. 
 
 1. In the **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample** folder, find the **RetailServer.Extensions.SalesTransactionSignatureSample** project, and build it.
 
@@ -555,31 +549,24 @@ Complete the following procedure only if you're using Application update 7.3.1 a
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureSample**
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
-
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-      **SalesTransactionSignatureNorway**
-
-      **SequentialSignature**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
 
     ---
 
@@ -587,31 +574,24 @@ Complete the following procedure only if you're using Application update 7.3.1 a
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureSample**
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
-
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-      **SalesTransactionSignatureNorway**
-
-      **SequentialSignature**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
 
     ---
 
@@ -639,8 +619,7 @@ Complete the following procedure only if you're using Application update 7.3.1 a
     }
     ```
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     ``` json
     {
         "baseUrl": "AuditEventExtensionSample"
@@ -650,7 +629,7 @@ Complete the following procedure only if you're using Application update 7.3.1 a
     }
     ```
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ``` json
     {
@@ -682,31 +661,24 @@ Complete the following procedure only if you're using Application update 7.3.1 a
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureSample**
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
-
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-      **SalesTransactionSignatureNorway**
-
-      **SequentialSignature**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
 
     ---
 
@@ -714,31 +686,24 @@ Complete the following procedure only if you're using Application update 7.3.1 a
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureSample**
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
-
-      **AuditEventExtensionSample**
-
-      **SalesTransactionSignatureSample**
-
-      **SalesTransactionSignatureNorway**
-
-      **SequentialSignature**
+      - **AuditEventExtensionSample**
+      - **SalesTransactionSignatureSample**
+      - **SalesTransactionSignatureNorway**
+      - **SequentialSignature**
 
     ---
 
@@ -766,8 +731,7 @@ Complete the following procedure only if you're using Application update 7.3.1 a
     }
     ```
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+    # [Retail 7.3.1](#tab/retail-7-3-1)
     ``` json
     {
         "baseUrl": "AuditEventExtensionSample"
@@ -777,7 +741,7 @@ Complete the following procedure only if you're using Application update 7.3.1 a
     }
     ```
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ``` json
     {
@@ -838,8 +802,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-         # [Application update 7.3.1](#tab/app-update-7-3-1)
-
+        # [Retail 7.3.1](#tab/retail-7-3-1)
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -848,7 +811,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-         # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+         # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -882,7 +845,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add key="AdaptorCallerFullTypeName" value ="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller"/>
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Retail 7.3.1](#tab/retail-7-3-1)
 
         In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
@@ -890,7 +853,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
         ```
 
-        # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section:
 
@@ -919,7 +882,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Retail 7.3.1](#tab/retail-7-3-1)
 
         Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
 
@@ -927,7 +890,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
-        # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
 
@@ -962,7 +925,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Retail 7.3.1](#tab/retail-7-3-1)
 
         ``` xml
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
@@ -974,7 +937,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
-        # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         ``` xml
             <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
@@ -1007,13 +970,13 @@ Follow these steps to create deployable packages that contain Retail components,
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Retail 7.3.1](#tab/retail-7-3-1)
 
         ``` xml
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
-        # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         ``` xml
             <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
@@ -1031,11 +994,11 @@ Follow these steps to create deployable packages that contain Retail components,
 
     The file is named **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** and located under **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug**
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
     The file is named **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** and located under **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug**
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** and located under **Extensions.SequentialSignatureRegister\\bin\\Debug**
 
