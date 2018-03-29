@@ -93,7 +93,7 @@ You must turn this feature on if you want to translate a product or solution doc
 #### NAV product availability
 You need this feature if you want to create a LCS project for NAV products and access DTS from within the project. 
 
-For more information about how to use DTS, see [Microsoft Dynamics 365 Translation Service user guide - User interface file translation](use-translation-service.md) and [Microsoft Dynamics 365 - Translation Service user guide - Documentation file translation](use-translation-service-ua.md). 
+For more information about how to use DTS, see [Microsoft Dynamics 365 Translation Service - User interface file translation](use-translation-service.md) and [Microsoft Dynamics 365 Translation Service - Documentation file translation](use-translation-service-ua.md). 
 
 
 ## Glossary
