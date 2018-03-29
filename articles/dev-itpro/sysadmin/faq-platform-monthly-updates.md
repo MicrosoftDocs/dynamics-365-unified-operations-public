@@ -5,7 +5,7 @@ title: Finance and Operations cloud platform monthly updates FAQ
 description: This topic provides some important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/26/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
