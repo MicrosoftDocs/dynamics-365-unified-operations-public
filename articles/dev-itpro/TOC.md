@@ -569,6 +569,7 @@
 
 # [System administration](sysadmin/system-administration-home-page.md)
 ## [Platform monthly updates FAQ](sysadmin/faq-platform-monthly-updates.md)
+## [Virtual machines that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ## [Add links to your organization's legal terms and privacy statement](sysadmin/legal-terms-privacy-statement.md)
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
