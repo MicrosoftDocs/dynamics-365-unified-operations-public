@@ -401,6 +401,7 @@
 ### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
 
+
 ## Standard data entities
 ### [Data entities report](data-entities/data-entities-report.md)
 ### [Data entities: Accounts payable and taxes](data-entities/data-entities-accounts-payable-taxes.md)
@@ -445,6 +446,8 @@
 ### [Security and data entities](data-entities/security-data-entities.md)
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
+
+## [Data task automation](data-entities/data-task-automation.md)
 
 # [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
