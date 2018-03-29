@@ -43,7 +43,7 @@ We recommend the following approach to data task automation:
 
     Tasks are defined in an XML manifest. You can keep your manifest under source control as part of configuration management in your application lifecycle management (ALM) strategy.
 
-3.	Put the data packages related to the automation manager in the asset library of the appropriate LCS project. 
+3.	Put the data packages related to data task automation in the shared asset library of LCS. You can also choose to use specific LCS project if needed. 
 
     The Data task automation manager can consume packages from any environment (sandbox and/or production) related to the LCS project.
 
