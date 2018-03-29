@@ -284,8 +284,12 @@ The first example below configures a data project without a recurring schedule. 
   </TestGroup>
 </TestManifest>
 
-## Example: Automated demo data set up
-Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed so that you do not have to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because the data project import happens in the specified legal entity, so that the user does not need to switch companies to import a data package. The folloiwng is an example task for demo data import where the demo data packages are in the shared asset library.
+## Example: Manifest with automated demo data set up, automated data migration tasks, and data entity test automation
+Manifests can be created with tasks to import demo data packages directly from LCS. You can schedule all the tasks to be executed so that you do not have to monitor individual package import for completion. The <LegalEntity> element comes in very handy in this scenario because the data project import happens in the specified legal entity, so that the user does not need to switch companies to import a data package. The following is an example task for demo data import where the demo data packages are in the shared asset library.
+
+Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration. The above examples of manifest applies here as well.
+
+The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities. The above examples of manifest applies here as well.
 
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
