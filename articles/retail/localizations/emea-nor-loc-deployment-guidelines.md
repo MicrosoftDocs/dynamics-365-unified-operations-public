@@ -398,7 +398,6 @@ The CRT extension components are included in the CRT samples. To complete the fo
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
       ```
         
-
    # [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > No actions required.
