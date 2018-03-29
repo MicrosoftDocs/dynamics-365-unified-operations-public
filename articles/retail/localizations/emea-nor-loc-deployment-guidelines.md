@@ -547,22 +547,26 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 2. Include the following existing source code folders in the **Pos.Extensions** project.
 
     # [Application update 4](#tab/app-update-4)
-      Source code folders: 
+      
+    Source code folders: 
       - **AuditEventExtensionSample**
       - **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      Source code folders:
+    
+    Source code folders:
       - **AuditEventExtensionSample**
       - **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      Source code folders:
+    
+    Source code folders:
       - **AuditEventExtensionSample**
       - **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      Source code folders:
+    
+    Source code folders:
       - **AuditEventExtensionSample**
       - **SalesTransactionSignatureSample**
       - **SalesTransactionSignatureNorway**
