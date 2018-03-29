@@ -144,7 +144,7 @@ Manifests can be created with tasks to import demo data packages directly from L
 ![Demo data](./media/DemoData.png)
 
 ## Example: Automate data migration tasks
-Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration.
+Typically, once an environment for data migration has been deployed, the implementation team proceeds with configuring the environment with the base configuration data packages (*golden configuration data packages*). After the base configuration is complete, the migrated data is imported using data management. Import tasks can be configured as tasks in a manifest and can then be executed using the data task automation manager to simplify and streamline data migration. The above examples of manifest applies here as well.
 
 ## Example: Data entity test automation
-The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities.
+The ability to configure a data project and entities using the manifest provides the flexibility to test various combinations of scenarios for data entities. The above examples of manifest applies here as well.
