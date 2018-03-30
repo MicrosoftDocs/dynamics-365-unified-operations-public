@@ -842,6 +842,7 @@
 ##### [Set up payment slip format](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### Estonia
+##### [Personal information requests](../financials/localizations/emea-est-personal-info.md)
 ##### [VAT statement](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### France
