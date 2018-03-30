@@ -106,6 +106,8 @@ This SQL statement runs asynchronously. In other words, although it appears to b
 SELECT * FROM sys.dm_database_copies
 ```
 
+[!WARNING] Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
+
 ## Prepare the database
 
 Run the following script against the copy of the database to turn off change tracking, and to remove SQL Database users and a system view. The script also corrects system flags, removes references to the previous environment, withholds batches, and removes email configuration. All these changes are required for a successful export and import of the database. These changes also help guarantee that, when the AOS computer is started in the target environment, nothing automatically starts to run.
