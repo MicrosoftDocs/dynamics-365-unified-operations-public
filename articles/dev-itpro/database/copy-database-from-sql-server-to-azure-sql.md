@@ -189,9 +189,8 @@ Here is an explanation of the parameters:
 
 You will receive the following warning message. You can safely ignore it.
 
-```
-A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
-```
+> A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+
 
 > [!WARNING] 
 > Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
