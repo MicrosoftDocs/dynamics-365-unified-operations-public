@@ -5,7 +5,7 @@ title: Copy a Finance and Operations database – SQL Server to production Azure
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
 author: maertenm
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 03/30/2018
 
 ms.topic: article
 ms.prod: 
@@ -189,9 +189,12 @@ Here is an explanation of the parameters:
 
 You will receive the following warning message. You can safely ignore it.
 
-> \*\*\* A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+```
+A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+```
 
-[!WARNING] Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
+> [!WARNING] 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Update the database
 
