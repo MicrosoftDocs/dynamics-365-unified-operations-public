@@ -38,8 +38,8 @@ This page points you to resources that can help you learn about the new features
 
 |Release | Build number | Availability | Learn more |
 |--------|--------------|--------------|------------|
-|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | March 2018 | [KB 4093263: Version 7.3.2](https://fix.lcs.dynamics.com/Issue/Details?kb=4093263&bugId=3937220&qc=63d57de184b7b2ac5563767292dacaea8621707198b55ea9c5f08b106a4c5132) |
-|Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | March 2018 | [KB 4092799: Version 7.3.1](https://fix.lcs.dynamics.com/Issue/Details?kb=4092799&bugId=3936439&qc=b095917f0b114a26af430086cd5dc7eb4d383b6bcf225a62952cacff0f730c06) |
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | March 2018 | [KB 4093263: Version 7.3.2*](https://fix.lcs.dynamics.com/Issue/Details?kb=4093263&bugId=3937220&qc=63d57de184b7b2ac5563767292dacaea8621707198b55ea9c5f08b106a4c5132) |
+|Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | March 2018 | [KB 4092799: Version 7.3.1*](https://fix.lcs.dynamics.com/Issue/Details?kb=4092799&bugId=3936439&qc=b095917f0b114a26af430086cd5dc7eb4d383b6bcf225a62952cacff0f730c06) |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | February 2018 | **Coming soon** |
 |Application update 5 | 7.2.21792.64093 | February 2018 | [KB 4089596: Update 5*](https://fix.lcs.dynamics.com/Issue/Details?kb=4089596&bugId=3893142&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5) |
 |Application update 4 | 7.2.21792.64070 | October 2017 | [KB 4052437: Update 4*](https://fix.lcs.dynamics.com/Issue/Details?kb=4052437&bugId=3866274&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838) |
