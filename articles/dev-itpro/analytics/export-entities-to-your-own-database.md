@@ -20,6 +20,7 @@ ms.reviewer: margoc
 ms.search.scope:  Operations 
 
 # ms.tgt_pltfrm: 
+
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry:
@@ -41,6 +42,9 @@ The BYOD feature lets administrators configure their own database, and then expo
 - Export either all the records (*full push*) or only the records that have changed (*incremental push*).
 - Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
+
+Note:
+Since BYOD is your own database, you must ensure that there are no active sessions on your BYOD when data is being synced from Microsoft Dynamics 365 for Finance and Operations. Not planning the writes and reads to/from BYOD could result in SQL locks which inturn could result in slow writes to even complete failure of exports to BYOD.
 
 ## Entity store or BYOD?
 

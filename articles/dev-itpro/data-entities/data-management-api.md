@@ -1,8 +1,9 @@
----
+ ---
 # required metadata
 
 title: Data management package integration API
-description: This topic describes the data management framework's package REST API. The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages.
+description: This topic describes the data management framework's package REST API. The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages. This is applicable to both cloud and on premise deployments. For on premise deployments this is currently available for 7.2, platform update 12 build 7.0.4709.41184.
+
 author: Sunil-Garg
 ms.date: 09/21/2017
 manager: AnnBe
@@ -49,16 +50,16 @@ Two APIs in Finance and Operations support file-based integration scenarios: the
 If you decide that the recurring integrations API meets your requirement better than the data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the data management framework's package API.
 
 ## Authorization
-The data management framework's package API uses OAuth 2.0 for authorizing access. The API must be called by using a valid OAuth access token. For more details about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). 
+The data management framework's package API uses OAuth 2.0 for authorizing access. The API must be called by using a valid OAuth access token. For more details about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). For on premise deployments, ADFS will be used for authorization. 
 
 > [!NOTE]
-> When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** > **Setup** > **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
+> When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** > **Setup** > **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow. For on premise deployments, this list must have a valid client ID from ADFS.
 
 ## Import APIs
 The following APIs are used to do file (data package) imports.
 
 ### GetAzureWritableUrl
-The **GetAzureWritableUrl** API is used to get a writable blob URL. This method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations.
+The **GetAzureWritableUrl** API is used to get a writable blob URL. This method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations. For on premise deployments, this API will still return the URL which is abstracted to the local storage. The API name has not been changed for on premise to keep a single API set for both cloud and on premise.
 
 > [!NOTE]
 > An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
@@ -99,7 +100,7 @@ HTTP/1.1 200 OK
 
 
 ### ImportFromPackage
-The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Azure Blob storage that is associated with your implementation of Finance and Operations.
+The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Azure Blob storage that is associated with your implementation of Finance and Operations. For on premise deployments, the import will be initiated from the local storage to which the file was uploaded previously. The API name has not been changed for on premise to keep a single API set for both cloud and on premise.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -147,7 +148,7 @@ HTTP/1.1 200 OK
 The following APIs are used to do file (data package) exports.
 
 ### ExportToPackage
-The **ExportToPackage** API is used to initiate an export of a data package.
+The **ExportToPackage** API is used to initiate an export of a data package. This is applicable to both cloud and on premise deployments.
 
 - The export data project must be created in Finance and Operations before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
@@ -193,7 +194,7 @@ HTTP/1.1 200 OK
 | string executionId | The execution ID of the data export. |
 
 ### GetExportedPackageUrl
-The **GetExportedPackageUrl** API is used to get the URL of the data package that was exported by a call to **ExportToPackage**.
+The **GetExportedPackageUrl** API is used to get the URL of the data package that was exported by a call to **ExportToPackage**. This is applicable to both cloud and on premise deployments.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -229,7 +230,7 @@ HTTP/1.1 200 OK
 The following APIs are used to check status. They are used during both import flows and export flows.
 
 ### GetExecutionSummaryStatus
-The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs to check the status of a data project execution job.
+The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs to check the status of a data project execution job. This is applicable to both cloud and on premise deployments.
 
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
