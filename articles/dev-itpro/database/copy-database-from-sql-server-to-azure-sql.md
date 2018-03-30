@@ -147,7 +147,7 @@ drop user axdeployextuser
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
+> The **140** folder reflects the current version, you are required to use the version that is available in your sandbox environment. This may require you to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) in your development environment.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -170,7 +170,7 @@ Copy the .bacpac file that was generated in the previous section to the AOS comp
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
+> The version of SqlPackage.exe must match the version used to export the .bacpac file. You may be required to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -190,6 +190,8 @@ Here is an explanation of the parameters:
 You will receive the following warning message. You can safely ignore it.
 
 > \*\*\* A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+
+[!WARNING] Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Update the database
 
