@@ -188,7 +188,6 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
         Modify the **HardwareStation.Shared.config** and **HardwareStation.Dedicated.config** configuration files.
 
-
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
         ```
