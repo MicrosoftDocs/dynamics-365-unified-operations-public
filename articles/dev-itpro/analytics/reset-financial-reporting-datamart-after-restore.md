@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset the Financial reporting data mart for Finance and Operations
-description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
 ms.date: 02/07/2018
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition:
+This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
 
 - Financial reporting release 7.2.6.0 and later
 - Financial reporting release 7.0.10000.4 and later
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
+- Microsoft Dynamics 365 for Finance and Operations (on-premises)
 
 To get Finance and Operations Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 

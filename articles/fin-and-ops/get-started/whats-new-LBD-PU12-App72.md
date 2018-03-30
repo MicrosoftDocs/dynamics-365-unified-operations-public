@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with plat
 description: This topic describes features that are either new or changed in on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12. This deployment option became available in March 2018.
 author: sericks007
 manager: AnnBe
-ms.date: 03/08/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in on-premises depl
 
 For more information about platform update 12, see [What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12](whats-new-platform-update-12.md).
 
-For more resources about on-premises deployments, see [On-premises deployment landing page](../../dev-itpro/deployment/on-premises-deployment-landing-page.md).
+For more resources about on-premises deployments, see [On-premises deployment home page](../../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 ## Setup and deployment
 Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments (Platform update 12)](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
@@ -50,5 +50,7 @@ Note that the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigu
 ## Hotfixes
 Hotfixes that you can download from LCS provide additional features for your on-premises deployments of Platform update 12. Be sure to apply the following hotfixes:
 
-- **KB 4091763: Admin toggles for Client connectivity and Skype presence**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines.
+- **[KB 4091763 - Admin toggles for Client connectivity and Skype presence](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6)**: This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines. For more information, see [Client internet connection](../../dev-itpro/user-interface/client-disconnected.md).
+
+- **[KB 4093454 - ISV license support for on-premises](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592)**: When deploying an on-premises environment starting from platform update 12, the tenant GUID is automatically populated from LCS to the on-prem environment. Licensing validation can read this value and successfully validate the licenses. For more information, see [ISV licensing (on-premises)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md).
 

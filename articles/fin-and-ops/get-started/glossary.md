@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance and Operations glossary
-description: This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations.
 author: tonyafehr
 manager: AnnBe
 ms.date: 07/25/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations. 
 
 ### **A**
 

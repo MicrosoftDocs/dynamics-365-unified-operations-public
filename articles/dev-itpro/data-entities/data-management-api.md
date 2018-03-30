@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management package integration API
-description: This topic describes the data management framework's package REST API. The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
+description: This topic describes the data management framework's package REST API. The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages.
 author: Sunil-Garg
 ms.date: 09/21/2017
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, by using data packages.
+This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages.
 
 ## Choosing an integration API
 Two APIs in Finance and Operations support file-based integration scenarios: the data management framework's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use. 

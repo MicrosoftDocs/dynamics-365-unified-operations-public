@@ -93,7 +93,7 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers.
 
  > [!WARNING]
- > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure.
+ > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
 
 The hardware configuration includes the following components:
 
@@ -303,7 +303,7 @@ After the VMs are joined to the domain, add the AOS Service Accounts, **Contoso\
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises, Enterprise edition - Deployment scripts - Latest** row.
+3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts - Latest** row.
 4. Click the **Versions** button, and then select **Version 1**.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
@@ -571,7 +571,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 | Release | Demo Data |
 |-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations, Enterprise Edition (on-premises) - Demo data |
+| On-premises General Availability (GA) release | Dynamics 365 for Operations (on-premises) - Demo data |
 | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.

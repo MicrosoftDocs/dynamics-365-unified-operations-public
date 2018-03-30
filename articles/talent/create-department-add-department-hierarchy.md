@@ -60,6 +60,5 @@ To add a department to the department hierarchy, follow these steps.
 5.  Save your changes. You receive a message that a draft version of the hierarchy has been created.
 6.  When you're ready, click **Publish** in the hierarchy designer. You can enter an effective date that indicates when the hierarchy should be published. For example, to add a new department at the beginning of the next calendar year, set the effective date to January 1 of the new calendar year. The changes to the hierarchy will take effect on that date.
 
-
-
-
+## Steps for creating a department
+Refer to the [Define new departments](../fin-and-ops/hr/tasks/define-new-departments.md) topic for the step-by-step procedure for creating a new department. 

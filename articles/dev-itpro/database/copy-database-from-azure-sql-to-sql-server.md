@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy a Finance and Operations database – Azure SQL to SQL Server
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: maertenm
 manager: AnnBe
 ms.date: 03/07/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
 ## Overview
 
@@ -59,10 +59,11 @@ The following prerequisites must be met before you can move a database:
     > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
-- To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+    > [!IMPORTANT] 
+    > To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio (SSMS) that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the VM that runs Application Object Server (AOS) in the sandbox environment. Do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
-    - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
+    - The exported \*.bacpac file may be dependent on version specific features of Management Studio. Make sure the SSMS version that you use to export the database **is not newer** than the SSMS version (on the target environment) that you will be using to import the bacpac.
 
 ## Before you begin
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription estimator
-description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS) for Microsoft Dynamics 365 Finance and Operations, Enterprise edition.
+description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS) for Microsoft Dynamics 365 Finance and Operations.
 author: manalidongre
 manager: AnnBe
 ms.date: 03/13/2018

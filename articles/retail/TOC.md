@@ -3,8 +3,8 @@
 # Get started
 ## [What's new or changed](get-started/whats-new.md)
 ## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
-## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Deployment options](dev-itpro/choose-deployment.md)
 
 
@@ -46,8 +46,9 @@
 
 # Modern Point of Sale (MPOS) and Cloud POS
 ## [Choose between Modern POS and Cloud POS](MPOS-or-CPOS.md)
-## [POS operations](POS-operations.md)
+## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
+## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +61,7 @@
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up images for MPOS](set-up-manage-images-retail-mpos.md)
 ## [Info codes overview](info-codes-retail.md) 
+## [POS improvements for serialized products](serialized-inventory.md)
 ## Product recommendations
 ### [Personalized product recommendations overview](personalized-product-recommendations.md)
 ### [Add a recommendations control on a POS device](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
+## [Prevent discounts for retail products](prevent-discounts.md)
 ## [Create coupons for retail sales](retail-coupons.md)
 
 # Products and merchandising
@@ -105,6 +108,7 @@
 ## [Attributes and attribute groups overview](attribute-attributegroups-lifecycle.md)
 ## [Create and manage attributes](create-manage-attributes.md)
 ## [Set up retail products](set-up-retail-products.md)
+## [Enhanced product and category management](category-management-product-creation.md)
 ## [Product dimensions](../supply-chain/pim/product-dimensions.md)
 ## [Set up bar codes](set-up-bar-codes.md)
 ## [Set up bar code masks](set-up-bar-code-masks.md)
@@ -190,13 +194,14 @@
 # [Retail development & administration](dev-itpro/dev-retail-home-page.md)
 
 ## Architecture
-### [Components of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
+### [Components of Microsoft Dynamics 365 for Finance and Operations - Retail](retail-components.md)
 ### [Retail Server architecture](dev-itpro/retail-server-architecture.md)
 ### [Retail channel communications](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architecture](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail online store publishing architecture](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail Channel Performance Power BI content](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [Payment Application Data Security Standards (PA-DSS) certification](dev-itpro/PA-DSS-Certification.md)
+### [Retail capabilities available in on-premises deployments](retail-onprem.md)
 
 ## Deployment and hotfixes
 ### [Retail Store Scale Unit overview](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 ### [Mass deployment of Retail self-service components](dev-itpro/retail-mass-deployment.md)
 ### [Retail component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Upgrade and N-1 support
 ### [Overview of upgrade and N-1 support](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Device management implementation guidance](implementation-considerations-devices.md)
 
 ## Environment configuration
-### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
 ## Point of sale extensibility
