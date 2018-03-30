@@ -573,26 +573,26 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 3. Enable the extensions to be compiled in **tsconfig.json** by removing the following folders from the exclude list.
 
     # [Application update 4](#tab/app-update-4)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+    
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
-      - **SalesTransactionSignatureNorway**
-      - **SequentialSignature**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
+      **SalesTransactionSignatureNorway**
+      **SequentialSignature**
 
     ---
 
@@ -661,52 +661,52 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 2. Include following existing source code folders in the **Pos.Extensions** project.
 
     # [Application update 4](#tab/app-update-4)
-      Include these folders:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+     
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      Include these folders:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      Include these folders:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      Include these folders:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
-      - **SalesTransactionSignatureNorway**
-      - **SequentialSignature**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
+      **SalesTransactionSignatureNorway**
+      **SequentialSignature**
 
     ---
 
 3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
 
     # [Application update 4](#tab/app-update-4)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
+     
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      Remove these folders from the exclude list:
-      - **AuditEventExtensionSample**
-      - **SalesTransactionSignatureSample**
-      - **SalesTransactionSignatureNorway**
-      - **SequentialSignature**
+      
+      **AuditEventExtensionSample**
+      **SalesTransactionSignatureSample**
+      **SalesTransactionSignatureNorway**
+      **SequentialSignature**
 
     ---
 
