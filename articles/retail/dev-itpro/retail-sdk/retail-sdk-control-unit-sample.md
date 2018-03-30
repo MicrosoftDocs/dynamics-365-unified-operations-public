@@ -42,8 +42,9 @@ This sample is a part of the Retail software development kit (SDK). For informat
 
 This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
+
 > [!NOTE]
-> Some steps in the procedures in this topic differ if you have Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with version application update 7.3.0 and later.
+> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../../get-started/whats-new.md).
 
 ## Development environment
 
@@ -66,13 +67,13 @@ Follow these steps to set up a development environment so that you can test and 
 
     5. Find the configuration file for Hardware station's extensions.
 
-    # [Application update 7.3.0](#tab/app-update-7-3-0)
+    # [Retail 7.3 and earlier](#tab/retail-7-3)
 
     **Remote Hardware station:** The file is named **hardwarestation.shared.config**, and it's under the IIS Hardware station site location.
 
     **Local Hardware station:** The file is named **HardwareStation.Dedicated.config**, and it's under the Modern POS client broker location.
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
     The file is named **HardwareStation.Extension.config**:
 
@@ -182,15 +183,14 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
     2. Add the following section to the **composition** section of the Hardware station config file.
 
-        # [Application update 7.3.0](#tab/app-update-7-3-0)
-
+        # [Retail 7.3 and earlier](#tab/retail-7-3)
         Modify **HardwareStation.Shared.config** and **HardwareStation.Dedicated.config** config files.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
         ```
 
-        # [Application update 7.3.1](#tab/app-update-7-3-1)
+        # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
         Modify **HardwareStation.Extension.config** config file.
 
