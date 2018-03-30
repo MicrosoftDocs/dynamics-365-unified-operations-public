@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: ERWorkspace 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -222,6 +221,21 @@ The following sections list resources by country/region.
 -   [Move a fixed asset to inventory](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Low-cost fixed assets](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
+### India
+
+- [Fixed assets](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Transfer of capital items to the fixed asset](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Attach a day-based calendar to a fixed asset book](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Set up parameters to calculate depreciation](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Set up asset group depreciation for depreciation books](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Create an inventory model group for capital items](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Shift depreciation calculation for India fixed assets](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Define type of shift and industry for books and attach to fixed asset](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
+    - [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
+    - [Tax thresholds FAQ](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
+
 ### Italy
 
 -   [Italian black list report](../../financials/localizations/emea-ita-black-list-report.md)
@@ -280,6 +294,8 @@ The following sections list resources by country/region.
 
 ### Norway
 
+-   [Cash registers for Norway](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Deployment guidelines for cash registers for Norway](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets import format](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [VAT statement](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

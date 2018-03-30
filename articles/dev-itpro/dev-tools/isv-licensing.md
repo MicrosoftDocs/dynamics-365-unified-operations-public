@@ -153,7 +153,7 @@ Follow these steps to enable licensing for your solution.
     | customer        | The customer's tenant name (from the screen shot under step 1).              |
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screen shot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
-    | usercount       | Optional: The number of users that custom validation logic can use as required. |
+    | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but is not limited to users. |
 
     Here is an example.
 

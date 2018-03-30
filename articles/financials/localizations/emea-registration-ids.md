@@ -59,7 +59,7 @@ Registration category is country/region registration identifier approved for usi
 |-----------------------|----------------|
 | Registration type     | The registration type in particular country/region.|
 | Restricted to         | The kind of restriction applies to the tax registration type: None, Person, Organization.|
-| Registration category | The unique registration identifier approved for using in the country. The full list of supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition categories is below. |
+| Registration category | The unique registration identifier approved for using in the country. The full list of supported in Microsoft Dynamics 365 for Finance and Operations categories is below. |
 
 ## Enter registration IDs for Global address book records
 

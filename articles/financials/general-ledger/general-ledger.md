@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -51,7 +51,7 @@ currency amounts. At the end of a fiscal year, you must generate closing transac
 
 [![Business process](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# Sales tax
+## Sales tax
 Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city.
 In addition, the rules must be updated periodically when tax authorities change their requirements. Sales tax codes contain the basic 
 information about how much you collect and pay to the authorities. When you set up sales tax codes, you define the amounts or 
@@ -64,14 +64,14 @@ your tax authorities require.
  - [Sales tax payments and rounding rules](round-sales-tax-payments.md)
 
 
-### Additional resources
+## Additional resources
 
-#### What's new and in development
+### What's new and in development
 
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new 
 features are in development. 
 
-#### Blogs
+### Blogs
 
 You can find opinions, news, and other information about Accounts payable and other solutions on the
 [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
@@ -83,10 +83,10 @@ procedures are also similar in the current version.
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
 gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
-#### Task guides
+### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
 
-#### Videos
+### Videos
 
 Check out the how-to videos that are now available on the 
 [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

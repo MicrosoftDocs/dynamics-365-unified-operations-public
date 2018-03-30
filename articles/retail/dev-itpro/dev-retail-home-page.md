@@ -84,6 +84,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
+- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -126,6 +127,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
+- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

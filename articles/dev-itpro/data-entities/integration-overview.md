@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Integration patterns and practices
-description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Choose a data integration (import/export) strategy 
+description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Integration patterns and practices
+# Choose a data integration (import/export) strategy
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 
 The topic describes integration patterns, integration scenarios, and integration solutions and best practices for Finance and Operations. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
@@ -46,6 +46,7 @@ The following table lists the integration patterns that are available for Financ
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management API](data-management-api.md) |
 | Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
+| Excel integration | [Office integration](../office-integration/office-integration.md) |
 
 ## Synchronous vs. asynchronous integration patterns
 

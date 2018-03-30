@@ -2,7 +2,7 @@
 # required metadata
 
 title: Conditional sales tax for protested promissory notes or bills of exchange
-description: For legal entities in Spain, if a promissory note payment for a vendor or a bill of exchange payment for a customer is settled against an invoice that includes conditional tax, and you protest the settlement, the cancellation of conditional tax is registered with a voucher that is related to the settlement cancellation voucher.
+description: This topic provides information about promissory notes or bills of exchange for legal entities in Spain.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: BankBillOfExchangeTable, BankPromissoryNoteTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw

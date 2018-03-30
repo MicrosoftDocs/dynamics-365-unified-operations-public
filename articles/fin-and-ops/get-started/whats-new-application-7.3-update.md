@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 01/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 update 
+ms.dyn365.ops.version: 7.3 
 ---
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -74,7 +74,7 @@ Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dyna
 -------------------------------------------------------------------------------------------------------------------
 
 Enhancements to Prospect to cash integration between Dynamics 365 for Sales and
-Dynamics 365 for Finance and Operations, Enterprise edition enable direct
+Dynamics 365 for Finance and Operations, Enterprise edition 7.3 enable direct
 synchronization in the following processes:
 
 -   Maintain accounts in Sales and sync them to Finance and Operations as
@@ -114,6 +114,11 @@ Highlights of these integration enhancements include:
 
 -   Sync support for country/region ISO codes on invoice address, exposed on
     data entities.
+    
+### More information 
+
+-  [Introduction to Prospect to cash integration (Video)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+-  [Prospect to cash documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
 
 ## Expense management mobile workspace enhancements
 This feature provides support for functionality that is available in expense management that was not available in the mobile solution for expense management. This list includes (but is not limited to):
@@ -184,6 +189,14 @@ The **Inventory transactions log** table will be periodically cleaned up to
 remove all records that are older than 90 days. The cleanup is triggered
 automatically by regenerating the master plan.
 
+## India localization
+India localization is available with the following features:
+
+- Withholding tax, including TDS and TCS.
+- Fixed assets, including depreciation as per the Companies act, depreciation as per the Income tax act, and special depreciation.
+- Value-added tax (VAT).
+- Custom duty and India Goods and Services Tax (GST). For more information, see the “Tax Engine (GTE) – India GST only” section in this topic.
+
 Master and reference data entities for warehouse and transportation management  
 --------------------------------------------------------------------------------
 
@@ -193,12 +206,12 @@ the default configuration templates. The default configuration templates provide
 the entities and sequencing that are required to copy configuration data from
 one instance to another instance in a single step.
 
+For more information, see [Set up a warehouse by using a warehouse configuration template](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/inventory/warehouse-template). 
+
 ## Notifications in Point of Sale
 In today's modern retail environment, the store associates are assigned various tasks such as helping customers, running transactions, performing stock counts, or receiving orders in the store. Point of Sale (POS) client empowers the associates to do these and much more, all in one application. With various tasks to be performed in a day, there is a need to notify the associates when a task requires their attention. To address this requirement, we have created a notification framework that utilizes the notification capability in POS. For this release, the notifications can be enabled for POS operations only, and out of the box, the notifications can only be enabled for the order fulfillment operation. However, the notification framework is extensible and enables developers to easily plug in custom code for any operation. We have also provided the ability to configure role-based notifications that empower the retailers to easily define who should receive what notifications.
 
-Optimization advisor   
------------------------
-
+## Optimization advisor   
 The Optimization advisor workspace helps business users follow best practices to
 optimize the business processes that they own. It analyzes business processes,
 finds optimization opportunities, leverages application data to quantify the
@@ -226,6 +239,10 @@ With the current release, the advisor presents opportunities to optimize:
 
 -   Master data quality across BOMs, routes, and inventory management.
 
+### More information
+-  [Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Create rules for Optimization advisor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/optimization-advisor)
+
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------
 
@@ -251,6 +268,47 @@ the following capabilities:
     once. For example, if you plan to produce 1000 pieces of the finished goods
     per day or shift, then you can easily limit the release of materials to
     match the requirement for this quantity.
+
+## Payment SDK and Retail POS handlers
+**Payment SDK** - We added the support for sending custom error messages from the payment SDK to POS. Previously POS transformed all the messages to standard error message defined in the POS. Now you can send custom messages and error code to easily troubleshoot payment errors.
+
+**POS view extension** – Support has been added for extending the POS Picking and receiving screen to add custom columns.
+
+**POS APIs** - New deposit override APIs have been added to support overriding the deposit through code for scenarios, such as layaway.
+
+**POS overridable request handlers** - We added a new handler in POS for extensions to override the logic and automate serial number entry. If an extension requires the modification of serial number entry in POS, you can override the new Get serial number handler. For example, in POS, a dialog box captures the serial number but you can automate the flow by calling an external webservice or autogenerated serial number and then override this request.
+
+**Sample extensions** - In addition to the existing samples, we added the following samples to the Retail SDK to help with extensions.
+   - Retail proxy extension for store hours and cross loyalty samples.
+   - Custom column sample for the Picking and receiving screen.
+   - POS serial number automation sample
+   - Additional POS API samples.
+
+Product configuration enhancements  
+------------------------------------
+
+**Arrange attributes in one or multiple columns** - To optimize configuration
+experience, you can arrange attributes in one or more columns. The maximum
+number of columns is 10, and the default number is 1. This makes it easier to
+model configuration experiences with many attributes in one configuration
+step. You must first group attributes before you set up the field. If some
+attributes are not added to groups, they will be shown in the leftmost column.
+If all attributes are assigned to attribute groups, the groups will be shown in
+the columns.
+
+**Enable Z3 Solver strategy for product configuration** - The Z3 Solver strategy
+is available for product configuration. In many benchmark tests, the solver has
+shown a significant performance improvement compared to the Microsoft solver
+foundation (MSF) solver. The new Z3 Solver strategy will be assigned per
+configuration model. Note that the other three solver strategies are all
+strategies of MSF: **Default**, **Top-down**, and **Minimal domains first**.
+
+For more information, see [Solver strategy for product configuration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/solver-strategy-product-configuration).
+
+**Import, export, and migrate the product configuration model** - You can export
+and import the product configuration model and model versions using standard
+data entities. The configuration model is exported as an XML structure and saved
+in a single entity, which makes it simple to export and import again.  
 
 Product lifecycle state   
 --------------------------
@@ -313,29 +371,12 @@ identified as obsolete.  
 Note, the ability to set individual product lifecycle states using the data
 entities for released products or product variants is not supported.
 
-Product configuration enhancements  
-------------------------------------
+For more information, see [Product lifecycle state](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/product-lifecycle).
 
-**Arrange attributes in one or multiple columns** - To optimize configuration
-experience, you can arrange attributes in one or more columns. The maximum
-number of columns is 10, and the default number is 1. This makes it easier to
-model configuration experiences with many attributes in one configuration
-step. You must first group attributes before you set up the field. If some
-attributes are not added to groups, they will be shown in the leftmost column.
-If all attributes are assigned to attribute groups, the groups will be shown in
-the columns.
+## Retail proxy - New extension point added to support retail proxy extension without inline changes
+Previously you needed to modify the retail proxy project inline to generate the Retail proxy to support your new CRT/RS extension in POS offline mode or e-Commerce extensions. Now, you can generate proxy without any inline changes as a completely new extension. We also added support for multiple ISV/Partner extension proxies without any code merge between the extension proxies. This will help you with a seamless upgrade for proxy extensions.
 
-**Enable Z3 Solver strategy for product configuration** - The Z3 Solver strategy
-is available for product configuration. In many benchmark tests, the solver has
-shown a significant performance improvement compared to the Microsoft solver
-foundation (MSF) solver. The new Z3 Solver strategy will be assigned per
-configuration model. Note that the other three solver strategies are all
-strategies of MSF: **Default**, **Top-down**, and **Minimal domains first**.
-
-**Import, export, and migrate the product configuration model** - You can export
-and import the product configuration model and model versions using standard
-data entities. The configuration model is exported as an XML structure and saved
-in a single entity, which makes it simple to export and import again.  
+For more information, see [Retail Typescript and C# proxies](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos).
 
 Safety stock replenishment enhancements   
 ------------------------------------------
@@ -375,8 +416,15 @@ in time, the inventory receipt with the latest expiry date will be used for
 safety stock to allow real demand, such as sale lines or BOM lines, to be
 fulfilled in the FEFO (First Expired, First Out) order.
 
+For more information, see [Safety stock fulfillment for items](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/safety-stock-replenishment).
+
 ## Tax Engine (GTE) – India GST only
 The Tax Engine (GTE) is an essential part of the configurable business application experience in Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
+
+### More information
+- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
+- [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
+- [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 Vendor collaboration 
 ---------------------

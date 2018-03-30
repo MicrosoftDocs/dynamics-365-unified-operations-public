@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysUserSetup, WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
+ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

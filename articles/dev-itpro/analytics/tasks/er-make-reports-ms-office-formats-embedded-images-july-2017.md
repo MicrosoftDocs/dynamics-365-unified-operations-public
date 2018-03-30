@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Make reports in Microsoft Office formats with embedded images for electronic reporting (ER)  (Part 1) 
-description: The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images. 
+title: Design configurations to generate reports in Microsoft Office formats with embedded images for electronic reporting (ER) (Part 1) 
+description: The steps in this topic provide information about how to design Electronic reporting (ER) configurations that generate electronic documents in Microsoft Office formats (Excel and Word) that contain embedded images. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -26,101 +26,74 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Make reports in Microsoft Office formats with embedded images for electronic reporting (ER)  (Part 1) 
+# Design configurations to generate reports in Microsoft Office formats with embedded images for electronic reporting (ER) (Part 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.
+To complete the steps in this procedure, first complete the procedure, “ER Create a configuration provider and mark it as active.” 
+This procedure explains how to design Electronic reporting (ER) configurations to generate a Microsoft Excel or Word document that contains embedded images. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. These steps can be completed using the USMF dataset. 
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. Before you begin, download and save the files listed in the Help topic, [Embed images and shapes in business documents that are generated with the Electronic reporting tool](../electronic-reporting-embed-images-shapes.md). The files are: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png, and Cheque template Word.docx.
 
-In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.  To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide. These steps can be performed in ‘USMF’ company.
+## Verify prerequisites  
+ 1. Go to Organization administration > Workspaces > Electronic reporting.  
+ 2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active.”   
+ 3. Click Reporting configurations.  
+ 
+## Add a new ER model configuration  
+ 1. Instead of creating a new model, you can load the ER model configuration file (Model for cheques.xml) that you saved earlier. This file contains the sample data model for payment cheques and the mapping of the data model to the data components of the Dynamics 365 for Operations application.   
+ 2. On the Versions FastTab, click Exchange.   
+ 3. Click Load from XML file.  
+ 4. Click Browse, and then select Model for cheques.xml.   
+ 5. Click OK.  
+ 6. The loaded model will be used as a data source of information to generate documents that contain images in Excel and Word.  
 
+## Add a new ER format configuration  
+ 1. Instead of creating a new format, you can load the ER format configuration file (Cheques printing format.xml) that you saved earlier. This file contains the sample layout of the format to print cheques using the pre-printed form and the mapping of this format to the ‘Model for cheques’ data model.   
+ 2. Click Exchange.  
+ 3. Click Load from XML file.  
+ 4. Click Browse and select the Cheques printing format.xml file.   
+ 5. Click OK.  
+ 6. In the tree, expand 'Model for cheques'.  
+ 7. In the tree, select 'Model for cheques\Cheques printing format'.  
+ 8. The loaded format will be used to generate documents that contain images in Excel and Word.   
 
-## Run format with initial model mapping
-1. Go to Cash and bank management > Bank accounts > Bank accounts.
-2. Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.
-3. On the Action Pane, click Set up.
-4. Click Check.
-5. Click Print test.
-    * Run the format for testing purposes.  
-6. Select Yes in the Negotiable check format field.
-7. Click OK.
-    * Review the created output. Note that the company logo is presented in the report as well as the authorized person’s signature. The signature image is taken from the field of the ‘Container’ data type of the check layout record which is associated with the selected bank account.  
-8. Expand the Copies section.
-9. Click Edit.
-10. In the Watermark field, enter 'Print watermark as Void'.
-    * Change the watermark layout setting to show the watermark text in generating document in an Excel shape element.  
-11. Click Print test.
-12. Click OK.
-    * Review the created output. Note that the watermark is shown in the created report in accordance to the selection option.  
-13. Close the page.
-14. On the Action Pane, click Manage payments.
-15. Click Checks.
-16. Click Show filters.
-17. Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.
-18. In the list, mark all rows.
-19. Click Print check copy.
-    * Run the format to re-print the selected checks.  
-    * Review the created output. Note that the selected checks have been re-printed. The company logo and labels are not printed out since they are presented on the pre-printed form.  
+## Configure ER user parameters  
+ 1. On the Action Pane, click Configurations.  
+ 2. Click User parameters.  
+ 3. Select Yes in the Run settings field.  
+  Turn on the ‘Run draft’ flag to start the draft version of the selected format instead of the completed one.  
+ 4. Click OK.  
 
-## Modify the mapping of the imported data model
-1. Close the page.
-2. Close the page.
-3. Go to Organization administration > Electronic reporting > Configurations.
-4. In the tree, select 'Model for checks'.
-5. Click Designer.
-6. Click Map model to datasource.
-7. Click Designer.
-    * We will change the binding of the data model’s signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.  
-8. Turn Show details off.
-9. In the tree, expand 'layout'.
-10. In the tree, expand 'layout\signature'.
-11. In the tree, select 'layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.
-12. In the tree, expand 'chequesaccount'.
-13. In the tree, expand 'chequesaccount\<Relations'.
-14. In the tree, expand 'chequesaccount\<Relations\BankChequeLayout'.
-15. In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations'.
-16. In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents'.
-17. In the tree, select 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()'.
-18. Click Bind.
-19. Click Save.
-20. Close the page.
-21. Close the page.
-22. Close the page.
-23. Close the page.
-
-## Run format using the adjusted model mapping
-1. Go to Cash and bank management > Bank accounts > Bank accounts.
-2. Use the Quick Filter to find records. For example, filter on the Bank account field with a value of 'USMF OPER'.
-3. On the Action Pane, click Set up.
-4. Click Check.
-5. Click Print test.
-6. Click OK.
-    * Review the created output. Note that the image from the Document Management attachment is presented as the signature of an authorized person.  
-
-## Use MS Word document as a template in the imported format
-1. Close the page.
-2. Close the page.
-3. Go to Organization administration > Electronic reporting > Configurations.
-4. In the tree, expand 'Model for cheques'.
-5. In the tree, select 'Model for cheques\Cheques printing format'.
-6. Click Designer.
-7. Click Attachments.
-8. Click Delete.
-9. Click Yes.
-10. Click New.
-11. Click File.
-    * Click Browse and select the downloaded in advance ‘Cheque template Word.docx’ file.  
-12. Close the page.
-13. In the Template field, enter or select a value.
-14. Click Save.
-15. Close the page.
-16. Click Edit.
-17. Select Yes in the Run Draft field.
-18. Close the page.
-19. Go to Cash and bank management > Bank accounts > Bank accounts.
-20. Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.
-21. Click Check.
-22. Click Print test.
-23. Click OK.
-    * Review the created output. Note that the output has been generated as a MS Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.  
-
+## Configure Cash & bank management parameters  
+ 1. Go to Cash and bank management > Bank accounts > Bank accounts.  
+ 2. Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.  
+ 3. On the Action Pane, click Set up.  
+ 4. Click Check.  
+ 5. Expand the Setup section.  
+ 6. Click Edit.  
+ 7. Select Yes in the Company logo field.  
+ 8. Click Company logo.  
+ 9. Click Change.  
+ 10. Click Browse and select the file that you downloaded earlier, Company logo.png.   
+ 11. Click Save.  
+ 12. Close the page.  
+ 13. Expand the Signature section.  
+ 14. Select Yes in the Print first signature field.  
+ 15. Click Change.  
+ 16. Click Browse and select the file that you downloaded earlier, Signature image.png.   
+ 17. Expand the Copies section.  
+ 18. In the Watermark field, select an option.  
+ 19. Select Yes in the Generic electronic Export format field.  
+ 20. Select 'Cheques printing form' configuration.  
+ 21. Now the selected ER format will be used for printing cheques.  
+ 22. Click Attach.  
+ 23. Click New.  
+ 24. Click File.  
+ 25. Click Browse and select the file that you downloaded earlier, Signature image 2.png.   
+ 26. Close the page.  
+ 27. Close the page.  
+ 28. Close the page.  
+ 29. Go to Cash and bank management > Setup > Cash and bank management parameters.  
+ 30. Select Yes in the Allow prenote creation on inactive bank accounts: field.  
+ 31. Click Save.  
+ 32. Close the page.  

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Equally divided depreciation method
+title: Equally divided depreciation method for Japan
 description: In Japan, lump-sum assets, low-value assets, and deferred assets are depreciated in equal amounts in each year of the service life. This article answers some frequently asked questions about equally divided depreciation.
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Equally divided depreciation method
+# Equally divided depreciation method for Japan
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,7 +42,7 @@ Equally divided depreciation lets you depreciate a deferred, low-value, or lump-
 You can use the equally divided depreciation method to depreciate deferred, low-value, and lump-sum fixed assets. You can then generate reports to view the depreciation expenses for the assets over one or more fiscal periods.
 
 ## How is depreciation calculated using the equally divided depreciation method?
-You can set up a depreciation profile by selecting **Equally divided** as the depreciation method in the **Method** field on the **Depreciation profiles** page. When you use the equally divided depreciation profile to depreciate a fixed asset, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition calculates the depreciation amounts by using the following formula: Depreciation = Remaining amount × rounding (1 ÷ Number of remaining years) × rounding (1 ÷ Number of periods in the current year) The following formula is used to calculate the remaining amount: Remaining amount = Acquisition cost – Accumulated depreciation When you use the equally divided depreciation method to calculate the depreciation amount, the value in the **Number of years to equally divide depreciation amounts** field on the **Depreciation profiles** page indicates the useful life of the fixed asset instead of the service life and the depreciation period that you specified on the **Books** page.
+You can set up a depreciation profile by selecting **Equally divided** as the depreciation method in the **Method** field on the **Depreciation profiles** page. When you use the equally divided depreciation profile to depreciate a fixed asset, Microsoft Dynamics 365 for Finance and Operations calculates the depreciation amounts by using the following formula: Depreciation = Remaining amount × rounding (1 ÷ Number of remaining years) × rounding (1 ÷ Number of periods in the current year) The following formula is used to calculate the remaining amount: Remaining amount = Acquisition cost – Accumulated depreciation When you use the equally divided depreciation method to calculate the depreciation amount, the value in the **Number of years to equally divide depreciation amounts** field on the **Depreciation profiles** page indicates the useful life of the fixed asset instead of the service life and the depreciation period that you specified on the **Books** page.
 
 ## Does the depreciation amount that is calculated by using the equally divided depreciation method change if it's calculated at the beginning of the month instead of in the middle of the month?
 No. The depreciation amount does not change, depending upon when it's calculated during the month. For example, you acquire a lump-sum fixed asset:

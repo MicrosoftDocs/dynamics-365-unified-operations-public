@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: Taxreport770Table_IT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -23,8 +23,8 @@ ms.search.scope: Core, Operations
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako
-# ms.search.validFrom: 
-# ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.3
 
 ---
 

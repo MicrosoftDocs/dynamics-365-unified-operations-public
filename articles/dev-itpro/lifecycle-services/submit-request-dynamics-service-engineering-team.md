@@ -5,7 +5,7 @@ title: Submit a request to the Dynamics Service Engineering team
 description: You can submit requests directly to the Dynamics Service Engineering team by using LCS. 
 author: manalidongre
 manager: AnnBe
-ms.date: 08/29/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,7 +41,7 @@ You can now submit requests directly to the Dynamics Service Engineering (DSE) 
 
 The following request types are supported by this functionality:
 
--   **Other requests** – This includes requests other than those listed above or automated flow requests. For example, you might use this request type for upgrade or to request the system be put into maintenance mode. Note, this should not be used to submit support requests.
+-   **Other requests** – This includes requests other than those listed above or automated flow requests. Note, this should not be used to submit support requests.
 -   **Package application** – To apply a package to the production environment, on the **Environment details** page, click **Maintain** to select the package to apply, and then select **Schedule**. For more information, see [Apply a deployable package](../deployment/apply-deployable-package-system.md).
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
 -   **Database point-in-time restore** – This includes, for example, restoring a non-production database to a specific point in time. for more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).

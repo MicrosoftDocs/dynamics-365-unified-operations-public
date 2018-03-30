@@ -18,7 +18,7 @@ ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Migrate products and warehouse management from AX 2012 to Finance and Operations
 
-This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+[!include[banner](../includes/banner.md)]
+
+This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations.
 
 Introduction
 ------------

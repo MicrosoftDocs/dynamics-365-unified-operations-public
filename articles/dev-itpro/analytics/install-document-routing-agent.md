@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Document Routing Agent to enable network printer devices
-description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
 ms.date: 12/04/2017
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysCorpNetPrinterList
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 
 What's important to know?
 -------------------------
@@ -43,7 +43,7 @@ What's important to know?
 -   You can enable network printers for specific companies by using in-client administrative pages.
 -   Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 -   The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
--   The application requires Adobe Acrobat Viewer.
+-   The application requires Adobe Acrobat Reader.
 -   The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
 -   Dynamics AX 7.0 & Platform Update 1 deployments require Microsoft .NET 4 on the client.
 -   Platform udate 2 or later requires .NET 4.62 on the client.
@@ -135,5 +135,8 @@ No, not at this time. There are several dependencies on Azure capabilities that 
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
+### How many network printers can the Document Routing Agent support?
 
+The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
 
+You can never have too many Document Routing Agents, as it is the mechanism for scaling the network printing service.

@@ -13,19 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysAppDesignerPane
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
+ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: Platform update 4
+ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 
 ---
@@ -39,9 +39,9 @@ This topic describes the steps that system administrators must follow to publish
 > [!NOTE]
 > The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
-## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations
 
-1. In your browser, start Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+1. In your browser, start Microsoft Dynamics 365 for Finance and Operations.
 2. Click **Settings** > **Mobile app**.
 3. Select the mobile workspace to publish.
 4. Click **Publish**.

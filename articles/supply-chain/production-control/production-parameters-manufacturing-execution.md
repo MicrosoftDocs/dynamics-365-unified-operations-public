@@ -18,7 +18,7 @@ ms.search.form:  JmgProdParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:

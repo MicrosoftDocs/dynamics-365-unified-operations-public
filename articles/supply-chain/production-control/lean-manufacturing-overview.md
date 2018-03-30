@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.
 
 Lean manufacturing offers tools that you can use to model lean operations. These tools support and promote the following concepts and business activities:
 -   Create a lean manufacturing foundation by modeling manufacturing and logistics processes as production flows.

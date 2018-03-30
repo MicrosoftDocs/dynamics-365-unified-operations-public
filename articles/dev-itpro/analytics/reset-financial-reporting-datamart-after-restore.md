@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reset the Financial reporting data mart
-description: This topic describes how to reset the Financial reporting data mart.
-author: aolson
+title: Reset the Financial reporting data mart for Finance and Operations
+description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations.
+author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,9 +13,9 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: FinancialReports
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aloson
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions:
+This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
 
-- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.6.0 and later
-- Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.0.10000.4 and later
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
+- Financial reporting release 7.2.6.0 and later
+- Financial reporting release 7.0.10000.4 and later
+- Microsoft Dynamics 365 for Finance and Operations (on-premises)
 
-To get Finance and Operations Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://support.microsoft.com/en-us/help/4052514>.
+To get Finance and Operations Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.2.6.0 and later
 
@@ -47,6 +47,9 @@ To get Finance and Operations Financial reporting release 7.2.6.0, you can downl
 
 > [!NOTE]
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
+
+To find the version of report designer, watch this video:
+> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
@@ -60,7 +63,7 @@ The data mart reset should be done only during times when the amount of processi
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
-[![Reset Data Mart dialog box](./media/Statistics.png)](./media/Statistics.png)
+[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### Integration attempts
 
@@ -88,8 +91,10 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Restore database** – The Finance and Operations database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
+[![Reset data mart](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Verify that all existing tasks have finished integrating before you complete the steps. You can view the status of the integration by selecting **Tools** &gt; **Integration status**.
+> Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
 
 #### Clear users and companies
 
@@ -99,7 +104,10 @@ When you're ready to start the reset process, select **OK**. You're prompted to 
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/Integration.png)](./media/Integration.png)
+[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says “Integration complete” in the bottom-left corner.
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
 
@@ -147,7 +155,9 @@ The following Microsoft Windows services will have open connections to the Finan
 
 #### Download the latest MinorVersionDataUpgrade.zip package
 
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the[Download the latest data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
+Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Select the correct data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
+
+An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
 #### Run scripts against the Finance and Operations database
 
@@ -166,8 +176,13 @@ On the AOS computer, start Microsoft Windows PowerShell as an administrator, and
 F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
-Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>"
+Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
+ > [!NOTE]
+ > SkipMRTableReset preserves tree unit security if you are using it. 
+  - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
+
+
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
 

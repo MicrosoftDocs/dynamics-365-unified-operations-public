@@ -3,7 +3,7 @@
 
 title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 39782

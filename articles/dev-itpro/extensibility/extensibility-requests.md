@@ -31,7 +31,9 @@ ms.dyn365.ops.version: Platform update 9
 
 # Extensibility requests
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition is moving to a model of exclusively using extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
+[!include[banner](../includes/banner.md)]
+
+Microsoft Dynamics 365 for Finance and Operations is moving to a model of exclusively using extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
 
 You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. We expect to add more extension capabilities, so that you will be able to do most of these things. For some customizations that were done with overlayering, you will need to file requests so that we are aware that we need to enable the appropriate extension points.
 
@@ -48,7 +50,7 @@ Before logging the request, there are a few things to consider:
 - How important is the requirement to the customer and/or business analyst?  
 - Will the implementation be upgrade friendly for the long term?
 
-Extensibility requests are logged using the extensibility feedback program on the Connect site. Because we are essentially sharing deep roadmap information, we require that organizations be under NDA to be enrolled in this feedback community.
+Because we are essentially sharing deep roadmap information, we require that organizations be under NDA to be enrolled in our feedback community.
 
 Partners only need to join the feedback community once and not for each of their employees. To enroll in the feedback community:
 
@@ -57,9 +59,8 @@ Partners only need to join the feedback community once and not for each of their
 
 As a partner, after you have signed the agreements, people from your organization will be able to access the feedback Yammer groups. We recommend that you join the Yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
 
-For the extensibility feedback program to appear on the Connect site, use the Invitation link below. This link adds **DYNAMICS 365 FOR OPERATIONS EXTENSIBILITY FEEDBACK** under Programs on the Connect site. Use this feedback program when logging your extensibility requests.
-
-[Invitation link for OPERATIONS EXTENSIBILITY FEEDBACK](https://connect.microsoft.com/site1321/InvitationUse.aspx?ProgramID=9338&InvitationID=EXT-W2TQ-3Y9Y) 
+> [!IMPORTANT]
+> Coming soon:  Extensibility requests will be able to be submitted via Lifecycle Services.  In the meantime, please submit your request to daxcf@microsoft.com
 
 When you log extensibility requests, please enter detailed information about what you need to become enabled for extensibility, and include information on what it is you need to extend. This will help Microsoft to be efficient in addressing your requests. You are  welcome to propose how Microsoft could enable the functionality that you need in the standard application in a way that effectively addresses your needs.
 

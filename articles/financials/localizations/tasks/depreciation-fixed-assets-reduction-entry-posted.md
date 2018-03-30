@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Depreciate fixed assets with reduction entry posted (Japan)
-description: Use this task to learn how to run fixed asset depreciation with reduction entriesIn order to complete this task, the Fixed Asset configuration key must be selected. 
+description: Use this task to learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected. 
 author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/15/2016
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Use this task to learn how to run fixed asset depreciation with reduction entries
+Use this task to learn how to run fixed asset depreciation with reduction entries.
 
 
 

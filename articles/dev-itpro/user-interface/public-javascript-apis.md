@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extensible controls  -  Public JavaScript APIs
+title: Extensible controls - Public JavaScript APIs
 description: This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls. 
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Extensible controls  -  Public JavaScript APIs
+# Extensible controls - Public JavaScript APIs
 
 [!include[banner](../includes/banner.md)]
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy a Finance and Operations database – SQL Server to production Azure SQL
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
-author: tariqbell
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
+author: maertenm
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 03/06/2018
 
 ms.topic: article
 ms.prod: 
@@ -25,7 +25,7 @@ ms.custom: 256464
 ms.assetid: 4cc5f2aa-dd4e-4981-9607-e75fd1d57941
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: maertenm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -64,10 +64,9 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 ## Prerequisites
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
-- To import a database into an Azure SQL Database environment, you must install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in that environment. You then do the bacpac import on the AOS computer. There are two reasons for this requirement:
-
-    - Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
-    - The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
+- To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+    - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
+    - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
 
 > [!IMPORTANT]
 > If your environment includes Microsoft Dynamics 365 for Retail components, you must manually store some environment-specific values before you begin. For more information, see the "Additional steps for Retail environments" section.
@@ -140,11 +139,12 @@ drop user axdeployuser
 drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
+drop user axdeployextuser
 ```
 
 ## Export the database from SQL Server
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
 > If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
@@ -167,7 +167,7 @@ Copy the .bacpac file that was generated in the previous section to the AOS comp
 > [!NOTE]
 > Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more information, see the "Known issues and limitations" section.)
 
-Open a **Command Prompt** window as an administrator, and run the following commands.
+Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
 > If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process for moving to the latest update of Finance and Operations
-description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
+This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
 For information about the contents of each upgrade that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
@@ -74,8 +74,8 @@ This process is required before you can use scenario 3. A developer must complet
 
 Use this scenario when business factors such as time or cost limitations prohibit an update to the complete latest application release. Here are some examples of application updates:
 
-- Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as 7.1)
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as 7.2)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
 To install a platform-only update, use scenario 4 instead.
 
@@ -104,16 +104,15 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| Version 1611 (application 7.1.0)                               | 7.1.1541.3036 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | July 2017 release (application 7.2.0) | Yes |
-| August 2016 release (application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | July 2017 release (application 7.2.0) | Yes |
-| May 2016 release (application 7.0.1)                           | 7.0.1265.23014 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | July 2017 release (application 7.2.0) | Yes |
-| February 2016 release (application 7.0.0)                      | 7.0.1265.3015 | Version 1611 (Platform update 3 or later, application 7.1.0) | Yes |
-| Microsoft Dynamics AX 2012                                     | Not applicable | July 2017 release (application 7.2.0) | Yes |
-| July 2017 release (Platform update 8, application 7.2)         | Not applicable | Newer version of the platform | No |
-| Version 1611 (Platform update 3, application 7.1.0)            | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 7.3 | Yes |
+| Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 7.3, or July 2017 (7.2) | Yes |
+| August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| February 2016 release (Application 7.0)                      | 7.0.1265.3015 |  Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
+| Microsoft Dynamics AX 2012                                     | Not applicable | Application release 7.3 or July 2017 (7.2)  | Yes |
+| Application release 7.3         | Not applicable | Newer version of the platform | No |
+| July 2017 release (Application 7.2)         | Not applicable | Newer version of the platform | No |
+| Release 1611 (application 7.1)            | Not applicable | Newer version of the platform | No |
 | May 2016 release (Platform update 1, application 7.0.1)        | Not applicable | August 2016 release (Platform update 2, application 7.0.1) | No |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
@@ -156,7 +155,7 @@ First, upgrade your code as described in scenario 2. This step is a developer ta
 
 ### Upgrade your data in a development environment
 
-Run the data upgrade process on a copy of your target database. If your environment is already live in production, the target database is a copy of the production database. Otherwise, the target database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
+Run the data upgrade process on a copy of your source database. If your environment is already live in production, the source database is a copy of the production database. Otherwise, the source database is your most current database. Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be completed successfully by using the specific set of customizations in this environment.
 
 To make a copy of your production database, follow the steps in [Copy a Microsoft Dynamics 365 for Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
 
@@ -186,12 +185,10 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 #### Use LCS to submit an upgrade request to DSE
 
 1. On the **Environment details** page for the environment that you're upgrading, select **Maintain**, and then select **Upgrade**. A dialog box appears, where you can enter the upgrade request.
+
 2. Select the target version that you're upgrading to, and specify the start and end times of your preferred downtime window.
-
+    - A date and time picker will show the available times.
     - To help guarantee that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
-
-        If the time slot that you selected isn't available because of high demand, the Microsoft team will notify you about the closest available time slots, and you can select one of those time slots. The more advance notice that you give, the more likely you are to get your first choice of time slots.
-
     - You must allow for at least eight hours between the start and end of the downtime. This time is required in order to swap in the new environment and complete the data upgrade process.
 
 3. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select application (AOT) deployable packages during your upgrade request. Select the AOT deployable packages that contain your upgraded custom code and the required X++ hotfixes that were created in your development or build environment. Use the **Customize solution assets** tab, as shown in the following illustration.
@@ -200,19 +197,18 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 
     > [!IMPORTANT]
     > - If you don't select application deployable packages in your service request, DSE might reject the request.
+    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is a intended as a pre-production validation of the upgrade process.
     > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
     > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
 
 #### Validate your sandbox environment
 
-The updated environment will have the same URL, the same environment name, and the same machine names as the old environment.
-
-Complete your validation and testing. If you discover an issue and want to roll back to the old environment, notify DSE by submitting an LCS ticket. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade is initiated. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ### Upgrade your production environment
 
 1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-3. Complete your validation and testing. If you discover an issue and want to roll back to the old environment, notify DSE by submitting an LCS ticket. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+3. Complete your validation and testing and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** to rollback. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 

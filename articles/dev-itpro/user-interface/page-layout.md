@@ -52,7 +52,7 @@ Layout is a design process that specifies how the controls on a page appear in t
 
 A grid is a special type of control that has some container behaviors, such as flexible sizing (**SizeToAvailable**). However, a grid has special visualizations and isn't a general-purpose container control.
 
-## Layout: Dynamics AX 2012 vs. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Layout: Dynamics AX 2012 vs. Microsoft Dynamics 365 for Finance and Operations
 ### Layout in Dynamics AX 2012
 
 In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almost always vertical, and columns are manually set to provide some horizontal spread.
