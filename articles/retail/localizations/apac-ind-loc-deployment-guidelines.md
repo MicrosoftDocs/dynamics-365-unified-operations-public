@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: 
 manager: ralin
-ms.date: 03/28/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -38,7 +38,7 @@ This sample is part of the Retail software development kit (SDK). For informatio
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Finance and Operations that you're using.
+> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
         - Newtonsoft.Json.dll
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
     In the **Reference\\TaxEngine** folder:
 
@@ -84,7 +84,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
       - x86
       - x64
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
 
@@ -143,7 +143,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
@@ -159,7 +159,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
     ```
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
@@ -181,7 +181,7 @@ Follow these steps to create deployable packages that contain Retail components,
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-    # [Application update 7.3.1](#tab/app-update-7-3-1)
+    # [Retail 7.3.1](#tab/retail-7-3-1)
 
     Add the following lines to the **ItemGroup** section
 
@@ -190,7 +190,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
     ```
 
-    # [Application update 7.3.2 and later](#tab/app-update-7-3-2-and-later)
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ```xml
         <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
