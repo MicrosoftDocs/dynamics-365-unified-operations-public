@@ -5,7 +5,7 @@ title: Copy a Finance and Operations database – Azure SQL to SQL Server
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: maertenm
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -105,6 +105,9 @@ This SQL statement runs asynchronously. In other words, although it appears to b
 ```
 SELECT * FROM sys.dm_database_copies
 ```
+
+> [!WARNING] 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Prepare the database
 
