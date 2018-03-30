@@ -1,15 +1,46 @@
-# Microsoft Dynamics 365 Translation Service user guide - Translation memory 
+---
+# required metadata
+
+title: Microsoft Dynamics 365 Translation Service - Translation memory
+description: This topic describes when and where translation memory files can be created, edited, and used to help DTS provide a quality translation output file.
+author: kfend
+manager: AnnBe
+ms.date: 03/29/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 6154
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: ejchoGIT
+ms.search.validFrom: 2018-03-27
+ms.dyn365.ops.version: AX 7.3.0
+
+---
+
+# Microsoft Dynamics 365 Translation Service - Tramslation memory
 
 [!include[banner](../includes/banner.md)]
-This topic describes when and where translation memory file can be created, edited and used to help DTS provide you a quality translation output file. 
 
-## XLIFF Translation Memory (TM)
-DTS uses a bilingual XLIFF format to store source language and target language pairs. The XLIFF format is based on XML. Therefore, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. You can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 
-In DTS, you can obtain an XLIFF TM in two ways:
+Microsoft Dynamics 365 Translation Service (DTS) uses a bilingual XLIFF format to store source language and target language pairs. The XLIFF format is based on XML. Therefore, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. You can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
+
+In DTS, you can obtain an XLIFF translation memory (TM) in two ways:
 
 + **Run the Align tool** – When you have files that were previously translated, and corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Alignment](./use-translation-service-tm.md#creating-a-translation-memory---alignment) section in this topic.
-+ **Complete a translation request** – When a DTS translation request is completed, it provides you the XLIFF TMs as part of the request output. You can bring this to the next time you submit a new translation request with the updated source files. 
++ **Complete a translation request** – When a DTS translation request is completed, it provides you the XLIFF TMs as part of the request output. You can then use the files the next time you submit a new translation request with the updated source files. 
 
 XLIFF files contain a series of TUs that are extracted from the source files. The following illustration shows an example of a TU.
 
@@ -19,7 +50,7 @@ The following illustration shows the same TU (highlighted in blue) in the Multil
 
 ![XLIFF translation unit in the Multilingual Editor](./media/dts-editor3.png "XLIFF translation unit in the Multilingual Editor")
 
-### State
+## State
 Each translation in the XLIFF file is associated with a state value. The value that DTS assigns to each translation depends on the way that the string is translated. When an XLIFF TM is created by using the Align tool, all translations are marked as **Translated**, because the aligned TUs are produced from known good translations, such as a previous product version.
 
 However, when the XLIFF files are generated as a result of a translation request, two types of states can be used:
