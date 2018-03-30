@@ -147,6 +147,7 @@
 ### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sweden
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
+### [Sample for Retail POS integration with control units](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Retail tasks
 ## [Create a product](../supply-chain/pim/tasks/create-product.md)
