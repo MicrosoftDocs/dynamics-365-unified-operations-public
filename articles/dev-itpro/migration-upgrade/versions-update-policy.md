@@ -108,7 +108,17 @@ For information about the new features included in each release, click the links
 | [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103 | May 2016      | May 2017      | 
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)      | 7.0.4030.16079 | February 2016 | January 2017  |
 
+
+### Table 4: Downloadable virtual hard drive (VHD) releases
+Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
+
+| Release           | VHD name   | VHD expiration date  |
+|-------------------|----------------|---------------|
+| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd | May 24, 2018   | 
+| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd | June 05, 2018   |
+
 \* Platform updates 13 and 14 are available for a targeted set of customers. Platform update 15 is cumulative. It contains new or changed features from Platform update 13, Platform update 14, and Platform update 15, as well as all earlier updates. 
+
 
 
 ## Support matrix
