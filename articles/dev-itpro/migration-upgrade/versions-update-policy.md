@@ -51,13 +51,12 @@ The Dynamics 365 for Finance and Operations online service is covered by the Mod
 
     -   **Non-critical updates** – Customers must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates.
 
-Note+
+> [!Note]
+> Application and Platform releases expire at the end of the month of their software lifecycle.+
 
-Application and Platform releases expire at the end of the month of their software lifecycle.+
+## Dates and versions for Finance and Operations application and platform releases
 
-Dates and versions for Finance and Operations application and platform releases
-
-Table 1: Application releases
+### Table 1: Application releases
 
 For information about the new features included in each release, click the links in the **Version** column.+
 
@@ -70,7 +69,7 @@ For information about the new features included in each release, click the links
 | Dynamics AX                                                 | Minor release              | [7.0.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016) | 7.0.1265.23014   | May 2016         | June 2017          |
 | Dynamics AX                                                 | Major release              | [7.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016)                    | 7.0.1265.3015    | February 2016    | June 2017          |
 
-Table 2: Platform releases
+### Table 2: Platform releases
 
 For information about the new features included in each release, click the links in the **Release** column.+
 
@@ -95,7 +94,7 @@ For information about the new features included in each release, click the links
 updates have been available for customers who joined the CAAP program. To learn
 more click [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
-Table 3: Application updates
+### Table 3: Application updates
 
 The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 7.3 and 7.2 (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for each release.+
 
