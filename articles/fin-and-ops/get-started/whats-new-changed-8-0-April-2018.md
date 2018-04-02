@@ -47,7 +47,7 @@ Users and developers will see an updated product name, "Microsoft Dynamics 365 f
 
 Client-based alert functionality enables a user to define alert rules based on
 business events, such as when an invoice is paid or a customer changes an
-address. For more information, see [Alerts overview](alerts-overview.md).
+address. For more information about alerts and how to create them, see [Alerts overview](alerts-overview.md).
 
 ### Optimization advisor
 
@@ -106,12 +106,12 @@ structure with a standard grid that supports hierarchical data.
 ### Embedding PowerApps in workspaces and forms
 
 Use PowerApps to embed data from external sources into Finance and Operations
-data.
+data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
 
 ### Custom fields
 
 Organizations can add custom fields to tailor their application to their
-business requirements, using a no-code extensibility experience.
+business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Custom fields](user-defined-fields.md).
 
 ## Integration 
 
