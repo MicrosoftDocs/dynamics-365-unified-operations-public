@@ -47,7 +47,7 @@ Users and developers will see an updated product name, "Microsoft Dynamics 365 f
 
 Client-based alert functionality enables a user to define alert rules based on
 business events, such as when an invoice is paid or a customer changes an
-address.
+address. For more information, see [Alerts overview](alerts-overview.md).
 
 ### Optimization advisor
 
