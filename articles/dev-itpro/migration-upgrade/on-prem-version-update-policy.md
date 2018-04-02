@@ -67,7 +67,7 @@ Application and Platform releases expire at the end of the month of their softwa
 |  Platform Update 8 | 7.0.4565.1612 | July 2017 | April 2018 | December 2027     |
 
   >![NOTE]
-  > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest version of the platform build available. 
+  > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest available version of the platform. 
   
 ### Downloadable virtual hard drive (VHD) releases
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
