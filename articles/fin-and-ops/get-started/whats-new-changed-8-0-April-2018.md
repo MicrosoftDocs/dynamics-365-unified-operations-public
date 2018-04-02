@@ -228,13 +228,12 @@ Desktop to access the VM, which improves reliability and security.
 Releases for new deployments include:
 
 -   Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with
-    Platform Update 12 (on-premises)
+    platform update 12 (on-premises)
 
--   [Dynamics 365 for Finance and Operations, Enterprise edition
-    7.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-7.3-update)
-    with Platform Update 15 (on-premises)
+-   Dynamics 365 for Finance and Operations, Enterprise edition
+    7.3
 
--   Dynamics 365 for Finance and Operations 8.0 with Platform Update 16
+-   Dynamics 365 for Finance and Operations 8.0 with platform update 16
     (on-premises)
 
 ## Compliance 
