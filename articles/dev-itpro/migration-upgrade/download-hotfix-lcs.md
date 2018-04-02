@@ -114,7 +114,7 @@ To view available updates:
 
     ![Review and download X++ updates](media/ReviewAndDownloadX++Package.jpg)
     
-5. Downloaded package
+5. Download the package, and click **Done**.
     
     ![downloaded](media/X++UpdatesDownloadBegin.jpg)
 
