@@ -58,7 +58,7 @@ The Dynamics 365 for Finance and Operations online service is covered by the Mod
 
 ### Table 1: Application releases
 
-For information about the new features included in each release, click the links in the **Version** column.+
+For information about the new features included in each release, click the links in the **Version** column.
 
 | **Release**                                                 | **Major or minor release** | **Version**                                                                                                                                           | **Build number** | **Availability** | **End of Service** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
@@ -71,34 +71,34 @@ For information about the new features included in each release, click the links
 
 ### Table 2: Platform releases
 
-For information about the new features included in each release, click the links in the **Release** column.+
+For information about the new features included in each release, click the links in the **Release** column.
 
 | **Release**                                                                                                                                                  | **Build number**   | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------|----------------------------|
-| Platform update 15\*                                                                                                                                         | 7.0.4841 and later | April 2018       | N/A (Continuously Updated) |
-| [Platform update 12](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-12)                   | 7.0.4709           | November 2017    | November 2018              |
-| [Platform update 11](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-11)                   | 7.0.4679.35176     | October 2017     | October 2018               |
-| [Platform update 10](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-10)                   | 7.0.4641.16233     | August 2017      | August 2018                |
-| [Platform update 9](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-9)                     | 7.0.4612.35162     | July 2017        | July 2018                  |
-| [Platform update 8](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-8)                     | 7.0.4565.16212     | June 2017        | June 2018                  |
-| [Platform update 7](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-7)                     | 7.0.4542.16189     | May 2017         | May 2018                   |
-| [Platform update 6](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-6)                     | 7.0.4509.16180     | April 2017       | April 2018                 |
-| [Platform update 5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-5)                     | 7.0.4475.16165     | March 2017       | March 2018                 |
-| [Platform update 4](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-4)                     | 7.0.4425.16161     | February 2017    | February 2018              |
-| [Platform update 3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-3)                     | 7.0.4307.16141     | November 2016    | November 2017              |
-| [Platform update 2](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-2)                     | 7.0.4230.16130     | August 2016      | August 2017                |
-| [Platform update 1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016) | 7.0.4127.16103     | May 2016         | May 2017                   |
-| [Platform 7.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016)                  | 7.0.4030.16079     | February 2016    | January 2017               |
+| [Platform update 15\*](../../fin-and-ops/get-started/whats-new-platform-update-15.md.)                                                                                                                                         | 7.0.4841 and later | April 2018       | N/A (Continuously Updated) |
+| [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)                   | 7.0.4709           | November 2017    | November 2018              |
+| [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)                   | 7.0.4679.35176     | October 2017     | October 2018               |
+| [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)                   | 7.0.4641.16233     | August 2017      | August 2018                |
+| [Platform update 9](../../fin-and-ops/get-started/whats-new-platform-update-9.md)                     | 7.0.4612.35162     | July 2017        | July 2018                  |
+| [Platform update 8](../../fin-and-ops/get-started/whats-new-platform-update-8.md)                     | 7.0.4565.16212     | June 2017        | June 2018                  |
+| [Platform update 7](../../fin-and-ops/get-started/whats-new-platform-update-7.md)                     | 7.0.4542.16189     | May 2017         | May 2018                   |
+| [Platform update 6](../../fin-and-ops/get-started/whats-new-platform-update-6.md)                     | 7.0.4509.16180     | April 2017       | April 2018                 |
+| [Platform update 5](../../fin-and-ops/get-started/whats-new-platform-update-5.md)                     | 7.0.4475.16165     | March 2017       | March 2018                 |
+| [Platform update 4](../../fin-and-ops/get-started/whats-new-platform-update-4.md)                     | 7.0.4425.16161     | February 2017    | February 2018              |
+| [Platform update 3](../../fin-and-ops/get-started/whats-new-platform-update-3.md)                     | 7.0.4307.16141     | November 2016    | November 2017              |
+| [Platform update 2](../../fin-and-ops/get-started/whats-new-platform-update-2.md)                     | 7.0.4230.16130     | August 2016      | August 2017                |
+| [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103     | May 2016         | May 2017                   |
+| [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                  | 7.0.4030.16079     | February 2016    | January 2017               |
 
 \* Platform updates 13 and 14 have not been made generally available. These
 updates have been available for customers who joined the CAAP program. To learn
-more click [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+more, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### Table 3: Application updates
 
-The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 7.3 and 7.2 (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for each release.+
+The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 7.3 and 7.2 (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for each release.
 
-For information about the new features included in each update, click the links in the **Version** column.+
+For information about the new features included in each update, click the links in the **Version** column.
 
 | **Release**                                                 | **Version**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | **Build number** | **Availability** |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|
