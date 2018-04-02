@@ -5,7 +5,7 @@ title: Copy a Finance and Operations database – Azure SQL to SQL Server
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: maertenm
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -105,6 +105,9 @@ This SQL statement runs asynchronously. In other words, although it appears to b
 ```
 SELECT * FROM sys.dm_database_copies
 ```
+
+> [!WARNING] 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Prepare the database
 
@@ -270,6 +273,33 @@ FROM docuvalue T1
 WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+GO
+-- Begin Refresh Retail FullText Catalogs
+DECLARE @RFTXNAME NVARCHAR(MAX);
+DECLARE @RFTXSQL NVARCHAR(MAX);
+DECLARE retail_ftx CURSOR FOR
+SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
+	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+OPEN retail_ftx;
+FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+
+BEGIN TRY
+	WHILE @@FETCH_STATUS = 0  
+	BEGIN  
+		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+		EXEC SP_EXECUTESQL @RFTXSQL;
+		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+	END
+END TRY
+BEGIN CATCH
+	PRINT error_message()
+END CATCH
+
+CLOSE retail_ftx;  
+DEALLOCATE retail_ftx; 
+-- End Refresh Retail FullText Catalogs
 ```
 
 ### Re-provision the target environment
