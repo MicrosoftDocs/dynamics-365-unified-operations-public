@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Software lifecycle policy and list of cloud releases
+title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Software lifecycle policy and list of cloud releases
+# Software lifecycle policy and cloud releases
 
 [!include[banner](../includes/banner.md)]
 
