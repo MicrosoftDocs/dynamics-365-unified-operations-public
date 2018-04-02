@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/24/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,6 +65,8 @@ platform which provide additional opportunities for users with disabilities.
 Client-based alert functionality enables a user to define an alert rule without leaving the Finance and Operations client. Users can define alerts based on business events, such as when an invoice is paid or a customer changes an address. When specific conditions are met, the system will show a notification to alert the user. 
 
 Alerts form a notification system for critical events in Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to keep track of during the workday. You can also easily set up your own set of rules so that you are alerted about overdue deliveries, orders that are deleted, prices that change, or other events that you must respond to.
+
+For more information about alerts, see [Alerts overview](alerts-overview.md).
 
 ## Embed PowerApps
 Microsoft PowerApps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps). 
