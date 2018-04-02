@@ -530,7 +530,8 @@
 ### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
-#### [Single voucher and currency revaluation upgrade ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md )
+#### [Single voucher and currency revaluation upgrade](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Project resource scheduling data model](migration-upgrade/data-model-changes-resource-management.md)
 #### [Workflow subsystem changes](migration-upgrade/workflow-subsystem.md)
 #### [Why we moved from cubes to aggregate models](migration-upgrade/in-memory-real-time-aggregate-models.md)
