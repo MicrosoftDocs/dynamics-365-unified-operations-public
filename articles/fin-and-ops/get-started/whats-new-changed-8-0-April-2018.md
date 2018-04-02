@@ -224,19 +224,6 @@ through Remote Desktop. Remote Desktop capabilities for sandbox environments
 will be deprecated. This means that customers won’t be required to use Remote
 Desktop to access the VM, which improves reliability and security.
 
-### On-premises deployment updates
-
-Releases for new deployments include:
-
--   Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with
-    platform update 12 (on-premises)
-
--   Dynamics 365 for Finance and Operations, Enterprise edition
-    7.3
-
--   Dynamics 365 for Finance and Operations 8.0 with platform update 16
-    (on-premises)
-
 ## Compliance 
 
 ### General Data Protection Regulation (GDPR)
