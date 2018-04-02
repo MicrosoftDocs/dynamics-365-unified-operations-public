@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Get started
@@ -18,6 +19,7 @@
 
 ### [What's new or changed](get-started/whats-new-changed.md)
 #### [Software lifecycle policy and cloud releases](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [Software lifecycle policy and on-premises releases](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
