@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
  Prerequisites
 --------------
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations.
 
 ## Create a Visual Studio Team Services project
 The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a VSTS project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf. Most users don't have access to LCS or VSTS. Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.

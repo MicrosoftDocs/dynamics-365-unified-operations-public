@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # CacheService Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Provides ability to access data from the device cache and update data into the device cache.
 
 ### Hierarchy

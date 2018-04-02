@@ -48,7 +48,7 @@ Microsoft Excel can change and quickly analyze data. The Excel Data Connector a
 
 [![1\_Office](./media/1_office.png)](./media/1_office.png)
 
-### Microsoft Dynamics AX 2012 architecture vs. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition architecture
+### Microsoft Dynamics AX 2012 architecture vs. Microsoft Dynamics 365 for Finance and Operations architecture
 
 There are several differences between versions. For both, we built lightweight add-ins that run in Excel and use services to connect to the application.
 

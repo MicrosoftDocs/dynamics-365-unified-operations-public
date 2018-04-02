@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the properties of a workflow
+title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure the properties of a workflow
+# Configure workflow properties
 
 [!include[banner](../includes/banner.md)]
 

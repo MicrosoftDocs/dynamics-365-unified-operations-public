@@ -36,7 +36,9 @@ ms.dyn365.ops.version: Version 1611
 
 
 > [!NOTE]
-> This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](warehousing-for-on-premise-deployments.md).
+
+> This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 
@@ -100,6 +102,8 @@ You must configure the app on the device to connect to the Finance and Operatio
     <br>**Note**: Do not end this field with a forward slash character (/). 
     + **Company** - Enter the legal entity in Finance and Operations to which you want the application to connect. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+For information on how to set up  Dynamics 365 for Finance and Operations – Warehousing to scan bar codes using a camera on a mobile device, see [Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing](scan-bar-codes-using-a-camera.md)
 
 ## Remove access for a device
 In case of a lost or compromised device, you must remove access to Finance and Operations for the device. The following steps describe the recommended process to remove access.

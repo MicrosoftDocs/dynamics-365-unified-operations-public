@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform Update 8
 
 # Import Electronic reporting configurations
 
+[!include[banner](../includes/banner.md)]
+
 This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application. It also explains how to upload the ER configurations from an ER repository to the local business data (LBD) application.
 
 1. Sign in to your local business data application by using one of the following roles:

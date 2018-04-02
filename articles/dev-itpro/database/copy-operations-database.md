@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a copy of a Finance and Operations database to restore later
-description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database to a file, and then reimport that file into the same instance or another instance of the application.
+description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
 ms.date: 11/21/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
 
 > [!NOTE]
 > This topic applies to Microsoft Azure SQL databases that are connected to sandbox user acceptance testing (UAT) environments.
@@ -182,6 +182,33 @@ EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+GO
+-- Begin Refresh Retail FullText Catalogs
+DECLARE @RFTXNAME NVARCHAR(MAX);
+DECLARE @RFTXSQL NVARCHAR(MAX);
+DECLARE retail_ftx CURSOR FOR
+SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
+	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+OPEN retail_ftx;
+FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+
+BEGIN TRY
+	WHILE @@FETCH_STATUS = 0  
+	BEGIN  
+		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+		EXEC SP_EXECUTESQL @RFTXSQL;
+		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+	END
+END TRY
+BEGIN CATCH
+	PRINT error_message()
+END CATCH
+
+CLOSE retail_ftx;  
+DEALLOCATE retail_ftx; 
+-- End Refresh Retail FullText Catalogs
 ```
 
 ### Re-provision Retail components in the target environment

@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # PageSubmitArgs Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Args supplied to the OnSubmit event of the page.
 
 ### Hierarchy

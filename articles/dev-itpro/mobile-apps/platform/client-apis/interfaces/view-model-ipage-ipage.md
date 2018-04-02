@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Page Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Page object type.
 
 ### Hierarchy

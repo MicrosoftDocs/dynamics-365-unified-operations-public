@@ -70,9 +70,10 @@ To use the Support tool, you must have previously created a project in Lifecycle
 ![Contact info](media/CPS8.png)
 
 7. Select the support contract and the severity level. 
-  
-  - Support contracts for on-premises products have limited incident counts. From the list of available support contracts, select the support option to use if you have multiple tier support contracts.  
-  - Support contracts for cloud products have unlimited incidents, therefore, we show you the best available support plans. 
+    
+  - Support contracts for on-premises environments have a limited incident count. 
+  - Support contracts for cloud environments have an unlimited incident count. 
+  - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
 ![Contract and severity](media/CPS9.png)
 
 8. Click **Submit**. 
@@ -94,7 +95,7 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
 ## Report production outage
 Report production outage provides a quick and effective channel to escalate  issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.  
 
-This feature is available to all customers that have purchased Dynamics 365 Finance and Operations, Enterprise edition and have **implementation** projects with a **production** environment deployed in LCS.  
+This feature is available to all customers that have purchased Dynamics 365 Finance and Operations and have **implementation** projects with a **production** environment deployed in LCS.  
 
 A production outage is defined as **one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations**. 
 
@@ -110,7 +111,7 @@ A production outage is defined as **one or more system-wide issues on a live pro
 All users that have been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers. 
 
 This feature is available to:
-- Dynamics 365 for Finance and Operation, Enterprise edition 
+- Dynamics 365 for Finance and Operation 
 - Environments managed by Microsoft 
 - A production environment in the LCS Project 
 - All support plans

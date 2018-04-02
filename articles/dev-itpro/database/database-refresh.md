@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request a sandbox database refresh
-description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in a sandbox user acceptance testing (UAT) environment. 
+description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment. 
 author: Robadawy
 manager: AnnBe
 ms.date: 10/31/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, in a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the database of your production environment (and the Financial Reporting database) into the target sandbox UAT environment. If you have another UAT environment, you can also copy the databases from that environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the database of your production environment (and the Financial Reporting database) into the target sandbox UAT environment. If you have another UAT environment, you can also copy the databases from that environment.
 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 

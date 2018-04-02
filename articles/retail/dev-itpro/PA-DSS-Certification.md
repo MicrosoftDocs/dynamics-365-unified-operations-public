@@ -37,6 +37,8 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, please visit [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
+For more information, see: https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations
+
 ## Past certification
 | Release | Version  | Build  |
 | ----------------------|-------- | ----------- |

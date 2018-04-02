@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 7.3
 
 # Release BOM and formula lines to the warehouse
 
+[!include[banner](../includes/banner.md)]
+
 This topic describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse. When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.
 
 - If the material is available at the production input location, it's picked from that location immediately after the signal is given for the release of material to the warehouse.
@@ -43,6 +45,9 @@ The method that is used to release BOM and formula lines is controlled by the **
 
 - **Release BOM and formula lines as part of production or batch order release** – In this method, BOM and formula lines for a production or batch order are released as part of the process of releasing the order. Usually, during the release of a production or batch order, production jobs are released to the shop floor workers, and production papers are printed. During this process, the status of the order is also changed to **Released**.
 - **Release BOM and formula lines via a batch job or as a manual interaction** – In this method, BOM and formula lines can be released only through the **Automatic release of BOM and formula lines** batch job or as a manual interaction. To manually release BOM and formula lines, on the production order list page or the production order details page, on the Action Pane, select **Release to warehouse**.
+
+For a quick demonstration of how to release BOM and formula lines to production by using a batch job, watch this short YouTube video:
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## Releasing the BOM and formula lines by using a batch job
 
@@ -82,6 +87,9 @@ To control the operations that material should be released to, use the **Release
 The following illustration shows a production order that has two operations, 10 and 20. In this example, if you limit the release to operation 10, only material M9203 will be released.
 
 ![Example of the release of material per operation number](media/two-operations.PNG)
+
+For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### Release material in proportion to the amount of finished goods
 

@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Migrate products and warehouse management from AX 2012 to Finance and Operations
 
-This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+[!include[banner](../includes/banner.md)]
+
+This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations.
 
 Introduction
 ------------

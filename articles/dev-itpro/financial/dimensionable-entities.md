@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Make a backing table be consumable as a Financial dimension
 
+[!include[banner](../includes/banner.md)]
+
 This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
 > [!NOTE]

@@ -32,12 +32,14 @@ ms.dyn365.ops.version: Platform Update 8
 
 # Planning for your on-premises deployment
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
+[!include[banner](../includes/banner.md)]
+
+Microsoft Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 
 This topic will help you plan and prepare for your on-premises deployment.
 
 >   [!IMPORTANT]
->   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+>   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
 
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:

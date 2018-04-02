@@ -5,7 +5,7 @@ title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system. 
 author: mikefalkner
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Generate demo data by using data packages
 
-In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data will also be released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. You can select to just the packages that you must load for your demonstration.
+[!include[banner](../includes/banner.md)]
+
+In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -157,7 +159,7 @@ After you load the data packages, you must also manually follow these steps.
 
 ### Scenario scripts
 
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts for Dynamics 365 Finance and Operations, Enterprise Edition](https://go.microsoft.com/fwlink/?linkid=861599).
+Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts for Dynamics 365 Finance and Operations](https://go.microsoft.com/fwlink/?linkid=861599).
 
 > [!NOTE]
 > We will add more scripts as we complete them.
