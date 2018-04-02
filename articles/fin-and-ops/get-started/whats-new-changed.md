@@ -65,6 +65,13 @@ For information about how to upgrade to the latest version, see [Process for upg
 
 </tr>
 <tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30.8020</td>
+<td>April 2018</td>
+  <td><strong> Coming soon</strong></td>
+</tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
