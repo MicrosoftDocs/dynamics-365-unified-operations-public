@@ -50,9 +50,9 @@ create One voucher by using one of the following methods:
 the same voucher, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
 [![Single line](./media/same-line.png)](./media/same-line.png)
-
+ 
 > [!IMPORTANT] 
-> * Note that our definition of ‘One voucher’ does NOT include journal names that are setup as **One voucher number** only and the user then enters a voucher which includes only Ledger account types.  For purposes of this document, ‘One voucher’ is only when there is one voucher that contains more than one vendor, customer, bank, fixed asset or project. 
+> *  Note that our definition of ‘One voucher’ does NOT include journal names that are setup as **One voucher number** only and the user then enters a voucher which includes only Ledger account types.  For purposes of this document, ‘One voucher’ is only when there is one voucher that contains more than one vendor, customer, bank, fixed asset or project. 
 
 -   Enter a multiline voucher where there is no offset account.
 
