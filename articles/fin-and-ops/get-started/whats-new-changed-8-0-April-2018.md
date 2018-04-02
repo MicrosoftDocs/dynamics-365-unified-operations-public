@@ -204,8 +204,7 @@ configurability without coding.
 
 ### Improved delivery of platform and financial reporting updates
 
-Enhancements to how software updates are provided, to improve deployment time
-and the reliability of servicing.
+Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible.  For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
 
 ### Upgrade automation
 
