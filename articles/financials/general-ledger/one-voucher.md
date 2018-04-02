@@ -5,7 +5,7 @@ title: One voucher
 description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,10 +46,13 @@ enter multiple subledger transactions in the context of a single voucher. We ref
 create One voucher by using one of the following methods:
 
 -   Set up the journal name (**General ledger** \> **Journal setup** \>**Journal names**) so that the **New voucher** field is set to 
-**One voucher number only**. Every line that you add to the journal is now included on the same voucher. Because every line is added to 
+**One voucher number only**. * Every line that you add to the journal is now included on the same voucher. Because every line is added to 
 the same voucher, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
 [![Single line](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Note that our definition of ‘One voucher’ does NOT include journal names that are setup as **One voucher number** only and the user then enters a voucher which includes only Ledger account types.  For purposes of this document, ‘One voucher’ is only when there is one voucher that contains more than one vendor, customer, bank, fixed asset or project. 
 
 -   Enter a multiline voucher where there is no offset account.
 
@@ -99,6 +102,9 @@ the functionality on if your organization has a scenario that falls in the busin
 
 -   **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
 functionality will be permanently turned off.
+
+-  > [!IMPORTANT]
+> Please note that we are NOT removing the option **One voucher number only** from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful, though, in using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of these subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
 
 Why use One voucher?
 ====================
