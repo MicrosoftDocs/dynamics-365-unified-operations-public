@@ -21,6 +21,7 @@
 #### [AX 2012 features that were postponed](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Features not implemented in on-premises deployments](get-started/features-not-implemented-on-prem.md)
 #### [Releases and lifecycle policy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations version 8.0 (April 2018)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [On-premises deployments (March 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Platform update 13 (January 2018)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
