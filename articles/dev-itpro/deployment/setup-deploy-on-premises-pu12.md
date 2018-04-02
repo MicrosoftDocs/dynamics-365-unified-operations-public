@@ -209,7 +209,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | The domain name of the certificate should match the fully-qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.onprem.contoso.com. |
+| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | The domain name of the certificate should match the fully-qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.contoso.com. |
 | Service Fabric Server certificate            | <p>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</p> <p> This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</p> | You can use the SSL wild card certificate of your domain. For example, \*.contoso.com. **Note:** The wild card certificate allows you to secure only the first level subdomain of the domain to which it is issued.<p>In this example, because your service fabric domain is sf.d365ffo.onprem.contoso.com, you must include this as a Subject Alternative Name (SAN) in the certificate. You will need to work with your certificate authority to acquire the additional SANs.</p> |
 | Service Fabric Client certificate            | This certificate is used by clients to view and manage the Service Fabric cluster. | |
 | Encipherment Certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords.  | <p> The certificate must be created by using the provider **Microsoft Enhanced Cryptographic Provider v1.0**. </p><p>The certificate key usage must include Data Encipherment (10) and should not include Server authentication or Client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p> |
@@ -280,7 +280,7 @@ In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.conto
 
 1. Find the newly created zone under the **Forward Lookup Zones** folder in DNS Manager.
 2. Right-click the new zone, and then select **New Host**.
-3. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.12** as the IP address.) Select **Add Host**.
+3. Enter the name and IP address of the Service Fabric node. (For example, enter **ax** as the name and enter **10.179.108.12** as the IP address.) Select **Add Host**.
 4. Do not select either checkbox.
 5. Repeat steps 1-4 for each AOS Node.
 
@@ -289,7 +289,7 @@ In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.conto
 In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contoso.com** for **each** Service Fabric cluster node of the **OrchestratorType** type. Don't create A records for the other node types.
 
 1. Right-click the new zone, and then select **New Host**.
-2. Enter the name and IP address of the Service Fabric node. (For example, enter **10.179.108.15** as the IP address.) Select **Add Host**.
+2. Enter the name and IP address of the Service Fabric node. (For example, enter **sf** as the name and enter **10.179.108.15** as the IP address.) Select **Add Host**.
 3. Do not select either checkbox.
 4. Repeat for each Orchestrator Node.
 
@@ -304,8 +304,6 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 > [!IMPORTANT]
 > You must restart the VMs after you join them to the domain.
-
-After the VMs are joined to the domain, add the AOS Service Accounts, **Contoso\svc-AXSF$** and **Contoso\AXServiceUser** to the local administrators group. For more information, see [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx).
 
 ### <a name="downloadscripts"></a> 6. Download setup scripts from LCS
 
@@ -343,6 +341,10 @@ The infrastructure setup scripts use the following configuration files to drive 
 - Database configuration
 - Service Fabric cluster configuration
 
+> [!IMPORTANT]
+> 1. Ensure there are 3 fault domains for OrchestratorType when configure Service Fabric Cluster.
+> 2. Ensure no more than one type of node deployed in a single machine when configure Service Fabric Cluster.
+
 For each Service Fabric Node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
 
 - The mapping between each node type and the application, domain and service accounts, and certificates.
@@ -366,8 +368,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     Import-Module .\D365FO-OP\D365FO-OP.psd1
     New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
+    
+> [!IMPORTANT]
+> Above script doesn't create domain user AxServiceUser for you and you need to create it by yourself.
 
-4. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
+4. Add the AOS Service Accounts, **Contoso\svc-AXSF$** and **Contoso\AXServiceUser** to the local administrators group of all AOS machines. For more information, see [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx).
+
+5. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
 
     ```powershell
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
@@ -432,13 +439,15 @@ dir cert:\LocalMachine\Root
     # Install pre-req software on the VMs.
 
     # If Remoting, execute
-    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\Configure-PreReqs.ps1 -MSIFilePath <path of the MSIs>
     ```
 
     > [!IMPORTANT]
-    > Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all the machines are back online.
+    > 1. Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all the machines are back online.
+    > 2. When use remoting script ensure current user has access to the share folder of MSIs
+    > 3. When use remoting script ensure no user is accessing machines of AOSNoteType, MRType and ReportServerType. Otherwise remoting script would fail to restart the computer because of other users logged on to the computer.
 
 2. Run the following scripts, if they exist, in order to complete the VM setup.
 
@@ -497,6 +506,10 @@ dir cert:\LocalMachine\Root
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
     4. Select the client certificate. The **Service Fabric explorer** page appears.
     5. Verify that all nodes are showing green.
+    
+> [!IMPORTANT]
+> 1. If your client machine is server machine like Windows Server 2016, you need to turn off IE Enhanced Security Configuration when access Service Fabric explorer page.
+> 2. If any Anti-Virus software installed, ensure you set exclusion as per [Service Fabric document documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
@@ -509,13 +522,14 @@ The on-premises agent certificate can be reused across multiple sandbox and prod
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
 > [!IMPORTANT]
-> You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
+> 1. You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
+> 2. In case you run this in a server machine like Windows Server 2016, you need to turn off IE Enhanced Security Configuration temporarily. Otherwise it would block azure login window content.
 
 1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-3. Run the following script from $(DownloadPath)\\InfrastructureScripts.
+3. Run the following script from **Infrastructure** folder.
     ```powershell
-    .\AddCertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
 ### <a name="setupfile"></a> 12. Set up file storage
@@ -562,6 +576,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
 
+> [!IMPORTANT]
+> 1. Please enable [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode)
+
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
     > [!NOTE]
@@ -603,7 +620,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate.
+    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1 it's HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
         2. Navigate to the certificate, right-click -> **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
@@ -749,6 +766,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     # Service fabric API to encrypt text and copy it to the clipboard.
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
+> [!IMPORTANT]
+> 1. You need to install [Microsoft Azure Service Fabrick SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only) before you could invoke *Invoke-ServiceFabricEncryptText*.
+> 2. If you encounter error "Invoke-ServiceFabricEncryptText is not recognized command" error after Azure Service Fabrick SDK installed, please restart the computer and retry it.
 
 ### <a name="setupssis"></a> 16. Set up SSIS
 
@@ -764,6 +784,8 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
 2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
+> [!IMPORTANT]
+> Ensure you install database engine as well when install SSRS
 
 ### <a name="configureadfs"></a> 18. Configure AD FS
 
@@ -903,6 +925,29 @@ See the topic [Reconfigure your environment](../lifecycle-services/reconfigure-e
 
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
+
+## Known issues
+
+### Error "Key does not exist" when run New-D365FOGMSAAccounts cmdlet
+If this is the first time for you to create and generate group Managed Service Account passwrods in your domain then you need to create the **Key Distribution Services KDS Root Key** first. For more details, please refer to [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)
+
+### Error "The WinRM client cannot process the request" when run remoting script Configure-Prereqs-AllVms cmdlet
+You need to follow the instructions per error message itself to enable computer policy **Allow delegation fresh credentials** in all machines of Service Fabirc cluster.
+
+### Error "Not process argument transformation on parameter 'Test'. Canot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when run Config-Prereqs-AllVms cmdlet
+To workaround this error, you could remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1 which could be found under **Infrastructure** folder
+
+### Error "Not process argument transformation on parameter 'Test'. Canot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when run Complete-Prereqs-AllVms cmdlet
+To workaround this error, you could remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which could be found under **Infrastructure** folder
+
+### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when run Configure-Prereqs on servers of MRType and ReportServerTyoe
+.Net Framework 3.5 is requried in servers of MRType and ReportServerType. However, by default source files of .Net Framework 3.5 isn't included in your Windows Server 2016 installation. So, you need to install it and specify the source files through "source" option when add new features by server manager manually
+
+### Error "MSIS7628: scope names should be a valid Scope Description name in AD FS configuration" when run Publish-ADFSApplicationGroup cmdlet
+This is because of a OpenID scope **allatclaims** required per D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. So you need to add sceop description **allatclaims** through AD FS Management\Service\Scope Descriptions
+
+### Error "ADMIN0077: access control policy does not exist: Permit everyone" when run Publish-ADFSApplicationGroup cmdlet
+This is because of when your AD FS is installed with non-English version of Windows Server 2016, permit everyone access control policy is created with your local language. Your need to invoke the cmdlet by specifying AccessControlPolicyName parameter as .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
 
 ## See also
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
