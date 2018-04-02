@@ -52,7 +52,7 @@ the same voucher, the voucher can be entered as a multiline voucher, as an accou
 [![Single line](./media/same-line.png)](./media/same-line.png)
  
 > [!IMPORTANT] 
-> *  Note that the definition of ‘One voucher’ does NOT include journal names that are setup as **One voucher number** only and the user then enters a voucher which includes only Ledger account types.  For purposes of this document, ‘One voucher’ is only when there is one voucher that contains more than one vendor, customer, bank, fixed asset or project. 
+> *  Note that the definition of ‘One voucher’ does NOT include journal names that are set up as **One voucher number** only and the user then enters a voucher which only includes Ledger account types.  In this document, ‘One voucher’ means that there is one voucher that contains more than one vendor, customer, bank, fixed asset, or project. 
 
 -   Enter a multiline voucher where there is no offset account.
 
@@ -104,7 +104,7 @@ the functionality on if your organization has a scenario that falls in the busin
 functionality will be permanently turned off.
 
 -  > [!IMPORTANT]
-> Please note that we are NOT removing the option **One voucher number only** from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful, though, in using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of these subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
+> Please note that the **One voucher number only** option has NOT been removed from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful when using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
 
 Why use One voucher?
 ====================
