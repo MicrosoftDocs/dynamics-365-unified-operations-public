@@ -52,7 +52,7 @@ The Dynamics 365 for Finance and Operations online service is covered by the Mod
     -   **Non-critical updates** – Customers must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates.
 
 > [!Note]
-> Application and Platform releases expire at the end of the month of their software lifecycle.+
+> Application and Platform releases expire at the end of the month of their software lifecycle.
 
 ## Dates and versions for Finance and Operations application and platform releases
 
