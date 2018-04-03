@@ -73,7 +73,7 @@ Extensibility requests are exclusive for Dynamics 365 for Finance and Operations
 Extensibility requests are logged to a backlog. Microsoft engineers prioritize all requests, and then work on them in priority order. Please note that Microsoft is not guaranteeing requests will be fulfilled. Especially requests that are intrusive by nature, will not be supported, as they will prevent seamless upgrade.
 
 ## How will extensibility requests be made available to deploy?
-After the April 2018 Update we plan to release frequent application releases with new extensibility requests; following the same release cadence as the platform. 
+After the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 8.0 release we plan to release frequent application updates with new extensibility requests; following the same release cadence as the platform. 
 
 ## Still have questions?
 
