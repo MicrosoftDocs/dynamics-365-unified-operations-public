@@ -5,7 +5,7 @@ title: Choose a data integration (import/export) strategy
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -5,7 +5,7 @@ title: Create a copy of a Finance and Operations database to restore later
 description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 03/30/2018
 
 ms.topic: article
 ms.prod: 
