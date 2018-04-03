@@ -29,14 +29,13 @@ ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---
-
 # Extensibility home page
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations is customized extensively by partners, value added resellers (VARs), and even some customers. This is a strength of the product that historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model, which makes updates less likely to impact custom solutions. This new model is called *extensibility* and will ultimately replace customization by overlayering. 
+Microsoft Dynamics 365 for Finance and Operations is customized extensively by partners, value added resellers (VARs), and even some customers. This is a strength of the product that historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model, which makes updates less likely to impact custom solutions. This new model is called *extensibility* and has replaced customization by overlayering. 
 
-Extensibility is the only customization framework in Microsoft Dynamics 365 for Retail. Overlayering is not supported.
+Extensibility is the only customization framework in Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Finance and Operations. Overlayering is not supported.
 
 ## Introduction
 
@@ -49,8 +48,9 @@ These introductory topics contain general information about customization, inclu
 ## What's new
 This section lists the extensibility-related updates that have been made since July 2017.
 
-+ [Extensibility changes for Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 + [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
++ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 8.0](Changes-80.md)
 
 ## Getting started
 
@@ -69,17 +69,6 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extensions](class-extensions.md)
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
-
-## Changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-
-The following changes were introduced in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. If you have comments or suggestions about these features, please provide feedback on these blog posts or contact us using [Extensibility requests](extensibility-requests.md). 
-
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
-+ [Inventory dimensions](inventory-dimensions.md)
-+ [Changes to price and discount extensibility](pricing-app73.md)
-+ [Table map extension](map-extensions.md)
-  + [Extend table maps used as interfaces](maps-as-interfaces.md)
-  + [Extend table maps used for versioning](maps-with-versioning.md)
   
 ## How do I..?
 
