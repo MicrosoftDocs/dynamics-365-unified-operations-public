@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations is using a model of exclusively using extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
+Microsoft Dynamics 365 for Finance and Operations exclusively uses extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
 
 You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. We have added many extension capabilities and expect to add more going forward, to enable the same business requirements without overlayering. For some customizations that were done with overlayering, you will need to log requests, to make us aware what you need.
 
