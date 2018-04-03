@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Inventory lookup in the POS
@@ -26,7 +27,7 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
- ms.dyn365.ops.version: Application pdate 5, AX 8.0
+ms.dyn365.ops.version: Application update 5, AX 8.0
 
 ---
 
