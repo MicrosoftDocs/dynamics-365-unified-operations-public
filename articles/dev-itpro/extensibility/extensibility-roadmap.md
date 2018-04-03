@@ -43,7 +43,7 @@ Extension-based customizations have several advantages over the legacy approach 
 
 For these reasons, we have gradually been sealing the product models, so they only support extension-based customizations. **AppPlatform** and **AppFoundation** were the first. These models were sealed for overlayering in Platform update 3 (November 2016). Binary updates are now provided to these models on a monthly basis, achieving our goals of reducing upgrade cost and delivering innovation to our customers at a faster cadence. 
 
-With the April 2018 update we have sealed all product models. Now only extension based customizations are supported.
+With Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 8.0 we have sealed all product models. Now only extension based customizations are supported.
 
 The following illustration shows the roadmap we followed as we moved to extensions, away from overlayering.
 
