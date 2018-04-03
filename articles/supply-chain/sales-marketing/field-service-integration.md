@@ -174,7 +174,7 @@ Synchronization of **Estimated** values versus **Used** values is managed throug
 
 To keep track of sales orders in Finance and Operations that originate from work orders, you can create a sales origin where the **Origin type assignment** option is set to **Yes** and the **Sales origin type** field is set to **Work order integration**.
 
-By default, the mapping sets the sales origin of all sales orders that are created from work orders to the sales origin. This behavior can be useful when you work with the sales order in Finance and Operations. You must make sure that sales orders that originate from work orders aren't synchronized back to Field Service as work orders.
+By default, the mapping selects the sales origin for the **Work order integration** sales origin type for all sales orders that are created from work orders. This behavior can be useful when you work with the sales order in Finance and Operations. You must make sure that sales orders that originate from work orders aren't synchronized back to Field Service as work orders.
 
 For details about how to create the correct sales origin setup in Finance and Operations, see the "Preconditions and mapping setup" section of this topic.
 
@@ -223,7 +223,7 @@ Before you synchronize work orders, it's important that you update the following
 
 ### Setup in Field Service
 
-- Make sure that you don't have overlapping number series for work orders and sales orders across both Field Service and Finance and Operations. Otherwise, existing sales orders can be incorrectly updated in Field Service or Finance and Operations.
+- Make sure that the number series that is used for work orders in Field Service doesn't overlap the number sequence that is used for sales orders in Finance and Operations. Otherwise, existing sales orders can be incorrectly updated in Field Service or Finance and Operations.
 - The **Work Order Invoice Creation** field must be set to **Never**, because the invoicing will be done from Finance and Operations. Go to **Field Service** \> **Settings** \> **Administration** \> **Field Service Settings**, and make sure that the **Work Order Invoice Creation** field is set to **Never**.
 
 ### Setup in Finance and Operations
