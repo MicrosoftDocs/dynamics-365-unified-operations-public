@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
-For a detailed list of when each version of the product was released, see [Software lifecycle policy and list of releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+For a detailed list of when each version of the product was released, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <colgroup>

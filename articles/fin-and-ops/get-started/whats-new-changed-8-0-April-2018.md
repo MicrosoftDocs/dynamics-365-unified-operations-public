@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -155,7 +155,7 @@ if the services in a production environment are degraded or become unavailable.
 ### Vendor collaboration – RFQ process
 
 Enhancements make it easy to tell who entered a bid (a vendor or a procurement
-department).
+department). For more information, see [Requests for quotation (RFQs)](../../supply-chain/procurement/request-quotations.md).
 
 ### Partial shipment of a load (split load)
 
@@ -164,12 +164,12 @@ Allows single loads or multiple loads to be fully or partially loaded.
 ### Immediate replenishment of locations
 
 Used during wave execution if allocation fails for a location directive line
-that has a replenishment template.
+that has a replenishment template. For more information about immediate replenishment, see [Immediate replenishment](../../supply-chain/warehousing/immediate-replenishment.md).
 
 ### Reason codes added to warehouse counting and adjustment
 
 Users can add a reason code when performing counts and when making an
-adjustment.
+adjustment. For more information about reason codes, see [Reason codes for inventory counting](../../supply-chain/warehousing/reason-codes-for-counting-journals.md).
 
 ### Batch balancing enabled for advanced warehousing processes 
 
@@ -177,7 +177,7 @@ The batch balancing process is now available for products that are set up for
 warehouse management processes (in earlier releases, the batch balancing process
 was enabled only for products that were not set up for warehouse management
 processes). This enhancement makes it possible for the user to release
-ingredients to picking after the batch balancing process has been completed.
+ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](../../supply-chain/production-control/batch-balancing.md).
 
 ### Analytical workspaces with embedded Power BI for Cost management
 
@@ -185,7 +185,7 @@ New Analytical workspaces for Cost management are embedded in the Cost
 administration and Cost Analysis workspaces. The content pack includes measures
 such as beginning balance, ending balance, net sourcing and net usage. A set of
 calculated measures, such as inventory turn ratio, days inventory on-hand, and
-inventory accuracy are also included. The **Cost management** Power BI content is shown in the **Cost administration** and **Cost analysis** workspaces. For more information, see [Cost management Power BI content](../../dev-itpro/analytics/cost-management-content-pack.md)
+inventory accuracy are also included. The **Cost management** Power BI content is shown in the **Cost administration** and **Cost analysis** workspaces. For more information, see [Cost management Power BI content](../../dev-itpro/analytics/cost-management-content-pack.md).
 
 ## Globalization 
 

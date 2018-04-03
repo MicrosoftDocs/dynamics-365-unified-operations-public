@@ -261,6 +261,7 @@
 ### [e-commerce platform SDK](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Payment connector extensibility
+### [Payment integration with a payment terminal](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Deploy a payment connector](dev-itpro/deploy-payment-connector.md)
 ### [Create a Windows installer for a payment connector](dev-itpro/create-windows-installer-payment-connector.md)
@@ -270,6 +271,7 @@
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Extension points for packing slips](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)
 ### [CDX extensibility](dev-itpro/cdx-extensibility.md)
 ### [Order attributes](dev-itpro/order-attributes.md)
