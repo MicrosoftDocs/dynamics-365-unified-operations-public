@@ -135,7 +135,7 @@ Before a count is approved, the user can change the reason code that is associat
 ### Modify cycle count approvals
 
 1. Select **Warehouse management** \> **Cycle counting** \> **Cycle count work pending review**.
-2. Select **\> Cycle counting**, and then, in the **Reason code** field, select a new reason code.
+2. Select **Cycle counting**, and then, in the **Reason code** field, select a new reason code.
 
 ### Modify the mobile device menu item for Adjustment in and Adjustment out
 
