@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Microsoft Dynamics 365 for Field Service to sales order in Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,7 +83,7 @@ The following synchronization tasks are required before synchronization of sales
 
 Work orders are created in Field Service. If the work orders include only externally maintained products, and if the **Work order status** value differs from **Open-Unscheduled** and **Closed – Cancelled**, the work orders can be synchronized to Finance and Operations via a CDS Data integration project. Updates on the work orders will be synchronized as sales orders in Finance and Operations. These updates include the information about the origin type and status.
 
-### Expected versus Used
+### Estimated versus Used
 
 In Field Service, products and services on work orders have both **Estimated** values and **Used** values for quantities and amounts. However, in Finance and Operations, sales orders don't have the same concept of **Estimated** and **Used** values. To support product allocation that uses the expected quantity on the sales order in Finance and Operations, but to keep the used quantity that should be consumed and invoiced, two sets of tasks synchronize the products and services on the work order. One set of tasks is for **Estimated** values, and the other set of tasks is for **Used** values.
 
