@@ -37,17 +37,13 @@ ms.dyn365.ops.version: Platform update 9
 
 Yes, source code will be available after the hard seal, because it's required for effective implementation and debugging.
 
-## How long will bug fixes and regulatory updates be made for the next major product update? 
-
-Per the Modern support policy, bug fixes and regulatory updates will be made for three years.
-
 ## How do I contact Microsoft if I have an extensibility request?
 
-There is a special extensibility request form on the Connect site. You must sign a non-disclosure form to gain access to the Connect site.
+There is a special extensibility request form on the LCS site. 
 
 ## Where can I ask questions about extensibility patterns?
 
-When you gain access to the Connect site, you will also gain access to the Operations Extensibility group in Yammer. Operations Extensibility is an active group that has a significant amount of partner engagement.
+You can gain access to the Operations Extensibility group in Yammer. Operations Extensibility is an active group that has a significant amount of partner engagement. You get access via the Connect site by signing an NDA.
 
 ## Where can I find documentation about extensibility patterns?
 
@@ -81,4 +77,4 @@ On-premises solutions will follow the same patterns as cloud solutions. Therefor
     
 ## How often will Microsoft provide external updates so that partners can see what extensibility enhancements have been made?
 
-We plan to provide monthly Community Technology Previews (CTPs) after Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+We plan to provide monthly updates of platform and application after Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (April 2018).
