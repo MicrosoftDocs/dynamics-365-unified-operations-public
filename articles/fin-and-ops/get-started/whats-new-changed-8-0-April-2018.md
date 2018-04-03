@@ -169,7 +169,7 @@ that has a replenishment template. For more information about immediate replenis
 ### Reason codes added to warehouse counting and adjustment
 
 Users can add a reason code when performing counts and when making an
-adjustment. For more information about reason codes, see [Reason codes for inventory counting] (reason-codes-for-counting-journals.md).
+adjustment. For more information about reason codes, see [Reason codes for inventory counting](reason-codes-for-counting-journals.md).
 
 ### Batch balancing enabled for advanced warehousing processes 
 
@@ -177,7 +177,7 @@ The batch balancing process is now available for products that are set up for
 warehouse management processes (in earlier releases, the batch balancing process
 was enabled only for products that were not set up for warehouse management
 processes). This enhancement makes it possible for the user to release
-ingredients to picking after the batch balancing process has been completed. For more information about Batch balancing, see [Batch balancing] (batch-balancing.md).
+ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](batch-balancing.md).
 
 ### Analytical workspaces with embedded Power BI for Cost management
 
