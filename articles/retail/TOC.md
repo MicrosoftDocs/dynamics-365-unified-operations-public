@@ -271,6 +271,7 @@
 ### [Retail SDK extensibility samples](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK packaging](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK samples ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Extension points for packing slips](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Channel database (DB) extensions](dev-itpro/channel-db-extensions.md)
 ### [CDX extensibility](dev-itpro/cdx-extensibility.md)
 ### [Order attributes](dev-itpro/order-attributes.md)
