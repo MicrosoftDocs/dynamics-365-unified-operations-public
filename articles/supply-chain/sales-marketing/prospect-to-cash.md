@@ -50,7 +50,6 @@ In the current version, the Prospect to cash solution provides the following typ
 - [Synchronize sales invoice directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
 
 ## System requirements for Finance and Operations
-
 Prospect to cash integration is supported on the following versions:
 
 ### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
@@ -88,18 +87,7 @@ Prospect to cash integration is supported on the following versions:
 To use the Prospect to cash solution, you must install the following components:
 
 - Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or a later version
-- Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 (v15) 
+- Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 or a later version
 
-### Install the Prospect to cash solution for Sales
-
-1. Download the [Prospect to cash for Dynamics 365 for Sales solution package zip file](https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/MD365FNOPENTProspectToCash) from CustomerSource.
-2. Make sure that the zip file is unblocked. Otherwise, when you try to install the solution package, you may receive the following error message, "No import packages were found." To unblock the zip file, right-click it, and select **Properties**. Select **Unblock**.
-3. Unzip and run **PackageDeployer.exe**.
-4. Install the Prospect to cash solution on your Sales instance:
-
-    1. Select **Office 365** as the deployment type.
-    2. Select **Show advanced**.
-    3. For a quick installation, select a region. If you select **Don't know**, the system searches for all regions, and the installation will take more time.
-    4. Enter the user name and password of an admin user who has installation rights.
-
-
+Prospect to cash solution for Sales is available on AppSource: 
+- [Dynamics 365, Prospect to Cash](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)
