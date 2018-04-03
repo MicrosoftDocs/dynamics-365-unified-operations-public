@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data task automation
-description: Data task automation in Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks, and validate the outcome of each task. 
+description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 03/28/2018
@@ -28,62 +28,64 @@ ms.dyn365.ops.version: Platform update 16
 
 # Data task automation
 
-Data task automation in Microsoft Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks, and validate the outcome of each task. Data task automation is very useful for projects in the implementation phase. For example, you can automate data project creation and data project configuration. You can also configure and trigger the execution of import/export operations, such as setting up demo data, golden configuration data, and performing other data migration related tasks. You can also use data task automation to create automated testing of data entities, using task outcome validation. 
+[!include[banner](../includes/banner.md)]
+
+Data task automation in Microsoft Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
 
 > [!IMPORTANT]
-> Data task automation is currently not supported for on-premises environments.
+> Data task automation isn't currently supported for on-premises environments.
 
-We recommend the following approach to data task automation:
+We recommend the following approach for data task automation.
 
-1.	Identify the data related tasks that will benefit from automation. 
+1. Identify the data-related tasks that will benefit from automation.
 
-    We recommend that implementation teams review their configuration management and data migration plans to identify potential data tasks for automation, and data entity test cases. 
+    We recommend that implementation teams review their configuration management plan and data migration plan to identify potential data tasks for automation, and also to identify data entity test cases.
 
-2.	Define tasks.
+2. Define tasks.
 
     Tasks are defined in an XML manifest. You can keep your manifest under source control as part of configuration management in your application lifecycle management (ALM) strategy.
 
-3.	Put the data packages related to data task automation in the shared asset library of LCS. You can also choose to use specific LCS project if needed. 
+3. Put the data packages that are related to data task automation in the Shared asset library of Microsoft Dynamics Lifecycle Services (LCS). You can also use a specific LCS project as you require.
 
-    The Data task automation manager can consume packages from any environment (sandbox and/or production) related to the LCS project.
+    Data task automation manager can consume packages from any sandbox and/or production environment that is related to the LCS project.
 
     > [!IMPORTANT]
-    > The user account running the task automation manager in Finance and Operations must have access to LCS and the LCS project that is referenced in the manifest for data packages.
-    > Although data task automation can be run on any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration API’s in a production environment. Data task automation with integration API’s should be used for automated testing only.
+    > - The user account that runs Data task automation manager in Finance and Operations must have access to LCS and to the LCS project that is referenced in the manifest for data packages.
+    > - Although data task automation can be run in any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration application programming interfaces (APIs) in a production environment. Data task automation that involves integration APIs should be used only for automated testing.
 
-4.	Run the data tasks, and then review the outcomes. 
+4. Run the data tasks, and then review the outcomes.
 
-    Data task automation manager provides success or failure outcome for each task. It also provides insights into why a task failed.
-    
-    > [!NOTE]
-    > Although the task automation can be run on any environments in the cloud, it is not recommended to run any import/export tasks using integration API’s in a production environment. The intent for using integration API’s in task automation should only be for automated testing purposes.
-    
-The following video is a 55 minute TechTalk that walks through an early release of Data task automation manager.
+    Data task automation manager provides the success or failure outcome for each task. It also provides insights into the reason why a task failed.
+
+    > [!IMPORTANT]
+    > Although data task automation can be run in any environments in the cloud, we recommend that you not run any import/export tasks that use integration APIs in a production environment. Data task automation that involves integration APIs should be used only for automated testing.
+
+The following video is a 55-minute TechTalk that walks you through an early release of Data task automation manager.
+
 > [!Video https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4]
 
 ## Task manifest
-A task must be defined in an XML manifest. This section describes the manifest. See the Best practice section for guidance on how to name and design the manifest.
+A task must be defined in an XML manifest. This section describes the manifest. For guidance about how to name and design the manifest, see the "Best practices for manifest design" section later in this topic.
 
 ### Manifest root
-The <TestManifest>  is the root of the manifest. All other elements are children of this element.
+The **\<TestManifest\>** element is the root of the manifest. All other elements are children of this element.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
-  <SharedSetup />
-    <JobDefinition ID='ImportJobDefinition_1' />
-    <EntitySetup ID='Generic' />
-  </SharedSetup>
-  <TestGroup />
+    <SharedSetup />
+        <JobDefinition ID='ImportJobDefinition_1' />
+        <EntitySetup ID='Generic' />
+    </SharedSetup>
+    <TestGroup />
 </TestManifest>
 ```
 
-### Shared set up
-The Shared set up section defines general task parameters and behaviors for all tasks in the manifest. 
-
+### Shared setup
+The **Shared setup** section defines general task parameters and behaviors for all tasks in the manifest.
 
 ### Data files
-The <DataFile> element defines the data packages and data files that will be used by the tasks in the manifest. The data files must be in the LCS asset library of your LCS project or in the Shared asset library.
+**\<DataFile\>** elements define the data packages and data files that the tasks in the manifest will use. The data files must be either in the LCS asset library of your LCS project or in the Shared asset library.
 
 ```
 <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
@@ -93,32 +95,32 @@ The <DataFile> element defines the data packages and data files that will be use
 ```
 
 ### Data project definition
-The data project definition is defined using the <JobDefinition> element. There can be more than one job definitions in a manifest.
+The **\<JobDefinition\>** element defines the data project definition. There can be more than one job definition in a manifest.
 
 ```
 <JobDefinition ID='ImportJobDefinition_1'>
-  <Operation>Import</Operation>
-  <SkipStaging></SkipStaging>
-  <Truncate></Truncate>
-  <Mode>Import async</Mode>
-  <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
-  <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
-  <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
-  <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
-  <SupportedDataSourceType>Package</SupportedDataSourceType>
-  <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
-  <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
-  <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
-  <LegalEntity>DAT</LegalEntity>
+    <Operation>Import</Operation>
+    <SkipStaging></SkipStaging>
+    <Truncate></Truncate>
+    <Mode>Import async</Mode>
+    <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
+    <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
+    <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
+    <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
+    <SupportedDataSourceType>Package</SupportedDataSourceType>
+    <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
+    <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
+    <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
+    <LegalEntity>DAT</LegalEntity>
 </JobDefinition>
 ```
 
-### Entity set up
-The entity set up defines the characteristics of an entity to be used by a task. There can be more than one such definition one for each entity being used by tasks in the manifest.
+### Entity setup
+The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
 
 ```
-    <EntitySetup ID='Generic'>
-      <Entity name='*'>
+<EntitySetup ID='Generic'>
+    <Entity name='*'>
         <SourceDataFormatName>Package</SourceDataFormatName>
         <ChangeTracking></ChangeTracking>
         <PublishToBYOD></PublishToBYOD>
@@ -130,253 +132,245 @@ The entity set up defines the characteristics of an entity to be used by a task.
         <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
         <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
         <ParallelProcessing>
-          <Threshold></Threshold>
-          <TaskCount></TaskCount>
+            <Threshold></Threshold>
+            <TaskCount></TaskCount>
         </ParallelProcessing>
-      </Entity>
-    </EntitySetup>
+    </Entity>
+</EntitySetup>
 ```
 
 ### Test groups
-Groups can be used to organize related tasks together in a manifest. There can be more than one group in a manifest.
+Test groups can be used to organize related tasks in a manifest. There can be more than one test group in a manifest.
 
 ```
-  <TestGroup name='Set up Financials'>
+<TestGroup name='Set up Financials'>
     <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
-      <DataFile RefID='SharedSetup' />
-      <JobDefinition RefID='ImportJobDefinition_1' />
-      <EntitySetup RefID='Generic' />
+        <DataFile RefID='SharedSetup' />
+        <JobDefinition RefID='ImportJobDefinition_1' />
+        <EntitySetup RefID='Generic' />
     </TestCase>
     
-	<TestCase Title='Import financials for HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsHQUS' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>HQUS</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+    <TestCase Title='Import financials for HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
+        <DataFile RefID='FinancialsHQUS' />
+        <JobDefinition RefID='ImportJobDefinition_1'>
+            <LegalEntity>HQUS</LegalEntity>
+        </JobDefinition>
+        <EntitySetup RefID='Generic' />
+    </TestCase>
 
-	<TestCase Title='Import financials for PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPICH' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PICH</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+    <TestCase Title='Import financials for PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
+        <DataFile RefID='FinancialsPICH' />
+        <JobDefinition RefID='ImportJobDefinition_1'>
+            <LegalEntity>PICH</LegalEntity>
+        </JobDefinition>
+        <EntitySetup RefID='Generic' />
+    </TestCase>
 
-	<TestCase Title='Import financials for PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPIFB' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PIFB</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
-  </TestGroup>
+    <TestCase Title='Import financials for PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
+        <DataFile RefID='FinancialsPIFB' />
+        <JobDefinition RefID='ImportJobDefinition_1'>
+            <LegalEntity>PIFB</LegalEntity>
+        </JobDefinition>
+        <EntitySetup RefID='Generic' />
+    </TestCase>
+</TestGroup>
 ```
 
-## Best practice for manifest design
-You can define a manifest in many different ways. Below are a few pointers to consider when designing the manifest.
+## Best practices for manifest design
+You can define a manifest in many ways. Here are a few pointers that you should consider when you design a manifest.
 
 ### Granularity
-We recommend that you determine the granularity of your manifest as a functional decision. Your team will need to decide whether they want to manage many manifests, or manage changes in a single manifest. 
--	Start with as many manifests as your team thinks you need logically, and then merge them if the team finds themselves using and wanting to merge manifests when they start running them. 
--	Consider separation of duties. For example, you might have one manifest to set up the demo data and a different manifest to set up the golden configuration for your environment. This way, you can make sure that team members use only the manifests that they are supposed to use. 
--	Consider user access to LCS. For larger and globally distributed implementation teams, that have multiple instances of Finance and Operations or multiple LCS projects.
+We recommend that you determine the granularity of your manifest as a functional decision. Your team must decide whether it wants to manage many manifests or manage changes in a single manifest.
+
+- Start with as many manifests as your team thinks you logically need. Later, when the team actually starts to run the manifests, it might find that it uses fewer manifests than it expected, and it might want to merge them. In this case, you can merge manifests.
+- Consider separation of duties. For example, you might have one manifest for the setup of demo data and another manifest for the setup of the golden configuration for your environment. In this way, you can make sure that team members use only the manifests that they are supposed to use.
+- Consider user access to LCS. For example, larger and globally distributed implementation teams might have multiple instances of Finance and Operations or multiple LCS projects.
 
 ### Inheritance
-The manifest schema supports inheritance of common elements that are going to be applicable to all tasks in the manifest. A task can override a common element to define a unique behavior. The goal of the Shared setup section is to minimize repeating configuration elements to re-use as much as possible. The goal is to keep the manifest concise and clean to improve maintenance and readability. 
+The manifest schema supports inheritance of common elements that will apply to all tasks in the manifest. A task can override a common element to define a unique behavior. The purpose of the **Shared setup** section is to minimize repetition of configuration elements, so that elements are reused as much as possible. The goal is to keep the manifest concise and clean, to improve maintenance and readability.
 
 ### Source control
-Manifests that must be used by all the members of an implementation team should be stored in source control in the application object tree (AOT). This not only provides for the benefits of source control but also enables a process to distribute or make the manifest(s) available to all users in a consistent manner. This also enables configuration management for data management related data projects if manifests are being used to configure.
+Manifests that must be used by all the members of an implementation team should be stored in source control in the Application Object Tree (AOT). This approach not only provides the benefits of source control, but also enables a process to distribute or make manifests available to all users in a consistent manner. This approach also enables configuration management for data projects that are related to data management, if manifests are used for configuration.
 
 ### Number of job definitions and entity definitions
-For most of the use cases, having one job definition in a manifest should suffice the need since inheriance can be used to change the behavior at a task level. The same holds good for entity definity as well.
+For most of the use cases, one job definition in a manifest should be enough, because inheritance can be used to change the behavior at the task level. This principle also applies to entity definitions.
 
 ## Validations
-The task automation manager performs validations based on how a task has been set up. Validations can be viewed after the task has completed to know the reasons of a failure in case the task had failed. The level of information provided in the task automation manager is optimized to facilitate initial discovery.
+Data task automation manager performs validations, based on the setup of a task. If a task fails, you can quickly determine the reason for the failure by viewing the validations after the task is completed. The level of information that Data task automation manager provides is optimized to facilitate initial discovery. For detailed investigation, you must look at the corresponding data project and its execution details
 
 ![Validations](./media/Validations.png)
 
-The data validations currently supported are the following.
+The following data validations are currently supported:
 
--   Job status – checks whether the status of the job is successful or not
+- **Job status** – This validation checks whether the job was successful.
+- **Batch status** – This validation checks whether the batch was successful.
+- **Message status** – If the test is about integrations, the message status is validated.
+- **Truncation** – If truncation is enabled, this validation checks whether truncation occurred.
+- **Skip staging** – If **Skip staging** is enabled on a test, this validation checks whether staging was skipped.
 
+## Example 1: Configuration management for data projects
+The **\<ConfigurationOnly\>** element can be used to create configuration tasks for data projects and recurring schedules.
 
--   Batch status – checks whether the status of the batch was successful or not
-
--   Message status – if the test is about integrations then message status is also validated
-
--   Truncation – if truncation is enabled, then validation is done to check whether truncation happened
-
--   Skip staging – if Skip staging is enabled on a test, then validation is done to checkw whether staging was skipped
-
-If a task has failed, looking at the validations is a quick way to know why the task failed. The corresponding data project and its execution details must be looed into for detailed investigation.
-
-
-## Example: Configuration management for data projects
-The ‘ConfigurationOnly’ element can be used to create configuration tasks for data projects and recurring schedules. 
-
-The first example below configures a data project without a recurring schedule. The second example includes a recurring schedule. The difference is the value provided to the **<Operation>** element. Manifests for configuration tasks should also be kept under source control.
+This first example configures a data project that doesn't have a recurring schedule. The second example includes a recurring schedule. The difference is the value of the **\<Operation\>** element. Manifests for configuration tasks should also be kept under source control.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
-  <SharedSetup>
-	<DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
+    <SharedSetup>
+        <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
 
-    <JobDefinition ID='ImportJobDefinition_1'>
-	  <ConfigurationOnly>Yes</ConfigurationOnly>
-      <Operation>Import</Operation>
-      <SkipStaging>No</SkipStaging>
-      <Truncate>No</Truncate>
-      <Mode>Import async</Mode>
-      <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
-	  <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
-      <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
-      <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
-      <SupportedDataSourceType>Package</SupportedDataSourceType>
-      <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
-      <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
-      <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
-	  <LegalEntity>DAT</LegalEntity>
-    </JobDefinition>
+        <JobDefinition ID='ImportJobDefinition_1'>
+            <ConfigurationOnly>Yes</ConfigurationOnly>
+            <Operation>Import</Operation>
+            <SkipStaging>No</SkipStaging>
+            <Truncate>No</Truncate>
+            <Mode>Import async</Mode>
+            <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
+            <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
+            <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
+            <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
+            <SupportedDataSourceType>Package</SupportedDataSourceType>
+            <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
+            <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
+            <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
+            <LegalEntity>DAT</LegalEntity>
+        </JobDefinition>
 
-    <EntitySetup ID='Generic'>
-      <Entity name='*'>
-        <SourceDataFormatName>Package</SourceDataFormatName>
-        <ChangeTracking>No</ChangeTracking>
-        <PublishToBYOD>No</PublishToBYOD>
-        <DefaultRefreshType>Full push only</DefaultRefreshType>
-        <ExcelWorkSheetName></ExcelWorkSheetName>
-        <SelectFields>All fields</SelectFields>
-        <SetBasedProcessing>No</SetBasedProcessing>
-        <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
-        <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
-        <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
-        <ParallelProcessing>
-          <Threshold></Threshold>
-          <TaskCount></TaskCount>
-        </ParallelProcessing>
-      </Entity>
-    </EntitySetup>
-  </SharedSetup>
+        <EntitySetup ID='Generic'>
+            <Entity name='*'>
+                <SourceDataFormatName>Package</SourceDataFormatName>
+                <ChangeTracking>No</ChangeTracking>
+                <PublishToBYOD>No</PublishToBYOD>
+                <DefaultRefreshType>Full push only</DefaultRefreshType>
+                <ExcelWorkSheetName></ExcelWorkSheetName>
+                <SelectFields>All fields</SelectFields>
+                <SetBasedProcessing>No</SetBasedProcessing>
+                <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
+                <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
+                <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
+                <ParallelProcessing>
+                    <Threshold></Threshold>
+                    <TaskCount></TaskCount>
+                </ParallelProcessing>
+            </Entity>
+        </EntitySetup>
+    </SharedSetup>
 
-  <TestGroup name='Set up import jobs for  Financials'>
-    <TestCase Title='Set up import job for shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
-      <DataFile RefID='SharedSetup' />
-      <JobDefinition RefID='ImportJobDefinition_1' />
-      <EntitySetup RefID='Generic' />
-    </TestCase>
-    
-	<TestCase Title='Set up import job for financials HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsHQUS' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>HQUS</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+    <TestGroup name='Set up import jobs for Financials'>
+        <TestCase Title='Set up import job for shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='SharedSetup' />
+            <JobDefinition RefID='ImportJobDefinition_1' />
+            <EntitySetup RefID='Generic' />
+        </TestCase>
 
-	<TestCase Title='Set up import job for financials PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPICH' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PICH</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+        <TestCase Title='Set up import job for financials HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsHQUS' />
+                <JobDefinition RefID='ImportJobDefinition_1'>
+                    <LegalEntity>HQUS</LegalEntity>
+                </JobDefinition>
+                <EntitySetup RefID='Generic' />
+        </TestCase>
 
-	<TestCase Title='Set up import job for financials PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPIFB' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PIFB</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
-  </TestGroup>
+        <TestCase Title='Set up import job for financials PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsPICH' />
+                <JobDefinition RefID='ImportJobDefinition_1'>
+                    <LegalEntity>PICH</LegalEntity>
+                </JobDefinition>
+                <EntitySetup RefID='Generic' />
+        </TestCase>
+
+        <TestCase Title='Set up import job for financials PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsPIFB' />
+                <JobDefinition RefID='ImportJobDefinition_1'>
+                    <LegalEntity>PIFB</LegalEntity>
+                </JobDefinition>
+                <EntitySetup RefID='Generic' />
+        </TestCase>
+    </TestGroup>
 </TestManifest>
 ```
 
-## Example: Automated demo data set up
-The following manifest demonstrates setting up demo data for three legal entities, when the demo data packages are stored in the Shared asset library.
+## Example 2: Automated setup of demo data
+The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
-  <SharedSetup>
-	<DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
-	<DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
+    <SharedSetup>
+        <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
+        <DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
 
-    <JobDefinition ID='ImportJobDefinition_1'>
-      <Operation>Import</Operation>
-      <SkipStaging></SkipStaging>
-      <Truncate></Truncate>
-      <Mode>Import async</Mode>
-      <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
-	  <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
-      <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
-      <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
-      <SupportedDataSourceType>Package</SupportedDataSourceType>
-      <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
-      <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
-      <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
-	  <LegalEntity>DAT</LegalEntity>
-    </JobDefinition>
+        <JobDefinition ID='ImportJobDefinition_1'>
+                <Operation>Import</Operation>
+                <SkipStaging></SkipStaging>
+                <Truncate></Truncate>
+                <Mode>Import async</Mode>
+                <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
+                <NumberOfTimesToRunBatch >2</NumberOfTimesToRunBatch>
+                <UploadFrequencyInSeconds>1</UploadFrequencyInSeconds>
+                <TotalNumberOfTimesToUploadFile>1</TotalNumberOfTimesToUploadFile>
+                <SupportedDataSourceType>Package</SupportedDataSourceType>
+                <ProcessMessagesInOrder>No</ProcessMessagesInOrder>
+                <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
+                <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
+                <LegalEntity>DAT</LegalEntity>
+        </JobDefinition>
 
-    <EntitySetup ID='Generic'>
-      <Entity name='*'>
-        <SourceDataFormatName>Package</SourceDataFormatName>
-        <ChangeTracking></ChangeTracking>
-        <PublishToBYOD></PublishToBYOD>
-        <DefaultRefreshType>Full push only</DefaultRefreshType>
-        <ExcelWorkSheetName></ExcelWorkSheetName>
-        <SelectFields>All fields</SelectFields>
-        <SetBasedProcessing></SetBasedProcessing>
-        <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
-        <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
-        <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
-        <ParallelProcessing>
-          <Threshold></Threshold>
-          <TaskCount></TaskCount>
-        </ParallelProcessing>
-      </Entity>
-    </EntitySetup>
-  </SharedSetup>
+        <EntitySetup ID='Generic'>
+            <Entity name='*'>
+                <SourceDataFormatName>Package</SourceDataFormatName>
+                <ChangeTracking></ChangeTracking>
+                <PublishToBYOD></PublishToBYOD>
+                <DefaultRefreshType>Full push only</DefaultRefreshType>
+                <ExcelWorkSheetName></ExcelWorkSheetName>
+                <SelectFields>All fields</SelectFields>
+                <SetBasedProcessing></SetBasedProcessing>
+                <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
+                <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
+                <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
+                <ParallelProcessing>
+                    <Threshold></Threshold>
+                    <TaskCount></TaskCount>
+                </ParallelProcessing>
+            </Entity>
+        </EntitySetup>
+    </SharedSetup>
 
-  <TestGroup name='Set up Financials'>
-    <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
-      <DataFile RefID='SharedSetup' />
-      <JobDefinition RefID='ImportJobDefinition_1' />
-      <EntitySetup RefID='Generic' />
-    </TestCase>
-    
-	<TestCase Title='Import financials for HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsHQUS' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>HQUS</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+    <TestGroup name='Set up Financials'>
+        <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='SharedSetup' />
+            <JobDefinition RefID='ImportJobDefinition_1' />
+            <EntitySetup RefID='Generic' />
+        </TestCase>
 
-	<TestCase Title='Import financials for PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPICH' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PICH</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
+        <TestCase Title='Import financials for HQUS' ID='3933886' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsHQUS' />
+            <JobDefinition RefID='ImportJobDefinition_1'>
+                <LegalEntity>HQUS</LegalEntity>
+            </JobDefinition>
+            <EntitySetup RefID='Generic' />
+        </TestCase>
 
-	<TestCase Title='Import financials for PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
-		<DataFile RefID='FinancialsPIFB' />
-		<JobDefinition RefID='ImportJobDefinition_1'>
-			<LegalEntity>PIFB</LegalEntity>
-		</JobDefinition>
-		<EntitySetup RefID='Generic' />
-	</TestCase>
-  </TestGroup>
+        <TestCase Title='Import financials for PICH' ID='3933887' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsPICH' />
+            <JobDefinition RefID='ImportJobDefinition_1'>
+                <LegalEntity>PICH</LegalEntity>
+            </JobDefinition>
+            <EntitySetup RefID='Generic' />
+        </TestCase>
+
+        <TestCase Title='Import financials for PIFB' ID='3933888' RepeatCount='1' TraceParser='off' TimeOut='20'>
+            <DataFile RefID='FinancialsPIFB' />
+            <JobDefinition RefID='ImportJobDefinition_1'>
+                <LegalEntity>PIFB</LegalEntity>
+            </JobDefinition>
+            <EntitySetup RefID='Generic' />
+        </TestCase>
+    </TestGroup>
 </TestManifest>
 ```
-
