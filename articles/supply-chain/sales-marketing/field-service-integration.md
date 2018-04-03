@@ -99,26 +99,32 @@ For synchronization of service lines, the **Estimated** values are used when the
 
 The **Used** values are used for consumption and invoicing. In these cases, the **Used** values are synchronized.
 
-The following table provides an overview of the various combinations.
+The following table provides an overview of the various combinations for product lines.
+
+| System Status (Field Service) | Line Status (Field Service) | Allocated (Field Service) |Synchronized value (Finance and Operations) |
+|--------------------|-------------|-----------|---------------------------------|
+| Open - Scheduled   | Estimated   | Yes       | Estimated                       |
+| Open - Scheduled   | Estimated   | No        | Used                            |
+| Open - Scheduled   | Used        | Yes       | Used                            |
+| Open - Scheduled   | Used        | No        | Used                            |
+| Open - In Progress | Estimated   | Yes       | Estimated                       |
+| Open - In Progress | Estimated   | No        | Used                            |
+| Open - In Progress | Used        | Yes       | Used                            |
+| Open - In Progress | Used        | No        | Used                            |
+| Open - Completed   | Estimated   | Yes       | Estimated                       |
+| Open - Completed   | Estimated   | No        | Used                            |
+| Open - Completed   | Used        | Yes       | Used                            |
+| Open - Completed   | Used        | No        | Used                            |
+| Closed - Posted    | Estimated   | Yes       | Used                            |
+| Closed - Posted    | Estimated   | No        | Used                            |
+| Closed - Posted    | Used        | Yes       | Used                            |
+| Closed - Posted    | Used        | No        | Used                            |
+
+
+The following table provides an overview of the various combinations for service lines.
 
 | Line type | System Status      | Line Status | Allocated |     | Value in Finance and Operations |
 |-----------|--------------------|-------------|-----------|-----|---------------------------------|
-| Products  | Open - Scheduled   | Estimated   | Yes       | =\> | Estimated                       |
-| Products  | Open - Scheduled   | Estimated   | No        | =\> | Used                            |
-| Products  | Open - Scheduled   | Used        | Yes       | =\> | Used                            |
-| Products  | Open - Scheduled   | Used        | No        | =\> | Used                            |
-| Products  | Open - In Progress | Estimated   | Yes       | =\> | Estimated                       |
-| Products  | Open - In Progress | Estimated   | No        | =\> | Used                            |
-| Products  | Open - In Progress | Used        | Yes       | =\> | Used                            |
-| Products  | Open - In Progress | Used        | No        | =\> | Used                            |
-| Products  | Open - Completed   | Estimated   | Yes       | =\> | Estimated                       |
-| Products  | Open - Completed   | Estimated   | No        | =\> | Used                            |
-| Products  | Open - Completed   | Used        | Yes       | =\> | Used                            |
-| Products  | Open - Completed   | Used        | No        | =\> | Used                            |
-| Products  | Closed - Posted    | Estimated   | Yes       | =\> | Used                            |
-| Products  | Closed - Posted    | Estimated   | No        | =\> | Used                            |
-| Products  | Closed - Posted    | Used        | Yes       | =\> | Used                            |
-| Products  | Closed - Posted    | Used        | No        | =\> | Used                            |
 | Services  | Open - Scheduled   | Estimated   | \-        | =\> | Estimated                       |
 | Services  | Open - Scheduled   | Used        | \-        | =\> | Used                            |
 | Services  | Open - In Progress | Estimated   | \-        | =\> | Estimated                       |
