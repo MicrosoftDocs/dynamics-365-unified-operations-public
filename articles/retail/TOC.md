@@ -92,6 +92,7 @@
 ## [Set up RFM analysis](set-up-rfm-analysis.md)
 
 # Discounts and price adjustments
+## [Retil sales price management](price-management.md)
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
