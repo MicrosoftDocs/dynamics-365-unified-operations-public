@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysUserSetup
+ms.search.form: SysUserSetup, SystemDate
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
