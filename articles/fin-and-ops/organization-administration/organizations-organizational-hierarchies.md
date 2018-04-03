@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: OMHierarchyManager
+ms.search.form: OMHierarchyManager, OMOperatingUnit,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
