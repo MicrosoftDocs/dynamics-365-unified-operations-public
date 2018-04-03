@@ -101,7 +101,7 @@ The **Used** values are used for consumption and invoicing. In these cases, the 
 
 The following table provides an overview of the various combinations for product lines.
 
-| System Status (Field Service) | Line Status (Field Service) | Allocated (Field Service) |Synchronized value (Finance and Operations) |
+| System Status <br>(Field Service) | Line Status <br>(Field Service) | Allocated <br>(Field Service) |Synchronized value <br>(Finance and Operations) |
 |--------------------|-------------|-----------|---------------------------------|
 | Open - Scheduled   | Estimated   | Yes       | Estimated                       |
 | Open - Scheduled   | Estimated   | No        | Used                            |
