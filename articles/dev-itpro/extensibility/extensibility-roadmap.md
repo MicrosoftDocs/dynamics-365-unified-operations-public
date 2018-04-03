@@ -41,17 +41,19 @@ Extension-based customizations have several advantages over the legacy approach 
 + Extension-based customizations also improve the development experience. Models containing overlayered customizations must be in the same package as the base objects. This results in longer compile cycles and larger package distributions. Extensions are also much easier to unit test in isolation from the base object.  
 + Reducing upgrade costs through extension-based customizations reduces the support matrix for partners as fewer release combinations will need to be supported.
 
-For these reasons, the product platform models, **AppPlatform** and **AppFoundation**, must use extension-based customizations. These models were sealed for overlayering in Platform update 3 (November 2016). Binary updates are now provided to these models on a monthly basis, achieving our goals of reducing upgrade cost and delivering innovation to our customers at a faster cadence. 
+For these reasons, we have gradually been sealing the product models, so they only support extension-based customizations. **AppPlatform** and **AppFoundation** were the first. These models were sealed for overlayering in Platform update 3 (November 2016). Binary updates are now provided to these models on a monthly basis, achieving our goals of reducing upgrade cost and delivering innovation to our customers at a faster cadence. 
 
-The following illustration shows the roadmap that we're following as we move to extensions, away from overlayering.
+With the April 2018 update we have sealed all product models. Now only extension based customizations are supported.
+
+The following illustration shows the roadmap we followed as we moved to extensions, away from overlayering.
 
 ![Extensibility roadmap](media/extensibility-roadmap.jpg)
 
 > [!NOTE]
 > A soft seal results in a compiler warning upon overlayering. A hard seal results in a compiler error upon overlayering. 
 
-The Modern support policy provides three years of support for a release. Given this, overlayered code will continue to be supported for three year after the next major release, planned for November 2017. However, this code will not be moved forward to subsequent product releases until the overlayered code is moved to extensions.  
+The Modern support policy provides three years of support for a release. Given this, overlayered code will continue to be supported for three years on the November 2017 Update. However, this code will not be moved forward to subsequent product releases until the overlayered code is moved to extensions.  
 
-There is a substantial amount of work for Microsoft, partners, and customers to accomplish this goal. Workshops, office hours, Help topics, and more are planned for training and collaboration in this ecosystem. Internally, we’ve already ramped up investment to build more extensibility features in both the core platform and the application. We’re working closely with partners with applications on AppSource to define patterns as they migrate to extensions.
+There is a substantial amount of work for Microsoft, partners, and customers to accomplish this goal. Workshops, office hours, Help topics, and more are available for training and collaboration in this ecosystem. Internally, we are ready to build more extensibility features in both the core platform and the application. We’re working closely with partners with applications on AppSource to define patterns as they migrate to extensions.
 
 The benefits of reducing upgrade friction and enabling innovation uptake will be worth the effort to remove overlayering.
