@@ -52,7 +52,7 @@ The following illustration shows the roadmap we followed as we moved to extensio
 > [!NOTE]
 > A soft seal results in a compiler warning upon overlayering. A hard seal results in a compiler error upon overlayering. 
 
-The Modern support policy provides three years of support for a release. Given this, overlayered code will continue to be supported for three years on the November 2017 Update. However, this code will not be moved forward to subsequent product releases until the overlayered code is moved to extensions.  
+The Modern support policy provides three years of support for a release. Given this, overlayered code will continue to be supported for three years starting November 2017 on the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 release. However, this code will not be moved forward to subsequent product releases until the overlayered code is moved to extensions.  
 
 There is a substantial amount of work for Microsoft, partners, and customers to accomplish this goal. Workshops, office hours, Help topics, and more are available for training and collaboration in this ecosystem. Internally, we are ready to build more extensibility features in both the core platform and the application. We’re working closely with partners with applications on AppSource to define patterns as they migrate to extensions.
 
