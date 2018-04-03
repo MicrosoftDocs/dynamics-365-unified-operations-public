@@ -89,4 +89,4 @@ To use the Prospect to cash solution, you must install the following components:
 - Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or a later version
 - Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 or a later version
 
-To use the Prospect to cash solution, you must also install the Prospect to cash solution for Sales on AppSource. [Download Dynamics 365, Prospect to Cash](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+To use the Prospect to cash solution, you must also install Prospect to Cash for Sales available from AppSource. [Download Dynamics 365, Prospect to Cash](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
