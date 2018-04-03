@@ -120,19 +120,18 @@ The following table provides an overview of the various combinations for product
 | Closed - Posted    | Used        | Yes       | Used                            |
 | Closed - Posted    | Used        | No        | Used                            |
 
-
 The following table provides an overview of the various combinations for service lines.
 
-| Line type | System Status      | Line Status | Allocated |     | Value in Finance and Operations |
-|-----------|--------------------|-------------|-----------|-----|---------------------------------|
-| Services  | Open - Scheduled   | Estimated   | \-        | =\> | Estimated                       |
-| Services  | Open - Scheduled   | Used        | \-        | =\> | Used                            |
-| Services  | Open - In Progress | Estimated   | \-        | =\> | Estimated                       |
-| Services  | Open - In Progress | Used        | \-        | =\> | Used                            |
-| Services  | Open - Completed   | Estimated   | \-        | =\> | Estimated                       |
-| Services  | Open - Completed   | Used        | \-        | =\> | Used                            |
-| Services  | Closed - Posted    | Estimated   | \-        | =\> | Used                            |
-| Services  | Closed - Posted    | Used        | \-        | =\> | Used                            |
+| System Status <br>(Field Service) | Line Status <br>(Field Service) | Synchronized value <br>(Finance and Operations) |
+|--------------------|-------------|-----------|
+| Open - Scheduled   | Estimated   | Estimated |
+| Open - Scheduled   | Used        | Used      |
+| Open - In Progress | Estimated   | Estimated |
+| Open - In Progress | Used        | Used      |
+| Open - Completed   | Estimated   | Estimated |
+| Open - Completed   | Used        | Used      |
+| Closed - Posted    | Estimated   | Used      |
+| Closed - Posted    | Used        | Used      |
 
 Synchronization of **Estimated** values versus **Used** values is managed through the two sets of tasks for product lines and service lines. Predefined filters trigger the correct task, and the underlying mapping helps guarantee that the correct values for **Expected** versus **Used** are synchronized.
 
