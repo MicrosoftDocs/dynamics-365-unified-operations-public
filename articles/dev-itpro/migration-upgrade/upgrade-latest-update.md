@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each upgrade that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about the contents of each release that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Definitions
 
@@ -81,8 +81,6 @@ Use this scenario when business factors such as time or cost limitations prohibi
 - Microsoft Dynamics 365 for Finance and Operations 8.0
 
 To install a platform-only update, use scenario 4 instead.
-
-If you have questions about the contents of an update, contact Microsoft Support.
 
 ### Scenario 4: Upgrade to the latest platform only
 
