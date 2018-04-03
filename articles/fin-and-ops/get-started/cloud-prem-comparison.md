@@ -35,8 +35,8 @@ ms.dyn365.ops.version: Platform update 9
 
 This topic shows whether each feature is available in these products:
 
-+ Dynamics 365 for Finance and Operations, Enterprise edition (cloud)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
++ Dynamics 365 for Finance and Operations (cloud)
++ Dynamics 365 for Finance and Operations (on-premises)
 
 The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 

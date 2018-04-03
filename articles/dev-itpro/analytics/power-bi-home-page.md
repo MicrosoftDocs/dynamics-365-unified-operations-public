@@ -7,7 +7,7 @@ description: This topic lists the Power BI content that is available and points 
 
 author: sericks007
 manager: AnnBe
-ms.date: 02/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,7 +15,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: PowerBIPbixDeployForm
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -38,8 +38,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.
 
-## Power BI content for Dynamics 365 for Finance and Operations, Enterprise edition
-If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the following Power BI content is available:
+## Power BI content for Dynamics 365 for Finance and Operations
+If you're using Microsoft Dynamics 365 for Finance and Operations, the following Power BI content is available:
 
 - [Actual vs budget Power BI content](ledger-budgets-power-bi.md)
 - [Benefits Power BI content](benefits-power-bi.md)
@@ -47,6 +47,7 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 - [CFO overview Power BI content](CFO-power-bi.md)
 - [Compensation Power BI content](compensation-power-bi.md)
 - [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
+- [Cost management Power BI content](cost-management-content-pack.md)    
 - [Credit and collections management Power BI content](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Employee development Power BI content](employee-development-PBI.md) 
 - [Financial insights Power BI content](financial-insights.md)

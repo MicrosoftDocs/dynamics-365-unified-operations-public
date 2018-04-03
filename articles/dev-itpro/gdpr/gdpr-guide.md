@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to sensitive data
-description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,7 +60,7 @@ To determine responsibilities for compliance, the GDPR identifies the following 
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
 + **C2** – C2 is C1's customer.
 
-For Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
+For Microsoft Dynamics 365 for Finance and Operations, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
 
 The following illustration shows the flow of data from your customer to the Finance and Operations database, and the roles that you and Microsoft play in that process. For Finance and Operations, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 

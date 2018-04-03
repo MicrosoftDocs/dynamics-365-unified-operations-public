@@ -39,7 +39,7 @@ This topic describes the steps for displaying images on a page or in a grid. The
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
 
-Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
+Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Finance and Operations doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
 
 For ImageList uses, the runtime accepts the old **ImageID** value and maps it to a symbol, so that existing code continues to work.
 

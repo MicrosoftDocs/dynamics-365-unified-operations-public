@@ -45,9 +45,6 @@ The following topics cover information that pertains to fixed assets in the Czec
 ## VAT reporting
 For information about setting up and generating the VAT statement for legal entities located in the Czech Republic, see [VAT statement for the Czech Republic](emea-cze-vat-statement-details.md).
 
-### VAT control statement
-Taxpayers from the Czech Republic must submit a VAT control statement that includes detailed information on local taxable supplies that were received and provided. The statement must be submitted in an XML format on a monthly basis. For more information, see [VAT control statement](emea-cze-vat-control.md).
-
 ### Intra-community VAT
 This section provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
 
@@ -72,7 +69,7 @@ For information about creating, posting, and printing credit notes for cash disc
 ## Split periods in periodic journals
 For legal entities in Estonia, Latvia, Lithuania, Poland, Hungary, Russia, and the Czech Republic, the **Periodic journals** page is extended by the split for periods functionality. For more information, refer to one of the following topics:
 - [Split periods in periodic journals](emea-create-post-periodic-journals.md)
-- [Post a periodic journal](tasks/post-periodic-journals.md)
+- [Post a periodic journal](../general-ledger/tasks/post-periodic-journals.md)
 
 ## Signers for print forms
 For legal entities in Estonia, Latvia, Lithuania, Poland, Hungary, Russia, and the Czech Republic, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders. For more information, see [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md).
@@ -90,13 +87,6 @@ Use the **Bank constant symbols** page to set up a list of constant symbols. By 
 > By default, when you set up a specific symbol for a bank account, it is copied to the vendor invoice printout form. The constant symbol is also displayed on invoice printouts. 
 
 You can set up bank symbols on the **Bank constant symbols** page (**Cash and bank management** > **Setup** > **Constant symbols**). 
-
-## Year-end close
-There are unique considerations for the year-end closing process and opening transactions for the Czech Republic. You can set up the year-end closing process in the following ways: 
-- Posting to different accounts for closing and opening of balance accounts. 
-- Transfer of profit or loss year-end result into the newly opened year to a different account.
-
-For more information, see [Year-end close for Czech Republic and Hungary](emea-cze-hun-year-end.md).
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Czech Republic report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)

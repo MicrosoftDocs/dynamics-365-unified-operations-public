@@ -250,11 +250,11 @@ Breaks from work affect the calculation of worker pay. Breaks are defined as a t
 
 #### Planned breaks
 
-If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the **Job card terminal** page or on the **Job card device** page. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
+If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the job card pages. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
 
 #### Registered breaks
 
-If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card terminal** page or on the **Job card device** page. On both these pages, the user can select the type of break in a list of predefined break activities.
+If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card** terminal page or on the **Job card** device page. On both these pages, the user can select the type of break in a list of predefined break activities.
 
 #### Paid and unpaid breaks
 

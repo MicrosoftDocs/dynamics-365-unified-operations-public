@@ -74,7 +74,7 @@ Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dyna
 -------------------------------------------------------------------------------------------------------------------
 
 Enhancements to Prospect to cash integration between Dynamics 365 for Sales and
-Dynamics 365 for Finance and Operations, Enterprise edition enable direct
+Dynamics 365 for Finance and Operations, Enterprise edition 7.3 enable direct
 synchronization in the following processes:
 
 -   Maintain accounts in Sales and sync them to Finance and Operations as

@@ -36,7 +36,7 @@ Upgrades, updates, and hotfixes can include moving to new product versions, code
 
 The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.
 
-## Upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+## Upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
 
 To get started, review the following topics:
 

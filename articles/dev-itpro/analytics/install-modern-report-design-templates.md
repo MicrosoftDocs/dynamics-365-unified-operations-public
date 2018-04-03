@@ -38,7 +38,7 @@ This topic explains how to install the modern report design templates in the app
 
 ## Introduction
 
-A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
+A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
 
 [![Examples of an earlier sales invoice design and a modern sales invoice design](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 

@@ -1,7 +1,7 @@
 # [Development and administration for Dynamics 365 for Finance and Operations](index.md)
-# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
-# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Demo data](../fin-and-ops/get-started/demo-data.md)
+# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Demo data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [Export and import a model](dev-tools/models-export-import.md)
 ### [Metadata search in Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Models](dev-tools/models.md)
-### [Projects in Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projects in Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Tools add-ins for Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Turn off model customization and deprecate functionality](dev-tools/lock-models.md)
 ### [Update Visual Studio development tools](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
-#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [Build navigation](user-interface/build-navigation.md)
 ### [Build a workspace](user-interface/build-workspace.md)
 ## Forms
-### [Navigation in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Layout in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigation in Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Layout in Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Symbol font](user-interface/symbol-font.md)
 ### [Test forms with custom patterns](user-interface/testing-forms-custom-patterns.md)
 ### [Create and use deep links](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
-### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
 ### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
-### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
 #### [Deploy on-premises environments with Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [Update the local agent](lifecycle-services/update-local-agent.md)
 ### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
 ### [Client internet connection](user-interface/client-disconnected.md)
-### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -527,10 +527,11 @@
 ### [AX 2012 upgrade - Tasks to complete after upgrade](migration-upgrade/app-validation-process.md)
 ### [AX 2012 upgrade - Functional test pass](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 upgrade - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
-#### [Single voucher and currency revaluation upgrade ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md )
+#### [Single voucher and currency revaluation upgrade](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Project resource scheduling data model](migration-upgrade/data-model-changes-resource-management.md)
 #### [Workflow subsystem changes](migration-upgrade/workflow-subsystem.md)
 #### [Why we moved from cubes to aggregate models](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -569,6 +570,7 @@
 
 # [System administration](sysadmin/system-administration-home-page.md)
 ## [Platform monthly updates FAQ](sysadmin/faq-platform-monthly-updates.md)
+## [Virtual machines that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ## [Add links to your organization's legal terms and privacy statement](sysadmin/legal-terms-privacy-statement.md)
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
@@ -588,7 +590,9 @@
 ### [Batch server overview](sysadmin/batch-server-overview.md)
 ### [Create a batch job](sysadmin/tasks/create-batch-job.md)
 
-## [Create rules for Optimization advisor](sysadmin/optimization-advisor.md)
+##  [Optimization advisor overview](sysadmin/optimization-advisor-overview.md)
+### [Create rules for Optimization advisor](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Overview of Lifecycle Services](lifecycle-services/lcs.md)
@@ -610,6 +614,7 @@
 ## [Complete tasks in a BPM library](lifecycle-services/complete-tasks-bpm.md)
 ## [Use activity diagrams](lifecycle-services/using-activity-diagrams.md)
 ## [Synchronize a BPM library with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Create an acceptance test suite using Task guides and BPM](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
@@ -701,10 +706,10 @@
 ## [Request a sandbox database refresh](database/database-refresh.md)
 
 # Support
-## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Get support for Dynamics 365 for Finance and Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
+## [Set up technical support for Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 ## [Manage Finance and Operations Support experiences](lifecycle-services/cloud-powered-support-lcs.md)
