@@ -85,11 +85,6 @@ Don't use a price group for multiple retail entity types. Instead, use one set o
 
 Avoid setting price groups directly on a customer. Instead, use an affiliation. In this way, you can assign all types of prices and discounts to customers, not just sales price trade agreements.
 
-## Best price
-The calculation of the price and discount on a transaction uses the principle of finding the best price for the customer. According to this principle, if more than one price is found, the lowest price is used. Additionally, the combination of discounts that produces the largest discount amount for the whole transaction is used. In some cases, a smaller discount must be used on a single product, so that additional discounts can be applied to other products in the transaction.
-
-The only exception to the principle of finding the best price for the customer is an option for mix-and-match least-expensive discounts. This option enables least-expensive discounts that favor the retailer when products are selected and grouped. Therefore, when a transaction includes more products than are required to qualify for the least-expensive discount, the retail pricing engine selects the products that produce the smallest possible discount amount for the customer. This option is covered in more detail in the document that is related to discounts.
-
 ## Pricing priority
 By itself, a pricing priority is just a number and a description. Pricing priorities can be applied to price groups, or they can be applied directly to discounts. When pricing priorities are used, they let a retailer override the principle of the best price by controlling the order in which prices and discounts are applied to products. A larger pricing priority number is evaluated before a lower pricing priority number. Additionally, if a price or discount is found at any priority number, all prices or discounts that have lower priority numbers are ignored.
 
@@ -148,7 +143,7 @@ By using the trade agreement journal, you can create sales price trade agreement
 
 A **Table** sales price trade agreement is for a single customer that is set directly on the trade agreement. This scenario isn't a typical retail business-to-consumer (B2C) scenario. However, if it occurs, the retail pricing engine uses **Table** trade agreements when it determines price. 
 
-A **Group** sales price trade agreement is the type that is most often used with retail functionality. Outside Retail, **Group** sales price trade agreements are for a simple customer group. However, in Retail, the concept of a customer group has been overloaded so that it's a more generic retail price group. A price group can be linked to a retail channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this topic.
+A **Group** sales price trade agreement is the type that is most often used with retail functionality. Outside Retail, **Group** sales price trade agreements are for a simple customer group. However, in Retail, the concept of a customer group has been extended so that it's a more generic retail price group. A price group can be linked to a retail channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this topic.
 
 > [!NOTE]
 > A trade agreement price is always used before the base price.
@@ -159,13 +154,18 @@ As the name implies, a price adjustment is used to modify the price that was eit
 There are three types of price adjustments: percentage off, amount off, and price. A price adjustment of the percentage off or amount off type is always applied to a sale transaction. However, a price adjustment of the price type is applied only if the adjusted price is less than the price that was set by using the base price or trade agreement price. Therefore, if the price that is set in a price adjustment is more than the unadjusted price, the price adjustment isn't used.
 
 ## Determining price for a product in a transaction
+
+The calculation of the price and discount on a transaction uses the principle of finding the best price for the customer. According to this principle, if more than one price is found, the lowest price is used. Additionally, the combination of discounts that produces the largest discount amount for the whole transaction is used. In some cases, a smaller discount must be used on a single product, so that additional discounts can be applied to other products in the transaction.
+
+The only exception to the principle of finding the best price for the customer is an option for mix-and-match least-expensive discounts. This option enables least-expensive discounts that favor the retailer when products are selected and grouped. Therefore, when a transaction includes more products than are required to qualify for the least-expensive discount, the retail pricing engine selects the products that produce the smallest possible discount amount for the customer.
+
 The retail pricing engine returns three prices for every product: the base price, the trade agreement price, and the active price.
 
-The base price is just the property on the product and is the same for everyone everywhere.
+The base price is just the property on the product and is the same for everyone everywhere. 
 
-If the **Find next** option is set to **Yes**, the lowest price that is found for applicable sales price trade agreements is used as the trade agreement price. Trade agreements can be found by using price groups or the **ALL** account code. Alternatively, trade agreements can be assigned directly to a customer. If the **Find next** option is set to **No**, the first trade agreement price that is found is used. If no sales price trade agreements are found, the trade agreement price is set to the base price.
+On the sales price trade agreement, if the **Find next** option is set to **Yes**, the lowest price that is found for applicable sales price trade agreements is used as the trade agreement price. Trade agreements can be found by using price groups or the **ALL** account code. Alternatively, trade agreements can be assigned directly to a customer. If the **Find next** option is set to **No**, the first trade agreement price that is found is used. If no sales price trade agreements are found, then the trade agreement price is set equal to the base price.
 
-The active price is calculated by taking the trade agreement price and applying the largest price adjustment that applies to the product. If no price adjustments are found, or if the calculated active price is more than the trade agreement price, the active price is set to the trade agreement price. Remember that you can't raise the price of a product by using a price adjustment. The applicable price adjustments can be found only by using price groups that are assigned to a channel, catalog, affiliation, or loyalty program.
+The active price is calculated by taking the trade agreement price and applying the largest price adjustment that applies to the product. If no price adjustments are found, or if the calculated active price is more than the trade agreement price, the active price is set equal to the trade agreement price. Remember that you can't raise the price of a product by using a price adjustment. The applicable price adjustments can be found only by using price groups that are assigned to a channel, catalog, affiliation, or loyalty program.
 
 ## Category price rules
 The category price rules feature in Retail gives you an easy way to create new trade agreements for all the products in a category. This feature also lets you automatically find existing trade agreements for the products in the category and expire them.
@@ -229,7 +229,7 @@ You sell a $100 product that has a tax rate of 10 percent, and a 5-percent disco
 - **Tax:** $10
 
 ## Differences between retail pricing and non-retail pricing
-Retail pricing is the same across all channels: call centers, the POS, and online stores. The same pricing engine is used for all three programs.
+A single pricing engine is used to calculate retail prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios. 
 
 Retail pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
 
