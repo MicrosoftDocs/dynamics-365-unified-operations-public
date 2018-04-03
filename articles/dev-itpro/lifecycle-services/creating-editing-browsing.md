@@ -3,7 +3,7 @@ title: Create, edit, and browse BPM libraries
 description: This topic provides information about how to create or edit a BPM library and how to browse an existing library.
 author: kfend
 manager: AnnBe
-ms.date: 09/18/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod:
 ms.service:  dynamics-ax-platform
@@ -56,20 +56,20 @@ There are several ways to author a BPM library. You can do so from scratch eithe
  
 ### Copy a library 
 
-1. Openn the **Business process libraries** page 
+1. Open the **Business process libraries** page. 
 2. On the tile for the library that you want to copy, select the ellipsis button (…), and then select **Copy**.
     ![Copy_a_library](./media/Copy_a_library.PNG "Copy library")   
-3. Enter a name for the library, and then select **Create**.
+3. Enter a name for the library, and then click **Create**.
     ![Create a_copied_library](./media/Create_a_copied_library.PNG "Create copied library")
 
 
 ## Import a sections of another library
-1. Openn the **Business process libraries** page and open the library you would like to edit. 
+1. Openn the **Business process libraries** page, and then open the library you want to edit. 
 2. Navigate to the line you would like to import to and select **Import**.
      ![Select_import](./media/Select_import.PNG "Select import")
-3. Select **As child** or **As sibling**
+3. Select **As child** or **As sibling**.
      ![Select_child_or_sibling](./media/Select_child_or_sibling.PNG "Select child or sibling")
-4. In the pane, choose the library you would like to import from and select **Import**.
+4. In the pane, choose the library you would like to import from and click **Import**.
      ![Choose_library](./media/Choose_library.PNG "Choose library")
 
 
@@ -83,27 +83,23 @@ There are several ways to author a BPM library. You can do so from scratch eithe
 ## Edit the properties of a process
 
 1. In the BPM library, select the process node to edit.
-2. In the right pane, on the **Overview** tab, select **Edit mode**.
+2. In the right pane, on the **Overview** tab, click **Edit mode**.
 3. Enter a name and description for the process node.
 4. Select the industries and the countries or regions that the process applies to. You can also add keywords and links. Keywords let you define categories, work streams, or other metadata. Links (URLs) let you reference external sites or documentation.
 
     ![Process properties](./media/NEWBPM_BlogPost08-194x300.png "Process details")
 
-5. When you've finished editing the properties, select **Save**.
-
-
-
-
+5. When you've finished editing the properties, click **Save**.
 
 ## Move a process
 
 You can move a process node or assign it to another parent node in the BPM hierarchy.
 
-1. Select the process node to move, and then select **Move process**. You can select to move the process up or down, or you can select **Move** to see more options.
+1. Select the process node to move, and then click **Move process**. You can select to move the process up or down, or you can select **Move** to see more options.
 
     ![Moving a process](./media/NEWBPM_BlogPost09.png "Move process")
 
-2. If you selected **Move**, you can browse the hierarchy, select a node to move the process to, and then select **Move as child** or **Move as sibling**. To cancel the move operation, select **Cancel**.
+2. If you selected **Move**, you can browse the hierarchy, select a node to move the process to, and then select **Move as child** or **Move as sibling**. To cancel the move operation, click **Cancel**.
 
 ## Delete a process
 
