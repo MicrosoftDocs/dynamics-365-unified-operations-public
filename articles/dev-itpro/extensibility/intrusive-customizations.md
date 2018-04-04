@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include[banner](../includes/banner.md)]
 
-This topic defines the characteristics of an intrusive customization. Customizations that are implemented using overlayering are intrusive, and won't be supported as we go forward. Intrusive customizations are the major obstacle to continuous upgrades at upgrade and support costs that are close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
+This topic defines the characteristics of an intrusive customization. Intrusive customizations are the major obstacle to continuous upgrades at upgrade and support costs that are close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
 
 A customization that violates any of the following principles is intrusive.
 
@@ -44,7 +44,7 @@ Types are referenced by their definition. A change to a type’s definition is a
 + Don't change requirements for implementers of interfaces and table maps. For example, don't add a new method to an interface or a new field to a table map.
 + Don't change requirements for classes that are derived from abstract classes. For example, don't add a new abstract method to a class.
 + Don't reduce access modifiers for types or members. For example, don't change classes, tables, or methods from public to private.
-+ Don't change constraints that are defined on a table or a data entity. Restraints include allowing editing, mandatory constraints, uniqueness constraints, and referential constraints.
++ Don't change constraints that are defined on a table or a data entity. Constraints include allowing editing, mandatory constraints, uniqueness constraints, and referential constraints.
 
 ## Don't break encapsulation
 The author of a model must be able improve the product by remaining in control of encapsulated code and types. Model owners must be able to change and delete encapsulated code and types at will, without prior notice, and without risk of downstream impact on extensions and customizations. Encapsulation is broken if, for example a private method is deleted. Here are some of the implications:
