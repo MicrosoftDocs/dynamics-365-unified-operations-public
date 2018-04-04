@@ -1,12 +1,43 @@
-Flexible working hours
+---
+# required metadata
+
+title: Flex groups
+description: This topic describes the use of flex groups in time and attendance.
+author: johanhoffmann
+manager: AnnBe
+ms.date: 03/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: JmgFlexGroup 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 1705903
+ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: johanho
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 8.0.0
+---
+
+# Flex groups
+[!include[banner](../includes/banner.md)]
+
+Flex groups
 ======================
 
 Flexible hours can be used by companies to minimize payment for overtime by
 offering workers extra time off in periods where the workload is low. This is,
 for example, relevant in segments with seasonal changes in workload.
-
-Flex groups
------------
 
 You can use flex groups to set the following rules and principles for a worker’s
 flexible hours.
