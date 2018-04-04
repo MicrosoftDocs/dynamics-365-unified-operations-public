@@ -5,7 +5,7 @@ title: Entity store mainentance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ To resolve issues with these components, complete the procedures in this topic.
 
 ## If you are using application analytical workspaces
 
-You should be able to access your analytical reports until the migration starts. After the migration completes, your embedded analytical reports will not render any data. The following screenshot shows an example of this.
+Application analytical workspaces and reports may not render data after certain maintenance operations are completed. The following screenshot shows an example of this.
 
 ![Analytical report is blank](media/blank-powerbi.png)
 
