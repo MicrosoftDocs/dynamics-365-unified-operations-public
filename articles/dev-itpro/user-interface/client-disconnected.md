@@ -47,9 +47,10 @@ In addition to platform features that may not be accessible when the client can'
 
 ## Client internet connectivity options
 
-Client internet connectivity options (added by [KB 4091763](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=19e9634da3297903a2ac51cf291a4770fd4532c9767ca7b5cefbe1bccb5d4d9f)) allow an administrator to manually switch off the external connections that the client makes even when internet connectivity is available. These can be used for troubleshooting issues or just to see what the client will look like when internet connectivity is not available.
+Client internet connectivity options allow an administrator to manually switch off the external connections that the client makes even when internet connectivity is available. These can be used for troubleshooting issues or just to see what the client will look like when internet connectivity is not available. These client internet connectivity options are available out-of-the-box starting in Platform Update 16 but are also available in Platform Update 15 (via [KB 4091764](https://fix.lcs.dynamics.com/Issue/Details?kb=4091764&bugId=3934774&qc=245bb2cc9839fa2a2ecf6bfffc48c3dec102a3c1047e5e755387d00148db18cb)) and Platform Update 12 (via [KB 4091763](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=19e9634da3297903a2ac51cf291a4770fd4532c9767ca7b5cefbe1bccb5d4d9f)) 
 
-These options can be found on the **System administration > Setup > Client performance options** page.
+
+The client internet connectivity options can be found on the **System administration > Setup > Client performance options** page.
 
 - **Internet connectivity enabled** - Allows an administrator to switch off all external connections that the web client would otherwise make.
 - **Skype presence enabled** - Allows an administrator to switch off external connections to Skype that the web client would otherwise make.
