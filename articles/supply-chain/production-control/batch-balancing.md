@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 8.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes how the batch balancing process is supported. Also, watch a [video] https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be) on batch balancing.
+This topic describes how the batch balancing process is supported. Also, watch a [video](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be) on batch balancing.
 
 In the batch balancing process, the amount of ingredients to use in a production
 batch is calculated from the concentration of active ingredients in selected
