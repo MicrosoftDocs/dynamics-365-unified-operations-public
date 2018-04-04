@@ -5,7 +5,7 @@ title: Formula designer in Electronic reporting
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -311,8 +311,22 @@ The following tables describe the data manipulation functions that you can use t
 </tr>
 <tr class="even">
 <td>ALLITEMS (path)</td>
-<td>Return a new flattened list that represents all items that match the specified path. The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
+<td>Executes as an in-memory selection. Returns a new flattened list that represents all items that match the specified path. The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
 <td>If you enter <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> as a data source (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> returns <strong>3</strong>.</td>
+</tr>
+<tr class="even">
+<td>ALLITEMSQUERY (path)</td>
+<td>Executes as a joined SQL query. Returns a new flattened list that represents all items that match the specified path. The specified path must be defined as a valid data source path of a data source element of a record list data type and contain at least one relation. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
+<td>Define the following data souces in your model mapping:
+  
+  - **CustInv** (**Table records** type) that refers to the **CustInvoiceTable** table. 
+  - **FilteredInv** (**Calculated field** type) that contains the expression **FILTER (CustInv, CustInv.InvoiceAccount = "US-001")**
+  - **JourLines** (**Calculated field** type) that contains the expression **ALLITEMSQUERY (FilteredInv.'<Relations'.CustInvoiceJour.'<Relations'.CustInvoiceTrans)**
+ 
+When you run your model mapping to call the **JourLines** data source, the following SQL statement will be executed:
+
+      SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
 </tr>
 <tr class="odd">
 <td>ORDERBY (list [, expression 1, expression 2, …])</td>
@@ -606,6 +620,25 @@ The print currency name flag and decimal points parameters are analyzed only for
 <li>An ER expression, <strong>$IsArrivals</strong>, is designed to use the model enumeration as a parameter of this function. The value of this expression is <strong>TRUE</strong>.</li>
 </ul>
 <a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+</tr>
+<tr class="even">
+<td>GUIDVALUE (input)</td>
+<td>Converts a given input parameters of the **String** data type to a data item of the **GUID** data type.</td>
+<td>Define the following data sources in your model mapping:
+  
+  - **myID** (**Calculated field** type) that contains the expression **GUIDVALUE("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")**
+  - **Users** (**Table records** type) that refers to the **UserInfo** table
+
+When these are defined, you can filter the **UserInfo** table by the **objectId** field of the **GUID** data type. 
+
+Example: **FILTER (Users, Users.objectId = myID)</td>
+</tr>
+<tr class="odd">
+<td>JSONVALUE (id, path)</td>
+<td>Parses data in JSON format that is accessed by the given path to extract a scalar value based on the given ID.</td>
+<td>For the data source **$JsonField** that contains the following data in JSON format, 
+  
+**{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**, the expression **JSONVALUE ( "BuildNumber", $JsonField)** returns the **7.3.1234.1** value of the **String** data type.</td>
 </tr>
 </tbody>
 </table>
