@@ -30,10 +30,8 @@ ms.dyn365.ops.version: AX 8.0.0
 ---
 
 # Flex groups
-[!include[banner](../includes/banner.md)]
 
-Flex groups
-======================
+[!include[banner](../includes/banner.md)]
 
 Flexible hours can be used by companies to minimize payment for overtime by
 offering workers extra time off in periods where the workload is low. This is,
