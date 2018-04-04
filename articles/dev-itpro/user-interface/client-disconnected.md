@@ -5,7 +5,7 @@ title: Client internet connection
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include[banner](../includes/banner.md)]
 
-The configuration of the local network for an on-premises deployment of Dynamics 365 for Finance and Operations, Enterprise edition can affect the available features in the web client. In particular, if the network configuration does not allow a client machine to access the internet, several degradations in the web client will occur. These include:    
+The configuration of the local network for an on-premises deployment of Dynamics 365 for Finance and Operations can affect the available features in the web client. In particular, if the network configuration does not allow a client machine to access the internet, several degradations in the web client will occur. These include:    
 
 + The Office waffle and Dynamics 365 areas in the navigation bar will no longer be clickable.
 + The Help pane will not be accessible.  
