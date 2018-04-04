@@ -1852,6 +1852,7 @@
 #### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Inventory counting
+#### [Reason codes for inventory counting](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Block inventory](../supply-chain/inventory/inventory-blocking.md)
 #### [Cycle counting](../supply-chain/warehousing/cycle-counting.md)
 #### [Define cycle counting ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
