@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents in Microsoft Excel
-description:  
+description:  This topic provides information about designing Electronic reporting (ER) formats to parse and then use the content contained in incoming Microsoft Excel files. 
 author: NickSelin
 manager: AnnBe
 ms.date: 04/04/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats to parse incoming electronic documents that represent data in Microsoft Excel workbooks (files in XLSX format) and then use the content from these documents to update application data. This approach can be used:
+You can design Electronic reporting (ER) formats to parse incoming Microsoft Excel files that represent data in Microsoft Excel workbooks (files in XLSX format) and then use the content from these files to update application data. This approach can be used:
 
 -	If you designed a new model and format and want to test them at run-time. In this case, Excel will simulate the actual application data.
 -	If you manage data beyond your application in Excel and want to import this data to submit a specific report.
