@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: WHSTransportLoad
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 8.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Partial shipping of a staged load
 
 With the setup to ship a partial load you can handle loads where the capacity
 cannot be determined until all sales lines have been added to a load. The
