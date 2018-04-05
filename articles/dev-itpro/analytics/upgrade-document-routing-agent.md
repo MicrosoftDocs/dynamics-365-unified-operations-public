@@ -42,16 +42,14 @@ IT Admins must perform the following steps on each domain resource used to host 
 
 ### Getting started…
 To continue running the DRA as a windows service, you'll need both the user name and password of the domain account used to run the service.  This information must be available after completing the upgrade process.  The active service account information can be accessed in the open “Services” window and find the “Microsoft Dynamics 365 Document Routing Service”.
-
-Image
+![Services dialog](media/Services_dialog.png)
 
 Step 1) Uninstall existing Document Routing Agent (DRA)
 Open the “Programs and Features” window, and then find and uninstall the “Microsoft Dynamics 365 for Finance and Operations: Document Routing”.
-
-Image
+![Uninstall or change a program dialog](media/Programs_and_Features_dialog.png)
 
 During the uninstallation process, you'll likely be prompted with the following dialog…
-Image
+![Document Routing Agent Uninstall dialog](media/Uninstall_DRA_services.png)
 
 **Important:** select “Automatically close applications and attempt to restart them after setup is complete.”
 
