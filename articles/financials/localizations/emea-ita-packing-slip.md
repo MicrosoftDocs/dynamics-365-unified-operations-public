@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post and print a packing slip with transportation delivery details for Italy
-description: Learn how to set up transportation deliverty details and post a packing slip for Italy.
+description: This topic explains how to set up transportation delivery details and post a packing slip for Italy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/01/2018
@@ -32,42 +32,44 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-When you ship goods to customers, the shipment must contain a transportation delivery document (TDD). The TDD provides information about the customer, contractor, owner, and loader involved in the shipment. To print a packing slip with transportation delivery details, you must first set up transportation delivery details. 
+When you ship goods to customers, the shipment must contain a transportation delivery document (TDD). The TDD provides information about the customer and various parties that are involved in the shipment, such as the shipping contractor, the owner of the goods, and the shipment loader. Before you can print a packing slip that includes transportation delivery details, you must set up the transportation delivery details.
 
 ## Set up transportation delivery details
 
-To print the transportation document and shipping information on a packing slip, you must set up the transportation delivery details in the Accounts receivable parameters and Form setup pages.
+To print the transportation document and shipping information on a packing slip, you must set up the transportation delivery details on the **Accounts receivable parameters** and **Form setup** pages.
 
-1. Go to the **Accounts receivable parameters** page. 
-2. Click **Shipments**, and then in the **Carrier name** field, select the name of the carrier for the customer shipment. 
-3. Set the option **Use transportation document information on packing slip** to Yes to display the transportation details on the packing slip when it is posted. 
-4. Close the page to save your changes. 
-5. Click **Accounts receivable** > **Setup** > **Forms** > **Form setup**. 
-6. Click the **Packing slip** link, and then select the **Shipping details** check box to print shipping information, including the carrier details, on the packing slip. 
-7. Select the **Transportation document** check box to print the transportation document details on the packing slip. 
-  > [!NOTE]
-  > This check box is available only if the **Use transportation document information on packing slip** option is set to **Yes** on the **Accounts receivable parameters** page. 
-8. Close the page to save your changes. 
+1. On the **Accounts receivable parameters** page, on the **Shipments** tab, in the **Carrier name** field, select the name of the carrier for the customer shipment.
+2. Set the **Use transportation document information on packing slip** option to **Yes** to show the transportation delivery details on the packing slip when it's posted.
+3. Close the page to save your changes.
+4. Select **Accounts receivable** &gt; **Setup** &gt; **Forms** &gt; **Form setup**.
+5. On the **Packing slip** tab, select the **Shipping details** check box to print shipping information on the packing slip. The shipping information includes the carrier details.
+6. Select the **Transportation document** check box to print the transportation document information on the packing slip.
 
-## Post and print a packing slip with transportation delivery details
+    > [!NOTE]
+    > The **Transportation document** check box is available only if the **Use transportation document information on packing slip** option is set to **Yes** on the **Accounts receivable parameters** page.
 
-You can post and print a packing slip with a TDD for a customer shipment. The TDD will contain the following details: 
-- The name and primary address of the shipping contractor. 
-- The name and primary address of the shipment loader. 
-- The name and primary address of the owner of the goods. 
-- Any additional declarations, notes, or instructions. 
-- The name of the individual who created the packing slip. 
+7. Close the page to save your changes.
 
-If the details of the contractor, loader, owner, and compiler are not set on the Packing slip posting page , the name and address of the legal entity are printed on the packing slip. 
+## Post and print a packing slip that includes transportation delivery details
 
-1. Click **Sales and marketing** > **Common** > **Sales orders** > **All sales orders**. 
-2. Select an open sales order, and then click **Pick and pack** > **Packing slip** to open the **Packing slip posting** page. 
-3. On the **Parameters** FastTab, in the **Quantity** field, select **All**. 
-4. Set the option **Posting** to Yes to post the packing slip. 
-5. Set the option **Print packing slip** to Yes to print the packing slip when it is posted. 
-6. In the **Carrier** name field select the name of the carrier. 
-7. In the **Compiler** field, apply the filter to sort the compiler names, and then select the name of the person who created the packing slip. 
-8. In the **Contractor**, **Loader**, and **Owner** fields, select the type of party to filter the transportation party, and then select the name for each party. 
-9. In the **Additional declarations**, **Additional notes**, and **Additional instructions** fields, enter any additional information to be printed on the packing slip. 
-10. Click **OK** to post and print the packing slip with the transportation document information. 
-11. Close the page to save your changes. 
+You can post and print a packing slip that includes a TDD for a customer shipment. The TDD contains the following details:
+
+- The name and primary address of the shipping contractor
+- The name and primary address of the shipment loader
+- The name and primary address of the owner of the goods
+- Any additional declarations, notes, or instructions
+- The name of the person who created the packing slip (that is, the compiler)
+
+If the details of the contractor, loader, owner, and compiler aren't set on the **Packing slip posting** page, the name and address of the legal entity are printed on the packing slip instead.
+
+1. Select **Sales and marketing** &gt; **Common** &gt; **Sales orders** &gt; **All sales orders**.
+2. Select an open sales order, and then, on the Action Pane, on the **Pick and pack** tab, select **Packing slip** to open the **Packing slip posting** dialog box.
+3. On the **Parameters** FastTab, in the **Quantity** field, select **All**.
+4. Set the **Posting** option to **Yes** to post the packing slip.
+5. Set the **Print packing slip** option to **Yes** to print the packing slip when it's posted.
+6. In the **Carrier name** field, select the name of the carrier.
+7. In the **Compiler** field, apply the filter to sort the compiler names, and then select the name of the person who created the packing slip.
+8. In the **Contractor**, **Loader**, and **Owner** fields, select the type of party to filter the transportation party, and then select the name of each party.
+9. In the **Additional declarations**, **Additional notes**, and **Additional instructions** fields, enter any additional information that should be printed on the packing slip.
+10. Select **OK** to post and print a packing slip that includes the transportation document information.
+11. Close the page to save your changes.
