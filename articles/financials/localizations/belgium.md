@@ -50,7 +50,7 @@ For information about standard reports that can help you with the INTERVAT tax d
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
 |Belgisch Luxemburgs Wissel Instituut (BLWI) report|**Tax** > **Declarations** > **Foreign trade** > **BLWI** | To set up BLWI information, see [Set up payment balances](be-00011-set-up-payment-balance-reporting.md). To generate the the BLWI report, see [Create and transfer transactions to the BLWI](tasks/be-00011-create-transfer-blwi.md).| 
-|PRODCOM report||Manufacturers of industrial products send the PRODCOM report to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants. For more information, see [PRODCOM report setup](emea-bel-prodcom-report.md). |
+|PRODCOM report|**Tax** > **Declarations** > **Foreign trade** > **PRODCOM**|Manufacturers of industrial products send the PRODCOM report to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants. For more information, see [PRODCOM report setup](emea-bel-prodcom-report.md). |
 
 ## Additional resources
 
