@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 2012
 
 # WebSearchAX retired
 
+[!include[banner](../includes/banner.md)]
+
 We’ve had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.  For example: 
 
 site:technet.microsoft.com dynamics ax 2012 "search term"

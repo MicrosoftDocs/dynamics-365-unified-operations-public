@@ -26,6 +26,7 @@ ms.dyn365.ops.version:
 
 # PageMetadata Type
 
+[!include[banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 

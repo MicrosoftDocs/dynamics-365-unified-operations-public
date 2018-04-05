@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 13
 ---
 
 # Configuration keys and data entities
+
+[!include[banner](../includes/banner.md)]
+
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use. 
 
 To learn more about configuration keys in Finance and Operations, see the [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md).

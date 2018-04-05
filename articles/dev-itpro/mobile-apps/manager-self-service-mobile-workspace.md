@@ -2,7 +2,7 @@
 # required metadata
 
 title: My team mobile workspace
-description: This topic provides information about the My team mobile workspace, which lets mmanagers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -57,7 +57,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</li>
+<ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
 <li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>

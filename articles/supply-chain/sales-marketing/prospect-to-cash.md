@@ -2,10 +2,10 @@
 # required metadata
 
 title: Prospect to cash
-description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and Microsoft Dynamics 365 for Sales. 
+description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 02/08/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-The Prospect to cash solution provides direct synchronization across Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Sales. The Prospect to cash templates that are available with the Data Integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
+The Prospect to cash solution provides direct synchronization across Dynamics 365 for Finance and Operations, and Dynamics 365 for Sales. The Prospect to cash templates that are available with the Data Integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
 
 For more information about the Prospect to cash integration, watch the short YouTube video:
 
@@ -45,13 +45,11 @@ In the current version, the Prospect to cash solution provides the following typ
 - [Maintain accounts in Sales and sync them directly from Sales to Finance and Operations](accounts-template-mapping-direct.md)
 - [Maintain products in Finance and Operations and sync them directly to Sales](products-template-mapping-direct.md)
 - [Maintain contacts in Sales and sync them directly to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
-- [Synchronize sales quotation directly from Sales to Finance and Operations (template pending release)](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronize sales orders directly from Finance and Operations to Sales](sales-order-template-mapping-direct.md)
-- [Synchronize sales orders directly between Sales and Finance and Operations (template pending release)](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronize sales quotation directly from Sales to Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronize sales orders directly between Sales and Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronize sales invoice directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
 
 ## System requirements for Finance and Operations
-
 Prospect to cash integration is supported on the following versions:
 
 ### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
@@ -81,26 +79,12 @@ Prospect to cash integration is supported on the following versions:
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Support for prospect to cash integration through data entities is required.
     
     > [!NOTE]
-    > After you install the hotfixes, you must trigger the following batch job from the **SalesPopulateProspectToCash** form. This form is hidden because you only need it once. To access the form, log in to the environment and add the following to the URL in your browser address: &mi=action:SalesPopulateProspectToCash, for example, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. When the form opens, click OK. This will populate a new **LineCreationSequnceNumber** field in the **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
+    > After you install the hotfixes, you must trigger the following batch job from the **SalesPopulateProspectToCash** form. This form is hidden because you only need it once. To access the form, log in to the environment and add the following to the URL in your browser address: &mi=action:SalesPopulateProspectToCash, for example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. When the form opens, click OK. This will populate a new **LineCreationSequnceNumber** field in the **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
 
 
 ## System requirements for Sales
 
 To use the Prospect to cash solution, you must install the following components:
 
-- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online
-- Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 (v15) 
-
-### Install the Prospect to cash solution for Sales
-
-1. Download the [Prospect to cash for Dynamics 365 for Sales solution package zip file](https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/MD365FNOPENTProspectToCash) from CustomerSource.
-2. Make sure that the zip file is unblocked. Otherwise, when you try to install the solution package, you may receive the following error message, "No import packages were found." To unblock the zip file, right-click it, and select **Properties**. Select **Unblock**.
-3. Unzip and run **PackageDeployer.exe**.
-4. Install the Prospect to cash solution on your Sales instance:
-
-    1. Select **Office 365** as the deployment type.
-    2. Select **Show advanced**.
-    3. For a quick installation, select a region. If you select **Don't know**, the system searches for all regions, and the installation will take more time.
-    4. Enter the user name and password of an admin user who has installation rights.
-
-
+- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or a later version
+- Prospect to cash solution for Dynamics 365 for Sales, version 1.15.0.0 or a later version. The solution is available for download from AppSource. [Download Dynamics 365, Prospect to Cash](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

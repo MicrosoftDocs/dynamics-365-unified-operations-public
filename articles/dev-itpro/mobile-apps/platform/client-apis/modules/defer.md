@@ -26,6 +26,7 @@ ms.dyn365.ops.version:
 
 # Defer 
 
+[!include[banner](../../../../includes/banner.md)]
 
 ## Index
 

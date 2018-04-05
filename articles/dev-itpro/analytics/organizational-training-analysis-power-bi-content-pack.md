@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Organizational Training Power BI content
-description: This topic describes the Finance and Operations - Organizational Training Power BI content. 
+title: Organizational training Power BI content
+description: This topic describes the Finance and Operations - Organizational training Power BI content. 
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Organizational Training Power BI content
+# Organizational training Power BI content
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Finance and Operations - Organizational Training Power BI content. 
+This topic describes the Finance and Operations - Organizational training Power BI content. 
 
 ## Reports that are included in the content pack
 After you’ve connected the content pack to your Finance and Operations data, the reports show your organization's data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
@@ -48,7 +48,7 @@ After you’ve connected the content pack to your Finance and Operations data, t
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Finance and Operations data is used to populate the reports in the Organizational Training content pack. The following table shows the entities that the content pack was based on.
+Finance and Operations data is used to populate the reports in the Organizational training content pack. The following table shows the entities that the content pack was based on.
 
 | Entity                    | Contents                                                         | Relationships with other entities                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

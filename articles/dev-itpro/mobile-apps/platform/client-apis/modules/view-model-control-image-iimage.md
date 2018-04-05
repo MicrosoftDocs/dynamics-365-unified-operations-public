@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Image 
+
+[!include[banner](../../../../includes/banner.md)]
+
 Image control for representing images in the mobile app. Images can be of any of the following types: DataUri, Base64, URL, AOTResource, or Symbol.
 
 ## Index

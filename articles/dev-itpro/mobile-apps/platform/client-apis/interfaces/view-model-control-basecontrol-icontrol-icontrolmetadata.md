@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ControlMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Interface for the metadata of a control. Overriding control metadata can modify a controls' look and behavior.
 Properties that can be modified vary by control but every control will have the base properties listed here.
 

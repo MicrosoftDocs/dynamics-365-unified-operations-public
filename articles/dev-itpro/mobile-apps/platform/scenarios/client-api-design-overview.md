@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Client-side design APIs overview
+
+[!include[banner](../../../includes/banner.md)]
+
 This topic provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
 ## Terminology

@@ -32,6 +32,8 @@ ms.search.validFrom: 2016-11-30
 
 # Nomenclature of product variant numbers and names
 
+[!include[banner](../includes/banner.md)]
+
 This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format. The new nomenclature has a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also create a nomenclature for product names. Finally, you can build a nomenclature to identify configurations that are created by the constraint-based product configurator. These nomenclatures can contain attributes of your choice.
 
 The new nomenclatures for product variant numbers and product variant names let you include segments in the identifiers for product variants. These segments can include the product master number and name, product dimension IDs and names, number sequences, text constants, and attributes. This functionality lets you quickly find a specific product variant when you create a sales order or a purchase order. You create nomenclatures for both product variant numbers and product variant names by using the **Product nomenclature** page. To open this page, click **Product information management** &gt; **Setup**.

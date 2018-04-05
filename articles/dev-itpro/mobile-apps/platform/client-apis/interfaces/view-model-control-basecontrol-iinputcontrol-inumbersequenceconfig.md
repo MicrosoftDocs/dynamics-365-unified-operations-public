@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # NumberSequenceConfig Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Number Sequence Configuration type.
 
 ### Hierarchy

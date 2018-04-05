@@ -6,7 +6,7 @@ description: This topic explains how you can use self-service to configure Retai
 
 author: jashanno
 manager: AnnBe
-ms.date: 02/08/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -124,15 +124,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 > [!NOTE]
 > If you will install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.
 
-Before you run the Retail Store Scale Unit installer, make sure that the following requirements are met:
-
-- The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on the system.
-- The installer installs the Retail Store Scale Unit components only on the following operating systems. (Before you install any component, you must update the operating system by installing all service packs and updates that are available for it.)
-
-    - Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren't supported.
-    - Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn't supported.
-    - Windows 10 Pro or Enterprise edition (both x86 and x64 architectures). Home edition isn't supported.
-    - Microsoft Windows Server 2012 or Microsoft Windows Server 2012 R2.
+Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met.
 
 The Retail Store Scale Unit installer first extracts the associated files. It then begins the installation.
 

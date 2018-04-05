@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # PageLink Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Pagelink control type. A pagelink is a control that navigates to another page.
 
 ### Hierarchy

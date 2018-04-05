@@ -2,10 +2,10 @@
 # required metadata
 
 title: Supply chain management home page
-description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
+description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/04/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
@@ -44,7 +44,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 Select a feature area to learn more about it.
 
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Cost management](cost-management/costing-sheets.md)  
+- [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
@@ -72,17 +72,36 @@ These short videos help you learn about the new features that are in Microsoft D
 
 These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance</a>
--  <a href="https://youtu.be/RLXybx20B5o">Help! MRP is slow!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Process inbound ASNs in Warehouse management</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Get the best out of your warehouse management system</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Advanced R3 Warehouse management - A day in the life, outbound processing and Demand Replenishment</a>
--  <a href="https://youtu.be/5w1MngVchBA">Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Subcontracting operations and activities in manufacturing</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Transportation management (TMS) in the new Microsoft Dynamics AX</a>
+**Cost management**
+
+-  [Overview of Cost management](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Master planning**
+
+-  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
+-  [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
+
+**Product information management**
+
+-  [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Warehouse management** 
+
+-  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Advanced R3 Warehouse management - Inbound processing and min/max replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment](https://youtu.be/Og0gLlVp7jA)
+-  [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Production control**
+
+-  [Subcontracting operations and activities in manufacturing](https://youtu.be/y1jrd3A_k70)
+
+**Transportation management**
+
+-  [Transportation management (TMS) in the new Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## Blogs
 There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
@@ -91,7 +110,7 @@ There are many topics about manufacturing and supply chain management on the <a 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 

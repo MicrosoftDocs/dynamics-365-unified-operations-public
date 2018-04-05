@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # ListMetadata Type
+
+[!include[banner](../../../../includes/banner.md)]
+
 Metadata for list control.
 
 ### Hierarchy

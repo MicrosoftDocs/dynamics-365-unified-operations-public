@@ -5,7 +5,7 @@ title: Custom fields
 description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
-ms.date: 01/19/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
-ms.search.validFrom: 2017-12-31
+ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ---
 
@@ -33,7 +33,9 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include[banner](../includes/pre-release.md)] 
 
-While Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
+While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature. 
+
+The ability to add custom fields is available in platform update 13 and later.
 
 This video shows how easy it is to add a custom field to a page.
 
@@ -65,7 +67,7 @@ The following steps describe the process for creating a custom field and placing
 10.   Click **Insert** to insert the marked fields into the selected region of the form. 
 11.   **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.  
 
-### Sharing custom fields with other users
+## Sharing custom fields with other users
 After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
 -   The recommended route is through the system administrator, who can push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details. 
