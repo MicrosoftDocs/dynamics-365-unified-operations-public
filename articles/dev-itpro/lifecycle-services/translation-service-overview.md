@@ -96,7 +96,15 @@ Two preview features are available for DTS:
 + **Dynamics 365 Translation Service - Documentation Translation Support** – You must turn on this feature if you want to translate a product or solution document (for example, a Microsoft Word document).
 + **NAV product availability** – You must turn on this feature if you want to create an LCS project for NAV products and access DTS from within the project.
 
-For more information about how to use DTS, see [Microsoft Dynamics 365 Translation Service - User interface file translation](use-translation-service.md) and [Microsoft Dynamics 365 Translation Service - Documentation file translation](use-translation-service-ua.md).
+
+Product name |	Version |	File format supported |	Note
+--- | --- | --- | ---
+**Dynamics AX 2012**	| All versions	| .ktd, .ald	|
+**Dynamics 365 for Finance and Operations** | All versions |	.label.txt	|
+**Dynamics 365 for Retail** | All versions | .label.txt |
+**Dynamics CRM**	| 2011-2016 |	.resx, .js	|
+**Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf |	.txt, .xml and .xlf are in NAV-specific formats
+
 
 ## Glossary
 | Term | Description |
@@ -104,3 +112,7 @@ For more information about how to use DTS, see [Microsoft Dynamics 365 Translati
 | XLIFF | XML Localization Interchange File Format. XLIFF is an XML-based format. It was created to standardize the way that localizable data is passed between tools during a localization process, and to serve as a common format for files that are used by computer-aided translation (CAT) tools. |
 | Microsoft GA languages | General availability of the Microsoft-produced languages. The list varies, depending on the product. |
 | TU | Translation unit. A TU typically contains a source string, translation, state, state qualifier, and note. |
+
+
+For more information about how to use DTS, see [Microsoft Dynamics 365 Translation Service - User interface file translation](use-translation-service.md) and [Microsoft Dynamics 365 Translation Service - Documentation file translation](use-translation-service-ua.md).
+

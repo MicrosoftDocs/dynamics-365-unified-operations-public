@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations.
 
 Introduction
 ------------

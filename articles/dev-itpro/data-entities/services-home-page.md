@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
+This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 
 ## List of services
 The following table lists all the service endpoints, and compares the endpoints available for Finance and Operations, and AX 2012.

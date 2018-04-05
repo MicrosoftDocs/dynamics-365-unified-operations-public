@@ -53,7 +53,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 <thead>
 <tr>
 <th>SAT catalog</th>
-<th>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mapping</th>
+<th>Microsoft Dynamics 365 for Finance and Operations mapping</th>
 </tr>
 </thead>
 <tbody>

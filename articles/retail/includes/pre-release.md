@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> This feature is part of a targeted release and is available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). This feature will be included in another upcoming general availability release. For more information about standard and targeted releases, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).
+> This feature is available only in Dynamics 365 for Finance and Operations version 8.0 and for targeted users who have opted in to the Continuous Auto-update Advantage Program (CAAP) for platform updates. For more information about standard and targeted releases, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).

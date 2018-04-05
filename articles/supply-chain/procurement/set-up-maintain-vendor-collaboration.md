@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
+This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 > [!NOTE]
 > The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).

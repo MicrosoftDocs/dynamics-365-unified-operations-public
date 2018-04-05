@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany invoicing
-description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
 
 Your organization might have multiple divisions, subsidiaries, and other legal entities that transfer products and services to each other for projects. The legal entity that provides the service or product is called the *lending legal entity*, and the legal entity that receives the service or product is called the *borrowing legal entity*. 
 

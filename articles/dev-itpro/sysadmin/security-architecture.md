@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysSecConfiguration
+ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations.
 
 When you understand the security architecture of Finance and Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
