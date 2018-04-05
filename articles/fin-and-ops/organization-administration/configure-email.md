@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -226,7 +226,7 @@ There are a few standard steps that can help troubleshoot email settings configu
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count as needed.
 3. Check the status of the pending emails in **System administration** > **Periodic tasks** > **Email processing** > **Email sending status**.
-4. Verify that the user mail accounts have provided the SMTP account **Send As** and **Send On Behalf Of** permissionsin the Office 365 admin center For more information, see [Enable sending email from another user’s mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)
+4. Verify that user mail accounts have provided the SMTP account **Send As** and **Send On Behalf Of** permissions in the Office 365 admin center. For more information, see [Enable sending email from another user’s mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 5. Verify that all user mailboxes are valid and can be signed into by actually signing into them.
 6. If email sending via SMTP continues to be an issue, then try entering SMTP account information into a tool like [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and the account are valid and working correctly.
 
