@@ -49,6 +49,7 @@
 ## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
+## [Inventory lookup in the Point of Sale](product-variants-POS.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
