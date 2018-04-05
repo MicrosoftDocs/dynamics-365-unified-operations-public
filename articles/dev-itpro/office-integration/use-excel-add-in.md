@@ -41,9 +41,10 @@ By opening entity data in Excel, you can quickly and easily view and edit the da
 > [!NOTE]
 > If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
 
+To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
+
 > [!Video https://www.youtube.com/embed/RTicLb-6dbI]
 
-The video that is embedded above is also available on [YouTube](https://youtu.be/RTicLb-6dbI).
 
 ## Open entity data in Excel when you start from Finance and Operations
 1. On a page in Finance and Operations, select **Open in Microsoft Office**.
