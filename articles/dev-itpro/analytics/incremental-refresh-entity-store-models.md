@@ -50,17 +50,21 @@ Within the Customer Collections model you'll find a group of data sets which pro
 ## Managing Entity Store models
 By channeling reporting and analytical queries to the Entity Store, system administrators have the opportunity to control the time accuracy of the data.  For some data analytics scenarios, data that is delayed by 5-10 minutes will be acceptable by users.  However, for other types of reporting experiences the information customers require near real-time results.  It's important to understand time requirements associated with the data before rolling out an Entity Store model refresh strategy.
 
-System administrators use built-in tooling to manage the frequency at which Entity Store models are refreshed with the latest updates available in the transactional database.  Dynamics 365 for Finance & Operations supports both a Full and Incremental synchronization strategy that may be used in concert to keep models up-to-date:
-	• **Full-Synchronization** - existing data in the Entity Store is deleted and the entire model is calculated and materialized during the background process
-	• **Incremental refresh** - updates to transactional database including object deletes are synchronized with the Entity Store models
+System administrators use built-in tooling to manage the frequency at which Entity Store models are refreshed with the latest updates available in the transactional database.  Dynamics 365 for Finance & Operations supports both a Full and Incremental synchronization strategy that may be used in concert to keep models up-to-date.
+
+- **Full-Synchronization** - existing data in the Entity Store is deleted and the entire model is calculated and materialized during the background process
+- **Incremental refresh** - updates to transactional database including object deletes are synchronized with the Entity Store models
 
 ### Full-Synchronization
 While full-synchronization ensures that all aspects of an Entity Store model are refreshed the process could take several minutes for large data sets.  For this reason, it's recommended that full-refresh operations are only performed during non-business hours where possible.
 
 ### Incremental refresh
-Incremental refresh is now available as an option for updating Entity Store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an Entity Store refresh.  This includes Entity store model collections that can be uniquely identified using a field reference.  System Admins can use the Entity Store management tooling provided with Dynamics 365 for Finance & Operations to identify model collections which are not recognized by the delta processing engine.
+Incremental refresh is now available as an option for updating Entity Store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an Entity Store refresh.  This includes Entity store model collections that can be uniquely identified using a field reference.  System Admins can use the Entity Store management tooling provided with Dynamics 365 for Finance & Operations to identify Entity Store models supported by the incremental delta detection logic.
 
-**Can have an Entity Store model that uses both incremental and full-refresh?**  Absolutely, in fact, we recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details in the model are updated.
+**Note:** We recommend that you occasionally perform a Full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
+
+**Can have an Entity Store model that uses both incremental and full-refresh?**  
+Not at this time. We appreciate your patience as we work to expand the collection of aggregate data modelling patterns supported by the Incremental Refresh process.  Enhancements will be delivered routinely as part of future Platform Updates.
 
 Here's a screenshot of the Entity Store model administration experience using Incremental refresh options…
 [![Incremental-administration](./media/Entity-Store-model-management.png)](./media/Entity-Store-model-management.png) 
