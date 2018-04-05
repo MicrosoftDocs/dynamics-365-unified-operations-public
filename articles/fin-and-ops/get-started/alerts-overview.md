@@ -77,4 +77,4 @@ An alert rule has five components:
     > This option is restricted to organization administrators.
 
 ## Email notifications from alerts
-Email notifications from alerts is not yet enabled. This will be enabled in a future update.
+Email notifications from alerts are not yet enabled. This will be enabled in a future update.
