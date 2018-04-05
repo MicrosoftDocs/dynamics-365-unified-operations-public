@@ -210,6 +210,26 @@ The testing for email notifications is to simply trigger the notification and th
     1. If the email is fails to send, make sure that the SMTP mail account can be opened.
 4. Check for the email notification in the appropriate inbox.
 
+### Email troubleshooting
+
+There are a few standard steps that can help troubleshoot email settings configuration:
+
+1. Verify email settings:
+    1. Go to **System administration** > **Setup** > **Email** > **Email parameters**.
+    2. Verify that SMTP is enabled.
+    3. Verify the SMTP mail server settings. 
+    4. Sign into that SMTP account in a separate window to ensure that the account and password are correct.
+2. Verify that the email batch process is running:
+    1. Go to **System administration** > **Periodic tasks** > **Email processing** > **Batch**.
+    2. Ensure the **Batch processing** option is enabled.
+    3. Check the recurrence of the email process:
+        1. Select **No end date** to adjust all recurrences of the email batch process.
+        2. Adjust the count as needed.
+3. Check the status of the pending emails in **System administration** > **Periodic tasks** > **Email processing** > **Email sending status**.
+4. Verify that the user mail accounts have provided the SMTP account **Send As** and **Send On Behalf Of** permissionsin the Office 365 admin center For more information, see [Enable sending email from another user’s mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)
+5. Verify that all user mailboxes are valid and can be signed into by actually signing into them.
+6. If email sending via SMTP continues to be an issue, then try entering SMTP account information into a tool like [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and the account are valid and working correctly.
+
 ## Other notes
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
