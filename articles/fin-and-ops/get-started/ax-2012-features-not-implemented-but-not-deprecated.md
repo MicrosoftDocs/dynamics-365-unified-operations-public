@@ -156,7 +156,7 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td><p>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.</p>
- <br><strong>Note:</strong> Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.<br>
+ <p><strong>Note:</strong> Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</p>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
