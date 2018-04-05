@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 # Microsoft Dynamics 365 Translation Service - Documentation file translation
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to translate a documentation file for Microsoft Dynamics products and solutions.
 

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up bar codes
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to use bar codes in Microsoft Dynamics 365 for Retail.
 

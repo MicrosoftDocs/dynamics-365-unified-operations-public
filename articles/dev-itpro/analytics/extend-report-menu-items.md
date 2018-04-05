@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Extend report menu items
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
 

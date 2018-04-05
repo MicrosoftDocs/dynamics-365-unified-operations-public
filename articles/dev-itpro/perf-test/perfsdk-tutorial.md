@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Performance SDK and multiuser testing via Visual Studio Online
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also describes how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 
@@ -79,16 +79,16 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
     Note the following elements in these commands:
 
-    - **-n "CN=TestAuthCert"** gives a human-readable name to the certificate. You can adjust the name to suit your scenario.
-    - **-eku 1.3.6.1.5.5.7.3.2** gives the purpose of the certificate. This certificate is a client authentication certificate instead of a code signing certificate, an encryption certificate, or some other type of certificate.
+   - **-n "CN=TestAuthCert"** gives a human-readable name to the certificate. You can adjust the name to suit your scenario.
+   - **-eku 1.3.6.1.5.5.7.3.2** gives the purpose of the certificate. This certificate is a client authentication certificate instead of a code signing certificate, an encryption certificate, or some other type of certificate.
 
-    When you're prompted for a private key password, select **None**.
+     When you're prompted for a private key password, select **None**.
 
-    You should see the following files:
+     You should see the following files:
 
-    - authcert.pfx
-    - authcert.cer 
-    - authcert.pvk
+   - authcert.pfx
+   - authcert.cer 
+   - authcert.pvk
 
 5. Install the **\*.pfx** certificate file. When you install it, make sure that you select **Local Machine**. Then copy the file to the **PerfSDK** folder.
 6. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
@@ -184,7 +184,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 [![Open in Visual Studio](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
 1. Open the **PerfSDKSample** project.
-2. In the **CloudEnvironment.Config** file, update the **UserFormat** entry so that it reflects the admin user URL. For example, for `admin@example.com`, use **TST\_{0}@example.com** as the user format. Additionally, change the **UserCount** value to the number of users that you want to have in your performance test.
+2. In the <strong>CloudEnvironment.Config</strong> file, update the <strong>UserFormat</strong> entry so that it reflects the admin user URL. For example, for `admin@example.com`, use <strong>TST\_{0}@example.com</strong> as the user format. Additionally, change the <strong>UserCount</strong> value to the number of users that you want to have in your performance test.
 
     [![Updated CloudEnvironment.Config file](./media/vsonline-12.jpg)](./media/vsonline-12.jpg)
 
@@ -253,17 +253,17 @@ You can now run performance tests against the topology.
 5. In your solution files, double-click the **vsonline.testsettings** file to modify the test settings.
 6. In the **Test Settings** dialog box, on the **Deployment** tab, use the following settings:
 
-    - Select the **Enable deployment** check box.
-    - In the **Additional files and directories to deploy** field, make sure that the following files are listed:
+   - Select the **Enable deployment** check box.
+   - In the **Additional files and directories to deploy** field, make sure that the following files are listed:
 
-        - &lt;Solution Directory&gt;\\PerfSDKSample\\bin\\Debug\\
-        - C:\\PerfSDK\\CloudEnvironment.Config
-        - C:\\PerfSDK\\authcert.pfx
-        - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\Visual Studio Online\\
+     - &lt;Solution Directory&gt;\\PerfSDKSample\\bin\\Debug\\
+     - C:\\PerfSDK\\CloudEnvironment.Config
+     - C:\\PerfSDK\\authcert.pfx
+     - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
+     - C:\\PerfSDK\\Visual Studio Online\\
 
-        > [!NOTE]
-        > Your PerfSDK folder might differ.
+       > [!NOTE]
+       > Your PerfSDK folder might differ.
         
 7. In the **Test Settings** dialog box, on the **Setup and Cleanup Scripts** tab, select **setup.cmd**, located in the **Visual Studio Online** folder within your PerfSDK directory.
 
@@ -277,12 +277,12 @@ You can now run performance tests against the topology.
 
     [![Transaction results](./media/perf103v.png)](./media/perf103v.png)
 
-6. To view various indicators for the test controller and test scenario, you can switch to the **Graphs** view.
+10. To view various indicators for the test controller and test scenario, you can switch to the **Graphs** view.
 
-    [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
+     [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
 
-    > [!NOTE]
-    > While tests are being run, information about your system isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine and set up the Microsoft Azure portal to monitor Microsoft SQL Server usage of Database Transaction Units (DTUs).
+     > [!NOTE]
+     > While tests are being run, information about your system isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine and set up the Microsoft Azure portal to monitor Microsoft SQL Server usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
 
@@ -382,7 +382,7 @@ There are two scenarios that can cause this error:
 
 ![Admin user](./media/sdk_admin.png)
 
-- The user who is specified as **SelfMintingAdminUser** has a provider other than "https://sts.windows-ppe.net/" or "https://sts.windows.net/". Sometimes the admin user will have a company specific domain included in the provider field. To work around this issue, create a user in AX with any name and email. Assign this new user the System Administrator role.  You do not need to link this user to a real Azure Active Directory user. Specify this new admin user as the **SelfMintingAdminUser** in the CloudEnvironment.config
+- The user who is specified as <strong>SelfMintingAdminUser</strong> has a provider other than "<https://sts.windows-ppe.net/>" or "<https://sts.windows.net/>". Sometimes the admin user will have a company specific domain included in the provider field. To work around this issue, create a user in AX with any name and email. Assign this new user the System Administrator role.  You do not need to link this user to a real Azure Active Directory user. Specify this new admin user as the <strong>SelfMintingAdminUser</strong> in the CloudEnvironment.config
 
 ### Request was forbidden with client authentication scheme 'Anonymous'
 

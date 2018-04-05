@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 12
 
 # Virtual machines that don't allow administrator access FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. Specifically, the information in this topic applies to Tier 1 VMs that run Platform update 12 and later.
 

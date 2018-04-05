@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting home page
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Learning map 
 
@@ -41,6 +41,7 @@ The following learning map shows the major concepts and tasks that make up the f
 [![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## Quick links
+
 |      |   |
 |------|---|
 |  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Create dimensions](cost-elements.md)  |

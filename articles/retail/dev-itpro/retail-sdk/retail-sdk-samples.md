@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Platform update 2
 
 # Retail SDK samples
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic describes three new samples that were released together with the Retail SDK in December 2016.
 
 Override message handler sample
 -------------------------------
 
-**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
+**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
 
 -   Search for customers from the CRM system and the POS.
 -   Merge the results, and show a unified result set in Retail Modern POS (MPOS).

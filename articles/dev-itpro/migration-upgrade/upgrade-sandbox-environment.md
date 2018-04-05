@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Process for upgrading a sandbox environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the steps for performing a data upgrade on a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher sandbox environment.
 

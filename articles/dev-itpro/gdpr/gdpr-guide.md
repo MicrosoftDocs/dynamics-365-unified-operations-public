@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview of the GDPR
 

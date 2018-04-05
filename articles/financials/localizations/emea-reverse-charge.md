@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Reverse charge VAT
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes a generic approach for setting up the reverse charge value-added tax (VAT) for European countries.
 
@@ -46,18 +46,18 @@ We recommend that you use separate sales tax codes for purchase operations and s
 <body>
 <tr>
 <td><strong>Sales tax code for sales</strong></td>
-<td>Create a sales tax code for reverse charge sales operations (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax codes</strong>).
+<td>Create a sales tax code for reverse charge sales operations (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).
 </td>
 </tr>
 <tr>
 <td><strong>Sales tax code for purchases</strong></td>
-<td><p>Create positive and negative sales tax codes for the reverse charge VAT for purchases (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax codes</strong>).</p>
+<td><p>Create positive and negative sales tax codes for the reverse charge VAT for purchases (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).</p>
 <ol>
 <li>Create a sales tax code that has a positive value.</li>
 <li>Create a sales tax code that has a negative value. Set the <strong>Allow negative sales tax percentage</strong> option to <strong>Yes</strong>.
 You must assign this negative sales tax code to an item sales tax group, and then assign that item sales tax group to the items that are subject to the reverse charge VAT.</li>
 </ol>
-<p>For more information, see the next section, "Set up sales tax groups and item sales tax groups."</p>
+<p>For more information, see the next section, &quot;Set up sales tax groups and item sales tax groups.&quot;</p>
 </td>
 </tr>
 </tbody>
@@ -69,15 +69,15 @@ We recommend that you use separate sales tax groups for purchase operations and 
 <table>
 <tr>
 <td><strong>Sales tax groups for sales</strong></td>
-<td>Create a sales tax group for sales operations that have the reverse charge (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include the sales tax code for the reverse charge in this group. Select the <strong>Exempt</strong> and <strong>Reverse charge</strong> check boxes for the sales tax code.</td>
+<td>Create a sales tax group for sales operations that have the reverse charge (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include the sales tax code for the reverse charge in this group. Select the <strong>Exempt</strong> and <strong>Reverse charge</strong> check boxes for the sales tax code.</td>
 </tr>
 <tr>
 <td><strong>Sales tax groups for purchases</strong></td>
-<td>Create a sales tax group for purchase operations that have the reverse charge (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include both positive and negative sales tax codes in this group. Select the <strong>Reverse charge</strong> check box for the sales tax code that has a negative value.</td>
+<td>Create a sales tax group for purchase operations that have the reverse charge (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax groups</strong>). On the <strong>Setup</strong> tab, include both positive and negative sales tax codes in this group. Select the <strong>Reverse charge</strong> check box for the sales tax code that has a negative value.</td>
 </tr>
 <tr>
 <td><strong>Item sales tax groups</strong></td>
-<td>Create or update the item sales tax group with the sales tax code that has a negative value (<strong>Tax</strong> > <strong>Indirect taxes</strong> > <strong>Sales tax</strong> > <strong>Item sales tax groups</strong>). You must assign the default item sales tax group to the products and categories that are subject to the reverse charge.</td>
+<td>Create or update the item sales tax group with the sales tax code that has a negative value (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Item sales tax groups</strong>). You must assign the default item sales tax group to the products and categories that are subject to the reverse charge.</td>
 </tr>
 </table>
 

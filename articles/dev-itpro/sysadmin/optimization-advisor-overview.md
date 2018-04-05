@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 # Optimization advisor overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations.
 

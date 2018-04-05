@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Extensibility FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Will source code be available after the hard seal?
 

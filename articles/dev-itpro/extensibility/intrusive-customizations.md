@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Intrusive customizations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic defines the characteristics of an intrusive customization. Customizations that are implemented using overlayering are intrusive, and won't be supported as we go forward. Intrusive customizations are the major obstacle to continuous upgrades at upgrade and support costs that are close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
 

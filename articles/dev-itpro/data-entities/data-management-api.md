@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 5
 
 # Data management package API 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages. The REST API can be used with both cloud and on-premises deployments. For on-premises deployments this functionality is currently available for version 7.2, Platform update 12, build 7.0.4709.41184, and later.
 

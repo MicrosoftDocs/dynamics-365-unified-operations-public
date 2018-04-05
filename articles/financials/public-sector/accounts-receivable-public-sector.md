@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts receivable in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the Accounts receivable functionality that is available for the public sector.
 
@@ -43,7 +42,7 @@ How do I set Accounts receivable parameters for the public sector?
 Most Accounts receivable parameters are set the same way whether you’re in the public sector or the private sector. However, the parameters that are required for billing classifications and billing codes are used only by the public sector. For more information, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
 -   To enable the use of billing classifications and billing codes, in the **General** section, on the **Sales setup** FastTab, select **Use billing classifications**.
--   To prioritize the settlement of free text invoices, see the required parameter settings in [Settlement priority in the public sector](settlement-priority-public-sector.md) and [Free text invoices in the public sector](free-text-invoices-public-sector.md).
+-   To prioritize the settlement of free text invoices, see the required parameter settings in [Settlement priority in the public sector](settlement-priority-public-sector.md) and [Free text invoices in the public sector](free-text-invoices-public-sector.md).
 -   To use billing codes with Project accounting, select the option to display project-related fields on free text invoices. When you do this, two things happen:
     -   Project-related fields are displayed both on free text invoices and on billing codes.
     -   The ledger account related to the project is automatically used on the free text invoice. To allow users to change the ledger account on the free text invoice and in the accounting distributions, select the option to allow the ledger account number to be changed.

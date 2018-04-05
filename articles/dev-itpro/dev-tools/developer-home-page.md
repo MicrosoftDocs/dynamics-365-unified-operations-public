@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop and customize using Visual Studio
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides links to topics about development.
 
 ## Overview
 
-Microsoft Dynamics 365 for Finance and Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
+Microsoft Dynamics 365 for Finance and Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. This release introduces significant changes to the development experience. These changes include:
 
 - Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
-- Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
-- The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
+- Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
+- The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C\# programming language.
 - You can leverage the browser-based client and the design patterns for forms to provide an improved end-user experience.
 - The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
 
@@ -76,7 +75,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generatio
 ### Tools, models, and VMs
 
 -   [Development tools](development-tools-overview.md)
--   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
+-   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
 -   [Application Explorer](application-explorer.md)
 -   [Projects](projects.md)
 -   [Element designers](element-designers.md)
@@ -94,7 +93,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generatio
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 
-## X++ programming language
+## X++ programming language
 ### Tutorials
 
 -   [New X++ and debugger features](new-x-debugger-features.md)
@@ -135,7 +134,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generatio
 - [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 
 ## User interface concepts
-The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
+The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
 
 ## Analytics
 - [Analytics](..\analytics\analytics.md)

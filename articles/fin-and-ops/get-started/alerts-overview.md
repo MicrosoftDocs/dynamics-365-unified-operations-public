@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 15
 
 # Alerts overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## About alerts
 Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.

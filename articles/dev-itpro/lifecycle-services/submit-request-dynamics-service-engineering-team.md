@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Submit a request to the Dynamics Service Engineering team
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can now submit requests directly to the Dynamics Service Engineering (DSE) team by using Lifecycle Services (LCS) instead of using Connect or LCS, depending on the request. This functionality, which was added in the September release of LCS, allows you to submit requests using a single portal and view the status of your requests in LCS. You can also audit which requests are submitted and executed on your environment. There are two ways to submit a request.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Statistical dimension members and statistical measure provider templates
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A statistical dimension and its members are used to register and control non-monetary entries in Cost accounting. Statistical dimension members can be used for two purposes:
 

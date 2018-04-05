@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 1
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)]
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. 
 
