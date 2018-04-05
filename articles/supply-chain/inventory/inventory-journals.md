@@ -5,7 +5,7 @@ title: Inventory journals
 description: This topic describes how you can use inventory journals to post various types of physical inventory transactions.
 author: perlynne
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -118,8 +118,11 @@ Another difference between the journal data entities is the ability to use compo
 -	Inventory movement journal
 
 These two inventory journals only support the *Initialize stock* scenario as part of a data management import project:
--  When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines.
--	 It is assumed that unique line information exists per inventory dimension. Therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
+-  When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines. For example, importing 2020 lines will result in the following three journal headers:
+    -  Header 1: will contain 1000 lines
+    -  Header 2: will contain 1000 lines
+    -  Header 3: will contain 20 lines
+-  It is assumed that unique line information exists per inventory dimension, which can be a product, storage, and tracking dimension. Therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
 
 ## Additional resources
 
