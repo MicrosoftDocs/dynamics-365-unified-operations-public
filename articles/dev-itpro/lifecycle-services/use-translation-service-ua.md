@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.3.0
 
 This topic explains how to translate a documentation file for Microsoft Dynamics products and solutions.
 
-For more information about the Microsoft Dynamics 365 Translation Service (DTS), see [Microsoft Dynamics 365 - Translation Service Overview](./translation-service-overview.md). For information about how to translate a user interface (UI) file, see [Microsoft Dynamics 365 Translation Service - User interface file translation](./use-translation-service.md).
-
 ## Create a translation request
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.
 
@@ -90,11 +88,11 @@ When processing of your translation request is completed, you receive an email n
 For documentation translation requests, three types of output file are available after the translation process is completed:
 
 + **File for translation review** – Download this file to review and edit the translated document strings in a table view. The file shows the source and target languages segments side by side.
-+ **Translated file in source format** – Download this file if you don't intend to review or edit the translations. This file is in the same style as the source .docx file that you submitted, and it's ready to be used.
++ **Translated file in source format** – Download this file if you don't intend to review or edit the translations. This file has the dame formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
 + **Translation memory** – Download this file to recycle these translations the next time that you submit a translation request that uses a newer version of the source document.
 
 ### Review and edit the translations
-DTS provides the translation review file in .docx format. You can download the file from the **Request output** tab of the request details page and open it in Word. The file provides a convenient table view, as shown in the following illustration. Therefore, you can easily compare the text in the source and target languages side by side. After you've finished reviewing the file, you must save it and upload it back to DTS to generate the updated .docx file output in the original source style.
+DTS provides the translation review file in .docx format. You can download the file from the **Request output** tab of the request details page and open it in Word. The file provides a convenient table view, as shown in the following illustration. Therefore, you can easily compare the text in the source and target languages side by side. After you've finished reviewing the file, you must save it and upload it back to DTS to generate the updated .docx file output in the original formatting style that you submitted.
 
 ![.docx file for review](./media/dts-doc-review.png ".docx file for translation review")
  
@@ -117,3 +115,5 @@ When you've finished reviewing and editing a .docx review file, you must regener
     ![Regenerated output](./media/dts-regenerate-output-ua.png "Regenerated output")
 
 You can repeat the regeneration process as many times as you require.
+
+For more information about the Microsoft Dynamics 365 Translation Service (DTS), see [Microsoft Dynamics 365 - Translation Service Overview](./translation-service-overview.md). For information about how to translate a user interface (UI) file, see [Microsoft Dynamics 365 Translation Service - User interface file translation](./use-translation-service.md).
