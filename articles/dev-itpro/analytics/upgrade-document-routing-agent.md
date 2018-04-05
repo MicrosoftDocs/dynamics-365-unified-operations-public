@@ -53,6 +53,6 @@ During the uninstallation process, you'll likely be prompted with the following 
 
 **Important:** select “Automatically close applications and attempt to restart them after setup is complete.”
 
-Step 2) Now, reinstall the latest Document Routing Agent available in your deployment
-Use the instructions provided here to download and install the latest version of the Document Routing Agent available with your subscription.
+Step 2) Reinstall the latest Document Routing Agent available in your deployment
+Follow these steps to [Download and install the latest version of the Document Routing Agent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent) available with your subscription.
 
