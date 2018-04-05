@@ -1852,6 +1852,7 @@
 #### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Inventory counting
+#### [Reason codes for inventory counting](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Block inventory](../supply-chain/inventory/inventory-blocking.md)
 #### [Cycle counting](../supply-chain/warehousing/cycle-counting.md)
 #### [Define cycle counting ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
@@ -1862,6 +1863,7 @@
 #### [Inventory status](../supply-chain/inventory/inventory-statuses.md)
 #### [Inventory tag counting](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Replenishment](../supply-chain/warehousing/replenishment.md)
+#### [Immediate replenishment](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Replenishment with withdrawal kanbans](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [Install and configure the warehousing app ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Configure field names in warehousing app](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
