@@ -46,7 +46,7 @@ The following illustration shows, at a high level, how the service works.
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [XLIFF Translation Memory (TM)](./use-translation-service-tm.md).
 
 ## Custom-trained MT system
-DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products. The custom-trained MT system can be used only for GA languages for Microsoft Dynamics, unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the request.
+DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products. The custom-trained MT system can be used only for GA languages for Microsoft Dynamics, unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
 
 ## Supported products
 DTS currently supports the following product versions.
@@ -69,7 +69,7 @@ You can access DTS in two places in LCS:
 Sign in to LCS, and scroll to the right side of the page. Expand the tiles waffle, and then select the **Translation service** tile to open the dashboard view for DTS.
 
 ### Accessing DTS from within an LCS project
-Create a new project, or open an existing project. On the project dashboard, in the **More tools** section, select the **Translation service** tile. Alternatively, open menus on the project dashboard, and find the **Translation service** command.
+Create a new project, or open an existing project. On the project dashboard, in the **More tools** section, select the **Translation service** tile. Alternatively, on the project dashboard, select the **Menu** button, and then select **Translation service**.
 
 ### Accessing DTS from the LCS home page vs. accessing it from within an LCS project
 When you access DTS from the LCS home page and create a translation request, you can select the product that is used for the request. To add more requests that use different products, you can just change the product selection. You don't have to close the service and open a different translation project.
