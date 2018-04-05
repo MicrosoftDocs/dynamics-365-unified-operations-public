@@ -75,7 +75,7 @@ When you click **Edit** for the **To** or **Cc** field, the **Email to** dialog 
 
 #### Print management
 
-If you select the **Print Management email** type, you can enter fixed email addresses in the **To** field. To use email addresses that aren't fixed, you must select the email source type for a file destination. The following values are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor**, **Worker**, **Applicant**, **Prospective vendor**, and **Disallowed vendor**. After you select an email source type, use the button next to the **Email source account** field to open the **Formula designer **form. You can use this form to attach a formula that represents the selected party account to the email destination.
+If you select the **Print Management email** type, you can enter fixed email addresses in the **To** field. To use email addresses that aren't fixed, you must select the email source type for a file destination. The following values are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor**, **Worker**, **Applicant**, **Prospective vendor**, and **Disallowed vendor**. After you select an email source type, use the button next to the **Email source account** field to open the **Formula designer** form. You can use this form to attach a formula that represents the selected party account to the email destination.
 
 [![Configure print management email type](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
