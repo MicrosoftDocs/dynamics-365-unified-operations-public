@@ -936,6 +936,7 @@
 ##### [Sales and purchase cycles](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
+##### [Export financial information for auditors in Sweden](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Import payment formats](../financials/localizations/emea-swe-payment-formats-import.md)
 #### Switzerland
 ##### [Import customer payments in ESR](../financials/localizations/emea-che-esr-customer-payments-import.md)
