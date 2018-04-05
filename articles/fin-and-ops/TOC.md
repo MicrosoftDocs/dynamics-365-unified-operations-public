@@ -1863,7 +1863,7 @@
 #### [Inventory status](../supply-chain/inventory/inventory-statuses.md)
 #### [Inventory tag counting](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Replenishment](../supply-chain/warehousing/replenishment.md)
-#### [Immediate replenishment]((../supply-chain/warehousing/immediate-replenishment.md)
+#### [Immediate replenishment](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Replenishment with withdrawal kanbans](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [Install and configure the warehousing app ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Configure field names in warehousing app](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
