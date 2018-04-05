@@ -5,7 +5,7 @@ title: Reverse charge VAT
 description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries and Saudi Arabia.
 author: epodkolz 
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
