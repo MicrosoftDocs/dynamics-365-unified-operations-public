@@ -112,7 +112,7 @@ In this section, we'll walk you through the process of exporting Finance and Ope
 
 -   Flexible source for accessing transactional business data using external reporting and analytical tools like Excel
 -   Allows end-users to model the data sets they need without requiring a developer
--   Direct access to real-time business information** **
+-   Direct access to real-time business information
 
 ## Expand predefined views and add navigation to charts
 Business Intelligence can be useful at every level of an organization. Use embedded controls to elevate the most relevant information based on the target persona. Native controls in Microsoft Dynamics 365 for Finance and Operations offer users an intuitive and convenient way of interacting with aggregate data allowing for informed decision making.
