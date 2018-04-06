@@ -1,4 +1,4 @@
-----
+---
 # required metadata
 
 title: Cash registers for France
@@ -25,8 +25,8 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-4-06
 ms.dyn365.ops.version: 7.3.2
----
 
+---
 # Cash registers for France
 
 [!include[banner](../includes/banner.md)]
