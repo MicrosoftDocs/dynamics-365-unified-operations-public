@@ -623,6 +623,8 @@
 ## [Asset library](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 Translation Service - Documentation file translation](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365 Translation Service - Translation memory](lifecycle-services/use-translation-service-tm.md)
 
 ## Dynamics AX 2012 Lifecycle Services features
 ### Deployment
