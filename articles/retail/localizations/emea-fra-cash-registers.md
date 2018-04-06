@@ -206,7 +206,7 @@ To use the France-specific functionality for Retail, you must complete these tas
 - Set the **Country/region** field to **FRA** (France) in the primary address of the legal entity.
 - Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
 
-You must also specify the following settings for France.
+You must also specify the following settings for France. Note that you need to run appropriate distribution jobs after completing the setup.
 
 ### Set up the legal entity
 
