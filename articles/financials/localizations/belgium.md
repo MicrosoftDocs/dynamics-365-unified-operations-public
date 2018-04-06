@@ -48,12 +48,12 @@ For information about standard reports that can help you with the INTERVAT tax d
 
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
-|Belgisch Luxemburgs Wissel Instituut (BLWI) report|**Tax** > **Declarations** > **Foreign trade** > **BLWI** | To set up BLWI information, see [Set up payment balances](be-00011-set-up-payment-balance-reporting.md). To generate the BLWI report, see [Create and transfer transactions to the BLWI](tasks/be-00011-create-transfer-blwi.md).| 
+|Belgisch Luxemburgs Wissel Instituut (BLWI) report|**Tax** > **Declarations** > **Foreign trade** > **BLWI** | To set up BLWI information, see [Set up payment balances](tasks/be-00011-set-up-payment-balance-reporting.md). To generate the BLWI report, see [Create and transfer transactions to the BLWI](tasks/be-00011-create-transfer-blwi.md).| 
 |PRODCOM report|**Tax** > **Declarations** > **Foreign trade** > **PRODCOM**|Manufacturers of industrial products send the PRODCOM report to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants. For more information, see [Set up and maintain PRODCOM](emea-bel-prodcom-report.md). |
 
 ## Additional resources
 
 - [Microsoft Dynamics Localization Portal: Belgium report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Belgium.html) (requires CustomerSource account)
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
