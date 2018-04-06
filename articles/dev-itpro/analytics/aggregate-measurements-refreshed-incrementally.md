@@ -44,7 +44,7 @@ It is the responsibility of the System administrator to manage the Entity Store 
 ### ADMINISTRATOR TASKS
 This section describes the activities associated with managing Entity Store models using the built-in administration tools.
 
-**Performing a full synchronization**
+#### Performing a full synchronization
 The first thing you'll want to do after bringing the environment online is identify the models which are required by the application.  It's incorrect to assume that all of the models are necessary to avoid wasting time updating unused models.  See the article Power BI content in Dynamics 365 for Finance & Operations to familiarize yourself with the out-of-box solutions available in the Application Suite.
 
 **RECOMMENDATION:**  We highly recommend that you **DISABLE** synchronization for both the **ProjecCostRevenueAnalysis** and **VendPaymentBIMeasure** Entity Store models.  Both of these application models have been flagged for poor performance during the synchronization process.
@@ -59,7 +59,7 @@ Use the following steps to perform a full-synchronization of the Entity Store fo
 	
 This process may take up to an hour depending on the size and breadth of the application deployment.  You can track the status of the background synchronization process by visiting the Batch jobs area and searching for jobs with a description like **Deploy measurement**.  Once complete, you can begin to use the Entity Store model for Embedded Analytical Workspaces & Reports as well as reports hosted on PowerBI.com.
 
-**Start the Incremental Refresh processing engine**
+#### Start the Incremental Refresh processing engine
 After performing the initial full-synchronization process, you're ready to begin adjusting the model refresh schedule to better accommodate users' interactions with reports and embedded analytics.  The Incremental Refresh engine runs in the background using a system Batch job.  System Administrators must start the process to utilize the Incremental Refresh option.
 
 Use the following steps to turn-on the Incremental refresh engine for models.
@@ -80,7 +80,7 @@ Here's a screen shot of the dialog used to manage the frequency of the Increment
 Once the processing engine is initialized, you're ready to begin enbling select models for Incremental refresh.
 
 
-**Activate Incremental Refresh option for selected models**
+#### Activate Incremental Refresh option for selected models
 After performing the initial full-synchronization process, you're ready to begin adjusting the model refresh schedule to better accommodate users' interactions with reports and embedded analytics.  You'll want to enable the Incremental Refresh option for those models that contain data that must be refreshed more often than once a day.  For starters, it's best to keep the default latency settings used to trigger a full-synchronization.
 
 Use the following steps to turn-on the Incremental Refresh option for a given Entity Store model
