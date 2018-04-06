@@ -5,7 +5,7 @@ title: Post and print a packing slip with transportation delivery details for It
 description: This topic explains how to set up transportation delivery details and post a packing slip for Italy.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ When you ship goods to customers, the shipment must contain a transportation del
 
 ## Set up transportation delivery details
 
-To print the transportation document and shipping information on a packing slip, you must set up the transportation delivery details on the **Accounts receivable parameters** and **Form setup** pages.
+To print the TDD and shipping information on a packing slip, you must set up the transportation delivery details on the **Accounts receivable parameters** and **Form setup** pages.
 
 1. On the **Accounts receivable parameters** page, on the **Shipments** tab, in the **Carrier name** field, select the name of the carrier for the customer shipment.
 2. Set the **Use transportation document information on packing slip** option to **Yes** to show the transportation delivery details on the packing slip when it's posted.
