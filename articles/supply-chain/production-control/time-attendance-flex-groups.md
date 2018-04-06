@@ -142,6 +142,8 @@ To account for the flexible hours, you must also define a new pay type. For this
 |----------|--------------|
 | FlexCnt  | Flex counter |
 
+Next, follow these steps to set up a pay type and add lines of the new type to a pay profile.
+
 1. Select **Time and attendance** \> **Setup** \> **Groups** \> **Flex groups**, and then select **New**.
 2. In both the **Flex+** field and the **Flex-** field, specify the new pay type, **FlexCnt**.
 3. Select **Time and attendance** \> **Setup** \> **Pay agreements**, and then select **Agreement lines**.
