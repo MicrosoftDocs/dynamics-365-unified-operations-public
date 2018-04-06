@@ -625,7 +625,7 @@ In this case, you can use the following expression to get the label of the enume
 <ul>
 <li><strong>myID</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
 <li><strong>Users</strong> (<strong>Table records</strong> type), which refers to the UserInfo table</li>
-</li>
+</ul>
 When these data sources are defined, you can use an expression such as <strong>FILTER (Users, Users.objectId = myID)</strong> to filter the UserInfo table by the <strong>objectId</strong> field of the <strong>GUID</strong> data type.
 </td>
 </tr>
