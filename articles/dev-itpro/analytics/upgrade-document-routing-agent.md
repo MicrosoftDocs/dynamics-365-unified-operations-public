@@ -57,6 +57,6 @@ During the uninstallation process, you'll likely be prompted with the following 
 > [!Important]
 > Select **Automatically close applications and attempt to restart them after setup is complete.**
 
-## Reinstall the latest Document Routing Agent
-To reinstall the latest Document Rounting Agent, see [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md) available with your subscription.
+## Install the latest Document Routing Agent
+To install the latest Document Rounting Agent, see [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md) available with your subscription.
 
