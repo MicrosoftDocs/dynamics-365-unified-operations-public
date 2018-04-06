@@ -40,18 +40,15 @@ Submit a service request to the Dynamics Service Engineering team
 A service request is a ticket for the Dynamics Service Engineering (DSE) team to
 perform a pre-defined set of tasks on your environments.
 
->   **Note**: Do not use service requests for product issues. If you encounter a
->   situation that does not fall into any of the tasks described in this
->   article, please file a support ticket. For more information on support
->   tickets, see Find support for Microsoft Dynamics for Finance and Operations
+    > [!NOTE]
+    > Do not use service requests for product issues. If you encounter a situation that does not fall into any of the tasks described in this article, please file a support ticket. For more information on support tickets, see Find support for Microsoft Dynamics for Finance and Operations
 
 You can submit service requests directly by using Lifecycle Services (LCS). You
 can also view which requests have been submitted, executed and cancelled on your
 environments.
 
->   **Note**: Microsoft frequently reviews all incoming service requests. By
->   selecting the correct service request type for your scenario you help DSE to
->   execute the request in a timely manner.
+    > [!Note]
+    > Microsoft frequently reviews all incoming service requests. By selecting the correct service request type for your scenario you help DSE to execute the request in a timely manner.
 
 View service requests 
 ----------------------
@@ -60,19 +57,18 @@ There are two ways to view the service requests page.
 
 1.  On the project dashboard, in the **Environments** pane, select **Service
     requests.**
-
-![](media/0dc2b0a14dafe3282a9ea3434bef4ca4.png)
+![Service requests](./media/submit-service-request-01.png) 
 
 2.  On the LCS menu, click **Support**, and on the **Work items** page, select
-    the **Service requests** tab.
+    the **Service requests** tab.S
 
-![](media/2c537edf3dc67253ff0e24eb30549319.png)
+![Work items Service requests](media/submit-service-reuest-02.png)
 
 >   By default, the **Service requests** page contains all requests that are
 >   currently active or have been denied. You can toggle the filter to show
 >   cancelled and finished requests.
 
-![](media/60e34f86525c83ac0985cb652e6b4e3c.png)
+![Service request list](media/submit-service-request-03.png)
 
 >   After you have submitted a request, it will be in **Requested** status.
 >   Before the DSE team acts on the request, they may ask for clarification by
@@ -86,8 +82,8 @@ There are two ways to view the service requests page.
 >   entering a comment yourself. To view the details of a specific request, or
 >   to submit comments on a service request, click the **ID**.
 
->   **Note**: If you signed up for LCS Notifications, you will receive an email
->   when the status of a service request changes or a comment has been made.
+    > [!Note]
+    > If you signed up for LCS Notifications, you will receive an email when the status of a service request changes or a comment has been made.
 
 >   If you submit a service request to DSE to perform an action that is outside
 >   of their scope, the service request will be denied with a reason and a
@@ -123,7 +119,7 @@ point-in-time restore, and other potential needs as described below.
 1.  To create a new service request on demand, go to the **Service requests**
     page and click **Add**.
 
-![](media/2d962c0e943c5582caf07ad5dd68f68c.png)
+![Add service request](media/submit-service-reuest-03.png)
 
 2.  Select the service request type that you want to create. The options on the
     page are tailored to the specific type of service request that you selected.
@@ -131,10 +127,10 @@ point-in-time restore, and other potential needs as described below.
 -   **Database point-in-time restore request -** Use this request to restore a
     **non-production** database to a specific point in time. For details, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
 
->   **Note**:
 
--   To restore a **production** database during the **cutover phase**, follow
-    the process outlined below in the **Other request** section.
+    > [!Note]
+    > To restore a **production** database during the **cutover phase**, follow the process outlined below in the **Other request** section.
+    
 
 -   If you need to restore a **production** database when you are already **live
     in operations**, please submit a **support issue** through LCS.
@@ -143,10 +139,8 @@ point-in-time restore, and other potential needs as described below.
     production to sandbox, or from one sandbox to another sandbox. For details,
     see [Request a sandbox database refresh](../database/database-refresh.md).
 
->   **Note**:
-
--   To refresh a database from a sandbox to production during the **cutover
-    phase**, follow the process outlined below in the **Other request** section.
+    > [!Note]
+    > To refresh a database from a sandbox to production during the **cutover phase**, follow the process outlined below in the **Other request** section.
 
 -   **Other request -** Use the request type for any of the following actions to
     be performed by the DSE team:
