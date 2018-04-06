@@ -5,7 +5,7 @@ title: Upgrade the Document Routing Agent
 description: This topic explains how to upgrade the Document Routing Agent.
 author: TJVass
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,28 +31,32 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The **Platform Update 12 Release** for Dynamics 365 for Finance & Operations includes a number of significant enhancements in components used to deliver network printing capabilities. These updates include a redesigned print job queue management solution that allows the  service to scale to satisfy high volume printing requirements. Although, the Print Job Management Service is backward compatible with in-market versions of the Document Routing Agent (DRA) client, it is highly recommended that customers upgrade **ALL** existing DRA clients hosted on-premise.
+The Platform update 12 release of Dynamics 365 for Finance and Operations includes a number of significant enhancements in components used to deliver network printing capabilities. These updates include a redesigned print job queue management solution that allows the  service to scale to satisfy high volume printing requirements. Although, the Print Job Management service is backward compatible with in-market versions of the Document Routing Agent (DRA) client, it is highly recommended that customers upgrade **all** existing DRA clients hosted on-premises.
 
-Failure to upgrade existing installments of the **Document Routing Agent** to PU12 or later may result in the following:
-	• Observable performance degradation in the Dynamics 365 for Finance & Operations applications
-	• Potential loss of documents associated with orphaned print jobs
-	• Inconsistent handling for printed documents with custom margins
+Failure to upgrade existing installments of the Document Routing Agent to Platform update 12 or later may result in the following issues:
+- Observable performance degradation in the Dynamics 365 for Finance and Operations applications
+- Potential loss of documents associated with orphaned print jobs
+- Inconsistent handling for printed documents with custom margins
 
-IT Admins must perform the following steps on each domain resource used to host a DRA for Dynamics 365 for Finance & Operations.
+IT administrators must perform the following procedures on each domain resource used to host a DRA for Finance and Operations.
 
-### Getting started…
-To continue running the DRA as a windows service, you'll need both the user name and password of the domain account used to run the service.  This information must be available after completing the upgrade process.  The active service account information can be accessed in the open “Services” window and find the “Microsoft Dynamics 365 Document Routing Service”.
-![Services dialog](media/Services_dialog.png)
+## Get started
+To continue running the DRA as a windows service, you'll need both the user name and password of the domain account used to run the service.  This information must be available after completing the upgrade process.  The active service account information can be accessed in the **Services** for the **Microsoft Dynamics 365 Document Routing Service**.
 
-**Step 1) Uninstall existing Document Routing Agent (DRA)**
-Open the “Programs and Features” window, and then find and uninstall the “Microsoft Dynamics 365 for Finance and Operations: Document Routing” application.
-![Uninstall or change a program dialog](media/Programs_and_Features_dialog.png)
+![Services window](media/Services_dialog.png)
 
-During the uninstallation process, you'll likely be prompted with the following dialog…
+## Uninstall existing Document Routing Agent (DRA)
+Open the **Programs and Features** window, and then find and uninstall the **Microsoft Dynamics 365 for Finance and Operations: Document Routing** application.
+
+![Uninstall or change a program window](media/Programs_and_Features_dialog.png)
+
+During the uninstallation process, you'll likely be prompted with the following dialog:
+
 ![Document Routing Agent Uninstall dialog](media/Uninstall_DRA_services.png)
 
-**Important:** select “Automatically close applications and attempt to restart them after setup is complete.”
+> [!Important]
+> Select **Automatically close applications and attempt to restart them after setup is complete.**
 
-**Step 2) Reinstall the latest Document Routing Agent available in your deployment**
-Follow these steps to [Download and install the latest version of the Document Routing Agent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent) available with your subscription.
+## Reinstall the latest Document Routing Agent
+To reinstall the latest Document Rounting Agent, see [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md) available with your subscription.
 
