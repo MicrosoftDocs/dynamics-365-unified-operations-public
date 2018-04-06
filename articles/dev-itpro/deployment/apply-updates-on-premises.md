@@ -60,7 +60,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 
 ### Prerequisites
 - Before you begin, complete a full backup of the Management Reporter (MR), Microsoft Dynamics AX, and Microsoft SQL Server Reporting Services (SSRS databases). Although the code is restored through LCS, the database must be manually restored to help guarantee that there is no data loss.
-- Update you environment to the latest build of Platform update 12.
+- Update your environment to the latest build of Platform update 12.
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
@@ -125,8 +125,7 @@ After you review the logs and determine the cause of the failure, complete one o
 
     > [!IMPORTANT]
     > This option should **not** be used on a production environment. However, it can be used on a sandbox deployment to restore the environment to a healthy state. 
-
-    > [!NOTE]
+    
     > Because this option requires that you do a fresh deployment of the environment, you lose any updates that were previously applied. Any customizations and binary updates must be reapplied to the environment.
 
 ## Apply the latest platform update 
