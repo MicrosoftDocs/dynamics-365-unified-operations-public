@@ -57,8 +57,9 @@ This feature allows several warehouse workers to load inventory from the same or
 from different loads onto the same truck and the loads can then be fully or
 partially shipped.
 
-NOTE: To be able to load inventory from a load to a certain transport load and
-to partially ship the load, work must be generated with a loading class.
+[!NOTE] 
+To be able to load inventory from a load to a certain transport load and
+to partially ship the load, work must be generated with a loading class in a work template.
 Ordinary picking work of the type Picking cannot be loaded to a transport load
 such as a truck.
 
@@ -93,7 +94,8 @@ is added to the transport load can then be shipped using a mobile scanner.
 4.  On the **General** tab, in the **Directed by** field, select **Transport
     loading**.
 
-NOTE: To allow ship confirmation on a mobile scanner, select **Transport load**
+[!NOTE]
+To allow ship confirmation on a mobile scanner, select **Transport load**
 in the **Allowed ship confirmation type** field.
 
 **Ship confirm a transport load from the client**
