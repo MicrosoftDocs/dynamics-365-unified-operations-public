@@ -1603,14 +1603,15 @@
 ##### [Material substitution in manufacturing](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
-##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Enable the payroll process for time and attendance](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Configure a worker using the mobile job device](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
+#### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Pay based on registrations](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
