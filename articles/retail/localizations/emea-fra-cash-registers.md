@@ -187,7 +187,7 @@ Period grand total journals are maintained on the **Period grand total journal**
 
 The journal may then be calculated: shifts closed in the journal's period are selected, and totals are calculated for these shifts. You can view the journal's tax totals per sales tax code, as well as the shifts included in the journal.
 
-After being calculated, the journal may be closed. The closed journal may not be modified, and it is not possible to create another journal for a previous, the same, or intersecting period. The closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Retail Headquarters.
+After being calculated, the journal may be closed. The closed journal may not be modified, and it is not possible to create another journal for a previous, the same, or an intersecting period. The closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Retail Headquarters.
 
 The last closed journal for a store may be cancelled. After that, it is possible to create another journal for the same store and period.
 
@@ -210,7 +210,7 @@ You must also specify the following settings for France. Note that you need to r
 
 ### Set up the legal entity
 
-Make the following changes on the **Legal entities** page:
+You mast make the following changes on the **Legal entities** page:
 
 - **Bank account information > Routing number**: specify the VAT identifier of the organization
 - **Statutory reporting > NAF code**: specify the NAF code of the organization
@@ -226,14 +226,12 @@ You must also specify sales tax groups and enable the **Prices include sales tax
 
 ### Set up functionality profiles
 
-Enable auditing by setting the **Audit** checkbox.
+You must enable auditing by setting the **Audit** checkbox.
 
-Enforce daily shift closing:
+In order to enforce daily shift closing:
 
 - Set the **Enforce daily shift closing** checkbox;
 - Specify **Shift closing time** and **Shift closing interval (minutes)**.
-
-Set up required receipt numbering.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
