@@ -85,7 +85,7 @@ After performing the initial full-synchronization process, you're ready to begin
 3) Click the **Edit** button in the header
 4) Check the box in the **Incremental updates** column to enable Incremental refresh option
 
-**NOTE:**  Select a latency for those models that are most often used to deliver near real-time results.
+**NOTE:**  The Incremental refresh option is NOT available for all application Entity Store models.  Enhancements are being delivered as part of Platform Updates to expand the aggregate model patterns supported by the Incremental refresh process. An alert icon is placed next to models the still require a Full Synchronization.  Provide a lower latency for those models that are most often used to deliver near real-time results.
 
 Congratulations, you are now using the Incremental Refresh option to deliver more up-to-date information for Reporting and Analytical scenarios in Dynamics 365 for Finance & Operations.
 
