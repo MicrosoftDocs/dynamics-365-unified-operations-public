@@ -39,23 +39,24 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ## Open a new incident
 1. In LCS, navigate to the project for which you want to file a support incident. 
-1.  Click the **Support** tile.
+2.  Click the **Support** tile.
 ![Support menu](media/CPS1.png)
 
-2.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+3.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
 ![Support button](media/CPS2.png)
 
-3.  Select an issue category.
+4.  Select an issue category.
 ![Category](media/CPS5.png)
 
-4.  Select an issue area.
+5.  Select an issue area.
 ![Area](media/CPS6.png)
 
-5. In the **Describe your issue** window, provide additional information related to the issue.  
-  - Select **Yes** if the issue occured in an environment. Select the environment name. 
-  - Specify **Problem type** and **Problem area**. Per selected Problem type, you may see different Problem area options.
-  - Enter a short description of your issue in the **Title** field.
-  - Provide details about the issue detail and the steps needed to reproduce the error.
+6. In the **Describe your issue** window, provide additional information related to the issue.  
+
+  - If the issue occurred in an environment, select **Yes**, and then select the environment name. 
+  - Specify the **Problem type** and **Problem area**. Based on the selection in the **Problem type** field, you may see different Problem area options.
+  - In the **Title** field, enter a short description of the issue.
+  - Provide details about the issue and the steps needed to reproduce the error.
   - If applicable, enter an error message. 
   - To attach screenshots to illustrate the problem, click **Attach file from computer**.
  > [!NOTE]
@@ -64,17 +65,17 @@ To use the Support tool, you must have previously created a project in Lifecycle
  
  ![Detail](media/CPS7.png)
  
-6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
+7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
 ![Contact info](media/CPS8.png)
 
-7. Select the support contract and the severity level. 
+8. Select the support contract and the severity level. 
     
   - Support contracts for on-premises environments have a limited incident count. 
   - Support contracts for cloud environments have an unlimited incident count. 
   - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
 ![Contract and severity](media/CPS9.png)
 
-8. Click **Submit**. 
+9. Click **Submit**. 
 ![Completed](media/CPS10.png)
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
