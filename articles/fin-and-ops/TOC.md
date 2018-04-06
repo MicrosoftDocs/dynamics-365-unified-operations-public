@@ -813,13 +813,7 @@
 
 #### [Austria](../financials/localizations/austria.md)
 
-#### Belgium
-##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Create and transfer transactions to the BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat tax declaration](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM report setup](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Set up payment balance reporting](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgium](../financials/localizations/belgium.md)
 
 #### [The Czech Republic](../financials/localizations/czech-republic.md)
 
