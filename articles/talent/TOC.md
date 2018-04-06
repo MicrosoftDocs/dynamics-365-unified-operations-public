@@ -13,6 +13,7 @@
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Personnel actions FAQ](personnel-actions-faq.md)
+## [Formalize business processes](formalize-business-processes.md)
 ## [Use workflow to manage employee information](workflow-manage-employee-information.md)
 ## [Leave and absence overview](leave-absence-overview.md)
 

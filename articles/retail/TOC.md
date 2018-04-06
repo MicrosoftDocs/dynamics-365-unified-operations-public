@@ -31,7 +31,7 @@
 ## [Call center catalogs](call-center-catalogs.md)
 ## [Create a call center catalog](create-call-center-catalogs.md)
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
-## [Set up order processing options](set-up-order-processing-options.md)
+## [Set up a call center](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
 ## [Order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
@@ -49,6 +49,7 @@
 ## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
+## [Inventory lookup in the Point of Sale](product-variants-POS.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,7 +97,7 @@
 ## [Set up RFM analysis](set-up-rfm-analysis.md)
 
 # Discounts and price adjustments
-## [Retil sales price management](price-management.md)
+## [Retail sales price management](price-management.md)
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)

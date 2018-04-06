@@ -813,13 +813,7 @@
 
 #### [Austria](../financials/localizations/austria.md)
 
-#### Belgium
-##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Create and transfer transactions to the BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat tax declaration](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM report setup](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Set up payment balance reporting](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgium](../financials/localizations/belgium.md)
 
 #### [The Czech Republic](../financials/localizations/czech-republic.md)
 
@@ -897,6 +891,7 @@
 ##### [Depreciation of fixed assets](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Packing slip date verification on invoices](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Post and print a packing slip with transportation delivery details](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Split payment for invoices issued to the Public Administration](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Withholding tax](../financials/localizations/emea-ita-withholding-tax.md)
@@ -951,6 +946,7 @@
 ##### [Sales and purchase cycles](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
+##### [Export financial information for auditors in Sweden](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Import payment formats](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Cash registers](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Switzerland
@@ -1603,14 +1599,15 @@
 ##### [Material substitution in manufacturing](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
-##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Enable the payroll process for time and attendance](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Configure a worker using the mobile job device](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
+#### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Pay based on registrations](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
