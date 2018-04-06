@@ -171,7 +171,7 @@ There is an option to enforce daily shift closing in POS. A shift cannot last lo
 
 The information that is included on X and Z reports is based on French requirements:
 
-- Total sales, including only amounts for cash sales transactions and exclude issue gift card operations and prepayments
+- Total sales, including only amounts for cash sales transactions and excluding issue gift card operations and prepayments
 - Total returns
 - Cumulative grand total
 - Cumulative perpetual grand total
