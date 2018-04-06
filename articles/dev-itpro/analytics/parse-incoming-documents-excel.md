@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Parse incoming documents in Microsoft Excel
+# Parse incoming Microsoft Excel documents
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,9 +43,14 @@ To learn more about this feature, play the task guides **Design formats to impor
 
 Download the following files to complete the task guides mentioned above.
 
-- [Incoming file in .XLSX format - template](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Incoming file in .XLSX format - sample data](https://go.microsoft.com/fwlink/?linkid=862266)
+| Content description                        | File                                                                       |
+---------------------------------------------|----------------------------------------------------------------------------|
+| Incoming file in .XLSX format - template   | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)  |
+| Incoming file in .XLSX format - sample data| [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
 If you have not yet played the following task guide, [Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Dynamics 365 for Finance and Operation application, download the following file.
 
-- [ER model configuration](https://go.microsoft.com/fwlink/?linkid=862266)
+| Content description                        | File                                                                       |
+---------------------------------------------|----------------------------------------------------------------------------|
+| ER model configuration                     | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266)            |
+
