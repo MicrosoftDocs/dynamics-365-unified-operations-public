@@ -889,6 +889,7 @@
 ##### [Depreciation of fixed assets](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Packing slip date verification on invoices](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Post and print a packing slip with transportation delivery details](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Split payment for invoices issued to the Public Administration](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Withholding tax](../financials/localizations/emea-ita-withholding-tax.md)
