@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Parse incoming Microsoft Excel documents
+# Parse incoming Microsoft Excel files
 
 [!include[banner](../includes/banner.md)]
 
