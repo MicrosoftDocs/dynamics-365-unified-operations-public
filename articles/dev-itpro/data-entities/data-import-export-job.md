@@ -69,13 +69,15 @@ We recommend that you take the time to select an appropriate project category fo
 You can add specific entities to an import or export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
 
 ### Set the data format for the job
-When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. Many organizations start from the formats that are included by default in the demo data set. Here is a list of some of these formats:
+When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are other attributes too but, these are the key attributes that must be understood. The following table illustrates the valid combinations.
 
-- AX (for data that must be imported or exported in the same format that is used for Microsoft Dynamics 365 for Finance and Operations)
-- ColonSeparated
-- CSV
-- Excel
-- Package
+| **File Format**        | **Row/Column delimiter**                   | **XML Style**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-NA-                     |
+| XML                    | \-NA-                                      | XML-Element XML-Attribute |
+| Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
+
+
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.
