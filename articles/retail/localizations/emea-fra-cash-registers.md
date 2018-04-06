@@ -165,7 +165,7 @@ Receipts for France can include additional information that was implemented by u
 
 #### Restrincting shift duration
 
-There is an option to enforce daily shift closing in POS. A shift cannot last longer than a specified **Shift closing time**. The operator will start receiving warnings that the shift must be closed several minutes before the time; this is controlled by the **Shift closing interval (minutes)** parameter.
+There is an option to enforce daily shift closing in POS. A shift cannot last longer than the specified **Shift closing time**. The operator will start receiving warnings that the shift must be closed several minutes before this time; this is controlled by the **Shift closing interval (minutes)** parameter.
 
 #### X and Z reports
 
