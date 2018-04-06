@@ -86,7 +86,7 @@ To override the signing flow, follow these steps.
 2. Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
     ```
 
 > [!NOTE]
@@ -276,27 +276,27 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### SequentialSignatureRegister component
 
-1. Find the **Runtime.Extensions.SalesTransactionSignatureSample** project.
+1. Find the **Runtime.Extensions.SequentialSignatureRegister** project.
 2. Modify the **App.config** file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. The **certificateThumbprint** property is the only mandatory property. The value must be a string that is 40 characters long and that doesn't include any delimiters. For more information, see [How to retrieve the thumbprint of a certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
-        <configSections>
-            <section name="SalesTransactionSignature" type="Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample.Configuration.SalesTransactionSignatureConfigSection, Microsoft.Dynamics.Commerce.Runtime.SalesTransactionSignatureSample"/>
-        </configSections>
-        <SalesTransactionSignature certificateThumbprint="insert key certificateThumbprint here" certificateStoreLocation="LocalMachine" certificateStoreName="My"/>
-        <startup>
-            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
-        </startup>
+      <configSections>
+        <section name="SequentialSignatureRegister" type="Contoso.Commerce.Runtime.SequentialSignatureRegister.Configuration.SequentialSignatureRegisterConfigSection, Contoso.Commerce.Runtime.SequentialSignatureRegister"/>
+      </configSections>
+      <SequentialSignatureRegister certificateThumbprint="insert key certificateThumbprint here" certificateStoreLocation="LocalMachine" certificateStoreName="My"/>
+      <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
+      </startup>
     </configuration>
     ```
 
 3. Build the project.
-4. In the **Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+4. In the **Extensions.SequentialSignatureRegister\\bin\\Debug** folder, find the following files:
 
-    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
-    - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+    - The **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll** assembly file
+    - The **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** configuration file
 
 5. Copy the files to the CRT extension folder:
 
@@ -311,7 +311,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 7. Register the CRT change in the extension configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
     ```
 
 #### SequentialSignatureRegister.Contracts component
@@ -499,7 +499,7 @@ Follow these steps to create deployable packages that contain Retail components,
         > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section, earlier in this topic.
 
         ``` xml
-        <add source="assembly" value="Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
         ```
 
     2. In the **RetailProxy.MPOSOffline.ext.config** configuration file, add the following lines to the **composition** section.
@@ -537,7 +537,7 @@ Follow these steps to create deployable packages that contain Retail components,
         > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section, earlier in this topic.
 
         ``` xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
         ```
 
     3. Add the following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages.
