@@ -1,8 +1,8 @@
 ---
 
 # required metadata
-title: Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (8.0)
-description: This is a list of extensibility features that were implemented in the (8.0 release).
+title: Extensibility changes in the Dynamics 365 for Finance and Operations release 8.0
+description: This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations release 8.0.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/04/2018
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Platform update 15
 
 ---
 
-# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (8.0)
+# Extensibility changes in Dynamics 365 for Finance and Operations release 8.0
 
 [!include[banner](../includes/banner.md)]
 
 ## Hard-sealed application models
 
-With this release, all Microsoft's application models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
+In Dynamics 365 for Finance and Operations release 8.0, all of Microsoft's application models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
 
 The following table includes a list of models that are now hard-sealed with this release.
 
@@ -123,7 +123,7 @@ As a general practice, you use data methods on tables to raise events that can b
 
 The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
 
-| Type, Name, Data source and Method |
+| Type, name, data source, and method |
 | ----------------------|
 |Form ProjTableCreate.ProjTable.write|
 |Form ReturnTable.ReturnTable.leaveRecord|
@@ -133,9 +133,9 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Refactored methods to support extensibility
 
-These methods have been refactored to support extensibility through chain of command, delegates or by providing access to members.
+These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
 
-| Type, Name and Method |
+| Type, name, and method |
 | ----------------------|
 |Class AgreementConfirm_Sales.startConfirm|
 |Class AssetChangeGroup.updateAssetGroupInfo|
@@ -488,7 +488,7 @@ These methods have been refactored to support extensibility through chain of com
 
 ## Maps enabled for extensibility
 
-New patterns have been introduced for maps implementation that will allow you to add field and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
+New patterns have been introduced for maps implementation that will allow you to add fields and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
 
 The following table lists the maps and related tables where changes have been applied for enabling extensibility.
 
@@ -509,7 +509,7 @@ This release made minor improvements to the new model for adding inventory dimen
 |Form BOMDesigner should use field group for showing dimensions|
 |Form EcoResProductSearchLookup should use field group for showing dimensions|
 |Form FactureJournal_RU should use field group for showing dimensions|
-|Form InventDimParmFixed.InventDimensionXXFlag.Style is wrong|
+|Form InventDimParmFixed.InventDimensionXXFlag.Style is incorrect|
 |Form InventItemOrderSetup should use field group for showing dimensions|
 |Form InventTransferParmPick should use field group for showing dimensions|
 |Form InventTransferReleaseOrderPicking should use field group for showing dimensions|
@@ -525,7 +525,7 @@ This release made minor improvements to the new model for adding inventory dimen
 |Form PurchAgreementHistory should use field group for showing dimensions|
 |Form PurchComplementaryInvoice should use field group for showing dimensions|
 |Form PurchRFQCompareLineDimensions should use field group for showing dimensions|
-|Form PurchTable.TrackingDimesions has wrong spelling|
+|Form PurchTable.TrackingDimesions has incorrect spelling|
 |Form PurchVendorPortalAllResponse should use field group for showing dimensions|
 |Form PurchVendorPortalConfirmedOrders should use field group for showing dimensions|
 |Form PurchVendorPortalOriginalOrder should use field group for showing dimensions|
