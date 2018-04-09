@@ -64,9 +64,9 @@ You must create a new menu item that enables transport loads to be loaded. A tra
 4. On the **General** tab, in the **Directed by** field, select **Transport loading**.
 5. To enable shipment confirmation on a mobile scanner, in the **Allowed ship confirmation type** field, select **Transport load**.
 
-## Ship confirm a transport load from the client
+## Confirm shipment of a transport load from the client
 
-This setup lets you ship confirm a transport load that includes a full load or a partially loaded load.
+This setup lets you confirm a transport load that includes a full load or a partially loaded load to be shipped.
 
 1. Select **Warehouse management** \> **Loads** \> **Transport loads**.
 2. On the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Transport**.
