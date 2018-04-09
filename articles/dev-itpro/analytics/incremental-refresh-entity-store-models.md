@@ -65,7 +65,7 @@ Incremental refresh, available starting in platform update 16, is an option for 
 > [!Note]
 > We recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
 
-## Can have an entity store model use both incremental and full-refresh?  
+## Can I have an entity store model that uses both incremental and full-refresh?  
 Not at this time. We appreciate your patience as we work to expand the collection of aggregate data modelling patterns supported by the incremental refresh process.  Enhancements will be delivered routinely as part of future platform updates.
 
 Here's a screenshot of the entity store model administration experience using incremental refresh options.
