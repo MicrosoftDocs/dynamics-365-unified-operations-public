@@ -34,36 +34,36 @@ ms.dyn365.ops.version: Platform update 16
 
 [!include[banner](../includes/pre-release.md)] 
 
-TARGET: **Platform Update 16 or later**
-
-## What are Entity Store models?
+## What are entity store models?
 Entity Store models are used in Microsoft Dynamics 365 for Finance and Operations to provide customers with accessible views of business data for reporting and analytical tools.  Delivered as part of the application metadata, entity store models can be described as collections of data sets and relationships associated with a particular business process.  Models often contain a root data source and a series of related views that are useful in analyzing business activities and performance.  
 
 For instance, customer collections and leger activity are examples of business processes that require an entity store model for reporting and analytics.  Defined in the application metadata using aggregate measurements, these views are specifically designed to be the source of data for high-volume consumers like visualizations that are embedded in dashboards and electronic reports.
 
 The entity store functions as an intermediary cache between the Finance and Operations transactional database and the published end-points consumed by external reporting and analytical tooling like Excel or Power BI.com.  Entity store ensures the memory consumed by reporting and monitoring solutions do not interfere with resources supporting active user sessions in the web application.  The cloud-hosted service automatically updates entity store models based on a refresh schedule managed by the system administrator.  
 
-The following diagram illustrates the management of business data for Reporting & Analytics tooling.
+The following diagram illustrates the management of business data for reporting and analytics tooling.
+
 [![Incremental-refresh](./media/Incremental-refresh-data-flow-diagram.png)](./media/Incremental-refresh-data-flow-diagram.png) 
 
-Within the Customer Collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the Application Suite provides an Entity Store model for Customer Collections agents that can be used to conveniently visualize the Aging buckets of customers.  Because the data is sourced from the Entity Store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database. [Click here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store) for more information on the Entity Store.
+Within the customer collections model you'll find a group of data sets which provide views relevant to a person within a business responsible for tracking outstanding customer debts.  These views provide advanced calculations and aggregations known  as **Measures** that you can pivot on category fields referred to as **Dimensions**.  For instance, the application suite provides an entity store model for customer collections agents that can be used to conveniently visualize the aging buckets of customers.  Because the data is sourced from the entity store, reports bound to this model are able to visualize the data in milli-seconds instead of waiting minutes for the data to be processed in the transactional database. For more information about the entity store, see [Overview of Power BI integration with entity store](power-bi-integration-entity-store.md).
 
+## Managing entity store models
+By channeling reporting and analytical queries to the entity store, system administrators have the opportunity to control the time accuracy of the data.  For some data analytics scenarios, data that is delayed by 5-10 minutes will be acceptable by users.  However, for other types of reporting experiences, customers require near real-time results.  It's important to understand time requirements associated with the data before rolling out a refresh strategy for entity store models.
 
-## Managing Entity Store models
-By channeling reporting and analytical queries to the Entity Store, system administrators have the opportunity to control the time accuracy of the data.  For some data analytics scenarios, data that is delayed by 5-10 minutes will be acceptable by users.  However, for other types of reporting experiences the information customers require near real-time results.  It's important to understand time requirements associated with the data before rolling out an Entity Store model refresh strategy.
+System administrators use built-in tooling to manage the frequency at which entity store models are refreshed with the latest updates available in the transactional database.  Finance and Operations supports both a full and incremental synchronization strategy that may be used in concert to keep models up-to-date.
 
-System administrators use built-in tooling to manage the frequency at which Entity Store models are refreshed with the latest updates available in the transactional database.  Dynamics 365 for Finance & Operations supports both a Full and Incremental synchronization strategy that may be used in concert to keep models up-to-date.
+- **Full synchronization** - existing data in the entity store is deleted and the entire model is calculated and materialized during the background process.
 
-- **Full-Synchronization** - existing data in the Entity Store is deleted and the entire model is calculated and materialized during the background process
-- **Incremental refresh** - updates to transactional database including object deletes are synchronized with the Entity Store models
+- **Incremental refresh** - updates to transactional database including object deletes are synchronized with the entity store models.
 
-### Full-Synchronization
-While full-synchronization ensures that all aspects of an Entity Store model are refreshed the process could take several minutes for large data sets.  For this reason, it's recommended that full-refresh operations are only performed during non-business hours where possible.
+### Full synchronization
+While full synchronization ensures that all aspects of an entity store model are refreshed, the process could take several minutes for large data sets.  For this reason, it's recommended that full-refresh operations are only performed during non-business hours where possible.
 
 ### Incremental refresh
-Incremental refresh is now available as an option for updating Entity Store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an Entity Store refresh.  This includes Entity store model collections that can be uniquely identified using a field reference.  System Admins can use the Entity Store management tooling provided with Dynamics 365 for Finance & Operations to identify Entity Store models supported by the incremental delta detection logic.
+Incremental refresh is now available as an option for updating entity store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an entity store refresh.  This includes entity store model collections that can be uniquely identified using a field reference.  System administrators can use the entity store management tooling provided with Finance and Operations to identify entity store models supported by the incremental delta detection logic.
 
-**Note:** We recommend that you occasionally perform a Full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
+> [!Note]
+> We recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
 
 **Can have an Entity Store model that uses both incremental and full-refresh?**  
 Not at this time. We appreciate your patience as we work to expand the collection of aggregate data modelling patterns supported by the Incremental Refresh process.  Enhancements will be delivered routinely as part of future Platform Updates.
