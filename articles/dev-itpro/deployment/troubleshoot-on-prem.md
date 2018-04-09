@@ -724,36 +724,27 @@ Can't run scripts as is or will get following error:
 Following are steps that can be skipped or modified:
 
 - [Plan and acquire your certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#plancert)
-
-        -   Need to use same On-Premises local agent certificate
-        -   Can use same star certs (AOS SSL and SF)
-        -   Rest of certs should likely be different than existing environment
+    - Need to use same On-Premises local agent certificate
+    - Can use same star certs (AOS SSL and SF)
+    - Rest of certs should likely be different than existing environment
 
 - [Download setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
-
-        -   Source/zip already downloaded but should be in new folder as configuration of XML would be different as well as export scripts
+    - Source/zip already downloaded but should be in new folder as configuration of XML would be different as well as export scripts
 
 - [Set up a standalone Service Fabric cluster](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsfcluster)
-
-        -   Same as infrastructure scripts, should be in new folder as will have different configuration
+    - Same as infrastructure scripts, should be in new folder as will have different configuration
 
 - [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs)
-
-        -   This only needs to be done once for tenant
+    - This only needs to be done once for tenant
 
 - [Configure AD FS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureadfs)
-
-        -   Script 1/2/3 can be skipped as already done
-        -   Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
-        -   AD FS Manager \> AD FS \> Application Groups \> open "Microsoft Dynamics 365 for Operations On-premises"
-
-            -   Open Native application "Microsoft Dynamics 365 for Operations On-premises - Native application"
-
-                -   Add Redirect URI of new environment (DNS) and select Add button to include \> OK
-
-            -   Open Native application "Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application"
-
-                -   Add Redirect URI of new environment (DNS) and select Add button to include \> OK
+    - Script 1/2/3 can be skipped as already done
+    - Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
+    - AD FS Manager \> AD FS \> Application Groups \> open "Microsoft Dynamics 365 for Operations On-premises"
+        - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Native application"
+            - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
+        - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application"
+            - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
 
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog and then restart one of the AOS machines, it will re-run db sync and then deploy reports. 
