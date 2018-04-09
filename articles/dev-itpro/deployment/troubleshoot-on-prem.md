@@ -35,21 +35,6 @@ ms.dyn365.ops.version: Platform Update 8
 
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 
-## Error when signing in to on-premises environments
-
-PU12
-Please turn off the "Skype Integration" by navigating to the System Administration > Setup > Client performance options form.
-When navigating to the app, append ?debug=true as shown in the following example
-https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true
-
-PU8 and PU11
-A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
-
-`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
-
-## Service Fabric 
-Service Fabric is one of the initial components to install and configure for your on-premises deployment. Service Fabric is used by the Orchestrator, Application Object Server (AOS), SSRS and MR nodes.
-
 ## Access Service Fabric Explorer
 Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080.
 
@@ -59,11 +44,34 @@ To verify the address, note what was used in the section Create DNS zones and ad
 
 To access the site, the client certificate needs to be in `cert:\CurrentUser\My` (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
-## Locate logs for deployment diagnostics
+## Monitor deployment
 
-To find out what responsibility each of the orchestrator machines (on which the LocalAgent runs on) have, please see the ["how to identify nodes for log review" section](#stateful-and-stateless-services-how-to-identify-nodes-for-log-review).
+### Identify primary orchestrator
+To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
 
-### Deployment failure logs
+Note the primary node. For stateless services, or the rest of the applications, you need to check all of the nodes.
+
+### Monitor deployment locally
+Review the event viewer logs for the primary orchestrator machine and artifacts manager, and the bridge service
+AX-LocalAgent (overall installation process).
+
+- Modules
+    - Common
+    - Reportingservices
+    - AOS
+    - Financialreporting
+- Command
+    - Setup
+    - Dvt - Deployment verification test
+
+AX-SetupModuleEvents (additional details for Module details)
+AX-SetupInfrastructureEvents (additional details when interactions with Service Fabric)
+
+### Service Fabric explorer
+Note cluster overview and how many applications are healthy.
+
+### LCS
+Note deployment status.
 
 #### Orchestrator machine failures
 
@@ -71,16 +79,18 @@ During deployment, the primary nodes under `fabric:/LocalAgent/ArtifactsManager`
 
 Particularly for the `OrchestrationService`, the following event location should be studied in the case of a deployment failure during AX installation: `Applications and Services Logs\Microsoft\Dynamics\AX-SetupModuleEvents\Operational`.
 
-#### AX deployment failures
+#### AXSF (AOS) is not healthy 
 
-When AX is "InBuild" in Service Fabric, it will execute a DbSync if it finds that the database is not up to date. The DbSync can fail for a number of reasons, of which many are covered by this article.
+When status is "InBuild" in Service Fabric, it will execute a DbSync if it finds that the database is not up to date. The DbSync can fail for a number of reasons, of which many are covered by this article.
 
 To diagnose DbSync errors, please see the event log located at: `Applications and Services Logs\Microsoft\Dynamics\AX-DatabaseSynchronize\Operational`. The error details will help you find useful sections in this article.
 
-## Stateful and stateless services, how to identify nodes for log review
-To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
+## AOS machines
+**Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
+**Event Viewer** > **Custom Views** > **Administrative Events**
 
-Note the primary node. For stateless services, or the rest of the applications, you need to check all of the nodes.
+### To view the entire error message
+Click the **Details** tab to view the full error message.
 
 ## Timeout error received when creating a Service Fabric cluster
 Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fabric cluster in the appropriate setup topic and note any errors: 
@@ -123,11 +133,7 @@ To remove the Service Fabric cluster completely, execute:
 .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
 ```
 
-If this results in an error, remove a specific node on that cluster using the following script on the node:
-
-```powershell
-& "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1"
-```
+If this results in an error, remove a specific node on that cluster using the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
 
 Next, remove the folder `C:\ProgramData\SF`, if using the default. Otherwise, remove the specified folder.
 If you receive an access denied error, restart PowerShell or restart the machine.
@@ -148,10 +154,7 @@ Follow the steps below in order to start over:
         ```powershell
         .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
         ```
-    1. If any of the nodes fail to uninstall Service Fabric, run the following on each failing node:
-        ```powershell
-        & "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1"
-        ```
+    1. If any nodes fail, run the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
     1. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
         - If access denied, restart the machine and try again.
 1. Remove certificates.
@@ -168,9 +171,6 @@ Follow the steps below in order to start over:
     1. Download the latest local agent configuration, `localagent-config.json`.
 
 Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
-
-## Local agent
-Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations.
 
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
@@ -341,31 +341,7 @@ Complete the following steps to configure local agent with updated tenant.
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
     ```
-
-## Monitor deployment locally
-Review the event viewer logs for the primary orchestrator machine and artifacts manager, and the bridge service
-AX-LocalAgent (overall installation process).
-
-- Modules
-    - Common
-    - Reportingservices
-    - AOS
-    - Financialreporting
-- Command
-    - Setup
-    - Dvt - Deployment verification test
-
-AX-SetupModuleEvents (additional details for Module details)
-AX-SetupInfrastructureEvents (additional details when interactions with Service Fabric)
-
-## AOS machines
-**Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
-**Event Viewer** > **Custom Views** > **Administrative Events**
-
-## To view the entire error message
-Click the **Details** tab to view the full error message.
-
-## Service Fabric failing
+## Service Fabric logs
 Note the service that is failing and open the corresponding application directory. For example: `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`
 
 ## Encryption errors
@@ -679,3 +655,15 @@ To fix this issue and apply the package successfully, add dependent modules or r
 ### Package deployment works on one-box environment but not in the sandbox environment
 A one-box environment might have all of the modules installed and the sandbox only has the modules that are needed to run your production environment. If the package built in the dev environment takes a dependency on the modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment.
 To resolve this issue, look at all of the modules that you are dependent on and ensure that you do not pull any farm adapter or any other modules that are not needed in the production environment. The best practice is to take the package from the build box.
+
+## Error when signing in to on-premises environments
+
+PU12
+Please turn off the "Skype Integration" by navigating to the System Administration > Setup > Client performance options form.
+When navigating to the app, append ?debug=true as shown in the following example
+https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true
+
+PU8 and PU11
+A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
+
+`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
