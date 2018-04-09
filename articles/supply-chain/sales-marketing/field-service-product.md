@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronization of products from Finance and Operations to products in Field Service
-description: This topic discusses the templates and underlying task that are used for synchronization of Products from Finance and Operations to Field Service.
+title: Synchronize products in Finance and Operations to products in Field Service
+description: This topic discusses the templates and underlying task that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -30,53 +30,42 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-#  Synchronization of products from Finance and Operations to products in Field Service
+# Synchronize products in Finance and Operations to products in Field Service
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying task that are used for
-synchronization of Products from Finance and Operations to Products in Field Service.
+This topic discusses the templates and underlying task that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
-This used template is based on the **Products (Fin and Ops to Sales) – Direct**
-template from Prospect to Cash. Link on the detail on: [Products (Fin and Ops to
-Sales) –
-Direct](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct)
+The template that is used, **Field Service Products (Fin and Ops to Field Service)**, is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Fin and Ops to Sales) – Direct](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Only differences between the **Field Service Products (Fin and Ops to Field
-Service)** and **Products (Fin and Ops to Sales) – Direct** templates are
-described in the follow topic.
+This topic describes the only differences between the **Field Service Products (Fin and Ops to Field Service)** and **Products (Fin and Ops to Sales) – Direct** templates.
 
 ## Templates and tasks
 
 **Name of the template in Data integration:**
 
--   Field Service Products (Fin and Ops to Field Service)
+- Field Service Products (Fin and Ops to Field Service)
 
 **Name of the task in the Data integration project:**
 
--   Products - Products
+- Products - Products
 
-One additional mapping is added on the templates compared to the **Products (Fin
-and Ops to Sales) – Direct** template to ensure the required Field service
-specific field is set correctly:
+The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template. This mapping helps guarantee that the required Field Service–specific field is set correctly.
 
-          FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype 
+```
+FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
+```
 
-With the following value mapping:
+The following value mapping is used.
 
-          inventory    : 690970000
-          nonInventory : 690970001
-          service      : 690970002
+```
+inventory    : 690970000
+nonInventory : 690970001
+service      : 690970002
+```
 
+In Finance and Operations, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:
 
-In Finance and Operations, the **Field Service Product type** on the **Sellable
-released products** data entity is calculated as follows:
-
--   Inventory:    Product type = Product and Item model group, Stocked product =
-    True
-
--   NonInventory: Product type = Product and Item model group, Stocked product =
-    False
-
--   Service:      Product type = Service
-
+- **Inventory:** Product type = Product and Item model group, Stocked product = True
+- **NonInventory:** Product type = Product and Item model group, Stocked product = False
+- **Service:** Product type = Service
