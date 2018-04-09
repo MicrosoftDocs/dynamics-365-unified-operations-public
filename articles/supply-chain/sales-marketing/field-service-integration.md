@@ -245,4 +245,4 @@ Work order integration requires that you set up the sales origin. The sales orig
 
 ### Template mapping in Data integration
 
-(Will insert screenshots of the final mapping for the 5 tasks when the feature is finalized.)
+(Coming soon)
