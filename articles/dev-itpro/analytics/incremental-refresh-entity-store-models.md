@@ -72,4 +72,4 @@ Here's a screenshot of the entity store model administration experience using in
 
 [![Incremental-administration](./media/Entity-Store-model-management.png)](./media/Entity-Store-model-management.png) 
 
-System administrators use the entity store model management page to define the schedule for synchronizing data with the Finance and Operations transactional database.  For more information about using the entity store administration tools, see [Scheduling entity store model refreshes](scheduling-entity-store-model-refreshes.md).
+System administrators use the entity store model management page to define the schedule for synchronizing data with the Finance and Operations transactional database.  For more information about using the entity store administration tools, see [Scheduling entity store model updates](scheduling-entity-store-model-refreshes.md).
