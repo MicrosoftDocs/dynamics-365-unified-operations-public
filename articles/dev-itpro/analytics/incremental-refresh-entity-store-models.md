@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incremental refresh option for Entity Store models
-description: TBD
+description: Incremental refresh is an option for updating entity store models in response to changes in objects referenced by the model.
 author: tjvass
 manager: AnnBe
 ms.date: 04/09/2018
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ---
 
-# Incremental refresh option for Entity Store models
+# Incremental refresh option for entity store models
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,7 +60,7 @@ System administrators use built-in tooling to manage the frequency at which enti
 While full synchronization ensures that all aspects of an entity store model are refreshed, the process could take several minutes for large data sets.  For this reason, it's recommended that full-refresh operations are only performed during non-business hours where possible.
 
 ### Incremental refresh
-Incremental refresh is now available as an option for updating entity store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an entity store refresh.  This includes entity store model collections that can be uniquely identified using a field reference.  System administrators can use the entity store management tooling provided with Finance and Operations to identify entity store models supported by the incremental delta detection logic.
+Incremental refresh, available starting in platform update 16, is an option for updating entity store models in response to changes in objects referenced by the model.  Changes to root attributes within a model that are detected by the delta processing engine an entity store refresh.  This includes entity store model collections that can be uniquely identified using a field reference.  System administrators can use the entity store management tooling provided with Finance and Operations to identify entity store models supported by the incremental delta detection logic.
 
 > [!Note]
 > We recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
