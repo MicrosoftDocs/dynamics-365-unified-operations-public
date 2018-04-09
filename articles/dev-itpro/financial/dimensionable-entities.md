@@ -5,7 +5,7 @@ title: Make a backing table be consumable as a Financial dimension
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/16/2017
+ms.date: 04/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
@@ -40,6 +40,22 @@ This topic provides the steps that you need to follow if you want to make a back
 > If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
+
+> [!IMPORTANT]
+> Do not create a financial dimension that has values that are not reusable or cause one to one dimension value combinations. 
+ - Financial dimensions should be reusable values needed for transaction and analytical processes. Financial dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not chose a backing table that supplies identity data that represents high volatility when represented with other dimension values. This increases storage and processing costs and negatively impacts performance and analytical value. 
+ - Examples of highly volatile data include Timestamps and frequently incrementing identifiers such as:
+     - document
+     - order
+     - transaction
+     - check
+     - serial
+     - ticket
+     - license numbers 
+
+These are referred to as degenerate dimensions. Tracking of these values should be done outside of financial dimensions though other means via customizations on the transactional records needing the information, and not stored along with the financial dimension values.
+
+
 
 ## Step 1: Create a view
 
