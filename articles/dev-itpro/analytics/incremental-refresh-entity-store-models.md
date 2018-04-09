@@ -5,7 +5,7 @@ title: Incremental refresh option for Entity Store models
 description: TBD
 author: tjvass
 manager: AnnBe
-ms.date: 03/09/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,14 +32,16 @@ ms.dyn365.ops.version: Platform update 16
 
 [!include[banner](../includes/banner.md)]
 
+[!include[banner](../includes/pre-release.md)] 
+
 TARGET: **Platform Update 16 or later**
 
 ## What are Entity Store models?
-Entity Store models are used in Dynamics 365 for Finance & Operations to provide customers with accessible views of business data for Reporting & Analytical tools.  Delivered as part of the application metadata, Entity Store models can be described as collections of data sets and relationships associated with a particular business process.  Models often contain a root data source and a series of related views that are useful in analyzing business activities and performance.  
+Entity Store models are used in Microsoft Dynamics 365 for Finance and Operations to provide customers with accessible views of business data for reporting and analytical tools.  Delivered as part of the application metadata, entity store models can be described as collections of data sets and relationships associated with a particular business process.  Models often contain a root data source and a series of related views that are useful in analyzing business activities and performance.  
 
-For instance, Customer Collections and Leger Activity are examples of business processes that require an Entity Store model for reporting and analytics.  Defined in the application metadata using Aggregate Measurements, these views are specifically designed to be the source of data for high volume consumers like visualizations embedded in dashboards and electronic reports.
+For instance, customer collections and leger activity are examples of business processes that require an entity store model for reporting and analytics.  Defined in the application metadata using aggregate measurements, these views are specifically designed to be the source of data for high-volume consumers like visualizations that are embedded in dashboards and electronic reports.
 
-The Entity Store functions as an intermediary cache between the Dynamics 365 for Finance & Operations transactional database and the published end-points consumed by external reporting and analytical tooling like Excel or Power BI.com.  Entity Store ensures the memory consumed by reporting and monitoring solutions do not interfere with resources supporting active user sessions in the web application.  The Cloud hosted service automatically updates Entity Store models based on a refresh schedule managed by the System Administrator.  
+The entity store functions as an intermediary cache between the Finance and Operations transactional database and the published end-points consumed by external reporting and analytical tooling like Excel or Power BI.com.  Entity store ensures the memory consumed by reporting and monitoring solutions do not interfere with resources supporting active user sessions in the web application.  The cloud-hosted service automatically updates entity store models based on a refresh schedule managed by the system administrator.  
 
 The following diagram illustrates the management of business data for Reporting & Analytics tooling.
 [![Incremental-refresh](./media/Incremental-refresh-data-flow-diagram.png)](./media/Incremental-refresh-data-flow-diagram.png) 
