@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 
-## Access Service Fabric Explorer
+## Accessing Service Fabric Explorer
 Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080.
 
 To verify the address, note what was used in the section Create DNS zones and add A records in the appropriate topic for your environment: 
@@ -49,26 +49,42 @@ To access the site, the client certificate needs to be in `cert:\CurrentUser\My`
 ### Identify primary orchestrator
 To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
 
-Note the primary node. For stateless services, or the rest of the applications, you need to check all of the nodes.
+The primary node will be displayed. For stateless services, or the rest of the applications, you need to check all of the nodes.
 
-### Monitor deployment locally
-Review the event viewer logs for the primary orchestrator machine and artifacts manager, and the bridge service
-AX-LocalAgent (overall installation process).
+Note the following:
 
-- Modules
-    - Common
-    - Reportingservices
-    - AOS
-    - Financialreporting
-- Command
-    - Setup
-    - Dvt - Deployment verification test
+- OrchestrationService orchestrates the deployment and servicing actions for Dynamics 365 for Finance and Operations 
+- ArtifactsManager downloads files from azure cloud storage into the on-prem share and also unzips the files into the required format 
 
-AX-SetupModuleEvents (additional details for Module details)
-AX-SetupInfrastructureEvents (additional details when interactions with Service Fabric)
+### Review orchestrator event logs
+From primary OrchestrationService orchestrator machine, review Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-LocalAgent
+
+Note that you will need to click the **Details** tab to view the full error message.
+
+Modules to be installed:
+- Common
+- Reportingservices
+- AOS
+- Financialreporting
+
+Commands to be run:
+- Setup
+- Dvt (Deployment verification test)
+- Cleanup (used for servicing and deleting environment)
+
+Folders that may contain additional information:
+- AX-SetupModuleEvents 
+- AX-SetupInfrastructureEvents 
+- AX-BridgeService 
 
 ### Service Fabric explorer
-Note cluster overview and how many applications are healthy.
+Note state of cluster, application, and nodes.
+
+#### AXSF (AOS) is not healthy 
+
+For AXSFType (AXService) if status of “InBuild” is displayed for period of time review DbSync status and other events from AOS machines. 
+
+To diagnose DbSync errors, please see the event log located at: `Applications and Services Logs\Microsoft\Dynamics\AX-DatabaseSynchronize\Operational`. The error details will help you find useful sections in this article.
 
 ### LCS
 Note deployment status.
@@ -79,18 +95,9 @@ During deployment, the primary nodes under `fabric:/LocalAgent/ArtifactsManager`
 
 Particularly for the `OrchestrationService`, the following event location should be studied in the case of a deployment failure during AX installation: `Applications and Services Logs\Microsoft\Dynamics\AX-SetupModuleEvents\Operational`.
 
-#### AXSF (AOS) is not healthy 
-
-When status is "InBuild" in Service Fabric, it will execute a DbSync if it finds that the database is not up to date. The DbSync can fail for a number of reasons, of which many are covered by this article.
-
-To diagnose DbSync errors, please see the event log located at: `Applications and Services Logs\Microsoft\Dynamics\AX-DatabaseSynchronize\Operational`. The error details will help you find useful sections in this article.
-
-## AOS machines
-**Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
-**Event Viewer** > **Custom Views** > **Administrative Events**
-
-### To view the entire error message
-Click the **Details** tab to view the full error message.
+### AOS machines
+- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
+- **Event Viewer** > **Custom Views** > **Administrative Events**
 
 ## Timeout error received when creating a Service Fabric cluster
 Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fabric cluster in the appropriate setup topic and note any errors: 
@@ -100,8 +107,10 @@ Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fab
 Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all service fabric nodes.
 Verify that the Service Fabric Server certificate has the ACL for Network Service on all service fabric nodes.
 
+Check anti-virus exclusions noted in [Enviornment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+
 ## Time out while waiting for Installer Service to complete for machine x.x.x.x
-You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must be on the same machine and ConfigTemplate.xml must be correctly defined.
+You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
 We recommend that you use Lifecycle Services (LCS) to remove or clean up deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.
@@ -157,7 +166,7 @@ Follow the steps below in order to start over:
     1. If any nodes fail, run the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
     1. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
         - If access denied, restart the machine and try again.
-1. Remove certificates.
+1. Optional: Remove or update certificates as needed.
     1. Remove old certificates from all AOS, BI, ORCH and DC nodes.
         - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
