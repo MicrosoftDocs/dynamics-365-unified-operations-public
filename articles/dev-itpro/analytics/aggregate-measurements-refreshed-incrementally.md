@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scheduling entity store model updates
-description: TBD
+description: This topic explains how system administratiors can use built-in tools to manage the frequency at which data models are refreshed with the latest updates available in the transactional database.
 author: tjvass
 manager: AnnBe
 ms.date: 04/09/2018
@@ -78,17 +78,16 @@ Here's a screen shot of the dialog used to manage the frequency of the increment
 
 Once the processing engine is initialized, you're ready to begin enabling select models for incremental refresh.
 
-#### Activate Incremental Refresh option for selected models
-After performing the initial full-synchronization process, you're ready to begin adjusting the model refresh schedule to better accommodate users' interactions with reports and embedded analytics.  You'll want to enable the Incremental Refresh option for those models that contain data that must be refreshed more often than once a day.  For starters, it's best to keep the default latency settings used to trigger a full-synchronization.  Use the following steps to turn-on the Incremental Refresh option for a given Entity Store model
+#### Activate the incremental refresh option for selected models
+After performing the initial full-synchronization process, you're ready to begin adjusting the model refresh schedule to better accommodate users' interactions with reports and embedded analytics.  You'll want to enable the incremental refresh option for those models that contain data that must be refreshed more often than once a day.  For starters, it's best to keep the default latency settings used to trigger a full-synchronization.  Use the following steps to turn-on the incremental refresh option for a given entity store model.
 
-**Steps:**
-1) Navigate to the **Entity Store** management form **[System administration > Setup > Entity Store]**
-2) Select the Entity Store models related to all areas accessible in the application
-3) Click the **Edit** button in the header
-4) Check the box in the **Incremental updates** column to enable Incremental refresh option
+1. Navigate to the **Entity Store** page.
+2. Select the entity store models related to all areas accessible in the application.
+3. Click the **Edit** button at the top of the page.
+4. Check the box in the **Incremental updates** column to enable the incremental refresh option.
 
-**NOTE:**  The Incremental refresh option is NOT available for all application Entity Store models.  Enhancements are being delivered as part of Platform Updates to expand the aggregate model patterns supported by the Incremental refresh process. An alert icon is placed next to models the still require a Full Synchronization.  Provide a lower latency for those models that are most often used to deliver near real-time results.
+> [!Note]
+> The incremental refresh option is **not** available for all application entity store models.  Enhancements are being delivered as part of platform updates to expand the aggregate model patterns supported by the incremental refresh process. An alert icon is placed next to models the still require a full synchronization.  Provide a lower latency for those models that are most often used to deliver near real-time results.
 
-Congratulations, you are now using the Incremental Refresh option to deliver more up-to-date information for Reporting and Analytical scenarios in Dynamics 365 for Finance & Operations.
 
 
