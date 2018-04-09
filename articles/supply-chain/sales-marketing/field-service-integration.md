@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Microsoft Dynamics 365 for Field Service to sales order in Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -245,4 +245,4 @@ Work order integration requires that you set up the sales origin. The sales orig
 
 ### Template mapping in Data integration
 
-(Will insert screenshots of the final mapping for the 5 tasks when the feature is finalized.)
+(Coming soon)

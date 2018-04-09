@@ -1846,6 +1846,7 @@
 #### [Scan bar codes using a camera in Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Piece picking confirmation](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [Product confirmation for cluster picking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Partial shipment of a transport load](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Inventory counting
