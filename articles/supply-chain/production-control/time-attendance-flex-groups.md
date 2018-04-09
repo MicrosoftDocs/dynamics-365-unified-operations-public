@@ -52,20 +52,20 @@ You can use flex groups to set the following rules and principles for a worker's
 
 You can use rules for flex regulations to define flex limits, or the minimum and maximum number of hours that are allowed in the worker's flex account. The flex limits are set up on the flex group. When the flex limits are exceeded, a worker's flex balance and pay can be adjusted.
 
-If a worker's allowed flex minimum is exceeded (that is, if the number of hours in the flex account is below the specified minimum), you can make the following adjustments to the worker's flex balance by making a flex regulation:
+If a worker's allowed flex minimum is exceeded (that is, if the number of hours in the flex account is below the specified minimum), you can use these methods to adjust the worker's flex balance by making a flex regulation:
 
 - The worker's flex account can be adjusted to the specified allowed minimum, but without deducting the worker's pay for the number of hours that the flex account is below the allowed minimum.
 - The worker's pay can be deducted for the number of hours that the flex account is below the allowed minimum. This deduction is done by generating pay items for a specific pay type that have a negative or positive pay unit.
 
-If the worker's allowed flex maximum is exceeded, you can make the following adjustments by making a flex regulation:
+If the worker's allowed flex maximum is exceeded, you can use these methods to adjust the worker's flex balance by making a flex regulation:
 
 - The worker's flex account can be adjusted back to the specified allowed maximum, but without compensating the worker's pay for the number of hours that the worker worked above the allowed maximum.
 - The number of hours that the worker worked above the allowed maximum can be converted to pay. This conversion is done by generating pay items for a specific pay type.
 
-You can make flex regulations at the following times:
+You can adjust a flex balance at the following times:
 
 - When a payment file that is based on payroll data is exported by using the **Transfer pay** job. The payroll data is generated when you transfer the worker's registration from the **Approve** page.
-- When the **Flex adjustment** job is processed.
+- When the **Adjust flex balance** job is processed.
 
 > [!NOTE]
 > Flex regulations don't occur during the daily approval and transfer of worker registrations on the **Approve** page.
