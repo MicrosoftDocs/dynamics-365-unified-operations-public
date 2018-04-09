@@ -43,9 +43,9 @@ By following these steps, your view will automatically appear in the **Use value
 
 > [**!IMPORTANT**]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
-- •	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+- 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
-•	Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
+Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
      - Documents
      - Orders
      - Transactions
