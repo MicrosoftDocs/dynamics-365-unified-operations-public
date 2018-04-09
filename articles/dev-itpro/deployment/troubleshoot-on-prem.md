@@ -175,6 +175,12 @@ Now start again with the appropriate deployment documentation for [Platform upda
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
 
+Or, run the following PowerShell command:
+
+```powershell
+.\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
+```
+
 ## Install, upgrade, or uninstall local agent
 Local agent installation is discussed in the Set up and deploy on-premises environments topic for the appropriate platform update: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md) 
@@ -406,6 +412,9 @@ If none of the above works:
 
 ## MR
 Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.
+
+> [!Note]
+> To get the latest manifest and .dll, go to the WP folder in the agent file share. (This share was created in the "Set up file storage" section of [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile). For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
 
 ```powershell
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"}
@@ -667,3 +676,155 @@ PU8 and PU11
 A Skype API issue has been discovered that is impacting the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of your URL, as shown in the following example:
 
 `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
+
+## How to restart applications (ex. AOS)
+Go to Service Fabric and expand Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code. Click on ellipse and Restart (enter Code when prompted) 
+
+## Upgrading Service Fabric
+Service Fabric Explorer will eventually show a message as follows:
+
+Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
+The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.
+
+Since minimum requirement is 1 SSRS and 1 MR node, need to pass in a parameter to skip PreUpgradeSafetyCheck
+
+Note following steps to upgrade in PowerShell
+
+```powershell
+#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
+  
+#Get latest version that was downloaded
+Get-ServiceFabricRegisteredClusterCodeVersion 
+
+#Enter version from above for CodePackageVersion.
+#Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
+#May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
+Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback **-UpgradeReplicaSetCheckTimeout 30** 
+
+#Get upgrade status
+Get-ServiceFabricClusterUpgrade
+```
+
+-   <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting>
+
+-   To see when new SF comes out -
+    <https://blogs.msdn.microsoft.com/azureservicefabric/>
+
+-   If receive warning in Service Fabric Explorer after upgrading then note node
+    and restart via expanding nodes and code restart “How to restart
+    applications (ex. AOS)” section
+
+    ![](media/acaee565984adad770b08c9eff932d8d.jpg)
+
+    >   Machine generated alternative text: Microsoft Azure A Waming Search
+    >   Cluster v A Cluster v A Applications Service Fabric Explorer Error
+    >   REFRESH RATE IOS Application fabric:/AXSF OFF FAST ACTIONS ESSENTIALS
+    >   Name fabric:/AXSF Health State A Waming Status Ready DETAILS DEPLOYMENTS
+    >   A p Reset All MANIFEST \> AXBootstrapperAppType v A AXSFType Application
+    >   Type AXSFType Version 1.0.20180315210714 \> \> \> \> \> \>
+    >   FinancialReportingType Loca IAgentType MonitoringAgentAppType-Agent
+    >   MonitoringAgentAppType-OPNA RTGatewayAppType ReportingService v Nodes \>
+    >   AOSI \> AOS2 v AOS3 v A fabric•./AXSF v A AxsF v Code Packages Code \>
+    >   Instances UNHEALTHY EVALUATIONS Search list Kind DeployedApplications
+    >   DeployedApplication DeployedServicePackages Deployed Servicepackage
+    >   Event SERVICES Health State Y A Warning A Warning A Warning A Warning A
+    >   Warning Description Unhealthy deployed applications: 33% (1/3),
+    >   MaxPercentunhealthyDeployedAppIications=0%. Unhealthy deployed
+    >   application: ApplicationName=fabric:/AXSF, NodeName='AOS3',
+    >   AggregatedHeaIthState='Waming'. Unhealthy deployed service packages:
+    >   100% (1/1). Unhealthy deployed service package:
+    >   ApplicationName='fabric:/AXSF, ServiceManifestName='AXSF,
+    >   ServicePackageActivationld=", NodeName='AOS3', AggregatedHealthState
+    >   —'Warning Unhealthy event: HealthState=Warning•,
+    >   ConsiderWarningAsError=false. There was an error during Codepackage
+    >   activation.The service host terminated with exit code:2148734499
+
+1.  2nd or side by side deployment (sandbox and production)
+
+    1.  Can't run scripts as is or will get following error
+
+>   .\\Publish-ADFSApplicationGroup.ps1 -HostUrl
+>   '<https://ax.d365ffo.onprem.contoso.com>'
+
+>   New-AdfsApplicationGroup : MSIS9908: The application group identifier must
+>   be unique in AD FS configuration.
+
+-   Following are steps that can be skipped or modified
+
+    -   2. Plan and acquire your certificates
+
+        -   Need to use same On-Premises local agent certificate
+
+        -   Can use same star certs (AOS SSL and SF)
+
+        -   Rest of certs should likely be different than existing environment
+
+    -   6. Download setup scripts from LCS
+
+        -   Source/zip already downloaded but should be in new folder as
+            configuration of XML would be different as well as export scripts
+
+    -   10. Set up a standalone Service Fabric cluster
+
+        -   Same as infrastructure scripts, should be in new folder as will have
+            different configuration
+
+    -   11. Configure LCS connectivity for the tenant
+
+        -   This only needs to be done once for tenant
+
+    -   17. Configure AD FS
+
+        -   Script 1/2/3 can be skipped as already done
+
+        -   Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new
+            hosturl so do following manually
+
+        -   AD FS Manager \> AD FS \> Application Groups \> open "Microsoft
+            Dynamics 365 for Operations On-premises"
+
+            -   Open Native application "Microsoft Dynamics 365 for Operations
+                On-premises - Native application"
+
+                -   Add Redirect URI of new environment (DNS) and select Add
+                    button to include \> OK
+
+            -   Open Native application "Microsoft Dynamics 365 for Operations
+                On-premises - Financial Reporting - Native application"
+
+                -   Add Redirect URI of new environment (DNS) and select Add
+                    button to include \> OK
+
+1.  “Redeploy SSRS reports”
+
+    1.  Delete the entry in SF.SyncLog and then restart one of the AOS machines,
+        it will re-run db sync and then deploy reports. 
+
+2.  “Add axdbadmin to tempdb after a SQL restart via SQL stored procedure”
+
+>   \-----
+
+>   USE [master]
+
+>   GO
+
+>   CREATE procedure [dbo].[CREATETEMPDBPERMISSIONS] as begin exec ('USE tempdb;
+>   declare \@dbaccesscount int; exec sp_grantlogin ''axdbadmin''; select
+>   \@dbaccesscount = COUNT(\*) from master..syslogins where name =
+>   ''axdbadmin''; if (\@dbaccesscount \<\> 0) exec sp_grantdbaccess
+>   ''axdbadmin''; ALTER USER [axdbadmin] WITH DEFAULT_SCHEMA=dbo; EXEC
+>   sp_addrolemember N''db_datareader'', N''axdbadmin''; EXEC sp_addrolemember
+>   N''db_datawriter'', N''axdbadmin''; EXEC sp_addrolemember N''db_ddladmin'',
+>   N''axdbadmin''; exec sp_grantdbaccess ''contoso\\svc-AXSF\$''; ALTER USER
+>   [contoso\\svc-AXSF\$] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember
+>   N''db_datareader'', N''contoso\\svc-AXSF\$''; EXEC sp_addrolemember
+>   N''db_datawriter'', N''contoso\\svc-AXSF\$''; EXEC sp_addrolemember
+>   N''db_ddladmin'', N''contoso\\svc-AXSF\$'';') end
+
+>   GO
+
+>   EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
+
+>   \-----
+
