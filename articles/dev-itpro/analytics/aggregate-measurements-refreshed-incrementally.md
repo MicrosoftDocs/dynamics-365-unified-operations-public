@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Scheduling Entity Store model updates
+title: Scheduling entity store model updates
 description: TBD
 author: tjvass
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,32 +28,34 @@ ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ---
 
-# Scheduling Entity Store model updates
+# Scheduling entity store model updates
 
 [!include[banner](../includes/banner.md)]
 
-TARGET:  **Platform Update 16 or later**
+[!include[banner](../includes/pre-release.md)] 
 
-### REFRSHING MODELS
-System administrators use built-in tools to manage the frequency at which data models are refreshed with the latest updates available in the transactional database.  Dynamics 365 for Finance & Operations supports both a Full and Incremental synchronization strategy that may be used in concert to keep models up-to-date:
-- **Full-Synchronization** - existing data in the Entity Store is deleted and the entire model is materialized during the background process
-- **Incremental refresh** - updates to transactional database including object deletes are synchronized with the Entity Store models
+## Refreshing models
+System administrators use built-in tools to manage the frequency at which data models are refreshed with the latest updates available in the transactional database.  Microsoft Dynamics 365 for Finance and Operations supports both a full and incremental synchronization strategy that may be used in concert to keep models up-to-date:
+
+- **Full synchronization** - Existing data in the entity store is deleted and the entire model is materialized during the background process.
+
+- **Incremental refresh** - Updates to the transactional database, including object deletes, are synchronized with the entity store models.
 	
-It is the responsibility of the System administrator to manage the Entity Store model refresh schedule based on the unique needs of the deployment.  The built-in tooling provides detailed messaging based on run-time analysis of the models to help identify cases where a full-synchronization is required to ensure the entire model is synchronized with the latest updates available in the Dynamics 365 for Finance & Operations transactional database.
+It is the responsibility of the system administrator to manage the entity store model refresh schedule based on the unique needs of the deployment.  The built-in tooling provides detailed messaging based on run-time analysis of the models to help identify cases where a full-synchronization is required to ensure the entire model is synchronized with the latest updates available in the Finance and Operations transactional database.
 
-### ADMINISTRATOR TASKS
-This section describes the activities associated with managing Entity Store models using the built-in administration tools.
+## Administrator tasks
+This section describes the activities associated with managing entity store models using the built-in administration tools.
 
 #### Performing a full synchronization
-The first thing you'll want to do after bringing the environment online is identify the models which are required by the application.  It's incorrect to assume that all of the models are necessary to avoid wasting time updating unused models.  See the article [Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) in Dynamics 365 for Finance & Operations to familiarize yourself with the out-of-box solutions available in the Application Suite.
+The first thing you'll want to do after bringing the environment online is identify the models which are required by the application.  It's incorrect to assume that all of the models are necessary to avoid wasting time updating unused models.  See [Power BI content](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page) in Finance and Operations to familiarize yourself with the out-of-box solutions available in the application suite.
 
-**RECOMMENDATION:**  We highly recommend that you **DISABLE** synchronization for both the **ProjecCostRevenueAnalysis** and **VendPaymentBIMeasure** Entity Store models.  Both of these application models have been flagged for poor performance during the synchronization process.  Use the following steps to perform a full-synchronization of the Entity Store for the models used by the application.
+> [!Important]
+> We highly recommend that you **disable** synchronization for both the **ProjecCostRevenueAnalysis** and **VendPaymentBIMeasure** entity store models.  Both of these application models have been flagged for poor performance during the synchronization process.  Use the following steps to perform a full-synchronization of the entity store for the models used by the application.
 
-**Steps:**
-1) Navigate to the **Entity Store** management form **[System administration > Setup > Entity Store]**
-2) Select the Entity Store models related to all areas accessible in the application
-3) Click the **Refresh** button in the header
-4) Click the **OK** button in the **Configure refresh** dialog
+1. Navigate to the **Entity Store** page (**System administration > Setup > Entity Store**).
+2. Select the entity store models related to all areas accessible in the application.
+3. Click the **Refresh** button at the top of the page.
+4. Click the **OK** button in the **Configure refresh** dialog.
 	
 This process may take up to an hour depending on the size and breadth of the application deployment.  You can track the status of the background synchronization process by visiting the Batch jobs area and searching for jobs with a description like **Deploy measurement**.  Once complete, you can begin to use the Entity Store model for Embedded Analytical Workspaces & Reports as well as reports hosted on PowerBI.com.
 
