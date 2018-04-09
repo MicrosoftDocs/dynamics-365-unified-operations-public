@@ -2,8 +2,8 @@
 # required metadata
 
 title: Synchronization of work orders in Field Service to sales orders in Finance and Operations
-description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Microsoft Dynamics 365 
-for Field Service to sales order in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 
+for Field Service to sales in Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
