@@ -65,11 +65,11 @@ Incremental refresh is now available as an option for updating entity store mode
 > [!Note]
 > We recommend that you occasionally perform a full synchronization for all models including those that take advantage of the incremental refresh option to ensure all details of the model are up-to-date.
 
-**Can have an Entity Store model that uses both incremental and full-refresh?**  
-Not at this time. We appreciate your patience as we work to expand the collection of aggregate data modelling patterns supported by the Incremental Refresh process.  Enhancements will be delivered routinely as part of future Platform Updates.
+## Can have an entity store model use both incremental and full-refresh?  
+Not at this time. We appreciate your patience as we work to expand the collection of aggregate data modelling patterns supported by the incremental refresh process.  Enhancements will be delivered routinely as part of future platform updates.
 
-Here's a screenshot of the Entity Store model administration experience using Incremental refresh options…
+Here's a screenshot of the entity store model administration experience using incremental refresh options.
+
 [![Incremental-administration](./media/Entity-Store-model-management.png)](./media/Entity-Store-model-management.png) 
 
-
-System Administrators use the Entity Store model management form to define the schedule for synchronizing data with the Dynamics 365 for Finance & Operations transactional database.  For more information on using the Entity Store admin tools, review the related article [Scheduling Entity Store model refreshes](scheduling-entity-store-model-refreshes.md).
+System administrators use the entity store model management page to define the schedule for synchronizing data with the Finance and Operations transactional database.  For more information about using the entity store administration tools, see [Scheduling entity store model refreshes](scheduling-entity-store-model-refreshes.md).
