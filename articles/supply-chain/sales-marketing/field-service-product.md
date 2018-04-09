@@ -2,8 +2,7 @@
 # required metadata
 
 title: Synchronization of Finance and Operations Products to Field Service Products
-description: This topic discusses the templates and underlying task that are used for
-synchronization of Products from Finance and Operations to Products in Field Service.
+description: This topic discusses the templates and underlying task that are used for synchronization of Products from Finance and Operations to Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
