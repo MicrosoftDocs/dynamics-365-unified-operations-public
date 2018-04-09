@@ -42,7 +42,8 @@ This topic provides the steps that you need to follow if you want to make a back
 
 Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
      - Documents
-     - Orders
+     - Sales orders
+     - Purchase orders
      - Transactions
      - Checks
      - Serials
