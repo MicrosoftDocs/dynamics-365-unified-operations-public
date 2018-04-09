@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronization of work orders in Field Service to sales orders in Finance and Operations
+# Synchronize work orders from Field Service to sales orders in Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
