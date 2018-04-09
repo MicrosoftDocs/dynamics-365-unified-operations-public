@@ -723,25 +723,25 @@ Can't run scripts as is or will get following error:
 
 Following are steps that can be skipped or modified:
 
--   2. Plan and acquire your certificates
+- [Plan and acquire your certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#plancert)
 
         -   Need to use same On-Premises local agent certificate
         -   Can use same star certs (AOS SSL and SF)
         -   Rest of certs should likely be different than existing environment
 
--   6. Download setup scripts from LCS
+- [Download setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
 
         -   Source/zip already downloaded but should be in new folder as configuration of XML would be different as well as export scripts
 
--   10. Set up a standalone Service Fabric cluster
+- [Set up a standalone Service Fabric cluster](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsfcluster)
 
         -   Same as infrastructure scripts, should be in new folder as will have different configuration
 
--   11. Configure LCS connectivity for the tenant
+- [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs)
 
         -   This only needs to be done once for tenant
 
--   17. Configure AD FS
+- [Configure AD FS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureadfs)
 
         -   Script 1/2/3 can be skipped as already done
         -   Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
