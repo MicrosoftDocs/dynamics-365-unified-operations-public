@@ -65,7 +65,7 @@ Designing models and model elements is no different than designing other types o
 
 Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md) for more details.
 
-Do no use build environments for development activities and keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they are updated with a Microsoft binary or platform updates from LCS.
+Do not use build environments for development activities and keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they are updated with a Microsoft binary or platform updates from LCS.
 
 ### What strategy do I use for test automation?
 
