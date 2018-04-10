@@ -43,7 +43,7 @@ Account structures require the main account. The main account does not need to b
 > [!NOTE] 
 > If you plan to budget against a financial dimension, it will need to be part of an account structure. Budgeting does not currently utilize advanced rules.
 
-# Example
+## Example
 To illustrate a best practice for setting up an account structure, lets assume that a company wants to track their balance sheet accounts (100000..399999) at the account and Business unit financial dimension level. For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center. If they make a sale, they also like to track Customer. Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger. One for Balance sheet accounts, and one for Profit and Loss accounts. To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.
 
 **Balance sheet account structure**
@@ -54,9 +54,49 @@ To illustrate a best practice for setting up an account structure, lets assume t
 
 **Profit and loss account structure**
 
-|Main account          | Business Unit    |Main account          | Business Unit    |
+|Main account          | Business Unit    |Department          | Cost center    |
 |----------------------|-----------|----------------------|-----------|
 |400000..999999 | *;” “|*;” “|*;” “|*;” “|
+
+**Advanced rule for adding a Customer**
+Criteria: Where Main account is between 400000 and 499999, then add customer. It cannot be left blank.
+
+|Customer         |
+|-----------------|
+|* |
+
+In this simplified example, all values and blank are allowed so * and “ “ are used.
+
+## Segments and allowed values
+The segments and allowed values section provides a grid like experience for entering the rules that will be followed on validation during posting. You can type directly in the cells of the grid, import it from Excel, or use the Allowed value details section to guide you through it.
+
+The Allowed value details section guides you through creating criteria using Operators such as begins with, is between and includes and many others.
+
+[![Allow values](./media/account.png)](./media/account.png) 
+
+## More than 7 criteria needed
+
+If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the Allowed value details section that the **+Add new** criteria is not longer active after the 7th criteria. This is due to many factors such as column width, how the data is stored, performance of the Allowed value details control, and usability.  To continue to add additional criteria, click on **Duplicate in the Segment** and **Allowed values section**. This will copy the criteria to a new line. You can then type over or modify the **Allowed value details** section.
+
+## Best practices
+When setting up your account structures there are some best practices you can follow. However, this is just guidance and a holistic discussion about your business, growth plan and maintenance plan should be considered as part of that discussion.
+
+•	Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
+
+•	Re-use account structures as much as possible to reduce maintenance across your legal entities.
+
+•	For variations across legal entities, consider using advanced rules so that account structures can be re-used.
+
+•	When defining allowed values, use ranges and wildcards as much as possible. This not only allows you to grow and change without maintenance, but the system also performs more ideally with this configuration.
+
+•	Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be hard to manage and often leads to user error during maintenance that can make the system unable to post.
+
+## Account structure activation
+When you are happy with your setup or change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
+
+
+
+
 
 
 
