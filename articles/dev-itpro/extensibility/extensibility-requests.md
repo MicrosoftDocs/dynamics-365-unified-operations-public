@@ -38,7 +38,7 @@ Microsoft Dynamics 365 for Finance and Operations exclusively uses extensions to
 You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. To enable the same business requirements without overlayering, we have added many extension capabilities and expect to add more going forward. For some customizations that were done with overlayering, you will need to log requests, to make us aware of what you need.
 
 ## What we are doing
-We've been working toward an extension-based customization model for some time. Over the past several releases we have been gradually sealing models. The release of Dynamics 365 for Finance and Operations release 8.0 completes the sealing. From this release forward, only extension-based customizations are allowed. 
+We've been working toward an extension-based customization model for some time. Over the past several releases we have been gradually sealing models. As of Dynamics 365 for Finance and Operations release 8.0, this completes the sealing. From this release forward, only extension-based customizations are allowed. 
 
 In future releases, we will be adding even more extensibility capabilities to enable ISVs and VARs to deliver complete business solutions. We will prioritize these on a customer-by-customer basis with frequent releases.
 
