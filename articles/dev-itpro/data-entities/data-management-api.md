@@ -105,6 +105,8 @@ HTTP/1.1 200 OK
 ### ImportFromPackage
 The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Azure Blob storage that is associated with your implementation of Finance and Operations. For on-premises deployments, the import will be initiated from the local storage to which the file was uploaded previously.
 
+Note: Starting platform update 12, ImportFromPackage will support composite entity. However, the limitation is to have only one composite entity in a package.
+
 ```CSharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
 BODY
@@ -138,7 +140,7 @@ HTTP/1.1 200 OK
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
-| bool overwrite           | Set this parameter to **True** if data should be overwritten. Otherwise, set it to **False**. |
+| bool overwrite           | This must always be set to **True** when using a composite entity in a package. Otherwise, set it to **False** |
 | string legalEntityId     | The legal entity for the data import. |             
 
 **Output parameters**
