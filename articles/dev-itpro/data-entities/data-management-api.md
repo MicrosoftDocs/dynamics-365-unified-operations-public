@@ -140,7 +140,7 @@ HTTP/1.1 200 OK
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
-| bool overwrite           | This must always be set to **True** when using composite entity in a package. Otherwise, always **False** |
+| bool overwrite           | This must always be set to **True** when using a composite entity in a package. Otherwise, set it to **False** |
 | string legalEntityId     | The legal entity for the data import. |             
 
 **Output parameters**
