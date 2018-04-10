@@ -40,7 +40,7 @@ You will discover that some customizations, which were possible with overlayerin
 ## What we are doing
 We've been working toward an extension-based customization model for some time. Over the past several releases we have been gradually sealing models. As of Dynamics 365 for Finance and Operations release 8.0, this completes the sealing. From this release forward, only extension-based customizations are allowed. 
 
-In future releases, we will be adding even more extensibility capabilities to enable ISVs and VARs to deliver complete business solutions. We will prioritize these on a customer-by-customer basis with frequent releases.
+In future releases, we will be adding even more extensibility capabilities to enable independent software vendors (ISVs) and value-added resellers (VARs) to deliver complete business solutions. We will prioritize these on a customer-by-customer basis with frequent releases.
 
 ## How do I log extensibility requests?
 If you discover a customization that you cannot implement as an extension, you must log a request to Microsoft to ensure appropriate extension support is added to the product for your scenario.
