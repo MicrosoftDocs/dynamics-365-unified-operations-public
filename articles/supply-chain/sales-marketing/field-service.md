@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 for Field Service. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
