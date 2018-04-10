@@ -35,12 +35,12 @@ ms.dyn365.ops.version: Platform update 9
 
 Microsoft Dynamics 365 for Finance and Operations exclusively uses extensions to customize the product. We're aware that this change impacts our entire partner ecosystem. We recommend that you read the resources listed on the [Extensibility home page](extensibility-home-page.md). These resources answer many questions and prepare you for building solutions using extensions.
 
-You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. We have added many extension capabilities and expect to add more going forward, to enable the same business requirements without overlayering. For some customizations that were done with overlayering, you will need to log requests, to make us aware what you need.
+You will discover that some customizations, which were possible with overlayering, cannot be done through extensions. To enable the same business requirements without overlayering, we have added many extension capabilities and expect to add more going forward. For some customizations that were done with overlayering, you will need to log requests, to make us aware of what you need.
 
 ## What we are doing
-We've been working toward an extension-based customization model for some time now. Over the past several releases we have been gradually sealing models. The (April 2018) completes the sealing. From this release forward only extension based customizations are allowed. 
+We've been working toward an extension-based customization model for some time. Over the past several releases we have been gradually sealing models. The release of Dynamics 365 for Finance and Operations release 8.0 completes the sealing. From this release forward, only extension-based customizations are allowed. 
 
-In future releases, we will be adding even more extensibility capabilites to enable ISV and VARs to deliver complete business solutions.  We will prioritize these on a customer-by-customer basis with frequent releases.
+In future releases, we will be adding even more extensibility capabilities to enable ISVs and VARs to deliver complete business solutions. We will prioritize these on a customer-by-customer basis with frequent releases.
 
 ## How do I log extensibility requests?
 If you discover a customization that you cannot implement as an extension, you must log a request to Microsoft to ensure appropriate extension support is added to the product for your scenario.
@@ -55,25 +55,26 @@ Because we are essentially sharing deep roadmap information, we require that org
 Partners only need to join the feedback community once and not for each of their employees. To enroll in the feedback community:
 
 1. [Provide organization profile information.](http://aka.ms/feedbackcommunitynomination)
-2. [Sign the NDA, Input agreement, code and data sharing policies.](http://aka.ms/feedbackcommunityagreement)
+2. [Sign the NDA, input agreement, code and data sharing policies.](http://aka.ms/feedbackcommunityagreement)
 
 As a partner, after you have signed the agreements, people from your organization will be able to access the feedback Yammer groups. We recommend that you join the Yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
 
 > [!IMPORTANT]
-> Coming soon:  Extensibility requests will be able to be submitted via Lifecycle Services.  In the meantime, please submit your request to daxcf@microsoft.com
+> In a future release, extensibility requests will be able to be submitted via Lifecycle Services (LCS). In the meantime, please submit your request to daxcf@microsoft.com.
 
 When you log extensibility requests, please enter detailed information about what you need to become enabled for extensibility, and include information on what it is you need to extend. This will help Microsoft to be efficient in addressing your requests. You are  welcome to propose how Microsoft could enable the functionality that you need in the standard application in a way that effectively addresses your needs.
 
-Please note: We will not release extensibility requests as hotfixes.  
+> [!NOTE]
+> We will not release extensibility requests as hotfixes.  
 
 Extensibility requests are exclusive for Dynamics 365 for Finance and Operations only. We are not planning to accommodate extensibility requests for Dynamics AX 2012 or earlier releases.
 
 ## When will my extensibility requests be enabled?
 
-Extensibility requests are logged to a backlog. Microsoft engineers prioritize all requests, and then work on them in priority order. Please note that Microsoft is not guaranteeing requests will be fulfilled. Especially requests that are intrusive by nature, will not be supported, as they will prevent seamless upgrade.
+Extensibility requests are logged to a backlog. Microsoft engineers prioritize all requests, and then work on them in priority order. Please note that Microsoft is not ensuring that all requests will be fulfilled. In particular, requests that are intrusive by nature will not be supported, as they will prevent seamless upgrade.
 
 ## How will extensibility requests be made available to deploy?
-After the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 8.0 release we plan to release frequent application updates with new extensibility requests; following the same release cadence as the platform. 
+After Dynamics 365 for Finance and Operations release 8.0, we plan to release frequent application updates with new extensibility requests. This will follow the same release cadence as platform updates. 
 
 ## Still have questions?
 
