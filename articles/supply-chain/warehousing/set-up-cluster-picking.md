@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-**Set up cluster picking**
+# Set up cluster picking
 
 This topic describes how to enable workers to use their mobile devices to group
 picking work into clusters, so that they can pick items from a single location
 for multiple work orders at the same time. This is called cluster picking.
 
-**About cluster picking**
+## About cluster picking
 
 After work orders are released to the warehouse, the worker can use a mobile
 device to assign the orders to a cluster. The cluster will organize the picking
@@ -50,7 +50,7 @@ cluster status to Passed. When the worker uses a mobile device to indicate that
 the picking and put away work is completed, the shipment or load must be
 confirmed in the Microsoft Dynamics AX client.
 
-**Set up cluster picking**
+## Set up cluster picking
 
 To enable cluster picking, you must set up the following:
 
@@ -71,7 +71,7 @@ To enable cluster picking, you must set up the following:
 -   **Warehouse management parameters** – Specify the number sequence to use if
     you want to generate identifiers for clusters.
 
-**Set up a cluster profile**
+## Set up a cluster profile**
 
 To set up a cluster profile, follow these steps:
 
@@ -99,13 +99,13 @@ To set up a cluster profile, follow these steps:
 | **Ascending**  | Picking work is sequenced in an ascending order based on the sorting criteria. For example, if you use the WMSLocationId field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 4 first. |
 | **Descending** | Picking work is sequenced in a descending order based on the sorting criteria. For example, if you use the WMSLocationId field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 1 first. |
 
-Item confirmation
+## Item confirmation
 
 When cluster picking is applied, item confirmation is crucial to verify the
 items that are added to clusters. You can verify items in cluster picking during
 the cluster picking process. The setup is based on the product bar code setup.
 
-Set up item verification with cluster picking
+### Set up item verification with cluster picking
 
 1.  On a mobile device menu item, open the setup form for work confirmation:
     **Warehouse management** \> **Warehouse management** \> **Setup** \>
