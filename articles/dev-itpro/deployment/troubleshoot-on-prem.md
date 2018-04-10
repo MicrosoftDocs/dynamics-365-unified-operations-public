@@ -47,7 +47,7 @@ To access the site, the client certificate needs to be in `cert:\CurrentUser\My`
 ## Monitor deployment
 
 ### Identify primary orchestrator
-To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application example) LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
+To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application example) LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **(guid)**.
 
 The primary node will be displayed. For stateless services, or the rest of the applications, you need to check all of the nodes.
 
@@ -92,6 +92,9 @@ To diagnose errors, please see the event logs located at:
 
 - Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-DatabaseSynchronize
 - Event Viewer > Custom Views > Administrative Events
+
+#### Service Fabric logs
+Additional details about Service Fabric applications can be found in log files at: `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`
 
 ### LCS
 Note the current deployment status for this environment in LCS.
@@ -328,7 +331,7 @@ Complete the following steps to resolve the error.
         uswelcs1lcm.blob.core.windows.net:443
         uswedpl1catalog.blob.core.windows.net:443 
 
-## How to restart applications (ex. AOS)
+## How to restart applications (example AOS)
 Go to Service Fabric and expand Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code. Click on ellipse and Restart (enter Code when prompted) 
 
 ## Upgrading Service Fabric
@@ -361,7 +364,7 @@ Get-ServiceFabricClusterUpgrade
 
 To see when new Service Fabric release comes out, see <https://blogs.msdn.microsoft.com/azureservicefabric/>
 
-If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes, application, and code restart “How to restart applications (example AOS)” section
+If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes, application, and code restart. See [How to restart applications (example AOS)](troubleshoot-on-prem.md#howtorestartapplications(exampleAOS) for instructions.
  
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
@@ -389,8 +392,6 @@ Complete the following steps to configure local agent with updated tenant.
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
     ```
-## Service Fabric logs
-Note the service that is failing and open the corresponding application directory. For example: `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`
 
 ## Encryption errors
 Some encryption error examples include, AXBootstrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
@@ -453,7 +454,7 @@ If none of the above works:
     Go back to LCS and reconfigure the environment.
 
 ## MR
-Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.
+Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine and run the following commands. To determine what machine is the primary instance, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **(guid)**.
 
 > [!Note]
 > If results in the event viewer are not displayed correct (for example, if words are truncated), get the latest manifest and .dll file. To get the latest manifest and .dll, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile). For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
@@ -494,6 +495,25 @@ If the thumbprints do not follow the list of requirements, you must redeploy fro
 
 ### Remote name can't be resolved
 The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
+
+### Error on ImportDefaultReports 
+Issue: MR reports are checked out during deployment.
+
+If MR reports are checked out, deployment will fail. To see if reports are checked out, run the following select statements on the  FinancialReporting database:
+
+select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null 
+select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not null 
+select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
+
+You can find out the user who has objects checked out by running the following select statement:
+
+select * from Reporting.SecurityUser where UserID = '' 
+
+To resolve via SQL, update the above tables and set checkedoutto null, using the following commands:
+
+update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null 
+update Reporting.ControlRowMaster set checkedoutto = null where checkedoutto is not null 
+update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto is not null  
 
 ## axdbadmin is unable to connect to the database server SQL-LS.contoso.com
 
@@ -583,7 +603,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 > [!NOTE]
 > SID in AAD environment (online) is a hash of network alias and network domain. SID in AD environment (on-premises) is a hash of network alias and identify provider.
 
-If you are still unable to log in and you are receiving the error, "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds", see the section, [ADFS](#ADFS) in this topic.
+If you are still unable to log in and you are receiving the error, "You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds", see the section, [ADFS](troubleshoot-on-prem.md#adfs) in this topic.
 
 ## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
 If you receive one of the following errors:
@@ -711,7 +731,7 @@ A Skype API issue has been discovered that is impacting the ability to sign in t
 
 `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
-## For additional deployments (sandbox and production)
+## For additional deployments (for example, two sandbox deployments or sandbox and production deployment)
 
 The following error will display when you deploy an additional environment:
 
@@ -721,7 +741,7 @@ Following are steps that can be skipped or modified:
 
 - [Plan and acquire your certificates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#plancert)
     - Need to use same On-Premises local agent certificate
-    - Can use same star certs (AOS SSL and SF)
+    - Can use same star certs (AOS SSL and Service Fabric)
     - Rest of certs should likely be different than existing environment
 
 - [Download setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
@@ -762,3 +782,15 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 \-----
 
+## Update to existing credential with KeyId ‘<key>’ is not allowed.
+Update to existing credential with KeyId ‘<key>’ is not allowed.
+
+New-AzureRmADSpCredential : Update to existing credential with KeyId '<key>' is not allowed.
+At C:\InfrastructureScripts\Add-CertToServicePrincipal.ps1:62 char:1
+ New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...
+ CategoryInfo : InvalidOperation: (:) [New-AzureRmADSpCredential], Exception
+ FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand
+
+```powershell
+Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key> 
+```
