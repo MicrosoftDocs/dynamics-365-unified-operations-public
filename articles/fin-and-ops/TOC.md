@@ -166,7 +166,9 @@
 ###### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
-###### [Synchronize work orders from Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
+###### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
