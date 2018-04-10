@@ -58,11 +58,11 @@ FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 
 The following value mapping is used.
 
-```
-inventory    : 690970000
-nonInventory : 690970001
-service      : 690970002
-```
+|  Product type | Value      |   
+|---------------|----------- |
+|  Inventory    | 690970000  | 
+|  NonInventory | 690970001  | 
+|  Service      | 690970002  |   
 
 In Finance and Operations, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:
 
