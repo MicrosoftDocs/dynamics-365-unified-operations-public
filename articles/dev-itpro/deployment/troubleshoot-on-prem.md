@@ -47,7 +47,7 @@ To access the site, the client certificate needs to be in `cert:\CurrentUser\My`
 ## Monitor deployment
 
 ### Identify primary orchestrator
-To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application ex) LocalAgentType** > **fabric:/LocalAgent** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
+To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application example) LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **Fabric:/LocalAgent/ArtifactsManager** > **(guid)**.
 
 The primary node will be displayed. For stateless services, or the rest of the applications, you need to check all of the nodes.
 
@@ -81,11 +81,12 @@ Folders that contain additional information:
 Note state of cluster, application, and nodes. For information about accessing the Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessingservicefabricexplorer).
 
 #### Error "Partition is below target replica or instance count"
-This is not a root error. This error means that the status of each node is not ready. For AXSF/AOS, the status could still be inBuild.
-Navigate to the Event Viewer to get root error.
+This is not a root error. This error means that the status of each node is not ready. For AXSFType (AOS), the status could still be InBuild.
+
+Navigate to the Event Viewer on those machines to see the latest activity.
 
 #### AXSFType 
-For AXSFType (AXService) if status of “InBuild” is displayed for period of time review DbSync status and other events from AOS machines. 
+For AXSFType (AOS) if status of “InBuild” is displayed for period of time review DbSync status and other events from AOS machines. 
 
 To diagnose errors, please see the event logs located at:
 
@@ -109,14 +110,14 @@ Check anti-virus exclusions noted in [Enviornment setup](https://docs.microsoft.
 Only one node type for each IP address (machine) is supported. Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
-We recommend that you use Lifecycle Services (LCS) to remove or clean up deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.
+We recommend that you use Lifecycle Services (LCS) to remove or clean up deployments. However, if needed, you can use Service Fabric Explorer to remove an application.
 
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm.
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm.
 
 ## Remove all applications from Service Fabric
 
-The following script will remove and unprovision all SF applications, except the LocalAgent and Monitoring agent for the LocalAgent. It must be executed on a orchestrator VM.
+The following script will remove and unprovision all Service Fabric applications, except the LocalAgent and Monitoring agent for the LocalAgent. It must be executed on a orchestrator VM.
 
 ```powershell
 $applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring')
@@ -162,7 +163,7 @@ Follow the steps below in order to start over:
     1. If any nodes fail, run the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
     1. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
         - If access denied, restart the machine and try again.
-1. Optional: Remove or update certificates as needed.
+1. Remove or update certificates, as needed.
     1. Remove old certificates from all AOS, BI, ORCH and DC nodes.
         - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
@@ -175,7 +176,7 @@ Follow the steps below in order to start over:
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
 
-Deploy again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
+Deploy again following the deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
@@ -203,7 +204,7 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 > The cleanup command doesn't remove any of the files that were placed in the file share. The file share can be reused.
 
 ## Error occurs when starting up local agent services
-If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification should no longer be enabled. This is done by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
+If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification is enabled. This is disabled by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
 ## "Validation in progress" message displays for several minutes in LCS
 Complete the following steps to troubleshoot general issues with local agent validation.
@@ -216,6 +217,8 @@ Complete the following steps to troubleshoot general issues with local agent val
     - **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-LocalAgent**
 
 ## Local agent errors
+
+### Issue
 The following are errors that you may encounter:
 
 - "Unable to process commands" or "Unable to get the channel information"
@@ -246,7 +249,7 @@ Complete the following steps to resolve the error.
 5. Specify the correct certificate in the local agent configuration and download the configuration file again.
 6. Install the local agent again with the new configuration file.
 
-**Error**
+### Error
 Access to the path `'\\...\agent\assets\StandAloneSetup-76308-1.zip'` is denied.
 
 **Reason**
@@ -268,7 +271,7 @@ Complete the following steps to resolve the error.
 5. Specify the correct file share in local agent configuration and download the configuration file again.
 6. Install local agent again with the new configuration file.
 
-**Error**
+### Error
 Login failed for user 'D365\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. [CLIENT: 10.0.2.23]
 
 **Reason**
@@ -289,7 +292,7 @@ Complete the following steps to resolve the error.
 4. If the first three steps do not resolve the issue, manually remove the local agent user from the SQL server and the database, and then re-run the Initialize-Database script.
 5. If you recreate a user in AD, remember that the SID will change. Remove the previous SID for the user and add a new SID.
 
-**Additional scenario**
+### Issue
 The local agent user can't connect to the SQL server or database.
 
 **Steps**
@@ -305,7 +308,7 @@ Complete the following steps to resolve the error.
 
   These scripts do not work with **always-on** setup. The database needs to be created first in the primary node and then replicated.
 
-**Error**
+### Error
 RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
 
 **Reason**
@@ -345,7 +348,7 @@ Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential
 #Get latest version that was downloaded
 Get-ServiceFabricRegisteredClusterCodeVersion 
 
-#Enter version from above for CodePackageVersion.
+#Enter latest version from above for CodePackageVersion.
 #Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
 #May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
 Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
@@ -356,9 +359,9 @@ Get-ServiceFabricClusterUpgrade
 
 <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting>
 
-To see when new SF comes out - <https://blogs.msdn.microsoft.com/azureservicefabric/>
+To see when new Service Fabric release comes out, see <https://blogs.msdn.microsoft.com/azureservicefabric/>
 
-If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes and code restart “How to restart applications (ex. AOS)” section
+If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes, application, and code restart “How to restart applications (example AOS)” section
  
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
