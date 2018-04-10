@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Synchronize work orders from Field Service to sales orders in Finance and Operations
+title: Synchronize work orders in Field Service to sales orders in Finance and Operations
 description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Finance and Operations. 
 author: ChristianRytt
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize work orders from Field Service to sales orders in Finance and Operations
+# Synchronize work orders in Field Service to sales orders in Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
