@@ -43,18 +43,18 @@ These introductory topics contain general information about customization, inclu
 
 + [Application extensibility plans](extensibility-roadmap.md)
 + [Extensibility requests](extensibility-requests.md) 
-+ [FAQ](app-sealing-faq.md) 
++ [Extensibility FAQ](app-sealing-faq.md) 
 
 ## What's new
 This section lists the extensibility-related updates that have been made since July 2017.
 
 + [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
 + [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 8.0](Changes-80.md)
++ [Extensibility changes in Dynamics 365 for Finance and Operations release 8.0](Changes-80.md)
 
 ## Getting started
 
-Getting started gets you going with building extensions and migrating a current solution, based on overlayered code, to an extension-based solution. This section includes hands on labs that you walk through simple customizations.
+Getting started gets you going with building extensions and migrating a current solution, based on overlayered code, to an extension-based solution. This section includes hands on labs that walk you through simple customizations.
 
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
@@ -109,7 +109,7 @@ Here is where you find "How do I?" topics on customizing specific object types o
 
 Information on customization is also shared through various blogs where different topics are discussed. This section includes reference to some of these blogs.
 
-+ [Extending Dynamics 365 for Operations](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
++ [Extending Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
 + [Extending class state](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
 + [Extension methods](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
 + [Extensible base enumerations](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
