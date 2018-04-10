@@ -71,7 +71,7 @@ To enable cluster picking, you must set up the following:
 -   **Warehouse management parameters** – Specify the number sequence to use if
     you want to generate identifiers for clusters.
 
-## Set up a cluster profile**
+## Set up a cluster profile
 
 To set up a cluster profile, follow these steps:
 
