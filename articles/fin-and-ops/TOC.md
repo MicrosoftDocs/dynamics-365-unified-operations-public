@@ -1610,6 +1610,7 @@
 #### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
 ##### [Pay based on registrations](../supply-chain/production-control/pay-based-on-registrations.md)
 ##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Flex groups](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
