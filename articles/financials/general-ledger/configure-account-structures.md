@@ -84,6 +84,8 @@ If you have more than 7 criteria that are needed, you can continue adding them o
  
 To continue to add additional criteria, click on **Duplicate in the Segment** and **Allowed values section**. This will copy the criteria to a new line. You can then type over or modify the **Allowed value details** section.
 
+(LINK TO VIDEO THAT WILL BE CREATED)
+
 ## Best practices
 When setting up your account structures there are some best practices you can follow. However, this is just guidance and a holistic discussion about your business, growth plan and maintenance plan should be considered as part of that discussion.
 
