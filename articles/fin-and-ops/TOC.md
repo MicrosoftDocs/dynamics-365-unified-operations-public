@@ -165,8 +165,10 @@
 ###### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service-integration.md)
-###### [Synchronize work orders from Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
+###### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
+###### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
@@ -1610,6 +1612,7 @@
 #### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
 ##### [Pay based on registrations](../supply-chain/production-control/pay-based-on-registrations.md)
 ##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Flex groups](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)

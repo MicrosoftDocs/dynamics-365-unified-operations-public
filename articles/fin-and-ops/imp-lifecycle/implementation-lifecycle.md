@@ -39,6 +39,7 @@ These topics describe the programs, tools, and processes available related to th
 
 ## Tools
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
+
 [Overview of Lifecycle Services for Customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## Processes

@@ -399,7 +399,7 @@ In this case, you can use the following expression to get the label of the enume
 <tr class="even">
 <td>STRINGJOIN (list, field name, delimiter)</td>
 <td>Return a string that consists of concatenated values of the specified field from the specified list. The values are separated by the specified delimiter.</td>
-<td>If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), the expression <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returns <strong>&quot;a:b:c&quot;</strong>.</td>
+<td>If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), the expression <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returns <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (list, limit value, limit source)</td>

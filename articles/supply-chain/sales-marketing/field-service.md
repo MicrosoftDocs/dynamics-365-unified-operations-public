@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 for Field Service. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,13 +36,14 @@ ms.search.validFrom: 2017-07-8
 
 Microsoft Dynamics 365 for Finance and Operations enables synchronization of business processes between Finance and Operations and Microsoft Dynamics 365 for Field Service. The integration scenarios are configured by using extensible Data integrator templates and the Common Data Service (CDS) to enable the synchronization of business processes.
 
+[![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+
 The first phase  of the integration between Field Service and Finance and Operations is focused on enabling work orders and agreements in Field Service to be invoiced in Finance and Operations. The supported flow starts in Field Service, where information from work orders is synchronized to Finance and Operations as sales orders. In Finance and Operations, the sales orders are invoiced to generate invoice documents. In addition, the information from Field Service agreement invoices is synchronized to Finance and Operations. The Microsoft Dynamics 365 Data integrator synchronizes data by using customizable projects. Standard templates can be used to create custom integration projects where additional standard and custom fields, and also entities, can be mapped to adjust the integration and meet specific requirements.
 
 The first phase of the integration between Field Service and Finance and Operations enables synchronization of the following items:
 
-- Products in Finance and Operations to products in Field Service that include Product Type information
+- [Products in Finance and Operations to products in Field Service that include Product Type information](field-service-product.md)
 - [Work orders in Field Service to sales orders in Finance and Operations](field-service-work-order.md)
-- Invoices in Field Service to free text invoices in Finance and Operations
+- [Invoices in Field Service to free text invoices in Finance and Operations](field-service-invoice.md)
 
-[![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
