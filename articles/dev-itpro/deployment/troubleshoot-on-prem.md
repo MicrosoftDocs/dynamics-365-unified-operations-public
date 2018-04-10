@@ -54,7 +54,7 @@ The primary node will be displayed. For stateless services, or the rest of the a
 Note the following:
 
 - OrchestrationService orchestrates the deployment and servicing actions for Dynamics 365 for Finance and Operations 
-- ArtifactsManager downloads files from azure cloud storage into the on-prem share and also unzips the files into the required format 
+- ArtifactsManager downloads files from azure cloud storage into the local agent file share and also unzips the files into the required format 
 
 ### Review orchestrator event logs
 From primary OrchestrationService orchestrator machine, review Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-LocalAgent
@@ -72,32 +72,28 @@ Commands to be run:
 - Dvt (Deployment verification test)
 - Cleanup (used for servicing and deleting environment)
 
-Folders that may contain additional information:
+Folders that contain additional information:
 - AX-SetupModuleEvents 
 - AX-SetupInfrastructureEvents 
 - AX-BridgeService 
 
-### Service Fabric explorer
-Note state of cluster, application, and nodes.
+### Service Fabric Explorer
+Note state of cluster, application, and nodes. For information about accessing the Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessingservicefabricexplorer).
 
-#### AXSF (AOS) is not healthy 
+#### Error "Partition is below target replica or instance count"
+This is not a root error. This error means that the status of each node is not ready. For AXSF/AOS, the status could still be inBuild.
+Navigate to the Event Viewer to get root error.
 
+#### AXSFType 
 For AXSFType (AXService) if status of “InBuild” is displayed for period of time review DbSync status and other events from AOS machines. 
 
-To diagnose DbSync errors, please see the event log located at: `Applications and Services Logs\Microsoft\Dynamics\AX-DatabaseSynchronize\Operational`. The error details will help you find useful sections in this article.
+To diagnose errors, please see the event logs located at:
+
+- Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-DatabaseSynchronize
+- Event Viewer > Custom Views > Administrative Events
 
 ### LCS
-Note deployment status.
-
-#### Orchestrator machine failures
-
-During deployment, the primary nodes under `fabric:/LocalAgent/ArtifactsManager` and `fabric:/LocalAgent/OrchestrationService` are of the highest interest. On each of them, open the Event Viewer and go to `Applications and Services Logs\Microsoft\Dynamics\AX-LocalAgent\Operational` for information and errors about the deployment process as it unfolds.
-
-Particularly for the `OrchestrationService`, the following event location should be studied in the case of a deployment failure during AX installation: `Applications and Services Logs\Microsoft\Dynamics\AX-SetupModuleEvents\Operational`.
-
-### AOS machines
-- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
-- **Event Viewer** > **Custom Views** > **Administrative Events**
+Note the current deployment status for this environment in LCS.
 
 ## Timeout error received when creating a Service Fabric cluster
 Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fabric cluster in the appropriate setup topic and note any errors: 
@@ -110,7 +106,7 @@ Verify that the Service Fabric Server certificate has the ACL for Network Servic
 Check anti-virus exclusions noted in [Enviornment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## Time out while waiting for Installer Service to complete for machine x.x.x.x
-You can only have one node type for each IP address (machine). Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
+Only one node type for each IP address (machine) is supported. Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
 We recommend that you use Lifecycle Services (LCS) to remove or clean up deployments. However, if additional steps are needed, you can use Service Fabric Explorer to remove an application.
@@ -118,7 +114,7 @@ We recommend that you use Lifecycle Services (LCS) to remove or clean up deploym
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm.
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm.
 
-### Remove all AX applications from Service Fabric
+## Remove all applications from Service Fabric
 
 The following script will remove and unprovision all SF applications, except the LocalAgent and Monitoring agent for the LocalAgent. It must be executed on a orchestrator VM.
 
@@ -171,15 +167,15 @@ Follow the steps below in order to start over:
         - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
     - If the ADFS settings will be modified, remove the ADFS certificate as well.
-1. Update configuration files. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
+1. Update configuration files, as needed. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
     - ConfigTemplate.xml
     - ClusterConfig.json
-1. Access the project in LCS.
-    1. Recreate the LCS connector for the environment, or edit the settings of an existing one.
+1. Access the project in LCS and update the LCS on-premises connector, as needed.
+    1. Recreate the LCS on-premises connector for the environment, or edit the settings of an existing one.
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
 
-Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
+Deploy again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
@@ -219,9 +215,8 @@ Complete the following steps to troubleshoot general issues with local agent val
     - **Event Viewer** > **Custom Views** > **Administrative Events**
     - **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-LocalAgent**
 
-**Common errors**
-
-The following are common errors that you may encounter:
+## Local agent errors
+The following are errors that you may encounter:
 
 - "Unable to process commands" or "Unable to get the channel information"
 - "RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate"
@@ -330,6 +325,41 @@ Complete the following steps to resolve the error.
         uswelcs1lcm.blob.core.windows.net:443
         uswedpl1catalog.blob.core.windows.net:443 
 
+## How to restart applications (ex. AOS)
+Go to Service Fabric and expand Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code. Click on ellipse and Restart (enter Code when prompted) 
+
+## Upgrading Service Fabric
+Service Fabric Explorer will eventually show a message as follows:
+
+*Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
+The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.*
+
+Since minimum requirement is 1 SSRS and 1 MR node, need to pass in a parameter to skip PreUpgradeSafetyCheck
+
+Note following steps to upgrade in PowerShell:
+
+```powershell
+#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
+  
+#Get latest version that was downloaded
+Get-ServiceFabricRegisteredClusterCodeVersion 
+
+#Enter version from above for CodePackageVersion.
+#Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
+#May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
+Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
+
+#Get upgrade status
+Get-ServiceFabricClusterUpgrade
+```
+
+<https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting>
+
+To see when new SF comes out - <https://blogs.msdn.microsoft.com/azureservicefabric/>
+
+If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes and code restart “How to restart applications (ex. AOS)” section
+ 
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
 
@@ -423,7 +453,7 @@ If none of the above works:
 Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the primary orchestrator machine and run the following commands.
 
 > [!Note]
-> To get the latest manifest and .dll, go to the WP folder in the agent file share. (This share was created in the "Set up file storage" section of [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile). For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
+> If results in the event viewer are not displayed correct (for example, if words are truncated), get the latest manifest and .dll file. To get the latest manifest and .dll, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile). For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
 
 ```powershell
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"}
@@ -440,12 +470,11 @@ After providers are registered, additional details will be logged about the new 
 - MR-Logger
 - MR-Sql
 
+To see the new folders, you need to close and reopen the event viewer. You will need to deploy an environment again to see additional details.
+
 ### Error while executing AddAXDatabaseChangeTracking
 If you encounter an error while executing AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. For example, ax.d365ffo.onprem.contoso.com.
 The error may have also occurred because of an issue with the star/* certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that is not valid or does not match the host ax.d365ffo.onprem.contoso.com.
-
-### Remote name can't be resolved
-The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
 
 ### Run initialize database script and validate DBs have correct users
 If you only receive the AddAXDatabaseChangeTracking event, try to reach the Metadataservice of Dynamics 365 for Finance and Operations by going to
@@ -459,6 +488,9 @@ Next, check the certificates of the service in the wif.config file. To find the 
     3. SessionAuthentication Thumbprint
 
 If the thumbprints do not follow the list of requirements, you must redeploy from LCS with proper thumbprints.
+
+### Remote name can't be resolved
+The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
 
 ## axdbadmin is unable to connect to the database server SQL-LS.contoso.com
 
@@ -570,12 +602,6 @@ Also check the .csv file to verify that the correct domain is being used.
 ## Error "RunAsync failed due to an unhandled FabricException causing replica to fault"
 If you receive this error, "RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions. Requested value: 0.0.0.0:", change the ClusterConfig.json diagnosticsStore from network share to local path such as, `\\server\path` to default of `C:\ProgramData\SF\DiagnosticsStore`.
 
-## Error Dbsync (DB sync) issues
-If you are having database sync issues, look at AOS working directory, ex `C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App8\log` and complete a review of the following on all AOS machines:
-
-- **Event Viewer** > **Custom Views** > **Administrative Events**
-- **Event Viewer** > **Applications and Services Logs** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize**
-
 ## Service Fabric AOS Node Error during build: Execution Timeout Expired
 Error message:
 
@@ -600,10 +626,6 @@ If you need to re-create the certificate using the correct provider, follow thes
 1. Change ConfigTemplate.xml
 1. Run the infrastructure scripts on all machines in the cluster, and make sure the Test-D365FOConfiguration.ps1 script passes.
 1. Reconfigure the environment from LCS.
-
-## Error "Partition is below target replica or instance count"
-This is not a root error. This error means that the status of each node is not ready. For AXSF/AOS, the status could still be inBuild.
-Navigate to the Event Viewer to get root error.
 
 ## Error "Unable to find certificate" when running Test-D365FOConfiguration.ps1
 If you receive this error, check to see if certificates/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure).
@@ -644,7 +666,7 @@ AOS users are not in the local administrator group and the UAC has not been disa
 4. If UAC was changed, you need to restart the machine to take effect.
 
 ## Files in use errors
-Set up exclusion rules that are advised by Service Fabric. For information, see [Plan and prepare your Service Fabric Standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Set up exclusion rules that are advised by Service Fabric. For information, see [Environment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## Apply deployable packages during deployment
 ### Package deployment fails due to "path too long" exception
@@ -686,49 +708,11 @@ A Skype API issue has been discovered that is impacting the ability to sign in t
 
 `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
-## How to restart applications (ex. AOS)
-Go to Service Fabric and expand Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code. Click on ellipse and Restart (enter Code when prompted) 
+## For additional deployments (sandbox and production)
 
-## Upgrading Service Fabric
-Service Fabric Explorer will eventually show a message as follows:
+The following error will display when you deploy an additional environment:
 
-Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
-The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.
-
-Since minimum requirement is 1 SSRS and 1 MR node, need to pass in a parameter to skip PreUpgradeSafetyCheck
-
-Note following steps to upgrade in PowerShell:
-
-```powershell
-#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
-Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
-  
-#Get latest version that was downloaded
-Get-ServiceFabricRegisteredClusterCodeVersion 
-
-#Enter version from above for CodePackageVersion.
-#Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
-#May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
-Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback **-UpgradeReplicaSetCheckTimeout 30** 
-
-#Get upgrade status
-Get-ServiceFabricClusterUpgrade
-```
-
-<https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting>
-
-To see when new SF comes out - <https://blogs.msdn.microsoft.com/azureservicefabric/>
-
-If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes and code restart “How to restart applications (ex. AOS)” section
-
-    ![](media/acaee565984adad770b08c9eff932d8d.jpg)
-
-  
-## 2nd or side by side deployment (sandbox and production)
-
-Can't run scripts as is or will get following error:
-
-.\\Publish-ADFSApplicationGroup.ps1 -HostUrl '<https://ax.d365ffo.onprem.contoso.com>' New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
+*.\\Publish-ADFSApplicationGroup.ps1 -HostUrl '<https://ax.d365ffo.onprem.contoso.com>' New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.*
 
 Following are steps that can be skipped or modified:
 
@@ -738,16 +722,16 @@ Following are steps that can be skipped or modified:
     - Rest of certs should likely be different than existing environment
 
 - [Download setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
-    - Source/zip already downloaded but should be in new folder as configuration of XML would be different as well as export scripts
+    - The scripts that are downloaded should be copied into a new folder.
 
 - [Set up a standalone Service Fabric cluster](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsfcluster)
-    - Same as infrastructure scripts, should be in new folder as will have different configuration
+    - The scripts that are downloaded should be copied into a new folder.
 
 - [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs)
     - This only needs to be done once for tenant
 
 - [Configure AD FS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureadfs)
-    - Script 1/2/3 can be skipped as already done
+    - Script 1, 2, 3 can be skipped as already done
     - Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
     - AD FS Manager \> AD FS \> Application Groups \> open "Microsoft Dynamics 365 for Operations On-premises"
         - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Native application"
@@ -759,6 +743,7 @@ Following are steps that can be skipped or modified:
 Delete the entry in SF.SyncLog and then restart one of the AOS machines, it will re-run db sync and then deploy reports. 
 
 ## Add axdbadmin to tempdb after a SQL restart via SQL stored procedure
+When SQL is restarted, the tempdb database is recreated. This will result in missing permissions. Run following to create stored procedure on the master db database.
 
 \-----
 
