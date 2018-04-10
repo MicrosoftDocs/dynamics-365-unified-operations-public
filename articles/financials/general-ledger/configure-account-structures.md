@@ -46,5 +46,17 @@ Account structures require the main account. The main account does not need to b
 # Example
 To illustrate a best practice for setting up an account structure, lets assume that a company wants to track their balance sheet accounts (100000..399999) at the account and Business unit financial dimension level. For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center. If they make a sale, they also like to track Customer. Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger. One for Balance sheet accounts, and one for Profit and Loss accounts. To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.
 
+**Balance sheet account structure**
+
+|Main account          | Business Unit    |
+|----------------------|-----------|
+|100000..399999 | *;” “|
+
+**Profit and loss account structure**
+
+|Main account          | Business Unit    |Main account          | Business Unit    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | *;” “|*;” “|*;” “|*;” “|
+
 
 
