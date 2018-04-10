@@ -5,7 +5,7 @@ title: Intrusive customizations
 description: This topic defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
