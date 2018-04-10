@@ -210,7 +210,7 @@ The testing for email notifications is to simply trigger the notification and th
     1. If the email is fails to send, make sure that the SMTP mail account can be opened.
 4. Check for the email notification in the appropriate inbox.
 
-### Troubleshoot email
+## Troubleshoot email
 
 There are a few standard steps that can help you troubleshoot the configuration of email settings.
 
