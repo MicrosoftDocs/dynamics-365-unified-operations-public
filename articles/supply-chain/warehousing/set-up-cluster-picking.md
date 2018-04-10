@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to enable workers to use their mobile devices to group
 picking work into clusters, so that they can pick items from a single location
-for multiple work orders at the same time. This is called cluster picking.
+for multiple work orders at the same time. This is called *cluster picking*.
 
 ## About cluster picking
 
@@ -48,7 +48,7 @@ the worker must break the cluster and then re-create it.
 If needed, a worker can pass a cluster to another worker. This changes the
 cluster status to Passed. When the worker uses a mobile device to indicate that
 the picking and put away work is completed, the shipment or load must be
-confirmed in the Microsoft Dynamics AX client.
+confirmed in the Dynamics 365 for Finance and Operations client.
 
 ## Set up cluster picking
 
@@ -80,24 +80,24 @@ To set up a cluster profile, follow these steps:
 
 2.  Click **New** to create a new profile.
 
-3.  Click **Create cluster** and, under **Cluster sorting**, click New to set up
+3.  Click **Create cluster** and, under **Cluster sorting**, click **New** to set up
     the sorting criteria for the cluster. The sorting criteria control the order
     in which the worker will perform the picking work. You can add as many
     criteria as needed.
 
-4.  In the **Sequence number** field, ether a number to define the order in
+4.  In the **Sequence number** field, enter a number to define the order in
     which the sorting criteria are processed.
 
 5.  In the **Field name** field, select the field that will determine the
-    sorting. For example, if you select the WMSLocationId field, the work will
+    sorting. For example, if you select the **WMSLocationId** field, the work will
     be sorted by location.
 
-6.  In the **Sorting** field, select one of the following.
+6.  In the **Sorting** field, select one of the following options.
 
 | **Option**     | **Description**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ascending**  | Picking work is sequenced in an ascending order based on the sorting criteria. For example, if you use the WMSLocationId field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 4 first. |
-| **Descending** | Picking work is sequenced in a descending order based on the sorting criteria. For example, if you use the WMSLocationId field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 1 first. |
+| **Ascending**  | Picking work is sequenced in ascending order based on the sorting criteria. For example, if you use the **WMSLocationId** field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 4 first. |
+| **Descending** | Picking work is sequenced in descending order based on the sorting criteria. For example, if you use the **WMSLocationId** field as sorting criteria, and your location IDs are 1, 2, 3, and 4, you will pick from location 1 first. |
 
 ## Item confirmation
 
@@ -112,5 +112,5 @@ the cluster picking process. The setup is based on the product bar code setup.
     **Mobile device** \> **Mobile device menu items**.
 
 2.  From the mobile device menu item, open **Work confirmation setup**. The
-    Product confirmation option allows you to verify each piece of inventory
+    **Product confirmation** option allows you to verify each piece of inventory
     from the mobile device when scanned.
