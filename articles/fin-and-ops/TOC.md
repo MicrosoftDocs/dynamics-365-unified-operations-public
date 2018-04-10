@@ -165,7 +165,7 @@
 ###### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service-integration.md)
+##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
 ###### [Synchronize work orders from Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
 
 
