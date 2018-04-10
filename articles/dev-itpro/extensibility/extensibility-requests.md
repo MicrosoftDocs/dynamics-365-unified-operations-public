@@ -5,7 +5,7 @@ title: Extensibility requests
 description: This topic explains how to file a request for additional extension points in Dynamics 365 for Finance and Operations. 
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
