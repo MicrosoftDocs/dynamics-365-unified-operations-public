@@ -5,7 +5,7 @@ title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
