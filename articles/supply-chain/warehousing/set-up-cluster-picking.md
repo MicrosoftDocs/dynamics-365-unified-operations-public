@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Set up cluster picking
+description: This topic describes how to set up cluster picking and how to apply item confirmation with cluster picking.
+author: Mirzaab
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 269384
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mirzaab
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+[!include[banner](../includes/banner.md)]
+
 **Set up cluster picking**
 
 This topic describes how to enable workers to use their mobile devices to group
