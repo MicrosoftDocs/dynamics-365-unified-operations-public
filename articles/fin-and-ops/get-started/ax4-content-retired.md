@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012
 
 ---
 
-# WebSearchAX retired
+# Microsoft Dynamics AX 4.0 content retired
 
 [!include[banner](../includes/banner.md)]
 
