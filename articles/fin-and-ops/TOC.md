@@ -1225,6 +1225,7 @@
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Printing](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [Upgrade the Document Routing Agent](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Run the Document Routing Agent as a Windows service](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1843,6 +1844,7 @@
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Picking and packing
+#### [Set up cluster picking](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1850,7 +1852,6 @@
 #### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Scan bar codes using a camera in Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Piece picking confirmation](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Product confirmation for cluster picking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [Partial shipment of a transport load](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)

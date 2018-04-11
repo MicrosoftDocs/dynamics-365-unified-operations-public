@@ -388,7 +388,7 @@
 ##### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ##### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
+#### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
 ##### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
 ##### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
 ##### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
@@ -531,7 +531,7 @@
 ### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
-#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md )
+#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [Single voucher and currency revaluation upgrade](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Project resource scheduling data model](migration-upgrade/data-model-changes-resource-management.md)
 #### [Workflow subsystem changes](migration-upgrade/workflow-subsystem.md)

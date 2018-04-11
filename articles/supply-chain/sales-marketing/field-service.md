@@ -30,6 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
+
 # Integration with Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
@@ -46,4 +47,18 @@ The first phase of the integration between Field Service and Finance and Operati
 - [Work orders in Field Service to sales orders in Finance and Operations](field-service-work-order.md)
 - [Invoices in Field Service to free text invoices in Finance and Operations](field-service-invoice.md)
 
+## System requirements for Finance and Operations
+Field Service integration supports the following versions:
 
+### Dynamics 365 for Finance and Operations version 8.0 (April 2018) or later
+
+- Dynamics 365 for Finance and Operations version 8.0 (April 2018) was released in April 2018 and has an application build number 8.0.30.8020 with Platform Update 15 (7.0.4841.35234). 
+
+## System requirements for Field Service
+To use the Field Service integration solution, you must install the following components:
+
+### Microsoft Dynamics 365 for Field Service 9.0 or later
+
+- Dynamics 365 for Field Service version 1612 (9.0.1.733) (DB 9.0.1.733) online or a later version.
+- Prospect to cash solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Field Service integration solution for Dynamics 365, version 1.0.0.0 or a later version. The solution is available for download from AppSource. **(PENDING RELEASE)**
