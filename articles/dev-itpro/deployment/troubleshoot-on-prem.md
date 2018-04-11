@@ -102,14 +102,14 @@ C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentT
 Note the current deployment status for this environment in LCS.
 
 ## Timeout error received when creating a Service Fabric cluster
-Run Test-D365FOConfiguration.ps1 as noted in the set up a standalone Service Fabric cluster in the appropriate setup topic and note any errors: 
+Run Test-D365FOConfiguration.ps1 as noted in the **Set up a standalone Service Fabric cluster** section in the appropriate setup topic and note any errors: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
 - [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)
 
-Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all service fabric nodes.
-Verify that the Service Fabric Server certificate has the ACL for Network Service on all service fabric nodes.
-
-Check anti-virus exclusions noted in [Enviornment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+Be sure to:
+- Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all Service Fabric nodes.
+- Verify that the Service Fabric server certificate has the ACL for Network Service on all Service Fabric nodes.
+- Check anti-virus exclusions noted in [Enviornment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## Time out while waiting for Installer Service to complete for machine x.x.x.x
 Only one node type for each IP address (machine) is supported. Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
