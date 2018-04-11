@@ -5,7 +5,7 @@ title: Cash registers for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 04/06/2018
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2018-4-06
+ms.search.validFrom: 2018-4-10
 ms.dyn365.ops.version: 7.3.2
 
 ---
@@ -307,16 +307,39 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-### Configure the digital signature parameters for Retail Headquarters (INCOMPLETE)
+### Configure the digital signature parameters for Retail Headquarters
 
-### Configure the archive export format (INCOMPLETE)
+In order to be able to digitally sign period grand total journals and archives, you need to set up digital signature parameters. The signing is performed using a digital certificate stored in an Azure Key Vault storage. The following steps must be completed before you can use a certificate that is stored in Azure Key Vault storage:
 
-The archive configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
+- The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
+- The certificate must be uploaded to the storage.
+- The AOS application must be authorized to read secrets from the storage.
 
-- **Retail channel data** data model
-- **???Retail data archive (FR)** format
+For more information about how to work with Azure Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).
 
-After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **???Retail data archive (FR)** format.
+You then need to specify the Key Vault storage access parameters on the **Key Vault parameters** page:
+
+- The **Name** and **Description** of the storage;
+- **Key Vault URL** – The URL of the Azure Key Vault storage;
+- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Azure Key Vault storage for authentication purposes. This client should have access to read secrets from the Azure Key Vault storage;
+- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Azure Key Vault storage;
+- the **Name**, **Description** and **Secret reference** of the certificate.
+
+Finally, you need to specify the digital signature parameters on the **Retail parameters** page:
+
+- **Certificate** - select the certificate that you configured on the previous step;
+- **Hash function** - specify one of the cryptographic hash algorithms supported by .NET, e.g. "SHA1";
+- **Encoding** - specify the encoding of the signed data, e.g. "UTF-8".
+
+### Configure the archive export format
+
+The ER configuration for the archive is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following or higher versions of configurations:
+
+- **Retail channel data.version.2** data model
+- **Archiving DMM.version.2.1** data model mapping
+- **Retail data archive  FR .version.2.1** format
+
+After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive  FR .version.2.1** format.
 
 ### Configure Retail channel components
 
