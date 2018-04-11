@@ -5,7 +5,7 @@ title: Planning for your on-premises deployment
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
-ms.date: 01/03/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,7 @@ At a minimum, an on-premises sandbox environment requires:
 - 2 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS)
-- 1 machine running Azure Active Directory (Azure AD)
+- 1 machine running Active Directory
 - 1 machine running SQL Server
 
 ### Production environment
@@ -87,7 +87,7 @@ At a minimum, an on-premises production environment requires:
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS)
 - 2 or more machines running SQL Server
-- 2 or more machines running Azure Active Directory (Azure AD)
+- 2 or more machines running Active Directory
 
 ## Service Fabric
 An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
