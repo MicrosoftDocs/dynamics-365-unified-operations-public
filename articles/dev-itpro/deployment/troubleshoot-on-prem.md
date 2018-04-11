@@ -213,7 +213,7 @@ If you receive the error, "*Could not load file or assembly 'Lcs.DeploymentAgent
 
 ## "Validation in progress" message displays for several minutes in LCS
 Complete the following steps to troubleshoot general issues with local agent validation.
-1. Run Configure-PreReqs.ps1 on all the Orchestrator machines to configure the machines correctly.
+1. Run Configure-PreReqs.ps1 on all Orchestrator machines to configure the machines correctly.
 2. Verify that the script Test-D365FOConfiguration.ps1 passes on all of the Orchestrator machines.
 3. Verify that the installation of LocalAgentCLI.exe completed successfully.
 4. Go to Service Fabric Explorer and verify that the applications are all healthy.
@@ -226,18 +226,17 @@ Complete the following steps to troubleshoot general issues with local agent val
 ### Issue
 The following are errors that you may encounter:
 
-- "Unable to process commands" or "Unable to get the channel information"
-- "RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate"
+- *Unable to process commands* or *Unable to get the channel information*
+- *RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null. Parameter name: certificate*
 
-**Reason**
-These errors may occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant.
+**Reason:** These errors may occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant.
 
-**Steps**
+#### Steps 
 Complete the following steps to resolve the error.
 1. Run Test-D365FOConfiguration.ps1 on all Orchestrator nodes to ensure all checks pass.
-2. Verify that the certificate specified in local agent configuration is correct.
-    - Make sure there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml.
-    - The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for the following.
+2. Verify that the certificate specified in the local agent configuration is correct.
+    - Make sure that there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml.
+    - The certificate should be the same as what is specified in infrastructure\ConfigTemplate.xml for the following:
 
         ```xml
         <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="true">
@@ -247,7 +246,7 @@ Complete the following steps to resolve the error.
         </Certificate>
         ```
 
-3. Ensure that the steps in Configure LCS connectivity for the tenant were completed using the same certificate that is specified in the local agent configuration in LCS: 
+3. Ensure that the steps in the **Configure LCS connectivity for the tenant** section (in the following topics) were completed using the same certificate that is specified in the local agent configuration in LCS.
     - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
 4. Uninstall the local agent.
