@@ -98,7 +98,7 @@ Additional details about Service Fabric applications can be found in log files a
 
 C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log
 
-### LCS
+### Lifecycle Services (LCS)
 Note the current deployment status for this environment in LCS.
 
 ## Timeout error received when creating a Service Fabric cluster
@@ -115,7 +115,7 @@ Be sure to:
 Only one node type for each IP address (machine) is supported. Check to see if the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
-We recommend that you use Lifecycle Services (LCS) to remove or clean up deployments. However, if needed, you can use Service Fabric Explorer to remove an application.
+We recommend that you use LCS to remove or clean up deployments. However, if needed, you can use Service Fabric Explorer to remove an application.
 
 In Service Fabric Explorer, go to **Application node** > **Applications** > **MonitoringAgentAppType-Agent**. Click the ellipses by **fabric:/Agent-Monitoring** and delete the application. Enter the full name of the application to confirm.
 You can also remove the **MonitoringAgentAppType-Agent** by clicking the ellipses and then **Unprovision Type**. Enter the full name to confirm.
@@ -146,17 +146,17 @@ To remove the Service Fabric cluster completely, execute:
 
 If this results in an error, remove a specific node on that cluster using the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
 
-Next, remove the folder `C:\ProgramData\SF`, if using the default. Otherwise, remove the specified folder.
+Next, remove the folder **C:\ProgramData\SF**, if using the default. Otherwise, remove the specified folder.
 If you receive an access denied error, restart PowerShell or restart the machine.
 
 ## Clean up an existing environment and start over
 
-Follow the steps below in order to start over:
+Follow the steps below to start over:
 
 1. Access the project in LCS.
-    1. Under Environments, Delete the deployment.
+    1. Under **Environments**, delete the deployment.
     1. Note that the applications should start disappearing from Service Fabric Explorer on the environment. This will take a minute or two.
-1. Access the orchestrator machine that contains `LocalAgentCLI.exe`.
+1. Access the orchestrator machine that contains **LocalAgentCLI.exe**.
     1. Run Local Agent cleanup:
         ```powershell
         .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>'
@@ -166,11 +166,11 @@ Follow the steps below in order to start over:
         .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
         ```
     1. If any nodes fail, run the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
-    1. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
-        - If access denied, restart the machine and try again.
+    1. Remove the **C:\ProgramData\SF\** folder on all Service Fabric nodes.
+        - If access is denied, restart the machine and try again.
 1. Remove or update certificates, as needed.
-    1. Remove old certificates from all AOS, BI, ORCH and DC nodes.
-        - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
+    1. Remove old certificates from all AOS, BI, ORCH, and DC nodes.
+        - The certificates exist in the following certificate stores: **Cert:\CurrentUser\My\**, **Cert:\LocalMachine\My**, and **Cert:\LocalMachine\Root**.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
     - If the ADFS settings will be modified, remove the ADFS certificate as well.
 1. Update configuration files, as needed. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
