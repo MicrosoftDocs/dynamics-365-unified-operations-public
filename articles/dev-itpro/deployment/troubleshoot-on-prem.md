@@ -255,11 +255,9 @@ The following are errors that you may encounter:
 ### Error
 Access to the path `'\\...\agent\assets\StandAloneSetup-76308-1.zip'` is denied.
 
-**Reason**
-The file share specified in local agent configuration is not valid.
+**Reason:** The file share specified in the local agent configuration is not valid.
 
-**Steps**
-Complete the following steps to resolve the error.
+**Steps:** Complete the following steps to resolve the error.
 1. Verify that the specified share exists.
 2. Verify that the local agent user has full permission on the share. The local agent user is the DNS name specified in ConfigTemplate.xml in the following section.
 
@@ -277,31 +275,28 @@ Complete the following steps to resolve the error.
 ### Error
 Login failed for user 'D365\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. [CLIENT: 10.0.2.23]
 
-**Reason**
-The local agent user is not able to connect to the orchestration database. This could happen because users may have been deleted and then recreated in the AD, which means the SID of the user has changed. Any access given to the user for the SQL Server or database will no longer work.
+**Reason:** The local agent user is not able to connect to the orchestration database. This could happen because users may have been deleted and then recreated in the AD, which means the SID of the user has changed. Any access given to the user for the SQL Server or database will no longer work.
 
-**Steps**
-Complete the following steps to resolve the error.
+**Steps:** Complete the following steps to resolve the error.
 
-1. Run the script on the SQL server.
+1. Run this script on the SQL server.
     ```powershell
     .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
     ```
 
     This creates an empty Orchestrator database, if one does not already exist, and adds the local agent user to the database with db\_owner permission.
 
-2. The application should automatically go to healthy state after the correct permissions are provided.
-3. If any of the settings, such as the SQL FQDN, database name, and local agent user was provided incorrectly in LCS, change the settings and reinstall local agent.
-4. If the first three steps do not resolve the issue, manually remove the local agent user from the SQL server and the database, and then re-run the Initialize-Database script.
+2. The application should automatically go to a healthy state after the correct permissions are provided.
+3. If any of the settings, such as the SQL FQDN, database name, and local agent user was provided incorrectly in LCS, change the settings and reinstall the local agent.
+4. If the first three steps do not resolve the issue, manually remove the local agent user from the SQL Server and the database, and then re-run the Initialize-Database script.
 5. If you recreate a user in AD, remember that the SID will change. Remove the previous SID for the user and add a new SID.
 
 ### Issue
-The local agent user can't connect to the SQL server or database.
+The local agent user can't connect to the SQL Server or database.
 
-**Steps**
-Complete the following steps to resolve the error.
+**Steps:** Complete the following steps to resolve the error.
 
-1. Delete the svc-LocalAgent user from the SQL server primary node databases and then remove the login from both servers.
+1. Delete the svc-LocalAgent user from the SQL Server primary node databases and then remove the login from both servers.
 2. Run the following scripts.
 
     ```powershell
@@ -314,11 +309,9 @@ Complete the following steps to resolve the error.
 ### Error
 RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
 
-**Reason**
-The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'".
+**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'".
 
-**Steps**
-Complete the following steps to resolve the error.
+**Steps:** Complete the following steps to resolve the error.
 1. Run `psping lcsapi.lcs.dynamics.com:80`.
 2. If you don't receive a reply, contact the IT department at your organization. The firewall is blocking access to lcsapi or proxy issues.
 
