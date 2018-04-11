@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform Update 8
 This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 
 ## Accessing Service Fabric Explorer
-Service Fabric Explorer can be accessed by using a browser and the default address, https://sf.d365ffo.onprem.contoso.com:19080.
+Service Fabric Explorer can be accessed by using a browser and the default address: `https://sf.d365ffo.onprem.contoso.com:19080`.
 
 To verify the address, note what was used in the section Create DNS zones and add A records in the appropriate topic for your environment: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md#createdns).
