@@ -57,15 +57,15 @@ Note the following:
 - ArtifactsManager downloads files from Azure cloud storage into the local agent file share and also unzips the files into the required format. 
 
 ### Review orchestrator event logs
-From primary OrchestrationService orchestrator machine, review Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-LocalAgent
+From the primary OrchestrationService orchestrator machine, review **Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-LocalAgent**.
 
 Note that you will need to click the **Details** tab to view the full error message.
 
 Modules to be installed:
 - Common
-- Reportingservices
+- ReportingServices
 - AOS
-- Financialreporting
+- FinancialReporting
 
 Commands to be run:
 - Setup
@@ -81,12 +81,12 @@ Folders that contain additional information:
 Note state of cluster, application, and nodes. For information about accessing the Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessingservicefabricexplorer).
 
 #### Error "Partition is below target replica or instance count"
-This is not a root error. This error means that the status of each node is not ready. For AXSFType (AOS), the status could still be InBuild.
+This is not a root error. This error means that the status of each node is not ready. For AXSFType (AOS), the status could still be *InBuild*.
 
 Navigate to the Event Viewer on those machines to see the latest activity.
 
 #### AXSFType 
-For AXSFType (AOS) if status of “InBuild” is displayed for period of time review DbSync status and other events from AOS machines. 
+For AXSFType (AOS) if status of *InBuild* is displayed for period of time review DbSync status and other events from AOS machines. 
 
 To diagnose errors, please see the event logs located at:
 
