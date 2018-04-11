@@ -48,11 +48,11 @@ The first phase of the integration between Field Service and Finance and Operati
 - [Invoices in Field Service to free text invoices in Finance and Operations](field-service-invoice.md)
 
 ## System requirements for Finance and Operations
-Field Service integration is supported on the following versions:
+Field Service integration supports the following versions:
 
-### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 8.0 (April 2018) or later
+### Dynamics 365 for Finance and Operations version 8.0 (April 2018) or later
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (April 2018)- Application build 8.0.30.8020 with Platform Update 15 (7.0.4841.35234)
+- Dynamics 365 for Finance and Operations version 8.0 (April 2018) was released in April 2018 and has an application build number 8.0.30.8020 with Platform Update 15 (7.0.4841.35234). 
 
 ## System requirements for Field Service
 To use the Field Service integration solution, you must install the following components:
