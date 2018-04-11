@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2018-4-10
+ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 
 ---
@@ -38,7 +38,7 @@ The functionality consists of the following parts:
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option to register different events in the POS audit log.
 - France-specific features, such as digital signatures for sales transactions.
 
-## Overview of cash register functionality for France
+## Overview 
 
 ### Common POS features
 
