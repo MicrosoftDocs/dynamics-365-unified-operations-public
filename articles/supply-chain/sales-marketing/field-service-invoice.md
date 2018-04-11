@@ -92,7 +92,9 @@ Besides appearing on the invoice header, the **External invoice number** informa
 7. Select **Save**.
 
 ### In the Data Integration project
-Task: **Invoice lines**  
-Make sure that the required defaulting for the Finance and Operations field **Main Account Display Value** is updated to match the desired value.
 
-The default template value is **401100**
+Task: **Invoice lines**  
+
+Make sure that the default value for the Finance and Operations field **Main Account Display Value** is updated to match the desired value.
+
+The default template value is **401100**.
