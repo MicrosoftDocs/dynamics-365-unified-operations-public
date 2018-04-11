@@ -5,7 +5,7 @@ title: Troubleshoot Dynamics 365 for Finance and Operations on-premises
 description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -501,19 +501,25 @@ Issue: MR reports are checked out during deployment.
 
 If MR reports are checked out, deployment will fail. To see if reports are checked out, run the following select statements on the  FinancialReporting database:
 
+```
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null 
 select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not null 
 select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
+```
 
 You can find out the user who has objects checked out by running the following select statement:
 
+```
 select * from Reporting.SecurityUser where UserID = '' 
+```
 
 To resolve via SQL, update the above tables and set checkedoutto null, using the following commands:
 
+```
 update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null 
 update Reporting.ControlRowMaster set checkedoutto = null where checkedoutto is not null 
 update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto is not null  
+```
 
 ## axdbadmin is unable to connect to the database server SQL-LS.contoso.com
 
@@ -768,6 +774,7 @@ Delete the entry in SF.SyncLog and then restart one of the AOS machines, it will
 ## Add axdbadmin to tempdb after a SQL restart via SQL stored procedure
 When SQL is restarted, the tempdb database is recreated. This will result in missing permissions. Run following to create stored procedure on the master db database.
 
+```
 \-----
 
 USE [master]
@@ -781,6 +788,7 @@ GO
 EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 
 \-----
+```
 
 ## Update to existing credential with KeyId ‘<key>’ is not allowed.
 Update to existing credential with KeyId ‘<key>’ is not allowed.
