@@ -23,11 +23,13 @@ ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
-ms.search.industry: ms.author: crytt
+ms.search.industry: 
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
 ---
+
 
 # Integration with Microsoft Dynamics 365 for Field Service
 
