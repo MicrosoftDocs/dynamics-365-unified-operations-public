@@ -231,8 +231,7 @@ The following are errors that you may encounter:
 
 **Reason:** These errors may occur because the certificate specified for the OnPremLocalAgent certificate is not valid or is not configured correctly for the tenant.
 
-#### Steps 
-Complete the following steps to resolve the error.
+**Steps:** Complete the following steps to resolve the error.
 1. Run Test-D365FOConfiguration.ps1 on all Orchestrator nodes to ensure all checks pass.
 2. Verify that the certificate specified in the local agent configuration is correct.
     - Make sure that there are no special characters while specifying the thumbprint in LCS and the ConfigTemplate.xml.
