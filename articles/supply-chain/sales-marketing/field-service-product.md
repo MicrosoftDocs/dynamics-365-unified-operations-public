@@ -50,7 +50,7 @@ This topic only describes the differences between the **Field Service Products (
 
 - Products - Products
 
-The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template. This mapping ensures that the required Field service specific field Service Product Type** is set correctly.
+The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template. This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
