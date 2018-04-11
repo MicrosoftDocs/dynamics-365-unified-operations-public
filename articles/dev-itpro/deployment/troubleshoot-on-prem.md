@@ -38,23 +38,23 @@ This topic provides troubleshooting information for on-premises deployments of D
 ## Accessing Service Fabric Explorer
 Service Fabric Explorer can be accessed by using a browser and the default address: `https://sf.d365ffo.onprem.contoso.com:19080`.
 
-To verify the address, note what was used in the section Create DNS zones and add A records in the appropriate topic for your environment: 
-- [Platform update 12](setup-deploy-on-premises-pu12.md#createdns).
-- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#createdns).
+To verify the address, note what was used in the section **Create DNS zones and add A records** in the appropriate topic for your environment: 
+- [Platform update 12](setup-deploy-on-premises-pu12.md#createdns)
+- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#createdns)
 
 To access the site, the client certificate needs to be in `cert:\CurrentUser\My` (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ## Monitor deployment
 
 ### Identify primary orchestrator
-To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **(intended application example) LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **(guid)**.
+To determine what machine is the primary instance for stateful services, like a local agent, go to Service Fabric Explorer, expand **Cluster > Applications > [*intended application example*] LocalAgentType > fabric:/LocalAgent/OrchestrationService > (guid)**.
 
 The primary node will be displayed. For stateless services, or the rest of the applications, you need to check all of the nodes.
 
 Note the following:
 
-- OrchestrationService orchestrates the deployment and servicing actions for Dynamics 365 for Finance and Operations 
-- ArtifactsManager downloads files from azure cloud storage into the local agent file share and also unzips the files into the required format 
+- OrchestrationService orchestrates the deployment and servicing actions for Finance and Operations. 
+- ArtifactsManager downloads files from Azure cloud storage into the local agent file share and also unzips the files into the required format. 
 
 ### Review orchestrator event logs
 From primary OrchestrationService orchestrator machine, review Event Viewer > Applications and Services Logs > Microsoft > Dynamics > AX-LocalAgent
