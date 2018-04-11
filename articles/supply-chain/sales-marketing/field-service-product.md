@@ -36,9 +36,9 @@ ms.search.validFrom: 2017-07-8
 
 This topic discusses the templates and underlying task that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 
-The template that is used, **Field Service Products (Fin and Ops to Field Service)**, is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Fin and Ops to Sales) – Direct](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+The used **Field Service Products (Fin and Ops to Field Service)** template is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash. For more information, see [Products (Fin and Ops to Sales) – Direct](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-This topic describes the only differences between the **Field Service Products (Fin and Ops to Field Service)** and **Products (Fin and Ops to Sales) – Direct** templates.
+This topic only describes the differences between the **Field Service Products (Fin and Ops to Field Service)** and **Products (Fin and Ops to Sales) – Direct** templates.
 
 ## Templates and tasks
 
@@ -50,7 +50,7 @@ This topic describes the only differences between the **Field Service Products (
 
 - Products - Products
 
-The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template. This mapping helps guarantee that the required Field Service–specific field is set correctly.
+The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template. This mapping ensures that the required Field service specific field Service Product Type** is set correctly.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -58,9 +58,11 @@ FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 
 The following value mapping is used.
 
--  **Inventory**: 690970000
--  **NonInventory**: 690970001 
--  **Service**: 690970002 
+```
+inventory     :  690970000
+nonInventory  :  690970001 
+service       :  690970002 
+```
 
 In Finance and Operations, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:
 
