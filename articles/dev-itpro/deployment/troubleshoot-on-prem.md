@@ -166,11 +166,11 @@ Follow the steps below to start over:
         .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
         ```
     1. If any nodes fail, run the CleanFabric.ps1 command, which can be found in C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code. 
-    1. Remove the **C:\ProgramData\SF\** folder on all Service Fabric nodes.
+    1. Remove the `C:\ProgramData\SF\` folder on all Service Fabric nodes.
         - If access is denied, restart the machine and try again.
 1. Remove or update certificates, as needed.
     1. Remove old certificates from all AOS, BI, ORCH, and DC nodes.
-        - The certificates exist in the following certificate stores: **Cert:\CurrentUser\My\**, **Cert:\LocalMachine\My**, and **Cert:\LocalMachine\Root**.
+        - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My`, and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
     - If the ADFS settings will be modified, remove the ADFS certificate as well.
 1. Update configuration files, as needed. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
