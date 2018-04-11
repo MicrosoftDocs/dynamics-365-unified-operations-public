@@ -173,7 +173,7 @@ Follow the steps below to start over:
         - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My`, and `Cert:\LocalMachine\Root`.
     - If the SQL server setup will be modified, remove the SQL server certificates as well.
     - If the ADFS settings will be modified, remove the ADFS certificate as well.
-1. Update configuration files, as needed. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
+1. Update configuration files, as needed. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
     - ConfigTemplate.xml
     - ClusterConfig.json
 1. Access the project in LCS and update the LCS on-premises connector, as needed.
@@ -181,10 +181,10 @@ Follow the steps below to start over:
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
 
-Deploy again following the deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
+Deploy again following the deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## How to find the local agent values that are used
-Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
+Local agent values can be found in Service Fabric Explorer under **Cluster > Applications > LocalAgentType > fabric:/LocalAgent, Details**.
 
 Or, run the following PowerShell command:
 
@@ -193,7 +193,7 @@ Or, run the following PowerShell command:
 ```
 
 ## Install, upgrade, or uninstall local agent
-Local agent installation is discussed in the Set up and deploy on-premises environments topic for the appropriate platform update: 
+Local agent installation is discussed in the set up and deployment instructions for the appropriate platform update: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md) 
 - [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md)
 
@@ -209,7 +209,7 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 > The cleanup command doesn't remove any of the files that were placed in the file share. The file share can be reused.
 
 ## Error occurs when starting up local agent services
-If you receive the error, "Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies", this means that the **Strong name** verification is enabled. This is disabled by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
+If you receive the error, "*Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies*", this means that the **Strong name** verification is enabled. This is disabled by using Configure-PreReqs.ps1. To validate that the verification is no longer enabled, run Test-D365FOConfiguration.ps1.
 
 ## "Validation in progress" message displays for several minutes in LCS
 Complete the following steps to troubleshoot general issues with local agent validation.
