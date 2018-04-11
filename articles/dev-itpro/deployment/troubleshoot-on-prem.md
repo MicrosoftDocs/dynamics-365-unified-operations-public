@@ -86,7 +86,7 @@ This is not a root error. This error means that the status of each node is not r
 Navigate to the Event Viewer on those machines to see the latest activity.
 
 #### AXSFType 
-For AXSFType (AOS) if status of *InBuild* is displayed for period of time review DbSync status and other events from AOS machines. 
+For AXSFType (AOS), if a status of *InBuild* is displayed for a period of time, review DbSync status and other events from AOS machines. 
 
 To diagnose errors, please see the event logs located at:
 
@@ -94,7 +94,9 @@ To diagnose errors, please see the event logs located at:
 - Event Viewer > Custom Views > Administrative Events
 
 #### Service Fabric logs
-Additional details about Service Fabric applications can be found in log files at: `C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log`
+Additional details about Service Fabric applications can be found in log files at: 
+
+C:\ProgramData\SF\<OrchestratorMachineName>\Fabric\work\Applications\LocalAgentType_App<N>\log
 
 ### LCS
 Note the current deployment status for this environment in LCS.
