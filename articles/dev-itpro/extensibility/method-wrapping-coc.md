@@ -248,11 +248,11 @@ The following sections describe restrictions on the use of CoC and method wrappi
 ### Kernel methods can't be wrapped
 Kernel classes aren't X++ classes. Instead, they are classes that are defined in the kernel of the Microsoft Dynamics 365 Unified Operations platform. Even though extension classes are supported for kernel classes, method wrapping isn't supported for methods of kernel classes. In other words, if you want to wrap a method, the base method must be an X++ method.
 
-### X++ classes that are compiled by using Platform update 8 or earlier 
+### X++ classes that are compiled by using Platform Update 8 or earlier 
 The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### Nested class methods (forms) can't be wrapped
-The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods. Methods in nested classes can't be wrapped in class extensions.
+## Nested class methods in forms can be wrapped in Platform Update 16 or later
+The ability to wrap methods in nested classes using class extensions was added in Platform Update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods. 
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 10.
