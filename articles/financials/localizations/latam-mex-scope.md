@@ -104,426 +104,170 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <th>Area</th>
     <th>Item</th>
     <th>AX 2009</th>
-    <th>AX 2012</th>
-    <th>AX 2012</th>
-    <th>D365</th>
+    <th>AX 2012 RTM-R2</th>
+    <th>AX 2012 R3</th>
+    <th>Finance and Operations</th>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>RTM-R2</td>
-    <td>R3</td>
-    <td></td>
-  </tr>
+  
   <tr>
     <td>Master data</td>
-    <td>Legal entity tax identifiers:</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Legal entity tax identifiers:
+  <ul>
+    <li>RFC</li>
+    <li>CURP</li>
+    <li>Company type</li>
+    <li>State inscription</li>
+    <li>Tax regime</li>
+      </ul>
+  </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
+    <tr>
     <td></td>
-    <td>•      RFC</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      CURP</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      Company  type</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      State inscription</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      Tax regime</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Customer tax identifiers:</td>
+    <td>Customer tax identifiers:
+  <ul>
+    <li>RFC</li>
+    <li>CURP</li>
+    <li>Company type</li>
+    <li>State inscription</li>
+       </ul>
+  </td>
     <td>Only RFC</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>•      RFC</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      CURP</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      Company type</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      State inscription</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Vendor tax identifiers:</td>
+    <td>Vendor tax identifiers:
+    <ul>
+    <li>RFC</li>
+    <li>CURP</li>
+    <li>Company type</li>
+    <li>State inscription</li>
+       </ul>
+  </td>
     <td>Only RFC</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+    <tr>
+    <td></td>
+    <td>Vendor tax identifiers for DIOT declaration
+   <ul>
+    <li>Type of vendor</li>
+    <li>Type of operation</li>
+    <li>Tax registration ID for foreign</li>
+    <li>Country/Region code</li>
+     <li>Nationality</li>
+       </ul>
+  </td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>•      RFC</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Bank tax identifiers:
+  <ul>
+    <li>RFC</li>
+      </ul></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>•      CURP</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Tax types:
+   <ul>
+    <li>VAT (IVA)</li>
+     <li>ISR</li>
+     <li>IEPS</li>
+      </ul>
+  </td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>•      Company type</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      State inscription</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Vendor tax identifiers for DIOT declaration</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Tyope of vendor</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Type of operation</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Tax registration ID for foreign</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Country/Regio code</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Nationality</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Bank tax identifiers:</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      RFC</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Tax types:</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        VAT (IVA)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        ISR</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        IEPS</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
+   <tr>
     <td>Taxes</td>
     <td>VAT regular and conditional tax</td>
     <td>Regular</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>(Calulation by Core functionality)</td>
     <td>IEPS</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>ISR regular</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
-    <td>Procure</td>
-    <td>Input UUID of CFDI document</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td>Receive goods and service invoice</td>
-    <td>·        Purchase invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Vendor invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Procure <br></br> Receive goods and service invoice</td>
+    <td>Input UUID of CFDI document
+  <ul>
+    <li>Purchase invoice</li>
+    <li>Vendor invoice</li>
+    <li>Invoice register</li>
+    <li>General journal</li>
+      </ul>
+  </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>·        Invoice register</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Input Series and invoice number
+  <ul>
+    <li>Purchase invoice</li>
+    <li>Vendor invoice</li>
+    <li>Invoice register</li>
+    <li>General journal</li>
+      </ul>
+  </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>·        General journal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Input of related information for DIOT declaration
+  <ul>
+    <li>Purchase invoice</li>
+    <li>Vendor invoice</li>
+    <li>Invoice register</li>
+    <li>General journal</li>
+    <li>Project – Expense</li>
+    <li>Project – Journal Fee</li>
+      </ul>
+  </td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>Input Series and invoice number</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Purchase invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Vendor invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Invoice register</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        General journal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Input of related information for DIOT declaration</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Purchase invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Vendor invoice</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Invoice register</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        General journal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Project – Expense</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Project – Journal Fee</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+  
   <tr>
     <td>CFD</td>
     <td>Support to CFD layout 2.0</td>
