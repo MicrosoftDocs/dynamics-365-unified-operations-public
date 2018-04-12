@@ -103,7 +103,7 @@ There are two ways to create a service request: automatically and on demand.
 
         - Restore a production database to a specific point in time during the cutover phase. In this case, use the same approach that is described for a database refresh to a production environment. However, in this case, the service request must be worded as follows: **This is a request for a point-in-time restore of production during the cutover phase. Restore point in UTC: \<mm/dd/yyyy hh:mm in UTC\>. I acknowledge that this will overwrite the database currently in production.**
 
-        - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](./sysadmin/maintenance-mode.md).
+        - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
         - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
         - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
