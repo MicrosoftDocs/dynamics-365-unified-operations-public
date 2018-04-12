@@ -37,7 +37,7 @@ In Platform update 14, Microsoft Dynamics 365 for Finance and Operations support
 
 To learn more about embedding a PowerApp, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-[!Video https://www.youtube.com/embed/x3qyA1bH-NY]
+> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
 ## Adding an embedded PowerApp to a page
 ### Overview
