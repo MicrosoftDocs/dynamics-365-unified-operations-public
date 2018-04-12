@@ -41,8 +41,6 @@ A service request is a ticket that you use to request that the Dynamics Service 
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
-> [!NOTE]
-> Microsoft frequently reviews all incoming service requests. By selecting the correct type of service request for your scenario, you help the DSE team handle the request in a timely manner.
 
 ## View service requests
 
@@ -80,39 +78,41 @@ There are two ways to create a service request: automatically and on demand.
 - **Upgrade** – To request that DSE upgrade one sandbox environment, Standard Acceptance Test environment, or production environment, on the **Environment details** page for that environment, select **Maintain**, and then select **Upgrade**. For more information, see [Process for moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md).
 
 ### Create a service request on demand
+Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
+
+Microsoft frequently reviews all incoming service requests. By selecting the correct type of service request for your scenario, you help the DSE team handle the request in a timely manner.
 
 1. On the **Work items** page, on the **Service requests** tab, select **Add**.
 2. In the **Create request** dialog box, select the type of service request to create. The options on the page then reflect the specific type of request that you selected.
 
-    - **Database point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
+    
+
+
+   - **Database point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
 
         > [!NOTE]
-        > If you must restore a production database during the cutover phase, select the **Other request** type. If you must restore a production database when you're already live in operations, submit a support ticket through LCS.
+        > If you must restore a *production* database during the cutover phase, select the **Other request** type. If you must restore a production database when you're already live in operations, submit a support ticket through LCS.
 
-    - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).
+   - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).
 
         > [!NOTE]
         > If you must refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Other request** type.
 
-    - **Other request** – Select this request type to request that the DSE team perform the following actions:
+   - **Other request** – You must use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
-        - Do a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Raise a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
+       - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
-            > [!NOTE]
-            > The service request must be worded exactly as described in that topic.
+          > [!NOTE]
+          > The service request must be worded exactly as described in the  topic.
 
-        - Restore a production database to a specific point in time during the cutover phase. In this case, use the same approach that is described for a database refresh to a production environment. However, in this case, the service request must be worded as follows: **This is a request for a point-in-time restore of production during the cutover phase. Restore point in UTC: \<mm/dd/yyyy hh:mm in UTC\>. I acknowledge that this will overwrite the database currently in production.**
+     - Restore a production database to a specific point in time during the cutover phase. In this case, use the approach described for a database refresh to a production environment. However, in this case, the service request must be worded as follows: *This is a request for a point-in-time restore of production during the cutover phase. Restore point in UTC: \<mm/dd/yyyy hh:mm in UTC\>. I acknowledge that this will overwrite the database currently in production.*
 
-        - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
-        - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
-        - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
+      - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
+      - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
+      - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
-        > [!NOTE] 
-        > Use the **Other request** request type exactly as described here. If you word the request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification. If you use the **Other request** type for any request that isn't listed here, the request will be denied.
 
-Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
-
-### Denied service requests
+### Commonly denied service requests
 
 Here are some typical examples of service requests that will be denied:
 
