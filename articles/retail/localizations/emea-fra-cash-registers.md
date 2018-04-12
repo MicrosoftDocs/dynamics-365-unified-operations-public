@@ -73,11 +73,11 @@ The signature is created and recorded in the channel database at the same time t
 1. Based on the type of data, select the next sequential number for signing purposes.
 2. Extract the data fields that must be signed from the record that is being signed.
 3. Build a string that consists of a comma-separated list of the data fields.
-4. Add the previous signature **for the same type of data**.
+4. Add the previous signature for the same type of data.
 5. Calculate a hash code of the string by using the SHA-x algorithm.
 6. Encrypt the resulting string by using a digital certificate.
 7. Do the base64url transformation for the resulting string.
-8. Store the string that is used for signing, the sequential number, the signature, and the footprint of the certificate in a fiscal response record that is linked to the transaction or event.
+8. Store the string that is used for signing, the sequential number, the signature, and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
 9. Transfer the fiscal response to the enterprise resource planning (ERP) system in Retail headquarters, together with the transaction or event.
 
 #### Digital signing of sales transactions
@@ -173,10 +173,10 @@ There is an option to enforce daily shift closing in POS. A shift can't last lon
 
 The information that is included on X and Z reports is based on French requirements:
 
-- Total sales. This information includes amounts only for cash sales transactions. Prepayments and operations for issuing a gift card are excluded.
-- Total returns.
-- Cumulative grand total.
-- Cumulative perpetual grand total.
+- **Total sales** for the shift. This information includes amounts only for cash sales transactions. Prepayments and operations for issuing a gift card are excluded.
+- **Total returns** for the shift.
+- **Cumulative grand total**. This amount is calculated as the cumulative grand total amount of the previous shift plus the total sales amount of this shift minus the absolute value of the total returns amount of this shift.
+- **Cumulative perpetual grand total**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift plus the total sales amount of this shift plus the absolute value of the total returns amount of this shift.
 - Value-added tax (VAT) amounts per tax rate.
 
 The totals are also stored in the closed shift record and transferred to Retail headquarters.
@@ -185,9 +185,9 @@ The totals are also stored in the closed shift record and transferred to Retail 
 
 Period grand total journals summarize sales totals per store and fiscal period.
 
-Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the period that includes the specified date is used as the fiscal period.
+Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
 
-The journal can then be calculated. Shifts that were closed during the journal's period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code. You can also view the shifts that are included in the journal.
+The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code. You can also view the shifts that are included in the journal.
 
 After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and period.
 
