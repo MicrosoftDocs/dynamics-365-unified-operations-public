@@ -46,7 +46,7 @@ To learn about POS features that are available to customers in all countries or 
 
 The following POS localization features that are available to customers in all countries or regions can now be used specifically for France:
 
-- **Register additional events in the POS audit event log.** If the **Audit** check box in the POS functionality profile is selected, the following events are registered in the POS audit event log:
+- **Register additional events in the POS audit event log.** If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
 
     - Sign-in
     - Sign-out
@@ -98,7 +98,7 @@ The data that is signed for a sales transaction is a text string that consists o
 4. The register number.
 5. The sequential number of the signed sales transaction.
 6. The type of sales transaction.
-7. The designation of the first signed sales transaction for the register (Y/N).
+7. A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
 8. The previous signature for the same register. A blank value is used for the first signed sales transaction.
 
 You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Retail store transactions** page in Retail headquarters.
@@ -113,7 +113,7 @@ When a copy of a receipt is printed, the event is registered in the POS audit ev
 4. The staff ID of the operator who is printing the receipt copy.
 5. The date and time of the receipt copy event, in the format YYYYMMDDHHMMSS.
 6. The sequential number of the signed receipt copy event.
-7. The designation of the first signed receipt copy event for the register (Y/N).
+7. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
 
 You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Retail headquarters.
@@ -126,7 +126,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 2. The total amount of sales. The amount includes tax.
 3. The date and time of the shift closing event, in the format YYYYMMDDHHMMSS.
 4. The sequential number of the shift closing event.
-5. The designation of the first signed shift closing event for the register (Y/N).
+5. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
 6. The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
 You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Signature** tab of the **Shifts** page in Retail headquarters.
@@ -141,7 +141,7 @@ The data that is signed for an event other than a receipt copy or shift closing 
 4. The date and time of the event.
 5. The staff ID of the operator who raised the event.
 6. The register number.
-7. The designation of the first signed event for the register (Y/N).
+7. A value (Y/N) that indicates whether the transaction is the first signed event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed event.
 
 You can view the event signature, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Retail headquarters.
@@ -185,13 +185,13 @@ The totals are also stored in the closed shift record and transferred to Retail 
 
 Period grand total journals summarize sales totals per store and fiscal period.
 
-Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. You can also specify the end date of the journal. In this case, the period that includes the specified date is used as the fiscal period.
+Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the period that includes the specified date is used as the fiscal period.
 
 The journal can then be calculated. Shifts that were closed during the journal's period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code. You can also view the shifts that are included in the journal.
 
 After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and period.
 
-The closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Retail headquarters.
+A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Retail headquarters.
 
 #### Archive
 
@@ -226,11 +226,11 @@ You must also specify sales tax groups and enable the **Prices include sales tax
 
 ### Set up functionality profiles
 
-You must enable auditing by selecting the **Audit** check box.
+You must enable auditing by setting the **Audit** option to **Yes**.
 
 To enforce daily shift closing, you must make the following changes:
 
-- Select the **Enforce daily shift closing** check box.
+- Set the **Enforce daily shift closing** option to **Yes**.
 - Set the **Shift closing time** and **Shift closing interval (minutes)** fields.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
@@ -277,17 +277,17 @@ For every required receipt format, change the value of the **Print behavior** fi
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
-1. **Header:** Add the following field:
+- **Header:** Add the following field:
 
     - **Transaction type** – This field identifies the type of receipt.
 
-2. **Lines:** We recommend that you add the following standard fields:
+- **Lines:** We recommend that you add the following standard fields:
 
     - **Unit price with tax**
     - **Total price with tax**
     - **Tax ID**
 
-3. **Footer:** Add the following fields:
+- **Footer:** Add the following fields:
 
     - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
     - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
