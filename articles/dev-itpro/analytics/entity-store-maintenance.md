@@ -56,8 +56,8 @@ To resolve this issue:
 	
 3. Delete all pending batch jobs associated with the entity store. These batch jobs:
 
-- Will have a state of Waiting.
-- Will typically have a description of Deploy measurement.
+- Will have a status of **Waiting**.
+- Will typically have a description of **Deploy measurement**.
 	
  	> [!Note]
  	> The default description is **Deploy measurement**. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**.
