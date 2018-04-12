@@ -42,7 +42,7 @@ To verify the address, note what was used in the section **Create DNS zones and 
 - [Platform update 12](setup-deploy-on-premises-pu12.md#createdns)
 - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#createdns)
 
-To access the site, the client certificate needs to be in `cert:\CurrentUser\My` (**Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
+To access the site, the client certificate needs to be in `cert:\CurrentUser\My` (in Certificate Manger go to **Certificates - Current User** > **Personal** > **Certificates**) of the machine that is accessing the site. When you access the site, select the client certificate when prompted.
 
 ## Monitor deployment
 
