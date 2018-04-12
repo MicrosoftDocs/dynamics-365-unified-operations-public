@@ -477,11 +477,13 @@ To see the new folders, you need to close and reopen the event viewer. You will 
 
 ### Error while executing AddAXDatabaseChangeTracking
 If you encounter an error while executing AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. For example, ax.d365ffo.onprem.contoso.com.
+
 The error may have also occurred because of an issue with the star/* certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that is not valid or does not match the host ax.d365ffo.onprem.contoso.com.
 
 ### Run initialize database script and validate DBs have correct users
 If you only receive the AddAXDatabaseChangeTracking event, try to reach the Metadataservice of Dynamics 365 for Finance and Operations by going to
-https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService.
+`https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`.
+
 Next, check the certificates of the service in the wif.config file. To find the file, log on to one of the AOS boxes and, using Task manager, locate **AxService.exe**, right-click and select **Open file location**. In the wif.config file, you should see 3 thumbprints. Note the following requirements for these thumbprints:
 
 - They need to be different.
