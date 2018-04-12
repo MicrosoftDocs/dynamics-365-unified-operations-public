@@ -96,7 +96,7 @@ There are two ways to create a service request: automatically and on demand.
         > [!NOTE]
         > If you must refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Other request** type.
 
-   - **Other request** – You must use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform the following actions:
+   - **Other request** – You must use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform the following actions:
 
        - Do a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
