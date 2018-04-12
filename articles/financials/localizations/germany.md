@@ -5,7 +5,7 @@ title: Germany
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Germany.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,21 +32,21 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
+This topic includes information and links to resources that should be considered for legal entities with a primary address in Germany.
+
 ## Audit file
-
-
--   [German audit file (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
-  - [Customize audit file configuration](/tasks/customize-german-audit-file-configuration.md)
-  - [Generate the audit file](/tasks/german-audit-file.md)
-  - [Import audit file configuration](/tasks/import-german-audit-file-configuration.md)
+- [German audit file (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
+- [Customize audit file configuration](/tasks/customize-german-audit-file-configuration.md)
+- [Generate the audit file](/tasks/german-audit-file.md)
+- [Import audit file configuration](/tasks/import-german-audit-file-configuration.md)
 
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](/tasks/de-00002-depreciation.md)
 
-## ELSTER
+## Electronic transmission of VAT declaration (ELSTER)
 - [Electronic transmission of VAT declaration (ELSTER)](/tasks/de-00003-electronic-transmission-elster.md)
-- [Elster Testmerker](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
+- [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 
 ## Credit memos originating from sales
 -   [Print a separate label for credit memos that originate from sales](emea-deu-print-separate-label-credit-memo-originating-sales.md)
@@ -59,9 +59,10 @@ ms.dyn365.ops.version: AX 7.0.1
 
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
-|| | [German journal list report](emea-deu-journal-list-report.md)| 
+|German journal list report| **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|The German journal list report displays a list of transactions, sorted by journal sequence number, that result from running the Journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md)| 
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configurations)
+- [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
