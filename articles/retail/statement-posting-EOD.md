@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Improvements to statement posting
 
+[!include[banner](includes/banner.md)]
+
+
 This topic describes the first set of improvements around the statement posting feature available in the 7.3.2 release of the product.
 
 ## Activation
@@ -197,7 +200,4 @@ Some of the other back end improvements around the new statement posting feature
 
 
 
-# <add title>
-
-[!include[banner](includes/banner.md)]
 
