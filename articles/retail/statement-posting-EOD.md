@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Topic name]
+title: Improvements to statement posting
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: josaw1
 manager: AnnBe
@@ -14,46 +14,43 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User/Developer/IT Pro]
+audience: Application User
 # ms.devlang: 
-ms.reviewer: [Content Strategist microsoft alias]
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
+ms.search.region: Global 
+ms.search.industry: retail
+ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Improvements around statement posting
+# Improvements to statement posting
 
-## Overview ##
+This topic describes the first set of improvements around the statement posting feature available in the 7.3.2 release of the product.
 
-At the 2017 Technical Conference, Microsoft Dynamics 365 for Retail team announced a multi-release plan to enhance the statement posting capabilities in the product. This was warranted due to the multiple reliability, performance & product issues around this feature across multiple versions of the product.
+## Activation
 
-Accordingly, the first set of improvements around the statement posting feature was released in the 7.3.2 release of the product.
+During deployment of the 7.3.2 version of the application, the application is defaulted to the legacy feature for statement postings. To enable the new and improved statement posting feature, the configuration keys for the feature must be enabled using the following steps.
 
-## Activation ##
+1.  Navigate to the **License configuration** page (**System administration > Setup > License configuration**) and clear the  **Retail statements (legacy)** check box under the **Retail** node.
 
-During deployment of the 7.3.2 version of the application, the application is defaulted to the legacy feature for statement postings. To enable the new & improved statement posting feature, the configuration keys for the same must be enabled as per the steps outlined below:
+2.  Select the **Retail statements** check box under the **Retail** node.
 
-1.  Navigate to System administration > Setup > License configuration and uncheck the configuration key “Retail statements (legacy)” under the Retail node
-
-2.  Navigate to System administration > Setup > License configuration and check the configuration key “Retail statements” under the Retail node
-
-3.  When the new “Retail statements” configuration key is enabled, a new menu item called as “Retail statements” will be enabled using which statements can be created, calculated and posted manually. Any statement resulting in an error using the batch posting process will also be available under this menu item. With the legacy configuration key, the menu item name would be “Open statements”
+3.  When the new **Retail statements** configuration key is enabled, a new menu item called **Retail statements** will be enabled in which statements can be created, calculated, and posted manually. Any statement resulting in an error using the batch posting process will also be available under this menu item. With the legacy configuration key, the menu item name would be **Open statements**.
 
 The following validations are built into the application around these configuration keys:
 
-1.  Both the configuration keys cannot be enabled at the same time
+- Both of the configuration keys cannot be enabled at the same time.
 
-2.  A statement must go through all the various operations in its lifecycle in terms of Create, Calculate, Clear, Post etc. using only one of the configuration keys. For e.g.: One cannot Create and calculate a statement with the “Retail statement (legacy)” configuration key turned ON and then try and post the same statement with the “Retail statement” configuration key turned ON.
+- A statement must go through all the various operations in its lifecycle in terms of Create, Calculate, Clear, Post, etc. using only one of the configuration keys. For e.g.: One cannot Create and calculate a statement with the **Retail statement (legacy)** configuration key turned on, and then try and post the same statement with the **Retail statement** configuration key turned on.
 
-***Note:*** As a best practice recommendation, it is advisable to use the new & improved statement posting feature using the “Retail statements” configuration key unless there are compelling reasons to use the legacy option. Microsoft will continue to invest and improve the new statement posting feature and it is important to switch to it at the earliest to reap the benefits from the same. With newer releases, the new feature will be made as the default option for statement postings and the legacy capability will be sunsetted over a period.
+> [!Note]
+> We recommend that you use the new and improved statement posting feature using the **Retail statements** configuration key unless there are compelling reasons to use the legacy option. Microsoft will continue to invest and improve the new statement posting feature and it is important to switch to it at the earliest opportunity to reap the benefits from the feature. With newer releases, the new feature will be made as the default option for statement postings and the legacy capability will be sunsetted over a period.
 
-## Setup ##
+## Setup
 
 As a part of improvements around statement posting, a few new parameters are introduced in Statement fast tab under Retail Parameters > Posting tab and the details of the same are as below:
 
@@ -67,7 +64,7 @@ As a part of improvements around statement posting, a few new parameters are int
 
 In addition to the above, all the settings & parameters that govern statement postings as defined under Retail Stores and Retail parameters are all applicable even for the new statement posting feature.
 
-## Processing ##
+## Processing
 
 Statements can be calculated and posted using the batch process (Calculate statements in batch & Post statements in batch) or can also be calculated and posted manually using the “Retail statements” menu item using the new feature.
 
