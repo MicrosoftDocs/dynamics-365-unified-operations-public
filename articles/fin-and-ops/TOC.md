@@ -1047,6 +1047,7 @@
 ###### [PIS and COFINS fixed assets](../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md)
 
 #### Mexico
+##### [Scope of localization](../financials/localizations/latam-mex-scope.md)
 ##### [Adjustment inflation declaration report](../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 ##### [Cancel an electronic invoice](../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md)
 ##### [CFDI Version 3.3](../financials/localizations/latam-mex-cfdi-3-3.md)
