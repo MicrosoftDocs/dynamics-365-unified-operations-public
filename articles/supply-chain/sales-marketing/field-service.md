@@ -60,5 +60,5 @@ To use the Field Service integration solution, you must install the following co
 ### Microsoft Dynamics 365 for Field Service 9.0 or later
 
 - Dynamics 365 for Field Service version 1612 (9.0.1.733) (DB 9.0.1.733) online or a later version.
-- Prospect to cash solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Prospect to Cash (P2C) solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Field Service integration solution for Dynamics 365, version 1.0.0.0 or a later version. The solution is available for download from AppSource. **(PENDING RELEASE)**
