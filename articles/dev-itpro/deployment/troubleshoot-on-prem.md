@@ -78,7 +78,7 @@ Folders that contain additional information:
 - AX-BridgeService 
 
 ### Service Fabric Explorer
-Note state of cluster, application, and nodes. For information about accessing the Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessingservicefabricexplorer).
+Note state of cluster, application, and nodes. For information about accessing the Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessing-service-fabric-explorer).
 
 #### Error "Partition is below target replica or instance count"
 This is not a root error. This error means that the status of each node is not ready. For AXSFType (AOS), the status could still be *InBuild*.
