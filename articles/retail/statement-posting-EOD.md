@@ -1,33 +1,31 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: [Topic name]
+description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: josaw1
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: [Pick one: Application User/Developer/IT Pro]
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: [Content Strategist microsoft alias]
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: anpurush
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: [author's Microsoft alias]
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+---
 
 # Improvements around statement posting
 
