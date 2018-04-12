@@ -5,7 +5,7 @@ title: Entity store mainentance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/06/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,11 +52,20 @@ To resolve this issue:
 
 1.  Sign in to Dynamics 365 for Finance and Operations.
 
-2.  Go to the **Entity store** page (**System Administration** \> **Setup** \> **Entity Store**).
+2. Go to the **Batch jobs** page (**System administration > Inquiries > Batch jobs**). 
+	
+3. Delete all pending batch jobs associated with the entity store. These batch jobs:
+  - Will have a state of Waiting.
+  - Will typically have a description of Deploy measurement.
+			 
+  > [!Note]
+  > The default description is **Deploy measurement**. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**.
 
-3.  Select all entities that need to be refreshed.
+4.  Go to the **Entity store** page (**System Administration** \> **Setup** \> **Entity Store**).
 
-4.  Click **Refresh**, and then click **OK**.
+5.  Select all entities that need to be refreshed.
+
+6.  Click **Refresh**, and then click **OK**.
 
 After the refresh completes, the application analytical workspaces and reports will render data.
 
