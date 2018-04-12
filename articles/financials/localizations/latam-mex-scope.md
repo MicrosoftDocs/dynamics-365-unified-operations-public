@@ -197,7 +197,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
   </tr>
    <tr>
-    <td>Taxes</td>
+    <td>Taxes <br></br>(Calulation by Core functionality)</td>
     <td>VAT regular and conditional tax</td>
     <td>Regular</td>
     <td>Yes</td>
@@ -205,7 +205,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
   </tr>
   <tr>
-    <td>(Calulation by Core functionality)</td>
+    <td></td>
     <td>IEPS</td>
     <td>Yes</td>
     <td>Yes</td>
@@ -274,7 +274,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -282,7 +282,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -290,7 +290,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -298,7 +298,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -306,7 +306,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -314,7 +314,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td></td>
@@ -322,7 +322,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-    <td>O</td>
+    <td>No</td>
   </tr>
   <tr>
     <td>CFDI</td>
@@ -358,235 +358,147 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
   </tr>
   <tr>
     <td></td>
-    <td>Support to CFDI Layout 3.3 in customer advance payments</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        CFDI advance payment</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        CFDI invoice and settlement</td>
+    <td>Support to CFDI Layout 3.3 in customer advance payments
+  <ul>
+    <li>CFDI advance payment</li>
+    <li>CFDI invoice and settlement</li>
+    <li>CFDI advance payment reverse</li>
+      </ul>
+  </td>
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        CFDI advance payment reverse</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td></td>
     <td>Support to CFDI Layout 3.3 in packing slip and transfer orders between different sites (TRASLADOS)</td>
-    <td>O</td>
-    <td>O</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
+   <tr>
     <td></td>
     <td>Support to CFDI Layout 3.3 in foreign customer invoices and foreign complement 1.1</td>
-    <td>O</td>
-    <td>O</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
+    <tr>
     <td></td>
     <td>Support to Global CFDI Layout 3.3 in customer receipts (Retail)</td>
-    <td>O</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>Support to CFDI withholding Layout 1.0</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
-    <td>CFDI messages/events:</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>CFDI messages/events:
+      <ul>
+        <li>Issue</li>
+        <li>Cancel</li>
+        <li>Manual Cancel</li>
+      </ul>
+  </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>•      Issue</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      Cancel</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>•      Manual Cancel</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
+    <tr>
     <td></td>
     <td>Printatble CFDI version in PDF format including Bidimensional bar code</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>XML viewer for issued CFDI invoice</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>Automatic sending of CFD document through email to customers during posting process</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>PAC</td>
     <td>Microsoft only provides a code example for PAC integration by using Web server certificate authentication.</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>DIOT</td>
     <td>Generation of DIOT declaration as text file</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>Adjustment inflation</td>
     <td>Generation and registration of Ajudustment inflation process</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>ISR declaration</td>
     <td>Generation of ISR declaration report</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>VAT reports</td>
-    <td>Generation of VAT reports</td>
-    <td>O</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Generation of VAT reports
+  <ul>
+    <li>Sales</li>
+    <li>Purchase</li>
+      </ul>
+  </td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>·        Sales</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Purchase</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
+   <tr>
     <td>Electronic ledger accounting statement</td>
-    <td>Generation of electronic ledger accounting XML files:</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Chart of Account</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Trial Balance</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Ledger entries with related documents (folios)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>·        Auxiliary ledger account</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Generation of electronic ledger accounting XML files:
+  <ul>
+    <li>Chart of Account</li>
+    <li>Trial Balance</li>
+    <li>Ledger entries with related documents (folios)</li>
+    <li>Auxiliary ledger account</li>
+      </ul>
+  </td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
 </table>
 
