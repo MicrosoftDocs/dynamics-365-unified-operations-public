@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form:  WMSSpaceUtilSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -78,7 +78,7 @@ Create a space utilization setup for a warehouse
     locations should not be included in the calculation of available space. You
     can block an inventory location for input and output by specifying a
     blocking cause for the location in the **Input blocked** or the **Output
-    blocked** fields on the **Other** tab in the **Inventory locations** form
+    blocked** fields on the **Other** tab on the **Inventory locations** page.
 
 5.  On the **Location type** tab, select the location types to include in the
     space utilization calculation. You must select at least one location type
