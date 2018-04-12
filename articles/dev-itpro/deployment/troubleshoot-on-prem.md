@@ -364,7 +364,7 @@ If you receive a warning in Service Fabric Explorer after upgrading, then note t
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
 
-## What Cluster ID in Agent config should be used
+## What Cluster ID in Agent config should be used?
 The Cluster ID can be any GUID. This GUID is used for tracking purposes.
 
 ## Local agent stops working after the tenant for the project from LCS is changed
@@ -376,7 +376,7 @@ Complete the following steps to configure local agent with updated tenant.
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-3. Complete the steps in step 11. Configure LCS connectivity for the tenant for your environment:
+3. Complete the steps in section **Configure LCS connectivity for the tenant** for your environment:
     - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
 
@@ -401,7 +401,7 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 This error may also occur if the parameter **''** is not defined in the ApplicationManifest file. To verify this, go to **Event Viewer** > **Custom Views** > **Administrative Events** and check for the following:
 
-- Proper layout/structure of credentials.json file encrypt credentials. For more information, see Encrypt credentials for your environment:
+- Proper layout/structure of credentials.json file encrypt credentials. For more information, see the section **Encrypt credentials** for your environment:
     - [Platform update 12](setup-deploy-on-premises-pu12.md#encryptcred)
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
 - An end quote at the end of the line or on the next line.
@@ -419,7 +419,7 @@ Use the following properties to create the DataEncryption certificate:
 - **Thumbprint algorithm:** sha1
 
 > [!WARNING]
-> Do not use self-signed certificates in production environments. Instead, use certificates that are issued by Certificate authorities.
+> Do not use self-signed certificates in production environments. Instead, use certificates that are issued by certificate authorities.
 
 ## Can't find the certificate and private key to use for decryption (0x8009200C)
 If you are missing a certificate and ACL, or you have the wrong thumbprint entry, check for special characters and check in `C:\ProgramData\SF\<AOSMachineName>\Fabric\work\Applications\AXBootstrapperAppType_App<N>\log\ConfigureCertificates-<timestamp>.txt` for thumbprints.
@@ -452,7 +452,11 @@ If none of the above works:
 Additional logging can be done by registering providers. Download the [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine and run the following commands. To determine what machine is the primary instance, go to Service Fabric Explorer, expand **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent/OrchestrationService** > **(guid)**.
 
 > [!Note]
-> If results in the event viewer are not displayed correct (for example, if words are truncated), get the latest manifest and .dll file. To get the latest manifest and .dll, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of [Setup and deployment instructions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupfile). For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
+> If results in the event viewer are not displayed correct (for example, if words are truncated), get the latest manifest and .dll file. To get the latest manifest and .dll file, go to the WP folder in the agent file share. This share was created in the **Set up file storage** section of the setup and deployment instructions:
+>   - [Platform update 12](setup-deploy-on-premises-pu12.md#setupfile)
+>   - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
+
+> For example: [*Agent Share*]\wp\[*Deployment name*]\StandaloneSetup-...\Apps\ETWManifests. 
 
 ```powershell
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"}
