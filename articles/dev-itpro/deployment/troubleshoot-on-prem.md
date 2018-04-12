@@ -359,7 +359,7 @@ For more informaiton, see [Troubleshoot application upgrades](https://docs.micro
 
 To see when new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
-If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes, application, and code restart. See [How to restart applications (example AOS)](troubleshoot-on-prem.md#howtorestartapplications(exampleAOS) for instructions.
+If you receive a warning in Service Fabric Explorer after upgrading, then note the node and restart via expanding nodes, application, and code restart. See [How to restart applications (example AOS)](troubleshoot-on-prem.md#how-to-restart-applications-example-aos) for instructions.
  
 ## Error "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and reopen PowerShell. If the error still occurs, restart the machine.
