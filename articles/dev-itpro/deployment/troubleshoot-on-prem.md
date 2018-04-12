@@ -498,9 +498,7 @@ If the thumbprints do not follow the list of requirements, you must redeploy fro
 The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
 
 ### Error on ImportDefaultReports 
-Issue: MR reports are checked out during deployment.
-
-If MR reports are checked out, deployment will fail. To see if reports are checked out, run the following select statements on the  FinancialReporting database:
+If MR reports are checked out during deployment, the deployment will fail. To see if reports are checked out, run the following select statements on the FinancialReporting database:
 
 ```
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null 
@@ -568,8 +566,8 @@ If you are unable to connect to the remote server at the following places:
 - System.Net.HttpWebRequest.GetResponse()
 - System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
 - System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
-Go to the `C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log` folder where you get the error and out files.
-The out file contains the following information:
+
+Go to the C:\ProgramData\SF\AOS_1\Fabric\work\Applications\AXSFType_App35\log folder where you get the error and out files. The out file contains the following information:
 
 - System.Net.WebException: Unable to connect to the remote server --->
 - System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443
@@ -577,24 +575,24 @@ The out file contains the following information:
 You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](/sysinternals/downloads/psping).
 
 ### Redirect login questions and issues
-If you are having issues with login, verify in Service Fabric Explorer that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** are valid. For example,
+If you are having issues with login, verify in Service Fabric Explorer that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** are valid. For example:
 
-- **Provisioning\_AdminPrincipalName** would be AXServiceUser@contoso.com
-- **Provisioning\_AdminIdentityProvider** would be https://DC1.contoso.com/adfs
+- **Provisioning\_AdminPrincipalName** would be `AXServiceUser@contoso.com`.
+- **Provisioning\_AdminIdentityProvider** would be `https://DC1.contoso.com/adfs`.
 
 If they are not valid, you will not be able to proceed and you will need to redeploy from LCS.
 
-If you used **Reset-DatabaseUsers.ps1**, you will need to restart the Dynamics Service for your changes to take effect. If you are still having login issues, in the **USERINFO** table, note the **NETWORKDOMAIN** and **NETWORKALIAS**. For example,
+If you used **Reset-DatabaseUsers.ps1**, you will need to restart the Dynamics Service for your changes to take effect. If you are still having login issues, in the **USERINFO** table, note the **NETWORKDOMAIN** and **NETWORKALIAS**. For example:
 
-- NETWORKDOMAIN example https://DC1.contoso.com/adfs
-- NETWORKALIAS example AXServiceUser@contoso.com
+- NETWORKDOMAIN example `https://DC1.contoso.com/adfs`.
+- NETWORKALIAS example `AXServiceUser@contoso.com`.
 
-In the ADFS machine, go to **Server Manager** > **Tools** > **AD FS Management** > **Service**. Right-click **Service and Edit Federation Service Properties**. Note the Federation Service identifier, which should match the **USERINFO.NETWORKDOMAIN (https://DC1.contoso.com/adfs)**. Verify that both are HTTPS in **USERINFO**.
+In the ADFS machine, go to **Server Manager** > **Tools** > **AD FS Management** > **Service**. Right-click **Service and Edit Federation Service Properties**. Note the Federation Service identifier, which should match the **USERINFO.NETWORKDOMAIN (`https://DC1.contoso.com/adfs`)**. Verify that both are HTTPS in **USERINFO**.
 
 In the ADFS machine, go to **Event Viewer** > **Applications and Services Logs** > **AD FS** > **Admin** and note any errors.
 
 ## Login issues
-If you or others are experiencing login issues, verify in Service Fabric Explorer that Provisioning\_AdminPrincipalName and Provisioning\_AdminIdentityProvider is valid. If it is valid, then on the primary SQL Server machine, run the following.
+If you or others are experiencing login issues, verify in Service Fabric Explorer that Provisioning\_AdminPrincipalName and Provisioning\_AdminIdentityProvider is valid. If it is valid, then on the primary SQL Server machine, run the following command.
 
 ```powershell
 .\Reset-DatabaseUsers.ps1
@@ -621,7 +619,7 @@ If you receive one of the following errors:
 The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes.
 
 ## Keyset doesn't exist
-If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete Set up VMs for your environments.
+If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete the **Set up VMs** section for your environments.
 - [Platform update 12](setup-deploy-on-premises-pu12.md#setupvms)
 - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupvms)
 
@@ -635,10 +633,9 @@ If you receive this error, "RunAsync failed due to an unhandled FabricException 
 ## Service Fabric AOS Node Error during build: Execution Timeout Expired
 Error message:
 
-```
-The timeout period elapsed prior to completion of the operation or the server is not responding.
-The statement has been terminated.
-```
+*The timeout period elapsed prior to completion of the operation or the server is not responding.
+The statement has been terminated.*
+
 
 Only one AOS machine can DB Sync at a time. This error message is safe to ignore, as it means that one of the AOS VMs is running DB Sync, and the others yield a warning that they cannot. The fact that DB Sync is running can be verified by checking **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize/Operational** on the AOS VM that is not yielding warnings.
 
