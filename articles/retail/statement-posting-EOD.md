@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include[banner](includes/banner.md)]
 
 
-This topic describes the first set of improvements around the statement posting feature available in the 7.3.2 release of the product.
+This topic describes the first set of improvements to the statement posting feature, which is available in the 7.3.2 release of the product.
 
 ## Activation
 
@@ -42,38 +42,37 @@ During deployment of the 7.3.2 version of the application, the application is de
 
 2.  Select the **Retail statements** check box under the **Retail** node.
 
-3.  When the new **Retail statements** configuration key is enabled, a new menu item called **Retail statements** will be enabled in which statements can be created, calculated, and posted manually. Any statement resulting in an error using the batch posting process will also be available under this menu item. With the legacy configuration key, the menu item name would be **Open statements**.
+When the new **Retail statements** configuration key is enabled, a new menu item called **Retail statements** will be enabled in which statements can be created, calculated, and posted manually. Any statement resulting in an error using the batch posting process will also be available under this menu item. With the legacy configuration key, the menu item name would be **Open statements**.
 
 The following validations are built into the application around these configuration keys:
 
 - Both of the configuration keys cannot be enabled at the same time.
 
-- A statement must go through all the various operations in its lifecycle in terms of Create, Calculate, Clear, Post, etc. using only one of the configuration keys. For e.g.: One cannot Create and calculate a statement with the **Retail statement (legacy)** configuration key turned on, and then try and post the same statement with the **Retail statement** configuration key turned on.
+- A statement must go through all the various operations in its lifecycle (including Create, Calculate, Clear, Post, etc.) using only one of the configuration keys. For e.g.: One cannot create and calculate a statement with the **Retail statement (legacy)** configuration key turned on, and then try and post the same statement with the **Retail statement** configuration key turned on.
 
 > [!Note]
 > We recommend that you use the new and improved statement posting feature using the **Retail statements** configuration key unless there are compelling reasons to use the legacy option. Microsoft will continue to invest and improve the new statement posting feature and it is important to switch to it at the earliest opportunity to reap the benefits from the feature. With newer releases, the new feature will be made as the default option for statement postings and the legacy capability will be sunsetted over a period.
 
 ## Setup
 
-As a part of improvements around statement posting, a few new parameters are introduced in Statement fast tab under Retail Parameters > Posting tab and the details of the same are as below:
+With the improvements to statement posting, a few new parameters are introduced in the **Statement** FastTab under the **Retail Parameters > Posting** tab. Details of these new paramters are listed below.
 
-**1.  Disable clear statement:** This parameter is only applicable for the legacy feature of statement posting. The recommendation is for this parameter to be set to NO as this will not allow users to Clear statements which are in a semi-posted state. Clearing statements that are in semi-posted state causes further data corruption. This parameter should only be set to YES under exceptional circumstances.
+- **Disable clear statement:** This parameter is only applicable for the legacy feature of statement posting. The recommendation is for this parameter to be set to NO as this will not allow users to clear statements which are in a semi-posted state. Clearing statements that are in a semi-posted state causes further data corruption. This parameter should only be set to **Yes** under exceptional circumstances.
 
-**2.  Reserve inventory during calculation:** The recommended process for inventory reservation is to use the “Post inventory” batch job and the recommendation is to set this parameter to NO. With this parameter set to NO, the new feature will not try to create inventory reservation entries (if not already done through Post inventory batch job) during calculation and will only do it at the time of posting. It was design choice to implement it that way as typically the time window between the calculate process and post process is normally small. However, if a customer does want to reserve inventory at the time of calculation, then they can do so by setting this parameter to YES. The legacy feature would always reserve inventory (if not already done through Post inventory batch job), during the statement calculation process irrespective of any settings of this parameter.
+- **Reserve inventory during calculation:** The recommended process for inventory reservation is to use the **Post inventory** batch job and the recommendation is to set this parameter to **No**. With this parameter set to **No**, the new feature will not try to create inventory reservation entries (if not already done through Post inventory batch job) during calculation and will only do it at the time of posting. It was a design choice to implement it that way, as typically the time window between the calculate process and post process is normally small. However, if a customer does want to reserve inventory at the time of calculation, they can do so by setting this parameter to **Yes**. The legacy feature would always reserve inventory (if not already done through Post inventory batch job), during the statement calculation process irrespective of any settings of this parameter.
 
-**3.  Disable counting required**: This parameter when set to YES will not stop the statement from the posting process even when the difference between the counted amount and transaction amount on a statement is outside the threshold as defined on the statement fast tab of Retail stores
+- **Disable counting required**: This parameter when set to **Yes** will not stop the statement from the posting process, even when the difference between the counted amount and transaction amount on a statement is outside the threshold (as defined on the Statement FastTab of Retail stores).
 
-**4. Maximum number of parallel statement psotings**: This parameter has been introduced under the Batch processing fast tab of Retail parameters > Posting tab. This parameter defines how many executing batch tasks should be run at a time. Currently this parameter must be manually defined by the customer. However, in a future release this will be set heuristically based on customers topology and set-up.
+- **Maximum number of parallel statement psotings**: This parameter has been introduced under the Batch processing FastTab of **Retail parameters > Posting** tab. This parameter defines how many executing batch tasks should be run at a time. Currently this parameter must be manually defined by the customer. However, in a future release this will be set heuristically based on customers topology and set-up.
 
-In addition to the above, all the settings & parameters that govern statement postings as defined under Retail Stores and Retail parameters are all applicable even for the new statement posting feature.
+Note that all settings and parameters that govern statement postings, as defined under Retail Stores and Retail parameters, are all applicable for the new statement posting feature.
 
 ## Processing
+Statements can be calculated and posted using the batch process (Calculate statements in batch & Post statements in batch) or can also be calculated and posted manually using the **Retail statements** menu item using the new feature.
 
-Statements can be calculated and posted using the batch process (Calculate statements in batch & Post statements in batch) or can also be calculated and posted manually using the “Retail statements” menu item using the new feature.
+The process and steps to calculate and post statements in a batch remains the same as in the legacy feature. However, there have been significant improvements made in the core, back-end processing of the statements. These improvements build resiliency into the process and provides for better visibility into the states and error information. This enables users to fix the root cause of the errors and then continue the posting, without causing data corruption and the need for data fixes.
 
-The process & steps to calculate & post statements in a batch remains the same as in the legacy feature. However, there have been significant improvements made in the core back end processing of the statements which in addition to building resiliency into the process, also provides for better visibility in to the states and error information, using which users can fix the root cause of the errors and then continue the posting without causing data corruption and the need for data fixes.
-
-The following are some of the major improvements around the new feature that are surfaced on the UI for “Retail statements” and “Posted statements”:
+The following are some of the major improvements around the new feature that are surfaced in the user interface for “Retail statements” and “Posted statements”:
 
 ### 1.  Status details
 A new state model has been introduced in the statement posting routine across the calculate & post process and the details of the same are as below: 
