@@ -271,66 +271,66 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
   <tr>
     <td>CFD</td>
     <td>Support to CFD layout 2.0</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>Support to CFD layout 2.2</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>CFD messages/events: Issue</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>Printatble CFD version in PDF format</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>XML viewer for issued CFD invoice</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>Automatic sending of CFD document through email to customers during posting process.</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td></td>
     <td>Generation of Montlhy report</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
     <td>O</td>
   </tr>
   <tr>
     <td>CFDI</td>
     <td>Support to CFDI layout 3.0 in customer invoices</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
@@ -351,10 +351,10 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
   <tr>
     <td></td>
     <td>Support to CFDI Layout 3.3 in customer payments with payment complement 1.0</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
@@ -375,10 +375,10 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
   <tr>
     <td></td>
     <td>·        CFDI invoice and settlement</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
