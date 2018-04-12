@@ -96,7 +96,7 @@ There are two ways to create a service request: automatically and on demand.
 
     - **Other request** – Select this request type to request that the DSE team perform the following actions:
 
-        - Do a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Raise a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql#submit-a-service-request-to-copy-the-database).
+        - Do a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Raise a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
             > [!NOTE]
             > The service request must be worded exactly as described in that topic.

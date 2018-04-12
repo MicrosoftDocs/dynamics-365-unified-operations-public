@@ -206,6 +206,8 @@
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
+### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
+
 ## [Financial management](../financials/index.md)
 
 ### [General ledger](../financials/general-ledger/general-ledger.md)
