@@ -335,18 +335,18 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
   <tr>
     <td></td>
     <td>Support to CFDI layout 3.2 in customer invoices</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
     <td>Support to CFDI Layout 3.3 in customer invoices</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
-    <td>P</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td></td>
