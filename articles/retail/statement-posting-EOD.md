@@ -157,7 +157,7 @@ The **Journal vouchers** button shows all the different voucher transactions aro
 
 The current version of the product only shows this data for posted statements. However, in a future release there will be capability on Retail Statements i.e. unposted statements to see all the different journal vouchers created, journals that were successfully posted and journals that errored out.
 
-### 5. Payment journals
+### Payment journals
 The “Payment journals” button shows all the different payment journals that are created for a statement.
 
 The current version of the product only shows this data for posted statements. However, in a future release there will be capability on Retail Statements i.e. unposted statements to see all the payment journals created, payment journals that were successfully posted and payment journals that errored out.
