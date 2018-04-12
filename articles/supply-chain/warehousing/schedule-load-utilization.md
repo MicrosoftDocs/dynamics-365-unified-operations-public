@@ -1,4 +1,36 @@
-Schedule load utilization
+---
+# required metadata
+
+title: Schedule load utilization
+description: This topic describes how to set up and schedule the load for a warehouse.
+author: MarkusFogelberg
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 269384
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+[!include[banner](../includes/banner.md)]
+
+# Schedule load utilization
 
 You can schedule load utilization for selected location types, and also project
 the current and future load utilization. You can project the load for one or
