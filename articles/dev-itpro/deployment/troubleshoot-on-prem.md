@@ -636,13 +636,12 @@ Error message:
 *The timeout period elapsed prior to completion of the operation or the server is not responding.
 The statement has been terminated.*
 
-
 Only one AOS machine can DB Sync at a time. This error message is safe to ignore, as it means that one of the AOS VMs is running DB Sync, and the others yield a warning that they cannot. The fact that DB Sync is running can be verified by checking **Event Viewer** > **Applications and Services Log** > **Microsoft** > **Dynamics** > **AX-DatabaseSynchronize/Operational** on the AOS VM that is not yielding warnings.
 
 ## Error "RequireNonce is 'true' (default) but validationContext.Nonce is null"
-Also shows as a HTTP Error 500 in Internet Explorer after logging in to AX. The issued nonce can not be validated if Internet Explorer is in Enhanced Security Configuration.
+Also shows as a HTTP Error 500 in Internet Explorer after logging in to the client. The issued nonce can not be validated if Internet Explorer is in Enhanced Security Configuration.
 
-Disable Enhanced Security Configuration for Internet Explorer via the Server Manager, in order to log in to AX.
+Disable Enhanced Security Configuration for Internet Explorer via the Server Manager, in order to log in to the client.
 
 ## Error "Invalid algorithm specified / Cryptography"
 If you receive this error, you need to be using the Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, review the certificates requirements. Additionally, verify that the structure of the credentials.json file is correct.
@@ -769,8 +768,8 @@ Following are steps that can be skipped or modified:
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog and then restart one of the AOS machines, it will re-run db sync and then deploy reports. 
 
-## Add axdbadmin to tempdb after a SQL restart via SQL stored procedure
-When SQL is restarted, the tempdb database is recreated. This will result in missing permissions. Run following to create stored procedure on the master db database.
+## Add axdbadmin to tempdb after a SQL Server restart via stored procedure
+When SQL Server is restarted, the tempdb database is recreated. This will result in missing permissions. Run following script to create stored procedure on the master db database.
 
 ```
 \-----
@@ -788,7 +787,7 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 \-----
 ```
 
-## Update to existing credential with KeyId ‘<key>’ is not allowed.
+## Updates to existing credential with KeyId ‘<key>’ is not allowed.
 Update to existing credential with KeyId ‘<key>’ is not allowed.
 
 New-AzureRmADSpCredential : Update to existing credential with KeyId '<key>' is not allowed.
