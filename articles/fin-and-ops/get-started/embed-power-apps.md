@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 14
 
 In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system. 
 
-To learn more about embedding a PowerApp, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
+To learn more about embedding PowerApps, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
 > [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
