@@ -17,16 +17,17 @@ ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
-ms.search.scope: Core, Operations,# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: mkirknel
- ms.search.validFrom: 2018-04-20 
+ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---
 
-# Onboard vendors
+# Import vendor catalogs
 [!include[banner](../includes/banner.md)]
 ---
 
@@ -46,31 +47,29 @@ maintenance request (CMR) file, must be in XML file format. The CMR file should
 contain all of the details for the products that the vendor supplies to your
 company.
 
-Importing vendor catalog data
+Import vendor catalog data
 -----------------------------
 
 To import vendor catalog data, you must complete the following tasks:
 
-1.  Set up a project in the Data management workspace where you have define your
-    data mapping rules: Select **Data management** and then select **Set up roles for data projects**. 
+1.  Set up a project in the Data management workspace where you have defined your
+    data mapping rules. Select **Data management** and then select **Set up roles for data projects**. 
 
 2.  Set up a procurement category hierarchy, and assign your vendors to
     procurement categories. If you use commodity codes, add the commodity codes
     to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
 
-3.  Configure the vendor for catalog import: Select a vendor, and then select **Procurement** > **Set up** > **Configure vendor for catalog import**.
+3.  Configure the vendor for catalog import. Select a vendor, and then select **Procurement** > **Set up** > **Configure vendor for catalog import**.
 
-4.  Configure workflow for catalog import: Create a CMR file template and share this with your vendor.
+4.  Configure workflow for catalog import. Create a CMR file template and share this with your vendor.
 
-5.  Create a CMR file template and share this with your vendor.
-
-6.  Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
+5.  Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
     catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that
-    you receive from your vendor are grouped in this catalog 
+    you receive from your vendor are grouped in this catalog. 
 
-7.  Upload the CMR file.
+6.  Upload the CMR file.
 
-8.  Review, approve, or reject the products in the vendor catalog. The products are  automatically mapped
+7.  Review, approve, or reject the products in the vendor catalog. The products are  automatically mapped
     to the procurement categories in Dynamics 365 for Finance and Operations. 
     
 Approved products are added to the product master and are released to the selected legal entities. Only approved products can be added to the procurement catalog.
@@ -79,22 +78,22 @@ Approved products are added to the product master and are released to the select
 
 The catalog import file template is an industry-standard XSD file that you use
 to create a CMR file for a vendor’s products. You can use the CMR file to create
-a new catalog, replace an existing catalog, or to modify an existing catalog.
+a new catalog, replace an existing catalog, or modify an existing catalog.
 
 1.  Select **Procurement and sourcing** \> **Catalogs** \> **Vendor
     catalogs** and double-click the catalog that you want
     to work with.
 
-3.  Download a current catalog import template (XSD file): On the **Update
+2.  Download a current catalog import template (XSD file). On the **Update
     catalog** page, on the **Action Pane**, on the **Catalogs** tab, in the
     **Related information** group, click **Generate catalog template**. The only
-    available option is **NB I cannot locate the Update catalog page, please provide path**
+    available option is **NB I cannot locate the Update catalog page, please provide path**.
 
     -   **Procurement category** – Generate a catalog template that includes the
         procurement categories in which the vendor is authorized to provide
         products.
 
-In the **Save as** dialog box, select the location where you want to store the
-catalog file template and save the file
+3. In the **Save as** dialog box, select the location where you want to store the
+catalog file template and save the file.
 
 For more information and for examples, refer to this blog post: [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
