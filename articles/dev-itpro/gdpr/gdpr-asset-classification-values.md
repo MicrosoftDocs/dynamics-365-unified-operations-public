@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset classification definitions
-description: Microsoft Dynamics 365 for Finance and Operations includes a number of asset classifications. This topic lists the assets and the default definitions for each of them. 
+description: Microsoft Dynamics 365 for Finance and Operations, Retail and Talent provide a default set of classifications for the kinds of data that are stored in each table. These classifications are subject to change depending upon different needs to identify different kinds of data. 
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -33,7 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations includes a number of asset classifications. This topic lists the assets and the default definitions for each of them. 
+Microsoft Dynamics 365 for Finance and Operations, Microsoft Dynamics 365 Retail and Microsoft Dynamics 365 Talent provide a default set of classifications for the kinds of data that are stored in each table. These classifications are subject to change depending on the need to identify different kinds of data. The actual classification for each field in each table may change at any time, depending on differing needs for identifying data.
+
+Through customization, you can change the classification to meet your own classification and tracking needs.
 
 **Customer Content** – Data collected and managed by the controller (some of it may be personal data).
 
