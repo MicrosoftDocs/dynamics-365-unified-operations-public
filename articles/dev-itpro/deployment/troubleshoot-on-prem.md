@@ -267,7 +267,9 @@ Access to the path `'\\...\agent\assets\StandAloneSetup-76308-1.zip'` is denied.
     </ADServiceAccount>
     ```
 
-3. Ensure that the Setup file share section in the setup document is completed.
+3. Ensure that the **Set up file storage** section in the setup document is completed.
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#setupfile)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
 4. Uninstall the local agent.
 5. Specify the correct file share in local agent configuration and download the configuration file again.
 6. Install local agent again with the new configuration file.
@@ -325,7 +327,7 @@ RunAsync failed due to an unhandled exception causing the host process to crash:
         uswedpl1catalog.blob.core.windows.net:443 
 
 ## How to restart applications (example AOS)
-Go to Service Fabric and expand Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code. Click on ellipse and Restart (enter Code when prompted) 
+Go to Service Fabric and expand **Nodes > AOSx > fabric:/AXSF > AXSF > Code Packages > Code**. Click on the ellipse, and the **Restart** (enter Code when prompted). 
 
 ## Upgrading Service Fabric
 Service Fabric Explorer will eventually show a message as follows:
@@ -333,9 +335,9 @@ Service Fabric Explorer will eventually show a message as follows:
 *Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
 The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.*
 
-Since minimum requirement is 1 SSRS and 1 MR node, need to pass in a parameter to skip PreUpgradeSafetyCheck
+Since minimum requirement is 1 SSRS and 1 MR node, you will need to pass in a parameter to skip PreUpgradeSafetyCheck.
 
-Note following steps to upgrade in PowerShell:
+Note the following steps to upgrade in PowerShell:
 
 ```powershell
 #Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
@@ -353,9 +355,9 @@ Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monit
 Get-ServiceFabricClusterUpgrade
 ```
 
-<https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting>
+For more informaiton, see [Troubleshoot application upgrades](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).
 
-To see when new Service Fabric release comes out, see <https://blogs.msdn.microsoft.com/azureservicefabric/>
+To see when new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
 If you receive a warning in Service Fabric Explorer after upgrading, then note node and restart via expanding nodes, application, and code restart. See [How to restart applications (example AOS)](troubleshoot-on-prem.md#howtorestartapplications(exampleAOS) for instructions.
  
