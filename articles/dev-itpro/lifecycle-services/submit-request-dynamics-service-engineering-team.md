@@ -52,7 +52,7 @@ There are two ways to view service requests:
 
     ![Service requests](./media/submit-service-request-01.png)
 
-- Select the **Menu** button, and select **Support**. Then, on the **Work items** page, select the **Service requests** tab.
+- Select the **Menu** button and select **Work items**. On the **Work items** page select the **Service requests** tab.
 
     ![Work items](./media/submit-service-request-02.png)
 
@@ -132,7 +132,7 @@ Here are some typical examples of service requests that will be denied:
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
 | Package application            | Production | Deployable package application | Five hours | Five hours |
-| Upgrade                        | One sandbox: Standard Acceptance Test and production | A customer who is live in production requests an upgrade to the latest version of Finance and Operations. | Five business days | Eight hours |
+| Upgrade                        | One Tier 2 sandbox and production | A customer who is live in production requests an upgrade to the latest version of Finance and Operations. | Five business days | Eight hours |
 | Database point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | One hour |
 | Database refresh               | From production to any Tier 2 or higher sandbox, or between any two Tier 2 or higher sandboxes | Database refresh | Five hours | One hour |
 | Other                          | Production | Database point-in-time restore | Five hours | One hour |
