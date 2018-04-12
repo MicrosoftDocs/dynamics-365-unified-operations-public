@@ -37,7 +37,7 @@ the current and future load utilization. You can project the load for one or
 more sites, for the load units of warehouse or zone, or for a combination of
 zone and warehouse.
 
-Schedule and view the load for a warehouse or site
+## Schedule and view the load for a warehouse or site
 
 To schedule the load for sites, warehouses, or zones, you create a space
 utilization setup and associate it with a master plan.
@@ -63,7 +63,7 @@ utilization** report. When you generate the report, you can specify whether the
 load utilization should be projected for each site or across sites or for the
 selected load unit, such as zone or warehouse.
 
-Create a space utilization setup for a warehouse
+### Create a space utilization setup for a warehouse
 
 1.  Click **Inventory management** \> **Setup** \> **Warehouse monitoring** \>
     **Space utilization**.
@@ -84,7 +84,7 @@ Create a space utilization setup for a warehouse
     space utilization calculation. You must select at least one location type
     for the projection.
 
-Associate a space utilization setup with a master plan
+### Associate a space utilization setup with a master plan
 
 1.  Click **Inventory management** \> **Periodic tasks** \> **Schedule load
     utilization**.
@@ -97,7 +97,7 @@ Associate a space utilization setup with a master plan
 4.  In the **Space utilization** field, select the space utilization setup to
     use for the projection of current and future workloads.
 
-Specify the load utilization projection and view information
+### Specify the load utilization projection and view information
 
 1.  Click **Inventory management** \> **Inquiries and reports** \> **Physical
     inventory reports** \> **Warehouse load utilization**.
