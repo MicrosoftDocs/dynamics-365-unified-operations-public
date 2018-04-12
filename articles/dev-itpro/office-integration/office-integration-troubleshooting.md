@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: OfficeAppParameters
+ms.search.form: OfficeAppParameters, SysEmailParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
@@ -83,6 +83,21 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
+
+### Why is the Export to Excel functionality limited to 10,000 records?
+ 
+The Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the form is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
+
+The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and it takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF)/Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators. 
+
+If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points: 
+
+- The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
+- The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
+
+## Why is the Publish button in the Excel Add-in unavailable? 
+
+All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
 
 ## Troubleshooting issues
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budgeting home page
-description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/09/2017
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BudgetPlanningWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

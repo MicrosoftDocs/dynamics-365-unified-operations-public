@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Client-side design APIs overview
+
+[!include[banner](../../../includes/banner.md)]
+
 This topic provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
 ## Terminology

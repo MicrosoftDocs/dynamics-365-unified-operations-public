@@ -19,7 +19,7 @@ ms.search.form: SysTaskRecorderPane
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
@@ -37,12 +37,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use Task Recorder to record client functions.
 
-Overview
-========
+## Overview
 
 ### The new Task Recorder
 
-In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
+In Microsoft Dynamics 365 for Finance and Operations, Task Recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task Recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task Recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task Recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task Recorder.
 
 ### Architecture
 
@@ -352,7 +351,7 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the Task guide.
 
-## (PRE-RELEASE) Screenshot Extension setup
+## Screenshot Extension setup 
 
 ### Document generation setup (optional)
 

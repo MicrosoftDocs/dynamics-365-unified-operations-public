@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LedgerChartofAccounts,DimensionDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -38,7 +38,7 @@ When you plan and set up your chart of accounts, you must consider how the vario
 
 ## Chart of accounts and financial dimension components
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, has a rich, rule-based system for defining valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
+Microsoft Dynamics 365 for Finance and Operations, has a rich, rule-based system for defining valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
 
 ### Account structures
 

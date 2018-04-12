@@ -5,7 +5,7 @@ title: Expense management parameters
 description: The following parameters control the behavior in Expense management.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  TrvParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Expense management parameters
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 The parameters control the general behavior in Expense management.

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

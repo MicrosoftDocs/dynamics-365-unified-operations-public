@@ -8,12 +8,12 @@ manager: AnnBe
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: Talent
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 # Extend the functionality of Microsoft Dynamics 365 for Talent
+
+[!include[banner](includes/banner.md)]
+
 If you’ve created any Microsoft PowerApps, you can start those applications from links within Microsoft Dynamics 365 for Talent. To set up access to your applications, you’ll need to set up some information in Talent on a configuration page that you can open from the **System administration** workspace.
 
 ## Configuring embedded PowerApps within Talent

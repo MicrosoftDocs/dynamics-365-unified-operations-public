@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany invoicing
-description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: LedgerInterCompany
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
 
 Your organization might have multiple divisions, subsidiaries, and other legal entities that transfer products and services to each other for projects. The legal entity that provides the service or product is called the *lending legal entity*, and the legal entity that receives the service or product is called the *borrowing legal entity*. 
 
@@ -64,9 +64,9 @@ For this example, FRSI must be a customer in the USSI legal entity, and USSI mus
 
 1.  Set up FRSI as a customer in the USSI legal entity, and set up USSI as a vendor in the FRSI legal entity. There are three entry points for the steps that are required for this task.
     | Step | Entry point                                                                       | Description   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | In USSI, click **Accounts receivable** &gt; **Customers** &gt; **All customers**. | Create a new customer record for FRSI, and select the customer group.                                                                                                                                                                                                                           |
-    | B    | In FRSI, click **Accounts payable** &gt; **Vendors** &gt; **All vendors**.        | Create a new vendor record for USSI, and select the vendor group.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | In USSI, click **Accounts receivable** &gt; **Customers** &gt; **All customers**. | Create a new customer record for FRSI, and select the customer group.                                                                                  |
+    | B    | In FRSI, click **Accounts payable** &gt; **Vendors** &gt; **All vendors**.        | Create a new vendor record for USSI, and select the vendor group.                                                                                    |
     | C    | In FRSI, open the vendor record that you just created.                            | On the Action Pane, on the **General** tab, in the **Set up** group, click **Intercompany**. On the **Intercompany** page, on the **Trading relationship** tab, set the **Active** slider to **Yes**. In the **Customer company** field, select the customer record that you created in step A. |
 
 2.  Click **Project management and accounting** &gt; **Setup** &gt; **Project management accounting parameters**, and then click the **Intercompany** tab. The way that you set up the parameters depends on whether you're the borrowing legal entity or the lending legal entity.

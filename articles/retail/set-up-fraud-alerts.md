@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SalesPostingHistory, MCRHoldCodeTrans, SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

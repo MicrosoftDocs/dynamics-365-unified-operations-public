@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/19/2017
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysEmailParameters
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -27,7 +27,6 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Configure and send email
@@ -37,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Dynamics 365 for Finance and Operations, Enterprise edition, both administrators and users set the behavior of the email subsystem.
+In Dynamics 365 for Finance and Operations both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 On the **Email parameters** page, note the following settings on the **Email providers** tab.
@@ -75,7 +74,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tr>
 <tr class="odd">
 <td><strong>User name</strong> and <strong>Password</strong></td>
-<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> or <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user’s mailbox in Office 365</a>.</td>
+<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user’s mailbox in Office 365</a>.</td>
 </tr>
 <tr class="even">
 <td><strong>Specify if SSL is required</strong></td>
@@ -97,7 +96,7 @@ The **Options** page can be opened via **Settings &gt; User options**. The **E
 | Field                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Email provider ID** | Allows the user to select the email provider that should be used when sending an email. Selecting an option here is the equivalent of selecting **Do not ask again** in the **How would you like to send email** dialog box. Selecting the blank option **Prompt for which email provider to use** will cause the **How would you like to send email** dialog box to display when an email is going to be sent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Email**             | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** or **Send On Behalf Of** permissions configured in Exchange or on the SMTP server. <br><br> **Note**<br>You can configure **Send As** permissions in the Office 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user’s mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). |
+| **Email**             | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server. <br><br> **Note**<br>You can configure **Send As** and **Send On Behalf Of** permissions in the Office 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user’s mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). |
 
 ## User (optional): How would you like to send email dialog box
 When an email is going to be sent, the user will see the **How would you like to send email** dialog box that will list the available options for sending email.
@@ -155,13 +154,89 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 11. Click **OK** to accept the default values in the dialog box.
 12. If you’re prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
 13. To receive the test message, change the **To address** to your email address.
-    -   Ensure that the account specified in the SMTP settings is able to **Send As** or **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
+    -   Ensure that the account specified in the SMTP settings is able to **Send As** and **Send On Behalf Of** your email account. The easiest way to ensure this to use your email account in the SMTP settings.
 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
 
+## Administrator: Workflow email notifications
+
+Workflow email configuration is a collection of related settings that work in conjunction. 
+
+### Workflow email notification setup
+
+1. Verify email settings:
+    1. Go to **System administration** > **Setup** > **Email** > **Email parameters**.
+    2. Verify that SMTP is enabled.
+    3. Set the SMTP mail server settings.
+2. Verify that the email batch process is running:
+    1. Go to **System administration** > **Periodic tasks** > **Email processing** > **Batch**.
+    2. Enable the **Batch processing** option.
+    3. Optionally, adjust the recurrence of the email process:
+        1. Select **No end date** to adjust all recurrences of the email batch process.
+        2. Adjust the count.
+3. Verify workflow notification system email templates:
+    1. Go to **System administration** > **Setup** > **Email** > **Email messages** (for system-wide templates).
+    2. Verify that the **Sender email** field is set and valid.
+4. Verify workflow notification organization email templates:
+    1. Go to **Organization administration** > **Setup** > **Email templates** (for organization-specific templates).
+    2. Verify that the **Sender email** field is set and valid.
+5. Verify that the user can receive email notifications:
+    1. Go to **Settings** > **User options**.
+    2. Go to the **Account** tab.
+       1. Set the email provider ID (for example, SMTP).
+       2. Optionally, set the email address for the provider if it was not the default from the user setup.
+    3. Navigate to the **Workflow** tab.
+        1. Set the option to send notifications in email to **Yes**.
+6. Verify that the workflow system will send email notifications:
+    1. For each workflow that should have a notification, open the workflow properties in the workflow editor. 
+        1. Click **Basic settings**.
+            1. Adjust the email template for the workflow notifications.
+        2. Click **Notifications**.
+            1. Enable the events for which a user should be notified.
+            2. Set the recipient of the workflow notification for each event notification that is enabled.
+        3. On a workflow approval element for which a user should be notified:
+            1. Go to **Properties**.
+            2. Enable the events for which a user should be notified.
+            3. Set the recipient of the workflow notification for each event notification that is enabled.
+ 
+### Workflow email notification testing
+
+The testing for email notifications is to simply trigger the notification and then check for it.
+
+1. Submit a workflow that has been set up for email notifications.
+2. Check the workflow history to make sure that a workflow work item was assigned to the expected user.
+3. Check the status of the pending email notification in **System administration** > **Periodic tasks** > **Email processing** > **Email sending status**.
+    1. If the email is fails to send, make sure that the SMTP mail account can be opened.
+4. Check for the email notification in the appropriate inbox.
+
+## Troubleshoot email
+
+There are a few standard steps that can help you troubleshoot the configuration of email settings.
+
+1. Verify email settings:
+
+    1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+    2. Verify that SMTP is enabled.
+    3. Verify the settings of the SMTP mail server.
+    4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
+
+2. Verify that the email batch process is running:
+
+    1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
+    2. Make sure that the **Batch processing** option is set to **Yes**.
+    3. Review the recurrence of the email process:
+
+        1. Select **No end date** to adjust all recurrences of the email batch process.
+        2. Adjust the count as you require.
+
+3. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**, and review the status of the pending emails.
+4. In the Office 365 admin center, verify that user mail accounts have provided **Send As** and **Send On Behalf Of** permissions to the SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
+6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+
 ## Other notes
-The system talks to Exchange or an SMTP server like a normal email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
+The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
 See also
 --------
@@ -171,6 +246,3 @@ See also
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
-
-
-

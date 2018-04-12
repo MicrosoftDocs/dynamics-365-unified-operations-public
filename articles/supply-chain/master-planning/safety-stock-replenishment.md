@@ -18,14 +18,14 @@ ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTabl
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: roxanadiaconu
-ms.dyn365.ops.intro: 7.3 
+ms.author: roxanad
+ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 
 ---

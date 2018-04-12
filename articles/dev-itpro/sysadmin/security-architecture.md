@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -31,11 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Security architecture
-
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations.
 
 When you understand the security architecture of Finance and Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
@@ -67,4 +66,4 @@ Additionally, the Table Permissions Framework helps protect some data. Data secu
 ## Auditing
 Auditing of user sign in and sign out is now enabled in Finance and Operations. The system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
-A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration **>** Inquiries **>** User log**).
+A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).

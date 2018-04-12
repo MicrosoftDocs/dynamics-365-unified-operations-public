@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a Retail mobility dev/test environment on Azure (AX 2012)
-description: This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+description: This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -35,47 +35,53 @@ ms.dyn365.ops.version: 2012
 [!include[banner](../../includes/banner.md)]
 
 
-This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 
 Prerequisites
 -------------
 
-Before you complete the procedures in this article, make sure that the following prerequisites are in place.
+Before you complete the procedures in this topic, make sure that the following prerequisites are in place.
 
 | Category       | Prerequisite                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
-Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/)
+Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/)
 
 ## 2. Create a project
-After you log in to Lifecycle Services, open an existing project, or create a new project. Projects are the key organizer of your experience in Lifecycle Services. The methodology associated with a project determines which phases and tasks are included in the project by default.
+After you log in to LCS, open an existing project, or create a new project. Projects are the key organizer of your experience in LCS. The methodology associated with a project determines which phases and tasks are included in the project by default.
 
 ## 3. Connect the project to your Azure subscription
-Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX environment to the subscription. To connect the project to your Azure subscription, complete the following procedure. Keep in mind that a project can be connected to only one Azure subscription. If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.
+Connect the LCS project to your Azure subscription. This will enable LCS to deploy a Dynamics AX environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.
 
-1.  Click **Cloud-hosted environments**. The **Cloud-hosted environments** page is displayed.
-2.  The **Microsoft Azure setup** panel is displayed on the side of the screen. If it is not displayed, click **Microsoft Azure settings**.
-3.  Enter your **Azure subscription ID**. If you need to find your subscription ID, complete the following steps:
+1.  In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
+    >[!Note]
+    > The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.
+3.  Enter a name to identify the connection to Azure.
+4.  Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
     1.  Open another instance of your browser.
-    2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
-    3.  In the navigation pane on the left, click **Settings**. (You may have to scroll to the bottom of the navigation pane to see the Settings link.) The **Settings** page is displayed.
-    4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
+    2.  Log on to the [Azure portal](https://ms.portal.azure.com/).
+    3.  In the navigation pane on the left, click **Subscriptions**. 
+    
+        > [!Note]
+        > You may need to click **More services** at the bottom, and then click **Subscriptions**.
+        
+    4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in LCS (which is currently displayed in another browser instance).
 
-4.  Click **Next**.
-5.  Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the Downloads folder on your computer and is named LifecycleServicesDeployment.cer.
-6.  Upload the management certificate to Azure. To do so, complete the following steps:
-    1.  Open another instance of your browser. (Or, go to the browser instance that you may have opened in step 3.)
-    2.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
-    3.  In the navigation pane on the left, click **Settings**. The **Settings** page is displayed.
-    4.  Click **Management** **certificates**.
-    5.  Click **Upload** at the bottom of the page.
-    6.  In the **Upload a management certificate** window, browse to the management certificate that you downloaded in step 5. Then click the check mark.
+5.  Click **Next**.
+6.  Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
+7.  Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
-7.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
-8.  Select the region that is closest to you. The Dynamics AX environment will be deployed to a datacenter in this region.
-9.  Click **Connect**. The project is now connected to the Azure subscription that you specified. If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.
+8.  Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
+9.  Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
+10.  Click **Connect**. The project is now connected to the Azure subscription that you specified. 
+
+>[!Note]
+> If the certificate expires, you can obtain a new one. To do so:
+> 1. Select the connection in the **Azure connectors** area of your project settings, and click **Edit**.
+> 2. The **Microsoft Azure setup** panel is displayed on the side of the screen. Click **Download** to download a new certificate.
+> 3. Repeat steps 6-9 of the above procedure.
 
 ## 4. Deploy a Retail mobility dev/test environment on Azure
 Complete the following procedure to deploy a Retail mobility dev/test environment on Azure.
@@ -85,7 +91,7 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
 3.  Click **Retail mobility dev/test**.
 4.  In the **Environment name** field, enter a name for the environment that will be deployed.
 5.  Click **Advanced settings**.
-6.  To customize domain settings, click **Customize domain settings**. Then use the following table to enter information.
+6.  To customize domain settings, click **Customize domain settings**. Use the following table to enter information.
     <table>
     <colgroup>
     <col width="50%" />
@@ -93,8 +99,8 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     </colgroup>
     <thead>
     <tr class="header">
-    <th>If you want to:</th>
-    <th>Do this:</th>
+    <th>If you want to</th>
+    <th>Do this</th>
     </tr>
     </thead>
     <tbody>
@@ -115,13 +121,13 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     </tbody>
     </table>
 
-7.  To customize the service accounts that will be created in the domain, click **Customize service accounts**. Service accounts and/or service account passwords may be specified through the **Advanced Settings** option for a deployment. If neither is provided, default accounts are used and random passwords are selected. Use these features when you want to maintain account naming and password rules for your corporation. Account and password rules:
+7.  To customize the service accounts that will be created in the domain, click **Customize service accounts**. Service accounts and/or service account passwords can be specified through the **Advanced Settings** option for a deployment. If neither is provided, default accounts are used and random passwords are selected. Use these features when you want to maintain account naming and password rules for your corporation. Account and password rules:
     1.  A valid service name must be less than 20 characters with no special characters.
-    2.  A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\]You can’t use common passwords, such as: pass@word1
+    2.  A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\] You can’t use common passwords, such as: pass@word1
 
 8.  To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
 9.  To customize virtual machine names, click C**ustomize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99. When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
-10. To customize virtual network settings, click **Customize virtual network**. Then use the following table to enter information.
+10. To customize virtual network settings, click **Customize virtual network**. Use the following table to enter information.
     <table>
     <colgroup>
     <col width="50%" />
@@ -129,8 +135,8 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     </colgroup>
     <thead>
     <tr class="header">
-    <th>If you want to:</th>
-    <th>Do this:</th>
+    <th>If you want to</th>
+    <th>Do this</th>
     </tr>
     </thead>
     <tbody>
@@ -148,10 +154,10 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     <li>Select the name of the existing virtual network that you want to use.</li>
     <li>The <strong><span class="label">Address space</span></strong> field will automatically display the appropriate value. Select the provided value.</li>
     <li>The <strong><span class="label">Application subnet name</span></strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label">*APPNET*</span></strong> value.</li>
-    <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you desire to target.
+    <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you want to target.
     <ol>
-    <li>Log on to the <a href="https://manage.windowsazure.com/">Azure management portal</a>.</li>
-    <li>In the navigation pane on the left, click <strong><span class="label">Networks</span></strong>.</li>
+    <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
+    <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
     <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
     </ol></li>
@@ -221,11 +227,12 @@ The following table lists the domain accounts that were created when you deploye
 | <DomainName>DynamicsInstallUser | The account used to install Dynamics AX.                                                                                     |
 | <DomainName>RetailServiceUser   | The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.        |
 
-**Note: **The default passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lcs.dynamics.com/).
+> [!NOTE]
+> The default passwords are displayed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lcs.dynamics.com/).
 
 ### Local administrator accounts
 
-Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lcs.dynamics.com/).
+Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lcs.dynamics.com/).
 
 
 

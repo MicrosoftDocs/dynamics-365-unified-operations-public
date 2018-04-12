@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -49,7 +48,7 @@ Advance invoice functionality lets you perform the following tasks:
 Polish companies that receive prepayments must create an invoice for prepayments for the customer. This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes. The tax that is calculated on the advance invoice must be reported to the tax authority. When the final sale of goods is performed, the advance invoice should be specified on the sales invoice. The total amount of sales must include prepayments. When the sales invoice is posted, the settled advance invoice will be reversed. The original advance invoice will be settled with an advance invoice reversal.
 
 ## Set up Accounts receivable for advance invoices
-On the **Accounts receivable parameters** page, on the **Update** tab, specify the following parameters.
+On the **Accounts receivable parameters** page, on the **Updates** tab, specify the following parameters.
 
 |FastTab|Parameter|Description|
 |------|----------|------------|

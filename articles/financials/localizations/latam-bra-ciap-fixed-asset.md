@@ -23,11 +23,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
-ms.search.validFrom: 2017-06-30]
+ms.search.validfrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
 # CIAP fixed asset
+
+[!include[banner](../includes/banner.md)]
 
 ## Acquire a CIAP fixed asset
 Use this functionality to register in Fiscal books module the acquisition of a fixed asset controlled by the ICMS tax long term return.

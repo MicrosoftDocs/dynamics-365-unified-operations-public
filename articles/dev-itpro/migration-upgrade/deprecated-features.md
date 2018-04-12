@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0 
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -42,9 +42,23 @@ This topic describes features that have been removed or deprecated for Dynamics 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!Note]
-> Starting with the Dynamics 365 for Finance and Operations, Enterprise edition July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+> Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+
+## Dynamics 365 for Finance and Operations 8.0 with platform update 15
+No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
+
+### Personalized product recommendations 
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.  |
+| **Replaced by another feature?**   | No. However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.   |
+| **Product areas affected**         | Personalized product recommendations in POS.                                                    |
+| **Deployment option**              | All                                                                                      |
+| **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Operations 1611 and later.  |
 
 ### Extension of the list of Electronic reporting (ER) functions
 The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
@@ -90,7 +104,7 @@ The standard UI in data management is the legacy UI, which is the default UI pre
 | **Replaced by another feature?**   | The new UI called *Enhanced views* is replacing the old UI.            |
 | **Product areas affected**         | Data management workspace                                                     |
 | **Deployment option**              | All                                                                           |
-| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q1 2018. |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q2 2018. |
 
 ### Excise, Sales Tax, Service Tax for India
 
@@ -137,6 +151,19 @@ Users can download this from the government portal.
 | **Deployment option**                       | All modules                                                                    |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature.  |    
 
+
+## Dynamics 365 for Retail 7.2
+
+### Personalized product recommendations 
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.  |
+| **Replaced by another feature?**   | No. However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.   |
+| **Product areas affected**         | Personalized product recommendations in POS.                                                    |
+| **Deployment option**              | All                                                                                      |
+| **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Retail 7.2  and later. |
 
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8

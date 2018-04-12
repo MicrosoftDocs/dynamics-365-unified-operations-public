@@ -2,7 +2,7 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations, Enterprise edition. 
+The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
 

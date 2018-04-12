@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: ERWorkspace 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -57,8 +56,8 @@ The following resources provide information about planned and new localization f
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](submit-localization-alerts.md)
 
-### Dynamics 365 roadmap
-The [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) provides a snapshot of what we’re working on. Use this roadmap to find out what is being made generally available and what is in development. All dates and features that are in development are preliminary, are based on current expectations, and are subject to change without notice.
+### Dynamics 365 release notes
+The [Dynamics 365 release notes (PDF download)](https://aka.ms/businessappsreleasenotes) provide descriptions of new and enhanced capabilities in Dynamics 365 business applications and application platforms. 
 
 ## Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
@@ -83,25 +82,9 @@ To learn more, see [Task guides](../../fin-and-ops/get-started/help-overview.md#
 ## Country/region specific help topics
 The following sections list resources by country/region.
 
-### Australia
-
--   [Bank file formats](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Business activity statement ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Low-value pool depreciation](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### Austria
-
-- [Half-year depreciation](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Packing material fees](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Purchase duties](../../financials/localizations/emea-aut-purchase-duties.md)
-- [VAT statement](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### Belgium
-
--   [CODA bank statement](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat tax declaration](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM report setup](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Reconciliation reports](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### [Australia](../../financials/localizations/australia.md)
+### [Austria](../../financials/localizations/austria.md)
+### [Belgium](../../financials/localizations/belgium.md)
 
 ### Brazil
 
@@ -138,22 +121,9 @@ The following sections list resources by country/region.
 -   [Post inventory main accounts by site](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Display debit and credit amounts for ledger accounts](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### The Czech Republic
-
--   [Cash discount on credit note](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Depreciation rounding](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Half year depreciation on fixed asset disposal for the Czech Republic](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Depreciation suspension (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Fixed assets depreciation methods for the Czech Republic](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Post the pre-acquisition of a fixed asset](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [VAT statement for the Czech Republic](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Sales tax reporting ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Split periods in periodic journals](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Set up signers for print forms](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](../../financials/localizations/emea-amount-printing-forms.md)
+### [The Czech Republic](../../financials/localizations/czech-republic.md)
 
 ### Estonia
-
 -   [VAT statement details for Estonia](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Fixed assets disposal](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -222,6 +192,21 @@ The following sections list resources by country/region.
 -   [Move a fixed asset to inventory](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Low-cost fixed assets](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
+### India
+
+- [Fixed assets](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Transfer of capital items to the fixed asset](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Attach a day-based calendar to a fixed asset book](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Set up parameters to calculate depreciation](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Set up asset group depreciation for depreciation books](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Create an inventory model group for capital items](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Shift depreciation calculation for India fixed assets](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Define type of shift and industry for books and attach to fixed asset](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
+    - [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
+    - [Tax thresholds FAQ](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
+
 ### Italy
 
 -   [Italian black list report](../../financials/localizations/emea-ita-black-list-report.md)
@@ -280,6 +265,8 @@ The following sections list resources by country/region.
 
 ### Norway
 
+-   [Cash registers for Norway](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Deployment guidelines for cash registers for Norway](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets import format](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [VAT statement](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financials development home page
 
+[!include[banner](../includes/banner.md)]
+
 - [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
 - [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
 - [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)

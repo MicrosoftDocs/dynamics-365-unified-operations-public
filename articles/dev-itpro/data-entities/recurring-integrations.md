@@ -5,7 +5,8 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. 
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/04/2017
+ms.date: 12/19/2017
+
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system, such as Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
+The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system, such as Microsoft Dynamics 365 for Finance and Operations, and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
 
 ## Architecture
 Integration does the following things:
@@ -78,7 +79,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 
     - **File** – Your external integration will push individual files so that they can be processed via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     - **Data package** – You can push only data package files for processing. A data package is a new format that lets you submit multiple data files as a single unit that can be used in integration jobs.
-
+    - **Process messages in order** – You can enable this option to force sequential processing of incoming files in an import scenario. This option is only applicable to files and not data packages.
+    
 5. Select **Set processing recurrence**, and then, in the **Define recurrence** dialog box, set up a valid recurrence for your data job. 
 6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence. 
 
@@ -138,6 +140,34 @@ Use the following API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+    
+### API for getting message status
+The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
+
+**Example**
+
+```
+    POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
+    BODY
+    {
+    "messageId":"<string>"
+    }
+```
+    
+The following table lists the possible status values.
+
+| Value              | Meaning                                                                              |
+|----------------------|--------------------------------------------------------------------------------------|
+| Enqueued             | The file has been successfully enqueued to blob storage                              |
+| Dequeued             | The file has been successfully dequeued from blob storage                            |
+| Acked                | The exported file has been acknowledged to be downloaded by the external application |
+| Preprocessing        | The import/export operation is pre-processing the request                            |
+| Processing           | The import/export operation is in process                                            |
+| Processed            | The import/export operation completed successfully                                   |
+| PreProcessingError   | The import/export operation failed in the pre-processing stage                       |
+| ProcessedWithErrors  | The import/export operation completed with errors                                    |
+| PostProcessingFailed | the import/export operation failed during post-processing                            |
+
     
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
