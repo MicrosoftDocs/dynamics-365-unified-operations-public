@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations,# ms.tgt_pltfrm:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2018-04-20 
+ ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---
 
@@ -58,9 +58,9 @@ To import vendor catalog data, you must complete the following tasks:
     procurement categories. If you use commodity codes, add the commodity codes
     to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
 
-3.  Configure the vendor for catalog import.**NB: Where or how?**
+3.  Configure the vendor for catalog import: **Procurement and sourcing** > **Setup** > **Configure vendor for catalog import**.
 
-4.  Configure workflow for catalog import. **NB: Where or how?**
+4.  Configure workflow for catalog import: Create a CMR file template and share this with your vendor.
 
 5.  Create a CMR file template and share this with your vendor.
 
