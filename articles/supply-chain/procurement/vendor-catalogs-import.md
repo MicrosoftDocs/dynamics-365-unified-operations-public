@@ -86,10 +86,9 @@ a new catalog, replace an existing catalog, or modify an existing catalog.
 
 2.  Download a current catalog import template (XSD file). On the **Update
     catalog** page, on the **Action Pane**, on the **Catalogs** tab, in the
-    **Related information** group, click **Generate catalog template**. The only
-    available option is **NB I cannot locate the Update catalog page, please provide path**.
+    **Related information** group, click **Generate catalog template** and select **Procurement category**.
 
-    -   **Procurement category** – Generate a catalog template that includes the
+    -   With the **Procurement category** option you can generate a catalog template that includes the
         procurement categories in which the vendor is authorized to provide
         products.
 
