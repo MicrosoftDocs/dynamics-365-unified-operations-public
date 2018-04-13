@@ -38,10 +38,9 @@ the workload for the whole warehouse, or you can project the workload separately
 for incoming and outgoing workloads.
 
 To project workload output for selected warehouses, master scheduling data must
-be available for the selected warehouses. For more information, see [Master plans]
-/[master-planning](https://github.com/MicrosoftDocs/Dynamics-365-Operations/tree/master/articles/supply-chain/master-planning)/**master-plans.md**.
+be available for the selected warehouses. For more information, see [Master plans](../master-planning/master-plans.md).
 
-Schedule and view workloads for a warehouse
+## Schedule and view workloads for a warehouse
 
 To schedule workload capacity for a warehouse, you create a workload setup for
 one or more warehouses, and then associate the workload setup with a master
@@ -54,7 +53,7 @@ If the workers for a warehouse work with transactions for both incoming and
 outgoing workloads, you can configure the warehouse capacity setup to project
 the workload in a combined view.
 
-To schedule and view workloads for warehouses, you must do the following tasks:
+### To schedule and view workloads for warehouses, you must do the following tasks:
 
 1.  Create a workload capacity setup and define workload capacity limits for one
     or more warehouses.
@@ -62,7 +61,7 @@ To schedule and view workloads for warehouses, you must do the following tasks:
 2.  Associate the workload capacity setup with a master plan to create workload
     projections and to specify how long the projections will apply.
 
-Create a workload capacity setup for a warehouse
+### Create a workload capacity setup for a warehouse
 
 1.  Select **Inventory management** \> **Setup** \> **Warehouse monitoring** \>
     **Workload capacity**.
@@ -79,12 +78,11 @@ Create a workload capacity setup for a warehouse
 5.  On the **Transaction types** tab, select the incoming and outgoing
     transaction types that the workload limits will apply to.
 
->   **Note**
-
+>   [Note!]
 >   You must select at least one transaction type for both the incoming and
->   outgoing workloads.
+>   the outgoing workloads.
 
-Volume and weight
+### Volume and weight
 
 You can set up limits for volume or weight depending on which limitations are
 relevant for the warehouse workforce. The limits that you specify are included
@@ -107,7 +105,7 @@ If this information is not specified correctly, you will receive a message when
 you generate the **Workload capacity** report. From the report, you can drill
 down to identify the information that is missing to project the future workload.
 
-Associate a workload capacity setup with a master plan
+### Associate a workload capacity setup with a master plan
 
 1.  Click **Inventory management** \> **Periodic** \> **Schedule workload**.
 
@@ -120,7 +118,7 @@ Associate a workload capacity setup with a master plan
 4.  In the **Workload** field, select the workload setup to associate with the
     master plan.
 
-View workload capacity
+### View workload capacity
 
 1.  Click **Inventory management** \> **Inquiries and reports** \> **Physical
     inventory reports** \> **Workload capacity**.
@@ -135,5 +133,3 @@ View workload capacity
     capacity should be projected for volume, or weight.
 
 5.  In the **Workload capacity** field, select a workload capacity setup.
-
-WMSWorkloadCapacity
