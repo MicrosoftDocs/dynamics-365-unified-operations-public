@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Migrate code for an LCS solution
+title: Migrate code for a Lifecycle Services (LCS) solution
 description: This topic describes how to upgrade and analyze the code in your LCS solution.  
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,14 +28,14 @@ ms.author: omarc
 
 ---
 
-# Migrate code for an LCS solution
+# Migrate code for a Lifecycle Services (LCS) solution
 
 [!include[banner](../includes/banner.md)]
 
 
 The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Finance and Operations Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
-To generate the Customization Analysis report (CAR), run the following command on a Microsoft Dynamics 365 for Finance and Operations development environment.
+To generate the Customization Analysis Report (CAR), run the following command on a Microsoft Dynamics 365 for Finance and Operations development environment.
 
     xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 
@@ -48,9 +48,7 @@ The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\Lo
 See also
 --------
 
-[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
 
 [Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
-
-
 
