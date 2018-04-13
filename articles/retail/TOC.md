@@ -141,12 +141,15 @@
 ## [Setting up the components of a job](../talent/create-job.md)
 
 # Localization and regulatory features
+## France
+### [Cash registers for France](localizations/emea-fra-cash-registers.md)
+### [Deployment guidelines for cash registers in France](localizations/emea-fra-deployment.md)
 ## India
-### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
-### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST integration for cash registers](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers in India](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norway
 ### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Deployment guidelines for cash registers in Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sweden
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 ### [Sample for Retail POS integration with control units](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

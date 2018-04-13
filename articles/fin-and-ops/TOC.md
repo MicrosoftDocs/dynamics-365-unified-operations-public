@@ -864,6 +864,9 @@
 ##### [RB/SL depreciation](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Set up method of payment](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Update method of payment on customer](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [Cash registers](../retail/localizations/emea-fra-cash-registers.md)
+###### [Deployment guidelines for cash registers](../retail/localizations/emea-fra-deployment.md)
 
 #### Germany
 ##### [Additional acquisition depreciation](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
