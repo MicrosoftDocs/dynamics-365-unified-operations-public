@@ -5,7 +5,7 @@ title: Process and consume data packages in an LCS solution
 description: A Microsoft Dynamics 365 for Finance and Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.author: omarc
 
 A Microsoft Dynamics 365 for Finance and Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 
-Before you create your data package, make a plan for what it should include. In this way, you make sure that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in Finance and Operations. Follow these steps to create a data package.
+Before you create your data package, make a plan for what it should include to ensure that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in Finance and Operations. Follow these steps to create a data package.
 
 1.  In Finance and Operations, click **System administration** &gt; **Workspaces** &gt; **Data Management IT**.
 2.  Click the **Export** tile, and then, in the **Name** field, enter **Data project**.
