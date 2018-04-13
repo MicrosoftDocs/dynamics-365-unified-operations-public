@@ -44,7 +44,7 @@ You can upload catalog data submitted by a vendor from the Microsoft Dynamics 36
 
 The product data that a vendor submits to you, in the form of a catalog
 maintenance request (CMR) file, must be in XML file format. The CMR file should
-contain all of the details for the products that the vendor supplies to your
+contain the details for the products that the vendor supplies to your
 company.
 
 Import vendor catalog data
