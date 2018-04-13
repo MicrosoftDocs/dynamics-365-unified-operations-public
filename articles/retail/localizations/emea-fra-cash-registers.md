@@ -350,7 +350,7 @@ After you import the configurations, on the **Retail parameters** page, on the *
 
 To enable audit events, you must reinitialize the Retail Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Retail Scheduler.
 
-On the **General** Fast-tab, the n**Retail parameters** page, click the **Initialize** button. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
+On the **General** Fast-tab, the **Retail parameters** page, click the **Initialize** button. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
 
 There is an option to separately configure the Retail scheduler. Under the **Retail scheduler** menu item click on the **Initialize retail scheduler** menu item. On the **Initialize retail scheduler** click the **Ok** button.
 
