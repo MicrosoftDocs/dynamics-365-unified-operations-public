@@ -70,7 +70,7 @@ See Appendix A for more detailed sample scenarios of contextual data entry.
 
 To maintain functional correctness and reasonable performance, the following constraints were added to the application of the behaviors described in the previous section:
 
-1. **<strong><em>Title Field 2</em></strong> <strong>is the NAME field</strong>**.
+1. **Title Field 2** is the NAME field**.
 2. The NAME field must either be covered by an index ***OR*** belong to a Table whose *Cache Lookup* property is set to *EntireTable*. All contextual lookup behavior will be disabled if this requirement is not met for performance reasons. **NOTE: An index should only be added for NON TRANSACTIONAL tables because of index maintenance costs**. Also note that you will **likely want to mark this index as non-unique** (Allow Duplicates = Yes).
 3. If a control is using a custom lookup form (such as SysTableLookup; FormHelp on an EDT) then the disambiguation behavior described previously will not be turned on by default. This is because these custom lookup forms (and even surrounding modified and lookup method overrides) can and will do advanced things such as presenting a dialog, which are not desirable in the context of contextual lookups.
 

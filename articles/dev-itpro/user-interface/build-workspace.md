@@ -211,7 +211,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 A system administrator can modify tile cache parameters at run time by using the **Tile data cache configuration** page.
 
 1. Click in the navigation search field on the navigation bar.
-2. Type <strong>Tile data</strong>, and then click ***<strong><em>Tile data cache configuration</em></strong>*** in the search results. 
+2. Type **Tile data**, and then click **Tile data cache configuration** in the search results. 
 
    [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
 

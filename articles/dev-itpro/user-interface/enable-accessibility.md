@@ -99,7 +99,7 @@ An extensible control is simply an extension of the framework. The interaction o
 
 ##### **Introduce itself**
 
-Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Aria-describedby. Make sure your descriptive text is supplied via a framework label for localization. ******
+Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Aria-describedby. Make sure your descriptive text is supplied via a framework label for localization. 
 
 [aria-describedby](http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby) - Identifies the element (or elements) that describes the object.
 

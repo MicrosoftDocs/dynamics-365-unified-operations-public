@@ -190,7 +190,7 @@ This section explores the control criteria in more detail.
 
 ####  X++ Runtime
 
--   **FormControlAttribute** **** Each control must supply the FormControlAttribute to the class declaration. The attribute must specify the build/design-time class that accompanies the control. The attribute must also specify the HTML template ID and the physical HTML file name (the resource bundle name).
+-   **FormControlAttribute** Each control must supply the FormControlAttribute to the class declaration. The attribute must specify the build/design-time class that accompanies the control. The attribute must also specify the HTML template ID and the physical HTML file name (the resource bundle name).
 -   **FormTemplateControl** Each control must extend FormTemplateControl to participate in the control lifecycle.
 -   **FormProperty** Each control must declare FormProperties for every statically defined property that must participate in the change tracking system. For properties that are used only on the server side, no FormProperty is required.
 -   **New** Each control must implement the **New** method in order for its properties to participate in the change tracking system that propagates value changes between the client and server parts of the control. Inside the **New** method, each FormProperty

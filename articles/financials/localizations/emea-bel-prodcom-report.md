@@ -54,9 +54,9 @@ Before you can generate the PRODCOM report, you must set up the following on the
 ## Assign PRODCOM properties to an item
 Assign PRODCOM properties to an item (**Product information management** &gt; **Products** &gt; **Released products**). Open the **Released product details** page, in the **Foreign trade** section, open the PRODCOM dialog box and provide the following details.
 
--   **Product made in company** - Select this check box to report quantities and values of products that were delivered by companies.****
+-   **Product made in company** - Select this check box to report quantities and values of products that were delivered by companies.
 -   **Delivery to a third party** - Select this check box to report quantities and values of products that were delivered by third parties.
--   **Work done for** **enterprises** - Select this check box to report quantities and values of products that were delivered by enterprises.****
+-   **Work done for** **enterprises** - Select this check box to report quantities and values of products that were delivered by enterprises.
 
 After you've set up PRODCOM, you can use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report.
 
