@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service endpoints
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 
@@ -114,11 +114,11 @@ Before any clients can communicate with the services, they must be registered i
 2. Select **New**.
 3. Fill in the fields for the new record:
 
-    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
-    - In the **Name** field, enter a name for the application.
-    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
+   - In the **Client Id** field, enter the application ID that you registered in Azure AD.
+   - In the **Name** field, enter a name for the application.
+   - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
     
-    When you've finished, select **Save**.
+     When you've finished, select **Save**.
 
 You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 

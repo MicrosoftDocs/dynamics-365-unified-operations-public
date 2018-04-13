@@ -1,11 +1,11 @@
 ---
 
 # required metadata
-title: Extensibility changes in the Dynamics 365 for Finance and Operations release 8.0
-description: This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations release 8.0.
+title: Extensibility changes in the Dynamics 365 for Finance and Operations version 8.0
+description: This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.0.
 author: FrankDahl
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 04/13/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Platform update 15
 
 ---
 
-# Extensibility changes in Dynamics 365 for Finance and Operations release 8.0
+# Extensibility changes in Dynamics 365 for Finance and Operations version 8.0
 
 [!include[banner](../includes/banner.md)]
 
 ## Hard-sealed application models
 
-In Dynamics 365 for Finance and Operations release 8.0, all of Microsoft's application models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
+In Dynamics 365 for Finance and Operations version 8.0, all of Microsoft's application models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
 
 The following table includes a list of models that are now hard-sealed with this release.
 

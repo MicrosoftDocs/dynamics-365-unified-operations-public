@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Custom services for Microsoft Dynamics 365 for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can develop custom services for Microsoft Dynamics 365 for Finance and Operations. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
 -   SOAP endpoint 

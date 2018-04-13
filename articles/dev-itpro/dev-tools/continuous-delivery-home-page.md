@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Continuous delivery home page
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 These topics describe tools and guidelines related to continuous delivery of your solution.
 

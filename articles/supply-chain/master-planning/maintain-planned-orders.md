@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintain planned orders
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 
 You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists. You can use the **Status** field to help track your progress. The following values are used:
 
--   When master planning generates planned orders, the planned orders have a status of **Unprocessed**.
+-   When master planning generates planned orders, the planned orders have a status of **Unprocessed**.
 -   If you decide not to firm a planned order, you can give it a status of **Completed**.
--   When you decide to firm a planned order, you can give it a status of **Approved**. This status indicates that you approve firming of the planned order, but it isn't firmed yet.
+-   When you decide to firm a planned order, you can give it a status of **Approved**. This status indicates that you approve firming of the planned order, but it isn't firmed yet.
 
-**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation. You can firm planned orders by clicking **Firm**. You can firm the following planned orders:
+**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation. You can firm planned orders by clicking **Firm**. You can firm the following planned orders:
 
 -   The planned order that is selected.
 -   Multiple planned orders.

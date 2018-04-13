@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Go live FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
 

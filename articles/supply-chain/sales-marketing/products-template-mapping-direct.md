@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize products directly from Finance and Operations to products in Sales
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use the Excel add-in
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations.
 

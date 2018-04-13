@@ -206,6 +206,8 @@
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
+### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
+
 ## [Financial management](../financials/index.md)
 
 ### [General ledger](../financials/general-ledger/general-ledger.md)
@@ -862,6 +864,9 @@
 ##### [RB/SL depreciation](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Set up method of payment](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Update method of payment on customer](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [Cash registers](../retail/localizations/emea-fra-cash-registers.md)
+###### [Deployment guidelines for cash registers](../retail/localizations/emea-fra-deployment.md)
 
 #### Germany
 ##### [Additional acquisition depreciation](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -1457,6 +1462,7 @@
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Vendor catalogs import](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Set up an external catalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)

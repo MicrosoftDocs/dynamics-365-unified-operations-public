@@ -31,8 +31,7 @@ ms.author: omarc
 
 # Stage and publish an LCS solution
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
 

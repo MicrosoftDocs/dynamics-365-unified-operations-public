@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting analysis Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
@@ -116,17 +116,19 @@ The following table shows how the key aggregate measurements are used to create 
 
 The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and provide deeper analytical insights.
 
-| Entity                             | Examples of attributes                                                                                               |
+
+|               Entity               |                                                Examples of attributes                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Cost accounting ledgers            | Cost accounting ledger                                                                                               |
-| Cost control units                 | Cost control unit name                                                                                               |
-| Cost element dimensions            | Cost elements dimension name, Cost element dimension member name, Cost element dimension member description          |
-| Cost object dimensions             | Cost object dimension name, Cost object dimension member name, Cost object dimension member description              |
-| Statistical dimensions             | Statistical dimension name, Statistical dimension member name, Statistical dimension member description              |
-| Cost object dimension hierarchies  | Cost object dimension hierarchy name, Cost object dimension hierarchy level, Cost object dimension hierarchy tree    |
+|      Cost accounting ledgers       |                                                Cost accounting ledger                                                |
+|         Cost control units         |                                                Cost control unit name                                                |
+|      Cost element dimensions       |     Cost elements dimension name, Cost element dimension member name, Cost element dimension member description      |
+|       Cost object dimensions       |       Cost object dimension name, Cost object dimension member name, Cost object dimension member description        |
+|       Statistical dimensions       |       Statistical dimension name, Statistical dimension member name, Statistical dimension member description        |
+| Cost object dimension hierarchies  |  Cost object dimension hierarchy name, Cost object dimension hierarchy level, Cost object dimension hierarchy tree   |
 | Cost element dimension hierarchies | Cost element dimension hierarchy name, Cost element dimension hierarchy level, Cost element dimension hierarchy tree |
-| Statistical dimension hierarchies  | Statistical dimension hierarchy name, Statistical dimension hierarchy level, Statistical dimension hierarchy tree    |
-| Transaction versions               | Version name                                                                                                         |
-| Fiscal calendars                   | Calendar, Calendar description                                                                                       |
-| Fiscal years                       | Calendar year                                                                                                        |
-| Fiscal periods                     | Calendar year period                                                                                                 |
+| Statistical dimension hierarchies  |  Statistical dimension hierarchy name, Statistical dimension hierarchy level, Statistical dimension hierarchy tree   |
+|        Transaction versions        |                                                     Version name                                                     |
+|          Fiscal calendars          |                                            Calendar, Calendar description                                            |
+|            Fiscal years            |                                                    Calendar year                                                     |
+|           Fiscal periods           |                                                 Calendar year period                                                 |
+

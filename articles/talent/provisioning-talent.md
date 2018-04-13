@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 ---
 # Provision Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
@@ -84,12 +84,12 @@ Use the following guidance when determining which PowerApps environment to deplo
  
     **CDS 2.0 Environments** CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option to use CDS 2.0 Environments in Talent deployments will be available at a later date.
    
- > [!Note]
- > To differentiate between CDS 1.0 and 2.0 environments in the administration portal, select an environment and look at the **Details**. CDS 2.0 environments all reference the fact that "You can manage these settings in the Dynamics 365 Administration Center," point to an instance version, and have no Database tab. 
+   > [!Note]
+   > To differentiate between CDS 1.0 and 2.0 environments in the administration portal, select an environment and look at the **Details**. CDS 2.0 environments all reference the fact that "You can manage these settings in the Dynamics 365 Administration Center," point to an instance version, and have no Database tab. 
  
    **Default Power Apps environments** Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
    
-   **Test Drive environments** Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+   <strong>Test Drive environments</strong> Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
    
    **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, or Australia.
   

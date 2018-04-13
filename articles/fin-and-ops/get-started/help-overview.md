@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help system overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 

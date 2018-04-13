@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Requests for quotation (RFQs)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides an overview of requests for quotation (RFQs). Organizations
 issue RFQs when they want to receive competitive offers from several vendors for
@@ -413,11 +413,11 @@ Statuses – highest and lowest
 On the Vendor tab of the RFQ case, you can see the lines with the highest and
 the lowest status for a particular vendor. When the vendor is added, and no
 lines have yet been sent, both the lowest and the highest status is
-**Created.**When the RFQ is sent to the vendor with all lines, the status of the
-two lines will be **Sent**. If some lines in a bid from a vendor are accepted
+<strong>Created.</strong>When the RFQ is sent to the vendor with all lines, the status of the
+two lines will be <strong>Sent</strong>. If some lines in a bid from a vendor are accepted
 and others are rejected, the rejected lines will get the lowest status which is
-**Rejected**, and the accepted lines will get the highest status which is
-**Accepted**.
+<strong>Rejected</strong>, and the accepted lines will get the highest status which is
+<strong>Accepted</strong>.
 
 On the RFQ case lines, you can see the highest and the lowest status per line
 across all vendors. If you have sent a line to all the vendors in the RFQ case
@@ -459,7 +459,9 @@ where one bid has been received and the other bid has been accepted. When a
 received bid is rejected, the lowest status will change from received to
 rejected on the RFQ case header and line.
 
-| **Action**                                     | **Lowest status across all lines of all RFQs** | **Highest status across all lines of all RFQs** | **Lowest RFQ case header status** | **Highest RFQ case header status** | **Lowest RFQ case line status** | **Highest RFQ case line status** |
-|------------------------------------------------|------------------------------------------------|-------------------------------------------------|-----------------------------------|------------------------------------|---------------------------------|----------------------------------|
-| Accept one of the bids. (or at least one line) | Received                                       | Accepted                                        | Received                          | Accepted                           | Received                        | Accepted                         |
-| Reject all the other bids.                     | Rejected                                       | Accepted                                        | Rejected                          | Accepted                           | Rejected                        | Accepted   
+
+|            <strong>Action</strong>             | <strong>Lowest status across all lines of all RFQs</strong> | <strong>Highest status across all lines of all RFQs</strong> | <strong>Lowest RFQ case header status</strong> | <strong>Highest RFQ case header status</strong> | <strong>Lowest RFQ case line status</strong> | <strong>Highest RFQ case line status</strong> |
+|------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
+| Accept one of the bids. (or at least one line) |                          Received                           |                           Accepted                           |                    Received                    |                    Accepted                     |                   Received                   |                   Accepted                    |
+|           Reject all the other bids.           |                          Rejected                           |                           Accepted                           |                    Rejected                    |                    Accepted                     |                   Rejected                   |                   Accepted                    |
+

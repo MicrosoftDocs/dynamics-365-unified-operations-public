@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Generate demo data by using data packages
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
 

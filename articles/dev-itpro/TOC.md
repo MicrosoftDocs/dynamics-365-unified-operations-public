@@ -115,6 +115,7 @@
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
 #### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 8.0](extensibility/changes-80.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -408,7 +409,9 @@
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
 ### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
+
 ### [Find information about standard data entities](data-entities/data-entities-report.md)
+
 
 ## [Data import and export jobs](data-entities/data-import-export-job.md)
 
@@ -428,13 +431,18 @@
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
+
+## [Data task automation](data-entities/data-task-automation.md)
+
 ## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
 ### [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Asset classifications](gdpr/gdpr-asset-classification-values.md)
 ### [Use the Person search report](gdpr/gdpr-person-search-report.md)
 ### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+
 
 # [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)

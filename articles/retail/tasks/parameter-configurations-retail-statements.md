@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Parameter configurations for Retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. This procedure uses the USRT demo company.
 

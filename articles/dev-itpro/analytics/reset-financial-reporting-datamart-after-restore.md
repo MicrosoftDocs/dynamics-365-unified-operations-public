@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Reset the Financial reporting data mart
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
 
@@ -178,9 +178,9 @@ cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
- > [!NOTE]
- > SkipMRTableReset preserves tree unit security if you are using it. 
-  - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
+> [!NOTE]
+> SkipMRTableReset preserves tree unit security if you are using it. 
+>   - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
 
 
 

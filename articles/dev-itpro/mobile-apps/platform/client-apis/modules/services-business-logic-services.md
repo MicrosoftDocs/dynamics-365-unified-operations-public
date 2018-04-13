@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Services 
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Various services that are available to the application in client runtime.
 

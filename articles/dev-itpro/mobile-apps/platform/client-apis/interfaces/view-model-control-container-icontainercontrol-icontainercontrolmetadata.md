@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # ContainerControlMetadata Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Container control metadata type.
 

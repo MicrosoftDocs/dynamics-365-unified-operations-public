@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prerequisites for standard costs
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the basic steps for using standard costs. Subsequent steps depend on the company's operations. For example, the steps differ for a nonmanufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings. 
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form pattern add-ins
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The tools for Visual Studio include a number of add-ins that support pattern usage. 
 

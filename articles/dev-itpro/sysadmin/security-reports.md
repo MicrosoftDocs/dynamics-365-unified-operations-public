@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Out-of-the-box security reports
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. Each of these reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
 

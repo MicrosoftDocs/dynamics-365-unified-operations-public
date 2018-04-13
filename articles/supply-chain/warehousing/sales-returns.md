@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales returns
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
@@ -54,7 +53,7 @@ There are two types of return order process: physical return and credit only.
 1.  **Create a return order.** Formally document the authorization for the customer to return any defective or unwanted products. The return order doesn’t require that the company accept the returned products or provide a credit for the customer. If the return is accepted, you can authorize a replacement item to be sent before the defective item has been returned.
 2.  **Arrive at warehouse for inspection.** Complete an initial inspection and validation against the return order document. The return order also supports quarantine of the returned items for additional inspection and quality control.
 3.  **Determine disposition.** Finalize the inspection process, and decide what should be done with the returned products. As part of this step, decide whether you will credit the customer, reject the product return, or accept the product return, scrap the product, and then send a replacement product to the customer.
-4.  **Generate a packing slip.** Generate a packing slip, and commit the disposition decision that you made in step 3. Finalize the logistics processes.
+4.  **Generate a packing slip.** Generate a packing slip, and commit the disposition decision that you made in step 3. Finalize the logistics processes.
 5.  **Generate an invoice.** Close the return order.
 
 ### Credit only process
@@ -65,7 +64,7 @@ There are two types of return order process: physical return and credit only.
 ## Return material authorization
 Return Material Authorization (RMA) processing builds on sales order functionality. An RMA is registered as a return order, which is created as a sales order, and may have another sales order associated with it, called a replacement order. Both sales orders link to the originating RMA number.
 
--   **Return order** – To register an RMA, you create a return order, which is a sales order that has the assigned type, **Returned order.** Any changes that you make to the RMA information is automatically updated in the sales order. Until the return order has the status **Open**, it will not appear in the list of sales orders. You use RMA to handle the arrival and receipt of the returned items, as well as to authorize a credit only disposition action (see section **Disposition codes and disposition actions**). All other follow-up processes must be handled in the sales order.
+-   **Return order** – To register an RMA, you create a return order, which is a sales order that has the assigned type, **Returned order.** Any changes that you make to the RMA information is automatically updated in the sales order. Until the return order has the status **Open**, it will not appear in the list of sales orders. You use RMA to handle the arrival and receipt of the returned items, as well as to authorize a credit only disposition action (see section **Disposition codes and disposition actions**). All other follow-up processes must be handled in the sales order.
 -   **Replacement order** – When a replacement order must be shipped to the customer, the RMA can include a second associated sales order. You can manually create the replacement order for the RMA to support immediate shipment. Alternatively, the replacement order can be created automatically after the arrival, inspection, and receipt are completed for the RMA line item that has a disposition code that indicates replacement. The replacement order has the same functionality that is associated with a sales order. For example, you can use it to configure a custom product as the replacement item, create a production order to repair a returned item, create a direct delivery purchase order to send the replacement from a vendor, or support other purposes.
 
 ## Create a return order
@@ -138,7 +137,7 @@ In addition to determining how the returned goods are disposed of, disposition c
 <ul>
 <li>There is sufficient trust among the parties.</li>
 <li>The cost of returning the defective item is prohibitive.</li>
-<li>The items can't be allowed back into inventory. Because of other conditions, a physical return isn't required.</li>
+<li>The items can&#39;t be allowed back into inventory. Because of other conditions, a physical return isn&#39;t required.</li>
 </ul></td>
 </tr>
 <tr class="even">

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrades, updates, and hotfixes
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix. 
 

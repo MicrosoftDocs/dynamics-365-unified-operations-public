@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Behavioral properties on data entities
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity. Your choices affect the behavior of the entity. In the following table, the first column lists the properties that are discussed in this topic. The top row lists the levels where the property is found in the entity designer. The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.
 
@@ -120,7 +120,7 @@ If a data entity has three data sources, you might want to allow processes to us
 </table>
 
 ## Field level
-At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are available instead of an **IsReadOnly** property. The two **Allow\*** properties include **Auto** as a third available value. The **Auto** value inherits the value that is on the field in the underlying table. **Note:** The **Auto** value isn't available for unmapped fields, such as computed or virtual fields.
+At the field level, the <strong>AllowEdit</strong> and <strong>AllowEditOnCreate</strong> properties are available instead of an <strong>IsReadOnly</strong> property. The two <strong>Allow\</strong>* properties include <strong>Auto</strong> as a third available value. The <strong>Auto</strong> value inherits the value that is on the field in the underlying table. <strong>Note:</strong> The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.
 
 <table style="width:100%;">
 <colgroup>
@@ -149,8 +149,8 @@ At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are a
 <td>Auto, No, Yes</td>
 <td>Auto</td>
 <td><ul>
-<li><strong>Auto:</strong> The property is inherited from the underlying table field. <strong>Note:</strong> The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.</li>
-<li><strong>No:</strong> Users aren't allowed to modify the data for this field in a new record.</li>
+<li><strong>Auto:</strong> The property is inherited from the underlying table field. <strong>Note:</strong> The <strong>Auto</strong> value isn&#39;t available for unmapped fields, such as computed or virtual fields.</li>
+<li><strong>No:</strong> Users aren&#39;t allowed to modify the data for this field in a new record.</li>
 <li><strong>Yes:</strong> Users are allowed to modify the data for this field for a new record.</li>
 </ul>
 This behavior is enforced for all consumers – X++, OData, and so on. <strong>Important:</strong> The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
