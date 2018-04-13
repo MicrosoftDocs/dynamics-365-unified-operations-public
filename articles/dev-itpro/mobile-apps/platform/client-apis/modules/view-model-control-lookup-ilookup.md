@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Lookup 
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 A lookup is an input control that is used to select an input from a list of options.
 For example, a lookup could be used to lookup a customer when linking a customer to a new sales order.

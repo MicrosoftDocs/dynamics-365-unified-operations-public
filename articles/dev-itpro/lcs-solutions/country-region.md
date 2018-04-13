@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [International product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
@@ -188,7 +187,7 @@ The following sections list resources by country/region.
 
 ### Hungary
 
--   [Fixed asset depreciation methods](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)	
+-   [Fixed asset depreciation methods](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
 -   [Move a fixed asset to inventory](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Low-cost fixed assets](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
@@ -254,7 +253,7 @@ The following sections list resources by country/region.
 -   [Adjustment inflation declaration report](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR declaration report](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Electronic invoices (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### Malaysia
 
 -   [Goods and services tax (GST)](../../financials/localizations/apac-mys-gst.md)

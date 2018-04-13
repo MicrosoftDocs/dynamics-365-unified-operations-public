@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with customers
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
 

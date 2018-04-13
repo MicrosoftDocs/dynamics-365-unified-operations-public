@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 ---
 # Extend the functionality of Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 If you’ve created any Microsoft PowerApps, you can start those applications from links within Microsoft Dynamics 365 for Talent. To set up access to your applications, you’ll need to set up some information in Talent on a configuration page that you can open from the **System administration** workspace.
 
@@ -43,10 +43,10 @@ The following information is entered or set on this page:
 > -	A descriptive name or identifier for each PowerApps application.
 > -	A unique identifier (GUID) for each application that you add to a Talent page. The app ID is available on the PowerApps site, [powerapps.com](http://powerapps.com/). 
 > -	The page from which users can open an application or report. Not all Talent pages support embedded PowerApps and Power BI reports. 
-
- > [!NOTE]
- >  Enter the internal name of the page, rather than the display name that appears at the top of the page. To find the internal name, open the page that you need the internal name of, and right-click anywhere on the page. When the menu opens, hover over the **Form information** item. The internal form name is displayed next to the **Form information** item in the menu.
- 
+> 
+> [!NOTE]
+>  Enter the internal name of the page, rather than the display name that appears at the top of the page. To find the internal name, open the page that you need the internal name of, and right-click anywhere on the page. When the menu opens, hover over the **Form information** item. The internal form name is displayed next to the **Form information** item in the menu.
+> 
 > -	Specify the form control from which the application can retrieve context data. For example, an application might use data about a worker. If you enter the **Worker** page in the **Context** field, the **Worker** page will open when you start the application. An entry in the **Context field** is optional. 
 > -	Set the size of the dialog box on which the PowerApps application will run. The dialog boxes are designated as “small” or “large” to optimize the user interface when your application for running on a phone or a larger device, respectively. 
 

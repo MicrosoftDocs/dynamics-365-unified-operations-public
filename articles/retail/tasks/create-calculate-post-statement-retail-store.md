@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create, calculate, and post a statement for a retail store
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other topics. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX. This recording uses the USRT company in demo data. This procedure may refer to Microsoft Dynamics AX. Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Add custom columns to a POS transaction grid
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. You can add more information to a transaction page by using the custom column feature. A custom column can be added to the transaction page receipt grid by using the screen layout designer. You can adjust the width and position of the columns by using the designer. There are 10 custom columns in the layout for extensions scenarios. You can use all 10 in one layout. The custom columns are already added to the designer metadata. After adding the column to the layout, you run the distribution job so that the column shows up on the transaction page.
 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Value Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Value control type. This is the base class for single value controls.
 

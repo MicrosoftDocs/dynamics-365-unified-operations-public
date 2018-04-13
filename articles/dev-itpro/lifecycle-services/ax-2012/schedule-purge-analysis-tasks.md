@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Schedule Intelligent Data Management Framework purge and analysis tasks (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 

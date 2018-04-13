@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Process for moving to the latest update of Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 

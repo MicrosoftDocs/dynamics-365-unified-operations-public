@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Development and administration for Dynamics 365 for Finance and Operations 
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Development and administration for Microsoft Dynamics 365 for Finance and Operations includes:
 

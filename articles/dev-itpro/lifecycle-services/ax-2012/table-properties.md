@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Table properties
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 
@@ -77,7 +76,7 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="even">
 <td><strong><span class="ui">AOSAuthorization</span></strong></td>
-<td>Specifies the type of operation that a user can perform on a table, depending on the user's permissions. When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
+<td>Specifies the type of operation that a user can perform on a table, depending on the user&#39;s permissions. When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
 <td></td>
 </tr>
 <tr class="odd">

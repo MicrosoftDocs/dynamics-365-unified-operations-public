@@ -32,14 +32,14 @@ ms.dyn365.ops.version: Platform update 2
 
 # What's new or changed
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 
-[!include[release notes](../includes/release-notes.md)]
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## Application releases
 
@@ -70,7 +70,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>8.0</td>
 <td>8.0.30</td>
 <td>April 2018</td>
-  <td><a href="whats-new-changed-8-0-April-2018.md">What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)</a></td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">What&#39;s new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)</a></td>
 </tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>7.3</td>

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Control 
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Controls are what make up the content of a page.
 

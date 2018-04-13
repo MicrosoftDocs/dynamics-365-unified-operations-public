@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Submit a service request to the Dynamics Service Engineering team
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 

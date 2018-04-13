@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Remove outliers from historical transaction data when calculating a demand forecast
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.
 

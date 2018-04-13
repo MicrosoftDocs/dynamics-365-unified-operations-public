@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use tracing for explosion
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.
 
-By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order. The following examples show how you can use the tracing information:
+By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order. The following examples show how you can use the tracing information:
 
 -   View relations between the actions on planned orders to optimize the supply chain and inventory reservations.
 -   View relations to orders that are already approved. You can focus on automatically firming derived requirements and then prioritize orders more accurately.

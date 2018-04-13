@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Commerce runtime and Retail Server extensibility
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 
@@ -364,12 +363,12 @@ For new entities, you must also override the factory’s **BuildEntitySets()** m
 
 Before calling the new retail server API please make sure you have performed the below steps:
 
-1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt;
+1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 2.  Add the new retail server extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
 3.  Drop both the CRT and Retail server extension dlls into the retail server bin folder. If you have any CRT extension that is related to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 5.  Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.
-6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:
+6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:
 
 #### Cross loyalty sample:
 
@@ -381,7 +380,7 @@ Before calling the new retail server API please make sure you have performed the
     var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
     return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 
-Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
+Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
 
 
 

@@ -30,8 +30,7 @@ ms.author: omarc
 
 # Set up Business process modeler libraries for an LCS solution
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 
@@ -42,7 +41,7 @@ There are two ways to create a Business process modeler (BPM) library. You can c
 
 1.  In Microsoft Dynamics Lifecycle Services (LCS), open a project, scroll to the right until you see the **More tools** section, and then click the **Business process modeler** tile. The **Business process libraries** page that appears has three sections, one for each type of library:
     -   **My libraries** – Business processes that users have created or added.
-    -   **Corporate libraries** – Custom business processes that someone in your organization has uploaded.
+    -   **Corporate libraries** – Custom business processes that someone in your organization has uploaded.
     -   **Global libraries** – Cross-industry standard business processes. [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
 
 2.  To create a new library, right-click any library, and then, in the lower-left corner of the window, click **Create**. To copy an existing library, right-click that library, and then, in the lower-left corner of the window, click **Copy**. [![Location of the Copy button](./media/bpm_03.png)](./media/bpm_03.png)
@@ -82,7 +81,7 @@ Follow these steps to change or update the business process lines or hierarchy i
 There are two sections in business process libraries: **Core Business Processes** and **Support Processes**. The **Core Business Processes** section should include all custom business processes for your solution. All customizations and functionality should be covered in end-to-end scenarios. Task recordings should be created for all processes in this section. Import American Productivity & Quality Center (APQC) processes that are relevant to your solution into the **Support Processes** section. This section should not include any custom business processes. You don't have to create task recordings for processes in this section. Your business process library should be aligned with the descriptions and summaries in your methodology and your marketing material.
 
 ## Create a task recording and associate it with a business process
-Task recordings should be created in a Microsoft Finance and Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Finance and Operations](../user-interface/task-recorder.md).
+Task recordings should be created in a Microsoft Finance and Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Finance and Operations](../user-interface/task-recorder.md).
 
 ### Create a task recording
 
