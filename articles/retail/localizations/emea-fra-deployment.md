@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France
 description: This topic is a deployment guide for the Retail localization for France.
 author: AlexChern0v
 manager: ezubov
-ms.date: 03/27/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,7 +24,7 @@ ms.search.region: France
 ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.scope: Retail
-ms.search.validFrom: 2018-3-15
+ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include[banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats.<!-- For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).-->
+This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 This localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -472,6 +472,9 @@ You must complete the following procedure to enable the extensions in offline mo
 5. Rebuild the solution.
 6. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 7. Test the functionality.
+
+### Set up required parameters in Retail headquarters
+For more information, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 ## Production environment
 
