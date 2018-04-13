@@ -57,7 +57,7 @@ To import vendor catalog data, you must complete the following tasks:
 
 2.  Set up a procurement category hierarchy, and assign your vendors to
     procurement categories. If you use commodity codes, add the commodity codes
-    to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](set-up-procurement-category-hierarchy.md).
+    to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
 3.  Configure the vendor for catalog import. Select a vendor, and then select **Procurement** > **Set up** > **Configure vendor for catalog import**.
 
