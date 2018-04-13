@@ -45,10 +45,12 @@ Here's an example of how this command might look.
 
 The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\LocalDirectory\bin)*. Any warnings or errors that appear on the **Issues** tab of the report must be resolved. A copy of the CAR report must be submitted to Microsoft prior to your validation meeting. For more information, see the Finance and Operations Help topic, [Customization Analysis Report](../dev-tools/customization-analysis-report.md) or refer to the [Dynamics Community blog](http://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) for issues and exceptions.
 
+## Extensibility
+With Microsoft Dynamics 365 for Finance and Operations release 8.0, we have sealed all product models. This means that only extension-based customizations are currently supported. For details about extensbility, see [Extensibility](../dev-tools/extensibility/extensibility-home-page.md). 
+
 See also
 --------
 
 [AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
 
-[Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
-
+[Technical Concepts Guide for code migration](../dev-tools/developer-home-page.md#code-migration)
