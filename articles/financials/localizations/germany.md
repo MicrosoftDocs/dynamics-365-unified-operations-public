@@ -54,7 +54,7 @@ You can specify the label that appears on credit memos that originate from sales
 On the **Legal entities** page, you can use the **Print corrective invoice on a sales memo** option on the **Foreign trade and logistics** tab to specify the label that appears on credit memos that originate from sales (sales orders, non-item sales, and project sales).
 
 -   If the **Print corrective invoice on a sales memo** option is set to **No**, the label "Gutschrift" will be printed on all credit memos.
--   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur” will be printed on credit memos from sales orders, free text invoices, and project invoices.
+-   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur” will be printed on credit memos for sales orders, free text invoices, and project invoices.
 
 ## Electronic tax declarations
 
@@ -65,7 +65,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
-|German journal list report| **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|The German journal list report displays a list of transactions, sorted by journal sequence number, that result from running the Journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md)| 
+|German journal list report| **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|The **German journal list** report displays a list of transactions, sorted by journal sequence number, that result from running the journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md).| 
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)
