@@ -349,6 +349,13 @@ In this section, you will use a console application to consume the OData endpoin
 
 This completes the walkthrough, where you've seen an external client interacting with the Fleet Management model by using OData endpoint.
 
+## Tips & tricks
+
+### Max join limits
+During entity development, care must be taken to ensure the overall structure of the entity is not complicated to exceed the max join limit of 26. This is the default limit in Microsoft Dynamics 365 for Finance and Operations. Increasing this limit is usually not recomended as it can have unintended consequences. If this limit is exceeded, entity will fail to process records and it usually results in the following SQL error.
+
+Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
+
 See also
 --------
 
