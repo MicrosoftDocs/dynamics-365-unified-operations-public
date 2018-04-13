@@ -436,6 +436,7 @@
 
 ## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
 ### [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Asset classifications](gdpr/gdpr-asset-classification-values.md)
 ### [Use the Person search report](gdpr/gdpr-person-search-report.md)
 ### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
