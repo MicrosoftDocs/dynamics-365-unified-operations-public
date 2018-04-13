@@ -343,6 +343,17 @@ You can download the ER configuration for the archive from Microsoft Dynamics Li
 
 After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
 
+### Renitialize Retail components
+
+> [!NOTE]
+> You only need to complete the steps of this section if you are updating an existing evironment.
+
+To enable audit events, you must reinitialize the Retail Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Retail Scheduler.
+
+On the **General** Fast-tab, the n**Retail parameters** page, click the **Initialize** button. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
+
+There is an option to separately configure the Retail scheduler. Under the **Retail scheduler** menu item click on the **Initialize retail scheduler** menu item. On the **Initialize retail scheduler** click the **Ok** button.
+
 ### Configure Retail channel components
 
 To enable France-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
