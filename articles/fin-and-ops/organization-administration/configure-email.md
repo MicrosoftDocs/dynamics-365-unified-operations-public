@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -208,6 +208,31 @@ The testing for email notifications is to simply trigger the notification and th
 3. Check the status of the pending email notification in **System administration** > **Periodic tasks** > **Email processing** > **Email sending status**.
     1. If the email is fails to send, make sure that the SMTP mail account can be opened.
 4. Check for the email notification in the appropriate inbox.
+
+## Troubleshoot email
+
+There are a few standard steps that can help you troubleshoot the configuration of email settings.
+
+1. Verify email settings:
+
+    1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+    2. Verify that SMTP is enabled.
+    3. Verify the settings of the SMTP mail server.
+    4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
+
+2. Verify that the email batch process is running:
+
+    1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
+    2. Make sure that the **Batch processing** option is set to **Yes**.
+    3. Review the recurrence of the email process:
+
+        1. Select **No end date** to adjust all recurrences of the email batch process.
+        2. Adjust the count as you require.
+
+3. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**, and review the status of the pending emails.
+4. In the Office 365 admin center, verify that user mail accounts have provided **Send As** and **Send On Behalf Of** permissions to the SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
+6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
 ## Other notes
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.

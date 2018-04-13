@@ -165,6 +165,10 @@
 ###### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
+###### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
+###### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [Consuming external web services](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
@@ -201,6 +205,8 @@
 #### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Financial management](../financials/index.md)
 
@@ -813,13 +819,7 @@
 
 #### [Austria](../financials/localizations/austria.md)
 
-#### Belgium
-##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Create and transfer transactions to the BLWI](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat tax declaration](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM report setup](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Set up payment balance reporting](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgium](../financials/localizations/belgium.md)
 
 #### [The Czech Republic](../financials/localizations/czech-republic.md)
 
@@ -897,6 +897,7 @@
 ##### [Depreciation of fixed assets](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Packing slip date verification on invoices](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Post and print a packing slip with transportation delivery details](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Sales tax books](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Split payment for invoices issued to the Public Administration](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Withholding tax](../financials/localizations/emea-ita-withholding-tax.md)
@@ -951,6 +952,7 @@
 ##### [Sales and purchase cycles](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [Special entries and opening sheets](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Sweden
+##### [Export financial information for auditors in Sweden](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Import payment formats](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Cash registers](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Switzerland
@@ -1225,6 +1227,7 @@
 #### [Configure SSRS for an on-premises deployment](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Printing](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Install the Document Routing Agent to enable network printer devices](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [Upgrade the Document Routing Agent](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Install network printer devices in on-premises environments](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Document generation, publishing, and printing capabilities in on-premises deployments](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Run the Document Routing Agent as a Windows service](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1456,6 +1459,7 @@
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Vendor catalogs import](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Set up an external catalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
@@ -1603,14 +1607,16 @@
 ##### [Material substitution in manufacturing](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Registration for manufacturing execution](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Production feedback](../supply-chain/production-control/production-feedback.md)
-##### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Enable the payroll process for time and attendance](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Configure a worker using the mobile job device](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Manage financials in production
 ##### [Allocate time to jobs in a job bundle](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Calculate material consumption](../supply-chain/production-control/consumption.md)
 ##### [Production posting](../supply-chain/cost-management/production-posting.md)
+#### [Time and attendance registration](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Pay based on registrations](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Absence registration in Time and attendance](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Flex groups](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing 
 #### [Lean manufacturing overview](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1841,6 +1847,7 @@
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Picking and packing
+#### [Set up cluster picking](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1848,7 +1855,7 @@
 #### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Scan bar codes using a camera in Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Piece picking confirmation](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Product confirmation for cluster picking](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Partial shipment of a transport load](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Inventory counting

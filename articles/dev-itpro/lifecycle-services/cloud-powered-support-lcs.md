@@ -39,6 +39,7 @@ To use the Support tool, you must have previously created a project in Lifecycle
 
 ## Open a new incident
 1. In LCS, navigate to the project for which you want to file a support incident. 
+
 2. Click the **Support** tile.
    ![Support menu](media/CPS1.png)
 
@@ -64,10 +65,11 @@ To use the Support tool, you must have previously created a project in Lifecycle
    > 
    > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
  
-   ![Detail](media/CPS7-1.png)
+   ![Detail](media/CPS7.png)
  
 7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
    ![Contact info](media/CPS8.png)
+
 
 8. Select the support contract and the severity level. 
     
@@ -77,7 +79,9 @@ To use the Support tool, you must have previously created a project in Lifecycle
    ![Contract and severity](media/CPS9.png)
 
 9. Click **Submit**. 
+
    ![Completed](media/CPS10.png)
+
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 
