@@ -1,4 +1,36 @@
-Schedule workload capacity
+---
+# required metadata
+
+title: Schedule workload capacity
+description: This topic describes how to set up and schedule the the workload capaccity for workers in a warehouse or for an entire warehouse.
+author: MarkusFogelberg
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  WMSWorkloadCapacity
+audience: Application User
+# ms.devlang: 
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 269384
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+[!include[banner](../includes/banner.md)]
+
+# Schedule workload capacity
 
 You can schedule workload capacity for warehouses, and also project the current
 and future workloads for the workers in individual warehouses. You can project
@@ -6,7 +38,7 @@ the workload for the whole warehouse, or you can project the workload separately
 for incoming and outgoing workloads.
 
 To project workload output for selected warehouses, master scheduling data must
-be available for the selected warehouses. For more information, see Master plans
+be available for the selected warehouses. For more information, see [Master plans]
 /[master-planning](https://github.com/MicrosoftDocs/Dynamics-365-Operations/tree/master/articles/supply-chain/master-planning)/**master-plans.md**.
 
 Schedule and view workloads for a warehouse
