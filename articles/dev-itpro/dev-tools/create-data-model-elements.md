@@ -43,9 +43,9 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
 
 ## Keywords
 - **Model** - You configure your model to refer to two other models. This enables your model to reference metadata and code elements that are in other packages.
-- <strong>Project **-</strong> <strong>You create a **Dynamics AX</strong> project, and you associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
-- <strong>Designer **-</strong>** *<strong><em>Each time you add an item to your project, a designer is displayed that is tailored to the item type you choose. The *</em>Properties</strong> window adjusts each time a different node of the designer is highlighted. You make updates in the designers and in the <strong>Properties</strong> window.
-- <strong>EDT **-</strong>** ****Extended data type.
+- **Project** - You create a **Dynamics AX** project, and you associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
+- **Designer** - Each time you add an item to your project, a designer is displayed that is tailored to the item type you choose. The **Properties** window adjusts each time a different node of the designer is highlighted. You make updates in the designers and in the **Properties** window.
+- **EDT** - Extended data type.
 
 ## Create the Fleet Management tutorial model
 1.  Start Visual Studio using **Run as administrator**.
