@@ -5,7 +5,7 @@ title: Entity store mainentance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
