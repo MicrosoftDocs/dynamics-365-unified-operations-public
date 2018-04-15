@@ -495,7 +495,9 @@ Next, check the certificates of the service in the wif.config file. To find the 
 If the thumbprints do not follow the list of requirements, you must redeploy from LCS with proper thumbprints.
 
 ### Remote name can't be resolved
-The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService that could accept the message. This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
+**Error:** *The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at `https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService` that could accept the message.*
+
+This is often caused by an incorrect address or SOAP action. Verify that the address is reachable by manually browsing to the URL. See InnerException, if present, for more details.
 
 ### Error on ImportDefaultReports 
 If MR reports are checked out during deployment, the deployment will fail. To see if reports are checked out, run the following select statements on the FinancialReporting database:
