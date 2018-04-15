@@ -746,28 +746,27 @@ The following error will display when you deploy an additional environment:
 The following sections in the deployment instructions can be skipped or modified:
 
 ### Plan and acquire your certificates (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#plancert) or [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#plancert))
-(https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#plancert)
 - Need to use same On-Premises local agent certificate
 - Can use same star certs (AOS SSL and Service Fabric)
 - Rest of certs should likely be different than existing environment
 
-- [Download setup scripts from LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#downloadscripts)
-    - The scripts that are downloaded should be copied into a new folder.
+### Download setup scripts from LCS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#downloadscripts) or [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts))
+- The scripts that are downloaded should be copied into a new folder.
 
-- [Set up a standalone Service Fabric cluster](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsfcluster)
-    - The scripts that are downloaded should be copied into a new folder.
+### Set up a standalone Service Fabric cluster (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster) or [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster))
+- The scripts that are downloaded should be copied into a new folder.
 
-- [Configure LCS connectivity for the tenant](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configurelcs)
-    - This only needs to be done once for tenant
+### Configure LCS connectivity for the tenant (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs) or [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs))
+- This only needs to be done once for tenant
 
-- [Configure AD FS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configureadfs)
-    - Script 1, 2, 3 can be skipped as already done
-    - Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
-    - AD FS Manager \> AD FS \> Application Groups \> open "Microsoft Dynamics 365 for Operations On-premises"
-        - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Native application"
-            - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
-        - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application"
-            - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
+### Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))
+- Script 1, 2, 3 can be skipped as already done
+- Script .\\Publish-ADFSApplicationGroup.ps1 will fail even with new hosturl so do following manually
+- AD FS Manager \> AD FS \> Application Groups \> open "Microsoft Dynamics 365 for Operations On-premises"
+    - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Native application"
+        - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
+    - Open Native application "Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application"
+        - Add Redirect URI of new environment (DNS) and select Add button to include \> OK
 
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog and then restart one of the AOS machines, it will re-run db sync and then deploy reports. 
