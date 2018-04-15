@@ -524,12 +524,12 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 
 ## axdbadmin is unable to connect to the database server SQL-LS.contoso.com
 
-Reason: The user does not have permission to connect to the AX database.
+Reason: The user does not have permission to connect to the AXDB database.
 
 Steps to resolve:
 
 1. Remove the axdbadmin user from the database if it already exists.
-1. Make sure you specify the username that needs to be added to the AX database in the ConfigTemplate.xml file.
+1. Make sure you specify the username that needs to be added to the AXDB database in the ConfigTemplate.xml file.
     ```xml
     <Security>
         <User refName="axdbadmin" type="SqlUser" userName="axdbadmin" />
@@ -549,9 +549,10 @@ If the Login page is not redirecting and is still prompting for credentials, or 
 - Try adding a trailing slash '/' to see if the behavior changes.
 
 Verify the AD FS Manager by going to **ADFS** > **Application groups**. Double-click **Microsoft Dynamics 365 for Operations on-premises**. Under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.
-- Note the Redirect URI. It should match the DNS forward lookup zone for Finance and Operations.
 
-### Error "Could not establish trust relationship for the SSL/TLS secure channel"
+Note the Redirect URI. It should match the DNS forward lookup zone for Finance and Operations.
+
+### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
 If you receive the error, "Could not establish trust relationship for the SSL/TLS secure channel", do the following:
 
 1. Go to **Service Fabric** > **Cluster** > **Applications** > **AXSFType** > **fabric:/AXSF** > **Details** tab and Aad\_AADMetadataLocationFormat / - Aad\_FederationMetadataLocation. Next, browse to that URL from AOS.
@@ -618,7 +619,7 @@ If you receive one of the following errors:
 - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
 - System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted
 
-The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL server certificate to all of the Service Fabric nodes.
+The certificates have not been installed or given access to the correct users. To resolve this error, add the public key SQL Server certificate to all of the Service Fabric nodes.
 
 ## Keyset doesn't exist
 If you find that the keyset doesn't exist, this means that scripts were not run on all machines. Review and complete the **Set up VMs** section for your environments.
@@ -659,7 +660,7 @@ If you need to re-create the certificate using the correct provider, follow thes
 If you receive this error, check to see if certificates/thumbprints are being combined for multiple purposes. For example, if the client and SessionAuthentication is combined, you will receive this error. We recommend that you do not to combine certificates. For more information, see the certificate requirements and check acl.csv for domain.com\user vs. domain\user (ex. NETBIOS structure).
 
 ## Client and server can't communicate because they do not have a common algorithm
-If this occurs, verify that the certificates created are using the specified provider as explained in step 2. Plan and acquire your certificates for your environment. 
+If this occurs, verify that the certificates created are using the specified provider as explained the **Plan and acquire your certificates** section of the deployment instructions: 
 - [Platform update 12](setup-deploy-on-premises-pu12.md#plancert)
 - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert)
 
@@ -688,7 +689,9 @@ If you receive this error, the strong name validation is enabled in the Reportin
 
 ## Requested operation requires elevation
 AOS users are not in the local administrator group and the UAC has not been disabled correctly. To resolve the issue, complete the following steps.
-1. Add AOS users as local admins as described in the section "Join VMs to the domain."
+1. Add AOS users as local admins as described in the section **Join VMs to the domain**:
+    - [Platform udpate 12](setup-deploy-on-premises-pu12.md#joindomain)
+    - [Platform update 8 and Platform udpate 11](setup-deploy-on-premises-pu8-pu11.md#joindomain)
 2. Run the Config-PreReq script on all the AOS machines.
 3. Make sure Test-Configuration script passes.
 4. If UAC was changed, you need to restart the machine to take effect.
