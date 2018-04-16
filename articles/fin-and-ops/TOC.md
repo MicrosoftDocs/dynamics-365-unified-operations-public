@@ -1321,6 +1321,7 @@
 
 ### Power user management tools
 #### [Power BI integration with Entity store](../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json)
+#### [Entity store maintenance](../dev-itpro/analytics/entity-store-maintenance.md)
 #### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json)
 #### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
