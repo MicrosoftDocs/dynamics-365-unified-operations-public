@@ -74,7 +74,7 @@ From a process perspective, deploying a platform upgrade package resembles a bin
 -   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
 [![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
-For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package](..\deployment\apply-deployable-package-system.md).
+For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package](../deployment/apply-deployable-package-system.md).
 
 > [!NOTE]
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.

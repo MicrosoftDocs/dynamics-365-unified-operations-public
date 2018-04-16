@@ -47,7 +47,7 @@ Application customization is enabled using a new framework, called *extensions*.
 -   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](../migration-upgrade/delegates-migration.md)
 -   Report commonly used over-layering patterns to Microsoft and request extension support.
 
-For more information, see [Extensibility home page](..\extensibility\extensibility-home-page.md) and the [Developer home page](developer-home-page.md).
+For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Developer home page](developer-home-page.md).
 
 ### How do I prevent my models from being customized by customers or other partners?
 
@@ -62,7 +62,7 @@ Designing models and model elements is no different than designing other types o
 ## Continuous delivery
 ### Do I need build environments?
 
-Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md) for more details.
+Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md) for more details.
 
 ### What strategy do I use for test automation?
 
