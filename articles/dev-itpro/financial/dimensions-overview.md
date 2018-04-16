@@ -39,7 +39,7 @@ This topic provides information about dimensions, dimensions that have entities,
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
-2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](..\office-integration\office-integration-edit-excel.md).
+2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](../office-integration/office-integration-edit-excel.md).
 3. Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).
 3.  Publish the template.
 
@@ -127,7 +127,7 @@ select * from DIMENSIONCOMBINATIONENTITY
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
-[Extensibility home page](..\extensibility\extensibility-home-page.md)
+[Extensibility home page](../extensibility/extensibility-home-page.md)
 
 
 

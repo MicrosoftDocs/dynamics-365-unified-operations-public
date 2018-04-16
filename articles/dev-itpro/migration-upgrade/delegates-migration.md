@@ -39,7 +39,7 @@ This topic explains how delegate methods serve as a means for defining a contrac
 Overview
 --------
 
-Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](..\dev-tools\models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
+Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](../dev-tools/models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -141,7 +141,7 @@ There are three key ways to find delegates and handlers
 -   Class references
 -   SubscribesTo references
 
-The Metadata search tool, described on the [Metadata search in Visual Studio](..\dev-tools\metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to <strong>Dynamics 365 **&gt; **Metadata Search</strong> to open the metadata search tool. 
+The Metadata search tool, described on the [Metadata search in Visual Studio](../dev-tools/metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to <strong>Dynamics 365 **&gt; **Metadata Search</strong> to open the metadata search tool. 
 
 [![Del15](./media/del15.png)](./media/del15.png) 
 

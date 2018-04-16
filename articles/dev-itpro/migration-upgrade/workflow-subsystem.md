@@ -60,7 +60,7 @@ Here are the primary changes that have been implemented in Finance and Operation
 See also
 --------
 
-[Technical Concepts Guide for Developers](..\dev-tools\developer-home-page.md)
+[Technical Concepts Guide for Developers](../dev-tools/developer-home-page.md)
 
 
 

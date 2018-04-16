@@ -106,7 +106,7 @@ The only value that is present on Microsoft Excel templates after installation i
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 
-[Extensibility home page](..\extensibility\extensibility-home-page.md)
+[Extensibility home page](../extensibility/extensibility-home-page.md)
 
 
 

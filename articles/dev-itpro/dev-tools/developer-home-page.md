@@ -52,12 +52,12 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 ## Getting started
 -   [Get an evaluation copy](get-evaluation-copy.md)
 -   [LCS101 – Sign up for a subscription](sign-up-preview-subscription.md)
--   [Access development instances](..\dev-tools\access-instances.md)
+-   [Access development instances](../dev-tools/access-instances.md)
 -   [Development system requirements](development-system-requirements.md)
--   [Deprecated features](..\migration-upgrade\deprecated-features.md)
--   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
+-   [Deprecated features](../migration-upgrade/deprecated-features.md)
+-   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
 -   [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)
--   [Rename and reboot machines for Visual Studio Team Services](..\migration-upgrade\vso-machine-renaming.md)
+-   [Rename and reboot machines for Visual Studio Team Services](../migration-upgrade/vso-machine-renaming.md)
 -   [Introduction to Visual Studio Team Services (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
 
 ## Fleet Management
@@ -109,23 +109,23 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 
 ### Reference
 
--   [X++ language reference](..\dev-ref\xpp-language-reference.md)
+-   [X++ language reference](../dev-ref/xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
-- [Extensibility home page](..\extensibility\extensibility-home-page.md)
-- [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
+- [Extensibility home page](../extensibility/extensibility-home-page.md)
+- [Customize App Suite reports using extensions](../analytics/customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
 - [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments
-- [Create and apply a deployable package](..\deployment\create-apply-deployable-package.md)
+- [Create and apply a deployable package](../deployment/create-apply-deployable-package.md)
 
 ## Performance
-- [Take a trace with the Trace Parser and analyze it](..\perf-test\trace-trace-tutorial.md)
-- [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](..\perf-test\perfsdk-tutorial.md)
-- [Using the desktop version of trace parser to diagnose problems and analyze performance issues](..\perf-test\trace-parser.md)
-- [Performance timer](..\perf-test\performance-timer.md)
+- [Take a trace with the Trace Parser and analyze it](../perf-test/trace-trace-tutorial.md)
+- [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
+- [Using the desktop version of trace parser to diagnose problems and analyze performance issues](../perf-test/trace-parser.md)
+- [Performance timer](../perf-test/performance-timer.md)
 - [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
 - [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 - [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
@@ -134,31 +134,31 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 - [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 
 ## User interface concepts
-The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
+The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](../user-interface/user-interface-development-home-page.md).
 
 ## Analytics
-- [Analytics](..\analytics\analytics.md)
+- [Analytics](../analytics/analytics.md)
 
 ## Reporting services
-- [Electronic reporting overview](..\analytics\general-electronic-reporting.md)
+- [Electronic reporting overview](../analytics/general-electronic-reporting.md)
 - [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
 - [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
 
 ## Data entities and OData
-- [Data entities home page](..\data-entities\data-entities.md)
-- [OData](..\data-entities\odata.md)
+- [Data entities home page](../data-entities/data-entities.md)
+- [OData](../data-entities/odata.md)
 
 ## Testing support in Visual Studio
-- [Testing and validation](..\perf-test\testing-validation.md)
-- [Support for testing in Visual Studio](..\perf-test\testing-support.md)
-- [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md)
-- [Task Recorder](..\user-interface\task-recorder.md)
+- [Testing and validation](../perf-test/testing-validation.md)
+- [Support for testing in Visual Studio](../perf-test/testing-support.md)
+- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Task Recorder](../user-interface/task-recorder.md)
 
 ## Office integration
-- [Office integration](..\office-integration\office-integration.md)
+- [Office integration](../office-integration/office-integration.md)
 
 ## Intelligence
-- [Intelligence](..\analytics\bi-reporting-home-page.md)
+- [Intelligence](../analytics/bi-reporting-home-page.md)
 - [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
 
 ## Mobile platform

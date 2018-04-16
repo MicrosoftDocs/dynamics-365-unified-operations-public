@@ -66,7 +66,7 @@ Checklist to follow before activation
     ![p24](./media/p24.png)
 
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](..\retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 
     [![p18](./media/p18.png)](./media/p18.png)
 

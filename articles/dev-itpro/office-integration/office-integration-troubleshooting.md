@@ -104,7 +104,7 @@ All key and mandatory fields must be present to publish data back to the entity.
 
 **Issue:** During sign in to the Excel Add-in, you receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ."
 
-**Explanation:** Typically, this issue occurs because Microsoft Azure Active Directory (Azure AD) can't find the Azure AD application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](..\analytics\configure-power-bi-integration.md), an Azure AD application was added that has the App ID URI set to the environment URL. 
+**Explanation:** Typically, this issue occurs because Microsoft Azure Active Directory (Azure AD) can't find the Azure AD application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), an Azure AD application was added that has the App ID URI set to the environment URL. 
 
 **Fix:** Make sure that no Azure AD apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
 
@@ -212,4 +212,4 @@ The following URLs are accessed for authentication:
 
 [Office integration tutorial](office-integration-tutorial.md)
 
-[Configuring Power BI integration](..\analytics\configure-power-bi-integration.md)
+[Configuring Power BI integration](../analytics/configure-power-bi-integration.md)
