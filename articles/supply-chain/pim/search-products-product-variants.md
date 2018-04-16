@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Search for products and product variants during order entry
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 
@@ -75,7 +75,7 @@ Examples of product and product variant identifiers and dimensions that you can
 
 Go to **Sales and marketing &gt; Setup &gt; Search &gt; Search criteria** page. The **Search criteria** page allows you to define criteria for customer, prospect, and product search. Make sure you filter the page by using product search criteria. You can do this by switching to **Product** in the page's menu.  
 
-To add the display product number to the search criteria, click **New** in the page's menu. This will add a new record in the **Search criteria** grid. Open the **Field name** column lookup and chose **DisplayProductNumber**. To add the product's configuration to the search criteria, create a new record in the **Search criteria **grid and chose **configId** in the **Field name** column. In the same manner, create a record with **Field name** **InventColorId** for the color dimension, **InventSizeId** for the size dimension, and **InventStyleId** for the style dimension.
+To add the display product number to the search criteria, click <strong>New</strong> in the page's menu. This will add a new record in the <strong>Search criteria</strong> grid. Open the <strong>Field name</strong> column lookup and chose <strong>DisplayProductNumber</strong>. To add the product's configuration to the search criteria, create a new record in the <strong>Search criteria **grid and chose **configId</strong> in the <strong>Field name</strong> column. In the same manner, create a record with <strong>Field name</strong> <strong>InventColorId</strong> for the color dimension, <strong>InventSizeId</strong> for the size dimension, and <strong>InventStyleId</strong> for the style dimension.
 
 ### Step 2: Populate the database table that is used for product search
 

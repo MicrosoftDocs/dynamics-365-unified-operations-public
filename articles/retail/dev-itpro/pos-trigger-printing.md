@@ -31,14 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Retail Modern POS triggers and printing
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use triggers to capture events that occur before or after Retail Modern POS operations. Using triggers supports several business logic scenarios that enable you to do the following: 
 - Insert custom logic before the operation runs or after it has completed. This includes operation-specific triggers and generic triggers called the PreOperationTrigger and PostOperationTrigger, which run at the beginning and end of all POS operations.  
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable. 
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
-This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
+This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
 
 The following table lists the available triggers and denotes whether they can be cancelled.
 
@@ -161,27 +161,27 @@ Printing Triggers
 
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
 
-1.  Open Visual Studio 2015 in administrator mode.
-2.  Open the **ModernPOS** solution from **…\RetailSDK\POS**.
-3.  Under the **POS.Extensions** project, create a new folder named **SuspendReceiptSample**.
-4.  Under **SuspendReceiptSample**, create new folder named **TriggersHandlers**.
-5.  In the **TriggersHandlers** folder, add a new Typescript file named **PostSuspendTransactionTrigger.ts**.
-6.  Add the following **import** statements to import the relevant entities and context.
-```typescript
-    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
-    import { ObjectExtensions } from "PosApi/TypeExtensions";
-    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
-    import { PrinterPrintRequest, PrinterPrintResponse } from "PosApi/Consume/Peripherals";
-    import { GetHardwareProfileClientRequest, GetHardwareProfileClientResponse } from "PosApi/Consume/Device";
-    import { GetReceiptsClientRequest, GetReceiptsClientResponse } from "PosApi/Consume/SalesOrders";
-```
+1. Open Visual Studio 2015 in administrator mode.
+2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
+3. Under the **POS.Extensions** project, create a new folder named **SuspendReceiptSample**.
+4. Under **SuspendReceiptSample**, create new folder named **TriggersHandlers**.
+5. In the **TriggersHandlers** folder, add a new Typescript file named **PostSuspendTransactionTrigger.ts**.
+6. Add the following **import** statements to import the relevant entities and context.
+   ```typescript
+   import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
+   import { ObjectExtensions } from "PosApi/TypeExtensions";
+   import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+   import { PrinterPrintRequest, PrinterPrintResponse } from "PosApi/Consume/Peripherals";
+   import { GetHardwareProfileClientRequest, GetHardwareProfileClientResponse } from "PosApi/Consume/Device";
+   import { GetReceiptsClientRequest, GetReceiptsClientResponse } from "PosApi/Consume/SalesOrders";
+   ```
 7. Create a new class named **PostSuspendTransactionTrigger** and extend it from **PostSuspendTransactionTrigger**.
  
 ```typescript
     export default class PostSuspendTransactionTrigger extends Triggers.PostSuspendTransactionTrigger { }
 ```
 8. Implement the trigger's **execute** method to get the receipt profile and print the custom receipt:
-```typescript
+   ```typescript
     public execute(options: Triggers.IPostSuspendTransactionTriggerOptions): Promise < void> {
         this.context.logger.logVerbose("Executing PostSuspendTransactionTrigger with options " + JSON.stringify(options) + ".");
         if(ObjectExtensions.isNullOrUndefined(options) || ObjectExtensions.isNullOrUndefined(options.cart)) {
@@ -226,8 +226,8 @@ In this example, a custom receipt is printed when the user suspends a transactio
                 });
         }
     }
-```
-The entire example should look like the following.
+   ```
+   The entire example should look like the following.
 
 ```typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";

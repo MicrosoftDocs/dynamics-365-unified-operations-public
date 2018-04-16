@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Respond to a request for personal data using Talent
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This topic can help both businesses that use Microsoft Dynamics 365 for Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](./gdpr-guide.md).
+This topic can help both businesses that use Microsoft Dynamics 365 for Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
 
 For Talent, Microsoft acts as a processor. As a data processor, Talent provides processes and features that let you comply with your GDPR obligations as a data controller.
 

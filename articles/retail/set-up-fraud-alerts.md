@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up fraud alerts
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic explains how to set up criteria and rules to place potentially fraudulent sales orders on hold for further review. Fraud review functionality is used to determine the validity of information in a sales order. If the information in the sales order appears to be questionable based on an organization’s fraud criteria and rules, the order may be put on hold for further review by an administrator.
 

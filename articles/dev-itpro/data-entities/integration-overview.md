@@ -2,10 +2,10 @@
 # required metadata
 
 title: Choose a data integration (import/export) strategy 
-description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Choose a data integration (import/export) strategy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 
 The topic describes integration patterns, integration scenarios, and integration solutions and best practices for Finance and Operations. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
@@ -43,10 +43,13 @@ The following table lists the integration patterns that are available for Financ
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
 | OData                         | [OData](odata.md) |
-| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management API](data-management-api.md) |
+| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data package API](data-management-api.md) |
 | Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
 | Excel integration | [Office integration](../office-integration/office-integration.md) |
+
+Note:
+For on premise deployments, the only supported API is the [Data package API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Synchronous vs. asynchronous integration patterns
 

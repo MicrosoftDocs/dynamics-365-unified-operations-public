@@ -5,7 +5,7 @@ title: Peripheral simulator for Retail
 description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 for Retail.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Peripheral simulator for Retail
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
@@ -95,26 +95,26 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 3. Enter values in the **Profile number** and **Description** fields.
 4. Use the following table to set up the virtual devices that must be tested. Here is an explanation of the columns in the table:
 
-    - **Device** – This column gives the name of the FastTab where you set up the device.
-    - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
-    - **Device name** – This column gives the exact value that you enter for the device name.
+   - **Device** – This column gives the name of the FastTab where you set up the device.
+   - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
+   - **Device name** – This column gives the exact value that you enter for the device name.
 
-    > [!IMPORTANT]
-    > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
+     > [!IMPORTANT]
+     > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
 
-    No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
+     No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
 
-    | Device            | Device type | Device name              |
-    |-------------------|-------------|--------------------------|
-    | Printer           | OPOS        | MockOPOSPrinter          |
-    | Line display      | OPOS        | MockOPOSLineDisplay      |
-    | MSR               | OPOS        | MockOPOSMSR              |
-    | Drawer            | OPOS        | MockOPOSDrawer1          |
-    | Drawer2           | OPOS        | MockOPOSDrawers          |
-    | Scanner           | OPOS        | MockOPOSScanner          |
-    | Scale             | OPOS        | MockOPOSScale            |
-    | PIN Pad           | OPOS        | MockOPOSPinPad           |
-    | Signature capture | OPOS        | MockOPOSSignatureCapture |
+     | Device            | Device type | Device name              |
+     |-------------------|-------------|--------------------------|
+     | Printer           | OPOS        | MockOPOSPrinter          |
+     | Line display      | OPOS        | MockOPOSLineDisplay      |
+     | MSR               | OPOS        | MockOPOSMSR              |
+     | Drawer            | OPOS        | MockOPOSDrawer1          |
+     | Drawer2           | OPOS        | MockOPOSDrawers          |
+     | Scanner           | OPOS        | MockOPOSScanner          |
+     | Scale             | OPOS        | MockOPOSScale            |
+     | PIN Pad           | OPOS        | MockOPOSPinPad           |
+     | Signature capture | OPOS        | MockOPOSSignatureCapture |
 
 #### Assign the hardware profile to a register
 
@@ -228,6 +228,8 @@ If changes that you made to the hardware profile or other areas aren't evident w
 Changes to configured cash drawers aren't effective until a new shift is created. Therefore, if you make changes to cash drawers, make sure that you always close the existing shift to test the new cash drawer setup.
 
 Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
+
+At install time, it's possible that certain assemblies related to the virtual peripheral simulator were registered incorrectly. This issue is often associated with an 'OPOS_E_CLOSED' error when attempting to use a virtual device. This can be corrected by running the Windows Assembly Registration tool. To register the assembly (called Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll), open a command prompt as administrator and run 'regasm /codebase "C:\Program Files (x86)\Microsoft Dynamics 365\70\Peripheral simulator for Retail\Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll"'.
 
 ## POS simulator
 

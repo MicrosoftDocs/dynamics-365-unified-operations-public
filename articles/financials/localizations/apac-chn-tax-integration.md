@@ -31,17 +31,16 @@ ms.dyn365.ops.version: Version 1611
 
 # Configure tax integration for China
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the process for configuring tax integration for China.
 
 ## Prerequisite
 Before you can configure tax integration, you must enable tax integration by selecting **Yes** for the **Integration with tax system** option on the **Accounts receivable parameters** page (**Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Ledger and sales tax** > **General** tab).
 
-To configure tax integration for China, complete the following tasks.
+To configure tax integration for China, complete the following tasks.
 
-1.  Create a new VAT invoice description on the **VAT invoice description** page. For example, you may need to set  the following parameters:
+1.  Create a new VAT invoice description on the **VAT invoice description** page. For example, you may need to set  the following parameters:
     -   **VAT invoice description ID** to InvoiceDescID01
     -   **Description** to 详见销售清单
     -   **Unit** to Box
@@ -52,7 +51,7 @@ To configure tax integration for China, complete the following tasks.
     -   Default description and unit for the golden tax invoice
     -   Whether to include non-deductible VAT invoices
 
-The tax integration process is illustrated in the following diagram.
+The tax integration process is illustrated in the following diagram.
 [![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
 
 ## See also

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension Entry control dialog support
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Describes the code pattern for putting a Dimension Entry control on a dialog.
 

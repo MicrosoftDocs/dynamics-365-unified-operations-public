@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Delivery alternatives
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 
@@ -66,7 +65,7 @@ The delivery date control method determines how the system establishes delivery 
 <tr class="even">
 <td><strong>None</strong></td>
 <td><ul>
-<li>Delivery alternatives for sales lines aren't supported. This option turns off delivery data control.</li>
+<li>Delivery alternatives for sales lines aren&#39;t supported. This option turns off delivery data control.</li>
 </ul></td>
 </tr>
 <tr class="odd">

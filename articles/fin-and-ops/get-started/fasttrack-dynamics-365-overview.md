@@ -31,15 +31,13 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 # Microsoft FastTrack for Dynamics 365 overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-
-
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
 
-**Product offering: Dynamics 365, Enterprise edition**
+**Product offering: Dynamics 365**
 
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|
@@ -131,7 +129,7 @@ The Governance workshop is designed to provide planning and governance recommend
     -   Microsoft Support for Finance and Operations
     -   LCS cloud-powered support
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
 
 ### Solution workshop (W2.2, Design phase)
 
@@ -150,7 +148,7 @@ The Solution workshop is designed to provide guidance on solution design alignme
 -   ISV solutions
 -   Environment plans
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
 ### Build workshop (W3.1, Build phase)
 
@@ -165,7 +163,7 @@ The Build workshop is designed to review the development approach, build progres
 -   Performance results
 -   Development risks and mitigations
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
 
 ### Go-live assessment workshop (W4.1, Deploy phase)
 

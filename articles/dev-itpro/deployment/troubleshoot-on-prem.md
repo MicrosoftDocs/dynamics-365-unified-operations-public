@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises
-description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
+title: Troubleshoot Dynamics 365 for Finance and Operations on-premises
+description: This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 03/05/2018
@@ -29,11 +29,11 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises
+# Troubleshoot Dynamics 365 for Finance and Operations on-premises
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides troubleshooting information for on-premises deployments of Dynamics 365 for Finance and Operations.
 
 ## Error when signing in to on-premises environments
 
@@ -139,30 +139,31 @@ Follow the steps below in order to start over:
 1. Access the project in LCS.
     1. Under Environments, Delete the deployment.
     1. Note that the applications should start disappearing from Service Fabric Explorer on the environment. This will take a minute or two.
-1. Access the orchestrator machine that contains `LocalAgentCLI.exe`.
-    1. Run Local Agent cleanup:
-        ```powershell
-        .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>'
-        ```
-    1. Remove Service Fabric:
-        ```powershell
-        .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
-        ```
-    1. If any of the nodes fail to uninstall Service Fabric, run the following on each failing node:
-        ```powershell
-        & "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1"
-        ```
-    1. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
-        - If access denied, restart the machine and try again.
-1. Remove certificates.
-    1. Remove old certificates from all AOS, BI, ORCH and DC nodes.
-        - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
-    - If the SQL server setup will be modified, remove the SQL server certificates as well.
-    - If the ADFS settings will be modified, remove the ADFS certificate as well.
-1. Update configuration files. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
+2. Access the orchestrator machine that contains `LocalAgentCLI.exe`.
+   1. Run Local Agent cleanup:
+       ```powershell
+       .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>'
+       ```
+   2. Remove Service Fabric:
+       ```powershell
+       .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
+       ```
+   3. If any of the nodes fail to uninstall Service Fabric, run the following on each failing node:
+       ```powershell
+       & "C:\Program Files\Microsoft Service Fabric\bin\fabric\fabric.code\CleanFabric.ps1"
+       ```
+   4. Remove `C:\ProgramData\SF\` folder on all Service Fabric nodes.
+       - If access denied, restart the machine and try again.
+3. Remove certificates.
+   1. Remove old certificates from all AOS, BI, ORCH and DC nodes.
+       - The certificates exist in the following certificate stores: `Cert:\CurrentUser\My\`, `Cert:\LocalMachine\My` and `Cert:\LocalMachine\Root`.
+   2. If the SQL server setup will be modified, remove the SQL server certificates as well.
+   3. If the ADFS settings will be modified, remove the ADFS certificate as well.
+
+4. Update configuration files. Refer to the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md) to properly fill out the fields in the templates: 
     - ConfigTemplate.xml
     - ClusterConfig.json
-1. Access the project in LCS.
+5. Access the project in LCS.
     1. Recreate the LCS connector for the environment, or edit the settings of an existing one.
         - Use the `.\Get-AgentConfiguration.ps1` script to obtain easy to copy values for LCS.
     1. Download the latest local agent configuration, `localagent-config.json`.
@@ -170,7 +171,7 @@ Follow the steps below in order to start over:
 Now start again with the appropriate deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 or 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## Local agent
-Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations, Enterprise edition.
+Local agent is the framework that is responsible for communicating with LCS, downloading components to be installed, installation, and maintaining and removing Dynamics 365 for Finance and Operations.
 
 ## How to find the local agent values that are used
 Local agent values can be found in Service Fabric Explorer under **Cluster** > **Applications** > **LocalAgentType** > **fabric:/LocalAgent, Details**.
@@ -293,7 +294,7 @@ Complete the following steps to resolve the error.
     .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
     ```
 
-  These scripts do not work with **always-on** setup. The database needs to be created first in the primary node and then replicated.
+   These scripts do not work with **always-on** setup. The database needs to be created first in the primary node and then replicated.
 
 **Error**
 RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
@@ -473,16 +474,16 @@ Reason: The user does not have permission to connect to the AX database.
 Steps to resolve:
 
 1. Remove the axdbadmin user from the database if it already exists.
-1. Make sure you specify the username that needs to be added to the AX database in the ConfigTemplate.xml file.
+2. Make sure you specify the username that needs to be added to the AX database in the ConfigTemplate.xml file.
     ```xml
     <Security>
         <User refName="axdbadmin" type="SqlUser" userName="axdbadmin" />
     </Security>
     ```
-1. Run the initialize database script again to add the axdbadmin user.
+3. Run the initialize database script again to add the axdbadmin user.
 
 ## Unable to resolve the xPath value
-Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@fieldName='PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value is looking for AOS runtime user information, however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.
+Not being able to resolve the xPath value of [TopologyInstance/CustomizationGroup[@name='ServiceConfiguration']/Group[@name='AOSServicePrincipalUser']/Customizations/Customization[@"fieldName="'PrincipalUserAccountPassword']/@selectedValue is expected behavior and is not an issue. The xPath value is looking for AOS runtime user information, however, because of integrated security, the information is not needed. The inability to resolve the xPath is communicated in case the failure needs to be investigated for another reason.
 
 ## ADFS
 ### Login page not redirecting

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets for India
-description:  This topic includes information about fixed assets for India in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description:  This topic includes information about fixed assets for India in Microsoft Dynamics 365 for Finance and Operations.
 author: AdamTrukawka
 manager: AnnBe
 ms.date: 01/05/2017
@@ -30,8 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Fixed assets for India
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or corporation. Using fixed assets for India, you can set up and enter acquisition information for fixed asset records, and then manage fixed assets by depreciating them and setting a capitalization threshold to determine depreciation. You can also calculate adjustments to fixed assets, and dispose of them.
 

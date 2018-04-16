@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy a Finance and Operations database – SQL Server to production Azure SQL
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
 author: maertenm
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 03/30/2018
 
 ms.topic: article
 ms.prod: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft SQL Server (a development, build or demo environment, which is also known as a Tier 1 or one-box environment) to an environment that is based on a Microsoft Azure SQL database (a sandbox user acceptance testing \[UAT\] environment, Tier 2 or higher).
 
@@ -65,7 +65,6 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
-
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
     - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
 
@@ -148,7 +147,7 @@ drop user axdeployextuser
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
+> The **140** folder reflects the current version, you are required to use the version that is available in your sandbox environment. This may require you to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) in your development environment.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -171,7 +170,7 @@ Copy the .bacpac file that was generated in the previous section to the AOS comp
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> If the **140** folder doesn't exist, you must install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
+> The version of SqlPackage.exe must match the version used to export the .bacpac file. You may be required to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -190,7 +189,11 @@ Here is an explanation of the parameters:
 
 You will receive the following warning message. You can safely ignore it.
 
-> \*\*\* A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+> A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
+
+
+> [!WARNING] 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Update the database
 
@@ -232,10 +235,10 @@ EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
 ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
 ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
 
@@ -248,6 +251,33 @@ set TENANTID = '<tenant ID from existing database>'
 
 update dbo.PROVISIONINGMESSAGETABLE
 set TENANTID = '<tenant ID from existing database>'
+GO
+-- Begin Refresh Retail FullText Catalogs
+DECLARE @RFTXNAME NVARCHAR(MAX);
+DECLARE @RFTXSQL NVARCHAR(MAX);
+DECLARE retail_ftx CURSOR FOR
+SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
+    WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+OPEN retail_ftx;
+FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+
+BEGIN TRY
+    WHILE @@FETCH_STATUS = 0  
+    BEGIN  
+        PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+        EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+        SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+        EXEC SP_EXECUTESQL @RFTXSQL;
+        FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+    END
+END TRY
+BEGIN CATCH
+    PRINT error_message()
+END CATCH
+
+CLOSE retail_ftx;  
+DEALLOCATE retail_ftx; 
+-- End Refresh Retail FullText Catalogs
 ```
 
 ## Synchronize the database
@@ -290,7 +320,7 @@ set TENANTID = '<tenant ID from existing database>'
 
 ### Re-provision the target environment
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 

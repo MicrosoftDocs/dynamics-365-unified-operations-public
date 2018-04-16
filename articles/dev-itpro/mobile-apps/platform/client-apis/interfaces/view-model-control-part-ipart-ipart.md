@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Part Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Part control type. A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 
@@ -67,7 +67,7 @@ container: boolean
 True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
-
+> 
 > Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
 
 
