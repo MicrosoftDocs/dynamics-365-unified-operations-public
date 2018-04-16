@@ -1,4 +1,3 @@
-
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Get started
@@ -26,6 +25,7 @@
 #### [Finance and Operations 8.0 (April 2018)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [Platform update 15 (March 2018)](get-started/whats-new-platform-update-15.md)
 #### [On-premises deployments of 7.2 with platform update 12 (March 2018)](get-started/whats-new-LBD-PU12-App72.md)
+
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
@@ -81,6 +81,7 @@
 ### [Onboarding](imp-lifecycle/onboard.md) 
 ### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
 ### [Go-live FAQ](imp-lifecycle/go-live-faq.md)
+### [Submit a service request](../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json)
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
