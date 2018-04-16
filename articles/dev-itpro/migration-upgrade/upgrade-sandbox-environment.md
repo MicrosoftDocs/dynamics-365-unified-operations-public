@@ -81,6 +81,9 @@ Import the database from a bacpac file into the newly redeployed sandbox environ
 
 Run the data upgrade by following the steps in [Upgrade data in development, demo or sandbox environments](upgrade-data-to-latest-update.md).
 
+## Deploy retail customizations 
+If your environment requires customizations for retail channel components, after you run the data upgrade package, follow the steps in [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md) to re-apply your reail combined deployable package.
+
 ## Update additional components
 
 If any additional components are used in your environment, you might have to complete additional steps to upgrade them.
