@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic describes the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also describes how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 
 > [!NOTE]
-> You must have access the environment as an administrator. For more information, see [Access instances](..\dev-tools\access-instances.md).
+> You must have access the environment as an administrator. For more information, see [Access instances](../dev-tools/access-instances.md).
 
 ## Prerequisites
 

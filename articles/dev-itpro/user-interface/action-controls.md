@@ -156,7 +156,7 @@ Some actions can also be accessed via shortcut menus (right-click context menus)
 
 **Note:** Context menus are intended to provide an alternate route to a command, and should not be only way to execute a command. Therefore, any action that is added to a control's context menu should also have a corresponding action that is available outside the context menu. 
 
-The programming model for modifying context menus differs from the model used in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](..\migration-upgrade\code-migration-context-menus.md) article.
+The programming model for modifying context menus differs from the model used in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](../migration-upgrade/code-migration-context-menus.md) article.
 
 ## Keyboard shortcuts
 Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts in Operations. However, because of browser restrictions, the key combination that is used to trigger a particular action might differ. 

@@ -63,7 +63,7 @@ There are two ways that you can obtain the data that you will analyze in the Tra
 See also
 --------
 
-[Developer home page](..\dev-tools\developer-home-page.md)
+[Developer home page](../dev-tools/developer-home-page.md)
 
 
 
