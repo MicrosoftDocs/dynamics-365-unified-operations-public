@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improvements to statement posting
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
 manager: AnnBe
 ms.date: 04/12/2016
@@ -31,168 +31,138 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include[banner](includes/banner.md)]
 
-
-This topic describes the first set of improvements to the statement posting feature, which is available in the 7.3.2 release of the product.
+This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## Activation
 
-During deployment of the 7.3.2 version of the application, the application is defaulted to the legacy feature for statement postings. To enable the new and improved statement posting feature, the configuration keys for the feature must be enabled using the following steps.
+By default, during deployment of the Finance and Operations 7.3.2, the program is set up to use the earlier feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
 
-1.  Navigate to the **License configuration** page (**System administration > Setup > License configuration**) and clear the  **Retail statements (legacy)** check box under the **Retail** node.
+- Go to **System administration** \> **Setup** \> **License configuration**, and then, under the **Retail** node, clear the **Retail statements (legacy)** check box, and select the **Retail statements** check box.
 
-2.  Select the **Retail statements** check box under the **Retail** node.
+When the new **Retail statements** configuration key is turned on, a new menu item that is named **Retail statements** is available. This menu item lets you manually create, calculate, and post statements. Any statement that causes an error when the batch posting process is used will also be available through this menu item. (When the **Retail statements (legacy)** configuration key is turned on, the menu item is named **Open statements**.)
 
-When the new **Retail statements** configuration key is enabled, a new menu item called **Retail statements** will be enabled in which statements can be created, calculated, and posted manually. Any statement resulting in an error using the batch posting process will also be available under this menu item. With the legacy configuration key, the menu item name would be **Open statements**.
+Finance and Operations includes the following validations that are related to these configuration keys:
 
-The following validations are built into the application around these configuration keys:
+- Both configuration keys can't be turned on at the same time.
+- The same configuration keys must be used for all the operations that are performed on a given statement during its lifecycle (Create, Calculate, Clear, Post, and so on). For example, you can't create and calculate a statement while the **Retail statement (legacy)** configuration key is turned on, but then try to post the same statement while the **Retail statement** configuration key is turned on.
 
-- Both of the configuration keys cannot be enabled at the same time.
-
-- A statement must go through all the various operations in its lifecycle (including Create, Calculate, Clear, Post, etc.) using only one of the configuration keys. For e.g.: One cannot create and calculate a statement with the **Retail statement (legacy)** configuration key turned on, and then try and post the same statement with the **Retail statement** configuration key turned on.
-
-> [!Note]
-> We recommend that you use the new and improved statement posting feature using the **Retail statements** configuration key unless there are compelling reasons to use the legacy option. Microsoft will continue to invest and improve the new statement posting feature and it is important to switch to it at the earliest opportunity to reap the benefits from the feature. With newer releases, the new feature will be made as the default option for statement postings and the legacy capability will be sunsetted over a period.
+> [!NOTE]
+> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest and improve the statement posting feature, and it's important that you switch to the improved feature at the earliest opportunity to benefit from it. In later releases, the improved feature will be used by default for statement postings, and the earlier feature will gradually become obsolete.
 
 ## Setup
 
-With the improvements to statement posting, a few new parameters are introduced in the **Statement** FastTab under the **Retail Parameters > Posting** tab. Details of these new paramters are listed below.
+As part of the improvements to the statement posting feature, three new parameters have been introduced on the **Statement** FastTab on the **Posting** tab of the **Retail parameters** page:
 
-- **Disable clear statement:** This parameter is only applicable for the legacy feature of statement posting. The recommendation is for this parameter to be set to NO as this will not allow users to clear statements which are in a semi-posted state. Clearing statements that are in a semi-posted state causes further data corruption. This parameter should only be set to **Yes** under exceptional circumstances.
+- **Disable clear statement** – This option is applicable only for the earlier statement posting feature. We recommend that you set this option to **No** to prevent users from clearing statements that are in a semi-posted state. If statements that are in a semi-posted state are cleared, data becomes corrupted. You should set this option to **Yes** only in exceptional circumstances.
+- **Reserve inventory during calculation** – We recommend that you use the **Post inventory** batch job for inventory reservation, and that you set this option to **No**. When this option is set to **No**, the improved statement posting feature doesn't try to create inventory reservation entries at the time of calculation (if entries weren't already created through the **Post inventory** batch job). Instead, the feature creates inventory reservation entries only at the time of posting. This implementation was a design choice and was based on the fact that the time window between the calculation process and the posting process is typically small. However, if you want to reserve inventory at the time of calculation, you can set this option to **Yes**.
 
-- **Reserve inventory during calculation:** The recommended process for inventory reservation is to use the **Post inventory** batch job and the recommendation is to set this parameter to **No**. With this parameter set to **No**, the new feature will not try to create inventory reservation entries (if not already done through Post inventory batch job) during calculation and will only do it at the time of posting. It was a design choice to implement it that way, as typically the time window between the calculate process and post process is normally small. However, if a customer does want to reserve inventory at the time of calculation, they can do so by setting this parameter to **Yes**. The legacy feature would always reserve inventory (if not already done through Post inventory batch job), during the statement calculation process irrespective of any settings of this parameter.
+    The earlier statement posting feature always reserves inventory during the statement calculation process (if reservation wasn't already done through the **Post inventory** batch job), regardless of the setting of this option.
 
-- **Disable counting required**: This parameter when set to **Yes** will not stop the statement from the posting process, even when the difference between the counted amount and transaction amount on a statement is outside the threshold (as defined on the Statement FastTab of Retail stores).
+- **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for Retail stores.
 
-- **Maximum number of parallel statement psotings**: This parameter has been introduced under the Batch processing FastTab of **Retail parameters > Posting** tab. This parameter defines how many executing batch tasks should be run at a time. Currently this parameter must be manually defined by the customer. However, in a future release this will be set heuristically based on customers topology and set-up.
+Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field. However, in a future release, the value will be set heuristically, based on a customer's topology and setup.
 
-Note that all settings and parameters that govern statement postings, as defined under Retail Stores and Retail parameters, are all applicable for the new statement posting feature.
+Note that all settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
 
 ## Processing
-Statements can be calculated and posted using the batch process (Calculate statements in batch & Post statements in batch) or can also be calculated and posted manually using the **Retail statements** menu item using the new feature.
+Statements can be calculated and posted by using batch processes (**Calculate statements in batch** and **Post statements in batch**). Alternatively, statements can be manually calculated and posted by using the **Retail statements** menu item that the improved statement posting feature provides.
 
-The process and steps to calculate and post statements in a batch remains the same as in the legacy feature. However, there have been significant improvements made in the core, back-end processing of the statements. These improvements build resiliency into the process and provides for better visibility into the states and error information. This enables users to fix the root cause of the errors and then continue the posting, without causing data corruption and the need for data fixes.
+The process and steps for calculating and posting statements in a batch are the same as they were in the earlier statement posting feature. However, significant improvements have been made in the core back-end processing of the statements. These improvements make the process more resilient, and provide for better visibility into the states and error information. Therefore, users can address the root cause of errors and then continue the posting process without causing data corruption and without causing data fixes to be required.
 
-The following are some of the major improvements around the new feature that are surfaced in the user interface for “Retail statements” and “Posted statements”:
+The following sections describe some of the major improvements for the statement posting feature that appear in the user interface for retail statements and posted statements.
 
 ### Status details
-A new state model has been introduced in the statement posting routine across the calculate and post process. The tables below provide details. 
+A new state model has been introduced in the statement posting routine across the calculation and posting processes.
 
-The table below describes the different states and their order during the Calculate process.
+The following table describes the various states and their order during the calculation process.
 
-| State order | State      | State description                                                                                                                                |
-|-------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1           | Started    | Statement was created and is ready to be calculated.                                                                                              |
-| 2           | Marked     | The transactions that are in scope for the statement are identified based on the statement parameters and they are marked with the statement ID. |
-| 3           | Calculated | The statement lines are computed and displayed.                                                                                                   |
+| State order | State      | Description |
+|-------------|------------|-------------|
+| 1           | Started    | The statement was created and is ready to be calculated. |
+| 2           | Marked     | The transactions that are in scope for the statement are identified based on the statement parameters, and they are marked with the statement ID. |
+| 3           | Calculated | The statement lines are computed and shown. |
 
-The table below describes the different states and their order during the Post process.
+The following table describes the various states and their order during the posting process.
 
-| State order | State                   | State description                                                                                                                                                        |
-|-------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1           | Checked                 | Multiple validations around parameters (for e.g.: disposition charge), statement & statement lines (for e.g.: difference between counted & transaction amount) are done. |
-| 2           | Aggregated              | Sales transactions for named and unnamed customers are aggregated based on configuration. Each aggregated transaction will eventually convert to a sales order.           |
-| 3           | Customer order created  | Based on the aggregated transaction, Sales orders are created in the system.                                                                                              |
-| 4           | Customer order invoiced | Sales orders are invoiced.                                                                                                                                                |
-| 5           | Discounts posted        | Periodic discount journals are posted based on configuration.                                                                                                             |
-| 6           | Income/expense posted | Income/expense transactions are posted as vouchers.                                                                                                                     |
-| 7           | Vouchers linked         | Payment journals created and linked to the corresponding invoice.                                                                                                         |
-| 8           | Payments posted         | Payment journals are posted.                                                                                                                                              |
-| 9           | Gift cards posted       | Gift card transactions are posted as vouchers.                                                                                                                            |
-| 10          | Posted                  | Statement is marked as posted.                                                                                                                                            |
+| State order | State                   | Description |
+|-------------|-------------------------|-------------|
+| 1           | Checked                 | Multiple validations are done that are related to parameters (for example, the disposition charge), and to the statement and statement lines (for example, the difference between the counted amount and the transaction amount). |
+| 2           | Aggregated              | Sales transactions for named and unnamed customers are aggregated based on the configuration. Every aggregated transaction is eventually converted to a sales order. |
+| 3           | Customer order created  | Based on the aggregated transaction, sales orders are created in the system. |
+| 4           | Customer order invoiced | Sales orders are invoiced. |
+| 5           | Discounts posted        | Periodic discount journals are posted based on the configuration. |
+| 6           | Income/expense posted   | Income/expense transactions are posted as vouchers. |
+| 7           | Vouchers linked         | Payment journals are created and linked to the corresponding invoice. |
+| 8           | Payments posted         | Payment journals are posted. |
+| 9           | Gift cards posted       | Gift card transactions are posted as vouchers. |
+| 10          | Posted                  | The statement is marked as posted. |
 
-Each of the above states is atomic in nature and there is a hierarchical dependency built between these states that flows from top to bottom. If the system encounters any errors while processing a state, the status of the statement is reverted to the previous state. Any subsequent retry of the process would pick up from the state that failed, and will continue to progress forward. This has the following benefits:
+Every state in the preceding tables is atomic in nature, and a hierarchical dependency is built between the states. This dependency flows from top to bottom. If the system encounters any errors while it's processing a state, the status of the statement is reverted to the previous state. Any subsequent reattempt of the process resumes from the state that failed and continues to move forward. This approach has the following benefits:
 
-- The user has complete visibility in terms of what state the error has occurred.
+- The user has complete visibility into the state where the error occurred.
+- Data corruption is avoided. For example, in the earlier statement posting feature, there were instances where some sales orders were invoiced but others were left open. There were also instances where some payment journals didn't have a corresponding invoice to settle, because the invoice posting had an error.
+- Users can see the current state of a statement by using the **Status details** button in the **Execution details** group of the statement. The status details page has three sections:
 
-- Data corruption is avoided. For e.g.: with the legacy feature there were instances of few sales orders invoiced and few left open, few payment journals did not have the corresponding invoice to settle as the invoice posting has an error etc.
+    - The first section shows the current status of the statement, together with the error code and a detailed error message, if an error occurred.
+    - The second section shows the various states of the calculation process. Visual cues indicate states that have been successfully run, states that could not be run because of errors, and states that haven't yet been run.
+    - The third section shows the various states of the posting process. Visual cues indicate states that have been successfully run, states that could not be run because of errors, and states that haven't yet been run.
 
- - Users can see the current state of a statement using the **Status details** button on the **Execution details** group of the statement. The status details screen has three sections to it as below:
-
-  -   **Section 1** shows the current status of the statement along with the Error code and a detailed error message whenever applicable.
-
-  -   **Section 2** shows the different states of the Calculate process with visual cues to communicate which state was successfully executed, which state errored out and which state is yet to be executed.
-
-  -   **Section 3** shows the different states of the Post process with visual cues to communicate which state was successfully executed, which state errored out and which state is yet to be executed.
-
-The overall status for the above two sections are also shown on the header part of the corresponding sections.
+Additionally, the header of the second and third sections shows the overall status of the relevant process.
 
 ### Event logs
-A statement goes through different operations in terms of Create, Calculate, Clear amd Post and there could be multiple instances of the same operation being called in its lifecycle. For e.g.: After Create and Calculate, a user can Clear the statement and Calculate it again. The **Event logs** button on the **Execution details** group provides a complete audit trail of the different operations being called on a statement along with information on when those operations were called.
+A statement goes through various operations (for example, Create, Calculate, Clear, and Post), and multiple instances of the same operation might be called during the statement's lifecycle. For example, after a statement is created and calculated, a user can clear the statement and calculate it again. The **Event logs** button in the **Execution details** group of the statement provides a complete audit trail of the various operations that were called on a statement, together with information about when those operations were called.
 
 ### Aggregated transactions
-During the Post process, the sales transactions are aggregated based on configuration and these aggregated transactions are stored in the system to create sales orders. Each aggregate transaction will create one corresponding sales order in the system. These aggregate transactions can be viewed using the **Aggregated transactions** button on the **Execution details** group of the statement.
+During the posting process, the sales transactions are aggregated based on the configuration. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement.
 
 The **Sales order detail** tab of the aggregated transaction shows the following information:
 
-- **Record ID:** Aggregate transaction ID.
+- **Record ID** – The ID of the aggregated transaction.
+- **Statement number** – The statement that the aggregated transaction belongs to.
+- **Date** – The date when the aggregated transaction was created.
+- **Sales ID** – When a sales order is created from the aggregated transaction, the sales order ID. If this field is blank, the corresponding sales order hasn't been created.
+- **Number of aggregated lines** – The total number of lines for the aggregated transaction and sales order.
+- **Status** – The last status of the aggregated transaction.
+- **Invoice ID** – When the sales order for the aggregated transaction is invoiced, the sales invoice ID. If this field is blank, the invoice for the sales order hasn't been posted.
 
-- **Statement number:**: The statement to which the aggregated transaction belongs to,
+The transaction details tab of the aggregated transaction shows all the retail transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the retail transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
 
-- **Date:** Date on which the aggregated transaction was created,
-
-- **Sales ID:** Sales order ID on successful creation of a sales order from the aggregated transaction. If this field is blank, this denotes that the corresponding sales order has not been created.
-
-- **Number of aggregated lines:** The total number of lines for the aggregated transaction and sales order,
-
-- **Status:** Shows the last status of the aggregated transaction.
-
-- **Invoice ID:** Sales invoice ID on successful invoicing of the sales order for the aggregated transaction. If this field is blank, this denotes that invoice for the sales order has not been posted.
-
-The transaction details tab of the aggregated transaction shows all the retail transactions which has been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction shows all the aggregated records from the retail transactions and shows details in terms of item, variant, qty, price, net amount, unit, and warehouse. In essence, the aggregated lines will correspond one to one with the sales order lines.
-
-From the aggregated form it is also possible to download the XML for a particular aggregated transaction using the **Export sales order XML** button on the aggregated form. This XML can be used to debug issues around sales order creation and posting by downloading the XML, uploading it to a test environment and debugging the same in the test environment. The XML download capability is not available on Posted statements.
+From the aggregated form, you can download the XML for a specific aggregated transaction by using the **Export sales order XML** button. You can use the XML to debug issues that involve sales order creation and posting. Just download the XML, upload it to a test environment, and debug the issue in the test environment. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
 
 The aggregated transaction view provides the following benefits:
 
-- Provides visibility to users on what aggregated transaction failed in sales order creation and what sales orders failed invoicing.
-
-- Provides visibility in terms of how transactions are aggregated.
-
-- It provides the user a complete audit trail in terms of Retail transactions > Sales order > Sales invoice. This view was not available with the legacy feature.
-
-- Aggregated XML file allows for easier issue identification during sales order creation and invoicing.
+- The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
+- The user has visibility into how transactions are aggregated.
+- The user has a complete audit trail, from retail transactions, to sales orders, to sales invoices. This audit trail wasn't available in the earlier statement posting feature.
+- Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
-The **Journal vouchers** button shows all the different voucher transactions around discounts, income/expense account, gift card, etc. that are created for a statement.
+The **Journal vouchers** button shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
 
-The current version of the product only shows this data for posted statements. However, in a future release there will be capability on Retail Statements i.e. unposted statements to see all the different journal vouchers created, journals that were successfully posted and journals that errored out.
+Currently, the program shows this data only for posted statements. However, in a future release, you will be able to view all the journal vouchers that were created, journals that were successfully posted, and journals where errors occurred for retail statements (that is, unposted statements).
 
 ### Payment journals
-The “Payment journals” button shows all the different payment journals that are created for a statement.
+The **Payment journals** button shows all the various payment journals that are created for a statement.
 
-The current version of the product only shows this data for posted statements. However, in a future release there will be capability on Retail Statements i.e. unposted statements to see all the payment journals created, payment journals that were successfully posted and payment journals that errored out.
+Currently, the program shows this data only for posted statements. However, in a future release, you will be able to view all the payment journals that were created, payment journals that were successfully posted, and payment journals where errors occurred for retail statements (that is, unposted statements).
 
 ## Other improvements
 
-Some of the other, back-end improvements around the new statement posting feature which are transparent to end users are:
+Other, back-end improvements that users can see have been made to the statement posting feature. Here are some examples:
 
-- The new statement posting feature does not consider the entities of staff, terminal and shift in the aggregation logic. The reduced count of aggregation parameters results in lesser number of sales order lines to processl
+- The aggregation doesn't consider the staff, terminal, and shift entities. Because there are fewer aggregation parameters, fewer sales order lines must be processed.
+- The occurrence of deadlock on retail transaction tables is reduced by introducing additional extension tables and by doing insert operations instead of update operations on the retail transaction tables.
+- The number of running batch tasks has been parameterized and limited. Therefore, this number can be fine-tuned specifically to a customer's environment. In the earlier statement posting feature, an unlimited number of batch tasks was created at the same time. The results were unmanageable loads, overhead, and bottlenecks on the batch server.
+- Statements are efficiently queued for processing by prioritizing the statements that have the maximum number of transactions.
+- Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the earlier statement posting feature, users could choose to run these batch processes in an interactive mode. The interactive mode of statement processing is a single threaded operation.
+- In the earlier statement posting feature, any failure of a batch task put the whole batch job in an error state. In the improved feature, batch task failures don't put the batch job in an error state if other batch tasks are successfully completed. You should assess the posting status for a batch execution run by using the **Retail statements** page, where you can see any statements that weren't posted because of errors.
+- In the earlier statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't become stuck in a loop where they repeatedly fix and run to post statements.
 
-- Reduced the occurrence of deadlock on retail transaction tables by introducing additional extension tables and performing insert operation instead of update operation on the retail transaction tablesl
+## General guidance about the statement posting process
 
-- Parameterized and limited the number of executing batch tasks which can be fine-tuned specifically to a customer’s environment. With the legacy feature, unlimited number of batch tasks were created at the same time creating unmanageable loads, overhead, and bottlenecks on the batch server.
+- We recommend that you run the statement posting process in a batch, because batch runs take advantage of the power of the batch framework in terms of multithreading. Multithreading is required in order to handle the huge volumes of transactions that are normally seen in statement postings.
+- We recommend that you turn on negative physical inventory on the item model group, so that you have a seamless posting experience. In some scenarios, negative statements might not be able to be posted unless there is negative physical inventory. For example, in theory, if there is only one unit of an item in inventory, and there have been a sales transaction and a return transaction for the item, the transaction should be able to be posted even if negative inventory isn't turned on. However, because the statement posting process pulls both the sales transaction and the return transaction in a single customer order, there is no guarantee that the sales line will be posted first, followed by the return line. Therefore, errors can occur. If negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system will correctly reflect the inventory.
+- We recommend that you use aggregation while you calculate and post statements. Therefore, the following settings are recommended for some of the aggregation parameters:
 
-- Efficient queuing of statements for processing by prioritizing the statements with maximum transactions.
-
-- Batch processes like “Calculate statements in batch” and “Post statements in batch” are only executed in batch mode. With the legacy feature, users had a choice to execute these batch processes in an interactive mode. Interactive mode of processing statements is a single threaded operation.
-
-- With the legacy feature, any batch task failure will put the batch job in an error state where as with the new feature, batch task failures do not error out the batch if there are other batch tasks that are successfully completed. The posting status for a batch execution run should be assessed using the **Retail statements** form and any unposted statements due to errors can be seen in this form.
-
-- With the legacy feature, the first occurrence of statement failure will fail the entire batch without even processing the remaining statements. With the new feature, the batch process continues processing all statements even if some of the statement errors out. As a result, the user benefits by getting a visibility of the exact number of statements that have errors and the user does not have to get into a loop of fix, run, fix and so on to post the statements.
-
-## General guidance around statement posting process
-
-- It is recommended to run the statement posting process in a batch as batch runs leverage the power of batch framework in terms of multi-threading which is required to handle the huge volumes of transactions that is normally seen with statement postings.
-
-- It is recommended to enable negative physical inventory on the Item model group to have a seamless posting experience as there could be scenarios where not having negative physical inventory will not allow statements to post. (For e.g.: if there was only one unit in inventory for an item, and there has been a sale and return transactions for the item, in theory the transaction should be able to post even without negative inventory turned on. However, since the statement posting process pulls both the sale and return transaction in a single customer order it cannot be guaranteed that the sale line would post first followed by the return line and as such could lead to errors. Turning on negative inventory in the above scenario does not negatively impact anything as at the end of the above transaction posting, the inventory would be correctly reflected in the system).
-
-- It is highly recommended to use aggregation while calculating and posting statements. Accordingly, the below are the recommended settings for some of the aggregation parameters:
-
-  - Retail >  Headquarters setup > Parameters > Retail parameters > Posting > Inventory update > Detail level = Summary
-
-  - Retail > Headquarters setup > Parameters > Retail parameters > Posting > Aggregation > Voucher transactions = Yes
-
-
-
-
-
+    - Go to **Retail** \> **Headquarters setup** \> **Parameters** \> **Retail parameters**. Then, on the **Posting** tab, on the **Inventory update** FastTab, in the **Detail level** field, select **Summary**.
+    - Go to **Retail** \> **Headquarters setup** \> **Parameters** \> **Retail parameters**. Then, on the **Posting** tab, on the **Aggregation** FastTab, set the **Voucher transactions** option to **Yes**.
