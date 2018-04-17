@@ -1,4 +1,4 @@
- ---
+---
 # required metadata
 
 title: Class extension - Method wrapping and Chain of Command

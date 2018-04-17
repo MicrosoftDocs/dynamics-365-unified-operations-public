@@ -36,12 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Cash discounts are setup and shared for Accounts payable and Accounts receivable.  The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date. 
 
-Cash discounts
---------------
+## Cash discounts
 
 Cash discounts for both customers or vendors can be created in the Cash discounts page. You can also define, by using the Next discount code field, a series of cash discounts that succeed each other as previous cash discount dates expire. For more information, see “Example: Series of cash discounts” later in this topic. If the invoice, credit transaction (either a payment or a credit note), or both are entered in a currency other than the accounting currency of the legal entity, the cash discount is calculated using the exchange rate based on the date of the payment or credit note. If the invoice and credit document are entered in different legal entities, and if the accounting currencies for the legal entities differ, the exchange rate is taken from the legal entity of the invoice, as of the date of the credit document. For more information, see “Example: Exchange rates for cash discounts” later in this topic.
-Defaulting order of cash discount main account
-----------------------------------------------
+
+## Defaulting order of cash discount main account
 
 If an invoice is settled in time to obtain a cash discount, the cash discount is automatically posted to a cash discount main account according to the following defaulting priority:
 1.  The main account specified in the Alternative cash discount account field on the customer Settle open transactions page or the vendor Settle open transactions page.
@@ -69,14 +68,6 @@ Your legal entity’s accounting currency is EUR and the following exchange rate
 
 An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 15. The accounting currency amount of the invoice is 1100 EUR. A payment for 980 USD is settled with the invoice on March 1. The cash discount amount is 20 USD. The accounting currency amount of the payment is 784 EUR. The accounting currency amount of the cash discount is calculated by using the exchange rate as of March 1: 20 \* 80 / 100 = 16 EUR.
 
-| **Note**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used. 
 
