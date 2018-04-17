@@ -5,7 +5,7 @@ title: Assortment management
 description: This topic explains the basic concepts of assortment management in Microsoft Dynamics 365 for Retail and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 # ms.devlang: 
-# ms.reviewer: josaw
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
