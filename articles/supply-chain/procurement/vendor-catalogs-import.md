@@ -29,10 +29,8 @@ ms.dyn365.ops.version: 7.3
 
 # Import vendor catalogs
 [!include[banner](../includes/banner.md)]
----
 
-Vendor catalogs import
-======================
+## Vendor catalogs import
 
 In Microsoft Dynamics 365 for Finance and Operations, purchasing professionals can create and maintain
 catalogs for company employees to use when they order items and services for
@@ -47,8 +45,7 @@ maintenance request (CMR) file, must be in XML file format. The CMR file should
 contain the details for the products that the vendor supplies to your
 company.
 
-Import vendor catalog data
------------------------------
+## Import vendor catalog data
 
 To import vendor catalog data, you must complete the following tasks:
 
