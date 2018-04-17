@@ -355,7 +355,7 @@ Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monit
 Get-ServiceFabricClusterUpgrade
 ```
 
-For more informaiton, see [Troubleshoot application upgrades](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).
+For more information, see [Troubleshoot application upgrades](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).
 
 To see when new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
