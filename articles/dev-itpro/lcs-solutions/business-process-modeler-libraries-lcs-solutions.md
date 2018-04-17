@@ -38,7 +38,7 @@ This topic explains how to create and work with Business process modeler (BPM) l
 Create a business process library
 ---------------------------------
 
-There are two ways to create a Business process modeler (BPM) library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
+There are two ways to create a Business Process Modeler (BPM) library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
 
 1.  In Microsoft Dynamics Lifecycle Services (LCS), open a project, scroll to the right until you see the **More tools** section, and then click the **Business process modeler** tile. The **Business process libraries** page that appears has three sections, one for each type of library:
     -   **My libraries** – Business processes that users have created or added.
