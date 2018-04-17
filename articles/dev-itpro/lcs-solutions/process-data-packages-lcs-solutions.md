@@ -109,7 +109,7 @@ Follow these steps to consume the PDP.
 4.  Enter a name for the Consume PDP, select the PDP that you created and saved in the Asset library, select a target environment, and then click **Create**.
 5.  The Consume PDP that you created appears in the list of PDP assets. Click the package. **Note:** The asset that you created can be consumed only in the target environment that was linked to it.
 
-**Note for the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create a PDP and upload it to your Asset library. 
+**Note on the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create a PDP and upload it to your Asset library. 
 
 
 ### Review and approve BPMs
