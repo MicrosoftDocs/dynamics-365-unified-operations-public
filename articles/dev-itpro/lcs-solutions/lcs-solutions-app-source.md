@@ -34,7 +34,7 @@ ms.author: omarc
 
 Lifecycle Services (LCS) solution packages for Microsoft AppSource for Dynamics 365 for Finance and Operations are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
 
-This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating an LCS solution package fall into six groups.
+This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource for Dynamics 365 for Finance and Operations. The requirements fall into six groups.
 
 -   [Code migration](code-migration-lcs-solutions.md)
 -   [Database backup](database-backup-lcs-solutions.md) and [Process Data Packages (PDP)](process-data-packages-lcs-solutions.md)
