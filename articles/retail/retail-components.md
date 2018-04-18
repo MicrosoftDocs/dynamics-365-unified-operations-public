@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Components of Dynamics 365 for Retail
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
 

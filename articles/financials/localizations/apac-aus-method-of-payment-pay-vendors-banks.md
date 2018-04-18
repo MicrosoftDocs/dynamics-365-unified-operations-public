@@ -31,12 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Bank file formats for Australian banks
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can pay vendors electronically through banks. The names of the banks and the file formats that they accept for the electronic payments are listed in this topic. 
 
- 
+
 | Bank name                      | Bank interface                        | File format                    |
 |--------------------------------|---------------------------------------|--------------------------------|
 | Australia and New Zealand Bank | ANZ TransActiveBanking for Business   | ANZ Direct Credit Service (AU) |

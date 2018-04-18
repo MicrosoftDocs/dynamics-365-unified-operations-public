@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intelligence
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 

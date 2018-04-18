@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Migrate from overlayering to extensions
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Introduction
 
@@ -67,7 +67,7 @@ When you create an overview of your code, first consider analyzing each of your 
 
 We have gained practical experience both with ISVs that take each ISV solution in turn, and with ISVs that work as VARs and take customer solutions later.
 
-No matter how the work is pieced together in solutions, you can use the [Customization Analysis Report (CAR)](..\dev-tools\customization-analysis-report.md) to get information about what has been overlayered. This report is generated when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services (LCS). The report is in Microsoft Excel format and includes a list of all the places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
+No matter how the work is pieced together in solutions, you can use the [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) to get information about what has been overlayered. This report is generated when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services (LCS). The report is in Microsoft Excel format and includes a list of all the places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
 
 To obtain an overview, you might find it helpful to categorize each overlayered instance. The category that you apply to an overlayered instance should represent the approximate effort that is required in order to change the customization to extensions. Some customizations will be easily changed to extensions. However, for other customizations, the change will be more difficult.
 

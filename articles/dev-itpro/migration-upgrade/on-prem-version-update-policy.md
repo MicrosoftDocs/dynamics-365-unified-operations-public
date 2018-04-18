@@ -31,7 +31,8 @@ ms.dyn365.ops.version: Platform update 2
 
 # Software lifecycle policy and on-premises releases
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 
 ## Modern Lifecycle Policy 
@@ -68,11 +69,13 @@ Application and Platform releases expire at the end of the month of their softwa
 
   > [!NOTE]
   > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest available version of the platform. 
-  
+
 ### Downloadable virtual hard drive (VHD) releases
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
 
-| Release           | VHD name   | VHD expiration date  |
-|-------------------|----------------|---------------|
-| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd | May 24, 2018   | 
-| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd | June 05, 2018   |
+
+|                   Release                    |           VHD name           | VHD expiration date |
+|----------------------------------------------|------------------------------|---------------------|
+| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd |    May 24, 2018     |
+| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd |    June 05, 2018    |
+

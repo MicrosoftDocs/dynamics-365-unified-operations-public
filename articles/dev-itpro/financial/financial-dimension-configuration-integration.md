@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Financial dimension configuration for integrating applications
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the Financial dimension configuration. There are two important areas for setup: 
 - the order of financial dimensions for financial reporting. This is configured on the **Financial reporting setup** page. 

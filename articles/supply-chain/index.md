@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Supply chain management home page
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
 

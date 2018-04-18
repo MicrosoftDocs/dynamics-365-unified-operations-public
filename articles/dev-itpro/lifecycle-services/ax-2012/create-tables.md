@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Create tables
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Create tables to store data in by using the Application Object Tree (AOT).
 
@@ -55,6 +52,7 @@ Table fields are based on a primitive data type or an extended data type. For mo
 7.  To delete the table, right-click it, and then click **Delete**.
 
 ## Add Fields to a Table
+
 | **Note**                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------|
 | You can delete only fields that do not contain data in any of the table records. You cannot modify the data type of an existing field. |

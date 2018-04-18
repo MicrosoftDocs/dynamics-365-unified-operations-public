@@ -1,4 +1,3 @@
-
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Get started
@@ -26,6 +25,7 @@
 #### [Finance and Operations 8.0 (April 2018)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [Platform update 15 (March 2018)](get-started/whats-new-platform-update-15.md)
 #### [On-premises deployments of 7.2 with platform update 12 (March 2018)](get-started/whats-new-LBD-PU12-App72.md)
+
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (November 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (October 2017)](get-started/whats-new-platform-update-11.md)
@@ -81,6 +81,7 @@
 ### [Onboarding](imp-lifecycle/onboard.md) 
 ### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
 ### [Go-live FAQ](imp-lifecycle/go-live-faq.md)
+### [Submit a service request](../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json)
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
@@ -205,6 +206,8 @@
 #### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Financial management](../financials/index.md)
 
@@ -862,6 +865,9 @@
 ##### [RB/SL depreciation](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Set up method of payment](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Update method of payment on customer](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [Cash registers](../retail/localizations/emea-fra-cash-registers.md)
+###### [Deployment guidelines for cash registers](../retail/localizations/emea-fra-deployment.md)
 
 #### Germany
 ##### [Additional acquisition depreciation](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -1315,6 +1321,7 @@
 
 ### Power user management tools
 #### [Power BI integration with Entity store](../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json)
+#### [Entity store maintenance](../dev-itpro/analytics/entity-store-maintenance.md)
 #### [Configure Power BI integration for workspaces](../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json)
 #### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
@@ -1457,6 +1464,7 @@
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Vendor collaboration with customers](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Vendor catalogs import](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Set up an external catalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)

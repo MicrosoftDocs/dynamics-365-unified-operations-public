@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # What is a planned maintenance window?
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
 

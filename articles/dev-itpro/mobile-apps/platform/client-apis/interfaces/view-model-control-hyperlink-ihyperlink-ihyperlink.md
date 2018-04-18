@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # HyperLink Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Hyperlink control type. Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 

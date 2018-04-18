@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Cloud and on-premises feature comparison
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic shows whether each feature is available in these products:
 

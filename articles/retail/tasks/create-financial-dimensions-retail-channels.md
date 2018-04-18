@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create financial dimensions for Retail channels and configure dimension values on stores
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores. The topic does not include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
 

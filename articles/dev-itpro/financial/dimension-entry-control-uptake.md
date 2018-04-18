@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension entry control uptake
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Describes the Dimension Entry control and associated Controller classes.
 
