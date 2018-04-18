@@ -265,16 +265,16 @@ You've now created a navigation property between **FMRentalEntity** and **FMCust
 
 ### Use standard OData syntax to retrieve data
 
-In this section, you will use some of the standard OData syntax to navigate and query the OData entities that are exposed in the Fleet Management model. First, follow these steps the enable Internet Explorer to view JSON formatted data.
+In this section, you will use some of the standard OData syntax to navigate and query the OData entities that are exposed in the Fleet Management model. First, follow these steps to enable Internet Explorer to view JSON formatted data.
 
 1.  Close all Internet Explorer windows.
 2.  Go to C:\FMLab, and select and double-click the json.ie.reg file.
 3.  In the **Registry Editor** dialog box, click **Yes**.
 4.  Click **OK**.
 
-You can now use a browser to explore some OData URIs.
+You can now use Internet Explorer to explore some OData URIs.
 
-1.  Start a browser window, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities. **Note:** The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
+1.  Start Internet Explorere, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities. **Note:** The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
 2.  In the browser, find **FleetRental**. The following screen shot shows the metadata of the **FleetRental** entity, together with the new relationship, **NavigationProperty**. [![FleetRental metadata](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 3.  To view all the customers in the Fleet Management application in JSON format, enter the following URL into the address bar of your browser: \[baseURL\]/data/FleetCustomer **Note:** Entity names are case-sensitive.
 4.  If you don't want to retrieve all properties for the customers, you can retrieve just selected properties. For example, to retrieve only **FirstName** and **LastName**, enter the following URL: \[baseURL\]/data/FleetCustomers?$filter=FirstName.LastName
@@ -361,10 +361,11 @@ This completes the walkthrough, where you've seen an external client interacting
 ## Tips & tricks
 
 ### Max join limits
-During entity development, care must be taken to ensure the overall structure of the entity is not complicated to exceed the max join limit of 26. This is the default limit in Microsoft Dynamics 365 for Finance and Operations. Increasing this limit is usually not recomended as it can have unintended consequences. If this limit is exceeded, entity will fail to process records and it usually results in the following SQL error.
+During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit in Finance and Operations. Increasing the join limit is  not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will fail to process records and will result in the following SQL error.
 
+```
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
-
+```
 ## See also
 
 [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
