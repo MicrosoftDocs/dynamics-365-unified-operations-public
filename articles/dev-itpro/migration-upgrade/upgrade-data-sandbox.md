@@ -203,13 +203,19 @@ Here is an explanation of the parameters:
 - **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the file will be created by the process.
 - **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
 
-## Upload the bacpac file to Azure storage
+## Upload the bacpac file to Azure storage or the LCS Asset Library
 
 The bacpac file you have created will need to be copied to the AOS machine in your Azure hosted sandbox environment. There are several reasons for this:
 1. The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.
 2. Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.
 
 You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
+
+Another (free) option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option:
+1. Log into your project in LCS and go to your Asset library.
+2. Select the Database backup tab.
+3. Upload the bacpac file.
+You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that VM and downloading it from the LCS Asset library.
 
 ## Import the bacpac file into SQL Database
 
