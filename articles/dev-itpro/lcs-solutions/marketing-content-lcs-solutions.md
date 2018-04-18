@@ -65,7 +65,7 @@ After you've completed the previous procedure, you can stage and publish your so
 See also
 --------
 
-[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
 
 
 
