@@ -142,6 +142,6 @@ For performance and technical reasons, only tables that meet the following condi
      -   Parameter
      -   Reference
      -   TransactionHeader
-- The table cannot not extend another table.
+- The table cannot extend another table.
 - The table cannot be marked as a system table.
 - The table cannot be a temporary table.
