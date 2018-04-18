@@ -154,11 +154,14 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 ![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
 
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic.
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic. 
 
-If you select to do an incremental push, whenever a new record is inserted, or a record is added, the corresponding change will be reflected in the destination entity. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8, records that are deleted in the source aren't updated in the destination.
+>[!Note]
+> Full push deletes all exising records from the entity and then inserts the current set of records from the selected entity.
 
-Full push truncates the table and inserts all the records from the selected entity.
+If you select to do an incremental push, the first push is always going to be a full push. This is because, SQL needs to know which records have been 'tracked' to allow for tracking the delta changes subsequently. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity. 
+
+It is not recomended to do an explicit full push first followed by enabling change tracking and then scheduling a export job with 'incremental push' option. This is because, the job with incremental push configured will again do a full push and then it will also try to delete the duplicate records which were in the target database from the previous full push. This will cause delay in the processing. Hence, the recomendataion to export incremental data is always to first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
