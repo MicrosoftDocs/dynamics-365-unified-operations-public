@@ -607,6 +607,8 @@
 ## [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 ### Asia-Pacific
 #### [Australia](../financials/localizations/australia.md)
+##### [Business activity statement (BAS)](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
+##### [Low-value pool depreciation](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 #### China
 ##### [Bill of materials comparison](../financials/localizations/apac-chn-bom-comparison.md)
 ##### [Chinese hierarchy of chart of accounts](../financials/localizations/tasks/china-hierarchy-chart-accounts.md)
@@ -819,10 +821,29 @@
 #### [View transactions on settlement](../financials/localizations/emea-transactions-settlement-form.md)
 
 #### [Austria](../financials/localizations/austria.md)
+##### [Half-year depreciation on additional acquisitions](../financials/localizations/emea-aut-half-year-depreciation.md)
+##### [VAT statement](../financials/localizations/emea-aut-vat-statement-details.md)
 
 #### [Belgium](../financials/localizations/belgium.md)
+##### [CODA bank statement](../financials/localizations/emea-bel-coda-bank-statement-import.md)
+##### [INTERVAT tax declaration](../financials/localizations/emea-bel-intervat-tax-declaration.md)
+##### [Reconciliation reports](../financials/localizations/emea-bel-reconciliation-reports.md)
+##### [Set up payment balance reporting ](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+##### [Set up and maintain PRODCOM](../financials/localizations/emea-bel-prodcom-report.md)
 
 #### [The Czech Republic](../financials/localizations/czech-republic.md)
+##### [Credit note on cash discount](../financials/localizations/emea-cze-credit-note-cash-discount.md)
+##### Fixed assets
+###### [Depreciation rounding](../financials/localizations/emea-cze-depreciation-rounding.md)
+###### [Half-yearly depreciation on fixed asset disposal](../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
+###### [Depreciation suspension (holidays)](../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
+###### [Fixed assets depreciation methods](../financials/localizations/emea-cze-fixed-assets-depreciation.md)
+###### [Post the pre-acquisition](../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+##### [Post periodic journals](../financials/general-ledger/tasks/post-periodic-journals.md)
+##### [Set up signers for print forms](../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+##### [Split periods in periodic journals](../financials/localizations/emea-create-post-periodic-journals.md)
+##### [Update how amounts are displayed on reports and documents](../financials/localizations/emea-amount-printing-forms.md)
+##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
 
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
