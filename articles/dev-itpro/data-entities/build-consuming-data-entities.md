@@ -37,13 +37,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
-Prerequisites
--------------
+## Prerequisites
+This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
 
--   This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
--   Throughout this tutorial, baseUrl refers to the base URL of the instance.
-    -   In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-    -   On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
+Throughout this tutorial, baseUrl refers to the base URL of the instance.
+-   In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
+-   On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
 
 ## Key concepts
 -   Developing a data entity in Microsoft Visual Studio
@@ -151,6 +150,7 @@ One of the most common ways of interacting with data entities is through X++, by
 1.  In Solution Explorer, click **Add** &gt; **New item** &gt; **Runnable class** to add a runnable class to your project.
 2.  Copy and paste the following code into the class to test your data entity.
 
+```
         public static void main(Args _args)
             {
                 FMLabCustomerEntity customer;
@@ -180,6 +180,7 @@ One of the most common ways of interacting with data entities is through X++, by
                 select customer where customer.DriverLicense==license ;
                 info(strfmt("Deleted customer does not exist: license- %1", customer.DriverLicense));
             }
+```
 
 3.  Run the code in debugger to set it as a startup object.
 4.  To validate the entity, view the Infolog in the debugger window or in notifications on the website. You will see that three successful messages are logged. You will also see the actions that were taken.
@@ -193,8 +194,9 @@ After you create your data entity, you can validate import/export.
 
 1.  Create a sample CSV file that you can import. Copy the following text, and save it as **FM Lab Customer Import.csv**.
     
-CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
-
+```
+    CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
+```
 
 2.  Click **User Dashboard** &gt; **Data management**.
 
@@ -208,6 +210,7 @@ CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADD
     -   AddressLine2 – Address2
 
     [![Map source to staging](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
+    
 9.  Click the **Back** button in your browser to go back to the **Import job** page. The check mark in the entities list indicates that the entity is now ready for import. [![Import new record 2](./media/import-new-record-2.png)](./media/import-new-record-2.png)
 10. Click **Import Now**. After the import is completed, the job status page opens.
 
@@ -269,15 +272,16 @@ In this section, you will use some of the standard OData syntax to navigate and 
 3.  In the **Registry Editor** dialog box, click **Yes**.
 4.  Click **OK**.
 
-You can now use Internet Explorer to explore some OData URIs.
+You can now use a browser to explore some OData URIs.
 
-1.  Start Internet Explorer, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities. **Note:** The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
+1.  Start a browser window, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities. **Note:** The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
 2.  In the browser, find **FleetRental**. The following screen shot shows the metadata of the **FleetRental** entity, together with the new relationship, **NavigationProperty**. [![FleetRental metadata](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 3.  To view all the customers in the Fleet Management application in JSON format, enter the following URL into the address bar of your browser: \[baseURL\]/data/FleetCustomer **Note:** Entity names are case-sensitive.
 4.  If you don't want to retrieve all properties for the customers, you can retrieve just selected properties. For example, to retrieve only **FirstName** and **LastName**, enter the following URL: \[baseURL\]/data/FleetCustomers?$filter=FirstName.LastName
 5.  You can also apply filters. For example, to filter on all customers where **FirstName**=**Phil**, enter the following URL: \[baseUrl\]/data/FleetCustomers?$filter=FirstName%20eq%20'Phil' **Note:** These URLs won't work if you copy and paste them. You must manually enter them in the address bar.
 6.  To retrieve all the **Rental** records, together with all details of the customers, enter the following URL: \[baseURL\]/data/FleetRentals?$expand=CustomerRole The following example shows a **Rental** record, together with details of the linked customer, in JSON format.
 
+```
         "@odata.context":"https://testax32aos.cloud.test.dynamics.com/en/data/$metadata#FleetRentals","value":
         {  
         { 
@@ -300,6 +304,7 @@ You can now use Internet Explorer to explore some OData URIs.
         "ZipCode":77899,"RecId":5637144576,"LastName":"Spencer"
         }  
          }
+```
 
 ### Add an action to OData entity
 
@@ -308,6 +313,7 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
 1.  In Solution Explorer, right-click **FMRentalEntity**, and then select **View code**.
 2.  Copy the following code lines, and paste them into the **Code** window.
 
+```
         public class FMRentalEntity extends common
         {
         [SysODataActionAttribute("ReturnRental", true)]
@@ -317,11 +323,12 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
         return "Rental was successfully returned. Thanks for your business";
             }
         }
+```
 
 3.  On the **BUILD** menu, click **Rebuild Solution** to save your changes and build the project. You can view the build progress in the **Output** window.
 4.  To update the OData endpoint with the changes, you must run an **iisreset** command. Open a **Command Prompt** window as an administrator, and enter **iisreset**.
 
-The action that you just added can be invoked through code, as you will see in the next section.
+    The action that you just added can be invoked through code, as you will see in the next section.
 
 ### Consume the OData API from an external console application
 
@@ -334,7 +341,9 @@ In this section, you will use a console application to consume the OData endpoin
 5.  In Solution Explorer, double-click **OdataProxyGenerator.tt**.
 6.  In the code editor, replace the following string with your organization's URL.
 
+```
         <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
+```
 
 7.  Save the OdataProxyGenerator.tt file.
 8.  In the **Save of Read-only file** dialog box, click **Overwrite**. The proxy class for the OData metadata endpoint is generated. This operation might take a few minutes.
@@ -356,10 +365,6 @@ During entity development, care must be taken to ensure the overall structure of
 
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 
-See also
---------
+## See also
 
 [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
-
-
-
