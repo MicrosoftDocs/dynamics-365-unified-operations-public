@@ -125,7 +125,7 @@ Task recordings can be played as task guides. Task guides are used to guide user
 See also
 --------
 
-[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
 
 
 
