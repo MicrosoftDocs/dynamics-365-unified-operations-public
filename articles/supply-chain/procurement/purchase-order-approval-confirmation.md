@@ -82,7 +82,7 @@ If part of the ordered quantity for a PO line has been delivered, you can’t ch
 
 After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn’t been received or invoiced.
 
-See also
+Additional resources
 --------
 
 [Purchase order overview](purchase-order-overview.md)

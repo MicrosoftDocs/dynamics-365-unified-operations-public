@@ -411,7 +411,7 @@ The following table describes the various work types that you can use work confi
 
 **Note:** You can require product confirmation only for pick and put work types.
 
-See also
+Additional resources
 --------
 
 [Warehouse mobile device display settings](change-warehouse-mobile-device-displays.md)

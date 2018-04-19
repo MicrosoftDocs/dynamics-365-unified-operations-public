@@ -444,7 +444,7 @@ To deploy your extension to another environment, for example, a test, pre-produc
 4.  Click **Create**. This will create a deployment package that contains the Fleet management Extension package.
 
 
-See also
+Additional resources
 --------
 
 [Download FMLab sample code](https://github.com/Microsoft/FMLab)

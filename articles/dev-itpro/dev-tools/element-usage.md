@@ -46,7 +46,7 @@ During build operations, cross-reference information is generated that can be us
 
 When you right-click some higher-level elements, such as tables, the **View Reference** command is available. This command produces a graphic that shows the elements that are related to the current element. You can right-click the items in the graphic and then click **Go To Definition** to navigate to those elements. [![24\_DevoToolsConcept](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
 
-## See also
+## Additional resources
 
 [Development tools overview](development-tools-overview.md)
 

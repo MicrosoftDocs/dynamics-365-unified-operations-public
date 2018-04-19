@@ -61,7 +61,7 @@ The settings on the **FMLA** tab define how many hours an employee must work in 
 
 **Note:** The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States. Finally, the settings on the **Employee self-service** tab determine the information that a manager can enter on behalf of his or her employees.
 
-See also
+Additional resources
 --------
 
 [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)

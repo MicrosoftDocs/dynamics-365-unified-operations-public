@@ -72,7 +72,7 @@ Only advanced users should use the Test Data Transfer Tool (beta). You should be
 ## Personally identifiable information
 The Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta) runs in the security context of the user who starts the tool. Therefore, the tool has the same permissions and restrictions that the user has when he or she accesses SQL Server directly. You must run the tool directly from the computer that is hosting the database during import.
 
-See also
+Additional resources
 --------
 
 [Plan data import, export, and migration](http://technet.microsoft.com/library/a05289fb-0f8f-4563-be3c-7c840bfea7e1(AX.60).aspx)

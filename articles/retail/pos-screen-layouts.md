@@ -94,7 +94,7 @@ Each layout size within a screen layout must be configured using the Screen layo
 
 **Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. The recommended products control is only available for full layouts in Dynamics 365 for Retail version 1611. **Custom control **- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
 
-See also
+Additional resources
 --------
 
 [Install the Retail POS Layout designer](install-pos-layout-designer.md)

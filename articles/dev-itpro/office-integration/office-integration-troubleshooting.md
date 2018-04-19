@@ -206,7 +206,7 @@ The following URLs are accessed for authentication:
 - `http://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
-## See also
+## Additional resources
 
 [Office integration](office-integration.md)
 

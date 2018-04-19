@@ -182,7 +182,7 @@ Before you apply the platform update package on your development instance, follo
 7.  Create a custom deployable package from your customized platform package. This package should be applied to your sandbox/pre-production environment for validation.
 
 
-See also
+Additional resources
 --------
 
 [Process for upgrading to the latest Dynamics AX update](../migration-upgrade/upgrade-latest-update.md)

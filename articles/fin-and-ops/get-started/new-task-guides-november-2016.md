@@ -592,7 +592,7 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 |                       Set up automatic freight reconciliation                       |     Global     |
 |              <strong>\</strong>*Set up short picking item reallocation              |     Global     |
 
-See also
+Additional resources
 --------
 
 [New task guides available (February 2016)](new-task-guides-available-february-2016.md)

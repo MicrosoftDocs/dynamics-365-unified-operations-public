@@ -103,7 +103,7 @@ If you have a curated solution that is published on AppSource, you must keep the
 
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

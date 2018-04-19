@@ -56,7 +56,7 @@ You must set up a method of payment for direct debit mandates. You use this meth
 -   Optional: If you expect each of your customers to have multiple mandates, in the **Period** field, select **Invoice**. A separate payment will be created for each invoice, and each payment will use the mandate that is specified for the invoice.
 -   Select the **Require mandate** option to create payments by using direct debit mandates. The **Require mandate** option is available only if you select **Electronic payment** in the **Payment type** field.
 
-See Also
+Additional resources
 
 [Direct debit overview](sepa-direct-debit-overview.md) 
 

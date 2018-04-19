@@ -179,7 +179,7 @@ When you use **ColumnsMode**=**Fill** to dynamically create columns, based on th
 -    If you use **WidthMode**=**SizeToAvailable**, make sure that parent containers in the form have **WidthMode** set to **SizeToAvailable**, not **SizeToContent**. **SizeToAvailable** containers inside **SizeToContent** containers are overridden and become **SizeToContent** containers.
 
 
-See also
+Additional resources
 --------
 
 [User interface development home page](user-interface-development-home-page.md)

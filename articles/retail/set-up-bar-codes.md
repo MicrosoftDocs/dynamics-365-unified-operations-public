@@ -45,7 +45,7 @@ You can use bar codes to purchase and sell products, track product variants, and
 4.  Create bar codes for products.
 
 
-See also
+Additional resources
 --------
 
 [Set up bar code masks](set-up-bar-code-masks.md)

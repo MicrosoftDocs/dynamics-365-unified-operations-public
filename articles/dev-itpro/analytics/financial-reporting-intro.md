@@ -101,7 +101,7 @@ The following components of financial reporting make it easy to create, view, an
 </tbody>
 </table>
 
-## See also
+## Additional resources
 [Generate a financial report](generate-financial-report.md)
 
 

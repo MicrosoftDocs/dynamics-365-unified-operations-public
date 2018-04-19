@@ -55,7 +55,7 @@ Managers can view loaned items for their direct reports. They can also be grante
 If an item becomes damaged or misplaced, enter a fictitious return record. Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.
 
 
-See also
+Additional resources
 --------
 
 [Human resources](index.md)

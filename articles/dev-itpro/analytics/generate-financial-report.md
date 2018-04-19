@@ -163,7 +163,7 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 | Open the selected row definition     | Ctrl+O                     |
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

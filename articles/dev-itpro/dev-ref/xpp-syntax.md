@@ -1493,7 +1493,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 
 
 
-See also
+Additional resources
 --------
 
 [X++ Language Reference](xpp-language-reference.md)

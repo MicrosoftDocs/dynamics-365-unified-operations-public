@@ -60,7 +60,7 @@ There are two ways that you can obtain the data that you will analyze in the Tra
 
 **Call tree view** By selecting the **Call Tree** tab, you can see the call tree for all X++ methods. The tab is shown below. [![3\_Desktop](./media/3_desktop.png)](./media/3_desktop.png) Similarly, you can display the **X++** tab to view a list of all the X++ methods. They will be sorted by fields such as Inclusive/Exclusive durations, RPC, or Database calls. Note that these are similar to the corresponding tabs in Trace Parser and have the same behavior.
 
-See also
+Additional resources
 --------
 
 [Developer home page](../dev-tools/developer-home-page.md)

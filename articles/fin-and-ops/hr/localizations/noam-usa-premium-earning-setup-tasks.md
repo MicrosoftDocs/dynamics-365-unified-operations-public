@@ -213,7 +213,7 @@ You set up an earning code group for nondiscretionary earnings on the **Earning 
 
 You must create an earning code to calculate and pay the premium amounts for each type of overtime earnings that you identified. These earning codes all use **Regular rate of pay** as the rate basis.    
 
-See also
+Additional resources
 --------
 
 [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)

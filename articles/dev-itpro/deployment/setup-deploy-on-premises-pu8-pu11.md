@@ -800,6 +800,6 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
-## See also
+## Additional resources
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)

@@ -63,7 +63,7 @@ You can specify which inventory statuses are blocking statuses by using the **In
 
 
 
-See also
+Additional resources
 --------
 
 [Create and maintain an inventory blocking](tasks/create-maintain-inventory-blocking.md)

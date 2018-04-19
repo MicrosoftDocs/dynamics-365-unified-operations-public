@@ -77,7 +77,7 @@ You can use questionnaire statistics to analyze the results of a completed quest
 
 The settings that you define are saved and can be used to periodically recalculate results.
 
-See also
+Additional resources
 --------
 
 [Designing questionnaires](design-questionnaires.md)

@@ -210,7 +210,7 @@ The following examples show possible information that is used in a reporting tre
 
 [![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
-# See also
+# Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
 

@@ -329,7 +329,7 @@ Tables, form data sources, form controls, and other element types that support e
 -   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
 
 
-## See also
+## Additional resources
 
 [Customize model elements using extensions](customize-model-elements-extensions.md)
 

@@ -157,7 +157,7 @@ LedgerDimensionDefaultAccount : Yes
 LedgerDimensionAccountAlias: No
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

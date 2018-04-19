@@ -67,7 +67,7 @@ The intercompany planning group, item allocation keys, and other filters can be 
 
 If the forecast is not generated for a big set of items, but, for example, for one item or one item allocation key at a time, then in order to get better performance, you can select the **Use request response mode** check box on the **Master planning - Setup - Demand forecasting** - **Demand forecasting parameters - Azure Machine Learning** tab.
 
-See also
+Additional resources
 --------
 
 [Demand forecasting setup](demand-forecasting-setup.md)

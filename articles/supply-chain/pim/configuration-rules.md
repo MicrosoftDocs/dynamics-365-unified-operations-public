@@ -44,7 +44,7 @@ Existing configurations aren't affected by subsequent changes to the configurati
 
 **Note:** For the **Select** method, the derived configuration group, item number, and configuration are automatically selected. For the **Deselect** method, the derived configuration group, item number, and configuration can't be selected.
 
-See also
+Additional resources
 --------
 
 [Dimension-based product configuration](dimension-based-product-configuration.md)

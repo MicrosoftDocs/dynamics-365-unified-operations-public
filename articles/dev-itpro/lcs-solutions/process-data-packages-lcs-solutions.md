@@ -132,7 +132,7 @@ Follow these steps to consume the PDP.
 -   On the **Consume process data package** page, select a package, and then click **History**. You can review the status of the data package. The available information includes the target environment, company, package name, start and end times, status by data entity, and the overall status of the data package. To see the details of any errors that occurred, you can sign in to the target environment.
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

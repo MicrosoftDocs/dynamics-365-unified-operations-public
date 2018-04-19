@@ -104,7 +104,7 @@ Each trial balance report uses a different column definition. These column defin
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-getting-started.md)

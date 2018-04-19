@@ -94,7 +94,7 @@ Depreciation is understated by 16.95 (983.62 - 966.67).
 
 
 
-See also
+Additional resources
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)

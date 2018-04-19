@@ -143,7 +143,7 @@ For details about how to configure Finance and Operations to use a template, see
 
 
 
-See also
+Additional resources
 --------
 
 [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md)

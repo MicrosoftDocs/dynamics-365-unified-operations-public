@@ -917,7 +917,7 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
     -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

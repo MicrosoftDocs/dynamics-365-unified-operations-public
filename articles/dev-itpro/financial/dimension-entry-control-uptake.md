@@ -288,7 +288,7 @@ parmDimensionEntryControlHeader(
 
 
 
-See also
+Additional resources
 --------
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)

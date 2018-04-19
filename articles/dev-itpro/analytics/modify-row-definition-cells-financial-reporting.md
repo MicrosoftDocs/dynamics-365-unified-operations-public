@@ -495,7 +495,7 @@ A dimension value set is a named group of dimension values. A dimension value se
 4.  Select the set to delete, and then click **Delete**. Click **Yes** to permanently delete the dimension value set.
 
 
-## See also
+## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
 

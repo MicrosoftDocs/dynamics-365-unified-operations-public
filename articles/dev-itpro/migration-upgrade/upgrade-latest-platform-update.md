@@ -214,7 +214,7 @@ Remove any X++ or metadata hotfixes that you've installed on your existing platf
 You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
 ![View History](./media/checkinhistory.png)
 
-See also
+Additional resources
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)

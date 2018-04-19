@@ -48,7 +48,7 @@ On the **Master planning parameters** page, you can set the start time for the c
 
 **Note:** In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
 
-See also
+Additional resources
 --------
 
 [Coverage settings](coverage-settings.md)

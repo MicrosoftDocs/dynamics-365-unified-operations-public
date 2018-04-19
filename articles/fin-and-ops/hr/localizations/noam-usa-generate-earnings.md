@@ -165,7 +165,7 @@ You can also calculate retroactive pay for salaried workers. The salary-based ea
 ## Next step
 After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](noam-usa-existing-earnings.md).
 
-See also
+Additional resources
 --------
 
 [Work with existing earnings](noam-usa-existing-earnings.md)

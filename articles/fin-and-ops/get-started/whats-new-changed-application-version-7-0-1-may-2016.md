@@ -82,7 +82,7 @@ Electronic reporting (ER)
 
 
 
-See also
+Additional resources
 --------
 
 [What's new or changed](whats-new-changed.md)

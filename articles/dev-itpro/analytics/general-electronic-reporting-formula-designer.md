@@ -651,7 +651,7 @@ The print currency name flag and decimal points parameters are analyzed only for
 
 ER lets you extend the list of functions that are used in ER expressions. Some engineering effort is required. For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).
 
-## See also
+## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
 

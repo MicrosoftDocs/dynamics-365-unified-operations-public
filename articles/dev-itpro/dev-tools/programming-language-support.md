@@ -110,7 +110,7 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 -   There is no concept of a job, in the sense of **AOT** &gt; **Jobs** &gt; **MyJob**. To quickly and easily run an X++ method, you can still add in a `static Main` method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio. When the project is run, the `Main` method will be run.
 
 
-See also
+Additional resources
 --------
 
 [Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)

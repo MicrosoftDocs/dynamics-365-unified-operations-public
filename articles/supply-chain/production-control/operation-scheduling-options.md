@@ -131,7 +131,7 @@ You can save the current values as default values. There are two options:
 -   Set as default for everyone
 
 
-See also
+Additional resources
 --------
 
 [Operations scheduling](operations-scheduling.md)
