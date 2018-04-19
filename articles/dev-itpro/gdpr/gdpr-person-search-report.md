@@ -2,7 +2,7 @@
 # required metadata
 
 title: Person search report
-description: This topic provides information about the Personal data report for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about the Personal data report for Microsoft Dynamics 365 for Finance and Operations.
 author: rschloma
 manager: AnnBe
 ms.date: 01/24/2018
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # The Person search report
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
+The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
 > The Person search report will be available in an upcoming release. When available, you'll be able to use the report withFinance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. 
@@ -81,7 +81,7 @@ To use the Person search report, you must complete these tasks.
 
 ## Additional resources
 
-You can learn more about the GDPR on the [European Union's website](http://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) and in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition](./gdpr-guide.md) topic.
+You can learn more about the GDPR on the [European Union's website](http://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) and in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md) topic.
 
 
 ### Disclaimer

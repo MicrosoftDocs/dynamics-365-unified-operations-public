@@ -7,11 +7,11 @@ Before you continue, you must make sure that the following prerequisites are met
 
 1. If your target environment is running the July 2017 release or later, apply KB 4035399. 
 2. If your target environment is running the November release (version 1611), apply the following hotfixes:
-  -   KB 4025631
-  -   KB 4035355
-  -   KB 4035492
-  -   KB 4010947
-  -   KB 4045801
+   -   KB 4025631
+   -   KB 4035355
+   -   KB 4035492
+   -   KB 4010947
+   -   KB 4045801
 3. The default channel database and the default channel data group must be named **Default**. If you've renamed them, you must change the names back.
 
 Follow these steps to run the Environment reprovisioning tool.

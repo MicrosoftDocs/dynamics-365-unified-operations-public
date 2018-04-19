@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Application Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Represents a runtime instance of an application.
 

@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 # CDX extensibility
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
-This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 or Microsoft Dynamics 365 for Retail platform update 8.
+This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 for Retail platform update 8.
 
 CDX is a system that transfers data between Retail headquarters (Retail HQ) and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the names of the source tables and destination tables, and the transfer field mapping of those tables. There are two ways to configure the data synchronization between Retail HQ and the channel database:
 
@@ -164,8 +164,8 @@ To pull data from a new channel table to Retail HQ, you have two options:
         </AxFields>
     </Subjob>
     ```
-> [NOTE]
-> You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
+  > [NOTE]
+  > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
 
 ## Other scenarios
 For the remaining push and pull scenarios, only the information for the sample resource file is described, because initialization is the same as we described in the previous sections.
@@ -251,10 +251,10 @@ We recommend that you implement these changes on an untouched Retail software de
 
 2. Run the SQL update script:
 
-    1. Copy the **ContosoRetailExtensionTablesUpdate.sql** file from the Retail SDK folder. You can run the other sample files in a similar manner.
-    2. Open the script in Microsoft SQL Server Browser, and run the script against your channel database.
+   1. Copy the **ContosoRetailExtensionTablesUpdate.sql** file from the Retail SDK folder. You can run the other sample files in a similar manner.
+   2. Open the script in Microsoft SQL Server Browser, and run the script against your channel database.
 
-    This step creates the extension tables and views that are required in order to customize the transactional tables. Note that the script also creates other tables that are used for other sample scenarios.
+      This step creates the extension tables and views that are required in order to customize the transactional tables. Note that the script also creates other tables that are used for other sample scenarios.
 
 ### Extend the Finance and Operations data in the sample
 
@@ -358,11 +358,11 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
 9. To initialize or reinitialize the CDX module with the customized configuration, follow these steps:
 
-    1. Go to **Retail** > **Headquarters setup** > **Retail scheduler** > **Scheduler jobs** > **Initialize retail scheduler**.
-    2. In the dialog box that appears, select **Delete existing configuration**.
-    3. Select **OK** to start the initialization.
+   1. Go to **Retail** > **Headquarters setup** > **Retail scheduler** > **Scheduler jobs** > **Initialize retail scheduler**.
+   2. In the dialog box that appears, select **Delete existing configuration**.
+   3. Select **OK** to start the initialization.
 
-    When the initialization is completed, the CDX scheduler jobs, subjob definitions, and distribution schedules are updated by using the original RetailCDXSeedDataAX7 resource and the customized RetailCDXSeedDataAX7_ContosoRetailExtension resource.
+      When the initialization is completed, the CDX scheduler jobs, subjob definitions, and distribution schedules are updated by using the original RetailCDXSeedDataAX7 resource and the customized RetailCDXSeedDataAX7_ContosoRetailExtension resource.
 
 #### Test the customization
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail SDK packaging
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic explains how to manually create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 

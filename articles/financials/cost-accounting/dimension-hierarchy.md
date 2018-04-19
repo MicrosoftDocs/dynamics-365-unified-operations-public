@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Dimension hierarchy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 
@@ -332,7 +332,7 @@ The settings for the access list hierarchy are used to control the data that is 
 - Power BI:
 
     - Data that is shown in Power BI visualizations
-    - Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition client
+    - Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations client
 
 > [!NOTE] 
 > - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

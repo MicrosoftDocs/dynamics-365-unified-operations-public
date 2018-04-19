@@ -2,7 +2,7 @@
 # required metadata
 
 title: Convert accounting or reporting currencies
-description: A company that must change its accounting currency or reporting currency has two options.
+description: A company that must change its accounting currency or reporting currency has two options.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/25/2017
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Convert accounting or reporting currencies
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-
-A company that must change its accounting currency or reporting currency has two options. The first option is to create a new company and start fresh. The second option is to run the accounting and reporting currency conversion process. This is a very long-running process that changes every transaction in the system. Some setup is also required before the process can be run.
+A company that must change its accounting currency or reporting currency has two options. The first option is to create a new company and start fresh. The second option is to run the accounting and reporting currency conversion process. This is a very long-running process that changes every transaction in the system. Some setup is also required before the process can be run.
 
 ## Preparing the legal entity for currency conversion
 Before you can convert the legal entity’s currency, you must revert any foreign currency revaluation amounts for customer and vendor accounts, and close the previous fiscal years. You must also prepare the database for the conversion, and then make the required changes to the legal entity’s account that is undergoing the currency conversion. After you have completed a currency conversion, you must complete some additional procedures. You must reconcile rounding differences in converted amounts, recalculate business statistics, journalize the ledger transactions, limit access to the conversion tool, and revalue foreign currency amounts for customer and vendor accounts.
 
-## Setting up accounts for automatic transactions
+## Setting up accounts for automatic transactions
 During the currency conversion process, gains or losses, or penny differences, are posted to the accounts that are defined on the **Accounts for automatic transactions** page. Main accounts must be assigned to the following types of transaction before the conversion process is run:
 
 -   Accounting currency conversion gain
@@ -70,7 +69,7 @@ The following information explains where differences in rounding might occur:
 If you're converting to a new ledger accounting currency, and an error occurs during the recalculation of total amounts or the posting of rounding differences, you must close the **Ledger accounting currency conversion** page. The total amounts are then recalculated, and the rounding differences are posted.
 
 ## Processing the currency conversion
-When you start the currency conversion process, all users must be signed out of the system. You must define the new ledger or reporting currency, and the exchange rates. When you click **OK**, the process runs and updates every transaction in the system. Currency conversion is a very long process. When it's completed, you will see that the accounting or reporting currency is updated on the **Ledger** page.
+When you start the currency conversion process, all users must be signed out of the system. You must define the new ledger or reporting currency, and the exchange rates. When you click **OK**, the process runs and updates every transaction in the system. Currency conversion is a very long process. When it's completed, you will see that the accounting or reporting currency is updated on the **Ledger** page.
 
 ## Completing the currency conversion
 After the currency conversion, you must generate all reconciliation reports again to make sure that all converted amounts are correct.
