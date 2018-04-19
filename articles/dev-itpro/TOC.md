@@ -104,7 +104,7 @@
 #### [W Classes](dev-ref/w-classes.md)
 #### [X Classes](dev-ref/x-classes.md)
 
-## [Extensibility home page](extensibility/extensibility-home-page.md)
+## [Extensibility](extensibility/extensibility-home-page.md)
 ### Introduction and getting started
 #### [Application extensibility plans](extensibility/extensibility-roadmap.md)
 #### [Extensibility requests](extensibility/extensibility-requests.md) 
@@ -444,7 +444,7 @@
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
 
-# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+# [Continuous delivery](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
 ## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
