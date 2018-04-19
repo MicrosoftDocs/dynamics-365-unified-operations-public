@@ -99,7 +99,7 @@ Customer orders can be created from the point of sale (POS) client in either syn
 
 When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Retail by Pull (P) jobs. The corresponding sales orders are created in Retail when **Synchronize orders** is run either manually or through a batch process.
 
-See also
+Additional resources
 --------
 
 [Hybrid customer orders](hybrid-customer-orders.md)

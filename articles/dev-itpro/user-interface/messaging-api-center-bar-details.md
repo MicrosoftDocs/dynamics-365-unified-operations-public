@@ -72,7 +72,7 @@ If a synchronous or other form action or evaluation produces an error, there can
 -   A non-interrupting error, which is often the result of a task/batch operation failure. This type of error is shown in a message bar.
 
 
-See also
+Additional resources
 --------
 
 [User interface development home page](user-interface-development-home-page.md)

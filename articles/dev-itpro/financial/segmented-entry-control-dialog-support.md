@@ -68,7 +68,7 @@ This is a simple dialog scenario around Segmented Entry. More advanced scenarios
 -   Account structure selection support.
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)

@@ -59,7 +59,7 @@ The following table lists the tools that are provided in LCS and describes the p
 
 The LCS team is also blogging at the [Lifecycle Services Engineering blog](https://blogs.msdn.microsoft.com/lcs/). Subscribe to our RSS feed to keep up with our posts and announcements.
 
-See also
+Additional resources
 --------
 
 [Lifecycle Services](https://lcs.dynamics.com/)

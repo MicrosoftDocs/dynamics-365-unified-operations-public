@@ -168,7 +168,7 @@ The model that's provided by LINQ allows queries to be composed of subqueries. T
 
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
-See also
+Additional resources
 --------
 
 [Programming language support](programming-language-support.md)

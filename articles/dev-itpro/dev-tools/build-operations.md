@@ -112,7 +112,7 @@ To make resolution easier, you can add the elements that are affected by the err
 
 [![30\_DevoToolsConcept](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)
 
-See also
+Additional resources
 --------
 
 [Development tools overview](development-tools-overview.md)

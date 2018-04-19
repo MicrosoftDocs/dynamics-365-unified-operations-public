@@ -65,7 +65,7 @@ Typically, work cycles are assigned to non-exempt positions when the positions a
 ## Next step
 The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

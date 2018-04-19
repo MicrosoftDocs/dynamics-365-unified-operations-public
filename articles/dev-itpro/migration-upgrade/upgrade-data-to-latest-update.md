@@ -433,6 +433,6 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 | SysOAuthUserTokens.EncryptedAccessToken                          | No                       |
 | SysOAuthUserTokens.EncryptedRefreshToken                         | No                       |
 
-## See also
+## Additional resources
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)

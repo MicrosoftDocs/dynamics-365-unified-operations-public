@@ -54,7 +54,7 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 
 **Known issue:** The designer doesn't work correctly in the Google Chrome and Mozilla Firefox browsers. We are working to fix this issue.
 
-See also
+Additional resources
 --------
 
 [Configure, download, install, and activate Retail Modern POS](retail-modern-pos-device-activation.md)

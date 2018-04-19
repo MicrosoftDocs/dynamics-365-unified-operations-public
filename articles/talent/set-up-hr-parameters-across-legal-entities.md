@@ -54,7 +54,7 @@ On the **Positions** tab, indicate whether new positions are available for assig
 -   **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
 
 
-See also
+Additional resources
 --------
 
 [Set up company specific HR parameters](set-up-company-specific-hr-parameters.md)

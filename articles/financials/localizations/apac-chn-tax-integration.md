@@ -54,7 +54,7 @@ To configure tax integration for China, complete the following tasks.
 The tax integration process is illustrated in the following diagram.
 [![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
 
-## See also
+## Additional resources
 
 - [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 

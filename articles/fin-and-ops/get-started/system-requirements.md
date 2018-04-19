@@ -185,6 +185,6 @@ The computer must meet all system requirements for installing and using the foll
 
 For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
-## See also
+## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)

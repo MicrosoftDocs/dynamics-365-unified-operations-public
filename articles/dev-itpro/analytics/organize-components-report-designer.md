@@ -157,7 +157,7 @@ Only default base period settings are saved with the report definition.</td>
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

@@ -52,7 +52,7 @@ You can specify coverage settings in several ways:
 
 
 
-See also
+Additional resources
 --------
 
 [Master plans](master-plans.md)

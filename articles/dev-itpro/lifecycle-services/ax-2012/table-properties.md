@@ -356,7 +356,7 @@ The following properties are related to report models that are used to add infor
 
 
 
-See also
+Additional resources
 --------
 
 [Data Dictionary Node in the AOT](http://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)

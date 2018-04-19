@@ -123,7 +123,7 @@ After you create tax groups that are enabled for posting definitions, you can as
 ## Next step
 The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

@@ -78,7 +78,7 @@ For the following ER-related reasons, we recommend that you design ER configurat
 
 ER configurations that are designed in the development environment can be uploaded to the test environment for the configuration evaluation (proper process integration, correctness of results, and performance) and quality assurance, such as correctness of role-driven access rights and segregation of duties. The features that enable ER configuration interchange can be used for this purpose. Finally, proven ER configurations can be uploaded either to LCS, where they can be shared with service subscribers, or to the production environment for internal use, such as shown in the following illustration. ![ER configuration lifecycle](./media/ger-configuration-lifecycle.png)
 
-See also
+Additional resources
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)

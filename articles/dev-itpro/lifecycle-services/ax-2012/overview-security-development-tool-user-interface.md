@@ -95,7 +95,7 @@ This section describes the controls on the ribbon of the list view. The list vie
 
 
 
-See also
+Additional resources
 --------
 
 [Install the Security Development Tool](install-security-development-tool.md)

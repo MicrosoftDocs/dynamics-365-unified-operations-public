@@ -1086,7 +1086,7 @@ No new features have been added.
 
 
 
-See also
+Additional resources
 --------
 
 [What’s new or changed](whats-new-changed.md)

@@ -263,7 +263,7 @@ When uploading data entity files:
 -   If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 
-## See also
+## Additional resources
 [Data entities](data-entities.md)
 
 

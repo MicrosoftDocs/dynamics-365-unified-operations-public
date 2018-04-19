@@ -236,7 +236,7 @@ Finally, on the **Earning basis** FastTab, enter the earning codes that can be i
 ## Next step
 The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md).    
 
-See also
+Additional resources
 --------
 
 [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)

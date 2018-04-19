@@ -347,6 +347,6 @@ If the Electricity predefined dimension member allocation basis is assigned as a
 | CC002       | FI | 4,100.00  | (4,100 ÷ 21,550) × Amount  |
 | CC003       | IT | 15,000.00 | (15,000 ÷ 21,550) × Amount |
 
-## See also
+## Additional resources
 
 [Allocation bases](allocation-bases.md)

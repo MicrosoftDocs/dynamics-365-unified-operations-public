@@ -317,7 +317,7 @@ If the combined amount exceeds the maximum deduction limit, set the following va
 
 
 
-See also
+Additional resources
 --------
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)

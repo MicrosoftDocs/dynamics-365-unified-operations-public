@@ -92,7 +92,7 @@ The following table describes the tabs in a report definition and how the inform
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

@@ -105,7 +105,7 @@ The settings for the Access list hierarchy are used to control the data that is 
 > - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
-See also
+Additional resources
 
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)

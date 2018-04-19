@@ -43,7 +43,7 @@ In Microsoft Dynamics 365 for Retail, you can select either carry out all produc
 
 If a cart line is selected and **Pick selected**, **Ship selected**, or **Carry out selected** is selected, only the specific cart line is set with that delivery method. In that case, the downstream flow of the operation continues as usual. However, if **Pick selected**, **Ship selected**, or **Carry out selected** is selected without a cart line being selected, a new page opens that lists all the cart lines. On that screen, you can select multiple lines at once for setting the delivery method. When you use that method for selecting lines, any previous delivery method that has been assigned to the line will be overridden.
 
-See also
+Additional resources
 --------
 
 [Customer orders overview](customer-orders-overview.md)

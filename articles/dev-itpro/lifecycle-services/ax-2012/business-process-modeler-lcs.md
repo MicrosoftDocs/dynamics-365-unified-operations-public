@@ -64,7 +64,7 @@ To access Business process modeler, follow these steps:
 4.  After the business process library has been added to the **My libraries** section, click the tile to view the business process library.
 
 
-See also
+Additional resources
 --------
 
 [Business process libraries in Business process modeler](../business-process-libraries-business-process-modeler.md)

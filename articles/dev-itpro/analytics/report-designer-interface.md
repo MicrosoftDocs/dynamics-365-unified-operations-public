@@ -228,7 +228,7 @@ The report designer toolbar provides quick access to commands for navigating wit
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

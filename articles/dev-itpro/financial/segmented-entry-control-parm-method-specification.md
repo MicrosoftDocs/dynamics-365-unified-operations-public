@@ -58,7 +58,7 @@ The Segmented Entry control has multiple parm methods that influence how the con
 
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

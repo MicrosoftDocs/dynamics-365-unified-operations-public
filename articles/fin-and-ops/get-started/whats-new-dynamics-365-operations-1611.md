@@ -859,7 +859,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 
 
 
-See also
+Additional resources
 --------
 
 [What's new or changed](whats-new-changed.md)

@@ -73,7 +73,7 @@ Certification type Confirming PO codes Purchase order line amounts
 
 
 
-See also
+Additional resources
 --------
 
 [Public sector functionality](public-sector-functionality.md)

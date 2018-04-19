@@ -50,7 +50,7 @@ You can manage planned orders from the **Master planning** workspace, the **Plan
 
 When a planned order is firmed, it's moved to the orders section of the relevant module. **Note:** You can right-click a planned order that has a particular status and filter for other planned orders that have the same status. This functionality is useful if, for example, you want to filter for all planned orders that have a status of **Approved**, so that you can then firm them.
 
-See also
+Additional resources
 --------
 
 [Master plans](master-plans.md)

@@ -249,7 +249,7 @@ You can't use reserved keywords as solver names for attributes, components, or s
 -   Goal
 
 
-See also
+Additional resources
 --------
 
 [Create an expression constraint (Task guide)(tasks/add-expression-constraint-product-configuration-model.md)

@@ -80,7 +80,7 @@ For this example, we will use the same import file.
 
 However, we will use the following active ledger dimension format: **Main account - Department - Cost Center - Customer** For the first row of the import file, because only three segments are defined, a blank or dash is assumed for the Customer segment. **Main account == 605140** **Department == 001** **Cost Center == 02** **Customer == blank** Therefore, the string looks like this: 605140-001-02- The second row is imported just as defined in the import file. **Main account == 110110** **Department == 002** **Cost Center == 04** **Customer == ABC**
 
-See also
+Additional resources
 --------
 
 [Dimensions in Excel](dimensions-overview.md)

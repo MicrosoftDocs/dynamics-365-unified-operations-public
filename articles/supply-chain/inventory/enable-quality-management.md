@@ -359,7 +359,7 @@ You must define a quality association for each variation in a business process t
 
 
 
-See also
+Additional resources
 --------
 
 [Quality management processes](quality-management-processes.md)

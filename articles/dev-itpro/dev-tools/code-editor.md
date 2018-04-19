@@ -50,7 +50,7 @@ You can open the element designer that corresponds to the current X++ source cod
 
 ![opendesigner](./media/opendesigner.jpg)
 
-## See also
+## Additional resources
 
 [Developer home page](developer-home-page.md)
 

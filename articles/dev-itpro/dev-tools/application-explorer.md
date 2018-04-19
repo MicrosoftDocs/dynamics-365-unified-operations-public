@@ -121,7 +121,7 @@ Previously used filters are listed in the drop-down list at the end of the searc
 
 These actions can be used only when the filter results are limited to a single model. Your query must contain the **model:** "*Model Name*” criterion to limit the filter to a specific model.
 
-See also
+Additional resources
 --------
 
 [Technical concepts guide](developer-home-page.md)
