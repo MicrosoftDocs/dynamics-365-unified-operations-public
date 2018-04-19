@@ -95,7 +95,7 @@ A data model is designed to recognize and describe the required business entitie
 
 You use the data model configuration that is created to hold abstract data for a new electronic format that you want to design. If you intend to consume a data model that was prepared earlier when you create a new format, make sure that you select the **Format based on data model** option for **Create configuration**. After you a have a format configuration, you must define a format structure. The structure can be created manually or automatically by importing an example of an XML file or an Excel template. The data model of the parent configuration is automatically offered for format mapping, together with a proper root container. Nevertheless, a format might require that data be represented in a specific way. Therefore, you can use formula designer to define expressions as virtual data items (calculated fields) for our data containers. 
 
-> ![NOTE]
+> [!NOTE]
 > Although GER allows for direct mapping of format components to database artifacts (tables or data entities), we don't recommend this approach, because it's likely that multiple formats will be maintained in some business domain areas that use the same Finance and Operations data sources. Whenever the structure of such database artifacts is changed, the format mapping to the database artifacts must also be changed, and the cost of these changes will be multiplied by the number of maintained formats. Therefore, we recommend that you work through the data model as the abstract description of the domain-specific data structure, and that you use the direct binding of format elements to database components only for simplification and for coverage for specific customizations (for example, to refer to custom tables when these references are required in a limited number of maintained formats).
 
 ## Version control
@@ -106,7 +106,7 @@ One of the principles behind the design of Electronic reporting is that it shoul
 
 To support these requirements and comply with local district authorities, we must implement this localization as a localized configuration. However, we must keep the link with the origin configuration, so that we can adopt any future changes that are introduced at the federal level as new versions of the origin configuration. Therefore, we import the Litware Inc. origin configuration from LCS, derive it as a new localized configuration, introduce the required changes, complete this work by introducing a first version of the localized format, and start to use it internally. Whenever Litware Inc. offers us a new version of the origin configuration, we import it from LCS, rebase our localized configuration to this version, adopt changes to support new federal requirements, complete this work by introducing a next version of the localized format, and continue to use it internally. 
 
-> ![NOTE]
+> [!NOTE]
 > The draft version of any configuration must be "completed" before it can become available locally for further action, such as the following:
 
 -   Make it available so that it can be referenced as a data source from a new format.
