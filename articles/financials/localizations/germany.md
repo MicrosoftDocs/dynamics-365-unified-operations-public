@@ -5,7 +5,7 @@ title: Germany
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Germany.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 04/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,7 +63,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 ## Reports for Germany
 
-| Report                     |  Additional information  |How to get to the report |
+| Report                     |  Description  |How to get to the report |
 |----------------------------|--------------------------|----------------------------------------|
 |German journal list report|The **German journal list** report displays a list of transactions, sorted by journal sequence number, that result from running the journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md).|  **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|
 
