@@ -487,7 +487,7 @@
 ## [Segmented entry control parm methods](financial/segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial/add-dimensions-excel-templates.md)
 ## [Create exchange rate providers](financial/create-exchange-rate-providers.md)
-## [Create exchange rate providers in Microsoft Dynamics Finance and Operation version 8.0](financial/create-exchange-rate-8.md)
+## [Create exchange rate providers in Microsoft Dynamics Finance and Operations version 8.0](financial/create-exchange-rate-8.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
