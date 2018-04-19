@@ -865,7 +865,7 @@
 ##### [Set up method of payment](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Update method of payment on customer](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
 
-#### Germany
+#### [Germany](../financials/localizations/germany.md)
 ##### [Additional acquisition depreciation](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
 ##### [Audit file ](../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
 ###### [Customize audit file configuration](../financials/localizations/tasks/customize-german-audit-file-configuration.md)
