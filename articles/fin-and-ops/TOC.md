@@ -874,7 +874,6 @@
 ##### [Depreciation adjustments for additional acquisitions in the second year](../financials/localizations/tasks/de-00002-depreciation.md)
 ##### [Electronic transmission of VAT declaration (ELSTER)](../financials/localizations/tasks/de-00003-electronic-transmission-elster.md)
 ##### [Journal list report](../financials/localizations/emea-deu-journal-list-report.md)
-##### [Print a separate label for credit memos that originate from sales](../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ##### [Set up electronic tax declaration](../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json)
 
 #### Hungary
