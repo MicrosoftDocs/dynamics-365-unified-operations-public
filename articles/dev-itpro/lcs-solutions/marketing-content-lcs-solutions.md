@@ -40,15 +40,15 @@ Access to the Cloud Partner Portal will be granted after you have been formally 
 
 Before you can publish the marketing content for your LCS solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. After you've set up an account, you can upload your marketing content and then manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
-## Upload marketing materials, set up legal information, and identify the support team
-You can upload a marketing summary, a description of your solution, and other marketing materials.
+## Upload marketing materials, set up legal information, identify the support team, and set up lead management
+You can upload a marketing summary, a description of your solution and other marketing materials, and set up lead management.
 
 Follow the instructions from the Cloud Partner Portal to create and publish your new offer:
 
 1. From [Cloud Partner Portal](https://cloudpartner.azure.com), click **Learn**
 2. Click **Documentation**
 3. Expand **Dynamics 365 for Operations** menu
-4. Click **How to publish**
+4. Click **How to publish** and follow the steps outlined
 
 
 See also
