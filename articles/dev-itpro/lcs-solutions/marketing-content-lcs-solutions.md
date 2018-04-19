@@ -34,9 +34,9 @@ ms.author: omarc
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
+This topic explains how to upload the marketing content for your LCS solution package to the [Cloud Partner Portal](https://cloudpartner.azure.com), and how to stage and publish your solution.
 
-Before you can publish the marketing content for your LCS solution package to the Microsoft Azure Publishing Portal, you must set up a Developer Center account with Microsoft. After you've set up an account, you can upload your marketing content and then manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
+Before you can publish the marketing content for your LCS solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. After you've set up an account, you can upload your marketing content and then manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
 ## Upload marketing materials, set up legal information, and identify the support team
 You can upload a marketing summary, a description of your solution, and other marketing materials.
