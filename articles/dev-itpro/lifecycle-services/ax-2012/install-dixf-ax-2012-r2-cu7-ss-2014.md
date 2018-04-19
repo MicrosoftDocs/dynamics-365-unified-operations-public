@@ -124,7 +124,7 @@ If you supply the **Install-DIXFService.ps1** script with the appropriate parame
     -MSIFileName "C:\CU7Package\MSI\dixf_service_x64\dixf_service_x64.msi" 
     –LogFileName "C:\MyLogs\DIXFService-script-log.txt" -MSIExecLogFileName "C:\MyLogs\DIXFService-MSIExec-log.txt"
 
-See also
+Additional resources
 --------
 
 [Configure the version of SQL Server Integration Services used by the Data import/export framework in an environment with multiple versions (DIXF)](configure-sql-server-integration-services-multiple-versions-dixf.md)

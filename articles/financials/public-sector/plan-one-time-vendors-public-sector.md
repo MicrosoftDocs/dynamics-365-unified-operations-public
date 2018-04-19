@@ -103,7 +103,7 @@ The following table show the fields that the import file must contain. Each fiel
 ## What do I do next?
 After you’ve set up the prerequisites that you require, see [One time vendors in the public sector](one-time-vendors-public-sector.md).
 
-See also
+Additional resources
 --------
 
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)

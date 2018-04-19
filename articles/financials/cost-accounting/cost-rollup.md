@@ -302,7 +302,7 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 
 
 
-## See also
+## Additional resources
 -  [Cost object dimensions](cost-objects.md)
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchies](dimension-hierarchy.md)

@@ -69,7 +69,7 @@ Customization analysis checks your model files against the Microsoft Dynamics AX
 
 To remove a job from the list of customizations for a project, hover over the job name, then click the box to the left, and click the **Remove** button.
 
-See also
+Additional resources
 --------
 
 [Best Practices for Microsoft Dynamics AX Development](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)

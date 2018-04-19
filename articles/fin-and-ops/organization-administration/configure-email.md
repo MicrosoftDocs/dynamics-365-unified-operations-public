@@ -237,7 +237,7 @@ There are a few standard steps that can help you troubleshoot the configuration 
 ## Other notes
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
-See also
+Additional resources
 --------
 
 [Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting.md)

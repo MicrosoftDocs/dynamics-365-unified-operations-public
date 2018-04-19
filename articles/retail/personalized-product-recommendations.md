@@ -94,7 +94,7 @@ When you turn on **Enable recommendations** and run the configuration jobs, the 
 
 
 
-See also
+Additional resources
 --------
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)

@@ -72,7 +72,7 @@ Follow these steps to edit a methodology in a specific project only.
 4.  Click **Confirm**.
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

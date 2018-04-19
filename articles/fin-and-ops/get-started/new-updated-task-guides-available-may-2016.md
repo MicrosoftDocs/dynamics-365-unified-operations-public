@@ -191,7 +191,7 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 |                  Set up transportation constraints for an item                   |     Global     |
 |                <strong>\</strong>*Set up warehouse work policies                 |     Global     |
 
-See also
+Additional resources
 --------
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)

@@ -63,7 +63,7 @@ You can keep the default financial dimensions for the customer group. Just go to
 ## What can I use Accounts receivable posting definitions for?
 You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria - for example, to generate multiple, balanced, ledger entries based on attributes such as transaction types and accounts. To learn more about posting definitions, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
-See also
+Additional resources
 --------
 
 [Accounts receivable](../accounts-receivable/accounts-receivable.md)

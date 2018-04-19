@@ -351,7 +351,7 @@ On the **Worker's compensation** FastTab, specify the state that each benefit ap
 The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
 
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

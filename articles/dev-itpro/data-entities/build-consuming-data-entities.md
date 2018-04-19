@@ -375,6 +375,6 @@ During entity development, take care to ensure that the overall structure of the
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
 
-## See also
+## Additional resources
 
 [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)

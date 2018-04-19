@@ -612,7 +612,7 @@ In this example, Fund 601 is defined as a **Proprietary** fund class on the **Fu
 
 The posting definition looks for a match on any account part of the Expense account structure. Therefore, when 601-66100-130- is evaluated, the same ledger account is used, the amount is reversed to close the account, and the balancing generated ledger entry is created.
 
-See also
+Additional resources
 --------
 
 [Accounts payable](../accounts-payable/accounts-payable.md)

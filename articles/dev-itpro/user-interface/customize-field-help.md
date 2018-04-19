@@ -58,7 +58,7 @@ The pattern for label IDs is @FieldDescriptions\_*ModuleName:PageName*\_*Control
 - @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox is the ID for the label for the <strong>Link on change view</strong> option (LinkViewCheckBox) on the <strong>Backorder purchase lines</strong> page (PurchLineBackOrder).
 
 
-See also
+Additional resources
 --------
 
 [Create and use localizable labels in the client](create-localizable-labels-client.md)

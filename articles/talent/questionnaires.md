@@ -54,7 +54,7 @@ The following table provides links to information about the core questionnaire t
 
 
 
-See also
+Additional resources
 --------
 
 [Designing questionnaires](design-questionnaires.md)

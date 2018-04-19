@@ -48,5 +48,5 @@ Microsoft provides the following reports for data entities, which can be downloa
 You may also find the Tables report of interest--it lists each table, and its table group. 
 
 
-## See also
+## Additional resources
 [Data entities home page](data-entities.md)

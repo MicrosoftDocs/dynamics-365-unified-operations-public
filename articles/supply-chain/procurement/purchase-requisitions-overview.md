@@ -196,7 +196,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 5.  Create purchase orders for consolidated requisition lines or for purchase requisition lines in a consolidation opportunity.
 
 
-See also
+Additional resources
 --------
 
 [Create a requisition for consumption (Task guide)](tasks/create-requisition-consumption.md)

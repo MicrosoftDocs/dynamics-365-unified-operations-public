@@ -42,7 +42,7 @@ The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help
 
 
 
-See also
+Additional resources
 --------
 
 [Overview of the Security Development Tool user interface (AX 2012)](overview-security-development-tool-user-interface.md)

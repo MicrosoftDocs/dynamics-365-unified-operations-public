@@ -56,7 +56,7 @@ You may be required to set up the following Budgeting features:
 
 **Note** This also applies to General ledger, Accounts payable, and Accounts receivable.
 
-See also
+Additional resources
 --------
 
 [Budgeting](../budgeting/budgeting-overview.md)

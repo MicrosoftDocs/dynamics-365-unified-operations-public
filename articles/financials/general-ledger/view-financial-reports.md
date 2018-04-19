@@ -87,7 +87,7 @@ After you've finished setting the print options, click **Print** to print the re
 ## Export a financial report
 To export a financial report, on the Action Pane, click **Export**. The report is exported to Microsoft Excel, and your browser prompts you to open or save the exported file. The export settings that are defined in the report design are applied to the exported report.    
 
-See also
+Additional resources
 --------
 
 [Financial reporting for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)

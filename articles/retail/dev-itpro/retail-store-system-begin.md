@@ -56,7 +56,7 @@ Before you begin setting up Store Scale Unit, take a moment determine whether th
 
 To get started, review the following topic on configuring the Store Scale Unit, [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md).
 
-See also
+Additional resources
 --------
 
 [Retail Store Scale Unit download and configuration through self-service](retail-store-scale-unit-configuration-installation.md)

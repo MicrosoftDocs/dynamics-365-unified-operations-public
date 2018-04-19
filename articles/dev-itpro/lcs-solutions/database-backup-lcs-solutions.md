@@ -39,7 +39,7 @@ On demo or development environments, the database is typically called AXDBRain. 
 
 [![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

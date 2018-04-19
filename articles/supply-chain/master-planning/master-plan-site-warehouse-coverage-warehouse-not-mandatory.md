@@ -55,7 +55,7 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 
 
-See also
+Additional resources
 --------
 
 [Master planning and multisite functionality](master-plan-multisite-functionality.md)

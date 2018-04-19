@@ -101,7 +101,7 @@ To show all the fields on a page, set the **Include fields without a description
 
 For information about the various way to find pages, see the "Searching for pages" section earlier in this article. If you've typed the exact name of the page, the field descriptions might not be shown if more than one page has the same name. Click the arrow in the **Select a page** field to open a filtered list of the pages that are available.
 
-See also
+Additional resources
 --------
 
 [Customize field help](../../dev-itpro/user-interface/customize-field-help.md)

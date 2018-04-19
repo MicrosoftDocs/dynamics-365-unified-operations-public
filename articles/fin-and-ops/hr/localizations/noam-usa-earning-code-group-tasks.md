@@ -247,7 +247,7 @@ On the **Earning code groups** tab of the **Earning codes** page, you can see ea
 ## Next step
 The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Generate earnings](noam-usa-generate-earnings.md)

@@ -140,7 +140,7 @@ The following table shows the calculation result for an inventory object. You ca
 
 
 
-See also
+Additional resources
 --------
 
 [Cost objects](cost-object.md)

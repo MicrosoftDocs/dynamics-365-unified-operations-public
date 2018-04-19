@@ -56,7 +56,7 @@ You also use the **Vendor settlement for 1099s** page to enter or update 1099 in
 -   The IRS might require that, if just one amount on a page exceeds the minimum amount, all amounts must be reported, even if all the other amounts are less than the minimum amount.
 
 
-See also
+Additional resources
 --------
 
 [Accounts payable in the public sector](../public-sector/accounts-payable-public-sector.md)

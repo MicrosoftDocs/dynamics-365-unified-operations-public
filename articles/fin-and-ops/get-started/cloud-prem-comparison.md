@@ -132,7 +132,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 |---|---|---|---|
 | All Talent areas | All Talent features | Yes | No |
 
-## See also
+## Additional resources
 
 - [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 

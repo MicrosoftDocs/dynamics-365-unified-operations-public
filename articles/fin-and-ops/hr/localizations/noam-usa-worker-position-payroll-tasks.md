@@ -207,7 +207,7 @@ The following table show the information that you must enter on the **Payroll li
 
 
 
-See also
+Additional resources
 --------
 
 [Tax information tasks](noam-usa-tax-information-tasks.md)

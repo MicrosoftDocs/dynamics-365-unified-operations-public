@@ -102,7 +102,7 @@ The (August 2016 - all languages) APQC Unified Library contains the Task guides 
 
 
 
-See also
+Additional resources
 --------
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)

@@ -55,7 +55,7 @@ We strongly recommend that you work locally on the database server where the bus
 5.  Go to **Control Panel** &gt; **Services**, and restart the AOS instance associated with your environment.
 
 
-See also
+Additional resources
 --------
 
 [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)

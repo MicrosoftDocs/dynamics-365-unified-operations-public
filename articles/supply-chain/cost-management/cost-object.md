@@ -71,7 +71,7 @@ The following table shows what is a cost object and what is an inventory object.
 
 **Note:** The **Include physical value **parameter has no effect on the preceding calculations.
 
-See also
+Additional resources
 --------
 
 [Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)

@@ -103,7 +103,7 @@ The following table describes the Excel worksheets that the detailed report prov
 
 
 
-See also
+Additional resources
 --------
 
 [Upgrading to a new version of Microsoft Dynamics AX](https://msdn.microsoft.com/en-us/library/aa588216.aspx)

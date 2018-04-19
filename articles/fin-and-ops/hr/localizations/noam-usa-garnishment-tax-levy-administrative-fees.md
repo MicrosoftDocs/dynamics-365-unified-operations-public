@@ -82,7 +82,7 @@ Yes. For example, if 1,000.00 remains before a worker’s pay reaches 0 (zero), 
 
 
 
-See also
+Additional resources
 --------
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)

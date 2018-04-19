@@ -121,7 +121,7 @@ Task recordings can be played as task guides. Task guides are used to guide user
 6.  When you've finished, click **Stop Task guide**.
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

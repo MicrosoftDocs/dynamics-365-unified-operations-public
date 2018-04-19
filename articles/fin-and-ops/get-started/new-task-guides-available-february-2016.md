@@ -724,7 +724,7 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 
  
 
-See also
+Additional resources
 --------
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)

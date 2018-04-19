@@ -92,7 +92,7 @@ The **Corrections** page lets you create a list of nonconformances that must be 
 
 It's a good idea to define a unique document type for corrections by using the **Document type** page. You can then use the **Report setup** page to define whether comments for this document type are printed on the correction report. A printed correction report displays information about the nonconformance and the related nonconformance notes. The report also includes correction information, such as the diagnostic type, and the related correction notes.
 
-See also
+Additional resources
 --------
 
 [Enabling quality management](enable-quality-management.md)

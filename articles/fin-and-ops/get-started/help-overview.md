@@ -210,7 +210,7 @@ The following table lists our websites. Our content websites are organized to su
 
 
 
-See also
+Additional resources
 --------
 [Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

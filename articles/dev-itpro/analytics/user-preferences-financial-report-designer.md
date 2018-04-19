@@ -78,7 +78,7 @@ Set user preferences
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

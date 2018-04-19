@@ -71,7 +71,7 @@ You can create a skill profile analysis to view a list of the competencies of a 
 
 
 
-See also
+Additional resources
 --------
 
 [Human resources](index.md)

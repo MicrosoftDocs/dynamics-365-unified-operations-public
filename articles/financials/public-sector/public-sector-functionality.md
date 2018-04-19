@@ -71,7 +71,7 @@ The following table provides information about how this configuration key relate
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
 
 
-See also
+Additional resources
 --------
 
 [Planning for public sector functionality](plan-public-sector-functionality.md)

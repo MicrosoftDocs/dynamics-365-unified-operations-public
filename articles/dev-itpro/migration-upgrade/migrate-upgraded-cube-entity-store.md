@@ -184,7 +184,7 @@ As an administrator or a power user, you have successfully authored and publishe
 -   Users can personalize their workspaces by adding Power BI tiles or reports.
 
 
-See also
+Additional resources
 --------
 
 [Modeling and using aggregate data](../analytics/model-aggregate-data.md)

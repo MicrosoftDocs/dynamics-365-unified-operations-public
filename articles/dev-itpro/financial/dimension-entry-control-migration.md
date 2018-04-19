@@ -145,7 +145,7 @@ Simple migration scenario - PurchTable form
 
 
 
-See also
+Additional resources
 --------
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)

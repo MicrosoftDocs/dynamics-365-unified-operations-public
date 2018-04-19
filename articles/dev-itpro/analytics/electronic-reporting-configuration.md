@@ -161,7 +161,7 @@ You can choose how to move your electronic reporting functionality into GER. How
 
 
 
-See also
+Additional resources
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)
