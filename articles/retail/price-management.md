@@ -5,7 +5,7 @@ title: Retail sales price management
 description: This topic describes the concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
