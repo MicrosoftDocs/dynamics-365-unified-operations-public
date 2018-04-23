@@ -35,9 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Microsoft Dynamics 365 for Finance and Operations.
 
-Introduction
-------------
-
 Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Finance and Operations.
 
 During an upgrade, all products that are associated with a storage dimension group that uses the Pallet ID inventory dimension are identified, marked as blocked, and not processed for upgrade.
@@ -50,13 +47,15 @@ This change is required because in Finance and Operations, item tracking is part
 -   Existing warehouses must be enabled to use warehouse management processes 
 -   Existing released products must be associated with a storage dimension group that uses warehouse management processes 
 
-## Find products that were blocked because of Pallet ID
 If the source storage dimension groups use the Pallet ID inventory dimension, the locations of existing on-hand inventory that used the Pallet ID inventory dimension must be associated with a location profile in which the **Use license plate tracking** parameter is selected. If the existing warehouses should not be enabled to use warehouse management processes, you can change the storage dimension groups of the existing on-hand inventory to groups that handle only the Site, Warehouse, and Location inventory dimensions. 
 
 > [!NOTE] 
 >  You can change the storage dimension group for items even if open inventory transactions exist.
 
- ## Change storage dimension group for blocked products 
+## Find products that were blocked because of Pallet ID
+To view the list of released products that were blocked during upgrade and can't be processed, click **Inventory management** &gt; **Setup** &gt; **Inventory** &gt; **Items blocked for inventory updates**.
+
+## Change storage dimension group for blocked products 
  
 To be used as part of a warehouse management process, an item must be associated with a storage dimension group in which the Location inventory dimension is active, and the **Use warehouse management processes** parameter is selected. When this setting is selected, the Site, Warehouse, Inventory status, Location, and License plate inventory dimensions become active.
 
