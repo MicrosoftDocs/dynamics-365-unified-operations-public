@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attract is growing fast
+title: Access preview features in Dynamics 365 for Talent: Attract
 description: This topic describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. 
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
 ---
 
-# Dynamics 365 for Talent: Attract is Growing Fast! 
+# Access preview features in Dynamics 365 for Talent: Attract 
  
 > [!NOTE] 
 > This document applies to Dynamics 365 for Talent: Attract. 
