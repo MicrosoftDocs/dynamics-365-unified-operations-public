@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 > [!NOTE] 
 > This document applies to Dynamics 365 for Talent: Attract. 
  
-As part of our continuous roll out of product capabilities we want to let customers experience new features as soon as possible.  Administrators can enable the use of preview features in their environment. These features are nearly ready for general availability and have gone through extensive testing. We are just looking for a final round of customer feedback and validation before we generally release them. 
+As part of our continuous rollout of product capabilities we want to let customers experience new features as soon as possible.  Administrators can see and use of preview features in their environment. These features are nearly ready for general availability and have gone through extensive testing. We are just looking for a final round of customer feedback and validation before we generally release them. 
 
-This document describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. This list will be maintained as features release to general availability and when new features are released to preview. No notification is made when new features are delivered to preview; users will simply start seeing the features. 
+This document describes how an administrator can enable the preview features, and lists the features that are currently enabled for preview. This list will be maintained as features release to general availability and when new features are released to preview. No notification is made when new features are delivered to preview; users will simply start seeing the features. 
 
 ## Managing Preview Features 
 
@@ -44,16 +44,16 @@ The enabling of preview features is environment specific. To enable the features
 
 1. Log in to Attract. 
 
-2. Select the ‘gear’ menu in the upper right-hand corner, and select ‘Admin settings’. 
+2. Select the ‘gear’ menu in the upper right-hand corner, and select **Admin settings**. 
 
-3. Select the ‘Feature management’ tab on the left. 
+3. Select the **Feature management** tab on the left. 
 
-4. Click the switch next to ‘Preview features’ so that it turns blue. 
+4. Click the switch next to **Preview features** so that it turns blue. 
 
-5. Refresh your browser to begin seeing the new features. (Any user already logged in will see them the next time they login or they can see them immediately by also refreshing their browser.) 
+5. Refresh your browser to begin seeing the new features. (Any user who is logged in will see them the next time they login, or they can see them immediately by refreshing their browser.) 
 
 > [!NOTE] 
-> The same steps can be followed for disabling the preview capabilities. When disabling them note existing processes could have potential issues. In most cases existing processes will continue to use the preview features. New processes created after disabling the preview features will not use any of the preview features. 
+> The same steps can be followed for disabling the preview capabilities. When disabling them, note that existing processes could have potential issues. In most cases existing processes will continue to use the preview features. New processes created after disabling the preview features will not use any of the preview features. 
  
 ## Feedback 
 
@@ -72,13 +72,13 @@ Job Posting – Ability to post jobs to the career site.
 LinkedIn Job Posting – Ability to post jobs to LinkedIn. 
 
 [!Note]
-Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be truly visible.  Otherwise the job will only show when explicitly searched for.  Posting to LinkedIn does have a delay and it can take up to a few hours for it to appear after posting it from Attract. 
+Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be visible.  Otherwise the job will only show when you explicitly search for it.  Posting to LinkedIn does have a delay and it can take up to a few hours for a job to appear after posting it from Attract. 
 
 Candidate apply – Candidates (Internal or External) can now apply directly from the job page of the career site. 
 
 Assessments – As part of the configurable hiring process (on a job or using a job template) users now have access to a new Assessment activity type.  From here users can use the Gauge tool (part of Dynamics 365 for Talent) to build basic assessments to send to candidates.  Gauge itself is also in public preview.  Additional providers will be added in the future. 
 
-Coming soon! Offer Management – Offer management provides the ability for users to build templatized offer letters with placeholders.  As a candidate advances to the Offer stage, recruiters and hiring managers can now use Offer to prepare the candidates formal offer via the templates, send for internal approval, and finally send the offer for signature to the candidate.  Many new features will come to the Offer tool over time and the preview will be update with these capabilities as we are ready to release them to preview. 
+Coming soon! Offer Management – Offer management provides the ability for users to build templatized offer letters with placeholders.  As a candidate advances to the Offer stage, recruiters and hiring managers can now use Offer to prepare the candidates formal offer via the templates, send for internal approval, and finally send the offer for signature to the candidate. Many new features will come to the Offer tool over time and the preview will be updated with these capabilities as we are ready to release them to preview. 
 
-[!TIP]
+[!Tip]
 Bookmark this page and check back often to keep up to date on new preview features as we release them. 
