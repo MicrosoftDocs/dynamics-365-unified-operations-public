@@ -45,16 +45,14 @@ You can upload a marketing summary, a description of your solution and other mar
 
 Follow the instructions from the Cloud Partner Portal to create and publish your new offer:
 
-1. From [Cloud Partner Portal](https://cloudpartner.azure.com), click **Learn**
-2. Click **Documentation**
-3. Expand **Dynamics 365 for Operations** menu
-4. Click **How to publish** and follow the steps outlined
+1. From [Cloud Partner Portal](https://cloudpartner.azure.com), click **Learn**.
+2. Click **Documentation**.
+3. Expand **Dynamics 365 for Operations** menu.
+4. Click **How to publish** and follow the steps outlined.
 
+[![How to publish](./media/CPP_HowtoPublish.png.PNG)](./media/CPP_HowtoPublish.png.PNG)
 
 See also
 --------
 
 [AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
-
-
-
