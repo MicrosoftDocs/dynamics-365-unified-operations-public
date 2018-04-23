@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attract is growing fast
-description: The Business process feature allows you to create a business process template for processes that need to be completed within your organization.
+description: This topic describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. 
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
