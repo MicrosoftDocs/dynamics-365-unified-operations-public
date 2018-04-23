@@ -5,7 +5,7 @@ title: Page design guidelines
 description: This topic provides in-depth information on designing mobile apps.
 author: makhabaz
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,9 +137,9 @@ If you want just a details view for an entity, it's likely that the entity is a 
         
 ### How do I adjust the number of records returned in a list page using list fetch size?
 
-The number of records returned in a list page is controlled by the **List fetch size** value. This defaults to 50 records. The **List fetch size** indicates the maximum number of records returned by page when it first loads and the maximum number of records returned  when search is used to find a specific set of records. Be careful not to make the value too large or it may negatively affect the user experience.
+The number of records returned in a list page is controlled by the **List fetch size** value. This defaults to 50 records. The **List fetch size** indicates the maximum number of records returned by a page when it first loads, and the maximum number of records returned  when search is used to find a specific set of records. Be careful not to make the value too large or it may negatively affect the user experience.
 
-1. In the Mobile App designer, after add a page containing a grid and select some fields from the grid
-2. Click on the **Grid** node and click on **Properties**
+1. In the Mobile App designer, after add a page containing a grid and select some fields from the grid.
+2. Click on the **Grid** node and click on **Properties**.
 3. The **Control properties** dialog will contain a default fetch size of 50 records.
-4. Adjust the fetch size as needed
+4. Adjust the fetch size as needed.
