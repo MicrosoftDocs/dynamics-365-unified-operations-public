@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade warehouse management from AX 2012 to Finance and Operations 
+title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations 
 description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
 manager: AnnBe
