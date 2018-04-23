@@ -1,7 +1,7 @@
 # [Development and administration for Dynamics 365 for Finance and Operations](index.md)
-# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md)
-# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Demo data](../fin-and-ops/get-started/demo-data.md)
+# [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Demo data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generate demo data with packages](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [Export and import a model](dev-tools/models-export-import.md)
 ### [Metadata search in Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Models](dev-tools/models.md)
-### [Projects in Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projects in Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Tools add-ins for Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Turn off model customization and deprecate functionality](dev-tools/lock-models.md)
 ### [Update Visual Studio development tools](dev-tools/update-development-tools.md)
@@ -104,7 +104,7 @@
 #### [W Classes](dev-ref/w-classes.md)
 #### [X Classes](dev-ref/x-classes.md)
 
-## [Extensibility home page](extensibility/extensibility-home-page.md)
+## [Extensibility](extensibility/extensibility-home-page.md)
 ### Introduction and getting started
 #### [Application extensibility plans](extensibility/extensibility-roadmap.md)
 #### [Extensibility requests](extensibility/extensibility-requests.md) 
@@ -114,7 +114,8 @@
 #### [Customization: overlayering and extensions](extensibility/customization-overlayering-extensions.md)
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
-#### [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 8.0](extensibility/changes-80.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -159,6 +160,7 @@
 ### [Deployment with continuous build and test automation](perf-test/continuous-build-test-automation.md)
 ## [Date effectivity](dev-tools/date-effectivity.md)
 ## [ISV licensing](dev-tools/isv-licensing.md)
+## [ISV licensing on-premises](dev-tools/isv-licensing-on-prem.md)
 
 # [User interface development](user-interface/user-interface-development-home-page.md)
 ## Tutorials
@@ -167,8 +169,8 @@
 ### [Build navigation](user-interface/build-navigation.md)
 ### [Build a workspace](user-interface/build-workspace.md)
 ## Forms
-### [Navigation in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Layout in Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigation in Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Layout in Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Symbol font](user-interface/symbol-font.md)
 ### [Test forms with custom patterns](user-interface/testing-forms-custom-patterns.md)
 ### [Create and use deep links](user-interface/create-deep-links.md)
@@ -381,17 +383,18 @@
 
 ### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
 #### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
+##### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
+##### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [Consuming external web services](data-entities/consume-external-web-service.md)
 
@@ -406,33 +409,9 @@
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
 ### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
+### [Configuration keys and data entities](data-entities/config-key-entities.md)
+### [Find information about standard data entities](data-entities/data-entities-report.md)
 
-## Standard data entities
-### [Data entities report](data-entities/data-entities-report.md)
-### [Data entities: Accounts payable and taxes](data-entities/data-entities-accounts-payable-taxes.md)
-### [Data entities: Accounts receivable](data-entities/data-entities-accounts-receivable.md)
-### [Data entities: Bank](data-entities/data-entities-bank.md)
-### [Data entities: Beginning balances](data-entities/data-entities-beginning-balances.md)
-### [Data entities: Budget planning](data-entities/data-entities-budget-plan.md)
-### [Data entities: Budgeting](data-entities/data-entities-budgeting.md)
-### [Data entities: Costing](data-entities/data-entities-costing.md)
-### [Data entities: Expense management](data-entities/data-entities-expense-management.md)
-### [Data entities: Fixed assets](data-entities/data-entities-fixed-assets.md)
-### [Data entities: General ledger](data-entities/data-entities-general-ledger.md)
-### [Data entities: Global address book](data-entities/data-entities-global-address-book.md)
-### [Data entities: Human resources](data-entities/data-entities-human-resources.md)
-### [Data entities: Inventory management](data-entities/data-entities-inventory-management.md)
-### [Data entities: Master planning](data-entities/data-entities-master-plan.md)
-### [Data entities: Procurement and sourcing](data-entities/data-entities-procurement-sourcing.md)
-### [Data entities: Product information management](data-entities/data-entities-product-information-management.md)
-### [Data entities: Production control](data-entities/data-entities-production-control.md)
-### [Data entities: Project accounting](data-entities/data-entities-project-accounting.md)
-### [Data entities: Public sector](data-entities/data-entities-public-sector.md)
-### [Data entities: Retail](data-entities/data-entities-retail.md)
-### [Data entities: Sales and marketing execution](data-entities/data-entities-sales-marketing.md)
-### [Data entities: Sales and marketing pre-sales](data-entities/data-entities-sales-marketing-pre-sales.md)
-### [Data entities: System administration](data-entities/data-entities-system-administration.md)
-### [Data entities: Workflow](data-entities/data-entities-workflow.md)
 
 ## [Data import and export jobs](data-entities/data-import-export-job.md)
 
@@ -452,9 +431,21 @@
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
-## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
 
-# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+## [Data task automation](data-entities/data-task-automation.md)
+
+## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
+### [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Asset classifications](gdpr/gdpr-asset-classification-values.md)
+### [Use the Person search report](gdpr/gdpr-person-search-report.md)
+### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
+### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
+### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
+### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+
+## [Data validation workspace](user-interface/data-validation-workspace.md)
+
+# [Continuous delivery](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
 ## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
@@ -497,6 +488,7 @@
 ## [Segmented entry control parm methods](financial/segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial/add-dimensions-excel-templates.md)
 ## [Create exchange rate providers](financial/create-exchange-rate-providers.md)
+## [Create exchange rate providers in Microsoft Dynamics Finance and Operations version 8.0](financial/create-exchange-rate-8.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
@@ -508,21 +500,25 @@
 
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
-### [Azure ExpressRoute and Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
 ### [Planning for your on-premises deployment](deployment/plan-onprem-deployment.md)
-### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Hardware sizing](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Create an on-premises project](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Set up and deploy on-premises environments](deployment/setup-deploy-on-premises-environments.md)
+#### [Deploy on-premises environments with Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
+#### [Deploy on-premises environments with Platform updates 8 and 11](deployment/setup-deploy-on-premises-pu8-pu11.md)
+
 ### [Develop and deploy custom models to on-premises environments](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Configure reverse proxy for your on-premises environment](deployment/onprem-reverseproxy.md)
 ### [Apply updates to an on-premises deployment](deployment/apply-updates-on-premises.md)
 ### [Redeploy an on-premises deployment](deployment/redeploy-on-prem.md)
 ### [Update the local agent](lifecycle-services/update-local-agent.md)
 ### [Reconfigure your environment](lifecycle-services/reconfigure-environment.md)
-### [Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises](deployment/troubleshoot-on-prem.md)
+### [Client internet connection](user-interface/client-disconnected.md)
+### [Troubleshoot Dynamics 365 for Finance and Operations on-premises](deployment/troubleshoot-on-prem.md)
 
 ## Deploy custom code
 ### [Create a deployable package](deployment/create-apply-deployable-package.md)
@@ -542,10 +538,11 @@
 ### [AX 2012 upgrade - Tasks to complete after upgrade](migration-upgrade/app-validation-process.md)
 ### [AX 2012 upgrade - Functional test pass](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 upgrade - Prepare for go live](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
-#### [Single voucher and currency revaluation upgrade ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md)
+#### [Single voucher and currency revaluation upgrade](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Project resource scheduling data model](migration-upgrade/data-model-changes-resource-management.md)
 #### [Workflow subsystem changes](migration-upgrade/workflow-subsystem.md)
 #### [Why we moved from cubes to aggregate models](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -584,6 +581,7 @@
 
 # [System administration](sysadmin/system-administration-home-page.md)
 ## [Platform monthly updates FAQ](sysadmin/faq-platform-monthly-updates.md)
+## [Virtual machines that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ## [Add links to your organization's legal terms and privacy statement](sysadmin/legal-terms-privacy-statement.md)
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
@@ -603,7 +601,9 @@
 ### [Batch server overview](sysadmin/batch-server-overview.md)
 ### [Create a batch job](sysadmin/tasks/create-batch-job.md)
 
-## [Create rules for Optimization advisor](sysadmin/optimization-advisor.md)
+##  [Optimization advisor overview](sysadmin/optimization-advisor-overview.md)
+### [Create rules for Optimization advisor](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Overview of Lifecycle Services](lifecycle-services/lcs.md)
@@ -625,13 +625,17 @@
 ## [Complete tasks in a BPM library](lifecycle-services/complete-tasks-bpm.md)
 ## [Use activity diagrams](lifecycle-services/using-activity-diagrams.md)
 ## [Synchronize a BPM library with Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Create an acceptance test suite using Task guides and BPM](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Business process modeler flowcharts](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Upload custom business processes](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitoring and diagnostics ](lifecycle-services/monitoring-diagnostics.md)
+## [Restart environment services](lifecycle-services/restart-environment-services.md)
 ## [Track user log-ins](lifecycle-services/user-logins.md)
 ## [Asset library](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - Translation Service overview](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 Translation Service user guide  ](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 Translation Service - Documentation file translation](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365 Translation Service - Translation memory](lifecycle-services/use-translation-service-tm.md)
 
 ## Dynamics AX 2012 Lifecycle Services features
 ### Deployment
@@ -715,10 +719,10 @@
 ## [Request a sandbox database refresh](database/database-refresh.md)
 
 # Support
-## [Get support for Dynamics 365 for Finance and Operations, Enterprise edition and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Get support for Dynamics 365 for Finance and Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Set up technical support for Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
+## [Set up technical support for Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 ## [Manage Finance and Operations Support experiences](lifecycle-services/cloud-powered-support-lcs.md)

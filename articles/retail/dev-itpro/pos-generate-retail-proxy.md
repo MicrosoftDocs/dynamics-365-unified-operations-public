@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Generate the Retail proxy for POS and e-Commerce
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 When you create a new Retail server API controller, or extend the existing controller, you need to generate the Retail proxy by using the tools available in the Retail SDK. For example, if you added a new API for a customer entity by extending the customer controller, then you would need to generate the Retail proxy.
 
 ## What is the Retail proxy and when should you use it

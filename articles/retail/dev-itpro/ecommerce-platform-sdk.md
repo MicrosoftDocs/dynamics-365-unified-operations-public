@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # e-Commerce Platform SDK
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the e-Commerce Platform SDK. The e-Commerce Platform SDK consist of the following components:
 
@@ -54,7 +53,7 @@ This topic describes the e-Commerce Platform SDK. The e-Commerce Platform SDK co
     -  However, the publishing of the web storefront from RetailSDK will drop the files at C:\\inetpub\\RetailWeb\\Storefront.
     -  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:\\inetpub\\RetailWeb\\Storefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
 
-6.  Browse to http://localhost:55080 or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net website.
+6.  Browse to http://localhost:55080 or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net website.
 
 ### Enabling anonymous access
 
@@ -69,8 +68,8 @@ The following configuration changes will be required if either of these applies:
 
 You will need to update the “retailServerUrl” inside the web.config file of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
--   retailServerUrl=http://localhost:35080/RetailServer/V1
--   &lt;add key="RetailServerRoot" value="http://localhost:35080/RetailServer/V1" /&gt;
+- retailServerUrl=<http://localhost:35080/RetailServer/V1>
+- &lt;add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" /&gt;
 
 If you are accessing the web storefront over HTTPS, then you will need to update the above URLs to the HTTPS equivalent.
 

@@ -5,7 +5,7 @@ title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -20,6 +20,7 @@ ms.reviewer: margoc
 ms.search.scope:  Operations 
 
 # ms.tgt_pltfrm: 
+
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry:
@@ -31,9 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Bring your own database
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This topic explains how administrators can export data entities from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). The BYOD feature was released in Microsoft Dynamics AX with platform update 2 (August 2016). Minor improvements and bug fixes have been included in subsequent platform updates.
+This topic explains how administrators can export data entities from Microsoft Dynamics 365 for Finance and Operations into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). The BYOD feature was released in Microsoft Dynamics AX with platform update 2 (August 2016). Minor improvements and bug fixes have been included in subsequent platform updates.
 
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in Finance and Operations into it. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
@@ -41,6 +42,7 @@ The BYOD feature lets administrators configure their own database, and then expo
 - Export either all the records (*full push*) or only the records that have changed (*incremental push*).
 - Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
+
 
 ## Entity store or BYOD?
 
@@ -163,6 +165,9 @@ You can create a data project that has multiple entities. You can schedule this 
 ### Known limitations
 
 The BYOD feature has the following limitations.
+
+#### There should be no active sessions on your database during synchronization
+Because BYOD is your own database, you must ensure that there are no active sessions on your Azure SQL database when data is being synced from Finance and Operations. Having active sessions on your database during synchronization can results in SQL locks which in turn can cause in slow writes or even complete failure of exports to your Azure SQL database.
 
 #### Export data projects are specific to a single legal entity
 

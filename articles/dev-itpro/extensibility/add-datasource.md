@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Add a new data source to a form
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Often, the information that is stored in existing tables doesn't satisfy customer requirements. Therefore, additional tables must be created, and data from those tables must be shown on pages.
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a model and data model elements
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you'll use Visual Studio's Dynamics AX menu to create a new model named Fleet Management tutorial. You'll also create and edit new model elements.
 
@@ -43,14 +42,14 @@ Prerequisites
 This tutorial requires you to access the Dynamics AX environment using Remote Desktop, and that you be provisioned as an administrator on the Dynamics AX instance.
 
 ## Keywords
--   **Model** - You configure your model to refer to two other models. This enables your model to reference metadata and code elements that are in other packages.
--   **Project **-** **You create a **Dynamics AX** project, and you associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
--   **Designer **-**** ****Each time you add an item to your project, a designer is displayed that is tailored to the item type you choose. The **Properties** window adjusts each time a different node of the designer is highlighted. You make updates in the designers and in the **Properties** window.
--   **EDT **-**** ****Extended data type.
+- **Model** - You configure your model to refer to two other models. This enables your model to reference metadata and code elements that are in other packages.
+- **Project** - You create a **Dynamics AX** project, and you associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
+- **Designer** - Each time you add an item to your project, a designer is displayed that is tailored to the item type you choose. The **Properties** window adjusts each time a different node of the designer is highlighted. You make updates in the designers and in the **Properties** window.
+- **EDT** - Extended data type.
 
 ## Create the Fleet Management tutorial model
 1.  Start Visual Studio using **Run as administrator**.
-2.  From the **Dynamics AX** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
+2.  From the **Dynamics AX** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3.  Enter the following values for model parameters.
 
     | **Property**           | **Value**                                                                                                                |
@@ -58,7 +57,7 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
     | **Model name**         | FleetMgmntTutorial                                                                                                       |
     | **Model publisher**    | Microsoft Corp                                                                                                           |
     | **Layer**              | isv                                                                                                                      |
-    | **Model description**  | This tutorial shows how to build the Fleet Management application by using the Microsoft Dynamics AX  development tools. |
+    | **Model description**  | This tutorial shows how to build the Fleet Management application by using the Microsoft Dynamics AX  development tools. |
     | **Model display name** | Fleet Management Tutorial                                                                                                |
 
     **Note**: Your model name must be **FleetMgmntTutorial**. Don't use any other name. In other tutorials, you'll overwrite model elements in this model by importing a project. If the model you create in this tutorial isn't named **FleetMgmntTutorial**, you may not be able to correctly import the project in other tutorials.
@@ -99,9 +98,9 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
 4.  In the **Name** field, enter **FMTAddress**, and then click **Add**. 
 
     [![NewItem\_DataModel](./media/newitem_datamodel.png)](./media/newitem_datamodel.png) 
-    
+
     This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration. 
-    
+
     [![EDTelement\_DataModel](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
 
 5.  Select the root node of **FMTAddress** in the designer.
@@ -128,12 +127,12 @@ Add the other required model element files to the current model and project. You
 3.  Press **Ctrl+A** to select all of the files, and then click **Add**.
 
 ## Create the FMTCustomer table
-1.  In **Solution Explorer**, right-click **FMTDataModel**, and then click **Add &gt; New Item**.
-2.  In the left pane, expand **Installed**, expand ****AX Artifacts**,** and then click ****Data Model**.**
-3.  In the list of artifacts, select **Table**.
-4.  In the **Name** field, enter **FMTCustomer**, and then click **Add**. The table designer opens. 
+1. In **Solution Explorer**, right-click **FMTDataModel**, and then click **Add &gt; New Item**.
+2. In the left pane, expand <strong>Installed</strong>, expand *<strong><em>AX Artifacts</em>*,</strong> and then click *<strong><em>Data Model</em>*.</strong>
+3. In the list of artifacts, select **Table**.
+4. In the **Name** field, enter **FMTCustomer**, and then click **Add**. The table designer opens. 
 
-    [![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)
+   [![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)
 
 ### Add fields to the FMTCustomer table
 
@@ -157,9 +156,9 @@ In the table designer for FMTCustomer, you now add several fields to the table.
     | **String** | Thumbnail      | String Size = 100Label = Thumbnail                                          |
 
     **Tip**: For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from **Solution Explorer** or **Application Explorer** and dropping it on the **Fields** node of the **FMTCustomer** table in the designer. 
-    
+
     [![AdministratorArrow\_DataModel](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
-    
+
 2.  Press **Ctrl+S** to save the new fields on the table.
 
 ### Add fields to field groups
@@ -195,17 +194,17 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 1.  In **Solution Explorer**, expand the **FMTDataModel** project.
 2.  Right-click **FMTAddress**, and then click **Open**. The **EDT designer** opens.
 3.  In the **EDT designer**, select **FMTAddress**.
-4.  In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**. **Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box. This filters the drop-down list to only show tables that contain "FMT" in their name. Select the **FMTCustomer** table from the list of filtered entries. [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+4.  In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**. **Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box. This filters the drop-down list to only show tables that contain "FMT" in their name. Select the **FMTCustomer** table from the list of filtered entries. [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
 5.  Save the EDT.
 
 ## Build the FMTDataModel project and the Fleet Management tutorial model
-1.  In **Solution Explorer**, right-click **FMTDataModel**, and then click **Rebuild**.
-2.  To do a full build of the entire model, on the **Dynamics AX **menu, click **Build models.**
-3.  Clear the check box for all models except for **Fleet Management Tutorial**.
-4.  On the **Options** tab, select the **Run Best practice checks** check box. Note that other options available.
-5.  On the **Models** tab, click **Build**.
-6.  Click **Close**  in the dialog box.
-7.  On the **Window** menu, click **Close All Documents**, to close all open documents.
+1. In **Solution Explorer**, right-click **FMTDataModel**, and then click **Rebuild**.
+2. To do a full build of the entire model, on the <strong>Dynamics AX **menu, click **Build models.</strong>
+3. Clear the check box for all models except for **Fleet Management Tutorial**.
+4. On the **Options** tab, select the **Run Best practice checks** check box. Note that other options available.
+5. On the **Models** tab, click **Build**.
+6. Click **Close**  in the dialog box.
+7. On the **Window** menu, click **Close All Documents**, to close all open documents.
 
 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Resources for responding to a GDPR data request
-description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, Enterprise Edition, and other Dynamics products.
+description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, and other Dynamics products.
 author: rschloma
 manager: AnnBe
 ms.date: 12/31/2017
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Resources for responding to a GDPR data request
 
-This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, Enterprise Edition (including Dynamics 365 for Retail), Dynamics 365 for Talent, and Microsoft Dynamics AX 2012. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation (including Dynamics 365 for Retail), Dynamics 365 for Talent, and Microsoft Dynamics AX 2012. 
 
 Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This topic points to content that will help you complete those tasks.
 
@@ -59,15 +61,15 @@ You can try Compliance Manager yourself by visiting [https://aka.ms/compliancema
 There are a number of resources to help you learn more about Compliance Manager and what it can do you help you meet complex compliance obligations:
 
 > [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/en-us/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office blog - Ron 11-16-2017)
-
+> 
 > [Compliance Manager preview is now available](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community blog 11-16-2017)
-
+> 
 > [Get to know the new Service Trust Portal](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet blog 11-22-2017) 
-
+> 
 > [Announcing Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community blog 9-25-2017)
-
+> 
 > [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/en-us/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office blog - Kirk K 9-25-2017)
-
+> 
 > [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Secure blog 9-25-2017)
 
 
