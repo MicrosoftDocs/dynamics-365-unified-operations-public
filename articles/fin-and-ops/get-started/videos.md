@@ -37,10 +37,10 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 
 ## Dynamics 365 YouTube channel
-On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below you can see a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
+On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
 ## Tech talks
-[FastTrack for Dynamics 365 Tech talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Below you can see a list of FastTrack Tech talk recordings that are available to stream or download.
+[FastTrack for Dynamics 365 Tech talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Below is a list of FastTrack Tech talk recordings that are available to stream or download.
 
 - [Performance Testing Approach (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Performance Testing Approach (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
