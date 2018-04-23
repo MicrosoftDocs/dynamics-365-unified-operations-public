@@ -409,7 +409,7 @@
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
 ### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
-
+### [Configuration keys and data entities](data-entities/config-key-entities.md)
 ### [Find information about standard data entities](data-entities/data-entities-report.md)
 
 

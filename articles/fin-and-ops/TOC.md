@@ -187,6 +187,7 @@
 
 #### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json)
 #### [Find information about standard data entities](../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json)
+#### [Configuration keys and data entities](../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json)
 #### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json)
 
 ### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json)
@@ -1906,7 +1907,7 @@
 #### [Warehouse Mobile Devices Portal (WMDP)](../supply-chain/warehousing/warehouse-mobile-devices-portal.md)
 #### [Warehouse mobile device display settings](../supply-chain/warehousing/change-warehouse-mobile-device-displays.md)
 ### Upgrade and migration
-#### [Upgrade Warehouse management processes from AX 2012 to Finance and Operations](../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md)
+#### [Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations](../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md)
 
 ### Warehouse management tasks
 #### [Configure locations in a WMS-enabled warehouse](../supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse.md)
