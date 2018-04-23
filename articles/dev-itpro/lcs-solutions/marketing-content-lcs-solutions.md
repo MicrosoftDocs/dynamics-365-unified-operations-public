@@ -50,7 +50,7 @@ Follow the instructions from the Cloud Partner Portal to create and publish your
 3. Expand **Dynamics 365 for Operations** menu.
 4. Click **How to publish** and follow the steps outlined.
 
-[![How to publish](./media/CPP_HowtoPublish.png.PNG)](./media/CPP_HowtoPublish.png.PNG)
+[![How to publish](./media/CPP_HowtoPublish.png)](./media/CPP_HowtoPublish.png)
 
 See also
 --------
