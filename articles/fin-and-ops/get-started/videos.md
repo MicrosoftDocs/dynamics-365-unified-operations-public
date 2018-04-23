@@ -42,7 +42,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ## Tech talks
 FastTrack for Dynamics 365 Tech talks focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Some of the tech talks are recorded. Here's a list of FastTrack Tech talk recordings that are available to stream or download.
 
-- Performance Testing Approach (DYN449PAL2)
+- [Performance Testing Approach (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - Performance Testing Approach (DYN449PAL) 
 - CDS Data Integrator (DYN451PAL2) 
 - Task Automation Framework for Data Management (DYN447PAL2) 
