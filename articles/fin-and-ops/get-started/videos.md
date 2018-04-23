@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Videos for Dynamics 365 for Finanance and Operations
+title: Videos for Dynamics 365 for Finance and Operations
 description: This page lists the videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and Infopedia.
 author: josaw1
 manager: AnnBe
