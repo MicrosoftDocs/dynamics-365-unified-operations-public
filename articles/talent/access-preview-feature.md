@@ -71,8 +71,8 @@ Job Posting – Ability to post jobs to the career site.
 
 LinkedIn Job Posting – Ability to post jobs to LinkedIn. 
 
-[!Note]
-Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be visible.  Otherwise the job will only show when you explicitly search for it.  Posting to LinkedIn does have a delay and it can take up to a few hours for a job to appear after posting it from Attract. 
+> [!Note]
+> Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be visible.  Otherwise the job will only show when you explicitly search for it.  Posting to LinkedIn does have a delay and it can take up to a few hours for a job to appear after posting it from Attract. 
 
 Candidate apply – Candidates (Internal or External) can now apply directly from the job page of the career site. 
 
@@ -80,5 +80,5 @@ Assessments – As part of the configurable hiring process (on a job or using a 
 
 Coming soon! Offer Management – Offer management provides the ability for users to build templatized offer letters with placeholders.  As a candidate advances to the Offer stage, recruiters and hiring managers can now use Offer to prepare the candidates formal offer via the templates, send for internal approval, and finally send the offer for signature to the candidate. Many new features will come to the Offer tool over time and the preview will be updated with these capabilities as we are ready to release them to preview. 
 
-[!Tip]
-Bookmark this page and check back often to keep up to date on new preview features as we release them. 
+> [!Tip]
+> Bookmark this page and check back often to keep up to date on new preview features as we release them. 
