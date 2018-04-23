@@ -31,7 +31,7 @@
 ## [Call center catalogs](call-center-catalogs.md)
 ## [Create a call center catalog](create-call-center-catalogs.md)
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
-## [Set up order processing options](set-up-order-processing-options.md)
+## [Set up a call center](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
 ## [Order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
@@ -49,6 +49,7 @@
 ## [POS operations, online and offline](pos-operations.md)
 ## [Demo data screen layouts in MPOS/CPOS](demo-data.md)
 ## [Overview of product and customer search in Point of Sale](POS-search-improvements.md)
+## [Inventory lookup in the Point of Sale](product-variants-POS.md)
 ## Hardware peripherals
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,7 +97,7 @@
 ## [Set up RFM analysis](set-up-rfm-analysis.md)
 
 # Discounts and price adjustments
-## [Retil sales price management](price-management.md)
+## [Retail sales price management](price-management.md)
 ## [Price adjustments and discounts](price-adjustments-discounts.md)
 ## [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
 ## [Define channel-specific discounts](define-channel-specific-discounts.md)
@@ -140,12 +141,15 @@
 ## [Setting up the components of a job](../talent/create-job.md)
 
 # Localization and regulatory features
+## France
+### [Cash registers for France](localizations/emea-fra-cash-registers.md)
+### [Deployment guidelines for cash registers in France](localizations/emea-fra-deployment.md)
 ## India
-### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
-### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST integration for cash registers](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers in India](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norway
 ### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Deployment guidelines for cash registers in Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sweden
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 ### [Sample for Retail POS integration with control units](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

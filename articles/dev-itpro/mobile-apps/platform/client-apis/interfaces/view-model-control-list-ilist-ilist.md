@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # List Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 List control type.
 A list is a control that contains any numbers of rows.
@@ -117,7 +117,7 @@ container: boolean
 True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
-
+> 
 > Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
 
 

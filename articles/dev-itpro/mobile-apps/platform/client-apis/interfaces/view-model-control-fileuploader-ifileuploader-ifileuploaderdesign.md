@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # FileUploaderDesign Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 File uploader design object type.
 

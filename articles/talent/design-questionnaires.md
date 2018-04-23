@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Design a questionnaire
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
@@ -234,7 +234,7 @@ A legal entity offers both items and services to its customers. As typically oc
 
 Alternatively, you set up a questionnaire so that if a respondent selects answer A for question 1, question 2 is next in the question sequence. However, if the respondent selects answer B for question 1, question 5 is next.
 
-See also
+Additional resources
 --------
 
 [Using questionnaires](questionnaires.md)

@@ -5,7 +5,6 @@
         "files": [
           "**/*.md",
           "**/**.yml"
-
         ],
         "exclude": [
           "**/obj/**",
@@ -16,22 +15,19 @@
           "ThirdPartyNotices",
           "PULL_REQUEST_TEMPLATE.md",
           "ISSUE_TEMPLATE.md",
-          "**/_themes/**", 
+          "**/_themes/**",
           "**/_themes.pdf/**"
-
         ]
       }
     ],
     "resource": [
       {
-        "files": 
-        [
+        "files": [
           "**/**.png",
           "**/**.jpg",
           "**/**.jpeg",
           "**/**.gif",
           "**/**.svg"
-
         ],
         "exclude": [
           "**/obj/**",
@@ -41,16 +37,20 @@
     ],
     "overwrite": [],
     "externalReference": [],
-
     "globalMetadata": {
-      "contributors_to_exclude": ["OpenLocalizationService"], 
+      "contributors_to_exclude": [
+        "OpenLocalizationService"
+      ],
       "layout": "Conceptual",
-      "searchScope": ["Dynamics 365", "Unified Operations"],
+      "searchScope": [
+        "Dynamics 365",
+        "Unified Operations"
+      ],
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
-      "titleSuffix": "Finance & Operations | Dynamics 365 | #MSDyn365FO", 
+      "titleSuffix": "Finance & Operations | Dynamics 365 | #MSDyn365FO",
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
@@ -78,9 +78,9 @@
         }
       }
     },
-    "fileMetadata": {},  
+    "fileMetadata": {},
     "template": [],
-    "dest": "d365F-O"
+    "dest": "d365F-O",
+    "markdownEngineName": "markdig"
   }
 }
-

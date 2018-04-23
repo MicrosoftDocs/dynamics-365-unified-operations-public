@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Delivery alternatives
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 
@@ -66,7 +65,7 @@ The delivery date control method determines how the system establishes delivery 
 <tr class="even">
 <td><strong>None</strong></td>
 <td><ul>
-<li>Delivery alternatives for sales lines aren't supported. This option turns off delivery data control.</li>
+<li>Delivery alternatives for sales lines aren&#39;t supported. This option turns off delivery data control.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -150,7 +149,7 @@ Information on this tab is related to the delivery alternative line that is sele
 
 This tab highlights the impact of the selected delivery alternative. If you click **OK**, the sales line is updated with the highlighted values in the SELECTED columns. Note that, if the quantity on the selected delivery alternative is less than quantity on the sales line, a delivery schedule is created, and the order line is split into two lines: one line for the selected quantity and one line for the remaining quantity. You can also update the commercial line so that it matches the schedule lines and affects the pricing.
 
-See also
+Additional resources
 --------
 
 [Order promising](delivery-dates-available-promise-calculations.md)

@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/7/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Mobile platform
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to Finance and Operations. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Formula designer in Electronic reporting
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).
 
@@ -293,12 +293,12 @@ The following tables describe the data manipulation functions that you can use t
 </tr>
 <tr>
 <td>FIRST (list)</td>
-<td>Return the first record of the specified list, if that record isn't empty. Otherwise, throw an exception.</td>
+<td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, throw an exception.</td>
 <td></td>
 </tr>
 <tr>
 <td>FIRSTORNULL (list)</td>
-<td>Return the first record of the specified list, if that record isn't empty. Otherwise, return a <strong>null</strong> record.</td>
+<td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, return a <strong>null</strong> record.</td>
 <td></td>
 </tr>
 <tr>
@@ -327,12 +327,12 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>ORDERBY (list [, expression 1, expression 2, …])</td>
 <td>Return the specified list after it has been sorted according to the specified arguments. These arguments can be defined as expressions.</td>
-<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returns a list of vendors that is sorted by name in ascending order.</td>
+<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> returns a list of vendors that is sorted by name in ascending order.</td>
 </tr>
 <tr>
 <td>REVERSE (list)</td>
 <td>Return the specified list in reversed sort order.</td>
-<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returns a list of vendors that is sorted by name in descending order.</td>
+<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> returns a list of vendors that is sorted by name in descending order.</td>
 </tr>
 <tr>
 <td>WHERE (list, condition)</td>
@@ -357,7 +357,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </tr>
 <tr>
 <td>COUNT (list)</td>
-<td>Return the number of records in the specified list, if the list isn't empty. Otherwise, return <strong>0</strong> (zero).</td>
+<td>Return the number of records in the specified list, if the list isn&#39;t empty. Otherwise, return <strong>0</strong> (zero).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returns <strong>2</strong>, because the <strong>SPLIT</strong> function creates a list that consists of two records.</td>
 </tr>
 <tr>
@@ -553,7 +553,7 @@ In this case, you can use the following expression to get the label of the enume
 </tr>
 <tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
-<td>Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
+<td>Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn&#39;t provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
 <td>In the following illustration, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:</p>
@@ -566,7 +566,7 @@ In this case, you can use the following expression to get the label of the enume
 <li>Finance and Operations label SYS18389, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>For the DE language:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Here is the formula that can be designed:</p>
@@ -676,7 +676,7 @@ When these data sources are defined, you can use an expression such as <strong>F
 
 ER lets you extend the list of functions that are used in ER expressions. Some engineering effort is required. For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).
 
-## See also
+## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
 

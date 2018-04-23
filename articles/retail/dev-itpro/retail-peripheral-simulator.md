@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Peripheral simulator for Retail
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
@@ -95,26 +95,26 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 3. Enter values in the **Profile number** and **Description** fields.
 4. Use the following table to set up the virtual devices that must be tested. Here is an explanation of the columns in the table:
 
-    - **Device** – This column gives the name of the FastTab where you set up the device.
-    - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
-    - **Device name** – This column gives the exact value that you enter for the device name.
+   - **Device** – This column gives the name of the FastTab where you set up the device.
+   - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
+   - **Device name** – This column gives the exact value that you enter for the device name.
 
-    > [!IMPORTANT]
-    > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
+     > [!IMPORTANT]
+     > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
 
-    No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
+     No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
 
-    | Device            | Device type | Device name              |
-    |-------------------|-------------|--------------------------|
-    | Printer           | OPOS        | MockOPOSPrinter          |
-    | Line display      | OPOS        | MockOPOSLineDisplay      |
-    | MSR               | OPOS        | MockOPOSMSR              |
-    | Drawer            | OPOS        | MockOPOSDrawer1          |
-    | Drawer2           | OPOS        | MockOPOSDrawers          |
-    | Scanner           | OPOS        | MockOPOSScanner          |
-    | Scale             | OPOS        | MockOPOSScale            |
-    | PIN Pad           | OPOS        | MockOPOSPinPad           |
-    | Signature capture | OPOS        | MockOPOSSignatureCapture |
+     | Device            | Device type | Device name              |
+     |-------------------|-------------|--------------------------|
+     | Printer           | OPOS        | MockOPOSPrinter          |
+     | Line display      | OPOS        | MockOPOSLineDisplay      |
+     | MSR               | OPOS        | MockOPOSMSR              |
+     | Drawer            | OPOS        | MockOPOSDrawer1          |
+     | Drawer2           | OPOS        | MockOPOSDrawers          |
+     | Scanner           | OPOS        | MockOPOSScanner          |
+     | Scale             | OPOS        | MockOPOSScale            |
+     | PIN Pad           | OPOS        | MockOPOSPinPad           |
+     | Signature capture | OPOS        | MockOPOSSignatureCapture |
 
 #### Assign the hardware profile to a register
 
@@ -535,6 +535,6 @@ Successful logs should be sent to drpc@microsoft.com. Include the manufacturer�
 
 For support if you're performing compatibility tests, and for other inquiries, send an email to drpc@microsoft.com.
 
-## See also
+## Additional resources
 
 [Retail peripherals overview](../retail-peripherals-overview.md)

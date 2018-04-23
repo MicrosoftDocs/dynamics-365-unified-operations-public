@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms
+
 | Term | Description |
 |---|---|
 | Payment connector | An extension library that is written to integrate the POS with a payment terminal. |
@@ -193,6 +194,7 @@ public OpenPaymentTerminalDeviceRequest(string token, string deviceName, Setting
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -208,6 +210,7 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -224,6 +227,7 @@ public UpdateLineItemsPaymentTerminalDeviceRequest(string token, string totalAmo
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -241,6 +245,7 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -328,6 +333,7 @@ public CancelOperationPaymentTerminalDeviceRequest(string token)
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -339,6 +345,7 @@ public CapturePaymentTerminalDeviceRequest(string token, decimal amount, string 
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -359,6 +366,7 @@ public VoidPaymentTerminalDeviceRequest(string token, string paymentConnectorNam
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -376,6 +384,7 @@ public RefundPaymentTerminalDeviceRequest(string token, string paymentConnectorN
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -393,6 +402,7 @@ public FetchTokenPaymentTerminalDeviceRequest(string token, bool isManualEntry, 
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -406,6 +416,7 @@ public EndTransactionPaymentTerminalDeviceRequest(string token, ExtensionTransac
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -418,6 +429,7 @@ public ClosePaymentTerminalDeviceRequest(string token, ExtensionTransaction exte
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -430,6 +442,7 @@ public ActivateGiftCardPaymentTerminalRequest(string token, string paymentConnec
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -446,6 +459,7 @@ public AddBalanceToGiftCardPaymentTerminalRequest(string token, string paymentCo
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -462,6 +476,7 @@ public GetGiftCardBalancePaymentTerminalRequest(string token, string paymentConn
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -477,6 +492,7 @@ public GetPrivateTenderPaymentTerminalDeviceRequest(string token, decimal amount
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -492,6 +508,7 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 ```
 
 ###### Variables
+
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
@@ -583,7 +600,7 @@ public class SampleConnector : IPaymentProcessor
             this.GetAssemblyName());
         property.SetMetadata("Assembly Name:", "The assembly name of the test provider", false, true, 0);
         properties.Add(property);
-		 
+
         Response response = new Response();
         response.Locale = request.Locale;
         response.Properties = properties.ToArray();

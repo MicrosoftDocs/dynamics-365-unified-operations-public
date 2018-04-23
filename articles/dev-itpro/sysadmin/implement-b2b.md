@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 # Export B2B users to Azure AD
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can automatically export business-to-business (B2B) users to Azure Active Directory (Azure AD). 
 

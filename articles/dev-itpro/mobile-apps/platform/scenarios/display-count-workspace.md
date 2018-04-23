@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Display a count in a field
 
-[!include[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 Although a **pageLink** control can be used to show counts (totals), it can be slow, because it must load the target page before it counts the number of rows. Additionally, the count that is calculated can be incorrect, because there is a limit on the number of rows that are retrieved.
 

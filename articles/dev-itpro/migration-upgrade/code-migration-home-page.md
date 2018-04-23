@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code migration and upgrade home page
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Migrate your code
 

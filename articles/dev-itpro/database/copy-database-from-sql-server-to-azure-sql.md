@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft SQL Server (a development, build or demo environment, which is also known as a Tier 1 or one-box environment) to an environment that is based on a Microsoft Azure SQL database (a sandbox user acceptance testing \[UAT\] environment, Tier 2 or higher).
 
@@ -235,10 +235,10 @@ EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
 ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
 ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
 
@@ -257,28 +257,27 @@ DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
 DECLARE retail_ftx CURSOR FOR
 SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
-	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+    WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
 OPEN retail_ftx;
 FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
 
 BEGIN TRY
-	WHILE @@FETCH_STATUS = 0  
-	BEGIN  
-		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
-		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
-		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
-		EXEC SP_EXECUTESQL @RFTXSQL;
-		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-	END
+    WHILE @@FETCH_STATUS = 0  
+    BEGIN  
+        PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+        EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+        SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+        EXEC SP_EXECUTESQL @RFTXSQL;
+        FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+    END
 END TRY
 BEGIN CATCH
-	PRINT error_message()
+    PRINT error_message()
 END CATCH
 
 CLOSE retail_ftx;  
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
-
 ```
 
 ## Synchronize the database
@@ -321,7 +320,7 @@ DEALLOCATE retail_ftx;
 
 ### Re-provision the target environment
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 

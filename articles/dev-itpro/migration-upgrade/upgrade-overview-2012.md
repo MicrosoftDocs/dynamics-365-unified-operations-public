@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 8
 
 # Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations running Platform update 8 and the July 2017 Application release, and later provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
