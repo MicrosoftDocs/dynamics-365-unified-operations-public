@@ -187,6 +187,7 @@
 
 #### [Track changes to an entity](../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json)
 #### [Find information about standard data entities](../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json)
+#### [Configuration keys and data entities](../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json)
 #### [Configuration data packages](../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json)
 
 ### [Data import and export jobs](../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json)
