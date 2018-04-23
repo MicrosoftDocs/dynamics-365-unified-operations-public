@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 ---
 
-# Videos for Dynamics 365 for Finanance and Operations
+# Videos for Dynamics 365 for Finance and Operations
 
 [!INCLUDE [banner](../includes/banner.md)]
 
