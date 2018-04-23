@@ -210,6 +210,8 @@
 
 ### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
 
+### [Data validation workspace](user-interface/data-validation-workspace.md)
+
 ## [Financial management](../financials/index.md)
 
 ### [General ledger](../financials/general-ledger/general-ledger.md)
