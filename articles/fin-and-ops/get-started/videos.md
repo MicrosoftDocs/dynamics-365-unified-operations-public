@@ -37,10 +37,8 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 
 ## Dynamics 365 YouTube channel
-On the Microsoft Dynamics 365 YouTube channel, you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Here is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
+On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Here is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
 ## Tech talks
-FastTrack for Dynamics 365 Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
-
-Some of the tech talks are recorded, and the recordings are available on Infopedia. Here is a list of FastTrack Tech talk recordings that are available to stream or download.
+FastTrack for Dynamics 365 Tech talks focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Some of the tech talks are recorded, and the recordings are available on Infopedia. Here is a list of FastTrack Tech talk recordings that are available to stream or download.
 
