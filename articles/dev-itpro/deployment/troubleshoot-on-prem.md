@@ -48,7 +48,7 @@ You can access the site only if the client certificate is in cert:\\CurrentUser\
 ## Monitor the deployment
 
 ### Identify the primary orchestrator
-To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **\[*intended application example*\] LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(guid)**.
+To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **\[*intended application example*\] LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
 
 The primary node is shown. For stateless services or the remaining applications, you must check all the nodes.
 
@@ -87,7 +87,7 @@ Note the state of the cluster, application, and nodes. For information about how
 #### Error: "Partition is below target replica or instance count"
 This error isn't a root error. It indicates that the status of each node isn't ready. For AXSFType (AOS), the status might still be **InBuild**.
 
-Use Event Viewer on those machines to view the latest activity.
+Use Event Viewer on the machines related to the error message to view the latest activity.
 
 #### AXSFType 
 For AXSFType (AOS), if a status of **InBuild** is shown for a period, review the DB Sync status and other events from Application Object Server (AOS) machines.
@@ -112,7 +112,7 @@ Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fa
 Be sure to complete these steps:
 
 - Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all Service Fabric nodes.
-- Verify that the Service Fabric Server certificate has the ACL for Network Service on all Service Fabric nodes.
+- Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.
 - Review the antivirus exclusions that are noted in [Environment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## A time-out occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
@@ -123,7 +123,7 @@ We recommend that you use LCS to remove or clean up deployments. However, you ca
 
 In Service Fabric Explorer, go to **Application node** \> **Applications** \> **MonitoringAgentAppType-Agent**. Select the ellipsis [**...**] next to **fabric:/Agent-Monitoring**, and delete the application. Enter the full name of the application to confirm.
 
-You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis and then selecting **Unprovision Type**. Enter the full name to confirm.
+You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis and then selecting **Unprovision Type**. Enter the full name to confirm the removal of the application.
 
 ## Remove all applications from Service Fabric
 The following script removes and unprovisions all Service Fabric applications except the LocalAgent and Monitoring agent for the LocalAgent. You must run this script on an orchestrator virtual machine (VM).
@@ -155,9 +155,9 @@ To completely remove the Service Fabric cluster, follow these steps.
 
     If you receive an "access denied" error, restart Microsoft Windows PowerShell or the machine.
 
-## Clean up an existing environment and start over
+## Clean up an existing environment and redeploy
 
-Follow these steps to start over.
+Follow these steps:
 
 1. In LCS, open the project, and then, in the **Environments** section, delete the deployment.
     
@@ -211,7 +211,7 @@ Follow these steps to start over.
 Deploy again by following the deployment documentation for [Platform update 12](setup-deploy-on-premises-pu12.md) or for [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md).
 
 ## Find the local agent values that are used
-You can find local agent values in Service Fabric Explorer, under **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent, Details**.
+You can find local agent values in Service Fabric Explorer, under **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent** > and then select **Details**.
 
 Alternatively, run the following Windows PowerShell command.
 
@@ -372,7 +372,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 **Steps:** Follow these steps to resolve the error.
 
 1. Run **psping lcsapi.lcs.dynamics.com:80**.
-2. If you don't receive a reply, contact the IT department at your organization. The firewall is blocking access to lcsapi, or proxy issues are occurring.
+2. If you don't receive a response from the above command, contact the IT department at your organization. The firewall is blocking access to lcsapi, or proxy issues are occurring.
 
     ```
     lcsapi.lcs.dynamics.com:443
@@ -454,7 +454,7 @@ Some encryption error examples include AXBootstrapperAppType, Bootstrapper, AXDi
 
 You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS AccountPassword wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
-To resolve the error, validate the credentials.json file. Verify that the text is decrypted correctly by entering the following message (on AOS1).
+To resolve the error, validate the credentials.json file. Verify that the text is decrypted correctly by entering the following command (on AOS1).
 
 ```powershell
 Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
@@ -468,7 +468,7 @@ This error can also occur if the **''** parameter isn't defined in the Applicati
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
 
 - A closing quotation mark appears at the end of the line or on the next line.
-- An error occurs on Microsoft-Service Fabric source.
+- In Event Viewer, under **Custom Views** > **Administative Events**, note any errors in the **Microsoft-Service Fabric** source category.
 
 ## Properties to create a DataEncryption certificate
 Use the following properties to create the DataEncryption certificate:
@@ -487,7 +487,7 @@ Use the following properties to create the DataEncryption certificate:
 ## The certificate and private key to use for decryption can't be found (0x8009200C)
 If you're missing a certificate and ACL, or if you have the wrong thumbprint entry, check for special characters, and look for thumbprints in C:\\ProgramData\\SF\\\<AOSMachineName\>\\Fabric\\work\\Applications\\AXBootstrapperAppType\_App\<N\>\\log\\ConfigureCertificates-\<timestamp\>.txt.
 
-You can also test by using the following command.
+You can also validate the encrypted text by using the following command.
 
 ```
 Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
@@ -495,7 +495,7 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If the credentials.json file has changed, delete and redeploy from LCS.
+If the credentials.json file has changed, delete and redeploy the environment from LCS.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -521,7 +521,7 @@ If none of the preceding solutions work, follow these steps.
     1. Edit the **ConfigTemplate.xml** file so that it has the correct values.
     2. Run all the setup scripts and the **Test-D365FOConfiguration** script.
 
-    Go back to LCS, and reconfigure the environment.
+8. Go back to LCS, and reconfigure the environment.
 
 ## MR
 Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(guid)**.
@@ -544,7 +544,7 @@ If you must unregister providers, use the following command.
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister
 ```
 
-After providers are registered, additional details about the new deployment are logged in Event Viewer, at **Applications and Services Logs** \> **Microsoft** \> **Dynamics**.
+After providers are registered, additional details about the new deployment are logged in Event Viewer, at **Applications and Services Logs** \> **Microsoft** \> **Dynamics**. The following folders will be displayed:
 
 - MR-Logger
 - MR-Sql
