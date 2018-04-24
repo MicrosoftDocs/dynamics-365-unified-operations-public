@@ -64,25 +64,11 @@ The **Preview Features** setting in the Microsoft Dynamics 365 for Talent admin 
  
  3. On the **System Parameters page**, choose the **Preview features** tab. 
  
-
-## Managing Preview Features 
-
-The enabling of preview features is environment specific. To enable the features an administrator of Attract will need to perform the following steps: 
-
-1. Log in to Attract. 
-
-2. Select the ‘gear’ menu in the upper right-hand corner, and select **Admin settings**. 
-
-3. Select the **Feature management** tab on the left. 
-
-4. Click the switch next to **Preview features** so that it turns blue. 
-
-5. Refresh your browser to begin seeing the new features. (Any user who is logged in will see them the next time they login, or they can see them immediately by refreshing their browser.) 
-
-> [!NOTE] 
-> Follow same steps to disable the preview capabilities. When disabling them, note that existing processes could have potential issues. In most cases existing processes will continue to use the preview features. New processes created after disabling the preview features will not use any of the preview features. 
+ 4. Set the **Enable preview mode for all users** to **Yes** to make preview features available.  
  
-
+> [!NOTE] 
+> The same steps can be followed for disabling the preview capabilities. Turning off this setting disables previews making them inaccessible to your users and may cause errors in the processes associated with the previews. 
+ 
 
 ## Current Features in Preview 
 
