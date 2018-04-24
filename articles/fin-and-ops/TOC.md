@@ -210,7 +210,7 @@
 
 ### [Data task automation](../dev-itpro/data-entities/data-task-automation.md)
 
-### [Data validation workspace](user-interface/data-validation-workspace.md)
+### [Data validation workspace](../dev-itpro/user-interface/data-validation-workspace.md)
 
 ## [Financial management](../financials/index.md)
 
