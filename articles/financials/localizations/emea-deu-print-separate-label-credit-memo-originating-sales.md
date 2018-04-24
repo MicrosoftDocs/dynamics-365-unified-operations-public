@@ -42,4 +42,3 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 
 
-
