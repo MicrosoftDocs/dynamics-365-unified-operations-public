@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Access preview features in Dynamics 365 for Talent: Attract description: This topic describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. 
+title: Access preview features in Dynamics 365 for Talent
+description: This topic describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. 
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
