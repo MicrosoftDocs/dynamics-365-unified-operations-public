@@ -578,7 +578,7 @@ If the thumbprints don't meet both these requirements, you must redeploy from LC
 
 **Reason:** This issue is often caused by an incorrect address or SOAP action.
 
-**Steps:** Verify that the address can be reached by manually opening the URL. For more details, see InnerException, if it's present.
+**Steps:** Verify that the address can be reached by manually opening the URL. For more details, see InnerException text in the Event Viewer, if it's present.
 
 ### Error on ImportDefaultReports 
 If MR reports are checked out during deployment, the deployment will fail. To see whether reports are checked out, run the following **select** statements on the FinancialReporting database.
@@ -595,7 +595,7 @@ To learn which user has objects checked out, you can run the following **select*
 select * from Reporting.SecurityUser where UserID = ''
 ```
 
-To resolve via SQL, update the preceding tables, and set **checkedoutto** to **null** by using the following commands.
+To resolve this issue manually, update the following tables and set **checkedoutto** to **null** by using the following commands.
 
 ```
 update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null
@@ -646,13 +646,13 @@ Note the **Redirect URI** value. It should match the DNS forward lookup zone for
 ### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
 If you receive this error, follow these steps.
 
-1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, go to Aad\_AADMetadataLocationFormat / - Aad\_FederationMetadataLocation. Next, browse to that URL from AOS.
+1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_AADMetadataLocationFormat** and **Aad\_FederationMetadataLocation**. Next, browse to those URLs from AOS.
 2. On the AOS machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
 3. Verify that the AD FS certificate is trusted:
 
     1. Verify the AD FS certificate. On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management**.
-    2. Expand **AD FS** \> **Service** \> **Certificates**, and make a note of the certificates. For example, one certificate might be ex. dc1.contoso.com.
-    3. On the AOS machine, in the Cert manager, go to **Certificates (Local Computer)** \> **Trusted Root Certification Authorities** \> **Certificates**, and verify that the AD FS certificate is listed.
+    2. Expand **AD FS** \> **Service** \> **Certificates**, and make a note of the certificates. For example, one certificate might be dc1.contoso.com.
+    3. On the AOS machine, in the Microsoft Management Console Certificates snap-in, go to **Certificates (Local Computer)** \> **Trusted Root Certification Authorities** \> **Certificates**, and verify that the AD FS certificate is listed.
 
 If you receive a message that states that the site isn't secure, you haven't added your Secure Sockets Layer (SSL) certificate for AD FS to the Trusted Root Certification Authorities store.
 
@@ -684,7 +684,7 @@ If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service befor
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
 
-On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The Federation Service identifier should match the **USERINFO.NETWORKDOMAIN** value (for example, `https://DC1.contoso.com/adfs`). Verify that both are HTTPS in USERINFO.
+On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The **Federation Service identifier** should match the **USERINFO.NETWORKDOMAIN** value and has HTTPS. (For example: `https://DC1.contoso.com/adfs`). 
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
 
@@ -850,7 +850,7 @@ To confirm the issue and find the missing dependencies, in Event Viewer, open **
 To fix this issue and successfully apply the package, either add dependent modules, or remove modules that require dependent modules. To add dependent modules, you must include the dependencies when you build the package. To remove modules, you can use ModelUtil.exe to delete a module. For more information, see [Export and import a model](../dev-tools/models-export-import.md).
 
 ### Package deployment works in a one-box environment but not in the sandbox environment
-A one-box environment might have all the modules installed, whereas the sandbox environment might have only the modules that are required in order to run your production environment. If the package that was built in the dev environment takes a dependency on the modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment.
+A one-box environment might have all the modules installed, whereas the sandbox environment might have only the modules that are required in order to run your production environment. If the package that was built in the dev environment has a dependency on the modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment.
 
 To resolve this issue, look at all the modules that you're dependent on, and make sure that you don't pull any farm adapter or any other modules that aren't required in the production environment. The best practice is to take the package from the build box.
 
@@ -869,7 +869,7 @@ You will receive the following error when you deploy an additional environment:
 You can skip or modify the following sections in the deployment instructions.
 
 ### Plan and acquire your certificates (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#plancert) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert))
-- You must use the same On-Premises local agent certificate.
+- You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
@@ -887,8 +887,8 @@ You can skip or modify the following sections in the deployment instructions.
 - The .\\Publish-ADFSApplicationGroup.ps1 script will fail even when the new **hosturl** value is used. Therefore, you must manually complete these steps.
 - In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**. Then follow these steps:
 
-    - Start the native application **Microsoft Dynamics 365 for Operations On-premises - Native application**. Add the redirect URI of the new environment (DNS), select the **Add** button to include, and then select **OK**.
-    - Start the native application **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application**. Add the redirect URI of the new environment (DNS), select the **Add** button to include, and then select **OK**.
+    1. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Native application**. Add the redirect URI of the new environment (DNS).
+    2. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application**. Add the redirect URI of the new environment (DNS).
 
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
