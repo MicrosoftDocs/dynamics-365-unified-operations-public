@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
  
 As part of our continuous rollout of product capabilities we want to let customers experience new features as soon as possible.  Administrators can see and use of preview features in their environment. These features are nearly ready for general availability and have gone through extensive testing. We are just looking for a final round of customer feedback and validation before we generally release them. 
 
-This topic describes how an administrator can enable the preview features, and lists the features that are currently enabled for preview. This list will be maintained as features are released to general availability and when new features are released to preview. No notification is made when new features are delivered to preview; users will simply start seeing the features. 
+This topic describes how an administrator can enable the preview features and lists the features that are currently enabled for preview. This list will be maintained as features are released to general availability and when new features are released to preview. No notification is made when new features are delivered to preview; users will simply start seeing the features. 
 
 ## Enable or disable preview features
 
-The **Preview Features** setting in the Dynamics 365 for Talent admin center lets you enable or disable previews. This setting is disabled by default. Enabling or disabling preview features is environment specific.   
+The **Preview Features** setting in the Microsoft Dynamics 365 for Talent admin center lets you enable or disable previews. This setting is disabled by default. Enabling or disabling preview features is environment specific.   
 
 > [!Important]
 > By selecting the **Preview Features** setting you are enabling previews for all users in your organization in this environment.  Clearing this setting disables previews, making them inaccessible to your users. Preview features have limited support in Dynamics 365 for Talent. They may utilize less privacy and security measures and are not included in the Dynamics 365 for Talent service level agreement. You should not use previews to process personal data (any information that could identify you) or other data that is subject to legal or regulatory compliance requirements. 
@@ -46,7 +46,7 @@ The **Preview Features** setting in the Dynamics 365 for Talent admin center let
 
  **Attract**
  
- 1. Log in to Microsoft Dynamics 365 for Talent: Attract.
+ 1. Log in to Dynamics 365 for Talent: Attract.
  
  2. Open the **Setup** menu, designated by the gear icon, in the upper-right corner, and the select **Admin settings**. 
  
@@ -56,9 +56,9 @@ The **Preview Features** setting in the Dynamics 365 for Talent admin center let
  
  5. Refresh your browser to begin seeing the new features. (Any user who is already logged in will see them the next time they log in, or they can see them immediately by also refreshing their browser.)
  
-**Core HR** 
+**Talent** 
  
- 1. Log into Core HR.
+ 1. Log into Talent.
  
  2. Select **System administration > Links System parameters**.
  
@@ -98,13 +98,13 @@ Job Posting – Ability to post jobs to the career site.
  **LinkedIn job posting** – Ability to post jobs to LinkedIn. 
 
 > [!Note]
-> Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be visible.  Otherwise the job will only show when you explicitly search for it.  Posting to LinkedIn does have a delay and it can take up to a few hours for a job to appear after posting it from Attract. 
+> Customers will need to be subscribers to one or more of LinkedIn’s job listing products for the job to be visible. Otherwise the job will show only when you explicitly search for it. Posting to LinkedIn does have a delay and it can take up to a few hours for a job to appear after posting it from Attract. 
 
- **Candidate apply** – Candidates (Internal or External) can now apply directly from the job page of the career site. 
+ **Candidate apply** – Candidates (internal or external) can now apply directly from the job page of the career site. 
 
- **Assessments** – As part of the configurable hiring process (on a job or using a job template) users now have access to a new **Assessment** activity type.  From here users can use the Project: "Gauge" (part of Dynamics 365 for Talent) to build basic assessments to send to candidates. Project: "Gauge" is also in public preview. Additional providers will be added in the future. 
+ **Assessments** – As part of the configurable hiring process (on a job or using a job template) users now have access to a new **Assessment** activity type.  From here users can use the Project: "Gauge" (a feature of Talent) to build basic assessments to send to candidates. Project: "Gauge" is also in public preview. Additional providers will be added in the future. 
  
- **Project: "Gauge"** - Project: "Gauge" is another app in Dynamics 365 for Talent which allows users to create simple assessments or surveys. 
+ **Project: "Gauge"** - Project: "Gauge" is another app in Talent that allows users to create simple assessments or surveys. 
 
  **Offer management** – Offer management provides the ability for users to build templatized offer letters with placeholders.  As a candidate advances to the Offer stage, recruiters and hiring managers can now use Offer to prepare the candidates formal offer via the templates, send for internal approval, and finally send the offer for signature to the candidate. Many new features will come to the Offer tool over time and the preview will be updated with these capabilities as we are ready to release them to preview. 
  
