@@ -900,7 +900,7 @@
 ###### [Cash registers](../retail/localizations/emea-fra-cash-registers.md)
 ###### [Deployment guidelines for cash registers](../retail/localizations/emea-fra-deployment.md)
 
-#### Germany
+#### [Germany](../financials/localizations/germany.md)
 ##### [Additional acquisition depreciation](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
 ##### [Audit file ](../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
 ###### [Customize audit file configuration](../financials/localizations/tasks/customize-german-audit-file-configuration.md)
@@ -909,7 +909,6 @@
 ##### [Depreciation adjustments for additional acquisitions in the second year](../financials/localizations/tasks/de-00002-depreciation.md)
 ##### [Electronic transmission of VAT declaration (ELSTER)](../financials/localizations/tasks/de-00003-electronic-transmission-elster.md)
 ##### [Journal list report](../financials/localizations/emea-deu-journal-list-report.md)
-##### [Print a separate label for credit memos that originate from sales](../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ##### [Set up electronic tax declaration](../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json)
 
 #### Hungary
