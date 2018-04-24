@@ -39,6 +39,20 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ## Dynamics 365 YouTube channel
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
+
+- [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
+- [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+
+- [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
+- [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
+- [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+- [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
+- [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
+
 ## FastTrack Tech talks
 [FastTrack for Dynamics 365 Tech talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Below is a list of FastTrack Tech talk recordings that are available to stream or download.
 
