@@ -88,7 +88,7 @@ This topic describes the strategy and scope of specific requirements that Micros
 In general, the Microsoft strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Mexico consists of providing localizations for Microsoft Dynamics AX and Finance and Operations that do the following:
 
 - Implement the federal tax requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section later in this topic.
-- Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the business rules that are specified in this topic.
+- Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the information that is specified in this topic.
 - Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics AX or Finance and Operations.
 - Apply National Standards and competitive features in the localization, as Microsoft, at its sole discretion, determines them to be necessary or appropriate, based on business needs in the region.
 - Don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city levels.
