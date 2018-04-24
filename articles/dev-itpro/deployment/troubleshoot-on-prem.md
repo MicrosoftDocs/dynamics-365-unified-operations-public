@@ -554,7 +554,7 @@ To see the new folders, you must close and reopen Event Viewer. To see additiona
 ### An error occurs while AddAXDatabaseChangeTracking is running
 If you encounter an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. An example of a full path is ax.d365ffo.onprem.contoso.com.
 
-The error might also occur because of an issue with the star/* certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
+The error might also occur because of an issue with the star or asterisk (\*) certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
 
 ### Run the initialize database script, and validate that databases have correct users
 If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service of Finance and Operations by going to
