@@ -40,7 +40,7 @@ For more information about the Prospect to cash integration, watch the short You
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
-[Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
+[Prospect to cash integration (YouTube video)](https://youtu.be/AVV9x5x-XCg) 
 
 In the current version, the Prospect to cash solution provides the following types of direct synchronization:
 
