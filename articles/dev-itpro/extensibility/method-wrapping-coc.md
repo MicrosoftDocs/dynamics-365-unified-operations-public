@@ -5,7 +5,7 @@ title: Class extension: Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
 author: robadawy
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
