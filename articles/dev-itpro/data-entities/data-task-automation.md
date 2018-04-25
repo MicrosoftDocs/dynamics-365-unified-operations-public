@@ -83,7 +83,7 @@ The **\<TestManifest\>** element is the root of the manifest. All other elements
 
 | **Element**      | **Element Cardinality** | **Attributes** | **Attribute description**                                 |
 |------------------|-------------------------|----------------|-----------------------------------------------------------|
-| \<TestManifest\> | 1..1                    | name           | The ‘name’ helps to identify the purpose of the manifest. |
+| \<TestManifest\> | 1..1                    | name           | The *name* helps to identify the purpose of the manifest. |
 
 ### Shared setup
 The **Shared setup** section defines general task parameters and behaviors for all tasks in the manifest.
