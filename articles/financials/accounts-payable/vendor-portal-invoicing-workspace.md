@@ -56,16 +56,12 @@ Clicking on a tile will open a filtered view of the **Invoices list** page.
 
 In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists. While in the Draft state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
 
-All vendor invoices list page
------------------------------
+### All vendor invoices list page
 
 You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page. You can use this list page to view the payment status of the invoices. The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.
 Creating a new invoice from a purchase order
---------------------------------------------
 
 You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace. The purchase order number and invoice number must be provided by the vendor. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
-
-
 
 For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 
