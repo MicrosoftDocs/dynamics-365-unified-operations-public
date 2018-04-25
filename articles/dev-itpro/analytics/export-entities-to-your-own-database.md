@@ -5,7 +5,7 @@ title: Bring your own database
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -156,8 +156,8 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic. 
 
->[!Note]
-> Full push deletes all exising records from the entity and then inserts the current set of records from the selected entity.
+>[!NOTE]
+> A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
 
 If you select to do an incremental push, the first push is always going to be a full push. This is because, SQL needs to know which records have been 'tracked' to allow for tracking the delta changes subsequently. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity. 
 
