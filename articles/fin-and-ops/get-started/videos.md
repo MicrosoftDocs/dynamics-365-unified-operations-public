@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -44,6 +45,10 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [Release production icking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
+- [Enhancements to the production order release process](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
+- [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
+- [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
