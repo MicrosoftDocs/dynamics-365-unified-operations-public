@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
@@ -261,6 +261,9 @@ CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
+CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
 EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
 
@@ -304,7 +307,7 @@ DEALLOCATE retail_ftx;
 
 ### Re-provision the target environment
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 

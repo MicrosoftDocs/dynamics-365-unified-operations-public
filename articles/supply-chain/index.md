@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Supply chain management home page
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -55,6 +55,10 @@ Select a feature area to learn more about it.
 - [Warehouse management](warehousing/warehouse-configuration.md)
 
 ## Videos
+
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+
+- [Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 

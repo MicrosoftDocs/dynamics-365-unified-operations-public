@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 8
 ---
 # Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 
@@ -367,6 +367,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 
 > RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---\> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
 
+
 **Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'."
 
 **Steps:** Follow these steps to resolve the error.
@@ -620,7 +621,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 
 3. Run the initialize database script again to add the axdbadmin user.
 
-## The xPath value can't be resolved
+## Unable to resolve the xPath value
 In the expected behavior, the following **xPath** value can't be resolved: 
 
 \[TopologyInstance/CustomizationGroup\[@name='ServiceConfiguration'\]/Group\[@name='AOSServicePrincipalUser'\]/Customizations/Customization\[@fieldName='PrincipalUserAccountPassword'\]/@selectedValue

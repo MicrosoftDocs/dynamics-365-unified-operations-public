@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 # Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
  
@@ -230,13 +230,13 @@ The default values of attributes can be overridden for individual products at th
 5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 6. On the following FastTabs, update the values of the required attributes:
 
-    - Shared product media
-    - Shared product attributes
-    - Channel media
-    - Channel product attributes
+   - Shared product media
+   - Shared product attributes
+   - Channel media
+   - Channel product attributes
 
-    > [!NOTE]
-    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+     > [!NOTE]
+     > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
 
 ![Catalog product attribute groups](media/CatalogProdAttrValues.png)
 
@@ -252,10 +252,10 @@ The default values of attributes can be overridden for individual products at th
 
 5. On the following FastTabs, update the values of the required attributes:
 
-    - Shared product media
-    - Shared product attributes
-    - Channel media
-    - Channel product attributes
+   - Shared product media
+   - Shared product attributes
+   - Channel media
+   - Channel product attributes
 
-    > [!NOTE]
-    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+     > [!NOTE]
+     > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # View and evaluate the results of a questionnaire
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
@@ -77,7 +77,7 @@ You can use questionnaire statistics to analyze the results of a completed quest
 
 The settings that you define are saved and can be used to periodically recalculate results.
 
-See also
+Additional resources
 --------
 
 [Designing questionnaires](design-questionnaires.md)

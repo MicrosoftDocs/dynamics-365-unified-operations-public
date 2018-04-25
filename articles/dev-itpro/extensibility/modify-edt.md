@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Modify an extended data type
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 There are several properties that can be customized on existing extended data types (EDTs) through extension:
 - Label

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,20 +32,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project management and accounting
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
 
-A project is a group of activities that is designed to provide a service, produce a product, or achieve a result. Projects consume resources and generate financial results in the form of revenues or assets.
+A project is a group of activities that is designed to provide a service, produce a product, or achieve a result. Projects consume resources and generate financial results in the form of revenues or assets.
 
 ## Projects across industries
 The project management and accounting functionality can be used in multiple industries, as shown in the following illustration. [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.
+In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.
 
 ## Project phases
-Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. 
+Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. 
 
 ![3 stages of a project](./media/3-stages-of-a-project.png) 
 
@@ -55,12 +54,12 @@ As shown in the preceding illustration, project management and accounting can be
 2.  Execute
 3.  Analyze
 
-## Initiate the project
-During project initiation, several key processes occur. You can use a project quotation to communicate  the estimated labor, expenses, and materials to the customer. You can record the billing terms, limits, and agreements in a project contract. You can use a work breakdown structure (WBS) to plan and estimate the work. You can set up forecasts and budgets to guide the project execution. The following illustration shows the structure of a project.[![project structure](./media/project-structure1.jpg)](./media/project-structure1.jpg)  
+## Initiate the project
+During project initiation, several key processes occur. You can use a project quotation to communicate  the estimated labor, expenses, and materials to the customer. You can record the billing terms, limits, and agreements in a project contract. You can use a work breakdown structure (WBS) to plan and estimate the work. You can set up forecasts and budgets to guide the project execution. The following illustration shows the structure of a project.[![project structure](./media/project-structure1.jpg)](./media/project-structure1.jpg)  
 
 ### Create project quotations
 
-In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges.
+In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges.
 
 You can also issue a letter of guarantee for a project quotation transaction between your organization and the customer. After the project quotation is created, you can create the letter of guarantees request for the customer and submit it to the bank. After the bank has approved the request, the letter of guarantee is issued to the customer. 
 
@@ -80,13 +79,14 @@ For more information, see [Work breakdown structures](work-breakdown-structures.
 
 ### Create project forecasts and budgets
 
-You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. Each method has its advantages. For more information, see [Project forecasts and budgets](project-forecasts-budgets.md).
+You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. Each method has its advantages. For more information, see [Project forecasts and budgets](project-forecasts-budgets.md).
 
 ### Create projects
 
-You can create six types of projects in Microsoft Finance and Operations. Each project type is set up differently for costs and revenue recognition. The project type that you choose depends on the purpose of the project. The following table describes the typical use of each project type.
+You can create six types of projects in Microsoft Finance and Operations. Each project type is set up differently for costs and revenue recognition. The project type that you choose depends on the purpose of the project. The following table describes the typical use of each project type.
 
                                                                                                                                                                          |
+
 | Project type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Time and material | In Time and material projects, the customer is billed for all costs that are incurred on a project. These costs include costs for hours, expenses, items, and fees.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -131,10 +131,10 @@ A project-related production order can be linked to a sales order or an item req
 
 Based on the combinations of these factors, use one of the following methods:
 
--   **Finished item/link to order** – Link the project to a sales order or an item requirement. When you use this method, actual project costs are posted when the sales order is invoiced or when the packing slip is updated for the item requirement. The cost is posted as a finished item.
--   **Finished item/no link to order** – Actual costs can’t be posted until the production cycle for an item has a status of **Ended**. The cost for the finished item is posted as a single transaction.
--   **Consumed item/link to order** – Link the project to an item requirement. By using this method, you can view actual project costs when the production has a status of **Started** or is reported as finished. The costs are posted as multiple project item transactions for raw materials and hours consumed for production. When the packing slip is updated for the item requirement, no project costs are posted. You can also define the level in the bill of materials (BOM) hierarchy at which the projects in the production are tracked.
--   ****Consumed item/no link to order**** – Link the project to an item requirement. By using this method, you can view actual project costs when the production has a status of **Started** or is reported as finished. The costs are posted as multiple project item transactions for raw materials and hours consumed for the production. You can also define the level in the BOM hierarchy at which the projects in the production are tracked.
+- **Finished item/link to order** – Link the project to a sales order or an item requirement. When you use this method, actual project costs are posted when the sales order is invoiced or when the packing slip is updated for the item requirement. The cost is posted as a finished item.
+- **Finished item/no link to order** – Actual costs can’t be posted until the production cycle for an item has a status of **Ended**. The cost for the finished item is posted as a single transaction.
+- **Consumed item/link to order** – Link the project to an item requirement. By using this method, you can view actual project costs when the production has a status of **Started** or is reported as finished. The costs are posted as multiple project item transactions for raw materials and hours consumed for production. When the packing slip is updated for the item requirement, no project costs are posted. You can also define the level in the bill of materials (BOM) hierarchy at which the projects in the production are tracked.
+- *<strong><em>Consumed item/no link to order</em></strong>* – Link the project to an item requirement. By using this method, you can view actual project costs when the production has a status of <strong>Started</strong> or is reported as finished. The costs are posted as multiple project item transactions for raw materials and hours consumed for the production. You can also define the level in the BOM hierarchy at which the projects in the production are tracked.
 
 ### Procure products and services
 
@@ -233,7 +233,7 @@ The following table describes the methods for calculating the cost to complete a
 <tbody>
 <tr class="odd">
 <td>Total cost – actual</td>
-<td>Estimated costs must be entered manually. After the <strong>Total cost</strong> or <strong>Total quantity</strong> column on the <strong>Cost estimate</strong> page is completed, the actual costs are subtracted from the user-entered totals. The result is the cost to complete the project. Typically, the progress of costs isn't tracked based on, for example, the number of hotel stays and meals that are recorded in each period. Instead. Tracking is usually based on a comparison against the total amount of estimated hours. This approach doesn't require a forecast model, and the total cost or total quantity can be changed manually. When a value is entered in the <strong>Total cost</strong> or <strong>Total quantity</strong> column, Finance and Operations compares this value against the actual transactions that are posted in the period, and then decreases the value in the <strong>Quantity to complete</strong> or <strong>Cost to complete</strong> column.</td>
+<td>Estimated costs must be entered manually. After the <strong>Total cost</strong> or <strong>Total quantity</strong> column on the <strong>Cost estimate</strong> page is completed, the actual costs are subtracted from the user-entered totals. The result is the cost to complete the project. Typically, the progress of costs isn&#39;t tracked based on, for example, the number of hotel stays and meals that are recorded in each period. Instead. Tracking is usually based on a comparison against the total amount of estimated hours. This approach doesn&#39;t require a forecast model, and the total cost or total quantity can be changed manually. When a value is entered in the <strong>Total cost</strong> or <strong>Total quantity</strong> column, Finance and Operations compares this value against the actual transactions that are posted in the period, and then decreases the value in the <strong>Quantity to complete</strong> or <strong>Cost to complete</strong> column.</td>
 </tr>
 <tr class="even">
 <td>Total budget – actual</td>
@@ -243,9 +243,9 @@ The following table describes the methods for calculating the cost to complete a
 <li>Compare forecast transactions with actual transactions.</li>
 <li>Maintain, decrease, or increase the estimates for the next period.</li>
 </ol>
-Finance and Operations doesn't automatically decrease the forecasted estimates. Therefore, it's a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. 
-> [!NOTE] 
-> When you select this method, use at least two forecast models. One model should contain the original forecast. For the other model, you should copy forecast transactions from another model. This method is valid only for Fixed-prices and Investment projects.</td>
+Finance and Operations doesn&#39;t automatically decrease the forecasted estimates. Therefore, it&#39;s a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. 
+&gt; [!NOTE] 
+&gt; When you select this method, use at least two forecast models. One model should contain the original forecast. For the other model, you should copy forecast transactions from another model. This method is valid only for Fixed-prices and Investment projects.</td>
 </tr>
 <tr class="odd">
 <td>Remaining budget</td>
@@ -257,7 +257,7 @@ Finance and Operations doesn't automatically decrease the forecasted estimates.
 </tr>
 <tr class="odd">
 <td>Set cost to complete to zero</td>
-<td>Typically, this method is used before the estimate project is eliminated. This method matches the total estimates with the actual transactions that were posted and clears the <strong>Cost to complete</strong> column. The resulting percentage of completion is always 100 percent. The <strong>Forecasting</strong> field is not selected for each cost line that you create, and the total estimate is copied from the previous cost estimate. The actual consumption for the estimate period is deducted from the cost to complete the project. This method doesn't require a forecast model.</td>
+<td>Typically, this method is used before the estimate project is eliminated. This method matches the total estimates with the actual transactions that were posted and clears the <strong>Cost to complete</strong> column. The resulting percentage of completion is always 100 percent. The <strong>Forecasting</strong> field is not selected for each cost line that you create, and the total estimate is copied from the previous cost estimate. The actual consumption for the estimate period is deducted from the cost to complete the project. This method doesn&#39;t require a forecast model.</td>
 </tr>
 <tr class="even">
 <td>From cost template</td>

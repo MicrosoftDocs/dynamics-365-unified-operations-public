@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Power BI content
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.
 

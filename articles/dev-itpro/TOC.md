@@ -104,7 +104,7 @@
 #### [W Classes](dev-ref/w-classes.md)
 #### [X Classes](dev-ref/x-classes.md)
 
-## [Extensibility home page](extensibility/extensibility-home-page.md)
+## [Extensibility](extensibility/extensibility-home-page.md)
 ### Introduction and getting started
 #### [Application extensibility plans](extensibility/extensibility-roadmap.md)
 #### [Extensibility requests](extensibility/extensibility-requests.md) 
@@ -115,6 +115,7 @@
 ### What's new
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
 #### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
+#### [Extensibility changes version 8.0](extensibility/changes-80.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -382,17 +383,18 @@
 
 ### [Data integration using the Common Data Service](data-entities/data-integration-cds.md) 
 #### [Configure a prospect to cash scenario](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synchronize products from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Synchronize accounts from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Synchronize contacts from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronize sales quotation headers and lines from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Synchronize sales order headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Synchronize sales invoice headers and lines from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synchronize accounts directly from Sales to customers in Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synchronize products directly from Finance and Operations to products in Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synchronize sales order headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Synchronize sales quotation headers and lines directly from Sales to Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synchronization of sales orders directly between Sales and Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Configure integration with Field Service](../supply-chain/sales-marketing/field-service.md)
+##### [Synchronize products in Finance and Operations to products in Field Service](../supply-chain/sales-marketing/field-service-product.md)
+##### [Synchronize work orders in Field Service to sales orders in Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [Consuming external web services](data-entities/consume-external-web-service.md)
 
@@ -407,7 +409,9 @@
 ### [Configuration data templates](data-entities/configuration-data-templates.md)
 ### [Data templates with multiple worksheets](data-entities/excel-template-multiple.md)
 ### [Track changes to an entity](data-entities/entity-change-track.md)
+### [Configuration keys and data entities](data-entities/config-key-entities.md)
 ### [Find information about standard data entities](data-entities/data-entities-report.md)
+
 
 ## [Data import and export jobs](data-entities/data-import-export-job.md)
 
@@ -427,15 +431,21 @@
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
+
+## [Data task automation](data-entities/data-task-automation.md)
+
 ## [Resources for responding to a GDPR data request](gdpr/gdpr-home-page.md)
 ### [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Asset classifications](gdpr/gdpr-asset-classification-values.md)
 ### [Use the Person search report](gdpr/gdpr-person-search-report.md)
 ### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
-# [Continuous delivery home page](dev-tools/continuous-delivery-home-page.md)
+## [Data validation workspace](user-interface/data-validation-workspace.md)
+
+# [Continuous delivery](dev-tools/continuous-delivery-home-page.md)
 ## [Development and continuous delivery FAQ](dev-tools/continuous-delivery-faq.md)
 ## [Exclude test packages from the build output](dev-tools/exclude-test-packages.md)
 ## [Manage third-party models and runtime packages by using source control](dev-tools/manage-runtime-packages.md)
@@ -478,6 +488,7 @@
 ## [Segmented entry control parm methods](financial/segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial/add-dimensions-excel-templates.md)
 ## [Create exchange rate providers](financial/create-exchange-rate-providers.md)
+## [Create exchange rate providers in Microsoft Dynamics Finance and Operations version 8.0](financial/create-exchange-rate-8.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
@@ -530,7 +541,7 @@
 ### [AX 2012 upgrade - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Changes that affect upgrade from AX 2012
-#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md )
+#### [Chart of accounts delimiter must be unique](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [Single voucher and currency revaluation upgrade](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Project resource scheduling data model](migration-upgrade/data-model-changes-resource-management.md)
 #### [Workflow subsystem changes](migration-upgrade/workflow-subsystem.md)

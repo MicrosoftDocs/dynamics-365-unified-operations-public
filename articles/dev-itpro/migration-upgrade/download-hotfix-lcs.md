@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Download updates from Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS).
 

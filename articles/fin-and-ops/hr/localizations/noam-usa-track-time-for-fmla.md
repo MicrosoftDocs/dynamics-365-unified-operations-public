@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Track time off for FMLA
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 
