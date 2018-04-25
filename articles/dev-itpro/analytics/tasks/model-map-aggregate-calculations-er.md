@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Use a model mapping configurationforaggregate calculations at the database level(ER) 
+title: Use a model mapping configuration for aggregate calculations at the database level (ER) 
 description: This procedure provides information about how to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
 author: NickSelin
 manager: AnnBe 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Use a model mapping configuration for aggregate calculations at the database level(ER) 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure provides information about how to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. In this procedure you will create a configuration for the sample company, Litware, Inc. 
 

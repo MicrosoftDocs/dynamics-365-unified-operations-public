@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # ImageMetadata Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Image metadata type.
 

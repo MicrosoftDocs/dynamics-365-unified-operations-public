@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prepare to maintain standard costs for manufactured items
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This topic describes the steps for preparing to maintain costs for manufactured items. The steps for manufactured items differ slightly from the steps for purchased items.
 
 Policies that are assigned to manufactured items can affect the cost calculations for the parent manufactured items. To prepare to maintain costs for manufactured items, follow these steps.

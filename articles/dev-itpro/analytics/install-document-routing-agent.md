@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Document Routing Agent to enable network printer devices
-description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
 ms.date: 12/04/2017
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install the Document Routing Agent to enable network printer devices
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 
 What's important to know?
 -------------------------
@@ -135,5 +135,8 @@ No, not at this time. There are several dependencies on Azure capabilities that 
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
+### How many network printers can the Document Routing Agent support?
 
+The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
 
+You can never have too many Document Routing Agents, as it is the mechanism for scaling the network printing service.

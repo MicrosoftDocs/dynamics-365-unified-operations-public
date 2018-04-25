@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Application update 4
 ---
 # Cash registers for Norway
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
@@ -133,7 +135,7 @@ Additionally, on the **Bank account information** FastTab, in the **Routing numb
   
 ### Set up value-added tax (VAT) per Norwegian requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Norway.
 

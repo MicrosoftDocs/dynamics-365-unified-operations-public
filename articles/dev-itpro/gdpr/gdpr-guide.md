@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to sensitive data
-description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview of the GDPR
 
@@ -52,13 +54,13 @@ The GDPR defines personal data in the following way in article 4 of [the regulat
 
 To determine responsibilities for compliance, the GDPR identifies the following roles:
 
-+ **Data controller** – The controller controls personal data and determines how it's used. The responsibilities of the controller include but are not limited to collecting, maintainining, directing actions, protecting, modifying and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the process for GDPR requests and carrying out a GDPR request rests with the controller.
++ **Data controller** – The controller controls personal data and determines how it's used. The responsibilities of the controller include but are not limited to collecting, maintaining, directing actions, protecting, modifying and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the process for GDPR requests and carrying out a GDPR request rests with the controller.
 + **Data processor** – The processor provides services to, and processes data on behalf of, the data controller. The processor performs actions on behalf of the controller. The processor makes it possible for the controller to be GDPR compliant, but has no ownership of the data and does not respond directly to DSR requests.
 + **Data subject** – A data subject is a natural person whose personal information is being used.
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
 + **C2** – C2 is C1's customer.
 
-For Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
+For Microsoft Dynamics 365 for Finance and Operations, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
 
 The following illustration shows the flow of data from your customer to the Finance and Operations database, and the roles that you and Microsoft play in that process. For Finance and Operations, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
@@ -144,7 +146,6 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 <li>Writes a customization.</li>
 <li>Reaches out to third parties for shared-controller DSRs.</li>
 <li>Reaches out to Microsoft for activity data.</li> 
-<li>Reaches out to Microsoft for activity data.</li>
 </ul>
 </td>
 <td>
@@ -204,7 +205,7 @@ When data is located, use in-product features to correct the data where the prod
 
 \*You might find that some data that qualifies as personal data can't be modified directly. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications.
 
-\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modificaton of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ### Right to be forgotten\*
@@ -230,7 +231,7 @@ The Person search report, which might help you discover personal data that is su
 
 If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./gdpr-extend-person-search-report.md).
 
-The controller may, at their sole descretion choose to redact certain types of information that may fall outside of the scope of data that must be returned to the data subject as defined within the GDPR.
+The controller may, at their sole discretion choose to redact certain types of information that may fall outside of the scope of data that must be returned to the data subject as defined within the GDPR.
 
 ## Right to restrict
 
