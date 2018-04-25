@@ -109,24 +109,26 @@ Complete the following instructions to run the script:
 
 1. Download the ProvisionCDSEnvironment.zip file from the following location: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder.
+2. From your downloads folder, right click on the ProvisionCDSEnvironment.zip file just downloaded and select **Properties**.  If there is a Security note at the bottom of the dialog that states “This file came from another computer and might be blocked to help protect this computer”, mark the checkbox to **Unblock**, then click **Apply** and then **OK**.
 
-3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
+3. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder, other than your root folder.
 
-   Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
+4. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
+
+   Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run. We suggest using the following, “Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process”, but be sure to follow your company security policies and close the PowerShell window when finished. 
   
-4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed below:
+5. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed below:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    **MyNewEnvironment** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
 
-   **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
+   **YourLocation** should be replaced with one of the supported regions for Talent: unitedstates, europe, australia. 
 
    **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
 
-5. Continue with the provisioning process.
+6. Continue with the provisioning process.
  
 
 
