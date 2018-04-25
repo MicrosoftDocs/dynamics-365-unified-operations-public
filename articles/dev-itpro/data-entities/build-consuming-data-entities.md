@@ -321,7 +321,8 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
 2.  Copy the following code lines, and paste them into the **Code** window.
 
 ```
-        public class FMRentalEntity extends common
+
+public class FMRentalEntity extends common
         {
         [SysODataActionAttribute("ReturnRental", true)]
         public str ReturnRental()
@@ -366,10 +367,15 @@ In this section, you will use a console application to consume the OData endpoin
 
 This completes the walkthrough, where you've seen an external client interacting with the Fleet Management model by using OData endpoint.
 
+## Casing rules in data entities
+During export, the entity name and the field names are exported in upper case. If there is a need to apply a transformation, the transformation must use upper case in all references.
+
+During import, data management accepts input file in any casing. When applying a transformation, care must be taken to ensure the transformation is using the same casing rules in all references as in the incoming file.
+
 ## Tips & tricks
 
 ### Max join limits
-During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit in Finance and Operations. Increasing the join limit is  not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will fail to process records and will result in the following SQL error.
+During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit in Finance and Operations. Increasing the join limit is  not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
 
 ```
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
