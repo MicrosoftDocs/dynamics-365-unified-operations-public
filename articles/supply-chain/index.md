@@ -56,6 +56,10 @@ Select a feature area to learn more about it.
 
 ## Videos
 
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+
+- [Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
 -  [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
