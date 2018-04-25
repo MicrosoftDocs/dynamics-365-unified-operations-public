@@ -5,7 +5,7 @@ title: Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premis
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ You can access the site only if the client certificate is in cert:\\CurrentUser\
 ## Monitor the deployment
 
 ### Identify the primary orchestrator
-To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **\[*intended application example*\] LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **\<*intended application example*\> LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
 
 The primary node is shown. For stateless services or the remaining applications, you must check all the nodes.
 
