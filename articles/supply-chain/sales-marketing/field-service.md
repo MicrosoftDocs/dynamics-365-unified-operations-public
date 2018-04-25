@@ -51,7 +51,7 @@ To see an example of how you can synchronize a work order between Field Service 
 
 > [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
 
-[Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+[Synchronize a work order between Field Service and Finance and Operations (YouTube video)](https://youtu.be/hAB4TDVMjxU)
 
 ## System requirements for Finance and Operations
 Field Service integration supports the following versions:
