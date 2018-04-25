@@ -321,7 +321,8 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
 2.  Copy the following code lines, and paste them into the **Code** window.
 
 ```
-        public class FMRentalEntity extends common
+
+public class FMRentalEntity extends common
         {
         [SysODataActionAttribute("ReturnRental", true)]
         public str ReturnRental()
@@ -365,6 +366,11 @@ In this section, you will use a console application to consume the OData endpoin
     2.  At the bottom of the list, click **Next** to view the next page. On this page, you can see that the reservation was created for the new customer that you added.[![customer reservation](./media/customer-reservation.png)](./media/customer-reservation.png)
 
 This completes the walkthrough, where you've seen an external client interacting with the Fleet Management model by using OData endpoint.
+
+## Casing rules in data entities
+During export, the entity name and the field names are exported in upper case. If there is a need to apply a transformation, the transformation must use upper case in all references.
+
+During import, data management accepts input file in any casing. When applying a transformation, care must be taken to ensure the transformation is using the same casing rules in all references as in the incoming file.
 
 ## Tips & tricks
 
