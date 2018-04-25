@@ -48,6 +48,13 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Enhancements to the production order release process](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
+- [Request a Dynamics 365 for Finance and Operations production environment](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+- [Uptake a new Dynamics 365 for Finance and Operations platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
+- [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
+- [Manage the code upgrade and tool process in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
+- [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
