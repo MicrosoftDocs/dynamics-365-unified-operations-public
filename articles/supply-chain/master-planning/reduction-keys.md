@@ -134,7 +134,7 @@ Here is a summary of **Transactions - dynamic period** reduction:
     -   If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
 
-See also
+Additional resources
 --------
 
 [Master plans](master-plans.md)

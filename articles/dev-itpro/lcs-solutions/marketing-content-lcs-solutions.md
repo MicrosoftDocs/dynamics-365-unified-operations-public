@@ -61,7 +61,7 @@ After you've completed the previous procedure, you can stage and publish your so
 5.  When staging is completed, in the **Production** group, click **Request Approval to Push to Production**. Microsoft will begin to validate your solution and marketing materials. If any questions or concerns arise during the review, Microsoft will contact the engineering contacts that your company provided. After approval, your solution will be available in the Azure marketplace.
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

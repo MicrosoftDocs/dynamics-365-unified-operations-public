@@ -101,7 +101,7 @@ Each subexpression requires one to two digits for the day and month, and one to 
 
 You can specify more than one expression in the same file. Each expression must be on a separate line. The first expression that is matched is used to parse the date.
 
-See also
+Additional resources
 --------
 
 [Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)

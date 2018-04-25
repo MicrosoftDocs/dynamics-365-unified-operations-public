@@ -1570,7 +1570,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 Because this method only calls the **validate()** method on the control and doesn't perform any additional processing, you can delete it.
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

@@ -5,7 +5,7 @@ title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt 
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,8 @@ The Prospect to cash solution provides direct synchronization across Dynamics 36
 For more information about the Prospect to cash integration, watch the short YouTube video:
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[Prospect to cash integration (YouTube video)](https://youtu.be/AVV9x5x-XCg) 
 
 In the current version, the Prospect to cash solution provides the following types of direct synchronization:
 
@@ -79,7 +81,7 @@ Prospect to cash integration is supported on the following versions:
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Support for prospect to cash integration through data entities is required.
     
     > [!NOTE]
-    > After you install the hotfixes, you must trigger the following batch job from the **SalesPopulateProspectToCash** form. This form is hidden because you only need it once. To access the form, log in to the environment and add the following to the URL in your browser address: &mi=action:SalesPopulateProspectToCash, for example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. When the form opens, click OK. This will populate a new **LineCreationSequnceNumber** field in the **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
+    > After you install the hotfixes, you must trigger the following batch job from the **SalesPopulateProspectToCash** form. This form is hidden because you only need it once. To access the form, log in to the environment and add the following to the URL in your browser address: *&mi=action:SalesPopulateProspectToCash*, for example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. When the form opens, click OK. This will populate a new **LineCreationSequnceNumber** field in the **SalesLine**, **SalesQuotationLine**, and **CustInvoiceTrans** tables with unique values, and the product list will be refreshed. This is required for the Prospect to cash integration to work.
 
 
 ## System requirements for Sales

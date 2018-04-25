@@ -473,7 +473,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 
-See also
+Additional resources
 --------
 
 [Office integration](office-integration.md)

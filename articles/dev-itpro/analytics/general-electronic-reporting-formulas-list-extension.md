@@ -108,7 +108,7 @@ The following guidance is intended to help you design your custom Electronic rep
 -   Release a new function's list extension as a new Finance and Operations hotfix. Electronic reporting designers will refer to the hotfix number in Electronic reporting configurations that use that new custom function. Whenever a configuration of this type is imported into a new instance of Finance and Operations, Electronic reporting will evaluate whether the required hotfix has been installed, to maintain compliance between the Electronic reporting configuration and the Finance and Operations version that configuration is imported into.
 
 
-See also
+Additional resources
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)

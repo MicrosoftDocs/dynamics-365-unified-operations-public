@@ -157,7 +157,7 @@ In the following example, the allocation base is of the **Formula allocation bas
 
 ![Calculations per cost object](./media/cost-entries-allocation-base.png)
 
-See also 
+Additional resources 
 
 [Define access rights for cost object controllers](access-rights-cost-object-controller.md)
 

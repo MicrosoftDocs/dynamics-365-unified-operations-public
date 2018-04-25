@@ -88,7 +88,7 @@ The **Approval status** field is used when a PO goes through a review process or
 -   **Confirmed** – This status is assigned after the order has been confirmed. Typically, this status is the last approval status that is assigned to an order.
 
 
-See also
+Additional resources
 --------
 
 [Purchase order creation](purchase-order-creation.md)

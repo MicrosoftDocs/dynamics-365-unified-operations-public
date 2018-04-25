@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
 
-[]()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
+Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
 The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). <strong>Note:</strong> An asterisk (<strong>\</strong>*) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
@@ -191,7 +191,7 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 |                  Set up transportation constraints for an item                   |     Global     |
 |                <strong>\</strong>*Set up warehouse work policies                 |     Global     |
 
-See also
+Additional resources
 --------
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)

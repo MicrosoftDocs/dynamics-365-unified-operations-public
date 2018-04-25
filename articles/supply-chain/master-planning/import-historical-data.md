@@ -60,6 +60,6 @@ You can use the following file as an example. Download the [HistoricalDemandData
 
 After you've imported the historical demand data, you can generate a demand forecast.
 
-## See also
+## Additional resources
 
 [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)

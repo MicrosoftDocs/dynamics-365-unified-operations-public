@@ -62,7 +62,7 @@ This tutorial guides you through the process of downloading the newest version o
 
 **Note:** Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. You must resolve those issues before you can use the imported configuration version. For more information, see the list of related articles for this topic.
 
-See also
+Additional resources
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)

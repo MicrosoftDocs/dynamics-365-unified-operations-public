@@ -75,7 +75,7 @@ You can use Finance and Operations to visualize and modify the baseline forecast
 ## Limitations
 Demand forecasting in Finance and Operations is a tool that helps customers in the manufacturing industry create forecasting processes. It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended. Demand forecasting might not be the best fit for customers in industries such as retail, wholesale, warehousing, transportation, or other professional services.
 
-See also
+Additional resources
 --------
 
 [Demand forecasting setup](demand-forecasting-setup.md)

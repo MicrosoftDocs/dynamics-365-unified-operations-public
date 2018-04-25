@@ -81,7 +81,7 @@ To create demand predictions, you can deploy your own service by using Machine L
 ## Settings for the Finance and Operations demand forecasting machine learning service
 To view the parameters that can be configured for the Finance and Operations demand forecasting service, go to **Master Planning** &gt; **Setup** &gt; **Demand forecasting** &gt; **Forecasting algorithm parameters**. The **Forecasting algorithm parameters** page shows the default values for the parameters. You can overwrite these parameters on the **Demand forecasting parameters** page. Use the **General** tab to overwrite the parameters globally, or use the **Item allocation keys** tab to overwrite the parameters per item allocation key. Parameters that are overwritten for an item allocation key affect only the forecast of items that are associated with that item allocation key.
 
-See also
+Additional resources
 --------
 
 [Introduction to demand forecasting](introduction-demand-forecasting.md)

@@ -373,7 +373,7 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 
 
-See also
+Additional resources
 --------
 
 [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)

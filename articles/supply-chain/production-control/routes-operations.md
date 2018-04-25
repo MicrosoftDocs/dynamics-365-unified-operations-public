@@ -233,7 +233,7 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
 
 
-See also
+Additional resources
 --------
 
 [Bills of materials and formulas](bill-of-material-bom.md)

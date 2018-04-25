@@ -589,7 +589,7 @@ You can create a column that displays all the values in a specified column as a 
 
 You can divide the amount in a column by a specified number of periods. For example, the formula **B/Periods** divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation. For example, the formula **(B+C)/Periods** adds the amounts in column B and column C, and then divides the result by the period value.
 
-See also
+Additional resources
 --------
 
 [Row definitions in financial reporting](row-definitions-financial-reporting.md)

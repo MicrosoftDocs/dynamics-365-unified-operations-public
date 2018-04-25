@@ -102,7 +102,7 @@ The only value that is present on Microsoft Excel templates after installation i
 9.  Build the project and then synchronize it with the database.
 
 
-## See also
+## Additional resources
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 

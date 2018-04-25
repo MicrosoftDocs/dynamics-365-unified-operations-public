@@ -307,6 +307,6 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 **Solution:** This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Retail Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx).
 
-## See also
+## Additional resources
 
 [Install the POS Layout designer](install-pos-layout-designer.md)

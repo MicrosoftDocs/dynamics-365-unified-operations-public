@@ -120,7 +120,7 @@ The Payment Web Files folder usually contains a subfolder. Be sure to copy the w
 ## Use a payment connector with an ecommerce site
 E-commerce sites aren't deployed in LCS-managed environments. You should work with your partner to decide how to host an e-commerce site. If the payment connector requires payment web files, you must deploy those web files to your e-commerce site. If your payment connector doesn't require payment web files, no additional steps are required. For information about how to deploy payment web files to an e-commerce site, see the "Put the payment connector assemblies and files in the correct locations" section earlier in this article.
 
-See also
+Additional resources
 --------
 
 [Guide to implementing a payment connector and a payment device](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)

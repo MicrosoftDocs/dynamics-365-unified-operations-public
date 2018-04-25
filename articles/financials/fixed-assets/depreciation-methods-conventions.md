@@ -69,7 +69,7 @@ You can select from the following depreciation methods.
 
 
 
-See also
+Additional resources
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)

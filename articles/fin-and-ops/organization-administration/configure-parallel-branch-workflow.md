@@ -52,7 +52,7 @@ Follow these steps to design and configure the elements of a parallel branch.
 
 
 
-See also
+Additional resources
 --------
 
 [Create a workflow](create-workflow.md)

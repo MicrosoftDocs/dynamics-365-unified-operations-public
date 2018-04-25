@@ -82,7 +82,7 @@ There are two configurations options available. Choose the option that works bes
 12. Click **Run now**.
 
 
-See also
+Additional resources
 --------
 
 [Personalized product recommendations overview](personalized-product-recommendations.md)

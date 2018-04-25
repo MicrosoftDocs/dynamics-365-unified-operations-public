@@ -158,7 +158,7 @@ The Gantt chart can be opened from the following pages.
 |           <strong>Job to complete</strong> (List in <strong>Production floor management</strong> workspace)            |                                                                                               The <strong>Jobs to complete list in the Production floor management</strong> workspace shows jobs from production and batch orders that are in progress on the selected resources for the workspace. On the <strong>Gantt chart</strong> menu item you can open the Gantt chart, where all the jobs selected in the list will be loaded to the chart.                                                                                               |
 | <strong>Production orders to release</strong> (Opened from the <strong>Production floor management</strong> workspace) |                                                                                                                                         The production orders to release page is opened from the <strong>Production floor management</strong> workspace. This page shows scheduled production and batch orders pending release. On this page you can open the Gantt chart for selected production orders.                                                                                                                                          |
 
-## See also  
+## Additional resources  
 [Visual scheduling with Gantt chart for production and batch orders (Video)](https://youtu.be/BtbuShkGj4I)
 
 [Visual scheduling for production (demo script)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

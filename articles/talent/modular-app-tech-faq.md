@@ -5,7 +5,7 @@ title: Provision Microsoft Dynamics 365 for Talent Modular Apps
 description: ynamics 365 for Talent includes Core HR capabilities and functionality that provides additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application. 
 author: rschloma
 manager: AnnBe
-ms.date: 3/20/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

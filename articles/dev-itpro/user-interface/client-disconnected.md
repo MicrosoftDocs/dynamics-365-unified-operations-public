@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-## Client internet connection 
+# Client internet connection 
 
 [!INCLUDE [banner](../includes/banner.md)]
 

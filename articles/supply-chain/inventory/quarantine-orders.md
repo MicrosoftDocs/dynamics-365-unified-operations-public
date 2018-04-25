@@ -68,7 +68,7 @@ When a quarantine order is ended, the item is moved from the quarantine warehous
 ## Quarantine order scrap
 As part of the quarantine order process, you can scrap inventory. When you process scrap, the status of the inventory will be set to **Sold** by an issue transaction from the quarantine warehouse.
 
-See also
+Additional resources
 --------
 
 [Inventory blocking](inventory-blocking.md)

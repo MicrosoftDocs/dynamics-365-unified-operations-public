@@ -160,7 +160,7 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 
 
 
-See also
+Additional resources
 --------
 
 [What's new or changed](whats-new-changed.md)

@@ -66,7 +66,7 @@ The following example illustrates the tasks involved in setting up a channel dis
 
 
 
-See also
+Additional resources
 --------
 
 [Price adjustments and discounts](price-adjustments-discounts.md)

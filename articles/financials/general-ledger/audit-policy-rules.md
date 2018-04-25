@@ -99,7 +99,7 @@ All of the policy rules for a particular audit policy share the same batch param
 
 
 
-See also
+Additional resources
 --------
 
 [Audit policy violations and cases](audit-policy-violations-cases.md)

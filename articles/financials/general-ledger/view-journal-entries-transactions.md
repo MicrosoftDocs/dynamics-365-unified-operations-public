@@ -58,7 +58,7 @@ In addition to the financial reports, you can use the following ledger reports t
 -   **Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency. It also shows each line of the journal that was used as an offset.
 
 
-## See also
+## Additional resources
 - [General ledger account balances](general-ledger-account-balances.md) 
 - [Accounting source explorer](../accounts-payable/accounting-source-explorer.md)
 - [Financial reporting](financial-reporting-getting-started.md)

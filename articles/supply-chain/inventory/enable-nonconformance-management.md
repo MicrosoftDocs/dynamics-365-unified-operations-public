@@ -51,7 +51,7 @@ To enable nonconformance management, follow these steps:
 6.  Define the related operations that will be assigned to nonconformances. Use the **Operations** page to define a classification of the work that can be performed for an approved nonconformance. When you assign a related operation to a nonconformance, you can provide detailed information, such as information about the associated material, labor hours, and miscellaneous charges that are required in order to perform the operation. This information is used to calculate an estimated cost for the operation. The detailed information and estimated costs are for reference. The related operations for quality differ from the operations that can be defined for a production route.
 
 
-See also
+Additional resources
 --------
 
 [Create and process a non conformance (Task guide)](tasks/create-process-non-conformance.md)

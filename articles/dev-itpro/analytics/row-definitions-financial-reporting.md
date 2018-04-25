@@ -176,7 +176,7 @@ To make it easier to view the columns that you're working on in the row definiti
 2.  Right-click the minimized column to display, and then click **Unhide**.
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

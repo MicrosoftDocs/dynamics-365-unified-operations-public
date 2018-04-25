@@ -226,6 +226,6 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
-## See also
+## Additional resources
 
 [Install a deployable package](install-deployable-package.md)

@@ -76,7 +76,7 @@ The column definitions contain different types of columns to provide different l
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-getting-started.md)

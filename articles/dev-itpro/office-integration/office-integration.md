@@ -207,7 +207,7 @@ There are lots of [Office 365 license options](https://products.office.com/en-us
 
 Open the Document Parameters form and ensure that the SharePoint server has been automatically discovered and set. Now open or create a Document Type, set the Document Type's location to "SharePoint" and select the folder that the files should be stored in.
 
-See also
+Additional resources
 --------
 
 [Office Integration lab and walkthroughs](office-integration-tutorial.md)

@@ -137,7 +137,7 @@ Set up the integration between Finance and Operations and Power BI. For more inf
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page. 
 3. Click the action item to open the Finance and Operations page that shows the report that you designed in Power BI. [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-See also
+Additional resources
 --------
 
 [Electronic reporting destinations](electronic-reporting-destinations.md)

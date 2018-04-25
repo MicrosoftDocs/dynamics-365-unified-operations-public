@@ -68,7 +68,7 @@ The mobile app is being made available for the most popular mobile operating sys
 
 You're done! Launch the app from your mobile device to see the sample workspace.
 
-### See Also
+### Additional resources
 
 [Architecture](mobile-platform-architecture.md) 
 

@@ -66,7 +66,7 @@ To debug X++ code, follow these steps.
 7. After you've finished debugging the application, exit Finance and Operations . Visual Studio will exit debugging mode.
 
 
-See also
+Additional resources
 --------
 
 [Developer home page](developer-home-page.md)

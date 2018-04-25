@@ -59,7 +59,7 @@ For this example, only item number A0001 must be counted in warehouse 61.
 
 
 
-See also
+Additional resources
 --------
 
 [Cycle counting](cycle-counting.md)

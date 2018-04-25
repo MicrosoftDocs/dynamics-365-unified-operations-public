@@ -44,7 +44,7 @@ Data subjects have the following rights under the GDPR, and a data controller mi
 
 ### Right to view
 
-+ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](/gdpr-person-search-report.md) topic.  
++ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](gdpr-person-search-report.md) topic.  
 + Use advanced search and filters to find specific personal data and export that data by using the Microsoft Office Export functionality.
 + Extend the Person search report by adding an existing entity. For information that can help you extend the report, see [Extend the Person search report with your own data](gdpr-extend-person-search-report.md).
 

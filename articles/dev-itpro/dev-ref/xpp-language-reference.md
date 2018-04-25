@@ -56,7 +56,7 @@ The X++ language programming guide is divided into these sections:
 + [X++ statements and loops](xpp-statements-loops.md)
 + [X++ variables and data types](xpp-variables-data-types.md)
 
-## See also
+## Additional resources
 + [X++ Syntax](xpp-syntax.md)
 + [X++ and C# Comparison](xpp-cs-comparison.md)
 
