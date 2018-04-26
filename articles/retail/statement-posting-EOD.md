@@ -5,7 +5,7 @@ title: Improvements to statement posting
 description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
 manager: AnnBe
-ms.date: 04/12/2016
+ms.date: 04/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ This topic describes the first set of improvements that have been made to the st
 
 ## Activation
 
-By default, during deployment of the Finance and Operations 7.3.2, the program is set up to use the earlier feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
+By default, during deployment of Finance and Operations 7.3.2, the program is set up to use the earlier feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
 
 - Go to **System administration** \> **Setup** \> **License configuration**, and then, under the **Retail** node, clear the **Retail statements (legacy)** check box, and select the **Retail statements** check box.
 
