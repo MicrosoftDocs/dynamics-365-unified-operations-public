@@ -140,7 +140,6 @@ In the Name field enter the name of the custom field, in the type field you must
     import { CartViewTotalsPanelCustomFieldBase } from "PosApi/Extend/Views/CartView";
     import { ProxyEntities } from "PosApi/Entities";
 ```
-
 7.  Create a new class called SampleCustomField and extend it from CartViewTotalsPanelCustomFieldBase. We are extending from CartViewTotalsPanelCustomFieldBase to get the computeValue method form the base class to do any custom logic for the custom field.
 ```typescript
     export default class SampleCustomField extends CartViewTotalsPanelCustomFieldBase {
@@ -155,7 +154,6 @@ public computeValue(cart: ProxyEntities.Cart): string {
 
 if (isNaN(cart.TotalAmount) || cart.TotalAmount <= 0) {
 return "$0.00";
-
 }
 return "$" + (cart.TotalAmount \* 0.1).toFixed(2).toString();
 }
@@ -179,7 +177,6 @@ The overall class should look like below:
  public computeValue(cart: ProxyEntities.Cart): string {
 
 // Let’s show 10% of total amount in the custom field.
-
  if (isNaN(cart.TotalAmount) || cart.TotalAmount <= 0) {
  return "$0.00";
  }
@@ -200,14 +197,13 @@ The overall class should look like below:
  "components": {
  "extend": {
  "views": {
- "CartView": {
-"totalsPanel": {
-"customFields": [
+    "CartView": {
+    "totalsPanel": {
+    "customFields": [
 {
-"fieldName": "Sample",
-"modulePath": "Cart/SampleCustomField"
+        "fieldName": "Sample",
+        "modulePath": "Cart/SampleCustomField"
 }
-
 ]
  } }
  }  }
@@ -221,12 +217,12 @@ The overall class should look like below:
 ```typescript
  "customFields": [
 {
-"fieldName": "Sample1",
-"modulePath": "Cart/SampleCustomField1"
+    "fieldName": "Sample1",
+    "modulePath": "Cart/SampleCustomField1"
 },
 {
-"fieldName": "Sample2",
-"modulePath": "Cart/SampleCustomField2"
+    "fieldName": "Sample2",
+    "modulePath": "Cart/SampleCustomField2"
 }
  ]
 ```
