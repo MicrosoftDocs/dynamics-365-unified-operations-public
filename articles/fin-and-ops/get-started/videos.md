@@ -5,7 +5,7 @@ title: Videos for Dynamics 365 for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 04/23/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
+- [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
+- [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+- [Create an Excel template for header and line patterns](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
