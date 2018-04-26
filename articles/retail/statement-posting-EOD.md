@@ -47,7 +47,7 @@ Finance and Operations includes the following validations that are related to th
 - The same configuration keys must be used for all the operations that are performed on a given statement during its lifecycle (Create, Calculate, Clear, Post, and so on). For example, you can't create and calculate a statement while the **Retail statement (legacy)** configuration key is turned on, but then try to post the same statement while the **Retail statement** configuration key is turned on.
 
 > [!NOTE]
-> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest and improve the statement posting feature, and it's important that you switch to the improved feature at the earliest opportunity to benefit from it. In later releases, the improved feature will be used by default for statement postings, and the earlier feature will gradually become obsolete.
+> We recommend that you use the **Retail statements** configuration key for the improved statement posting feature, unless you have compelling reasons to use the **Retail statements (legacy)** configuration key instead. Microsoft will continue to invest in the new & improved statement posting feature, and it's important that you switch to it at the earliest opportunity to benefit from it. The legacy statement posting feature will be deprecated in a future release.
 
 ## Setup
 
@@ -60,12 +60,12 @@ As part of the improvements to the statement posting feature, three new paramete
 
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for Retail stores.
 
-Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field. However, in a future release, the value will be set heuristically, based on a customer's topology and setup.
+Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field.
 
 Note that all settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
 
 ## Processing
-Statements can be calculated and posted by using batch processes (**Calculate statements in batch** and **Post statements in batch**). Alternatively, statements can be manually calculated and posted by using the **Retail statements** menu item that the improved statement posting feature provides.
+Statements can be calculated and posted in batch using the menu items **Calculate statements in batch** and **Post statements in batch**. Alternatively, statements can be manually calculated and posted by using the **Retail statements** menu item that the improved statement posting feature provides.
 
 The process and steps for calculating and posting statements in a batch are the same as they were in the earlier statement posting feature. However, significant improvements have been made in the core back-end processing of the statements. These improvements make the process more resilient, and provide for better visibility into the states and error information. Therefore, users can address the root cause of errors and then continue the posting process without causing data corruption and without causing data fixes to be required.
 
@@ -97,7 +97,7 @@ The following table describes the various states and their order during the post
 | 9           | Gift cards posted       | Gift card transactions are posted as vouchers. |
 | 10          | Posted                  | The statement is marked as posted. |
 
-Every state in the preceding tables is atomic in nature, and a hierarchical dependency is built between the states. This dependency flows from top to bottom. If the system encounters any errors while it's processing a state, the status of the statement is reverted to the previous state. Any subsequent reattempt of the process resumes from the state that failed and continues to move forward. This approach has the following benefits:
+Every state in the preceding tables is independent in nature, and a hierarchical dependency is built between the states. This dependency flows from top to bottom. If the system encounters any errors while it's processing a state, the status of the statement is reverted to the previous state. Any subsequent reattempt of the process resumes from the state that failed and continues to move forward. This approach has the following benefits:
 
 - The user has complete visibility into the state where the error occurred.
 - Data corruption is avoided. For example, in the earlier statement posting feature, there were instances where some sales orders were invoiced but others were left open. There were also instances where some payment journals didn't have a corresponding invoice to settle, because the invoice posting had an error.
@@ -115,7 +115,7 @@ A statement goes through various operations (for example, Create, Calculate, Cle
 ### Aggregated transactions
 During the posting process, the sales transactions are aggregated based on the configuration. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement.
 
-The **Sales order detail** tab of the aggregated transaction shows the following information:
+The **Sales order detail** tab of an aggregated transaction shows the following information:
 
 - **Record ID** – The ID of the aggregated transaction.
 - **Statement number** – The statement that the aggregated transaction belongs to.
@@ -125,9 +125,9 @@ The **Sales order detail** tab of the aggregated transaction shows the following
 - **Status** – The last status of the aggregated transaction.
 - **Invoice ID** – When the sales order for the aggregated transaction is invoiced, the sales invoice ID. If this field is blank, the invoice for the sales order hasn't been posted.
 
-The transaction details tab of the aggregated transaction shows all the retail transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the retail transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
+The **Transaction details** tab of an aggregated transaction shows all the retail transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the retail transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
 
-From the aggregated form, you can download the XML for a specific aggregated transaction by using the **Export sales order XML** button. You can use the XML to debug issues that involve sales order creation and posting. Just download the XML, upload it to a test environment, and debug the issue in the test environment. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+From the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by using the **Export sales order XML** button. You can use the XML to debug issues that involve sales order creation and posting. Just download the XML, upload it to a test environment, and debug the issue in the test environment. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
 
 The aggregated transaction view provides the following benefits:
 
@@ -137,14 +137,14 @@ The aggregated transaction view provides the following benefits:
 - Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
-The **Journal vouchers** button shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
+The **Journal vouchers** button in the **Execution details** group of the statement shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
 
-Currently, the program shows this data only for posted statements. However, in a future release, you will be able to view all the journal vouchers that were created, journals that were successfully posted, and journals where errors occurred for retail statements (that is, unposted statements).
+Currently, the program shows this data only for posted statements.
 
 ### Payment journals
-The **Payment journals** button shows all the various payment journals that are created for a statement.
+The **Payment journals** button in the **Execution details** group of the statement shows all the various payment journals that are created for a statement.
 
-Currently, the program shows this data only for posted statements. However, in a future release, you will be able to view all the payment journals that were created, payment journals that were successfully posted, and payment journals where errors occurred for retail statements (that is, unposted statements).
+Currently, the program shows this data only for posted statements.
 
 ## Other improvements
 
@@ -154,9 +154,9 @@ Other, back-end improvements that users can see have been made to the statement 
 - The occurrence of deadlock on retail transaction tables is reduced by introducing additional extension tables and by doing insert operations instead of update operations on the retail transaction tables.
 - The number of running batch tasks has been parameterized and limited. Therefore, this number can be fine-tuned specifically to a customer's environment. In the earlier statement posting feature, an unlimited number of batch tasks was created at the same time. The results were unmanageable loads, overhead, and bottlenecks on the batch server.
 - Statements are efficiently queued for processing by prioritizing the statements that have the maximum number of transactions.
-- Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the earlier statement posting feature, users could choose to run these batch processes in an interactive mode. The interactive mode of statement processing is a single threaded operation.
+- Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the earlier statement posting feature, users could choose to run these batch processes in an interactive mode which is s single threaded operation unlike batch processes which are multi-threaded.
 - In the earlier statement posting feature, any failure of a batch task put the whole batch job in an error state. In the improved feature, batch task failures don't put the batch job in an error state if other batch tasks are successfully completed. You should assess the posting status for a batch execution run by using the **Retail statements** page, where you can see any statements that weren't posted because of errors.
-- In the earlier statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't become stuck in a loop where they repeatedly fix and run to post statements.
+- In the earlier statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't have to be stuck in a continous loop of fixing the errors and running the post statement process till all statements are posted.
 
 ## General guidance about the statement posting process
 
