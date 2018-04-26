@@ -53,6 +53,8 @@ On rare occasions, a single person might be entered in your system more than onc
 
 An individual might exist as multiple parties in Finance and Operations data. You can provide multiple identifiers for each party type, and each party type's personal data will be included on a single report.
 
+## Generate a person search
+
 To use the Person search report, you must complete these tasks.
 
 1.	From the System administration menu, open the Person search list page, and create a new search.
@@ -78,6 +80,24 @@ To use the Person search report, you must complete these tasks.
 7. When the package has been generated, export it to your selected data format. 
 
 > Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
+
+## Download a template
+
+To download a template from Lifecycle services, complete the following steps. 
+
+> 1. Go into data management
+
+> 2. Make sure that all data entities have been created
+
+> 3. Click on Templates
+
+> 4. Select Load default templates
+
+> 5. Select Person search
+
+> 6. Click on Load selected
+
+
 
 ## Additional resources
 
