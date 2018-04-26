@@ -35,7 +35,7 @@ This topic describes the first set of improvements that have been made to the st
 
 ## Activation
 
-By default, during deployment of Finance and Operations 7.3.2, the program is set up to use the earlier feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
+By default, during deployment of Finance and Operations 7.3.2, the program is set up to use the legacy feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
 
 - Go to **System administration** \> **Setup** \> **License configuration**, and then, under the **Retail** node, clear the **Retail statements (legacy)** check box, and select the **Retail statements** check box.
 
@@ -56,7 +56,7 @@ As part of the improvements to the statement posting feature, three new paramete
 - **Disable clear statement** – This option is applicable only for the legacy statement posting feature. We recommend that you set this option to **No** to prevent users from clearing statements that are in a semi-posted state. If statements that are in a semi-posted state are cleared, data becomes corrupted. You should set this option to **Yes** only in exceptional circumstances.
 - **Reserve inventory during calculation** – We recommend that you use the **Post inventory** batch job for inventory reservation, and that you set this option to **No**. When this option is set to **No**, the improved statement posting feature doesn't try to create inventory reservation entries at the time of calculation (if entries weren't already created through the **Post inventory** batch job). Instead, the feature creates inventory reservation entries only at the time of posting. This implementation was a design choice and was based on the fact that the time window between the calculation process and the posting process is typically small. However, if you want to reserve inventory at the time of calculation, you can set this option to **Yes**.
 
-    The earlier statement posting feature always reserves inventory during the statement calculation process (if reservation wasn't already done through the **Post inventory** batch job), regardless of the setting of this option.
+    The legacy statement posting feature always reserves inventory during the statement calculation process (if reservation wasn't already done through the **Post inventory** batch job), regardless of the setting of this option.
 
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for Retail stores.
 
@@ -67,7 +67,7 @@ Note that all settings and parameters that are related to statement postings, an
 ## Processing
 Statements can be calculated and posted in batch using the menu items **Calculate statements in batch** and **Post statements in batch**. Alternatively, statements can be manually calculated and posted by using the **Retail statements** menu item that the improved statement posting feature provides.
 
-The process and steps for calculating and posting statements in a batch are the same as they were in the earlier statement posting feature. However, significant improvements have been made in the core back-end processing of the statements. These improvements make the process more resilient, and provide for better visibility into the states and error information. Therefore, users can address the root cause of errors and then continue the posting process without causing data corruption and without causing data fixes to be required.
+The process and steps for calculating and posting statements in a batch are the same as they were in the legacy statement posting feature. However, significant improvements have been made in the core back-end processing of the statements. These improvements make the process more resilient, and provide for better visibility into the states and error information. Therefore, users can address the root cause of errors and then continue the posting process without causing data corruption and without causing data fixes to be required.
 
 The following sections describe some of the major improvements for the statement posting feature that appear in the user interface for retail statements and posted statements.
 
@@ -100,7 +100,7 @@ The following table describes the various states and their order during the post
 Every state in the preceding tables is independent in nature, and a hierarchical dependency is built between the states. This dependency flows from top to bottom. If the system encounters any errors while it's processing a state, the status of the statement is reverted to the previous state. Any subsequent reattempt of the process resumes from the state that failed and continues to move forward. This approach has the following benefits:
 
 - The user has complete visibility into the state where the error occurred.
-- Data corruption is avoided. For example, in the earlier statement posting feature, there were instances where some sales orders were invoiced but others were left open. There were also instances where some payment journals didn't have a corresponding invoice to settle, because the invoice posting had an error.
+- Data corruption is avoided. For example, in the legacy statement posting feature, there were instances where some sales orders were invoiced but others were left open. There were also instances where some payment journals didn't have a corresponding invoice to settle, because the invoice posting had an error.
 - Users can see the current state of a statement by using the **Status details** button in the **Execution details** group of the statement. The status details page has three sections:
 
     - The first section shows the current status of the statement, together with the error code and a detailed error message, if an error occurred.
@@ -133,7 +133,7 @@ The aggregated transaction view provides the following benefits:
 
 - The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
 - The user has visibility into how transactions are aggregated.
-- The user has a complete audit trail, from retail transactions, to sales orders, to sales invoices. This audit trail wasn't available in the earlier statement posting feature.
+- The user has a complete audit trail, from retail transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
@@ -152,11 +152,11 @@ Other, back-end improvements that users can see have been made to the statement 
 
 - The aggregation doesn't consider the staff, terminal, and shift entities. Because there are fewer aggregation parameters, fewer sales order lines must be processed.
 - The occurrence of deadlock on retail transaction tables is reduced by introducing additional extension tables and by doing insert operations instead of update operations on the retail transaction tables.
-- The number of running batch tasks has been parameterized and limited. Therefore, this number can be fine-tuned specifically to a customer's environment. In the earlier statement posting feature, an unlimited number of batch tasks was created at the same time. The results were unmanageable loads, overhead, and bottlenecks on the batch server.
+- The number of running batch tasks has been parameterized and limited. Therefore, this number can be fine-tuned specifically to a customer's environment. In the legacy statement posting feature, an unlimited number of batch tasks was created at the same time. The results were unmanageable loads, overhead, and bottlenecks on the batch server.
 - Statements are efficiently queued for processing by prioritizing the statements that have the maximum number of transactions.
-- Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the earlier statement posting feature, users could choose to run these batch processes in an interactive mode which is s single threaded operation unlike batch processes which are multi-threaded.
-- In the earlier statement posting feature, any failure of a batch task put the whole batch job in an error state. In the improved feature, batch task failures don't put the batch job in an error state if other batch tasks are successfully completed. You should assess the posting status for a batch execution run by using the **Retail statements** page, where you can see any statements that weren't posted because of errors.
-- In the earlier statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't have to be stuck in a continous loop of fixing the errors and running the post statement process till all statements are posted.
+- Batch processes such as **Calculate statements in batch** and **Post statements in batch** are run only in batch mode. In the legacy statement posting feature, users could choose to run these batch processes in an interactive mode which is s single threaded operation unlike batch processes which are multi-threaded.
+- In the legacy statement posting feature, any failure of a batch task put the whole batch job in an error state. In the improved feature, batch task failures don't put the batch job in an error state if other batch tasks are successfully completed. You should assess the posting status for a batch execution run by using the **Retail statements** page, where you can see any statements that weren't posted because of errors.
+- In the legacy statement posting feature, the first occurrence of a statement failure causes the whole batch to fail. The remaining statements aren't processed. In the improved feature, the batch process continues to process all statements, even if some of the statements fail. One benefit is that users gain visibility into the exact number of statements that have errors. Therefore, users don't have to be stuck in a continous loop of fixing the errors and running the post statement process till all statements are posted.
 
 ## General guidance about the statement posting process
 
