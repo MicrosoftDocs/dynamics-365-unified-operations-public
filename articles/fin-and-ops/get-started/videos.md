@@ -43,7 +43,6 @@ These short videos help you learn about the new features that are in Microsoft D
 
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-- [Create an Excel template for header and line patterns](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
