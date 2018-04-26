@@ -1877,6 +1877,7 @@
 ### [Warehouse configuration](../supply-chain/warehousing/warehouse-configuration.md)
 #### [Set up a warehouse by using a warehouse configuration template](../supply-chain/inventory/warehouse-template.md)
 #### [Control work by using work templates and location directives](../supply-chain/warehousing/control-warehouse-location-directives.md)
+#### [Schedule load utilization](../supply-chain/warehousing/schedule-load-utilization.md)
 #### [Unit of measure and stocking policies](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Warehouse Power BI content](../dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json)
 #### [System grouping on an open work list](../supply-chain/warehousing/system-group-on-open-work-list.md)
