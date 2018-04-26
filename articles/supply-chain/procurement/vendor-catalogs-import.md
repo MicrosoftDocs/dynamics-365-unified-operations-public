@@ -66,14 +66,14 @@ To import vendor catalog data, you must complete the following tasks:
 
 6.  Upload the CMR file.
 
-7.  Review, approve, or reject the products in the vendor catalog. The products are  automatically mapped
+7.  Review, approve, or reject the products in the vendor catalog. The products are automatically mapped
     to the procurement categories in Dynamics 365 for Finance and Operations. 
     
 Approved products are added to the product master and are released to the selected legal entities. Only approved products can be added to the procurement catalog.
 
 ## Generate a catalog import file template
 
-The catalog import file template is an industry-standard XSD file that you use
+The catalog import file template is an XSD file that you use
 to create a CMR file for a vendor’s products. You can use the CMR file to create
 a new catalog, replace an existing catalog, or modify an existing catalog.
 
