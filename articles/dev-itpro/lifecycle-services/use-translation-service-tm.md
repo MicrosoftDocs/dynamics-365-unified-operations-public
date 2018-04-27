@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Translation Service (DTS) uses a bilingual XML Localizati
 
 In DTS, you can obtain an XLIFF translation memory (TM) in two ways:
 
-+ **Run the Align tool** – When you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Creating a translation memory - Alignment](./use-translation-service-tm.md#creating-a-translation-memory-alignment) section later in this topic.
++ **Run the Align tool** – When you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Creating a translation memory - Alignment](#creating-a-translation-memory-alignment) section later in this topic.
 + **Complete a translation request** – When a DTS translation request is completed, it provides the XLIFF TMs as part of the request output. You can then use the files the next time that you submit a new translation request that includes the updated source files.
 
 XLIFF files contain a series of translation units (TUs) that are extracted from the source files. The following illustration shows an example of a TU.
