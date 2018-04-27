@@ -2,9 +2,10 @@
 # required metadata
 
 title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields such as Memory size, Hard disk capacity, Is Energy star compliant, and so on. 
 author: ashishmsft
 manager: AnnBe
-ms.date: 03/12/2018
+ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
