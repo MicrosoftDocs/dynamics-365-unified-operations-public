@@ -75,6 +75,16 @@ The following list provides an overview of the process to calculate GST and prep
 <li>Unmark the Apply sales tax taxable rules check box on the General ledger parameters page.</li>
 </ul></td>
 </tr>
+  <td><span class="ui">Download Electronic reporting configurations</span></td>
+  <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
+</tr>
+<tr class="even">
+<td><span class="ui">Parameters</span></td>
+<td><ul>
+<li>Unmark the Apply sales tax taxable rules check box on the General ledger parameters page.</li>
+</ul></td>
+<tr>
+  </tr>
 <tr class="odd">
 <td><span class="ui">Related setup tasks</span></td>
 <td><ul>
