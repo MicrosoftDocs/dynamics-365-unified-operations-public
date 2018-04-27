@@ -71,20 +71,20 @@ Every person and company has a different perspective on which data is most impor
 Explicit personalizations are those personalizations that you perform explicitly with the intent to change the appearance or behavior of an element or page.
 
 ### Using right-click context menu options
-The right-click context menu provides a few ways to explicitly change a page to better your or your company's needs. 
+The right-click context menu provides a few ways to explicitly change a page to better you or your company's needs. 
 
-First, some of the most common and important ways to change a page are available as options directly in the right-click context menu. In particular, users can add or hide columns from a list simply by right-clicking on a grid column header and choosing "Add columns" or "Hide this column".   
+First, some of the most common and important ways to change a page are available as options directly in the right-click context menu. In particular, users can add or hide columns from a list simply by right-clicking on a grid column header and choosing **Add columns** or **Hide this column**.   
 
 Second, the most basic types of explicit personalization are available by right-clicking an element and selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you select this method of personalization, you'll see the element's property window. 
 
 [![Personalizing an element's properties](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg) 
 
-You’ll personalize an element on your page in this manner if you simply want to:
-- Change the element's label 
-- Hide the element so that it isn’t shown on the page. Note this will not delete or modify the data in the field; it simply doesn't display the information on the page any longer. 
-- Include the information in the FastTab summary section (if the element is in a FastTab)
-- Skip the field when tabbing 
-- Make it so that data in that field (for any record) cannot be changed by marking it as "Don’t Edit." 
+If you want to, you can personalize an element on your page in one of the following ways:
+- Change the element's label. 
+- Hide the element so that it isn’t shown on the page. This will not delete or modify the data in the field; it simply doesn't display the information on the page any longer. 
+- Include the information in the FastTab summary section (if the element is in a FastTab).
+- Skip the field when tabbing. 
+- Make it so that data in that field (for any record) cannot be changed by marking it as **Don’t Edit**. 
 
 Other elements may expose other personalization capabilities through the **Personalize** option as well. For example, the **Personalize** option for a tile may allow promoting that tile to the dashboard, and the **Personalize** option for the dashboard may allow a new workspace to be created on the dashboard. 
 
@@ -108,8 +108,8 @@ The Personalization toolbar has a number of personalization actions available:
 - Choose the **Edit** tool when you want to mark an element as *Editable* or *Not editable*. When you choose the Edit tool, all currently non-editable elements will be shown in a shaded container to give you the option to make them editable again. Note, some fields are required and cannot be made non-editable. Those fields will appear with a padlock icon next to them. 
 
 - Choose the **Insert** button to see a list of elements that can be inserted on a page.
-    - Choose the **Field** tool under **Insert** to add a field to your page. With the **Field** tool, you can only add fields that are part of the page definition but are not currently shown on the page. See the [Custom fields](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields) article for more information about creating completely new fields that are not part of the current page definition. When you choose the **Field** tool, you'll first need to select the group or area where you'd like to add a field. A dialog box will display the list of fields related to the section that you've selected. From that dialog box, you can select one or more fields to add and click **Insert**. If you later want to remove a field that you've previously added, repeat the process, but simply clear the field that you previously added.   
-    - Choose the **PowerApp** tool under **Insert** to embed a PowerApp into the page. See the [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps) article for more detailed information on how to embed a PowerApp into a page. 
+    - Choose the **Field** tool under **Insert** to add a field to your page. With the **Field** tool, you can only add fields that are part of the page definition but are not currently shown on the page. See the [Custom fields](user-defined-fields.md) topic for more information about creating completely new fields that are not part of the current page definition. When you choose the **Field** tool, you'll first need to select the group or area where you'd like to add a field. A dialog box will display the list of fields related to the section that you've selected. From that dialog box, you can select one or more fields to add and click **Insert**. If you later want to remove a field that you've previously added, repeat the process, but simply clear the field that you previously added.   
+    - Choose the **PowerApp** tool under **Insert** to embed a PowerApp into the page. See the [Embed PowerApps](embed-power-apps.md) article for more detailed information on how to embed a PowerApp into a page. 
 
 - Choose the **Manage** button to see a list of management options related to all personalizations for the current page. 
     - Choose **Clear** to reset the page to its default, installed state. All personalizations on the current page will be cleared. There is no undo action, so only use this option when you are certain that you want to reset your page. 
