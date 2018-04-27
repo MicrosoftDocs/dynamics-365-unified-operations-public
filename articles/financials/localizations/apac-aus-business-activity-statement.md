@@ -54,10 +54,6 @@ The following list provides an overview of the process to calculate GST and prep
 
 ## Prerequisites
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Category</th>
@@ -65,18 +61,22 @@ The following list provides an overview of the process to calculate GST and prep
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><span class="ui">Country/region</span></td>
+<tr>
+<td>Country/region</td>
 <td>The primary address for the legal entity must be in the following countries/regions: Australia</td>
 </tr>
 <tr class="even">
-<td><span class="ui">Parameters</span></td>
-<td><ul>
-<li>Unmark the Apply sales tax taxable rules check box on the General ledger parameters page.</li>
-</ul></td>
+<td>Parameters</td>
+  <td>Set the <strong>Apply sales tax taxable rules</strong> option to <strong>No</strong> on the <strong>General ledger parameters </strong> page.
+</td>
 </tr>
-<tr class="odd">
-<td><span class="ui">Related setup tasks</span></td>
+  <td>Download Electronic reporting configurations</td>
+  <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
+</tr>
+<tr>
+  </tr>
+<tr>
+<td>Related setup tasks</td>
 <td><ul>
 <li>Create an additional BAS reconciliation account</li>
 <li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></li>
@@ -144,3 +144,6 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 
 > [!NOTE] 
 > The reporting code numbers 5 and 6 are missing. This is because these two codes are used for calculated fields on the BAS report.
+
+## Additional resources
+[Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
