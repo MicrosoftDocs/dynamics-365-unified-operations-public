@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-
+- [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 
 ## Dynamics 365 YouTube channel
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
