@@ -59,7 +59,7 @@ Getting started gets you going with building extensions and migrating a current 
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
 + [Customization: overlayering and extensions](customization-overlayering-extensions.md)
-+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
+<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## Extensibility fundamentals
 

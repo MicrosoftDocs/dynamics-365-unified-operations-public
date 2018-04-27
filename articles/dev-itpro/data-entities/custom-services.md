@@ -56,7 +56,9 @@ The SOAP endpoint is at `https://host_uri/soap/services/service_group_name`.
 For more information, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
 -   [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
--   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). 
+
+<!--
+-   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
 
 
 ### JSON-based Custom Service
