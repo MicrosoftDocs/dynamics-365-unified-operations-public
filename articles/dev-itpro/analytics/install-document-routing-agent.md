@@ -5,7 +5,7 @@ title: Install the Document Routing Agent to enable network printer devices
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
-ms.date: 12/04/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
-p# ms.search.industry: 
+# ms.search.industry: 
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
