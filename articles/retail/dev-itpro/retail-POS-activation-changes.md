@@ -48,76 +48,79 @@ AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' 
 ## Setup
 The steps that follow are required to allow device activation to function correctly when the customized Retail Modern POS application is used.  There will be two Azure Active Directory (AAD) applications generated, one for Retail Modern POS and one for Retail Server.  The Retail Server AAD application is required because Retail Modern POS utilizes resources through Retail Server, so both AAD applications are utilized through Retail Modern POS usage.  Retail Server, in this scenario, functions as the endpoint for protected resources that get requested by the Retail Modern POS application.
 
-1. Navigate to https://portal.azure.com/
-2. Go to Azure Active Directory->App registrations
-3. Create AAD Retail Server application by clicking New application registration and provide the following values for the 3 fields:
-  a) "Name" - Customized Retail Server (you can put here any name you want)
-  b) "Application type" - Web app / API
-  c) "Sign-on URL" - specify here any uri which doesn't have to point to any real physical location, for instance: https://YourCustomizedRetailServer
-4. Press [TAB] button and then Click Create button and wait until the operation completes successfully, if it fails address the errors and try again.
+### Create the Retail Server AAD application
+1. Open a web browser and navigate to https://portal.azure.com/
+2. Sign in using AAD credentials that have enough permission to create AAD applications
+3. Go to **Azure Active Directory** > **App registrations**
+4. Create the AAD Retail Server application by repeating steps 3-4, provide the following values:
+  - **Name** should specify "Customized Retail Server" (Any unique value desired can be put here, but keep note of it)
+  - **Application type** should specify "Web app / API" from the drop-down
+  - **Sign-on URL** can be any unique URL that does not point to a real, physical location. As an example, enter "https://MyNotRealURL"
+5. Press the **Tab** button on the keyboard to allow Azure to verify the field, then select the **Create** button and wait until the operation completes successfully (If and error occurs, address the error and try again)
+6. The page will now show the details of the newly created Retail Server AAD application created
+7. Select the application's **Settings** page on the action bar at the top of the tile, then go to **Properties** and copy the value shown in the field titled **App ID URI**.  This value needs to be copied into the DLLHost.exe.config file for Retail Modern POS (Which is explained in the next set of steps)
 
-5. Find the application by using its name - Customized Retail Server and then click it.
+    > [!NOTE]
+    > - Do not close this web browser as it will be used again later in this document.
 
-6. While at the application's settings page go to Properties, copy the value from the field App ID URI and paste it into the attribute value corresponding to the key AADRetailServerResourceId in the file DLLHost.exe.config
-7. Create AAD MPOS application by repeating steps 3-4, provide the following values:
-  a) Name - specify Customized MPOS (again, you can put here any name you want)
-  b) Application type - specify Native
-  c) Redirect URI - specify the reply address corresponding to the error seen at the above screenshot, the reply address starts with ms-appx-web://Microsoft.AAD.BrokerPlugin/
+### Update the Retail Modern POS configuration
+8. Open **File Explorer** and navigate to **C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker** (Assuming the computer Windows operating system is based on the x64 architecture) 
+9. In the **File Explorer** window, select **File** > **Open Windows PowerShell** > **Open Windows PowerShell as administrator**
+10. In the **Windows PowerShell** window that opens (The window will already be pointed to the current file directory) enter the text "notepad DLLHost.exe.config" and press the **Enter** key on the keyboard
+11. In the **Notepad** that opens, find the value corresponding to the key **AADRetailServerResourceId** (By default, this value will state "https://commerce.dynamics.com") and then enter the value that was copied in step seven in the previous sub-heading
+12. Select **File** > **Save**
 
-That callback can also be seen in the Event Viewer (Microsoft-Dynamics-Commerce-ModernPos/Operational) in one of the first events once MPOS is started. The event's ID is 40619, it is logged with the text which starts with:
-```
-This UWP application was assigned the following callback Uri to be used while interacting with AAD: ms-appx-web://Microsoft.AAD.BrokerPlugIn/S-1-15-2-[...]
-```
-The new URI for the customized application is the value partially showcased above when device activation is attempted (and can also be seen in Event Viewer after device activation is attempted).  It will be in the form 
+    > [!NOTE]
+    > - Do not close this notepad as it will be used again in the next sub-heading.
 
+### Create the customized Retail Modern POS AAD application
+13. Return to the web browser with the https://portal.azure.com/ page open and create the AAD MPOS application by repeating steps 3-5 above except provide the following values this time:
+  - **Name** should specify "Customized Retail Modern POS" (Any unique value desired can be put here, but keep note of it)
+  - **Application type** should specify "Native" from the drop-down
+  - **Redirect URI** should specify the reply address corresponding to the error seen in Retail Modern POS (Or the **Event Viewer**) as detailed under the previous heading.  The reply address value will start with "ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]"
 
+    > [!NOTE]
+    > - The reply address (Redirect URI) can be seen in the **Event Viewer** under "Microsoft-Dynamics-Commerce-ModernPos/Operational".  The event ID is 40619.
+    > - The error text will begin with "This UWP application was assigned the following callback Uri to be used while interacting with AAD: ms-appx-web://Microsoft.AAD.BrokerPlugIn/S-1-15-2-[...]".
+    > - It is important to note that once the AAD Application is created, additional **Redirect URIs** can be specified as needed. If, for any reason, multiple packages with different Callback Urls have been generated, keep this single AAD Application and maintain all Redirect URIs in this single AAD application.
 
-Note that once you created the AAD Application you can specify as many callback URLs as you want which means that, if, by any reason, while developing or for Production, you have multiple packages with different Callback Urls, you then could just keep this one single AAD Application and maintain all your CallbackUrls in this single application.
+14. Press the **Tab** button on the keyboard to allow Azure to verify the field, then select the **Create** button and wait until the operation completes successfully (If and error occurs, address the error and try again)
+15. The page will now show the details of the newly created customized Retail Modern POS AAD application created
+16. Find the field **Application ID** and copy it (This value will be pasted it into the attribute value corresponding to the key **AADClientId** in the file DLLHost.exe.config**)
+17. Select the application's **Settings** page on the action bar at the top of the tile, then go to **Required permissions**
+18. In the new tile, select **+Add**
+19. In the new tile, select **1 Select an API**
+20. In the new tile, type the name of the Retail Server AAD application generated in the beginning of this document (Titled in this document as "Customized Retail Server"), select the listing that appears that corresponds to the application previous created, then select the **Select** button at the bottom of the tile
+21. The previous tile will now automatically select the **2 Select permission** value and a new tile will appear titled **Enable Access**
+22. In the new tile, mouse over the line showing **Access Customized Retail Server** (Again, this will list the name entered previously) and select the checkbox on the left side (This will highlight the line, check the box, and light up the **Select** button at the bottom of the tile
+23. Click the **Select** button at the bottom of the tile to return to the previous tile (The tile titled **Add API access**)
+24. Click the **Done** button at the bottom of the tile to return to the previous tile (The tile titled **Add API access**)
+25. Now back to the tile titled **Required permissions**, select the **Grant Permissions** action, then select **Yes** on the pop-up that appears to verify that permissions will be granted
+18. Switch to the **Notepad** that should be still open (Showing the DLLHost.exe.config file contents), find the value corresponding to the key **AADClientId** (By default, this value will a GUID value corresponding to the headquarters environment) and enter the value that was copied in step 16 above
+19. Select **File** > **Save**
 
-8. Press [TAB] button and then Click Create button and wait until the operation completes successfully, if it fails address the errors and try again.
-9. Find the application by using its name - Customized MPOS and then click it.
-10. Copy the Application ID and paste it into the attribute value corresponding to the key AADClientId in the file DLLHost.exe.config
-11. While in AAD Portal's page displaying the MPOS details click "Required permission" at "Settings" pane and then "Add"->Select an API
-Type Customized Retail Server in the search box and then click the same name in the search results' list and then "Select" button
- 
-Check the line "Access Customized Retail Server" and then click the Select button
- 
-12. click "Done" button and then "Grant Permissions" -> "Yes".
+### Configure Dynamics 365 headquarters
+The previous steps are required to allow for authentication of the Retail Modern POS application.  The final steps that are shown here are necessary to properly whitelist the new created AAD applications in Dynamics 365 headquarters to authorize the requets.
 
-This completes setup on MPOS side, next set of steps is to whitelist newly created AAD applications on AX side so AAD issued security token would be accepted.
+20. Open a web browser and navigate to the Dynamics 365 headquarters URL and sign in using AAD credentials
+21. Got to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**
+22. Select the **Identity providers** FastTab
+23. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/` (The values on the **Relying parties** sub-heading are listed, based on this selection)
+24. On the **Relying parties** sub-heading, select **+Add** button and enter the following details
+  - **ClientId** should specify the value used in step 18 above (Also now shown in the **DLLHost.exe.config** notepad)
+  - **Type** should specify the value **Public** from the drop-down menu
+  - **UserType** should specify the value **Worker** from the drop-down menu
+  - **Name** is a description field to help understand what this entry is referencing
+25. On the Action Pane, select **Save** (The newly created **Relying parties** should maintain selection)
+26. At the bottom of this page, under the **Server resource IDs** sub-heading, select **+Add** and enter the following details
+  - **Server Resource Id** should specify the URL copied in step 11 above (Originally created in step four above)
+  - **Name** is a description field to help understand what this entry is referencing
+27. On the Action Pane, select **Save**
+28. Navigate to **Retail** &gt; **Retail IT** > **Distribution schedule**
+29. Select the job **1110** from the left-hand list and then select **Run now** from the Action pane (This will synchronize the new data, however there is a cache in Retail Server that will not update for several minutes, so if immediate update is required then the Retail Server application pool will require recycling)
 
-13. In AX go to Retail Shared Parameters->Identity Providers
+    > [!NOTE]
+    > - Verify that Retail Modern POS is closed and no instances of DLLHost.exe exist in **Task Manager** for best results.
 
-14. In the grid "Identity Providers" select a row corresponding to your Azure Active Directory tenant, once you select it the 2 below grids will be refreshed with the applications setup for that tenant
-
-15. In the grid "Relying Parties" click "Add" and add new row with the following parameters:
-
-  a) ClientID - specify the one you used in the step #10 above
-
-  b) Type - Public
-
-  c) UserType - Worker
-
-  d) Name - type anything you want there
-
-16. Click button "Save"
-
-17. Keep newly added into Relying Party grid record selected and click "Add" in the Server Resource IDs, specify:
-
-  a) Server Resource ID - specify the value you used in step #6 above.
-
-  b) Name - anything
-
-18. Click Save button. Make sure all your newly created records are stored as expected - to check that you can navigate between different rows in those grids.
-
-19. Execute the job 1110 and wait until it is completed
-
-20. At this time the data will be synced to the channel DB but CRT/RS employs a cache which is few minutes, if you don't want to wait until the cache expires and your are not dealing with PROD environment you can consider recycling app pool of the Retail Server.
-
-21. Close MPOS and kill, by using a Task Manager for instance, all instances of the process DllHost.exe
-
-Now try to activate device in MPOS again, if you will still experience issues look into Windows Event Viewer logs corresponding to MPOS and Retail Server for warnings/errors which would be helpful in the investigation.
-#### NEWNEWNENENWNWENEW
-To use this functionality, you must be using the July 2017 version with Application update 3 or later. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
-
-### Examples of commands for silent servicing
+### Perform Retail Modern POS device activation
+Attempt to activate the Retail Modern POS device. If issues are still experienced, open the Windows **Event Viewer** and see the logs corresponding to Retail Modern POS for warnings and errors which would assist in the investigation of the steps above that were missed.
