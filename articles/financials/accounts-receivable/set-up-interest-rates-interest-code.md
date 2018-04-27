@@ -60,7 +60,7 @@ For example, to set up an interest code that assesses 5 percent interest for eve
 You can set up interest rates that calculate a specified amount per currency.
 - An interest amount is specified for each currency in the interest code.
 - Optional interest amount limits can be entered.
-- <strong>Amount **is selected in the **Calculate interest based on</strong> field on the <strong>Set up Interest codes</strong> page.
+- **Amount** is selected in the **Calculate interest based on** field on the **Set up Interest codes** page.
 
 For example, to set up an interest code that assesses interest of 25.00 for every 20 days that the invoice payment exceeds the transaction due date, you would enter 20 in the **Calculate interest every** field and select **Day**.
 
