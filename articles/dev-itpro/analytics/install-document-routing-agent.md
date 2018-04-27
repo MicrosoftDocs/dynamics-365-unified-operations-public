@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
-# ms.search.industry: 
+p# ms.search.industry: 
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -46,7 +46,7 @@ What's important to know?
 -   The application requires Adobe Acrobat Reader.
 -   The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
 -   Dynamics AX 7.0 & Platform Update 1 deployments require Microsoft .NET 4 on the client.
--   Platform udate 2 or later requires .NET 4.62 on the client.
+-   Platform update 2 or later requires .NET 4.62 on the client.
 
 Network printers that are registered for Finance and Operations applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 
