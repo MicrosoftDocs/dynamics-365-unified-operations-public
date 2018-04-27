@@ -133,12 +133,12 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 15</td>
 <td>7.0.4839</td>
-<td>March 2018 (This is a targeted release available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). Platform update 15 is also available in Dynamics 365 for Finance and Operations version 8.0.)</td>
+<td>Platform update 15 is a targeted release, which means that it will be available to all users June 2018.</td>
 <td><a href="whats-new-platform-update-15.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 12</td>
-<td>7.0.4709</td>
+<td>7.0.4841</td>
 <td>November 2017</td>
 <td><a href="whats-new-platform-update-12.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)</a></td>
 <tbody><tr class="odd">
