@@ -180,9 +180,9 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 1. In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
 2. Open the mobile designer from the **Settings** (gear) button.
 3. Click the **Edit** button to start edit mode in the workspace.
-4. Select the <strong>My vendor invoices **page that you created earlier, and then click **Edit</strong>.
+4. Select the **My vendor invoices** page that you created earlier, and then click **Edit**.
 5. On the **Fields** tab, click the **Grid** column heading.
-6. Click **Properties** &gt; **Add page**. **Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.
+6. Click **Properties &gt; Add page**. **Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.
 7. Enter a page title, such as **Invoice details**, and a description, such as **View invoice header and line details**.
 8. Click **Select fields**. Note that, the order in which you add is the order in which the fields will be displayed to the end user. The only way to change the ordering of the fields will be by re-selecting all the fields. 
 9. Add the following fields from the header, based on the requirements for this scenario:
