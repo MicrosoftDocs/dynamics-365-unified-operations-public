@@ -55,7 +55,7 @@ An individual might exist as multiple parties in Finance and Operations data. Yo
 
 ## Download a template
 
-The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. You can download the template from LCS and import it for versions 7.1 or later. To download templates, complete the following steps. 
+The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. You can download the template from Lifecycle Services (LCS) and import it for versions 7.1 or later. To download templates, complete the following steps. 
 
 > 1. Open the **Data management** workspace.
 > 2. If this is the first time that the workspace has been opened, it will load all of the data entities. You must load all the data entities before you load the template.
@@ -63,6 +63,21 @@ The Person template contains a list of the entities that will be used to downloa
 > 4. Select the **Load default templates** button.
 > 5. Select **Person search**.
 > 6. Click  **Load selected**.
+
+## Download a template from LCS
+
+You can also download a template from LCS. To do so, complete the following steps.
+> 1.	Log in to LCS.
+> 2.	Click the **Shared asset library** tile.
+> 3.	Select the **Data package asset** type.
+> 4.	Click the template named **Template-x.x-Person search**, where x.x is the version of Finance and Operations, Talent or Retail that you're using, and download it.
+> 5.	Open the **Data Management** workspace.
+> 6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
+> 7.	Click on the **Templates** tile.
+> 8.	Create a new template called **Person search**.
+> 9.	Click **Import template**.
+> 10.	Browse to the template and click **Upload**.
+> 11.	Click **OK** to import the template.
 
 
 ## Generate a person search
