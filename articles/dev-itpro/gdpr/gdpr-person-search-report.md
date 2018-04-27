@@ -53,7 +53,7 @@ On rare occasions, a single person might be entered in your system more than onc
 
 An individual might exist as multiple parties in Finance and Operations data. You can provide multiple identifiers for each party type, and each party type's personal data will be included on a single report.
 
-## Download a template
+## Download the default template
 
 The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. You can download the template from Lifecycle Services (LCS) and import it for versions 7.1 or later. To download templates, complete the following steps. 
 
