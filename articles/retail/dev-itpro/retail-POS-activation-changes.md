@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device activation of a customized Retail Modern POS
-description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
+description: This topic explains how to configure headquarters to allow device activation to function properly when a customized Retail Modern POS application is used. 
 author: jashanno
 manager: AnnBe
 ms.date: 04/25/2018
@@ -31,42 +31,22 @@ ms.dyn365.ops.version: Application update 3
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
+This topic explains how to configure headquarters to allow device activation to function properly when a customized Retail Modern POS application is used. It details the steps necessary to pull the customized reply address and enter this value into headquarters.
 
-## Delimiters for mass deployment
-
-The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to the July 2017 version with Application update 3 or later.
-
-| Delimiter                 | Description |
-|---------------------------|-------------|
-| -S or -Silent             | Silently run the installer. No graphical user interface (GUI) is used. The **-Q** and **-Quiet** delimiters have the same effect and can also be used. |
-| -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
-| -FilePath                 | Specify a custom installation location.<p><p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -LogFile                  | Specify a custom file location for the installation logs.<p><p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-
-## Silent servicing
-
-### Before you begin
-
-#### NEWNEWNENENWNWENEW
     > [!NOTE]
     > - This security and functionality enhancement was introduced in the July 2017 (7.2) release and newer and has since been ported to the previous 1611 (7.1) release.
 
 The Retail Modern POS application is a client side component for Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail.  To utilize Retail Modern POS, it is mandatory to perform device activation.  Device activation leverages Azure Active Directory (AAD) to authenticate the user.  Enhanced functionality in this area has modified the device activation flow to better leverage the Windows Web Account Manager.  As a function of this enhancement, there is now enhanced security around the authentication approval process that requires additional configuration in headquarters when Retail Modern POS has been customized.  Specifically, the Callback (Also known as the Reply) URI now requires a very specific and unique value.  By default, the Retail Modern POS application is already registered for this Callback URI.  When customized, this URI is altered and must be configured correctly to function again.  This document will detail out the steps required to perform this configuration.  When this configuration is not followed, an error message occurs when device activation is attempted in the customized Retail Modern POS application.  The error will be similar to the following:
-AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/...' does not match the reply addresses configured for the application
+```
+AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application
+```
 
-If you will try to use the customized APPS package with the First Party AAD application (means without making any below mentioned changes in AAD) you will see error similar to this one while authenticating against AAD:
+    > [!NOTE]
+    > - It is recommended to attempt to use the customized Retail Modern POS application without configuring headquarters once to see what the error looks like and to more easily pull the custom reply address.
+    > - Take note that the error showcases the reply address used for the Application ID, which corresponds to the Retail Modern POS application.
 
-AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/...' does not match the reply addresses configured for the application
-
- 
-
-Note that it complains about the reply address used for the AppId which corresponds to the MPOS First Party Application.
-
-The list below enumerates steps needed to create 2 AAD applications: one for MPOS and one for Retail Server. Retail Server one is needed because MPOS must specify a Web Application which contains resources needed for MPOS to work, both of those applications are used by MPOS while acquiring a security token from AAD, in other words MPOS will say to AAD something like this: "I am client application MPOS who needs to access resources protected by a server application Retail Server".
+## Setup
+The steps that follow are required to allow device activation to function correctly when the customized Retail Modern POS application is used.  There will be two Azure Active Directory (AAD) applications generated, one for Retail Modern POS and one for Retail Server.  The Retail Server AAD application is required because Retail Modern POS utilizes resources through Retail Server, so both AAD applications are utilized through Retail Modern POS usage.  Retail Server, in this scenario, functions as the endpoint for protected resources that get requested by the Retail Modern POS application.
 
 1. Navigate to https://portal.azure.com/
 2. Go to Azure Active Directory->App registrations
