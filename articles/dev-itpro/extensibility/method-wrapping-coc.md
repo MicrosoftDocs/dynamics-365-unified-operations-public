@@ -75,7 +75,7 @@ When this code is run, the system finds any method that wraps the **DoSomething*
 > [!IMPORTANT]
 > The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Finance and Operations have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
 As an example: If you create your own extension model that is augmenting a class that exists in the Application Suite model, and if you are using CoC or accessing protected methods/variables, you will need to build both Application Suite and your extension model. You will also need to create a deployable package that includes both models in order to deploy this functionality on a runtime environment.
-This is a temporary situation until the next release of the Microsoft Dynamics 365 for Finance and Operations application.
+This is a temporary situation until the next release of the Dynamics 365 for Finance and Operations application.
 
 ## Capabilities
 The following sections give more details about the capabilities of method wrapping and CoC.
@@ -155,7 +155,7 @@ Here are some important rules:
 - Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed.
 
 > [!NOTE]
-> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform Update 11. 
+> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform update 11. 
 
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
@@ -250,8 +250,8 @@ Kernel classes aren't X++ classes. Instead, they are classes that are defined in
 ### X++ classes that are compiled by using Platform update 8 or earlier 
 The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### Nested class methods in forms can be wrapped in Platform Update 16 or later
-The ability to wrap methods in nested classes using class extensions was added in Platform Update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
+### Nested class methods in forms can be wrapped in Platform update 16 or later
+The ability to wrap methods in nested classes using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
 
 ### Tooling
-For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 10.
+For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Dynamics 365 for Finance and Operations Platform update 10.
