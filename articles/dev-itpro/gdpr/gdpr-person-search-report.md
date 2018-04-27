@@ -53,6 +53,18 @@ On rare occasions, a single person might be entered in your system more than onc
 
 An individual might exist as multiple parties in Finance and Operations data. You can provide multiple identifiers for each party type, and each party type's personal data will be included on a single report.
 
+## Download a template
+
+The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. You can download the template from LCS and import it for versions 7.1 or later. To download templates, complete the following steps. 
+
+> 1. Open the **Data management** workspace.
+> 2. If this is the first time that the workspace has been opened, it will load all of the data entities. You must load all the data entities before you load the template.
+> 3. Click the **Templates** tile.
+> 4. Select the **Load default templates** button.
+> 5. Select **Person search**.
+> 6. Click  **Load selected**.
+
+
 ## Generate a person search
 
 To use the Person search report, you must complete these tasks.
@@ -80,22 +92,6 @@ To use the Person search report, you must complete these tasks.
 7. When the package has been generated, export it to your selected data format. 
 
 > Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
-
-## Download a template
-
-To download a template from Lifecycle services, complete the following steps. 
-
-> 1. Go into data management
-
-> 2. Make sure that all data entities have been created
-
-> 3. Click on Templates
-
-> 4. Select Load default templates
-
-> 5. Select Person search
-
-> 6. Click on Load selected
 
 
 
