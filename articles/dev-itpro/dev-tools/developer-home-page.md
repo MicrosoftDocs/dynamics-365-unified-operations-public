@@ -5,7 +5,7 @@ title: Develop and customize using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -92,6 +92,8 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
+-   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)
+
 
 ## X++ programming language
 ### Tutorials
