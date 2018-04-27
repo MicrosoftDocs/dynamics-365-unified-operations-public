@@ -541,7 +541,7 @@ No new features have been added.
 </tr>
 <tr class="odd">
 <td>(EU) Report quantity in additional units for Intrastat by using unit conversion setting.</td>
-<td>Intrastat commodity code has a text field to identify additional units, and the** Product** card has a field to identify the quantity of additional units in kilograms.</td>
+<td>Intrastat commodity code has a text field to identify additional units, and the <strong>Product</strong> card has a field to identify the quantity of additional units in kilograms.</td>
 <td>Additional units for Intrastat commodity code is chosen from the list of Units. The quantity of additional units is calculated through unit conversion settings.</td>
 <td>This unifies the approach for recalculation from units of transaction to additional units.</td>
 </tr>
