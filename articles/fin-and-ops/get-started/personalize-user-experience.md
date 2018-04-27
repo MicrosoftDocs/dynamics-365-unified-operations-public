@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
-There are many types of personalizations in Dynamics 365 for Finance and Operations. One set of personalizations are selections that you make in a list of options on a setup page (for example, color theme or time zone). Some personalizations are called "implicit" and are related to page usage (for example, Finance and Operations keeps track of the widths of grid columns if you adjust them as well as the expanded/collapsed state of FastTabs). Other personalizations are termed "explicit" and refer to changes made by a user, oftentimes through an interactive personalization mode, to modify the appearance of a page by directly changing the way that elements appear or act on the page (for example, adding, hiding, or reordering elements on the page).  
+There are many types of personalizations in Dynamics 365 for Finance and Operations. One set of personalizations are selections that you make in a list of options on a setup page (for example, color theme or time zone). Some personalizations are called *implicit* and are related to page usage (for example, Finance and Operations keeps track of the widths of grid columns if you adjust them as well as the expanded/collapsed state of FastTabs). Other personalizations are termed *explicit* and refer to changes made by a user, oftentimes through an interactive personalization mode, to modify the appearance of a page by directly changing the way that elements appear or act on the page (for example, adding, hiding, or reordering elements on the page).  
 
 Any personalization a user makes in Finance and Operations is for that user only, regardless of type of personalization or the company that the user is currently interacting with. Changes that one user makes to a page do not affect other users in the system.
 
@@ -44,7 +44,7 @@ Any personalization a user makes in Finance and Operations is for that user only
 The **User options** page contains a number of system-wide settings for the current user. To navigate to the **User options** page, first click the **Settings** menu button (represented by a gear image) in the Navigation bar, and then click **User options**. There you'll find four blades with various user settings: 
 
 -   **Visual** - This is where you can choose a color theme and the default size of elements on your pages.
--   **Preferences** - Here you can choose defaults for each time you open Finance and Operations including the company, initial page, and default view/edit mode (which determines if a page is locked for viewing or opened for editing each time you open it). You'll also find language, time zone, and date, time, and number format options. Lastly, this page contains a number of miscellaneous preferences that vary from release to release.
+-   **Preferences** - Here you can choose defaults for each time you open Finance and Operations including the company, initial page, and default view/edit mode (which determines if a page is locked for viewing or opened for editing each time you open it). You'll also find language, time zone, date, time, and number format options. Lastly, this page contains a number of miscellaneous preferences that vary from release to release.
 -   **Account** - Here you can adjust your user name and other account-related options.
 -   **Workflow** - Here is where you can choose workflow-related options.
 
@@ -53,7 +53,7 @@ Implicit personalizations are those personalizations that you perform simply by 
 
 - **Grid columns** - You can adjust the width of a column in a list by selecting the sizing bar to the left or right of the column header and sliding it left or right to the desired width. Finance and Operations will store your desired width for that column and resize that column to that width every time you open the page with that list. 
 
-- **FastTabs** - Some pages have expandable sections called *FastTabs*. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on your last encounter with the page. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. Later in this article, we'll also explain how to change the order of your FastTabs. 
+- **FastTabs** - Some pages have expandable sections called *FastTabs*. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on your last encounter with the page. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. Later in this topic, we'll also explain how to change the order of your FastTabs. 
 
 - **Fact Boxes** - Some pages have a section called a *Fact Box* pane, which contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can hide or show the entire Fact Box pane and you can also expand or collapse each individual Fact Box. Finance and Operations will remember your preferences and restore the Fact Box pane and each Fact Box to the same state they were in based on your last encounter with the page. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
 
