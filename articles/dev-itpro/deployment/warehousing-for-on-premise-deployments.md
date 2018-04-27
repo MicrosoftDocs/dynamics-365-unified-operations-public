@@ -45,7 +45,7 @@ The Warehousing app is available on Android and Windows operating systems. To us
 | App version            | 1.1.1.0 and above                                                                  |
 | Microsoft Dynamics 365 | Dynamics 365 for Finance and Operations platform update 11 (on-premises) |
 
-To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-environments.md#createdns).
+To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-pu12.md#4-create-dns-zones-and-add-a-records).
 
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Finance and Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
