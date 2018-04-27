@@ -144,3 +144,6 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 
 > [!NOTE] 
 > The reporting code numbers 5 and 6 are missing. This is because these two codes are used for calculated fields on the BAS report.
+
+## Additional resources
+[Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
