@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-- [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
-
 ## Dynamics 365 YouTube channel
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
@@ -57,6 +55,7 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 - [Manage the code upgrade and tool process in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
