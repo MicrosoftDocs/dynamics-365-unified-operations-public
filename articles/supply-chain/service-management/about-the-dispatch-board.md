@@ -12,7 +12,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 # About the dispatch board 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 A dispatch board is the central location from which you can view the status of activities in a service order. You can perform the following tasks in a dispatch board:
 
@@ -43,5 +43,5 @@ For information about how to perform specific tasks in a dispatch board, see the
 [View the status of service orders](view-the-status-of-service-orders.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

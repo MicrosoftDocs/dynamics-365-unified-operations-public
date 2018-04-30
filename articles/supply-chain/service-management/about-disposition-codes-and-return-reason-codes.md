@@ -17,7 +17,7 @@ f1_keywords:
 # About disposition codes and return reason codes 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 To support their process for returning products, a company can create and use return reason codes and disposition codes in Microsoft Dynamics AX.
 
@@ -52,5 +52,5 @@ Assign a disposition code when an item is received or during the physical inspec
 [Authorize customer returns](authorize-customer-returns.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

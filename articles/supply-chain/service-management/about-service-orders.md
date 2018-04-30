@@ -15,7 +15,7 @@ f1_keywords:
 # About service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 A service order represents a visit that a service technician makes to a customer site on a specific date. Each service order consists of one or more service order lines. Service order lines represent the hours of work that must be performed by the service technician, and the related items, expenses, and fees.
 
@@ -76,5 +76,5 @@ During the second half of the year, your customer decides that the service visit
 [Service orders (form)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

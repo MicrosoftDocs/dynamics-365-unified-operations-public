@@ -17,7 +17,7 @@ f1_keywords:
 # View the status of service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can use the **Dispatch board** form to view the status of service activities in service orders.
 
@@ -42,5 +42,5 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
 [Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

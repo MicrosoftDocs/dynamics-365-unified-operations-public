@@ -12,7 +12,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 # View undispatched service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
 
@@ -45,5 +45,5 @@ This topic describes how to view activities in a service order that don’t have
 [Reassign activities](reassign-activities.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

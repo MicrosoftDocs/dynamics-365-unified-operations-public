@@ -12,7 +12,7 @@ _tocRel: gg231370(v=ax.60)/toc.json
 # Attach inventory items to service objects 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 This topic explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.
 
@@ -37,5 +37,5 @@ The item is now attached to the service object, and any inventory dimensions spe
 [Create service object relations](create-service-object-relations.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

@@ -12,7 +12,7 @@ _tocRel: gg243242(v=ax.60)/toc.json
 # About repair management 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 For repair management you can group problems systematically. This is to help with the suggesting of solutions that have been successful in the past.
 
@@ -95,5 +95,5 @@ When a repair issue is resolved, you can close the repair line. Set the repair s
 3.  In the **Repair stage** field, select a stage with the **Finished** property enabled.
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

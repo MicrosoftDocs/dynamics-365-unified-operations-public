@@ -12,7 +12,7 @@ _tocRel: gg232212(v=ax.60)/toc.json
 # Reduction days example 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You have created a subscription transaction for a customer's maintenance subscription, as described in the following table.
 
@@ -103,5 +103,5 @@ When the transactions for March 2011 are invoiced, the sales price of EUR 200 is
 [Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

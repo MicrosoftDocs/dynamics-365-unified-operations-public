@@ -12,7 +12,7 @@ _tocRel: gg243299(v=ax.60)/toc.json
 # Specify how to dispose of returned items 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 When you handle a return order, you must specify a reason return code to identify why the product is being returned. You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.
 
@@ -167,5 +167,5 @@ For each disposition code that you define, you must select a disposition action.
 [Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

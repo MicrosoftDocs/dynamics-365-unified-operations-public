@@ -17,7 +17,7 @@ f1_keywords:
 # Working with customer service 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Customer service supports professional, service-based companies and manufacturing service organizations.
 
@@ -42,5 +42,5 @@ The topics in this section provide an overview of the Customer service business 
 [Deliver service overview](deliver-service-overview.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

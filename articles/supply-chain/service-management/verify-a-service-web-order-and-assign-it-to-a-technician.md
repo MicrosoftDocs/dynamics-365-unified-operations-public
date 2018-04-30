@@ -12,7 +12,7 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Verify a service Web order and assign it to a technician 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 When customers or service technicians submit a service order through Enterprise Portal for Microsoft Dynamics AX, it is a good idea to review each order in the **Web service orders** form before you dispatch the orders. You can verify that the service orders are valid and determine which team or employee should handle each particular service order.
 
@@ -45,5 +45,5 @@ When customers or service technicians submit a service order through Enterprise 
 [Dispatching service order activities](dispatching-service-order-activities.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

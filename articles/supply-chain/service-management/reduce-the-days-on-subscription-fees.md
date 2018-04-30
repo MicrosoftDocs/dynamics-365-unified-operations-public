@@ -12,7 +12,7 @@ _tocRel: gg232212(v=ax.60)/toc.json
 # Reduce the days on subscription fees 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.
 
@@ -37,5 +37,5 @@ Also, if the **From date** on the reduction period is January 21 (31 minus 10), 
 [Reduction days example](reduction-days-example.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

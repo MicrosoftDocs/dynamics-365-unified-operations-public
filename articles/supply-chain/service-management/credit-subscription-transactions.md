@@ -12,7 +12,7 @@ _tocRel: gg243195(v=ax.60)/toc.json
 # Credit subscription transactions 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 ## Credit subscription transactions
 
@@ -47,5 +47,5 @@ If the **Reverse accruals on crediting** field in the **Service management param
 [Credit invoiced amounts in projects](credit-invoiced-amounts-in-projects.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

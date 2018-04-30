@@ -18,7 +18,7 @@ f1_keywords:
 # Receiving returned items 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 When a return shipment arrives, you match it to a return order that has already been created.
 
@@ -33,5 +33,5 @@ Depending on company policies, the items in the return shipment can be sent to q
 [Take returned items through inspection](take-returned-items-through-inspection.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

@@ -12,7 +12,7 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Combine service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 When you create service order lines automatically in the **Service agreements** form, you can choose one of the following options to specify how you want to group them:
 
@@ -101,5 +101,5 @@ Additional grouping of service order lines into service orders occurs according 
 [About time windows](about-time-windows.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

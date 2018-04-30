@@ -12,7 +12,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 # Set up a preferred technician 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can select any worker as a preferred technician for a service agreement or service order. However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.
 
@@ -51,5 +51,5 @@ You can select any worker as a preferred technician for a service agreement or s
 [Create service orders manually](create-service-orders-manually.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

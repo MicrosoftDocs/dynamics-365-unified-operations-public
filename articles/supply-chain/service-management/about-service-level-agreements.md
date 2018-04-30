@@ -16,7 +16,7 @@ f1_keywords:
 # About service level agreements 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 A service level agreement (SLA) is an agreement between a service company and a service customer. In an SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
 
@@ -67,5 +67,5 @@ When you create a new service order for a service agreement that an SLA is assig
 [View compliance with service level agreements](view-compliance-with-service-level-agreements.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

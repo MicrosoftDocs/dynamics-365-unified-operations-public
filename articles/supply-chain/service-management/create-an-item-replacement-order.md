@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Create an item replacement order 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Item replacement orders are usually created after a product is returned and inspected. However, when an item must be replaced before it has been returned, or when the original item will not be returned, you can create an item replacement order immediately after you create a return order.
 
@@ -51,5 +51,5 @@ Item replacement orders are usually created after a product is returned and insp
     In Microsoft Dynamics AX 2012 R2, if the identifier of the sales agreement is automatically displayed in the **Sales agreement ID** field, then the sales agreement has been linked to the sales order header for the item replacement order. If there is an applicable commitment in the sales agreement that has not been fulfilled yet, and the sales order is created before the sales agreement expires, a link is established between the sales agreement line and the sales order line. Therefore, information from the sales agreement, such as item price, is copied to the new sales order line. For more information, see [About sales agreements](about-sales-agreements.md).
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

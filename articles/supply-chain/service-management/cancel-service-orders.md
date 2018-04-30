@@ -12,7 +12,7 @@ _tocRel: gg243195(v=ax.60)/toc.json
 # Cancel service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
 
@@ -62,5 +62,5 @@ The selected service orders are either canceled or their progress status of **Ca
 
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

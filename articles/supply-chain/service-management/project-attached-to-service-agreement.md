@@ -12,12 +12,12 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Project attached to service agreement 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can attach service agreements to projects of every type except the **Time project** type.
 
 You register and post all service order transactions through the project that you attach to the service agreement. You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

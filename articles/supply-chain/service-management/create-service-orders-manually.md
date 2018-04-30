@@ -17,7 +17,7 @@ f1_keywords:
 # Create service orders manually 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can create service orders manually by using a service agreement or by using the **Service orders** form. You can also create a service order from a project.
 
@@ -100,5 +100,5 @@ You can create a service order from the **Sales orders** form by using the **Cre
 [About automatically creating service orders](about-automatically-creating-service-orders.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

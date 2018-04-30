@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Register the receipt of returned items 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Microsoft Dynamics AX provides two methods for registering the receipt of returned items. The first method is a warehouse receiving process that uses the **Arrival overview** form. The second uses the **Registration** form.
 
@@ -95,5 +95,5 @@ As an alternative to using the **Arrival overview** form, you can use the **Regi
 [Arrival overview (form)](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

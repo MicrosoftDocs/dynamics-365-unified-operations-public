@@ -12,7 +12,7 @@ _tocRel: gg230655(v=ax.60)/toc.json
 # View stage reason codes 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 View and modify the list of stage reasons for a service order. Use stage reasons to indicate the reason for the status of a service order. For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.
 
@@ -27,5 +27,5 @@ View and modify the list of stage reasons for a service order. Use stage reasons
 [Stage reasons (form)](https://technet.microsoft.com/en-us/library/aa582897\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

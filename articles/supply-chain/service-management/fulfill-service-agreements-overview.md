@@ -12,7 +12,7 @@ _tocRel: gg243290(v=ax.60)/toc.json
 # Fulfill service agreements overview 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 The topics in this section provide an overview of the tasks to fulfill service agreements. The topics also list the forms that are associated with each business process component and discuss the tasks that are associated with each business process component.
 
@@ -95,5 +95,5 @@ The following table lists the forms that support the Fulfill service contracts b
 </table>
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

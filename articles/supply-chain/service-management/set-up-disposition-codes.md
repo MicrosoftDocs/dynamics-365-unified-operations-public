@@ -20,7 +20,7 @@ f1_keywords:
 # Set up disposition codes 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 In Microsoft Dynamics AX, you can set up disposition codes to specify how to process an item that is returned by a customer. For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer. For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).
 
@@ -47,5 +47,5 @@ You can also set up a reason code to help explain why an item was returned. For 
 [External codes (form)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

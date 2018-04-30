@@ -12,7 +12,7 @@ _tocRel: gg231370(v=ax.60)/toc.json
 # Set up template to represent objects at customer site 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Use this procedure to set up a template that represents objects at a customer site.
 
@@ -37,5 +37,5 @@ Use this procedure to set up a template that represents objects at a customer si
 [Manage template BOMs on object relations](manage-template-boms-on-object-relations.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

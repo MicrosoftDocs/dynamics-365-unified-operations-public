@@ -12,7 +12,7 @@ _tocRel: gg242492(v=ax.60)/toc.json
 # About integration for service agreements and projects 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 When you work with service agreements and service agreement lines, you use data that is set up in the following areas in **Project management and accounting**.
 
@@ -71,5 +71,5 @@ Also, you can enable the **Start time** and **End time** fields on the **Project
 For more information about journal names for projects, see [About journal names](about-journal-names.md).
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

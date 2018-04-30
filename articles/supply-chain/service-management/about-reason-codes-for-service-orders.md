@@ -16,7 +16,7 @@ f1_keywords:
 # About reason codes for service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 In Microsoft Dynamics AX 2012, you can use reason codes to help explain the status of a service order when the stage of a service order is updated. For example, if you cancel a service order, you can select a reason code for the cancellation.
 
@@ -41,5 +41,5 @@ Reason codes are optional. You can decide whether to require a reason code when 
 [View stage reason codes](view-stage-reason-codes.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

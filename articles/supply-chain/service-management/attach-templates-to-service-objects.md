@@ -12,7 +12,7 @@ _tocRel: gg231370(v=ax.60)/toc.json
 # Attach templates to service objects 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 A template bill of materials (BOM) can be attached to a service object relation. The service object relation can then be associated with either service orders or service agreements.
 
@@ -37,5 +37,5 @@ A template bill of materials (BOM) can be attached to a service object relation.
 [Create service objects](create-service-objects.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

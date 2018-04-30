@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Post arrival journal for returned products 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 To process a return, first validate the return quantity, update the quantity field in the item arrival journal. Then select a disposition code or indicate that the returned items have to be inspected. After completing these steps, you can post the item arrival journal for the return order.
 
@@ -41,5 +41,5 @@ After the journal is posted, the returned items are registered in inventory, and
 [Location journal (form)](https://technet.microsoft.com/en-us/library/aa584822\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

@@ -12,7 +12,7 @@ _tocRel: gg213672(v=ax.60)/toc.json
 # Invoice subscription transactions 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
 
@@ -29,5 +29,5 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, M
 7.  Verify the contents of the invoice, click **Post invoice** to open the **Post invoice** form to post the invoice. You can also print the invoice from the **Post invoice** form.
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

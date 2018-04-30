@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # About receiving partial deliveries of returned items 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Partial deliveries are defined in terms of return order lines, not return order shipments.
 
@@ -41,5 +41,5 @@ If a return shipment contains less than the full quantity of a return order line
 [Register the receipt of returned items](register-the-receipt-of-returned-items.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Delete a return order 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Use the **Delete return order** form to delete multiple return orders.
 
@@ -31,5 +31,5 @@ Use the **Delete return order** form to delete multiple return orders.
 [Delete return order (form)](https://technet.microsoft.com/en-us/library/hh597318\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

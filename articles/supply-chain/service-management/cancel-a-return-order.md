@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Cancel a return order 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.
 
@@ -39,5 +39,5 @@ You can cancel a return order, instead of deleting it, when you want to save a r
 [Delete a return order](delete-a-return-order.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

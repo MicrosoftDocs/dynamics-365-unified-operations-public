@@ -12,7 +12,7 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Service status and progress field interaction 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.
 
@@ -77,5 +77,5 @@ The progress of a service order is in process if all lines have the status **Cre
 If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**. If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

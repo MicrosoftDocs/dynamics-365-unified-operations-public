@@ -12,7 +12,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 # About service activities 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Create service activities to define and maintain tasks in a service order. A service order can include one or more service activities to be performed by a worker.
 
@@ -33,5 +33,5 @@ You can view the status of service activities in the **Dispatch board** form. Yo
 [Deliver service overview](deliver-service-overview.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

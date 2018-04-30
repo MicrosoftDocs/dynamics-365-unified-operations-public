@@ -17,7 +17,7 @@ f1_keywords:
 # About indexed sales prices 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You set up the index for a subscription sales price when you create a subscription fee.
 
@@ -30,5 +30,5 @@ For example, if the base price is EUR 1,000, and the index is 110, the sales pri
 [Create subscription fee transactions](create-subscription-fee-transactions.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Perform invoice updates for returns 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 A return order is a type of sales order that is marked as a returned order. Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form. This Microsoft Dynamics AX functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.
 
@@ -39,5 +39,5 @@ When you set up the invoice update for batch processing, the sales order of type
 [About packing slip updates for returns](about-packing-slip-updates-for-returns.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

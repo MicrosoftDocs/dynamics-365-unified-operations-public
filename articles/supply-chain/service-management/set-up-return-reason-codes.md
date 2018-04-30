@@ -16,7 +16,7 @@ f1_keywords:
 # Set up return reason codes 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.
 
@@ -39,5 +39,5 @@ This procedure helps you set up return reason codes that you can use to indicate
 [Return reason code groups (form)](https://technet.microsoft.com/en-us/library/hh209604\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

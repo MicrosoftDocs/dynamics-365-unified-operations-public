@@ -12,7 +12,7 @@ _tocRel: gg232212(v=ax.60)/toc.json
 # Update and index subscription sales prices 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
 
@@ -37,5 +37,5 @@ The base price or index of the subscription is updated with the specified value.
 [Index subscription (class form)](https://technet.microsoft.com/en-us/library/aa558579\(v=ax.60\))
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

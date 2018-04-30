@@ -12,7 +12,7 @@ _tocRel: gg242492(v=ax.60)/toc.json
 # About subscription groups 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 Subscriptions share the following information, which is defined for the subscription group:
 
@@ -37,5 +37,5 @@ You can also complete the following tasks for all subscriptions that are attache
 [Set up subscription groups](set-up-subscription-groups.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

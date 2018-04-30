@@ -12,7 +12,7 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Subscription workflow overview 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You are the subscriptions administrator for a light company that offers subscriptions for lighting rig maintenance. A customer contacts your company to purchase a yearly subscription for lighting rig maintenance.
 
@@ -39,5 +39,5 @@ Two days later, your customer calls to say that the subscription should be invoi
 At the end of each month, one month's revenue can be accrued from the customer's subscription to the profit and loss account and the WIP accounts. For more information about how to accrue revenue for subscriptions, see [Accrue subscription revenue](accrue-subscription-revenue.md).
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

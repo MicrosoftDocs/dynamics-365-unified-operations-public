@@ -16,7 +16,7 @@ f1_keywords:
 # About automatically creating service orders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 
@@ -47,5 +47,5 @@ The service agreement lasts from January 1, 2012 until December 31, 2012. If the
 The service agreement lasts from January 1, 2012 until December 31, 2012. Two service agreement lines are attached to the service agreement. The first service agreement line has a starting date on January 2, 2012 and an ending date on March 1, 2012. The second service agreement line has a starting date on April 1, 2012 and an ending date on December 31, 2012. You specify a period in the **Create service orders** form that is from October 1, 2012 until December 31, 2012. Therefore, service orders are generated only for the second agreement line, because the starting date and ending date of the first agreement line are before the period that you specified for the service order.
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

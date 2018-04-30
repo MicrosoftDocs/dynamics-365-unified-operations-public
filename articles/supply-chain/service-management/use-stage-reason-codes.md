@@ -12,7 +12,7 @@ _tocRel: gg242492(v=ax.60)/toc.json
 # Use stage reason codes 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.
 
@@ -55,5 +55,5 @@ If you have specified that a reason code is required, you must enter a reason co
 [Start and stop time recording on a service order](start-and-stop-time-recording-on-a-service-order.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

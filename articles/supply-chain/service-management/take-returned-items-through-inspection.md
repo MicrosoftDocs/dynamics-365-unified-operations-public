@@ -12,7 +12,7 @@ _tocRel: gg230920(v=ax.60)/toc.json
 # Take returned items through inspection 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 1.  Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
 
@@ -53,5 +53,5 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, M
 [Authorize customer returns](authorize-customer-returns.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 

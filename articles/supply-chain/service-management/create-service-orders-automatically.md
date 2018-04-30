@@ -12,7 +12,7 @@ _tocRel: gg231005(v=ax.60)/toc.json
 # Create service orders automatically 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
 
 You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.
 
@@ -53,5 +53,5 @@ When you create service orders manually or automatically from the service agreem
 [About automatically creating service orders](about-automatically-creating-service-orders.md)
 
   
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 
