@@ -1480,10 +1480,11 @@
 ### [Request for quotations (RFQs)](../supply-chain/procurement/request-quotations.md)
 ### Purchase orders
 #### [Purchase order overview](../supply-chain/procurement/purchase-order-overview.md)
-#### [Create purchase orders](../supply-chain/procurement/purchase-order-creation.md)
+
 #### [Approve and confirm purchase orders](../supply-chain/procurement/purchase-order-approval-confirmation.md)
 #### [Purchase order approval mobile workspace](../supply-chain/procurement/purchase-order-mobile-workspace.md)
 ### Purchase order creation
+#### [Create purchase orders manually](../supply-chain/procurement/purchase-order-creation.md)
 #### [Create a purchase order](../supply-chain/procurement/tasks/create-purchase-order.md)
 #### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
 #### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
