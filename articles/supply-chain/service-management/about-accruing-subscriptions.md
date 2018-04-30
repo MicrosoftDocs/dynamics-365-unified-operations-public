@@ -1,5 +1,4 @@
 ﻿---
-
 # required metadata
 
 title: Accruing subscriptions  
