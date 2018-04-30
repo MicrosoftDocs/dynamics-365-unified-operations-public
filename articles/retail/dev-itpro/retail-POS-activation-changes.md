@@ -33,8 +33,8 @@ ms.dyn365.ops.version: Application update 3
 
 This topic explains how to configure headquarters to allow device activation to function properly when a customized Retail Modern POS application is used. It details the steps necessary to pull the customized reply address and enter this value into headquarters.
 
-    > [!NOTE]
-    > This security and functionality enhancement was introduced in the July 2017 (7.2) release and has since been ported to the previous 1611 (7.1) release.
+> [!NOTE]
+> This security and functionality enhancement was introduced in the July 2017 (7.2) release and has since been ported to the previous 1611 (7.1) release.
 
 The Retail Modern POS application is a client-side component for Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail.  To utilize Retail Modern POS, it is mandatory to perform device activation.  Device activation leverages Azure Active Directory (AAD) to authenticate users.  Enhanced functionality in this area has modified the device activation flow to better leverage the Windows Web Account Manager.  As a function of this enhancement, there is now enhanced security around the authentication approval process that requires additional configuration in headquarters when Retail Modern POS has been customized.  Specifically, the Callback (also known as the Reply) URI now requires a very specific and unique value.  By default, the Retail Modern POS application is already registered for this Callback URI.  When customized, this URI is altered and must be configured correctly to function again.  This topic provides the steps required to perform this configuration.  When this configuration is not followed, an error message occurs when device activation is attempted in the customized Retail Modern POS application.  The error will be similar to the following:
 
@@ -42,9 +42,9 @@ The Retail Modern POS application is a client-side component for Microsoft Dynam
 AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application
 ```
 
-    > [!NOTE]
-    > - It is recommended to attempt to use the customized Retail Modern POS application without configuring headquarters once to see what the error looks like and to more easily pull the custom reply address.
-    > - Take note that the error showcases the reply address used for the Application ID, which corresponds to the Retail Modern POS application.
+> [!NOTE]
+> - It is recommended to attempt to use the customized Retail Modern POS application without configuring headquarters once to see what the error looks like and to more easily pull the custom reply address.
+> - Take note that the error showcases the reply address used for the Application ID, which corresponds to the Retail Modern POS application.
 
 ## Setup
 The steps that follow are required to allow device activation to function correctly when the customized Retail Modern POS application is used.  There will be two Azure Active Directory (AAD) applications generated, one for Retail Modern POS and one for Retail Server.  The Retail Server AAD application is required because Retail Modern POS utilizes resources through Retail Server, so both AAD applications are utilized through Retail Modern POS usage.  Retail Server, in this scenario, functions as the endpoint for protected resources that get requested by the Retail Modern POS application.
@@ -54,7 +54,7 @@ The steps that follow are required to allow device activation to function correc
 2. Sign in using AAD credentials that have enough permission to create AAD applications.
 3. Go to **Azure Active Directory** > **App registrations**.
 4. Create the AAD Retail Server application by repeating steps 3-4, provide the following values:
-  - **Name** should specify "Customized Retail Server" (Any unique value desired can be put here, but keep note of it)
+  - **Name** should specify "Customized Retail Server". (Any unique value desired can be put here, but keep note of it.)
   - **Application type** should specify "Web app / API" from the drop-down.
   - **Sign-on URL** can be any unique URL that does not point to a real, physical location. As an example, enter `https://MyNotRealURL`.
 5. Press the **Tab** button on the keyboard to allow Azure to verify the field, then select the **Create** button and wait until the operation completes successfully. (If and error occurs, address the error and try again.)
