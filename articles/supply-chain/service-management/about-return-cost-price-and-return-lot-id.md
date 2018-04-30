@@ -1,20 +1,42 @@
 ﻿---
-title: About return cost price and return lot ID
-TOCTitle: About return cost price and return lot ID
-ms:assetid: 5036e8a9-6722-425d-a462-fa86df7a5016
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa582550(v=AX.60)
-ms:contentKeyID: 43976715
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
+# required metadata
+
+title: Return cost price and return lot ID    
+description: The cost of products that are returned to inventory is calculated by using the current cost of the products. However, you might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About return cost price and return lot ID 
+# Return cost price and return lot ID        
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 
-
-In Microsoft Dynamics AX, the cost of products that are returned to inventory is calculated by using the current cost of the products. However, you might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID** field on the **Line details** FastTab in the **Sales order** form.
+The cost of products that are returned to inventory is calculated by using the current cost of the products. However, you might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID** field on the **Line details** FastTab in the **Sales order** form.
 
 For example, consider the following scenario. You invoice a customer. Then, the customer returns the delivered products to you. You return the products to stock. In this case, when you credit the customer for the returned products, the cost of those products is calculated by using the current cost of the products. However, if you use the **Return lot ID** field, the cost of the returned products is calculated by using the cost on the invoice of the original sale to the customer.
 

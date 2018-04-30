@@ -1,22 +1,38 @@
 ﻿---
-title: About indexed sales prices
-TOCTitle: About indexed sales prices
-ms:assetid: 61292041-bf64-4df6-86a5-8dbacbe47ea9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571124(v=AX.60)
-ms:contentKeyID: 36057644
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
-f1_keywords:
-- indexed sales price
-- indexing
-- pricing
-- sales prices
+# required metadata
+
+title: Indexed sales prices   
+description: You set up the index for a subscription sales price when you create a subscription fee.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About indexed sales prices 
+# Indexed sales prices  
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You set up the index for a subscription sales price when you create a subscription fee.

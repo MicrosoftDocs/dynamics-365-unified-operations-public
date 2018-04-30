@@ -1,16 +1,38 @@
 ﻿---
-title: About receiving partial deliveries of returned items
-TOCTitle: About receiving partial deliveries of returned items
-ms:assetid: 547a8652-742a-4216-8f86-645e714744d7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg212798(v=AX.60)
-ms:contentKeyID: 36057307
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
+# required metadata
+
+title: Receive partial deliveries of returned items   
+description: Partial deliveries are defined in terms of return order lines, not return order shipments.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About receiving partial deliveries of returned items 
+# Receive partial deliveries of returned items    
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 

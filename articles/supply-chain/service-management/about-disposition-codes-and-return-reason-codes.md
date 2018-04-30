@@ -1,25 +1,41 @@
 ﻿---
-title: About disposition codes and return reason codes
-TOCTitle: About disposition codes and return reason codes
-ms:assetid: 40f3ed28-3d2f-41bd-b5b3-e189dbe23b90
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231359(v=AX.60)
-ms:contentKeyID: 53874077
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
-f1_keywords:
-- reason code
-- disposition
-- status code
-- item return
+# required metadata
+
+title: Disposition codes and return reason codes   
+description: Create and use return reason codes and disposition codes to support the process for returning products.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About disposition codes and return reason codes 
+# Disposition codes and return reason codes 
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-
-To support their process for returning products, a company can create and use return reason codes and disposition codes in Microsoft Dynamics AX.
+Create and use return reason codes and disposition codes to support the process for returning products.
 
 Use a return reason code to describe the reason that the customer wants to return an item. You can assign a reason code in the **Create return order** form.
 

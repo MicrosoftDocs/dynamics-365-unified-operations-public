@@ -1,24 +1,41 @@
 ﻿---
-title: About reason codes for service orders
-TOCTitle: About reason codes for service orders
-ms:assetid: 5e5dce85-d964-48c1-bf87-92a1009afbc7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa549105(v=AX.60)
-ms:contentKeyID: 53357612
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243285(v=ax.60)/toc.json
-f1_keywords:
-- project
-- service
-- reason
+# required metadata
+
+title: Reason codes for service orders   
+description: Use reason codes to help explain the status of a service order when the stage of a service order is updated. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About reason codes for service orders 
+# Reason codes for service orders   
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-
-In Microsoft Dynamics AX 2012, you can use reason codes to help explain the status of a service order when the stage of a service order is updated. For example, if you cancel a service order, you can select a reason code for the cancellation.
+You can use reason codes to help explain the status of a service order when the stage of a service order is updated. For example, if you cancel a service order, you can select a reason code for the cancellation.
 
 To view information about reason codes that are used to track the progress of service orders, run the Service order progress report. This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.
 

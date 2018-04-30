@@ -1,17 +1,38 @@
 ﻿---
-title: About integration for service agreements and projects
-TOCTitle: About integration for service agreements and projects
-ms:assetid: dbd8a31d-5686-4640-b043-850d7ec427b0
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa551252(v=AX.60)
-ms:contentKeyID: 36059670
-ms.date: 05/02/2014
-mtps_version: v=AX.60
-_tocRel: gg242492(v=ax.60)/toc.json
+# required metadata
+
+title: Integration for service agreements and projects 
+description: When you work with service agreements and service agreement lines, you use data that is set up in the areas in **Project management and accounting**.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About integration for service agreements and projects 
+# Integration for service agreements and projects 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 When you work with service agreements and service agreement lines, you use data that is set up in the following areas in **Project management and accounting**.

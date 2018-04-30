@@ -50,7 +50,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
   - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-For more information, see [Subscription parameters (form)](https://technet.microsoft.com/en-us/library/aa619615\(v=ax.60\)).
+For more information, see [Subscription parameters (form)](https://technet.microsoft.com/en-us/library/aa619615.aspx).
 
 ## Setup requirements
 
@@ -143,7 +143,6 @@ Setting up the invoicing period is a mandatory part of the overall subscription 
 > <P>Use the following path to open the <STRONG>Accrue subscription revenue</STRONG> form. Click <STRONG>Service management</STRONG> &gt; <STRONG>Periodic</STRONG> &gt; <STRONG>Service subscriptions</STRONG> &gt; <STRONG>Accrue subscription revenue</STRONG>.</P>
 
 
-
 ## Transactions
 
 You can control the number of ledger transactions that are created when you post accrued revenue. On subscriptions, define if the ledger transactions should be created as a total or per line.
@@ -153,6 +152,7 @@ You can control the number of ledger transactions that are created when you post
 1.  Click **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
 
 2.  On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.
+
 
 ## See also
 

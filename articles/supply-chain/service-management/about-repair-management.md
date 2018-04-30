@@ -1,20 +1,41 @@
 ﻿---
-title: About repair management
-TOCTitle: About repair management
-ms:assetid: cb02f4ea-3ffb-49ca-a4cc-bf105b45ed27
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa572667(v=AX.60)
-ms:contentKeyID: 36059339
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243242(v=ax.60)/toc.json
+# required metadata
+
+title: Repair management   
+description: Group problems systematically to help with the suggestion of solutions that have been successful in the past.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About repair management 
+# Repair management       
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-
-For repair management you can group problems systematically. This is to help with the suggesting of solutions that have been successful in the past.
+For repair management you can group problems systematically. This is to help with the suggestion of solutions that have been successful in the past.
 
 You set up symptoms, diagnosis, and resolution settings. All these can later be applied when you receive a similar item for repair. You can also set up repair stages that can follow the progress of a repair issue.
 

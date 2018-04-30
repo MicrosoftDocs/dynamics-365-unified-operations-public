@@ -1,17 +1,38 @@
 ﻿---
-title: About packing slip updates for returns
-TOCTitle: About packing slip updates for returns
-ms:assetid: 2fe7c589-4bbf-41eb-a4d4-dcb1f89d046b
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231026(v=AX.60)
-ms:contentKeyID: 36056302
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
+# required metadata
+
+title: Packing slip updates for returns  
+description: Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About packing slip updates for returns 
+# Packing slip updates for returns  
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated. Just as the invoice update process is the update to the financial transaction, the packing slip update process is the physical update of the inventory record, which means that it commits the changes to inventory. In the case of returns, the steps that are assigned to the disposition action are implemented during the packing slip update.

@@ -1,20 +1,38 @@
 ﻿---
-title: About automatically creating service orders
-TOCTitle: About automatically creating service orders
-ms:assetid: fd26f268-b49b-47ee-9172-2e8e6b9444ec
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa500103(v=AX.60)
-ms:contentKeyID: 36060100
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
-f1_keywords:
-- automatic
-- automate
-- service orders
+# required metadata
+
+title: Automatically create service orders  
+description: You can generate service orders that are based on a service agreement for the valid period of the service agreement.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About automatically creating service orders 
+# Automatically create service orders 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 
