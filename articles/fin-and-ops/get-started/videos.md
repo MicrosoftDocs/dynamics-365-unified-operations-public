@@ -38,7 +38,8 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
 ### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
-
+TONYA DO WE WANT TO SEPARATE BY VERSION???
+#### Need to break these out
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
@@ -76,7 +77,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Visual Studio Team Services integration with Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 ### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
-
+TONYA SHOULD WE JUST MOVE THESE UP AND NOT BREAK OUT VIDEOS BY VERSION????
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
@@ -87,6 +88,8 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ## FastTrack Tech talks
 [FastTrack for Dynamics 365 Tech talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Below is a list of FastTrack Tech talk recordings that are available to stream or download.
+
+TONYA WE NEED TO BREAK THESE OUT
 
 - [Performance Testing Approach (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Performance Testing Approach (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
