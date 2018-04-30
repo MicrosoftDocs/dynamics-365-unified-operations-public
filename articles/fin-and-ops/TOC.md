@@ -1473,7 +1473,7 @@
 
 ## [Procurement and sourcing](../supply-chain/procurement/procurement-sourcing-overview.md)
 ### [Procurement and sourcing workflow](../supply-chain/procurement/procurement-sourcing-workflows.md)
-### [Purchasing policies](../supply-chain/procurement/purchase-policies.md)
+
 ### [Procurement catalogs](../supply-chain/procurement/procurement-catalogs.md)
 ### [Purchase requisitions](../supply-chain/procurement/purchase-requisitions-overview.md)
 #### [Purchase requisition workflow](../supply-chain/procurement/purchase-requisitions-workflow.md) 
@@ -1489,21 +1489,27 @@
 #### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
 #### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
 #### [Create a purchase release order when creating the purchase order](../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md)
-#### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
+### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
 #### [Create a purchase return order](../supply-chain/procurement/tasks/create-purchase-return-order.md)
 #### [Create project purchase order](../supply-chain/procurement/tasks/create-project-purchase-order.md)
 #### [Create a repeat purchase order](../supply-chain/procurement/tasks/create-repeat-purchase-order.md)
 ### Prices, discounts, and rebates
 #### [Purchase agreements](../supply-chain/procurement/purchase-agreements.md)
+#### [Create a purchase agreement](../supply-chain/procurement/tasks/create-purchase-agreement.md)
 #### [Vendor rebates](../supply-chain/procurement/vendor-rebates.md)
+
+### [Purchasing policies](../supply-chain/procurement/purchase-policies.md)
+#### [Create purchasing policies](../supply-chain/procurement/tasks/create-purchasing-policies.md)
+#### [Set up policies for procurement category hierarchies](../supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies.md)
 ### Product receipts and invoicing
 #### [Product receipt against purchase orders](../supply-chain/procurement/product-receipt-against-purchase-orders.md)
 #### [Overview of vendor invoices](../financials/accounts-payable/vendor-invoices-overview.md)
-#### [Vendor posting profiles](../financials/accounts-payable/vendor-posting-profiles.md)
+
 ### Vendor management and collaboration
 #### [Set up and maintain vendor collaboration](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Manage vendor collaboration users](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Set up vendor accounts](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Vendor posting profiles](../financials/accounts-payable/vendor-posting-profiles.md)
 #### [Vendor request configurations](../supply-chain/procurement/vendor-request-configurations.md)
 #### [Vendor onboarding](../supply-chain/procurement/vendor-onboarding.md)
 #### [Vendor collaboration with external vendors](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
@@ -1512,15 +1518,15 @@
 #### [Set up an external catalog for PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Use external catalogs for PunchOut eProcurement](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Vendor collaboration mobile workspace](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
-
-### Procurement and sourcing tasks
 #### [Approve vendors for specific procurement categories](../supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories.md)
 #### [Approve vendors for specific products](../supply-chain/procurement/tasks/approve-vendors-specific-products.md)
 #### [Create a procurement catalog](../supply-chain/procurement/tasks/create-procurement-catalog.md)
+### Procurement and sourcing tasks
 
-#### [Create a purchase agreement](../supply-chain/procurement/tasks/create-purchase-agreement.md)
 
-#### [Create purchasing policies](../supply-chain/procurement/tasks/create-purchasing-policies.md)
+
+
+
 
 #### [Create a request for quotation](../supply-chain/procurement/tasks/create-request-quotation.md)
 #### [Create a requisition for consumption](../supply-chain/procurement/tasks/create-requisition-consumption.md)
@@ -1534,7 +1540,7 @@
 #### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 #### [Search for vendors](../supply-chain/procurement/tasks/search-vendors.md)
 #### [Set up permissions for ordering products on behalf of someone else](../supply-chain/procurement/tasks/set-up-permissions-ordering-products.md)
-#### [Set up policies for procurement category hierarchies](../supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies.md)
+#### 
 #### [Set up a procurement category hierarchy](../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md)
 #### [Set up project resource information](../supply-chain/procurement/tasks/set-up-project-resource-information.md)
 #### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
