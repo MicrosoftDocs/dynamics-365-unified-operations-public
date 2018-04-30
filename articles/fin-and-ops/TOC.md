@@ -1483,6 +1483,15 @@
 #### [Create purchase orders](../supply-chain/procurement/purchase-order-creation.md)
 #### [Approve and confirm purchase orders](../supply-chain/procurement/purchase-order-approval-confirmation.md)
 #### [Purchase order approval mobile workspace](../supply-chain/procurement/purchase-order-mobile-workspace.md)
+### Purchase order creation
+#### [Create a purchase order](../supply-chain/procurement/tasks/create-purchase-order.md)
+#### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
+#### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
+#### [Create a purchase release order when creating the purchase order](../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md)
+#### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
+#### [Create a purchase return order](../supply-chain/procurement/tasks/create-purchase-return-order.md)
+#### [Create project purchase order](../supply-chain/procurement/tasks/create-project-purchase-order.md)
+#### [Create a repeat purchase order](../supply-chain/procurement/tasks/create-repeat-purchase-order.md)
 ### Prices, discounts, and rebates
 #### [Purchase agreements](../supply-chain/procurement/purchase-agreements.md)
 #### [Vendor rebates](../supply-chain/procurement/vendor-rebates.md)
@@ -1507,16 +1516,11 @@
 #### [Approve vendors for specific procurement categories](../supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories.md)
 #### [Approve vendors for specific products](../supply-chain/procurement/tasks/approve-vendors-specific-products.md)
 #### [Create a procurement catalog](../supply-chain/procurement/tasks/create-procurement-catalog.md)
-#### [Create project purchase order](../supply-chain/procurement/tasks/create-project-purchase-order.md)
+
 #### [Create a purchase agreement](../supply-chain/procurement/tasks/create-purchase-agreement.md)
-#### [Create a purchase order](../supply-chain/procurement/tasks/create-purchase-order.md)
-#### [Create a purchase order with a delivery schedule](../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md)
-#### [Create a purchase order for a one-time supplier](../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md)
-#### [Create a purchase release order when creating the purchase order](../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md)
-#### [Create a purchase release order from a purchase agreement](../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
-#### [Create a purchase return order](../supply-chain/procurement/tasks/create-purchase-return-order.md)
+
 #### [Create purchasing policies](../supply-chain/procurement/tasks/create-purchasing-policies.md)
-#### [Create a repeat purchase order](../supply-chain/procurement/tasks/create-repeat-purchase-order.md)
+
 #### [Create a request for quotation](../supply-chain/procurement/tasks/create-request-quotation.md)
 #### [Create a requisition for consumption](../supply-chain/procurement/tasks/create-requisition-consumption.md)
 #### [Create a requisition that uses an RFQ](../supply-chain/procurement/tasks/create-requisition-uses-rfq.md)
