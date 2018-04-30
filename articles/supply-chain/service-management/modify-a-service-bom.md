@@ -1,0 +1,61 @@
+﻿---
+title: Modify a Service BOM
+TOCTitle: Modify a Service BOM
+ms:assetid: 66e3268e-65a9-4578-b7cb-32707822417d
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571154(v=AX.60)
+ms:contentKeyID: 39519164
+ms.date: 04/18/2014
+mtps_version: v=AX.60
+_tocRel: gg243304(v=ax.60)/toc.json
+---
+
+# Modify a Service BOM 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012_
+
+You can record the history of an element in a service BOM. Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.
+
+## Update a service BOM element
+
+1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+
+2.  Click **Edit** to open the **Service agreements** details form.
+
+3.  On the **Action Pane**, click **Service objects** to open the **Service objects** form.
+
+4.  Select the object to update a BOM line for, and then click **Designer**.
+
+5.  In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.
+    
+
+    > [!NOTE]
+    > <P>On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</P>
+
+
+
+6.  In the **Quantity** field, enter the quantity.
+
+7.  If you want to create a service order line for the replacement item, which can then be invoiced, select the **Create service order line** check box.
+
+8.  Click **OK** to close the form.
+
+## Delete a service BOM line
+
+1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+
+2.  Click **Edit** to open the **Service agreements** details form.
+
+3.  On the **Action Pane**, click **Service objects** to open the **Service objects** form.
+
+4.  Select the object to delete a service BOM line from, and then click **Designer**.
+
+5.  In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.
+
+## See also
+
+[About template BOMs](about-template-boms.md)
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
