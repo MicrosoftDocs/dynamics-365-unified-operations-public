@@ -49,13 +49,26 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 - [Request a Dynamics 365 for Finance and Operations production environment](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
-- [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 - [Uptake a new Dynamics 365 for Finance and Operations platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 - [Manage the code upgrade and tool process in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 - [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
+
+### Dynamics Lifecycle Services (LCS)
+- [Getting Started with Lifecycle Services](https://www.youtube.com/watch?v=qLBjKAPaqN4&t=24s)
+- [Deploying code to a sandbox environment](https://www.youtube.com/watch?v=5azLeOO078k)
+- [Deploying code to a production environment](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
+- [Refreshing data in a production environment](https://www.youtube.com/watch?v=VCd5SgkYPTw)
+- [Implementation projects in Lifecycle Services](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
+- [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+- [Methodologies in Lifecycle Services](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
+- [Managing business process libraries in Lifecycle Services](https://www.youtube.com/watch?v=S5msxj-2-x0)
+- [Cloud-hosted environments](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
+- [Creating support tickets from Dynamics 365 for Operations ](https://www.youtube.com/watch?v=avENUYBTBlA&t=2s)
+- [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
+- [Deploying environments](https://www.youtube.com/watch?v=FUROjGuhQEA&t=68s)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
 
@@ -64,6 +77,8 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
+
+
 
 ## FastTrack Tech talks
 [FastTrack for Dynamics 365 Tech talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. Below is a list of FastTrack Tech talk recordings that are available to stream or download.
