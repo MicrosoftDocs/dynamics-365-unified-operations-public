@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ## Dynamics 365 YouTube channel
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. Below is a list of the "How-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
-These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
+### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
 
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -56,7 +56,7 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 - [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 
-### Dynamics Lifecycle Services (LCS)
+#### Dynamics Lifecycle Services (LCS)
 - [Getting Started with Lifecycle Services](https://www.youtube.com/watch?v=qLBjKAPaqN4&t=24s)
 - [Deploying code to a sandbox environment](https://www.youtube.com/watch?v=5azLeOO078k)
 - [Deploying code to a production environment](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
@@ -70,7 +70,12 @@ These short videos help you learn about the new features that are in Microsoft D
 - [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Deploying environments](https://www.youtube.com/watch?v=FUROjGuhQEA&t=68s)
 
-These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+#### Development
+- [Setting up a development machine](https://www.youtube.com/watch?v=cqp9MetfiyM)
+- [Setting up a development branch and build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
+- [Visual Studio Team Services integration with Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+
+### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
