@@ -121,7 +121,7 @@ The previous steps are required to allow for authentication of the Retail Modern
 29. Select the job **1110** from the left-hand list and then select **Run now** from the Action pane. This will synchronize the new data, however there is a cache in Retail Server that will not update for several minutes, so if immediate update is required then the Retail Server application pool will require recycling.
 
     > [!NOTE]
-    > - Verify that Retail Modern POS is closed and no instances of DLLHost.exe exist in **Task Manager** for best results.
+    > Verify that Retail Modern POS is closed and no instances of DLLHost.exe exist in **Task Manager** for best results.
 
 ### Perform Retail Modern POS device activation
 Attempt to activate the Retail Modern POS device. If issues are still experienced, open the Windows **Event Viewer** and see the logs corresponding to Retail Modern POS for warnings and errors which would assist in the investigation of the steps above that were missed.
