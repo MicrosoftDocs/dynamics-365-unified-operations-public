@@ -36,54 +36,402 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 
-Using extension properties on CRT entities
-------------------------------------------
+Commerce runtime (CRT) contains the core business logic, if you want to add or modify any business logic then you should customize CRT, all the CRT code is developed using C# and compiled and released as Class libraries (.NET assemblies) .The Retail POS call the CRT to perform any business logic, CRT process and then sends the information back to POS. POS is a thin client, all the business logic is done in CRT.
 
-One way to add new data to an existing commerce runtime (CRT) entity is to use extension properties. Extension properties are key-value pairs on the entity. By default, these key-value pairs aren't persisted into the database. Extension properties provide the easiest and, it can be argued, the most useful way to extend entities. You should always try to use this pattern first, unless something prevents you from using it. Although you can use polymorphism/inheritance to add simple data members to entities, this approach usually causes more issues than it solves. (Nevertheless, this approach might be required for specific cases.) To add an extension property, you must use this syntax.
+Each CRT service contains one or more Request/Response, CRT service is a group of request and response. Anything you do in POS it sends Request to Retail server (RS) and RS call CRT, CRT process the request and sends the response back.
 
-    entity.SetProperty("EXTENSION_PROPERTY_ADDED", true);
+Ex: **Customer service** in CRT contains all the customer related and each one is executed in different flow.
 
-To enable the property to be read later, you can use this syntax.
+| Request                                      | Purpose                                                                      |
+|----------------------------------------------|------------------------------------------------------------------------------|
+| SaveCustomerServiceRequest                   | This request is called when you do save customer from POS.                   |
+| GetCustomersServiceRequest                   | This request is used to get the selected customer details.                   |
+| CustomersSearchServiceRequest                | This request is executed when you customer search from POS                   |
+| GetCustomerGroupsServiceRequest              | This request is used to get the customer group details.                      |
+| InitiateLinkToExistingCustomerServiceRequest | Internal request for backward compatibility                                  |
+| FinalizeLinkToExistingCustomerServiceRequest | Internal request for backward compatibility                                  |
+| UnlinkFromExistingCustomerServiceRequest     | Internal request for backward compatibility                                  |
+| GetCustomerBalanceServiceRequest             | Get the customer on Account balance                                          |
+| GetOrderHistoryServiceRequest                | Gets the customer order history.                                             |
+| GetPurchaseHistoryServiceRequest             | Gets the customer recent purchase history                                    |
+| CustomerSearchByFieldsServiceRequest         | This request is executed when you search by customer by fields (hint search) |
+| GetCustomerSearchFieldsServiceRequest        | This request gets the list of customer search fields (hint fields).          |
 
-    bool? property = (bool?)entity.GetProperty("EXTENSION_PROPERTY_ADDED");
+Similarly, product service will contain all the product related request and response.
 
-## Using extension properties on CRT entities with persistence
-Any extension property that you add to an entity stays in memory for the lifetime of the object. Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process. Additionally, if that entity is sent to during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the process. However, as we mentioned earlier, it isn't persisted by default. 
+**Below are the several types of extension patterns supported by CRT:**
 
-If you must persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside. You can use a new column in the same table, you can use a new table and a join, or you can use another approach. The recommended approach is to use a new table and a join. This approach fits most requirements well. For this approach, the customizer must learn where all “writes” occur and update the SQL code (stored procedures), and must also learn where all the “reads” occur and update that SQL code (SQL view). The EmailPreference sample provides a good end-to-end example. In that sample, a single SQL view and a single SQL stored procedure are changed via customization. 
+Before knowing about the CRT extension patterns, you should understand how the CRT extension can be created. CRT is nothing but C# class libraries (.NET assemblies), you can create class library project in C# and do all the CRT extension by following the below patterns. Always use our samples as template for your extension because it has all the right assembly reference, .NET framework version, output type, build parameters and all the other required parameters are pre-configured. You can find the CRT sample extension in Retail SDK (…\RetailSDK\SampleExtensions\CommerceRuntime)
 
-It's important to note that new SQL objects must have the correct role permissions granted. For example, a new table that must be included in Commerce Data Exchange (CDX) synchronization jobs must be granted access by DataSyncUsersRole. For other roles that are available, inspect the main SQL script in the Retail Sdk\\Database folder.
 
-    IF (SELECT OBJECT_ID('ax.RETAILCUSTPREFERENCE')) IS NULL 
-    BEGIN
-        CREATE TABLE [ax].[RETAILCUSTPREFERENCE](
-        // removed . . . 
-        ) ON [PRIMARY]
-        // removed . . . 
-    END
-    GO
+| Extensibility Pattern                         | Purpose                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Create a new CRT service                      | Create a new functionality/feature                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Override existing Service                     | You can completely override existing functionality or customize according to your business flow.                                                                                                                                                                                                                                                                                        
+Ex: If you want to override the POS search functionality to search from external system instead of searching in local Database or HQ or you can override and call standard functionality + do some additional custom logics.                                                                                                                                                                                                                                                                                                                                                       
+Ex: Search customer in local Database or HQ + external system and then finally merge or modify the result.                                                                                                                                                                                                                                                                                                                                          |
+| Triggers                                      | You can execute additional logic before or after any request.                                                                                                                                                                     
+ In the pre-trigger, you do some validation, custom logic etc.                                                                                                                                                                                                                   
+In the post trigger you can add some custom information to the request and send it to POS or modify the result returned from the standard or do some additional business logics.                                                                                                                                                                                                                                                                    |
+| Extension properties                          | You can add custom properties to any CRT entities and send it to POS. Extension properties are key- value pairs. If you set extension property in POS it will be available in CRT and vice versa. You can also set extension properties at request, response and request context level. By default, extension properties are not stored/read from the DB you must write custom code to read/set, but it is automatically send between POS and CRT. 
+                  
+Ex: You want to capture/show some additional information to customer entity in POS, then you can add a post trigger fetch all your custom property for customer and add it to the customer entity as extension properties and send it to POS.                                                                                                                                                                                       
+You can also send extension properties from POS -> CRT and store it in your custom table or do some custom logic based on those properties or send it to HQ.                                                                                                                                                                                                                                                               
+  All CRT entities like Products, Customers, Transactions, Parameters etc. support extension properties.                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+**Note:** We also support attributes (configuration driven development). For extension properties you must create custom table and store the data, but attribute is configuration driven not required to create table fields, no code required for read/update operation.
 
-    -- grant Read/Insert/Update/Delete permission to DataSyncUserRole so CDX can function
-    GRANT SELECT ON OBJECT::[ax].[RETAILCUSTPREFERENCE] TO [DataSyncUsersRole]
-    GO
-    GRANT INSERT ON OBJECT::[ax].[RETAILCUSTPREFERENCE] TO [DataSyncUsersRole]
-    GO
-    GRANT UPDATE ON OBJECT::[ax].[RETAILCUSTPREFERENCE] TO [DataSyncUsersRole]
-    GO
-    GRANT DELETE ON OBJECT::[ax].[RETAILCUSTPREFERENCE] TO [DataSyncUsersRole]
-    GO
+  **Details about the attribute can be found here:**    
+  
+  <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/order-attributes>  
+  
+  <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/customer-attributes>        
+  
+  |
+| Real-time transaction service calls           | You can do synchronous call from CRT to HQ.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| CRT data service and data service with entity | Specialized data service for channel DB data access and entity for Retail server exposures.                                                                                                                                                                                                                                                                                                                                                        |
 
-Finally, the SQL update script for your customization must be registered in the Customization.settings file for the Retail software development kit (SDK).
+**How to deploy the CRT extension manually for 7.1 with May update and higher versions:**
 
+After extending the CRT you should drop all the custom library to the …\RetailServer\webroot\bin\Ext for online (POS connected to Retail server) and update the **CommerceRuntime.Ext.config** with the custom library information under the composition section.
+```C#
+Ex: <add source="assembly" value="your custom library name" />. 
+```
+If you library name is Contoso.Commerce.Runtime.CustomerSearchSample you will add the below line under the composition section:
+```C#
+<add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />
+```
+For offline you should you drop the custom library to …\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext and update the **CommerceRuntime.MPOSOffline.ext.config** with the custom library information under the composition section.
+```C#
+Ex: <add source="assembly" value="your custom library name" />.
+```
+The above steps are for manually deployment and testing in your dev box, for packaging and deployment to prod or UAT follow the packaging document.
+
+**How to debug CRT:**
+
+To debug CRT from POS you should attach the CRT extension project to **w3wp.exe (IIS process for Retail server)** process for online (POS connected to CRT). In case of offline attach, the CRT project to **dllhost.exe** process.
+
+**Using extension properties on CRT entities and request/response:**
+
+One way to add new data to an existing commerce runtime (CRT) entity is to use extension properties. Extension properties are key-value pairs on the entity. By default, these key-value pairs aren't persisted into the database, you must write custom code.
+
+**Using extension properties on CRT entities with persistence:**
+
+Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of the object (or transaction depends on the scenario). Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in entire flow. Additionally, if that entity is sent to during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the process. Note: For HQ we send extension properties only for customers and Orders.
+
+However, as we mentioned earlier, it isn't persisted by default. If you want to persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside. You can use a new table and a join, and this is the recommended approach and this approach fits most requirements well. The EmailPreference sample in Retail SDK provides a good end-to-end example.
+
+**Sample Code location in Retail SDK:**
+
+…\RetailSDK\SampleExtensions\CommerceRuntime\Extensions.EmailPreferenceSample
+
+**Scripts:**
+
+…\RetailSDK\Documents\SampleExtensionsInstructions\EmailPreference
+
+**How to set extension property on entity:**
+```C#
+public virtual void SetProperty(string key, object value);
+
+entity.SetProperty("key", value);
+```
+**Ex: **
+
+**Scenario:**
+
+You created new extension table for Retail parameters and from the extension table you want to read a field and send it to POS:
+
+For retail channel DB extension, it always good to have a primary key relation between the main table and extension table, so that you can read the data from the extension table using the primary key.
+
+**To do this follow the below steps:**
+
+1.  Crete your extension table for Retail parameters in channel table with the primary key relation to the main table (in this case its Retail shared parameters)
+
+2.  Identify which CRT data request reads the Retail parameters.
+
+3.  Then add post trigger for that request and using the primary key of the shared parameters table you will query your extension table for Retail shared parameters and read the custom fields.
+
+    Note: You can get the primary for the entity in the post trigger request. The request will have the entity object and that entity object will have all the required fields.
+
+4.  Add those custom fields as extension properties to the shared parameters entity in CRT post trigger and send it to POS
+
+**How to read extension properties in triggers:**
+
+The request which reads the data from retail parameters table is GetChannelConfigurationDataRequest, lets add post trigger for this request:
+
+```C#
+/**
+
+* SAMPLE CODE NOTICE
+*
+* THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+* OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+* THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+*/
+
+namespace Contoso
+
+{
+
+namespace Commerce.Runtime.EmailPreferenceSample
+
+{
+
+using System;
+using System.Collections.Generic;
+using Microsoft.Dynamics.Commerce.Runtime;
+using Microsoft.Dynamics.Commerce.Runtime.Data;
+using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+using Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer;
+using Microsoft.Dynamics.Commerce.Runtime.Messages;
+
+/// <summary>
+/// Class that implements a post trigger for the GetChannelConfigurationDataRequest request type.
+/// </summary>
+
+public class GetChannelConfigurationDataRequestTriggers : IRequestTrigger
+
+{
+
+/// <summary>
+/// Gets the supported requests for this trigger.
+/// </summary>
+
+public IEnumerable<Type> SupportedRequestTypes
+
+{
+get
+{
+
+return new[] { typeof(GetChannelConfigurationDataRequest) };
+}
+
+}
+
+/// <summary>
+/// Post trigger code to retrieve extension properties.
+/// </summary>
+/// <param name="request">The request.</param>
+/// <param name="response">The response.</param>
+
+public void OnExecuted(Request request, Response response)
+{
+
+ThrowIf.Null(request, "request");
+ThrowIf.Null(response, "response");
+var channelConfiguration = ((SingleEntityDataServiceResponse<ChannelConfiguration>)response).Entity;
+if (channelConfiguration == null)
+
+{
+return;
+}
+
+var query = new SqlPagedQuery(QueryResultSettings.SingleRecord)
+{
+
+DatabaseSchema = "ext",
+Select = new ColumnSet(new string[] { "CUSTOMFIELD" }),
+From = "PARAMETERSEXTENSIONVIEW", // Create your own view to read the data from the parameter extension table by passing the primary key from the entity (in this case its Rec ID)
+Where = "PARAMETERSRECID = @RecId AND DATAAREAID = @dataAreaId" //This query assumes i have PARAMETERSRECID, DATAAREAID and CUSTOMFIELD as new fields in the extension tables.
+};
+
+query.Parameters["@RecId"] = channelConfiguration.RetailParametersRecId;
+query.Parameters["@dataAreaId"] = request.RequestContext.GetChannelConfiguration().InventLocationDataAreaId;
+using (var databaseContext = new SqlServerDatabaseContext(request))
+{
+
+ExtensionsEntity extensions = databaseContext.ReadEntity<ExtensionsEntity>(query).FirstOrDefault();
+var customField = extensions != null ? extensions.GetProperty("customField") : null;
+if (customField != null)
+{
+**channelConfiguration.SetProperty("CUSTOMFIELD", customField);**
+}
+
+}
+
+}
+
+/// <summary>
+/// Pre trigger code.
+/// </summary>
+/// <param name="request">The request.</param>
+public void OnExecuting(Request request)
+{
+}
+
+}
+}
+
+}
+```
+**Note:** In your case you will change this query according to your new field and table or whatever the condition. When you design the table make sure you have the primary key field from the parent table so that you query it using the CRT entity, most of the CRT entity should have the primary key field in the entity like RecId or other relevant unique field to select the record.
+
+**How to set extension properties by overriding handler:**
+
+**Scenario:**
+
+You created new extension table for Customer and you want to store the values coming for the extension field for customer from POS or CRT to your custom table.
+
+Note: You can set extension properties either in trigger or by overriding the handler. If you simply set some extension properties by reading form your extension table then you can use triggers.
+
+**To do this follow the below steps:**
+
+1.  Crete your extension table for Customers in channel table with the primary key relation to the main table (in this case its CustTable)
+
+2.  Identify which CRT data request that sets data to the CustTable.
+
+3.  Then override the handler, call the base request to set the main table(CustTable) values and then the extension table.
+
+**Note:** You can send whatever additional properties you want to your extension procedure or view.
+
+The below sample don’t have the SQL scripts used, you can find the full sample code and scripts in Retail SDK under the below locations:
+
+**Code:**
+
+…\RetailSDK\SampleExtensions\CommerceRuntime\Extensions.EmailPreferenceSample
+
+**Scripts:**
+
+…\RetailSDK\Documents\SampleExtensionsInstructions\EmailPreference
+
+**Ex:**
+```C#
+/**
+
+* SAMPLE CODE NOTICE
+
+*
+
+* THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+* OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+* THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+*/
+
+namespace Contoso
+{
+namespace Commerce.Runtime.EmailPreferenceSample
+{
+using System.Transactions;
+using Microsoft.Dynamics.Commerce.Runtime;
+using Microsoft.Dynamics.Commerce.Runtime.Data.Types;
+using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+using Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer;
+
+/// <summary>
+/// Create or update customer data request handler.
+/// </summary>
+
+public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleRequestHandler<CreateOrUpdateCustomerDataRequest, SingleEntityDataServiceResponse<Customer>>
+
+{
+/// <summary>
+/// Executes the workflow to create or update a customer.
+/// </summary>
+/// <param name="request">The request.</param>
+/// <returns>The response.</returns>
+
+protected override SingleEntityDataServiceResponse<Customer> Process(CreateOrUpdateCustomerDataRequest request)
+
+{
+ThrowIf.Null(request, "request");
+using (var databaseContext = new SqlServerDatabaseContext(request))
+using (var transactionScope = new TransactionScope())
+{
+
+// Execute original functionality to save the customer.
+var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();
+var response = (SingleEntityDataServiceResponse<Customer>)requestHandler.Execute(request);
+
+// Execute additional functionality to save the customer's extension properties.
+
+if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
+
+{
+
+// The stored procedure will determine which extension properties are saved to which tables.
+
+ParameterSet parameters = new ParameterSet();
+parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
+databaseContext.ExecuteStoredProcedureNonQuery("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters);
+
+}
+
+transactionScope.Complete();
+return response;
+
+}
+}
+}
+}
+}
+```
+**To enable the property to be read later, you can use this syntax:**
+```C#
+var property = entity.GetProperty("EXTENSION_PROPERTY_ADDED");
+```
 ### Using extension properties on CRT request and response types
 
-Like entities, request and response types can be extended.
+Like entities, request and response types can be extended to set and get extension properties but it will persist only till the lifecycle of that request and it will not be available in POS, if you want to save it to you have write custom code to save it to DB.
+```C#
+request.SetProperty("PropertyName", true);
 
-    request.SetProperty("BoolPropertyName", true);
-    response.SetProperty("BoolPropertyName2", true);
+response.SetProperty("PropertyName2", true);
 
-    bool? BoolPropertyName = (bool?)request.GetProperty("BoolPropertyName");
-    bool? BoolPropertyName2 = (bool?)response.GetProperty("BoolPropertyName2");
+var PropertyName = request.GetProperty("PropertyName");
+
+var BoolPropertyName2 = response.GetProperty("PropertyName2");
+```
+
+**How to set or read extension properties in POS:**
+
+You can set extension properties in POS and send it to CRT using the POS APIs or at the entity level.
+
+To set extension property at Cart line you will use the SaveExtensionPropertiesOnCartLinesClientRequest, similarly for Cart header you will use SaveExtensionPropertiesOnCartClientRequest.
+
+Ex:
+```Typescript
+let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
+Key: "sampleExtensionProperty",
+Value: <ProxyEntities.CommercePropertyValue>{
+BooleanValue: false
+
+}
+
+};
+
+this.context.runtime.executeAsync(new SaveExtensionPropertiesOnCartClientRequest([sampleExtensionProperty]));
+```
+**How to read the extension property from cart in POS:**
+```Typescript
+let getCartRequest: GetCurrentCartClientRequest<GetCurrentCartClientResponse> = new GetCurrentCartClientRequest<GetCurrentCartClientResponse>();
+return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelableDataResult<GetCurrentCartClientResponse>) => {
+let cart: Commerce.Proxy.Entities.Cart = (<GetCurrentCartClientResponse>value.data).result;
+
+// Gets the extension property from the cart.
+
+let sampleExtensionPropertyValue: boolean;
+if (!ObjectExtensions.isNullOrUndefined(cart) && !ObjectExtensions.isNullOrUndefined(cart.ExtensionProperties)) {
+let SampleCommerceProperties: ProxyEntities.CommerceProperty[] = cart.ExtensionProperties.filter((extensionProperty: ProxyEntities.CommerceProperty) => {
+return extensionProperty.Key === "sampleExtensionProperty";
+});
+
+sampleExtensionPropertyValue = SampleCommerceProperties.length > 0 ? SampleCommerceProperties[0].Value.BooleanValue : false;
+} else {
+
+sampleExtensionPropertyValue = false;
+}
+
+//Resolve the promise according to your scenario and method.
+
+return Promise.resolve({ canceled: false });
+
+});
+```
+Similarly, you can read it from all the other entities like Products, customer, Address etc.
 
 ### Implementing a new CRT service that handles multiple new requests
 
