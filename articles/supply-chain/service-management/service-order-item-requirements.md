@@ -74,8 +74,3 @@ If an item requirement is created on a service order, you cannot delete the serv
 
 [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\))
 
-[Consume item requirements in a project](consume-item-requirements-in-a-project.md)
-
-  
-
-
