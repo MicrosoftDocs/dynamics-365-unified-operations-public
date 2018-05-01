@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Automatically create service orders  
 description: You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/30/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,26 +35,23 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 
-
 You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 
 The service orders that you generate from a service agreement are all attached to the service agreement.
 
 Service orders are generated automatically from the following settings:
 
-  - The service agreement interval that is set up in the service agreement lines. The service agreement interval indicates the frequency that service-order lines are created. For more information, see [About service intervals](about-service-intervals.md).
+  - The service agreement interval that is set up in the service agreement lines. The service agreement interval indicates the frequency that service-order lines are created. For more information, see [Service intervals](service-intervals.md).
 
   - The period that you specify to define the service period in the **From date** and **To date** fields in the **Create service orders** form. For more information, see [Create service orders automatically](create-service-orders-automatically.md).
 
   - The **Combine service orders** option on the service agreement header. This option defines whether service order lines generated from a service agreement, combines service orders according to employee, service task, service object, or service agreement. For more information, see [Combine service orders](combine-service-orders.md).
 
-  - The **Time window** option on the service agreement line. The time window defines how far a service order line can move with regard to its calculated date. For more information, see [About time windows](about-time-windows.md).
+  - The **Time window** option on the service agreement line. The time window defines how far a service order line can move with regard to its calculated date. For more information, see [Time windows](time-windows.md).
 
 
 > [!NOTE]
 > <P>If the day that is specified for a service order is not open in the calendar that you have selected in the <STRONG>Service management parameters</STRONG> form, a message will indicate that there is a calendar conflict. You can safely ignore the message; the service order will be created, even though the day is closed on the calendar.</P>
-
-
 
 ## Example 1
 
