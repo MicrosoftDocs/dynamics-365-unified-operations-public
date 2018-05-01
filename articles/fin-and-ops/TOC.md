@@ -1907,7 +1907,7 @@
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
- #### [Enable license plate label printing](../supply-chain/warehousing/tasks/license-plate-label-printing.md)
+#### [Enable license plate label printing](../supply-chain/warehousing/tasks/license-plate-label-printing.md)
 #### [Configure Display older batches within warehouse on a mobile device](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Scan bar codes using a camera in Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
