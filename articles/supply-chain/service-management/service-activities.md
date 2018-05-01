@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Service activities 
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: smmActivityTypeGroup, SMADispatchBoard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -44,15 +44,4 @@ You can view the status of service activities in the **Dispatch board** form. Yo
 ## See also
 
 [Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
-
-[Dispatching service order activities](dispatching-service-order-activities.md)
-
-[About service order stages](about-service-order-stages.md)
-
-[About service orders](about-service-orders.md)
-
-[Deliver service overview](deliver-service-overview.md)
-
-  
-
 
