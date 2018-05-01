@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Reason codes for service orders   
 description: Use reason codes to help explain the status of a service order when the stage of a service order is updated. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/30/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SMAStageTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -53,10 +53,5 @@ Reason codes are optional. You can decide whether to require a reason code when 
 
 [Set up service order stages](set-up-service-order-stages.md)
 
-[Create reason codes](create-reason-codes.md)
-
-[View stage reason codes](view-stage-reason-codes.md)
-
-  
 
 
