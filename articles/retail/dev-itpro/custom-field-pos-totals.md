@@ -41,7 +41,7 @@ Custom fields that you add for the **Totals** panel on the **Custom fields** pag
 
 ## Overview of the required steps
 
-First, you must complete these steps to configure HQ.
+First, you must complete these steps to configure Retail headquarters.
 
 1. On the **Language text** page, add the language text for the custom field.
 2. On the **Custom fields** page, add the new custom field.
@@ -52,7 +52,7 @@ You must then complete this step in the POS extension project.
 
 - Add the business logic for the custom field.
 
-## Configure HQ
+## Configure Retail headquarters
 
 1. Sign in to Retail.
 2. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Language text**.
@@ -81,7 +81,7 @@ You must then complete this step in the POS extension project.
 
 
 7. On the Action Pane, select **Save** to save your changes.
-8. Go to **Retail \> Channel setup \> POS setup \> POS \> Screen layouts text**.
+8. Go to **Retail \> Channel setup \> POS setup \> POS \> Screen layouts**.
 9. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 
     > [!NOTE]
@@ -107,7 +107,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
 1. Start Microsoft Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
 3. Under the **POS.Extensions** project, create a folder that is named **CustomFieldExtensions**.
-4. Under the **CustomControlExtensions** folder, create a folder that is named **Cart**.
+4. Under the **CustomFieldExtensions** folder, create a folder that is named **Cart**.
 5. In the **Cart** folder, create a .ts (typescript) file that is named **SampleCustomField.ts**.
 6. In the **SampleCustomField.ts** file, add the following **import** statement to import the relevant entities and context.
 
@@ -167,9 +167,9 @@ You can find similar sample code in the Retail software development kit (SDK), a
     ```
 
 9. In the **CustomFieldExtensions** folder, create a .json file that is named **manifest.json**.
-10. In the **manifest.json** file, paste the follow code.
+10. In the **manifest.json** file, paste the below code.
 
-    ```typescript
+```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -190,15 +190,17 @@ You can find similar sample code in the Retail software development kit (SDK), a
                     } }
             }  }
     } }
-    ```
+```
 
-    In the manifest, note that the **fieldName** value in the **customFields** section should match the name that you specified for the custom field in step 6 of the "Configure HQ" procedure. If you add multiple custom fields, you should add multiple implementation files and update the information in the **customFields** section of the manifest. The implementation file name is the name of the file that you created in step 27.
+    In the manifest, note that the **fieldName** value in the **customFields** section should match the name of the custom field added in the Retail headquarters, the name you specified for the custom field in step 6 of the "Configure Retail headquarters" procedure. **modulePath** is the name of the implementation file, the implementation file name is the name of the file that you created in step 5 of "Add business logic to the custom field" procedure.
+    
+If you add multiple custom fields, you should add multiple implementation files and update the information under the custonFileds section.
 
     For example, if you add two custom fields, **Sample1** and **Sample2**, you should have two implementation files that extend from the same base class, **CartViewTotalsPanelCustomFieldBase**.
 
     In this case, the manifest should look like this.
 
-    ```typescript
+```typescript
     "customFields": [
         {
             "fieldName": "Sample1",
@@ -209,13 +211,13 @@ You can find similar sample code in the Retail software development kit (SDK), a
             "modulePath": "Cart/SampleCustomField2"
         }
     ]
-    ```
+```
     
     In this example, **SampleCustomField1** and **SampleCustomField2** are the names of the typescript files where you will do the business logic.
 
 11. Open the **extensions.json** file under the **POS.Extensions** project, and update it with the **CustomFieldExtensions** samples, so that POS will load this extension at runtime.
 
-    ```typescript
+```typescript
     {
         "extensionPackages": [
             { 
@@ -226,17 +228,17 @@ You can find similar sample code in the Retail software development kit (SDK), a
             }
         ]
     }
-    ```
+```
 
-12. Open the **tsconfig.json** file, and comment out the extension package folders in the **exclude** list. POS will use this file to include or exclude the extension. By default, the **exclude** list contains all the excluded extensions. To include an extension as part of the POS, you must add the extension folder name and comment out the extension in the **extension** list, as shown here.
+12. Open the **tsconfig.json** file, and add the extension folder name **CustomFieldExtensions** and comment out the extension folder in the **exclude** list. POS will use this file to include or exclude the extension. By default, the **exclude** list contains all the excluded extensions. To include an extension as part of the POS, you must add the extension folder name and comment out the extension in the **extension** list, as shown here.
 
-    ```typescript
+```typescript
     "exclude": [
         "SampleExtensions",
         //"SampleExtensions2",
         //"CustomFieldExtensions"
     ],
-    ```
+```
 
 13. Compile and rebuild the project.
 14. Deploy the customized version of Retail Modern POS (MPOS) by selecting the **Local Machine** button. Make sure that the solution platform is x86. Alternatively, you can create a Retail deployable package and install MPOS from it.
@@ -247,7 +249,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
 ## Validate the customization
 
 1. Sign in to MPOS by using **000160** as the operator ID and **123** as the password.
-2. On the welcome screen, select the current transaction button.
-3. Add any item (0005) to the transaction.
+2. On the welcome screen, select the **Current transaction** button.
+3. Add any item to the transaction.
 
 The custom field should appear in the **Totals** panel.
