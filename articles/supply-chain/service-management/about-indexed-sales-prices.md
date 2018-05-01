@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Indexed sales prices   
 description: You set up the index for a subscription sales price when you create a subscription fee.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/30/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SMASubscriptionCreateDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
