@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Receive partial deliveries of returned items   
 description: Partial deliveries are defined in terms of return order lines, not return order shipments.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/30/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 
-
 Partial deliveries are defined in terms of return order lines, not return order shipments.
 
 This means that if you receive the full quantity that is indicated on one return order line, but you receive nothing from the other lines in the return order, the delivery is not a partial delivery. However, if a return order line requires 10 units of a particular item to be returned, but you receive only four, it is a partial delivery.
@@ -54,14 +53,6 @@ If a return shipment contains less than the full quantity of a return order line
 
 5.  On the **Journal lines, locations** form, select the line for the quantity of items that has arrived, and then click **Post**. You can post the line for the additional quantity after the items have arrived.
 
-## See also
 
-[Post arrival journal for returned products](post-arrival-journal-for-returned-products.md)
-
-[Receiving returned items](receiving-returned-items.md)
-
-[Register the receipt of returned items](register-the-receipt-of-returned-items.md)
-
-  
 
 
