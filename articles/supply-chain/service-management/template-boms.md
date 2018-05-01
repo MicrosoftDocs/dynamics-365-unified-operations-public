@@ -108,12 +108,12 @@ To use template BOMs, you must set up two number sequences. Set up one number se
 
 
 > [!NOTE]
-> <P>Number sequences are used throughout Microsoft Dynamics AX to allocate identifiers to records that require them. Before you can assign a number sequence to a template BOM or a BOM history line number, you must set up number sequences codes. For more information, see <A href="set-up-number-sequences.md">Set up number sequences</A>.</P>
+> <P>Number sequences are used throughout Microsoft Dynamics AX to allocate identifiers to records that require them. Before you can assign a number sequence to a template BOM or a BOM history line number, you must set up number sequences codes.</P>
 
 
 ## Set up number sequences
 
-1.  On the **Number sequences** list page, create number sequences for template BOMs and the BOM history line number. For more information, see [Set up number sequences](set-up-number-sequences.md).
+1.  On the **Number sequences** list page, create number sequences for template BOMs and the BOM history line number. 
 
 2.  Click **Service management** \> **Setup** \> **Service management parameters**.
 
