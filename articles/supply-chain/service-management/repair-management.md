@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Repair management   
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SMAConditionTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
