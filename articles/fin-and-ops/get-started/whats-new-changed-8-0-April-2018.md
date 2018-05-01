@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -96,12 +96,6 @@ moving away from over-layering to the use of extensions.
 Customers can submit a request to Microsoft for extension support to be added to
 the product for a needed scenario. In this release, this feature is moved to
 Lifecycle Services (LCS).
-
-### Extensible project work breakdown structure
-
-Enables customization of the project work breakdown structure using extensions.
-This replaces the hierarchical grid control used for the project work breakdown
-structure with a standard grid that supports hierarchical data.
 
 ### Embedding PowerApps in workspaces and forms
 
