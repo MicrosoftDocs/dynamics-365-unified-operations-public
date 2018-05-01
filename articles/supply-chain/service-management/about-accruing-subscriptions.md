@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accruing subscriptions  
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SMASubscriptionGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Accruing subscriptions 
 
 [!INCLUDE [banner](../includes/banner.md)]
-
 
 
 With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
