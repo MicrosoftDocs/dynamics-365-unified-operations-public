@@ -1,17 +1,38 @@
 ﻿---
-title: About service activities
-TOCTitle: About service activities
-ms:assetid: f721f9d6-b94d-47df-b072-165f33ec8705
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243295(v=AX.60)
-ms:contentKeyID: 62632262
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
+# required metadata
+
+title: Service activities 
+description: Create service activities to define and maintain tasks in a service order.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About service activities 
+# Service activities        
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Create service activities to define and maintain tasks in a service order. A service order can include one or more service activities to be performed by a worker.
