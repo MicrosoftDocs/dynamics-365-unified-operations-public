@@ -1,25 +1,40 @@
-﻿---
-title: About service order item requirements
-TOCTitle: About service order item requirements
-ms:assetid: b7aab3fd-b3df-4bc2-b796-749cddf0a339
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa572246(v=AX.60)
-ms:contentKeyID: 36059106
-ms.date: 05/02/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
-f1_keywords:
-- project
-- service order
-- service management
-- reserve item
+---
+# required metadata
+
+title: Service order item requirements   
+description: If you need to reserve specific items for a service order, you can create inventory item requirements for it.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ProjSalesItemReq
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# About service order item requirements 
+# Service order item requirements   
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-
-In Microsoft Dynamics AX 2012, you can create a service order to track and manage services that you provide to your customers. If you need to reserve specific items for a service order, you can create inventory item requirements for it. An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.
+You can create a service order to track and manage services that you provide to your customers. If you need to reserve specific items for a service order, you can create inventory item requirements for it. An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.
 
 By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.
 
