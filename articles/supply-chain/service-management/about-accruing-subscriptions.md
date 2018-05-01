@@ -27,7 +27,6 @@ ms.search.region: Global
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Accruing subscriptions 
