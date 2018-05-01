@@ -1,8 +1,8 @@
-﻿---
+---
 # required metadata
 
 title: Service level agreements 
-description: A service level agreement (SLA) is an agreement between a service company and a service customer. In an SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
+description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/01/2018
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SMAServicelevelagreement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 
-A service level agreement (SLA) is an agreement between a service company and a service customer. In an SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
+A service level agreement (SLA) is an agreement between a service company and a service customer. In a SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
 
-An SLA enforces a standard level of service that is offered to customers, and also makes it transparent to a service company when a service job should be completed.
+A SLA enforces a standard level of service that is offered to customers, and also makes it transparent to a service company when a service job should be completed.
 
 Any number of SLAs can be created to offer service customers different levels of service.
 
