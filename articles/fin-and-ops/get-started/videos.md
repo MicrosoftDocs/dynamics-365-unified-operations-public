@@ -40,7 +40,7 @@ This page lists Microsoft-created "how-to" and Tech talk videos relating to Dyna
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
 
 ### Dynamics 365 for Finance and Operations
-This section lists the "how-to" videos for Dynamics 365 for Finance and Operations that are hosted on the channel.
+Videos are listed by feature, so scroll down to see the entire list of video content.  
 
 #### Data integration
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
@@ -71,12 +71,12 @@ This section lists the "how-to" videos for Dynamics 365 for Finance and Operatio
 - [Release production picking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-### Development & administration
+### Development & administration for Finance and Operations
 - [Setting up a development branch and build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Setting up a development machine](https://www.youtube.com/watch?v=cqp9MetfiyM)
 - [Visual Studio Team Services integration with Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
-### Dynamics Lifecycle Services (LCS)
+#### Lifecycle Services (LCS)
 - [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Cloud-hosted environments](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
 - [Creating support tickets from Dynamics 365 for Operations](https://www.youtube.com/watch?v=avENUYBTBlA&t=2s)
