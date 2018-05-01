@@ -64,7 +64,7 @@ A service order is approved by the dispatcher. The dispatcher updates the stage 
 
 ## Specify item requirements for service orders
 
-You can specify the inventory items that are required for service orders. However, the service order must be associated with a project. Item requirements for service orders are processed through a project. For more information, see [Create an item requirement](create-an-item-requirement.md).
+You can specify the inventory items that are required for service orders. However, the service order must be associated with a project. Item requirements for service orders are processed through a project. 
 
 **Example**
 
