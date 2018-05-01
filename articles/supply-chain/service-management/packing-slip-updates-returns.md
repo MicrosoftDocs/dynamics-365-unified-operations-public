@@ -45,7 +45,7 @@ If not all of the expected return items have arrived, you should include only th
 
 If an item is sent back from quarantine to the Shipping and Receiving department, such as when the quarantine inspector does not know where to store the item in inventory, the corresponding packing slip must be updated to correctly register and act on the disposition code that is specified as a result of the quarantine.
 
-When you update a packing slip for a returned item that is from a sales agreement, the sales agreement commitment for that item is automatically updated to reflect the change in the quantity or the amount. For more information about returning an item that is from a sales agreement, see [Return an item ordered from a sales agreement](return-an-item-ordered-from-a-sales-agreement.md). For more information about sales agreements, see [About sales agreements](about-sales-agreements.md).
+When you update a packing slip for a returned item that is from a sales agreement, the sales agreement commitment for that item is automatically updated to reflect the change in the quantity or the amount. 
 
 ## See also
 
