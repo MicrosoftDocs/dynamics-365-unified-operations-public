@@ -77,7 +77,7 @@ Every cash register must be set up to communicate with the fiscal service. You c
 <li><strong>Cash register URL</strong> – Enter the URL of the fiscal service.
 <blockquote>[!WARNING]<br>Third-party services or other services that you configure here don&#39;t require certification, and they might not meet Microsoft privacy standards. You should review each service&#39;s privacy documentation and work with each service provider to learn more about the level of compliance that each service provides. You&#39;re responsible for making sure that these services meet your security-related, privacy-related, and legal standards. You bear the risk of using these services. Microsoft gives no express warranties, guarantees, or conditions. We strongly recommend that you use only services that provide secure and authorized connections (that is, services that use the HTTPS protocol).</blockquote>
 </li>
-<li><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service). In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored. For more information, see <a href="https://support.microsoft.com/en-us/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</li>
+<li><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service). In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored. For more information, see <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</li>
 <li><strong>Class name</strong> – Select the class where specifics of the integration with the fiscal service are implemented. The available class is <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
 </ul>
 </td>
@@ -87,7 +87,7 @@ Every cash register must be set up to communicate with the fiscal service. You c
 <td>For each cash register, select the ER formats to use to print receipts, send requests to the fiscal service, and receive responses from the fiscal service. The ER formats that you select must be appropriate for the legal entity&#39;s primary address.</td>
 <td>For example, for the receipt format, select <strong>Cash receipt format (AT)</strong> for Austria and <strong>Cash receipt format (CZ)</strong> for the Czech Republic.
 
-If you can't find a format in the list, you can download recent electronic formats from LCS. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</td>
+If you can't find a format in the list, you can download recent electronic formats from LCS. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</td>
 </tr>
 <tr>
 <td>Cash register certificate settings</td>

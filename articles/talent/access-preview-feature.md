@@ -54,9 +54,9 @@ You can use the **Preview Features** setting in the Microsoft Dynamics 365 for T
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue.
 4. Refresh your browser to start to see the new features. (Any users who are already signed in will see the features the next time that they sign in, or they can refresh their browser to see the features immediately.)
 
-#### Talent
+#### Core HR
 
-1. Sign in to Talent.
+1. Sign in to Talent. The core Human resources workspace will open, from which you'll complete the remaining steps. 
 2. Select **System administration \> Links System parameters**.
 3. On the **System Parameters page**, on the **Preview features** tab, set the **Enable preview mode for all users** option to **Yes** to make preview features available.
 

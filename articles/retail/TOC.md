@@ -24,6 +24,7 @@
 # Sales tax
 ## [Sales tax overview](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Sales tax calculation methods in the Origin field](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Whole amount and Interval calculation options for sales tax codes](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Call center
