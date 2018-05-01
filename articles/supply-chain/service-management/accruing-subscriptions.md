@@ -131,9 +131,6 @@ The following table provides an overview of which accrual periods can be set up 
 </tbody>
 </table>
 
-
-For more information about how to create a new period type, see [Generate timesheet periods](generate-timesheet-periods.md).
-
 Setting up the invoicing period is a mandatory part of the overall subscription group setup. You can decide whether to also set up an accrual period for the subscription group. If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field. This field is found in the **Accrue subscription revenue** form, when you accrue subscription revenue. However, the accrual period is optional information about the subscription group.
 
 
