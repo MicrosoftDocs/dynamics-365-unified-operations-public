@@ -1,17 +1,38 @@
-﻿---
-title: Accrue subscription revenue
-TOCTitle: Accrue subscription revenue
-ms:assetid: e9f2fa26-6774-4d2f-bc92-06a88b34e4c2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa551481(v=AX.60)
-ms:contentKeyID: 36688039
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243195(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Accrue subscription revenue  
+description: Accrue subscription revenue.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionAccrueDialog
+
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Accrue subscription revenue 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.
@@ -22,7 +43,7 @@ _tocRel: gg243195(v=ax.60)/toc.json
 
 
 > [!NOTE]
-> <P>You cannot post accrued revenue until the fee transactions are invoiced.</P>
+> You cannot post accrued revenue until the fee transactions are invoiced.
 
 
   
