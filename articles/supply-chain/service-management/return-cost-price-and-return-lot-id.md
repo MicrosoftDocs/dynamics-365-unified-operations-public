@@ -1,8 +1,8 @@
-﻿---
+---
 # required metadata
 
 title: Return cost price and return lot ID    
-description: The cost of products that are returned to inventory is calculated by using the current cost of the products. However, you might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
+description: You might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/30/2018
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ReturnTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
