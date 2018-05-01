@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add a new location and party relationship type
-description: This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
+description: This article explains how to add a new location and party relationship type.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/01/2018
@@ -46,7 +46,9 @@ There are two ways to add a new location role:
   
         ![LogisticsLocationRoleType](media/Logistics.PNG)
 
-    2. Create a new resource file for the new role, and then assign value for its properties. 
+    2. Create a new resource file for the new role, and then assign value for its properties.
+     
+     ![New resource file](media/Resource.PNG)
         
     3.  Create data population class and provide a handler method to populate the new role. 
 
@@ -70,6 +72,8 @@ There are 2 ways to add a new relationship type:
     1.  Create an extension to enum DirSystemRelationshipType and add the new relationship type.
 
     2. Create an initializer to this new type. You can find several examples in core code, one of them is  DirRelationshipTypeChildInitializer, that is an initializer class for party relationship type “Child”. You can start with your initializer by copy and paste this code and then update the yellow parts accordingly.
+    
+    ![DirRelationshipChild](media/DirRelationship.PNG)
 
     3.  To test, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). After it is
         completed, you should be able to see the new relationship type populated in DirRelationshipTypeTable, and the new relationship type will be available in the **Relationship types** page.
