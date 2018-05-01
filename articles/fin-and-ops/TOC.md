@@ -1537,7 +1537,7 @@
 #### [Set up permissions for ordering products on behalf of someone else](../supply-chain/procurement/tasks/set-up-permissions-ordering-products.md)
 
 ### Procurement and sourcing tasks
-#### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
+
 #### [Set up project resource information](../supply-chain/procurement/tasks/set-up-project-resource-information.md)
 #### [Submit and approve project budgets](../supply-chain/procurement/tasks/submit-approve-project-budget.md)
 #### [Submit and approve project budget revisions](../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md)
