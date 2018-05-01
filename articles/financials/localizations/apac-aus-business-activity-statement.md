@@ -71,7 +71,7 @@ The following list provides an overview of the process to calculate GST and prep
 </td>
 </tr>
   <td>Download Electronic reporting configurations</td>
-  <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
+  <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
 </tr>
 <tr>
   </tr>

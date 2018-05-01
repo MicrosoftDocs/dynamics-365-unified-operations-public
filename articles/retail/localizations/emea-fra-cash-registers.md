@@ -317,7 +317,7 @@ To digitally sign Period grand total journals and archives, you must set up digi
 - The certificate must be uploaded to the Key Vault storage.
 - The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).
+For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
 
 Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
 
