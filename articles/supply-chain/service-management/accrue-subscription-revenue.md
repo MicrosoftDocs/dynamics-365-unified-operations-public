@@ -43,7 +43,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 > [!NOTE]
-> You cannot post accrued revenue until the fee transactions are invoiced.
+> <P>You cannot post accrued revenue until the fee transactions are invoiced.<P>
 
 
   
