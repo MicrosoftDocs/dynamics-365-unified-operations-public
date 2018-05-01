@@ -5,7 +5,7 @@ title: Virtual machines that don't allow administrator access FAQ
 description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
