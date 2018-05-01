@@ -1,18 +1,37 @@
-﻿---
-title: About the dispatch board
-TOCTitle: About the dispatch board
-ms:assetid: c17962a4-7ea1-4c2e-82db-69e84b8a534a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg213633(v=AX.60)
-ms:contentKeyID: 36059274
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Dispatch board   
+description: A dispatch board is the central location from which you can view the status of activities in a service order. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# About the dispatch board 
+#  Dispatch board 
 
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A dispatch board is the central location from which you can view the status of activities in a service order. You can perform the following tasks in a dispatch board:
 
@@ -34,13 +53,7 @@ For information about how to perform specific tasks in a dispatch board, see the
 
 [Set up a preferred technician](set-up-a-preferred-technician.md)
 
-[Monitor service activities](monitor-service-activities.md)
 
-[View dispatch teams](view-dispatch-teams.md)
-
-[Prioritize service orders](prioritize-service-orders.md)
-
-[View the status of service orders](view-the-status-of-service-orders.md)
 
   
 
