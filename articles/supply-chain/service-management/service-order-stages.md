@@ -1,17 +1,37 @@
-﻿---
-title: About service order stages
-TOCTitle: About service order stages
-ms:assetid: 78a8cb66-5faa-4c17-86a0-62836e9c953c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa550052(v=AX.60)
-ms:contentKeyID: 62629947
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg243285(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Service order stages  
+description: By defining the stages for a service order and assigning them to workers, you control the flow of a service order through the tasks that various people perform in the service organization.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/30/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable, SMAStageTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# About service order stages 
+# Service order stages   
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can set up stages for a service order to define the tasks that must be completed, the order in which they are completed, and the workers who are responsible for completing them. By defining the stages for a service order and assigning them to workers, you can control the flow of a service order through the tasks that various people perform in the service organization. The sequence of stages must include an initial stage.
