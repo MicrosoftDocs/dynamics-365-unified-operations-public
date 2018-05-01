@@ -1827,37 +1827,40 @@
 ## [Sales and marketing](../supply-chain/sales-marketing/overview-sales-marketing.md)
 ### Sales orders
 #### [Order promising](../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md)
-#### [Delivery alternatives](../supply-chain/sales-marketing/delivery-alternatives.md)
 #### [Order entry deadlines](../supply-chain/sales-marketing/order-entry-deadlines.md)
+#### [Delivery alternatives](../supply-chain/sales-marketing/delivery-alternatives.md)
 #### [Direct deliveries](../supply-chain/sales-marketing/direct-deliveries.md)
 #### [Delivery schedules](../supply-chain/sales-marketing/delivery-schedules.md)
+#### [Create a delivery schedule](../supply-chain/sales-marketing/tasks/create-delivery-schedule.md)
 #### [Serial numbers in the sales process](../supply-chain/sales-marketing/register-serial-numbers-sales-process.md)
 #### [Reservation from same batch](../supply-chain/sales-marketing/reserve-same-batch-sales-order.md)
 #### [Sales orders mobile workspace](../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)
+#### [Ship orders as direct deliveries](../supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries.md)
+#### [Ship sales orders without warehousing](../supply-chain/sales-marketing/tasks/ship-sales-orders-without-warehousing.md)
+#### [Create a purchase order from a sales order](../supply-chain/sales-marketing/tasks/create-purchase-order-sales-order.md)
+#### [Create sales orders](../supply-chain/sales-marketing/tasks/create-sales-orders.md)
+#### [Manage order holds](../supply-chain/sales-marketing/tasks/manage-order-holds.md)
+#### [Confirm sales orders](../supply-chain/sales-marketing/tasks/confirm-sales-orders.md)
+
+
 ### [Sales agreements](../supply-chain/sales-marketing/sales-agreements.md)
+#### [Enter sales agreements](../supply-chain/sales-marketing/tasks/enter-sales-agreements.md)
+#### [Fulfill sales agreements](../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md)
+#### [Create a new trade agreement](../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md)
+#### [Generate and process customer rebates](../supply-chain/sales-marketing/tasks/process-customer-rebates.md)
+#### [Process rebates for payment](../supply-chain/sales-marketing/tasks/process-rebates-payment.md)
+#### [Look up applicable prices and discounts](../supply-chain/sales-marketing/tasks/look-up-applicable-prices-discounts.md)
+
 ### Sales quotations
 #### [Price simulation](../supply-chain/sales-marketing/price-simulation.md)
+#### [Mass create sales quotations](../supply-chain/sales-marketing/tasks/mass-sales-quotations.md)
+#### [Create and edit sales quotations](../supply-chain/sales-marketing/tasks/create-edit-sales-quotations.md)
 ### Returns
 #### [Sales returns](../supply-chain/warehousing/sales-returns.md)
 
-### Sales and marketing tasks
-#### [Confirm sales orders](../supply-chain/sales-marketing/tasks/confirm-sales-orders.md)
-#### [Create a delivery schedule](../supply-chain/sales-marketing/tasks/create-delivery-schedule.md)
-#### [Create and edit sales quotations](../supply-chain/sales-marketing/tasks/create-edit-sales-quotations.md)
-#### [Create a new trade agreement](../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md)
-#### [Create a purchase order from a sales order](../supply-chain/sales-marketing/tasks/create-purchase-order-sales-order.md)
-#### [Create sales orders](../supply-chain/sales-marketing/tasks/create-sales-orders.md)
-#### [Enter sales agreements](../supply-chain/sales-marketing/tasks/enter-sales-agreements.md)
-#### [Fulfill sales agreements](../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md)
-#### [Look up applicable prices and discounts](../supply-chain/sales-marketing/tasks/look-up-applicable-prices-discounts.md)
-#### [Manage order holds](../supply-chain/sales-marketing/tasks/manage-order-holds.md)
-#### [Mass create sales quotations](../supply-chain/sales-marketing/tasks/mass-sales-quotations.md)
-#### [Generate and process customer rebates](../supply-chain/sales-marketing/tasks/process-customer-rebates.md)
-#### [Process rebates for payment](../supply-chain/sales-marketing/tasks/process-rebates-payment.md)
+### Commission
 #### [Register sales commissions](../supply-chain/sales-marketing/tasks/register-sales-commissions.md)
 #### [Set up sales commission rules](../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md)
-#### [Ship orders as direct deliveries](../supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries.md)
-#### [Ship sales orders without warehousing](../supply-chain/sales-marketing/tasks/ship-sales-orders-without-warehousing.md)
 
 ## [Transportation management](../supply-chain/transportation/transportation-management-overview.md)
 ### [Transportation management engines](../supply-chain/transportation/transportation-management-engines.md)
