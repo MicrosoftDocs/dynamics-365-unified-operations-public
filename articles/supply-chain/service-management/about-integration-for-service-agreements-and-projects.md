@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Integration for service agreements and projects 
-description: When you work with service agreements and service agreement lines, you use data that is set up in the areas in **Project management and accounting**.
+description: When you work with service agreements and service agreement lines, you use data that is set up in the areas in Project management and accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/30/2018
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ProjParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -39,31 +39,28 @@ When you work with service agreements and service agreement lines, you use data 
 
 ## Project prices
 
-The cost and the sales price for a service agreement transaction are derived from the cost price setup that applies to the project that is attached to the service agreement. Cost and sales prices can be set up by project, employee, and category. For more information about project cost and sales prices, see [Set up cost prices and sales prices for projects](set-up-cost-prices-and-sales-prices-for-projects.md) and [About sales price models](about-sales-price-models.md).
+The cost and the sales price for a service agreement transaction are derived from the cost price setup that applies to the project that is attached to the service agreement. Cost and sales prices can be set up by project, employee, and category. 
 
 ## Project validation
 
-The projects, employees, and categories that are available for selection on a service agreement line can be limited by the validation setup in **Project management and accounting**. By using the validation setup, you can combine employees, projects, and categories for control access. For more information about validation, see [About validation in projects](about-validation-in-projects.md).
+The projects, employees, and categories that are available for selection on a service agreement line can be limited by the validation setup in **Project management and accounting**. By using the validation setup, you can combine employees, projects, and categories for control access. 
 
 ## Project line properties
 
 A line property is entered automatically for a service agreement line.
 
-Line properties are created in the **Line properties** form in **Project management and accounting**. The line property that is entered on a service agreement is attached to the project that is selected for the service agreement and inherited subsequently by the service agreement line. For more information about line properties, see [About line property setup](about-line-property-setup.md).
+Line properties are created in the **Line properties** form in **Project management and accounting**. The line property that is entered on a service agreement is attached to the project that is selected for the service agreement and inherited subsequently by the service agreement line. 
 
 ## Default offset accounts
 
-If you enter an expense transaction, a default expense offset account is selected automatically for the transaction. The default expense account is set up for the project that is attached to the current service agreement. For more information about default expense accounts, see [Default offset account for expenses (form)](https://technet.microsoft.com/en-us/library/aa616251\(v=ax.60\)).
+If you enter an expense transaction, a default expense offset account is selected automatically for the transaction. The default expense account is set up for the project that is attached to the current service agreement.
 
 ## Project categories
 
-The categories that are available for service agreement lines are set up in the **Project categories** form in **Project management and accounting**. For more information about project categories, see [About project category groups](about-project-category-groups.md).
-
+The categories that are available for service agreement lines are set up in the **Project categories** form in **Project management and accounting**. 
 
 > [!NOTE]
 > <P>Categories that have the <STRONG>Active in journals</STRONG> check box selected on the <STRONG>Project</STRONG> tab in the <STRONG>Project categories</STRONG> form are available for selection. However, if the <STRONG>Inactive categories</STRONG> check box is selected on the <STRONG>Journals</STRONG> tab in the <STRONG>Project management and accounting parameters</STRONG> form, all categories are available for selection.</P>
-
-
 
 ## Project parameters
 
@@ -89,8 +86,5 @@ Also, you can enable the **Start time** and **End time** fields on the **Project
 
 
 
-For more information about journal names for projects, see [About journal names](about-journal-names.md).
-
-  
 
 
