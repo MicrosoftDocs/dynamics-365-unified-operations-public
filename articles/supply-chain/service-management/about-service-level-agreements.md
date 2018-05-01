@@ -1,21 +1,38 @@
 ﻿---
-title: About service level agreements
-TOCTitle: About service level agreements
-ms:assetid: 05290d56-0616-4517-aa20-ec6bc86258d6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg230663(v=AX.60)
-ms:contentKeyID: 37832489
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg242492(v=ax.60)/toc.json
-f1_keywords:
-- sla
-- service agreement
-- service level
+# required metadata
+
+title: Service level agreements 
+description: A service level agreement (SLA) is an agreement between a service company and a service customer. In an SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
-# About service level agreements 
+# Service level agreements        
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 A service level agreement (SLA) is an agreement between a service company and a service customer. In an SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
