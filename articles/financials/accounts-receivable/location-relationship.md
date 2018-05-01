@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 There are two ways to add a new location role:
 
-1.  Add it through the **Address and contact information purpose** page. The new role will be saved into LogisticsLocationRole table with type = 0, which indicates the role is not a system role define in LogisticsLocationRoleType enum and its extensions. User will be able to use it when creating address or contact information.
+1.  Add it through the **Address and contact information purpose** page. The new role will be saved into LogisticsLocationRole table with type = 0, which indicates the role is not a system role define in LogisticsLocationRoleType enum and its extensions. A user will be able to use it when creating address or contact information.
 
     ![Address and content information purpose](media/Address-Contact.PNG)
 
@@ -54,12 +54,11 @@ There are two ways to add a new location role:
 
         ![Data population](media/Dirdata.PNG)
 
-    4.  To test, you can create a runnable class, and call DirDataPopulation::insertLogisticsLocationRoles() in Main(). After it is
-        completed, you should be able to see the new role populated in LogisticsLocationRole table with type \> 0, and the new role should show on the **Address and contact information purpose** page as well.
+    4.  To test the new location role, you can create a runnable class, and call DirDataPopulation::insertLogisticsLocationRoles() in Main(). After it is completed, you should be able to see the new role populated in LogisticsLocationRole table with type \> 0, and the new role will show on the **Address and contact information purpose** page.
 
         ![Insert New Location](media/InsertNewLocation.PNG)
 
-## Add new party relationship types to the system
+## Add new party relationship types 
 
 There are 2 ways to add a new relationship type:
 
@@ -71,11 +70,10 @@ There are 2 ways to add a new relationship type:
 
     1.  Create an extension to enum DirSystemRelationshipType and add the new relationship type.
 
-    2. Create an initializer to this new type. You can find several examples in core code, one of them is  DirRelationshipTypeChildInitializer, that is an initializer class for party relationship type “Child”. You can start with your initializer by copy and paste this code and then update the yellow parts accordingly.
+    2. Create an initializer to this new type. You can find several examples in the core code, one of them is  DirRelationshipTypeChildInitialize. This is an initializer class for party relationship type “Child”. You can start with your initializer by copying and pasting this code and then update the highlighted areas.
     
     ![DirRelationshipChild](media/DirRelationship.PNG)
 
-    3.  To test, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). After it is
-        completed, you should be able to see the new relationship type populated in DirRelationshipTypeTable, and the new relationship type will be available in the **Relationship types** page.
+    3.  To test, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). You should be able to see the new relationship type in the DirRelationshipTypeTable, and the new relationship type will be available in the **Relationship types** page.
 
         ![Runnable class](media/Runnable.PNG)
