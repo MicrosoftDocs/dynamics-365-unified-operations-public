@@ -83,7 +83,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
     > [!NOTE]
     > You must generate the proxy for all Retail server extensions.
 
-## Generate the C# proxy (7.1 and 7.2) - These step are not not applicable for 7.3 and higher versions.
+## Generate the C# proxy (7.1 and 7.2) - These step are not applicable for 7.3 and higher versions.
 
 1. Open the **Customization.settings** files from **...Retail SDK\BuildTools**.
 2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all custom Retail server extension libraries, as shown here.
