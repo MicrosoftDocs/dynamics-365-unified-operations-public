@@ -5,7 +5,7 @@ title: Typescript and C# proxies for Retail POS
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -83,7 +83,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
     > [!NOTE]
     > You must generate the proxy for all Retail server extensions.
 
-## Generate the C# proxy (7.1 and 7.2) - These step are not not applicable for 7.3 and higher versions.
+## Generate the C# proxy (7.1 and 7.2) - These steps are not applicable for version 7.3 and higher
 
 1. Open the **Customization.settings** files from **...Retail SDK\BuildTools**.
 2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all custom Retail server extension libraries, as shown here.
