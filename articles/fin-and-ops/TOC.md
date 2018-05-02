@@ -1869,6 +1869,7 @@
 ### [Create a bill of lading](../supply-chain/transportation/create-bill-of-lading.md)
 ### [Plan freight transportation routes](../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md)
 ### [Plan loads using hub consolidation](../supply-chain/transportation/plan-loads-hub-consolidation.md)
+#### [Plan loads and shipments using the Load planning workbench](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 ### [Include container weight and volume on load](../supply-chain/transportation/include-container-weight-volume-on-load.md) 
 ### [Reconcile freight manually](../supply-chain/transportation/tasks/reconcile-freight-manually.md)
 ### [Reconcile freight](../supply-chain/transportation/reconcile-freight-transportation-management.md)
@@ -1904,6 +1905,7 @@
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Picking and packing
 #### [Set up cluster picking](../supply-chain/warehousing/set-up-cluster-picking.md)
+#### [Set up containerization](../supply-chain/warehousing/tasks/set-up-containerization.md)
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1931,6 +1933,7 @@
 ### [Replenishment](../supply-chain/warehousing/replenishment.md)
 #### [Immediate replenishment](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Replenishment with withdrawal kanbans](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
+#### [Set up a min-max replenishment process](../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md)
 ### [Install and configure the warehousing app ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Configure field names in warehousing app](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
 #### [Set up mobile devices for warehouse work](../supply-chain/warehousing/configure-mobile-devices-warehouse.md)
@@ -1947,17 +1950,6 @@
 #### [Cross-dock products from receiving warehouse to stores](../supply-chain/warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md)
 #### [Set up a location directive for purchase order put-away](../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 #### [Set up a work template for purchase orders](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
-
-### Warehouse management tasks
-
-
-### [Set up a min-max replenishment process](../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md)
-#### [Set up containerization](../supply-chain/warehousing/tasks/set-up-containerization.md)
-
-
-
-
-#### [Plan loads and shipments using the Load planning workbench](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
 # [Development & administration for Finance and Operations](../dev-itpro/toc.md)
 
