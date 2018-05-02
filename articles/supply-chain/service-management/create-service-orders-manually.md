@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 You can create service orders manually by using a service agreement or by using the **Service orders** form. You can also create a service order from a project.
 
 > [!TIP]
-> <P>You can use automated processes to create service orders. For more information, see <A href="create-service-orders-automatically.md">Create service orders automatically</A></P>
+> <P>You can use automated processes to create service orders. 
 
 ## Create a service order manually from a service agreement
 
