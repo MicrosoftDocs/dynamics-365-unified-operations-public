@@ -1,31 +1,43 @@
-﻿---
-title: Create service orders manually
-TOCTitle: Create service orders manually
-ms:assetid: baa499dc-5003-4e1d-bb0c-3f8990e67548
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa498854(v=AX.60)
-ms:contentKeyID: 36059127
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243195(v=ax.60)/toc.json
-f1_keywords:
-- project
-- sales order wizard
-- service agreement
-- service order
+---
+# required metadata
+
+title: Create service orders manually   
+description: You can create service orders manually by using a service agreement or by using the **Service orders** form. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create service orders manually 
+# Create service orders manually    
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can create service orders manually by using a service agreement or by using the **Service orders** form. You can also create a service order from a project.
 
-
 > [!TIP]
 > <P>You can use automated processes to create service orders. For more information, see <A href="create-service-orders-automatically.md">Create service orders automatically</A></P>
-
-
 
 ## Create a service order manually from a service agreement
 
@@ -35,8 +47,6 @@ You can create service orders manually by using a service agreement or by using 
 
 3.  Click the **Deliver** tab and in the **Create** group click **Planned service orders** to open the **Create service orders** form.
 
-4.  See [Create service orders (class form)](https://technet.microsoft.com/en-us/library/aa553901\(v=ax.60\)) for more information about how to create a service order.
-
 ## Create a service order manually in the Service orders form
 
 1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
@@ -45,11 +55,8 @@ You can create service orders manually by using a service agreement or by using 
 
 3.  Create service order lines for the service order.
 
-
 > [!NOTE]
 > <P>If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</P>
-
-
 
 ## Create a service order from a project
 
@@ -59,11 +66,8 @@ You can create service orders manually by using a service agreement or by using 
 
 3.  Follow the previous procedure to create a service order manually in the **Service orders** form. The **Project ID** field displays the project reference.
 
-
 > [!NOTE]
 > <P>If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement. If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</P>
-
-
 
 ## Create a service order from the Sales order form
 
@@ -93,12 +97,12 @@ You can create a service order from the **Sales orders** form by using the **Cre
 
 6.  Click **Next \>**, and then click **Finish**.
 
+
 ## See also
 
-[About service orders](about-service-orders.md)
+[Service orders](service-orders.md)
 
-[About automatically creating service orders](about-automatically-creating-service-orders.md)
+[Create service orders automatically](create-service-orders-automatically.md)
 
-  
-
+[Create service orders (class form)](https://technet.microsoft.com/en-us/library/aa553901\(v=ax.60\)) 
 
