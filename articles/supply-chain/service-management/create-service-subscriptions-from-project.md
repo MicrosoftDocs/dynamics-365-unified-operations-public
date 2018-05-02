@@ -1,17 +1,37 @@
-﻿---
-title: Create service subscriptions from a project
-TOCTitle: Create service subscriptions from a project
-ms:assetid: 7ae24d7f-a6d4-414d-b740-0eb27509e6e7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa550073(v=AX.60)
-ms:contentKeyID: 36058251
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Create service subscriptions from a project 
+description: You can create a service subscription from a project in Project management and accounting.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create service subscriptions from a project 
+# Create service subscriptions from a project    
 
-
+[!INCLUDE [banner](../includes/banner.md)
 
 
 You can create a service subscription from a project in **Project management and accounting**.
@@ -34,7 +54,7 @@ You can now create subscription transactions for the subscription.
 
 ## See also
 
-[About subscription sales prices](about-subscription-sales-prices.md)
+[Subscription sales prices](subscription-sales-prices.md)
 
   
 
