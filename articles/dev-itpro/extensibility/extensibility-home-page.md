@@ -69,6 +69,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extensions](class-extensions.md)
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
++ [Relax model restrictions to enable the refactoring of over-layering into extensions](refactoring-over-layering.md)
   
 ## How do I..?
 
