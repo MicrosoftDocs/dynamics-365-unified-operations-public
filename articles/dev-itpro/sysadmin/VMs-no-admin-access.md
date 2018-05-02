@@ -51,7 +51,6 @@ Yes, you have full access to the service volume drive. Therefore, you can clean 
 
 ## What are the alternatives to VMs that don't allow administrator access?
 Both a Microsoft Azure VM on a private Azure subscription and a local virtual hard disk (VHD) allow administrator access. However, you must run Visual Studio as an administrator. This requirement applies because the administrator has access to these alternatives only through the **administrator** group, not explicitly.
-
 ## Can I run Visual Studio as an administrator?
 Starting with Platform update 12, you're no longer required to run Visual Studio as an administrator. You can no longer use the Remote Desktop Protocol (RDP) to connect as an administrator to VMs that are under a Microsoft-owned Azure subscription. These VMs include the Tier 1 VM that is included in the subscription and Tier 1 add-on VMs. However, if you're connecting as an administrator to a VM that isn't under a Microsoft-owned subscription, you must still run Visual Studio as an administrator.
 
@@ -91,3 +90,13 @@ You can put the system into maintenance mode to change the license configuration
 
 ## Can I install a license deployable package?
 You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
+
+## Is licensing Visual Studio (VS) by entering a product key supported?
+Entering a VS product key is not supported. We recommend using VS subscription licensing and signing into VS with the email address connected to the VS subscription is supported.
+
+## Can I upgrade my database to a new application release?
+As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
+The process described in [Upgrade data in development, demo, or sandbox environments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update/) executes the data upgrade package from the command line and that requires you to be an administrator on the VM.
+
+## What do I need to know if I am developing for Retail?
+If you are developing for Dynamics 365 for Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/cloud-dev-box).
