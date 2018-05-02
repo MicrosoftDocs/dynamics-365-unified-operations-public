@@ -48,7 +48,7 @@ Use the following steps to create a service object relation for a service agreem
 
 4.  In the **Service objects** form, click **New**, and then select a service object for this service agreement.
 
-5.  To assign a template bill of materials (BOM) to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. For more information about template BOMs, see [About template BOMs](about-template-boms.md).
+5.  To assign a template bill of materials (BOM) to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. For more information about template BOMs, see [Template BOMs](template-boms.md).
 
 ## Create a service object relation for a service order
 
@@ -62,7 +62,7 @@ Use the following steps to create a service object relation for a service order:
 
 4.  In the **Service objects** form, click **New**, and then select a service object for this service order.
 
-5.  To assign a template BOM to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. For more information about template BOMs, see [About template BOMs](about-template-boms.md).
+5.  To assign a template BOM to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. For more information about template BOMs, see [Template BOMs](template-boms.md).
 
 ## See also
 
