@@ -1,17 +1,37 @@
-﻿---
-title: Add an address to a service order
-TOCTitle: Add an address to a service order
-ms:assetid: 58bfa7d0-020b-45e8-8a5d-3a37d97ea462
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa549071(v=AX.60)
-ms:contentKeyID: 62629946
-ms.date: 07/25/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Add an address to a service order   
+description: This topic describes how to add a customer address to a service order.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/02/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Add an address to a service order 
+# Add an address to a service order    
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This topic describes how to add a customer address to a service order. When you create a service order, the address information is transferred from the project that the service order is attached to. However, you can select an alternative location from addresses that are already entered in Microsoft Dynamics AX for customers, vendors, sites, warehouses, service orders, and projects.
@@ -30,12 +50,11 @@ To add an address to a service order, follow these steps:
 
 4.  On the **Address** FastTab, click **Add address**.
 
-5.  In the **New address** form, enter a unique name for the address and complete the remaining fields. For more information about a specific field in the form, see [Manage addresses (form)](https://technet.microsoft.com/en-us/library/hh370713\(v=ax.60\)).
+5.  In the **New address** form, enter a unique name for the address and complete the remaining fields. 
     
 
     > [!WARNING]
     > <P>If you enter the same name as an existing address, the information that you enter in the remaining fields will overwrite information for the existing address.</P>
-
 
 
 6.  Click **OK** to copy the new address to your service order.
@@ -56,13 +75,6 @@ To add an alternative address to a service order, follow these steps:
 
 6.  Select an address, and then click **OK** to copy it to your service order.
 
-## See also
-
-[Service orders (form)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
-
-[Select or enter a new address for a party record](select-or-enter-a-new-address-for-a-party-record.md)
-
-[Global address book overview](global-address-book-overview.md)
 
   
 
