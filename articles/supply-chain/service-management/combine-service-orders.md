@@ -1,17 +1,37 @@
-﻿---
-title: Combine service orders
-TOCTitle: Combine service orders
-ms:assetid: 2df4f81f-fa86-435c-97be-9ab7b10482aa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa552570(v=AX.60)
-ms:contentKeyID: 36056269
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Combine service orders  
+description: You can combine service orders.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Combine service orders 
+# Combine service orders   
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 When you create service order lines automatically in the **Service agreements** form, you can choose one of the following options to specify how you want to group them:
@@ -92,13 +112,7 @@ Additional grouping of service order lines into service orders occurs according 
 
 ## See also
 
-[Create service-agreement lines manually](create-service-agreement-lines-manually.md)
-
 [Create service orders automatically](create-service-orders-automatically.md)
-
-[About automatically creating service orders](about-automatically-creating-service-orders.md)
-
-[About time windows](about-time-windows.md)
 
   
 
