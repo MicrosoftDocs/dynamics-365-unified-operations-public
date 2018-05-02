@@ -242,6 +242,84 @@ class anyClass2
 }
 ```
 
+### Extensions of Form nested concepts including Data Sources, Data Fields, and Controls ##
+
+In order to implement Chain of Command (CoC) methods for form nested concepts including Data Sources, Data Fields, and Controls, an extension class is needed for each nested concept. 
+
+#### Form Data Source ####
+
+In this scenario FormToExtend is the form and DataSource1 is a valid existing data source in the form. On the other hand init and validateWrite are methods that can be wrapped in the data source.
+ 
+```C#
+[ExtensionOf(formdatasourcestr(FormToExtend, DataSource1))]
+final class FormDataSource1_Extension
+{
+    public void init()
+    {
+        next init();
+        //...
+    }
+ 
+    public boolean validateWrite()
+    {
+        boolean ret;
+        //...
+       ret = next validateWrite();
+        //...
+```
+
+#### Form Data Field ####
+
+In this scenario a data field is extended, where the name of the form is FormToExtend, with data source DataSource1 with field Field1. Where validate is one of many methods that can be wrapped in this nested concept.
+
+```C#
+[ExtensionOf(formdatafieldstr(FormToExtend, DataSource1, Field1))]
+final class FormDataField1_Extension 
+{ 
+public boolean validate()
+{
+    boolean ret
+    //...
+    ret = next validate();
+    //...
+```
+ 
+#### Control ####
+
+In this scenario the form is FormToExtend having one button control Button1 on it, and clicked is a method that can be wrapped on the button control.
+
+```C#
+[ExtensionOf(formcontrolstr(FormToExtend, Button1))]
+final class FormButton1_Extension
+{
+    public void clicked()
+    {
+        next clicked();
+        //...
+```
+ 
+#### Requirements and considerations while writing CoC methods on form nested concepts extensions ####
+
+1. As any other CoC method, these ones need to call always next to invoke the next in the chain, so it can go all the way to the kernel / native implementation in the runtime behavior. These is equivalent as calling super( ) from the form itself to guarantee the base behavior in the runtime is always executed as expected.
+2. Currently there is no support in the Visual Studio X++ Editor to discover the methods candidates that can be wrapped, so you need to refer to the system documentation for each nested concepts to identify the proper method to wrap and its exact signature.
+3. It is NOT possible to add CoC to wrap methods that are not defined in the original base behavior of the nested control type. It is not possible to add methodInButton1 CoC on an extension. However it is possible from the control extension to make a call into this method if it has been defined as public or protected. For example if Button1 is defined in the form FormToExtend in a way that it has a method methodInButton1 as follows:
+
+```C#
+[Form]
+public class FormToExtend extends FormRun
+{
+    [Control("Button")]
+    class Button1
+    {
+        public void methodInButton1 (str param1)
+        {
+            Info(“Hi from methodInButton1);
+            //...
+}
+```
+ 
+4. It is NOT needed to recompile the module where the original form is defined to have support for CoC methods on nested concepts on that form from an extension. Following the samples above if FormToExtend is in ApplicationSuite module, it is not needed to recompile ApplicationSuite, to extend it with CoC for nested concepts on that form from a different Module. 
+
 ## Restrictions on wrapper methods
 The following sections describe restrictions on the use of CoC and method wrapping.
 
