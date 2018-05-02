@@ -1,17 +1,37 @@
-﻿---
-title: Create service orders automatically
-TOCTitle: Create service orders automatically
-ms:assetid: 2451b8f7-f35a-4892-b12c-2d5667cbbb79
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa496810(v=AX.60)
-ms:contentKeyID: 36056187
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Create service orders automatically   
+description: You can create service orders for one service agreement or for several service agreements.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create service orders automatically 
+# Create service orders automatically    
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.
@@ -48,9 +68,9 @@ When you create service orders manually or automatically from the service agreem
 
 ## See also
 
-[About service orders](about-service-orders.md)
+[Service orders](service-orders.md)
 
-[About automatically creating service orders](about-automatically-creating-service-orders.md)
+[Automatically creating service orders](auto-create-service-orders.md)
 
   
 
