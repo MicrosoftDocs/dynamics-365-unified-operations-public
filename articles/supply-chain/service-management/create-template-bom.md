@@ -1,17 +1,37 @@
-﻿---
-title: Create a template BOM
-TOCTitle: Create a template BOM
-ms:assetid: 9c996197-facf-4df5-8c38-ac3cc1623226
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571695(v=AX.60)
-ms:contentKeyID: 36058733
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231370(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Create a template BOM   
+description: You can create a template BOM by using a variety of methods. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMATemplateBOMTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create a template BOM 
+# Create a template BOM   
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can create a template BOM by using any of the following methods. For all methods, the **From date** and **To date** fields are optional and for information only.
@@ -90,7 +110,7 @@ A new template BOM is created by using lines that correspond to the lines of the
 
 ## See also
 
-[About template BOMs](about-template-boms.md)
+[Template BOMs](template-boms.md)
 
   
 
