@@ -1,17 +1,37 @@
-﻿---
+---
+# required metadata
+
 title: Create subscription fee transactions
-TOCTitle: Create subscription fee transactions
-ms:assetid: 51e159f8-2a29-46f2-942f-1441864855dc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa548916(v=AX.60)
-ms:contentKeyID: 36057274
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243195(v=ax.60)/toc.json
+description: 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionCreateDialog 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create subscription fee transactions 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
