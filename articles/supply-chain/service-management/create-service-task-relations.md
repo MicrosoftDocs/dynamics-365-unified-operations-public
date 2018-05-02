@@ -75,7 +75,6 @@ Service task relations that are created on a service order are available on the 
 
 [Service tasks](service-tasks.md)
 
-[Create service tasks](create-service-tasks.md)
 
   
 
