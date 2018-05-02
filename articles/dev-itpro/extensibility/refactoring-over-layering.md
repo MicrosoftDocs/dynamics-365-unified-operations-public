@@ -52,7 +52,7 @@ After upgrading code to 8.0 or later any customizations that still use over-laye
     c. Open the XML file e.g. Currency.xml
     
     d. Add a "Customization" metadata element inside the "AxModelInfo" metadata element to indicate AllowAndWarn so that the start of the file now looks like this:
-        
+            
 ```xml
 <AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
 <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
@@ -68,10 +68,10 @@ As a solution is gradually migrated toward extensions, there will be places wher
 1. Identify the need for an extension capability to refactor some over-layering.
 2. Add a prototype of extension capabilities into an extension prototype model.
 
-		a. For enumeration extensibility, put a copy of the enumeration into the extension prototype model and mark it as extensible.
+    a. For enumeration extensibility, put a copy of the enumeration into the extension prototype model and mark it as extensible.
     
-		b. For extract method extensibility, prototype the extracted method and the overlayered original in the extension prototype model.
-
+    b. For extract method extensibility, prototype the extracted method and the overlayered original in the extension prototype model.
+    
 3. Use the prototype extension capability.
 4. If the prototype extension capability is sufficient, then create a matching request.
 5. When the extension capability has been implemented in the platform or application, then the prototype extension capability and any associated over-layering should be removed from the extension prototype model.
