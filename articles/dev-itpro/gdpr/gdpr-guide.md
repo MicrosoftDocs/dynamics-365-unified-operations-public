@@ -254,7 +254,7 @@ Controllers can use the following information to complete DSR requests.
 
 ## Activity and diagnostic information
 
-The controller can make DSR requests regarding telemetry data by using the [Microsoft Enterprise Privacy Portal](https://www.microsoft.com/en-us/trustcenter/privacy). Some telemetry data that we collect is pseudonymized. Without additional information or your assistance, the user's identity is anonymous.
+The controller can make DSR requests regarding telemetry data by using the [Microsoft Enterprise Privacy Portal](https://www.microsoft.com/en-us/trustcenter/privacy). Some telemetry data that we collect is in system generated logs. Without additional information or your assistance, the user's identity is anonymous.
 
 ## Representation of a person in Finance and Operations
 
