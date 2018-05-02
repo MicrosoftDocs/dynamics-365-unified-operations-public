@@ -1,21 +1,38 @@
-﻿---
-title: Delete a service BOM
-TOCTitle: Delete a service BOM
-ms:assetid: 7bd79c68-2281-483c-aaa9-12d3f3dc6414
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571368(v=AX.60)
-ms:contentKeyID: 44431418
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
-f1_keywords:
-- delete
-- service
-- bill of materials
 ---
+# required metadata
+
+title: Delete a service BOM 
+description: A service order represents a visit that a service technician makes to a customer site on a specific date.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceObjectRelation
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Delete a service BOM 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**. Select the service agreement that you want to delete a service bill of materials (BOM) from.
@@ -34,7 +51,7 @@ f1_keywords:
 
 ## See also
 
-[About template BOMs](about-template-boms.md)
+[Template BOMs](template-boms.md)
 
 [Manage template BOMs on object relations](manage-template-boms-on-object-relations.md)
 
