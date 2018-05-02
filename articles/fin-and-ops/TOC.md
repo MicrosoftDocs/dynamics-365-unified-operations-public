@@ -1907,7 +1907,7 @@
 #### [Set up cluster picking](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Set up containerization](../supply-chain/warehousing/tasks/set-up-containerization.md)
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
-#### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
+
 #### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Enable license plate label printing](../supply-chain/warehousing/tasks/license-plate-label-printing.md)
 #### [Configure Display older batches within warehouse on a mobile device](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
@@ -1940,6 +1940,7 @@
 
 #### [Set up a mobile device menu item for completing work in a purchase order](../supply-chain/warehousing/tasks/set-up-mobile-device-menu.md)
 #### [Set up a mobile device menu item to register received items](../supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md)
+#### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Warehouse Mobile Devices Portal (WMDP)](../supply-chain/warehousing/warehouse-mobile-devices-portal.md)
 #### [Warehouse mobile device display settings](../supply-chain/warehousing/change-warehouse-mobile-device-displays.md)
 ### Upgrade and migration
