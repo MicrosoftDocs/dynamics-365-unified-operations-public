@@ -1941,23 +1941,22 @@
 #### [Warehouse mobile device display settings](../supply-chain/warehousing/change-warehouse-mobile-device-displays.md)
 ### Upgrade and migration
 #### [Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations](../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md)
+### Receipts for registration and put-away 
+#### [Register items for an advanced warehousing enabled item using an item arrival journal](../supply-chain/warehousing/tasks/register-items-advanced-warehousing.md)
+#### [Register items for a basic warehousing enabled item using an item arrival journal](../supply-chain/warehousing/tasks/register-items-basic-warehousing.md)
+#### [Cross-dock products from receiving warehouse to stores](../supply-chain/warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md)
+#### [Set up a location directive for purchase order put-away](../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+#### [Set up a work template for purchase orders](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 
 ### Warehouse management tasks
 
 
-
-
-#### [Cross-dock products from receiving warehouse to stores](../supply-chain/warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md)
-
-#### [Register items for an advanced warehousing enabled item using an item arrival journal](../supply-chain/warehousing/tasks/register-items-advanced-warehousing.md)
-#### [Register items for a basic warehousing enabled item using an item arrival journal](../supply-chain/warehousing/tasks/register-items-basic-warehousing.md)
-### [Set up a location directive for purchase order put-away](../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
-#### [Set up a min-max replenishment process](../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md)
+### [Set up a min-max replenishment process](../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md)
 #### [Set up containerization](../supply-chain/warehousing/tasks/set-up-containerization.md)
 
 
 
-#### [Set up a work template for purchase orders](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
+
 #### [Plan loads and shipments using the Load planning workbench](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
 # [Development & administration for Finance and Operations](../dev-itpro/toc.md)
