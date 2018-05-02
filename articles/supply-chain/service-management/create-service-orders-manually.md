@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SMAServiceOrderTable
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
