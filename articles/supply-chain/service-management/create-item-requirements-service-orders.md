@@ -1,20 +1,40 @@
-﻿---
-title: Create item requirements for service orders
-TOCTitle: Create item requirements for service orders
-ms:assetid: 5baf239e-d3f2-47b9-aea8-e3d5aa96040e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa549087(v=AX.60)
-ms:contentKeyID: 54273729
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Create item requirements for service orders 
+description: If you need to reserve specific items for a service order, you can create inventory item requirements for it.  
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create item requirements for service orders 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-In Microsoft Dynamics AX 2012, you can create a service order to track and manage services that you provide to your customers. If you need to reserve specific items for a service order, you can create inventory item requirements for it. An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.
+You can create a service order to track and manage services that you provide to your customers. If you need to reserve specific items for a service order, you can create inventory item requirements for it. An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.
 
 By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.
 
@@ -46,11 +66,12 @@ Item requirements for service orders are processed through a project. To create 
 
 7.  On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.
 
-8.  To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form. For more information about automatically creating service orders from a service agreement, see [Create service orders automatically](create-service-orders-automatically.md).
+8.  To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form. 
+
 
 ## See also
 
-[About service order item requirements](about-service-order-item-requirements.md)
+[Create service orders automatically](create-service-orders-automatically.md).
 
   
 
