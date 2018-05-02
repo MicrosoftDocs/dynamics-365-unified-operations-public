@@ -1,22 +1,37 @@
-﻿---
-title: Create reason codes
-TOCTitle: Create reason codes
-ms:assetid: 44b208ef-8622-4294-b1b1-20491cd0e9fb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa496976(v=AX.60)
-ms:contentKeyID: 37008245
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243285(v=ax.60)/toc.json
-f1_keywords:
-- service
-- reason code
-- stage
-- stage reason code
+---
+# required metadata
+
+title: Create reason codes   
+description: You can create reason codes to explain why you are updating a stage of a service order. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAReasonCodeTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create reason codes 
+# Create reason codes    
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.
