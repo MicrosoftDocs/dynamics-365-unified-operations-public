@@ -1,17 +1,37 @@
-﻿---
-title: Cancel service orders
-TOCTitle: Cancel service orders
-ms:assetid: 30cb05ee-7e05-4245-8a0e-688d62cc69c6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa570041(v=AX.60)
-ms:contentKeyID: 36056318
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243195(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Cancel service orders  
+description: You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Cancel service orders 
+# Cancel service orders   
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
@@ -19,7 +39,6 @@ You can cancel a service order or service order line from the service order itse
 
 > [!NOTE]
 > <P>Service orders cannot be canceled if the stage of the service order does not allow cancelation, if the service order has item requirements, or if the service order has already been posted.</P>
-
 
 
 ## Cancel a service order in the Service orders form
@@ -35,7 +54,6 @@ You can cancel a service order or service order line from the service order itse
 
 > [!TIP]
 > <P>To reverse the cancellation of a service order line and change the status back to <STRONG>Created</STRONG>, click <STRONG>Revoke cancel</STRONG>.</P>
-
 
 
 ## Cancel multiple service orders
