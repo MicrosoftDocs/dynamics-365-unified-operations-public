@@ -1,17 +1,38 @@
-﻿---
-title: Modify a Service BOM
-TOCTitle: Modify a Service BOM
-ms:assetid: 66e3268e-65a9-4578-b7cb-32707822417d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571154(v=AX.60)
-ms:contentKeyID: 39519164
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243304(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Modify a Service BOM 
+description: Modify a Service BOM. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/03/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAAgreementTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Modify a Service BOM 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can record the history of an element in a service BOM. Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.
@@ -28,11 +49,8 @@ You can record the history of an element in a service BOM. Every time that you u
 
 5.  In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.
     
-
     > [!NOTE]
     > <P>On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</P>
-
-
 
 6.  In the **Quantity** field, enter the quantity.
 
@@ -54,7 +72,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 ## See also
 
-[About template BOMs](about-template-boms.md)
+[Template BOMs](template-boms.md)
 
   
 
