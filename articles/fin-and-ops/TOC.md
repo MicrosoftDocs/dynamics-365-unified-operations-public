@@ -76,6 +76,8 @@
 ##### [Create documentation or training](../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json)
 #### [Glossary](get-started/glossary.md)
 
+### [Videos for Dynamics 365 for Finance and Operations](get-started/videos.md) 
+
 ## [Understand the implementation lifecycle](imp-lifecycle/implementation-lifecycle.md)
 ### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Onboarding](imp-lifecycle/onboard.md) 
