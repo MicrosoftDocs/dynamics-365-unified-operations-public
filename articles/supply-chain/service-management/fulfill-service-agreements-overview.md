@@ -1,26 +1,41 @@
-﻿---
-title: Fulfill service agreements overview
-TOCTitle: Fulfill service agreements overview
-ms:assetid: f6ab2a91-8d18-492f-8ff9-fc20afccf0f2
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243290(v=AX.60)
-ms:contentKeyID: 36060014
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243290(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Fulfill service agreements overview 
+description: This topic provides an overview of the tasks to fulfill service agreements. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/03/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Fulfill service agreements overview 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-The topics in this section provide an overview of the tasks to fulfill service agreements. The topics also list the forms that are associated with each business process component and discuss the tasks that are associated with each business process component.
-
-[Develop and establish agreements](develop-and-establish-agreements.md)
-
-[Monitor and implement agreements](monitor-and-implement-agreements.md)
-
-[Update and evaluate agreements](update-and-evaluate-agreements.md)
+This topic provides an overview of the tasks to fulfill service agreements. The topic also lists the forms that are associated with each business process component and discusses the tasks that are associated with each business process component.
 
 ## Forms for the Fulfill service contracts business process components
 
