@@ -1,16 +1,38 @@
-﻿---
-title: Invoice subscription transactions
-TOCTitle: Invoice subscription transactions
-ms:assetid: df957dc3-e38f-42a3-82f5-a427b0036e6d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa551288(v=AX.60)
-ms:contentKeyID: 36059700
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213672(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Invoice subscription transactions 
+description: Invoice subscription transactions 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/03/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Invoice subscription transactions 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 
