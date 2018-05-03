@@ -26,6 +26,7 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Class extension: Method wrapping and Chain of Command
