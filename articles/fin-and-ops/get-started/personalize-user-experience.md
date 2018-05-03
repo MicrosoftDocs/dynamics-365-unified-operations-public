@@ -38,8 +38,8 @@ This topic explains how you can personalize Microsoft Dynamics 365 for Finance a
 
 There are three basic classes of personalizations in Finance and Operations. 
 - Personalizations made on a setup page. Examples include the color theme and time zone.
-- Personalizations related to page usage, called *implicit* personalization. For example, Finance and Operations keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
-- Personalizations a user makes to modify the apperance of a page by changing the way an element appears or acts on that page, often through an interactive personalization mode. These personalizations are called *explicit* personalization. For example, the user might add, hide, or reorder elements on the page.
+- Personalizations related to page usage, called *implicit* personalizations. For example, Finance and Operations keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
+- Personalizations a user makes to modify the apperance of a page by changing the way an element appears or acts on that page, often through an interactive personalization mode. These personalizations are called *explicit* personalizations. For example, the user might add, hide, or reorder elements on the page.
 
 Every personalization that a user makes in Finance and Operations is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
 
