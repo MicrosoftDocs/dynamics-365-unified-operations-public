@@ -1,17 +1,38 @@
-﻿---
-title: Manage template BOMs on object relations
-TOCTitle: Manage template BOMs on object relations
-ms:assetid: 9519e96c-9a0f-4b24-b3a5-493bf023d1ff
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa498422(v=AX.60)
-ms:contentKeyID: 36058611
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Manage template BOMs on object relations 
+description: Manage template BOMs on object relations. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/03/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAAgreementTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Manage template BOMs on object relations 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 ## Attach a template BOM to a service object
@@ -66,7 +87,7 @@ _tocRel: gg232212(v=ax.60)/toc.json
 
 ## See also
 
-[Delete a service BOM](delete-a-service-bom.md)
+[Delete a service BOM](delete-service-bom.md)
 
   
 
