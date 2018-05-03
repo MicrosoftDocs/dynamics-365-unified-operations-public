@@ -10,7 +10,11 @@
 ## [Get an evaluation copy](dev-tools/get-evaluation-copy.md)
 ## [Sign up for a subscription](dev-tools/sign-up-preview-subscription.md)
 ## [Deploy and access a development environment](dev-tools/access-instances.md)
-## [Development system requirements](dev-tools/development-system-requirements.md)
+### [Configure developer VM](dev-tools/configure-developer-vm.md)
+### [Create a new user on a development machine](dev-tools/enable-development-machine.md)
+### [Rename a local environment to enable access to Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Development system requirements](dev-tools/development-system-requirements.md)
+## [Version control, metadata search, and navigation](dev-tools/version-control-metadata-navigation.md)
 ## Fleet Management sample application
 ### [Fleet Management sample application](dev-tools/fleet-management-sample.md)
 ### [Fleet Management sample application overview](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +26,8 @@
 ### [Build operations](dev-tools/build-operations.md)
 ### [Code editor](dev-tools/code-editor.md)
 ### [Create a model and data model elements](dev-tools/create-data-model-elements.md)
-### [Create a new user on a development machine](dev-tools/enable-development-machine.md)
+#### [Naming guidelines](extensibility/NamingGuidelines.md)
+#### [Turn off model customization and deprecate functionality](dev-tools/lock-models.md)
 ### [Customization Analysis Report](dev-tools/customization-analysis-report.md)
 ### [Element designers](dev-tools/element-designers.md)
 ### [Element usage](dev-tools/element-usage.md)
@@ -31,7 +36,6 @@
 ### [Models](dev-tools/models.md)
 ### [Projects in Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Tools add-ins for Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Turn off model customization and deprecate functionality](dev-tools/lock-models.md)
 ### [Update Visual Studio development tools](dev-tools/update-development-tools.md)
 ## X++ programming language
 ### [X++ and debugger features ](dev-tools/new-x-debugger-features.md)
@@ -261,9 +265,9 @@
 ### [Create documentation or training using Task Recorder](user-interface/task-recorder-training-docs.md)
 
 # [Mobile platform](mobile-apps/platform/mobile-platform-home-page.md)
-## Getting started
-### [Getting started](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Getting started](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Architecture](mobile-apps/platform/mobile-platform-architecture.md)
+### [Business logic events overview](mobile-apps/platform/business-logic-events-overview.md)
 ### [Page design guidelines](mobile-apps/platform/page-design-guidelines.md)
 ### [Action design guidelines](mobile-apps/platform/action-design-guidelines.md)
 ### [Form design requirements](mobile-apps/platform/form-design-requirements.md)
@@ -418,6 +422,7 @@
 ### [Best practices for importing vouchers using the General journal entity](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Development for data entities
+### [Design principles and best practices for data entities](dev-tools/design-best-practices.md)
 ### [Create new data entities](data-entities/build-consuming-data-entities.md)
 ### [Data entity properties](data-entities/behavioral-properties-data-entities.md)
 ### [Create compute columns and virtual fields](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +433,9 @@
 ### [Metadata properties](data-entities/behavioral-properties-data-entities.md)
 ### [Validations, defaults, and unmapped fields](data-entities/validations-defaults-unmapped-fields.md)
 ### [Security and data entities](data-entities/security-data-entities.md)
+### [Build a read-only entity that exposes financial dimensions](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Bring your own database](analytics/export-entities-to-your-own-database.md)
 
