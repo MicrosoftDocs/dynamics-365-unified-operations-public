@@ -168,6 +168,7 @@
 ## [Create and associate a hardware station](tasks/create-associate-hardware-station.md)
 ## [Create and associate registers](tasks/create-associate-registers.md)
 ## [Create, calculate, and post a statement for a retail store](tasks/create-calculate-post-statement-retail-store.md)
+## [Improvements to statement posting](statement-posting-EOD.md)
 ## [Create call center orders](tasks/create-call-center-orders.md)
 ## [Create financial dimensions for POS registers and configure dimension values on registers](tasks/create-financial-dimensions-pos.md)
 ## [Create financial dimensions for Retail channels and configure dimension values on stores](tasks/create-financial-dimensions-retail-channels.md)
@@ -290,7 +291,6 @@
 ### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS triggers and printing](dev-itpro/pos-trigger-printing.md)
 ### [Add a custom control to a Retail Modern POS non-screen designer-based view](dev-itpro/pos-control-non-screen.md)
-### [Generate the Retail proxy for POS and e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
 ### [Configuration steps for Retail developers working on cloud-hosted development boxes](dev-itpro/cloud-dev-box.md)
 
 ## Commerce runtime

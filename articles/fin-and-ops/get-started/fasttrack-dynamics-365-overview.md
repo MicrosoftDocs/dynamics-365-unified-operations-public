@@ -197,7 +197,7 @@ The typical format is a 1.5-hour Skype call. The recommended attendees include k
 ## Tech talks
 Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
 
-Some of the tech talks are recorded, and the recordings are available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+The [Videos for Dynamics 365 for Finance and Operations](../get-started/videos.md) landing page lists all the Tech talks that have been recorded and are available to stream or download. Below are some examples of the type of content presented in Tech talks.
 
 ### Lifecycle Services (LCS) usage tech talk (T1.1, Initiate phase)
 
