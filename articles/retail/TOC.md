@@ -168,6 +168,7 @@
 ## [Create and associate a hardware station](tasks/create-associate-hardware-station.md)
 ## [Create and associate registers](tasks/create-associate-registers.md)
 ## [Create, calculate, and post a statement for a retail store](tasks/create-calculate-post-statement-retail-store.md)
+## [Improvements to statement posting](statement-posting-EOD.md)
 ## [Create call center orders](tasks/create-call-center-orders.md)
 ## [Create financial dimensions for POS registers and configure dimension values on registers](tasks/create-financial-dimensions-pos.md)
 ## [Create financial dimensions for Retail channels and configure dimension values on stores](tasks/create-financial-dimensions-retail-channels.md)
