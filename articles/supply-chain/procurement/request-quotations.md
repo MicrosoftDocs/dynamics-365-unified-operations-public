@@ -85,8 +85,8 @@ the **Request for quotation** page. The Return action generates a new journal
 and a report that will be printed, archived, and sent according to your Printing
 settings.
 
-[!NOTE]
-The name of the **Request for quotation** page has been changed. In earlier releases
+> [!NOTE]
+> The name of the **Request for quotation** page has been changed. In earlier releases
 of Dynamics 365 for Finance and Operations, this page is called **Request for
 quotations reply**.
 
@@ -201,8 +201,8 @@ accepted, you must set up reason codes on the **Vendor reasons** page.
 On the **Form setup** page in Procurement and sourcing, you can configure the
 appearance of your printed or stored RFQ documents.
 
-[!NOTE]
-For a public-sector configuration, you must use the amendment process to change
+> [!NOTE]
+> For a public-sector configuration, you must use the amendment process to change
 an RFQ that has already been sent. When an RFQ is sent, fields are locked.
 Therefore, to make changes to the RFQ, you must select **Create** to start the
 amendment process, as described earlier. The locking behavior is controlled by
