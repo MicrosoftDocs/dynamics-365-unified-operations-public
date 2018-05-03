@@ -233,8 +233,8 @@ public LockPaymentTerminalDeviceRequest(string clientDeviceNumber, string device
 | Variable | Description |
 |---|---|
 | clientDeviceNumber | The unique POS device number that is acquiring the lock. |
-| deviceType | The device type that the lock is acquired for as configured in the POS hardware profile (e.g. "Windows"). |
-| deviceName | The device type that the lock is acquired for as configured in the POS hardware profile (e.g. "MOCKPAYMENTTERMINAL"). |
+| deviceType | The device type that the lock is acquired for as configured in the POS hardware profile (such as "Windows"). |
+| deviceName | The device type that the lock is acquired for as configured in the POS hardware profile (such as "MOCKPAYMENTTERMINAL"). |
 | isExclusive | Determines whether the lock that is acquired is exclusive. | 
 | isOverride | Determines whether this request will override any existing lock. |
 
