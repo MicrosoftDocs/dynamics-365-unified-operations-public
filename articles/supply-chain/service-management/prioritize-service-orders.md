@@ -1,17 +1,38 @@
-﻿---
-title: Prioritize service orders
-TOCTitle: Prioritize service orders
-ms:assetid: 4f268c1d-a664-4fcd-bfe3-abed114b1e3f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg212753(v=AX.60)
-ms:contentKeyID: 36057210
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Prioritize service orders   
+description: Prioritize service orders.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Prioritize service orders 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Periodic** \> **Dispatch board**.
@@ -28,9 +49,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 
 ## See also
 
-[About the dispatch board](about-the-dispatch-board.md)
-
-[Dispatching service order activities](dispatching-service-order-activities.md)
+[Dispatch board](dispatch-board.md)
 
 [View the status of service orders](view-the-status-of-service-orders.md)
 
