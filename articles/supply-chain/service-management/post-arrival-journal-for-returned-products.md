@@ -1,17 +1,38 @@
-﻿---
-title: Post arrival journal for returned products
-TOCTitle: Post arrival journal for returned products
-ms:assetid: 52920dea-88b6-476d-817f-3aa0c6572bd9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg212789(v=AX.60)
-ms:contentKeyID: 36057288
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Post arrival journal for returned products 
+description: Post arrival journal for returned products.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: WMSArrivalOverview
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Post arrival journal for returned products 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 To process a return, first validate the return quantity, update the quantity field in the item arrival journal. Then select a disposition code or indicate that the returned items have to be inspected. After completing these steps, you can post the item arrival journal for the return order.
@@ -29,7 +50,6 @@ To process a return, first validate the return quantity, update the quantity fie
 
     > [!TIP]
     > <P>To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</P>
-
 
 
 6.  Make any necessary updates, and then click **Post**.
