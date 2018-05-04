@@ -165,3 +165,5 @@ For more information about the process that is used in the **Send Azure B2B user
 ## Additional resources
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
+Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
