@@ -1,17 +1,37 @@
-﻿---
-title: Move service order lines
-TOCTitle: Move service order lines
-ms:assetid: 88aad8be-c462-442d-9528-c8111d4b2039
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa498228(v=AX.60)
-ms:contentKeyID: 36058453
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243195(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Move service order lines   
+description: Move service order lines. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Move service order lines 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
@@ -34,7 +54,7 @@ _tocRel: gg243195(v=ax.60)/toc.json
 
 ## See also
 
-[About service orders](about-service-orders.md)
+[Service orders](service-orders.md)
 
   
 
