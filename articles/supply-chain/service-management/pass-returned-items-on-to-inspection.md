@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SMAServiceOrderTable
+ms.search.form: WMSJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
