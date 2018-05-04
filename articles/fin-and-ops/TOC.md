@@ -1906,19 +1906,16 @@
 #### [Movement of inventory with associated work in Warehouse management](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Create a work class](../supply-chain/warehousing/tasks/create-work-class.md)
 #### [Manage warehouse workers](../supply-chain/warehousing/manage-warehouse-workers.md)
+### Partial release and partial shipment
+#### [Partial shipment of a transport load](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
+#### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 ### Picking and packing
 #### [Set up cluster picking](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Set up containerization](../supply-chain/warehousing/tasks/set-up-containerization.md)
 #### [Batch and license plate confirmation](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
-
-#### [Mixed license plate receiving](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Enable license plate label printing](../supply-chain/warehousing/tasks/license-plate-label-printing.md)
-#### [Configure Display older batches within warehouse on a mobile device](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
-#### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Scan bar codes using a camera in Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Piece picking confirmation](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Partial shipment of a transport load](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
-#### [Batch release of partially reserved transfer orders](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Packing materials and fees](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 #### [Set up manual packing (February & May 2016 only)](../supply-chain/warehousing/tasks/set-up-manual-packing-2016-02-05.md)
 #### [Set up short picking item reallocation](../supply-chain/warehousing/tasks/set-up-short-picking-item-reallocation.md)
@@ -1940,12 +1937,14 @@
 ### [Install and configure the warehousing app ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Configure field names in warehousing app](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
 #### [Set up mobile devices for warehouse work](../supply-chain/warehousing/configure-mobile-devices-warehouse.md)
-
 #### [Set up a mobile device menu item for completing work in a purchase order](../supply-chain/warehousing/tasks/set-up-mobile-device-menu.md)
 #### [Set up a mobile device menu item to register received items](../supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md)
 #### [Create a mobile device menu item for license plate consolidation](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Warehouse Mobile Devices Portal (WMDP)](../supply-chain/warehousing/warehouse-mobile-devices-portal.md)
 #### [Warehouse mobile device display settings](../supply-chain/warehousing/change-warehouse-mobile-device-displays.md)
+#### [Mixed license plate receiving on a mobile device](../supply-chain/warehousing/mixed-license-plate-receiving.md)
+#### [Configure Display older batches within warehouse on a mobile device](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
+#### [Pick oldest batch on a mobile device](../supply-chain/warehousing/pick-oldest-batch.md)
 ### Upgrade and migration
 #### [Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations](../supply-chain/warehousing/upgrade-migration-warehouse-management-processes.md)
 ### Receipts for registration and put-away 
