@@ -1,17 +1,38 @@
-﻿---
-title: Set up dispatch teams
-TOCTitle: Set up dispatch teams
-ms:assetid: 33123bdf-22f1-4805-ac25-a46a87462163
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231039(v=AX.60)
-ms:contentKeyID: 62629945
-ms.date: 07/29/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Set up dispatch teams   
+description: This topic describes how to create a dispatch team.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchTeamTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Set up dispatch teams 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This topic describes how to create a dispatch team. After you create a dispatch team, you can assign workers to the team. When you create a service order, you can then relate a member of a dispatch team to an activity in the service order.
@@ -36,12 +57,5 @@ This topic describes how to create a dispatch team. After you create a dispatch 
 > [!NOTE]
 > <P>You can assign a worker to this dispatch team in the <STRONG>Worker</STRONG> form. For more information about how to assign a worker to a dispatch team, see <A href="https://technet.microsoft.com/en-us/library/dn776288(v=ax.60)">Dispatch workers (form)</A>.</P>
 
-
-
-## See also
-
-[Key tasks: Workers](key-tasks-workers.md)
-
-  
 
 
