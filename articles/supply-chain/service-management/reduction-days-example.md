@@ -1,17 +1,38 @@
-﻿---
-title: Reduction days example
-TOCTitle: Reduction days example
-ms:assetid: af9ba3d4-f1d1-4763-8d77-68f549474c30
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa498637(v=AX.60)
-ms:contentKeyID: 36058957
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Reduction days example   
+description: Reduction days example. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Reduction days example 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You have created a subscription transaction for a customer's maintenance subscription, as described in the following table.
