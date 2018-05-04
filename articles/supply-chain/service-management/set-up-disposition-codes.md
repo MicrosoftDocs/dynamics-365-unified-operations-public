@@ -1,28 +1,41 @@
-﻿---
-title: Set up disposition codes
-TOCTitle: Set up disposition codes
-ms:assetid: 00b04d16-132a-4780-a8e4-251189eec31e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg230650(v=AX.60)
-ms:contentKeyID: 53874078
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243299(v=ax.60)/toc.json
-f1_keywords:
-- status
-- disposition codes
-- item code
-- disposition code
-- status code
-- item disposal
-- status codes
 ---
+# required metadata
+
+title: Set up disposition codes   
+description: You can set up disposition codes to specify how to process an item that is returned by a customer.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ReturnDispositionCode
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Set up disposition codes 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-In Microsoft Dynamics AX, you can set up disposition codes to specify how to process an item that is returned by a customer. For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer. For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).
+You can set up disposition codes to specify how to process an item that is returned by a customer. For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer. For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).
 
 You can also set up a reason code to help explain why an item was returned. For more information about reason codes, see [Set up return reason codes](set-up-return-reason-codes.md).
 
@@ -38,7 +51,7 @@ You can also set up a reason code to help explain why an item was returned. For 
 
 ## See also
 
-[About disposition codes and return reason codes](about-disposition-codes-and-return-reason-codes.md)
+[Disposition codes and return reason codes](disposition-codes-and-return-reason-codes.md)
 
 [Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
 
