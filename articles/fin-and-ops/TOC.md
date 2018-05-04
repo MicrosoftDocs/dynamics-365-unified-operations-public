@@ -1894,6 +1894,7 @@
 #### [Create a location profile](../supply-chain/warehousing/tasks/create-location-profile.md)
 #### [Configure locations in a WMS-enabled warehouse](../supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse.md)
 #### [Schedule load utilization](../supply-chain/warehousing/schedule-load-utilization.md)
+#### [Schedule workload capacity](../supply-chain/warehousing/schedule-workload-capacity.md)
 #### [Set up dispositions codes](../supply-chain/warehousing/tasks/set-up-dispositions-codes.md)
 #### [Unit of measure and stocking policies](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Warehouse Power BI content](../dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json)
