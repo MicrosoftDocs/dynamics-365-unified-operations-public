@@ -1,20 +1,41 @@
-﻿---
-title: Register the receipt of returned items
-TOCTitle: Register the receipt of returned items
-ms:assetid: 38b2f2ce-5f52-489e-938a-006f2c8656d6
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231128(v=AX.60)
-ms:contentKeyID: 44080969
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Register the receipt of returned items
+description: You can register the receipt of returned items using the Arrival overview form or the Registration form.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: WMSArrivalOverview, InventTransRegister
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Register the receipt of returned items 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
-
-Microsoft Dynamics AX provides two methods for registering the receipt of returned items. The first method is a warehouse receiving process that uses the **Arrival overview** form. The second uses the **Registration** form.
+There are two methods for registering the receipt of returned items. The first method is a warehouse receiving process that uses the **Arrival overview** form. The second uses the **Registration** form.
 
 ## Register the receipt of returned items in the Arrival overview form
 
