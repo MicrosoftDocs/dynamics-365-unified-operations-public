@@ -1,17 +1,38 @@
-﻿---
-title: Reverse changes in a dispatch board
-TOCTitle: Reverse changes in a dispatch board
-ms:assetid: 382a13d1-53c4-41c1-942b-ce659eec9c42
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231124(v=AX.60)
-ms:contentKeyID: 62629944
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Reverse changes in a dispatch board 
+description: This topic describes how to reverse unsaved modifications that you make in a dispatch board. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Reverse changes in a dispatch board 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This topic describes how to reverse unsaved modifications that you make in a dispatch board. For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity. You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available. You can reverse the unsaved modification so that the original worker is reassigned to the service order.
@@ -20,7 +41,7 @@ Use the following steps to reverse unsaved changes in a dispatch board:
 
 1.  Click **Service management** \> **Periodic** \> **Dispatch board**.
 
-2.  In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**. For more information, see [Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\)).
+2.  In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**. 
 
 3.  To reverse the most recent change that is not saved, click **Undo**.
 
@@ -28,12 +49,10 @@ Use the following steps to reverse unsaved changes in a dispatch board:
 
 ## See also
 
-[About service activities](about-service-activities.md)
+[Dispatch board](dispatch-board.md)
 
-[About the dispatch board](about-the-dispatch-board.md)
+[Service activities](service-activities.md)
 
-[Dispatching service order activities](dispatching-service-order-activities.md)
-
-  
+ 
 
 
