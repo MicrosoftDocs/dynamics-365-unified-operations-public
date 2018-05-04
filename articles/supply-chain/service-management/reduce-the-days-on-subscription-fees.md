@@ -1,17 +1,38 @@
-﻿---
-title: Reduce the days on subscription fees
-TOCTitle: Reduce the days on subscription fees
-ms:assetid: e4141215-b18e-4818-8be9-b260beb8611c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa551390(v=AX.60)
-ms:contentKeyID: 36059730
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Reduce the days on subscription fees  
+description: To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Reduce the days on subscription fees 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.
