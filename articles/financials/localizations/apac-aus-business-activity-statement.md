@@ -79,22 +79,50 @@ The following list provides an overview of the process to calculate GST and prep
 </tr>
 <tr>
   </tr>
-<tr>
-<td>Related setup tasks</td>
-<td><ul>
-<li>Create an additional BAS reconciliation account</li>
-<li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></li>
-<li>Set up the GST sales tax authority</li>
-<li>Create settlement periods</li>
-<li><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
-<li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></li>
-<li><a href="../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md">Set up sales tax groups and item sales tax groups</a></li>
-<li><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a></li>
-<li>Set up BAS fringe benefit reason codes</li>
-<li><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a></li>
-<li>Specify the withholding tax group for Vendors</li>
-</ul></td>
-</tr>
+  <tr>
+    <td>Create an additional BAS reconciliation account</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Set up the GST sales tax authority</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Create settlement periods</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Set up BAS fringe benefit reason codes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
 </tbody>
 </table>
 
@@ -102,7 +130,7 @@ The following list provides an overview of the process to calculate GST and prep
 
 The BAS report layout is specific about how and where different amounts should be reported, about the fields that are added together and about linking the Sales tax codes to the particular reporting codes. The GST reporting codes refer to a field number on the tax report for the report layout. The codes are linked by associating a GST code to a particular reporting code on the **Report setup** FastTab on the **Sales tax codes** page.
 
-Based on a quarterly BAS format, the following reporting codes must be set up. These reporting codes are associated with the field that appears on the BAS report. You can set up teh reporting codes on the **Sales tax reporting codes** page (**Tax > Setup > Sales tax > Sales tax reporting codes**).
+Based on a quarterly BAS format, the following reporting codes must be set up. These reporting codes are associated with the field that appears on the BAS report. You can set up the reporting codes on the **Sales tax reporting codes** page (**Tax > Setup > Sales tax > Sales tax reporting codes**).
 
 | Report Layout | Reporting Code | Report Text                                                                | Field in BAS report |
 |---------------|----------------|----------------------------------------------------------------------------|---------------------|
