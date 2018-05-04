@@ -1,17 +1,38 @@
-﻿---
-title: Set up service activity types
-TOCTitle: Set up service activity types
-ms:assetid: 51d015ee-1f6f-4676-b5d7-ce46ad360641
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg212783(v=AX.60)
-ms:contentKeyID: 36057272
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Set up service activity types 
+description: Set up service activity types. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: smmActivityTypeGroup
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Set up service activity types 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.
@@ -32,7 +53,7 @@ _tocRel: gg213684(v=ax.60)/toc.json
 
 [Activity types (form)](https://technet.microsoft.com/en-us/library/aa583718\(v=ax.60\))
 
-[About the dispatch board](about-the-dispatch-board.md)
+[Dispatch board](dispatch-board.md)
 
   
 
