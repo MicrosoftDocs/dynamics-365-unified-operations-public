@@ -92,7 +92,7 @@ These tech conference recordings discuss product functionality in the previous v
 
 **Warehouse management** 
 
--  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Advanced R3 Warehouse management - Inbound processing and min/max replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment](https://youtu.be/Og0gLlVp7jA)
