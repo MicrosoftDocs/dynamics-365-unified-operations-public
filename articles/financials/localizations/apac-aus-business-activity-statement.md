@@ -45,7 +45,7 @@ is designed to help you fill out your Business Activity Statement, commonly know
 
 The following list provides an overview of the process to calculate GST and prepare the BAS in General ledger:
 
-1.  Set up GST prerequisites. Refer to the table at the end of this article.
+1.  [Set up GST prerequisites](apac-aus-business-activity-statement.md#prerequisites) 
 2.  [Set up report boxes](tasks/add-bas-report-boxes.md) - You must set up BAS report boxes to report other non-GST tax liabilities and credits for a particular GST settlement periods.
 3.  Post and settle Australian BAS to tax authorities for a particular GST settlement period.
 4.  Process payments to tax authorities.
@@ -65,13 +65,17 @@ The following list provides an overview of the process to calculate GST and prep
 <td>Country/region</td>
 <td>The primary address for the legal entity must be in the following countries/regions: Australia</td>
 </tr>
-<tr class="even">
-<td>Parameters</td>
-  <td>Set the <strong>Apply sales tax taxable rules</strong> option to <strong>No</strong> on the <strong>General ledger parameters </strong> page.
-</td>
-</tr>
+<tr>
   <td>Download Electronic reporting configurations</td>
   <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
+</tr>
+<tr>
+<td>General ledger parameters</td>
+  <td><ul>
+    <li>Set the <strong>Apply sales tax taxation rules</strong> option to <strong>No</strong> on the <strong>General ledger parameters </strong> page.</li>
+    <li>In the **Sales tax** area, select <strong>BAS(AU)</strong> for the **Australian BAS** **Format mapping** field.</li>
+    </ul>
+</td>
 </tr>
 <tr>
   </tr>
@@ -96,9 +100,9 @@ The following list provides an overview of the process to calculate GST and prep
 
 ## GST reporting codes
 
-The BAS report layout is specific about how and where different amounts should be reported, about the fields that are added together and about linking the GST codes to the particular reporting codes. The GST reporting codes refer to a field number on the tax report for the report layout. The codes are linked by associating a GST code to a particular reporting code on the **Report setup** FastTab on the **GST codes** page.
+The BAS report layout is specific about how and where different amounts should be reported, about the fields that are added together and about linking the Sales tax codes to the particular reporting codes. The GST reporting codes refer to a field number on the tax report for the report layout. The codes are linked by associating a GST code to a particular reporting code on the **Report setup** FastTab on the **Sales tax codes** page.
 
-Based on a quarterly BAS format, the following reporting codes must be set up. These reporting codes are associated with the field that appears on the BAS report.
+Based on a quarterly BAS format, the following reporting codes must be set up. These reporting codes are associated with the field that appears on the BAS report. You can set up teh reporting codes on the **Sales tax reporting codes** page (**Tax > Setup > Sales tax > Sales tax reporting codes**).
 
 | Report Layout | Reporting Code | Report Text                                                                | Field in BAS report |
 |---------------|----------------|----------------------------------------------------------------------------|---------------------|
