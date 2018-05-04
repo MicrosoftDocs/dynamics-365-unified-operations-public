@@ -1,17 +1,38 @@
-﻿---
-title: Set up a preferred technician
-TOCTitle: Set up a preferred technician
-ms:assetid: a82af202-0eb0-480b-bd56-d81facd98e67
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243058(v=AX.60)
-ms:contentKeyID: 36058884
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Set up a preferred technician   
+description: You can select any worker as a preferred technician for a service agreement or service order. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAAgreementTable, SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Set up a preferred technician 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can select any worker as a preferred technician for a service agreement or service order. However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.
@@ -44,12 +65,11 @@ You can select any worker as a preferred technician for a service agreement or s
 
 ## See also
 
-[Key tasks: Workers](key-tasks-workers.md)
-
-[Service agreements (form)](https://technet.microsoft.com/en-us/library/aa617823\(v=ax.60\))
+[service-agreements](service-agreements.md)
 
 [Create service orders manually](create-service-orders-manually.md)
 
+[Service agreements (form)](https://technet.microsoft.com/en-us/library/aa617823\(v=ax.60\))
   
 
 
