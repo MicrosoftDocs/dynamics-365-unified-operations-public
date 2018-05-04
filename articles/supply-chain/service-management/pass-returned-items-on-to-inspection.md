@@ -1,17 +1,38 @@
-﻿---
-title: Pass returned items on to inspection
-TOCTitle: Pass returned items on to inspection
-ms:assetid: 66b722ce-d5a4-4cef-8bcb-3aebfff1afa3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg231561(v=AX.60)
-ms:contentKeyID: 36057754
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Pass returned items on to inspection 
+description: When registering a returned item, determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Pass returned items on to inspection 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.
@@ -39,15 +60,4 @@ This will prompt the system to create a quarantine order, and the person or depa
 [Take returned items through inspection](take-returned-items-through-inspection.md)
 
 [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
-
-[Authorize customer returns](authorize-customer-returns.md)
-
-[Quarantine order (form)](https://technet.microsoft.com/en-us/library/aa554073\(v=ax.60\))
-
-[About quarantine orders](about-quarantine-orders.md)
-
-[Authorize customer returns](authorize-customer-returns.md)
-
-  
-
 
