@@ -51,7 +51,7 @@ You can also set up a reason code to help explain why an item was returned. For 
 
 ## See also
 
-[Disposition codes and return reason codes](disposition-codes-and-return-reason-codes.md)
+[Disposition codes and return reason codes](disposition-and-return-reason-codes.md)
 
 [Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
 
