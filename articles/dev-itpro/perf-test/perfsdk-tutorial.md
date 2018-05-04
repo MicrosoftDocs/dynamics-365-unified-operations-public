@@ -47,7 +47,7 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
 ## Create a single-user C# test from an XML recording
 
-To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
+<!--To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).-->
 
 1. Use Task recorder to create a recording of the scenario that you want to test.
 2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.

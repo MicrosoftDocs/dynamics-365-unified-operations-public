@@ -12,6 +12,7 @@
 ## [Deploy and access a development environment](dev-tools/access-instances.md)
 ### [Configure developer VM](dev-tools/configure-developer-vm.md)
 ### [Create a new user on a development machine](dev-tools/enable-development-machine.md)
+### [Development and build VMs that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ### [Rename a local environment to enable access to Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
 ### [Development system requirements](dev-tools/development-system-requirements.md)
 ## [Version control, metadata search, and navigation](dev-tools/version-control-metadata-navigation.md)
@@ -589,7 +590,6 @@
 
 # [System administration](sysadmin/system-administration-home-page.md)
 ## [Platform monthly updates FAQ](sysadmin/faq-platform-monthly-updates.md)
-## [Development and build VMs that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ## [Add links to your organization's legal terms and privacy statement](sysadmin/legal-terms-privacy-statement.md)
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)
