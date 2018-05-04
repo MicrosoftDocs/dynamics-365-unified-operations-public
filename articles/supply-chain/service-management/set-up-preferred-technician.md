@@ -65,7 +65,7 @@ You can select any worker as a preferred technician for a service agreement or s
 
 ## See also
 
-[service-agreements](service-agreements.md)
+[Service agreements](service-agreements.md)
 
 [Create service orders manually](create-service-orders-manually.md)
 
