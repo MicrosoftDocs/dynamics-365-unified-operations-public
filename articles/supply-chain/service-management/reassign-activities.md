@@ -1,17 +1,38 @@
-﻿---
-title: Reassign activities
-TOCTitle: Reassign activities
-ms:assetid: e0b1abbe-e68e-4cb3-bec2-7f8fcac5bfae
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243206(v=AX.60)
-ms:contentKeyID: 62629948
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Reassign activities 
+description: This topic describes how to reassign service activities from one worker to another worker.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Reassign activities 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This topic describes how to reassign service activities from one worker to another worker. You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.
@@ -36,12 +57,9 @@ Use the following steps to reassign an activity to another worker:
 
 ## See also
 
-[About service activities](about-service-activities.md)
+[Service activities](service-activities.md)
 
-[About the dispatch board](about-the-dispatch-board.md)
+[Dispatch board](dispatch-board.md)
 
-[Dispatching service order activities](dispatching-service-order-activities.md)
-
-  
 
 
