@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor service activities  
-description: The **Dispatch board** form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
+description: The Dispatch board form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/04/2018
