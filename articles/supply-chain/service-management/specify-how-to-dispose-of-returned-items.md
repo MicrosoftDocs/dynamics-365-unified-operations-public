@@ -1,17 +1,37 @@
-﻿---
-title: Specify how to dispose of returned items
-TOCTitle: Specify how to dispose of returned items
-ms:assetid: 9c494e29-24b2-46b5-a50b-6487c8887f6e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg213368(v=AX.60)
-ms:contentKeyID: 36058728
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243299(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Specify how to dispose of returned items 
+description: Specify how to dispose of returned items.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: InventQuarantineOrder
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Specify how to dispose of returned items 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 When you handle a return order, you must specify a reason return code to identify why the product is being returned. You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.
@@ -158,7 +178,7 @@ For each disposition code that you define, you must select a disposition action.
 
 
 > [!NOTE]
-> <P>For information about how to create a new quarantine order manually, see <A href="about-quarantine-orders.md">About quarantine orders</A> and <A href="https://technet.microsoft.com/en-us/library/aa554073(v=ax.60)">Quarantine order (form)</A>.</P>
+> <P>For information about how to create a new quarantine order manually, see <A href="quarantine-orders.md">Quarantine orders</A> and <A href="https://technet.microsoft.com/en-us/library/aa554073(v=ax.60)">Quarantine order (form)</A>.</P>
 
 
 
