@@ -74,8 +74,8 @@ No, you can't view the serialized items that you have on hand, because serial nu
 
 ## Can I register serial numbers for catchweight items?
 No, you can't register serial numbers for catch-weight items during the sales process. Additionally, if a product is set up as a catch-weight item, you can't assign the product to a tracking dimension group that is set up to use serial numbers only during the sales process.
-Can I register serial numbers at the retail POS?
-------------------------------------------------
+
+## Can I register serial numbers at the retail POS?
 
 Yes, the retail point of sale (POS) will prompt the user to enter a serial number when the user sells an item that is assigned a tracking dimension group that is set up to use serial numbers only during the sales process.
 
