@@ -5,7 +5,7 @@ title: Create a Windows installer for a payment connector
 description: This topic describes how to create a Windows installer for a payment connector. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -44,7 +44,10 @@ Microsoft Windows Installer (MSI) is the application and configuration service f
 ## Installer contents
 The installer must install the required files in the following structure:
 
--   **Payment Connector** – This folder contains up to three subfolders:
+> [!Note]
+> You can find these folders in **...\RetailSDK\PaymentExternals**.
+
+-   **PaymentExternals** – This folder contains up to three subfolders:
     -   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and its dependent assemblies. These assemblies are used in Hardware station and Retail Modern POS to communicate with payment terminal devices, such as VeriFone MX925. If you don’t support a payment terminal device, you can omit this folder.
     -   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcesor interface and its dependent assemblies.
     -   **Payment Web Files** – This folder contains the callback HTML/JavaScript/CSS files that are required in order to enable the payment accepting page. If the payment accepting web app follows the Microsoft implementation guide, these payment web files aren't required, and you can omit this folder. In some cases, the payment accepting page requires that a callback page be deployed to the host application server. In that case, you must include a folder for the callback page:
