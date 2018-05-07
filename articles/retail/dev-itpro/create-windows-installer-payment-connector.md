@@ -43,7 +43,10 @@ Microsoft Windows Installer (MSI) is the application and configuration service f
 
 ## Installer contents
 The installer must install the required files in the following structure:
-**Note:** You can find this folders in **...\RetailSDK\PaymentExternals**
+
+> [!Note]
+> You can find these folders in **...\RetailSDK\PaymentExternals**.
+
 -   **PaymentExternals** – This folder contains up to three subfolders:
     -   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and its dependent assemblies. These assemblies are used in Hardware station and Retail Modern POS to communicate with payment terminal devices, such as VeriFone MX925. If you don’t support a payment terminal device, you can omit this folder.
     -   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcesor interface and its dependent assemblies.
