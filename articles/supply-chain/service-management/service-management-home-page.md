@@ -60,7 +60,6 @@ The following diagram illustrates the high level business processes for **Servic
 ## Service management at a glance
 
 <table>
-<colgroup>Service management business process diagram]col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
 <thead>
@@ -77,7 +76,7 @@ The following diagram illustrates the high level business processes for **Servic
 <td><p><strong>Service order margin</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="handle-customer-inquiries-overview.md">Handle customer inquiries overview</a></p></td>
+<td><p><a href="">Handle customer inquiries overview</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Service orders (form)</a></p></td>
 <td><p><strong>Work description</strong></p></td>
 </tr>
@@ -99,10 +98,9 @@ The following diagram illustrates the high level business processes for **Servic
 
 Service management can be integrated with the following modules in Microsoft Dynamics AX:
 
-  - [Sales and marketing](sales-and-marketing.md)
+  - [Sales and marketing](../sales-marketing/overview-sales-marketing.md)
 
-  - [Human resources](human-resources.md)
+  - [Human resources](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   
-
 
