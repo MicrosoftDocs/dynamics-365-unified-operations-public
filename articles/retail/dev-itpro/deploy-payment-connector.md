@@ -39,42 +39,45 @@ Overview
 
 This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment.
 
-This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). See the [Retail SDK overview](retail-sdk/retail-sdk-overview.md) for information about how to download the SDK. For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK packaging document. 
+This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). For information about how to download the SDK, see [Retail SDK overview](retail-sdk/retail-sdk-overview.md). For guidelines about how to package a payment connector, see the Retail SDK packaging document in the downloaded SDK. 
 
-This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs. If you are using Dynamics 365 for Financed and Operations version 7.0, you need to apply KB 3183058 before creating the Retail deployable package.
+This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or payment back-end processor, because those applications are managed by payment providers or payment ISVs. If you're using Microsoft Dynamics AX 7.0 (February 2016), you must apply KB 3183058 before you create the Retail deployable package.
 
 ## Payment packaging folder
 A payment provider or a payment ISV creates a payment connector. The payment connector will include some or all of the following folders:
 
-> [!Note]
-> You can find these folders in **...\RetailSDK\PaymentExternals.**
+> [!NOTE]
+> You can find these folders in ...\\RetailSDK\\PaymentExternals.
 
--   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcesor interface, and its dependent assemblies.
+-   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcessor interface, and its dependent assemblies.
 -   **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
--   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface/payment request handlers, and its dependent assemblies. These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don’t have a payment terminal device, you don't need these files.
+-   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
 
-To package the payment connector files, the payment provider or payment ISV  must copy the payment assemblies to the correct folder in ...\RetailSDK\PaymentExternals. After copying the payment assemblies, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you will obtain the following deployable package in ...\RetailSDK\Packages\RetailDeployablePackage. In versions prior to 7.0, it will be \RetailSDK\Packages\.
+To package the payment connector files, the payment provider or payment ISV must copy the payment assemblies to the correct folder in ...\\RetailSDK\\PaymentExternals. After the payment assemblies are copied, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you can find the following deployable package in ...\\RetailSDK\\Packages\\RetailDeployablePackage. In versions that are earlier than AX 7.0, the deployable package will be in \\RetailSDK\\Packages\\.
 
--   Application Object Server (AOS) payment package - **AOS payment package is deprecated and no longer supported. If you upload AOS payment package to LCS it will display an unsupported package error, please use the new Retail deployable package.** . If you are using version, 7.0 please any latest binary hotfix before generating the package. 
-    > [!Note]
-    > In the newer versions, we won't generate an AOS payment package.
-    
--   Retail deployable package - This includes payment plus all the other channel components, this combined package for all retail extension components.
+-   **Application Object Server (AOS) payment package** – ***The AOS payment package is obsolete and is no longer supported. If you upload the AOS payment package to Microsoft Dynamics Lifecycle Service (LCS), you will receive an unsupported package error. Use the new Retail deployable package instead.*** If you're using AX 7.0, apply the latest binary hotfix before you generate the package.
+
+    > [!NOTE]
+    > In newer versions, we won't generate an AOS payment package.
+
+-   **Retail deployable package** – This package includes payment plus all the other channel components. This package is this combined package for all retail extension components.
 
 Before you start, you must have these items:
 
--   Payment connector files.
--   Retail deployable packages that are built by using the Retail SDK (see the list earlier in this topic).
--   Access to your cloud-hosted environment on Microsoft Dynamics Lifecycle Service (LCS).
+-   Payment connector files
+-   Retail deployable packages that are built by using the Retail SDK (see the list earlier in this topic)
+-   Access to your cloud-hosted environment on LCS
 
 ## Retail deployable packages (automated deployment)
-A Retail deployable package is an asset that can be consumed by the LCS deployment service. When you package a payment connector and other extensions as a deployable package, you can install the payment connector as a customization to an existing solution or slipstream as part of a new deployment. The following types of packages can contain payment connectors:
+A Retail deployable package is an asset that can be consumed by the LCS deployment service. When you package a payment connector and other extensions as a deployable package, you can either install the payment connector as a customization to an existing solution or slipstream it as part of a new deployment. The following types of packages can contain payment connectors:
 
--   **AOSPaymentPackage** – This type of package deploys one or more payment connectors to AOS. (**AOS payment package is deprecated and no longer supported.**).
+-   **AOSPaymentPackage** – This type of package deploys one or more payment connectors to AOS. (**The AOS payment package is obsolete and is no longer supported.**)
 -   **RetailDeployablePackage** – This type of package deploys one or more payment connectors to the following components:
-    -  Retail Server, Commerce Runtime, and DB Scripts
+
+    -  Retail Server, Commerce runtime, and database scripts
     -   Cloud POS
     -   Self-service installer, which enables installation of the following:
+
         -   Hardware station
         -   Modern POS
 
@@ -85,10 +88,10 @@ A Retail deployable package is an asset that can be consumed by the LCS deployme
 3.  Select **Software package**, and then click the plus sign (**+**).
 4.  Enter a name and description, and select the correct package type, as described in the following table.
 
-    | Deployable package      | Deployable package type in LCS |
-    |-------------------------|--------------------------------|
-    | AOSPaymentPackage (**Not supported**)      | Binary hotfix                  |
-    | RetailDeployablePackage | Combined retail package        |
+    | Deployable package                    | Deployable package type in LCS |
+    |---------------------------------------|--------------------------------|
+    | AOSPaymentPackage (**Not supported**) | Binary hotfix                  |
+    | RetailDeployablePackage               | Combined retail package        |
 
 5.  Click **Upload**.
 6.  Select the zipped package, upload it, and then click **Confirm**.
@@ -126,8 +129,8 @@ Here is a key to the preceding table:
 
 The Payment Web Files folder usually contains a subfolder. Be sure to copy the whole subfolder to the target locations.
 
-## Use a payment connector with an ecommerce site
-E-commerce sites aren't deployed in LCS-managed environments. You should work with your partner to decide how to host an e-commerce site. If the payment connector requires payment web files, you must deploy those web files to your e-commerce site. If your payment connector doesn't require payment web files, no additional steps are required. For information about how to deploy payment web files to an e-commerce site, see the [Put the payment connector assemblies and files in the correct locations](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations) section earlier in this article.
+## Use a payment connector with an e-commerce site
+E-commerce sites aren't deployed in LCS-managed environments. You should work with your partner to decide how to host an e-commerce site. If the payment connector requires payment web files, you must deploy those web files to your e-commerce site. If your payment connector doesn't require payment web files, no additional steps are required. For information about how to deploy payment web files to an e-commerce site, see the [Put the payment connector assemblies and files in the correct locations](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations) section earlier in this topic.
 
 Additional resources
 --------
@@ -135,6 +138,3 @@ Additional resources
 [Guide to implementing a payment connector and a payment device](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 
 [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
-
-
-
