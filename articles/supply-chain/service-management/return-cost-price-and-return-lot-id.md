@@ -114,10 +114,6 @@ When you use the **Return lot ID** field on a return order line to specify the r
     
     This action adjusts the cost on the original sales line that was costed at -35.00 (5 pieces \* 7.00) to -30.00 (5 pieces \* 6.00). This is because the inventory model group uses First in, First out (FIFO), and 6.00 per piece is the FIFO cost from the first purchase order. Additionally, the action adjusts the cost on the return sales line to match the cost per piece on the original sales line. Therefore, the cost of the return line is adjusted from 35.00 to 30.00.
 
-## See also
 
-[Authorize customer returns](authorize-customer-returns.md)
-
-  
 
 
