@@ -51,7 +51,7 @@ For information about how to perform specific tasks in a dispatch board, see the
 
 [Set up service activity types](set-up-service-activity-types.md)
 
-[Set up a preferred technician](set-up-a-preferred-technician.md)
+[Set up a preferred technician](set-up-preferred-technician.md)
 
 
 
