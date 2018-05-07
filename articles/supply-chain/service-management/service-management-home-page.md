@@ -55,14 +55,12 @@ Use the reporting tools to monitor service order margins and subscription transa
 
 The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules in Microsoft Dynamics AX.
 
-![Service management business process diagram](images/Hh208509.ServiceManagement_BusinessProcessOverview(AX.60).gif "Service management business process diagram")
+[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## Service management at a glance
 
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
+<colgroup>Service management business process diagram]col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
 <thead>
