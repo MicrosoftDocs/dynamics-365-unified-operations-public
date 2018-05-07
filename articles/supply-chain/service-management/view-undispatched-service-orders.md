@@ -1,17 +1,38 @@
-﻿---
-title: View undispatched service orders
-TOCTitle: View undispatched service orders
-ms:assetid: c7c5f14a-16db-4356-b915-acbfda7c1cac
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg213646(v=AX.60)
-ms:contentKeyID: 62629949
-ms.date: 07/28/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: View undispatched service orders   
+description: This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # View undispatched service orders 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
@@ -36,11 +57,9 @@ This topic describes how to view activities in a service order that don’t have
 
 [Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))
 
-[About service activities](about-service-activities.md)
+[Service activities](service-activities.md)
 
-[About the dispatch board](about-the-dispatch-board.md)
-
-[Dispatching service order activities](dispatching-service-order-activities.md)
+[Dispatch board](dispatch-board.md)
 
 [Reassign activities](reassign-activities.md)
 
