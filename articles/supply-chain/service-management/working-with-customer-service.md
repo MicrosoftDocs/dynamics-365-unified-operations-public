@@ -1,22 +1,38 @@
-﻿---
-title: Working with customer service
-TOCTitle: Working with customer service
-ms:assetid: ad4a4ad5-7661-4856-96d5-830218ea8e5c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243098(v=AX.60)
-ms:contentKeyID: 36058926
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243098(v=ax.60)/toc.json
-f1_keywords:
-- service
-- repair
-- order
-- agreements
+---
+# required metadata
+
+title: Work with customer service  
+description: Customer service supports professional, service-based companies and manufacturing service organizations.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Working with customer service 
 
+# Work with customer service 
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Customer service supports professional, service-based companies and manufacturing service organizations.
@@ -35,12 +51,6 @@ Customer service includes the following functionality:
 
 The topics in this section provide an overview of the Customer service business process and each business process component. They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.
 
-[Fulfill service agreements overview](fulfill-service-agreements-overview.md)
 
-[Handle customer inquiries overview](handle-customer-inquiries-overview.md)
-
-[Deliver service overview](deliver-service-overview.md)
-
-  
 
 
