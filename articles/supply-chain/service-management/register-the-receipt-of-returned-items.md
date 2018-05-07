@@ -69,7 +69,7 @@ You can use the **Arrival overview** form to identify a return shipment by its R
     
 
     > [!NOTE]
-    > <P>You can also manually create an arrival journal by using the <STRONG>Item arrival</STRONG> form. For more information, see <A href="register-item-receipts-with-an-item-arrival-journal.md">Register item receipts with an item arrival journal</A>.</P>
+    > <P>You can also manually create an arrival journal by using the <STRONG>Item arrival</STRONG> form. 
 
 
 
