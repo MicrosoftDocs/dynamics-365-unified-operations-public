@@ -58,8 +58,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## See also
 
-[Quarantine orders](quarantine-orders.md)
-
 [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
 
   
