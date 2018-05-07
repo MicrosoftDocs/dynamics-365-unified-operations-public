@@ -46,7 +46,7 @@ When you set up a service stage, you can create multiple options, or branches, t
 
 [Set up service order stages](set-up-service-order-stages.md)
 
-[Change the service order stage](change-the-service-order-stage.md)
+[Change the service order stage](change-service-order-stage.md)
 
   
 
