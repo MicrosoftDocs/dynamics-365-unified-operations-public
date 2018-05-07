@@ -1,17 +1,38 @@
-﻿---
-title: Subscription workflow overview
-TOCTitle: Subscription workflow overview
-ms:assetid: e865b03b-44c7-4850-8bef-87a7d494ab90
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa573199(v=AX.60)
-ms:contentKeyID: 36059832
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg231005(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Subscription workflow overview 
+description: This topic provides an overview of subscription workflow. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Subscription workflow overview 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You are the subscriptions administrator for a light company that offers subscriptions for lighting rig maintenance. A customer contacts your company to purchase a yearly subscription for lighting rig maintenance.
@@ -20,7 +41,7 @@ You are the subscriptions administrator for a light company that offers subscrip
 
 To set up a subscription, you must first create a subscription group for the new service agreement or verify that a subscription group exists. If a subscription group exists, you must set it up to invoice the customer yearly and to accrue sales revenue every month of the year. For more information about how to set up subscriptions, see [Set up subscription groups](set-up-subscription-groups.md).
 
-After the subscription group is created, you can create the subscription. For more information about how to create service subscriptions, see [Create service subscriptions from a subscription group](create-service-subscriptions-from-a-subscription-group.md).
+After the subscription group is created, you can create the subscription. For more information about how to create service subscriptions, see [Create service subscriptions from a subscription group](create-service-subscriptions-from-subscription-group.md).
 
 ## Create and modify subscription transactions
 
