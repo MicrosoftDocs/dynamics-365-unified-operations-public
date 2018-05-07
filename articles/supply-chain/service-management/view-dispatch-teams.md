@@ -1,17 +1,37 @@
-﻿---
-title: View dispatch teams
-TOCTitle: View dispatch teams
-ms:assetid: de1a6f1b-606c-4fb2-9266-0aaa30ba5ad7
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243199(v=AX.60)
-ms:contentKeyID: 36059686
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213684(v=ax.60)/toc.json
+---
+# required metadata
+
+title: View dispatch teams  
+description: View dispatch teams.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMADispatchBoard
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# View dispatch teams 
+# View dispatch teams   
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Service orders in the **Dispatch board** form are grouped by dispatch team.
@@ -22,7 +42,7 @@ Service orders in the **Dispatch board** form are grouped by dispatch team.
 
 3.  In the **Dispatch board** form, in the Gantt chart at the top of the form, expand a team list to review the names of the workers on the team. You can also view details about the service activities that are assigned to each worker.
 
-For information about how to assign a worker to a team, see [Set up a preferred technician](set-up-a-preferred-technician.md).
+For information about how to assign a worker to a team, see [Set up a preferred technician](set-up-preferred-technician.md).
 
 ## See also
 
