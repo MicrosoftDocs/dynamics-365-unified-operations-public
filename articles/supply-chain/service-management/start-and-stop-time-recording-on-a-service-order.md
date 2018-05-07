@@ -1,17 +1,37 @@
-﻿---
-title: Start and stop time recording on a service order
-TOCTitle: Start and stop time recording on a service order
-ms:assetid: 916488b7-c6f5-4421-b1f9-d595bf6033eb
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg242907(v=AX.60)
-ms:contentKeyID: 36058562
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243091(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Start and stop time recording on a service order 
+description: Start and stop time recording on a service order.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Start and stop time recording on a service order 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.
