@@ -53,7 +53,7 @@ Use the reporting tools to monitor service order margins and subscription transa
 
 ## Business processes
 
-The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules in Microsoft Dynamics AX.
+The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules in Microsoft Dynamics 365 for Finance and Operations.
 
 [![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
@@ -96,7 +96,7 @@ The following diagram illustrates the high level business processes for **Servic
 
 ## Integration of Service management
 
-Service management can be integrated with the following modules in Microsoft Dynamics AX:
+Service management can be integrated with the following modules in Microsoft Dynamics 365 for Finance and Operations:
 
   - [Sales and marketing](../sales-marketing/overview-sales-marketing.md)
 
