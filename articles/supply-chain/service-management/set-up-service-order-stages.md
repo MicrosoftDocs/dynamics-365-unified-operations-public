@@ -1,17 +1,37 @@
-﻿---
-title: Set up service order stages
-TOCTitle: Set up service order stages
-ms:assetid: 6cb23298-e957-4ebc-b3c0-aadc993d0941
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa571203(v=AX.60)
-ms:contentKeyID: 36058006
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg243285(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Set up service order stages 
+description: Set up service order stages. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up service order stages 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
