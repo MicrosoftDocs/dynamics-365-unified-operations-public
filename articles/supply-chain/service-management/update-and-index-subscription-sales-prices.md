@@ -1,17 +1,38 @@
-﻿---
-title: Update and index subscription sales prices
-TOCTitle: Update and index subscription sales prices
-ms:assetid: 2c31bb56-7224-422e-b9f6-e8e55502895a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa496865(v=AX.60)
-ms:contentKeyID: 36056254
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg232212(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Update and index subscription sales prices 
+description: Update and index subscription sales prices 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Update and index subscription sales prices 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
