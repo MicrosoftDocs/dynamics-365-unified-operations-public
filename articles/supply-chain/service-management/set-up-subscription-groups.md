@@ -1,17 +1,37 @@
-﻿---
-title: Set up subscription groups
-TOCTitle: Set up subscription groups
-ms:assetid: 8d40cdfe-3325-4e8e-afda-e382fc54fc3a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Aa498343(v=AX.60)
-ms:contentKeyID: 36058492
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg242492(v=ax.60)/toc.json
+---
+# required metadata
+
+title: Set up subscription groups  
+description: Set up subscription groups.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMASubscriptionGroup
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up subscription groups 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
@@ -28,7 +48,7 @@ _tocRel: gg242492(v=ax.60)/toc.json
 
 [Subscription groups (form)](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))
 
-[About subscription groups](about-subscription-groups.md)
+[Subscription groups](subscription-groups.md)
 
   
 
