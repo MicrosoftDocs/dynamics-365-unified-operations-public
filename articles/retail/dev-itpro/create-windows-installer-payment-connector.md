@@ -5,7 +5,7 @@ title: Create a Windows installer for a payment connector
 description: This topic describes how to create a Windows installer for a payment connector. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
