@@ -1,35 +1,51 @@
-﻿---
-title: Take returned items through inspection
-TOCTitle: Take returned items through inspection
-ms:assetid: ecbd5142-15cb-44ba-92ee-856c8308536f
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg243257(v=AX.60)
-ms:contentKeyID: 36059897
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230920(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Take returned items through inspection   
+description: Take returned items through inspection.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: InventQuarantineOrder
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # Take returned items through inspection 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 1.  Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
 
 2.  Locate the order line that corresponds to the returned item that you are inspecting.
-    
 
     > [!NOTE]
     > <P>A quarantine order can be associated with just a single item number. If 10 items that have different item numbers are returned in a single shipment and sent to quarantine, 10 individual quarantine orders are created.</P>
 
-
-
 3.  After examining the item, make a selection in the **Disposition code** field to indicate what should be done with the item and how to handle the related financial transaction. Examples include returning the item to stock and refunding the customer, scrapping the item and sending a replacement to the customer, or returning the item to the customer without credit.
     
-
     > [!NOTE]
     > <P>If multiple returned items in a single item number batch cannot be assigned the same disposition code, you must split the quarantine order (<STRONG>Functions</STRONG> &gt; <STRONG>Split</STRONG>) to assign a different disposition code to each sub-batch.</P>
-
 
 
 4.  When you are finished with the inspection, click **Report as finished** to release the returned items and create an item arrival journal entry. The person or department that receives the items then processes the journal for the items to be returned to inventory.
@@ -42,15 +58,9 @@ _tocRel: gg230920(v=ax.60)/toc.json
 
 ## See also
 
-[Quarantine order (form)](https://technet.microsoft.com/en-us/library/aa554073\(v=ax.60\))
-
-[Items in quarantine report (InventQuarantineOrder)](items-in-quarantine-report-inventquarantineorder.md)
-
-[About quarantine orders](about-quarantine-orders.md)
+[Quarantine orders](quarantine-orders.md)
 
 [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
-
-[Authorize customer returns](authorize-customer-returns.md)
 
   
 
