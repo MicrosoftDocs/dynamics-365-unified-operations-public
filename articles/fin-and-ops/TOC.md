@@ -1864,6 +1864,23 @@
 #### [Register sales commissions](../supply-chain/sales-marketing/tasks/register-sales-commissions.md)
 #### [Set up sales commission rules](../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md)
 
+
+## [Service-management](../supply-chain/service-management/service-management-home-page.md)
+### [Set up customer service]
+#### [Set up service agreements](../supply-chain/service-management/service-agreement-groups.md)
+##### [Create service agreements](../supply-chain/service-management/create-service-agreements.md)
+##### [Service intervals](../supply-chain/service-management/service-intervals.md)
+##### [Set up service intervals](../supply-chain/service-management/set-up-service-intervals.md)
+##### [Time windows](../supply-chain/service-management/time-windows.md)
+##### [Create time windows](../supply-chain/service-management/create-time-windows.md)
+##### [Create a service template group](../supply-chain/service-management/create-service-template-group.md)
+
+
+### [Work with customer service]
+
+
+
+
 ## [Transportation management](../supply-chain/transportation/transportation-management-overview.md)
 ### [Transportation management engines](../supply-chain/transportation/transportation-management-engines.md)
 ### [Create a new transportation management engine](../supply-chain/transportation/create-new-transportation-management-engine.md)
