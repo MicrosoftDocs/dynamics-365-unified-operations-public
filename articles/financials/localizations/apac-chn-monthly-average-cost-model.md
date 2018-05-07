@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monthly average cost model for China
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Inventory costing is used to determine the cost or monetary value of warehoused inventory items.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Correct a free text invoice
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
 

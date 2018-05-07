@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Information for customers who purchased Finance and Operations through a Cloud Service Provider
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Customers who have purchased Finance and Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 

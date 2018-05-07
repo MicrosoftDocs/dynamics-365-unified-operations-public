@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 

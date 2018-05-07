@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Version models in the automated build
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Platform update 6, a new task in the automated build definition updates the models in the source package and deployable package of the build output with the version of the build that produced them.
 

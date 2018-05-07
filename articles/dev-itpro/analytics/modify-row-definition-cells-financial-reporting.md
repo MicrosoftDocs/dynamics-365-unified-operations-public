@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Modify row definition cells
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 

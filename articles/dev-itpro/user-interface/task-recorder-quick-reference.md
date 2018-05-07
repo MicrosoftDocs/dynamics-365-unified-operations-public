@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Recorder quick reference
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 

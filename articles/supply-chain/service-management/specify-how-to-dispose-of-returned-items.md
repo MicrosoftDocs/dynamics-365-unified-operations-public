@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Specify how to dispose of returned items 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When you handle a return order, you must specify a reason return code to identify why the product is being returned. You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.

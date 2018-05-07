@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create service task relations    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order. This information is available to service technicians and customers.
 

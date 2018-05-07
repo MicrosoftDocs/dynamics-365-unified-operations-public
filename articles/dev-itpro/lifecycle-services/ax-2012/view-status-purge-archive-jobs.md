@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can use the options on the Microsoft Dynamics AX IDMF **Status** menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
 

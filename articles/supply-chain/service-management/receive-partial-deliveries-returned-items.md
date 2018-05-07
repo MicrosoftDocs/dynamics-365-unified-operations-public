@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Receive partial deliveries of returned items    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Partial deliveries are defined in terms of return order lines, not return order shipments.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT reporting for Europe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 

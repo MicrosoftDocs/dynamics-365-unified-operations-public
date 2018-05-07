@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a template BOM   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can create a template BOM by using any of the following methods. For all methods, the **From date** and **To date** fields are optional and for information only.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Project debit notes (Brazil)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 You can generate debit notes for projects to get reimbursement of expenses occurred in the project. The demo data company used to create this procedure is BRMF.
 

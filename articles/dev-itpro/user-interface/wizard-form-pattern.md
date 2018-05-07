@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Wizard form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 

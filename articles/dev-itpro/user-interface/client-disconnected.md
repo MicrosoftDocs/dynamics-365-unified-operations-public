@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 # Client internet connection 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The configuration of the local network for an on-premises deployment of Dynamics 365 for Finance and Operations can affect the available features in the web client. In particular, if the network configuration does not allow a client machine to access the internet, several degradations in the web client will occur. These include:    
 

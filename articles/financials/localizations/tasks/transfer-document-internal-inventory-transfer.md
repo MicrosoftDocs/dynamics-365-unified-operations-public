@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Generate a transfer document for an internal inventory transfer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create transfer documents for goods movement inside a company. This procedure is only available for legal entities with a primary address in Lithuania. 
 The procedure was created using the demo data company DEMF with a primary address in Lithuania. Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure. 

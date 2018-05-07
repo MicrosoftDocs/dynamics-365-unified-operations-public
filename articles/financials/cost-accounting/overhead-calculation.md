@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Overhead calculation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the typical processes for calculating and allocating overhead costs.
 

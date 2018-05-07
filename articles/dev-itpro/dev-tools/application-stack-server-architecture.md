@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application stack and server architecture
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 

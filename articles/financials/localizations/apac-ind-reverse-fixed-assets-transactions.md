@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Reversing fixed asset transactions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can reverse a fixed asset transaction, reverse taxes for the transaction, and update general ledger accounts. Information about the updates to an asset are displayed in the **Books** > **Balances** page for the selected asset.
 

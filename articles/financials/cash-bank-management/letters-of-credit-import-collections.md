@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of credit and import collections
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
 

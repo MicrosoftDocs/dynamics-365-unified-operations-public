@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product receipt against purchase orders
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article describes the various options for registering products as received.
 

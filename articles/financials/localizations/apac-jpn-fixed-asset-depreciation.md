@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset depreciation for Japan FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article answers some frequently asked questions about fixed asset depreciation for Japan.
 

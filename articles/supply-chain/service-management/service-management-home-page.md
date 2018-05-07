@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service management 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Use **Service management** to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. You can use service agreements to define the resources that are used in a typical service visit. You can also use service agreements to view how those resources are invoiced to the customer. A service agreement can also include a service level agreement that specifies standard response times, and offers tools to record the actual time.

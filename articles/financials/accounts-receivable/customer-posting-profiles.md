@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customer posting profiles
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Customer posting profiles control the posting of customer transactions to the general ledger.
 

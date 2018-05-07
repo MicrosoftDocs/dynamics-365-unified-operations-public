@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up template to represent objects at customer site 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Use this procedure to set up a template that represents objects at a customer site.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Azure Resource Manager onboarding
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 

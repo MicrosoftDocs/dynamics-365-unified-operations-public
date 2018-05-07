@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Subscription workflow overview 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You are the subscriptions administrator for a light company that offers subscriptions for lighting rig maintenance. A customer contacts your company to purchase a yearly subscription for lighting rig maintenance.

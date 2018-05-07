@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse configuration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 

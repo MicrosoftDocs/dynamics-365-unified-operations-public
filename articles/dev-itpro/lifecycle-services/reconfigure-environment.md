@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 ---
 # Reconfigure your environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 

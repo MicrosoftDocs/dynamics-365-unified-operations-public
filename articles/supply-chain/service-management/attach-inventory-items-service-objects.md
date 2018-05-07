@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Attach inventory items to service objects    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.

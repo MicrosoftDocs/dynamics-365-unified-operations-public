@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Subscription sales prices   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When you create a subscription, the sales price is derived from the sales price setup that was created in the **Sales price (subscription)** form.

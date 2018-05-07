@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 # ISV licensing (on-premises)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
 

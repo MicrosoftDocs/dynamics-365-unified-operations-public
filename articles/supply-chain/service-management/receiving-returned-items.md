@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Receiving returned items 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When a return shipment arrives, you match it to a return order that has already been created.

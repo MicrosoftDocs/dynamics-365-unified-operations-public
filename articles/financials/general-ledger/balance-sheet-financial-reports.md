@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Balance sheet financial reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 

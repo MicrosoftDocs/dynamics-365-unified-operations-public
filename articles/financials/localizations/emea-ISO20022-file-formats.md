@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Import ISO20022 files
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can import payment files that have the following formats:
 

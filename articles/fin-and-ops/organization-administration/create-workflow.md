@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Create a workflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create a workflow.
 

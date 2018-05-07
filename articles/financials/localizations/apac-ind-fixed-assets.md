@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Fixed assets for India
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or corporation. Using fixed assets for India, you can set up and enter acquisition information for fixed asset records, and then manage fixed assets by depreciating them and setting a capitalization threshold to determine depreciation. You can also calculate adjustments to fixed assets, and dispose of them.
 

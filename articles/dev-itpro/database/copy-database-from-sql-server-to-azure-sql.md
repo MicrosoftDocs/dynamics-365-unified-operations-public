@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft SQL Server (a development, build or demo environment, which is also known as a Tier 1 or one-box environment) to an environment that is based on a Microsoft Azure SQL database (a sandbox user acceptance testing \[UAT\] environment, Tier 2 or higher).
 
@@ -324,7 +324,7 @@ DEALLOCATE retail_ftx;
 
 ### Re-provision the target environment
 
-[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 

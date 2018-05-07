@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # PageData Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Represents the data that is loaded into a page.
 

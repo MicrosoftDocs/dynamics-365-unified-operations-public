@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install a deployable package
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 

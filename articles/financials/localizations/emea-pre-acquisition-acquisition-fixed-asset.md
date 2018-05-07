@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Post the pre-acquisition of a fixed asset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up and post fixed asset pre-acquisitions.
 

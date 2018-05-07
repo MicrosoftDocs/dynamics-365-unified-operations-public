@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Withholding tax for Italy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 

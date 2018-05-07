@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Order entry deadlines
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about order entry deadlines. An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.
 

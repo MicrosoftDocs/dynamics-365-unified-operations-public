@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # MultiLookupMetadata Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Multi-Lookup metadata type.
 

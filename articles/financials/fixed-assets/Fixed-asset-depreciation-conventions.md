@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset depreciation conventions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Depreciation conventions are used to determine when and how depreciation is calculated for both the year when the fixed asset is acquired and the year when the fixed asset is disposed of.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help prevent long-running reports from timing out
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides tips that can help you prevent reports that run for a long time from timing out. 
 

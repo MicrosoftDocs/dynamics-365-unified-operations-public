@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Semansys XBRL integration (Netherlands)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through using Dutch functionality to export financial data in the XML format. This procedure was created using the demo data company DEMF with a legal entity primary address updated to be in the Netherlands.
 

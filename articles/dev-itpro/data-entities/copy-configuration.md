@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 7
 ---
 # Copy configuration data from one company or legal entity to another
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations:
 

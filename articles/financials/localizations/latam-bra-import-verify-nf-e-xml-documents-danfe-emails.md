@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import and verify NF-e XML documents and DANFE files for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic answers questions about the process for importing and verifying Nota fiscal eletrônica (NF-e) XML documents and Documento auxiliar da Nota fiscal eletrônica (DANFE) that you receive in emails.
 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # ValueDesign Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Value design object type.
 

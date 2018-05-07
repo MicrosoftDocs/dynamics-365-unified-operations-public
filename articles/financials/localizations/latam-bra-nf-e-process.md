@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e process overview for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 

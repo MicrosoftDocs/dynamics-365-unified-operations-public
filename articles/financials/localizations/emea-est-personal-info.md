@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Personal information requests for Estonia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Estonia legally allows people to ask companies for reports that identify the personal information that the companies track. The reports also indicate who has viewed, created, updated, and deleted this information.
 

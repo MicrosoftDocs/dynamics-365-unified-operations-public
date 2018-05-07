@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Development system requirements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists the system requirements for development.
 

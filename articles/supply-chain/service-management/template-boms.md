@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Template BOMs    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 A template bill of materials (BOM) provides you with a standardized list of components for service objects that are serviced regularly. The components that are listed in the template BOM represent the individual subcomponents of the service object. By applying a template BOM to a service object, you can keep a record of the subcomponents that have been replaced on the service object.

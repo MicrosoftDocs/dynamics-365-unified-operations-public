@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Customize field Help
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how you can customize existing field descriptions and add your own descriptions.
 

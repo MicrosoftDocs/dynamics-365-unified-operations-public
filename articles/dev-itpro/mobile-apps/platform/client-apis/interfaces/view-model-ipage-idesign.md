@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Design Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Design object type.
 For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).

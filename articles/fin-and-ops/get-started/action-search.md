@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Action search
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the action search functionality in Microsoft Dynamics 365 for Finance and Operations. Action search will help you find and run actions on a page.
 

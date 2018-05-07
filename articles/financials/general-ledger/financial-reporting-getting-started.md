@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial reporting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 

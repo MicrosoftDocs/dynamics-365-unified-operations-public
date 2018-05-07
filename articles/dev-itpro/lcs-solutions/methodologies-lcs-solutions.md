@@ -31,7 +31,7 @@ ms.author: omarc
 
 # Add a methodology to an LCS solution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 

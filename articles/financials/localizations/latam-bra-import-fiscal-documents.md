@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import fiscal documents for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 

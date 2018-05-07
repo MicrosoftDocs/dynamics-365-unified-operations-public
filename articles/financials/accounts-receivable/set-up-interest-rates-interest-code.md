@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up interest rates for an interest code
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
 

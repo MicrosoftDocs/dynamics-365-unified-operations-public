@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deploy and access development environments 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to access development instances, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 

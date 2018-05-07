@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View dispatch teams   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Service orders in the **Dispatch board** form are grouped by dispatch team.

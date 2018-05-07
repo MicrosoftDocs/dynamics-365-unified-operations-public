@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Whole amount and Interval calculation options for sales tax codes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 

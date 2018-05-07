@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intercompany invoicing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
 

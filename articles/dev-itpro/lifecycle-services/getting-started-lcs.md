@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lifecycle Services for Finance and Operations partners
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 

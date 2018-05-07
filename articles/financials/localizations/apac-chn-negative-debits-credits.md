@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Display debit and credit amounts in ledger accounts for China
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 

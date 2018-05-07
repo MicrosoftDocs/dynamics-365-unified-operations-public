@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import the Chinese Golden Tax data entity
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Finance and Operations.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Custom designs for business documents
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Derived financial hierarchies in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the derived financial hierarchies functionality that is available for the public sector. 
 

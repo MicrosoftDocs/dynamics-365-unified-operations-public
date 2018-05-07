@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Retail statements
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS). The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client. The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.  
 

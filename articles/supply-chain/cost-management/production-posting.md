@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production posting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about different types of postings in the production process.
 

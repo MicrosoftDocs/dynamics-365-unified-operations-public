@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View undispatched service orders 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.

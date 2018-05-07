@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 6
 
 # Known issues
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to view the known issues that you might experience when you use Microsoft Dynamics 365 for Finance and Operations.
 

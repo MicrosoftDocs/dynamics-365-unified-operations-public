@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View the status of service orders 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can use the **Dispatch board** form to view the status of service activities in service orders.

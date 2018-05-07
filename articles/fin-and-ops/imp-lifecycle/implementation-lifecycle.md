@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Implementation lifecycle management for Microsoft Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations project.
 

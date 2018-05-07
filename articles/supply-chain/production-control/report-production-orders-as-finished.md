@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Report production orders as finished
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 

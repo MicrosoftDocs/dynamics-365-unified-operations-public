@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 

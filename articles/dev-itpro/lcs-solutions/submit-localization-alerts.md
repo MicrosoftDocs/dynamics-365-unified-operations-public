@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inform about country/region regulatory features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
 

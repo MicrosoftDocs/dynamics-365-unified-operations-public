@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Performance timer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 

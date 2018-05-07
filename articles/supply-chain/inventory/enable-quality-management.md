@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Quality management overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Audit policy violations and cases
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
 

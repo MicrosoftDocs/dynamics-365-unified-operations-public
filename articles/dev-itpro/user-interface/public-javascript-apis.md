@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Extensible controls - Public JavaScript APIs
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls. 
 

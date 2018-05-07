@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up an invoice declaration for vendors (Iceland)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through setting up the Icelandic invoice declaration. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
 

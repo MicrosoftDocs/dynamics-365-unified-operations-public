@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Credit subscription transactions 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 ## Credit subscription transactions

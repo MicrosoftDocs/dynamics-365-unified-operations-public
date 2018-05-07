@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger journal types
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the journal types that you can set up for financial journals. Use the **Journal names** page to set up journals that you can use throughout Microsoft Dynamics 365 for Finance and Operations.
 

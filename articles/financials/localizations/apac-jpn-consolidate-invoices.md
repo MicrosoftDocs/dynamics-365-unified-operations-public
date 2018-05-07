@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidated invoices for Japan
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Japan, invoices are consolidated each month for payment. This article provides information about consolidated invoices, and explains how the invoice amount and due date are calculated.
 
