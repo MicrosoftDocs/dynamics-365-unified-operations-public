@@ -42,7 +42,8 @@ The validity period of a sales agreement is defined by the **Effective date** an
 
 You can create a sales order directly from a sales agreement by using the **Release order** action. Alternatively, you can select an effective sales agreement when you're taking orders (see the "Applying sales agreements in the ordering process" section of this article).  
 
-**Note:** In earlier versions, sales agreements were referred to as blanket sales orders.
+> [Note!] 
+> In earlier versions, sales agreements were referred to as blanket sales orders.
 
 ## Commitment types
 Each line in a sales agreement expresses a commitment to sell something. In general, there are two categories of commitment:
