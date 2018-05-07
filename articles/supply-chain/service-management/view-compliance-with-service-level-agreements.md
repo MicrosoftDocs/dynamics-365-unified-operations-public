@@ -1,17 +1,37 @@
-﻿---
-title: View compliance with service level agreements
-TOCTitle: View compliance with service level agreements
-ms:assetid: 1a9e506f-3680-42b3-be17-e15b1ea88788
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg230971(v=AX.60)
-ms:contentKeyID: 36056123
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg213356(v=ax.60)/toc.json
+---
+# required metadata
+
+title: View compliance with service level agreements   
+description: View compliance with service level agreements.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# View compliance with service level agreements 
+# View compliance with service level agreements    
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 ## View compliance with a service level agreement
@@ -28,7 +48,7 @@ _tocRel: gg213356(v=ax.60)/toc.json
 
 ## See also
 
-[About service level agreements](about-service-level-agreements.md)
+[Service level agreements](service-level-agreements.md)
 
   
 
