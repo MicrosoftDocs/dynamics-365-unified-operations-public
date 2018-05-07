@@ -1,17 +1,38 @@
-﻿---
-title: View the start time and duration of a service order
-TOCTitle: View the start time and duration of a service order
-ms:assetid: c82989db-32f7-4eb2-a442-d801c7d28d08
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg213648(v=AX.60)
-ms:contentKeyID: 36059316
-ms.date: 04/18/2014
-mtps_version: v=AX.60
-_tocRel: gg230655(v=ax.60)/toc.json
 ---
+# required metadata
+
+title: Service orders  
+description: You can view when the work on the service order was started and when the service order is going to be completed.
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/07/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SMAServiceOrderTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+---
+
 
 # View the start time and duration of a service order 
 
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 You can view when the work on the service order was started and when the service order is going to be completed.
