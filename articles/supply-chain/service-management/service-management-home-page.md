@@ -76,7 +76,7 @@ The following diagram illustrates the high level business processes for **Servic
 <td><p><strong>Service order margin</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="">Handle customer inquiries overview</a></p></td>
+<td><p>Handle customer inquiries overview</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Service orders (form)</a></p></td>
 <td><p><strong>Work description</strong></p></td>
 </tr>
