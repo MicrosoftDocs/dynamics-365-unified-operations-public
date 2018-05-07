@@ -125,7 +125,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 
 1. Extract the data upgrade deployable package to **C:\\Temp** or a location of your choice.
    > [!NOTE] 
-   > Skip this step if this is a development environment connected to LCS and you are planning to execute the data upgrade process directly from LCS.
+   > Skip this step if this is a development environment that is connected to LCS and you are planning to execute the data upgrade process directly from LCS.
 
 2. Import or restore a backup of the source database (the database that you will be upgrading) to the demo or development environment that is already running the latest Finance and Operations update that you want to upgrade to. Leave the existing database in place, and name your new database **imported\_new**.
 
