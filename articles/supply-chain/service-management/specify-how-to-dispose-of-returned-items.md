@@ -177,12 +177,10 @@ For each disposition code that you define, you must select a disposition action.
 2.  For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.
 
 
-> [!NOTE]
-> <P>For information about how to create a new quarantine order manually, see <A href="quarantine-orders.md">Quarantine orders</A> and <A href="https://technet.microsoft.com/en-us/library/aa554073(v=ax.60)">Quarantine order (form)</A>.</P>
-
-
 
 ## See also
+
+[Quarantine order (form)](https://technet.microsoft.com/en-us/library/aa554073(v=ax.60))
 
 [Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
 
