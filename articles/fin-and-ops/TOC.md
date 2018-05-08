@@ -1886,13 +1886,21 @@
 ##### [Template BOMs](../supply-chain/service-management/template-boms.md)
 ##### [Create a template BOM](../supply-chain/service-management/create-template-bom.md)
 ##### [Attach templates to service objects](../supply-chain/service-management/attach-templates-service-objects.md)
-
-#### [Define reason codes and stages for service orders ](../supply-chain/service-management/service-objects.md)
-##### [Create service objects](../supply-chain/service-management/create-service-task-relations.md)
-##### [Attach inventory items to service objects](../supply-chain/service-management/attach-inventory-items-service-objects.md)
-##### [Service object groups](../supply-chain/service-management/service-object-groups.md)
-
-
+#### [Define reason codes for service orders](../supply-chain/service-management/reason-codes-service-orders.md)
+##### [Service order stages](../supply-chain/service-management/service-order-stages.md)
+##### [Set up service order stages](../supply-chain/service-management/set-up-service-order-stages.md)
+##### [Create reason codes](../supply-chain/service-management/create-reason-codes.md)
+#### [Set up service agreements and subscriptions](../supply-chain/service-management/service-level-agreements.md)
+##### [Subscription sales prices](../supply-chain/service-management/subscription-sales-prices.md)
+##### [Subscription groups](../supply-chain/service-management/subscription-groups.md)
+##### [Set up subscription groups](../supply-chain/service-management/set-up-subscription-groups.md)
+##### [Use stage reason codes](../supply-chain/service-management/use-stage-reason-codes.md)
+##### [Integration for service agreements and projects](../supply-chain/service-management/integration-service-agreements-projects.md)
+#### [Set up repair management](../supply-chain/service-management/repair-management.md)
+#### [Set up customer returns](../supply-chain/service-management/disposition-and-return-reason-codes.md)
+##### [Set up disposition codes](../supply-chain/service-management/set-up-disposition-codes.md)
+##### [Set up return reason codes](../supply-chain/service-management/set-up-return-reason-code.md)
+##### [Specify how to dispose of returned items](../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md)
 
 
 
