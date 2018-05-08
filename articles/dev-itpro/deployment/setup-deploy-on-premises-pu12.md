@@ -34,14 +34,14 @@ ms.dyn365.ops.version: Platform update 12
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) 
+This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md). 
 
 > [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform update 12. For information about deploying to Platform update 8 or Platform update 11 installations see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
+> This topic applies only to deploying on-premises environments on Platform update 12. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
-> [!NOTE]
-> The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
-> If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
+The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
+
+If you have questions or feedback about the content in this topic, please post them in the **Comments** section at the bottom of this page.
 
 ## Finance and Operations components
 
@@ -79,7 +79,7 @@ Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). And, to complete the deployment and configure the LCS Local agent, you will need AAD. If you do not already have an AAD tenant, you can get one for free by using one of the options provided by AAD. For more information, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (AAD). To complete the deployment and configure the LCS Local agent, you will need AAD. If you do not already have an AAD tenant, you can get one for free by using one of the options provided by AAD. For more information, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -87,10 +87,10 @@ Finance and Operations uses standalone Service Fabric. For more information, see
 
 Setup of Finance and Operations will deploy a set of applications inside Service Fabric (SF). During deployment, each node in the cluster will be defined via configuration to have one of the following node types:
 
-- **AOSNodeType**: Hosts the application object server (business logic).
-- **OrchestratorType**: Functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
-- **ReportServerType**: Hosts SSRS and reporting logic.
-- **MRType**: Hosts management reporting logic.
+- **AOSNodeType** - Hosts the application object server (business logic).
+- **OrchestratorType** - Functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
+- **ReportServerType** - Hosts SSRS and reporting logic.
+- **MRType** - Hosts management reporting logic.
 
 ## Infrastructure
 
@@ -107,7 +107,7 @@ The hardware configuration includes the following components:
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md) and Sizing guidelines.
+For more information, see [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md).
 
 ### Hardware layout
 
@@ -221,7 +221,7 @@ Self-signed certificates can be used only for testing purposes. For convenience,
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| **Do not reuse the Financial Reporting Client certificate.** |
 | On-Premise local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premise local agent certificate is needed for a tenant.</p> | |
 
-The following is an example of a Service Fabric Server certificate combined with an AOS SSL Certificate.
+The following is an example of a Service Fabric Server certificate combined with an AOS SSL certificate.
 
 #### Subject name
 
@@ -229,7 +229,7 @@ The following is an example of a Service Fabric Server certificate combined with
 CN = *.d365ffo.onprem.contoso.com
 ```
 
-#### Subject Alternative Names
+#### Subject alternative names
 
 ```
 DNS Name=ax.d365ffo.onprem.contoso.com
@@ -255,7 +255,7 @@ You must create several user or service accounts for Finance and Operations (on-
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
-DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. The following instructions provide steps to create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
+DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network. The following instructions provide steps to create a DNS forward lookup zone and A records for the AOS host name and Service Fabric cluster. In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:
 
 - **ax**.d365ffo.onprem.contoso.com for AOS machines
 - **sf**.d365ffo.onprem.contoso.com for the Service Fabric cluster
@@ -281,8 +281,8 @@ In the new DNS zone, create one A record that is named **ax.d365ffo.onprem.conto
 1. Find the newly created zone under the **Forward Lookup Zones** folder in DNS Manager.
 2. Right-click the new zone, and then select **New Host**.
 3. Enter the name and IP address of the Service Fabric node. (For example, enter **ax** as the name and enter **10.179.108.12** as the IP address.) Select **Add Host**.
-4. Do not select either checkbox.
-5. Repeat steps 1-4 for each AOS Node.
+4. Do not select either check box.
+5. Repeat steps 1-4 for each AOS node.
 
 #### Set up an A record for the orchestrator
 
@@ -290,8 +290,8 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contos
 
 1. Right-click the new zone, and then select **New Host**.
 2. Enter the name and IP address of the Service Fabric node. (For example, enter **sf** as the name and enter **10.179.108.15** as the IP address.) Select **Add Host**.
-3. Do not select either checkbox.
-4. Repeat for each Orchestrator Node.
+3. Do not select either check box.
+4. Repeat for each Orchestrator node.
 
 ### <a name="joindomain"></a> 5. Join VMs to the domain
 
@@ -317,13 +317,13 @@ We have provided several scripts to help improve the setup experience. Follow th
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
    >[!Note] 
-   > If you need the older version for PU8 or PU11 download version 1.
+   > If you need the older version for Platform update 8 or Platform update 11, download version 1.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> Ensure all edits are made to the ConfigTemplate.xml in this folder.
+> Ensure all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a> 7. Describe your configuration
 
@@ -333,7 +333,7 @@ The infrastructure setup scripts use the following configuration files to drive 
 - infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
 
 >[!NOTE]
->Configuration files must be updated based on your environment for the setup scripts to work correctly. Be sure to update these files with the proper computer names, IP addresses, service accounts, domain based on your setup.
+>Configuration files must be updated based on your environment for the setup scripts to work correctly. Be sure to update these files with the proper computer names, IP addresses, service accounts, and domain based on your setup.
 
 **infrastructure\ConfigTemplate.xml** describes:
 - Service Accounts that are needed for the application to operate
@@ -345,7 +345,7 @@ The infrastructure setup scripts use the following configuration files to drive 
     > Make sure that there are three fault domains for OrchestratorType when you configure Service Fabric cluster. 
     > Make sure that no more than one type of node is deployed in a single machine when you configure Service Fabric cluster.
 
-For each Service Fabric Node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
+For each Service Fabric node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
 
 - The mapping between each node type and the application, domain and service accounts, and certificates.
 - Whether to enable the UAC
