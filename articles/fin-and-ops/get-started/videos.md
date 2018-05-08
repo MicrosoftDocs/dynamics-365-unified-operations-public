@@ -59,7 +59,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 #### Financial management
-- [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
+- [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
