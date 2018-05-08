@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# How to add new location roles, or Address and contact information, and party relationship types 
+# How to add new location roles, (Address and contact information purpose), and party relationship types 
 
-## Add new location roles 
+## Add new location roles (Address and contact information purpose) 
 
 There are two ways to add a new location role:
 
@@ -54,7 +54,7 @@ There are two ways to add a new location role:
 
         ![Data population](media/Dirdata.PNG)
 
-    4.  To test the new location role, you can create a runnable class, and call DirDataPopulation::insertLogisticsLocationRoles() in Main(). After it is completed, you should be able to see the new role populated in LogisticsLocationRole table with type \> 0, and the new role will show on the **Address and contact information purpose** page.
+    4.  To test populating the new location role, you can create a runnable class, and call DirDataPopulation::insertLogisticsLocationRoles() in Main(). After it is completed, you should be able to see the new role populated in LogisticsLocationRole table with type \> 0, and the new role will show on the **Address and contact information purpose** page.
 
         ![Insert New Location](media/InsertNewLocation.PNG)
 
@@ -74,6 +74,6 @@ There are 2 ways to add a new relationship type:
     
     ![DirRelationshipChild](media/DirRelationship.PNG)
 
-    3.  To test, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). You should be able to see the new relationship type in the DirRelationshipTypeTable, and the new relationship type will be available in the **Relationship types** page.
+    3.  To test populating the new relationship type, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). You should be able to see the new relationship type in the DirRelationshipTypeTable, and the new relationship type will be available in the **Relationship types** page.
 
         ![Runnable class](media/Runnable.PNG)
