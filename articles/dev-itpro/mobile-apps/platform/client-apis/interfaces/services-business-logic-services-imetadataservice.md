@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # MetadataService Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 Provides ability to access and configure various metadata elements under the application workspace.
 

@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 8
 
 # Upgrade from AX 2012 - Cutover testing (Mock cutover)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
 
 *Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Microsoft Dynamics 365 for Finance and Operations, is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 
@@ -101,7 +101,7 @@ The following areas should be validated:
 
 - **Integrated systems** – You might have other systems that are integrated with the AX 2012 environment. You must factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
 
-### 3. Create a backup of the AX 2012 database and run the T-SQL script to prepare the database 
+ ### 3. Create a backup of the AX 2012 database and run the T-SQL script to prepare the database 
 
 This task involves the DBA. The backup will be used if a rollback is required. It will also be used as a reference point that will be kept for a period and show the system state at the moment of cutover.
 
@@ -127,7 +127,7 @@ The following areas should be validated:
     - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource.
 
 
-### 5. Upload the bacpac file to Azure storage
+### 5. Upload the bacpac file to Azure storage or the LCS Asset library
 
 This task involves the DBA or the server administrators. During this task, the bacpac file is moved into Azure.
 
@@ -137,7 +137,7 @@ The bacpac file you have created needs to be copied to the AOS virtual machine (
 
 You can choose how you would like to move the bacpac file to the sandbox AOS VM. A fast option is to use Microsoft Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics 365 subscription itself). There are free tools to help you to move files between Azure storage: From the command line you can use [Azcopy](/azure/storage/common/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](http://azure.microsoft.com/en-us/features/storage-explorer/). Use one of these tools to upload the backup from your on-premises environment to Azure storage. You can then download it to your sandbox AOS VM.
 
-A free option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option: 
+Another (free) option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option: 
 1. Log into your project in LCS and go to your Asset library.
 2. Select the Database backup tab. 
 3. Upload the bacpac file. 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Pagelink 
 
-[!include[banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 
 A pagelink is a control that navigates to another page.
 

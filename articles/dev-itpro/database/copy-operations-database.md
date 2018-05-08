@@ -5,7 +5,7 @@ title: Create a copy of a Finance and Operations database to restore later
 description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 03/30/2018
 
 ms.topic: article
 ms.prod: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Create a copy of a Finance and Operations database to restore later
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
 
@@ -49,7 +49,7 @@ There are several situations where you might want to keep a copy of a Finance an
 Be aware that Microsoft also provides a standard feature that lets you restore an Azure SQL database environment to a specific point in time within the last 35 days. This restore is done via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
 > [!IMPORTANT]
-> This topic documents the only supported method of retaining a copy of a Finance and Operations database. In a Finance and Operations environment, no copies of Azure SQL database may be kept running. Therefore, use of the CREATE DATABASE AS COPY OF statement is disallowed. Any unsupported copies of Azure SQL databases may be deleted without warning. 
+> This topic documents the only supported method of retaining a copy of a Finance and Operations database. In a Finance and Operations environment, no copies of Azure SQL database may be kept running. Therefore, use of the CREATE DATABASE AS COPY OF statement is disallowed. Any unsupported copies of Azure SQL databases older than 7 days will be deleted without warning. 
 
 ## Prerequisites
 To export a database from a sandbox environment, you must install the latest version of Microsoft SQL Server Management Studio for Microsoft SQL Server 2016 on the computer that runs Application Object Server (AOS) in that environment. You must then do the export on that AOS computer. There are two reasons for this requirement:
@@ -131,13 +131,13 @@ Here is an explanation of the parameters:
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
 - **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. To query the service level objective of the current database, run the following query.
-```
-SELECT  d.name,   
+  ```
+  SELECT  d.name,   
      slo.*    
-FROM sys.databases d   
-JOIN sys.database_service_objectives slo    
-ON d.database_id = slo.database_id;  
-```
+  FROM sys.databases d   
+  JOIN sys.database_service_objectives slo    
+  ON d.database_id = slo.database_id;  
+  ```
 
 ### Run a script to update the Finance and Operations database
 
@@ -182,6 +182,10 @@ EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+
+CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
 GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
@@ -215,7 +219,7 @@ DEALLOCATE retail_ftx;
 
 Reprovisioning is only required if you are restoring or importing the database on another environment. 
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Limitations
 After you import a database, the link between the database and document handling documents that are stored in Azure blob storage might be broken. If you have custom code that uses the X++ **FileUpload** class to put files in blob storage, the links to those files might also be broken.

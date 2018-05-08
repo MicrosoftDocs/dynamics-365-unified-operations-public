@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 # Set up and deploy on-premises environments (Platform update 12)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform update 12. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) 
 
@@ -55,9 +55,9 @@ These components depend on the following system software:
 
 - Microsoft Windows Server 2016
 - Microsoft SQL Server 2016 SP1, which has the following features:
-    - Full-text index search is enabled.
-    - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
-    - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
+  - Full-text index search is enabled.
+  - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
+  - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
     > [!WARNING]
     > Full Text Search must be enabled.
@@ -68,10 +68,10 @@ These components depend on the following system software:
 - Active Directory Federation Services (AD FS) on Windows Server 2016
 - Domain controller
 
-    > [!WARNING]
-    > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
-    - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
-    - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+  > [!WARNING]
+  > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
+  >   - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
+  >   - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
 
 ## Lifecycle Services
 
@@ -316,8 +316,8 @@ We have provided several scripts to help improve the setup experience. Follow th
 2. On the dashboard, select the **Shared asset library** tile.
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
->[!Note] 
-> If you need the older version for PU8 or PU11 download version 1.
+   >[!Note] 
+   > If you need the older version for PU8 or PU11 download version 1.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
@@ -395,13 +395,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
->[!WARNING]
->Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
-```powershell
-dir cert:\CurrentUser\My
-dir cert:\LocalMachine\My
-dir cert:\LocalMachine\Root
-```
+> [!WARNING]
+> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+> ```powershell
+> dir cert:\CurrentUser\My
+> dir cert:\LocalMachine\My
+> dir cert:\LocalMachine\Root
+> ```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
@@ -557,15 +557,15 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 2. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\aos-storage file share:
 
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
-    3. Leave **Allow caching of share** checked.
-    4. Check **Encrypt data access**.
-    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
-    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
+   1. In Server Manager, select **File and Storage Services** \> **Shares**.
+   2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
+   3. Leave **Allow caching of share** checked.
+   4. Check **Encrypt data access**.
+   5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
+   6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
     
-    >[!NOTE]
-    > You may need to enable **Computers** under **Object Types..** to add machines or enable **Service Accounts** under **Object Types..** to add service accounts.
+      >[!NOTE]
+      > You may need to enable **Computers** under **Object Types..** to add machines or enable **Service Accounts** under **Object Types..** to add service accounts.
 
 3. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\agent file share:
 
@@ -658,7 +658,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    > [!WARNING]
    > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
-   
+   > 
    > 2. If a database with the same name exists, the database will be reused.
 
 6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a PowerShell window with elevate privileges.
@@ -671,10 +671,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
    ```
 
-  The script will do the following:
+   The script will do the following:
   
-  - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-  - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
+   - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
+   - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
 #### Configure the Finance and Operations database
 
@@ -687,25 +687,25 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    The **Initialize-Database.ps1** script will do the following:
 
-    1. Restore the database from the specified backup file.
-    2. Create a new user that has SQL authentication enabled (axdbadmin).
-    3. Map users to database roles based on the following table for AXDB.
+   1. Restore the database from the specified backup file.
+   2. Create a new user that has SQL authentication enabled (axdbadmin).
+   3. Map users to database roles based on the following table for AXDB.
 
-    | User            | Type    | Database role |
-    |-----------------|---------|---------------|
-    | svc-AXSF$       | gMSA    | db\_owner     |
-    | svc-LocalAgent$ | gMSA    | db\_owner     |
-    | svc-FRPS$       | gMSA    | db\_owner     |
-    | svc-FRAS$       | gMSA    | db\_owner     |
-    | axdbadmin       | SqlUser | db\_owner     |
+      | User            | Type    | Database role |
+      |-----------------|---------|---------------|
+      | svc-AXSF$       | gMSA    | db\_owner     |
+      | svc-LocalAgent$ | gMSA    | db\_owner     |
+      | svc-FRPS$       | gMSA    | db\_owner     |
+      | svc-FRAS$       | gMSA    | db\_owner     |
+      | axdbadmin       | SqlUser | db\_owner     |
 
 
-    4. Map users to database roles based on the following table for TempDB.
+   4. Map users to database roles based on the following table for TempDB.
 
-    | User            | Type    | Database role |
-    |-----------------|---------|---------------|
-    | svc-AXSF$       | gMSA    | db_datareader, db_datawriter, db_ddladmin     |
-    | axdbadmin       | SqlUser | db_datareader, db_datawriter, db_ddladmin     |
+      | User            | Type    | Database role |
+      |-----------------|---------|---------------|
+      | svc-AXSF$       | gMSA    | db_datareader, db_datawriter, db_ddladmin     |
+      | axdbadmin       | SqlUser | db_datareader, db_datawriter, db_ddladmin     |
 
    The **Configure-Database.ps1** script will do the following:
 
@@ -730,14 +730,14 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    ```
 
    The script will do the following:
-    1. Create an empty database named **FinancialReporting**.
-    2. Map the users to database roles based on the following table.
+   1. Create an empty database named **FinancialReporting**.
+   2. Map the users to database roles based on the following table.
 
-    | User            | Type | Database role |
-    |-----------------|------|---------------|
-    | svc-LocalAgent$ | gMSA | db\_owner     |
-    | svc-FRPS$       | gMSA | db\_owner     |
-    | svc-FRAS$       | gMSA | db\_owner     |
+      | User            | Type | Database role |
+      |-----------------|------|---------------|
+      | svc-LocalAgent$ | gMSA | db\_owner     |
+      | svc-FRPS$       | gMSA | db\_owner     |
+      | svc-FRAS$       | gMSA | db\_owner     |
 
 ### <a name="encryptcred"></a> 15. Encrypt credentials
 
@@ -950,6 +950,6 @@ This error occurs because of a OpenID scope **allatclaims** that is required by 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
 When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
 
-## See also
+## Additional resources
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)

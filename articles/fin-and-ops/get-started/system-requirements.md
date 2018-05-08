@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # System requirements for cloud deployments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments. If this step is appropriate, before you install Finance and Operations, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
@@ -185,6 +185,6 @@ The computer must meet all system requirements for installing and using the foll
 
 For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
-## See also
+## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)

@@ -6,6 +6,7 @@
 ## [Remove a Talent environment](remove-talent-environment.md)
 ## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
+## [Access preview features in Dynamics 365 for Talent: Attract](access-preview-feature.md)
 
 # [Develop a human resources strategy](departments-jobs-positions.md)
 ## [Set up job components](create-job.md)
@@ -13,6 +14,7 @@
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Personnel actions FAQ](personnel-actions-faq.md)
+## [Formalize business processes](formalize-business-processes.md)
 ## [Use workflow to manage employee information](workflow-manage-employee-information.md)
 ## [Leave and absence overview](leave-absence-overview.md)
 

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/24/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 1
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)]
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. 
 
@@ -65,6 +65,8 @@ platform which provide additional opportunities for users with disabilities.
 Client-based alert functionality enables a user to define an alert rule without leaving the Finance and Operations client. Users can define alerts based on business events, such as when an invoice is paid or a customer changes an address. When specific conditions are met, the system will show a notification to alert the user. 
 
 Alerts form a notification system for critical events in Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to keep track of during the workday. You can also easily set up your own set of rules so that you are alerted about overdue deliveries, orders that are deleted, prices that change, or other events that you must respond to.
+
+For more information about alerts, see [Alerts overview](alerts-overview.md).
 
 ## Embed PowerApps
 Microsoft PowerApps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps). 
@@ -136,14 +138,6 @@ Finance and Operations has ISO 27108 certification. 
 financial data is secure and protected. Finance and Operations has achieved
 SOC-1/Type-2 and SOC-2/Type-2 certification.
 
-## Service offered via a published range of network addresses
-
-Your organization may have specific security policies that prevents users from
-navigating to unknown or malicious IP addresses and domains. You can now open
-specific firewall rules in your on-premises network to enable your users to
-access Dynamics 365 for Finance and Operations. This service
-will publish the IP addresses to your service environment so that an
-administrator can define a custom firewall on your on-premises network.
 
 ## Support for display and edit methods on form data sources using augmentation classes (ExtensionOf)
 

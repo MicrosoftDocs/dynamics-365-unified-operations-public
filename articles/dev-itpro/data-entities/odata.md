@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # OData
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 
@@ -73,7 +73,7 @@ The following table describes the resources and the corresponding URLs in the Fl
 ## OData services
 We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. 
 
-For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).
+<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
@@ -83,13 +83,13 @@ The following are the high-level features that are enabled for the OData service
 
 - CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE. 
 - Available query options are
- -   $filter
- -   $count
- -   $orderby
- -   $skip
- -   $top
- -   $expand
- -   $select
+  -   $filter
+  -   $count
+  -   $orderby
+  -   $skip
+  -   $top
+  -   $expand
+  -   $select
 - The OData service supports serving driven paging with a maximum page size of 1,000.
 
 For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).

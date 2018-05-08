@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Virtual machines that don't allow administrator access FAQ
+title: Development and build VMs that don't allow administrator access FAQ
 description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Virtual machines that don't allow administrator access FAQ
+# Development and build VMs that don't allow administrator access FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. Specifically, the information in this topic applies to Tier 1 VMs that run Platform update 12 and later.
 
@@ -91,3 +91,14 @@ You can put the system into maintenance mode to change the license configuration
 
 ## Can I install a license deployable package?
 You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
+
+## Is licensing Visual Studio by entering a product key supported?
+Entering a Visual Studio product key is not supported. We recommend using Visual Studio subscription licensing and signing into Visual Studio with the email address connected to the subscription that is supported.
+
+## Can I upgrade my database to a new application release?
+As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
+
+The process described in [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
+
+## What do I need to know if I am developing for Retail?
+If you are developing for Dynamics 365 for Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](../../retail/dev-itpro/cloud-dev-box.md).

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a performance review
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create a performance review and describes the purpose for each section of the review. This procedure was created using the USMF demo data company. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Platform update 1
 
 # Process for moving to the latest update of Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each upgrade that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about the contents of each release that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Definitions
 
@@ -70,16 +70,17 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This process is required before you can use scenario 3. A developer must complete this process before other activities can begin.
 
+Dynamics 365 for Finance and Operations 8.0 does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md).
+
 ### Scenario 3: Upgrade to the latest application release
 
 Use this scenario when business factors such as time or cost limitations prohibit an update to the complete latest application release. Here are some examples of application updates:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as 7.2)
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+- Microsoft Dynamics 365 for Finance and Operations 8.0
 
 To install a platform-only update, use scenario 4 instead.
-
-If you have questions about the contents of an update, contact Microsoft Support.
 
 ### Scenario 4: Upgrade to the latest platform only
 
@@ -104,7 +105,8 @@ This scenario describes the process for upgrading code from an earlier release t
 
 | Source environment | Expected content of the AX7.version file for the source | Target environment | Is the code upgrade service required? |
 |--------------------|---------------------------------------------------------|--------------------|---------------------------------------|
-| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 7.3 | Yes |
+| Application 7.3                               | 7.3.11971.56116 | Application release 8.0 | Yes |
+| July 2017 release (Application 7.2)                               | 7.2.11792.56024 | Application release 7.3 or 8.0 | Yes |
 | Release 1611 (Application 7.1)                               | 7.1.1541.3036 | Application release 7.3, or July 2017 (7.2) | Yes |
 | August 2016 release (Application 7.0.1 with Platform update 2) | 7.0.1265.27075 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
 | May 2016 release (Application 7.0.1)                           | 7.0.1265.23014 | Application release 7.3, or July 2017 (7.2) or 1611 (7.1) | Yes |
@@ -189,6 +191,10 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 2. Select the target version that you're upgrading to, and specify the start and end times of your preferred downtime window.
     - A date and time picker will show the available times.
     - To help guarantee that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
+    
+    > [!IMPORTANT] 
+    > Requests are subject to availability of the DSE team, therefore, we cannot guarantee the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it
+    
     - You must allow for at least eight hours between the start and end of the downtime. This time is required in order to swap in the new environment and complete the data upgrade process.
 
 3. If you have custom code or X++ hotfixes that must be part of your upgraded environment, you must select application (AOT) deployable packages during your upgrade request. Select the AOT deployable packages that contain your upgraded custom code and the required X++ hotfixes that were created in your development or build environment. Use the **Customize solution assets** tab, as shown in the following illustration.

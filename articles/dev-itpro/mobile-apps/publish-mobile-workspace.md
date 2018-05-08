@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-02-28
 
 # Publish a mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the Dynamics 365 for Unified Operations mobile app. 
 

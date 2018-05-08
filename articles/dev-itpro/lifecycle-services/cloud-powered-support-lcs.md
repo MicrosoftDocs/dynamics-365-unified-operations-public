@@ -32,52 +32,56 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage Finance and Operations Support experiences
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
 
 ## Open a new incident
 1. In LCS, navigate to the project for which you want to file a support incident. 
-1.  Click the **Support** tile.
-![Support menu](media/CPS1.png)
 
-2.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
-![Support button](media/CPS2.png)
+2. Click the **Support** tile.
+   ![Support menu](media/CPS1.png)
 
-3.  Select an issue category.
-![Category](media/CPS5.png)
+3. On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+   ![Support button](media/CPS2.png)
 
-4.  Select an issue area.
-![Area](media/CPS6.png)
+4. Select an issue category.
+   ![Category](media/CPS5.png)
 
-5. In the **Describe your issue** window, enter the following:
+5. Select an issue area.
+   ![Area](media/CPS6.png)
 
- - Select **Yes** if the issue occured in an environment. Select the environment name.  
- - Enter a short description of your issue in the **Title** field.
- - Provide details about the issue detail and the steps needed to reproduce the error.
- - If applicable, enter an error message. 
- - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
+6. In the **Describe your issue** window, enter the following:
+
+   - Select **Yes** if the issue occured in an environment. Select the environment name.  
+   - Enter a short description of your issue in the **Title** field.
+   - Provide details about the issue detail and the steps needed to reproduce the error.
+   - If applicable, enter an error message. 
+   - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
- > [!NOTE]
- > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+   > [!NOTE]
+   > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+   > 
+   > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
  
- > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
+   ![Detail](media/CPS7.png)
  
- ![Detail](media/CPS7-1.png)
- 
-6. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
-![Contact info](media/CPS8.png)
+7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
+   ![Contact info](media/CPS8.png)
 
-7. Select the support contract and the severity level. 
+
+8. Select the support contract and the severity level. 
     
-  - Support contracts for on-premises environments have a limited incident count. 
-  - Support contracts for cloud environments have an unlimited incident count. 
-  - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
-![Contract and severity](media/CPS9.png)
+   - Support contracts for on-premises environments have a limited incident count. 
+   - Support contracts for cloud environments have an unlimited incident count. 
+   - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
+   ![Contract and severity](media/CPS9.png)
 
-8. Click **Submit**. 
-![Completed](media/CPS10.png)
+9. Click **Submit**. 
+
+   ![Completed](media/CPS10.png)
+
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 

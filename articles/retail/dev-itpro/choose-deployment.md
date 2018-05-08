@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Deployment options
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Retail functionality is available in the following products:
  

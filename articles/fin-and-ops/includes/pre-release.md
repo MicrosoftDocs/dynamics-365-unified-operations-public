@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> This feature is part of a targeted release and is available only to users who have opted in to the Continuous Auto-update Advantage Program (CAAP). This feature will be included in another upcoming general availability release. For more information about standard and targeted releases, see [Standard and targeted platform releases](../get-started/public-preview-releases.md).
+> This feature is available in Platform update 15 (7.0.4841) or later. This update is currently available for targeted customers and will be available to all users June 2018.

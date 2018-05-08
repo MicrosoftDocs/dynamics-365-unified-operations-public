@@ -30,12 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Business activity statement (BAS)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 
-The business activity statement feature in Microsoft Dynamics 365 for Finance and Operations
+The business activity statement feature in Microsoft Dynamics 365 for Finance and Operations
 is designed to help you fill out your Business Activity Statement, commonly known as the BAS. It is very similar to the Calculation Sheet that the Australian Taxation Office provides you when you receive your BAS form in the mail. The taxation liabilities in the BAS include the following:
 
 -   GST amounts you owe the Australian Taxation Office from sales
@@ -44,21 +43,17 @@ is designed to help you fill out your Business Activity Statement, commonly know
 -   Pay-As-You-Go (PAYG) Instalment
 -   Fringe Benefit Tax (FBT)
 
-The following list provides an overview of the process to calculate GST and prepare the BAS in General ledger:
+The following list provides an overview of the process to calculate GST and prepare the BAS in General ledger:
 
 1.  Set up GST prerequisites. Refer to the table at the end of this article.
-2.  [Set up report boxes](tasks/add-bas-report-boxes.md) - You must set up BAS report boxes to report other non-GST tax liabilities and credits for a particular GST settlement periods.
+2.  [Set up report boxes](tasks/add-bas-report-boxes.md) - You must set up BAS report boxes to report other non-GST tax liabilities and credits for a particular GST settlement periods.
 3.  Post and settle Australian BAS to tax authorities for a particular GST settlement period.
 4.  Process payments to tax authorities.
-5.  Manually adjust journals to transfer non-GST transactions posted to the BAS reconciliation account to the correct ledger account.
+5.  Manually adjust journals to transfer non-GST transactions posted to the BAS reconciliation account to the correct ledger account.
 6.  Print and review GST reports.
 
 ## Prerequisites
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Category</th>
@@ -66,22 +61,26 @@ The following list provides an overview of the process to calculate GST and prep
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><span class="ui">Country/region</span></td>
+<tr>
+<td>Country/region</td>
 <td>The primary address for the legal entity must be in the following countries/regions: Australia</td>
 </tr>
 <tr class="even">
-<td><span class="ui">Parameters</span></td>
-<td><ul>
-<li>Unmark the Apply sales tax taxable rules check box on the General ledger parameters page.</li>
-</ul></td>
+<td>Parameters</td>
+  <td>Set the <strong>Apply sales tax taxable rules</strong> option to <strong>No</strong> on the <strong>General ledger parameters </strong> page.
+</td>
 </tr>
-<tr class="odd">
-<td><span class="ui">Related setup tasks</span></td>
+  <td>Download Electronic reporting configurations</td>
+  <td>Before you can set up or generate BAS, you must download the <strong>BAS (AU)</strong> configuration from Lifecycle Services using the Electronic reporting workspace. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/fin-and-ops/toc.json">Download Electronic reporting configurations from Lifecycle Services</a>.</td>
+</tr>
+<tr>
+  </tr>
+<tr>
+<td>Related setup tasks</td>
 <td><ul>
 <li>Create an additional BAS reconciliation account</li>
 <li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></li>
-<li>Set up the GST sales tax authority</li>
+<li>Set up the GST sales tax authority</li>
 <li>Create settlement periods</li>
 <li><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a></li>
 <li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></li>
@@ -145,3 +144,6 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 
 > [!NOTE] 
 > The reporting code numbers 5 and 6 are missing. This is because these two codes are used for calculated fields on the BAS report.
+
+## Additional resources
+[Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 8
 ---
 # Microsoft Dynamics 365 for Finance and Operations deployment options
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can now deploy Microsoft Dynamics 365 for Finance and Operations in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center. 
 > [!IMPORTANT]
