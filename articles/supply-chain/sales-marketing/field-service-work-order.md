@@ -236,6 +236,16 @@ Work order integration requires that you set up the sales origin. The sales orig
 6. Set the **Sales origin type** field to **Work order integration**.
 7. Select **Save**.
 
+
+### Setup in Data integration
+
+Ensure the **Integration key** exist for **msdyn_workorders**
+1. Go to Data Integration
+2. Select **Connection Set** tab
+3. Select the Connection set used for Work order synchronization
+4. Select **Integration key** tab
+5. Find msdyn_workorders and check that the key **msdyn_name (Work Order Number)** is added. If it is not shown, add it by click **Add key** and click **Save** in the top of the page
+
 ## Template mapping in Data integration
 
 The following illustrations show the template mapping in Data integration.
