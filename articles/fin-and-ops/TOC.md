@@ -1901,7 +1901,7 @@
 ##### [Set up disposition codes](../supply-chain/service-management/set-up-disposition-codes.md)
 ##### [Set up return reason codes](../supply-chain/service-management/set-up-return-reason-code.md)
 ##### [Specify how to dispose of returned items](../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md)
-### [Work with customer service](working-with-customer-service.md)
+### [Work with customer service](../supply-chain/service-management/working-with-customer-service.md)
 #### [Fulfill service agreements](../supply-chain/service-management/fulfill-service-agreements-overview.md)
 ##### [Develop and establish agreements](../supply-chain/service-management/service-agreements.md)
 ###### [Create service agreements](../supply-chain/service-management/create-service-agreements.md)
@@ -1921,7 +1921,7 @@
 ##### [View the start time and duration of a service order](../supply-chain/service-management/view-the-start-time-and-duration-of-a-service-order.md)
 ##### [View stage reason codes](../supply-chain/service-management/view-stage-reason-codes.md)
 ##### [View compliance with service level agreements](../supply-chain/service-management/view-compliance-with-service-level-agreements.md)
-#### [Authorize customer returns]
+#### Authorize customer returns
 ##### [Disposition codes and return reason codes](../supply-chain/service-management/disposition-and-return-reason-codes.md)
 ##### [Return cost price and return lot ID](../supply-chain/service-management/return-cost-price-and-return-lot-id.md)
 ##### [Cancel a return order](../supply-chain/service-management/cancel-return-order.md)
@@ -1935,11 +1935,42 @@
 ##### [Take returned items through inspection](../supply-chain/service-management/take-returned-items-through-inspection.md)
 ##### [Packing slip updates for returns](../supply-chain/service-management/packing-slip-updates-returns.md)
 ##### [Perform invoice updates for returns](../supply-chain/service-management/perform-invoice-updates-for-returns.md)
-
-
-
-
-
+#### Deliver services 
+##### Plan and allocate service orders
+###### [Service orders](../supply-chain/service-management/service-orders.md)
+###### [Automatically create service orders](../supply-chain/service-management/auto-create-service-orders.md)
+###### [Service status and progress field interaction](../supply-chain/service-management/service-status-and-progress-field-interaction.md)
+###### [Create service orders automatically](../supply-chain/service-management/create-service-orders-automatically.md)
+###### [Create item requirements for service orders](../supply-chain/service-management/create-item-requirements-service-orders.md)
+###### [Service order item requirements](../supply-chain/service-management/service-order-item-requirements.md)
+###### [Subscription workflow overview](../supply-chain/service-management/subscription-workflow-overview.md)
+###### [Combine service orders](../supply-chain/service-management/combine-service-orders.md)
+###### [Create service subscriptions from a subscription group](../supply-chain/service-management/create-service-subscriptions-from-subscription-group.md)
+###### [Project attached to service agreement](../supply-chain/service-management/project-attached-to-service-agreement.md)
+###### [Create service subscriptions from a project](../supply-chain/service-management/create-service-subscriptions-from-project.md)
+##### Dispatching service order activities
+###### [Service activities](../supply-chain/service-management/service-activities.md)
+###### [Dispatch board](../supply-chain/service-management/dispatch-board.md)
+###### [Set up service activity types](../supply-chain/service-management/set-up-service-activity-types.md)
+###### [Set up a preferred technician](../supply-chain/service-management/set-up-preferred-technician.md)
+###### [Set up dispatch teams](../supply-chain/service-management/set-up-dispatch-teams.md)
+###### [Prioritize service orders](../supply-chain/service-management/prioritize-service-orders.md)
+###### [View the status of service orders](../supply-chain/service-management/view-the-status-of-service-orders.md)
+###### [Monitor service activities](../supply-chain/service-management/monitor-service-activities.md)
+###### [Reassign activities](../supply-chain/service-management/reassign-activities.md)
+###### [Reverse changes in a dispatch board](../supply-chain/service-management/reverse-changes-in-a-dispatch-board.md)
+###### [View undispatched service orders](../supply-chain/service-management/view-undispatched-service-orders.md)
+###### [Modify a Service BOM ](../supply-chain/service-management/modify-service-bom.md)
+##### Deliver service
+###### [Credit subscription transactions](../supply-chain/service-management/credit-subscription-transactions.md)
+###### [Create subscription fee transactions](../supply-chain/service-management/create-subscription-fee-transactions.md)
+###### [Accruing subscriptions](../supply-chain/service-management/accruing-subscriptions.md)
+###### [Move service order lines](../supply-chain/service-management/move-service-order-lines.md)
+###### [Cancel service orders](../supply-chain/service-management/cancel-service-orders.md)
+###### [Create service orders manually](../supply-chain/service-management/create-service-orders-manually.md)
+###### [Accrue subscription revenue](../supply-chain/service-management/accrue-subscription-revenue.md)
+###### [Delete service orders](../supply-chain/service-management/delete-service-orders.md)
+###### [Invoice subscription transactions](../supply-chain/service-management/invoice-subscription-transactions.md)
 
 
 
