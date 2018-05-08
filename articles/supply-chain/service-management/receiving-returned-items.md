@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Receiving returned items 
+# Receive returned items 
 
 [!INCLUDE [banner](../includes/banner.md)]
 
