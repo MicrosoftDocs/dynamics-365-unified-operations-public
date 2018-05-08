@@ -1874,6 +1874,26 @@
 ##### [Time windows](../supply-chain/service-management/time-windows.md)
 ##### [Create time windows](../supply-chain/service-management/create-time-windows.md)
 ##### [Create a service template group](../supply-chain/service-management/create-service-template-group.md)
+#### [Set up service tasks](../supply-chain/service-management/service-tasks.md)
+##### [Create service task relations](../supply-chain/service-management/create-service-task-relations.md)
+#### [Set up service objects](../supply-chain/service-management/service-objects.md)
+##### [Create service objects](../supply-chain/service-management/create-service-task-relations.md)
+##### [Attach inventory items to service objects](../supply-chain/service-management/attach-inventory-items-service-objects.md)
+##### [Service object groups](../supply-chain/service-management/service-object-groups.md)
+##### [Set up template to represent objects at customer site](../supply-chain/service-management/set-up-template-to-represent-objects-at-customer-site.md)
+##### [Service object relations](../supply-chain/service-management/service-object-relations.md)
+##### [Create service object relations](../supply-chain/service-management/create-service-object-relations.md)
+##### [Template BOMs](../supply-chain/service-management/template-boms.md)
+##### [Create a template BOM](../supply-chain/service-management/create-template-bom.md)
+##### [Attach templates to service objects](../supply-chain/service-management/attach-templates-service-objects.md)
+
+#### [Define reason codes and stages for service orders ](../supply-chain/service-management/service-objects.md)
+##### [Create service objects](../supply-chain/service-management/create-service-task-relations.md)
+##### [Attach inventory items to service objects](../supply-chain/service-management/attach-inventory-items-service-objects.md)
+##### [Service object groups](../supply-chain/service-management/service-object-groups.md)
+
+
+
 
 
 
