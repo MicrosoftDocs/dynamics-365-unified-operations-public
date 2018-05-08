@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -341,9 +341,9 @@ The infrastructure setup scripts use the following configuration files to drive 
 - Database configuration
 - Service Fabric cluster configuration
 
-> [!IMPORTANT]
-> 1. Ensure there are 3 fault domains for OrchestratorType when configure Service Fabric Cluster.
-> 2. Ensure no more than one type of node deployed in a single machine when configure Service Fabric Cluster.
+    > [!IMPORTANT]
+    > Make sure that there are three fault domains for OrchestratorType when you configure Service Fabric cluster. 
+    > Make sure that no more than one type of node is deployed in a single machine when you configure Service Fabric cluster.
 
 For each Service Fabric Node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
 
@@ -363,16 +363,17 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 1. Navigate to the machine that has the unzipped infrastructure scripts in the **infrastructure** folder.
 2. Copy the **infrastructure** folder to the domain controller machine.
 3. Start Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
+    > [!IMPORTANT]
+    > The following script doesn't create a domain user AxServiceUser for you. You must create it yourself.
 
     ```powershell
     Import-Module .\D365FO-OP\D365FO-OP.psd1
     New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
     
-> [!IMPORTANT]
-> Above script doesn't create domain user AxServiceUser for you and you need to create it by yourself.
 
-4. Add the AOS Service Accounts, **Contoso\svc-AXSF$** and **Contoso\AXServiceUser** to the local administrators group of all AOS machines. For more information, see [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx).
+
+4. Add the AOS Service Accounts, **Contoso\svc-AXSF$** and **Contoso\AXServiceUser** to the local administrators group for all AOS machines. For more information, see [Add a member to local group](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx).
 
 5. If you must make changes to accounts or machines, update the ConfigTemplate.xml file in the original **infrastructure** folder, copy it to this machine and then run the following script.
 
@@ -445,9 +446,9 @@ dir cert:\LocalMachine\Root
     ```
 
     > [!IMPORTANT]
-    > 1. Restart the machine each time you're prompted to restart it. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all the machines are back online.
-    > 2. When use remoting script ensure current user has access to the share folder of MSIs
-    > 3. When use remoting script ensure no user is accessing machines of AOSNoteType, MRType and ReportServerType. Otherwise remoting script would fail to restart the computer because of other users logged on to the computer.
+    > 1. Each time your are prompted to, restart the machine. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all of the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all of the machines are back online.
+    > 2. When you use the remoting script, ensure that the current user has access to the share folder of MSIs.
+    > 3. When you use the remoting script, ensure no user is accessing the AOSNoteType, MRType, and ReportServerType type machines. Otherwise, the remoting script will fail to restart the computer because of the users being logged on to the computer.
 
 2. Run the following scripts, if they exist, in order to complete the VM setup.
 
@@ -507,9 +508,9 @@ dir cert:\LocalMachine\Root
     4. Select the client certificate. The **Service Fabric explorer** page appears.
     5. Verify that all nodes are showing green.
     
-> [!IMPORTANT]
-> 1. If your client machine is server machine like Windows Server 2016, you need to turn off IE Enhanced Security Configuration when access Service Fabric explorer page.
-> 2. If any Anti-Virus software installed, ensure you set exclusion as per [Service Fabric document documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+    > [!IMPORTANT]
+    > If your client machine is a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration when you access the **Service Fabric explorer** page.
+    > If any Anti-Virus software is installed, ensure you set exclusion following the guidance in the [Service Fabric document documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
@@ -521,13 +522,13 @@ The on-premises agent certificate can be reused across multiple sandbox and prod
 
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
-> [!IMPORTANT]
-> 1. You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
-> 2. In case you run this in a server machine like Windows Server 2016, you need to turn off IE Enhanced Security Configuration temporarily. Otherwise it would block azure login window content.
+    > [!IMPORTANT]
+    > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
+    > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the azure login window content will be blocked.
 
 1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-3. Run the following script from **Infrastructure** folder.
+3. Run the following script from the **Infrastructure** folder.
     ```powershell
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
@@ -576,8 +577,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
 
-> [!IMPORTANT]
-> 1. Please enable [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode)
+    > [!IMPORTANT]
+    > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode)
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
@@ -620,7 +621,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1 it's HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
+    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
         2. Navigate to the certificate, right-click -> **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
@@ -766,9 +767,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     # Service fabric API to encrypt text and copy it to the clipboard.
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
-> [!IMPORTANT]
-> 1. You need to install [Microsoft Azure Service Fabrick SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only) before you could invoke *Invoke-ServiceFabricEncryptText*.
-> 2. If you encounter error "Invoke-ServiceFabricEncryptText is not recognized command" error after Azure Service Fabrick SDK installed, please restart the computer and retry it.
+    > [!IMPORTANT]
+    > Before you can invoke *Invoke-ServiceFabricEncryptText*, you need to install [Microsoft Azure Service Fabrick SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
+    > If you encounter the following error, "Invoke-ServiceFabricEncryptText is not recognized command" after you install the Azure Service Fabrick SDK, restart the computer and retry.
 
 ### <a name="setupssis"></a> 16. Set up SSIS
 
@@ -784,8 +785,8 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
 2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
-> [!IMPORTANT]
-> Ensure you install database engine as well when install SSRS
+    > [!IMPORTANT]
+    > You must install then database engine when you install SSRS.
 
 ### <a name="configureadfs"></a> 18. Configure AD FS
 
@@ -928,26 +929,26 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 
 ## Known issues
 
-### Error "Key does not exist" when run New-D365FOGMSAAccounts cmdlet
-If this is the first time for you to create and generate group Managed Service Account passwrods in your domain then you need to create the **Key Distribution Services KDS Root Key** first. For more details, please refer to [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)
+### Error "Key does not exist" when running the New-D365FOGMSAAccounts cmdlet
+If this is your first time creating and generating group Managed Service Account passwords in your domain, you need to first create the **Key Distribution Services KDS Root Key**. For more information, see [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)
 
-### Error "The WinRM client cannot process the request" when run remoting script Configure-Prereqs-AllVms cmdlet
-You need to follow the instructions per error message itself to enable computer policy **Allow delegation fresh credentials** in all machines of Service Fabirc cluster.
+### Error "The WinRM client cannot process the request" when running the remoting script Configure-Prereqs-AllVms cmdlet
+You need to follow the instructions in the error message to enable the computer policy **Allow delegation fresh credentials** in all machines of Service Fabirc cluster.
 
-### Error "Not process argument transformation on parameter 'Test'. Canot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when run Config-Prereqs-AllVms cmdlet
-To workaround this error, you could remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1 which could be found under **Infrastructure** folder
+### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Config-Prereqs-AllVms cmdlet
+To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
 
-### Error "Not process argument transformation on parameter 'Test'. Canot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when run Complete-Prereqs-AllVms cmdlet
-To workaround this error, you could remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which could be found under **Infrastructure** folder
+### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Complete-Prereqs-AllVms cmdlet
+To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
 
-### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when run Configure-Prereqs on servers of MRType and ReportServerTyoe
-.Net Framework 3.5 is requried in servers of MRType and ReportServerType. However, by default source files of .Net Framework 3.5 isn't included in your Windows Server 2016 installation. So, you need to install it and specify the source files through "source" option when add new features by server manager manually
+### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerTyoe servers
+.Net Framework 3.5 is required in MRType and ReportServerType servers. By default however, .Net Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
 
-### Error "MSIS7628: scope names should be a valid Scope Description name in AD FS configuration" when run Publish-ADFSApplicationGroup cmdlet
-This is because of a OpenID scope **allatclaims** required per D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. So you need to add sceop description **allatclaims** through AD FS Management\Service\Scope Descriptions
+### Error "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration" when running the Publish-ADFSApplicationGroup cmdlet
+This error occurs because of a OpenID scope **allatclaims** that is required by the D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. To work around this error, add the scope description **allatclaims** through AD FS Management\Service\Scope Descriptions.
 
-### Error "ADMIN0077: access control policy does not exist: Permit everyone" when run Publish-ADFSApplicationGroup cmdlet
-This is because of when your AD FS is installed with non-English version of Windows Server 2016, permit everyone access control policy is created with your local language. Your need to invoke the cmdlet by specifying AccessControlPolicyName parameter as .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
+When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
 
 ## See also
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
