@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accruing subscriptions 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.

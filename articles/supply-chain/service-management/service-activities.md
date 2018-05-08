@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service activities        
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Create service activities to define and maintain tasks in a service order. A service order can include one or more service activities to be performed by a worker.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of guarantee
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
 

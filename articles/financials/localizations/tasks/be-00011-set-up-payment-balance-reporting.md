@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up payment balance reporting (Belgium)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. This procedure was created by using the USSI demo data company.
 

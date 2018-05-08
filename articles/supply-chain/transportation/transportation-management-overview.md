@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Transportation management overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
 

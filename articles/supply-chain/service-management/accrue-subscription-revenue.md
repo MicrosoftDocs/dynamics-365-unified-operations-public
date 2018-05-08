@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accrue subscription revenue 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.

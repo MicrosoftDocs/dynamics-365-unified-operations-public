@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # ListMetadata Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Metadata for list control.
 

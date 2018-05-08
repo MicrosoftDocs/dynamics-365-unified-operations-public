@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax on natural resources report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
 

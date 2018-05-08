@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data management
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Date/time data and time zones
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Finance and Operations.
 

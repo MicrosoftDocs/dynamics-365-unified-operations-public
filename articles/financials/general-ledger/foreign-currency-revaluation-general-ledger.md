@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Foreign currency revaluation for General ledger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 

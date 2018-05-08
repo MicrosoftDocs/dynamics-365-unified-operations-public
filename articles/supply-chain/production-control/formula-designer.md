@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Formula designer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.
 

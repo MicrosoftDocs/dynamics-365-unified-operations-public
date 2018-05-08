@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # List Page form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 

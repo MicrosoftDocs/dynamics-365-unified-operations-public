@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project management and accounting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
 

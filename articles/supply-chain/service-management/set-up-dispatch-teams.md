@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up dispatch teams 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic describes how to create a dispatch team. After you create a dispatch team, you can assign workers to the team. When you create a service order, you can then relate a member of a dispatch team to an activity in the service order.

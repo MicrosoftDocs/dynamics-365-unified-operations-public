@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 13
 
 # Add a new inventory dimension
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides a high-level overview of how to add new inventory dimensions through extensions. It also includes information about how to access a sample application that contains an actual implementation.
 

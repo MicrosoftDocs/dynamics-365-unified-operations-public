@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
 

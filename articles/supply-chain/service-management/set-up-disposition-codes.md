@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up disposition codes 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can set up disposition codes to specify how to process an item that is returned by a customer. For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer. For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code migration - Context menus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations. It also includes UX guidelines for context menus.
 

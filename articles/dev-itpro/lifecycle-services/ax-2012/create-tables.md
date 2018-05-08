@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Create tables
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Create tables to store data in by using the Application Object Tree (AOT).
 

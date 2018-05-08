@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Price simulation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 

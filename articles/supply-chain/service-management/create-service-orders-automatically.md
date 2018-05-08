@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create service orders automatically    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.

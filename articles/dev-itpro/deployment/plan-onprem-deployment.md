@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 # Planning for your on-premises deployment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 

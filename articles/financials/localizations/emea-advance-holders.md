@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Advance holders
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.
 

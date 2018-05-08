@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # View transactions on settlement for Eastern Europe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Transactions on settlement page for customers and vendors.
 

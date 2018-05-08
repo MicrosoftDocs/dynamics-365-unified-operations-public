@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # View workflow history
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use these steps to view the status of a document that was submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
 

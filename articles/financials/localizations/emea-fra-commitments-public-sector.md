@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Commitments in the public sector in France
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 

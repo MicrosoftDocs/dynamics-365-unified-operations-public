@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Resolve discrepancies during invoice totals matching
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 One type of invoice matching validation is invoice totals matching. To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**. 
 

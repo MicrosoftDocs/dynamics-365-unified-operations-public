@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Organization administration home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations. This content will help them configure the system to work smoothly and effectively for your organization and business.
 

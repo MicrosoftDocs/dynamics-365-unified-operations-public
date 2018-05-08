@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up bills of exchange
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps for setting up bills of exchange.
 

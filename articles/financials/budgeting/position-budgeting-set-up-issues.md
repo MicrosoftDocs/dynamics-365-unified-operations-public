@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Position budgeting troubleshooting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides answers to questions that you might have when you configure position budgeting. It addresses frequently asked questions about how to create budget cost elements, compensation groups, and compensation grids. 
 

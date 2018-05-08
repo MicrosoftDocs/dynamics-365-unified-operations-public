@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Azure ExpressRoute and Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Customers can use Microsoft Azure ExpressRoute with Finance and Operations to connect to their on-premises infrastructure. This topic provides the information that you need to get started with ExpressRoute.
 

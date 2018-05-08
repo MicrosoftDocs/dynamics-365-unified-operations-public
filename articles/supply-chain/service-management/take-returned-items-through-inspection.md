@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Take returned items through inspection 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 1.  Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.

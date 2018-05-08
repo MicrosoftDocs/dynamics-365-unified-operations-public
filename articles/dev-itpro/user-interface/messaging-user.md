@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Message center, message bar, and message details FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the rich, powerful messaging system replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Rename a local environment to enable access to Visual Studio Team Services
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Renaming a local development VMs is required in order to access a VSTS project across multiple machines.
 

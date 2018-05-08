@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Advanced bank reconciliation MT940 Import – Composite data entity upgrade
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A sequence number needs to be added to the bank statement import entity to support the MT940 format. 
 

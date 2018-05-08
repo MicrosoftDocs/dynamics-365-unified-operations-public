@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 # Videos for Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 

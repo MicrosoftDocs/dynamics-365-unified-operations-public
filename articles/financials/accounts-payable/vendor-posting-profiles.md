@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor posting profiles
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 

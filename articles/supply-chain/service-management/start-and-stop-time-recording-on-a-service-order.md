@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Start and stop time recording on a service order 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.

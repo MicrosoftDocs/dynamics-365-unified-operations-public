@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Italian black list report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Learn how to set up and maintain the Italian black list report.
 

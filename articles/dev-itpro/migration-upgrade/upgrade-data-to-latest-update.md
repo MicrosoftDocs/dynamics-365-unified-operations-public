@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Upgrade data in development, demo, or sandbox environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to upgrade an older database to the latest Finance and Operations application release.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit 
 entries. These entries are classified using the accounts that are listed in a chart of accounts. 

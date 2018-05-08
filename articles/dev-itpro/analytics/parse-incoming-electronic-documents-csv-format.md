@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 # Parse incoming documents in CSV format
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats to parse incoming electronic documents that represent tabular data in plain text (files in CSV format) and then use the content from these documents to update application data. The following approach can be used:
 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Group 
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 A group control is a container control that has any number of controls as children.
 

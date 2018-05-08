@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prioritize service orders 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Periodic** \> **Dispatch board**.

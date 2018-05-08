@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Batch balancing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how the batch balancing process is supported. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Demo files for the Data import/export framework
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The demo files can be used together with the Contoso demo data for Microsoft Dynamics AX 2012. Specifically, the files are intended to be used together with the CEU Contoso Entertainment Systems (West) company.
 

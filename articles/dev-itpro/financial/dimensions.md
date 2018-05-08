@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimensions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 

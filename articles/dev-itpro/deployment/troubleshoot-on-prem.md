@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 8
 ---
 # Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 

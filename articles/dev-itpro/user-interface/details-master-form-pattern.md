@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Details Master form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 

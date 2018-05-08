@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Configure screen layouts for POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides information about screen layouts for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 

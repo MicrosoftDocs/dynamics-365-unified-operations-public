@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Demo data overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations.
 

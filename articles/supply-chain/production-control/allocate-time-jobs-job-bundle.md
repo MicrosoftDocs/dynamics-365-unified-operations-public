@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Allocate time to jobs in a job bundle
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 

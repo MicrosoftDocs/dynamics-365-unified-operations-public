@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User interface development home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic contains links to topics about developing user interface elements.
 

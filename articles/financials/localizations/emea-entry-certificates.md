@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # EU entry certificates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about European Union (EU) entry certificates.
 

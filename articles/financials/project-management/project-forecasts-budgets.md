@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project forecasts and budgets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations provides two ways to manage and control your projects: project forecasts and project budgets. 
 

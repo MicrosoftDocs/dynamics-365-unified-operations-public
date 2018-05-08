@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Public sector home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 

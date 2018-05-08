@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Toolbar and Fields subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields. The toolbar should contain fewer than 10 actions.
 

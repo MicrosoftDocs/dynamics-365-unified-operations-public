@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use stage reason codes 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.

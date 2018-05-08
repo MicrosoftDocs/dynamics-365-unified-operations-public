@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop an entity for data migration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 

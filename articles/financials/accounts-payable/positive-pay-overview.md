@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Positive pay overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
 

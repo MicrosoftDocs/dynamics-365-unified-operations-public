@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Item and raw material tracing in inventory, production, and sales
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
 

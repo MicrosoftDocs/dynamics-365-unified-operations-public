@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Software lifecycle policy and on-premises releases
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 

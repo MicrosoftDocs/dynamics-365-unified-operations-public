@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset acquisition posting accounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to set up general ledger posting accounts for acquiring assets.
 

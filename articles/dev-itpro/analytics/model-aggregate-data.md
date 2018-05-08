@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modeling and aggregate data
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial will walk you through the process of modeling aggregate data .
 

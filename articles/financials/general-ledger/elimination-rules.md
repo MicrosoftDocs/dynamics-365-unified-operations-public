@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Elimination rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about elimination rules and the various options for reporting about eliminations.
 

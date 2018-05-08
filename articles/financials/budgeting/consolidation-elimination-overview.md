@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidation and elimination overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 

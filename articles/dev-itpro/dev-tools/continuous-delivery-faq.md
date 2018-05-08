@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Development and continuous delivery FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management for Microsoft Dynamics 365 for Finance and Operations.
 

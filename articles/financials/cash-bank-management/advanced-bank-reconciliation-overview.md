@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced bank reconciliation overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the flow for the advanced bank reconciliation process. The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.
 

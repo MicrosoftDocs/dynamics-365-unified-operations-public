@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Backflush costing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic introduces the concept of backflush costing that is used for Lean manufacturing. 
 

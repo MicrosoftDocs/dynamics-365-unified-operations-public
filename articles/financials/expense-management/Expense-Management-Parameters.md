@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Expense management parameters
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 -----------------------------
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Enter project timesheets
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure lets you create a timesheet by using an empty timesheet form. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page. By default, the All timesheets list page displays all your timesheets for the current period. You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI. To begin this procedure, go to Project management and accounting > Timesheets >My timesheets
 

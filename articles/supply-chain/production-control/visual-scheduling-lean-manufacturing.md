@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Visual scheduling for lean manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 

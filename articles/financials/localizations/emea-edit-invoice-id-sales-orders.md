@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Edit invoice IDs on sales orders for Eastern Europe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
 

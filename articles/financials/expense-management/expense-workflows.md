@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up workflows for expense
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can set up a workflow process that is used to review and approve travel and expense documents. The documents for which workflows
 can be defined include expense reports, travel requisitions, and cash advance requests.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up service order stages 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 1.  Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.

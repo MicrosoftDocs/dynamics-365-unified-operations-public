@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monitor service activities 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 The **Dispatch board** form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Apply updates to an on-premises deployment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 

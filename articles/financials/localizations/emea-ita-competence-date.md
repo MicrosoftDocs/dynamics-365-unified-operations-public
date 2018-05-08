@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Competence date for transactions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the competence date and explains how to enable the functionality for transactions in Italy.
 

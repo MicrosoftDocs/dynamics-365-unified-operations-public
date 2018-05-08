@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cancel a return order 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.

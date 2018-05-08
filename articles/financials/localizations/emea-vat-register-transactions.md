@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT register transactions for Eastern Europe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about VAT register transactions for Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland. 
 

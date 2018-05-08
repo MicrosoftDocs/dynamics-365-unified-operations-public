@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Depreciation effects with reversals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article discusses potential implications of reversing a fixed asset transaction. 
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Change the service order stage 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.

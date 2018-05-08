@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extensible control programming reference
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides reference content for extensible control programming.
 

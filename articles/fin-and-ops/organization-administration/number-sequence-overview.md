@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Number sequences
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*.
 

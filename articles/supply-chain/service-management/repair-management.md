@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Repair management       
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 For repair management you can group problems systematically. This is to help with the suggestion of solutions that have been successful in the past.

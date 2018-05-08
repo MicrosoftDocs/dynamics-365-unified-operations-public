@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Attach templates to service objects    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 A template bill of materials (BOM) can be attached to a service object relation. The service object relation can then be associated with either service orders or service agreements.
