@@ -1901,11 +1901,44 @@
 ##### [Set up disposition codes](../supply-chain/service-management/set-up-disposition-codes.md)
 ##### [Set up return reason codes](../supply-chain/service-management/set-up-return-reason-code.md)
 ##### [Specify how to dispose of returned items](../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md)
+### [Work with customer service](working-with-customer-service.md)
+#### [Fulfill service agreements](../supply-chain/service-management/fulfill-service-agreements-overview.md)
+##### [Develop and establish agreements](../supply-chain/service-management/service-agreements.md)
+###### [Create service agreements](../supply-chain/service-management/create-service-agreements.md)
+###### [Service subscriptions](../supply-chain/service-management/service-subscriptions.md)
+###### [Service templates](../supply-chain/service-management/service-template.md)
+###### [Copy service templates lines](../supply-chain/service-management/copy-service-template-lines.md)
+##### [Change the service order stage](../supply-chain/service-management/change-service-order-stage.md)
+##### Update and evaluate agreements
+###### [Manage template BOMs on object relations](../supply-chain/service-management/manage-template-boms-on-object-relations.md)
+###### [Delete a service BOM](../supply-chain/service-management/delete-service-bom.md)
+###### [Indexed sales prices](../supply-chain/service-management/indexed-sales-prices.md)
+###### [Reduce the days on subscription fees](../supply-chain/service-management/reduce-the-days-on-subscription-fees.md)
+###### [Reduction days example](../supply-chain/service-management/reduction-days-example.md)
+###### [Update and index subscription sales prices](../supply-chain/service-management/update-and-index-subscription-sales-prices.md)
+#### [Handle customer inquiries](../supply-chain/service-management/fulfill-service-agreements-overview.md)
+##### [Start and stop time recording on a service order](../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md)
+##### [View the start time and duration of a service order](../supply-chain/service-management/view-the-start-time-and-duration-of-a-service-order.md)
+##### [View stage reason codes](../supply-chain/service-management/view-stage-reason-codes.md)
+##### [View compliance with service level agreements](../supply-chain/service-management/view-compliance-with-service-level-agreements.md)
+#### [Authorize customer returns]
+##### [Disposition codes and return reason codes](../supply-chain/service-management/disposition-and-return-reason-codes.md)
+##### [Return cost price and return lot ID](../supply-chain/service-management/return-cost-price-and-return-lot-id.md)
+##### [Cancel a return order](../supply-chain/service-management/cancel-return-order.md)
+##### [Create an item replacement order](../supply-chain/service-management/create-item-replacement-order.md)
+##### [Delete a return order](../supply-chain/service-management/delete-return-order.md)
+##### [Pass returned items on to inspection](../supply-chain/service-management/pass-returned-items-on-to-inspection.md)
+##### [Post arrival journal for returned products](../supply-chain/service-management/post-arrival-journal-for-returned-products.md)
+##### [Receive partial deliveries of returned items](../supply-chain/service-management/receive-partial-deliveries-returned-items.md)
+##### [Receive returned items](../supply-chain/service-management/receiving-returned-items.md)
+##### [Register the receipt of returned items](../supply-chain/service-management/register-the-receipt-of-returned-items.md)
+##### [Take returned items through inspection](../supply-chain/service-management/take-returned-items-through-inspection.md)
+##### [Packing slip updates for returns](../supply-chain/service-management/packing-slip-updates-returns.md)
+##### [Perform invoice updates for returns](../supply-chain/service-management/perform-invoice-updates-for-returns.md)
 
 
 
 
-### [Work with customer service]
 
 
 
