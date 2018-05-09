@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs published to AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-appsource).
+> This content pack has been deprecated as documented in [Power BI content packs published to AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This topic describes the **Financial performance** Microsoft Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
 
