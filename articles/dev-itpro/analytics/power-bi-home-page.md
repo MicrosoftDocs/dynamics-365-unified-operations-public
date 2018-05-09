@@ -36,10 +36,10 @@ The following PowerBI.com solutions are available for Dynamics 365 for Finance a
 
 ## PowerBI.com solutions available from Lifecycle Services (LCS)
 
-The following PowerBI.com solutions are available in the Shared assets library of LCS. Refer to the version information in the Shared assets library to download the correct version for your enviornment. 
+The following PowerBI.com solutions are available in the Shared assets library of LCS. Refer to the version information in the Shared assets library to download the correct version for your environment. 
 
 > [!Note]
-> Most of these PowerBI.com solutions have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations. Using the analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics below indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable. 
+> Most of these PowerBI.com solutions have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations. Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics below indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable. 
 
 - [Actual vs budget](ledger-budgets-power-bi.md)
 - [Cash overview](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
@@ -61,8 +61,7 @@ The following PowerBI.com solutions are available in the Shared assets library o
 
 ## PowerBI.com solutions avilable from AppSource
 
-The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com). These solutions are supported in Microsoft Dynamics AX 7.0 environments.
-
+The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!Note]
 > These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
