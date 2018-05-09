@@ -657,9 +657,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance and Operations database is AXDB.
 
    > [!WARNING]
-   > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
+   > - The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
    > 
-   > 2. If a database with the same name exists, the database will be reused.
+   > - If a database with the same name exists, the database will be reused.
 
 6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a PowerShell window with elevate privileges.
 
