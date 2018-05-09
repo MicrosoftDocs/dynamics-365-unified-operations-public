@@ -5,7 +5,7 @@ title: Supply chain management home page
 description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,6 +51,7 @@ Select a feature area to learn more about it.
 - [Product information management](pim/product-information.md)
 - [Production control](production-control/production-process-overview.md)
 - [Sales and marketing](sales-marketing/overview-sales-marketing.md)
+- [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
 
