@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accruals overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes accruals, and provides information about how to set them up and create transactions.
 

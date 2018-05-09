@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable invoice matching
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 

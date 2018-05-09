@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced filtering and query syntax
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
 

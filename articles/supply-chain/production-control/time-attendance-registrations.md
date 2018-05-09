@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Time and attendance registration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
 

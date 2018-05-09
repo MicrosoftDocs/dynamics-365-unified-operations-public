@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order that includes items subject to reverse charge VAT (UK)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom. 
 

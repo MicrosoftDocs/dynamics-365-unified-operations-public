@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Delivery alternatives
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sales order takers can use the **Delivery alternatives** page to discover alternative order fulfillment options.
 

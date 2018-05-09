@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Indexed sales prices  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You set up the index for a subscription sales price when you create a subscription fee.

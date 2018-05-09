@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Register the receipt of returned items 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 There are two methods for registering the receipt of returned items. The first method is a warehouse receiving process that uses the **Arrival overview** form. The second uses the **Registration** form.

@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Sales orders mobile workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Sales orders** mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
 

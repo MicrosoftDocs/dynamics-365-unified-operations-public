@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Create a copy of a Finance and Operations database to restore later
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
 
@@ -219,7 +219,7 @@ DEALLOCATE retail_ftx;
 
 Reprovisioning is only required if you are restoring or importing the database on another environment. 
 
-[!INCLUDE [environment-reprovision](../includes/environment-reprovision.md)]
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Limitations
 After you import a database, the link between the database and document handling documents that are stored in Azure blob storage might be broken. If you have custom code that uses the X++ **FileUpload** class to put files in blob storage, the links to those files might also be broken.

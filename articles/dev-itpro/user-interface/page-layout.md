@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Layout
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 

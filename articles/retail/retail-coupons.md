@@ -34,7 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Create coupons for retail sales
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Overview of coupons
 

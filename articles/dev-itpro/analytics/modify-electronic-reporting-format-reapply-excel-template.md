@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify an Electronic reporting format by reapplying a Microsoft Excel template
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Electronic reporting (ER) tool is used to generate business documents in an electronic format. To generate a business document, you must create an ER format, and then use the ER designer to define the layout of the business document and specify the data that should be included in it. You can then run the ER format to generate the business document.
 

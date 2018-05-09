@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Set up and deploy on-premises environments (Platform updates 8 and 11)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform updates 8 and 11.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Calculations for product configuration models FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes calculations for product configuration models and explains how to use calculations together with constraints.
 

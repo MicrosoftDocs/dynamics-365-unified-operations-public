@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Thailand unrealized VAT
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about unrealized VAT and how to set it up. It also explains how to calculate and post purchase orders that have unrealized purchase VAT and sales orders that have unrealized sales VAT, and generate reports.
 

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Onboard a Finance and Operations project
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 

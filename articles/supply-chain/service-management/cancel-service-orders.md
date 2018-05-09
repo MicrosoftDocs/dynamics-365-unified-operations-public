@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cancel service orders   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.

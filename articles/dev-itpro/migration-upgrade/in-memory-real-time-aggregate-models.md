@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Why we moved from SSAS cubes to aggregate models
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how Microsoft Dynamics 365 for Finance and Operations has transitioned from using SQL Server Analysis Services (SSAS) cubes to in-memory, real-time aggregate models for analytics.
 

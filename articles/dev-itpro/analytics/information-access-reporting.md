@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Information access and reporting in Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains the various reporting options available as part of the Finance and Operations platform.
 

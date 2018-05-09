@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 13
 
 # Pre-configured system accounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pre-configured system accounts are included on deployed environments so that Microsoft can manage and operate the Dynamics 365 for Finance and Operations service and provide specific features to customers. The following table provides information about each account, including the purpose and use case for the account.  
 

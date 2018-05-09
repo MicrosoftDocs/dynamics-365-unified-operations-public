@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copying and comparing entity data between companies (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This process for copying entity data between companies is supported only for Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3. If you are running an earlier version of the Data Import/Export Framework, see the instructions in [Walkthrough: Copy data between companies (DIXF, DMF)](copy-data-between-companies-dixf.md). This topic describes the following processes:
 

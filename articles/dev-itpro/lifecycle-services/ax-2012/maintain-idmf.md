@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Maintenance in the Intelligent Data Management Framework (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Database
 --------

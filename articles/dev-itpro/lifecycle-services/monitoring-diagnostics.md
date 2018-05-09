@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Monitoring and diagnostics (Lifecycle Services, LCS)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 

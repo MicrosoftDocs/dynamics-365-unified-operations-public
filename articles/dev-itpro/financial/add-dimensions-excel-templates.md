@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Add look up values for financial dimensions to Excel templates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 

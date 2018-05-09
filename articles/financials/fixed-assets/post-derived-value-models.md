@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post with derived books
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to use derived books.
 

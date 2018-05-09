@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Recalculate replacement costs and insured values for fixed asset groups
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains the process to update the replacement costs and insured values for fixed assets.
 

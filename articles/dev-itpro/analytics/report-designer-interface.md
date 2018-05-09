@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Report Designer interface
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 

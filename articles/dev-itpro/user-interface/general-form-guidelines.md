@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General form guidelines
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 

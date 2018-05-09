@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost element dimensions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 As one of the core pillars in Cost accounting, cost element dimensions are used to categorize and track where costs flow to. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reduction days example 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You have created a subscription transaction for a customer's maintenance subscription, as described in the following table.

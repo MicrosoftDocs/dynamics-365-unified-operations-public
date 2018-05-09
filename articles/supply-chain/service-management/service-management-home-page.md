@@ -5,7 +5,7 @@ title: Service management
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service management 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Use **Service management** to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. You can use service agreements to define the resources that are used in a typical service visit. You can also use service agreements to view how those resources are invoiced to the customer. A service agreement can also include a service level agreement that specifies standard response times, and offers tools to record the actual time.
@@ -71,12 +71,12 @@ The following diagram illustrates the high level business processes for **Servic
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="fulfill-service-agreements-overview.md">Fulfill service agreements overview</a></p></td>
+<td><p>Fulfill service agreements</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Service agreements (form)</a></p></td>
 <td><p><strong>Service order margin</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>Handle customer inquiries overview</a></p></td>
+<td><p>Handle customer inquiries</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Service orders (form)</a></p></td>
 <td><p><strong>Work description</strong></p></td>
 </tr>

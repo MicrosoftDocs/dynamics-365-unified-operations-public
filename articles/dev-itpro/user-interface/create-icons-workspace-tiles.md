@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Create icons for workspace tiles
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Report 340
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Report 340 replaced two earlier reports (Sales Statutory Books and Purchases Statutory Books) that all Spanish companies submitted as hard copies to the Spanish tax authorities. The new report can be uploaded to the tax authorities' website, or it can be submitted by using a software package that is available free of cost from the tax authorities.
 

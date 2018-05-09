@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory blocking
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations. You can use inventory blocking to prevent items from being processed or consumed.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control migration guidance
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 

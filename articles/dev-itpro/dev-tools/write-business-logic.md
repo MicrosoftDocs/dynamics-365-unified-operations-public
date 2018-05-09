@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Write business logic using C# and X++ source code
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 

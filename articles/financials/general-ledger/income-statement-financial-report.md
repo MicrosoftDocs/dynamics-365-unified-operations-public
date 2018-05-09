@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Income statement financial report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 

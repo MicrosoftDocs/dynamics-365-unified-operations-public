@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Public sector accounting in France
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes public sector accounting in France.
 

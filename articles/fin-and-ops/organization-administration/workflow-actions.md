@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workflow actions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains the actions that each participant in a workflow approval process can take.
 

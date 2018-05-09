@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create an item replacement order 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Item replacement orders are usually created after a product is returned and inspected. However, when an item must be replaced before it has been returned, or when the original item will not be returned, you can create an item replacement order immediately after you create a return order.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget control overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Finance and Operations so that you can manage financial resources.
 

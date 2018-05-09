@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Take a cash discount outside the cash discount period
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
 

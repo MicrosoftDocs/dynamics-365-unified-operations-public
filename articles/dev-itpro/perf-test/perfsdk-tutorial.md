@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Performance SDK and multiuser testing via Visual Studio Online
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also describes how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 

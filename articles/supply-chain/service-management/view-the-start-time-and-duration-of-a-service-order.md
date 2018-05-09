@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View the start time and duration of a service order 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can view when the work on the service order was started and when the service order is going to be completed.

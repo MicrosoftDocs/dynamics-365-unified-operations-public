@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.0
 
 # Chart of accounts delimiter must be unique
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In Dynamics 365 for Finance and Operations, you cannot have the same delimiter for the chart of accounts and dimension values. If there is a duplicate delimiter, you can change it after upgrade. 
 

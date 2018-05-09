@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Country/region codes and configuration keys
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
 

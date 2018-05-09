@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Business activity statement (BAS)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 

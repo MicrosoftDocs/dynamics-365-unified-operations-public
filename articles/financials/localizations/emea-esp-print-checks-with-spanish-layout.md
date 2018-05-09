@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Print checks by using the Spanish layout
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to print checks that follow the standards that are required in Spain.
 

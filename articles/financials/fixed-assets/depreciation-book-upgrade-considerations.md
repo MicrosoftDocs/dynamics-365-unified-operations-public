@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Depreciation book upgrade overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Perform invoice updates for returns 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 A return order is a type of sales order that is marked as a returned order. Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form. This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.

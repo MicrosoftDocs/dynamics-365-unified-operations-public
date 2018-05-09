@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax rates based on the Marginal base and Calculation methods
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 

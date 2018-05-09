@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 #  Dispatch board 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A dispatch board is the central location from which you can view the status of activities in a service order. You can perform the following tasks in a dispatch board:
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production feedback
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016 and has a build number of 7.0.1265.23014.
 

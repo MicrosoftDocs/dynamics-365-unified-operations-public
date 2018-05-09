@@ -30,7 +30,7 @@ ms.author: omarc
 
 # Set up Business process modeler libraries for an LCS solution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 

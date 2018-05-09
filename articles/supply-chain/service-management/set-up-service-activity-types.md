@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up service activity types 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 1.  Click **Sales and marketing** \> **Setup** \> **Activities** \> **Activity types**.

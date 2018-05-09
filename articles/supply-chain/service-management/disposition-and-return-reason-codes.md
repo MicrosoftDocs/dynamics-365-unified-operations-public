@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Disposition codes and return reason codes 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Create and use return reason codes and disposition codes to support the process for returning products.

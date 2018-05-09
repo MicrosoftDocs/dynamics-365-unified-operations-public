@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Convert accounting or reporting currencies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A company that must change its accounting currency or reporting currency has two options. The first option is to create a new company and start fresh. The second option is to run the accounting and reporting currency conversion process. This is a very long-running process that changes every transaction in the system. Some setup is also required before the process can be run.
 

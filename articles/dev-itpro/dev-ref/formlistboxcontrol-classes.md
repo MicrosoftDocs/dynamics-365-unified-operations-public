@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormListBoxControl to FormNotifyEventArgs
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 

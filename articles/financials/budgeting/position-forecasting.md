@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Position forecasting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
 

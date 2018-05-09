@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 

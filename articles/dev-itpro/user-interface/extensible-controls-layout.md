@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extensible control layout guidelines
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 

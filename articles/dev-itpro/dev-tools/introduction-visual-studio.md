@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Development tools tutorial
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools. 
 

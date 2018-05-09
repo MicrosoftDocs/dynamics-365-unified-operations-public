@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Automatically create service orders 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can generate service orders that are based on a service agreement for the valid period of the service agreement.

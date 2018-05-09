@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reverse the production order status
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to reverse production order status. 
 

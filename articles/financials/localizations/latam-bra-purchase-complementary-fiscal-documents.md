@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Purchase complementary fiscal documents for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
 

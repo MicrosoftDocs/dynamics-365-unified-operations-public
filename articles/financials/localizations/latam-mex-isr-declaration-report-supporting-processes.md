@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # ISR declaration report and supporting processes for Mexico
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report.
 

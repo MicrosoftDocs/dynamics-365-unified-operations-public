@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modify a Service BOM 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can record the history of an element in a service BOM. Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.

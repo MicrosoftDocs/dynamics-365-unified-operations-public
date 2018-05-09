@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 # Store order fulfillment
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help
 to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra

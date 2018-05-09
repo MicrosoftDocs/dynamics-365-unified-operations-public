@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # FileUploader Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 File uploader control type.
 A control for uploading files such as images.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create service object relations 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic describes how to create service object relations for a service agreement and a service order. When you a create service object relation, you associate the service object to a service agreement or service order. When a customer requests service for an item that is a service object, you can select the service object from the list of service object relations.

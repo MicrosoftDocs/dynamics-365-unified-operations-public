@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control metadata
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Describes the design-time metadata properties for Segmented Entry controls.
 

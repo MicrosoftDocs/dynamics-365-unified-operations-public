@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a deployable package of your models in order to apply it to a runtime environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 An AOT package is a deployment and compilation unit of one or more models that can be applied to a Microsoft Dynamics 365 for Finance and Operations environment, or a Microsoft Dynamics 365 for Retail environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
 

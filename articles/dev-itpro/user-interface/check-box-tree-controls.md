@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Check box support in tree controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article is intended as a primer for using check box controls in the tree control. It's not a general “how to” for using tree controls.
 

@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Cost controlling mobile workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Cost controlling** mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere.
 

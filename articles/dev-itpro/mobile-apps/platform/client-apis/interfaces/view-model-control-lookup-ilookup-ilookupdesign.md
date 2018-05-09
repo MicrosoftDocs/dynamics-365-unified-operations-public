@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # LookupDesign Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Lookup design object type.
 

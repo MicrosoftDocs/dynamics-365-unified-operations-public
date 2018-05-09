@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Overview of the GDPR
 
@@ -39,6 +39,9 @@ The European Union's General Data Protection Regulation (GDPR) sets a new global
 
 > [!NOTE]
 > For information about the scope and coverage of this documentation, see [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this topic.
+
+[!NOTE]
+> Before utilizing any product features in support of your GDPR compliance efforts, please ensure that you have applied all of the related hotfixes.
 
 The GDPR gives EU citizens specific data subject rights (DSRs) that let them perform the following actions:
 

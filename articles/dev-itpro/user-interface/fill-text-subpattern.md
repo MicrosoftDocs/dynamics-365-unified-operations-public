@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fill Text subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Fill Text subpattern. This subpattern is used when a single String or StaticText control must stretch to the full width of the container, so that users have more space to enter information.
 

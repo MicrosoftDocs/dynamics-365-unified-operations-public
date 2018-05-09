@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fulfill service agreements overview 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic provides an overview of the tasks to fulfill service agreements. The topic also lists the forms that are associated with each business process component and discusses the tasks that are associated with each business process component.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # e-Commerce Platform SDK
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the e-Commerce Platform SDK. The e-Commerce Platform SDK consist of the following components:
 

@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Setting up the components of a job
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 

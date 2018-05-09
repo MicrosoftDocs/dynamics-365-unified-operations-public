@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Download Electronic reporting configurations from Lifecycle Services
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 

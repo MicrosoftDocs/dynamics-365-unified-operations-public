@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service object groups 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Object groups are useful for sorting and filtering the data about objects for
 reports and statistics. For example, you can group objects by geographical

@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 

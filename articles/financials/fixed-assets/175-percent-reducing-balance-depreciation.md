@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # 175 percent reducing balance depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic gives an overview of the 175 percent reducing balance method of depreciation.
 

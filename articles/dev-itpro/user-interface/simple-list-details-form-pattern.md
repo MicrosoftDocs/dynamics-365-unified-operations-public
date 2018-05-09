@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simple List and Details form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 

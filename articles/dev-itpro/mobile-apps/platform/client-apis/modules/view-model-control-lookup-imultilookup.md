@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Multi-Lookup 
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 

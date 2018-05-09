@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lifecycle Services for Finance and Operations customers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Finance and Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 

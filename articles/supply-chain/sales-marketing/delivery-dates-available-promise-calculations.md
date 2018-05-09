@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Order promising
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 

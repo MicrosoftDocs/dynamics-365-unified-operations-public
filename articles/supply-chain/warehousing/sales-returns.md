@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales returns
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 

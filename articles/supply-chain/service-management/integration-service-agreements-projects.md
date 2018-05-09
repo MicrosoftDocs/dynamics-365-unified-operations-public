@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Integration for service agreements and projects 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When you work with service agreements and service agreement lines, you use data that is set up in the following areas in **Project management and accounting**.

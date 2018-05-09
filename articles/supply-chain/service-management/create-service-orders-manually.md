@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create service orders manually    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can create service orders manually by using a service agreement or by using the **Service orders** form. You can also create a service order from a project.

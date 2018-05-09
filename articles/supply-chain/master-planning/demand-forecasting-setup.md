@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Demand forecasting setup
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 

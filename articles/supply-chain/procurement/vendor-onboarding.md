@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Onboard vendors
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ---
 
