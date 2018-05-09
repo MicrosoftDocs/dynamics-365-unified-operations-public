@@ -348,15 +348,15 @@ The infrastructure setup scripts use the following configuration files to drive 
 For each Service Fabric node type, **infrastructure\D365FO-OP\NodeTopologyDefinition.xml** describes:
 
 - The mapping between each node type and the application, domain and service accounts, and certificates.
-- Whether to enable the UAC
-- Prerequisites for Windows features and system software
-- Whether strong name validation should be enabled
-- List of firewall ports to be opened
+- Whether to enable the UAC.
+- Prerequisites for Windows features and system software.
+- Whether strong name validation should be enabled.
+- List of firewall ports to be opened.
 
 For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** describes:
 
-- The DB settings
-- The mappings between users and roles
+- The database settings.
+- The mappings between users and roles.
 
 #### Create gMSA and domain user accounts
 
@@ -396,7 +396,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
 > [!WARNING]
-> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
 > ```powershell
 > dir cert:\CurrentUser\My
 > dir cert:\LocalMachine\My
@@ -432,7 +432,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
-> The following section requires execution on multiple VMs. This process can be eased, by using the supplied remoting scripts, which provides the option of running the necessary scripts from a single machine, e.g. the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section texts for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. Please see "[Tear down CredSSP](#teardowncredssp)" when finished setting up.
+> The following section requires execution on multiple VMs. This process can be eased by using the supplied remoting scripts, which provide the option of running the necessary scripts from a single machine, such as the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section text for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/en-us/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. See the [Tear down CredSSP](#teardowncredssp) section when you are finished setting up.
 
 1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts as an Administrator.
 
@@ -446,11 +446,11 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     ```
 
     > [!IMPORTANT]
-    > 1. Each time your are prompted to, restart the machine. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all of the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all of the machines are back online.
+    > 1. Each time you are prompted, restart the machine. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all of the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all of the machines are back online.
     > 2. When you use the remoting script, ensure that the current user has access to the share folder of MSIs.
     > 3. When you use the remoting script, ensure no user is accessing the AOSNoteType, MRType, and ReportServerType type machines. Otherwise, the remoting script will fail to restart the computer because of the users being logged on to the computer.
 
-2. Run the following scripts, if they exist, in order to complete the VM setup.
+2. Run the following scripts, if they exist, to complete the VM setup.
 
     ```powershell
     # If Remoting, only execute
@@ -471,7 +471,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     ```
 
 > [!IMPORTANT]
-> If remoting was used, be sure to execute the clean up steps when the setup is complete. See "[20. Tear down CredSSP](#teardowncredssp)".
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section.
 
 ### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
@@ -506,11 +506,11 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     2. Go to **IE settings** \> **Compatibility Mode**, and clear the **Display Intranet sites in compatibility mode** check box.
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
     4. Select the client certificate. The **Service Fabric explorer** page appears.
-    5. Verify that all nodes are showing green.
+    5. Verify that all nodes are appear as green.
     
     > [!IMPORTANT]
     > If your client machine is a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration when you access the **Service Fabric explorer** page.
-    > If any Anti-Virus software is installed, ensure you set exclusion following the guidance in the [Service Fabric document documentation](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+    > If any antivirus software is installed, ensure you set exclusion following the guidance in the [Service Fabric](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
 ### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
@@ -522,9 +522,9 @@ The on-premises agent certificate can be reused across multiple sandbox and prod
 
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
-    > [!IMPORTANT]
-    > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
-    > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the azure login window content will be blocked.
+   > [!IMPORTANT]
+   > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
+   > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the Azure login window content will be blocked.
 
 1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0).
 2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
@@ -559,13 +559,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    1. In Server Manager, select **File and Storage Services** \> **Shares**.
    2. Select **Tasks** \> **New Share** to create a new share. Name the share **aos-storage**.
-   3. Leave **Allow caching of share** checked.
+   3. Leave **Allow caching of share** selected.
    4. Check **Encrypt data access**.
    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
     
       >[!NOTE]
-      > You may need to enable **Computers** under **Object Types..** to add machines or enable **Service Accounts** under **Object Types..** to add service accounts.
+      > You may need to enable **Computers** under **Object Types** to add machines or enable **Service Accounts** under **Object Types** to add service accounts.
 
 3. Follow these steps to set up the \\\\DAX7SQLAOFILE1\\agent file share:
 
@@ -575,10 +575,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
-    > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode)
+    > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode).
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
@@ -586,7 +586,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user.
-3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the example below.
+3. Get an SSL certificate from a CA to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following example.
 
     **Self-signed certificate for a Clustered SQL instance**
 
@@ -596,7 +596,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the **manual** script below and steps: **4.**, **5.** and **6.**:
+    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **4.**, **5.**, and **6.**.
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -604,7 +604,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    **Manual** creation of test certificates:
+    **Manual** creation of test certificates.
     ```powershell
     # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
@@ -623,17 +623,17 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
     3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
-        2. Navigate to the certificate, right-click -> **Modify**, then replace the value with the certificate thumbprint.
+        2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
         1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
-        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down for the **Certificate** box, click **OK**.
-        3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, click **OK**
-        4. Restart the SQL Server service
+        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box, and then click **OK**.
+        3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, and then click **OK**
+        4. Restart the SQL Server service.
 
 6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
 
 > [!IMPORTANT]
-> If remoting was used, be sure to execute the clean up steps when the setup is complete. See "[20. Tear down CredSSP](#teardowncredssp)".
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section for more information.
 
 ### <a name="configuredb"></a> 14. Configure the databases
 
@@ -641,15 +641,15 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 2. On the dashboard, select the **Shared asset library** tile.
 
-3. On the **Model** tab, select the demo data for the release you want and download the zip file.
+3. On the **Model** tab, select the demo data for the release that you want and download the zip file.
 
-| Release | Demo Data |
+| Release | Demo data |
 |-------|------|
 | On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
 | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
 | On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
-4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
+4. The zip file contains empty and demo data .bak files. Select the .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
 5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with the following:
     1. The database name.
@@ -768,8 +768,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
     > [!IMPORTANT]
-    > Before you can invoke *Invoke-ServiceFabricEncryptText*, you need to install [Microsoft Azure Service Fabrick SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
-    > If you encounter the following error, "Invoke-ServiceFabricEncryptText is not recognized command" after you install the Azure Service Fabrick SDK, restart the computer and retry.
+    > Before you can invoke *Invoke-ServiceFabricEncryptText*, you need to install [Microsoft Azure Service Fabric SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
+    > If you encounter the following error, "Invoke-ServiceFabricEncryptText is not recognized command" after you install the Azure Service Fabric SDK, restart the computer and retry.
 
 ### <a name="setupssis"></a> 16. Set up SSIS
 
@@ -852,7 +852,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
-8. On the **Configure agent** tab, enter the configuration settings. Execute the following script on any machine with access to it- and the configuration file, to get a part of the values needed.
+8. On the **Configure agent** tab, enter the configuration settings. Execute the following script on any machine with access to it and the configuration file, to get the needed values.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -879,7 +879,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 ### <a name="teardowncredssp"></a> 20. Tear down CredSSP, if remoting was used
 
-If any of the remoting scripts were used during setup, be sure to execute the following script whenever there are breaks in the setup process, or the setup has finished:
+If any of the remoting scripts were used during setup, be sure to execute the following script when there are breaks in the setup process, or the setup has finished.
 
 ```powershell
 .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -889,7 +889,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 ### <a name="deploy"></a> 21. Deploy your Finance and Operations (on-premises) environment from LCS
 
-1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get a part of the values needed.
+1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get the needed values.
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -902,16 +902,16 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update your local agent](../lifecycle-services/update-local-agent.md) for more details.
     - Validate the local agent from LCS.
-    - Deploy Platform Update 12 while going through the steps in [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md).
+    - Deploy Platform update 12 while going through the steps in [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
 ![Preparing](./media/Preparing.png)
 
-Clicking on **Full details** will take you to the environment details page, as shown below.
+Click **Full details** to take you to the environment details page, as shown below.
 
 ![Details_Preparing](./media/Details_Preparing.png)
 
-5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. Once deployment starts status will change to **Deploying**, as shown.
+5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
 ![Deploying](./media/Deploying.png)
 
@@ -921,28 +921,28 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 ![Failed](./media/Failed.png)
 
-See the topic [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) for details on Reconfigure. On successful deployment the screen will look as below.
+See the [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. On successful deployment, the screen will look the following.
 ![Deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
-In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
+In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
 
 ## Known issues
 
 ### Error "Key does not exist" when running the New-D365FOGMSAAccounts cmdlet
-If this is your first time creating and generating group Managed Service Account passwords in your domain, you need to first create the **Key Distribution Services KDS Root Key**. For more information, see [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)
+If this is your first time creating and generating group Managed Service Account passwords in your domain, you need to first create the **Key Distribution Services KDS Root Key**. For more information, see [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 
 ### Error "The WinRM client cannot process the request" when running the remoting script Configure-Prereqs-AllVms cmdlet
 You need to follow the instructions in the error message to enable the computer policy **Allow delegation fresh credentials** in all machines of Service Fabirc cluster.
 
 ### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Config-Prereqs-AllVms cmdlet
-To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
+To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1, which is found under the **Infrastructure** folder.
 
 ### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Complete-Prereqs-AllVms cmdlet
 To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
 
 ### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerTyoe servers
-.Net Framework 3.5 is required in MRType and ReportServerType servers. By default however, .Net Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
+.NET Framework 3.5 is required in MRType and ReportServerType servers. By default however, .NET Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
 
 ### Error "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration" when running the Publish-ADFSApplicationGroup cmdlet
 This error occurs because of a OpenID scope **allatclaims** that is required by the D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. To work around this error, add the scope description **allatclaims** through AD FS Management\Service\Scope Descriptions.
