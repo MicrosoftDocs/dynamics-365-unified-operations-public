@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a model mapping configuration (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. In this procedure, you will create a configuration for sample company, Litware, Inc. 
 

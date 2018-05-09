@@ -63,6 +63,7 @@ The following PowerBI.com solutions are available in the Shared assets library o
 
 The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com). These solutions are supported in Microsoft Dynamics AX 7.0 environments.
 
+
 > [!Note]
 > These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 

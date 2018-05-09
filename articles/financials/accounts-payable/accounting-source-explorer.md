@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounting source explorer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 

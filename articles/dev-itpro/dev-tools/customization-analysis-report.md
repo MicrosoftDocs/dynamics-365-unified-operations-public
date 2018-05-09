@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customization Analysis Report (CAR)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 

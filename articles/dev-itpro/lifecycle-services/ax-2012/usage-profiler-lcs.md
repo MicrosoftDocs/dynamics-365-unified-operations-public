@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Usage profiler (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The Usage profiler provides you with the following information:
 

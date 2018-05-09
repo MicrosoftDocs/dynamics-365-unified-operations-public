@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Client APIs Contents
 
-[!INCLUDE [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 * [Application](modules/services-application.md)
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Project cost accrual on purchase receipts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Finance and Operations. 
 

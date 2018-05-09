@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-12-31
 
 # India Goods and Services Tax
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides detailed information about India Goods and Services Tax (GST).
 

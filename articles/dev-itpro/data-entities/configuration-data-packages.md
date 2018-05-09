@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Configuration data packages
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the topic [Copy configuration](copy-configuration.md). 

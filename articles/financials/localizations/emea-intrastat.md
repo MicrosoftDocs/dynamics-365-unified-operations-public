@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Intrastat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 

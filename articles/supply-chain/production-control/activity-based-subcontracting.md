@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Activity-based subcontracting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 

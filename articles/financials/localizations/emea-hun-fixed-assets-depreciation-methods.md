@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Fixed assets depreciation methods for Hungary
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about fixed asset depreciation for legal entities in Hungary. In Hungary, there are four country-specific depreciation methods:
 

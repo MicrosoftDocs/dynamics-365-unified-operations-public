@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a bill of lading
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create a bill of lading when using warehouse management processes.  
 

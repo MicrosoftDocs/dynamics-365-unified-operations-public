@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create POS permission groups
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure will show how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role.
 

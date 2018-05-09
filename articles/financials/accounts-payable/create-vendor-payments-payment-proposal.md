@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create vendor payments by using a payment proposal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 

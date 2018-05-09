@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Work with customer service 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Customer service supports professional, service-based companies and manufacturing service organizations.

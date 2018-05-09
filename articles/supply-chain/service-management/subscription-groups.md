@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Subscription groups    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Subscriptions share the following information, which is defined for the subscription group:

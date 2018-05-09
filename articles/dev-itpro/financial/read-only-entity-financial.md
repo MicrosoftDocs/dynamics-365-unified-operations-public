@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Build a read-only entity that exposes financial dimensions
-"[!INCLUDE [banner](../includes/banner.md)]"
+"[!include [banner](../includes/banner.md)]"
 
 
 In this topic, we describe how to build an entity for registered transactions that are registered. 

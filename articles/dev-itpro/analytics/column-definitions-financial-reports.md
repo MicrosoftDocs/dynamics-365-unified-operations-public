@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Column definitions in financial reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
 

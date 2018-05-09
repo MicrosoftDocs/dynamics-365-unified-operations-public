@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ classes and methods
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create and use classes and interfaces in X++.
 

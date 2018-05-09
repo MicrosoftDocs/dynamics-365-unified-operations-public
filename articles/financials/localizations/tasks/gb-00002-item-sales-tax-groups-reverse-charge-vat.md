@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up item sales tax groups for reverse charge VAT (UK)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task walks you through setting up item sales tax groups, assigning the default values to products and procurements categories subject to reverse charge VAT for the United Kingdom.
 

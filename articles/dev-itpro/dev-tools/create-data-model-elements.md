@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a model and data model elements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you'll use Visual Studio's Dynamics AX menu to create a new model named Fleet Management tutorial. You'll also create and edit new model elements.
 

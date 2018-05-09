@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Benefit eligibility policies
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Resources for responding to a GDPR data request
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation (including Dynamics 365 for Retail), Dynamics 365 for Talent, and Microsoft Dynamics AX 2012. 
 

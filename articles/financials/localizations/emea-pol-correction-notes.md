@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Correction notes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 

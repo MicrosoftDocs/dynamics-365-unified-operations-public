@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Field Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Field control type.
 

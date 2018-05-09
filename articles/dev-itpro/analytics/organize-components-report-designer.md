@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Organize report components in report designer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 After you've designed building blocks and generated reports, it's helpful to organize these objects so that they are easier for users to locate. This article explains how to organize existing reports, building blocks, and objects in report designer.
 

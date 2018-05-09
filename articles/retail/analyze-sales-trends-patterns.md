@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Analyze sales trends and patterns
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 You can study sales trends and patterns in real time in Microsoft Dynamics 365 for Retail.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Project resource scheduling data model
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Project resource scheduling data model.
 

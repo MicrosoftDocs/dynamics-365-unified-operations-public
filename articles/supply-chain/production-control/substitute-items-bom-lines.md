@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Material substitution in manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to substitute materials during the production process. 
 

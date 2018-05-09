@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 8
 
 # Upgrade from AX 2012 - Data upgrade in a sandbox environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 The output of this task is an upgraded database that you can use in a sandbox environment. In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 

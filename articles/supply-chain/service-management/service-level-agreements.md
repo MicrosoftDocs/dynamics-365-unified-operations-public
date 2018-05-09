@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service level agreements        
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 A service level agreement (SLA) is an agreement between a service company and a service customer. In a SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.

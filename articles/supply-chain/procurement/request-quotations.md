@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Requests for quotation (RFQs)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of requests for quotation (RFQs). Organizations
 issue RFQs when they want to receive competitive offers from several vendors for

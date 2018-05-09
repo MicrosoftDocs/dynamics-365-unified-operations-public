@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a budget from transaction accounts and total accounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview of the process for creating budgets based on total accounts. It also explains how to turn on budget control for total accounts, if budget control is required.
 

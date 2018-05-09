@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Date effectivity
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 

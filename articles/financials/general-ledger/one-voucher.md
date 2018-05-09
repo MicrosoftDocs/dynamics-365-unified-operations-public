@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # One voucher
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the 

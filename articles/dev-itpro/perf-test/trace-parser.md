@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Diagnose problems and analyze performance issues using Trace parser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can use the Trace parser to consume traces and analyze performance in your Microsoft Dynamics 365 for Finance and Operations deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
 

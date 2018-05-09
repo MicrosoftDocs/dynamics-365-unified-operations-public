@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fields and Field Groups subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Field and Field Groups form subpattern. This is the most common data entry subpattern. It uses a dynamic number of columns to present multiple fields or groups of fields.
 

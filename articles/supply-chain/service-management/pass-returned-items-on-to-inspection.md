@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Pass returned items on to inspection 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.

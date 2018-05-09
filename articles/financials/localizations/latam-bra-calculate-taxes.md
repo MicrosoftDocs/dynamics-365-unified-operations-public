@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Brazilian taxes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
 

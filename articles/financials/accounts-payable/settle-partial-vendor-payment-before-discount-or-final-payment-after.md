@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment before the discount date with a final payment after the discount date
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 

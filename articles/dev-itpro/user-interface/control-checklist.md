@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Control checklist
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article categorizes and describes all the release criteria for controls.
 

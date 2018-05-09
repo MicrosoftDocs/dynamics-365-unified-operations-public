@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to apply the latest platform release to your Microsoft Dynamics 365 for Finance and Operations environment.
 

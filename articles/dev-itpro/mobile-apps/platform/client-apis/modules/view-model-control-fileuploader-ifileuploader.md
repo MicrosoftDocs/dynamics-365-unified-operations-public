@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # File Uploader 
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 A control for uploading images.
 

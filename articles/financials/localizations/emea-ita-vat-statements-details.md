@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT statements details for Italy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a VAT statement for legal entities in Italy. 
 

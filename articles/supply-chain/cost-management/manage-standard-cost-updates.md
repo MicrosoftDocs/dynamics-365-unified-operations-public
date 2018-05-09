@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage standard cost updates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach. 
 

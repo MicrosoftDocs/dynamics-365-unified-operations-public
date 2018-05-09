@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Personalize the user experience
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 

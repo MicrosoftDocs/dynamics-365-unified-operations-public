@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Configure the Electronic reporting framework
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 

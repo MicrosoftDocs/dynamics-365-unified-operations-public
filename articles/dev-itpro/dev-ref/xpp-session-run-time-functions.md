@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ session run-time functions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the session run-time functions.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use third-party service testing utilities with Microsoft Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 

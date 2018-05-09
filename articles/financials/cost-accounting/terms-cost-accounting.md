@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting terminology
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic defines the key terms that are used in Cost accounting.
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset impairment accounting on cash-generating units for Japan
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 

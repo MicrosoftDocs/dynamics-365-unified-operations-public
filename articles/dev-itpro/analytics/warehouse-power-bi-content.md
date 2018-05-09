@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Warehouse performance Power BI content
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes what's included in the **Warehouse performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 

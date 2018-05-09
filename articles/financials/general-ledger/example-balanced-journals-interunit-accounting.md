@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Balanced journals for interunit accounting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 

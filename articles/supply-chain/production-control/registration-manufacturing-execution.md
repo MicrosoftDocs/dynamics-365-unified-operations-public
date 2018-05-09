@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Registration for manufacturing execution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Straight line life remaining depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the Straight line life remaining method of depreciation.
 

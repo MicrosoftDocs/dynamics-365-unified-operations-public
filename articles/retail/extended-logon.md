@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up extended logon functionality for Cloud POS and MPOS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
 

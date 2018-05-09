@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up consignment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure inbound consignment inventory operations.
 

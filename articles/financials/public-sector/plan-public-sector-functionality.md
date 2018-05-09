@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan for public sector functionality
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Finance and Operations.
 

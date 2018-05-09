@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 # Retail Typescript and C# proxies
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Whenever you create a new controller for Retail server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
 

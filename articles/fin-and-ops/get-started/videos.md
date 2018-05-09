@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 # Videos for Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 
@@ -130,7 +130,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Integration (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integration between Dynamics 365 for Sales and Dynamics 365 for Finance & Operations via CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integration framework within Dynamics 365 for Finance & Operations (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Task automation framework for Data management (DYN447PAL2)](https://infopedia.eventbuilder.com/event?eventid=e8y7t2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Task automation framework for Data management (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
 
 #### Intelligence
 - [Analytics & reporting options, printing, and the Document Routing Agent (DYN442PAL)](https://infopedia.eventbuilder.com/event?eventid=r6d9a6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)

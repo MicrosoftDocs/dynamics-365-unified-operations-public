@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # BOM designer functionality
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan your organizational hierarchy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Finance and Operations and on business processes. 
 

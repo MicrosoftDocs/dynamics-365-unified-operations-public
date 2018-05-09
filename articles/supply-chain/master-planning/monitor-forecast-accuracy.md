@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monitor forecast accuracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Finance and Operations calculates, and explains how you can view the accuracy values.
 

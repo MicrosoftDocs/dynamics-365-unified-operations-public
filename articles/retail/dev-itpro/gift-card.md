@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application update 4
 
 # External gift card support
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 

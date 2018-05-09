@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory journals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic describes how you can use inventory journals to post various types of physical inventory transactions.
 

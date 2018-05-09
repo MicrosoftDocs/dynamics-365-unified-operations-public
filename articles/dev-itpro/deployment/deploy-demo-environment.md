@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 ---
 # Deploy a demo environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This topic applies to deploying a demo environment for:
 

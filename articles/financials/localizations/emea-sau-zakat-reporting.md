@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Zakat reporting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
 

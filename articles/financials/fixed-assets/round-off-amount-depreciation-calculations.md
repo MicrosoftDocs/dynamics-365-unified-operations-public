@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Round-off amount for depreciation calculations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article discusses the Round-off depreciation field that is found on the Book setup pages.
 

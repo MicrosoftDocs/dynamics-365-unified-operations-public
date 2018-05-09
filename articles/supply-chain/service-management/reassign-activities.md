@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reassign activities 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic describes how to reassign service activities from one worker to another worker. You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.

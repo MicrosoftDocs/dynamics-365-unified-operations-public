@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension entry control migration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 

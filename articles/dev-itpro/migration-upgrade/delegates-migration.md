@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use delegates to solve dependencies between models when migrating code
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 

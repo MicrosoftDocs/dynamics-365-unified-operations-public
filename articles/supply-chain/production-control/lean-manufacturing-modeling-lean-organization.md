@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modeling a lean organization
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The article provides information about the key concepts in modeling a lean organization. 
 

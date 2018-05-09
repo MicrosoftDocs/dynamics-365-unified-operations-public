@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create purchase orders
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article describes the process and options when you manually create a purchase order.
 

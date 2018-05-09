@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project attached to service agreement 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 You can attach service agreements to projects of every type except the **Time project** type.

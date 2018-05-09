@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up RFM analysis
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.
 

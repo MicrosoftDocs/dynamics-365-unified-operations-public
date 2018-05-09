@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize with extensions and overlayering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Pin Power BI reports to workspaces
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Finance and Operations to give your users an interactive data exploration experience.
 

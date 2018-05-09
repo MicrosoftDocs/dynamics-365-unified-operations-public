@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intercompany accounting setup
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
 

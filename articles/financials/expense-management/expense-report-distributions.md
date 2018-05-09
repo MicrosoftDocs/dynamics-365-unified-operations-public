@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Distributions on an expense report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you enter expenses on an expense report, you can distribute the expense across multiple projects, financial dimensions, 
 or accounts in your organization.

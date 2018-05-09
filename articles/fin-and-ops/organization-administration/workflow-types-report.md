@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Workflow types report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic points you to a report that lists the workflow types that are available in Finance and Operations.
 

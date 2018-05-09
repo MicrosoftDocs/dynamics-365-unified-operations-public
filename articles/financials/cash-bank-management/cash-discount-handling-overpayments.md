@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Handling cash discounts for overpayments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 

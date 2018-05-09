@@ -31,7 +31,7 @@ ms.search.validFrom: 2018-1-31
 
 # Set up GST reference number groups
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Goods and Services Tax (GST) transactions are differentiated by a unique number sequence. If a different number sequence is required for the address of each warehouse or legal entity, you can create a reference number sequence group. You can then assign the reference number sequence group to the addresses.
 

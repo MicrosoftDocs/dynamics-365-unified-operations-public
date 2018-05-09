@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a manual task in a workflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the properties for a manual task.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Deploy a payment connector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Overview
 --------

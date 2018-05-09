@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Total cost allocation method
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 

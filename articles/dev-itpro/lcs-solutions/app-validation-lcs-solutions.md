@@ -31,7 +31,7 @@ ms.author: omarc
 
 # Validate an application for an LCS solution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 

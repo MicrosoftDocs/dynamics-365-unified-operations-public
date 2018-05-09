@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Derogatory depreciation for France
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about derogatory depreciation and how to set it up. In derogatory depreciation, an extra amount of depreciation is calculated as the difference between the depreciation amount on the tax book and the depreciation amount on the accounting book during the life of a fixed asset.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Post inventory main accounts by site for China
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the posting of inventory main accounts by site for China.
 

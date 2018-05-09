@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension-based product configuration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 

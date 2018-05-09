@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Report definitions in financial report designer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about report definitions. A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings that for customizing a report. 
 

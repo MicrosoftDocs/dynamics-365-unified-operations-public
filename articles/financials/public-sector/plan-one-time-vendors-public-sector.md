@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan for one-time vendors in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 

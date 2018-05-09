@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View compliance with service level agreements    
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 ## View compliance with a service level agreement

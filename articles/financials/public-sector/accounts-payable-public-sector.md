@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 for Finance and Operations. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LINQ provider for C#
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic discusses the LINQ provider.
 

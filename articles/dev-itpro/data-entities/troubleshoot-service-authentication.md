@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service authentication troubleshooting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides some tips for troubleshooting issues that involve service authentication.  
 

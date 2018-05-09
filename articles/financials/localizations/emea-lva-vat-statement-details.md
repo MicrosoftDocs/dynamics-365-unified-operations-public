@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT statement details for Latvia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up the VAT statement for legal entities in Latvia.
 

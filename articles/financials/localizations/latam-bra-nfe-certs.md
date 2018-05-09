@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e certificates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In the Brazilian localization, you must generate a Nota Fiscal eletrônica (NF e) to register the movement of items and services between two parties.
 The NF e fiscal document must be signed and transmitted to the state tax authority using a client certificate that is issued by a Brazilian certificate authority (CA).

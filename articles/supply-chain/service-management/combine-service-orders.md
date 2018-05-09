@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Combine service orders   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 When you create service order lines automatically in the **Service agreements** form, you can choose one of the following options to specify how you want to group them:

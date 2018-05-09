@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Class extensions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the new class extension model in X++.
 

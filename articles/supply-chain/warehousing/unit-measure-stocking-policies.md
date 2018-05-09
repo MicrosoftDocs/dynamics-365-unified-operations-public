@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Unit of measure and stocking policies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 

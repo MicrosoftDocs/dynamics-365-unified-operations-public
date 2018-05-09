@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Return cost price and return lot ID        
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 # Set up a warehouse by using a warehouse configuration template
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a warehouse by using a warehouse configuration template. There are several predefined configuration templates that you can use. For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).
 

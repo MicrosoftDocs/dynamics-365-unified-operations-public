@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Default offset accounts for vendor invoice journals and invoice approval journals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Default offset accounts are used on the following vendor invoice journal pages:
 

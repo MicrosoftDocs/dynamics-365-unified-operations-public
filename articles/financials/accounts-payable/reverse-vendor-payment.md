@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reverse a vendor payment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
 

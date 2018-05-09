@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend the number sequence scope
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows you how to extend the number sequence scope.
 
