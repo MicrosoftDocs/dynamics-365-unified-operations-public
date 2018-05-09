@@ -42,7 +42,7 @@ In Microsoft Dynamics 365 for Finance and Operations, you can create Microsoft P
 When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database. When you're satisfied with the report, your administrator can help you migrate it to your production environment. The rest of this section walks you through this process.
 
 > [!Note]
-> To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able develop embedded analytical reports in Microsoft-provided, Tier-1 environments. You need administrator rights to install Power BI Desktop.
+> To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided, Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store. The models that the Retail application uses are defined in the RetailCube aggregate measurement. 
