@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # PowerBI.com solutions
-The following PowerBI.com solutions are available for your Dynamics 365 for Finance and Operations enviornments. 
+The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations enviornments. 
 
 ## PowerBI.com solutions available from Lifecycle Services (LCS)
 
