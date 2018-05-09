@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!Note]
-> The Person search report is available for versions later than 7.1 now, and will be available for Version 7.1 in an upcoming release. You can use the report with Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. 
+> You can use the report with Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012.  The person search report is available in version 8.0. The person search report is available in vesion 7.3 (delivered via monthly update 7.3.2). The person search report is available in version 7.2 (via KB4132615). The person search report is available in version 7.1 (via KB4132441). The person search report may be updated periodically. Before using the Person Search report, you need to ensure that you have obtained and applied all relevant hotfixes.
 
 You can use the Global address book in Finance and Operations to create an instance of a person that is described in the data model as a party. 
 
