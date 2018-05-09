@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-appsource).
+> This content pack has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This topic provides information about the Retail channel performance Power BI content for Dynamics AX. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
