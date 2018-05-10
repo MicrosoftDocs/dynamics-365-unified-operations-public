@@ -93,6 +93,8 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ![Starting VSTS synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
 
+Please note that BPM localization is not supported. When editing in the new client in any language other than **US English** any changes made will only be reflected when viewing the BPM in the language in which those changes were made. Additionally, only changes made in US English will appear in VSTS after synchronization.
+
 ## Turn off synchronization of BPM with VSTS
 
 To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **VSTS sync**.
