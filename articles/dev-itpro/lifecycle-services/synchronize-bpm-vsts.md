@@ -93,8 +93,8 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ![Starting VSTS synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
 
-    >[!NOTE]
-    > BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
+>[!NOTE]
+> BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
 
 ## Turn off synchronization of BPM with VSTS
 
