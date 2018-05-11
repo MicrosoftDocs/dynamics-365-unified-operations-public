@@ -126,6 +126,7 @@
 #### [Class extensions](extensibility/class-extensions.md)
 #### [Class extension: Method wrapping and Chain of Command](extensibility/method-wrapping-coc.md)
 #### [Naming guidelines](extensibility/naming-guidelines-extensions.md)
+#### [Relax model restrictions to enable the refactoring of over-layering into extensions](extensibility/refactoring-over-layering.md)
 ### How do I?
 #### [Add an enum value](extensibility/add-enum-value.md)
 #### [Modify an extended data type](extensibility/modify-edt.md) 
