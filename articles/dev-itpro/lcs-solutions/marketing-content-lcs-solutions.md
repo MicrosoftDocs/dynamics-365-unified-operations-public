@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Stage and publish an LCS solution
+title: Stage and publish a solution in Dynamics 365 for Finance and Operations
 description: This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
@@ -34,7 +34,7 @@ ms.author: omarc
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to upload the marketing content for your Dynamics 365 for Finance and Operations solution package to the [Cloud Partner Portal](https://cloudpartner.azure.com), and how to stage and publish your solution.
+This topic explains how to upload the marketing content of your Dynamics 365 for Finance and Operations solution package to the [Cloud Partner Portal](https://cloudpartner.azure.com), and how to stage and publish your solution.
 
 Access to the Cloud Partner Portal will be granted after you have been formally onboarded and registered as a publisher by the AppSource for Dynamics 365 for Finance and Operations Team. 
 
