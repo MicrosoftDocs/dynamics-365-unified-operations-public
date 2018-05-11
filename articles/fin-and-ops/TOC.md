@@ -286,7 +286,7 @@
 ##### [Set up sales tax groups and item sales tax groups](../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)
 ##### [Set up sales tax reporting codes](../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md)
 ##### [Set up sales tax settlement periods](../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
-##### [Set up withholding tax](../financials/general-ledger/tasks/set-up-withholding-tax.md
+##### [Set up withholding tax](../financials/general-ledger/tasks/set-up-withholding-tax.md)
 ##### [View posted sales tax transactions](../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md)
 
 ### [Accounts payable](../financials/accounts-payable/accounts-payable.md)
