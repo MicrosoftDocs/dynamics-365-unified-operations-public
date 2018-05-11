@@ -5,7 +5,7 @@ title: Call center catalogs
 description: This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/27/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
