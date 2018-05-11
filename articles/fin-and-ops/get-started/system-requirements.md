@@ -135,6 +135,8 @@ The computer must meet all system requirements for installing and using the foll
 - Third-party hardware
 
 ## Retail Store Scale Unit requirements
+Take note that the minimum system requirements listed below are the bare minimum necessary to get a Retail Store Scale Unit to function in a test scenario.  The following is not representative of a realistic production environment.  It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users.
+
 ### Supported operating systems
 
 - Retail Store Scale Unit is a 32-bit application, but it will run on both x86 and x64 architectures.
@@ -161,6 +163,13 @@ The computer must meet all system requirements for installing and using the foll
 - 6 GB of RAM
 - 2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
 - At least 10 GB of free space (The channel database can require a large amount of space.)
+
+It would be in an organization's best interest to also take the following into consideration when determining personal hardware needs:
+- Number of physical nework ports (Enhancing throughput per second)
+- SQL log flush size (Directly impacts SQL performance)
+- Data Read and Write capabilities (Directly impacts SQL performance)
+- Number of CPU(s) core, number of simultaneous threads per core, and speed per core (Impacts overall throughput of system)
+- Whether load balancing will be required or not
 
 ## Connector requirements
 ### Supported operating systems
