@@ -5,7 +5,7 @@ title: Videos for Dynamics 365 for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,6 +86,9 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Office integration
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+
+#### Organization administration
+- [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
 #### Procurement and sourcing
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
