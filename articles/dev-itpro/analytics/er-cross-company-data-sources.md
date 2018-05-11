@@ -74,5 +74,5 @@ To learn more about this feature, play the task guide, **ER - Access data tables
 
 Download the following files to complete the task guide:
 
-- [ER model configuration](CrossCompanyDataAccessModel.xml) 
-- [ER format configuration](CrossCompanyDataAccessFormat.xml)
+- [ER model configuration - CrossCompanyDataAccessModel.xml]()
+- [ER format configuration - CrossCompanyDataAccessFormat.xml]()
