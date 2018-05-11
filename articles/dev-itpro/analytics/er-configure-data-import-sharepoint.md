@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure data import from SharePoint 
-description: 
+description: This topic explains how to import data from SharePoint.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,140 +29,97 @@ ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 
 ---
-
 # Configure data import from SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-When you need to import data using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run the model mapping destination that uses the format as a data source. When you want to import data from Microsoft SharePoint, you must manually browse the local folders of SharePoint to locate the file for import.
-You can use your ER configurations to set up data import from files that are stored in SharePoint folders. This topic explains how to complete the import by using vendor transactions as business data that must be imported to the application.
+When you import data using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping destination that uses the format as a data source. When you want to import data from Microsoft SharePoint, you must manually locate the file for import. You can use ER configurations to set up data import from files that are stored in SharePoint folders. Using vendor transactions as business data, this topic explains how to complete the import from SharePoint to the application.
 
 ## Prerequisites
-To complete the example in this topic, you must have the following access:
+To complete the examples in this topic, you must have the following:
 
-- Access to Finance and Operations for one of the following roles:
+- Access to Microsoft Dynamics 365 for Finance and Operations for one of the following roles:
   - Electronic reporting developer
   - Electronic reporting functional consultant
   - System administrator
-- Access to the SharePoint Server that is configured for use with Finance and Operations
+- Access to the SharePoint Server that is configured for use with Dynamics 365 for Finance and Operations
 
-## Create necessary ER configurations
-1.	Play the set of ER Use formats to import data from an external Excel file task guides (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process), which walk you through the details of design and usage of ER configurations to interactively import vendors transactions to the application from the external files in Excel workbook format (find more details on this page). 
-2.	When you finished playing these guides, you will have in your application all prerequisites that are necessary for this example:
+## Create an ER configuration
+Play the task guides, **ER Use formats to import data from an external Excel file** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process), which walk you through how to design and use ER configurations to interactively import vendor transactions from the external files in Microsoft Excel. For more information see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md). 
+When you have finished playing the guides, you will have the prerequisites required for this example. The prerequisists include the ER model and format configurations with 1099 Payments model and format. These are used to import vendor transactions from Excel.
 
-    - ER model and format configurations including 1099 Payments model and format  for importing vendor transactions from Excel.
-      > [!NOTE]
-      > Note that the format for importing vendors’ transactions is marked as a default for model mapping. It means that if you would run a model mapping of the 1099 Payments model of the To destination type, it will run this format to import data from external files and use this data to update application tables.
-  
-    - Microsoft Excel file with vendors transactions to be imported to the application:
-
+> [!NOTE]
+> The format for importing vendor transactions is the model mapping default. This means that if you run a model mapping of the 1099 Payments model wtih the**To destination** type, it will run this format to import data from external files and then use the data to update application tables.
 
 ## Configure Document management parameters
-1.	On the Document management parameters page, configure access to the SharePoint Server that will be used in the company that you're signed in to (the USMF company in this example).
+1.	On the **Document management parameters** page, configure access to the SharePoint Server that will be used by the company that you're signed into. In this example, USMF.
 2.	Test the connection to the SharePoint Server to make sure that you've been granted access.
-3.	Open the configured SharePoint site. Create new folders where the incoming files can be stored:
+3.	Open the configured SharePoint site and create the following new folders where the incoming files can be stored.
 
-    - Files import source (main);
-    - Files import source (alternative).
-4.	In Finance and Operations, on the Document types page, create new document types that will be used to access the SharePoint folders that you just created. Enter File in the Group field and SharePoint in the Location field, and then enter the address of the SharePoint folder:
+  - Files import source (main)
+  - Files import source (alternative)
+  
+4.	In Finance and Operations, on the **Document type** page, create the following new document types that will be used to access the SharePoint folders that you just created. 
 
-    - Files import source (main) for the SP Main document type;
-    - Files import source (alternative) for the SP Alternative document type.
+  - SP Main document type
+  - SP Alternative document type
+
+5. In the **Group** field, enter **File**, and in the **Location** field, enter **SharePoint**. Next, enter the address of the SharePoint folder. 
+
+  - Files import source (main) for the SP Main document type
+  - Files import source (alternative) for the SP Alternative document type
 
 ## Configure ER sources for your ER format
-1.	On the Electronic reporting source page, configure the sources of files for data import by using the configured ER format:
-a.	Define the file name’s mask to filter for data import the only files with the extension XLSX;
-b.	Select both SharePoint folders that have been previously created.
+1.	On the **Electronic reporting source** page, configure the source files for data import by using the configured ER format.
+2. Define the file name’s mask to filter data import to only files with the extension, XLSX. The file name's mask is option and is used only when it has been defined. You can only define one mask for one ER format.
+3. Select both SharePoint folders that you created.
 
-Note that the file name’s mask is optional and in use only when defined. Currently, you can define the only one mask for a single ER format.
-
-Note that multiple SharePoint folders can be selected for a single ER format as sources of files for data import.
-
-Note that the ER source is defined for each application company individually. Unlike ER configurations, ER format sources are company dependent.
-
-Note that when you delete an ER source setting for an ER format, all connected file states (described in the article below) will be also deleted (by default).
+The ER *source* is defined for each application company individually. Unlike ER *configurations* which can be shared across companies. When you delete an ER source setting for an ER format, all connected file states will be also deleted by default.
 
 ## Review files states for your ER format
-1.	Click the File states for the sources button to review the content of configured file sources for the current ER format.
-2.	In the Files section, review the list of files:
-a.	Either located in the file sources (applicable based on the file name mask if defined) and ready for data import:
-i.	The Sources log for the import format section is blank for such files.
-b.	Or already imported files:
-i.	In the Sources log for the import format section, review the history of this file import.
+1.	Click **File states for the sources** to review the content of the configured file sources for the current ER format.
+2.	In the **Files** section, review the list of files:
 
-Note that you can also use the Organization administration > Electronic reporting > File states for the sources path to access this page. In this case the page will present information about file sources for all ER formats to which file sources have been configured in the currently logged company.
+  - File sources that are applicable based on the file name mask if it is defined and ready for data import. The Sources log for the import format section is blank for these files.
+  - In the **Sources** log, in the **Import** section, you can review the history of already imported files.
+
+You can also go to **Organization administration** > **Electronic reporting** > **File states for the sources** to access the page. In this case the page will provide information about file sources for all ER formats for which file sources have been configured in the currently logged company.
 
 ## Import data from SharePoint folder located Excel files
-### Prepare Excel file for data import
-1.	On the SharePoint, upload the Excel file with vendors transactions to the previously created SharePoint folder Files import source (main).
-2.	On the File states for the sources button form, click Refresh to update the content of the page.
-Note that previously uploaded to the SharePoint Excel file appeared in this form with the status Ready.
-a.	Status Ready is assigned automatically for each new file in the SharePoint folder. It means that this file is ready for import.
-b.	Status Importing is applied automatically by the ER report when this file will be locked by import process to prevent its usage by other processes (if many of them are running simultaneously).
-c.	Status Imported is assigned automatically by the ER report when the import of this file successfully completed. It means that the imported file has been deleted from the configured source.
-d.	Status Failed is assigned automatically by the ER report when the import of this file completed with errors / exceptions.
-e.	Status On hold can be assigned manually by user on this form. It means that this file will not be imported for now. It can be used to postpone the import of some files.
+1.	In SharePoint, upload the Excel file with vendor transactions to the SharePoint folder, **Files import source (main)** that you created earlier in this topic.
+2.	On the **File states for the sources** form, click **Refresh** to update the page. 
 
 ## Import data from SharePoint files
-1.	Open the ER configurations tree and expand the list of components of the ER model that is used by your ER format for data import. Click on the model mapping name link:
-2.	Click Run to execute the selected model mapping.
-Note that since you configured files sources for the ER format, the File source option is offered for you to be changed if required. If you keep this offer, the XLSX files will be imported from the configured sources – SharePoint folders in our case.
+1.	Open the ER configurations tree and expand the list of components of the ER model that is used by your ER format for data import. 2. Click on the model mapping name link.
+3.	Click **Run** to execute the selected model mapping. Because you configured file sources for the ER format, you can change the **File source option** if needed. If you keep this option, the .xslx files will be imported from the configured sources, which in this example are the SharePoint folders.
+In this example, we're only importing one file. However, when there are multiple files, they will be imported in the order in which they were added to the SharePoint folder.
 
-Be aware that the files will be imported in the predefined order – as earlier a file has been placed to the SharePoint folder, as earlier it will be imported.
+Model mapping can be executed unattended in batch mode. In this case, any time a batch runs this ER format, a single file will be imported from the configured file sources.
+4. Use the following code to implement this batch run:
 
-Note that now we will run this model mapping to import the only one file. Same model mapping can be executed unattended in batch mode – in this case any time a batch will run this ER format, a single file will be imported from the configured file sources. Use the following code to implement this batch run:
+        ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
 
-ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
+When a file is successfully imported from the SharePoint folder, it will be deleted from this folder.
+5.	Enter the Voucher ID, for example V-00001, and then click **OK**.
+6.	Open the **File states for the sources** form and click **Refresh** to update the page.
+7.	In the **Files** section, review the list of files. The **Sources log** for the import format section provides the history of the Excel file import. As this file was successfully imported, it is marked as **Deleted** in the SharePoint folder.
+8.	Review the SharePoint folder, **Files import source (main)**. The successfully imported Excel files has been deleted from this folder.
+9.	Click **Accounts payable** > **Periodic tasks** > **Tax 1099** > **Vendor settlement for 1099s** and in the **From date** and **To date** fields, enter the appropriate values. Then click **Manual 1099 transactions**.
+The vendors’ transactions of the voucher **V-00001** have been imported from the SharePoint Excel file to the application.
 
-Be aware that when a file has been successfully imported from the SharePoint folder, it will be deleted from this folder.
-
-3.	Enter the desire voucher id, for example V-00001, and click OK.
-Note that the Infolog contains the user’s notification that a residing in the SharePoint folder file has been successfully imported.
-
-4.	Open the File states for the sources button form, click Refresh to update the content of the page.
-5.	In the Files section, review the list of files.
-
-Note that the Sources log for the import format section presents the history of the Excel file import. As this file was successfully imported, it is marked as deleted in the SharePoint folder.
-
-6.	Review the SharePoint folder Files import source (main).
-
-Note that the successfully imported Excel files has been deleted from this folder.
-
-7.	Open the Vendor settlement for 1099s form by using the Accounts payable > Periodic tasks > Tax 1099 > Vendor settlement for 1099s path.
-8.	Define appropriate values in From date and To date fields, and click Manual 1099 transactions:
-Note that vendors’ transactions of the voucher V-00001 have been imported from the SharePoint located Excel file to your application.
-
-## Prepare another Excel file for data import
-1.	Update the previously used for data import Excel file – put to the third row the code of a vendor that does not exist in your application:
-2.	On the SharePoint, upload the updated Excel file with vendors transactions to the previously created SharePoint folder Files import source (main).
-
-## Import data from SharePoint files
-1.	Open the ER configurations tree and expand the list of components of the ER model that is used by your ER format for data import. Click on the model mapping name link.
-2.	Update the model mapping to consider the incorrect vendor code as an error in data import process:
-a.	Click Designer.
-b.	Select Validations tab.
-c.	Change the post-validation action for a validation rule that was configured to evaluate whether the importing vendor account exists in the application from Continue execution (write a remark) value to Stop execution (raise an error) value:
-d.	Save changes and close the ER model mapping designer.
-
-3.	Click Run to execute the modified ER model mapping.
-4.	Enter the desire voucher id, for example V-00002, and click OK.
-Note that the Infolog contains the user’s notification that residing in SharePoint folder file contains incorrect vendor account and can’t be imported.
-
-5.	Open the File states for the sources button form, click Refresh to update the content of the page.
-6.	In the Files section, review the list of files.
-Note that the Sources log for the import format section tells user that the import process for this file failed and this file is still in the SharePoint folder (Is deleted checkbox is unchecked). If you fix this file on the SharePoint (put the correct vendor’s account instead of the incorrect one) and change the status of this file on the Sources log for the import format form from Failed to Ready, this file can be imported again.
-
-7.	Review the SharePoint folder Files import source (main).
-
-Note that the non-imported Excel files is still in this SharePoint folder.
-
-8.	Open the Vendor settlement for 1099s form by using the Accounts payable > Periodic tasks > Tax 1099 > Vendor settlement for 1099s path.
-9.	Define appropriate values in From date and To date fields, and click Manual 1099 transactions:
-
-Note that the only voucher V-00001 vendors’ transactions are available. There are no transactions of the voucher V-00002 available even the error has been discovered for the last imported transaction in the Excel file.
-
-
-
-
-
-
+## Prepare Excel file for import
+1. Using the Excel file that you previously used, in row three, add information for a vendor that doesn't exist in your application.
+2. Upload the updated Excel file with the vendors transactions to the SharePoint folder, **Files import source (main)**.
+3. In Dynamics 365 for Finance and Operations, open the ER configurations tree and expand the list of components of the ER model that is used by your ER format for data import. 
+4. Click **Model mapping name** to update the model mapping to consider the incorrect vendor code an error in the data import process.
+5. Click Designer, select the Validations tab, and change the post-validation action for the validation rule that was configured to evaluate whether the importing vendor account exists in the application.
+6. Update the value to **Stop execution**, save your changes, and close the form.
+7. Save changes and close the ER model mapping designer.
+8.	Click **Run** to execute the modified ER model mapping.
+9.	Enter the voucher ID, for example V-00002, and click **OK**.
+10.	Open the **File states for the sources** form, click Refresh and in the **Files** section, review the list of files.
+The **Sources log** for the **Import format** section tells you that the import process failed and the file is still in the SharePoint folder. If you fix this file on SharePoint and change the status of this file on the **Sources log** for the **Import format** form from **Failed** to **Ready**, this file can be imported again.
+11.	Review the SharePoint folder, **Files import source (main)**. Notice that the Excel file that was not imported is still in this folder.
+12. Click **Accounts payable** > **Periodic tasks** > **Tax 1099** > **Vendor settlement for 1099s**, enter the appropriate values in the **From date** and **To date** fields, and then click **Manual 1099 transactions**.
+9.	Define appropriate values in From date and To date fields, and click Manual 1099 transactions.
+Only transactions for voucher **V-00001** are available. There are no transactions of the voucher **V-00002** available even the error has been discovered for the last imported transaction in the Excel file.
