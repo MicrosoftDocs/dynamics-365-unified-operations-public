@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Stage and publish a solution in Dynamics 365 for Finance and Operations
+title: Stage and publish an LCS solution
 description: This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Stage and publish an LCS solution
+# Stage and publish a solution in Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
