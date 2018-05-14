@@ -75,7 +75,7 @@ Users can also view the **Detailed status** on the sales order to know if an ord
 
 To view the details of an individual order hold, the user can open the **Order hold** screen in a detailed view from the **Customer service** form using the **Options** menu for the selected order. A user can also access this same view from the **All sales order** form by clicking the **Order holds** menu option found under the **SALES ORDER** tab.
 
-### Viewing all orders
+### Viewing all orders on hold
 
 To view all orders that have been placed on manual or systematic hold, go to **Retail** > **Customers** > **Order holds**.
 
