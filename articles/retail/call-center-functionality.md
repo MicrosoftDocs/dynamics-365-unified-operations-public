@@ -55,6 +55,9 @@ This page provides links to relevant documentation related to the setup, configu
 ## Configure payment processing
 [Payment methods in a call center](work-with-payments.md)
 
+## Configure delivery modes
+[Configure call center delivery modes and charges](configure-call-center-delivery.md)
+
 ## Configure direct marketing
 [Call center catalogs](call-center-catalogs.md)
 
