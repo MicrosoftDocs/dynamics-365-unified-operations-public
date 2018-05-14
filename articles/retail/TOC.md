@@ -4,7 +4,7 @@
 ## [What's new or changed](get-started/whats-new.md)
 ## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
 ## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
-## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json) 
 ## [Deployment options](dev-itpro/choose-deployment.md)
 
 
