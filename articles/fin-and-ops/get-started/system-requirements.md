@@ -169,7 +169,7 @@ It would be in an organization's best interest to also take the following items 
 - SQL Server log flush size (This directly impacts SQL Server performance.)
 - Data read and write capabilities (This directly impacts SQL Server performance.)
 - Number of CPU(s) core, number of simultaneous threads per core, and speed per core (This impacts overall throughput of the system.)
-- Whether load balancing will be required or not
+- Whether load balancing will be required 
 
 ## Connector requirements
 ### Supported operating systems
