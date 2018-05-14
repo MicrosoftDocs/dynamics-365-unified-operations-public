@@ -53,7 +53,7 @@ On the **Products** FastTab, you can specify which products and/or product categ
 On the **Addresses** FastTab, you can specify which countries or regions, or states, the delivery mode can and can't be used for. For example, orders that are shipped to Hawaii or Alaska aren't eligible for ground delivery. Therefore, these states should be excluded from any delivery mode that is associated with a ground delivery service but included in any delivery mode that is associated with an air delivery service.
 
 ## Validate delivery modes for a call center order
-After the delivery modes are defined, you must run the **Process delivery modes** batch job. This job makes the delivery modes available so that they can be used in sales order processes for Retail channels. To run the **Process delivery modes** job, go to **Retail \> Retail IT \> Process delivery modes**. This job should be run any time that delivery modes are added or changed in relation to Retail channels.
+After the delivery modes are defined, you must run the **Process delivery modes** batch job. This job makes the delivery modes available so that they can be used in sales order processes for Retail channels. To run the **Process delivery modes** job, go to **Retail \> Retail IT \> Process delivery modes**. This job should be run any time that new delivery modes are added to a retail channel or changes are made to existing delivery mode/channel relationships.
 
 After you run the **Process delivery modes** batch job, you can go to **Retail \> Channels \> Call centers \> All call centers**. On the **All call centers** page, on the Action Pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. Note that the **Process delivery modes** job must be run whenever changes are made.
 
@@ -81,7 +81,7 @@ You can use a mixture of categories for charges, depending on your business requ
 ## Apply delivery modes during order entry in a call center
 When a new sales order is created, a value must be specified in the **Mode of delivery** field on the **Delivery** FastTab of the sales order header. This field might be filled in automatically, based on default values from the customer record.
 
-The delivery mode that is defined on the order header is automatically copied to the sales order lines as they are created. However, you can change the delivery mode setup for a specific line item on the **Delivery** tab in the **Line** details section of the **Sales order entry** page.
+The delivery mode that is defined on the order header is automatically copied to the sales order lines as they are created. However, you can change the delivery mode setup for a specific line item on the **Delivery** tab in the **Line details** section of the sales order entry page.
 
 If the selected delivery mode isn't valid for the product or the delivery address that is defined for the order or order line, you receive an error message. You must then select a delivery mode that has been defined to support that product or address configuration.
 
