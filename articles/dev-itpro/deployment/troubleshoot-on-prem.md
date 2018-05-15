@@ -5,7 +5,7 @@ title: Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premis
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -88,6 +88,9 @@ Note the state of the cluster, application, and nodes. For information about how
 This error isn't a root error. It indicates that the status of each node isn't ready. For AXSFType (AOS), the status might still be **InBuild**.
 
 Use Event Viewer on the machines related to the error message to view the latest activity.
+
+#### Error: "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
+If you receive this error, download latest version of [Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note in the error that the username and path will change according to your environment.
 
 #### AXSFType 
 For AXSFType (AOS), if a status of **InBuild** is shown for a period, review the DB Sync status and other events from Application Object Server (AOS) machines.
