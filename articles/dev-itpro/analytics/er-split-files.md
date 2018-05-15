@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split generated files based on file size and content quantity
-description: 
+description: This topic provides information about how you can split generated files based on the file size and content item quantity.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/03/2018
@@ -34,21 +34,18 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats to generate outgoing documents in xml format. Sometimes, these documents can be accepted only when they meet specific criteria such file size or limited numbers of certain xml nodes. You can design ER formats to generate electronic documents that can satisfy the requirements specified by the recipients of the documents. 
+You can design Electronic reporting (ER) formats to generate outgoing documents in XML format. Sometimes, those documents can be accepted only when they meet specific criteria, such a maximum file size or a maximum number of some XML nodes. You can design ER formats to generate electronic documents that satisfy the requirements that the recipients of those documents specify.
 
-  -	File size limit can be defined for the FILE format element as an ER expression. When an ER report is generated and the limit is exceeded, ER will finish creating the current file and then continue making the next one.
-  -	A limit to the quantity of elements can be defined for any XML ELEMENT format as an ER expression. When the number of xml nodes in the generated file exceeds the defined limit during an ER report execution, ER will finish creating the current file and then continue making the next one.
-  -	A limit on the quantity of elements can be defined for any XML SEQUENCE format element as an ER expression. When the number of nested xml nodes of this format element in the generated file exceeds the defined limit during an ER report execution, ER will finish creating the current file and the continue making the next one.
-  -	Any XML ELEMENT format element can be marked as non-breakable to keep the nested items of xml nodes generated under the format element in a single generated file.
+- For the FILE format element, you can define a limit on the file size as an ER expression. If the defined limit is exceeded when an ER report is generated, ER finishes creating the current file and then moves on to create the next file.
+- For any XML ELEMENT format, you can define a limit on the number of elements as an ER expression. If the number of XML nodes in the file that is generated exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.
+- For any XML SEQUENCE format element, you can define a limit on the number of elements as an ER expression. If the number of nested XML nodes of the format element in the generated file exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.
+- You can mark any XML ELEMENT format element as non-breakable. In this way, you can keep the nested items of XML nodes that are generated under the format element in a single generated file.
 
-In addition to the XML ELEMENT and XML SEQUENCE format element, you can add xml nodes to the generated file by using the RAW XML format element. When you do this, the nodes will not be considered when the number of nodes is calculated to evaluate the xml items quantity limits. 
+In addition to using the XML ELEMENT and XML SEQUENCE format elements to add XML nodes to the generated file, you can use the RAW XML format element. However, nodes that you add by using the RAW XML format element aren't considered when the number of nodes is calculated to evaluate the limits on the number of elements.
 
-If you configured some GER files destinations for a FILE format element that has been configured to split the generated output whenever some limits are exceeded, each piece of generated output will be sent as an individual file to the configured files destinations. To uniquely name the files that have been created by splitting the output, the ER expression for the ER format FILE component must be configured. The ER data source of the NUMBER SEQUENCE type can be included and the number sequence will be incremented for each piece of the splitting output.
+If you configured ER file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destinations as an individual file. To uniquely name the files that are created by splitting the output, you must configure an ER expression for the ER format FILE component. If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.
 
-To learn more about this feature, play the task guide, **ER Xml file splitting based on limits of file size and items quantity** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process), which walks through how an ER format can be configured to split generated files based on limits of file size and content item quantity.
-Download the following files to complete the task guide mentioned above.
+To learn more about this feature, play the **ER XML file splitting based on limits of file size and items quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity. To complete the task guide, you must download the following files:
 
-- [ER model configuration -	XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111) 
-- [ER format configuration -	XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111) 
-
-
+- [ER model configuration -	XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER format configuration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
