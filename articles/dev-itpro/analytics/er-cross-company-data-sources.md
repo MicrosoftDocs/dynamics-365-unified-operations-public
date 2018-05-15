@@ -5,7 +5,7 @@ title: Cross-company data sources in Electronic reporting
 description: This topic explains how you can use cross-company data sources in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats to generate outgoing documents in various formats. When a document is generated, data sources that were configured in a corresponding ER model that maps to access application data are called. To configure access to application tables for record retrieval, you can use an ER data source of the **Table records** type. When the accessing table is a shared table (that is, a table where data is saved without a company identifier), this data source returns all records. When the accessing table is a company-dependent table (that is, a table where data is saved per company), this data source returns only the records that have been saved for the current company (that is, the company context that the ER format is running under).
+You can design Electronic reporting (ER) formats to generate outgoing documents in various formats. When a document is generated, data sources that were configured in a corresponding ER model are called. This ER model maps to application data. To configure access to application tables for record retrieval, you can use an ER data source of the **Table records** type. When the accessing table is a shared table (that is, a table where data is saved without a company identifier), this data source returns all records. When the accessing table is a company-dependent table (that is, a table where data is saved per company), this data source returns only the records that have been saved for the current company (that is, the company context that the ER format is running under).
 
 Every data source of the **Table records** type in a model mapping can be now marked as a cross-company data source. Therefore, you can use data sources of the **Table records** type to access cross-company data in application tables. 
 
@@ -44,7 +44,7 @@ If you mark a data source as cross-company, the following behavior occurs:
 - For a data source that refers to the CompanyInfo table, even though CompanyInfo is a shared table, the data source returns the records that contain the identifier of a company from the defined scope.
 - For any company-dependent table, the data source returns the records of the referenced table that contain the identifier of a company from the defined scope.
 
-In the system query dialog form, when the **Ask for query** option is turned on for any data source that is marked as cross-company, you can manually select one or more companies to include on the **Company range** tab.
+In the system query dialog box, when the **Ask for query** option is turned on for any data source that is marked as cross-company, you can manually select one or more companies to include on the **Company range** tab.
 
 > [!IMPORTANT]
 > Like other filters, the company filter is persisted as a last-used value for queries when you run an ER format. The filter isn't automatically changed if you change the cross-company value for a data source. To use a different cross-company value for another data source, delete the corresponding user-specific selection.
@@ -52,7 +52,7 @@ In the system query dialog form, when the **Ask for query** option is turned on 
 For every data source that is marked as cross-company, you can select the records that you want by using the **FILTER** and **WHERE** functions in ER expressions. The **dataAreaID** field can also be used as a company identifier. Currently, the **dataAreaID** field is limited to the following types of conditions when the **FILTER** function is used: 
 
 - Only conditions that have a single **dataAreaID** field comparison are supported.
-- Only comparisons with expressions that don't depend on records list items are allowed.
+- Only comparisons that have expressions that don't depend on records list items are allowed.
 
 Therefore, the following expression is valid.
 
@@ -68,7 +68,7 @@ Therefore, the following expression is valid.
 
 By default, the scope includes all companies of the current application. However, it can be restricted. To restrict the scope of cross-company data access for a single ER format, assign a specific organization hierarchy to the format. When a hierarchy is defined for an ER format, only records for legal entities that are presented in the assigned hierarchy are returned, even though the format calls cross-company data sources. When a reference to a hierarchy that no longer exists is defined for an ER format, the default scope is applied, and the format calls cross-company data sources. In this situation, records for all application companies are returned. 
 
-The hierarchy can be assigned to a format for a specific form. To access the form, the **Maintain legal entity** filters for format privilege must be granted to a user. The scope restriction of hierarchy-based legal entities for the format is applied in addition to the restriction that the user can manually specify in the **System query dialog** form. The intersection of these restrictions is used when the format is run.
+The hierarchy can be assigned to a format for a specific page. To access the page, the **Maintain legal entity** filters for format privilege must be granted to a user. The scope restriction of hierarchy-based legal entities for the format is applied in addition to the restriction that the user can manually specify in the system query dialog box. The intersection of these restrictions is used when the format is run.
 
 To learn more about this feature, play the task guide, **ER - Access data tables in cross-company mode**, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. This task guide walks you through the process of configuring an ER model mapping and ER format to access application tables in cross-company mode.
 
