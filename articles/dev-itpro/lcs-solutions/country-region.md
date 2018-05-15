@@ -121,10 +121,7 @@ The following sections list resources by country/region.
 -   [Display debit and credit amounts for ledger accounts](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
 ### [The Czech Republic](../../financials/localizations/czech-republic.md)
-
-### Estonia
--   [VAT statement details for Estonia](../../financials/localizations/emea-est-vat-statement-details.md)
--   [Fixed assets disposal](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+### [Estonia](../../financials/localizations/estonia.md)
 
 ### Europe
 - [Advance holders](../../financials/localizations/emea-advance-holders.md)
