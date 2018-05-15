@@ -866,7 +866,7 @@
 ##### [Set up OIOUBL electronic invoicing](../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md)
 ##### [Set up payment slip format](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
-#### Estonia
+#### [Estonia](../financials/localizations/estonia.md)
 ##### [Personal information requests](../financials/localizations/emea-est-personal-info.md)
 ##### [VAT statement](../financials/localizations/emea-est-vat-statement-details.md)
 
