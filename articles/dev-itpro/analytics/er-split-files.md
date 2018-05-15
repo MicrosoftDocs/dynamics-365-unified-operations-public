@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split generated files based on file size and content quantity
-description: This topic provides information about how you can split generated files based on the file size and content item quantity.
+description: This topic provides information about how to split generated files based on the file size and content item quantity.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/03/2018
@@ -43,7 +43,7 @@ You can design Electronic reporting (ER) formats to generate outgoing documents 
 
 In addition to using the XML ELEMENT and XML SEQUENCE format elements to add XML nodes to the generated file, you can use the RAW XML format element. However, nodes that you add by using the RAW XML format element aren't considered when the number of nodes is calculated to evaluate the limits on the number of elements.
 
-If you configured ER file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destinations as an individual file. To uniquely name the files that are created by splitting the output, you must configure an ER expression for the ER format FILE component. If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.
+If you configured file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destination as an individual file. To uniquely name the files that are created by splitting the output, you must configure an ER expression for the ER format FILE component. If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.
 
 To learn more about this feature, play the **ER XML file splitting based on limits of file size and items quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity. To complete the task guide, you must download the following files:
 
