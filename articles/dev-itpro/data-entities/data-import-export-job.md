@@ -102,6 +102,9 @@ The **Resequencing** menu is available when multiple entities are selected. You 
 #### Sorting
 Use can use the **Sort by** option to view the entity list in sequential order.
 
+### Truncating
+For import projects, one can choose to truncate records in the entitie(s) prior to import. This is useful if records must be always imported in a clean set of tables making up the entity. This is off by default.
+
 ## Validate that the source data and target data are mapped correctly
 Mapping is a function that applies to both import and export jobs.
 
