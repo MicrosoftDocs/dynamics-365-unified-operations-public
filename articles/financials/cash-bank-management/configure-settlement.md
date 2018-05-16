@@ -5,7 +5,7 @@ title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,10 +14,9 @@ ms.technology:
 # optional metadata
 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14601
@@ -62,6 +61,16 @@ The following parameters affect how settlements are processed in Microsoft Dynam
 - **Prioritize settlement (AR only)** – Set this option to **Yes** to enable the **Mark by priority** button on the **Enter customer payments** and **Settle transactions** pages. This button lets users assign the predetermined settlement order to transactions.  After the settlement order has been applied to a transaction, the order and the payment allocation can be modified before posting.
 - **Use priority for automatic settlements** – Set this option to **Yes** to use the defined priority order when transactions are automatically settled. This field is available only if the **Prioritize settlement** and **Automatic settlement** options are set to **Yes**.
 
+## Fixed dimensions on accounts receivable/accounts payable main accounts
+
+When fixed dimensions are used on the accounts receivable/accounts payable main account, additional accounting entries and two additional vendor transactions will be posted by the settlement process. Settlement compares the accounts receivable/accounts payable ledger account from the invoice and payment.  When the payment and settlement are completed together, which is the typical scenario, the payment’s accounting entry isn’t posted to General ledger until after the settlement process is also complete. Due to the order of processing events, settlement is unable to determine the actual accounts receivable/accounts payable ledger account from the payment’s accounting entry. Settlement reconstructs what the ledger account will be for the payment. This becomes an issue when a fixed dimension is used for the accounts receivable/accounts payable main account.
+
+To reconstruct the ledger account, the accounts receivable/accounts payable main account is retrieved from the posting profile and the financial dimensions are retrieved from the vendor transaction record for the payment, as defined on the payment journal. Fixed dimensions are not defaulted onto payment journals, but instead are applied to the main account as the last step of the posting process. As a result, the fixed dimension value is likely not contained on the vendor transaction, unless it defaulted from another source, such as the vendor. The reconstructed account will not include the fixed dimension. Settlement processing will determine that an adjusting entry must be created, because the invoice posted with the fixed dimension value and the reconstructed payment account did not.  As settlement continues with posting the adjusting entry, the last step in posting is for the fixed dimension to be applied. By adding the fixed dimension to the adjusting entry, it is posted with a debit and credit to the same ledger account. Settlement cannot roll back the accounting entry.
+
+To avoid the additional accounting entries, the debit and credit to the same ledger account, the following workarounds should be considered, depending on your business requirements. 
+
+1.	Organizations often use fixed dimensions to zero-fill a financial dimension that isn't required. This is commonly the case for balance sheet accounts, such as accounts receivable/accounts payable. Account structures can be used to not track financial dimensions that are typically zero-filled.  You can remove the financial dimension for the Balance sheet accounts, eliminating the need to use fixed dimensions.
+2.	If your organization requires fixed dimensions on the accounts receivable/accounts payable main account, find a way to default the fixed dimension onto the payment, so that the fixed dimension value is stored  on the vendor transaction for the payment. This will allow the system to reconstruct the accounts receivable/accounts payable main account to include the fixed dimension values. The fixed dimension value can be defined as a default on either Vendors or the Journal name for the payment journal.
 
 
 
