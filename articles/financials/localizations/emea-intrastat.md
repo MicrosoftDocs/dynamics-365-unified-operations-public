@@ -227,6 +227,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </ul></li>
 <li><strong>Electronic reporting</strong> – Specify references to electronic reporting configurations, so that you can generate an electronic file and report.</li>
 <li><strong>Commodity code hierarchy</strong> – Specify the category hierarchy of the <strong>Commodity code</strong> type that represents Intrastat commodity code CN8.</li>
+  <li> <strong>Exchange rate type</strong> – Optionally specify an exchange rate to be used to report in Intrastat sales and purchase transactions in foreign currencies, if it should be different from the one applied when posting the transaction.</li>  
 </ul></td>
 </tr>
 <tr class="even">
