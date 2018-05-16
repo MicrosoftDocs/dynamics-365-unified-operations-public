@@ -34,9 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to manually create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
-
-The Retail deployable package is a bundle package, which includes all the of the following retail components:
+This topic explains how to package customizations for the following artifacts.
 
 -   Commerce runtime (CRT)
 -   Retail Server
@@ -44,11 +42,19 @@ The Retail deployable package is a bundle package, which includes all the of the
 -   Cloud POS
 -   Hardware station
 -   Channel database scripts
+-   AOS payment connector
+
+Customizations for the above artifacts are packaged as a single retail deployable package.
+
+Note: If your customizations were built and packaged using Retail SDK prior to application version 7.1.1541.3036 as individual retail component packages, these are no longer supported for deployment in LCS. You must uptake the following update and re-build and re-package your customizations for retail components.
+
+-   [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
 
 For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
 
 ## Retail deployable package
-Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
+Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization.
+
 
 ### Steps to create a Retail deployable package
 
