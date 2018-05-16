@@ -612,7 +612,7 @@
 ##### [Add report boxes and generate the BAS](../financials/localizations/tasks/add-bas-report-boxes.md)
 ##### [Low-value pool depreciation](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 ##### [Set up reason codes for the BAS](../financials/localizations/tasks/set-up-reason-codes-australia-bas.md)
-#### China
+#### [China](../financials/localizations/china.md)
 ##### [Bill of materials comparison](../financials/localizations/apac-chn-bom-comparison.md)
 ##### [Chinese hierarchy of chart of accounts](../financials/localizations/tasks/china-hierarchy-chart-accounts.md)
 ##### [Chinese voucher continuity check](../financials/localizations/tasks/chinese-voucher-continuity-check.md)
