@@ -20,7 +20,7 @@ ms.reviewer: shylaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
-ms.search.region: China
+ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
