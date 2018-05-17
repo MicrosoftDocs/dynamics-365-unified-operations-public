@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
-# ROBOTS: 
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
