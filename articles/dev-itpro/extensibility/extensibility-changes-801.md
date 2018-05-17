@@ -40,6 +40,7 @@ This is a list of extensibility features that were implemented in Dynamics 365 f
 ## Refactored methods to support extensibility
 
 These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
+
 | Method|
 | --------------- |
 |Class ProjControlPeriod::PeriodInsert|
