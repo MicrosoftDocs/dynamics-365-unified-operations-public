@@ -92,14 +92,10 @@ These methods have been refactored to support extensibility through chain of com
 
 In addition to the refactored methods, the following extensibility enhancements have been made.
 
-| Change|
-| --------------- |
-|Support variable number of decimals - InventTestLowerLimit|
-|Support variable number of decimals - InventTestLowerLimit|
-|Support variable number of decimals -  InventTestLowerTolerance|
-|Support variable number of decimals -  InventTestStandardValue|
-|Support variable number of decimals -  InventTestUpperLimit|
-|Support variable number of decimals - InventTestUpperTolerance|
-|Support to skip prompt on transaction reversal|
-|Enable extension of PSAProjQuotationApproval workflow|
-
+- Support variable number of decimals - InventTestLowerLimit
+Support variable number of decimals -  InventTestLowerTolerance
+Support variable number of decimals -  InventTestStandardValue 
+Support variable number of decimals -  InventTestUpperLimit
+Support variable number of decimals - InventTestUpperTolerance
+Support to skip prompt on transaction reversal
+Enable extension of PSAProjQuotationApproval workflow
