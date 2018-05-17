@@ -43,7 +43,7 @@ On the **Accounts for automatic transactions** page, you can specify the gener
 -   Transfer of closing and opening transactions – This account will be used for transferring ending balances of balance sheet accounts.
 
 ## Opening transactions setup
-Before you can post opening transactions to a different account for each of the accounts that you set up earlier, you must specify another general ledger account in the **Opening account** field on the main account.
+Before you can post opening transactions to a different account for each of main accounts, you must specify the ledger account in the **Opening account** field on the main account.
 
 ## Additional resources
 [Year-end close](../general-ledger/year-end-close.md)
