@@ -57,21 +57,26 @@ Task Recorder is pre-installed and users are able to begin recording business pr
 The following steps show the process for creating a new recording using Task Recorder.
 
 1.  Open the client and log in. It's a good practice to refresh the browser before each new recording. This creates a new user session and restarts Task Recorder, providing the most stable recording experience.
-2.  Select the company that you want to use while recording. **Note**: If this is your first time using Task Recorder, you can follow along as this tutorial creates a sample recording based on a Fleet Management business process. You will need to load the Fleet demo data to follow along:
+2.  Select the company that you want to use while recording. If this is your first time using Task Recorder, you can follow along as this tutorial creates a sample recording based on a Fleet Management business process. You will need to load the Fleet demo data to follow along:
     1.  Go to **Dashboard &gt; Fleet Management &gt; Fleet setup**.
     2.  Click **Load demo data**.
     3.  When the data is finished loading, click **Close**.
     4.  Go back to the **Dashboard** by clicking the product name in the navigation bar.
 
 3.  Go to **Settings &gt; Task recorder**.
-**![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)**
+    ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
+    
 4.  The **Task Recorder Pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task Recorder Pane** before beginning a new recording. The pane can be reopened by following the previous steps.
-[![This image shows the Task recorder main menu.](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
+    [![This image shows the Task recorder main menu.](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
+    
 5.  Click **Create a new recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
-[![This image shows the new Task recording menu which allows you to specify a name for your recording.](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
-**Note**: During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
-[![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+    [![This image shows the new Task recording menu which allows you to specify a name for your recording.](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
+    
+    During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
+    
+    [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+
 7.  The **Task Recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
 [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
 
@@ -127,7 +132,8 @@ Congratulations! You have created your first Task recording. You can proceed to 
 
 **Delete/Restore Step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore Step** button.
 
-**Note**: The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
+> [!NOTE]
+> The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
 
 [![TaskRecorderGuide-TaskRecorderRecordingControlsDelete](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
 
@@ -145,12 +151,14 @@ The **Step Instruction** is the primary text that is displayed for this step in 
 
 [![This image shows the annotation options for changing the Step instruction](./media/taskrecorderguide-annotationlabels.png)](./media/taskrecorderguide-annotationlabels.png) 
 
-This image shows the annotation options for changing the step instruction.
-- ***Preferred value instruction*** This type of instruction will direct the user to enter the same data that was used when the step was recorded. *Example*: In the First name field, enter 'John'.
-- ***Example value label*** This type of instruction will direct the user to enter their own data, indicating that the data that was used when the step was recorded was only *Example* data.
-  -   *Example*: In the First name field, enter a value.
+This image shows the annotation options for changing a step.
+- **Preferred value instruction*** This type of instruction will direct the user to enter the same data that was used when the step was recorded. *Example*: In the First name field, enter 'John'.
+- **Example value label** This type of instruction will direct the user to enter their own data, indicating that the data that was used when the step was recorded was only *Example* data. *Example*: In the First name field, enter a value.
 
-  If the user clicks the "See more" button when on this step of the Task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. **Note**: Steps which are not related to fields, such as clicking buttons, opening forms, or selecting records from a lookup, do not have *Example value label* as an option when annotating.
+  If the user clicks the **See more** button when on this step of the Task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. 
+   > [!NOTE]
+   > Steps that are not related to fields, such as clicking buttons, opening forms, or selecting records from a lookup, do not have *Example value label* as an option when annotating.
+   
 - ***User-supplied value label*** This step instruction contains placeholder text, which the author can fill in with their own text. For steps which have an ***Example value label*** option, the placeholder allows substituting the text which normally specifies the data to enter. This is useful for scenarios where neither the ***Preferred value label*** nor the ***Example value label*** sufficiently express the data that should be used for this step.
   -   *Example label*: In the First name field, *{your example text}*.
   -   *Example label after supplying the placeholder text*: In the First name field, *enter the customer's name*.
