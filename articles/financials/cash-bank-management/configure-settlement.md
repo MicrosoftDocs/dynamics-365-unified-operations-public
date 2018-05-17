@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure settlement
-description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
+description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This topic describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
+How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This topic describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
 The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Finance and Operations. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
@@ -46,7 +46,7 @@ The following parameters affect how settlements are processed in Microsoft Dynam
   -   If the overpayment or underpayment produces a difference that is less than the difference that is defined in the **Maximum penny difference** field, the penny difference amount is posted to the penny difference account.
   -   If the overpayment or underpayment produces a difference that is more than the difference that is defined in the **Maximum penny difference** field, the difference amount is posted to the difference account that is selected for the **Customer cash discount** or **Vendor cash discount** posting type on the **Accounts for automatic transactions** page.
 - **Calculate cash discounts for partial payments** – Set this option to **Yes** to enable cash discounts to be automatically calculated for partial payments.
-  -   This effect of this option depends on the value of the **Use cash discount** field on the **Settle transactions** page. If this option is set to **Yes**, the discount is taken when the **Use cash discount** field is set to **Normal**. When the **Use cash discount** field is set to **Always**, the cash discount is always taken, regardless of the setting of this field. When the **Use cash discount** field is set to **Never**, the cash discount is never taken, regardless of the setting of this field.
+  -   The effect of this option depends on the value of the **Use cash discount** field on the **Settle transactions** page. If this option is set to **Yes**, the discount is taken when the **Use cash discount** field is set to **Normal**. When the **Use cash discount** field is set to **Always**, the cash discount is always taken, regardless of the setting of this field. When the **Use cash discount** field is set to **Never**, the cash discount is never taken, regardless of the setting of this field.
   -   If this option is set to **Yes**, and a user changes the value in the **Amount to settle** field on the **Settle transactions** page, the discount is automatically calculated and displayed as the default entry in the **Cash discount amount to take** field.
   -   If this option is set to **No**, and a user changes the value in the **Amount to settle** field on the **Settle transactions** page, the default entry in the **Cash discount amount to take** field is **0** (zero).
 - **Calculate cash discounts for credit notes** – Set this option to **Yes** to automatically calculate a cash discount for credit notes. In Accounts receivable, a credit note transaction is a negative transaction that has a value in the **Invoice** field on the **Free text invoice** page, or a return on the **Sales order** page.
@@ -69,8 +69,5 @@ To reconstruct the ledger account, the accounts receivable/accounts payable main
 
 To avoid the additional accounting entries, the debit and credit to the same ledger account, the following workarounds should be considered, depending on your business requirements. 
 
-1.	Organizations often use fixed dimensions to zero-fill a financial dimension that isn't required. This is commonly the case for balance sheet accounts, such as accounts receivable/accounts payable. Account structures can be used to not track financial dimensions that are typically zero-filled.  You can remove the financial dimension for the Balance sheet accounts, eliminating the need to use fixed dimensions.
-2.	If your organization requires fixed dimensions on the accounts receivable/accounts payable main account, find a way to default the fixed dimension onto the payment, so that the fixed dimension value is stored  on the vendor transaction for the payment. This will allow the system to reconstruct the accounts receivable/accounts payable main account to include the fixed dimension values. The fixed dimension value can be defined as a default on either Vendors or the Journal name for the payment journal.
-
-
-
+-   Organizations often use fixed dimensions to zero-fill a financial dimension that isn't required. This is commonly the case for balance sheet accounts, such as accounts receivable/accounts payable. Account structures can be used to not track financial dimensions that are typically zero-filled.  You can remove the financial dimension for the Balance sheet accounts, eliminating the need to use fixed dimensions.
+-   If your organization requires fixed dimensions on the accounts receivable/accounts payable main account, find a way to default the fixed dimension onto the payment, so that the fixed dimension value is stored  on the vendor transaction for the payment. This will allow the system to reconstruct the accounts receivable/accounts payable main account to include the fixed dimension values. The fixed dimension value can be defined as a default on either vendors or the journal name for the payment journal.
