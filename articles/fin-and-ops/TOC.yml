@@ -3951,8 +3951,8 @@
       - name: Set up a work template for purchase orders
         href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
 - name: Development & administration for Finance and Operations
-  href: ../dev-itpro/toc.md
+  href: ../dev-itpro/index.md
 - name: Dynamics 365 for Retail
-  href: ../retail/toc.md
+  href: ../retail/index.md
 - name: Dynamics 365 for Talent
-  href: ../talent/toc.md
+  href: ../talent/index.md
