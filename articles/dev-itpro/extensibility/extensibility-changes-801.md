@@ -92,6 +92,8 @@ These methods have been refactored to support extensibility through chain of com
 
 In addition to the refactored methods, the following extensibility enhancements have been made.
 
+| Change|
+| --------------- |
 |Support variable number of decimals - InventTestLowerLimit|
 |Support variable number of decimals - InventTestLowerLimit|
 |Support variable number of decimals -  InventTestLowerTolerance|
