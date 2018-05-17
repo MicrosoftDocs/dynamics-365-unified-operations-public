@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounting distributions
-description: This article provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
+description: This topic provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
 author: abruer
 manager: AnnBe
 ms.date: 05/16/2018
@@ -42,13 +42,11 @@ The cross rate is not used to calculate the payment transaction currency transla
 For example, the accounting currency is USD, the invoice currency is CAD, and the payment currency is EUR. The cross rate lets you enter an exchange rate to translate directly between CAD and EUR, and not have to translate through USD. 
 When you select an invoice and a primary payment, you can enter a cross rate for the invoice line. The cross rate is the exchange rate between the currencies for those transactions, as of the settlement date.
 
-1.	Navigate to one of the following pages:
-- **Accounts receivable > Common > Customers > All customers**. 
-- **Accounts payable > Common > Vendors > All vendors**. 
-- **Procurement and sourcing > Common > Vendors > All vendors**. 
+1.	Go to one of the following pages:
+- **Accounts receivable > Common > Customers > All customers** 
+- **Accounts payable > Common > Vendors > All vendors** 
+- **Procurement and sourcing > Common > Vendors > All vendors**
 2.	Select the customer or vendor whose open transactions you are settling. 
-3.	For a customer, on the **All customers** list page, click **Collect > Settle open transactions**. For a vendor, on the **All vendors** list page, click Invoice > Settle open transactions. 
+3.	For a customer, on the **All customers** list page, go to **Collect > Settle open transactions**. For a vendor, on the **All vendors** list page, go to **Invoice > Settle open transactions**. 
 4.	Select the transaction that is the primary payment, and then click **Mark payment**. The check box in the **Mark** column is selected, and an information icon is shown in the **Primary payment** column. 
 5.	In the **Cross rate** field, enter the exchange rate between the invoice currency and the payment currency, as of the settlement date. 
-
-
