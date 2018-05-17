@@ -50,6 +50,7 @@ This page provides links to relevant documentation related to the setup, configu
 
 ## Configure order processing
 [Set up fraud alerts](set-up-fraud-alerts.md)
+
 [Manual Order Holds](work-with-order-holds.md)
 
 ## Configure payment processing

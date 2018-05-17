@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compute columns and virtual fields in a data entity
-description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
+description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. 
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -36,8 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 
-Overview
---------
+## Overview
 
 A data entity can have additional *unmapped* fields beyond those that are directly mapped to fields of the data sources. There are mechanisms for generating values for unmapped fields:
 
@@ -113,12 +112,22 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 
 1. In Microsoft Visual Studio, right-click your project, and add the existing **FMCustomerEntity**.
 2. In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.
-3. In the designer for **FMCustomerEntity**, right-click the **FMCustomerEntity** node, and then click **New** &gt; **String Unmapped Field**. [![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
-4. Rename the new field **NameAndAddress**.
-5. Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot. [![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
-6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
-7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value. **Note:** The **server** keyword is necessary.
+3. In the designer for **FMCustomerEntity**, right-click the **FMCustomerEntity** node, and then click **New** &gt; **String Unmapped Field**. 
 
+      [![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+      
+4. Rename the new field **NameAndAddress**.
+5. Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot.
+
+      [![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+      
+6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
+7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value. 
+
+   > [!NOTE]
+   > The **server** keyword is required.
+
+```
        private static server str formatNameAndAddress()   // X++
        {
            DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
@@ -151,21 +160,27 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
        )
            AS
        NAMEANDADDRESS
+```
 
-   **Tip:** If you receive error in data entity synchronization because of computed columns, it's easier to come up with the SQL definition in Microsoft SQL Server Management Studio (SSMS) before using it in X++.
+ > [!TIP]
+ > If you receive error in data entity synchronization because of computed columns, it's easier to come up with the SQL definition in Microsoft SQL Server Management Studio (SSMS) before using it in X++.
 
 8. Rebuild the project.
-9. Synchronize the database. Don't forget this step. You can do this by going to <strong>Dynamics 365 **&gt; **Synchronize database</strong> &gt; <strong>Synchronize</strong>.
+9. Synchronize the database. Don't forget this step. You can do this by going to **Dynamics 365 &gt; Synchronize database &gt; Synchronize**.
 
 ## Example: Create a virtual field
 In this example, you add a virtual field to the **FMCustomerEntity** entity. This field displays the full name as a combination of the last name and first name. X++ code generates the combined value.
 
-1.  In the designer for the **FMCustomerEntity** entity, right-click the **Fields** node, and then click **New** &gt; **String Unmapped Field**.
+1.  In the designer for the **FMCustomerEntity** entity, right-click the **Fields** node, and then click **New &gt; String Unmapped Field**.
 2.  In the properties pane for the unmapped field, set the **Name** property to **FullName**.
-3.  Set the **Is Computed Field** property to **No**. Notice that you leave the **DataEntityView Method** empty. [![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
-4.  In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override** &gt; **postLoad**. Your X++ code in this method will generate the values for the virtual field.
+3.  Set the **Is Computed Field** property to **No**. Notice that you leave the **DataEntityView Method** empty. 
+
+       [![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+
+4.  In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**. Your X++ code in this method will generate the values for the virtual field.
 5.  Paste the following X++ code in for the **postLoad** override. Notice that the **postLoad** method returns **void**.
 
+```
         public void postLoad()
         {
             super();
@@ -173,15 +188,16 @@ In this example, you add a virtual field to the **FMCustomerEntity** entity. Thi
             //Format full name - "Doe, John"
             this.FullName = this.LastName + ", " + this.FirstName;
         }
-
+```
 6.  Compile your project.
 
 ## Example: Use a virtual field to receive and parse an inbound field
-Imagine that an external system sends the name of a person as a compound value that combines the last and first names in one field that comes into our system. However, our system stores the last and first names separately. For this scenario, you can use the **FullName** virtual field that you created. In this example, the major addition is an override of the **mapEntityToDataSource** method.
+Imagine that an external system sends the name of a person as a compound value that combines the last and first names in one field that comes into our system. However, our system stores the last and first names separately. For this scenario, you can use the **FullName** virtual field that you created. In this example, the major addition is an override of the **mapEntityToDataSource** method. When **update** is called, **mapEntityToDataSource** methods are invoked for each data source.
 
-1.  In the designer for the **FMCustomerEntity**, right-click the **Methods** node, and then click **Override** &gt; **mapEntityToDataSource**.
+1.  In the designer for the **FMCustomerEntity**, right-click the **Methods** node, and then click **Override &gt; mapEntityToDataSource**.
 2.  Paste the following X++ code in for the **mapEntityToDataSource** method.
 
+```
         public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
         {
             super(entityCtx, dataSourceCtx);
@@ -196,8 +212,7 @@ Imagine that an external system sends the name of a person as a compound value t
                 dsCustomer.FirstName = substr(this.FullName, commaPosition+1, strlen(this.FullName));
             }
         }
-
-    **Note:** When **update** is called, **mapEntityToDataSource** methods are invoked for each data source.
+```
 
 ## Test the computed and virtual fields
 The following **main** method tests your computed and virtual fields. Both fields are tested in a read action, and the virtual field is tested in an update action.
@@ -205,6 +220,7 @@ The following **main** method tests your computed and virtual fields. Both field
 1.  For this example, ensure that you have the data set named **Fleet Management (migrated)**. The data set is available from the dashboard in the browser. Click the menu icon in the upper-right corner, click the **APP LINKS** menu, and then scroll to find the data set named **Fleet Management (migrated)**.
 2.  Paste the following X++ code into the startup object of your project. Run your project.
 
+```
         public static void main(Args _args)   // X++
         {
             FMCustomerEntity customer;
@@ -228,7 +244,4 @@ The following **main** method tests your computed and virtual fields. Both field
             ttsabort;
         }
 
-
-
-
-
+```
