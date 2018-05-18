@@ -67,7 +67,7 @@ If a payment connector update is issued by the payment connector provider, the u
 
         
 Related topics: 
-- [Payment integration with a payment terminal](end-to-end-payment-extension.mdx)
+- [Payment integration with a payment terminal](end-to-end-payment-extension.md)
 - [Deploying a Payment Connector](deploy-payment-connector.md)
 - [Create a Windows Installer for Payment Connector](create-windows-installer-payment-connector.md)
 - [Verifone Payment Connector](https://dynamics.verifone.com/repo/)
