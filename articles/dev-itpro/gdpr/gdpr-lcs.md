@@ -34,17 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview 
-This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md). Additional guidance, along with links to published content that might help you respond to a request for data, is available in [Comply with a GDPR request for data](./gdpr/comply-with-gdpr-data-request.md).
+This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
 
 ## User management 
 
-The tenant administrator can view and manage users on the **Organization users** tile on the home page. 
+A tenant administrator can view and manage users on the **Organization users** tile on the home page in LCS. 
  
-The administrator can view and manage all organization users on the **Organization user** page, 
+An administrator can view and manage all organization users on the **Organization user** page in LCS.
 
 To export a user, the administrator can use filtering to find a specific user, select that user, and copy the name and email address of the user. 
 
 ## Additional resources
 - [Official GDPR site](https://www.eugdpr.org/)
-- [Supporting Your EU GDPR Compliance Journey](https://microsoft-my.sharepoint.com/:w:/p/wihait/Efk7lP8aRo1OkUpIXDru3_ABBIeyU6hfaVxInoWwtItaPA?e=qkXSDd)
 - [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)
