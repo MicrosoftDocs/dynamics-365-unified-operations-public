@@ -5,7 +5,7 @@ title: Year-end close for Czech Republic and Hungary
 description: This topic provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
