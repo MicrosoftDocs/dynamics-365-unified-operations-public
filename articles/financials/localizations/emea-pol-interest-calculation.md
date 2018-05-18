@@ -101,8 +101,8 @@ In Poland, the tax interest rates are determined by the Ministry of Finance. The
 
     - **Account** – Use the posting profile from the relevant customer account for each interest note.
     - **Select** – Use the posting profile that is specified in the **Posting profile** field.
-
-10. In the **Posting profile** field, select the customer posting profile for the interest calculation.
-11. Select the **Tax interest** check box to calculate the free-hand interest and tax interest.
+    
+10. If you selected **Select** in the **Use posting profile from** field, in the **Posting profile** field, select the posting profile for the calculation.
+11. Set the **Tax interest** option to **Yes** to calculate the free-hand interest and tax interest.
 12. On the **Records to include** FastTab, select **Filter** to find and select records for the interest calculation.
 13. Select **OK**.
