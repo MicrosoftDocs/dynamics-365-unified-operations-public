@@ -2,7 +2,7 @@
 # required metadata
 
 title: GDPR data requests for Lifecycle Services
-description: 
+description: This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). 
 author: tfehr
 manager: AnnBe
 ms.date: 05/18/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview 
-This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Microsoft Dynamics 365 for Finance and Operations GDPR guide]. Additional guidance, along with links to published content that might help you respond to a request for data, is available in Comply with a GDPR request for data.
+This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md). Additional guidance, along with links to published content that might help you respond to a request for data, is available in [Comply with a GDPR request for data](./gdpr/comply-with-gdpr-data-request.md).
 
 ## User management 
 
@@ -42,7 +42,7 @@ The tenant administrator can view and manage users on the **Organization users" 
 
 ![LCS Organization users tile](../media/gdpr-lcs-01.jpg)
  
-On the **Organization user** page, an administrator can view and manage all organization users. 
+On the **Organization user** page, the administrator can view and manage all organization users. 
 
 ![LCS Organization user page](../media/gdpr-lcs-02.jpg)
 
