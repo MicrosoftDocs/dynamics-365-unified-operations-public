@@ -59,7 +59,7 @@ Compliance Manager is a cross–Microsoft Cloud services solution designed to he
 You can try Compliance Manager yourself by visiting [https://aka.ms/compliancemanager](https://aka.ms/compliancemanager).
 
 ### Resources
-There are a number of resources to help you learn more about Compliance Manager and what it can do you help you meet complex compliance obligations:
+There are a number of resources to help you learn more about Compliance Manager and what it can do you help you meet complex compliance obligations.
 
 > [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/en-us/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office, November 2017)
 > 
