@@ -39,14 +39,10 @@ This topic offers information for complying with requests for data under the Gen
 ## User management 
 
 The tenant administrator can view and manage users on the **Organization users** tile on the home page. 
-
-![LCS Organization users tile](../media/gdpr-lcs-01.png)
  
-On the **Organization user** page, the administrator can view and manage all organization users. 
+The administrator can view and manage all organization users on the **Organization user** page, 
 
-![LCS Organization user page](../media/gdpr-lcs-02.png)
-
-To export a user, the administrator can use filtering to find a specific user, select that user, and copy the name and the email of the user. 
+To export a user, the administrator can use filtering to find a specific user, select that user, and copy the name and email address of the user. 
 
 ## Additional resources
 - [Official GDPR site](https://www.eugdpr.org/)
