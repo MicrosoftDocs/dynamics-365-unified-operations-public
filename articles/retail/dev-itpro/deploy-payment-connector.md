@@ -61,7 +61,10 @@ Before you start, you must have these items:
 ## Deployable packages (automated deployment)
 A deployable package is an asset that can be consumed by the LCS deployment service. When you package a payment connector as a deployable package, you can install the payment connector as a customization to an existing solution or slipstream it as part of a new deployment. The following types of packages can contain payment connectors:
 
--   **AOSPaymentPackage** – This type of package deploys one or more payment connectors to AOS.
+-   **AOSPaymentPackage[Deprecated]** – This type of package deploys one or more payment connectors to AOS. This package has been deprecated and no longer supported for deployment. You must uptake the following update and re-build and re-package your customization. 
+ 
++-   [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
+
 -   **RetailDeployablePackage** – This type of package deploys one or more payment connectors to the following components:
 .    -   Retail Server
     -   Cloud POS
