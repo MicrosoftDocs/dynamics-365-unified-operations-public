@@ -38,7 +38,7 @@ This topic offers information for complying with requests for data under the Gen
 
 ## User management 
 
-The tenant administrator can view and manage users on the **Organization users" tile on the home page. 
+The tenant administrator can view and manage users on the **Organization users** tile on the home page. 
 
 ![LCS Organization users tile](../media/gdpr-lcs-01.jpg)
  
