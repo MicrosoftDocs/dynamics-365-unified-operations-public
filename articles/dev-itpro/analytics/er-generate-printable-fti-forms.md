@@ -34,30 +34,29 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-In addition to the existing capability of generation of printable free text invoice (FTI) forms by using SSRS, you can now use for this purpose the ER framework. It gives you the possibility to manage FTI printable forms in Microsoft Office formats (Excel, Word) and modify them (layout, data flow, formatting, etc.) without application code changes to satisfy specific requirements. If you want to start with overview of  existing FTI configurations, you can go directly to section Download sample ER configurations to generate FTI printable forms.
+You can use the Electronic reporting (ER) framework to generate printable free text invoice (FTI) forms by using SSRS. You can also manage FTI printable forms in Microsoft Office Excel and Word, and modify the layout, data flow, and formatting without making code changes to satisfy specific requirements. 
 
-## Create your customized configurations for FTI printable forms
-You need to create a set of ER configurations as parts of your customized solution for FTI printable forms.
-
-### Configure ER data model
-You need to create to your application instance the ER data model configuration that contains a data model describing the customers invoicing business domain.
-Note. It is required that the included data model must be named as CustomersInvoicing. 
-Explore the related page for more details about the design of ER data models.
+## Create customized configurations for FTI printable forms
+As part of your customized solution for FTI printable forms, you must create a set of ER configurations. Then you can create your application instance in one of those configurations. The configuration must include a data model that describes the customer's invoicing business domain. The data model must be named **CustomersInvoicing**. 
 
 ### Configure ER model mapping
-You need to have in your application instance the ER model mapping for the CustomersInvoicing data model. It can be a model mapping that is enclosed either in the ER data model configuration or in the ER model mapping configuration.
-Note. It is required to name the root descriptor of this model mapping for FTI forms handling as FreeTextInvoice.
-Note. It is required that this model mapping contains the following data sources:
-1.	Data source of the Table records type
-a.	Named as CustInvoiceJour;
-b.	Refers to the CustInvoiceJour application table;
-c.	Using to pass at run-time from the application to the executing ER model mapping the list of invoices selected for printing.
-2.	Data source of the Object type
-a.	Named as PrintMgmtPrintSettingDetail;
-b.	Refers to the PrintMgmtPrintSettingDetail application class;
-c.	Using to pass at run-time from the application to the executing ER model mapping details of Print management settings for the executing ER format.
-The details of the application integration with the ER framework can be found in the source code of the application ERPrintMgmtReportFormatSubscriber class (ER Application Suite integration model).
-Explore the related page for more details about the design of ER model mappings.
+The ER model mapping for the **CustomersInvoicing** data model must be in your application. The model mapping can be in the ER data model configuration or in the ER model mapping configuration. As a requirement, the name of the root descriptor of this model mapping must be **FreeTextInvoice**.
+The mapping must contain the following data sources:
+
+- Data source type, **Table records**
+
+  - Named **CustInvoiceJour**
+  - Refers to the application table **CustInvoiceJour** 
+  - Used to pass the list of invoices at run-time that are selected for printing from the application to the executing ER model mapping
+
+- Data source type, **Object**
+
+  - Named **PrintMgmtPrintSettingDetail**
+  - Refers to the application class, **PrintMgmtPrintSettingDetail** 
+  - Used to pass mapping details at run-time of Print management settings for the executing ER format from the application to the executing ER model .
+
+The details of the application integration with the ER framework can be found in the source code of the application:
+- **ERPrintMgmtReportFormatSubscriber** class (ER Application Suite integration model).
 
 ### Configure ER format
 You need to have in your application instance the ER format configuration that will be used to generate FTI forms. 
