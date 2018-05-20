@@ -36,6 +36,9 @@ This topic describes the templates and underlying tasks that are used to synchro
 > [!NOTE]
 > Project actuals integration is available in Dynamics 365 for Finance and Operations version 8.01.
 
+> [!NOTE]
+> If you are entering sales tax amounts on time or expense transactions in Project Service Automation, you must install the Project Service Automation Update 7. If this update is not installed, the tax actuals will not be linked to the associated time or expense actuals and will not be synced to Finance and Operations. Contact Support for more information.
+
 
 ## Data flow for Project Service Automation to Finance and Operations
 
@@ -43,120 +46,91 @@ The Project Service Automation to Finance and Operations integration solution us
 
 The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.png)](./media/ProjectEstimatesFlow.png)
+[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectActualsFlow.jpg)](./media/ProjectActualsFlow.jpg)
 
 
 ## Templates and tasks
 
 To access the available templates, in the Microsoft PowerApps Admin Center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize project hour estimates from Project Service Automation to Finance and Operations:
+The following template and underlying tasks are used to synchronize project actuals from Project Service Automation to Finance and Operations:
 
--  **Name of the template in Data integration:** Project hour estimates (PSA to Fin and Ops)
+-  **Name of the template in Data integration:** Project actuals (PSA to Fin and Ops)
 
 -  **Name of the tasks in the project:** 
-    - Transaction relationships 
-    - Expense estimates
+    - Actuals 
+    - TransactionConnections
 
 ## Entity set
 
-| Project Service Automation      | Finance and Operations                          |
-|---------------------------------|-------------------------------------------------|
-| Project tasks                   | Integration entity for project hour estimates   |
+| Project Service Automation      | Finance and Operations                                      |
+|---------------------------------|-------------------------------------------------------------|
+| Actuals                         | Integration entity for project actuals                      |
+| Transaction Connections         | Integration entity for project transaction relationships    |
 
 ## Entity flow
 
-Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project hour forecasts.
+Project actuals are managed in Project Service Automation, and they are synchronized to Finance and Operations to the project ingetration journal. The accounting will be applied based on default financial dimensions and posting setup.
 
 ## Preconditions
 
-Before synchronization of project hour estimates can occur, you must synchronize projects, project tasks, and project expense transaction categories.
+Before synchronization of actuals can occur, you must configure the Project Service Automation integration parameters and synchronize projects, project tasks, and project expense transaction categories.
 
 ## Power Query
 
-You must use Microsoft Power Query in the project hour estimates template to:
-- Set the **Forecast model ID** that will be used when the integration creates new hour forecasts.
-- Filter out any resource specific records within the task that will fail the integration into hour forecasts
-- Filter out any empty transaction category rows. Failure to do this may result in incorrect hour forecasts.
+You must use Microsoft Power Query in the project actuals template to:
+- Transform the Project Service Automation **transaction type** to the correct **transaction type** in Finance and Operations. The Project actuals (PSA to Fin and Ops) template already has this transformation defined.
+- Transform the Project Service Automation **billing type** to the correct **billing type** in Finance and Operations. The Project actuals (PSA to Fin and Ops) template already has this transformation defined. The billing type is then mapped to the **line property** based on the configuration in the Dynamics 365 for Project Service Automation integration parameters form.
+- Filter to specific **Resource organizational units** that are to be synced with this template.
+- If **intercompany time or intercompany expense actuals** will be synced to Finance and Operations, you must transform the **contract organizational unit** to the correct **legal entity** in Finance and Operations. The Project actuals (PSA to Fin and Ops) template has a conditional column defined based on demo data. You must update the last inserted condition column to the correct legal entities. Failure to do this may result in either an integration error or incorrect actual transactions imported into Finance and Operations.
+- If **intercompany time or intercompany expense actuals** will not be synced to Finance and operations, you must delete the last inserted condition column from your template. Failure to do this may result in either an integration error or incorrect actual transactions imported into Finance and Operations.
 
-### Forecast model ID
-To update the default forecast model ID in the template, click the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
-- If you are using the default Microsoft Project hour estimates (PSA to Fin and Ops) template, select the **Inserted Condition** in the **Applied Steps** section. In the **Function** entry, replace **O_forecast** with the name of the **Forecast model ID** that should be used with the integration. The default template has a forecast model ID from the demo data.
-- If you are creating a new template, you must add this column. Select **Add Conditional Column** and give the column a name, such as ModelID. Enter the condition for the column where if Project task is not null, then<enter the forecast model ID>; else null.
-
-### Filter out resource specific records
-The Project hour estimates (PSA to Fin and Ops) template has a default filter that removes any resource specific records. If you create your own template, you must add this filter. In the Advanced Query and Filtering form, select to filter on the column **msdyn_islinetask** to only include **False** records.
-
-### Filter out empty transaction category rows
-You must add a filter to remove any rows with empty transaction categories. This is needed regardless if you are using the default template or creating your own template. This filter will remove any summary rows coming from Project Service Automation that could cause the hour forecasts in Finance and Operations to be incorrect. In the Advanced Query and Filtering form, select to filter out the null records in the column **msdyn_transactioncategory_value**.
+### Contract Organizational Unit
+To update the inserted condition column in the template, click the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
+- If you are using the default Microsoft Project actuals (PSA to Fin and Ops) template, select the lasat **Inserted Condition** in the **Applied Steps** section. In the **Function** entry, replace **USSI** with the name of the **Legal entity** that should be used with the integration. Add additional conditions as needed to the **Function** entry and update the **else** condition from **USMF** to the correct **Legal entity**.
+- If you are creating a new template, you must add this column to support intercompany time and expenses. Select **Add Conditional Column** and give the column a name, such as LegalEntity. Enter the condition for the column where if msdyn_contractorganizationalunitid.msdyn_name is <organizational unit>, then <enter the Legal entity>; else null.
 
 ## Template mapping in Data integration
 
 The following illustration shows an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
-[![Template mapping](./media/ProjectHourEstimatesMapping.jpg)](./media/ProjectHourEstimatesMapping.jpg)
+[![Template mapping](./media/ActualsMapping.jpg)](./media/ActualsMapping.jpg)
 
-The following template and underlying task is used to synchronize project expense estimates from Project Service Automation to Finance and Operations:
+[![Template mapping](./media/TransactionConnections.jpg)](./media/TransactionConnections.jpg)
 
--  **Name of the template in Data integration:** Project expense estimates (PSA to Fin and Ops)
+## Update Actuals
+
+The following template and underlying tasks are used to synchronize the voucher number and sales taxes for posted project transactions from Finance and Operations to Project Service Automation:
+
+-  **Name of the template in Data integration:** Project actuals update (Fin Ops to PSA)
 -  **Name of the tasks in the project:** 
-     - Transaction relationships 
-     - Expense estimates
+     - Actuals 
+     - TransactionConnections
 
 ## Entity set
 
-| Project Service Automation      | Finance and Operations                                     |
-|---------------------------------|------------------------------------------------------------|
-| Transaction Connections         | Integration entity for project transaction relationships.   |
-| Estimate Lines                  | Integration entity for project expense estimates.           |
+| Finance and Operations                                         | Project Service Automation        |
+|----------------------------------------------------------------|-----------------------------------|
+| Integration entity for project actuals                         | Actuals                           |
+| Integration entity for project transaction relationships       | Transaction Connections           |
 
 ## Entity flow
 
-Project expense estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project expense forecasts.
-
-## Prerequisites
-
-Before synchronization of project expense estimates can occur, you must synchronize Projects, Project tasks and Project expense transaction categories.
+Project actuals are managed in Project Service Automation, and they are synchronized to Finance and Operations to the project integration journal. Once posted in Finance and Operations, actuals are updated in Project Service Automation with the voucher number from Finance and Operations. If sales taxes were added in Finance and Operations, new tax actuals will be created in PRoject Service Automation.
 
 ## Power Query
 
-You must use Microsoft Power Query in the project expense estimates template to:
-- Filter to include only expense estimate line records
-- Set the **Forecast model ID** that will be used when the integration creates new hour forecasts.
-- Transform the billing types.
-- Transform the transaction types.
-
-### Filter to include only expense estimate lines
-The Project expense estimates (PSA to Fin and Ops) template has a default filter to only include expense lines in the integration. If you create your own template, you must add this filter. Select the Transaction relationships task and click the **Map** arrow. Select **Advanced Query and filtering**. Filter the **msdyn_transactiontype1** column to include only **msdyn_estimateline**.
-
-### Forecast model ID
-To update the default forecast model ID in the template, for the Expense estimates task, click the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
-- If you are using the default Microsoft Project expense estimates (PSA to Fin and Ops) template, select the first **Inserted Condition** in the **Applied Steps** section. In the **Function** entry, replace **O_forecast** with the name of the **Forecast model ID** that should be used with the integration. The default template has a forecast model ID from the demo data.
-- If you are creating a new template, you must add this column. Select **Add Conditional Column** and give the column a name, such as ModelID. Enter the condition for the column where if Estimate line ID is not null, then < enter the forecast model ID >; else null.
-
-### Transform the billing types
-The Project expense estimates (PSA to Fin and Ops) template has a conditional column added to transform the billing types received from Project Service Automation during the integration.
-- If you create your own template, you must add this conditional column. In the Advanced Query and Filtering form, select **Add Conditional Column**. Give the column a name, such as "BillingType". The condition to enter is as follows:
-
-    If **msdyn_billingtype** = 192350000, then **NonChargeable**
-    else if **msdyn_billingtype** = 192350001, then **Chargeable**
-    else if **msdyn_billingtype** = 192350002, then **Complimentary**
-    else **NotAvailable**
-
-### Transform the transaction types
-The Project expense estimates (PSA to Fin and Ops) template has a conditional column added to transform the transaction types received from Project Service Automation during the integration.
-- If you create your own template, you must add this conditional column. In the Advanced Query and Filtering form, select **Add Conditional Column**. Give the column a name, such as "TransactionType". The condition to enter is as follows:
-    If **msdyn_transactiontypecode** = 192350000, then **Cost**
-    else if **msdyn_transactiontypecode** = 192350005, then **Sales**
-    else **null**
+You must use Microsoft Power Query in the project actuals update template to:
+- Transform the Finance and Operations **transaction type** to the correct **transaction type** in Project Service Automation. The Project actuals update (Fin Ops to PSA) template already has this transformation defined.
+- Transform the Finance and Operations **billing type** to the correct **billing type** in Project Service Automation. The Project actuals update (Fin Ops to PSA) template already has this transformation defined.
 
 ## Template mapping in Data integration
 
-The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Finance and Operations to Project Service Automation.
 
-[![Template mapping](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)
+[![Template mapping](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
-[![Template mapping](./media/ExpenseEstimatesMapping.jpg)](./media/ExpenseEstimatesMapping.jpg)
+[![Template mapping](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
 
 
 
