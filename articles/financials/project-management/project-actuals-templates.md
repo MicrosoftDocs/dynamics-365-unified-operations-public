@@ -16,7 +16,7 @@ ms.search.region
 ms.author
 ms.search.validFrom
 ms.dyn365.ops.version
-Synchronize project estimates from Project Service Automation directly to project forecasts in Finance and Operations
+Synchronize project actuals from Project Service Automation directly to the project integration journal in Finance and Operations
 This topic describes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
 KimANelson
 AnnBe
