@@ -348,6 +348,7 @@
 #### [Establish customer payment terms](../financials/general-ledger/tasks/establish-customer-payment-terms.md)
 #### [Set up bills of exchange](../financials/accounts-receivable/set-up-bills-exchange.md)
 #### [Close Accounts receivable](../financials/accounts-receivable/close-accounts-receivable.md)
+#### [Add new location roles](../financials/accounts-receivable/location-relationship.md)
 
 #### Accounts receivable tasks
 ##### [Assign a free text invoice template to a customer](../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md)
